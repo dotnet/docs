@@ -119,8 +119,8 @@ Defines properties that control authentication parameters for the HTTP transport
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>
-- <xref:System.ServiceModel.BasicHttpSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport*>
+- <xref:System.ServiceModel.BasicHttpSecurity.Transport*>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

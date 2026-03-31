@@ -37,7 +37,7 @@ Starting in .NET 5, simpler APIs were introduced for hashing and HMAC. While sli
 - Are thread safe
 - Use the best available implementation for the platform
 
-The hashing and HMAC primitives expose a one-shot API through a static `HashData` method on the type, such as <xref:System.Security.Cryptography.SHA256.HashData%2A?displayProperty=nameWithType>. The static APIs offer no built-in extensibility mechanism. If you're implementing your own algorithms, it's recommended to also offer similar static APIs of the algorithm.
+The hashing and HMAC primitives expose a one-shot API through a static `HashData` method on the type, such as <xref:System.Security.Cryptography.SHA256.HashData*?displayProperty=nameWithType>. The static APIs offer no built-in extensibility mechanism. If you're implementing your own algorithms, it's recommended to also offer similar static APIs of the algorithm.
 
 The <xref:System.Security.Cryptography.RandomNumberGenerator> class also offers static methods for creating or filling buffers with cryptographic random data. These methods always use the system's cryptographically secure pseudorandom number generator (CSPRNG).
 
@@ -78,10 +78,10 @@ Here is a list of recommended algorithms by application:
   - <xref:System.Security.Cryptography.ECDiffieHellman>
   - <xref:System.Security.Cryptography.RSA>
 - Random number generation:
-  - <xref:System.Security.Cryptography.RandomNumberGenerator.GetBytes%2A?displayProperty=nameWithType>
-  - <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=nameWithType>
+  - <xref:System.Security.Cryptography.RandomNumberGenerator.GetBytes*?displayProperty=nameWithType>
+  - <xref:System.Security.Cryptography.RandomNumberGenerator.Fill*?displayProperty=nameWithType>
 - Generating a key from a password:
-  - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2%2A?displayProperty=nameWithType>
+  - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>
 
 ## See also
 

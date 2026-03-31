@@ -57,7 +57,7 @@ Specifies whether assemblies loaded from remote sources should be granted full t
 
 In the .NET Framework 3.5 and earlier versions, if you load an assembly from a remote location, code in the assembly runs in partial trust with a grant set that depends on the zone from which it is loaded. For example, if you load an assembly from a website, it is loaded into the Internet zone and granted the Internet permission set. In other words, it executes in an Internet sandbox.
 
-Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
+Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
 
 ```text
 System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported.
@@ -91,7 +91,7 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 - In .NET Framework 4.5 and later versions, assemblies on local network shares (that is, the [Local Intranet security zone](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537183(v=vs.85)#default-url-security-zones)) run in full trust by default; you don't have to enable the `<loadFromRemoteSources>` element. For security zones other than Local Machine or Local Intranet, set the value to `true`.
 
-- If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom%2A> method to load a local assembly that the operating system has flagged as having been loaded from the web.
+- If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom*> method to load a local assembly that the operating system has flagged as having been loaded from the web.
 
 - You may get a <xref:System.IO.FileLoadException> in an application that is running in a Windows Virtual PC application. This can happen when you try to load a file from linked folders on the hosting computer. It can also occur when you try to load a file from a folder linked over [Remote Desktop Services](/windows/win32/termserv/terminal-services-portal) (Terminal Services). To avoid the exception, set `enabled` to `true`.
 
@@ -118,4 +118,4 @@ The following example shows how to grant full trust to assemblies loaded from re
 - [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
-- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType>

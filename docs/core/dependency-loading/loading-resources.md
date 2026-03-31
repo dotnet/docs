@@ -14,7 +14,7 @@ Satellite assemblies use a different loading algorithm than general managed asse
 
 Satellite assemblies are loaded when loading a localized resource.
 
-The basic API to load localized resources is the <xref:System.Resources.ResourceManager?displayProperty=fullName> class. Ultimately the <xref:System.Resources.ResourceManager> class will call the <xref:System.Reflection.Assembly.GetSatelliteAssembly%2A> method for each <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The basic API to load localized resources is the <xref:System.Resources.ResourceManager?displayProperty=fullName> class. Ultimately the <xref:System.Resources.ResourceManager> class will call the <xref:System.Reflection.Assembly.GetSatelliteAssembly*> method for each <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 Higher-level APIs may abstract the low-level API.
 
@@ -30,7 +30,7 @@ The .NET Core resource fallback process involves the following steps:
 
     - If `active` is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance, run the [default satellite (resource) assembly probing](default-probing.md#satellite-resource-assembly-probing) logic.
 
-    - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
+    - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load*?displayProperty=nameWithType> function.
 
     - If the managed assembly corresponding to the satellite assembly was loaded from a file, check the directory of the managed assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example, `es-MX`).
 
@@ -53,9 +53,9 @@ The .NET Core resource fallback process involves the following steps:
 
 4. The <xref:System.Resources.ResourceManager> next searches the parent culture assemblies through many potential levels, each time repeating steps 2 & 3.
 
-    Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=nameWithType> property.
+    Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent?displayProperty=nameWithType> property.
 
-    The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent%2A> property is <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType>.
+    The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent> property is <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType>.
 
     For the <xref:System.Globalization.CultureInfo.InvariantCulture>, we don't return to steps 2 & 3, but rather continue with step 5.
 

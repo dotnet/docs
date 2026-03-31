@@ -4,7 +4,7 @@ description: "Learn how to analyze one or more projects with .NET Upgrade Assist
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 10/08/2024
+ms.date: 03/19/2026
 
 #customer intent: As a developer, I want to analyze my project before upgrading to identify any issues before performing an upgrade.
 
@@ -18,7 +18,7 @@ This article teaches you how to perform code analysis on your projects with .NET
 
 ## Prerequisites
 
-- For Visual Studio, see [Install .NET Upgrade Assistant - Visual Studio extension](upgrade-assistant-install.md#visual-studio-extension).
+- For Visual Studio, see [Enable .NET Upgrade Assistant - Visual Studio](upgrade-assistant-install.md#visual-studio).
 - For the .NET Global Tool, see [Install .NET Upgrade Assistant - .NET Global Tool](upgrade-assistant-install.md#net-global-tool).
 
 ## Create a report in Visual Studio

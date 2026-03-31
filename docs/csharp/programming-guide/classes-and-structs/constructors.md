@@ -2,7 +2,7 @@
 title: "Constructors"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
 ms.date: 03/11/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "constructors [C#]"
   - "classes [C#], constructors"
   - "C# language, constructors"
@@ -16,7 +16,7 @@ There are several actions that are part of initializing a new instance. The foll
 1. *Instance fields are set to 0*. This initialization is typically done by the runtime.
 1. *Field initializers run*. The field initializers in the most derived type run.
 1. *Base type field initializers run*. Field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
-1. *Base instance constructors run*. Any instance constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
+1. *Base instance constructors run*. Any instance constructors, starting with <xref:System.Object.%23ctor*?displayProperty=nameWithType> through each base class to the direct base class.
 1. *The instance constructor runs*. The instance constructor for the type runs.
 1. *Object initializers run*. If the expression includes any object initializers, they run after the instance constructor runs. Object initializers run in the textual order.
 

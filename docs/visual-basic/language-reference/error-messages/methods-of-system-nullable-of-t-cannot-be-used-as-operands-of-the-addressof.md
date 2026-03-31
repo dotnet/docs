@@ -11,15 +11,15 @@ ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
 ---
 # BC32126: Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator
 
-A statement uses the `AddressOf` operator with an operand that represents a procedure of the <xref:System.Nullable%601> structure.
+A statement uses the `AddressOf` operator with an operand that represents a procedure of the <xref:System.Nullable`1> structure.
 
  **Error ID:** BC32126
 
 ## To correct this error
 
-- Replace the procedure name in the `AddressOf` clause with an operand that is not a member of <xref:System.Nullable%601>.
+- Replace the procedure name in the `AddressOf` clause with an operand that is not a member of <xref:System.Nullable`1>.
 
-- Write a class that wraps the method of <xref:System.Nullable%601> that you want to use. In the following example, the `NullableWrapper` class defines a new method named `GetValueOrDefault`. Because this new method is not a member of <xref:System.Nullable%601>, it can be applied to `nullInstance`, an instance of a nullable type, to form an argument for `AddressOf`.
+- Write a class that wraps the method of <xref:System.Nullable`1> that you want to use. In the following example, the `NullableWrapper` class defines a new method named `GetValueOrDefault`. Because this new method is not a member of <xref:System.Nullable`1>, it can be applied to `nullInstance`, an instance of a nullable type, to form an argument for `AddressOf`.
 
 ```vb
 Module Module1
@@ -59,7 +59,7 @@ End Module
 
 ## See also
 
-- <xref:System.Nullable%601>
+- <xref:System.Nullable`1>
 - [AddressOf Operator](../operators/addressof-operator.md)
 - [Nullable Value Types](../../programming-guide/language-features/data-types/nullable-value-types.md)
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)

@@ -33,7 +33,7 @@ The second optional parameter of the `GetSchema` method is the restrictions that
 
 ### Example
 
- The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database, and to restrict the information returned to only those tables in the "Sales" schema:
+ The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema*> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database, and to restrict the information returned to only those tables in the "Sales" schema:
 
 ```vb
 Imports System.Data.SqlClient

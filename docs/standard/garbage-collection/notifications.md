@@ -12,18 +12,18 @@ helpviewer_keywords:
 
 There are situations in which a full garbage collection (that is, a generation 2 collection) by the common language runtime may adversely affect performance. This can be an issue particularly with servers that process large volumes of requests; in this case, a long garbage collection can cause a request time-out. To prevent a full collection from occurring during a critical period, you can be notified that a full garbage collection is approaching and then take action to redirect the workload to another server instance. You can also induce a collection yourself, provided that the current server instance does not need to process requests.
 
- The <xref:System.GC.RegisterForFullGCNotification%2A> method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed.
+ The <xref:System.GC.RegisterForFullGCNotification*> method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed.
 
 > [!WARNING]
-> When the [`<gcConcurrent>`](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, <xref:System.GC.WaitForFullGCComplete%2A> may return `NotApplicable` <xref:System.GCNotificationStatus> if the full GC was done as a background GC.
+> When the [`<gcConcurrent>`](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, <xref:System.GC.WaitForFullGCComplete*> may return `NotApplicable` <xref:System.GCNotificationStatus> if the full GC was done as a background GC.
 
- To determine when a notification has been raised, use the <xref:System.GC.WaitForFullGCApproach%2A> and <xref:System.GC.WaitForFullGCComplete%2A> methods. Typically, you use these methods in a `while` loop to continually obtain a <xref:System.GCNotificationStatus> enumeration that shows the status of the notification. If that value is <xref:System.GCNotificationStatus.Succeeded>, you can do the following:
+ To determine when a notification has been raised, use the <xref:System.GC.WaitForFullGCApproach*> and <xref:System.GC.WaitForFullGCComplete*> methods. Typically, you use these methods in a `while` loop to continually obtain a <xref:System.GCNotificationStatus> enumeration that shows the status of the notification. If that value is <xref:System.GCNotificationStatus.Succeeded>, you can do the following:
 
-- In response to a notification obtained with the <xref:System.GC.WaitForFullGCApproach%2A> method, you can redirect the workload and possibly induce a collection yourself.
+- In response to a notification obtained with the <xref:System.GC.WaitForFullGCApproach*> method, you can redirect the workload and possibly induce a collection yourself.
 
-- In response to a notification obtained with the <xref:System.GC.WaitForFullGCComplete%2A> method, you can make the current server instance available to process requests again. You can also gather information. For example, you can use the <xref:System.GC.CollectionCount%2A> method to record the number of collections.
+- In response to a notification obtained with the <xref:System.GC.WaitForFullGCComplete*> method, you can make the current server instance available to process requests again. You can also gather information. For example, you can use the <xref:System.GC.CollectionCount*> method to record the number of collections.
 
- The <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods are designed to work together. Using one without the other can produce indeterminate results.
+ The <xref:System.GC.WaitForFullGCApproach*> and the <xref:System.GC.WaitForFullGCComplete*> methods are designed to work together. Using one without the other can produce indeterminate results.
 
 ## Full Garbage Collection
 
@@ -35,7 +35,7 @@ There are situations in which a full garbage collection (that is, a generation 2
 
 - A collection of generation 1 is escalated to a collection of generation 2 due to other factors.
 
- The thresholds you specify in the <xref:System.GC.RegisterForFullGCNotification%2A> method apply to the first two scenarios. However, in the first scenario you will not always receive the notification at the time proportional to the threshold values you specify for two reasons:
+ The thresholds you specify in the <xref:System.GC.RegisterForFullGCNotification*> method apply to the first two scenarios. However, in the first scenario you will not always receive the notification at the time proportional to the threshold values you specify for two reasons:
 
 - The runtime does not check each small object allocation (for performance reasons).
 
@@ -45,7 +45,7 @@ There are situations in which a full garbage collection (that is, a generation 2
 
 ## Notification Threshold Parameters
 
- The <xref:System.GC.RegisterForFullGCNotification%2A> method has two parameters to specify the threshold values of the generation 2 objects and the large object heap. When those values are met, a garbage collection notification should be raised. The following table describes these parameters.
+ The <xref:System.GC.RegisterForFullGCNotification*> method has two parameters to specify the threshold values of the generation 2 objects and the large object heap. When those values are met, a garbage collection notification should be raised. The following table describes these parameters.
 
 |Parameter|Description|
 |---------------|-----------------|
@@ -60,21 +60,21 @@ There are situations in which a full garbage collection (that is, a generation 2
 
 ### Description
 
- In the following example, a group of servers service incoming Web requests. To simulate the workload of processing requests, byte arrays are added to a <xref:System.Collections.Generic.List%601> collection. Each server registers for a garbage collection notification and then starts a thread on the `WaitForFullGCProc` user method to continuously monitor the <xref:System.GCNotificationStatus> enumeration that is returned by the <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods.
+ In the following example, a group of servers service incoming Web requests. To simulate the workload of processing requests, byte arrays are added to a <xref:System.Collections.Generic.List`1> collection. Each server registers for a garbage collection notification and then starts a thread on the `WaitForFullGCProc` user method to continuously monitor the <xref:System.GCNotificationStatus> enumeration that is returned by the <xref:System.GC.WaitForFullGCApproach*> and the <xref:System.GC.WaitForFullGCComplete*> methods.
 
- The <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods call their respective event-handling user methods when a notification is raised:
+ The <xref:System.GC.WaitForFullGCApproach*> and the <xref:System.GC.WaitForFullGCComplete*> methods call their respective event-handling user methods when a notification is raised:
 
 - `OnFullGCApproachNotify`
 
      This method calls the `RedirectRequests` user method, which instructs the request queuing server to suspend sending requests to the server. This is simulated by setting the class-level variable `bAllocate` to `false` so that no more objects are allocated.
 
-     Next, the `FinishExistingRequests` user method is called to finish processing the pending server requests. This is simulated by clearing the <xref:System.Collections.Generic.List%601> collection.
+     Next, the `FinishExistingRequests` user method is called to finish processing the pending server requests. This is simulated by clearing the <xref:System.Collections.Generic.List`1> collection.
 
      Finally, a garbage collection is induced because the workload is light.
 
 - `OnFullGCCompleteNotify`
 
-     This method calls the user method `AcceptRequests` to resume accepting requests because the server is no longer susceptible to a full garbage collection. This action is simulated by setting the `bAllocate` variable to `true` so that objects can resume being added to the <xref:System.Collections.Generic.List%601> collection.
+     This method calls the user method `AcceptRequests` to resume accepting requests because the server is no longer susceptible to a full garbage collection. This action is simulated by setting the `bAllocate` variable to `true` so that objects can resume being added to the <xref:System.Collections.Generic.List`1> collection.
 
  The following code contains the `Main` method of the example.
  [!code-csharp[GCNotification#2](../../../samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#2)]

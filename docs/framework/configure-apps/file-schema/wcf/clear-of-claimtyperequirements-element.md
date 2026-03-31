@@ -46,8 +46,8 @@ Specifies that all the claim types to be removed in the federated credential. Th
 
 ## See also
 
-- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements*>
 - <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>
-- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements*>
 - <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>
 - <xref:System.ServiceModel.Configuration.ClaimTypeElement>

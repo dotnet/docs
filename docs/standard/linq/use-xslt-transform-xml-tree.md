@@ -116,5 +116,5 @@ This example produces the following output:
 
 ## See also
 
-- <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XContainer.CreateWriter*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XNode.CreateReader*?displayProperty=nameWithType>

@@ -54,7 +54,7 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 ### Plan and progress tracker generation
 
-- When you start the migration, GitHub Copilot starts a session named "App modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
+- When you start the migration, GitHub Copilot starts a session named "Modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
 - The tool creates two files in the `.appmod/.migration` folder:
   - `plan.md`: The overall migration plan.
   - `progress.md`: A progress tracker that GitHub Copilot updates as it completes tasks.

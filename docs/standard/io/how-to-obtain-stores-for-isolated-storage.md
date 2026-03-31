@@ -16,29 +16,29 @@ helpviewer_keywords:
 
 An isolated store exposes a virtual file system within a data compartment. The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies a number of methods for interacting with an isolated store. To create and retrieve stores, <xref:System.IO.IsolatedStorage.IsolatedStorageFile> provides three static methods:
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> returns storage that is isolated by user and assembly.
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly*> returns storage that is isolated by user and assembly.
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> returns storage that is isolated by domain and assembly.
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain*> returns storage that is isolated by domain and assembly.
 
      Both methods retrieve a store that belongs to the code from which they are called.
 
-- The static method <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> returns an isolated store that is specified by passing in a combination of scope parameters.
+- The static method <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> returns an isolated store that is specified by passing in a combination of scope parameters.
 
  The following code returns a store that is isolated by user, assembly, and domain.
  [!code-csharp[Conceptual.IsolatedStorage#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source6.cs#6)]
  [!code-vb[Conceptual.IsolatedStorage#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source6.vb#6)]
 
- You can use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method to specify that a store should roam with a roaming user profile. For details on how to set this up, see [Types of Isolation](types-of-isolation.md).
+ You can use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> method to specify that a store should roam with a roaming user profile. For details on how to set this up, see [Types of Isolation](types-of-isolation.md).
 
- Isolated stores obtained from within different assemblies are, by default, different stores. You can access the store of a different assembly or domain by passing in the assembly or domain evidence in the parameters of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method. This requires permission to access isolated storage by application domain identity. For more information, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method overloads.
+ Isolated stores obtained from within different assemblies are, by default, different stores. You can access the store of a different assembly or domain by passing in the assembly or domain evidence in the parameters of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> method. This requires permission to access isolated storage by application domain identity. For more information, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> method overloads.
 
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A>, <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A>, and <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> methods return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object. To help you decide which isolation type is most appropriate for your situation, see [Types of Isolation](types-of-isolation.md). When you have an isolated storage file object, you can use the isolated storage methods to read, write, create, and delete files and directories.
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly*>, <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain*>, and <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> methods return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object. To help you decide which isolation type is most appropriate for your situation, see [Types of Isolation](types-of-isolation.md). When you have an isolated storage file object, you can use the isolated storage methods to read, write, create, and delete files and directories.
 
- There is no mechanism that prevents code from passing an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object to code that does not have sufficient access to get the store itself. Domain and assembly identities and isolated storage permissions are checked only when a reference to an <xref:System.IO.IsolatedStorage.IsolatedStorage> object is obtained, typically in the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A>, <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A>, or <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method. Protecting references to <xref:System.IO.IsolatedStorage.IsolatedStorageFile> objects is, therefore, the responsibility of the code that uses these references.
+ There is no mechanism that prevents code from passing an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object to code that does not have sufficient access to get the store itself. Domain and assembly identities and isolated storage permissions are checked only when a reference to an <xref:System.IO.IsolatedStorage.IsolatedStorage> object is obtained, typically in the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly*>, <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain*>, or <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> method. Protecting references to <xref:System.IO.IsolatedStorage.IsolatedStorageFile> objects is, therefore, the responsibility of the code that uses these references.
 
 ## Example
 
- The following code provides a simple example of a class obtaining a store that is isolated by user and assembly. The code can be changed to retrieve a store that is isolated by user, domain, and assembly by adding <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Domain?displayProperty=nameWithType> to the arguments that the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method passes.
+ The following code provides a simple example of a class obtaining a store that is isolated by user and assembly. The code can be changed to retrieve a store that is isolated by user, domain, and assembly by adding <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Domain?displayProperty=nameWithType> to the arguments that the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore*> method passes.
 
  After you run the code, you can confirm that a store was created by typing **StoreAdm /LIST** at the command line. This runs the [Isolated Storage tool (Storeadm.exe)](../../framework/tools/storeadm-exe-isolated-storage-tool.md) and lists all the current isolated stores for the user.
  [!code-csharp[Conceptual.IsolatedStorage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source6.cs#7)]

@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Configuring Serialization in a Workflow Service
 
-Workflow services are Windows Communication Foundation (WCF) services and so have the option of using either the <xref:System.Runtime.Serialization.DataContractSerializer> (the default) or the <xref:System.Xml.Serialization.XmlSerializer>. When writing non-workflow services the type of serializer to use is specified on the service or operation contract. When creating WCF workflow services you don't specify these contracts in code, but rather they are generated at runtime by contract inference. For more information about contract inference, see  [Using Contracts in Workflow](using-contracts-in-workflow.md).  The serializer is specified using the <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> property. This can be set in the designer as shown in the following illustration.
+Workflow services are Windows Communication Foundation (WCF) services and so have the option of using either the <xref:System.Runtime.Serialization.DataContractSerializer> (the default) or the <xref:System.Xml.Serialization.XmlSerializer>. When writing non-workflow services the type of serializer to use is specified on the service or operation contract. When creating WCF workflow services you don't specify these contracts in code, but rather they are generated at runtime by contract inference. For more information about contract inference, see  [Using Contracts in Workflow](using-contracts-in-workflow.md).  The serializer is specified using the <xref:System.ServiceModel.Activities.Receive.SerializerOption> property. This can be set in the designer as shown in the following illustration.
 
  ![Setting the SerializerOption property in the Properties Window.](./media/configuring-serialization-in-a-workflow-service/setting-serializer-property.png)
 
@@ -31,7 +31,7 @@ Receive approveExpense = new Receive
 
  ![Screenshot of the Type Collections Editor.](./media/configuring-serialization-in-a-workflow-service/type-collection-editor.gif)
 
- Click the **Add new type** link and use the drop down to select or search for a type to add to the known types collection. To specify known types in code use the <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> property as shown in the following example.
+ Click the **Add new type** link and use the drop down to select or search for a type to add to the known types collection. To specify known types in code use the <xref:System.ServiceModel.Activities.Receive.KnownTypes> property as shown in the following example.
 
 ```csharp
 Receive approveExpense = new Receive

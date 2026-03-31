@@ -16,20 +16,20 @@ The following properties of the <xref:System.Xml.Schema.XmlSchema> class provide
 
 |Property|Object type stored in the collection or array|
 |--------------|---------------------------------------------------|
-|<xref:System.Xml.Schema.XmlSchema.Elements%2A>|<xref:System.Xml.Schema.XmlSchemaElement>|
-|<xref:System.Xml.Schema.XmlSchema.Attributes%2A>|<xref:System.Xml.Schema.XmlSchemaAttribute>|
-|<xref:System.Xml.Schema.XmlSchema.AttributeGroups%2A>|<xref:System.Xml.Schema.XmlSchemaAttributeGroup>|
-|<xref:System.Xml.Schema.XmlSchema.Groups%2A>|<xref:System.Xml.Schema.XmlSchemaGroup>|
-|<xref:System.Xml.Schema.XmlSchema.Includes%2A>|<xref:System.Xml.Schema.XmlSchemaExternal>, <xref:System.Xml.Schema.XmlSchemaInclude>, <xref:System.Xml.Schema.XmlSchemaImport>, or <xref:System.Xml.Schema.XmlSchemaRedefine>|
-|<xref:System.Xml.Schema.XmlSchema.Items%2A>|<xref:System.Xml.Schema.XmlSchemaObject> (provides access to all global level elements, attributes, and types).|
-|<xref:System.Xml.Schema.XmlSchema.Notations%2A>|<xref:System.Xml.Schema.XmlSchemaNotation>|
-|<xref:System.Xml.Schema.XmlSchema.SchemaTypes%2A>|<xref:System.Xml.Schema.XmlSchemaType>, <xref:System.Xml.Schema.XmlSchemaSimpleType>, <xref:System.Xml.Schema.XmlSchemaComplexType>|
-|<xref:System.Xml.Schema.XmlSchema.UnhandledAttributes%2A>|<xref:System.Xml.XmlAttribute> (provides access to attributes that do not belong to the schema namespace)|
+|<xref:System.Xml.Schema.XmlSchema.Elements*>|<xref:System.Xml.Schema.XmlSchemaElement>|
+|<xref:System.Xml.Schema.XmlSchema.Attributes*>|<xref:System.Xml.Schema.XmlSchemaAttribute>|
+|<xref:System.Xml.Schema.XmlSchema.AttributeGroups*>|<xref:System.Xml.Schema.XmlSchemaAttributeGroup>|
+|<xref:System.Xml.Schema.XmlSchema.Groups*>|<xref:System.Xml.Schema.XmlSchemaGroup>|
+|<xref:System.Xml.Schema.XmlSchema.Includes*>|<xref:System.Xml.Schema.XmlSchemaExternal>, <xref:System.Xml.Schema.XmlSchemaInclude>, <xref:System.Xml.Schema.XmlSchemaImport>, or <xref:System.Xml.Schema.XmlSchemaRedefine>|
+|<xref:System.Xml.Schema.XmlSchema.Items*>|<xref:System.Xml.Schema.XmlSchemaObject> (provides access to all global level elements, attributes, and types).|
+|<xref:System.Xml.Schema.XmlSchema.Notations*>|<xref:System.Xml.Schema.XmlSchemaNotation>|
+|<xref:System.Xml.Schema.XmlSchema.SchemaTypes*>|<xref:System.Xml.Schema.XmlSchemaType>, <xref:System.Xml.Schema.XmlSchemaSimpleType>, <xref:System.Xml.Schema.XmlSchemaComplexType>|
+|<xref:System.Xml.Schema.XmlSchema.UnhandledAttributes*>|<xref:System.Xml.XmlAttribute> (provides access to attributes that do not belong to the schema namespace)|
 
 > [!NOTE]
-> All of the properties listed in the table above, except for the <xref:System.Xml.Schema.XmlSchema.Items%2A> property, are Post-Schema-Compilation-Infoset (PSCI) properties that are not available until the schema has been compiled. The <xref:System.Xml.Schema.XmlSchema.Items%2A> property is a pre-schema-compilation property that can be used before the schema has been compiled to access and edit all global level elements, attributes, and types.
+> All of the properties listed in the table above, except for the <xref:System.Xml.Schema.XmlSchema.Items> property, are Post-Schema-Compilation-Infoset (PSCI) properties that are not available until the schema has been compiled. The <xref:System.Xml.Schema.XmlSchema.Items> property is a pre-schema-compilation property that can be used before the schema has been compiled to access and edit all global level elements, attributes, and types.
 >
-> The <xref:System.Xml.Schema.XmlSchema.UnhandledAttributes%2A> property provides access to all the attributes that do not belong to the schema namespace. These attributes are not processed by the schema processor.
+> The <xref:System.Xml.Schema.XmlSchema.UnhandledAttributes> property provides access to all the attributes that do not belong to the schema namespace. These attributes are not processed by the schema processor.
 
 The code example that follows demonstrates traversing the customer schema created in the [Building XML Schemas](building-xml-schemas.md) topic. The code example demonstrates traversing the schema using the collections described above and writes all the elements and attributes in the schema to the console.
 
@@ -37,9 +37,9 @@ The sample traverses the customer schema in the following steps.
 
 1. Adds the customer schema to a new <xref:System.Xml.Schema.XmlSchemaSet> object and then compiles it. Any schema validation warnings and errors encountered reading or compiling the schema are handled by the <xref:System.Xml.Schema.ValidationEventHandler> delegate.
 
-2. Retrieves the compiled <xref:System.Xml.Schema.XmlSchema> object from the <xref:System.Xml.Schema.XmlSchemaSet> by iterating over the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property. Because the schema is compiled, Post-Schema-Compilation-Infoset (PSCI) properties are accessible.
+2. Retrieves the compiled <xref:System.Xml.Schema.XmlSchema> object from the <xref:System.Xml.Schema.XmlSchemaSet> by iterating over the <xref:System.Xml.Schema.XmlSchemaSet.Schemas> property. Because the schema is compiled, Post-Schema-Compilation-Infoset (PSCI) properties are accessible.
 
-3. Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaObjectTable.Values%2A> collection of the post-schema-compilation <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> collection writing the name of each element to the console.
+3. Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaObjectTable.Values*> collection of the post-schema-compilation <xref:System.Xml.Schema.XmlSchema.Elements*?displayProperty=nameWithType> collection writing the name of each element to the console.
 
 4. Gets the complex type of the `Customer` element using the <xref:System.Xml.Schema.XmlSchemaComplexType> class.
 
@@ -47,15 +47,15 @@ The sample traverses the customer schema in the following steps.
 
 6. Gets the sequence particle of the complex type using the <xref:System.Xml.Schema.XmlSchemaSequence> class.
 
-7. Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaSequence.Items%2A?displayProperty=nameWithType> collection writing the name of each child element to the console.
+7. Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaSequence.Items*?displayProperty=nameWithType> collection writing the name of each child element to the console.
 
 The following is the complete code example.
 [!code-csharp[XmlSchemaTraverseExample#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaTraverseExample/CS/XmlSchemaTraverseExample.cs#1)]
 [!code-vb[XmlSchemaTraverseExample#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaTraverseExample/VB/XmlSchemaTraverseExample.vb#1)]
 
-The <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType%2A?displayProperty=nameWithType> property can be <xref:System.Xml.Schema.XmlSchemaSimpleType>, or <xref:System.Xml.Schema.XmlSchemaComplexType> if it is a user-defined simple type or a complex type. It can also be <xref:System.Xml.Schema.XmlSchemaDatatype> if it is one of the built-in datatypes defined in the W3C XML Schema Recommendation. In the customer schema, the <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType%2A> of the `Customer` element is <xref:System.Xml.Schema.XmlSchemaComplexType>, and the `FirstName` and `LastName` elements are <xref:System.Xml.Schema.XmlSchemaSimpleType>.
+The <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType?displayProperty=nameWithType> property can be <xref:System.Xml.Schema.XmlSchemaSimpleType>, or <xref:System.Xml.Schema.XmlSchemaComplexType> if it is a user-defined simple type or a complex type. It can also be <xref:System.Xml.Schema.XmlSchemaDatatype> if it is one of the built-in datatypes defined in the W3C XML Schema Recommendation. In the customer schema, the <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType*> of the `Customer` element is <xref:System.Xml.Schema.XmlSchemaComplexType>, and the `FirstName` and `LastName` elements are <xref:System.Xml.Schema.XmlSchemaSimpleType>.
 
-The code example in the [Building XML Schemas](building-xml-schemas.md) topic used the <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes%2A?displayProperty=nameWithType> collection to add the attribute `CustomerId` to the `Customer` element. This is a pre-schema-compilation property. The corresponding Post-Schema-Compilation-Infoset property is the <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses%2A?displayProperty=nameWithType> collection, which holds all the attributes of the complex type, including the ones that are inherited through type derivation.
+The code example in the [Building XML Schemas](building-xml-schemas.md) topic used the <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes*?displayProperty=nameWithType> collection to add the attribute `CustomerId` to the `Customer` element. This is a pre-schema-compilation property. The corresponding Post-Schema-Compilation-Infoset property is the <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses*?displayProperty=nameWithType> collection, which holds all the attributes of the complex type, including the ones that are inherited through type derivation.
 
 ## See also
 

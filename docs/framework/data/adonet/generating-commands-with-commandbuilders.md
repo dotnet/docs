@@ -29,7 +29,7 @@ When the `SelectCommand` property is dynamically specified at runtime, such as t
 
 |Command|Rule|
 |-------------|----------|
-|`InsertCommand`|Inserts a row at the data source for all rows in the table with a <xref:System.Data.DataRow.RowState%2A> of <xref:System.Data.DataRowState.Added>. Inserts values for all columns that are updateable (but not columns such as identities, expressions, or timestamps).|
+|`InsertCommand`|Inserts a row at the data source for all rows in the table with a <xref:System.Data.DataRow.RowState*> of <xref:System.Data.DataRowState.Added>. Inserts values for all columns that are updateable (but not columns such as identities, expressions, or timestamps).|
 |`UpdateCommand`|Updates rows at the data source for all rows in the table with a `RowState` of <xref:System.Data.DataRowState.Modified>. Updates the values of all columns except for columns that are not updateable, such as identities or expressions. Updates all rows where the column values at the data source match the primary key column values of the row, and where the remaining columns at the data source match the original values of the row. For more information, see "Optimistic Concurrency Model for Updates and Deletes," later in this topic.|
 |`DeleteCommand`|Deletes rows at the data source for all rows in the table with a `RowState` of <xref:System.Data.DataRowState.Deleted>. Deletes all rows where the column values match the primary key column values of the row, and where the remaining columns at the data source match the original values of the row. For more information, see "Optimistic Concurrency Model for Updates and Deletes," later in this topic.|
 

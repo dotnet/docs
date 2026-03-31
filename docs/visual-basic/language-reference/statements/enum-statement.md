@@ -175,14 +175,14 @@ The following example shows how to use a bitwise enumeration. Multiple values ca
 
 ## Example 7
 
-The following example iterates through an enumeration. It uses the <xref:System.Enum.GetNames%2A> method to retrieve an array of member names from the enumeration, and <xref:System.Enum.GetValues%2A> to retrieve an array of member values.
+The following example iterates through an enumeration. It uses the <xref:System.Enum.GetNames*> method to retrieve an array of member names from the enumeration, and <xref:System.Enum.GetValues*> to retrieve an array of member values.
 
 [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]
 
 ## See also
 
 - <xref:System.Enum>
-- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW*>
 - [Const Statement](const-statement.md)
 - [Dim Statement](dim-statement.md)
 - [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

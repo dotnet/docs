@@ -1,9 +1,10 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 03/03/2026
+ms.date: 03/27/2026
 ms.topic: reference
 ms.custom: updateeachrelease
+ai-usage: ai-assisted
 ---
 # MSBuild reference for .NET SDK projects
 
@@ -1716,8 +1717,29 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 
 The following properties concern code in generated files:
 
+- [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath)
 - [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [EmitCompilerGeneratedFiles](#emitcompilergeneratedfiles)
 - [ImplicitUsings](#implicitusings)
+
+### CompilerGeneratedFilesOutputPath
+
+The `CompilerGeneratedFilesOutputPath` property specifies the directory where source generator output files are written when [EmitCompilerGeneratedFiles](#emitcompilergeneratedfiles) is set to `true`. The path can be absolute or relative to the project directory. If you don't set this property, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*).
+
+```xml
+<PropertyGroup>
+  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+</PropertyGroup>
+```
+
+If you set this property to a path inside your project's source tree, the generated files might be picked up as source files by future builds. To avoid double-compilation, exclude the generated files from the `Compile` item:
+
+```xml
+<ItemGroup>
+  <Compile Remove="$(CompilerGeneratedFilesOutputPath)\**\*.cs" />
+</ItemGroup>
+```
 
 ### DisableImplicitNamespaceImports
 
@@ -1728,6 +1750,20 @@ The `DisableImplicitNamespaceImports` property can be used to disable implicit n
   <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
 </PropertyGroup>
 ```
+
+### EmitCompilerGeneratedFiles
+
+The `EmitCompilerGeneratedFiles` property controls whether source generator output files are written to disk during the build. Set this property to `true` to enable this behavior. By default, source generator output exists only in memory and isn't written to disk.
+
+```xml
+<PropertyGroup>
+  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+</PropertyGroup>
+```
+
+When you set this property to `true`, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*) unless you specify a different location using the [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath) property.
+
+Writing generated files to disk lets you inspect them. Only commit generated files to source control when you have a specific reason, such as when generators aren't available in your build environment or when you need reviewed, deterministic generated artifacts.
 
 ### ImplicitUsings
 
@@ -1750,6 +1786,7 @@ To define an explicit `global using` directive, add a [Using](#using) item.
 
 - [AssemblyMetadata](#assemblymetadata)
 - [InternalsVisibleTo](#internalsvisibleto)
+- [FrameworkReference](#frameworkreference)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [Using](#using)

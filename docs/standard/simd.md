@@ -1,9 +1,10 @@
 ---
 title: SIMD-accelerated types in .NET
-description: This article describes SIMD-enable types in .NET and demonstrates how to use hardware SIMD operations in C# and .NET.
+description: This article describes SIMD-enabled types in .NET and demonstrates how to use hardware SIMD operations in C# and .NET.
 author: FIVIL
 ms.author: tagoo
-ms.date: 04/28/2020
+ms.date: 03/26/2026
+ai-usage: ai-assisted
 ---
 
 # Use SIMD-accelerated numeric types
@@ -22,18 +23,18 @@ The .NET SIMD-accelerated types include the following types:
 
 - The <xref:System.Numerics.Quaternion> type, which represents a vector that is used to encode three-dimensional physical rotations using <xref:System.Single> values.
 
-- The <xref:System.Numerics.Vector%601> type, which represents a vector of a specified numeric type and provides a broad set of operators that benefit from SIMD support. The count of a <xref:System.Numerics.Vector%601> instance is fixed for the lifetime of an application, but its value <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> depends on the CPU of the machine running the code.
+- The <xref:System.Numerics.Vector`1> type, which represents a vector of a specified numeric type and provides a broad set of operators that benefit from SIMD support. The count of a <xref:System.Numerics.Vector`1> instance is fixed for the lifetime of an application, but its value <xref:System.Numerics.Vector`1.Count*?displayProperty=nameWithType> depends on the CPU of the machine running the code.
 
   > [!NOTE]
-  > The <xref:System.Numerics.Vector%601> type is not included in the .NET Framework. You must install the [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors) NuGet package to get access to this type.
+  > The <xref:System.Numerics.Vector`1> type is not included in .NET Framework. You must install the [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors) NuGet package to get access to this type.
   
-The SIMD-accelerated types are implemented in such a way that they can be used with non-SIMD-accelerated hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the **RyuJIT** compiler. A **RyuJIT** compiler is included in .NET Core and in .NET Framework 4.6 and later. SIMD support is only provided when targeting 64-bit processors.
+The SIMD-accelerated types are implemented in such a way that they can be used with non-SIMD-accelerated hardware or JIT compilers. To determine whether SIMD acceleration is available at runtime, use <xref:System.Numerics.Vector.IsHardwareAccelerated?displayProperty=nameWithType>. If that property returns `true`, at least some APIs use hardware-accelerated SIMD operations. If it returns `false`, no APIs are hardware accelerated.
 
 ## How to use SIMD?
 
 Before executing custom SIMD algorithms, it's possible to check if the host machine supports SIMD by using <xref:System.Numerics.Vector.IsHardwareAccelerated?displayProperty=nameWithType>, which returns a <xref:System.Boolean>. This doesn't guarantee that SIMD-acceleration is enabled for a specific type, but is an indicator that it's supported by some types.
 
-## Simple Vectors
+## Simple vectors
 
 The most primitive SIMD-accelerated types in .NET are <xref:System.Numerics.Vector2>, <xref:System.Numerics.Vector3>, and <xref:System.Numerics.Vector4> types, which represent vectors with 2, 3, and 4 <xref:System.Single> values. The example below uses <xref:System.Numerics.Vector2> to add two vectors.
 
@@ -70,9 +71,9 @@ var mResult = Matrix4x4.Multiply(m1, m2);
 
 ## Vector\<T>
 
-The <xref:System.Numerics.Vector%601> gives the ability to use longer vectors. The count of a <xref:System.Numerics.Vector%601> instance is fixed, but its value <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> depends on the CPU of the machine running the code.
+The <xref:System.Numerics.Vector`1> gives the ability to use longer vectors. The count of a <xref:System.Numerics.Vector`1> instance is fixed, but its value <xref:System.Numerics.Vector`1.Count*?displayProperty=nameWithType> depends on the CPU of the machine running the code.
 
-The following example demonstrates how to calculate the element-wise sum of two arrays using <xref:System.Numerics.Vector%601>.
+The following example demonstrates how to calculate the element-wise sum of two arrays using <xref:System.Numerics.Vector`1>.
 
 ```csharp
 double[] Sum(double[] left, double[] right)

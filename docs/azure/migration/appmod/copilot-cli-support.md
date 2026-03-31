@@ -17,7 +17,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot modernizat
 > GitHub Copilot CLI is available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 > If you receive Copilot through an organization, an admin must enable the Copilot CLI policy in the organization settings.
 
-## Why use Copilot CLI with app modernization
+## Why use Copilot CLI with modernization
 
 - Run modernization tasks from the terminal - no need to switch to an IDE.
 - Use interactive (human-in-the-loop) and batch workflows.
@@ -37,7 +37,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot modernizat
     copilot
     ```
 
-    :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of app modernization entrance in Copilot CLI.":::
+    :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of modernization entrance in Copilot CLI.":::
 
     Copilot asks you to confirm that you trust the files in this folder. For details, see [Using Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#trusted-directories).
 
@@ -92,22 +92,22 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot modernizat
 
 ### Configure a custom agent
 
-1. Create a file in the local `~/.copilot/agents` directory named `appmod-dotnet.agent.md`.
+1. Create a file in the local `~/.copilot/agents` directory named `modernize-azure-dotnet.agent.md`.
 1. Add the following content to define a User-level custom agent.
 
     For more information, visit [Use custom agents in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents).
 
     ```text
     ---
-    # .NET Modernization Assistant - Custom GitHub Copilot Agent
+    # .NET modernize to azure assistant - Custom GitHub Copilot Agent
     # This agent helps modernize .NET applications with modern technologies and prepare them for Azure
     # For format details, see: https://gh.io/customagents/config
 
-    name: dotnet-modernization
+    name: modernize-azure-dotnet
     description: Expert assistant for modernizing .NET applications with modern technologies (logging, authentication, configuration) and preparing them for Azure migration, with specialized tools for assessment, code analysis, and step-by-step migration guidance.
     ---
 
-    # .NET Modernization Assistant
+    # .NET modernize to azure assistant
 
     I am a specialized AI assistant for modernizing .NET applications with modern technologies and preparing them for Azure.
 

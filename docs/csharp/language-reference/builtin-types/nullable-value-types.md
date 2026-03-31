@@ -2,7 +2,7 @@
 title: "Nullable value types"
 description: Learn about C# nullable value types and how to use them
 ms.date: 01/14/2026
-helpviewer_keywords: 
+helpviewer_keywords:
   - "nullable value types [C#]"
 ---
 # Nullable value types (C# reference)
@@ -11,7 +11,7 @@ A *nullable value type* `T?` represents all values of its underlying [value type
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-Any nullable value type is an instance of the generic <xref:System.Nullable%601?displayProperty=nameWithType> structure. You can refer to a nullable value type with an underlying type `T` in any of the following interchangeable forms: `Nullable<T>` or `T?`.
+Any nullable value type is an instance of the generic <xref:System.Nullable`1?displayProperty=nameWithType> structure. You can refer to a nullable value type with an underlying type `T` in any of the following interchangeable forms: `Nullable<T>` or `T?`.
 
 Typically, use a nullable value type when you need to represent the undefined value of an underlying value type. For example, a Boolean, or `bool`, variable can only be either `true` or `false`. However, in some applications a variable value can be undefined or missing. For example, a database field may contain `true` or `false`, or it might contain no value at all, that is, `NULL`. You can use the `bool?` type in that scenario.
 
@@ -21,7 +21,7 @@ Because a value type is implicitly convertible to the corresponding nullable val
 
 :::code language="csharp" source="snippets/shared/NullableValueTypes.cs" id="Declaration":::
 
-The default value of a nullable value type represents `null`. It's an instance whose <xref:System.Nullable%601.HasValue%2A?displayProperty=nameWithType> property returns `false`.
+The default value of a nullable value type represents `null`. It's an instance whose <xref:System.Nullable`1.HasValue?displayProperty=nameWithType> property returns `false`.
 
 ## Examination of an instance of a nullable value type
 
@@ -31,9 +31,9 @@ To check an instance of a nullable value type for `null` and get a value of an u
 
 You can always use the following read-only properties to check and get a value of a nullable value type variable:
 
-- <xref:System.Nullable%601.HasValue%2A?displayProperty=nameWithType> shows whether an instance of a nullable value type has a value of its underlying type.
+- <xref:System.Nullable`1.HasValue*?displayProperty=nameWithType> shows whether an instance of a nullable value type has a value of its underlying type.
 
-- <xref:System.Nullable%601.Value%2A?displayProperty=nameWithType> gets the value of an underlying type if <xref:System.Nullable%601.HasValue%2A> is `true`. If <xref:System.Nullable%601.HasValue%2A> is `false`, the <xref:System.Nullable%601.Value%2A> property throws an <xref:System.InvalidOperationException>.
+- <xref:System.Nullable`1.Value*?displayProperty=nameWithType> gets the value of an underlying type if <xref:System.Nullable`1.HasValue*> is `true`. If <xref:System.Nullable`1.HasValue*> is `false`, the <xref:System.Nullable`1.Value> property throws an <xref:System.InvalidOperationException>.
 
 The following example uses the `HasValue` property to check whether the variable contains a value before displaying it:
 
@@ -45,11 +45,11 @@ You can also compare a variable of a nullable value type with `null` instead of 
 
 ## Conversion from a nullable value type to an underlying type
 
-If you want to assign a value of a nullable value type to a non-nullable value type variable, you might need to specify the value to assign in place of `null`. Use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to do that. You can also use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method for the same purpose:
+If you want to assign a value of a nullable value type to a non-nullable value type variable, you might need to specify the value to assign in place of `null`. Use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to do that. You can also use the <xref:System.Nullable`1.GetValueOrDefault(`0)?displayProperty=nameWithType> method for the same purpose:
 
 :::code language="csharp" source="snippets/shared/NullableValueTypes.cs" id="NullCoalescing":::
 
-If you want to use the [default](default-values.md) value of the underlying value type in place of `null`, use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method.
+If you want to use the [default](default-values.md) value of the underlying value type in place of `null`, use the <xref:System.Nullable`1.GetValueOrDefault?displayProperty=nameWithType> method.
 
 You can also explicitly cast a nullable value type to a non-nullable type, as the following example shows:
 
@@ -85,8 +85,8 @@ If a [user-defined conversion](../operators/user-defined-conversion-operators.md
 
 The following rules apply when you [box](../../programming-guide/types/boxing-and-unboxing.md) an instance of a nullable value type `T?`:
 
-- If <xref:System.Nullable%601.HasValue%2A> returns `false`, the boxing operation returns the null reference.
-- If <xref:System.Nullable%601.HasValue%2A> returns `true`, the boxing operation boxes the corresponding value of the underlying value type `T`, not the instance of <xref:System.Nullable%601>.
+- If <xref:System.Nullable`1.HasValue*> returns `false`, the boxing operation returns the null reference.
+- If <xref:System.Nullable`1.HasValue*> returns `true`, the boxing operation boxes the corresponding value of the underlying value type `T`, not the instance of <xref:System.Nullable`1>.
 
 You can unbox a boxed value of a value type `T` to the corresponding nullable value type `T?`, as the following example shows:
 
@@ -94,13 +94,13 @@ You can unbox a boxed value of a value type `T` to the corresponding nullable va
 
 ## How to identify a nullable value type
 
-The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a constructed nullable value type, that is, the <xref:System.Nullable%601?displayProperty=nameWithType> type with a specified type parameter `T`:
+The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a constructed nullable value type, that is, the <xref:System.Nullable`1?displayProperty=nameWithType> type with a specified type parameter `T`:
 
 :::code language="csharp" source="snippets/shared/NullableValueTypes.cs" id="IsTypeNullable":::
 
 As the example shows, you use the [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to create a <xref:System.Type?displayProperty=nameWithType> instance.
 
-If you want to determine whether an instance is of a nullable value type, don't use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to get a <xref:System.Type> instance to test by using the preceding code. When you call the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method on an instance of a nullable value type, the instance is [boxed](#boxing-and-unboxing) to <xref:System.Object>. Because boxing a non-null instance of a nullable value type is equivalent to boxing a value of the underlying type, <xref:System.Object.GetType%2A> returns a <xref:System.Type> instance that represents the underlying type of a nullable value type:
+If you want to determine whether an instance is of a nullable value type, don't use the <xref:System.Object.GetType*?displayProperty=nameWithType> method to get a <xref:System.Type> instance to test by using the preceding code. When you call the <xref:System.Object.GetType*?displayProperty=nameWithType> method on an instance of a nullable value type, the instance is [boxed](#boxing-and-unboxing) to <xref:System.Object>. Because boxing a non-null instance of a nullable value type is equivalent to boxing a value of the underlying type, <xref:System.Object.GetType*> returns a <xref:System.Type> instance that represents the underlying type of a nullable value type:
 
 :::code language="csharp" source="snippets/shared/NullableValueTypes.cs" id="GetType":::
 
@@ -108,7 +108,7 @@ Also, don't use the [is](../operators/type-testing-and-cast.md#the-is-operator) 
 
 :::code language="csharp" source="snippets/shared/NullableValueTypes.cs" id="IsOperator":::
 
-Instead, use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> method from the first example and the [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to check if an instance is of a nullable value type.
+Instead, use the <xref:System.Nullable.GetUnderlyingType*?displayProperty=nameWithType> method from the first example and the [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to check if an instance is of a nullable value type.
 
 > [!NOTE]
 > The methods described in this section don't apply to [nullable reference types](nullable-reference-types.md).
@@ -126,7 +126,7 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [What exactly does 'lifted' mean?](/archive/blogs/ericlippert/what-exactly-does-lifted-mean)
-- <xref:System.Nullable%601?displayProperty=nameWithType>
+- <xref:System.Nullable`1?displayProperty=nameWithType>
 - <xref:System.Nullable?displayProperty=nameWithType>
-- <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType>
+- <xref:System.Nullable.GetUnderlyingType*?displayProperty=nameWithType>
 - [Nullable reference types](nullable-reference-types.md)

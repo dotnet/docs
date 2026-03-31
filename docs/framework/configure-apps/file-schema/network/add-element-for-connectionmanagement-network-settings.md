@@ -55,7 +55,7 @@ Adds an IP address or DNS name to the connection management list.
 
  The value of the `address` attribute should be either an asterisk to indicate all connections, or a string of the form `<schema>://<idn_hostname>[:<port>]`.
 
- If the URI passed to any HTTP APIs contains Unicode, the name will be converted internally using <xref:System.Uri.DnsSafeHost%2A> which might return a punicode string (behavior dependent on the current IDN configuration).
+ If the URI passed to any HTTP APIs contains Unicode, the name will be converted internally using <xref:System.Uri.DnsSafeHost*> which might return a punicode string (behavior dependent on the current IDN configuration).
 
 ## Configuration Files
 

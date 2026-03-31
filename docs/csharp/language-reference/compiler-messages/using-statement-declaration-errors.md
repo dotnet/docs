@@ -56,7 +56,7 @@ The following compiler errors and warnings indicate issues with implementing or 
 
 The [using statement](../statements/using.md) ensures proper disposal of resources at the end of the `using` block. To use a type with a `using` statement, it must implement the appropriate disposal interface. For synchronous `using` statements, the type must implement <xref:System.IDisposable>. For asynchronous `await using` statements, the type must implement <xref:System.IAsyncDisposable>.
 
-- **Cannot call Finalize directly (CS0245)**: You can't directly call a destructor or the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The garbage collector automatically invokes finalizers when objects are no longer referenced. For deterministic cleanup, implement <xref:System.IDisposable> and call the `Dispose` method instead.
+- **Cannot call Finalize directly (CS0245)**: You can't directly call a destructor or the <xref:System.Object.Finalize*?displayProperty=nameWithType> method. The garbage collector automatically invokes finalizers when objects are no longer referenced. For deterministic cleanup, implement <xref:System.IDisposable> and call the `Dispose` method instead.
 - **Type must implement IDisposable (CS1674)**: Only types that implement <xref:System.IDisposable> can be used in a `using` statement. Value types don't implement this interface, and generic type parameters without proper constraints can't be assumed to be disposable. Apply a type constraint like `where T : IDisposable` when working with generic types.
 - **Type must implement IAsyncDisposable (CS8410)**: Types used with `await using` must implement <xref:System.IAsyncDisposable> or provide a suitable `DisposeAsync` method. If your type doesn't support asynchronous disposal, use a synchronous `using` statement instead or implement the required interface.
 - **Mismatched disposal pattern (CS8417, CS8418)**: CS8417 occurs when you use `await using` with a type that only implements <xref:System.IDisposable>. CS8418 occurs when you use synchronous `using` with a type that only implements <xref:System.IAsyncDisposable>. Match the `using` keyword to the interface your type implements, or implement both interfaces if you need to support both patterns.
@@ -105,7 +105,7 @@ class Program
     {
         // error CS9229: Modifiers cannot be placed on using declarations.
         public using var resource = new Resource();
-        
+
         // error CS9229: Modifiers cannot be placed on using declarations.
         static using var anotherResource = new Resource();
     }

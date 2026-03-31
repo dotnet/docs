@@ -22,9 +22,9 @@ The following table shows the APIs and parameter names that changed. In addition
 | <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)?displayProperty=nameWithType> | `type` | `attributeType` | Reference and implementation assembly |
 | <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)?displayProperty=nameWithType> | `type` | `attributeType` | Reference and implementation assembly |
 | <xref:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)?displayProperty=nameWithType> | `StartPos` | `Start` | Reference assembly |
-| <xref:System.Collections.Generic.SortedList%602.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=nameWithType> | `arrayIndex` | `index` | Reference assembly |
-| <xref:System.Numerics.Vector.Narrow%2A?displayProperty=nameWithType> | `source1`, `source2` | `low`, `high` | Reference assembly |
-| <xref:System.Numerics.Vector.Widen%2A?displayProperty=nameWithType> | `dest1`, `dest2` | `low`, `high` | Reference assembly |
+| <xref:System.Collections.Generic.SortedList`2.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=nameWithType> | `arrayIndex` | `index` | Reference assembly |
+| <xref:System.Numerics.Vector.Narrow*?displayProperty=nameWithType> | `source1`, `source2` | `low`, `high` | Reference assembly |
+| <xref:System.Numerics.Vector.Widen*?displayProperty=nameWithType> | `dest1`, `dest2` | `low`, `high` | Reference assembly |
 | <xref:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})?displayProperty=nameWithType> | `value` | `buffer` | Implementation assembly |
 | <xref:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=nameWithType> | `array`, `numBytes` | `buffer`, `count` | Implementation assembly |
 | <xref:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=nameWithType> | `array`, `numBytes` | `buffer`, `count` | Implementation assembly |
@@ -68,7 +68,7 @@ If you use runtime reflection to inspect methods and took a dependency on the pa
 - <xref:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)?displayProperty=fullName>
 - <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)?displayProperty=fullName>
 - <xref:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)?displayProperty=fullName>
-- <xref:System.Collections.Generic.SortedList%602.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList`2.System%23Collections%23ICollection%23CopyTo(System.Array,System.Int32)?displayProperty=fullName>
 - <xref:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})?displayProperty=fullName>
 - <xref:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
 - <xref:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
@@ -78,8 +78,8 @@ If you use runtime reflection to inspect methods and took a dependency on the pa
 - <xref:System.IO.MemoryStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)?displayProperty=fullName>
 - <xref:System.IO.UnmanagedMemoryStream.Read(System.Span{System.Byte})?displayProperty=fullName>
 - <xref:System.IO.UnmanagedMemoryStream.Write(System.ReadOnlySpan{System.Byte})?displayProperty=fullName>
-- <xref:System.Numerics.Vector.Narrow%2A?displayProperty=fullName>
-- <xref:System.Numerics.Vector.Widen%2A?displayProperty=fullName>
+- <xref:System.Numerics.Vector.Narrow*?displayProperty=fullName>
+- <xref:System.Numerics.Vector.Widen*?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest.ProcessResponse(System.ReadOnlyMemory{System.Byte},System.Int32@)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo.%23ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.Oid,System.ReadOnlyMemory{System.Byte},System.ReadOnlyMemory{System.Byte},System.DateTimeOffset,System.Nullable{System.Int64},System.Boolean,System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Nullable{System.ReadOnlyMemory{System.Byte}},System.Security.Cryptography.X509Certificates.X509ExtensionCollection)?displayProperty=fullName>

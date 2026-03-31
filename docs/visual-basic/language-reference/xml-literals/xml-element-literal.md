@@ -104,7 +104,7 @@ You can use the XML element literal syntax to create <xref:System.Xml.Linq.XElem
 
 Embedded expressions of the form `<%= exp %>` enable you to add dynamic information to an XML element literal. For more information, see [Embedded Expressions in XML](../../programming-guide/language-features/xml/embedded-expressions-in-xml.md).
 
-The Visual Basic compiler converts the XML element literal into calls to the <xref:System.Xml.Linq.XElement.%23ctor%2A> constructor and, if it is required, the <xref:System.Xml.Linq.XAttribute.%23ctor%2A> constructor.
+The Visual Basic compiler converts the XML element literal into calls to the <xref:System.Xml.Linq.XElement.%23ctor*> constructor and, if it is required, the <xref:System.Xml.Linq.XAttribute.%23ctor*> constructor.
 
 ## XML Namespaces
 

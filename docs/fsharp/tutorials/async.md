@@ -67,7 +67,7 @@ let main argv =
     0
 ```
 
-In the example, the `printTotalFileBytesUsingAsync` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It calls `Async.AwaitTask` in its body, which converts the result of <xref:System.IO.File.ReadAllBytesAsync%2A> to an appropriate type.
+In the example, the `printTotalFileBytesUsingAsync` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It calls `Async.AwaitTask` in its body, which converts the result of <xref:System.IO.File.ReadAllBytesAsync*> to an appropriate type.
 
 Another important line is the call to `Async.RunSynchronously`. This is one of the Async module starting functions that you'll need to call if you want to actually execute an F# asynchronous computation.
 
@@ -178,7 +178,7 @@ What to watch out for:
 
 ### Async.StartAsTask
 
-Executes a computation in the thread pool. Returns a <xref:System.Threading.Tasks.Task%601> that will be completed on the corresponding state once the computation terminates (produces the result, throws exception, or gets canceled). If no cancellation token is provided, then the default cancellation token is used.
+Executes a computation in the thread pool. Returns a <xref:System.Threading.Tasks.Task`1> that will be completed on the corresponding state once the computation terminates (produces the result, throws exception, or gets canceled). If no cancellation token is provided, then the default cancellation token is used.
 
 Signature:
 
@@ -188,7 +188,7 @@ computation: Async<'T> * ?taskCreationOptions: TaskCreationOptions * ?cancellati
 
 When to use:
 
-- When you need to call into a .NET API that yields a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation.
+- When you need to call into a .NET API that yields a <xref:System.Threading.Tasks.Task`1> to represent the result of an asynchronous computation.
 
 What to watch out for:
 
@@ -235,7 +235,7 @@ What to watch out for:
 
 ### Async.AwaitTask
 
-Returns an asynchronous computation that waits for the given <xref:System.Threading.Tasks.Task%601> to complete and returns its result as an `Async<'T>`
+Returns an asynchronous computation that waits for the given <xref:System.Threading.Tasks.Task`1> to complete and returns its result as an `Async<'T>`
 
 Signature:
 
@@ -245,7 +245,7 @@ task: Task<'T> -> Async<'T>
 
 When to use:
 
-- When you are consuming a .NET API that returns a <xref:System.Threading.Tasks.Task%601> within an F# asynchronous computation.
+- When you are consuming a .NET API that returns a <xref:System.Threading.Tasks.Task`1> within an F# asynchronous computation.
 
 What to watch out for:
 
@@ -330,7 +330,7 @@ What to watch out for:
 
 ### Interoperate with .NET
 
-If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../csharp/language-reference/keywords/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
+If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../csharp/language-reference/keywords/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task`1> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
 
 One option is to switch to writing .NET tasks directly using `task { }`. Alternatively, you can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
 

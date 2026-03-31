@@ -1,7 +1,8 @@
 ---
 title: System.String.Intern method
 description: Learn about the System.String.Intern method.
-ms.date: 01/24/2024
+ms.date: 03/27/2026
+ai-usage: ai-assisted
 dev_langs:
   - CSharp
   - FSharp
@@ -11,11 +12,11 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The common language runtime conserves string storage by maintaining a table, called the *intern pool*, that contains a single reference to each unique literal string declared or created programmatically in your program. Consequently, an instance of a literal string with a particular value only exists once in the system. For example, if you assign the same literal string to several variables, the runtime retrieves the same reference to the literal string from the intern pool and assigns it to each variable.
+The common language runtime maintains a table, called the *intern pool*, that holds a single reference for each unique string value. The <xref:System.String.Intern*> method uses the intern pool to search for a string equal to the value of `str`. If no such string exists, a reference to `str` is added to the pool, and that reference is returned. (In contrast, the <xref:System.String.IsInterned(System.String)> method returns a null reference if the requested string doesn't exist in the intern pool.)
 
-The <xref:System.String.Intern*> method uses the intern pool to search for a string equal to the value of its parameter, `str`. If such a string exists, its reference in the intern pool is returned. If the string does not exist, a reference to `str` is added to the intern pool, then that reference is returned. (In contrast, the <xref:System.String.IsInterned(System.String)> method returns a null reference if the requested string doesn't exist in the intern pool.)
+The intern pool can be used by the runtime to conserve string storage. However, automatic interning of string literals isn't guaranteed—depending on how the assembly was compiled and executed, some literals might not be added to the pool.
 
-In the following example, the string `s1`, which has a value of "MyTest", is already interned because it is a literal in the program. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class generates a new string object that has the same value as `s1`. A reference to that string is assigned to `s2`. The <xref:System.String.Intern*> method searches for a string that has the same value as `s2`. Because such a string exists, the method returns the same reference that's assigned to `s1`. That reference is then assigned to `s3`. References `s1` and `s2` compare unequal because they refer to different objects; references `s1` and `s3` compare equal because they refer to the same string.
+In the following example, the string `s1` has a value of "MyTest". The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class generates a new string object that has the same value as `s1`. A reference to that string is assigned to `s2`. The <xref:System.String.Intern*> method searches for a string that has the same value as `s2`. If `s1` was already interned (for example, because the assembly requires string-literal interning), the method returns the same reference as `s1`, which is then assigned to `s3`, and `s1` and `s3` compare equal. Otherwise, a new interned entry is created for `s2` and assigned to `s3`, and `s1` and `s3` compare unequal. In either case, `s1` and `s2` compare unequal because they refer to different objects.
 
 :::code language="csharp" source="./snippets/System/String/Intern/csharp/Intern1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/String/Intern/fsharp/Intern1.fs" id="Snippet1":::
@@ -25,4 +26,6 @@ In the following example, the string `s1`, which has a value of "MyTest", is alr
 
 If you're trying to reduce the total amount of memory your application allocates, keep in mind that interning a string has two unwanted side effects. First, the memory allocated for interned <xref:System.String> objects is not likely to be released until the common language runtime (CLR) terminates. The reason is that the CLR's reference to the interned <xref:System.String> object can persist after your application, or even your application domain, terminates. Second, to intern a string, you must first create the string. The memory used by the <xref:System.String> object must still be allocated, even though the memory will eventually be garbage collected.
 
-The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning?displayProperty=nameWithType> enumeration member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use [Ngen.exe (Native Image Generator)](../../framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of runtime, strings are not interned across modules.
+The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning?displayProperty=nameWithType> enumeration member marks an assembly as not requiring string-literal interning. By default, the C# compiler emits a <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> with the <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> flag on each assembly for better performance, which means string literals are not guaranteed to be added to the intern pool. You can customize <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> on an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute.
+
+When you publish an app using [native AOT](../../core/deploying/native-aot/index.md), turning off <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> is not supported. With native AOT, string literals aren't guaranteed to be added to the intern pool, so <xref:System.String.Intern*> might not find a match for a string that appears to be a literal in source code.

@@ -1,7 +1,8 @@
 ---
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
-ms.date: 01/31/2025
+ms.date: 03/24/2026
+ai-usage: ai-assisted
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options
@@ -71,7 +72,7 @@ The syntax for configuring an option for a *specific* rule is as follows:
 
 ## Options
 
-This section lists the available configuration options for code analyzers. For more information, see [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Analyzer%20Configuration.md).
+This section lists the available configuration options for code analyzers. For more information, see [Analyzer configuration](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/docs/Analyzer%20Configuration.md).
 
 - [additional_enum_none_names](#additional_enum_none_names)
 - [additional_inheritance_excluded_symbol_names](#additional_inheritance_excluded_symbol_names)
@@ -334,7 +335,7 @@ The options in this section configure dataflow analysis rules. The options are:
 - [copy_analysis](#copy_analysis)
 - [sufficient_IterationCount_for_weak_KDF_algorithm](#sufficient_iterationcount_for_weak_kdf_algorithm)
 
-For more information about dataflow analysis, see [Writing dataflow analysis based analyzers](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Analyzer%20Configuration.md#dataflow-analysis).
+For more information about dataflow analysis, see [Writing dataflow analysis based analyzers](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/docs/Analyzer%20Configuration.md#dataflow-analysis).
 
 ### dispose_analysis_kind
 
@@ -376,13 +377,13 @@ For more information about dataflow analysis, see [Writing dataflow analysis bas
 
 | Description | Allowable values | Default value | Configurable rules |
 |-------------|------------------|---------------|--------------------|
-| Specifies whether to perform [PointsToAnalysis](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Writing%20dataflow%20analysis%20based%20analyzers.md) | `None`, `PartialWithoutTrackingFieldsAndProperties`, `Complete` | *Specific to each rule* | [CA1062](quality-rules/ca1062.md), [CA1303](quality-rules/ca1303.md), [CA1508](quality-rules/ca1508.md), [CA2000](quality-rules/ca2000.md), [CA2100](quality-rules/ca2100.md), [CA2213](quality-rules/ca2213.md) |
+| Specifies whether to perform [PointsToAnalysis](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/docs/Writing%20dataflow%20analysis%20based%20analyzers.md) | `None`, `PartialWithoutTrackingFieldsAndProperties`, `Complete` | *Specific to each rule* | [CA1062](quality-rules/ca1062.md), [CA1303](quality-rules/ca1303.md), [CA1508](quality-rules/ca1508.md), [CA2000](quality-rules/ca2000.md), [CA2100](quality-rules/ca2100.md), [CA2213](quality-rules/ca2213.md) |
 
 ### copy_analysis
 
 | Description | Allowable values | Default value | Configurable rules |
 |-------------|------------------|---------------|--------------------|
-| Specifies whether to perform [copy analysis](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Writing%20dataflow%20analysis%20based%20analyzers.md) (tracks value and reference copies) | `true` or `false` | `true` for most rules | [CA1062](quality-rules/ca1062.md), [CA1303](quality-rules/ca1303.md), [CA1508](quality-rules/ca1508.md), [CA2000](quality-rules/ca2000.md), [CA2100](quality-rules/ca2100.md), [CA2213](quality-rules/ca2213.md) |
+| Specifies whether to perform [copy analysis](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/docs/Writing%20dataflow%20analysis%20based%20analyzers.md) (tracks value and reference copies) | `true` or `false` | `true` for most rules | [CA1062](quality-rules/ca1062.md), [CA1303](quality-rules/ca1303.md), [CA1508](quality-rules/ca1508.md), [CA2000](quality-rules/ca2000.md), [CA2100](quality-rules/ca2100.md), [CA2213](quality-rules/ca2213.md) |
 
 ### sufficient_IterationCount_for_weak_KDF_algorithm
 

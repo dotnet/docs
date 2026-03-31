@@ -24,7 +24,7 @@ Before configuring TLS, ensure you have:
 
 ## Configure TLS on silos
 
-To enable TLS on an Orleans silo, use the <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A> extension method. This method provides several overloads for different certificate configuration scenarios.
+To enable TLS on an Orleans silo, use the <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls*> extension method. This method provides several overloads for different certificate configuration scenarios.
 
 ### Basic TLS configuration
 
@@ -49,7 +49,7 @@ For development and testing, you might need to use self-signed certificates. The
 In the preceding code:
 
 - The `context.HostingEnvironment.IsDevelopment()` method checks if the application is running in a development environment.
-- The <xref:Orleans.Connections.Security.TlsOptions.AllowAnyRemoteCertificate%2A> method disables certificate validation in development.
+- The <xref:Orleans.Connections.Security.TlsOptions.AllowAnyRemoteCertificate*> method disables certificate validation in development.
 
 > [!WARNING]
 > Never use `AllowAnyRemoteCertificate()` or `allowInvalid: true` in production deployments. These settings disable important security checks and expose your application to security vulnerabilities.
@@ -62,7 +62,7 @@ If you have a certificate file instead of using the certificate store, configure
 
 In the preceding code:
 
-- The <xref:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12FromFile%2A> method loads a certificate from a PKCS#12 file (PFX format).
+- The <xref:System.Security.Cryptography.X509Certificates.X509CertificateLoader.LoadPkcs12FromFile*> method loads a certificate from a PKCS#12 file (PFX format).
 - The certificate is passed directly to the `UseTls` method.
 
 ### Advanced TLS configuration
@@ -73,9 +73,9 @@ For production deployments, you might need more control over certificate selecti
 
 In the preceding code:
 
-- The <xref:Orleans.Connections.Security.TlsOptions.LocalServerCertificateSelector%2A> callback dynamically selects the appropriate server certificate.
-- The <xref:Orleans.Connections.Security.TlsOptions.RemoteCertificateValidation%2A> callback provides custom validation logic for remote certificates.
-- The <xref:Orleans.Connections.Security.TlsOptions.CheckCertificateRevocation%2A> property enables certificate revocation checking.
+- The <xref:Orleans.Connections.Security.TlsOptions.LocalServerCertificateSelector*> callback dynamically selects the appropriate server certificate.
+- The <xref:Orleans.Connections.Security.TlsOptions.RemoteCertificateValidation*> callback provides custom validation logic for remote certificates.
+- The <xref:Orleans.Connections.Security.TlsOptions.CheckCertificateRevocation> property enables certificate revocation checking.
 
 ## Configure TLS on clients
 
@@ -89,8 +89,8 @@ The following example shows how to configure TLS on an Orleans client:
 
 In the preceding code:
 
-- The <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A> extension method configures TLS for the client.
-- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsClient%2A> callback configures client-side TLS options and sets the `TargetHost` to match the server certificate name.
+- The <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls*> extension method configures TLS for the client.
+- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsClient*> callback configures client-side TLS options and sets the `TargetHost` to match the server certificate name.
 - When you call `UseTls` with a client certificate, the client sends that certificate during the TLS handshake so the silo can enforce mutual TLS.
 
 ### Development client configuration
@@ -112,7 +112,7 @@ Follow these best practices when configuring TLS in Orleans:
 - **Use the latest TLS protocol**: Always prefer TLS 1.2 or TLS 1.3 for the strongest security. Avoid TLS 1.0 and TLS 1.1, which have known vulnerabilities.
 - **Let the OS choose the protocol version**: Don't explicitly set TLS protocol versions in production code. Instead, defer to operating system defaults to automatically select the best protocol. Only explicitly set protocol versions if you have a specific compatibility requirement with legacy systems. When you explicitly set protocol versions, your application can't automatically benefit from newer protocols added in future OS updates.
 - **Validate certificates**: Always validate certificate chains, expiration dates, and hostname matches in production. Never use `AllowAnyRemoteCertificate()` or disable certificate validation outside of development environments.
-- **Enable certificate revocation checking**: Use <xref:Orleans.Connections.Security.TlsOptions.CheckCertificateRevocation%2A> to verify that certificates haven't been revoked.
+- **Enable certificate revocation checking**: Use <xref:Orleans.Connections.Security.TlsOptions.CheckCertificateRevocation*> to verify that certificates haven't been revoked.
 - **Use strong certificates**: Ensure your X.509 certificates use strong key lengths (at least 2048 bits for RSA) and are signed by a trusted Certificate Authority (CA).
 - **Secure certificate storage**: Protect private keys with appropriate file permissions or by using hardware security modules (HSMs).
 - **Keep certificates current**: Monitor certificate expiration dates and renew certificates before they expire.
@@ -125,5 +125,5 @@ For more information on .NET TLS best practices, see [TLS/SSL best practices](..
 - [Client configuration](configuration-guide/client-configuration.md)
 - [Server configuration](configuration-guide/server-configuration.md)
 - <xref:Orleans.Connections.Security.TlsOptions>
-- <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls%2A>
+- <xref:Orleans.Hosting.OrleansConnectionSecurityHostingExtensions.UseTls*>
 - [Orleans Transport Layer Security (TLS) sample](/samples/dotnet/samples/orleans-transport-layer-security-tls/)

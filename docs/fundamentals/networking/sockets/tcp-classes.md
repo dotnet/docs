@@ -2,7 +2,7 @@
 title: Use TcpClient and TcpListener
 description: Learn how to use the TcpClient class to create a socket to request and receive data using TCP in .NET.
 ms.date: 10/20/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "protocols, TCP"
   - "network resources, TCP"
   - "sending data, TCP"
@@ -26,7 +26,7 @@ To work with Transmission Control Protocol (TCP), you have two options: either u
 
 The protocol classes use the underlying `Socket` class to provide simple access to network services without the overhead of maintaining state information or knowing the details of setting up protocol-specific sockets. To use asynchronous `Socket` methods, you can use the asynchronous methods supplied by the <xref:System.Net.Sockets.NetworkStream> class. To access features of the `Socket` class not exposed by the protocol classes, you must use the `Socket` class.
 
-`TcpClient` and `TcpListener` represent the network using the `NetworkStream` class. You use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to return the network stream, and then call the stream's <xref:System.Net.Sockets.NetworkStream.ReadAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Sockets.NetworkStream.WriteAsync%2A?displayProperty=nameWithType> methods. The `NetworkStream` does not own the protocol classes' underlying socket, so closing it does not affect the socket.
+`TcpClient` and `TcpListener` represent the network using the `NetworkStream` class. You use the <xref:System.Net.Sockets.TcpClient.GetStream*> method to return the network stream, and then call the stream's <xref:System.Net.Sockets.NetworkStream.ReadAsync*?displayProperty=nameWithType> and <xref:System.Net.Sockets.NetworkStream.WriteAsync*?displayProperty=nameWithType> methods. The `NetworkStream` does not own the protocol classes' underlying socket, so closing it does not affect the socket.
 
 ## Use `TcpClient` and `TcpListener`
 
@@ -46,7 +46,7 @@ The preceding C# code:
 
 - Creates an `IPEndPoint` from a known `IPAddress` and port.
 - Instantiate a new `TcpClient` object.
-- Connects the `client` to the remote TCP time server on port 13 using <xref:System.Net.Sockets.TcpClient.ConnectAsync%2A?displayProperty=nameWithType>.
+- Connects the `client` to the remote TCP time server on port 13 using <xref:System.Net.Sockets.TcpClient.ConnectAsync*?displayProperty=nameWithType>.
 - Uses a <xref:System.Net.Sockets.NetworkStream> to read data from the remote host.
 - Declares a read buffer of `1_024` bytes.
 - Reads data from the `stream` into the read buffer.
@@ -59,7 +59,7 @@ Since the client knows that the message is small, the entire message can be read
 
 ## Create a `TcpListener`
 
-The <xref:System.Net.Sockets.TcpListener> type is used to monitor a TCP port for incoming requests and then create either a `Socket` or a `TcpClient` that manages the connection to the client. The <xref:System.Net.Sockets.TcpListener.Start%2A> method enables listening, and the <xref:System.Net.Sockets.TcpListener.Stop%2A> method disables listening on the port. The <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync%2A> method accepts incoming connection requests and creates a `TcpClient` to handle the request, and the <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync%2A> method accepts incoming connection requests and creates a `Socket` to handle the request.
+The <xref:System.Net.Sockets.TcpListener> type is used to monitor a TCP port for incoming requests and then create either a `Socket` or a `TcpClient` that manages the connection to the client. The <xref:System.Net.Sockets.TcpListener.Start*> method enables listening, and the <xref:System.Net.Sockets.TcpListener.Stop*> method disables listening on the port. The <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync*> method accepts incoming connection requests and creates a `TcpClient` to handle the request, and the <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync*> method accepts incoming connection requests and creates a `Socket` to handle the request.
 
 The following example demonstrates creating a network time server using a `TcpListener` to monitor TCP port 13. When an incoming connection request is accepted, the time server responds with the current date and time from the host server.
 
@@ -69,12 +69,12 @@ The preceding C# code:
 
 - Creates an `IPEndPoint` with <xref:System.Net.IPAddress.Any?displayProperty=nameWithType> and port.
 - Instantiate a new `TcpListener` object.
-- Calls the <xref:System.Net.Sockets.TcpListener.Start%2A> method to start listening on the port.
-- Uses a `TcpClient` from the <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync%2A> method to accept incoming connection requests.
+- Calls the <xref:System.Net.Sockets.TcpListener.Start*> method to start listening on the port.
+- Uses a `TcpClient` from the <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync*> method to accept incoming connection requests.
 - Encodes the current date and time as a string message.
 - Uses a <xref:System.Net.Sockets.NetworkStream> to write data to the connected client.
 - Writes the sent message to the console.
-- Finally, calls the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to stop listening on the port.
+- Finally, calls the <xref:System.Net.Sockets.TcpListener.Stop*> method to stop listening on the port.
 
 ## Finite TCP control with the `Socket` class
 
@@ -188,7 +188,7 @@ using var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.
 
 ### Start listening on the server
 
-The <xref:System.Net.Sockets.TcpListener.Start> method is a wrapper combining `Socket`'s <xref:System.Net.Sockets.Socket.Bind%2A> and <xref:System.Net.Sockets.Socket.Listen> functionality.
+The <xref:System.Net.Sockets.TcpListener.Start> method is a wrapper combining `Socket`'s <xref:System.Net.Sockets.Socket.Bind*> and <xref:System.Net.Sockets.Socket.Listen> functionality.
 
 Consider the following TCP listener code:
 
@@ -259,7 +259,7 @@ using var stream = new NetworkStream(socket, ownsSocket: true);
 ```
 
 > [!TIP]
-> If your code doesn't need to work with a <xref:System.IO.Stream> instance, you can rely on `Socket`'s Send/Receive methods (<xref:System.Net.Sockets.Socket.Send%2A>, <xref:System.Net.Sockets.Socket.SendAsync%2A>, <xref:System.Net.Sockets.Socket.Receive%2A> and <xref:System.Net.Sockets.Socket.ReceiveAsync%2A>) directly instead of creating a <xref:System.Net.Sockets.NetworkStream>.
+> If your code doesn't need to work with a <xref:System.IO.Stream> instance, you can rely on `Socket`'s Send/Receive methods (<xref:System.Net.Sockets.Socket.Send*>, <xref:System.Net.Sockets.Socket.SendAsync*>, <xref:System.Net.Sockets.Socket.Receive*> and <xref:System.Net.Sockets.Socket.ReceiveAsync*>) directly instead of creating a <xref:System.Net.Sockets.NetworkStream>.
 
 ## See also
 

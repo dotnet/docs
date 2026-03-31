@@ -43,8 +43,8 @@ The following table lists Oracle data types and their mappings to the <xref:Syst
 |**CHAR**|**AnsiStringFixedLength**|**Char**||
 |**CLOB**||**Clob**|Oracle only allows binding a `CLOB` as a `CLOB` parameter. The .NET Data Provider for Oracle does not automatically construct one for you if you attempt to bind a non-**CLOB** value, such as **System.String** or <xref:System.Data.OracleClient.OracleString>.|
 |**DATE**|**DateTime**|**DateTime**||
-|**FLOAT**|**Single, Double, Decimal**|**Float, Double, Number**|<xref:System.Data.OracleClient.OracleParameter.Size%2A> determines the **System.Data.DBType** and <xref:System.Data.OracleClient.OracleType>.|
-|**INTEGER**|**SByte, Int16, Int32, Int64, Decimal**|**SByte, Int16, Int32, Number**|<xref:System.Data.OracleClient.OracleParameter.Size%2A> determines the **System.Data.DBType** and <xref:System.Data.OracleClient.OracleType>.|
+|**FLOAT**|**Single, Double, Decimal**|**Float, Double, Number**|<xref:System.Data.OracleClient.OracleParameter.Size*> determines the **System.Data.DBType** and <xref:System.Data.OracleClient.OracleType>.|
+|**INTEGER**|**SByte, Int16, Int32, Int64, Decimal**|**SByte, Int16, Int32, Number**|<xref:System.Data.OracleClient.OracleParameter.Size*> determines the **System.Data.DBType** and <xref:System.Data.OracleClient.OracleType>.|
 |**INTERVAL YEAR TO MONTH**|**Int32**|**IntervalYearToMonth**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|
 |**INTERVAL DAY TO SECOND**|**Object**|**IntervalDayToSecond**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|
 |**LONG**|**AnsiString**|**LongVarChar**||
@@ -59,10 +59,10 @@ The following table lists Oracle data types and their mappings to the <xref:Syst
 |**TIMESTAMP**|**DateTime**|**Timestamp**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|
 |**TIMESTAMP WITH LOCAL TIME ZONE**|**DateTime**|**TimestampLocal**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|
 |**TIMESTAMP WITH TIME ZONE**|**DateTime**|**TimestampWithTz**|<xref:System.Data.OracleClient.OracleType> is only available when using both Oracle 9i client and server software.|
-|**UNSIGNED INTEGER**|**Byte, UInt16, UInt32, UInt64, Decimal**|**Byte, UInt16, Uint32, Number**|<xref:System.Data.OracleClient.OracleParameter.Size%2A> determines the **System.Data.DBType** and <xref:System.Data.OracleClient.OracleType>.|
+|**UNSIGNED INTEGER**|**Byte, UInt16, UInt32, UInt64, Decimal**|**Byte, UInt16, Uint32, Number**|<xref:System.Data.OracleClient.OracleParameter.Size*> determines the **System.Data.DBType** and <xref:System.Data.OracleClient.OracleType>.|
 |**VARCHAR2**|**AnsiString**|**VarChar**||
 
- The **InputOutput**, **Output**, and `ReturnValue` **ParameterDirection** values used by the <xref:System.Data.OracleClient.OracleParameter.Value%2A> property of the <xref:System.Data.OracleClient.OracleParameter> object are .NET Framework data types, unless the input value is an Oracle data type (for example, <xref:System.Data.OracleClient.OracleNumber> or <xref:System.Data.OracleClient.OracleString>). This does not apply to **REF CURSOR**, **BFILE**, or `LOB` data types.
+ The **InputOutput**, **Output**, and `ReturnValue` **ParameterDirection** values used by the <xref:System.Data.OracleClient.OracleParameter.Value> property of the <xref:System.Data.OracleClient.OracleParameter> object are .NET Framework data types, unless the input value is an Oracle data type (for example, <xref:System.Data.OracleClient.OracleNumber> or <xref:System.Data.OracleClient.OracleString>). This does not apply to **REF CURSOR**, **BFILE**, or `LOB` data types.
 
 ## See also
 

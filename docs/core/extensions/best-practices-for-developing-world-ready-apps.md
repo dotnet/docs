@@ -26,7 +26,7 @@ This section describes the best practices to follow when developing world-ready 
     - For numeric formatting, use the <xref:System.Globalization.NumberFormatInfo> class.
     - For Gregorian and non-Gregorian calendars, use the <xref:System.Globalization.Calendar> class or one of the specific calendar implementations.
 
-1. Use the culture property settings provided by the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class in the appropriate situations. Use the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property for formatting tasks, such as date and time or numeric formatting. Use the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property to retrieve resources. Note that the `CurrentCulture` and `CurrentUICulture` properties can be set per thread.
+1. Use the culture property settings provided by the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class in the appropriate situations. Use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property for formatting tasks, such as date and time or numeric formatting. Use the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property to retrieve resources. Note that the `CurrentCulture` and `CurrentUICulture` properties can be set per thread.
 
 1. Enable your application to read and write data to and from a variety of encodings by using the encoding classes in the <xref:System.Text> namespace. Do not assume ASCII data. Assume that international characters will be supplied anywhere a user can enter text. For example, the application should accept international characters in server names, directories, file names, user names, and URLs.
 
@@ -76,7 +76,7 @@ This section describes the best practices to follow when developing world-ready 
 > [!TIP]
 > The following best practices are for ASP.NET Framework apps. For ASP.NET Core apps, see [Globalization and localization in ASP.NET Core](/aspnet/core/fundamentals/localization).
 
-1. Explicitly set the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A> properties in your application. Do not rely on defaults.
+1. Explicitly set the <xref:System.Globalization.CultureInfo.CurrentUICulture> and <xref:System.Globalization.CultureInfo.CurrentCulture> properties in your application. Do not rely on defaults.
 
 1. Note that ASP.NET applications are managed applications and therefore can use the same classes as other managed applications for retrieving, displaying, and manipulating information based on culture.
 

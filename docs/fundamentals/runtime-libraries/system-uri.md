@@ -1,7 +1,8 @@
 ---
 title: System.Uri class
 description: Learn about the System.Uri class.
-ms.date: 12/31/2023
+ms.date: 03/18/2026
+ai-usage: ai-assisted
 ---
 # System.Uri class
 
@@ -78,7 +79,7 @@ In .NET Framework 4.5 and later versions, IRI is always enabled and can't be cha
 
 Enabling IDN converts all Unicode labels in a domain name to their Punycode equivalents. Punycode names contain only ASCII characters and always start with the xn-- prefix. The reason for this is to support existing DNS servers on the Internet, since most DNS servers only support ASCII characters (see RFC 3940).
 
-Enabling IDN affects the value of the <xref:System.Uri.DnsSafeHost?displayProperty=nameWithType> property. Enabling IDN can also change the behavior of the <xref:System.Uri.Equals*>, <xref:System.Uri.OriginalString*>, <xref:System.Uri.GetComponents*>, and <xref:System.Uri.IsWellFormedOriginalString*> methods.
+Enabling IDN affects the value of the <xref:System.Uri.DnsSafeHost?displayProperty=nameWithType> property. Enabling IDN can also change the behavior of the <xref:System.Uri.Equals*>, <xref:System.Uri.OriginalString>, <xref:System.Uri.GetComponents*>, and <xref:System.Uri.IsWellFormedOriginalString*> methods.
 
 There are three possible values for IDN depending on the DNS servers that are used:
 
@@ -143,6 +144,11 @@ This validation can be used in other cases, like when dealing with UNC paths, by
 ```csharp
 Uri baseUri = new Uri(@"\\host\share\some\directory\name\");
 ```
+
+For more details about the design and security considerations of <xref:System.Uri> and <xref:System.UriBuilder>, review the following threat model documents:
+
+- [System.Uri threat model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.Uri/docs/System.Uri%20Threat%20Model.md)
+- [System.UriBuilder threat model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.Uri/docs/System.UriBuilder%20Threat%20Model.md)
 
 ## Performance considerations
 

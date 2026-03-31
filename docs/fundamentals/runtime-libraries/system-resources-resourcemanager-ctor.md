@@ -120,4 +120,4 @@ It can be compiled by using the following command in C#:
 csc Example.cs /resource:ExampleResources.resources
 ```
 
-The example retrieves a reference to the assembly that contains the resource file by passing a type defined in that assembly to the `typeof` function (in C#) or the `GetType` function (in Visual Basic) and retrieving the value of its <xref:System.Type.Assembly*?displayProperty=nameWithType> property.
+The example retrieves a reference to the assembly that contains the resource file by passing a type defined in that assembly to the `typeof` function (in C#) or the `GetType` function (in Visual Basic) and retrieving the value of its <xref:System.Type.Assembly?displayProperty=nameWithType> property.

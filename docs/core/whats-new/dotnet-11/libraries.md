@@ -44,10 +44,10 @@ The <xref:System.Globalization.TextInfo> class now provides <xref:System.Globali
 
 The new APIs support encoding and decoding operations with various input and output formats:
 
-- **Encoding to chars**: <xref:System.Buffers.Text.Base64.EncodeToChars%2A> and <xref:System.Buffers.Text.Base64.EncodeToString%2A>
-- **Encoding to UTF-8**: <xref:System.Buffers.Text.Base64.EncodeToUtf8%2A>
-- **Decoding from chars**: <xref:System.Buffers.Text.Base64.DecodeFromChars%2A>
-- **Decoding from UTF-8**: <xref:System.Buffers.Text.Base64.DecodeFromUtf8%2A>
+- **Encoding to chars**: <xref:System.Buffers.Text.Base64.EncodeToChars*> and <xref:System.Buffers.Text.Base64.EncodeToString*>
+- **Encoding to UTF-8**: <xref:System.Buffers.Text.Base64.EncodeToUtf8*>
+- **Decoding from chars**: <xref:System.Buffers.Text.Base64.DecodeFromChars*>
+- **Decoding from UTF-8**: <xref:System.Buffers.Text.Base64.DecodeFromUtf8*>
 
 These methods provide both high-level convenience methods (that allocate and return arrays or strings) and low-level span-based methods (for zero-allocation scenarios).
 
@@ -59,7 +59,7 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 The <xref:System.IO.Compression.ZipArchiveEntry> class now supports opening entries with specific file access modes through new overloads: <xref:System.IO.Compression.ZipArchiveEntry.Open(System.IO.FileAccess)?displayProperty=nameWithType> and <xref:System.IO.Compression.ZipArchiveEntry.OpenAsync(System.IO.FileAccess,System.Threading.CancellationToken)?displayProperty=nameWithType>. These overloads accept a <xref:System.IO.FileAccess> parameter and allow you to open ZIP entries for read, write, or read-write access.
 
-Additionally, a new <xref:System.IO.Compression.ZipArchiveEntry.CompressionMethod> property exposes the compression method used for an entry through the <xref:System.IO.Compression.ZipCompressionMethod> enum, which includes values for `Stored`, `Deflate`, and `Deflate64`.
+Additionally, a new <xref:System.IO.Compression.ZipArchiveEntry.CompressionMethod> property exposes the compression method used for an entry through the <xref:System.IO.Compression.ZipCompressionMethod> enum, which includes values for <xref:System.IO.Compression.ZipCompressionMethod.Stored>, <xref:System.IO.Compression.ZipCompressionMethod.Deflate>, and <xref:System.IO.Compression.ZipCompressionMethod.Deflate64>.
 
 ### DeflateStream and GZipStream behavior change
 
@@ -87,7 +87,7 @@ The <xref:System.Collections.BitArray> class now includes a <xref:System.Collect
 
 ### IReadOnlySet support in JSON serialization
 
-The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo%2A?displayProperty=nameWithType> method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet%601> collections.
+The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet`1> collections.
 
 ## URI data scheme constant
 
@@ -97,9 +97,9 @@ A new <xref:System.Uri.UriSchemeData?displayProperty=nameWithType> constant has 
 
 The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now includes constants for common programming languages:
 
-- `CSharp` - Indicates C# syntax.
-- `FSharp` - Indicates F# syntax.
-- `VisualBasic` - Indicates Visual Basic syntax.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.CSharp> - Indicates C# syntax.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.FSharp> - Indicates F# syntax.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.VisualBasic> - Indicates Visual Basic syntax.
 
 These constants can be used with the `StringSyntax` attribute to provide better tooling support for string literals containing code in these languages.
 
@@ -107,9 +107,9 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 
 ### Generic type info retrieval
 
-A common pattern when working with `System.Text.Json` type metadata is to retrieve a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> from <xref:System.Text.Json.JsonSerializerOptions>.
+A common pattern when working with `System.Text.Json` type metadata is to retrieve a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> from <xref:System.Text.Json.JsonSerializerOptions>.
 Previously, you had to manually downcast from the non-generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method.
-New generic `System.Text.Json.JsonSerializerOptions.GetTypeInfo<T>` and `TryGetTypeInfo<T>()` methods return strongly typed metadata directly, eliminating the cast.
+New generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0}@)?displayProperty=nameWithType> methods return strongly typed metadata directly, eliminating the cast.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonTypeInfoGeneric":::
 
@@ -117,7 +117,7 @@ This is particularly useful when working with source generation, NativeAOT, and 
 
 ## Tar archive format selection
 
-New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory%2A> and <xref:System.Formats.Tar.TarFile.CreateFromDirectoryAsync%2A> accept a <xref:System.Formats.Tar.TarEntryFormat> parameter, giving you direct control over the archive format. Previously, `CreateFromDirectory` always produced Pax archives. The new overloads support all four tar formats—Pax, Ustar, GNU, and V7—for compatibility with specific tools and environments.
+New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xref:System.Formats.Tar.TarFile.CreateFromDirectoryAsync*> accept a <xref:System.Formats.Tar.TarEntryFormat> parameter, giving you direct control over the archive format. Previously, `CreateFromDirectory` always produced Pax archives. The new overloads support all four tar formats—Pax, Ustar, GNU, and V7—for compatibility with specific tools and environments.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="TarArchiveFormat":::
 

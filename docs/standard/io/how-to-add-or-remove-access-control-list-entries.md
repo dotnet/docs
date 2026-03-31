@@ -18,19 +18,19 @@ To add or remove access control list (ACL) entries from a file or directory, get
 
 ## From a file
 
-1. Call the <xref:System.IO.FileSystemAclExtensions.GetAccessControl(System.IO.FileInfo)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.FileInfo.GetAccessControl%2A?displayProperty=nameWithType>) method to get a <xref:System.Security.AccessControl.FileSecurity> object that contains the current ACL entries of a file.
+1. Call the <xref:System.IO.FileSystemAclExtensions.GetAccessControl(System.IO.FileInfo)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.FileInfo.GetAccessControl*?displayProperty=nameWithType>) method to get a <xref:System.Security.AccessControl.FileSecurity> object that contains the current ACL entries of a file.
 
 2. Add or remove ACL entries from the <xref:System.Security.AccessControl.FileSecurity> object obtained in step 1.
 
-3. To apply the changes, pass the <xref:System.Security.AccessControl.FileSecurity> object to the <xref:System.IO.FileSystemAclExtensions.SetAccessControl(System.IO.FileInfo,System.Security.AccessControl.FileSecurity)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.FileInfo.SetAccessControl%2A?displayProperty=nameWithType>) method.
+3. To apply the changes, pass the <xref:System.Security.AccessControl.FileSecurity> object to the <xref:System.IO.FileSystemAclExtensions.SetAccessControl(System.IO.FileInfo,System.Security.AccessControl.FileSecurity)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.FileInfo.SetAccessControl*?displayProperty=nameWithType>) method.
 
 ## From a directory
 
-1. Call the <xref:System.IO.FileSystemAclExtensions.GetAccessControl(System.IO.DirectoryInfo)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.DirectoryInfo.GetAccessControl%2A?displayProperty=nameWithType>) method to get a <xref:System.Security.AccessControl.DirectorySecurity> object that contains the current ACL entries of a directory.
+1. Call the <xref:System.IO.FileSystemAclExtensions.GetAccessControl(System.IO.DirectoryInfo)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.DirectoryInfo.GetAccessControl*?displayProperty=nameWithType>) method to get a <xref:System.Security.AccessControl.DirectorySecurity> object that contains the current ACL entries of a directory.
 
 2. Add or remove ACL entries from the <xref:System.Security.AccessControl.DirectorySecurity> object obtained in step 1.
 
-3. To apply the changes, pass the <xref:System.Security.AccessControl.DirectorySecurity> object to the <xref:System.IO.FileSystemAclExtensions.SetAccessControl(System.IO.DirectoryInfo,System.Security.AccessControl.DirectorySecurity)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.DirectoryInfo.SetAccessControl%2A?displayProperty=nameWithType>) method.
+3. To apply the changes, pass the <xref:System.Security.AccessControl.DirectorySecurity> object to the <xref:System.IO.FileSystemAclExtensions.SetAccessControl(System.IO.DirectoryInfo,System.Security.AccessControl.DirectorySecurity)?displayProperty=nameWithType> (or, for .NET Framework apps, <xref:System.IO.DirectoryInfo.SetAccessControl*?displayProperty=nameWithType>) method.
 
 ## Example
 

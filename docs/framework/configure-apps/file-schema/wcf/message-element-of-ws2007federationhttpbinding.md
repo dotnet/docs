@@ -128,8 +128,8 @@ Defines settings for the message-level security for the [\<ws2007FederationHttpB
 ## See also
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
-- <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>
-- <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message*>
+- <xref:System.ServiceModel.WSFederationHttpSecurity.Message*>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

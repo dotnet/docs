@@ -18,7 +18,7 @@ In this quickstart, you learn how to deploy your project to Azure with GitHub Co
 
 ## Deploy your project
 
-The App Modernization for .NET deployment feature helps you deploy your migrated app to Azure. Follow these steps to start the deployment process:
+The Modernization for .NET deployment feature helps you deploy your migrated app to Azure. Follow these steps to start the deployment process:
 
 1. In Visual Studio, open your migrated project.
 

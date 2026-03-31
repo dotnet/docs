@@ -135,7 +135,7 @@ another monitoring service you've chosen to use.
 
 Before any distributed trace telemetry can be collected, you need to produce it. Often this instrumentation is
 in libraries, but for simplicity, you'll create a small app that has some example instrumentation using
-<xref:System.Diagnostics.ActivitySource.StartActivity%2A>. At this point, no collection has happened, and
+<xref:System.Diagnostics.ActivitySource.StartActivity*>. At this point, no collection has happened, and
 StartActivity() has no side-effect and returns null. See
 [the instrumentation tutorial](distributed-tracing-instrumentation-walkthroughs.md) for more details.
 
@@ -450,7 +450,7 @@ This callback is invoked once for each ActivitySource in the process. Return tru
 if you are interested in performing sampling or being notified about start/stop events
 for Activities produced by this source.
 - <xref:System.Diagnostics.ActivityListener.Sample> - By default
-<xref:System.Diagnostics.ActivitySource.StartActivity%2A> does not
+<xref:System.Diagnostics.ActivitySource.StartActivity*> does not
 create an Activity object unless some ActivityListener indicates it should be sampled. Returning
 <xref:System.Diagnostics.ActivitySamplingResult.AllDataAndRecorded>
 indicates that the Activity should be created,

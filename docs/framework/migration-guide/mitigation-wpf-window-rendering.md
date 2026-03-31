@@ -32,7 +32,7 @@ You can disable this change and revert to the previous behavior of clipping a WP
 
   - `false`, to disable clipping of windows to monitor bounds during rendering.
 
-- By setting the <xref:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping%2A> property to `true` at app startup.
+- By setting the <xref:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping> property to `true` at app startup.
 
 ## See also
 

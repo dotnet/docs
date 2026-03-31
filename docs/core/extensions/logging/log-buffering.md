@@ -171,7 +171,7 @@ For each log record, the algorithm checks:
 
 ### Change buffer filtering rules in a running app
 
-Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update filtering rules at runtime without restarting the application.
+Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor`1> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](../configuration-providers.md#file-configuration-provider)—you can update filtering rules at runtime without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which enables log buffering for logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level and category starting with `PerRequestLogBufferingFileBased.`:
 
@@ -205,7 +205,7 @@ However, be mindful of the memory consumption, especially in high-throughput app
 - Log buffering is not supported in .NET 8 and earlier versions.
 - The order of logs is not guaranteed to be preserved. However, original timestamps are preserved.
 - Custom configuration per each logging provider is not supported. The same configuration is used for all providers.
-- Log scopes are not supported. This means that if you use the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope%2A> method, the buffered log records will not be associated with the scope.
+- Log scopes are not supported. This means that if you use the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope*> method, the buffered log records will not be associated with the scope.
 - Not all information of the original log record is preserved. Log buffering internally uses <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord> class when flushing, and the following of its properties are always empty:
   - <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.ActivitySpanId>
   - <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.ActivityTraceId>

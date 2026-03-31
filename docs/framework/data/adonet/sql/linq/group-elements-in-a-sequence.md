@@ -9,10 +9,10 @@ ms.assetid: 1d50c8b4-f550-4775-bbb6-eab6e874cb43
 ---
 # Group Elements in a Sequence
 
-The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a sequence. The following examples use the Northwind database.
+The <xref:System.Linq.Enumerable.GroupBy*> operator groups the elements of a sequence. The following examples use the Northwind database.
 
 > [!NOTE]
-> Null column values in <xref:System.Linq.Enumerable.GroupBy%2A> queries can sometimes throw an <xref:System.InvalidOperationException>. For more information, see the "GroupBy InvalidOperationException" section of [Troubleshooting](troubleshooting.md).
+> Null column values in <xref:System.Linq.Enumerable.GroupBy*> queries can sometimes throw an <xref:System.InvalidOperationException>. For more information, see the "GroupBy InvalidOperationException" section of [Troubleshooting](troubleshooting.md).
 
 ## Example 1
 
@@ -23,7 +23,7 @@ The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a s
 
 ## Example 2
 
- The following example uses <xref:System.Linq.Enumerable.Max%2A> to find the maximum unit price for each `CategoryID`.
+ The following example uses <xref:System.Linq.Enumerable.Max*> to find the maximum unit price for each `CategoryID`.
 
  [!code-csharp[DLinqQueryExamples#28](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#28)]
  [!code-vb[DLinqQueryExamples#28](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#28)]
@@ -37,14 +37,14 @@ The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a s
 
 ## Example 4
 
- The following example uses <xref:System.Linq.Queryable.Sum%2A> to find the total `UnitPrice` for each `CategoryID`.
+ The following example uses <xref:System.Linq.Queryable.Sum*> to find the total `UnitPrice` for each `CategoryID`.
 
  [!code-csharp[DLinqQueryExamples#30](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#30)]
  [!code-vb[DLinqQueryExamples#30](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#30)]
 
 ## Example 5
 
- The following example uses <xref:System.Linq.Queryable.Count%2A> to find the number of discontinued `Products` in each `CategoryID`.
+ The following example uses <xref:System.Linq.Queryable.Count*> to find the number of discontinued `Products` in each `CategoryID`.
 
  [!code-csharp[DLinqQueryExamples#31](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#31)]
  [!code-vb[DLinqQueryExamples#31](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#31)]
@@ -72,7 +72,7 @@ The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a s
 
 ## Example
 
- The <xref:System.Linq.Queryable.GroupBy%2A> operator can take only a single key argument. If you need to group by more than one key, you must create an anonymous type, as in the following example:
+ The <xref:System.Linq.Queryable.GroupBy*> operator can take only a single key argument. If you need to group by more than one key, you must create an anonymous type, as in the following example:
 
  [!code-csharp[DLinqQueryExamples#35](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#35)]
  [!code-vb[DLinqQueryExamples#35](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#35)]

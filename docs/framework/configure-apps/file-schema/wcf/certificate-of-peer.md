@@ -58,9 +58,9 @@ Specifies a certificate used by a peer.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
-- <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate%2A>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate*>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateElement>
-- <xref:System.ServiceModel.Security.PeerCredential.Certificate%2A>
+- <xref:System.ServiceModel.Security.PeerCredential.Certificate*>
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)

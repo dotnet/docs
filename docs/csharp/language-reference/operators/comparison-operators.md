@@ -3,12 +3,12 @@ title: "Comparison operators - order items using the greater than and less than 
 description: "C# comparison operators check the order of values. The operators `>`, `<`, `>=`, `<=` compare the order of values. They determine if a value is greater than or less than another value."
 ms.date: 01/20/2026
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "<_CSharpKeyword"
   - ">_CSharpKeyword"
   - "<=_CSharpKeyword"
   - ">=_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "comparison operators [C#]"
   - "relational operators [C#]"
   - "less than operator [C#]"
@@ -72,5 +72,5 @@ For more information, see the [Relational and type-testing operators](~/_csharps
 ## See also
 
 - [C# operators and expressions](index.md)
-- <xref:System.IComparable%601?displayProperty=nameWithType>
+- <xref:System.IComparable`1?displayProperty=nameWithType>
 - [Equality operators](equality-operators.md)

@@ -21,4 +21,4 @@ public interface IOneWayGrain : IGrainWithGuidKey
 }
 ```
 
-One-way requests must return either <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>. They must not return generic variants of those types (<xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.ValueTask%601>).
+One-way requests must return either <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>. They must not return generic variants of those types (<xref:System.Threading.Tasks.Task`1> and <xref:System.Threading.Tasks.ValueTask`1>).

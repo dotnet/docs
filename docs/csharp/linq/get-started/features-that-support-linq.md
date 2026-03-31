@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 ## Query expressions
 
-Query expressions use a declarative syntax similar to SQL or XQuery to query over <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> collections. At compile time, the compiler converts query syntax to method calls to a LINQ provider's implementation of the standard query methods. Applications control the standard query operators that are in scope by specifying the appropriate namespace with a [`using`](../../language-reference/keywords/using-directive.md) directive. The following query expression takes an array of strings, groups them according to the first character in the string, and orders the groups.
+Query expressions use a declarative syntax similar to SQL or XQuery to query over <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> collections. At compile time, the compiler converts query syntax to method calls to a LINQ provider's implementation of the standard query methods. Applications control the standard query operators that are in scope by specifying the appropriate namespace with a [`using`](../../language-reference/keywords/using-directive.md) directive. The following query expression takes an array of strings, groups them according to the first character in the string, and orders the groups.
 
 ```csharp
 var query = from str in stringArray
@@ -49,7 +49,7 @@ var newLargeOrderCustomers = from o in IncomingOrders
                             select new Customer { Name = o.Name, Phone = o.Phone };
 ```
 
-The data source might have more properties defined than the `Customer` class such as `OrderSize`, but with object initialization, the data returned from the query is molded into the desired data type; you choose the data that's relevant to your class. As a result, you now have an <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> filled with the new `Customer`s you wanted. You can also write the preceding example in LINQ's method syntax:
+The data source might have more properties defined than the `Customer` class such as `OrderSize`, but with object initialization, the data returned from the query is molded into the desired data type; you choose the data that's relevant to your class. As a result, you now have an <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> filled with the new `Customer`s you wanted. You can also write the preceding example in LINQ's method syntax:
 
 ```csharp
 var newLargeOrderCustomers = IncomingOrders.Where(x => x.OrderSize > 5).Select(y => new Customer { Name = y.Name, Phone = y.Phone });
@@ -74,7 +74,7 @@ Beginning with C# 7, you can use [tuples](../../language-reference/builtin-types
 
 ## Extension members
 
-An [extension member](../../programming-guide/classes-and-structs/extension-methods.md) is a static member of a static class associated with a type called the *receiver type*. You can call an extension member as if it were a member of the receiver type. This feature enables you to "add" new members to existing types without actually modifying them. The standard query operators are a set of extension methods that provide LINQ query functionality for any type that implements <xref:System.Collections.Generic.IEnumerable%601>.
+An [extension member](../../programming-guide/classes-and-structs/extension-methods.md) is a static member of a static class associated with a type called the *receiver type*. You can call an extension member as if it were a member of the receiver type. This feature enables you to "add" new members to existing types without actually modifying them. The standard query operators are a set of extension methods that provide LINQ query functionality for any type that implements <xref:System.Collections.Generic.IEnumerable`1>.
 
 ## Lambda expressions
 
@@ -82,8 +82,8 @@ A [lambda expression](../../language-reference/operators/lambda-expressions.md) 
 
 ## Expressions as data
 
-Query objects are composable, meaning that you can return a query from a method. Objects that represent queries don't store the resulting collection, but rather the steps to produce the results when needed. The advantage of returning query objects from methods is that you can further compose or modify them. Therefore, any return value or `out` parameter of a method that returns a query must also have that type. If a method materializes a query into a concrete <xref:System.Collections.Generic.List%601> or <xref:System.Array> type, it returns the query results instead of the query itself. You can still compose or modify a query variable that's returned from a method.
-  
+Query objects are composable, meaning that you can return a query from a method. Objects that represent queries don't store the resulting collection, but rather the steps to produce the results when needed. The advantage of returning query objects from methods is that you can further compose or modify them. Therefore, any return value or `out` parameter of a method that returns a query must also have that type. If a method materializes a query into a concrete <xref:System.Collections.Generic.List`1> or <xref:System.Array> type, it returns the query results instead of the query itself. You can still compose or modify a query variable that's returned from a method.
+
 In the following example, the first method `QueryMethod1` returns a query as a return value, and the second method `QueryMethod2` returns a query as an `out` parameter (`returnQ` in the example). In both cases, it's a query that's returned, not query results.
 
 :::code language="csharp" source="./snippets/SnippetApp/ReturnQueryFromMethod.cs" id="return_query_from_method_1":::

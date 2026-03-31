@@ -55,9 +55,9 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
 ## See also
 
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate*>
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
-- <xref:System.ServiceModel.Description.ServiceCredentials.ClientCertificate%2A>
+- <xref:System.ServiceModel.Description.ServiceCredentials.ClientCertificate*>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>
 - [How to: Create a Duplex Contract](../../../wcf/feature-details/how-to-create-a-duplex-contract.md)
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

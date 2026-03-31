@@ -31,7 +31,7 @@ The broadcast channel decouples the producer and consumer of the stock price upd
 
 ## Define a consumer grain
 
-To consume broadcast channel messages, your grain needs to implement the <xref:Orleans.BroadcastChannel.IOnBroadcastChannelSubscribed> interface. This interface enables implicit subscriptions, meaning grains are automatically subscribed to the broadcast channel when they're activated. Your implementation uses the <xref:Orleans.BroadcastChannel.IBroadcastChannelSubscription.Attach%2A?displayProperty=nameWithType> method to attach to the broadcast channel. The `Attach` method takes a generic-type parameter for the message type you're going to receive.
+To consume broadcast channel messages, your grain needs to implement the <xref:Orleans.BroadcastChannel.IOnBroadcastChannelSubscribed> interface. This interface enables implicit subscriptions, meaning grains are automatically subscribed to the broadcast channel when they're activated. Your implementation uses the <xref:Orleans.BroadcastChannel.IBroadcastChannelSubscription.Attach*?displayProperty=nameWithType> method to attach to the broadcast channel. The `Attach` method takes a generic-type parameter for the message type you're going to receive.
 
 First, define the grain interface that consumers use to interact with the grain:
 
@@ -54,7 +54,7 @@ This example grain contains the latest stock prices as published on the broadcas
 
 ## Publish messages to a broadcast channel
 
-To publish messages to the broadcast channel, you need to get a reference to the broadcast channel. To do this, get the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider> from the <xref:Orleans.IClusterClient>. With the provider, call the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider.GetChannelWriter%2A?displayProperty=nameWithType> method to get an instance of <xref:Orleans.BroadcastChannel.IBroadcastChannelWriter%601>. The writer is used to publish messages to the broadcast channel.
+To publish messages to the broadcast channel, you need to get a reference to the broadcast channel. To do this, get the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider> from the <xref:Orleans.IClusterClient>. With the provider, call the <xref:Orleans.BroadcastChannel.IBroadcastChannelProvider.GetChannelWriter*?displayProperty=nameWithType> method to get an instance of <xref:Orleans.BroadcastChannel.IBroadcastChannelWriter`1>. The writer is used to publish messages to the broadcast channel.
 
 First, define a constant for the channel name to ensure the producer and consumers use the same channel identifier:
 
@@ -68,7 +68,7 @@ In the preceding code:
 
 - The `StockWorker` class is a background service that publishes messages to the broadcast channel.
 - The constructor takes a `StockClient` and <xref:Orleans.IClusterClient> as parameters.
-- From the cluster client instance, the <xref:Orleans.Hosting.ChannelHostingExtensions.GetBroadcastChannelProvider%2A> method is used to get the broadcast channel provider for the `LiveStockTicker` channel.
+- From the cluster client instance, the <xref:Orleans.Hosting.ChannelHostingExtensions.GetBroadcastChannelProvider*> method is used to get the broadcast channel provider for the `LiveStockTicker` channel.
 - The `ChannelId.Create` method creates a channel identifier using:
   - The channel name (`ChannelNames.LiveStockTicker`)—this must match the name used when configuring the broadcast channel in the silo setup.
   - `Guid.Empty` as the namespace—for broadcast channels, all subscribers receive all messages, so the namespace is typically set to `Guid.Empty` to indicate a single shared broadcast.

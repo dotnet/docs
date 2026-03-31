@@ -7,7 +7,7 @@ ms.date: 02/12/2024
 
 <xref:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo> now prepends the specified root directory to its collection of files.
 
-`InMemoryDirectoryInfo` is used by <xref:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions.Match%2A?displayProperty=nameWithType>, which enables the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> to execute glob-matching patterns without accessing the disk.
+`InMemoryDirectoryInfo` is used by <xref:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions.Match*?displayProperty=nameWithType>, which enables the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> to execute glob-matching patterns without accessing the disk.
 
 ## Previous behavior
 

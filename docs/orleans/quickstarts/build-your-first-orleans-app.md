@@ -134,7 +134,7 @@ Orleans grains can also use a custom interface to define their methods and prope
 
     :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="graininterface":::
 
-1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the <xref:Orleans.Grain> class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the <xref:Orleans.Runtime.IPersistentState%601> interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
+1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the <xref:Orleans.Grain> class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the <xref:Orleans.Runtime.IPersistentState`1> interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
     :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="grain":::
 

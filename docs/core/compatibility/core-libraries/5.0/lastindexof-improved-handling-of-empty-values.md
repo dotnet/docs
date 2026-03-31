@@ -5,11 +5,11 @@ ms.date: 11/01/2020
 ---
 # LastIndexOf has improved handling of empty search strings
 
-<xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> and related APIs now return correct values when searching for a zero-length (or zero-length equivalent) substring within a larger string.
+<xref:System.String.LastIndexOf*?displayProperty=nameWithType> and related APIs now return correct values when searching for a zero-length (or zero-length equivalent) substring within a larger string.
 
 ## Change description
 
-In .NET Framework and .NET Core 1.0 - 3.1, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> and related APIs might return an incorrect value when the caller searches for a zero-length substring.
+In .NET Framework and .NET Core 1.0 - 3.1, <xref:System.String.LastIndexOf*?displayProperty=nameWithType> and related APIs might return an incorrect value when the caller searches for a zero-length substring.
 
 ```csharp
 Console.WriteLine("Hello".LastIndexOf("")); // prints '4' (incorrect)
@@ -45,9 +45,9 @@ There is no compatibility switch to restore the old behavior.
 
 ## Affected APIs
 
-- <xref:System.String.LastIndexOf%2A?displayProperty=fullName>
-- <xref:System.Globalization.CompareInfo.LastIndexOf%2A?displayProperty=fullName>
-- <xref:System.MemoryExtensions.LastIndexOf%2A?displayProperty=fullName>
+- <xref:System.String.LastIndexOf*?displayProperty=fullName>
+- <xref:System.Globalization.CompareInfo.LastIndexOf*?displayProperty=fullName>
+- <xref:System.MemoryExtensions.LastIndexOf*?displayProperty=fullName>
 
 <!--
 

@@ -2,15 +2,15 @@
 title: "Generic Interfaces"
 description: Learn about using generic interfaces in C#. See code examples and view other available resources.
 ms.date: 11/18/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "C# language, generic interfaces"
   - "generics [C#], interfaces"
 ---
 # Generic Interfaces (C# Programming Guide)
 
-It's often useful to define interfaces either for generic collection classes, or for the generic classes that represent items in the collection. To avoid boxing and unboxing operations on value types, it's better to use [generic interfaces](../../../standard/generics/interfaces.md), such as <xref:System.IComparable%601>, on generic classes. The .NET class library defines several generic interfaces for use with the collection classes in the <xref:System.Collections.Generic> namespace. For more information about these interfaces, see [Generic interfaces](../../../standard/generics/interfaces.md).
+It's often useful to define interfaces either for generic collection classes, or for the generic classes that represent items in the collection. To avoid boxing and unboxing operations on value types, it's better to use [generic interfaces](../../../standard/generics/interfaces.md), such as <xref:System.IComparable`1>, on generic classes. The .NET class library defines several generic interfaces for use with the collection classes in the <xref:System.Collections.Generic> namespace. For more information about these interfaces, see [Generic interfaces](../../../standard/generics/interfaces.md).
 
-When an interface is specified as a constraint on a type parameter, only types that implement the interface can be used. The following code example shows a `SortedList<T>` class that derives from the `GenericList<T>` class. For more information, see [Introduction to Generics](../../fundamentals/types/generics.md). `SortedList<T>` adds the constraint `where T : IComparable<T>`. This constraint enables the `BubbleSort` method in `SortedList<T>` to use the generic <xref:System.IComparable%601.CompareTo%2A> method on list elements. In this example, list elements are a simple class, `Person` that implements `IComparable<Person>`.
+When an interface is specified as a constraint on a type parameter, only types that implement the interface can be used. The following code example shows a `SortedList<T>` class that derives from the `GenericList<T>` class. For more information, see [Introduction to Generics](../../fundamentals/types/generics.md). `SortedList<T>` adds the constraint `where T : IComparable<T>`. This constraint enables the `BubbleSort` method in `SortedList<T>` to use the generic <xref:System.IComparable`1.CompareTo*> method on list elements. In this example, list elements are a simple class, `Person` that implements `IComparable<Person>`.
 
 :::code language="csharp" source="./snippets/GenericInterfaces.cs" id="GenericLists":::
 
@@ -26,7 +26,7 @@ The rules of inheritance that apply to classes also apply to interfaces:
 
 :::code language="csharp" source="./snippets/GenericInterfaces.cs" id="Months":::
 
-Generic interfaces can inherit from non-generic interfaces. In the .NET class library, <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable>. When a generic interface inherits from a non-generic interface, the type parameter typically replaces `object` in the overridden members. For example, <xref:System.Collections.Generic.IEnumerable%601> uses `T` in place of `object` in the return value of <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> and in the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property getter. Because `T` is used only in output positions in these members, <xref:System.Collections.Generic.IEnumerable%601> can be marked as covariant. If `T` were used in an input position in an overridden member, the interface couldn't be covariant, and the compiler would generate an error.
+Generic interfaces can inherit from non-generic interfaces. In the .NET class library, <xref:System.Collections.Generic.IEnumerable`1> inherits from <xref:System.Collections.IEnumerable>. When a generic interface inherits from a non-generic interface, the type parameter typically replaces `object` in the overridden members. For example, <xref:System.Collections.Generic.IEnumerable`1> uses `T` in place of `object` in the return value of <xref:System.Collections.Generic.IEnumerable`1.GetEnumerator*> and in the <xref:System.Collections.Generic.IEnumerator`1.Current> property getter. Because `T` is used only in output positions in these members, <xref:System.Collections.Generic.IEnumerable`1> can be marked as covariant. If `T` were used in an input position in an overridden member, the interface couldn't be covariant, and the compiler would generate an error.
 
 Concrete classes can implement closed constructed interfaces, as follows:
 

@@ -20,7 +20,7 @@ This article shows how to preserve references and handle or ignore circular refe
 
 ## Preserve references and handle circular references
 
-To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
+To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler*> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve*>. This setting causes the following behavior:
 
 * On serialize:
 
@@ -39,15 +39,15 @@ This feature can't be used to preserve value types or immutable types. On deseri
 
 For value types, immutable types, and arrays, no reference metadata is serialized. On deserialization, an exception is thrown if `$ref` or `$id` is found. However, value types ignore `$id` (and `$values` in the case of collections) to make it possible to deserialize payloads that were serialized by using Newtonsoft.Json, which does serialize metadata for such types.
 
-To determine if objects are equal, System.Text.Json uses <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance%2A?displayProperty=nameWithType>, which uses reference equality (<xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=nameWithType>) instead of value equality (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>) when comparing two object instances.
+To determine if objects are equal, System.Text.Json uses <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance*?displayProperty=nameWithType>, which uses reference equality (<xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=nameWithType>) instead of value equality (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>) when comparing two object instances.
 
-For more information about how references are serialized and deserialized, see <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>.
+For more information about how references are serialized and deserialized, see <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve*?displayProperty=nameWithType>.
 
 The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to-contd/csharp/GuidReferenceResolverExample.cs).
 
 ### Persist reference metadata across multiple serialization and deserialization calls
 
-By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize` or `Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
+By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize*> or <xref:System.Text.Json.JsonSerializer.Deserialize*>. To persist references from one `Serialize` or `Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
 * You have a list of `Employee` objects and you have to serialize each one individually.
 * You want to take advantage of the references saved in the resolver for the `ReferenceHandler`.
@@ -70,11 +70,11 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 ## Ignore circular references
 
-Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to `null`, as shown in the following example:
+Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler*> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles*>. The serializer sets circular reference properties to `null`, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="32,59":::
 
-In the preceding example, `Manager` under `Adrian King` is serialized as `null` to avoid the circular reference. This behavior has the following advantages over <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>:
+In the preceding example, `Manager` under `Adrian King` is serialized as `null` to avoid the circular reference. This behavior has the following advantages over <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve*?displayProperty=nameWithType>:
 
 * It decreases payload size.
 * It creates JSON that is comprehensible for serializers other than System.Text.Json and Newtonsoft.Json.

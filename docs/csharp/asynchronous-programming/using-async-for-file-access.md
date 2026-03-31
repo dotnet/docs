@@ -1,5 +1,5 @@
 ---
-title: Asynchronous file access 
+title: Asynchronous file access
 description: Learn how to use the async feature to access files in C#. You can call into asynchronous methods without using callbacks or splitting your code across methods.
 ms.date: 02/08/2023
 ms.topic: tutorial
@@ -21,7 +21,7 @@ You might consider the following reasons for adding asynchrony to file access ca
 
 ## Use appropriate classes
 
-The simple examples in this topic demonstrate <xref:System.IO.File.WriteAllTextAsync%2A?displayProperty=nameWithType> and <xref:System.IO.File.ReadAllTextAsync%2A?displayProperty=nameWithType>. For fine control over the file I/O operations, use the <xref:System.IO.FileStream> class, which has an option that causes asynchronous I/O to occur at the operating system level. By using this option, you can avoid blocking a thread pool thread in many cases. To enable this option, you specify the `useAsync=true` or `options=FileOptions.Asynchronous` argument in the constructor call.
+The simple examples in this topic demonstrate <xref:System.IO.File.WriteAllTextAsync*?displayProperty=nameWithType> and <xref:System.IO.File.ReadAllTextAsync*?displayProperty=nameWithType>. For fine control over the file I/O operations, use the <xref:System.IO.FileStream> class, which has an option that causes asynchronous I/O to occur at the operating system level. By using this option, you can avoid blocking a thread pool thread in many cases. To enable this option, you specify the `useAsync=true` or `options=FileOptions.Asynchronous` argument in the constructor call.
 
 You can't use this option with <xref:System.IO.StreamReader> and <xref:System.IO.StreamWriter> if you open them directly by specifying a file path. However, you can use this option if you provide them a <xref:System.IO.Stream> that the <xref:System.IO.FileStream> class opened. Asynchronous calls are faster in UI apps even if a thread pool thread is blocked, because the UI thread isn't blocked during the wait.
 
@@ -56,7 +56,7 @@ The following examples read text from a file.
 
 ### Finite control example
 
-The text is buffered and, in this case, placed into a <xref:System.Text.StringBuilder>. Unlike in the previous example, the evaluation of the await produces a value. The <xref:System.IO.Stream.ReadAsync%2A> method returns a <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>>, so the evaluation of the await produces an `Int32` value `numRead` after the operation completes. For more information, see [Async Return Types (C#)](async-return-types.md).
+The text is buffered and, in this case, placed into a <xref:System.Text.StringBuilder>. Unlike in the previous example, the evaluation of the await produces a value. The <xref:System.IO.Stream.ReadAsync*> method returns a <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>>, so the evaluation of the await produces an `Int32` value `numRead` after the operation completes. For more information, see [Async Return Types (C#)](async-return-types.md).
 
 :::code language="csharp" source="snippets/file-access/Program.cs" id="ReadText":::
 
@@ -70,7 +70,7 @@ The following examples demonstrate parallel processing by writing 10 text files.
 
 ### Finite control example
 
-For each file, the <xref:System.IO.Stream.WriteAsync%2A> method returns a task that is then added to a list of tasks. The `await Task.WhenAll(tasks);` statement exits the method and resumes within the method when file processing is complete for all of the tasks.
+For each file, the <xref:System.IO.Stream.WriteAsync*> method returns a task that is then added to a list of tasks. The `await Task.WhenAll(tasks);` statement exits the method and resumes within the method when file processing is complete for all of the tasks.
 
 The example closes all <xref:System.IO.FileStream> instances in a `finally` block after the tasks are complete. If each `FileStream` was instead created in a `using` statement, the `FileStream` might be disposed of before the task was complete.
 
@@ -78,7 +78,7 @@ Any performance boost is almost entirely from the parallel processing and not th
 
 :::code language="csharp" source="snippets/file-access/Program.cs" id="ParallelWriteText":::
 
-When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md).
+When using the <xref:System.IO.Stream.WriteAsync*> and <xref:System.IO.Stream.ReadAsync*> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md).
 
 ## See also
 

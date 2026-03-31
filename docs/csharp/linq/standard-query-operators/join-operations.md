@@ -12,7 +12,7 @@ A *join* associates objects in one data source with objects that share a common 
 
 Joining is an important operation in queries that target data sources whose relationships to each other you can't follow directly. In object-oriented programming, joining could mean a correlation between objects that isn't modeled, such as the backwards direction of a one-way relationship. An example of a one-way relationship is a `Student` class that has a property of type `Department` that represents the major, but the `Department` class doesn't have a property that is a collection of `Student` objects. If you have a list of `Department` objects and you want to find all the students in each department, you could use a join operation to find them.
 
-The LINQ framework provides join methods: <xref:System.Linq.Enumerable.Join%2A> and <xref:System.Linq.Enumerable.GroupJoin%2A>. These methods perform equijoins, or joins that match two data sources based on equality of their keys. For comparison, Transact-SQL supports join operators other than `equals`, such as the `less than` operator. In relational database terms, <xref:System.Linq.Enumerable.Join%2A> implements an inner join, a type of join in which only those objects that have a match in the other data set are returned. The <xref:System.Linq.Enumerable.GroupJoin%2A> method has no direct equivalent in relational database terms, but it implements a superset of inner joins and left outer joins. A left outer join is a join that returns each element of the first (left) data source, even if it has no correlated elements in the other data source.
+The LINQ framework provides join methods: <xref:System.Linq.Enumerable.Join*> and <xref:System.Linq.Enumerable.GroupJoin*>. These methods perform equijoins, or joins that match two data sources based on equality of their keys. For comparison, Transact-SQL supports join operators other than `equals`, such as the `less than` operator. In relational database terms, <xref:System.Linq.Enumerable.Join*> implements an inner join, a type of join in which only those objects that have a match in the other data set are returned. The <xref:System.Linq.Enumerable.GroupJoin*> method has no direct equivalent in relational database terms, but it implements a superset of inner joins and left outer joins. A left outer join is a join that returns each element of the first (left) data source, even if it has no correlated elements in the other data source.
 
 The following illustration shows a conceptual view of two sets and the elements within those sets that are included in either an inner join or a left outer join.
 
@@ -22,8 +22,8 @@ The following illustration shows a conceptual view of two sets and the elements 
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
-|Join|Joins two sequences based on key selector functions and extracts pairs of values.|`join … in … on … equals …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|
-|GroupJoin|Joins two sequences based on key selector functions and groups the resulting matches for each element.|`join … in … on … equals … into …`|<xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=nameWithType>|
+|Join|Joins two sequences based on key selector functions and extracts pairs of values.|`join … in … on … equals …`|<xref:System.Linq.Enumerable.Join*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join*?displayProperty=nameWithType>|
+|GroupJoin|Joins two sequences based on key selector functions and groups the resulting matches for each element.|`join … in … on … equals … into …`|<xref:System.Linq.Enumerable.GroupJoin*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupJoin*?displayProperty=nameWithType>|
 |LeftJoin|Correlates the elements of two sequences based on matching keys.| N/A | <xref:System.Linq.Enumerable.LeftJoin*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.LeftJoin*?displayProperty=nameWithType>|
 |RightJoin|Correlates the elements of two sequences based on matching keys.| N/A | <xref:System.Linq.Enumerable.RightJoin*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.RightJoin*?displayProperty=nameWithType>|
 
@@ -49,7 +49,7 @@ You can express the preceding query by using method syntax, as shown in the foll
 
 ## Perform inner joins
 
-In relational database terms, an *inner join* produces a result set in which each element of the first collection appears one time for every matching element in the second collection. If an element in the first collection has no matching elements, it doesn't appear in the result set. The <xref:System.Linq.Enumerable.Join%2A> method, which the `join` clause in C# calls, implements an inner join. The following examples show you how to perform four variations of an inner join:
+In relational database terms, an *inner join* produces a result set in which each element of the first collection appears one time for every matching element in the second collection. If an element in the first collection has no matching elements, it doesn't appear in the result set. The <xref:System.Linq.Enumerable.Join*> method, which the `join` clause in C# calls, implements an inner join. The following examples show you how to perform four variations of an inner join:
 
 - A simple inner join that correlates elements from two data sources based on a simple key.
 - An inner join that correlates elements from two data sources based on a *composite* key. A composite key, which is a key that consists of more than one value, enables you to correlate elements based on more than one property.
@@ -62,7 +62,7 @@ The following example matches `Teacher` objects with `Department` objects whose 
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="SimpleInnerJoinQuery":::
 
-You achieve the same results by using the <xref:System.Linq.Enumerable.Join%2A> method syntax:
+You achieve the same results by using the <xref:System.Linq.Enumerable.Join*> method syntax:
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="SimpleInnerJoinMethod":::
 
@@ -76,7 +76,7 @@ The following example uses a list of `Teacher` objects and a list of `Student` o
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="CompositeKeyQuery":::
 
-You can use the <xref:System.Linq.Enumerable.Join%2A> method, as shown in the following example:
+You can use the <xref:System.Linq.Enumerable.Join*> method, as shown in the following example:
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="CompositeKeyMethod":::
 
@@ -90,7 +90,7 @@ The second `join` clause correlates the anonymous types returned by the first jo
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="MultipleJoinQuery":::
 
-The equivalent query that uses multiple <xref:System.Linq.Enumerable.Join%2A> methods uses the same approach with the anonymous type:
+The equivalent query that uses multiple <xref:System.Linq.Enumerable.Join*> methods uses the same approach with the anonymous type:
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="MultipleJoinMethod":::
 
@@ -100,7 +100,7 @@ The following example shows how to implement an inner join by using a group join
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="InnerGroupJoinQuery":::
 
-You can achieve the same results by using the <xref:System.Linq.Enumerable.GroupJoin%2A> method, as shown in the following example:
+You can achieve the same results by using the <xref:System.Linq.Enumerable.GroupJoin*> method, as shown in the following example:
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="InnerGroupJoinMethod":::
 
@@ -108,7 +108,7 @@ The result is equivalent to the result set obtained by using the `join` clause w
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="InnerJoinQuery":::
 
-To avoid chaining, use the single <xref:System.Linq.Enumerable.Join%2A> method as presented here:
+To avoid chaining, use the single <xref:System.Linq.Enumerable.Join*> method as presented here:
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="InnerJoinMethod":::
 
@@ -120,7 +120,7 @@ The group join is useful for producing hierarchical data structures. It pairs ea
 > Each element of the first collection appears in the result set of a group join regardless of whether correlated elements are found in the second collection. If no correlated elements are found, the sequence of correlated elements for that element is empty. The result selector therefore has access to every element of the first collection. This behavior differs from the result selector in a non-group join, which can't access elements from the first collection that have no match in the second collection.
 
 > [!WARNING]
-> <xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. For more information, see [Entity Framework Core, GroupJoin](/ef/core/querying/complex-query-operators#groupjoin).
+> <xref:System.Linq.Enumerable.GroupJoin*?displayProperty=nameWithType> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. For more information, see [Entity Framework Core, GroupJoin](/ef/core/querying/complex-query-operators#groupjoin).
 
 The first example in this article shows how to perform a group join. The second example shows how to use a group join to create XML elements.
 
@@ -152,13 +152,13 @@ The equivalent query using method syntax is shown in the following code:
 
 ## Emulate a left outer join
 
-Before .NET 10, use LINQ to perform a left outer join by calling the <xref:System.Linq.Enumerable.DefaultIfEmpty%2A> method on the results of a group join.
+Before .NET 10, use LINQ to perform a left outer join by calling the <xref:System.Linq.Enumerable.DefaultIfEmpty*> method on the results of a group join.
 
-The following example demonstrates how to use the <xref:System.Linq.Enumerable.DefaultIfEmpty%2A> method on the results of a group join to perform a left outer join.
+The following example demonstrates how to use the <xref:System.Linq.Enumerable.DefaultIfEmpty*> method on the results of a group join to perform a left outer join.
 
 The first step in producing a left outer join of two collections is to perform an inner join by using a group join. (See [Perform inner joins](#perform-inner-joins) for an explanation of this process.) In this example, the list of `Department` objects is inner-joined to the list of `Student` objects based on a `Department` object's ID that matches the student's `DepartmentID`.
 
-The second step is to include each element of the first (left) collection in the result set even if that element has no matches in the right collection. You accomplish this step by calling <xref:System.Linq.Enumerable.DefaultIfEmpty%2A> on each sequence of matching elements from the group join. In this example, you call <xref:System.Linq.Enumerable.DefaultIfEmpty%2A> on each sequence of matching `Student` objects. The method returns a collection that contains a single, default value if the sequence of matching `Student` objects is empty for any `Department` object, ensuring that each `Department` object is represented in the result collection.
+The second step is to include each element of the first (left) collection in the result set even if that element has no matches in the right collection. You accomplish this step by calling <xref:System.Linq.Enumerable.DefaultIfEmpty*> on each sequence of matching elements from the group join. In this example, you call <xref:System.Linq.Enumerable.DefaultIfEmpty*> on each sequence of matching `Student` objects. The method returns a collection that contains a single, default value if the sequence of matching `Student` objects is empty for any `Department` object, ensuring that each `Department` object is represented in the result collection.
 
 > [!NOTE]
 > The default value for a reference type is `null`; therefore, the example checks for a null reference before accessing each element of each `Student` collection.
@@ -171,8 +171,8 @@ The equivalent query using method syntax is shown in the following code:
 
 ## See also
 
-- <xref:System.Linq.Enumerable.Join%2A>
-- <xref:System.Linq.Enumerable.GroupJoin%2A>
+- <xref:System.Linq.Enumerable.Join*>
+- <xref:System.Linq.Enumerable.GroupJoin*>
 - [Anonymous types](../../fundamentals/types/anonymous-types.md)
 - [Formulate Joins and Cross-Product Queries](../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
 - [join clause](../../language-reference/keywords/join-clause.md)

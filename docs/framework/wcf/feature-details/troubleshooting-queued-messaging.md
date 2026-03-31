@@ -59,13 +59,13 @@ This section contains answers to most common troubleshooting issues. Some issues
 
 - Check that the transactional queue requirements are compatible with the assurances specified. Note the following principles:
 
-  - You can send durable messages (datagrams and sessions) with "exactly once" assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `true`) only to a transactional queue.
+  - You can send durable messages (datagrams and sessions) with "exactly once" assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce*> = `true`) only to a transactional queue.
 
   - You can send sessions only with "exactly once" assurances.
 
   - A transaction is required to receive messages in a session from a transactional queue.
 
-  - You can send or receive volatile or durable messages (datagrams only) with no assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`) only to a non-transactional queue.
+  - You can send or receive volatile or durable messages (datagrams only) with no assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce*> = `false`) only to a non-transactional queue.
 
 - Check the dead-letter queue. If you find the messages there, determine why they were not delivered.
 
@@ -77,9 +77,9 @@ This section contains answers to most common troubleshooting issues. Some issues
 
 **Q:** Is it always necessary to define a custom dead-letter queue, or is there a default dead-letter queue?
 
-**A:** If assurances are "exactly once" (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `true`), and if you do not specify a custom dead-letter queue, the default is a system-wide transactional dead-letter queue.
+**A:** If assurances are "exactly once" (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce*> = `true`), and if you do not specify a custom dead-letter queue, the default is a system-wide transactional dead-letter queue.
 
-If assurances are none (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`), then the default is no dead-letter queue functionality.
+If assurances are none (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce*> = `false`), then the default is no dead-letter queue functionality.
 
 **Q:** My service throws on SvcHost.Open with a message "EndpointListener requirements cannot be met by the ListenerFactory". Why?
 
@@ -138,9 +138,9 @@ The system dead-letter queue, as well as any custom dead-letter queue, is partic
 
 **A:** By default, messages are signed using an MSMQ internal certificate that requires the Active Directory directory service. In workgroup mode, because Active Directory is not available, signing the message fails. So the message lands in the dead-letter queue and failure cause, such as "Bad signature", is indicated.
 
-The workaround is to turn off security. This is done by setting <xref:System.ServiceModel.NetMsmqSecurity.Mode%2A> = <xref:System.ServiceModel.NetMsmqSecurityMode.None> to make it work in workgroup mode.
+The workaround is to turn off security. This is done by setting <xref:System.ServiceModel.NetMsmqSecurity.Mode*> = <xref:System.ServiceModel.NetMsmqSecurityMode.None> to make it work in workgroup mode.
 
-Another workaround is to get the <xref:System.ServiceModel.MsmqTransportSecurity> from the <xref:System.ServiceModel.NetMsmqSecurity.Transport%2A> property and set it to <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate>, and set the client certificate.
+Another workaround is to get the <xref:System.ServiceModel.MsmqTransportSecurity> from the <xref:System.ServiceModel.NetMsmqSecurity.Transport> property and set it to <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate>, and set the client certificate.
 
 Yet another workaround is to install MSMQ with Active Directory integration.
 
@@ -202,4 +202,4 @@ Yet another workaround is to install MSMQ with Active Directory integration.
 
 ## Using Custom MSMQ Bindings with ReceiveContext Enabled
 
-When using a custom MSMQ binding with <xref:System.ServiceModel.Channels.ReceiveContext> enabled, processing an incoming message uses a thread pool thread because native MSMQ doesn't support I/O completion for asynchronous <xref:System.ServiceModel.Channels.ReceiveContext> receives. This is because processing such a message uses internal transactions for <xref:System.ServiceModel.Channels.ReceiveContext> and MSMQ doesn't support asynchronous processing. To work around this issue, you can add a <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> to the endpoint to force synchronous processing or set <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.MaxPendingReceives%2A> to 1.
+When using a custom MSMQ binding with <xref:System.ServiceModel.Channels.ReceiveContext> enabled, processing an incoming message uses a thread pool thread because native MSMQ doesn't support I/O completion for asynchronous <xref:System.ServiceModel.Channels.ReceiveContext> receives. This is because processing such a message uses internal transactions for <xref:System.ServiceModel.Channels.ReceiveContext> and MSMQ doesn't support asynchronous processing. To work around this issue, you can add a <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> to the endpoint to force synchronous processing or set <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.MaxPendingReceives*> to 1.

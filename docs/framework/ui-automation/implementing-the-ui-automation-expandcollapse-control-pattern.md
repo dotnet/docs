@@ -34,11 +34,11 @@ When implementing the ExpandCollapse control pattern, note the following guideli
 
 - Expand and Collapse functionality is control-specific. The following are examples of this behavior.
 
-  - The Office Personal Menu can be a tri-state MenuItem (<xref:System.Windows.Automation.ExpandCollapseState.Expanded>, <xref:System.Windows.Automation.ExpandCollapseState.Collapsed> and <xref:System.Windows.Automation.ExpandCollapseState.PartiallyExpanded>) where the control specifies the state to adopt when an <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> is called.
+  - The Office Personal Menu can be a tri-state MenuItem (<xref:System.Windows.Automation.ExpandCollapseState.Expanded>, <xref:System.Windows.Automation.ExpandCollapseState.Collapsed> and <xref:System.Windows.Automation.ExpandCollapseState.PartiallyExpanded>) where the control specifies the state to adopt when an <xref:System.Windows.Automation.ExpandCollapsePattern.Expand*> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse*> is called.
 
-  - Calling <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> on a TreeItem may display all descendants or only immediate children.
+  - Calling <xref:System.Windows.Automation.ExpandCollapsePattern.Expand*> on a TreeItem may display all descendants or only immediate children.
 
-  - If calling <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> on a control maintains the state of its descendants, a visibility change event should be sent, not a state change event If the parent control does not maintain the state of its descendants when collapsed, the control may destroy all the descendants that are no longer visible and raise a destroyed event; or it might change the <xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState%2A> for each descendant and raise a visibility change event.
+  - If calling <xref:System.Windows.Automation.ExpandCollapsePattern.Expand*> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse*> on a control maintains the state of its descendants, a visibility change event should be sent, not a state change event If the parent control does not maintain the state of its descendants when collapsed, the control may destroy all the descendants that are no longer visible and raise a destroyed event; or it might change the <xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState*> for each descendant and raise a visibility change event.
 
 - To guarantee navigation, it is desirable for an object to be in the UI Automation tree (with appropriate visibility state) regardless of its parents <xref:System.Windows.Automation.ExpandCollapseState>. If descendants are generated on demand, they may only appear in the UI Automation tree after being displayed for the first time or only while they are visible.
 
@@ -50,9 +50,9 @@ The following properties and methods are required for implementing <xref:System.
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState%2A>|Property|None|
-|<xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A>|Method|None|
-|<xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState*>|Property|None|
+|<xref:System.Windows.Automation.ExpandCollapsePattern.Expand*>|Method|None|
+|<xref:System.Windows.Automation.ExpandCollapsePattern.Collapse*>|Method|None|
 |<xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>|Event|This control has no associated events; use this generic delegate.|
 
 <a name="Exceptions"></a>
@@ -63,7 +63,7 @@ Providers must throw the following exceptions.
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|Either <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> is called when the <xref:System.Windows.Automation.ExpandCollapseState> = <xref:System.Windows.Automation.ExpandCollapseState.LeafNode>.|
+|<xref:System.InvalidOperationException>|Either <xref:System.Windows.Automation.ExpandCollapsePattern.Expand*> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse*> is called when the <xref:System.Windows.Automation.ExpandCollapseState> = <xref:System.Windows.Automation.ExpandCollapseState.LeafNode>.|
 
 ## See also
 

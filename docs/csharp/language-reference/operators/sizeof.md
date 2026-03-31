@@ -2,10 +2,10 @@
 title: "sizeof operator - determine the storage needs for a type"
 description: "Learn about the C# `sizeof` operator that returns the memory amount occupied by a variable of a given type."
 ms.date: 02/06/2026
-f1_keywords: 
+f1_keywords:
   - "sizeof_CSharpKeyword"
   - "sizeof"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sizeof keyword [C#]"
 ---
 # sizeof operator - determine the memory needs for a given type
@@ -44,7 +44,7 @@ The following example demonstrates the usage of the `sizeof` operator:
 
 :::code language="csharp" source="./snippets/shared/SizeOfOperator.cs":::
 
-The `sizeof` operator returns the number of bytes allocated by the common language runtime in managed memory. For [struct](../builtin-types/struct.md) types, that value includes any padding, as the preceding example demonstrates. The result of the `sizeof` operator might differ from the result of the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method, which returns the size of a type in *unmanaged* memory.
+The `sizeof` operator returns the number of bytes allocated by the common language runtime in managed memory. For [struct](../builtin-types/struct.md) types, that value includes any padding, as the preceding example demonstrates. The result of the `sizeof` operator might differ from the result of the <xref:System.Runtime.InteropServices.Marshal.SizeOf*?displayProperty=nameWithType> method, which returns the size of a type in *unmanaged* memory.
 
 > [!IMPORTANT]
 >

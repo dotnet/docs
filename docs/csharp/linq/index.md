@@ -24,25 +24,25 @@ You might need to add a [`using`](../language-reference/keywords/using-directive
 - The variables in a query expression are all strongly typed.
 - A query isn't executed until you iterate over the query variable, for example in a `foreach` statement.
 - At compile time, the compiler converts query expressions to standard query operator method calls according to the rules defined in the C# specification. You can express any query that uses query syntax by using method syntax. In some cases, query syntax is more readable and concise. In others, method syntax is more readable. There's no semantic or performance difference between the two different forms. For more information, see [C# language specification](~/_csharpstandard/standard/expressions.md#1222-query-expressions) and [Standard query operators overview](standard-query-operators/index.md).
-- Some query operations, such as <xref:System.Linq.Enumerable.Count%2A> or <xref:System.Linq.Enumerable.Max%2A>, have no equivalent query expression clause and must be expressed as a method call. You can combine method syntax with query syntax in various ways.
-- Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. The compiler compiles <xref:System.Collections.Generic.IEnumerable%601> queries to delegates. The compiler compiles <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable%601> queries to expression trees. For more information, see [Expression trees](/dotnet/csharp/advanced-topics/expression-trees).
+- Some query operations, such as <xref:System.Linq.Enumerable.Count*> or <xref:System.Linq.Enumerable.Max*>, have no equivalent query expression clause and must be expressed as a method call. You can combine method syntax with query syntax in various ways.
+- Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. The compiler compiles <xref:System.Collections.Generic.IEnumerable`1> queries to delegates. The compiler compiles <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable`1> queries to expression trees. For more information, see [Expression trees](/dotnet/csharp/advanced-topics/expression-trees).
 
-## How to enable LINQ querying of your data source  
-  
+## How to enable LINQ querying of your data source
+
 ### In-memory data
 
-You can enable LINQ querying of in-memory data in two ways. If the data is of a type that implements <xref:System.Collections.Generic.IEnumerable%601>, query the data by using LINQ to Objects. If it doesn't make sense to enable enumeration by implementing the <xref:System.Collections.Generic.IEnumerable%601> interface, define LINQ standard query operator methods either in that type or as [extension members](../programming-guide/classes-and-structs/extension-methods.md) for that type. Custom implementations of the standard query operators should use deferred execution to return the results.  
-  
+You can enable LINQ querying of in-memory data in two ways. If the data is of a type that implements <xref:System.Collections.Generic.IEnumerable`1>, query the data by using LINQ to Objects. If it doesn't make sense to enable enumeration by implementing the <xref:System.Collections.Generic.IEnumerable`1> interface, define LINQ standard query operator methods either in that type or as [extension members](../programming-guide/classes-and-structs/extension-methods.md) for that type. Custom implementations of the standard query operators should use deferred execution to return the results.
+
 ### Remote data
 
-The best option for enabling LINQ querying of a remote data source is to implement the <xref:System.Linq.IQueryable%601> interface.
-  
+The best option for enabling LINQ querying of a remote data source is to implement the <xref:System.Linq.IQueryable`1> interface.
+
 ## IQueryable LINQ providers
 
-LINQ providers that implement <xref:System.Linq.IQueryable%601> can vary widely in their complexity.
-  
-A less complex `IQueryable` provider might access a single method from a Web service. This type of provider is specific to the data source because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query and let the remaining logic of the query be handled elsewhere.  
-  
-An `IQueryable` provider of medium complexity might target a data source that has a partially expressive query language. If it targets a Web service, it might access more than one method of the Web service and select which method to call based on the information that the query seeks. A provider of medium complexity has a richer type system than a simple provider, but it's still a fixed type system. For example, the provider might expose types that have one-to-many relationships that can be traversed, but it doesn't provide mapping technology for user-defined types.  
-  
+LINQ providers that implement <xref:System.Linq.IQueryable`1> can vary widely in their complexity.
+
+A less complex `IQueryable` provider might access a single method from a Web service. This type of provider is specific to the data source because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query and let the remaining logic of the query be handled elsewhere.
+
+An `IQueryable` provider of medium complexity might target a data source that has a partially expressive query language. If it targets a Web service, it might access more than one method of the Web service and select which method to call based on the information that the query seeks. A provider of medium complexity has a richer type system than a simple provider, but it's still a fixed type system. For example, the provider might expose types that have one-to-many relationships that can be traversed, but it doesn't provide mapping technology for user-defined types.
+
 A complex `IQueryable` provider, such as the [Entity Framework Core](/ef/core/) provider, might translate complete LINQ queries to an expressive query language, such as SQL. A complex provider is more general because it can handle a wider variety of questions in the query. It also has an open type system and therefore must contain extensive infrastructure to map user-defined types. Developing a complex provider requires a significant amount of effort.

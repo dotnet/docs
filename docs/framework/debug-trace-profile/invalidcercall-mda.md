@@ -57,6 +57,6 @@ The `invalidCERCall` managed debugging assistant (MDA) is activated when there i
 
 ## See also
 
-- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod*>
 - <xref:System.Runtime.ConstrainedExecution>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

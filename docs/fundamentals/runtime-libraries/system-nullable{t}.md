@@ -19,7 +19,7 @@ The <xref:System.Nullable> class provides complementary support for the <xref:Sy
 
 ## Fundamental properties
 
-The two fundamental members of the <xref:System.Nullable`1> structure are the <xref:System.Nullable`1.HasValue*> and <xref:System.Nullable`1.Value*> properties. If the <xref:System.Nullable`1.HasValue> property for a <xref:System.Nullable`1> object is `true`, the value of the object can be accessed with the <xref:System.Nullable`1.Value> property. If the <xref:System.Nullable`1.HasValue> property is `false`, the value of the object is undefined and an attempt to access the <xref:System.Nullable`1.Value> property throws an <xref:System.InvalidOperationException>.
+The two fundamental members of the <xref:System.Nullable`1> structure are the <xref:System.Nullable`1.HasValue> and <xref:System.Nullable`1.Value> properties. If the <xref:System.Nullable`1.HasValue> property for a <xref:System.Nullable`1> object is `true`, the value of the object can be accessed with the <xref:System.Nullable`1.Value> property. If the <xref:System.Nullable`1.HasValue> property is `false`, the value of the object is undefined and an attempt to access the <xref:System.Nullable`1.Value> property throws an <xref:System.InvalidOperationException>.
 
 ## Boxing and unboxing
 

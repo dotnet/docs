@@ -33,7 +33,7 @@ sp_configure 'user instances enabled','0'
 
 ## Connect to a User Instance
 
- The `User Instance` and `AttachDBFilename` <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> keywords allow a <xref:System.Data.SqlClient.SqlConnection> to connect to a user instance. User instances are also supported by the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> `UserInstance` and `AttachDBFilename` properties.
+ The `User Instance` and `AttachDBFilename` <xref:System.Data.SqlClient.SqlConnection.ConnectionString> keywords allow a <xref:System.Data.SqlClient.SqlConnection> to connect to a user instance. User instances are also supported by the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> `UserInstance` and `AttachDBFilename` properties.
 
 Consider the following connection string.
 
@@ -79,7 +79,7 @@ Initial Catalog=Northwind;
  When the <xref:System.Data.SqlClient.SqlConnection> is opened, it is redirected from the default SQL Server Express instance to a runtime initiated instance running under the caller's account.
 
 > [!NOTE]
-> It may be necessary to increase the <xref:System.Data.SqlClient.SqlConnection.ConnectionTimeout%2A> value since user instances may take longer to load than regular instances.
+> It may be necessary to increase the <xref:System.Data.SqlClient.SqlConnection.ConnectionTimeout> value since user instances may take longer to load than regular instances.
 
  The following code fragment opens a new `SqlConnection`, displays the connection string in the console window, and then closes the connection when exiting the `using` code block.
 

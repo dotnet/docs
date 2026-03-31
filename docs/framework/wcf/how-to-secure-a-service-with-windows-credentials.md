@@ -31,9 +31,9 @@ The first procedure walks through creating and configuring a <xref:System.Servic
 
 2. Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class.
 
-3. Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode.Message>.
+3. Set the <xref:System.ServiceModel.WSHttpSecurity.Mode> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode.Message>.
 
-4. Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType.Windows>.
+4. Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType.Windows>.
 
 5. The code for this procedure is as follows:
 
@@ -58,7 +58,7 @@ This is the second procedure, which shows how to use the binding in a self-hoste
 
 6. Add an endpoint to the service using the `contractType`, binding, and an endpoint name (secureCalculator). A client must concatenate the base address and the endpoint name when initiating a call to the service.
 
-7. Call the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> method to start the service. The code for this procedure is shown here:
+7. Call the <xref:System.ServiceModel.Channels.CommunicationObject.Open*> method to start the service. The code for this procedure is shown here:
 
     [!code-csharp[c_SecureWindowsService#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsservice/cs/secureservice.cs#2)]
     [!code-vb[c_SecureWindowsService#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsservice/vb/secureservice.vb#2)]
@@ -73,7 +73,7 @@ This example uses only code to create the client. As an alternative, you can use
 
 #### To use a binding in a client with code
 
-1. Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.
+1. Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase`1> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.
 
 2. This procedure's code is inserted at the beginning of the `Main` method of the client program.
 
@@ -83,7 +83,7 @@ This example uses only code to create the client. As an alternative, you can use
 
 5. Create an instance of the generated client class with the `serviceAddress` and the `clientBinding` variables.
 
-6. Call the <xref:System.ServiceModel.ClientBase%601.Open%2A> method, as shown in the following code.
+6. Call the <xref:System.ServiceModel.ClientBase`1.Open*> method, as shown in the following code.
 
 7. Call the service and display the results.
 
@@ -137,7 +137,7 @@ This procedure shows how to generate two files: a proxy that communicates with t
 
 4. Create an instance of the generated client class passing the name of the binding in the configuration file as an input parameter.
 
-5. Call the <xref:System.ServiceModel.ClientBase%601.Open%2A> method, as shown in the following code.
+5. Call the <xref:System.ServiceModel.ClientBase`1.Open*> method, as shown in the following code.
 
 6. Call the service and display the results.
 

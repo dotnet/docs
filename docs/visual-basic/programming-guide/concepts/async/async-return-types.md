@@ -6,7 +6,7 @@ ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
 ---
 # Async Return Types (Visual Basic)
 
-Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with Async and Await (Visual Basic)](index.md).
+Async methods have three possible return types: <xref:System.Threading.Tasks.Task`1>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with Async and Await (Visual Basic)](index.md).
 
 Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.
 
@@ -15,7 +15,7 @@ Each return type is examined in one of the following sections, and you can find 
 
 ## <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type
 
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [Return](../../../language-reference/statements/return-statement.md) statement in which the operand has type `TResult`.
+The <xref:System.Threading.Tasks.Task`1> return type is used for an async method that contains a [Return](../../../language-reference/statements/return-statement.md) statement in which the operand has type `TResult`.
 
 In the following example, the `TaskOfT_MethodAsync` async method contains a return statement that returns an integer. Therefore, the method declaration must specify a return type of `Task(Of Integer)`.
 
@@ -51,10 +51,10 @@ The following code calls and awaits method `TaskOfT_MethodAsync`. The result is 
 Dim result1 As Integer = Await TaskOfT_MethodAsync()
 ```
 
-You can better understand how this happens by separating the call to `TaskOfT_MethodAsync` from the application of `Await`, as the following code shows. A call to method `TaskOfT_MethodAsync` that isn't immediately awaited returns a `Task(Of Integer)`, as you would expect from the declaration of the method. The task is assigned to the `integerTask` variable in the example. Because `integerTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, TResult represents an integer type. When `Await` is applied to `integerTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `integerTask`. The value is assigned to the `result2` variable.
+You can better understand how this happens by separating the call to `TaskOfT_MethodAsync` from the application of `Await`, as the following code shows. A call to method `TaskOfT_MethodAsync` that isn't immediately awaited returns a `Task(Of Integer)`, as you would expect from the declaration of the method. The task is assigned to the `integerTask` variable in the example. Because `integerTask` is a <xref:System.Threading.Tasks.Task`1>, it contains a <xref:System.Threading.Tasks.Task`1.Result> property of type `TResult`. In this case, TResult represents an integer type. When `Await` is applied to `integerTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task`1.Result> property of `integerTask`. The value is assigned to the `result2` variable.
 
 > [!WARNING]
-> The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `Await` instead of accessing the property directly.
+> The <xref:System.Threading.Tasks.Task`1.Result> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `Await` instead of accessing the property directly.
 
 ```vb
 ' Call and await in separate statements.
@@ -105,7 +105,7 @@ The following code calls and awaits method `Task_MethodAsync`.
 Await Task_MethodAsync()
 ```
 
-As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separate the call to `Task_MethodAsync` from the application of an `Await` operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.
+As in the previous <xref:System.Threading.Tasks.Task`1> example, you can separate the call to `Task_MethodAsync` from the application of an `Await` operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.
 
 The following code separates calling `Task_MethodAsync` from awaiting the task that `Task_MethodAsync` returns.
 
@@ -123,7 +123,7 @@ Await simpleTask
 
 The primary use of `Sub` procedures is in event handlers, where there is no return type (referred to as a void return type in other languages). A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget." However, you should return a `Task` wherever possible, because a void-returning async method can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.
 
-The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail. If an exception occurs in an async method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, the exception is stored in the returned task, and rethrown when the task is awaited. Therefore, make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.
+The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail. If an exception occurs in an async method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1>, the exception is stored in the returned task, and rethrown when the task is awaited. Therefore, make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> and that calls to the method are awaited.
 
 For more information about how to catch exceptions in async methods, see [Try...Catch...Finally Statement](../../../language-reference/statements/try-catch-finally-statement.md).
 
@@ -294,7 +294,7 @@ The following Windows Presentation Foundation (WPF) project contains the code ex
 
 ## See also
 
-- <xref:System.Threading.Tasks.Task.FromResult%2A>
+- <xref:System.Threading.Tasks.Task.FromResult*>
 - [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Control Flow in Async Programs (Visual Basic)](control-flow-in-async-programs.md)
 - [Async](../../../language-reference/modifiers/async.md)

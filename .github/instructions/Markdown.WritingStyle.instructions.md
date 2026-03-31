@@ -21,6 +21,7 @@ NEVER use:
 - "we" or "our" when referring to documentation authors or product teams
 - Jargon or overly complex technical language
 - Weak phrases like "you can" or "there is/are/were" unless they add value
+- "this" as a standalone pronoun — replace it with the specific noun it refers to (adjectival use before a noun, such as "this method", is fine)
 
 ALWAYS:
 - Write like you speak using everyday words

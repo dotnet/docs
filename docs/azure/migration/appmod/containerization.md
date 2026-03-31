@@ -1,6 +1,7 @@
 ---
 title: Containerize your project using GitHub Copilot modernization for .NET
 description: Learn how to containerize your .NET project using GitHub Copilot modernization for .NET.
+
 #customer intent: As a .NET developer, I want to containerize my project using GitHub Copilot modernization so that I can modernize my application efficiently.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
@@ -11,7 +12,7 @@ ms.author: donji
 
 # Quickstart: Containerize your project using GitHub Copilot modernization for .NET
 
-In this quickstart, you learn how to containerize your project using GitHub Copilot modernization for .NET. The app modernization tooling uses GitHub Copilot's AI capabilities to:
+In this quickstart, you learn how to containerize your project using GitHub Copilot modernization for .NET. The modernization tooling uses GitHub Copilot's AI capabilities to:
 
 - Analyze your project structure and dependencies
 - Generate Dockerfile configurations

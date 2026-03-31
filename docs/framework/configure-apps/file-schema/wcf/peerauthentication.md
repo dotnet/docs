@@ -57,8 +57,8 @@ Specifies authentication settings for a peer certificate used by a peer node.
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
-- <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication%2A>
-- <xref:System.ServiceModel.Configuration.PeerCredentialElement.PeerAuthentication%2A>
+- <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication*>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.PeerAuthentication*>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)

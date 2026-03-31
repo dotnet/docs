@@ -3,10 +3,10 @@ title: Character Classes in .NET Regular Expressions
 description: Learn how to use character classes to represent a set of characters in .NET regular expressions.
 ms.date: 09/08/2025
 no-loc: ["Ll","Lu","Lt","Lo","Lm","Mn","Nd","Pc","Lu"]
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "character classes"
   - "regular expressions, character classes"
   - "characters, matching syntax"
@@ -163,7 +163,7 @@ The period character (.) matches any character except `\n` (the newline characte
 - If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](regular-expression-options.md).
 
   The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r`, but it doesn't match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.
-  
+
   :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="AnyCharacterMultiline":::
   :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="AnyCharacterMultiline":::
 
@@ -191,7 +191,7 @@ The regular expression construct
 Matches any character that belongs to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this article. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this article.
 
 > [!TIP]
-> Matching can be improved if the string is first normalized by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method.
+> Matching can be improved if the string is first normalized by calling the <xref:System.String.Normalize*?displayProperty=nameWithType> method.
 
 The following example uses the `\p{`*name*`}` construct to match both a Unicode general category (in this case, the `Pd`, or Punctuation, Dash category) and a named block (the `IsGreek` and `IsBasicLatin` named blocks).
 
@@ -225,7 +225,7 @@ The regular expression construct
 Matches any character that doesn't belong to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this article. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this article.
 
 > [!TIP]
-> Matching can be improved if the string is first normalized by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method.
+> Matching can be improved if the string is first normalized by calling the <xref:System.String.Normalize*?displayProperty=nameWithType> method.
 
 The following example uses the `\P{`*name*`}` construct to remove any currency symbols (in this case, the `Sc`, or Symbol, Currency category) from numeric strings.
 
@@ -303,7 +303,7 @@ The following example illustrates the `\W` character class.  It defines a regula
 :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="NonWordCharacter":::
 :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="NonWordCharacter":::
 
-Because the <xref:System.Text.RegularExpressions.Group> object for the second capturing group contains only a single captured non-word character, the example retrieves all captured non-word characters from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.
+Because the <xref:System.Text.RegularExpressions.Group> object for the second capturing group contains only a single captured non-word character, the example retrieves all captured non-word characters from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures?displayProperty=nameWithType> property.
 
 <a name="WhitespaceCharacter"></a>
 
@@ -446,7 +446,7 @@ Unicode defines the general categories listed in the following table. For more i
 |`Cn`|Other, Not Assigned or Noncharacter|
 |`C`|All other characters. This includes the `Cc`, `Cf`, `Cs`, `Co`, and `Cn` categories.|
 
-You can determine the Unicode category of any particular character by passing that character to the <xref:System.Char.GetUnicodeCategory%2A> method. The following example uses the <xref:System.Char.GetUnicodeCategory%2A> method to determine the category of each element in an array that contains selected Latin characters.
+You can determine the Unicode category of any particular character by passing that character to the <xref:System.Char.GetUnicodeCategory*> method. The following example uses the <xref:System.Char.GetUnicodeCategory*> method to determine the category of each element in an array that contains selected Latin characters.
 
 :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="GetUnicodeCategory":::
 :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="GetUnicodeCategory":::
@@ -598,6 +598,6 @@ The following example defines a regular expression, `^[0-9-[2468]]+$`, that matc
 
 ## See also
 
-- <xref:System.Char.GetUnicodeCategory%2A>
+- <xref:System.Char.GetUnicodeCategory*>
 - [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)
 - [Regular Expression Options](regular-expression-options.md)

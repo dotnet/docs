@@ -11,26 +11,26 @@ Set operations in LINQ refer to query operations that produce a result set based
 
 | Method names | Description | C# query expression syntax | More information |
 |--|--|--|--|
-| `Distinct` or `DistinctBy` | Removes duplicate values from a collection. | Not applicable. | <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.DistinctBy%2A?displayProperty=nameWithType> |
-| `Except` or `ExceptBy` | Returns the set difference, which means the elements of one collection that don't appear in a second collection. | Not applicable. | <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.ExceptBy%2A?displayProperty=nameWithType> |
-| `Intersect` or `IntersectBy` | Returns the set intersection, which means elements that appear in each of two collections. | Not applicable. | <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.IntersectBy%2A?displayProperty=nameWithType> |
-| `Union` or `UnionBy` | Returns the set union, which means unique elements that appear in either of two collections. | Not applicable. | <xref:System.Linq.Enumerable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.UnionBy%2A?displayProperty=nameWithType> |
+| `Distinct` or `DistinctBy` | Removes duplicate values from a collection. | Not applicable. | <xref:System.Linq.Enumerable.Distinct*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.DistinctBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Distinct*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.DistinctBy*?displayProperty=nameWithType> |
+| `Except` or `ExceptBy` | Returns the set difference, which means the elements of one collection that don't appear in a second collection. | Not applicable. | <xref:System.Linq.Enumerable.Except*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.ExceptBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Except*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.ExceptBy*?displayProperty=nameWithType> |
+| `Intersect` or `IntersectBy` | Returns the set intersection, which means elements that appear in each of two collections. | Not applicable. | <xref:System.Linq.Enumerable.Intersect*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.IntersectBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Intersect*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.IntersectBy*?displayProperty=nameWithType> |
+| `Union` or `UnionBy` | Returns the set union, which means unique elements that appear in either of two collections. | Not applicable. | <xref:System.Linq.Enumerable.Union*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.UnionBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Union*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.UnionBy*?displayProperty=nameWithType> |
 
 ## `Distinct` and `DistinctBy`
 
-The following example depicts the behavior of the <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> method on a sequence of strings. The returned sequence contains the unique elements from the input sequence.
+The following example depicts the behavior of the <xref:System.Linq.Enumerable.Distinct*?displayProperty=nameWithType> method on a sequence of strings. The returned sequence contains the unique elements from the input sequence.
 
 :::image type="content" source="./media/set-operations/distinct-method-behavior.png" alt-text="Graphic showing the behavior of Distinct()":::
 
 :::code language="csharp" source="snippets/standard-query-operators/SetOperations.cs" id="Distinct":::
 
-The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType) is an alternative approach to `Distinct` that takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. In the following code, words are discriminated based on their `Length`, and the first word of each length is displayed:
+The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy*?displayProperty=nameWithType) is an alternative approach to `Distinct` that takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. In the following code, words are discriminated based on their `Length`, and the first word of each length is displayed:
 
 :::code source="./snippets/standard-query-operators/SetOperations.cs" id="DistinctBy":::
 
 ## `Except` and `ExceptBy`
 
-The following example depicts the behavior of <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that aren't in the second input sequence.
+The following example depicts the behavior of <xref:System.Linq.Enumerable.Except*?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that aren't in the second input sequence.
 
 :::image type="content" source="./media/set-operations/except-behavior-graphic.png" alt-text="Graphic showing the action of Except()":::
 
@@ -40,7 +40,7 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Excep
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Except":::
 
-The <xref:System.Linq.Enumerable.ExceptBy%2A> method is an alternative approach to `Except` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is the same type as the first collection's type. Consider the following `Teacher` array and teacher IDs to exclude. To find teachers in the first collection that aren't in the second collection, you can project the teacher's ID onto the second collection:
+The <xref:System.Linq.Enumerable.ExceptBy*> method is an alternative approach to `Except` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is the same type as the first collection's type. Consider the following `Teacher` array and teacher IDs to exclude. To find teachers in the first collection that aren't in the second collection, you can project the teacher's ID onto the second collection:
 
 :::code language="csharp" source="snippets/standard-query-operators/SetOperations.cs" id="ExceptBy":::
 
@@ -54,13 +54,13 @@ The new set of values is of type `Teacher`, which is the type of the first colle
 
 ## `Intersect` and `IntersectBy`
 
-The following example depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.
+The following example depicts the behavior of <xref:System.Linq.Enumerable.Intersect*?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.
 
 :::image type="content" source="./media/set-operations/intersection-two-sequences.png" alt-text="Graphic showing the intersection of two sequences":::
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Intersect":::
 
-The <xref:System.Linq.Enumerable.IntersectBy%2A> method is an alternative approach to `Intersect` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following student and teacher arrays. The query matches items in each sequence by name to find those students who are also teachers:
+The <xref:System.Linq.Enumerable.IntersectBy*> method is an alternative approach to `Intersect` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following student and teacher arrays. The query matches items in each sequence by name to find those students who are also teachers:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="IntersectBy":::
 
@@ -78,7 +78,7 @@ The following example depicts a union operation on two sequences of strings. The
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Union":::
 
-The <xref:System.Linq.Enumerable.UnionBy%2A> method is an alternative approach to `Union` that takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. The following query produces the list of all people that are either students or teachers. Students who are also teachers are added to the union set only once:
+The <xref:System.Linq.Enumerable.UnionBy*> method is an alternative approach to `Union` that takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. The following query produces the list of all people that are either students or teachers. Students who are also teachers are added to the union set only once:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="UnionBy":::
 

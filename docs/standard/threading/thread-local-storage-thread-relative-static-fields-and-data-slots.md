@@ -19,7 +19,7 @@ You can use managed thread local storage (TLS) to store data that's unique to a 
 
  In unmanaged C++, you use `TlsAlloc` to allocate slots dynamically and `__declspec(thread)` to declare that a variable should be allocated in thread-relative storage. Thread-relative static fields and data slots provide the managed version of this behavior.
 
-You can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).
+You can use the <xref:System.Threading.ThreadLocal`1?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).
 
 ## Uniqueness of Data in Managed TLS
 
@@ -45,18 +45,18 @@ You can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithT
 
 .NET provides dynamic data slots that are unique to a combination of thread and application domain. There are two types of data slots: named slots and unnamed slots. Both are implemented by using the <xref:System.LocalDataStoreSlot> structure.
 
-- To create a named data slot, use the <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType> method. To get a reference to an existing named slot, pass its name to the <xref:System.Threading.Thread.GetNamedDataSlot%2A> method.
+- To create a named data slot, use the <xref:System.Threading.Thread.AllocateNamedDataSlot*?displayProperty=nameWithType> or <xref:System.Threading.Thread.GetNamedDataSlot*?displayProperty=nameWithType> method. To get a reference to an existing named slot, pass its name to the <xref:System.Threading.Thread.GetNamedDataSlot*> method.
 
-- To create an unnamed data slot, use the <xref:System.Threading.Thread.AllocateDataSlot%2A?displayProperty=nameWithType> method.
+- To create an unnamed data slot, use the <xref:System.Threading.Thread.AllocateDataSlot*?displayProperty=nameWithType> method.
 
- For both named and unnamed slots, use the <xref:System.Threading.Thread.SetData%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.GetData%2A?displayProperty=nameWithType> methods to set and retrieve the information in the slot. These are static methods that always act on the data for the thread that is currently executing them.
+ For both named and unnamed slots, use the <xref:System.Threading.Thread.SetData*?displayProperty=nameWithType> and <xref:System.Threading.Thread.GetData*?displayProperty=nameWithType> methods to set and retrieve the information in the slot. These are static methods that always act on the data for the thread that is currently executing them.
 
- Named slots can be convenient, because you can retrieve the slot when you need it by passing its name to the <xref:System.Threading.Thread.GetNamedDataSlot%2A> method, instead of maintaining a reference to an unnamed slot. However, if another component uses the same name for its thread-relative storage and a thread executes code from both your component and the other component, the two components might corrupt each other's data. (This scenario assumes that both components are running in the same application domain, and that they are not designed to share the same data.)
+ Named slots can be convenient, because you can retrieve the slot when you need it by passing its name to the <xref:System.Threading.Thread.GetNamedDataSlot*> method, instead of maintaining a reference to an unnamed slot. However, if another component uses the same name for its thread-relative storage and a thread executes code from both your component and the other component, the two components might corrupt each other's data. (This scenario assumes that both components are running in the same application domain, and that they are not designed to share the same data.)
 
 ## See also
 
 - <xref:System.ContextStaticAttribute>
-- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>
+- <xref:System.Threading.Thread.GetNamedDataSlot*?displayProperty=nameWithType>
 - <xref:System.ThreadStaticAttribute>
 - <xref:System.Runtime.Remoting.Messaging.CallContext>
 - [Threading](managed-threading-basics.md)

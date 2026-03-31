@@ -105,7 +105,7 @@ Specifies the settings used by the client proxy to authenticate service certific
 
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
-- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication*>
 - <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)

@@ -49,7 +49,7 @@ To start a GitHub Codespace with the tutorial environment, open a browser window
    dotnet hello-world.cs
    ```
 
-You ran your first C# program. It's a simple program that prints the message "Hello World!" It uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
+You ran your first C# program. It's a simple program that prints the message "Hello World!" It uses the <xref:System.Console.WriteLine*?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
 Let's move on and explore more. The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text.
 
@@ -114,7 +114,7 @@ You're not limited to a single variable between the curly braces.
 >
 > Now is a good time to explore on your own. You learned that `Console.WriteLine()` writes text to the screen. You learned how to declare variables and concatenate strings together. Experiment in your code. Your editor has a feature called *IntelliSense* that makes suggestions for what you can do. Type a `.` after the `d` in `firstFriend`. You see a list of suggestions for properties and methods you can use.
 
-You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, to print messages. A *method* is a block of code that implements some action. It has a name, so you can access it.
+You've been using a *method*, <xref:System.Console.WriteLine*?displayProperty=nameWithType>, to print messages. A *method* is a block of code that implements some action. It has a name, so you can access it.
 
 > [!TIP]
 > **Learn more:** Explore [strings](../../programming-guide/strings/index.md) in depth, or read about [methods and program structure](../../fundamentals/program-structure/index.md) in the C# Fundamentals section.
@@ -122,7 +122,7 @@ You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=
 ## Remove whitespace from strings
 
 Suppose your strings have leading or trailing spaces that you don't want to display. You want to **trim** the spaces from the strings.
-The <xref:System.String.Trim%2A> method and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A> perform this task. Use these methods to remove leading and trailing spaces.
+The <xref:System.String.Trim*> method and related methods <xref:System.String.TrimStart*> and <xref:System.String.TrimEnd*> perform this task. Use these methods to remove leading and trailing spaces.
 
 1. Try the following code:
 
@@ -134,7 +134,7 @@ This sample reinforces a couple of important concepts for working with strings. 
 
 ## Search and replace text in strings
 
-You can use other methods to work with a string. For example, you might use a search and replace command in an editor or word processor. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself.
+You can use other methods to work with a string. For example, you might use a search and replace command in an editor or word processor. The <xref:System.String.Replace*> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace*> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself.
 
 1. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
 
@@ -146,17 +146,17 @@ You can use other methods to work with a string. For example, you might use a se
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="UpperLower":::
 
-   The other part of a *search and replace* operation is to find text in a string. You can use the  <xref:System.String.Contains%2A> method for searching. It tells you if a string contains a substring inside it.
+   The other part of a *search and replace* operation is to find text in a string. You can use the  <xref:System.String.Contains*> method for searching. It tells you if a string contains a substring inside it.
 
-1. Try the following code to explore <xref:System.String.Contains%2A>:
+1. Try the following code to explore <xref:System.String.Contains*>:
 
    :::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="SearchStrings":::
 
-   The <xref:System.String.Contains%2A> method returns a *boolean* value that tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
+   The <xref:System.String.Contains*> method returns a *boolean* value that tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
 
 ## Challenge
 
-Two similar methods, <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A>, also search for substrings in a string. These methods find a substring at the beginning or at the end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
+Two similar methods, <xref:System.String.StartsWith*> and <xref:System.String.EndsWith*>, also search for substrings in a string. These methods find a substring at the beginning or at the end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith*> and <xref:System.String.EndsWith*> instead of <xref:System.String.Contains*>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
 
 > [!NOTE]
 >

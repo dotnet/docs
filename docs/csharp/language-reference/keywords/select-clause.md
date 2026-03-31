@@ -2,10 +2,10 @@
 description: "select clause - C# Reference"
 title: "select clause"
 ms.date: 01/22/2026
-f1_keywords: 
+f1_keywords:
   - "select_CSharpKeyword"
   - "select"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "select keyword [C#]"
   - "select clause [C#]"
 ---
@@ -27,7 +27,7 @@ The following example shows all the different forms that a `select` clause can t
 
 As shown in `studentQuery8` in the previous example, sometimes you want the elements of the returned sequence to contain only a subset of the properties of the source elements. By keeping the returned sequence as small as possible, you reduce the memory requirements and increase the speed of the execution of the query. You can accomplish this goal by creating an anonymous type in the `select` clause and using an object initializer to initialize it with the appropriate properties from the source element. For an example of how to do this, see [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md).
 
-At compile time, the `select` clause is translated to a method call to the <xref:System.Linq.Enumerable.Select%2A> standard query operator.
+At compile time, the `select` clause is translated to a method call to the <xref:System.Linq.Enumerable.Select*> standard query operator.
 
 ## See also
 

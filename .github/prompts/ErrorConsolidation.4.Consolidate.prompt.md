@@ -76,7 +76,7 @@ The error list within the section repeats the codes and messages but **without a
 
 The content in each thematic section should focus on **how to correct each error**, not on explaining the language feature. Follow these rules:
 
-- **Link to language reference:** Provide links to language reference articles and C# specification sections that explain the rules these diagnostics enforce. For example, link to [Operator overloading](../operators/operator-overloading.md) or the relevant spec section.
+- **Link to language reference:** Provide links to language reference articles and C# specification sections that explain the rules these diagnostics enforce. For example, link to `[Operator overloading](../operators/operator-overloading.md)` or the relevant spec section.
 - **Write detailed corrections:** For each correction, use a full sentence explaining what to do and why. Put the affected error codes in parentheses, in **bold** style. Example:
   > Change the return type of `++` or `--` operators to the containing type or a type derived from it (**CS0448**). The language requires that increment and decrement operators return a value compatible with the containing type so the result can be assigned back to the same variable.
 - **No extensive examples:** Remove lengthy code examples. Brief inline code references are acceptable.

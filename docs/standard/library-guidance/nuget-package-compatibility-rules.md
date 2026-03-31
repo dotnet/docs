@@ -2,6 +2,7 @@
 title: NuGet package compatibility rules
 description: Learn about the compatibility rules that NuGet packages must follow to ensure consumers can reliably update and use packages across .NET frameworks and versions.
 ms.date: 03/31/2026
+ai-usage: ai-assisted
 ---
 
 # NuGet package compatibility rules
@@ -80,7 +81,7 @@ Packages should avoid removing dependencies in compatible framework versions or 
 
 Dropping a dependency is more reasonable across major version boundaries. Unlike binary breaking changes, a dropped dependency can be mitigated by the consuming application without recompiling intermediate libraries&mdash;the application can simply add a direct reference to the removed dependency.
 
-### Polyfill package dependencies (Microsoft.BCL.\*)
+### Polyfill package dependencies (Microsoft.Bcl.\*)
 
 One place where the .NET libraries intentionally drop dependencies is for *polyfill packages* such as `Microsoft.Bcl.AsyncInterfaces`, `Microsoft.Bcl.HashCode`, and `Microsoft.Bcl.Memory`. These packages provide functionality on older frameworks (such as .NET Standard 2.0 and .NET Framework) that is built into newer .NET versions.
 
@@ -93,7 +94,7 @@ For packages that target multiple frameworks, it's appropriate to include the po
 <!-- No dependency needed for net8.0, where IAsyncEnumerable is built-in -->
 ```
 
-We recommend that library authors consuming polyfill packages follow the same pattern to avoid unnecessary assemblies in applications targeting the latest frameworks.
+Library authors consuming polyfill packages should follow the same pattern to avoid unnecessary assemblies in applications targeting the latest frameworks.
 
 > [!NOTE]
 > When a polyfill dependency is dropped for a newer TFM, make sure that the package includes a TFM-specific assembly for that framework. Otherwise, consumers on the newer framework may resolve the `netstandard2.0` assembly, which still expects the polyfill at run time. Multi-targeting with explicit TFM-specific assets avoids this problem.
@@ -135,7 +136,7 @@ To support these overlapping packages, the .NET SDK and runtime include several 
   - At **build time**, the SDK's `ResolvePackageFileConflicts` task compares assemblies from packages against those provided by the shared framework and selects the winner for the application's output.
   - At **run time**, the .NET host performs the same logic when probing for assemblies, as described in the [assembly conflict resolution](https://github.com/dotnet/runtime/blob/main/docs/design/features/assembly-conflict-resolution.md) design document.
 
-- **NuGet package pruning.** The SDK can [prune packages](../../fundamentals/package-validation/overview.md) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](https://learn.microsoft.com/nuget/concepts/auditing-packages). For more information, see [NuGet Warning NU1510](https://learn.microsoft.com/nuget/reference/errors-and-warnings/nu1510).
+- **NuGet package pruning.** The SDK can [prune packages](https://learn.microsoft.com/nuget/reference/errors-and-warnings/nu1510) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](https://learn.microsoft.com/nuget/concepts/auditing-packages).
 
 These features allow packages to be used when needed on older frameworks and transparently replaced by the shared framework on newer ones.
 
@@ -167,7 +168,7 @@ Packages that do not overlap with a shared framework are free to increment their
 | Assembly versions must not decrease | Never ship a newer package version with a lower assembly version than a previous release. |
 | API must not break in compatible versions | Don't remove or change public API in binary-breaking ways within compatible versions. Major versions have more latitude. |
 | Dependencies should not be dropped in compatible versions | Removing a package dependency can break consumers. Dropping dependencies is more acceptable across major versions. |
-| Polyfill dependencies should be dropped for inbox frameworks | When a polyfill (Microsoft.BCL.\*) provides functionality that is built into the target framework, the dependency should be omitted for that TFM. |
+| Polyfill dependencies should be dropped for inbox frameworks | When a polyfill (Microsoft.Bcl.\*) provides functionality that is built into the target framework, the dependency should be omitted for that TFM. |
 | Shared framework packages hold assembly version at Major.Minor.0.0 | Packages overlapping with .NET shared frameworks keep assembly version constant within a release series, except for .NET Framework TFMs. |
 
 ## See also

@@ -19,9 +19,9 @@ NuGet packages can target multiple frameworks by including assemblies for differ
 - `net462` (.NET Framework 4.6.2) is compatible with `netstandard2.0`
 - `net9.0` is compatible with `net8.0`
 
-When a consumer's project targets a framework that isn't directly included in a package, NuGet selects the *best matching* compatible framework from the package. For example, a `net8.0` application consuming a package that contains only a `netstandard2.0` assembly will use that `netstandard2.0` assembly. If the package also contains a `net8.0` assembly, that more specific assembly is used instead.
+When a consumer's project targets a framework that isn't directly included in a package, NuGet selects the *best matching* compatible framework from the package. For details on how this selection works, see [NuGet Target Frameworks](https://learn.microsoft.com/nuget/reference/target-frameworks). For example, a `net8.0` application consuming a package that contains only a `netstandard2.0` assembly will use that `netstandard2.0` assembly. If the package also contains a `net8.0` assembly, that more specific assembly is used instead.
 
-Because NuGet can select different assemblies for different consumers, the assemblies provided for compatible frameworks must themselves be compatible. The `netstandard2.0` assembly and the `net8.0` assembly in the same package must expose the same (or a superset of) API, and must not differ in behavior in breaking ways.
+This framework selection has a direct impact on compatibility. When another library compiles against your package for a particular target framework, that library depends on any compatible build of your package presenting the same (compatible) API surface at both compile time and run time. If a consumer compiles against the `netstandard2.0` assembly but the application runs with the `net8.0` assembly (or vice versa), both assemblies must expose a compatible API surface. Otherwise, the consumer may encounter `MissingMethodException` or `TypeLoadException` at run time.
 
 For more information about framework compatibility, see [.NET Standard](../net-standard.md) and [Target frameworks in SDK-style projects](../frameworks.md).
 

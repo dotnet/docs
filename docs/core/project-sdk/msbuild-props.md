@@ -1750,6 +1750,7 @@ To define an explicit `global using` directive, add a [Using](#using) item.
 
 - [AssemblyMetadata](#assemblymetadata)
 - [InternalsVisibleTo](#internalsvisibleto)
+- [FrameworkReference](#frameworkreference)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [Using](#using)

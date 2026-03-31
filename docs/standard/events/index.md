@@ -1,7 +1,7 @@
 ---
 title: Handling and raising events
 description: Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
-ms.date: 03/17/2025
+ms.date: 03/23/2026
 ms.topic: concept-article
 ms.custom: devdivchpfy22
 dev_langs:
@@ -10,29 +10,25 @@ dev_langs:
 helpviewer_keywords:
   - "delegate model for events"
   - "application development [.NET], events"
-  - "application development [.NET], events"
-  - "application development [.NET Core], events"
-  - "events [.NET]"
-  - "events [.NET Core]"
   - "events [.NET]"
 
 ---
 # Handle and raise events
 
-Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification when an event occurs. An event receiver defines the response. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
+Events in .NET are based on the [delegate model](../delegates-lambdas.md). The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification when an event occurs. An event receiver defines the response. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
 
 ## Raise events with an event sender
 
-An event is a message sent by an object to signal the occurrence of an action. The action might be user interaction, such as a button press, or it might result from other program logic, such as a property value change. The object that raises the event is called the *event sender*. The event sender doesn't know the object or method that receives (handles) the events it raises. The event is typically a member of the event sender. For example, the <xref:System.Web.UI.WebControls.Button.Click> event is a member of the <xref:System.Web.UI.WebControls.Button> class, and the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is a member of the class that implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.
+An event is a message sent by an object to signal the occurrence of an action. The action might be user interaction, such as a button press, or it might result from other program logic, such as a property value change. The object that raises the event is called the *event sender*. The event sender doesn't know the object or method that receives (handles) the events it raises. The event is typically a member of the event sender. For example, the <xref:System.Timers.Timer.Elapsed> event is a member of the <xref:System.Timers.Timer> class, and the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is a member of the class that implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.
 
 To define an event, you use the C# [event](../../csharp/language-reference/keywords/event.md) or the Visual Basic [Event](../../visual-basic/language-reference/statements/event-statement.md) keyword in the signature of your event class, and specify the type of delegate for the event. Delegates are described in the next section.
 
-Typically, to raise an event, you add a method that is marked as `protected` and `virtual` (in C#) or `Protected` and `Overridable` (in Visual Basic). The naming convention for the method is `On<EventName>`, such as `OnDataReceived`. The method should take one parameter that specifies an event data object, which is an object of type <xref:System.EventArgs> or a derived type. You provide this method to enable derived classes to override the logic for raising the event. A derived class should always call the `On<EventName>` method of the base class to ensure registered delegates receive the event.
+To raise an event, invoke the delegate associated with the event. The event sender typically wraps the invocation in a `protected virtual` method (`Protected Overridable` in Visual Basic) named `On<EventName>`—for example, `OnDataReceived`. The method takes one parameter: an event data object of type <xref:System.EventArgs> or a derived type. Wrapping the invocation this way lets derived classes override the raise logic. A derived class that overrides this method must call the base class implementation to ensure registered delegates receive the event.
 
-The following example shows how to declare an event named `ThresholdReached`. The event is associated with the <xref:System.EventHandler> delegate and raised in a method named `OnThresholdReached`:
+The following example shows how to declare an event named `ThresholdReached`. The event is associated with the <xref:System.EventHandler> delegate and is raised in a method named `OnThresholdReached`:
 
-[!code-csharp[EventsOverview#1](./snippets/raise-consume/csharp/programtruncated.cs#1)]
-[!code-vb[EventsOverview#1](./snippets/raise-consume/vb/module1truncated.vb#1)]
+:::code language="csharp" source="./snippets/index/csharp/EventExample.cs" id="DefineEvent":::
+:::code language="vb" source="./snippets/index/vb/EventExample.vb" id="DefineEvent":::
 
 ## Declare delegate signatures for event handlers
 
@@ -46,8 +42,8 @@ Delegates are [multicast](xref:System.MulticastDelegate) class objects, which me
 
 Use the <xref:System.EventHandler> and <xref:System.EventHandler`1> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:
 
-[!code-csharp[EventsOverview#4](./snippets/raise-consume/csharp/programtruncated.cs#4)]
-[!code-vb[EventsOverview#4](./snippets/raise-consume/vb/module1truncated.vb#4)]
+:::code language="csharp" source="./snippets/index/csharp/EventExample.cs" id="CustomDelegate":::
+:::code language="vb" source="./snippets/index/vb/EventExample.vb" id="CustomDelegate":::
 
 ## Work with event data classes
 
@@ -59,8 +55,8 @@ You can create a class that derives from the <xref:System.EventArgs> class to pr
 
 The following example shows an event data class named `ThresholdReachedEventArgs` that contains properties that are specific to the event being raised:
 
-[!code-csharp[EventsOverview#3](./snippets/raise-consume/csharp/programtruncated.cs#3)]
-[!code-vb[EventsOverview#3](./snippets/raise-consume/vb/module1truncated.vb#3)]
+:::code language="csharp" source="./snippets/index/csharp/EventExample.cs" id="EventDataClass":::
+:::code language="vb" source="./snippets/index/vb/EventExample.vb" id="EventDataClass":::
 
 ## Respond to events with handlers
 
@@ -68,8 +64,8 @@ To respond to an event, you define an event handler method in the event receiver
 
 The following example shows an event handler method named `c_ThresholdReached` that matches the signature for the <xref:System.EventHandler> delegate. The method subscribes to the `ThresholdReached` event:
 
-[!code-csharp[EventsOverview#2](./snippets/raise-consume/csharp/programtruncated.cs#2)]
-[!code-vb[EventsOverview#2](./snippets/raise-consume/vb/module1truncated.vb#2)]
+:::code language="csharp" source="./snippets/index/csharp/Program.cs" id="HandleEvent":::
+:::code language="vb" source="./snippets/index/vb/Program.vb" id="HandleEvent":::
 
 ## Use static and dynamic event handlers
 
@@ -84,14 +80,14 @@ Event properties consist of event declarations accompanied by event accessors. E
 > [!NOTE]
 > The event properties are slower than the event fields because each event delegate must be retrieved before it can be invoked.
 
-The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you should implement event properties. For more information, see [Handle multiple events by using event properties](how-to-handle-multiple-events-using-event-properties.md).
+The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you should implement event properties. For more information, see [Declare multiple events using event properties](how-to-declare-multiple-events-using-event-properties.md).
 
 ## Explore related tasks
 
 The following resources describe other tasks and concepts related to working with events:
 
 - [Raise and consume events](how-to-raise-and-consume-events.md): Find examples for raising and consuming events.
-- [Handle multiple events with event properties](how-to-handle-multiple-events-using-event-properties.md): Discover how to use event properties to handle multiple events.
+- [Declare multiple events using event properties](how-to-declare-multiple-events-using-event-properties.md): Discover how to use event properties to declare multiple events.
 - [Explore the observer design pattern](observer-design-pattern.md): Review a design pattern that enables a subscriber to register with and receive notifications from a provider.
 
 ## Review specification reference
@@ -109,5 +105,5 @@ Specification reference documentation is available for the APIs that support eve
 
 - [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)
-- [Events and routed events overview - Universal Windows Platform (UWP) apps](/windows/uwp/xaml-platform/events-and-routed-events-overview)
-- [Events in Windows Store 8.x apps](/previous-versions/windows/apps/hh758286(v=win.10))
+- [How to: Raise and consume events](how-to-raise-and-consume-events.md)
+- [How to: Declare Multiple Events Using Event Properties](how-to-declare-multiple-events-using-event-properties.md)

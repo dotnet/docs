@@ -90,10 +90,19 @@ To bind your data classification settings, use the .NET configuration system. Fo
 ```json
 {
     "Key": {
-        "PhoneNumber": "MyTaxonomy:PrivateInformation",
+        "PhoneNumber": {
+            "TaxonomyName": "MyTaxonomy",
+            "Value": "PrivateInformation"
+        },
         "ExampleDictionary": {
-            "CreditCard": "MyTaxonomy:CreditCardNumber",
-            "SSN": "MyTaxonomy:SocialSecurityNumber"
+            "CreditCard": {
+                "TaxonomyName": "MyTaxonomy",
+                "Value": "CreditCardNumber"
+            },
+            "SSN": {
+                "TaxonomyName": "MyTaxonomy",
+                "Value": "SocialSecurityNumber"
+            }
         }
     }
 }

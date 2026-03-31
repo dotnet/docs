@@ -127,7 +127,7 @@ To review and customize the plan:
 
 ## Start execution and run the upgrade
 
-The execution stage breaks the plan into sequential, concrete tasks with validation criteria. When you tell Copilot to proceed to execution, it generates a `tasks.md` file in `.github/upgrades/{scenarioId}`.
+The execution stage breaks the plan into sequential, concrete tasks with validation criteria. When you tell Copilot to proceed to execution, it generates a `progress.md` file in `.github/upgrades/{scenarioId}`.
 
 The task list describes each task and how Copilot validates success. The following example shows the task list for a solution containing ASP.NET Core and WPF projects:
 
@@ -181,7 +181,7 @@ This document tracks the execution of the MvcMovieNet6 solution upgrade from .NE
 To run the upgrade:
 
 1. Tell Copilot to start the upgrade.
-1. Monitor progress by reviewing the `tasks.md` file as Copilot updates task statuses.
+1. Monitor progress by reviewing the `progress.md` file as Copilot updates task statuses.
 1. If Copilot encounters a problem it can't resolve, provide the requested help.
 1. Based on your decisions and changes, Copilot adapts its strategy to the remaining tasks and continues the upgrade.
 
@@ -189,7 +189,7 @@ Copilot commits changes according to the Git strategy you configured during pre-
 
 ## Verify the upgrade
 
-When the upgrade finishes, Copilot shows recommended next steps in the chat response. Review the `tasks.md` file in `.github/upgrades/{scenarioId}` for the status of every step.
+When the upgrade finishes, Copilot shows recommended next steps in the chat response. Review the `progress.md` file in `.github/upgrades/{scenarioId}` for the status of every step.
 
 The following example shows completed tasks for an ASP.NET Core project upgrade:
 
@@ -217,7 +217,7 @@ This document tracks the execution of the MvcMovieNet6 solution upgrade from .NE
 
 To verify the upgrade:
 
-1. Review the final task status in `tasks.md`.
+1. Review the final task status in `progress.md`.
 1. Address any failing tests or compilation errors.
 1. Ensure all updated NuGet packages are compatible with your application.
 1. Test your application thoroughly to verify the upgrade succeeded.

@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # NuGet package compatibility rules
 
-NuGet packages are the primary distribution mechanism for .NET libraries. To ensure that consumers can reliably update packages and use them across frameworks and versions, package authors must follow a set of compatibility rules. These rules ensure that newer versions of a package can replace older versions without breaking applications at build time or run time.
+NuGet packages are the primary distribution mechanism for .NET libraries. To ensure that consumers can reliably update packages and use them across frameworks and versions, package authors must follow a set of compatibility rules. These rules ensure that newer versions of a package can replace older versions without breaking applications at build time or runtime.
 
 This article describes the compatibility rules that apply to NuGet packages, with specific attention to framework compatibility, assembly compatibility, dependency compatibility, and assembly versioning.
 
@@ -19,9 +19,9 @@ NuGet packages can target multiple frameworks by including assemblies for differ
 - `net462` (.NET Framework 4.6.2) is compatible with `netstandard2.0`
 - `net9.0` is compatible with `net8.0`
 
-When a consumer's project targets a framework that isn't directly included in a package, NuGet selects the *best matching* compatible framework from the package. For details on how this selection works, see [NuGet Target Frameworks](https://learn.microsoft.com/nuget/reference/target-frameworks). For example, a `net8.0` application consuming a package that contains only a `netstandard2.0` assembly will use that `netstandard2.0` assembly. If the package also contains a `net8.0` assembly, that more specific assembly is used instead.
+When a consumer's project targets a framework that isn't directly included in a package, NuGet selects the *best matching* compatible framework from the package. For details on how this selection works, see [NuGet Target Frameworks](/nuget/reference/target-frameworks). For example, a `net8.0` application consuming a package that contains only a `netstandard2.0` assembly will use that `netstandard2.0` assembly. If the package also contains a `net8.0` assembly, that more specific assembly is used instead.
 
-This framework selection has a direct impact on compatibility. When another library compiles against your package for a particular target framework, that library depends on any compatible build of your package presenting the same (compatible) API surface at both compile time and run time. If a consumer compiles against the `netstandard2.0` assembly but the application runs with the `net8.0` assembly (or vice versa), both assemblies must expose a compatible API surface. Otherwise, the consumer may encounter `MissingMethodException` or `TypeLoadException` at run time.
+This framework selection has a direct impact on compatibility. When another library compiles against your package for a particular target framework, that library depends on any compatible build of your package presenting the same (compatible) API surface at both compile time and runtime. If a consumer compiles against the `netstandard2.0` assembly but the application runs with the `net8.0` assembly (or vice versa), both assemblies must expose a compatible API surface. Otherwise, the consumer might encounter `MissingMethodException` or `TypeLoadException` at runtime.
 
 For more information about framework compatibility, see [.NET Standard](../net-standard.md) and [Target frameworks in SDK-style projects](../frameworks.md).
 
@@ -43,19 +43,19 @@ These rules apply whenever one assembly must be compatible with another&mdash;wh
 
 For an assembly to be considered *compatible*, it must meet two requirements:
 
-1. **Equal or higher assembly version.** The [assembly version](../assembly/versioning.md) (`AssemblyVersionAttribute`) must be greater than or equal to the previous version. Decreasing an assembly version is never an acceptable change&mdash;it breaks the runtime's ability to load the correct assembly and can cause `FileLoadException` errors at run time.
+1. **Equal or higher assembly version.** The [assembly version](../assembly/versioning.md) (`AssemblyVersionAttribute`) must be greater than or equal to the previous version. Decreasing an assembly version is never an acceptable change&mdash;it breaks the runtime's ability to load the correct assembly and can cause `FileLoadException` errors at runtime.
 
-2. **No breaking API changes.** The assembly must not remove or change public API in any binary-breaking way. This means no removal of public types or members, no changes to method signatures, and no other changes that would cause a `MissingMethodException`, `MissingMemberException`, or `TypeLoadException` at run time.
+1. **No breaking API changes.** The assembly must not remove or change public API in any binary-breaking way. This means no removal of public types or members, no changes to method signatures, and no other changes that would cause a `MissingMethodException`, `MissingMemberException`, or `TypeLoadException` at runtime.
 
 ### Never decrease assembly versions
 
 Decreasing an assembly version is never acceptable, even across major package versions. Assembly versions are used by the runtime to resolve which assembly to load. When a library is compiled against assembly version 2.0.0.0, the runtime requires that version or higher to be present. If a newer package ships with a lower assembly version, any library that was compiled against the higher version fails to load.
 
-While it's technically possible to work around this with a binding redirect or an `AssemblyResolve` handler to redirect the higher version to the lower one, this is always a breaking change in practice. The higher assembly version exists because it shipped with newer API and bug fixes that consumers have come to depend on. Redirecting to an older assembly means those APIs and fixes are no longer present, leading to `MissingMethodException` or incorrect behavior at run time.
+While it's technically possible to work around this with a binding redirect or an `AssemblyResolve` handler to redirect the higher version to the lower one, this is always a breaking change in practice. The higher assembly version exists because it shipped with newer API and bug fixes that consumers have come to depend on. Redirecting to an older assembly means those APIs and fixes are no longer present, leading to `MissingMethodException` or incorrect behavior at runtime.
 
 ### Binary breaking changes
 
-Binary breaking changes&mdash;changes that cause previously compiled code to fail at run time&mdash;may be permissible across major package versions, but authors should understand the ecosystem impact. Any library in the ecosystem that depends on your package also exposes your API surface transitively. A binary breaking change in your package can break consumers of those downstream libraries, even if they don't directly reference your package.
+Binary breaking changes&mdash;changes that cause previously compiled code to fail at runtime&mdash;might be permissible across major package versions, but authors should understand the ecosystem impact. Any library in the ecosystem that depends on your package also exposes your API surface transitively. A binary breaking change in your package can break consumers of those downstream libraries, even if they don't directly reference your package.
 
 The .NET libraries maintain a [very high bar for binary compatibility](../../core/compatibility/library-change-rules.md). For a detailed list of what constitutes a breaking change, see the [breaking change rules](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/breaking-change-rules.md) in the dotnet/runtime repository.
 
@@ -73,7 +73,7 @@ The .NET libraries maintain a [very high bar for binary compatibility](../../cor
 
 ## Dependency compatibility rules
 
-The dependencies declared by a NuGet package are part of its public contract. When a consumer installs your package, they also get all of its dependencies. Dropping a dependency in a newer version of your package can break consumers who rely on types from that dependency being present at run time.
+The dependencies declared by a NuGet package are part of its public contract. When a consumer installs your package, they also get all of its dependencies. Dropping a dependency in a newer version of your package can break consumers who rely on types from that dependency being present at runtime.
 
 ### Avoid dropping dependencies in compatible versions
 
@@ -97,7 +97,7 @@ For packages that target multiple frameworks, it's appropriate to include the po
 Library authors consuming polyfill packages should follow the same pattern to avoid unnecessary assemblies in applications targeting the latest frameworks.
 
 > [!NOTE]
-> When a polyfill dependency is dropped for a newer TFM, make sure that the package includes a TFM-specific assembly for that framework. Otherwise, consumers on the newer framework may resolve the `netstandard2.0` assembly, which still expects the polyfill at run time. Multi-targeting with explicit TFM-specific assets avoids this problem.
+> When a polyfill dependency is dropped for a newer TFM, make sure that the package includes a TFM-specific assembly for that framework. Otherwise, consumers on the newer framework might resolve the `netstandard2.0` assembly, which still expects the polyfill at runtime. Multi-targeting with explicit TFM-specific assets avoids this problem.
 
 ## Assembly versioning
 
@@ -105,13 +105,13 @@ Assembly versions are distinct from [NuGet package versions](versioning.md). Whi
 
 ### Why assembly versions matter
 
-The assembly version is embedded in compiled references. When library A is compiled against version 2.0.0.0 of library B, the runtime requires that library B's assembly version be 2.0.0.0 or higher at run time. This binding behavior is what makes assembly version changes important for package compatibility.
+The assembly version is embedded in compiled references. When library A is compiled against version 2.0.0.0 of library B, the runtime requires that library B's assembly version be 2.0.0.0 or higher at runtime. This binding behavior is what makes assembly version changes important for package compatibility.
 
 ### Assembly versioning on .NET Framework
 
 On .NET Framework, assembly versioning has additional implications due to the runtime's loading behavior:
 
-- **Global Assembly Cache (GAC) preference.** The .NET Framework loader always prefers an assembly from the [GAC](/dotnet/framework/app-domains/gac) over an app-local copy. Packages that do not change their assembly version across releases cannot guarantee that serviced (patched) versions will be loaded on .NET Framework, because the GAC may contain an older copy with the same assembly version.
+- **Global Assembly Cache (GAC) preference.** The .NET Framework loader always prefers an assembly from the [GAC](/dotnet/framework/app-domains/gac) over an app-local copy. Packages that do not change their assembly version across releases cannot guarantee that serviced (patched) versions will be loaded on .NET Framework, because the GAC might contain an older copy with the same assembly version.
 
 - **Binding redirects are required.** The .NET Framework loader requires [binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) to unify different assembly versions. When an application consumes multiple packages that depend on different versions of a shared library, binding redirects tell the runtime to load a single (higher) version for all callers.
 
@@ -134,9 +134,9 @@ To support these overlapping packages, the .NET SDK and runtime include several 
 
 - **Conflict resolution.** Conflict resolution occurs at two levels, both following the same principle: prefer the newer version, and prefer the framework's copy when versions are equal.
   - At **build time**, the SDK's `ResolvePackageFileConflicts` task compares assemblies from packages against those provided by the shared framework and selects the winner for the application's output.
-  - At **run time**, the .NET host performs the same logic when probing for assemblies, as described in the [assembly conflict resolution](https://github.com/dotnet/runtime/blob/main/docs/design/features/assembly-conflict-resolution.md) design document.
+  - At **runtime**, the .NET host performs the same logic when probing for assemblies, as described in the [assembly conflict resolution](https://github.com/dotnet/runtime/blob/main/docs/design/features/assembly-conflict-resolution.md) design document.
 
-- **NuGet package pruning.** The SDK can [prune packages](https://learn.microsoft.com/nuget/reference/errors-and-warnings/nu1510) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](https://learn.microsoft.com/nuget/concepts/auditing-packages).
+- **NuGet package pruning.** The SDK can [prune packages](/nuget/reference/errors-and-warnings/nu1510) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](/nuget/concepts/auditing-packages).
 
 These features allow packages to be used when needed on older frameworks and transparently replaced by the shared framework on newer ones.
 
@@ -146,15 +146,15 @@ Packages that overlap with .NET shared frameworks follow a special assembly vers
 
 - **The assembly version is held constant at `Major.Minor.0.0`** for a given major/minor release. For example, all 8.0.x versions of `System.Text.Json` ship with assembly version `8.0.0.0`. This ensures that the package's assembly can be transparently replaced by the shared framework's copy of the same major/minor version.
 
-- **.NET Standard assemblies** in these packages follow the same rule, since they may run on any compatible framework (including .NET itself).
+- **.NET Standard assemblies** in these packages follow the same rule, since they might run on any compatible framework (including .NET itself).
 
 - **.NET Framework assemblies** in these packages are the exception&mdash;they *do* increment their assembly version with each servicing release. This is necessary because .NET Framework's GAC and binding redirect behavior requires version changes to guarantee that patched assemblies are loaded. As a result, the .NET Framework assemblies in these packages are the only ones whose assembly version changes across servicing releases.
 
 This policy ensures that:
 
 1. Applications targeting modern .NET get the shared framework's copy of the assembly seamlessly.
-2. Applications targeting .NET Framework get properly serviced assemblies with correct binding behavior.
-3. Libraries targeting .NET Standard work correctly on both platforms.
+1. Applications targeting .NET Framework get properly serviced assemblies with correct binding behavior.
+1. Libraries targeting .NET Standard work correctly on both platforms.
 
 ### Packages without the shared framework constraint
 

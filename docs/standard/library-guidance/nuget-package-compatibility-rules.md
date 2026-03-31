@@ -118,7 +118,7 @@ On .NET Framework, assembly versioning has additional implications due to the ru
 Applications consuming NuGet packages on .NET Framework must account for binding redirects to unify the versions of transitive dependencies. It is never safe to assume that binding redirects won't be required&mdash;doing so makes an application unable to update a mid-stack library in the event of a critical security update.
 
 > [!TIP]
-> Enable [`<AutoGenerateBindingRedirects>`](../../framework/configure-apps/redirect-assembly-versions.md) in your application project to have the build system automatically generate the necessary binding redirects.
+> To have the build system automatically generate the necessary binding redirects, enable [`<AutoGenerateBindingRedirects>`](../../framework/configure-apps/redirect-assembly-versions.md) in your application project.
 
 ### Typical versioning policy
 
@@ -126,7 +126,7 @@ For most packages, the assembly version changes with each release. This is essen
 
 ## Assembly versioning for .NET libraries that overlap with shared frameworks
 
-Some .NET packages ship assemblies that also exist in .NET [shared frameworks](../../core/deploying/index.md). Examples include packages like `System.Text.Json` and `System.Collections.Immutable`, among others. The specific set of packages that overlap with a given shared framework varies by release and is not a fixed or documented list. These packages are unique: they provide API that is also available in .NET without a package reference, but they allow applications targeting older frameworks to use newer API.
+Some .NET packages ship assemblies that also exist in .NET [shared frameworks](../../core/deploying/index.md). Examples include packages like `System.Text.Json` and `System.Collections.Immutable`, among others. The specific set of packages that overlap with a given shared framework varies by release and is not a fixed or documented list. These packages are unique: they provide APIs that are also available in .NET without a package reference, but they allow applications targeting older frameworks to use newer APIs.
 
 ### How conflict resolution and package pruning work
 
@@ -136,7 +136,8 @@ To support these overlapping packages, the .NET SDK and runtime include several 
   - At **build time**, the SDK's `ResolvePackageFileConflicts` task compares assemblies from packages against those provided by the shared framework and selects the winner for the application's output.
   - At **runtime**, the .NET host performs the same logic when probing for assemblies, as described in the [assembly conflict resolution](https://github.com/dotnet/runtime/blob/main/docs/design/features/assembly-conflict-resolution.md) design document.
 
-- **NuGet package pruning.** The SDK can [prune packages](/nuget/reference/errors-and-warnings/nu1510) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](/nuget/concepts/auditing-packages).
+- **NuGet package pruning.** The SDK can [prune packages](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](/nuget/concepts/auditing-packages).
+- 
 
 These features allow packages to be used when needed on older frameworks and transparently replaced by the shared framework on newer ones.
 
@@ -152,13 +153,13 @@ Packages that overlap with .NET shared frameworks follow a special assembly vers
 
 This policy ensures that:
 
-1. Applications targeting modern .NET get the shared framework's copy of the assembly seamlessly.
-1. Applications targeting .NET Framework get properly serviced assemblies with correct binding behavior.
-1. Libraries targeting .NET Standard work correctly on both platforms.
+- Applications targeting modern .NET get the shared framework's copy of the assembly seamlessly.
+- Applications targeting .NET Framework get properly serviced assemblies with correct binding behavior.
+- Libraries targeting .NET Standard work correctly on both platforms.
 
 ### Packages without the shared framework constraint
 
-Packages that do not overlap with a shared framework are free to increment their assembly version with every release. This is the typical and recommended pattern, as it ensures that patched binaries are always loaded correctly regardless of the target framework.
+Packages that don't overlap with a shared framework are free to increment their assembly version with every release. This is the typical and recommended pattern, as it ensures that patched binaries are always loaded correctly regardless of the target framework.
 
 ## Summary of rules
 

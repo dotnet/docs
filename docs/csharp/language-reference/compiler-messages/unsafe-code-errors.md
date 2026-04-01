@@ -97,10 +97,10 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0193**](#pointer-operations-and-dereferencing): *The \* or -> operator must be applied to a data pointer*
+- [**CS0193**](#pointer-operations-and-dereferencing): *The \* or -> operator must be applied to a pointer*
 - [**CS0196**](#pointer-operations-and-dereferencing): *A pointer must be indexed by only one value*
 - [**CS0208**](#pointer-types-and-managed-types): *Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')*
-- [**CS0209**](#fixed-statement-usage): *The type of local declared in a fixed statement must be a pointer type*
+- [**CS0209**](#fixed-statement-usage): *The type of a local declared in a fixed statement must be a pointer type*
 - [**CS0210**](#fixed-statement-usage): *You must provide an initializer in a fixed or `using` statement declaration*
 - [**CS0211**](#fixed-statement-usage): *Cannot take the address of the given expression*
 - [**CS0212**](#fixed-statement-usage): *You can only take the address of an unfixed expression inside of a fixed statement initializer*
@@ -112,7 +112,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0244**](#unsafe-context-requirements): *Neither '`is`' nor '`as`' is valid on pointer types*
 - [**CS0254**](#fixed-statement-usage): *The right hand side of a fixed statement assignment may not be a cast expression*
 - [**CS0459**](#fixed-statement-usage): *Cannot take the address of a read-only local variable*
-- [**CS0821**](#fixed-statement-usage): *Implicitly typed locals cannot be fixed*
+- [**CS0821**](#fixed-statement-usage): *Implicitly-typed local variables cannot be fixed*
 - [**CS1641**](#fixed-size-buffers): *A fixed size buffer field must have the array size specifier after the field name*
 - [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
 - [**CS1656**](#fixed-statement-usage): *Cannot assign to 'variable' because it is a 'read-only variable type'*
@@ -125,7 +125,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS4004**](#unsafe-context-requirements): *Cannot `await` in an unsafe context*
 - [**CS7092**](#fixed-size-buffers): *A fixed buffer may only have one dimension.*
 - [**CS8372**](#fixed-size-buffers): *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute on a property*
-- [**CS8812**](#function-pointers): *Cannot convert `&Method` group to non-function pointer type.*
+- [**CS8812**](#function-pointers): *Cannot convert &method group 'method' to non-function pointer type 'type'.*
 - [**CS9049**](#fixed-size-buffers): *A fixed field must not be a ref field.*
 - [**CS9123**](#unsafe-context-requirements): *The '`&`' operator should not be used on parameters or local variables in async methods.*
 - [**CS9360**](#unsafe-context-requirements): *This operation may only be used in an unsafe context*
@@ -142,7 +142,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 ## Pointer operations and dereferencing
 
-- **CS0193**: *The `*` or `->` operator must be applied to a data pointer*
+- **CS0193**: *The `*` or `->` operator must be applied to a pointer*
 - **CS0196**: *A pointer must be indexed by only one value*
 - **CS0242**: *The operation in question is undefined on void pointers*
 
@@ -164,14 +164,14 @@ To work with pointers and the `sizeof` operator correctly, use unmanaged types a
 
 ## Fixed statement usage
 
-- **CS0209**: *The type of local declared in a fixed statement must be a pointer type*
+- **CS0209**: *The type of a local declared in a fixed statement must be a pointer type*
 - **CS0210**: *You must provide an initializer in a fixed or `using` statement declaration*
 - **CS0211**: *Cannot take the address of the given expression*
 - **CS0212**: *You can only take the address of an unfixed expression inside of a fixed statement initializer*
 - **CS0213**: *You cannot use the fixed statement to take the address of an already fixed expression*
 - **CS0254**: *The right hand side of a fixed statement assignment may not be a cast expression*
 - **CS0459**: *Cannot take the address of a read-only local variable*
-- **CS0821**: *Implicitly typed locals cannot be fixed*
+- **CS0821**: *Implicitly-typed local variables cannot be fixed*
 - **CS1656**: *Cannot assign to 'variable' because it is a 'read-only variable type'*
 
 These errors occur when you use the [`fixed` statement](../statements/fixed.md) incorrectly. The `fixed` statement prevents the garbage collector from relocating a movable variable and declares a pointer to that variable. For more information, see [Unsafe code and pointers](../unsafe-code.md).
@@ -184,7 +184,7 @@ To use the `fixed` statement correctly:
 - Use the address-of operator on unfixed expressions only within the `fixed` statement initializer (**CS0212**).
 - Don't use a `fixed` statement on already-fixed expressions (**CS0213**). Local variables and parameters in an `unsafe` method are already fixed on the stack.
 - Don't use cast expressions on the right side of a `fixed` statement assignment (**CS0254**).
-- Don't take the address of read-only local variables (**CS0459**). Variables in `foreach` loops, `using` statements, and `fixed` statements are read-only.
+- Don't take the address of read-only local variables (**CS0459**). Variables in `foreach` loops, `using` statements, and `fixed` statements are read-only. This error is no longer produced by current versions of the compiler.
 - Use explicit types instead of `var` in `fixed` statements (**CS0821**).
 - Don't assign to variables in read-only contexts like `foreach` loops, `using` statements, or `fixed` statements (**CS1656**).
 
@@ -261,6 +261,6 @@ To declare and use fixed-size buffers correctly:
 
 ## Function pointers
 
-- **CS8812**: *Cannot convert `&Method` group to non-function pointer type*
+- **CS8812**: *Cannot convert &method group 'method' to non-function pointer type 'type'.*
 
 To get a function pointer, use the address-of operator with an explicit function pointer type cast. Don't use the [address-of operator `&`](../operators/pointer-related-operators.md#address-of-operator-) to assign method groups to `void*` or other non-function pointer types. For more information, see [Function pointers](../unsafe-code.md#function-pointers).

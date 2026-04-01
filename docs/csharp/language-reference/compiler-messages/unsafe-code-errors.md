@@ -100,45 +100,45 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0193**](#pointer-operations-and-dereferencing): *The \* or -> operator must be applied to a data pointer*
 - [**CS0196**](#pointer-operations-and-dereferencing): *A pointer must be indexed by only one value*
 - [**CS0208**](#pointer-types-and-managed-types): *Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')*
-- [**CS0209**](#fixed-buffers): *The type of local declared in a fixed statement must be a pointer type*
-- [**CS0210**](#fixed-buffers): *You must provide an initializer in a fixed or `using` statement declaration*
-- [**CS0211**](#fixed-buffers): *Cannot take the address of the given expression*
-- [**CS0212**](#fixed-buffers): *You can only take the address of an unfixed expression inside of a fixed statement initializer*
-- [**CS0213**](#fixed-buffers): *You cannot use the fixed statement to take the address of an already fixed expression*
-- [**CS0214**](#unsafe-context-restrictions): *Pointers and fixed size buffers may only be used in an unsafe context*
-- [**CS0227**](#unsafe-context-restrictions): *Unsafe code may only appear if compiling with /unsafe*
+- [**CS0209**](#fixed-statement-usage): *The type of local declared in a fixed statement must be a pointer type*
+- [**CS0210**](#fixed-statement-usage): *You must provide an initializer in a fixed or `using` statement declaration*
+- [**CS0211**](#fixed-statement-usage): *Cannot take the address of the given expression*
+- [**CS0212**](#fixed-statement-usage): *You can only take the address of an unfixed expression inside of a fixed statement initializer*
+- [**CS0213**](#fixed-statement-usage): *You cannot use the fixed statement to take the address of an already fixed expression*
+- [**CS0214**](#unsafe-context-requirements): *Pointers and fixed size buffers may only be used in an unsafe context*
+- [**CS0227**](#unsafe-context-requirements): *Unsafe code may only appear if compiling with /unsafe*
 - [**CS0233**](#pointer-types-and-managed-types): *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
 - [**CS0242**](#pointer-operations-and-dereferencing): *The operation in question is undefined on void pointers*
-- [**CS0244**](#unsafe-context-restrictions): *Neither '`is`' nor '`as`' is valid on pointer types*
-- [**CS0254**](#fixed-buffers): *The right hand side of a fixed statement assignment may not be a cast expression*
-- [**CS0459**](#fixed-buffers): *Cannot take the address of a read-only local variable*
-- [**CS0821**](#fixed-buffers): *Implicitly typed locals cannot be fixed*
+- [**CS0244**](#unsafe-context-requirements): *Neither '`is`' nor '`as`' is valid on pointer types*
+- [**CS0254**](#fixed-statement-usage): *The right hand side of a fixed statement assignment may not be a cast expression*
+- [**CS0459**](#fixed-statement-usage): *Cannot take the address of a read-only local variable*
+- [**CS0821**](#fixed-statement-usage): *Implicitly typed locals cannot be fixed*
 - [**CS1641**](#fixed-size-buffers): *A fixed size buffer field must have the array size specifier after the field name*
 - [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
-- [**CS1656**](#fixed-buffers): *Cannot assign to 'variable' because it is a 'read-only variable type'*
+- [**CS1656**](#fixed-statement-usage): *Cannot assign to 'variable' because it is a 'read-only variable type'*
 - [**CS1663**](#fixed-size-buffers): *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
 - [**CS1665**](#fixed-size-buffers): *Fixed size buffers must have a length greater than zero*
 - [**CS1666**](#fixed-size-buffers): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
 - [**CS1708**](#fixed-size-buffers): *Fixed size buffers can only be accessed through locals or fields*
 - [**CS1716**](#fixed-size-buffers): *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute. Use the 'fixed' field modifier instead.*
-- [**CS1919**](#unsafe-context-restrictions): *Unsafe type 'type name' cannot be used in object creation.*
-- [**CS4004**](#unsafe-context-restrictions): *Cannot `await` in an unsafe context*
+- [**CS1919**](#unsafe-context-requirements): *Unsafe type 'type name' cannot be used in object creation.*
+- [**CS4004**](#unsafe-context-requirements): *Cannot `await` in an unsafe context*
 - [**CS7092**](#fixed-size-buffers): *A fixed buffer may only have one dimension.*
 - [**CS8372**](#fixed-size-buffers): *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute on a property*
 - [**CS8812**](#function-pointers): *Cannot convert `&Method` group to non-function pointer type.*
 - [**CS9049**](#fixed-size-buffers): *A fixed field must not be a ref field.*
-- [**CS9123**](#unsafe-context-restrictions): *The '`&`' operator should not be used on parameters or local variables in async methods.*
-- [**CS9360**](#unsafe-context-restrictions): *This operation may only be used in an unsafe context*
-- [**CS9361**](#unsafe-context-restrictions): *`stackalloc` expression without an initializer inside `SkipLocalsInit` may only be used in an unsafe context*
-- [**CS9362**](#unsafe-context-restrictions): *'member' must be used in an unsafe context because it is marked as '`RequiresUnsafe`' or '`extern`'*
-- [**CS9363**](#unsafe-context-restrictions): *'member' must be used in an unsafe context because it has pointers in its signature*
-- [**CS9364**](#unsafe-context-restrictions): *Unsafe member 'member' cannot override safe member 'member'*
-- [**CS9365**](#unsafe-context-restrictions): *Unsafe member 'member' cannot implicitly implement safe member 'member'*
-- [**CS9366**](#unsafe-context-restrictions): *Unsafe member 'member' cannot implement safe member 'member'*
-- [**CS9367**](#unsafe-context-restrictions): *`RequiresUnsafeAttribute` cannot be applied to this symbol.*
-- [**CS9368**](#unsafe-context-restrictions): *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
-- [**CS9376**](#unsafe-context-restrictions): *An unsafe context is required for constructor 'constructor' marked as '`RequiresUnsafe`' or '`extern`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
-- [**CS9377**](#unsafe-context-restrictions): *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
+- [**CS9123**](#unsafe-context-requirements): *The '`&`' operator should not be used on parameters or local variables in async methods.*
+- [**CS9360**](#unsafe-context-requirements): *This operation may only be used in an unsafe context*
+- [**CS9361**](#unsafe-context-requirements): *`stackalloc` expression without an initializer inside `SkipLocalsInit` may only be used in an unsafe context*
+- [**CS9362**](#unsafe-context-requirements): *'member' must be used in an unsafe context because it is marked as '`RequiresUnsafe`' or '`extern`'*
+- [**CS9363**](#unsafe-context-requirements): *'member' must be used in an unsafe context because it has pointers in its signature*
+- [**CS9364**](#unsafe-member-safety-contracts): *Unsafe member 'member' cannot override safe member 'member'*
+- [**CS9365**](#unsafe-member-safety-contracts): *Unsafe member 'member' cannot implicitly implement safe member 'member'*
+- [**CS9366**](#unsafe-member-safety-contracts): *Unsafe member 'member' cannot implement safe member 'member'*
+- [**CS9367**](#unsafe-member-safety-contracts): *`RequiresUnsafeAttribute` cannot be applied to this symbol.*
+- [**CS9368**](#unsafe-member-safety-contracts): *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
+- [**CS9376**](#unsafe-context-requirements): *An unsafe context is required for constructor 'constructor' marked as '`RequiresUnsafe`' or '`extern`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
+- [**CS9377**](#unsafe-member-safety-contracts): *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
 
 ## Pointer operations and dereferencing
 
@@ -162,7 +162,7 @@ To work with pointers and the `sizeof` operator correctly, use unmanaged types a
 - Use pointers only with unmanaged types (**CS0208**). Don't take the address of, get the size of, or declare pointers to managed types. Managed types include reference types and structs that contain reference type fields or properties.
 - Use the [`sizeof`](../operators/sizeof.md) operator within an [`unsafe`](../keywords/unsafe.md) context when working with types whose size isn't a compile-time constant (**CS0233**).
 
-## Fixed buffers
+## Fixed statement usage
 
 - **CS0209**: *The type of local declared in a fixed statement must be a pointer type*
 - **CS0210**: *You must provide an initializer in a fixed or `using` statement declaration*
@@ -174,7 +174,7 @@ To work with pointers and the `sizeof` operator correctly, use unmanaged types a
 - **CS0821**: *Implicitly typed locals cannot be fixed*
 - **CS1656**: *Cannot assign to 'variable' because it is a 'read-only variable type'*
 
-These errors occur when you use the [`fixed` statement](../statements/fixed.md) incorrectly. The `fixed` statement prevents the garbage collector from relocating a movable variable and declares a pointer to that variable. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
+These errors occur when you use the [`fixed` statement](../statements/fixed.md) incorrectly. The `fixed` statement prevents the garbage collector from relocating a movable variable and declares a pointer to that variable. For more information, see [Unsafe code and pointers](../unsafe-code.md).
 
 To use the `fixed` statement correctly:
 
@@ -188,7 +188,7 @@ To use the `fixed` statement correctly:
 - Use explicit types instead of `var` in `fixed` statements (**CS0821**).
 - Don't assign to variables in read-only contexts like `foreach` loops, `using` statements, or `fixed` statements (**CS1656**).
 
-## Unsafe context restrictions
+## Unsafe context requirements
 
 - **CS0214**: *Pointers and fixed size buffers may only be used in an unsafe context*
 - **CS0227**: *Unsafe code may only appear if compiling with /unsafe*
@@ -200,32 +200,38 @@ To use the `fixed` statement correctly:
 - **CS9361**: *stackalloc expression without an initializer inside SkipLocalsInit may only be used in an unsafe context*
 - **CS9362**: *'member' must be used in an unsafe context because it is marked as 'RequiresUnsafe' or 'extern'*
 - **CS9363**: *'member' must be used in an unsafe context because it has pointers in its signature*
+- **CS9376**: *An unsafe context is required for constructor 'constructor' marked as 'RequiresUnsafe' or 'extern' to satisfy the 'new()' constraint of type parameter 'type parameter' in 'generic type or method'*
+
+These errors occur when you use unsafe code constructs without the required `unsafe` context, or when you attempt operations that aren't allowed with unsafe types. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
+
+- Mark methods, types, or code blocks that use pointers or fixed-size buffers with the `unsafe` keyword (**CS0214**). The compiler requires an explicit unsafe context for any code that works with pointer types or fixed-size buffer fields.
+- Enable the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option in your project settings (**CS0227**). Without this option, the compiler rejects all `unsafe` blocks even if the code is otherwise correct.
+- Don't use the [`is`](../operators/type-testing-and-cast.md#the-is-operator) or [`as`](../operators/type-testing-and-cast.md#the-as-operator) operators with pointer types (**CS0244**). These type-testing operators aren't valid for pointers because pointers don't participate in the type hierarchy.
+- Don't use the `new` operator to create pointer type instances (**CS1919**). To create objects in unmanaged memory, use interop to call native methods that return pointers.
+- Keep unsafe code separate from async code (**CS4004**). The compiler doesn't allow `await` expressions inside an `unsafe` block because the runtime can't guarantee pointer validity across suspension points. Create separate methods for unsafe operations and call them from async methods.
+- Don't use the address-of operator (`&`) on parameters or local variables in async methods (**CS9123**). The variable might not exist on the stack when the async operation resumes after a suspension point.
+- Mark operations that involve unsafe constructs (such as pointer dereferencing, address-of, or `sizeof` on unmanaged types) with the `unsafe` keyword (**CS9360**). Under C# 15's updated memory safety rules, the compiler identifies individual operations that require an unsafe context.
+- Use the `unsafe` keyword for `stackalloc` expressions without initializers when the `SkipLocalsInit` attribute is applied (**CS9361**). Without an initializer, the stack-allocated memory contains uninitialized data, which is an unsafe operation.
+- Use an `unsafe` context when calling members marked with `RequiresUnsafe` or `extern` (**CS9362**), or members with pointers in their signatures (**CS9363**). The C# 15 compiler tracks unsafe member usage at the call site, not just at the declaration.
+- Use an `unsafe` context when a `new()` constraint requires calling a constructor marked with `RequiresUnsafe` or `extern` (**CS9376**). The generic instantiation calls the constructor implicitly, so the calling context must be unsafe.
+
+## Unsafe member safety contracts
+
 - **CS9364**: *Unsafe member 'member' cannot override safe member 'member'*
 - **CS9365**: *Unsafe member 'member' cannot implicitly implement safe member 'member'*
 - **CS9366**: *Unsafe member 'member' cannot implement safe member 'member'*
 - **CS9367**: *RequiresUnsafeAttribute cannot be applied to this symbol.*
 - **CS9368**: *RequiresUnsafeAttribute is only valid under the updated memory safety rules.*
-- **CS9376**: *An unsafe context is required for constructor 'constructor' marked as 'RequiresUnsafe' or 'extern' to satisfy the 'new()' constraint of type parameter 'type parameter' in 'generic type or method'*
 - **CS9377**: *The 'unsafe' modifier does not have any effect here under the current memory safety rules.*
 
-These errors occur when you use unsafe code constructs without proper unsafe context or when you attempt operations that aren't allowed in unsafe code. For more information, see [Unsafe Code and Pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
+These errors enforce the C# 15 safety contract rules for members marked as unsafe. The compiler ensures that unsafe members don't violate the safety expectations established by base classes and interfaces. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
 
-To use unsafe code correctly:
-
-- Mark methods, types, or code blocks that use pointers or fixed-size buffers by using the `unsafe` keyword (**CS0214**).
-- Enable the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option in your project settings when using the `unsafe` keyword (**CS0227**).
-- Don't use the [`is`](../operators/type-testing-and-cast.md#the-is-operator) or [`as`](../operators/type-testing-and-cast.md#the-as-operator) operators with pointer types (**CS0244**). These type-testing operators aren't valid for pointers.
-- Don't use the `new` operator to create pointer type instances (**CS1919**). To create objects in unmanaged memory, use interop to call native methods that return pointers.
-- Keep unsafe code separate from async code (**CS4004**). Create separate methods for unsafe operations and call them from async methods.
-- Don't use the address-of operator (`&`) on parameters or local variables in async methods (**CS9123**). The variable might not exist when the async operation completes.
-- Mark operations that involve unsafe constructs (such as pointer dereferencing, address-of, or `sizeof` on unmanaged types) with the `unsafe` keyword (**CS9360**).
-- Use the `unsafe` keyword for `stackalloc` expressions without initializers when the `SkipLocalsInit` attribute is applied (**CS9361**).
-- Use an `unsafe` context when calling members marked with `RequiresUnsafe` or `extern` (**CS9362**), or members with pointers in their signatures (**CS9363**).
-- Don't override or implement safe members with unsafe members (**CS9364**, **CS9365**, **CS9366**). Ensure the safety contract matches between base and derived members.
-- Apply `RequiresUnsafeAttribute` only to supported member types (**CS9367**). Not all symbols support this attribute.
-- Enable the updated memory safety rules to use `RequiresUnsafeAttribute` (**CS9368**). This attribute isn't valid under legacy rules.
-- Use an `unsafe` context when a `new()` constraint requires calling a constructor marked with `RequiresUnsafe` or `extern` (**CS9376**).
-- Remove the `unsafe` modifier when it has no effect under the current memory safety rules (**CS9377**). The modifier is meaningless in certain contexts.
+- Don't override a safe base member with an unsafe member (**CS9364**). An override must preserve the safety contract of the base member. If the base member is safe, the override must also be safe. Remove the `unsafe` modifier or `RequiresUnsafeAttribute` from the overriding member, or mark the base member as unsafe.
+- Don't implicitly implement a safe interface member with an unsafe member (**CS9365**). When a type implicitly implements an interface member, callers through the interface expect a safe operation. Remove the unsafe designation from the implementing member, or use explicit interface implementation.
+- Don't explicitly implement a safe interface member with an unsafe member (**CS9366**). Even with explicit implementation, the safety contract of the interface member must be preserved.
+- Apply `RequiresUnsafeAttribute` only to supported symbol types (**CS9367**). This attribute can be applied to methods, properties, events, constructors, and types, but not all symbol kinds support it.
+- Enable the updated memory safety rules to use `RequiresUnsafeAttribute` (**CS9368**). This attribute is part of C# 15's refined memory safety model and isn't recognized under legacy rules. Ensure your project targets a language version that supports the updated rules.
+- Remove the `unsafe` modifier when it has no effect (**CS9377**). Under the current memory safety rules, certain contexts don't require or benefit from the `unsafe` modifier. The compiler warns when the modifier is meaningless so you can clean up unnecessary annotations.
 
 ## Fixed-size buffers
 

@@ -344,7 +344,7 @@ f1_keywords:
   - "CS8909" # function pointer
   - "CS8911" # function pointer
 # Coming in C# 15
-  - "CS9343"
+  - "CS9343" # misc
   - "CS9346"
   - "CS9347"
   - "CS9348"
@@ -360,16 +360,6 @@ f1_keywords:
   - "CS9357"
   - "CS9358"
   - "CS9359"
-# New unsafety
-  - "CS9360"
-  - "CS9361"
-  - "CS9362"
-  - "CS9363"
-  - "CS9364"
-  - "CS9365"
-  - "CS9366"
-  - "CS9367"
-  - "CS9368"
 # Unions
   - "CS9369"
   - "CS9370"
@@ -378,10 +368,6 @@ f1_keywords:
   - "CS9373"
   - "CS9374"
   - "CS9375"
-# More new unsafety
-  - "CS9376"
-  - "CS9377"
-
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

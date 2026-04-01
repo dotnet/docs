@@ -241,9 +241,9 @@ These errors enforce the C# 15 safety contract rules for members marked as unsaf
 - **CS1665**: *Fixed size buffers must have a length greater than zero*
 - **CS1666**: *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement*
 - **CS1708**: *Fixed size buffers can only be accessed through locals or fields*
-- **CS1716**: *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead*
+- **CS1716**: *Do not use `System.Runtime.CompilerServices.FixedBuffer` attribute. Use the `fixed` field modifier instead*
 - **CS7092**: *A fixed buffer may only have one dimension.*
-- **CS8372**: *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute on a property*
+- **CS8372**: *Do not use `System.Runtime.CompilerServices.FixedBuffer` attribute on a property*
 - **CS9049**: *A fixed field must not be a ref field*
 
 These errors occur when you work with fixed-size buffers. Fixed-size buffers are arrays embedded directly in structs and are primarily used for interop scenarios. For more information, see [Fixed-size buffers](../unsafe-code.md#fixed-size-buffers).

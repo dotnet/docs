@@ -92,7 +92,7 @@ ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in unsafe code constructs
 
-This article covers the following compiler errors:
+This article covers the following compiler diagnostics:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -192,17 +192,17 @@ To use the `fixed` statement correctly:
 
 - **CS0214**: *Pointers and fixed size buffers may only be used in an unsafe context*
 - **CS0227**: *Unsafe code may only appear if compiling with /unsafe*
-- **CS0244**: *Neither 'is' nor 'as' is valid on pointer types*
+- **CS0244**: *Neither '`is`' nor '`as`' is valid on pointer types*
 - **CS1919**: *Unsafe type 'type name' cannot be used in object creation*
-- **CS4004**: *Cannot await in an unsafe context*
-- **CS9123**: *The '&' operator should not be used on parameters or local variables in async methods*
+- **CS4004**: *Cannot `await` in an unsafe context*
+- **CS9123**: *The '`&`' operator should not be used on parameters or local variables in async methods*
 - **CS9360**: *This operation may only be used in an unsafe context*
-- **CS9361**: *stackalloc expression without an initializer inside SkipLocalsInit may only be used in an unsafe context*
-- **CS9362**: *'member' must be used in an unsafe context because it is marked as 'RequiresUnsafe' or 'extern'*
+- **CS9361**: *`stackalloc` expression without an initializer inside `SkipLocalsInit` may only be used in an unsafe context*
+- **CS9362**: *'member' must be used in an unsafe context because it is marked as '`RequiresUnsafe`' or '`extern`'*
 - **CS9363**: *'member' must be used in an unsafe context because it has pointers in its signature*
-- **CS9376**: *An unsafe context is required for constructor 'constructor' marked as 'RequiresUnsafe' or 'extern' to satisfy the 'new()' constraint of type parameter 'type parameter' in 'generic type or method'*
+- **CS9376**: *An unsafe context is required for constructor 'constructor' marked as '`RequiresUnsafe`' or '`extern`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
 
-These errors occur when you use unsafe code constructs without the required `unsafe` context, or when you attempt operations that aren't allowed with unsafe types. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
+These diagnostics occur when you use unsafe code constructs without the required `unsafe` context, or when you attempt operations that aren't allowed with unsafe types. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
 
 - Mark methods, types, or code blocks that use pointers or fixed-size buffers with the `unsafe` keyword (**CS0214**). The compiler requires an explicit unsafe context for any code that works with pointer types or fixed-size buffer fields.
 - Enable the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option in your project settings (**CS0227**). Without this option, the compiler rejects all `unsafe` blocks even if the code is otherwise correct.
@@ -220,11 +220,11 @@ These errors occur when you use unsafe code constructs without the required `uns
 - **CS9364**: *Unsafe member 'member' cannot override safe member 'member'*
 - **CS9365**: *Unsafe member 'member' cannot implicitly implement safe member 'member'*
 - **CS9366**: *Unsafe member 'member' cannot implement safe member 'member'*
-- **CS9367**: *RequiresUnsafeAttribute cannot be applied to this symbol.*
-- **CS9368**: *RequiresUnsafeAttribute is only valid under the updated memory safety rules.*
-- **CS9377**: *The 'unsafe' modifier does not have any effect here under the current memory safety rules.*
+- **CS9367**: *`RequiresUnsafeAttribute` cannot be applied to this symbol.*
+- **CS9368**: *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
+- **CS9377**: *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
 
-These errors enforce the C# 15 safety contract rules for members marked as unsafe. The compiler ensures that unsafe members don't violate the safety expectations established by base classes and interfaces. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
+These diagnostics enforce the C# 15 safety contract rules for members marked as unsafe. The compiler ensures that unsafe members don't violate the safety expectations established by base classes and interfaces. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
 
 - Don't override a safe base member with an unsafe member (**CS9364**). An override must preserve the safety contract of the base member. If the base member is safe, the override must also be safe. Remove the `unsafe` modifier or `RequiresUnsafeAttribute` from the overriding member, or mark the base member as unsafe.
 - Don't implicitly implement a safe interface member with an unsafe member (**CS9365**). When a type implicitly implements an interface member, callers through the interface expect a safe operation. Remove the unsafe designation from the implementing member, or use explicit interface implementation.
@@ -237,13 +237,13 @@ These errors enforce the C# 15 safety contract rules for members marked as unsaf
 
 - **CS1641**: *A fixed size buffer field must have the array size specifier after the field name*
 - **CS1642**: *Fixed size buffer fields may only be members of structs*
-- **CS1663**: *Fixed size buffer type must be one of the following: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float or double*
+- **CS1663**: *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
 - **CS1665**: *Fixed size buffers must have a length greater than zero*
 - **CS1666**: *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement*
 - **CS1708**: *Fixed size buffers can only be accessed through locals or fields*
-- **CS1716**: *Do not use `System.Runtime.CompilerServices.FixedBuffer` attribute. Use the `fixed` field modifier instead*
+- **CS1716**: *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute. Use the 'fixed' field modifier instead*
 - **CS7092**: *A fixed buffer may only have one dimension.*
-- **CS8372**: *Do not use `System.Runtime.CompilerServices.FixedBuffer` attribute on a property*
+- **CS8372**: *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute on a property*
 - **CS9049**: *A fixed field must not be a ref field*
 
 These errors occur when you work with fixed-size buffers. Fixed-size buffers are arrays embedded directly in structs and are primarily used for interop scenarios. For more information, see [Fixed-size buffers](../unsafe-code.md#fixed-size-buffers).

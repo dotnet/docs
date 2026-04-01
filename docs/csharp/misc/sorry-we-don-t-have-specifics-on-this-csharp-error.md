@@ -353,13 +353,6 @@ f1_keywords:
   - "CS9351"
   - "CS9352"
   - "CS9353"
-# Collection arguments
-  - "CS9354"
-  - "CS9355"
-  - "CS9356"
-  - "CS9357"
-  - "CS9358"
-  - "CS9359"
 # Unions
   - "CS9369"
   - "CS9370"

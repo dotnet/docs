@@ -75,9 +75,9 @@ The .NET libraries maintain a [very high bar for binary compatibility](../../cor
 
 The dependencies declared by a NuGet package are part of its public contract. When a consumer installs your package, they also get all of its dependencies. Dropping a dependency in a newer version of your package can break consumers who rely on types from that dependency being present at runtime.
 
-### Avoid dropping dependencies in compatible versions
+### Avoid dropping dependencies in compatible package versions or frameworks
 
-Packages should avoid removing dependencies in compatible framework versions or within the same major version series. Dropping a dependency can cause run-time failures for consumers who rely on types from that dependency, even if your own code no longer uses it directly.
+Packages should avoid removing dependencies between compatible versions of the package or between compatible target frameworks within the same package. Dropping a dependency can cause runtime failures for consumers who rely on types from that dependency, even if your own code no longer uses it directly.
 
 Dropping a dependency is more reasonable across major version boundaries. Unlike binary breaking changes, a dropped dependency can be mitigated by the consuming application without recompiling intermediate libraries&mdash;the application can simply add a direct reference to the removed dependency.
 
@@ -137,7 +137,6 @@ To support these overlapping packages, the .NET SDK and runtime include several 
   - At **runtime**, the .NET host performs the same logic when probing for assemblies, as described in the [assembly conflict resolution](https://github.com/dotnet/runtime/blob/main/docs/design/features/assembly-conflict-resolution.md) design document.
 
 - **NuGet package pruning.** The SDK can [prune packages](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) from the dependency graph when the shared framework already provides the same functionality. This was introduced as an opt-in feature in the .NET 9 SDK and is enabled by default in the .NET 10 SDK for projects targeting .NET 10. Package pruning reduces restore time, shrinks dependency graphs, and eliminates false positives from vulnerability scanners like [NuGet Audit](/nuget/concepts/auditing-packages).
-- 
 
 These features allow packages to be used when needed on older frameworks and transparently replaced by the shared framework on newer ones.
 

@@ -32,15 +32,15 @@ Provides methods that inspect an application domain's memory and CPU usage.
 
  The `ICLRAppDomainResourceMonitor` interface provides functionality that is similar to the following managed properties:
 
-- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
+- <xref:System.AppDomain.MonitoringIsEnabled*?displayProperty=nameWithType>
 
-- <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType>
+- <xref:System.AppDomain.MonitoringTotalProcessorTime*?displayProperty=nameWithType>
 
-- <xref:System.AppDomain.MonitoringTotalAllocatedMemorySize%2A?displayProperty=nameWithType>
+- <xref:System.AppDomain.MonitoringTotalAllocatedMemorySize*?displayProperty=nameWithType>
 
-- <xref:System.AppDomain.MonitoringSurvivedProcessMemorySize%2A?displayProperty=nameWithType>
+- <xref:System.AppDomain.MonitoringSurvivedProcessMemorySize*?displayProperty=nameWithType>
 
-- <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType>
+- <xref:System.AppDomain.MonitoringSurvivedMemorySize*?displayProperty=nameWithType>
 
 ## Requirements
 

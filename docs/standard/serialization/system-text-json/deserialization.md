@@ -18,7 +18,7 @@ ms.custom: copilot-scenario-highlight
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
-A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
+A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
 
 > [!TIP]
 > You can use AI assistance to [deserialize a JSON string](#use-ai-to-deserialize-json).
@@ -37,7 +37,7 @@ To deserialize from a file by using synchronous code, read the file into a strin
 :::code language="csharp" source="snippets/how-to/csharp/DeserializeFromFile.cs" highlight="16-18":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToFile.vb" id="Deserialize":::
 
-To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
+To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync*> method:
 
 :::code language="csharp" source="snippets/how-to/csharp/DeserializeFromFileAsync.cs" highlight="17-20":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
@@ -78,7 +78,7 @@ If you have JSON that you want to deserialize, and you don't have the class to d
 
 ## Deserialize from UTF-8
 
-To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `ReadOnlySpan<byte>` or a `Utf8JsonReader`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
+To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> overload that takes a `ReadOnlySpan<byte>` or a `Utf8JsonReader`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripToUtf8.cs" id="Deserialize1":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToUtf8.vb" id="Deserialize1":::

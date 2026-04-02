@@ -52,7 +52,7 @@ These data ingestion building blocks are built on top of proven and extensible c
 - **Microsoft.Extensions.AI:** This set of libraries powers enrichment transformations using large language models. It enables features like summarization, sentiment analysis, keyword extraction, and embedding generation, making it easy to enhance your data with intelligent insights.
 - **Microsoft.Extensions.VectorData:** This set of libraries offers a consistent interface for storing processed chunks in a wide variety of vector stores, including Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. This ensures your data pipelines are ready for production and can scale across different storage backends.
 
-In addition to familiar patterns and tools, these abstractions build on already extensible components. Plug-in capability and interoperability are paramount, so as the rest of the .NET AI ecosystem grows, the capabilities of the data ingestion components grow as well. This approach empowers developers to easily integrate new connectors, enrichments, and storage options, keeping their pipelines future-ready and adaptable to evolving AI scenarios.
+In addition to familiar patterns and tools, these abstractions build on already extensible components. Plug-in capability and interoperability are paramount, so as the rest of the .NET AI ecosystem grows, the capabilities of the data ingestion components grow as well. This approach empowers developers to easily integrate new providers, enrichments, and storage options, keeping their pipelines future-ready and adaptable to evolving AI scenarios.
 
 ## Data ingestion building blocks
 
@@ -108,9 +108,11 @@ These processors use [Microsoft.Extensions.AI.Abstractions](https://www.nuget.or
 
 ### Document writer and storage
 
-<xref:Microsoft.Extensions.DataIngestion.IngestionChunkWriter`1> stores processed chunks into a data store for later retrieval. Using Microsoft.Extensions.AI and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions), the library provides the <xref:Microsoft.Extensions.DataIngestion.VectorStoreWriter`1> class that supports storing chunks in any vector store supported by Microsoft.Extensions.VectorData.
+<xref:Microsoft.Extensions.DataIngestion.IngestionChunkWriter`1> stores processed chunks into a data store for later retrieval. The library, which uses <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.VectorData>, provides the <xref:Microsoft.Extensions.DataIngestion.VectorStoreWriter`1> class. This writer supports storing chunks in any [vector store](../vector-stores/overview.md) supported by <xref:Microsoft.Extensions.VectorData>.
 
-Vector stores include popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch), and many more. The writer can also automatically generate embeddings for your chunks using Microsoft.Extensions.AI, readying them for semantic search and retrieval scenarios.
+Vector stores include popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), and [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch). For more information about providers, see [Out-of-the-box Vector Store providers](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/). (Despite the inclusion of "SemanticKernel" in the package names, these providers have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.)
+
+The writer can also automatically generate embeddings for your chunks using <xref:Microsoft.Extensions.AI>, readying them for semantic search and retrieval scenarios.
 
 ```csharp
 OpenAIClient openAIClient = new(

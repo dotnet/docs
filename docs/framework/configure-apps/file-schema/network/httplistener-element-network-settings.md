@@ -47,7 +47,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 
  The `unescapeRequestUrl` attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.
 
- When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.
+ When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url?displayProperty=nameWithType> property.
 
  The `http.sys` service exposes two request URI strings:
 
@@ -69,7 +69,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 
  `http://www.contoso.com/path/`
 
- The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also does the following:
+ The `http.sys` service combines the <xref:System.Uri.Host?displayProperty=nameWithType> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also does the following:
 
 - Un-escapes all percent encoded values.
 
@@ -86,7 +86,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |EnableNonUTF8|1|If zero, `http.sys` accepts only UTF-8-encoded URLs.<br /><br /> If non-zero, `http.sys` also accepts ANSI-encoded or DBCS-encoded URLs in requests.|
 |FavorUTF8|1|If non-zero, `http.sys` always tries to decode a URL as UTF-8 first; if that conversion fails and EnableNonUTF8 is non-zero, Http.sys then tries to decode it as ANSI or DBCS.<br /><br /> If zero (and EnableNonUTF8 is non-zero), `http.sys` tries to decode it as ANSI or DBCS; if that is not successful, it tries a UTF-8 conversion.|
 
- When <xref:System.Net.HttpListener> receives a request, it uses the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.
+ When <xref:System.Net.HttpListener> receives a request, it uses the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url> property.
 
  There is a need for supporting characters besides characters and numbers in URIs. An example is the following URI, which is used to retrieve customer information for customer number "1/3812":
 
@@ -106,15 +106,15 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 
  This is not the intent of the sender of the request.
 
- If the `unescapeRequestUrl` attribute is set to **false**, then when the <xref:System.Net.HttpListener> receives a request, it uses the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.
+ If the `unescapeRequestUrl` attribute is set to **false**, then when the <xref:System.Net.HttpListener> receives a request, it uses the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url> property.
 
  The default value for the `unescapeRequestUrl` attribute is **true**.
 
- The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property can be used to get the current value of the `unescapeRequestUrl` attribute from applicable configuration files.
+ The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl> property can be used to get the current value of the `unescapeRequestUrl` attribute from applicable configuration files.
 
 ## Example
 
- The following example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.
+ The following example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url> property.
 
 ```xml
 <configuration>
@@ -136,5 +136,5 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 
 - <xref:System.Net.Configuration.HttpListenerElement>
 - <xref:System.Net.HttpListener>
-- <xref:System.Net.HttpListenerRequest.Url%2A>
+- <xref:System.Net.HttpListenerRequest.Url*>
 - [Network Settings Schema](index.md)

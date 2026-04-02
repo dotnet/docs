@@ -23,7 +23,7 @@ This information helps you with tracing and debugging, and helps you to create d
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="CallerFileMemberLine":::
 
-You specify an explicit default value for each optional parameter. You can't apply caller info attributes to parameters that aren't optional. The caller info attributes don't make a parameter optional. Instead, they affect the default value passed in when the argument is omitted. The compiler emits caller info values as literals into the Intermediate Language (IL) at compile time. Unlike the results of the <xref:System.Exception.StackTrace%2A> property for exceptions, obfuscation doesn't affect the results. You can explicitly supply the optional arguments to control the caller information or to hide caller information.
+You specify an explicit default value for each optional parameter. You can't apply caller info attributes to parameters that aren't optional. The caller info attributes don't make a parameter optional. Instead, they affect the default value passed in when the argument is omitted. The compiler emits caller info values as literals into the Intermediate Language (IL) at compile time. Unlike the results of the <xref:System.Exception.StackTrace> property for exceptions, obfuscation doesn't affect the results. You can explicitly supply the optional arguments to control the caller information or to hide caller information.
 
 ## Member names
 

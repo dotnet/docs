@@ -107,4 +107,4 @@ Generative AI services also enforce a maximum number of tokens per minute (TPM).
 - [Use Microsoft.ML.Tokenizers for text tokenization](../how-to/use-tokenizers.md)
 - [How generative AI and LLMs work](how-genai-and-llms-work.md)
 - [Understand embeddings](embeddings.md)
-- [Work with vector databases](vector-databases.md)
+- [Work with vector databases](../vector-stores/overview.md)

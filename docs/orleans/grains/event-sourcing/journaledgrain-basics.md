@@ -7,14 +7,14 @@ ms.topic: concept-article
 
 # JournaledGrain basics
 
-Journaled grains derive from <xref:Orleans.EventSourcing.JournaledGrain%602>, with the following type parameters:
+Journaled grains derive from <xref:Orleans.EventSourcing.JournaledGrain`2>, with the following type parameters:
 
 - `TGrainState` represents the state of the grain. It must be a class with a public default constructor.
 - `TEventBase` is a common supertype for all events that can be raised for this grain and can be any class or interface.
 
 All state and event objects should be serializable because log-consistency providers might need to persist them and/or send them in notification messages.
 
-For grains whose events are POCOs (plain old C# objects), you can use <xref:Orleans.EventSourcing.JournaledGrain%601> as a shorthand for <xref:Orleans.EventSourcing.JournaledGrain%602>.
+For grains whose events are POCOs (plain old C# objects), you can use <xref:Orleans.EventSourcing.JournaledGrain`1> as a shorthand for <xref:Orleans.EventSourcing.JournaledGrain`2>.
 
 ## Reading the grain state
 
@@ -28,11 +28,11 @@ int Version { get; }
 The version number always equals the total number of confirmed events, and the state is the result of applying all confirmed events to the initial state. The default constructor of the `GrainState` class determines the initial state, which has version 0 (because no events have been applied to it).
 
 > [!IMPORTANT]
-> Never directly modify the object returned by <xref:Orleans.EventSourcing.JournaledGrain%602.State>. It's meant for reading only. When your application needs to modify the state, do so indirectly by raising events.
+> Never directly modify the object returned by <xref:Orleans.EventSourcing.JournaledGrain`2.State>. It's meant for reading only. When your application needs to modify the state, do so indirectly by raising events.
 
 ## Raise events
 
-Raise events by calling the <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A> function. For example, a grain representing a chat can raise a `PostedEvent` to indicate that a user submitted a post:
+Raise events by calling the <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*> function. For example, a grain representing a chat can raise a `PostedEvent` to indicate that a user submitted a post:
 
 ```csharp
 RaiseEvent(new PostedEvent()
@@ -44,7 +44,7 @@ RaiseEvent(new PostedEvent()
 });
 ```
 
-Note that <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent*> initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
+Note that <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*> initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*>:
 
 ```csharp
 RaiseEvent(new DepositTransaction()
@@ -55,7 +55,7 @@ RaiseEvent(new DepositTransaction()
 await ConfirmEvents();
 ```
 
-Note that even if you don't explicitly call <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*>, the events eventually get confirmed automatically in the background.
+Note that even if you don't explicitly call <xref:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*>, the events eventually get confirmed automatically in the background.
 
 ## State transition methods
 
@@ -96,7 +96,7 @@ Some providers, like the <xref:Orleans.EventSourcing.LogStorage> log-consistency
 
 ## Raise multiple events
 
-You can make multiple calls to <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent*> before calling <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*>:
+You can make multiple calls to <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*> before calling <xref:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*>:
 
 ```csharp
 RaiseEvent(e1);

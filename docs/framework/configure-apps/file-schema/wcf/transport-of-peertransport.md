@@ -59,7 +59,7 @@ Specifies the transport type for secured messages sent by peers configured with 
 ## See also
 
 - <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
-- <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>
+- <xref:System.ServiceModel.PeerSecuritySettings.Transport*>
 - <xref:System.ServiceModel.PeerTransportSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Transport Security](../../../wcf/feature-details/transport-security.md)

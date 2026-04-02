@@ -35,9 +35,9 @@ Example of a Scrolling Control that Does Not Use Scrollbars
 
 - <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty> and <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty> are independent of the <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty>.
 
-- If <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty> = `false` then <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalViewSizeProperty> should be set to 100% and <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalScrollPercentProperty> should be set to <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>. Likewise, if <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty> = `false` then <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty> should be set to 100 percent and <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalScrollPercentProperty> should be set to <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>. This allows a UI Automation client to use these property values within the <xref:System.Windows.Automation.ScrollPattern.SetScrollPercent%2A> method while avoiding a race condition if a direction the client is not interested in scrolling becomes activated.
+- If <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty> = `false` then <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalViewSizeProperty> should be set to 100% and <xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalScrollPercentProperty> should be set to <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>. Likewise, if <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty> = `false` then <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty> should be set to 100 percent and <xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalScrollPercentProperty> should be set to <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>. This allows a UI Automation client to use these property values within the <xref:System.Windows.Automation.ScrollPattern.SetScrollPercent*> method while avoiding a race condition if a direction the client is not interested in scrolling becomes activated.
 
-- <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A> is locale-specific. Setting HorizontalScrollPercent = 100.0 must set the scrolling location of the control to the equivalent of its rightmost position for languages such as English that read left to right. Alternately, for languages such as Arabic that read right to left, setting HorizontalScrollPercent = 100.0 must set the scroll location to the leftmost position.
+- <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent*> is locale-specific. Setting HorizontalScrollPercent = 100.0 must set the scrolling location of the control to the equivalent of its rightmost position for languages such as English that read left to right. Alternately, for languages such as Arabic that read right to left, setting HorizontalScrollPercent = 100.0 must set the scroll location to the leftmost position.
 
 <a name="Required_Members_for_IScrollProvider"></a>
 
@@ -47,14 +47,14 @@ Example of a Scrolling Control that Does Not Use Scrollbars
 
 |Required member|Member type|Notes|
 |---------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.Scroll%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.Scroll*>|Method|None|
+|<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent*>|Method|None|
 
  This control pattern has no associated events.
 
@@ -66,10 +66,10 @@ Example of a Scrolling Control that Does Not Use Scrollbars
 
 |Exception Type|Condition|
 |--------------------|---------------|
-|<xref:System.ArgumentException>|<xref:System.Windows.Automation.Provider.IScrollProvider.Scroll%2A> throws this exception if a control supports <xref:System.Windows.Automation.ScrollAmount.SmallIncrement> values exclusively for horizontal or vertical scrolling, but a <xref:System.Windows.Automation.ScrollAmount.LargeIncrement> value is passed in.|
-|<xref:System.ArgumentException>|<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A> throws this exception when a value that cannot be converted to a double is passed in.|
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A> throws this exception when a value greater than 100 or less than 0 is passed in (except -1 which is equivalent to <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>).|
-|<xref:System.InvalidOperationException>|Both <xref:System.Windows.Automation.Provider.IScrollProvider.Scroll%2A> and <xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A> throw this exception when an attempt is made to scroll in an unsupported direction.|
+|<xref:System.ArgumentException>|<xref:System.Windows.Automation.Provider.IScrollProvider.Scroll*> throws this exception if a control supports <xref:System.Windows.Automation.ScrollAmount.SmallIncrement> values exclusively for horizontal or vertical scrolling, but a <xref:System.Windows.Automation.ScrollAmount.LargeIncrement> value is passed in.|
+|<xref:System.ArgumentException>|<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent*> throws this exception when a value that cannot be converted to a double is passed in.|
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent*> throws this exception when a value greater than 100 or less than 0 is passed in (except -1 which is equivalent to <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll>).|
+|<xref:System.InvalidOperationException>|Both <xref:System.Windows.Automation.Provider.IScrollProvider.Scroll*> and <xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent*> throw this exception when an attempt is made to scroll in an unsupported direction.|
 
 ## See also
 

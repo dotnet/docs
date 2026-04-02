@@ -17,10 +17,10 @@ Another common scenario is to read and modify XML that has already been intentio
 
 The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes serialize an XML tree. You can serialize an XML tree to a file, a <xref:System.IO.TextReader>, or an <xref:System.Xml.XmlReader>. The `ToString` method serializes to a string.
 
-- <xref:System.Xml.Linq.XElement.Save%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=nameWithType>
-- [XElement.ToString()](xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType)
-- [XDocument.ToString()](xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType)
+- <xref:System.Xml.Linq.XElement.Save*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Save*?displayProperty=nameWithType>
+- [XElement.ToString()](xref:System.Xml.Linq.XNode.ToString*?displayProperty=nameWithType)
+- [XDocument.ToString()](xref:System.Xml.Linq.XNode.ToString*?displayProperty=nameWithType)
 
 If the method doesn't take <xref:System.Xml.Linq.SaveOptions> as an argument, then the method will format (indent) the serialized XML. In this case, all insignificant white space in the XML tree is discarded.
 

@@ -2,7 +2,7 @@
 description: "in (Generic Modifier) - C# Reference"
 title: "in (Generic Modifier)"
 ms.date: 01/21/2026
-helpviewer_keywords: 
+helpviewer_keywords:
   - "contravariance, in keyword [C#]"
   - "in keyword [C#]"
 ---
@@ -16,7 +16,7 @@ Contravariance enables you to use a less derived type than the type specified by
 
 You can declare a type as contravariant in a generic interface or delegate only if it defines the type of a method's parameters and not the method's return type. `In`, `ref`, and `out` parameters must be invariant, meaning they're neither covariant nor contravariant.
 
-An interface that has a contravariant type parameter allows its methods to accept arguments of less derived types than those specified by the interface type parameter. For example, in the <xref:System.Collections.Generic.IComparer%601> interface, type T is contravariant. You can assign an object of the `IComparer<Person>` type to an object of the `IComparer<Employee>` type without using any special conversion methods if `Employee` inherits `Person`.
+An interface that has a contravariant type parameter allows its methods to accept arguments of less derived types than those specified by the interface type parameter. For example, in the <xref:System.Collections.Generic.IComparer`1> interface, type T is contravariant. You can assign an object of the `IComparer<Person>` type to an object of the `IComparer<Employee>` type without using any special conversion methods if `Employee` inherits `Person`.
 
 You can assign a contravariant delegate to another delegate of the same type, but with a less derived generic type parameter.
 

@@ -44,7 +44,7 @@ public class DictionaryGrain<K, V> : IDictionaryGrain<K, V>
 }
 ```
 
-The grain class has two generic parameters, so a backtick `` ` `` followed by the generic arity, 2, is added to the end of the grain type name `dict` to create the grain type name ``dict`2``. This is specified in the attribute on the grain class: `[GrainType("dict`2")]`.
+The grain class has two generic parameters, so a backtick `` ` `` followed by the generic arity, 2, is added to the end of the grain type name `dict` to create the grain type name ``dict`2``. This is specified in the attribute on the grain class: ``[GrainType("dict`2")]``.
 
 ## Grain keys
 
@@ -135,7 +135,7 @@ public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
 }
 ```
 
-In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType> method on the grain factory:
+In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> method on the grain factory:
 
 ```csharp
 var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);

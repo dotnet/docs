@@ -104,8 +104,8 @@ Specifies authentication options for peer-to-peer message senders.
 ## See also
 
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
-- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>
-- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
+- <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication*>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication*>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)

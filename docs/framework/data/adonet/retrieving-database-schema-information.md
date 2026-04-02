@@ -12,7 +12,7 @@ Obtaining schema information from a database is accomplished with the process of
 
  The .NET Framework Data Providers for OLE DB, ODBC, Oracle, and SqlClient provide a `GetSchemaTable` method that returns a DataTable describing the column metadata of the **DataReader**.
 
- The .NET Framework Data Provider for OLE DB also exposes schema information by using the <xref:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable%2A> method of the <xref:System.Data.OleDb.OleDbConnection> object. As arguments, `GetOleDbSchemaTable` takes an <xref:System.Data.OleDb.OleDbSchemaGuid> that identifies the schema information to return, and an array of restrictions on those returned columns. `GetOleDbSchemaTable` returns a <xref:System.Data.DataTable> populated with the requested schema information.
+ The .NET Framework Data Provider for OLE DB also exposes schema information by using the <xref:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable*> method of the <xref:System.Data.OleDb.OleDbConnection> object. As arguments, `GetOleDbSchemaTable` takes an <xref:System.Data.OleDb.OleDbSchemaGuid> that identifies the schema information to return, and an array of restrictions on those returned columns. `GetOleDbSchemaTable` returns a <xref:System.Data.DataTable> populated with the requested schema information.
 
 ## In This Section
 
@@ -39,34 +39,34 @@ Obtaining schema information from a database is accomplished with the process of
 
 ## Reference
 
- <xref:System.Data.Common.DbConnection.GetSchema%2A>
+ <xref:System.Data.Common.DbConnection.GetSchema*>
  Describes the `GetSchema` method of the <xref:System.Data.Common.DbConnection> class.
 
- <xref:System.Data.Odbc.OdbcConnection.GetSchema%2A>
+ <xref:System.Data.Odbc.OdbcConnection.GetSchema*>
  Describes the `GetSchema` method of the <xref:System.Data.Odbc.OdbcConnection> class.
 
- <xref:System.Data.OleDb.OleDbConnection.GetSchema%2A>
+ <xref:System.Data.OleDb.OleDbConnection.GetSchema*>
  Describes the `GetSchema` method of the <xref:System.Data.OleDb.OleDbConnection> class.
 
- <xref:System.Data.OracleClient.OracleConnection.GetSchema%2A>
+ <xref:System.Data.OracleClient.OracleConnection.GetSchema*>
  Describes the `GetSchema` method of the <xref:System.Data.OracleClient.OracleConnection> class.
 
- <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A>
+ <xref:System.Data.SqlClient.SqlConnection.GetSchema*>
  Describes the `GetSchema` method of the <xref:System.Data.SqlClient.SqlConnection> class.
 
- <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A>
+ <xref:System.Data.Common.DbDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.Common.DbDataReader> class.
 
- <xref:System.Data.Odbc.OdbcDataReader.GetSchemaTable%2A>
+ <xref:System.Data.Odbc.OdbcDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.Odbc.OdbcDataReader> class.
 
- <xref:System.Data.OleDb.OleDbDataReader.GetSchemaTable%2A>
+ <xref:System.Data.OleDb.OleDbDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.OleDb.OleDbDataReader> class.
 
- <xref:System.Data.OracleClient.OracleDataReader.GetSchemaTable%2A>
+ <xref:System.Data.OracleClient.OracleDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.OracleClient.OracleDataReader> class.
 
- <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A>
+ <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.SqlClient.SqlDataReader> class.
 
 ## See also

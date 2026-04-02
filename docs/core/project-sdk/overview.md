@@ -2,7 +2,8 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 10/15/2024
+ms.date: 03/20/2026
+ai-usage: ai-assisted
 ms.topic: concept-article
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
@@ -97,9 +98,21 @@ If the project has multiple target frameworks, focus the results of the command 
 
 ## Default includes and excludes
 
-The default includes and excludes for [`Compile` items](/visualstudio/msbuild/common-msbuild-project-items#compile), [embedded resources](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource), and [`None` items](/visualstudio/msbuild/common-msbuild-project-items#none) are defined in the SDK. Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This behavior makes the project file smaller and easier to understand and edit by hand, if needed.
+The SDK automatically manages three types of items for your project:
 
-The following table shows which elements and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET SDK:
+- [`Compile` items](/visualstudio/msbuild/common-msbuild-project-items#compile): source code files (`*.cs`, `*.vb`, and other language-specific extensions) that get compiled into your assembly.
+- [`EmbeddedResource` items](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource): `*.resx` files that get embedded into your assembly.
+- [`None` items](/visualstudio/msbuild/common-msbuild-project-items#none): all other files tracked in the project, such as configuration and content files, that aren't compiled or embedded.
+
+Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This behavior makes the project file smaller and easier to understand and edit by hand, if needed.
+
+The SDK uses [glob](https://en.wikipedia.org/wiki/Glob_(programming)) patterns to determine which files belong to each item type:
+
+- **Include glob**: Specifies which files to add to the item type.
+- **Exclude glob**: Specifies which files to skip when applying the include glob.
+- **Remove glob**: Specifies which files to remove from items that were already added by the include glob.
+
+The following table shows the default glob patterns for each item type in the .NET SDK:
 
 | Element | Include glob | Exclude glob | Remove glob |
 |---------|--------------|--------------|-------------|
@@ -107,12 +120,15 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 | EmbeddedResource  | \*\*/\*.resx | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc | N/A |
 | None | \*\*/\* | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
+Because `None` uses `**/*` as its include glob, it would otherwise include *.cs* and *.resx* files that are already captured by `Compile` and `EmbeddedResource`. The remove glob (`**/*.cs; **/*.resx`) prevents those files from appearing in both item types at the same time.
+
 > [!NOTE]
 > The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).
 
 The .NET Desktop SDK has additional includes and excludes for WPF. For more information, see [WPF default includes and excludes](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
 
-If you explicitly define any of these items in your project file, you're likely to get a [NETSDK1022](../tools/sdk-errors/netsdk1022.md) build error. For information about how to resolve the error, see [NETSDK1022: Duplicate items were included](../tools/sdk-errors/netsdk1022.md).
+> [!WARNING]
+> Avoid defining `Compile`, `EmbeddedResource`, or `None` items that duplicate the SDK's default `Include` globs. Duplicating included files causes the build to include the same files twice, which results in a [NETSDK1022](../tools/sdk-errors/netsdk1022.md) build error. Customizations that use `Remove` or `Update`, or that add items after you set `EnableDefaultItems`, `EnableDefaultCompileItems`, or `EnableDefaultEmbeddedResourceItems` to `false`, are supported. For information about how to resolve the error, see [NETSDK1022: Duplicate items were included](../tools/sdk-errors/netsdk1022.md).
 
 ## Implicit using directives
 

@@ -53,7 +53,7 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 ### Inherited Property
 
- The <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a `true` (the default) or `false` flag. In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited%2A> value of `true`, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited%2A> value of `false`:
+ The <xref:System.AttributeUsageAttribute.Inherited?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a `true` (the default) or `false` flag. In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited*> value of `true`, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited*> value of `false`:
 
  [!code-csharp[Conceptual.Attributes.Usage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#7)]
  [!code-vb[Conceptual.Attributes.Usage#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#7)]
@@ -70,9 +70,9 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 ### AllowMultiple Property
 
- The <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to `true`, multiple instances are allowed. If set to `false` (the default), only one instance is allowed.
+ The <xref:System.AttributeUsageAttribute.AllowMultiple?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to `true`, multiple instances are allowed. If set to `false` (the default), only one instance is allowed.
 
- In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple%2A> value of `false`, while `YourAttribute` has a value of `true`:
+ In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple*> value of `false`, while `YourAttribute` has a value of `true`:
 
  [!code-csharp[Conceptual.Attributes.Usage#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#11)]
  [!code-vb[Conceptual.Attributes.Usage#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#11)]
@@ -82,7 +82,7 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
  [!code-csharp[Conceptual.Attributes.Usage#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#13)]
  [!code-vb[Conceptual.Attributes.Usage#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#13)]
 
- If both the <xref:System.AttributeUsageAttribute.AllowMultiple%2A> property and the <xref:System.AttributeUsageAttribute.Inherited%2A> property are set to `true`, a class that's inherited from another class can inherit an attribute and have another instance of the same attribute applied in the same child class. If <xref:System.AttributeUsageAttribute.AllowMultiple%2A> is set to `false`, the values of any attributes in the parent class will be overwritten by new instances of the same attribute in the child class.
+ If both the <xref:System.AttributeUsageAttribute.AllowMultiple> property and the <xref:System.AttributeUsageAttribute.Inherited> property are set to `true`, a class that's inherited from another class can inherit an attribute and have another instance of the same attribute applied in the same child class. If <xref:System.AttributeUsageAttribute.AllowMultiple*> is set to `false`, the values of any attributes in the parent class will be overwritten by new instances of the same attribute in the child class.
 
 ## Declaring the Attribute Class
 

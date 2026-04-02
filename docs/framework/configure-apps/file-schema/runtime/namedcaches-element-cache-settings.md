@@ -10,7 +10,7 @@ ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
 ---
 # `<namedCaches>` Element (Cache Settings)
 
-Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.
+Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.
 
 [`<configuration>`](../configuration-element.md)\
 &nbsp;&nbsp;[`<system.runtime.caching>`](system-runtime-caching-element-cache-settings.md)\
@@ -62,7 +62,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
 
  The memory cache configuration section of the Web.config file can contain `add`, `remove`, and `clear` attributes for the `namedCaches` collection. Each `namedCaches` entry is uniquely identified by the `name` attribute.
 
- You can retrieve instances of memory cache entries by referencing the information in the application configuration files. By default, only the default cache instance has an entry in the configuration file. The default cache instance is the instance that is returned from the <xref:System.Runtime.Caching.MemoryCache.Default%2A> property.
+ You can retrieve instances of memory cache entries by referencing the information in the application configuration files. By default, only the default cache instance has an entry in the configuration file. The default cache instance is the instance that is returned from the <xref:System.Runtime.Caching.MemoryCache.Default> property.
 
  If you set the name attribute to "Default", the element uses the default memory cache instance.
 

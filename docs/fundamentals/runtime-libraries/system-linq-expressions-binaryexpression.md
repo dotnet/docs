@@ -70,4 +70,4 @@ The following tables summarize the factory methods that can be used to create a 
 |---------------|--------------------|
 |<xref:System.Linq.Expressions.ExpressionType.ArrayIndex>|<xref:System.Linq.Expressions.Expression.ArrayIndex*>|
 
-In addition, the <xref:System.Linq.Expressions.Expression.MakeBinary*> methods can also be used to create a <xref:System.Linq.Expressions.BinaryExpression>. These factory methods can be used to create a <xref:System.Linq.Expressions.BinaryExpression> of any node type that represents a binary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType*> specifies the desired node type.
+In addition, the <xref:System.Linq.Expressions.Expression.MakeBinary*> methods can also be used to create a <xref:System.Linq.Expressions.BinaryExpression>. These factory methods can be used to create a <xref:System.Linq.Expressions.BinaryExpression> of any node type that represents a binary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType> specifies the desired node type.

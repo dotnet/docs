@@ -1,10 +1,10 @@
 ---
 title: Install .NET Upgrade Assistant
-description: "Learn how to install .NET Upgrade Assistant as a Visual Studio extension or a .NET Global Tool. .NET Upgrade Assistant assists you when upgrading projects to the latest dependencies or when upgrading to a new .NET"
+description: "Learn how to install .NET Upgrade Assistant in Visual Studio or as a .NET Global Tool. .NET Upgrade Assistant assists you when upgrading projects to the latest dependencies or when upgrading to a new .NET"
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 10/08/2024
+ms.date: 03/19/2026
 
 #customer intent: As a developer, I want to install .NET Upgrade Assistant so that I can upgrade my projects.
 
@@ -12,47 +12,38 @@ ms.date: 10/08/2024
 
 # Install .NET Upgrade Assistant
 
-This article teaches you how to install .NET Upgrade Assistant using either the Visual Studio extension or the command-line interface (CLI) tool.
+This article teaches you how to install .NET Upgrade Assistant in Visual Studio or using the command-line interface (CLI) tool.
 
 [!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
 
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+).
 - [.NET SDK 8 or later](https://dotnet.microsoft.com/download/dotnet/).
 
 ## Methods
 
-.NET Upgrade Assistant can be installed as a Visual Studio extension or as a .NET Global Tool.
+.NET Upgrade Assistant is built into Visual Studio or can be installed as a .NET Global Tool.
 
-The Visual Studio extension runs inside Visual Studio, on the solution or project you have open. The .NET Global Tool is an interactive console application that runs on a solution or project file at or below the current directory.
+The Upgrade Assistant runs inside Visual Studio, on the solution or project you have open. The .NET Global Tool is an interactive console application that runs on a solution or project file at or below the current directory.
 
-If you want the streamlined experience of opening a project in Visual Studio and upgrading it, install the extension.
+If you want the streamlined experience of opening a project in Visual Studio and upgrading it, use the Upgrade Assistant.
 
-## Visual Studio Extension
+## Visual Studio
 
-The following steps install the Visual Studio extension.
-
-> [!TIP]
-> As an alternative to using the **Manage Extensions** feature of Visual Studio, you can download and run the extensions installer from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant).
+The following steps enable the legacy Upgrade Assistant in Visual Studio.
 
 01. Open Visual Studio.
 
     If the **Open Recent \ Get Started** window opens, select the **Continue without code** link.
 
-01. Select the **Extensions** > **Manage Extensions** menu to open the **Extension Manager** window.
-01. Select the **Browse** tab.
-01. Type **.NET upgrade assistant** into the search box.
-01. Select the **.NET Upgrade Assistant** item, and then select **Install**.
+01. Select the **Tools** > **Options** menu, which opens the **Options** window.
+01. Navigate to **All Settings** > **Projects and Solutions** > **Modernization**.
+01. Select the **Enable legacy Upgrade Assistant** item.
+01. Restart Visual Studio
 
-    :::image type="content" source="media/upgrade-assistant-install/visual-studio-manage-extensions.png" alt-text="The manage extensions window in Visual Studio, showing the .NET Upgrade Assistant.":::
-
-01. Once the extension finishes downloading, close Visual Studio to automatically start the installation.
-
-    :::image type="content" source="media/upgrade-assistant-install/install-prompt.png" alt-text="A prompt to install the .NET Upgrade Assistant extension.":::
-
-01. Select **Modify** and follow the instructions to install the extension.
+    :::image type="content" source="media/upgrade-assistant-install/enable.png" alt-text="A screen shot showing the options window in Visual Studio with the Modernization settings page open.":::
 
 ## .NET Global Tool
 
@@ -76,11 +67,9 @@ The following steps install .NET Upgrade Assistant as a .NET Global Tool. .NET U
 
 The following information helps you determine that .NET Upgrade Assistant is installed.
 
-- **Visual Studio Extension**
+- **Visual Studio**
 
-  There are two ways to determine if .NET Upgrade Assistant is installed as a Visual Studio extension. The quickest way is to right-click on any .NET or .NET Framework project in the **Solution Explorer** window and check for an **Upgrade** menu item.
-
-  Another way is to select the **Extensions** > **Manage Extensions** menu to open the **Extension Manager** window. Then, select the **Installed** tab and find it in the list of installed extensions.
+  To determine if .NET Upgrade Assistant is enabled, right-click on any .NET or .NET Framework project in the **Solution Explorer** window and check for an **Upgrade** menu item.
 
 - **.NET Global Tool**
 

@@ -58,5 +58,5 @@ For the size of separate shared memory, the DWORD FileMappingSize value in the r
 
 - <xref:System.Diagnostics.PerformanceCounter>
 - <xref:System.Diagnostics.PerformanceCounterCategory>
-- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A>
+- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime*>
 - <xref:System.Diagnostics.PerformanceCounterInstanceLifetime>

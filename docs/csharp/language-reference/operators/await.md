@@ -2,9 +2,9 @@
 title: "await operator - asynchronously wait for a task to complete"
 description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
 ms.date: 01/20/2026
-f1_keywords: 
+f1_keywords:
   - "await_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "await keyword [C#]"
   - "await [C#]"
 ---
@@ -14,7 +14,7 @@ The `await` operator suspends evaluation of the enclosing [async](../keywords/as
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns the `Task<byte[]>` instance, which represents an asynchronous operation that produces a byte array when it completes. Until the operation completes, the `await` operator suspends the `DownloadDocsMainPageAsync` method. When `DownloadDocsMainPageAsync` gets suspended, control is returned to the `Main` method, which is the caller of `DownloadDocsMainPageAsync`. The `Main` method executes until it needs the result of the asynchronous operation performed by the `DownloadDocsMainPageAsync` method. When <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> gets all the bytes, the rest of the `DownloadDocsMainPageAsync` method is evaluated. After that, the rest of the `Main` method is evaluated.
+In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync*?displayProperty=nameWithType> method returns the `Task<byte[]>` instance, which represents an asynchronous operation that produces a byte array when it completes. Until the operation completes, the `await` operator suspends the `DownloadDocsMainPageAsync` method. When `DownloadDocsMainPageAsync` gets suspended, control is returned to the `Main` method, which is the caller of `DownloadDocsMainPageAsync`. The `Main` method executes until it needs the result of the asynchronous operation performed by the `DownloadDocsMainPageAsync` method. When <xref:System.Net.Http.HttpClient.GetByteArrayAsync*> gets all the bytes, the rest of the `DownloadDocsMainPageAsync` method is evaluated. After that, the rest of the `Main` method is evaluated.
 
 :::code language="csharp" source="snippets/shared/AwaitOperator.cs":::
 
@@ -27,9 +27,9 @@ The preceding example uses the [async `Main` method](../../fundamentals/program-
 
 You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous local function, inside the block of a [lock statement](../statements/lock.md), and in an [unsafe](../keywords/unsafe.md) context.
 
-The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharpstandard/standard/expressions.md#12992-awaitable-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task`1>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask`1>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharpstandard/standard/expressions.md#12992-awaitable-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception.
+The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task`1> or <xref:System.Threading.Tasks.ValueTask`1>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception.
 
 ## Asynchronous streams and disposables
 
@@ -39,7 +39,7 @@ You use the `await using` statement to work with an asynchronously disposable ob
 
 ## await operator in the Main method
 
-The [`Main` method](../../fundamentals/program-structure/main-command-line.md) serves as the application entry point. It can return `Task` or `Task<int>`, which makes it async. By making the `Main` method async, you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that the corresponding async method returns. For asynchronous operations that don't produce a value, call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
+The [`Main` method](../../fundamentals/program-structure/main-command-line.md) serves as the application entry point. It can return `Task` or `Task<int>`, which makes it async. By making the `Main` method async, you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, retrieve the value of the <xref:System.Threading.Tasks.Task`1.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task`1> instance that the corresponding async method returns. For asynchronous operations that don't produce a value, call the <xref:System.Threading.Tasks.Task.Wait*?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
 
 ## C# language specification
 

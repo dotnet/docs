@@ -16,7 +16,7 @@ The LINQ to Objects implementations of the standard query operator methods execu
 
 ### Deferred
 
- Deferred execution means that the operation is not performed at the point in the code where the query is declared. The operation is performed only when the query variable is enumerated, for example by using a `For Each` statement. This means that the results of executing the query depend on the contents of the data source when the query is executed rather than when the query is defined. If the query variable is enumerated multiple times, the results might differ every time. Almost all the standard query operators whose return type is <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IOrderedEnumerable%601> execute in a deferred manner.
+ Deferred execution means that the operation is not performed at the point in the code where the query is declared. The operation is performed only when the query variable is enumerated, for example by using a `For Each` statement. This means that the results of executing the query depend on the contents of the data source when the query is executed rather than when the query is defined. If the query variable is enumerated multiple times, the results might differ every time. Almost all the standard query operators whose return type is <xref:System.Collections.Generic.IEnumerable`1> or <xref:System.Linq.IOrderedEnumerable`1> execute in a deferred manner.
 
  Query operators that use deferred execution can be additionally classified as streaming or non-streaming.
 
@@ -37,56 +37,56 @@ The LINQ to Objects implementations of the standard query operator methods execu
 
 |Standard Query Operator|Return Type|Immediate Execution|Deferred Streaming Execution|Deferred Non-Streaming Execution|
 |-----------------------------|-----------------|-------------------------|----------------------------------|---------------------------------------|
-|<xref:System.Linq.Enumerable.Aggregate%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.All%2A>|<xref:System.Boolean>|X|||
-|<xref:System.Linq.Enumerable.Any%2A>|<xref:System.Boolean>|X|||
-|<xref:System.Linq.Enumerable.AsEnumerable%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Average%2A>|Single numeric value|X|||
-|<xref:System.Linq.Enumerable.Cast%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Concat%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Contains%2A>|<xref:System.Boolean>|X|||
-|<xref:System.Linq.Enumerable.Count%2A>|<xref:System.Int32>|X|||
-|<xref:System.Linq.Enumerable.DefaultIfEmpty%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Distinct%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.ElementAt%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.ElementAtOrDefault%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.Empty%2A>|<xref:System.Collections.Generic.IEnumerable%601>|X|||
-|<xref:System.Linq.Enumerable.Except%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X|X|
-|<xref:System.Linq.Enumerable.First%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.FirstOrDefault%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.GroupBy%2A>|<xref:System.Collections.Generic.IEnumerable%601>|||X|
-|<xref:System.Linq.Enumerable.GroupJoin%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X|X|
-|<xref:System.Linq.Enumerable.Intersect%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X|X|
-|<xref:System.Linq.Enumerable.Join%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X|X|
-|<xref:System.Linq.Enumerable.Last%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.LastOrDefault%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.LongCount%2A>|<xref:System.Int64>|X|||
-|<xref:System.Linq.Enumerable.Max%2A>|Single numeric value, TSource, or TResult|X|||
-|<xref:System.Linq.Enumerable.Min%2A>|Single numeric value, TSource, or TResult|X|||
-|<xref:System.Linq.Enumerable.OfType%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.OrderBy%2A>|<xref:System.Linq.IOrderedEnumerable%601>|||X|
-|<xref:System.Linq.Enumerable.OrderByDescending%2A>|<xref:System.Linq.IOrderedEnumerable%601>|||X|
-|<xref:System.Linq.Enumerable.Range%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Repeat%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Reverse%2A>|<xref:System.Collections.Generic.IEnumerable%601>|||X|
-|<xref:System.Linq.Enumerable.Select%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.SelectMany%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.SequenceEqual%2A>|<xref:System.Boolean>|X|||
-|<xref:System.Linq.Enumerable.Single%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.SingleOrDefault%2A>|TSource|X|||
-|<xref:System.Linq.Enumerable.Skip%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.SkipWhile%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Sum%2A>|Single numeric value|X|||
-|<xref:System.Linq.Enumerable.Take%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.TakeWhile%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.ThenBy%2A>|<xref:System.Linq.IOrderedEnumerable%601>|||X|
-|<xref:System.Linq.Enumerable.ThenByDescending%2A>|<xref:System.Linq.IOrderedEnumerable%601>|||X|
-|<xref:System.Linq.Enumerable.ToArray%2A>|TSource array|X|||
-|<xref:System.Linq.Enumerable.ToDictionary%2A>|<xref:System.Collections.Generic.Dictionary%602>|X|||
-|<xref:System.Linq.Enumerable.ToList%2A>|<xref:System.Collections.Generic.IList%601>|X|||
-|<xref:System.Linq.Enumerable.ToLookup%2A>|<xref:System.Linq.ILookup%602>|X|||
-|<xref:System.Linq.Enumerable.Union%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
-|<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||
+|<xref:System.Linq.Enumerable.Aggregate*>|TSource|X|||
+|<xref:System.Linq.Enumerable.All*>|<xref:System.Boolean>|X|||
+|<xref:System.Linq.Enumerable.Any*>|<xref:System.Boolean>|X|||
+|<xref:System.Linq.Enumerable.AsEnumerable*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Average*>|Single numeric value|X|||
+|<xref:System.Linq.Enumerable.Cast*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Concat*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Contains*>|<xref:System.Boolean>|X|||
+|<xref:System.Linq.Enumerable.Count*>|<xref:System.Int32>|X|||
+|<xref:System.Linq.Enumerable.DefaultIfEmpty*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Distinct*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.ElementAt*>|TSource|X|||
+|<xref:System.Linq.Enumerable.ElementAtOrDefault*>|TSource|X|||
+|<xref:System.Linq.Enumerable.Empty*>|<xref:System.Collections.Generic.IEnumerable`1>|X|||
+|<xref:System.Linq.Enumerable.Except*>|<xref:System.Collections.Generic.IEnumerable`1>||X|X|
+|<xref:System.Linq.Enumerable.First*>|TSource|X|||
+|<xref:System.Linq.Enumerable.FirstOrDefault*>|TSource|X|||
+|<xref:System.Linq.Enumerable.GroupBy*>|<xref:System.Collections.Generic.IEnumerable`1>|||X|
+|<xref:System.Linq.Enumerable.GroupJoin*>|<xref:System.Collections.Generic.IEnumerable`1>||X|X|
+|<xref:System.Linq.Enumerable.Intersect*>|<xref:System.Collections.Generic.IEnumerable`1>||X|X|
+|<xref:System.Linq.Enumerable.Join*>|<xref:System.Collections.Generic.IEnumerable`1>||X|X|
+|<xref:System.Linq.Enumerable.Last*>|TSource|X|||
+|<xref:System.Linq.Enumerable.LastOrDefault*>|TSource|X|||
+|<xref:System.Linq.Enumerable.LongCount*>|<xref:System.Int64>|X|||
+|<xref:System.Linq.Enumerable.Max*>|Single numeric value, TSource, or TResult|X|||
+|<xref:System.Linq.Enumerable.Min*>|Single numeric value, TSource, or TResult|X|||
+|<xref:System.Linq.Enumerable.OfType*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.OrderBy*>|<xref:System.Linq.IOrderedEnumerable`1>|||X|
+|<xref:System.Linq.Enumerable.OrderByDescending*>|<xref:System.Linq.IOrderedEnumerable`1>|||X|
+|<xref:System.Linq.Enumerable.Range*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Repeat*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Reverse*>|<xref:System.Collections.Generic.IEnumerable`1>|||X|
+|<xref:System.Linq.Enumerable.Select*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.SelectMany*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.SequenceEqual*>|<xref:System.Boolean>|X|||
+|<xref:System.Linq.Enumerable.Single*>|TSource|X|||
+|<xref:System.Linq.Enumerable.SingleOrDefault*>|TSource|X|||
+|<xref:System.Linq.Enumerable.Skip*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.SkipWhile*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Sum*>|Single numeric value|X|||
+|<xref:System.Linq.Enumerable.Take*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.TakeWhile*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.ThenBy*>|<xref:System.Linq.IOrderedEnumerable`1>|||X|
+|<xref:System.Linq.Enumerable.ThenByDescending*>|<xref:System.Linq.IOrderedEnumerable`1>|||X|
+|<xref:System.Linq.Enumerable.ToArray*>|TSource array|X|||
+|<xref:System.Linq.Enumerable.ToDictionary*>|<xref:System.Collections.Generic.Dictionary`2>|X|||
+|<xref:System.Linq.Enumerable.ToList*>|<xref:System.Collections.Generic.IList`1>|X|||
+|<xref:System.Linq.Enumerable.ToLookup*>|<xref:System.Linq.ILookup`2>|X|||
+|<xref:System.Linq.Enumerable.Union*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
+|<xref:System.Linq.Enumerable.Where*>|<xref:System.Collections.Generic.IEnumerable`1>||X||
 
 ## See also
 

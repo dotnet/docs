@@ -51,7 +51,7 @@ These methods enable you to instantiate a <xref:System.Numerics.BigInteger> obje
   :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet6":::
   :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet6":::
 
-The uninitialized value of a <xref:System.Numerics.BigInteger> is <xref:System.Numerics.BigInteger.Zero*>.
+The uninitialized value of a <xref:System.Numerics.BigInteger> is <xref:System.Numerics.BigInteger.Zero>.
 
 ## Perform operations on BigInteger values
 

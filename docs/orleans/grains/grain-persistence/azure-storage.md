@@ -16,7 +16,7 @@ The Azure Storage grain persistence provider supports both [Azure Blob Storage](
 
 Install the [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) package from NuGet. The Azure Table Storage provider stores state in a table row, splitting the state across multiple columns if it exceeds the limits of a single column. Each row can hold a maximum of 1 megabyte, as [imposed by Azure Table Storage](/azure/storage/common/storage-scalability-targets#azure-table-storage-scale-targets).
 
-Configure the Azure Table Storage grain persistence provider using the <xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableGrainStorage%2A?displayProperty=nameWithType> extension method.
+Configure the Azure Table Storage grain persistence provider using the <xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableGrainStorage*?displayProperty=nameWithType> extension method.
 
 ### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
@@ -60,7 +60,7 @@ siloBuilder.AddAzureTableGrainStorage(
 
 The Azure Blob Storage provider stores state in a blob.
 
-Configure the Azure Blob Storage grain persistence provider using the <xref:Orleans.Hosting.AzureBlobSiloBuilderExtensions.AddAzureBlobGrainStorage%2A?displayProperty=nameWithType> extension method.
+Configure the Azure Blob Storage grain persistence provider using the <xref:Orleans.Hosting.AzureBlobSiloBuilderExtensions.AddAzureBlobGrainStorage*?displayProperty=nameWithType> extension method.
 
 ### [Microsoft Entra ID (recommended)](#tab/entra-id)
 
@@ -183,14 +183,14 @@ For comprehensive documentation on Orleans and .NET Aspire integration, see [Orl
 
 Install the [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) package from NuGet. The Azure Table Storage provider stores state in a table row, splitting the state across multiple columns if it exceeds the limits of a single column. Each row can hold a maximum of 1 megabyte, as [imposed by Azure Table Storage](/azure/storage/common/storage-scalability-targets#azure-table-storage-scale-targets).
 
-Configure the Azure Table Storage grain persistence provider using the <xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableGrainStorage%2A?displayProperty=nameWithType> extension method.
+Configure the Azure Table Storage grain persistence provider using the <xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableGrainStorage*?displayProperty=nameWithType> extension method.
 
 ```csharp
 siloBuilder.AddAzureTableGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.ConnectionString = 
+        options.ConnectionString =
             "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1";
     });
 ```
@@ -199,14 +199,14 @@ siloBuilder.AddAzureTableGrainStorage(
 
 The Azure Blob Storage provider stores state in a blob.
 
-Configure the Azure Blob Storage grain persistence provider using the <xref:Orleans.Hosting.AzureBlobSiloBuilderExtensions.AddAzureBlobGrainStorage%2A?displayProperty=nameWithType> extension method.
+Configure the Azure Blob Storage grain persistence provider using the <xref:Orleans.Hosting.AzureBlobSiloBuilderExtensions.AddAzureBlobGrainStorage*?displayProperty=nameWithType> extension method.
 
 ```csharp
 siloBuilder.AddAzureBlobGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.ConnectionString = 
+        options.ConnectionString =
              "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1";
     });
 ```

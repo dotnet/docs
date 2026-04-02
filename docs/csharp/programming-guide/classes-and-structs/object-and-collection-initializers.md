@@ -2,7 +2,7 @@
 title: "Object and collection initializers"
 description: Object initializers in C# assign values to accessible fields or properties of an object at creation after invoking a constructor.
 ms.date: 02/04/2026
-helpviewer_keywords: 
+helpviewer_keywords:
   - "object initializers [C#]"
   - "collection initializers [C#]"
 ---
@@ -166,7 +166,7 @@ The following collection initializer uses object initializers to initialize obje
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializer":::
 
-You can specify [null](../../language-reference/keywords/null.md) as an element in a collection initializer if the collection's `Add` method allows it.  
+You can specify [null](../../language-reference/keywords/null.md) as an element in a collection initializer if the collection's `Add` method allows it.
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithNull":::
 
@@ -182,11 +182,11 @@ You can specify indexed elements if the collection supports read / write indexin
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="DictionaryIndexerInitializer":::
 
-The preceding sample generates code that calls the <xref:System.Collections.Generic.Dictionary%602.Item(%600)> to set the values. You can also initialize dictionaries and other associative containers by using the following syntax. Instead of indexer syntax, with parentheses and an assignment, it uses an object with multiple values:
+The preceding sample generates code that calls the <xref:System.Collections.Generic.Dictionary`2.Item(`0)> to set the values. You can also initialize dictionaries and other associative containers by using the following syntax. Instead of indexer syntax, with parentheses and an assignment, it uses an object with multiple values:
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="DictionaryAddInitializer":::
 
-This initializer example calls <xref:System.Collections.Generic.Dictionary%602.Add(%600,%601)> to add the three items into the dictionary. These two different ways to initialize associative collections have slightly different behavior because of the method calls the compiler generates. Both variants work with the `Dictionary` class. Other types might only support one or the other based on their public API.
+This initializer example calls <xref:System.Collections.Generic.Dictionary`2.Add(`0,`1)> to add the three items into the dictionary. These two different ways to initialize associative collections have slightly different behavior because of the method calls the compiler generates. Both variants work with the `Dictionary` class. Other types might only support one or the other based on their public API.
 
 ### Collection expression arguments
 

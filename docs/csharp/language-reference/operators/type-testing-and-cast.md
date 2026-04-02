@@ -3,14 +3,14 @@ title: "Type-testing operators and cast expressions test the runtime type of an 
 description: "The `is` and `as` operators test the type of an object. The `typeof` keyword returns the type of a variable. Casts try to convert an object to a variable of a different type."
 ms.date: 01/20/2026
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "is_CSharpKeyword"
   - "as_CSharpKeyword"
   - "()_CSharpKeyword"
   - "typeof_CSharpKeyword"
   - "as"
   - "typeof"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "type-testing operators [C#]"
   - "conversion operators [C#]"
   - "type conversion [C#]"
@@ -45,7 +45,7 @@ The `is` operator returns `true` when an expression result is non-null and any o
 
 - The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. This condition covers inheritance relationships and interface implementations.
 
-- The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> is `true`.
+- The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable`1.HasValue?displayProperty=nameWithType> is `true`.
 
 - A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the run-time type of an expression result to type `T` when the expression isn't an instance of a `ref struct`.
 
@@ -129,7 +129,7 @@ You can also use the `typeof` operator with unbound generic types. The name of a
 
 :::code language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeOfUnboundGeneric":::
 
-An expression can't be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
+An expression can't be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType*?displayProperty=nameWithType> method.
 
 ### Type testing with the `typeof` operator
 

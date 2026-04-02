@@ -58,8 +58,8 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
 ## See also
 
 - <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
-- <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>
-- <xref:System.ServiceModel.Configuration.PeerSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.PeerSecuritySettings.Transport*>
+- <xref:System.ServiceModel.Configuration.PeerSecurityElement.Transport*>
 - <xref:System.ServiceModel.PeerTransportSecuritySettings>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

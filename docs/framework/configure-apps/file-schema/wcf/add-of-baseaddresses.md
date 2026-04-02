@@ -50,5 +50,5 @@ Represents a configuration element that specifies the base addresses used by the
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
-- <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
+- <xref:System.ServiceModel.ServiceHostBase.BaseAddresses*>
 - [Hosting](../../../wcf/feature-details/hosting.md)

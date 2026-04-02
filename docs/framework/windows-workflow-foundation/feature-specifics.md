@@ -63,7 +63,7 @@ A correlation is one of two things:
 
 - An example of correlation used to group messages together is a Request-Reply correlation that groups messages together.
 
-  - On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.
+  - On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.
 
   - Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.
 
@@ -87,13 +87,13 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 - Standard endpoints define reusable preconfigured endpoints, which have fixed values for one or more of the endpoint properties (address, binding and contract), and allow defining custom properties.
 
-- Finally, the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows you to do central management of WCF client configuration, useful in scenarios in which configuration is selected or changed after the application domain load time.
+- Finally, the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory`1> allows you to do central management of WCF client configuration, useful in scenarios in which configuration is selected or changed after the application domain load time.
 
 ### Getting Started
 
 - [A Developer's Guide to WCF 4.0](/previous-versions/dotnet/articles/ee354381(v=msdn.10))
 
-- [Configuration Channel Factory](xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601)
+- [Configuration Channel Factory](xref:System.ServiceModel.Configuration.ConfigurationChannelFactory`1)
 
 - [Standard Endpoint Element](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
@@ -155,7 +155,7 @@ Flowchart is a well-known paradigm to visually represent domain problems. It is 
 
   - <xref:System.Activities.Statements.FlowStep>
 
-  - <xref:System.Activities.Statements.FlowSwitch%601>
+  - <xref:System.Activities.Statements.FlowSwitch`1>
 
 - Samples:
 
@@ -175,11 +175,11 @@ A flowchart activity can be used to implement a guessing game. The guessing game
 
 - <xref:System.Activities.Statements.While>
 
-- <xref:System.Activities.Statements.Switch%601>
+- <xref:System.Activities.Statements.Switch`1>
 
 - <xref:System.Activities.Statements.TryCatch>
 
-- <xref:System.Activities.Statements.Assign%601>
+- <xref:System.Activities.Statements.Assign`1>
 
 - <xref:System.Activities.Statements.If>
 
@@ -207,7 +207,7 @@ Procedural activities provide a mechanism to model sequential control flow using
 
 - <xref:System.Activities.Statements.Parallel>: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn't an established order for the approvals; they can occur at any time while the document is in the "approval pending" phase. When a user submits a document for review, it must be approved by their direct manager, the intranet administrator, and the internal communications manager.
 
-- <xref:System.Activities.Statements.ParallelForEach%601>: A WF application manages corporate buys within a large company. The corporate rules dictate that before planning any purchase operation, the valuations of three different vendors is required. An employee from the buying department selects three vendors from the company's vendor list. After these vendors have been selected and notified, the company will wait for their economic proposals. The proposals can come in any order. To implement this scenario in WF, we use a <xref:System.Activities.Statements.ParallelForEach%601> that will iterate through our collection of vendors and ask for their economic proposals. After all offers are gathered, the best one is selected and displayed.
+- <xref:System.Activities.Statements.ParallelForEach`1>: A WF application manages corporate buys within a large company. The corporate rules dictate that before planning any purchase operation, the valuations of three different vendors is required. An employee from the buying department selects three vendors from the company's vendor list. After these vendors have been selected and notified, the company will wait for their economic proposals. The proposals can come in any order. To implement this scenario in WF, we use a <xref:System.Activities.Statements.ParallelForEach`1> that will iterate through our collection of vendors and ask for their economic proposals. After all offers are gathered, the best one is selected and displayed.
 
 ## InvokeMethod
 
@@ -243,7 +243,7 @@ A set of activities needs to be executed, and specific logic needs to be execute
 
 ## Pick activity
 
-The <xref:System.Activities.Statements.Pick> Activity provides event-based control flow modeling in WF. <xref:System.Activities.Statements.Pick> contains many branches where each branch waits for a particular event to occur before running. In this setup, a <xref:System.Activities.Statements.Pick> behaves similar to a <xref:System.Activities.Statements.Switch%601> to which the Activity will execute only one of the set of events it is listening. Each branch is event driven and the event that occurs runs the corresponding branch first. All other branches cancel and stop listening for events.
+The <xref:System.Activities.Statements.Pick> Activity provides event-based control flow modeling in WF. <xref:System.Activities.Statements.Pick> contains many branches where each branch waits for a particular event to occur before running. In this setup, a <xref:System.Activities.Statements.Pick> behaves similar to a <xref:System.Activities.Statements.Switch`1> to which the Activity will execute only one of the set of events it is listening. Each branch is event driven and the event that occurs runs the corresponding branch first. All other branches cancel and stop listening for events.
 
 ### Getting Started
 
@@ -255,7 +255,7 @@ The <xref:System.Activities.Statements.Pick> Activity provides event-based contr
 
 ### Pick Scenario
 
-A user needs to be prompted for input. Under normal circumstances, the developer would use a method call like <xref:System.Console.ReadLine%2A> to prompt for a user's input. The problem with this setup is that the program waits until the user enters something. In this scenario, a time-out is needed to unblock a blocking activity. A common scenario is one that requires a task to be completed within a given time duration. Timing out a blocking activity is a scenario where Pick adds a lot of value.
+A user needs to be prompted for input. Under normal circumstances, the developer would use a method call like <xref:System.Console.ReadLine*> to prompt for a user's input. The problem with this setup is that the program waits until the user enters something. In this scenario, a time-out is needed to unblock a blocking activity. A common scenario is one that requires a task to be completed within a given time duration. Timing out a blocking activity is a scenario where Pick adds a lot of value.
 
 ## WCF Routing Service
 
@@ -275,7 +275,7 @@ The routing service in .NET 4 is designed to make these problems easier to solve
 
 3. Error handling (the router catches communication exceptions and fails over to backup endpoints)
 
-4. Dynamic (in memory) update of <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601> and Routing Configuration.
+4. Dynamic (in memory) update of <xref:System.ServiceModel.Dispatcher.MessageFilterTable`1> and Routing Configuration.
 
 ### Getting Started
 

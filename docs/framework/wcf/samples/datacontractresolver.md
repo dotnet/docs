@@ -94,7 +94,7 @@ public void deserialize(Type type)
 }
 ```
 
-Since the custom <xref:System.Runtime.Serialization.DataContractResolver> is passed in to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, the <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> is called during serialization to map a CLR type to an equivalent `xsi:type`. Similarly the <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> is called during deserialization to map the `xsi:type` to an equivalent CLR type. In this sample, the <xref:System.Runtime.Serialization.DataContractResolver> is defined as shown in the following example.
+Since the custom <xref:System.Runtime.Serialization.DataContractResolver> is passed in to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, the <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType*> is called during serialization to map a CLR type to an equivalent `xsi:type`. Similarly the <xref:System.Runtime.Serialization.DataContractResolver.ResolveName*> is called during deserialization to map the `xsi:type` to an equivalent CLR type. In this sample, the <xref:System.Runtime.Serialization.DataContractResolver> is defined as shown in the following example.
 
 The following code example is a class deriving from <xref:System.Runtime.Serialization.DataContractResolver>.
 

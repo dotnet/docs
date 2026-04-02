@@ -64,6 +64,6 @@ Specifies a service's credentials based on user name and password.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.UserNameServiceElement>
-- <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>
+- <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication>
 - <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.UserNameAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.UserNameAuthentication>

@@ -48,7 +48,7 @@ We no longer use the `~/samples/snippets/` location for code snippets. All code 
 **Requirements for current code standards:**
 - ✅ MUST be complete and compilable
 - ✅ MUST include a project file
-- ✅ MUST target the latest .NET version
+- ✅ MUST target the latest .NET or .NET Framework version as appropriate based on article context
 - ✅ MUST provide BOTH C# and Visual Basic versions
 - ✅ MUST use appropriate syntax for the target framework
 - ✅ MUST use meaningful, descriptive snippet identifiers in CamelCase format
@@ -75,6 +75,9 @@ We no longer use the `~/samples/snippets/` location for code snippets. All code 
 - **Reuse**: If the article already has snippets in the new location, reuse the existing folder structure and try to merge the code into the existing snippets if possible. Use new classes and code files as needed. Code **ONLY** needs to compile, it doesn't have to run from the program main.
 - **Create**: If no existing folder structure exists for the article, create a new one following the pattern above.
 - **New projects**: **NEVER** create project files manually. Always use the `dotnet` CLI to ensure correct formatting and structure of new code. Projects should be console apps unless otherwise required (such as a Windows Forms-related snippet)
+  - Specify a meaningful project name with the `-n` parameter.
+    - Example 1: An article about clipboard handling, use `dotnet new console -n ClipboardExample`
+    - Example 2: An article about events would be `dotnet new console -n EventsOverview`
 
 ### 3. Migrate and update code
 - **Copy**: Copy only the snippet code (and any supporting code to compile the snippet) to the new location

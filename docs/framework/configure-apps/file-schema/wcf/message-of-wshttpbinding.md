@@ -86,8 +86,8 @@ Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbind
 ## See also
 
 - <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>
-- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>
-- <xref:System.ServiceModel.WSHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message*>
+- <xref:System.ServiceModel.WSHttpSecurity.Message*>
 - <xref:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

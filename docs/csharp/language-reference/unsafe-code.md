@@ -4,7 +4,7 @@ description: Learn about unsafe code, pointers, and function pointers. C# requir
 ms.date: 01/16/2026
 f1_keywords:
   - "functionPointer_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "security [C#], type safety"
   - "C# language, unsafe code"
   - "type safety [C#]"
@@ -171,7 +171,7 @@ This example accesses the elements of both arrays by using indices rather than a
 
 C# provides [`delegate`](builtin-types/reference-types.md#the-delegate-type) types to define safe function pointer objects. Invoking a delegate involves instantiating a type derived from <xref:System.Delegate?displayProperty=nameWithType> and making a virtual method call to its `Invoke` method. This virtual call uses the `callvirt` IL instruction. In performance critical code paths, using the `calli` IL instruction is more efficient.
 
-You can define a function pointer by using the `delegate*` syntax. The compiler calls the function by using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func%603?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
+You can define a function pointer by using the `delegate*` syntax. The compiler calls the function by using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func`3?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
 
 :::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UseDelegateOrPointer":::
 

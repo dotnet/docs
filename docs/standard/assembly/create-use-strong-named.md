@@ -55,7 +55,7 @@ The bypass feature applies to any assembly that is signed with a strong name and
 
 - Loaded into a fully trusted <xref:System.AppDomain>.
 
-- Loaded from a location under the <xref:System.AppDomainSetup.ApplicationBase%2A> property of that <xref:System.AppDomain>.
+- Loaded from a location under the <xref:System.AppDomainSetup.ApplicationBase> property of that <xref:System.AppDomain>.
 
 - Not delay-signed.
 

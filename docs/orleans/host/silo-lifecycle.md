@@ -60,7 +60,7 @@ Information, Orleans.Runtime.SiloLifecycleSubject, "Lifecycle observer Orleans.S
 
 ## Silo lifecycle participation
 
-Your application logic can participate in the silo's lifecycle by registering a participating service in the silo's service container. Register the service as an <xref:Orleans.ILifecycleParticipant%601>, where `T` is <xref:Orleans.Runtime.ISiloLifecycle>.
+Your application logic can participate in the silo's lifecycle by registering a participating service in the silo's service container. Register the service as an <xref:Orleans.ILifecycleParticipant`1>, where `T` is <xref:Orleans.Runtime.ISiloLifecycle>.
 
 ```csharp
 public interface ISiloLifecycle : ILifecycleObservable
@@ -74,7 +74,7 @@ public interface ILifecycleParticipant<TLifecycleObservable>
 }
 ```
 
-When the silo starts, all participants (`ILifecycleParticipant<ISiloLifecycle>`) in the container can participate by having their <xref:Orleans.ILifecycleParticipant%601.Participate%2A?displayProperty=nameWithType> behavior called. Once all have had the opportunity to participate, the silo's observable lifecycle starts all stages in order.
+When the silo starts, all participants (`ILifecycleParticipant<ISiloLifecycle>`) in the container can participate by having their <xref:Orleans.ILifecycleParticipant`1.Participate*?displayProperty=nameWithType> behavior called. Once all have had the opportunity to participate, the silo's observable lifecycle starts all stages in order.
 
 ### Example
 
@@ -118,7 +118,7 @@ siloBuilder.AddStartupTask(
     {
         var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
         logger.LogInformation("Silo is starting up...");
-        
+
         // Perform initialization logic, such as warming caches or validating configuration
         var config = serviceProvider.GetRequiredService<IConfiguration>();
         await ValidateExternalDependenciesAsync(config, cancellationToken);

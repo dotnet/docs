@@ -25,7 +25,7 @@ The methods used most often for tracing are the methods for writing output to li
 
 ### To write a complete line
 
-1. Call the <xref:System.Diagnostics.Trace.WriteLine%2A> or <xref:System.Diagnostics.Trace.WriteLineIf%2A> method.
+1. Call the <xref:System.Diagnostics.Trace.WriteLine*> or <xref:System.Diagnostics.Trace.WriteLineIf*> method.
 
      A carriage return is appended to the end of the message this method returns, so that the next message returned by **Write**, **WriteIf**, **WriteLine**, or **WriteLineIf** will begin on the following line:
 
@@ -44,7 +44,7 @@ The methods used most often for tracing are the methods for writing output to li
 
 ### To write a partial line
 
-1. Call the <xref:System.Diagnostics.Trace.Write%2A> or <xref:System.Diagnostics.Trace.WriteIf%2A> method.
+1. Call the <xref:System.Diagnostics.Trace.Write*> or <xref:System.Diagnostics.Trace.WriteIf*> method.
 
      The next message put out by a **Write**, **WriteIf**, **WriteLine**, or **WriteLineIf** will begin on the same line as the message put out by the **Write** or **WriteIf** statement:
 
@@ -65,7 +65,7 @@ The methods used most often for tracing are the methods for writing output to li
 
 ### To verify that certain conditions exist either before or after you execute a method
 
-1. Call the <xref:System.Diagnostics.Trace.Assert%2A> method.
+1. Call the <xref:System.Diagnostics.Trace.Assert*> method.
 
     ```vb
     Dim i As Integer = 4
@@ -78,14 +78,14 @@ The methods used most often for tracing are the methods for writing output to li
     ```
 
     > [!NOTE]
-    > You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code) and <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>.
+    > You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code) and <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>.
 
 ## See also
 
-- <xref:System.Diagnostics.Debug.WriteIf%2A?displayProperty=nameWithType>
-- <xref:System.Diagnostics.Debug.WriteLineIf%2A?displayProperty=nameWithType>
-- <xref:System.Diagnostics.Trace.WriteIf%2A?displayProperty=nameWithType>
-- <xref:System.Diagnostics.Trace.WriteLineIf%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.WriteIf*?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.WriteLineIf*?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Trace.WriteIf*?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Trace.WriteLineIf*?displayProperty=nameWithType>
 - [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
 - [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md)
 - [Trace Switches](trace-switches.md)

@@ -158,7 +158,7 @@ Orleans is a framework for building cloud-native apps and should be considered w
 
 Orleans provides a simple persistence model ensuring state availability before processing a request and maintaining consistency. Grains can have multiple named persistent data objects. For example, one might be called "profile" for a user's profile and another "inventory" for their inventory. This state can be stored in any storage system.
 
-While a grain runs, Orleans keeps the state in memory to serve read requests without accessing storage. When the grain updates its state, calling <xref:Orleans.Core.IStorage.WriteStateAsync%2A?displayProperty=nameWithType> ensures the backing store updates for durability and consistency.
+While a grain runs, Orleans keeps the state in memory to serve read requests without accessing storage. When the grain updates its state, calling <xref:Orleans.Core.IStorage.WriteStateAsync*?displayProperty=nameWithType> ensures the backing store updates for durability and consistency.
 
 For more information, see [Grain persistence](grains/grain-persistence/index.md).
 

@@ -54,7 +54,7 @@ The following runsettings entries let you configure how MSTest behaves.
 </TestRunParameters>
 ```
 
-Test run parameters provide a way to define variables and values that are available to the tests at runtime. Access the parameters using the MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> property:
+Test run parameters provide a way to define variables and values that are available to the tests at runtime. Access the parameters using the MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType> property:
 
 ```csharp
 private string _appUrl;

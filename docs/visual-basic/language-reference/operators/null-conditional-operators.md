@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # ?. and ?() null-conditional operators (Visual Basic)
 
-Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`. Note that in expressions that ordinarily return value types, the null-conditional operator returns a <xref:System.Nullable%601>.
+Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`. Note that in expressions that ordinarily return value types, the null-conditional operator returns a <xref:System.Nullable`1>.
 
 These operators help you write less code to handle null checks, especially when descending into data structures. For example:
 

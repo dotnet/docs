@@ -39,7 +39,7 @@ dotnet add package OpenAI
 
 A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. For example, `ServiceBusClient` can register additional `ServiceBusSender` subclients for publishing messages or `ServiceBusReceiver` subclients for consuming messages.
 
-In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
+In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method to register a client for each service. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
@@ -57,10 +57,10 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 In the preceding code:
 
-* Key Vault Secrets, Blob Storage, and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri`- and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
+* Key Vault Secrets, Blob Storage, and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient*>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient*> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace*>, respectively. The `Uri`- and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
 * Each registered client automatically uses <xref:Azure.Identity.DefaultAzureCredential> for `TokenCredential` unless you configure a different type of credential (for example, using `WithCredential`).
 * Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
-* A `ResponsesClient` is registered using a custom client factory via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> method, which provides control over how a client instance is created. Custom client factories are useful in the following cases:
+* A `ResponsesClient` is registered using a custom client factory via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient*> method, which provides control over how a client instance is created. Custom client factories are useful in the following cases:
   * You need to use other dependencies during the client construction.
   * A registration extension method doesn't exist for the service client you want to register.
 
@@ -209,7 +209,7 @@ In the preceding JSON sample:
 
 ## Configure multiple service clients with different names
 
-Imagine you have two storage accounts: one for private information and another for public information. Your app transfers data from the public to the private storage account after some operation. You need to have two storage service clients. To differentiate those two clients, use the <xref:Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithName%2A> extension method:
+Imagine you have two storage accounts: one for private information and another for public information. Your app transfers data from the public to the private storage account after some operation. You need to have two storage service clients. To differentiate those two clients, use the <xref:Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithName*> extension method:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -223,7 +223,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 });
 ```
 
-Using an ASP.NET Core controller as an example, access the named service client using the <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601> interface:
+Using an ASP.NET Core controller as an example, access the named service client using the <xref:Microsoft.Extensions.Azure.IAzureClientFactory`1> interface:
 
 ```csharp
 public class HomeController : Controller

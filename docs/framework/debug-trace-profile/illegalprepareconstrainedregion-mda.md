@@ -14,7 +14,7 @@ ms.assetid: 2f9b5031-f910-4e01-a196-f89eab313eaf
 
 [!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
-The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activated when a <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=nameWithType> method call does not immediately precede the `try` statement of the exception handler. This restriction is at the MSIL level, so it is permissible to have non-code-generating source between the call and the `try`, such as comments.
+The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activated when a <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions*?displayProperty=nameWithType> method call does not immediately precede the `try` statement of the exception handler. This restriction is at the MSIL level, so it is permissible to have non-code-generating source between the call and the `try`, such as comments.
 
 ## Symptoms
 
@@ -22,11 +22,11 @@ The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activ
 
 ## Cause
 
- The preparation pattern for a CER is not followed correctly.  This is an error event. The <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> method call used to mark exception handlers as introducing a CER in their `catch`/`finally`/`fault`/`filter` blocks must be used immediately before the `try` statement.
+ The preparation pattern for a CER is not followed correctly.  This is an error event. The <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions*> method call used to mark exception handlers as introducing a CER in their `catch`/`finally`/`fault`/`filter` blocks must be used immediately before the `try` statement.
 
 ## Resolution
 
- Ensure that the call to <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> happens immediately before the `try` statement.
+ Ensure that the call to <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions*> happens immediately before the `try` statement.
 
 ## Effect on the Runtime
 
@@ -34,7 +34,7 @@ The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activ
 
 ## Output
 
- The MDA displays the name of the method calling the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> method, the MSIL offset, and a message indicating the call does not immediately precede the beginning of the try block.
+ The MDA displays the name of the method calling the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions*> method, the MSIL offset, and a message indicating the call does not immediately precede the beginning of the try block.
 
 ## Configuration
 
@@ -69,6 +69,6 @@ void MethodWithInvalidPCR()
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions*>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Interop Marshaling](../interop/interop-marshalling.md)

@@ -17,15 +17,15 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
 
 - Unhandled exceptions (in both native and managed code).
 
-- <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raisefailfastexception) function (Windows 7 family).
+- <xref:System.Environment.FailFast*?displayProperty=nameWithType> method or [RaiseFailFastException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raisefailfastexception) function (Windows 7 family).
 
 - Runtime fatal errors.
 
  JIT-attach debugging is also triggered by calls to the following methods and functions:
 
-- <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=nameWithType> method.
+- <xref:System.Diagnostics.Debugger.Launch*?displayProperty=nameWithType> method.
 
-- <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType> method.
+- <xref:System.Diagnostics.Debugger.Break*?displayProperty=nameWithType> method.
 
 - [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) function (Win32).
 

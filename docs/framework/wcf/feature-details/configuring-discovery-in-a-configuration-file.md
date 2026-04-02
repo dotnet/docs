@@ -142,7 +142,7 @@ There are four major groups of configuration settings used in discovery. This to
 
 ## Binding Element Configuration
 
- Binding element configuration is most interesting on the client side. You can use configuration to specify the find criteria used to discover services from a WCF client application.  The following example creates a custom binding with the <xref:System.ServiceModel.Discovery.DiscoveryClient> channel and specifies find criteria that includes a type and scope. In addition it specifies values for the <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> and <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> properties.
+ Binding element configuration is most interesting on the client side. You can use configuration to specify the find criteria used to discover services from a WCF client application.  The following example creates a custom binding with the <xref:System.ServiceModel.Discovery.DiscoveryClient> channel and specifies find criteria that includes a type and scope. In addition it specifies values for the <xref:System.ServiceModel.Discovery.FindCriteria.Duration*> and <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults> properties.
 
 ```xml
 <bindings>

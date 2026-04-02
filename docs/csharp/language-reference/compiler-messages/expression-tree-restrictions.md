@@ -180,7 +180,7 @@ The following expressions are prohibited:
 - You can't declare or access [inline arrays](../builtin-types/struct.md#inline-arrays).
 - You can't include [collection expressions](../operators/collection-expressions.md).
 - The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators aren't allowed.
-- [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> aren't allowed.
+- [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> aren't allowed.
 - `in`, `out`, and `ref` parameters, including `out` variable declarations, aren't allowed.
 - `ref` returns aren't allowed.
 - Calls to methods that return by `ref` aren't allowed.

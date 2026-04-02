@@ -117,7 +117,7 @@ But instead, imagine that you want to create an unbounded channel with multiple 
 
 :::code language="csharp" source="snippets/channels/Program.Unbounded.cs" id="unboundedoptions":::
 
-In this case, all writes are synchronous, even the `WriteAsync`. This behavior occurs because an unbounded channel always has available room for a write immediately. However, by setting `AllowSynchronousContinuations` to `true`, the writes might end up doing work associated with a reader by executing their continuations. This setting doesn't affect the synchronicity of the operation.
+In this case, all writes are synchronous, even `WriteAsync`. This behavior occurs because an unbounded channel always has available room for a write immediately. However, by setting `AllowSynchronousContinuations` to `true`, the writes might end up doing work associated with a reader by executing their continuations. This setting doesn't affect the synchronicity of the operation.
 
 #### Bounded creation patterns
 

@@ -60,9 +60,9 @@ Specifies the channel pool settings for a custom binding.
 
 ## See also
 
-- <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings%2A>
+- <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings*>
 - <xref:System.ServiceModel.Channels.ChannelPoolSettings>
-- <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>
+- <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings*>
 - <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [\<oneWay>](oneway.md)

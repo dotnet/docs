@@ -36,8 +36,8 @@ The following sections describe attributes, child elements, and parent elements.
 | Attribute  | Description |
 | ---------- | ----------- |
 | customType | A string containing the fully qualified type name of the custom type to be used as a filter. If `filterType` is set to `custom`, this attribute contains the fully qualified type name of the class to create.  `filterData` may also contain values to be used during evaluation of the custom type filter. |
-| filterData | A string containing the filter data. For more information on how to specify this attribute, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>. |
-| filterType | A string containing the filter type. This attribute is of <xref:System.ServiceModel.Routing.Configuration.FilterType> type.  For more information on how this works with the `filterData` attribute, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>. |
+| filterData | A string containing the filter data. For more information on how to specify this attribute, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData>. |
+| filterType | A string containing the filter type. This attribute is of <xref:System.ServiceModel.Routing.Configuration.FilterType> type.  For more information on how this works with the `filterData` attribute, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData>. |
 | name       | A string containing the unique name of this filter element. |
 
 ### Child elements
@@ -53,5 +53,5 @@ None.
 ## See also
 
 - <xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>
-- <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=nameWithType>

@@ -47,12 +47,12 @@ C# allows implicit conversions from the literal value `0` to any enum type, and 
 
 :::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetZeroConversions":::
 
-In the preceding example, both `port1` and `port2` are assigned the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
+In the preceding example, both `port1` and `port2` are assigned the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined*?displayProperty=nameWithType> method confirms these are invalid enum values.
 
 This implicit conversion exists because the 0-bit pattern is the default for all struct types, including all enum types. However, it can introduce bugs in your code. To avoid these problems:
 
 - Almost always define a member with value `0` in your enums.
-- Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to validate enum values when converting from numeric types.
+- Use <xref:System.Enum.IsDefined*?displayProperty=nameWithType> to validate enum values when converting from numeric types.
 - Be cautious when using numeric parameters that might be implicitly converted to enum types.
 
 Use an enumeration type to represent a choice from a set of mutually exclusive values or a combination of choices. To represent a combination of choices, define an enumeration type as bit flags.
@@ -77,7 +77,7 @@ For any enumeration type, explicit conversions exist between the enumeration typ
 
 :::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetConversions":::
 
-Use the <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method to determine whether an enumeration type contains an enum member with a certain associated value.
+Use the <xref:System.Enum.IsDefined*?displayProperty=nameWithType> method to determine whether an enumeration type contains an enum member with a certain associated value.
 
 For any enumeration type, [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.Enum?displayProperty=nameWithType> type exist, respectively.
 

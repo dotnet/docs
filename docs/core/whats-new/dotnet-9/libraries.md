@@ -12,7 +12,7 @@ This article describes new features in the .NET libraries for .NET 9.
 
 ## Base64Url
 
-Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new <xref:System.Buffers.Text.Base64Url> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
+Base64 is an encoding scheme that translates arbitrary bytes into text composed of a specific set of 64 characters. It's a common approach for transferring data and has long been supported via a variety of methods, such as with <xref:System.Convert.ToBase64String*?displayProperty=nameWithType> or <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType>. However, some of the characters it uses makes it less than ideal for use in some circumstances you might otherwise want to use it, such as in query strings. In particular, the 64 characters that comprise the Base64 table include '+' and '/', both of which have their own meaning in URLs. This led to the creation of the Base64Url scheme, which is similar to Base64 but uses a slightly different set of characters that makes it appropriate for use in URLs contexts. .NET 9 includes the new <xref:System.Buffers.Text.Base64Url> class, which provides many helpful and optimized methods for encoding and decoding with `Base64Url` to and from a variety of data types.
 
 The following example demonstrates using the new class.
 
@@ -36,7 +36,7 @@ The collection types in .NET gain the following updates for .NET 9:
 
 ### Collection lookups with spans
 
-In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.HashSet%601> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
+In high-performance code, spans are often used to avoid allocating strings unnecessarily, and lookup tables with types like <xref:System.Collections.Generic.Dictionary`2> and <xref:System.Collections.Generic.HashSet`1> are frequently used as caches. However, there has been no safe, built-in mechanism for doing lookups on these collection types with spans. With the new `allows ref struct` feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.
 
 The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLookup](xref:System.Collections.Generic.Dictionary`2.GetAlternateLookup``1).
 
@@ -44,7 +44,7 @@ The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLo
 
 ### `OrderedDictionary<TKey, TValue>`
 
-In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested <xref:System.Collections.Generic.OrderedDictionary`2> collection, which provides an efficient, generic type to support these scenarios.
 
 The following code uses the new class.
 
@@ -52,9 +52,9 @@ The following code uses the new class.
 
 ### PriorityQueue.Remove() method
 
-.NET 6 introduced the <xref:System.Collections.Generic.PriorityQueue%602> collection, which provides a simple and fast array-heap implementation. One issue with array heaps in general is that they [don't support priority updates](https://github.com/dotnet/runtime/issues/44871), which makes them prohibitive for use in algorithms such as variations of [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue).
+.NET 6 introduced the <xref:System.Collections.Generic.PriorityQueue`2> collection, which provides a simple and fast array-heap implementation. One issue with array heaps in general is that they [don't support priority updates](https://github.com/dotnet/runtime/issues/44871), which makes them prohibitive for use in algorithms such as variations of [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue).
 
-While it's not possible to implement efficient $O(\log n)$ priority updates in the existing collection, the new <xref:System.Collections.Generic.PriorityQueue%602.Remove(%600,%600@,%601@,System.Collections.Generic.IEqualityComparer{%600})?displayProperty=nameWithType> method makes it possible to emulate priority updates (albeit at $O(n)$ time):
+While it's not possible to implement efficient $O(\log n)$ priority updates in the existing collection, the new <xref:System.Collections.Generic.PriorityQueue`2.Remove(`0,`0@,`1@,System.Collections.Generic.IEqualityComparer{`0})?displayProperty=nameWithType> method makes it possible to emulate priority updates (albeit at $O(n)$ time):
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Collections.cs" id="UpdatePriority":::
 
@@ -62,7 +62,7 @@ This method unblocks users who want to implement graph algorithms in contexts wh
 
 ### `ReadOnlySet<T>`
 
-It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList%601>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary%602>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet%601>. .NET 9 introduces <xref:System.Collections.ObjectModel.ReadOnlySet%601> to address this.
+It's often desirable to give out read-only views of collections. <xref:System.Collections.ObjectModel.ReadOnlyCollection`1> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IList`1>, and <xref:System.Collections.ObjectModel.ReadOnlyDictionary`2> lets you create a read-only wrapper around an arbitrary mutable <xref:System.Collections.Generic.IDictionary`2>. However, past versions of .NET had no built-in support for doing the same with <xref:System.Collections.Generic.ISet`1>. .NET 9 introduces <xref:System.Collections.ObjectModel.ReadOnlySet`1> to address this.
 
 The new class enables the following usage pattern.
 
@@ -72,7 +72,7 @@ The new class enables the following usage pattern.
 
 <xref:System.ComponentModel> includes new opt-in trimmer-compatible APIs for describing components. Any application, especially self-contained trimmed applications, can use these new APIs to help support trimming scenarios.
 
-The primary API is the <xref:System.ComponentModel.TypeDescriptor.RegisterType%2A?displayProperty=nameWithType> method on the `TypeDescriptor` class. This method has the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> attribute so that the trimmer preserves members for that type. You should call this method once per type, and typically early on.
+The primary API is the <xref:System.ComponentModel.TypeDescriptor.RegisterType*?displayProperty=nameWithType> method on the `TypeDescriptor` class. This method has the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> attribute so that the trimmer preserves members for that type. You should call this method once per type, and typically early on.
 
 The secondary APIs have a `FromRegisteredType` suffix, such as <xref:System.ComponentModel.TypeDescriptor.GetPropertiesFromRegisteredType(System.Type)?displayProperty=nameWithType>. Unlike their counterparts that don't have the `FromRegisteredType` suffix, these APIs don't have `[RequiresUnreferencedCode]` or `[DynamicallyAccessedMembers]` trimmer attributes. The lack of trimmer attributes helps consumers by no longer having to either:
 
@@ -94,9 +94,9 @@ For more information, see the [API proposal](https://github.com/dotnet/runtime/i
 
 ### CryptographicOperations.HashData() method
 
-.NET includes several static ["one-shot"](../../../standard/security/cryptography-model.md#one-shot-apis) implementations of hash functions and related functions. These APIs include <xref:System.Security.Cryptography.SHA256.HashData%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.HMACSHA256.HashData%2A?displayProperty=nameWithType>. One-shot APIs are preferable to use because they can provide the best possible performance and reduce or eliminate allocations.
+.NET includes several static ["one-shot"](../../../standard/security/cryptography-model.md#one-shot-apis) implementations of hash functions and related functions. These APIs include <xref:System.Security.Cryptography.SHA256.HashData*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.HMACSHA256.HashData*?displayProperty=nameWithType>. One-shot APIs are preferable to use because they can provide the best possible performance and reduce or eliminate allocations.
 
-If a developer wants to provide an API that supports hashing where the caller defines which hash algorithm to use, it's typically done by accepting a <xref:System.Security.Cryptography.HashAlgorithmName> argument. However, using that pattern with one-shot APIs would require switching over every possible <xref:System.Security.Cryptography.HashAlgorithmName> and then using the appropriate method. To solve that problem, .NET 9 introduces the <xref:System.Security.Cryptography.CryptographicOperations.HashData%2A?displayProperty=nameWithType> API. This API lets you produce a hash or HMAC over an input as a one-shot where the algorithm used is determined by a <xref:System.Security.Cryptography.HashAlgorithmName>.
+If a developer wants to provide an API that supports hashing where the caller defines which hash algorithm to use, it's typically done by accepting a <xref:System.Security.Cryptography.HashAlgorithmName> argument. However, using that pattern with one-shot APIs would require switching over every possible <xref:System.Security.Cryptography.HashAlgorithmName> and then using the appropriate method. To solve that problem, .NET 9 introduces the <xref:System.Security.Cryptography.CryptographicOperations.HashData*?displayProperty=nameWithType> API. This API lets you produce a hash or HMAC over an input as a one-shot where the algorithm used is determined by a <xref:System.Security.Cryptography.HashAlgorithmName>.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Cryptography.cs" id="HashData":::
 
@@ -195,7 +195,7 @@ The following code shows an example of calling the `double` and one of the new i
 
 ## Dependency injection - `ActivatorUtilities.CreateInstance` constructor
 
-The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
+The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance*?displayProperty=nameWithType> has changed in .NET 9. Previously, a constructor that was explicitly marked using the <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> attribute might not be called, depending on the ordering of constructors and the number of constructor parameters. The logic has changed in .NET 9 such that a constructor that has the attribute is always called.
 
 ## Diagnostics
 
@@ -206,7 +206,7 @@ The constructor resolution for <xref:Microsoft.Extensions.DependencyInjection.Ac
 
 ### Debug.Assert reports assert condition by default
 
-<xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> is commonly used to help validate conditions that are expected to always be true. Failure typically indicates a bug in the code. There are many overloads of <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>, the simplest of which just accepts a condition:
+<xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> is commonly used to help validate conditions that are expected to always be true. Failure typically indicates a bug in the code. There are many overloads of <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>, the simplest of which just accepts a condition:
 
 ```csharp
 Debug.Assert(a > 0 && b > 0);
@@ -235,7 +235,7 @@ Previously, you could only link a tracing <xref:System.Diagnostics.Activity> to 
 
 ### Metrics.Gauge instrument
 
-<xref:System.Diagnostics.Metrics> now provides the <xref:System.Diagnostics.Metrics.Gauge%601> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
+<xref:System.Diagnostics.Metrics> now provides the <xref:System.Diagnostics.Metrics.Gauge`1> instrument according to the OpenTelemetry specification. The `Gauge` instrument is designed to record non-additive values when changes occur. For example, it can measure the background noise level, where summing the values from multiple rooms would be nonsensical. The `Gauge` instrument is a generic type that can record any value type, such as `int`, `double`, or `decimal`.
 
 The following example demonstrates using the the `Gauge` instrument.
 
@@ -280,17 +280,17 @@ You can also use the wildcard character to listen to metrics with monitoring too
 
 ## LINQ
 
-New methods <xref:System.Linq.Enumerable.CountBy%2A> and <xref:System.Linq.Enumerable.AggregateBy%2A> have been introduced. These methods make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy%2A>.
+New methods <xref:System.Linq.Enumerable.CountBy*> and <xref:System.Linq.Enumerable.AggregateBy*> have been introduced. These methods make it possible to aggregate state by key without needing to allocate intermediate groupings via <xref:System.Linq.Enumerable.GroupBy*>.
 
-<xref:System.Linq.Enumerable.CountBy%2A> lets you quickly calculate the frequency of each key. The following example finds the word that occurs most frequently in a text string.
+<xref:System.Linq.Enumerable.CountBy*> lets you quickly calculate the frequency of each key. The following example finds the word that occurs most frequently in a text string.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="CountBy":::
 
-<xref:System.Linq.Enumerable.AggregateBy%2A> lets you implement more general-purpose workflows. The following example shows how you can calculate scores that are associated with a given key.
+<xref:System.Linq.Enumerable.AggregateBy*> lets you implement more general-purpose workflows. The following example shows how you can calculate scores that are associated with a given key.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="AggregateBy":::
 
-<xref:System.Linq.Enumerable.Index%60%601(System.Collections.Generic.IEnumerable{%60%600})> makes it possible to quickly extract the implicit index of an enumerable. You can now write code such as the following snippet to automatically index items in a collection.
+<xref:System.Linq.Enumerable.Index``1(System.Collections.Generic.IEnumerable{``0})> makes it possible to quickly extract the implicit index of an enumerable. You can now write code such as the following snippet to automatically index items in a collection.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Linq.cs" id="NewIndex":::
 
@@ -315,7 +315,7 @@ In this section, find information about:
 
 ### `allows ref struct` used in libraries
 
-C# 13 introduces the ability to constrain a generic parameter with `allows ref struct`, which tells the compiler and runtime that a `ref struct` can be used for that generic parameter. Many APIs that are compatible with this have now been annotated. For example, the <xref:System.String.Create%2A?displayProperty=nameWithType> method has an overload that lets you create a `string` by writing directly into its memory, represented as a span. This method has a `TState` argument that's passed from the caller into the delegate that does the actual writing.
+C# 13 introduces the ability to constrain a generic parameter with `allows ref struct`, which tells the compiler and runtime that a `ref struct` can be used for that generic parameter. Many APIs that are compatible with this have now been annotated. For example, the <xref:System.String.Create*?displayProperty=nameWithType> method has an overload that lets you create a `string` by writing directly into its memory, represented as a span. This method has a `TState` argument that's passed from the caller into the delegate that does the actual writing.
 
 That `TState` type parameter on `String.Create` is now annotated with `allows ref struct`:
 
@@ -335,7 +335,7 @@ public static string ToLowerInvariant(ReadOnlySpan<char> input) =>
 
 ### `SearchValues` expansion
 
-.NET 8 introduced the <xref:System.Buffers.SearchValues%601> type, which provides an optimized solution for searching for specific sets of characters or bytes within spans. In .NET 9, `SearchValues` has been extended to support searching for substrings within a larger string.
+.NET 8 introduced the <xref:System.Buffers.SearchValues`1> type, which provides an optimized solution for searching for specific sets of characters or bytes within spans. In .NET 9, `SearchValues` has been extended to support searching for substrings within a larger string.
 
 The following example searches for multiple animal names within a string value, and returns an index to the first one found.
 
@@ -401,7 +401,7 @@ For more information, see [HttpClientFactory logging redacts header values by de
 
 In .NET Core versions and .NET 5-8, support for building an assembly and emitting reflection metadata for dynamically created types was limited to a runnable <xref:System.Reflection.Emit.AssemblyBuilder>. The lack of support for _saving_ an assembly was often a blocker for customers migrating from .NET Framework to .NET. .NET 9 adds a new type, <xref:System.Reflection.Emit.PersistedAssemblyBuilder>, that you can use to save an emitted assembly.
 
-To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.Save(System.String)?displayProperty=nameWithType> method to create an assembly with default settings. If you want to set the entry point or other options, you can call <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata%2A?displayProperty=nameWithType> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
+To create a `PersistedAssemblyBuilder` instance, call its constructor and pass the assembly name, the core assembly, `System.Private.CoreLib`, to reference base runtime types, and optional custom attributes. After you emit all members to the assembly, call the <xref:System.Reflection.Emit.PersistedAssemblyBuilder.Save(System.String)?displayProperty=nameWithType> method to create an assembly with default settings. If you want to set the entry point or other options, you can call <xref:System.Reflection.Emit.PersistedAssemblyBuilder.GenerateMetadata*?displayProperty=nameWithType> and use the metadata it returns to save the assembly. The following code shows an example of creating a persisted assembly and setting the entry point.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
 
@@ -453,13 +453,13 @@ The following partial property is the property equivalent of the previous exampl
 
 ### `Regex.EnumerateSplits`
 
-The <xref:System.Text.RegularExpressions.Regex> class provides a <xref:System.Text.RegularExpressions.Regex.Split%2A> method, similar in concept to the <xref:System.String.Split%2A?displayProperty=nameWithType> method. With `String.Split`, you supply one or more `char` or `string` separators, and the implementation splits the input text on those separators. With `Regex.Split`, instead of specifying the separator as a `char` or `string`, it's specified as a regular expression pattern.
+The <xref:System.Text.RegularExpressions.Regex> class provides a <xref:System.Text.RegularExpressions.Regex.Split*> method, similar in concept to the <xref:System.String.Split*?displayProperty=nameWithType> method. With `String.Split`, you supply one or more `char` or `string` separators, and the implementation splits the input text on those separators. With `Regex.Split`, instead of specifying the separator as a `char` or `string`, it's specified as a regular expression pattern.
 
 The following example demonstrates `Regex.Split`.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/RegularExpressions.cs" id="RegexSplit":::
 
-However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new <xref:System.Text.RegularExpressions.Regex.EnumerateSplits%2A> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
+However, `Regex.Split` only accepts a `string` as input and doesn't support input being provided as a `ReadOnlySpan<char>`. Also, it outputs the full set of splits as a `string[]`, which requires allocating both the `string` array to hold the results and a `string` for each split. In .NET 9, the new <xref:System.Text.RegularExpressions.Regex.EnumerateSplits*> method enables performing the same operation, but with a span-based input and without incurring any allocation for the results. It accepts a `ReadOnlySpan<char>` and returns an enumerable of <xref:System.Range> objects that represent the results.
 
 The following example demonstrates `Regex.EnumerateSplits`, taking a `ReadOnlySpan<char>` as input.
 
@@ -552,7 +552,7 @@ For more information, see [Read multiple JSON documents](../../../standard/seria
 
 ## Spans
 
-In high-performance code, spans are often used to avoid allocating strings unnecessarily. <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> continue to revolutionize how code is written in .NET, and every release more and more methods are added that operate on spans. .NET 9 includes the following span-related updates:
+In high-performance code, spans are often used to avoid allocating strings unnecessarily. <xref:System.Span`1> and <xref:System.ReadOnlySpan`1> continue to revolutionize how code is written in .NET, and every release more and more methods are added that operate on spans. .NET 9 includes the following span-related updates:
 
 - [File helpers](#file-helpers)
 - [`params ReadOnlySpan<T>` overloads](#params-readonlyspant-overloads)
@@ -569,7 +569,7 @@ ReadOnlySpan<char> text = ...;
 File.WriteAllText(filePath, text);
 ```
 
-New <xref:System.MemoryExtensions.StartsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> and <xref:System.MemoryExtensions.EndsWith%60%601(System.ReadOnlySpan{%60%600},%60%600)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan%601> starts or ends with a specific `T` value.
+New <xref:System.MemoryExtensions.StartsWith``1(System.ReadOnlySpan{``0},``0)> and <xref:System.MemoryExtensions.EndsWith``1(System.ReadOnlySpan{``0},``0)> extension methods have also been added for spans, making it easy to test whether a <xref:System.ReadOnlySpan`1> starts or ends with a specific `T` value.
 
 The following code uses these new convenience APIs.
 
@@ -586,7 +586,7 @@ string result = string.Join(", ", "a", "b", "c");
 
 Prior to .NET 9, when you pass the values individually, the C# compiler emits code identical to the first call by producing an implicit array around the three arguments.
 
-Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span%601> and <xref:System.ReadOnlySpan%601>). That's beneficial for usability and performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
+Starting in C# 13, you can use `params` with any argument that can be constructed via a collection expression, including spans (<xref:System.Span`1> and <xref:System.ReadOnlySpan`1>). That's beneficial for usability and performance. The C# compiler can store the arguments on the stack, wrap a span around them, and pass that off to the method, which avoids the implicit array allocation that would have otherwise resulted.
 
 .NET 9 includes over 60 methods with a `params ReadOnlySpan<T>` parameter. Some are brand new overloads, and some are existing methods that already took a `ReadOnlySpan<T>` but now have that parameter marked with `params`. The net effect is if you upgrade to .NET 9 and recompile your code, you'll see performance improvements without making any code changes. That's because the compiler prefers to bind to span-based overloads than to the array-based overloads.
 
@@ -699,10 +699,10 @@ There are new `Create` APIs exposed for <xref:System.Numerics.Vector>, <xref:Sys
 
 For more information about the new APIs, see:
 
-- <xref:System.Numerics.Vector.Create%2A?displayProperty=nameWithType>
-- <xref:System.Numerics.Vector2.Create%2A?displayProperty=nameWithType>
-- <xref:System.Numerics.Vector3.Create%2A?displayProperty=nameWithType>
-- <xref:System.Numerics.Vector4.Create%2A?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector.Create*?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector2.Create*?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector3.Create*?displayProperty=nameWithType>
+- <xref:System.Numerics.Vector4.Create*?displayProperty=nameWithType>
 
 These APIs are primarily for convenience and overall consistency across .NET's SIMD-accelerated types.
 
@@ -729,7 +729,7 @@ To use the .NET tensor APIs, install the [System.Numerics.Tensors](https://www.n
 
 ### New Tensor\<T> type
 
-The new <xref:System.Numerics.Tensors.Tensor%601> type expands the AI capabilities of the .NET libraries and runtime. This type:
+The new <xref:System.Numerics.Tensors.Tensor`1> type expands the AI capabilities of the .NET libraries and runtime. This type:
 
 - Provides efficient interop with AI libraries like ML.NET, TorchSharp, and ONNX Runtime using zero copies where possible.
 - Builds on top of <xref:System.Numerics.Tensors.TensorPrimitives> for efficient math operations.
@@ -745,9 +745,9 @@ The following codes shows some of the APIs included with the new `Tensor<T>` typ
 
 ### TensorPrimitives
 
-The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber%601>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
+The `System.Numerics.Tensors` library includes the <xref:System.Numerics.Tensors.TensorPrimitives> class, which provides static methods for performing numerical operations on spans of values. In .NET 9, the scope of methods exposed by <xref:System.Numerics.Tensors.TensorPrimitives> has been significantly expanded, growing from 40 (in .NET 8) to almost 200 overloads. The surface area encompasses familiar numerical operations from types like <xref:System.Math> and <xref:System.MathF>. It also includes the generic math interfaces like <xref:System.Numerics.INumber`1>, except instead of processing an individual value, they process a span of values. Many operations have also been accelerated via SIMD-optimized implementations for .NET 9.
 
-<xref:System.Numerics.Tensors.TensorPrimitives> now exposes generic overloads for any type `T` that implements a certain interface. (The .NET 8 version only included overloads for manipulating spans of `float` values.) For example, the new <xref:System.Numerics.Tensors.TensorPrimitives.CosineSimilarity%60%601(System.ReadOnlySpan{%60%600},System.ReadOnlySpan{%60%600})> overload performs cosine similarity on two vectors of `float`, `double`, or `Half` values, or values of any other type that implements <xref:System.Numerics.IRootFunctions%601>.
+<xref:System.Numerics.Tensors.TensorPrimitives> now exposes generic overloads for any type `T` that implements a certain interface. (The .NET 8 version only included overloads for manipulating spans of `float` values.) For example, the new <xref:System.Numerics.Tensors.TensorPrimitives.CosineSimilarity``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})> overload performs cosine similarity on two vectors of `float`, `double`, or `Half` values, or values of any other type that implements <xref:System.Numerics.IRootFunctions`1>.
 
 Compare the precision of the cosine similarity operation on two vectors of type `float` versus `double`:
 
@@ -759,7 +759,7 @@ The threading APIs include improvements for iterating through tasks, for priorit
 
 ### `Task.WhenEach`
 
-A variety of helpful new APIs have been added for working with <xref:System.Threading.Tasks.Task%601> objects. The new <xref:System.Threading.Tasks.Task.WhenEach%2A?displayProperty=nameWithType> method lets you iterate through tasks as they complete using an `await foreach` statement. You no longer need to do things like repeatedly call <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> on a set of tasks to pick off the next one that completes.
+A variety of helpful new APIs have been added for working with <xref:System.Threading.Tasks.Task`1> objects. The new <xref:System.Threading.Tasks.Task.WhenEach*?displayProperty=nameWithType> method lets you iterate through tasks as they complete using an `await foreach` statement. You no longer need to do things like repeatedly call <xref:System.Threading.Tasks.Task.WaitAny*?displayProperty=nameWithType> on a set of tasks to pick off the next one that completes.
 
 The following code makes multiple `HttpClient` calls and operates on their results as they complete.
 
@@ -767,7 +767,7 @@ The following code makes multiple `HttpClient` calls and operates on their resul
 
 ### Prioritized unbounded channel
 
-The <xref:System.Threading.Channels> namespace lets you create first-in-first-out (FIFO) channels using the <xref:System.Threading.Channels.Channel.CreateBounded%2A> and <xref:System.Threading.Channels.Channel.CreateUnbounded%2A> methods. With FIFO channels, elements are read from the channel in the order they were written to it. In .NET 9, the new <xref:System.Threading.Channels.Channel.CreateUnboundedPrioritized%2A> method has been added, which orders the elements such that the next element read from the channel is the one deemed to be most important, according to either <xref:System.Collections.Generic.Comparer%601.Default?displayProperty=nameWithType> or a custom <xref:System.Collections.Generic.IComparer%601>.
+The <xref:System.Threading.Channels> namespace lets you create first-in-first-out (FIFO) channels using the <xref:System.Threading.Channels.Channel.CreateBounded*> and <xref:System.Threading.Channels.Channel.CreateUnbounded*> methods. With FIFO channels, elements are read from the channel in the order they were written to it. In .NET 9, the new <xref:System.Threading.Channels.Channel.CreateUnboundedPrioritized*> method has been added, which orders the elements such that the next element read from the channel is the one deemed to be most important, according to either <xref:System.Collections.Generic.Comparer`1.Default?displayProperty=nameWithType> or a custom <xref:System.Collections.Generic.IComparer`1>.
 
 The following example uses the new method to create a channel that outputs the numbers 1 through 5 in order, even though they're written to the channel in a different order.
 
@@ -775,4 +775,4 @@ The following example uses the new method to create a channel that outputs the n
 
 ### Interlocked.CompareExchange for more types
 
-In previous versions of .NET, <xref:System.Threading.Interlocked.Exchange%2A?displayProperty=nameWithType> and <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> had overloads for working with `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `float`, `double`, and `object`, as well as a generic overload for working with any reference type `T`. In .NET 9, there are new overloads for atomically working with `byte`, `sbyte`, `short`, and `ushort`. Also, the generic constraint on the generic `Interlocked.Exchange<T>` and `Interlocked.CompareExchange<T>` overloads has been removed, so those methods are no longer constrained to only work with reference types. They can now work with any primitive type, which includes all of the aforementioned types as well as `bool` and `char`, as well as any `enum` type.
+In previous versions of .NET, <xref:System.Threading.Interlocked.Exchange*?displayProperty=nameWithType> and <xref:System.Threading.Interlocked.CompareExchange*?displayProperty=nameWithType> had overloads for working with `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `float`, `double`, and `object`, as well as a generic overload for working with any reference type `T`. In .NET 9, there are new overloads for atomically working with `byte`, `sbyte`, `short`, and `ushort`. Also, the generic constraint on the generic `Interlocked.Exchange<T>` and `Interlocked.CompareExchange<T>` overloads has been removed, so those methods are no longer constrained to only work with reference types. They can now work with any primitive type, which includes all of the aforementioned types as well as `bool` and `char`, as well as any `enum` type.

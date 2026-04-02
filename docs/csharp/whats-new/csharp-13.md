@@ -31,7 +31,7 @@ You can find any breaking changes introduced in C# 13 in our article on [breakin
 
 ## `params` collections
 
-The `params` modifier isn't limited to array types. You can now use `params` with any recognized collection type, including <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, and types that implement <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and have an `Add` method. In addition to concrete types, the interfaces <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType>, and <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> can also be used.
+The `params` modifier isn't limited to array types. You can now use `params` with any recognized collection type, including <xref:System.Span`1?displayProperty=nameWithType>, <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, and types that implement <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> and have an `Add` method. In addition to concrete types, the interfaces <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyCollection`1?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList`1?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection`1?displayProperty=nameWithType>, and <xref:System.Collections.Generic.IList`1?displayProperty=nameWithType> can also be used.
 
 When an interface type is used, the compiler synthesizes the storage for the arguments supplied. You can learn more in the feature specification for [`params` collections](~/_csharplang/proposals/csharp-13.0/params-collections.md).
 
@@ -109,7 +109,7 @@ Before C# 13, iterator methods (methods that use `yield return`) and `async` met
 
 In C# 13, `async` methods can declare `ref` local variables, or local variables of a `ref struct` type. However, those variables can't be accessed across an `await` boundary. Neither can they be accessed across a `yield return` boundary.
 
-This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> in these methods. The compiler tells you if you violate safety rules.
+This relaxed restriction enables the compiler to allow verifiably safe use of `ref` local variables and `ref struct` types in more places. You can safely use types like <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> in these methods. The compiler tells you if you violate safety rules.
 
 In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However, all `yield return` and `yield break` statements must be in safe contexts.
 
@@ -130,7 +130,7 @@ public class C<T> where T : allows ref struct
 }
 ```
 
-This enables types such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> to be used with generic algorithms, where applicable. You can learn more in the updates for [`where`](../language-reference/keywords/where-generic-type-constraint.md) and the programming guide article on [generic constraints](../programming-guide/generics/constraints-on-type-parameters.md).
+This enables types such as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> to be used with generic algorithms, where applicable. You can learn more in the updates for [`where`](../language-reference/keywords/where-generic-type-constraint.md) and the programming guide article on [generic constraints](../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## `ref struct` interfaces
 

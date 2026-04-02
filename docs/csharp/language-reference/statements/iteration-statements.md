@@ -79,7 +79,7 @@ All the sections of the `for` statement are optional. For example, the following
 
 ## The `foreach` statement
 
-The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface, as the following example shows:
+The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> interface, as the following example shows:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithIEnumerable":::
 
@@ -88,7 +88,7 @@ The `foreach` statement isn't limited to those types. You can use it with an ins
 - A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is `bool`.
 
-The following example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
+The following example uses the `foreach` statement with an instance of the <xref:System.Span`1?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithSpan" :::
 
@@ -100,16 +100,16 @@ If the source collection of the `foreach` statement is empty, the `foreach` stat
 
 ### await foreach
 
-Use the `await foreach` statement to consume an asynchronous stream of data, that is, a collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop can suspend while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
+Use the `await foreach` statement to consume an asynchronous stream of data, that is, a collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable`1> interface. Each iteration of the loop can suspend while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="AwaitForeach" :::
 
 You can also use the `await foreach` statement with an instance of any type that satisfies the following conditions:
 
 - A type has the public parameterless `GetAsyncEnumerator` method. This method can be an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
-- The return type of the `GetAsyncEnumerator` method has the public `Current` property and the public parameterless `MoveNextAsync` method whose return type is [`Task<bool>`](xref:System.Threading.Tasks.Task%601), [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601), or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value.
+- The return type of the `GetAsyncEnumerator` method has the public `Current` property and the public parameterless `MoveNextAsync` method whose return type is [`Task<bool>`](xref:System.Threading.Tasks.Task`1), [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask`1), or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value.
 
-By default, the `await foreach` statement processes stream elements in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
+By default, the `await foreach` statement processes stream elements in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait*?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
 
 ### Type of an iteration variable
 

@@ -49,14 +49,14 @@ If you wish to continue using NLS globalization APIs, you can set a [runtime swi
 
 ## Affected APIs
 
-- <xref:System.Span%601?displayProperty=fullName>
+- <xref:System.Span`1?displayProperty=fullName>
 - <xref:System.String?displayProperty=fullName>
 - Most types in the <xref:System.Globalization?displayProperty=fullName> namespace
-- <xref:System.Array.Sort%2A?displayProperty=fullName> (when sorting an array of strings)
-- <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> (when the list elements are strings)
-- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
+- <xref:System.Array.Sort*?displayProperty=fullName> (when sorting an array of strings)
+- <xref:System.Collections.Generic.List`1.Sort?displayProperty=fullName> (when the list elements are strings)
+- <xref:System.Collections.Generic.SortedDictionary`2?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList`2?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedSet`1?displayProperty=fullName> (when the set contains strings)
 
 ## See also
 

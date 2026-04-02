@@ -58,7 +58,10 @@ All snippets must follow this folder structure relative to the referencing artic
   - Modern `using` statements
 
 ### 4. Project File Requirements
-- **NEVER** create project files manually. Always use the `dotnet` CLI. Default to console apps (`dotnet new console`) unless the snippet requires a different project type. Don't specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible.
+- **NEVER** create project files manually. Always use the `dotnet` CLI. Default to console apps (`dotnet new console`) unless the snippet requires a different project type. Don't specify an output folder with `-o`.
+- Specify a meaningful project name with the `-n` parameter.
+  - Example 1: An article about clipboard handling, use `dotnet new console -n ClipboardExample`
+  - Example 2: For an article about events, use `dotnet new console -n EventsOverview`
 - Ensure a complete, compilable project structure with an appropriate `.csproj` or `.vbproj` file
 - Code only needs to compile — it doesn't have to run from `Main`
 - Verify compilation with `dotnet build`
@@ -97,7 +100,6 @@ All snippets must follow this folder structure relative to the referencing artic
 
 ## Common mistakes to avoid
 
-- ❌ Using the old `[net|framework]` subfolder in paths
 - ❌ Creating project files manually instead of using `dotnet new`
 - ❌ Missing C# or VB versions for standard articles
 - ❌ Using simplistic or non-descriptive snippet identifiers

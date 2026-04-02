@@ -51,6 +51,6 @@ Specifies the settings of a Windows service credential.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.WindowsServiceElement>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.WindowsAuthentication%2A>
-- <xref:System.ServiceModel.Description.ServiceCredentials.WindowsAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.WindowsAuthentication*>
+- <xref:System.ServiceModel.Description.ServiceCredentials.WindowsAuthentication*>
 - <xref:System.ServiceModel.Security.WindowsServiceCredential>

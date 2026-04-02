@@ -116,9 +116,9 @@ Orleans' grain state persistence APIs are designed to be easy-to-use and provide
 extensible storage functionality.
 
 - <xref:Orleans.IGrainState?displayProperty=nameWithType> is extended by a .NET interface that contains fields that should be included in the grain's persisted state.
-- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed <xref:Orleans.Grain%601.State> property into the grain's base class.
-- The initial <xref:Orleans.Grain%601.ReadStateAsync?displayProperty=nameWithType> automatically occurs before `ActiveAsync()` has been called for a grain.
-- When the grain's state object's data is changed, then the grain should call <xref:Orleans.Grain%601.WriteStateAsync?displayProperty=nameWithType>.
+- Grains are persisted by using [IPersistentState\<TState\>](../grains/grain-persistence/index.md) is extended by the grain class that adds a strongly typed <xref:Orleans.Grain`1.State> property into the grain's base class.
+- The initial <xref:Orleans.Grain`1.ReadStateAsync?displayProperty=nameWithType> automatically occurs before `ActiveAsync()` has been called for a grain.
+- When the grain's state object's data is changed, then the grain should call <xref:Orleans.Grain`1.WriteStateAsync?displayProperty=nameWithType>.
   - Typically, grains call `State.WriteStateAsync()` at the end of grain method to return the Write promise.
   - The Storage provider *could* try to batch Writes that may increase efficiency, but behavioral contracts and configurations are orthogonal (independent) to the storage API used by the grain.
   - A **timer** is an alternative method to write updates periodically.
@@ -177,7 +177,7 @@ External changing data:
 Writing custom providers:
 
 - Storage providers are simple to write which is also a significant extension element for Orleans.
-- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, <xref:Orleans.Grain%601.ReadStateAsync*>).
+- The API <xref:Orleans.GrainState> API contract drives the storage API contract (`Write`, `Clear`, <xref:Orleans.Grain`1.ReadStateAsync*>).
 - The storage behavior is typically configurable (Batch writing, Hard or Soft Deletions, and so on) and defined by the storage provider.
 
 ## Cluster management

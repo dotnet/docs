@@ -5,7 +5,7 @@ ms.date: 10/19/2021
 ---
 # XNodeReader.GetAttribute behavior for invalid index
 
-`XNodeReader` is an internal class, but it's accessible through the <xref:System.Xml.XmlReader> class if you call <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>. All <xref:System.Xml.XmlReader> implementations except `XNodeReader` threw an <xref:System.ArgumentOutOfRangeException> for an invalid index in the <xref:System.Xml.XmlReader.GetAttribute(System.Int32)> method. With this change, `XNodeReader.GetAttribute(int)` now also throws an <xref:System.ArgumentOutOfRangeException> for an invalid index.
+`XNodeReader` is an internal class, but it's accessible through the <xref:System.Xml.XmlReader> class if you call <xref:System.Xml.Linq.XNode.CreateReader*?displayProperty=nameWithType>. All <xref:System.Xml.XmlReader> implementations except `XNodeReader` threw an <xref:System.ArgumentOutOfRangeException> for an invalid index in the <xref:System.Xml.XmlReader.GetAttribute(System.Int32)> method. With this change, `XNodeReader.GetAttribute(int)` now also throws an <xref:System.ArgumentOutOfRangeException> for an invalid index.
 
 ## Old behavior
 

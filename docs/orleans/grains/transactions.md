@@ -16,7 +16,7 @@ Orleans supports distributed ACID transactions against persistent grain state. T
 
 ## Setup
 
-Orleans transactions are opt-in. Both the silo and the client must be configured to use transactions. If they aren't configured, any calls to transactional methods on a grain implementation receive an <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder:
+Orleans transactions are opt-in. Both the silo and the client must be configured to use transactions. If they aren't configured, any calls to transactional methods on a grain implementation receive an <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions*?displayProperty=nameWithType> on the silo host builder:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
@@ -26,7 +26,7 @@ var builder = Host.CreateDefaultBuilder(args)
     });
 ```
 
-Likewise, to enable transactions on the client, call <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the client host builder:
+Likewise, to enable transactions on the client, call <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions*?displayProperty=nameWithType> on the client host builder:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
@@ -38,7 +38,7 @@ var builder = Host.CreateDefaultBuilder(args)
 
 ### Transactional state storage
 
-To use transactions, you need to configure a data store. To support various data stores with transactions, Orleans uses the storage abstraction <xref:Orleans.Transactions.Abstractions.ITransactionalStateStorage%601>. This abstraction is specific to the needs of transactions, unlike generic grain storage (<xref:Orleans.Storage.IGrainStorage>). To use transaction-specific storage, configure the silo using any implementation of `ITransactionalStateStorage`, such as Azure (<xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableTransactionalStateStorage%2A>).
+To use transactions, you need to configure a data store. To support various data stores with transactions, Orleans uses the storage abstraction <xref:Orleans.Transactions.Abstractions.ITransactionalStateStorage`1>. This abstraction is specific to the needs of transactions, unlike generic grain storage (<xref:Orleans.Storage.IGrainStorage>). To use transaction-specific storage, configure the silo using any implementation of `ITransactionalStateStorage`, such as Azure (<xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableTransactionalStateStorage*>).
 
 For example, consider the following host builder configuration:
 
@@ -71,7 +71,7 @@ You cannot mark <xref:Orleans.Grain.OnActivateAsync*> as transactional because a
 
 ## Grain implementations
 
-A grain implementation needs to use an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> facet to manage grain state via [ACID transactions](../overview.md#distributed-acid-transactions).
+A grain implementation needs to use an <xref:Orleans.Transactions.Abstractions.ITransactionalState`1> facet to manage grain state via [ACID transactions](../overview.md#distributed-acid-transactions).
 
 ```csharp
 public interface ITransactionalState<TState>
@@ -114,7 +114,7 @@ The `Balance` state object is then used in the `AccountGrain` implementation as 
 > [!IMPORTANT]
 > A transactional grain must be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to ensure that the transaction context is correctly passed to the grain call.
 
-In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> declares that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans injects an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> instance with state loaded from the transactional state storage named `"TransactionStore"`. You can modify the state via <xref:Orleans.Transactions.Abstractions.ITransactionalState%601.PerformUpdate*> or read it via <xref:Orleans.Transactions.Abstractions.ITransactionalState%601.PerformRead*>. The transaction infrastructure ensures that any such changes performed as part of a transaction (even among multiple grains distributed across an Orleans cluster) are either all committed or all undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
+In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> declares that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans injects an <xref:Orleans.Transactions.Abstractions.ITransactionalState`1> instance with state loaded from the transactional state storage named `"TransactionStore"`. You can modify the state via <xref:Orleans.Transactions.Abstractions.ITransactionalState`1.PerformUpdate*> or read it via <xref:Orleans.Transactions.Abstractions.ITransactionalState`1.PerformRead*>. The transaction infrastructure ensures that any such changes performed as part of a transaction (even among multiple grains distributed across an Orleans cluster) are either all committed or all undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
 
 ## Call transaction methods from a client
 

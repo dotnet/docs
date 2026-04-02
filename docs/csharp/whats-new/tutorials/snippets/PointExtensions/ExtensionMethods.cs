@@ -8,19 +8,19 @@ public static class PointExtensions
     public static Vector2 ToVector(this Point point) =>
         new Vector2(point.X, point.Y);
 
-    public static void Translate(this Point point, int xDist, int yDist)
+    public static void Translate(this ref Point point, int xDist, int yDist)
     {
         point.X += xDist;
         point.Y += yDist;
     }
 
-    public static void Scale(this Point point, int xScale, int yScale)
+    public static void Scale(this ref Point point, int xScale, int yScale)
     {
         point.X *= xScale;
         point.Y *= yScale;
     }
 
-    public static void Rotate(this Point point, int angleInDegrees)
+    public static void Rotate(this ref Point point, int angleInDegrees)
     {
         double theta = ((double)angleInDegrees * Math.PI) / 180.0;
         double sinTheta = Math.Sin(theta);

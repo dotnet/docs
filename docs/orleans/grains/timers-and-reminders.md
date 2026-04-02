@@ -133,7 +133,7 @@ public class MyGrain : Grain, IMyGrain
             null,
             TimeSpan.FromSeconds(5),
             TimeSpan.FromSeconds(10));
-        
+
         return base.OnActivateAsync();
     }
 
@@ -272,7 +272,7 @@ For more information about Orleans and .NET Aspire integration, see [Orleans and
 
 ## Reminder usage
 
-A grain using reminders must implement the <xref:Orleans.IRemindable.ReceiveReminder%2A?displayProperty=nameWithType> method.
+A grain using reminders must implement the <xref:Orleans.IRemindable.ReceiveReminder*?displayProperty=nameWithType> method.
 
 ```csharp
 Task IRemindable.ReceiveReminder(string reminderName, TickStatus status)
@@ -282,7 +282,7 @@ Task IRemindable.ReceiveReminder(string reminderName, TickStatus status)
 }
 ```
 
- To start a reminder, use the <xref:Orleans.Grain.RegisterOrUpdateReminder%2A?displayProperty=nameWithType> method, which returns an <xref:Orleans.Runtime.IGrainReminder> object:
+ To start a reminder, use the <xref:Orleans.Grain.RegisterOrUpdateReminder*?displayProperty=nameWithType> method, which returns an <xref:Orleans.Runtime.IGrainReminder> object:
 
 ```csharp
 protected Task<IGrainReminder> RegisterOrUpdateReminder(
@@ -295,17 +295,17 @@ protected Task<IGrainReminder> RegisterOrUpdateReminder(
 - `dueTime`: specifies a quantity of time to wait before issuing the first-timer tick.
 - `period`: specifies the period of the timer.
 
-Since reminders survive the lifetime of any single activation, you must explicitly cancel them (as opposed to disposing of them). Cancel a reminder by calling <xref:Orleans.Grain.UnregisterReminder%2A?displayProperty=nameWithType>:
+Since reminders survive the lifetime of any single activation, you must explicitly cancel them (as opposed to disposing of them). Cancel a reminder by calling <xref:Orleans.Grain.UnregisterReminder*?displayProperty=nameWithType>:
 
 ```csharp
 protected Task UnregisterReminder(IGrainReminder reminder)
 ```
 
-The `reminder` is the handle object returned by <xref:Orleans.Grain.RegisterOrUpdateReminder%2A?displayProperty=nameWithType>.
+The `reminder` is the handle object returned by <xref:Orleans.Grain.RegisterOrUpdateReminder*?displayProperty=nameWithType>.
 
 Instances of `IGrainReminder` aren't guaranteed to be valid beyond the lifespan of an activation. If you wish to identify a reminder persistently, use a string containing the reminder's name.
 
-If you only have the reminder's name and need the corresponding `IGrainReminder` instance, call the <xref:Orleans.Grain.GetReminder%2A?displayProperty=nameWithType> method:
+If you only have the reminder's name and need the corresponding `IGrainReminder` instance, call the <xref:Orleans.Grain.GetReminder*?displayProperty=nameWithType> method:
 
 ```csharp
 protected Task<IGrainReminder> GetReminder(string reminderName)

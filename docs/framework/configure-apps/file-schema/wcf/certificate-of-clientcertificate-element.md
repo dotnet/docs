@@ -77,8 +77,8 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 
 ## See also
 
-- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>
-- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate*>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate*>
 - <xref:System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [How to: Create a Service that Employs a Custom Certificate Validator](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)

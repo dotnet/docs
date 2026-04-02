@@ -94,7 +94,9 @@ try {
     Write-Host "Redirection file: $redirectionFilePath" -ForegroundColor Cyan
 
     # Read and parse the JSON file
-    $jsonContent = Get-Content -Path $redirectionFilePath -Raw | ConvertFrom-Json
+    $rawFileContent = Get-Content -Path $redirectionFilePath -Raw
+    $originalLineEnding = if ($rawFileContent -match '\r\n') { "`r`n" } else { "`n" }
+    $jsonContent = $rawFileContent | ConvertFrom-Json
 
     # Check if redirections array exists
     if (-not $jsonContent.redirections) {
@@ -114,12 +116,6 @@ try {
         exit 1
     }
 
-    # Create new redirection entry using source_path_from_root (preferred)
-    $newEntry = [PSCustomObject]@{
-        source_path_from_root = $sourcePathWithRoot
-        redirect_url          = $RedirectUrl
-    }
-
     # Convert redirections to a list for easier manipulation
     $redirectionsList = [System.Collections.ArrayList]@($jsonContent.redirections)
 
@@ -134,17 +130,128 @@ try {
         $insertIndex = $i + 1
     }
 
-    # Insert the new entry at the correct position
-    $redirectionsList.Insert($insertIndex, $newEntry)
+    # ---------------------------------------------------------------------------
+    # NOTE: The block below (commented out) used ConvertTo-Json to rebuild the
+    # entire file. This caused indentation reformatting because ConvertTo-Json
+    # always outputs 2-space indentation regardless of the original file style.
+    # Kept here for reference only.
+    # ---------------------------------------------------------------------------
+    # $newEntry = [PSCustomObject]@{
+    #     source_path_from_root = $sourcePathWithRoot
+    #     redirect_url          = $RedirectUrl
+    # }
+    # $redirectionsList.Insert($insertIndex, $newEntry)
+    # $jsonContent.redirections = $redirectionsList.ToArray()
+    # $jsonOutput = $jsonContent | ConvertTo-Json -Depth 10
+    # $jsonOutput = $jsonOutput -replace '\r\n', "`n"
+    # if ($originalLineEnding -eq "`r`n") { $jsonOutput = $jsonOutput -replace "`n", "`r`n" }
+    # [System.IO.File]::WriteAllText($redirectionFilePath, $jsonOutput, (New-Object System.Text.UTF8Encoding $false))
+    # ---------------------------------------------------------------------------
 
-    # Update the JSON object
-    $jsonContent.redirections = $redirectionsList.ToArray()
+    # Raw text injection - splices the new entry into the file without touching
+    # any other lines, preserving original indentation and formatting exactly.
 
-    # Convert back to JSON with proper formatting
-    $jsonOutput = $jsonContent | ConvertTo-Json -Depth 10
+    $lines = if ($originalLineEnding -eq "`r`n") {
+        $rawFileContent -split '\r\n'
+    } else {
+        $rawFileContent -split '\n'
+    }
 
-    # Write the updated JSON back to the file
-    $jsonOutput | Set-Content -Path $redirectionFilePath -Encoding UTF8
+    # Detect indentation from a sample source_path line and the entry { line above it
+    $sampleFieldLineIdx = -1
+    for ($i = 0; $i -lt $lines.Count; $i++) {
+        if ($lines[$i] -match '^\s+"source_path') {
+            $sampleFieldLineIdx = $i
+            break
+        }
+    }
+    $fieldIndent = if ($sampleFieldLineIdx -ge 0 -and $lines[$sampleFieldLineIdx] -match '^(\s+)') { $Matches[1] } else { "        " }
+    # Walk back from the field line to find the entry's opening { and use its indentation
+    $entryIndent = ""
+    if ($sampleFieldLineIdx -ge 1) {
+        for ($i = $sampleFieldLineIdx - 1; $i -ge 0; $i--) {
+            if ($lines[$i] -match '^(\s*)\{\s*$') {
+                $entryIndent = $Matches[1]
+                break
+            }
+        }
+    }
+
+    # Core lines of the new entry (closing brace has no comma yet - added below per context)
+    $newEntryCore = @(
+        "$entryIndent{",
+        "$fieldIndent`"source_path_from_root`": `"$sourcePathWithRoot`",",
+        "$fieldIndent`"redirect_url`": `"$RedirectUrl`"",
+        "$entryIndent}"
+    )
+
+    $outputLines = [System.Collections.ArrayList]@()
+
+    if ($insertIndex -lt $redirectionsList.Count) {
+        # Middle or beginning: insert before the entry currently at $insertIndex.
+        # Find that entry's source path in the raw lines to locate its opening {.
+        $targetPath = Get-EntrySourcePath -Entry $redirectionsList[$insertIndex]
+        $targetLineIdx = -1
+        for ($i = 0; $i -lt $lines.Count; $i++) {
+            if ($lines[$i] -match [regex]::Escape($targetPath)) {
+                $targetLineIdx = $i
+                break
+            }
+        }
+        if ($targetLineIdx -lt 0) {
+            Write-Error "Could not locate insertion point in file for: $targetPath"
+            exit 1
+        }
+        # Walk back to find the opening { of that entry
+        $entryStartIdx = $targetLineIdx
+        for ($i = $targetLineIdx - 1; $i -ge 0; $i--) {
+            if ($lines[$i].Trim() -eq '{') {
+                $entryStartIdx = $i
+                break
+            }
+        }
+        # Emit: lines before insertion point, new entry with trailing comma, then rest
+        for ($i = 0; $i -lt $entryStartIdx; $i++) { $null = $outputLines.Add($lines[$i]) }
+        for ($i = 0; $i -lt ($newEntryCore.Length - 1); $i++) { $null = $outputLines.Add($newEntryCore[$i]) }
+        $null = $outputLines.Add("$entryIndent},")   # closing brace with comma (next entry follows)
+        for ($i = $entryStartIdx; $i -lt $lines.Count; $i++) { $null = $outputLines.Add($lines[$i]) }
+    } else {
+        # Append at end: the current last entry has no trailing comma; add one, then
+        # insert the new entry (no trailing comma) before the closing ].
+        $closingBracketIdx = -1
+        for ($i = $lines.Count - 1; $i -ge 0; $i--) {
+            if ($lines[$i].TrimStart() -match '^\]\s*$') {
+                $closingBracketIdx = $i
+                break
+            }
+        }
+        if ($closingBracketIdx -lt 0) {
+            Write-Error "Could not find closing ] of redirections array"
+            exit 1
+        }
+        # Find the closing } of the last entry (immediately before the ])
+        $lastCloserIdx = -1
+        for ($i = $closingBracketIdx - 1; $i -ge 0; $i--) {
+            $trimmed = $lines[$i].Trim()
+            if ($trimmed -eq '}' -or $trimmed -eq '},') {
+                $lastCloserIdx = $i
+                break
+            }
+        }
+        if ($lastCloserIdx -lt 0) {
+            Write-Error "Could not find last entry closing brace"
+            exit 1
+        }
+        # Emit: all lines up to (not including) last }, then last } with comma,
+        # then new entry (no trailing comma), then closing ] onward
+        for ($i = 0; $i -lt $lastCloserIdx; $i++) { $null = $outputLines.Add($lines[$i]) }
+        $null = $outputLines.Add("$entryIndent},")   # previous last entry now has a comma
+        foreach ($l in $newEntryCore) { $null = $outputLines.Add($l) }   # new entry, no trailing comma
+        for ($i = $closingBracketIdx; $i -lt $lines.Count; $i++) { $null = $outputLines.Add($lines[$i]) }
+    }
+
+    $outputContent = $outputLines -join $originalLineEnding
+    [System.IO.File]::WriteAllText($redirectionFilePath, $outputContent, (New-Object System.Text.UTF8Encoding $false))
 
     Write-Host ""
     Write-Host "Successfully added redirection entry:" -ForegroundColor Green

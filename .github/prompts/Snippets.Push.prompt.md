@@ -88,7 +88,6 @@ description: Push inline code block snippets out of articles into standalone fil
 - DO NOT use language tabs in the article — place references side-by-side, like so:
   ```markdown
   :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
-  
   :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
   ```
 - Verify all paths and identifiers are correct.

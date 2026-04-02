@@ -84,6 +84,21 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile
 
 You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*?displayProperty=nameWithType> methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.
 
+### Cancellation token
+
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> exposes a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.CancellationToken> property that is signaled when the test times out or the test run is aborted. You should pass this token to async operations so that they can respond to cancellation cooperatively. This is especially important when using [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute) attributes.
+
+When <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> is accessed as a property:
+
+:::code language="csharp" source="snippets/testcontext/csharp-cancellation/CancellationToken.cs":::
+
+When <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> is injected through the constructor (MSTest 3.6+):
+
+:::code language="csharp" source="snippets/testcontext/csharp-cancellation/CancellationTokenCtor.cs":::
+
+> [!TIP]
+> MSTest analyzer rule [MSTEST0049](mstest-analyzers/mstest0049.md) helps identify async calls where `TestContext.CancellationToken` should be passed. It also provides a code fixer to apply the change automatically.
+
 ## Related analyzers
 
 The following analyzers help ensure proper usage of the `TestContext` class:

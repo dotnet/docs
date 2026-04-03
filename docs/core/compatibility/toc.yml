@@ -34,6 +34,10 @@ items:
             items:
               - name: Minimum hardware requirements updated
                 href: jit/11/minimum-hardware-requirements.md
+          - name: Networking
+            items:
+              - name: SslStream server-side AIA certificate downloads disabled by default
+                href: networking/11/sslstream-aia-downloads-disabled.md
           - name: SDK and MSBuild
             items:
               - name: mono launch target not set for .NET Framework apps

@@ -100,7 +100,8 @@ helpviewer_keywords:
  - "CS9296"
  - "CS9307"
  - "CS9369"
-ms.date: 05/27/2025
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 # Resolve errors and warnings generated from expressions prohibited in expression trees
 

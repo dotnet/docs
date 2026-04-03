@@ -30,6 +30,10 @@ items:
             items:
               - name: Japanese Calendar minimum supported date corrected
                 href: globalization/11/japanese-calendar-min-date.md
+          - name: Interop
+            items:
+              - name: NativeAOT uses lib prefix for native library outputs on Unix
+                href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
             items:
               - name: Minimum hardware requirements updated

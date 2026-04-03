@@ -21,12 +21,14 @@ Previously, `System.IO.Compression` didn't validate CRC32 checksums when reading
 using System.IO.Compression;
 
 using var archive = ZipFile.OpenRead("corrupted.zip");
-var entry = archive.GetEntry("file.txt");
+var entry = archive.GetEntry("file.txt") 
+    ?? throw new FileNotFoundException("Entry 'file.txt' not found in archive.");
+
 using var stream = entry.Open();
 
-// Data could be read without any validation of its integrity.
+// Data read without any validation of its integrity.
 byte[] buffer = new byte[entry.Length];
-stream.Read(buffer, 0, buffer.Length);
+stream.ReadExactly(buffer);
 ```
 
 ## New behavior
@@ -48,12 +50,14 @@ If your application processes ZIP files that might be corrupted or tampered with
 ```csharp
 try
 {
-    using var archive = ZipFile.OpenRead("example.zip");
-    var entry = archive.GetEntry("file.txt");
+    using var archive = ZipFile.OpenRead("corrupted.zip");
+    var entry = archive.GetEntry("file.txt") 
+        ?? throw new FileNotFoundException("Entry 'file.txt' not found in archive.");
+
     using var stream = entry.Open();
 
     byte[] buffer = new byte[entry.Length];
-    stream.Read(buffer, 0, buffer.Length);
+    stream.ReadExactly(buffer);
 }
 catch (InvalidDataException ex)
 {

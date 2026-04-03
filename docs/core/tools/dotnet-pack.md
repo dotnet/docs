@@ -15,11 +15,12 @@ ai-usage: ai-assisted
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT | SOLUTION | NUSPEC>...]
+dotnet pack [<PROJECT>|<SOLUTION>|<NUSPEC>]
     [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
     [--disable-build-servers] [--force] [--include-source] [--include-symbols]
     [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo]
-    [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-o|--output <OUTPUT_DIRECTORY>] [-p|--property:<PROPERTYNAME>=<VALUE>]
+    [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
     [--version <VERSION>] [--version-suffix <VERSION_SUFFIX>]
 
@@ -106,6 +107,15 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   - .NET 7.0.200 SDK
 
     In the 7.0.200 SDK, if you specify the `--output` option when running this command on a solution, the CLI will emit an error. This is a regression and was fixed in 7.0.201 and later versions of the .NET SDK.
+
+- **`-p|--property:<PROPERTYNAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. When packing a *.nuspec* file directly, the properties are used for token replacement in the *.nuspec* file rather than as MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -216,4 +226,10 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   ```dotnetcli
   dotnet pack MyPackage.nuspec --version 1.2.3 --output ./artifacts
+  ```
+
+- Pack a *.nuspec* file directly and use token replacement (.NET 10 SDK and later):
+
+  ```dotnetcli
+  dotnet pack MyPackage.nuspec --property Version=1.2.3 --property Configuration=Release --output ./artifacts
   ```

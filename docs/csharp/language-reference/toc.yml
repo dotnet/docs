@@ -502,6 +502,11 @@ items:
       record, record struct, record class, positional record,
       CS8851, CS8858, CS8859, CS8860, CS8864, CS8865, CS8866, CS8870, CS8872, CS8873,
       CS8874, CS8875, CS8877, CS8879, CS8907, CS8908, CS8913
+  - name: Union type declarations
+    href: ./compiler-messages/union-declaration-errors.md
+    displayName: >
+      union, union type, case type,
+      CS9369, CS9370, CS9371, CS9372, CS9373, CS9374, CS9375
   - name: Constructor declarations
     href: ./compiler-messages/constructor-errors.md
     displayName: >

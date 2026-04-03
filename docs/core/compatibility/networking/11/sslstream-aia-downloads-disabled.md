@@ -62,7 +62,7 @@ Choose one of the following options:
         ExtraStore = { intermediateCertificate },
 
         // If client certificates are issued by a private root CA, specify custom trust
-        TrustMode = X509ChainTrustMode.CustomTrustRoot,
+        TrustMode = X509ChainTrustMode.CustomRootTrust,
         CustomTrustStore = { rootCertificate }
     };
 

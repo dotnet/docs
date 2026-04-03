@@ -60,9 +60,9 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 
   The project, solution, *.nuspec* file, or file-based app to pack.
 
-- `PROJECT` is the path to a csproj, vbproj, or fsproj file, or to a directory containing a project file.
-- `SOLUTION` is the path to a solution file (*.sln* or *.slnx* extension), or to a directory containing a solution file.
-- `NUSPEC` is the path to a *.nuspec* file. Available starting in .NET 10.
+- `PROJECT` is the path to a `.csproj`, `.vbproj`, or `.fsproj` file, or to a directory containing a project file.
+- `SOLUTION` is the path to a solution file (`.sln` or `.slnx` extension), or to a directory containing a solution file.
+- `NUSPEC` is the path to a `.nuspec` file. Available starting in .NET 10.
 - `FILE` is the path to a file-based app (a C# file without a corresponding project file). Available starting in .NET 10. For more information, see [Build file-based C# apps](../../../csharp/fundamentals/tutorials/file-based-programs.md).
 
   If not specified, the command searches the current directory for a project or solution file.
@@ -223,19 +223,16 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
   - [Advanced extension points to create customized package](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
   - [Global properties](/visualstudio/msbuild/msbuild-properties#global-properties)
 
-- Pack a *.nuspec* file directly, without a project file (.NET 10 SDK and later):
+- Pack a *.nuspec* file directly, without a project file (.NET 10 and later):
 
   ```dotnetcli
   dotnet pack MyPackage.nuspec --output ./artifacts
-  ```
-
-- Pack a *.nuspec* file directly and set the package version (.NET 10 SDK and later):
 
   ```dotnetcli
   dotnet pack MyPackage.nuspec --version 1.2.3 --output ./artifacts
   ```
 
-- Pack a *.nuspec* file directly and use token replacement (.NET 10 SDK and later):
+- Pack a *.nuspec* file directly and use token replacement (.NET 10 and later):
 
   ```dotnetcli
   dotnet pack MyPackage.nuspec --property:Version=1.2.3 --property:Configuration=Release --output ./artifacts

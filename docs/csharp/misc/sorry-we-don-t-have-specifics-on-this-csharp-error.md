@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 02/13/2026
+ms.date: 04/01/2026
 f1_keywords:
   - "CS0190"
   - "CS0257"
@@ -110,7 +110,6 @@ f1_keywords:
   - "CS7089"
   - "CS7090"
   - "CS7091"
-  - "CS7092"
   - "CS7093"
   - "CS7094"
   - "CS7095"
@@ -239,6 +238,7 @@ f1_keywords:
   - "CS8359"
   - "CS8360"
   - "CS8362"
+  # C# 7.3 diagnostics
   - "CS8372"
   - "CS8375"
   - "CS8377"
@@ -252,7 +252,7 @@ f1_keywords:
   - "CS8386"
   - "CS8387"
   - "CS8389"
-  # C# 7.3 diagnostics
+  # C# 8.0 diagnostics
   - "CS8412"
   - "CS8413"
   - "CS8414"
@@ -286,65 +286,64 @@ f1_keywords:
   - "CS8716"
   - "CS8750"
   # C# 9 diagnostics start here
-  - "CS8751"
-  - "CS8752"
+  - "CS8751" # misc
+  - "CS8752" # target type new 
   - "CS8753"
   - "CS8754"
-  - "CS8755"
+  - "CS8755" # function pointer
   - "CS8756"
   - "CS8757"
   - "CS8758"
   - "CS8759"
-  - "CS8760"
+  - "CS8760" # misc
   - "CS8761"
   - "CS8771"
   - "CS8772"
-  - "CS8783"
-  - "CS8784"
+  - "CS8783" # local function
+  - "CS8784" # source generator
   - "CS8785"
-  - "CS8786"
+  - "CS8786" # function pointers
   - "CS8787"
   - "CS8788"
   - "CS8789"
-  - "CS8804"
   - "CS8806"
   - "CS8807"
   - "CS8808"
   - "CS8809"
   - "CS8811"
-  - "CS8813"
+  - "CS8813" # module initializers
   - "CS8814"
   - "CS8815"
   - "CS8816"
-  - "CS8822"
+  - "CS8822" # nullable / constraints
   - "CS8823"
-  - "CS8830"
+  - "CS8830" # feature / version
   - "CS8831"
-  - "CS8852"
+  - "CS8852" # init only properties
   - "CS8853"
   - "CS8855"
   - "CS8856"
-  - "CS8857"
+  - "CS8857" # records
   - "CS8869"
   - "CS8871"
   - "CS8876"
-  - "CS8888"
+  - "CS8888" # feature / version
   - "CS8889"
   - "CS8890"
   - "CS8891"
-  - "CS8893"
+  - "CS8893" # managed / unmanaged constraint
   - "CS8894"
   - "CS8895"
   - "CS8896"
-  - "CS8900"
+  - "CS8900" # module initializer
   - "CS8901"
   - "CS8902"
-  - "CS8903"
-  - "CS8906"
-  - "CS8909"
-  - "CS8911"
+  - "CS8903" # init only property
+  - "CS8906" # record
+  - "CS8909" # function pointer
+  - "CS8911" # function pointer
 # Coming in C# 15
-  - "CS9343"
+  - "CS9343" # misc
   - "CS9346"
   - "CS9347"
   - "CS9348"
@@ -353,6 +352,14 @@ f1_keywords:
   - "CS9351"
   - "CS9352"
   - "CS9353"
+# Unions
+  - "CS9369"
+  - "CS9370"
+  - "CS9371"
+  - "CS9372"
+  - "CS9373"
+  - "CS9374"
+  - "CS9375"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

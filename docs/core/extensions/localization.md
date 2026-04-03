@@ -1,7 +1,8 @@
 ---
 title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
-ms.date: 10/20/2025
+ms.date: 03/12/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -109,6 +110,28 @@ Resource files can live anywhere in a project, but there are common practices in
 - Calls `AddLocalization` on the service collection, specifying <xref:Microsoft.Extensions.Localization.LocalizationOptions.ResourcesPath?displayProperty=nameWithType> as `"Resources"`.
 
 This would cause the localization services to look in the *Resources* directory for resource files.
+
+### ResourcesPath and shared resource classes
+
+When `ResourcesPath` is configured, `IStringLocalizerFactory.Create(Type)` resolves the resource file path by computing the type's relative name (relative to the root namespace) and prepending the `ResourcesPath`. This means the placement of your shared resource class relative to the project root namespace matters.
+
+For example, consider a shared resource class used to consolidate strings across multiple components. If `ResourcesPath = "Resources"` is set and your shared resource class `SharedResource` lives *inside* the `Resources` folder in the namespace `MyApp.Resources` (fully qualified type name `MyApp.Resources.SharedResource`), the factory resolves the base name as `Resources.SharedResource` (relative to the root namespace `MyApp`) and then prepends `ResourcesPath`, resulting in a path equivalent to `Resources/Resources/SharedResource.resx`—which doesn't match the actual file location.
+
+You have two options to avoid this:
+
+- **Keep the shared resource class in the root namespace.** Place `SharedResource.cs` at the project root (namespace `MyApp`), not inside the `Resources` folder. The factory then resolves the base name as `SharedResource`, and with `ResourcesPath = "Resources"`, it correctly looks for `Resources/SharedResource.resx`.
+
+- **Use `factory.Create(string baseName, string location)`.** Provide the base name and assembly name explicitly, which gives direct control over resource file resolution:
+
+  ```csharp
+  var assemblyName = typeof(SharedResource).Assembly.GetName().Name;
+  IStringLocalizer localizer = factory.Create("SharedResource", assemblyName);
+  ```
+
+  This approach works regardless of where `SharedResource.cs` is located in the project.
+
+> [!NOTE]
+> The same consideration applies when integrating with frameworks that use `IStringLocalizerFactory` internally. For example, ASP.NET Core's `AddDataAnnotationsLocalization` uses this factory with a shared resource class. If `ResourcesPath` is configured, use the `factory.Create(string, string)` overload. Alternatively, ensure the shared resource class is in the root namespace.
 
 ## Use `IStringLocalizer<T>` and `IStringLocalizerFactory`
 

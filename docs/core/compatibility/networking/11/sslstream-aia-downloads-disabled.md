@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # SslStream server-side AIA certificate downloads disabled by default
 
-Starting in .NET 11, `SslStream` doesn't download missing intermediate certificates using the Authority Information Access (AIA) extension by default when validating client certificates as a server.
+Starting in .NET 11, <xref:System.Net.Security.SslStream> doesn't download missing intermediate certificates using the Authority Information Access (AIA) extension by default when validating client certificates as a server.
 
 ## Version introduced
 
@@ -48,9 +48,9 @@ Allowing AIA downloads during the TLS handshake can cause significant performanc
 
 Choose one of the following options:
 
-1. **Ensure the client sends all required intermediate certificates**: Configure the client to include all intermediate certificates in the TLS handshake. On the client side, use <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext> with an <xref:System.Net.Security.SslStreamCertificateContext> that includes the full chain. For most scenarios, creating `SslStreamCertificateContext` handles intermediate certificate management automatically.
+- **Ensure the client sends all required intermediate certificates**: Configure the client to include all intermediate certificates in the TLS handshake. On the client side, use <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext> with an <xref:System.Net.Security.SslStreamCertificateContext> that includes the full chain. For most scenarios, creating `SslStreamCertificateContext` handles intermediate certificate management automatically.
 
-1. **Provide intermediate certificates in the server's chain policy**: Use <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore> to supply the necessary intermediate certificates to the server:
+- **Provide intermediate certificates in the server's chain policy**: Use <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore> to supply the necessary intermediate certificates to the server:
 
     ```csharp
     var chainPolicy = new X509ChainPolicy
@@ -76,25 +76,9 @@ Choose one of the following options:
     });
     ```
 
-1. **Explicitly allow AIA downloads (not recommended)**: Restore the previous behavior by setting <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.DisableCertificateDownloads> to `false`. This approach is not recommended due to the associated performance and security risks.
-
-    ```csharp
-    var chainPolicy = new X509ChainPolicy
-    {
-        DisableCertificateDownloads = false // allow AIA downloads
-    };
-
-    var sslStream = new SslStream(networkStream);
-
-    await sslStream.AuthenticateAsServerAsync(new SslServerAuthenticationOptions
-    {
-        ServerCertificateContext = serverCertificateContext,
-        ClientCertificateRequired = true,
-        CertificateChainPolicy = chainPolicy
-    });
-    ```
+- **Explicitly allow AIA downloads (not recommended)**: Restore the previous behavior by setting <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.DisableCertificateDownloads> to `false`. This approach is not recommended due to the associated performance and security risks.
 
 ## Affected APIs
 
-- <xref:System.Net.Security.SslStream.AuthenticateAsServer%2A?displayProperty=fullName>
-- <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync%2A?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.AuthenticateAsServer*?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync*?displayProperty=fullName>

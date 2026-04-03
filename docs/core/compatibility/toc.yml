@@ -20,6 +20,8 @@ items:
                 href: core-libraries/11/memorystream-max-capacity.md
               - name: TAR-reading APIs verify header checksums when reading
                 href: core-libraries/11/tar-checksum-validation.md
+              - name: TarWriter uses HardLink entries for hard-linked files
+                href: core-libraries/11/tarwriter-hardlink-entries.md
               - name: ZipArchive.CreateAsync eagerly loads ZIP archive entries
                 href: core-libraries/11/ziparchive-createasync-eager-load.md
           - name: Cryptography

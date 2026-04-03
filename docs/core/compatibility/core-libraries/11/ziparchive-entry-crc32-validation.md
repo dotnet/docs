@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # CRC32 validation added when reading ZIP archive entries
 
-Starting in .NET 11 Preview 3, the `System.IO.Compression` library validates CRC32 checksums when reading ZIP archive entries. If the computed CRC32 checksum doesn't match the expected value stored in the ZIP file's metadata, an <xref:System.IO.InvalidDataException> is thrown.
+Starting in .NET 11, the <xref:System.IO.Compression> library validates CRC32 checksums when reading ZIP archive entries. If the computed CRC32 checksum doesn't match the expected value stored in the ZIP file's metadata, an <xref:System.IO.InvalidDataException> is thrown.
 
 ## Version introduced
 
@@ -32,18 +32,6 @@ stream.Read(buffer, 0, buffer.Length);
 ## New behavior
 
 Starting in .NET 11, the library verifies the integrity of ZIP entries during read operations. If the computed CRC32 checksum doesn't match the expected value from the ZIP file's metadata, an <xref:System.IO.InvalidDataException> is thrown.
-
-```csharp
-using System.IO.Compression;
-
-using var archive = ZipFile.OpenRead("corrupted.zip");
-var entry = archive.GetEntry("file.txt");
-using var stream = entry.Open();
-
-// An InvalidDataException is thrown if the CRC32 checksum doesn't match.
-byte[] buffer = new byte[entry.Length];
-stream.Read(buffer, 0, buffer.Length);
-```
 
 ## Type of breaking change
 

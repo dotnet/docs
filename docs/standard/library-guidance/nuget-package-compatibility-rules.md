@@ -150,6 +150,25 @@ Packages that overlap with .NET shared frameworks follow a special assembly vers
 
 - **.NET Framework assemblies** in these packages are the exception&mdash;they *do* increment their assembly version with each servicing release. This is necessary because .NET Framework's GAC and binding redirect behavior requires version changes to guarantee that patched assemblies are loaded. As a result, the .NET Framework assemblies in these packages are the only ones whose assembly version changes across servicing releases.
 
+#### Example: System.Text.Json 8.0.5
+
+The following table shows the assembly versions inside the `System.Text.Json` 8.0.5 NuGet package. Notice that the `net462` assembly version is `8.0.0.5`, while all other TFMs remain at `8.0.0.0`:
+
+| TFM | Assembly version |
+|-----|-----------------|
+| `net462` | 8.0.0.5 |
+| `net6.0` | 8.0.0.0 |
+| `net7.0` | 8.0.0.0 |
+| `net8.0` | 8.0.0.0 |
+| `netstandard2.0` | 8.0.0.0 |
+
+This is intentional. The `netstandard2.0` assembly version is *lower* than the `net462` assembly version in the same package. This is safe because these two assemblies never substitute for each other at runtime&mdash;NuGet selects the `net462` assembly for .NET Framework projects and the `netstandard2.0` assembly for other compatible frameworks.
+
+The `net462` assembly must increment because .NET Framework applications need binding redirects to unify callers onto the serviced version, and the GAC requires a version change to prefer the app-local copy. The `net6.0`, `net7.0`, and `net8.0` assemblies stay at `8.0.0.0` so they can be transparently replaced by the shared framework's copy. The `netstandard2.0` assembly also stays at `8.0.0.0` because it might run on modern .NET, where the same conflict resolution and pruning behavior applies.
+
+> [!NOTE]
+> Applications on .NET Framework that consume these packages will have binding redirects automatically generated when [`<AutoGenerateBindingRedirects>`](../../framework/configure-apps/redirect-assembly-versions.md) is enabled. This is expected and required for correct servicing behavior.
+
 This policy ensures that:
 
 - Applications targeting modern .NET get the shared framework's copy of the assembly seamlessly.

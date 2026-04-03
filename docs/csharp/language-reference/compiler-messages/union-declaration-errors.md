@@ -2,7 +2,6 @@
 title: "Resolve errors and warnings related to union type declarations"
 description: "This article helps you diagnose and correct compiler errors and warnings related to union type declarations"
 f1_keywords:
-  - "CS9369"
   - "CS9370"
   - "CS9371"
   - "CS9372"
@@ -10,7 +9,6 @@ f1_keywords:
   - "CS9374"
   - "CS9375"
 helpviewer_keywords:
-  - "CS9369"
   - "CS9370"
   - "CS9371"
   - "CS9372"
@@ -28,10 +26,9 @@ The C# compiler generates errors when you misuse [union types](../builtin-types/
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
-- [**CS9369**](#expression-and-pattern-limitations): *An expression tree may not contain a union conversion.*
 - [**CS9370**](#union-declaration-requirements): *A union declaration must specify at least one case type.*
 - [**CS9371**](#union-declaration-requirements): *Cannot convert type 'type' to 'object' via an implicit reference or boxing conversion*
-- [**CS9372**](#expression-and-pattern-limitations): *An expression of type 'type' cannot be handled by this pattern, see additional errors at this location.*
+- [**CS9372**](#pattern-matching-limitations): *An expression of type 'type' cannot be handled by this pattern, see additional errors at this location.*
 - [**CS9373**](#union-member-restrictions): *Instance fields, auto-properties or field-like events are not permitted in a 'union' declaration.*
 - [**CS9374**](#union-member-restrictions): *Explicitly declared public constructors with a single parameter are not permitted in a 'union' declaration.*
 - [**CS9375**](#union-member-restrictions): *A constructor declared in a 'union' declaration must have a 'this' initializer that calls a synthesized constructor or an explicitly declared constructor.*
@@ -62,14 +59,10 @@ To correct these errors, apply the following changes to your union members:
 - Remove or change the accessibility of any explicitly declared public constructor that takes a single parameter (**CS9374**). The compiler generates a public single-parameter constructor for each case type to support implicit union conversions. An explicit constructor with the same shape would conflict with those generated constructors. If you need a single-parameter constructor, make it `internal` or `private`.
 - Add a `this` initializer to any explicitly declared constructor so that it chains to a synthesized constructor or another explicitly declared constructor (**CS9375**). The compiler-generated constructors initialize the union's internal storage correctly. Constructors that don't chain through them might leave the union in an invalid state. Use `: this(someValue)` to chain to a generated case-type constructor, or `: this()` to chain to an explicit parameterless constructor you've declared.
 
-## Expression and pattern limitations
+## Pattern matching limitations
 
-- **CS9369**: *An expression tree may not contain a union conversion.*
 - **CS9372**: *An expression of type 'type' cannot be handled by this pattern, see additional errors at this location.*
 
-These errors arise when you use union types in contexts that the compiler can't fully support. For the complete rules on union conversions and pattern matching, see [union conversions](../builtin-types/union.md#union-conversions) and [union matching](../builtin-types/union.md#union-matching).
+This error arises when you use an incorrect pattern form with a union type. For the complete rules on union pattern matching, see [union matching](../builtin-types/union.md#union-matching).
 
-To correct these errors, apply the following changes:
-
-- Move the union conversion out of the expression tree (**CS9369**). Expression trees can't represent union conversions because they rely on compiler-generated constructors that have no equivalent in the `System.Linq.Expressions` API. Perform the conversion before passing the value into the expression tree, or restructure the code to avoid expression trees for that operation.
-- Use the correct pattern form when matching against a union value (**CS9372**). Patterns on a union apply to the union's `Value` property, not the union value itself. If the compiler reports that a pattern can't handle the expression, check that you're matching against the case types listed in the union declaration. Review the additional errors at the same location for details about which pattern is invalid.
+To correct this error, use the correct pattern form when matching against a union value (**CS9372**). Patterns on a union apply to the union's `Value` property, not the union value itself. If the compiler reports that a pattern can't handle the expression, check that you're matching against the case types listed in the union declaration. Review the additional errors at the same location for details about which pattern is invalid.

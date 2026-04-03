@@ -36,7 +36,7 @@ This reference-sharing behavior is one distinction between classes and [structs]
 
 ## Constructors and initialization
 
-When you create an instance, you want its fields and properties initialized to useful values. C# offers several approaches:
+When you create an instance, you want its fields and properties initialized to useful values. C# offers several approaches: field initializers, constructor parameters, primary constructors, and required properties.
 
 **[Field initializers](../../programming-guide/classes-and-structs/instance-constructors.md)** set a default value directly on the field declaration:
 
@@ -48,7 +48,7 @@ Field initializers define *internal* defaults. They don't give callers any way t
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerConstructor":::
 
-**[Primary constructors](../../whats-new/tutorials/primary-constructors.md)** (C# 12) add parameters directly to the class declaration. Those parameters are available throughout the class body:
+**[Primary constructors](../../whats-new/tutorials/primary-constructors.md)** (C# 12+) add parameters directly to the class declaration. Those parameters are available throughout the class body:
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerPrimaryConstructor":::
 
@@ -86,7 +86,7 @@ Object initializers work with any accessible property that has a `set` or [`init
 
 A *collection* is a type that holds a group of related values—lists, sets, dictionaries, arrays, and spans are all common examples. The .NET class library provides general-purpose collection types such as <xref:System.Collections.Generic.List`1>, <xref:System.Collections.Generic.Dictionary`2>, and <xref:System.Collections.Generic.HashSet`1>, alongside arrays and <xref:System.Span`1>.
 
-*Collection expressions* (C# 12) let you populate a collection inline when you create it using bracket syntax:
+*Collection expressions* (C# 12+) let you populate a collection inline when you create it using bracket syntax:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="CollectionInitializers":::
 

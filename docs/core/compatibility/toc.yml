@@ -26,6 +26,8 @@ items:
             items:
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+              - name: RSACryptoServiceProvider.Encrypt and Decrypt with fOAEP are obsolete
+                href: cryptography/11/rsacryptoserviceprovider-encrypt-decrypt-obsolete.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected

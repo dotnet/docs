@@ -31,7 +31,7 @@ dotnet pack -h|--help
 
 The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file).
 
-Starting with .NET 10 SDK, you can also pass a *.nuspec* file directly as the argument. In this case, `dotnet pack` creates the package from the *.nuspec* file without requiring a project file and without running MSBuild.
+Starting with .NET 10, you can also pass a *.nuspec* file directly as the argument. In this case, `dotnet pack` creates the package from the *.nuspec* file without requiring a project file and without running MSBuild.
 
 If you want to generate a package that contains the debug symbols, you have two options available:
 
@@ -44,8 +44,6 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 
 > [!NOTE]
 > In some cases, the implicit build cannot be performed. This can occur when `GeneratePackageOnBuild` is set, to avoid a cyclic dependency between build and pack targets. The build can also fail if there is a locked file or other issue.
-
-You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild `-p` switch for a couple of different scenarios.
 
 > [!NOTE]
 > Web projects aren't packable.
@@ -117,6 +115,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
   ```
 
+   For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference).
+
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
@@ -134,7 +134,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   The version of the package to create. When packing a *.nuspec* file, overrides the version number in the *.nuspec* file.
 
   > [!NOTE]
-  > Available starting in .NET 10 SDK.
+  > Available starting in .NET 10.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

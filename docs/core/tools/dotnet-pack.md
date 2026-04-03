@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>|<NUSPEC>]
+dotnet pack [<PROJECT>|<SOLUTION>|<NUSPEC>|<FILE>]
     [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
     [--disable-build-servers] [--force] [--include-source] [--include-symbols]
     [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo]
@@ -31,7 +31,7 @@ dotnet pack -h|--help
 
 The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file).
 
-Starting with .NET 10, you can also pass a *.nuspec* file directly as the argument. In this case, `dotnet pack` creates the package from the *.nuspec* file without requiring a project file and without running MSBuild.
+Starting with .NET 10, you can also pass a *.nuspec* file or a file-based app (*.cs* file) directly as the argument. When you pass a *.nuspec* file, `dotnet pack` creates the package from the *.nuspec* file without requiring a project file and without running MSBuild. When you pass a file-based app, `dotnet pack` packs it without a project file.
 
 If you want to generate a package that contains the debug symbols, you have two options available:
 
@@ -56,9 +56,16 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 
 ## Arguments
 
-`PROJECT | SOLUTION | NUSPEC`
+`PROJECT | SOLUTION | NUSPEC | FILE`
 
-  The project, solution, or *.nuspec* file to pack. It's either a path to a csproj, vbproj, or fsproj file, to a solution file or directory, or to a *.nuspec* file. If not specified, the command searches the current directory for a project or solution file.
+  The project, solution, *.nuspec* file, or file-based app to pack.
+
+- `PROJECT` is the path to a csproj, vbproj, or fsproj file, or to a directory containing a project file.
+- `SOLUTION` is the path to a solution file (*.sln* or *.slnx* extension), or to a directory containing a solution file.
+- `NUSPEC` is the path to a *.nuspec* file. Available starting in .NET 10.
+- `FILE` is the path to a file-based app (a C# file without a corresponding project file). Available starting in .NET 10. For more information, see [Build file-based C# apps](../../../csharp/fundamentals/tutorials/file-based-programs.md).
+
+  If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
 

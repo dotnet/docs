@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # TarWriter uses HardLink entries for hard-linked files
 
-Starting in .NET 11 Preview 3, <xref:System.Formats.Tar.TarWriter> detects when multiple files are hard-linked to the same inode and writes a `HardLink` entry for subsequent files instead of duplicating the file content.
+<xref:System.Formats.Tar.TarWriter> now detects when multiple files are hard-linked to the same inode. It writes a `HardLink` entry for subsequent files instead of duplicating the file content.
 
 ## Version introduced
 
@@ -54,7 +54,7 @@ This change improves the efficiency of tar archives created by the `System.Forma
 
 ## Recommended action
 
-If your application depends on duplicating file content for hard-linked files, set the `HardLinkMode` property to `TarHardLinkMode.CopyContents` in a new `TarWriterOptions` instance to restore the previous behavior:
+If your application depends on duplicating file content for hard-linked files, you can restore the previous behavior. Set the `HardLinkMode` property to `TarHardLinkMode.CopyContents` in a new `TarWriterOptions` instance:
 
 ```csharp
 using System.Formats.Tar;
@@ -80,7 +80,7 @@ using (var writer = new TarWriter(stream, options, leaveOpen: false))
 }
 ```
 
-Extracting a tar archive that contains `HardLink` entries to a file system without hard link support throws an <xref:System.IO.IOException>. Use the new `TarExtractOptions` class to specify whether to extract hard links as hard links or copy them as separate files, which enables extraction to file systems without hard link support.
+Extracting a tar archive that contains `HardLink` entries to a file system without hard link support throws an <xref:System.IO.IOException>. Use the new `TarExtractOptions` class to specify whether to extract hard links as hard links or copy them as separate files. This enables extraction to file systems without hard link support.
 
 ## Affected APIs
 

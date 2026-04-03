@@ -1,19 +1,28 @@
 ---
 title: Channels
 description: Learn the official synchronization data structures in System.Threading.Channels for producers and consumers with .NET.
-ms.date: 10/22/2025
+ms.date: 03/17/2026
 ai-usage: ai-assisted
 ---
 
 # System.Threading.Channels library
 
-The <xref:System.Threading.Channels?displayProperty=fullName> namespace provides a set of synchronization data structures for passing data between producers and consumers asynchronously. The library targets .NET Standard and works on all .NET implementations.
+The <xref:System.Threading.Channels> namespace provides a set of synchronization data structures for passing data between producers and consumers asynchronously. The library targets .NET, .NET Standard, and .NET Framework, and works on all .NET implementations.
 
-This library is available in the [System.Threading.Channels](https://www.nuget.org/packages/System.Threading.Channels) NuGet package. However, if you're using .NET Core 3.0 or later, the package is included as part of the framework.
+This library is available in the [📦 System.Threading.Channels](https://www.nuget.org/packages/System.Threading.Channels) NuGet package. However, if you're using .NET Core 3.0 or later, the package is included as part of the shared framework.
 
 ## Producer/consumer conceptual programming model
 
-Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model passes data from one party to another through a first-in first-out ("FIFO") queue. Think of channels as any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or whether the channel is accessed by multiple producers or multiple consumers concurrently.
+Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model passes data from one party to another through a first-in first-out ("FIFO") queue. Think of channels as any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as:
+
+- How many elements they're allowed to store and what happens if that limit is reached.
+- Whether the channel is accessed by multiple producers or multiple consumers concurrently.
+
+## Basic usage
+
+The following example demonstrates the basic usage of a channel, where a producer writes items and a consumer reads them:
+
+:::code language="csharp" source="snippets/channels/Program.BasicUsage.cs" id="basicusage":::
 
 ## Bounding strategies
 
@@ -49,7 +58,7 @@ The preceding code creates a channel that has a maximum capacity of `7` items. W
 When using a bounded channel, you can specify the behavior the channel adheres to when the configured bound is reached. The following table lists the full mode behaviors for each <xref:System.Threading.Channels.BoundedChannelFullMode> value:
 
 | Value | Behavior |
-|--|--|
+|-------|----------|
 | <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync` wait for space to be available in order to complete the write operation. Calls to `TryWrite` return `false` immediately. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
@@ -63,7 +72,7 @@ When using a bounded channel, you can specify the behavior the channel adheres t
 The producer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Writer*?displayProperty=nameWithType>. The producer APIs and expected behavior are detailed in the following table:
 
 | API | Expected behavior |
-|--|--|
+|-----|-------------------|
 | <xref:System.Threading.Channels.ChannelWriter`1.Complete*?displayProperty=nameWithType> | Marks the channel as being complete, meaning no more items are written to it. |
 | <xref:System.Threading.Channels.ChannelWriter`1.TryComplete*?displayProperty=nameWithType> | Attempts to mark the channel as being completed, meaning no more data is written to it. |
 | <xref:System.Threading.Channels.ChannelWriter`1.TryWrite*?displayProperty=nameWithType> | Attempts to write the specified item to the channel. When used with an unbounded channel, this always returns `true` unless the channel's writer signals completion with either <xref:System.Threading.Channels.ChannelWriter`1.Complete*?displayProperty=nameWithType>, or <xref:System.Threading.Channels.ChannelWriter`1.TryComplete*?displayProperty=nameWithType>. |
@@ -75,7 +84,7 @@ The producer functionality is exposed on the <xref:System.Threading.Channels.Cha
 The consumer functionality is exposed on the <xref:System.Threading.Channels.Channel`2.Reader*?displayProperty=nameWithType>. The consumer APIs and expected behavior are detailed in the following table:
 
 | API | Expected behavior |
-|--|--|
+|-----|-------------------|
 | <xref:System.Threading.Channels.ChannelReader`1.ReadAllAsync*?displayProperty=nameWithType> | Creates an <xref:System.Collections.Generic.IAsyncEnumerable`1> that enables reading all of the data from the channel. |
 | <xref:System.Threading.Channels.ChannelReader`1.ReadAsync*?displayProperty=nameWithType> | Asynchronously reads an item from the channel. |
 | <xref:System.Threading.Channels.ChannelReader`1.TryPeek*?displayProperty=nameWithType> | Attempts to peek at an item from the channel. |
@@ -84,7 +93,13 @@ The consumer functionality is exposed on the <xref:System.Threading.Channels.Cha
 
 ## Common usage patterns
 
-There are several usage patterns for channels. The API is designed to be simple, consistent, and as flexible as possible. All of the asynchronous methods return a `ValueTask` (or `ValueTask<bool>`) that represents a lightweight asynchronous operation that can avoid allocating if the operation completes synchronously and potentially even asynchronously. Additionally, the API is designed to be composable, in that the creator of a channel makes promises about its intended usage. When a channel is created with certain parameters, the internal implementation can operate more efficiently knowing these promises.
+There are several usage patterns for channels:
+
+- [Creation patterns](#creation-patterns)
+- [Producer patterns](#producer-patterns)
+- [Consumer patterns](#consumer-patterns)
+
+The API is designed to be simple, consistent, and as flexible as possible. All of the asynchronous methods return a `ValueTask` (or `ValueTask<bool>`) that represents a lightweight asynchronous operation that can avoid allocating if the operation completes synchronously and potentially even asynchronously. Additionally, the API is designed to be composable, in that the creator of a channel makes promises about its intended usage. When a channel is created with certain parameters, the internal implementation can operate more efficiently knowing these promises.
 
 ### Creation patterns
 
@@ -94,29 +109,27 @@ Imagine that you're creating a producer/consumer solution for a global position 
 
 #### Unbounded creation patterns
 
-One common usage pattern is to create a default unbounded channel:
+One common usage pattern is to create a default *unbounded* channel:
 
 :::code language="csharp" source="snippets/channels/Program.Unbounded.cs" id="unbounded":::
 
-But instead, let's imagine that you want to create an unbounded channel with multiple producers and consumers:
+But instead, imagine that you want to create an unbounded channel with multiple producers and consumers. Set `SingleWriter = false` and `SingleReader = false` in the channel options:
 
 :::code language="csharp" source="snippets/channels/Program.Unbounded.cs" id="unboundedoptions":::
 
-In this case, all writes are synchronous, even the `WriteAsync`. This is because an unbounded channel always has available room for a write effectively immediately. However, with `AllowSynchronousContinuations` set to `true`, the writes may end up doing work associated with a reader by executing their continuations. This doesn't affect the synchronicity of the operation.
+In this case, all writes are synchronous, even `WriteAsync`. This behavior occurs because an unbounded channel always has available room for a write immediately. However, by setting `AllowSynchronousContinuations` to `true`, the writes might end up doing work associated with a reader by executing their continuations. This setting doesn't affect the synchronicity of the operation.
 
 #### Bounded creation patterns
 
-With bounded channels, the configurability of the channel should be known to the consumer to help ensure proper consumption. That is, the consumer should know what behavior the channel exhibits when the configured bound is reached. Let's explore some of the common bounded creation patterns.
+With *bounded* channels, the configurability of the channel should be known to the consumer to help ensure proper consumption. That is, the consumer should know what behavior the channel exhibits when the configured bound is reached. The following examples show some of the common bounded creation patterns.
 
-The simplest way to create a bounded channel is to specify a capacity:
+The simplest way to create a bounded channel is to specify a capacity. The following code creates a bounded channel with a max capacity of `1`.
 
 :::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedcapcity":::
 
-The preceding code creates a bounded channel with a max capacity of `1`. Other options are available, some options are the same as an unbounded channel, while others are specific to unbounded channels:
+Other options are available. Some options are the same as an unbounded channel, while others are specific to bounded channels. In the following code, the channel is created as a bounded channel that's limited to 1,000 items, with a single writer but many readers. Its full mode behavior is defined as `DropWrite`, which means that it drops the item being written if the channel is full.
 
 :::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedoptions":::
-
-In the preceding code, the channel is created as a bounded channel that's limited to 1,000 items, with a single writer but many readers. Its full mode behavior is defined as `DropWrite`, which means that it drops the item being written if the channel is full.
 
 To observe items that are dropped when using bounded channels, register an `itemDropped` callback:
 
@@ -165,6 +178,23 @@ In the preceding code, the consumer waits to read data. Once the data is availab
 :::code language="csharp" source="snippets/channels/Program.Consumer.cs" id="awaitforeach":::
 
 The preceding code uses the <xref:System.Threading.Channels.ChannelReader`1.ReadAllAsync*> method to read all of the coordinates from the channel.
+
+## Multiple producers and consumers
+
+Channels support multiple concurrent producers and consumers. To enable this, create a channel with `SingleWriter = false` and `SingleReader = false` in the channel options. You then fan-out writing across multiple producer tasks and fan-in reading across multiple consumer tasks.
+
+:::code language="csharp" source="snippets/channels/Program.MultipleReadersWriters.cs" id="multiplerw":::
+
+The preceding code:
+
+- Creates an unbounded channel that explicitly supports multiple concurrent writers and readers.
+- Starts three concurrent producer tasks, each writing a series of coordinates with a unique device identifier.
+- Starts two concurrent consumer tasks, each reading from the same channel using `ReadAllAsync`.
+- Waits for all producers to finish, then calls <xref:System.Threading.Channels.ChannelWriter`1.Complete*> to signal that no more data is written to the channel.
+- Waits for all consumers to finish draining the remaining data from the channel.
+
+> [!TIP]
+> With multiple producers, only call `channel.Writer.Complete()` after **all** producers finish writing. This signals that no more data is written, allowing `ReadAllAsync()` to complete after consuming all remaining items.
 
 ## See also
 

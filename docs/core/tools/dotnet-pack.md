@@ -115,7 +115,7 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
   --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
   ```
 
-   For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference).
+  For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference).
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -231,5 +231,5 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 - Pack a *.nuspec* file directly and use token replacement (.NET 10 SDK and later):
 
   ```dotnetcli
-  dotnet pack MyPackage.nuspec --property Version=1.2.3 --property Configuration=Release --output ./artifacts
+  dotnet pack MyPackage.nuspec --property:Version=1.2.3 --property:Configuration=Release --output ./artifacts
   ```

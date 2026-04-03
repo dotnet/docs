@@ -51,7 +51,7 @@ The `record` modifier gives both classes and structs compiler-generated, propert
 
 - **Plain class**: Uses *reference equality* by default. The `==` operator checks whether two variables point to the same object, not whether the data matches.
 - **Plain struct**: Supports value equality through <xref:System.ValueType.Equals*?displayProperty=nameWithType>, but the default implementation uses reflection, which is slower and doesn't generate `==`/`!=` operators.
-- **`record class`**: The compiler generates `Equals`, `GetHashCode`, and `==`/`!=` that compare every property value. Two distinct objects with the same data are equal.
+- **`record class`**: The compiler generates `Equals` and `GetHashCode` methods, and `==`/`!=` operators, that compare every property value. Two distinct objects with the same data are equal.
 - **`record struct`**: Same compiler-generated equality as a `record class`, but without using reflection, which makes it faster than plain struct equality.
 
 The following example demonstrates record class equality:

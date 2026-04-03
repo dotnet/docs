@@ -16,7 +16,7 @@ A *class* is a reference type that defines a blueprint for objects. When you cre
 
 ## Declare a class
 
-Define a class with the `class` keyword followed by the type name. An optional access modifier controls visibility. The default is `internal`:
+Define a class with the `class` keyword followed by the type name. An optional [access modifier](../../language-reference/keywords/access-modifiers.md) controls visibility. The default is `internal`:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ClassDeclaration":::
 

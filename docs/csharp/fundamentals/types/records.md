@@ -37,7 +37,7 @@ Create and use record instances the same way you create any object:
 
 ## `record class` vs. `record struct`
 
-Because the `record` modifier preserves the underlying type's semantics, a `record class` and a `record struct` behave differently when you assign or compare references. Assigning a record class copies the reference. Both variables point to the same object. Assigning a record struct copies the data, so changes to one variable don't affect the other:
+Because the `record` modifier preserves the underlying type's semantics, a `record class` and a `record struct` behave differently when you assign or compare references. Assigning a `record class` copies the reference. Both variables point to the same object. Assigning a `record struct` copies the data, so changes to one variable don't affect the other:
 
 :::code language="csharp" source="snippets/records/RecordStruct.cs" ID="RecordClassVsStruct":::
 

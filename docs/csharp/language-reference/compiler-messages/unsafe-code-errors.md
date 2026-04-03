@@ -100,19 +100,19 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0193**](#pointer-operations-and-dereferencing): *The \* or -> operator must be applied to a pointer*
 - [**CS0196**](#pointer-operations-and-dereferencing): *A pointer must be indexed by only one value*
 - [**CS0208**](#pointer-types-and-managed-types): *Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')*
-- [**CS0209**](#fixed-statement-usage): *The type of a local declared in a fixed statement must be a pointer type*
-- [**CS0210**](#fixed-statement-usage): *You must provide an initializer in a fixed or `using` statement declaration*
+- [**CS0209**](#fixed-statement-usage): *The type of a local declared in a `fixed` statement must be a pointer type*
+- [**CS0210**](#fixed-statement-usage): *You must provide an initializer in a `fixed` or `using` statement declaration*
 - [**CS0211**](#fixed-statement-usage): *Cannot take the address of the given expression*
-- [**CS0212**](#fixed-statement-usage): *You can only take the address of an unfixed expression inside of a fixed statement initializer*
-- [**CS0213**](#fixed-statement-usage): *You cannot use the fixed statement to take the address of an already fixed expression*
-- [**CS0214**](#unsafe-context-requirements): *Pointers and fixed size buffers may only be used in an unsafe context*
-- [**CS0227**](#unsafe-context-requirements): *Unsafe code may only appear if compiling with /unsafe*
+- [**CS0212**](#fixed-statement-usage): *You can only take the address of an unfixed expression inside of a `fixed` statement initializer*
+- [**CS0213**](#fixed-statement-usage): *You cannot use the `fixed` statement to take the address of an already fixed expression*
+- [**CS0214**](#unsafe-context-requirements): *Pointers and fixed-size buffers may only be used in an unsafe context*
+- [**CS0227**](#unsafe-context-requirements): *Unsafe code may only appear if compiling with `/unsafe`*
 - [**CS0233**](#pointer-types-and-managed-types): *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
 - [**CS0242**](#pointer-operations-and-dereferencing): *The operation in question is undefined on void pointers*
 - [**CS0244**](#unsafe-context-requirements): *Neither '`is`' nor '`as`' is valid on pointer types*
 - [**CS0254**](#fixed-statement-usage): *The right hand side of a fixed statement assignment may not be a cast expression*
 - [**CS0459**](#fixed-statement-usage): *Cannot take the address of a read-only local variable*
-- [**CS0821**](#fixed-statement-usage): *Implicitly-typed local variables cannot be fixed*
+- [**CS0821**](#fixed-statement-usage): *Implicitly typed local variables cannot be fixed*
 - [**CS1641**](#fixed-size-buffers): *A fixed size buffer field must have the array size specifier after the field name*
 - [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
 - [**CS1656**](#fixed-statement-usage): *Cannot assign to 'variable' because it is a 'read-only variable type'*
@@ -171,7 +171,7 @@ To work with pointers and the `sizeof` operator correctly, use unmanaged types a
 - **CS0213**: *You cannot use the fixed statement to take the address of an already fixed expression*
 - **CS0254**: *The right hand side of a fixed statement assignment may not be a cast expression*
 - **CS0459**: *Cannot take the address of a read-only local variable*
-- **CS0821**: *Implicitly-typed local variables cannot be fixed*
+- **CS0821**: *Implicitly typed local variables cannot be fixed*
 - **CS1656**: *Cannot assign to 'variable' because it is a 'read-only variable type'*
 
 These errors occur when you use the [`fixed` statement](../statements/fixed.md) incorrectly. The `fixed` statement prevents the garbage collector from relocating a movable variable and declares a pointer to that variable. For more information, see [Unsafe code and pointers](../unsafe-code.md).

@@ -63,7 +63,7 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 - `PROJECT` is the path to a `.csproj`, `.vbproj`, or `.fsproj` file, or to a directory containing a project file.
 - `SOLUTION` is the path to a solution file (`.sln` or `.slnx` extension), or to a directory containing a solution file.
 - `NUSPEC` is the path to a `.nuspec` file. Available starting in .NET 10.
-- `FILE` is the path to a file-based app (a C# file without a corresponding project file). Available starting in .NET 10. For more information, see [Build file-based C# apps](../../../csharp/fundamentals/tutorials/file-based-programs.md).
+- `FILE` is the path to a file-based app (a C# file without a corresponding project file). Available starting in .NET 10. For more information, see [Build file-based C# apps](../../csharp/fundamentals/tutorials/file-based-programs.md).
 
   If not specified, the command searches the current directory for a project or solution file.
 

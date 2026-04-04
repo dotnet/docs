@@ -407,6 +407,7 @@ The following MSBuild properties are documented in this section:
 - [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [SelfContained](#selfcontained)
 - [UseAppHost](#useapphost)
+- [UseNativeLibPrefix](#usenativelibprefix)
 
 ### AppendTargetFrameworkToOutputPath
 
@@ -677,6 +678,20 @@ The `UseAppHost` property controls whether or not a native executable is created
 ```
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
+
+### UseNativeLibPrefix
+
+The `UseNativeLibPrefix` property controls whether NativeAOT applies the `lib` prefix to non-executable native library outputs on Unix platforms. By default, the `lib` prefix is applied, which aligns with Unix naming conventions for shared and static libraries (for example, `libmylib.so`, `libmylib.a`).
+
+Set `UseNativeLibPrefix` to `false` to opt out of the default behavior:
+
+```xml
+<PropertyGroup>
+  <UseNativeLibPrefix>false</UseNativeLibPrefix>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 11. For more information, see [NativeAOT uses lib prefix for native library outputs on Unix](../compatibility/interop/11/nativeaot-lib-prefix.md).
 
 ## Trim-related properties
 

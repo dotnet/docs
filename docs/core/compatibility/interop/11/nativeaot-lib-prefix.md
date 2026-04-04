@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # NativeAOT uses lib prefix for native library outputs on Unix
 
-Starting in .NET 11, NativeAOT applies the `lib` prefix (for example, `libfoo.so`, `libfoo.dylib`, `libfoo.a`) by default to non-executable native library outputs on Unix platforms. A new MSBuild property, `UseNativeLibPrefix`, lets you opt out of this behavior.
+Starting in .NET 11, NativeAOT applies the `lib` prefix (for example, `libmylib.so`, `libmylib.dylib`, `libmylib.a`) by default to non-executable native library outputs on Unix platforms. A new MSBuild property, `UseNativeLibPrefix`, lets you opt out of this behavior.
 
 ## Version introduced
 
@@ -17,15 +17,15 @@ Starting in .NET 11, NativeAOT applies the `lib` prefix (for example, `libfoo.so
 
 Previously, NativeAOT didn't apply the `lib` prefix to native library outputs on Unix. For example:
 
-- A shared library output was named `foo.so`.
-- A static library output was named `foo.a`.
+- A shared library output was named `mylib.so`.
+- A static library output was named `mylib.a`.
 
 ## New behavior
 
 Starting in .NET 11, NativeAOT applies the `lib` prefix by default to non-executable native library outputs on Unix. For example:
 
-- A shared library output is now named `libfoo.so`.
-- A static library output is now named `libfoo.a`.
+- A shared library output is now named `libmylib.so`.
+- A static library output is now named `libmylib.a`.
 
 To opt out of the new behavior, set `UseNativeLibPrefix` to `false` in your project file:
 

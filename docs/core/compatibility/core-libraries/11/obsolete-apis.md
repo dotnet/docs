@@ -30,7 +30,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## Recommended action
 
-- Follow the specific guidance provided for the each diagnostic ID using the URL link provided on the warning.
+- Follow the specific guidance provided for each diagnostic ID using the URL link provided on the warning.
 
 - Warnings or errors for these obsoletions can't be suppressed using the standard diagnostic ID for obsolete types or members; use the custom `SYSLIBxxxx` diagnostic ID value instead.
 

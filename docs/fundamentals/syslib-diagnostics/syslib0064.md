@@ -13,7 +13,7 @@ Starting in .NET 11, the <xref:System.Security.Cryptography.RSACryptoServiceProv
 
 ## Reason for obsoletion
 
-When the `fOAEP` parameter is `true`, these methods always use SHA-1 as the digest algorithm for Optimal Asymmetric Encryption Padding (OAEP). The hash algorithm is implicit and can't be changed. Developers are encouraged to use overloads that accept an explicit <xref:System.Security.Cryptography.RSAEncryptionPadding> argument. These overloads make the hash algorithm explicit rather than implicit, allow greater flexibility in the choice of hash algorithm, and help prevent accidental use of OAEP-SHA-1 when a stronger digest would be more appropriate.
+When the `fOAEP` parameter is `true`, these methods always use SHA-1 as the digest algorithm for Optimal Asymmetric Encryption Padding (OAEP). The hash algorithm is implicit and can't be changed. Use overloads that accept an explicit <xref:System.Security.Cryptography.RSAEncryptionPadding> argument instead. These overloads make the hash algorithm explicit, give you more flexibility when you choose a hash algorithm, and help you avoid accidental use of OAEP-SHA-1. When you require OAEP, prefer `RSAEncryptionPadding.OaepSHA256` or stronger instead of migrating to `RSAEncryptionPadding.OaepSHA1` by default, unless you need SHA-1 for compatibility.
 
 ## Workaround
 

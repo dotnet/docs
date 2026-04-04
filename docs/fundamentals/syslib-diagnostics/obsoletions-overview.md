@@ -1,7 +1,7 @@
 ---
 title: Obsolete features in .NET 5+
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 11/12/2025
+ms.date: 04/03/2026
 ai-usage: ai-assisted
 ---
 

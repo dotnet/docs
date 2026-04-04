@@ -19,14 +19,12 @@ When the `fOAEP` parameter is `true`, these methods always use SHA-1 as the dige
 
 Replace calls to the obsolete overloads with the corresponding overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> argument:
 
-| Obsolete call | Replacement |
-|---|---|
-| `Encrypt(data, fOAEP: true)` | `Encrypt(data, RSAEncryptionPadding.OaepSHA1)` |
-| `Encrypt(data, fOAEP: false)` | `Encrypt(data, RSAEncryptionPadding.Pkcs1)` |
-| `Decrypt(data, fOAEP: true)` | `Decrypt(data, RSAEncryptionPadding.OaepSHA1)` |
-| `Decrypt(data, fOAEP: false)` | `Decrypt(data, RSAEncryptionPadding.Pkcs1)` |
-
-If you're using OAEP padding, consider using a stronger digest algorithm such as SHA-256 by specifying <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256?displayProperty=nameWithType> instead of <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1?displayProperty=nameWithType>.
+| Obsolete call                 | Replacement                                    |
+|-------------------------------|------------------------------------------------|
+| `Encrypt(data, fOAEP: true)`  | `Encrypt(data, RSAEncryptionPadding.OaepSHA1)` |
+| `Encrypt(data, fOAEP: false)` | `Encrypt(data, RSAEncryptionPadding.Pkcs1)`    |
+| `Decrypt(data, fOAEP: true)`  | `Decrypt(data, RSAEncryptionPadding.OaepSHA1)` |
+| `Decrypt(data, fOAEP: false)` | `Decrypt(data, RSAEncryptionPadding.Pkcs1)`    |
 
 ## Suppress a warning
 

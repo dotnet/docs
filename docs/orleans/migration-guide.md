@@ -176,6 +176,7 @@ public class MyClass
         Dependency = dependency;
     }
 
+    [field: NonSerialized]
     public IMyDependency Dependency { get; }
 }
 
@@ -192,6 +193,7 @@ public class MyClass
         Dependency = dependency;
     }
 
+    [field: NonSerialized]
     public IMyDependency Dependency { get; }
 }
 ```

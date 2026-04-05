@@ -170,7 +170,7 @@ public class MyClass
     [Id(0)]
     public string Value { get; set; }
 
-    [OrleansConstructor] // Obsolete
+    [OrleansConstructor] // Obsolete and ignored
     public MyClass(IMyDependency dependency)
     {
         Dependency = dependency;

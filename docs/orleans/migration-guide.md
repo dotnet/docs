@@ -156,7 +156,7 @@ public interface IMyGrain : IGrainWithStringKey
 
 ### Breaking change: `OrleansConstructorAttribute` obsoleted
 
-The `OrleansConstructorAttribute` has been obsoleted. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> or `ActivatorUtilitiesConstructorAttribute` instead to specify which constructor the serializer should use.
+The `OrleansConstructorAttribute` has been obsoleted. Because it derives from <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute>, replace it with that attribute when you need to specify which constructor the serializer should use to create an instance from serialized data. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> only when generated activators should call a specific constructor, such as one which takes injected dependencies that are not part of the serialized state.
 
 ```csharp
 // Orleans 7.x
@@ -171,7 +171,7 @@ public class MyClass
 [GenerateSerializer]
 public class MyClass
 {
-    [GeneratedActivatorConstructor]
+    [ActivatorUtilitiesConstructor]
     public MyClass(string value) { }
 }
 ```

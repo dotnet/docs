@@ -7,6 +7,7 @@ public static class Program
     public static void Main()
     {
         // <EqualityTest>
+        // Person is a record type with three properties: FirstName, LastName, and PhoneNumbers.
         var phones = new string[] { "555-1234" };
         var person1 = new Person("Grace", "Hopper", phones);
         var person2 = new Person("Grace", "Hopper", phones);

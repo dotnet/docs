@@ -112,7 +112,7 @@ In cases where a loss of precision is likely to affect the result of a compariso
 
 ## Floating-point values and exceptions
 
-Unlike operations with integral types—which throw a <xref:System.DivideByZeroException> for division by zero, or throw an <xref:System.OverflowException> for overflow in a [checked context](../../csharp/language-reference/statements/checked-and-unchecked.md) (by default in C#, integer overflow doesn't throw)—operations with floating-point values don't throw exceptions. Instead, in exceptional situations, the result of a floating-point operation is zero, positive infinity, negative infinity, or not a number (NaN):
+Unlike operations with integral types, which throw a <xref:System.DivideByZeroException> for division by zero or an <xref:System.OverflowException> for overflow in a [checked context](../../csharp/language-reference/statements/checked-and-unchecked.md), operations with floating-point values don't throw exceptions. Instead, in exceptional situations, the result of a floating-point operation is zero, positive infinity, negative infinity, or not a number (NaN):
 
 - If the result of a floating-point operation is too small for the destination format, the result is zero. This can occur when two very small numbers are multiplied, as the following example shows.
 

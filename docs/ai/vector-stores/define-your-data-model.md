@@ -11,8 +11,8 @@ ai-usage: ai-assisted
 
 All methods to upsert or get records use strongly typed model classes. There are two ways to define the data model:
 
-- By decorating properties on the model classes with [attributes](#data-model-property-attributes) that indicate the purpose of each property.
-- By defining your storage schema using a *record definition* that you supply separately from the data model. The record definition is a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> that contains [properties](#record-definition-properties).
+- By decorating properties on the model classes with [attributes](#data-model-properties) that indicate the purpose of each property.
+- By defining your storage schema using a *record definition* that you supply separately from the data model. The record definition is a <xref:Microsoft.Extensions.VectorData.VectorStoreCollectionDefinition> that contains [properties](#data-model-properties).
 
 ## [Attributes](#tab/attributes)
 

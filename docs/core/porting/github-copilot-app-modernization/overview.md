@@ -3,7 +3,7 @@ title: GitHub Copilot modernization overview
 description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
 titleSuffix: ""
 ms.topic: overview
-ms.date: 03/04/2026
+ms.date: 04/06/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to learn about what GitHub Copilot modernization is, so that I understand its capabilities and how I can take advantage of it.
@@ -24,9 +24,26 @@ Use this agent to:
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
 
+## Scenarios
+
+The agent provides multiple end-to-end modernization workflows called _scenarios_. Each scenario is a managed workflow that guides you through a specific type of upgrade or migration:
+
+| Scenario | Description | Example prompt |
+|---|---|---|
+| **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later | *"Upgrade my solution to .NET 10"* |
+| **Aspire integration** | Adds .NET Aspire orchestration to your solution | *"Add Aspire to my solution"* |
+| **Aspire version upgrade** | Upgrades existing .NET Aspire projects to a newer version | *"Upgrade Aspire to latest"* |
+| **SDK-style conversion** | Converts legacy project format to SDK-style | *"Convert to SDK-style"* |
+| **Newtonsoft.Json migration** | Replaces Newtonsoft.Json with System.Text.Json | *"Migrate from Newtonsoft.Json"* |
+| **SqlClient migration** | Migrates from System.Data.SqlClient to Microsoft.Data.SqlClient | *"Update SqlClient"* |
+| **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model | *"Upgrade my Azure Functions"* |
+| **Semantic Kernel to Agents** | Migrates Semantic Kernel Agents to Microsoft Agents AI | *"Migrate my SK agents"* |
+
+For a full reference of all scenarios and 30+ built-in migration skills, see [Scenarios and skills reference](scenarios-and-skills.md).
+
 ## Provide feedback
 
-Microsoft values your feedback and uses it to improve this agent. There are two ways to leave feedback:
+Microsoft values your feedback and uses it to improve the agent. There are two ways to leave feedback:
 
 - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) options.
 
@@ -38,26 +55,32 @@ Set up GitHub Copilot modernization in your development environment before using
 
 ## Upgrade .NET projects
 
-The modernization agent supports upgrading C# projects of the following types:
+The modernization agent supports upgrading C# and Visual Basic projects of the following types:
 
 - ASP.NET Core (and related technologies such as MVC, Razor Pages, and Web API)
 - Blazor
 - Azure Functions
 - Windows Presentation Foundation (WPF)
 - Windows Forms
+- WinUI
+- .NET MAUI and Xamarin
 - Class libraries
 - Console apps
+- Test projects (MSTest, NUnit, and xUnit)
 
 To start an upgrade, see [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md).
 
-### Upgrade paths
+### Supported upgrade paths
 
 The agent supports the following upgrade paths:
 
-- Upgrade projects from older .NET versions to the latest.
-- Upgrade .NET Framework projects to .NET.
-- Modernize your code base by using new features.
-- Migrate components and services to Azure.
+| Source | Target |
+|---|---|
+| .NET Framework (any version) | .NET 8, 9, 10, or later |
+| .NET Core 1.x–3.x | .NET 8, 9, 10, or later |
+| .NET 5–7 | .NET 8, 9, 10, or later |
+| .NET 8 | .NET 9, 10, or later |
+| .NET 9 | .NET 10 or later |
 
 ## Migrate .NET projects to Azure
 
@@ -129,28 +152,68 @@ To start an upgrade or migration process, see:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-When you ask the modernization agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot runs a three-stage workflow. Each stage writes a Markdown file under `.github/upgrades` in your repository so you can review what comes next before you continue. If `.github/upgrades` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+When you ask the modernization agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot runs a four-phase workflow. Each phase produces Markdown files under `.github/upgrades/{scenarioId}` in your repository so you can review what comes next before you continue. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
-- **Assessment stage (`assessment.md`)**\
-Copilot examines your project structure, dependencies, and code patterns to build a comprehensive assessment. The document lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope so you know exactly what needs attention.
+The four phases are:
 
-- **Planning stage (`plan.md`)**\
-Copilot converts the assessment into a detailed specification that explains how to resolve every problem. The plan documents upgrade strategies, refactoring approaches, dependency upgrade paths, and risk mitigations.
+1. **Assessment** — Copilot examines your project structure, dependencies, and code patterns to build a comprehensive assessment. The `assessment.md` file lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope.
 
-- **Execution stage (`tasks.md`)**\
-Copilot breaks the plan into sequential, concrete tasks with validation criteria. Each task describes a single change and how Copilot confirms it succeeded.
+1. **Upgrade options** — Copilot presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Confirmed decisions are saved to `upgrade-options.md`.
 
-Edit any of the Markdown files in `.github/upgrades` to adjust upgrade steps or add context before you move forward.
+1. **Planning** — Copilot converts the assessment and your confirmed options into a detailed specification. The `plan.md` file documents upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
+
+1. **Execution** — Copilot breaks the plan into sequential, concrete tasks with validation criteria in `tasks.md`. Each task describes a single change and how Copilot confirms it succeeded.
+
+Edit any of the Markdown files in `.github/upgrades/{scenarioId}` to adjust upgrade steps or add context before you move forward.
+
+### Upgrade strategies
+
+During the upgrade options phase, the agent evaluates your solution and recommends one of these strategies:
+
+| Strategy | Best for | Description |
+|---|---|---|
+| **Bottom-up** | Large solutions with deep dependency graphs | Upgrades leaf projects first, then works upward |
+| **Top-down** | Quick feedback on the main application | Upgrades the application project first, then fixes dependencies |
+| **All-at-once** | Small, simple solutions | Upgrades all projects in one pass |
+
+### Flow modes
+
+The agent supports two flow modes that control how much it pauses for your input:
+
+- **Automatic** — The agent works through all stages without pausing, stopping only at genuine blockers. Best for experienced users and straightforward upgrades.
+- **Guided** — The agent pauses at each stage boundary so you can review the assessment, plan, and tasks before proceeding. Best for first-time users and complex solutions.
+
+Switch between modes at any time by saying "pause" (to enter guided mode) or "continue" (to enter automatic mode).
+
+### State management
+
+The agent stores all upgrade state in `.github/upgrades/{scenarioId}/`. This folder contains:
+
+| File | Purpose |
+|---|---|
+| `assessment.md` | Analysis of your solution |
+| `upgrade-options.md` | Confirmed upgrade decisions |
+| `plan.md` | Ordered task plan |
+| `tasks.md` | Live progress dashboard |
+| `scenario-instructions.md` | Agent's persistent memory—preferences, decisions, and custom instructions |
+| `execution-log.md` | Detailed audit trail of all changes |
+| `tasks/{taskId}/task.md` | Per-task scope and context |
+| `tasks/{taskId}/progress-details.md` | Per-task execution notes and results |
+
+Because all state lives in this folder, you can close your IDE, switch between sessions, or even switch between development environments (for example, start in VS Code and continue in Visual Studio). The agent picks up where it left off.
+
+> [!TIP]
+> Commit the `.github/upgrades/` folder to your branch. The committed state serves as a backup and lets team members view upgrade progress.
 
 ### Perform the upgrade
 
-After each stage completes, review and modify the generated tasks as needed, and then tell Copilot to continue to the next stage.
+After each phase completes, review and modify the generated files as needed, and then tell Copilot to continue to the next phase.
 
-When you reach the **Execution stage**, tell Copilot to start the upgrade. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem comes up again.
+When you reach the **Execution** phase, tell Copilot to start the upgrade. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem comes up again.
 
 ### Upgrade results
 
-As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can roll back changes or review what changed.
+As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades/{scenarioId}` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can roll back changes or review what changed.
 
 When the upgrade finishes, Copilot displays next steps in the chat response.
 
@@ -162,5 +225,9 @@ The tool collects data about project types, intent to upgrade, and upgrade durat
 
 - [Install GitHub Copilot modernization](install.md)
 - [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Core concepts](concepts.md)
+- [Scenarios and skills reference](scenarios-and-skills.md)
+- [Best practices](best-practices.md)
+- [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
 - [Quickstart: Migrate a .NET project](../../../azure/migration/appmod/quickstart.md)
 - [GitHub Copilot modernization FAQ](faq.yml)

@@ -240,7 +240,7 @@ int GetWindowText(
 );
 ```
 
-A `char[]` can be dereferenced and modified by the callee. The recommended approach is to use <xref:System.Buffers.ArrayPool%601> to rent a `char[]`, which avoids repeated heap allocations. The following code example demonstrates this pattern.
+A `char[]` can be dereferenced and modified by the callee. The recommended approach is to use <xref:System.Buffers.ArrayPool`1> to rent a `char[]`, which avoids repeated heap allocations. The following code example demonstrates this pattern.
 
 ```csharp
 using System;
@@ -296,7 +296,7 @@ Public Class Window
 End Class
 ```
 
-You might also consider passing a <xref:System.Text.StringBuilder> instead of a <xref:System.String>. The buffer created when marshalling a `StringBuilder` can be dereferenced and modified by the callee, provided it doesn't exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaller provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` doesn't.
+You might also consider passing a <xref:System.Text.StringBuilder> instead of a <xref:System.String>. The buffer that's created when a `StringBuilder` is marshalled can be dereferenced and modified by the callee, provided it doesn't exceed the capacity of the `StringBuilder`. It can also be initialized to a fixed length. For example, if you initialize a `StringBuilder` buffer to a capacity of `N`, the marshaller provides a buffer of size (`N`+1) characters. The +1 accounts for the fact that the unmanaged string has a null terminator while `StringBuilder` doesn't.
 
 > [!CAUTION]
 > Avoid `StringBuilder` parameters when performance matters. Marshalling a `StringBuilder` *always* creates a native buffer copy. A typical call to get a string out of native code can result in four allocations:

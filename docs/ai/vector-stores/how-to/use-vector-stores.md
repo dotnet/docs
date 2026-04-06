@@ -101,7 +101,7 @@ The following table describes the available options:
 | `Skip`           | Number of results to skip before returning. Useful for paging. Default is `0`.                 |
 | `IncludeVectors` | Whether to include vector data in the returned records. Omitting vectors reduces data transfer. Default is `false`. |
 
-For more information, see [Vector search options](../vector-search.md#vector-search-options).
+For more information, see [Vector search](../vector-search.md#number-of-results-and-skipping-results).
 
 ## Use built-in embedding generation
 

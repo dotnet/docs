@@ -95,7 +95,7 @@ await foreach (var result in collection.SearchAsync("animals in the wild", top: 
 class Movie
 {
     [VectorStoreKey]
-    public Guid Key { get; set; }
+    public int Key { get; set; }
 
     [VectorStoreData]
     public string Title { get; set; }

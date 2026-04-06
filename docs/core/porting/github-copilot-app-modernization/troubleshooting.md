@@ -15,6 +15,8 @@ This article covers common issues you might encounter when using GitHub Copilot 
 
 ## Workflow issues
 
+These issues relate to scenario discovery, resuming work, and task state.
+
 ### Agent says "no scenarios found"
 
 **Cause:** The workspace isn't recognized as a .NET project.
@@ -63,6 +65,8 @@ Be explicit about what you want. Instead of *"upgrade my project,"* say:
 You can also add scenario preferences to `scenario-instructions.md` to prevent future mismatches.
 
 ## Build and compilation issues
+
+These issues relate to build failures, NuGet restore problems, and code generation errors.
 
 ### Build fails after agent's changes
 
@@ -125,6 +129,8 @@ You can also add scenario preferences to `scenario-instructions.md` to prevent f
 
 ## Performance issues
 
+These issues relate to upgrade speed and assessment duration.
+
 ### Agent is slow or takes a long time
 
 **Cause:** Large solutions with many projects, complex dependency graphs, or numerous breaking changes naturally take longer.
@@ -145,6 +151,8 @@ You can also add scenario preferences to `scenario-instructions.md` to prevent f
 1. The assessment only runs once per scenario. Subsequent phases use the cached results.
 
 ## Customization issues
+
+These issues relate to custom skills and scenario instruction files.
 
 ### Custom skill isn't picked up
 

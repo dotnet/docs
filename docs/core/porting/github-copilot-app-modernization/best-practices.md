@@ -15,6 +15,8 @@ Follow these guidelines to get the best results from GitHub Copilot modernizatio
 
 ## Before you start
 
+Prepare your project before starting an upgrade to get the best results.
+
 ### Verify that your solution builds and tests pass
 
 The agent validates every change it makes by running builds and tests. If your solution is already broken before you start, the agent can't distinguish pre-existing failures from problems it introduced.
@@ -52,6 +54,8 @@ If this is your first time using the agent, pick a small, low-risk project as a 
 
 ## During the upgrade
 
+Follow these guidelines while the agent works through your upgrade.
+
 ### Use guided mode for your first upgrade
 
 The agent supports both guided and automatic modes. In guided mode, the agent pauses at key decision points for your review and approval. Start with guided mode to understand what the agent does and why. Switch to automatic mode once you're comfortable with the workflow.
@@ -85,6 +89,8 @@ The agent learns from your corrections within a session. If the agent makes a ch
 
 ## Common pitfalls
 
+Watch for these common issues that can slow down or complicate an upgrade.
+
 ### Large solutions with 50+ projects
 
 The agent works project-by-project, so large solutions take time. Be patient and monitor progress. Consider starting with one representative project end-to-end before committing to the full solution. Doing so surfaces systemic issues early.
@@ -102,6 +108,8 @@ Complex build customizations—custom `.targets` files, conditional imports, or 
 Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so the agent can pick up where it left off. When you start a new session, mention where you were: *"Continue the .NET 10 upgrade—I was in the middle of the Data.Access project."*
 
 ## Collaborate effectively
+
+The quality of your interaction directly affects the quality of the results.
 
 ### Be specific about scope
 
@@ -144,6 +152,8 @@ Understanding the reasoning helps you give better feedback.
 If you have strong preferences about coding style, patterns, or approaches, add them to `scenario-instructions.md` in the first session. This file persists across sessions and is always in the agent's context, making it the most reliable way to influence behavior.
 
 ## Recover from problems
+
+Use these strategies when the upgrade doesn't go as expected.
 
 ### Build failures after a task
 

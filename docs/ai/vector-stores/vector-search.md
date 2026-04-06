@@ -33,7 +33,7 @@ For more information on embedding generation, see [Vector properties and embeddi
 
 ## Number of results and skipping results
 
-<xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> has a mandatory `top` parameter which controls the maximum number of records returned from the search; always consider how many top records you actually need, as overfetching can reduce application performance:
+<xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> has a mandatory `top` parameter that controls the maximum number of records returned from the search. Always consider how many top records you actually need, as overfetching can reduce application performance:
 
 ```csharp
 IAsyncEnumerable<VectorSearchResult<Hotel>> searchResult = collection.SearchAsync("Big rooms with a view", top: 3);
@@ -48,7 +48,7 @@ IAsyncEnumerable<VectorSearchResult<Product>> results = collection.SearchAsync(
     new() { Skip = 40 });
 ```
 
-`top` and `Skip` can be used to perform paging to retrieve a large number of results using separate calls. However, this technique may not perform very well on your database, as it must still find and process the skipped records. Consult your database documentation for more information.
+`top` and `Skip` can be used to perform paging to retrieve a large number of results using separate calls. However, this technique might not perform well on your database, as it must still find and process the skipped records. For more information, consult your database documentation.
 
 ### Metadata filtering
 
@@ -86,7 +86,7 @@ IAsyncEnumerable<VectorSearchResult<Glossary>> results = collection.SearchAsync(
 
 ### Include vectors in results
 
-By default, vector properties are not included in the search results, to reduce data transfer. You can configure the search to include them:
+By default, vector properties aren't included in the search results, which reduces data transfer. You can configure the search to include them:
 
 ```csharp
 IAsyncEnumerable<VectorSearchResult<Product>> results = collection.SearchAsync(
@@ -95,7 +95,7 @@ IAsyncEnumerable<VectorSearchResult<Product>> results = collection.SearchAsync(
     new() { IncludeVectors = true });
 ```
 
-## Specifying the vector property
+## Specify the vector property
 
 In most scenarios, only a single vector property is defined in the data model, and `SearchAsync` automatically searches against it. However, when multiple vector properties are defined, you must specify which one should be used:
 
@@ -152,7 +152,7 @@ IAsyncEnumerable<VectorSearchResult<Hotel>> results = hybridCollection.HybridSea
     top: 3);
 ```
 
-All the options described above for vector search (`top`, `Skip`, `Filter`, `IncludeVectors`, `VectorProperty`) are also available for hybrid search via <xref:Microsoft.Extensions.VectorData.HybridSearchOptions`1>.
+All the options described for vector search (`top`, `Skip`, `Filter`, `IncludeVectors`, `VectorProperty`) are also available for hybrid search via <xref:Microsoft.Extensions.VectorData.HybridSearchOptions`1>.
 
 In addition, hybrid search supports an `AdditionalProperty` option for specifying which full-text search property to target. If your data model has only one property with `IsFullTextIndexed = true`, it's used automatically; if there are multiple, you must specify which one:
 

@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Manage data
 
-Once you've [defined your data model](./define-your-data-model.md) and obtained a <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>, you can manage records in your vector store collection. This page covers the core data management operations: upserting, deleting, and retrieving records. Searching your data using vector similarity is covered in the [next section](./vector-search.md).
+Once you've [defined your data model](./define-your-data-model.md) and obtained a <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>, you can manage records in your vector store collection. This article covers the core data management operations: upserting, deleting, and retrieving records. Searching your data using vector similarity is covered in [Vector search](./vector-search.md).
 
 All the examples below use the following data model, which uses [automatic embedding generation](./define-your-data-model.md#automatic-embedding-generation-recommended):
 
@@ -120,7 +120,7 @@ Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.GetAsync*> to 
 Hotel? hotel = await collection.GetAsync(key: 1);
 ```
 
-`GetAsync` returns the record if found, or `null` if no record with the given key exists:
+`GetAsync` returns the record if found, or `null` if no record with the given key exists.
 
 To retrieve multiple records at once, pass a collection of keys. This overload returns an `IAsyncEnumerable<TRecord>` containing only the records that were found:
 
@@ -138,7 +138,7 @@ await foreach (Hotel hotel in hotels)
 
 ### Include vectors in results
 
-By default, vector properties are not included in the retrieved records, to reduce data transfer. To include them, pass a <xref:Microsoft.Extensions.VectorData.RecordRetrievalOptions> with <xref:Microsoft.Extensions.VectorData.RecordRetrievalOptions.IncludeVectors> set to `true`:
+By default, vector properties aren't included in the retrieved records, which reduces data transfer. To include them, pass a <xref:Microsoft.Extensions.VectorData.RecordRetrievalOptions> with <xref:Microsoft.Extensions.VectorData.RecordRetrievalOptions.IncludeVectors> set to `true`:
 
 ```csharp
 var hotel = await collection.GetAsync(
@@ -164,7 +164,7 @@ await foreach (Hotel hotel in hotels)
 Filters are expressed as LINQ expressions. The supported expressions vary depending on the database provider, but all providers support common comparisons such as equality, inequality, and logical `&&` and `||`.
 
 > [!IMPORTANT]
-> For properties to be usable in filters, many databases require them to be indexed; even where indexes aren't required, they can greatly increase the performance of filters. Set `IsIndexed = true` on the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> when defining your data model to enable this. For more information, see [Data property](./define-your-data-model.md#data-property).
+> For properties to be usable in filters, many databases require them to be indexed. Even where indexes aren't required, they can greatly increase the performance of filters. Set `IsIndexed = true` on the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> when defining your data model. For more information, see [Data property](./define-your-data-model.md#data-property).
 
 ### Filter options
 

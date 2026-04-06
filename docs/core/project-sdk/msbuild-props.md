@@ -134,6 +134,9 @@ The `TargetFramework` property specifies the target framework version for the ap
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> The `TargetFramework` value is an alias. The .NET SDK parses it and sets the canonical moniker properties: `TargetFrameworkMoniker`, `TargetFrameworkIdentifier`, `TargetFrameworkVersion`, and, if applicable, `TargetPlatformIdentifier`, `TargetPlatformVersion`, and `TargetPlatformMoniker`. If you use a custom alias, you can set these properties directly in your project file.
+
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
 ### TargetFrameworks
@@ -148,6 +151,9 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
   <TargetFrameworks>net8.0;net462</TargetFrameworks>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> Starting with .NET SDK 10.0.300, multiple values can resolve to the same effective framework. For example, `net10.0-linux;net10.0-mac` both resolve to `net10.0`.
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 

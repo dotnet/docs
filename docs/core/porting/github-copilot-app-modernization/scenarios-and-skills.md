@@ -1,5 +1,5 @@
 ---
-title: Scenarios and skills reference for GitHub Copilot modernization
+title: GitHub Copilot modernization scenarios and skills
 description: "Complete reference of all scenarios and built-in migration skills available in GitHub Copilot modernization for .NET, organized by domain."
 ms.topic: concept-article
 ms.date: 04/06/2026
@@ -27,16 +27,16 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 
 | Scenario | What it does | Example prompt |
 |---|---|---|
-| [**.NET version upgrade**](#net-version-upgrade) | Upgrades projects from any older .NET version to .NET 8, 9, 10, or later | *"Upgrade my solution to .NET 10"* |
-| [**Aspire integration**](#aspire-integration) | Adds .NET Aspire orchestration for inner-loop development and optional Azure deployment | *"Add Aspire to my solution"* |
-| [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire projects to a newer Aspire version with code transforms and TFM updates | *"Upgrade my Aspire project to latest"* |
-| [**SDK-style conversion**](#sdk-style-conversion) | Converts legacy project files to modern SDK-style format | *"Convert my projects to SDK-style"* |
-| [**Newtonsoft.Json migration**](#newtonsoftjson-migration) | Replaces Newtonsoft.Json with System.Text.Json across a solution | *"Migrate from Newtonsoft.Json"* |
-| [**SqlClient migration**](#sqlclient-migration) | Migrates System.Data.SqlClient to Microsoft.Data.SqlClient | *"Update SqlClient to the modern package"* |
-| [**Azure Functions upgrade**](#azure-functions-upgrade) | Migrates Azure Functions from in-process to isolated worker model | *"Upgrade my Azure Functions"* |
-| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agents AI Framework | *"Migrate my SK agents"* |
+| [**.NET version upgrade**](#net-version-upgrade) | Upgrades projects from any older .NET version to .NET 8, 9, 10, or later. | *"Upgrade my solution to .NET 10"* |
+| [**Aspire integration**](#aspire-integration) | Adds .NET Aspire orchestration for inner-loop development and optional Azure deployment. | *"Add Aspire to my solution"* |
+| [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire projects to a newer Aspire version with code transforms and TFM updates. | *"Upgrade my Aspire project to latest"* |
+| [**SDK-style conversion**](#sdk-style-conversion) | Converts legacy project files to modern SDK-style format. | *"Convert my projects to SDK-style"* |
+| [**Newtonsoft.Json migration**](#newtonsoftjson-migration) | Replaces Newtonsoft.Json with System.Text.Json across a solution. | *"Migrate from Newtonsoft.Json"* |
+| [**SqlClient migration**](#sqlclient-migration) | Migrates System.Data.SqlClient to Microsoft.Data.SqlClient. | *"Update SqlClient to the modern package"* |
+| [**Azure Functions upgrade**](#azure-functions-upgrade) | Migrates Azure Functions from in-process to isolated worker model. | *"Upgrade my Azure Functions"* |
+| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agents AI Framework. | *"Migrate my SK agents"* |
 
-For a detailed walkthrough of how scenarios work end to end, see [Core concepts](concepts.md).
+For a detailed walkthrough of how scenarios work end-to-end, see [Core concepts](concepts.md).
 
 ### .NET version upgrade
 
@@ -96,7 +96,7 @@ Migrates Azure Functions from the in-process hosting model to the isolated worke
 
 Migrates from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to the Microsoft Agents AI Framework. Updates packages and API patterns.
 
-## Migration skills—common
+## Migration skills: common
 
 General-purpose migration skills that apply across project types.
 
@@ -113,7 +113,7 @@ General-purpose migration skills that apply across project types.
 | **Modernizing C# version** | Upgrades C# code to use newer language features (C# 7.0 through 15). Batches mechanical changes through `dotnet format` and uses LLM judgment for semantic transformations. |
 | **Migrating C# nullable references** | Enables nullable reference types and systematically resolves all CS86xx warnings. Covers rollout strategies, annotation guidance, and framework-specific considerations. |
 
-## Migration skills—data access
+## Migration skills: data access
 
 Skills for migrating data access layers, including Entity Framework, LINQ to SQL, and SQL client libraries.
 
@@ -125,7 +125,7 @@ Skills for migrating data access layers, including Entity Framework, LINQ to SQL
 | **Migrating LINQ to SQL to EF Core** | Migrates `System.Data.Linq` to EF Core. Converts `DataContext` to `DbContext` and handles stored procedures. |
 | **Migrating to Microsoft.Data.SqlClient** | Migrates from `System.Data.SqlClient`. Handles the `Encrypt=true` default change and connection string differences. |
 
-## Migration skills—web and ASP.NET
+## Migration skills: web and ASP.NET
 
 Skills for migrating ASP.NET Framework applications to ASP.NET Core.
 
@@ -167,9 +167,9 @@ Skills for migrating ASP.NET Framework applications to ASP.NET Core.
 
 | Skill | What it does |
 |---|---|
-| **Migrating WCF to CoreWCF** | Migrates server-side WCF services to CoreWCF for .NET 6+. Converts hosting, bindings, behavior extensions, and async contracts. |
+| **Migrating WCF to CoreWCF** | Migrates server-side WCF services to [CoreWCF](https://github.com/CoreWCF/CoreWCF) for .NET 6+. Converts hosting, bindings, behavior extensions, and async contracts. |
 
-## Migration skills—cloud and Azure
+## Migration skills: cloud and Azure
 
 | Skill | What it does |
 |---|---|
@@ -181,7 +181,7 @@ Skills for migrating ASP.NET Framework applications to ASP.NET Core.
 | **Migrating CosmosDB Bulk Executor** | Migrates the CosmosDB Bulk Executor library to modern Cosmos SDK bulk operations. |
 | **Migrating DocumentDB to Cosmos** | Migrates the DocumentDB SDK to the Azure Cosmos DB SDK. |
 
-## Migration skills—libraries
+## Migration skills: libraries
 
 | Skill | What it does |
 |---|---|

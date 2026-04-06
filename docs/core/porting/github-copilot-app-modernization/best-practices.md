@@ -41,6 +41,20 @@ git status
 
 The agent also works with folders that aren't under source control. If your project isn't in a Git repository, the agent skips branch and commit operations. In this case, back up your project folder before starting so you can restore it if needed.
 
+Consider initializing a local Git repository before starting the upgrade, even if you don't push to a cloud provider. A local Git repository gives you:
+
+- The ability to roll back individual changes with `git revert`.
+- A commit history that tracks upgrade progress step by step.
+- Granular control over which changes to keep or discard.
+- A safety net—your original code stays on the main branch while the agent works on a separate branch.
+
+```console
+cd your-project-folder
+git init
+git add .
+git commit -m "Baseline before upgrade"
+```
+
 ### Review your test coverage
 
 The agent relies on tests to validate that its changes don't break behavior. Projects with good test coverage get higher-confidence upgrades.
@@ -78,7 +92,10 @@ The agent generates a task plan based on its assessment. Review the plan before 
 - Are there dependencies the agent might not know about?
 - Should any projects be excluded or handled differently?
 
-You can ask the agent to reorder tasks, skip projects, or change its approach. You know your codebase better than the agent—use that knowledge.
+You can ask the agent to reorder tasks, skip projects, or change its approach. You know your codebase better than the agent—use that knowledge. You can also edit the `plan.md` file directly to adjust task order, add tasks, or remove tasks.
+
+> [!CAUTION]
+> Be careful when editing `plan.md` directly. The agent might not fully interpret your changes if they create contradictory instructions—for example, removing a dependency project while keeping the projects that depend on it.
 
 ### Give feedback immediately
 
@@ -172,7 +189,7 @@ If the agent's overall approach doesn't work for your codebase, restart the plan
 
 ### Agent stuck in a loop
 
-If the agent repeats the same fix without progress, say *"Stop"* and describe what you're observing. The agent can reset its approach and try something different.
+If the agent repeats the same fix without progress, say *"Stop"* and describe what you're observing, or stop the session manually. The agent can reset its approach and try something different.
 
 ### Undo all changes
 

@@ -78,7 +78,7 @@ The following table shows the configuration settings for `VectorStoreKeyProperty
 
 ### Data property
 
-Data properties hold general-purpose content such as text, tags, or other metadata that are retrieved when searching for records, and can optionally also be indexed for filtering.
+Data properties hold general-purpose content such as text, tags, or other metadata that is retrieved when searching for records, and can optionally also be indexed for filtering.
 
 #### [Attribute](#tab/data-attribute)
 

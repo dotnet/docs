@@ -156,7 +156,7 @@ public interface IMyGrain : IGrainWithStringKey
 
 ### Breaking change: `OrleansConstructorAttribute` obsoleted
 
-The `OrleansConstructorAttribute` has been obsoleted. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> or <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> instead. Only apply these attributes to constructors which require services to be injected via dependency injection. Don't use them to indicate how Orleans should set serialized data properties or fields.
+The `OrleansConstructorAttribute` has been obsoleted. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> or <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> instead. Only apply these attributes to constructors that require services to be injected via dependency injection. Don't use them to indicate how Orleans should set serialized data properties or fields.
 
 ```csharp
 public interface IMyDependency

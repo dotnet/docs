@@ -58,7 +58,7 @@ Use <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.UpsertAsync*> 
 :::code language="csharp" source="../snippets/how-to/Program.cs" id="UpsertRecords":::
 
 > [!IMPORTANT]
-> In a real app, it's recommended to [let MEVD generate embeddings](../embedding-generation.md#let-the-vector-store-generate-embeddings) before storing the records.
+> In a real app, it's recommended to [let MEVD generate embeddings](../define-your-data-model.md#automatic-embedding-generation-recommended) before storing the records.
 
 ## Get records
 
@@ -107,7 +107,7 @@ For more information, see [Vector search options](../vector-search.md#vector-sea
 
 Instead of generating embeddings manually before each upsert, you can configure an `IEmbeddingGenerator` on the vector store or collection. When you do, declare your vector property as a `string` type (the source text) and the store generates the embedding automatically.
 
-For more information, see [Let the vector store generate embeddings](../embedding-generation.md#let-the-vector-store-generate-embeddings).
+For more information, see [Automatic embedding generation](../define-your-data-model.md#automatic-embedding-generation-recommended).
 
 ## Hybrid search
 
@@ -115,7 +115,7 @@ Some vector stores support *hybrid search*, which combines vector similarity wit
 
 To use hybrid search, check whether your collection implements <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1>. Only providers for databases that support this feature implement this interface.
 
-For more information, see [Hybrid search using vector store providers](../hybrid-search.md).
+For more information, see [Hybrid search](../vector-search.md#hybrid-search).
 
 ## Delete records
 

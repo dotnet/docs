@@ -39,15 +39,16 @@ The record-definition approach can be useful when:
 
 ---
 
-## Data model property attributes
+## Data model properties
 
-The `VectorStore*Attribute` attributes that define data models for vector databases are:
+> [!NOTE]
+> The .NET property types supported for keys, data, and vectors vary across databases. Check the documentation of your chosen vector store provider for details on supported types.
 
-- [VectorStoreKeyAttribute](#vectorstorekeyattribute)
-- [VectorStoreDataAttribute](#vectorstoredataattribute)
-- [VectorStoreVectorAttribute](#vectorstorevectorattribute)
+### Key property
 
-### VectorStoreKeyAttribute
+Each data model must have a key property that uniquely identifies each record in the collection.
+
+#### [Attribute](#tab/key-attribute)
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute> attribute to indicate that your property is the primary key of the record.
 
@@ -59,56 +60,7 @@ The following table shows the parameters for `VectorStoreKeyAttribute`.
 |---------------|:--------:|-------------|
 | <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter isn't supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
 
-### VectorStoreDataAttribute
-
-Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> attribute to indicate that your property contains general data that is not a key or a vector.
-
-:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreDataAttribute":::
-
-The following table shows the parameters for `VectorStoreDataAttribute`.
-
-| Parameter   | Required | Description |
-|-------------|:--------:|-------------|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> | No | Indicates whether the property should be indexed for filtering in cases where a database requires opting in to indexing per property. The default is `false`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> | No | Indicates whether the property should be indexed for full text search for databases that support full text search. The default is `false`. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
-
-### VectorStoreVectorAttribute
-
-Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> attribute to indicate that your property contains a vector.
-
-:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreVectorAttribute1":::
-
-It's also possible to use <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> on properties that don't have a vector type, for example, a property of type `string`. When a property is decorated in this way, you need to provide an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator> instance to the vector store. When upserting the record, the text that's in the `string` property is automatically converted and stored as a vector in the database. (It's not possible to retrieve a vector using this mechanism.)
-
-```csharp
-[VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
-public string DescriptionEmbedding { get; set; }
-```
-
-> [!TIP]
-> For more information on how to use built-in embedding generation, see [Let the vector store generate embeddings](embedding-generation.md#let-the-vector-store-generate-embeddings).
-
-The following table shows the parameters for `VectorStoreVectorAttribute`.
-
-| Parameter    | Required | Description |
-|--------------|:--------:|-------------|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions> | Yes | The number of dimensions that the vector has. This is required when creating a vector index for a collection. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind> | No | The type of index to index the vector with. Default varies by vector store type. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName> | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
-
-Common index kinds and distance function types are supplied as static values on the <xref:Microsoft.Extensions.VectorData.IndexKind> and <xref:Microsoft.Extensions.VectorData.DistanceFunction> classes. Individual vector store implementations might also use their own index kinds and distance functions, where the database supports unusual types.
-
-## Record definition properties
-
-Use the `VectorStore*Property` classes to create a record definition that you pass to the data model:
-
-- [VectorStoreKeyProperty](#vectorstorekeyproperty)
-- [VectorStoreDataProperty](#vectorstoredataproperty)
-- [VectorStoreVectorProperty](#vectorstorevectorproperty)
-
-### VectorStoreKeyProperty
+#### [Record definition](#tab/key-record-definition)
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreKeyProperty> class to indicate that your property is the key of the record.
 
@@ -122,7 +74,27 @@ The following table shows the configuration settings for `VectorStoreKeyProperty
 | `Type`        | No       | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
 | `StorageName` | No       | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
 
-### VectorStoreDataProperty
+---
+
+### Data property
+
+Data properties hold general-purpose content such as text, tags, or other metadata that are retrieved when searching for records, and can optionally also be indexed for filtering.
+
+#### [Attribute](#tab/data-attribute)
+
+Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute> attribute to indicate that your property contains general data that is not a key or a vector.
+
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreDataAttribute":::
+
+The following table shows the parameters for `VectorStoreDataAttribute`.
+
+| Parameter                                                                         | Required | Description |
+|-----------------------------------------------------------------------------------|:--------:|-------------|
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed>         | No       | Indicates whether the property should be indexed for filtering in cases where a database requires opting in to indexing per property. The default is `false`. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed> | No       | Indicates whether the property should be indexed for full text search for databases that support full text search. The default is `false`. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.StorageName>       | No       | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` are supported. |
+
+#### [Record definition](#tab/data-record-definition)
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataProperty> class to indicate that your property contains general data that isn't a key or a vector.
 
@@ -130,15 +102,46 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreDataProperty> class to 
 
 The following table shows the configuration settings for `VectorStoreDataProperty`.
 
-| Parameter | Required | Description |
-|-----------|:--------:|-------------|
-| `Name` | Yes | The name of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
-| `Type` | No | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
-| `IsIndexed` | No | Indicates whether the property should be indexed for filtering in cases where a database requires opting in to indexing per property. Default is false. |
-| `IsFullTextIndexed` | No | Indicates whether the property should be indexed for full text search for databases that support full text search. Default is false. |
-| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| Parameter           | Required | Description |
+|---------------------|:--------:|-------------|
+| `Name`              | Yes      | The name of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
+| `Type`              | No       | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
+| `IsIndexed`         | No       | Indicates whether the property should be indexed for filtering in cases where a database requires opting in to indexing per property. Default is false. |
+| `IsFullTextIndexed` | No       | Indicates whether the property should be indexed for full text search for databases that support full text search. Default is false. |
+| `StorageName`       | No       | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
 
-### VectorStoreVectorProperty
+---
+
+### Vector property
+
+Vector properties contain the embedding vectors used for similarity search; in advanced scenarios, a data model can have multiple vector properties to support searching over different aspects of the record.
+
+#### [Attribute](#tab/vector-attribute)
+
+Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> attribute to indicate that your property contains a vector.
+
+:::code language="csharp" source="./snippets/conceptual/defining-your-data-model.cs" id="VectorStoreVectorAttribute1":::
+
+It's also possible to use <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> on properties that don't have a vector type, for example, a property of type `string`. When a property is decorated in this way, you need to provide an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator> instance to the vector store. When upserting the record, the text that's in the `string` property is automatically converted and stored as a vector in the database. (It's not possible to retrieve a vector using this mechanism.)
+
+```csharp
+[VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
+public string DescriptionEmbedding { get; set; }
+```
+
+> [!TIP]
+> For more information on how to use built-in embedding generation, see [Vector properties and embedding generation](#vector-properties-and-embedding-generation).
+
+The following table shows the parameters for `VectorStoreVectorAttribute`.
+
+| Parameter                                                                          | Required | Description |
+|------------------------------------------------------------------------------------|:--------:|-------------|
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions>       | Yes      | The number of dimensions that the vector has. This is required when creating a vector index for a collection. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind>        | No       | The type of index to index the vector with. Default varies by vector store type. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No       | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
+| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName>      | No       | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+
+#### [Record definition](#tab/vector-record-definition)
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorProperty> class to indicate that your property contains a vector.
 
@@ -146,19 +149,82 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorProperty> class t
 
 The following table shows the configuration settings for `VectorStoreVectorProperty`.
 
-| Parameter    | Required | Description                                                                      |
-|--------------|:--------:|----------------------------------------------------------------------------------|
-| `Name`       | Yes      | The name of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
-| `Type`       | No       | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes. |
-| `Dimensions` | Yes      | The number of dimensions that the vector has. This is required for creating a vector index for a collection. |
-| `IndexKind`  | No       | The type of index to index the vector with. Default varies by vector store type. |
-| `DistanceFunction` | No | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
-| `StorageName` | No | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
-| `EmbeddingGenerator` | No | Allows specifying a `Microsoft.Extensions.AI.IEmbeddingGenerator` instance to use for generating embeddings automatically for the decorated property. |
+| Parameter            | Required | Description                                                                                                                                                                                                  |
+|----------------------|:--------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Name`               | Yes      | The name of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes.                                                      |
+| `Type`               | No       | The type of the property on the data model. Used by the mapper to automatically map between the storage schema and data model and for creating indexes.                                                      |
+| `Dimensions`         | Yes      | The number of dimensions that the vector has. This is required for creating a vector index for a collection.                                                                                                 |
+| `IndexKind`          | No       | The type of index to index the vector with. Default varies by vector store type.                                                                                                                             |
+| `DistanceFunction`   | No       | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type.                                                                         |
+| `StorageName`        | No       | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
+| `EmbeddingGenerator` | No       | Allows specifying a `Microsoft.Extensions.AI.IEmbeddingGenerator` instance to use for generating embeddings automatically for the decorated property.                                                        |
 
-## Use vector store abstractions without defining a data model
+---
 
-There are cases where it isn't desirable or possible to define your own data model. For example, imagine that you don't know at compile time what your database schema looks like, and the schema is only provided via configuration. Creating a data model that reflects the schema would be impossible in this case. Instead, you can map *dynamically* by using a `Dictionary<string, object?>` for the record type. Properties are added to the `Dictionary` with key as the property name and the value as the property value.
+Common index kinds and distance function types are supplied as static values on the <xref:Microsoft.Extensions.VectorData.IndexKind> and <xref:Microsoft.Extensions.VectorData.DistanceFunction> classes. Individual vector store implementations might also use their own index kinds and distance functions, where the database supports unusual types.
+
+## Vector properties and embedding generation
+
+Vector databases are all about storing *embeddings* - or numerical representations of your data - which are generated by an embedding model. When storing or searching data, embedding generation must first be performed to convert the searchable data to such embeddings. MEVD provides two approaches to doing this:
+
+### Manual, low-level embedding generation
+
+You can define your vector property as `float[]` or `ReadOnlyMemory<float>`, representing the embedding directly, and generate embeddings yourself before each operation:
+
+```csharp
+[VectorStoreVector(Dimensions: 1536)]
+public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
+```
+
+When searching, you'd generate the embedding for your query text and pass it to `SearchAsync`:
+
+```csharp
+ReadOnlyMemory<float> searchEmbedding =
+    (await embeddingGenerator.GenerateAsync("Find a happy hotel")).Vector;
+
+var searchResult = collection.SearchAsync(searchEmbedding, top: 3);
+```
+
+While this works, it requires you to manage embedding generation at every call site.
+
+### Automatic embedding generation (recommended)
+
+The recommended approach is to configure an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> on your vector store. This lets you define your vector property using the source type (for example, `string`) instead of `float[]` or `ReadOnlyMemory<float>`. MEVD then handles embedding generation automatically during both upsert and search operations.
+
+First, define the vector property as `string`:
+
+```csharp
+[VectorStoreVector(Dimensions: 1536)]
+public string DescriptionEmbedding { get; set; }
+```
+
+Then, configure an embedding generator when creating your vector store:
+
+```csharp
+VectorStore vectorStore = new QdrantVectorStore(
+    new QdrantClient("localhost"),
+    ownsClient: true,
+    new QdrantVectorStoreOptions
+    {
+        EmbeddingGenerator = embeddingGenerator
+    });
+```
+
+You can now pass text directly - MEVD generates embeddings under the hood:
+
+```csharp
+// Search with a plain text query - embedding is generated automatically.
+var searchResult = collection.SearchAsync("Find a happy hotel", top: 3);
+```
+
+> [!IMPORTANT]
+> Vector properties configured this way don't support retrieving the generated vector or the original text from the database. If you need to store the original text, add a separate data property.
+
+Embedding generators can also be configured at the collection, record definition, or individual vector property level. Different embedding models support different vector sizes; make sure the `Dimensions` value matches the model you've configured. For more information on embedding generators and the `Microsoft.Extensions.AI` abstractions, see [Embeddings in .NET](../conceptual/embeddings.md).
+
+## Dynamic mapping to a .NET Dictionary
+
+There are cases where it isn't desirable or possible to map a strongly-typed .NET type to the database. For example, imagine that you don't know at compile time what your database schema looks like, and the schema is only provided via configuration. Creating a .NET type that reflects the schema would be impossible in this case. Instead, you can map *dynamically* by using a `Dictionary<string, object?>` for the record type. Properties are added to the `Dictionary` with key as the property name and the value as the property value.
 
 > [!NOTE]
 > Most apps will simply use strongly typed .NET types to model their data. Dynamic mapping via `Dictionary<string, object?>` is for advanced, arbitrary data-mapping scenarios.

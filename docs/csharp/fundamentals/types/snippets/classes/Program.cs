@@ -1,44 +1,101 @@
-﻿// <InstantiateClass>
-Customer object1 = new();
-// </InstantiateClass>
+﻿// --- Top-level statements ---
 
-// <DeclareVariable>
-Customer object2;
-// </DeclareVariable>
+// <CreateObject>
+var customer = new Customer("Allison");
+Console.WriteLine(customer.Name); // Allison
+// </CreateObject>
 
+// <ReferenceSemantics>
+var c1 = new Customer("Grace");
+var c2 = c1; // both variables reference the same object
 
-// <AssignReference>
-Customer object3 = new();
-Customer object4 = object3;
-// </AssignReference>
+c2.Name = "Hopper";
+Console.WriteLine(c1.Name); // Hopper — c1 sees the change made through c2
+// </ReferenceSemantics>
 
-/* 
-var p1 = new Person(); // Error! Required properties not set
-*/
-var p2 = new Person { FirstName = "Grace", LastName = "Hopper" };
+// <UsingRequired>
+// var missing = new Person(); // Error: required properties not set
+var person = new Person { FirstName = "Grace", LastName = "Hopper" };
+Console.WriteLine($"{person.FirstName} {person.LastName}"); // Grace Hopper
+// </UsingRequired>
+
+// <UsingStaticClass>
+double circumference = MathHelpers.CircleCircumference(5.0);
+Console.WriteLine($"Circumference: {circumference:F2}"); // Circumference: 31.42
+// </UsingStaticClass>
+
+// <UsingObjectInitializer>
+var options = new ConnectionOptions
+{
+    Host = "db.example.com",
+    Port = 5432,
+    UseSsl = true
+};
+Console.WriteLine($"{options.Host}:{options.Port} (SSL: {options.UseSsl})");
+// db.example.com:5432 (SSL: True)
+// </UsingObjectInitializer>
+
+// <CollectionInitializers>
+List<string> languages = ["C#", "F#", "Visual Basic"];
+
+// The spread operator (..) composes collections from existing sequences:
+List<string> moreLangs = [.. languages, "Python", "TypeScript"];
+Console.WriteLine(string.Join(", ", moreLangs));
+// C#, F#, Visual Basic, Python, TypeScript
+// </CollectionInitializers>
+
+// <Inheritance>
+var manager = new Manager("Satya", "Engineering");
+Console.WriteLine($"{manager.Name} manages {manager.Department}");
+// Satya manages Engineering
+// </Inheritance>
+
+// --- Type declarations ---
 
 // <ClassDeclaration>
-//[access modifier] - [class] - [identifier]
 public class Customer
 {
-   // Fields, properties, methods and events go here...
+    public string Name { get; set; }
+
+    public Customer(string name) => Name = name;
 }
 // </ClassDeclaration>
 
 // <RequiredProperties>
 public class Person
 {
-    public required string LastName { get; set; }
     public required string FirstName { get; set; }
+    public required string LastName { get; set; }
 }
 // </RequiredProperties>
 
-public class Employee {}
-
-// <DerivedClass>
-public class Manager : Employee
+// <StaticClass>
+static class MathHelpers
 {
-    // Employee fields, properties, methods and events are inherited
-    // New Manager fields, properties, methods and events go here...
+    public static double CircleCircumference(double radius) =>
+        2 * Math.PI * radius;
 }
-// </DerivedClass>
+// </StaticClass>
+
+// <ObjectInitializer>
+class ConnectionOptions
+{
+    public string Host { get; init; } = "localhost";
+    public int Port { get; init; } = 80;
+    public bool UseSsl { get; init; }
+}
+// </ObjectInitializer>
+
+class Employee
+{
+    public string Name { get; set; }
+    public Employee(string name) => Name = name;
+}
+
+class Manager : Employee
+{
+    public string Department { get; set; }
+
+    public Manager(string name, string department) : base(name) =>
+        Department = department;
+}

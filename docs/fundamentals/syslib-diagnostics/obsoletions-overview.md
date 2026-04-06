@@ -1,7 +1,7 @@
 ---
 title: Obsolete features in .NET 5+
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 11/12/2025
+ms.date: 04/03/2026
 ai-usage: ai-assisted
 ---
 
@@ -87,6 +87,7 @@ The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 | [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> instead. |
 | [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
 | [SYSLIB0062](syslib0062.md) | Warning | <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayProperty=nameWithType> is obsolete. |
+| [SYSLIB0064](syslib0064.md) | Warning | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. |
 
 ## EXTOBS obsoletions
 

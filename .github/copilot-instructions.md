@@ -40,8 +40,8 @@ If unsure, use API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/s
 
 Use the following rules to encode special characters in API doc IDs:
 
-1. Encode `#` as `%23` in API doc IDs. For example, `System.String.#ctor` becomes `System.String.%23ctor`.
-2. **DO NOT** encode `*` or \` (backtick) characters as `%2A` or `%60` respectively.
+- Encode `#` as `%23` in API doc IDs. For example, `System.String.#ctor` becomes `System.String.%23ctor`.
+- **DO NOT** encode `*` or \` (backtick) characters as `%2A` or `%60` respectively.
 
 ## Code Snippets
 

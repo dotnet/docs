@@ -40,7 +40,7 @@ C# provides [built-in types](built-in-types.md) for common data: integers, float
 Beyond built-in types, you can create your own types by using several constructs:
 
 - [**Classes**](classes.md) — Reference types for modeling behavior and complex objects. Support inheritance and polymorphism.
-- [**Structs**](../../language-reference/builtin-types/struct.md) — Value types for small, lightweight data. Each variable holds its own copy.
+- [**Structs**](structs.md) — Value types for small, lightweight data. Each variable holds its own copy.
 - [**Records**](records.md) — Classes or structs with compiler-generated equality, `ToString`, and nondestructive mutation through `with` expressions.
 - [**Interfaces**](interfaces.md) — Contracts that define members any class or struct can implement.
 - [**Enumerations**](enums.md) — Named sets of integral constants, such as days of the week or file access modes.

@@ -1,105 +1,118 @@
 ---
-title: "Classes in the C# type system."
-description: Learn about class types, how to use classes, and how to create new class type declarations for your app.
-ms.date: 10/10/2025
-helpviewer_keywords: 
-  - "classes [C#]"
-  - "C# language, classes"
+title: "C# classes"
+description: Learn how to define and use classes in C#, including reference type semantics, constructors, static classes, object initializers, collection initializers, and inheritance basics.
+ms.date: 03/25/2026
+ms.topic: concept-article
+ai-usage: ai-assisted
 ---
-# Introduction to classes
+# C# classes
 
-## Reference types
+> [!TIP]
+> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter classes once you need to model objects with behavior and state.
+>
+> **Experienced in another language?** C# classes are similar to classes in Java or C++. Skim the [object initializers](#object-initializers) and [collection initializers](#collection-initializers) sections for C#-specific patterns, and see [Records](records.md) for a data-focused alternative.
 
-A type that is defined as a [`class`](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [`null`](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [`new`](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type created elsewhere, as shown in the following example:
+A *class* is a reference type that defines a blueprint for objects. When you create a variable of a class type, the variable holds a *reference* to an object on the managed heap. The variable doesn't hold the object data itself. Assigning a class variable to another variable copies the reference, so both variables point to the same object. Classes are the most common way to define custom types in C#. Use them when you need complex behavior, inheritance, or shared identity between references.
 
-```csharp
-// Declaring an object of type MyClass.
-MyClass mc = new MyClass();
+## Declare a class
 
-// Declaring another object of the same type, assigning it the value of the first object.
-MyClass mc2 = mc;
-```
+Define a class with the `class` keyword followed by the type name. An optional [access modifier](../../language-reference/keywords/access-modifiers.md) controls visibility. The default is `internal`:
 
-When the object is created, enough memory is allocated on the managed heap for that specific object, and the variable holds only a reference to the location of said object. The memory used by an object is reclaimed by the automatic memory management functionality of the Common Language Runtime (CLR), which is known as *garbage collection*. For more information about garbage collection, see [Automatic memory management and garbage collection](../../../standard/garbage-collection/fundamentals.md).
+:::code language="csharp" source="snippets/classes/Program.cs" ID="ClassDeclaration":::
 
-## Declaring classes
+The class body contains fields, properties, methods, and events, collectively called *class members*. The name must be a valid C# [identifier name](../coding-style/identifier-names.md).
 
-Classes are declared by using the `class` keyword followed by a unique identifier, as shown in the following example:
+## Create objects
 
-:::code source="./snippets/classes/Program.cs" id="ClassDeclaration":::
+A class defines a type, but it isn't an object itself. You create an object (an *instance* of the class) with the `new` keyword:
 
-An optional access modifier precedes the `class` keyword. The default access for a `class` type is `internal`. Because [`public`](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../coding-style/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.
+:::code language="csharp" source="snippets/classes/Program.cs" ID="CreateObject":::
 
-## Creating objects
+The variable `customer` holds a reference to the object, not the object itself. You can assign multiple variables to the same object. Changes through one reference are visible through the other:
 
-Although they're sometimes used interchangeably, a class and an object are different things. A class defines a type of object, but it isn't an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.
+:::code language="csharp" source="snippets/classes/Program.cs" ID="ReferenceSemantics":::
 
-Objects can be created by using the `new` keyword followed by the name of the class, like this:
-
-:::code source="./snippets/classes/Program.cs" id="InstantiateClass":::
-
-When an instance of a class is created, a reference to the object is passed back to the programmer. In the previous example, `object1` is a reference to an object that is based on `Customer`. This reference refers to the new object but doesn't contain the object data itself. In fact, you can create an object reference without creating an object at all:
-
-:::code source="./snippets/classes/Program.cs" id="DeclareVariable":::
-
-We don't recommend creating object references that don't refer to an object because trying to access an object through such a reference fails at run time. A reference can refer to an object, either by creating a new object, or by assigning it an existing object, such as this:
-
-:::code source="./snippets/classes/Program.cs" id="AssignReference":::
-
-This code creates two object references that both refer to the same object. Therefore, any changes to the object made through `object3` are reflected in subsequent uses of `object4`. Because objects that are based on classes are referred to by reference, classes are known as reference types.
+This reference-sharing behavior is one distinction between classes and [structs](structs.md), where assignment copies the data. More importantly, classes support [inheritance](#inheritance). You can build hierarchies where derived types reuse and specialize behavior from a base class. Structs can't participate in inheritance hierarchies. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
 
 ## Constructors and initialization
 
-The preceding sections introduced the syntax to declare a class type and create an instance of that type. When you create an instance of a type, you want to ensure that its fields and properties are initialized to useful values. There are several ways to initialize values:
+When you create an instance, you want its fields and properties initialized to useful values. C# offers several approaches: field initializers, constructor parameters, primary constructors, and required properties.
 
-- Accept default values
-- Field initializers
-- Constructor parameters
-- Object initializers
+**[Field initializers](../../programming-guide/classes-and-structs/instance-constructors.md)** set a default value directly on the field declaration:
 
-Every .NET type has a default value. Typically, that value is 0 for number types, and `null` for all reference types. You can rely on that default value when it's reasonable in your app.
+:::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerFieldInitializer":::
 
-When the .NET default isn't the right value, you can set an initial value using a *field initializer*:
+Field initializers define *internal* defaults. They don't give callers any way to choose the initial value. To let consumers of the class supply a value, use one of the following techniques.
 
-:::code source="./snippets/classes/Containers.cs" id="ContainerFieldInitializer":::
+**Constructor parameters** require callers to provide values:
 
-You can require callers to provide an initial value by defining a *constructor* that's responsible for setting that initial value:
+:::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerConstructor":::
 
-:::code source="./snippets/classes/Containers.cs" id="ContainerConstructor":::
+**[Primary constructors](../../whats-new/tutorials/primary-constructors.md)** (C# 12+) add parameters directly to the class declaration. Those parameters are available throughout the class body:
 
-Beginning with C# 12, you can define a *primary constructor* as part of the class declaration:
+:::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerPrimaryConstructor":::
 
-:::code source="./snippets/classes/Containers.cs" id="ContainerPrimaryConstructor":::
+Primary constructors and field initializers can work together: the field initializer `_capacity = capacity` uses the primary-constructor parameter as its value. This pattern lets you capture constructor arguments in fields with a single, concise declaration.
 
-Adding parameters to the class name defines the *primary constructor*. Those parameters are available in the class body, which includes its members. You can use them to initialize fields or anywhere else where they're needed.
+**[Required properties](../../language-reference/keywords/required.md)** enforce that callers set specific properties through an object initializer:
 
-You can also use the `required` modifier on a property and allow callers to use an *object initializer* to set the initial value of the property:
+:::code language="csharp" source="snippets/classes/Program.cs" ID="RequiredProperties":::
 
-:::code source="./snippets/classes/Program.cs" id="RequiredProperties":::
+:::code language="csharp" source="snippets/classes/Program.cs" ID="UsingRequired":::
 
-The addition of the `required` keyword mandates that callers must set those properties as part of a `new` expression:
+For a deeper look at constructor patterns, including parameter validation and constructor chaining, see [Constructors](../../programming-guide/classes-and-structs/constructors.md).
 
-```csharp
-var p1 = new Person(); // Error! Required properties not set
-var p2 = new Person() { FirstName = "Grace", LastName = "Hopper" };
-```
+## Static classes
 
-## Class inheritance
+A `static` class can't be instantiated and contains only static members. Use static classes to organize utility methods that don't operate on instance data:
 
-Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other class that isn't defined as [`sealed`](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override class virtual methods. Furthermore, you can implement one or more interfaces.
+:::code language="csharp" source="snippets/classes/Program.cs" ID="StaticClass":::
 
-Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:
+:::code language="csharp" source="snippets/classes/Program.cs" ID="UsingStaticClass":::
 
-:::code source="./snippets/classes/Program.cs" id="DerivedClass":::
+The .NET class library includes many static classes, such as <xref:System.Math> and <xref:System.Console>. A static class is implicitly sealed. You can't derive from it or instantiate it.
 
-When a class declaration includes a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../object-oriented/inheritance.md).
+## Object initializers
 
-A class in C# can only directly inherit from one base class. However, because a base class can itself inherit from another class, a class might indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
+*[Object initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)* let you set properties when you create an object, without writing a constructor for every combination of values:
 
-A class can be declared as [`abstract`](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes can't be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class doesn't allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
+:::code language="csharp" source="snippets/classes/Program.cs" ID="ObjectInitializer":::
 
-Class definitions can be split between different source files. For more information, see [Partial Classes and Methods](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
+:::code language="csharp" source="snippets/classes/Program.cs" ID="UsingObjectInitializer":::
 
-## C# Language Specification
+Object initializers work with any accessible property that has a `set` or [`init`](../../language-reference/keywords/init.md) accessor. They combine naturally with `required` properties and with constructors that accept some parameters while letting the caller set others.
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+## Collection initializers
+
+A *collection* is a type that holds a group of related values—lists, sets, dictionaries, arrays, and spans are all common examples. The .NET class library provides general-purpose collection types such as <xref:System.Collections.Generic.List`1>, <xref:System.Collections.Generic.Dictionary`2>, and <xref:System.Collections.Generic.HashSet`1>, alongside arrays and <xref:System.Span`1>.
+
+*Collection expressions* (C# 12+) let you populate a collection inline when you create it using bracket syntax:
+
+:::code language="csharp" source="snippets/classes/Program.cs" ID="CollectionInitializers":::
+
+Collection expressions work with arrays, `List<T>`, `Span<T>`, and any type that supports collection initialization. The spread operator (`..`) adds all elements from its operand into the new collection. The operand doesn't have to be a full collection—it can be any expression that produces a sequence, such as a sub-range, a LINQ query, or a filtered subset. For more information, see [Collection expressions (C# reference)](../../language-reference/operators/collection-expressions.md).
+
+## Inheritance
+
+Classes support *inheritance*. You can define a new class that reuses, extends, or modifies the behavior of an existing class. The class you inherit from is the *base class*, and the new class is the *derived class*:
+
+:::code language="csharp" source="snippets/classes/Program.cs" ID="Inheritance":::
+
+A class can inherit from one base class and implement multiple interfaces. Derived classes inherit all members of the base class except constructors. For more information, see [Inheritance](../object-oriented/inheritance.md) and [Interfaces](interfaces.md).
+
+## When to use classes
+
+Use a class when:
+
+- The type has complex behavior or manages mutable state.
+- You need inheritance to create a base class with derived specializations, or to create a derived type that extends an existing class.
+- Instances represent a shared identity, not just a bundle of data (two references to the same object should stay in sync).
+- The type is large or long-lived and benefits from heap allocation and reference semantics.
+
+## See also
+
+- [Type system overview](index.md)
+- [Structs](structs.md)
+- [Records](records.md)
+- [Interfaces](interfaces.md)
+- [Inheritance](../object-oriented/inheritance.md)

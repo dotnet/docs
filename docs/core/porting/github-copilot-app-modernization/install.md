@@ -12,7 +12,7 @@ zone_pivot_groups: copilot-modernization-install
 
 # Install GitHub Copilot modernization
 
-GitHub Copilot modernization is available across multiple development environments. Choose your preferred environment to get started with installation and setup.
+GitHub Copilot modernization is available across multiple development environments. Choose your preferred environment to install and set up GitHub Copilot modernization.
 
 ::: zone pivot="visualstudio"
 
@@ -29,7 +29,7 @@ Before you install, make sure you have the following:
 
 ## Install
 
-GitHub Copilot modernization is included in Visual Studio and doesn't require a separate installation. Enable the **GitHub Copilot** and **GitHub Copilot modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
+Visual Studio includes GitHub Copilot modernization, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
 
 ## Verify the installation
 
@@ -59,7 +59,7 @@ The extension automatically acquires the .NET SDK if it's missing, registers too
 ## Verify the installation
 
 1. Open a project in Visual Studio Code.
-1. Open the Copilot chat and type `@modernize-dotnet`.
+1. Open **GitHub Copilot Chat** and type `@modernize-dotnet`.
 
 ::: zone-end
 
@@ -74,7 +74,7 @@ Before you install, make sure you have the following:
 
 ## Install
 
-Complete these three steps to install:
+To install:
 
 1. Open the GitHub Copilot chat window.
 
@@ -109,12 +109,12 @@ Before you install, make sure you have the following:
 
 Add the custom coding agent to your repository:
 
-1. Learn about [adding custom coding agents to your repo](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents).
+1. Review [adding custom coding agents to your repository](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents).
 1. Add the `modernize-dotnet` agent. See the [coding agent README](https://github.com/dotnet/modernize-dotnet/blob/main/coding-agent/README.md) for details.
 
 ## Verify the installation
 
-The `modernize-dotnet` agent appears as an available coding agent in your repository.
+Confirm that the `modernize-dotnet` agent appears as an available coding agent in your repository.
 
 ::: zone-end
 

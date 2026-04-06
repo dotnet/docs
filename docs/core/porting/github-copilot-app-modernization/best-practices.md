@@ -26,7 +26,7 @@ dotnet build YourSolution.sln
 dotnet test YourSolution.sln
 ```
 
-If there are known test failures, document them in `scenario-instructions.md` so the agent knows to ignore them.
+Document any known test failures in `scenario-instructions.md` so the agent knows to ignore them.
 
 ### Commit or stash uncommitted work
 
@@ -39,7 +39,7 @@ git status
 
 ### Back up non-Git repositories
 
-The agent also works with folders that aren't under source control. If your project isn't in a Git repository, the agent skips branch and commit operations. In this case, back up your project folder before starting so you can restore it if needed.
+The agent also works with folders that aren't under source control. If your project isn't in a Git repository, the agent skips branch and commit operations. If so, back up your project folder before starting so you can restore it if needed.
 
 Consider initializing a local Git repository before starting the upgrade, even if you don't push to a cloud provider. A local Git repository gives you:
 
@@ -92,7 +92,7 @@ The agent generates a task plan based on its assessment. Review the plan before 
 - Are there dependencies the agent might not know about?
 - Should any projects be excluded or handled differently?
 
-You can ask the agent to reorder tasks, skip projects, or change its approach. You know your codebase better than the agent—use that knowledge. You can also edit the `plan.md` file directly to adjust task order, add tasks, or remove tasks.
+Ask the agent to reorder tasks, skip projects, or change its approach. You know your codebase better than the agent—use that knowledge. Edit the `plan.md` file directly to adjust task order, add tasks, or remove tasks.
 
 > [!CAUTION]
 > Be careful when editing `plan.md` directly. The agent might not fully interpret your changes if they create contradictory instructions—for example, removing a dependency project while keeping the projects that depend on it.
@@ -101,7 +101,7 @@ You can ask the agent to reorder tasks, skip projects, or change its approach. Y
 
 The agent learns from your corrections within a session. If the agent makes a choice you disagree with:
 
-- Tell it right away: *"Don't use that pattern, use X instead."*
+- Tell it right away: _"Don't use that pattern, use X instead."_
 - Add persistent guidance to `scenario-instructions.md` so the agent remembers across tasks and sessions.
 
 ## Common pitfalls
@@ -122,7 +122,7 @@ Complex build customizations—custom `.targets` files, conditional imports, or 
 
 ### Session timeouts
 
-Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so the agent can pick up where it left off. When you start a new session, mention where you were: *"Continue the .NET 10 upgrade—I was in the middle of the Data.Access project."*
+Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so the agent can pick up where it left off. When you start a new session, mention where you were: _"Continue the .NET 10 upgrade—I was in the middle of the Data.Access project."_
 
 ## Collaborate effectively
 
@@ -134,33 +134,33 @@ The more specific you are, the better the agent performs:
 
 | Instead of | Try |
 |---|---|
-| *"Upgrade everything"* | *"Upgrade the Data.Access project to .NET 10"* |
-| *"Fix the build"* | *"Fix the build error in CustomerService.cs related to the removed API"* |
-| *"Migrate the database stuff"* | *"Migrate Entity Framework 6 to EF Core in the Repository project"* |
+| _"Upgrade everything"_ | _"Upgrade the Data.Access project to .NET 10"_ |
+| _"Fix the build"_ | _"Fix the build error in CustomerService.cs related to the removed API"_ |
+| _"Migrate the database stuff"_ | _"Migrate Entity Framework 6 to EF Core in the Repository project"_ |
 
 ### Share your constraints
 
 Tell the agent about real-world constraints upfront:
 
-- *"We can't break backward compatibility for the public API."*
-- *"We have a release deadline in two weeks—prioritize the web projects."*
-- *"The legacy reporting module should be excluded from this upgrade."*
+- _"We can't break backward compatibility for the public API."_
+- _"We have a release deadline in two weeks—prioritize the web projects."_
+- _"The legacy reporting module should be excluded from this upgrade."_
 
 ### Explain your architecture
 
 The agent analyzes code structure, but it doesn't know your team's mental model. Help the agent understand:
 
-- *"Project A is our shared library—B, C, and D all depend on it."*
-- *"The WebApi project is our public-facing API; Internal.Api is for internal services only."*
-- *"The Models project is auto-generated from our OpenAPI spec—don't modify it directly."*
+- _"Project A is our shared library—B, C, and D all depend on it."_
+- _"The WebApi project is our public-facing API; Internal.Api is for internal services only."_
+- _"The Models project is auto-generated from our OpenAPI spec—don't modify it directly."_
 
 ### Ask why
 
 The agent can explain its reasoning. If a decision doesn't look right, ask:
 
-- *"Why did you choose bottom-up order?"*
-- *"Why are you upgrading this package to version X instead of Y?"*
-- *"Why did you break this into sub-tasks?"*
+- _"Why did you choose bottom-up order?"_
+- _"Why are you upgrading this package to version X instead of Y?"_
+- _"Why did you break this into sub-tasks?"_
 
 Understanding the reasoning helps you give better feedback.
 
@@ -174,7 +174,7 @@ Use these strategies when the upgrade doesn't go as expected.
 
 ### Build failures after a task
 
-Tell the agent: *"The build is failing after the last task."* The agent analyzes the error and attempts to fix it. If the agent can't resolve the issue:
+Tell the agent: _"The build is failing after the last task."_ The agent analyzes the error and attempts to fix it. If the agent can't resolve the issue:
 
 1. Provide a manual fix and tell the agent what you did—the agent learns from it.
 1. Revert the commit (`git revert` or reset to the previous commit) and ask the agent to try a different approach.
@@ -184,12 +184,12 @@ Tell the agent: *"The build is failing after the last task."* The agent analyzes
 
 If the agent's overall approach doesn't work for your codebase, restart the planning phase:
 
-- *"Let's redo the plan—I want to upgrade the web projects first instead of bottom-up."*
-- *"Change the strategy to upgrade all shared libraries in one batch."*
+- _"Let's redo the plan—I want to upgrade the web projects first instead of bottom-up."_
+- _"Change the strategy to upgrade all shared libraries in one batch."_
 
 ### Agent stuck in a loop
 
-If the agent repeats the same fix without progress, say *"Stop"* and describe what you're observing, or stop the session manually. The agent can reset its approach and try something different.
+If the agent repeats the same fix without progress, say _"Stop"_ and describe what you're observing, or stop the session manually. The agent can reset its approach and try something different.
 
 ### Undo all changes
 
@@ -204,8 +204,8 @@ Your original code is untouched. If you're working without source control, resto
 
 ## Security and privacy
 
-- **Code snippets** sent to GitHub Copilot for analysis are processed according to [GitHub's Copilot privacy policy](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-chat-in-your-ide) and aren't retained beyond the immediate session.
-- **Workflow files** (`scenario-instructions.md`, custom tasks, preferences) are stored locally in your repository under `.github/upgrades/`. These files aren't transmitted to external services.
+- **Code snippets** — GitHub Copilot processes these according to [GitHub's Copilot privacy policy](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-chat-in-your-ide) and doesn't retain them beyond the immediate session.
+- **Workflow files** (`scenario-instructions.md`, custom tasks, preferences) are stored locally in your repository under `.github/upgrades/`. GitHub doesn't transmit these files to external services.
 - **The `.github/upgrades/` folder** is part of your repository. Commit the folder—it contains your upgrade progress and state. The agent needs the folder to resume work across sessions. You can remove it after the upgrade is complete.
 - **Telemetry** can be disabled through your IDE's telemetry settings.
 

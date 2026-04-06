@@ -16,10 +16,10 @@ GitHub Copilot modernization for .NET helps you modernize through _scenarios_ an
 - **Scenarios** are end-to-end managed workflows for major upgrade goals, such as upgrading from .NET Framework to .NET 10. Scenarios coordinate the full lifecycle: assessment, planning, and task-by-task execution.
 - **Skills** are focused capabilities for specific migration tasks, such as converting EF6 to EF Core or replacing WCF with CoreWCF. Skills activate automatically when the agent encounters relevant code during an upgrade.
 
-Both C# and Visual Basic projects are supported.
+The agent supports both C# and Visual Basic projects.
 
 > [!TIP]
-> You don't need to memorize names. Describe what you want—*"upgrade to .NET 10"*, *"migrate my EF6 code"*, *"replace Newtonsoft.Json"*—and the agent loads the right scenario and skills automatically. You can also ask: *"What can you help me with?"*
+> You don't need to memorize names. Describe what you want—_"upgrade to .NET 10"_, _"migrate my EF6 code"_, _"replace Newtonsoft.Json"_—and the agent loads the right scenario and skills automatically. You can also ask: _"What can you help me with?"_
 
 ## Scenarios
 
@@ -27,14 +27,14 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 
 | Scenario | What it does | Example prompt |
 |---|---|---|
-| [**.NET version upgrade**](#net-version-upgrade) | Upgrades projects from any older .NET version to .NET 8, 9, 10, or later. | *"Upgrade my solution to .NET 10"* |
-| [**Aspire integration**](#aspire-integration) | Adds .NET Aspire orchestration for inner-loop development and optional Azure deployment. | *"Add Aspire to my solution"* |
-| [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire projects to a newer Aspire version with code transforms and TFM updates. | *"Upgrade my Aspire project to latest"* |
-| [**SDK-style conversion**](#sdk-style-conversion) | Converts legacy project files to modern SDK-style format. | *"Convert my projects to SDK-style"* |
-| [**Newtonsoft.Json migration**](#newtonsoftjson-migration) | Replaces Newtonsoft.Json with System.Text.Json across a solution. | *"Migrate from Newtonsoft.Json"* |
-| [**SqlClient migration**](#sqlclient-migration) | Migrates System.Data.SqlClient to Microsoft.Data.SqlClient. | *"Update SqlClient to the modern package"* |
-| [**Azure Functions upgrade**](#azure-functions-upgrade) | Migrates Azure Functions from in-process to isolated worker model. | *"Upgrade my Azure Functions"* |
-| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agents AI Framework. | *"Migrate my SK agents"* |
+| [**.NET version upgrade**](#net-version-upgrade) | Upgrades projects from any older .NET version to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
+| [**Aspire integration**](#aspire-integration) | Adds .NET Aspire orchestration for inner-loop development and optional Azure deployment. | _"Add Aspire to my solution"_ |
+| [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire projects to a newer Aspire version with code transforms and TFM updates. | _"Upgrade my Aspire project to latest"_ |
+| [**SDK-style conversion**](#sdk-style-conversion) | Converts legacy project files to modern SDK-style format. | _"Convert my projects to SDK-style"_ |
+| [**Newtonsoft.Json migration**](#newtonsoftjson-migration) | Replaces Newtonsoft.Json with System.Text.Json across a solution. | _"Migrate from Newtonsoft.Json"_ |
+| [**SqlClient migration**](#sqlclient-migration) | Migrates System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient to the modern package"_ |
+| [**Azure Functions upgrade**](#azure-functions-upgrade) | Migrates Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
+| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agents AI Framework. | _"Migrate my SK agents"_ |
 
 For a detailed walkthrough of how scenarios work end-to-end, see [Core concepts](concepts.md).
 
@@ -78,7 +78,7 @@ Supports upgrades from any Aspire version (8.x, 9.x, 13.0) to the latest, handli
 
 ### SDK-style conversion
 
-Converts legacy `.csproj` and `.vbproj` files to the modern SDK-style format without changing target frameworks. The agent handles the conversion automatically when needed during version upgrades, but you can also run this scenario independently.
+Converts legacy `.csproj` and `.vbproj` files to the modern SDK-style format without changing target frameworks. The agent handles the conversion automatically during version upgrades. Run this scenario independently if needed.
 
 ### Newtonsoft.Json migration
 
@@ -206,13 +206,13 @@ The agent loads skills progressively as your upgrade session unfolds:
 |---|---|
 | **Session start** | The agent loads the matching scenario and any skills that are immediately relevant to your codebase. |
 | **During execution** | As the agent works through tasks, it loads extra specialized skills on demand when it encounters specific migration patterns, such as EDMX files, WCF services, or OWIN middleware. |
-| **On request** | You can ask the agent to use any skill at any time—*"help me migrate WCF to CoreWCF"* or *"use the EF6 migration skill."* |
+| **On request** | You can ask the agent to use any skill at any time—_"help me migrate WCF to CoreWCF"_ or _"use the EF6 migration skill."_ |
 
 You don't need to manage skill loading. The agent handles it automatically—just describe what you need.
 
 ## Create your own skills
 
-You can create custom skills to teach the agent patterns specific to your codebase, such as internal framework migrations, coding conventions, or custom upgrade workflows.
+Create custom skills to teach the agent patterns specific to your codebase, such as internal framework migrations, coding conventions, or custom upgrade workflows.
 
 Place skills in your repository (`.github/skills/`) or user profile (`%UserProfile%/.copilot/skills/`), and the agent picks them up automatically.
 

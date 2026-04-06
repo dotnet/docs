@@ -31,15 +31,15 @@ Customize the agent's behavior in real time through natural conversation. The ag
 
 | You say | What happens |
 |---|---|
-| *"From now on, always commit after each task"* | Saved to `scenario-instructions.md` as an execution preference |
-| *"Skip test validation for this task"* | Applied immediately to the current task only |
-| *"Use the bottom-up strategy for this upgrade"* | Affects the planning phase strategy |
-| *"Don't touch the Logging project"* | Added to preferences; agent excludes that project |
-| *"Always use file-scoped namespaces"* | Saved as a coding standard preference |
-| *"Pause after each task for my review"* | Saved as an execution style preference |
+| _"From now on, always commit after each task"_ | Saved to `scenario-instructions.md` as an execution preference |
+| _"Skip test validation for this task"_ | Applied immediately to the current task only |
+| _"Use the bottom-up strategy for this upgrade"_ | Affects the planning phase strategy |
+| _"Don't touch the Logging project"_ | Added to preferences; agent excludes that project |
+| _"Always use file-scoped namespaces"_ | Saved as a coding standard preference |
+| _"Pause after each task for my review"_ | Saved as an execution style preference |
 
 > [!TIP]
-> To make an instruction persist across the entire upgrade, phrase it as a permanent preference: *"From now on, always..."* or *"For all tasks in this upgrade..."*. The agent writes the instruction to `scenario-instructions.md`.
+> To make an instruction persist across the entire upgrade, phrase it as a permanent preference: _"From now on, always..."_ or _"For all tasks in this upgrade..."_. The agent writes the instruction to `scenario-instructions.md`.
 
 ## Edit scenario artifacts
 
@@ -81,7 +81,7 @@ Add sections like these to guide the agent:
 
 ### plan.md
 
-The `plan.md` file defines the tasks and their scope. Edit it to:
+The `plan.md` file defines the tasks and their scope. Edit `plan.md` to:
 
 - Reorder tasks to change the execution sequence.
 - Add tasks the agent didn't plan for.
@@ -97,7 +97,7 @@ Each task in `tasks/{taskId}/task.md` contains the task specification and workin
 - Provide code examples for the desired outcome.
 
 > [!IMPORTANT]
-> The `tasks.md` file is a read-only dashboard managed by the agent's tools. Don't edit `tasks.md` directly—your changes are overwritten. Edit `scenario-instructions.md` or individual `task.md` files instead.
+> The agent's tools manage `tasks.md` as a read-only dashboard. Don't edit `tasks.md` directly—the agent overwrites your changes. Edit `scenario-instructions.md` or individual `task.md` files instead.
 
 ## Create custom skills
 
@@ -271,10 +271,10 @@ The agent offers to work on a Git branch, but you have full control over the str
 
 Example chat instructions:
 
-- *"Use branch name 'upgrade/dotnet10' for this upgrade"*
-- *"Create a branch per task so I can review each one separately"*
-- *"Don't commit until I explicitly ask you to"*
-- *"Commit after every task with a descriptive message"*
+- _"Use branch name 'upgrade/dotnet10' for this upgrade"_
+- _"Create a branch per task so I can review each one separately"_
+- _"Don't commit until I explicitly ask you to"_
+- _"Commit after every task with a descriptive message"_
 
 > [!TIP]
 > For large multi-project upgrades, per-task branches give you flexibility to review and merge each change independently, or roll back a single task without affecting the rest.

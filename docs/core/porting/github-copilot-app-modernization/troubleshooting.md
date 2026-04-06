@@ -19,12 +19,12 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 ### Agent says "no scenarios found"
 
-**Cause:** The workspace isn't recognized as a .NET project.
+**Cause:** The agent doesn't recognize the workspace as a .NET project.
 
 **Solution:**
 
 1. Ensure the workspace root contains a `.sln` or `.csproj` file.
-1. Ask the agent: *"What solution file are you using?"*
+1. Ask the agent: _"What solution file are you using?"_
 1. If your solution file is in a subdirectory, open that directory as the workspace root or point the agent to the file explicitly.
 
 ### Agent can't resume previous work
@@ -35,7 +35,7 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 1. Check if the `.github/upgrades/` folder exists in your repo root.
 1. If the folder was accidentally deleted, start the scenario fresh. The agent can't recover without its state files.
-1. If the folder exists but files appear corrupted, ask the agent to *"re-assess and re-plan"* to regenerate them.
+1. If the folder exists but files appear corrupted, ask the agent to _"re-assess and re-plan"_ to regenerate them.
 
 > [!TIP]
 > Commit the `.github/upgrades/` folder to your branch so it's preserved across sessions and machines.
@@ -46,7 +46,7 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 **Solution:**
 
-1. The agent auto-detects stale tasks in most cases. Tell the agent *"resume"* or *"restart the current task."*
+1. The agent auto-detects stale tasks in most cases. Tell the agent _"resume"_ or _"restart the current task."_
 1. If the stuck state persists, open `tasks.md` and manually change the task status from `in-progress` to `pending`.
 1. Check the corresponding `progress-details.md` for the task to understand where it left off.
 
@@ -56,13 +56,13 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 **Solution:**
 
-Be explicit about what you want. Instead of *"upgrade my project,"* say:
+Be explicit about what you want. Instead of _"upgrade my project,"_ say:
 
-- *"I want to upgrade to .NET 10."*
-- *"I want to migrate from Newtonsoft.Json to System.Text.Json."*
-- *"Convert my project to SDK-style format."*
+- _"I want to upgrade to .NET 10."_
+- _"I want to migrate from Newtonsoft.Json to System.Text.Json."_
+- _"Convert my project to SDK-style format."_
 
-You can also add scenario preferences to `scenario-instructions.md` to prevent future mismatches.
+Also add scenario preferences to `scenario-instructions.md` to prevent future mismatches.
 
 ## Build and compilation issues
 
@@ -95,7 +95,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 **Solution:**
 
 1. The agent detects compilation errors automatically. If the agent is struggling, provide guidance or fix the code manually and tell the agent to continue.
-1. If the agent struggles with a specific fix after multiple attempts, edit the code manually and tell the agent: *"I fixed the compilation error in MyClass.cs, mark this task complete."*
+1. If the agent struggles with a specific fix after multiple attempts, edit the code manually and tell the agent: _"I fixed the compilation error in MyClass.cs, mark this task complete."_
 1. The agent learns from your manual fix and applies similar patterns if the same issue appears elsewhere.
 
 ## Git issues
@@ -146,7 +146,7 @@ These issues relate to upgrade speed and assessment duration.
 
 **Solution:**
 
-1. Long assessment times are expected for large solutions—no action needed.
+1. Long assessment times are normal for large solutions—no action needed.
 1. Monitor progress in the **Output** panel (select **AppModernizationExtension** from the dropdown in Visual Studio).
 1. The assessment only runs once per scenario. Subsequent phases use the cached results.
 
@@ -170,11 +170,11 @@ These issues relate to custom skills and scenario instruction files.
 
 ### Changes to scenario-instructions.md don't take effect
 
-**Cause:** The file might not be re-read mid-session, or your edits are in the wrong section.
+**Cause:** The agent might not re-read the file mid-session, or your edits are in the wrong section.
 
 **Solution:**
 
-1. Ask the agent to *"reload instructions"* or start a new chat session to force a re-read.
+1. Ask the agent to _"reload instructions"_ or start a new chat session to force a re-read.
 1. Ensure your edits are in the correct sections of the file:
    - **User Preferences** — for general preferences and constraints.
    - **Key Decisions** — for recording important decisions made during the upgrade.
@@ -185,7 +185,7 @@ These issues relate to custom skills and scenario instruction files.
 
 When something isn't working as expected:
 
-1. **Ask the agent** — Try asking: *"What went wrong with the last task?"* The agent can often explain what happened and suggest next steps.
+1. **Ask the agent** — Try asking: _"What went wrong with the last task?"_ The agent can often explain what happened and suggest next steps.
 1. **Review the execution log** — Open `execution-log.md` in `.github/upgrades/{scenarioId}/`. The log shows a chronological record of what the agent did, including any errors the agent encountered.
 1. **File an issue** — If you've found a bug or the agent consistently fails at something, file an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
 

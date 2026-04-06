@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Upgrade a .NET app with GitHub Copilot modernization
 
-GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications using an assessment step followed by a structured three-phase workflow: upgrade options, planning, and execution.
+GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications with an assessment step and a structured three-phase workflow: upgrade options, planning, and execution.
 
 The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each phase, and helps with code fixes throughout the process. It supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
 
@@ -75,7 +75,7 @@ To review and customize the assessment:
 1. Open the `assessment.md` file in `.github/upgrades/{scenarioId}`.
 1. Review the identified breaking changes and compatibility problems.
 1. Add any project-specific context or concerns to the document.
-1. Tell Copilot to move to the upgrade options phase.
+1. _Tell Copilot to move to the upgrade options phase._
 
 ## Review upgrade options
 
@@ -89,7 +89,7 @@ The options typically include:
 - **Package management** — Whether to adopt Central Package Management.
 - **Compatibility handling** — How to address unsupported APIs, incompatible packages, and platform-specific functionality.
 
-Review the proposed options and confirm or override them. Tell Copilot to proceed to the planning phase.
+Review the proposed options and confirm or override them. _Tell Copilot to proceed to the planning phase._
 
 ## Start planning and review the plan
 
@@ -137,9 +137,9 @@ To review and customize the plan:
 1. Edit the plan to adjust upgrade steps or add context if needed.
 
    > [!CAUTION]
-   > The plan is based on project interdependencies. The upgrade doesn't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
+   > The plan depends on project interdependencies. The upgrade doesn't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
 
-1. Tell Copilot to move to the execution phase.
+1. _Tell Copilot to move to the execution phase._
 
 ## Start execution and run the upgrade
 
@@ -196,7 +196,7 @@ This document tracks the execution of the MvcMovieNet6 solution upgrade from .NE
 
 To run the upgrade:
 
-1. Tell Copilot to start the upgrade.
+1. _Tell Copilot to start the upgrade._
 1. Monitor progress by reviewing the `tasks.md` file as Copilot updates task statuses.
 1. If Copilot encounters a problem it can't resolve, provide the requested help.
 1. Based on your decisions and changes, Copilot adapts its strategy to the remaining tasks and continues the upgrade.

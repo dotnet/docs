@@ -18,13 +18,13 @@ GitHub Copilot modernization uses a structured approach to upgrade and migrate .
 
 ## The agent as a teammate
 
-The agent is designed for collaboration, not automation in a vacuum:
+The agent excels at collaboration, not automation in a vacuum:
 
 - **Deep .NET knowledge** — The agent understands project files, NuGet dependencies, breaking changes, and migration patterns across dozens of .NET technologies for both C# and Visual Basic projects.
 - **Structured workflow** — Every upgrade goes through assessment, planning, and execution. No random changes, no surprises.
 - **Learns your preferences** — When you say "always use explicit types instead of `var`," the agent writes that preference to `scenario-instructions.md` and remembers it across sessions.
 - **Correctable mid-flight** — Made a wrong call? Tell the agent. It adapts and applies the correction going forward.
-- **Explains its reasoning** — Ask "why did you choose that approach?" and the agent walks you through the decision.
+- **Explains its reasoning** — Ask _"why did you choose that approach?"_ and the agent walks you through the decision.
 
 ## Scenarios
 
@@ -37,7 +37,7 @@ You don't need to memorize scenario names. The agent discovers relevant scenario
 1. Analyzes your codebase to understand what technologies you're using—language, framework version, libraries, and project types.
 1. Identifies which scenarios are relevant to your projects.
 1. Ranks scenarios by importance and weight—the most relevant ones surface first.
-1. You can also ask directly: *"What scenarios are available for my solution?"*
+1. You can also ask directly: _"What scenarios are available for my solution?"_
 
 ### Scenario persistence
 
@@ -56,7 +56,7 @@ The agent gathers everything it needs before starting work:
 - **Target framework** — What version you're upgrading to.
 - **Git strategy** — The agent suggests branching and you control the details: branch name, whether to use per-task branches, and commit timing.
 - **Flow mode** — Automatic (agent drives) or Guided (you approve each phase).
-- **Scenario-specific parameters** — Depending on the scenario, the agent might ask additional questions.
+- **Scenario-specific parameters** — Depending on the scenario, the agent might ask more questions.
 
 The agent initializes the scenario workspace at `.github/upgrades/{scenarioId}/`.
 
@@ -84,7 +84,7 @@ Options might include:
 - **Package management** — Whether and when to adopt Central Package Management.
 - **Compatibility handling** — How to address unsupported APIs and packages.
 
-Confirmed decisions are saved to `upgrade-options.md`.
+The agent saves confirmed decisions to `upgrade-options.md`.
 
 ### Phase 2: Planning
 
@@ -104,21 +104,21 @@ During the upgrade options confirmation, the agent evaluates your solution and r
 
 | Strategy | Best for | How it works |
 |---|---|---|
-| **Bottom-up** | Large solutions with deep dependency graphs | Start with leaf projects (no dependencies), work upward |
-| **Top-down** | Quick feedback on the main app | Start with the application project, fix dependencies as needed |
-| **All-at-once** | Small, simple solutions | Upgrade everything in one pass |
+| **Bottom-up** | Large solutions with deep dependency graphs | Start with leaf projects (no dependencies), work upward. |
+| **Top-down** | Quick feedback on the main app | Start with the application project, fix dependencies as needed. |
+| **All-at-once** | Small, simple solutions | Upgrade everything in one pass. |
 
 > [!TIP]
 > The agent only surfaces decisions that are relevant to your project. A simple console app doesn't see web framework choices, and a project without Entity Framework doesn't see database migration options.
 
 ## Skills
 
-_Skills_ are focused modernization capabilities—smaller, targeted upgrade operations. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step migration instructions. You can also invoke a skill directly: *"migrate the WCF services in my project to CoreWCF."*
+_Skills_ are focused modernization capabilities—smaller, targeted upgrade operations. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step migration instructions. You can also invoke a skill directly: _"migrate the WCF services in my project to CoreWCF."_
 
 The agent ships with 30+ built-in skills organized by domain:
 
-- **Data access** — EF6 to EF Core (code-first and EDMX), LINQ to SQL, SqlClient migration
-- **Web/ASP.NET** — Identity, Global.asax, OWIN, MVC routing/filters/bundling, WCF to CoreWCF
+- **Data access** — EF6 to EF Core (code-first and EDMX), LINQ to SQL, and SqlClient migration
+- **Web/ASP.NET** — Identity, Global.asax, OWIN, MVC routing/filters/bundling, and WCF to CoreWCF
 - **Serialization** — Newtonsoft.Json to System.Text.Json
 - **Cloud** — Azure Functions in-process to isolated worker model
 - **Libraries** — ADAL to MSAL, SignalR, PowerShell SDK, and more
@@ -185,7 +185,7 @@ The agent supports two flow modes that control how much oversight you have:
 
 ### Automatic mode
 
-The agent works through all phases—upgrade options, planning, execution—without pausing for approval. It surfaces key findings and progress updates, but keeps moving forward.
+The agent works through all phases—upgrade options, planning, and execution—without pausing for approval. It surfaces key findings and progress updates, but keeps moving forward.
 
 Best for experienced users, straightforward upgrades, and small solutions.
 
@@ -193,9 +193,9 @@ Best for experienced users, straightforward upgrades, and small solutions.
 
 The agent pauses at each phase boundary for your review:
 
-- After assessment: *"Here's what I found. Shall I proceed with upgrade options?"*
-- After planning: *"Here's the task plan. Do you want me to start execution?"*
-- Before complex task breakdowns: *"This task is complex. Here's how I'd break it down."*
+- After assessment: _"Here's what I found. Shall I proceed with upgrade options?"_
+- After planning: _"Here's the task plan. Do you want me to start execution?"_
+- Before complex task breakdowns: _"This task is complex. Here's how I'd break it down."_
 
 Best for first-time users, complex solutions, and when you want to learn the process.
 

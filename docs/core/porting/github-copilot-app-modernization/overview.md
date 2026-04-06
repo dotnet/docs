@@ -30,20 +30,20 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 
 | Scenario | Description | Example prompt |
 |---|---|---|
-| **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later | *"Upgrade my solution to .NET 10"* |
-| **Aspire integration** | Adds .NET Aspire orchestration to your solution | *"Add Aspire to my solution"* |
-| **Aspire version upgrade** | Upgrades existing .NET Aspire projects to a newer version | *"Upgrade Aspire to latest"* |
-| **SDK-style conversion** | Converts legacy project format to SDK-style | *"Convert to SDK-style"* |
-| **Newtonsoft.Json migration** | Replaces Newtonsoft.Json with System.Text.Json | *"Migrate from Newtonsoft.Json"* |
-| **SqlClient migration** | Migrates from System.Data.SqlClient to Microsoft.Data.SqlClient | *"Update SqlClient"* |
-| **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model | *"Upgrade my Azure Functions"* |
-| **Semantic Kernel to Agents** | Migrates Semantic Kernel Agents to Microsoft Agents AI | *"Migrate my SK agents"* |
+| **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
+| **Aspire integration** | Adds .NET Aspire orchestration to your solution. | _"Add Aspire to my solution"_ |
+| **Aspire version upgrade** | Upgrades existing .NET Aspire projects to a newer version. | _"Upgrade Aspire to latest"_ |
+| **SDK-style conversion** | Converts legacy project format to SDK-style. | _"Convert to SDK-style"_ |
+| **Newtonsoft.Json migration** | Replaces Newtonsoft.Json with System.Text.Json. | _"Migrate from Newtonsoft.Json"_ |
+| **SqlClient migration** | Migrates from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
+| **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
+| **Semantic Kernel to Agents** | Migrates Semantic Kernel Agents to Microsoft Agents AI. | _"Migrate my SK agents"_ |
 
 For a full reference of all scenarios and 30+ built-in migration skills, see [Scenarios and skills reference](scenarios-and-skills.md).
 
 ## Provide feedback
 
-Microsoft values your feedback and uses it to improve the agent. There are two ways to leave feedback:
+Microsoft values your feedback and uses it to improve the agent. Leave feedback using either of these options:
 
 - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) options.
 
@@ -158,7 +158,7 @@ Copilot starts by examining your project structure, dependencies, and code patte
 
 After the assessment, Copilot runs the following three phases:
 
-1. **Upgrade options** — Copilot presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Confirmed decisions are saved to `upgrade-options.md`.
+1. **Upgrade options** — Copilot presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
 
 1. **Planning** — Copilot converts the assessment and your confirmed options into a detailed specification. The `plan.md` file documents upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
 
@@ -172,9 +172,9 @@ During the upgrade options phase, the agent evaluates your solution and recommen
 
 | Strategy | Best for | Description |
 |---|---|---|
-| **Bottom-up** | Large solutions with deep dependency graphs | Upgrades leaf projects first, then works upward |
-| **Top-down** | Quick feedback on the main application | Upgrades the application project first, then fixes dependencies |
-| **All-at-once** | Small, simple solutions | Upgrades all projects in one pass |
+| **Bottom-up** | Large solutions with deep dependency graphs | Upgrades leaf projects first, then works upward. |
+| **Top-down** | Quick feedback on the main application | Upgrades the application project first, then fixes dependencies. |
+| **All-at-once** | Small, simple solutions | Upgrades all projects in one pass. |
 
 ### Flow modes
 
@@ -183,11 +183,11 @@ The agent supports two flow modes that control how much it pauses for your input
 - **Automatic** — The agent works through all stages without pausing, stopping only at genuine blockers. Best for experienced users and straightforward upgrades.
 - **Guided** — The agent pauses at each stage boundary so you can review the assessment, plan, and tasks before proceeding. Best for first-time users and complex solutions.
 
-Switch between modes at any time by saying "pause" (to enter guided mode) or "continue" (to enter automatic mode).
+Switch between modes at any time by saying _"pause"_ (to enter guided mode) or _"continue"_ (to enter automatic mode).
 
 ### State management
 
-The agent stores all upgrade state in `.github/upgrades/{scenarioId}/`. This folder contains:
+The agent stores all upgrade state in `.github/upgrades/{scenarioId}/`. The folder contains:
 
 | File | Purpose |
 |---|---|
@@ -213,7 +213,7 @@ When you reach the **Execution** phase, tell Copilot to start the upgrade. If Co
 
 ### Upgrade results
 
-As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades/{scenarioId}` with the status of every step. Monitor progress by reviewing this file. The tool creates a Git commit for every portion of the process, so you can roll back changes or review what changed.
+As Copilot runs each task, it updates the `tasks.md` file in `.github/upgrades/{scenarioId}` with the status of every step. Monitor progress by reviewing this file. Copilot creates a Git commit for every portion of the process, so you can roll back changes or review what changed.
 
 When the upgrade finishes, Copilot displays next steps in the chat response.
 

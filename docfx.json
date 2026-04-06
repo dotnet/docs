@@ -232,7 +232,7 @@
                 "docs/standard/design-guidelines/*.{md,yml}": "dotnet",
                 "docs/standard/security/*.{md,yml}": "dotnet",
                 "docs/visual-basic/**/**.{md,yml}": "dotnet-visualbasic",
-                "docs/orleans/**/**.{md,yml}": "dotnet-orleans"
+                "docs/orleans/**/**.{md,yml}": "dotnet-orleans",
             },
             "ms.topic": {
                 "_csharplang/**/*.md": "language-reference",
@@ -539,6 +539,7 @@
                 "docs/architecture/modernize-with-azure-containers/**/**.{md,yml}": "modernize-with-azure-containers",
                 "docs/architecture/modern-web-apps-azure/**/**.{md,yml}": "modern-web-apps-azure",
                 "docs/architecture/serverless/**/**.{md,yml}": "serverless",
+                "docs/azure/migration/appmod/**.{md,yml}": "migration-copilot",
                 "docs/csharp/misc/**/**.{md,yml}": "errors-warnings",
                 "docs/csharp/whats-new/**/**.{md,yml}": "whats-new",
                 "docs/csharp/how-to/**/**.{md,yml}": "fundamentals",

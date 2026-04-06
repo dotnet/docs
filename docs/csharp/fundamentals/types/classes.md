@@ -37,7 +37,7 @@ A class defines a type, but it isn't an object itself. You create an object (an 
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="CreateObject":::
 
-The variable `customer` holds a reference to the object, not the object itself which is stored in memory referred to by the variable. You can assign multiple variables to the same object. Changes through one reference are visible through the other:
+The variable `customer` holds a reference to the object, not the object itself. You can assign multiple variables to the same object. Changes through one reference are visible through the other:
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ReferenceSemantics":::
 
@@ -51,7 +51,7 @@ When you create an instance, you want its fields and properties initialized to u
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerFieldInitializer":::
 
-Field initializers assign a reasonable default to a field or property. This distinguishes it from the the following approaches where callers can provide the initial value.
+Field initializers assign a reasonable default to a field or property. This distinguishes it from the following approaches where callers can provide the initial value.
 
 **Constructor parameters** require callers to provide values:
 

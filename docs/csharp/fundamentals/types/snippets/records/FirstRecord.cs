@@ -21,6 +21,7 @@ public static class Program
 {
     public static void Main()
     {
+        var person = new Person("Grace", "Hopper");
         // <Deconstruct>
         var (first, last) = person;
         Console.WriteLine($"{first} {last}");

@@ -23,11 +23,9 @@ When a consumer's project targets a framework that isn't directly included in a 
 
 This framework selection has a direct impact on compatibility. When another library compiles against your package for a particular target framework, that library depends on any compatible build of your package presenting the same (compatible) API surface at both compile time and runtime. If a consumer compiles against the `netstandard2.0` assembly but the application runs with the `net8.0` assembly (or vice versa), both assemblies must expose a compatible API surface. Otherwise, the consumer might encounter `MissingMethodException` or `TypeLoadException` at runtime.
 
-For more information about framework compatibility, see [.NET Standard](../net-standard.md) and [Target frameworks in SDK-style projects](../frameworks.md).
+✔️ DO ensure that assemblies for compatible frameworks within the same package expose the same (or a superset of) API surface.
 
-### Validate compatible frameworks in your packages
-
-The [Package Validation](../../fundamentals/apicompat/package-validation/overview.md) feature in the .NET SDK automatically validates that assemblies for compatible frameworks within a package are consistent. Enable it by adding the following property to your project file:
+✔️ CONSIDER enabling [Package Validation](../../fundamentals/apicompat/package-validation/overview.md) to automatically check for API inconsistencies across TFMs:
 
 ```xml
 <PropertyGroup>
@@ -35,7 +33,9 @@ The [Package Validation](../../fundamentals/apicompat/package-validation/overvie
 </PropertyGroup>
 ```
 
-The [compatible framework in package validator](../../fundamentals/apicompat/package-validation/compatible-framework-in-package-validator.md) checks, for example, that your `netstandard2.0` assembly and `net8.0` assembly don't have API inconsistencies.
+> The [compatible framework in package validator](../../fundamentals/apicompat/package-validation/compatible-framework-in-package-validator.md) checks, for example, that your `netstandard2.0` assembly and `net8.0` assembly don't have API inconsistencies.
+
+For more information about framework compatibility, see [.NET Standard](../net-standard.md) and [Target frameworks in SDK-style projects](../frameworks.md).
 
 ## Assembly compatibility rules
 
@@ -43,49 +43,50 @@ These rules apply whenever one assembly must be compatible with another&mdash;wh
 
 For an assembly to be considered *compatible*, it must meet two requirements:
 
-1. **Equal or higher assembly version.** The [assembly version](../assembly/versioning.md) (`AssemblyVersionAttribute`) must be greater than or equal to the previous version. Decreasing an assembly version is never an acceptable change&mdash;it breaks the runtime's ability to load the correct assembly and can cause `FileLoadException` errors at runtime.
+1. **Equal or higher assembly version.** The [assembly version](../assembly/versioning.md) (`AssemblyVersionAttribute`) must be greater than or equal to the previous version.
 
 1. **No breaking API changes.** The assembly must not remove or change public API in any binary-breaking way. This means no removal of public types or members, no changes to method signatures, and no other changes that would cause a `MissingMethodException`, `MissingMemberException`, or `TypeLoadException` at runtime.
 
-### Never decrease assembly versions
+### Assembly versions
 
-Decreasing an assembly version is never acceptable, even across major package versions. Assembly versions are used by the runtime to resolve which assembly to load. When a library is compiled against assembly version 2.0.0.0, the runtime requires that version or higher to be present. If a newer package ships with a lower assembly version, any library that was compiled against the higher version fails to load.
+❌ DO NOT decrease the assembly version of a package across releases.
 
-While it's technically possible to work around this with a binding redirect or an `AssemblyResolve` handler to redirect the higher version to the lower one, this is always a breaking change in practice. The higher assembly version exists because it shipped with newer API and bug fixes that consumers have come to depend on. Redirecting to an older assembly means those APIs and fixes are no longer present, leading to `MissingMethodException` or incorrect behavior at runtime.
+> Decreasing an assembly version breaks the runtime's ability to load the correct assembly and can cause `FileLoadException` errors at runtime. Assembly versions are used by the runtime to resolve which assembly to load. When a library is compiled against assembly version 2.0.0.0, the runtime requires that version or higher to be present. If a newer package ships with a lower assembly version, any library that was compiled against the higher version fails to load.
+>
+> While it's technically possible to work around this with a binding redirect or an `AssemblyResolve` handler to redirect the higher version to the lower one, this is always a breaking change in practice. The higher assembly version exists because it shipped with newer API and bug fixes that consumers have come to depend on. Redirecting to an older assembly means those APIs and fixes are no longer present, leading to `MissingMethodException` or incorrect behavior at runtime.
 
 ### Binary breaking changes
 
-Binary breaking changes&mdash;changes that cause previously compiled code to fail at runtime&mdash;might be permissible across major package versions, but authors should understand the ecosystem impact. Any library in the ecosystem that depends on your package also exposes your API surface transitively. A binary breaking change in your package can break consumers of those downstream libraries, even if they don't directly reference your package.
+❌ AVOID binary breaking changes to your package's public API.
+
+> Binary breaking changes&mdash;changes that cause previously compiled code to fail at runtime&mdash;might be permissible across major package versions, but authors should understand the ecosystem impact. Any library in the ecosystem that depends on your package also exposes your API surface transitively. A binary breaking change in your package can break consumers of those downstream libraries, even if they don't directly reference your package.
 
 The .NET libraries maintain a [very high bar for binary compatibility](../../core/compatibility/library-change-rules.md). For a detailed list of what constitutes a breaking change, see the [breaking change rules](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/breaking-change-rules.md) in the dotnet/runtime repository.
 
-> [!TIP]
-> Use [Package Validation](../../fundamentals/apicompat/package-validation/overview.md) with a baseline version to automatically detect binary breaking changes between releases:
->
-> ```xml
-> <PropertyGroup>
->   <EnablePackageValidation>true</EnablePackageValidation>
->   <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion>
-> </PropertyGroup>
-> ```
->
+✔️ CONSIDER using [Package Validation](../../fundamentals/apicompat/package-validation/overview.md) with a baseline version to automatically detect binary breaking changes between releases:
+
+```xml
+<PropertyGroup>
+  <EnablePackageValidation>true</EnablePackageValidation>
+  <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion>
+</PropertyGroup>
+```
+
 > You can also use the [Microsoft.DotNet.ApiCompat.Tool](../../fundamentals/apicompat/global-tool.md) to compare assemblies or packages outside of the build process.
 
 ## Dependency compatibility rules
 
 The dependencies declared by a NuGet package are part of its public contract. When a consumer installs your package, they also get all of its dependencies. Dropping a dependency in a newer version of your package can break consumers who rely on types from that dependency being present at runtime.
 
-### Avoid dropping dependencies in compatible package versions or frameworks
+❌ AVOID removing package dependencies between compatible versions of the package or between compatible target frameworks within the same package.
 
-Packages should avoid removing dependencies between compatible versions of the package or between compatible target frameworks within the same package. Dropping a dependency can cause runtime failures for consumers who rely on types from that dependency, even if your own code no longer uses it directly.
-
-Dropping a dependency is more reasonable across major version boundaries. Unlike binary breaking changes, a dropped dependency can be mitigated by the consuming application without recompiling intermediate libraries&mdash;the application can simply add a direct reference to the removed dependency.
+> Dropping a dependency can cause runtime failures for consumers who rely on types from that dependency, even if your own code no longer uses it directly. Dropping a dependency is more reasonable across major version boundaries. Unlike binary breaking changes, a dropped dependency can be mitigated by the consuming application without recompiling intermediate libraries&mdash;the application can simply add a direct reference to the removed dependency.
 
 ### Polyfill package dependencies (Microsoft.Bcl.\*)
 
 One place where the .NET libraries intentionally drop dependencies is for *polyfill packages* such as `Microsoft.Bcl.AsyncInterfaces`, `Microsoft.Bcl.HashCode`, and `Microsoft.Bcl.Memory`. These packages provide functionality on older frameworks (such as .NET Standard 2.0 and .NET Framework) that is built into newer .NET versions.
 
-For packages that target multiple frameworks, it's appropriate to include the polyfill dependency only for older TFMs and drop it for the TFMs where the functionality is provided by the framework itself. For example:
+✔️ CONSIDER including polyfill dependencies only for older TFMs and omitting them for TFMs where the functionality is provided by the framework itself.
 
 ```xml
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
@@ -94,18 +95,17 @@ For packages that target multiple frameworks, it's appropriate to include the po
 <!-- No dependency needed for net8.0, where IAsyncEnumerable is built-in -->
 ```
 
-Library authors consuming polyfill packages should follow the same pattern to avoid unnecessary assemblies in applications targeting the latest frameworks.
-
-> [!NOTE]
 > When a polyfill dependency is dropped for a newer TFM, make sure that the package includes a TFM-specific assembly for that framework. Otherwise, consumers on the newer framework might resolve the `netstandard2.0` assembly, which still expects the polyfill at runtime. Multi-targeting with explicit TFM-specific assets avoids this problem.
 
 ## Assembly versioning
 
 Assembly versions are distinct from [NuGet package versions](versioning.md). While package versions follow [Semantic Versioning](https://semver.org) (SemVer) conventions, assembly versions are four-part version numbers (`Major.Minor.Build.Revision`) used by the .NET runtime to resolve and load assemblies.
 
-### Why assembly versions matter
-
 The assembly version is embedded in compiled references. When library A is compiled against version 2.0.0.0 of library B, the runtime requires that library B's assembly version be 2.0.0.0 or higher at runtime. This binding behavior is what makes assembly version changes important for package compatibility.
+
+✔️ DO change the assembly version with each release of your package.
+
+> This is essential to ensure loading of patched binaries, particularly on .NET Framework where the GAC and binding redirect behavior require version changes for correct assembly resolution.
 
 ### Assembly versioning on .NET Framework
 
@@ -115,14 +115,9 @@ On .NET Framework, assembly versioning has additional implications due to the ru
 
 - **Binding redirects are required.** The .NET Framework loader requires [binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) to unify different assembly versions. When an application consumes multiple packages that depend on different versions of a shared library, binding redirects tell the runtime to load a single (higher) version for all callers.
 
-Applications consuming NuGet packages on .NET Framework must account for binding redirects to unify the versions of transitive dependencies. It is never safe to assume that binding redirects won't be required&mdash;doing so makes an application unable to update a mid-stack library in the event of a critical security update.
+✔️ DO design your .NET Framework applications to support binding redirects for any assembly from NuGet packages.
 
-> [!TIP]
-> To have the build system automatically generate the necessary binding redirects, enable [`<AutoGenerateBindingRedirects>`](../../framework/configure-apps/redirect-assembly-versions.md) in your application project.
-
-### Typical versioning policy
-
-For most packages, the assembly version changes with each release. This is essential to ensure loading of patched binaries, particularly on .NET Framework where the GAC and binding redirect behavior require version changes for correct assembly resolution.
+> Without binding redirects, an application might be unable to update a mid-stack library in the event of a critical security update. Enable [`<AutoGenerateBindingRedirects>`](../../framework/configure-apps/redirect-assembly-versions.md) in your application project to have the build system automatically generate the necessary binding redirects.
 
 ## Assembly versioning for .NET libraries that overlap with shared frameworks
 
@@ -179,16 +174,25 @@ This policy ensures that:
 
 Packages that don't overlap with a shared framework are free to increment their assembly version with every release. This is the typical and recommended pattern, as it ensures that patched binaries are always loaded correctly regardless of the target framework.
 
-## Summary of rules
+## Summary
 
-| Rule | Requirement |
-|------|------------|
-| Compatible frameworks must provide compatible assemblies | Assemblies for more specific TFMs must be API-compatible with assemblies for more general TFMs in the same package. |
-| Assembly versions must not decrease | Never ship a newer package version with a lower assembly version than a previous release. |
-| API must not break in compatible versions | Don't remove or change public API in binary-breaking ways within compatible versions. Major versions have more latitude. |
-| Dependencies should not be dropped in compatible versions | Removing a package dependency can break consumers. Dropping dependencies is more acceptable across major versions. |
-| Polyfill dependencies should be dropped for inbox frameworks | When a polyfill (Microsoft.Bcl.\*) provides functionality that is built into the target framework, the dependency should be omitted for that TFM. |
-| Shared framework packages hold assembly version at Major.Minor.0.0 | Packages overlapping with .NET shared frameworks keep assembly version constant within a release series, except for .NET Framework TFMs. |
+The following recommendations summarize the compatibility rules for NuGet packages:
+
+✔️ DO ensure that assemblies for compatible frameworks expose the same (or a superset of) API surface.
+
+❌ DO NOT decrease the assembly version of a package across releases.
+
+❌ AVOID binary breaking changes to your package's public API.
+
+❌ AVOID removing package dependencies between compatible versions or compatible target frameworks.
+
+✔️ CONSIDER omitting polyfill dependencies (Microsoft.Bcl.\*) for TFMs where the functionality is provided by the framework.
+
+✔️ DO change the assembly version with each release, unless the package overlaps with a .NET shared framework.
+
+✔️ DO design your .NET Framework applications to support binding redirects for any assembly from NuGet packages.
+
+✔️ CONSIDER enabling [Package Validation](../../fundamentals/apicompat/package-validation/overview.md) with a baseline version to automatically detect breaking changes.
 
 ## See also
 

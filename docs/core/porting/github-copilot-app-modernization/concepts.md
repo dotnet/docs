@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot modernization core concepts
-description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the four-phase workflow, state management, and flow modes."
+description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the three-phase workflow, state management, and flow modes."
 ms.topic: concept-article
 ms.date: 04/06/2026
 ai-usage: ai-assisted
@@ -47,9 +47,9 @@ For a complete list of scenarios, see [Scenarios and skills reference](scenarios
 
 ## The workflow lifecycle
 
-Every scenario follows the same four-phase lifecycle.
+Every scenario follows the same lifecycle: pre-initialization, assessment, and then a three-phase workflow.
 
-### Phase 1: Pre-initialization
+### Pre-initialization
 
 The agent gathers everything it needs before starting work:
 
@@ -60,7 +60,7 @@ The agent gathers everything it needs before starting work:
 
 The agent initializes the scenario workspace at `.github/upgrades/{scenarioId}/`.
 
-### Phase 2: Assessment
+### Assessment
 
 The agent analyzes your codebase:
 
@@ -72,11 +72,9 @@ The agent analyzes your codebase:
 
 The assessment produces a comprehensive report saved to `assessment.md`. In **Guided mode**, the agent pauses here for your review before proceeding.
 
-### Phase 3: Planning
+### Phase 1: Upgrade options
 
-Based on the assessment, the agent determines your upgrade options and generates a task plan. This phase has two parts:
-
-**Upgrade options confirmation** — The agent evaluates your solution and identifies which upgrade decisions are relevant. It presents sensible defaults and lets you review and override any choice.
+Based on the assessment, the agent evaluates your solution and identifies which upgrade decisions are relevant. It presents sensible defaults and lets you review and override any choice.
 
 Options might include:
 
@@ -88,13 +86,15 @@ Options might include:
 
 Confirmed decisions are saved to `upgrade-options.md`.
 
-**Plan generation** — The agent creates the task plan. Planning produces three key files:
+### Phase 2: Planning
+
+The agent creates the task plan based on the assessment and your confirmed options. Planning produces three key files:
 
 - `plan.md` — The upgrade plan with strategy and task descriptions.
 - `scenario-instructions.md` — Your preferences, decisions, and the agent's memory.
 - `tasks.md` — Visual progress dashboard.
 
-### Phase 4: Execution
+### Phase 3: Execution
 
 The agent works through tasks sequentially. For each task, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how changes are committed—per task, per group of tasks, or at the end.
 
@@ -185,7 +185,7 @@ The agent supports two flow modes that control how much oversight you have:
 
 ### Automatic mode
 
-The agent works through all phases—assessment, planning, execution—without pausing for approval. It surfaces key findings and progress updates, but keeps moving forward.
+The agent works through all phases—upgrade options, planning, execution—without pausing for approval. It surfaces key findings and progress updates, but keeps moving forward.
 
 Best for experienced users, straightforward upgrades, and small solutions.
 
@@ -193,7 +193,7 @@ Best for experienced users, straightforward upgrades, and small solutions.
 
 The agent pauses at each phase boundary for your review:
 
-- After assessment: *"Here's what I found. Shall I proceed with planning?"*
+- After assessment: *"Here's what I found. Shall I proceed with upgrade options?"*
 - After planning: *"Here's the task plan. Do you want me to start execution?"*
 - Before complex task breakdowns: *"This task is complex. Here's how I'd break it down."*
 

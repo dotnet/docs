@@ -58,7 +58,7 @@ The agent supports both guided and automatic modes. In guided mode, the agent pa
 
 ### Review the assessment carefully
 
-The assessment phase is your best opportunity to catch issues before the agent starts making changes. Look for:
+The assessment is your best opportunity to catch issues before the agent starts making changes. Look for:
 
 - Projects the agent might have missed or misidentified.
 - Dependencies that you know are problematic.

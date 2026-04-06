@@ -136,7 +136,7 @@ You can also add scenario preferences to `scenario-instructions.md` to prevent f
 
 ### Assessment takes very long
 
-**Cause:** The assessment phase analyzes every project's dependencies, NuGet packages, target frameworks, and applicable breaking changes. For large solutions, the assessment is naturally time-consuming.
+**Cause:** The assessment analyzes every project's dependencies, NuGet packages, target frameworks, and applicable breaking changes. For large solutions, the assessment is naturally time-consuming.
 
 **Solution:**
 

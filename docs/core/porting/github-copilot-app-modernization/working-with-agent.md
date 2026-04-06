@@ -59,7 +59,7 @@ The agent supports two flow modes that control how much the agent pauses for you
 
 ### Automatic mode
 
-In automatic mode, the agent works through the phases—assessment, planning, execution—without pausing for approval at each boundary. The agent still stops at genuine blockers or when a decision only you can make is needed.
+In automatic mode, the agent works through the phases—upgrade options, planning, execution—without pausing for approval at each boundary. The agent still stops at genuine blockers or when a decision only you can make is needed.
 
 Best for experienced users, straightforward upgrades, and small solutions.
 

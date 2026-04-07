@@ -2,8 +2,6 @@ Imports System.Threading
 
 ' <ScalabilityWrong>
 Public Module TimerExampleWrong
-    ' Don't do this in a library — wrapping a synchronous method with Task.Run
-    ' doesn't improve scalability.
     Public Function SleepAsync(millisecondsTimeout As Integer) As Task
         Return Task.Run(Sub() Thread.Sleep(millisecondsTimeout))
     End Function
@@ -12,7 +10,6 @@ End Module
 
 ' <ScalabilityRight>
 Public Module TimerExampleRight
-    ' A truly asynchronous implementation consumes no threads while waiting.
     Public Function SleepAsync(millisecondsTimeout As Integer) As Task
         Dim tcs As New TaskCompletionSource(Of Boolean)()
         Dim tmr As New Timer(

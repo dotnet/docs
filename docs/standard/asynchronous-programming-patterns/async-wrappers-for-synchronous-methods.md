@@ -44,30 +44,30 @@ A truly asynchronous implementation reduces the number of threads consumed durin
 :::code language="csharp" source="./snippets/async-wrappers-for-synchronous-methods/csharp/Program.cs" id="ScalabilityWrong":::
 :::code language="vb" source="./snippets/async-wrappers-for-synchronous-methods/vb/Program.vb" id="ScalabilityWrong":::
 
-Compare that with a truly asynchronous implementation that consumes no threads while waiting:
+Compare that approach with a truly asynchronous implementation that consumes no threads while waiting:
 
 :::code language="csharp" source="./snippets/async-wrappers-for-synchronous-methods/csharp/Program.cs" id="ScalabilityRight":::
 :::code language="vb" source="./snippets/async-wrappers-for-synchronous-methods/vb/Program.vb" id="ScalabilityRight":::
 
-Both implementations complete after the specified delay, but the second doesn't block any thread while waiting. For server applications handling many concurrent requests, that difference directly affects how many requests a server can process simultaneously.
+Both implementations complete after the specified delay, but the second implementation doesn't block any thread while waiting. For server applications handling many concurrent requests, that difference directly affects how many requests a server can process simultaneously.
 
 ### Offloading is the consumer's responsibility
 
-Wrapping synchronous calls in `Task.Run` *is* useful for offloading work from a UI thread. However, that wrapping should be done by the consumer, not by the library:
+Wrapping synchronous calls in `Task.Run` is useful for offloading work from a UI thread. However, the consumer, not the library, should handle this wrapping:
 
 :::code language="csharp" source="./snippets/async-wrappers-for-synchronous-methods/csharp/Program.cs" id="OffloadFromUI":::
 :::code language="vb" source="./snippets/async-wrappers-for-synchronous-methods/vb/Program.vb" id="OffloadFromUI":::
 
-The consumer knows their context — whether they're on a UI thread, how much granularity they need, and whether offloading adds value. The library doesn't.
+The consumer knows their context: whether they're on a UI thread, how much granularity they need, and whether offloading adds value. The library doesn't.
 
 ## Why libraries shouldn't expose async-over-sync wrappers
 
 When a library exposes only the synchronous method (and not an async wrapper), consumers benefit in several ways:
 
-- **Reduced API surface area** — Fewer methods to learn, test, and maintain.
-- **No misleading scalability expectations** — Users know that only the methods exposed as asynchronous actually provide scalability benefits.
-- **Consumer control** — Users choose *whether* and *how* to offload, at the right level of granularity. A high-throughput server application can call the synchronous method directly, avoiding unnecessary overhead from `Task.Run`.
-- **Better performance** — Asynchronous wrappers add overhead (allocations, context switches, thread pool scheduling). For fine-grained operations, that overhead can be significant.
+- **Reduced API surface area**: Fewer methods to learn, test, and maintain.
+- **No misleading scalability expectations**: Users know that only the methods exposed as asynchronous actually provide scalability benefits.
+- **Consumer control**: Callers choose *whether* and *how* to offload, at the right level of granularity. A high-throughput server application can call the synchronous method directly, avoiding unnecessary overhead from `Task.Run`.
+- **Better performance**: Asynchronous wrappers add overhead through allocations, context switches, and thread pool scheduling. For fine-grained operations, that overhead can be significant.
 
 ## Exceptions: when async-over-sync wrappers make sense
 
@@ -77,14 +77,14 @@ For example, <xref:System.IO.Stream> exposes <xref:System.IO.Stream.ReadAsync*> 
 
 Similarly, <xref:System.IO.TextReader> provides <xref:System.IO.TextReader.ReadToEndAsync*> on the base class as a wrapper, and <xref:System.IO.StreamReader> overrides it with a truly asynchronous implementation that calls <xref:System.IO.Stream.ReadAsync*> internally.
 
-These are valid exceptions because:
+These exceptions are valid because:
 
-- The pattern is designed for polymorphism — callers interact with the base type.
-- Derived types are expected to provide truly asynchronous overrides.
+- The pattern is designed for polymorphism. Callers interact with the base type.
+- Derived types provide truly asynchronous overrides.
 
 ## Guideline
 
-Expose asynchronous methods from a library only when the implementation provides real scalability benefits over its synchronous counterpart. Don't expose asynchronous methods purely for offloading — leave that choice to the consumer.
+Expose asynchronous methods from a library only when the implementation provides real scalability benefits over its synchronous counterpart. Don't expose asynchronous methods purely for offloading. Leave that choice to the consumer.
 
 ## See also
 

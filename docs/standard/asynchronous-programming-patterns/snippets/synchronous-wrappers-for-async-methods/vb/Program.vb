@@ -1,7 +1,5 @@
 ' <SyncOverAsyncTAP>
 Public Module TapWrapper
-    ' Wrapping a TAP method with a synchronous method.
-    ' Accessing .Result blocks until the task completes.
     Public Function Foo(fooAsync As Func(Of Task(Of Integer))) As Integer
         Return fooAsync().Result
     End Function
@@ -10,8 +8,6 @@ End Module
 
 ' <DeadlockExample>
 Public Module DeadlockExample
-    ' This method deadlocks when called from a UI thread
-    ' or any thread with a single-threaded SynchronizationContext.
     Private Sub Delay(milliseconds As Integer)
         DelayAsync(milliseconds).Wait()
     End Sub
@@ -29,7 +25,6 @@ Public Module ConfigureAwaitMitigation
         Return 42
     End Function
 
-    ' Offload to the thread pool so there's no SynchronizationContext.
     Public Function Sync() As Integer
         Return Task.Run(Function() LibraryMethodAsync()).Result
     End Function

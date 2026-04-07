@@ -19,20 +19,16 @@ When a library exposes only asynchronous APIs, consumers sometimes wrap them in 
 
 ## Basic wrapping patterns
 
-A synchronous wrapper around an Asynchronous Programming Model (APM) implementation calls the `Begin` method and immediately blocks on the `End` method:
-
-:::code language="csharp" source="./snippets/synchronous-wrappers-for-async-methods/csharp/Program.cs" id="SyncOverAsyncAPM":::
-
 A synchronous wrapper around a Task-based Asynchronous Pattern (TAP) method accesses the task's <xref:System.Threading.Tasks.Task%601.Result> property, which blocks the calling thread:
 
 :::code language="csharp" source="./snippets/synchronous-wrappers-for-async-methods/csharp/Program.cs" id="SyncOverAsyncTAP":::
 :::code language="vb" source="./snippets/synchronous-wrappers-for-async-methods/vb/Program.vb" id="SyncOverAsyncTAP":::
 
-Both approaches look simple, but they can cause serious problems depending on the environment in which they run.
+This approach looks simple, but it can cause serious problems depending on the environment in which it runs.
 
 ## Deadlocks with single-threaded contexts
 
-The most dangerous scenario occurs when you call a synchronous wrapper from a thread that has a single-threaded <xref:System.Threading.SynchronizationContext> — typically a UI thread in WPF, Windows Forms, or MAUI applications.
+The most dangerous scenario occurs when you call a synchronous wrapper from a thread that has a single-threaded <xref:System.Threading.SynchronizationContext>. This scenario is typically a UI thread in WPF, Windows Forms, or MAUI applications.
 
 :::code language="csharp" source="./snippets/synchronous-wrappers-for-async-methods/csharp/Program.cs" id="DeadlockExample":::
 :::code language="vb" source="./snippets/synchronous-wrappers-for-async-methods/vb/Program.vb" id="DeadlockExample":::
@@ -41,9 +37,9 @@ Here's what happens step by step:
 
 1. The UI thread calls `Delay`, which calls `DelayAsync(milliseconds).Wait()`.
 1. `DelayAsync` runs synchronously until it reaches `await Task.Delay(milliseconds)`.
-1. Because the delay hasn't completed yet, `await` captures the current <xref:System.Threading.SynchronizationContext> and suspends. `DelayAsync` returns a <xref:System.Threading.Tasks.Task> to the caller.
+1. Because the delay isn't complete yet, `await` captures the current <xref:System.Threading.SynchronizationContext> and suspends. `DelayAsync` returns a <xref:System.Threading.Tasks.Task> to the caller.
 1. The UI thread blocks in `.Wait()`, waiting for that task to complete.
-1. When the delay finishes, the continuation needs to run on the original `SynchronizationContext` — the UI thread.
+1. When the delay finishes, the continuation needs to run on the original `SynchronizationContext` which is the UI thread.
 1. The UI thread can't process the continuation because it's blocked in `.Wait()`.
 1. **Deadlock.**
 
@@ -60,7 +56,7 @@ In this scenario:
 
 1. All 25 thread pool threads call `Foo`, which blocks in `.Result`.
 1. Each async operation completes its I/O and needs a thread pool thread to run its completion callback.
-1. No threads are available — they're all blocked. Deadlock!
+1. No threads are available. They're all blocked. Deadlock!
 
 This exact pattern affected `HttpWebRequest.GetResponse` in .NET Framework 1.x, where the synchronous method was implemented as a wrapper around the asynchronous `BeginGetResponse`/`EndGetResponse`.
 
@@ -72,7 +68,7 @@ If you find yourself needing to call an asynchronous method synchronously, consi
 
 ## Mitigation strategies when sync-over-async is unavoidable
 
-Sometimes sync-over-async is truly unavoidable — for example, when implementing an interface that requires a synchronous method, and the only available implementation is asynchronous. In those cases, apply these strategies to reduce the risk.
+Sometimes sync-over-async is truly unavoidable. For example, when implementing an interface that requires a synchronous method, and the only available implementation is asynchronous. In those cases, apply these strategies to reduce the risk.
 
 ### Use ConfigureAwait(false) in the async implementation
 

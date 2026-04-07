@@ -153,7 +153,7 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 ```
 
 > [!NOTE]
-> Starting with .NET SDK 10.0.300, multiple values can resolve to the same effective framework. For example, `net10.0-linux;net10.0-mac` both resolve to `net10.0`.
+> Starting with .NET SDK 10.0.300, multiple values can resolve to the same effective framework. For example, `<TargetFrameworks>linux;mac</TargetFrameworks>` is valid where both aliases resolve to `net10.0` as the target framework.
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 

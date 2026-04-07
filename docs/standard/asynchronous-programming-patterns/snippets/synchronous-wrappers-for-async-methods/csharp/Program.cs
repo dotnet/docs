@@ -57,7 +57,7 @@ public static class ConfigureAwaitMitigation
 
     public static int Sync()
     {
-        return Task.Run(() => LibraryMethodAsync()).Result;
+        return LibraryMethodAsync().GetAwaiter().GetResult();
     }
 }
 // </ConfigureAwaitMitigation>

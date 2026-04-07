@@ -26,8 +26,6 @@ using SafeFileHandle handle = File.OpenHandle("myfile.txt", options: FileOptions
 Console.WriteLine(handle.IsAsync); // true (misleading; no O_NONBLOCK on regular file)
 ```
 
-Conversely, for file descriptors that were genuinely non-blocking (for example, pipes or sockets with `O_NONBLOCK` set), `IsAsync` incorrectly returned `false`.
-
 On non-Windows platforms, constructing a `SendPacketsElement` with a non-async `FileStream` threw an `ArgumentException`.
 
 ## New behavior
@@ -37,7 +35,8 @@ Starting in .NET 11, `SafeFileHandle.IsAsync` on Unix returns `true` only when t
 ```csharp
 using Microsoft.Win32.SafeHandles;
 
-// On Unix, IsAsync now reflects the actual non-blocking state of the file descriptor.
+// On Unix, IsAsync now reflects the actual
+// non-blocking state of the file descriptor.
 SafeFileHandle.CreateAnonymousPipe(
     out SafeFileHandle readHandle,
     out SafeFileHandle writeHandle,
@@ -50,8 +49,6 @@ Console.WriteLine(writeHandle.IsAsync); // false (blocking write end)
 
 For regular files opened with `FileOptions.Asynchronous`, `IsAsync` correctly returns `false` on Unix because regular file I/O is inherently synchronous at the kernel level.
 
-`FileStream.IsAsync` reflects the updated value of the underlying `SafeFileHandle.IsAsync`.
-
 Additionally, on non-Windows platforms, constructing a `SendPacketsElement` with a `FileStream` no longer throws `ArgumentException` regardless of whether the stream is async.
 
 ## Type of breaking change
@@ -60,7 +57,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The previous behavior was incorrect and misleading. `SafeFileHandle.IsAsync` reported `true` on Unix for regular files that aren't truly non-blocking, and `false` for file descriptors (such as pipes or sockets) that genuinely had `O_NONBLOCK` set. This caused APIs and user code that relied on this property to make incorrect decisions. Accurate `IsAsync` reporting was also a prerequisite for the new `SafeFileHandle.CreateAnonymousPipe` API to correctly expose per-end async semantics on Unix. For more information, see [dotnet/runtime#125220](https://github.com/dotnet/runtime/pull/125220).
+The previous behavior was incorrect and misleading. `SafeFileHandle.IsAsync` reported `false` for file descriptors (such as pipes or sockets) that genuinely had `O_NONBLOCK` set. This caused APIs and user code that relied on this property to make incorrect decisions. Accurate `IsAsync` reporting was also a prerequisite for the new `SafeFileHandle.CreateAnonymousPipe` API to correctly expose per-end async semantics on Unix. For more information, see [dotnet/runtime#125220](https://github.com/dotnet/runtime/pull/125220).
 
 ## Recommended action
 

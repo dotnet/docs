@@ -96,7 +96,7 @@ This pattern avoids needing a separate class for simple key-to-multiple-value ma
 
 ## Tuples vs. anonymous types
 
-Tuples are the preferred choice when you need a lightweight unnamed data structure. Anonymous types remain available for expression tree scenarios and for code that requires reference types, but tuples offer better performance, deconstruction support, and more flexible syntax. For more about anonymous types, see [Anonymous types](../../programming-guide/classes-and-structs/anonymous-types.md) in the language reference.
+Tuples are the preferred choice when you need a lightweight unnamed data structure. Anonymous types remain available for expression tree scenarios and for code that requires reference types, but tuples offer better performance, deconstruction support, and more flexible syntax. For more about anonymous types, see [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md).
 
 ## See also
 

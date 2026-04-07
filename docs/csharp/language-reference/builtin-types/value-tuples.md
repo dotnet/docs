@@ -35,7 +35,7 @@ One of the most common use cases for tuples is as a method return type. Instead 
 
 As the preceding example shows, you can work with the returned tuple instance directly or [deconstruct](#tuple-assignment-and-deconstruction) it in separate variables.
 
-You can also use tuple types instead of [anonymous types](../../fundamentals/types/anonymous-types.md); for example, in LINQ queries. For more information, see [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md).
+You can also use tuple types instead of anonymous types; for example, in LINQ queries. For more information, see [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md).
 
 Typically, use tuples to group loosely related data elements. In public APIs, consider defining a [class](../keywords/class.md) or a [structure](struct.md) type.
 

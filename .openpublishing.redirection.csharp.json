@@ -1,6 +1,10 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/csharp/fundamentals/types/anonymous-types.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/types/tuples"
+    },
+    {
       "source_path_from_root": "/docs/csharp/fundamentals/types/namespaces.md",
       "redirect_url": "/dotnet/csharp/fundamentals/program-structure/namespaces"
     },
@@ -3067,7 +3071,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/anonymous-types.md",
-            "redirect_url": "/dotnet/csharp/fundamentals/types/anonymous-types"
+            "redirect_url": "/dotnet/csharp/fundamentals/types/tuples"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/classes.md",

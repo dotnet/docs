@@ -93,4 +93,4 @@ Finalizers can't have accessibility modifiers. Members of an `enum` type are alw
 - [class](../../language-reference/keywords/class.md)
 - [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)
-- [Anonymous types](../../fundamentals/types/anonymous-types.md)
+- [Anonymous types](../../fundamentals/types/tuples.md)

@@ -1,11 +1,11 @@
 ---
-title: "Generics"
+title: "Generic types and methods"
 description: Learn how to use generic types and methods in C#, including consuming common generic collections, type inference, constraints, collection expressions, dictionary expressions, and covariance and contravariance.
 ms.date: 04/07/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
-# Generics
+# Generic types and methods
 
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter generics as soon as you use collections like `List<T>`.

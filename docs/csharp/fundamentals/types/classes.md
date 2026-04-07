@@ -25,7 +25,7 @@ Use a class when:
 
 ## Declare a class
 
-Define a class with the `class` keyword followed by the type name. An optional [access modifier](../../language-reference/keywords/access-modifiers.md) controls visibility. The default is `internal`. To create types used by other assemblies, specify `public` access:
+Define a class with the `class` keyword followed by the type name. An optional [access modifier](../../language-reference/keywords/access-modifiers.md) controls visibility. The default is `internal`. Specify `public` to allow callers from other assemblies to use your types.
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ClassDeclaration":::
 

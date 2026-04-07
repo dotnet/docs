@@ -55,7 +55,7 @@ The compiler automatically initializes any fields you don't explicitly set in a 
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="AutoDefault":::
 
-The following snippet displays the default value for `IsBlocked`:
+The following example displays the default value for `IsBlocked`:
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="UsingAutoDefault":::
 

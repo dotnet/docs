@@ -40,7 +40,7 @@ In the resulting `archive.tar`, both `file1.txt` and `file2.txt` had separate fi
 
 ## New behavior
 
-Starting in .NET 11, `TarWriter` detects when multiple files are hard-linked to the same inode and writes a `HardLink` entry for subsequent files instead of duplicating the file content.
+Starting in .NET 11, <xref:System.Formats.Tar.TarWriter> detects when multiple files are hard-linked to the same inode and writes a <xref:System.Formats.Tar.TarEntryType.HardLink> entry for subsequent files instead of duplicating the file content.
 
 Using the same code as shown in the [Previous behavior](#previous-behavior) section, the resulting `archive.tar` now contains a full file entry for `file1.txt`, while `file2.txt` has a `HardLink` entry pointing to `file1.txt`.
 
@@ -50,11 +50,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change improves the efficiency of tar archives created by the `System.Formats.Tar` library. By using `HardLink` entries for files that share the same inode, the size of the resulting archive is reduced and the hard-link relationships between files are preserved. This behavior is consistent with GNU tar and other widely used tar implementations.
+This change improves the efficiency of tar archives created by the <xref:System.Formats.Tar> library. By using <System.Formats.Tar.TarEntryType.HardLink> entries for files that share the same inode, the size of the resulting archive is reduced and the hard-link relationships between files are preserved. This behavior is consistent with GNU tar and other widely used tar implementations.
 
 ## Recommended action
 
-If your application depends on duplicating file content for hard-linked files, you can restore the previous behavior. Set the `HardLinkMode` property to `TarHardLinkMode.CopyContents` in a new `TarWriterOptions` instance:
+If your application depends on duplicating file content for hard-linked files, you can restore the previous behavior. Set the <xref:System.Formats.Tar.TarWriterOptions.HardLinkMode> property to <xref:System.Formats.Tar.TarHardLinkMode.CopyContents?displayProperty=nameWithType> in a new <xref:System.Formats.Tar.TarWriterOptions> instance:
 
 ```csharp
 using System.Formats.Tar;
@@ -67,7 +67,7 @@ string filePath2 = "file2.txt";
 File.WriteAllText(filePath1, "Hello, world!");
 File.CreateHardLink(filePath2, filePath1);
 
-var options = new TarWriterOptions(TarEntryFormat.Pax)
+var options = new TarWriterOptions
 {
     HardLinkMode = TarHardLinkMode.CopyContents
 };
@@ -80,7 +80,7 @@ using (var writer = new TarWriter(stream, options, leaveOpen: false))
 }
 ```
 
-Extracting a tar archive that contains `HardLink` entries to a file system without hard link support throws an <xref:System.IO.IOException>. Use the new `TarExtractOptions` class to specify whether to extract hard links as hard links or copy them as separate files. This enables extraction to file systems without hard link support.
+Extracting a tar archive that contains `HardLink` entries to a file system without hard link support throws an <xref:System.IO.IOException>. Use the new <xref:System.Formats.Tar.TarExtractOptions> class to specify whether to extract hard links as hard links or copy them as separate files. This enables extraction to file systems without hard link support.
 
 ## Affected APIs
 

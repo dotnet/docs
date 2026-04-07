@@ -23,9 +23,9 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 **Solution:**
 
-1. Ensure the workspace root contains a `.sln` or `.csproj` file.
-1. Ask the agent: _"What solution file are you using?"_
-1. If your solution file is in a subdirectory, open that directory as the workspace root or point the agent to the file explicitly.
+1. Ensure the workspace root contains a `.sln`, `.csproj`, or `.vbproj` file.
+1. Ask the agent: _"What solution or project file are you using?"_
+1. If your solution or project file is in a subdirectory, open that directory as the workspace root or point the agent to the file explicitly.
 
 ### Agent can't resume previous work
 
@@ -47,8 +47,8 @@ These issues relate to scenario discovery, resuming work, and task state.
 **Solution:**
 
 1. The agent auto-detects stale tasks in most cases. Tell the agent _"resume"_ or _"restart the current task."_
-1. If the stuck state persists, open `tasks.md` and manually change the task status from `in-progress` to `pending`.
-1. Check the corresponding `progress-details.md` for the task to understand where it left off.
+1. If the stuck state persists, tell the agent to _"mark the current task as pending and restart it"_ or _"re-assess and continue from the last completed step."_
+1. Check the corresponding `progress-details.md` file for the task to understand where the previous session stopped.
 
 ### Agent keeps suggesting the wrong scenario
 

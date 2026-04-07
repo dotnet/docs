@@ -31,7 +31,7 @@ public API surface."
 ## Start a conversation
 
 1. Open **Copilot Chat** in VS Code, Visual Studio, or Copilot CLI.
-1. Select the **GitHub Copilot modernization agent for .NET** from the agent picker, or type `@modernize`.
+1. Select the **GitHub Copilot modernization agent for .NET** from the agent picker, or type the correct agent mention for your environment: `@modernize-dotnet` in VS Code, `@Modernize` in Visual Studio, and `@modernize-dotnet` in Copilot CLI.
 1. Describe what you want to accomplish in natural language.
 
 ### What to say

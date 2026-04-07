@@ -26,8 +26,8 @@ When you work with `async` and `await`, two context types play important but ver
 
 <xref:System.Threading.ExecutionContext> is captured with <xref:System.Threading.ExecutionContext.Capture?displayProperty=nameWithType> and restored during execution of a delegate via <xref:System.Threading.ExecutionContext.Run*?displayProperty=nameWithType>:
 
-:::code language="csharp" source="./snippets/executioncontext-and-synchronizationcontext/csharp/Program.cs" id="ExecutionContextCapture":::
-:::code language="vb" source="./snippets/executioncontext-and-synchronizationcontext/vb/Program.vb" id="ExecutionContextCapture":::
+:::code language="csharp" source="./snippets/executioncontext-synchronizationcontext/csharp/Program.cs" id="ExecutionContextCapture":::
+:::code language="vb" source="./snippets/executioncontext-synchronizationcontext/vb/Program.vb" id="ExecutionContextCapture":::
 
 All asynchronous APIs in .NET that fork work—<xref:System.Threading.Tasks.Task.Run*>, <xref:System.Threading.ThreadPool.QueueUserWorkItem*>, <xref:System.IO.Stream.BeginRead*>, and others—capture <xref:System.Threading.ExecutionContext> and use the stored context when invoking your callback. This process of capturing state on one thread and restoring it on another is what "flowing ExecutionContext" means.
 
@@ -41,8 +41,8 @@ All asynchronous APIs in .NET that fork work—<xref:System.Threading.Tasks.Task
 
 By using <xref:System.Threading.SynchronizationContext> instead of framework-specific marshaling APIs, you can write components that work across UI frameworks:
 
-:::code language="csharp" source="./snippets/executioncontext-and-synchronizationcontext/csharp/Program.cs" id="SyncContextUsage":::
-:::code language="vb" source="./snippets/executioncontext-and-synchronizationcontext/vb/Program.vb" id="SyncContextUsage":::
+:::code language="csharp" source="./snippets/executioncontext-synchronizationcontext/csharp/Program.cs" id="SyncContextUsage":::
+:::code language="vb" source="./snippets/executioncontext-synchronizationcontext/vb/Program.vb" id="SyncContextUsage":::
 
 ### Capturing a SynchronizationContext
 
@@ -101,8 +101,8 @@ This is the most important point: <xref:System.Threading.SynchronizationContext.
 
 Consider code that offloads work to the thread pool from a UI thread:
 
-:::code language="csharp" source="./snippets/executioncontext-and-synchronizationcontext/csharp/Program.cs" id="TaskRunExample":::
-:::code language="vb" source="./snippets/executioncontext-and-synchronizationcontext/vb/Program.vb" id="TaskRunExample":::
+:::code language="csharp" source="./snippets/executioncontext-synchronizationcontext/csharp/Program.cs" id="TaskRunExample":::
+:::code language="vb" source="./snippets/executioncontext-synchronizationcontext/vb/Program.vb" id="TaskRunExample":::
 
 If <xref:System.Threading.SynchronizationContext> flowed across `await` points, the `await` inside the delegate passed to <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> would see the UI context as `Current`. The continuation after `await DownloadAsync()` would then post back to the UI thread, causing `Compute(data)` to run on the UI thread instead of on the thread pool. That defeats the purpose of the `Task.Run` call.
 
@@ -122,4 +122,4 @@ Because the runtime suppresses <xref:System.Threading.SynchronizationContext> fl
 
 - [Task-based asynchronous pattern (TAP)](task-based-asynchronous-pattern-tap.md)
 - [Consume the task-based asynchronous pattern](consuming-the-task-based-asynchronous-pattern.md)
-- [SynchronizationContext and console apps](synchronizationcontext-and-console-apps.md)
+- [SynchronizationContext and console apps](synchronizationcontext-console-apps.md)

@@ -22,7 +22,7 @@ UI frameworks like Windows Forms, WPF, and .NET MAUI install a <xref:System.Thre
 
 In a console app, <xref:System.Threading.SynchronizationContext.Current?displayProperty=nameWithType> returns `null`. When a method yields at an `await`, the continuation runs on whatever thread pool thread is available:
 
-:::code language="csharp" source="./snippets/synchronizationcontext-and-console-apps/csharp/Program.cs" id="DefaultBehavior":::
+:::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="DefaultBehavior":::
 
 Representative output from running this program:
 
@@ -74,22 +74,22 @@ To run all continuations on one thread, you need two things:
 
 The context uses a <xref:System.Collections.Concurrent.BlockingCollection%601> to coordinate producers (the async continuations) and a consumer (the pumping loop):
 
-:::code language="csharp" source="./snippets/synchronizationcontext-and-console-apps/csharp/Program.cs" id="SingleThreadContext":::
-:::code language="vb" source="./snippets/synchronizationcontext-and-console-apps/vb/Program.vb" id="SingleThreadContext":::
+:::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="SingleThreadContext":::
+:::code language="vb" source="./snippets/synchronizationcontext-console-apps/vb/Program.vb" id="SingleThreadContext":::
 
 ### The AsyncPump.Run method
 
 `AsyncPump.Run` installs the custom context, invokes the async method, and pumps continuations on the calling thread until the method completes:
 
-:::code language="csharp" source="./snippets/synchronizationcontext-and-console-apps/csharp/Program.cs" id="AsyncPumpRun":::
-:::code language="vb" source="./snippets/synchronizationcontext-and-console-apps/vb/Program.vb" id="AsyncPumpRun":::
+:::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="AsyncPumpRun":::
+:::code language="vb" source="./snippets/synchronizationcontext-console-apps/vb/Program.vb" id="AsyncPumpRun":::
 
 ### See it in action
 
 Replace the default call with `AsyncPump.Run`:
 
-:::code language="csharp" source="./snippets/synchronizationcontext-and-console-apps/csharp/Program.cs" id="AsyncPumpDemo":::
-:::code language="vb" source="./snippets/synchronizationcontext-and-console-apps/vb/Program.vb" id="AsyncPumpDemo":::
+:::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="AsyncPumpDemo":::
+:::code language="vb" source="./snippets/synchronizationcontext-console-apps/vb/Program.vb" id="AsyncPumpDemo":::
 
 Output:
 
@@ -103,8 +103,8 @@ All 10,000 iterations ran on a single thread—the main thread.
 
 The `Func<Task>` overload tracks completion through the returned <xref:System.Threading.Tasks.Task>. Async `void` methods don't return a task; instead, they notify the current <xref:System.Threading.SynchronizationContext> through <xref:System.Threading.SynchronizationContext.OperationStarted> and <xref:System.Threading.SynchronizationContext.OperationCompleted>. To support async `void` methods, extend the context to track outstanding operations:
 
-:::code language="csharp" source="./snippets/synchronizationcontext-and-console-apps/csharp/Program.cs" id="AsyncVoidSupport":::
-:::code language="vb" source="./snippets/synchronizationcontext-and-console-apps/vb/Program.vb" id="AsyncVoidSupport":::
+:::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="AsyncVoidSupport":::
+:::code language="vb" source="./snippets/synchronizationcontext-console-apps/vb/Program.vb" id="AsyncVoidSupport":::
 
 With operation tracking enabled, the pump exits only when all outstanding async `void` methods complete—not just the top-level task.
 
@@ -116,6 +116,6 @@ With operation tracking enabled, the pump exits only when all outstanding async 
 
 ## See also
 
-- [ExecutionContext and SynchronizationContext](executioncontext-and-synchronizationcontext.md)
+- [ExecutionContext and SynchronizationContext](executioncontext-synchronizationcontext.md)
 - [Task-based asynchronous pattern (TAP)](task-based-asynchronous-pattern-tap.md)
 - [Consume the task-based asynchronous pattern](consuming-the-task-based-asynchronous-pattern.md)

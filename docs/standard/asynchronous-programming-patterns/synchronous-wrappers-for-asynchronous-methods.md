@@ -48,17 +48,18 @@ Here's what happens step by step:
 
 ## Thread pool exhaustion
 
-Deadlocks aren't limited to UI threads. If an asynchronous method depends on the thread pool to complete its work (for example, queuing a final processing step), blocking all pool threads with synchronous wrappers can starve the pool:
+Deadlocks aren't limited to UI threads. If an asynchronous method depends on the thread pool to complete its work, for example, by queuing a final processing step, blocking many pool threads with synchronous wrappers can starve the pool:
 
 :::code language="csharp" source="./snippets/synchronous-wrappers-for-async-methods/csharp/Program.cs" id="ThreadPoolDeadlock":::
 
 In this scenario:
 
-1. All 25 thread pool threads call `Foo`, which blocks in `.Result`.
+1. Many thread pool threads call `Foo`, which blocks in `.Result`.
 1. Each async operation completes its I/O and needs a thread pool thread to run its completion callback.
-1. No threads are available. They're all blocked. Deadlock!
+1. Because blocked calls occupy available worker threads, completions might wait a long time for a thread to become available.
+1. Modern .NET can add more thread pool threads over time, but the application can still suffer severe thread pool starvation, poor throughput, long delays, or an apparent hang.
 
-This exact pattern affected `HttpWebRequest.GetResponse` in .NET Framework 1.x, where the synchronous method was implemented as a wrapper around the asynchronous `BeginGetResponse`/`EndGetResponse`.
+This pattern affected `HttpWebRequest.GetResponse` in .NET Framework 1.x, where the synchronous method was implemented as a wrapper around the asynchronous `BeginGetResponse`/`EndGetResponse`.
 
 ## Guideline: avoid exposing synchronous wrappers
 

@@ -1,5 +1,3 @@
-using System.Text.RegularExpressions;
-
 // <ScalabilityWrong>
 public static class TimerExampleWrong
 {

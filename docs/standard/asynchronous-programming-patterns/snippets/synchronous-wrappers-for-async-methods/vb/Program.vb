@@ -26,7 +26,7 @@ Public Module ConfigureAwaitMitigation
     End Function
 
     Public Function Sync() As Integer
-        Return Task.Run(Function() LibraryMethodAsync()).Result
+        Return LibraryMethodAsync().Result
     End Function
 End Module
 ' </ConfigureAwaitMitigation>

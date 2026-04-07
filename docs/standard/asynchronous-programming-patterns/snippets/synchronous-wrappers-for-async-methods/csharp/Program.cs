@@ -65,7 +65,7 @@ public static class ConfigureAwaitMitigation
 // Verification entry point
 public class Program
 {
-    public static async Task Main()
+    public static void Main()
     {
         Console.WriteLine("--- ConfigureAwait mitigation demo ---");
         int result = ConfigureAwaitMitigation.Sync();

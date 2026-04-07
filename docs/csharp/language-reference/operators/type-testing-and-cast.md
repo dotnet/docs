@@ -147,8 +147,8 @@ A user-defined type can't overload the `()` operator, but it can define custom t
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `is` operator](~/_csharpstandard/standard/expressions.md#121412-the-is-operator)
-- [The `as` operator](~/_csharpstandard/standard/expressions.md#121413-the-as-operator)
+- [The `is` operator](~/_csharpstandard/standard/expressions.md#121512-the-is-operator)
+- [The `as` operator](~/_csharpstandard/standard/expressions.md#121513-the-as-operator)
 - [Cast expressions](~/_csharpstandard/standard/expressions.md#1298-cast-expressions)
 - [The `typeof` operator](~/_csharpstandard/standard/expressions.md#12818-the-typeof-operator)
 

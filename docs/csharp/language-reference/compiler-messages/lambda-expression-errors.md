@@ -160,7 +160,7 @@ The compiler also produces the following *informational* message:
 - **CS8971**: Warning: *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 - **CS9236**: Informational: *Compiling requires binding the lambda expression at least count times. Consider declaring the lambda expression with explicit parameter types, or if the containing method call is generic, consider using explicit type arguments.*
 
-The compiler prohibits certain C# constructs inside [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md). These restrictions exist because the compiler transforms lambdas and anonymous methods into [delegate](../../programming-guide/delegates/index.md) invocations or [expression trees](../../advanced-topics/expression-trees/index.md), and some constructs can't be represented in those forms. For more information, see the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1221-anonymous-function-expressions) section of the C# specification.
+The compiler prohibits certain C# constructs inside [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md). These restrictions exist because the compiler transforms lambdas and anonymous methods into [delegate](../../programming-guide/delegates/index.md) invocations or [expression trees](../../advanced-topics/expression-trees/index.md), and some constructs can't be represented in those forms. For more information, see the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions) section of the C# specification.
 
 You can correct these errors by using the following guidance:
 
@@ -197,7 +197,7 @@ You can correct these errors by using the following guidance:
 - **CS8975**: *The contextual keyword 'var' cannot be used as an explicit lambda return type.*
 - **CS9098**: *Implicitly typed lambda parameter '...' cannot have a default value.*
 
-These errors indicate a problem with a [lambda expression parameter](../operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) or return type declaration. For the full rules on lambda parameter and return types, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1221-anonymous-function-expressions) section of the C# specification.
+These errors indicate a problem with a [lambda expression parameter](../operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) or return type declaration. For the full rules on lambda parameter and return types, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions) section of the C# specification.
 
 > [!NOTE]
 > **CS1731** and **CS1732** are no longer produced by the current version of the C# compiler (Roslyn). They might appear if you're using an older compiler version.
@@ -228,7 +228,7 @@ You can correct these errors by using the following guidance:
 - **CS9099**: Warning: *The default parameter value does not match in the target delegate type.*
 - **CS9100**: Warning: *Parameter has params modifier in lambda but not in target delegate type.*
 
-These errors indicate a problem with the [delegate type](../../programming-guide/delegates/index.md) that the compiler infers or expects for a [lambda expression](../operators/lambda-expressions.md), [anonymous method](../operators/delegate-operator.md), or [method group](~/_csharpstandard/standard/conversions.md#108-method-group-conversions). For the full rules on delegate conversions, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1221-anonymous-function-expressions) section of the C# specification.
+These errors indicate a problem with the [delegate type](../../programming-guide/delegates/index.md) that the compiler infers or expects for a [lambda expression](../operators/lambda-expressions.md), [anonymous method](../operators/delegate-operator.md), or [method group](~/_csharpstandard/standard/conversions.md#108-method-group-conversions). For the full rules on delegate conversions, see [lambda expressions](../operators/lambda-expressions.md), [anonymous methods](../operators/delegate-operator.md), and the [anonymous function expressions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions) section of the C# specification.
 
 > [!NOTE]
 > The current version of the C# compiler (Roslyn) doesn't produce **CS0467**. You might see this error if you're using an older compiler version.

@@ -159,7 +159,7 @@ There are some performance improvements during the TLS handshake as well as impr
 
 ### Windows CNG virtualization-based security
 
-Windows 11 has added new APIs to help secure Windows keys with [virtualization-based security (VBS)](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/advancing-key-protection-in-windows-using-vbs/ba-p/4050988). With this new capability, keys can be protected from admin-level key theft attacks with negligible effect on performance, reliability, or scale.
+Windows 11 has added new APIs to help secure Windows keys with [virtualization-based security (VBS)](/windows/security/book/identity-protection-advanced-credential-protection#vbs-key-protection). With this new capability, keys can be protected from admin-level key theft attacks with negligible effect on performance, reliability, and scale.
 
 .NET 9 has added matching <xref:System.Security.Cryptography.CngKeyCreationOptions> flags. The following three flags were added:
 

@@ -2,7 +2,7 @@
 title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
-ms.date: 09/06/2025
+ms.date: 04/08/2026
 ---
 
 # Tutorial: Install and use a .NET global tool using the .NET CLI
@@ -23,7 +23,7 @@ Starting with .NET 10.0.100, you can run .NET tools without permanent installati
 1. Run the tool directly using dnx (simplified syntax):
 
    ```dotnetcli
-   dnx microsoft.botsay --add-source ./nupkg microsoft.botsay hello from the bot
+   dnx botsay --add-source ./nupkg botsay hello from the bot
    ```
 
    The `--add-source` parameter tells the .NET CLI to use the *./nupkg* directory as an additional source feed for NuGet packages when the tool is not available on NuGet.org.
@@ -32,10 +32,10 @@ Starting with .NET 10.0.100, you can run .NET tools without permanent installati
 
 If you prefer permanent installation for frequent use:
 
-1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *microsoft.botsay* project folder:
+1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *botsay* project folder:
 
    ```dotnetcli
-   dotnet tool install --global --add-source ./nupkg microsoft.botsay
+   dotnet tool install --global --add-source ./nupkg botsay
    ```
 
    The `--global` parameter tells the .NET CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
@@ -46,7 +46,7 @@ If you prefer permanent installation for frequent use:
 
    ```console
    You can invoke the tool using the following command: botsay
-   Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
+   Tool 'botsay' (version '1.0.0') was successfully installed.
    ```
 
    [!INCLUDE[](includes/dotnet-tool-install-arch-options.md)]
@@ -63,7 +63,7 @@ If you prefer permanent installation for frequent use:
 1. Remove the tool by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
    ```dotnetcli
-   dotnet tool uninstall -g microsoft.botsay
+   dotnet tool uninstall -g botsay
    ```
 
 ## Use the tool as a global tool installed in a custom location
@@ -73,13 +73,13 @@ If you prefer permanent installation for frequent use:
    On Windows:
 
    ```dotnetcli
-   dotnet tool install --tool-path c:\dotnet-tools --add-source ./nupkg microsoft.botsay
+   dotnet tool install --tool-path c:\dotnet-tools --add-source ./nupkg botsay
    ```
 
    On Linux or macOS:
 
    ```dotnetcli
-   dotnet tool install --tool-path ~/bin --add-source ./nupkg microsoft.botsay
+   dotnet tool install --tool-path ~/bin --add-source ./nupkg botsay
    ```
 
    The `--tool-path` parameter tells the .NET CLI to install the tool binaries in the specified location. If the directory doesn't exist, it is created. This directory is not automatically added to the PATH environment variable.
@@ -88,7 +88,7 @@ If you prefer permanent installation for frequent use:
 
    ```console
    You can invoke the tool using the following command: botsay
-   Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
+   Tool 'botsay' (version '1.0.0') was successfully installed.
    ```
 
 1. Invoke the tool:
@@ -110,13 +110,13 @@ If you prefer permanent installation for frequent use:
    On Windows:
 
    ```dotnetcli
-   dotnet tool uninstall --tool-path c:\dotnet-tools microsoft.botsay
+   dotnet tool uninstall --tool-path c:\dotnet-tools botsay
    ```
 
    On Linux or macOS:
 
    ```dotnetcli
-   dotnet tool uninstall --tool-path ~/bin microsoft.botsay
+   dotnet tool uninstall --tool-path ~/bin botsay
    ```
 
 ## Troubleshoot

@@ -1,12 +1,52 @@
-using System.Collections.Concurrent;
-
 // Verification entry point
-ExecutionContextCaptureDemo();
-await TaskRunExample.ProcessOnUIThread();
-SyncContextExample.DoWork();
-await Task.Delay(200);
-Console.WriteLine("Done.");
+await SingleThreadSynchronizationContext.Run(async () =>
+{
+    ExecutionContextCaptureDemo();
+    await TaskRunExample.ProcessOnUIThread();
+    SyncContextExample.DoWork();
+    await Task.Delay(200);
+    Console.WriteLine("Done.");
+});
 
+static class SingleThreadSynchronizationContext
+{
+    public static Task Run(Func<Task> asyncAction)
+    {
+        var previousContext = SynchronizationContext.Current;
+        var context = new SingleThreadContext();
+        SynchronizationContext.SetSynchronizationContext(context);
+
+        Task task;
+        try
+        {
+            task = asyncAction();
+            task.ContinueWith(_ => context.Complete(), TaskScheduler.Default);
+            context.RunOnCurrentThread();
+            return task;
+        }
+        finally
+        {
+            SynchronizationContext.SetSynchronizationContext(previousContext);
+        }
+    }
+
+    private sealed class SingleThreadContext : SynchronizationContext
+    {
+        private readonly BlockingCollection<(SendOrPostCallback Callback, object? State)> _queue = new();
+
+        public override void Post(SendOrPostCallback d, object? state) => _queue.Add((d, state));
+
+        public void RunOnCurrentThread()
+        {
+            foreach (var workItem in _queue.GetConsumingEnumerable())
+            {
+                workItem.Callback(workItem.State);
+            }
+        }
+
+        public void Complete() => _queue.CompleteAdding();
+    }
+}
 // <ExecutionContextCapture>
 static void ExecutionContextCaptureDemo()
 {

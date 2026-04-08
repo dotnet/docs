@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a .NET tool"
-description: Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI.
+description: Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI. In this tutorial, you build a tool that reports .NET runtime information, OS details, and key environment variable settings.
 ms.topic: tutorial
 ms.date: 04/08/2026
 ---
@@ -11,7 +11,7 @@ ms.date: 04/08/2026
 
 This tutorial teaches you how to create and package a .NET tool. The .NET CLI lets you create a console application as a tool, which others can install and run. .NET tools are NuGet packages that are installed from the .NET CLI. For more information about tools, see [.NET tools overview](global-tools.md).
 
-The tool that you'll create is a console application that takes a message as input and displays the message along with lines of text that create the image of a robot.
+The tool that you'll create is a console application that takes information about the current .NET environment and displays it, including the .NET version, operating system details, and key environment variable settings.
 
 This is the first in a series of three tutorials. In this tutorial, you create and package a tool. In the next two tutorials you [use the tool as a global tool](global-tools-how-to-use.md) and [use the tool as a local tool](local-tools-how-to-use.md). The procedures for creating a tool are the same whether you use it as a global tool or as a local tool.
 
@@ -30,13 +30,13 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n botsay -f net6.0
+   dotnet new console -n dotnet-env -f net6.0
    ```
 
-   The command creates a new folder named *botsay* under the *repository* folder.
+   The command creates a new folder named *dotnet-env* under the *repository* folder.
 
    > [!NOTE]
-   > For this tutorial, the project is named *botsay*. When you create your own tools, choose a unique package name. Avoid using company or organization name prefixes (such as `Microsoft.` or `Google.`) that you don't own, as those are reserved for those organizations on NuGet.org.
+   > For this tutorial, the project is named *dotnet-env*. When you create your own tools, choose a unique package name. Avoid using company or organization name prefixes (such as `Microsoft.` or `Google.`) that you don't own, as those are reserved for those organizations on NuGet.org.
 
    > [!NOTE]
    > For this tutorial you create a tool that targets .NET 6.0. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
@@ -50,131 +50,78 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    > </Project>
    > ```
 
-1. Navigate to the *botsay* folder.
+1. Navigate to the *dotnet-env* folder.
 
    ```console
-   cd botsay
+   cd dotnet-env
    ```
 
 ## Add the code
 
 1. Open the *Program.cs* file with your code editor.
 
-1. Replace the code in *Program.cs* with the following code:
+1. Replace the contents with the following code:
 
-   ```csharp
-   using System.Reflection;
+   :::code language="csharp" source="./snippets/global-tools-how-to-create/csharp/Program.cs" id="full-program":::
 
-   namespace botsay;
+   The program has two methods:
 
-   internal class Program
-   {
-       static void Main(string[] args)
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
-   ```
+   - `Main` checks whether any arguments were passed. With no arguments, it calls `ShowInfo()`. With any argument, it prints the tool version.
+   - `ShowInfo` displays three sections of information:
+     - **Runtime** — the .NET version, framework description, and runtime identifier, using `Environment.Version` and `RuntimeInformation`.
+     - **System** — OS description, architecture, machine name, and processor count.
+     - **Environment Variables** — six key .NET-related variables (`DOTNET_ROOT`, `DOTNET_HOST_PATH`, `DOTNET_CLI_HOME`, `DOTNET_NOLOGO`, `NUGET_PACKAGES`, and `DOTNET_ENVIRONMENT`), showing `(not set)` for any that aren't configured.
 
-   The `using System.Reflection;` directive is needed by code that you add in the next step.
-
-1. Replace the `Main` method with the following code to process the command-line arguments for the application.
-
-   ```csharp
-   static void Main(string[] args)
-   {
-       if (args.Length == 0)
-       {
-           var versionString = Assembly.GetEntryAssembly()?
-                                   .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
-                                   .InformationalVersion
-                                   .ToString();
-
-           Console.WriteLine($"botsay v{versionString}");
-           Console.WriteLine("-------------");
-           Console.WriteLine("\nUsage:");
-           Console.WriteLine("  botsay <message>");
-           return;
-       }
-
-       ShowBot(string.Join(' ', args));
-   }
-   ```
-
-   If no arguments are passed, a short help message is displayed. Otherwise, all of the arguments are concatenated into a single string and printed by calling the `ShowBot` method that you create in the next step.
-
-1. Add a new method named `ShowBot` that takes a string parameter. The method prints out the message and an image of a robot using lines of text.
-
-   ```csharp
-   static void ShowBot(string message)
-   {
-       string bot = $"\n        {message}";
-       bot += @"
-       __________________
-                         \
-                          \
-                             ....
-                             ....'
-                              ....
-                           ..........
-                       .............'..'..
-                    ................'..'.....
-                  .......'..........'..'..'....
-                 ........'..........'..'..'.....
-                .'....'..'..........'..'.......'.
-                .'..................'...   ......
-                .  ......'.........         .....
-                .    _            __        ......
-               ..    #            ##        ......
-              ....       .                 .......
-              ......  .......          ............
-               ................  ......................
-               ........................'................
-              ......................'..'......    .......
-           .........................'..'.....       .......
-        ........    ..'.............'..'....      ..........
-      ..'..'...      ...............'.......      ..........
-     ...'......     ...... ..........  ......         .......
-    ...........   .......              ........        ......
-   .......        '...'.'.              '.'.'.'         ....
-   .......       .....'..               ..'.....
-      ..       ..........               ..'........
-             ............               ..............
-            .............               '..............
-           ...........'..              .'.'............
-          ...............              .'.'.............
-         .............'..               ..'..'...........
-         ...............                 .'..............
-          .........                        ..............
-           .....
-   ";
-       Console.WriteLine(bot);
-   }
-   ```
+   The `using System.Reflection` directive is required for `Assembly.GetEntryAssembly()` and `AssemblyInformationalVersionAttribute`. The `using System.Runtime.InteropServices` directive is required for `RuntimeInformation`.
 
 1. Save your changes.
 
 ## Test the application
 
-Run the project and see the output. Try these variations at the command line to see different results:
+Run the project and see the output:
 
 ```dotnetcli
 dotnet run
-dotnet run -- "Hello from the bot"
-dotnet run -- Hello from the bot
 ```
 
-All arguments after the `--` delimiter are passed to your application.
+The output looks similar to the following example:
+
+```console
+dotnet-env v1.0.0
+----------------------------------------
+
+Runtime
+  .NET Version          6.0.36
+  Framework             .NET 6.0.36
+  Runtime Identifier    win10-x64
+
+System
+  OS                    Microsoft Windows 10.0.22631
+  Architecture          X64
+  Machine Name          MY-MACHINE
+  Processor Count       16
+
+Environment Variables
+  DOTNET_ROOT             (not set)
+  DOTNET_HOST_PATH        (not set)
+  DOTNET_CLI_HOME         (not set)
+  DOTNET_NOLOGO           (not set)
+  NUGET_PACKAGES          (not set)
+  DOTNET_ENVIRONMENT      (not set)
+```
+
+> [!NOTE]
+> The values shown depend on your machine and .NET installation. The output varies by platform.
 
 ## Package the tool
 
 Before you can pack and distribute the application as a tool, you need to modify the project file.
 
-1. Open the *botsay.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
+1. Open the *dotnet-env.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
    ```xml
    <PackAsTool>true</PackAsTool>
-   <ToolCommandName>botsay</ToolCommandName>
+   <ToolCommandName>dotnet-env</ToolCommandName>
    <PackageOutputPath>./nupkg</PackageOutputPath>
    ```
 
@@ -196,7 +143,7 @@ Before you can pack and distribute the application as a tool, you need to modify
        <TargetFramework>net6.0</TargetFramework>
 
        <PackAsTool>true</PackAsTool>
-       <ToolCommandName>botsay</ToolCommandName>
+       <ToolCommandName>dotnet-env</ToolCommandName>
        <PackageOutputPath>./nupkg</PackageOutputPath>
 
      </PropertyGroup>
@@ -210,7 +157,7 @@ Before you can pack and distribute the application as a tool, you need to modify
    dotnet pack
    ```
 
-   The *botsay.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *botsay.csproj* file, which in this example is the *./nupkg* folder.
+   The *dotnet-env.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *dotnet-env.csproj* file, which in this example is the *./nupkg* folder.
 
    When you want to release a tool publicly, you can upload it to `https://www.nuget.org`. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command. For this tutorial you install the package directly from the local *nupkg* folder, so there's no need to upload the package to NuGet.
 

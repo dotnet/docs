@@ -35,15 +35,6 @@ Console.WriteLine($"{options.Host}:{options.Port} (SSL: {options.UseSsl})");
 // db.example.com:5432 (SSL: True)
 // </UsingObjectInitializer>
 
-// <CollectionInitializers>
-List<string> languages = ["C#", "F#", "Visual Basic"];
-
-// The spread operator (..) composes collections from existing sequences:
-List<string> moreLangs = [.. languages, "Python", "TypeScript"];
-Console.WriteLine(string.Join(", ", moreLangs));
-// C#, F#, Visual Basic, Python, TypeScript
-// </CollectionInitializers>
-
 // <Inheritance>
 var manager = new Manager("Satya", "Engineering");
 Console.WriteLine($"{manager.Name} manages {manager.Department}");

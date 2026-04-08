@@ -134,6 +134,9 @@ The `TargetFramework` property specifies the target framework version for the ap
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> The `TargetFramework` value is an alias. The .NET SDK parses it and sets the canonical moniker properties: `TargetFrameworkMoniker`, `TargetFrameworkIdentifier`, `TargetFrameworkVersion`, and, if applicable, `TargetPlatformIdentifier`, `TargetPlatformVersion`, and `TargetPlatformMoniker`. If you use a custom alias, you can set these properties directly in your project file.
+
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
 ### TargetFrameworks
@@ -148,6 +151,9 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
   <TargetFrameworks>net8.0;net462</TargetFrameworks>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> Starting with .NET SDK 10.0.300, multiple values can resolve to the same effective framework. For example, `<TargetFrameworks>linux;mac</TargetFrameworks>` is valid where both aliases resolve to `net10.0` as the target framework.
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
@@ -407,6 +413,7 @@ The following MSBuild properties are documented in this section:
 - [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [SelfContained](#selfcontained)
 - [UseAppHost](#useapphost)
+- [UseNativeLibPrefix](#usenativelibprefix)
 
 ### AppendTargetFrameworkToOutputPath
 
@@ -677,6 +684,20 @@ The `UseAppHost` property controls whether or not a native executable is created
 ```
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
+
+### UseNativeLibPrefix
+
+The `UseNativeLibPrefix` property controls whether NativeAOT applies the `lib` prefix to non-executable native library outputs on Unix platforms. By default, the `lib` prefix is applied, which aligns with Unix naming conventions for shared and static libraries (for example, `libmylib.so`, `libmylib.a`).
+
+Set `UseNativeLibPrefix` to `false` to opt out of the default behavior:
+
+```xml
+<PropertyGroup>
+  <UseNativeLibPrefix>false</UseNativeLibPrefix>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 11. For more information, see [NativeAOT uses lib prefix for native library outputs on Unix](../compatibility/interop/11/nativeaot-lib-prefix.md).
 
 ## Trim-related properties
 

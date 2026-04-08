@@ -21,12 +21,7 @@ public static class Program
 {
     public static void Main()
     {
-        // <UsingRecord>
         var person = new Person("Grace", "Hopper");
-        Console.WriteLine(person);
-        // Person { FirstName = Grace, LastName = Hopper }
-        // </UsingRecord>
-
         // <Deconstruct>
         var (first, last) = person;
         Console.WriteLine($"{first} {last}");

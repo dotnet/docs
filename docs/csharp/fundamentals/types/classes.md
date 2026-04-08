@@ -10,13 +10,22 @@ ai-usage: ai-assisted
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter classes once you need to model objects with behavior and state.
 >
-> **Experienced in another language?** C# classes are similar to classes in Java or C++. Skim the [object initializers](#object-initializers) and [collection initializers](#collection-initializers) sections for C#-specific patterns, and see [Records](records.md) for a data-focused alternative.
+> **Experienced in another language?** C# classes are similar to classes in Java or C++. Skim the [object initializers](#object-initializers) section for C#-specific patterns, and see [Records](records.md) for a data-focused alternative.
 
 A *class* is a reference type that defines a blueprint for objects. When you create a variable of a class type, the variable holds a *reference* to an object on the managed heap. The variable doesn't hold the object data itself. Assigning a class variable to another variable copies the reference, so both variables point to the same object. Classes are the most common way to define custom types in C#. Use them when you need complex behavior, inheritance, or shared identity between references.
 
+## When to use classes
+
+Use a class when:
+
+- The type has complex behavior or manages mutable state.
+- You need inheritance to create a base class with derived specializations, or to create a derived type that extends an existing class.
+- Instances represent a shared identity, not objects that happen to hold equal values. Two references to the same object should stay in sync.
+- The type is large or long-lived and benefits from [heap allocation](../../../standard/garbage-collection/fundamentals.md#the-managed-heap) and reference semantics.
+
 ## Declare a class
 
-Define a class with the `class` keyword followed by the type name. An optional [access modifier](../../language-reference/keywords/access-modifiers.md) controls visibility. The default is `internal`:
+Define a class with the `class` keyword followed by the type name. An optional [access modifier](../../language-reference/keywords/access-modifiers.md) controls visibility. The default is `internal`. Specify `public` to allow callers from other assemblies to use your types.
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ClassDeclaration":::
 
@@ -32,7 +41,7 @@ The variable `customer` holds a reference to the object, not the object itself. 
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="ReferenceSemantics":::
 
-This reference-sharing behavior is one distinction between classes and [structs](structs.md), where assignment copies the data. More importantly, classes support [inheritance](#inheritance). You can build hierarchies where derived types reuse and specialize behavior from a base class. Structs can't participate in inheritance hierarchies. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
+This reference-sharing behavior is one distinction between classes and [structs](structs.md). With structs, assignment copies the data. More importantly, classes support [inheritance](#inheritance). You can build hierarchies where derived types reuse and specialize behavior from a base class. Structs can't participate in inheritance hierarchies. For more on the distinction, see [Value types and reference types](index.md#value-types-and-reference-types).
 
 ## Constructors and initialization
 
@@ -42,7 +51,7 @@ When you create an instance, you want its fields and properties initialized to u
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerFieldInitializer":::
 
-Field initializers define *internal* defaults. They don't give callers any way to choose the initial value. To let consumers of the class supply a value, use one of the following techniques.
+Field initializers assign a reasonable default to a field or property. This distinguishes it from the following approaches where callers can provide the initial value.
 
 **Constructor parameters** require callers to provide values:
 
@@ -82,15 +91,7 @@ The .NET class library includes many static classes, such as <xref:System.Math> 
 
 Object initializers work with any accessible property that has a `set` or [`init`](../../language-reference/keywords/init.md) accessor. They combine naturally with `required` properties and with constructors that accept some parameters while letting the caller set others.
 
-## Collection initializers
-
-A *collection* is a type that holds a group of related values—lists, sets, dictionaries, arrays, and spans are all common examples. The .NET class library provides general-purpose collection types such as <xref:System.Collections.Generic.List`1>, <xref:System.Collections.Generic.Dictionary`2>, and <xref:System.Collections.Generic.HashSet`1>, alongside arrays and <xref:System.Span`1>.
-
-*Collection expressions* (C# 12+) let you populate a collection inline when you create it using bracket syntax:
-
-:::code language="csharp" source="snippets/classes/Program.cs" ID="CollectionInitializers":::
-
-Collection expressions work with arrays, `List<T>`, `Span<T>`, and any type that supports collection initialization. The spread operator (`..`) adds all elements from its operand into the new collection. The operand doesn't have to be a full collection—it can be any expression that produces a sequence, such as a sub-range, a LINQ query, or a filtered subset. For more information, see [Collection expressions (C# reference)](../../language-reference/operators/collection-expressions.md).
+When the property is a *collection*, you can use a [Collection expressions (C# reference)](../../language-reference/operators/collection-expressions.md) to initialize that object.
 
 ## Inheritance
 
@@ -99,15 +100,6 @@ Classes support *inheritance*. You can define a new class that reuses, extends, 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="Inheritance":::
 
 A class can inherit from one base class and implement multiple interfaces. Derived classes inherit all members of the base class except constructors. For more information, see [Inheritance](../object-oriented/inheritance.md) and [Interfaces](interfaces.md).
-
-## When to use classes
-
-Use a class when:
-
-- The type has complex behavior or manages mutable state.
-- You need inheritance to create a base class with derived specializations, or to create a derived type that extends an existing class.
-- Instances represent a shared identity, not just a bundle of data (two references to the same object should stay in sync).
-- The type is large or long-lived and benefits from heap allocation and reference semantics.
 
 ## See also
 

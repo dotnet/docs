@@ -9,79 +9,161 @@ ai-usage: ai-assisted
 
 The <xref:Microsoft.Extensions.VectorData> library provides vector search capabilities as part of its vector store abstractions. These capabilities include filtering and many other options.
 
-> [!TIP]
-> To see how you can search without generating embeddings yourself, see [Let the vector store generate embeddings](./embedding-generation.md#let-the-vector-store-generate-embeddings).
-
 ## Vector search
 
-The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> method allows searching using data that has already been vectorized. This method takes a vector and an optional <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1> class as input. <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> is available on the following types:
+The <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> method performs a similarity search, returning records whose vector property is most similar to a given value. Assuming you have a collection that already contains data, here is a minimal sample showing vector search using Qdrant:
 
-- <xref:Microsoft.Extensions.VectorData.IVectorSearchable`1>
-- <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2>
+```csharp
+// Create a Qdrant VectorStore object and get a VectorStoreCollection for a collection that already contains records
+VectorStore vectorStore = new QdrantVectorStore(new QdrantClient("localhost"), ownsClient: true);
+VectorStoreCollection<ulong, Hotel> collection = vectorStore.GetCollection<ulong, Hotel>("skhotels");
 
-Note that <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> implements `IVectorSearchable<TRecord>`.
+// Get the 3 hotels whose vector property is most similar to the query text
+IAsyncEnumerable<VectorSearchResult<Hotel>> results = collection.SearchAsync("Big rooms with a view", top: 3);
 
-Assuming you have a collection that already contains data, you can easily search it. Here is an example using Qdrant.
+// Inspect the returned hotels and their similarity scores
+await foreach (VectorSearchResult<Hotel> record in results)
+{
+    Console.WriteLine("Found hotel description: " + record.Record.Description);
+    Console.WriteLine("Found record score: " + record.Score);
+}
+```
 
-:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorSearch":::
+For more information on embedding generation, see [Vector properties and embedding generation](./define-your-data-model.md#vector-properties-and-embedding-generation).
 
-> [!TIP]
-> For more information on how to generate embeddings see [embedding generation](./embedding-generation.md).
+## Number of results and skipping results
 
-## Search with auto-generated embeddings
+<xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> has a mandatory `top` parameter that controls the maximum number of records returned from the search. Always consider how many top records you actually need, as overfetching can reduce application performance:
 
-If you configured an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> on your vector store or collection, you can pass a `string` directly to `SearchAsync` instead of a precomputed vector. The vector store generates the search embedding automatically:
+```csharp
+IAsyncEnumerable<VectorSearchResult<Hotel>> searchResult = collection.SearchAsync("Big rooms with a view", top: 3);
+```
 
-:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorSearchWithAutoEmbedding":::
+In addition, you can optionally skip records. For example, the following search returns the 20 most relevant products after skipping 40:
 
-For information on how to configure an embedding generator on your vector store, see [Let the vector store generate embeddings](./embedding-generation.md#let-the-vector-store-generate-embeddings).
+```csharp
+IAsyncEnumerable<VectorSearchResult<Product>> results = collection.SearchAsync(
+    "Green socks",
+    top: 20,
+    new() { Skip = 40 });
+```
 
-## Supported vector types
+`top` and `Skip` can be used to perform paging to retrieve a large number of results using separate calls. However, this technique might not perform well on your database, as it must still find and process the skipped records. For more information, consult your database documentation.
 
-<xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync*> takes a generic type as the vector parameter. The types of vectors supported by each data store vary.
-
-It's also important for the search vector type to match the target vector that is being searched, for example, if you have two vectors on the same record with different vector types, make sure that the search vector you supply matches the type of the specific vector you are targeting. For information on how to pick a target vector if you have more than one per record, see [VectorProperty](#vectorproperty).
-
-## Vector search options
-
-The following options can be provided using the `VectorSearchOptions<TRecord>` class.
-
-### VectorProperty
-
-Use the `VectorProperty` option to specify the vector property to target during the search. If none is provided and the data model contains only one vector, that vector will be used. If the data model contains no vector or multiple vectors and `VectorProperty` is not provided, the search method throws an exception.
-
-:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="VectorProperty":::
-
-### Skip results or select top results
-
-The `top` parameter on <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2.SearchAsync``1(``0,System.Int32,Microsoft.Extensions.VectorData.VectorSearchOptions{`1},System.Threading.CancellationToken)> and the <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Skip?displayProperty=nameWithType> option let you limit the number of results. The `top` parameter limits the results to the top `n` results. The <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Skip> option skips a number of results from the top of the result set. You can use these controls to perform paging if you want to retrieve a large number of results using separate calls.
-
-:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="TopAndSkip":::
-
-The default value for `Skip` is 0.
-
-### IncludeVectors
-
-The <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.IncludeVectors?displayProperty=nameWithType> option lets you specify whether you want to return vectors in the search results. If `false`, the vector properties on the returned model are left null. Using `false` can significantly reduce the amount of data retrieved from the vector store during search, making searches more efficient.
-
-The default value for `IncludeVectors` is `false`.
-
-:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="IncludeVectors":::
-
-### Filter
+### Metadata filtering
 
 Use the <xref:Microsoft.Extensions.VectorData.VectorSearchOptions`1.Filter?displayProperty=nameWithType> option to filter the records in the chosen collection before applying the vector search. This has multiple benefits:
 
 - Reduces latency and processing cost, since only records remaining after filtering need to be compared with the search vector and therefore fewer vector comparisons have to be done.
-- Limits the result set. For example, you can implement access control by excluding data that the user shouldn't have access to.
+- Limits the result set. For example, you can implement access control by excluding data that the user shouldn't have access to, or search only within a specific category of products.
 
-For fields to be used for filtering, many vector stores require those fields to be indexed first. Some vector stores will allow filtering using any field, but might optionally allow indexing to improve filtering performance.
+For fields to be used for filtering, many vector stores require those fields to be indexed first. For more information on how to enable indexing on data properties, see [Data property](./define-your-data-model.md#data-property).
 
-If you're creating a collection via the vector store abstractions and you want to enable filtering on a field, set the <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed> property to `true` when defining your data model or when creating your record definition.
+Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported varies depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, equals, not equals, `and`, and `or`.
 
-> [!TIP]
-> For more information on how to enable <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsIndexed>, see [VectorStoreDataAttribute](./define-your-data-model.md#vectorstoredataattribute) or [VectorStoreDataProperty](./define-your-data-model.md#vectorstoredataproperty).
+```csharp
+class Glossary
+{
+    // ...
 
-Filters are expressed using LINQ expressions based on the type of the data model. The set of LINQ expressions supported will vary depending on the functionality supported by each database, but all databases support a broad base of common expressions, for example, equals, not equals, `and`, and `or`.
+    // Category is marked as indexed, since you want to filter using this property.
+    [VectorStoreData(IsIndexed = true)]
+    public required string Category { get; set; }
 
-:::code language="csharp" source="./snippets/conceptual/vector-search.cs" id="Filter":::
+    // Tags is marked as indexed, since you want to filter using this property.
+    [VectorStoreData(IsIndexed = true)]
+    public required List<string> Tags { get; set; }
+}
+
+IAsyncEnumerable<VectorSearchResult<Glossary>> results = collection.SearchAsync(
+    "Some term",
+    top: 3,
+    new()
+    {
+        Filter = r => r.Category == "External Definitions" && r.Tags.Contains("memory")
+    });
+```
+
+### Include vectors in results
+
+By default, vector properties aren't included in the search results, which reduces data transfer. You can configure the search to include them:
+
+```csharp
+IAsyncEnumerable<VectorSearchResult<Product>> results = collection.SearchAsync(
+    "Green socks",
+    top: 3,
+    new() { IncludeVectors = true });
+```
+
+## Specify the vector property
+
+In most scenarios, only a single vector property is defined in the data model, and `SearchAsync` automatically searches against it. However, when multiple vector properties are defined, you must specify which one should be used:
+
+```csharp
+class Product
+{
+    // ...
+
+    // Multiple vector properties:
+    [VectorStoreVector(1536)]
+    public ReadOnlyMemory<float> DescriptionEmbedding { get; set; }
+
+    [VectorStoreVector(1536)]
+    public ReadOnlyMemory<float> FeatureListEmbedding { get; set; }
+}
+
+IAsyncEnumerable<VectorSearchResult<Hotel>> results = collection.SearchAsync(
+    "I'm looking for a product with a specific feature.",
+    top: 3,
+    new() { VectorProperty = r => r.FeatureListEmbedding });
+```
+
+## Hybrid search
+
+Hybrid search combines vector similarity search with traditional keyword search, executing both in parallel and returning a combination of the two result sets. This can improve search quality, since keyword matching can capture exact term matches that vector similarity might miss, and vice versa.
+
+> [!NOTE]
+> Hybrid search is only available on databases that support it. Only providers for these databases implement the <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1> interface.
+
+To use hybrid search, your data model needs a string field with full-text search enabled via <xref:Microsoft.Extensions.VectorData.VectorStoreDataAttribute.IsFullTextIndexed>:
+
+```csharp
+class Hotel
+{
+    [VectorStoreKey]
+    public ulong Key { get; set; }
+
+    [VectorStoreData(IsFullTextIndexed = true)]
+    public required string Description { get; set; }
+
+    [VectorStoreVector(1536)]
+    public string DescriptionEmbedding { get; set; }
+}
+```
+
+Then call <xref:Microsoft.Extensions.VectorData.IKeywordHybridSearchable`1.HybridSearchAsync*>, passing both search text and keywords:
+
+```csharp
+var hybridCollection = (IKeywordHybridSearchable<Hotel>)collection;
+
+IAsyncEnumerable<VectorSearchResult<Hotel>> results = hybridCollection.HybridSearchAsync(
+    "I'm looking for a hotel where customer happiness is the priority.",
+    ["happiness", "hotel", "customer"],
+    top: 3);
+```
+
+All the options described for vector search (`top`, `Skip`, `Filter`, `IncludeVectors`, `VectorProperty`) are also available for hybrid search via <xref:Microsoft.Extensions.VectorData.HybridSearchOptions`1>.
+
+In addition, hybrid search supports an `AdditionalProperty` option for specifying which full-text search property to target. If your data model has only one property with `IsFullTextIndexed = true`, it's used automatically; if there are multiple, you must specify which one:
+
+```csharp
+IAsyncEnumerable<VectorSearchResult<Hotel>> results = hybridCollection.HybridSearchAsync(
+    "I'm looking for a hotel where customer happiness is the priority.",
+    ["happiness", "hotel", "customer"],
+    top: 3,
+    new()
+    {
+        VectorProperty = r => r.DescriptionEmbedding,
+        AdditionalProperty = r => r.Description
+    });
+```

@@ -18,8 +18,7 @@ public static class Program
         // <RecordClassVsStruct>
         // Record class — assignment copies the reference
         var p1 = new Person("Grace", "Hopper");
-        var p2 = p1;
-        // p1 and p2 point to the same object:
+        var p2 = p1; // p1 and p2 point to the same object:
         Console.WriteLine(ReferenceEquals(p1, p2)); // True
 
         // Record struct — assignment copies the data

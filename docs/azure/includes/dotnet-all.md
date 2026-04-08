@@ -474,7 +474,6 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | WebJobs Extension Cosmos DB Mongo | NuGet [1.2.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.1-preview) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
-| Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
 | Application Insights | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights/0.9.0-preview) |  |  |
 | Autorest Client Runtime - Azure | NuGet [3.3.19](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure/3.3.19) |  | GitHub [3.3.19](https://github.com/Azure/azure-sdk-for-net/tree/mgmt-legacy/sdk/mgmtcommon/ClientRuntime.Azure) |
@@ -493,17 +492,13 @@
 | Commerce Usage Aggregates | NuGet [1.5.3](https://www.nuget.org/packages/Microsoft.Azure.Commerce.UsageAggregates/1.5.3) |  |  |
 | Common | NuGet [2.2.1](https://www.nuget.org/packages/Microsoft.Azure.Common/2.2.1) |  |  |
 | Common - Dependencies | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Common.Dependencies/1.0.0) |  |  |
-| Computer Vision | NuGet [7.0.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ComputerVision/7.0.1) |  | GitHub [7.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.ComputerVision_6.0.0-preview.1/sdk/cognitiveservices/Vision.ComputerVision) |
 | Cosmos DB | NuGet [3.58.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.58.0)<br>NuGet [3.59.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.59.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.58.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
-| Custom Vision Prediction | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction_2.0.0/sdk/cognitiveservices/Vision.CustomVision.Prediction) |
-| Custom Vision Training | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.0.0)<br>NuGet [2.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.1.0-preview) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training_2.0.0/sdk/cognitiveservices/Vision.CustomVision.Training) |
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Movement | NuGet [2.0.5](https://www.nuget.org/packages/Microsoft.Azure.Storage.DataMovement/2.0.5) |  | GitHub [2.0.5](https://github.com/Azure/azure-storage-net-data-movement/tree/v1.3.0) |
 | DCAP | NuGet [1.13.1](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.13.1) |  | GitHub [1.13.1](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
 | Devices Provisioning Service | NuGet [1.18.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/1.18.1)<br>NuGet [2.0.0-rc](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/2.0.0-rc) |  |  |
 | Digital Twins Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |
 | Event Hubs - Service Fabric Processor | NuGet [0.5.4](https://www.nuget.org/packages/Microsoft.Azure.EventHubs.ServiceFabricProcessor/0.5.4) |  | GitHub [0.5.4](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.EventHubs.ServiceFabricProcessor_0.5.4/sdk/eventhub/Microsoft.Azure.EventHubs.ServiceFabricProcessor/) |
-| Face | NuGet [2.8.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.Face/2.8.0-preview.3) |  | GitHub [2.8.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.Face_2.6.0-preview.1/sdk/cognitiveservices/Vision.Face) |
 | Feature Management | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.FeatureManagement/3.0.0) | [docs](/dotnet/api/microsoft.featuremanagement) |  |
 | Gallery | NuGet [2.6.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Gallery/2.6.2-preview) |  |  |
 | HDInsight - Job | NuGet [3.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.3) |  | GitHub [3.0.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.3/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
@@ -532,7 +527,6 @@
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |
 | Mobile Server - Cross Domain | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server.CrossDomain/2.0.3) |  |  |
 | Notification Hubs | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.2.0) |  | GitHub [4.2.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
-| Personalizer | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Personalizer/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Personalizer_1.0.0/sdk/cognitiveservices/Personalizer) |
 | Relay | NuGet [3.1.1](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.1.1) | [docs](/dotnet/api/overview/azure/service-bus-relay) | GitHub [3.1.1](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |
 | Schema Registry - Avro | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |
 | Schema Registry - JSON | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Json/1.0.0-beta.1) |  |  |
@@ -547,7 +541,6 @@
 | Storage - Files Data Lake | NuGet [2.0.2](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/2.0.2) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [2.0.2](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
 | Synapse Analytics | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Synapse/0.1.0-preview) |  | GitHub [0.1.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Synapse_0.1.0-preview/sdk/synapse/Microsoft.Azure.Synapse/) |
 | Tables | NuGet [2.1.2](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table/2.1.2) |  |  |
-| Vision Content Moderator | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ContentModerator/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.ContentModerator_2.1.0-preview.1/sdk/cognitiveservices/Vision.ContentModerator) |
 | WebSites - DataProtection | NuGet [0.1.78-alpha](https://www.nuget.org/packages/Microsoft.Azure.WebSites.DataProtection/0.1.78-alpha) |  |  |
 | App Service - API Apps Common | NuGet [0.9.36](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Common/0.9.36) |  |  |
 | App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |

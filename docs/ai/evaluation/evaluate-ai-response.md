@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Evaluate the quality of a model's response
 description: Learn how to create an MSTest app to evaluate the AI chat response of a language model.
-ms.date: 03/18/2025
+ms.date: 03/03/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Quickstart: Evaluate response quality
@@ -39,7 +40,7 @@ Complete the following steps to create an MSTest project that connects to an AI 
     dotnet add package Microsoft.Extensions.AI.Abstractions
     dotnet add package Microsoft.Extensions.AI.Evaluation
     dotnet add package Microsoft.Extensions.AI.Evaluation.Quality
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```

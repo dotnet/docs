@@ -14,6 +14,17 @@ ai-usage: ai-assisted
 
 A *struct* is a value type that holds its data directly in the instance, rather than through a reference to an object on the heap. When you assign a struct to a new variable, the runtime copies the entire instance. Changes to one variable don't affect the other because each variable represents a different instance. Use structs for small, lightweight types whose primary role is storing data rather than modeling behavior. Examples include coordinates, colors, measurements, or configuration settings.
 
+## When to use structs
+
+Use a struct when your type:
+
+- Represents a single value or a small group of related values (roughly 16 bytes or less).
+- Has value semantics—two instances with the same data should be equal.
+- Is primarily a data container rather than a model of behavior.
+- Doesn't need inheritance from a base type (structs can't inherit from other structs or classes, but they can implement interfaces).
+
+For a broader comparison that includes classes, records, tuples, and interfaces, see [Choose which kind of type](index.md#choose-which-kind-of-type).
+
 ## Declare a struct
 
 Define a struct with the `struct` keyword. A struct can contain fields, properties, methods, and constructors, just like a class:
@@ -44,6 +55,8 @@ The compiler automatically initializes any fields you don't explicitly set in a 
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="AutoDefault":::
 
+The following example displays the default value for `IsBlocked`:
+
 :::code language="csharp" source="snippets/structs/Program.cs" ID="UsingAutoDefault":::
 
 The `IsBlocked` property isn't assigned in the constructor, so the compiler sets it to `false` (the default for `bool`). This feature reduces boilerplate in constructors that only need to set a few fields.
@@ -54,26 +67,19 @@ A `readonly struct` guarantees that no instance member modifies the struct's sta
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="ReadonlyStruct":::
 
+The following example creates a `Temperature` instance and reads its properties:
+
 :::code language="csharp" source="snippets/structs/Program.cs" ID="UsingReadonly":::
 
 When you don't need the entire struct to be immutable, mark individual members as `readonly` instead. A `readonly` member can't modify the struct's state, and the compiler verifies that guarantee:
 
 :::code language="csharp" source="snippets/structs/Program.cs" ID="ReadonlyMembers":::
 
+The following example shows that `readonly` members return updated values when mutable properties change:
+
 :::code language="csharp" source="snippets/structs/Program.cs" ID="UsingReadonlyMembers":::
 
 Marking members `readonly` helps the compiler optimize defensive copies. When you pass a `readonly` struct to a method that accepts an `in` parameter, the compiler knows no copy is needed.
-
-## When to use structs
-
-Use a struct when your type:
-
-- Represents a single value or a small group of related values (roughly 16 bytes or less).
-- Has value semantics—two instances with the same data should be equal.
-- Is primarily a data container rather than a model of behavior.
-- Doesn't need inheritance from a base type (structs can't inherit from other structs or classes, but they can implement interfaces).
-
-For a broader comparison that includes classes, records, tuples, and interfaces, see [Choose which kind of type](index.md#choose-which-kind-of-type).
 
 ## See also
 

@@ -28,10 +28,18 @@ items:
             items:
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+          - name: Extensions
+            items:
+              - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
+                href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected
                 href: globalization/11/japanese-calendar-min-date.md
+          - name: Interop
+            items:
+              - name: NativeAOT uses lib prefix for native library outputs on Unix
+                href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
             items:
               - name: Minimum hardware requirements updated

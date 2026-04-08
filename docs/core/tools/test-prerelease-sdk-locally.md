@@ -362,17 +362,24 @@ After you install a local SDK, you can install optional workloads like .NET MAUI
 
 ### Install a workload
 
-Make sure you run this from the folder that contains your `global.json` (or a subdirectory of it) so the host resolves to the local SDK. You can double-check with `dotnet --info` and verify the **Base Path** points to your `.dotnet` folder. If you want to be absolutely sure the workload ends up in the right place, use the local binary directly:
+Make sure you run this from the folder that contains your `global.json` (or a subdirectory of it). Use the local `dotnet` binary directly to ensure the workload is installed in the local SDK and not your system installation:
 
-```dotnetcli
+### [macOS / Linux](#tab/bash)
+
+```bash
 ./.dotnet/dotnet workload install maui
 ```
 
-When you've confirmed the host resolves correctly, you can also use:
+### [Windows (PowerShell)](#tab/powershell)
 
-```dotnetcli
-dotnet workload install maui
+```powershell
+.\.dotnet\dotnet.exe workload install maui
 ```
+
+---
+
+> [!IMPORTANT]
+> Always use `./.dotnet/dotnet` (or `.\.dotnet\dotnet` on Windows) for workload commands. The `global.json` `paths` feature routes SDK resolution correctly for commands like `dotnet build` and `dotnet run`, but workload commands store metadata relative to the `dotnet` root of the host that runs them. When you use the system host, workloads end up in the system installation rather than the local one. This is a [known gap](https://github.com/dotnet/sdk/issues/49825) in how `sdk.paths` interacts with `DOTNET_ROOT`. Using the local binary directly ensures workloads are installed and tracked in the right place.
 
 > [!NOTE]
 > On macOS and Linux, you do **not** need `sudo` for workload install when using a local SDK. The `.dotnet/` folder is user-owned, so all workload files are written with your normal user permissions. This is different from system-wide installs, which may require elevated privileges.
@@ -383,22 +390,42 @@ The following table lists commonly used workloads:
 
 | Workload | Install command |
 |---|---|
-| .NET MAUI | `dotnet workload install maui` |
-| ASP.NET Core (Blazor WASM AOT) | `dotnet workload install wasm-tools` |
+| .NET MAUI | `./.dotnet/dotnet workload install maui` |
+| ASP.NET Core (Blazor WASM AOT) | `./.dotnet/dotnet workload install wasm-tools` |
 
 You can install multiple workloads in a single command:
 
-```dotnetcli
-dotnet workload install maui wasm-tools
+### [macOS / Linux](#tab/bash)
+
+```bash
+./.dotnet/dotnet workload install maui wasm-tools
 ```
+
+### [Windows (PowerShell)](#tab/powershell)
+
+```powershell
+.\.dotnet\dotnet.exe workload install maui wasm-tools
+```
+
+---
 
 ### Verify installed workloads
 
 To see which workloads are installed on the local SDK:
 
-```dotnetcli
-dotnet workload list
+### [macOS / Linux](#tab/bash)
+
+```bash
+./.dotnet/dotnet workload list
 ```
+
+### [Windows (PowerShell)](#tab/powershell)
+
+```powershell
+.\.dotnet\dotnet.exe workload list
+```
+
+---
 
 > [!TIP]
 > Workloads installed on the local SDK are stored inside the `.dotnet/` directory. Deleting it removes the SDK and all its workloads. Shared download caches (such as `~/.nuget/packages`) may remain but do not affect your system.

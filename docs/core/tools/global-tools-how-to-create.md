@@ -30,25 +30,10 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n dotnet-env -f net10.0
+   dotnet new console -n dotnet-env
    ```
 
    The command creates a new folder named *dotnet-env* under the *repository* folder.
-
-   > [!NOTE]
-   > For this tutorial, the project is named *dotnet-env*. When you create your own tools, choose a unique package name. Avoid using company or organization name prefixes (such as `Microsoft.` or `Google.`) that you don't own, as those are reserved for those organizations on NuGet.org.
-
-   > [!NOTE]
-   > For this tutorial you create a tool that targets .NET 10. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
-   >
-   > ```xml
-   > <Project Sdk="Microsoft.NET.Sdk">
-   >   <PropertyGroup>
-   >     <OutputType>Exe</OutputType>
-   >     <TargetFrameworks>net10.0;net8.0</TargetFrameworks>
-   >   </PropertyGroup>
-   > </Project>
-   > ```
 
 1. Navigate to the *dotnet-env* folder.
 
@@ -119,11 +104,7 @@ Before you can pack and distribute the application as a tool, you need to modify
 
 1. Open the *dotnet-env.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
-   ```xml
-   <PackAsTool>true</PackAsTool>
-   <ToolCommandName>dotnet-env</ToolCommandName>
-   <PackageOutputPath>./nupkg</PackageOutputPath>
-   ```
+   :::code language="xml" source="./snippets/global-tools-how-to-create/csharp/dotnet-env.csproj" id="tool-setting":::
 
    `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, which is typically the project file name without the *.csproj* extension.
 
@@ -134,22 +115,7 @@ Before you can pack and distribute the application as a tool, you need to modify
 
    The project file now looks like the following example:
 
-   ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
-
-     <PropertyGroup>
-
-       <OutputType>Exe</OutputType>
-       <TargetFramework>net10.0</TargetFramework>
-
-       <PackAsTool>true</PackAsTool>
-       <ToolCommandName>dotnet-env</ToolCommandName>
-       <PackageOutputPath>./nupkg</PackageOutputPath>
-
-     </PropertyGroup>
-
-   </Project>
-   ```
+   :::code language="xml" source="./snippets/global-tools-how-to-create/csharp/dotnet-env.csproj" id="full":::
 
 1. Create a NuGet package by running the [dotnet pack](dotnet-pack.md) command:
 

@@ -8,11 +8,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-    <!--<tool-settings>-->
+    <!--<toolsettings>-->
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-env</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
-    <!--</tool-settings>-->
+    <!--</toolsettings>-->
 
   </PropertyGroup>
 

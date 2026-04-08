@@ -47,7 +47,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 1. Replace the contents with the following code:
 
-   :::code language="csharp" source="./snippets/global-tools-how-to-create/csharp/Program.cs" id="full-program":::
+   :::code language="csharp" source="./snippets/global-tools-how-to-create/csharp/Program.cs" id="fullprogram":::
 
    The program has two methods:
 
@@ -104,7 +104,7 @@ Before you can pack and distribute the application as a tool, you need to modify
 
 1. Open the *dotnet-env.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
-   :::code language="xml" source="./snippets/global-tools-how-to-create/csharp/dotnet-env.csproj" id="tool-setting":::
+   :::code language="xml" source="./snippets/global-tools-how-to-create/csharp/dotnet-env.csproj" id="toolsetting":::
 
    `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, which is typically the project file name without the *.csproj* extension.
 

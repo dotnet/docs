@@ -1,10 +1,10 @@
-﻿// <full-program>
-// <using-directives>
+﻿// <fullprogram>
+// <usingdirectives>
 using System.Reflection;
 using System.Runtime.InteropServices;
-// </using-directives>
+// </usingdirectives>
 
-// <main-method>
+// <mainmethod>
 if (args.Length == 0)
 {
     ShowInfo();
@@ -17,9 +17,9 @@ var versionString = Assembly.GetEntryAssembly()?
                         .ToString();
 
 Console.WriteLine($"dotnet-env v{versionString}");
-// </main-method>
+// </mainmethod>
 
-// <show-info-method>
+// <showinfomethod>
 void ShowInfo()
 {
     var versionString = Assembly.GetEntryAssembly()?
@@ -55,5 +55,5 @@ void ShowInfo()
         Console.WriteLine($"  {name,-24}{value ?? "(not set)"}");
     }
 }
-// </show-info-method>
-// </full-program>
+// </showinfomethod>
+// </fullprogram>

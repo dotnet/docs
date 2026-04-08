@@ -10,7 +10,7 @@ Module Program
 
     ' <DefaultBehavior>
     Sub DefaultBehaviorDemo()
-        DemoAsync().Wait()
+        DemoAsync().GetAwaiter().GetResult()
     End Sub
 
     Async Function DemoAsync() As Task

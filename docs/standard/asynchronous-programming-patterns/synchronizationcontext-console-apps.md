@@ -16,7 +16,11 @@ helpviewer_keywords:
 ---
 # SynchronizationContext and console apps
 
+<<<<<<< HEAD
 UI frameworks like Windows Forms, WPF, and .NET MAUI install a <xref:System.Threading.SynchronizationContext> on their UI thread. When you `await` a task in those environments, the continuation automatically posts back to the UI thread. Console apps don't install a <xref:System.Threading.SynchronizationContext>, which means `await` continuations run on the thread pool. This article explains the consequences and shows how to build a single-threaded message pump when you need one.
+=======
+UI frameworks like Windows Forms, WPF, and .NET MAUI install a <xref:System.Threading.SynchronizationContext> on their UI thread. When you `await` a task in those environments, the continuation posts back to the UI thread automatically. Console apps don't install a <xref:System.Threading.SynchronizationContext>, which means `await` continuations run on the thread pool. You'll see the consequences and learn how to build a single-threaded message pump when you need one.
+>>>>>>> 4114bb1e742d86328b576c495b6265999726b3e9
 
 ## Default behavior in a console app
 

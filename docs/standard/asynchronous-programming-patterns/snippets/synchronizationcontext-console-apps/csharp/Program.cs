@@ -8,7 +8,7 @@ Console.WriteLine("All demos complete.");
 // <DefaultBehavior>
 static void DefaultBehaviorDemo()
 {
-    DemoAsync().Wait();
+    DemoAsync().GetAwaiter().GetResult();
 }
 
 static async Task DemoAsync()
@@ -116,11 +116,29 @@ static class AsyncPump
             var syncCtx = new AsyncVoidSynchronizationContext();
             SynchronizationContext.SetSynchronizationContext(syncCtx);
 
+            Exception? caughtException = null;
+
             syncCtx.OperationStarted();
-            asyncMethod();
-            syncCtx.OperationCompleted();
+            try
+            {
+                asyncMethod();
+            }
+            catch (Exception ex)
+            {
+                caughtException = ex;
+                syncCtx.Complete();
+            }
+            finally
+            {
+                syncCtx.OperationCompleted();
+            }
 
             syncCtx.RunOnCurrentThread();
+
+            if (caughtException is not null)
+            {
+                System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(caughtException).Throw();
+            }
         }
         finally
         {

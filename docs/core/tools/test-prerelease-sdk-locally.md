@@ -18,12 +18,12 @@ Whether you want to try out a new language feature, evaluate a preview release f
 
 ## Prerequisites
 
-- A [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later **host** installed on your system and available on your `PATH`.
+- A [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later **host** installed on your system and available on your `PATH`. The *host* is the `dotnet` executable itself -- the entry point that reads `global.json`, resolves which SDK version to use, and then hands off to that SDK. It ships as part of every .NET SDK and runtime install.
 - A terminal or command prompt (bash, zsh, PowerShell, or Command Prompt).
 - (Optional) A Git repository where you want to scope the prerelease SDK.
 
 > [!IMPORTANT]
-> The `sdk.paths` feature requires a .NET 10 or later **host** (`dotnet` executable) on your system `PATH`. If your system-wide host is .NET 8 or .NET 9, it won't recognize the `paths` property and falls back to default resolution behavior. You can still use the local SDK by invoking `./.dotnet/dotnet` (or `.\.dotnet\dotnet` on Windows) directly, which bypasses the system host.
+> The `sdk.paths` feature requires a .NET 10 or later **host** (the `dotnet` executable on your `PATH`). If your system-wide host is .NET 8 or .NET 9, it won't recognize the `paths` property and falls back to default resolution behavior. You can still use the local SDK by invoking `./.dotnet/dotnet` (or `.\.dotnet\dotnet` on Windows) directly, which bypasses the system host.
 
 To verify your host version, run `dotnet --info` and look for the **Host** section near the top of the output:
 

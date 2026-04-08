@@ -1,4 +1,6 @@
-﻿// Verification entry point
+﻿using System.Collections.Concurrent;
+
+// Verification entry point
 ExecutionContextCaptureDemo();
 await TaskRunExample.ProcessOnUIThread();
 
@@ -11,6 +13,24 @@ SynchronizationContext.SetSynchronizationContext(null);
 
 await Task.Delay(200);
 Console.WriteLine("Done.");
+
+// <ExecutionContextCapture>
+static void ExecutionContextCaptureDemo()
+{
+    // Capture the current ExecutionContext
+    ExecutionContext? ec = ExecutionContext.Capture();
+
+    // Later, run a delegate within that captured context
+    if (ec is not null)
+    {
+        ExecutionContext.Run(ec, _ =>
+        {
+            // Code here sees the ambient state from the point of capture
+            Console.WriteLine("Running inside captured ExecutionContext.");
+        }, null);
+    }
+}
+// </ExecutionContextCapture>
 
 static class SingleThreadSynchronizationContext
 {
@@ -51,23 +71,6 @@ static class SingleThreadSynchronizationContext
         public void Complete() => _queue.CompleteAdding();
     }
 }
-// <ExecutionContextCapture>
-static void ExecutionContextCaptureDemo()
-{
-    // Capture the current ExecutionContext
-    ExecutionContext? ec = ExecutionContext.Capture();
-
-    // Later, run a delegate within that captured context
-    if (ec is not null)
-    {
-        ExecutionContext.Run(ec, _ =>
-        {
-            // Code here sees the ambient state from the point of capture
-            Console.WriteLine("Running inside captured ExecutionContext.");
-        }, null);
-    }
-}
-// </ExecutionContextCapture>
 
 // <SyncContextUsage>
 static class SyncContextExample

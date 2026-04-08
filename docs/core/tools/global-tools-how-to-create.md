@@ -17,9 +17,9 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Prerequisites
 
-- [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or a later version.
+- [.NET SDK 10.0](https://dotnet.microsoft.com/download/dotnet/10.0) or a later version.
 
-  This tutorial uses .NET SDK 8.0. Global tools are available starting in .NET Core SDK 2.1, and local tools are available starting in .NET Core SDK 3.0.
+  This tutorial uses .NET SDK 10.0. Global tools are available starting in .NET Core SDK 2.1, and local tools are available starting in .NET Core SDK 3.0.
 
 - A text editor or code editor of your choice.
 
@@ -30,7 +30,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n dotnet-env -f net8.0
+   dotnet new console -n dotnet-env -f net10.0
    ```
 
    The command creates a new folder named *dotnet-env* under the *repository* folder.
@@ -39,13 +39,13 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    > For this tutorial, the project is named *dotnet-env*. When you create your own tools, choose a unique package name. Avoid using company or organization name prefixes (such as `Microsoft.` or `Google.`) that you don't own, as those are reserved for those organizations on NuGet.org.
 
    > [!NOTE]
-   > For this tutorial you create a tool that targets .NET 8. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
+   > For this tutorial you create a tool that targets .NET 10. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
    >   <PropertyGroup>
    >     <OutputType>Exe</OutputType>
-   >     <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+   >     <TargetFrameworks>net10.0;net8.0</TargetFrameworks>
    >   </PropertyGroup>
    > </Project>
    > ```
@@ -91,9 +91,9 @@ dotnet-env v1.0.0
 ----------------------------------------
 
 Runtime
-  .NET Version          8.0.14
-  Framework             .NET 8.0.14
-  Runtime Identifier    win10-x64
+  .NET Version          10.0.4
+  Framework             .NET 10.0.4
+  Runtime Identifier    win-x64
 
 System
   OS                    Microsoft Windows 10.0.22631
@@ -140,7 +140,7 @@ Before you can pack and distribute the application as a tool, you need to modify
      <PropertyGroup>
 
        <OutputType>Exe</OutputType>
-       <TargetFramework>net8.0</TargetFramework>
+       <TargetFramework>net10.0</TargetFramework>
 
        <PackAsTool>true</PackAsTool>
        <ToolCommandName>dotnet-env</ToolCommandName>

@@ -37,7 +37,7 @@ The architecture of the chat app is shown in the following diagram:
 
 :::image type="content" source="./media/get-started-app-chat-template/simple-architecture-diagram.png" lightbox="./media/get-started-app-chat-template/simple-architecture-diagram.png" alt-text="Diagram showing architecture from client to backend app.":::
 
-* **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
+* **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes requests to the application backend, and displays generated responses.
 * **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:
   * [**Azure AI Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
   * [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.

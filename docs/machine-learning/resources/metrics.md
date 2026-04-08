@@ -69,9 +69,9 @@ For further details on regression metrics, read the following articles:
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
-| **Average Distance** | Average of the distance between data points and the center of their assigned cluster. The average distance is a measure of proximity of the data points to cluster centroids. It's a measure of how 'tight' the cluster is.|Values closer to **0** are better. The closer to zero the average distance is, the more clustered the data is. Note though, that this metric will decrease if the number of clusters is increased, and in the extreme case (where each distinct data point is its own cluster) it will be equal to zero. |
-| **Davies Bouldin Index** | The average ratio of within-cluster distances to between-cluster distances. The tighter the cluster, and the further apart the clusters are, the lower this value is.|Values closer to **0** are better. Clusters that are farther apart and less dispersed will result in a better score.|
-| **Normalized Mutual Information** | Can be used when the training data used to train the clustering model also comes with ground truth labels (that is, supervised clustering). The Normalized Mutual Information metric measures whether similar data points get assigned to the same cluster and disparate data points get assigned to different clusters. Normalized mutual information is a value between 0 and 1.|Values closer to **1** are better. |
+| **Average Distance** | Average of the distance between data points and the center of their assigned cluster. The average distance is a measure of proximity of the data points to cluster centroids. It's a measure of how 'tight' the cluster is. | Values closer to **0** are better. The closer to zero the average distance is, the more clustered the data is. Note though, that this metric will decrease if the number of clusters is increased, and in the extreme case (where each distinct data point is its own cluster) it will be equal to zero. |
+| **Davies Bouldin Index** | The average ratio of within-cluster distances to between-cluster distances. The tighter the cluster, and the further apart the clusters are, the lower this value is. | Values closer to **0** are better. Clusters that are farther apart and less dispersed will result in a better score. |
+| **Normalized Mutual Information** | Can be used when the training data used to train the clustering model also comes with ground truth labels (that is, supervised clustering). The Normalized Mutual Information metric measures whether similar data points get assigned to the same cluster and disparate data points get assigned to different clusters. Normalized mutual information is a value between 0 and 1. | Values closer to **1** are better.  |
 
 ## Evaluation metrics for Ranking
 
@@ -84,7 +84,7 @@ For further details on regression metrics, read the following articles:
 
 | Metric                   | Description | Look for |
 |--------------------------|-------------|----------|
-| **Area Under ROC Curve** | Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories. |
+| **Area Under ROC Curve** | Area under the receiver operator curve measures how well the model separates anomalous and usual data points. | **Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories. |
 | **Detection Rate At False Positive Count** | Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item. | **Values closer to 1 are better**. If there are no false positives, then this value is 1. |
 
 ## Evaluation metrics for sentence similarity

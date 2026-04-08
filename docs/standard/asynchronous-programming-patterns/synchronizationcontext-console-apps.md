@@ -1,7 +1,7 @@
 ---
 title: "SynchronizationContext and console apps"
 description: Learn how to use a custom SynchronizationContext to control where async continuations run in .NET console applications, including a complete AsyncPump implementation.
-ms.date: 04/07/2026
+ms.date: 04/08/2026
 ai-usage: ai-assisted
 dev_langs:
   - "csharp"
@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 # SynchronizationContext and console apps
 
-UI frameworks like Windows Forms, WPF, and .NET MAUI install a <xref:System.Threading.SynchronizationContext> on their UI thread. When you `await` a task in those environments, the continuation posts back to the UI thread automatically. Console apps don't install a <xref:System.Threading.SynchronizationContext>, which means `await` continuations run on the thread pool. This article explains the consequences and shows how to build a single-threaded message pump when you need one.
+UI frameworks like Windows Forms, WPF, and .NET MAUI install a <xref:System.Threading.SynchronizationContext> on their UI thread. When you `await` a task in those environments, the continuation automatically posts back to the UI thread. Console apps don't install a <xref:System.Threading.SynchronizationContext>, which means `await` continuations run on the thread pool. This article explains the consequences and shows how to build a single-threaded message pump when you need one.
 
 ## Default behavior in a console app
 
@@ -34,7 +34,7 @@ Representative output from running this program:
 [6, 2516]
 ```
 
-Thread 1 (the main thread) appears only once—during the first synchronous iteration before `await Task.Yield()` suspends the method. All subsequent iterations run on thread pool threads.
+Thread 1 (the main thread) appears only once, during the first synchronous iteration before `await Task.Yield()` suspends the method. All subsequent iterations run on thread pool threads.
 
 ## Modern async entry points
 
@@ -97,7 +97,7 @@ Output:
 [1, 10000]
 ```
 
-All 10,000 iterations ran on a single thread—the main thread.
+The specific thread ID might differ depending on the runtime and platform, but the key result is that all 10,000 iterations run on a single thread: the main thread.
 
 ## Handle async void methods
 
@@ -106,13 +106,13 @@ The `Func<Task>` overload tracks completion through the returned <xref:System.Th
 :::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="AsyncVoidSupport":::
 :::code language="vb" source="./snippets/synchronizationcontext-console-apps/vb/Program.vb" id="AsyncVoidSupport":::
 
-With operation tracking enabled, the pump exits only when all outstanding async `void` methods complete—not just the top-level task.
+With operation tracking enabled, the pump exits only when all outstanding async `void` methods complete, not just the top-level task.
 
 ## Practical considerations
 
-- **Deadlock risk**: If code running inside `AsyncPump.Run` blocks synchronously (for example, by calling `.Result` or `.Wait()` on a task whose continuation must post back to the pump), the pump thread can't process that continuation. The result is a deadlock—the same problem described in [Synchronous wrappers for asynchronous methods](synchronous-wrappers-for-asynchronous-methods.md).
+- **Deadlock risk**: If code running inside `AsyncPump.Run` blocks synchronously (for example, by calling `.Result` or `.Wait()` on a task whose continuation must post back to the pump), the pump thread can't process that continuation. The result is a deadlock. The same problem described in [Synchronous wrappers for asynchronous methods](synchronous-wrappers-for-asynchronous-methods.md).
 - **Performance**: A single-threaded pump limits throughput to one thread. Use this approach only when thread affinity matters.
-- **Cross-platform**: The `AsyncPump` implementation shown here uses only types from the `System.Collections.Concurrent` and `System.Threading` namespaces. It works on all platforms that .NET supports—Windows, Linux, and macOS.
+- **Cross-platform**: The `AsyncPump` implementation shown here uses only types from the `System.Collections.Concurrent` and `System.Threading` namespaces. It works on all platforms that .NET supports.
 
 ## See also
 

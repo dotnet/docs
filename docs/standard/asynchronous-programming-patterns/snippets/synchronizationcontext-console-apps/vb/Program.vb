@@ -1,4 +1,4 @@
-Imports System.Collections.Concurrent
+﻿Imports System.Collections.Concurrent
 Imports System.Threading
 
 Module Program
@@ -90,7 +90,14 @@ Class AsyncPump
             Dim syncCtx As New SingleThreadSynchronizationContext()
             SynchronizationContext.SetSynchronizationContext(syncCtx)
 
-            Dim t As Task = func()
+            Dim t As Task
+            Try
+                t = func()
+            Catch
+                syncCtx.Complete()
+                Throw
+            End Try
+
             t.ContinueWith(
                 Sub(unused) syncCtx.Complete(), TaskScheduler.Default)
 
@@ -111,8 +118,14 @@ Class AsyncPump
             SynchronizationContext.SetSynchronizationContext(syncCtx)
 
             syncCtx.OperationStarted()
-            asyncMethod()
-            syncCtx.OperationCompleted()
+            Try
+                asyncMethod()
+            Catch
+                syncCtx.Complete()
+                Throw
+            Finally
+                syncCtx.OperationCompleted()
+            End Try
 
             syncCtx.RunOnCurrentThread()
         Finally

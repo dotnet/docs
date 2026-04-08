@@ -1,9 +1,14 @@
-using System.Collections.Concurrent;
-
-// Verification entry point
+﻿// Verification entry point
 ExecutionContextCaptureDemo();
 await TaskRunExample.ProcessOnUIThread();
+
+// Install a custom SynchronizationContext for the demo
+var demoContext = new DemoSynchronizationContext();
+SynchronizationContext.SetSynchronizationContext(demoContext);
 SyncContextExample.DoWork();
+demoContext.ProcessQueue();
+SynchronizationContext.SetSynchronizationContext(null);
+
 await Task.Delay(200);
 Console.WriteLine("Done.");
 
@@ -49,6 +54,33 @@ static class SyncContextExample
     }
 }
 // </SyncContextUsage>
+
+// Minimal SynchronizationContext for demo purposes
+sealed class DemoSynchronizationContext : SynchronizationContext
+{
+    private readonly Queue<(SendOrPostCallback, object?)> _queue = new();
+
+    public override void Post(SendOrPostCallback d, object? state)
+    {
+        lock (_queue)
+        {
+            _queue.Enqueue((d, state));
+        }
+    }
+
+    public void ProcessQueue()
+    {
+        Thread.Sleep(150); // Allow time for ThreadPool work to complete
+        lock (_queue)
+        {
+            while (_queue.Count > 0)
+            {
+                var (callback, state) = _queue.Dequeue();
+                callback(state);
+            }
+        }
+    }
+}
 
 // <TaskRunExample>
 static class TaskRunExample

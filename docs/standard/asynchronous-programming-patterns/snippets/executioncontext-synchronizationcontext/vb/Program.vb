@@ -1,5 +1,4 @@
-Imports System.Collections.Concurrent
-Imports System.Threading
+﻿Imports System.Threading
 
 Module Program
     Sub Main()
@@ -35,6 +34,10 @@ End Module
 ' <SyncContextUsage>
 Class SyncContextExample
     Public Shared Sub DoWork()
+        ' Install a custom SynchronizationContext for demonstration
+        Dim customContext As New SimpleSynchronizationContext()
+        SynchronizationContext.SetSynchronizationContext(customContext)
+
         ' Capture the current SynchronizationContext
         Dim sc As SynchronizationContext = SynchronizationContext.Current
 
@@ -48,7 +51,22 @@ Class SyncContextExample
                             ' This runs on the original context (e.g. UI thread)
                             Console.WriteLine("Back on the original context.")
                         End Sub, Nothing)
+                Else
+                    Console.WriteLine("No SynchronizationContext was captured.")
                 End If
+            End Sub)
+    End Sub
+End Class
+
+' A minimal SynchronizationContext for demonstration purposes
+Class SimpleSynchronizationContext
+    Inherits SynchronizationContext
+
+    Public Overrides Sub Post(d As SendOrPostCallback, state As Object)
+        ' Queue the callback to run on a thread pool thread
+        ThreadPool.QueueUserWorkItem(
+            Sub(s)
+                d(state)
             End Sub)
     End Sub
 End Class

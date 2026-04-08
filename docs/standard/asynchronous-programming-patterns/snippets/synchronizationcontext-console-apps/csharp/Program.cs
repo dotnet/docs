@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 
 // Top-level entry point for verification
 DefaultBehaviorDemo();
@@ -82,7 +82,17 @@ static class AsyncPump
             var syncCtx = new SingleThreadSynchronizationContext();
             SynchronizationContext.SetSynchronizationContext(syncCtx);
 
-            Task t = func();
+            Task t;
+            try
+            {
+                t = func();
+            }
+            catch
+            {
+                syncCtx.Complete();
+                throw;
+            }
+
             t.ContinueWith(
                 _ => syncCtx.Complete(), TaskScheduler.Default);
 

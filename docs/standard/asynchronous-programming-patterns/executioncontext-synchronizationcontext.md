@@ -65,11 +65,7 @@ The `async`/`await` infrastructure interacts with both contexts automatically, b
 
 Whenever an `await` suspends a method (because the awaiter's `IsCompleted` returns `false`), the infrastructure captures an <xref:System.Threading.ExecutionContext>. When the method resumes, the continuation runs within the captured context. This behavior is built into the async method builders (for example, <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>) and applies regardless of what kind of awaitable you use.
 
-<<<<<<< HEAD
-There's no programming-model support for suppressing <xref:System.Threading.ExecutionContext> flow across awaits. This behavior is intentional. <xref:System.Threading.ExecutionContext> is infrastructure-level support that simulates thread-local semantics in an asynchronous world, and most developers never need to think about it.
-=======
 <xref:System.Threading.ExecutionContext.SuppressFlow> exists, but it isn't an await-specific switch like `ConfigureAwait(false)`. It suppresses <xref:System.Threading.ExecutionContext> capture for work that you queue while suppression is active. It doesn't provide a per-`await` programming-model option that tells the async method builders to skip restoring the captured <xref:System.Threading.ExecutionContext> for a continuation. That design is intentional because <xref:System.Threading.ExecutionContext> is infrastructure-level support that simulates thread-local semantics in an asynchronous world, and most developers never need to think about it.
->>>>>>> 4114bb1e742d86328b576c495b6265999726b3e9
 
 ### Task awaiters capture SynchronizationContext
 
@@ -108,11 +104,7 @@ Consider code that offloads work to the thread pool. The UI-thread behavior desc
 :::code language="csharp" source="./snippets/executioncontext-synchronizationcontext/csharp/Program.cs" id="TaskRunExample":::
 :::code language="vb" source="./snippets/executioncontext-synchronizationcontext/vb/Program.vb" id="TaskRunExample":::
 
-<<<<<<< HEAD
-If <xref:System.Threading.SynchronizationContext> flowed across `await` points, the `await` inside the delegate passed to <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> would see the UI context as `Current`. The continuation after `await DownloadAsync()` would then post back to the UI thread, causing `Compute(data)` to run on the UI thread instead of on the thread pool. That behavior defeats the purpose of the `Task.Run` call.
-=======
 In a console app, <xref:System.Threading.SynchronizationContext.Current?displayProperty=nameWithType> is typically `null`, so the snippet doesn't resume on a real UI thread. Instead, the snippet illustrates the rule conceptually: if a UI <xref:System.Threading.SynchronizationContext> flowed across `await` points, the `await` inside the delegate passed to <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> would see that UI context as `Current`. The continuation after `await DownloadAsync()` would then post back to the UI thread, causing `Compute(data)` to run on the UI thread instead of on the thread pool. That defeats the purpose of the `Task.Run` call.
->>>>>>> 4114bb1e742d86328b576c495b6265999726b3e9
 
 Because the runtime suppresses <xref:System.Threading.SynchronizationContext> flow in <xref:System.Threading.ExecutionContext>, the `await` inside `Task.Run` doesn't inherit an outer UI context, and the continuation keeps running on the thread pool as intended.
 

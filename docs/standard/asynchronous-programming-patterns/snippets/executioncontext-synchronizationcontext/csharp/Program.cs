@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿// Verification entry point
 ExecutionContextCaptureDemo();
 await TaskRunExample.ProcessOnUIThread();
@@ -12,17 +11,6 @@ SynchronizationContext.SetSynchronizationContext(null);
 
 await Task.Delay(200);
 Console.WriteLine("Done.");
-=======
-// Verification entry point
-await SingleThreadSynchronizationContext.Run(async () =>
-{
-    ExecutionContextCaptureDemo();
-    await TaskRunExample.ProcessOnUIThread();
-    SyncContextExample.DoWork();
-    await Task.Delay(200);
-    Console.WriteLine("Done.");
-});
->>>>>>> 4114bb1e742d86328b576c495b6265999726b3e9
 
 static class SingleThreadSynchronizationContext
 {

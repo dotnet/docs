@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Spectre.Console;
 
 // <setup>
-var app = Host.CreateDefaultBuilder()
+IHost app = Host.CreateDefaultBuilder()
     .ConfigureServices(services =>
     {
         services.AddLogging(static builder => builder.AddConsole())
@@ -13,12 +13,12 @@ var app = Host.CreateDefaultBuilder()
     })
     .Build();
 
-var logger = app.Services.GetRequiredService<ILogger<Program>>();
+ILogger<Program> logger = app.Services.GetRequiredService<ILogger<Program>>();
 await app.StartAsync();
 // </setup>
 
 using var cancellationTokenSource = new CancellationTokenSource();
-var token = cancellationTokenSource.Token;
+CancellationToken token = cancellationTokenSource.Token;
 Console.CancelKeyPress += (_, e) =>
 {
     e.Cancel = true;
@@ -30,8 +30,7 @@ await StartMonitoringAsync(logger, token);
 
 async Task StartMonitoringAsync(ILogger logger, CancellationToken cancellationToken)
 {
-    var table = new Table()
-        .Centered()
+    Table table = new Table()
         .Title("Resource Monitoring", new Style(foreground: Color.Purple, decoration: Decoration.Bold))
         .RoundedBorder()
         .BorderColor(Color.Cyan1)
@@ -42,6 +41,8 @@ async Task StartMonitoringAsync(ILogger logger, CancellationToken cancellationTo
             new TableColumn("CPU request %").Centered(),
             new TableColumn("Memory limit %").Centered(),
         ]);
+
+    Align.Center(table);
 
     const string rmMeterName = "Microsoft.Extensions.Diagnostics.ResourceMonitoring";
     using var meter = new Meter(rmMeterName);
@@ -56,7 +57,7 @@ async Task StartMonitoringAsync(ILogger logger, CancellationToken cancellationTo
             }
         }
     };
-    
+
     var samples = new Dictionary<string, double>();
     meterListener.SetMeasurementEventCallback<double>((instrument, value, _, _) =>
     {

@@ -5,11 +5,12 @@ author: jfversluis
 ms.author: joverslu
 ms.date: 04/08/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Test prerelease .NET SDKs locally with global.json paths
 
-Starting with .NET 10, the `global.json` file supports an `sdk.paths` property that tells the .NET CLI where to look for SDK installations beyond the default system location. This feature lets you install a prerelease SDK into a project-local folder and use it only when you're working in that project.The process doesn't modify system-wide installations and does not make any changes to your `PATH` environment variable.
+Starting with .NET 10, the `global.json` file supports an `sdk.paths` property that tells the .NET CLI where to look for SDK installations beyond the default system location. This feature lets you install a prerelease SDK into a project-local folder and use it only when you're working in that project. The process doesn't modify system-wide installations, and it doesn't change your machine-level or user-level `PATH` environment variable (the install script may temporarily update `PATH` in the current shell session, but that change doesn't persist).
 
 Whether you want to try out a new language feature, evaluate a preview release for your team, or validate your open-source library against an upcoming SDK version in CI, `sdk.paths` gives you a safe, reversible way to do it. If anything goes wrong, you delete one folder and you're back to exactly where you started.
 
@@ -18,7 +19,7 @@ Whether you want to try out a new language feature, evaluate a preview release f
 
 ## Prerequisites
 
-- A [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later **host** installed on your system and available on your `PATH`. The *host* is the system-wide `dotnet` installation; the `dotnet` executable on your `PATH` that is available to your entire machine. When you run any `dotnet` command, this host is what kicks in first: it reads `global.json`, decides which SDK version to use, and hands off to that SDK. In this article, we use that system-wide host to steer the CLI toward a locally installed preview SDK.
+- [.NET 10](https://dotnet.microsoft.com/download/dotnet/10.0) or later installed on your system so that the `dotnet` host on your `PATH` is version 10.0 or later. The *host* is the system-wide `dotnet` executable available to your entire machine. When you run any `dotnet` command, this host is what kicks in first: it reads `global.json`, decides which SDK version to use, and hands off to that SDK. In this article, we use that system-wide host to steer the CLI toward a locally installed preview SDK.
 - A terminal or command prompt (bash, zsh, PowerShell, or Command Prompt).
 - (Optional) A Git repository where you want to scope the prerelease SDK.
 
@@ -184,7 +185,7 @@ EOF
 echo "Installed: $(.dotnet/dotnet --version)"
 ```
 
-### [Windows PowerShell](#tab/powershell)
+### [Windows (PowerShell)](#tab/powershell)
 
 ```powershell
 Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -OutFile "$env:TEMP\dotnet-install.ps1"

@@ -19,7 +19,7 @@ When a library exposes only asynchronous APIs, consumers sometimes wrap them in 
 
 ## Basic wrapping patterns
 
-A synchronous wrapper around a Task-based Asynchronous Pattern (TAP) method accesses the task's <xref:System.Threading.Tasks.Task%601.Result> property, which blocks the calling thread:
+A synchronous wrapper around a Task-based Asynchronous Pattern (TAP) method accesses the task's <xref:System.Threading.Tasks.Task`1.Result> property, which blocks the calling thread:
 
 :::code language="csharp" source="./snippets/synchronous-wrappers-for-async-methods/csharp/Program.cs" id="SyncOverAsyncTAP":::
 :::code language="vb" source="./snippets/synchronous-wrappers-for-async-methods/vb/Program.vb" id="SyncOverAsyncTAP":::
@@ -61,7 +61,7 @@ In this scenario:
 
 This pattern affected `HttpWebRequest.GetResponse` in .NET Framework 1.x, where the synchronous method was implemented as a wrapper around the asynchronous `BeginGetResponse`/`EndGetResponse`.
 
-## Guideline: avoid exposing synchronous wrappers
+## Guideline: Avoid exposing synchronous wrappers
 
 Don't expose a synchronous method that wraps an asynchronous implementation. Instead, leave the decision of whether to block to the consumer. The consumer knows their threading environment and can make an informed choice.
 
@@ -69,9 +69,9 @@ If you find yourself needing to call an asynchronous method synchronously, consi
 
 ## Mitigation strategies when sync-over-async is unavoidable
 
-Sometimes sync-over-async is truly unavoidable. For example, when implementing an interface that requires a synchronous method, and the only available implementation is asynchronous. In those cases, apply these strategies to reduce the risk.
+Sometimes sync-over-async is truly unavoidable. For example, it's unavoidable when you implement an interface that requires a synchronous method, and the only available implementation is asynchronous. In those cases, apply the following strategies to reduce the risk.
 
-### Use ConfigureAwait(false) in the async implementation
+### Use `ConfigureAwait(false)` in the async implementation
 
 If you control the async method, use <xref:System.Threading.Tasks.Task.ConfigureAwait*?displayProperty=nameWithType> with `false` on every `await` to prevent the continuation from marshaling back to the original `SynchronizationContext`:
 

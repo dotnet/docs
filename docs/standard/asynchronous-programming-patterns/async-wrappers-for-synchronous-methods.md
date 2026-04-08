@@ -69,7 +69,7 @@ When a library exposes only the synchronous method (and not an async wrapper), c
 - **Consumer control**: Callers choose *whether* and *how* to offload, at the right level of granularity. A high-throughput server application can call the synchronous method directly, avoiding unnecessary overhead from `Task.Run`.
 - **Better performance**: Asynchronous wrappers add overhead through allocations, context switches, and thread pool scheduling. For fine-grained operations, that overhead can be significant.
 
-## Exceptions: when async-over-sync wrappers make sense
+## Exceptions to the rule
 
 Some base classes expose asynchronous methods so that derived classes can override them with truly asynchronous implementations. The base class provides an async-over-sync default.
 

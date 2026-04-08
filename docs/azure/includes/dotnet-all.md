@@ -539,7 +539,7 @@
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |
-| Storage - Files Data Lake | NuGet [2.0.2](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/2.0.2) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [2.0.2](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
+| Storage - Files Data Lake | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/2.0.3) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [2.0.3](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
 | Synapse Analytics | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Synapse/0.1.0-preview) |  | GitHub [0.1.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Synapse_0.1.0-preview/sdk/synapse/Microsoft.Azure.Synapse/) |
 | Tables | NuGet [2.1.2](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table/2.1.2) |  |  |
 | WebSites - DataProtection | NuGet [0.1.78-alpha](https://www.nuget.org/packages/Microsoft.Azure.WebSites.DataProtection/0.1.78-alpha) |  |  |

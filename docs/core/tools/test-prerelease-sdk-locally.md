@@ -362,7 +362,13 @@ After you install a local SDK, you can install optional workloads like .NET MAUI
 
 ### Install a workload
 
-Because `global.json` has the `paths` property configured, the system `dotnet` command resolves to the local SDK automatically:
+Make sure you run this from the folder that contains your `global.json` (or a subdirectory of it) so the host resolves to the local SDK. You can double-check with `dotnet --info` and verify the **Base Path** points to your `.dotnet` folder. If you want to be absolutely sure the workload ends up in the right place, use the local binary directly:
+
+```dotnetcli
+./.dotnet/dotnet workload install maui
+```
+
+When you've confirmed the host resolves correctly, you can also use:
 
 ```dotnetcli
 dotnet workload install maui

@@ -5,7 +5,7 @@ description: Sorts redirect entries in Open Publishing redirection JSON files al
 
 # Sort Redirects
 
-Sort redirect entries in Open Publishing redirection JSON files alphabetically by path. This ensures consistency and makes the redirect files easier to maintain.
+To ensure consistency and make the redirect files easier to maintain, sort redirect entries in Open Publishing redirection JSON files alphabetically by path.
 
 ## When to Use
 

@@ -25,7 +25,7 @@ Determine which mode applies, then execute all mandatory transformations defined
 ## WRITING APPROACH - FOLLOW THIS METHODOLOGY
 
 1. **Understand the requirements** - Clarify the topic, audience, and purpose
-2. **Ask for structure** - Before writing, ask the user for a template or an existing article to follow for structure
+2. **Ask for structure** - Before you write, ask the user for a template or an existing article to follow for structure
 3. **Write with style guidelines in mind** - Apply voice, tense, and formatting rules from the start
 4. **Ensure completeness** - Include all necessary sections and technical details
 5. **Validate accuracy** - Verify technical correctness and consistency
@@ -56,7 +56,7 @@ Determine which mode applies, then execute all mandatory transformations defined
 ## MANDATORY TRANSFORMATIONS - Apply These Aggressively
 
 You MUST systematically scan the entire document and apply ALL of these transformations.
-When editing, focus on these areas in order of priority:
+When you edit, focus on these areas in order of priority:
 
 ### 1. VOICE AND TENSE - MANDATORY FIXES
 
@@ -166,7 +166,7 @@ When editing, focus on these areas in order of priority:
 - ❌ "Before you can use the feature, you must..." → ✅ "Configure X before using the feature."
 
 **ALWAYS add commas to introductory phrases**
-- ❌ "When replacing Newtonsoft the plan switches..." → ✅ "When replacing Newtonsoft, the plan switches..."
+- ❌ "When replacing Newtonsoft the plan switches..." → ✅ "When you replace Newtonsoft, the plan switches..."
 - ❌ "In chat you see that it opened..." → ✅ "In chat, you see that it opened..."
 
 **ALWAYS make next steps obvious:**

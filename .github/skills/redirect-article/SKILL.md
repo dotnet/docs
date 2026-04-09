@@ -5,14 +5,14 @@ description: Deletes a markdown article and creates a redirect entry pointing to
 
 # Redirect Article
 
-Delete a markdown article from the repository and create a redirect entry that points users to a different article. This ensures existing links and bookmarks continue to work after content is reorganized.
+To ensure existing links and bookmarks continue to work after content is reorganized, delete a markdown article from the repository and create a redirect entry that points users to a different article.
 
 ## When to Use
 
-- Deleting an article that should redirect to another existing article
-- Consolidating multiple articles into a single article
-- Renaming or moving an article to a new location
-- Removing outdated content while preserving URL functionality
+- Delete an article that should redirect to another existing article
+- Consolidate multiple articles into a single article
+- Rename or move an article to a new location
+- Remove outdated content while you preserve URL functionality
 
 ## Important Notes
 

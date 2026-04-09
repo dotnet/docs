@@ -5,7 +5,7 @@ description: 'Follow these comprehensive writing style guidelines when creating 
 
 # Markdown Writing Style Instructions
 
-When writing or editing Markdown documentation, follow these style guidelines:
+When you write or edit Markdown documentation, follow these style guidelines:
 
 ## Voice and Tone Requirements
 

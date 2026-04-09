@@ -1600,7 +1600,7 @@ The `GenerateTestingPlatformConfigurationFile` property is only available when [
 
 The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
 
-For more information, see [Show complete platform output](../testing/microsoft-testing-platform-integration-dotnet-test.md#show-complete-platform-output).
+For more information, see [Show complete platform output](../testing/unit-testing-with-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 

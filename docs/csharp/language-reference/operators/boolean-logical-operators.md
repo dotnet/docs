@@ -195,7 +195,7 @@ For more information, see the following sections of the [C# language specificati
 - [Logical negation operator](~/_csharpstandard/standard/expressions.md#1294-logical-negation-operator)
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1215-logical-operators)
 - [Conditional logical operators](~/_csharpstandard/standard/expressions.md#1216-conditional-logical-operators)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#12234-compound-assignment)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12235-compound-assignment)
 - [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)
 
 ## See also

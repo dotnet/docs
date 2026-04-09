@@ -61,7 +61,7 @@ NLP evaluators evaluate the quality of an LLM response by comparing it to a refe
 
 ### Safety evaluators
 
-Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. They rely on the Foundry Evaluation service, which uses a model that's fine-tuned to perform evaluations.
+Safety evaluators check for the presence of harmful, inappropriate, or unsafe content in a response. They rely on the Foundry Evaluation service, which uses a model that's fine-tuned to perform evaluations.
 
 | Evaluator type                                                            | Metric             | Description |
 |---------------------------------------------------------------------------|--------------------|-------------|

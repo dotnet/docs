@@ -141,7 +141,7 @@ Complete the following steps to create an MSTest project that connects to an AI 
 
      This step is optional and mainly for demonstration purposes. In real-world evaluations, you might not want to validate individual results because the LLM responses and evaluation scores can change over time as your product (and the models used) evolve. You might not want individual evaluation tests to "fail" and block builds in your CI/CD pipelines when results change. Instead, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds when there's a significant drop in evaluation scores across multiple different tests). That said, there is some nuance here and the choice of whether to validate individual results or not can vary depending on the specific use case.
 
-   When the method returns, disposing the `scenarioRun` object persists the evaluation result to the (disk-based) result store configured in `s_defaultReportingConfiguration`.
+   When the method returns, the `scenarioRun` object is disposed and the evaluation result for the evaluation is stored to the (disk-based) result store that's configured in `s_defaultReportingConfiguration`.
 
 ## Run the test/evaluation
 

@@ -21,11 +21,11 @@ The evaluation libraries, which build on the [Microsoft.Extensions.AI abstractio
 
 ## Test integration
 
-The libraries integrate smoothly with existing .NET apps, letting you use existing testing infrastructure and familiar syntax to evaluate intelligent apps. Use any test framework (for example, [MSTest](../../core/testing/index.md#mstest), [xUnit](../../core/testing/index.md#xunitnet), or [NUnit](../../core/testing/index.md#nunit)) and testing workflow (for example, [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer), [dotnet test](../../core/tools/dotnet-test.md), or a CI/CD pipeline). The library also lets you do online evaluations of your application by publishing evaluation scores to telemetry and monitoring dashboards.
+The libraries integrate smoothly with existing .NET apps, letting you use existing testing infrastructure and familiar syntax to evaluate intelligent apps. You can use any test framework (for example, [MSTest](../../core/testing/index.md#mstest), [xUnit](../../core/testing/index.md#xunitnet), or [NUnit](../../core/testing/index.md#nunit)) and testing workflow (for example, [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer), [dotnet test](../../core/tools/dotnet-test.md), or a CI/CD pipeline). The library also provides easy ways to do online evaluations of your application by publishing evaluation scores to telemetry and monitoring dashboards.
 
 ## Comprehensive evaluation metrics
 
-Data science researchers from Microsoft and GitHub built the evaluation libraries and tested them on popular Microsoft Copilot experiences. The following sections show the built-in [quality](#quality-evaluators), [NLP](#nlp-evaluators), and [safety](#safety-evaluators) evaluators and the metrics they measure.
+The evaluation libraries were built in collaboration with data science researchers from Microsoft and GitHub, and were tested on popular Microsoft Copilot experiences. The following sections show the built-in [quality](#quality-evaluators), [NLP](#nlp-evaluators), and [safety](#safety-evaluators) evaluators and the metrics they measure.
 
 To add your own evaluations, implement the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface.
 
@@ -51,7 +51,7 @@ Quality evaluators measure response quality. They use an LLM to perform the eval
 
 ### NLP evaluators
 
-NLP evaluators evaluate the quality of an LLM response by comparing it to a reference response using natural language processing (NLP) techniques. These evaluators aren't LLM or AI-based; instead, they use traditional NLP techniques to perform text comparisons.
+NLP evaluators evaluate the quality of an LLM response by comparing it to a reference response using natural language processing (NLP) techniques. These evaluators aren't LLM or AI-based; instead, they use older NLP techniques to perform text comparisons.
 
 | Evaluator type                                                            | Metric             | Description |
 |---------------------------------------------------------------------------|--------------------|-------------|
@@ -91,7 +91,7 @@ The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Ev
 
 ## Configuration
 
-The libraries are flexible. Pick the components you need. For example, disable response caching or tailor reporting to work best in your environment. Customize and configure your evaluations, for example, by adding customized metrics and reporting options.
+The libraries are flexible and you can pick the components you need. For example, disable response caching or tailor reporting to work best in your environment. You can also customize and configure your evaluations, for example, by adding customized metrics and reporting options.
 
 ## Samples
 

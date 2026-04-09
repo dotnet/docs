@@ -22,7 +22,7 @@ To provision an Azure OpenAI service and model using the Azure portal, complete 
 > [!TIP]
 > You only need the previous configuration step to fetch the response to evaluate. To evaluate the safety of a response you already have, skip this configuration.
 
-The evaluators in this tutorial use the Foundry Evaluation service, which requires more setup:
+The evaluators in this tutorial use the Foundry Evaluation service, which requires some additional setup:
 
 - [Create a resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) within one of the Azure [regions that support Foundry Evaluation service](/azure/ai-foundry/how-to/develop/evaluate-sdk#region-support).
 - [Create a Foundry hub](/azure/ai-foundry/how-to/create-azure-ai-resource?tabs=portal#create-a-hub-in-azure-ai-foundry-portal) in the resource group you just created.
@@ -82,12 +82,12 @@ Complete the following steps to create an MSTest project.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ScenarioName":::
 
-   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, set it to any string of your choice. Here are some considerations for choosing a scenario name:
+   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, you can set it to any string of your choice. Here are some considerations for choosing a scenario name:
 
    - When using disk-based storage, the scenario name is used as the name of the folder under which the corresponding evaluation results are stored.
    - By default, the generated evaluation report splits scenario names on `.` so the report displays results in a hierarchical view with appropriate grouping, nesting, and aggregation.
 
-   The [execution name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.ExecutionName) is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs use the same default execution name of `Default`. In this case, the next run overwrites the results.
+   The [execution name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.ExecutionName) is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs use the same default execution name of `Default`. In this case, results from one run will be overwritten by the next.
 
 1. Add a method to gather the safety evaluators to use in the evaluation.
 
@@ -108,15 +108,15 @@ Complete the following steps to create an MSTest project.
    Response caching works the same way regardless of whether the evaluators talk to an LLM or to the Foundry Evaluation service. The response is reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the LLM endpoint or the question being asked, changes.
 
    > [!NOTE]
-   > This code example passes the LLM <xref:Microsoft.Extensions.AI.IChatClient> as `originalChatClient` to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.IChatClient)>. Including the LLM chat client here enables getting a chat response from the LLM and enables response caching for the response. (To skip caching the LLM's response, create a separate, local <xref:Microsoft.Extensions.AI.IChatClient> to fetch the response from the LLM.) Instead of passing a <xref:Microsoft.Extensions.AI.IChatClient>, if you already have a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> for an LLM from another reporting configuration, pass that instead, using the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)> overload.
+   > This code example passes the LLM <xref:Microsoft.Extensions.AI.IChatClient> as `originalChatClient` to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.IChatClient)>. Including the LLM chat client here enables getting a chat response from the LLM and enables response caching for the response. (To skip caching the LLM's response, create a separate, local <xref:Microsoft.Extensions.AI.IChatClient> to fetch the response from the LLM.) Instead of passing a <xref:Microsoft.Extensions.AI.IChatClient>, if you already have a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> for an LLM from another reporting configuration, you can pass that instead, using the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)> overload.
    >
-   > Similarly, if you configure both [LLM-based evaluators](libraries.md#quality-evaluators) and [Foundry Evaluation service&ndash;based evaluators](libraries.md#safety-evaluators) in the reporting configuration, also pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. The method then returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
+   > Similarly, if you configure both [LLM-based evaluators](libraries.md#quality-evaluators) and [Foundry Evaluation service&ndash;based evaluators](libraries.md#safety-evaluators) in the reporting configuration, you also need to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. The method then returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
 
 1. Add a method to define the [chat options](xref:Microsoft.Extensions.AI.ChatOptions) and ask the model for a response to a given question.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="GetResponse":::
 
-   The test in this tutorial evaluates the LLM's response to an astronomy question. Because the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration> has response caching enabled, and because the supplied <xref:Microsoft.Extensions.AI.IChatClient> always comes from the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> created using this reporting configuration, the LLM response for the test gets cached and reused.
+   The test in this tutorial evaluates the LLM's response to an astronomy question. Because the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration> has response caching enabled, and because the supplied <xref:Microsoft.Extensions.AI.IChatClient> is always fetched from the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> created using this reporting configuration, the LLM response for the test gets cached and reused.
 
 1. Add a method to validate the response.
 
@@ -138,7 +138,7 @@ Complete the following steps to create an MSTest project.
 
 ## Run the test/evaluation
 
-Run the test using your preferred test workflow—for example, the CLI command `dotnet test` or [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).
+Run the test using your preferred test workflow—for example, by using the CLI command `dotnet test` or [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).
 
 ## Generate a report
 
@@ -146,7 +146,7 @@ To generate a report to view the evaluation results, see [Generate a report](eva
 
 ## Next steps
 
-The tutorial covers the basics of evaluating content safety. As you create your test suite, consider the following next steps:
+This tutorial covers the basics of evaluating content safety. As you create your test suite, consider the following next steps:
 
 - Configure more evaluators, such as the [quality evaluators](libraries.md#quality-evaluators). For an example, see the AI samples repo [quality and safety evaluation example](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example10_RunningQualityAndSafetyEvaluatorsTogether.cs).
 - Evaluate the content safety of generated images. For an example, see the AI samples repo [image response example](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example09_RunningSafetyEvaluatorsAgainstResponsesWithImages.cs).

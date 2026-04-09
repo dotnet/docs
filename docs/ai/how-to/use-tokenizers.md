@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # Use Microsoft.ML.Tokenizers for text tokenization
 
-The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides a comprehensive set of tools for tokenizing text in .NET applications. Tokenization is essential when working with large language models (LLMs), as it lets you manage token counts, estimate costs, and preprocess text for AI models.
+The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides a comprehensive set of tools for tokenizing text in .NET applications. Tokenization is essential when you work with large language models (LLMs), as it lets you manage token counts, estimate costs, and preprocess text for AI models.
 
 This article shows you how to use the library's key features and work with different tokenizer models.
 
@@ -47,9 +47,9 @@ The Tiktoken tokenizer is commonly used with OpenAI models like GPT-4. The follo
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/TiktokenExample.cs" id="TiktokenBasic":::
 
-Cache and reuse the tokenizer instance for better performance.
+For better performance, cache and reuse the tokenizer instance throughout your app.
 
-Working with LLMs often requires managing text within token limits. The following example shows how to trim text to a specific token count:
+When you work with LLMs, you often need to manage text within token limits. The following example shows how to trim text to a specific token count:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/TiktokenExample.cs" id="TiktokenTrim":::
 
@@ -65,7 +65,7 @@ All tokenizers support advanced encoding options, such as controlling normalizat
 
 ## Use BPE tokenizer
 
-*Byte-pair encoding* (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. BPE was initially developed as an algorithm to compress texts, and then OpenAI used it for tokenization when pretraining the GPT model. The following example demonstrates BPE tokenization:
+*Byte-pair encoding* (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. BPE was initially developed as an algorithm to compress texts, and then OpenAI used it for tokenization when it pretrained the GPT model. The following example demonstrates BPE tokenization:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/BpeExample.cs" id="BpeBasic":::
 

@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Evaluate the quality of a model's response
 description: Learn how to create an MSTest app to evaluate the AI chat response of a language model.
-ms.date: 03/03/2026
+ms.date: 04/09/2026
 ms.topic: quickstart
 ai-usage: ai-assisted
 ---
@@ -53,7 +53,7 @@ Complete the following steps to create an MSTest project that connects to an AI 
     dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 
-   (Depending on your environment, the tenant ID might not be needed. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
+   (Depending on your environment, you might not need the tenant ID. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
 
 1. Open the new app in your editor of choice.
 
@@ -84,7 +84,7 @@ Complete the following steps to create an MSTest project that connects to an AI 
 
    This method does the following:
 
-   - Invokes the <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> to evaluate the *coherence* of the response. The <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)> method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> that contains a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric>. A `NumericMetric` contains a numeric value that's typically used to represent numeric scores that fall within a well-defined range.
+   - Invokes the <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> to evaluate the *coherence* of the response. The <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)> method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> that contains a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric>. A `NumericMetric` contains a numeric value that typically represents numeric scores that fall within a well-defined range.
    - Retrieves the coherence score from the <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult>.
    - Validates the *default interpretation* for the returned coherence metric. Evaluators can include a default interpretation for the metrics they return. You can also change the default interpretation to suit your specific requirements, if needed.
    - Validates that no diagnostics are present on the returned coherence metric. Evaluators can include diagnostics on the metrics they return to indicate errors, warnings, or other exceptional conditions encountered during evaluation.

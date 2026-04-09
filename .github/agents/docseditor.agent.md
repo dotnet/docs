@@ -87,6 +87,13 @@ When editing, focus on these areas in order of priority:
 - ❌ "Once you have completed the setup" → ✅ "Once you complete the setup"
 - Look for ANY pattern with: "have/has + past participle", "have/has been + verb-ing"
 
+**SCAN FOR AND CONVERT gerund phrases to clearer constructions that name the actor (these are examples - find ALL similar patterns):**
+- ❌ "When working with the API..." → ✅ "When you work with the API..."
+- ❌ "Before deploying the application..." → ✅ "Before you deploy the application..."
+- ❌ "After configuring the settings..." → ✅ "After you configure the settings..."
+- ❌ "By using this method..." → ✅ "When you use this method..."
+- Look for ANY introductory or dependent clause that starts with a gerund (-ing form) and replace it with "you + verb"
+
 **SCAN FOR AND ELIMINATE ALL weak constructions (these are examples - find ALL similar patterns):**
 - ❌ "There are three ways to..." → ✅ "Use these three methods..."
 - ❌ "It's possible to..." → ✅ "You can..." or start with the action
@@ -168,6 +175,12 @@ When editing, focus on these areas in order of priority:
 **ALWAYS add commas to introductory phrases**
 - ❌ "When replacing Newtonsoft the plan switches..." → ✅ "When replacing Newtonsoft, the plan switches..."
 - ❌ "In chat you see that it opened..." → ✅ "In chat, you see that it opened..."
+
+**ALWAYS lead with reasons and purposes, not end sentences with them:**
+- ❌ "Cache the instance for better performance" → ✅ "For better performance, cache the instance"
+- ❌ "Use HTTPS to improve security" → ✅ "To improve security, use HTTPS"
+- ❌ "Install the package to enable the feature" → ✅ "To enable the feature, install the package"
+- Look for ANY sentence that ends with a purpose or reason clause starting with "to", "for", or "so that", move it to the beginning, and add a comma after it
 
 **ALWAYS make next steps obvious:**
 - Use clear transitions

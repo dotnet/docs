@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Test prerelease .NET SDKs locally with global.json paths
 
-Starting with .NET 10, the `global.json` file supports an `sdk.paths` property that tells the .NET CLI where to look for SDK installations beyond the default system location. This feature lets you install a prerelease SDK into a project-local folder and use it only when you're working in that project. The process doesn't modify system-wide installations, and it doesn't change your machine-level or user-level `PATH` environment variable (the install script may temporarily update `PATH` in the current shell session, but that change doesn't persist).
+Starting with .NET 10, the `global.json` file supports an `sdk.paths` property that tells the .NET CLI where to look for SDK installations beyond the default system location. This feature lets you install a prerelease SDK into a project-local folder and use it only when you're working in that project. The process doesn't modify system-wide installations, and it doesn't change your machine-level or user-level `PATH` environment variable. (The install script might temporarily update `PATH` in the current shell session, but that change doesn't persist.)
 
 Whether you want to try out a new language feature, evaluate a preview release for your team, or validate your open-source library against an upcoming SDK version in CI, `sdk.paths` gives you a safe, reversible way to do it. If anything goes wrong, you delete one folder and you're back to exactly where you started.
 
@@ -19,7 +19,7 @@ Whether you want to try out a new language feature, evaluate a preview release f
 
 ## Prerequisites
 
-- [.NET 10](https://dotnet.microsoft.com/download/dotnet/10.0) or later installed on your system so that the `dotnet` host on your `PATH` is version 10.0 or later. The *host* is the system-wide `dotnet` executable available to your entire machine. When you run any `dotnet` command, this host is what kicks in first: it reads `global.json`, decides which SDK version to use, and hands off to that SDK. In this article, we use that system-wide host to steer the CLI toward a locally installed preview SDK.
+- [.NET 10](https://dotnet.microsoft.com/download/dotnet/10.0) or later installed on your system so that the `dotnet` host on your `PATH` is version 10.0 or later. The *host* is the system-wide `dotnet` executable available to your entire machine. When you run any `dotnet` command, this host is what kicks in first: it reads `global.json`, decides which SDK version to use, and hands off to that SDK. In this how-to article, you use that system-wide host to steer the CLI toward a locally installed preview SDK.
 - A terminal or command prompt (bash, zsh, PowerShell, or Command Prompt).
 - (Optional) A Git repository where you want to scope the prerelease SDK.
 
@@ -35,7 +35,7 @@ Host:
   Commit:       abc123def4
 ```
 
-The `Version` line must show `10.0` or later. Note that the host version is **not** the same as the SDK version reported by `dotnet --version`. If the host shows an older version (for example, `8.0.x` or `9.0.x`), [install .NET 10+ system-wide](https://dotnet.microsoft.com/download/dotnet/10.0) to update the `dotnet` host on your `PATH`.
+The `Version` line must show `10.0` or later. The host version is **not** the same as the SDK version reported by `dotnet --version`. If the host shows an older version (for example, `8.0.x` or `9.0.x`), [install .NET 10+ system-wide](https://dotnet.microsoft.com/download/dotnet/10.0) to update the `dotnet` host on your `PATH`.
 
 ## How sdk.paths works
 
@@ -210,6 +210,8 @@ When multiple people work on the same repository, a convenience script prevents 
 
 **install-dotnet.sh** (macOS/Linux):
 
+### [macOS / Linux](#tab/bash)
+
 ```bash
 #!/usr/bin/env bash
 set -e
@@ -264,7 +266,7 @@ echo "Done! SDK $SDK_VERSION installed to $INSTALL_DIR"
 echo "Run 'dotnet --version' to verify."
 ```
 
-**install-dotnet.ps1** (Windows):
+### [Windows (PowerShell)](#tab/powershell)
 
 ```powershell
 $ErrorActionPreference = 'Stop'
@@ -318,6 +320,8 @@ Write-Host ""
 Write-Host "Done! SDK $sdkVersion installed to $installDir"
 Write-Host "Run 'dotnet --version' to verify."
 ```
+
+---
 
 Make the shell script executable and add both scripts to your repository:
 
@@ -383,7 +387,7 @@ Make sure you run this from the folder that contains your `global.json` (or a su
 > Always use `./.dotnet/dotnet` (or `.\.dotnet\dotnet` on Windows) for workload commands. The `global.json` `paths` feature routes SDK resolution correctly for commands like `dotnet build` and `dotnet run`, but workload commands store metadata relative to the `dotnet` root of the host that runs them. When you use the system host, workloads end up in the system installation rather than the local one. This is a [known gap](https://github.com/dotnet/sdk/issues/49825) in how `sdk.paths` interacts with `DOTNET_ROOT`. Using the local binary directly ensures workloads are installed and tracked in the right place.
 
 > [!NOTE]
-> On macOS and Linux, you do **not** need `sudo` for workload install when using a local SDK. The `.dotnet/` folder is user-owned, so all workload files are written with your normal user permissions. This is different from system-wide installs, which may require elevated privileges.
+> On macOS and Linux, you do **not** need `sudo` for workload install when using a local SDK. The `.dotnet/` folder is user-owned, so all workload files are written with your normal user permissions. This is different from system-wide installs, which might require elevated privileges.
 
 ### Common workloads
 
@@ -429,7 +433,7 @@ To see which workloads are installed on the local SDK:
 ---
 
 > [!TIP]
-> Workloads installed on the local SDK are stored inside the `.dotnet/` directory. Deleting it removes the SDK and all its workloads. Shared download caches (such as `~/.nuget/packages`) may remain but do not affect your system.
+> Workloads installed on the local SDK are stored inside the `.dotnet/` directory. Deleting the directory removes the SDK and all its workloads. Shared download caches (such as `~/.nuget/packages`) might remain but don't affect your system.
 
 ## Step 7: Use the prerelease SDK in CI (optional)
 
@@ -514,7 +518,7 @@ This approach bypasses the system host entirely and doesn't require `sdk.paths` 
 
 The `sdk.paths` feature has a few constraints to be aware of:
 
-- **Requires a .NET 10 or later host on PATH.** The `dotnet` executable that reads `global.json` must be version 10.0 or later. If the system host is older, it ignores the `paths` property entirely.
+- **Requires a .NET 10 or later host on `PATH`.** The `dotnet` executable that reads `global.json` must be version 10.0 or later. If the system host is older, it ignores the `paths` property entirely.
 - **Applies to SDK commands only.** The `paths` property affects SDK resolution for commands like `dotnet build`, `dotnet run`, and `dotnet test`. It does not affect app host resolution or framework-dependent execution (for example, `dotnet myapp.dll`).
 - **Paths are relative to the global.json location.** If you move your `global.json` file, update the paths accordingly. An absolute path also works but reduces portability across machines.
 

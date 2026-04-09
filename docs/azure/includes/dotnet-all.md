@@ -425,7 +425,7 @@
 | Azure MCP Types Internal | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Caching - PostgreSQL | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.2) |  |  |
-| Communication Calling Windows Client | NuGet [1.14.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.14.0) |  |  |
+| Communication Calling Windows Client | NuGet [1.14.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.14.0)<br>NuGet [1.15.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.15.0-beta.1) |  |  |
 | Content Safety Extension Embedded Image | NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.4) |  |  |
 | Content Safety Extension Embedded Text | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Cosmos DB AOT | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
@@ -564,7 +564,7 @@
 | Functions extension for Kafka | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.2.0) |  | GitHub [4.2.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |
 | Functions extension for Notification Hubs | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.NotificationHubs/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for RabbitMQ | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/2.1.0) |  | GitHub [2.1.0](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
-| Functions extension for script abstractions | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.4) |  |  |
+| Functions extension for script abstractions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.1.0) |  |  |
 | Functions extension for SendGrid | NuGet [3.1.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.1.1) |  | GitHub [3.1.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
 | Functions extension for Sources | NuGet [3.0.45](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Sources/3.0.45) |  | GitHub [3.0.45](https://github.com/Azure/azure-webjobs-sdk) |
 | Functions extension for Storage Timers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.1.0) |  |  |

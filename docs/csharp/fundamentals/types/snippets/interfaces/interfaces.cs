@@ -49,25 +49,23 @@ public class FileLogger : ILogger
 // </ImplementInterface>
 
 // <ExplicitImplementation>
-interface ISerializer
+interface IMetric
 {
-    string Serialize(object data);
+    double GetDistance(); // Returns meters
 }
 
-interface IDeserializer
+interface IImperial
 {
-    string Serialize(object data); // Same name as ISerializer.Serialize
+    double GetDistance(); // Returns feet
 }
 
-public class DataProcessor : ISerializer, IDeserializer
+public class Runway(double meters) : IMetric, IImperial
 {
-    // Explicit implementation for ISerializer
-    string ISerializer.Serialize(object data) =>
-        $"Serialized: {data}";
+    // Explicit implementation for IMetric
+    double IMetric.GetDistance() => meters;
 
-    // Explicit implementation for IDeserializer
-    string IDeserializer.Serialize(object data) =>
-        $"Deserialized: {data}";
+    // Explicit implementation for IImperial
+    double IImperial.GetDistance() => meters * 3.28084;
 }
 // </ExplicitImplementation>
 

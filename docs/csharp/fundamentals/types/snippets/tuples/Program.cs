@@ -13,6 +13,7 @@ DiscardsExample();
 TupleEqualityExample();
 WithExpressionExample();
 DictionaryTupleExample();
+TupleKeyExample();
 
 static void BasicDeclarations()
 {
@@ -161,4 +162,23 @@ static void DictionaryTupleExample()
     }
     // Output: Medium: 51–100
     // </DictionaryTuple>
+}
+
+static void TupleKeyExample()
+{
+    // <TupleKey>
+    var grid = new Dictionary<(int Row, int Column), string>
+    {
+        [(0, 0)] = "Origin",
+        [(1, 3)] = "Sensor A",
+        [(2, 5)] = "Sensor B"
+    };
+
+    var target = (Row: 1, Column: 3);
+    if (grid.TryGetValue(target, out var label))
+    {
+        Console.WriteLine($"({target.Row}, {target.Column}): {label}");
+    }
+    // Output: (1, 3): Sensor A
+    // </TupleKey>
 }

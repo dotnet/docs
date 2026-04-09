@@ -1,7 +1,7 @@
 ---
 title: "Generic types and methods"
 description: Learn how to use generic types and methods in C#, including consuming common generic collections, type inference, constraints, collection expressions, dictionary expressions, and covariance and contravariance.
-ms.date: 04/07/2026
+ms.date: 04/10/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -12,21 +12,21 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# generics are similar to generics in Java or templates in C++, but with full runtime type information and no type erasure. Skim the [collection expressions](#collection-expressions) and [covariance and contravariance](#covariance-and-contravariance) sections for C#-specific patterns.
 
-*Generics* let you write code that works with any type while keeping full type safety. Instead of writing separate classes or methods for `int`, `string`, and every other type you need, you write one version with a *type parameter* (typically named `T`) and specify the actual type when you use it. The compiler checks types at compile time, so you don't need runtime casts or risk `InvalidCastException`.
+*Generics* let you write code that works with any type while keeping full type safety. Instead of writing separate classes or methods for `int`, `string`, and every other type you need, write one version with one or more *type parameters* (such as `T`, or `TKey` and `TValue`) and specify the actual types when you use it. The compiler checks types at compile time, so you don't need runtime casts or risk `InvalidCastException`.
 
 You encounter generics constantly in everyday C#. Collections, async return types, delegates, and LINQ all rely on generic types:
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="EverydayGenerics":::
 
-In each case, the type argument in angle brackets (`<int>`, `<string>`, `<Product>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety—you can't accidentally add a `string` to a `List<int>`.
+In each case, the type argument in angle brackets (`<int>`, `<string>`, `<Product>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety. You can't accidentally add a `string` to a `List<int>`.
 
 ## Consuming generic types
 
-Most of the time, you *consume* generic types from the .NET class library rather than creating your own. The following sections show the most common generic types you'll use.
+More often, you *consume* generic types from the .NET class library rather than creating your own. The following sections show the most common generic types you'll use.
 
 ### Generic collections
 
-The <xref:System.Collections.Generic> namespace provides type-safe collection classes. Always use these instead of nongeneric collections like <xref:System.Collections.ArrayList>:
+The <xref:System.Collections.Generic> namespace provides type-safe collection classes. Always use these collections instead of nongeneric collections like <xref:System.Collections.ArrayList>:
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="GenericCollections":::
 
@@ -38,7 +38,7 @@ A generic method declares its own type parameter. The compiler often *infers* th
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="GenericMethods":::
 
-In the call `Print(42)`, the compiler infers `T` as `int` from the argument. You can write `Print<int>(42)` explicitly, but inference keeps the code cleaner.
+In the call `Print(42)`, the compiler infers `T` as `int` from the argument. You can write `Print<int>(42)` explicitly, but type inference keeps the code cleaner.
 
 ## Collection expressions
 
@@ -61,9 +61,6 @@ You can initialize dictionaries concisely with indexer initializers. This syntax
 You can merge dictionaries by copying one and applying overrides:
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="DictionarySpread":::
-
-> [!NOTE]
-> C# 14 introduces *dictionary expressions*, which extend collection expression syntax to dictionaries with a `key: value` notation. When dictionary expressions become available, the examples in this section can be further simplified. For more about collection expressions, see [Collection expressions](../../language-reference/operators/collection-expressions.md).
 
 ## Type constraints
 

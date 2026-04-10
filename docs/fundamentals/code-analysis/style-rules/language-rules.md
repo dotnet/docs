@@ -160,6 +160,7 @@ C# style rules:
 - [Prefer 'null' check over type check (IDE0150)](ide0150.md)
 - [Use tuple to swap values (IDE0180)](ide0180.md)
 - [Add explicit cast in foreach loop (IDE0220)](ide0220.md)
+- [Add explicit cast (IDE0221)](ide0221.md)
 - [Use UTF-8 string literal (IDE0230)](ide0230.md)
 - [Nullable directive is redundant (IDE0240)](ide0240.md)
 - [Nullable directive is unnecessary (IDE0241)](ide0241.md)

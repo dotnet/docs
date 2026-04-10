@@ -32,7 +32,7 @@ Structure your instruction files with:
 
 - A short title describing the action. For example, "replace Newtonsoft.Json with System.Text.Json."
 - A concise problem statement or prerequisite section.
-- Explicit step logic ("If X is found, do Y")—avoid vague language.
+- Explicit step logic ("If X is found, do Y"). Avoid vague language.
 - (Recommended) One or more diff examples captured from actual local edits to guide transformations.
 
 Beyond custom upgrade instructions, GitHub Copilot modernization is extensible through the standard skills and instructions system that your development environment and Copilot support. Skills let you extend the agent with extra capabilities, and instruction files (like `copilot-instructions.md`) provide global guidance to the agent.

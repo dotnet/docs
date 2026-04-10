@@ -152,23 +152,23 @@ To start an upgrade or migration process, see:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-When you ask the modernization agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot assesses your project and runs a three-phase workflow. Each phase produces Markdown files under `.github/upgrades/{scenarioId}` in your repository so you can review what comes next before you continue. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+When you ask the modernization agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot assesses your project and runs a three-stage workflow. Each stage produces Markdown files under `.github/upgrades/{scenarioId}` in your repository so you can review what comes next before you continue. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
 Copilot starts by examining your project structure, dependencies, and code patterns to build a comprehensive assessment. The `assessment.md` file lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope.
 
-After the assessment, Copilot runs the following three phases:
+After the assessment, Copilot runs the following three stages:
 
-1. **Upgrade options** — Copilot presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
+1. **Assessment:** Copilot examines your project structure, dependencies, and code patterns, then presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
 
-1. **Planning** — Copilot converts the assessment and your confirmed options into a detailed specification. The `plan.md` file documents upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
+1. **Planning:** Copilot converts the assessment and your confirmed options into a detailed specification. The `plan.md` file documents upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
 
-1. **Execution** — Copilot breaks the plan into sequential, concrete tasks with validation criteria in `tasks.md`. Each task describes a single change and how Copilot confirms it succeeded.
+1. **Execution:** Copilot breaks the plan into sequential, concrete tasks with validation criteria in `tasks.md`. Each task describes a single change and how Copilot confirms it succeeded.
 
 Edit any of the Markdown files in `.github/upgrades/{scenarioId}` to adjust upgrade steps or add context before you move forward.
 
 ### Upgrade strategies
 
-During the upgrade options phase, the agent evaluates your solution and recommends one of these strategies:
+During the assessment stage, the agent evaluates your solution and recommends one of these strategies:
 
 | Strategy | Best for | Description |
 |---|---|---|
@@ -180,8 +180,8 @@ During the upgrade options phase, the agent evaluates your solution and recommen
 
 The agent supports two flow modes that control how much it pauses for your input:
 
-- **Automatic** — The agent works through all stages without pausing, stopping only at genuine blockers. Best for experienced users and straightforward upgrades.
-- **Guided** — The agent pauses at each stage boundary so you can review the assessment, plan, and tasks before proceeding. Best for first-time users and complex solutions.
+- **Automatic:** The agent works through all stages without pausing, stopping only at genuine blockers. Best for experienced users and straightforward upgrades.
+- **Guided:** The agent pauses at each stage boundary so you can review the assessment, plan, and tasks before proceeding. Best for first-time users and complex solutions.
 
 Switch between modes at any time by saying _"pause"_ (to enter guided mode) or _"continue"_ (to enter automatic mode).
 
@@ -195,7 +195,7 @@ The agent stores all upgrade state in `.github/upgrades/{scenarioId}/`. The fold
 | `upgrade-options.md` | Confirmed upgrade decisions |
 | `plan.md` | Ordered task plan |
 | `tasks.md` | Live progress dashboard |
-| `scenario-instructions.md` | Agent's persistent memory—preferences, decisions, and custom instructions |
+| `scenario-instructions.md` | Agent's persistent memory, including preferences, decisions, and custom instructions |
 | `execution-log.md` | Detailed audit trail of all changes |
 | `tasks/{taskId}/task.md` | Per-task scope and context |
 | `tasks/{taskId}/progress-details.md` | Per-task execution notes and results |
@@ -207,9 +207,9 @@ Because all state lives in this folder, you can close your IDE, switch between s
 
 ### Perform the upgrade
 
-After each phase completes, review and modify the generated files as needed, and then tell Copilot to continue to the next phase.
+After each stage completes, review and modify the generated files as needed, and then tell Copilot to continue to the next stage.
 
-When you reach the **Execution** phase, tell Copilot to start the upgrade. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem comes up again.
+When you reach the **Execution** stage, tell Copilot to start the upgrade.If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem comes up again.
 
 ### Upgrade results
 

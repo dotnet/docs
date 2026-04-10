@@ -79,7 +79,7 @@ The assessment is your best opportunity to catch issues before the agent starts 
 
 If you spot something, tell the agent in chat or add the information to `scenario-instructions.md`.
 
-### Take time with the planning phase
+### Take time with the planning stage
 
 The agent generates a task plan based on its assessment. Review the plan before proceeding:
 
@@ -177,7 +177,7 @@ Tell the agent: _"The build is failing after the last task."_ The agent analyzes
 
 ### Wrong strategy chosen
 
-If the agent's overall approach doesn't work for your codebase, restart the planning phase:
+If the agent's overall approach doesn't work for your codebase, restart the planning stage:
 
 - _"Let's redo the plan. I want to upgrade the web projects first instead of bottom-up."_
 - _"Change the strategy to upgrade all shared libraries in one batch."_

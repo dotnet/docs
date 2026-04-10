@@ -50,7 +50,7 @@ Natural language works. Here are some ways to start:
 
 When you start a conversation, the agent checks for existing upgrade work in your workspace:
 
-- If there's no existing work, the agent starts fresh—typically beginning with an assessment of your solution.
+- If there's no existing work, the agent starts fresh, typically beginning with an assessment of your solution.
 - If there's existing work in progress, the agent picks up where you left off and shows current status, such as "3 of 8 tasks completed."
 
 ## Choose a flow mode
@@ -59,16 +59,16 @@ The agent supports two flow modes that control how much the agent pauses for you
 
 ### Automatic mode
 
-In automatic mode, the agent works through the phases—upgrade options, planning, execution—without pausing for approval at each boundary. The agent still stops at genuine blockers or when a decision only you can make is needed.
+In automatic mode, the agent works through the stages (assessment, planning, execution) without pausing for approval at each boundary. The agent still stops at genuine blockers or when a decision only you can make is needed.
 
 Best for experienced users, straightforward upgrades, and small solutions.
 
 ### Guided mode
 
-In guided mode, the agent pauses at each phase boundary for your review:
+In guided mode, the agent pauses at each stage boundary for your review:
 
-- After assessment—before creating the plan.
-- After planning—before executing any tasks.
+- After assessment, before creating the plan.
+- After planning, before executing any tasks.
 - Before complex task breakdowns.
 - At key decision points where multiple valid approaches exist.
 
@@ -100,7 +100,7 @@ Agent: "Got it. I'll use System.Text.Json for all serialization going forward.
         I've saved this as a preference."
 ```
 
-The agent updates `scenario-instructions.md` and won't make the same choice again—even in a future session.
+The agent updates `scenario-instructions.md` and won't make the same choice again, even in a future session.
 
 ### Set preferences
 
@@ -128,13 +128,13 @@ The `scenario-instructions.md` file is organized into clear sections:
 
 | Section | What it contains | Example |
 |---|---|---|
-| **User Preferences—Technical** | Package choices, framework decisions, coding patterns | _"Use System.Text.Json, not Newtonsoft"_ |
-| **User Preferences—Execution Style** | How the agent works | _"Always use bottom-up strategy"_ |
+| **User Preferences (Technical)** | Package choices, framework decisions, coding patterns | _"Use System.Text.Json, not Newtonsoft"_ |
+| **User Preferences (Execution Style)** | How the agent works | _"Always use bottom-up strategy"_ |
 | **Key Decisions Log** | Important decisions and their rationale | _"Chose EF Core over Dapper because..."_ |
 | **Custom Instructions per Task** | Task-specific overrides | _"Skip tests for task 3.1"_ |
 
 > [!TIP]
-> You can also edit `scenario-instructions.md` directly—it's a Markdown file in `.github/upgrades/{scenarioId}/`. The agent reads the file at the start of every interaction.
+> You can also edit `scenario-instructions.md` directly. It's a Markdown file in `.github/upgrades/{scenarioId}/`. The agent reads the file at the start of every interaction.
 
 ## Make mid-session corrections
 
@@ -195,15 +195,15 @@ The agent maintains several files in `.github/upgrades/{scenarioId}/` that give 
 
 | File | What it shows |
 |---|---|
-| `tasks.md` | Visual progress overview—all tasks with status indicators (✅ done, 🔄 in progress, ⬜ pending) and a progress bar |
-| `execution-log.md` | Complete chronological audit trail—every action the agent took, when, and what happened |
-| `assessment.md` | The initial analysis of your solution—dependencies, breaking changes, migration complexity |
+| `tasks.md` | Visual progress overview with all tasks, status indicators (✅ done, 🔄 in progress, ⬜ pending), and a progress bar |
+| `execution-log.md` | Complete chronological audit trail of every action the agent took, when, and what happened |
+| `assessment.md` | The initial analysis of your solution, including dependencies, breaking changes, and migration complexity |
 | `scenario-instructions.md` | Your preferences and the agent's learned decisions |
 | `tasks/{taskId}/progress-details.md` | Per-task details: build errors encountered, how they were resolved, test results, and decisions made |
 
 ## Resume interrupted work
 
-Close the chat or shut down your IDE—the agent is designed for exactly this situation.
+Close the chat or shut down your IDE. The agent is designed for exactly this situation.
 
 The agent stores all state in `.github/upgrades/` inside your repository. When you start a new conversation, the agent checks the current state and immediately knows:
 
@@ -221,11 +221,11 @@ If a task is in progress from a previous session, the agent recognizes the task 
 
 ## Work across multiple sessions
 
-Large upgrades—a 20-project solution, a complex framework migration, a multi-step modernization—often span multiple sessions over days or weeks. The agent handles multi-session work naturally:
+Large upgrades, such as a 20-project solution, a complex framework migration, or a multi-step modernization, often span multiple sessions over days or weeks. The agent handles multi-session work naturally:
 
-- **Persistent state** — Everything is in `.github/upgrades/`. No in-memory state to lose.
-- **Session independence** — Each chat session is independent. The agent reconstructs its context from the state files every time.
-- **Cross-IDE support** — Start in VS Code, continue in Visual Studio or Copilot CLI. The state folder is the shared contract.
+- **Persistent state:** Everything is in `.github/upgrades/`. No in-memory state to lose.
+- **Session independence:** Each chat session is independent. The agent reconstructs its context from the state files every time.
+- **Cross-IDE support:** Start in VS Code, continue in Visual Studio or Copilot CLI. The state folder is the shared contract.
 
 ### Tips for multi-session work
 
@@ -272,7 +272,7 @@ Tell the agent what it _shouldn't_ do, not just what it should:
 
 ### Give feedback
 
-Positive feedback helps just as much as corrections—it confirms the agent is on the right track:
+Positive feedback helps just as much as corrections and confirms the agent is on the right track:
 
 - _"That migration looks great—do the same approach for the other repository project."_
 - _"That works, but we prefer constructor injection over property injection in this codebase."_

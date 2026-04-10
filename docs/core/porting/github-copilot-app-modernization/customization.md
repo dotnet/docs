@@ -97,7 +97,7 @@ Each task in `tasks/{taskId}/task.md` contains the task specification and workin
 - Provide code examples for the desired outcome.
 
 > [!IMPORTANT]
-> The agent's tools manage `tasks.md` as a read-only dashboard. Don't edit `tasks.md` directly—the agent overwrites your changes. Edit `scenario-instructions.md` or individual `task.md` files instead.
+> The agent's tools manage `tasks.md` as a read-only dashboard. Don't edit `tasks.md` directly. The agent overwrites your changes. Edit `scenario-instructions.md` or individual `task.md` files instead.
 
 ## Create custom skills
 
@@ -112,7 +112,7 @@ Skills are the primary extension point for the agent. A skill is a Markdown file
 | `%UserProfile%/.copilot/skills/my-skill.md` | User profile (personal, all repos) | Personal preferences and patterns |
 
 > [!TIP]
-> Repository-level skills (`.github/skills/`) are the most common choice—they travel with the code and are shared across the team.
+> Repository-level skills (`.github/skills/`) are the most common choice. They travel with the code and are shared across the team.
 
 ### Skill file structure
 
@@ -182,19 +182,19 @@ equivalents, updating configuration, and verifying behavior.
 | Field | Required | Description |
 |---|---|---|
 | `name` | Yes | Unique identifier in kebab-case. Start with a gerund verb (for example, `migrating-`, `converting-`). Maximum 64 characters. |
-| `description` | Yes | Determines when the agent loads the skill. Include trigger phrases—words and patterns that should activate the skill. |
+| `description` | Yes | Determines when the agent loads the skill. Include trigger phrases, such as words and patterns that should activate the skill. |
 | `metadata.discovery` | No | Controls when the skill loads: `preload` (always available), `lazy` (on-demand when description matches, default and recommended), or `scenario` (defines a workflow orchestrator). |
 | `metadata.traits` | No | Keywords describing the technologies in your project, such as `.NET`, `CSharp`, `VisualBasic`, or `DotNetCore`. |
 
 ### Skill authoring best practices
 
-- **Be specific in the description** — Include exact package names, library names, and natural-language trigger phrases users might type.
-- **Include clear, step-by-step workflows** — Number the steps. Be explicit about what files to change and what commands to run.
-- **Include success criteria** — Without success criteria, the agent doesn't know when to stop. Use checkboxes or a clear list of verifiable conditions.
-- **Include error handling** — Anticipate common failure modes, such as missing packages, build failures, or broken tests.
-- **Keep skills focused** — One skill per migration or task type. A skill for "migrating FooBar v2 to v3" is better than "migrating all internal libraries."
-- **Name with a gerund verb** — Use `migrating-foobar-v2-to-v3`, not `foobar-migration` or `foobar-v3`.
-- **Use `lazy` discovery** — Most custom skills should use `lazy` discovery to avoid bloating the agent's context window.
+- **Be specific in the description:** Include exact package names, library names, and natural-language trigger phrases users might type.
+- **Include clear, step-by-step workflows:** Number the steps. Be explicit about what files to change and what commands to run.
+- **Include success criteria:** Without success criteria, the agent doesn't know when to stop. Use checkboxes or a clear list of verifiable conditions.
+- **Include error handling:** Anticipate common failure modes, such as missing packages, build failures, or broken tests.
+- **Keep skills focused:** One skill per migration or task type. A skill for "migrating FooBar v2 to v3" is better than "migrating all internal libraries."
+- **Name with a gerund verb:** Use `migrating-foobar-v2-to-v3`, not `foobar-migration` or `foobar-v3`.
+- **Use `lazy` discovery:** Most custom skills should use `lazy` discovery to avoid bloating the agent's context window.
 
 ## Create custom scenarios
 
@@ -264,10 +264,10 @@ Place scenario files in `.github/skills/` or `.github/upgrades/skills/` for the 
 
 The agent offers to work on a Git branch, but you have full control over the strategy:
 
-- **Branch naming** — Tell the agent what branch name to use, or let the agent suggest one.
-- **Per-task branches** — Request a separate branch per task for granular review.
-- **Commit timing** — Choose when the agent commits: after every completed task (default), only at the end of the full upgrade, or on demand.
-- **No source control** — The agent also works with non-Git folders. The agent suggests backing up your project first.
+- **Branch naming:** Tell the agent what branch name to use, or let the agent suggest one.
+- **Per-task branches:** Request a separate branch per task for granular review.
+- **Commit timing:** Choose when the agent commits: after every completed task (default), only at the end of the full upgrade, or on demand.
+- **No source control:** The agent also works with non-Git folders. The agent suggests backing up your project first.
 
 Example chat instructions:
 
@@ -291,7 +291,7 @@ When the agent discovers multiple skills, it resolves them using a priority syst
 | 2 | Repository skills | `.github/skills/` |
 | 1 (lowest) | Embedded skills (built into the agent) | — |
 
-The agent collects skills from all sources. When skills have overlapping scope, higher-priority sources take precedence. The `discovery` field controls when the skill loads—`lazy` means on demand when relevant, `preload` means always available.
+The agent collects skills from all sources. When skills have overlapping scope, higher-priority sources take precedence. The `discovery` field controls when the skill loads. `lazy` means on demand when relevant, and `preload` means always available.
 
 > [!TIP]
 > You don't need to replace a built-in skill to change behavior. A repository skill with a higher priority can supplement the built-in skill, adding your team's specific conventions on top of the baseline behavior.

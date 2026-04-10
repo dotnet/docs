@@ -29,7 +29,7 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 ### Agent can't resume previous work
 
-**Cause:** The `.github/upgrades/` folder—where the agent stores all its state—is missing or corrupted.
+**Cause:** The `.github/upgrades/` folder, where the agent stores all its state, is missing or corrupted.
 
 **Solution:**
 
@@ -74,7 +74,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 
 **Solution:**
 
-1. Tell the agent about the failure—the agent analyzes the errors automatically.
+1. Tell the agent about the failure. The agent analyzes the errors automatically.
 1. If the agent can't resolve the issue, revert the last commit (`git revert HEAD`) and ask the agent to try a different approach.
 1. For complex failures, check `execution-log.md` to understand what changes were made and in what order.
 
@@ -137,7 +137,7 @@ These issues relate to upgrade speed and assessment duration.
 
 **Solution:**
 
-1. Be patient—the agent works project-by-project and validates each change with builds.
+1. Be patient. The agent works project-by-project and validates each change with builds.
 1. For very large solutions (50+ projects), consider upgrading in batches. Group related projects and upgrade them together.
 
 ### Assessment takes very long
@@ -146,7 +146,7 @@ These issues relate to upgrade speed and assessment duration.
 
 **Solution:**
 
-1. Long assessment times are normal for large solutions—no action needed.
+1. Long assessment times are normal for large solutions. No action needed.
 1. Monitor progress in the **Output** panel (select **AppModernizationExtension** from the dropdown in Visual Studio).
 1. The assessment only runs once per scenario. Subsequent phases use the cached results.
 
@@ -166,7 +166,7 @@ These issues relate to custom skills and scenario instruction files.
    - `%UserProfile%/.copilot/skills/` (user-level, personal)
 1. Check that the skill metadata includes at least `name` and `description` fields.
 1. Ensure the `discovery` field (if set) is one of: `lazy`, `preload`, or `scenario`.
-1. Verify the skill's `description` matches the kind of task you expect it to apply to—the agent uses description matching to select skills.
+1. Verify the skill's `description` matches the kind of task you expect it to apply to. The agent uses description matching to select skills.
 
 ### Changes to scenario-instructions.md don't take effect
 
@@ -176,18 +176,18 @@ These issues relate to custom skills and scenario instruction files.
 
 1. Ask the agent to _"reload instructions"_ or start a new chat session to force a re-read.
 1. Ensure your edits are in the correct sections of the file:
-   - **User Preferences** — for general preferences and constraints.
-   - **Key Decisions** — for recording important decisions made during the upgrade.
-   - **Custom Instructions** — for specific behavioral overrides.
+   - **User Preferences:** For general preferences and constraints.
+   - **Key Decisions:** For recording important decisions made during the upgrade.
+   - **Custom Instructions:** For specific behavioral overrides.
 1. Verify the file is saved and in the expected path: `.github/upgrades/{scenarioId}/scenario-instructions.md`.
 
 ## Get help
 
 When something isn't working as expected:
 
-1. **Ask the agent** — Try asking: _"What went wrong with the last task?"_ The agent can often explain what happened and suggest next steps.
-1. **Review the execution log** — Open `execution-log.md` in `.github/upgrades/{scenarioId}/`. The log shows a chronological record of what the agent did, including any errors the agent encountered.
-1. **File an issue** — If you've found a bug or the agent consistently fails at something, file an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
+1. **Ask the agent:** Try asking: _"What went wrong with the last task?"_ The agent can often explain what happened and suggest next steps.
+1. **Review the execution log:** Open `execution-log.md` in `.github/upgrades/{scenarioId}/`. The log shows a chronological record of what the agent did, including any errors the agent encountered.
+1. **File an issue:** If you've found a bug or the agent consistently fails at something, file an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
 
 ## Related content
 

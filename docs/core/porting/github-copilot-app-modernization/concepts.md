@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot modernization core concepts
-description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the three-phase workflow, state management, and flow modes."
+description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
 ms.topic: concept-article
 ms.date: 04/06/2026
 ai-usage: ai-assisted
@@ -34,9 +34,9 @@ A _scenario_ is a managed, end-to-end modernization workflow. When you tell the 
 
 You don't need to memorize scenario names. The agent discovers relevant scenarios automatically:
 
-1. Analyzes your codebase to understand what technologies you're using—language, framework version, libraries, and project types.
+1. Analyzes your codebase to understand what technologies you're using, including language, framework version, libraries, and project types.
 1. Identifies which scenarios are relevant to your projects.
-1. Ranks scenarios by importance and weight—the most relevant ones surface first.
+1. Ranks scenarios by importance and weight. The most relevant ones surface first.
 1. You can also ask directly: _"What scenarios are available for my solution?"_
 
 ### Scenario persistence
@@ -47,22 +47,20 @@ For a complete list of scenarios, see [Scenarios and skills reference](scenarios
 
 ## The workflow lifecycle
 
-Every scenario follows the same lifecycle: pre-initialization, assessment, and then a three-phase workflow.
+Every scenario follows the same lifecycle: a three-stage workflow.
 
-### Pre-initialization
+### Stage 1: Assessment
 
 The agent gathers everything it needs before starting work:
 
 - **Target framework:** The version you're upgrading to.
 - **Git strategy:** The agent suggests branching and you control the details: branch name, whether to use per-task branches, and commit timing.
-- **Flow mode:** Automatic (agent drives) or Guided (you approve each phase).
+- **Flow mode:** Automatic (agent drives) or Guided (you approve each stage).
 - **Scenario-specific parameters:** Depending on the scenario, the agent might ask more questions.
 
 The agent initializes the scenario workspace at `.github/upgrades/{scenarioId}/`.
 
-### Assessment
-
-The agent analyzes your codebase:
+The agent then analyzes your codebase:
 
 - Project dependency graph (topological order)
 - NuGet package compatibility with the target framework
@@ -70,9 +68,7 @@ The agent analyzes your codebase:
 - Test coverage
 - Complexity and risk factors
 
-The assessment produces a comprehensive report saved to `assessment.md`. In **Guided mode**, the agent pauses here for your review before proceeding.
-
-### Phase 1: Upgrade options
+The assessment produces a comprehensive report saved to `assessment.md`.
 
 Based on the assessment, the agent evaluates your solution and identifies which upgrade decisions are relevant. It presents sensible defaults and lets you review and override any choice.
 
@@ -86,21 +82,23 @@ Options might include:
 
 The agent saves confirmed decisions to `upgrade-options.md`.
 
-### Phase 2: Planning
+In **Guided mode**, the agent pauses here for your review before proceeding.
+
+### Stage 2: Planning
 
 The agent creates the task plan based on the assessment and your confirmed options. Planning produces three key files:
 
-- `plan.md` — The upgrade plan with strategy and task descriptions.
-- `scenario-instructions.md` — Your preferences, decisions, and the agent's memory.
-- `tasks.md` — Visual progress dashboard.
+- `plan.md`: The upgrade plan with strategy and task descriptions.
+- `scenario-instructions.md`: Your preferences, decisions, and the agent's memory.
+- `tasks.md`: Visual progress dashboard.
 
-### Phase 3: Execution
+### Stage 3: Execution
 
-The agent works through tasks sequentially. For each task, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how changes are committed—per task, per group of tasks, or at the end.
+The agent works through tasks sequentially. For each task, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how changes are committed, whether per task, per group of tasks, or at the end.
 
 ## Upgrade strategies
 
-During the upgrade options confirmation, the agent evaluates your solution and recommends one of these strategies:
+During the assessment stage, the agent evaluates your solution and recommends one of these strategies:
 
 | Strategy | Best for | How it works |
 |---|---|---|
@@ -123,7 +121,7 @@ The agent ships with 30+ built-in skills organized by domain:
 - **Cloud:** Azure Functions in-process to isolated worker model
 - **Libraries:** ADAL to MSAL, SignalR, PowerShell SDK, and more
 
-Skills load automatically based on what the agent detects in your codebase. You don't need to manage skill loading—just describe what you need.
+Skills load automatically based on what the agent detects in your codebase. You don't need to manage skill loading. Just describe what you need.
 
 For the complete list, see [Scenarios and skills reference](scenarios-and-skills.md).
 
@@ -135,9 +133,9 @@ _Tasks_ are the atomic units of work within a scenario. Each task represents a s
 
 Tasks move through these states:
 
-- **Available** — Ready to start, all dependencies met.
-- **In Progress** — The agent is actively working on the task.
-- **Completed** — Code changes applied, build passes, tests pass.
+- **Available:** Ready to start, all dependencies met.
+- **In Progress:** The agent is actively working on the task.
+- **Completed:** Code changes applied, build passes, tests pass.
 
 For each task, the agent:
 
@@ -155,7 +153,7 @@ The agent maintains persistent state so you can stop and resume at any time. Eve
 
 | File | Purpose |
 |---|---|
-| `scenario-instructions.md` | Your preferences, decisions, and custom instructions—the agent's persistent memory |
+| `scenario-instructions.md` | Your preferences, decisions, and custom instructions. The agent's persistent memory. |
 | `upgrade-options.md` | Confirmed upgrade decisions |
 | `plan.md` | The upgrade plan with strategy and task descriptions |
 | `tasks.md` | Visual progress dashboard showing task status |
@@ -185,13 +183,13 @@ The agent supports two flow modes that control how much oversight you have:
 
 ### Automatic mode
 
-The agent works through all phases—upgrade options, planning, and execution—without pausing for approval. It surfaces key findings and progress updates, but keeps moving forward.
+The agent works through all stages (assessment, planning, and execution) without pausing for approval. It surfaces key findings and progress updates, but keeps moving forward.
 
 Best for experienced users, straightforward upgrades, and small solutions.
 
 ### Guided mode
 
-The agent pauses at each phase boundary for your review:
+The agent pauses at each stage boundary for your review:
 
 - After assessment: _"Here's what I found. Shall I proceed with upgrade options?"_
 - After planning: _"Here's the task plan. Do you want me to start execution?"_

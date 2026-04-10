@@ -19,7 +19,7 @@ GitHub Copilot modernization for .NET helps you modernize through _scenarios_ an
 The agent supports both C# and Visual Basic projects.
 
 > [!TIP]
-> You don't need to memorize names. Describe what you want—_"upgrade to .NET 10"_, _"migrate my EF6 code"_, _"replace Newtonsoft.Json"_—and the agent loads the right scenario and skills automatically. You can also ask: _"What can you help me with?"_
+> You don't need to memorize names. Describe what you want (_"upgrade to .NET 10"_, _"migrate my EF6 code"_, _"replace Newtonsoft.Json"_) and the agent loads the right scenario and skills automatically. You can also ask: _"What can you help me with?"_
 
 ## Scenarios
 
@@ -106,7 +106,7 @@ General-purpose migration skills that apply across project types.
 | **Migrating Autofac to .NET DI** | Removes Autofac entirely and migrates all registrations to built-in ASP.NET Core dependency injection. |
 | **Integrating Autofac with .NET** | Keeps Autofac as the DI container but modernizes its ASP.NET Core integration. |
 | **Migrating cryptography namespaces** | Fixes the `System.Security.Cryptography` namespace split for types like `X509Certificate2` and `SignedCms`. |
-| **Migrating Newtonsoft to System.Text.Json** | Full migration from `Newtonsoft.Json`—handles converters, attributes, dynamic types, and settings. |
+| **Migrating Newtonsoft to System.Text.Json** | Full migration from `Newtonsoft.Json`. Handles converters, attributes, dynamic types, and settings. |
 | **Migrating Semantic Kernel to Agents** | Migrates Semantic Kernel agent APIs to the Microsoft Agents AI Framework. |
 | **Migrating to MSMQ.Messaging** | Migrates from `System.Messaging` (.NET Framework only) to `MSMQ.Messaging` for .NET Core. |
 | **Converting to Central Package Management** | Converts per-project NuGet package versioning to centralized package management using `Directory.Packages.props`. |
@@ -134,7 +134,7 @@ Skills for migrating ASP.NET Framework applications to ASP.NET Core.
 | Skill | What it does |
 |---|---|
 | **Migrating ASP.NET Framework to Core** | Comprehensive migration from ASP.NET Framework (MVC/WebAPI) to ASP.NET Core, including controllers, views, middleware, authentication, and configuration. |
-| **Migrating ASP.NET Identity** | Migrates ASP.NET MVC Identity to ASP.NET Core Identity—`IdentityDbContext`, `UserManager`, `SignInManager`, and auth middleware. |
+| **Migrating ASP.NET Identity** | Migrates ASP.NET MVC Identity to ASP.NET Core Identity, including `IdentityDbContext`, `UserManager`, `SignInManager`, and auth middleware. |
 | **Migrating Global.asax** | Converts `Global.asax` lifecycle events (`Application_Start`, `Application_Error`) to ASP.NET Core `Program.cs` and middleware. |
 | **Migrating OWIN to middleware** | Replaces OWIN/Katana middleware (`IAppBuilder`, `OwinMiddleware`) with ASP.NET Core equivalents. |
 | **Migrating OWIN Cookie Authentication** | Migrates OWIN cookie authentication middleware to ASP.NET Core cookie authentication. |
@@ -206,9 +206,9 @@ The agent loads skills progressively as your upgrade session unfolds:
 |---|---|
 | **Session start** | The agent loads the matching scenario and any skills that are immediately relevant to your codebase. |
 | **During execution** | As the agent works through tasks, it loads extra specialized skills on demand when it encounters specific migration patterns, such as EDMX files, WCF services, or OWIN middleware. |
-| **On request** | You can ask the agent to use any skill at any time—_"help me migrate WCF to CoreWCF"_ or _"use the EF6 migration skill."_ |
+| **On request** | You can ask the agent to use any skill at any time. For example, _"help me migrate WCF to CoreWCF"_ or _"use the EF6 migration skill."_ |
 
-You don't need to manage skill loading. The agent handles it automatically—just describe what you need.
+You don't need to manage skill loading. The agent handles it automatically. Just describe what you need.
 
 ## Create your own skills
 

@@ -78,7 +78,7 @@ Interfaces support two advanced features that go beyond basic contracts:
 - **Default interface members** let an interface provide a method body. Implementing types inherit the default implementation and can optionally override it. For more information, see [default interface methods](../../advanced-topics/interface-implementation/default-interface-methods-versions.md).
 - **Static abstract members** require implementing types to provide a static member, which is useful for defining operator contracts or factory patterns. For more information, see [static abstract members in interfaces](../../language-reference/keywords/interface.md#static-abstract-and-virtual-members).
 
-Both features are covered in the advanced topics section. Most everyday interface usage involves the declaring and implementing patterns described earlier in this article.
+Both features are covered in the article on [interfaces](../../language-reference/keywords/interface.md) in the language reference. Most everyday interface usage involves the declaring and implementing patterns described earlier in this article.
 
 ## Interfaces summary
 

@@ -6,7 +6,7 @@ ms.date: 07/01/2020
 ---
 # Choosing between anonymous and tuple types
 
-Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple`2?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple`2?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
+Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple`2?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then, new options have been introduced with language level support, such as <xref:System.ValueTuple`2?displayProperty=nameWithType>. As the names imply, these options provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
 
 ## Usability and functionality
 

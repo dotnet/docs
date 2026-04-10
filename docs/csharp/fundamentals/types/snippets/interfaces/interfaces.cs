@@ -15,7 +15,8 @@ public class Car : IEquatable<Car>
     public string? Year { get; set; }
 
     public bool Equals(Car? car) =>
-        (Make, Model, Year) == (car?.Make, car?.Model, car?.Year);
+        car is not null &&
+        (Make, Model, Year) == (car.Make, car.Model, car.Year);
 }
 // </ImplementEquatable>
 

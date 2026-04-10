@@ -59,7 +59,7 @@ static void MethodReturnExample()
     List<double> temperatures = [72.0, 68.5, 75.3, 69.1, 71.8];
     var stats = ComputeStats(temperatures);
     Console.WriteLine($"Min: {stats.Minimum}, Max: {stats.Maximum}, Avg: {stats.Average:F1}");
-    // Output: Min: 68.5, Max: 75.3, Avg: 71.34
+    // Output: Min: 68.5, Max: 75.3, Avg: 71.3
 }
 
 static void DeconstructionExamples()

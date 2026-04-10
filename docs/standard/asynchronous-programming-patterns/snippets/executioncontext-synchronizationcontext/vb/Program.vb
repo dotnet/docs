@@ -6,9 +6,12 @@ Module Program
 
         SyncContextExample.DoWork()
 
-        Task.Run(Async Function()
-                     Await TaskRunExampleClass.ProcessOnUIThread()
-                 End Function).Wait()
+        ' Install a SynchronizationContext to simulate a UI thread environment
+        Dim uiContext As New SimpleSynchronizationContext()
+        SynchronizationContext.SetSynchronizationContext(uiContext)
+
+        ' Call ProcessOnUIThread with a SynchronizationContext present
+        TaskRunExampleClass.ProcessOnUIThread().Wait()
 
         Thread.Sleep(200)
         Console.WriteLine("Done.")
@@ -48,9 +51,8 @@ Class SyncContextExample
                 If sc IsNot Nothing Then
                     sc.Post(
                         Sub(s)
-                            ' This callback runs on a thread pool thread because
-                            ' SimpleSynchronizationContext.Post queues work there.
-                            Console.WriteLine("Callback ran on a thread pool thread.")
+                            ' This runs on the original context (e.g. UI thread)
+                            Console.WriteLine("Back on the original context.")
                         End Sub, Nothing)
                 Else
                     Console.WriteLine("No SynchronizationContext was captured.")

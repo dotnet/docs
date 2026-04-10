@@ -124,17 +124,17 @@ static class TaskRunExample
 {
     public static async Task ProcessOnUIThread()
     {
-        // Assume this method is called from a UI thread.
+        // This method is called from a thread with a SynchronizationContext.
         // Task.Run offloads work to the thread pool.
         string result = await Task.Run(async () =>
         {
             string data = await DownloadAsync();
-            // Compute runs on the thread pool, not the UI thread,
+            // Compute runs on the thread pool, not the original context,
             // because SynchronizationContext doesn't flow into Task.Run.
             return Compute(data);
         });
 
-        // Back on the captured context, if any.
+        // Back on the original context (the continuation is posted back).
         Console.WriteLine(result);
     }
 

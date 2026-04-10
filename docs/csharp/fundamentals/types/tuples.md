@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# tuples are value types similar to tuples in Python or Swift, but with optional named elements and full deconstruction support. Skim the [deconstruction](#deconstruct-tuples) and [equality](#tuple-equality) sections for C#-specific patterns.
 
-A *tuple* groups multiple values into a single, lightweight structure without requiring you to define a named type. Tuples are value types that you can declare inline, return from methods, and deconstruct into individual variables. Use tuples when you need a quick, temporary grouping of related values. For example, returning multiple results from a method or storing a coordinate pair.
+A *tuple* groups multiple values into a single, lightweight structure without requiring you to define a named type. Tuples are value types that you can declare inline, return from methods, and deconstruct into individual variables. Use tuples when you need a quick, temporary grouping of related values. For example, when you return multiple results from a method or store a coordinate pair.
 
 The following example creates a tuple with named elements and accesses each element by name:
 

@@ -30,7 +30,7 @@ The <xref:System.Collections.Generic> namespace provides type-safe collection cl
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="GenericCollections":::
 
-Generic collections prevent type errors at compile time rather than at runtime. They also avoid boxing for value types, which improves performance.
+Generic collections prevent type errors at runtime because the errors surface at compile time instead. These collections also avoid boxing for value types, which improves performance.
 
 ### Generic methods
 

@@ -57,7 +57,7 @@ A structured set of data, usually of a uniform type. To be compatible with LINQ,
 tuple (anonymous types) \
 A mathematical concept, a tuple is a finite sequence of objects, each of a specific type. A tuple is also known as an ordered list. Tuples and anonymous types are language implementations of this concept, which enable an unnamed type to be declared and an object of that type to be instantiated at the same time.
 
-For more information, see [Tuples (C# Language reference)](../../csharp/language-reference/builtin-types/value-tuples.md), [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types.md) and [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
+For more information, see [Tuples (C# Language reference)](../../csharp/language-reference/builtin-types/value-tuples.md), [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types.md), and [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
 
 type inference (implicit typing) \
 The ability of a compiler to determine the type of a variable in the absence of an explicit type declaration.

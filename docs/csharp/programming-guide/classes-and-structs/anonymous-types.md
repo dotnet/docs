@@ -41,7 +41,7 @@ Anonymous types appear most often in the [`select`](../../language-reference/key
 
 ## Equality
 
-Two anonymous type instances that have the same property names and types in the same order share the same compiler-generated type. The compiler overrides <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> so that equality compares property values rather than reference identity:
+Two anonymous type instances that have the same property names and types in the same order share the same compiler-generated type. The compiler overrides <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*> so that equality compares property values rather than reference identity:
 
 :::code language="csharp" source="./snippets/anonymous-types/csharp/Program.cs" id="Equality":::
 
@@ -58,7 +58,7 @@ Anonymous types have the following characteristics:
 - The compiler generates them as `internal sealed class` types that derive from <xref:System.Object>.
 - All properties are `public` and read-only.
 - Anonymous types support [`with` expressions](../../language-reference/operators/with-expression.md) for nondestructive mutation.
-- The compiler generates value-based <xref:System.Object.Equals%2A>, <xref:System.Object.GetHashCode%2A>, and <xref:System.Object.ToString%2A> overrides.
+- The compiler generates value-based <xref:System.Object.Equals*>, <xref:System.Object.GetHashCode*>, and <xref:System.Object.ToString*> overrides.
 - Anonymous types support [expression trees](../../advanced-topics/expression-trees/index.md), while tuples don't.
 
 ## Limitations
@@ -72,12 +72,12 @@ Anonymous types have several limitations:
 
 ## When to use tuples instead
 
-For most new code, consider using [tuples](../../fundamentals/types/tuples.md#tuples-vs-anonymous-types) instead of anonymous types. Tuples provide better performance as value types, deconstruction support, and more flexible syntax. Anonymous types remain the better choice when you need expression tree support or reference-type semantics. For a detailed comparison, see [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md).
+For most new code, consider using [tuples](../../fundamentals/types/tuples.md#tuples-vs-anonymous-types) instead of anonymous types. As value types, tuples provide better performance. They also provide deconstruction support and more flexible syntax. Anonymous types remain the better choice when you need expression tree support or reference-type semantics. For a detailed comparison, see [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md).
 
 ## See also
 
 - [Object and collection initializers](object-and-collection-initializers.md)
-- [Implicitly-typed local variables](implicitly-typed-local-variables.md)
+- [Implicitly typed local variables](implicitly-typed-local-variables.md)
 - [Tuples and deconstruction](../../fundamentals/types/tuples.md)
 - [LINQ in C#](../../linq/index.md)
 - [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md)

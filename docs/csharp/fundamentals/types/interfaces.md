@@ -20,7 +20,7 @@ The following example declares an interface and a class that implements it:
 
 :::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="ImplementEquatable":::
 
-Any class or struct that implements <xref:System.IEquatable`1> must provide an `Equals` method matching the interface signature. You can count on any `IEquatable<T>` implementation to support equality comparison, regardless of the concrete type. That predictability is the core value of interfaces.
+Any class or struct that implements <xref:System.IEquatable`1> must provide an `Equals` method that matches the interface signature. You can count on any `IEquatable<T>` implementation to support equality comparison, regardless of the concrete type. That predictability is the core value of interfaces.
 
 ## Declare an interface
 
@@ -48,7 +48,7 @@ Explicit implementation is useful when two interfaces declare members with the s
 
 ## Interface inheritance
 
-Interfaces can inherit from one or more other interfaces. A class implementing a derived interface must implement all members from the derived interface and all of its base interfaces:
+Interfaces can inherit from one or more other interfaces. A class that implements a derived interface must implement all members from the derived interface and all of its base interfaces:
 
 :::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="InterfaceInheritance":::
 

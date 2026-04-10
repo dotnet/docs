@@ -342,8 +342,8 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    This code uses two separate mechanisms:
 
-   * <xref:System.CommandLine.Option`1.DefaultValueFactory?displayProperty=nameWithType> supplies `sampleQuotes.txt` as the default when you don't provide `--file`. When you do provide `--file`, the option's built-in parser converts the token to a `FileInfo` directly — `DefaultValueFactory` doesn't run.
-   * <xref:System.CommandLine.Option.Validators?displayProperty=nameWithType> adds a custom validator that runs *after* the value is parsed, whether you supplied a path or the default was used. Without the validator, a missing file would cause an unhandled `FileNotFoundException` with a stack trace. With the validator, just the specified error message is displayed.
+   * <xref:System.CommandLine.Option`1.DefaultValueFactory?displayProperty=nameWithType> supplies `sampleQuotes.txt` as the default when you don't provide `--file`. `DefaultValueFactory` doesn't run when you do provide `--file`.
+   * <xref:System.CommandLine.Option`1.CustomParser?displayProperty=nameWithType> runs when you explicitly provide `--file`. It converts the token to a `FileInfo` and validates that the file exists. Without validation, a missing file would cause an unhandled `FileNotFoundException` with a stack trace. With validation, just the specified error message is displayed.
 
 1. After the code that creates `lightModeOption`, add options and arguments for the `add` and `delete` commands:
 

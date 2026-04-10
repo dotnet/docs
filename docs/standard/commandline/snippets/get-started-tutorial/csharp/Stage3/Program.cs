@@ -11,17 +11,17 @@ class Program
         Option<FileInfo> fileOption = new("--file")
         {
             Description = "An option whose argument is parsed as a FileInfo",
-            Required = true,
-            DefaultValueFactory = _ => new FileInfo("sampleQuotes.txt")
-        };
-        fileOption.Validators.Add(result =>
-        {
-            var file = result.GetValueOrDefault<FileInfo>();
-            if (file is not null && !file.Exists)
+            DefaultValueFactory = _ => new FileInfo("sampleQuotes.txt"),
+            CustomParser = result =>
             {
-                result.AddError("File does not exist");
+                var file = new FileInfo(result.Tokens.Single().Value);
+                if (!file.Exists)
+                {
+                    result.AddError("File does not exist");
+                }
+                return file;
             }
-        });
+        };
         // </fileoption>
 
         Option<int> delayOption = new("--delay")

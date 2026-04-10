@@ -19,12 +19,7 @@ Prepare your project before starting an upgrade to get the best results.
 
 ### Verify that your solution builds and tests pass
 
-The agent validates every change it makes by running builds and tests. If your solution is already broken before you start, the agent can't distinguish pre-existing failures from problems it introduced.
-
-```dotnetcli
-dotnet build YourSolution.sln
-dotnet test YourSolution.sln
-```
+The agent validates changes it makes by running builds and tests. If your solution is already broken before you start, the agent can't distinguish pre-existing failures from problems it introduced.
 
 Document any known test failures in `scenario-instructions.md` so the agent knows to ignore them.
 
@@ -46,7 +41,7 @@ Consider initializing a local Git repository before starting the upgrade, even i
 - The ability to roll back individual changes with `git revert`.
 - A commit history that tracks upgrade progress step by step.
 - Granular control over which changes to keep or discard.
-- A safety net—your original code stays on the main branch while the agent works on a separate branch.
+- A safety net. Your original code stays on the main branch while the agent works on a separate branch.
 
 ```console
 cd your-project-folder
@@ -60,7 +55,7 @@ git commit -m "Baseline before upgrade"
 The agent relies on tests to validate that its changes don't break behavior. Projects with good test coverage get higher-confidence upgrades.
 
 > [!TIP]
-> You don't need 100% coverage. Focus on the code most likely to be affected by the upgrade—API boundaries, serialization, database access, and authentication.
+> You don't need 100% coverage. Focus on the code most likely to be affected by the upgrade, such as API boundaries, serialization, database access, and authentication.
 
 ### Start small
 
@@ -92,10 +87,10 @@ The agent generates a task plan based on its assessment. Review the plan before 
 - Are there dependencies the agent might not know about?
 - Should any projects be excluded or handled differently?
 
-Ask the agent to reorder tasks, skip projects, or change its approach. You know your codebase better than the agent—use that knowledge. Edit the `plan.md` file directly to adjust task order, add tasks, or remove tasks.
+Ask the agent to reorder tasks, skip projects, or change its approach. You know your codebase better than the agent, so use that knowledge. Edit the `plan.md` file directly to adjust task order, add tasks, or remove tasks.
 
 > [!CAUTION]
-> Be careful when editing `plan.md` directly. The agent might not fully interpret your changes if they create contradictory instructions—for example, removing a dependency project while keeping the projects that depend on it.
+> Be careful when editing `plan.md` directly. The agent might not fully interpret your changes if they create contradictory instructions. For example, removing a dependency project while keeping the projects that depend on it.
 
 ### Give feedback immediately
 
@@ -118,11 +113,11 @@ For private NuGet feeds, authenticate before starting the upgrade (for example, 
 
 ### Custom MSBuild targets and imports
 
-Complex build customizations—custom `.targets` files, conditional imports, or non-standard build logic—can confuse the assessment and cause unexpected build failures. If your solution has these customizations, mention them in chat or in `scenario-instructions.md` so the agent can account for them.
+Complex build customizations, such as custom `.targets` files, conditional imports, or non-standard build logic, can confuse the assessment and cause unexpected build failures. If your solution has these customizations, mention them in chat or in `scenario-instructions.md` so the agent can account for them.
 
 ### Session timeouts
 
-Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so the agent can pick up where it left off. When you start a new session, mention where you were: _"Continue the .NET 10 upgrade—I was in the middle of the Data.Access project."_
+Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so the agent can pick up where it left off. When you start a new session, mention where you were: _"Continue the .NET 10 upgrade. I was in the middle of the Data.Access project."_
 
 ## Collaborate effectively
 
@@ -143,16 +138,16 @@ The more specific you are, the better the agent performs:
 Tell the agent about real-world constraints upfront:
 
 - _"We can't break backward compatibility for the public API."_
-- _"We have a release deadline in two weeks—prioritize the web projects."_
+- _"We have a release deadline in two weeks, so prioritize the web projects."_
 - _"The legacy reporting module should be excluded from this upgrade."_
 
 ### Explain your architecture
 
 The agent analyzes code structure, but it doesn't know your team's mental model. Help the agent understand:
 
-- _"Project A is our shared library—B, C, and D all depend on it."_
+- _"Project A is our shared library. B, C, and D all depend on it."_
 - _"The WebApi project is our public-facing API; Internal.Api is for internal services only."_
-- _"The Models project is auto-generated from our OpenAPI spec—don't modify it directly."_
+- _"The Models project is auto-generated from our OpenAPI spec. Don't modify it directly."_
 
 ### Ask why
 
@@ -176,7 +171,7 @@ Use these strategies when the upgrade doesn't go as expected.
 
 Tell the agent: _"The build is failing after the last task."_ The agent analyzes the error and attempts to fix it. If the agent can't resolve the issue:
 
-1. Provide a manual fix and tell the agent what you did—the agent learns from it.
+1. Provide a manual fix and tell the agent what you did. The agent learns from your fix.
 1. Revert the commit (`git revert` or reset to the previous commit) and ask the agent to try a different approach.
 1. Skip the problematic task and come back to it later.
 
@@ -184,7 +179,7 @@ Tell the agent: _"The build is failing after the last task."_ The agent analyzes
 
 If the agent's overall approach doesn't work for your codebase, restart the planning phase:
 
-- _"Let's redo the plan—I want to upgrade the web projects first instead of bottom-up."_
+- _"Let's redo the plan. I want to upgrade the web projects first instead of bottom-up."_
 - _"Change the strategy to upgrade all shared libraries in one batch."_
 
 ### Agent stuck in a loop
@@ -204,16 +199,16 @@ Your original code is untouched. If you're working without source control, resto
 
 ## Security and privacy
 
-- **Code snippets** — GitHub Copilot processes these according to [GitHub's Copilot privacy policy](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-chat-in-your-ide) and doesn't retain them beyond the immediate session.
+- **Code snippets**: GitHub Copilot processes these according to [GitHub's Copilot privacy policy](https://docs.github.com/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-chat-in-your-ide) and doesn't retain them beyond the immediate session.
 - **Workflow files** (`scenario-instructions.md`, custom tasks, preferences) are stored locally in your repository under `.github/upgrades/`. GitHub doesn't transmit these files to external services.
-- **The `.github/upgrades/` folder** is part of your repository. Commit the folder—it contains your upgrade progress and state. The agent needs the folder to resume work across sessions. You can remove it after the upgrade is complete.
+- **The `.github/upgrades/` folder** is part of your repository. Commit the folder because it contains your upgrade progress and state. The agent needs the folder to resume work across sessions. You can remove it after the upgrade is complete.
 - **Telemetry** can be disabled through your IDE's telemetry settings.
 
 ## Performance tips
 
-- **Close unnecessary files and tabs** — The agent analyzes the active workspace, and fewer open files means less noise.
-- **Upgrade in stages for very large solutions** — Rather than upgrading all projects at once, batch them. For example, upgrade all libraries first, then all web projects, then tests.
-- **Use build caching** — The agent runs many incremental builds during validation. Warm build caches make validation significantly faster. Avoid cleaning the build output between tasks.
+- **Close unnecessary files and tabs**: The agent analyzes the active workspace, and fewer open files means less noise.
+- **Upgrade in stages for very large solutions**: Rather than upgrading all projects at once, batch them. For example, upgrade all libraries first, then all web projects, then tests.
+- **Use build caching**: The agent runs many incremental builds during validation. Warm build caches make validation significantly faster. Avoid cleaning the build output between tasks.
 
 ## Related content
 

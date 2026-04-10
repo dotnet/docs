@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # GitHub Copilot modernization concepts
 
-GitHub Copilot modernization uses a structured approach to upgrade and migrate .NET projects. Understanding how the agent works—its scenarios, skills, tasks, and workflow—helps you collaborate with the agent effectively and get the best results.
+GitHub Copilot modernization uses a structured approach to upgrade and migrate .NET projects. Understanding how the agent works, including its scenarios, skills, tasks, and workflow, helps you collaborate with the agent effectively and get the best results.
 
 > [!TIP]
 > Think of the agent as a skilled colleague who understands .NET deeply, follows a structured plan, and adapts to your feedback. The more context you give, the better the agent performs.
@@ -20,11 +20,11 @@ GitHub Copilot modernization uses a structured approach to upgrade and migrate .
 
 The agent excels at collaboration, not automation in a vacuum:
 
-- **Deep .NET knowledge** — The agent understands project files, NuGet dependencies, breaking changes, and migration patterns across dozens of .NET technologies for both C# and Visual Basic projects.
-- **Structured workflow** — Every upgrade goes through assessment, planning, and execution. No random changes, no surprises.
-- **Learns your preferences** — When you say "always use explicit types instead of `var`," the agent writes that preference to `scenario-instructions.md` and remembers it across sessions.
-- **Correctable mid-flight** — Made a wrong call? Tell the agent. It adapts and applies the correction going forward.
-- **Explains its reasoning** — Ask _"why did you choose that approach?"_ and the agent walks you through the decision.
+- **Deep .NET knowledge:** The agent understands project files, NuGet dependencies, breaking changes, and migration patterns across dozens of .NET technologies for both C# and Visual Basic projects.
+- **Structured workflow:** Every upgrade goes through assessment, planning, and execution. No random changes, no surprises.
+- **Learns your preferences:** When you say "always use explicit types instead of `var`," the agent writes that preference to `scenario-instructions.md` and remembers it across sessions.
+- **Correctable mid-flight:** Made a wrong call? Tell the agent. It adapts and applies the correction going forward.
+- **Explains its reasoning:** Ask _"why did you choose that approach?"_ and the agent walks you through the decision.
 
 ## Scenarios
 
@@ -53,10 +53,10 @@ Every scenario follows the same lifecycle: pre-initialization, assessment, and t
 
 The agent gathers everything it needs before starting work:
 
-- **Target framework** — What version you're upgrading to.
-- **Git strategy** — The agent suggests branching and you control the details: branch name, whether to use per-task branches, and commit timing.
-- **Flow mode** — Automatic (agent drives) or Guided (you approve each phase).
-- **Scenario-specific parameters** — Depending on the scenario, the agent might ask more questions.
+- **Target framework:** The version you're upgrading to.
+- **Git strategy:** The agent suggests branching and you control the details: branch name, whether to use per-task branches, and commit timing.
+- **Flow mode:** Automatic (agent drives) or Guided (you approve each phase).
+- **Scenario-specific parameters:** Depending on the scenario, the agent might ask more questions.
 
 The agent initializes the scenario workspace at `.github/upgrades/{scenarioId}/`.
 
@@ -78,11 +78,11 @@ Based on the assessment, the agent evaluates your solution and identifies which 
 
 Options might include:
 
-- **Upgrade strategy** — Bottom-up, top-down, or all-at-once.
-- **Project migration approach** — In-place rewrite or side-by-side for web applications; in-place or multi-targeting for libraries.
-- **Technology modernization** — Choices for Entity Framework migration, dependency injection, logging, and configuration.
-- **Package management** — Whether and when to adopt Central Package Management.
-- **Compatibility handling** — How to address unsupported APIs and packages.
+- **Upgrade strategy:** Bottom-up, top-down, or all-at-once.
+- **Project migration approach:** In-place rewrite or side-by-side for web applications; in-place or multi-targeting for libraries.
+- **Technology modernization:** Choices for Entity Framework migration, dependency injection, logging, and configuration.
+- **Package management:** Whether and when to adopt Central Package Management.
+- **Compatibility handling:** How to address unsupported APIs and packages.
 
 The agent saves confirmed decisions to `upgrade-options.md`.
 
@@ -113,15 +113,15 @@ During the upgrade options confirmation, the agent evaluates your solution and r
 
 ## Skills
 
-_Skills_ are focused modernization capabilities—smaller, targeted upgrade operations. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step migration instructions. You can also invoke a skill directly: _"migrate the WCF services in my project to CoreWCF."_
+_Skills_ are smaller, targeted modernization capabilities. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step migration instructions. You can also invoke a skill directly during an upgrade: _"migrate the WCF services in my project to CoreWCF."_
 
 The agent ships with 30+ built-in skills organized by domain:
 
-- **Data access** — EF6 to EF Core (code-first and EDMX), LINQ to SQL, and SqlClient migration
-- **Web/ASP.NET** — Identity, Global.asax, OWIN, MVC routing/filters/bundling, and WCF to CoreWCF
-- **Serialization** — Newtonsoft.Json to System.Text.Json
-- **Cloud** — Azure Functions in-process to isolated worker model
-- **Libraries** — ADAL to MSAL, SignalR, PowerShell SDK, and more
+- **Data access:** EF6 to EF Core (code-first and EDMX), LINQ to SQL, and SqlClient migration
+- **Web/ASP.NET:** Identity, Global.asax, OWIN, MVC routing/filters/bundling, and WCF to CoreWCF
+- **Serialization:** Newtonsoft.Json to System.Text.Json
+- **Cloud:** Azure Functions in-process to isolated worker model
+- **Libraries:** ADAL to MSAL, SignalR, PowerShell SDK, and more
 
 Skills load automatically based on what the agent detects in your codebase. You don't need to manage skill loading—just describe what you need.
 
@@ -174,7 +174,7 @@ Close the chat, close your IDE, or come back the next day. The agent picks up wh
 
 ### Cross-IDE continuity
 
-Because state lives in Git, you can switch between VS Code and Visual Studio mid-upgrade. The `.github/upgrades/` folder is the shared state that both IDEs understand.
+Because state lives in Git, you can switch between VS Code, Visual Studio, and Copilot CLI mid-upgrade. The `.github/upgrades/` folder is the shared state that both IDEs understand.
 
 > [!TIP]
 > Commit the `.github/upgrades/` folder to your branch. Push it to a remote repository to let team members view progress or to continue the upgrade on a different machine.

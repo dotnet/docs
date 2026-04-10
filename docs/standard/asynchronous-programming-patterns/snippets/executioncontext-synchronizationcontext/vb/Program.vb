@@ -48,8 +48,9 @@ Class SyncContextExample
                 If sc IsNot Nothing Then
                     sc.Post(
                         Sub(s)
-                            ' This runs on the original context (e.g. UI thread)
-                            Console.WriteLine("Back on the original context.")
+                            ' This callback runs on a thread pool thread because
+                            ' SimpleSynchronizationContext.Post queues work there.
+                            Console.WriteLine("Callback ran on a thread pool thread.")
                         End Sub, Nothing)
                 Else
                     Console.WriteLine("No SynchronizationContext was captured.")
@@ -75,17 +76,17 @@ End Class
 ' <TaskRunExample>
 Class TaskRunExampleClass
     Public Shared Async Function ProcessOnUIThread() As Task
-        ' Assume this method is called from a UI thread.
-        ' Task.Run offloads work to the thread pool.
+        ' If a SynchronizationContext is present when this method starts,
+        ' the outer await captures it. Task.Run still offloads work to the thread pool.
         Dim result As String = Await Task.Run(
             Async Function()
                 Dim data As String = Await DownloadAsync()
-                ' Compute runs on the thread pool, not the UI thread,
+                ' Compute runs on the thread pool, not the caller's context,
                 ' because SynchronizationContext doesn't flow into Task.Run.
                 Return Compute(data)
             End Function)
 
-        ' Back on the UI thread (captured by the outer await).
+        ' Resume on the captured context, if one was available.
         Console.WriteLine(result)
     End Function
 

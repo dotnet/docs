@@ -100,26 +100,21 @@ static class SyncContextExample
 // Minimal SynchronizationContext for demo purposes
 sealed class DemoSynchronizationContext : SynchronizationContext
 {
-    private readonly Queue<(SendOrPostCallback, object?)> _queue = new();
+    private readonly BlockingCollection<(SendOrPostCallback, object?)> _queue = new();
 
     public override void Post(SendOrPostCallback d, object? state)
     {
-        lock (_queue)
-        {
-            _queue.Enqueue((d, state));
-        }
+        _queue.Add((d, state));
     }
 
     public void ProcessQueue()
     {
-        Thread.Sleep(150); // Allow time for ThreadPool work to complete
-        lock (_queue)
+        var (callback, state) = _queue.Take();
+        callback(state);
+
+        while (_queue.TryTake(out var workItem))
         {
-            while (_queue.Count > 0)
-            {
-                var (callback, state) = _queue.Dequeue();
-                callback(state);
-            }
+            workItem.Item1(workItem.Item2);
         }
     }
 }
@@ -139,7 +134,7 @@ static class TaskRunExample
             return Compute(data);
         });
 
-        // Back on the UI thread (captured by the outer await).
+        // Back on the captured context, if any.
         Console.WriteLine(result);
     }
 

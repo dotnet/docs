@@ -17,20 +17,18 @@ class Program
                 if (result.Tokens.Count == 0)
                 {
                     return new FileInfo("sampleQuotes.txt");
-
                 }
-                string filePath = result.Tokens.Single().Value;
-                if (!File.Exists(filePath))
-                {
-                    result.AddError("File does not exist");
-                    return null;
-                }
-                else
-                {
-                    return new FileInfo(filePath);
-                }
+                return new FileInfo(result.Tokens.Single().Value);
             }
         };
+        fileOption.Validators.Add(result =>
+        {
+            var file = result.GetValueOrDefault<FileInfo>();
+            if (file is not null && !file.Exists)
+            {
+                result.AddError("File does not exist");
+            }
+        });
         // </fileoption>
 
         Option<int> delayOption = new("--delay")

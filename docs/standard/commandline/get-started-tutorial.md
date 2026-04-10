@@ -340,11 +340,10 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
 
-   This code uses <xref:System.CommandLine.Parsing.ArgumentResult> to provide custom parsing, validation, and error handling.
+   This code uses two separate mechanisms:
 
-   Without this code, missing files are reported with an exception and stack trace. With this code just the specified error message is displayed.
-
-   This code also specifies a default value, which is why it sets <xref:System.CommandLine.Option`1.DefaultValueFactory?displayProperty=nameWithType> to custom parsing method.
+   * <xref:System.CommandLine.Option`1.DefaultValueFactory?displayProperty=nameWithType> provides the default `sampleQuotes.txt` value when the user doesn't provide `--file`, and converts the provided token to a `FileInfo` when they do.
+   * <xref:System.CommandLine.Option`1.Validators?displayProperty=nameWithType> adds a custom validator that runs *after* the value is parsed, regardless of whether the user provided a value or the default was used. Without the validator, a missing file would cause an unhandled `FileNotFoundException` with a stack trace. With the validator, just the specified error message is displayed.
 
 1. After the code that creates `lightModeOption`, add options and arguments for the `add` and `delete` commands:
 

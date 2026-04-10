@@ -11,9 +11,9 @@ ai-usage: ai-assisted
 
 # Upgrade a .NET app with GitHub Copilot modernization
 
-GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article guides you through upgrading your .NET applications with a structured three-stage workflow: assessment, planning, and execution.
+GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article walks you through upgrading your .NET applications with a structured three-stage workflow: assessment, planning, and execution.
 
-The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. It supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
+The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. The agent supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
 
 ## Prerequisites
 
@@ -25,11 +25,11 @@ To start an upgrade, use the `modernize-dotnet` agent in Copilot:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-When you start the upgrade, Copilot collects pre-initialization information: the target framework version, Git branching strategy, and workflow mode (automatic or guided by you). Copilot then assesses your project and runs a three-stage workflow, writing Markdown files for each stage under `.github/upgrades/{scenarioId}` in your repository. The `{scenarioId}` is a unique identifier for the upgrade type, such as `dotnet-version-upgrade`. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+When you start the upgrade, Copilot collects pre-initialization information: the target framework version, Git branching strategy, and workflow mode (automatic or guided by you). Copilot then assesses your project and runs a three-stage workflow, writing Markdown files for each stage under `.github/upgrades/{scenarioId}` in your repository. The `{scenarioId}` value is a unique identifier for the upgrade type, such as `dotnet-version-upgrade`. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
 The three stages are:
 
-- **Assessment stage.** Copilot examines your project, presents strategy decisions for your review, and saves confirmed decisions. You can customize the assessment before proceeding.
+- **Assessment stage.** Copilot examines your project, presents strategy decisions for your review, and saves confirmed decisions. Customize the assessment before proceeding.
 - **Planning stage.** Copilot creates a detailed specification with the steps to reach the target upgrade.
 - **Execution stage.** Copilot breaks the plan into sequential tasks and performs the upgrade.
 
@@ -37,7 +37,7 @@ The three stages are:
 
 The assessment examines your project structure, dependencies, and code patterns to identify what needs to change. Copilot automatically starts the assessment and generates an `assessment.md` file in `.github/upgrades/{scenarioId}`.
 
-The assessment lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 10.0:
+The assessment lists breaking changes, API compatibility problems, deprecated patterns, and upgrade scope. The following example shows part of an assessment for an ASP.NET Core project upgrading from .NET 6.0 to .NET 10.0:
 
 ```markdown
 # Projects and dependencies analysis
@@ -72,7 +72,7 @@ To review and customize the assessment:
 
 1. Open the `assessment.md` file in `.github/upgrades/{scenarioId}`.
 1. Review the identified breaking changes and compatibility problems.
-1. Add any project-specific context or concerns to the document.
+1. Add project-specific context or concerns to the document.
 1. Tell Copilot to _proceed to the planning stage._
 
 ## Review upgrade options
@@ -87,11 +87,11 @@ The options typically include:
 - **Package management.** Whether to adopt Central Package Management.
 - **Compatibility handling.** How to address unsupported APIs, incompatible packages, and platform-specific functionality.
 
-Review the proposed options and confirm or override them. _Tell Copilot to proceed to the planning stage._
+Review the proposed options and confirm or override them. Tell Copilot to _proceed to the planning stage._
 
 ## Start planning and review the plan
 
-The planning stage converts the assessment and your confirmed upgrade options into a detailed specification that explains how to resolve every issue.When you tell Copilot to proceed to planning, it generates a `plan.md` file in `.github/upgrades/{scenarioId}`. The agent also creates a `scenario-instructions.md` file that stores preferences, decisions, and custom instructions for the upgrade.
+The planning stage converts the assessment and your confirmed upgrade options into a detailed specification that explains how to resolve every issue. When you tell Copilot to proceed to planning, it generates a `plan.md` file in `.github/upgrades/{scenarioId}`. The agent also creates a `scenario-instructions.md` file that stores preferences, decisions, and custom instructions for the upgrade.
 
 The plan documents upgrade strategies, refactoring approaches, dependency upgrade paths, and risk mitigations. The following example shows part of a plan for an ASP.NET Core project:
 
@@ -132,18 +132,18 @@ To review and customize the plan:
 
 1. Open the `plan.md` file in `.github/upgrades/{scenarioId}`.
 1. Review the upgrade strategies and dependency updates.
-1. Edit the plan to adjust upgrade steps or add context if needed.
+1. Edit the plan to adjust upgrade steps or add context as needed.
 
    > [!CAUTION]
-   > The plan depends on project interdependencies. The upgrade doesn't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
+   > The plan depends on project interdependencies. The upgrade doesn't succeed if you modify the plan in a way that prevents the migration path from completing. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
 
-1. _Tell Copilot to move to the execution stage._
+1. Tell Copilot to _move to the execution stage._
 
 ## Start execution and run the upgrade
 
 The execution stage breaks the plan into sequential, concrete tasks with validation criteria. When you tell Copilot to proceed to execution, it generates a `tasks.md` file in `.github/upgrades/{scenarioId}`.
 
-The task list describes each task and how Copilot validates success. The following example shows the task list for a solution containing ASP.NET Core and WPF projects:
+The task list describes each task and how Copilot validates success. The following example shows a task list for a solution containing ASP.NET Core and WPF projects:
 
 ```markdown
 # MvcMovieNet6 .NET 10 Upgrade Tasks
@@ -194,7 +194,7 @@ This document tracks the execution of the MvcMovieNet6 solution upgrade from .NE
 
 To run the upgrade:
 
-1. _Tell Copilot to start the upgrade._
+1. Tell Copilot to _start the upgrade._
 1. Monitor progress by reviewing the `tasks.md` file as Copilot updates task statuses.
 1. If Copilot encounters a problem it can't resolve, provide the requested help.
 1. Based on your decisions and changes, Copilot adapts its strategy to the remaining tasks and continues the upgrade.

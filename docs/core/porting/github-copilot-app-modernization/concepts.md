@@ -41,7 +41,7 @@ You don't need to memorize scenario names. The agent discovers relevant scenario
 
 ### Scenario persistence
 
-Each active scenario gets its own folder at `.github/upgrades/{scenarioId}/`. This folder contains the plan, task progress, your preferences, and execution logs. The folder is part of your Git repository.
+Each active scenario gets its own folder at `.github/upgrades/{scenarioId}/`. The scenario folder contains the plan, task progress, your preferences, and execution logs. The folder is part of your Git repository.
 
 For a complete list of scenarios, see [Scenarios and skills reference](scenarios-and-skills.md).
 
@@ -68,7 +68,7 @@ The agent then analyzes your codebase:
 - Test coverage
 - Complexity and risk factors
 
-The assessment produces a comprehensive report saved to `assessment.md`.
+The agent saves a comprehensive assessment report to `assessment.md`.
 
 Based on the assessment, the agent evaluates your solution and identifies which upgrade decisions are relevant. It presents sensible defaults and lets you review and override any choice.
 
@@ -94,7 +94,7 @@ The agent creates the task plan based on the assessment and your confirmed optio
 
 ### Stage 3: Execution
 
-The agent works through tasks sequentially. For each task, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how changes are committed, whether per task, per group of tasks, or at the end.
+The agent works through tasks sequentially. For each task, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how the agent commits changes: per task, per group of tasks, or at the end.
 
 ## Upgrade strategies
 
@@ -111,7 +111,7 @@ During the assessment stage, the agent evaluates your solution and recommends on
 
 ## Skills
 
-_Skills_ are smaller, targeted modernization capabilities. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step migration instructions. You can also invoke a skill directly during an upgrade: _"migrate the WCF services in my project to CoreWCF."_
+_Skills_ are smaller, targeted modernization capabilities. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step migration instructions. Invoke a skill directly during an upgrade: _"migrate the WCF services in my project to CoreWCF."_
 
 The agent ships with 30+ built-in skills organized by domain:
 
@@ -168,14 +168,14 @@ Close the chat, close your IDE, or come back the next day. The agent picks up wh
 1. On your next interaction, the agent checks the current state of your workspace automatically.
 1. The agent detects the existing scenario and shows current progress, such as "3 of 8 tasks completed."
 1. The agent detects stale tasks (stuck in progress from a previous interrupted session) and offers to resume or restart them.
-1. Your preferences in `scenario-instructions.md` are reloaded.
+1. The agent reloads your preferences from `scenario-instructions.md`.
 
 ### Cross-IDE continuity
 
 Because state lives in Git, you can switch between VS Code, Visual Studio, and Copilot CLI mid-upgrade. The `.github/upgrades/` folder is the shared state that both IDEs understand.
 
 > [!TIP]
-> Commit the `.github/upgrades/` folder to your branch. Push it to a remote repository to let team members view progress or to continue the upgrade on a different machine.
+> Commit the `.github/upgrades/` folder to your branch. Push the branch to a remote repository to let team members view progress or continue the upgrade on a different machine.
 
 ## Flow modes
 

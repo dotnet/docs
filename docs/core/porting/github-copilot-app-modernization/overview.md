@@ -132,15 +132,15 @@ GitHub Copilot modernization for .NET offers predefined tasks that capture indus
 
 - **Migrate to Azure Communication Service email**
 
-  Replace direct SMTP email sending by using Azure Communication Service for scalable, secure email delivery.
+  Replace direct SMTP email sending with Azure Communication Service for scalable, secure email delivery.
 
 - **Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka**
 
-  Transition from local or on-premises Kafka to managed event streaming by using Confluent Cloud or Azure Event Hubs.
+  Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hubs.
 
 - **Migrate to OpenTelemetry on Azure**
 
-  Transition from local logging frameworks like log4net, serilog, and Windows event log to OpenTelemetry on Azure.
+  Transition from local logging frameworks such as log4net, Serilog, and Windows event log to OpenTelemetry on Azure.
 
 - **Migrate to Azure Cache for Redis by using Managed Identity**
 
@@ -209,7 +209,7 @@ Because all state lives in this folder, you can close your IDE, switch between s
 
 After each stage completes, review and modify the generated files as needed, and then tell Copilot to continue to the next stage.
 
-When you reach the **Execution** stage, tell Copilot to start the upgrade.If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem comes up again.
+When you reach the **Execution** stage, tell Copilot to start the upgrade. If Copilot runs into a problem, it tries to identify the cause and apply a fix. If Copilot can't correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them if the problem comes up again.
 
 ### Upgrade results
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 GitHub Copilot modernization isn't a "click a button and walk away" tool. It's an interactive collaborator that asks questions, proposes strategies, adapts to your feedback, and learns from your preferences over time.
 
-The most important thing you can do to get good results: give the agent context. The more the agent knows about your goals, constraints, and preferences, the better the agent performs.
+To get the best results, give the agent context. The more the agent knows about your goals, constraints, and preferences, the better the agent performs.
 
 ```text
 ❌ Vague — the agent has to guess
@@ -36,7 +36,7 @@ public API surface."
 
 ### What to say
 
-Natural language works. Here are some ways to start:
+Natural language works. Try these examples:
 
 | What you want | What to say |
 |---|---|
@@ -59,7 +59,7 @@ The agent supports two flow modes that control how much the agent pauses for you
 
 ### Automatic mode
 
-In automatic mode, the agent works through the stages (assessment, planning, execution) without pausing for approval at each boundary. The agent still stops at genuine blockers or when a decision only you can make is needed.
+In automatic mode, the agent works through the stages (assessment, planning, execution) without pausing for approval at each boundary. The agent still stops at genuine blockers or when it needs a decision only you can make.
 
 Best for experienced users, straightforward upgrades, and small solutions.
 
@@ -84,11 +84,11 @@ Switch freely between modes at any time:
 | Automatic mode | _"Continue"_ or _"Go ahead"_ |
 
 > [!TIP]
-> Start with guided mode for your first upgrade. It's the best way to learn how the agent thinks and what decisions it makes. Switch to automatic mode once you're comfortable.
+> Start with guided mode for your first upgrade. Guided mode is the best way to learn how the agent thinks and what decisions it makes. Switch to automatic mode once you're comfortable.
 
 ## Teach the agent
 
-The agent learns from you. The agent saves your corrections, preferences, and instructions to `scenario-instructions.md` in the upgrade state folder. The preferences persist across sessions.
+The agent learns from you. The agent saves your corrections, preferences, and instructions to `scenario-instructions.md` in the upgrade state folder. These preferences persist across sessions.
 
 ### Correct mistakes
 
@@ -134,7 +134,7 @@ The `scenario-instructions.md` file is organized into clear sections:
 | **Custom Instructions per Task** | Task-specific overrides | _"Skip tests for task 3.1"_ |
 
 > [!TIP]
-> You can also edit `scenario-instructions.md` directly. It's a Markdown file in `.github/upgrades/{scenarioId}/`. The agent reads the file at the start of every interaction.
+> Also edit `scenario-instructions.md` directly. It's a Markdown file in `.github/upgrades/{scenarioId}/`. The agent reads the file at the start of every interaction.
 
 ## Make mid-session corrections
 
@@ -178,7 +178,7 @@ Agent: "The API controllers depend on the data layer interfaces. By migrating
 
 ## Review the agent's work
 
-The agent provides multiple ways to review what it did.
+The agent provides multiple ways to review its work.
 
 ### Source control
 
@@ -203,7 +203,7 @@ The agent maintains several files in `.github/upgrades/{scenarioId}/` that give 
 
 ## Resume interrupted work
 
-Close the chat or shut down your IDE. The agent is designed for exactly this situation.
+Close the chat or shut down your IDE. The agent handles this situation seamlessly.
 
 The agent stores all state in `.github/upgrades/` inside your repository. When you start a new conversation, the agent checks the current state and immediately knows:
 

@@ -36,12 +36,12 @@ git status
 
 The agent also works with folders that aren't under source control. If your project isn't in a Git repository, the agent skips branch and commit operations. If so, back up your project folder before starting so you can restore it if needed.
 
-Consider initializing a local Git repository before starting the upgrade, even if you don't push to a cloud provider. A local Git repository gives you:
+Consider initializing a local Git repository before starting the upgrade, even if you don't push to a cloud provider. A local Git repository lets you:
 
-- The ability to roll back individual changes with `git revert`.
-- A commit history that tracks upgrade progress step by step.
-- Granular control over which changes to keep or discard.
-- A safety net. Your original code stays on the main branch while the agent works on a separate branch.
+- Roll back individual changes with `git revert`.
+- Track upgrade progress step by step in the commit history.
+- Control which changes to keep or discard.
+- Keep your original code safe on the main branch while the agent works on a separate branch.
 
 ```console
 cd your-project-folder
@@ -55,7 +55,7 @@ git commit -m "Baseline before upgrade"
 The agent relies on tests to validate that its changes don't break behavior. Projects with good test coverage get higher-confidence upgrades.
 
 > [!TIP]
-> You don't need 100% coverage. Focus on the code most likely to be affected by the upgrade, such as API boundaries, serialization, database access, and authentication.
+> You don't need 100% coverage. Focus on code the upgrade is most likely to change, such as API boundaries, serialization, database access, and authentication.
 
 ### Start small
 
@@ -105,7 +105,7 @@ Watch for these common issues that can slow down or complicate an upgrade.
 
 ### Large solutions with 50+ projects
 
-The agent works project-by-project, so large solutions take time. Be patient and monitor progress. Consider starting with one representative project end-to-end before committing to the full solution. Doing so surfaces systemic issues early.
+The agent works project-by-project, so large solutions take time. Be patient and monitor progress. Consider starting with one representative project end-to-end before committing to the full solution. A single-project pilot surfaces systemic issues early.
 
 ### Private NuGet feeds
 
@@ -117,7 +117,7 @@ Complex build customizations, such as custom `.targets` files, conditional impor
 
 ### Session timeouts
 
-Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so the agent can pick up where it left off. When you start a new session, mention where you were: _"Continue the .NET 10 upgrade. I was in the middle of the Data.Access project."_
+Long-running upgrades might span multiple sessions. The agent tracks its progress in workflow files (under `.github/upgrades/`), so it can pick up where it left off. When you start a new session, mention where you were: _"Continue the .NET 10 upgrade. I was in the middle of the Data.Access project."_
 
 ## Collaborate effectively
 
@@ -200,9 +200,9 @@ Your original code is untouched. If you're working without source control, resto
 ## Security and privacy
 
 - **Code snippets**: GitHub Copilot processes these according to [GitHub's Copilot privacy policy](https://docs.github.com/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-chat-in-your-ide) and doesn't retain them beyond the immediate session.
-- **Workflow files** (`scenario-instructions.md`, custom tasks, preferences) are stored locally in your repository under `.github/upgrades/`. GitHub doesn't transmit these files to external services.
+- **Workflow files** (`scenario-instructions.md`, custom tasks, preferences) stay in your repository under `.github/upgrades/`. GitHub doesn't transmit these files to external services.
 - **The `.github/upgrades/` folder** is part of your repository. Commit the folder because it contains your upgrade progress and state. The agent needs the folder to resume work across sessions. You can remove it after the upgrade is complete.
-- **Telemetry** can be disabled through your IDE's telemetry settings.
+- **Telemetry**: Disable through your IDE's telemetry settings.
 
 ## Performance tips
 

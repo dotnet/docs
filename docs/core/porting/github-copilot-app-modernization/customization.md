@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Customize GitHub Copilot modernization
 
-GitHub Copilot modernization is designed to be extensible. Whether you need to encode your team's migration patterns, enforce coding standards during an upgrade, or define entirely new upgrade workflows, the agent provides multiple customization points.
+GitHub Copilot modernization is extensible. The agent provides multiple customization points to encode your team's migration patterns, enforce coding standards during upgrades, and define new upgrade workflows.
 
 ## Customization points overview
 
@@ -43,7 +43,7 @@ Customize the agent's behavior in real time through natural conversation. The ag
 
 ## Edit scenario artifacts
 
-When the agent runs an upgrade, it creates a workspace in `.github/upgrades/{scenarioId}/`. This folder contains editable artifacts that directly control the agent's behavior.
+When the agent runs an upgrade, it creates a workspace in `.github/upgrades/{scenarioId}/`. The upgrade folder contains editable artifacts that directly control the agent's behavior.
 
 ### scenario-instructions.md
 
@@ -97,7 +97,7 @@ Each task in `tasks/{taskId}/task.md` contains the task specification and workin
 - Provide code examples for the desired outcome.
 
 > [!IMPORTANT]
-> The agent's tools manage `tasks.md` as a read-only dashboard. Don't edit `tasks.md` directly. The agent overwrites your changes. Edit `scenario-instructions.md` or individual `task.md` files instead.
+> The agent's tools manage `tasks.md` as a read-only dashboard. Don't edit `tasks.md` directly. The agent overwrites any manual changes. Edit `scenario-instructions.md` or individual `task.md` files instead.
 
 ## Create custom skills
 
@@ -112,7 +112,7 @@ Skills are the primary extension point for the agent. A skill is a Markdown file
 | `%UserProfile%/.copilot/skills/my-skill.md` | User profile (personal, all repos) | Personal preferences and patterns |
 
 > [!TIP]
-> Repository-level skills (`.github/skills/`) are the most common choice. They travel with the code and are shared across the team.
+> Repository-level skills (`.github/skills/`) are the most common choice. They travel with the code, and the entire team can use them.
 
 ### Skill file structure
 
@@ -194,7 +194,7 @@ equivalents, updating configuration, and verifying behavior.
 - **Include error handling:** Anticipate common failure modes, such as missing packages, build failures, or broken tests.
 - **Keep skills focused:** One skill per migration or task type. A skill for "migrating FooBar v2 to v3" is better than "migrating all internal libraries."
 - **Name with a gerund verb:** Use `migrating-foobar-v2-to-v3`, not `foobar-migration` or `foobar-v3`.
-- **Use `lazy` discovery:** Most custom skills should use `lazy` discovery to avoid bloating the agent's context window.
+- **Use `lazy` discovery:** Use `lazy` discovery for most custom skills to avoid bloating the agent's context window.
 
 ## Create custom scenarios
 
@@ -258,7 +258,7 @@ For each service contract:
 Place scenario files in `.github/skills/` or `.github/upgrades/skills/` for the agent to discover them.
 
 > [!TIP]
-> The `scenarioTraitsSet` field defines traits that the agent uses to match your scenario against the solution's characteristics. The matching helps the agent suggest your scenario when appropriate.
+> The `scenarioTraitsSet` field defines traits that the agent uses to match your scenario against the solution's characteristics. These traits help the agent suggest your scenario when appropriate.
 
 ## Source control and branching
 
@@ -267,7 +267,7 @@ The agent offers to work on a Git branch, but you have full control over the str
 - **Branch naming:** Tell the agent what branch name to use, or let the agent suggest one.
 - **Per-task branches:** Request a separate branch per task for granular review.
 - **Commit timing:** Choose when the agent commits: after every completed task (default), only at the end of the full upgrade, or on demand.
-- **No source control:** The agent also works with non-Git folders. The agent suggests backing up your project first.
+- **No source control:** The agent also works with non-Git folders but recommends backing up your project first.
 
 Example chat instructions:
 
@@ -294,7 +294,7 @@ When the agent discovers multiple skills, it resolves them using a priority syst
 The agent collects skills from all sources. When skills have overlapping scope, higher-priority sources take precedence. The `discovery` field controls when the skill loads. `lazy` means on demand when relevant, and `preload` means always available.
 
 > [!TIP]
-> You don't need to replace a built-in skill to change behavior. A repository skill with a higher priority can supplement the built-in skill, adding your team's specific conventions on top of the baseline behavior.
+> You don't need to replace a built-in skill to change behavior. A higher-priority repository skill supplements the built-in skill, adding your team's specific conventions on top of the baseline behavior.
 
 ## Related content
 

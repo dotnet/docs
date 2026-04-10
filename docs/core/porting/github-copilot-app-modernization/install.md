@@ -12,13 +12,13 @@ zone_pivot_groups: copilot-modernization-install
 
 # Install GitHub Copilot modernization
 
-GitHub Copilot modernization is available across multiple development environments. Choose your preferred environment to install and set up GitHub Copilot modernization.
+GitHub Copilot modernization works across multiple development environments. Choose your preferred environment to install and set up GitHub Copilot modernization.
 
 ::: zone pivot="visualstudio"
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - Windows operating system.
 - [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+).
@@ -42,7 +42,7 @@ Visual Studio includes GitHub Copilot modernization, so you don't need to instal
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - Visual Studio Code.
 - GitHub Copilot extension installed.
@@ -67,7 +67,7 @@ The extension automatically acquires the .NET SDK if it's missing, registers too
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - GitHub Copilot CLI installed.
 - GitHub Copilot subscription (paid or free).
@@ -100,7 +100,7 @@ Run `/agent` to confirm that `modernize-dotnet` appears in the agent list.
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - GitHub Copilot Enterprise or Business subscription with coding agents enabled.
 - Repository admin access.

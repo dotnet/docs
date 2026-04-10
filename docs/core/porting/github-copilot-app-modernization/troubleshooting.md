@@ -42,7 +42,7 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 ### Tasks stuck in progress
 
-**Cause:** A previous session was interrupted while the agent was mid-task.
+**Cause:** The previous session ended while the agent was mid-task.
 
 **Solution:**
 
@@ -76,7 +76,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 
 1. Tell the agent about the failure. The agent analyzes the errors automatically.
 1. If the agent can't resolve the issue, revert the last commit (`git revert HEAD`) and ask the agent to try a different approach.
-1. For complex failures, check `execution-log.md` to understand what changes were made and in what order.
+1. For complex failures, check `execution-log.md` to understand what changes the agent made and in what order.
 
 ### NuGet restore fails
 
@@ -84,7 +84,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 
 **Solution:**
 
-- **For private feeds:** Ensure you've authenticated to the feed before starting the upgrade.
+- **For private feeds:** Authenticate to the feed before starting the upgrade.
 - **For incompatible packages:** Tell the agent which package is problematic. The agent can search for compatible versions or suggest alternative packages.
 - **For feed connectivity issues:** Verify you can run `dotnet restore` manually. Fix any feed issues first, then let the agent retry.
 
@@ -101,7 +101,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 ## Git issues
 
 > [!NOTE]
-> The agent works with non-Git folders too. If your workspace isn't a Git repository, the agent skips Git operations (branching, committing) and applies changes directly to your files. In this case, make a manual backup of your project before starting so you can revert if needed.
+> The agent works with non-Git folders too. If your workspace isn't a Git repository, the agent skips Git operations (branching, committing) and applies changes directly to your files. Without Git, make a manual backup of your project before starting so you can revert if needed.
 
 ### Agent can't create a branch
 
@@ -142,7 +142,7 @@ These issues relate to upgrade speed and assessment duration.
 
 ### Assessment takes very long
 
-**Cause:** The assessment analyzes every project's dependencies, NuGet packages, target frameworks, and applicable breaking changes. For large solutions, the assessment is naturally time-consuming.
+**Cause:** The assessment analyzes every project's dependencies, NuGet packages, target frameworks, and applicable breaking changes. For large solutions, the assessment naturally takes longer.
 
 **Solution:**
 
@@ -185,7 +185,7 @@ These issues relate to custom skills and scenario instruction files.
 
 When something isn't working as expected:
 
-1. **Ask the agent:** Try asking: _"What went wrong with the last task?"_ The agent can often explain what happened and suggest next steps.
+1. **Ask the agent:** Ask _"What went wrong with the last task?"_ The agent can often explain what happened and suggest next steps.
 1. **Review the execution log:** Open `execution-log.md` in `.github/upgrades/{scenarioId}/`. The log shows a chronological record of what the agent did, including any errors the agent encountered.
 1. **File an issue:** If you've found a bug or the agent consistently fails at something, file an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
 

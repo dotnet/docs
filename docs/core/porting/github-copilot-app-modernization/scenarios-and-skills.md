@@ -36,11 +36,11 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 | [**Azure Functions upgrade**](#azure-functions-upgrade) | Migrates Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
 | [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agents AI Framework. | _"Migrate my SK agents"_ |
 
-For a detailed walkthrough of how scenarios work end-to-end, see [Core concepts](concepts.md).
+For an end-to-end walkthrough, see [Core concepts](concepts.md).
 
 ### .NET version upgrade
 
-The most commonly used scenario. Upgrades your projects from any older .NET variant to the latest:
+The most common scenario. Upgrades your projects from any older .NET variant to the latest:
 
 | Source | Target |
 |---|---|
@@ -65,11 +65,11 @@ The agent:
 
 ### Aspire version upgrade
 
-Upgrades an existing Aspire project from its current version to a newer Aspire version. The agent handles the full upgrade lifecycle:
+Upgrades an existing Aspire project to a newer version. The agent handles the full upgrade lifecycle:
 
 1. Detects the current Aspire version from your AppHost SDK, packages, and configuration.
 1. Determines the target version and required .NET TFM (for example, Aspire 13.x requires `net10.0`).
-1. Auto-fixes breaking API changes across version transitions (type renames, method renames, argument reorders, fluent chain refactors).
+1. Auto-fixes breaking API changes across version transitions (type renames, method renames, argument reorders, and fluent chain refactors).
 1. Updates all Aspire packages and handles package renames (for example, `Aspire.Hosting.NodeJs` to `Aspire.Hosting.JavaScript`).
 1. Consolidates AppHost SDK format and migrates config files to unified `aspire.config.json`.
 1. Validates the upgraded solution builds and runs correctly.

@@ -22,7 +22,7 @@ Set up GitHub Copilot modernization in your development environment before creat
 
 ## Understand custom upgrade instructions
 
-GitHub Copilot modernization retrieves custom upgrade instructions as Markdown files on demand during the assessment and planning stages of an upgrade. They differ from `copilot-instructions.md` because they're:
+GitHub Copilot modernization retrieves custom upgrade instructions as Markdown files on demand during the assessment and planning stages of an upgrade. Custom upgrade instructions differ from `copilot-instructions.md` because they're:
 
 - Targeted to automating code and dependency changes.
 - Retrieved only when relevant to the current upgrade assessment or plan.
@@ -35,7 +35,7 @@ Structure your instruction files with:
 - Explicit step logic ("If X is found, do Y"). Avoid vague language.
 - (Recommended) One or more diff examples captured from actual local edits to guide transformations.
 
-Beyond custom upgrade instructions, GitHub Copilot modernization is extensible through the standard skills and instructions system that your development environment and Copilot support. Skills let you extend the agent with extra capabilities, and instruction files (like `copilot-instructions.md`) provide global guidance to the agent.
+Beyond custom upgrade instructions, you can extend GitHub Copilot modernization through the standard skills and instructions system. Skills add capabilities to the agent, and instruction files (like `copilot-instructions.md`) provide global guidance.
 
 ## Create a custom upgrade instruction
 
@@ -69,12 +69,12 @@ Follow these guidelines to write clear, effective custom upgrade instructions th
 
 - Use clear conditional phrasing: `If code references X, then do Y.`
 - Keep one transformation per file; use prerequisites when multiple files must run in sequence.
-- Improve transformation accuracy by providing at least one concrete example, such as a diff or before/after snippet.
+- Provide at least one concrete example, such as a diff or before/after snippet, to improve transformation accuracy.
 - Avoid ambiguous verbs like "improve" or "fix"; use explicit actions like "replace," "remove," and "update."
 
 ## Test a custom upgrade instruction (one-time run)
 
-Before running the instruction during an upgrade, validate it in isolation. This fast inner loop helps you refine detection and verify the code changes.
+Before running the instruction during an upgrade, validate it in isolation. Isolated testing helps you refine detection and verify code changes.
 
 1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
 
@@ -90,7 +90,7 @@ Before running the instruction during an upgrade, validate it in isolation. This
    Perfect! I've retrieved the scenario instructions for migrating from Newtonsoft.Json to System.Text.Json. Now I'll begin the analysis following the scenario-specific instructions.
    ```
 
-   If you don't see an indication that the instructions were found, retry with keywords from the file's name, such as the same verb and noun combinations.
+   If Copilot doesn't indicate it found the instructions, retry with keywords from the file's name, such as the same verb and noun combinations.
 
 1. Review the proposed changes (solution diffs, pending commits, or previewed modifications) to confirm the custom upgrade instruction behaves as expected.
 
@@ -99,8 +99,8 @@ Before running the instruction during an upgrade, validate it in isolation. This
 If the test run doesn't produce the expected results, use these troubleshooting tips to refine your instruction file:
 
 - If Copilot only updates package versions instead of replacing the package, ensure the instruction explicitly says to remove or replace the old package.
-- Use consistent naming so natural language activation matches. For example, the file name starts with `replace_` and your chat request begins with "Replace ...".
-- Add missing code patterns you discover during testing as more examples to improve coverage.
+- Use consistent naming so that natural-language activation matches. For example, start the file name with `replace_` and begin your chat request with "Replace ...".
+- During testing, add any missing code patterns as examples to improve coverage.
 
 ## Apply custom instructions during an upgrade
 
@@ -149,7 +149,7 @@ After the upgrade completes:
 
 ## Clean up resources
 
-If you create temporary instruction files for experimentation, remove or consolidate them to avoid overlapping transformations in future upgrades.
+Remove or consolidate any temporary instruction files to avoid overlapping transformations in future upgrades.
 
 ## Related content
 

@@ -13,9 +13,9 @@ public class Person
       lname = lastName;
    }
 
-   public string FirstName { get; private set }
+   public string FirstName { get; set }
 
-   public string LastName { get; private set }
+   public string LastName { get; set }
 
    /// <summary>
    /// Add some changes in methods

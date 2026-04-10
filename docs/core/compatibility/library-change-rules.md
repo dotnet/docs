@@ -1,7 +1,7 @@
 ---
 title: .NET API changes that affect compatibility
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
-ms.date: 03/23/2026
+ms.date: 04/10/2026
 ms.topic: concept-article
 ---
 # Change rules for compatibility
@@ -135,6 +135,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding or removing the [in](../../csharp/language-reference/keywords/in.md), [out](../../csharp/language-reference/keywords/out.md), or [ref](../../csharp/language-reference/keywords/ref.md) keyword from a parameter**
 
+- ✔️ **ALLOWED: Changing a `ref` parameter to [`ref readonly`](../../csharp/language-reference/keywords/method-parameters.md#ref-readonly-modifier)**
+
+  Changing a parameter from `ref` to `ref readonly` doesn't require callers to change their code. Call sites that pass arguments by `ref` work without modification. Unlike changing `ref` to `in`, this change doesn't allow callers to pass rvalues (non-variables), so existing call patterns remain valid.
+
 - ❌ **DISALLOWED: Renaming a parameter (including changing its case)**
 
   This is considered breaking for two reasons:
@@ -175,6 +179,18 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Adding an overload that precludes an existing overload and defines a different behavior**
 
   This breaks existing clients that were bound to the previous overload. For example, if a class has a single version of a method that accepts a <xref:System.UInt32>, an existing consumer will successfully bind to that overload when passing a <xref:System.Int32> value. However, if you add an overload that accepts an <xref:System.Int32>, when recompiling or using late-binding, the compiler now binds to the new overload. If different behavior results, this is a breaking change.
+
+- ❓ **REQUIRES JUDGMENT: Adding <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to an existing overload or changing its priority value**
+
+  The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> affects overload resolution at the source level: callers that recompile might resolve to a different overload than before. The intended use is to add the attribute to a new, better overload so the compiler prefers it over existing ones. Adding it to an existing overload or changing the priority value on an already-attributed overload is a source breaking change because callers that recompile might change behavior.
+
+- ✔️ **ALLOWED: Adding the [`allows ref struct`](../../csharp/language-reference/keywords/where-generic-type-constraint.md) anti-constraint to a generic type parameter**
+
+  Adding `allows ref struct` expands what types can be used as type arguments by permitting `ref struct` types. Existing callers using non-`ref struct` type arguments aren't affected. The generic method or type must follow ref safety rules for all instances of that type parameter.
+
+- ❌ **DISALLOWED: Removing the `allows ref struct` anti-constraint from a generic type parameter**
+
+  Removing `allows ref struct` restricts which types callers can use as type arguments. Any caller that passes a `ref struct` as a type argument will no longer compile.
 
 - ❌ **DISALLOWED: Adding a constructor to a class that previously had no constructor without adding the parameterless constructor**
 
@@ -325,6 +341,14 @@ Changes in this category modify the public surface area of a type. Most of the c
    This change might cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
 
 - ❌ **DISALLOWED: Removing [params](../../csharp/language-reference/keywords/method-parameters.md#params-modifier) from a parameter**
+
+- ❌ **DISALLOWED: Changing the collection type of a `params` parameter**
+
+  Beginning with C# 13, `params` parameters support non-array collection types such as <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, and types that implement <xref:System.Collections.Generic.IEnumerable`1>. Changing the collection type of an existing `params` parameter (for example, from `params T[]` to `params ReadOnlySpan<T>`) changes the method's IL signature and is a binary breaking change. Callers compiled against the previous version must recompile.
+
+- ✔️ **ALLOWED: Converting an extension method to the [extension block member syntax](../../csharp/language-reference/keywords/extension.md)**
+
+  Beginning with C# 14, you can declare extension members using `extension` blocks in addition to the older `this`-parameter syntax. Both forms generate identical IL, so callers can't distinguish between them. Converting existing extension methods to the new extension block syntax is binary and source compatible.
 
 - ❌ **DISALLOWED: Changing the order in which events are fired**
 

@@ -294,7 +294,7 @@ For more information, see the following sections of the [C# language specificati
 - [Remainder operator](~/_csharpstandard/standard/expressions.md#12134-remainder-operator)
 - [Addition operator](~/_csharpstandard/standard/expressions.md#12135-addition-operator)
 - [Subtraction operator](~/_csharpstandard/standard/expressions.md#12136-subtraction-operator)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#12244-compound-assignment)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12245-compound-assignment)
 - [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12820-the-checked-and-unchecked-operators)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 - [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)

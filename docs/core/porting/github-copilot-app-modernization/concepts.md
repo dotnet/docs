@@ -90,11 +90,11 @@ The agent creates the task plan based on the assessment and your confirmed optio
 
 - `plan.md`: The upgrade plan with strategy and task descriptions.
 - `scenario-instructions.md`: Your preferences, decisions, and the agent's memory.
-- `tasks.md`: Visual progress dashboard.
+- `tasks.md` — The ordered list of tasks the agent will execute.
 
 ### Stage 3: Execution
 
-The agent works through tasks sequentially. For each task, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how the agent commits changes: per task, per group of tasks, or at the end.
+The agent works through tasks sequentially. For each task in `tasks.md`, the agent follows a cycle: start, execute, validate (build and test), and complete. You control when and how the agent commits changes: per task, per group of tasks, or at the end. As the agent works, it updates `tasks.md` with live status indicators so you can track progress.
 
 ## Upgrade strategies
 

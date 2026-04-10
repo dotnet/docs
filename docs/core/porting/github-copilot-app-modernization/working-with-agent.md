@@ -11,9 +11,9 @@ ai-usage: ai-assisted
 
 # Work with GitHub Copilot modernization
 
-GitHub Copilot modernization isn't a "click a button and walk away" tool. It's an interactive collaborator that asks questions, proposes strategies, adapts to your feedback, and learns from your preferences over time.
+This article covers how to communicate with the GitHub Copilot modernization agent, teach it your preferences, correct mistakes, review its work, and manage upgrades across multiple sessions.
 
-To get the best results, give the agent context. The more the agent knows about your goals, constraints, and preferences, the better the agent performs.
+GitHub Copilot modernization is an interactive collaborator that asks questions, proposes strategies, adapts to your feedback, and learns from your preferences over time. To get the best results, give the agent context—the more it knows about your goals, constraints, and preferences, the better it performs.
 
 ```text
 ❌ Vague — the agent has to guess

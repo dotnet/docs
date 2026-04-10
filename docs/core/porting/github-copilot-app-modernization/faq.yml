@@ -52,7 +52,7 @@ sections:
 
       - question: Can I customize or guide the agent?
         answer: |
-          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in migration skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md).
+          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in modernization skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md).
 
           If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, the agent learns from that interaction in the short term. Preferences and decisions are saved to `scenario-instructions.md` in the `.github/upgrades/` folder so they persist across sessions.
 

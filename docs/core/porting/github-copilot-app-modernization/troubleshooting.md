@@ -137,7 +137,6 @@ These issues relate to upgrade speed and assessment duration.
 
 **Solution:**
 
-1. Be patient. The agent works project-by-project and validates each change with builds.
 1. For very large solutions (50+ projects), consider upgrading in batches. Group related projects and upgrade them together.
 
 ### Assessment takes very long

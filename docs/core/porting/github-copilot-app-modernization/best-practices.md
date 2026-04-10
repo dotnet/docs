@@ -15,7 +15,7 @@ Follow these guidelines to get the best results from GitHub Copilot modernizatio
 
 ## Before you start
 
-Prepare your project before starting an upgrade to get the best results.
+Prepare your projects before starting an upgrade to get the best results.
 
 ### Verify that your solution builds and tests pass
 
@@ -77,11 +77,11 @@ The assessment is your best opportunity to catch issues before the agent starts 
 - Dependencies that you know are problematic.
 - Anything unusual about your solution that the agent should know.
 
-If you spot something, tell the agent in chat or add the information to `scenario-instructions.md`.
+If you spot something, tell the agent in chat or add the information to `scenario-instructions.md`. You can also edit `assessment.md` directly to add context, correct misidentified projects, or flag concerns before the agent proceeds to planning.
 
 ### Take time with the planning stage
 
-The agent generates a task plan based on its assessment. Review the plan before proceeding:
+The agent generates a plan based on its assessment. Review the plan before proceeding:
 
 - Does the order make sense for your codebase?
 - Are there dependencies the agent might not know about?
@@ -98,6 +98,18 @@ The agent learns from your corrections within a session. If the agent makes a ch
 
 - Tell it right away: _"Don't use that pattern, use X instead."_
 - Add persistent guidance to `scenario-instructions.md` so the agent remembers across tasks and sessions.
+
+### Stay engaged during execution
+
+Execution isn't hands-off. Before telling the agent to start, review `tasks.md`:
+
+- Does the task order make sense for your codebase?
+- Are there tasks you want to skip or resequence?
+- Are any tasks missing?
+
+Ask the agent to adjust the task list, or edit `tasks.md` directly before execution begins. Once execution starts, if the agent makes a bad call mid-task, tell it immediately — it applies your correction going forward.
+
+You know your codebase better than the agent, so use that knowledge at every stage.
 
 ## Common pitfalls
 

@@ -16,38 +16,27 @@ helpviewer_keywords:
 ---
 # Async lambda pitfalls
 
-Async lambdas and anonymous methods are powerful features that let you create delegates representing asynchronous operations. However, passing them to methods that weren't designed for async delegates leads to subtle bugs. This article describes the most common scenarios and shows you how to fix them.
+Async lambdas and anonymous methods are powerful features that let you create delegates representing asynchronous operations. Use them with APIs that are designed for asynchronous delegates. This article shows the right patterns first, and then explains what goes wrong when you pass async lambdas to APIs that expect synchronous delegates.
 
-## Async lambdas assigned to Action delegates
+## Async lambdas assigned to `Action` delegates
 
-An async lambda can match a `void`-returning delegate type like <xref:System.Action>, not only `Func<Task>`. When the target parameter is an `Action`, the compiler maps the async lambda to an async void method—the caller has no way to track completion.
+Create an overload that accepts `Func<Task>` and await the result:
+
+:::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="ActionFix":::
+:::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="ActionFix":::
+
+Whenever you pass an async lambda to a method, verify the parameter's delegate type. If the parameter is `Action`, `Action<T>`, or any other void-returning delegate, switch to a task-returning delegate for asynchronous operations.
+
+An async lambda can match a `void`-returning delegate type like <xref:System.Action> in addition to `Func<Task>`. When the target parameter is an `Action`, the compiler maps the async lambda to an async void method. The caller has no way to track completion.
 
 Consider a timing helper that accepts an `Action`:
 
 :::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="ActionPitfall":::
 :::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="ActionPitfall":::
 
-When you pass a synchronous lambda, the measured time is accurate. With an async lambda, the `Action` delegate returns as soon as the first `await` yields—the timer captures only the synchronous portion instead of the full operation.
+When you pass a synchronous lambda, the measured time is accurate. With an async lambda, the `Action` delegate returns as soon as the first `await` yields, so the timer captures only the synchronous portion instead of the full operation.
 
-### Fix: accept Func\<Task> instead of Action
-
-Create an overload that accepts `Func<Task>` and awaits the result:
-
-:::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="ActionFix":::
-:::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="ActionFix":::
-
-Whenever you pass an async lambda to a method, check the parameter's delegate type. If the parameter is `Action`, `Action<T>`, or any other void-returning delegate, the callee can't observe when the async work completes.
-
-## Parallel.ForEach with async lambdas
-
-<xref:System.Threading.Tasks.Parallel.ForEach*> accepts an `Action<T>` for its body parameter. Passing an async lambda creates an async void delegate—`Parallel.ForEach` returns as soon as each delegate hits its first yielding `await`:
-
-:::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="ParallelForEachBug":::
-:::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="ParallelForEachBug":::
-
-The loop completes in milliseconds instead of the expected duration because the async lambdas become fire-and-forget operations.
-
-### Fix: use Task.WhenAll or Parallel.ForEachAsync
+## `Parallel.ForEach` with async lambdas
 
 In .NET 6 and later, use <xref:System.Threading.Tasks.Parallel.ForEachAsync*>, which accepts a `Func<TSource, CancellationToken, ValueTask>`:
 
@@ -59,16 +48,14 @@ Alternatively, project the items into tasks and use <xref:System.Threading.Tasks
 :::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="WhenAllAlternative":::
 :::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="WhenAllAlternative":::
 
-## Task.Factory.StartNew with async lambdas
+<xref:System.Threading.Tasks.Parallel.ForEach*> accepts an `Action<T>` for its body parameter. Passing an async lambda creates an async void delegate—`Parallel.ForEach` returns as soon as each delegate hits its first yielding `await`:
 
-When you pass an async lambda to <xref:System.Threading.Tasks.TaskFactory.StartNew*>, the return type is `Task<Task>` (or `Task<Task<TResult>>`). The outer task represents only the synchronous part of the delegate—it completes at the first yielding `await`. The inner task represents the full asynchronous operation:
+:::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="ParallelForEachBug":::
+:::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="ParallelForEachBug":::
 
-:::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="StartNewBug":::
-:::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="StartNewBug":::
+The loop completes in milliseconds instead of the expected duration because the async lambdas become fire-and-forget operations.
 
-If you treat the outer task as the whole operation, you'll observe completion before the async work actually finishes.
-
-### Fix: use Task.Run or Unwrap
+## `Task.Factory.StartNew` with async lambdas
 
 <xref:System.Threading.Tasks.Task.Run*> automatically unwraps async lambdas. It accepts `Func<Task>` and `Func<Task<TResult>>` overloads and returns the inner task:
 
@@ -79,6 +66,13 @@ If you need `StartNew`-specific options (such as <xref:System.Threading.Tasks.Ta
 
 :::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="StartNewFix2":::
 :::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="StartNewFix2":::
+
+When you pass an async lambda to <xref:System.Threading.Tasks.TaskFactory.StartNew*>, the return type is `Task<Task>` (or `Task<Task<TResult>>`). The outer task represents only the synchronous part of the delegate—it completes at the first yielding `await`. The inner task represents the full asynchronous operation:
+
+:::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="StartNewBug":::
+:::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="StartNewBug":::
+
+If you treat the outer task as the whole operation, you'll observe completion before the async work actually finishes.
 
 ## Summary
 

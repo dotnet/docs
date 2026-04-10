@@ -92,7 +92,7 @@ When editing, focus on these areas in order of priority:
 - ❌ "Before deploying the application..." → ✅ "Before you deploy the application..."
 - ❌ "After configuring the settings..." → ✅ "After you configure the settings..."
 - ❌ "By using this method..." → ✅ "When you use this method..."
-- Look for ANY introductory or dependent clause that starts with a gerund (-ing form) and replace it with "<person or entity performing the action> + verb"
+- Look for ANY introductory or dependent clause that uses an -ing verb form (including clauses introduced by words such as "when," "before," "after," or "by") and replace it with "<person or entity performing the action> + verb"
 
 **SCAN FOR AND ELIMINATE ALL weak constructions (these are examples - find ALL similar patterns):**
 - ❌ "There are three ways to..." → ✅ "Use these three methods..."

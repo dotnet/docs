@@ -30,7 +30,7 @@ A *load test* aims to determine whether or not a system can handle a specified l
 
 ## Test considerations
 
-Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development) is when you write a unit test before the code it's meant to check. TDD is like creating an outline for a book before you write it. The unit test helps developers write simpler, readable, and efficient code.
+Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/practices/test-driven-development/) is when you write a unit test before the code it's meant to check. TDD is like creating an outline for a book before you write it. The unit test helps developers write simpler, readable, and efficient code.
 
 ## Testing tools
 

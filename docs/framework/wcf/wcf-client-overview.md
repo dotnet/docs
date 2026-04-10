@@ -57,14 +57,14 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
 
 #### Creating a New WCF Object
 
- To illustrate the use of a <xref:System.ServiceModel.ClientBase%601> class, assume the following simple service contract has been generated from a service application.
+ To illustrate the use of a <xref:System.ServiceModel.ClientBase`1> class, assume the following simple service contract has been generated from a service application.
 
 > [!NOTE]
 > If you are using Visual Studio to create your WCF client, objects are loaded automatically into the object browser when you add a service reference to your project.
 
  [!code-csharp[C_GeneratedCodeFiles#12](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#12)]
 
- If you are not using Visual Studio, examine the generated contract code to find the type that extends <xref:System.ServiceModel.ClientBase%601> and the service contract interface `ISampleService`. In this case, that type looks like the following code:
+ If you are not using Visual Studio, examine the generated contract code to find the type that extends <xref:System.ServiceModel.ClientBase`1> and the service contract interface `ISampleService`. In this case, that type looks like the following code:
 
  [!code-csharp[C_GeneratedCodeFiles#14](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#14)]
 
@@ -80,7 +80,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
 
  [!code-xml[C_GeneratedCodeFiles#19](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]
 
- This configuration file specifies a target endpoint in the `<client>` element. For more information about using multiple target endpoints, see the <xref:System.ServiceModel.ClientBase%601.%23ctor%2A> or the <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A> constructors.
+ This configuration file specifies a target endpoint in the `<client>` element. For more information about using multiple target endpoints, see the <xref:System.ServiceModel.ClientBase`1.%23ctor*> or the <xref:System.ServiceModel.ChannelFactory`1.%23ctor*> constructors.
 
 ## Calling Operations
 
@@ -135,7 +135,7 @@ End Interface
 
 ## Handling Errors
 
- Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=nameWithType> and <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is the detail type of the SOAP fault. For more information about handling error conditions in a client application, see [Sending and Receiving Faults](sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](./samples/expected-exceptions.md).
+ Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=nameWithType> and <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException`1?displayProperty=nameWithType> where the type parameter is the detail type of the SOAP fault. For more information about handling error conditions in a client application, see [Sending and Receiving Faults](sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](./samples/expected-exceptions.md).
 
 ## Configuring and Securing Clients
 
@@ -176,9 +176,9 @@ End Interface
 
 ## Calling Services Using WCF Client Channels
 
- WCF client types extend <xref:System.ServiceModel.ClientBase%601>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. For details, see [WCF Client Architecture](./feature-details/client-architecture.md).
+ WCF client types extend <xref:System.ServiceModel.ClientBase`1>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory`1?displayProperty=nameWithType> class. For details, see [WCF Client Architecture](./feature-details/client-architecture.md).
 
 ## See also
 
-- <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>
-- <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ClientBase`1?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ChannelFactory`1?displayProperty=nameWithType>

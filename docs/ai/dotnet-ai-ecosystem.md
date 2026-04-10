@@ -20,7 +20,7 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 ## Other AI-related Microsoft.Extensions libraries
 
-The [📦 Microsoft.Extensions.VectorData.Abstractions package](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) provides a unified layer of abstractions for interacting with a variety of vector stores. It lets you store processed chunks in vector stores such as Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. For more information, see [Build a .NET AI vector search app](quickstarts/build-vector-search-app.md).
+The [📦 Microsoft.Extensions.VectorData.Abstractions package](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) provides a unified layer of abstractions for interacting with a variety of vector stores. It lets you store processed chunks in vector stores such as Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. For more information, see [Build a .NET AI vector search app](vector-stores/how-to/build-vector-search-app.md).
 
 The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET building blocks for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially retrieval-augmented generation (RAG) scenarios. For more information, see [Data ingestion](conceptual/data-ingestion.md).
 
@@ -45,7 +45,7 @@ For more information, see the [Microsoft Agent Framework documentation](/agent-f
 
 ## .NET SDKs for building AI apps
 
-Many different SDKs are available to build .NET apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Foundry Tools provide intelligent solutions for a variety of specific scenarios.
+Many different SDKs are available to build .NET apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Foundry tools provide intelligent solutions for a variety of specific scenarios.
 
 ### .NET SDKs for OpenAI models
 
@@ -57,7 +57,7 @@ Many different SDKs are available to build .NET apps with AI capabilities depend
 
 ### .NET SDKs for Foundry Tools
 
-Azure offers many other Foundry Tools to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Foundry Tools](/azure/ai-services/what-are-ai-services) documentation.
+Azure offers many other AI services, such as Foundry Tools, to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Foundry Tools](/azure/ai-services/what-are-ai-services) documentation.
 
 | Service                           | Description                                  |
 |-----------------------------------|----------------------------------------------|

@@ -15,8 +15,8 @@ The standard query operator methods that group data elements are listed in the f
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
-|GroupBy|Groups elements that share a common attribute. An <xref:System.Linq.IGrouping%602> object represents each group.|`group … by …`<br /><br /> -or-<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupBy%2A?displayProperty=nameWithType>|
-|ToLookup|Inserts elements into a <xref:System.Linq.Lookup%602> (a one-to-many dictionary) based on a key selector function.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|
+|GroupBy|Groups elements that share a common attribute. An <xref:System.Linq.IGrouping`2> object represents each group.|`group … by …`<br /><br /> -or-<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupBy*?displayProperty=nameWithType>|
+|ToLookup|Inserts elements into a <xref:System.Linq.Lookup`2> (a one-to-many dictionary) based on a key selector function.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup*?displayProperty=nameWithType>|
 
 The following code example uses the `group by` clause to group integers in a list according to whether they're even or odd.
 
@@ -122,7 +122,7 @@ The query in the preceding snippet can also be written using method syntax. The 
 ## See also
 
 - <xref:System.Linq>
-- <xref:System.Linq.Enumerable.GroupBy%2A>
-- <xref:System.Linq.IGrouping%602>
+- <xref:System.Linq.Enumerable.GroupBy*>
+- <xref:System.Linq.IGrouping`2>
 - [group clause](../../language-reference/keywords/group-clause.md)
 - [How to split a file into many files by using groups (LINQ) (C#)](../how-to-query-files-and-directories.md)

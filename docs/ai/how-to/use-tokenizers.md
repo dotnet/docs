@@ -2,12 +2,12 @@
 title: Use Microsoft.ML.Tokenizers for text tokenization
 description: Learn how to use the Microsoft.ML.Tokenizers library to tokenize text for AI models, manage token counts, and work with various tokenization algorithms.
 ms.topic: how-to
-ms.date: 10/29/2025
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 ---
 # Use Microsoft.ML.Tokenizers for text tokenization
 
-The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides a comprehensive set of tools for tokenizing text in .NET applications. Tokenization is essential when you work with large language models (LLMs), as it allows you to manage token counts, estimate costs, and preprocess text for AI models.
+The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides a comprehensive set of tools for tokenizing text in .NET applications. Tokenization is essential when you work with large language models (LLMs), as it lets you manage token counts, estimate costs, and preprocess text for AI models.
 
 This article shows you how to use the library's key features and work with different tokenizer models.
 
@@ -26,7 +26,7 @@ Install the Microsoft.ML.Tokenizers NuGet package:
 dotnet add package Microsoft.ML.Tokenizers
 ```
 
-For Tiktoken models (like GPT-4), you also need to install the corresponding data package:
+For Tiktoken models (like GPT-4), also install the corresponding data package:
 
 ```dotnetcli
 dotnet add package Microsoft.ML.Tokenizers.Data.O200kBase
@@ -47,7 +47,7 @@ The Tiktoken tokenizer is commonly used with OpenAI models like GPT-4. The follo
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/TiktokenExample.cs" id="TiktokenBasic":::
 
-For better performance, you should cache and reuse the tokenizer instance throughout your app.
+For better performance, cache and reuse the tokenizer instance throughout your app.
 
 When you work with LLMs, you often need to manage text within token limits. The following example shows how to trim text to a specific token count:
 
@@ -65,7 +65,7 @@ All tokenizers support advanced encoding options, such as controlling normalizat
 
 ## Use BPE tokenizer
 
-*Byte-pair encoding* (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. BPE was initially developed as an algorithm to compress texts, and then used by OpenAI for tokenization when it pretrained the GPT model. The following example demonstrates BPE tokenization:
+*Byte-pair encoding* (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. BPE was initially developed as an algorithm to compress texts, and then OpenAI used it for tokenization when it pretrained the GPT model. The following example demonstrates BPE tokenization:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/BpeExample.cs" id="BpeBasic":::
 

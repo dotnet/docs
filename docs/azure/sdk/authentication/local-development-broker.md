@@ -9,29 +9,29 @@ zone_pivot_groups: operating-systems-set-one
 
 # Authenticate .NET apps to Azure services during local development using brokered authentication
 
-[!INCLUDE [broker-intro](../includes/broker-intro.md)]
+[!INCLUDE [broker-intro](~/azure-dev-docs/articles/includes/authentication/broker-introduction.md)]
 
 :::zone target="docs" pivot="os-windows"
 
-[!INCLUDE [broker-windows](../includes/broker-windows.md)]
+[!INCLUDE [broker-windows](~/azure-dev-docs/articles/includes/authentication/broker-windows.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
 
-[!INCLUDE [broker-mac](../includes/broker-mac.md)]
+[!INCLUDE [broker-mac](~/azure-dev-docs/articles/includes/authentication/broker-mac.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-[!INCLUDE [broker-linux](../includes/broker-linux.md)]
+[!INCLUDE [broker-linux](~/azure-dev-docs/articles/includes/authentication/broker-linux.md)]
 
 :::zone-end
 
-[!INCLUDE [broker-configure-app](../includes/broker-configure-app.md)]
+[!INCLUDE [broker-configure-app](~/azure-dev-docs/articles/includes/authentication/broker-configure-application.md)]
 
-[!INCLUDE [broker-assign-roles](../includes/broker-assign-roles.md)]
+[!INCLUDE [broker-assign-roles](~/azure-dev-docs/articles/includes/authentication/broker-assign-roles.md)]
 
 ## Implement the code
 
@@ -97,14 +97,14 @@ The Azure Identity library provide interactive brokered authentication using <xr
 2. Get a reference to the parent window on top of which the account picker dialog should appear.
 3. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> using <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
+    :::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
 
 :::zone-end
 
 > [!TIP]
 > View the [complete sample app code](https://github.com/dotnet/docs/tree/main/docs/azure/sdk/snippets/authentication/brokered) in the .NET docs GitHub repository.
 
-In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions.UseDefaultBrokerAccount%2A> is set to `true`, which opts into a silent, brokered authentication flow with the default system account. In this way, the user doesn't have to repeatedly select the same account. If silent, brokered authentication fails, or `UseDefaultBrokerAccount` is set to `false`, `InteractiveBrowserCredential` falls back to interactive, brokered authentication.
+In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions.UseDefaultBrokerAccount*> is set to `true`, which opts into a silent, brokered authentication flow with the default system account. In this way, the user doesn't have to repeatedly select the same account. If silent, brokered authentication fails, or `UseDefaultBrokerAccount` is set to `false`, `InteractiveBrowserCredential` falls back to interactive, brokered authentication.
 
 :::zone target="docs" pivot="os-windows"
 

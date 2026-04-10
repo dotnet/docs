@@ -38,8 +38,8 @@ Specifies the generic parameter when a declared type is a generic type.
 
 |Value|Description|
 |-----------|-----------------|
-|"0"|The first parameter in the generic type. For example, a <xref:System.Collections.Generic.List%601> has only one parameter. If it is used as the declared type, the index would be set to "0".|
-|"1"|The second parameter in a generic type. For example, a <xref:System.Collections.Generic.Dictionary%602> has two parameters. If the known type is returned by the second parameter, set the index attribute to "1".|
+|"0"|The first parameter in the generic type. For example, a <xref:System.Collections.Generic.List`1> has only one parameter. If it is used as the declared type, the index would be set to "0".|
+|"1"|The second parameter in a generic type. For example, a <xref:System.Collections.Generic.Dictionary`2> has two parameters. If the known type is returned by the second parameter, set the index attribute to "1".|
 
 ### Child Elements
 

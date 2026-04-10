@@ -52,7 +52,7 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
 
 ## Example
 
- The following example shows how use the `<cryptoClass>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.
+ The following example shows how use the `<cryptoClass>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create*> method to return a `MyCryptoRSAClass` object.
 
 ```xml
 <configuration>

@@ -54,8 +54,8 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 ## See also
 
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>
-- <xref:System.ServiceModel.NetMsmqBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>
+- <xref:System.ServiceModel.NetMsmqBinding.Security*>
+- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security*>
 - <xref:System.ServiceModel.NetMsmqSecurity>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

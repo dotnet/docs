@@ -23,7 +23,7 @@ Standard numeric format strings are used to format common numeric types. A stand
 
 - *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom numeric format strings](custom-numeric-format-strings.md).
 
-- *Precision specifier* is an optional integer that affects the number of digits in the resulting string. In .NET 7 and later versions, the maximum precision value is 999,999,999.  In .NET 6, the maximum precision value is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. In previous .NET versions, the precision can range from 0 to 99. The precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the <xref:System.Math.Ceiling%2A?displayProperty=nameWithType>, <xref:System.Math.Floor%2A?displayProperty=nameWithType>, or <xref:System.Math.Round%2A?displayProperty=nameWithType> method.
+- *Precision specifier* is an optional integer that affects the number of digits in the resulting string. In .NET 7 and later versions, the maximum precision value is 999,999,999.  In .NET 6, the maximum precision value is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. In previous .NET versions, the precision can range from 0 to 99. The precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the <xref:System.Math.Ceiling*?displayProperty=nameWithType>, <xref:System.Math.Floor*?displayProperty=nameWithType>, or <xref:System.Math.Round*?displayProperty=nameWithType> method.
 
   When *precision specifier* controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result. If there are two equally near representable results:
   - **On .NET Framework and .NET Core up to .NET Core 2.0**, the runtime selects the result with the greater least significant digit (that is, using <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType>).
@@ -38,7 +38,7 @@ Standard numeric format strings are supported by:
 
 - The `TryFormat` method of all numeric types, for example, <xref:System.Int32.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)?displayProperty=nameWithType> and <xref:System.Single.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)?displayProperty=nameWithType>.
 
-- The .NET [composite formatting feature](composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format%2A?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](composite-formatting.md).
+- The .NET [composite formatting feature](composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format*?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType> method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](composite-formatting.md).
 
 - [Interpolated strings](../../csharp/language-reference/tokens/interpolated.md) in C# and Visual Basic, which provide a simplified syntax when compared to composite format strings.
 
@@ -54,13 +54,13 @@ The following table describes the standard numeric format specifiers and display
 | Format specifier | Name | Description | Examples |
 |------------------|------|-------------|----------|
 | "B" or "b" | Binary | Result: A binary string.<br /><br /> Supported by: Integral types only (.NET 8+).<br /><br /> Precision specifier: Number of digits in the result string.<br /><br /> More information: [The Binary ("B") Format Specifier](#BFormatString). | 42 ("B")<br />-> 101010<br /><br /> 255 ("b16")<br />-> 0000000011111111 |
-| "C" or "c" | Currency | Result: A currency value.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Currency ("C") Format Specifier](#CFormatString). | 123.456 ("C", en-US)<br />-> \\$123.46<br /><br /> 123.456 ("C", fr-FR)<br />-> 123,46 &euro;<br /><br /> 123.456 ("C", ja-JP)<br />-> ¥123<br /><br /> -123.456 ("C3", en-US)<br />-> (\\$123.456)<br /><br /> -123.456 ("C3", fr-FR)<br />-> -123,456 &euro;<br /><br /> -123.456 ("C3", ja-JP)<br />-> -¥123.456 |
+| "C" or "c" | Currency | Result: A currency value.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits*?displayProperty=nameWithType>.<br /><br /> More information: [The Currency ("C") Format Specifier](#CFormatString). | 123.456 ("C", en-US)<br />-> \\$123.46<br /><br /> 123.456 ("C", fr-FR)<br />-> 123,46 &euro;<br /><br /> 123.456 ("C", ja-JP)<br />-> ¥123<br /><br /> -123.456 ("C3", en-US)<br />-> (\\$123.456)<br /><br /> -123.456 ("C3", fr-FR)<br />-> -123,456 &euro;<br /><br /> -123.456 ("C3", ja-JP)<br />-> -¥123.456 |
 | "D" or "d" | Decimal | Result: Integer digits with optional negative sign.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Minimum number of digits.<br /><br /> Default precision specifier: Minimum number of digits required.<br /><br /> More information: [The Decimal("D") Format Specifier](#DFormatString). | 1234 ("D")<br />-> 1234<br /><br /> -1234 ("D6")<br />-> -001234 |
 | "E" or "e" | Exponential (scientific) | Result: Exponential notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: 6.<br /><br /> More information: [The Exponential ("E") Format Specifier](#EFormatString). | 1052.0329112756 ("E", en-US)<br />-> 1.052033E+003<br /><br /> 1052.0329112756 ("e", fr-FR)<br />-> 1,052033e+003<br /><br /> -1052.0329112756 ("e2", en-US)<br />-> -1.05e+003<br /><br /> -1052.0329112756 ("E2", fr-FR)<br />-> -1,05E+003 |
-| "F" or "f" | Fixed-point | Result: Integral and decimal digits with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Fixed-Point ("F") Format Specifier](#FFormatString). | 1234.567 ("F", en-US)<br />-> 1234.57<br /><br /> 1234.567 ("F", de-DE)<br />-> 1234,57<br /><br /> 1234 ("F1", en-US)<br />-> 1234.0<br /><br /> 1234 ("F1", de-DE)<br />-> 1234,0<br /><br /> -1234.56 ("F4", en-US)<br />-> -1234.5600<br /><br /> -1234.56 ("F4", de-DE)<br />-> -1234,5600 |
+| "F" or "f" | Fixed-point | Result: Integral and decimal digits with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits*?displayProperty=nameWithType>.<br /><br /> More information: [The Fixed-Point ("F") Format Specifier](#FFormatString). | 1234.567 ("F", en-US)<br />-> 1234.57<br /><br /> 1234.567 ("F", de-DE)<br />-> 1234,57<br /><br /> 1234 ("F1", en-US)<br />-> 1234.0<br /><br /> 1234 ("F1", de-DE)<br />-> 1234,0<br /><br /> -1234.56 ("F4", en-US)<br />-> -1234.5600<br /><br /> -1234.56 ("F4", de-DE)<br />-> -1234,5600 |
 | "G" or "g" | General | Result: The more compact of either fixed-point or scientific notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of significant digits.<br /><br /> Default precision specifier: Depends on numeric type.<br /><br /> More information: [The General ("G") Format Specifier](#GFormatString). | -123.456 ("G", en-US)<br />-> -123.456<br /><br /> -123.456 ("G", sv-SE)<br />-> -123,456<br /><br /> 123.4546 ("G4", en-US)<br />-> 123.5<br /><br /> 123.4546 ("G4", sv-SE)<br />-> 123,5<br /><br /> -1.234567890e-25 ("G", en-US)<br />-> -1.23456789E-25<br /><br /> -1.234567890e-25 ("G", sv-SE)<br />-> -1,23456789E-25 |
-| "N" or "n" | Number | Result: Integral and decimal digits, group separators, and a decimal separator with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Numeric ("N") Format Specifier](#NFormatString). | 1234.567 ("N", en-US)<br />-> 1,234.57<br /><br /> 1234.567 ("N", ru-RU)<br />-> 1 234,57<br /><br /> 1234 ("N1", en-US)<br />-> 1,234.0<br /><br /> 1234 ("N1", ru-RU)<br />-> 1 234,0<br /><br /> -1234.56 ("N3", en-US)<br />-> -1,234.560<br /><br /> -1234.56 ("N3", ru-RU)<br />-> -1 234,560 |
-| "P" or "p" | Percent | Result: Number multiplied by 100 and displayed with a percent symbol.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by  <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Percent ("P") Format Specifier](#PFormatString). | 1 ("P", en-US)<br />-> 100.00 %<br /><br /> 1 ("P", fr-FR)<br />-> 100,00 %<br /><br /> -0.39678 ("P1", en-US)<br />-> -39.7 %<br /><br /> -0.39678 ("P1", fr-FR)<br />-> -39,7 % |
+| "N" or "n" | Number | Result: Integral and decimal digits, group separators, and a decimal separator with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits*?displayProperty=nameWithType>.<br /><br /> More information: [The Numeric ("N") Format Specifier](#NFormatString). | 1234.567 ("N", en-US)<br />-> 1,234.57<br /><br /> 1234.567 ("N", ru-RU)<br />-> 1 234,57<br /><br /> 1234 ("N1", en-US)<br />-> 1,234.0<br /><br /> 1234 ("N1", ru-RU)<br />-> 1 234,0<br /><br /> -1234.56 ("N3", en-US)<br />-> -1,234.560<br /><br /> -1234.56 ("N3", ru-RU)<br />-> -1 234,560 |
+| "P" or "p" | Percent | Result: Number multiplied by 100 and displayed with a percent symbol.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by  <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits*?displayProperty=nameWithType>.<br /><br /> More information: [The Percent ("P") Format Specifier](#PFormatString). | 1 ("P", en-US)<br />-> 100.00 %<br /><br /> 1 ("P", fr-FR)<br />-> 100,00 %<br /><br /> -0.39678 ("P1", en-US)<br />-> -39.7 %<br /><br /> -0.39678 ("P1", fr-FR)<br />-> -39,7 % |
 | "R" or "r" | Round-trip | Result: A string that can round-trip to an identical number.<br /><br /> Supported by: <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger>.<br /><br /> Note: Recommended for the <xref:System.Numerics.BigInteger> type only. For <xref:System.Double> types, use "G17"; for <xref:System.Single> types, use "G9". <br> Precision specifier: Ignored.<br /><br /> More information: [The Round-trip ("R") Format Specifier](#RFormatString). | 123456789.12345678 ("R")<br />-> 123456789.12345678<br /><br /> -1234567890.12345678 ("R")<br />-> -1234567890.1234567 |
 | "X" or "x" | Hexadecimal | Result: A hexadecimal string.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Number of digits in the result string.<br /><br /> More information: [The Hexadecimal ("X") Format Specifier](#XFormatString). | 255 ("X")<br />-> FF<br /><br /> -1 ("x")<br />-> ff<br /><br /> 255 ("x4")<br />-> 00ff<br /><br /> -1 ("X4")<br />-> 00FF |
 | Any other single character | Unknown specifier | Result: Throws a <xref:System.FormatException> at runtime. |  |
@@ -74,7 +74,7 @@ A standard numeric format string can be used to define the formatting of a numer
   [!code-csharp[Formatting.Numeric.Standard#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#10)]
   [!code-vb[Formatting.Numeric.Standard#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#10)]
 
-- It can be supplied as the `formatString` argument in a format item used with such methods as <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>. For more information, see [Composite Formatting](composite-formatting.md). The following example uses a format item to insert a currency value in a string.
+- It can be supplied as the `formatString` argument in a format item used with such methods as <xref:System.String.Format*?displayProperty=nameWithType>, <xref:System.Console.WriteLine*?displayProperty=nameWithType>, and <xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType>. For more information, see [Composite Formatting](composite-formatting.md). The following example uses a format item to insert a currency value in a string.
 
   [!code-csharp[Formatting.Numeric.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#11)]
   [!code-vb[Formatting.Numeric.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#11)]
@@ -104,7 +104,7 @@ The result string is not affected by the formatting information of the current <
 
 ## Currency format specifier (C)
 
-The "C" (or currency) format specifier converts a number to a string that represents a currency amount. The precision specifier indicates the desired number of decimal places in the result string. If the precision specifier is omitted, the default precision is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A?displayProperty=nameWithType> property.
+The "C" (or currency) format specifier converts a number to a string that represents a currency amount. The precision specifier indicates the desired number of decimal places in the result string. If the precision specifier is omitted, the default precision is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits?displayProperty=nameWithType> property.
 
 If the value to be formatted has more than the specified or default number of decimal places, the fractional value is rounded in the result string. If the value to the right of the number of specified decimal places is 5 or greater, the last digit in the result string is rounded away from zero.
 
@@ -112,14 +112,14 @@ The result string is affected by the formatting information of the current <xref
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A>|Defines the placement of the currency symbol for positive values.|
-|<xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A>|Defines the placement of the currency symbol for negative values, and specifies whether the negative sign is represented by parentheses or the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A> property.|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the negative sign used if <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> indicates that parentheses are not used.|
-|<xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A>|Defines the currency symbol.|
-|<xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A>|Defines the default number of decimal digits in a currency value. This value can be overridden by using the precision specifier.|
-|<xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>|Defines the string that separates integral and decimal digits.|
-|<xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>|Defines the string that separates groups of integral numbers.|
-|<xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes%2A>|Defines the number of integer digits that appear in a group.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern*>|Defines the placement of the currency symbol for positive values.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern*>|Defines the placement of the currency symbol for negative values, and specifies whether the negative sign is represented by parentheses or the <xref:System.Globalization.NumberFormatInfo.NegativeSign> property.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the negative sign used if <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern*> indicates that parentheses are not used.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencySymbol*>|Defines the currency symbol.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits*>|Defines the default number of decimal digits in a currency value. This value can be overridden by using the precision specifier.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator*>|Defines the string that separates integral and decimal digits.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator*>|Defines the string that separates groups of integral numbers.|
+|<xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes*>|Defines the number of integer digits that appear in a group.|
 
 The following example formats a <xref:System.Double> value with the currency format specifier:
 [!code-csharp[Formatting.Numeric.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#1)]
@@ -137,7 +137,7 @@ The result string is affected by the formatting information of the current <xref
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative.|
 
 The following example formats an <xref:System.Int32> value with the decimal format specifier.
 [!code-csharp[Formatting.Numeric.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#2)]
@@ -157,9 +157,9 @@ The result string is affected by the formatting information of the current <xref
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative for both the coefficient and exponent.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>|Defines the string that separates the integral digit from decimal digits in the coefficient.|
-|<xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>|Defines the string that indicates that an exponent is positive.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative for both the coefficient and exponent.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator*>|Defines the string that separates the integral digit from decimal digits in the coefficient.|
+|<xref:System.Globalization.NumberFormatInfo.PositiveSign*>|Defines the string that indicates that an exponent is positive.|
 
 The following example formats a <xref:System.Double> value with the exponential format specifier:
 [!code-csharp[Formatting.Numeric.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#3)]
@@ -171,15 +171,15 @@ The following example formats a <xref:System.Double> value with the exponential 
 
 The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.
 
-The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the current <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType> property supplies the numeric precision.
+The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the current <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits?displayProperty=nameWithType> property supplies the numeric precision.
 
 The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the properties of the <xref:System.Globalization.NumberFormatInfo> object that control the formatting of the result string.
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>|Defines the string that separates integral digits from decimal digits.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A>|Defines the default number of decimal digits. This value can be overridden by using the precision specifier.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator*>|Defines the string that separates integral digits from decimal digits.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits*>|Defines the default number of decimal digits. This value can be overridden by using the precision specifier.|
 
 The following example formats a <xref:System.Double> and an <xref:System.Int32> value with the fixed-point format specifier:
 [!code-csharp[Formatting.Numeric.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#4)]
@@ -218,9 +218,9 @@ The result string is affected by the formatting information of the current <xref
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>|Defines the string that separates integral digits from decimal digits.|
-|<xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>|Defines the string that indicates that an exponent is positive.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator*>|Defines the string that separates integral digits from decimal digits.|
+|<xref:System.Globalization.NumberFormatInfo.PositiveSign*>|Defines the string that indicates that an exponent is positive.|
 
 The following example formats assorted floating-point values with the general format specifier:
 [!code-csharp[Formatting.Numeric.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#5)]
@@ -230,18 +230,18 @@ The following example formats assorted floating-point values with the general fo
 
 ## Numeric format specifier (N)
 
-The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd…", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType> property.
+The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd…", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits?displayProperty=nameWithType> property.
 
 The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the result string.
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative.|
-|<xref:System.Globalization.NumberFormatInfo.NumberNegativePattern%2A>|Defines the format of negative values, and specifies whether the negative sign is represented by parentheses or the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A> property.|
-|<xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A>|Defines the number of integral digits that appear between group separators.|
-|<xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>|Defines the string that separates groups of integral numbers.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>|Defines the string that separates integral and decimal digits.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A>|Defines the default number of decimal digits. This value can be overridden by using a precision specifier.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative.|
+|<xref:System.Globalization.NumberFormatInfo.NumberNegativePattern*>|Defines the format of negative values, and specifies whether the negative sign is represented by parentheses or the <xref:System.Globalization.NumberFormatInfo.NegativeSign> property.|
+|<xref:System.Globalization.NumberFormatInfo.NumberGroupSizes*>|Defines the number of integral digits that appear between group separators.|
+|<xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator*>|Defines the string that separates groups of integral numbers.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator*>|Defines the string that separates integral and decimal digits.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits*>|Defines the default number of decimal digits. This value can be overridden by using a precision specifier.|
 
 The following example formats assorted floating-point values with the number format specifier:
 [!code-csharp[Formatting.Numeric.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#6)]
@@ -251,20 +251,20 @@ The following example formats assorted floating-point values with the number for
 
 ## Percent format specifier (P)
 
-The percent ("P") format specifier multiplies a number by 100 and converts it to a string that represents a percentage. The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the default numeric precision supplied by the current <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A> property is used.
+The percent ("P") format specifier multiplies a number by 100 and converts it to a string that represents a percentage. The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the default numeric precision supplied by the current <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits> property is used.
 
 The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the returned string.
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.PercentPositivePattern%2A>|Defines the placement of the percent symbol for positive values.|
-|<xref:System.Globalization.NumberFormatInfo.PercentNegativePattern%2A>|Defines the placement of the percent symbol and the negative symbol for negative values.|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative.|
-|<xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A>|Defines the percent symbol.|
-|<xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A>|Defines the default number of decimal digits in a percentage value. This value can be overridden by using the precision specifier.|
-|<xref:System.Globalization.NumberFormatInfo.PercentDecimalSeparator%2A>|Defines the string that separates integral and decimal digits.|
-|<xref:System.Globalization.NumberFormatInfo.PercentGroupSeparator%2A>|Defines the string that separates groups of integral numbers.|
-|<xref:System.Globalization.NumberFormatInfo.PercentGroupSizes%2A>|Defines the number of integer digits that appear in a group.|
+|<xref:System.Globalization.NumberFormatInfo.PercentPositivePattern*>|Defines the placement of the percent symbol for positive values.|
+|<xref:System.Globalization.NumberFormatInfo.PercentNegativePattern*>|Defines the placement of the percent symbol and the negative symbol for negative values.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative.|
+|<xref:System.Globalization.NumberFormatInfo.PercentSymbol*>|Defines the percent symbol.|
+|<xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits*>|Defines the default number of decimal digits in a percentage value. This value can be overridden by using the precision specifier.|
+|<xref:System.Globalization.NumberFormatInfo.PercentDecimalSeparator*>|Defines the string that separates integral and decimal digits.|
+|<xref:System.Globalization.NumberFormatInfo.PercentGroupSeparator*>|Defines the string that separates groups of integral numbers.|
+|<xref:System.Globalization.NumberFormatInfo.PercentGroupSizes*>|Defines the number of integer digits that appear in a group.|
 
 The following example formats floating-point values with the percent format specifier:
 [!code-csharp[Formatting.Numeric.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#7)]
@@ -285,9 +285,9 @@ The result string is affected by the formatting information of the current <xref
 
 |NumberFormatInfo property|Description|
 |-------------------------------|-----------------|
-|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>|Defines the string that indicates that a number is negative.|
-|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>|Defines the string that separates integral digits from decimal digits.|
-|<xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>|Defines the string that indicates that an exponent is positive.|
+|<xref:System.Globalization.NumberFormatInfo.NegativeSign*>|Defines the string that indicates that a number is negative.|
+|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator*>|Defines the string that separates integral digits from decimal digits.|
+|<xref:System.Globalization.NumberFormatInfo.PositiveSign*>|Defines the string that indicates that an exponent is positive.|
 
 The following example formats a <xref:System.Numerics.BigInteger> value with the round-trip format specifier.
 [!code-csharp[R format specifier with a BigInteger](../../../samples/snippets/standard/base-types/format-strings/biginteger-r.cs)]
@@ -340,7 +340,7 @@ Some descriptions of standard numeric format specifiers refer to integral or flo
 
 ### Floating-point infinities and NaN
 
-Regardless of the format string, if the value of a <xref:System.Half>, <xref:System.Single>, or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
+Regardless of the format string, if the value of a <xref:System.Half>, <xref:System.Single>, or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol*>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol*>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
 
 ## Code example
 

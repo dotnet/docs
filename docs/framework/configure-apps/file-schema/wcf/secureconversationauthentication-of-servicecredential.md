@@ -49,6 +49,6 @@ Specifies the settings for a secure conversation service.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.SecureConversationServiceElement>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.SecureConversationAuthentication%2A>
-- <xref:System.ServiceModel.Description.ServiceCredentials.SecureConversationAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.SecureConversationAuthentication*>
+- <xref:System.ServiceModel.Description.ServiceCredentials.SecureConversationAuthentication*>
 - <xref:System.ServiceModel.Security.SecureConversationServiceCredential>

@@ -37,15 +37,15 @@ For more information, see the [Packaging and Deploying Resources](package-and-de
 
 ## Retrieve resources
 
-At runtime, an app loads the appropriate localized resources on a per-thread basis, based on the culture specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. This property value is derived as follows:
+At runtime, an app loads the appropriate localized resources on a per-thread basis, based on the culture specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property. This property value is derived as follows:
 
-- By directly assigning a <xref:System.Globalization.CultureInfo> object that represents the localized culture to the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> property.
+- By directly assigning a <xref:System.Globalization.CultureInfo> object that represents the localized culture to the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property.
 
-- If a culture is not explicitly assigned, by retrieving the default thread UI culture from the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> property.
+- If a culture is not explicitly assigned, by retrieving the default thread UI culture from the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture?displayProperty=nameWithType> property.
 
 - If a default thread UI culture is not explicitly assigned, by retrieving the culture for the current user on the local computer. .NET implementations running on Windows do this  by calling the Windows [`GetUserDefaultUILanguage`](/windows/desktop/api/winnls/nf-winnls-getuserdefaultuilanguage) function.
 
-For more information about how the current UI culture is set, see the <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> reference pages.
+For more information about how the current UI culture is set, see the <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> reference pages.
 
 You can then retrieve resources for the current UI culture or for a specific culture by using the <xref:System.Resources.ResourceManager?displayProperty=nameWithType> class. Although the <xref:System.Resources.ResourceManager> class is most commonly used for retrieving resources, the <xref:System.Resources?displayProperty=nameWithType> namespace contains additional types that you can use to retrieve resources. These include:
 
@@ -63,7 +63,7 @@ You can then retrieve resources for the current UI culture or for a specific cul
 ## See also
 
 - <xref:System.Globalization.CultureInfo>
-- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>
+- <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType>
 - [Create resource files](create-resource-files.md)
 - [Package and deploy resources](package-and-deploy-resources.md)
 - [Create satellite assemblies](create-satellite-assemblies.md)

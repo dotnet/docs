@@ -1,8 +1,9 @@
 ---
 title: "XML Schema Definition Tool (Xsd.exe)"
-description: The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly, which improves the startup performance of XmlSerializer.
-ms.date: "03/30/2017"
+description: Use the XML Schema Definition tool (Xsd.exe) to generate XML schemas or common language runtime (CLR) classes from XDR, XML, and XSD files, or from types in compiled assemblies.
+ms.date: "03/06/2026"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
+ai-usage: ai-assisted
 ---
 # XML Schema Definition Tool (Xsd.exe)
 
@@ -49,8 +50,8 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 
 |Option|Description|
 |------------|-----------------|
-|**/c\[lasses\]**|Generates classes that correspond to the specified schema. To read XML data into the object, use the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A?displayProperty=nameWithType> method.|
-|**/d\[ataset\]**|Generates a class derived from <xref:System.Data.DataSet> that corresponds to the specified schema. To read XML data into the derived class, use the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method.|
+|**/c\[lasses\]**|Generates classes that correspond to the specified schema. To read XML data into the object, use the <xref:System.Xml.Serialization.XmlSerializer.Deserialize*?displayProperty=nameWithType> method.|
+|**/d\[ataset\]**|Generates a class derived from <xref:System.Data.DataSet> that corresponds to the specified schema. To read XML data into the derived class, use the <xref:System.Data.DataSet.ReadXml*?displayProperty=nameWithType> method.|
 
  You can also specify any of the following options for .xsd files.
 
@@ -235,3 +236,4 @@ xsd myAssembly.dll
 - [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md)
 - [LINQ (Language-Integrated Query) (C#)](../../csharp/linq/index.md)
 - [LINQ (Language-Integrated Query) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Xsd.exe source code (Reference Source)](https://github.com/microsoft/referencesource/blob/master/xsd/microsoft/devapps/xsd/xsd.cs)

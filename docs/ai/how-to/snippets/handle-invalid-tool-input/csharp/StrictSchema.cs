@@ -10,9 +10,9 @@ class StrictSchema
         string? model = config["ModelName"];
         string? key = config["OpenAIKey"];
 
-        // Ensure your model configuration uses a compatible version (e.g., gpt-4o-2024-08-06 or later).
+        // Ensure your model configuration uses a compatible version.
         IChatClient client = new ChatClientBuilder(
-            new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
+            new OpenAIClient(key).GetChatClient(model ?? "gpt-5").AsIChatClient())
             .UseFunctionInvocation()
             .Build();
 

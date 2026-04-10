@@ -101,7 +101,7 @@ The following official implementations of `IMembershipTable` are currently avail
 
 ### Configure Redis clustering
 
-Configure Redis as the clustering provider using the <xref:Microsoft.Extensions.Hosting.RedisClusteringISiloBuilderExtensions.UseRedisClustering%2A> extension method:
+Configure Redis as the clustering provider using the <xref:Microsoft.Extensions.Hosting.RedisClusteringISiloBuilderExtensions.UseRedisClustering*> extension method:
 
 ```csharp
 using StackExchange.Redis;
@@ -261,7 +261,7 @@ For more information about Orleans and .NET Aspire integration, see [Orleans and
 
 ### Configure Cassandra clustering
 
-Configure Apache Cassandra as the clustering provider using the <xref:Orleans.Clustering.Cassandra.Hosting.CassandraMembershipHostingExtensions.UseCassandraClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) NuGet package:
+Configure Apache Cassandra as the clustering provider using the <xref:Orleans.Clustering.Cassandra.Hosting.CassandraMembershipHostingExtensions.UseCassandraClustering*> extension method. Install the [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) NuGet package:
 
 ```dotnetcli
 dotnet add package Microsoft.Orleans.Clustering.Cassandra
@@ -329,7 +329,7 @@ Consider Cassandra for clustering when:
 
 ### Configure Azure Cosmos DB clustering
 
-Configure Azure Cosmos DB as the clustering provider using the <xref:Orleans.Hosting.HostingExtensions.UseCosmosClustering%2A> extension method. Install the [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) NuGet package:
+Configure Azure Cosmos DB as the clustering provider using the <xref:Orleans.Hosting.HostingExtensions.UseCosmosClustering*> extension method. Install the [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) NuGet package:
 
 ```dotnetcli
 dotnet add package Microsoft.Orleans.Clustering.Cosmos

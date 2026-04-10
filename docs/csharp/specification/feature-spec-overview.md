@@ -1,7 +1,7 @@
 ---
 title: "Feature specifications"
 description: "Understand the relationships among the ECMA C# standard and the feature specifications for newer language features implemented in roslyn."
-ms.date: 02/06/2026
+ms.date: 04/08/2026
 ---
 # Feature specifications
 

@@ -1,8 +1,9 @@
 ---
 title: Quickstart - Evaluate the quality of a model's response
 description: Learn how to create an MSTest app to evaluate the AI chat response of a language model.
-ms.date: 03/18/2025
+ms.date: 04/09/2026
 ms.topic: quickstart
+ai-usage: ai-assisted
 ---
 
 # Quickstart: Evaluate response quality
@@ -19,11 +20,11 @@ In this quickstart, you create an MSTest app to evaluate the quality of a chat r
 
 ## Configure the AI service
 
-To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-4o` model.
+To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-5` model.
 
 ## Create the test app
 
-Complete the following steps to create an MSTest project that connects to the `gpt-4o` AI model.
+Complete the following steps to create an MSTest project that connects to an AI model.
 
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new MSTest app with the `dotnet new` command:
 
@@ -39,21 +40,20 @@ Complete the following steps to create an MSTest project that connects to the `g
     dotnet add package Microsoft.Extensions.AI.Abstractions
     dotnet add package Microsoft.Extensions.AI.Evaluation
     dotnet add package Microsoft.Extensions.AI.Evaluation.Quality
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and tenant ID:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint and tenant ID:
 
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
     dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 
-   (Depending on your environment, the tenant ID might not be needed. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
+   (Depending on your environment, you might not need the tenant ID. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
 
 1. Open the new app in your editor of choice.
 
@@ -84,7 +84,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    This method does the following:
 
-   - Invokes the <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> to evaluate the *coherence* of the response. The <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)> method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> that contains a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric>. A `NumericMetric` contains a numeric value that's typically used to represent numeric scores that fall within a well-defined range.
+   - Invokes the <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> to evaluate the *coherence* of the response. The <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator.EvaluateAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatResponse,Microsoft.Extensions.AI.Evaluation.ChatConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.Evaluation.EvaluationContext},System.Threading.CancellationToken)> method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> that contains a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric>. A `NumericMetric` contains a numeric value that typically represents numeric scores that fall within a well-defined range.
    - Retrieves the coherence score from the <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult>.
    - Validates the *default interpretation* for the returned coherence metric. Evaluators can include a default interpretation for the metrics they return. You can also change the default interpretation to suit your specific requirements, if needed.
    - Validates that no diagnostics are present on the returned coherence metric. Evaluators can include diagnostics on the metrics they return to indicate errors, warnings, or other exceptional conditions encountered during evaluation.

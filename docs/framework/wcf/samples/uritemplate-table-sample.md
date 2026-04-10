@@ -14,7 +14,7 @@ The [UriTemplateTable sample](https://github.com/dotnet/samples/tree/main/framew
 
 - Populating a `UriTemplateTable` with a set of key/value pairs.
 
-- Matching a candidate URI against the table using <xref:System.UriTemplateTable.MatchSingle%2A>.
+- Matching a candidate URI against the table using <xref:System.UriTemplateTable.MatchSingle*>.
 
 ### To set up, build, and run the sample
 

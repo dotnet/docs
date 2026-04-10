@@ -45,7 +45,7 @@ This change was introduced to improve the performance of asynchronous reads and 
 - [Win32 FileStream will issue a seek on every ReadAsync call](https://github.com/dotnet/runtime/issues/16354)
 - [FileStream.Windows useAsync WriteAsync calls blocking APIs](https://github.com/dotnet/runtime/issues/25905)
 
-With this change, <xref:System.IO.FileStream.ReadAsync%2A> operations are up to two times faster, and <xref:System.IO.FileStream.WriteAsync%2A> operations are up to five times faster.
+With this change, <xref:System.IO.FileStream.ReadAsync*> operations are up to two times faster, and <xref:System.IO.FileStream.WriteAsync*> operations are up to five times faster.
 
 ## Recommended action
 

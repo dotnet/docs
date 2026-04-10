@@ -14,8 +14,8 @@ ms.date: 11/01/2020
 
 Due to [security vulnerabilities](../../../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following methods are now obsolete and produce a compile-time warning with ID `SYSLIB0011`. Additionally, in ASP.NET Core 5.0 and later apps, they will throw a <xref:System.NotSupportedException>, unless the web app has re-enabled <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> functionality.
 
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize*?displayProperty=nameWithType>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize*?displayProperty=nameWithType>
 
 The following serialization methods are also obsolete and produce warning `SYSLIB0011`, but have no behavioral changes:
 
@@ -76,8 +76,8 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 
 ## Affected APIs
 
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=fullName>
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize*?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize*?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.Formatter.Deserialize(System.IO.Stream)?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>

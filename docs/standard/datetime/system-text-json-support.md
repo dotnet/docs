@@ -16,7 +16,7 @@ helpviewer_keywords:
 # DateTime and DateTimeOffset support in System.Text.Json
 
 The `System.Text.Json` library parses and writes <xref:System.DateTime> and <xref:System.DateTimeOffset> values according to the ISO 8601-1:2019 extended profile.
-[Converters](xref:System.Text.Json.Serialization.JsonConverter%601) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>. You can also use <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to implement custom support.
+[Converters](xref:System.Text.Json.Serialization.JsonConverter`1) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>. You can also use <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to implement custom support.
 
 ## Support for the ISO 8601-1:2019 format
 
@@ -72,9 +72,9 @@ The following example serializes an `Appointment` object, displays the resulting
 In the preceding code:
 
 - An `Appointment` object is instantiated and assigned to the `appointment` variable.
-- The `appointment` instance is serialized to JSON using <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType>.
+- The `appointment` instance is serialized to JSON using <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=nameWithType>.
 - The resulting JSON is written to the console.
-- The JSON is deserialized back into a new instance of the `Appointment` type using <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
+- The JSON is deserialized back into a new instance of the `Appointment` type using <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType>.
 - The original and newly deserialized instances are compared for equality.
 - The result of the comparison is written to the console.
 
@@ -82,7 +82,7 @@ In the preceding code:
 
 ### When using <xref:System.Text.Json.JsonSerializer>
 
-If you want the serializer to perform custom parsing or formatting, you can implement [custom converters](xref:System.Text.Json.Serialization.JsonConverter%601). The following sections show a few examples:
+If you want the serializer to perform custom parsing or formatting, you can implement [custom converters](xref:System.Text.Json.Serialization.JsonConverter`1). The following sections show a few examples:
 
 - [DateTime(Offset).Parse and DateTime(Offset).ToString](#datetimeoffsetparse-and-datetimeoffsettostring)
 - [Utf8Parser and Utf8Formatter](#-and-)
@@ -102,7 +102,7 @@ This approach is also less performant than using the serializer's native impleme
 :::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example1/Program.cs":::
 
 > [!NOTE]
-> When implementing <xref:System.Text.Json.Serialization.JsonConverter%601>, and `T` is <xref:System.DateTime>, the `typeToConvert` parameter will always be `typeof(DateTime)`.
+> When implementing <xref:System.Text.Json.Serialization.JsonConverter`1>, and `T` is <xref:System.DateTime>, the `typeToConvert` parameter will always be `typeof(DateTime)`.
 The parameter is useful for handling polymorphic cases and when using generics to get `typeof(T)` in a performant way.
 
 #### <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
@@ -143,8 +143,8 @@ The following converters handle Unix epoch format with or without a time zone of
 
 If you want to write a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonWriter>,
 you can format your custom representation to a <xref:System.String>, `ReadOnlySpan<Byte>`, `ReadOnlySpan<Char>`, or <xref:System.Text.Json.JsonEncodedText>,
-then pass it to the corresponding <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A?displayProperty=nameWithType>
-or <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A?displayProperty=nameWithType> method.
+then pass it to the corresponding <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue*?displayProperty=nameWithType>
+or <xref:System.Text.Json.Utf8JsonWriter.WriteString*?displayProperty=nameWithType> method.
 
 The following example shows how a custom <xref:System.DateTime> format can be created with <xref:System.DateTime.ToString(System.String,System.IFormatProvider)>
 and then written with the <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String)> method:

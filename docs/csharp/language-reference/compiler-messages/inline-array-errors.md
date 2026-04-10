@@ -105,7 +105,7 @@ The argument to the indexer must be:
 
 ## Conversions to Span
 
-You often use <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> to work with inline arrays. The compiler generates the following errors for invalid conversions:
+You often use <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> to work with inline arrays. The compiler generates the following errors for invalid conversions:
 
 - **CS9164**: *Cannot convert expression to `Span<T>` because it is not an assignable variable*
 - **CS9165**: *Cannot convert expression to `ReadOnlySpan<T>` because it may not be passed or returned by reference*
@@ -120,4 +120,4 @@ An inline array can be implicitly converted to a `Span<T>` or `ReadOnlySpan<T>` 
 - The inline array must be writable in order to convert an inline array to a `Span<T>`. If the array is readonly, you can't convert it to a writable `Span<T>`. You can use `ReadOnlySpan<T>` instead.
 - The *safe context* of the inline array must be at least as wide as the *safe context* of the `Span<T>` or `ReadOnlySpan<T>` for the conversion to succeed. You must either limit the context of the span, or expand the scope of the inline array.
 
-In addition, the compiler never generates calls to a `Slice` method in an inline buffer. Conversion operators to convert an inline buffer to a `Span` or `ReadOnlySpan` aren't called. The compiler generates code to create a <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> directly from the memory buffer.
+In addition, the compiler never generates calls to a `Slice` method in an inline buffer. Conversion operators to convert an inline buffer to a `Span` or `ReadOnlySpan` aren't called. The compiler generates code to create a <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> directly from the memory buffer.

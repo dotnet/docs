@@ -89,8 +89,8 @@ None.
 ## See also
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
-- <xref:System.ServiceModel.WSHttpSecurity.Transport%2A>
-- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.WSHttpSecurity.Transport*>
+- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Transport*>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

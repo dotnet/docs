@@ -156,23 +156,45 @@ public interface IMyGrain : IGrainWithStringKey
 
 ### Breaking change: `OrleansConstructorAttribute` obsoleted
 
-The `OrleansConstructorAttribute` has been obsoleted. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> or `ActivatorUtilitiesConstructorAttribute` instead to specify which constructor the serializer should use.
+The `OrleansConstructorAttribute` has been obsoleted. Use <xref:Orleans.GeneratedActivatorConstructorAttribute> or <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute> instead. Only apply these attributes to constructors that require services to be injected via dependency injection. Don't use them to indicate how Orleans should set serialized data properties or fields.
 
 ```csharp
+public interface IMyDependency
+{
+}
+
 // Orleans 7.x
 [GenerateSerializer]
 public class MyClass
 {
-    [OrleansConstructor] // Obsolete
-    public MyClass(string value) { }
+    [Id(0)]
+    public string Value { get; set; }
+
+    [OrleansConstructor] // Obsolete and ignored
+    public MyClass(IMyDependency dependency)
+    {
+        Dependency = dependency;
+    }
+
+    [field: NonSerialized]
+    public IMyDependency Dependency { get; }
 }
 
 // Orleans 10.0
 [GenerateSerializer]
 public class MyClass
 {
+    [Id(0)]
+    public string Value { get; set; }
+
     [GeneratedActivatorConstructor]
-    public MyClass(string value) { }
+    public MyClass(IMyDependency dependency)
+    {
+        Dependency = dependency;
+    }
+
+    [field: NonSerialized]
+    public IMyDependency Dependency { get; }
 }
 ```
 
@@ -309,7 +331,7 @@ For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#
 
 ## Hosting
 
-The <xref:Orleans.ClientBuilder> type is replaced with the <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means an Orleans client can be added to an existing host without creating a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> completes, the client connects automatically. Services added to the `IHostBuilder` start in the order of registration. Calling <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A>, for example, ensures Orleans starts before ASP.NET Core starts, allowing immediate access to the client from the ASP.NET Core application.
+The <xref:Orleans.ClientBuilder> type is replaced with the <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means an Orleans client can be added to an existing host without creating a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync*?displayProperty=nameWithType> completes, the client connects automatically. Services added to the `IHostBuilder` start in the order of registration. Calling <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults*>, for example, ensures Orleans starts before ASP.NET Core starts, allowing immediate access to the client from the ASP.NET Core application.
 
 To emulate the previous <xref:Orleans.ClientBuilder> behavior, create a separate `HostBuilder` and configure it with an Orleans client. An `IHostBuilder` can be configured with either an Orleans client or an Orleans silo. All silos register an instance of <xref:Orleans.IGrainFactory> and <xref:Orleans.IClusterClient> that the application can use, so configuring a client separately is unnecessary and unsupported.
 
@@ -556,7 +578,7 @@ In the preceding code, OpenTelemetry is configured to monitor:
 - `Microsoft.Orleans.Runtime`
 - `Microsoft.Orleans.Application`
 
-To propagate activity, call <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation%2A>:
+To propagate activity, call <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation*>:
 
 ```csharp
 builder.Host.UseOrleans((_, clientBuilder) =>

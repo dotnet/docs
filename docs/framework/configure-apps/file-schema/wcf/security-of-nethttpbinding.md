@@ -66,8 +66,8 @@ The following sections describe attributes, child elements, and parent elements.
 
 ## See also
 
-- <xref:System.ServiceModel.NetHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.NetHttpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security*>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Selecting a Credential Type](../../../wcf/feature-details/selecting-a-credential-type.md)
 - [Bindings](../../../wcf/bindings.md)

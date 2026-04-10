@@ -10,7 +10,7 @@ As a library author, exposing logging is a great way to provide consumers with i
 
 ## When to use the `ILoggerFactory` interface
 
-When writing a library that emits logs, you need an <xref:Microsoft.Extensions.Logging.ILogger> object to record the logs. To get that object, your API can either accept an <xref:Microsoft.Extensions.Logging.ILogger%601> parameter, or it can accept an <xref:Microsoft.Extensions.Logging.ILoggerFactory> after which you call <xref:Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger%2A?displayProperty=nameWithType>. Which approach should be preferred?
+When writing a library that emits logs, you need an <xref:Microsoft.Extensions.Logging.ILogger> object to record the logs. To get that object, your API can either accept an <xref:Microsoft.Extensions.Logging.ILogger`1> parameter, or it can accept an <xref:Microsoft.Extensions.Logging.ILoggerFactory> after which you call <xref:Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger*?displayProperty=nameWithType>. Which approach should be preferred?
 
 - When you need a logging object that can be passed along to multiple classes so that all of them can emit logs, use `ILoggerFactory`. It's recommended that each class creates logs with a separate category, named the same as the class. To do this, you need the factory to create unique `ILogger<TCategoryName>` objects for each class that emits logs. Common examples include public entry point APIs for a library or public constructors of types that might create helper classes internally.
 - When you need a logging object that's only used inside one class and never shared, use `ILogger<TCategoryName>`, where `TCategoryName` is the type that produces the logs. A common example of this is a constructor for a class created by dependency injection.
@@ -21,7 +21,7 @@ For more information, see [How filtering rules are applied](overview.md#how-filt
 
 ## Prefer source-generated logging
 
-The `ILogger` API supports two approaches to using the API. You can either call methods such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A?displayProperty=nameWithType>, or you can use the logging source generator to define strongly typed logging methods. For most situations, the source generator is recommended because it offers superior performance and stronger typing. It also isolates logging-specific concerns such as message templates, IDs, and log levels from the calling code. The non-source-generated approach is primarily useful for scenarios where you're willing to give up those advantages to make the code more concise.
+The `ILogger` API supports two approaches to using the API. You can either call methods such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError*?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation*?displayProperty=nameWithType>, or you can use the logging source generator to define strongly typed logging methods. For most situations, the source generator is recommended because it offers superior performance and stronger typing. It also isolates logging-specific concerns such as message templates, IDs, and log levels from the calling code. The non-source-generated approach is primarily useful for scenarios where you're willing to give up those advantages to make the code more concise.
 
 :::code source="../snippets/logging/library-authors/LogMessages.cs":::
 
@@ -83,6 +83,6 @@ When you consume a library that exposes logging APIs that expect either an `ILog
 Library consumers can default to _null logging_ if no `ILoggerFactory` is provided. The use of _null logging_ differs from defining types as nullable (`ILoggerFactory?`), as the types are non-null. These convenience-based types don't log anything and are essentially no-ops. Consider using any of the available abstraction types where applicable:
 
 - <xref:Microsoft.Extensions.Logging.Abstractions.NullLogger.Instance?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Logging.Abstractions.NullLogger%601?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.Abstractions.NullLogger`1?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider.Instance?displayProperty=nameWithType>

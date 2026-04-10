@@ -50,10 +50,10 @@ In most cases, no action is needed. However, if you desire the previous culture-
 
 ## Affected APIs
 
-- <xref:System.Globalization.CultureInfo.%23ctor%2A>
+- <xref:System.Globalization.CultureInfo.%23ctor*>
 - <xref:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)?displayProperty=fullName>
-- <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName>
-- <xref:System.Globalization.RegionInfo.%23ctor%2A>
+- <xref:System.Globalization.CultureInfo.GetCultureInfo*?displayProperty=fullName>
+- <xref:System.Globalization.RegionInfo.%23ctor*>
 - Any APIs that perform string casing, comparison, or searching
 
 ## See also

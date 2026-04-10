@@ -9,8 +9,8 @@ Module Example4
         For ctr As Integer = 1 To 10
             one2 += 0.1
         Next
-        Console.WriteLine("{0:R} = {1:R}: {2}", one1, one2, one1.Equals(one2))
-        Console.WriteLine("{0:R} is approximately equal to {1:R}: {2}",
+        Console.WriteLine("{0} = {1}: {2}", one1, one2, one1.Equals(one2))
+        Console.WriteLine("{0} is approximately equal to {1}: {2}",
                         one1, one2,
                         IsApproximatelyEqual(one1, one2, 0.000000001))
     End Sub
@@ -36,6 +36,7 @@ Module Example4
         Return Math.Abs((value1 - value2) / divisor) <= epsilon
     End Function
 End Module
+
 ' The example displays the following output:
 '       1 = 0.99999999999999989: False
 '       1 is approximately equal to 0.99999999999999989: True

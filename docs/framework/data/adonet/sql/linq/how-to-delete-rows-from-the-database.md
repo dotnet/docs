@@ -30,7 +30,7 @@ The following steps assume that a valid <xref:System.Data.Linq.DataContext> conn
 
 1. Query the database for the row to be deleted.
 
-2. Call the <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> method.
+2. Call the <xref:System.Data.Linq.Table`1.DeleteOnSubmit*> method.
 
 3. Submit the change to the database.
 

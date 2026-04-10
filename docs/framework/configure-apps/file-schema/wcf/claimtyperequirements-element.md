@@ -14,11 +14,11 @@ Specifies a collection of required claim types.
 
 ## See also
 
-- <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.ClaimTypeRequirements%2A>
-- <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.ClaimTypeRequirements*>
+- <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.ClaimTypeRequirements*>
 - <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>
 - <xref:System.ServiceModel.Configuration.ClaimTypeElement>
-- <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters%2A>
+- <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)

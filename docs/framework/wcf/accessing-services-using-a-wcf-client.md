@@ -79,7 +79,7 @@ Public Interface ICalculator
 End Interface
 ```
 
- The ServiceModel Metadata utility tool and **Add Service Reference** in Visual Studio generates the following WCF client class. The class inherits from the generic <xref:System.ServiceModel.ClientBase%601> class and implements the `ICalculator` interface. The tool also generates the `ICalculator` interface (not shown here).
+ The ServiceModel Metadata utility tool and **Add Service Reference** in Visual Studio generates the following WCF client class. The class inherits from the generic <xref:System.ServiceModel.ClientBase`1> class and implements the `ICalculator` interface. The tool also generates the `ICalculator` interface (not shown here).
 
 ```csharp
 public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator

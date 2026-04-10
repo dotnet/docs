@@ -75,11 +75,11 @@ Represents a collection of X.509 certificates provided by specific services (sco
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates%2A>
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates*>
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection>
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
-- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates*>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md)
 - [\<add>](add-of-scopedcertificates-element.md)

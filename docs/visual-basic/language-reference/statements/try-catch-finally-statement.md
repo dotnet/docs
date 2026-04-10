@@ -101,7 +101,7 @@ If a `Try` statement does not contain at least one `Catch` block, it must contai
 
 The `Catch` block `exception` argument is an instance of the <xref:System.Exception> class or a class that derives from the `Exception` class. The `Exception` class instance corresponds to the error that occurred in the `Try` block.
 
-The properties of the `Exception` object help to identify the cause and location of an exception. For example, the <xref:System.Exception.StackTrace%2A> property lists the called methods that led to the exception, helping you find where the error occurred in the code. <xref:System.Exception.Message%2A> returns a message that describes the exception. <xref:System.Exception.HelpLink%2A> returns a link to an associated Help file. <xref:System.Exception.InnerException%2A> returns the `Exception` object that caused the current exception, or it returns `Nothing` if there is no original `Exception`.
+The properties of the `Exception` object help to identify the cause and location of an exception. For example, the <xref:System.Exception.StackTrace> property lists the called methods that led to the exception, helping you find where the error occurred in the code. <xref:System.Exception.Message*> returns a message that describes the exception. <xref:System.Exception.HelpLink*> returns a link to an associated Help file. <xref:System.Exception.InnerException*> returns the `Exception` object that caused the current exception, or it returns `Nothing` if there is no original `Exception`.
 
 ## Considerations when using a `Try…Catch` statement
 
@@ -113,7 +113,7 @@ Use a `Try…Catch` statement only to signal the occurrence of unusual or unanti
 
 - Exception handling makes a program more complex.
 
-You do not always need a `Try…Catch` statement to check for a condition that is likely to occur. The following example checks whether a file exists before trying to open it. This reduces the need for catching an exception thrown by the <xref:System.IO.File.OpenText%2A> method.
+You do not always need a `Try…Catch` statement to check for a condition that is likely to occur. The following example checks whether a file exists before trying to open it. This reduces the need for catching an exception thrown by the <xref:System.IO.File.OpenText*> method.
 
 [!code-vb[VbVbalrStatements#94](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#94)]
 
@@ -125,7 +125,7 @@ If you mark a method with the [Async](../modifiers/async.md) modifier, you can u
 
 A task returned by an Async method may end in a faulted state, indicating that it completed due to an unhandled exception. A task may also end in a canceled state, which results in an `OperationCanceledException` being thrown out of the await expression. To catch either type of exception, place the `Await` expression that's associated with the task in a `Try` block, and catch the exception in the `Catch` block. An example is provided later in this topic.
 
-A task can be in a faulted state because multiple exceptions were responsible for its faulting. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>. When you await such a task, the caught exception is only one of the exceptions, and you can't predict which exception will be caught. An example is provided later in this topic.
+A task can be in a faulted state because multiple exceptions were responsible for its faulting. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType>. When you await such a task, the caught exception is only one of the exceptions, and you can't predict which exception will be caught. An example is provided later in this topic.
 
 An `Await` expression can't be inside a `Catch` block or `Finally` block.
 
@@ -187,7 +187,7 @@ Uncomment the `Throw New OperationCancelledException` line to demonstrate what h
 
 ### Handling multiple exceptions in async methods
 
-The following example illustrates exception handling where multiple tasks can result in multiple exceptions. The `Try` block has the `Await` expression for the task that <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> returned. The task is complete when the three tasks to which <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> is applied are complete.
+The following example illustrates exception handling where multiple tasks can result in multiple exceptions. The `Try` block has the `Await` expression for the task that <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType> returned. The task is complete when the three tasks to which <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType> is applied are complete.
 
 Each of the three tasks causes an exception. The `Catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that `Task.WhenAll` returned.
 
@@ -195,7 +195,7 @@ Each of the three tasks causes an exception. The `Catch` block iterates through 
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Information.Err%2A>
+- <xref:Microsoft.VisualBasic.Information.Err*>
 - <xref:System.Exception>
 - [Exit Statement](exit-statement.md)
 - [On Error Statement](on-error-statement.md)

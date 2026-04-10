@@ -180,7 +180,7 @@ Tuples are a lightweight data structure that you most commonly use to return mul
 
 - Define one or more `ByRef` parameters, in addition to returning a value from the method.
 
-Visual Basic's support for tuples lets you quickly define a tuple, optionally assign semantic names to its values, and quickly retrieve its values. The following example wraps a call to the <xref:System.Int32.TryParse%2A> method and returns a tuple.
+Visual Basic's support for tuples lets you quickly define a tuple, optionally assign semantic names to its values, and quickly retrieve its values. The following example wraps a call to the <xref:System.Int32.TryParse*> method and returns a tuple.
 
 :::code language="vb" source="../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="ParseIntegerReturnsTuple":::
 

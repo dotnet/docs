@@ -59,7 +59,7 @@ Adds a listener to the `Listeners` collection.
 
  The <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes share the same `Listeners` collection. If you add a listener object to the collection in one of these classes, the other class uses the same listener. The listener classes derive from the <xref:System.Diagnostics.TraceListener>.
 
- If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify unique names for each trace listener, which allows you to identify and manage individual trace listeners within the <xref:System.Diagnostics.Debug.Listeners%2A> and <xref:System.Diagnostics.Trace.Listeners%2A> collections.
+ If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name*> of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify unique names for each trace listener, which allows you to identify and manage individual trace listeners within the <xref:System.Diagnostics.Debug.Listeners*> and <xref:System.Diagnostics.Trace.Listeners*> collections.
 
 > [!NOTE]
 > Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.
@@ -73,7 +73,7 @@ Adds a listener to the `Listeners` collection.
 
 |Trace listener class|initializeData attribute value|
 |--------------------------|------------------------------------|
-|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to <xref:System.Console.Error%2A?displayProperty=nameWithType>; "`false`" to write to <xref:System.Console.Out%2A?displayProperty=nameWithType>.|
+|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor*> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to <xref:System.Console.Error*?displayProperty=nameWithType>; "`false`" to write to <xref:System.Console.Out*?displayProperty=nameWithType>.|
 |<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|
 |<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of the name of an existing event log source.|
 |<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|

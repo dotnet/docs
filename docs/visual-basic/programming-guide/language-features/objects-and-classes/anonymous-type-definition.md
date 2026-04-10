@@ -49,7 +49,7 @@ End Class
 
 In addition, anonymous type definitions contain a parameterless constructor. Constructors that require parameters are not permitted.
 
-If an anonymous type declaration contains at least one key property, the type definition overrides three members inherited from <xref:System.Object>: <xref:System.Object.Equals%2A>, <xref:System.Object.GetHashCode%2A>, and <xref:System.Object.ToString%2A>. If no key properties are declared, only <xref:System.Object.ToString%2A> is overridden. The overrides provide the following functionality:
+If an anonymous type declaration contains at least one key property, the type definition overrides three members inherited from <xref:System.Object>: <xref:System.Object.Equals*>, <xref:System.Object.GetHashCode*>, and <xref:System.Object.ToString*>. If no key properties are declared, only <xref:System.Object.ToString*> is overridden. The overrides provide the following functionality:
 
 - `Equals` returns `True` if two anonymous type instances are the same instance, or if they meet the following conditions:
 
@@ -73,7 +73,7 @@ If an anonymous type declaration contains at least one key property, the type de
 
 Explicitly named properties of an anonymous type cannot conflict with these generated methods. That is, you cannot use `.Equals`, `.GetHashCode`, or `.ToString` to name a property.
 
-Anonymous type definitions that include at least one key property also implement the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, where `T` is the type of the anonymous type.
+Anonymous type definitions that include at least one key property also implement the <xref:System.IEquatable`1?displayProperty=nameWithType> interface, where `T` is the type of the anonymous type.
 
 > [!NOTE]
 > Anonymous type declarations create the same anonymous type only if they occur in the same assembly, their properties have the same names and the same inferred types, the properties are declared in the same order, and the same properties are marked as key properties.

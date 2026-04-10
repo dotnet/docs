@@ -76,7 +76,7 @@ In the preceding example:
 
 - The `ExampleAsyncDisposable` is a nonsealed class that implements the <xref:System.IAsyncDisposable> interface.
 - It contains a private `IAsyncDisposable` field, `_example`, that's initialized in the constructor.
-- The `DisposeAsync` method delegates to the `DisposeAsyncCore` method and calls <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> to notify the garbage collector that the finalizer doesn't have to run.
+- The `DisposeAsync` method delegates to the `DisposeAsyncCore` method and calls <xref:System.GC.SuppressFinalize*?displayProperty=nameWithType> to notify the garbage collector that the finalizer doesn't have to run.
 - It contains a `DisposeAsyncCore()` method that calls the `_example.DisposeAsync()` method, and sets the field to `null`.
 - The `DisposeAsyncCore()` method is `virtual`, which allows subclasses to override it with custom behavior.
 
@@ -133,13 +133,13 @@ await using var transaction = await context.Database.BeginTransactionAsync(token
 
 In the preceding example:
 
-- The <xref:System.Data.Common.DbConnection.BeginTransactionAsync%2A> method is awaited.
+- The <xref:System.Data.Common.DbConnection.BeginTransactionAsync*> method is awaited.
 - The return type is <xref:System.Data.Common.DbTransaction>, which implements `IAsyncDisposable`.
 - The `transaction` is used asynchronously, and also awaited.
 
 ## Stacked usings
 
-In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `await using` statements with <xref:System.Threading.Tasks.ValueTask.ConfigureAwait%2A> could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync> in errant conditions. To ensure that <xref:System.IAsyncDisposable.DisposeAsync> is always called, you should avoid stacking. The following three code examples show acceptable patterns to use instead.
+In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `await using` statements with <xref:System.Threading.Tasks.ValueTask.ConfigureAwait*> could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync> in errant conditions. To ensure that <xref:System.IAsyncDisposable.DisposeAsync> is always called, you should avoid stacking. The following three code examples show acceptable patterns to use instead.
 
 ### Acceptable pattern one
 

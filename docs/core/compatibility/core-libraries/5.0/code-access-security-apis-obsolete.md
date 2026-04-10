@@ -284,9 +284,9 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 - <xref:System.Security.Policy.PolicyLevel.AddNamedPermissionSet(System.Security.NamedPermissionSet)?displayProperty=fullName>
 - <xref:System.Security.Policy.PolicyLevel.ChangeNamedPermissionSet(System.String,System.Security.PermissionSet)?displayProperty=fullName>
 - <xref:System.Security.Policy.PolicyLevel.GetNamedPermissionSet(System.String)?displayProperty=fullName>
-- <xref:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet%2A?displayProperty=fullName>
+- <xref:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet*?displayProperty=fullName>
 - <xref:System.Security.Policy.PolicyStatement.PermissionSet?displayProperty=fullName>
-- <xref:System.Security.Policy.PolicyStatement.%23ctor%2A?displayProperty=fullName>
+- <xref:System.Security.Policy.PolicyStatement.%23ctor*?displayProperty=fullName>
 - <xref:System.Security.Policy.Publisher?displayProperty=fullName>
 - <xref:System.Security.Policy.Site?displayProperty=fullName>
 - <xref:System.Security.Policy.StrongName?displayProperty=fullName>

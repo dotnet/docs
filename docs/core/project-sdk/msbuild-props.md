@@ -1,9 +1,10 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 03/03/2026
+ms.date: 03/27/2026
 ms.topic: reference
 ms.custom: updateeachrelease
+ai-usage: ai-assisted
 ---
 # MSBuild reference for .NET SDK projects
 
@@ -133,6 +134,9 @@ The `TargetFramework` property specifies the target framework version for the ap
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> The `TargetFramework` value is an alias. The .NET SDK parses it and sets the canonical moniker properties: `TargetFrameworkMoniker`, `TargetFrameworkIdentifier`, `TargetFrameworkVersion`, and, if applicable, `TargetPlatformIdentifier`, `TargetPlatformVersion`, and `TargetPlatformMoniker`. If you use a custom alias, you can set these properties directly in your project file.
+
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
 ### TargetFrameworks
@@ -147,6 +151,9 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
   <TargetFrameworks>net8.0;net462</TargetFrameworks>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> Starting with .NET SDK 10.0.300, multiple values can resolve to the same effective framework. For example, `<TargetFrameworks>linux;mac</TargetFrameworks>` is valid where both aliases resolve to `net10.0` as the target framework.
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
@@ -406,6 +413,7 @@ The following MSBuild properties are documented in this section:
 - [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [SelfContained](#selfcontained)
 - [UseAppHost](#useapphost)
+- [UseNativeLibPrefix](#usenativelibprefix)
 
 ### AppendTargetFrameworkToOutputPath
 
@@ -676,6 +684,20 @@ The `UseAppHost` property controls whether or not a native executable is created
 ```
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
+
+### UseNativeLibPrefix
+
+The `UseNativeLibPrefix` property controls whether NativeAOT applies the `lib` prefix to non-executable native library outputs on Unix platforms. By default, the `lib` prefix is applied, which aligns with Unix naming conventions for shared and static libraries (for example, `libmylib.so`, `libmylib.a`).
+
+Set `UseNativeLibPrefix` to `false` to opt out of the default behavior:
+
+```xml
+<PropertyGroup>
+  <UseNativeLibPrefix>false</UseNativeLibPrefix>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 11. For more information, see [NativeAOT uses lib prefix for native library outputs on Unix](../compatibility/interop/11/nativeaot-lib-prefix.md).
 
 ## Trim-related properties
 
@@ -1130,6 +1152,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
+(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>
@@ -1577,7 +1600,7 @@ The `GenerateTestingPlatformConfigurationFile` property is only available when [
 
 The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
 
-For more information, see [Show complete platform output](../testing/microsoft-testing-platform-integration-dotnet-test.md#show-complete-platform-output).
+For more information, see [Show complete platform output](../testing/unit-testing-with-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 
@@ -1715,8 +1738,29 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 
 The following properties concern code in generated files:
 
+- [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath)
 - [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [EmitCompilerGeneratedFiles](#emitcompilergeneratedfiles)
 - [ImplicitUsings](#implicitusings)
+
+### CompilerGeneratedFilesOutputPath
+
+The `CompilerGeneratedFilesOutputPath` property specifies the directory where source generator output files are written when [EmitCompilerGeneratedFiles](#emitcompilergeneratedfiles) is set to `true`. The path can be absolute or relative to the project directory. If you don't set this property, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*).
+
+```xml
+<PropertyGroup>
+  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+</PropertyGroup>
+```
+
+If you set this property to a path inside your project's source tree, the generated files might be picked up as source files by future builds. To avoid double-compilation, exclude the generated files from the `Compile` item:
+
+```xml
+<ItemGroup>
+  <Compile Remove="$(CompilerGeneratedFilesOutputPath)\**\*.cs" />
+</ItemGroup>
+```
 
 ### DisableImplicitNamespaceImports
 
@@ -1727,6 +1771,20 @@ The `DisableImplicitNamespaceImports` property can be used to disable implicit n
   <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
 </PropertyGroup>
 ```
+
+### EmitCompilerGeneratedFiles
+
+The `EmitCompilerGeneratedFiles` property controls whether source generator output files are written to disk during the build. Set this property to `true` to enable this behavior. By default, source generator output exists only in memory and isn't written to disk.
+
+```xml
+<PropertyGroup>
+  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+</PropertyGroup>
+```
+
+When you set this property to `true`, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*) unless you specify a different location using the [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath) property.
+
+Writing generated files to disk lets you inspect them. Only commit generated files to source control when you have a specific reason, such as when generators aren't available in your build environment or when you need reviewed, deterministic generated artifacts.
 
 ### ImplicitUsings
 
@@ -1749,6 +1807,7 @@ To define an explicit `global using` directive, add a [Using](#using) item.
 
 - [AssemblyMetadata](#assemblymetadata)
 - [InternalsVisibleTo](#internalsvisibleto)
+- [FrameworkReference](#frameworkreference)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [Using](#using)

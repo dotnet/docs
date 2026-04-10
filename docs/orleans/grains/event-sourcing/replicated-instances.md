@@ -19,20 +19,20 @@ For a general discussion of the consistency model, see our [TechReport](https://
 
 ## Conditional events
 
-Racing events can be problematic if they conflict, i.e., both shouldn't commit for some reason. For example, when withdrawing money from a bank account, two instances might independently determine sufficient funds exist for a withdrawal and issue a withdrawal event. However, the combination of both events could overdraw the account. To avoid this, the `JournaledGrain` API supports the <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent%2A> method.
+Racing events can be problematic if they conflict, i.e., both shouldn't commit for some reason. For example, when withdrawing money from a bank account, two instances might independently determine sufficient funds exist for a withdrawal and issue a withdrawal event. However, the combination of both events could overdraw the account. To avoid this, the `JournaledGrain` API supports the <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent*> method.
 
 ```csharp
 bool success = await RaiseConditionalEvent(
     new WithdrawalEvent() { /* ... */ });
 ```
 
-Conditional events double-check if the local version matches the version in storage. If not, it means the event sequence has grown in the meantime, indicating this event lost a race against another event. In that case, the conditional event is *not* appended to the log, and <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent%2A> returns `false`.
+Conditional events double-check if the local version matches the version in storage. If not, it means the event sequence has grown in the meantime, indicating this event lost a race against another event. In that case, the conditional event is *not* appended to the log, and <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent*> returns `false`.
 
 This is analogous to using e-tags with conditional storage updates and provides a simple mechanism to avoid committing conflicting events.
 
 It's possible and sensible to use both conditional and unconditional events for the same grain, such as `DepositEvent` and `WithdrawalEvent`. Deposits don't need to be conditional: even if a `DepositEvent` loses a race, it doesn't have to be canceled but can still be appended to the global event sequence.
 
-Awaiting the task returned by <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent*> is sufficient to confirm the event; you don't need to call <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents*> as well.
+Awaiting the task returned by <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent*> is sufficient to confirm the event; you don't need to call <xref:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*> as well.
 
 ## Explicit synchronization
 

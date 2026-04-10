@@ -11,7 +11,7 @@ Before calling a method on a grain, you first need a reference to that grain. A 
 
 Since a grain reference represents the logical identity of the target grain, it's independent of the grain's physical location and remains valid even after a complete system restart. You can use grain references like any other .NET object. You can pass it to a method, use it as a method return value, and even save it to persistent storage.
 
-You can obtain a grain reference by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within its type.
+You can obtain a grain reference by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain``1(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within its type.
 
 The following examples show how to obtain a grain reference for the `IPlayerGrain` interface defined previously.
 

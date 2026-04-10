@@ -1,16 +1,15 @@
 ---
-title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
+title: Quickstart - Extend OpenAI using functions and execute a local function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
 ms.date: 03/04/2026
 ms.topic: quickstart
-zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
 ai-usage: ai-assisted
+zone_pivot_groups: openai-library
 ---
 
 # Invoke .NET functions using an AI model
 
-In this quickstart, you create a .NET console AI chat app that connects to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+In this quickstart, you create a .NET console AI chat app that connects to an AI model with local function-calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
 :::zone target="docs" pivot="openai"
 

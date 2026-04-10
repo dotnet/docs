@@ -24,7 +24,7 @@ The preceding example:
 
 - Creates an <xref:Microsoft.Extensions.Logging.ILoggerFactory>. The `ILoggerFactory` stores all the configuration that determines where log messages are sent. In this case, configure the console [logging provider](providers.md) so that log messages are written to the console.
 - Creates an <xref:Microsoft.Extensions.Logging.ILogger> with a category named "Program". The [category](#log-category) is a `string` that's associated with each message logged by the `ILogger` object. It groups log messages from the same class (or category) together when searching or filtering logs.
-- Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log a message at the `Information` level. The [log level](#log-level) indicates the severity of the logged event and filters out less important log messages. The log entry also includes a [message template](#log-message-template) `"Hello World! Logging is {Description}."` and a key-value pair `Description = fun`. The key name (or placeholder) comes from the word inside the curly braces in the template, and the value comes from the remaining method argument.
+- Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation*> to log a message at the `Information` level. The [log level](#log-level) indicates the severity of the logged event and filters out less important log messages. The log entry also includes a [message template](#log-message-template) `"Hello World! Logging is {Description}."` and a key-value pair `Description = fun`. The key name (or placeholder) comes from the word inside the curly braces in the template, and the value comes from the remaining method argument.
 
 This project file for this example includes two NuGet packages:
 
@@ -42,7 +42,7 @@ Consider making these changes to the previous example when logging in a less tri
 
    :::code language="csharp" source="../snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
 
-- The recommended practice for choosing a log category name is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. Specify the class type in the type parameter of the <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> method.
+- The recommended practice for choosing a log category name is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. Specify the class type in the type parameter of the <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger*> method.
 
    :::code language="csharp" source="../snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
 
@@ -64,7 +64,7 @@ The preceding example:
 
 - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
 - Line 12 defines a [primary constructor](../../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor works equally well but is a little more verbose.
-- The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
+- The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger`1> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
 - The `logger` parameter received in the constructor is used for logging in the `HandleRequest` function.
 
 ### Host-provided ILoggerFactory
@@ -77,7 +77,7 @@ This example expands on the previous one to customize the `ILoggerFactory` provi
 
 ### Create an ILoggerFactory with DI
 
-If you're using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> to configure and add `ILoggerFactory` to the container.
+If you're using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging*> to configure and add `ILoggerFactory` to the container.
 
 :::code language="csharp" source="../snippets/logging/di-without-host/Program.cs" highlight="6":::
 
@@ -239,8 +239,8 @@ For more information on setting .NET configuration values using environment vari
 
 To configure logging in code, use the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> API. You can access it from different places:
 
-- When creating the `ILoggerFactory` directly, configure in <xref:Microsoft.Extensions.Logging.LoggerFactory.Create%2A?displayProperty=nameWithType>.
-- When using DI without a host, configure in <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A?displayProperty=nameWithType>.
+- When creating the `ILoggerFactory` directly, configure in <xref:Microsoft.Extensions.Logging.LoggerFactory.Create*?displayProperty=nameWithType>.
+- When using DI without a host, configure in <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging*?displayProperty=nameWithType>.
 - When using a host, configure with <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType> or other host specific APIs.
 
 This example shows setting the console [logging provider](providers.md) and several [filters](#how-filtering-rules-are-applied).
@@ -261,11 +261,11 @@ ILogger logger = loggerFactory.CreateLogger<Program>();
 logger.LogDebug("Hello {Target}", "Everyone");
 ```
 
-In the preceding example, <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter%2A> [adjusts the log level](#how-filtering-rules-are-applied) that's enabled for various categories. <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A> adds the console logging provider. By default, logs with `Debug` severity aren't enabled, but because the configuration adjusted the filters, the debug message "Hello Everyone" is displayed on the console.
+In the preceding example, <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter*> [adjusts the log level](#how-filtering-rules-are-applied) that's enabled for various categories. <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole*> adds the console logging provider. By default, logs with `Debug` severity aren't enabled, but because the configuration adjusted the filters, the debug message "Hello Everyone" is displayed on the console.
 
 ## How filtering rules are applied
 
-When an <xref:Microsoft.Extensions.Logging.ILogger%601> object is created, the <xref:Microsoft.Extensions.Logging.ILoggerFactory> object selects a single rule per provider to apply to that logger. The `ILogger` instance filters all messages it writes based on the selected rules. The most specific rule for each provider and category pair is selected from the available rules.
+When an <xref:Microsoft.Extensions.Logging.ILogger`1> object is created, the <xref:Microsoft.Extensions.Logging.ILoggerFactory> object selects a single rule per provider to apply to that logger. The `ILogger` instance filters all messages it writes based on the selected rules. The most specific rule for each provider and category pair is selected from the available rules.
 
 The following algorithm is used for each provider when an `ILogger` is created for a given category:
 
@@ -293,7 +293,7 @@ namespace Example
 }
 ```
 
-If further categorization is desired, the convention is to use a hierarchical name by appending a subcategory to the fully qualified class name, and explicitly specify the category using <xref:Microsoft.Extensions.Logging.LoggerFactory.CreateLogger%2A?displayProperty=nameWithType>:
+If further categorization is desired, the convention is to use a hierarchical name by appending a subcategory to the fully qualified class name, and explicitly specify the category using <xref:Microsoft.Extensions.Logging.LoggerFactory.CreateLogger*?displayProperty=nameWithType>:
 
 ```csharp
 namespace Example
@@ -320,12 +320,12 @@ The following table lists the <xref:Microsoft.Extensions.Logging.LogLevel> value
 
 | LogLevel | Value | Method | Description |
 |--|--|--|--|
-| [Trace](xref:Microsoft.Extensions.Logging.LogLevel) | 0 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace%2A> | Contain the most detailed messages. These messages might contain sensitive app data. These messages are disabled by default and should ***not*** be enabled in production. |
-| [Debug](xref:Microsoft.Extensions.Logging.LogLevel) | 1 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A> | For debugging and development. Use with caution in production due to the high volume. |
-| [Information](xref:Microsoft.Extensions.Logging.LogLevel) | 2 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> | Tracks the general flow of the app. Might have long-term value. |
-| [Warning](xref:Microsoft.Extensions.Logging.LogLevel) | 3 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> | For abnormal or unexpected events. Typically includes errors or conditions that don't cause the app to fail. |
-| [Error](xref:Microsoft.Extensions.Logging.LogLevel) | 4 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A> | For errors and exceptions that can't be handled. These messages indicate a failure in the current operation or request, not an app-wide failure. |
-| [Critical](xref:Microsoft.Extensions.Logging.LogLevel) | 5 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical%2A> | For failures that require immediate attention. Examples: data loss scenarios, out of disk space. |
+| [Trace](xref:Microsoft.Extensions.Logging.LogLevel) | 0 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace*> | Contain the most detailed messages. These messages might contain sensitive app data. These messages are disabled by default and should ***not*** be enabled in production. |
+| [Debug](xref:Microsoft.Extensions.Logging.LogLevel) | 1 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug*> | For debugging and development. Use with caution in production due to the high volume. |
+| [Information](xref:Microsoft.Extensions.Logging.LogLevel) | 2 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation*> | Tracks the general flow of the app. Might have long-term value. |
+| [Warning](xref:Microsoft.Extensions.Logging.LogLevel) | 3 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning*> | For abnormal or unexpected events. Typically includes errors or conditions that don't cause the app to fail. |
+| [Error](xref:Microsoft.Extensions.Logging.LogLevel) | 4 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError*> | For errors and exceptions that can't be handled. These messages indicate a failure in the current operation or request, not an app-wide failure. |
+| [Critical](xref:Microsoft.Extensions.Logging.LogLevel) | 5 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical*> | For failures that require immediate attention. Examples: data loss scenarios, out of disk space. |
 | [None](xref:Microsoft.Extensions.Logging.LogLevel) | 6 |  | Specifies that no messages should be written. |
 
 In the previous table, the `LogLevel` is listed from lowest to highest severity.
@@ -553,7 +553,7 @@ A *scope* groups a set of logical operations. This grouping can attach the same 
 
 A scope:
 
-- Is an <xref:System.IDisposable> type that's returned by the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope%2A> method.
+- Is an <xref:System.IDisposable> type that's returned by the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope*> method.
 - Lasts until it's disposed.
 
 The following providers support scopes:
@@ -659,7 +659,7 @@ The Logging API doesn't include a scenario to change log levels while an app is 
 
 ## NuGet packages
 
-The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in most .NET SDKs as implicit package reference. They're also available explicitly in the following NuGet packages when not otherwise implicitly referenced:
+The <xref:Microsoft.Extensions.Logging.ILogger`1> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in most .NET SDKs as implicit package reference. They're also available explicitly in the following NuGet packages when not otherwise implicitly referenced:
 
 - The interfaces are in [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions).
 - The default implementations are in [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging).

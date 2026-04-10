@@ -59,7 +59,7 @@ Add the following code to the `Main` method to create a `bankAccounts` list that
 
 ## To declare a method that exports account information to Excel
 
-1. Add the following method to the `Program` class to set up an Excel worksheet. Method <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> has an optional parameter for specifying a particular template. Optional parameters enable you to omit the argument for that parameter if you want to use the parameter's default value. Because you didn't supply an argument, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `ExcelApp.Workbooks.Add(Type.Missing)`.
+1. Add the following method to the `Program` class to set up an Excel worksheet. Method <xref:Microsoft.Office.Interop.Excel.Workbooks.Add*> has an optional parameter for specifying a particular template. Optional parameters enable you to omit the argument for that parameter if you want to use the parameter's default value. Because you didn't supply an argument, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `ExcelApp.Workbooks.Add(Type.Missing)`.
 
 :::code language="csharp" source="./snippets/OfficeInterop/program.cs" id="Snippet4":::
 
@@ -91,7 +91,7 @@ Press CTRL+F5. An Excel worksheet appears that contains the data from the two ac
 
 ## To add a Word document
 
-The following code opens a Word application and creates an icon that links to the Excel worksheet. Paste method `CreateIconInWordDoc`, provided later in this step, into the `Program` class. `CreateIconInWordDoc` uses named and optional arguments to reduce the complexity of the method calls to <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> and <xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>. These calls incorporate two other features that simplify calls to COM methods that have reference parameters. First, you can send arguments to the reference parameters as if they were value parameters. That is, you can send values directly, without creating a variable for each reference parameter. The compiler generates temporary variables to hold the argument values, and discards the variables when you return from the call. Second, you can omit the `ref` keyword in the argument list.
+The following code opens a Word application and creates an icon that links to the Excel worksheet. Paste method `CreateIconInWordDoc`, provided later in this step, into the `Program` class. `CreateIconInWordDoc` uses named and optional arguments to reduce the complexity of the method calls to <xref:Microsoft.Office.Interop.Word.Documents.Add*> and <xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial*>. These calls incorporate two other features that simplify calls to COM methods that have reference parameters. First, you can send arguments to the reference parameters as if they were value parameters. That is, you can send values directly, without creating a variable for each reference parameter. The compiler generates temporary variables to hold the argument values, and discards the variables when you return from the call. Second, you can omit the `ref` keyword in the argument list.
 
 The `Add` method has four reference parameters, all of which are optional. You can omit arguments for any or all of the parameters if you want to use their default values.
 
@@ -127,7 +127,7 @@ Replace the two calls to `AutoFit` in `DisplayInExcel` with the following statem
 
 :::code language="csharp" source="./snippets/OfficeInterop/program.cs" id="Snippet15":::
 
-The <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> method has seven value parameters, all of which are optional. Named and optional arguments enable you to provide arguments for none, some, or all of them. In the previous statement, you supply an argument for only one of the parameters, `Format`. Because `Format` is the first parameter in the parameter list, you don't have to provide the parameter name. However, the statement might be easier to understand if you include the parameter name, as shown in the following code.
+The <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat*> method has seven value parameters, all of which are optional. Named and optional arguments enable you to provide arguments for none, some, or all of them. In the previous statement, you supply an argument for only one of the parameters, `Format`. Because `Format` is the first parameter in the parameter list, you don't have to provide the parameter name. However, the statement might be easier to understand if you include the parameter name, as shown in the following code.
 
 :::code language="csharp" source="./snippets/OfficeInterop/program.cs" id="Snippet16":::
 

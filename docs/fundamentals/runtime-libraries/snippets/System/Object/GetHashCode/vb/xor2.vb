@@ -16,7 +16,7 @@ Public Structure Point
     End Function
     
     Public Overrides Function GetHashCode() As Integer 
-        Return Tuple.Create(x, y).GetHashCode()
+        Return HashCode.Combine(x, y)
     End Function 
 End Structure 
 
@@ -29,7 +29,8 @@ Public Module Example
         Console.WriteLine(pt.GetHashCode())
     End Sub 
 End Module         
-' The example displays the following output:
-'       173
-'       269
+' The example displays output similar to the following.
+' Note: HashCode.Combine results are not stable across .NET versions.
+'       185727722
+'       -363254492
 ' </Snippet3>

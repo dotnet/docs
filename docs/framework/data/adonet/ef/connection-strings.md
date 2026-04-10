@@ -11,7 +11,7 @@ A connection string contains initialization information that is passed as a para
 
 The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string.
 
-The Entity Data Model tools generate a connection string that's stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property.
+The Entity Data Model tools generate a connection string that's stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection> property.
 
 ## Connection String Syntax
 
@@ -19,7 +19,7 @@ To learn about the general syntax for connection strings, see [Connection string
 
 ## Connection String Parameters
 
-The following table lists the valid names for keyword values in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.
+The following table lists the valid names for keyword values in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString>.
 
 |Keyword|Description|
 |-------------|-----------------|
@@ -86,7 +86,7 @@ Metadata=.\
 
 ## Support for the &#124;DataDirectory&#124; Substitution String and the Web Application Root Operator (~)
 
-`DataDirectory` and the ~ operator are used in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> as part of the `Metadata` and `Provider Connection String` keywords. The <xref:System.Data.EntityClient.EntityConnection> forwards the `DataDirectory` and the ~ operator to <xref:System.Data.Metadata.Edm.MetadataWorkspace> and the store provider, respectively.
+`DataDirectory` and the ~ operator are used in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString> as part of the `Metadata` and `Provider Connection String` keywords. The <xref:System.Data.EntityClient.EntityConnection> forwards the `DataDirectory` and the ~ operator to <xref:System.Data.Metadata.Edm.MetadataWorkspace> and the store provider, respectively.
 
 |Term|Description|
 |----------|-----------------|

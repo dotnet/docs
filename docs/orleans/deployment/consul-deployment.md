@@ -59,10 +59,10 @@ The preceding code:
 
 - Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> with defaults from <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder?displayProperty=nameWithType>.
 - Chains a call to <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Orleans.Hosting.ISiloBuilder})> to configure the Orleans silo.
-- Given the <xref:Orleans.Hosting.ISiloBuilder>, calls <xref:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulSiloClustering%2A>.
+- Given the <xref:Orleans.Hosting.ISiloBuilder>, calls <xref:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulSiloClustering*>.
 - Configures the cluster membership provider to use Consul, given the Consul `address`.
 
-To configure the client, reference the same NuGet package and call the <xref:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClientClustering%2A> extension method.
+To configure the client, reference the same NuGet package and call the <xref:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClientClustering*> extension method.
 
 ## Client SDK
 

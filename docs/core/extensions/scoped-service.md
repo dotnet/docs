@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Use scoped services within a `BackgroundService`
 
-When you register implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> using any of the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension methods, the service is registered as a singleton. There might be scenarios where you'd like to rely on a scoped service. For more information, see [Service lifetimes](dependency-injection/service-lifetimes.md).
+When you register implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> using any of the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService*> extension methods, the service is registered as a singleton. There might be scenarios where you'd like to rely on a scoped service. For more information, see [Service lifetimes](dependency-injection/service-lifetimes.md).
 
 In this tutorial, you learn how to:
 

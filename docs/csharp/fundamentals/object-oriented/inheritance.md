@@ -2,7 +2,7 @@
 title: "Objected oriented programming - inheritance"
 description: Inheritance in C# enables you to create new classes that reuse, extend, and modify the behavior defined in other classes.
 ms.date: 05/14/2021
-helpviewer_keywords: 
+helpviewer_keywords:
   - "abstract methods [C#]"
   - "abstract classes [C#]"
   - "inheritance [C#]"
@@ -28,7 +28,7 @@ The following illustration shows a class `WorkItem` that represents an item of w
 
 ![Diagram that shows class inheritance](./media/inheritance/class-inheritance-diagram.png)
 
-The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method. The first block defines the classes:
+The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString*?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method. The first block defines the classes:
 
 :::code language="csharp" source="./snippets/inheritance/Inheritance.cs" ID="SnippetClasses":::
 
@@ -48,12 +48,12 @@ You can declare a class as [abstract](../../language-reference/keywords/abstract
 
 An *interface* is a reference type that defines a set of members. All classes and structs that implement that interface must implement that set of members. An interface might define a default implementation for any or all of these members. A class can implement multiple interfaces even though it can derive from only a single direct base class.
 
-Interfaces are used to define specific capabilities for classes that don't necessarily have an "is a" relationship. For example, the <xref:System.IEquatable%601?displayProperty=nameWithType> interface can be implemented by any class or struct to determine whether two objects of the type are equivalent (however the type defines equivalence). <xref:System.IEquatable%601> doesn't imply the same kind of "is a" relationship that exists between a base class and a derived class (for example, a `Mammal` is an `Animal`). For more information, see [Interfaces](../types/interfaces.md).
+Interfaces are used to define specific capabilities for classes that don't necessarily have an "is a" relationship. For example, the <xref:System.IEquatable`1?displayProperty=nameWithType> interface can be implemented by any class or struct to determine whether two objects of the type are equivalent (however the type defines equivalence). <xref:System.IEquatable`1> doesn't imply the same kind of "is a" relationship that exists between a base class and a derived class (for example, a `Mammal` is an `Animal`). For more information, see [Interfaces](../types/interfaces.md).
 
-## Preventing further derivation  
+## Preventing further derivation
 
 A class can prevent other classes from inheriting from it, or from any of its members, by declaring itself or the member as [`sealed`](../../language-reference/keywords/sealed.md).
 
-## Derived class hiding of base class members  
+## Derived class hiding of base class members
 
 A derived class can hide base class members by declaring members with the same name and signature. The [`new`](../../language-reference/keywords/new-modifier.md) modifier can be used to explicitly indicate that the member isn't intended to be an override of the base member. The use of [`new`](../../language-reference/keywords/new-modifier.md) isn't required, but a compiler warning is generated if [`new`](../../language-reference/keywords/new-modifier.md) isn't used. For more information, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](../../programming-guide/classes-and-structs//knowing-when-to-use-override-and-new-keywords.md).

@@ -1,9 +1,10 @@
 ---
 title: Custom grain storage sample project
 description: Explore a custom grain storage sample project written with .NET Orleans.
-ms.date: 03/30/2025
+ms.date: 03/10/2026
 ms.topic: tutorial
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Custom grain storage
@@ -73,11 +74,11 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
 
 Each method implements the corresponding method in the <xref:Orleans.Storage.IGrainStorage> interface, accepting a generic type parameter for the underlying state type. The methods are:
 
-- <xref:Orleans.Storage.IGrainStorage.ReadStateAsync%2A?displayProperty=nameWithType>: Reads the state of a grain.
-- <xref:Orleans.Storage.IGrainStorage.WriteStateAsync%2A?displayProperty=nameWithType>: Writes the state of a grain.
-- <xref:Orleans.Storage.IGrainStorage.ClearStateAsync%2A?displayProperty=nameWithType>: Clears the state of a grain.
+- <xref:Orleans.Storage.IGrainStorage.ReadStateAsync*?displayProperty=nameWithType>: Reads the state of a grain.
+- <xref:Orleans.Storage.IGrainStorage.WriteStateAsync*?displayProperty=nameWithType>: Writes the state of a grain.
+- <xref:Orleans.Storage.IGrainStorage.ClearStateAsync*?displayProperty=nameWithType>: Clears the state of a grain.
 
-The <xref:Orleans.ILifecycleParticipant%601.Participate%2A?displayProperty=nameWithType> method subscribes to the silo's lifecycle.
+The <xref:Orleans.ILifecycleParticipant`1.Participate*?displayProperty=nameWithType> method subscribes to the silo's lifecycle.
 
 Before starting the implementation, create an options class containing the root directory where grain state files are persisted. Create an options file named `FileGrainStorageOptions` containing the following:
 
@@ -91,7 +92,7 @@ With the options class created, explore the constructor parameters of the `FileG
 
 ## Initialize the storage
 
-To initialize the storage, subscribe to the <xref:Orleans.ServiceLifecycleStage.ApplicationServices?displayProperty=nameWithType> stage with an `onStart` function. Consider the following <xref:Orleans.ILifecycleParticipant%601.Participate%2A?displayProperty=nameWithType> implementation:
+To initialize the storage, subscribe to the <xref:Orleans.ServiceLifecycleStage.ApplicationServices?displayProperty=nameWithType> stage with an `onStart` function. Consider the following <xref:Orleans.ILifecycleParticipant`1.Participate*?displayProperty=nameWithType> implementation:
 
 :::code source="snippets/custom-grain-storage/FileGrainStorage.cs" id="participate":::
 
@@ -125,7 +126,7 @@ Clearing the state involves deleting the file if it exists.
 
 :::code source="snippets/custom-grain-storage/FileGrainStorage.cs" id="clearstateasync":::
 
-For the same reason as <xref:Orleans.Grain%601.WriteStateAsync*>, check for inconsistency. Before deleting the file and resetting the `ETag`, check if the current `ETag` matches the last write time UTC.
+For the same reason as <xref:Orleans.Grain`1.WriteStateAsync*>, check for inconsistency. Before deleting the file and resetting the `ETag`, check if the current `ETag` matches the last write time UTC.
 
 ## Put it all together
 
@@ -133,17 +134,13 @@ Next, create a factory that allows scoping the options to the provider name whil
 
 :::code source="snippets/custom-grain-storage/FileGrainStorageFactory.cs":::
 
-Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension internally registers the grain storage as a named service using <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A>, an extension provided by `Orleans.Core`.
+Lastly, to register the grain storage, create an extension on <xref:Orleans.Hosting.ISiloBuilder>. This extension registers the grain storage as a keyed singleton using <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedSingleton*?displayProperty=nameWithType>, the standard .NET 8+ keyed DI API.
 
 :::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs":::
 
-The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two named services, one for each interface:
+The `FileGrainStorage` implements two interfaces, <xref:Orleans.Storage.IGrainStorage> and `ILifecycleParticipant<ISiloLifecycle>`. Therefore, register two keyed singleton services, one for each interface.
 
-```csharp
-return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
-    .AddSingletonNamedService(providerName,
-        (p, n) => (ILifecycleParticipant<ISiloLifecycle>)p.GetRequiredServiceByName<IGrainStorage>(n));
-```
+:::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs" id="KeyedRegistrations":::
 
 This enables adding the file storage using the extension on <xref:Orleans.Hosting.ISiloBuilder>:
 
@@ -212,7 +209,7 @@ Clearing the state involves deleting the file if it exists.
 
 :::code language="csharp" source="snippets-v3/custom-storage/FileGrainStorage.cs" id="clearstateasync":::
 
-For the same reason as <xref:Orleans.Grain%601.WriteStateAsync*>, check for inconsistency. Before deleting the file and resetting the ETag, check if the current ETag matches the last write time UTC.
+For the same reason as <xref:Orleans.Grain`1.WriteStateAsync*>, check for inconsistency. Before deleting the file and resetting the ETag, check if the current ETag matches the last write time UTC.
 
 ## Put it all together
 

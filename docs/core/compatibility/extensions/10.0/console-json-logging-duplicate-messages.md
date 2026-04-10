@@ -72,7 +72,7 @@ If you previously parsed the logging output to extract the `Message` from within
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole*?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsoleFormatter*?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddJsonConsole*?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddSimpleConsole*?displayProperty=fullName>

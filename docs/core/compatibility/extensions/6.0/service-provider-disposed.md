@@ -36,4 +36,4 @@ Catch <xref:System.ObjectDisposedException> when calling any of the affected API
 - <xref:System.IServiceProvider.GetService(System.Type)?displayProperty=fullName>
 - <xref:Microsoft.Extensions.DependencyInjection.ISupportRequiredService.GetRequiredService(System.Type)?displayProperty=fullName>
 - <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(System.IServiceProvider,System.Type)?displayProperty=fullName>
-- <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)?displayProperty=fullName>
+- <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService``1(System.IServiceProvider)?displayProperty=fullName>

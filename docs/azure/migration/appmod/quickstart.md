@@ -1,5 +1,5 @@
 ---
-title: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET
+title: Assess and migrate a .NET project with GitHub Copilot modernization for .NET
 ms.reviewer: alexwolf
 description: Assess and migrate your .NET project with GitHub Copilot. Learn how to evaluate migration readiness and start modernizing your app effectively.
 ms.topic: quickstart
@@ -9,9 +9,9 @@ zone_pivot_groups: ide-set-one
 #customer intent: As a .NET developer, I want to assess my project's migration readiness so that I can identify potential challenges and plan the modernization process effectively.
 ---
 
-# Quickstart: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET
+# Quickstart: Assess and migrate a .NET project with GitHub Copilot modernization for .NET
 
-In this quickstart, you assess and migrate a .NET project by using GitHub Copilot app modernization for .NET. You complete the following tasks:
+In this quickstart, you assess and migrate a .NET project by using GitHub Copilot modernization for .NET. You complete the following tasks:
 
 - Assess a sample project (Contoso University)
 - Start the migration process
@@ -27,4 +27,4 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 ## Next Steps
 
 - [Predefined Tasks](predefined-tasks.md)
-- [GitHub Copilot app modernization FAQ](../../../core/porting/github-copilot-app-modernization/faq.yml)
+- [GitHub Copilot modernization FAQ](../../../core/porting/github-copilot-app-modernization/faq.yml)

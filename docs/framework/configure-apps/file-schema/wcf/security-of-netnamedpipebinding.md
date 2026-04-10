@@ -52,8 +52,8 @@ Defines the security settings for a binding.
 ## See also
 
 - <xref:System.ServiceModel.NetNamedPipeSecurity>
-- <xref:System.ServiceModel.NetNamedPipeBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security%2A>
+- <xref:System.ServiceModel.NetNamedPipeBinding.Security*>
+- <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security*>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Selecting a Credential Type](../../../wcf/feature-details/selecting-a-credential-type.md)

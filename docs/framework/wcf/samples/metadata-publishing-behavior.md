@@ -51,7 +51,7 @@ The following shows the MEX endpoint.
           contract="IMetadataExchange" />
 ```
 
-This sample sets the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, which also exposes the service's metadata using HTTP GET. To enable an HTTP GET metadata endpoint, the service must have an HTTP base address. The query string `?wsdl` is used on the base address of the service to access the metadata. For example, to see the WSDL for the service in a Web browser you would use the address `http://localhost/servicemodelsamples/service.svc?wsdl`. Alternatively, you can use this behavior to expose metadata over HTTPS by setting <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> to `true`. This requires an HTTPS base address.
+This sample sets the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, which also exposes the service's metadata using HTTP GET. To enable an HTTP GET metadata endpoint, the service must have an HTTP base address. The query string `?wsdl` is used on the base address of the service to access the metadata. For example, to see the WSDL for the service in a Web browser you would use the address `http://localhost/servicemodelsamples/service.svc?wsdl`. Alternatively, you can use this behavior to expose metadata over HTTPS by setting <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled*> to `true`. This requires an HTTPS base address.
 
 To access the service's MEX endpoint use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).
 

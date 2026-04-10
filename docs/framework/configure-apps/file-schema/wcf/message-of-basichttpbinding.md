@@ -122,8 +122,8 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](bas
 ## See also
 
 - <xref:System.ServiceModel.BasicHttpMessageSecurity>
-- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>
-- <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message*>
+- <xref:System.ServiceModel.BasicHttpSecurity.Message*>
 - <xref:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

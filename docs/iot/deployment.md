@@ -2,7 +2,7 @@
 title: Deploy .NET apps to ARM single-board computers
 description: Learn how to deploy .NET apps to ARM single-board computers (SBCs) such as Raspberry Pi.
 author: camsoper
-ms.date: 07/31/2024
+ms.date: 03/07/2026
 ms.topic: how-to
 ---
 
@@ -24,11 +24,11 @@ To deploy your app as a framework-dependent app, complete the following steps:
     1. Run the following command to install .NET:
 
         ```bash
-        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS
+        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel LTS
         ```
 
         > [!NOTE]
-        > This command installs the latest version. If you need a specific version, replace the `--channel STS` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version, for example `8.0.404`. For a list of versions, see [.NET SDKs for Visual Studio](https://dotnet.microsoft.com/download/visual-studio-sdks). To determine the full build number, refer to the **Visual Studio 2026 SDK** column.
+        > This command installs the latest LTS version. If you need a specific version, replace the `--channel LTS` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version, for example `10.0.103`. For a list of versions, see [.NET SDKs for Visual Studio](https://dotnet.microsoft.com/download/visual-studio-sdks). To determine the full build number, refer to the **Visual Studio 2026 SDK** column.
 
     1. To simplify path resolution, add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH` with the following commands:
 

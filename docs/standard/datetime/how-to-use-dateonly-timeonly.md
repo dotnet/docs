@@ -52,14 +52,14 @@ Use the following examples to learn about `DateOnly`:
 
 ### Convert DateTime to DateOnly
 
-Use the <xref:System.DateOnly.FromDateTime%2A?displayProperty=nameWithType> static method to create a `DateOnly` type from a `DateTime` type, as demonstrated in the following code:
+Use the <xref:System.DateOnly.FromDateTime*?displayProperty=nameWithType> static method to create a `DateOnly` type from a `DateTime` type, as demonstrated in the following code:
 
 :::code language="csharp" source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="today":::
 :::code language="vb" source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="today":::
 
 ### Add or subtract days, months, years
 
-There are three methods used to adjust a <xref:System.DateOnly> structure: <xref:System.DateOnly.AddDays%2A>, <xref:System.DateOnly.AddMonths%2A>, and <xref:System.DateOnly.AddYears%2A>. Each method takes an integer parameter, and increases the date by that measurement. If a negative number is provided, the date is decreased by that measurement. The methods return a new instance of `DateOnly`, as the structure is immutable.
+There are three methods used to adjust a <xref:System.DateOnly> structure: <xref:System.DateOnly.AddDays*>, <xref:System.DateOnly.AddMonths*>, and <xref:System.DateOnly.AddYears*>. Each method takes an integer parameter, and increases the date by that measurement. If a negative number is provided, the date is decreased by that measurement. The methods return a new instance of `DateOnly`, as the structure is immutable.
 
 :::code language="csharp" source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="date_adjust":::
 :::code language="vb" source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="date_adjust":::
@@ -104,14 +104,14 @@ Use the following examples to learn about `TimeOnly`:
 
 ### Convert DateTime to TimeOnly
 
-Use the <xref:System.TimeOnly.FromDateTime%2A?displayProperty=nameWithType> static method to create a `TimeOnly` type from a `DateTime` type, as demonstrated in the following code:
+Use the <xref:System.TimeOnly.FromDateTime*?displayProperty=nameWithType> static method to create a `TimeOnly` type from a `DateTime` type, as demonstrated in the following code:
 
 :::code language="csharp" source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="time_now":::
 :::code language="vb" source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="time_now":::
 
 ### Add or subtract time
 
-There are three methods used to adjust a <xref:System.TimeOnly> structure: <xref:System.TimeOnly.AddHours%2A>, <xref:System.TimeOnly.AddMinutes%2A>, and <xref:System.TimeOnly.Add%2A>. Both `AddHours` and `AddMinutes` take an integer parameter, and adjust the value accordingly. You can use a negative value to subtract and a positive value to add. The methods return a new instance of `TimeOnly` is returned, as the structure is immutable. The `Add` method takes a <xref:System.TimeSpan> parameter and adds or subtracts the value from the `TimeOnly` value.
+There are three methods used to adjust a <xref:System.TimeOnly> structure: <xref:System.TimeOnly.AddHours*>, <xref:System.TimeOnly.AddMinutes*>, and <xref:System.TimeOnly.Add*>. Both `AddHours` and `AddMinutes` take an integer parameter, and adjust the value accordingly. You can use a negative value to subtract and a positive value to add. The methods return a new instance of `TimeOnly` is returned, as the structure is immutable. The `Add` method takes a <xref:System.TimeSpan> parameter and adds or subtracts the value from the `TimeOnly` value.
 
 Because `TimeOnly` only represents a 24-hour period, it rolls over forwards or backwards appropriately when adding values supplied to those three methods. For example, if you use a value of `01:30:00` to represent 1:30 AM, then add -4 hours from that period, it rolls backwards to `21:30:00`, which is 9:30 PM. There are method overloads for `AddHours`, `AddMinutes`, and `Add` that capture the number of days rolled over.
 
@@ -142,9 +142,9 @@ The following example serializes an `Appointment` object, displays the resulting
 In the preceding code:
 
 - An `Appointment` object is instantiated and assigned to the `appointment` variable.
-- The `appointment` instance is serialized to JSON using <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType>.
+- The `appointment` instance is serialized to JSON using <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=nameWithType>.
 - The resulting JSON is written to the console.
-- The JSON is deserialized back into a new instance of the `Appointment` type using <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
+- The JSON is deserialized back into a new instance of the `Appointment` type using <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType>.
 - The original and newly deserialized instances are compared for equality.
 - The result of the comparison is written to the console.
 
@@ -166,7 +166,7 @@ The following example creates a `DateTime` from a `TimeOnly` object, with an arb
 
 ### Arithmetic operators and comparing TimeOnly
 
-Two <xref:System.TimeOnly> instances can be compared with one another, and you can use the <xref:System.TimeOnly.IsBetween%2A> method to check if a time is between two other times. When an addition or subtraction operator is used on a `TimeOnly`, a <xref:System.TimeSpan> is returned, representing a duration of time.
+Two <xref:System.TimeOnly> instances can be compared with one another, and you can use the <xref:System.TimeOnly.IsBetween*> method to check if a time is between two other times. When an addition or subtraction operator is used on a `TimeOnly`, a <xref:System.TimeSpan> is returned, representing a duration of time.
 
 :::code language="csharp" source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="time_between":::
 :::code language="vb" source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="time_between":::

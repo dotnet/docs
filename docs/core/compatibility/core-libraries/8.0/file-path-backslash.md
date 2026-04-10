@@ -37,10 +37,10 @@ Without this change, .NET apps located in directories that contain backslash cha
 
 - Hosting APIs
 - <xref:System.Runtime.InteropServices.DllImportAttribute.Value?displayProperty=fullName>
-- <xref:System.Runtime.InteropServices.NativeLibrary.Load%2A?displayProperty=fullName>
-- <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A?displayProperty=fullName>
-- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName>
-- <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.NativeLibrary.Load*?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad*?displayProperty=fullName>
+- <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=fullName>
+- <xref:System.Reflection.Assembly.LoadFile*?displayProperty=fullName>
 - <xref:System.Reflection.Assembly.UnsafeLoadFrom(System.String)?displayProperty=fullName>
 - <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(System.String)?displayProperty=fullName>
 - <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromNativeImagePath(System.String,System.String)?displayProperty=fullName>

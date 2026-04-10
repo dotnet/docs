@@ -104,7 +104,7 @@ Before you can pack and distribute the application as a tool, you need to modify
 
 1. Open the *dotnet-env.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
-   :::code language="xml" source="./snippets/global-tools-how-to-create/csharp/dotnet-env.csproj" id="toolsetting":::
+   :::code language="xml" source="./snippets/global-tools-how-to-create/csharp/dotnet-env.csproj" id="toolsettings":::
 
    `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, which is typically the project file name without the *.csproj* extension.
 

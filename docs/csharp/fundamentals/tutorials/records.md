@@ -1,12 +1,12 @@
 ---
-title: Explore record types tutorial
+title: Use record types tutorial
 description: Build a small app that models temperature data with records, compares record behavior, and uses with expressions for nondestructive mutation.
 ms.date: 04/10/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 ---
 
-# Explore record types
+# Use record types
 
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You get comfortable with classes, methods, and loops there.

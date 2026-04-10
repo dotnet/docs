@@ -12,14 +12,7 @@ class Program
         {
             Description = "An option whose argument is parsed as a FileInfo",
             Required = true,
-            DefaultValueFactory = result =>
-            {
-                if (result.Tokens.Count == 0)
-                {
-                    return new FileInfo("sampleQuotes.txt");
-                }
-                return new FileInfo(result.Tokens.Single().Value);
-            }
+            DefaultValueFactory = _ => new FileInfo("sampleQuotes.txt")
         };
         fileOption.Validators.Add(result =>
         {

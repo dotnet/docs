@@ -3,30 +3,15 @@ using System.IO.Compression;
 // <SafeExtractEntry>
 void SafeExtractEntry(ZipArchiveEntry entry, string destinationPath, long maxDecompressedSize)
 {
-    // Check the declared uncompressed size first (can be spoofed, but is a fast first check).
+    // The runtime enforces that entry.Open() will never produce more than
+    // entry.Length bytes, so checking the declared size is sufficient.
     if (entry.Length > maxDecompressedSize)
     {
         throw new InvalidOperationException(
             $"Entry '{entry.FullName}' declares size {entry.Length}, exceeding limit {maxDecompressedSize}.");
     }
 
-    using Stream source = entry.Open();
-    using FileStream destination = File.Create(destinationPath);
-
-    byte[] buffer = new byte[81920];
-    long totalBytesRead = 0;
-    int bytesRead;
-
-    while ((bytesRead = source.Read(buffer, 0, buffer.Length)) > 0)
-    {
-        totalBytesRead += bytesRead;
-        if (totalBytesRead > maxDecompressedSize)
-        {
-            throw new InvalidOperationException(
-                $"Extraction of '{entry.FullName}' exceeded limit of {maxDecompressedSize} bytes.");
-        }
-        destination.Write(buffer, 0, bytesRead);
-    }
+    entry.ExtractToFile(destinationPath, overwrite: false);
 }
 // </SafeExtractEntry>
 
@@ -82,7 +67,7 @@ void DangerousExtract(string extractDir)
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
         string destinationPath = Path.Combine(extractDir, entry.FullName);
-        entry.ExtractToFile(destinationPath, overwrite: true); // NO path validation!
+        entry.ExtractToFile(destinationPath, overwrite: true); // May write outside of `extractDir`
     }
 }
 // </VulnerablePattern>
@@ -131,16 +116,16 @@ void SafeExtractZip(string archivePath, string destinationDir,
             throw new IOException(
                 $"Entry '{entry.FullName}' would extract outside the destination.");
 
-        // ZIP uses a convention where directory entries have names ending in '/'.
-        // Path.GetFileName returns empty for these, so we use that to
-        // distinguish directories from files.
+        // By convention, directory entries in ZIP archives have names ending
+        // in '/'. Path.GetFileName returns empty for these, so we use that
+        // to distinguish directories from files.
         if (string.IsNullOrEmpty(Path.GetFileName(destPath)))
         {
             Directory.CreateDirectory(destPath);
         }
         else
         {
-            // Ensure the parent directory exists before extracting the file.
+            // Create the parent directory and any missing intermediate directories.
             Directory.CreateDirectory(Path.GetDirectoryName(destPath)!);
             entry.ExtractToFile(destPath, overwrite: false);
         }
@@ -201,10 +186,7 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
         }
         else if (entry.DataStream is not null)
         {
-            // For file entries, copy the data stream to a new file.
-            // We use entry.DataStream directly instead of ExtractToFile because
-            // ExtractToFile rejects symbolic and hard link entries (already
-            // filtered above) and requires a file path rather than a stream.
+            // Create the parent directory and any missing intermediate directories.
             Directory.CreateDirectory(Path.GetDirectoryName(destPath)!);
             using var fileStream = File.Create(destPath);
             entry.DataStream.CopyTo(fileStream);
@@ -212,6 +194,28 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
     }
 }
 // </SafeExtractTar>
+
+// <ValidateSymlink>
+bool IsLinkTargetSafe(TarEntry entry, string fullDestDir)
+{
+    string resolvedTarget;
+
+    if (entry.EntryType is TarEntryType.SymbolicLink)
+    {
+        // Symlink targets are relative to the symlink's own parent directory, or absolute.
+        string entryDir = Path.GetDirectoryName(
+            Path.GetFullPath(Path.Join(fullDestDir, entry.Name)))!;
+        resolvedTarget = Path.GetFullPath(Path.Join(entryDir, entry.LinkName));
+    }
+    else
+    {
+        // Hard link targets are relative to the destination directory root.
+        resolvedTarget = Path.GetFullPath(Path.Join(fullDestDir, entry.LinkName));
+    }
+
+    return resolvedTarget.StartsWith(fullDestDir, StringComparison.Ordinal);
+}
+// </ValidateSymlink>
 
 // <StreamingApproach>
 void StreamingModify()

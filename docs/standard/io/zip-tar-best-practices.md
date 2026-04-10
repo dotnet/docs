@@ -47,16 +47,9 @@ If you control the archive source (your own build output, known-safe backups), t
 
 When the archive source is known and trusted, the convenience methods give you a safe, one-line extraction path:
 
-- `ZipFile.ExtractToDirectory` and `TarFile.ExtractToDirectory` handle path validation automatically—they sanitize entry names, resolve paths, and check directory boundaries.
-- Default overwrite behavior is `false`. Always be explicit:
-
-```csharp
-// ✅ Explicit — default is safe
-ZipFile.ExtractToDirectory("archive.zip", destDir, overwriteFiles: false);
-TarFile.ExtractToDirectory("archive.tar", destDir, overwriteFiles: false);
-```
-
-- When overwriting is enabled during ZIP extraction, .NET extracts to a temporary file first and only replaces the target after successful extraction—this approach prevents partial corruption if the extraction fails.
+- `ZipFile.ExtractToDirectory` and `TarFile.ExtractToDirectory` handle path validation automatically. They sanitize entry names, resolve paths, and check directory boundaries.
+- `ZipFile.ExtractToDirectory` has overloads that default to not overwriting existing files. All `TarFile.ExtractToDirectory` overloads require the `overwriteFiles` parameter, so you must always choose explicitly.
+- When overwriting is enabled during ZIP extraction, .NET extracts to a temporary file first and only replaces the target after successful extraction. This prevents partial corruption if the extraction fails.
 
 > [!NOTE]
 > The convenience methods don't limit decompressed size or entry count. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
@@ -67,7 +60,7 @@ For untrusted input—user uploads, third-party downloads, or network transfers�
 
 ### What the convenience methods don't protect you from
 
-`ExtractToDirectory` handles path traversal validation, but it doesn't enforce size limits, entry count limits, or filter dangerous TAR entry types. A small compressed file can expand to terabytes of data (known as a *zip bomb*), and TAR archives can contain symbolic links that escape the extraction directory. You must handle these yourself when processing untrusted input.
+`ExtractToDirectory` handles path traversal validation (including symbolic link targets in TAR), but it doesn't enforce size limits or entry count limits. A small compressed file can expand to terabytes of data (known as a *zip bomb*). You must enforce these limits yourself when processing untrusted input.
 
 ### Enforce size and entry count limits
 
@@ -76,7 +69,7 @@ Neither `ZipArchive` nor `TarReader` limits the total uncompressed size or the n
 > [!IMPORTANT]
 > A small compressed file can expand to terabytes of data—this is known as a *zip bomb*. Always enforce limits on decompressed size and entry count when extracting untrusted archives.
 
-#### Track decompressed size during extraction
+#### Enforce per-entry size limits
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractEntry":::
 
@@ -87,7 +80,7 @@ Neither `ZipArchive` nor `TarReader` limits the total uncompressed size or the n
 > [!TIP]
 > The same approach applies to TAR archives. Since TAR files are read entry-by-entry via `TarReader.GetNextEntry()`, track both the cumulative data size and entry count as you iterate.
 
-### Validate destination paths (low-level APIs only)
+### Validate destination paths
 
 When you use the streaming APIs, you're responsible for validating every entry's destination path. The low-level APIs perform no path validation at all.
 
@@ -100,9 +93,6 @@ Key points:
 - `Path.GetFullPath()` resolves relative segments like `../` into an absolute path.
 - The `StartsWith` check ensures the resolved path is still inside the destination.
 - The trailing directory separator on `fullDestDir` is critical—without it, a path like `/safe-dir-evil/file` would incorrectly match `/safe-dir`.
-
-> [!NOTE]
-> `ExtractToDirectory` handles path traversal for you—the runtime sanitizes entry names, resolves paths with `Path.GetFullPath()`, and verifies them with `StartsWith`. You're using the streaming APIs here because of the size-limits issue described above.
 
 > [!WARNING]
 > The following APIs leave you completely unprotected against path traversal. You must validate paths yourself before calling them.
@@ -120,7 +110,7 @@ Key points:
 TAR archives support symbolic links and hard links, which introduce attack vectors beyond basic path traversal:
 
 - **Symlink escape:** A symlink entry points to an arbitrary location (for example, `/etc/`), then a subsequent file entry relative to the symlink directory writes through the link to that external location.
-- **Hard link to sensitive file:** A hard link target references a file outside the extraction directory, allowing reads or overwrites.
+- **Hard link to sensitive file:** A hard link target references a file outside the extraction directory. Because a hard link shares the same inode as the original, any code that later opens the hard link for writing modifies the original file's contents. Simply overwriting the hard link (for example, with `File.Create`) replaces the directory entry and does not affect the original.
 
 The safest approach for untrusted archives is to skip link entries entirely:
 
@@ -129,7 +119,11 @@ if (entry.EntryType is TarEntryType.SymbolicLink or TarEntryType.HardLink)
     continue; // Skip link entries for untrusted input
 ```
 
-If your use case requires hard links but you want to avoid filesystem-level hard links, `TarHardLinkMode.CopyContents` copies the file content instead of creating a real hard link. This approach eliminates hard-link-based attacks and produces more portable output on Windows.
+If you need to preserve links, validate that the link target resolves within your destination directory before creating it:
+
+:::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="ValidateSymlink":::
+
+If your use case requires hard links but you want to avoid filesystem-level hard links, `TarHardLinkMode.CopyContents` copies the file content instead of creating a real hard link. This eliminates hard-link-based attacks and produces more portable output on Windows.
 
 For reference, `TarFile.ExtractToDirectory` validates both the entry path and link target path against the destination directory boundary. If either resolves outside, an `IOException` is thrown. `TarEntry.ExtractToFile()` rejects symbolic and hard link entries entirely—it throws `InvalidOperationException`.
 
@@ -153,12 +147,12 @@ TAR extraction differs from ZIP in several ways: entries are read sequentially (
 
 ### ZipArchiveMode.Update loads entries into memory
 
-Don't use `ZipArchiveMode.Update` for large or untrusted archives. When you open a `ZipArchive` in `Update` mode, each entry's uncompressed data is loaded into a `MemoryStream` when that entry is accessed. The runtime requires a seekable stream for Update mode and decompresses each entry fully into memory to support in-place modifications. For large or malicious archives, this behavior can cause `OutOfMemoryException`.
+Don't use `ZipArchiveMode.Update` for large or untrusted archives. When you open a `ZipArchive` in `Update` mode and call `Open()` or `OpenAsync()` on an entry, its uncompressed data is loaded into a `MemoryStream` to support in-place modifications. Accessing entry metadata (such as `FullName`, `Length`, or `ExternalAttributes`) does not trigger decompression. For large or malicious archives, opening entry content streams can cause `OutOfMemoryException`.
 
 Additionally, when you open a `ZipArchive` in `Read` mode with an **unseekable** stream (for example, a network stream), the runtime copies the entire stream into a `MemoryStream` up front to enable seeking through the central directory.
 
 ```csharp
-// ⚠️ In Update mode, each entry is decompressed into memory when accessed
+// Update mode: calling entry.Open() loads the full entry into memory
 using var archive = new ZipArchive(stream, ZipArchiveMode.Update);
 ```
 
@@ -168,22 +162,22 @@ using var archive = new ZipArchive(stream, ZipArchiveMode.Update);
 
 ### TAR streaming model
 
-`TarReader` reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's `DataStream` is only valid until the next `GetNextEntry()` call. If you need to retain entry data, copy it immediately:
+`TarReader` reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's `DataStream` is only valid until the next `GetNextEntry()` call. If you need to retain entry data, either copy it immediately or pass `copyContents: true` to `GetNextEntry()`, which copies the entry data into a separate `MemoryStream` that remains valid after advancing:
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="TarStreaming":::
 
 ### Thread safety
 
-`ZipArchive` isn't thread-safe. The internal state—entry lists, stream positions, and disposal flags—isn't synchronized. Don't read or write entries from multiple threads concurrently. If you need parallel processing, open a separate `ZipArchive` instance per thread, or synchronize access externally.
-
-`TarReader` and `TarWriter` are likewise not designed for concurrent use. Each operates on a single underlying stream with sequential access semantics.
+`ZipArchive`, `TarReader`, and `TarWriter` are not thread-safe. Don't access an instance from multiple threads concurrently. If you need parallel processing, use a separate instance per thread or synchronize access externally.
 
 ## Platform considerations
 
 ### Unix file permissions
 
-- **ZIP:** Unix permissions are stored in the upper 16 bits of `ExternalAttributes`. When extracting on Unix, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. Permissions aren't applied if the upper bits are zero—this happens when the ZIP was created on Windows, because the Windows runtime sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
-- **TAR:** The `TarEntry.Mode` property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). However, during **regular file extraction**, only the 9 ownership bits (rwx for user/group/other) are applied—SetUID, SetGID, and StickyBit are explicitly stripped for security. Directories, block devices, character devices, and FIFOs receive the full `Mode` value including SetUID, SetGID, and StickyBit.
+- **ZIP:** Unix permissions are stored in the upper 16 bits of `ExternalAttributes`. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because the Windows runtime sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
+- **TAR:** The `TarEntry.Mode` property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime applies only the 9 ownership bits (rwx for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped for security.
+
+When processing untrusted archives, validate `TarEntry.Mode` before extracting. An archive could set executable permissions on files that should not be executable.
 
 ### Special entry types (TAR)
 
@@ -191,13 +185,13 @@ Block devices, character devices, and FIFOs can only be created on Unix. Extract
 
 ### File name sanitization differs by platform
 
-On Windows, the runtime replaces control characters and `"*:<>?|` with underscores via `ArchivingUtils.SanitizeEntryFilePath()`. On Unix, only null characters are replaced. Archive entries with names like `file:name.txt` are renamed to `file_name.txt` on Windows but extracted as-is on Unix.
+On Windows, when using `ExtractToDirectory`, the runtime replaces control characters and ``"*:<>?|`` with underscores in entry names. On Unix, only null characters are replaced. Archive entries with names like `file:name.txt` are renamed to `file_name.txt` on Windows but extracted as-is on Unix. The per-entry APIs (`Open()`, `ExtractToFile()`) do not perform any name sanitization.
 
 ## Data integrity
 
 ZIP entries include a CRC-32 checksum that you can use to verify data hasn't been corrupted or tampered with.
 
-Starting with .NET 11, the runtime validates CRC-32 checksums automatically when reading ZIP entries. When you read an entry's data stream to completion, the runtime compares the computed CRC of the decompressed data against the checksum stored in the archive. If they don't match, an `InvalidDataException` is thrown.
+Starting with .NET 11, the runtime validates CRC-32 checksums automatically when reading ZIP entries. When you read an entry's data stream to completion, the runtime compares the computed CRC of the decompressed data against the checksum stored in the archive. If they don't match, an `InvalidDataException` is thrown. .NET 11 also validates CRC-32 checksums in TAR entry headers.
 
 > [!NOTE]
 > In prior versions of .NET, no CRC validation was performed on read. The runtime computed CRC values when writing entries (for storage in the archive), but never verified them during extraction. If you're targeting a runtime older than .NET 11, be aware that corrupt or tampered entries are silently accepted.
@@ -209,20 +203,14 @@ Starting with .NET 11, the runtime validates CRC-32 checksums automatically when
 
 ### ZIP comments and extra fields
 
-Treat all archive metadata as untrusted input. ZIP archives can contain attacker-controlled metadata beyond entry names:
+- **Archive and entry comments** are arbitrary strings. If your application displays or processes comments, sanitize them appropriately.
+- **Extra fields** are binary key-value pairs attached to each entry. The runtime preserves unknown extra fields and trailing data when reading and writing archives in `Update` mode and round-trips them as-is. If your application reads or interprets extra fields, validate their contents.
+- **Entry name encoding:** when writing, the runtime uses ASCII for entry names that contain only printable characters (32-126) and UTF-8 (with the language encoding flag set) for names that contain other characters. When reading without a custom encoding, entries with the language encoding flag are decoded as UTF-8, and entries without it are also decoded as UTF-8. Use the `entryNameEncoding` parameter on `ZipArchive` to override encoding when needed, but be aware the override affects all entries uniformly.
 
-- **Archive and entry comments** are arbitrary strings encoded using either Code Page 437 or UTF-8 (depending on the language encoding flag). If your application displays or processes comments, sanitize them appropriately.
-- **Extra fields** are binary key-value pairs attached to each entry. The runtime preserves unknown extra fields and trailing data when reading and writing archives in `Update` mode—they're round-tripped as-is. If your application reads or interprets extra fields, validate their contents.
-- **Entry name encoding** defaults to the system codepage for entries without the language encoding flag (EFS) set, and UTF-8 when EFS is set. The ZIP specification defines Code Page 437 as the default, but in practice, most tools (including the Windows Shell zip tool) use the local system codepage instead, and .NET follows the same behavior. When interoperating with archives from other tools, mismatched encodings can produce garbled file names. Use the `entryNameEncoding` parameter on `ZipArchive` to override encoding when needed, but be aware the override affects all entries uniformly.
-
-### TAR header-driven memory allocation
-
-TAR entry headers contain size fields that the parser uses to allocate buffers. A malicious TAR archive can declare an extremely large size for a PAX extended attributes block or a GNU long-path entry, causing the parser to attempt a large memory allocation. The runtime does include a `ValidateSize()` guard that rejects allocations exceeding `Array.MaxLength` (~2 GB), so allocations aren't completely unbounded—but values up to ~2 GB can still cause significant memory pressure. Your entry-count and per-entry-size limits (described in [Enforce size and entry count limits](#enforce-size-and-entry-count-limits)) also help mitigate this risk, since these metadata entries are counted and sized like regular entries.
-
-## Encryption considerations (preview)
+## Encryption considerations (.NET 11+)
 
 > [!NOTE]
-> ZIP encryption support (ZipCrypto and WinZip AES) is a preview feature that isn't yet publicly available. The APIs described in this section are subject to change.
+> ZIP encryption support (ZipCrypto and WinZip AES) is new in .NET 11.
 
 .NET 11 adds support for reading and writing encrypted ZIP archives using WinZip-compatible encryption. The `ZipEncryptionMethod` enum specifies the encryption method:
 
@@ -233,7 +221,7 @@ TAR entry headers contain size fields that the parser uses to allocate buffers. 
 | `Aes128` | WinZip AES-128. |
 | `Aes192` | WinZip AES-192. |
 | `Aes256` | WinZip AES-256. **Recommended**—strongest available option. |
-| `Unknown` | Returned when the entry uses PKWare strong encryption, which .NET doesn't support. |
+| `Unknown` | Returned when the entry uses an encryption method that .NET does not support. |
 
 ### Choose AES-256 for new archives
 
@@ -258,7 +246,7 @@ foreach (ZipArchiveEntry entry in archive.Entries)
 {
     if (entry.EncryptionMethod == ZipEncryptionMethod.Unknown)
     {
-        // PKWare strong encryption — not supported by .NET
+        // Unsupported encryption method, skip this entry
         continue;
     }
 
@@ -267,7 +255,7 @@ foreach (ZipArchiveEntry entry in archive.Entries)
 }
 ```
 
-Attempting to open an entry that uses PKWare strong encryption (`ZipEncryptionMethod.Unknown`) throws `NotSupportedException`.
+Attempting to open an entry that uses an unsupported encryption method (`ZipEncryptionMethod.Unknown`) throws `NotSupportedException`.
 
 ### Convenience methods with encryption
 
@@ -301,7 +289,6 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 - [ ] **Memory limits:** Avoid `ZipArchiveMode.Update` for large untrusted archives. Avoid `Read` mode with unseekable streams from untrusted sources.
 - [ ] **Thread safety:** Don't share `ZipArchive`, `TarReader`, or `TarWriter` instances across threads.
 - [ ] **Untrusted metadata:** Treat entry names, comments, and extra fields as untrusted input. Sanitize before display or processing.
-- [ ] **File name validation:** On Windows, guard against reserved names (`CON`, `PRN`, `AUX`, `NUL`).
 - [ ] **Overwrite behavior:** Default to `overwrite: false`.
 - [ ] **Resource disposal:** Always dispose `ZipArchive`, `TarReader`, `TarWriter`, and their streams.
 

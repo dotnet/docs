@@ -4,23 +4,51 @@ namespace ExpressionBodiedMembers;
 
 public class Person
 {
-   public Person(string firstName, string lastName)
-   {
-      fname = firstName;
-      lname = lastName;
-   }
-
    private string fname;
    private string lname;
 
-   public override string ToString() => $"{fname} {lname}".Trim();
+   public Person(string firstName, string lastName)
+   {
+      // Add 'this' to each property for better clarification
+      this.fname = firstName;
+      this.lname = lastName;
+   }
+
+   // Add public properties
+
+   public string FirstName
+   {
+      get => this.fname;
+
+      private set
+      {
+         this.fname = value;
+      }
+   }
+
+   public string LastName
+   {
+      get => this.lname;
+
+      private set
+      {
+         this.lname = value;
+      }
+   }
+
+   /// <summary>
+   /// Add some changes in methods
+   /// </summary>
+   /// <returns></returns>
+
+   public override string ToString() => $"{this.FirstName} {this.LastName}".Trim();
    public void DisplayName() => Console.WriteLine(ToString());
    
    // Expression-bodied methods with parameters
-   public string GetFullName(string title) => $"{title} {fname} {lname}";
+   public string GetFullName(string title) => $"{title} {this.FirstName} {this.LastName}";
    public int CalculateAge(int birthYear) => DateTime.Now.Year - birthYear;
    public bool IsOlderThan(int age) => CalculateAge(1990) > age;
-   public string FormatName(string format) => format.Replace("{first}", fname).Replace("{last}", lname);
+   public string FormatName(string format) => format.Replace("{first}", this.FirstName).Replace("{last}", this.LastName);
 }
 
 class Example

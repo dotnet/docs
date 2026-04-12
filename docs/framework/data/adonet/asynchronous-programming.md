@@ -12,9 +12,9 @@ This article discusses support for asynchronous programming in .NET Framework Da
 
 Prior to .NET Framework 4.5, asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:
 
-- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*?displayProperty=nameWithType>
 
 This functionality remained in SqlClient in .NET Framework 4.5.
 
@@ -43,23 +43,23 @@ Calling an `async` method does not allocate any additional threads. It might use
 
 The following methods were added in .NET Framework 4.5 to support asynchronous programming:
 
-- <xref:System.Data.Common.DbConnection.OpenAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.Common.DbCommand.ExecuteNonQueryAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.Common.DbCommand.ExecuteScalarAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.Common.DbDataReader.GetFieldValueAsync%2A>
-- <xref:System.Data.Common.DbDataReader.IsDBNullAsync%2A>
-- <xref:System.Data.Common.DbDataReader.NextResultAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.Common.DbDataReader.ReadAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlConnection.OpenAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlDataReader.NextResultAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbConnection.OpenAsync*?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync*?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbCommand.ExecuteNonQueryAsync*?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbCommand.ExecuteReaderAsync*?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbCommand.ExecuteScalarAsync*?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbDataReader.GetFieldValueAsync*>
+- <xref:System.Data.Common.DbDataReader.IsDBNullAsync*>
+- <xref:System.Data.Common.DbDataReader.NextResultAsync*?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbDataReader.ReadAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlConnection.OpenAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlDataReader.NextResultAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlDataReader.ReadAsync*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType>
 
  Other asynchronous members were added to support [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
@@ -367,7 +367,7 @@ namespace Samples {
 
 ### Asynchronous operations with SqlBulkCopy
 
-Asynchronous capabilities were also added to <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType> with <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>.
+Asynchronous capabilities were also added to <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType> with <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType>.
 
 ```csharp
 using System;

@@ -12,7 +12,7 @@ Type mapping between SQL Server and the common language runtime (CLR) is automat
 
  When customizing type mappings, the recommended approach is to make the changes in an intermediary DBML file. Then, your customized DBML file should be used when you create you code and mapping files with SQLMetal or O/R Designer.
 
- Once you instantiate the <xref:System.Data.Linq.DataContext> object from the code and mapping files, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method creates a database based on the type mappings that are specified. If there are no CLR `type` attributes specified in the mappings, the default type mappings will be used.
+ Once you instantiate the <xref:System.Data.Linq.DataContext> object from the code and mapping files, the <xref:System.Data.Linq.DataContext.CreateDatabase*?displayProperty=nameWithType> method creates a database based on the type mappings that are specified. If there are no CLR `type` attributes specified in the mappings, the default type mappings will be used.
 
 ## Customization with SQLMetal or O/R Designer
 

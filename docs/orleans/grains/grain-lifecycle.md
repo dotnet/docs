@@ -29,8 +29,8 @@ public static class GrainLifecycleStage
 ```
 
 - `First`: First stage in a grain's lifecycle.
-- `SetupState`: Set up grain state before activation. For stateful grains, this is the stage where Orleans loads <xref:Orleans.Core.IStorage%601.State?displayProperty=nameWithType> from storage if <xref:Orleans.Core.IStorage.RecordExists?displayProperty=nameWithType> is `true`.
-- `Activate`: Stage where Orleans calls <xref:Orleans.Grain.OnActivateAsync%2A?displayProperty=nameWithType> and <xref:Orleans.Grain.OnDeactivateAsync%2A?displayProperty=nameWithType>.
+- `SetupState`: Set up grain state before activation. For stateful grains, this is the stage where Orleans loads <xref:Orleans.Core.IStorage`1.State?displayProperty=nameWithType> from storage if <xref:Orleans.Core.IStorage.RecordExists?displayProperty=nameWithType> is `true`.
+- `Activate`: Stage where Orleans calls <xref:Orleans.Grain.OnActivateAsync*?displayProperty=nameWithType> and <xref:Orleans.Grain.OnDeactivateAsync*?displayProperty=nameWithType>.
 - `Last`: Last stage in a grain's lifecycle.
 
 While Orleans uses the grain lifecycle during grain activation, grains aren't always deactivated during some error cases (such as silo crashes). Therefore, applications shouldn't rely on the grain lifecycle always executing during grain deactivations.
@@ -59,13 +59,13 @@ builder.Configure<GrainCollectionOptions>(options =>
 {
     // Enable memory-based activation shedding
     options.EnableActivationSheddingOnMemoryPressure = true;
-    
+
     // Memory usage percentage (0-100) at which grain collection triggers
     options.MemoryUsageLimitPercentage = 80; // default: 80
-    
+
     // Target memory usage percentage to reach after collection
     options.MemoryUsageTargetPercentage = 75; // default: 75
-    
+
     // How often to poll memory usage
     options.MemoryUsagePollingPeriod = TimeSpan.FromSeconds(5); // default: 5s
 });
@@ -124,7 +124,7 @@ public override void Participate(IGrainLifecycle lifecycle)
 }
 ```
 
-In the preceding example, <xref:Orleans.Grain%601> overrides the <xref:Orleans.Grain.Participate%2A?displayProperty=nameWithType> method to tell the lifecycle to call its `OnSetupState` method during the <xref:Orleans.Runtime.GrainLifecycleStage.SetupState?displayProperty=nameWithType> stage of the lifecycle.
+In the preceding example, <xref:Orleans.Grain`1> overrides the <xref:Orleans.Grain.Participate*?displayProperty=nameWithType> method to tell the lifecycle to call its `OnSetupState` method during the <xref:Orleans.Runtime.GrainLifecycleStage.SetupState?displayProperty=nameWithType> stage of the lifecycle.
 
 :::zone target="docs" pivot="orleans-8-0,orleans-7-0"
 
@@ -288,7 +288,7 @@ public class MyMigratableGrain : Grain, IMyGrain, IGrainMigrationParticipant
 
 #### Option 2: Use Grain&lt;TState&gt; or IPersistentState&lt;T&gt;
 
-Grains using <xref:Orleans.Grain%601> or <xref:Orleans.Runtime.IPersistentState%601> automatically support migration. Their state is serialized and restored without additional code:
+Grains using <xref:Orleans.Grain`1> or <xref:Orleans.Runtime.IPersistentState`1> automatically support migration. Their state is serialized and restored without additional code:
 
 ```csharp
 // Automatic migration support via Grain<TState>

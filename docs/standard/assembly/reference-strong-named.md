@@ -38,7 +38,7 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
 
 ## Make a runtime reference to a strong-named assembly
 
-When you make a runtime reference to a strong-named assembly, for example by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> method, you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:
+When you make a runtime reference to a strong-named assembly, for example by using the <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType*?displayProperty=nameWithType> method, you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:
 
 \<*assembly name*>**,** \<*version number*>**,** \<*culture*>**,** \<*public key token*>
 
@@ -50,7 +50,7 @@ myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33
 
 In this example, `PublicKeyToken` is the hexadecimal form of the public key token. If there is no culture value, use `Culture=neutral`.
 
-The following code example shows how to use this information with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.
+The following code example shows how to use this information with the <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> method.
 
 ```cpp
 Assembly^ myDll =

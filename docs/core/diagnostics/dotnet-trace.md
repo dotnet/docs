@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 03/11/2026
+ms.date: 03/19/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ---
@@ -303,6 +303,7 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 ### Prerequisites
 
 - Linux kernel with `CONFIG_USER_EVENTS=y` support (kernel 6.4+)
+- tracefs mounted (defaults to `/sys/kernel/tracing`)
 - Root permissions
 - .NET 10+
 
@@ -310,6 +311,9 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 > The `collect-linux` verb only runs on Linux x64 and Linux Arm64 environments that have glibc version 2.35 or later.
 > All of the [.NET 10 officially supported Linux distros](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux) support this requirement except Alpine 3.22, CentOS Stream 9, and any distros based off Red Hat Enterprise Linux 9.
 > A quick way to check the version of a system's libc is with the command `ldd --version` or by executing the libc library directly.
+
+> [!TIP]
+> To check if your kernel has `user_events` support, run `zgrep CONFIG_USER_EVENTS /proc/config.gz`. You can also look for `user_events_data` under your tracefs mount (defaults to `/sys/kernel/tracing/user_events_data`).
 
 ### Synopsis
 
@@ -695,6 +699,30 @@ However, when you want to gain a finer control over the lifetime of the app bein
    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
 ## (Linux-only) Collect a machine-wide trace using dotnet-trace
+
+### Get symbols for native runtime frames
+
+`collect-linux` captures native frames in callstacks. To resolve native method names for runtime libraries (such as `libcoreclr.so`), place the corresponding debug symbol files on disk beside the libraries. Without these symbols, native frames appear as unresolved addresses in the trace.
+
+`collect-linux` dynamically enables perf map generation for JIT-compiled code when the trace begins, so you don't need to restart any .NET processes.
+
+To download native runtime symbols, use [dotnet-symbol](./dotnet-symbol.md):
+
+1. Install `dotnet-symbol`:
+
+   ```dotnetcli
+   dotnet tool install -g dotnet-symbol
+   ```
+
+1. Download the debug symbols for your runtime version. For example, if your runtime is installed at `/usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.0`:
+
+   ```dotnetcli
+   dotnet-symbol --symbols /usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.0/lib*.so
+   ```
+
+1. Place the downloaded `.so.dbg` files beside the runtime libraries they correspond to (for example, `libcoreclr.so.dbg` next to `libcoreclr.so`). By default, `dotnet-symbol` writes symbol files next to each input file. If your runtime libraries live under a protected path such as `/usr/share/dotnet/...`, run `dotnet-symbol` with elevated permissions (for example, by using `sudo`), or use the `-o`/`--output` option to write to a writable directory, then copy the `.so.dbg` files beside the runtime libraries.
+
+After you place the symbols, `collect-linux` resolves native method names when it collects the trace.
 
 This example captures CPU samples for all processes on the machine. Any processes running .NET 10+ will also include some additional lightweight events describing GC, JIT, and Assembly loading behavior.
 

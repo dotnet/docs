@@ -200,7 +200,7 @@ The following example throws an exception because the code point is beyond the s
 
 ### Rune usage example: changing letter case
 
-An API that takes a `char` and assumes it is working with a code point that is a scalar value doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> on each char in a string:
+An API that takes a `char` and assumes it is working with a code point that is a scalar value doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant*?displayProperty=nameWithType> on each char in a string:
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/ConvertToUpper.cs" id="SnippetBadExample":::
 
@@ -208,8 +208,8 @@ If the `input` string contains the lowercase Deseret letter `er` (`𐑉`), this 
 
 Here are two options for correctly converting a string to uppercase:
 
-* Call <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> on the input string rather than iterating `char`-by-`char`. The `string.ToUpperInvariant` method has access to both parts of each surrogate pair, so it can handle all Unicode code points correctly.
-* Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a scalar value. For example, calling <xref:System.Text.Rune.ToUpperInvariant%2A?displayProperty=nameWithType> as shown in the following example gives correct results:
+* Call <xref:System.String.ToUpperInvariant*?displayProperty=nameWithType> on the input string rather than iterating `char`-by-`char`. The `string.ToUpperInvariant` method has access to both parts of each surrogate pair, so it can handle all Unicode code points correctly.
+* Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a scalar value. For example, calling <xref:System.Text.Rune.ToUpperInvariant*?displayProperty=nameWithType> as shown in the following example gives correct results:
 
   :::code language="csharp" source="snippets/character-encoding-introduction/csharp/ConvertToUpper.cs" id="SnippetGoodExample":::
 
@@ -217,16 +217,16 @@ Here are two options for correctly converting a string to uppercase:
 
 The `Rune` type exposes analogs of many of the `char` APIs. For example, the following methods mirror static APIs on the `char` type:
 
-* <xref:System.Text.Rune.IsLetter%2A?displayProperty=nameWithType>
-* <xref:System.Text.Rune.IsWhiteSpace%2A?displayProperty=nameWithType>
-* <xref:System.Text.Rune.IsLetterOrDigit%2A?displayProperty=nameWithType>
-* <xref:System.Text.Rune.GetUnicodeCategory%2A?displayProperty=nameWithType>
+* <xref:System.Text.Rune.IsLetter*?displayProperty=nameWithType>
+* <xref:System.Text.Rune.IsWhiteSpace*?displayProperty=nameWithType>
+* <xref:System.Text.Rune.IsLetterOrDigit*?displayProperty=nameWithType>
+* <xref:System.Text.Rune.GetUnicodeCategory*?displayProperty=nameWithType>
 
-To get the raw scalar value from a `Rune` instance, use the <xref:System.Text.Rune.Value%2A?displayProperty=nameWithType> property.
+To get the raw scalar value from a `Rune` instance, use the <xref:System.Text.Rune.Value?displayProperty=nameWithType> property.
 
-To convert a `Rune` instance back to a sequence of `char`s, use <xref:System.Text.Rune.ToString%2A?displayProperty=nameWithType> or the <xref:System.Text.Rune.EncodeToUtf16%2A?displayProperty=nameWithType> method.
+To convert a `Rune` instance back to a sequence of `char`s, use <xref:System.Text.Rune.ToString*?displayProperty=nameWithType> or the <xref:System.Text.Rune.EncodeToUtf16*?displayProperty=nameWithType> method.
 
-Since any Unicode scalar value is representable by a single `char` or by a surrogate pair, any `Rune` instance can be represented by at most 2 `char` instances. Use <xref:System.Text.Rune.Utf16SequenceLength%2A?displayProperty=nameWithType> to see how many `char` instances are required to represent a `Rune` instance.
+Since any Unicode scalar value is representable by a single `char` or by a surrogate pair, any `Rune` instance can be represented by at most 2 `char` instances. Use <xref:System.Text.Rune.Utf16SequenceLength*?displayProperty=nameWithType> to see how many `char` instances are required to represent a `Rune` instance.
 
 For more information about the .NET `Rune` type, see the [`Rune` API reference](xref:System.Text.Rune).
 

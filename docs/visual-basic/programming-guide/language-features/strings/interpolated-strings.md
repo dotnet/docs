@@ -63,7 +63,7 @@ There are three implicit type conversions from an interpolated string:
 3. Conversion of an interpolated string to a <xref:System.FormattableString> variable that represents a composite format string. Inspecting the composite format string and how it renders as a result string might, for example, help you protect against an injection attack if you were building a query. A <xref:System.FormattableString> also includes:
 
       - A <xref:System.FormattableString.ToString> overload that produces a result string for the <xref:System.Globalization.CultureInfo.CurrentCulture>.
-      - An <xref:System.FormattableString.Invariant%2A> method that produces a string for the <xref:System.Globalization.CultureInfo.InvariantCulture>.
+      - An <xref:System.FormattableString.Invariant*> method that produces a string for the <xref:System.Globalization.CultureInfo.InvariantCulture>.
       - A <xref:System.FormattableString.ToString(System.IFormatProvider)> method that produces a result string for a specified culture.
 
     All occurrences of double curly braces ("{{" and "}}") remain as double curly braces until you format. All contained interpolation expressions are converted to {0}, {1}, and so on.

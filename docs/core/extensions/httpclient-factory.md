@@ -21,7 +21,7 @@ With modern application development principles driving best practices, the <xref
 
 All of the sample source code provided in this article requires the installation of the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Furthermore, the code examples demonstrate the usage of HTTP `GET` requests to retrieve user `Todo` objects from the free [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) API.
 
-When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
+When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
 
 - Exposes the `HttpClient` class as a DI-ready type.
 - Provides a central location for naming and configuring logical `HttpClient` instances.
@@ -51,7 +51,7 @@ Consuming services can require the `IHttpClientFactory` as a constructor paramet
 
 :::code source="snippets/http/basic/TodoService.cs" highlight="9,15,21-23":::
 
-Using `IHttpClientFactory` like in the preceding example is a good way to refactor an existing app. It has no impact on how `HttpClient` is used. In places where `HttpClient` instances are created in an existing app, replace those occurrences with calls to <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A>.
+Using `IHttpClientFactory` like in the preceding example is a good way to refactor an existing app. It has no impact on how `HttpClient` is used. In places where `HttpClient` instances are created in an existing app, replace those occurrences with calls to <xref:System.Net.Http.IHttpClientFactory.CreateClient*>.
 
 ### Named clients
 
@@ -81,7 +81,7 @@ It's easy to extend this configuration and store more details about how you'd li
 
 #### Create client
 
-Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> is called:
+Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient*> is called:
 
 - A new instance of `HttpClient` is created.
 - The configuration action is called.
@@ -114,7 +114,7 @@ In the preceding code:
 
 API-specific methods can be created that expose `HttpClient` functionality. For example, the `GetUserTodosAsync` method encapsulates code to retrieve user-specific `Todo` objects.
 
-The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> to register a typed client class:
+The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> to register a typed client class:
 
 :::code source="snippets/http/typed/Program.cs" range="1-17" highlight="9-17":::
 
@@ -171,8 +171,8 @@ In the preceding code, the `CreateItemAsync` method:
 
 - Serializes the `Item` parameter to JSON using `System.Text.Json`. This uses an instance of <xref:System.Text.Json.JsonSerializerOptions> to configure the serialization process.
 - Creates an instance of <xref:System.Net.Http.StringContent> to package the serialized JSON for sending in the HTTP request's body.
-- Calls <xref:System.Net.Http.HttpClient.PostAsync%2A> to send the JSON content to the specified URL. This is a relative URL that gets added to the [HttpClient.BaseAddress](xref:System.Net.Http.HttpClient.BaseAddress).
-- Calls <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode%2A> to throw an exception if the response status code does not indicate success.
+- Calls <xref:System.Net.Http.HttpClient.PostAsync*> to send the JSON content to the specified URL. This is a relative URL that gets added to the [HttpClient.BaseAddress](xref:System.Net.Http.HttpClient.BaseAddress).
+- Calls <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode*> to throw an exception if the response status code does not indicate success.
 
 `HttpClient` also supports other types of content. For example, <xref:System.Net.Http.MultipartContent> and <xref:System.Net.Http.StreamContent>. For a complete list of supported content, see <xref:System.Net.Http.HttpContent>.
 
@@ -180,13 +180,13 @@ The following example shows an HTTP `PUT` request:
 
 :::code source="snippets/http/basic/ItemService.cs" id="Update":::
 
-The preceding code is very similar to the `POST` example. The `UpdateItemAsync` method calls <xref:System.Net.Http.HttpClient.PutAsync%2A> instead of `PostAsync`.
+The preceding code is very similar to the `POST` example. The `UpdateItemAsync` method calls <xref:System.Net.Http.HttpClient.PutAsync*> instead of `PostAsync`.
 
 The following example shows an HTTP `DELETE` request:
 
 :::code source="snippets/http/basic/ItemService.cs" id="Delete":::
 
-In the preceding code, the `DeleteItemAsync` method calls <xref:System.Net.Http.HttpClient.DeleteAsync%2A>. Because HTTP `DELETE` requests typically contain no body, the `DeleteAsync` method doesn't provide an overload that accepts an instance of `HttpContent`.
+In the preceding code, the `DeleteItemAsync` method calls <xref:System.Net.Http.HttpClient.DeleteAsync*>. Because HTTP `DELETE` requests typically contain no body, the `DeleteAsync` method doesn't provide an overload that accepts an instance of `HttpContent`.
 
 To learn more about using different HTTP verbs with `HttpClient`, see <xref:System.Net.Http.HttpClient>.
 
@@ -198,7 +198,7 @@ A new `HttpClient` instance is returned each time `CreateClient` is called on th
 
 Caching of handlers is desirable as each handler typically manages its own underlying HTTP connection pool. Creating more handlers than necessary can result in socket exhaustion and connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The default handler lifetime is two minutes. To override the default value, call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> for each client, on the `IHttpClientBuilder` when registering `IHttpClientFactory` in the `ServiceCollection`:
+The default handler lifetime is two minutes. To override the default value, call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime*> for each client, on the `IHttpClientBuilder` when registering `IHttpClientFactory` in the `ServiceCollection`:
 
 ```csharp
 services.AddHttpClient("Named.Client")
@@ -218,7 +218,7 @@ Keeping a single `HttpClient` instance alive for a long duration is a common pat
 
 It may be necessary to control the configuration of the inner <xref:System.Net.Http.HttpMessageHandler> used by a client.
 
-An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be called on the `IHttpClientBuilder` and passed in a delegate. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
+An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler*> extension method can be called on the `IHttpClientBuilder` and passed in a delegate. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
 
 :::code source="snippets/http/configurehandler/Program.cs" id="configurehandler":::
 
@@ -230,13 +230,13 @@ There are several additional configuration options for controlling the `IHttpCli
 
 | Method | Description |
 |--|--|
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler%2A> | Adds an additional message handler for a named `HttpClient`. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient%2A> | Configures the binding between the `TClient` and the named `HttpClient` associated with the `IHttpClientBuilder`. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureHttpClient%2A> | Adds a delegate that will be used to configure a named `HttpClient`. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> | Configures the primary `HttpMessageHandler` from the dependency injection container for a named `HttpClient`. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RedactLoggedHeaders%2A> | Sets the collection of HTTP header names for which values should be redacted before logging. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> | Sets the length of time that a `HttpMessageHandler` instance can be reused. Each named client can have its own configured handler lifetime value. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseSocketsHttpHandler%2A> | Configures a new or a previously added `SocketsHttpHandler` instance from the dependency injection container to be used as a primary handler for a named `HttpClient`. (.NET 5+ only) |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler*> | Adds an additional message handler for a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient*> | Configures the binding between the `TClient` and the named `HttpClient` associated with the `IHttpClientBuilder`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureHttpClient*> | Adds a delegate that will be used to configure a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler*> | Configures the primary `HttpMessageHandler` from the dependency injection container for a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RedactLoggedHeaders*> | Sets the collection of HTTP header names for which values should be redacted before logging. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime*> | Sets the length of time that a `HttpMessageHandler` instance can be reused. Each named client can have its own configured handler lifetime value. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseSocketsHttpHandler*> | Configures a new or a previously added `SocketsHttpHandler` instance from the dependency injection container to be used as a primary handler for a named `HttpClient`. (.NET 5+ only) |
 
 ## Using `IHttpClientFactory` together with `SocketsHttpHandler`
 
@@ -246,7 +246,7 @@ However, `SocketsHttpHandler` and `IHttpClientFactory` can be used together to i
 
 To use both APIs:
 
-1. Specify `SocketsHttpHandler` as `PrimaryHandler` via <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A>, or <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseSocketsHttpHandler%2A> (.NET 5+ only).
+1. Specify `SocketsHttpHandler` as `PrimaryHandler` via <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler*>, or <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseSocketsHttpHandler*> (.NET 5+ only).
 1. Set up <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime?displayProperty=nameWithType> based on the interval you expect DNS to be updated; for example, to a value that was previously set in the `SetHandlerLifetime` extension method.
 1. (Optional) Since `SocketsHttpHandler` will handle connection pooling and recycling, handler recycling at the `IHttpClientFactory` level is no longer needed. You can disable it by setting `HandlerLifetime` to `Timeout.InfiniteTimeSpan`.
 
@@ -261,7 +261,7 @@ In the example above, 2 minutes were chosen arbitrarily for illustration purpose
 
 ## Avoid typed clients in singleton services
 
-When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
+When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient*> every time an `HttpClient` is needed.
 
 However, with the _typed client_ approach, typed clients are transient objects usually injected into services. That may cause a problem because a typed client can be injected into a singleton service.
 
@@ -281,7 +281,7 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 
 Users are strongly advised **not to cache scope-related information** (such as data from `HttpContext`) inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
-If you require access to an app DI scope from your message handler, for authentication as an example, you'd encapsulate scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around an `HttpMessageHandler` instance from the `IHttpClientFactory` cache. To access the handler call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A?displayProperty=nameWithType> for any registered _named client_. In that case, you'd create an `HttpClient` instance yourself using the constructed handler.
+If you require access to an app DI scope from your message handler, for authentication as an example, you'd encapsulate scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around an `HttpMessageHandler` instance from the `IHttpClientFactory` cache. To access the handler call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler*?displayProperty=nameWithType> for any registered _named client_. In that case, you'd create an `HttpClient` instance yourself using the constructed handler.
 
 :::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to app DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
 

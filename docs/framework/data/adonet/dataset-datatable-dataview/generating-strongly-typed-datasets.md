@@ -11,7 +11,7 @@ ms.assetid: 54333cbf-bb43-4314-a7d4-6dc1dd1c44b3
 
 Given an XML Schema that complies with the XML Schema definition language (XSD) standard, you can generate a strongly typed <xref:System.Data.DataSet> using the XSD.exe tool provided with the Windows Software Development Kit (SDK).
 
- (To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio)).
+ (To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema*> or [Working with Datasets in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio)).
 
  The following code shows the syntax for generating a `DataSet` using this tool.
 

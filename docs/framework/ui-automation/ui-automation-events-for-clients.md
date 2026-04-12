@@ -30,15 +30,15 @@ helpviewer_keywords:
 
 |Method|Event Type|Event Arguments Type|Delegate Type|
 |------------|----------------|--------------------------|-------------------|
-|<xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler%2A>|Focus change|<xref:System.Windows.Automation.AutomationFocusChangedEventArgs>|<xref:System.Windows.Automation.AutomationFocusChangedEventHandler>|
-|<xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>|Property change|<xref:System.Windows.Automation.AutomationPropertyChangedEventArgs>|<xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>|
-|<xref:System.Windows.Automation.Automation.AddStructureChangedEventHandler%2A>|Structure change|<xref:System.Windows.Automation.StructureChangedEventArgs>|<xref:System.Windows.Automation.StructureChangedEventHandler>|
-|<xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>|All other events, identified by an <xref:System.Windows.Automation.AutomationEvent>|<xref:System.Windows.Automation.AutomationEventArgs> or <xref:System.Windows.Automation.WindowClosedEventArgs>|<xref:System.Windows.Automation.AutomationEventHandler>|
+|<xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler*>|Focus change|<xref:System.Windows.Automation.AutomationFocusChangedEventArgs>|<xref:System.Windows.Automation.AutomationFocusChangedEventHandler>|
+|<xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler*>|Property change|<xref:System.Windows.Automation.AutomationPropertyChangedEventArgs>|<xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>|
+|<xref:System.Windows.Automation.Automation.AddStructureChangedEventHandler*>|Structure change|<xref:System.Windows.Automation.StructureChangedEventArgs>|<xref:System.Windows.Automation.StructureChangedEventHandler>|
+|<xref:System.Windows.Automation.Automation.AddAutomationEventHandler*>|All other events, identified by an <xref:System.Windows.Automation.AutomationEvent>|<xref:System.Windows.Automation.AutomationEventArgs> or <xref:System.Windows.Automation.WindowClosedEventArgs>|<xref:System.Windows.Automation.AutomationEventHandler>|
 
- Before calling the method, you must create a delegate method to handle the event. If you prefer, you can handle different kinds of events in a single method, and pass this method in multiple calls to one of the methods in the table. For example, a single <xref:System.Windows.Automation.AutomationEventHandler> can be set up to handle various events differently according to the <xref:System.Windows.Automation.AutomationEventArgs.EventId%2A>.
+ Before calling the method, you must create a delegate method to handle the event. If you prefer, you can handle different kinds of events in a single method, and pass this method in multiple calls to one of the methods in the table. For example, a single <xref:System.Windows.Automation.AutomationEventHandler> can be set up to handle various events differently according to the <xref:System.Windows.Automation.AutomationEventArgs.EventId*>.
 
 > [!NOTE]
-> To process window-closed events, cast the argument type that is passed to the event handler as <xref:System.Windows.Automation.WindowClosedEventArgs>. Because the Microsoft UI Automation element for the window is no longer valid, you cannot use the `sender` parameter to retrieve information; use <xref:System.Windows.Automation.WindowClosedEventArgs.GetRuntimeId%2A> instead.
+> To process window-closed events, cast the argument type that is passed to the event handler as <xref:System.Windows.Automation.WindowClosedEventArgs>. Because the Microsoft UI Automation element for the window is no longer valid, you cannot use the `sender` parameter to retrieve information; use <xref:System.Windows.Automation.WindowClosedEventArgs.GetRuntimeId*> instead.
 
 > [!CAUTION]
 > If your application might receive events from its own UI, do not use your application's UI thread to subscribe to events, or to unsubscribe. Doing so might lead to unpredictable behavior. For more information, see [UI Automation Threading Issues](ui-automation-threading-issues.md).
@@ -47,10 +47,10 @@ helpviewer_keywords:
 
 |Method|Description|
 |------------|-----------------|
-|<xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>|Unregisters an event handler that was registered by using <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>.|
-|<xref:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler%2A>|Unregisters an event handler that was registered by using <xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler%2A>.|
-|<xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler%2A>|Unregisters an event handler that was registered by using <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>.|
-|<xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>|Unregisters all registered event handlers.|
+|<xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler*>|Unregisters an event handler that was registered by using <xref:System.Windows.Automation.Automation.AddAutomationEventHandler*>.|
+|<xref:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler*>|Unregisters an event handler that was registered by using <xref:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler*>.|
+|<xref:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler*>|Unregisters an event handler that was registered by using <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler*>.|
+|<xref:System.Windows.Automation.Automation.RemoveAllEventHandlers*>|Unregisters all registered event handlers.|
 
  For example code, see [Subscribe to UI Automation Events](subscribe-to-ui-automation-events.md).
 

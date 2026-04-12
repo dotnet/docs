@@ -43,7 +43,7 @@ Each message that `My.Application.Log` writes has an associated severity level, 
     > [!NOTE]
     > By default, the application flushes the log-file output when the application closes.
 
-     In the example above, the second call to the <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> method and the call to the <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> method produces log output, while the first and last calls to the `WriteEntry` method do not. This is because the severity levels of `WriteEntry` and `WriteException` are "Information" and "Error", both of which are allowed by the `My.Application.Log` object's default log filtering. However, events with "Start" and "Stop" severity levels are prevented from producing log output.
+     In the example above, the second call to the <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry*> method and the call to the <xref:Microsoft.VisualBasic.Logging.Log.WriteException*> method produces log output, while the first and last calls to the `WriteEntry` method do not. This is because the severity levels of `WriteEntry` and `WriteException` are "Information" and "Error", both of which are allowed by the `My.Application.Log` object's default log filtering. However, events with "Start" and "Stop" severity levels are prevented from producing log output.
 
 ## Filtering for All My.Application.Log Listeners
 

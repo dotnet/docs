@@ -103,11 +103,11 @@ Microsoft is committed to protecting end user privacy. When you build an applica
 
  The diagnostics feature of the WCF infrastructure logs messages that pass through the transport and service model layers, and the activities and events associated with these messages. This feature is turned off by default. It is enabled using the application’s configuration file and the tracing behavior may be modified using the WCF WMI provider at runtime. When enabled, the tracing infrastructure emits a diagnostic trace that contains messages, activities, and processing events to configured listeners. The format and location of the output are determined by the administrator’s listener configuration choices, but is typically an XML formatted file. The administrator is responsible for setting the access control list (ACL) on the trace files. In particular, when hosted by Windows Activation System (WAS), the administrator should make sure the files are not served from the public virtual root directory if that is not desired.
 
- There are two types of tracing: Message logging and Service Model diagnostic tracing, described in the following section. Each type is configured through its own trace source: <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> and <xref:System.ServiceModel>. Both of these logging trace sources capture data that is local to the application.
+ There are two types of tracing: Message logging and Service Model diagnostic tracing, described in the following section. Each type is configured through its own trace source: <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging*> and <xref:System.ServiceModel>. Both of these logging trace sources capture data that is local to the application.
 
 ### Message logging
 
- The message logging trace source (<xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>) allows an administrator to log the messages that flow through the system. Through configuration, the user may decide to log entire messages or message headers only, whether to log at the transport and/or service model layers, and whether to include malformed messages. Also, the user may configure filtering to restrict which messages are logged.
+ The message logging trace source (<xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging*>) allows an administrator to log the messages that flow through the system. Through configuration, the user may decide to log entire messages or message headers only, whether to log at the transport and/or service model layers, and whether to include malformed messages. Also, the user may configure filtering to restrict which messages are logged.
 
  By default, message logging is disabled. The local machine administrator can prevent the application-level administrator from turning message logging on.
 
@@ -280,7 +280,7 @@ Microsoft is committed to protecting end user privacy. When you build an applica
 
 ### Service model tracing
 
- The Service Model trace source (<xref:System.ServiceModel>) enables tracing of activities and events related to message processing. This feature uses the .NET Framework diagnostic functionality from <xref:System.Diagnostics>. As with the <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> property, the location and its ACL are user-configurable using .NET Framework application configuration files. As with message logging, the file location is always configured when the administrator enables tracing; thus, the administrator controls the ACL.
+ The Service Model trace source (<xref:System.ServiceModel>) enables tracing of activities and events related to message processing. This feature uses the .NET Framework diagnostic functionality from <xref:System.Diagnostics>. As with the <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging> property, the location and its ACL are user-configurable using .NET Framework application configuration files. As with message logging, the file location is always configured when the administrator enables tracing; thus, the administrator controls the ACL.
 
  Traces contain message headers when a message is in scope. The same rules for hiding potentially personal information in message headers in the previous section apply: the personal information previously identified is removed by default from the headers in traces. Both the machine administrator and the application deployer must modify the configuration in order to log potentially personal information. However, personal information contained in application-specific headers is logged in traces. The application deployer is responsible for setting the ACLs on the configuration and trace files. They can also turn off tracing to hide this information or filter out this information from the trace files after it's logged.
 
@@ -296,7 +296,7 @@ Microsoft is committed to protecting end user privacy. When you build an applica
 
  WCF configuration uses the .NET Framework configuration mechanism. The configuration files are stored on the machine. The application developer and the administrator create the configuration files and ACL for each of the application's requirements. A configuration file can contain endpoint addresses and links to certificates in the certificate store. The certificates can be used to provide application data to configure various properties of the features used by the application.
 
- WCF also uses the .NET Framework process dump functionality by calling the <xref:System.Environment.FailFast%2A> method.
+ WCF also uses the .NET Framework process dump functionality by calling the <xref:System.Environment.FailFast*> method.
 
 ### IT pro tools
 

@@ -16,7 +16,7 @@ An ***event*** is a member that enables an object to trigger notifications. Even
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example, see [How to publish events that conform to .NET Guidelines](/dotnet/standard/events). That sample demonstrates the generic <xref:System.EventHandler%601> delegate type, how to subscribe to an event, and create an event handler method.
+The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example, see [How to publish events that conform to .NET Guidelines](/dotnet/standard/events). That sample demonstrates the generic <xref:System.EventHandler`1> delegate type, how to subscribe to an event, and create an event handler method.
 
 :::code language="csharp" source="./snippets/Events.cs" id="EventExample":::
 

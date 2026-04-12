@@ -249,7 +249,7 @@ After implementing a custom serializer, configure it using the <xref:Orleans.Con
 :::zone-end
 :::zone target="docs" pivot="orleans-3-x"
 
-After implementing the serializers, they're registered internally with the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. `StorageSerializationPicker` is the default implementation of `IStorageSerializationPicker`. You can see an example of changing the data storage format or using serializers in [RelationalStoreTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/Orleans.AdoNet.Tests/StorageTests/RelationalStoreTests.cs). Note that direct application-level access to `AdoNetGrainStorage` to configure serialization isn't available in Orleans 3.x.
+After implementing the serializers, they're registered internally with the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker> property in <xref:Orleans.Storage.AdoNetGrainStorage>. `StorageSerializationPicker` is the default implementation of `IStorageSerializationPicker`. You can see an example of changing the data storage format or using serializers in [RelationalStoreTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/Orleans.AdoNet.Tests/StorageTests/RelationalStoreTests.cs). Note that direct application-level access to `AdoNetGrainStorage` to configure serialization isn't available in Orleans 3.x.
 
 :::zone-end
 

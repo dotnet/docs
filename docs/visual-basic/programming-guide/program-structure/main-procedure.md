@@ -105,12 +105,12 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
         End Sub
     End Module
     ```
-  
+
 ## See also
 
-- <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
-- <xref:System.Array.Length%2A>
-- <xref:Microsoft.VisualBasic.Information.UBound%2A>
+- <xref:Microsoft.VisualBasic.Interaction.MsgBox*>
+- <xref:System.Array.Length*>
+- <xref:Microsoft.VisualBasic.Information.UBound*>
 - [Structure of a Visual Basic Program](structure-of-a-visual-basic-program.md)
 - [-main](../../reference/command-line-compiler/main.md)
 - [Shared](../../language-reference/modifiers/shared.md)

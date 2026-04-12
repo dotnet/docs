@@ -39,7 +39,7 @@ Specifies that the Windows identity always flows across asynchronous points, reg
 
 |Value|Description|
 |-----------|-----------------|
-|`false`|The Windows identity does not flow across asynchronous points, unless the impersonation is performed through managed methods such as <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A>. This is the default.|
+|`false`|The Windows identity does not flow across asynchronous points, unless the impersonation is performed through managed methods such as <xref:System.Security.Principal.WindowsIdentity.Impersonate*>. This is the default.|
 |`true`|The Windows identity always flows across asynchronous points, regardless of how impersonation was performed.|
 
 ### Child Elements
@@ -55,13 +55,13 @@ Specifies that the Windows identity always flows across asynchronous points, reg
 
 ## Remarks
 
- In the .NET Framework versions 1.0 and 1.1, the Windows identity does not flow across asynchronous points. In .NET Framework version 2.0, there is an <xref:System.Threading.ExecutionContext> object that contains information about the currently executing thread, and flows it across asynchronous points within an application domain. The <xref:System.Security.Principal.WindowsIdentity> also flows as part of the information that flows across the asynchronous points, provided the impersonation was achieved using managed methods such as <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> and not through other means such as platform invoke to native methods. This element is used to specify that the Windows identity does flow across asynchronous points, regardless of how the impersonation was achieved.
+ In the .NET Framework versions 1.0 and 1.1, the Windows identity does not flow across asynchronous points. In .NET Framework version 2.0, there is an <xref:System.Threading.ExecutionContext> object that contains information about the currently executing thread, and flows it across asynchronous points within an application domain. The <xref:System.Security.Principal.WindowsIdentity> also flows as part of the information that flows across the asynchronous points, provided the impersonation was achieved using managed methods such as <xref:System.Security.Principal.WindowsIdentity.Impersonate*> and not through other means such as platform invoke to native methods. This element is used to specify that the Windows identity does flow across asynchronous points, regardless of how the impersonation was achieved.
 
  You can alter this default behavior in two other ways:
 
 1. In managed code on a per-thread basis.
 
-     You can suppress the flow on a per-thread basis by modifying the <xref:System.Threading.ExecutionContext> and <xref:System.Security.SecurityContext> settings by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType>, <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=nameWithType>, or <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=nameWithType> method.
+     You can suppress the flow on a per-thread basis by modifying the <xref:System.Threading.ExecutionContext> and <xref:System.Security.SecurityContext> settings by using the <xref:System.Threading.ExecutionContext.SuppressFlow*?displayProperty=nameWithType>, <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity*?displayProperty=nameWithType>, or <xref:System.Security.SecurityContext.SuppressFlow*?displayProperty=nameWithType> method.
 
 2. In the call to the unmanaged hosting interface to load the common language runtime (CLR).
 

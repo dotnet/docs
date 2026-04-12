@@ -47,7 +47,7 @@ To enable HTTP/3 support in .NET 6, include the `RuntimeHostConfigurationOption`
 </ItemGroup>
 ```
 
-Alternatively, you can call <xref:System.AppContext.SetSwitch%2A?displayProperty=fullName> from your app code, or set the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT` environment variable to `true`. For more information, see [.NET environment variables: DOTNET_SYSTEM_NET_HTTP_*](../tools/dotnet-environment-variables.md#dotnet_system_net_http_).
+Alternatively, you can call <xref:System.AppContext.SetSwitch*?displayProperty=fullName> from your app code, or set the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT` environment variable to `true`. For more information, see [.NET environment variables: DOTNET_SYSTEM_NET_HTTP_*](../tools/dotnet-environment-variables.md#dotnet_system_net_http_).
 
 The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard isn't final and therefore may change after .NET 6 is released.
 

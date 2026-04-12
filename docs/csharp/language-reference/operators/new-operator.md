@@ -47,7 +47,7 @@ For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ## Instantiation of anonymous types
 
-To create an instance of an [anonymous type](../../fundamentals/types/anonymous-types.md), use the `new` operator and object initializer syntax:
+To create an instance of an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md), use the `new` operator and object initializer syntax:
 
 :::code language="csharp" source="snippets/shared/NewOperator.cs" id="AnonymousType":::
 

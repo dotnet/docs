@@ -16,7 +16,7 @@ Expression trees represent code in a tree-like data structure, where each node i
 
 ## Creating Expression Trees from Lambda Expressions
 
- When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression%601>, the compiler emits code to build an expression tree that represents the lambda expression.
+ When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression`1>, the compiler emits code to build an expression tree that represents the lambda expression.
 
  The Visual Basic compiler can generate expression trees only from expression lambdas (or single-line lambdas). It cannot parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in Visual Basic, see [Lambda Expressions](../../language-features/procedures/lambda-expressions.md).
 
@@ -115,7 +115,7 @@ Console.WriteLine(String.Format("Decomposed expression: {0} => {1} {2} {3}",
 
 ## Compiling Expression Trees
 
- The <xref:System.Linq.Expressions.Expression%601> type provides the <xref:System.Linq.Expressions.Expression%601.Compile%2A> method that compiles the code represented by an expression tree into an executable delegate.
+ The <xref:System.Linq.Expressions.Expression`1> type provides the <xref:System.Linq.Expressions.Expression`1.Compile*> method that compiles the code represented by an expression tree into an executable delegate.
 
  The following code example demonstrates how to compile an expression tree and run the resulting code.
 

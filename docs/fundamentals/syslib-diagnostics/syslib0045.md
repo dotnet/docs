@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0045: Some cryptographic factory methods are obsolete
 
-The following `System.Security.Cryptography` methods are obsolete, starting in .NET 7. Using them in code generates warning `SYSLIB0045` at compile time. Each of these factory methods accepts a string argument that represents the algorithm name. These methods call into <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> and cast the result to the return type.
+The following `System.Security.Cryptography` methods are obsolete, starting in .NET 7. Using them in code generates warning `SYSLIB0045` at compile time. Each of these factory methods accepts a string argument that represents the algorithm name. These methods call into <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*?displayProperty=nameWithType> and cast the result to the return type.
 
 - <xref:System.Security.Cryptography.Aes.Create(System.String)?displayProperty=nameWithType>
 - <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType>
@@ -33,7 +33,7 @@ These methods were marked `[Obsolete]` because in trimmed applications, they can
 
 Calls that pass a constant string should be changed to either the parameterless factory method or a strong call to create the appropriate type. For example, a call to `Aes.Create("AES")` can be replaced with either `Aes.Create()` or `new AesCryptoServiceProvider()`. Since the <xref:System.Security.Cryptography.AesCryptoServiceProvider> type is also marked `[Obsolete]`, `Aes.Create()` is the preferred replacement.
 
-Calls that pass a non-constant string can either use their own lookup table or be changed to call <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> directly.
+Calls that pass a non-constant string can either use their own lookup table or be changed to call <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*?displayProperty=nameWithType> directly.
 
 ## Suppress a warning
 

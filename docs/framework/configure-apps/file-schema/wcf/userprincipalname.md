@@ -61,7 +61,7 @@ For more information about setting the UPN, see [Service Identity and Authentica
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
-- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.EndpointAddress.Identity*>
 - <xref:System.ServiceModel.UpnEndpointIdentity>
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [\<identity>](identity.md)

@@ -32,15 +32,15 @@ With the `endPoint` object created, create a client socket to connect to the ser
 The preceding C# code:
 
 - Instantiates a new `Socket` object with a given `endPoint` instances address family, the <xref:System.Net.Sockets.SocketType.Stream?displayProperty=nameWithType>, and <xref:System.Net.Sockets.ProtocolType.Tcp?displayProperty=nameWithType>.
-- Calls the <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=nameWithType> method with the `endPoint` instance as an argument.
+- Calls the <xref:System.Net.Sockets.Socket.ConnectAsync*?displayProperty=nameWithType> method with the `endPoint` instance as an argument.
 - In a `while` loop:
 
-  - Encodes and sends a message to the server using <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=nameWithType>.
+  - Encodes and sends a message to the server using <xref:System.Net.Sockets.Socket.SendAsync*?displayProperty=nameWithType>.
   - Writes the sent message to the console.
-  - Initializes a buffer to receive data from the server using <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=nameWithType>.
+  - Initializes a buffer to receive data from the server using <xref:System.Net.Sockets.Socket.ReceiveAsync*?displayProperty=nameWithType>.
   - When the `response` is an acknowledgment, it's written to the console and the loop is exited.
 
-- Finally, the `client` socket calls <xref:System.Net.Sockets.Socket.Shutdown%2A?displayProperty=nameWithType> given <xref:System.Net.Sockets.SocketShutdown.Both?displayProperty=nameWithType>, which shuts down both send and receive operations.
+- Finally, the `client` socket calls <xref:System.Net.Sockets.Socket.Shutdown*?displayProperty=nameWithType> given <xref:System.Net.Sockets.SocketShutdown.Both?displayProperty=nameWithType>, which shuts down both send and receive operations.
 
 ## Create a `Socket` server
 
@@ -51,14 +51,14 @@ To create the server socket, the `endPoint` object can listen for incoming conne
 The preceding C# code:
 
 - Instantiates a new `Socket` object with a given `endPoint` instances address family, the <xref:System.Net.Sockets.SocketType.Stream?displayProperty=nameWithType>, and <xref:System.Net.Sockets.ProtocolType.Tcp?displayProperty=nameWithType>.
-- The `listener` calls the <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method with the `endPoint` instance as an argument to associate the socket with the network address.
+- The `listener` calls the <xref:System.Net.Sockets.Socket.Bind*?displayProperty=nameWithType> method with the `endPoint` instance as an argument to associate the socket with the network address.
 - The <xref:System.Net.Sockets.Socket.Listen?displayProperty=nameWithType> method is called to listen for incoming connections.
-- The `listener` calls the <xref:System.Net.Sockets.Socket.AcceptAsync%2A?displayProperty=nameWithType> method to accept an incoming connection on the `handler` socket.
+- The `listener` calls the <xref:System.Net.Sockets.Socket.AcceptAsync*?displayProperty=nameWithType> method to accept an incoming connection on the `handler` socket.
 - In a `while` loop:
 
-  - Calls <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=nameWithType> to receive data from the client.
+  - Calls <xref:System.Net.Sockets.Socket.ReceiveAsync*?displayProperty=nameWithType> to receive data from the client.
   - When the data is received, it's decoded and written to the console.
-  - If the `response` message ends with `<|EOM|>`, an acknowledgment is sent to the client using the <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=nameWithType>.
+  - If the `response` message ends with `<|EOM|>`, an acknowledgment is sent to the client using the <xref:System.Net.Sockets.Socket.SendAsync*?displayProperty=nameWithType>.
 
 ## Run the sample client and server
 

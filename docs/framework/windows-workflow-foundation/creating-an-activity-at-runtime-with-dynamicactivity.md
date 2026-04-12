@@ -14,7 +14,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
 
  Top-level properties can be set using workflow <xref:System.Activities.Argument> objects. In imperative code, these arguments are created using CLR properties on a new type. In XAML, they are declared using `x:Class` and `x:Member` tags.
 
- Activities constructed using <xref:System.Activities.DynamicActivity> interface with the designer using <xref:System.ComponentModel.ICustomTypeDescriptor>. Activities created in the designer can be loaded dynamically using <xref:System.Activities.XamlIntegration.ActivityXamlServices.Load%2A>, as demonstrated in the following procedure.
+ Activities constructed using <xref:System.Activities.DynamicActivity> interface with the designer using <xref:System.ComponentModel.ICustomTypeDescriptor>. Activities created in the designer can be loaded dynamically using <xref:System.Activities.XamlIntegration.ActivityXamlServices.Load*>, as demonstrated in the following procedure.
 
 #### To create an activity at runtime using imperative code
 
@@ -30,7 +30,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
     using System.Collections.Generic;
     ```
 
-5. Replace the contents of the `Main` method with the following code, which creates a <xref:System.Activities.Statements.Sequence> activity that contains a single <xref:System.Activities.Statements.WriteLine> activity and assigns it to the <xref:System.Activities.DynamicActivity.Implementation%2A> property of a new dynamic activity.
+5. Replace the contents of the `Main` method with the following code, which creates a <xref:System.Activities.Statements.Sequence> activity that contains a single <xref:System.Activities.Statements.WriteLine> activity and assigns it to the <xref:System.Activities.DynamicActivity.Implementation> property of a new dynamic activity.
 
     ```csharp
     //Define the input argument for the activity

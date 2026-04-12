@@ -82,8 +82,8 @@ Defines the type of message-level security requirements for an endpoint configur
 ## See also
 
 - <xref:System.ServiceModel.TcpTransportSecurity>
-- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Transport%2A>
-- <xref:System.ServiceModel.NetTcpSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Transport*>
+- <xref:System.ServiceModel.NetTcpSecurity.Transport*>
 - <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

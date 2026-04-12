@@ -50,7 +50,7 @@ The time after which an idle grain activation becomes subject to collection is c
 
 ### Delay activation collection
 
-A grain activation can delay its collection by calling the <xref:Orleans.Grain.DelayDeactivation%2A> method:
+A grain activation can delay its collection by calling the <xref:Orleans.Grain.DelayDeactivation*> method:
 
 ```csharp
 protected void DelayDeactivation(TimeSpan timeSpan)

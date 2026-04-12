@@ -18,7 +18,7 @@ In a generic definition, use the `where` clause to specify constraints on the ty
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-For example, you can declare a generic class, `AGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
+For example, you can declare a generic class, `AGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable`1> interface:
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="Snippet1":::
 
@@ -39,7 +39,7 @@ In a nullable context, the `class` constraint requires a type to be a non-nullab
 
 The `where` clause can include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. The type can be a [value type](../builtin-types/value-types.md) or a non-nullable reference type. The `notnull` constraint is available for code compiled in a [`nullable enable` context](../../nullable-references.md#nullable-context). Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context.
 
-The addition of nullable reference types introduces a potential ambiguity in the meaning of `T?` in generic methods. If `T` is a `struct`, `T?` is the same as <xref:System.Nullable%601?displayProperty=nameWithType>. However, if `T` is a reference type, `T?` means that `null` is a valid value. The ambiguity arises because overriding methods can't include constraints. The new `default` constraint resolves this ambiguity. Add it when a base class or interface declares two overloads of a method, one that specifies the `struct` constraint, and one that doesn't have either the `struct` or `class` constraint applied:
+The addition of nullable reference types introduces a potential ambiguity in the meaning of `T?` in generic methods. If `T` is a `struct`, `T?` is the same as <xref:System.Nullable`1?displayProperty=nameWithType>. However, if `T` is a reference type, `T?` means that `null` is a valid value. The ambiguity arises because overriding methods can't include constraints. The new `default` constraint resolves this ambiguity. Add it when a base class or interface declares two overloads of a method, one that specifies the `struct` constraint, and one that doesn't have either the `struct` or `class` constraint applied:
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="BaseClass":::
 

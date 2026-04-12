@@ -17,7 +17,7 @@ Install the [`Microsoft.Orleans.Persistence.DynamoDB`](https://www.nuget.org/pac
 
 ## Configuration
 
-Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage%2A?displayProperty=nameWithType> extension method.
+Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage*?displayProperty=nameWithType> extension method.
 
 ```csharp
 siloBuilder.AddDynamoDBGrainStorage(

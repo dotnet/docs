@@ -2,7 +2,7 @@
 description: "Learn more about: Creating New Attributes for Elements in the DOM"
 title: Creating New Attributes for Elements in the DOM
 ms.date: 09/02/2021
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: dd6dc920-b011-418a-b3db-f1580a7d9251
@@ -38,8 +38,8 @@ Public Class Sample
         Console.WriteLine(doc.InnerXml)
     End Sub
 End Class
-```  
-  
+```
+
 ```csharp
 using System;
 using System.IO;
@@ -67,7 +67,7 @@ public class Sample
 The following example shows how to create a new attribute using the **CreateAttribute** method. The attribute is then added to the attribute collection of the **book** element using the **SetAttributeNode** method.
 
 Given the following XML:
-  
+
 ```xml
 <book genre='novel' ISBN='1-861001-57-5'>
 <title>Pride And Prejudice</title>
@@ -104,9 +104,9 @@ doc.DocumentElement.SetAttributeNode(attr);
 </book>
 ```
 
-The full code sample can be found at <xref:System.Xml.XmlDocument.CreateAttribute%2A>.
+The full code sample can be found at <xref:System.Xml.XmlDocument.CreateAttribute*>.
 
-If you created an **XmlNamedNodeMap** of attributes, you can add an attribute by name using the <xref:System.Xml.XmlNamedNodeMap.SetNamedItem%2A> method. For more information, see [Node Collections in NamedNodeMaps and NodeLists](node-collections-in-namednodemaps-and-nodelists.md).
+If you created an **XmlNamedNodeMap** of attributes, you can add an attribute by name using the <xref:System.Xml.XmlNamedNodeMap.SetNamedItem*> method. For more information, see [Node Collections in NamedNodeMaps and NodeLists](node-collections-in-namednodemaps-and-nodelists.md).
 
 ## Default attributes
 

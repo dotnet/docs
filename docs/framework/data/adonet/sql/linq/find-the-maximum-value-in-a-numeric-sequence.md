@@ -9,7 +9,7 @@ ms.assetid: 70d7c058-0280-4815-a008-6f290093591a
 ---
 # Find the Maximum Value in a Numeric Sequence
 
-Use the <xref:System.Linq.Enumerable.Max%2A> operator to find the highest value in a sequence of numeric values.
+Use the <xref:System.Linq.Enumerable.Max*> operator to find the highest value in a sequence of numeric values.
 
 ## Example 1
 

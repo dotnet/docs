@@ -71,8 +71,8 @@ Represents the security capabilities of the [\<wsHttpBinding>](wshttpbinding.md)
 ## See also
 
 - <xref:System.ServiceModel.WSHttpSecurity>
-- <xref:System.ServiceModel.WSHttpBinding.Security%2A>
-- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>
+- <xref:System.ServiceModel.WSHttpBinding.Security*>
+- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security*>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

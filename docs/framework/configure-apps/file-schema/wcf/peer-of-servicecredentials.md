@@ -51,8 +51,8 @@ Specifies the current credentials for a peer node.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
-- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.Peer%2A>
-- <xref:System.ServiceModel.Description.ServiceCredentials.Peer%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.Peer*>
+- <xref:System.ServiceModel.Description.ServiceCredentials.Peer*>
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))

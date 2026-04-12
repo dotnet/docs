@@ -81,19 +81,19 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 ### Define what occurs when the service starts
 
-In the code editor for **MyNewService.cs** or **MyNewService.vb**, locate the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
+In the code editor for **MyNewService.cs** or **MyNewService.vb**, locate the <xref:System.ServiceProcess.ServiceBase.OnStart*> method. Visual Studio automatically created an empty method definition when you created the project. Add code that writes an entry to the event log when the service starts:
 
 [!code-csharp[VbRadconService#3](./snippets/MyNewService/csharp/MyNewService.cs#3)]
 [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]
 
 #### Polling
 
-Because a service application is designed to be long-running, it usually polls or monitors the system, which you set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. The `OnStart` method must return to the operating system after the service's operation has begun so that the system isn't blocked.
+Because a service application is designed to be long-running, it usually polls or monitors the system, which you set up in the <xref:System.ServiceProcess.ServiceBase.OnStart*> method. The `OnStart` method must return to the operating system after the service's operation has begun so that the system isn't blocked.
 
 To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayProperty=nameWithType> component. The timer raises an <xref:System.Timers.Timer.Elapsed> event at regular intervals, at which time your service can do its monitoring. You use the <xref:System.Timers.Timer> component as follows:
 
 - Set the properties of the <xref:System.Timers.Timer> component in the `MyNewService.OnStart` method.
-- Start the timer by calling the <xref:System.Timers.Timer.Start%2A> method.
+- Start the timer by calling the <xref:System.Timers.Timer.Start*> method.
 
 ##### Set up the polling mechanism
 
@@ -159,16 +159,16 @@ Instead of running all your work on the main thread, you can run tasks by using 
 
 ### Define what occurs when the service is stopped
 
-Insert a line of code in the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method that adds an entry to the event log when the service is stopped:
+Insert a line of code in the <xref:System.ServiceProcess.ServiceBase.OnStop*> method that adds an entry to the event log when the service is stopped:
 
 [!code-csharp[VbRadconService#2](./snippets/MyNewService/csharp/MyNewService.cs#4)]
 [!code-vb[VbRadconService#4](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#4)]
 
 ### Define other actions for the service
 
-You can override the <xref:System.ServiceProcess.ServiceBase.OnPause%2A>, <xref:System.ServiceProcess.ServiceBase.OnContinue%2A>, and <xref:System.ServiceProcess.ServiceBase.OnShutdown%2A> methods to define additional processing for your component.
+You can override the <xref:System.ServiceProcess.ServiceBase.OnPause*>, <xref:System.ServiceProcess.ServiceBase.OnContinue*>, and <xref:System.ServiceProcess.ServiceBase.OnShutdown*> methods to define additional processing for your component.
 
-The following code shows how you can override the <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> method in the `MyNewService` class:
+The following code shows how you can override the <xref:System.ServiceProcess.ServiceBase.OnContinue*> method in the `MyNewService` class:
 
 [!code-csharp[VbRadconService#5](./snippets/MyNewService/csharp/MyNewService.cs#5)]
 [!code-vb[VbRadconService#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#5)]
@@ -253,7 +253,7 @@ You can implement the `SERVICE_START_PENDING` and `SERVICE_STOP_PENDING` status 
     Declare Auto Function SetServiceStatus Lib "advapi32.dll" (ByVal handle As IntPtr, ByRef serviceStatus As ServiceStatus) As Boolean
     ```
 
-4. To implement the `SERVICE_START_PENDING` status, add the following code to the beginning of the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method:
+4. To implement the `SERVICE_START_PENDING` status, add the following code to the beginning of the <xref:System.ServiceProcess.ServiceBase.OnStart*> method:
 
     ```csharp
     // Update the service state to Start Pending.
@@ -287,7 +287,7 @@ You can implement the `SERVICE_START_PENDING` and `SERVICE_STOP_PENDING` status 
     SetServiceStatus(Me.ServiceHandle, serviceStatus)
     ```
 
-6. (Optional) If <xref:System.ServiceProcess.ServiceBase.OnStop%2A> is a long-running method, repeat this procedure in the `OnStop` method. Implement the `SERVICE_STOP_PENDING` status and return the `SERVICE_STOPPED` status before the `OnStop` method exits.
+6. (Optional) If <xref:System.ServiceProcess.ServiceBase.OnStop*> is a long-running method, repeat this procedure in the `OnStop` method. Implement the `SERVICE_STOP_PENDING` status and return the `SERVICE_STOPPED` status before the `OnStop` method exits.
 
    For example:
 

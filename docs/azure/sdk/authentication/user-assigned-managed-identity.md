@@ -3,7 +3,7 @@ title: Authenticate Azure-hosted .NET apps to Azure resources using a user-assig
 description: Learn how to authenticate Azure-hosted .NET apps to other Azure services using a user-assigned managed identity.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 02/06/2025
+ms.date: 03/20/2026
 ---
 
 # Authenticate Azure-hosted .NET apps to Azure resources using a user-assigned managed identity
@@ -15,7 +15,7 @@ The recommended approach to authenticate an Azure-hosted app to other Azure reso
 - How to assign roles to the user-assigned managed identity
 - How to authenticate using the user-assigned managed identity from your app code
 
-[!INCLUDE [managed-identity-concepts](../includes/managed-identity-concepts.md)]
+[!INCLUDE [managed-identity-concepts](~/azure-dev-docs/articles/includes/authentication/managed-identity-concepts.md)]
 
 The sections ahead describe the steps to enable and use a user-assigned managed identity for an Azure-hosted app. If you need to use a system-assigned managed identity, visit the [system-assigned managed identities](system-assigned-managed-identity.md) article for more information.
 

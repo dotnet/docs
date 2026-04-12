@@ -69,7 +69,7 @@ Create three global fields to hold the paths to the recently downloaded files, a
 * `_modelPath` has the path where the trained model is saved.
 * `_mlContext` is the <xref:Microsoft.ML.MLContext> that provides processing context.
 * `_trainingDataView` is the <xref:Microsoft.ML.IDataView> used to process the training dataset.
-* `_predEngine` is the <xref:Microsoft.ML.PredictionEngine%602> used for single predictions.
+* `_predEngine` is the <xref:Microsoft.ML.PredictionEngine`2> used for single predictions.
 
 Add the following code to the line directly below the `using` directives to specify those paths and the other variables:
 
@@ -118,7 +118,7 @@ To initialize and load the `_trainingDataView` global variable in order to use i
 
 [!code-csharp[LoadTrainData](./snippets/github-issue-classification/csharp/Program.cs#LoadTrainData)]
 
-The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`.
+The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile``1%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`.
 
 Add the following after calling the `LoadFromTextFile()` method:
 
@@ -152,7 +152,7 @@ The last step in data preparation combines all of the feature columns into the *
 
 [!code-csharp[Concatenate](./snippets/github-issue-classification/csharp/Program.cs#Concatenate)]
 
-Next, append a <xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A> to cache the DataView so when you iterate over the data multiple times using the cache might get better performance, as with the following code:
+Next, append a <xref:Microsoft.ML.Data.EstimatorChain`1.AppendCacheCheckpoint*> to cache the DataView so when you iterate over the data multiple times using the cache might get better performance, as with the following code:
 
 [!code-csharp[AppendCache](./snippets/github-issue-classification/csharp/Program.cs#AppendCache)]
 
@@ -210,7 +210,7 @@ Fit the model to the `splitTrainSet` data and return the trained model by adding
 
 The `Fit()`method trains your model by transforming the dataset and applying the training.
 
-The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API that allows you to pass in and then perform a prediction on a single instance of data. Add this as the next line in the `BuildAndTrainModel()` method:
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine`2) is a convenience API that allows you to pass in and then perform a prediction on a single instance of data. Add this as the next line in the `BuildAndTrainModel()` method:
 
 [!code-csharp[CreatePredictionEngine1](./snippets/github-issue-classification/csharp/Program.cs#CreatePredictionEngine1)]
 
@@ -220,7 +220,7 @@ Add a GitHub issue to test the trained model's prediction in the `Predict` metho
 
 [!code-csharp[CreateTestIssue1](./snippets/github-issue-classification/csharp/Program.cs#CreateTestIssue1)]
 
-Use the [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function to make a prediction on a single row of data:
+Use the [Predict()](xref:Microsoft.ML.PredictionEngine`2.Predict%2A) function to make a prediction on a single row of data:
 
 [!code-csharp[Predict](./snippets/github-issue-classification/csharp/Program.cs#Predict)]
 
@@ -335,7 +335,7 @@ As you did previously, create a `PredictionEngine` instance with the following c
 
 [!code-csharp[CreatePredictionEngine](./snippets/github-issue-classification/csharp/Program.cs#CreatePredictionEngine)]
 
-The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API that allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine`2) is a convenience API that allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool`1) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
 
 > [!NOTE]
 > `PredictionEnginePool` service extension is currently in preview.

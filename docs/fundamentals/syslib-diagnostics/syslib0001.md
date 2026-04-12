@@ -12,7 +12,7 @@ The UTF-7 encoding is no longer in wide use among applications, and many specs n
 Consequently, the following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0001` at compile time.
 
 - <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property
-- <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors
+- <xref:System.Text.UTF7Encoding.%23ctor*> constructors
 
 ## Workarounds
 

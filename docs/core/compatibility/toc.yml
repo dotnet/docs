@@ -10,12 +10,16 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: DateOnly and TimeOnly TryParse methods throw for invalid input
+                href: core-libraries/11/dateonly-timeonly-tryparse-argumentexception.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
               - name: MemoryStream maximum capacity updated and exception behavior changed
                 href: core-libraries/11/memorystream-max-capacity.md
+              - name: API obsoletions with non-default diagnostic IDs
+                href: core-libraries/11/obsolete-apis.md
               - name: TAR-reading APIs verify header checksums when reading
                 href: core-libraries/11/tar-checksum-validation.md
               - name: ZipArchive.CreateAsync eagerly loads ZIP archive entries
@@ -24,10 +28,18 @@ items:
             items:
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+          - name: Extensions
+            items:
+              - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
+                href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected
                 href: globalization/11/japanese-calendar-min-date.md
+          - name: Interop
+            items:
+              - name: NativeAOT uses lib prefix for native library outputs on Unix
+                href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
             items:
               - name: Minimum hardware requirements updated
@@ -164,6 +176,8 @@ items:
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`
                 href: sdk/10.0/dotnet-restore-project-json-unsupported.md
+              - name: "`DefineConstants` for target frameworks not available at evaluation time"
+                href: sdk/10.0/defineconstants-not-available-at-evaluation.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
               - name: "`dotnet new sln` defaults to SLNX file format"

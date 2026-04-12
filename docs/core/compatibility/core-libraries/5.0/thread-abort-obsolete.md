@@ -5,19 +5,19 @@ ms.date: 11/01/2020
 ---
 # Thread.Abort is obsolete
 
-The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> APIs are obsolete. Projects that target .NET 5 or a later version will encounter compile-time warning `SYSLIB0006` if these methods are called.
+The <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> APIs are obsolete. Projects that target .NET 5 or a later version will encounter compile-time warning `SYSLIB0006` if these methods are called.
 
 ## Change description
 
-Previously, calls to <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> did not produce compile-time warnings, however, the method did throw a <xref:System.PlatformNotSupportedException> at runtime.
+Previously, calls to <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> did not produce compile-time warnings, however, the method did throw a <xref:System.PlatformNotSupportedException> at runtime.
 
-Starting in .NET 5, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> is marked obsolete as warning. Calling this method produces compiler warning `SYSLIB0006`. The implementation of the method is unchanged, and it continues to throw a <xref:System.PlatformNotSupportedException>.
+Starting in .NET 5, <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> is marked obsolete as warning. Calling this method produces compiler warning `SYSLIB0006`. The implementation of the method is unchanged, and it continues to throw a <xref:System.PlatformNotSupportedException>.
 
 ## Reason for change
 
-Given that <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on all .NET implementations except .NET Framework, <xref:System.ObsoleteAttribute> was added to the method to draw attention to places where it's called.
+Given that <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on all .NET implementations except .NET Framework, <xref:System.ObsoleteAttribute> was added to the method to draw attention to places where it's called.
 
-When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to abort a thread other than the current thread, you don't know what code has executed or failed to execute when the <xref:System.Threading.ThreadAbortException> is thrown. You also cannot be certain of the state of your application or any application and user state that it's responsible for preserving. For example, calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> may prevent the execution of static constructors or the release of managed or unmanaged resources. For this reason, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on .NET Core and .NET 5+.
+When you call <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> to abort a thread other than the current thread, you don't know what code has executed or failed to execute when the <xref:System.Threading.ThreadAbortException> is thrown. You also cannot be certain of the state of your application or any application and user state that it's responsible for preserving. For example, calling <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> may prevent the execution of static constructors or the release of managed or unmanaged resources. For this reason, <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> always throws a <xref:System.PlatformNotSupportedException> on .NET Core and .NET 5+.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithTyp
 
 ## Recommended action
 
-- Use a <xref:System.Threading.CancellationToken> to abort processing of a unit of work instead of calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. The following example illustrates the use of <xref:System.Threading.CancellationToken>.
+- Use a <xref:System.Threading.CancellationToken> to abort processing of a unit of work instead of calling <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType>. The following example illustrates the use of <xref:System.Threading.CancellationToken>.
 
   ```csharp
   void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
@@ -44,7 +44,7 @@ When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithTyp
 
   For more information, see [Cancellation in managed threads](../../../../standard/threading/cancellation-in-managed-threads.md).
 
-- To suppress the compile-time warning, suppress warning code `SYSLIB0006`. The warning code is specific to <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> and suppressing it doesn't suppress other obsoletion warnings in your code. However, we recommend that you remove calls to <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> instead of suppressing the warning.
+- To suppress the compile-time warning, suppress warning code `SYSLIB0006`. The warning code is specific to <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> and suppressing it doesn't suppress other obsoletion warnings in your code. However, we recommend that you remove calls to <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> instead of suppressing the warning.
 
   ```csharp
   void MyMethod()
@@ -68,4 +68,4 @@ When you call <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithTyp
 
 ## Affected APIs
 
-- <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName>
+- <xref:System.Threading.Thread.Abort*?displayProperty=fullName>

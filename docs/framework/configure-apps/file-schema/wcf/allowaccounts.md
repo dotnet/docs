@@ -43,7 +43,7 @@ Contains a collection of configuration elements that specify user accounts for p
 
 ## See also
 
-- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>
-- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>
+- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts*>
+- <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts*>
 - <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>
 - <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement>

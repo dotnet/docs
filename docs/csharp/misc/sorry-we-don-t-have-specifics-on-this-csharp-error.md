@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 02/13/2026
+ms.date: 04/01/2026
 f1_keywords:
   - "CS0190"
   - "CS0257"
@@ -48,16 +48,6 @@ f1_keywords:
   - "CS2046"
   - "CS3028"
   # C# 5 diagnostics
-  - "CS4001"
-  - "CS4003"
-  - "CS4005"
-  - "CS4006"
-  - "CS4007"
-  - "CS4010"
-  - "CS4011"
-  - "CS4012"
-  - "CS4015"
-  - "CS4016"
   - "CS4017"
   - "CS4018"
   - "CS4019"
@@ -68,12 +58,6 @@ f1_keywords:
   - "CS4024"
   - "CS4025"
   - "CS4026"
-  - "CS4027"
-  - "CS4028"
-  - "CS4029"
-  - "CS4030"
-  - "CS4031"
-  - "CS4034"
   - "CS4036"
   # C# 6 diagnostics
   - "CS7006"
@@ -84,7 +68,6 @@ f1_keywords:
   - "CS7018"
   - "CS7019"
   - "CS7020"
-  - "CS7022" # build only diagnostic
   - "CS7024"
   - "CS7025"
   - "CS7026"
@@ -127,7 +110,6 @@ f1_keywords:
   - "CS7089"
   - "CS7090"
   - "CS7091"
-  - "CS7092"
   - "CS7093"
   - "CS7094"
   - "CS7095"
@@ -160,7 +142,6 @@ f1_keywords:
   - "CS8027"
   - "CS8028"
   - "CS8029"
-  - "CS8031"
   - "CS8032"
   - "CS8033"
   - "CS8034"
@@ -189,7 +170,6 @@ f1_keywords:
   - "CS8095"
   - "CS8096"
   - "CS8099"
-  - "CS8100"
   - "CS8101"
   - "CS8102"
   - "CS8103"
@@ -202,11 +182,6 @@ f1_keywords:
   - "CS8113"
   # C# 7.0 diagnostics
   - "CS8115"
-  - "CS8116"
-  - "CS8117"
-  - "CS8119"
-  - "CS8120"
-  - "CS8121"
   - "CS8123"
   - "CS8126"
   - "CS8128"
@@ -232,10 +207,8 @@ f1_keywords:
   # C# 7.0 diagnostics
   - "CS8199"
   - "CS8202"
-  - "CS8204"
   - "CS8205"
   - "CS8206"
-  - "CS8208"
   - "CS8209"
   # C# 7.1 diagnostics
   - "CS8300"
@@ -265,6 +238,7 @@ f1_keywords:
   - "CS8359"
   - "CS8360"
   - "CS8362"
+  # C# 7.3 diagnostics
   - "CS8372"
   - "CS8375"
   - "CS8377"
@@ -278,7 +252,7 @@ f1_keywords:
   - "CS8386"
   - "CS8387"
   - "CS8389"
-  # C# 7.3 diagnostics
+  # C# 8.0 diagnostics
   - "CS8412"
   - "CS8413"
   - "CS8414"
@@ -293,23 +267,6 @@ f1_keywords:
   - "CS8427"
   - "CS8428"
   - "CS8429"
-  - "CS8502"
-  - "CS8503"
-  - "CS8504"
-  - "CS8505"
-  - "CS8508"
-  - "CS8510"
-  - "CS8512"
-  - "CS8513"
-  - "CS8516"
-  - "CS8517"
-  - "CS8518"
-  - "CS8519"
-  - "CS8520"
-  - "CS8521"
-  - "CS8522"
-  - "CS8523"
-  - "CS8524"
   - "CS8635"
   - "CS8641"
   - "CS8646"
@@ -329,83 +286,64 @@ f1_keywords:
   - "CS8716"
   - "CS8750"
   # C# 9 diagnostics start here
-  - "CS8751"
-  - "CS8752"
+  - "CS8751" # misc
+  - "CS8752" # target type new 
   - "CS8753"
   - "CS8754"
-  - "CS8755"
+  - "CS8755" # function pointer
   - "CS8756"
   - "CS8757"
   - "CS8758"
   - "CS8759"
-  - "CS8760"
+  - "CS8760" # misc
   - "CS8761"
   - "CS8771"
   - "CS8772"
-  - "CS8778"
-  - "CS8780"
-  - "CS8781"
-  - "CS8782"
-  - "CS8783"
-  - "CS8784"
+  - "CS8783" # local function
+  - "CS8784" # source generator
   - "CS8785"
-  - "CS8786"
+  - "CS8786" # function pointers
   - "CS8787"
   - "CS8788"
   - "CS8789"
-  - "CS8793"
-  - "CS8794"
-  - "CS8801"
-  - "CS8804"
-  - "CS8805"
   - "CS8806"
   - "CS8807"
   - "CS8808"
   - "CS8809"
   - "CS8811"
-  - "CS8813"
+  - "CS8813" # module initializers
   - "CS8814"
   - "CS8815"
   - "CS8816"
-  - "CS8822"
+  - "CS8822" # nullable / constraints
   - "CS8823"
-  - "CS8830"
+  - "CS8830" # feature / version
   - "CS8831"
-  - "CS8846"
-  - "CS8852"
+  - "CS8852" # init only properties
   - "CS8853"
   - "CS8855"
   - "CS8856"
-  - "CS8857"
+  - "CS8857" # records
   - "CS8869"
   - "CS8871"
   - "CS8876"
-  - "CS8888"
+  - "CS8888" # feature / version
   - "CS8889"
   - "CS8890"
   - "CS8891"
-  - "CS8893"
+  - "CS8893" # managed / unmanaged constraint
   - "CS8894"
   - "CS8895"
   - "CS8896"
-  - "CS8899"
-  - "CS8900"
+  - "CS8900" # module initializer
   - "CS8901"
   - "CS8902"
-  - "CS8903"
-  - "CS8906"
-  - "CS8909"
-  - "CS8911"
-  # C# 10 errors start here:
-  - "CS8918"
-  - "CS8935"
-  - "CS8937"
-  - "CS8940"
-  - "CS8973"
+  - "CS8903" # init only property
+  - "CS8906" # record
+  - "CS8909" # function pointer
+  - "CS8911" # function pointer
 # Coming in C# 15
-  - "CS9343"
-  - "CS9344"
-  - "CS9345"
+  - "CS9343" # misc
   - "CS9346"
   - "CS9347"
   - "CS9348"

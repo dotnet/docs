@@ -27,7 +27,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
 
  Identity processing on the client is analogous to client authentication on the service. A secure service does not execute code until the client's credentials have been authenticated. Likewise, the client does not send messages to the service until the service's credentials have been authenticated based on what is known in advance from the service's metadata.
 
- The <xref:System.ServiceModel.EndpointAddress.Identity%2A> property of the <xref:System.ServiceModel.EndpointAddress> class represents the identity of the service called by the client. The service publishes the <xref:System.ServiceModel.EndpointAddress.Identity%2A> in its metadata. When the client developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) against the service endpoint, the generated configuration contains the value of the service's <xref:System.ServiceModel.EndpointAddress.Identity%2A> property. The WCF infrastructure (if configured with security) verifies that the service possesses the identity specified.
+ The <xref:System.ServiceModel.EndpointAddress.Identity> property of the <xref:System.ServiceModel.EndpointAddress> class represents the identity of the service called by the client. The service publishes the <xref:System.ServiceModel.EndpointAddress.Identity*> in its metadata. When the client developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) against the service endpoint, the generated configuration contains the value of the service's <xref:System.ServiceModel.EndpointAddress.Identity> property. The WCF infrastructure (if configured with security) verifies that the service possesses the identity specified.
 
 > [!IMPORTANT]
 > The metadata contains the expected identity of the service, so it is recommended that you expose the service metadata through secure means, for example, by creating an HTTPS endpoint for the service. For more information, see [How to: Secure Metadata Endpoints](how-to-secure-metadata-endpoints.md).
@@ -96,7 +96,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
 
 - UPN. The UPN of the service account. The UPN is in the form `username`@`domain`. For example, when the service is running in a user account, it may be `username@contoso.com`.
 
- Specifying the identity programmatically (using the <xref:System.ServiceModel.EndpointAddress.Identity%2A> property) is optional. If no identity is specified, and the client credential type is Windows, the default is SPN with the value set to the hostname part of the service endpoint address prefixed with the "host/" literal. If no identity is specified, and the client credential type is a certificate, the default is `Certificate`. This applies to both message- and transport-level security.
+ Specifying the identity programmatically (using the <xref:System.ServiceModel.EndpointAddress.Identity> property) is optional. If no identity is specified, and the client credential type is Windows, the default is SPN with the value set to the hostname part of the service endpoint address prefixed with the "host/" literal. If no identity is specified, and the client credential type is a certificate, the default is `Certificate`. This applies to both message- and transport-level security.
 
 ## Identity and Custom Bindings
 

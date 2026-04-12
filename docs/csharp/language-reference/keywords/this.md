@@ -42,7 +42,7 @@ In the following example, the parameters `name` and `alias` hide fields with the
 
 ## See also
 
-- [`this` code-style preferences (IDE0003 and IDE0009)](../../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md)
+- [Member-access qualification preferences (IDE0003 and IDE0009)](../../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md)
 - [C# Keywords](index.md)
 - [base](base.md)
 - [Methods](../../programming-guide/classes-and-structs/methods.md)

@@ -19,7 +19,7 @@ dotnet watch [<command>]
   [--list] [--no-hot-reload] [--no-self-contained]
   [--non-interactive] [--project <PROJECT>] [--sc|--self-contained]
   [-q|--quiet] [-v|--verbose] [--version]
-  [--] <forwarded arguments> 
+  [--] <forwarded arguments>
 
 dotnet watch -?|-h|--help
 ```
@@ -115,7 +115,7 @@ As an alternative to disabling response compression, manually add the browser re
 
 - **`DOTNET_USE_POLLING_FILE_WATCHER`**
 
-  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
+  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch*?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
 - **`DOTNET_WATCH`**
 
@@ -159,7 +159,7 @@ As an alternative to disabling response compression, manually add the browser re
 - **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**
 
   When set to `1` or `true`, `dotnet watch` won't do special handling for static content files. `dotnet watch` sets MSBuild property `DotNetWatchContentFiles` to `false`.
-  
+
 - **`DOTNET_WATCH_RESTART_ON_RUDE_EDIT`**
 
   When set to `1` or `true`, `dotnet watch` will always restart on rude edits instead of asking.
@@ -267,7 +267,7 @@ For information about what kinds of changes are considered rude edits, see [Edit
 To disable hot reload when you run `dotnet watch`, use the `--no-hot-reload` option, as shown in the following example:
 
 ```.NET CLI
-dotnet watch --no-hot-reload 
+dotnet watch --no-hot-reload
 ```
 
 ## Examples

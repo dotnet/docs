@@ -81,7 +81,7 @@ Garbage collection occurs when one of the following conditions is true:
 
 - The memory that's used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
-- The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
+- The <xref:System.GC.Collect*?displayProperty=nameWithType> method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
 
 ## The managed heap
 
@@ -178,7 +178,7 @@ A garbage collection has the following phases:
 
   Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment because they're promoted to generation 2.
 
-  Ordinarily, the large object heap (LOH) isn't compacted because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
+  Ordinarily, the large object heap (LOH) isn't compacted because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
 
   - A memory limit on a container.
   - The [GCHeapHardLimit](../../core/runtime-config/garbage-collector.md#heap-hard-limit) or [GCHeapHardLimitPercent](../../core/runtime-config/garbage-collector.md#heap-hard-limit-percent) runtime configuration options.

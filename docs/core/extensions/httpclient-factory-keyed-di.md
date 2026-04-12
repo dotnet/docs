@@ -22,7 +22,7 @@ Starting from .NET 9 (`Microsoft.Extensions.Http` and `Microsoft.Extensions.Depe
 
 ## Basic Usage
 
-As of .NET 9, you need to _opt in_ to the feature by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed%2A> extension method. If opted in, the Named client applying the configuration is added to the DI container as a Keyed `HttpClient` service, using the client's name as a service key, so you can use the standard Keyed Services APIs (for example, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute>) to obtain the desired Named `HttpClient` instances (created and configured by `IHttpClientFactory`). By default, the clients are registered with _Scoped_ lifetime.
+As of .NET 9, you need to _opt in_ to the feature by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed*> extension method. If opted in, the Named client applying the configuration is added to the DI container as a Keyed `HttpClient` service, using the client's name as a service key, so you can use the standard Keyed Services APIs (for example, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute>) to obtain the desired Named `HttpClient` instances (created and configured by `IHttpClientFactory`). By default, the clients are registered with _Scoped_ lifetime.
 
 The following code illustrates the integration between `IHttpClientFactory`, Keyed DI, and ASP.NET Core 9.0 Minimal APIs:
 
@@ -215,7 +215,7 @@ Technically, the example "unwraps" the Typed client, so that the previously "hid
 
 ## How to: Opt in to Keyed DI by default
 
-You don't have to call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed%2A> for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
+You don't have to call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed*> for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults*>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());
@@ -258,7 +258,7 @@ Even though the "global" opt-in is a one-liner, it's unfortunate that the featur
 
 ## How to: Opt out from keyed registration
 
-You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RemoveAsKeyed%2A> extension method, either per client name:
+You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RemoveAsKeyed*> extension method, either per client name:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());      // opt IN by default
@@ -270,7 +270,7 @@ provider.GetRequiredKeyedService<HttpClient>("not-keyed"); // Throws: No service
 provider.GetRequiredKeyedService<HttpClient>("unknown");   // OK (unconfigured instance)
 ```
 
-Or "globally" with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>:
+Or "globally" with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults*>:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.RemoveAsKeyed()); // opt OUT by default

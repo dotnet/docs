@@ -60,7 +60,7 @@ Serialization is the process of converting an object into a format that can be r
 
  ✔️ CONSIDER implementing <xref:System.Runtime.Serialization.IExtensibleDataObject> to allow round-tripping between different versions of the type.
 
- The interface allows the serializer to ensure that no data is lost during round-tripping. The <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A?displayProperty=nameWithType> property is used to store any data from the future version of the type that is unknown to the current version, and so it cannot store it in its data members. When the current version is subsequently serialized and deserialized into a future version, the additional data will be available in the serialized stream.
+ The interface allows the serializer to ensure that no data is lost during round-tripping. The <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData?displayProperty=nameWithType> property is used to store any data from the future version of the type that is unknown to the current version, and so it cannot store it in its data members. When the current version is subsequently serialized and deserialized into a future version, the additional data will be available in the serialized stream.
 
 ## Supporting XML Serialization
 
@@ -68,7 +68,7 @@ Serialization is the process of converting an object into a format that can be r
 
  ❌ AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.
 
- ✔️ CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the `XmlSchemaProviderAttribute`.
+ ✔️ CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml*> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml*>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the `XmlSchemaProviderAttribute`.
 
 ## Supporting Runtime Serialization
 
@@ -97,7 +97,7 @@ public class Person : ISerializable
 
  ✔️ DO implement the <xref:System.Runtime.Serialization.ISerializable> members explicitly.
 
- ✔️ DO apply a link demand to <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> implementation. This ensures that only fully trusted core and the Runtime Serializer have access to the member.
+ ✔️ DO apply a link demand to <xref:System.Runtime.Serialization.ISerializable.GetObjectData*?displayProperty=nameWithType> implementation. This ensures that only fully trusted core and the Runtime Serializer have access to the member.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

@@ -23,7 +23,7 @@ This article describes LINQ to SQL serialization capabilities. The paragraphs th
 
  The LINQ to SQL serialization feature addresses this problem, primarily through two mechanisms:
 
-- A <xref:System.Data.Linq.DataContext> mode for turning off deferred loading (<xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A>). For more information, see <xref:System.Data.Linq.DataContext>.
+- A <xref:System.Data.Linq.DataContext> mode for turning off deferred loading (<xref:System.Data.Linq.DataContext.ObjectTrackingEnabled*>). For more information, see <xref:System.Data.Linq.DataContext>.
 
 - A code-generation switch to generate <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.DataMemberAttribute?displayProperty=nameWithType> attributes on generated entities. This aspect, including the behavior of defer-loading classes under serialization, is the major subject of this topic.
 

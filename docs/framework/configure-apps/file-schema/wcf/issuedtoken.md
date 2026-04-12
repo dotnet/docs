@@ -67,8 +67,8 @@ Specifies a custom token used to authenticate a client to a service.
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Description.ClientCredentials>
-- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.IssuedToken%2A>
-- <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken%2A>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.IssuedToken>
+- <xref:System.ServiceModel.Description.ClientCredentials.IssuedToken>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

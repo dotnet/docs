@@ -39,7 +39,7 @@ object.<child>
 
  You can use an XML child axis property to access child nodes by name from an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object, or from a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> objects. Use the XML `Value` property to access the value of the first child node in the returned collection. For more information, see [XML Value Property](xml-value-property.md).
 
- The Visual Basic compiler converts child axis properties to calls to the <xref:System.Xml.Linq.XContainer.Elements%2A> method.
+ The Visual Basic compiler converts child axis properties to calls to the <xref:System.Xml.Linq.XContainer.Elements*> method.
 
 ## XML Namespaces
 

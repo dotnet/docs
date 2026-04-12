@@ -24,7 +24,7 @@ maximum = 50
 
 Similar examples could apply to properties and array elements.
 
-**Indirect Access.** Indirect access through a value type can also generate this error. Consider the following code example, which attempts to set the value of <xref:System.Drawing.Point> by accessing it indirectly through <xref:System.Windows.Forms.Control.Location%2A>.
+**Indirect Access.** Indirect access through a value type can also generate this error. Consider the following code example, which attempts to set the value of <xref:System.Drawing.Point> by accessing it indirectly through <xref:System.Windows.Forms.Control.Location*>.
 
 ```vb
 ' Assume this code runs inside Form1.
@@ -34,7 +34,7 @@ exitButton.Location.X = 140
 ' The preceding line is an ERROR because of no storage for Location.
 ```
 
-The last statement of the preceding example fails because it creates only a temporary allocation for the <xref:System.Drawing.Point> structure returned by the <xref:System.Windows.Forms.Control.Location%2A> property. A structure is a value type, and the temporary structure is not retained after the statement runs. The problem is resolved by declaring and using a variable for <xref:System.Windows.Forms.Control.Location%2A>, which creates a more permanent allocation for the <xref:System.Drawing.Point> structure. The following example shows code that can replace the last statement of the preceding example.
+The last statement of the preceding example fails because it creates only a temporary allocation for the <xref:System.Drawing.Point> structure returned by the <xref:System.Windows.Forms.Control.Location> property. A structure is a value type, and the temporary structure is not retained after the statement runs. The problem is resolved by declaring and using a variable for <xref:System.Windows.Forms.Control.Location*>, which creates a more permanent allocation for the <xref:System.Drawing.Point> structure. The following example shows code that can replace the last statement of the preceding example.
 
 ```vb
 Dim exitLocation as New System.Drawing.Point(140, exitButton.Location.Y)

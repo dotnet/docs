@@ -75,8 +75,8 @@ Defines authentication settings for the HTTP transport.
 ## See also
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
-- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>
-- <xref:System.ServiceModel.WSHttpSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport*>
+- <xref:System.ServiceModel.WSHttpSecurity.Transport*>
 - <xref:System.ServiceModel.Configuration.WSHttpTransportSecurityElement>
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../wcf/bindings.md)

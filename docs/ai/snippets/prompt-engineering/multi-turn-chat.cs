@@ -13,7 +13,7 @@ AIAgent agent = new AzureOpenAIClient(
         .AsAIAgent();
 
 // Create a session to maintain conversation state.
-AgentSession session = await agent.GetNewSessionAsync();
+AgentSession session = await agent.CreateSessionAsync();
 
 while (true)
 {

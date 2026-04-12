@@ -16,23 +16,23 @@ The following example shows a simple *query expression* and the semantically equ
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="MethodSyntax":::
 
-The output from the two examples is identical. The type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable%601>.
+The output from the two examples is identical. The type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable`1>.
 
-On the right side of the expression, notice that the `where` clause is now expressed as an instance method on the `numbers` object, which has a type of `IEnumerable<int>`. If you're familiar with the generic <xref:System.Collections.Generic.IEnumerable%601> interface, you know that it doesn't have a `Where` method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you see not only a `Where` method, but many other methods such as `Select`, `SelectMany`, `Join`, and `Orderby`. These methods implement the standard query operators.
+On the right side of the expression, notice that the `where` clause is now expressed as an instance method on the `numbers` object, which has a type of `IEnumerable<int>`. If you're familiar with the generic <xref:System.Collections.Generic.IEnumerable`1> interface, you know that it doesn't have a `Where` method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you see not only a `Where` method, but many other methods such as `Select`, `SelectMany`, `Join`, and `Orderby`. These methods implement the standard query operators.
 
 ![Screenshot showing all the standard query operators in Intellisense.](./media/write-linq-queries/standard-query-operators.png)
 
-Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> includes more methods, it doesn't. The standard query operators are implemented as *extension methods*. Extension members "extend" an existing type; they can be called as if they were members on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601>, and that's why you can write `numbers.Where(...)`. You bring extensions into scope with `using` directives before calling them.
+Although it looks as if <xref:System.Collections.Generic.IEnumerable`1> includes more methods, it doesn't. The standard query operators are implemented as *extension methods*. Extension members "extend" an existing type; they can be called as if they were members on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable`1>, and that's why you can write `numbers.Where(...)`. You bring extensions into scope with `using` directives before calling them.
 
-For more information about extension members, see [Extension members](../../programming-guide/classes-and-structs/extension-methods.md). For more information about standard query operators, see [Standard Query Operators Overview (C#)](../standard-query-operators/index.md). Some LINQ providers, such as [Entity Framework](/ef/core/) and LINQ to XML, implement their own standard query operators and extension members for other types besides <xref:System.Collections.Generic.IEnumerable%601>.
+For more information about extension members, see [Extension members](../../programming-guide/classes-and-structs/extension-methods.md). For more information about standard query operators, see [Standard Query Operators Overview (C#)](../standard-query-operators/index.md). Some LINQ providers, such as [Entity Framework](/ef/core/) and LINQ to XML, implement their own standard query operators and extension members for other types besides <xref:System.Collections.Generic.IEnumerable`1>.
 
 ## Lambda expressions
 
-In the preceding example, the conditional expression (`num % 2 == 0`) is passed as an in-line argument to the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> method: `Where(num => num % 2 == 0).` This inline expression is a [lambda expression](../../language-reference/operators/lambda-expressions.md). It's a convenient way to write code that would otherwise have to be written in more cumbersome form. The `num` on the left of the operator is the input variable, which corresponds to `num` in the query expression. The compiler can infer the type of `num` because it knows that `numbers` is a generic <xref:System.Collections.Generic.IEnumerable%601> type. The body of the lambda is the same as the expression in query syntax or in any other C# expression or statement. It can include method calls and other complex logic. The return value is the expression result. You can only express certain queries in method syntax, and some of those queries require lambda expressions. Lambda expressions are a powerful and flexible tool in your LINQ toolbox.
+In the preceding example, the conditional expression (`num % 2 == 0`) is passed as an in-line argument to the <xref:System.Linq.Enumerable.Where*?displayProperty=nameWithType> method: `Where(num => num % 2 == 0).` This inline expression is a [lambda expression](../../language-reference/operators/lambda-expressions.md). It's a convenient way to write code that would otherwise have to be written in more cumbersome form. The `num` on the left of the operator is the input variable, which corresponds to `num` in the query expression. The compiler can infer the type of `num` because it knows that `numbers` is a generic <xref:System.Collections.Generic.IEnumerable`1> type. The body of the lambda is the same as the expression in query syntax or in any other C# expression or statement. It can include method calls and other complex logic. The return value is the expression result. You can only express certain queries in method syntax, and some of those queries require lambda expressions. Lambda expressions are a powerful and flexible tool in your LINQ toolbox.
 
 ## Composability of queries
 
-In the preceding code example, the <xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType> method is invoked by using the dot operator on the call to `Where`. `Where` produces a filtered sequence, and then `Orderby` sorts the sequence produced by `Where`. Because queries return an `IEnumerable`, you compose them in method syntax by chaining the method calls together. The compiler does this composition when you write queries using query syntax. Because a query variable doesn't store the results of the query, you can modify it or use it as the basis for a new query at any time, even after you execute it.
+In the preceding code example, the <xref:System.Linq.Enumerable.OrderBy*?displayProperty=nameWithType> method is invoked by using the dot operator on the call to `Where`. `Where` produces a filtered sequence, and then `Orderby` sorts the sequence produced by `Where`. Because queries return an `IEnumerable`, you compose them in method syntax by chaining the method calls together. The compiler does this composition when you write queries using query syntax. Because a query variable doesn't store the results of the query, you can modify it or use it as the basis for a new query at any time, even after you execute it.
 
 The following examples demonstrate some basic LINQ queries by using each approach listed previously.
 
@@ -45,7 +45,7 @@ Write most queries with *query syntax* to create *query expressions*. The follow
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_1":::
 
-The type of the queries is <xref:System.Collections.Generic.IEnumerable%601>. All of these queries can be written using [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) as shown in the following example:
+The type of the queries is <xref:System.Collections.Generic.IEnumerable`1>. All of these queries can be written using [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) as shown in the following example:
 
 `var query = from num in numbers...`
 
@@ -53,15 +53,15 @@ In each previous example, the queries don't actually execute until you iterate o
 
 ## Example - method syntax
 
-You must express some query operations as a method call. The most common such methods are those methods that return singleton numeric values, such as <xref:System.Linq.Enumerable.Sum%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. Call these methods last in any query because they return a single value and can't serve as the source for more query operations. The following example shows a method call in a query expression:
+You must express some query operations as a method call. The most common such methods are those methods that return singleton numeric values, such as <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.Max*>, <xref:System.Linq.Enumerable.Min*>, <xref:System.Linq.Enumerable.Average*>, and so on. Call these methods last in any query because they return a single value and can't serve as the source for more query operations. The following example shows a method call in a query expression:
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_2":::
 
-If the method has <xref:System.Action?displayProperty=fullName> or <xref:System.Func%601?displayProperty=nameWithType> parameters, provide these arguments in the form of a [lambda expression](../../language-reference/operators/lambda-expressions.md), as shown in the following example:
+If the method has <xref:System.Action?displayProperty=fullName> or <xref:System.Func`1?displayProperty=nameWithType> parameters, provide these arguments in the form of a [lambda expression](../../language-reference/operators/lambda-expressions.md), as shown in the following example:
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_3":::
 
-In the previous queries, only Query #4 executes immediately because it returns a single value, and not a generic <xref:System.Collections.Generic.IEnumerable%601> collection. The method itself uses `foreach` or similar code in order to compute its value.
+In the previous queries, only Query #4 executes immediately because it returns a single value, and not a generic <xref:System.Collections.Generic.IEnumerable`1> collection. The method itself uses `foreach` or similar code in order to compute its value.
 
 You can write each of the previous queries by using implicit typing with [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables), as shown in the following example:
 
@@ -91,7 +91,7 @@ You can write it by using explicit typing, as follows:
 
 ## Dynamically specify predicate filters at run time
 
-In some cases, you don't know until run time how many predicates you have to apply to source elements in the `where` clause. One way to dynamically specify multiple predicate filters is to use the <xref:System.Linq.Enumerable.Contains%2A> method, as shown in the following example. The query returns different results based on the value of `id` when the query is executed.
+In some cases, you don't know until run time how many predicates you have to apply to source elements in the `where` clause. One way to dynamically specify multiple predicate filters is to use the <xref:System.Linq.Enumerable.Contains*> method, as shown in the following example. The query returns different results based on the value of `id` when the query is executed.
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_1":::
 
@@ -108,7 +108,7 @@ You can use control flow statements, such as `if... else` or `switch`, to select
 
 ## Handle null values in query expressions
 
-This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
+This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable`1> can contain elements whose value is [null](../../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
 
 The following example uses these types and static data arrays:
 
@@ -132,7 +132,7 @@ var query =
     select new { o.OrderID, e.FirstName };
 ```
 
-In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers might not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
+In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers might not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable`1?displayProperty=nameWithType> interface.
 
 ## Handle exceptions in query expressions
 
@@ -158,5 +158,5 @@ Catch whatever exception you expect to raise, and do any necessary cleanup in a 
 
 - [where clause](../../language-reference/keywords/where-clause.md)
 - [Querying based on runtime state](../../advanced-topics/expression-trees/debugview-syntax.md)
-- <xref:System.Nullable%601>
+- <xref:System.Nullable`1>
 - [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md)

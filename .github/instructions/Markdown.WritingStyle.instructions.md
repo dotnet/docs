@@ -21,6 +21,7 @@ NEVER use:
 - "we" or "our" when referring to documentation authors or product teams
 - Jargon or overly complex technical language
 - Weak phrases like "you can" or "there is/are/were" unless they add value
+- "this" as a standalone pronoun — replace it with the specific noun it refers to (adjectival use before a noun, such as "this method", is fine)
 
 ALWAYS:
 - Write like you speak using everyday words
@@ -38,6 +39,7 @@ ALWAYS:
 
 ### Lists and Punctuation
 - **CRITICAL: Use Oxford comma in ALL lists (item1, item2, and item3) - NO EXCEPTIONS**
+- **MANDATORY: Use ordered lists ONLY for sequential procedural steps - NEVER for non-procedural content**
 - **MANDATORY: Number ordered lists using "1." for every item (NOT 1., 2., 3.) - ALWAYS USE "1."**
 - **REQUIRED: Use bullets for unordered lists - NEVER use numbers for unordered content**
 - **ESSENTIAL: Write complete sentences in lists with proper punctuation**

@@ -48,9 +48,9 @@ Example of a Table with Ambiguous RowOrColumnMajor Property
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.ITableProvider.GetRowHeaders%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor*>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders*>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITableProvider.GetRowHeaders*>|Method|None|
 
  This control pattern has no associated events.
 

@@ -71,19 +71,19 @@ This article shows you how to migrate .NET apps using **GitHub Copilot moderniza
 1. In the prompt box, open the dropdown, and select the repository where you want to create the custom agent profile.
 1. (Optional) Select the branch where you want to create the agent profile. The default is the main branch.
 1. Select the **Copilot** icon, then select **+ Create an agent**. This action opens a template agent profile named `my-agent.agent.md` in the `.github/agents` directory of your target repository.
-1. Paste the content below into the template, and rename the file to `appmod-dotnet.agent.md`.
+1. Paste the content below into the template, and rename the file to `modernize-azure-dotnet.agent.md`.
 
     ```
     ---
-    # .NET Modernization Assistant - Custom GitHub Copilot Agent
+    # .NET modernize to azure assistant - Custom GitHub Copilot Agent
     # This agent helps modernize .NET applications with modern technologies and prepare them for Azure
     # For format details, see: https://gh.io/customagents/config
     
-    name: dotnet-modernization
+    name: modernize-azure-dotnet
     description: Expert assistant for modernizing .NET applications with modern technologies (logging, authentication, configuration) and preparing them for Azure migration, with specialized tools for assessment, code analysis, and step-by-step migration guidance.
     ---
     
-    # .NET Modernization Assistant
+    # .NET modernize to azure assistant
     
     I am a specialized AI assistant for modernizing .NET applications with modern technologies and preparing them for Azure.
     

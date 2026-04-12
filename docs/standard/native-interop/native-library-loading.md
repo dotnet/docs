@@ -8,7 +8,7 @@ ms.date: 03/14/2022
 # Native library loading
 
 This article explains which paths the runtime searches when loading native libraries via P/Invoke. It also shows how to use
-<xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A>.
+<xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver*>.
 
 ## Library name variations
 
@@ -54,7 +54,7 @@ In this case, the library name variations are tried in the following order:
 
 ## Custom import resolver
 
-In more complex scenarios, you can use <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A> to resolve DLL imports at runtime. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
+In more complex scenarios, you can use <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver*> to resolve DLL imports at runtime. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
 
 > [!TIP]
 > This functionality is only available in .NET Core 3.1 and .NET 5+.

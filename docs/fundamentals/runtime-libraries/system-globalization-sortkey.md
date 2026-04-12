@@ -35,7 +35,7 @@ Use the following steps to obtain a sort key:
 
 1. Retrieve the invariant culture from the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property.
 
-2. Retrieve a <xref:System.Globalization.CompareInfo> object for the invariant culture from the <xref:System.Globalization.CultureInfo.CompareInfo*?displayProperty=nameWithType> property.
+2. Retrieve a <xref:System.Globalization.CompareInfo> object for the invariant culture from the <xref:System.Globalization.CultureInfo.CompareInfo?displayProperty=nameWithType> property.
 
 3. Call the <xref:System.Globalization.CompareInfo.GetSortKey(System.String,System.Globalization.CompareOptions)?displayProperty=nameWithType> method.
 

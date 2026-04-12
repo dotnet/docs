@@ -59,7 +59,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 > [!IMPORTANT]
 > Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.
 
- You can also use legacy string sorting and comparison rules in a specific application domain by passing the string "NetFx40_Legacy20SortingBehavior" to the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A> method when you create the application domain.
+ You can also use legacy string sorting and comparison rules in a specific application domain by passing the string "NetFx40_Legacy20SortingBehavior" to the <xref:System.AppDomainSetup.SetCompatibilitySwitches*> method when you create the application domain.
 
 ## Example
 

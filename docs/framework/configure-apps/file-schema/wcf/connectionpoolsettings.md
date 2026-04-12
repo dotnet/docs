@@ -49,7 +49,7 @@ Specifies additional connection pool settings for a Named Pipe binding.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement>
-- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement.ConnectionPoolSettings%2A>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement.ConnectionPoolSettings>
 - <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

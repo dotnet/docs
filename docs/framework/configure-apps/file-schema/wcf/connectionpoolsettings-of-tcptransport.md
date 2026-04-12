@@ -51,7 +51,7 @@ Specifies additional connection pool settings for a TCP transport.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.TcpConnectionPoolSettingsElement>
-- <xref:System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings%2A>
+- <xref:System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings>
 - <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

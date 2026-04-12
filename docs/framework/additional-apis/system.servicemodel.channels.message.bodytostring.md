@@ -13,7 +13,7 @@ api_type:
 ---
 # Message.BodyToString Method
 
-Converts the message body into a string by calling the <xref:System.ServiceModel.Channels.Message.OnBodyToString%2A?displayProperty=nameWithType> method.
+Converts the message body into a string by calling the <xref:System.ServiceModel.Channels.Message.OnBodyToString*?displayProperty=nameWithType> method.
 
 ```csharp
 internal void BodyToString(XmlDictionaryWriter writer);

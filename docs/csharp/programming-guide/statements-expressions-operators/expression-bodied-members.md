@@ -27,9 +27,9 @@ Expression body definitions can be used with the following type members:
 
 ## Methods
 
-An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A> method typically include a single expression that returns the string representation of the current object.
+An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString*> method typically include a single expression that returns the string representation of the current object.
 
-The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. Additionally, it includes several methods that take parameters, demonstrating how expression-bodied members work with method parameters. The `return` keyword is not used in any of the expression body definitions.
+The following example defines a `Person` class that overrides the <xref:System.Object.ToString*> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. Additionally, it includes several methods that take parameters, demonstrating how expression-bodied members work with method parameters. The `return` keyword is not used in any of the expression body definitions.
 
 [!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-methods.cs)]
 

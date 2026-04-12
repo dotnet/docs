@@ -12,10 +12,10 @@ In this article, you'll learn how to use file globbing with the [📦 `Microsoft
 
 To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> parameter, which is used internally for comparing patterns to file names. The `Matcher` exposes the following additive methods:
 
-- <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude*?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude*?displayProperty=nameWithType>
 
-Both `AddExclude` and `AddInclude` methods can be called any number of times, to add various file name patterns to either exclude or include from results. Once you've instantiated a `Matcher` and added patterns, it's then used to evaluate matches from a starting directory with the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute%2A?displayProperty=nameWithType> method.
+Both `AddExclude` and `AddInclude` methods can be called any number of times, to add various file name patterns to either exclude or include from results. Once you've instantiated a `Matcher` and added patterns, it's then used to evaluate matches from a starting directory with the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute*?displayProperty=nameWithType> method.
 
 ## Extension methods
 
@@ -39,7 +39,7 @@ Matcher matcher = new();
 matcher.AddExcludePatterns(new [] { "*.txt", "*.asciidoc", "*.md" });
 ```
 
-This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude%2A> on your behalf.
+This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude*> on your behalf.
 
 ### Multiple inclusions
 
@@ -59,7 +59,7 @@ Matcher matcher = new();
 matcher.AddIncludePatterns(new[] { "*.txt", "*.asciidoc", "*.md" });
 ```
 
-This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A> on your behalf.
+This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude*> on your behalf.
 
 ### Get all matching files
 
@@ -162,7 +162,7 @@ foreach (var file in result.Files)
 }
 ```
 
-In this mode, patterns are applied one after another:  
+In this mode, patterns are applied one after another:
 
 - `**/*` adds all files.
 - `logs/**/*` filters out anything in `logs/`.

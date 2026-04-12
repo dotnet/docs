@@ -50,6 +50,6 @@ The new <xref:System.InvalidOperationException> message is more understandable. 
 
 ## Affected APIs
 
-- <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A?displayProperty=fullName>
-- <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.ListViewGroupCollection.Add*?displayProperty=fullName>
+- <xref:System.Windows.Forms.ListViewGroupCollection.AddRange*?displayProperty=fullName>
 - <xref:System.Windows.Forms.ListViewGroupCollection.Insert(System.Int32,System.Windows.Forms.ListViewGroup)?displayProperty=fullName>

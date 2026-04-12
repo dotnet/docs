@@ -191,7 +191,7 @@ You can specify the calling convention for a `delegate*` by using the keywords `
 
 :::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UnmanagedFunctionPointers":::
 
-You can learn more about function pointers in the [Function pointer](~/_csharplang/proposals/csharp-9.0/function-pointers.md) feature spec.
+You can learn more about function pointers in the [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers) section of the C# language specification.
 
 ## C# language specification
 

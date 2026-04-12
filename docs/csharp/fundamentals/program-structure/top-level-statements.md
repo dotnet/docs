@@ -73,4 +73,4 @@ To return an exit code when the application ends, use the `return` statement. Th
 
 - [Main() and command-line arguments](main-command-line.md)
 - [General structure of a C# program](index.md)
-- [Feature specification - Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)
+- [Feature specification - Top-level statements](~/_csharpstandard/standard/basic-concepts.md#713-using-top-level-statements)

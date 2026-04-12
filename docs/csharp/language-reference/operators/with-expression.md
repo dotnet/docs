@@ -34,10 +34,10 @@ You can't customize the copy semantics for structure types.
 
 ## C# language specification
 
-For more information, see the following sections of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [`with` expression](~/_csharplang/proposals/csharp-9.0/records.md#with-expression)
-- [Copy and Clone members](~/_csharplang/proposals/csharp-9.0/records.md#copy-and-clone-members)
+- [`with` expression](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
+- [Copy and Clone members](~/_csharpstandard/standard/classes.md#15163-copy-and-clone-members)
 
 ## See also
 

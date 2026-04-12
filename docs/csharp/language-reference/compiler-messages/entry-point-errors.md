@@ -124,7 +124,7 @@ To correct these errors, ensure the `StartupObject` option references a valid ty
 - **CS8805**: *Program using top-level statements must be an executable.*
 - **CS8937**: *At least one top-level statement must be non-empty.*
 
-[Top-level statements](../../fundamentals/program-structure/top-level-statements.md) replace the explicit `Main` method as the program's entry point. For more information, see [Top-level statements](../../fundamentals/program-structure/top-level-statements.md) in the C# programming guide and the [top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md) feature specification.
+[Top-level statements](../../fundamentals/program-structure/top-level-statements.md) replace the explicit `Main` method as the program's entry point. For more information, see [Top-level statements](../../fundamentals/program-structure/top-level-statements.md) in the C# programming guide and the [top-level statements](~/_csharpstandard/standard/basic-concepts.md#713-using-top-level-statements) section of the C# language specification.
 
 To correct these errors, ensure your use of top-level statements follows these rules:
 

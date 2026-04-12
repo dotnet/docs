@@ -426,7 +426,7 @@ In the preceding example, the <xref:System.NullReferenceException?displayPropert
 ## See also
 
 - [Nullable reference types specification](~/_csharpstandard/standard/types.md#893-nullable-reference-types)
-- [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
+- [Unconstrained type parameter annotations](~/_csharpstandard/standard/classes.md#1525-type-parameter-constraints)
 - [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)
 - [CS8602: Possible dereference of null warning](language-reference/compiler-messages/nullable-warnings.md#possible-dereference-of-null)

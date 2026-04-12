@@ -85,7 +85,7 @@ For more information, see the [Conditional operator](~/_csharpstandard/standard/
 
 Specifications for newer features are:
 
-- [Target-typed conditional expression](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+- [Target-typed conditional expression](~/_csharpstandard/standard/expressions.md#1221-conditional-operator)
 
 ## See also
 

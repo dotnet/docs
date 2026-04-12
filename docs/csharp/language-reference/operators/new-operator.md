@@ -65,7 +65,7 @@ A user-defined type can't overload the `new` operator.
 
 For more information, see [The new operator](~/_csharpstandard/standard/expressions.md#12817-the-new-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about a target-typed `new` expression, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/target-typed-new.md).
+For more information about a target-typed `new` expression, see the [Object creation expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

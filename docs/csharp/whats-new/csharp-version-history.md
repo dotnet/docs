@@ -129,25 +129,25 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
 - [Top-level statements](../fundamentals/program-structure/top-level-statements.md)
 - Pattern matching enhancements: [relational patterns](../language-reference/operators/patterns.md#relational-patterns) and [logical patterns](../language-reference/operators/patterns.md#logical-patterns)
 - [Performance and interop](#performance-and-interop)
-  - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
-  - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
+  - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
+  - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
-  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#2359-the-moduleinitializer-attribute)
+  - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
-  - [Target-typed `new` expressions](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
-  - [`static` anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
-  - [Target-typed conditional expressions](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
-  - [Covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
-  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
-  - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
-  - [Attributes on local functions](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
+  - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)
+  - [`static` anonymous functions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions)
+  - [Target-typed conditional expressions](~/_csharpstandard/standard/expressions.md#1221-conditional-operator)
+  - [Covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods)
+  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
+  - [Lambda discard parameters](~/_csharpstandard/standard/expressions.md#12222-anonymous-function-signatures)
+  - [Attributes on local functions](~/_csharpstandard/standard/statements.md#1364-local-function-declarations)
 
 C# 9 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
 
 [Top level statements](../fundamentals/program-structure/top-level-statements.md) means your main program is simpler to read. There's less need for ceremony: a namespace, a `Program` class, and `static void Main()` are all unnecessary.
 
-The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
+The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
 The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
 

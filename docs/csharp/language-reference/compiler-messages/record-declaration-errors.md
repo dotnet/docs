@@ -78,7 +78,7 @@ In addition, this article covers the following warning:
 - **CS8877**: *Record member may not be static.*
 - **CS8879**: *Record member must be private.*
 
-When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
+When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members) in the C# language specification.
 
 To correct these errors, apply the following changes to your explicitly declared record members:
 
@@ -97,7 +97,7 @@ To correct these errors, apply the following changes to your explicitly declared
 - **CS8908**: *The type may not be used for a field of a record.*
 - **CS8913**: *The positional member found corresponding to this parameter is hidden.*
 
-When you declare a [positional record](../builtin-types/record.md#positional-syntax-for-property-and-field-definition), the compiler synthesizes properties that correspond to each positional parameter. These diagnostics indicate that your explicit declarations conflict with those synthesized properties. For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
+When you declare a [positional record](../builtin-types/record.md#positional-syntax-for-property-and-field-definition), the compiler synthesizes properties that correspond to each positional parameter. These diagnostics indicate that your explicit declarations conflict with those synthesized properties. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members) in the C# language specification.
 
 To correct these errors, apply the following changes to your positional record declarations:
 
@@ -123,7 +123,7 @@ To correct these errors, apply the following changes:
 - **CS8864**: *Records may only inherit from object or another record*
 - **CS8865**: *Only records may inherit from records.*
 
-[Record class types](../builtin-types/record.md) follow specific [inheritance](../builtin-types/record.md#equality-in-inheritance-hierarchies) rules. For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
+[Record class types](../builtin-types/record.md) follow specific [inheritance](../builtin-types/record.md#equality-in-inheritance-hierarchies) rules. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members) in the C# language specification.
 
 To correct these errors, apply the following changes:
 
@@ -135,7 +135,7 @@ To correct these errors, apply the following changes:
 - **CS8859**: *Members named 'Clone' are disallowed in records.*
 - **CS8860**: *Types and aliases should not be named 'record'.*
 
-The compiler reserves certain names for use with [record types](../builtin-types/record.md). For the complete rules, see the [feature specification for records](~/_csharplang/proposals/csharp-9.0/records.md).
+The compiler reserves certain names for use with [record types](../builtin-types/record.md). For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members) in the C# language specification.
 
 To correct these errors, apply the following changes:
 

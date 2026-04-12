@@ -106,7 +106,7 @@ public virtual bool Equals(T? other);
 
 For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1215-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about equality of record types, see the [Equality members](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) section of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md).
+For more information about equality of record types, see the [Equality members](~/_csharpstandard/standard/classes.md#15162-equality-members) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

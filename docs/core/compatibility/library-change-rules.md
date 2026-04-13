@@ -137,7 +137,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Changing a `ref` parameter to [`ref readonly`](../../csharp/language-reference/keywords/method-parameters.md#ref-readonly-modifier)**
 
-  Changing a parameter from `ref` to `ref readonly` doesn't require callers to change their code. Call sites that pass arguments by `ref` work without modification. Unlike changing `ref` to `in`, this change doesn't allow callers to pass rvalues (non-variables), so existing call patterns remain valid.
+  Changing a parameter from `ref` to `ref readonly` is source compatible for existing call sites that pass arguments with the `ref` modifier—those calls continue to compile without any change. Unlike changing `ref` to `in`, a `ref readonly` parameter doesn't silently allow callers to pass rvalues (non-variables); the compiler issues a warning if the argument isn't a variable. Existing `ref` call sites remain valid.
 
 - ❌ **DISALLOWED: Renaming a parameter (including changing its case)**
 
@@ -182,7 +182,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❓ **REQUIRES JUDGMENT: Adding <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to an existing overload or changing its priority value**
 
-  The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> affects overload resolution at the source level: callers that recompile might resolve to a different overload than before. The intended use is to add the attribute to a new, better overload so the compiler prefers it over existing ones. Adding it to an existing overload or changing the priority value on an already-attributed overload is a source breaking change because callers that recompile might change behavior.
+  The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> affects overload resolution at the source level: callers that recompile might resolve to a different overload than before. The intended use is to add the attribute to a new, better overload so the compiler prefers it over existing ones. Adding it to an existing overload or changing the priority value on an already-attributed overload can be a source breaking change because callers that recompile might change behavior.
 
 - ✔️ **ALLOWED: Adding the [`allows ref struct`](../../csharp/language-reference/keywords/where-generic-type-constraint.md) anti-constraint to a generic type parameter**
 
@@ -344,7 +344,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Changing the collection type of a `params` parameter**
 
-  Beginning with C# 13, `params` parameters support non-array collection types such as <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, and types that implement <xref:System.Collections.Generic.IEnumerable`1>. Changing the collection type of an existing `params` parameter (for example, from `params T[]` to `params ReadOnlySpan<T>`) changes the method's IL signature and is a binary breaking change. Callers compiled against the previous version must recompile.
+  Beginning with C# 13, `params` parameters support non-array collection types, including <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, struct or class types that implement <xref:System.Collections.Generic.IEnumerable`1> with an accessible parameterless constructor and an instance `Add` method, and specific interface types such as <xref:System.Collections.Generic.IList`1>. Changing the collection type of an existing `params` parameter (for example, from `params T[]` to `params ReadOnlySpan<T>`) changes the method's IL signature and is a binary breaking change. Callers compiled against the previous version must recompile.
 
 - ✔️ **ALLOWED: Converting an extension method to the [extension block member syntax](../../csharp/language-reference/keywords/extension.md)**
 

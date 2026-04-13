@@ -78,10 +78,10 @@ If you treat the outer task as the whole operation, you'll observe completion be
 
 When you pass an async lambda to any method, verify the target parameter's delegate type:
 
-| Delegate type | Async behavior | Risk |
-|---|---|---|
-| `Func<Task>`, `Func<Task<T>>` | Caller receives a task that represents completion | Safe |
-| `Action`, `Action<T>` | Becomes async void—caller can't observe completion | High |
+| Delegate type                             | Async behavior                                              | Risk   |
+|-------------------------------------------|-------------------------------------------------------------|--------|
+| `Func<Task>`, `Func<Task<T>>`             | Caller receives a task that represents completion           | Safe   |
+| `Action`, `Action<T>`                     | Becomes async void—caller can't observe completion          | High   |
 | `Func<TResult>` where `TResult` is `Task` | Returns `Task<Task>`—outer task doesn't represent full work | Medium |
 
 ## See also

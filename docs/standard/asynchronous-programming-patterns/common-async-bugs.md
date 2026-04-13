@@ -1,6 +1,6 @@
 ---
 title: "Common async/await bugs"
-description: Learn to diagnose the four most common bugs in async/await code, including synchronous execution, async void, SynchronizationContext deadlocks, and Task unwrapping.
+description: Learn to diagnose the five most common bugs in async/await code, including synchronous execution, async void, SynchronizationContext deadlocks, miassing `await` expressions and Task unwrapping.
 ms.date: 04/09/2026
 ai-usage: ai-assisted
 dev_langs:
@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 # Common async/await bugs
 
-Async/await simplifies asynchronous programming, but certain mistakes appear repeatedly. This article describes the four most common bugs in async code and shows you how to fix each one.
+Async/await simplifies asynchronous programming, but certain mistakes appear repeatedly. This article describes the five most common bugs in async code and shows you how to fix each one.
 
 ## Async method runs synchronously
 

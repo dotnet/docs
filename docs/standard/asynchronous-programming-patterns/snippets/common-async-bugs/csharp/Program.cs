@@ -3,10 +3,10 @@ using System.Diagnostics;
 // <SyncExecution>
 public static class SyncExecutionExample
 {
-    public static async Task<int> ComputeAsync()
+    public static Task<int> ComputeAsync()
     {
         // No await in this method — it runs entirely synchronously.
-        return 42;
+        return Task.FromResult(42);
     }
 }
 // </SyncExecution>

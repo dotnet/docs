@@ -37,25 +37,25 @@ Public Module TimingHelperFixed
         Return sw.Elapsed.TotalSeconds / iterations
     End Function
 
-    Public Function Time(func As Func(Of Task), Optional iterations As Integer = 10) As Double
+    Public Async Function Time(func As Func(Of Task), Optional iterations As Integer = 10) As Task(Of Double)
         Dim sw = Stopwatch.StartNew()
         For i As Integer = 0 To iterations - 1
-            func().GetAwaiter().GetResult()
+            Await func()
         Next
         Return sw.Elapsed.TotalSeconds / iterations
     End Function
 End Module
 
 Public Module ActionFixDemo
-    Public Sub Run()
+    Public Async Function Run() As Task
         ' Now the async lambda maps to Func(Of Task), and
         ' the timer waits for each iteration to complete.
-        Dim seconds As Double = TimingHelperFixed.Time(
+        Dim seconds As Double = Await TimingHelperFixed.Time(
             Async Function()
                 Await Task.Delay(100)
             End Function, iterations:=3)
         Console.WriteLine($"Async (fixed): {seconds:F4}s per iteration")
-    End Sub
+    End Function
 End Module
 ' </ActionFix>
 

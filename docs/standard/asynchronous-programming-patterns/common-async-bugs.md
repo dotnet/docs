@@ -106,7 +106,7 @@ Fix this problem in one of three ways:
 
 ## Missing await on a task-returning call
 
-If you call a task-returning method in an `async` method without awaiting it, the method starts the asynchronous operation but doesn't wait for it to complete. The compiler emits warning CS4014 for this case:
+If you call a task-returning method in an `async` method without awaiting it, the method starts the asynchronous operation but doesn't wait for it to complete. The compiler warns you about this case with `CS4014` in C# and `BC42358` in Visual Basic:
 
 :::code language="csharp" source="./snippets/common-async-bugs/csharp/Program.cs" id="MissingAwait":::
 :::code language="vb" source="./snippets/common-async-bugs/vb/Program.vb" id="MissingAwait":::

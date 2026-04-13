@@ -2,9 +2,9 @@ Imports System.Diagnostics
 
 ' <SyncExecution>
 Public Module SyncExecutionExample
-    Public Async Function ComputeAsync() As Task(Of Integer)
+    Public Function ComputeAsync() As Task(Of Integer)
         ' No Await in this method — it runs entirely synchronously.
-        Return 42
+        Return Task.FromResult(42)
     End Function
 End Module
 ' </SyncExecution>

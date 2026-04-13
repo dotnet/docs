@@ -44,22 +44,22 @@ public static class TimingHelperFixed
         return sw.Elapsed.TotalSeconds / iterations;
     }
 
-    public static double Time(Func<Task> func, int iterations = 10)
+    public static async Task<double> TimeAsync(Func<Task> func, int iterations = 10)
     {
         var sw = Stopwatch.StartNew();
         for (int i = 0; i < iterations; i++)
-            func().GetAwaiter().GetResult();
+            await func();
         return sw.Elapsed.TotalSeconds / iterations;
     }
 }
 
 public static class ActionFixDemo
 {
-    public static void Run()
+    public static async Task Run()
     {
         // Now the async lambda maps to Func<Task>, and
-        // the timer waits for each iteration to complete.
-        double seconds = TimingHelperFixed.Time(async () =>
+        // the timer awaits each iteration to complete.
+        double seconds = await TimingHelperFixed.TimeAsync(async () =>
         {
             await Task.Delay(100);
         }, iterations: 3);

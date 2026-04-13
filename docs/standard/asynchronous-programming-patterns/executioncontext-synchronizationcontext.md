@@ -44,7 +44,7 @@ By using <xref:System.Threading.SynchronizationContext> instead of framework-spe
 :::code language="csharp" source="./snippets/executioncontext-synchronizationcontext/csharp/Program.cs" id="SyncContextUsage":::
 :::code language="vb" source="./snippets/executioncontext-synchronizationcontext/vb/Program.vb" id="SyncContextUsage":::
 
-### Capturing a SynchronizationContext
+### Capture a SynchronizationContext
 
 When you capture a <xref:System.Threading.SynchronizationContext>, you read the reference from <xref:System.Threading.SynchronizationContext.Current?displayProperty=nameWithType> and store it for later use. You then call <xref:System.Threading.SynchronizationContext.Post*> on the captured reference to schedule work back to that environment.
 
@@ -69,7 +69,7 @@ Whenever an `await` suspends a method (because the awaiter's `IsCompleted` retur
 
 ### Task awaiters capture SynchronizationContext
 
-The awaiters for <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> include support for <xref:System.Threading.SynchronizationContext>. The async method builders don't include this support.
+The awaiters for <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> include support for <xref:System.Threading.SynchronizationContext>. The async method builders don't include this support.
 
 When you `await` a task:
 

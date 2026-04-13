@@ -72,7 +72,7 @@ To run all continuations on one thread, you need two things:
 
 ### The custom context
 
-The context uses a <xref:System.Collections.Concurrent.BlockingCollection%601> to coordinate producers (the async continuations) and a consumer (the pumping loop):
+The context uses a <xref:System.Collections.Concurrent.BlockingCollection`1> to coordinate producers (the async continuations) and a consumer (the pumping loop):
 
 :::code language="csharp" source="./snippets/synchronizationcontext-console-apps/csharp/Program.cs" id="SingleThreadContext":::
 :::code language="vb" source="./snippets/synchronizationcontext-console-apps/vb/Program.vb" id="SingleThreadContext":::
@@ -110,7 +110,7 @@ With operation tracking enabled, the pump exits only when all outstanding async 
 
 ## Practical considerations
 
-- **Deadlock risk**: If code running inside `AsyncPump.Run` blocks synchronously (for example, by calling `.Result` or `.Wait()` on a task whose continuation must post back to the pump), the pump thread can't process that continuation. The result is a deadlock. The same problem described in [Synchronous wrappers for asynchronous methods](synchronous-wrappers-for-asynchronous-methods.md).
+- **Deadlock risk**: If code running inside `AsyncPump.Run` blocks synchronously (for example, by calling `.Result` or `.Wait()` on a task whose continuation must post back to the pump), the pump thread can't process that continuation. The result is a deadlock. The same problem is described in [Synchronous wrappers for asynchronous methods](synchronous-wrappers-for-asynchronous-methods.md).
 - **Performance**: A single-threaded pump limits throughput to one thread. Use this approach only when thread affinity matters.
 - **Cross-platform**: The `AsyncPump` implementation shown here uses only types from the `System.Collections.Concurrent` and `System.Threading` namespaces. It works on all platforms that .NET supports.
 

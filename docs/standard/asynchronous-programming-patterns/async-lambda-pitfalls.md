@@ -48,7 +48,7 @@ Alternatively, project the items into tasks and use <xref:System.Threading.Tasks
 :::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="WhenAllAlternative":::
 :::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="WhenAllAlternative":::
 
-<xref:System.Threading.Tasks.Parallel.ForEach*> accepts an `Action<T>` for its body parameter. Passing an async lambda creates an async void delegate—`Parallel.ForEach` returns as soon as each delegate hits its first yielding `await`:
+<xref:System.Threading.Tasks.Parallel.ForEach*> accepts an `Action<T>` for its body parameter. Passing an async lambda creates an async void delegate. `Parallel.ForEach` returns as soon as each delegate hits its first yielding `await`:
 
 :::code language="csharp" source="./snippets/async-lambda-pitfalls/csharp/Program.cs" id="ParallelForEachBug":::
 :::code language="vb" source="./snippets/async-lambda-pitfalls/vb/Program.vb" id="ParallelForEachBug":::

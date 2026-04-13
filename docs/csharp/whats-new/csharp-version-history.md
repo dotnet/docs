@@ -212,6 +212,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
 - [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+_ [Lambda and local function parameters can shadow names from the enclosing scope](../language-reference/declarations/scope.md)
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
 - [Asynchronous streams](../language-reference/statements/iteration-statements.md#await-foreach)

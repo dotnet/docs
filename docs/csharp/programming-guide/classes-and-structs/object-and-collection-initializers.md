@@ -54,7 +54,7 @@ public string this[char c, int i] { set { ... }; }
 
 ## Object initializers with anonymous types
 
-Although you can use object initializers in any context, they're especially useful in Language-Integrated Query (LINQ) expressions. Query expressions frequently use [anonymous types](../../fundamentals/types/anonymous-types.md), which you can only initialize by using an object initializer, as shown in the following declaration.
+Although you can use object initializers in any context, they're especially useful in Language-Integrated Query (LINQ) expressions. Query expressions frequently use [anonymous types](anonymous-types.md), which you can only initialize by using an object initializer, as shown in the following declaration.
 
 ```csharp
 var pet = new { Age = 10, Name = "Fluffy" };

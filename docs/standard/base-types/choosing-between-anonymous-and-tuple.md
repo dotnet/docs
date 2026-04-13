@@ -6,7 +6,7 @@ ms.date: 07/01/2020
 ---
 # Choosing between anonymous and tuple types
 
-Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple`2?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple`2?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
+Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple`2?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then, new options have been introduced with language level support, such as <xref:System.ValueTuple`2?displayProperty=nameWithType>. As the names imply, these options provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
 
 ## Usability and functionality
 
@@ -46,7 +46,7 @@ internal sealed class f__AnonymousType0
 }
 ```
 
-For more information, see [anonymous types](../../csharp/fundamentals/types/anonymous-types.md). The same functionality exists with tuples when projecting into LINQ queries, you can select properties into tuples. These tuples flow through the query, just as anonymous types would. Now consider the following example using the `System.Tuple<string, long>`.
+For more information, see [anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). The same functionality exists with tuples when projecting into LINQ queries, you can select properties into tuples. These tuples flow through the query, just as anonymous types would. Now consider the following example using the `System.Tuple<string, long>`.
 
 ```csharp
 var dates = new[]
@@ -112,7 +112,7 @@ As a developer choosing between tuples and anonymous types, there are several fa
 
 ## See also
 
-- [Anonymous types](../../csharp/fundamentals/types/anonymous-types.md)
+- [Anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md)
 - [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md)

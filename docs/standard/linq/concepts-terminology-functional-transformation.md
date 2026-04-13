@@ -55,9 +55,9 @@ collection \
 A structured set of data, usually of a uniform type. To be compatible with LINQ, a collection must implement the <xref:System.Collections.IEnumerable> interface or the <xref:System.Linq.IQueryable> interface (or one of their generic counterparts, <xref:System.Collections.Generic.IEnumerator`1> or <xref:System.Linq.IQueryable`1>).
 
 tuple (anonymous types) \
-A mathematical concept, a tuple is a finite sequence of objects, each of a specific type. A tuple is also known as an ordered list. Anonymous types are a language implementation of this concept, which enable an unnamed class type to be declared and an object of that type to be instantiated at the same time.
+A mathematical concept, a tuple is a finite sequence of objects, each of a specific type. A tuple is also known as an ordered list. Tuples and anonymous types are language implementations of this concept, which enable an unnamed type to be declared and an object of that type to be instantiated at the same time.
 
-For more information, see [Anonymous Types (C# Programming Guide)](../../csharp/fundamentals/types/anonymous-types.md) and [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
+For more information, see [Tuples (C# Language reference)](../../csharp/language-reference/builtin-types/value-tuples.md), [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types.md), and [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
 
 type inference (implicit typing) \
 The ability of a compiler to determine the type of a variable in the absence of an explicit type declaration.

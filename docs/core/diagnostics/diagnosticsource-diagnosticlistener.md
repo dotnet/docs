@@ -66,7 +66,7 @@ A typical call site will look like:
 :::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet3":::
 
 Every event has a `string` name (for example, `RequestStart`), and exactly one `object` as a payload.
-If you need to send more than one item, you can do so by creating an `object` with properties to represent all its information. C#'s [anonymous type](../../csharp/fundamentals/types/anonymous-types.md)
+If you need to send more than one item, you can do so by creating an `object` with properties to represent all its information. C#'s [anonymous type](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 feature is typically used to create a type to pass 'on the fly', and makes this scheme very
 convenient. At the instrumentation site, you must guard the call to `Write()` with an `IsEnabled()` check on
 the same event name. Without this check, even when the instrumentation is inactive, the rules

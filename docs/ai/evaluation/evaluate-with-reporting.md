@@ -1,14 +1,14 @@
 ---
 title: Tutorial - Evaluate response quality with caching and reporting
 description: Create an MSTest app to evaluate the response quality of a language model, add a custom evaluator, and learn how to use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
-ms.date: 03/03/2026
+ms.date: 04/09/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 ---
 
 # Tutorial: Evaluate response quality with caching and reporting
 
-In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators. The built-in quality evaluators (from the [Microsoft.Extensions.AI.Evaluation.Quality package](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality)) use an LLM to perform evaluations; the custom evaluator does not use AI.
+In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators. The built-in quality evaluators (from the [Microsoft.Extensions.AI.Evaluation.Quality package](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality)) use an LLM to perform evaluations; the custom evaluator doesn't use AI.
 
 ## Prerequisites
 
@@ -76,14 +76,14 @@ Complete the following steps to create an MSTest project that connects to an AI 
 
    **Scenario name**
 
-   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, you can set it to any string of your choice when you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>. Here are some considerations for choosing a scenario name:
+   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, you can set it to any string when you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>. Consider these factors when choosing a scenario name:
 
    - When using disk-based storage, the scenario name is used as the name of the folder under which the corresponding evaluation results are stored. So it's a good idea to keep the name reasonably short and avoid any characters that aren't allowed in file and directory names.
-   - By default, the generated evaluation report splits scenario names on `.` so that the results can be displayed in a hierarchical view with appropriate grouping, nesting, and aggregation. This is especially useful in cases where the scenario name is set to the fully qualified name of the corresponding test method, since it allows the results to be grouped by namespaces and class names in the hierarchy. However, you can also take advantage of this feature by including periods (`.`) in your own custom scenario names to create a reporting hierarchy that works best for your scenarios.
+   - By default, the generated evaluation report splits scenario names on `.` so the results display in a hierarchical view with appropriate grouping, nesting, and aggregation. The hierarchical view is especially useful when the scenario name is the fully qualified name of the corresponding test method, because it groups results by namespaces and class names in the hierarchy. However, you can also take advantage of this feature by including periods (`.`) in your own custom scenario names to create a reporting hierarchy that works best for your scenarios.
 
    **Execution name**
 
-   The execution name is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs will use the same default execution name of `Default`. In this case, results from one run will be overwritten by the next and you lose the ability to compare results across different runs.
+   The execution name is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs use the same default execution name of `Default`. In this case, results from one run are overwritten by the next, and you lose the ability to compare results across different runs.
 
    This example uses a timestamp as the execution name. If you have more than one test in your project, ensure that results are grouped correctly by using the same execution name in all reporting configurations used across the tests.
 
@@ -105,9 +105,9 @@ Complete the following steps to create an MSTest project that connects to an AI 
 
    :::code language="csharp" source="./snippets/evaluate-with-reporting/WordCountEvaluator.cs":::
 
-   The `WordCountEvaluator` counts the number of words present in the response. Unlike some evaluators, it isn't based on AI. The `EvaluateAsync` method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> includes a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric> that contains the word count.
+   The `WordCountEvaluator` counts the number of words present in the response. Unlike some evaluators, it isn't based on AI. The `EvaluateAsync` method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> that includes a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric> that contains the word count.
 
-   The `EvaluateAsync` method also attaches a default interpretation to the metric. The default interpretation considers the metric to be good (acceptable) if the detected word count is between 6 and 100. Otherwise, the metric is considered failed. This default interpretation can be overridden by the caller, if needed.
+   The `EvaluateAsync` method also attaches a default interpretation to the metric. The default interpretation considers the metric to be good (acceptable) if the detected word count is between 6 and 100. Otherwise, the metric is considered failed. The caller can override this default interpretation if needed.
 
 1. Back in `MyTests.cs`, add a method to gather the evaluators to use in the evaluation.
 
@@ -117,7 +117,7 @@ Complete the following steps to create an MSTest project that connects to an AI 
 
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="GetResponse":::
 
-   The test in this tutorial evaluates the LLM's response to an astronomy question. Since the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration> has response caching enabled, and since the supplied <xref:Microsoft.Extensions.AI.IChatClient> is always fetched from the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> created using this reporting configuration, the LLM response for the test is cached and reused. The response will be reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the the LLM endpoint or the question being asked, is changed.
+   The test in this tutorial evaluates the LLM's response to an astronomy question. Because the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration> has response caching enabled, and because the supplied <xref:Microsoft.Extensions.AI.IChatClient> is always fetched from the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> created using this reporting configuration, the LLM response for the test is cached and reused. The response is reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the LLM endpoint or the question being asked, changes.
 
 1. Add a method to validate the response.
 
@@ -132,14 +132,14 @@ Complete the following steps to create an MSTest project that connects to an AI 
 
    This test method:
 
-   - Creates the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun>. The use of `await using` ensures that the `ScenarioRun` is correctly disposed and that the results of this evaluation are correctly persisted to the result store.
-   - Gets the LLM's response to a specific astronomy question. The same <xref:Microsoft.Extensions.AI.IChatClient> that will be used for evaluation is passed to the `GetAstronomyConversationAsync` method in order to get *response caching* for the primary LLM response being evaluated. (In addition, this enables response caching for the LLM turns that the evaluators use to perform their evaluations internally.) With response caching, the LLM response is fetched either:
+   - Creates the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun>. `await using` ensures correct disposal of the `ScenarioRun` and correct persistence of the evaluation results to the result store.
+   - Gets the LLM's response to a specific astronomy question. The test passes the same <xref:Microsoft.Extensions.AI.IChatClient> that's used for evaluation to the `GetAstronomyConversationAsync` method to get *response caching* for the primary LLM response being evaluated. (Passing the same client also enables response caching for the LLM turns that the evaluators use to perform their evaluations internally.) With response caching, the LLM response is fetched either:
      - Directly from the LLM endpoint in the first run of the current test, or in subsequent runs if the cached entry has expired (14 days, by default).
-     - From the (disk-based) response cache that was configured in `s_defaultReportingConfiguration` in subsequent runs of the test.
-   - Runs the evaluators against the response. Like the LLM response, on subsequent runs, the evaluation is fetched from the (disk-based) response cache that was configured in `s_defaultReportingConfiguration`.
+     - From the (disk-based) response cache configured in `s_defaultReportingConfiguration` in subsequent runs of the test.
+   - Runs the evaluators against the response. Like the LLM response, subsequent runs fetch the evaluation from the (disk-based) response cache configured in `s_defaultReportingConfiguration`.
    - Runs some basic validation on the evaluation result.
 
-     This step is optional and mainly for demonstration purposes. In real-world evaluations, you might not want to validate individual results since the LLM responses and evaluation scores can change over time as your product (and the models used) evolve. You might not want individual evaluation tests to "fail" and block builds in your CI/CD pipelines when this happens. Instead, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds when there's a significant drop in evaluation scores across multiple different tests). That said, there is some nuance here and the choice of whether to validate individual results or not can vary depending on the specific use case.
+     This step is optional and mainly for demonstration purposes. In real-world evaluations, you might not want to validate individual results because the LLM responses and evaluation scores can change over time as your product (and the models used) evolve. You might not want individual evaluation tests to "fail" and block builds in your CI/CD pipelines when results change. Instead, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds when there's a significant drop in evaluation scores across multiple different tests). That said, there is some nuance here and the choice of whether to validate individual results or not can vary depending on the specific use case.
 
    When the method returns, the `scenarioRun` object is disposed and the evaluation result for the evaluation is stored to the (disk-based) result store that's configured in `s_defaultReportingConfiguration`.
 
@@ -152,11 +152,8 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window:
 
    ```dotnetcli
-   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console
+   dotnet tool install --create-manifest-if-needed Microsoft.Extensions.AI.Evaluation.Console
    ```
-
-    > [!TIP]
-    > You might need to create a manifest file first. For more information about that and installing local tools, see [Local tools](../../core/tools/dotnet-tool-install.md#local-tools).
 
 1. Generate a report by running the following command:
 
@@ -164,13 +161,13 @@ Run the test using your preferred test workflow, for example, by using the CLI c
    dotnet tool run aieval report --path <path\to\your\cache\storage> --output report.html
    ```
 
-1. Open the `report.html` file. It should look something like this.
+1. Open the `report.html` file. The report looks similar to the following screenshot.
 
    :::image type="content" source="media/evaluation-report.png" alt-text="Screenshot of the evaluation report showing the conversation and metric values.":::
 
 ## Next steps
 
-- Navigate to the directory where the test results are stored (which is `C:\TestReports`, unless you modified the location when you created the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>). In the `results` subdirectory, notice that there's a folder for each test run named with a timestamp (`ExecutionName`). Inside each of those folders is a folder for each scenario name&mdash;in this case, just the single test method in the project. That folder contains a JSON file with the all the data including the messages, response, and evaluation result.
-- Expand the evaluation. Here are a couple ideas:
-  - Add an additional custom evaluator, such as [an evaluator that uses AI to determine the measurement system](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/evaluation/Evaluators/MeasurementSystemEvaluator.cs) that's used in the response.
-  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM. Since each response can be different, it's good to sample and evaluate at least a few responses to a question. In this case, you specify an iteration name each time you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.
+- Navigate to the directory where the test results are stored (which is `C:\TestReports`, unless you modified the location when you created the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>). In the `results` subdirectory, notice that there's a folder for each test run named with a timestamp (`ExecutionName`). Inside each of those folders is a folder for each scenario name&mdash;in this case, just the single test method in the project. That folder contains a JSON file with all the data including the messages, response, and evaluation result.
+- Expand the evaluation. Here are a couple of ideas:
+  - Add another custom evaluator, such as [an evaluator that uses AI to determine the measurement system](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/evaluation/Evaluators/MeasurementSystemEvaluator.cs) that's used in the response.
+  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM. Because each response can be different, it's good to sample and evaluate at least a few responses to a question. In this case, you specify an iteration name each time you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.

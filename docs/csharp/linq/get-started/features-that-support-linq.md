@@ -64,7 +64,7 @@ For more information, see:
 
 ## Anonymous types
 
-The compiler constructs an [anonymous type](../../fundamentals/types/anonymous-types.md). Only the compiler can access the type name. Anonymous types provide a convenient way to group a set of properties temporarily in a query result without having to define a separate named type. You initialize anonymous types with a new expression and an object initializer, as shown here:
+The compiler constructs an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md). Only the compiler can access the type name. Anonymous types provide a convenient way to group a set of properties temporarily in a query result without having to define a separate named type. You initialize anonymous types with a new expression and an object initializer, as shown here:
 
 ```csharp
 select new {name = cust.Name, phone = cust.Phone};

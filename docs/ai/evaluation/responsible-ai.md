@@ -1,13 +1,13 @@
 ---
 title: Responsible AI with .NET
-description: Learn what responsible AI is and how you can use .NET to evaluate the safety of your AI apps.
-ms.date: 03/03/2026
+description: Learn what responsible AI is and how to use .NET to evaluate the safety of your AI apps.
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 ---
 
 # Responsible AI with .NET
 
-*Responsible AI* refers to the practice of designing, developing, and deploying artificial intelligence systems in a way that is ethical, transparent, and aligned with human values. It emphasizes fairness, accountability, privacy, and safety to ensure that AI technologies benefit individuals and society as a whole. As AI becomes increasingly integrated into applications and decision-making processes, prioritizing responsible AI is of utmost importance.
+*Responsible AI* refers to the practice of designing, developing, and deploying artificial intelligence systems in a way that is ethical, transparent, and aligned with human values. It emphasizes fairness, accountability, privacy, and safety to ensure that AI technologies benefit individuals and society as a whole. As AI becomes increasingly integrated into applications and decision-making processes, prioritizing responsible AI is essential.
 
 Microsoft has identified [six principles](https://www.microsoft.com/ai/responsible-ai) for responsible AI:
 

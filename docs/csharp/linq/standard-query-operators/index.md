@@ -107,4 +107,4 @@ Although you can use an `orderby` clause with one or more of the source sequence
 - [select clause](../../language-reference/keywords/select-clause.md)
 - [Extension members](../../programming-guide/classes-and-structs/extension-methods.md)
 - [Query Keywords (LINQ)](../../language-reference/keywords/query-keywords.md)
-- [Anonymous Types](../../fundamentals/types/anonymous-types.md)
+- [Anonymous Types](../../programming-guide/classes-and-structs/anonymous-types.md)

@@ -1,7 +1,7 @@
 ---
 title: "C# Enumerations"
 description: Learn how to define and use enumeration types in C#, including declaring enums, using them in switch expressions, working with bit flags, and converting between enums and integers.
-ms.date: 03/24/2026
+ms.date: 04/10/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# enums work similarly to enums in Java or C++, with additional support for bit flags and pattern matching. Skim the [flags](#bit-flags) and [switch expression](#use-enums-in-switch-expressions) sections for C#-specific patterns.
 
-An *enumeration type* (or *enum*) defines a set of named constants backed by an integer value. Use enums when a value must be one of a fixed set of options—days of the week, HTTP status codes, log levels, or directions. Enums make your code more readable and less error-prone than raw integer constants because the compiler enforces the named values.
+An *enumeration type* (or *enum*) defines a set of named constants backed by an integer value. Use enums when a value must be one of a fixed set of options, such as days of the week, HTTP status codes, log levels, or directions. Enums make your code more readable and less error-prone than raw integer constants because the compiler enforces the named values.
 
 ## Declare an enum
 
@@ -38,7 +38,7 @@ Enums work naturally with `switch` expressions and pattern matching. The compile
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UsingSeason":::
 
-The discard pattern (`_`) handles any value not explicitly listed. *Pattern matching* is a C# feature that tests a value against a shape or condition. In this example, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
+The discard pattern (`_`) handles any value not explicitly listed. Because an enum's underlying type is an integer, a variable can hold a value that doesn't correspond to any named member. For example, `(Season)99` is valid at runtime. The discard pattern ensures the switch expression handles those unexpected values safely. *Pattern matching* is a C# feature that tests a value against a shape or condition. In this example, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
 
 ## Bit flags
 
@@ -54,7 +54,7 @@ The `[Flags]` attribute also affects `ToString()`. It displays combined values a
 
 ## Convert between enums and integers
 
-Explicit casts convert between an enum and its underlying integer type:
+Explicit [cast expressions](../../language-reference/operators/type-testing-and-cast.md#cast-expression) convert between an enum and its underlying integer type. An explicit cast uses the `(Type)value` syntax to tell the compiler you intend the conversion:
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="Conversions":::
 

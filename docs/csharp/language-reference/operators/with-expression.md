@@ -9,7 +9,7 @@ A `with` expression creates a copy of its operand with the specified properties 
 
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 
-The left-hand operand of a `with` expression can be a [record type](../builtin-types/record.md). It can also be a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
+The left-hand operand of a `with` expression can be a [record type](../builtin-types/record.md). It can also be a [structure type](../builtin-types/struct.md), a [tuple](../builtin-types/value-tuples.md), or an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

@@ -377,7 +377,7 @@ Dynamic binding gives you the potential for errors but also great power within t
 C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
-- [Anonymous types](../fundamentals/types/anonymous-types.md)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/get-started/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)

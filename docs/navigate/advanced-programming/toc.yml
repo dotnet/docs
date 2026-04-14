@@ -24,6 +24,12 @@ items:
       href: ../../standard/asynchronous-programming-patterns/executioncontext-synchronizationcontext.md
     - name: SynchronizationContext and console apps
       href: ../../standard/asynchronous-programming-patterns/synchronizationcontext-console-apps.md
+    - name: Best practices and troubleshooting
+      items:
+      - name: Common async/await bugs
+        href: ../../standard/asynchronous-programming-patterns/common-async-bugs.md
+      - name: Async lambda pitfalls
+        href: ../../standard/asynchronous-programming-patterns/async-lambda-pitfalls.md
   - name: Event-based asynchronous pattern (EAP)
     items:
     - name: Documentation overview

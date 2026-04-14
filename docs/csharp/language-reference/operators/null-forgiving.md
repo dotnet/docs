@@ -42,7 +42,7 @@ In the preceding example, you don't need to use the null-forgiving operator beca
 
 ## C# language specification
 
-For more information, see [The null-forgiving operator](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md#the-null-forgiving-operator) section of the [draft of the nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md).
+For more information, see [The null-forgiving operator](~/_csharpstandard/standard/expressions.md#1289-null-forgiving-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

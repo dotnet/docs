@@ -2,7 +2,7 @@
 title: Install GitHub Copilot modernization
 description: "Learn how to install and set up GitHub Copilot modernization across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com."
 ms.topic: install-set-up-deploy
-ms.date: 03/04/2026
+ms.date: 04/06/2026
 ai-usage: ai-assisted
 zone_pivot_groups: copilot-modernization-install
 
@@ -12,24 +12,24 @@ zone_pivot_groups: copilot-modernization-install
 
 # Install GitHub Copilot modernization
 
-GitHub Copilot modernization is available across multiple development environments. Choose your preferred environment to get started with installation and setup.
+GitHub Copilot modernization works across multiple development environments. Choose your preferred environment to install and set up GitHub Copilot modernization.
 
 ::: zone pivot="visualstudio"
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - Windows operating system.
 - [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+).
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled: **GitHub Copilot**, **GitHub Copilot modernization**.
 - GitHub Copilot subscription (paid or free).
 - [Sign in to Visual Studio with a GitHub account](/visualstudio/ide/work-with-github-accounts) that has [Copilot access](https://docs.github.com/copilot/get-started/plans#ready-to-choose-a-plan).
-- Code written in C#.
+- Code written in C# or Visual Basic.
 
 ## Install
 
-GitHub Copilot modernization is included in Visual Studio and doesn't require a separate installation. Enable the **GitHub Copilot** and **GitHub Copilot modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
+Visual Studio includes GitHub Copilot modernization, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
 
 ## Verify the installation
 
@@ -42,7 +42,7 @@ GitHub Copilot modernization is included in Visual Studio and doesn't require a 
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - Visual Studio Code.
 - GitHub Copilot extension installed.
@@ -50,12 +50,16 @@ Before you install, make sure you have the following:
 
 ## Install
 
-Install the [GitHub Copilot modernization extension](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure) from the VS Code Marketplace.
+1. In Visual Studio Code, open the **Extensions** view (<kbd>Ctrl+Shift+X</kbd>).
+1. Search for **GitHub Copilot modernization**.
+1. Select **Install**.
+
+The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `modernize-dotnet`.
 
 ## Verify the installation
 
 1. Open a project in Visual Studio Code.
-1. Open the Copilot chat and type `@modernize-dotnet`.
+1. Open **GitHub Copilot Chat** and type `@modernize-dotnet`.
 
 ::: zone-end
 
@@ -63,14 +67,14 @@ Install the [GitHub Copilot modernization extension](https://marketplace.visuals
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - GitHub Copilot CLI installed.
 - GitHub Copilot subscription (paid or free).
 
 ## Install
 
-Complete these three steps to install:
+To install:
 
 1. Open the GitHub Copilot chat window.
 
@@ -96,7 +100,7 @@ Run `/agent` to confirm that `modernize-dotnet` appears in the agent list.
 
 ## Prerequisites
 
-Before you install, make sure you have the following:
+Before you install, make sure you have:
 
 - GitHub Copilot Enterprise or Business subscription with coding agents enabled.
 - Repository admin access.
@@ -105,12 +109,12 @@ Before you install, make sure you have the following:
 
 Add the custom coding agent to your repository:
 
-1. Learn about [adding custom coding agents to your repo](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents).
+1. Review [adding custom coding agents to your repository](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents).
 1. Add the `modernize-dotnet` agent. See the [coding agent README](https://github.com/dotnet/modernize-dotnet/blob/main/coding-agent/README.md) for details.
 
 ## Verify the installation
 
-The `modernize-dotnet` agent appears as an available coding agent in your repository.
+Confirm that the `modernize-dotnet` agent appears as an available coding agent in your repository.
 
 ::: zone-end
 
@@ -118,4 +122,5 @@ The `modernize-dotnet` agent appears as an available coding agent in your reposi
 
 - [What is GitHub Copilot modernization?](overview.md)
 - [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Core concepts](concepts.md)
 - [GitHub Copilot modernization FAQ](faq.yml)

@@ -67,7 +67,7 @@ If you overload one of the `<` or `>` operators, you must overload both `<` and 
 
 ## C# language specification
 
-For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1214-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1215-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

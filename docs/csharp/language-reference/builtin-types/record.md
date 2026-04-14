@@ -259,9 +259,9 @@ For more information, see the [Classes](~/_csharpstandard/standard/classes.md) s
 
 For more information about these features, see the following feature proposal notes:
 
-- [Records](~/_csharplang/proposals/csharp-9.0/records.md)
-- [Init-only setters](~/_csharplang/proposals/csharp-9.0/init.md)
-- [Covariant returns](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
+- [Records](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members)
+- [Init-only setters](~/_csharpstandard/standard/classes.md#15733-init-accessors)
+- [Covariant returns](~/_csharpstandard/standard/classes.md#1565-override-methods)
 
 ## See also
 

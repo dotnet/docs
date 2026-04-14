@@ -140,7 +140,7 @@ For the `float` and `double` operands, the result of `x % y` for the finite `x` 
 > [!NOTE]
 > This method of computing the remainder is similar to the method used for integer operands, but it differs from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder*?displayProperty=nameWithType> method.
 
-For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#12124-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#12134-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For `decimal` operands, the remainder operator `%` works the same as the [remainder operator](<xref:System.Decimal.op_Modulus(System.Decimal,System.Decimal)>) of the <xref:System.Decimal?displayProperty=nameWithType> type.
 
@@ -289,12 +289,12 @@ For more information, see the following sections of the [C# language specificati
 - [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1297-prefix-increment-and-decrement-operators)
 - [Unary plus operator](~/_csharpstandard/standard/expressions.md#1292-unary-plus-operator)
 - [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator)
-- [Multiplication operator](~/_csharpstandard/standard/expressions.md#12122-multiplication-operator)
-- [Division operator](~/_csharpstandard/standard/expressions.md#12123-division-operator)
-- [Remainder operator](~/_csharpstandard/standard/expressions.md#12124-remainder-operator)
-- [Addition operator](~/_csharpstandard/standard/expressions.md#12125-addition-operator)
-- [Subtraction operator](~/_csharpstandard/standard/expressions.md#12126-subtraction-operator)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#12235-compound-assignment)
+- [Multiplication operator](~/_csharpstandard/standard/expressions.md#12132-multiplication-operator)
+- [Division operator](~/_csharpstandard/standard/expressions.md#12133-division-operator)
+- [Remainder operator](~/_csharpstandard/standard/expressions.md#12134-remainder-operator)
+- [Addition operator](~/_csharpstandard/standard/expressions.md#12135-addition-operator)
+- [Subtraction operator](~/_csharpstandard/standard/expressions.md#12136-subtraction-operator)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12245-compound-assignment)
 - [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12820-the-checked-and-unchecked-operators)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 - [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)

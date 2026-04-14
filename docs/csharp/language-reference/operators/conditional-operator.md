@@ -81,11 +81,11 @@ A user-defined type can't overload the conditional operator.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharpstandard/standard/expressions.md#1220-conditional-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Conditional operator](~/_csharpstandard/standard/expressions.md#1221-conditional-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 Specifications for newer features are:
 
-- [Target-typed conditional expression](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+- [Target-typed conditional expression](~/_csharpstandard/standard/expressions.md#1221-conditional-operator)
 
 ## See also
 

@@ -240,7 +240,7 @@ The C# language restricts which types can participate in user-defined conversion
 - **CS0217**: *In order to be applicable as a short-circuit operator, a user-defined logical operator must have the same return type as the type of its 2 parameters.*
 - **CS0218**: *The type must contain declarations of operator true and operator false.*
 
-The C# language requires specific pairings and signatures for Boolean operators and short-circuit evaluation. For the full rules, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12163-user-defined-conditional-logical-operators) in the C# specification.
+The C# language requires specific pairings and signatures for Boolean operators and short-circuit evaluation. For the full rules, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12173-user-defined-conditional-logical-operators) in the C# specification.
 
 - Change the return type of `operator true` and `operator false` to `bool` (**CS0215**). These operators determine whether a value is logically true or false, so the language requires them to return `bool`.
 - Define the matching paired operator (**CS0216**). The language requires certain operators to be declared in pairs: `operator ==` with `operator !=`, `operator <` with `operator >`, `operator <=` with `operator >=`, and `operator true` with `operator false`.

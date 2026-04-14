@@ -54,7 +54,7 @@ For [union types](../builtin-types/union.md), a `switch` expression is exhaustiv
 
 ## C# language specification
 
-For more information, see the [`switch` expression](~/_csharpstandard/standard/expressions.md#1211-switch-expression) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [`switch` expression](~/_csharpstandard/standard/expressions.md#1212-switch-expression) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

@@ -77,7 +77,7 @@ To check for non-null, use a [negated](#logical-patterns) `null` [constant patte
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NonNullCheck":::
 
-For more information, see the [Declaration pattern](~/_csharpstandard/standard/patterns.md#1122-declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
+For more information, see the [Declaration pattern](~/_csharpstandard/standard/patterns.md#1122-declaration-pattern) and [Type pattern](~/_csharpstandard/standard/patterns.md#1128-type-pattern) sections of the C# language specification.
 
 ## Constant pattern
 
@@ -123,7 +123,7 @@ To check if an expression result is in a certain range, match it against a [conj
 
 If an expression result is `null` or fails to convert to the type of a constant by using a nullable or unboxing conversion, a relational pattern doesn't match the expression.
 
-For more information, see the [Relational patterns](~/_csharplang/proposals/csharp-9.0/patterns3.md#relational-patterns) section of the feature proposal note.
+For more information, see the [Relational patterns](~/_csharpstandard/standard/patterns.md#1129-relational-pattern) section of the C# language specification.
 
 ## Logical patterns
 
@@ -170,7 +170,7 @@ Adding parentheses becomes more important as your patterns become more complicat
 > [!NOTE]
 > The order in which the compiler checks patterns that have the same binding order is undefined. At run time, the compiler can check the right-hand nested patterns of multiple `or` patterns and multiple `and` patterns first.
 
-For more information, see the [Pattern combinators](~/_csharplang/proposals/csharp-9.0/patterns3.md#pattern-combinators) section of the feature proposal note.
+For more information, see the [Pattern combinators](~/_csharpstandard/standard/patterns.md#11210-logical-pattern) section of the C# language specification.
 
 ## Property pattern
 
@@ -330,7 +330,7 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 
 For information about features added in C# 9 and later versions, see the following feature proposal notes:
 
-- [Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
+- [Pattern matching](~/_csharpstandard/standard/patterns.md#112-pattern-forms)
 - [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 - [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
 - [Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)

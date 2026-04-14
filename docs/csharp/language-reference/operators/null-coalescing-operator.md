@@ -80,9 +80,9 @@ You can't overload the `??` and `??=` operators.
 
 ## C# language specification
 
-For more information about the `??` operator, see [The null coalescing operator](~/_csharpstandard/standard/expressions.md#1217-the-null-coalescing-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information about the `??` operator, see [The null coalescing operator](~/_csharpstandard/standard/expressions.md#1218-the-null-coalescing-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about the `??=` operator, see the [Compound assignment](~/_csharpstandard/standard/expressions.md#12235-compound-assignment) section of the C# language specification.
+For more information about the `??=` operator, see the [Compound assignment](~/_csharpstandard/standard/expressions.md#12245-compound-assignment) section of the C# language specification.
 
 ## See also
 

@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 // <RuntimeAsyncStackTrace>
 // To enable runtime async, add the following to your .csproj:
 //   <Features>runtime-async=on</Features>
-//   <EnablePreviewFeatures>true</EnablePreviewFeatures>
 
 await OuterAsync();
 

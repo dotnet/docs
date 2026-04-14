@@ -156,7 +156,7 @@ For more information, see the following sections of the [C# language specificati
 - [The `foreach` statement](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
 - [The `do` statement](~/_csharpstandard/standard/statements.md#1393-the-do-statement)
 - [The `while` statement](~/_csharpstandard/standard/statements.md#1392-the-while-statement)
-- [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+- [Extension `GetEnumerator` support for `foreach` loops](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
 
 ## See also
 

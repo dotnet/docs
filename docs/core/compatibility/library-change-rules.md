@@ -1,7 +1,7 @@
 ---
 title: .NET API changes that affect compatibility
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
-ms.date: 03/23/2026
+ms.date: 04/10/2026
 ms.topic: concept-article
 ---
 # Change rules for compatibility
@@ -125,7 +125,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   While it's a breaking change in the sense that it raises your minimum .NET version to .NET Core 3.0 (C# 8.0), which is when [default interface members](../../csharp/language-reference/keywords/interface.md#default-interface-members) (DIMs) were introduced, adding a static, non-abstract, non-virtual member to an interface is allowed.
 
-  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support DIMs. Also, in some scenarios, the runtime can't decide which default interface member to invoke. In some scenarios, interfaces are implemented by `ref struct` types. Because `ref struct` types can't be boxed, they can't be converted to interface types. Therefore, `ref struct` types must provide an implicit implementation for every interface member. They can't make use of the default implementation provided by the interface. For these reasons, use judgment when adding a member to an existing interface.
+  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support DIMs. Also, in some scenarios, the runtime can't decide which default interface member to invoke. Beginning with C# 13, `ref struct` types can implement interfaces, but they can't be boxed or converted to an interface type. Therefore, a `ref struct` type must provide an explicit implementation for every instance interface member—it can't use the default implementation provided by the interface. Adding a default instance member to an interface that a `ref struct` implements requires the `ref struct` to add a corresponding implementation, which is a source breaking change. For these reasons, use judgment when adding a member to an existing interface.
+
+  > [!NOTE]
+  > If your interface is implemented by `ref struct` types (possible in C# 13 and later), adding any default instance member to the interface is a source breaking change for those callers. The `ref struct` must provide an explicit implementation of the new member; it can't fall back to the default implementation.
 
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 
@@ -134,6 +137,14 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Adding, removing, or changing the order of parameters**
 
 - ❌ **DISALLOWED: Adding or removing the [in](../../csharp/language-reference/keywords/in.md), [out](../../csharp/language-reference/keywords/out.md), or [ref](../../csharp/language-reference/keywords/ref.md) keyword from a parameter**
+
+- ✔️ **ALLOWED: Changing a `ref` parameter to [`ref readonly`](../../csharp/language-reference/keywords/method-parameters.md#ref-readonly-modifier)**
+
+  Changing a parameter from `ref` to `ref readonly` is source compatible for existing call sites that pass arguments with the `ref` modifier—those calls continue to compile without any change. Unlike changing `ref` to `in`, a `ref readonly` parameter doesn't silently allow callers to pass rvalues (non-variables); the compiler issues a warning if the argument isn't a variable. Existing `ref` call sites remain valid.
+
+- ❌ **DISALLOWED: Changing an `in` parameter to `ref readonly`**
+
+  Call sites that pass `in` arguments without the `in` modifier (which the compiler allows for `in` parameters) will receive a warning when the parameter changes to `ref readonly`, because `ref readonly` requires the argument to be passed by reference. Callers that treat warnings as errors will experience a source breaking change.
 
 - ❌ **DISALLOWED: Renaming a parameter (including changing its case)**
 
@@ -174,7 +185,19 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding an overload that precludes an existing overload and defines a different behavior**
 
-  This breaks existing clients that were bound to the previous overload. For example, if a class has a single version of a method that accepts a <xref:System.UInt32>, an existing consumer will successfully bind to that overload when passing a <xref:System.Int32> value. However, if you add an overload that accepts an <xref:System.Int32>, when recompiling or using late-binding, the compiler now binds to the new overload. If different behavior results, this is a breaking change.
+  This breaks existing clients that were bound to the previous overload. For example, if a class has a single version of a method that accepts a <xref:System.UInt32>, an existing consumer will successfully bind to that overload when passing a <xref:System.Int32> value. However, if you add an overload that accepts an <xref:System.Int32>, when recompiling or using late-binding, the compiler now binds to the new overload. If different behavior results, this can be a breaking change.
+
+- ❓ **REQUIRES JUDGMENT: Adding <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to an existing overload or changing its priority value**
+
+  The <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> affects overload resolution at the source level: callers that recompile might resolve to a different overload than before. The intended use is to add the attribute to a new, better overload so the compiler prefers it over existing ones. Adding it to an existing overload or changing the priority value on an already-attributed overload can be a source breaking change because callers that recompile might change behavior.
+
+- ✔️ **ALLOWED: Adding the [`allows ref struct`](../../csharp/language-reference/keywords/where-generic-type-constraint.md) anti-constraint to a generic type parameter**
+
+  Adding `allows ref struct` expands what types can be used as type arguments by permitting `ref struct` types. Existing callers using non-`ref struct` type arguments aren't affected. The generic method or type must follow ref safety rules for all instances of that type parameter.
+
+- ❌ **DISALLOWED: Removing the `allows ref struct` anti-constraint from a generic type parameter**
+
+  Removing `allows ref struct` restricts which types callers can use as type arguments. Any caller that passes a `ref struct` as a type argument will no longer compile.
 
 - ❌ **DISALLOWED: Adding a constructor to a class that previously had no constructor without adding the parameterless constructor**
 
@@ -325,6 +348,14 @@ Changes in this category modify the public surface area of a type. Most of the c
    This change might cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
 
 - ❌ **DISALLOWED: Removing [params](../../csharp/language-reference/keywords/method-parameters.md#params-modifier) from a parameter**
+
+- ❌ **DISALLOWED: Changing the collection type of a `params` parameter**
+
+  Beginning with C# 13, `params` parameters support non-array collection types, including <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, struct or class types that implement <xref:System.Collections.Generic.IEnumerable`1> with an accessible parameterless constructor and an instance `Add` method, and specific interface types such as <xref:System.Collections.Generic.IList`1>. Changing the collection type of an existing `params` parameter (for example, from `params T[]` to `params ReadOnlySpan<T>`) changes the method's IL signature and is a binary breaking change. Callers compiled against the previous version must recompile.
+
+- ✔️ **ALLOWED: Converting an extension method to the [extension block member syntax](../../csharp/language-reference/keywords/extension.md)**
+
+  Beginning with C# 14, you can declare extension members using `extension` blocks in addition to the older `this`-parameter syntax. Both forms generate identical IL, so callers can't distinguish between them. Converting existing extension methods to the new extension block syntax is binary and source compatible.
 
 - ❌ **DISALLOWED: Changing the order in which events are fired**
 

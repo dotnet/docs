@@ -185,7 +185,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding an overload that precludes an existing overload and defines a different behavior**
 
-  This breaks existing clients that were bound to the previous overload. For example, if a class has a single version of a method that accepts a <xref:System.UInt32>, an existing consumer will successfully bind to that overload when passing a <xref:System.Int32> value. However, if you add an overload that accepts an <xref:System.Int32>, when recompiling or using late-binding, the compiler now binds to the new overload. If different behavior results, this is a breaking change.
+  This breaks existing clients that were bound to the previous overload. For example, if a class has a single version of a method that accepts a <xref:System.UInt32>, an existing consumer will successfully bind to that overload when passing a <xref:System.Int32> value. However, if you add an overload that accepts an <xref:System.Int32>, when recompiling or using late-binding, the compiler now binds to the new overload. If different behavior results, this can be a breaking change.
 
 - ❓ **REQUIRES JUDGMENT: Adding <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to an existing overload or changing its priority value**
 

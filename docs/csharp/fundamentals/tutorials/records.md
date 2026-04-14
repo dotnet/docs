@@ -57,7 +57,7 @@ A record struct works well here because each value is small and self-contained.
 
 Create a file named *DegreeDays.cs* with a hierarchy for heating and cooling degree-day calculations:
 
-:::code language="csharp" source="./snippets/records/DegreeDays.cs" ID="DegreeDaysRecords":::
+:::code language="csharp" source="./snippets/records/InterimSteps.cs" ID="DegreeDaysRecords":::
 
 Now calculate totals from your `Main` method in *Program.cs*:
 

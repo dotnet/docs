@@ -11,7 +11,7 @@ ai-usage: ai-generated
 
 NETSDK1237 warns you when you list an assembly in `PublishReadyToRunPartialAssemblies` but also compile it into a [ReadyToRun composite image](../../deploying/ready-to-run.md). You can only use partial compilation for assemblies compiled separately. The SDK compiles the assembly fully into the composite image and ignores the `PublishReadyToRunPartialAssemblies` setting for it.
 
-This warning appears when you set both `PublishReadyToRunComposite` to `true` and include assemblies in `PublishReadyToRunPartialAssemblies` in your project file:
+NETSDK1237 appears when you set both `PublishReadyToRunComposite` to `true` and include assemblies in `PublishReadyToRunPartialAssemblies` in your project file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

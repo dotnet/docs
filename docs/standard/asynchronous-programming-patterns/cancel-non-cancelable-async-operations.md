@@ -42,9 +42,9 @@ Use token overloads whenever they exist:
 :::code language="csharp" source="./snippets/cancel-non-cancelable-async-operations/csharp/Program.cs" id="PreferTokenAwareApis":::
 :::code language="vb" source="./snippets/cancel-non-cancelable-async-operations/vb/Program.vb" id="PreferTokenAwareApis":::
 
-## Cancel only the wait with `Task.WhenAny`
+## Cancel only the wait by using `Task.WhenAny`
 
-When an operation doesn't accept a token, cancel your wait by racing the operation against a token-backed task. The pattern often appears as a `WithCancellation` helper:
+When an operation doesn't accept a token, cancel your wait by racing the operation against a token-backed task. This pattern often appears as a `WithCancellation` helper:
 
 :::code language="csharp" source="./snippets/cancel-non-cancelable-async-operations/csharp/Program.cs" id="WithCancellation":::
 :::code language="vb" source="./snippets/cancel-non-cancelable-async-operations/vb/Program.vb" id="WithCancellation":::

@@ -24,12 +24,12 @@ Use <xref:System.Threading.CancellationTokenSource.CreateLinkedTokenSource*> to 
 
 ## Use a linked token source for caller token plus timeout
 
-Create a timeout CTS, link it with the caller token, and pass the linked token to the operation:
+Create a timeout <xref:System.Threading.CancellationTokenSource>, link it with the caller token, and pass the linked token to the operation:
 
 :::code language="csharp" source="./snippets/coalescing-cancellation-tokens-from-timeouts/csharp/Program.cs" id="LinkedTokenBasic":::
 :::code language="vb" source="./snippets/coalescing-cancellation-tokens-from-timeouts/vb/Program.vb" id="LinkedTokenBasic":::
 
-Dispose both CTS instances after the operation completes so registrations and timers are released promptly.
+Dispose both `CancellationTokenSource` instances after the operation completes so registrations and timers are released promptly.
 
 ## Encapsulate linking in a helper
 
@@ -44,7 +44,7 @@ A helper keeps timeout behavior consistent and avoids duplicate disposal bugs.
 
 Linked tokens are useful when the callee accepts a token and you need one unified cancellation path. In modern .NET, you also have these alternatives:
 
-- Use <xref:System.Threading.CancellationTokenSource.CancelAfter*> to enforce timeouts on a CTS you own.
+- Use <xref:System.Threading.CancellationTokenSource.CancelAfter*> to enforce timeouts on a `CancellationTokenSource` you own.
 - Use <xref:System.Threading.Tasks.Task.WaitAsync*> when you want to time out the wait without canceling underlying work.
 
 This example shows a `WaitAsync` timeout for "cancel wait only" semantics:
@@ -56,7 +56,7 @@ This example shows a `WaitAsync` timeout for "cancel wait only" semantics:
 
 Use linked tokens when you need to combine caller intent and infrastructure timeouts into one cancellation contract. Keep ownership and disposal rules explicit:
 
-- If your component creates a CTS, your component disposes it.
+- If your component creates a `CancellationTokenSource`, your component disposes it.
 - If callers pass a token, never dispose the caller's token source.
 - If an operation doesn't accept tokens, use wait-cancellation patterns instead of linked tokens.
 

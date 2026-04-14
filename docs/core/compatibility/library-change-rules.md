@@ -125,7 +125,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   While it's a breaking change in the sense that it raises your minimum .NET version to .NET Core 3.0 (C# 8.0), which is when [default interface members](../../csharp/language-reference/keywords/interface.md#default-interface-members) (DIMs) were introduced, adding a static, non-abstract, non-virtual member to an interface is allowed.
 
-  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support DIMs. Also, in some scenarios, the runtime can't decide which default interface member to invoke. In some scenarios, interfaces are implemented by `ref struct` types. Because `ref struct` types can't be boxed, they can't be converted to interface types. Therefore, `ref struct` types must provide an implicit implementation for every interface member. They can't make use of the default implementation provided by the interface. For these reasons, use judgment when adding a member to an existing interface.
+  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support DIMs. Also, in some scenarios, the runtime can't decide which default interface member to invoke. Beginning with C# 13, `ref struct` types can implement interfaces, but they can't be boxed or converted to an interface type. Therefore, a `ref struct` type must provide an explicit implementation for every instance interface member—it can't use the default implementation provided by the interface. Adding a default instance member to an interface that a `ref struct` implements requires the `ref struct` to add a corresponding implementation, which is a source breaking change. For these reasons, use judgment when adding a member to an existing interface.
+
+  > [!NOTE]
+  > If your interface is implemented by `ref struct` types (possible in C# 13 and later), adding any default instance member to the interface is a source breaking change for those callers. The `ref struct` must provide an explicit implementation of the new member; it can't fall back to the default implementation.
 
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 
@@ -138,6 +141,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ✔️ **ALLOWED: Changing a `ref` parameter to [`ref readonly`](../../csharp/language-reference/keywords/method-parameters.md#ref-readonly-modifier)**
 
   Changing a parameter from `ref` to `ref readonly` is source compatible for existing call sites that pass arguments with the `ref` modifier—those calls continue to compile without any change. Unlike changing `ref` to `in`, a `ref readonly` parameter doesn't silently allow callers to pass rvalues (non-variables); the compiler issues a warning if the argument isn't a variable. Existing `ref` call sites remain valid.
+
+- ❌ **DISALLOWED: Changing an `in` parameter to `ref readonly`**
+
+  Call sites that pass `in` arguments without the `in` modifier (which the compiler allows for `in` parameters) will receive a warning when the parameter changes to `ref readonly`, because `ref readonly` requires the argument to be passed by reference. Callers that treat warnings as errors will experience a source breaking change.
 
 - ❌ **DISALLOWED: Renaming a parameter (including changing its case)**
 

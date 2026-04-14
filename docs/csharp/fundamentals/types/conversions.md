@@ -19,7 +19,7 @@ Understanding key terms:
 
 - A *conversion* is the process of changing a value from one type to another.
 - A *cast* is the explicit syntax for conversion, written with parentheses like `(int)value`.
-- An *implicit cast* is a conversion that happens automatically when the compiler can guarantee it's safe.
+- An *implicit conversion* is a conversion that happens automatically when the compiler can guarantee it's safe.
 - An *explicit cast* is a conversion you write in code, indicating the conversion might lose information or fail.
 
 Choose the conversion style based on risk:

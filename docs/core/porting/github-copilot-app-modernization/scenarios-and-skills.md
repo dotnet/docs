@@ -1,7 +1,7 @@
 ---
 title: GitHub Copilot modernization scenarios and skills
 description: "Complete reference of all scenarios and built-in migration skills available in GitHub Copilot modernization for .NET, organized by domain."
-ms.topic: concept-article
+ms.topic: reference
 ms.date: 04/06/2026
 ai-usage: ai-assisted
 

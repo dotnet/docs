@@ -76,8 +76,8 @@ static class LibrariesExamples
         SafeFileHandle.CreateAnonymousPipe(
             out SafeFileHandle readEnd,
             out SafeFileHandle writeEnd,
-            asyncReads: true,
-            asyncWrites: false);
+            asyncRead: true,
+            asyncWrite: false);
 
         using (readEnd)
         using (writeEnd)

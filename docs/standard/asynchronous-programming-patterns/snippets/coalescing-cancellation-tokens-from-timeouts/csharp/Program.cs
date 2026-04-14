@@ -47,6 +47,10 @@ public static class WaitOnlyTimeoutDemo
         {
             Console.WriteLine("Timed out waiting without canceling operation.");
         }
+        catch (OperationCanceledException)
+        {
+            Console.WriteLine("Canceled while waiting for the operation.");
+        }
     }
 }
 // </WaitAsyncAlternative>

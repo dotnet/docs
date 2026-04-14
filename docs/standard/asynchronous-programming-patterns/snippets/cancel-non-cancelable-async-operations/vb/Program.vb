@@ -95,7 +95,6 @@ Public Module ObserveLateFaultDemo
             TaskContinuationOptions.OnlyOnFaulted)
 
         Await observed
-        Await Task.Delay(300)
     End Function
 End Module
 ' </ObserveLateFault>

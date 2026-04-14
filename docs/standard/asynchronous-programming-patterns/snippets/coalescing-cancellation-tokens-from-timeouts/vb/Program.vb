@@ -38,6 +38,8 @@ Public Module WaitOnlyTimeoutDemo
             Console.WriteLine("Operation completed before timeout.")
         Catch ex As TimeoutException
             Console.WriteLine("Timed out waiting without canceling operation.")
+        Catch ex As OperationCanceledException
+            Console.WriteLine("Canceled waiting because the caller token was canceled.")
         End Try
     End Function
 End Module

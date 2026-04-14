@@ -42,15 +42,15 @@ This security update addresses an information disclosure vulnerability detailed 
 
 #### .NET Runtime
 
-Addresses an issue to add verification logic for ClickOnce to support SHA384 and SHA512. (_Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1_)
+Addresses an issue to add verification logic for ClickOnce to support SHA384 and SHA512. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1*)
 
-Addresses an issue in cases where the Arm64 CLR could crash when code generates and catches a NullReferenceException within the same function. (_Applies to: .NET Framework 4.8.1_)
+Addresses an issue in cases where the Arm64 CLR could crash when code generates and catches a NullReferenceException within the same function. (*Applies to: .NET Framework 4.8.1*)
 
-Addresses an issue to update operating system calls for compliance with current standards. (_Applies to: .NET Framework 4.8.1_)
+Addresses an issue to update operating system calls for compliance with current standards. (*Applies to: .NET Framework 4.8.1*)
 
 #### WCF
 
-Addresses an issue with running a WCF NamedPipe service inside a Win32 app container when running on Windows 11 or Windows Server 2025. (_Applies to: .NET Framework 4.8.1_)
+Addresses an issue with running a WCF NamedPipe service inside a Win32 app container when running on Windows 11 or Windows Server 2025. (*Applies to: .NET Framework 4.8.1*)
 
 ## Known issues in this release
 

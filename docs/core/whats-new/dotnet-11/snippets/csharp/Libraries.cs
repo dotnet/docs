@@ -45,6 +45,7 @@ static class LibrariesExamples
 
         var data = new EventData { EventName = "Launch", Notes = null };
         string json = JsonSerializer.Serialize(data, options);
+        Console.WriteLine(json);
         // {"eventName":"Launch"}  -- Notes omitted (null), EventName camel-cased
         // </JsonNamingIgnore>
     }
@@ -78,8 +79,13 @@ static class LibrariesExamples
             asyncReads: true,
             asyncWrites: false);
 
-        // SafeFileHandle.Type reports the kind of OS object the handle refers to
-        Console.WriteLine(readEnd.Type);  // Pipe
+        using (readEnd)
+        using (writeEnd)
+        {
+            // SafeFileHandle.Type reports the kind of OS object the handle refers to
+            Console.WriteLine(readEnd.Type);   // Pipe
+            Console.WriteLine(writeEnd.Type);  // Pipe
+        }
         // </SafeFileHandlePipe>
     }
 

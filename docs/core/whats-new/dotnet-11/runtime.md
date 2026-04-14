@@ -138,7 +138,7 @@ Preview 3 expands browser and WebAssembly support with several improvements:
 
 - **WebCIL payload loading:** The runtime can now load WebCIL payloads directly, improving compatibility with browser-based deployment scenarios.
 - **Better debugging symbols:** Symbol and stack trace quality for WebAssembly debugging has improved, making it easier to diagnose issues in browser-hosted .NET apps.
-- **float[] marshaling:** `float[]`, `Span<float>`, and `ArraySegment<float>` are now marshaled more directly across JavaScript boundaries, reducing overhead for interop-heavy code.
+- **`float[]`, `Span<float>`, and `ArraySegment<float>` marshaling:** `float[]`, `Span<float>`, and `ArraySegment<float>` are now marshaled more directly across JavaScript boundaries, reducing overhead for interop-heavy code.
 
 ## See also
 

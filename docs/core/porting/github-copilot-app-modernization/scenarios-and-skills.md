@@ -94,7 +94,7 @@ Skills for migrating data access layers, including Entity Framework, LINQ to SQL
 | **Migrating EDMX to Code-First** | Converts EF6 Database-First (`.edmx`) models to EF Core Code-First. Scaffolds entities from the database. |
 | **Migrating EF DbContext** | Registers `DbContext` in ASP.NET Core dependency injection. Handles both EF6 to EF Core and existing EF Core patterns. |
 | **Migrating EF6 Code-First to EF Core** | Upgrades EF6 Code-First to EF Core. Swaps packages, updates namespaces, and replaces `EntityTypeConfiguration` and `DbModelBuilder`. |
-Migrates from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns.
+| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns. |
 | **Migrating to Microsoft.Data.SqlClient** | Migrates from `System.Data.SqlClient`. Handles the `Encrypt=true` default change and connection string differences. |
 
 ## Migration skills: web and ASP.NET

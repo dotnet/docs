@@ -1,7 +1,7 @@
 ---
 title: "Type conversions, casting, and boxing"
 description: Learn how to convert between C# types by using implicit and explicit conversions, safe casting patterns, boxing and unboxing, and Parse and TryParse APIs.
-ms.date: 04/10/2026
+ms.date: 04/14/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -13,7 +13,14 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** C# conversions work like most statically typed languages: widening conversions are implicit, narrowing conversions need explicit casts, and parsing text should favor `TryParse` in user-facing code.
 
-When you write C# code, you often move values from one type to another. For example, you might convert from `int` to `long`, read text and convert it to a number, or cast a base type to a derived type.
+When you write C# code, you often convert values from one type to another. For example, you might convert from `int` to `long`, read text and convert it to a number, or cast a base type to a derived type.
+
+Understanding key terms:
+
+- A *conversion* is the process of changing a value from one type to another.
+- A *cast* is the explicit syntax for conversion, written with parentheses like `(int)value`.
+- An *implicit cast* is a conversion that happens automatically when the compiler can guarantee it's safe.
+- An *explicit cast* is a conversion you write in code, indicating the conversion might lose information or fail.
 
 Choose the conversion style based on risk:
 
@@ -24,7 +31,7 @@ Choose the conversion style based on risk:
 
 ## Use implicit and explicit numeric conversions
 
-Use implicit conversions when the destination type can represent the full source range. Use explicit casts when the destination type has a smaller range or less precision.
+An *implicit conversion* always succeeds. An *explicit conversion* might fail or lose information.
 
 :::code language="csharp" source="snippets/conversions/Program.cs" ID="ImplicitAndExplicitNumeric":::
 
@@ -34,7 +41,7 @@ For full conversion tables, see [Built-in numeric conversions](../../language-re
 
 ## Convert references safely
 
-For reference types, you often start with a base type and need to access members from a derived type. Prefer pattern matching so the test and assignment happen together.
+Casts on value types typically copy the data to the destination type. Casts on reference types don't copy data; they change how you view the same object. For reference types, you often start with a base type and need to access members from a derived type. Prefer pattern matching so the test and assignment happen together.
 
 :::code language="csharp" source="snippets/conversions/Program.cs" ID="ReferenceConversions":::
 
@@ -56,7 +63,7 @@ Boxing allocates memory on the managed heap, and unboxing requires a type check.
 
 ## Parse text by using Parse and TryParse
 
-When you convert user input or file content, start with `TryParse`. It avoids exceptions for expected invalid input and makes failure handling explicit.
+When you convert user input or file content, start with `TryParse`. It avoids exceptions for expected invalid input and makes failure handling explicit. All parsing APIs create a new object or value type instance from the source string; they don't modify the source.
 
 :::code language="csharp" source="snippets/conversions/Program.cs" ID="ParseAndTryParse":::
 

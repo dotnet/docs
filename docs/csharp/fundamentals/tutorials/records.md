@@ -1,7 +1,7 @@
 ---
 title: Use record types tutorial
 description: Build a small app that models temperature data with records, compares record behavior, and uses with expressions for nondestructive mutation.
-ms.date: 04/10/2026
+ms.date: 04/14/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 ---
@@ -30,9 +30,9 @@ In this tutorial, you learn how to:
 
 Create a folder for your app, run `dotnet new console`, and open the generated project.
 
-Add a file named *InterimSteps.cs*, and add a positional `readonly record struct` for temperature values:
+Add a file named *DailyTemperature.cs*, and add a positional `readonly record struct` for temperature values:
 
-:::code language="csharp" source="./snippets/records/InterimSteps.cs" ID="DailyRecord":::
+:::code language="csharp" source="./snippets/records/DailyTemperature.cs" ID="TemperatureRecord":::
 
 Add a file named *Program.cs*, and create sample temperature data:
 
@@ -42,19 +42,24 @@ This syntax gives you concise data modeling with immutable value semantics.
 
 ## Add behavior to the record struct
 
-Create a file named *DailyTemperature.cs* and add a computed `Mean` property:
+In *DailyTemperature.cs*, you already added a computed `Mean` property to your record struct:
 
-:::code language="csharp" source="./snippets/records/DailyTemperature.cs" ID="TemperatureRecord":::
+```csharp
+public double Mean => (HighTemp + LowTemp) / 2.0;
+```
 
 A record struct works well here because each value is small and self-contained.
 
 ## Build record types for degree-day calculations
 
-Add a hierarchy for heating and cooling degree-day calculations:
+> [!NOTE]
+> **Heating degree-days** and **cooling degree-days** measure how much the daily average temperature deviates from a base temperature (typically 65°F/18°C). Heating degree-days accumulate on cold days when the average is below the base, while cooling degree-days accumulate on warm days when the average is above the base. These calculations help estimate energy consumption for heating or cooling buildings, making them useful for utility companies, building managers, and climate analysis.
 
-:::code language="csharp" source="./snippets/records/InterimSteps.cs" ID="DegreeDaysRecords":::
+Create a file named *DegreeDays.cs* with a hierarchy for heating and cooling degree-day calculations:
 
-Now calculate totals from your `Main` method:
+:::code language="csharp" source="./snippets/records/DegreeDays.cs" ID="DegreeDaysRecords":::
+
+Now calculate totals from your `Main` method in *Program.cs*:
 
 :::code language="csharp" source="./snippets/records/Program.cs" ID="HeatingAndCooling":::
 

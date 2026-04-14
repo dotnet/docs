@@ -27,14 +27,12 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 
 | Scenario | What it does | Example prompt |
 |---|---|---|
-| [**.NET version upgrade**](#net-version-upgrade) | Upgrades projects from any older .NET version to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
-| [**Aspire integration**](#aspire-integration) | Adds .NET Aspire orchestration for inner-loop development and optional Azure deployment. | _"Add Aspire to my solution"_ |
-| [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire projects to a newer Aspire version with code transforms and TFM updates. | _"Upgrade my Aspire project to latest"_ |
+| [**.NET version upgrade**](#net-version-upgrade) | Upgrades projects from any older .NET version to .NET 8 or later. | _"Upgrade my solution to .NET 10"_ |
 | [**SDK-style conversion**](#sdk-style-conversion) | Converts legacy project files to modern SDK-style format. | _"Convert my projects to SDK-style"_ |
 | [**Newtonsoft.Json migration**](#newtonsoftjson-migration) | Replaces Newtonsoft.Json with System.Text.Json across a solution. | _"Migrate from Newtonsoft.Json"_ |
 | [**SqlClient migration**](#sqlclient-migration) | Migrates System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient to the modern package"_ |
 | [**Azure Functions upgrade**](#azure-functions-upgrade) | Migrates Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
-| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agents AI Framework. | _"Migrate my SK agents"_ |
+| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Migrates from SK Agents to Microsoft Agent Framework. | _"Migrate my SK agents"_ |
 
 For an end-to-end walkthrough, see [Core concepts](concepts.md).
 
@@ -42,39 +40,13 @@ For an end-to-end walkthrough, see [Core concepts](concepts.md).
 
 The most common scenario. Upgrades your projects from any older .NET variant to the latest:
 
-| Source | Target |
-|---|---|
-| .NET Framework (any version) | .NET 8, 9, 10, or later |
-| .NET Core 1.x, 2.x, 3.x | .NET 8, 9, 10, or later |
-| .NET 5, 6, 7, 8, 9 | .NET 10 or later |
+| Source                       | Target          |
+|------------------------------|-----------------|
+| .NET Framework (any version) | .NET 8 or later |
+| .NET Core 1.x–3.x            | .NET 8 or later |
+| .NET 5 or later              | .NET 8 or later |
 
 The agent analyzes your dependency graph, checks NuGet compatibility, identifies breaking changes, and creates a task plan using the best strategy for your solution (bottom-up, top-down, or all-at-once). If your projects need format conversions, the agent handles them automatically as part of the upgrade.
-
-### Aspire integration
-
-Adds .NET Aspire orchestration to an existing solution. Works with any .NET project targeting `net8.0` or later, including desktop apps (WPF, WinForms, Avalonia, MAUI), web APIs, workers, and console applications.
-
-The agent:
-
-1. Scans your solution for compatible projects, infrastructure resources (databases, caches, message brokers), and inter-service communication.
-1. Asks you to choose: inner-loop only (local development) or inner-loop and Azure deployment.
-1. Lets you pick a file-based or project-based AppHost approach.
-1. Generates the AppHost with all resources, projects, and wiring in one pass.
-1. Validates everything works locally through the Aspire Dashboard.
-1. (Optional) Configures Azure deployment through `aspire deploy`.
-
-### Aspire version upgrade
-
-Upgrades an existing Aspire project to a newer version. The agent handles the full upgrade lifecycle:
-
-1. Detects the current Aspire version from your AppHost SDK, packages, and configuration.
-1. Determines the target version and required .NET TFM (for example, Aspire 13.x requires `net10.0`).
-1. Auto-fixes breaking API changes across version transitions (type renames, method renames, argument reorders, and fluent chain refactors).
-1. Updates all Aspire packages and handles package renames (for example, `Aspire.Hosting.NodeJs` to `Aspire.Hosting.JavaScript`).
-1. Consolidates AppHost SDK format and migrates config files to unified `aspire.config.json`.
-1. Validates the upgraded solution builds and runs correctly.
-
-Supports upgrades from any Aspire version (8.x, 9.x, 13.0) to the latest, handling all intermediate breaking changes automatically.
 
 ### SDK-style conversion
 
@@ -94,7 +66,7 @@ Migrates Azure Functions from the in-process hosting model to the isolated worke
 
 ### Semantic Kernel to Agents
 
-Migrates from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to the Microsoft Agents AI Framework. Updates packages and API patterns.
+Migrates from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns.  
 
 ## Migration skills: common
 
@@ -122,7 +94,7 @@ Skills for migrating data access layers, including Entity Framework, LINQ to SQL
 | **Migrating EDMX to Code-First** | Converts EF6 Database-First (`.edmx`) models to EF Core Code-First. Scaffolds entities from the database. |
 | **Migrating EF DbContext** | Registers `DbContext` in ASP.NET Core dependency injection. Handles both EF6 to EF Core and existing EF Core patterns. |
 | **Migrating EF6 Code-First to EF Core** | Upgrades EF6 Code-First to EF Core. Swaps packages, updates namespaces, and replaces `EntityTypeConfiguration` and `DbModelBuilder`. |
-| **Migrating LINQ to SQL to EF Core** | Migrates `System.Data.Linq` to EF Core. Converts `DataContext` to `DbContext` and handles stored procedures. |
+Migrates from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns.
 | **Migrating to Microsoft.Data.SqlClient** | Migrates from `System.Data.SqlClient`. Handles the `Encrypt=true` default change and connection string differences. |
 
 ## Migration skills: web and ASP.NET

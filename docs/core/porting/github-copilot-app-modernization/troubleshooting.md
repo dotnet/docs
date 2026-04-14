@@ -35,7 +35,7 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 1. Check if the `.github/upgrades/` folder exists in your repo root.
 1. If the folder was accidentally deleted, start the scenario fresh. The agent can't recover without its state files.
-1. If the folder exists but files appear corrupted, ask the agent to _"re-assess and re-plan"_ to regenerate them.
+1. If the folder exists but files appear corrupted, ask the agent to _"reassess and re-plan"_ to regenerate them.
 
 > [!TIP]
 > Commit the `.github/upgrades/` folder to your branch so it's preserved across sessions and machines.
@@ -47,7 +47,7 @@ These issues relate to scenario discovery, resuming work, and task state.
 **Solution:**
 
 1. The agent auto-detects stale tasks in most cases. Tell the agent _"resume"_ or _"restart the current task."_
-1. If the stuck state persists, tell the agent to _"mark the current task as pending and restart it"_ or _"re-assess and continue from the last completed step."_
+1. If the stuck state persists, tell the agent to _"mark the current task as pending and restart it"_ or _"reassess and continue from the last completed step."_
 1. Check the corresponding `progress-details.md` file for the task to understand where the previous session stopped.
 
 ### Agent keeps suggesting the wrong scenario
@@ -70,7 +70,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 
 ### Build fails after agent's changes
 
-**Cause:** Upgrades can introduce breaking API changes, missing packages, or incompatible code patterns.
+**Cause:** Upgrades can introduce [breaking API changes](../../compatibility/breaking-changes.md), missing packages, or incompatible code patterns.
 
 **Solution:**
 
@@ -137,7 +137,7 @@ These issues relate to upgrade speed and assessment duration.
 
 **Solution:**
 
-1. For very large solutions (50+ projects), consider upgrading in batches. Group related projects and upgrade them together.
+For very large solutions (50+ projects), consider upgrading in batches. Group related projects and upgrade them together.
 
 ### Assessment takes very long
 
@@ -155,7 +155,7 @@ These issues relate to custom skills and scenario instruction files.
 
 ### Custom skill isn't picked up
 
-**Cause:** The skill file is in the wrong location, has missing or invalid metadata, or the skill format is incorrect.
+**Cause:** The skill file is in the wrong location or has missing or invalid metadata, or the skill format is incorrect.
 
 **Solution:**
 
@@ -169,11 +169,11 @@ These issues relate to custom skills and scenario instruction files.
 
 ### Changes to scenario-instructions.md don't take effect
 
-**Cause:** The agent might not re-read the file mid-session, or your edits are in the wrong section.
+**Cause:** The agent might not reread the file midsession, or your edits are in the wrong section.
 
 **Solution:**
 
-1. Ask the agent to _"reload instructions"_ or start a new chat session to force a re-read.
+1. Ask the agent to _"reload instructions"_ or start a new chat session to force a reread.
 1. Ensure your edits are in the correct sections of the file:
    - **User Preferences:** For general preferences and constraints.
    - **Key Decisions:** For recording important decisions made during the upgrade.

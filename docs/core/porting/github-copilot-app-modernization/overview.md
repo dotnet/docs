@@ -31,8 +31,6 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 | Scenario | Description | Example prompt |
 |---|---|---|
 | **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
-| **Aspire integration** | Adds .NET Aspire orchestration to your solution. | _"Add Aspire to my solution"_ |
-| **Aspire version upgrade** | Upgrades existing .NET Aspire projects to a newer version. | _"Upgrade Aspire to latest"_ |
 | **SDK-style conversion** | Converts legacy project format to SDK-style. | _"Convert to SDK-style"_ |
 | **Newtonsoft.Json migration** | Replaces Newtonsoft.Json with System.Text.Json. | _"Migrate from Newtonsoft.Json"_ |
 | **SqlClient migration** | Migrates from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
@@ -74,31 +72,29 @@ To start an upgrade, see [Upgrade a .NET app with GitHub Copilot modernization](
 
 The agent supports the following upgrade paths:
 
-| Source | Target |
-|---|---|
-| .NET Framework (any version) | .NET 8, 9, 10, or later |
-| .NET Core 1.x–3.x | .NET 8, 9, 10, or later |
-| .NET 5–7 | .NET 8, 9, 10, or later |
-| .NET 8 | .NET 9, 10, or later |
-| .NET 9 | .NET 10 or later |
+| Source                       | Target          |
+|------------------------------|-----------------|
+| .NET Framework (any version) | .NET 8 or later |
+| .NET Core 1.x–3.x            | .NET 8 or later |
+| .NET 5 or later              | .NET 8 or later |
 
 ## Migrate .NET projects to Azure
 
 The modernization agent simplifies Azure migrations through automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation:
 
-- Analysis and intelligent recommendations
+- Analysis and intelligent recommendations.
 
   Assess your application's readiness for Azure migration and receive tailored guidance based on its dependencies and identified problems.
 
-- AI-powered code remediation
+- AI-powered code remediation.
 
   Apply predefined best-practice code patterns to accelerate modernization with minimal manual effort.
 
-- Automatic build and CVE resolution
+- Automatic build and CVE resolution.
 
   Build your app and resolve compilation errors and vulnerabilities, streamlining development.
 
-- Seamless deployment
+- Seamless deployment.
 
   Deploy to Azure, taking your code from development to production faster.
 

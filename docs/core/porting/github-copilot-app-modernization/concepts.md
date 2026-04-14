@@ -37,7 +37,8 @@ You don't need to memorize scenario names. The agent discovers relevant scenario
 1. Analyzes your codebase to understand what technologies you're using, including language, framework version, libraries, and project types.
 1. Identifies which scenarios are relevant to your projects.
 1. Ranks scenarios by importance and weight. The most relevant ones surface first.
-1. You can also ask directly: _"What scenarios are available for my solution?"_
+
+You can also ask directly: _"What scenarios are available for my solution?"_
 
 ### Scenario persistence
 
@@ -179,7 +180,7 @@ Because state lives in Git, you can switch between VS Code, Visual Studio, and C
 
 ## Flow modes
 
-The agent supports two flow modes that control how much oversight you have:
+The agent supports two flow modes that control how much oversight you have: [Automatic mode](#automatic-mode) and [Guided mode](#guided-mode).
 
 ### Automatic mode
 

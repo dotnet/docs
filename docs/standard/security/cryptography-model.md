@@ -83,6 +83,9 @@ Here is a list of recommended algorithms by application:
 - Generating a key from a password:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>
 
+> [!TIP]
+> .NET's built-in password-based key derivation uses the PBKDF2 algorithm. When using PBKDF2, specify <xref:System.Security.Cryptography.HashAlgorithmName.SHA256?displayProperty=nameWithType> or higher, and use the highest iteration count your performance budget allows. Consult the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html) for current iteration count recommendations and for guidance on alternative algorithms (such as Argon2id, bcrypt, or scrypt) that are available through third-party libraries.
+
 ## See also
 
 - [Cryptographic Services](cryptographic-services.md)

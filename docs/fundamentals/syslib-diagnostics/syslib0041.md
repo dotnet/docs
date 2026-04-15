@@ -21,7 +21,10 @@ The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructor
 
 Use a different constructor overload where you can explicitly specify the iteration count (the default is 1000) and hash algorithm name (the default is <xref:System.Security.Cryptography.HashAlgorithmName.SHA1?displayProperty=nameWithType>).
 
-If you're using the default iteration count or default hash algorithm, consider moving to more secure values&mdash;that is, a larger iteration count or a newer hash algorithm.
+If you're using the default iteration count or default hash algorithm, move to more secure values&mdash;that is, a much larger iteration count and a newer hash algorithm such as <xref:System.Security.Cryptography.HashAlgorithmName.SHA256?displayProperty=nameWithType> or higher.
+
+> [!IMPORTANT]
+> Consult the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html) for current recommended iteration counts, and use the highest value your performance budget allows. Prefer the one-shot static method <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> as recommended by [SYSLIB0060](syslib0060.md).
 
 ## Suppress a warning
 

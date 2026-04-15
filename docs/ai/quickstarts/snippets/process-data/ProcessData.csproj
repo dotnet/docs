@@ -10,12 +10,12 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.AI.OpenAI" Version="2.8.0-beta.1" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.4.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.5" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.6" />
     <PackageReference Include="Microsoft.Extensions.DataIngestion" Version="10.1.1-preview.1.25612.2" />
     <PackageReference Include="Microsoft.Extensions.DataIngestion.Markdig" Version="10.1.1-preview.1.25612.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.6" />
     <PackageReference Include="Microsoft.ML.Tokenizers.Data.O200kBase" Version="2.0.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.SqliteVec" Version="1.68.0-preview" />
   </ItemGroup>

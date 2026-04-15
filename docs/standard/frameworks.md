@@ -220,7 +220,7 @@ The `TargetFramework` property value (for example, `net10.0`) is a friendly name
 
 NuGet and the .NET SDK use these moniker properties—not the `TargetFramework` string—for package compatibility checks and build logic. This translation already happens for OS-specific TFMs. For example, `net10.0-windows` translates to `TargetFrameworkMoniker` = `.NETCoreApp,Version=v10.0` and `TargetPlatformMoniker` = `Windows,Version=7.0`.
 
-Because the alias is just a name, the `TargetFramework` value can be any string, as long as the corresponding moniker properties are set correctly. The following project file uses a custom alias named `banana` and explicitly sets the moniker properties so that the project builds and restores for .NET 10.0:
+Because the alias is just a name, the `TargetFramework` value can be any alpha numeric string, as long as the corresponding moniker properties are set correctly. The following project file uses a custom alias named `banana` and explicitly sets the moniker properties so that the project builds and restores for .NET 10.0:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

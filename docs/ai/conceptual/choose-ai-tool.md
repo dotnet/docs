@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Choose the right .NET AI tool
 
-The .NET AI ecosystem includes many powerful tools and libraries for different purposes. Picking the right one—or the right combination—makes your application easier to build, test, and maintain. This article helps you understand which tool fits your scenario.
+The .NET AI ecosystem includes many powerful tools and libraries for different purposes. This article helps you understand which tools to use in which scenarios.
 
 ## Quick reference
 
@@ -31,24 +31,33 @@ The following table summarizes when to reach for each component:
 
 ## How to decide
 
-| If your primary challenge is... | Start with... |
-|---------------------------------|---------------|
-| **Adding AI behavior to an app** | [MEAI](#microsoftextensionsai-meai). Add [Evaluations](#evaluations) once you have something worth measuring. |
-| **Working with your own data** | [MEDI](#microsoftextensionsdataingestion-medi) to read, chunk, or enrich content. Then use [MEVD](#microsoftextensionsvectordata-mevd) for vector storage and retrieval. |
-| **Sharing or consuming capabilities across AI clients** | An [MCP Server](#mcp-server) to publish capabilities, or an [MCP Client](#mcp-client) to consume them. |
-| **Building a truly agentic system** | [Copilot SDK](#copilot-sdk) for a ready-made harness, or [MAF](#microsoft-agent-framework-maf) for multi-step goal pursuit, routing, or handoffs. |
-| **Choosing a hosting or execution model** | [Azure AI Foundry](#azure-ai-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) for distributed multi-service systems. |
-| **Improving the developer workflow** | [AI Toolkit](#ai-toolkit) |
+The following table recommends which technology to use based on different objectives.
 
-## Component guidance
+| Objective                     | Technology to use |
+|-------------------------------|-------------------|
+| **Add AI behavior to an app** | [MEAI](#microsoftextensionsai-meai). Add [Evaluations](#evaluations) once you have something worth measuring. |
+| **Work with your own data**   | [MEDI](#microsoftextensionsdataingestion-medi) to read, chunk, or enrich content. Then use [MEVD](#microsoftextensionsvectordata-mevd) for vector storage and retrieval. |
+| **Share or consume capabilities across AI clients** | An [MCP Server](#mcp-server) to publish capabilities, or an [MCP Client](#mcp-client) to consume them. |
+| **Build an agentic system**   | [Copilot SDK](#copilot-sdk) for a ready-made harness, or [MAF](#microsoft-agent-framework-maf) for multi-step goal pursuit, routing, or handoffs. |
+| **Choose a hosting or execution model** | [Azure AI Foundry](#azure-ai-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) for distributed multi-service systems. |
+| **Improve the developer workflow** | [AI Toolkit](#ai-toolkit) |
 
-### Microsoft.Extensions.AI (MEAI)
+Most production AI applications combine several components:
+
+- **Chat or summarization app**: MEAI + Evaluations
+- **RAG application**: MEDI + MEVD + MEAI
+- **Multi-agent system**: MEAI + MAF + Aspire
+- **Tool interoperability**: MEAI + MCP Server + MCP Client
+- **Enterprise cloud app**: MEAI + Azure AI Foundry + Aspire
+- **Local-first app**: MEAI + Foundry Local + AI Toolkit (development)
+
+## Microsoft.Extensions.AI (MEAI)
 
 <xref:Microsoft.Extensions.AI> is the app-facing foundation for adding model-powered behavior to a .NET application.
 
-**Use MEAI when you want to:**
+Use MEAI when you want to:
 
-- Build chat or conversational UX.
+- Build a chat or conversational user interface.
 - Stream responses.
 - Summarize, extract, or classify content.
 - Produce structured outputs.
@@ -57,9 +66,9 @@ The following table summarizes when to reach for each component:
 
 MEAI gives .NET developers a clean abstraction for model interaction. It fits naturally into dependency injection, configuration, and existing app architectures and is the usual first layer of an AI-enabled .NET application.
 
-**Important boundary:** MEAI alone isn't an agent framework. A one-shot call, chat feature, or tool-call loop can be built with MEAI without becoming "agentic." When the system needs goal-directed, multi-step orchestration, use [MAF](#microsoft-agent-framework-maf) instead.
+MEAI alone isn't an agent framework. A one-shot call, chat feature, or tool-call loop can be built with MEAI without becoming "agentic." When the system needs goal-directed, multi-step orchestration, use [MAF](#microsoft-agent-framework-maf) instead.
 
-**Don't lead with MEAI alone when:**
+Don't lead with MEAI alone when:
 
 - The hard problem is preparing enterprise content for AI—add [MEDI](#microsoftextensionsdataingestion-medi).
 - The hard problem is retrieval or RAG—add [MEVD](#microsoftextensionsvectordata-mevd).
@@ -70,50 +79,46 @@ MEAI gives .NET developers a clean abstraction for model interaction. It fits na
 
 For more information, see [Microsoft.Extensions.AI overview](../microsoft-extensions-ai.md).
 
-### Evaluations
+## Evaluations
 
-<xref:Microsoft.Extensions.AI.Evaluations> is the quality and regression layer for AI features built with the .NET AI stack.
+The [The Microsoft.Extensions.AI.Evaluation library](../evaluation/libraries.md) is the quality and regression layer for AI features built with the .NET AI stack.
 
-**Use Evaluations when you need to answer questions like:**
+Use evaluations when you need to answer questions like:
 
 - "Is this prompt change actually better?"
 - "Did switching models hurt quality or safety?"
 - "Did the agent regress on key scenarios?"
 - "Can you measure behavior before shipping?"
 
-AI behavior changes easily as prompts, models, and tools evolve. Intuition doesn't scale—Evaluations give teams a repeatable way to compare outputs and catch regressions.
-
-**Important boundary:** Evaluations aren't the runtime feature itself. They're most valuable once you already have a feature, workflow, or agent worth measuring.
+AI behavior changes readily as prompts, models, and tools evolve. The evaluations library give teams a repeatable way to compare outputs and catch regressions.
 
 For more information, see [Microsoft.Extensions.AI.Evaluation libraries](../evaluation/libraries.md).
 
-### Microsoft.Extensions.DataIngestion (MEDI)
+## Microsoft.Extensions.DataIngestion (MEDI)
 
 <xref:Microsoft.Extensions.DataIngestion> is the ingestion and preparation layer for AI-ready data in .NET.
 
-**Use MEDI when:**
+Use MEDI when:
 
 - You need to read content from files, stores, or enterprise sources.
 - You need to chunk documents for retrieval and grounding.
 - You need to normalize and enrich content with metadata.
 - You're preparing data to feed a vector index or downstream RAG pipeline.
 
-Many AI apps fail before retrieval because data is messy, oversized, or poorly structured. Ingestion quality strongly affects downstream answer quality.
+Many AI apps fail before retrieval because data is messy, oversized, or poorly structured. Ingestion quality strongly affects downstream answer quality. MEDI prepares and shapes the data that MEVD or another store later queries.
 
-**Important boundary:** MEDI isn't the retrieval layer—it comes *before* retrieval. It prepares and shapes the data that MEVD or another store later queries.
+Don't lead with MEDI when:
 
-**Don't lead with MEDI when:**
-
-- The app just needs chat, extraction, summarization, or tool calling over immediate input—start with [MEAI](#microsoftextensionsai-meai).
-- Your content is already prepared and the need is semantic lookup—lead with [MEVD](#microsoftextensionsvectordata-mevd).
+- The app just needs chat, extraction, summarization, or tool calling over immediate input. Instead, start with [MEAI](#microsoftextensionsai-meai).
+- Your content is already prepared and the need is semantic lookup. Instead, lead with [MEVD](#microsoftextensionsvectordata-mevd).
 
 For more information, see [Data ingestion for AI apps](data-ingestion.md).
 
-### Microsoft.Extensions.VectorData (MEVD)
+## Microsoft.Extensions.VectorData (MEVD)
 
 <xref:Microsoft.Extensions.VectorData> is the vector data storage and retrieval layer for semantic search, similarity lookup, and grounding in .NET AI apps.
 
-**Use MEVD when:**
+Use MEVD when:
 
 - You need semantic search.
 - You need embeddings-backed retrieval.
@@ -122,15 +127,15 @@ For more information, see [Data ingestion for AI apps](data-ingestion.md).
 
 MEVD gives .NET applications a consistent way to work with vector stores and helps separate vector storage and retrieval concerns from model invocation concerns.
 
-**Important boundary:** MEVD isn't the model layer or the ingestion layer. MEDI prepares the data. MEVD stores and retrieves the data. MEAI uses that retrieved context with the model.
+MEDI prepares the data. MEVD stores and retrieves the data. MEAI uses that retrieved context with the model.
 
 For more information, see [Vector stores overview](../vector-stores/overview.md).
 
-### MCP Server
+## MCP Server
 
-An MCP Server exposes capabilities—tools, resources, or prompts—over the Model Context Protocol so other assistants, IDEs, and agents can discover and use them through a standard protocol.
+An MCP Server exposes capabilities such as tools, resources, or prompts over the Model Context Protocol so other assistants, IDEs, and agents can discover and use them through a standard protocol.
 
-**Use an MCP Server when:**
+Use an MCP Server when:
 
 - You want to make internal APIs or business actions available to multiple AI clients.
 - You want interoperability instead of custom one-off integrations.
@@ -138,42 +143,42 @@ An MCP Server exposes capabilities—tools, resources, or prompts—over the Mod
 
 An MCP Server turns app capabilities into reusable AI-facing endpoints. It reduces duplicated tool integration work across assistants and creates a cleaner boundary between capability providers and capability consumers.
 
-**Important boundary:** An MCP Server is about *publishing* capabilities. If the capability is used only inside one app, ordinary in-process function calling is simpler.
+An MCP Server is about *publishing* capabilities. If the capability is used only inside one app, ordinary in-process function calling is simpler.
 
-### MCP Client
+## MCP Client
 
 An MCP Client is the consumer side of the protocol: it connects to MCP servers and brings their exposed capabilities into an app, assistant, or agent runtime.
 
-**Use an MCP Client when:**
+Use an MCP Client when:
 
 - Your app needs to call tools that are already exposed elsewhere through MCP.
 - You want an agent or assistant to consume capabilities without custom per-tool plumbing.
 - You're composing with an external ecosystem of AI-facing tools.
 
-**Important boundary:** An MCP Client is about *consuming* capabilities, not publishing them. If everything the app needs is local and in-process, ordinary function or tool calling is still simpler.
+An MCP Client is about *consuming* capabilities, not publishing them. If everything the app needs is local and in-process, ordinary function or tool calling is still simpler.
 
 For more information, see [Get started with MCP](../get-started-mcp.md).
 
-### Microsoft Agent Framework (MAF)
+## Microsoft Agent Framework (MAF)
 
 Microsoft Agent Framework is the orchestration layer for systems that are truly agentic: they pursue a goal across multiple steps, make decisions along the way, use tools, and might coordinate multiple agents.
 
-**Use MAF when the system needs:**
+Use MAF when the system needs:
 
 - Planning or stepwise execution.
 - Routing across tools or specialist agents.
 - Handoffs between agents or humans.
 - Stateful, multi-step workflows that adapt as results come back.
 
-**Important boundary:** Not every AI feature needs MAF. If a direct MEAI call or a simple tool-calling loop solves the problem, use a simpler approach. MAF matters when orchestration complexity is the real challenge, not just model access.
+Not every AI feature needs MAF. If a direct MEAI call or a simple tool-calling loop solves the problem, use a simpler approach. MAF matters when orchestration complexity is the real challenge, not just model access.
 
 For more information, see [Microsoft Agent Framework overview](/agent-framework/overview/agent-framework-overview).
 
-### AI Toolkit
+## AI Toolkit
 
 AI Toolkit is a VS Code extension pack for AI development that speeds up experimentation with models, prompts, agents, and evaluations.
 
-**Use AI Toolkit when teams want:**
+Use AI Toolkit when you want:
 
 - A model catalog and playground inside VS Code.
 - A faster loop for testing prompts and models.
@@ -181,30 +186,30 @@ AI Toolkit is a VS Code extension pack for AI development that speeds up experim
 - A friendlier workflow for experimenting during development.
 - Bulk runs, tracing, or fine-tuning as part of the development loop.
 
-**Important boundary:** AI Toolkit isn't the core runtime architecture for the production app. It complements MEAI, Evaluations, and Foundry Local.
+AI Toolkit isn't the core runtime architecture for the production app. It complements MEAI, Evaluations, and Foundry Local.
 
 For more information, see [AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview).
 
-### Copilot SDK
+## Copilot SDK
 
-Copilot SDK is a pre-built agent harness and runtime that brings tools, context, and automatic tool calling out of the box.
+Copilot SDK is a prebuilt agent harness and runtime that brings tools, context, and automatic tool calling out of the box.
 
 **Use Copilot SDK when:**
 
-- You want more built-in runtime behavior than a blank-slate MEAI app provides.
+- You want more built-in runtime behavior than the blank slate that an MEAI app provides.
 - You want tools and context wired in quickly.
 - Automatic tool calling and agent-harness behavior are more valuable than assembling everything manually.
 - You want a faster path to a working assistant or agent runtime.
 
-**Important boundary:** Copilot SDK is more opinionated and pre-wired than MEAI. If the goal is a fully custom app architecture, direct MEAI or MAF composition can be a better fit.
+Copilot SDK is more opinionated and prewired than MEAI. If the goal is a fully custom app architecture, direct MEAI or MAF composition can be a better fit.
 
 For more information, see the [Copilot SDK repository](https://github.com/github/copilot-sdk).
 
-### Azure AI Foundry
+## Azure AI Foundry
 
 Azure AI Foundry is the managed cloud platform layer for enterprise AI solutions, with two primary functions: model management and hosted agents.
 
-**Use Azure AI Foundry when priorities include:**
+Use Azure AI Foundry when your priorities are:
 
 - Managed model hosting.
 - Hosted agent capabilities with persistent memory and built-in tools.
@@ -214,30 +219,30 @@ Azure AI Foundry is the managed cloud platform layer for enterprise AI solutions
 - Enterprise compliance and operational consistency.
 - Centralized access to models and cloud deployment infrastructure.
 
-**Important boundary:** Azure AI Foundry isn't the app-facing programming abstraction—MEAI still plays that role in .NET code. Azure AI Foundry becomes the right lead when the real question is *where* the model runs and under what controls.
+Azure AI Foundry isn't the app-facing programming abstraction; MEAI still plays that role in .NET code. Azure AI Foundry becomes the right lead when the real question is *where* the model runs and under what controls.
 
 For more information, see the [Azure AI Foundry documentation](/azure/ai-foundry/).
 
-### Foundry Local
+## Foundry Local
 
 Foundry Local is a local development and local-first deployment option for teams that need to keep AI workloads close to the machine or environment.
 
-**Use Foundry Local when:**
+Use Foundry Local when:
 
 - Local development needs better production parity.
 - The organization is local-first or all-local because of privacy, compliance, or data residency requirements.
 - You want the local experience to align somewhat with Azure AI Foundry.
 - Teams need to experiment locally without sending sensitive data to the cloud.
 
-**Important boundary:** Foundry Local is about the development and deployment path, not the higher-level app architecture itself. Local-to-cloud isn't a clean one-to-one move—expect differences in features, hosting model, and operations.
+**Important boundary:** Foundry Local is about the development and deployment path, not the higher-level app architecture itself. Local-to-cloud isn't a clean one-to-one move, so expect differences in features, hosting model, and operations.
 
 For more information, see the [Foundry Local documentation](/azure/foundry-local/).
 
-### Aspire
+## Aspire
 
 Aspire is the orchestration, service-wiring, and observability layer for distributed .NET applications, including AI systems that span multiple services.
 
-**Use Aspire when the solution includes:**
+Use Aspire when the solution includes:
 
 - Separate API, agent, retrieval, and model-facing services.
 - Service discovery and distributed configuration.
@@ -248,17 +253,6 @@ AI systems often stop being "just one app" once retrieval, tools, gateways, and 
 **Important boundary:** Aspire isn't specifically the AI runtime; it's the multi-service application layer around it. It doesn't replace MEAI, MAF, or Azure AI Foundry.
 
 For more information, see the [Aspire documentation](/dotnet/aspire/).
-
-## Common combinations
-
-Most production AI applications combine several components:
-
-- **Chat or summarization app**: MEAI + Evaluations
-- **RAG application**: MEDI + MEVD + MEAI
-- **Multi-agent system**: MEAI + MAF + Aspire
-- **Tool interoperability**: MEAI + MCP Server + MCP Client
-- **Enterprise cloud app**: MEAI + Azure AI Foundry + Aspire
-- **Local-first app**: MEAI + Foundry Local + AI Toolkit (development)
 
 ## Next steps
 

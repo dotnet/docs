@@ -28,6 +28,22 @@ TAP uses a single method to represent the initiation and completion of an asynch
 
  For examples of how the TAP syntax differs from the syntax used in legacy asynchronous programming patterns such as the Asynchronous Programming Model (APM) and the Event-based Asynchronous Pattern (EAP), see [Asynchronous Programming Patterns](index.md).
 
+### FAQ: async behavior, return types, and naming
+
+The `async` keyword doesn't force a method to run asynchronously on another thread. It enables `await`, and the method runs synchronously until it reaches an incomplete awaitable. If no incomplete awaitable is reached, the method can complete synchronously.
+
+For most APIs, prefer these return types:
+
+- Use <xref:System.Threading.Tasks.Task> for asynchronous operations that don't produce a value.
+- Use <xref:System.Threading.Tasks.Task`1> for asynchronous operations that produce a value.
+- Use <xref:System.Threading.Tasks.ValueTask> or <xref:System.Threading.Tasks.ValueTask`1> only when measurements show allocation pressure and when consumers can handle the extra usage constraints.
+
+Keep TAP naming predictable:
+
+- Use the `Async` suffix for methods that return awaitable types.
+- Don't append `Async` to synchronous methods.
+- Keep existing public names stable, and add new TAP overloads instead of renaming established APIs unless you're already making a breaking change.
+
 ## Initiating an asynchronous operation
 
  An asynchronous method that is based on TAP can do a small amount of work synchronously, such as validating arguments and initiating the asynchronous operation, before it returns the resulting task. Synchronous work should be kept to the minimum so the asynchronous method can return quickly. Reasons for a quick return include:
@@ -53,6 +69,8 @@ TAP uses a single method to represent the initiation and completion of an asynch
  The <xref:System.Threading.Tasks.Task> class provides a life cycle for asynchronous operations, and that cycle is represented by the <xref:System.Threading.Tasks.TaskStatus> enumeration. To support corner cases of types that derive from <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1>,  and to support the separation of construction from scheduling, the <xref:System.Threading.Tasks.Task> class exposes a <xref:System.Threading.Tasks.Task.Start*> method. Tasks that are created by the public <xref:System.Threading.Tasks.Task> constructors are referred to as *cold tasks*, because they begin their life cycle in the non-scheduled <xref:System.Threading.Tasks.TaskStatus.Created> state and are scheduled only when <xref:System.Threading.Tasks.Task.Start*> is called on these instances.
 
  All other tasks begin their life cycle in a hot state, which means that the asynchronous operations they represent have already been initiated and their task status is an enumeration value other than <xref:System.Threading.Tasks.TaskStatus.Created?displayProperty=nameWithType>. All tasks that are returned from TAP methods must be activated. **If a TAP method internally uses a task's constructor to instantiate the task to be returned, the TAP method must call <xref:System.Threading.Tasks.Task.Start*> on the <xref:System.Threading.Tasks.Task> object before returning it.** Consumers of a TAP method may safely assume that the returned task is active and shouldn't try to call <xref:System.Threading.Tasks.Task.Start*> on any <xref:System.Threading.Tasks.Task> that is returned from a TAP method. Calling <xref:System.Threading.Tasks.Task.Start*> on an active task results in an <xref:System.InvalidOperationException> exception.
+
+For guidance on fire-and-forget lifetime and ownership concerns after task activation, see [Keeping async methods alive](keeping-async-methods-alive.md).
 
 ## Cancellation (optional)
 

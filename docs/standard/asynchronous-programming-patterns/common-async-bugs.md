@@ -117,5 +117,6 @@ Storing the result in a variable suppresses the warning but doesn't fix the unde
 
 - [Task-based asynchronous pattern (TAP)](task-based-asynchronous-pattern-tap.md)
 - [Async lambda pitfalls](async-lambda-pitfalls.md)
+- [Keeping async methods alive](keeping-async-methods-alive.md)
 - [Asynchronous wrappers for synchronous methods](async-wrappers-for-synchronous-methods.md)
 - [Synchronous wrappers for asynchronous methods](synchronous-wrappers-for-asynchronous-methods.md)

@@ -22,6 +22,14 @@ You can implement the Task-based Asynchronous Pattern (TAP) in three ways: by us
 
 Starting with .NET Framework 4.5, any method that is attributed with the `async` keyword (`Async` in Visual Basic) is considered an asynchronous method, and the C# and Visual Basic compilers perform the necessary transformations to implement the method asynchronously by using TAP. An asynchronous method should return either a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> or a <xref:System.Threading.Tasks.Task`1?displayProperty=nameWithType> object. For the latter, the body of the function should return a `TResult`, and the compiler ensures that this result is made available through the resulting task object. Similarly, any exceptions that go unhandled within the body of the method are marshalled to the output task and cause the resulting task to end in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType> state. The exception to this rule is when an <xref:System.OperationCanceledException> (or derived type) goes unhandled, in which case the resulting task ends in the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.
 
+### FAQ: Task.Start and Task disposal
+
+Use <xref:System.Threading.Tasks.Task.Start*> only for tasks explicitly created with a <xref:System.Threading.Tasks.Task> constructor that are still in the `Created` state. Public TAP methods should return active tasks, so callers shouldn't need to call `Start`.
+
+In most TAP code, don't dispose tasks. A <xref:System.Threading.Tasks.Task> doesn't hold unmanaged resources in the typical case, and disposing every task adds overhead without practical benefit. Dispose only when specific APIs or measurements show a need.
+
+If you start background work that outlives the immediate call path, keep ownership explicit and track completion. For more guidance, see [Keeping async methods alive](keeping-async-methods-alive.md).
+
 ### Generating TAP methods manually
 
 You may implement the TAP pattern manually for better control over implementation. The compiler relies on the public surface area exposed from the <xref:System.Threading.Tasks?displayProperty=nameWithType> namespace and supporting types in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace. To implement the TAP yourself, you create a <xref:System.Threading.Tasks.TaskCompletionSource`1> object, perform the asynchronous operation, and when it completes, call the <xref:System.Threading.Tasks.TaskCompletionSource`1.SetResult*>, <xref:System.Threading.Tasks.TaskCompletionSource`1.SetException*>, or <xref:System.Threading.Tasks.TaskCompletionSource`1.SetCanceled*> method, or the `Try` version of one of these methods. When you implement a TAP method manually, you must complete the resulting task when the represented asynchronous operation completes. For example:

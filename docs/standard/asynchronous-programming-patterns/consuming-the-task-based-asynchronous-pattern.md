@@ -57,6 +57,14 @@ Task.Run(async delegate
 await someTask.ConfigureAwait(continueOnCapturedContext:false);
 ```
 
+### FAQ: Awaitables, ConfigureAwait, and SynchronizationContext
+
+`await` works with awaitable types, not just <xref:System.Threading.Tasks.Task>. A type is awaitable if it provides a compatible `GetAwaiter` pattern. In most public APIs, return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task`1>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask`1>, and use custom awaitables only for specialized scenarios.
+
+Use <xref:System.Threading.Tasks.Task.ConfigureAwait*> when the continuation doesn't need the caller's context. In app code that updates a UI, context capture is often required. In reusable library code, `ConfigureAwait(false)` is usually preferred because it avoids unnecessary context hops and reduces deadlock risk for callers that block.
+
+`ConfigureAwait(false)` changes continuation scheduling, not <xref:System.Threading.ExecutionContext> flow. For a deeper explanation of context behavior, see [ExecutionContext and SynchronizationContext](executioncontext-synchronizationcontext.md).
+
 ## Canceling an Asynchronous Operation
 
 Starting with .NET Framework 4, TAP methods that support cancellation provide at least one overload that accepts a cancellation token (<xref:System.Threading.CancellationToken> object).

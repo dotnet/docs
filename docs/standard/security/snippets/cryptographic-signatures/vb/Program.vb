@@ -14,7 +14,7 @@ Module Program
 
         ' Generate signature
         Using rsa As RSA = RSA.Create()
-            sharedParameters = rsa.ExportParameters(True)
+            sharedParameters = rsa.ExportParameters(False)
             Dim rsaFormatter As New RSAPKCS1SignatureFormatter(rsa)
             rsaFormatter.SetHashAlgorithm(NameOf(SHA256))
 

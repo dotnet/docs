@@ -206,9 +206,9 @@ namespace CryptoWalkThru
             using (var inFs = new FileStream(file.FullName, FileMode.Open))
             {
                 inFs.Seek(0, SeekOrigin.Begin);
-                inFs.Read(LenK, 0, 3);
+                inFs.Read(LenK, 0, 4);
                 inFs.Seek(4, SeekOrigin.Begin);
-                inFs.Read(LenIV, 0, 3);
+                inFs.Read(LenIV, 0, 4);
 
                 // Convert the lengths to integer values.
                 int lenK = BitConverter.ToInt32(LenK, 0);

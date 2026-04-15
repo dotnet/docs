@@ -3,7 +3,7 @@ using System.Text;
 
 using SHA256 alg = SHA256.Create();
 
-byte[] data = Encoding.ASCII.GetBytes("Hello, from the .NET Docs!");
+byte[] data = Encoding.UTF8.GetBytes("Hello, from the .NET Docs!");
 byte[] hash = alg.ComputeHash(data);
 
 RSAParameters sharedParameters;

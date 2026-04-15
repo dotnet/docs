@@ -19,21 +19,21 @@ public class MemoryProtectionSample
             ///////////////////////////////
 
             // Create the original data to be encrypted (The data length should be a multiple of 16).
-            byte[] toEncrypt = UnicodeEncoding.ASCII.GetBytes("ThisIsSomeData16");
+            byte[] toEncrypt = Encoding.ASCII.GetBytes("ThisIsSomeData16");
 
-            Console.WriteLine($"Original data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
+            Console.WriteLine($"Original data: {Encoding.ASCII.GetString(toEncrypt)}");
             Console.WriteLine("Encrypting...");
 
             // Encrypt the data in memory.
             EncryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon);
 
-            Console.WriteLine($"Encrypted data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
+            Console.WriteLine($"Encrypted data: {Encoding.ASCII.GetString(toEncrypt)}");
             Console.WriteLine("Decrypting...");
 
             // Decrypt the data in memory.
             DecryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon);
 
-            Console.WriteLine($"Decrypted data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
+            Console.WriteLine($"Decrypted data: {Encoding.ASCII.GetString(toEncrypt)}");
 
             ///////////////////////////////
             //
@@ -42,7 +42,7 @@ public class MemoryProtectionSample
             ///////////////////////////////
 
             // Create the original data to be encrypted
-            toEncrypt = UnicodeEncoding.ASCII.GetBytes("This is some data of any length.");
+            toEncrypt = Encoding.ASCII.GetBytes("This is some data of any length.");
 
             // Create a file.
             FileStream fStream = new FileStream("Data.dat", FileMode.OpenOrCreate);
@@ -51,7 +51,7 @@ public class MemoryProtectionSample
             byte[] entropy = CreateRandomEntropy();
 
             Console.WriteLine();
-            Console.WriteLine($"Original data: {UnicodeEncoding.ASCII.GetString(toEncrypt)}");
+            Console.WriteLine($"Original data: {Encoding.ASCII.GetString(toEncrypt)}");
             Console.WriteLine("Encrypting and writing to disk...");
 
             // Encrypt a copy of the data to the stream.
@@ -69,7 +69,7 @@ public class MemoryProtectionSample
 
             fStream.Close();
 
-            Console.WriteLine($"Decrypted data: {UnicodeEncoding.ASCII.GetString(decryptData)}");
+            Console.WriteLine($"Decrypted data: {Encoding.ASCII.GetString(decryptData)}");
         }
         catch (Exception e)
         {
@@ -104,9 +104,8 @@ public class MemoryProtectionSample
         // Create a byte array to hold the random value.
         byte[] entropy = new byte[16];
 
-        // Create a new instance of the RNGCryptoServiceProvider.
         // Fill the array with a random value.
-        new RNGCryptoServiceProvider().GetBytes(entropy);
+        RandomNumberGenerator.Fill(entropy);
 
         // Return the array.
         return entropy;

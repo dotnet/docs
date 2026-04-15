@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot modernization overview
-description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and apps to Azure."
+description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and apps."
 titleSuffix: ""
 ms.topic: overview
 ms.date: 04/06/2026
@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # What is GitHub Copilot modernization?
 
-GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and upgrade .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
+GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
 
 Use this agent to:
 

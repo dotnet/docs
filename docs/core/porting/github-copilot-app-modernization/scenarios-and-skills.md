@@ -94,7 +94,6 @@ Skills for upgrading data access layers, including Entity Framework, LINQ to SQL
 | **Upgrading EDMX to Code-First** | Converts EF6 Database-First (`.edmx`) models to EF Core Code-First. Scaffolds entities from the database. |
 | **Upgrading EF DbContext** | Registers `DbContext` in ASP.NET Core dependency injection. Handles both EF6 to EF Core and existing EF Core patterns. |
 | **Upgrading EF6 Code-First to EF Core** | Upgrades EF6 Code-First to EF Core. Swaps packages, updates namespaces, and replaces `EntityTypeConfiguration` and `DbModelBuilder`. |
-| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Upgrades from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns. |
 | **Upgrading to Microsoft.Data.SqlClient** | Upgrades from `System.Data.SqlClient`. Handles the `Encrypt=true` default change and connection string differences. |
 
 ## Upgrade skills: web and ASP.NET

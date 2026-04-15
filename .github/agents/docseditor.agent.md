@@ -180,7 +180,8 @@ When editing, focus on these areas in order of priority:
 - ❌ "Cache the instance for better performance" → ✅ "For better performance, cache the instance"
 - ❌ "Use HTTPS to improve security" → ✅ "To improve security, use HTTPS"
 - ❌ "Install the package to enable the feature" → ✅ "To enable the feature, install the package"
-- Look for ANY sentence that ends with a purpose or reason clause starting with "to", "for", or "so that", move it to the beginning, and add a comma after it
+- When a sentence ends with a clearly identifiable purpose clause, usually a "to ..." or "so that ..." clause, move that clause to the beginning and add a comma after it
+- Preserve the original technical meaning exactly; if moving the clause would change, narrow, or overstate the meaning, leave the sentence as written
 
 **ALWAYS make next steps obvious:**
 - Use clear transitions

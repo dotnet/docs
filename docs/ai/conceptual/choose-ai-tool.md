@@ -57,7 +57,7 @@ Start by identifying your primary challenge:
 
 MEAI gives .NET developers a clean abstraction for model interaction. It fits naturally into dependency injection, configuration, and existing app architectures and is the usual first layer of an AI-enabled .NET application.
 
-**Important boundary:** MEAI alone isn't an agent framework. A one-shot call, chat feature, or tool-call loop can be built with MEAI without becoming "agentic." When the system needs goal-directed, multi-step orchestration, that's where MAF matters.
+**Important boundary:** MEAI alone isn't an agent framework. A one-shot call, chat feature, or tool-call loop can be built with MEAI without becoming "agentic." When the system needs goal-directed, multi-step orchestration, use [MAF](#microsoft-agent-framework-maf) instead.
 
 **Don't lead with MEAI alone when:**
 
@@ -100,7 +100,7 @@ For more information, see [Microsoft.Extensions.AI.Evaluation libraries](../eval
 
 Many AI apps fail before retrieval because data is messy, oversized, or poorly structured. Ingestion quality strongly affects downstream answer quality.
 
-**Important boundary:** MEDI is not the retrieval layer—it comes *before* retrieval. It prepares and shapes the data that MEVD or another store later queries.
+**Important boundary:** MEDI isn't the retrieval layer—it comes *before* retrieval. It prepares and shapes the data that MEVD or another store later queries.
 
 **Don't lead with MEDI when:**
 
@@ -122,7 +122,7 @@ For more information, see [Data ingestion for AI apps](data-ingestion.md).
 
 MEVD gives .NET applications a consistent way to work with vector stores and helps separate vector storage and retrieval concerns from model invocation concerns.
 
-**Important boundary:** MEVD isn't the model layer or the ingestion layer. MEDI prepares the data, MEVD stores and retrieves the data, and MEAI uses that retrieved context with the model.
+**Important boundary:** MEVD isn't the model layer or the ingestion layer. MEDI prepares the data. MEVD stores and retrieves the data. MEAI uses that retrieved context with the model.
 
 For more information, see [Vector stores overview](../vector-stores/overview.md).
 
@@ -138,7 +138,7 @@ An MCP Server exposes capabilities—tools, resources, or prompts—over the Mod
 
 An MCP Server turns app capabilities into reusable AI-facing endpoints. It reduces duplicated tool integration work across assistants and creates a cleaner boundary between capability providers and capability consumers.
 
-**Important boundary:** An MCP Server is about *publishing* capabilities. If the capability only needs to be used inside one app, ordinary in-process function calling is simpler.
+**Important boundary:** An MCP Server is about *publishing* capabilities. If the capability is used only inside one app, ordinary in-process function calling is simpler.
 
 ### MCP Client
 
@@ -165,7 +165,7 @@ Microsoft Agent Framework is the orchestration layer for systems that are truly 
 - Handoffs between agents or humans.
 - Stateful, multi-step workflows that adapt as results come back.
 
-**Important boundary:** Not every AI feature needs MAF. If a direct MEAI call or a simple tool-calling loop solves the problem, stay simpler. MAF matters when orchestration complexity is the real challenge, not just model access.
+**Important boundary:** Not every AI feature needs MAF. If a direct MEAI call or a simple tool-calling loop solves the problem, use a simpler approach. MAF matters when orchestration complexity is the real challenge, not just model access.
 
 For more information, see [Microsoft Agent Framework overview](/agent-framework/overview/agent-framework-overview).
 
@@ -194,7 +194,7 @@ Copilot SDK is a pre-built agent harness and runtime that brings tools, context,
 - Automatic tool calling and agent-harness behavior are more valuable than assembling everything manually.
 - You want a faster path to a working assistant or agent runtime.
 
-**Important boundary:** Copilot SDK is more opinionated and pre-wired than MEAI. If the goal is a fully custom app architecture, direct MEAI or MAF composition might be a better fit.
+**Important boundary:** Copilot SDK is more opinionated and pre-wired than MEAI. If the goal is a fully custom app architecture, direct MEAI or MAF composition can be a better fit.
 
 ### Azure AI Foundry
 
@@ -210,7 +210,7 @@ Azure AI Foundry is the managed cloud platform layer for enterprise AI solutions
 - Enterprise compliance and operational consistency.
 - Centralized access to models and cloud deployment infrastructure.
 
-**Important boundary:** Azure AI Foundry isn't the app-facing programming abstraction—MEAI still plays that role in .NET code. Azure AI Foundry becomes the right lead when the real question is *where* and under what controls the model runs.
+**Important boundary:** Azure AI Foundry isn't the app-facing programming abstraction—MEAI still plays that role in .NET code. Azure AI Foundry becomes the right lead when the real question is *where* the model runs and under what controls.
 
 For more information, see the [Azure AI Foundry documentation](/azure/ai-foundry/).
 
@@ -225,7 +225,7 @@ Foundry Local is a local development and local-first deployment option for teams
 - You want the local experience to align somewhat with Azure AI Foundry.
 - Teams need to experiment locally without sending sensitive data to the cloud.
 
-**Important boundary:** Foundry Local is about the development and deployment path, not the higher-level app architecture itself. Local-to-cloud is not a clean one-to-one move—expect differences in features, hosting model, and operations.
+**Important boundary:** Foundry Local is about the development and deployment path, not the higher-level app architecture itself. Local-to-cloud isn't a clean one-to-one move—expect differences in features, hosting model, and operations.
 
 ### Aspire
 

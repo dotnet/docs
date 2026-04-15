@@ -19,6 +19,9 @@ Symmetric encryption and asymmetric encryption are performed using different pro
 
 ## Symmetric encryption
 
+> [!IMPORTANT]
+> The `Aes.Create()` method defaults to CBC mode without built-in authentication. CBC mode without integrity verification is vulnerable to padding oracle attacks. For production scenarios, use authenticated encryption such as <xref:System.Security.Cryptography.AesGcm> where available, or apply an Encrypt-then-MAC pattern using <xref:System.Security.Cryptography.HMACSHA256>. For more information, see [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md).
+
 The managed symmetric cryptography classes are used with a special stream class called a <xref:System.Security.Cryptography.CryptoStream> that encrypts data read into the stream. The **CryptoStream** class is initialized with a managed stream class, a class that implements the <xref:System.Security.Cryptography.ICryptoTransform> interface (created from a class that implements a cryptographic algorithm), and a <xref:System.Security.Cryptography.CryptoStreamMode> enumeration that describes the type of access permitted to the **CryptoStream**. The **CryptoStream** class can be initialized using any class that derives from the <xref:System.IO.Stream> class, including <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, and <xref:System.Net.Sockets.NetworkStream>. Using these classes, you can perform symmetric encryption on a variety of stream objects.
 
 The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform encryption on a **CryptoStream** class. In this example, the **CryptoStream** is initialized with a stream object called `fileStream` that can be any type of managed stream. The **CreateEncryptor** method from the **Aes** class is passed the key and IV that are used for encryption. In this case, the default key and IV generated from `aes` are used.
@@ -42,13 +45,14 @@ The following example shows the entire process of creating a stream, encrypting 
 :::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs":::
 :::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb":::
 
-The code encrypts the stream using the AES symmetric algorithm, and writes IV and then encrypted "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the following text to the console:
+The code encrypts the stream using the AES symmetric algorithm, and writes IV and then encrypted "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the key in hexadecimal:
 
 ```console
 The file was encrypted.
+Key (hex): 1A2B3C...
 ```
 
-You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md). That example and this example specify the same key.
+You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md), passing the hex key as a command-line argument.
 
 However, if an exception is raised, the code displays the following text to the console:
 

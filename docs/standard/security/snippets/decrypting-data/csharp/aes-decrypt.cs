@@ -18,11 +18,10 @@ try
                 numBytesToRead -= n;
             }
 
-            byte[] key =
-            {
-                0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
-                0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
-            };
+            // The key must match the key used during encryption.
+            // In production, retrieve the key from a secure key management
+            // system rather than hardcoding it in source code.
+            byte[] key = Convert.FromHexString(args[0]);
 
             using (CryptoStream cryptoStream = new(
                fileStream,

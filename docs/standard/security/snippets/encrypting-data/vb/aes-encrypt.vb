@@ -5,20 +5,19 @@ Imports System.Security.Cryptography
 Module Module1
     Sub Main()
         Try
+            Dim keyHex As String
+
             ' Create a file stream
             Using fileStream As New FileStream("TestData.txt", FileMode.OpenOrCreate)
 
                 ' Create a new instance of the default Aes implementation class  
                 ' and configure encryption key.
                 Using aes As Aes = Aes.Create()
-                    'Encryption key used to encrypt the stream.
-                    'The same value must be used to encrypt and decrypt the stream.
-                    Dim key As Byte() = {
-                        &H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8,
-                        &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16
-                    }
-
-                    aes.Key = key
+                    ' Generate a cryptographically secure random key.
+                    ' In production, use a key management system or derive from a
+                    ' password using Rfc2898DeriveBytes.Pbkdf2 with a high iteration count.
+                    aes.GenerateKey()
+                    keyHex = Convert.ToHexString(aes.Key)
 
                     ' Stores IV at the beginning of the file.
                     ' This information will be used for decryption.
@@ -41,11 +40,9 @@ Module Module1
                 End Using
             End Using
 
-            'Inform the user that the message was written  
-            'to the stream.  
             Console.WriteLine("The text was encrypted.")
+            Console.WriteLine($"Key (hex): {keyHex}")
         Catch
-            'Inform the user that an exception was raised.  
             Console.WriteLine("The encryption failed.")
             Throw
         End Try

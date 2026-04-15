@@ -46,6 +46,26 @@ order.Status = "Ready";
 Console.WriteLine(order);
 // </ClassDemo>
 
+// <InheritanceDemo>
+Console.WriteLine("\n=== Inheritance: CateringOrder ===");
+var catering = new CateringOrder(minimumGuests: 20);
+catering.AddItem("Coffee (serves 20)", 45.00m);
+catering.AddItem("Pastry platter", 60.00m);
+
+try
+{
+    catering.Status = "Ready";
+}
+catch (InvalidOperationException ex)
+{
+    Console.WriteLine($"Blocked: {ex.Message}");
+}
+
+catering.Approve("Sam");
+catering.Status = "Ready";
+Console.WriteLine(catering);
+// </InheritanceDemo>
+
 // <InterfaceDemo>
 static decimal Checkout(decimal total, IDiscountPolicy policy) => policy.Apply(total);
 
@@ -82,7 +102,7 @@ record struct Measurement(double Value, string Unit);
 // <Order>
 class Order
 {
-    public string Status { get; set; } = "Pending";
+    public virtual string Status { get; set; } = "Pending";
     private readonly List<(string Name, decimal Price)> _items = [];
 
     public void AddItem(string name, decimal price) => _items.Add((name, price));
@@ -93,6 +113,33 @@ class Order
         $"Order [{Status}]: {string.Join(", ", _items.Select(i => i.Name))} - Total: {Total:F2}";
 }
 // </Order>
+
+// <CateringOrder>
+class CateringOrder : Order
+{
+    public int MinimumGuests { get; }
+    public string? ApprovedBy { get; private set; }
+
+    public CateringOrder(int minimumGuests) => MinimumGuests = minimumGuests;
+
+    public void Approve(string manager) => ApprovedBy = manager;
+
+    public override string Status
+    {
+        get => base.Status;
+        set
+        {
+            if (value == "Ready" && ApprovedBy is null)
+                throw new InvalidOperationException(
+                    "A catering order requires manager approval before it can be marked ready.");
+            base.Status = value;
+        }
+    }
+
+    public override string ToString() =>
+        $"Catering [{Status}] for {MinimumGuests}+ guests, approved by: {ApprovedBy ?? "(none)"} - Total: {Total:F2}";
+}
+// </CateringOrder>
 
 // <Interfaces>
 interface IDiscountPolicy

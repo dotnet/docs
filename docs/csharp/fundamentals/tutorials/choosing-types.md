@@ -105,6 +105,28 @@ The `Order` class tracks items, computes a running total, and exposes a settable
 
 For more detail, see [Classes, structs, and records](../types/classes.md).
 
+## Extend a class with inheritance
+
+Because `Order` is a class, you can derive from it to add state, behavior, or stricter rules. A `CateringOrder` adds a guest count, requires manager approval before the order can be marked ready, and overrides `ToString()` to include the extra details.
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="CateringOrder":::
+
+`CateringOrder` reuses `AddItem` and `Total` from the base class. The `Status` override tightens the contract—calling `Status = "Ready"` without prior approval throws an exception:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="InheritanceDemo":::
+
+This pattern illustrates three inheritance concepts in one type:
+
+- **Added state**: `MinimumGuests` and `ApprovedBy` exist only on the derived class.
+- **Added behavior**: `Approve` is new—base `Order` doesn't know about approvals.
+- **Overridden behavior**: the `Status` setter enforces a business rule that the base class doesn't have.
+
+**When to derive from a class:**
+
+- The new type *is a* specialized version of the base type.
+- You need to reuse existing state and behavior while adding or tightening rules.
+- A shared base class is more natural than an interface because the types share implementation, not just a contract.
+
 ## Use an interface to define shared capabilities
 
 An **interface** declares a contract—a set of members that any implementing type must provide. Use an interface when unrelated types need to share a capability, or when you want to swap implementations at run time.
@@ -133,6 +155,7 @@ Use this table as a starting point when you aren't sure which type to pick:
 | Immutable data where equality is by values? | Record class |
 | Small, copyable value data with equality? | Record struct |
 | Mutable state, behavior, or reference identity? | Class |
+| Specialized version of an existing class? | Derived class |
 | Shared capability across unrelated types? | Interface |
 
 If none of these fit neatly, consider combining types. For example, a class can implement an interface, and a record can be a struct. For the full comparison, see [Choose which kind of type](../types/index.md#choose-which-kind-of-type).

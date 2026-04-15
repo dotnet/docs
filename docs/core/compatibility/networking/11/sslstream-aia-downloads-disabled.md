@@ -55,7 +55,8 @@ Choose one of the following options:
     ```csharp
     var chainPolicy = new X509ChainPolicy
     {
-        // Disable AIA downloads (the default in .NET 11)
+        // Disable AIA downloads (SslStream sets this to true on its internal policy by default in .NET 11;
+        // when you supply a custom X509ChainPolicy, set it explicitly to match that behavior)
         DisableCertificateDownloads = true,
 
         // Add any necessary intermediate certificates

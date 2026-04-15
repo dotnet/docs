@@ -31,14 +31,14 @@ The following table summarizes when to reach for each component:
 
 ## How to decide
 
-Start by identifying your primary challenge:
-
-- **Adding AI behavior to an app** → Start with [MEAI](#microsoftextensionsai-meai). Add [Evaluations](#evaluations) once you have something worth measuring.
-- **Working with your own data** → If you need to read, chunk, or enrich content first, start with [MEDI](#microsoftextensionsdataingestion-medi). Then use [MEVD](#microsoftextensionsvectordata-mevd) for vector storage and retrieval.
-- **Sharing or consuming capabilities across AI clients** → Build an [MCP Server](#mcp-server) to publish capabilities, or use an [MCP Client](#mcp-client) to consume them.
-- **Building a truly agentic system** → If you want a ready-made harness, use the [Copilot SDK](#copilot-sdk). For multi-step goal pursuit, routing, or handoffs, use [MAF](#microsoft-agent-framework-maf).
-- **Choosing a hosting or execution model** → Use [Azure AI Foundry](#azure-ai-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) when the solution is a distributed multi-service system.
-- **Improving the developer workflow** → Use [AI Toolkit](#ai-toolkit).
+| If your primary challenge is... | Start with... |
+|---------------------------------|---------------|
+| **Adding AI behavior to an app** | [MEAI](#microsoftextensionsai-meai). Add [Evaluations](#evaluations) once you have something worth measuring. |
+| **Working with your own data** | [MEDI](#microsoftextensionsdataingestion-medi) to read, chunk, or enrich content. Then use [MEVD](#microsoftextensionsvectordata-mevd) for vector storage and retrieval. |
+| **Sharing or consuming capabilities across AI clients** | An [MCP Server](#mcp-server) to publish capabilities, or an [MCP Client](#mcp-client) to consume them. |
+| **Building a truly agentic system** | [Copilot SDK](#copilot-sdk) for a ready-made harness, or [MAF](#microsoft-agent-framework-maf) for multi-step goal pursuit, routing, or handoffs. |
+| **Choosing a hosting or execution model** | [Azure AI Foundry](#azure-ai-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) for distributed multi-service systems. |
+| **Improving the developer workflow** | [AI Toolkit](#ai-toolkit) |
 
 ## Component guidance
 
@@ -198,6 +198,8 @@ Copilot SDK is a pre-built agent harness and runtime that brings tools, context,
 
 **Important boundary:** Copilot SDK is more opinionated and pre-wired than MEAI. If the goal is a fully custom app architecture, direct MEAI or MAF composition can be a better fit.
 
+For more information, see the [Copilot SDK repository](https://github.com/github/copilot-sdk).
+
 ### Azure AI Foundry
 
 Azure AI Foundry is the managed cloud platform layer for enterprise AI solutions, with two primary functions: model management and hosted agents.
@@ -228,6 +230,8 @@ Foundry Local is a local development and local-first deployment option for teams
 - Teams need to experiment locally without sending sensitive data to the cloud.
 
 **Important boundary:** Foundry Local is about the development and deployment path, not the higher-level app architecture itself. Local-to-cloud isn't a clean one-to-one move—expect differences in features, hosting model, and operations.
+
+For more information, see the [Foundry Local documentation](/azure/foundry-local/).
 
 ### Aspire
 

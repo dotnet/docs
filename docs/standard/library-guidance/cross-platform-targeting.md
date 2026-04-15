@@ -74,6 +74,7 @@ For example, a NuGet package that multi-targets `netstandard2.0` and `net8.0` co
 public static class GpsLocation
 {
     // This project uses multi-targeting to expose device-specific APIs to .NET Standard.
+    // The WINDOWS symbol is defined only when targeting an OS-specific TFM, for example, net8.0-windows.
     public static async Task<(double latitude, double longitude)> GetCoordinatesAsync()
     {
 #if NET462

@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: CRC32 validation added when reading ZIP archive entries
+                href: core-libraries/11/ziparchive-entry-crc32-validation.md
               - name: DateOnly and TimeOnly TryParse methods throw for invalid input
                 href: core-libraries/11/dateonly-timeonly-tryparse-argumentexception.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload

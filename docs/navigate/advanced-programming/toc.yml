@@ -24,6 +24,10 @@ items:
       href: ../../standard/asynchronous-programming-patterns/executioncontext-synchronizationcontext.md
     - name: SynchronizationContext and console apps
       href: ../../standard/asynchronous-programming-patterns/synchronizationcontext-console-apps.md
+    - name: Cancel non-cancelable async operations
+      href: ../../standard/asynchronous-programming-patterns/cancel-non-cancelable-async-operations.md
+    - name: Coalesce cancellation tokens from timeouts
+      href: ../../standard/asynchronous-programming-patterns/coalesce-cancellation-tokens-from-timeouts.md
     - name: Best practices and troubleshooting
       items:
       - name: Common async/await bugs

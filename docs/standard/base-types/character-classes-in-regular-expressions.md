@@ -162,13 +162,15 @@ The period character (.) matches any character except `\n` (the newline characte
 
 - If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](regular-expression-options.md).
 
+- Starting with .NET 11, if the <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> option is specified, `.` excludes all common newline sequences instead of only `\n`. If both `Singleline` and `AnyNewLine` are specified, `Singleline` takes precedence and `.` matches every character. For more information, see [AnyNewLine mode](regular-expression-options.md#anynewline-mode).
+
   The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r`, but it doesn't match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.
 
   :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="AnyCharacterMultiline":::
   :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="AnyCharacterMultiline":::
 
 > [!NOTE]
-> Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character).
+> By default, because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character). With <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>, `.` excludes `\r` and other newline sequences as well.
 
 - In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this article. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.
 

@@ -30,6 +30,7 @@ By default, the comparison of an input string with any literal characters in a r
 | <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript> | Not available | Enable ECMAScript-compliant behavior for the expression. | [ECMAScript matching behavior](#ecmascript-matching-behavior) |
 | <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant> | Not available | Ignore cultural differences in language. | [Comparison using the invariant culture](#compare-using-the-invariant-culture) |
 | <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking> | Not available | Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)| [Nonbacktracking mode](#nonbacktracking-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine> | Not available | Make `^`, `$`, `\Z`, and `.` recognize all common newline sequences instead of only `\n`. (Available in .NET 11 and later versions.) | [AnyNewLine mode](#anynewline-mode) |
 
 ## Specify options
 
@@ -75,7 +76,7 @@ The following five regular expression options can be set both with the options p
 
 - <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType>
 
-The following five regular expression options can be set using the `options` parameter but cannot be set inline:
+The following seven regular expression options can be set using the `options` parameter but cannot be set inline:
 
 - <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>
 
@@ -86,6 +87,10 @@ The following five regular expression options can be set using the `options` par
 - <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=nameWithType>
 
 - <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>
+
+- <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType>
+
+- <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>
 
 ## Determine options
 
@@ -149,6 +154,9 @@ The <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=
 By default, `$` will be satisfied only at the end of the input string. If you specify the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option, it will be satisfied by either the newline character (`\n`) or the end of the input string.
 
 In neither case does `$` recognize the carriage return/line feed character combination (`\r\n`). `$` always ignores any carriage return (`\r`). To end your match with either `\r\n` or `\n`, use the subexpression `\r?$` instead of just `$`. Note that this will make the `\r` part of the match.
+
+> [!TIP]
+> Starting with .NET 11, you can use <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> to make `^`, `$`, `\Z`, and `.` recognize all common newline sequences instead of only `\n`, removing the need for `\r?` workarounds. `AnyNewLine` also treats `\r\n` as an atomic newline sequence, so `\r` is never included in the match. For more information, see the [AnyNewLine mode](#anynewline-mode) section.
 
 The following example extracts bowlers' names and scores and adds them to a <xref:System.Collections.Generic.SortedList`2> collection that sorts them in descending order. The <xref:System.Text.RegularExpressions.Regex.Matches*> method is called twice. In the first method call, the regular expression is `^(\w+)\s(\d+)$` and no options are set. As the output shows, because the regular expression engine cannot match the input pattern along with the beginning and end of the input string, no matches are found. In the second method call, the regular expression is changed to `^(\w+)\s(\d+)\r?$` and the options are set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>. As the output shows, the names and scores are successfully matched, and the scores are displayed in descending order.
 
@@ -392,7 +400,7 @@ The following example is identical to the previous example, except that the stat
 
 By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option, which was introduced in .NET 7, doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
 
-The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
+The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>, or <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
 
 - Atomic groups
 - Backreferences
@@ -404,6 +412,44 @@ The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayPro
 <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> also has a subtle difference with regards to execution. If a capture group is in a loop, most (non-.NET) regex engines only provide the last matched value for that capture. However, .NET's regex engine tracks all values that are captured inside a loop and provides access to them. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option is like most other regex implementations and only supports providing the final capture.
 
 For more information about backtracking, see [Backtracking in regular expressions](backtracking-in-regular-expressions.md).
+
+## AnyNewLine mode
+
+By default, .NET's regular expression engine treats only `\n` as a newline character. The anchors `^` and `$` (in <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> mode), `\Z`, and the wildcard `.` all use `\n` as the sole line boundary. This means that `$` doesn't match before `\r\n` (Windows-style line endings), and `.` matches `\r` but not `\n` (unless <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> is enabled, in which case `.` matches all characters), which leads to common bugs when processing text with mixed or non-Unix line endings.
+
+The <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> option, which was introduced in .NET 11, makes these constructs recognize all common newline sequences: `\r\n` (CR+LF), `\r` (CR), `\n` (LF), `\u0085` (NEL), `\u2028` (LS), and `\u2029` (PS). This is consistent with [Unicode TR18 RL1.6](https://unicode.org/reports/tr18/#RL1.6).
+
+For example, without `AnyNewLine`, matching lines in a string with Windows line endings requires manual workarounds like `\r?$`:
+
+```csharp
+// BUG: .+$ captures trailing \r on Windows line endings
+var match = Regex.Match("foo\r\nbar", @".+$", RegexOptions.Multiline);
+Console.WriteLine(match.Value); // "foo\r" -- not "foo"!
+```
+
+With `AnyNewLine`, the anchors handle all newline types automatically:
+
+```csharp
+var match = Regex.Match("foo\r\nbar", @".+$",
+    RegexOptions.Multiline | RegexOptions.AnyNewLine);
+Console.WriteLine(match.Value); // "foo"
+```
+
+The following table summarizes how `AnyNewLine` affects each construct:
+
+| Construct            | Default behavior                     | With `AnyNewLine`                                                     |
+|----------------------|--------------------------------------|-----------------------------------------------------------------------|
+| `.` (default)        | Matches any character except `\n`    | Matches any character except `\r`, `\n`, `\u0085`, `\u2028`, `\u2029` |
+| `$` (Multiline)      | Matches before `\n`                  | Matches before `\r\n`, `\r`, `\n`, `\u0085`, `\u2028`, `\u2029`       |
+| `^` (Multiline)      | Matches after `\n`                   | Matches after `\r\n`, `\r`, `\n`, `\u0085`, `\u2028`, `\u2029`        |
+| `$` (default) / `\Z` | Matches before `\n` at end of string | Matches before any newline sequence at end of string                  |
+
+Key design points:
+
+- **`\r\n` is treated atomically**: `$` matches before the full `\r\n` sequence, never between `\r` and `\n`.
+- **`Singleline` takes precedence**: `.` with both `Singleline` and `AnyNewLine` matches every character (including newlines), consistent with `Singleline`'s existing behavior.
+- **`\A` and `\z` are unaffected**: Absolute start-of-string and end-of-string anchors don't change.
+- **Incompatible options**: `AnyNewLine` cannot be combined with <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. Attempting to do so throws an <xref:System.ArgumentOutOfRangeException>.
 
 ## See also
 

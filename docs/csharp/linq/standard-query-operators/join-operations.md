@@ -173,7 +173,7 @@ The equivalent query using method syntax is shown in the following code:
 
 - <xref:System.Linq.Enumerable.Join*>
 - <xref:System.Linq.Enumerable.GroupJoin*>
-- [Anonymous types](../../fundamentals/types/anonymous-types.md)
+- [Anonymous types](../../programming-guide/classes-and-structs/anonymous-types.md)
 - [Formulate Joins and Cross-Product Queries](../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
 - [join clause](../../language-reference/keywords/join-clause.md)
 - [group clause](../../language-reference/keywords/group-clause.md)

@@ -16,6 +16,20 @@ items:
       href: ../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md
     - name: Interop with other asynchronous patterns and types
       href: ../../standard/asynchronous-programming-patterns/interop-with-other-asynchronous-patterns-and-types.md
+    - name: Asynchronous wrappers for synchronous methods
+      href: ../../standard/asynchronous-programming-patterns/async-wrappers-for-synchronous-methods.md
+    - name: Synchronous wrappers for asynchronous methods
+      href: ../../standard/asynchronous-programming-patterns/synchronous-wrappers-for-asynchronous-methods.md
+    - name: ExecutionContext and SynchronizationContext
+      href: ../../standard/asynchronous-programming-patterns/executioncontext-synchronizationcontext.md
+    - name: SynchronizationContext and console apps
+      href: ../../standard/asynchronous-programming-patterns/synchronizationcontext-console-apps.md
+    - name: Best practices and troubleshooting
+      items:
+      - name: Common async/await bugs
+        href: ../../standard/asynchronous-programming-patterns/common-async-bugs.md
+      - name: Async lambda pitfalls
+        href: ../../standard/asynchronous-programming-patterns/async-lambda-pitfalls.md
   - name: Event-based asynchronous pattern (EAP)
     items:
     - name: Documentation overview

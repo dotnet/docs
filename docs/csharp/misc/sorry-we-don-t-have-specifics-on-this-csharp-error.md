@@ -110,7 +110,6 @@ f1_keywords:
   - "CS7089"
   - "CS7090"
   - "CS7091"
-  - "CS7092"
   - "CS7093"
   - "CS7094"
   - "CS7095"
@@ -353,14 +352,6 @@ f1_keywords:
   - "CS9351"
   - "CS9352"
   - "CS9353"
-# Unions
-  - "CS9369"
-  - "CS9370"
-  - "CS9371"
-  - "CS9372"
-  - "CS9373"
-  - "CS9374"
-  - "CS9375"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

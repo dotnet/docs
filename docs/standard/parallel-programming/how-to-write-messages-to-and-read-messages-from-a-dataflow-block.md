@@ -13,7 +13,7 @@ ms.assetid: 1a9bf078-aa82-46eb-b95a-f87237f028c5
 
 # How to: Write and read messages from a Dataflow block
 
-This article describes how to use the Task Parallel Library (TPL) Dataflow Library to write messages to and read messages from a dataflow block. The TPL Dataflow Library provides both synchronous and asynchronous methods for writing messages to and reading messages from a dataflow block. This article shows how to uses the <xref:System.Threading.Tasks.Dataflow.BufferBlock`1?displayProperty=nameWithType> class. The <xref:System.Threading.Tasks.Dataflow.BufferBlock`1> class buffers messages and behaves as both a message source and a message target.
+This article describes how to use the Task Parallel Library (TPL) Dataflow Library to write messages to and read messages from a dataflow block. The TPL Dataflow Library provides both synchronous and asynchronous methods for writing messages to and reading messages from a dataflow block. This article shows how to use the <xref:System.Threading.Tasks.Dataflow.BufferBlock`1?displayProperty=nameWithType> class. The <xref:System.Threading.Tasks.Dataflow.BufferBlock`1> class buffers messages and behaves as both a message source and a message target.
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 

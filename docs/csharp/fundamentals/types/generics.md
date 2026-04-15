@@ -1,52 +1,110 @@
 ---
-title: "Generic classes and methods"
-description: Learn about generics. Generic types maximize code reuse, type safety, and performance, and are commonly used to create collection classes.
-ms.date: 10/10/2025
-f1_keywords:
-  - "generics_CSharpKeyword"
-helpviewer_keywords:
-  - "C# language, generics"
-  - "generics [C#]"
+title: "Generic types and methods"
+description: Learn how to use generic types and methods in C#, including consuming common generic collections, type inference, constraints, collection expressions, dictionary expressions, and covariance and contravariance.
+ms.date: 04/10/2026
+ms.topic: concept-article
+ai-usage: ai-assisted
 ---
-# Generic classes and methods
+# Generic types and methods
 
-Generics introduces the concept of type parameters to .NET. Generics make it possible to design classes and methods that defer the specification of one or more type parameters until you use the class or method in your code. For example, by using a generic type parameter `T`, you can write a single class that other client code can use without incurring the cost or risk of runtime casts or boxing operations, as shown here:
+> [!TIP]
+> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter generics as soon as you use collections like `List<T>`.
+>
+> **Experienced in another language?** C# generics are similar to generics in Java or templates in C++, but with full runtime type information and no type erasure. Skim the [collection expressions](#collection-expressions) and [covariance and contravariance](#covariance-and-contravariance) sections for C#-specific patterns.
 
-:::code language="csharp" source="snippets/generics/Program.cs" ID="Snippet1":::
+*Generics* let you write code that works with any type while keeping full type safety. Instead of writing separate classes or methods for `int`, `string`, and every other type you need, write one version with one or more *type parameters* (such as `T`, or `TKey` and `TValue`) and specify the actual types when you use it. The compiler checks types at compile time, so you don't need runtime casts or risk `InvalidCastException`.
 
-Generic classes and methods combine reusability, type safety, and efficiency in a way that their nongeneric counterparts can't. Generic type parameters are replaced with the type arguments during compilation. In the preceding example, the compiler replaces `T` with `int`. Generics are most frequently used with collections and the methods that operate on them. The <xref:System.Collections.Generic> namespace contains several generic-based collection classes. The nongeneric collections, such as <xref:System.Collections.ArrayList> aren't recommended and are maintained only for compatibility purposes. For more information, see [Generics in .NET](../../../standard/generics/index.md).
+You encounter generics constantly in everyday C#. Collections, async return types, delegates, and LINQ all rely on generic types:
 
-You can also create custom generic types and methods to provide your own generalized solutions and design patterns that are type-safe and efficient. The following code example shows a simple generic linked-list class for demonstration purposes. (In most cases, you should use the <xref:System.Collections.Generic.List`1> class provided by .NET instead of creating your own.) The type parameter `T` is used in several locations where a concrete type would ordinarily be used to indicate the type of the item stored in the list:
+:::code language="csharp" source="snippets/generics/Program.cs" ID="EverydayGenerics":::
 
-- As the type of a method parameter in the `AddHead` method.
-- As the return type of the `Data` property in the nested `Node` class.
-- As the type of the private member `data` in the nested class.
+In each case, the type argument in angle brackets (`<int>`, `<string>`, `<Product>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety. You can't accidentally add a `string` to a `List<int>`.
 
-`T` is available to the nested `Node` class. When `GenericList<T>` is instantiated with a concrete type, for example as a `GenericList<int>`, each occurrence of `T` is replaced with `int`.
+## Consuming generic types
 
-:::code language="csharp" source="snippets/generics/Program.cs" ID="Snippet2":::
+More often, you *consume* generic types from the .NET class library rather than creating your own. The following sections show the most common generic types you'll use.
 
-The following code example shows how client code uses the generic `GenericList<T>` class to create a list of integers. If you change the type argument, the following code creates lists of strings or any other custom type:
+### Generic collections
 
-:::code language="csharp" source="snippets/generics/Program.cs" ID="Snippet3":::
+The <xref:System.Collections.Generic> namespace provides type-safe collection classes. Always use these collections instead of nongeneric collections like <xref:System.Collections.ArrayList>:
 
-> [!NOTE]
-> Generic types aren't limited to classes. The preceding examples use `class` types, but you can define generic `interface` and `struct` types, including `record` types.
+:::code language="csharp" source="snippets/generics/Program.cs" ID="GenericCollections":::
 
-## Generics overview
+Generic collections prevent type errors at runtime because the errors surface at compile time instead. These collections also avoid boxing for value types, which improves performance.
 
-- Use generic types to maximize code reuse, type safety, and performance.
-- The most common use of generics is to create collection classes.
-- The .NET class library contains several generic collection classes in the <xref:System.Collections.Generic> namespace. The generic collections should be used whenever possible instead of classes such as <xref:System.Collections.ArrayList> in the <xref:System.Collections> namespace.
-- You can create your own generic interfaces, classes, methods, events, and delegates.
-- Generic classes can be constrained to enable access to methods on particular data types.
-- You can obtain information at run time on the types that are used in a generic data type by using reflection.
+### Generic methods
 
-## C# language specification
+A generic method declares its own type parameter. The compiler often *infers* the type argument from the values you pass, so you don't need to specify it explicitly:
 
-For more information, see the [C# Language Specification](~/_csharpstandard/standard/types.md#84-constructed-types).
+:::code language="csharp" source="snippets/generics/Program.cs" ID="GenericMethods":::
+
+In the call `Print(42)`, the compiler infers `T` as `int` from the argument. You can write `Print<int>(42)` explicitly, but type inference keeps the code cleaner.
+
+## Collection expressions
+
+Collection expressions (C# 12) provide a concise syntax for creating collections. Use square brackets instead of constructor calls or initializer syntax:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="CollectionExpressions":::
+
+The *spread operator* (`..`) inlines the elements of one collection into another, which is useful for combining sequences:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="SpreadOperator":::
+
+Collection expressions work with arrays, `List<T>`, `Span<T>`, `ImmutableArray<T>`, and any type that supports the collection builder pattern. For the complete syntax reference, see [Collection expressions](../../language-reference/operators/collection-expressions.md).
+
+## Dictionary initialization
+
+You can initialize dictionaries concisely with indexer initializers. This syntax uses square brackets to set key-value pairs:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="DictionaryExpressions":::
+
+You can merge dictionaries by copying one and applying overrides:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="DictionarySpread":::
+
+## Type constraints
+
+*Constraints* restrict which type arguments a generic type or method accepts. Constraints let you call methods or access properties on the type parameter that wouldn't be available on `object` alone:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="BasicConstraints":::
+
+The most common constraints are:
+
+| Constraint | Meaning |
+|---|---|
+| `where T : class` | `T` must be a reference type |
+| `where T : struct` | `T` must be a non-nullable value type |
+| `where T : new()` | `T` must have a public parameterless constructor |
+| `where T : BaseClass` | `T` must derive from `BaseClass` |
+| `where T : IInterface` | `T` must implement `IInterface` |
+
+You can combine constraints: `where T : class, IComparable<T>, new()`. Less common constraints include `where T : System.Enum`, `where T : System.Delegate`, and `where T : unmanaged` for specialized scenarios. For the complete list, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
+
+## Covariance and contravariance
+
+*Covariance* and *contravariance* describe how generic types behave with inheritance. They determine whether you can use a more derived or less derived type argument than originally specified:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="Variance":::
+
+- **Covariance** (`out T`): An `IEnumerable<Dog>` can be used where `IEnumerable<Animal>` is expected because `Dog` derives from `Animal`. The `out` keyword on the type parameter enables this. Covariant type parameters can only appear in output positions (return types).
+- **Contravariance** (`in T`): An `Action<Animal>` can be used where `Action<Dog>` is expected because any action that handles `Animal` can also handle `Dog`. The `in` keyword enables this. Contravariant type parameters can only appear in input positions (parameters).
+
+Many built-in interfaces and delegates are already variant: `IEnumerable<out T>`, `IReadOnlyList<out T>`, `Func<out TResult>`, and `Action<in T>`. You benefit from variance automatically when working with these types. For an in-depth treatment of designing variant interfaces and delegates, see [Covariance and contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).
+
+## Create your own generic types
+
+You can define your own generic classes, structs, interfaces, and methods. The following example shows a simple generic linked list for illustration. In practice, use <xref:System.Collections.Generic.List`1> or another built-in collection:
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="CustomGeneric":::
+
+:::code language="csharp" source="snippets/generics/Program.cs" ID="UseCustomGeneric":::
+
+Generic types aren't limited to classes. You can define generic `interface`, `struct`, and `record` types. For more information about designing generic algorithms and complex constraint combinations, see [Generics in .NET](../../../standard/generics/index.md).
 
 ## See also
 
 - [Generics in .NET](../../../standard/generics/index.md)
+- [Collection expressions](../../language-reference/operators/collection-expressions.md)
+- [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md)
+- [Covariance and contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)
 - <xref:System.Collections.Generic>

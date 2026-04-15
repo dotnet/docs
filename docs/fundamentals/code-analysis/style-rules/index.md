@@ -95,7 +95,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0064](ide0064.md) | Make struct fields writable | |
 > | [IDE0065](ide0065.md) | `using` directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
 > | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
-> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine*?displayProperty=fullName> | |
+> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine*?displayProperty=fullName> | [dotnet_prefer_system_hash_code](ide0070.md#dotnet_prefer_system_hash_code) |
 > | [IDE0071](ide0071.md) | Simplify interpolation | [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation) |
 > | [IDE0072](ide0072.md) | Add missing cases to switch expression | |
 > | [IDE0073](ide0073.md) | Use file header | [file_header_template](ide0073.md#file_header_template) |
@@ -126,6 +126,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0210](ide0210.md) | Convert to top-level statements | [csharp_style_prefer_top_level_statements](ide0210.md#csharp_style_prefer_top_level_statements) |
 > | [IDE0211](ide0211.md) | Convert to 'Program.Main' style program | [csharp_style_prefer_top_level_statements](ide0211.md#csharp_style_prefer_top_level_statements) |
 > | [IDE0220](ide0220.md) | Add explicit cast in foreach loop | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
+> | [IDE0221](ide0221.md) | Add explicit cast | [dotnet_style_prefer_non_hidden_explicit_cast_in_source](ide0221.md#dotnet_style_prefer_non_hidden_explicit_cast_in_source) |
 > | [IDE0230](ide0230.md) | Use UTF-8 string literal | [csharp_style_prefer_utf8_string_literals](ide0230.md#csharp_style_prefer_utf8_string_literals) |
 > | [IDE0240](ide0240.md) | Nullable directive is redundant | |
 > | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |

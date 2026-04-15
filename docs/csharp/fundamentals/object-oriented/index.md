@@ -86,7 +86,7 @@ You can instantiate and initialize class or struct objects, and collections of o
 
 ## Anonymous Types
 
-In situations where it isn't convenient or necessary to create a named class you use anonymous types. Named data members define anonymous types. For more information, see [Anonymous types](../types/anonymous-types.md).
+In situations where it isn't convenient or necessary to create a named class, you can use anonymous types or [tuples](../types/tuples.md). Named data members define anonymous types. Tuples are the preferred choice for new code because they offer better performance and deconstruction support. For more information, see [Tuples and deconstruction](../types/tuples.md).
 
 ## Extension Members
 

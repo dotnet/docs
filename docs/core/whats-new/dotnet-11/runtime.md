@@ -2,14 +2,14 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 03/10/2026
+ms.date: 04/14/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 2.
+This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 3.
 
 ## Updated minimum hardware requirements
 
@@ -61,14 +61,15 @@ For more information, see [Minimum hardware requirements updated](../../compatib
 
 .NET 11 introduces runtime-native async (Runtime Async V2), a significant step toward replacing compiler-generated async state machines with runtime-managed suspension and resumption. Instead of the compiler emitting state-machine classes, the runtime itself tracks async execution, producing cleaner stack traces, better debuggability, and lower overhead.
 
-Runtime Async is a preview feature. To opt in, add the following properties to your project file:
+Runtime Async is a preview feature. To opt in, add the following property to your project file:
 
 ```xml
 <PropertyGroup>
   <Features>runtime-async=on</Features>
-  <EnablePreviewFeatures>true</EnablePreviewFeatures>
 </PropertyGroup>
 ```
+
+Starting with Preview 3, a `net11.0` project no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` to use Runtime Async.
 
 ### Cleaner live stack traces
 
@@ -109,14 +110,20 @@ The most visible improvement is in *live stack traces*—what profilers, debugge
 
 This improvement benefits anything that inspects the live execution stack, including profiling tools, diagnostic logging, and the debugger call stack window.
 
+### NativeAOT and ReadyToRun support
+
+Preview 3 adds Runtime Async support for NativeAOT and ReadyToRun compilation. This extends the feature beyond JIT-compiled code to ahead-of-time compiled scenarios. The runtime also reuses continuation objects more aggressively and avoids saving unchanged locals, reducing allocation pressure in async-heavy code.
+
 ### Debugging improvements
 
 Breakpoints now bind correctly inside runtime-async methods, and the debugger can step through `await` boundaries without jumping into compiler-generated infrastructure.
 
 ## JIT improvements
 
-- **Bounds check elimination:** The just-in-time (JIT) compiler now eliminates bounds checks for the common pattern where an index plus a constant is compared against a length, such as `i + cns < len`. This reduces redundant checks in tight loops and improves throughput for array and span operations.
+- **Bounds check elimination:** The just-in-time (JIT) compiler now eliminates bounds checks for the common pattern where an index plus a constant is compared against a length, such as `i + cns < len`. It also eliminates more redundant bounds checks for index-from-end access (for example, `values[^1]`). These improvements reduce redundant checks in tight loops and improve throughput for array and span operations.
 - **Redundant checked context removal:** The JIT can now prove and remove redundant checked arithmetic contexts—for example, when a value is already known to be in range. This optimization eliminates unnecessary overflow checks in generated code.
+- **Switch expression folding:** Multi-target `switch` expressions now fold into simpler branchless checks when the targets are a small set of constants, for example `x is 0 or 1 or 2 or 3 or 4`.
+- **Faster uint-to-float/double casts:** Casting `uint` to `float` or `double` is faster on pre-AVX-512 x86 hardware.
 - **Devirtualization in ReadyToRun images:** ReadyToRun (R2R) images can now devirtualize non-shared generic virtual method calls, improving performance of ahead-of-time compiled code for generic scenarios.
 - **SVE2 intrinsics:** New Arm SVE2 (Scalable Vector Extension 2) intrinsics are available: `ShiftRightLogicalNarrowingSaturate(Even|Odd)`. These expand the set of vectorized operations available on Arm hardware that supports SVE2.
 
@@ -124,6 +131,14 @@ Breakpoints now bind correctly inside runtime-async methods, and the debugger ca
 
 - **Cached interface dispatch on non-JIT platforms:** On platforms that lack JIT support, such as iOS, interface dispatch was falling back to an expensive generic fixup path. Cached dispatch yields up to 200x improvements in interface-heavy code on these targets.
 - **`Guid.NewGuid()` on Linux:** <xref:System.Guid.NewGuid?displayProperty=nameWithType> on Linux now uses the `getrandom()` syscall with batch caching instead of reading from `/dev/urandom`, yielding approximately 12% throughput improvement for GUID generation.
+
+## WebAssembly improvements
+
+Preview 3 expands browser and WebAssembly support with several improvements:
+
+- **WebCIL payload loading:** The runtime can now load WebCIL payloads directly, improving compatibility with browser-based deployment scenarios.
+- **Better debugging symbols:** Symbol and stack trace quality for WebAssembly debugging has improved, making it easier to diagnose issues in browser-hosted .NET apps.
+- **`float[]`, `Span<float>`, and `ArraySegment<float>` marshaling:** `float[]`, `Span<float>`, and `ArraySegment<float>` are now marshaled more directly across JavaScript boundaries, reducing overhead for interop-heavy code.
 
 ## See also
 

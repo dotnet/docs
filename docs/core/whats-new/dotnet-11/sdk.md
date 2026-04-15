@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 03/10/2026
+ms.date: 04/14/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 11
 
-This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 2.
+This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 3.
 
 ## Smaller SDK installers on Linux and macOS
 
@@ -79,6 +79,52 @@ warning NETSDK1235: .NET Tools do not support using a custom .nuspec file, but t
 ```
 
 The pack operation still proceeds with a warning to avoid breaking existing projects.
+
+## Solution filter CLI support
+
+`dotnet sln` can now create and edit solution filters (`.slnf`) directly from the CLI. Solution filters let large repositories load or build a subset of projects without changing the main solution. The supported operations mirror the existing `dotnet sln` commands:
+
+```bash
+dotnet new slnf --name MyApp.slnf
+dotnet sln MyApp.slnf add src/Lib/Lib.csproj
+dotnet sln MyApp.slnf list
+dotnet sln MyApp.slnf remove src/Lib/Lib.csproj
+```
+
+## File-based apps split across files
+
+File-based apps now support an `#:include` directive, so you can move shared helpers into separate files without giving up the file-based workflow:
+
+```csharp
+#:include helpers.cs
+#:include models/customer.cs
+
+Console.WriteLine(Helpers.FormatOutput(new Customer()));
+```
+
+## Pass environment variables with dotnet run
+
+`dotnet run -e KEY=VALUE` passes environment variables to the launched app from the command line, without requiring you to export shell state or edit launch profiles:
+
+```bash
+dotnet run -e ASPNETCORE_ENVIRONMENT=Development -e LOG_LEVEL=Debug
+```
+
+Environment variables passed this way are available to MSBuild logic as `RuntimeEnvironmentVariable` items.
+
+## dotnet watch improvements
+
+Preview 3 adds several `dotnet watch` improvements for long-running local development loops:
+
+- **Aspire integration:** `dotnet watch` can now integrate with Aspire app hosts, enabling hot-reload workflows across the full Aspire application model.
+- **Crash recovery:** When the app crashes, `dotnet watch` automatically relaunches it on the next relevant file change.
+- **Windows desktop support:** Ctrl+C handling is improved for Windows desktop apps such as Windows Forms and WPF.
+
+## Other CLI improvements
+
+- `dotnet format` now accepts `--framework` for multi-targeted projects.
+- `dotnet test` in Microsoft Testing Platform (MTP) mode now supports `--artifacts-path`.
+- `dotnet tool exec` and `dnx` no longer prompt for an extra approval when running tools.
 
 ## Breaking changes
 

@@ -53,21 +53,22 @@ items:
       href: fundamentals/types/index.md
     - name: Built-in types and literals
       href: fundamentals/types/built-in-types.md
-    # TODO: tuples
     - name: Classes
       href: fundamentals/types/classes.md
-    # TODO: Edit Records article so it doesn't depend on classes.
+    - name: Structs
+      href: fundamentals/types/structs.md
     - name: Records
       href: fundamentals/types/records.md
-    # TODO: structs
     - name: Interfaces
       href: fundamentals/types/interfaces.md
     - name: Enumerations
       href: fundamentals/types/enums.md
     - name: Generics
       href: fundamentals/types/generics.md
-    - name: Tuples and anonymous types
-      href: fundamentals/types/anonymous-types.md
+    - name: Tuples and deconstruction
+      href: fundamentals/types/tuples.md
+    - name: Anonymous types
+      href: programming-guide/classes-and-structs/anonymous-types.md
     # TODO: Delegates, lambdas and events
   - name: Object-oriented programming
     items:

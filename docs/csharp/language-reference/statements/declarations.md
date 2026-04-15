@@ -58,7 +58,7 @@ List<int> xs = new();
 List<int>? ys = new();
 ```
 
-When you work with [anonymous types](../../fundamentals/types/anonymous-types.md), you must use implicitly typed local variables. The following example shows a [query expression](../keywords/query-keywords.md) that uses an anonymous type to hold a customer's name and phone number:
+When you work with [anonymous types](../../programming-guide/classes-and-structs/anonymous-types.md), you must use implicitly typed local variables. The following example shows a [query expression](../keywords/query-keywords.md) that uses an anonymous type to hold a customer's name and phone number:
 
 :::code language="csharp" source="snippets/declarations/ImplicitlyTyped.cs" id="VarExample":::
 

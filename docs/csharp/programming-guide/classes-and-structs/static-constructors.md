@@ -24,7 +24,7 @@ There are several actions that are part of static initialization. Those actions 
 >
 > :::code language="csharp" source="./snippets/static-constructors/Program.cs" id="Singleton":::
 
-A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md).
+A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](~/_csharpstandard/standard/attributes.md#2359-the-moduleinitializer-attribute).
 
 ## Remarks
 

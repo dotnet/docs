@@ -11,7 +11,7 @@ ms.date: 02/13/2024
 This article covers advanced configuration options for MSTest.Sdk. For basic setup and getting started, see [Get started with MSTest](./unit-testing-mstest-getting-started.md).
 
 > [!IMPORTANT]
-> By default, MSTest.Sdk uses the [MSTest runner with Microsoft.Testing.Platform](./unit-testing-mstest-running-tests.md), including with [dotnet test](./microsoft-testing-platform-integration-dotnet-test.md). This requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can keep the old integrations and tools by [switching to VSTest](#select-the-runner).
+> By default, MSTest.Sdk uses the [MSTest runner with Microsoft.Testing.Platform](./unit-testing-mstest-running-tests.md), including with [dotnet test](./unit-testing-with-dotnet-test.md). This requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can keep the old integrations and tools by [switching to VSTest](#select-the-runner).
 >
 > MSTest.Sdk sets `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` to true by default. For more information about dotnet test and its different modes, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 

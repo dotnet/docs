@@ -15,6 +15,8 @@ items:
         href: ../../core/tools/dotnet-install-script.md
       - name: global.json overview
         href: ../../core/tools/global-json.md
+      - name: Test prerelease SDKs locally
+        href: ../../core/tools/test-prerelease-sdk-locally.md
       - name: Telemetry
         href: ../../core/tools/telemetry.md
       - name: Signed-package verification
@@ -89,6 +91,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1202.md
               - name: NETSDK1206
                 href: ../../core/tools/sdk-errors/netsdk1206.md
+              - name: NETSDK1237
+                href: ../../core/tools/sdk-errors/netsdk1237.md
           - name: BuildCheck rules
             items:
               - name: Index of rules
@@ -3852,6 +3856,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0211.md
                   - name: IDE0220
                     href: ../../fundamentals/code-analysis/style-rules/ide0220.md
+                  - name: IDE0221
+                    href: ../../fundamentals/code-analysis/style-rules/ide0221.md
                   - name: IDE0230
                     href: ../../fundamentals/code-analysis/style-rules/ide0230.md
                   - name: IDE0240
@@ -4080,6 +4086,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0061.md
           - name: SYSLIB0062
             href: ../../fundamentals/syslib-diagnostics/syslib0062.md
+          - name: SYSLIB0064
+            href: ../../fundamentals/syslib-diagnostics/syslib0064.md
       - name: Experimental features
         items:
           - name: Overview

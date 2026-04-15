@@ -65,7 +65,31 @@ The following list outlines the command-line options of `dotnet test` command in
 > </PropertyGroup>
 > ```
 
-For more information specific to running MTP projects in VSTest mode of `dotnet test`, see [Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`](./microsoft-testing-platform-integration-dotnet-test.md).
+#### Show failure per test
+
+By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
+
+To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on the command line, or add the `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
+
+On command line:
+
+```dotnetcli
+dotnet test -p:TestingPlatformShowTestsFailure=true
+```
+
+#### Show complete platform output
+
+By default, all console output that the underlying test executable writes is captured and hidden from the user. This includes the banner, version information, and formatted test information.
+
+To show this information together with MSBuild output, use `<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
+
+This option doesn't impact how the testing framework captures user output written by `Console.WriteLine` or other similar ways to write to the console.
+
+On command line:
+
+```dotnetcli
+dotnet test -p:TestingPlatformCaptureOutput=false
+```
 
 #### Advanced technical details
 

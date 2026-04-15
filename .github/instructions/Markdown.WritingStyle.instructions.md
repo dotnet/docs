@@ -39,6 +39,7 @@ ALWAYS:
 
 ### Lists and Punctuation
 - **CRITICAL: Use Oxford comma in ALL lists (item1, item2, and item3) - NO EXCEPTIONS**
+- **MANDATORY: Use ordered lists ONLY for sequential procedural steps - NEVER for non-procedural content**
 - **MANDATORY: Number ordered lists using "1." for every item (NOT 1., 2., 3.) - ALWAYS USE "1."**
 - **REQUIRED: Use bullets for unordered lists - NEVER use numbers for unordered content**
 - **ESSENTIAL: Write complete sentences in lists with proper punctuation**

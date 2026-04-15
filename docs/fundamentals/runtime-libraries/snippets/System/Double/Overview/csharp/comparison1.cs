@@ -7,7 +7,7 @@ public class Example
    {
       double value1 = .333333333333333;
       double value2 = 1.0/3;
-      Console.WriteLine($"{value1:R} = {value2:R}: {value1.Equals(value2)}");
+      Console.WriteLine($"{value1} = {value2}: {value1.Equals(value2)}");
    }
 }
 // The example displays the following output:

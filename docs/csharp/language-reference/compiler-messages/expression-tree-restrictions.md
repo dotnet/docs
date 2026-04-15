@@ -49,6 +49,7 @@ f1_keywords:
  - "CS9226"
  - "CS9296"
  - "CS9307"
+ - "CS9369"
 helpviewer_keywords:
  - "CS0765"
  - "CS0831"
@@ -98,7 +99,9 @@ helpviewer_keywords:
  - "CS9226"
  - "CS9296"
  - "CS9307"
-ms.date: 05/27/2025
+ - "CS9369"
+ms.date: 04/03/2026
+ai-usage: ai-assisted
 ---
 # Resolve errors and warnings generated from expressions prohibited in expression trees
 
@@ -155,6 +158,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9226** - *An expression tree may not contain an expanded form of non-array params collection parameter.*
 - **CS9296** - *An expression tree may not contain an extension property access*.
 - **CS9307** - *An expression tree may not contain a named argument specification out of position*.
+- **CS9369** - *An expression tree may not contain a union conversion.*
 
 ## Expression tree restrictions
 
@@ -179,6 +183,7 @@ The following expressions are prohibited:
 - Non-destructive mutation using [`with`](../operators/with-expression.md) expressions aren't allowed.
 - You can't declare or access [inline arrays](../builtin-types/struct.md#inline-arrays).
 - You can't include [collection expressions](../operators/collection-expressions.md).
+- [Union conversions](../builtin-types/union.md#union-conversions) aren't allowed.
 - The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators aren't allowed.
 - [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> aren't allowed.
 - `in`, `out`, and `ref` parameters, including `out` variable declarations, aren't allowed.

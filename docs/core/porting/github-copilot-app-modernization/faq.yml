@@ -4,7 +4,7 @@ metadata:
   description: "This article answers frequently asked questions about GitHub Copilot modernization for .NET."
   titleSuffix: ""
   ms.topic: faq
-  ms.date: 03/05/2026
+  ms.date: 04/06/2026
 
 title: GitHub Copilot modernization FAQ
 summary: |
@@ -52,9 +52,9 @@ sections:
 
       - question: Can I customize or guide the agent?
         answer: |
-          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports.
+          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in modernization skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md).
 
-          If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, it learns from that interaction in the short term.
+          If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, the agent learns from that interaction in the short term. Preferences and decisions are saved to `scenario-instructions.md` in the `.github/upgrades/` folder so they persist across sessions.
 
       - question: Does the agent store my source code?
         answer: |
@@ -79,7 +79,9 @@ sections:
     questions:
       - question: What can the agent upgrade?
         answer: |
-          GitHub Copilot modernization helps you upgrade your .NET projects or migrate them to Azure. Besides upgrading the target framework, the agent works with these project types:
+          GitHub Copilot modernization helps you upgrade your .NET projects or migrate them to Azure. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json migration, SqlClient migration, Azure Functions upgrade, and Semantic Kernel to Agents migration. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
+
+          The agent works with these project types:
 
           - Azure Functions
           - Console apps and class libraries
@@ -88,9 +90,34 @@ sections:
             - Blazor
             - Razor Pages
             - Web API
-          - Desktop technologies such as Windows Forms and Windows Presentation Foundation
-          - Test projects such as MSTest and NUnit
+          - Desktop technologies such as Windows Forms, Windows Presentation Foundation, and WinUI
+          - .NET MAUI and Xamarin
+          - Test projects such as MSTest, NUnit, and xUnit
           - .NET Framework projects
+
+          The agent supports both C# and Visual Basic.
+
+      - question: What .NET versions can I upgrade to?
+        answer: |
+          The agent supports the following upgrade paths:
+
+          | Source                       | Target          |
+          |------------------------------|-----------------|
+          | .NET Framework (any version) | .NET 8 or later |
+          | .NET Core 1.x–3.x            | .NET 8 or later |
+          | .NET 5 or later              | .NET 8 or later |
+
+      - question: Can I use the agent offline?
+        answer: |
+          No. The agent requires an internet connection and the GitHub Copilot cloud infrastructure. The agent works with all Copilot subscription tiers, including the free tier.
+
+      - question: Does the agent modify files outside the solution?
+        answer: |
+          No. The agent only modifies files within your workspace and the `.github/upgrades/` folder. Custom task data stays in your repository.
+
+      - question: Can I partially accept the agent's changes?
+        answer: |
+          Yes. Because each task is committed separately, you can cherry-pick specific commits by using standard Git commands. Review the commit history with `git log --oneline` and use `git cherry-pick` to select individual changes.
 
   - name: Migrate to Azure
     questions:

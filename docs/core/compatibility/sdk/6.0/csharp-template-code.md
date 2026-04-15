@@ -10,7 +10,7 @@ Starting in .NET 6, the project templates that ship with the .NET SDK use the la
 - [Top-level statements](../../../../csharp/fundamentals/program-structure/top-level-statements.md)
 - [Global using directives](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/GlobalUsingDirective.md)
 - [File-scoped namespaces](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/file-scoped-namespaces.md)
-- [Target-typed new expressions](/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)
+- [Target-typed new expressions](/dotnet/csharp/language-reference/language-specification/expressions#128172-object-creation-expressions)
 - [Nullable reference types](../../../../csharp/nullable-references.md)
 - [Async Main return values](../../../../csharp/fundamentals/program-structure/main-command-line.md#main-return-values)
 

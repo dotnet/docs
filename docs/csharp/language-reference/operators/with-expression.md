@@ -9,7 +9,7 @@ A `with` expression creates a copy of its operand with the specified properties 
 
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 
-The left-hand operand of a `with` expression can be a [record type](../builtin-types/record.md). It can also be a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
+The left-hand operand of a `with` expression can be a [record type](../builtin-types/record.md). It can also be a [structure type](../builtin-types/struct.md), a [tuple](../builtin-types/value-tuples.md), or an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -34,10 +34,10 @@ You can't customize the copy semantics for structure types.
 
 ## C# language specification
 
-For more information, see the following sections of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md):
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [`with` expression](~/_csharplang/proposals/csharp-9.0/records.md#with-expression)
-- [Copy and Clone members](~/_csharplang/proposals/csharp-9.0/records.md#copy-and-clone-members)
+- [`with` expression](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
+- [Copy and Clone members](~/_csharpstandard/standard/classes.md#15163-copy-and-clone-members)
 
 ## See also
 

@@ -44,7 +44,7 @@ Start by identifying your primary challenge:
 
 ### Microsoft.Extensions.AI (MEAI)
 
-`Microsoft.Extensions.AI` is the app-facing foundation for adding model-powered behavior to a .NET application.
+<xref:Microsoft.Extensions.AI> is the app-facing foundation for adding model-powered behavior to a .NET application.
 
 **Use MEAI when you want to:**
 
@@ -72,7 +72,7 @@ For more information, see [Microsoft.Extensions.AI overview](../microsoft-extens
 
 ### Evaluations
 
-`Microsoft.Extensions.AI.Evaluations` is the quality and regression layer for AI features built with the .NET AI stack.
+<xref:Microsoft.Extensions.AI.Evaluations> is the quality and regression layer for AI features built with the .NET AI stack.
 
 **Use Evaluations when you need to answer questions like:**
 
@@ -89,7 +89,7 @@ For more information, see [Microsoft.Extensions.AI.Evaluation libraries](../eval
 
 ### Microsoft.Extensions.DataIngestion (MEDI)
 
-`Microsoft.Extensions.DataIngestion` is the ingestion and preparation layer for AI-ready data in .NET.
+<xref:Microsoft.Extensions.DataIngestion> is the ingestion and preparation layer for AI-ready data in .NET.
 
 **Use MEDI when:**
 
@@ -111,7 +111,7 @@ For more information, see [Data ingestion for AI apps](data-ingestion.md).
 
 ### Microsoft.Extensions.VectorData (MEVD)
 
-`Microsoft.Extensions.VectorData` is the vector data storage and retrieval layer for semantic search, similarity lookup, and grounding in .NET AI apps.
+<xref:Microsoft.Extensions.VectorData> is the vector data storage and retrieval layer for semantic search, similarity lookup, and grounding in .NET AI apps.
 
 **Use MEVD when:**
 
@@ -183,6 +183,8 @@ AI Toolkit is a VS Code extension pack for AI development that speeds up experim
 
 **Important boundary:** AI Toolkit isn't the core runtime architecture for the production app. It complements MEAI, Evaluations, and Foundry Local.
 
+For more information, see [AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview).
+
 ### Copilot SDK
 
 Copilot SDK is a pre-built agent harness and runtime that brings tools, context, and automatic tool calling out of the box.
@@ -229,7 +231,7 @@ Foundry Local is a local development and local-first deployment option for teams
 
 ### Aspire
 
-.NET Aspire is the orchestration, service-wiring, and observability layer for distributed .NET applications, including AI systems that span multiple services.
+Aspire is the orchestration, service-wiring, and observability layer for distributed .NET applications, including AI systems that span multiple services.
 
 **Use Aspire when the solution includes:**
 
@@ -241,7 +243,7 @@ AI systems often stop being "just one app" once retrieval, tools, gateways, and 
 
 **Important boundary:** Aspire isn't specifically the AI runtime; it's the multi-service application layer around it. It doesn't replace MEAI, MAF, or Azure AI Foundry.
 
-For more information, see the [.NET Aspire documentation](/dotnet/aspire/).
+For more information, see the [Aspire documentation](/dotnet/aspire/).
 
 ## Common combinations
 

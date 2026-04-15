@@ -216,7 +216,6 @@ The `TargetFramework` property value (for example, `net10.0`) is a friendly name
 - `TargetFrameworkIdentifier` (for example, `.NETCoreApp`)
 - `TargetFrameworkVersion` (for example, `v10.0`)
 - `TargetPlatformMoniker`, `TargetPlatformIdentifier`, and `TargetPlatformVersion` (when targeting a specific platform)
-- ```
 
 NuGet and the .NET SDK use these moniker properties—not the `TargetFramework` string—for package compatibility checks and build logic. This translation already happens for OS-specific TFMs. For example, `net10.0-windows` translates to `TargetFrameworkMoniker` = `.NETCoreApp,Version=v10.0` and `TargetPlatformMoniker` = `Windows,Version=7.0`.
 
@@ -237,33 +236,6 @@ Because the alias is just a name, the `TargetFramework` value can be any alpha n
 ```
 
 For more information about these properties, see the [TargetFramework](../core/project-sdk/msbuild-props.md#targetframework) MSBuild property reference.
-
-### Multi-targeting with duplicate frameworks
-
-Starting with .NET SDK 10.0.300, multiple `TargetFrameworks` values can resolve to the same effective framework. Previously, the SDK required every `TargetFrameworks` entry to map to a unique `TargetFrameworkMoniker`. The SDK now supports duplicate effective frameworks, enabling scenarios like:
-
-- **Multi-RID builds**—Build platform-specific assemblies from a single project while targeting the same .NET version. For example, `linux` and `mac` aliases that both resolve to `net10.0`:
-
-  ```xml
-  <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-      <TargetFrameworks>linux;mac</TargetFrameworks>
-    </PropertyGroup>
-
-    <PropertyGroup>
-      <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
-      <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
-      <TargetFrameworkMoniker>.NETCoreApp,Version=v10.0</TargetFrameworkMoniker>
-      <DefineConstants>$(DefineConstants);$(TargetFramework)</DefineConstants>
-      <AssemblyName>$(MSBuildThisFileName).$(TargetFramework)</AssemblyName>
-    </PropertyGroup>
-  </Project>
-  ```
-
-- **Multi-version extension targeting**—Target different versions of a host application (such as Visual Studio 17.x and 18.x), where the host SDK sets the moniker properties.
-- **Benchmarking**—Compare the same framework with different package versions or configuration per alias.
-
-For details on how NuGet handles pack, restore, lock files, and project references with duplicate frameworks, see [Target frameworks reference](/nuget/reference/target-frameworks#targetframework-values-are-aliases) in the NuGet documentation.
 
 ## Preprocessor symbols
 

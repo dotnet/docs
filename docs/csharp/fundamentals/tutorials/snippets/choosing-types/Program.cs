@@ -75,21 +75,40 @@ Console.WriteLine($"Happy hour (20% off): {Checkout(subtotal, new HappyHourDisco
 Console.WriteLine($"Loyalty ($1 off):     {Checkout(subtotal, new LoyaltyDiscount()):F2}");
 // </InterfaceDemo>
 
-// <DecisionDemo>
-Console.WriteLine("\n=== Combined coffee shop scenario ===");
-var order2 = new Order();
-order2.AddItem("Espresso", 3.00m);
-order2.Status = "Complete";
+// <EvolveTupleToRecord>
+Console.WriteLine("\n=== Evolve: tuple -> record ===");
+var daily = new DailySummary(120, 525.75m);
+Console.WriteLine(daily);
+Console.WriteLine($"Average ticket: {daily.AverageTicket:F2}");
+// </EvolveTupleToRecord>
 
-var drinkOfTheDay = new MenuItem("Cold Brew", 4.00m, "Vegan") with { Price = 3.50m };
-var brewTemp = new Measurement(38.0, "°F");
-var daySummary = GetDailySummary(120, 525.75m);
+// <EvolveStructToClass>
+Console.WriteLine("\n=== Evolve: struct -> class ===");
+var raw = new SensorReading(72.5, "°F");
+var calibrated = new CalibratedReading(72.5, "°F", offset: -0.3);
 
-Console.WriteLine($"Today's special: {drinkOfTheDay.Name} at {drinkOfTheDay.Price:F2}");
-Console.WriteLine($"Brew temp: {brewTemp.Value}{brewTemp.Unit}");
-Console.WriteLine($"Day total: {daySummary.TotalOrders} orders / {daySummary.Revenue:F2}");
-Console.WriteLine(order2);
-// </DecisionDemo>
+Console.WriteLine($"Raw:        {raw.Display()}");
+Console.WriteLine($"Calibrated: {calibrated.Display()}");
+// </EvolveStructToClass>
+
+// <EvolveClassToInterface>
+Console.WriteLine("\n=== Evolve: class -> class + interface ===");
+static void PrintOrderSummary(IOrder o) =>
+    Console.WriteLine($"  {o.Total:F2} [{o.Status}]");
+
+var walkIn = new Order();
+walkIn.AddItem("Mocha", 5.00m);
+walkIn.Status = "Ready";
+
+var banquet = new CateringOrder(minimumGuests: 50);
+banquet.AddItem("Coffee service", 90.00m);
+banquet.Approve("Alex");
+banquet.Status = "Ready";
+
+Console.WriteLine("All orders:");
+foreach (IOrder o in new IOrder[] { walkIn, banquet })
+    PrintOrderSummary(o);
+// </EvolveClassToInterface>
 
 // <MenuItem>
 record class MenuItem(string Name, decimal Price, string NutritionalNote);
@@ -99,8 +118,41 @@ record class MenuItem(string Name, decimal Price, string NutritionalNote);
 record struct Measurement(double Value, string Unit);
 // </Measurement>
 
+// <DailySummary>
+record class DailySummary(int TotalOrders, decimal Revenue)
+{
+    public decimal AverageTicket => TotalOrders > 0 ? Revenue / TotalOrders : 0m;
+}
+// </DailySummary>
+
+// <SensorReading>
+class SensorReading(double value, string unit)
+{
+    public double Value { get; } = value;
+    public string Unit { get; } = unit;
+
+    public virtual string Display() => $"{Value}{Unit}";
+}
+
+class CalibratedReading(double value, string unit, double offset)
+    : SensorReading(value, unit)
+{
+    public double Offset { get; } = offset;
+
+    public override string Display() => $"{Value + Offset}{Unit} (offset {Offset:+0.0;-0.0})";
+}
+// </SensorReading>
+
+// <IOrder>
+interface IOrder
+{
+    string Status { get; set; }
+    decimal Total { get; }
+}
+// </IOrder>
+
 // <Order>
-class Order
+class Order : IOrder
 {
     public virtual string Status { get; set; } = "Pending";
     private readonly List<(string Name, decimal Price)> _items = [];

@@ -145,6 +145,42 @@ The `Checkout` method accepts any `IDiscountPolicy`, so you can introduce new po
 
 For more detail, see [Interfaces](../types/interfaces.md).
 
+## Evolve your type choices
+
+None of these decisions are permanent—especially before you release a library where breaking changes become costly. As requirements grow, promote a simple type to a richer one. Here are three common evolutions.
+
+### Tuple → record: the grouping keeps showing up
+
+The `GetDailySummary` tuple works fine inside one method, but once you start passing it to reports, dashboards, and tests, a named type pays for itself. Promote the tuple to a record and add computed properties:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="DailySummary":::
+
+Callers that previously destructured the tuple now get `ToString()` for free, value equality, and a natural place for derived data like `AverageTicket`:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="EvolveTupleToRecord":::
+
+### Struct → class: you need inheritance
+
+The `Measurement` record struct is great until you need a specialized variant—say, a calibrated reading that adjusts the value by an offset. Structs don't support inheritance, so you promote to a class hierarchy:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="SensorReading":::
+
+`CalibratedReading` inherits from `SensorReading` and overrides `Display()` to include the offset. This pattern isn't possible with a struct or record struct:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="EvolveStructToClass":::
+
+### Class → class + interface: you need polymorphism across types
+
+The `Order` class works well on its own, but once `CateringOrder` exists, other code—checkout, reporting, printing—needs to work with *any* order. Extract an interface with the members that callers actually depend on:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="IOrder":::
+
+Both `Order` and `CateringOrder` already satisfy this contract. Now a single method handles either type:
+
+:::code language="csharp" source="./snippets/choosing-types/Program.cs" id="EvolveClassToInterface":::
+
+Extracting the interface doesn't change `Order` or `CateringOrder`—it just makes their shared shape explicit, which also makes testing easier.
+
 ## Quick decision guide
 
 Use this table as a starting point when you aren't sure which type to pick:

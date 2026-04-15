@@ -55,26 +55,26 @@ The following example illustrates the decryption of two arrays of bytes that rep
 
 ```vb
 'Create a new instance of the RSA class.
-Dim rsa As RSA = RSA.Create()
+Dim rsa As RSA = RSA.Create(2048)
 
 ' Export the public key information and send it to a third party.
 ' Wait for the third party to encrypt some data and send it back.
 
-'Decrypt the symmetric key and IV.
-symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1)
-symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.Pkcs1)
+'Decrypt the symmetric key and IV using OAEP padding.
+symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.OaepSHA256)
+symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.OaepSHA256)
 ```
 
 ```csharp
-//Create a new instance of the RSA class.
-RSA rsa = RSA.Create();
+// Create a new instance of the RSA class with at least 2048-bit key size.
+RSA rsa = RSA.Create(2048);
 
 // Export the public key information and send it to a third party.
 // Wait for the third party to encrypt some data and send it back.
 
-//Decrypt the symmetric key and IV.
-symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1);
-symmetricIV = rsa.Decrypt(encryptedSymmetricIV , RSAEncryptionPadding.Pkcs1);
+// Decrypt the symmetric key and IV using OAEP padding.
+symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.OaepSHA256);
+symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.OaepSHA256);
 ```
 
 ## See also

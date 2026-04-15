@@ -27,7 +27,7 @@ sections:
     questions:
       - question: What can the agent do?
         answer: |
-          GitHub Copilot modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps migrate services to Azure, upgrades dependencies, and fixes errors in code after migration. The agent performs the following steps in a Copilot chat session:
+          GitHub Copilot modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps modernize services for Azure, upgrades dependencies, and fixes errors in code after the upgrade. The agent performs the following steps in a Copilot chat session:
 
           - Analyzes your projects and proposes a modernization plan.
           - Runs a series of tasks to modernize your projects according to the plan.
@@ -39,7 +39,7 @@ sections:
       - question: What limitations are there?
         answer: |
           - The agent requires a local Git repository.
-          - The upgrade or migration suggestions aren't guaranteed to follow best practices.
+          - The upgrade suggestions aren't guaranteed to follow best practices.
           - Code fixes and corrections you provide to Copilot during the upgrade process don't persist and aren't remembered for future upgrades.
 
       - question: Which model should I use?
@@ -58,7 +58,7 @@ sections:
 
       - question: Does the agent store my source code?
         answer: |
-          The agent never stores your codebase or uses your code to train the model. Once an upgrade or migration completes, the agent deletes session data.
+          The agent never stores your codebase or uses your code to train the model. Once an upgrade completes, the agent deletes session data.
 
       - question: Can I provide feedback?
         answer: |
@@ -79,7 +79,7 @@ sections:
     questions:
       - question: What can the agent upgrade?
         answer: |
-          GitHub Copilot modernization helps you upgrade your .NET projects or migrate them to Azure. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json migration, SqlClient migration, Azure Functions upgrade, and Semantic Kernel to Agents migration. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
+          GitHub Copilot modernization helps you upgrade your .NET projects or modernize them for Azure. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Agents upgrade. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
 
           The agent works with these project types:
 
@@ -119,18 +119,18 @@ sections:
         answer: |
           Yes. Because each task is committed separately, you can cherry-pick specific commits by using standard Git commands. Review the commit history with `git log --oneline` and use `git cherry-pick` to select individual changes.
 
-  - name: Migrate to Azure
+  - name: Modernize for Azure
     questions:
-      - question: What can the agent migrate?
+      - question: What can the agent modernize?
         answer: |
-          The agent helps migrate and deploy your .NET applications to Azure, including:
+          The agent helps modernize and deploy your .NET applications to Azure, including:
 
           - Web apps
           - API apps
           - Azure Functions
           - Containerized applications
 
-          The migration scenarios include:
+          The modernization scenarios include:
 
           - Modernizing databases
           - Storage
@@ -141,11 +141,11 @@ sections:
           - Logging
           - Security
 
-          For more information about these scenarios, see [Predefined tasks for migration](overview.md#predefined-tasks-for-migration).
+          For more information about these scenarios, see [Predefined tasks for modernization](overview.md#predefined-tasks-for-migration).
 
       - question: Can I monitor assessment progress?
         answer: |
-          Yes. Monitor the assessment progress through the Visual Studio interface. The agent provides real-time feedback and status updates on the migration process. Other development environments might offer different monitoring options.
+          Yes. Monitor the assessment progress through the Visual Studio interface. The agent provides real-time feedback and status updates on the modernization process. Other development environments might offer different monitoring options.
 
           In Visual Studio, monitor assessment progress by viewing the command-line output while the assessment runs:
 

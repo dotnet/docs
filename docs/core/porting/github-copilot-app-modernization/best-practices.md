@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Best practices for GitHub Copilot modernization
 
-Follow these guidelines to get the best results from GitHub Copilot modernization when upgrading and migrating .NET projects.
+Follow these guidelines to get the best results from GitHub Copilot modernization when upgrading .NET projects.
 
 ## Before you start
 
@@ -77,7 +77,7 @@ The assessment is your best opportunity to catch issues before the agent starts 
 - Dependencies that you know are problematic.
 - Anything unusual about your solution that the agent should know.
 
-If you spot something, tell the agent in chat or add the information to `scenario-instructions.md`. You can also edit `assessment.md` directly to add context, correct misidentified projects, or flag concerns before the agent proceeds to planning.
+If you spot something, tell the agent in chat or add the information to `scenario-instructions.md`. Edit `assessment.md` directly to add context, correct misidentified projects, or flag concerns before the agent proceeds to planning.
 
 ### Take time with the planning stage
 
@@ -107,7 +107,7 @@ Execution isn't hands-off. Before telling the agent to start, review `tasks.md`:
 - Are there tasks you want to skip or resequence?
 - Are any tasks missing?
 
-Ask the agent to adjust the task list, or edit `tasks.md` directly before execution begins. Once execution starts, if the agent makes a bad call mid-task, tell it immediately — it applies your correction going forward.
+Ask the agent to adjust the task list, or edit `tasks.md` directly before execution begins. Once execution starts, if the agent makes a bad call mid-task, tell it immediately—it applies your correction going forward.
 
 You know your codebase better than the agent, so use that knowledge at every stage.
 
@@ -143,7 +143,7 @@ The more specific you are, the better the agent performs:
 |---|---|
 | _"Upgrade everything"_ | _"Upgrade the Data.Access project to .NET 10"_ |
 | _"Fix the build"_ | _"Fix the build error in CustomerService.cs related to the removed API"_ |
-| _"Migrate the database stuff"_ | _"Migrate Entity Framework 6 to EF Core in the Repository project"_ |
+| _"Upgrade the database stuff"_ | _"Upgrade Entity Framework 6 to EF Core in the Repository project"_ |
 
 ### Share your constraints
 

@@ -6,7 +6,7 @@ ms.date: 04/06/2026
 ai-usage: ai-assisted
 zone_pivot_groups: copilot-modernization-install
 
-#customer intent: As a developer, I want to install GitHub Copilot modernization so that I can upgrade and migrate my .NET applications.
+#customer intent: As a developer, I want to install GitHub Copilot modernization so that I can upgrade my .NET applications.
 
 ---
 

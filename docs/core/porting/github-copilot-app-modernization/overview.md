@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot modernization overview
-description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
+description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and apps to Azure."
 titleSuffix: ""
 ms.topic: overview
 ms.date: 04/06/2026
@@ -12,32 +12,32 @@ ai-usage: ai-assisted
 
 # What is GitHub Copilot modernization?
 
-GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
+GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and upgrade .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
 
 Use this agent to:
 
 - Upgrade to a newer version of .NET.
-- Migrate technologies and deploy to Azure.
+- Upgrade technologies and deploy to Azure.
 - Modernize your .NET app, especially when upgrading from .NET Framework.
 - Assess your application's code, configuration, and dependencies.
 - Plan and set up the right Azure resource.
-- Fix issues and apply best practices for cloud migration.
+- Fix issues and apply best practices for cloud upgrades.
 - Validate that your app builds and tests successfully.
 
 ## Scenarios
 
-The agent provides multiple end-to-end modernization workflows called _scenarios_. Each scenario is a managed workflow that guides you through a specific type of upgrade or migration:
+The agent provides multiple end-to-end modernization workflows called _scenarios_. Each scenario is a managed workflow that guides you through a specific type of upgrade:
 
 | Scenario | Description | Example prompt |
 |---|---|---|
 | **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
 | **SDK-style conversion** | Converts legacy project format to SDK-style. | _"Convert to SDK-style"_ |
-| **Newtonsoft.Json migration** | Replaces Newtonsoft.Json with System.Text.Json. | _"Migrate from Newtonsoft.Json"_ |
-| **SqlClient migration** | Migrates from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
+| **Newtonsoft.Json upgrade** | Replaces Newtonsoft.Json with System.Text.Json. | _"Upgrade from Newtonsoft.Json"_ |
+| **SqlClient upgrade** | Upgrades from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
 | **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
-| **Semantic Kernel to Agents** | Migrates Semantic Kernel Agents to Microsoft Agents AI. | _"Migrate my SK agents"_ |
+| **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agents AI. | _"Upgrade my SK agents"_ |
 
-For a full reference of all scenarios and 30+ built-in migration skills, see [Scenarios and skills reference](scenarios-and-skills.md).
+For a full reference of all scenarios and 30+ built-in upgrade skills, see [Scenarios and skills reference](scenarios-and-skills.md).
 
 ## Provide feedback
 
@@ -78,13 +78,13 @@ The agent supports the following upgrade paths:
 | .NET Core 1.x–3.x            | .NET 8 or later |
 | .NET 5 or later              | .NET 8 or later |
 
-## Migrate .NET projects to Azure
+## Upgrade .NET projects to Azure
 
-The modernization agent simplifies Azure migrations through automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation:
+The modernization agent simplifies Azure upgrades through automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation:
 
 - Analysis and intelligent recommendations.
 
-  Assess your application's readiness for Azure migration and receive tailored guidance based on its dependencies and identified problems.
+  Assess your application's readiness for an Azure upgrade and receive tailored guidance based on its dependencies and identified problems.
 
 - AI-powered code remediation.
 
@@ -98,53 +98,53 @@ The modernization agent simplifies Azure migrations through automated analysis, 
 
   Deploy to Azure, taking your code from development to production faster.
 
-### Predefined tasks for migration
+### Predefined tasks for upgrading
 
-GitHub Copilot modernization for .NET offers predefined tasks that capture industry best practices and cover common migration scenarios.
+GitHub Copilot modernization for .NET offers predefined tasks that capture industry best practices and cover common upgrade scenarios.
 
-- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI, and Azure PostgreSQL**
+- **Upgrade to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI, and Azure PostgreSQL**
 
-  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB, Azure SQL Managed Instance, or Azure PostgreSQL. Use secure managed identity authentication.
+  Modernize your data layer by upgrading from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB, Azure SQL Managed Instance, or Azure PostgreSQL. Use secure managed identity authentication.
 
-- **Migrate to Azure File Storage**
+- **Upgrade to Azure File Storage**
 
   Move file I/O operations from the local file system to Azure File Storage for scalable, cloud-based file management.
 
-- **Migrate to Azure Blob Storage**
+- **Upgrade to Azure Blob Storage**
 
   Replace on-premises or cross-cloud object storage, or local file system file I/O, with Azure Blob Storage for unstructured data.
 
-- **Migrate to Microsoft Entra ID**
+- **Upgrade to Microsoft Entra ID**
 
   Transition authentication and authorization from Windows Active Directory to Microsoft Entra ID (formerly Azure AD) for modern identity management.
 
-- **Migrate to secured credentials by using Managed Identity and Azure Key Vault**
+- **Upgrade to secured credentials by using Managed Identity and Azure Key Vault**
 
   Replace plaintext credentials in configuration or code with secure, managed identities and Azure Key Vault for secrets management.
 
-- **Migrate to Azure Service Bus**
+- **Upgrade to Azure Service Bus**
 
   Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) or Amazon SQS (AWS Simple Queue Service) to Azure Service Bus for reliable, cloud-based messaging.
 
-- **Migrate to Azure Communication Service email**
+- **Upgrade to Azure Communication Service email**
 
   Replace direct SMTP email sending with Azure Communication Service for scalable, secure email delivery.
 
-- **Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka**
+- **Upgrade to Confluent Cloud/Azure Event Hub for Apache Kafka**
 
   Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hubs.
 
-- **Migrate to OpenTelemetry on Azure**
+- **Upgrade to OpenTelemetry on Azure**
 
   Transition from local logging frameworks such as log4net, Serilog, and Windows event log to OpenTelemetry on Azure.
 
-- **Migrate to Azure Cache for Redis by using Managed Identity**
+- **Upgrade to Azure Cache for Redis by using Managed Identity**
 
   Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
 
 ## How it works
 
-To start an upgrade or migration process, see:
+To start an upgrade process, see:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
@@ -154,7 +154,7 @@ Copilot starts by examining your project structure, dependencies, and code patte
 
 After the assessment, Copilot runs the following three stages:
 
-1. **Assessment:** Copilot examines your project structure, dependencies, and code patterns, then presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
+1. **Assessment:** Copilot examines your project structure, dependencies, and code patterns, then presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project upgrade approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
 
 1. **Planning:** Copilot converts the assessment and your confirmed options into a detailed specification. The `plan.md` file documents upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
 

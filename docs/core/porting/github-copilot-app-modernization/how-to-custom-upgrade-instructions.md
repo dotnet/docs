@@ -87,7 +87,7 @@ Before running the instruction during an upgrade, validate it in isolation. Isol
    ```text
    > Getting instructions for 'replace Newtonsoft with System.Text.Json'.
    
-   Perfect! I've retrieved the scenario instructions for migrating from Newtonsoft.Json to System.Text.Json. Now I'll begin the analysis following the scenario-specific instructions.
+   Perfect! I've retrieved the scenario instructions for upgrading from Newtonsoft.Json to System.Text.Json. Now I'll begin the analysis following the scenario-specific instructions.
    ```
 
    If Copilot doesn't indicate it found the instructions, retry with keywords from the file's name, such as the same verb and noun combinations.

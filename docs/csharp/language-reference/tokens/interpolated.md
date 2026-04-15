@@ -96,7 +96,7 @@ If you're new to string interpolation, see the [String interpolation in C#](../.
 
 ## Compilation of interpolated strings
 
-The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName> processes it. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
+The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharpstandard/standard/attributes.md#23591-custom-interpolated-string-expression-handlers). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName> processes it. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
 
 > [!NOTE]
 > One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, might not evaluate all the interpolation expressions within the interpolated string under all conditions. That behavior means side effects of those expressions might not occur.
@@ -109,7 +109,7 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 
 For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following new feature specifications:
 
-- [Improved interpolated strings](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md)
+- [Improved interpolated strings](~/_csharpstandard/standard/attributes.md#23591-custom-interpolated-string-expression-handlers)
 - [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
 - [New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
 

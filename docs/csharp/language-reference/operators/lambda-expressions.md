@@ -333,7 +333,7 @@ For more information about these features, see the following feature proposal no
 
 - [Lambda discard parameters](~/_csharpstandard/standard/expressions.md#12222-anonymous-function-signatures)
 - [Static anonymous functions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions)
-- [Lambda improvements](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
+- [Lambda improvements](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions)
 
 ## See also
 

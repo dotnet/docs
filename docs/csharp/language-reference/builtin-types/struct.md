@@ -140,7 +140,7 @@ If you don't initialize all fields in a struct, the compiler adds code to the co
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
-Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
+Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1659-constructors) feature proposal note.
 
 Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provide a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
@@ -178,9 +178,9 @@ For more information about `struct` features, see the following feature proposal
 
 - [Readonly structs](~/_csharpstandard/standard/structs.md#1622-struct-modifiers)
 - [Readonly instance members](~/_csharpstandard/standard/structs.md#163-struct-members)
-- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
-- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
-- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
+- [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1659-constructors)
+- [Allow `with` expression on structs](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
+- [Record structs](~/_csharpstandard/standard/structs.md#164-synthesized-record-struct-members)
 - [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
 
 ## See also

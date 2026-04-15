@@ -340,7 +340,7 @@ page.razor(2, 2, 2, 27)error CS0117: 'DateTime' does not contain a definition fo
 
 Line 2, column 6 in `page.razor` is where the text `@DateTime.NowAndThen` begins, noted by `(2, 6)` in the directive. That span of `@DateTime.NowAndThen` ends at line 2, column 27, noted by the `(2, 27)` in the directive. The text for `DateTime.NowAndThen` begins in column 15 of `page.g.cs`, noted by the `15` in the directive. The compiler reports the error in its location in `page.razor`. The developer can navigate directly to the error in their source code, not the generated source.
 
-To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
+To see more examples of this format, see [Line directives](~/_csharpstandard/standard/lexical-structure.md#658-line-directives) in the C# specification.
 
 ## Pragmas
 

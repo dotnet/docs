@@ -98,7 +98,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Interpolated string handlers](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
 - [`global using` directives](../language-reference/keywords/using-directive.md)
 - [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
-- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharpstandard/standard/patterns.md#1126-property-pattern)
 - Lambda expressions can have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
 - Lambda expressions can declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.

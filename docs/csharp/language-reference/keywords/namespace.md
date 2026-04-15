@@ -93,7 +93,7 @@ The following example shows how to call a static method in a nested namespace.
 ## C# language specification
 
 For more information, see the [Namespaces](~/_csharpstandard/standard/namespaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
-For more information on file scoped namespace declarations, see the [feature specification](~/_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md).
+For more information on file scoped namespace declarations, see [Namespace declarations](~/_csharpstandard/standard/namespaces.md#143-namespace-declarations).
 
 ## See also
 

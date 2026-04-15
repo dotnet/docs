@@ -189,7 +189,7 @@ The `AsyncMethodBuilder` attribute can be applied to an async method to override
 
 You use these attributes to specify that a type is an *interpolated string handler*. The .NET 6 library already includes <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType> for scenarios where you use an interpolated string as the argument for a `string` parameter. You might have other instances where you want to control how interpolated strings are processed. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=nameWithType> to the type that implements your handler. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=nameWithType> to parameters of that type's constructor.
 
-You can learn more about building an interpolated string handler in the feature specification for [interpolated string improvements](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md).
+You can learn more about building an interpolated string handler in the feature specification for [interpolated string improvements](~/_csharpstandard/standard/attributes.md#23591-custom-interpolated-string-expression-handlers).
 
 ## `ModuleInitializer` attribute
 

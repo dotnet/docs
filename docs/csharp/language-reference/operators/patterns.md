@@ -198,7 +198,7 @@ You can reference nested properties or fields within a property pattern. This ca
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
-For more information, see the [Property pattern](~/_csharpstandard/standard/patterns.md#1126-property-pattern) section of the feature proposal note and the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note.
+For more information, see the [Property pattern](~/_csharpstandard/standard/patterns.md#1126-property-pattern) section of the feature proposal note and the [Extended property patterns](~/_csharpstandard/standard/patterns.md#1126-property-pattern) feature proposal note.
 
 > [!TIP]
 > To improve code readability, use the [Simplify property pattern (IDE0170)](../../../fundamentals/code-analysis/style-rules/ide0170.md) style rule. It suggests places to use extended property patterns.
@@ -331,7 +331,7 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 For information about features added in C# 9 and later versions, see the following feature proposal notes:
 
 - [Pattern matching](~/_csharpstandard/standard/patterns.md#112-pattern-forms)
-- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharpstandard/standard/patterns.md#1126-property-pattern)
 - [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
 - [Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
 

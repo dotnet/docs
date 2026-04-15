@@ -182,7 +182,7 @@ The `global::` ensures that the namespace lookup for the namespace following the
 
 For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#145-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
-For more information on the *global using* modifier, see the [global usings feature specification](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
+For more information on the *global using* modifier, see [Global using directives](~/_csharpstandard/standard/namespaces.md#1442-global-using-alias-directives).
 
 ## See also
 

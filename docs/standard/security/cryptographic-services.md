@@ -67,7 +67,13 @@ Secret-key encryption is also referred to as symmetric encryption because the sa
 
 A type of secret-key algorithm called a block cipher is used to encrypt one block of data at a time. Block ciphers such as Data Encryption Standard (DES), TripleDES, and Advanced Encryption Standard (AES) cryptographically transform an input block of *n* bytes into an output block of encrypted bytes. If you want to encrypt or decrypt a sequence of bytes, you have to do it block by block. Because *n* is small (8 bytes for DES and TripleDES; 16 bytes [the default], 24 bytes, or 32 bytes for AES), data values that are larger than *n* have to be encrypted one block at a time. Data values that are smaller than *n* have to be expanded to *n* in order to be processed.
 
+> [!WARNING]
+> DES and TripleDES (3DES) are deprecated and should not be used for new development. Use <xref:System.Security.Cryptography.Aes> instead, ideally with an authenticated encryption mode such as GCM (<xref:System.Security.Cryptography.AesGcm>).
+
 One simple form of block cipher is called the electronic codebook (ECB) mode. ECB mode is not considered secure, because it does not use an initialization vector to initialize the first plaintext block. For a given secret key *k*, a simple block cipher that does not use an initialization vector will encrypt the same input block of plaintext into the same output block of ciphertext. Therefore, if you have duplicate blocks in your input plaintext stream, you will have duplicate blocks in your output ciphertext stream. These duplicate output blocks alert unauthorized users to the weak encryption used the algorithms that might have been employed, and the possible modes of attack. The ECB cipher mode is therefore quite vulnerable to analysis, and ultimately, key discovery.
+
+> [!WARNING]
+> ECB mode must not be used for encryption. Use CBC mode with integrity verification, or preferably an authenticated mode such as GCM or CCM.
 
 The block cipher classes that are provided in the base class library use a default chaining mode called cipher-block chaining (CBC), although you can change this default if you want.
 
@@ -171,6 +177,9 @@ None of the previous methods will prevent someone from reading Alice's messages,
 - <xref:System.Security.Cryptography.SHA512>.
 
 .NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1>. But the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead. SHA-2 includes SHA256, SHA384, and SHA512.
+
+> [!WARNING]
+> Do not use MD5 or SHA-1 for any security-sensitive purpose, including data integrity, digital signatures, or certificate validation. Use SHA-256 or higher from the SHA-2 family.
 
 ## Random Number Generation
 

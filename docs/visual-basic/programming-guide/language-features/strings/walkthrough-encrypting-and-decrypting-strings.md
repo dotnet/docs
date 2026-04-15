@@ -11,6 +11,9 @@ ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
 ---
 # Walkthrough: Encrypting and Decrypting Strings in Visual Basic
 
+> [!WARNING]
+> The TripleDES (3DES) algorithm demonstrated in this walkthrough is considered weak by modern standards and should not be used for new development. Use <xref:System.Security.Cryptography.Aes> with authenticated encryption (such as <xref:System.Security.Cryptography.AesGcm>) instead. For current guidance, see [.NET cryptography model](../../../../standard/security/cryptography-model.md) and the [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html).
+
 This walkthrough shows you how to use the <xref:System.Security.Cryptography.TripleDES> class to encrypt and decrypt strings using the Triple Data Encryption Standard (3DES) algorithm. The first step is to create a simple wrapper class that encapsulates the 3DES algorithm and stores the encrypted data as a base-64 encoded string. Then, that wrapper is used to securely store private user data in a publicly accessible text file.  
   
  You can use encryption to protect user secrets (for example, passwords) and to make credentials unreadable by unauthorized users. This can protect an authorized user's identity from being stolen, which protects the user's assets and provides non-repudiation. Encryption can also protect a user's data from being accessed by unauthorized users.  
@@ -18,7 +21,7 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.Tri
  For more information, see [Cryptographic Services](../../../../standard/security/cryptographic-services.md).  
   
 > [!IMPORTANT]
-> The Rijndael (now referred to as Advanced Encryption Standard [AES]) and Triple Data Encryption Standard (3DES) algorithms provide greater security than DES because they are more computationally intensive. For more information, see <xref:System.Security.Cryptography.DES> and <xref:System.Security.Cryptography.Rijndael>.  
+> The Triple Data Encryption Standard (3DES) and DES algorithms are deprecated. Use the Advanced Encryption Standard (AES) for new encryption scenarios. For more information, see <xref:System.Security.Cryptography.Aes>.
   
 ### To create the encryption wrapper  
 

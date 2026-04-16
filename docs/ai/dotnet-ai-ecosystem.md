@@ -49,29 +49,29 @@ MEAI gives .NET developers a clean abstraction for model interaction. It fits na
 
 MEAI alone isn't an agent framework. A one-shot call, chat feature, or tool-call loop can be built with MEAI without becoming "agentic." When the system needs goal-directed, multi-step orchestration, use [MAF](#microsoft-agent-framework-maf) instead.
 
-For more information, see [Microsoft.Extensions.AI overview](../microsoft-extensions-ai.md).
+For more information, see [Microsoft.Extensions.AI overview](microsoft-extensions-ai.md).
 
 ## Evaluation libraries
 
-The [The Microsoft.Extensions.AI.Evaluation library](../evaluation/libraries.md) is the quality and regression layer for AI features built with the .NET AI stack. AI behavior changes readily as prompts, models, and tools evolve. The evaluations library give teams a repeatable way to compare outputs and catch regressions.
+The [The Microsoft.Extensions.AI.Evaluation library](evaluation/libraries.md) is the quality and regression layer for AI features built with the .NET AI stack. AI behavior changes readily as prompts, models, and tools evolve. The evaluations library give teams a repeatable way to compare outputs and catch regressions.
 
-For more information, see [Microsoft.Extensions.AI.Evaluation libraries](../evaluation/libraries.md).
+For more information, see [Microsoft.Extensions.AI.Evaluation libraries](evaluation/libraries.md).
 
 ## Microsoft.Extensions.DataIngestion (MEDI)
 
-[Microsoft.Extensions.DataIngestion](medi-library.md) is the ingestion and preparation layer for AI-ready data in .NET.
+[Microsoft.Extensions.DataIngestion](conceptual/medi-library.md) is the ingestion and preparation layer for AI-ready data in .NET.
 
 Many AI apps fail before retrieval because data is messy, oversized, or poorly structured. Ingestion quality strongly affects downstream answer quality. MEDI prepares and shapes the data that MEVD or another store later queries.
 
-For more information, see [Data ingestion for AI apps](data-ingestion.md).
+For more information, see [Data ingestion for AI apps](conceptual/data-ingestion.md).
 
 ## Microsoft.Extensions.VectorData (MEVD)
 
-[Microsoft.Extensions.VectorData](mevd-library.md) is the vector data storage and retrieval layer for semantic search, similarity lookup, and grounding in .NET AI apps.
+[Microsoft.Extensions.VectorData](conceptual/mevd-library.md) is the vector data storage and retrieval layer for semantic search, similarity lookup, and grounding in .NET AI apps.
 
 MEVD gives .NET applications a consistent way to work with vector stores and helps separate vector storage and retrieval concerns from model invocation concerns.
 
-For more information, see [Vector stores overview](../vector-stores/overview.md).
+For more information, see [Vector stores overview](vector-stores/overview.md).
 
 ## MCP Server
 
@@ -87,7 +87,7 @@ An MCP Client is the consumer side of the protocol: it connects to MCP servers a
 
 An MCP Client is about *consuming* capabilities, not publishing them. If everything the app needs is local and in-process, ordinary function or tool calling is still simpler.
 
-For more information, see [Get started with MCP](../get-started-mcp.md).
+For more information, see [Get started with MCP](get-started-mcp.md).
 
 ## Microsoft Agent Framework (MAF)
 

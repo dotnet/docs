@@ -28,7 +28,7 @@ This is where data ingestion becomes critical. You need to extract text from dif
 
 ## Data ingestion building blocks
 
-The [Microsoft.Extensions.DataIngestion](hmedi-library.md) library is built around several key components that work together to create a complete data processing pipeline. This section explores each component and how they fit together.
+The [Microsoft.Extensions.DataIngestion](medi-library.md) library is built around several key components that work together to create a complete data processing pipeline. This section explores each component and how they fit together.
 
 ### Documents and document readers
 

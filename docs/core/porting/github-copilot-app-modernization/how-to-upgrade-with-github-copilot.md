@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Upgrade a .NET app with GitHub Copilot modernization
 
-GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and modernizes applications for Azure. This article walks you through upgrading your .NET applications with a structured three-stage workflow: assessment, planning, and execution.
+GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article walks you through upgrading your .NET applications with a structured three-stage workflow: assessment, planning, and execution.
 
 The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. The agent supports upgrading from older .NET versions to the latest, including upgrades from .NET Framework to modern .NET.
 

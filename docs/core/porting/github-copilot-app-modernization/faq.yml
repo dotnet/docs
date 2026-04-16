@@ -65,7 +65,7 @@ sections:
           Yes! There are two ways to provide feedback:
           
           - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a Problem](/visualstudio/ide/report-a-problem) features.
-          - File an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
+          - File an issue at the [modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
 
       - question: What data is collected?
         answer: |
@@ -119,20 +119,20 @@ sections:
         answer: |
           Yes. Because each task is committed separately, you can cherry-pick specific commits by using standard Git commands. Review the commit history with `git log --oneline` and use `git cherry-pick` to select individual changes.
 
-  - name: Modernize for Azure
+  - name: Migrate to Azure
     questions:
-      - question: What can the agent modernize?
+      - question: What can the agent migrate?
         answer: |
-          The agent helps modernize and deploy your .NET applications to Azure, including:
+          The agent helps migrate and deploy your .NET applications to Azure, including:
 
           - Web apps
           - API apps
           - Azure Functions
           - Containerized applications
 
-          The modernization scenarios include:
+          The migration scenarios include:
 
-          - Modernizing databases
+          - Migrating databases
           - Storage
           - Identity
           - Messaging
@@ -141,11 +141,11 @@ sections:
           - Logging
           - Security
 
-          For more information about these scenarios, see [Predefined tasks for upgrading](overview.md#predefined-tasks-for-upgrading).
+          For more information about these scenarios, see [Predefined tasks for migration](overview.md#predefined-tasks-for-migration).
 
       - question: Can I monitor assessment progress?
         answer: |
-          Yes. Monitor the assessment progress through the Visual Studio interface. The agent provides real-time feedback and status updates on the modernization process. Other development environments might offer different monitoring options.
+          Yes. Monitor the assessment progress through the Visual Studio interface. The agent provides real-time feedback and status updates. Other development environments might offer different monitoring options.
 
           In Visual Studio, monitor assessment progress by viewing the command-line output while the assessment runs:
 

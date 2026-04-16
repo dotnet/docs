@@ -19,6 +19,9 @@ The dependency on OS libraries also means that .NET apps can only use cryptograp
 
 This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Cryptography Model](cryptography-model.md) and [.NET Cryptographic Services](cryptographic-services.md).
 
+> [!IMPORTANT]
+> The following tables show platform support, not recommendations for new development. Some algorithms and modes remain available for standards conformance and backward compatibility even though current guidance deprecates them for new systems. For example, [NIST SP 800-131A](https://csrc.nist.gov/pubs/sp/800/131a/r2/final) deprecates MD5, SHA-1 for digital signatures, DES, and 3DES.
+
 ## Hash and Message Authentication Algorithms
 
 All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries with the exception of .NET on Browser WASM. In Browser WASM, SHA-1, SHA-2-256, SHA-2-384, SHA-2-512 and the HMAC equivalents are implemented using managed code.
@@ -154,6 +157,9 @@ Padding and digest support vary by platform:
 | PKCS1 Signature (SHA-2)             | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ⚠️<sup>1</sup> |
 | PKCS1 Signature (SHA-3)             | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌                    | ❌     | ❌               |
 | PSS                                 | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ❌               |
+
+> [!NOTE]
+> Support for OAEP-SHA1 and PKCS#1 signatures with MD5 or SHA-1 is listed for compatibility with existing protocols and data formats. For new development, use current FIPS-approved hash algorithms and padding choices that your protocol or standard requires.
 
 <sup>1</sup> Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
 

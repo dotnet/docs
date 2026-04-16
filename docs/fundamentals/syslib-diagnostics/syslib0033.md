@@ -11,7 +11,9 @@ The <xref:System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.
 
 ## Workaround
 
-Use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> instead.
+If you need compatibility with an existing CryptoAPI-based format or protocol, use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType>.
+
+For new development, derive key material directly with <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> or <xref:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)?displayProperty=nameWithType>, and then assign the result to the algorithm you're using. When you derive keys from passwords, use a unique salt and an iteration count that fits your performance budget, as described in [NIST SP 800-132](https://csrc.nist.gov/pubs/sp/800/132/final).
 
 ## Suppress a warning
 

@@ -29,7 +29,7 @@ By default, the comparison of an input string with any literal characters in a r
 | <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> | Not available | Change the search direction. Search moves from right to left instead of from left to right. | [Right-to-left mode](#right-to-left-mode) |
 | <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript> | Not available | Enable ECMAScript-compliant behavior for the expression. | [ECMAScript matching behavior](#ecmascript-matching-behavior) |
 | <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant> | Not available | Ignore cultural differences in language. | [Comparison using the invariant culture](#compare-using-the-invariant-culture) |
-| <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking> | Not available | Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)| [Nonbacktracking mode](#nonbacktracking-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking> | Not available | Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)| [NonBacktracking mode](#nonbacktracking-mode) |
 | <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine> | Not available | Make `^`, `$`, `\Z`, and `.` recognize all common newline sequences instead of only `\n`. (Available in .NET 11 and later versions.) | [AnyNewLine mode](#anynewline-mode) |
 
 ## Specify options
@@ -396,7 +396,7 @@ The following example is identical to the previous example, except that the stat
 [!code-csharp[Conceptual.Regex.Language.Options#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/culture1.cs#15)]
 [!code-vb[Conceptual.Regex.Language.Options#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#15)]
 
-## Nonbacktracking mode
+## NonBacktracking mode
 
 By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option, which was introduced in .NET 7, doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
 

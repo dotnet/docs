@@ -55,7 +55,9 @@ For information on how to store an asymmetric key in secure cryptographic key co
 The following example illustrates the decryption of two arrays of bytes that represent a symmetric key and IV. For information on how to extract the asymmetric public key from the <xref:System.Security.Cryptography.RSA> object in a format that you can easily send to a third party, see [Encrypting Data](encrypting-data.md#asymmetric-encryption).
 
 ```vb
-'Create a new instance of the RSA class.
+'Create a new instance of the RSA class. The 2048-bit key size shown
+'here is for illustration; choose a key size that matches your
+'security requirements per NIST SP 800-57.
 Dim rsa As RSA = RSA.Create(2048)
 
 ' Export the public key information and send it to a third party.
@@ -67,7 +69,9 @@ symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.OaepSHA256)
 ```
 
 ```csharp
-// Create a new instance of the RSA class with at least 2048-bit key size.
+// Create a new instance of the RSA class. The 2048-bit key size shown
+// here is for illustration; choose a key size that matches your
+// security requirements per NIST SP 800-57.
 RSA rsa = RSA.Create(2048);
 
 // Export the public key information and send it to a third party.

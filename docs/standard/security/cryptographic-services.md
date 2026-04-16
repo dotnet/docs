@@ -186,7 +186,7 @@ None of the previous methods will prevent someone from reading Alice's messages,
 
 Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in .NET use random number generators to generate cryptographic keys.
 
-The <xref:System.Security.Cryptography.RandomNumberGenerator> class is an implementation of a random number generator algorithm.
+The <xref:System.Security.Cryptography.RandomNumberGenerator> class is an implementation of a cryptographically secure random number generation algorithm.
 
 ## ClickOnce Manifests
 

@@ -37,11 +37,14 @@ This article helps you choose the right API, use the convenience methods effecti
 
 ### Streaming APIs (entry-by-entry control)
 
-- `ZipArchive`—open an archive, iterate entries, read or write selectively.
-- `TarReader` / `TarWriter`—sequential entry-by-entry access.
+- `ZipArchive`—open an archive, iterate entries, read or write selectively. Use `ZipArchiveEntry.ExtractToFile` to extract individual entries, or `ZipArchive.ExtractToDirectory` to extract all entries from an already-opened archive.
+- `TarReader` / `TarWriter`—sequential entry-by-entry access. Use `TarEntry.ExtractToFile` to extract individual entries.
 - Best for: large archives, selective extraction, untrusted input, custom processing.
 
 If you control the archive source (your own build output, known-safe backups), the convenience APIs are the simplest choice. If the archive comes from an external source (user uploads, downloads, network transfers), use the streaming APIs with the safety checks described in this article.
+
+> [!CAUTION]
+> A ZIP archive primarily transmits files, while a TAR archive transmits a filesystem topology, including file types, symbolic links, hard links, permissions, and other metadata. This gives the TAR extraction process much more control over how data is represented on disk. Because these structures are meaningful to the filesystem, an adversary can influence security-impacting behaviors beyond filenames and file contents. Exercise extra caution when processing untrusted TAR archives.
 
 ## Work with trusted archives
 
@@ -52,7 +55,7 @@ When the archive source is known and trusted, the convenience methods give you a
 - When overwriting is enabled during ZIP extraction, .NET extracts to a temporary file first and only replaces the target after successful extraction. This prevents partial corruption if the extraction fails.
 
 > [!NOTE]
-> The convenience methods don't limit decompressed size or entry count. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
+> The convenience methods don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
 
 ## Handle untrusted archives safely
 
@@ -145,11 +148,11 @@ TAR extraction differs from ZIP in several ways: entries are read sequentially (
 
 ## Memory and performance considerations
 
-### ZipArchiveMode.Update loads entries into memory
+### ZipArchive memory usage
 
-Don't use `ZipArchiveMode.Update` for large or untrusted archives. When you open a `ZipArchive` in `Update` mode and call `Open()` or `OpenAsync()` on an entry, its uncompressed data is loaded into a `MemoryStream` to support in-place modifications. Accessing entry metadata (such as `FullName`, `Length`, or `ExternalAttributes`) does not trigger decompression. For large or malicious archives, opening entry content streams can cause `OutOfMemoryException`.
+Don't use `ZipArchiveMode.Update` for large or untrusted archives. When you open a `ZipArchive` in `Update` mode and call `Open()` or `OpenAsync()` on an entry, its uncompressed data is loaded into a `MemoryStream` to support in-place modifications. Accessing entry metadata (such as `FullName`, `Length`, or `ExternalAttributes`) does not trigger decompression. For large or malicious archives, opening entry content streams can cause `OutOfMemoryException`. Check `ZipArchiveEntry.Length` before calling `Open()` to avoid decompressing unexpectedly large entries.
 
-Additionally, when you open a `ZipArchive` in `Read` mode with an **unseekable** stream (for example, a network stream), the runtime copies the entire stream into a `MemoryStream` up front to enable seeking through the central directory.
+Additionally, when you open a `ZipArchive` in `Read` mode with an **unseekable** stream (for example, a network stream), the runtime buffers the entire archive contents in memory to enable seeking through the central directory.
 
 ```csharp
 // Update mode: calling entry.Open() loads the full entry into memory
@@ -177,7 +180,7 @@ using var archive = new ZipArchive(stream, ZipArchiveMode.Update);
 - **ZIP:** Unix permissions are stored in the upper 16 bits of `ExternalAttributes`. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because the Windows runtime sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
 - **TAR:** The `TarEntry.Mode` property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime applies only the 9 ownership bits (rwx for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped for security.
 
-When processing untrusted archives, validate `TarEntry.Mode` before extracting. An archive could set executable permissions on files that should not be executable.
+When processing untrusted archives, be aware that extracted files may have executable permissions set by the archive author. Untrusted archives could contain malicious executable files.
 
 ### Special entry types (TAR)
 
@@ -185,11 +188,11 @@ Block devices, character devices, and FIFOs can only be created on Unix. Extract
 
 ### File name sanitization differs by platform
 
-On Windows, when using `ExtractToDirectory`, the runtime replaces control characters and ``"*:<>?|`` with underscores in entry names. On Unix, only null characters are replaced. Archive entries with names like `file:name.txt` are renamed to `file_name.txt` on Windows but extracted as-is on Unix. The per-entry APIs (`Open()`, `ExtractToFile()`) do not perform any name sanitization.
+On Windows, when using `ExtractToDirectory`, the runtime replaces control characters and ``"*:<>?|`` with underscores in entry names. On Unix, only null characters are replaced. Archive entries with names like `file:name.txt` are renamed to `file_name.txt` on Windows but extracted as-is on Unix. The per-entry APIs (`Open()`, `ExtractToFile()`) do not perform any name sanitization, so when using them with entry names from untrusted archives, validate the name and path before extracting (as shown in the [Validate destination paths](#validate-destination-paths) section).
 
 ## Data integrity
 
-ZIP entries include a CRC-32 checksum that you can use to verify data hasn't been corrupted or tampered with.
+Both ZIP and TAR formats include CRC-32 checksums that you can use to verify data hasn't been corrupted or tampered with.
 
 Starting with .NET 11, the runtime validates CRC-32 checksums automatically when reading ZIP entries. When you read an entry's data stream to completion, the runtime compares the computed CRC of the decompressed data against the checksum stored in the archive. If they don't match, an `InvalidDataException` is thrown. .NET 11 also validates CRC-32 checksums in TAR entry headers.
 

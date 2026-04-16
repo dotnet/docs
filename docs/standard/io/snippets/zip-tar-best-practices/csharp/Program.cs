@@ -48,13 +48,11 @@ void ValidatePaths(ZipArchive archive, string destinationDir)
 
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
-        string destPath = Path.GetFullPath(Path.Combine(fullDestDir, entry.FullName));
+        string destPath = Path.GetFullPath(Path.Join(fullDestDir, entry.FullName));
 
         if (!destPath.StartsWith(fullDestDir, StringComparison.Ordinal))
             throw new IOException(
                 $"Entry '{entry.FullName}' would extract outside the destination directory.");
-
-        // ... safe to extract
     }
 }
 // </PathValidation>
@@ -111,7 +109,7 @@ void SafeExtractZip(string archivePath, string destinationDir,
         // Resolve the full destination path using Path.GetFullPath, which
         // normalizes away any "../" segments. Then verify the result still
         // starts with the destination directory.
-        string destPath = Path.GetFullPath(Path.Combine(fullDestDir, entry.FullName));
+        string destPath = Path.GetFullPath(Path.Join(fullDestDir, entry.FullName));
         if (!destPath.StartsWith(fullDestDir, StringComparison.Ordinal))
             throw new IOException(
                 $"Entry '{entry.FullName}' would extract outside the destination.");
@@ -184,12 +182,11 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
         {
             Directory.CreateDirectory(destPath);
         }
-        else if (entry.DataStream is not null)
+        else if (entry.EntryType is TarEntryType.RegularFile or TarEntryType.V7RegularFile or TarEntryType.ContiguousFile)
         {
             // Create the parent directory and any missing intermediate directories.
             Directory.CreateDirectory(Path.GetDirectoryName(destPath)!);
-            using var fileStream = File.Create(destPath);
-            entry.DataStream.CopyTo(fileStream);
+            entry.ExtractToFile(destPath, overwrite: false);
         }
     }
 }
@@ -240,19 +237,24 @@ bool ShouldKeep(ZipArchiveEntry entry) => true;
 // </StreamingApproach>
 
 // <TarStreaming>
-void TarStreamingRead(Stream archiveStream)
+void TarStreamingRead(Stream archiveStream, string destDir)
 {
     using var reader = new TarReader(archiveStream);
     TarEntry? entry;
     while ((entry = reader.GetNextEntry()) is not null)
     {
+        // DataStream is only valid until the next GetNextEntry() call,
+        // so consume or copy the data before advancing.
         if (entry.DataStream is not null)
         {
-            string safePath = "output.bin";
-            // Copy now — the stream becomes invalid after the next GetNextEntry() call
-            using var fileStream = File.Create(safePath);
+            string destPath = Path.Join(destDir, entry.Name);
+            using var fileStream = File.Create(destPath);
             entry.DataStream.CopyTo(fileStream);
         }
     }
+
+    // Alternatively, pass copyContents: true to retain entry data
+    // in a separate MemoryStream that remains valid after advancing:
+    // entry = reader.GetNextEntry(copyContents: true);
 }
 // </TarStreaming>

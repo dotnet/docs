@@ -177,7 +177,7 @@ None of the previous methods will prevent someone from reading Alice's messages,
 
 - <xref:System.Security.Cryptography.SHA512>.
 
-.NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1> for standards conformance and backward compatibility with existing data formats and protocols. However, the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead per [NIST SP 800-131A](https://csrc.nist.gov/pubs/sp/800/131a/r2/final). SHA-2 includes SHA256, SHA384, and SHA512.
+.NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1> for standards conformance and backward compatibility with existing data formats and protocols. However, the MD5 and SHA-1 algorithms have been found to be insecure per [NIST SP 800-131A](https://csrc.nist.gov/pubs/sp/800/131a/r2/final). .NET provides the FIPS-approved SHA-2 family (SHA256, SHA384, and SHA512) as replacements.
 
 > [!WARNING]
 > Do not use MD5 or SHA-1 for security-sensitive purposes such as digital signatures or certificate validation, unless required by an existing data format standard. Use a current FIPS-approved hash algorithm for new development.

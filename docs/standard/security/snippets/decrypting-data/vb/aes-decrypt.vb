@@ -10,12 +10,11 @@ Module Module1
             Return
         End If
 
-        ' The key must match the key used during encryption.
-        ' In production, retrieve the key from a secure key management
-        ' system rather than hardcoding it in source code.
-        Dim key As Byte() = Convert.FromHexString(args(1))
-
         Try
+            ' The key must match the key used during encryption.
+            ' In production, retrieve the key from a secure key management
+            ' system rather than hardcoding it in source code.
+            Dim key As Byte() = Convert.FromHexString(args(1))
             ' Create a file stream.
             Using fileStream As New FileStream("TestData.txt", FileMode.Open)
 

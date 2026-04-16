@@ -40,7 +40,7 @@ Module Module1
                 End Using
             End Using
 
-            Console.WriteLine("The text was encrypted.")
+            Console.WriteLine("The file was encrypted.")
             Console.WriteLine($"Key (hex): {keyHex}")
         Catch
             Console.WriteLine("The encryption failed.")

@@ -105,7 +105,10 @@ public class MemoryProtectionSample
         byte[] entropy = new byte[16];
 
         // Fill the array with a random value.
-        RandomNumberGenerator.Fill(entropy);
+        using (var rng = new RNGCryptoServiceProvider())
+        {
+            rng.GetBytes(entropy);
+        }
 
         // Return the array.
         return entropy;

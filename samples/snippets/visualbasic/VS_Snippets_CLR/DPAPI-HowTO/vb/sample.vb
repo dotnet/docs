@@ -116,7 +116,9 @@ Public Module MemoryProtectionSample
         Dim entropy(15) As Byte
 
         ' Fill the array with a random value.
-        RandomNumberGenerator.Fill(entropy)
+        Using rng As New RNGCryptoServiceProvider()
+            rng.GetBytes(entropy)
+        End Using
 
         ' Return the array.
         Return entropy

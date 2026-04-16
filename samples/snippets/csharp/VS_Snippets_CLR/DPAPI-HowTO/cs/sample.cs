@@ -161,7 +161,19 @@ public class MemoryProtectionSample
         // Read the encrypted data from a stream.
         if (S.CanRead)
         {
-            S.Read(inBuffer, 0, Length);
+            int offset = 0;
+
+            while (offset < Length)
+            {
+                int bytesRead = S.Read(inBuffer, offset, Length - offset);
+
+                if (bytesRead == 0)
+                {
+                    throw new EndOfStreamException("Could not read the expected number of bytes from the stream.");
+                }
+
+                offset += bytesRead;
+            }
 
             outBuffer = ProtectedData.Unprotect(inBuffer, Entropy, Scope);
         }

@@ -88,7 +88,7 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("Buffer")
         End If
         If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
+            Throw New ArgumentException("The buffer length was 0.", NameOf(Buffer))
         End If
 
         ' Encrypt the data in memory. The result is stored in the same array as the original data.
@@ -102,7 +102,7 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("Buffer")
         End If
         If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
+            Throw New ArgumentException("The buffer length was 0.", NameOf(Buffer))
         End If
 
         ' Decrypt the data in memory. The result is stored in the same array as the original data.
@@ -132,13 +132,13 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("Buffer")
         End If
         If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
+            Throw New ArgumentException("The buffer length was 0.", NameOf(Buffer))
         End If
         If Entropy Is Nothing Then
             Throw New ArgumentNullException("Entropy")
         End If
         If Entropy.Length <= 0 Then
-            Throw New ArgumentException("Entropy")
+            Throw New ArgumentException("The entropy length was 0.", NameOf(Entropy))
         End If
         If S Is Nothing Then
             Throw New ArgumentNullException("S")
@@ -166,13 +166,13 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("S")
         End If
         If Length <= 0 Then
-            Throw New ArgumentException("Length")
+            Throw New ArgumentException("The given length was 0.", NameOf(Length))
         End If
         If Entropy Is Nothing Then
             Throw New ArgumentNullException("Entropy")
         End If
         If Entropy.Length <= 0 Then
-            Throw New ArgumentException("Entropy")
+            Throw New ArgumentException("The entropy length was 0.", NameOf(Entropy))
         End If
 
 
@@ -181,7 +181,17 @@ Public Module MemoryProtectionSample
 
         ' Read the encrypted data from a stream.
         If S.CanRead Then
-            S.Read(inBuffer, 0, Length)
+            Dim offset As Integer = 0
+
+            While offset < Length
+                Dim bytesRead As Integer = S.Read(inBuffer, offset, Length - offset)
+
+                If bytesRead = 0 Then
+                    Throw New EndOfStreamException("Could not read the expected number of bytes from the stream.")
+                End If
+
+                offset += bytesRead
+            End While
 
             outBuffer = ProtectedData.Unprotect(inBuffer, Entropy, Scope)
         Else

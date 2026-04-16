@@ -53,7 +53,7 @@ For more information, see [Microsoft.Extensions.AI overview](microsoft-extension
 
 ## Evaluation libraries
 
-The [The Microsoft.Extensions.AI.Evaluation library](evaluation/libraries.md) is the quality and regression layer for AI features built with the .NET AI stack. AI behavior changes readily as prompts, models, and tools evolve. The evaluations library give teams a repeatable way to compare outputs and catch regressions.
+The [Microsoft.Extensions.AI.Evaluation library](evaluation/libraries.md) is the quality and regression layer for AI features built with the .NET AI stack. AI behavior changes readily as prompts, models, and tools evolve. The evaluations library gives teams a repeatable way to compare outputs and catch regressions.
 
 For more information, see [Microsoft.Extensions.AI.Evaluation libraries](evaluation/libraries.md).
 

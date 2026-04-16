@@ -46,7 +46,7 @@ Other benefits of the RAG pattern include:
 
 To use vector search from .NET, you can use your regular database driver or SDK without requiring any additional library or API. For example, on SQL Server, vector search can be performed in T-SQL when using the standard .NET driver, SqlClient. However, accessing vector search in this way is often quite low-level, requires considerable ceremony to handle serialization/deserialization, and the resulting code isn't portable across databases.
 
-As an alternative, the [Microsoft.Extensions.VectorData.Abstractions library](../conceptual/mevd-library.md) provides a unified layer of abstractions for interacting with vector stores in .NET. For more information about the library, see [The Microsoft.Extensions.VectorData library](../conceptual/mevd-library.md).
+As an alternative, the [Microsoft.Extensions.VectorData library](../conceptual/mevd-library.md) provides a unified layer of abstractions for interacting with vector stores in .NET.
 
 ## Key abstractions
 

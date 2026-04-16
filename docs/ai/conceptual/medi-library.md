@@ -3,6 +3,7 @@ title: "The Microsoft.Extensions.DataIngestion library"
 description: "Learn about the Microsoft.Extensions.DataIngestion library, which provides foundational .NET building blocks for data ingestion."
 ms.topic: concept-article
 ms.date: 04/15/2026
+ai-usage: ai-assisted
 ---
 
 # The Microsoft.Extensions.DataIngestion library

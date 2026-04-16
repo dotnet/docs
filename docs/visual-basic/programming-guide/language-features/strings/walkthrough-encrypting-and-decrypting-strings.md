@@ -13,7 +13,7 @@ ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
 # Walkthrough: Encrypting and Decrypting Strings in Visual Basic
 
 > [!WARNING]
-> The TripleDES (3DES) algorithm demonstrated in this walkthrough is considered weak by modern standards and should not be used for new development. Use <xref:System.Security.Cryptography.Aes> with authenticated encryption (such as <xref:System.Security.Cryptography.AesGcm>) instead. For current guidance, see [.NET cryptography model](../../../../standard/security/cryptography-model.md) and the [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html).
+> The TripleDES (3DES) algorithm demonstrated in this walkthrough is deprecated per [NIST SP 800-131A](https://csrc.nist.gov/pubs/sp/800/131a/r2/final) and should not be used for new development. Use <xref:System.Security.Cryptography.Aes> instead. For current guidance, see [.NET cryptography model](../../../../standard/security/cryptography-model.md).
 
 This walkthrough shows you how to use the <xref:System.Security.Cryptography.TripleDES> class to encrypt and decrypt strings using the Triple Data Encryption Standard (3DES) algorithm. The first step is to create a simple wrapper class that encapsulates the 3DES algorithm and stores the encrypted data as a base-64 encoded string. Then, that wrapper is used to securely store private user data in a publicly accessible text file.  
   

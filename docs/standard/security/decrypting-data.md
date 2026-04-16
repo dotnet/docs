@@ -21,7 +21,7 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 ## Symmetric decryption
 
 > [!IMPORTANT]
-> Symmetric decryption with CBC mode (the default for `Aes.Create()`) is vulnerable to padding oracle attacks if the ciphertext integrity isn't verified before decryption. Always verify data integrity (for example, by using an HMAC) before attempting to decrypt, or use authenticated encryption such as <xref:System.Security.Cryptography.AesGcm>. For more information, see [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md).
+> Symmetric decryption with CBC mode (the default for `Aes.Create()`) is vulnerable to padding oracle attacks if the ciphertext integrity isn't verified before decryption. Always verify data integrity (for example, by using an HMAC with an Encrypt-then-MAC pattern) before attempting to decrypt. For more information, see [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md).
 
 The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 

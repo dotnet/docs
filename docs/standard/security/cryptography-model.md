@@ -85,7 +85,7 @@ Here is a list of recommended algorithms by application:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>
 
 > [!TIP]
-> .NET's built-in password-based key derivation uses the PBKDF2 algorithm. When using PBKDF2, specify <xref:System.Security.Cryptography.HashAlgorithmName.SHA256?displayProperty=nameWithType> or higher, and use the highest iteration count your performance budget allows. Consult the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html) for current iteration count recommendations and for guidance on alternative algorithms (such as Argon2id, bcrypt, or scrypt) that are available through third-party libraries.
+> .NET's built-in password-based key derivation uses the PBKDF2 algorithm via <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>. When using PBKDF2, specify a current FIPS-approved hash algorithm and set the iteration count as high as your performance budget allows per [NIST SP 800-132](https://csrc.nist.gov/pubs/sp/800/132/final). Alternative algorithms such as Argon2id, bcrypt, or scrypt are available through third-party libraries.
 
 ## See also
 

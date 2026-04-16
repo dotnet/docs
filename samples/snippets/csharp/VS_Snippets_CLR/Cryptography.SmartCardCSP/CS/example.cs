@@ -24,7 +24,7 @@ namespace SmartCardSign
 
             // Initialize an RSACryptoServiceProvider object using
             // the CspParameters object.
-            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(csp);
+            using RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(csp);
 
             // Create some data to sign.
             byte[] data = new byte[] { 0, 1, 2, 3, 4, 5, 6, 7 };
@@ -32,12 +32,12 @@ namespace SmartCardSign
             Console.WriteLine("Data			: " + BitConverter.ToString(data));
 
             // Sign the data using the Smart Card CryptoGraphic Provider.
-            byte[] sig = rsa.SignData(data, "SHA1");
+            byte[] sig = rsa.SignData(data, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
 
             Console.WriteLine("Signature	: " + BitConverter.ToString(sig));
 
             // Verify the data using the Smart Card CryptoGraphic Provider.
-            bool verified = rsa.VerifyData(data, "SHA1", sig);
+            bool verified = rsa.VerifyData(data, sig, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
 
             Console.WriteLine("Verified		: " + verified);
         }

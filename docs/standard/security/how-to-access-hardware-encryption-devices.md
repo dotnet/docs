@@ -16,10 +16,7 @@ helpviewer_keywords:
 # How to: Access hardware encryption devices
 
 > [!NOTE]
-> This article applies to Windows.
-
-> [!WARNING]
-> This article uses legacy APIs (<xref:System.Security.Cryptography.RSACryptoServiceProvider> and <xref:System.Security.Cryptography.RNGCryptoServiceProvider>). <xref:System.Security.Cryptography.RNGCryptoServiceProvider> is obsolete starting in .NET 6 (SYSLIB0023). <xref:System.Security.Cryptography.RSACryptoServiceProvider> is a legacy API, though not itself obsolete; specific members are obsolete in later .NET versions. For new code, use <xref:System.Security.Cryptography.RSA.Create*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RandomNumberGenerator?displayProperty=nameWithType> instead. The code sample also uses SHA-1 for signing, which is no longer considered secure—use a current FIPS-approved hash algorithm.
+> This article applies to Windows. The <xref:System.Security.Cryptography.CspParameters> and <xref:System.Security.Cryptography.RSACryptoServiceProvider> classes are Windows-specific APIs for accessing CAPI-based hardware cryptographic providers such as smart cards.
 
 You can use the <xref:System.Security.Cryptography.CspParameters> class to access hardware encryption devices. For example, you can use this class to integrate your application with a smart card, a hardware random number generator, or a hardware implementation of a particular cryptographic algorithm.
 
@@ -39,15 +36,14 @@ The <xref:System.Security.Cryptography.CspParameters> class creates a cryptograp
 
 1. Create a new instance of the <xref:System.Security.Cryptography.CspParameters> class, passing the integer provider type and the provider name to the constructor.
 
-2. Create a new instance of the <xref:System.Security.Cryptography.RNGCryptoServiceProvider>, passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.
+2. Create a new instance of the <xref:System.Security.Cryptography.RNGCryptoServiceProvider>, passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor. Note that <xref:System.Security.Cryptography.RNGCryptoServiceProvider> is obsolete starting in .NET 6 (SYSLIB0023); however, it remains necessary for targeting a specific CAPI-based hardware random number generator. For software-based random number generation, use <xref:System.Security.Cryptography.RandomNumberGenerator?displayProperty=nameWithType> instead.
 
 3. Create a random value using the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes*> or <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes*> method.
 
 ## Example
 
-The following code example demonstrates how to sign data using a smart card.  The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP.  The code example then signs and verifies some data.
+The following code example demonstrates how to sign data using a smart card. The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP. The code example then signs and verifies some data using SHA-256.
 
-Due to collision problems with SHA1, we recommend SHA256 or better.
 [!code-csharp[Cryptography.SmartCardCSP#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]
 [!code-vb[Cryptography.SmartCardCSP#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.SmartCardCSP/VB/example.vb#1)]
 

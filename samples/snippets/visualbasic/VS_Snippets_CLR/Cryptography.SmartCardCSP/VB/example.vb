@@ -1,8 +1,6 @@
 ﻿'<SNIPPET1>
 Imports System.Security.Cryptography
 
-
-
 Module SCSign
 
     Sub Main(ByVal args() As String)
@@ -20,23 +18,23 @@ Module SCSign
 
         ' Initialize an RSACryptoServiceProvider object using
         ' the CspParameters object.
-        Dim rsa As New RSACryptoServiceProvider(csp)
+        Using rsa As New RSACryptoServiceProvider(csp)
 
-        ' Create some data to sign.
-        Dim data() As Byte = {0, 1, 2, 3, 4, 5, 6, 7}
+            ' Create some data to sign.
+            Dim data() As Byte = {0, 1, 2, 3, 4, 5, 6, 7}
 
+            Console.WriteLine("Data   : " + BitConverter.ToString(data))
 
-        Console.WriteLine("Data   : " + BitConverter.ToString(data))
+            ' Sign the data using the Smart Card CryptoGraphic Provider.
+            Dim sig As Byte() = rsa.SignData(data, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1)
 
-        ' Sign the data using the Smart Card CryptoGraphic Provider.
-        Dim sig As Byte() = rsa.SignData(data, "SHA1")
+            Console.WriteLine("Signature : " + BitConverter.ToString(sig))
 
-        Console.WriteLine("Signature : " + BitConverter.ToString(sig))
+            ' Verify the data using the Smart Card CryptoGraphic Provider.
+            Dim verified As Boolean = rsa.VerifyData(data, sig, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1)
 
-        ' Verify the data using the Smart Card CryptoGraphic Provider.
-        Dim verified As Boolean = rsa.VerifyData(data, "SHA1", sig)
-
-        Console.WriteLine("Verified")
+            Console.WriteLine("Verified : " + verified.ToString())
+        End Using
 
     End Sub
 

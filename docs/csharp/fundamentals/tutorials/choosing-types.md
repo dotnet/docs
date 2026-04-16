@@ -11,17 +11,20 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section, written for developers who know at least one programming language and are learning C#. If you're new to programming, start with [Get started](../../tour-of-csharp/index.yml). For a quick reference table, see [Choose which kind of type](../types/index.md#choose-which-kind-of-type).
 
-C# gives you several ways to group data: tuples, record classes, record structs, classes, and interfaces. Picking the right one depends on whether you need naming, equality, mutability, or polymorphism. In this tutorial, you build a small coffee shop model that puts each type to work so you can see where each one shines.
+One of your first design decisions in any C# application is choosing which kind of type to create. Should a menu item be a `class` or a `record`? Should a quick calculation return a `tuple` or a named type? Each choice shapes how your code handles equality, mutability, and polymorphism—and the wrong pick leads to boilerplate, bugs, or both.
+
+In this tutorial, you build a small coffee shop model—menu items, orders, sensor readings, and discount policies—that puts each type to work. Along the way, you learn to recognize the design pressures that point toward one type over another.
 
 In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> - Return multiple values from a method with a tuple.
-> - Model immutable data with a record class.
-> - Represent small value types with a record struct.
+> - Recognize when a tuple is the right fit for returning multiple values.
+> - Model immutable data with a record class and understand value-based equality.
+> - Represent small, copyable data with a record struct.
 > - Manage mutable state and behavior with a class.
-> - Define shared capabilities with an interface.
+> - Extend a class through inheritance to add or tighten rules.
+> - Define shared capabilities across unrelated types with an interface.
 
 ## Prerequisites
 
@@ -29,85 +32,59 @@ In this tutorial, you:
 
 ## Use a tuple for a temporary grouping
 
-When a method needs to return two or three values and you don't want to declare a dedicated type, use a **tuple**. Named elements make the intent clear at the call site, and you can deconstruct the result into separate variables when that reads better.
+The coffee shop needs a method that returns both the total number of orders and the revenue for the day. You could define a class or struct for that, but two values from one method don't always justify a new type.
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="TupleDemo":::
 
-The `GetDailySummary` method returns an `(int TotalOrders, decimal Revenue)` tuple. The caller accesses each element by name or deconstructs both into local variables. No class or struct definition is needed.
+`GetDailySummary` returns an `(int TotalOrders, decimal Revenue)` **tuple**. The caller accesses each element by name or deconstructs both into local variables—no class or struct definition needed.
 
-**When to reach for a tuple:**
-
-- A method returns two or three related values.
-- The grouping is local—callers don't pass the result across many layers.
-- Named elements are enough to convey meaning without a full type.
-
-If you find yourself passing the same tuple shape across multiple methods, promote the tuple to a record or class. For more detail on tuple syntax and capabilities, see [Tuple types](../types/tuples.md).
+A tuple works here because the grouping is local: one method produces it, and one caller consumes it. Named elements make the intent clear without the ceremony of a full type. If you find yourself passing the same tuple shape across multiple methods, that's a signal to promote it to a record or class—you'll see that evolution [later in this tutorial](#tuple--record-the-grouping-keeps-showing-up). For more detail on tuple syntax and capabilities, see [Tuple types](../types/tuples.md).
 
 ## Use a record for immutable data
 
-When two instances with the same data should be considered equal—and you rarely change the values after creation—use a **record class**. Records give you value-based equality, a readable `ToString()`, and the `with` expression for creating modified copies.
+Every coffee shop needs a menu. A menu item has a name, a price, and a nutritional note—and those values don't change once the item is listed. Two systems that both reference a "Latte at $4.50" should agree they're talking about the same thing, even if they created separate objects.
 
-Start by declaring a positional record:
+Declare a positional record:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="MenuItem":::
 
-The compiler generates a constructor, deconstructor, `Equals`, `GetHashCode`, and `ToString` from that single line. Use the record in your coffee shop:
+The compiler generates a constructor, deconstructor, `Equals`, `GetHashCode`, and `ToString` from that single line. Put the record to work:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="RecordClassDemo":::
 
-Two `MenuItem` instances built from the same values are equal even though they're separate objects. The `with` expression creates a seasonal variant without mutating the original.
+Two `MenuItem` instances with the same data are equal even though they're separate objects—that's value-based equality at work. The `with` expression creates a seasonal variant without mutating the original.
 
-**When to reach for a record class:**
-
-- Identity is defined by data, not by object reference.
-- Instances are mostly immutable after creation.
-- You want readable `ToString()` output and structural equality out of the box.
-
-For a deeper walkthrough, see [Records](../types/records.md) and the [records tutorial](records.md).
+A **record class** is the right fit when identity comes from data, not from object reference, and instances rarely change after creation. You get readable `ToString()` output, structural equality, and `with` support out of the box. For a deeper walkthrough, see [Records](../types/records.md) and the [records tutorial](records.md).
 
 ## Use a record struct for small value types
 
-A **record struct** combines value semantics with the convenience of records. Because structs are copied on assignment, each variable holds its own data—changes to one copy never affect another. Use a record struct when the data is small and copying is cheap.
+The coffee machine has a built-in thermometer that reports temperature readings. Each reading is tiny—a number and a unit—and gets copied into logs, alerts, and dashboards. You don't want a change in one copy to ripple through the others.
 
 Declare a record struct:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="Measurement":::
 
-Then use the record struct:
+Use the record struct:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="RecordStructDemo":::
 
 Assigning `temp` to `copy` creates an independent value. The `with` expression produces a new value without touching the original—the same pattern as a record class, but with copy-on-assign behavior instead of copy-by-reference.
 
-**When to reach for a record struct:**
-
-- The data is small (a few primitive fields).
-- You want value equality and `with` support.
-- Copying is cheaper than heap allocation—common for measurements, coordinates, and similar lightweight data.
-
-For more context, see [Records](../types/records.md) and [Structure types](../types/structs.md).
+A **record struct** fits when the data is small (a few primitive fields) and copying is cheaper than heap allocation. You get value equality and `with` support just like a record class, with true value semantics underneath. Measurements, coordinates, and similar lightweight data are natural candidates. For more context, see [Records](../types/records.md) and [Structure types](../types/structs.md).
 
 ## Use a class when you need mutable state and behavior
 
-Classes are reference types with identity. Two variables can point to the same object, and mutations through one variable are visible through the other. Reach for a class when an entity carries mutable state, exposes behavior, or needs to be tracked by reference.
+When a customer walks up to the counter, the barista starts an order and adds items one at a time. The total grows, the status changes from "Pending" to "Ready," and two orders placed at the same time—even with identical items—are still distinct orders.
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="Order":::
 
-The `Order` class tracks items, computes a running total, and exposes a settable `Status`. This kind of mutation-heavy, behavior-rich type is a natural fit for a class.
-
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="ClassDemo":::
 
-**When to reach for a class:**
-
-- The object has mutable state that changes over its lifetime.
-- Behavior (methods) is central to the type's purpose.
-- Identity matters—two orders with the same items are still distinct orders.
-
-For more detail, see [Classes, structs, and records](../types/classes.md).
+The `Order` class tracks items, computes a running total, and exposes a settable `Status`. A **class** is the right tool here because the object carries mutable state that changes over its lifetime, behavior (methods) is central to the type's purpose, and identity matters—two orders with the same items are still distinct orders. For more detail, see [Classes, structs, and records](../types/classes.md).
 
 ## Extend a class with inheritance
 
-Because `Order` is a class, you can derive from it to add state, behavior, or stricter rules. A `CateringOrder` adds a guest count, requires manager approval before the order can be marked ready, and overrides `ToString()` to include the extra details.
+The coffee shop starts catering events. A catering order is still an order—it has items and a total—but it also tracks a guest count and requires manager approval before the kitchen marks it ready. Rather than duplicating `Order`'s logic, derive a specialized class.
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="CateringOrder":::
 
@@ -115,21 +92,17 @@ Because `Order` is a class, you can derive from it to add state, behavior, or st
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="InheritanceDemo":::
 
-This pattern illustrates three inheritance concepts in one type:
+This single derived class illustrates three inheritance concepts:
 
 - **Added state**: `MinimumGuests` and `ApprovedBy` exist only on the derived class.
 - **Added behavior**: `Approve` is new—base `Order` doesn't know about approvals.
 - **Overridden behavior**: the `Status` setter enforces a business rule that the base class doesn't have.
 
-**When to derive from a class:**
-
-- The new type *is a* specialized version of the base type.
-- You need to reuse existing state and behavior while adding or tightening rules.
-- A shared base class is more natural than an interface because the types share implementation, not just a contract.
+Inheritance fits when the new type *is a* specialized version of the base type and you need to reuse existing state and behavior while adding or tightening rules. A shared base class is more natural than an interface when the types share implementation, not just a contract.
 
 ## Use an interface to define shared capabilities
 
-An **interface** declares a contract—a set of members that any implementing type must provide. Use an interface when unrelated types need to share a capability, or when you want to swap implementations at run time.
+The coffee shop runs different promotions—happy hour, loyalty rewards, seasonal specials. The checkout process needs to apply whichever discount is active today, without knowing the specifics of each policy. You need a way to say "anything that can apply a discount" without tying checkout to a single class.
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="Interfaces":::
 
@@ -137,13 +110,7 @@ The `Checkout` method accepts any `IDiscountPolicy`, so you can introduce new po
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="InterfaceDemo":::
 
-**When to reach for an interface:**
-
-- Multiple unrelated types share a behavior (for example, discounting, serializing, or logging).
-- You want to swap implementations at run time or in tests.
-- You need polymorphic dispatch without a common base class.
-
-For more detail, see [Interfaces](../types/interfaces.md).
+An **interface** declares a contract—a set of members that any implementing type must provide. The interface works here because the discount types are unrelated (they don't share a base class), yet checkout needs to treat them uniformly. Interfaces also make testing easy: swap in a stub policy without touching production code. For more detail, see [Interfaces](../types/interfaces.md).
 
 ## Evolve your type choices
 
@@ -161,7 +128,7 @@ Callers that previously destructured the tuple now get `ToString()` for free, va
 
 ### Struct → class: you need inheritance
 
-The `Measurement` record struct is great until you need a specialized variant—say, a calibrated reading that adjusts the value by an offset. Structs don't support inheritance, so you promote to a class hierarchy:
+The shop's maintenance team asks for calibrated readings—a sensor value adjusted by an offset. The `Measurement` record struct is great for raw data, but structs don't support inheritance, so you can't derive a calibrated variant. Promote to a class hierarchy:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="SensorReading":::
 
@@ -171,7 +138,7 @@ The `Measurement` record struct is great until you need a specialized variant—
 
 ### Class → class + interface: you need polymorphism across types
 
-The `Order` class works well on its own, but once `CateringOrder` exists, other code—checkout, reporting, printing—needs to work with *any* order. Extract an interface with the members that callers actually depend on:
+The `Order` class works well on its own, but once `CateringOrder` exists, checkout, reporting, and printing all need to handle *any* order without caring which concrete type it is. Extract an interface with the members that callers actually depend on:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="IOrder":::
 

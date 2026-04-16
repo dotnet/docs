@@ -4,17 +4,12 @@ Imports System.Security.Cryptography
 
 Module Module1
     Sub Main()
-        Dim args As String() = Environment.GetCommandLineArgs()
-        If args.Length < 2 Then
-            Console.WriteLine("Usage: aes-decrypt <hex-key>")
-            Return
-        End If
+        ' This key is for illustration purposes only and must
+        ' match the key used during encryption.
+        ' In production, use a securely stored or managed key.
+        Dim key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
 
         Try
-            ' The key must match the key used during encryption.
-            ' In production, retrieve the key from a secure key management
-            ' system rather than hardcoding it in source code.
-            Dim key As Byte() = Convert.FromHexString(args(1))
             ' Create a file stream.
             Using fileStream As New FileStream("TestData.txt", FileMode.Open)
 

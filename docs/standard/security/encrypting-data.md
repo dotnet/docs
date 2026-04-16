@@ -46,14 +46,13 @@ The following example shows the entire process of creating a stream, encrypting 
 :::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs":::
 :::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb":::
 
-The code encrypts the stream using the AES symmetric algorithm, and writes IV and then encrypted "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the key in hexadecimal:
+The code encrypts the stream using the AES symmetric algorithm, and writes IV and then encrypted "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the following text to the console:
 
 ```console
 The file was encrypted.
-Key (hex): 1A2B3C...
 ```
 
-You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md), passing the hex key as a command-line argument.
+You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md). That example and this example specify the same key.
 
 However, if an exception is raised, the code displays the following text to the console:
 

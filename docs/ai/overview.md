@@ -58,7 +58,7 @@ We recommend the following sequence of tutorials and articles for an introductio
 | Generate images             | [Generate images from text](./quickstarts/text-to-image.md) |
 | Train your own model        | [ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
-Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](./conceptual/how-genai-and-llms-work.md). If you're not sure which .NET AI tool or SDK to use for your scenario, see [Choose the right .NET AI tool](./conceptual/choose-ai-tool.md).
+Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](./conceptual/how-genai-and-llms-work.md). If you're not sure which .NET AI tool or SDK to use for your scenario, see [Decide which tool to use](./dotnet-ai-ecosystem.md#decide-which-tool-to-use).
 
 ## Next steps
 

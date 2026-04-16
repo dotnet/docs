@@ -15,6 +15,14 @@ items:
       href: ichatclient.md
     - name: The IEmbeddingGenerator interface
       href: iembeddinggenerator.md
+  - name: Evaluation libraries
+    href: evaluation/libraries.md
+  - name: Data ingestion libraries
+    href: conceptual/medi-library.md
+  - name: Vector data libraries
+    href: conceptual/mevd-library.md
+  - name: MCP client/server overview
+    href: get-started-mcp.md
   - name: Microsoft Agent Framework
     href: /agent-framework/overview/agent-framework-overview?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: C# SDK for MCP
@@ -41,8 +49,6 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: Choose the right .NET AI tool
-    href: conceptual/choose-ai-tool.md
   - name: Agents
     href: conceptual/agents.md
   - name: Tokens
@@ -59,10 +65,12 @@ items:
     href: conceptual/zero-shot-learning.md
   - name: Retrieval-augmented generation
     href: conceptual/rag.md
+  - name: Responsible AI with .NET
+    href: evaluation/responsible-ai.md
 - name: Call tools
   items:
     - name: Overview
-      href: conceptual/ai-tools.md
+      href: conceptual/calling-tools.md
       displayName: ai tool, ai function, tools, functions
     - name: "Quickstart: Execute a local function"
       href: quickstarts/use-function-calling.md
@@ -86,7 +94,7 @@ items:
       href: vector-stores/tutorial-vector-search.md
     - name: Scale Azure OpenAI with Azure Container Apps
       href: get-started-app-chat-scaling-with-azure-container-apps.md
-- name: MCP client/server
+- name: MCP client/server quickstarts
   items:
     - name: Build a minimal MCP client
       href: quickstarts/build-mcp-client.md
@@ -133,20 +141,14 @@ items:
     href: /azure/ai-services/openai/how-to/use-blocklists?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: Use Risks & Safety monitoring
     href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
-- name: Evaluation
+- name: Evaluation tutorials
   items:
-  - name: Responsible AI with .NET
-    href: evaluation/responsible-ai.md
-  - name: The Microsoft.Extensions.AI.Evaluation libraries
-    href: evaluation/libraries.md
-  - name: Tutorials
-    items:
-    - name: "Quickstart: Evaluate the quality of a response"
-      href: evaluation/evaluate-ai-response.md
-    - name: "Evaluate response quality with caching and reporting"
-      href: evaluation/evaluate-with-reporting.md
-    - name: "Evaluate response safety with caching and reporting"
-      href: evaluation/evaluate-safety.md
+  - name: "Quickstart: Evaluate the quality of a response"
+    href: evaluation/evaluate-ai-response.md
+  - name: "Evaluate response quality with caching and reporting"
+    href: evaluation/evaluate-with-reporting.md
+  - name: "Evaluate response safety with caching and reporting"
+    href: evaluation/evaluate-safety.md
 - name: Resources
   items:
   - name: Get started resources

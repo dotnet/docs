@@ -40,6 +40,12 @@ items:
         href: ../../standard/asynchronous-programming-patterns/complete-your-tasks.md
       - name: Keep async methods alive
         href: ../../standard/asynchronous-programming-patterns/keep-async-methods-alive.md
+      - name: Coordination primitives
+        items:
+        - name: Build async coordination primitives
+          href: ../../standard/asynchronous-programming-patterns/async-coordination-primitives.md
+        - name: Async semaphores, locks, and reader/writer coordination
+          href: ../../standard/asynchronous-programming-patterns/async-coordination-primitives-advanced.md
   - name: Event-based asynchronous pattern (EAP)
     items:
     - name: Documentation overview

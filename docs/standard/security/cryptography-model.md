@@ -2,6 +2,7 @@
 title: ".NET cryptography model"
 description: Review implementations of usual cryptographic algorithms in .NET. Learn the cryptography model of object inheritance and one-shots.
 ms.date: 02/26/2021
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"

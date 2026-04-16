@@ -1,5 +1,11 @@
 ﻿using System.Security.Cryptography;
 
+if (args.Length < 1)
+{
+    Console.WriteLine("Usage: aes-decrypt <hex-key>");
+    return;
+}
+
 try
 {
     using (FileStream fileStream = new("TestData.txt", FileMode.Open))

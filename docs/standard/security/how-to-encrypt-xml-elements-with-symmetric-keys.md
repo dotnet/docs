@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Encrypt XML Elements with Symmetric Keys"
 title: "How to: Encrypt XML Elements with Symmetric Keys"
 ms.date: 07/14/2020
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"

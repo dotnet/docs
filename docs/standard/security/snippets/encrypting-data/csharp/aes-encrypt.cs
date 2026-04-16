@@ -4,7 +4,7 @@ try
 {
     string keyHex;
 
-    using (FileStream fileStream = new("TestData.txt", FileMode.OpenOrCreate))
+    using (FileStream fileStream = new("TestData.txt", FileMode.Create))
     {
         using (Aes aes = Aes.Create())
         {

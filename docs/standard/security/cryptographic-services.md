@@ -2,6 +2,7 @@
 title: "Overview of encryption, signatures, and hash algorithms in .NET"
 description: Learn about encryption methods and practices in .NET, including digital signatures, random number generation, and Cryptography Next Generation (CNG) classes.
 ms.date: 03/03/2022
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "cryptography [.NET]"
   - "pattern of derived class inheritance"

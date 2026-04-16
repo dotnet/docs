@@ -205,10 +205,8 @@ namespace CryptoWalkThru
             // file (inFs) and save the decrypted file (outFs).
             using (var inFs = new FileStream(file.FullName, FileMode.Open))
             {
-                inFs.Seek(0, SeekOrigin.Begin);
-                inFs.Read(LenK, 0, 4);
-                inFs.Seek(4, SeekOrigin.Begin);
-                inFs.Read(LenIV, 0, 4);
+                inFs.ReadExactly(LenK, 0, 4);
+                inFs.ReadExactly(LenIV, 0, 4);
 
                 // Convert the lengths to integer values.
                 int lenK = BitConverter.ToInt32(LenK, 0);

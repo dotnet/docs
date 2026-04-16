@@ -2,6 +2,7 @@
 title: "Encrypting data"
 description: Learn how to encrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
 ms.date: 11/14/2022
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"

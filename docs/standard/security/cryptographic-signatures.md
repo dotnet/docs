@@ -2,6 +2,7 @@
 description: "Learn more about: Cryptographic Signatures"
 title: "Cryptographic Signatures"
 ms.date: 08/08/2022
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"

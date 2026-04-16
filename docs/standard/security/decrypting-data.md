@@ -2,6 +2,7 @@
 title: "Decrypting data"
 description: Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
 ms.date: 11/14/2022
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -38,12 +39,12 @@ CryptoStream cryptStream = new CryptoStream(
     fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
-The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key value that is used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
+The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example expects the encryption key as a hex-encoded command-line argument. You can obtain this key from the output of the symmetric encryption example in [Encrypting Data](encrypting-data.md).
 
 :::code language="csharp" source="snippets/decrypting-data/csharp/aes-decrypt.cs":::
 :::code language="vb" source="snippets/decrypting-data/vb/aes-decrypt.vb":::
 
-The preceding example uses the same key, and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
+The preceding example uses the same algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console. Pass the hex key printed by the encryption sample as the first command-line argument.
 
 ## Asymmetric decryption
 

@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Access Hardware Encryption Devices"
 title: "How to: Access Hardware Encryption Devices"
 ms.date: 07/14/2020
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"

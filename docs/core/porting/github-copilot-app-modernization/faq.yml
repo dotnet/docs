@@ -79,7 +79,7 @@ sections:
     questions:
       - question: What can the agent upgrade?
         answer: |
-          GitHub Copilot modernization helps you upgrade your .NET projects or modernize them for Azure. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Agents upgrade. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
+          GitHub Copilot modernization helps you upgrade your .NET projects or modernize them for Azure. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Microsoft Agent Framework upgrade. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
 
           The agent works with these project types:
 

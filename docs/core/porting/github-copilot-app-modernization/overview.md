@@ -35,7 +35,7 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 | **Newtonsoft.Json upgrade** | Replaces Newtonsoft.Json with System.Text.Json. | _"Upgrade from Newtonsoft.Json"_ |
 | **SqlClient upgrade** | Upgrades from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
 | **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
-| **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agents AI. | _"Upgrade my SK agents"_ |
+| **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
 
 For a full reference of all scenarios and 30+ built-in upgrade skills, see [Scenarios and skills reference](scenarios-and-skills.md).
 

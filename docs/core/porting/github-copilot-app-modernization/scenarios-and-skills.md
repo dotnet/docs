@@ -64,7 +64,7 @@ Upgrades from `System.Data.SqlClient` to `Microsoft.Data.SqlClient`. Handles the
 
 Upgrades Azure Functions from the in-process hosting model to the isolated worker model with `Program.cs` and `HostApplicationBuilder`. Includes Application Insights upgrade.
 
-### Semantic Kernel to Agents
+### Semantic Kernel to Microsoft Agent Framework
 
 Upgrades from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns.  
 

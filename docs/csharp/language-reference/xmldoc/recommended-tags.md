@@ -391,13 +391,22 @@ Add your XML comments in base classes or interfaces and let inheritdoc copy the 
 ### `<include>`
 
 ```xml
+<include file='filename' path='tagpath' />
+<include file='filename' path='tagpath[@attribName]' />
+<include file='filename' path='tagpath[@attribName="attribValue"]' />
+<include file='filename' path='tagpath[@attribName1="attribValue1"][@attribName2="attribValue2"][@attribName3]' />
+```
+
+Recommendation:
+
+```xml
 <include file='filename' path='tagpath[@name="id"]' />
 ```
 
 - `filename`: The name of the XML file containing the documentation. You can qualify the file name with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
-- `tagpath`: The path of the tags in `filename` that leads to the tag `name`. Enclose the path in single quotation marks (' ').
-- `name`: The name specifier in the tag that precedes the comments. The `name` specifier has an `id`.
-- `id`: The ID for the tag that precedes the comments. Enclose the ID in quotation marks (").
+- `path`: The path of the tags in `filename` that leads to the XML comment to use. The path may include one or multiple attributes like `name`, but they are not required. The attributes may have values like `id`, but values are not required either. Enclose the path including possible attributes in single quotation marks (' ').
+- `attribName`, `attribName1`: The names of optional attributes.
+- `attribValue`, `attribValue1`: The optional values of the attributes. If no value is specified, any value will be accepted when searching for the comment in `filename`. Enclose the attribute value in quotation marks (").
 
 By using the `<include>` tag, you can refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
 

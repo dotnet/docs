@@ -5,7 +5,7 @@ public static class SemaphoreSlimDemo
 {
     public static async Task RunAsync()
     {
-        var semaphore = new SemaphoreSlim(3);
+        using var semaphore = new SemaphoreSlim(3);
 
         Task[] tasks = Enumerable.Range(1, 6).Select(id => Task.Run(async () =>
         {
@@ -104,7 +104,7 @@ public static class SemaphoreSlimAsLockDemo
 // </SemaphoreSlimAsLock>
 
 // <AsyncLock>
-public class AsyncLock
+public class AsyncLock : IDisposable
 {
     private readonly SemaphoreSlim _semaphore = new(1, 1);
     private readonly Task<Releaser> _releaser;
@@ -135,6 +135,8 @@ public class AsyncLock
 
         public void Dispose() => _toRelease?._semaphore.Release();
     }
+
+    public void Dispose() => _semaphore.Dispose();
 }
 // </AsyncLock>
 

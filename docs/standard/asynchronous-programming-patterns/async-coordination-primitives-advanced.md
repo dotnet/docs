@@ -41,9 +41,9 @@ The `Release` method completes the `TaskCompletionSource` outside the lock, just
 > [!TIP]
 > In production code, use <xref:System.Threading.SemaphoreSlim> instead of this custom type. `SemaphoreSlim.WaitAsync` supports cancellation tokens, timeouts, and has been thoroughly tested.
 
-## Async lock — mutual exclusion across awaits
+## Async lock: mutual exclusion across awaits
 
-A lock with a count of 1 provides mutual exclusion. The C# `lock` statement and <xref:System.Threading.Lock> (.NET 9+) don't work across `await` boundaries because they're thread-affine—the thread that acquired the lock might not be the thread that resumes after the `await`. Use <xref:System.Threading.SemaphoreSlim> with a count of 1 instead:
+A lock with a count of 1 provides mutual exclusion. The C# `lock` statement and <xref:System.Threading.Lock> (.NET 9+) don't work across `await` boundaries because they're thread-affine. The thread that acquires the lock might not be the thread that resumes after the `await`. Use <xref:System.Threading.SemaphoreSlim> with a count of 1 instead:
 
 :::code language="csharp" source="./snippets/async-coordination-primitives-advanced/csharp/Program.cs" id="SemaphoreSlimAsLock":::
 :::code language="vb" source="./snippets/async-coordination-primitives-advanced/vb/Program.vb" id="SemaphoreSlimAsLock":::

@@ -55,7 +55,7 @@ Because each signal releases only one waiter, you need a collection of `TaskComp
 
 Key implementation details:
 
-- The `Set` method completes the `TaskCompletionSource` *outside* the lock. Completing a TCS inside the lock would run synchronous continuations while the lock is held, which could cause deadlocks or unexpected reentrancy.
+- The `Set` method completes the `TaskCompletionSource` *outside* the lock. Completing a TCS inside the lock runs synchronous continuations while the lock is held, which could cause deadlocks or unexpected reentrancy.
 - When `Set` is called and no waiter is queued, the signal is stored so the next `WaitAsync` call completes immediately.
 
 The following example shows a producer signaling a consumer through the event:

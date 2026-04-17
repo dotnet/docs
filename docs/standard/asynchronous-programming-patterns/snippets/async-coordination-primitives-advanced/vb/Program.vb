@@ -4,21 +4,21 @@ Imports System.Threading
 ' <SemaphoreSlimUsage>
 Public Module SemaphoreSlimDemo
     Public Async Function RunAsync() As Task
-        Dim semaphore As New SemaphoreSlim(3)
+        Using semaphore As New SemaphoreSlim(3)
+            Dim tasks As Task() = Enumerable.Range(1, 6).Select(
+                Function(id) Task.Run(Async Function()
+                    Await semaphore.WaitAsync()
+                    Try
+                        Console.WriteLine($"Task {id}: entered (count = {semaphore.CurrentCount})")
+                        Await Task.Delay(100)
+                    Finally
+                        semaphore.Release()
+                        Console.WriteLine($"Task {id}: released")
+                    End Try
+                End Function)).ToArray()
 
-        Dim tasks As Task() = Enumerable.Range(1, 6).Select(
-            Function(id) Task.Run(Async Function()
-                Await semaphore.WaitAsync()
-                Try
-                    Console.WriteLine($"Task {id}: entered (count = {semaphore.CurrentCount})")
-                    Await Task.Delay(100)
-                Finally
-                    semaphore.Release()
-                    Console.WriteLine($"Task {id}: released")
-                End Try
-            End Function)).ToArray()
-
-        Await Task.WhenAll(tasks)
+            Await Task.WhenAll(tasks)
+        End Using
     End Function
 End Module
 ' </SemaphoreSlimUsage>
@@ -88,6 +88,8 @@ End Module
 
 ' <AsyncLock>
 Public Class AsyncLock
+    Implements IDisposable
+
     Private ReadOnly _semaphore As New SemaphoreSlim(1, 1)
     Private ReadOnly _releaser As Task(Of Releaser)
 
@@ -122,6 +124,10 @@ Public Class AsyncLock
             _toRelease?._semaphore.Release()
         End Sub
     End Structure
+
+    Public Sub Dispose() Implements IDisposable.Dispose
+        _semaphore.Dispose()
+    End Sub
 End Class
 ' </AsyncLock>
 

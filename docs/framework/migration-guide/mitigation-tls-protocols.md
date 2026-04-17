@@ -9,10 +9,7 @@ ms.assetid: 33f97d13-3022-43da-8b18-cdb5c88df9c2
 ---
 # Mitigation: TLS Protocols
 
-Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes negotiate TLS 1.0, TLS 1.1, or TLS 1.2 based on OS support. The SSL 3.0 protocol and RC4 cipher are not supported.
-
-> [!WARNING]
-> This article documents a legacy compatibility change in .NET Framework 4.6. For current deployments, use operating system defaults and allow only TLS 1.2 or TLS 1.3 when available. For more information, see [Transport Layer Security (TLS) best practices with the .NET Framework](../network-programming/tls.md).
+Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes no longer support the SSL 3.0 protocol or the RC4 cipher.
   
 ## Impact  
 
@@ -20,7 +17,7 @@ Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displ
   
 - Any app that uses SSL to talk to an HTTPS server or a socket server using any of the following types: <xref:System.Net.Http.HttpClient>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, <xref:System.Net.Mail.SmtpClient>, and <xref:System.Net.Security.SslStream>.  
   
-- Any server-side app that cannot be upgraded to support modern TLS configurations, ideally TLS 1.2 or later.
+- Any server-side app that cannot be upgraded to support modern TLS configurations.
   
 ## Mitigation  
 

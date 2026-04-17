@@ -2,7 +2,6 @@
 title: SYSLIB0041 warning - Rfc2898DeriveBytes constructors with default hash algorithm and iteration counts are obsolete
 description: Learn about the obsoletion of some Rfc2898DeriveBytes constructors that generates compile-time warning SYSLIB0041.
 ms.date: 04/08/2022
-ai-usage: ai-assisted
 f1_keywords:
   - syslib0041
 ---
@@ -20,12 +19,13 @@ The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructor
 
 ## Workaround
 
-Use a different constructor overload where you can explicitly specify the iteration count (the default is 1000) and hash algorithm name (the default is <xref:System.Security.Cryptography.HashAlgorithmName.SHA1?displayProperty=nameWithType>).
+Use a different constructor overload where you can explicitly specify the iteration count and hash algorithm name.
 
-If you're using the default iteration count or default hash algorithm, move to more secure values&mdash;that is, a much larger iteration count and a FIPS-approved hash algorithm.
+For compatibility with existing values specify an iteration count of 1000 and a hash algorithm of <xref:System.Security.Cryptography.HashAlgorithmName.SHA1?displayProperty=nameWithType>.
+When generating new values, use an iteration count and hash algorithm consistent with your desired security properties.
 
-> [!IMPORTANT]
-> [NIST SP 800-132](https://csrc.nist.gov/pubs/sp/800/132/final) recommends selecting an iteration count as high as your environment can tolerate. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> with a FIPS-approved hash algorithm, as recommended by [SYSLIB0060](syslib0060.md).
+> [!TIP]
+> For information on choosing an iteration count, see [NIST SP 800-132](https://csrc.nist.gov/pubs/sp/800/132/final) Appendix A.2.2.
 
 ## Suppress a warning
 

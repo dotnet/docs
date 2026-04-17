@@ -16,7 +16,7 @@ This article presents best practices for setting up secure communication between
 
 While it is possible to specify the version of the TLS protocol to be used via the <xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols> property, it is recommended to defer to the operating system settings by using <xref:System.Security.Authentication.SslProtocols.None> value (this is the default).
 
-Deferring the decision to the OS automatically uses the most recent version of TLS available and lets the application pick up changes after OS upgrades. The operating system may also prevent use of TLS versions which are no longer considered secure. This approach aligns with [NIST SP 800-52 Rev. 2](https://csrc.nist.gov/pubs/sp/800/52/r2/final), which requires TLS 1.2 and recommends TLS 1.3 when available.
+Deferring the decision to the OS automatically uses the most recent version of TLS available and lets the application pick up changes after OS upgrades. The operating system may also prevent use of TLS versions which are no longer considered secure.
 
 ## Select cipher suites
 

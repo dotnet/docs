@@ -19,9 +19,6 @@ ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
 ---
 # Using Secure Sockets Layer
 
-> [!WARNING]
-> This article uses the historical "SSL" terminology from older .NET Framework APIs. For current guidance, use TLS rather than older SSL protocols, and prefer OS defaults. For more information, see [Transport Layer Security (TLS) best practices with the .NET Framework](tls.md).
-
 The <xref:System.Net> classes use Transport Layer Security (TLS), historically referred to as Secure Sockets Layer (SSL), to encrypt the connection for several network protocols.  
   
  For http connections, the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes use SSL to communicate with web hosts that support SSL. The decision to use SSL is made by the <xref:System.Net.WebRequest> class, based on the URI it is given. If the URI begins with "https:", SSL is used; if the URI begins with "http:", an unencrypted connection is used.  

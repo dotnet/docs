@@ -2,7 +2,6 @@
 title: ".NET cryptography model"
 description: Review implementations of usual cryptographic algorithms in .NET. Learn the cryptography model of object inheritance and one-shots.
 ms.date: 02/26/2021
-ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -65,7 +64,7 @@ In most cases, you don't need to directly reference an algorithm implementation 
 
 You can select an algorithm for different reasons: for example, for data integrity, for data privacy, or to generate a key. Symmetric and hash algorithms are intended for protecting data for either integrity reasons (protect from change) or privacy reasons (protect from viewing). Hash algorithms are used primarily for data integrity.
 
-Here is a list of recommended algorithms by application:
+Here is a partial list of algorithms by application:
 
 - Data privacy:
   - <xref:System.Security.Cryptography.Aes>
@@ -84,8 +83,6 @@ Here is a list of recommended algorithms by application:
 - Generating a key from a password:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>
 
-> [!TIP]
-> .NET's built-in password-based key derivation uses the PBKDF2 algorithm via <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>. When using PBKDF2, specify a current FIPS-approved hash algorithm and set the iteration count as high as your performance budget allows per [NIST SP 800-132](https://csrc.nist.gov/pubs/sp/800/132/final). Alternative algorithms such as Argon2id, bcrypt, or scrypt are available through third-party libraries.
 
 ## See also
 

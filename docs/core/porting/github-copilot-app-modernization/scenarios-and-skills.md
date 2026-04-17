@@ -32,7 +32,7 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 | [**Newtonsoft.Json upgrade**](#newtonsoftjson-upgrade) | Replaces Newtonsoft.Json with System.Text.Json across a solution. | _"Upgrade from Newtonsoft.Json"_ |
 | [**SqlClient upgrade**](#sqlclient-upgrade) | Upgrades System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient to the modern package"_ |
 | [**Azure Functions upgrade**](#azure-functions-upgrade) | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
-| [**Semantic Kernel to Agents**](#semantic-kernel-to-agents) | Upgrades from SK Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
+| [**Semantic Kernel to Agents**](#semantic-kernel-to-microsoft-agent-framework) | Upgrades from SK Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
 
 For an end-to-end walkthrough, see [Core concepts](concepts.md).
 

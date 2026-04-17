@@ -43,7 +43,7 @@ Track long-running work in an owner component and await tracked tasks during shu
 
 ## Keep ownership explicit
 
-Prefer one of these ownership models:
+Use one of these ownership models:
 
 - Return the `Task` and require callers to await it.
 - Track background tasks in a dedicated owner service.
@@ -70,11 +70,11 @@ Tie background work to a cancellation token that represents app or operation lif
 
 This flow keeps shutdown predictable and prevents partial writes or orphaned operations.
 
-## FAQ: Can the GC collect an async method before it finishes?
+## Can the GC collect an async method before it finishes?
 
 The runtime keeps the async state machine alive while continuations still reference it. You usually don't lose an in-flight async operation to garbage collection of the state machine itself.
 
-You still can lose correctness if you lose ownership of the returned task, dispose required resources early, or let the process end before completion. Focus on task ownership and coordinated shutdown.
+You can still lose correctness if you lose ownership of the returned task, dispose required resources early, or let the process end before completion. Focus on task ownership and coordinated shutdown.
 
 ## See also
 

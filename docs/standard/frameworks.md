@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/06/2025
+ms.date: 04/15/2026
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
@@ -207,6 +207,35 @@ public class MyClass
     }
 }
 ```
+
+### TargetFramework values are aliases
+
+The `TargetFramework` property value (for example, `net10.0`) is a friendly name—an alias—that the .NET SDK translates into canonical moniker properties. Specifically, the SDK sets the following properties from the `TargetFramework` value:
+
+- `TargetFrameworkMoniker` (for example, `.NETCoreApp,Version=v10.0`)
+- `TargetFrameworkIdentifier` (for example, `.NETCoreApp`)
+- `TargetFrameworkVersion` (for example, `v10.0`)
+- `TargetPlatformMoniker`, `TargetPlatformIdentifier`, and `TargetPlatformVersion` (when targeting a specific platform)
+
+NuGet and the .NET SDK use these moniker properties—not the `TargetFramework` string—for package compatibility checks and build logic. This translation already happens for OS-specific TFMs. For example, `net10.0-windows` translates to `TargetFrameworkMoniker` = `.NETCoreApp,Version=v10.0` and `TargetPlatformMoniker` = `Windows,Version=7.0`.
+
+Because the alias is just a name, the `TargetFramework` value can be any alphanumeric string, as long as the corresponding moniker properties are set correctly. The following project file uses a custom alias named `banana` and explicitly sets the moniker properties so that the project builds and restores for .NET 10.0:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>banana</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'banana' ">
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkMoniker>.NETCoreApp,Version=v10.0</TargetFrameworkMoniker>
+  </PropertyGroup>
+</Project>
+```
+
+For more information about these properties, see the [TargetFramework](../core/project-sdk/msbuild-props.md#targetframework) MSBuild property reference.
 
 ## Preprocessor symbols
 

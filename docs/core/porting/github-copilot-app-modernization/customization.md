@@ -1,17 +1,17 @@
 ---
 title: Customize GitHub Copilot modernization
-description: "Learn how to customize GitHub Copilot modernization with custom skills, custom scenarios, scenario artifact edits, and chat instructions to encode your team's migration patterns."
+description: "Learn how to customize GitHub Copilot modernization with custom skills, custom scenarios, scenario artifact edits, and chat instructions to encode your team's upgrade patterns."
 ms.topic: concept-article
 ms.date: 04/06/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to customize GitHub Copilot modernization so that I can encode my team's migration patterns, enforce coding standards during upgrades, and define custom upgrade workflows.
+#customer intent: As a developer, I want to customize GitHub Copilot modernization so that I can encode my team's upgrade patterns, enforce coding standards during upgrades, and define custom upgrade workflows.
 
 ---
 
 # Customize GitHub Copilot modernization
 
-GitHub Copilot modernization is extensible. The agent provides multiple customization points to encode your team's migration patterns, enforce coding standards during upgrades, and define new upgrade workflows.
+GitHub Copilot modernization is extensible. The agent provides multiple customization points to encode your team's upgrade patterns, enforce coding standards during upgrades, and define new upgrade workflows.
 
 ## Customization points overview
 
@@ -101,13 +101,13 @@ Each task in `tasks/{taskId}/task.md` contains the task specification and workin
 
 ## Create custom skills
 
-Skills are the primary extension point for the agent. A skill is a Markdown file with a metadata header that teaches the agent how to handle a specific migration, pattern, or task.
+Skills are the primary extension point for the agent. A skill is a Markdown file with a metadata header that teaches the agent how to handle a specific upgrade, pattern, or task.
 
 ### Where to place custom skills
 
 | Location | Scope | Use when |
 |---|---|---|
-| `.github/skills/my-skill.md` | Repository (shared with team) | Team-wide migration patterns |
+| `.github/skills/my-skill.md` | Repository (shared with team) | Team-wide upgrade patterns |
 | `.github/upgrades/skills/my-skill.md` | Repository (upgrade-specific) | Skills specific to upgrade scenarios |
 | `%UserProfile%/.copilot/skills/my-skill.md` | User profile (personal, all repos) | Personal preferences and patterns |
 
@@ -181,7 +181,7 @@ equivalents, updating configuration, and verifying behavior.
 
 | Field | Required | Description |
 |---|---|---|
-| `name` | Yes | Unique identifier in kebab-case. Start with a gerund verb (for example, `migrating-`, `converting-`). Maximum 64 characters. |
+| `name` | Yes | Unique identifier in kebab-case. Start with a gerund verb (for example, `upgrading-`, `converting-`). Maximum 64 characters. |
 | `description` | Yes | Determines when the agent loads the skill. Include trigger phrases, such as words and patterns that should activate the skill. |
 | `metadata.discovery` | No | Controls when the skill loads: `preload` (always available), `lazy` (on-demand when description matches, default and recommended), or `scenario` (defines a workflow orchestrator). |
 | `metadata.traits` | No | Keywords describing the technologies in your project, such as `.NET`, `CSharp`, `VisualBasic`, or `DotNetCore`. |
@@ -192,8 +192,8 @@ equivalents, updating configuration, and verifying behavior.
 - **Include clear, step-by-step workflows:** Number the steps. Be explicit about what files to change and what commands to run.
 - **Include success criteria:** Without success criteria, the agent doesn't know when to stop. Use checkboxes or a clear list of verifiable conditions.
 - **Include error handling:** Anticipate common failure modes, such as missing packages, build failures, or broken tests.
-- **Keep skills focused:** One skill per migration or task type. A skill for "migrating FooBar v2 to v3" is better than "migrating all internal libraries."
-- **Name with a gerund verb:** Use `migrating-foobar-v2-to-v3`, not `foobar-migration` or `foobar-v3`.
+- **Keep skills focused:** One skill per upgrade or task type. A skill for "upgrading FooBar v2 to v3" is better than "upgrading all internal libraries."
+- **Name with a gerund verb:** Use `upgrading-foobar-v2-to-v3`, not `foobar-upgrade` or `foobar-v3`.
 - **Use `lazy` discovery:** Use `lazy` discovery for most custom skills to avoid bloating the agent's context window.
 
 ## Create custom scenarios

@@ -32,12 +32,12 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 |---|---|---|
 | **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
 | **SDK-style conversion** | Converts legacy project format to SDK-style. | _"Convert to SDK-style"_ |
-| **Newtonsoft.Json migration** | Replaces Newtonsoft.Json with System.Text.Json. | _"Migrate from Newtonsoft.Json"_ |
-| **SqlClient migration** | Migrates from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
+| **Newtonsoft.Json upgrade** | Replaces Newtonsoft.Json with System.Text.Json. | _"Upgrade from Newtonsoft.Json"_ |
+| **SqlClient upgrade** | Upgrades from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
 | **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
-| **Semantic Kernel to Agents** | Migrates Semantic Kernel Agents to Microsoft Agents AI. | _"Migrate my SK agents"_ |
+| **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
 
-For a full reference of all scenarios and 30+ built-in migration skills, see [Scenarios and skills reference](scenarios-and-skills.md).
+For a full reference of all scenarios and 30+ built-in upgrade skills, see [Scenarios and skills reference](scenarios-and-skills.md).
 
 ## Provide feedback
 
@@ -154,7 +154,7 @@ Copilot starts by examining your project structure, dependencies, and code patte
 
 After the assessment, Copilot runs the following three stages:
 
-1. **Assessment:** Copilot examines your project structure, dependencies, and code patterns, then presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project migration approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
+1. **Assessment:** Copilot examines your project structure, dependencies, and code patterns, then presents strategy decisions for your review, such as the upgrade strategy (bottom-up, top-down, or all-at-once), project upgrade approach, technology modernization options, and compatibility handling. Copilot saves confirmed decisions to `upgrade-options.md`.
 
 1. **Planning:** Copilot converts the assessment and your confirmed options into a detailed specification. The `plan.md` file documents upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
 
@@ -225,5 +225,5 @@ The tool collects data about project types, intent to upgrade, and upgrade durat
 - [Scenarios and skills reference](scenarios-and-skills.md)
 - [Best practices](best-practices.md)
 - [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
-- [Quickstart: Migrate a .NET project](../../../azure/migration/appmod/quickstart.md)
+- [Quickstart: Migrate a .NET project to Azure](../../../azure/migration/appmod/quickstart.md)
 - [GitHub Copilot modernization FAQ](faq.yml)

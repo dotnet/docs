@@ -41,7 +41,7 @@ Natural language works. Try these examples:
 | What you want | What to say |
 |---|---|
 | Upgrade a full solution | _"Upgrade my solution to .NET 10"_ |
-| Migrate a specific technology | _"Help me migrate from EF6 to EF Core"_ |
+| Upgrade a specific technology | _"Help me upgrade from EF6 to EF Core"_ |
 | See what's available | _"What scenarios are available?"_ |
 | Upgrade one project first | _"Upgrade the API project first, then the shared library"_ |
 | Understand the current state | _"What's the current status of my upgrade?"_ |
@@ -197,7 +197,7 @@ The agent maintains several files in `.github/upgrades/{scenarioId}/` that give 
 |---|---|
 | `tasks.md` | Visual progress overview with all tasks, status indicators (✅ done, 🔄 in progress, ⬜ pending), and a progress bar |
 | `execution-log.md` | Complete chronological audit trail of every action the agent took, when, and what happened |
-| `assessment.md` | The initial analysis of your solution, including dependencies, breaking changes, and migration complexity |
+| `assessment.md` | The initial analysis of your solution, including dependencies, breaking changes, and upgrade complexity |
 | `scenario-instructions.md` | Your preferences and the agent's learned decisions |
 | `tasks/{taskId}/progress-details.md` | Per-task details: build errors encountered, how they were resolved, test results, and decisions made |
 
@@ -221,7 +221,7 @@ If a task is in progress from a previous session, the agent recognizes the task 
 
 ## Work across multiple sessions
 
-Large upgrades, such as a 20-project solution, a complex framework migration, or a multi-step modernization, often span multiple sessions over days or weeks. The agent handles multi-session work naturally:
+Large upgrades, such as a 20-project solution, a complex framework upgrade, or a multi-step modernization, often span multiple sessions over days or weeks. The agent handles multi-session work naturally:
 
 - **Persistent state:** Everything is in `.github/upgrades/`. No in-memory state to lose.
 - **Session independence:** Each chat session is independent. The agent reconstructs its context from the state files every time.
@@ -245,7 +245,7 @@ Not sure what the agent can do or where things stand? Ask:
 | Assessment details | _"Show me the assessment"_ or _"What did the assessment find?"_ |
 | Available skills | _"What skills do you have?"_ or _"List your skills"_ |
 | A specific decision | _"Why did you choose X over Y?"_ |
-| Risks or concerns | _"What are the risks with this migration?"_ |
+| Risks or concerns | _"What are the risks with this upgrade?"_ |
 
 ## Communicate effectively
 
@@ -259,7 +259,7 @@ _"Upgrade just the Data.Access and Data.Models projects to .NET 10"_ gives the a
 
 The agent doesn't know your business constraints unless you share them:
 
-- _"We're migrating because Azure App Service is dropping .NET 8 support in November."_
+- _"We're upgrading because Azure App Service is dropping .NET 8 support in November."_
 - _"This is a high-traffic production service—zero behavioral changes in the API responses."_
 
 ### Express constraints
@@ -267,14 +267,14 @@ The agent doesn't know your business constraints unless you share them:
 Tell the agent what it _shouldn't_ do, not just what it should:
 
 - _"Don't change the public API surface—we have external consumers."_
-- _"We can't upgrade Newtonsoft.Json yet—the team that owns shared contracts hasn't migrated."_
+- _"We can't upgrade Newtonsoft.Json yet—the team that owns shared contracts hasn't upgraded."_
 - _"Don't touch the legacy reporting module—that's being rewritten separately."_
 
 ### Give feedback
 
 Positive feedback helps just as much as corrections and confirms the agent is on the right track:
 
-- _"That migration looks great—do the same approach for the other repository project."_
+- _"That upgrade looks great—do the same approach for the other repository project."_
 - _"That works, but we prefer constructor injection over property injection in this codebase."_
 
 ## Quick reference

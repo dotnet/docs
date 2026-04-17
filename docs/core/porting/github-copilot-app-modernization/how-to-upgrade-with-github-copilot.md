@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 GitHub Copilot modernization is an AI-powered agent that upgrades .NET projects to newer versions and migrates applications to Azure. This article walks you through upgrading your .NET applications with a structured three-stage workflow: assessment, planning, and execution.
 
-The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. The agent supports upgrading from older .NET versions to the latest, including migrations from .NET Framework to modern .NET.
+The modernization agent analyzes your projects and dependencies, creates detailed upgrade documentation at each stage, and helps with code fixes throughout the process. The agent supports upgrading from older .NET versions to the latest, including upgrades from .NET Framework to modern .NET.
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ After the assessment, Copilot evaluates your solution and presents upgrade strat
 The options typically include:
 
 - **Upgrade strategy.** Bottom-up (leaf projects first), top-down (application first), or all-at-once (all projects in one pass).
-- **Project migration approach.** In-place rewrite or side-by-side migration.
+- **Project upgrade approach.** In-place rewrite or side-by-side upgrade.
 - **Technology modernization.** Whether to upgrade technologies like Entity Framework (EF6 to EF Core), dependency injection, logging, and configuration.
 - **Package management.** Whether to adopt Central Package Management.
 - **Compatibility handling.** How to address unsupported APIs, incompatible packages, and platform-specific functionality.
@@ -135,7 +135,7 @@ To review and customize the plan:
 1. Edit the plan to adjust upgrade steps or add context as needed.
 
    > [!CAUTION]
-   > The plan depends on project interdependencies. The upgrade doesn't succeed if you modify the plan in a way that prevents the migration path from completing. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
+   > The plan depends on project interdependencies. The upgrade doesn't succeed if you modify the plan in a way that prevents the upgrade path from completing. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
 
 1. Tell Copilot to _move to the execution stage._
 

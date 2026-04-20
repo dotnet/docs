@@ -228,11 +228,10 @@ When editing, focus on these areas in order of priority:
 
 ### Spacing and Punctuation
 - ALWAYS use one space after periods, colons, question marks
-- ALWAYS use no spaces around dashes: "Use pipelines—logical groups—to consolidate"
 - ALWAYS add blank lines around markdown elements (don't add extra if they exist)
-- TRY to avoid emdash and the various alternative dash characters; try to use other punctuation or formatting to achieve the same effect. Choose words over characters when possible
-- OK to use compound adjectives with hyphens
-- OK to use emdash mid-sentence for a clause or example; use sparingly
+- TRY to avoid em dashes (—) where possible; prefer other punctuation, formatting, or clearer wording
+- If you must use an em dash (—), use no spaces around it: "Use pipelines—logical groups—to consolidate"
+- OK to use hyphens (-) in compound adjectives
 
 ## API REFERENCES
 

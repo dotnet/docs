@@ -3,8 +3,9 @@ using System.IO.Compression;
 // <SafeExtractEntry>
 void SafeExtractEntry(ZipArchiveEntry entry, string destinationPath, long maxDecompressedSize)
 {
-    // The runtime enforces that entry.Open() will never produce more than
-    // entry.Length bytes, so checking the declared size is sufficient.
+    // entry.Length is the declared uncompressed size from the archive header.
+    // A malicious archive could spoof this value. For defense in depth,
+    // also monitor actual bytes read during decompression.
     if (entry.Length > maxDecompressedSize)
     {
         throw new InvalidOperationException(
@@ -65,7 +66,7 @@ void DangerousExtract(string extractDir)
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
         string destinationPath = Path.Combine(extractDir, entry.FullName);
-        entry.ExtractToFile(destinationPath, overwrite: true); // May write outside of `extractDir`
+        entry.ExtractToFile(destinationPath, overwrite: true); // Might write outside of `extractDir`
     }
 }
 // </VulnerablePattern>

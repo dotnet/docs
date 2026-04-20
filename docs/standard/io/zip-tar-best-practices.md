@@ -20,7 +20,7 @@ helpviewer_keywords:
 
 .NET provides built-in support for two of the most common archive formats:
 
-- **ZIP** (`System.IO.Compression`): A compressed archive format that bundles multiple files and directories into a single file. ZIP supports per-entry compression (Deflate, Deflate64, Stored). The primary types are <xref:System.IO.Compression.ZipArchive> for reading and writing archives, <xref:System.IO.Compression.ZipFile> for file-based convenience methods, and `ZipFileExtensions` for extraction helpers.
+- **ZIP** (`System.IO.Compression`): A compressed archive format that bundles multiple files and directories into a single file. ZIP supports per-entry compression (Deflate, Deflate64, Stored). The primary types are <xref:System.IO.Compression.ZipArchive> for reading and writing archives, <xref:System.IO.Compression.ZipFile> for file-based convenience methods, and <xref:System.IO.Compression.ZipFileExtensions> for extraction helpers.
 - **TAR** (`System.Formats.Tar`): A Unix-origin archive format that stores files, directories, and metadata (permissions, ownership, timestamps) without compression. .NET supports the V7, UStar, PAX, and GNU formats. The primary types are <xref:System.Formats.Tar.TarReader> and <xref:System.Formats.Tar.TarWriter> for streaming access, and <xref:System.Formats.Tar.TarFile> for file-based convenience methods. TAR is often combined with a compression layer (for example, `GZipStream` for `.tar.gz` files).
 
 This article helps you choose the right API, use the convenience methods effectively for trusted input, and safely handle untrusted archives.

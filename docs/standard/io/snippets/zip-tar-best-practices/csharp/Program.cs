@@ -3,9 +3,8 @@ using System.IO.Compression;
 // <SafeExtractEntry>
 void SafeExtractEntry(ZipArchiveEntry entry, string destinationPath, long maxDecompressedSize)
 {
-    // entry.Length is the declared uncompressed size from the archive header.
-    // A malicious archive could spoof this value. For defense in depth,
-    // also monitor actual bytes read during decompression.
+    // The runtime enforces that entry.Open() will never produce more than
+    // entry.Length bytes, so checking the declared size is sufficient.
     if (entry.Length > maxDecompressedSize)
     {
         throw new InvalidOperationException(
@@ -196,6 +195,13 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
 // <ValidateSymlink>
 bool IsLinkTargetSafe(TarEntry entry, string fullDestDir)
 {
+    // A symlink with an absolute (rooted) target is resolved from the filesystem root, not from the extraction directory.
+    if (Path.IsPathRooted(entry.LinkName))
+        return false;
+
+    if (!fullDestDir.EndsWith(Path.DirectorySeparatorChar))
+        fullDestDir += Path.DirectorySeparatorChar;
+
     string resolvedTarget;
 
     if (entry.EntryType is TarEntryType.SymbolicLink)

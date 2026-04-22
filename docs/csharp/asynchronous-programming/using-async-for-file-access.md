@@ -75,7 +75,7 @@ For each file, the <xref:System.IO.Stream.WriteAsync*> method returns a task tha
 
 The example closes all <xref:System.IO.FileStream> instances in a `finally` block after the tasks are complete. If each `FileStream` was instead created in a `using` statement, the `FileStream` might be disposed of before the task was complete.
 
-The async approach avoids blocking the calling thread while I/O is pending. The OS decides how to schedule the actual I/O operations, so any throughput improvement depends on OS and hardware rather than .NET's async mechanism.
+The async approach avoids blocking the calling thread while I/O is pending. In many cases, throughput improvements depend on the OS, the hardware, and, on some platforms, .NET runtime behavior such as thread pool limits and scheduling.
 
 :::code language="csharp" source="snippets/file-access/Program.cs" id="ParallelWriteText":::
 

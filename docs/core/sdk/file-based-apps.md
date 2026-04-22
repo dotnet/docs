@@ -1,7 +1,7 @@
 ---
 title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
-ms.date: 12/05/2025
+ms.date: 04/22/2026
 ai-usage: ai-assisted
 ---
 # File-based apps
@@ -21,7 +21,7 @@ In this article, learn how to create, configure, and work with file-based apps e
 
 ## Supported directives
 
-File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives include: `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
+File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives include: `#:package`, `#:project`, `#:include`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
 
 ### `#:package`
 
@@ -43,6 +43,17 @@ References another project file or directory that contains a project file.
 ```csharp
 #:project ../SharedLibrary/SharedLibrary.csproj
 ```
+
+### `#:include`
+
+Includes another C# source file in your file-based app.
+
+```csharp
+#:include helpers.cs
+#:include models/customer.cs
+```
+
+The `#:include` directive is available in .NET 11 Preview 3 and .NET SDK 10.0.3xx and later.
 
 ### `#:property`
 
@@ -215,6 +226,7 @@ Different SDKs include other file types:
 
 - `Microsoft.NET.Sdk.Web` includes `*.json` configuration files.
 - Non-default SDKs include ResX resource files.
+- Files referenced by `#:include` are included for compilation.
 
 ## Native AOT publishing
 

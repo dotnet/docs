@@ -90,7 +90,7 @@ The following table shows the possible values for the `rollForward` key:
 | `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
-| `disable`     | Doesn't roll forward. An exact match is required. This value is recommended when you use lock files so your SDK version and your dependency graph stay in lockstep. |
+| `disable`     | Don't roll forward. An exact match is required. When you use lock files, set this value so the SDK version and dependency graph stay in lockstep. |
 
 #### `paths`
 

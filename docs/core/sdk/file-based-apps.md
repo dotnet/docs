@@ -226,7 +226,6 @@ Different SDKs include other file types:
 
 - `Microsoft.NET.Sdk.Web` includes `*.json` configuration files.
 - Non-default SDKs include ResX resource files.
-- Files referenced by `#:include` are included for compilation.
 
 ## Native AOT publishing
 

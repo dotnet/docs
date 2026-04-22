@@ -23,6 +23,17 @@ In this article, learn how to create, configure, and work with file-based apps e
 
 File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives are: `#:include`, `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
 
+### `#:include`
+
+Includes another C# source file in the file-based app.
+
+```csharp
+#:include helpers.cs
+#:include models/customer.cs
+```
+
+The `#:include` directive is available in .NET 11 Preview 3 and .NET SDK 10.0.3xx and later.
+
 ### `#:package`
 
 Adds a NuGet package reference to your application.
@@ -35,17 +46,6 @@ Adds a NuGet package reference to your application.
 
 > [!NOTE]
 > Omitting the version number after the package name currently only works when you use central package management with a `Directory.Packages.props` file. Otherwise, specify the version number explicitly, or add `@*` after the package name to use the latest version.
-
-### `#:include`
-
-Includes another C# source file in the file-based app.
-
-```csharp
-#:include helpers.cs
-#:include models/customer.cs
-```
-
-The `#:include` directive is available in .NET 11 Preview 3 and .NET SDK 10.0.3xx and later.
 
 ### `#:project`
 

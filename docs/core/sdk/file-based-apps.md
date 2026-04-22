@@ -27,7 +27,7 @@ File-based apps use directives prefixed with `#:` to configure the build and run
 
 Includes another C# source file in the file-based app.
 
-Included files compile as part of the same app, and they can add types, top-level statements, and other declarations.
+Included files compile as part of the same app. They can add types, top-level statements, and other declarations.
 
 ```csharp
 #:include helpers.cs

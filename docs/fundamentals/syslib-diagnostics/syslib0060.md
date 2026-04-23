@@ -33,6 +33,26 @@ to
 byte[] derivedKey = Rfc2898DeriveBytes.Pbkdf2(password, salt, iterations, hashAlgorithm, 64);
 ```
 
+Note that for constructors of `Rfc2898DeriveBytes` which took a salt size, the salt will need to be manually created (<xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> does not have an overload taking a salt size).
+For consistency with the previous implementation, use <xref:System.Security.Cryptography.RandomNumberGenerator.Fill*?displayProperty=nameWithType> to fill an existing array with cryptographically secure bytes, or <xref:System.Security.Cryptography.RandomNumberGenerator.GetBytes*?displayProperty=nameWithType> to create a new array with cryptographically secure bytes.
+
+Example:
+
+```csharp
+using System.Security.Cryptography;
+
+Rfc2898DeriveBytes kdf = new Rfc2898DeriveBytes(password, saltSize, iterations, hashAlgorithm);
+byte[] salt = kdf.Salt;
+byte[] derivedKey = kdf.GetBytes(64);
+```
+
+should change to
+
+```csharp
+byte[] salt = RandomNumberGenerator.GetBytes(saltSize);
+byte[] derivedKey = Rfc2898DeriveBytes.Pbkdf2(password, salt, iterations, hashAlgorithm, 64);
+```
+
 ## Suppress a warning
 
 If you must use the obsolete API, you can suppress the warning in code or in your project file.

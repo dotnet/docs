@@ -1518,7 +1518,7 @@ The following table summarizes the diagnostics and behaviors affected by `SDKAna
 > [!NOTE]
 > The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.
 
-## Microsoft.Testing.Platform (MTP)&ndash;related properties
+## Microsoft.Testing.Platform&ndash;related properties
 
 The following MSBuild properties are documented in this section:
 

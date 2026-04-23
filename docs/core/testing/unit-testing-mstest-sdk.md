@@ -27,10 +27,10 @@ By default, MSTest SDK relies on [MTP](./unit-testing-mstest-running-tests.md), 
 
 You can customize the MTP experience through a set of [NuGet package extensions](./microsoft-testing-platform-features.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
-- [MTP profile](#microsofttestingplatform-profile)
+- [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
 
-### MTP profile
+### Microsoft.Testing.Platform profile
 
 The concept of *profiles* allows you to select the default set of configurations and extensions that will be applied to your test project.
 

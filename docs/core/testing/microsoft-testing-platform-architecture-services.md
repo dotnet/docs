@@ -6,7 +6,7 @@ ms.author: mrossignoli
 ms.date: 07/11/2024
 ---
 
-# Microsoft.Testing.Platform (MTP) services
+# Microsoft.Testing.Platform services
 
 The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the _service locator pattern_ for the testing platform.
 

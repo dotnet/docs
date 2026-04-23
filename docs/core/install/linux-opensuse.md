@@ -17,12 +17,12 @@ ms.custom: linux-related-content
 
 The following table is a list of currently supported .NET releases on openSUSE Leap 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE Leap is no longer supported.
 
-| openSUSE Leap | .NET     |
-|---------------|----------|
-| 16            | 10, 9, 8 |
-| 15.6*         | 10, 9, 8 |
+| openSUSE Leap    | .NET     |
+|------------------|----------|
+| 16               | 10, 9, 8 |
+| 15.6<sup>*</sup> | 10, 9, 8 |
 
-<sup>* Support ends April 30th, 2026.</sup>
+<sup>* Support ends April 30, 2026.</sup>
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

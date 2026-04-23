@@ -6,6 +6,7 @@ ms.date: 04/14/2026
 # April 2026 cumulative update
 
 _Released April 14, 2026_
+_Updated April 22, 2026 to include known issue_
 
 ## Summary of what's new in this release
 
@@ -54,7 +55,7 @@ Addresses an issue with running a WCF NamedPipe service inside a Win32 app conta
 
 ## Known issues in this release
 
-This release contains no known issues.
+This update may fail to install when (applied through DISM)[https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows?view=windows-11] to an offline Windows 10 IoT Enterprise LTSC 21H2 image. We are working on a resolution, and a fix is planned for inclusion in an upcoming .NET Framework update.
 
 ## Summary tables
 

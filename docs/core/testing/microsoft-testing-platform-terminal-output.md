@@ -4,6 +4,7 @@ description: Learn about the built-in terminal test reporter in Microsoft.Testin
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026
+ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

@@ -2,6 +2,7 @@
 title: dotnet test command with Microsoft.Testing.Platform
 description: The dotnet test command is used to execute unit tests in a given project using Microsoft.Testing.Platform (MTP).
 ms.date: 02/03/2026
+ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)

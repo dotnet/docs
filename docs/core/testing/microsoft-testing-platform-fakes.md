@@ -4,6 +4,7 @@ description: Learn about the Microsoft.Testing.Platform Fakes extension capabili
 author: drognanar
 ms.author: arturs
 ms.date: 02/25/2026
+ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

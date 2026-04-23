@@ -4,6 +4,7 @@ description: Learn how to create a custom test framework for Microsoft.Testing.P
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 02/24/2026
+ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: Migration guide from VSTest to Microsoft.Testing.Platform
-description: Learn how to migrate from VSTest to Microsoft.Testing.Platform
+description: Step-by-step guide to migrate from VSTest to Microsoft.Testing.Platform (MTP), including argument mapping, project configuration, and CI pipeline updates.
 author: Youssef1313
 ms.author: ygerges
 ms.date: 09/15/2025
+ms.custom: microsoft-testing-platform,MTP
 ---
 
 # Migrate from VSTest to Microsoft.Testing.Platform

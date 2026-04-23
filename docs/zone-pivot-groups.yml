@@ -144,6 +144,8 @@ groups:
   pivots:
   # order: lts versions (newest to oldest), interim versions (newest to oldest), other
   # see: https://github.com/dotnet/docs/issues/47461
+    - id: os-linux-ubuntu-2604
+      title: "26.04"
     - id: os-linux-ubuntu-2404
       title: "24.04"
     - id: os-linux-ubuntu-2204

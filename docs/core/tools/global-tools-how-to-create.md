@@ -51,7 +51,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
    The program has two methods:
 
-   - `Main` checks whether any arguments were passed. With no arguments, it calls `ShowInfo()`. With any argument, it prints the tool version.
+   - The startup code checks displays the version of the command and then calls the `ShowInfo` method.
    - `ShowInfo` displays three sections of information:
      - **Runtime** — the .NET version, framework description, and runtime identifier, using `Environment.Version` and `RuntimeInformation`.
      - **System** — OS description, architecture, machine name, and processor count.

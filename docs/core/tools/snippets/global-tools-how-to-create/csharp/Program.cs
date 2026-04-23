@@ -5,18 +5,14 @@ using System.Runtime.InteropServices;
 // </usingdirectives>
 
 // <mainmethod>
-if (args.Length == 0)
-{
-    ShowInfo();
-    return;
-}
-
 var versionString = Assembly.GetEntryAssembly()?
                         .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
                         .InformationalVersion
                         .ToString();
 
 Console.WriteLine($"dotnet-env v{versionString}");
+
+ShowInfo();
 // </mainmethod>
 
 // <showinfomethod>

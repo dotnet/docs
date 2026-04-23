@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Asynchronous file access (C#)
 
-Use the async feature to access files. By using the async feature, you can call into asynchronous methods without using callbacks or splitting your code across multiple methods or lambda expressions. To make synchronous code asynchronous, call an asynchronous method instead of a synchronous method and add a few keywords to the code.
+By using the async feature to access files, you can call into asynchronous methods without using callbacks or splitting your code across multiple methods or lambda expressions. To make synchronous code asynchronous, call an asynchronous method instead of a synchronous method and add a few keywords to the code.
 
 Consider adding asynchrony to file access calls for these reasons:
 
@@ -71,7 +71,7 @@ The following examples start multiple async write operations. The OS (not .NET) 
 
 ### Finite control example
 
-For each file, the <xref:System.IO.Stream.WriteAsync*> method returns a task that is added to a list of tasks. The `await Task.WhenAll(tasks);` statement exits the method and resumes within the method when file processing is complete for all of the tasks.
+For each file, the <xref:System.IO.Stream.WriteAsync*> method returns a task that's added to a list of tasks. The `await Task.WhenAll(tasks);` statement exits the method and resumes within the method when file processing is complete for all of the tasks.
 
 The example closes all <xref:System.IO.FileStream> instances in a `finally` block after the tasks are complete. If each `FileStream` was instead created in a `using` statement, the `FileStream` might be disposed of before the task was complete.
 

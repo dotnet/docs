@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform (MTP) services overview
-description: Learn about the MTP available services.
+title: Microsoft.Testing.Platform services overview
+description: Learn about the available Microsoft.Testing.Platform (MTP) services.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024

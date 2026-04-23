@@ -63,7 +63,7 @@ The text is buffered and, in this case, placed into a <xref:System.Text.StringBu
 
 ## Multiple asynchronous I/O operations
 
-The following examples start multiple async write operations. The OS (not .NET) schedules and executes these operations, so actual concurrency depends on OS and hardware.
+The following examples start multiple async write operations. The runtime queues these operations, and the underlying implementation might use operating system (OS) async I/O or thread pool threads depending on the platform and configuration, so actual concurrency depends on OS and hardware.
 
 ### Simple example
 

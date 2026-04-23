@@ -120,7 +120,7 @@ End Function
 
 ## Multiple asynchronous I/O operations
 
-The following example starts multiple async write operations. The OS (not .NET) schedules and executes these operations, so actual concurrency depends on OS and hardware. For each file, the <xref:System.IO.Stream.WriteAsync*> method returns a task that is added to a list of tasks. The `Await Task.WhenAll(tasks)` statement exits the method and resumes within the method when file processing is complete for all of the tasks.
+The following example starts multiple async write operations. The runtime queues these operations, and the underlying implementation might use operating system (OS) async I/O or thread pool threads depending on the platform and configuration, so actual concurrency depends on OS and hardware. For each file, the <xref:System.IO.Stream.WriteAsync*> method returns a task that is added to a list of tasks. The `Await Task.WhenAll(tasks)` statement exits the method and resumes within the method when file processing is complete for all of the tasks.
 
 The example closes all <xref:System.IO.FileStream> instances in a `Finally` block after the tasks are complete. If each `FileStream` was instead created in a `Using` statement, the `FileStream` might be disposed of before the task was complete.
 

@@ -21,7 +21,6 @@ The following table is a list of currently supported .NET releases on SLES. Thes
 |--------|-----------|
 | 16.0   | 10, 9, 8  |
 | 15.7   | 10, 9, 8  |
-| 15.6   | 10, 9, 8  |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -119,12 +118,16 @@ This section provides information on common errors you might get while using the
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must make sure these libraries are installed:
 
+- ca-certificates
+- glibc
 - krb5
+- libgcc_s1
 - libicu
-- libopenssl3 (OpenSSL 3.x)
+- libopenssl3
+- libstdc++6
+- timezone
 
-> [!IMPORTANT]
-> Starting with .NET 8, .NET packages for SLES depend on OpenSSL 3.x (libopenssl3). This change also applies to .NET 6 and .NET 7 packages. For more information, see [.NET packages for openSUSE and SLES depend on OpenSSL 3.x](../compatibility/deployment/8.0/opensuse-sles-openssl3-dependency.md).
+For .NET 8, `libz1` (zlib) is also required.
 
 Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
 

@@ -4,7 +4,7 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 11/08/2025
+ms.date: 04/23/2026
 no-loc: ["Program Files", "dotnet"]
 ms.custom: linux-related-content
 ai-usage: ai-assisted
@@ -80,20 +80,17 @@ The following table is a list of currently supported .NET releases and the versi
 > [!TIP]
 > As a reminder, this table applies to modern .NET (as opposed to .NET Framework). To install .NET Framework, see the [.NET Framework installation guide](../../framework/install/index.md).
 
-Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
+Windows 10 support is limited to Long-Term Servicing Channel (LTSC) and Enterprise editions only. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
 | Operating System                      | .NET 10 (Architectures) | .NET 9 (Architectures) | .NET 8 (Architectures) |
 |---------------------------------------|-------------------------|------------------------|------------------------|
-| Windows 11 (24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, Arm64          | ✔️ x64, Arm64         | ✔️ x64, Arm64    |
-| Windows 10 (22H2)                     | ✔️ x64, Arm64          | ✔️ x64, Arm64         | ✔️ x64, Arm64    |
-| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86 | ✔️ x64, x86 | ✔️ x64, x86 |
-| Windows Server Core 2012 (and R2)     | ✔️ x64, x86            | ✔️ x64, x86           | ✔️ x64, x86           |
+| Windows 11 (26H1, 25H2, 24H2, 23H2 Ent/Edu) | ✔️ x64, x86, Arm64 | ✔️ x64, x86, Arm64 | ✔️ x64, x86, Arm64 |
+| Windows 10 (21H2, 1809, 1607 LTSC/Enterprise) | ✔️ x64, x86, Arm64 | ✔️ x64, x86, Arm64 | ✔️ x64, x86, Arm64 |
+| Windows Server (2025, 23H2, 2022, 2019, 2016, 2012 R2, 2012) | ✔️ x64 | ✔️ x64 | ✔️ x64 |
+| Windows Server Core (2025, 2022, 2019, 2016, 2012 R2, 2012) | ✔️ x64 | ✔️ x64, x86 | ✔️ x64 |
 | Nano Server (2025, 2022, 2019)        | ✔️ x64                 | ✔️ x64                | ✔️ x64                |
 | Windows 8.1                           | ❌                     | ❌                    | ❌                    |
 | Windows 7 SP1 [ESU][esu]              | ❌                     | ❌                    | ❌                    |
-
-> [!TIP]
-> A `+` symbol represents the minimum version.
 
 <a name="additional-deps"></a>
 

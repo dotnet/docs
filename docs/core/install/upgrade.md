@@ -1,7 +1,7 @@
 ---
 title: Upgrade to a new .NET version
 description: Learn how to upgrade an app to a new .NET version. Upgrade .NET when the current version goes out of support or when you want to use new features of .NET. Control versions of SDK, analyzers, and packages for predictable builds.
-ms.date: 10/28/2025
+ms.date: 04/23/2026
 ai-usage: ai-assisted
 ---
 

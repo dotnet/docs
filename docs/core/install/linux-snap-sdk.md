@@ -3,7 +3,7 @@ title: Install .NET SDK on Linux with Snap
 description: Learn about how to install the .NET SDK snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2025
+ms.date: 04/23/2026
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content, updateeachrelease
 ai-usage: ai-assisted
@@ -41,7 +41,7 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 Starting with .NET 9, snap packages for the .NET SDK are published under version-specific identifiers (for example, `dotnet-sdk-90` for .NET 9 and `dotnet-sdk-100` for .NET 10). Prior to .NET 9, all SDK versions were published under the same identifier `dotnet-sdk`, and you specified the version through a channel. Additionally, .NET 9 and later snap packages support both x64 and Arm64 architectures, while earlier versions only support x64. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK.
 
 > [!TIP]
-> The [Snapcraft .NET SDK package page](https://snapcraft.io/dotnet-sdk) includes distribution-specific instructions on how to install Snapcraft and .NET.
+> The [Snapcraft .NET SDK package page](https://snapcraft.io/dotnet-sdk) ([.NET 9](https://snapcraft.io/dotnet-sdk-90), [.NET 10](https://snapcraft.io/dotnet-sdk-100)) includes distribution-specific instructions on how to install Snapcraft and .NET.
 
 01. Open a terminal.
 01. Use `snap install` to install the .NET SDK snap package.
@@ -73,11 +73,6 @@ The following table lists the snap packages and channels you can install:
 | 10 (LTS)     | `dotnet-sdk-100` (preview)             |
 | 9 (STS)      | `dotnet-sdk-90`                        |
 | 8 (LTS)      | `dotnet-sdk --channel 8.0/stable`      |
-| 7            | `dotnet-sdk --channel 7.0/stable` (out of support) |
-| 6            | `dotnet-sdk --channel 6.0/stable` (out of support) |
-| 5            | `dotnet-sdk --channel 5.0/stable` (out of support) |
-| 3.1          | `dotnet-sdk --channel 3.1/stable` (out of support) |
-| 2.1          | `dotnet-sdk --channel 2.1/stable` (out of support) |
 
 ## 2. Export the install location
 

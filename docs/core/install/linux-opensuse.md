@@ -15,7 +15,7 @@ ms.custom: linux-related-content
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on openSUSE Leap 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE Leap is no longer supported.
+The following table is a list of currently supported .NET releases on openSUSE Leap. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE Leap is no longer supported.
 
 | openSUSE Leap    | .NET     |
 |------------------|----------|
@@ -69,7 +69,7 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ## openSUSE Leap 15
 
 > [!IMPORTANT]
-> Support ends April 30th, 2026.
+> Support ends April 30, 2026.
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 

@@ -26,13 +26,7 @@ Starting with .NET 10.0.100, you can run .NET tools without permanent installati
    dnx dotnet-env --add-source ./nupkg
    ```
 
-## Run the tool without installation (recommended)
-
-Starting with .NET 10.0.100, you can run .NET tools without permanent installation using [`dnx`](dotnet-tool-exec.md):
-
-1. Run the tool directly using dnx (simplified syntax):
-
-   
+    The `--add-source` parameter tells the .NET CLI to use the *./nupkg* directory as an additional source feed for NuGet packages when the tool is not available on NuGet.org.
 
 ## Use the tool as a global tool (traditional installation)
 

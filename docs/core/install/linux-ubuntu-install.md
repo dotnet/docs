@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/18/2025
+ms.date: 04/23/2026
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -15,6 +15,61 @@ This article discusses how to install .NET on Ubuntu.
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
+
+<!--
+===== Ubuntu 26.04
+-->
+
+::: zone pivot="os-linux-ubuntu-2604"
+
+## Ubuntu 26.04
+
+[!INCLUDE [linux-ubuntu-package-feed-only](includes/linux-ubuntu-package-feed-only.md)]
+
+The following versions of .NET are supported or available for Ubuntu 26.04:
+
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| 10.0, 9.0, 8.0          | 10.0                                 | 9.0, 8.0                                                                                            |None                                                                                         |
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
+
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
+---
+
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- ca-certificates
+- libbrotli1
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu78
+- libssl3t64
+- libstdc++6
+- tzdata
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+::: zone-end
 
 <!--
 ===== Ubuntu 25.10
@@ -228,7 +283,7 @@ When you install with a package manager, these libraries are installed for you. 
 ===== All versions
 -->
 
-::: zone pivot="os-linux-ubuntu-2504,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
+::: zone pivot="os-linux-ubuntu-2604,os-linux-ubuntu-2510,os-linux-ubuntu-2504,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
 
 ## Unsupported versions
 

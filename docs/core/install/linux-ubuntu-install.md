@@ -283,7 +283,7 @@ When you install with a package manager, these libraries are installed for you. 
 ===== All versions
 -->
 
-::: zone pivot="os-linux-ubuntu-2604,os-linux-ubuntu-2504,os-linux-ubuntu-2510,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
+::: zone pivot="os-linux-ubuntu-2604,os-linux-ubuntu-2510,os-linux-ubuntu-2504,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
 
 ## Unsupported versions
 

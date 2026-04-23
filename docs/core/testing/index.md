@@ -40,9 +40,9 @@ When running tests in .NET, there are two components involved: the test platform
 
 The test platform is the engine that runs tests and communicates with tools such as IDEs and CLI.
 
-Use [Test platforms overview](./test-platforms-overview.md) to understand the differences between VSTest and Microsoft.Testing.Platform, and choose the best platform for your scenario.
+Use [Test platforms overview](./test-platforms-overview.md) to understand the differences between VSTest and Microsoft.Testing.Platform (MTP), and choose the best platform for your scenario.
 
-For migration guidance, see [Migrate from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md).
+For migration guidance, see [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md).
 
 ### Test frameworks
 
@@ -50,7 +50,7 @@ The test framework is built on top of the test platform. It defines the set of a
 
 #### MSTest
 
-[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with .NET CLI, Visual Studio, Visual Studio Code, and Rider. It supports both VSTest and Microsoft.Testing.Platform.
+[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with .NET CLI, Visual Studio, Visual Studio Code, and Rider. It supports both VSTest and MTP.
 
 For more information, see the following resources:
 
@@ -61,26 +61,26 @@ For more information, see the following resources:
 
 #### NUnit
 
-[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org). It supports both VSTest and Microsoft.Testing.Platform.
+[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org). It supports both VSTest and MTP.
 
 For more information, see the following resources:
 
-- [Microsoft.Testing.Platform support in NUnit (NUnit runner)](unit-testing-nunit-runner-intro.md)
+- [MTP support in NUnit (NUnit runner)](unit-testing-nunit-runner-intro.md)
 - [Unit testing with C#](unit-testing-csharp-with-nunit.md)
 - [Unit testing with F#](unit-testing-fsharp-with-nunit.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-nunit.md)
 
 #### TUnit
 
-[TUnit](https://thomhurst.github.io/TUnit/) is entirely built on top of Microsoft.Testing.Platform and doesn't support VSTest. For more information, refer to TUnit documentation.
+[TUnit](https://thomhurst.github.io/TUnit/) is entirely built on top of MTP and doesn't support VSTest. For more information, refer to TUnit documentation.
 
 #### xUnit.net
 
-[xUnit.net](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct. It supports both VSTest and Microsoft.Testing.Platform
+[xUnit.net](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct. It supports both VSTest and MTP.
 
 For more information, see the following resources:
 
-- [Microsoft.Testing.Platform support in xUnit.net v3](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform)
+- [MTP support in xUnit.net v3](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform)
 - [Unit testing with C#](unit-testing-csharp-with-xunit.md)
 - [Unit testing with F#](unit-testing-fsharp-with-xunit.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-xunit.md)

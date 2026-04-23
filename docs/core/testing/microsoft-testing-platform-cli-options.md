@@ -1,15 +1,15 @@
 ---
-title: Microsoft.Testing.Platform CLI options reference
-description: Find platform and extension command-line options for Microsoft.Testing.Platform in one place.
+title: Microsoft.Testing.Platform (MTP) CLI options reference
+description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/24/2026
 ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform CLI options reference
+# Microsoft.Testing.Platform (MTP) CLI options reference
 
-This article gives a central entry point for Microsoft.Testing.Platform command-line options.
+This article gives a central entry point for MTP command-line options.
 
 ## Platform options
 
@@ -102,10 +102,10 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
 
   > [!NOTE]
-  > This feature is available in Microsoft.Testing.Platform starting with version 1.5.
+  > This feature is available in MTP starting with version 1.5.
 
 - **`--minimum-expected-tests`**
 
@@ -142,6 +142,6 @@ For advanced diagnostics of registered providers and options, run with `--info`.
 
 ## See also
 
-- [Microsoft.Testing.Platform overview](./microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md)
+- [MTP overview](./microsoft-testing-platform-intro.md)
+- [MTP features](./microsoft-testing-platform-features.md)
 - [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)

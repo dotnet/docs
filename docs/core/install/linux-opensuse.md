@@ -3,7 +3,7 @@ title: Install .NET on openSUSE Leap
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE Leap.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2025
+ms.date: 04/23/2026
 ms.custom: linux-related-content
 ---
 
@@ -20,7 +20,9 @@ The following table is a list of currently supported .NET releases on openSUSE L
 | openSUSE Leap | .NET     |
 |---------------|----------|
 | 16            | 10, 9, 8 |
-| 15.6          | 10, 9, 8 |
+| 15.6*         | 10, 9, 8 |
+
+<sup>* Support ends April 30th, 2026.</sup>
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -52,15 +54,11 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 # [.NET 9](#tab/dotnet9)
 
-openSUSE Leap 16 is newly supported with .NET. The packages for .NET 9 aren't published yet.
-
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 # [.NET 8](#tab/dotnet8)
-
-openSUSE Leap 16 is newly supported with .NET. The packages for .NET 8 aren't published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
@@ -69,6 +67,9 @@ openSUSE Leap 16 is newly supported with .NET. The packages for .NET 8 aren't pu
 ---
 
 ## openSUSE Leap 15
+
+> [!IMPORTANT]
+> Support ends April 30th, 2026.
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -120,12 +121,18 @@ This section provides information on common errors you may get while using the p
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
+- ca-certificates
+- glibc
 - krb5
+- libgcc_s1
 - libicu
-- libopenssl3 (OpenSSL 3.x)
+- libopenssl3
+- libstdc++6
+- timezone
+- zlib (required for .NET 8 only)
 
 > [!IMPORTANT]
-> Starting with .NET 8, .NET packages for openSUSE depend on OpenSSL 3.x (libopenssl3). This change also applies to .NET 6 and .NET 7 packages. For more information, see [.NET packages for openSUSE and SLES depend on OpenSSL 3.x](../compatibility/deployment/8.0/opensuse-sles-openssl3-dependency.md).
+> .NET packages for openSUSE depend on OpenSSL 3.x (libopenssl3). For more information, see [.NET packages for openSUSE and SLES depend on OpenSSL 3.x](../compatibility/deployment/8.0/opensuse-sles-openssl3-dependency.md).
 
 Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
 

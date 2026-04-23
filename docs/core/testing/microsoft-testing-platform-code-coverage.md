@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), code coverage extensions are auto-registered when you install their NuGet packages — no code changes needed.
 
-You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
+You can use the code coverage feature with Microsoft.Testing.Platform (MTP) to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
 ## Microsoft code coverage
 

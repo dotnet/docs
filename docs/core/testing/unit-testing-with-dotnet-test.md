@@ -12,7 +12,7 @@ This article provides insights into the `dotnet test` CLI command, including its
 
 The `dotnet test` command operates in two primary modes:
 
-- *VSTest* mode: This is the default mode for `dotnet test` and was the only mode available before the .NET 10 SDK. It is primarily designed for VSTest but can also run MTP test via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
+- *VSTest* mode: This is the default mode for `dotnet test` and was the only mode available before the .NET 10 SDK. It is primarily designed for VSTest but can also run MTP tests via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
 - *MTP* mode: Introduced with the .NET 10 SDK, this mode exclusively supports test applications built with MTP.
 
 > [!TIP]

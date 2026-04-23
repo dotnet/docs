@@ -10,8 +10,8 @@ ms.date: 04/10/2024
 
 This extension provides a compatibility layer with VSTest allowing test frameworks that are already implemented with VSTest to:
 
-1. Run easily with Microsoft.Testing.Platform (MTP) without a major rewrite.
-1. Support both VSTest and MTP with the same test framework implementation.
+- Run easily with Microsoft.Testing.Platform (MTP) without a major rewrite.
+- Support both VSTest and MTP with the same test framework implementation.
 
 This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) NuGet package.
 

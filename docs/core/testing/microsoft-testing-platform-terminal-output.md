@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Terminal output
 
-The terminal test reporter is the built-in implementation of status and progress reporting to the terminal (console). It's part of the core **MTP** and doesn't require any additional NuGet packages.
+The terminal test reporter is the built-in implementation of status and progress reporting to the terminal (console). It's part of the core **Microsoft.Testing.Platform (MTP)** and doesn't require any additional NuGet packages.
 
 ## Output modes
 

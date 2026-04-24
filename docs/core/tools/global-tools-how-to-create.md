@@ -51,11 +51,11 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
    The program has two methods:
 
-   - The startup code checks displays the version of the command and then calls the `ShowInfo` method.
+   - The startup code checks the version of the command and then calls the `ShowInfo` method.
    - `ShowInfo` displays three sections of information:
      - **Runtime** — the .NET version, framework description, and runtime identifier, using `Environment.Version` and `RuntimeInformation`.
      - **System** — OS description, architecture, machine name, and processor count.
-     - **Environment Variables** — six key .NET-related variables (`DOTNET_ROOT`, `DOTNET_HOST_PATH`, `DOTNET_CLI_HOME`, `DOTNET_NOLOGO`, `NUGET_PACKAGES`, and `DOTNET_ENVIRONMENT`), showing `(not set)` for any that aren't configured.
+     - **Environment variables** — six key .NET-related variables (`DOTNET_ROOT`, `DOTNET_HOST_PATH`, `DOTNET_CLI_HOME`, `DOTNET_NOLOGO`, `NUGET_PACKAGES`, and `DOTNET_ENVIRONMENT`), showing `(not set)` for any that aren't configured.
 
    The `using System.Reflection` directive is required for `Assembly.GetEntryAssembly()` and `AssemblyInformationalVersionAttribute`. The `using System.Runtime.InteropServices` directive is required for `RuntimeInformation`.
 

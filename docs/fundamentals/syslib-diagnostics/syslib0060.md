@@ -33,7 +33,7 @@ to
 byte[] derivedKey = Rfc2898DeriveBytes.Pbkdf2(password, salt, iterations, hashAlgorithm, 64);
 ```
 
-Note that for constructors of `Rfc2898DeriveBytes` which took a salt size, the salt will need to be manually created (<xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> does not have an overload taking a salt size).
+If you used an `Rfc2898DeriveBytes` constructor that took a salt size, you'll need to manually create the salt (<xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> does not have an overload that takes a salt size).
 For consistency with the previous implementation, use <xref:System.Security.Cryptography.RandomNumberGenerator.Fill*?displayProperty=nameWithType> to fill an existing array with cryptographically secure bytes, or <xref:System.Security.Cryptography.RandomNumberGenerator.GetBytes*?displayProperty=nameWithType> to create a new array with cryptographically secure bytes.
 
 Example:

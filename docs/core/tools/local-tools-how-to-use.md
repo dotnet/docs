@@ -189,7 +189,7 @@ dotnet tool update dotnetsay
 The output indicates the new version number:
 
 ```console
-Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.7'
+Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '3.0.3'
 (manifest file /home/name/repository/.config/dotnet-tools.json).
 ```
 

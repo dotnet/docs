@@ -2,14 +2,14 @@
 title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
-ms.date: 04/08/2026
+ms.date: 04/24/2026
 ---
 
 # Tutorial: Install and use a .NET global tool using the .NET CLI
 
 **This article applies to:** ✔️ .NET 8 SDK and later versions
 
-This tutorial teaches you how to install and use a global tool. You use a tool that you create in the [first tutorial of this series](global-tools-how-to-create.md).
+This tutorial shows you how to install and use a global tool. The tool you use is the one you create in the [first tutorial of this series](global-tools-how-to-create.md).
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Starting with .NET 10.0.100, you can run .NET tools without permanent installati
    dnx dotnet-env --add-source ./nupkg
    ```
 
-    The `--add-source` parameter tells the .NET CLI to use the *./nupkg* directory as an additional source feed for NuGet packages when the tool is not available on NuGet.org.
+    The `--add-source` parameter tells the .NET CLI to use the *./nupkg* directory as an additional source feed for NuGet packages when the tool isn't available on NuGet.org.
 
 ## Use the tool as a global tool (traditional installation)
 
@@ -38,9 +38,9 @@ If you prefer permanent installation for frequent use:
    dotnet tool install --global --add-source ./nupkg dotnet-env
    ```
 
-   The `--global` parameter tells the .NET CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
+   The `--global` parameter tells the .NET CLI to install the tool binaries in a default location that's automatically added to the `PATH` environment variable.
 
-   The `--add-source` parameter tells the .NET CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the NuGet.org site.
+   The `--add-source` parameter tells the .NET CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure it's only found in the *./nupkg* directory, not on NuGet.org.
 
    The output shows the command used to call the tool and the version installed:
 
@@ -58,7 +58,7 @@ If you prefer permanent installation for frequent use:
    ```
 
    > [!NOTE]
-   > If this command fails, you might need to open a new terminal to refresh the PATH.
+   > If the command fails, open a new terminal to refresh the `PATH` environment variable.
 
 1. Remove the tool by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
@@ -82,7 +82,7 @@ If you prefer permanent installation for frequent use:
    dotnet tool install --tool-path ~/bin --add-source ./nupkg dotnet-env
    ```
 
-   The `--tool-path` parameter tells the .NET CLI to install the tool binaries in the specified location. If the directory doesn't exist, it is created. This directory is not automatically added to the PATH environment variable.
+   The `--tool-path` parameter tells the .NET CLI to install the tool binaries in the specified location. If the directory doesn't exist, it's created. The directory isn't automatically added to the `PATH` environment variable.
 
    The output shows the command used to call the tool and the version installed:
 
@@ -125,7 +125,7 @@ If you get an error message while following the tutorial, see [Troubleshoot .NET
 
 ## Next steps
 
-In this tutorial, you installed and used a tool as a global tool. For more information about how to install and use global tools, see [Managing global tools](global-tools.md). To install and use the same tool as a local tool, advance to the next tutorial.
+In this tutorial, you installed and used a tool as a global tool. For more information on installing and using global tools, see [Managing global tools](global-tools.md). To install and use the same tool as a local tool, advance to the next tutorial.
 
 > [!div class="nextstepaction"]
 > [Install and use local tools](local-tools-how-to-use.md)

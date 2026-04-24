@@ -171,7 +171,7 @@ Use the [`TestingPlatformCommandLineArguments`](../project-sdk/msbuild-props.md#
 
 Define custom MSBuild properties for the framework-specific arguments, and conditionally append them to `TestingPlatformCommandLineArguments` in a `Directory.Build.props` or `Directory.Build.targets` file. Use a condition that checks for a property set by the test framework's SDK or NuGet package to determine which framework each project uses.
 
-The following example shows a `Directory.Build.props` file for a solution mixing MSTest (with MSTest.Sdk) and xUnit.net projects:
+The following example shows a `Directory.Build.props` file for a solution that mixes MSTest (with MSTest.Sdk) and xUnit.net projects:
 
 ```xml
 <PropertyGroup>

@@ -157,3 +157,74 @@ For users of MTP that are using the VSTest mode of `dotnet test`, there are few 
 1. If passing a specific solution (or directory containing solution), for example, `dotnet test MySolution.sln`, this should become `dotnet test --solution MySolution.sln`.
 1. If passing a specific project (or directory containing project), for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.
 1. If passing a specific dll, for example, `dotnet test path/to/UnitTests.dll`, this should become `dotnet test --test-modules path/to/UnitTests.dll`. Note that `--test-modules` also supports globbing.
+
+## Solutions with mixed test frameworks or extensions
+
+When a solution contains test projects that use different test frameworks (for example, MSTest and xUnit.net) or different sets of extensions, running `dotnet test` with framework-specific or extension-specific command-line options can fail. Options that are valid for one project are unrecognized by another, causing exit code 5 (invalid command-line arguments). For example:
+
+- xUnit.net uses `--filter-trait` while MSTest uses `--filter`, and each framework rejects the other's options.
+- A project that references `Microsoft.Testing.Extensions.HangDump` accepts `--hangdump`, but a project without that extension fails on the same option.
+
+Use the [`TestingPlatformCommandLineArguments`](../project-sdk/msbuild-props.md#testingplatformcommandlinearguments) MSBuild property with conditions to pass arguments only to the projects that understand them.
+
+### Use MSBuild conditions to route arguments
+
+Define custom MSBuild properties for the framework-specific arguments, and conditionally append them to `TestingPlatformCommandLineArguments` in a `Directory.Build.props` or `Directory.Build.targets` file. Use a condition that checks for a property set by the test framework's SDK or NuGet package to determine which framework each project uses.
+
+The following example shows a `Directory.Build.props` file for a solution mixing MSTest (with MSTest.Sdk) and xUnit.net projects:
+
+```xml
+<PropertyGroup>
+  <TestingPlatformCommandLineArguments
+    Condition="'$(UsingMSTestSdk)' == 'true'"
+    >$(TestingPlatformCommandLineArguments) $(MSTestSpecificArgs)</TestingPlatformCommandLineArguments>
+  <TestingPlatformCommandLineArguments
+    Condition="'$(UsingMSTestSdk)' != 'true'"
+    >$(TestingPlatformCommandLineArguments) $(XUnitSpecificArgs)</TestingPlatformCommandLineArguments>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> `UsingMSTestSdk` is a property defined by `MSTest.Sdk`. If your MSTest projects don't use MSTest.Sdk, you need a different condition. Check whether your test framework's NuGet package sets a property you can use (for example, xUnit.net might set `UsingXunit` in the future).
+
+With this configuration in place, you can pass framework-specific arguments from the command line using MSBuild properties:
+
+```dotnetcli
+dotnet test -p:MSTestSpecificArgs="--filter FullyQualifiedName~IntegrationTests" -p:XUnitSpecificArgs="--filter-trait Category=Integration"
+```
+
+Each test project receives only the arguments relevant to its framework, and the other framework's arguments are never passed.
+
+### Common scenarios
+
+The following table lists some common options that differ between frameworks and can be routed using this pattern:
+
+| Scenario | MSTest / NUnit | xUnit.net |
+|----------|---------------|-----------|
+| Test filtering | `--filter <expression>` | `--filter-trait`, `--filter-class`, `--filter-method`, `--filter-query` |
+| JUnit report | `--report-spekt-junit` (via spekt logger) | `--report-xunit-junit` |
+| Ignore zero tests | `--ignore-exit-code 8` | `--ignore-exit-code 8` |
+
+> [!TIP]
+> For arguments that are the same across all frameworks (such as `--ignore-exit-code 8` or `--report-trx`), set them directly in `TestingPlatformCommandLineArguments` without any condition.
+
+### Projects with different extensions
+
+The same pattern applies when only some test projects in a solution reference a particular extension. For example, if only certain projects reference `Microsoft.Testing.Extensions.HangDump`, passing `--hangdump` globally causes the other projects to fail with an unrecognized option error.
+
+To handle this case, condition the arguments on whether the extension's package is referenced. You can define a helper property in the project files that have the extension, and use that property as a condition:
+
+```xml
+<!-- In the .csproj files that reference HangDump (or via Directory.Build.targets) -->
+<PropertyGroup Condition="'$(EnableHangDump)' == 'true'">
+  <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) $(HangDumpArgs)</TestingPlatformCommandLineArguments>
+</PropertyGroup>
+```
+
+Then run:
+
+```dotnetcli
+dotnet test -p:HangDumpArgs="--hangdump --hangdump-timeout 10m"
+```
+
+Only the projects where `EnableHangDump` is `true` receive the hang dump arguments. You can set `EnableHangDump` in each project file that references the extension, or centrally in `Directory.Build.props` with a condition that checks for the package reference.

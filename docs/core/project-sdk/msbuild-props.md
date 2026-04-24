@@ -1604,7 +1604,7 @@ For more information, see [Show complete platform output](../testing/unit-testin
 
 ### TestingPlatformCommandLineArguments
 
-The `TestingPlatformCaptureOutput` property lets you specify command-line arguments to the test app when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. The following project file snippet shows an example.
+The `TestingPlatformCommandLineArguments` property lets you specify command-line arguments to the test app when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. The following project file snippet shows an example.
 
 ```xml
 <PropertyGroup>
@@ -1612,6 +1612,8 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
   <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
 </PropertyGroup>
 ```
+
+You can also use conditions to pass different arguments to projects that use different test frameworks or extensions. For more information, see [Solutions with mixed test frameworks or extensions](../testing/unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
 
 ### TestingPlatformDotnetTestSupport
 

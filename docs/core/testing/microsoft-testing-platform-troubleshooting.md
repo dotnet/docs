@@ -94,3 +94,9 @@ This error can occur if not all of the Fakes assemblies are present in the bin f
 
 - Ensure that the project either uses the [MSTest.SDK](./unit-testing-mstest-sdk.md) or references [Microsoft.Testing.Extensions.Fakes](./microsoft-testing-platform-fakes.md).
 - For .NET Framework projects, avoid setting `<PlatformTarget>AnyCPU</PlatformTarget>` as this results in NuGet not copying all files to the bin folder.
+
+### Unrecognized command-line option in solutions with mixed test frameworks or extensions
+
+If your solution contains projects that use different test frameworks (for example, MSTest and xUnit.net) or different sets of extensions (for example, only some projects reference `Microsoft.Testing.Extensions.HangDump`), running `dotnet test` with a framework-specific or extension-specific command-line option can fail with exit code 5. The option is valid for one project but unrecognized by another.
+
+To resolve this issue, use the `TestingPlatformCommandLineArguments` MSBuild property with conditions to route arguments to the correct projects. For detailed instructions, see [Solutions with mixed test frameworks or extensions](unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).

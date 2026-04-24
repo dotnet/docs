@@ -496,8 +496,8 @@ Data-driven test attributes support the <xref:Microsoft.VisualStudio.TestTools.U
 
 MSTest processes data-driven tests in two distinct phases:
 
-1. **Discovery phase**: MSTest evaluates all data source attributes (`DataRow`, `DynamicData`, `ITestDataSource`) to determine the list of test cases. This evaluation happens *before* any of the regular MSTest lifecycle hooks run—`AssemblyInitialize`, `ClassInitialize`, and other setup methods haven't executed yet.
-1. **Execution phase**: MSTest runs the normal lifecycle (assembly initialization, class initialization, test initialization, test method, cleanup) and executes each test case with its data.
+- **Discovery phase**: MSTest evaluates all data source attributes (`DataRow`, `DynamicData`, `ITestDataSource`) to determine the list of test cases. This evaluation happens *before* any of the regular MSTest lifecycle hooks run—`AssemblyInitialize`, `ClassInitialize`, and other setup methods haven't executed yet.
+- **Execution phase**: MSTest runs the normal lifecycle (assembly initialization, class initialization, test initialization, test method, cleanup) and executes each test case with its data.
 
 Because data sources are evaluated during discovery, your data-generation code can't rely on any state set up by `AssemblyInitialize` or `ClassInitialize`. If your data source depends on setup logic (for example, reading from a database connection initialized in `ClassInitialize`), the data source evaluation fails during discovery.
 
@@ -529,9 +529,9 @@ At execution time, MSTest evaluates the data source again as part of the normal 
 
 For most scenarios, the default `Auto` behavior provides the best balance. Consider changing the unfolding strategy when you have specific requirements:
 
-- Data sources that depend on runtime state or setup logic that isn't available during discovery
-- Non-deterministic data sources that return different values on each evaluation
-- Performance concerns with large numbers of test cases
+- Use `Fold` if your data sources depend on runtime state or setup logic that isn't available during discovery.
+- Use `Fold` for non-deterministic data sources that return different values on each evaluation.
+- Use `Fold` to reduce overhead when performance is a concern with large numbers of test cases.
 
 ### Example usage
 

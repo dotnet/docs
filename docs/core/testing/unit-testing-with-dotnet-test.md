@@ -202,7 +202,7 @@ The following table lists some common options that differ between frameworks and
 | Scenario | MSTest / NUnit | xUnit.net |
 |----------|---------------|-----------|
 | Test filtering | `--filter <expression>` | `--filter-trait`, `--filter-class`, `--filter-method`, `--filter-query` |
-| JUnit report | `--report-spekt-junit` (via spekt logger) | `--report-xunit-junit` |
+| xUnit.net built-in reports | Not available | `--report-xunit-junit`, `--report-xunit-html`, `--report-xunit-trx` |
 | Ignore zero tests | `--ignore-exit-code 8` | `--ignore-exit-code 8` |
 
 > [!TIP]

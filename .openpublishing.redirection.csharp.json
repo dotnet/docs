@@ -1,5 +1,5 @@
 {
-  "redirections": [
+  "redirections": [    
     {
       "source_path_from_root": "/docs/csharp/fundamentals/types/anonymous-types.md",
       "redirect_url": "/dotnet/csharp/fundamentals/types/tuples"
@@ -5340,6 +5340,10 @@
         {
             "source_path_from_root": "/docs/csharp/whats-new/csharp-7.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
+        },
+        {
+          "source_path_from_root": "/docs/csharp/whats-new/csharp-8.md#nullable-reference-types",
+          "redirect_url": "/dotnet/csharp/nullable-references"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/csharp-8.md",

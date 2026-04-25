@@ -30,8 +30,8 @@ dotnet test --filter <Expression>
   | Test framework | Supported properties |
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory` |
+  | NUnit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
   | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
-  | Nunit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
 
 * **Operators**
 
@@ -229,6 +229,63 @@ dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Prio
 ```
 
 For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
+
+:::zone-end
+:::zone pivot="tunit"
+
+## TUnit examples
+
+```csharp
+using TUnit.Core;
+
+namespace TUnitNamespace
+{
+    public class UnitTest1
+    {
+        [Test, Property("Priority", "1"), Category("CategoryA")]
+        public void TestMethod1()
+        {
+        }
+
+        [Test, Property("Priority", "2")]
+        public void TestMethod2()
+        {
+        }
+    }
+}
+```
+
+TUnit uses the `--treenode-filter` flag with a path-based syntax:
+
+| Expression | Result |
+|--|--|
+| `dotnet test --treenode-filter "/*/*/*/*Method*"` | Runs tests whose method name contains `Method`. |
+| `dotnet test --treenode-filter "/*/*/*/TestMethod1"` | Runs tests whose name is `TestMethod1`. |
+| `dotnet test --treenode-filter "/*/TUnitNamespace/UnitTest1/*"` | Runs all tests in class `TUnitNamespace.UnitTest1`. |
+| `dotnet test --treenode-filter "/**[Category=CategoryA]"` | Runs tests that are annotated with `[Category("CategoryA")]`. |
+| `dotnet test --treenode-filter "/**[Priority=2]"` | Runs tests that have `[Property("Priority", "2")]`. |
+
+In the code example, the `[Property]` and `[Category]` attributes can be used for filtering.
+
+Examples using the conditional operators `|` and `&`:
+
+To run tests that have `UnitTest1` in their class name **or** have a `Category` of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --treenode-filter "(/*/*/UnitTest1/*)|/**[Category=CategoryA]"
+```
+
+To run tests that are in class `UnitTest1` **and** have a `Category` of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --treenode-filter "(/*/*/UnitTest1/*)&/**[Category=CategoryA]"
+```
+
+To run tests that have either class `UnitTest1` **and** `Category` of `"CategoryA"` **or** have a `Property` with `"Priority"` of `"2"`.
+
+```dotnetcli
+dotnet test --treenode-filter "((/*/*/UnitTest1/*)&/**[Category=CategoryA])|/**[Priority=2]"
+```
 
 :::zone-end
 

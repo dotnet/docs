@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform retry
-description: Learn about retrying failed tests with Microsoft.Testing.Platform.
+title: Microsoft.Testing.Platform (MTP) retry
+description: Learn about retrying failed tests with MTP.
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026

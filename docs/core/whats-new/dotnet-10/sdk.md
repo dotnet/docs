@@ -265,9 +265,9 @@ Console apps can now create container images via `dotnet publish /t:PublishConta
 
 A new `<ContainerImageFormat>` property allows you to explicitly set the format of container images to either `Docker` or `OCI`. This property overrides the default behavior, which depends on the base image format and whether the container is multi-architecture.
 
-## Support for Microsoft Testing Platform in `dotnet test`
+## Support for Microsoft.Testing.Platform (MTP) in `dotnet test`
 
-Starting in .NET 10, `dotnet test` natively supports [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *global.json* file:
+Starting in .NET 10, `dotnet test` natively supports [MTP](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *global.json* file:
 
 ```json
 {

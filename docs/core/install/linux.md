@@ -4,7 +4,7 @@ description: Learn about how .NET is available on Linux. .NET can be installed t
 author: adegeo
 ms.author: adegeo
 ms.custom: updateeachrelease, linux-related-content
-ms.date: 11/08/2025
+ms.date: 04/23/2026
 ---
 
 # Install .NET on Linux

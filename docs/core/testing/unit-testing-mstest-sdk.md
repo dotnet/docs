@@ -11,7 +11,7 @@ ms.date: 02/13/2024
 This article covers advanced configuration options for MSTest.Sdk. For basic setup and getting started, see [Get started with MSTest](./unit-testing-mstest-getting-started.md).
 
 > [!IMPORTANT]
-> By default, MSTest.Sdk uses the [MSTest runner with Microsoft.Testing.Platform](./unit-testing-mstest-running-tests.md), including with [dotnet test](./unit-testing-with-dotnet-test.md). This requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can keep the old integrations and tools by [switching to VSTest](#select-the-runner).
+> By default, MSTest.Sdk uses the [MSTest runner with MTP](./unit-testing-mstest-running-tests.md), including with [dotnet test](./unit-testing-with-dotnet-test.md). This requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can keep the old integrations and tools by [switching to VSTest](#select-the-runner).
 >
 > MSTest.Sdk sets `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` to true by default. For more information about dotnet test and its different modes, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 
@@ -21,11 +21,11 @@ If the project that uses MSTest.Sdk is intended to be a test utility helper libr
 
 ## Select the runner
 
-By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mstest-running-tests.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [MTP](./unit-testing-mstest-running-tests.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
-## Extend Microsoft.Testing.Platform
+## Extend MTP
 
-You can customize `Microsoft.Testing.Platform` experience through a set of [NuGet package extensions](./microsoft-testing-platform-features.md). To simplify and improve this experience, MSTest SDK introduces two features:
+You can customize the MTP experience through a set of [NuGet package extensions](./microsoft-testing-platform-features.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
 - [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
@@ -102,7 +102,7 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 </Project>
 ```
 
-For a list of all available extensions, see [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md).
+For a list of all available extensions, see [MTP features](./microsoft-testing-platform-features.md).
 
 > [!WARNING]
 > It's important to review the licensing terms for each extension as they might vary.
@@ -216,7 +216,7 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 ### Update your CI
 
-Once you've updated your projects, if you're using `Microsoft.Testing.Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-with-dotnet-test.md).
+Once you've updated your projects, if you're using MTP (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-with-dotnet-test.md).
 
 If you're using the VSTest mode of `dotnet test`, here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 
@@ -235,5 +235,5 @@ The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have [limited tooling sup
 
 ## See also
 
-- [Microsoft.Testing.Platform&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformrelated-properties)
+- [MTP&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformrelated-properties)
 - [VSTest&ndash;related properties](../project-sdk/msbuild-props.md#vstestrelated-properties)

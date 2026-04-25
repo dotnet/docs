@@ -225,7 +225,7 @@ The following example shows an invalid version specified. The output of the comm
 }
 ```
 
-The following example shows how to specify `Microsoft.Testing.Platform` as the test runner:
+The following example shows how to specify `Microsoft.Testing.Platform` (MTP) as the test runner:
 
 ```json
 {

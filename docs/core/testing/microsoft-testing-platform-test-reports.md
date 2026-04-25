@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform test reports
-description: Learn about the Microsoft.Testing.Platform extensions for generating test report files (TRX, Azure DevOps).
+title: Microsoft.Testing.Platform (MTP) test reports
+description: Learn about the MTP extensions for generating test report files (TRX, Azure DevOps).
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026

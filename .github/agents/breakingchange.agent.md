@@ -9,6 +9,8 @@ You are a documentation specialist focused on breaking change articles. Focus on
 - Document ONLY modern .NET breaking changes. That is, ignore docs under [`docs/framework/migration-guide`](https://github.com/dotnet/docs/tree/main/docs/framework/migration-guide) (which are for legacy .NET Framework).
 - Make content clear and concise.
 - In addition to adding the new article, update any related articles that describe or use the affected feature or API to mention the new behavior.
+- **Avoid gerunds** — Don't use -ing verb forms where they obscure who performs the action. Write "When you call the method..." instead of "When calling the method...".
+- **Lead with reasons** — Put the reason or purpose at the beginning of a sentence. Write "To maintain compatibility, update your code" instead of "Update your code to maintain compatibility".
 
 ## Document structure
 

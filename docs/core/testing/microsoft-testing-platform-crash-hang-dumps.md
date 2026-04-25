@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform crash and hang dumps
-description: Learn about the Microsoft.Testing.Platform extensions for collecting crash dumps and hang dumps during test execution.
+title: Microsoft.Testing.Platform (MTP) crash and hang dumps
+description: Learn about the MTP extensions for collecting crash dumps and hang dumps during test execution.
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026

@@ -225,7 +225,7 @@ The ability to create a project for an earlier TFM depends on having that versio
    The runner/platform for the test project. The possible values are:
 
   - `VSTest` - VSTest platform (Default).
-  - `MSTest` - Microsoft.Testing.Platform.
+  - `MSTest` - Microsoft.Testing.Platform (MTP).
 
 - **`--coverage-tool <COVERAGE_TOOL>`**
 
@@ -236,7 +236,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--extensions-profile <EXTENSIONS_PROFILE>`**
 
-  The SDK extensions profile when using Microsoft.Testing.Platform. The possible values are:
+  The SDK extensions profile when using MTP. The possible values are:
 
   - `Default` - Default extensions profile (Default).
   - `None` - No extensions are enabled.
@@ -709,7 +709,7 @@ API Controller with or without read/write actions.
 
 - **`--test-runner <TEST_RUNNER>`**
 
-  This option was introduced in .NET 10 SDK and specifies the test runner to use, either VSTest or Microsoft.Testing.Platform. The default is VSTest.
+  This option was introduced in .NET 10 SDK and specifies the test runner to use, either VSTest or MTP. The default is VSTest.
 
 ### `sln`
 

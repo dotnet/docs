@@ -1551,7 +1551,7 @@ If your test project references MSTest, NUnit, or xUnit, this property is set to
 
 ### Enable\[NugetPackageNameWithoutDots\]
 
-Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable MTP extensions.
+Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform (MTP) extensions.
 
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), set the `EnableMicrosoftTestingExtensionsCrashDump` to `true`.
 

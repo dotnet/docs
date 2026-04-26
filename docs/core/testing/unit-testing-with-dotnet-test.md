@@ -185,7 +185,7 @@ The following example shows a `Directory.Build.props` file for a solution that m
 ```
 
 > [!NOTE]
-> `UsingMSTestSdk` is a property defined by `MSTest.Sdk`. If your MSTest projects don't use `MSTest.Sdk`, use a different condition. Check whether your test framework's SDK or NuGet package already sets a property you can use. If it doesn't, define your own property in each project and condition on that property instead.
+> `UsingMSTestSdk` is a property defined by `MSTest.Sdk`. If your MSTest projects don't use `MSTest.Sdk`, use a different condition. Check whether your test framework's SDK or NuGet package already sets a property you can use. If it doesn't, define your own property in each project and condition on that property instead (in this case, use Directory.Build.targets instead).
 
 With this configuration in place, you can pass framework-specific arguments from the command line using MSBuild properties:
 

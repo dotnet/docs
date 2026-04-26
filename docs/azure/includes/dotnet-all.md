@@ -481,6 +481,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.49.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.49.1) |  |  |
 | Speech Extension Telemetry | NuGet [1.49.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.49.1) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [0.6.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sdk/0.6.0-preview.1) |  |  |
 | Unknown Display Name | NuGet [0.1.0-ci.26217.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Connector/0.1.0-ci.26217.6) |  |  |
 | WebJobs Extension Cosmos DB Mongo | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.2) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
@@ -502,7 +503,7 @@
 | Commerce Usage Aggregates | NuGet [1.5.3](https://www.nuget.org/packages/Microsoft.Azure.Commerce.UsageAggregates/1.5.3) |  |  |
 | Common | NuGet [2.2.1](https://www.nuget.org/packages/Microsoft.Azure.Common/2.2.1) |  |  |
 | Common - Dependencies | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Common.Dependencies/1.0.0) |  |  |
-| Cosmos DB | NuGet [3.58.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.58.0)<br>NuGet [3.59.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.59.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.58.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.58.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.58.0)<br>NuGet [3.60.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.60.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.58.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Movement | NuGet [2.0.5](https://www.nuget.org/packages/Microsoft.Azure.Storage.DataMovement/2.0.5) |  | GitHub [2.0.5](https://github.com/Azure/azure-storage-net-data-movement/tree/v1.3.0) |
 | DCAP | NuGet [1.13.1](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.13.1) |  | GitHub [1.13.1](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |

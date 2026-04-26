@@ -4,7 +4,6 @@ description: Learn about the various Microsoft.Testing.Platform features, both b
 author: nohwnd
 ms.author: jajares
 ms.date: 02/25/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

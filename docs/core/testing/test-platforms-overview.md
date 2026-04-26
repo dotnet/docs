@@ -4,7 +4,6 @@ description: Compare Microsoft.Testing.Platform (MTP) and VSTest to choose the r
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/24/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

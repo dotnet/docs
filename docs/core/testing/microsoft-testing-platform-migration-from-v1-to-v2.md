@@ -4,7 +4,6 @@ description: Learn how to migrate to MTP v2 and understand the key changes.
 author: Youssef1313
 ms.author: ygerges
 ms.date: 10/08/2025
-ms.custom: microsoft-testing-platform,MTP
 ---
 
 # Migrate from Microsoft.Testing.Platform (MTP) v1 to v2

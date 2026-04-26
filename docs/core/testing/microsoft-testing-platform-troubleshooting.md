@@ -4,7 +4,6 @@ description: Troubleshoot MTP issues, exit codes, and known problems.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/24/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

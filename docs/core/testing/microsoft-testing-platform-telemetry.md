@@ -4,7 +4,6 @@ description: Learn about the telemetry data collected by MTP and how to disable 
 author: nohwnd
 ms.author: jajares
 ms.date: 02/25/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

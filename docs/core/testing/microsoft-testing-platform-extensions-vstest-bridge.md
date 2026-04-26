@@ -4,7 +4,6 @@ description: Learn about the MTP VSTest bridge extension and how to use it.
 author: evangelink
 ms.author: amauryleve
 ms.date: 04/10/2024
-ms.custom: microsoft-testing-platform,MTP
 ---
 
 # VSTest Bridge extension

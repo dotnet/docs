@@ -4,7 +4,6 @@ description: Learn about the available Microsoft.Testing.Platform (MTP) services
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
-ms.custom: microsoft-testing-platform,MTP
 ---
 
 # Microsoft.Testing.Platform services

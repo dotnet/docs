@@ -4,7 +4,6 @@ description: Learn about the MTP Fakes extension capabilities and how to use it.
 author: drognanar
 ms.author: arturs
 ms.date: 02/25/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

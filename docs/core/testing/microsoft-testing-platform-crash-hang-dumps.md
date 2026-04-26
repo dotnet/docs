@@ -4,7 +4,6 @@ description: Learn about the MTP extensions for collecting crash dumps and hang 
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

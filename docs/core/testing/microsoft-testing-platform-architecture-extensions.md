@@ -4,7 +4,6 @@ description: Learn how to create in-process and out-of-process extensions for Mi
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 02/24/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

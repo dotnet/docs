@@ -4,7 +4,6 @@ description: Learn about Microsoft.Testing.Platform (MTP), a lightweight and por
 author: Evangelink
 ms.author: amauryleve
 ms.date: 03/17/2024
-ms.custom: microsoft-testing-platform,MTP
 ---
 
 # Microsoft.Testing.Platform (MTP) overview

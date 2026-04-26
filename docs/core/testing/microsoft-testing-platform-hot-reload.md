@@ -4,7 +4,6 @@ description: Learn about the MTP Hot Reload extension for running tests with hot
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

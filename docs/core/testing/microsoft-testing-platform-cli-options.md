@@ -4,7 +4,6 @@ description: Find platform and extension command-line options for MTP in one pla
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/24/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

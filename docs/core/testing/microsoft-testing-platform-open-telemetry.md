@@ -4,7 +4,6 @@ description: Learn how to use the OpenTelemetry extension to emit traces and met
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026
-ms.custom: microsoft-testing-platform,MTP
 ai-usage: ai-assisted
 ---
 

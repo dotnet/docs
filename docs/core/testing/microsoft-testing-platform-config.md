@@ -4,7 +4,6 @@ description: Learn how to configure MTP using configuration settings.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 08/15/2024
-ms.custom: microsoft-testing-platform,MTP
 ---
 
 # Microsoft.Testing.Platform (MTP) configuration settings

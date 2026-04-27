@@ -1,5 +1,7 @@
 namespace DelegatesLambdasSample;
 
+delegate int Transform(int value);
+
 public sealed class MessagePublisher
 {
     public event EventHandler<string>? MessagePublished;
@@ -11,11 +13,25 @@ public static class Program
 {
     public static void Main()
     {
+        ShowDelegateBasics();
         ShowFuncAndAction();
         ShowLambdaAsArgument();
         ShowStaticLambda();
         ShowDiscardParameters();
         ShowMinimalEventIntro();
+    }
+
+    private static void ShowDelegateBasics()
+    {
+        // <DelegateBasics>
+        Transform doubler = x => x * 2;    // assign a lambda expression
+        Transform squarer = Square;         // assign a named method
+
+        Console.WriteLine(doubler(5));      // 10
+        Console.WriteLine(squarer(5));      // 25
+
+        static int Square(int value) => value * value;
+        // </DelegateBasics>
     }
 
     private static void ShowFuncAndAction()

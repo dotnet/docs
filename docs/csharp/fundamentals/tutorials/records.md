@@ -30,11 +30,11 @@ In this tutorial, you learn how to:
 
 Create a folder for your app, run `dotnet new console`, and open the generated project.
 
-Add a file named *DailyTemperature.cs*, and add a positional `readonly record struct` for temperature values:
+Add a file named `DailyTemperature.cs`, and add a positional `readonly record struct` for temperature values:
 
 :::code language="csharp" source="./snippets/records/DailyTemperature.cs" ID="TemperatureRecord":::
 
-Add a file named *Program.cs*, and create sample temperature data:
+Add a file named `Program.cs`, and create sample temperature data:
 
 :::code language="csharp" source="./snippets/records/Program.cs" ID="DeclareData":::
 
@@ -42,7 +42,7 @@ This syntax gives you concise data modeling with immutable value semantics.
 
 ## Add behavior to the record struct
 
-In *DailyTemperature.cs*, you already added a computed `Mean` property to your record struct:
+In `DailyTemperature.cs`, the record struct already has a computed `Mean` property:
 
 ```csharp
 public double Mean => (HighTemp + LowTemp) / 2.0;
@@ -55,23 +55,23 @@ A record struct works well here because each value is small and self-contained.
 > [!NOTE]
 > **Heating degree-days** and **cooling degree-days** measure how much the daily average temperature deviates from a base temperature (typically 65°F/18°C). Heating degree-days accumulate on cold days when the average is below the base, while cooling degree-days accumulate on warm days when the average is above the base. These calculations help estimate energy consumption for heating or cooling buildings, making them useful for utility companies, building managers, and climate analysis.
 
-Create a file named *DegreeDays.cs* with a hierarchy for heating and cooling degree-day calculations:
+Create a file named `DegreeDays.cs` with a hierarchy for heating and cooling degree-day calculations:
 
 :::code language="csharp" source="./snippets/records/InterimSteps.cs" ID="DegreeDaysRecords":::
 
-Now calculate totals from your `Main` method in *Program.cs*:
+Now calculate totals from your `Main` method in `Program.cs`:
 
 :::code language="csharp" source="./snippets/records/Program.cs" ID="HeatingAndCooling":::
 
 The generated `ToString` output is useful for quick diagnostics while you iterate.
 
-## Customize output by overriding PrintMembers
+## Override `PrintMembers` to customize output
 
-When default output includes too much noise, override `PrintMembers` in the base record:
+When the default output includes too much noise, override `PrintMembers` in the base record:
 
 :::code language="csharp" source="./snippets/records/DegreeDays.cs" ID="AddPrintMembers":::
 
-This override keeps output focused on the information you need.
+The override keeps the output focused on the information you need.
 
 ## Use with expressions for nondestructive mutation
 
@@ -79,11 +79,11 @@ Use `with` to create modified copies without mutating the original record:
 
 :::code language="csharp" source="./snippets/records/Program.cs" ID="GrowingDegreeDays":::
 
-You can extend that idea to compute rolling totals from slices of your input data:
+Extend that idea to compute rolling totals from slices of your input data:
 
 :::code language="csharp" source="./snippets/records/Program.cs" ID="RunningFiveDayTotal":::
 
-This approach is useful when you need transformations while preserving original values.
+This approach is useful when you need transformations while you preserve original values.
 
 ## Next steps
 

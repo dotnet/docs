@@ -81,6 +81,17 @@ The following table compares perf maps and jit maps.
 | **runtimeconfig.json** | N/A          | N/A    |
 | **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
 
+## EventPipe thread sampling rate
+
+- Overrides the default interval for the EventPipe thread time sampling profiler. The value is specified in milliseconds.
+- When set to `0` (or omitted), the runtime uses its built-in default (1 ms on most platforms, 5 ms on WebAssembly).
+- This setting is process-global: it affects **all** EventPipe sessions in the process, including on-demand traces collected by tools such as [dotnet-trace](../diagnostics/dotnet-trace.md). There is currently no way to configure a per-session sampling rate. Setting a very large interval will reduce the resolution of any `dotnet-trace` session started later.
+
+|                          | Setting name                            | Values                                        |
+|--------------------------|-----------------------------------------|-----------------------------------------------|
+| **runtimeconfig.json**   | N/A                                     | N/A                                           |
+| **Environment variable** | `DOTNET_EventPipeThreadSamplingRate`    | Interval in milliseconds. `0` = use default.  |
+
 ## Perf log markers
 
 - Enables or disables the specified signal to be accepted and ignored as a marker in the perf logs.

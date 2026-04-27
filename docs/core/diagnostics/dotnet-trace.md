@@ -233,6 +233,9 @@ dotnet-trace collect
   |--------------|----------------------------------------------------------|
   | `dotnet-common` | Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`. |
   | `dotnet-sampled-thread-time` | Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks. |
+
+  > [!TIP]
+  > The sampling rate used by `dotnet-sampled-thread-time` can be changed with the `DOTNET_EventPipeThreadSamplingRate` environment variable (value in milliseconds). This setting is process-global and affects all EventPipe sessions. See [EventPipe thread sampling rate](../runtime-config/debugging-profiling.md#eventpipe-thread-sampling-rate) for details.
   | `gc-verbose` | Tracks GC collections and samples object allocations.    |
   | `gc-collect` | Tracks GC collections only at very low overhead.         |
   | `database`   | Captures ADO.NET and Entity Framework database commands. |

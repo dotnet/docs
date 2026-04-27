@@ -1,5 +1,5 @@
 ---
-title: "Keeping async methods alive"
+title: "Keep async methods alive"
 description: Learn how to avoid lifetime bugs in fire-and-forget async code by keeping task ownership explicit, observing failures, and coordinating shutdown.
 ms.date: 04/15/2026
 ai-usage: ai-assisted
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "background task tracking"
   - "TAP best practices"
 ---
-# Keeping async methods alive
+# Keep async methods alive
 
 Fire-and-forget work is easy to start and easy to lose. If you start an asynchronous operation and drop the returned <xref:System.Threading.Tasks.Task>, you lose visibility into completion, cancellation, and failures.
 

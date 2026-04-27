@@ -1551,7 +1551,7 @@ If your test project references MSTest, NUnit, or xUnit, this property is set to
 
 ### Enable\[NugetPackageNameWithoutDots\]
 
-Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform extensions.
+Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform (MTP) extensions.
 
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), set the `EnableMicrosoftTestingExtensionsCrashDump` to `true`.
 
@@ -1571,7 +1571,7 @@ For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#tes
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property enables or disables the use of [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
+The `EnableMSTestRunner` property enables or disables the use of [MTP](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
 
 > [!NOTE]
 > If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
@@ -1582,11 +1582,11 @@ The `EnableNUnitRunner` property enables or disables the use of the [NUnit runne
 
 ## UseMicrosoftTestingPlatformRunner
 
-The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of Microsoft.Testing.Platform runner in [xUnit.v3](https://xunit.net) test projects.
+The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of MTP runner in [xUnit.v3](https://xunit.net) test projects.
 
 ### GenerateTestingPlatformEntryPoint
 
-Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
+Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [MTP](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
 For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
@@ -1598,13 +1598,13 @@ The `GenerateTestingPlatformConfigurationFile` property is only available when [
 
 ### TestingPlatformCaptureOutput
 
-The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
+The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run MTP tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
 
 For more information, see [Show complete platform output](../testing/unit-testing-with-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 
-The `TestingPlatformCaptureOutput` property lets you specify command-line arguments to the test app when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. The following project file snippet shows an example.
+The `TestingPlatformCommandLineArguments` property lets you specify command-line arguments to the test app when you use `dotnet test` to run MTP tests. The following project file snippet shows an example.
 
 ```xml
 <PropertyGroup>
@@ -1615,10 +1615,10 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 
 ### TestingPlatformDotnetTestSupport
 
-The `TestingPlatformDotnetTestSupport` property enables testing Microsoft.Testing.Platform apps when using the VSTest mode of `dotnet test`.
+The `TestingPlatformDotnetTestSupport` property enables testing MTP apps when using the VSTest mode of `dotnet test`.
 
 > [!NOTE]
-> Don't call `dotnet test` on a solution that has both VSTest and Microsoft.Testing.Platform projects, as that scenario is not supported.
+> Don't call `dotnet test` on a solution that has both VSTest and MTP projects, as that scenario is not supported.
 
 For more information, see [Testing with 'dotnet test'](../testing/unit-testing-with-dotnet-test.md).
 
@@ -1636,7 +1636,7 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 | `None`         | No extensions are enabled.                                                                    |
 | `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
 
-For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
+For more information, see [MTP profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
 
 ## VSTest&ndash;related properties
 
@@ -1654,7 +1654,7 @@ The `IsTestProject` property is set to `true` by the [Microsoft.NET.Test.Sdk NuG
 
 ### UseVSTest
 
-Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+Set the `UseVSTest` property to `true` to switch from MTP to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
 
 ## MSTest&ndash;related properties
 

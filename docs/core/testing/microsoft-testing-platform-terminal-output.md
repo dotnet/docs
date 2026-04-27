@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform terminal output
-description: Learn about the built-in terminal test reporter in Microsoft.Testing.Platform, including output modes, ANSI support, and progress indicators.
+title: Microsoft.Testing.Platform (MTP) terminal output
+description: Learn about the built-in terminal test reporter in MTP, including output modes, ANSI support, and progress indicators.
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026
@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Terminal output
 
-The terminal test reporter is the built-in implementation of status and progress reporting to the terminal (console). It's part of the core **Microsoft.Testing.Platform** and doesn't require any additional NuGet packages.
+The terminal test reporter is the built-in implementation of status and progress reporting to the terminal (console). It's part of the core **Microsoft.Testing.Platform (MTP)** and doesn't require any additional NuGet packages.
 
 ## Output modes
 

@@ -31,7 +31,7 @@ MSTest also provides the following types to extend data-driven scenarios:
 
 ## `DataRowAttribute`
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> allows you to run the same test method with multiple different inputs. Apply one or multiple `DataRow` attributes to a test method, and combine it with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> lets you run the same test method with multiple different inputs. Apply one or more `DataRow` attributes to a test method that's decorated with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
 The number and types of arguments must exactly match the test method signature.
 
@@ -322,7 +322,7 @@ public class IgnoreDynamicDataExample
 > [!TIP]
 > To ignore individual test cases, use `TestDataRow<T>` with its `IgnoreMessage` property. See the [TestDataRow\<T>](#testdatarow) section.
 
-## TestDataRow
+## `TestDataRow`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> class provides enhanced control over test data in data-driven tests. Use <xref:System.Collections.Generic.IEnumerable`1> of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> as your data source return type to specify:
 
@@ -492,21 +492,46 @@ public class CrossPlatformTests
 
 Data-driven test attributes support the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy> property, which controls how test cases appear in Test Explorer and TRX results. This property also determines whether you can run individual test cases independently.
 
+### Discovery and execution phases
+
+MSTest processes data-driven tests in two distinct phases:
+
+- **Discovery phase**: MSTest evaluates all data source attributes (`DataRow`, `DynamicData`, `ITestDataSource`) to determine the list of test cases. This evaluation happens *before* any of the regular MSTest lifecycle hooks run—`AssemblyInitialize`, `ClassInitialize`, and other setup methods haven't executed yet.
+- **Execution phase**: MSTest runs the normal lifecycle (assembly initialization, class initialization, test initialization, test method, cleanup) and executes each test case with its data.
+
+Because data sources are evaluated during discovery, your data-generation code can't rely on any state set up by `AssemblyInitialize` or `ClassInitialize`. If your data source depends on setup logic (for example, reading from a database connection initialized in `ClassInitialize`), the data source evaluation fails during discovery.
+
 ### Available strategies
 
 | Strategy | Behavior |
 |----------|----------|
-| `Auto` (default) | MSTest determines unfolding best strategy |
-| `Unfold` | All test cases are expanded and shown individually |
-| `Fold` | All test cases are collapsed into a single test node |
+| `Auto` (default) | MSTest determines the best unfolding strategy. |
+| `Unfold` | All test cases are expanded and shown individually. |
+| `Fold` | All test cases are collapsed into a single test node. |
+
+### Folded vs. unfolded tests
+
+The unfolding strategy affects how test results are reported in Test Explorer and TRX output:
+
+- **Unfolded tests**: Each data row appears as a separate, independent test entry in Test Explorer and TRX. You can run, debug, or filter individual test cases. Each entry has its own pass/fail status.
+- **Folded tests**: All data rows appear as a single test node in Test Explorer. One entry appears in TRX, with multiple results associated with that single test case. You can't run or filter individual data rows independently.
+
+### Exception during discovery causes folding
+
+When MSTest evaluates a data source during discovery and the evaluation throws an exception, the test falls back to a folded state regardless of the configured unfolding strategy. Because the framework can't enumerate the individual test cases, it registers the test method as a single (folded) entry.
+
+At execution time, MSTest evaluates the data source again as part of the normal lifecycle. If the exception was caused by missing setup state (for example, a dependency that `ClassInitialize` provides), the data source might succeed during execution because the lifecycle hooks have now run.
+
+> [!NOTE]
+> When debugging a test that throws during discovery, you might see an exception (for example, a `NullReferenceException`) before the test starts. This exception comes from the discovery-phase evaluation. Press **Continue** in the debugger—the test then executes normally because the execution phase runs the full MSTest lifecycle, including initialization methods. For more details, see [microsoft/testfx#7774](https://github.com/microsoft/testfx/issues/7774).
 
 ### When to change the strategy
 
-For most scenarios, the default `Auto` behavior provides the best balance. Consider changing this setting only when you have specific requirements:
+For most scenarios, the default `Auto` behavior provides the best balance. Consider changing the unfolding strategy when you have specific requirements:
 
-- Non-deterministic data sources
-- Known limitations or bugs in MSTest
-- Performance concerns with many test cases
+- Use `Fold` if your data sources depend on runtime state or setup logic that isn't available during discovery.
+- Use `Fold` for non-deterministic data sources that return different values on each evaluation.
+- Use `Fold` to reduce overhead when performance is a concern with large numbers of test cases.
 
 ### Example usage
 
@@ -536,15 +561,11 @@ public class UnfoldingExample
 
 ## Best practices
 
-1. **Choose the right attribute**: Use `DataRow` for simple, inline data. Use `DynamicData` for complex or computed data.
-
-1. **Name your test cases**: Use `DisplayName` to make test failures easier to identify.
-
-1. **Keep data sources close**: Define data sources in the same class when possible for better maintainability.
-
-1. **Use meaningful data**: Choose test data that exercises edge cases and boundary conditions.
-
-1. **Consider combinatorial testing**: For testing parameter combinations, use the [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
+- **Choose the right attribute**: Use `DataRow` for simple, inline data. Use `DynamicData` for complex or computed data.
+- **Name your test cases**: Use `DisplayName` to make test failures easier to identify.
+- **Keep data sources close**: Define data sources in the same class when possible for better maintainability.
+- **Use meaningful data**: Choose test data that exercises edge cases and boundary conditions.
+- **Consider combinatorial testing**: For testing parameter combinations, use the [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
 
 ## See also
 

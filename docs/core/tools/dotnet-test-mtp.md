@@ -1,6 +1,6 @@
 ---
-title: dotnet test command with Microsoft.Testing.Platform
-description: The dotnet test command is used to execute unit tests in a given project using Microsoft.Testing.Platform (MTP).
+title: dotnet test command with Microsoft.Testing.Platform (MTP)
+description: The dotnet test command is used to execute unit tests in a given project using MTP.
 ms.date: 02/03/2026
 ai-usage: ai-assisted
 ---
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 ## Name
 
-`dotnet test` - .NET test driver used to execute unit tests with Microsoft.Testing.Platform.
+`dotnet test` - .NET test driver used to execute unit tests with MTP.
 
 ## Synopsis
 
@@ -45,10 +45,10 @@ dotnet test -h|--help
 
 ## Description
 
-With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
+With MTP, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [MTP](../testing/microsoft-testing-platform-intro.md).
 
 > [!WARNING]
-> When Microsoft.Testing.Platform is opted in via `global.json`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
+> When MTP is opted in via `global.json`, `dotnet test` expects all test projects to use MTP. It is an error if any of the test projects use VSTest.
 
 ## Implicit restore
 
@@ -94,7 +94,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--minimum-expected-tests <NUMBER>`**
 
-  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [Microsoft.Testing.Platform exit codes](../testing/microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies the minimum number of tests that must be executed. If the actual number of tests is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [MTP exit codes](../testing/microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
 
@@ -160,7 +160,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`args`**
 
-  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform features](../testing/microsoft-testing-platform-features.md).
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [MTP overview](../testing/microsoft-testing-platform-intro.md) and [MTP features](../testing/microsoft-testing-platform-features.md).
 
   > [!TIP]
   > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
@@ -240,7 +240,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform features](../testing/microsoft-testing-platform-features.md)
+- [MTP](../testing/microsoft-testing-platform-intro.md)
+- [MTP features](../testing/microsoft-testing-platform-features.md)
 - [dotnet test](dotnet-test.md)
 - [dotnet test with VSTest](dotnet-test-vstest.md)

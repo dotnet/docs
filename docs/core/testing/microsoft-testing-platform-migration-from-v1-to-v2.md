@@ -1,14 +1,14 @@
 ---
-title: Migrating from Microsoft.Testing.Platform v1 to v2
-description: Learn how to migrate to Microsoft.Testing.Platform v2 and understand the key changes.
+title: Migrating from Microsoft.Testing.Platform (MTP) v1 to v2
+description: Learn how to migrate to MTP v2 and understand the key changes.
 author: Youssef1313
 ms.author: ygerges
 ms.date: 10/08/2025
 ---
 
-# Migrate from Microsoft.Testing.Platform v1 to v2
+# Migrate from Microsoft.Testing.Platform (MTP) v1 to v2
 
-The stable version Microsoft.Testing.Platform v2 is now available. This migration guide explores what's changed in Microsoft.Testing.Platform v2 and how you can migrate to this version.
+The stable version MTP v2 is now available. This migration guide explores what's changed in MTP v2 and how you can migrate to this version.
 
 ## Source breaking changes
 
@@ -63,7 +63,7 @@ To opt-in the MTP-based implementation, create global.json in repository or solu
 
 Attempting to run the VSTest-based `dotnet test` with MTP v2 will produce the following error:
 
-> Testing with VSTest target is no longer supported by Microsoft.Testing.Platform on .NET 10 SDK and later. If you use dotnet test, you should opt-in to the new dotnet test experience. For more information, see <https://aka.ms/dotnet-test-mtp-error>
+> Testing with VSTest target is no longer supported by MTP on .NET 10 SDK and later. If you use dotnet test, you should opt-in to the new dotnet test experience. For more information, see <https://aka.ms/dotnet-test-mtp-error>
 
 ### Rename of command-line options
 

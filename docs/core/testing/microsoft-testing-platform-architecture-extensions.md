@@ -1,15 +1,15 @@
 ---
-title: Build extensions for Microsoft.Testing.Platform
-description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform.
+title: Build extensions for Microsoft.Testing.Platform (MTP)
+description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 02/24/2026
 ai-usage: ai-assisted
 ---
 
-# Build extensions for Microsoft.Testing.Platform
+# Build extensions for Microsoft.Testing.Platform (MTP)
 
-This article covers the extensibility points for Microsoft.Testing.Platform beyond the test framework itself. For test framework creation, see [Build a test framework](./microsoft-testing-platform-architecture-test-framework.md).
+This article covers the extensibility points for MTP beyond the test framework itself. For test framework creation, see [Build a test framework](./microsoft-testing-platform-architecture-test-framework.md).
 
 For the full extension point summary and in-process/out-of-process concepts, see [Create custom extensions](./microsoft-testing-platform-architecture.md).
 

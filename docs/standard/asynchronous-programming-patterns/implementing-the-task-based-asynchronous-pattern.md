@@ -27,7 +27,7 @@ Use <xref:System.Threading.Tasks.Task.Start*> only for tasks explicitly created 
 
 In most TAP code, don't dispose tasks. A <xref:System.Threading.Tasks.Task> doesn't hold unmanaged resources in the typical case, and disposing every task adds overhead without practical benefit. Dispose only when specific APIs or measurements show a need.
 
-If you start background work that outlives the immediate call path, keep ownership explicit and track completion. For more guidance, see [Keeping async methods alive](keeping-async-methods-alive.md).
+If you start background work that outlives the immediate call path, keep ownership explicit and track completion. For more guidance, see [Keeping async methods alive](keep-async-methods-alive.md).
 
 ### Generating TAP methods manually
 

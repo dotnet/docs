@@ -69,7 +69,7 @@ The <xref:System.Threading.Tasks.Task> class provides a life cycle for asynchron
 
 All other tasks begin their life cycle in a hot state, which means that the asynchronous operations they represent are already initiated and their task status is an enumeration value other than <xref:System.Threading.Tasks.TaskStatus.Created?displayProperty=nameWithType>. All tasks that are returned from TAP methods must be activated. **If a TAP method internally uses a task's constructor to instantiate the task to be returned, the TAP method must call <xref:System.Threading.Tasks.Task.Start*> on the <xref:System.Threading.Tasks.Task> object before returning it.** Consumers of a TAP method can safely assume that the returned task is active and shouldn't try to call <xref:System.Threading.Tasks.Task.Start*> on any <xref:System.Threading.Tasks.Task> that is returned from a TAP method. Calling <xref:System.Threading.Tasks.Task.Start*> on an active task results in an <xref:System.InvalidOperationException> exception.
 
-For guidance on fire-and-forget lifetime and ownership concerns after task activation, see [Keeping async methods alive](keeping-async-methods-alive.md).
+For guidance on fire-and-forget lifetime and ownership concerns after task activation, see [Keeping async methods alive](keep-async-methods-alive.md).
 
 ## Cancellation (optional)
 

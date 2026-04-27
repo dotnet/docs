@@ -17,13 +17,13 @@ In this tutorial, you learn how to use the Microsoft XML Serializer Generator in
 > - How to add a class and an XmlSerializer
 > - How to build and run the application
 
-Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) for .NET Framework, the [Microsoft.XmlSerializer.Generator NuGet package](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) is the equivalent for modern .NET. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or deserializing objects of those types using <xref:System.Xml.Serialization.XmlSerializer>.
+Like the [XML Serializer Generator (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) for .NET Framework, the [Microsoft.XmlSerializer.Generator NuGet package](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) is the equivalent for modern .NET. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or deserializing objects of those types using <xref:System.Xml.Serialization.XmlSerializer>.
 
 ## Prerequisites
 
 To complete this tutorial:
 
-- [.NET Core 8 SDK](https://dotnet.microsoft.com/download) or later.
+- [.NET 8 SDK](https://dotnet.microsoft.com/download) or later.
 - Your favorite code editor.
 
 > [!TIP]
@@ -111,5 +111,4 @@ Add the following XML to your *MyApp.csproj* to further customize assembly gener
 ## Related resources
 
 - [Introducing XML serialization](../../standard/serialization/introducing-xml-serialization.md)
-- [How to serialize using XmlSerializer (C#)](../../standard/linq/serialize-xmlserializer.md)
-- [How to: Serialize Using XmlSerializer (Visual Basic)](../../standard/linq/serialize-xmlserializer.md)
+- [How to serialize using XmlSerializer](../../standard/linq/serialize-xmlserializer.md)

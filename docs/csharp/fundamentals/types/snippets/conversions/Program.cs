@@ -1,7 +1,12 @@
 namespace ConversionsSample;
 
+public interface INamed
+{
+    string Name { get; }
+}
+
 public class Animal;
-public class Mammal : Animal
+public class Mammal : Animal, INamed
 {
     public string Name { get; init; } = "Mammal";
 }
@@ -45,7 +50,16 @@ public static class Program
 
     private static void ShowReferenceConversions()
     {
-        // <ReferenceConversions>
+        // <ImplicitReferenceConversions>
+        Mammal otter = new() { Name = "River otter" };
+        Animal animal = otter;           // Derived to base class: always safe.
+        INamed named = otter;            // Reference type to implemented interface: always safe.
+        object obj = otter;              // Any reference type to object: always safe.
+
+        Console.WriteLine(named.Name);
+        // </ImplicitReferenceConversions>
+
+        // <ExplicitReferenceConversions>
         Animal knownAnimal = new Mammal { Name = "River otter" };
 
         if (knownAnimal is Mammal mammal)
@@ -55,7 +69,7 @@ public static class Program
 
         Animal unknownAnimal = new Reptile();
         Console.WriteLine($"Can treat as mammal: {unknownAnimal is Mammal}");
-        // </ReferenceConversions>
+        // </ExplicitReferenceConversions>
     }
 
     private static void ShowAsOperator()

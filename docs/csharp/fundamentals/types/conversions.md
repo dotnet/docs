@@ -22,14 +22,14 @@ Understanding key terms:
 - An *implicit conversion* is a conversion that happens automatically when the compiler can guarantee it's safe.
 - An *explicit cast* is a conversion you write in code, indicating the conversion might lose information or fail.
 
-Choose the conversion style based on risk:
+Match the conversion style to the situation:
 
-- Use an implicit conversion when the compiler proves the conversion is safe.
-- Use an explicit cast when data might be lost or the conversion might fail.
-- Use pattern matching or `as` when you need safe reference-type conversions.
-- Use parsing APIs when your source value is text.
+- Implicit conversions happen automatically when the compiler can guarantee safety—no syntax required.
+- Explicit casts are required when data might be lost or the conversion might fail.
+- Pattern matching or `as` applies when you need a safe reference-type conversion that might not succeed.
+- Parsing APIs apply when your source value is text.
 
-## Use implicit and explicit numeric conversions
+## Implicit and explicit numeric conversions
 
 An *implicit conversion* always succeeds. An *explicit conversion* might fail or lose information.
 
@@ -39,11 +39,17 @@ An explicit cast tells readers that the conversion might lose information. In th
 
 For full conversion tables, see [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md).
 
-## Convert references safely
+## Convert references
 
-Casts on value types typically copy the data to the destination type. Casts on reference types don't copy data; they change how you view the same object. For reference types, you often start with a base type and need to access members from a derived type. Prefer pattern matching so the test and assignment happen together.
+[Classes](classes.md) are reference types. Casts on them don't copy data. They change how you view the same object.
 
-:::code language="csharp" source="snippets/conversions/Program.cs" ID="ReferenceConversions":::
+Some reference conversions are implicit. The compiler guarantees they're safe. Three situations always produce an implicit reference conversion: assigning a derived class instance to a base class variable (the derived type is a subtype of the base type), assigning a reference type instance to a variable of an interface the type implements, and assigning any reference type to an `object` variable.
+
+:::code language="csharp" source="snippets/conversions/Program.cs" ID="ImplicitReferenceConversions":::
+
+Going the other direction, from a base type back to a derived type, requires an explicit check, because the object might not actually be the derived type you expect. Prefer pattern matching so the test and assignment happen together.
+
+:::code language="csharp" source="snippets/conversions/Program.cs" ID="ExplicitReferenceConversions":::
 
 Pattern matching keeps the successful cast variable in the smallest practical scope, which improves readability.
 
@@ -55,7 +61,7 @@ Use `as` only with reference types and nullable value types. It returns `null` w
 
 ## Understand boxing and unboxing
 
-Boxing converts a value type to `object` or to an implemented interface type. Unboxing extracts the value type from that object reference.
+Boxing converts a [struct](structs.md) or other value type to `object` or to an implemented interface type. Unboxing extracts the value type from that object reference.
 
 :::code language="csharp" source="snippets/conversions/Program.cs" ID="BoxingAndUnboxing":::
 

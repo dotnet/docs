@@ -341,7 +341,7 @@ static class Examples
             Task.WhenAll(from url in imageUrls select Stubs.GetBitmapAsync(url));
         if (downloads == await Task.WhenAny(downloads, Task.Delay(3000)))
         {
-            return downloads.Result;
+            return await downloads;
         }
         else
         {

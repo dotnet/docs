@@ -80,11 +80,11 @@ Module Examples
     ' ---- Yield example ----
     ' <YieldLoop>
     Public Async Function YieldLoopExample() As Task
-        Await Task.Run(Async Sub()
+        Await Task.Run(Async Function()
                            For i As Integer = 0 To 999999
                                Await Task.Yield() ' fork the continuation into a separate work item
                            Next
-                       End Sub)
+                       End Function)
     End Function
     ' </YieldLoop>
 
@@ -342,7 +342,7 @@ Module Examples
         Dim downloads As Task(Of Bitmap()) =
             Task.WhenAll(From url In imageUrls Select Stubs.GetBitmapAsync(url))
         If downloads Is Await Task.WhenAny(downloads, Task.Delay(3000)) Then
-            Return downloads.Result
+            Return Await downloads
         Else
             downloads.ContinueWith(Sub(t) Stubs.Log(t))
             Return Nothing

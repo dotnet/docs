@@ -6,7 +6,7 @@ Starting with .NET Framework 4.7.2, the implementation of decompression in the <
 
 - Exception messages might be different. However, the type of exception thrown remains the same.
 - Some special situations, such as not having enough memory to complete an operation, might be handled differently.
-- There are known differences for parsing gzip header (only `GZipStream` set for decompression is affected).
+- There are known differences when parsing gzip headers (only when `GZipStream` is used for decompression).
 - Exceptions when parsing invalid headers might be thrown at different times.
 - The native implementation enforces that values for some reserved flags inside the gzip header are set according to the specification, which might cause it to throw an exception where previously invalid values were ignored.
 

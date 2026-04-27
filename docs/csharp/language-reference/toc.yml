@@ -663,6 +663,11 @@ items:
       CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175, CS8820,
       CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098, CS9099,
       CS9100, CS9236
+  - name: Delegate and function pointer declarations
+    href: ./compiler-messages/delegate-function-pointer-diagnostics.md
+    displayName: >
+      CS8755, CS8756, CS8757, CS8758, CS8759, CS8786, CS8787, CS8788, CS8789,
+      CS8806, CS8807, CS8808, CS8809, CS8811, CS8909, CS8911
   - name: Overload resolution
     href: ./compiler-messages/overload-resolution.md
     displayName: >

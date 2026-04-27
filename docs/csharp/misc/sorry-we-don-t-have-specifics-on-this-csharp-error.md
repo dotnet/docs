@@ -290,11 +290,6 @@ f1_keywords:
   - "CS8752" # target type new 
   - "CS8753"
   - "CS8754"
-  - "CS8755" # function pointer
-  - "CS8756"
-  - "CS8757"
-  - "CS8758"
-  - "CS8759"
   - "CS8760" # misc
   - "CS8761"
   - "CS8771"
@@ -302,15 +297,6 @@ f1_keywords:
   - "CS8783" # local function
   - "CS8784" # source generator
   - "CS8785"
-  - "CS8786" # function pointers
-  - "CS8787"
-  - "CS8788"
-  - "CS8789"
-  - "CS8806"
-  - "CS8807"
-  - "CS8808"
-  - "CS8809"
-  - "CS8811"
   - "CS8813" # module initializers
   - "CS8814"
   - "CS8815"
@@ -340,8 +326,6 @@ f1_keywords:
   - "CS8902"
   - "CS8903" # init only property
   - "CS8906" # record
-  - "CS8909" # function pointer
-  - "CS8911" # function pointer
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9346"

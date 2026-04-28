@@ -451,10 +451,10 @@
 | Functions Worker Extension MCP SDK | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.4) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
-| IoT Operations Connector | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.0.0)<br>NuGet [1.1.0-rc](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.0-rc) |  |  |
-| IoT Operations MQTT | NuGet [1.0.1](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/1.0.1) |  |  |
-| IoT Operations Protocol | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/1.1.0) |  |  |
-| IoT Operations Services | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.0.0)<br>NuGet [1.2.0-rc3](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.2.0-rc3) |  |  |
+| IoT Operations Connector | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.0) |  |  |
+| IoT Operations MQTT | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/1.1.0) |  |  |
+| IoT Operations Protocol | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/1.2.0) |  |  |
+| IoT Operations Services | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.2.0) |  |  |
 | IoT Operations Templates | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
 | Item Templates NetCore | NuGet [4.0.5337](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5337) |  |  |
 | Item Templates NetFx | NuGet [4.0.5337](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5337) |  |  |
@@ -607,7 +607,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.6.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.1.3) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.2.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.13-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.13-Preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.1.0) |  |  |

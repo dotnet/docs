@@ -42,7 +42,7 @@ For tasks that fault with multiple exceptions, `GetAwaiter().GetResult()` still 
 Use this guidance when you choose between the two APIs:
 
 - Prefer `await` when you can. It avoids blocking and deadlock risk.
-- If you must block and you want original exception types, use `GetAwaiter().GetResult()`. In WinForms applications, note the [Common pitfalls and deadlocks](/desktop/winforms/forms/events#common-pitfalls-and-deadlocks) section of the article on event handlers.
+- If you must block and you want original exception types, use `GetAwaiter().GetResult()`. In WinForms applications, note the [Common pitfalls and deadlocks](/dotnet/desktop/winforms/forms/events#common-pitfalls-and-deadlocks) section of the article on event handlers.
 - If your existing code expects <xref:System.AggregateException>, use `Result` or `Wait()` and inspect `InnerExceptions`.
 
 These rules affect exception shape only. Both APIs still block the current thread, so both can deadlock on single-threaded <xref:System.Threading.SynchronizationContext> environments. To understand how to properly complete tasks on all code paths, see [Complete your tasks](complete-your-tasks.md).

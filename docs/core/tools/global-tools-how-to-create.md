@@ -110,7 +110,7 @@ To pack and distribute the application as a tool, modify the project file.
    > [!NOTE]
    > Choose a unique value for `<ToolCommandName>`. Avoid using file extensions (like `.exe` or `.cmd`) because the tool is installed as an app host and the command shouldn't include an extension. This helps prevent conflicts with existing commands and ensures a smooth installation experience.
 
-   `<PackageOutputPath>` is an optional element that determines where the .NET CLI produces the NuGet package. The .NET CLI uses the NuGet package to install your tool.
+   `<PackageOutputPath>` is an optional element that determines where .NET produces the NuGet package. The .NET CLI uses the NuGet package to install your tool.
 
    The project file now looks like the following example:
 

@@ -366,7 +366,7 @@ class Program
 {
     static Meter s_meter = new Meter("HatCo.Store");
     static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hatco.store.hats_sold",
-                                                                unit: "{hats}",
+                                                                unit: "{hat}",
                                                                 description: "The number of hats sold in our store");
 
     static void Main(string[] args)
@@ -390,18 +390,18 @@ Press p to pause, r to resume, q to quit.
 
 Name                                                       Current Value
 [HatCo.Store]
-    hatco.store.hats_sold ({hats})                                40
+    hatco.store.hats_sold ({hat})                                 40
 ```
 
-dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "{hats}"
+dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "{hat}"
 has replaced the generic term "Count" that is visible in previous descriptions.
 
 ### Best practices
 
 - .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. The curly
-braces around "{hats}" is part of the UCUM standard, indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or bytes.
+braces around "{hat}" is part of the UCUM standard, indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or bytes. See also [Metrics semantic conventions - Instrument units](https://opentelemetry.io/docs/specs/semconv/general/metrics/#instrument-units).
 
-- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final reported metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool could have calculated the rate of change and derived on its own that the appropriate unit for the calculated rate metric is {hats}/sec.
+- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final reported metric. In this example, each measurement is a number of hats, so "{hat}" is the appropriate unit to pass in the constructor. The collection tool could have calculated the rate of change and derived on its own that the appropriate unit for the calculated rate metric is {hat}/sec.
 
 - When recording measurements of time, prefer units of seconds recorded as a floating point or double value.
 

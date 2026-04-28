@@ -209,9 +209,9 @@ For more information on host and app configuration, see [.NET Generic Host](gene
 
 ### Connection string prefixes
 
-The Configuration API has special processing rules for connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the table are loaded into the app with the default configuration or when no prefix is supplied to `AddEnvironmentVariables`.
+The Configuration API has special processing rules for connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the following tables are loaded into the app with the default configuration or when no prefix is supplied to `AddEnvironmentVariables`.
 
-In .NET 8 and .NET 9, four connection string prefixes are recognized:
+Before .NET 10, four connection string prefixes are recognized:
 
 | Connection string prefix | Provider                                                                |
 |--------------------------|-------------------------------------------------------------------------|

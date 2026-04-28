@@ -224,7 +224,7 @@ Starting in .NET 10, seven additional prefixes are recognized for a total of 11:
 
 | Connection string prefix  | Provider                                                                                |
 |---------------------------|-----------------------------------------------------------------------------------------|
-| `APIHUBCONNSTR_`          | [Azure API hubs](/azure/connectors/apihubs)                                             |
+| `APIHUBCONNSTR_`          | Azure API hubs                                                                          |
 | `CUSTOMCONNSTR_`          | Custom provider                                                                         |
 | `DOCDBCONNSTR_`           | [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db)                       |
 | `EVENTHUBCONNSTR_`        | [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs)                     |

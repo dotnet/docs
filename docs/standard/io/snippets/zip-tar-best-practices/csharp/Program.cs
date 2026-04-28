@@ -95,10 +95,9 @@ void SafeExtractZip(string archivePath, string destinationDir,
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
         // Enforce per-entry and cumulative size limits using the declared
-        // uncompressed size. Note: this value is read from the archive header
-        // and could be spoofed by a malicious archive — for defense in depth,
-        // also monitor actual bytes read during decompression (see the zip
-        // bomb section for a streaming size check example).
+        // uncompressed size. In modern .NET, entry.Open() won't produce more
+        // than entry.Length bytes, so checking the declared size matches the
+        // runtime behavior that this sample relies on.
         totalSize += entry.Length;
         if (entry.Length > maxEntrySize)
             throw new InvalidOperationException(

@@ -192,12 +192,12 @@ On Windows, when using `ExtractToDirectory`, the runtime replaces control charac
 
 ## Data integrity
 
-Both ZIP and TAR formats include CRC-32 checksums that you can use to verify data hasn't been corrupted or tampered with.
+ZIP and TAR archives use different integrity checks. ZIP stores CRC-32 values for entry data. TAR stores a header checksum for each entry header.
 
-Starting with .NET 11, the runtime validates CRC-32 checksums automatically when reading ZIP entries. When you read an entry's data stream to completion, the runtime compares the computed CRC of the decompressed data against the checksum stored in the archive. If they don't match, an `InvalidDataException` is thrown. .NET 11 also validates CRC-32 checksums in TAR entry headers.
+Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically when reading ZIP entries. When you read an entry's data stream to completion, the runtime compares the computed CRC-32 value of the decompressed data against the value stored in the archive. If the values don't match, an `InvalidDataException` is thrown. Starting with .NET 11, the runtime also validates TAR header checksums when reading TAR entry headers.
 
 > [!NOTE]
-> In prior versions of .NET, no CRC validation was performed on read. The runtime computed CRC values when writing entries (for storage in the archive), but never verified them during extraction. If you're targeting a runtime older than .NET 11, be aware that corrupt or tampered entries are silently accepted.
+> In versions earlier than .NET 11, the runtime didn't validate ZIP CRC-32 values on read. The runtime computed CRC-32 values when writing ZIP entries for storage in the archive, but didn't verify them during extraction. If you target a runtime earlier than .NET 11, corrupt or tampered ZIP entries might be accepted silently.
 
 > [!NOTE]
 > CRC-32 isn't a cryptographic hash—it detects accidental corruption but doesn't protect against intentional tampering by a sophisticated attacker.

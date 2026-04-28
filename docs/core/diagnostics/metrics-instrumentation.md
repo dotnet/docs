@@ -399,7 +399,7 @@ has replaced the generic term "Count" that is visible in previous descriptions.
 ### Best practices
 
 - .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. The curly
-braces around "{hat}" is part of the UCUM standard, indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or bytes. See also [Metrics semantic conventions - Instrument units](https://opentelemetry.io/docs/specs/semconv/general/metrics/#instrument-units).
+braces around "{hat}" is part of the UCUM standard, indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or bytes. For more information, see [Metrics semantic conventions - Instrument units](https://opentelemetry.io/docs/specs/semconv/general/metrics/#instrument-units).
 
 - The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final reported metric. In this example, each measurement is a number of hats, so "{hat}" is the appropriate unit to pass in the constructor. The collection tool could have calculated the rate of change and derived on its own that the appropriate unit for the calculated rate metric is {hat}/sec.
 

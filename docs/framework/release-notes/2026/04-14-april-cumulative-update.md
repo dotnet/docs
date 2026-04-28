@@ -6,7 +6,7 @@ ms.date: 04/14/2026
 # April 2026 cumulative update
 
 _Released April 14, 2026_
-_Updated April 22, 2026 to include known issue_
+_Updated April 22, 2026, to include a known issue._
 
 ## Summary of what's new in this release
 

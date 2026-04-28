@@ -150,8 +150,8 @@ When you assign a method to a function pointer by using the address-of (`&`) ope
 Function pointer declarations include a calling convention and optional return type modifiers. The compiler validates these options. For the full rules, see [Function pointers](../unsafe-code.md#function-pointers).
 
 - Change either the method's calling convention or the function pointer type's calling convention so they match (**CS8786**). When you assign a method to a function pointer, the calling conventions must be compatible. For example, a method using `Cdecl` can't be assigned to a function pointer declared with `Stdcall`.
-- Use a supported calling convention in the function pointer declaration (**CS8806**). The language supports `managed`, `unmanaged`, and specific unmanaged conventions such as `Cdecl`, `Stdcall`, `Thiscall`, and `Fastcall`.
-- Replace the invalid specifier with one of the supported calling convention keywords: `managed`, `unmanaged`, `Cdecl`, `Stdcall`, `Thiscall`, or `Fastcall` (**CS8807**). You can also use `unmanaged` with a custom calling convention type in square brackets.
+- Use a supported calling convention in the function pointer declaration (**CS8806**). The language supports `managed` and `unmanaged`. For a specific unmanaged convention, use the `unmanaged` keyword with the convention in square brackets, such as `unmanaged[Cdecl]`, `unmanaged[Stdcall]`, `unmanaged[Thiscall]`, or `unmanaged[Fastcall]`.
+- Replace the invalid specifier with a supported calling convention (**CS8807**). Use `managed`, `unmanaged`, or `unmanaged` with a calling convention type in square brackets (for example, `unmanaged[Cdecl]`).
 - Use only `ref` or `ref readonly` as the return type modifier (**CS8808**). Other modifiers, such as `out` or `in`, aren't valid for function pointer return types.
 - Remove the duplicate return type modifier so only one `ref` or `ref readonly` appears (**CS8809**). The compiler allows at most one return type modifier on a function pointer declaration.
 

@@ -253,6 +253,9 @@ When you publish a self-contained deployment (SCD), the publishing process creat
 
 Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
 
+> [!IMPORTANT]
+> **Breaking change in .NET 8:** Starting in .NET 8, specifying a runtime identifier (via `-r <RID>`) no longer implies self-contained deployment. In .NET 7 and earlier, using `-r <RID>` automatically produced a self-contained app. To produce a self-contained app in .NET 8 and later, explicitly add `--self-contained` to the publish command. If you specify a RID without `--self-contained`, the app is published as framework-dependent and requires the .NET runtime on the target machine. For more information, see [Runtime-specific apps no longer self-contained](../compatibility/sdk/8.0/runtimespecific-app-default.md).
+
 **Advantages**
 
 - **Control .NET version**: Control which version of .NET is deployed with the app.
@@ -531,8 +534,61 @@ dotnet publish -c Release [-r <RID>] -p:PublishProfile=DefaultContainer
 
 For more information about container deployment, see [.NET SDK container creation overview](../containers/overview.md).
 
+## Troubleshoot self-contained deployment
+
+Use this section to diagnose and fix common issues with self-contained deployment.
+
+### App prompts for .NET runtime installation
+
+If your published app prompts users to install the .NET runtime, the app was published as framework-dependent instead of self-contained.
+
+The most common cause is a .NET 8 breaking change: starting in .NET 8, specifying a runtime identifier (via `-r <RID>`) no longer implies self-contained. If you relied on this behavior in .NET 7 or earlier and upgraded to .NET 8 or later, your publish command might produce a framework-dependent app.
+
+::: zone pivot="cli,vscode"
+
+Add `--self-contained` to your publish command:
+
+```dotnetcli
+dotnet publish -c Release -r <RID> --self-contained
+```
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+In your publish profile settings, set **Deployment Mode** to **Self-contained**.
+
+::: zone-end
+
+For more information about this breaking change, see [Runtime-specific apps no longer self-contained](../compatibility/sdk/8.0/runtimespecific-app-default.md).
+
+### Verify that publish output is self-contained
+
+To confirm your publish output is self-contained, check the publish output folder for .NET runtime files. A self-contained publish folder includes the .NET runtime, which results in hundreds of additional files compared to a framework-dependent deployment.
+
+::: zone pivot="cli,vscode"
+
+After you publish, look for these runtime files in the publish output folder:
+
+- On Windows, look for `coreclr.dll` and `clrjit.dll`.
+- On Linux, look for `libcoreclr.so` and `libclrjit.so`.
+- On macOS, look for `libcoreclr.dylib` and `libclrjit.dylib`.
+
+If those files aren't present, the app was published as framework-dependent.
+
+::: zone-end
+
+To ensure the app is always published as self-contained, set the `SelfContained` property in your project file:
+
+```xml
+<PropertyGroup>
+  <SelfContained>true</SelfContained>
+</PropertyGroup>
+```
+
 ## See also
 
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Select the .NET version to use](../versions/selection.md)
 - [Publishing for macOS](macos.md)
+- [Runtime-specific apps no longer self-contained](../compatibility/sdk/8.0/runtimespecific-app-default.md)

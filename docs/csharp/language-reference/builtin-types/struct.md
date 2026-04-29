@@ -172,16 +172,15 @@ For any structure type (except [`ref struct`](ref-struct.md) types), [boxing and
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
-
-For more information about `struct` features, see the following feature proposal notes:
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), specifically the following clauses:
 
 - [Readonly structs](~/_csharpstandard/standard/structs.md#1622-struct-modifiers)
 - [Readonly instance members](~/_csharpstandard/standard/structs.md#163-struct-members)
 - [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1659-constructors)
 - [Allow `with` expression on structs](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
 - [Record structs](~/_csharpstandard/standard/structs.md#164-synthesized-record-struct-members)
-- [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
+
+You can also read about [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md) in the feature proposal specification.
 
 ## See also
 

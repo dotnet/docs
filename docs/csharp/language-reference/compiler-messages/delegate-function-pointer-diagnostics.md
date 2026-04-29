@@ -1,5 +1,5 @@
 ---
-title: "Resolve errors and warnings related to delegate and function pointer declarations and uses"
+title: "Resolve errors using delegates and function pointers"
 description: "This article helps you diagnose and correct compiler errors and warnings related to delegate and function pointer declarations and uses"
 f1_keywords:
   - "CS0059"
@@ -53,7 +53,7 @@ ms.date: 04/27/2026
 ai-usage: ai-assisted
 ---
 
-# Resolve errors and warnings for delegate and function pointer declarations
+# Resolve errors and warnings for delegate and function pointers
 
 This article covers the following compiler errors and warnings:
 

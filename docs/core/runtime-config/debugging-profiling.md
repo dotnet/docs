@@ -81,7 +81,7 @@ The following table compares perf maps and jit maps.
 | **runtimeconfig.json** | N/A          | N/A    |
 | **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
 
-For EventPipe-related environment variables (including `DOTNET_EventPipeThreadSamplingRate`), see [Trace using environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables).
+For EventPipe-related environment variables, see [Trace using environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables).
 
 ## Perf log markers
 

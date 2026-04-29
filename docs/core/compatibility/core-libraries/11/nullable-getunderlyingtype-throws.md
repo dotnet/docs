@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 ## Previous behavior
 
-Previously, `Nullable.GetUnderlyingType` used `IsGenericType` and `GetGenericTypeDefinition` directly. Custom `Type` subclasses that did not specialize nullable handling silently returned `null`.
+Previously, `Nullable.GetUnderlyingType` only recognized the `Nullable<T>` provided by the currently executing runtime. It returned `null` for any custom `Type` subclasses.
 
 ```csharp
 class MyType : Type { /* ... */ }
@@ -37,7 +37,7 @@ Type? u = Nullable.GetUnderlyingType(t);
 //   "Derived classes must provide an implementation."
 ```
 
-The in-box `Type` subclasses that .NET ships (`RuntimeType`, `TypeDelegator`, `TypeBuilder`, `EnumBuilder`, `GenericTypeParameterBuilder`, `TypeBuilderInstantiation`, `SymbolType`, `ModifiedType`, the `SignatureType` family, and the `MetadataLoadContext` types) all override the new virtual and are unaffected.
+The `Type` subclasses shipped with .NET (runtime `Type` implementation, `TypeDelegator`, `TypeBuilder`, `EnumBuilder`, `GenericTypeParameterBuilder`, `TypeBuilderInstantiation`, `SymbolType`, `ModifiedType`, the `SignatureType` family, and the `MetadataLoadContext` types) all override the new virtual and are unaffected.
 
 ## Type of breaking change
 

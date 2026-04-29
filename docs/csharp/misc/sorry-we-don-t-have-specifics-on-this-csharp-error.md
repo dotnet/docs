@@ -309,10 +309,6 @@ f1_keywords:
   - "CS8853"
   - "CS8855"
   - "CS8856"
-  - "CS8857" # records
-  - "CS8869"
-  - "CS8871"
-  - "CS8876"
   - "CS8888" # feature / version
   - "CS8889"
   - "CS8890"
@@ -325,7 +321,6 @@ f1_keywords:
   - "CS8901"
   - "CS8902"
   - "CS8903" # init only property
-  - "CS8906" # record
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9346"

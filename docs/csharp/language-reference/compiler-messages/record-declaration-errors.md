@@ -3,37 +3,47 @@ title: Resolve errors and warnings related to record declarations
 description: Learn how to diagnose and correct C# compiler errors and warnings when you declare record types, either record struct types or record class types.
 f1_keywords:
   - "CS8851"
+  - "CS8857"
   - "CS8858"
   - "CS8859"
   - "CS8860"
   - "CS8864"
   - "CS8865"
   - "CS8866"
+  - "CS8869"
   - "CS8870"
+  - "CS8871"
   - "CS8872"
   - "CS8873"
   - "CS8874"
   - "CS8875"
+  - "CS8876"
   - "CS8877"
   - "CS8879"
+  - "CS8906"
   - "CS8907"
   - "CS8908"
   - "CS8913"
 helpviewer_keywords:
   - "CS8851"
+  - "CS8857"
   - "CS8858"
   - "CS8859"
   - "CS8860"
   - "CS8864"
   - "CS8865"
   - "CS8866"
+  - "CS8869"
   - "CS8870"
+  - "CS8871"
   - "CS8872"
   - "CS8873"
   - "CS8874"
   - "CS8875"
+  - "CS8876"
   - "CS8877"
   - "CS8879"
+  - "CS8906"
   - "CS8907"
   - "CS8908"
   - "CS8913"
@@ -48,19 +58,24 @@ The C# compiler generates errors and warnings when you misuse [record types](../
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS8851**](#equality-members): *'Type' defines 'Equals' but not 'GetHashCode'*
+- [**CS8857**](#anchor-tbd): *The receiver of a `with` expression must have a non-void type.*
 - [**CS8858**](#equality-members): *The receiver type is not a valid record type and is not a struct type.*
 - [**CS8859**](#reserved-member-names): *Members named 'Clone' are disallowed in records.*
 - [**CS8860**](#reserved-member-names): *Types and aliases should not be named 'record'.*
 - [**CS8864**](#record-inheritance): *Records may only inherit from object or another record.*
 - [**CS8865**](#record-inheritance): *Only records may inherit from records.*
 - [**CS8866**](#positional-members): *Record member must be a readable instance property or field of the type to match the positional parameter.*
+- [**CS8869**](#anchor-tbd): *'member' does not override expected method from 'object'.*
 - [**CS8870**](#synthesized-member-signatures): *Member cannot be sealed because containing record is not sealed.*
+- [**CS8871**](#anchor-tbd): *'member' does not override expected method from 'type'.*
 - [**CS8872**](#synthesized-member-signatures): *Member must allow overriding because the containing record is not sealed.*
 - [**CS8873**](#synthesized-member-signatures): *Record member must be public.*
 - [**CS8874**](#synthesized-member-signatures): *Record member must return type.*
 - [**CS8875**](#synthesized-member-signatures): *Record member must be protected.*
+- [**CS8876**](#anchor-tbd): *'member' does not override expected property from 'type'.*
 - [**CS8877**](#synthesized-member-signatures): *Record member may not be static.*
 - [**CS8879**](#synthesized-member-signatures): *Record member must be private.*
+- [**CS8906**](#anchor-tbd): *Record equality contract property 'member' must have a get accessor.*
 - [**CS8908**](#positional-members): *The type may not be used for a field of a record.*
 - [**CS8913**](#positional-members): *The positional member found corresponding to this parameter is hidden.*
 

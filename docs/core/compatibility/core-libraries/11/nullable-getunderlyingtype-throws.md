@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Nullable.GetUnderlyingType throws for custom Type subclasses"
 description: "Learn about the breaking change in .NET 11 where Nullable.GetUnderlyingType throws NotSupportedException for custom Type subclasses that don't override Type.GetNullableUnderlyingType."
-ms.date: 04/28/2026
+ms.date: 04/29/2026
 ai-usage: ai-assisted
 ---
 
@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 ## Previous behavior
 
-Previously, `Nullable.GetUnderlyingType` only recognized the `Nullable<T>` provided by the currently executing runtime. It returned `null` for any custom `Type` subclasses.
+Previously, `Nullable.GetUnderlyingType` only recognized the `Nullable<T>` provided by the currently executing runtime. For types from other reflection universes, including custom `Type` subclasses, it typically returned `null` even if they represented `Nullable<T>`.
 
 ```csharp
 class MyType : Type { /* ... */ }
@@ -85,4 +85,4 @@ Compiling against .NET 11 surfaces the new virtual on `Type`, making the overrid
 ## Affected APIs
 
 - <xref:System.Nullable.GetUnderlyingType(System.Type)?displayProperty=fullName>
-- `System.Type.GetNullableUnderlyingType` (new virtual; default throws <xref:System.NotSupportedException>)
+- <xref:System.Type.GetNullableUnderlyingType?displayProperty=fullName> (new virtual; default throws <xref:System.NotSupportedException>)

@@ -1,11 +1,12 @@
 ---
 title: April 2026 cumulative update
 description: Learn about the improvements in the .NET Framework April 2026 cumulative update.
-ms.date: 04/14/2026
+ms.date: 04/28/2026
 ---
 # April 2026 cumulative update
 
 _Released April 14, 2026_
+_Updated April 28, 2026, to include a known issue._
 
 ## Summary of what's new in this release
 
@@ -54,7 +55,7 @@ Addresses an issue with running a WCF NamedPipe service inside a Win32 app conta
 
 ## Known issues in this release
 
-This release contains no known issues.
+This update might fail to install when [applied through DISM](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows?view=windows-11) to an offline Windows 10 IoT Enterprise LTSC 21H2 image. A fix for this issue will be included in an upcoming .NET Framework update.
 
 ## Summary tables
 

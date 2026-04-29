@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Nullable.GetUnderlyingType throws for custom Type subclasses
 
-<xref:System.Nullable.GetUnderlyingType(System.Type)?displayProperty=nameWithType> now forwards to the new virtual method <xref:System.Type.GetNullableUnderlyingType>. Custom <xref:System.Type> subclasses that don't override this new virtual throw <xref:System.NotSupportedException> instead of returning `null`.
+<xref:System.Nullable.GetUnderlyingType(System.Type)?displayProperty=nameWithType> now forwards to the new virtual method `System.Type.GetNullableUnderlyingType()`. Custom <xref:System.Type> subclasses that don't override this new virtual throw <xref:System.NotSupportedException> instead of returning `null`.
 
 ## Version introduced
 
@@ -85,4 +85,4 @@ Compiling against .NET 11 surfaces the new virtual on `Type`, making the overrid
 ## Affected APIs
 
 - <xref:System.Nullable.GetUnderlyingType(System.Type)?displayProperty=fullName>
-- <xref:System.Type.GetNullableUnderlyingType?displayProperty=fullName> (new virtual; default throws <xref:System.NotSupportedException>)
+- `System.Type.GetNullableUnderlyingType()` (new virtual; default throws <xref:System.NotSupportedException>)

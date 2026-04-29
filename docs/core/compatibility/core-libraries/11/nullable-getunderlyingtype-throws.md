@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11 Preview 4
 
 ## Previous behavior
 

@@ -72,6 +72,9 @@ For example, consider an asynchronous method that renders an image. The body of 
 :::code language="csharp" source="./snippets/implementing-the-task-based-asynchronous-pattern/csharp/Program.cs" id="ComputeBoundTask":::
 :::code language="vb" source="./snippets/implementing-the-task-based-asynchronous-pattern/vb/Program.vb" id="ComputeBoundTask":::
 
+> [!NOTE]
+> This sample uses <xref:System.Drawing.Bitmap>, which requires the `System.Drawing.Common` package and is supported only on Windows. The compute-bound task pattern—using `Task.Run` with a `CancellationToken`—applies on all platforms; substitute a cross-platform imaging library for non-Windows targets.
+
 Compute-bound tasks end in a <xref:System.Threading.Tasks.TaskStatus.Canceled> state if at least one of the following conditions is true:
 
 - A cancellation request arrives through the <xref:System.Threading.CancellationToken> object, which is provided as an argument to the creation method (for example, `StartNew` or `Run`) before the task transitions to the <xref:System.Threading.Tasks.TaskStatus.Running> state.
@@ -105,6 +108,9 @@ Asynchronous methods aren't limited to just compute-bound or I/O-bound operation
 
 :::code language="csharp" source="./snippets/implementing-the-task-based-asynchronous-pattern/csharp/Program.cs" id="MixedBoundTask":::
 :::code language="vb" source="./snippets/implementing-the-task-based-asynchronous-pattern/vb/Program.vb" id="MixedBoundTask":::
+
+> [!NOTE]
+> This sample uses <xref:System.Drawing.Bitmap>, which requires the `System.Drawing.Common` package and is supported only on Windows. The pattern of chaining an async download with an async compute-bound operation applies on all platforms; substitute a cross-platform imaging library for non-Windows targets.
 
 This example also demonstrates how a single cancellation token can be threaded through multiple asynchronous operations. For more information, see the cancellation usage section in [Consuming the Task-based Asynchronous Pattern](consuming-the-task-based-asynchronous-pattern.md).
 

@@ -127,6 +127,9 @@ private async void btnDownload_Click(object sender, RoutedEventArgs e)
 
  The <xref:System.Threading.Tasks> namespace includes several methods for composing and working with tasks.
 
+> [!NOTE]
+> Several code samples in this section use <xref:System.Drawing.Bitmap>, which requires the `System.Drawing.Common` package and is supported only on Windows. The async patterns they demonstrate apply on all platforms; substitute a cross-platform imaging library for non-Windows targets.
+
 ### Task.Run
 
  The <xref:System.Threading.Tasks.Task> class includes several <xref:System.Threading.Tasks.Task.Run*> methods that let you easily offload work as a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> to the thread pool. For example:

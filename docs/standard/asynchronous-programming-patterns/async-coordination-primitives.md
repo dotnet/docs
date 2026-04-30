@@ -101,4 +101,4 @@ The following example runs three participants through two rounds of a barrier:
 - [Async semaphores, locks, and reader/writer coordination](async-coordination-primitives-advanced.md)
 - [Task-based asynchronous pattern (TAP)](task-based-asynchronous-pattern-tap.md)
 - [Complete your tasks](complete-your-tasks.md)
-- [Keeping async methods alive](keeping-async-methods-alive.md)
+- [Keep async methods alive](keep-async-methods-alive.md)

@@ -100,6 +100,6 @@ For more information, see [System.Threading.Channels](/dotnet/core/extensions/ch
 ## See also
 
 - [Build async coordination primitives](async-coordination-primitives.md)
-- [Keeping async methods alive](keeping-async-methods-alive.md)
+- [Keep async methods alive](keep-async-methods-alive.md)
 - [Complete your tasks](complete-your-tasks.md)
 - [Consuming the Task-based Asynchronous Pattern](consuming-the-task-based-asynchronous-pattern.md)

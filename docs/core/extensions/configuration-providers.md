@@ -211,7 +211,7 @@ For more information on host and app configuration, see [.NET Generic Host](gene
 
 The Configuration API has special processing rules for connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the following tables are loaded into the app with the default configuration or when no prefix is supplied to `AddEnvironmentVariables`.
 
-Before .NET 10, four connection string prefixes are recognized:
+In .NET 9 and earlier versions, four connection string prefixes are recognized:
 
 | Connection string prefix | Provider                                                                |
 |--------------------------|-------------------------------------------------------------------------|
@@ -236,26 +236,26 @@ Starting in .NET 10, seven additional prefixes are recognized for a total of 11:
 | `SQLAZURECONNSTR_`        | [Azure SQL Database](https://azure.microsoft.com/services/sql-database)                 |
 | `SQLCONNSTR_`             | [SQL Server](https://www.microsoft.com/sql-server)                                      |
 
-When an environment variable is discovered and loaded into configuration with any of the prefixes shown above:
+When an environment variable is discovered and loaded into configuration with any of the recognized prefixes:
 
 - The configuration key is created by removing the environment variable prefix and adding a configuration key section (`ConnectionStrings`).
-- A new configuration key-value pair is created that represents the database connection provider, when a provider name is associated with the prefix.
+- A new configuration key-value pair is created that represents the database connection provider when a provider name is associated with the prefix.
 
 The following table shows the configuration entries produced for each prefix. Prefixes marked _.NET 10+_ are only processed when running on .NET 10 or later.
 
-| Environment variable key         | Converted configuration key | Provider configuration entry                                                    |
-|----------------------------------|-----------------------------|---------------------------------------------------------------------------------|
-| `CUSTOMCONNSTR_{KEY}`            | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
-| `MYSQLCONNSTR_{KEY}`             | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
-| `SQLAZURECONNSTR_{KEY}`          | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
-| `SQLCONNSTR_{KEY}`               | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
-| `POSTGRESQLCONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `Npgsql`                 |
+| Environment variable key                    | Converted configuration key | Provider configuration entry                                                    |
+|---------------------------------------------|-----------------------------|---------------------------------------------------------------------------------|
 | `APIHUBCONNSTR_{KEY}` _(.NET 10+)_          | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `CUSTOMCONNSTR_{KEY}`                       | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
 | `DOCDBCONNSTR_{KEY}` _(.NET 10+)_           | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
 | `EVENTHUBCONNSTR_{KEY}` _(.NET 10+)_        | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `MYSQLCONNSTR_{KEY}`                        | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
 | `NOTIFICATIONHUBCONNSTR_{KEY}` _(.NET 10+)_ | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `POSTGRESQLCONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `Npgsql`                 |
 | `REDISCACHECONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
 | `SERVICEBUSCONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `SQLAZURECONNSTR_{KEY}`                     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
+| `SQLCONNSTR_{KEY}`                          | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 
 [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 

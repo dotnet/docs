@@ -139,7 +139,7 @@ To correct these errors, apply the following changes to your positional record d
 To correct these errors, apply the following changes:
 
 - Add a `GetHashCode` method whenever you define an `Equals` method. The [equality contract](../../programming-guide/statements-expressions-operators/equality-comparisons.md) requires that objects considered equal produce the same hash code, so the compiler enforces that these two methods are always defined together (**CS8851**).
-- Change the receiver of a `with` expression so that it's a [record type](../builtin-types/record.md) or a [struct type](../builtin-types/struct.md). The `with` expression creates a modified copy by using the type's copy constructor, which is only available on record types and struct types (**CS8858**).
+- Change the receiver of a `with` expression so that it's a [record type](../builtin-types/record.md) or a [struct type](../builtin-types/struct.md). The `with` expression creates a modified copy by using the `record` copy constructor, or value copy semantics for `struct` types (**CS8858**).
 - Ensure the receiver of a [`with` expression](../operators/with-expression.md) has a non-void type. The `with` expression produces a new copy of the receiver, so the receiver must evaluate to a value that can be copied (**CS8857**).
 
 ## Record inheritance

@@ -12,9 +12,9 @@ You'll create or update 4 articles. For .NET 11, you update these:
 If this is the first preview of a new major version:
 
 - Create new files and replace "dotnet-11" in the preceding paths with the correct release. For example, use "dotnet-12" for .NET 12.
-- Add an entry to https://github.com/dotnet/docs/blob/37d534e346730c90d2b5943e2068c23c14663350/docs/fundamentals/index.yml.
-- Add an entry to https://github.com/dotnet/docs/blob/37d534e346730c90d2b5943e2068c23c14663350/docs/fundamentals/toc.yml.
-- Add an entry to https://github.com/dotnet/docs/blob/37d534e346730c90d2b5943e2068c23c14663350/docs/index.yml.
+- Add an entry to https://github.com/dotnet/docs/blob/main/docs/fundamentals/index.yml.
+- Add an entry to https://github.com/dotnet/docs/blob/main/docs/fundamentals/toc.yml.
+- Add an entry to https://github.com/dotnet/docs/blob/main/docs/index.yml.
 
 ## Source material
 

@@ -16,7 +16,7 @@
 - Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the proposed TOC. When defining a concept, link to articles that provide more detail. Definitions are less important for concepts that aren't related to the C# language: Remember the goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
 - Similarly, define all terms that may be unfamiliar to the reader when they are first introduced. Link to articles that provide more detail on these terms. Remember that the audience for Fundamentals articles may not be familiar with all C# terminology, or all compputer science terminology. Provide clear definitions and context.
 - Set the `ms.topic` metadata value in each article's YAML front matter to match the article's content type (`overview`, `tutorial`, `concept`, `how-to`, `troubleshooting`, or `reference`).
-- After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links).
+- After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links). This is mandatory for every article before it can be merged to ensure consistency and completeness across the Fundamentals section.
 - Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
 - When recommending a modern feature over an older alternative, always include a justification—state *why* the recommended approach is preferred. Never describe older features as obsolete or deprecated (Goal 9).
 - Do not add links to files that will be created in future PRs until those files are live. For example, if PR 3 creates the `fundamentals/types/enums.md` article, then earlier PRs should not link to that file until PR 3 is merged. This may require some temporary duplication of content or placeholders for links, but it will prevent broken links in merged PRs. Instead, when an article is created, add appropriate links to it in earlier articles as needed to connect the content together.
@@ -25,6 +25,8 @@
 ## Phase A: Program Structure (§7)
 
 ### PR 1 — Program structure: namespaces + preprocessor directives
+
+[#52082](https://github.com/dotnet/docs/pull/52082) *Merged*
 
 > ~10 files
 
@@ -37,6 +39,8 @@
 
 ### PR 2 — Tutorial: System.CommandLine
 
+[#52592](https://github.com/dotnet/docs/pull/52592) *Merged*
+
 > ~4 files
 
 1. New `fundamentals/tutorials/system-commandline.md` — demonstrate `System.CommandLine` for commands, subcommands, arguments, and options
@@ -45,6 +49,8 @@
 ## Phase B: Type System (§8) — 5 PRs
 
 ### PR 3 — Type system: overview, built-in types, enums
+
+[#52608](https://github.com/dotnet/docs/pull/52608) *Merged*
 
 > ~10 files
 
@@ -55,7 +61,7 @@
 
 ### PR 4 — Type system: classes, structs, records
 
-> ~10 files
+[#52605](https://github.com/dotnet/docs/pull/52605) *Merged*
 
 1. Revise `fundamentals/types/classes.md` — static classes (C# 2), object/collection initializers (C# 3)
 2. New `fundamentals/types/structs.md` — struct design, auto-default (C# 11), parameterless constructors (C# 10), readonly members (C# 8), record structs (C# 10)
@@ -63,6 +69,8 @@
 4. Snippet files + toc.yml
 
 ### PR 5 — Type system: tuples, interfaces, generics
+
+[#52891](https://github.com/dotnet/docs/pull/52891) *Merged*
 
 > ~10 files
 
@@ -73,6 +81,8 @@
 
 ### PR 6 — Type system: conversions, delegates/lambdas, records tutorial
 
+[#52973](https://github.com/dotnet/docs/pull/52973) *Merged*
+
 > ~10 files
 
 1. New `fundamentals/types/conversions.md` — pull+revise from `programming-guide/types/casting-and-type-conversions.md` and `programming-guide/types/boxing-and-unboxing.md`. Add redirects
@@ -81,6 +91,8 @@
 4. Snippet files + toc.yml + redirects
 
 ### PR 7 — Tutorial: Choosing between tuples, records, structs, and classes
+
+[#53160](https://github.com/dotnet/docs/pull/53160) *In review*
 
 > ~4 files
 

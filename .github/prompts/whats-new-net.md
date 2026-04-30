@@ -2,18 +2,23 @@ When you're assigned an issue where one label includes the word "Release" and yo
 
 ## Task
 
-You'll update 4 articles. For .NET 10, you update these:
+You'll create or update 4 articles. For .NET 11, you update these:
 
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/overview.md
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/runtime.md
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/libraries.md
-- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-10/sdk.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/overview.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/runtime.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/libraries.md
+- https://github.com/dotnet/docs/blob/main/docs/core/whats-new/dotnet-11/sdk.md
 
-For other releases, replace "dotnet-10" in the preceding paths with the correct release. For example, use "dotnet-11" for the ".NET 11" releases.
+If this is the first preview of a new major version:
+
+- Create new files and replace "dotnet-11" in the preceding paths with the correct release. For example, use "dotnet-12" for .NET 12.
+- Add an entry to https://github.com/dotnet/docs/blob/37d534e346730c90d2b5943e2068c23c14663350/docs/fundamentals/index.yml.
+- Add an entry to https://github.com/dotnet/docs/blob/37d534e346730c90d2b5943e2068c23c14663350/docs/fundamentals/toc.yml.
+- Add an entry to https://github.com/dotnet/docs/blob/37d534e346730c90d2b5943e2068c23c14663350/docs/index.yml.
 
 ## Source material
 
-To learn what's new in the targeted release, use the corresponding release notes in the [dotnet core](https://github.com/dotnet/core) repository. The release notes will be in a subfolder of the "release-notes" folder.
+To learn what's new in the targeted release, use the corresponding release notes in the [dotnet core](https://github.com/dotnet/core) repository. The release notes are in a subfolder of the "release-notes" folder.
 
 For production releases, the path is `<major-release>/<release-number>`, where:
 
@@ -38,7 +43,7 @@ Each file should be organized to provide a cohesive story about "What's new" in 
 
 - The introductory paragraph states when the last update was made (Preview N, general release, any service release). That is the only mention of the latest minor, patch, or preview version.
 - If one of the areas (SDK, libraries, or runtime) doesn't have any updates for the current release (preview, RC, or GA), update the introductory paragraph and ms.date value, without making any other changes.
-- Each file should organize updates by feature area, not by when an update was made. In other words, starting with the 2nd preview, incorporate updates to the existing text to provide a single view of all updates made in the major release. For example, the "RC1" updates should add in updates in RC1 where it fits in the document, not make a new "RC1" section.
+- Organize updates by feature area, not by when an update was made. In other words, starting with the 2nd preview, incorporate updates to any existing text to provide a single view of all updates made in the major release. For example, the "RC1" updates should add in updates in RC1 where it fits in the document, not make a new "RC1" section.
 - If a preview introduces a new feature that's unrelated to existing new features, add a new H2 for that feature area.
 
 In addition, follow these recommendations:

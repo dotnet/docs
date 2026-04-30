@@ -17,6 +17,7 @@ public static class FireAndForgetPitfall
 }
 // </FireAndForgetPitfall>
 
+// <BackgroundTaskTracker>
 public sealed class BackgroundTaskTracker
 {
     private readonly ConcurrentDictionary<int, Task> _inFlight = new();
@@ -43,6 +44,7 @@ public sealed class BackgroundTaskTracker
         return snapshot.Length == 0 ? Task.CompletedTask : Task.WhenAll(snapshot);
     }
 }
+// </BackgroundTaskTracker>
 
 // <FireAndForgetFix>
 public static class FireAndForgetFix

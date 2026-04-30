@@ -33,6 +33,9 @@ Use fire-and-forget only when the work is truly optional and failure is acceptab
 
 This sample defines `BackgroundTaskTracker`, a custom helper class that holds a thread-safe dictionary of in-flight tasks. When you call `Track`, it registers a `ContinueWith` continuation on the task that removes the task from the dictionary when it completes and logs any failure. When you call `DrainAsync`, it calls `Task.WhenAll` on every task still in the dictionary and returns the resulting task.
 
+:::code language="csharp" source="./snippets/keeping-async-methods-alive/csharp/Program.cs" id="BackgroundTaskTracker":::
+:::code language="vb" source="./snippets/keeping-async-methods-alive/vb/Program.vb" id="BackgroundTaskTracker":::
+
 The following example uses `BackgroundTaskTracker` to start, observe, and drain a background operation:
 
 :::code language="csharp" source="./snippets/keeping-async-methods-alive/csharp/Program.cs" id="FireAndForgetFix":::

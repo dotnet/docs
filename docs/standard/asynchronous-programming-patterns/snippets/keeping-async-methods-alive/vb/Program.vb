@@ -14,6 +14,7 @@ Public Module FireAndForgetPitfall
 End Module
 ' </FireAndForgetPitfall>
 
+' <BackgroundTaskTracker>
 Public NotInheritable Class BackgroundTaskTracker
     Private ReadOnly _inFlight As New ConcurrentDictionary(Of Integer, Task)()
 
@@ -42,6 +43,7 @@ Public NotInheritable Class BackgroundTaskTracker
         Return Task.WhenAll(snapshot)
     End Function
 End Class
+' </BackgroundTaskTracker>
 
 ' <FireAndForgetFix>
 Public Module FireAndForgetFix

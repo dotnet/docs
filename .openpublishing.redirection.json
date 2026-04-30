@@ -305,20 +305,12 @@
         "redirect_url": "/dotnet/samples-and-tutorials/"
     },
     {
-        "source_path_from_root": "/docs/whats-new/dotnet-docs-mod0",
-        "redirect_url": "/dotnet/whats-new"
-    },
-    {
-        "source_path_from_root": "/docs/whats-new/dotnet-docs-mod1",
-        "redirect_url": "/dotnet/whats-new"
-    },
-    {
-        "source_path_from_root": "/docs/whats-new/dotnet-docs-mod2",
-        "redirect_url": "/dotnet/whats-new"
-    },
-    {
         "source_path_from_root": "/docs/whats-new/dotnet-9-release.md",
-        "redirect_url": "/dotnet/whats-new"
+        "redirect_url": "/dotnet/core/whats-new/dotnet-9/overview"
+    },
+    {
+        "source_path_from_root": "/docs/whats-new/index.yml",
+        "redirect_url": "/dotnet/core/whats-new/dotnet-11/overview"
     }
     ]
 }

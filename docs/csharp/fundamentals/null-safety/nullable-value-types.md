@@ -1,12 +1,12 @@
 ---
-title: "Nullable value types"
+title: "Nullable value types: C# Fundamentals"
 description: Learn how to use nullable value types (T?) in C# to represent value types that can be absent or undefined.
 ms.date: 04/30/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 
-# Nullable value types
+# Nullable value types: C# Fundamentals
 
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For the complete language specification, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md) in the language reference.

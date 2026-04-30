@@ -1,9 +1,10 @@
 ---
 title: "Tutorial: Choose between tuples, records, structs, and classes"
 description: "Learn when to use tuples, record classes, record structs, classes, and interfaces in C# by building a coffee shop example that highlights each type's strengths."
-ms.date: 04/15/2026
 ms.topic: tutorial
+ms.date: 04/30/2026
 ai-usage: ai-assisted
+#customer intent: As a C# developer, I want to choose the right type for my data so that my code is clear, maintainable, and correct.
 ---
 
 # Tutorial: Choose between tuples, records, structs, and classes
@@ -11,24 +12,24 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section, written for developers who know at least one programming language and are learning C#. If you're new to programming, start with [Get started](../../tour-of-csharp/index.yml). For a quick reference table, see [Choose which kind of type](../types/index.md#choose-which-kind-of-type).
 
-One of your first design decisions in any C# application is choosing which kind of type to create. Should a menu item be a `class` or a `record`? Should a quick calculation return a `tuple` or a named type? Each choice shapes how your code handles equality, mutability, and polymorphism—and the wrong pick leads to boilerplate, bugs, or both.
+One of your first design decisions in any C# application is choosing which kind of type to create. Should a menu item be a `class` or a `record`? Should a quick calculation return a `tuple` or a named type? Each choice shapes how your code handles equality, mutability, and polymorphism. The wrong pick leads to boilerplate, bugs, or both.
 
-In this tutorial, you build a small coffee shop model—menu items, orders, sensor readings, and discount policies—that puts each type to work. Along the way, you learn to recognize the design pressures that point toward one type over another.
+In this tutorial, you build a small coffee shop model that uses menu items, orders, sensor readings, and discount policies. You analyze the characteristics and determine the best C# type for each concept. Along the way, you learn to recognize the design pressures that point toward one type over another.
 
 In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> - Recognize when a tuple is the right fit for returning multiple values.
-> - Model immutable data with a record class and understand value-based equality.
-> - Represent small, copyable data with a record struct.
-> - Manage mutable state and behavior with a class.
-> - Extend a class through inheritance to add or tighten rules.
-> - Define shared capabilities across unrelated types with an interface.
+> * Recognize when a tuple is the right fit for returning multiple values.
+> * Model immutable data with a record class and understand value-based equality.
+> * Represent small, copyable data with a record struct.
+> * Manage mutable state and behavior with a class.
+> * Extend a class through inheritance to add or tighten rules.
+> * Define shared capabilities across unrelated types with an interface.
 
 ## Prerequisites
 
-- Install the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later.
+- Install the [.NET SDK](https://dotnet.microsoft.com/download/dotnet).
 
 ## Use a tuple for a temporary grouping
 
@@ -36,13 +37,13 @@ The coffee shop needs a method that returns both the total number of orders and 
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="TupleDemo":::
 
-`GetDailySummary` returns an `(int TotalOrders, decimal Revenue)` **tuple**. The caller accesses each element by name or deconstructs both into local variables—no class or struct definition needed.
+`GetDailySummary` returns an `(int TotalOrders, decimal Revenue)` **tuple**. The caller accesses each element by name or deconstructs both into local variables. You don't need a class or struct definition.
 
-A tuple works here because the grouping is local: one method produces it, and one caller consumes it. Named elements make the intent clear without the ceremony of a full type. If you find yourself passing the same tuple shape across multiple methods, that's a signal to promote it to a record or class—you'll see that evolution [later in this tutorial](#tuple--record-the-grouping-keeps-showing-up). For more detail on tuple syntax and capabilities, see [Tuple types](../types/tuples.md).
+A tuple works here because the grouping is local: one method produces it, and one caller consumes it. Named elements make the intent clear without the ceremony of a full type. If you find yourself passing the same tuple shape across multiple methods, that's a signal to promote it to a record or class. You'll see that evolution [later in this tutorial](#tuple--record-the-grouping-keeps-showing-up). For more detail on tuple syntax and capabilities, see [Tuple types](../types/tuples.md).
 
 ## Use a record for immutable data
 
-Every coffee shop needs a menu. A menu item has a name, a price, and a nutritional note—and those values don't change once the item is listed. Two systems that both reference a "Latte at $4.50" should agree they're talking about the same thing, even if they created separate objects.
+Every coffee shop needs a menu. A menu item has a name, a price, and a nutritional note. Those values don't change once the item is listed. Two systems that both reference a "Latte at $4.50" should agree they're talking about the same thing, even if they created separate objects.
 
 Declare a positional record:
 
@@ -52,7 +53,7 @@ The compiler generates a constructor, deconstructor, `Equals`, `GetHashCode`, an
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="RecordClassDemo":::
 
-Two `MenuItem` instances with the same data are equal even though they're separate objects—that's value-based equality at work. The `with` expression creates a seasonal variant without mutating the original.
+Two `MenuItem` instances with the same data are equal even though they're separate objects. That behavior illustrates value-based equality. The `with` expression creates a seasonal variant without mutating the original.
 
 A **record class** is the right fit when identity comes from data, not from object reference, and instances rarely change after creation. You get readable `ToString()` output, structural equality, and `with` support out of the box. For a deeper walkthrough, see [Records](../types/records.md) and the [records tutorial](records.md).
 
@@ -114,7 +115,7 @@ An **interface** declares a contract—a set of members that any implementing ty
 
 ## Evolve your type choices
 
-None of these decisions are permanent—especially before you release a library where breaking changes become costly. As requirements grow, promote a simple type to a richer one. Here are three common evolutions.
+None of these decisions are permanent. In fact, you can change them easily before you release a library where breaking changes become a consideration. As requirements grow, promote a simple type to a richer one. Here are three common evolutions.
 
 ### Tuple → record: the grouping keeps showing up
 
@@ -128,7 +129,7 @@ Callers that previously destructured the tuple now get `ToString()` for free, va
 
 ### Struct → class: you need inheritance
 
-The shop's maintenance team asks for calibrated readings—a sensor value adjusted by an offset. The `Measurement` record struct is great for raw data, but structs don't support inheritance, so you can't derive a calibrated variant. Promote to a class hierarchy:
+The shop's maintenance team asks for calibrated readings: a sensor value adjusted by an offset. The `Measurement` record struct is great for raw data, but structs don't support inheritance, so you can't derive a calibrated variant. Promote to a class hierarchy:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="SensorReading":::
 
@@ -152,18 +153,18 @@ Extracting the interface doesn't change `Order` or `CateringOrder`—it just mak
 
 Use this table as a starting point when you aren't sure which type to pick:
 
-| Question | Best fit |
-|---|---|
-| Returning a few values from one method? | Tuple |
-| Immutable data where equality is by values? | Record class |
-| Small, copyable value data with equality? | Record struct |
-| Mutable state, behavior, or reference identity? | Class |
-| Specialized version of an existing class? | Derived class |
-| Shared capability across unrelated types? | Interface |
+| Question                                        | Best fit      |
+|-------------------------------------------------|---------------|
+| Returning a few values from one method?         | Tuple         |
+| Immutable data where equality is by values?     | Record class  |
+| Small, copyable value data with equality?       | Record struct |
+| Mutable state, behavior, or reference identity? | Class         |
+| Specialized version of an existing class?       | Derived class |
+| Shared capability across unrelated types?       | Interface     |
 
 If none of these fit neatly, consider combining types. For example, a class can implement an interface, and a record can be a struct. For the full comparison, see [Choose which kind of type](../types/index.md#choose-which-kind-of-type).
 
-## See also
+## Related content
 
 - [Tuple types](../types/tuples.md)
 - [Records](../types/records.md)

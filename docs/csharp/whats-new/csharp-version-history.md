@@ -83,7 +83,7 @@ The following features were added in C# 11:
 - The `nint` and `uint` keywords alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType><xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
 - [`ref` fields and `scoped ref`](../language-reference/builtin-types/ref-struct.md#ref-fields)
 - Improved method group conversion to delegate.
-- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters-such-names-may-become-reserved-for-the-language)
 
 C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.
 

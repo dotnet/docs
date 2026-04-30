@@ -1,7 +1,7 @@
 ---
 title: "Compiler warning waves"
 description: "C# warning waves are optional warnings that can be reported on code where previously a warning isn't reported. They represent practices that could be harmful, or potentially elements that might be breaking changes in the future."
-ms.date: 05/29/2025
+ms.date: 04/30/2026
 f1_keywords:
   - "CS7023"
   - "CS8073"
@@ -19,6 +19,7 @@ f1_keywords:
   - "CS8898"
   - "CS8826"
   - "CS8981"
+  - "CS9265"
 helpviewer_keywords: 
   - "CS7023"
   - "CS8073"
@@ -36,10 +37,11 @@ helpviewer_keywords:
   - "CS8898"
   - "CS8826"
   - "CS8981"
+  - "CS9265"
 ---
 # C# Warning waves
 
-New warnings and errors can be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11. Warning wave 8 diagnostics were added in C# 12. Warning wave 9 diagnostics were added in C# 13.
+New warnings and errors can be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11. Warning wave 8 diagnostics were added in C# 12. Warning wave 9 diagnostics were added in C# 13. Warning wave 10 diagnostics were added in C# 14.
 
 Beginning with the .NET 7 SDK (C# 11), the build system sets warning waves with the following rules:
 
@@ -50,6 +52,16 @@ Beginning with the .NET 7 SDK (C# 11), the build system sets warning waves with 
 - WarningLevel should be set to 4 if the project is a .NET Framework project
 
 For SDKs earlier than .NET 7, AnalysisLevel always overwrote WarningLevel.
+
+## CS9265 - Field is never ref-assigned to, and always has its default value
+
+*Warning wave 10*
+
+A `ref` field in a `ref struct` that is never ref-assigned always has the value `null`. The following code produces CS9265:
+
+:::code language="csharp" source="./snippets/WarningWaves/WaveTen.cs" id="RefFieldNeverAssigned":::
+
+You can address this warning by ref-assigning the field in a constructor or removing the `ref` modifier from the field declaration.
 
 ## CS9123 - Taking address of local or parameter in async method can create a GC hole.
 

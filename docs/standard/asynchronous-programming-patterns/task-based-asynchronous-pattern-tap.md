@@ -42,7 +42,7 @@ Keep TAP naming predictable:
 
 - Use the `Async` suffix for methods that return awaitable types.
 - Don't append `Async` to synchronous methods.
-- Keep existing public names stable, and add new TAP overloads instead of renaming established APIs unless you're already making a breaking change.
+- Add the new `MethodNameAsync` overload alongside the existing `MethodName. Don't remove or rename the synchronous API. Keeping both lets callers migrate at their own pace without a breaking change.
 
 ## Initiating an asynchronous operation
 

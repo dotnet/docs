@@ -17,13 +17,13 @@ When you use the Task-based Asynchronous Pattern (TAP) to work with asynchronous
 
 You can use the [await](../../csharp/language-reference/operators/await.md) keyword in C# and the [Await Operator](../../visual-basic/language-reference/operators/await-operator.md) in Visual Basic to asynchronously await <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> objects. When you await a <xref:System.Threading.Tasks.Task>, the `await` expression is of type `void`. When you await a <xref:System.Threading.Tasks.Task`1>, the `await` expression is of type `TResult`. An `await` expression must occur inside the body of an asynchronous method. (These language features were introduced in .NET Framework 4.5.)
 
- Under the covers, the await functionality installs a callback on the task by using a continuation.  This callback resumes the asynchronous method at the point of suspension. When the asynchronous method is resumed, if the awaited operation completed successfully and was a <xref:System.Threading.Tasks.Task`1>, its `TResult` is returned.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state, an <xref:System.OperationCanceledException> exception is thrown.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, the exception that caused it to fault is thrown. A `Task` can fault as a result of multiple exceptions, but only one of these exceptions is propagated. However, the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property returns an <xref:System.AggregateException> exception that contains all the errors.
+ Under the covers, the await functionality installs a callback on the task by using a continuation. This callback resumes the asynchronous method at the point of suspension. When the asynchronous method is resumed, if the awaited operation completed successfully and was a <xref:System.Threading.Tasks.Task`1>, its `TResult` is returned. If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state, an <xref:System.OperationCanceledException> exception is thrown. If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, the exception that caused it to fault is thrown. A `Task` can fault as a result of multiple exceptions, but only one of these exceptions is propagated. However, the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property returns an <xref:System.AggregateException> exception that contains all the errors.
 
  If a synchronization context (<xref:System.Threading.SynchronizationContext> object) is associated with the thread that was executing the asynchronous method at the time of suspension (for example, if the <xref:System.Threading.SynchronizationContext.Current?displayProperty=nameWithType> property is not `null`), the asynchronous method resumes on that same synchronization context by using the context's <xref:System.Threading.SynchronizationContext.Post*> method. Otherwise, it relies on the task scheduler (<xref:System.Threading.Tasks.TaskScheduler> object) that was current at the time of suspension. Typically, this is the default task scheduler (<xref:System.Threading.Tasks.TaskScheduler.Default*?displayProperty=nameWithType>), which targets the thread pool. This task scheduler determines whether the awaited asynchronous operation should resume where it completed or whether the resumption should be scheduled. The default scheduler typically allows the continuation to run on the thread that the awaited operation completed.
 
  When you call an asynchronous method, it synchronously executes the body of the function up until the first await expression on an awaitable instance that isn't yet complete, at which point the invocation returns to the caller. If the asynchronous method doesn't return `void`, it returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> object to represent the ongoing computation. In a non-void asynchronous method, if a return statement is encountered or the end of the method body is reached, the task is completed in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> final state. If an unhandled exception causes control to leave the body of the asynchronous method, the task ends in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state. If that exception is an <xref:System.OperationCanceledException>, the task instead ends in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state. In this manner, the result or exception is eventually published.
 
- Several important variations of this behavior exist.  For performance reasons, if a task is already complete by the time the task is awaited, control isn't yielded, and the function continues to execute.  Additionally, returning to the original context isn't always the desired behavior and can be changed; this behavior is described in more detail in the next section.
+ Several important variations of this behavior exist. For performance reasons, if a task is already complete by the time the task is awaited, control isn't yielded, and the function continues to execute. Additionally, returning to the original context isn't always the desired behavior and can be changed; this behavior is described in more detail in the next section.
 
 ### Configuring Suspension and Resumption with Yield and ConfigureAwait
 
@@ -42,7 +42,7 @@ public class Task : …
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="YieldLoop":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="YieldLoop":::
 
- You can also use the <xref:System.Threading.Tasks.Task.ConfigureAwait*?displayProperty=nameWithType> method for better control over suspension and resumption in an asynchronous method.  As mentioned previously, by default, the current context is captured at the time an asynchronous  method is suspended, and that captured context is used to invoke the asynchronous  method's continuation upon resumption.  In many cases, this is the exact behavior you want.  In other cases, you might not care about the continuation context, and you can achieve better performance by avoiding such posts back to the original context.  To enable this behavior, use the <xref:System.Threading.Tasks.Task.ConfigureAwait*?displayProperty=nameWithType> method to inform the await operation not to capture and resume on the context, but to continue execution wherever the asynchronous operation that was being awaited completed:
+ You can also use the <xref:System.Threading.Tasks.Task.ConfigureAwait*?displayProperty=nameWithType> method for better control over suspension and resumption in an asynchronous method. As mentioned previously, by default, the current context is captured at the time an asynchronous  method is suspended, and that captured context is used to invoke the asynchronous  method's continuation upon resumption. In many cases, this is the exact behavior you want. In other cases, you might not care about the continuation context, and you can achieve better performance by avoiding such posts back to the original context. To enable this behavior, use the <xref:System.Threading.Tasks.Task.ConfigureAwait*?displayProperty=nameWithType> method to inform the await operation not to capture and resume on the context, but to continue execution wherever the asynchronous operation that was being awaited completed:
 
 ```csharp
 await someTask.ConfigureAwait(continueOnCapturedContext:false);
@@ -92,7 +92,7 @@ var cts = new CancellationTokenSource();
 > [!IMPORTANT]
 > Any thread can initiate cancellation requests.
 
- You can pass the <xref:System.Threading.CancellationToken.None*?displayProperty=nameWithType> value to any method that accepts a cancellation token to indicate that cancellation is never requested.  This value causes the <xref:System.Threading.CancellationToken.CanBeCanceled?displayProperty=nameWithType> property to return `false`, and the called method can optimize accordingly.  For testing purposes, you can also pass in a pre-canceled cancellation token that is instantiated by using the constructor that accepts a Boolean value to indicate whether the token should start in an already-canceled or not-cancelable state.
+ You can pass the <xref:System.Threading.CancellationToken.None*?displayProperty=nameWithType> value to any method that accepts a cancellation token to indicate that cancellation is never requested. This value causes the <xref:System.Threading.CancellationToken.CanBeCanceled?displayProperty=nameWithType> property to return `false`, and the called method can optimize accordingly. For testing purposes, you can also pass in a pre-canceled cancellation token that is instantiated by using the constructor that accepts a Boolean value to indicate whether the token should start in an already-canceled or not-cancelable state.
 
  This approach to cancellation has several advantages:
 
@@ -150,7 +150,7 @@ private async void btnDownload_Click(object sender, RoutedEventArgs e)
 
 ### Task.WhenAll
 
- Use the <xref:System.Threading.Tasks.Task.WhenAll*> method to asynchronously wait on multiple asynchronous operations that are represented as tasks.  The method has multiple overloads that support a set of non-generic tasks or a non-uniform set of generic tasks (for example, asynchronously waiting for multiple void-returning operations, or asynchronously waiting for multiple value-returning methods where each value might have a different type) and to support a uniform set of generic tasks (such as asynchronously waiting for multiple `TResult`-returning methods).
+ Use the <xref:System.Threading.Tasks.Task.WhenAll*> method to asynchronously wait on multiple asynchronous operations that are represented as tasks. The method has multiple overloads that support a set of non-generic tasks or a non-uniform set of generic tasks (for example, asynchronously waiting for multiple void-returning operations, or asynchronously waiting for multiple value-returning methods where each value might have a different type) and to support a uniform set of generic tasks (such as asynchronously waiting for multiple `TResult`-returning methods).
 
  Suppose you want to send email messages to several customers. You can overlap sending the messages so you're not waiting for one message to complete before sending the next. You can also find out when the send operations complete and whether any errors occur:
 
@@ -159,17 +159,17 @@ IEnumerable<Task> asyncOps = from addr in addrs select SendMailAsync(addr);
 await Task.WhenAll(asyncOps);
 ```
 
- This code doesn't explicitly handle exceptions that might occur, but it lets exceptions propagate out of the `await` on the resulting task from <xref:System.Threading.Tasks.Task.WhenAll*>.  To handle the exceptions, use code such as the following:
+ This code doesn't explicitly handle exceptions that might occur, but it lets exceptions propagate out of the `await` on the resulting task from <xref:System.Threading.Tasks.Task.WhenAll*>. To handle the exceptions, use code such as the following:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="WhenAllWithCatch":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="WhenAllWithCatch":::
 
- In this case, if any asynchronous operation fails, all the exceptions are consolidated in an <xref:System.AggregateException> exception, which is stored in the <xref:System.Threading.Tasks.Task> that is returned from the <xref:System.Threading.Tasks.Task.WhenAll*> method.  However, only one of those exceptions is propagated by the `await` keyword.  If you want to examine all the exceptions, you can rewrite the previous code as follows:
+ In this case, if any asynchronous operation fails, all the exceptions are consolidated in an <xref:System.AggregateException> exception, which is stored in the <xref:System.Threading.Tasks.Task> that is returned from the <xref:System.Threading.Tasks.Task.WhenAll*> method. However, only one of those exceptions is propagated by the `await` keyword. If you want to examine all the exceptions, you can rewrite the previous code as follows:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="WhenAllExamineExceptions":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="WhenAllExamineExceptions":::
 
- Consider an example of downloading multiple files from the web asynchronously.  In this case, all the asynchronous operations have homogeneous result types, and it's easy to access the results:
+ Consider an example of downloading multiple files from the web asynchronously. In this case, all the asynchronous operations have homogeneous result types, and it's easy to access the results:
 
 ```csharp
 string [] pages = await Task.WhenAll(
@@ -200,9 +200,9 @@ string [] pages = await Task.WhenAll(
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="WhenAnyRedundancy":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="WhenAnyRedundancy":::
 
- Unlike <xref:System.Threading.Tasks.Task.WhenAll*>, which returns the unwrapped results of all tasks that completed successfully, <xref:System.Threading.Tasks.Task.WhenAny*> returns the task that completed. If a task fails, it's important to know that it failed, and if a task succeeds, it's important to know which task the return value is associated with.  Therefore, you need to access the result of the returned task, or further await it, as  this example shows.
+ Unlike <xref:System.Threading.Tasks.Task.WhenAll*>, which returns the unwrapped results of all tasks that completed successfully, <xref:System.Threading.Tasks.Task.WhenAny*> returns the task that completed. If a task fails, it's important to know that it failed, and if a task succeeds, it's important to know which task the return value is associated with. Therefore, you need to access the result of the returned task, or further await it, as  this example shows.
 
- As with <xref:System.Threading.Tasks.Task.WhenAll*>, you have to be able to accommodate exceptions.  Because you receive the completed task back, you can await the returned task to have errors propagated, and `try/catch` them appropriately; for example:
+ As with <xref:System.Threading.Tasks.Task.WhenAll*>, you have to be able to accommodate exceptions. Because you receive the completed task back, you can await the returned task to have errors propagated, and `try/catch` them appropriately; for example:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="WhenAnyRetryOnException":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="WhenAnyRetryOnException":::
@@ -292,7 +292,7 @@ foreach(Task recommendation in recommendations)
 
 ### RetryOnFault
 
- In many situations, you want to retry an operation if a previous attempt fails.  For synchronous code, you might build a helper method such as `RetryOnFault` in the following example to accomplish this task:
+ In many situations, you want to retry an operation if a previous attempt fails. For synchronous code, you might build a helper method such as `RetryOnFault` in the following example to accomplish this task:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="RetryOnFaultSync":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="RetryOnFaultSync":::
@@ -326,7 +326,7 @@ string pageContents = await RetryOnFault(
 
 ### NeedOnlyOne
 
- Sometimes, you can take advantage of redundancy to improve an operation's latency and chances for success.  Consider multiple web services that provide stock quotes, but at various times of the day, each service might provide different levels of quality and response times.  To deal with these fluctuations, you might issue requests to all the web services, and as soon as you get a response from one, cancel the remaining requests.  You can implement a helper function to make it easier to implement this common pattern of launching multiple operations, waiting for any, and then canceling the rest. The `NeedOnlyOne` function in the following example illustrates this scenario:
+ Sometimes, you can take advantage of redundancy to improve an operation's latency and chances for success. Consider multiple web services that provide stock quotes, but at various times of the day, each service might provide different levels of quality and response times. To deal with these fluctuations, you might issue requests to all the web services, and as soon as you get a response from one, cancel the remaining requests. You can implement a helper function to make it easier to implement this common pattern of launching multiple operations, waiting for any, and then canceling the rest. The `NeedOnlyOne` function in the following example illustrates this scenario:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="NeedOnlyOne":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="NeedOnlyOne":::
@@ -360,7 +360,7 @@ foreach(var task in Interleaved(tasks))
 
 ### WhenAllOrFirstException
 
- In certain scatter/gather scenarios, you might want to wait for all tasks in a set, unless one of them faults. In that case, you want to stop waiting as soon as the exception occurs.  You can accomplish that behavior by using a combinator method such as `WhenAllOrFirstException` in the following example:
+ In certain scatter/gather scenarios, you might want to wait for all tasks in a set, unless one of them faults. In that case, you want to stop waiting as soon as the exception occurs. You can accomplish that behavior by using a combinator method such as `WhenAllOrFirstException` in the following example:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="WhenAllOrFirstException":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="WhenAllOrFirstException":::
@@ -371,12 +371,12 @@ foreach(var task in Interleaved(tasks))
 
 ### AsyncCache
 
- One important aspect of a task is that you can hand it out to multiple consumers. All of the consumers can await it, register continuations with it, get its result or exceptions (in the case of <xref:System.Threading.Tasks.Task`1>), and so on.  This aspect makes <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> perfectly suited to be used in an asynchronous caching infrastructure.  Here's an example of a small but powerful asynchronous cache built on top of <xref:System.Threading.Tasks.Task`1>:
+ One important aspect of a task is that you can hand it out to multiple consumers. All of the consumers can await it, register continuations with it, get its result or exceptions (in the case of <xref:System.Threading.Tasks.Task`1>), and so on. This aspect makes <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> perfectly suited to be used in an asynchronous caching infrastructure. Here's an example of a small but powerful asynchronous cache built on top of <xref:System.Threading.Tasks.Task`1>:
 
 :::code language="csharp" source="./snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs" id="AsyncCache":::
 :::code language="vb" source="./snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb" id="AsyncCache":::
 
- The [AsyncCache\<TKey,TValue>](https://devblogs.microsoft.com/pfxteam/parallelextensionsextras-tour-12-asynccache/) class accepts as a delegate to its constructor a function that takes a `TKey` and returns a <xref:System.Threading.Tasks.Task`1>.  The internal dictionary stores any previously accessed values from the cache, and the `AsyncCache` ensures that it generates only one task per key, even if the cache is accessed concurrently.
+ The [AsyncCache\<TKey,TValue>](https://devblogs.microsoft.com/pfxteam/parallelextensionsextras-tour-12-asynccache/) class accepts as a delegate to its constructor a function that takes a `TKey` and returns a <xref:System.Threading.Tasks.Task`1>. The internal dictionary stores any previously accessed values from the cache, and the `AsyncCache` ensures that it generates only one task per key, even if the cache is accessed concurrently.
 
  For example, you can build a cache for downloaded web pages:
 
@@ -392,7 +392,7 @@ private AsyncCache<string,string> m_webPages =
 
 ### AsyncProducerConsumerCollection
 
- You can also use tasks to build data structures for coordinating asynchronous activities.  Consider one of the classic parallel design patterns: producer/consumer.  In this pattern, producers generate data that consumers consume, and the producers and consumers can run in parallel. For example, the consumer processes item 1, which was previously generated by a producer who is now producing item 2.  For the producer/consumer pattern, you always need some data structure to store the work created by producers so that the consumers can be notified of new data and find it when available.
+ You can also use tasks to build data structures for coordinating asynchronous activities. Consider one of the classic parallel design patterns: producer/consumer. In this pattern, producers generate data that consumers consume, and the producers and consumers can run in parallel. For example, the consumer processes item 1, which was previously generated by a producer who is now producing item 2. For the producer/consumer pattern, you always need some data structure to store the work created by producers so that the consumers can be notified of new data and find it when available.
 
  Here's a simple data structure, built on top of tasks, that enables asynchronous methods to be used as producers and consumers:
 

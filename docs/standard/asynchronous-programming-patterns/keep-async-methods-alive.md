@@ -29,17 +29,37 @@ When you start background work without tracking it, you create three risks:
 
 Use fire-and-forget only when the work is truly optional and failure is acceptable.
 
-## Bad and good fire-and-forget patterns
+## Track background work explicitly
 
-The following example starts untracked work and then shows a tracked alternative:
+This sample defines `BackgroundTaskTracker`, a custom helper class that holds a thread-safe dictionary of in-flight tasks. When you call `Track`, it registers a `ContinueWith` continuation on the task that removes the task from the dictionary when it completes and logs any failure. When you call `DrainAsync`, it calls `Task.WhenAll` on every task still in the dictionary and returns the resulting task.
 
-:::code language="csharp" source="./snippets/keeping-async-methods-alive/csharp/Program.cs" id="FireAndForgetPitfall":::
-:::code language="vb" source="./snippets/keeping-async-methods-alive/vb/Program.vb" id="FireAndForgetPitfall":::
+The following example uses `BackgroundTaskTracker` to start, observe, and drain a background operation:
 
 :::code language="csharp" source="./snippets/keeping-async-methods-alive/csharp/Program.cs" id="FireAndForgetFix":::
 :::code language="vb" source="./snippets/keeping-async-methods-alive/vb/Program.vb" id="FireAndForgetFix":::
 
-Track long-running work in an owner component and await tracked tasks during shutdown.
+You might ask: if `DrainAsync` just awaits the one task you started, why not `await backgroundTask` directly and skip the tracker entirely? For a single task in a single method, you could. The tracker becomes valuable when tasks are started from many different places across a component's lifetime. Each caller hands its task to the shared tracker, and a single `DrainAsync` call at shutdown awaits all of them without knowing how many were started or who started them. The tracker also enforces a consistent exception-observation policy: every registered task gets the same failure-logging continuation, so no exception can slip through unnoticed regardless of which code path started the work.
+
+The three key components of the tracked pattern are:
+
+- **Assign the task to a variable** — keeping a reference to `backgroundTask` is what makes tracking possible. A task you can't refer to is a task you can't drain or observe.
+- **Register with the tracker** — `tracker.Track` attaches the failure-logging continuation and adds the task to the in-flight set. Any exception the background work throws surfaces through that continuation rather than disappearing silently.
+- **Drain at shutdown** — `tracker.DrainAsync` awaits everything still running. Call it before your component or process exits to guarantee no in-flight work is abandoned mid-flight.
+
+### Consequences of untracked fire-and-forget
+
+If you discard the returned `Task` instead of tracking it, you create silent failure:
+
+:::code language="csharp" source="./snippets/keeping-async-methods-alive/csharp/Program.cs" id="FireAndForgetPitfall":::
+:::code language="vb" source="./snippets/keeping-async-methods-alive/vb/Program.vb" id="FireAndForgetPitfall":::
+
+Three problems follow from dropping the task:
+
+- **Silent exceptions** — the `InvalidOperationException` from the background operation is never observed. The runtime routes it to <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> at finalization, which is non-deterministic and far too late to handle gracefully.
+- **No shutdown coordination** — the caller continues and exits without waiting for the operation to finish. On a short-lived process or a host with a shutdown timeout, the background work is canceled or lost entirely.
+- **No visibility** — without a reference to the task, you can't determine whether the operation succeeded, failed, or is still running.
+
+Untracked fire-and-forget is acceptable only when all three of the following conditions hold: the work is genuinely optional, failure is safe to ignore, and the operation completes well within any expected process lifetime. Logging a non-critical telemetry ping is one example where these conditions can all hold.
 
 ## Keep ownership explicit
 

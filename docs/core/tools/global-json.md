@@ -90,7 +90,9 @@ The following table shows the possible values for the `rollForward` key:
 | `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
-| `disable`     | Doesn't roll forward. An exact match is required. |
+| `disable`     | Doesn't roll forward; an exact match is required.† |
+
+ <sup>† When you use [package lock files](../install/upgrade.md#package-lock-files), set `rollForward` to `disable` so the SDK version and dependency graph stay in lockstep. For related issues, see <https://github.com/dotnet/aspnetcore/issues/65061> and <https://github.com/dotnet/sdk/issues/48795>.</sup>
 
 #### `paths`
 

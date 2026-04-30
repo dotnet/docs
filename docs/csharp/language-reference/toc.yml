@@ -663,6 +663,12 @@ items:
       CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175, CS8820,
       CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098, CS9099,
       CS9100, CS9236
+  - name: Delegate and function pointer declarations
+    href: ./compiler-messages/delegate-function-pointer-diagnostics.md
+    displayName: >
+      CS0059, CS0123, CS0148, CS0410, CS0644, CS1599, CS1958, CS8755, CS8756, CS8757,
+      CS8758, CS8759, CS8786, CS8787, CS8788, CS8789, CS8806, CS8807, CS8808, CS8809,
+      CS8811, CS8909, CS8911
   - name: Overload resolution
     href: ./compiler-messages/overload-resolution.md
     displayName: >
@@ -806,8 +812,6 @@ items:
       href: ../misc/cs0055.md
     - name: CS0058
       href: ../misc/cs0058.md
-    - name: CS0059
-      href: ../misc/cs0059.md
     - name: CS0060
       href: ../misc/cs0060.md
     - name: CS0061
@@ -866,8 +870,6 @@ items:
       href: ./compiler-messages/cs0120.md
     - name: CS0122
       href: ./compiler-messages/cs0122.md
-    - name: CS0123
-      href: ../misc/cs0123.md
     - name: CS0126
       href: ../misc/cs0126.md
     - name: CS0127
@@ -896,8 +898,6 @@ items:
       href: ../misc/cs0145.md
     - name: CS0146
       href: ../misc/cs0146.md
-    - name: CS0148
-      href: ../misc/cs0148.md
     - name: CS0149
       href: ../misc/cs0149.md
     - name: CS0150
@@ -1016,8 +1016,6 @@ items:
       href: ../misc/cs0406.md
     - name: CS0409
       href: ../misc/cs0409.md
-    - name: CS0410
-      href: ../misc/cs0410.md
     - name: CS0411
       href: ../misc/cs0411.md
     - name: CS0418
@@ -1158,8 +1156,6 @@ items:
       href: ../misc/cs0622.md
     - name: CS0635
       href: ../misc/cs0635.md
-    - name: CS0644
-      href: ../misc/cs0644.md
     - name: CS0645
       href: ../misc/cs0645.md
     - name: CS0648
@@ -1428,8 +1424,6 @@ items:
       href: ../misc/cs1594.md
     - name: CS1597
       href: ../misc/cs1597.md
-    - name: CS1599
-      href: ../misc/cs1599.md
     - name: CS1600
       href: ../misc/cs1600.md
     - name: CS1601
@@ -1576,8 +1570,6 @@ items:
       href: ../misc/cs1949.md
     - name: CS1955
       href: ../misc/cs1955.md
-    - name: CS1958
-      href: ../misc/cs1958.md
     - name: CS1959
       href: ../misc/cs1959.md
     - name: CS2001

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsumingTAP</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
+    <NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="9.0.4" />
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="9.0.4" />
+  </ItemGroup>
+
+</Project>

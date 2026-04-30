@@ -156,7 +156,6 @@ f1_keywords:
   - "CS8077"
   - "CS8078" # build only diagnostic
   - "CS8079"
-  - "CS8080"
   - "CS8081"
   - "CS8082"
   - "CS8084"
@@ -305,10 +304,7 @@ f1_keywords:
   - "CS8823"
   - "CS8830" # feature / version
   - "CS8831"
-  - "CS8852" # init only properties
-  - "CS8853"
-  - "CS8855"
-  - "CS8856"
+
   - "CS8857" # records
   - "CS8869"
   - "CS8871"
@@ -324,7 +320,6 @@ f1_keywords:
   - "CS8900" # module initializer
   - "CS8901"
   - "CS8902"
-  - "CS8903" # init only property
   - "CS8906" # record
 # Coming in C# 15
   - "CS9343" # misc

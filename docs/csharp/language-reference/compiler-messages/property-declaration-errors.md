@@ -3,11 +3,22 @@ title: Compiler Errors on property declarations
 description: Use this article to diagnose and correct compiler errors and warnings when you define properties in your types.
 f1_keywords:
   - "CS0200"
+  - "CS0273"
+  - "CS0274"
+  - "CS0275"
+  - "CS0276"
+  - "CS0442"
+  - "CS0544"
   - "CS0545"
+  - "CS0546"
+  - "CS0547"
+  - "CS0548"
   - "CS0571"
+  - "CS0610"
   - "CS0840"
   - "CS1014"
   - "CS1043"
+  - "CS1715"
   - "CS8050"
   - "CS8051"
   - "CS8053"
@@ -20,6 +31,11 @@ f1_keywords:
   - "CS8660"
   - "CS8661"
   - "CS8664"
+  - "CS8852"
+  - "CS8853"
+  - "CS8855"
+  - "CS8856"
+  - "CS8903"
   - "CS9029"
   - "CS9030"
   - "CS9031"
@@ -41,14 +57,26 @@ f1_keywords:
   - "CS9273"
 helpviewer_keywords:
   - "CS0200"
+  - "CS0273"
+  - "CS0274"
+  - "CS0275"
+  - "CS0276"
+  - "CS0442"
+  - "CS0544"
   - "CS0545"
+  - "CS0546"
+  - "CS0547"
+  - "CS0548"
   - "CS0571"
+  - "CS0610"
   - "CS0840"
   - "CS1014"
   - "CS1043"
+  - "CS1715"
   - "CS8050"
   - "CS8051"
   - "CS8053"
+  - "CS8080"
   - "CS8145"
   - "CS8147"
   - "CS8341"
@@ -58,6 +86,11 @@ helpviewer_keywords:
   - "CS8660"
   - "CS8661"
   - "CS8664"
+  - "CS8852"
+  - "CS8853"
+  - "CS8855"
+  - "CS8856"
+  - "CS8903"
   - "CS9029"
   - "CS9030"
   - "CS9031"
@@ -88,14 +121,26 @@ You can encounter the following errors related to property declarations:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0200**](#readonly-properties): *Property or indexer 'property' cannot be assigned to -- it is read only*
+- [**CS0273**](#anchor-tbd): *The accessibility modifier of the 'accessor' accessor must be more restrictive than the property or indexer 'property'*
+- [**CS0274**](#anchor-tbd): *Cannot specify accessibility modifiers for both accessors of the property or indexer 'property'*
+- [**CS0275**](#anchor-tbd): *'accessor': accessibility modifiers may not be used on accessors in an interface*
+- [**CS0276**](#anchor-tbd): *'property': accessibility modifiers on accessors may only be used if the property or indexer has both a get and a set accessor*
+- [**CS0442**](#anchor-tbd): *'property': abstract properties cannot have private accessors*
+- [**CS0544**](#anchor-tbd): *'property': cannot override because 'member' is not a property*
 - [**CS0545**](#property-accessor-syntax): *'function' : cannot override because 'property' does not have an overridable get accessor*
+- [**CS0546**](#anchor-tbd): *'accessor': cannot override because 'property' does not have an overridable set accessor*
+- [**CS0547**](#anchor-tbd): *'property': property or indexer cannot have void type*
+- [**CS0548**](#anchor-tbd): *'property': property or indexer must have at least one accessor*
 - [**CS0571**](#property-accessor-syntax): *'function' : cannot explicitly call operator or accessor*
+- [**CS0610**](#anchor-tbd): *Field or property cannot be of type 'type'*
 - [**CS0840**](#auto-implemented-properties): *'Property name' must declare a body because it is not marked abstract or extern. Automatically implemented properties must define both get and set accessors.*
 - [**CS1014**](#auto-implemented-properties): *A get or set accessor expected*
 - [**CS1043**](#property-accessor-syntax): *{ or ; expected*
+- [**CS1715**](#anchor-tbd): *'type': type must be 'type' to match overridden member 'member'*
 - [**CS8050**](#property-initializers): *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
 - [**CS8051**](#property-initializers): *Auto-implemented properties must have get accessors*
 - [**CS8053**](#property-initializers): *Instance properties in interfaces cannot have initializers*
+- [**CS8080**](#anchor-tbd): *Auto-implemented properties must override all accessors of the overridden property.*
 - [**CS8145**](#ref-returning-properties): *Auto-implemented properties cannot return by reference*
 - [**CS8147**](#ref-returning-properties): *Properties which return by reference cannot have set accessors*
 - [**CS8341**](#readonly-properties): *Auto-implemented instance properties in readonly structs must be readonly*
@@ -105,6 +150,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8660**](#readonly-properties): *Cannot specify 'readonly' modifiers on both property and its accessor*
 - [**CS8661**](#readonly-properties): *Cannot specify 'readonly' modifiers on both accessors of property*
 - [**CS8664**](#readonly-properties): *'readonly' can only be used on accessors if property has both get and set*
+- [**CS8852**](#anchor-tbd): *Init-only property or indexer 'property' can only be assigned in an object initializer, or on 'this' or 'base' in an instance constructor or an 'init' accessor.*
+- [**CS8853**](#anchor-tbd): *'member' must match by init-only of overridden member 'member'*
+- [**CS8855**](#anchor-tbd): *Accessors 'accessor' and 'accessor' should both be init-only or neither*
+- [**CS8856**](#anchor-tbd): *The 'init' accessor is not valid on static members*
+- [**CS8903**](#anchor-tbd): *'init' accessors cannot be marked 'readonly'. Mark 'property' readonly instead.*
 - [**CS9029**](#required-members): *Types and aliases cannot be named 'required'.*
 - [**CS9030**](#required-members): *Member must be required because it overrides required member.*
 - [**CS9031**](#required-members): *Required member cannot be hidden by derived member.*
@@ -271,3 +321,317 @@ Implement the property explicitly with a backing field and use the `ref` keyword
 Remove the `set` accessor from ref-returning properties (**CS8147**). This correction is required because a ref-returning property already provides both read and write access through the returned reference itself. Callers can directly modify the value through the reference without needing a separate setter method. Including a `set` accessor would create two different mechanisms for modifying the same storage, which is redundant and could lead to confusion about which modification path should be used.
 
 For more information, see [ref returns and ref locals](../statements/jump-statements.md#ref-returns) and [Properties](../../programming-guide/classes-and-structs/properties.md).
+
+## CS0273
+
+The accessibility modifier of the 'property_accessor' accessor must be more restrictive than the property or indexer 'property'
+
+This error occurs when the accessibility of the accessor you declared isn't less restrictive than the accessibility of the property or indexer.
+
+Use the appropriate access modifier on either the property or the accessor. For more information, see [Restricting Accessor Accessibility](../../programming-guide/classes-and-structs/restricting-accessor-accessibility.md) and [Accessors](/dotnet/csharp/language-reference/language-specification/classes#accessors).
+
+The following example contains an internal property with an internal set method. The following sample generates CS0273.
+
+```csharp
+// CS0273.cs
+// compile with: /target:library
+public class MyClass
+{
+   internal int Property
+   {
+      get { return 0; }
+      internal set {}   // CS0273
+      // try the following line instead
+      // private set {}
+   }
+}
+```
+
+## CS0274
+
+Cannot specify accessibility modifiers for both accessors of the property or indexer 'property/indexer'
+
+This error occurs when you declare a property or indexer with access modifiers on both its accessors. To resolve this error, use an access modifier on only one of the two accessors. For more information, see [Accessor Accessibility](../../programming-guide/classes-and-structs/restricting-accessor-accessibility.md).
+
+The following example generates CS0274:
+
+```csharp
+// CS0274.cs
+public class MyClass
+{
+    public int Property   // CS0274
+    {
+        public get { return 0; }
+        protected set { }
+    }
+}
+```
+
+## CS0275
+
+'accessor': accessibility modifiers may not be used on accessors in an interface
+
+This error occurs when you use an access modifier on any one of the accessors of a property or indexer in an interface. To resolve, remove the access modifier.
+
+The following example generates CS0275:
+
+```csharp
+// CS0275.cs
+public interface MyInterface
+{
+    int Property
+    {
+        get;
+        internal set;   // CS0275
+    }
+}
+```
+
+## CS0276
+
+'property/indexer': accessibility modifiers on accessors may only be used if the property or indexer has both a get and a set accessor
+
+This error occurs when you declare a property or indexer with one accessor only, and use an access modifier on the accessor. To resolve, remove the access modifier or add another accessor.
+
+The following example generates CS0276:
+
+```csharp
+// CS0276.cs
+public class MyClass
+{
+    public int Property
+    {
+        protected set { }   // CS0276
+    }
+    public int Property2
+    {
+        internal get { }   // CS0276
+    }
+}
+```
+
+## CS0442
+
+'Property': abstract properties cannot have private accessors
+
+This error occurs when you use the access modifier "private" to modify an abstract accessor. To resolve, use a different access modifier, or make the property non-abstract.
+
+The following sample generates CS0442:
+
+```csharp
+// CS0442.cs
+public abstract class MyClass
+{
+    public abstract int AbstractProperty
+    {
+        get;
+        private set;   // CS0442
+        // Try this instead:
+        // set;
+    }
+}
+```
+
+## CS0544
+
+'property override': cannot override because 'non-property' is not a property
+
+An attempt was made to override a nonproperty data type as a [property](../../programming-guide/classes-and-structs/properties.md), which is not allowed.
+
+The following sample generates CS0544:
+
+```csharp
+// CS0544.cs
+// compile with: /target:library
+public class a
+{
+   public int i;
+}
+
+public class b : a
+{
+   public override int i {   // CS0544
+   // try the following line instead
+   // public new int i {
+      get
+      {
+         return 0;
+      }
+   }
+}
+```
+
+## CS0546
+
+'accessor' : cannot override because 'property' does not have an overridable set accessor
+
+An attempt to override one of the accessor methods for a property failed because the accessor can't be overridden. This error can occur if:
+
+- the base class property is not declared as [virtual](../keywords/virtual.md).
+- the base class property does not declare the [get](../keywords/get.md) or [set](../keywords/set.md) accessor you are trying to override.
+
+If you don't want to override the base class property, you can use the [new](../keywords/new-modifier.md) keyword before the property in derived class.
+
+For more information, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+
+The following sample generates CS0546 because the base class does not declare a set accessor for the property.
+
+```csharp
+// CS0546.cs
+// compile with: /target:library
+public class a
+{
+   public virtual int i
+   {
+      get
+      {
+         return 0;
+      }
+   }
+
+   public virtual int i2
+   {
+      get
+      {
+         return 0;
+      }
+
+      set {}
+   }
+}
+
+public class b : a
+{
+   public override int i
+   {
+      set {}   // CS0546 error no set
+   }
+
+   public override int i2
+   {
+      set {}   // OK
+   }
+}
+```
+
+## CS0547
+
+'property' : property or indexer cannot have void type
+
+[void](../builtin-types/void.md) is invalid as a return value for a property.
+
+For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
+
+The following sample generates CS0547:
+
+```csharp
+// CS0547.cs
+public class a
+{
+   public void i   // CS0547
+   // Try the following declaration instead:
+   // public int i
+   {
+      get
+      {
+         return 0;
+      }
+   }
+}
+
+public class b : a
+{
+   public static void Main()
+   {
+   }
+}
+```
+
+## CS0548
+
+'property' : property or indexer must have at least one accessor
+
+A property must have at least one accessor (get or set) method.
+
+For more information, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+
+The following sample generates CS0548.
+
+```csharp
+// CS0548.cs
+// compile with: /target:library
+public class b
+{
+   public int MyProp {}   // CS0548
+
+   public int MyProp2   // OK
+   {
+      get
+      {
+         return 0;
+      }
+      set {}
+   }
+}
+```
+
+## CS0610
+
+Field or property cannot be of type 'type'
+
+There are some types that can't be used as fields or properties. These types include **System.ArgIterator** and **System.TypedReference**.
+
+The following sample generates CS0610 as a result of using **System.TypedReference** as a field:
+
+```csharp
+// CS0610.cs
+public class MainClass
+{
+   System.TypedReference i;   // CS0610
+   public static void Main ()
+   {
+   }
+
+   public static void Test(System.TypedReference i)   // OK
+   {
+   }
+}
+```
+
+## CS1715
+
+'Type1': type must be 'Type2' to match overridden member 'MemberName'
+
+This error is the same as [Compiler Error CS0508](./cs0508.md), except that CS0508 now only applies to methods that have return types, while CS1715 applies to properties and indexers that only have 'types' instead of 'return types'.
+
+The following code generates CS1715.
+
+```csharp
+// CS1715.cs
+abstract public class Base
+{
+    abstract public int myProperty
+    {
+        get;
+        set;
+    }
+}
+
+public class Derived : Base
+{
+    int myField;
+    public override double myProperty  // CS1715
+    // try the following line instead
+    // public override int myProperty
+    {
+        get { return myField; }
+        set { myField = value; }
+    }
+
+    public static void Main()
+    {
+        Derived d = new Derived();
+        d.myProperty = 5;
+    }
+}
+```

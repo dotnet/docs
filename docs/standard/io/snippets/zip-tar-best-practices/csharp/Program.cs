@@ -1,4 +1,4 @@
-using System.Formats.Tar;
+﻿using System.Formats.Tar;
 using System.IO.Compression;
 // <SafeExtractEntry>
 void SafeExtractEntry(ZipArchiveEntry entry, string destinationPath, long maxDecompressedSize)
@@ -94,10 +94,7 @@ void SafeExtractZip(string archivePath, string destinationDir,
     long totalSize = 0;
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
-        // Enforce per-entry and cumulative size limits using the declared
-        // uncompressed size. In modern .NET, entry.Open() won't produce more
-        // than entry.Length bytes, so checking the declared size matches the
-        // runtime behavior that this sample relies on.
+        // Enforce per-entry and cumulative size limits using the declared uncompressed size.
         totalSize += entry.Length;
         if (entry.Length > maxEntrySize)
             throw new InvalidOperationException(

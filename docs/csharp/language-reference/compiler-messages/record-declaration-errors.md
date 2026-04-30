@@ -62,7 +62,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8858**](#equality-members): *The receiver type 'type' is not a valid record type and is not a struct type.*
 - [**CS8859**](#reserved-member-names): *Members named 'Clone' are disallowed in records.*
 - [**CS8860**](#reserved-member-names): *Types and aliases should not be named 'record'.*
-- [**CS8864**](#record-inheritance): *Records may only inherit from object or another record*
+- [**CS8864**](#record-inheritance): *Records may only inherit from object or another record.*
 - [**CS8865**](#record-inheritance): *Only records may inherit from records.*
 - [**CS8866**](#positional-members): *Record member 'member' must be a readable instance property or field of type 'type' to match positional parameter 'parameter'.*
 - [**CS8869**](#synthesized-member-signatures): *'member' does not override expected method from 'object'.*
@@ -140,7 +140,7 @@ To correct these errors, apply the following changes:
 
 - Add a `GetHashCode` method whenever you define an `Equals` method. The [equality contract](../../programming-guide/statements-expressions-operators/equality-comparisons.md) requires that objects considered equal produce the same hash code, so the compiler enforces that these two methods are always defined together (**CS8851**).
 - Change the receiver of a `with` expression so that it's a [record type](../builtin-types/record.md) or a [struct type](../builtin-types/struct.md). The `with` expression creates a modified copy by using the type's copy constructor, which is only available on record types and struct types (**CS8858**).
-- Ensure the receiver of a [`with` expression](../operators/with-expression.md) has a non-void return type. The `with` expression produces a new copy of the receiver, so the receiver must evaluate to a value that can be copied (**CS8857**).
+- Ensure the receiver of a [`with` expression](../operators/with-expression.md) has a non-void type. The `with` expression produces a new copy of the receiver, so the receiver must evaluate to a value that can be copied (**CS8857**).
 
 ## Record inheritance
 

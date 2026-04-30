@@ -1,4 +1,5 @@
 // <AsyncManualResetEvent>
+// Educational only — use TaskCompletionSource<T> directly instead of this sample implementation; create a new instance each cycle.
 public class AsyncManualResetEvent
 {
     private volatile TaskCompletionSource _tcs = new(TaskCreationOptions.RunContinuationsAsynchronously);
@@ -49,6 +50,7 @@ public static class AsyncManualResetEventDemo
 // </AsyncManualResetEventUsage>
 
 // <AsyncAutoResetEvent>
+// Educational only — use SemaphoreSlim(0, 1) instead of this sample implementation: call WaitAsync() to wait and Release() to signal.
 public class AsyncAutoResetEvent
 {
     private readonly Queue<TaskCompletionSource> _waiters = new();
@@ -122,6 +124,7 @@ public static class AsyncAutoResetEventDemo
 // </AsyncAutoResetEventUsage>
 
 // <AsyncCountdownEvent>
+// Educational only — use Task.WhenAll() instead of this sample implementation to coordinate a fixed set of tasks.
 public class AsyncCountdownEvent
 {
     private readonly AsyncManualResetEvent _event = new();
@@ -181,6 +184,7 @@ public static class AsyncCountdownEventDemo
 // </AsyncCountdownEventUsage>
 
 // <AsyncBarrier>
+// Educational only — use Task.WhenAll() in a loop instead of this sample implementation, one call per round.
 public class AsyncBarrier
 {
     private readonly int _participantCount;

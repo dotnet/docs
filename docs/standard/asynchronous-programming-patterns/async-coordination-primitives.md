@@ -27,7 +27,7 @@ A `TaskCompletionSource` produces a <xref:System.Threading.Tasks.Task> that you 
 
 ## Async manual-reset event
 
-A manual-reset event starts in a non-signaled state. Callers wait for the event, and all waiters resume when another party signals (sets) the event. The event stays signaled until you explicitly reset it. The synchronous equivalent is <xref:System.Threading.ManualResetEventSlim>.
+A manual-reset event starts in a non-signaled state. Callers wait for the event, and all waiters resume when another party signals (sets) the event. The event stays signaled until you explicitly reset it. The synchronous equivalent is <xref:System.Threading.ManualResetEventSlim>. The .NET runtime provides <xref:System.Threading.Tasks.TaskCompletionSource%601> directly for one-shot broadcast signaling—create a new instance each cycle rather than building a reset wrapper around it.
 
 `TaskCompletionSource` is itself a one-shot manual-reset event: its `Task` is incomplete until you call a `Set*` method, and then all awaiters resume. Add a `Reset` method that swaps in a new `TaskCompletionSource`, and you have a reusable async manual-reset event.
 
@@ -46,7 +46,7 @@ The following example shows how two tasks coordinate through the event:
 
 ## Async auto-reset event
 
-An auto-reset event is similar to a manual-reset event, but it automatically returns to the non-signaled state after releasing exactly one waiter. If multiple callers are waiting when the event is signaled, only one waiter resumes. The synchronous equivalent is <xref:System.Threading.AutoResetEvent>.
+An auto-reset event is similar to a manual-reset event, but it automatically returns to the non-signaled state after releasing exactly one waiter. If multiple callers are waiting when the event is signaled, only one waiter resumes. The synchronous equivalent is <xref:System.Threading.AutoResetEvent>. The .NET runtime includes <xref:System.Threading.SemaphoreSlim> for single-waiter async signaling. Initialize it to `0` with a maximum count of `1` and call `WaitAsync` to wait and `Release` to signal.
 
 Because each signal releases only one waiter, you need a collection of `TaskCompletionSource` instances—one per waiter—so you can complete them individually:
 
@@ -65,7 +65,7 @@ The following example shows a producer signaling a consumer through the event:
 
 ## Async countdown event
 
-A countdown event waits for a specified number of signals before it allows waiters to proceed. This pattern is useful for fork/join scenarios where you start N operations and want to await all N completions. The synchronous equivalent is <xref:System.Threading.CountdownEvent>.
+A countdown event waits for a specified number of signals before it allows waiters to proceed. This pattern is useful for fork/join scenarios where you start N operations and want to await all N completions. The synchronous equivalent is <xref:System.Threading.CountdownEvent>. The .NET runtime provides <xref:System.Threading.Tasks.Task.WhenAll%2A> for fork/join coordination with a fixed set of tasks. Use it instead.
 
 Build the async version by composing the `AsyncManualResetEvent` from the previous section with an atomic counter:
 
@@ -81,7 +81,7 @@ The following example uses a countdown event to await three concurrent operation
 
 ## Async barrier
 
-A barrier coordinates a fixed set of participants across multiple rounds. Each participant signals when it finishes its work for the current round and then waits for all other participants to finish. When the last participant signals, all participants resume, and the barrier resets for the next round. The synchronous equivalent is <xref:System.Threading.Barrier>.
+A barrier coordinates a fixed set of participants across multiple rounds. Each participant signals when it finishes its work for the current round and then waits for all other participants to finish. When the last participant signals, all participants resume, and the barrier resets for the next round. The synchronous equivalent is <xref:System.Threading.Barrier>. The .NET runtime provides <xref:System.Threading.Tasks.Task.WhenAll%2A> for multi-round async synchronization. Combine it with a loop, one `WhenAll` call per round.
 
 :::code language="csharp" source="./snippets/async-coordination-primitives/csharp/Program.cs" id="AsyncBarrier":::
 :::code language="vb" source="./snippets/async-coordination-primitives/vb/Program.vb" id="AsyncBarrier":::

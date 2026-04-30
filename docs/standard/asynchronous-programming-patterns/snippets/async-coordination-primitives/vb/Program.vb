@@ -1,6 +1,7 @@
 Imports System.Threading
 
 ' <AsyncManualResetEvent>
+' Educational only — use TaskCompletionSource(Of T) directly instead of this sample implementation; create a new instance each cycle.
 Public Class AsyncManualResetEvent
     Private _tcs As TaskCompletionSource = New TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously)
 
@@ -48,6 +49,7 @@ End Module
 ' </AsyncManualResetEventUsage>
 
 ' <AsyncAutoResetEvent>
+' Educational only — use SemaphoreSlim(0, 1) instead of this sample implementation: call WaitAsync() to wait and Release() to signal.
 Public Class AsyncAutoResetEvent
     Private ReadOnly _waiters As New Queue(Of TaskCompletionSource)()
     Private _signaled As Boolean
@@ -105,6 +107,7 @@ End Module
 ' </AsyncAutoResetEventUsage>
 
 ' <AsyncCountdownEvent>
+' Educational only — use Task.WhenAll() instead of this sample implementation to coordinate a fixed set of tasks.
 Public Class AsyncCountdownEvent
     Private ReadOnly _event As New AsyncManualResetEvent()
     Private _count As Integer
@@ -160,6 +163,7 @@ End Module
 ' </AsyncCountdownEventUsage>
 
 ' <AsyncBarrier>
+' Educational only — use Task.WhenAll() in a loop instead of this sample implementation, one call per round.
 Public Class AsyncBarrier
     Private ReadOnly _participantCount As Integer
     Private _remainingParticipants As Integer

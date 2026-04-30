@@ -28,6 +28,7 @@ public static class SemaphoreSlimDemo
 // </SemaphoreSlimUsage>
 
 // <AsyncSemaphore>
+// Educational only — use SemaphoreSlim instead of this sample implementation.
 public class AsyncSemaphore
 {
     private readonly Queue<TaskCompletionSource> _waiters = new();
@@ -104,6 +105,7 @@ public static class SemaphoreSlimAsLockDemo
 // </SemaphoreSlimAsLock>
 
 // <AsyncLock>
+// Educational only — use SemaphoreSlim(1, 1) with try/finally instead of this sample implementation.
 public class AsyncLock : IDisposable
 {
     private readonly SemaphoreSlim _semaphore = new(1, 1);

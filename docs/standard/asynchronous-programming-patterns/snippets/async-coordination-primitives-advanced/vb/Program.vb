@@ -24,6 +24,7 @@ End Module
 ' </SemaphoreSlimUsage>
 
 ' <AsyncSemaphore>
+' Educational only — use SemaphoreSlim instead of this sample implementation.
 Public Class AsyncSemaphore
     Private ReadOnly _waiters As New Queue(Of TaskCompletionSource)()
     Private _currentCount As Integer
@@ -87,6 +88,7 @@ End Module
 ' </SemaphoreSlimAsLock>
 
 ' <AsyncLock>
+' Educational only — use SemaphoreSlim(1, 1) with Try/Finally instead of this sample implementation.
 Public Class AsyncLock
     Implements IDisposable
 

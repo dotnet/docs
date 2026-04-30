@@ -38,8 +38,8 @@ Internally, an async semaphore maintains a count and a queue of waiters. When th
 
 The `Release` method completes the `TaskCompletionSource` outside the lock, just like the `AsyncAutoResetEvent` in [Build async coordination primitives](async-coordination-primitives.md). This approach prevents synchronous continuations from running while the lock is held.
 
-> [!TIP]
-> In production code, use <xref:System.Threading.SemaphoreSlim> instead of this custom type. `SemaphoreSlim.WaitAsync` supports cancellation tokens, timeouts, and has been thoroughly tested.
+> [!NOTE]
+> `AsyncSemaphore` is an educational implementation. Use <xref:System.Threading.SemaphoreSlim> instead—it supports cancellation tokens, timeouts, and has been thoroughly tested.
 
 ## Async lock: mutual exclusion across awaits
 
@@ -60,8 +60,8 @@ Usage is concise and safe:
 :::code language="csharp" source="./snippets/async-coordination-primitives-advanced/csharp/Program.cs" id="AsyncLockUsage":::
 :::code language="vb" source="./snippets/async-coordination-primitives-advanced/vb/Program.vb" id="AsyncLockUsage":::
 
-> [!TIP]
-> In production code, use `SemaphoreSlim(1, 1)` directly with `try`/`finally`. The custom `AsyncLock` type shown here illustrates the disposable-releaser pattern but adds complexity without adding capabilities beyond what `SemaphoreSlim` provides.
+> [!NOTE]
+> `AsyncLock` is an educational implementation. Use <xref:System.Threading.SemaphoreSlim> initialized to `1` with `try`/`finally` directly—the `AsyncLock` type shown here illustrates the disposable-releaser pattern but adds no capabilities beyond what `SemaphoreSlim` provides.
 
 ## Async reader/writer coordination
 

@@ -138,34 +138,34 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1014**](#property-declaration-syntax): *A get or set accessor expected*
 - [**CS1043**](#property-declaration-syntax): *{ or ; expected*
 - [**CS1715**](#property-overrides): *'type': type must be 'type' to match overridden member 'member'*
-- [**CS8050**](#property-initializers): *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
-- [**CS8051**](#property-initializers): *Auto-implemented properties must have get accessors*
-- [**CS8053**](#property-initializers): *Instance properties in interfaces cannot have initializers*
+- [**CS8050**](#property-initializers): *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers.*
+- [**CS8051**](#property-initializers): *Auto-implemented properties must have get accessors.*
+- [**CS8053**](#property-initializers): *Instance properties in interfaces cannot have initializers.*
 - [**CS8080**](#property-overrides): *Auto-implemented properties must override all accessors of the overridden property.*
 - [**CS8145**](#ref-returning-properties): *Auto-implemented properties cannot return by reference*
 - [**CS8147**](#ref-returning-properties): *Properties which return by reference cannot have set accessors*
-- [**CS8341**](#readonly-properties): *Auto-implemented instance properties in readonly structs must be readonly*
-- [**CS8657**](#readonly-properties): *Static member cannot be marked 'readonly'*
-- [**CS8658**](#readonly-properties): *Auto-implemented 'set' accessor cannot be marked 'readonly'*
-- [**CS8659**](#readonly-properties): *Auto-implemented property cannot be marked 'readonly' because it has a 'set' accessor*
-- [**CS8660**](#readonly-properties): *Cannot specify 'readonly' modifiers on both property and its accessor*
-- [**CS8661**](#readonly-properties): *Cannot specify 'readonly' modifiers on both accessors of property*
-- [**CS8664**](#readonly-properties): *'readonly' can only be used on accessors if property has both get and set*
+- [**CS8341**](#readonly-properties): *Auto-implemented instance properties in readonly structs must be readonly.*
+- [**CS8657**](#readonly-properties): *Static member 'member' cannot be marked 'readonly'.*
+- [**CS8658**](#readonly-properties): *Auto-implemented 'set' accessor 'accessor' cannot be marked 'readonly'.*
+- [**CS8659**](#readonly-properties): *Auto-implemented property 'property' cannot be marked 'readonly' because it has a 'set' accessor.*
+- [**CS8660**](#readonly-properties): *Cannot specify 'readonly' modifiers on both property or indexer 'property' and its accessor. Remove one of them.*
+- [**CS8661**](#readonly-properties): *Cannot specify 'readonly' modifiers on both accessors of property or indexer 'property'. Instead, put a 'readonly' modifier on the property itself.*
+- [**CS8664**](#readonly-properties): *'property': 'readonly' can only be used on accessors if the property or indexer has both a get and a set accessor*
 - [**CS8852**](#init-only-properties): *Init-only property or indexer 'property' can only be assigned in an object initializer, or on 'this' or 'base' in an instance constructor or an 'init' accessor.*
 - [**CS8853**](#init-only-properties): *'member' must match by init-only of overridden member 'member'*
 - [**CS8855**](#init-only-properties): *Accessors 'accessor' and 'accessor' should both be init-only or neither*
 - [**CS8856**](#init-only-properties): *The 'init' accessor is not valid on static members*
 - [**CS8903**](#init-only-properties): *'init' accessors cannot be marked 'readonly'. Mark 'property' readonly instead.*
 - [**CS9029**](#required-members): *Types and aliases cannot be named 'required'.*
-- [**CS9030**](#required-members): *Member must be required because it overrides required member.*
-- [**CS9031**](#required-members): *Required member cannot be hidden by derived member.*
+- [**CS9030**](#required-members): *'member' must be required because it overrides required member 'member'*
+- [**CS9031**](#required-members): *Required member 'member' cannot be hidden by 'member'.*
 - [**CS9032**](#required-members): *Required member cannot be less visible or have a setter less visible than the containing type.*
 - [**CS9033**](#required-members): *Do not use '`System.Runtime.CompilerServices.RequiredMemberAttribute'`. Use the 'required' keyword on required fields and properties instead.*
 - [**CS9034**](#required-members): *Required member must be settable.*
 - [**CS9035**](#required-members): *Required member must be set in the object initializer or attribute constructor.*
 - [**CS9036**](#required-members): *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
-- [**CS9037**](#required-members): *The required members list is malformed and cannot be interpreted.*
-- [**CS9038**](#required-members): *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
+- [**CS9037**](#required-members): *The required members list for 'type' is malformed and cannot be interpreted.*
+- [**CS9038**](#required-members): *The required members list for the base type 'type' is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute.*
 - [**CS9039**](#required-members): *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
 - [**CS9040**](#required-members): *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or method because it has required members.*
 - [**CS9042**](#required-members): *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*
@@ -175,8 +175,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 The following warnings can be generated for field-backed properties:
 
-- [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.*
-- [**CS9266**](#field-backed-properties): *One accessor of property  should use '`field`' because the other accessor is using it.*
+- [**CS9264**](#field-backed-properties): *Non-nullable property 'property' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or safely handling the case where '`field`' is null in the '`get`' accessor.*
+- [**CS9266**](#field-backed-properties): *The 'accessor' accessor of property 'property' should use '`field`' because the other accessor is using it.*
 - [**CS9273**](#field-backed-properties): *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
 The following sections explain the cause and fixes for these errors and warnings.
@@ -255,8 +255,8 @@ For more information, see [Inheritance](../../fundamentals/object-oriented/inher
 
 - **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - **CS9263**: *A partial property cannot have an initializer on both the definition and implementation.*
-- **CS9264**: *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.*
-- **CS9266**: *One accessor of property  should use '`field`' because the other accessor is using it.*
+- **CS9264**: *Non-nullable property 'property' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or safely handling the case where '`field`' is null in the '`get`' accessor.*
+- **CS9266**: *The 'accessor' accessor of property 'property' should use '`field`' because the other accessor is using it.*
 - **CS9273**: *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
 To correct field-backed property errors, apply one of the following changes based on the specific diagnostic:
@@ -274,13 +274,13 @@ For more information, see [field keyword](../../programming-guide/classes-and-st
 ## Readonly properties
 
 - **CS0200**: *Property or indexer 'property' cannot be assigned to -- it is read only*
-- **CS8341**: *Auto-implemented instance properties in readonly structs must be readonly*
-- **CS8657**: *Static member cannot be marked 'readonly'*
-- **CS8658**: *Auto-implemented 'set' accessor cannot be marked 'readonly'*
-- **CS8659**: *Auto-implemented property cannot be marked 'readonly' because it has a 'set' accessor*
-- **CS8660**: *Cannot specify 'readonly' modifiers on both property and its accessor*
-- **CS8661**: *Cannot specify 'readonly' modifiers on both accessors of property*
-- **CS8664**: *'readonly' can only be used on accessors if property has both get and set*
+- **CS8341**: *Auto-implemented instance properties in readonly structs must be readonly.*
+- **CS8657**: *Static member 'member' cannot be marked 'readonly'.*
+- **CS8658**: *Auto-implemented 'set' accessor 'accessor' cannot be marked 'readonly'.*
+- **CS8659**: *Auto-implemented property 'property' cannot be marked 'readonly' because it has a 'set' accessor.*
+- **CS8660**: *Cannot specify 'readonly' modifiers on both property or indexer 'property' and its accessor. Remove one of them.*
+- **CS8661**: *Cannot specify 'readonly' modifiers on both accessors of property or indexer 'property'. Instead, put a 'readonly' modifier on the property itself.*
+- **CS8664**: *'property': 'readonly' can only be used on accessors if the property or indexer has both a get and a set accessor*
 
 To correct readonly property errors, apply one of the following changes based on the specific diagnostic:
 
@@ -324,9 +324,9 @@ For more information, see [init keyword](../keywords/init.md) and [Object and Co
 
 ## Property initializers
 
-- **CS8050**: *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers*
-- **CS8051**: *Auto-implemented properties must have get accessors*
-- **CS8053**: *Instance properties in interfaces cannot have initializers*
+- **CS8050**: *Only auto-implemented properties, or properties that use the 'field' keyword, can have initializers.*
+- **CS8051**: *Auto-implemented properties must have get accessors.*
+- **CS8053**: *Instance properties in interfaces cannot have initializers.*
 
 To correct property initializer errors, apply one of the following changes based on the specific diagnostic:
 
@@ -341,15 +341,15 @@ For more information, see [Properties](../../programming-guide/classes-and-struc
 ## Required members
 
 - **CS9029**: *Types and aliases cannot be named 'required'.*
-- **CS9030**: *Member must be required because it overrides required member.*
-- **CS9031**: *Required member cannot be hidden by derived member.*
+- **CS9030**: *'member' must be required because it overrides required member 'member'*
+- **CS9031**: *Required member 'member' cannot be hidden by 'member'.*
 - **CS9032**: *Required member cannot be less visible or have a setter less visible than the containing type.*
 - **CS9033**: *Do not use '`System.Runtime.CompilerServices.RequiredMemberAttribute'`. Use the 'required' keyword on required fields and properties instead.*
 - **CS9034**: *Required member must be settable.*
 - **CS9035**: *Required member must be set in the object initializer or attribute constructor.*
 - **CS9036**: *Required member 'memberName' must be assigned a value, it cannot use a nested member or collection initializer.*
-- **CS9037**: *The required members list is malformed and cannot be interpreted.*
-- **CS9038**: *The required members list for the base type is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute*.
+- **CS9037**: *The required members list for 'type' is malformed and cannot be interpreted.*
+- **CS9038**: *The required members list for the base type 'type' is malformed and cannot be interpreted. To use this constructor, apply the '`SetsRequiredMembers`' attribute.*
 - **CS9039**: *This constructor must add '`SetsRequiredMembers`' because it chains to a constructor that has that attribute.*
 - **CS9040**: *Type cannot satisfy the '`new()`' constraint on parameter in the generic type or method because it has required members.*
 - **CS9042**: *Required member should not be attributed with '`ObsoleteAttribute`' unless the containing type is obsolete or all constructors are obsolete.*

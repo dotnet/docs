@@ -203,7 +203,7 @@ Public Class AsyncReaderWriterLock
                 Return _readerReleaser
             Else
                 _readersWaiting += 1
-                Return _waitingReader.Task.ContinueWith(Function(t) t.Result)
+                Return _waitingReader.Task
             End If
         End SyncLock
     End Function
@@ -214,7 +214,8 @@ Public Class AsyncReaderWriterLock
                 _status = -1
                 Return _writerReleaser
             Else
-                Dim waiter As New TaskCompletionSource(Of Releaser)()
+                Dim waiter As New TaskCompletionSource(Of Releaser)(
+                    System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously)
                 _waitingWriters.Enqueue(waiter)
                 Return waiter.Task
             End If

@@ -89,7 +89,7 @@ A barrier coordinates a fixed set of participants across multiple rounds. Each p
 Key implementation details:
 
 - Before completing the shared `TaskCompletionSource`, the method resets the count and swaps in a new `TaskCompletionSource` for the next round. This ordering ensures that when waiters resume, the barrier is already ready for the next round.
-- All participants share the same `Task`, which means all synchronous continuations run in series on the thread that completes the task. If that serialization is a concern, give each participant its own `TaskCompletionSource` and complete them in parallel.
+- All participants share the same `Task`. Because the sample creates the `TaskCompletionSource` with `RunContinuationsAsynchronously`, continuations resume asynchronously instead of running inline on the thread that completes the barrier.
 
 The following example runs three participants through two rounds of a barrier:
 

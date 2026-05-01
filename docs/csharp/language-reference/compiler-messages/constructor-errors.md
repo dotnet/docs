@@ -216,13 +216,10 @@ You can declare constructors only in `class` and `struct` types, including `reco
 
 To fix these errors, try the following suggestions:
 
-Move the constructor to a `class` or `struct` type, because you can't declare constructors in `interface` or `enum` types (**CS0526**, **CS8054**). Interfaces define contracts but don't provide initialization logic, and enum types have their values defined at compile time.
-
-Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
-
-Change `in` or `ref readonly` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` or `ref readonly` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` or `ref readonly` modifier.
-
-Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
+- Move the constructor to a `class` or `struct` type, because you can't declare constructors in `interface` or `enum` types (**CS0526**, **CS8054**). Interfaces define contracts but don't provide initialization logic, and enum types have their values defined at compile time.
+- Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
+- Change `in` or `ref readonly` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` or `ref readonly` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` or `ref readonly` modifier.
+- Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
 
 The following warning can be generated for constructor declarations:
 
@@ -323,18 +320,25 @@ For more information, see <xref:System.Runtime.CompilerServices.ModuleInitialize
 - **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9122**: *Unexpected parameter list.*
 
-When a type has a primary constructor, all other explicitly declared constructors must chain to it by using `: this(...)`. Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor (**CS8862**).
+When a type has a primary constructor, all other explicitly declared constructors must chain to it by using `: this(...)`.
 
-Remove a parameter list from the base type reference when the base type doesn't have a primary constructor. The syntax `class Derived : Base(args)` is only valid when `Base` has a primary constructor (**CS8861**). Similarly, remove a primary constructor parameter list from an `interface` declaration, because interfaces can't have primary constructors (**CS9122**).
+To fix these errors, try the following suggestions:
+
+- Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor, because all explicitly declared constructors must chain to the primary constructor (**CS8862**).
+- Remove a parameter list from the base type reference when the base type doesn't have a primary constructor, because the syntax `class Derived : Base(args)` is only valid when `Base` has a primary constructor (**CS8861**).
+- Remove a primary constructor parameter list from an `interface` declaration, because interfaces can't have primary constructors (**CS9122**).
 
 ### Parameter usage in base constructor calls
 
 - **CS9105**: *Cannot use primary constructor parameter in this context.*
 - **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
 
-You can only use primary constructor parameters in the base constructor call if you pass them as part of the primary constructor declaration. To fix **CS9105**, move the parameter usage to the type declaration's base clause instead of using it in an explicitly declared constructor's `: base()` call.
+You can only use primary constructor parameters in the base constructor call if you pass them as part of the primary constructor declaration.
 
-If a type and a primary constructor parameter share the same name, the reference becomes ambiguous. To fix **CS9106**, rename either the type or the parameter.
+To fix these errors, try the following suggestions:
+
+- Move the parameter usage to the type declaration's base clause instead of using it in an explicitly declared constructor's `: base()` call, because primary constructor parameters can only appear in the base clause of the type declaration (**CS9105**).
+- Rename either the type or the parameter when a type and a primary constructor parameter share the same name, because the reference becomes ambiguous (**CS9106**).
 
 ### Ref-like type parameters
 

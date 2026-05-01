@@ -201,7 +201,8 @@ public static class ConcurrentExclusiveDemo
 public class AsyncReaderWriterLock
 {
     private readonly Queue<TaskCompletionSource<Releaser>> _waitingWriters = new();
-    private TaskCompletionSource<Releaser> _waitingReader = new();
+    private TaskCompletionSource<Releaser> _waitingReader =
+        new(TaskCreationOptions.RunContinuationsAsynchronously);
     private int _readersWaiting;
     private int _status; // 0 = free, -1 = writer active, >0 = reader count
 
@@ -226,7 +227,7 @@ public class AsyncReaderWriterLock
             else
             {
                 _readersWaiting++;
-                return _waitingReader.Task.ContinueWith(t => t.Result);
+                return _waitingReader.Task;
             }
         }
     }
@@ -242,7 +243,7 @@ public class AsyncReaderWriterLock
             }
             else
             {
-                var waiter = new TaskCompletionSource<Releaser>();
+                var waiter = new TaskCompletionSource<Releaser>(TaskCreationOptions.RunContinuationsAsynchronously);
                 _waitingWriters.Enqueue(waiter);
                 return waiter.Task;
             }
@@ -283,7 +284,7 @@ public class AsyncReaderWriterLock
                 toWake = _waitingReader;
                 _status = _readersWaiting;
                 _readersWaiting = 0;
-                _waitingReader = new TaskCompletionSource<Releaser>();
+                _waitingReader = new TaskCompletionSource<Releaser>(TaskCreationOptions.RunContinuationsAsynchronously);
             }
             else
             {

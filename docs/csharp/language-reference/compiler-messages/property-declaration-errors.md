@@ -189,7 +189,7 @@ The following sections explain the cause and fixes for these errors and warnings
 - **CS0276**: *'property': accessibility modifiers on accessors may only be used if the property or indexer has both a get and a set accessor*
 - **CS0442**: *'property': abstract properties cannot have private accessors*
 
-These errors enforce the rules for access modifiers on property and indexer accessors. For the full rules, see [Restricting Accessor Accessibility](../../programming-guide/classes-and-structs/restricting-accessor-accessibility.md) and [Accessors](~/_csharpstandard/standard/classes.md#accessors) in the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
+These errors enforce the rules for access modifiers on property and indexer accessors. For the full rules, see [Restricting Accessor Accessibility](../../programming-guide/classes-and-structs/restricting-accessor-accessibility.md) and [Accessors](~/_csharpstandard/standard/classes.md#1573-accessors) in the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
 
 - Use an access modifier that's more restrictive than the property's declared accessibility (**CS0273**). For example, an `internal` property can have a `private` set accessor, but not a `public` one. The accessor's accessibility must be a proper subset of the property's accessibility.
 - Apply an access modifier to only one of the two accessors (**CS0274**). The property declaration itself establishes the default accessibility for both accessors, and only one accessor can differ from that default. Place the access modifier on whichever accessor needs restricted access.
@@ -209,7 +209,7 @@ For more information, see [Restricting Accessor Accessibility](../../programming
 - **CS1014**: *A get or set accessor expected*
 - **CS1043**: *{ or ; expected*
 
-These errors enforce the structural requirements of property and indexer declarations. For the full rules, see [Properties](../../programming-guide/classes-and-structs/properties.md) and the [Properties](~/_csharpstandard/standard/classes.md#properties) section of the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
+These errors enforce the structural requirements of property and indexer declarations. For the full rules, see [Properties](../../programming-guide/classes-and-structs/properties.md) and the [Properties](~/_csharpstandard/standard/classes.md#157-properties) section of the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
 
 - Change the property type from `void` to a valid type (**CS0547**). Properties and indexers represent expressions, and [`void`](../builtin-types/void.md) isn't a valid expression type. Choose the appropriate type for the data the property represents.
 - Add at least one accessor (`get`, `set`, or `init`) to the property declaration (**CS0548**). A property without any accessors has no way to read or write its value. Include a `get` accessor, a `set` or `init` accessor, or both.
@@ -229,7 +229,7 @@ For more information, see [Properties](../../programming-guide/classes-and-struc
 - **CS1715**: *'type': type must be 'type' to match overridden member 'member'*
 - **CS8080**: *Auto-implemented properties must override all accessors of the overridden property.*
 
-These errors enforce the rules for overriding properties in derived classes. For the full rules, see [Inheritance](../../fundamentals/object-oriented/inheritance.md) and the [Virtual, sealed, override, and abstract accessors](~/_csharpstandard/standard/classes.md#virtual-sealed-override-and-abstract-accessors) section of the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
+These errors enforce the rules for overriding properties in derived classes. For the full rules, see [Inheritance](../../fundamentals/object-oriented/inheritance.md) and the [Virtual, sealed, override, and abstract accessors](~/_csharpstandard/standard/classes.md#1574-virtual-sealed-override-and-abstract-accessors) section of the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
 
 - Ensure the member you're overriding is a property, not a field or method (**CS0544**). The `override` keyword on a property can only target a `virtual`, `abstract`, or `override` property in a base class. To shadow a non-property member with a property, use the `new` keyword instead of `override`.
 - Override only the accessors that exist in the base class property declaration (**CS0545**, **CS0546**). You can't override a property accessor that isn't present or accessible in the base class because there's no virtual method to override. If the base class property has only a `get` accessor, you can't add a `set` accessor through an override. Either add the missing accessor to the base class and mark it `virtual`, or use `new` to hide the base class property with a new property definition.

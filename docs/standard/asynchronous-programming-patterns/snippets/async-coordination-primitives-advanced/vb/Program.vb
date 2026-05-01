@@ -184,7 +184,7 @@ End Module
 ' <AsyncReaderWriterLock>
 Public Class AsyncReaderWriterLock
     Private ReadOnly _waitingWriters As New Queue(Of TaskCompletionSource(Of Releaser))()
-    Private _waitingReader As New TaskCompletionSource(Of Releaser)()
+    Private _waitingReader As New TaskCompletionSource(Of Releaser)(TaskCreationOptions.RunContinuationsAsynchronously)
     Private _readersWaiting As Integer
     Private _status As Integer ' 0 = free, -1 = writer active, >0 = reader count
 
@@ -247,7 +247,7 @@ Public Class AsyncReaderWriterLock
                 toWake = _waitingReader
                 _status = _readersWaiting
                 _readersWaiting = 0
-                _waitingReader = New TaskCompletionSource(Of Releaser)()
+                _waitingReader = New TaskCompletionSource(Of Releaser)(TaskCreationOptions.RunContinuationsAsynchronously)
             Else
                 _status = 0
             End If

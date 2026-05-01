@@ -131,10 +131,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0132**](#static-constructors): *'constructor': a static constructor must be parameterless.*
 - [**CS0514**](#static-constructors): *static constructor cannot have an explicit 'this' or 'base' constructor call.*
 - [**CS0515**](#static-constructors): *access modifiers are not allowed on static constructors.*
-- [**CS0516**](#constructor-calls-with-base-and-this): *Constructor 'constructor' can not call itself.*
+- [**CS0516**](#constructor-calls-with-base-and-this): *Constructor 'constructor' cannot call itself.*
 - [**CS0517**](#constructor-calls-with-base-and-this): *'class' has no base class and cannot call a base constructor.*
 - [**CS0522**](#constructor-calls-with-base-and-this): *structs cannot call base class constructors.*
-- [**CS0526**](#constructor-declaration): *Interfaces cannot contain constructors.*
+- [**CS0526**](#constructor-declaration): *Interfaces cannot contain instance constructors.*
 - [**CS0568**](#constructors-in-struct-types): *Structs cannot contain explicit parameterless constructors.*
 - [**CS0573**](#constructors-in-struct-types): *'field declaration': cannot have instance field initializers in structs.*
 - [**CS0710**](#constructor-declaration): *Static classes cannot have instance constructors.*
@@ -142,7 +142,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1018**](#constructor-calls-with-base-and-this): *Keyword 'this' or 'base' expected.*
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
-- [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' parameters.*
+- [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
 - [**CS8813**](#module-initializer-declarations): *A module initializer must be an ordinary member method*
 - [**CS8814**](#module-initializer-declarations): *Module initializer method 'method' must be accessible at the module level*
 - [**CS8815**](#module-initializer-declarations): *Module initializer method 'method' must be static, and non-virtual, must have no parameters, and must return 'void'*
@@ -186,7 +186,7 @@ In addition, the following warnings are covered in this article:
 - [**CS9179**](#primary-constructor-declaration): *Primary constructor parameter is shadowed by a member from base*
 - [**CS9018**](#constructors-in-struct-types): *Auto-implemented property is read before being explicitly assigned, causing a preceding implicit assignment of 'default'.*
 - [**CS9019**](#constructors-in-struct-types): *Field is read before being explicitly assigned, causing a preceding implicit assignment of 'default'.*
-- [**CS9020**](#constructors-in-struct-types): *The 'this' object is read before all of its fields have been assigned, causing preceding implicit assignments of 'default' to non-explicitly assigned fields.*
+- [**CS9020**](#constructors-in-struct-types): *The 'this' object is read before all of its fields are assigned, causing preceding implicit assignments of 'default' to non-explicitly assigned fields.*
 - [**CS9021**](#constructors-in-struct-types): *Control is returned to caller before auto-implemented property is explicitly assigned, causing a preceding implicit assignment of 'default'.*
 - [**CS9022**](#constructors-in-struct-types): *Control is returned to caller before field is explicitly assigned, causing a preceding implicit assignment of 'default'.*
 
@@ -206,10 +206,10 @@ To correct these errors, ensure your static constructor declaration follows thes
 
 ## Constructor declaration
 
-- **CS0526**: *Interfaces cannot contain constructors.*
+- **CS0526**: *Interfaces cannot contain instance constructors.*
 - **CS0710**: *Static classes cannot have instance constructors.*
 - **CS8054**: *Enums cannot contain explicit parameterless constructors.*
-- **CS8358**: *Cannot use attribute constructor because it has 'in' parameters.*
+- **CS8358**: *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
 - **CS8091**: *A constructor cannot be extern and have a constructor initializer.*
 
 You can declare constructors only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
@@ -220,7 +220,7 @@ Move the constructor to a `class` or `struct` type, because you can't declare co
 
 Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
 
-Change `in` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` modifier.
+Change `in` or `ref readonly` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` or `ref readonly` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` or `ref readonly` modifier.
 
 Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
 
@@ -259,7 +259,7 @@ To silence these warnings, explicitly assign all fields and auto-implemented pro
 
 ## Constructor calls with `base` and `this`
 
-- **CS0516**: *Constructor can not call itself.*
+- **CS0516**: *Constructor cannot call itself.*
 - **CS0517**: *'class' has no base class and cannot call a base constructor.*
 - **CS0522**: *Structs cannot call base class constructors.*
 - **CS0768**: *Constructor cannot call itself through another constructor.*

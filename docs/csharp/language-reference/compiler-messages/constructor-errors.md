@@ -1,6 +1,7 @@
 ---
 title: Resolve errors related to constructor declarations and module initializers
-description: These compiler errors and warnings indicate violations when declaring constructors in classes or structs, including records and module initializers. This article provides guidance on resolving those errors.
+description: These compiler errors and warnings indicate violations in constructor declarations in classes and structs, record constructor scenarios, and module initializer declarations. This article provides guidance on resolving those errors.
+ai-usage: ai-assisted
 f1_keywords:
  - "CS0132"
  - "CS0514"
@@ -300,13 +301,13 @@ These errors enforce the requirements for methods marked with <xref:System.Runti
 
 To correct these errors, apply one of the following changes based on the specific diagnostic:
 
-- Ensure the method marked with `[ModuleInitializer]` is an ordinary method, not a property accessor, event accessor, local function, lambda, constructor, destructor, or operator (**CS8813**). The runtime invokes module initializers by name, so the method must be a standard method declaration.
+- Ensure the method marked with `[ModuleInitializer]` is an ordinary method, not a property accessor, event accessor, local function, lambda, constructor, destructor, or operator (**CS8813**). The compiler can only treat an ordinary method declaration as a valid target for module initializer infrastructure.
 - Make the module initializer method and all its containing types `internal` or `public` so the method is accessible outside the top-level type (**CS8814**). The runtime needs to call the method from generated module-level code, which requires accessibility at the module level.
 - Declare the module initializer method as `static`, non-virtual, with no parameters, and with a `void` return type (**CS8815**). The runtime calls module initializers without any arguments and discards the result, so the method signature must match these constraints exactly.
 - Remove generic type parameters from the module initializer method and move the method out of any generic containing type (**CS8816**). The runtime can't determine which type arguments to supply when invoking the initializer, so generic methods and methods in generic types aren't permitted.
 - Remove the <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> from the module initializer method (**CS8900**). Module initializers are called by managed runtime infrastructure, so they can't be restricted to unmanaged callers only.
-- Obtain a function pointer instead of calling a method marked with `[UnmanagedCallersOnly]` directly (**CS8901**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be called from managed code. Use the `&` operator to get a function pointer (`delegate* unmanaged<...>`) and pass the pointer to unmanaged code.
-- Obtain a function pointer instead of converting a method marked with `[UnmanagedCallersOnly]` to a delegate type (**CS8902**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be represented as managed delegates because the calling convention is incompatible. Use function pointers (`delegate* unmanaged<...>`) instead.
+- Obtain a function pointer instead of calling a method marked with `[UnmanagedCallersOnly]` directly (**CS8901**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be called from managed code. Use the `&` operator to get a function pointer (`delegate* unmanaged<...>`) in an `unsafe` context, and pass the pointer to unmanaged code. If your project doesn't already allow unsafe code, enable `AllowUnsafeBlocks`.
+- Obtain a function pointer instead of converting a method marked with `[UnmanagedCallersOnly]` to a delegate type (**CS8902**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be represented as managed delegates because the calling convention is incompatible. Use function pointers (`delegate* unmanaged<...>`) in an `unsafe` context instead. If your project doesn't already allow unsafe code, enable `AllowUnsafeBlocks`.
 
 For more information, see <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> and <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute>.
 

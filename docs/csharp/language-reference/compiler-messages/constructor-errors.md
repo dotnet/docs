@@ -1,6 +1,6 @@
 ---
-title: Resolve errors related to constructor declarations
-description: These compiler errors and warnings indicate violations when declaring constructors in classes or structs, including records. This article provides guidance on resolving those errors.
+title: Resolve errors related to constructor declarations and module initializers
+description: These compiler errors and warnings indicate violations when declaring constructors in classes or structs, including records and module initializers. This article provides guidance on resolving those errors.
 f1_keywords:
  - "CS0132"
  - "CS0514"
@@ -18,11 +18,18 @@ f1_keywords:
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
  - "CS8091" # ERR_ExternHasConstructorInitializer
  - "CS8358" # ERR_AttributeCtorInParameter
+ - "CS8813" # ERR_ModuleInitializerMethodMustBeOrdinary
+ - "CS8814" # ERR_ModuleInitializerMethodMustBeAccessibleOutsideTopLevelType
+ - "CS8815" # ERR_ModuleInitializerMethodMustBeStaticParameterlessVoid
+ - "CS8816" # ERR_ModuleInitializerMethodAndContainingTypesMustNotBeGeneric
  - "CS8861"
  - "CS8862" # ERR_UnexpectedOrMissingConstructorInitializerInRecord
  - "CS8867" # ERR_NoCopyConstructorInBaseType
  - "CS8868" # ERR_CopyConstructorMustInvokeBaseCopyConstructor 
  - "CS8878" # ERR_CopyConstructorWrongAccessibility
+ - "CS8900" # ERR_ModuleInitializerCannotBeUnmanagedCallersOnly
+ - "CS8901" # ERR_UnmanagedCallersOnlyMethodsCannotBeCalledDirectly
+ - "CS8902" # ERR_UnmanagedCallersOnlyMethodsCannotBeConvertedToDelegate
  - "CS8910" # ERR_RecordAmbigCtor
  - "CS8958" # ERR_NonPublicParameterlessStructConstructor
  - "CS8982" # ERR_RecordStructConstructorCallsDefaultConstructor
@@ -70,11 +77,18 @@ helpviewer_keywords:
  - "CS8054"
  - "CS8091"
  - "CS8358"
+ - "CS8813"
+ - "CS8814"
+ - "CS8815"
+ - "CS8816"
  - "CS8861"
  - "CS8862"
  - "CS8867"
  - "CS8868"
  - "CS8878"
+ - "CS8900"
+ - "CS8901"
+ - "CS8902"
  - "CS8910"
  - "CS8958"
  - "CS8982"
@@ -105,9 +119,9 @@ helpviewer_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
-ms.date: 01/28/2026
+ms.date: 05/01/2026
 ---
-# Resolve errors and warnings in constructor declarations
+# Resolve errors and warnings for constructor declarations and module initializers
 
 This article covers the following compiler errors:
 
@@ -128,12 +142,19 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1018**](#constructor-calls-with-base-and-this): *Keyword 'this' or 'base' expected.*
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
+- [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' parameters.*
+- [**CS8813**](#module-initializer-declarations): *A module initializer must be an ordinary member method*
+- [**CS8814**](#module-initializer-declarations): *Module initializer method 'method' must be accessible at the module level*
+- [**CS8815**](#module-initializer-declarations): *Module initializer method 'method' must be static, and non-virtual, must have no parameters, and must return 'void'*
+- [**CS8816**](#module-initializer-declarations): *Module initializer method 'method' must not be generic and must not be contained in a generic type*
 - [**CS8861**](#primary-constructor-declaration): *Unexpected argument list.*
 - [**CS8862**](#primary-constructor-declaration): *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
-- [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' parameters.*
 - [**CS8867**](#records-and-copy-constructors): *No accessible copy constructor found in base type '{0}'.*
 - [**CS8868**](#records-and-copy-constructors): *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
 - [**CS8878**](#records-and-copy-constructors): *A copy constructor '{0}' must be public or protected because the record is not sealed.*
+- [**CS8900**](#module-initializer-declarations): *Module initializer cannot be attributed with 'UnmanagedCallersOnly'.*
+- [**CS8901**](#module-initializer-declarations): *'method' is attributed with 'UnmanagedCallersOnly' and cannot be called directly. Obtain a function pointer to this method.*
+- [**CS8902**](#module-initializer-declarations): *'method' is attributed with 'UnmanagedCallersOnly' and cannot be converted to a delegate type. Obtain a function pointer to this method.*
 - [**CS8910**](#records-and-copy-constructors): *The primary constructor conflicts with the synthesized copy constructor.*
 - [**CS8958**](#constructors-in-struct-types): *The parameterless struct constructor must be 'public'.*
 - [**CS8982**](#constructors-in-struct-types): *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
@@ -267,6 +288,30 @@ In a derived record type, your explicit copy constructor must call the base type
 - In a derived record type, your explicit copy constructor must call the base type's copy constructor by using the `: base()` initializer. If the record directly inherits from <xref:System.Object?displayProperty=nameWithType>, it can call the parameterless object constructor instead (**CS8868**).
 - Copy constructors must be `public` or `protected` unless the record type is [`sealed`](../keywords/sealed.md). Add the appropriate access modifier to the copy constructor (**CS8878**).
 - If your explicit copy constructor has the same signature as the synthesized copy constructor, the definitions conflict. Remove your explicit copy constructor or modify its signature (**CS8910**).
+
+## Module initializer declarations
+
+- **CS8813**: *A module initializer must be an ordinary member method.*
+- **CS8814**: *Module initializer method 'method' must be accessible at the module level.*
+- **CS8815**: *Module initializer method 'method' must be static, and non-virtual, must have no parameters, and must return 'void'.*
+- **CS8816**: *Module initializer method 'method' must not be generic and must not be contained in a generic type.*
+- **CS8900**: *Module initializer cannot be attributed with 'UnmanagedCallersOnly'.*
+- **CS8901**: *'method' is attributed with 'UnmanagedCallersOnly' and cannot be called directly. Obtain a function pointer to this method.*
+- **CS8902**: *'method' is attributed with 'UnmanagedCallersOnly' and cannot be converted to a delegate type. Obtain a function pointer to this method.*
+
+These errors enforce the requirements for methods marked with <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>. Module initializers run automatically when an assembly is first loaded, before any other code in the module executes. For the full rules, see [Module initializers](../../language-reference/proposals/csharp-9.0/module-initializers.md).
+
+To correct these errors, apply one of the following changes based on the specific diagnostic:
+
+- Ensure the method marked with `[ModuleInitializer]` is an ordinary method, not a property accessor, event accessor, local function, lambda, constructor, destructor, or operator (**CS8813**). The runtime invokes module initializers by name, so the method must be a standard method declaration.
+- Make the module initializer method and all its containing types `internal` or `public` so the method is accessible outside the top-level type (**CS8814**). The runtime needs to call the method from generated module-level code, which requires accessibility at the module level.
+- Declare the module initializer method as `static`, non-virtual, with no parameters, and with a `void` return type (**CS8815**). The runtime calls module initializers without any arguments and discards the result, so the method signature must match these constraints exactly.
+- Remove generic type parameters from the module initializer method and move the method out of any generic containing type (**CS8816**). The runtime can't determine which type arguments to supply when invoking the initializer, so generic methods and methods in generic types aren't permitted.
+- Remove the <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> from the module initializer method (**CS8900**). Module initializers are called by managed runtime infrastructure, so they can't be restricted to unmanaged callers only.
+- Obtain a function pointer instead of calling a method marked with `[UnmanagedCallersOnly]` directly (**CS8901**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be called from managed code. Use the `&` operator to get a function pointer (`delegate* unmanaged<...>`) and pass the pointer to unmanaged code.
+- Obtain a function pointer instead of converting a method marked with `[UnmanagedCallersOnly]` to a delegate type (**CS8902**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be represented as managed delegates because the calling convention is incompatible. Use function pointers (`delegate* unmanaged<...>`) instead.
+
+For more information, see <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> and <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute>.
 
 ## Primary constructor declaration
 

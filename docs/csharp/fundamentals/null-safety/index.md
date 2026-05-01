@@ -6,7 +6,7 @@ ms.topic: overview
 ai-usage: ai-assisted
 ---
 
-# C# Null safety
+# C# null safety
 
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.

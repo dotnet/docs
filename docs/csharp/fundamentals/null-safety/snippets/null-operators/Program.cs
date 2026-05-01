@@ -15,6 +15,7 @@ public static class Program
     public static void Main()
     {
         ShowNullConditionalMember();
+        ShowNullConditionalMemberChain();
         ShowNullConditionalIndexer();
         ShowNullConditionalChain();
         ShowNullConditionalDelegate();
@@ -42,6 +43,20 @@ public static class Program
         name = "C#";
         Console.WriteLine(name?.Length); // 2
         // </NullConditionalMember>
+    }
+
+    private static void ShowNullConditionalMemberChain()
+    {
+        // <NullConditionalMemberChain>
+        string? input = null;
+
+        // Chain ?. across multiple method calls — short-circuits at the first null:
+        string? upper = input?.Trim()?.ToUpperInvariant();
+        Console.WriteLine(upper ?? "(none)"); // (none)
+
+        input = "  hello  ";
+        Console.WriteLine(input?.Trim()?.ToUpperInvariant()); // HELLO
+        // </NullConditionalMemberChain>
     }
 
     private static void ShowNullConditionalIndexer()

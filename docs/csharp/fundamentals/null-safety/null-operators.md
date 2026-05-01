@@ -23,6 +23,10 @@ The `?.` operator accesses a member only when the object is non-null. When the o
 
 The `?.` operator *short-circuits*: when the left-hand side is `null`, everything to the right is skipped. No method calls run and no side effects occur.
 
+You can chain multiple `?.` operators in a single expression. The chain stops at the first `null` it encounters:
+
+:::code language="csharp" source="snippets/null-operators/Program.cs" ID="NullConditionalMemberChain":::
+
 ## Null-conditional indexer access `?[]`
 
 The `?[]` operator applies the same short-circuit behavior to indexer and array access. Use it when the collection itself might be `null`:
@@ -31,7 +35,7 @@ The `?[]` operator applies the same short-circuit behavior to indexer and array 
 
 ## Chain null-conditional operators
 
-Chain multiple `?.` operators to traverse a path of potentially-null references. The chain short-circuits at the first `null`:
+Chain multiple `?.` operators to traverse a path of potentially null references. The chain short-circuits at the first `null`:
 
 :::code language="csharp" source="snippets/null-operators/Program.cs" ID="NullConditionalChain":::
 
@@ -39,11 +43,11 @@ When `Customer` is `null`, neither `Address` nor `City` is evaluated. The whole 
 
 ## Thread-safe delegate invocation
 
-`?.` provides a clean, thread-safe way to invoke a delegate or raise an event. Calling `handler?.Invoke(...)` reads the delegate once, checks for `null`, and invokes it—all in one atomic read:
+`?.` provides a clean, thread-safe way to invoke a delegate or raise an event. The delegate expression is evaluated only once, so there's no window for another thread to unsubscribe between the null check and the invocation:
 
 :::code language="csharp" source="snippets/null-operators/Program.cs" ID="NullConditionalDelegate":::
 
-The `?.Invoke()` pattern replaces the older `if (clicked != null) clicked(...)` idiom and avoids a race condition where another thread could unsubscribe between the null check and the invocation.
+This pattern replaces the older `if (clicked != null) clicked(...)` idiom.
 
 ## Null-coalescing `??`
 
@@ -51,7 +55,7 @@ The `??` operator returns its left-hand operand when it's non-null, and its righ
 
 :::code language="csharp" source="snippets/null-operators/Program.cs" ID="NullCoalescing":::
 
-`??` is right-associative, so `a ?? b ?? c` evaluates as `a ?? (b ?? c)`—the first non-null value wins. A common pattern is to chain `?.` with `??`: use `?.` to safely traverse a null-possible chain, then `??` to substitute a default if the chain returned `null`. For a complete example, see [Combine null operators](#combine-null-operators).
+`??` is right-associative, so `a ?? b ?? c` evaluates as `a ?? (b ?? c)`. The first non-null value wins. A common pattern is to chain `?.` with `??`: use `?.` to safely traverse a null-possible chain, then `??` to substitute a default if the chain returned `null`. For a complete example, see [Combine null operators](#combine-null-operators).
 
 ## Null-coalescing assignment `??=`
 
@@ -87,11 +91,11 @@ In practice, you often combine several of these operators. One expression can sa
 
 ## Null-forgiving operator `!`
 
-The `!` postfix operator suppresses nullable warnings. Append `!` to tell the compiler "this expression is definitely not null." The operator has no effect at runtime—it only affects the compiler's null-state analysis.
+The `!` postfix operator suppresses nullable warnings. Append `!` to tell the compiler "this expression is definitely not null." The operator has no effect at runtime. It only affects the compiler's null-state analysis.
 
 :::code language="csharp" source="snippets/null-operators/Program.cs" ID="NullForgiving":::
 
-Use `!` sparingly, and only when you have information the compiler doesn't—for example, in tests that intentionally pass `null` to validate argument-checking logic, or when you call a method whose contract guarantees a non-null return for a known input. Overusing `!` defeats the purpose of nullable reference types. For a full explanation, see [Nullable reference types](../../nullable-references.md).
+Use `!` sparingly, and only when you have information the compiler doesn't. Examples include tests that intentionally pass `null` to validate argument-checking logic, or calling a method whose contract guarantees a non-null return for a known input. Overusing `!` defeats the purpose of nullable reference types. For a full explanation, see [Nullable reference types](../../nullable-references.md).
 
 ## See also
 

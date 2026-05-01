@@ -9,11 +9,11 @@ ai-usage: ai-assisted
 # Nullable value types: C# Fundamentals
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For the complete language specification, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md) in the language reference.
+> This article is part of the **Fundamentals** section for developers who know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For more details, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md) in the language reference.
 
 A *nullable value type* `T?` represents all values of its underlying value type `T`, plus an additional `null` value. A variable of type `int?` holds any integer or `null` to represent "no value."
 
-Value types like `int`, `bool`, and `DateTime` can't hold `null` by default—which is efficient and prevents many errors. The limitation creates a problem, though, when a value might genuinely be absent. A common scenario is reading from a database: an integer column might contain a number, or it might contain no value at all (`NULL` in SQL). A plain `int` can't represent that absence—`int?` can.
+Value types like `int`, `bool`, and `DateTime` can't hold `null` by default. This behavior is efficient and prevents many errors. However, this limitation creates a problem when a value might genuinely be absent. A common scenario is reading from a database: an integer column might contain a number, or it might contain no value at all (`NULL` in SQL). A plain `int` can't represent that absence, but `int?` can.
 
 ## Declare a nullable value type
 
@@ -35,7 +35,7 @@ Alternatively, use the `HasValue` and `Value` properties:
 
 :::code language="csharp" source="snippets/nullable-value-types/Program.cs" ID="HasValue":::
 
-Prefer the `is T value` pattern for new code. Accessing `Value` when `HasValue` is `false` throws an <xref:System.InvalidOperationException>, so the pattern approach is safer because it can't reach the value when it's absent.
+Prefer the `is T value` pattern for new code. It introduces a new non-nullable variable scoped to the matched branch, which makes the intent clearer and eliminates any temptation to accidentally use `Value` outside a null check, where it would throw an <xref:System.InvalidOperationException>.
 
 You can also compare directly with `null`:
 

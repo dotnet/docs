@@ -50,7 +50,7 @@ public static class Program
     {
         // <NrtIntro>
         // string?  means this reference might be null
-        // string   means this reference is never null
+        // string   means this reference should not be null
         string? nullableName = null;
         string  nonNullName  = "Alice";
 

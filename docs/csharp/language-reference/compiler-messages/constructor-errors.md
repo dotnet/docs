@@ -296,7 +296,7 @@ In a derived record type, your explicit copy constructor must call the base type
 - **CS8901**: *'method' is attributed with 'UnmanagedCallersOnly' and cannot be called directly. Obtain a function pointer to this method.*
 - **CS8902**: *'method' is attributed with 'UnmanagedCallersOnly' and cannot be converted to a delegate type. Obtain a function pointer to this method.*
 
-These errors enforce the requirements for methods marked with <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>. Module initializers run automatically when an assembly is first loaded, before any other code in the module executes. For the full rules, see [Module initializers](../../language-reference/proposals/csharp-9.0/module-initializers.md).
+These errors enforce the requirements for methods marked with <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>. Module initializers run automatically when an assembly is first loaded, before any other code in the module executes. For the full rules, see [Module initializers](../attributes/general.md#moduleinitializer-attribute).
 
 To correct these errors, apply one of the following changes based on the specific diagnostic:
 

@@ -196,7 +196,7 @@ This article covers the following compiler warnings:
 - [**CS8847**](#exhaustive-switch-expression) - *The switch expression does not handle some null inputs (it is not exhaustive). However, a pattern with a 'when' clause might successfully match this value.*
 
 > [!NOTE]
-> The static analysis can't always deduce in what order, in a specific scenario, methods are accessed, and whether the method completes successfully without throwing an exception. Those known pitfalls are well described in [Known pitfalls](../../nullable-references.md#known-pitfalls) section.
+> The static analysis can't always deduce in what order, in a specific scenario, methods are accessed, and whether the method completes successfully without throwing an exception. Those known pitfalls are well described in [Known pitfalls](../../fundamentals/null-safety/nullable-reference-types.md#known-pitfalls) section.
 
 You address almost all warnings using one of five techniques:
 
@@ -206,7 +206,7 @@ You address almost all warnings using one of five techniques:
 - Adding attributes that describe null semantics.
 - Initializing variables correctly.
 
-If you're new to using nullable reference types, the [overview of nullable reference types](../../nullable-references.md) provides a background on what nullable reference types solve and how they work to provide warnings to possible mistakes in your code. You can also check the guidance on [migrating to nullable reference types](../../nullable-migration-strategies.md) to learn more about enabling nullable reference types in an existing project.
+If you're new to using nullable reference types, the [overview of nullable reference types](../../fundamentals/null-safety/nullable-reference-types.md) provides a background on what nullable reference types solve and how they work to provide warnings to possible mistakes in your code. You can also check the guidance on [migrating to nullable reference types](../../fundamentals/null-safety/migration-strategies.md) to learn more about enabling nullable reference types in an existing project.
 
 ## Configure nullable context
 
@@ -240,8 +240,8 @@ The nullable context has two independent flags that control different aspects:
 
 For detailed information about nullable contexts and migration strategies, see:
 
-- [Nullable reference types overview](../../nullable-references.md#nullable-context)
-- [Update a codebase with nullable reference types](../../nullable-migration-strategies.md)
+- [Nullable reference types overview](../../fundamentals/null-safety/nullable-reference-types.md#nullable-context)
+- [Update a codebase with nullable reference types](../../fundamentals/null-safety/migration-strategies.md)
 
 ## Incorrect annotation syntax
 

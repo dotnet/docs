@@ -28,7 +28,7 @@ C# 8.0 is also part of this release, which includes the [nullable reference type
 
 Tutorials related to C# 8.0 language features:
 
-- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
+- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/fundamentals/tutorials/nullable-reference-types.md)
 - [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/fundamentals/tutorials/pattern-matching.md)
 

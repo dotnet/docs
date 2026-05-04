@@ -91,7 +91,7 @@ The `surveyQuestions` field is a non-nullable `List<SurveyQuestion>`. Initializi
 
 In `Program.cs`, create a `SurveyRun` and add three questions:
 
-:::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="AddQuestions":::
+:::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="SnippetAddQuestions":::
 
 To see how the compiler enforces non-nullable parameters, try adding the following line and rebuilding:
 
@@ -120,41 +120,41 @@ public class SurveyResponse
 
 Add a static factory method that creates respondents with a random ID:
 
-:::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="Random":::
+:::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetRandom":::
 
 Next, add the method that asks the survey to a respondent. Store the answers in a nullable dictionary so the type itself communicates that the respondent might decline:
 
-:::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="AnswerSurvey":::
+:::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetAnswerSurvey":::
 
 The `surveyResponses` field is `Dictionary<int, string>?`. Anywhere the field is dereferenced without first checking against `null`, the compiler issues a warning. Inside `AnswerSurvey`, the compiler tracks that `surveyResponses` is *not-null* immediately after the `new` expression, so the loop body needs no extra check.
 
 Add a method on `SurveyRun` that builds up a list of respondents until enough consent to participate:
 
-:::code language="csharp" source="snippets/NullableIntroduction/SurveyRun.cs" id="PerformSurvey":::
+:::code language="csharp" source="snippets/NullableIntroduction/SurveyRun.cs" id="SnippetPerformSurvey":::
 
 The `respondents` field is `List<SurveyResponse>?`—it's `null` until the survey runs.
 
 Call `PerformSurvey` from `Main`:
 
-:::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="RunSurvey":::
+:::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="SnippetRunSurvey":::
 
 ## Examine the survey results
 
 To report results, expose a few helpers from `SurveyResponse` and `SurveyRun`. On `SurveyResponse`, add expression-bodied members that handle the nullable dictionary:
 
-:::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SurveyStatus":::
+:::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetSurveyStatus":::
 
 `AnsweredSurvey` checks the field against `null`. `Answer` uses the `?.` operator to dereference safely and the `??` operator to substitute a non-null fallback. The method's return type is non-nullable `string`, so callers don't need null checks.
 
 On `SurveyRun`, add expression-bodied members that expose the list of participants and questions:
 
-:::code language="csharp" source="snippets/NullableIntroduction/SurveyRun.cs" id="RunReport":::
+:::code language="csharp" source="snippets/NullableIntroduction/SurveyRun.cs" id="SnippetRunReport":::
 
 `AllParticipants` returns a non-nullable sequence even though `respondents` might be `null`. The `??` operator substitutes `Enumerable.Empty<SurveyResponse>()` when the field hasn't been populated yet. If you remove the `??` clause, the compiler warns that the method might return `null` despite a non-nullable return type.
 
 Finally, write the report at the bottom of `Main`:
 
-:::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="WriteAnswers":::
+:::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="SnippetWriteAnswers":::
 
 Notice that no null check is needed for `participant`, `surveyRun.Questions`, or `surveyRun.GetQuestion(i)`. The types declare those values as non-nullable, so the compiler treats them as *not-null* throughout the loop.
 

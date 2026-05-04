@@ -50,7 +50,7 @@ To align the VSTest platform's dependencies with the .NET SDK and the broader .N
 In all cases, the fix is to add an explicit `Newtonsoft.Json` package reference to any project that uses it:
 
 ```xml
-<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+<PackageReference Include="Newtonsoft.Json" Version="..." />
 ```
 
 ### Test projects that fail to compile

@@ -103,6 +103,8 @@
 
 ### PR 8 — Null safety: overview, nullable value types, null operators
 
+[#53509](https://github.com/dotnet/docs/pull/53509) *In review*
+
 > ~10 files
 
 1. Create `fundamentals/null-safety/` directory

@@ -31,6 +31,10 @@ Migrating the Android runtime from Mono to CoreCLR requires Android API 24 or la
 
 ## Recommended action
 
+Set `SupportedOSPlatformVersion` to `24` in your project file so your app declares the correct minimum supported Android version to build analyzers and assembly metadata.
+
+If you set `android:minSdkVersion` manually in your Android manifest, raise that value to `24` too so it matches the project setting.
+
 Notify users on devices that run Android 5.x or 6.x that they won't be able to install new updates of your app.
 
 ## Affected APIs

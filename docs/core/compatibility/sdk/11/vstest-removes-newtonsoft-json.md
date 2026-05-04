@@ -83,7 +83,7 @@ The following `Newtonsoft.Json`-based APIs were removed from `Microsoft.VisualSt
 - `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.DefaultTestPlatformContractResolver`
 - `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.TestCaseConverter`
 - `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.TestObjectConverter`
-- `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.TestPlatformContractResolver1`
+- `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.TestPlatformContractResolver<T>`
 - `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.TestResultConverter`
 - `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization.TestRunStatisticsConverter`
 - `Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.VersionedMessage`

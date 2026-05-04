@@ -58,6 +58,8 @@ items:
             items:
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
+              - name: VSTest removes dependency on Newtonsoft.Json
+                href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10
         items:
           - name: Overview

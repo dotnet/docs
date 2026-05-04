@@ -62,6 +62,6 @@ Also be aware of the in-process ratcheting behavior: if any `NamedPipeServerStre
 
 ## Affected APIs
 
-- <xref:System.IO.Pipes.NamedPipeServerStream.%23ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions)?displayProperty=fullName>
-- <xref:System.IO.Pipes.NamedPipeServerStream.%23ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32)?displayProperty=fullName>
-- <xref:System.IO.Pipes.NamedPipeServerStream.%23ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32,System.IO.Pipes.PipeSecurity)?displayProperty=fullName>
+- <xref:System.IO.Pipes.NamedPipeServerStream.%23ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions)>
+- <xref:System.IO.Pipes.NamedPipeServerStream.%23ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32)>
+- <xref:System.IO.Pipes.NamedPipeServerStream.%23ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32,System.IO.Pipes.PipeSecurity)>

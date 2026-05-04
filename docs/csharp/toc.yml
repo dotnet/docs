@@ -212,8 +212,6 @@ items:
     href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
-  - name: Work with nullable reference types
-    href: tutorials/nullable-reference-types.md
   - name: Explore patterns in objects
     href: tutorials/patterns-objects.md
   - name: String interpolation
@@ -298,12 +296,18 @@ items:
     href: asynchronous-programming/cancel-async-tasks-after-a-period-of-time.md
   - name: Generate and consume asynchronous streams
     href: asynchronous-programming/generate-consume-asynchronous-stream.md
-- name: C# concepts
+- name: Null safety
   items:
   - name: Nullable reference types
-    href: nullable-references.md
-  - name: Nullable reference migrations
-    href: nullable-migration-strategies.md
+    href: fundamentals/null-safety/nullable-reference-types.md
+  - name: Resolve nullable warnings
+    href: fundamentals/null-safety/resolve-warnings.md
+  - name: Nullable migration strategies
+    href: fundamentals/null-safety/migration-strategies.md
+  - name: "Tutorial: Express your design intent with nullable reference types"
+    href: fundamentals/tutorials/nullable-reference-types.md
+- name: C# concepts
+  items:
   - name: Methods
     href: methods.md
   - name: Iterators

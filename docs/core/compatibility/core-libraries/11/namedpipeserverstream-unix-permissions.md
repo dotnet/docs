@@ -15,7 +15,7 @@ To better align on-disk permissions with the documented intent of <xref:System.I
 
 ## Previous behavior
 
-Previously, the socket file backing a <xref:System.IO.Pipes.NamedPipeServerStream> was created with whatever permissions the process umask allowed (commonly `0644` or `0755`). Specifying <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> didn't change the on-disk file mode. Other local users could `stat` and attempt to connect to the socket file. Cross-user connection attempts were rejected at connect time by peer-credential checks, but the socket file itself was world-visible and connectable at the operating system level.
+Previously, the socket file backing a <xref:System.IO.Pipes.NamedPipeServerStream> was created with whatever permissions the process umask allowed (commonly `0644` or `0755`). Specifying <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> didn't change the on-disk file mode. Other local users could `stat` and might be able to attempt a connection to the socket file, depending on the platform and effective permissions. Cross-user connection attempts were rejected at connect time by peer-credential checks, but the socket file itself could still be visible to other users and, on some Unix systems, might also be connectable at the operating system level.
 
 ```csharp
 using var server = new NamedPipeServerStream(
@@ -50,15 +50,19 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-<xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> is documented as restricting access to the current user. On Unix, however, the socket file was created with permissions derived from the process umask, so enforcement relied solely on peer-credential checks at connect time. This left the socket file discoverable and connectable by other local users, and made Unix behavior inconsistent with the option's documented intent and with the Windows implementation. For more information, see [dotnet/runtime#127239](https://github.com/dotnet/runtime/pull/127239).
+<xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> is documented as restricting access to the current user. On Unix, however, the socket file was created with permissions derived from the process umask, so enforcement relied on peer-credential checks at connect time. This left the socket file discoverable by other local users, and on platforms that honor socket-node permission bits for `connect()`, it might also allow other users to attempt or make a connection before peer-credential checks rejected cross-user access. That behavior made Unix behavior inconsistent with the option's documented intent and with the Windows implementation. For more information, see [dotnet/runtime#127239](https://github.com/dotnet/runtime/pull/127239).
 
 ## Recommended action
 
 Most callers benefit from the tighter permissions and require no action.
 
-To allow the server to be reachable by local users other than the owner—for example, a helper process that runs under a different account or external tooling that probes the socket—stop passing <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> when other-user access is required.
+On Linux and macOS, <xref:System.IO.Pipes.NamedPipeServerStream> uses Unix domain sockets. If you rely on that socket file being visible or connectable to local users other than the owner, update your guidance and your app assumptions to reflect that <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> now sets the socket file mode to `0600` at bind time.
 
-Also be aware of the in-process ratcheting behavior: if any `NamedPipeServerStream` for a given pipe name in the process specifies `CurrentUserOnly`, all subsequent instances for that pipe name will see `0600` permissions on the socket file until the shared server entry is released.
+Removing <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> doesn't guarantee cross-user access by itself. When you omit that option, the socket file still inherits permissions from the process umask, and other users also need enough access to the directory that contains the socket path. If you intend to allow cross-user access, verify the effective socket file mode and the directory permissions on the target system.
+
+To let the server accept connections from other local users—for example, from a helper process that runs under a different account, or from external tooling that probes the socket—stop passing <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType>.
+
+Also account for the in-process ratcheting behavior. If any `NamedPipeServerStream` instance for a given pipe name in the process specifies `CurrentUserOnly`, all later instances for that pipe name keep `0600` permissions on the socket file until the shared server entry is released.
 
 ## Affected APIs
 

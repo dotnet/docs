@@ -424,13 +424,13 @@
 | Resource Management - Workloadssapvirtualinstance | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadsSapVirtualInstance/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.WorkloadsSapVirtualInstance-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadsSapVirtualInstance_1.0.0/sdk/workloadssapvirtualinstance/Azure.ResourceManager.WorkloadsSapVirtualInstance/) |
 | App Configuration Extension | NuGet [8.5.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.5.0)<br>NuGet [8.6.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.6.0-preview) |  |  |
 | App Configuration Provider | NuGet [8.5.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.5.0)<br>NuGet [8.6.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.6.0-preview) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp/3.0.0-beta.6) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/3.0.0-beta.6) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.linux-x64/3.0.0-beta.6) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/3.0.0-beta.6) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.osx-x64/3.0.0-beta.6) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.win-arm64/3.0.0-beta.6) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [3.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.win-x64/3.0.0-beta.6) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp/3.0.0-beta.7) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/3.0.0-beta.7) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.linux-x64/3.0.0-beta.7) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/3.0.0-beta.7) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.osx-x64/3.0.0-beta.7) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.win-arm64/3.0.0-beta.7) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [3.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.win-x64/3.0.0-beta.7) |  |  |
 | Azure MCP Types Internal | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Caching - PostgreSQL | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.2) |  |  |
@@ -483,7 +483,7 @@
 | Speech Extension Telemetry | NuGet [1.49.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.49.1) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.ProtocolCompiler/1.0.0) |  |  |
-| Unknown Display Name | NuGet [0.7.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sdk/0.7.0-preview.1) |  |  |
+| Unknown Display Name | NuGet [0.8.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sdk/0.8.0-preview.1) |  |  |
 | Unknown Display Name | NuGet [0.1.0-ci.26217.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Connector/0.1.0-ci.26217.6) |  |  |
 | WebJobs Extension Cosmos DB Mongo | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.2)<br>NuGet [1.2.3-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.3-preview) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |

@@ -1,6 +1,7 @@
 ---
-title: Resolve errors related to constructor declarations
-description: These compiler errors and warnings indicate violations when declaring constructors in classes or structs, including records. This article provides guidance on resolving those errors.
+title: Resolve errors related to constructor declarations and module initializers
+description: These compiler errors and warnings indicate violations in constructor declarations in classes and structs, record constructor scenarios, and module initializer declarations. This article provides guidance on resolving those errors.
+ai-usage: ai-assisted
 f1_keywords:
  - "CS0132"
  - "CS0514"
@@ -18,11 +19,18 @@ f1_keywords:
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
  - "CS8091" # ERR_ExternHasConstructorInitializer
  - "CS8358" # ERR_AttributeCtorInParameter
+ - "CS8813" # ERR_ModuleInitializerMethodMustBeOrdinary
+ - "CS8814" # ERR_ModuleInitializerMethodMustBeAccessibleOutsideTopLevelType
+ - "CS8815" # ERR_ModuleInitializerMethodMustBeStaticParameterlessVoid
+ - "CS8816" # ERR_ModuleInitializerMethodAndContainingTypesMustNotBeGeneric
  - "CS8861"
  - "CS8862" # ERR_UnexpectedOrMissingConstructorInitializerInRecord
  - "CS8867" # ERR_NoCopyConstructorInBaseType
  - "CS8868" # ERR_CopyConstructorMustInvokeBaseCopyConstructor 
  - "CS8878" # ERR_CopyConstructorWrongAccessibility
+ - "CS8900" # ERR_ModuleInitializerCannotBeUnmanagedCallersOnly
+ - "CS8901" # ERR_UnmanagedCallersOnlyMethodsCannotBeCalledDirectly
+ - "CS8902" # ERR_UnmanagedCallersOnlyMethodsCannotBeConvertedToDelegate
  - "CS8910" # ERR_RecordAmbigCtor
  - "CS8958" # ERR_NonPublicParameterlessStructConstructor
  - "CS8982" # ERR_RecordStructConstructorCallsDefaultConstructor
@@ -70,11 +78,18 @@ helpviewer_keywords:
  - "CS8054"
  - "CS8091"
  - "CS8358"
+ - "CS8813"
+ - "CS8814"
+ - "CS8815"
+ - "CS8816"
  - "CS8861"
  - "CS8862"
  - "CS8867"
  - "CS8868"
  - "CS8878"
+ - "CS8900"
+ - "CS8901"
+ - "CS8902"
  - "CS8910"
  - "CS8958"
  - "CS8982"
@@ -105,9 +120,9 @@ helpviewer_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
-ms.date: 01/28/2026
+ms.date: 05/01/2026
 ---
-# Resolve errors and warnings in constructor declarations
+# Resolve errors and warnings for constructor declarations and module initializers
 
 This article covers the following compiler errors:
 
@@ -117,10 +132,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0132**](#static-constructors): *'constructor': a static constructor must be parameterless.*
 - [**CS0514**](#static-constructors): *static constructor cannot have an explicit 'this' or 'base' constructor call.*
 - [**CS0515**](#static-constructors): *access modifiers are not allowed on static constructors.*
-- [**CS0516**](#constructor-calls-with-base-and-this): *Constructor 'constructor' can not call itself.*
+- [**CS0516**](#constructor-calls-with-base-and-this): *Constructor 'constructor' cannot call itself.*
 - [**CS0517**](#constructor-calls-with-base-and-this): *'class' has no base class and cannot call a base constructor.*
 - [**CS0522**](#constructor-calls-with-base-and-this): *structs cannot call base class constructors.*
-- [**CS0526**](#constructor-declaration): *Interfaces cannot contain constructors.*
+- [**CS0526**](#constructor-declaration): *Interfaces cannot contain instance constructors.*
 - [**CS0568**](#constructors-in-struct-types): *Structs cannot contain explicit parameterless constructors.*
 - [**CS0573**](#constructors-in-struct-types): *'field declaration': cannot have instance field initializers in structs.*
 - [**CS0710**](#constructor-declaration): *Static classes cannot have instance constructors.*
@@ -128,12 +143,19 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1018**](#constructor-calls-with-base-and-this): *Keyword 'this' or 'base' expected.*
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
+- [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
+- [**CS8813**](#module-initializer-declarations): *A module initializer must be an ordinary member method*
+- [**CS8814**](#module-initializer-declarations): *Module initializer method 'method' must be accessible at the module level*
+- [**CS8815**](#module-initializer-declarations): *Module initializer method 'method' must be static, and non-virtual, must have no parameters, and must return 'void'*
+- [**CS8816**](#module-initializer-declarations): *Module initializer method 'method' must not be generic and must not be contained in a generic type*
 - [**CS8861**](#primary-constructor-declaration): *Unexpected argument list.*
 - [**CS8862**](#primary-constructor-declaration): *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
-- [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' parameters.*
 - [**CS8867**](#records-and-copy-constructors): *No accessible copy constructor found in base type '{0}'.*
 - [**CS8868**](#records-and-copy-constructors): *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
 - [**CS8878**](#records-and-copy-constructors): *A copy constructor '{0}' must be public or protected because the record is not sealed.*
+- [**CS8900**](#module-initializer-declarations): *Module initializer cannot be attributed with 'UnmanagedCallersOnly'.*
+- [**CS8901**](#module-initializer-declarations): *'method' is attributed with 'UnmanagedCallersOnly' and cannot be called directly. Obtain a function pointer to this method.*
+- [**CS8902**](#module-initializer-declarations): *'method' is attributed with 'UnmanagedCallersOnly' and cannot be converted to a delegate type. Obtain a function pointer to this method.*
 - [**CS8910**](#records-and-copy-constructors): *The primary constructor conflicts with the synthesized copy constructor.*
 - [**CS8958**](#constructors-in-struct-types): *The parameterless struct constructor must be 'public'.*
 - [**CS8982**](#constructors-in-struct-types): *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
@@ -165,7 +187,7 @@ In addition, the following warnings are covered in this article:
 - [**CS9179**](#primary-constructor-declaration): *Primary constructor parameter is shadowed by a member from base*
 - [**CS9018**](#constructors-in-struct-types): *Auto-implemented property is read before being explicitly assigned, causing a preceding implicit assignment of 'default'.*
 - [**CS9019**](#constructors-in-struct-types): *Field is read before being explicitly assigned, causing a preceding implicit assignment of 'default'.*
-- [**CS9020**](#constructors-in-struct-types): *The 'this' object is read before all of its fields have been assigned, causing preceding implicit assignments of 'default' to non-explicitly assigned fields.*
+- [**CS9020**](#constructors-in-struct-types): *The 'this' object is read before all of its fields are assigned, causing preceding implicit assignments of 'default' to non-explicitly assigned fields.*
 - [**CS9021**](#constructors-in-struct-types): *Control is returned to caller before auto-implemented property is explicitly assigned, causing a preceding implicit assignment of 'default'.*
 - [**CS9022**](#constructors-in-struct-types): *Control is returned to caller before field is explicitly assigned, causing a preceding implicit assignment of 'default'.*
 
@@ -185,23 +207,20 @@ To correct these errors, ensure your static constructor declaration follows thes
 
 ## Constructor declaration
 
-- **CS0526**: *Interfaces cannot contain constructors.*
+- **CS0526**: *Interfaces cannot contain instance constructors.*
 - **CS0710**: *Static classes cannot have instance constructors.*
 - **CS8054**: *Enums cannot contain explicit parameterless constructors.*
-- **CS8358**: *Cannot use attribute constructor because it has 'in' parameters.*
+- **CS8358**: *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
 - **CS8091**: *A constructor cannot be extern and have a constructor initializer.*
 
 You can declare constructors only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
 To fix these errors, try the following suggestions:
 
-Move the constructor to a `class` or `struct` type, because you can't declare constructors in `interface` or `enum` types (**CS0526**, **CS8054**). Interfaces define contracts but don't provide initialization logic, and enum types have their values defined at compile time.
-
-Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
-
-Change `in` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` modifier.
-
-Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
+- Move the constructor to a `class` or `struct` type, because you can't declare constructors in `interface` or `enum` types (**CS0526**, **CS8054**). Interfaces define contracts but don't provide initialization logic, and enum types have their values defined at compile time.
+- Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
+- Change `in` or `ref readonly` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` or `ref readonly` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` or `ref readonly` modifier.
+- Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
 
 The following warning can be generated for constructor declarations:
 
@@ -238,7 +257,7 @@ To silence these warnings, explicitly assign all fields and auto-implemented pro
 
 ## Constructor calls with `base` and `this`
 
-- **CS0516**: *Constructor can not call itself.*
+- **CS0516**: *Constructor cannot call itself.*
 - **CS0517**: *'class' has no base class and cannot call a base constructor.*
 - **CS0522**: *Structs cannot call base class constructors.*
 - **CS0768**: *Constructor cannot call itself through another constructor.*
@@ -268,6 +287,30 @@ In a derived record type, your explicit copy constructor must call the base type
 - Copy constructors must be `public` or `protected` unless the record type is [`sealed`](../keywords/sealed.md). Add the appropriate access modifier to the copy constructor (**CS8878**).
 - If your explicit copy constructor has the same signature as the synthesized copy constructor, the definitions conflict. Remove your explicit copy constructor or modify its signature (**CS8910**).
 
+## Module initializer declarations
+
+- **CS8813**: *A module initializer must be an ordinary member method.*
+- **CS8814**: *Module initializer method 'method' must be accessible at the module level.*
+- **CS8815**: *Module initializer method 'method' must be static, and non-virtual, must have no parameters, and must return 'void'.*
+- **CS8816**: *Module initializer method 'method' must not be generic and must not be contained in a generic type.*
+- **CS8900**: *Module initializer cannot be attributed with 'UnmanagedCallersOnly'.*
+- **CS8901**: *'method' is attributed with 'UnmanagedCallersOnly' and cannot be called directly. Obtain a function pointer to this method.*
+- **CS8902**: *'method' is attributed with 'UnmanagedCallersOnly' and cannot be converted to a delegate type. Obtain a function pointer to this method.*
+
+These errors enforce the requirements for methods marked with <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>. Module initializers run automatically when an assembly is first loaded, before any other code in the module executes. For the full rules, see [Module initializers](../attributes/general.md#moduleinitializer-attribute).
+
+To correct these errors, apply one of the following changes based on the specific diagnostic:
+
+- Ensure the method marked with `[ModuleInitializer]` is an ordinary method, not a property accessor, event accessor, local function, lambda, constructor, destructor, or operator (**CS8813**). The compiler can only treat an ordinary method declaration as a valid target for module initializer infrastructure.
+- Make the module initializer method and all its containing types `internal` or `public` so the method is accessible outside the top-level type (**CS8814**). The runtime needs to call the method from generated module-level code, which requires accessibility at the module level.
+- Declare the module initializer method as `static`, non-virtual, with no parameters, and with a `void` return type (**CS8815**). The runtime calls module initializers without any arguments and discards the result, so the method signature must match these constraints exactly.
+- Remove generic type parameters from the module initializer method and move the method out of any generic containing type (**CS8816**). The runtime can't determine which type arguments to supply when invoking the initializer, so generic methods and methods in generic types aren't permitted.
+- Remove the <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> from the module initializer method (**CS8900**). Module initializers are called by managed runtime infrastructure, so they can't be restricted to unmanaged callers only.
+- Obtain a function pointer instead of calling a method marked with `[UnmanagedCallersOnly]` directly (**CS8901**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be called from managed code. Use the `&` operator to get a function pointer (`delegate* unmanaged<...>`) in an `unsafe` context, and pass the pointer to unmanaged code. If your project doesn't already allow unsafe code, enable `AllowUnsafeBlocks`.
+- Obtain a function pointer instead of converting a method marked with `[UnmanagedCallersOnly]` to a delegate type (**CS8902**). Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> can't be represented as managed delegates because the calling convention is incompatible. Use function pointers (`delegate* unmanaged<...>`) in an `unsafe` context instead. If your project doesn't already allow unsafe code, enable `AllowUnsafeBlocks`.
+
+For more information, see <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> and <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute>.
+
 ## Primary constructor declaration
 
 [Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) declare parameters directly in the type declaration. The compiler synthesizes a field to store a primary constructor parameter when you use it in members or field initializers.
@@ -278,18 +321,25 @@ In a derived record type, your explicit copy constructor must call the base type
 - **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9122**: *Unexpected parameter list.*
 
-When a type has a primary constructor, all other explicitly declared constructors must chain to it by using `: this(...)`. Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor (**CS8862**).
+When a type has a primary constructor, all other explicitly declared constructors must chain to it by using `: this(...)`.
 
-Remove a parameter list from the base type reference when the base type doesn't have a primary constructor. The syntax `class Derived : Base(args)` is only valid when `Base` has a primary constructor (**CS8861**). Similarly, remove a primary constructor parameter list from an `interface` declaration, because interfaces can't have primary constructors (**CS9122**).
+To fix these errors, try the following suggestions:
+
+- Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor, because all explicitly declared constructors must chain to the primary constructor (**CS8862**).
+- Remove a parameter list from the base type reference when the base type doesn't have a primary constructor, because the syntax `class Derived : Base(args)` is only valid when `Base` has a primary constructor (**CS8861**).
+- Remove a primary constructor parameter list from an `interface` declaration, because interfaces can't have primary constructors (**CS9122**).
 
 ### Parameter usage in base constructor calls
 
 - **CS9105**: *Cannot use primary constructor parameter in this context.*
 - **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
 
-You can only use primary constructor parameters in the base constructor call if you pass them as part of the primary constructor declaration. To fix **CS9105**, move the parameter usage to the type declaration's base clause instead of using it in an explicitly declared constructor's `: base()` call.
+You can only use primary constructor parameters in the base constructor call if you pass them as part of the primary constructor declaration.
 
-If a type and a primary constructor parameter share the same name, the reference becomes ambiguous. To fix **CS9106**, rename either the type or the parameter.
+To fix these errors, try the following suggestions:
+
+- Move the parameter usage to the type declaration's base clause instead of using it in an explicitly declared constructor's `: base()` call, because primary constructor parameters can only appear in the base clause of the type declaration (**CS9105**).
+- Rename either the type or the parameter when a type and a primary constructor parameter share the same name, because the reference becomes ambiguous (**CS9106**).
 
 ### Ref-like type parameters
 

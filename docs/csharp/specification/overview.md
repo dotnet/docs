@@ -7,7 +7,7 @@ ms.date: 04/10/2026
 
 The [C# language specification](~/_csharpstandard/standard/README.md) is the definitive source for the C# language. The [ECMA C# standard committee (TC49-TG2)](https://www.ecma-international.org/task-groups/tc49-tg2/) produces the specification. The committee is currently finalizing version 8 of the standard.
 
-The draft published here is a feature complete early draft of C# 9 based on the committee's initial work. The committee uses [Microsoft specifications](https://github.com/dotnet/csharplang/tree/main/proposals) and [language design meeting (LDM) notes](https://github.com/dotnet/csharplang/tree/main/meetings) to produce the specification. These early drafts haven't been reviewed or adopted by the committee yet.
+The draft published here is a feature complete early draft of C# 10 based on the committee's initial work. The committee uses [Microsoft specifications](https://github.com/dotnet/csharplang/tree/main/proposals) and [language design meeting (LDM) notes](https://github.com/dotnet/csharplang/tree/main/meetings) to produce the specification. These early drafts haven't been reviewed or adopted by the committee yet.
 
 This section contains a working draft of the [C# language specification](~/_csharpstandard/standard/README.md). The committee works in the [dotnet/csharpstandard](https://github.com/dotnet/csharpstandard) repository. You can track the committee's progress and participate in the standard work there.
 

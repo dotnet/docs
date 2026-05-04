@@ -273,7 +273,7 @@ The following example shows both mechanisms:
 - **CS0820**: *Cannot assign array initializer to an implicitly typed local*
 - **CS0826**: *No best type found for implicitly typed array*
 
-To use arrays with correct element types, follow these type restrictions. For more information, see [Implicitly typed local variables](../statements/declarations.md#implicitly-typed-local-variables) and [best common type](~/_csharpstandard/standard/expressions.md#126316-finding-the-best-common-type-of-a-set-of-expressions).
+To use arrays with correct element types, follow these type restrictions. For more information, see [Implicitly typed local variables](../statements/declarations.md#implicitly-typed-local-variables) and [best common type](~/_csharpstandard/standard/expressions.md#126317-finding-the-best-common-type-of-a-set-of-expressions).
 
 - Don't use restricted types like <xref:System.TypedReference?displayProperty=fullName> and <xref:System.ArgIterator?displayProperty=fullName> as array element types (**CS0611**).
 - Don't use `static` classes as array element types because instances can't be created (**CS0719**).

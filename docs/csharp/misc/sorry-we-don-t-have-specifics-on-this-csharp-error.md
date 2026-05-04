@@ -296,10 +296,6 @@ f1_keywords:
   - "CS8783" # local function
   - "CS8784" # source generator
   - "CS8785"
-  - "CS8813" # module initializers
-  - "CS8814"
-  - "CS8815"
-  - "CS8816"
   - "CS8822" # nullable / constraints
   - "CS8823"
   - "CS8830" # feature / version
@@ -317,9 +313,6 @@ f1_keywords:
   - "CS8894"
   - "CS8895"
   - "CS8896"
-  - "CS8900" # module initializer
-  - "CS8901"
-  - "CS8902"
   - "CS8906" # record
 # Coming in C# 15
   - "CS9343" # misc

@@ -61,7 +61,7 @@ When you implement a custom [interpolated string handler](../../advanced-topics/
 
 - Make sure all `AppendLiteral` and `AppendFormatted` methods return either `void` or `bool` (**CS8941**). The handler pattern requires these methods to have one of these return types so the compiler can properly generate the interpolation code. Methods returning `bool` enable short-circuiting when the handler determines that further processing isn't needed.
 - Make sure all append methods in your handler type use the same return type (**CS8942**). If one method returns `void`, all append methods must return `void`. If one returns `bool`, all must return `bool`. Mixing return types prevents the compiler from generating consistent interpolation code.
-- Apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute> to your handler type and make sure it has a valid constructor (**CS8946**). An interpolated string handler type must be marked with this attribute and follow the [handler pattern](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern) to be recognized by the compiler.
+- Apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute> to your handler type and make sure it has a valid constructor (**CS8946**). An interpolated string handler type must be marked with this attribute and follow the [handler pattern](~/_csharpstandard/standard/attributes.md#23591-custom-interpolated-string-expression-handlers) to be recognized by the compiler.
 
 ## Interpolated string handler usage restrictions
 

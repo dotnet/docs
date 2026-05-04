@@ -22,7 +22,7 @@ using var server = new NamedPipeServerStream(
     "mypipe", PipeDirection.InOut, 1,
     PipeTransmissionMode.Byte, PipeOptions.CurrentUserOnly);
 
-// Mode reflected the process umask, for example UserRead | UserWrite | GroupRead | OtherRead
+// Mode reflected the process umask, for example UserRead | UserWrite | GroupRead | OtherRead.
 UnixFileMode mode = File.GetUnixFileMode("/tmp/CoreFxPipe_mypipe");
 ```
 
@@ -35,11 +35,11 @@ using var server = new NamedPipeServerStream(
     "mypipe", PipeDirection.InOut, 1,
     PipeTransmissionMode.Byte, PipeOptions.CurrentUserOnly);
 
-// Always UserRead | UserWrite (0600)
+// Always UserRead | UserWrite (0600).
 UnixFileMode mode = File.GetUnixFileMode("/tmp/CoreFxPipe_mypipe");
 ```
 
-For the in-process shared server cache—where multiple `NamedPipeServerStream` instances use the same pipe name—the permission change is one-way (ratcheted):
+For the in-process shared server cache, where multiple `NamedPipeServerStream` instances use the same pipe name, the permission change is one-way (ratcheted):
 
 - If a `CurrentUserOnly` instance is created for a given pipe name, the socket file is tightened to `0600` at that point and stays `0600` for the remainder of that path's shared lifetime.
 - A later instance for the same pipe name that doesn't specify `CurrentUserOnly` doesn't loosen the mode back.

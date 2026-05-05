@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Microsoft.Extensions.* packages included in shared framework
 
-Starting in .NET 11, nine `Microsoft.Extensions.*` libraries are included in the .NET base shared framework. Projects that explicitly reference these packages receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510). You can resolve the warning by removing the `PackageReference`. If you depend on an older version of these packages, upgrading to the .NET 11 version might expose previously undocumented breaking changes introduced between older versions and .NET 11.
+To reduce application size, simplify package dependencies, and streamline servicing, .NET 11 includes nine `Microsoft.Extensions.*` libraries in the base shared framework. Projects that explicitly reference these packages receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510). You can resolve the warning by removing the `PackageReference`. If you depend on an older version of these packages, upgrading to the .NET 11 version might expose previously undocumented breaking changes introduced between older versions and .NET 11.
 
 ## Version introduced
 
@@ -15,7 +15,7 @@ Starting in .NET 11, nine `Microsoft.Extensions.*` libraries are included in the
 
 ## Previous behavior
 
-Previously, the following `Microsoft.Extensions.*` libraries weren't part of the .NET base shared framework. Projects that needed them required explicit `PackageReference` entries, and the assemblies were copied to the output folder:
+Previously, the following `Microsoft.Extensions.*` libraries weren't part of the .NET base shared framework. Projects that needed them required explicit `PackageReference` entries, and the build process copied the assemblies to the output folder:
 
 - `Microsoft.Extensions.Caching.Abstractions`
 - `Microsoft.Extensions.Configuration.Abstractions`
@@ -48,7 +48,7 @@ Including these commonly used libraries in the shared framework reduces applicat
 
 ## Recommended action
 
-**Remove the PackageReference for any affected package:**
+**Remove the `PackageReference` for any affected package:**
 
 ```xml
 <!-- Remove entries like these from your .csproj: -->
@@ -68,7 +68,7 @@ If you encounter a compile error because a name in your code conflicts with one 
 
 **If you depend on an older version of these packages:**
 
-Binaries compiled against very old versions of these packages might fail at runtime with `MissingMethodException` or `TypeLoadException`. To resolve the issue, update the package references in your project to the current version and recompile.
+To avoid runtime failures like `MissingMethodException` or `TypeLoadException`, update binaries compiled against very old versions of these packages by updating the package references in your project to the current version and recompiling.
 
 The following breaking changes from previous versions might surface when upgrading to the .NET 11 versions of these packages:
 

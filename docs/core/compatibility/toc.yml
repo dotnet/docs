@@ -224,6 +224,8 @@ items:
                 href: sdk/10.0/prune-packagereference-privateassets.md
               - name: "'ToolCommandName' not set for non-tool packages"
                 href: sdk/10.0/toolcommandname-not-set.md
+              - name: "`dotnet nuget verify` outputs CRL and OCSP URLs"
+                href: sdk/10.0/dotnet-nuget-verify-crl-ocsp-urls.md
           - name: Serialization
             items:
               - name: System.Text.Json checks for property name conflicts

@@ -39,6 +39,8 @@ The coffee shop needs a method that returns both the total number of orders and 
 
 `GetDailySummary` returns an `(int TotalOrders, decimal Revenue)` **tuple**. The caller accesses each element by name or deconstructs both into local variables. You don't need a class or struct definition.
 
+### Why a tuple works best in this example
+
 A tuple works here because the grouping is local: one method produces it, and one caller consumes it. Named elements make the intent clear without the ceremony of a full type. If you find yourself passing the same tuple shape across multiple methods, that's a signal to promote it to a record or class. You'll see that evolution [later in this tutorial](#tuple--record-the-grouping-keeps-showing-up). For more detail on tuple syntax and capabilities, see [Tuple types](../types/tuples.md).
 
 ## Use a record for immutable data
@@ -83,7 +85,7 @@ When a customer walks up to the counter, the barista starts an order and adds it
 
 The `Order` class tracks items, computes a running total, and exposes a settable `Status`. A **class** is the right tool here because the object carries mutable state that changes over its lifetime, behavior (methods) is central to the type's purpose, and identity matters—two orders with the same items are still distinct orders. For more detail, see [Classes, structs, and records](../types/classes.md).
 
-## Extend a class with inheritance
+## Use inheritance when you need a specialized class
 
 The coffee shop starts catering events. A catering order is still an order—it has items and a total—but it also tracks a guest count and requires manager approval before the kitchen marks it ready. Rather than duplicating `Order`'s logic, derive a specialized class.
 
@@ -123,7 +125,7 @@ The `GetDailySummary` tuple works fine inside one method, but once you start pas
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="DailySummary":::
 
-Callers that previously destructured the tuple now get `ToString()` for free, value equality, and a natural place for derived data like `AverageTicket`:
+Callers that previously deconstructed the tuple now get `ToString()` for free, value equality, and a natural place for derived data like `AverageTicket`:
 
 :::code language="csharp" source="./snippets/choosing-types/Program.cs" id="EvolveTupleToRecord":::
 

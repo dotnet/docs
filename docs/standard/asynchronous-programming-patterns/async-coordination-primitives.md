@@ -20,14 +20,14 @@ helpviewer_keywords:
 
 Synchronous coordination primitives like <xref:System.Threading.ManualResetEventSlim>, <xref:System.Threading.CountdownEvent>, and <xref:System.Threading.Barrier> block the calling thread while waiting. In async code, blocking a thread wastes a resource that could be doing other work. Use <xref:System.Threading.Tasks.TaskCompletionSource> to build async equivalents that let callers `await` instead of blocking.
 
-A `TaskCompletionSource` produces a <xref:System.Threading.Tasks.Task> that you complete manually by calling <xref:System.Threading.Tasks.TaskCompletionSource.SetResult%2A>, <xref:System.Threading.Tasks.TaskCompletionSource.SetException%2A>, or <xref:System.Threading.Tasks.TaskCompletionSource.SetCanceled%2A>. Code that awaits that task suspends without blocking a thread, and resumes when you complete the source. This pattern forms the building block for every primitive in this article.
+A `TaskCompletionSource` produces a <xref:System.Threading.Tasks.Task> that you complete manually by calling <xref:System.Threading.Tasks.TaskCompletionSource.SetResult>, <xref:System.Threading.Tasks.TaskCompletionSource.SetException*>, or <xref:System.Threading.Tasks.TaskCompletionSource.SetCanceled*>. Code that awaits that task suspends without blocking a thread and resumes when you complete the source. This pattern forms the building block for every primitive in this article.
 
 > [!NOTE]
 > The primitives in this article are educational implementations. For production throttling and mutual exclusion, use the built-in types covered in [Async semaphores, locks, and reader/writer coordination](async-coordination-primitives-advanced.md). Always complete every `TaskCompletionSource` you create; see [Complete your tasks](complete-your-tasks.md) for guidance.
 
 ## Async manual-reset event
 
-A manual-reset event starts in a non-signaled state. Callers wait for the event, and all waiters resume when another party signals (sets) the event. The event stays signaled until you explicitly reset it. The synchronous equivalent is <xref:System.Threading.ManualResetEventSlim>. The .NET runtime provides <xref:System.Threading.Tasks.TaskCompletionSource%601> directly for one-shot broadcast signaling—create a new instance each cycle rather than building a reset wrapper around it.
+A manual-reset event starts in a non-signaled state. Callers wait for the event, and all waiters resume when another party signals (sets) the event. The event stays signaled until you explicitly reset it. The synchronous equivalent is <xref:System.Threading.ManualResetEventSlim>. The .NET runtime provides <xref:System.Threading.Tasks.TaskCompletionSource`1> directly for one-shot broadcast signaling. Create a new instance each cycle rather than building a reset wrapper around it.
 
 `TaskCompletionSource` is itself a one-shot manual-reset event: its `Task` is incomplete until you call a `Set*` method, and then all awaiters resume. Add a `Reset` method that swaps in a new `TaskCompletionSource`, and you have a reusable async manual-reset event.
 
@@ -37,7 +37,7 @@ A manual-reset event starts in a non-signaled state. Callers wait for the event,
 Key implementation details:
 
 - The constructor passes <xref:System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously?displayProperty=nameWithType> to prevent `Set` from running waiter continuations synchronously on the calling thread. Without this flag, `Set` could block for an unpredictable amount of time.
-- `Reset` uses <xref:System.Threading.Interlocked.CompareExchange%2A> to swap in a new `TaskCompletionSource` only when the current one is already completed. This atomic swap prevents orphaning a task that a waiter already received.
+- `Reset` uses <xref:System.Threading.Interlocked.CompareExchange*> to swap in a new `TaskCompletionSource` only when the current one is already completed. This atomic swap prevents orphaning a task that a waiter already received.
 
 The following example shows how two tasks coordinate through the event:
 
@@ -55,7 +55,7 @@ Because each signal releases only one waiter, you need a collection of `TaskComp
 
 Key implementation details:
 
-- The `Set` method completes the `TaskCompletionSource` *outside* the lock. Completing a TCS inside the lock runs synchronous continuations while the lock is held, which could cause deadlocks or unexpected reentrancy.
+- The `Set` method completes the `TaskCompletionSource` (TCS) *outside* the lock. Completing a TCS inside the lock runs synchronous continuations while the lock is held, which could cause deadlocks or unexpected reentrancy.
 - When `Set` is called and no waiter is queued, the signal is stored so the next `WaitAsync` call completes immediately.
 
 The following example shows a producer signaling a consumer through the event:
@@ -65,14 +65,14 @@ The following example shows a producer signaling a consumer through the event:
 
 ## Async countdown event
 
-A countdown event waits for a specified number of signals before it allows waiters to proceed. This pattern is useful for fork/join scenarios where you start N operations and want to await all N completions. The synchronous equivalent is <xref:System.Threading.CountdownEvent>. The .NET runtime provides <xref:System.Threading.Tasks.Task.WhenAll%2A> for fork/join coordination with a fixed set of tasks. Use it instead.
+A countdown event waits for a specified number of signals before it allows waiters to proceed. This pattern is useful for fork/join scenarios where you start N operations and want to await all N completions. The synchronous equivalent is <xref:System.Threading.CountdownEvent>. The .NET runtime provides <xref:System.Threading.Tasks.Task.WhenAll*> for fork/join coordination with a fixed set of tasks. Use it instead.
 
 Build the async version by composing the `AsyncManualResetEvent` from the previous section with an atomic counter:
 
 :::code language="csharp" source="./snippets/async-coordination-primitives/csharp/Program.cs" id="AsyncCountdownEvent":::
 :::code language="vb" source="./snippets/async-coordination-primitives/vb/Program.vb" id="AsyncCountdownEvent":::
 
-The `Signal` method decrements the count atomically with <xref:System.Threading.Interlocked.Decrement%2A>. When the count reaches zero, it sets the inner event, and all waiters resume.
+The `Signal` method decrements the count atomically with <xref:System.Threading.Interlocked.Decrement*>. When the count reaches zero, it sets the inner event, and all waiters resume.
 
 The following example uses a countdown event to await three concurrent operations:
 
@@ -81,7 +81,7 @@ The following example uses a countdown event to await three concurrent operation
 
 ## Async barrier
 
-A barrier coordinates a fixed set of participants across multiple rounds. Each participant signals when it finishes its work for the current round and then waits for all other participants to finish. When the last participant signals, all participants resume, and the barrier resets for the next round. The synchronous equivalent is <xref:System.Threading.Barrier>. The .NET runtime provides <xref:System.Threading.Tasks.Task.WhenAll%2A> for multi-round async synchronization. Combine it with a loop, one `WhenAll` call per round.
+A barrier coordinates a fixed set of participants across multiple rounds. Each participant signals when it finishes its work for the current round and then waits for all other participants to finish. When the last participant signals, all participants resume, and the barrier resets for the next round. The synchronous equivalent is <xref:System.Threading.Barrier>. The .NET runtime provides <xref:System.Threading.Tasks.Task.WhenAll*> for multi-round async synchronization. Combine it with a loop, one `WhenAll` call per round.
 
 :::code language="csharp" source="./snippets/async-coordination-primitives/csharp/Program.cs" id="AsyncBarrier":::
 :::code language="vb" source="./snippets/async-coordination-primitives/vb/Program.vb" id="AsyncBarrier":::

@@ -22,7 +22,7 @@ When async code needs throttling, mutual exclusion, or reader/writer coordinatio
 
 ## Async semaphore — throttle concurrent access
 
-A semaphore limits how many callers can access a resource concurrently. <xref:System.Threading.SemaphoreSlim> provides a <xref:System.Threading.SemaphoreSlim.WaitAsync%2A> method that lets you await entry without blocking a thread:
+A semaphore limits how many callers can access a resource concurrently. <xref:System.Threading.SemaphoreSlim> provides a <xref:System.Threading.SemaphoreSlim.WaitAsync*> method that lets you await entry without blocking a thread:
 
 :::code language="csharp" source="./snippets/async-coordination-primitives-advanced/csharp/Program.cs" id="SemaphoreSlimUsage":::
 :::code language="vb" source="./snippets/async-coordination-primitives-advanced/vb/Program.vb" id="SemaphoreSlimUsage":::
@@ -67,8 +67,8 @@ Usage is concise and safe:
 
 A reader/writer lock allows multiple concurrent readers but only one exclusive writer. .NET provides <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair>, which offers reader/writer scheduling for tasks through two <xref:System.Threading.Tasks.TaskScheduler> instances:
 
-- <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler%2A> — runs tasks concurrently (like readers), as long as no exclusive task is active.
-- <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler%2A> — runs tasks exclusively (like writers), with no other tasks running.
+- <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler> — runs tasks concurrently (like readers), as long as no exclusive task is active.
+- <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler> — runs tasks exclusively (like writers), with no other tasks running.
 
 :::code language="csharp" source="./snippets/async-coordination-primitives-advanced/csharp/Program.cs" id="ConcurrentExclusiveUsage":::
 :::code language="vb" source="./snippets/async-coordination-primitives-advanced/vb/Program.vb" id="ConcurrentExclusiveUsage":::
@@ -93,7 +93,7 @@ Usage follows the same disposable-releaser pattern as `AsyncLock`:
 
 ## Channels as an alternative coordination pattern
 
-<xref:System.Threading.Channels.Channel%601> provides a thread-safe producer-consumer queue that supports `async` reads and writes. Bounded channels (<xref:System.Threading.Channels.Channel.CreateBounded%2A>) provide natural back-pressure, replacing some scenarios where you'd otherwise use a semaphore for throttling.
+<xref:System.Threading.Channels.Channel`1> provides a thread-safe producer-consumer queue that supports `async` reads and writes. Bounded channels (<xref:System.Threading.Channels.Channel.CreateBounded*>) provide natural back-pressure, replacing some scenarios where you'd otherwise use a semaphore for throttling.
 
 For more information, see [System.Threading.Channels](/dotnet/core/extensions/channels).
 

@@ -1,5 +1,5 @@
 ---
-title: "Breaking change: Microsoft.Extensions.* packages included in shared framework"
+title: "Breaking change: Some Microsoft.Extensions packages included in shared framework"
 description: "Learn about the breaking change in .NET 11 where nine Microsoft.Extensions.* libraries are now part of the base shared framework."
 ms.date: 05/05/2026
 ai-usage: ai-assisted
@@ -17,15 +17,15 @@ To reduce application size, simplify package dependencies, and streamline servic
 
 Previously, the following `Microsoft.Extensions.*` libraries weren't part of the .NET base shared framework. Projects that needed them required explicit `PackageReference` entries, and the build process copied the assemblies to the output folder:
 
-- `Microsoft.Extensions.Caching.Abstractions`
-- `Microsoft.Extensions.Configuration.Abstractions`
-- `Microsoft.Extensions.DependencyInjection.Abstractions`
-- `Microsoft.Extensions.Diagnostics.Abstractions`
-- `Microsoft.Extensions.FileProviders.Abstractions`
-- `Microsoft.Extensions.Hosting.Abstractions`
-- `Microsoft.Extensions.Logging.Abstractions`
-- `Microsoft.Extensions.Options`
-- `Microsoft.Extensions.Primitives`
+- [Microsoft.Extensions.Caching.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Abstractions)
+- [Microsoft.Extensions.Configuration.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Abstractions)
+- [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions)
+- [Microsoft.Extensions.Diagnostics.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Abstractions)
+- [Microsoft.Extensions.FileProviders.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.FileProviders.Abstractions)
+- [Microsoft.Extensions.Hosting.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Abstractions)
+- [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions)
+- [Microsoft.Extensions.Options](https://www.nuget.org/packages/Microsoft.Extensions.Options)
+- [Microsoft.Extensions.Primitives](https://www.nuget.org/packages/Microsoft.Extensions.Primitives)
 
 ## New behavior
 
@@ -48,13 +48,22 @@ Including these commonly used libraries in the shared framework reduces applicat
 
 **Remove the `PackageReference` for any affected package:**
 
+For projects that target only `net11.0` or later, remove the `PackageReference` entirely:
+
 ```xml
-<!-- Remove entries like these from your .csproj: -->
+<!-- Remove entries like these from your .csproj when targeting net11.0 only: -->
 <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="..." />
 <PackageReference Include="Microsoft.Extensions.Options" Version="..." />
 ```
 
 Your code continues to work without modification—the APIs are now part of the runtime.
+
+For multi-targeted projects (for example, `<TargetFrameworks>net10.0;net11.0</TargetFrameworks>`), NU1510 isn't raised because the package is still required for the older TFM. No action is required—NuGet selects the appropriate assembly for each target framework automatically. If you want to be explicit, you can conditionally include the reference:
+
+```xml
+<!-- Keep the reference only for TFMs that don't include it in the shared framework: -->
+<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="..." Condition="'$(TargetFramework)' != 'net11.0'" />
+```
 
 **Resolve compile-time name conflicts (rare):**
 

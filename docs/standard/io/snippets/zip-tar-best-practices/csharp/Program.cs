@@ -19,7 +19,8 @@ void SafeExtractEntry(ZipArchiveEntry entry, string destinationPath, long maxDec
 void SafeExtractArchive(ZipArchive archive, string destinationDir,
     long maxTotalSize, int maxEntryCount)
 {
-    // Some zip bombs contain millions of tiny entries (e.g., "42.zip").
+    // Flat zip bombs can contain many entries that each expand to large sizes.
+    // Reject the archive early if the entry count exceeds your limit.
     if (archive.Entries.Count > maxEntryCount)
     {
         throw new InvalidOperationException("Archive contains an excessive number of entries.");
@@ -28,7 +29,7 @@ void SafeExtractArchive(ZipArchive archive, string destinationDir,
     long totalExtracted = 0;
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
-        totalExtracted += entry.Length;
+        totalExtracted = checked(totalExtracted + entry.Length);
         if (totalExtracted > maxTotalSize)
         {
             throw new InvalidOperationException(
@@ -157,15 +158,20 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
         if (totalSize > maxTotalSize)
             throw new InvalidOperationException("Archive exceeds total size limit.");
 
-        // Symbolic links and hard links can be used to write files outside the
-        // extraction directory or to overwrite sensitive files. The safest
-        // approach for untrusted input is to skip them entirely.
-        if (entry.EntryType is TarEntryType.SymbolicLink or TarEntryType.HardLink)
-            continue;
+        // Allow-list of entry types to process. Any type not listed here is
+        // silently skipped. We exclude symlinks, hard links (which can
+        // escape the destination), and metadata types
+        // (GlobalExtendedAttributes, ExtendedAttributes, LongLink, and
+        // LongPath) that contain no file data.
+        TarEntryType[] allowedTypes =
+        [
+            TarEntryType.RegularFile,
+            TarEntryType.V7RegularFile,
+            TarEntryType.ContiguousFile,
+            TarEntryType.Directory
+        ];
 
-        // Global extended attributes are PAX metadata entries that apply to all
-        // subsequent entries. They contain no file data and should be skipped.
-        if (entry.EntryType is TarEntryType.GlobalExtendedAttributes)
+        if (!allowedTypes.Contains(entry.EntryType))
             continue;
 
         // Normalize and validate the path, same as the ZIP example.
@@ -178,7 +184,7 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
         {
             Directory.CreateDirectory(destPath);
         }
-        else if (entry.EntryType is TarEntryType.RegularFile or TarEntryType.V7RegularFile or TarEntryType.ContiguousFile)
+        else
         {
             // Create the parent directory and any missing intermediate directories.
             Directory.CreateDirectory(Path.GetDirectoryName(destPath)!);

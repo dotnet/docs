@@ -45,7 +45,7 @@ To help you investigate why a transitive package resolves to a particular versio
 
 If you use a regular expression or other string parsing to process the output of `dotnet nuget why`, update your parsing logic to handle the new format `<PackageName>@<ResolvedVersion> (>= <RequestedVersion>)`.
 
-If some team members or CI agents might run older versions of the .NET SDK, update the parsing logic to support both formats:
+If your colleagues or CI agents run older versions of the .NET SDK, update the parsing logic to support both formats:
 
 - Old format: `<PackageName> (v<ResolvedVersion>)`
 - New format: `<PackageName>@<ResolvedVersion> (>= <RequestedVersion>)`

@@ -27,8 +27,10 @@ dotnet nuget verify -h|--help
 ## Description
 
 The `dotnet nuget verify` command verifies a signed NuGet package.
-In .NET 10 and later versions, the command also outputs the package's content hash, which might be useful to investigate lock file validation errors.
-In .NET 10.0.400 SDK and later versions, the command also outputs the Certificate Revocation List (CRL) and Online Certificate Status Protocol (OCSP) URLs for each certificate in the signature chain. For more information, see the [breaking change notice](../compatibility/sdk/10.0/dotnet-nuget-verify-crl-ocsp-urls.md).
+In .NET 10 and later versions, the command also outputs:
+
+- The package's content hash, which might be useful to investigate lock file validation errors.
+- The Certificate Revocation List (CRL) and Online Certificate Status Protocol (OCSP) URLs for each certificate in the signature chain. For more information, see the [breaking change notice](../compatibility/sdk/10.0/dotnet-nuget-verify-crl-ocsp-urls.md).
 
   > [!NOTE]
   > This command requires a certificate root store that is valid for both code signing and timestamping. Also, this command may not be supported on some combinations of operating system and .NET SDK. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
@@ -70,6 +72,8 @@ In .NET 10.0.400 SDK and later versions, the command also outputs the Certificat
   `Timestamp Certificate -> Validity period`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> Subject name`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> CRL URL (If applicable)`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> OCSP URL (If applicable)`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> Subject name`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> SHA-256 hash`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> Validity period`| ❌       | ✔️          | ✔️         | ✔️         | ✔️

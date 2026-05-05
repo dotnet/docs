@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # `dotnet nuget verify` outputs CRL and OCSP URLs
 
-Starting in .NET 10.0.400 SDK, `dotnet nuget verify` outputs Certificate Revocation List (CRL) and Online Certificate Status Protocol (OCSP) URLs for each certificate in the signature chain.
+Starting in .NET 10.0.400, `dotnet nuget verify` outputs Certificate Revocation List (CRL) and Online Certificate Status Protocol (OCSP) URLs for each certificate in the signature chain.
 
 ## Version introduced
 
@@ -66,7 +66,7 @@ For more information, see the [NuGet.Client pull request #7343](https://github.c
 
 ## Recommended action
 
-If you use `dotnet nuget verify` in automation and parse its output, update your parsing logic to handle the new `CRL URL` and `OCSP URL` fields. Note that certificate information blocks no longer have unique keys—a certificate can have multiple `CRL URL` entries.
+If you use `dotnet nuget verify` in automation and parse its output, update your parsing logic to handle the new `CRL URL` and `OCSP URL` fields. Certificate information blocks no longer have unique keys; a certificate can have multiple `CRL URL` entries.
 
 ## Affected APIs
 

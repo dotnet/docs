@@ -4,6 +4,8 @@ foreach (var name in names)
 {
     Console.WriteLine($"Hello {name.ToUpper()}!");
 }
+// Fancy example
+names.ForEach(name => Console.WriteLine("Hello {0}", name));
 // </BasicList>
 
 // <ModifyList>

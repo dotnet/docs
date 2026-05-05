@@ -85,7 +85,7 @@ When a customer walks up to the counter, the barista starts an order and adds it
 
 The `Order` class tracks items, computes a running total, and exposes a settable `Status`. A **class** is the right tool here because the object carries mutable state that changes over its lifetime, behavior (methods) is central to the type's purpose, and identity matters—two orders with the same items are still distinct orders. For more detail, see [Classes, structs, and records](../types/classes.md).
 
-## Use inheritance when you need a specialized class
+## Use inheritance when you need to extend a class
 
 The coffee shop starts catering events. A catering order is still an order—it has items and a total—but it also tracks a guest count and requires manager approval before the kitchen marks it ready. Rather than duplicating `Order`'s logic, derive a specialized class.
 

@@ -5,7 +5,7 @@ ms.date: 05/05/2026
 ai-usage: ai-assisted
 ---
 
-# Microsoft.Extensions.* packages included in shared framework
+# Some Microsoft.Extensions packages included in shared framework
 
 To reduce application size, simplify package dependencies, and streamline servicing, .NET 11 includes nine `Microsoft.Extensions.*` libraries in the base shared framework. Projects that explicitly reference these packages receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510). You can resolve the warning by removing the `PackageReference`. If you depend on an older version of these packages, upgrading to the .NET 11 version might expose previously undocumented breaking changes introduced between older versions and .NET 11.
 
@@ -35,7 +35,7 @@ Starting in .NET 11, these nine libraries are part of the .NET base shared frame
 - If you reference these packages explicitly, you receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510).
 - To resolve NU1510, remove the `PackageReference`. The library is always available through the framework.
 - These assemblies are no longer copied to the output folder.
-- In rare cases, the additional APIs in the default load set might cause name or type conflicts. To resolve a conflict, add more explicit `using` directives, use an alias, or use a fully qualified type name.
+- In rare cases, the additional APIs in the framework-provided reference assemblies available when you target `net11.0` might cause compile-time name or type resolution conflicts. To resolve a conflict, add more explicit `using` directives, use an alias, or use a fully qualified type name.
 - When you target multiple frameworks (for example, `<TargetFrameworks>net10.0;net11.0</TargetFrameworks>`), the upgrade to the .NET 11 version of these libraries on the `net11.0` TFM is silent—NU1510 isn't produced in that case.
 
 ## Type of breaking change
@@ -68,7 +68,7 @@ If you encounter a compile error because a name in your code conflicts with one 
 
 **If you depend on an older version of these packages:**
 
-To avoid runtime failures like `MissingMethodException` or `TypeLoadException`, update binaries compiled against very old versions of these packages by updating the package references in your project to the current version and recompiling.
+To avoid runtime failures like `MissingMethodException` or `TypeLoadException`, recompile any dependent libraries or binaries against the .NET 11 reference assemblies. If you target `net11.0`, remove the `PackageReference` and rebuild. If you target earlier TFMs or multi-target, update the package references for the non-`net11.0` targets to the current version, and then recompile.
 
 The following breaking changes from previous versions might surface when upgrading to the .NET 11 versions of these packages:
 

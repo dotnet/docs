@@ -33,10 +33,8 @@ Starting in .NET 11, these nine libraries are part of the .NET base shared frame
 
 - You don't need a `PackageReference` for these libraries when you target `net11.0` or later.
 - If you reference these packages explicitly, you receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510).
-- To resolve NU1510, remove the `PackageReference`. The library is always available through the framework.
 - These assemblies are no longer copied to the output folder.
-- In rare cases, the additional APIs in the framework-provided reference assemblies available when you target `net11.0` might cause compile-time name or type resolution conflicts. To resolve a conflict, add more explicit `using` directives, use an alias, or use a fully qualified type name.
-- When you target multiple frameworks (for example, `<TargetFrameworks>net10.0;net11.0</TargetFrameworks>`), the upgrade to the .NET 11 version of these libraries on the `net11.0` TFM is silent—NU1510 isn't produced in that case.
+- In rare cases, the additional APIs in the default load set might cause name or type conflicts. To resolve a conflict, add more explicit `using` directives, use an alias, or use a fully qualified type name.
 
 ## Type of breaking change
 

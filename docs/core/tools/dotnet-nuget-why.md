@@ -27,6 +27,8 @@ The `dotnet nuget why` command shows the dependency graph for a particular packa
 Starting with version 9.0.200, the command introduces support for runtime identifier (RID) specific packages by generating separate dependency trees for each RID and framework combination.
 For example, if a project targets `net9.0` with the `win-x64` RID, the command generates trees for `net9.0/win-x64` and `net9.0`.
 
+Starting with version 10.0.400 SDK, the command changed its output format for packages. Each package now displays the resolved version and the minimum requested version constraint: `<PackageName>@<ResolvedVersion> (>= <RequestedVersion>)`. For more information, see [`dotnet nuget why` output format changed](../compatibility/sdk/10.0/dotnet-nuget-why-output-format.md).
+
 ### Older project format
 
 To use the command with projects that can't be restored with the .NET SDK, you can pass a NuGet assets file in place of the project file (starting with the .NET 9 SDK):

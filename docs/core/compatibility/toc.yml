@@ -202,6 +202,8 @@ items:
                 href: sdk/10.0/dotnet-package-list-restore.md
               - name: "`dotnet tool install --local` creates manifest by default"
                 href: sdk/10.0/dotnet-tool-install-local-manifest.md
+              - name: "`dotnet nuget why` output format changed"
+                href: sdk/10.0/dotnet-nuget-why-output-format.md
               - name: "`dotnet watch` logs to stderr instead of stdout"
                 href: sdk/10.0/dotnet-watch-stderr.md
               - name: HTTP warnings promoted to errors in package list and search

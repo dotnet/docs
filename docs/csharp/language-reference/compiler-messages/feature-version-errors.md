@@ -232,7 +232,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9346**](#target-runtime-does-not-support-feature): *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - [**CS9352**](#target-runtime-does-not-support-feature): *The target runtime does not support extended layout types.*
 
-The cause behind all these errors and warnings is that either the compiler or the runtime does not support a feature you are using. The resolution depends on whether the issue is a language version configuration problem, a language version mismatch, a runtime limitation, or an experimental feature.
+The cause behind all these errors and warnings is that either the compiler or the runtime doesn't support a feature you're using. The resolution depends on whether the issue is a language version configuration problem, a language version mismatch, a runtime limitation, or an experimental feature.
 
 ## Language version configuration errors
 
@@ -244,14 +244,14 @@ The cause behind all these errors and warnings is that either the compiler or th
 
 These errors indicate that the `<LangVersion>` setting in your project file or the `-langversion` compiler option is invalid or incompatible with the installed compiler.
 
-Correct the `<LangVersion>` value in your project file to a valid language version string (**CS1617**, **CS8192**, **CS8303**). The valid values include `default`, `latest`, `preview`, `latestMajor`, or a specific version number such as `7.3`, `8.0`, `9.0`, `10`, `11`, `12`, `13`, or `14`. Do not include leading zeroes in the version number. See [C# language versioning](../language-versioning.md) for the full list of supported values.
+Correct the `<LangVersion>` value in your project file to a valid language version string (**CS1617**, **CS8192**, **CS8303**). The valid values include `default`, `latest`, `preview`, `latestMajor`, or a specific version number such as `7.3`, `8.0`, `9.0`, `10`, `11`, `12`, `13`, or `14`. Don't include leading zeroes in the version number. See [C# language versioning](../language-versioning.md) for the full list of supported values.
 
 Update the .NET SDK to a version whose compiler supports the language version you specified (**CS8304**). Each version of the C# compiler supports language versions up to a specific maximum. If you specify a language version newer than the compiler supports, upgrade the SDK.
 
-Remove double-underscore identifiers or change the language version from `ISO-1` or `ISO-2` to a newer version (**CS1638**). The ISO language modes reserve identifiers containing `__` (double underscores) because they are not compliant with the ISO C# specification.
+Remove double-underscore identifiers or change the language version from `ISO-1` or `ISO-2` to a newer version (**CS1638**). The ISO language modes reserve identifiers containing `__` (double underscores) because they're not compliant with the ISO C# specification.
 
 > [!NOTE]
-> The current C# compiler no longer produces **CS1638**. It was emitted by older compilers when using the `ISO-1` or `ISO-2` language versions.
+> The current C# compiler no longer produces **CS1638**. Older compilers emitted this error when using the `ISO-1` or `ISO-2` language versions.
 
 The compiler determines its default language version from the target framework:
 
@@ -261,7 +261,7 @@ If you remove the `LangVersion` element from your project file, the compiler use
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
 
-You can learn more about the language versions supported for each framework version in the article on [Configure language version](../configure-language-version.md) in the language reference section.
+To learn more about the language versions supported for each framework version, see [Configure language version](../configure-language-version.md) in the language reference section.
 
 ## Feature not available in language version
 
@@ -283,25 +283,25 @@ You can learn more about the language versions supported for each framework vers
 - **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C# 10.0.*
 - **CS9194**: *Argument may not be passed with the 'ref' keyword. To pass 'ref' arguments to 'in' parameters, upgrade to language version 12 or greater.*
 
-These errors all indicate that you are using a language feature that requires a newer C# version than your project currently targets. There are two ways to resolve them:
+These errors all indicate that you're using a language feature that requires a newer C# version than your project currently targets. To resolve these errors, use one of the following options:
 
 Upgrade the target framework so the compiler automatically selects the required language version. Each target framework maps to a default C# version. For example, .NET 8 defaults to C# 12, .NET 9 defaults to C# 13, and .NET 10 defaults to C# 14. See the table in [Language version configuration errors](#language-version-configuration-errors) for the full mapping.
 
 Set the `<LangVersion>` element in your project file to the required version or higher. For example, to enable C# 12 features, add `<LangVersion>12</LangVersion>` to a `<PropertyGroup>` in your project file.
 
-If you cannot upgrade, avoid the feature that triggered the error. The error message names the feature and the required version. The following list provides additional context for specific errors:
+If you can't upgrade, avoid the feature that triggered the error. The error message names the feature and the required version. The following list provides additional context for specific errors:
 
-- Use explicitly named arguments for all arguments, or upgrade to C# 7.2+ to use non-trailing named arguments (**CS1738**).
-- Access tuple elements by their declared name rather than the inferred name, or upgrade to C# 7.1+ (**CS8306**).
+- Use explicitly named arguments for all arguments, or upgrade to C# 7.2 or later to use non-trailing named arguments (**CS1738**).
+- Access tuple elements by their declared name rather than the inferred name, or upgrade to C# 7.1 or later (**CS8306**).
 - Use `$@"..."` instead of `@$"..."` for interpolated verbatim strings in C# versions before 8.0 (**CS8401**).
-- Add explicit type constraints to nullable type parameters, or upgrade to C# 9+ which relaxes this requirement (**CS8627**).
-- Upgrade to C# 8.0+ to enable nullable annotations and the nullable context (**CS8630**).
-- Add explicit casts in conditional expressions where the two branches have no common type, or upgrade to C# 9+ for target-typed conditional expressions (**CS8957**).
-- Move newlines outside of interpolated string expressions, or upgrade to C# 11+ (**CS8967**).
-- Use the `in` keyword instead of `ref` when passing arguments to `in` parameters, or upgrade to C# 12+ (**CS9194**).
-- Implement non-public interface members explicitly rather than implicitly, or upgrade to C# 9+ (**CS8704**).
+- Add explicit type constraints to nullable type parameters, or upgrade to C# 9 or later which relaxes this requirement (**CS8627**).
+- Upgrade to C# 8.0 or later to enable nullable annotations and the nullable context (**CS8630**).
+- Add explicit casts in conditional expressions where the two branches have no common type, or upgrade to C# 9 or later for target-typed conditional expressions (**CS8957**).
+- Move newlines outside of interpolated string expressions, or upgrade to C# 11 or later (**CS8967**).
+- Use the `in` keyword instead of `ref` when passing arguments to `in` parameters, or upgrade to C# 12 or later (**CS9194**).
+- Implement non-public interface members explicitly rather than implicitly, or upgrade to C# 9 or later (**CS8704**).
 
-## Target runtime does not support feature
+## Target runtime doesn't support feature
 
 - **CS8021**: *No value for RuntimeMetadataVersion found.*
 - **CS8701**: *Target runtime doesn't support default interface implementation.*
@@ -321,7 +321,7 @@ If you cannot upgrade, avoid the feature that triggered the error. The error mes
 - **CS9346**: *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - **CS9352**: *The target runtime does not support extended layout types.*
 
-These errors differ from language version errors because upgrading the `<LangVersion>` alone does not resolve them. The target runtime (specified by `<TargetFramework>`) must also support the feature at the CLR/runtime level.
+These errors differ from language version errors because upgrading the `<LangVersion>` alone doesn't resolve them. The target runtime (specified by `<TargetFramework>`) must also support the feature at the CLR/runtime level.
 
 Upgrade the `<TargetFramework>` in your project file to a version that supports the required feature. The following list shows which features require which minimum runtime:
 
@@ -335,13 +335,13 @@ Upgrade the `<TargetFramework>` in your project file to a version that supports 
 - Extensible calling conventions (**CS8889**): Requires .NET 5+.
 - Runtime async features (**CS9328**): Requires .NET 10+.
 
-Update the .NET SDK if the compiler itself does not support a required compiler feature (**CS9041**). This error indicates that a referenced library uses metadata features that require a newer compiler version.
+Update the .NET SDK if the compiler itself doesn't support a required compiler feature (**CS9041**). This error indicates that a referenced library uses metadata features that require a newer compiler version.
 
 Ensure a valid reference to the core runtime library exists (**CS8021**). This warning typically appears when building without a standard runtime reference. Specify a `RuntimeMetadataVersion` option or add a reference to an assembly containing `System.Object`.
 
 Resolve `RefSafetyRulesAttribute` version mismatches by recompiling dependent modules with a compatible compiler version (**CS9103**).
 
-Restart the application if you encounter this error during hot reload (**CS9346**). Some edit-and-continue changes require restarting because the runtime cannot emit the required explicit interface implementations dynamically.
+Restart the application if you encounter this error during hot reload (**CS9346**). Some edit-and-continue changes require restarting because the runtime can't emit the required explicit interface implementations dynamically.
 
 ## Function pointer and calling convention errors
 
@@ -352,13 +352,13 @@ Restart the application if you encounter this error during hot reload (**CS9346*
 
 These errors relate to [function pointer](../unsafe-code.md#function-pointers) declarations and their calling convention specifiers, introduced in C# 9.
 
-Remove `managed` from calling convention specifier lists that also include unmanaged specifiers (**CS8888**). The `managed` calling convention is the default and cannot be combined with `unmanaged` specifiers such as `Cdecl`, `Stdcall`, `Thiscall`, or `Fastcall`.
+Remove `managed` from calling convention specifier lists that also include unmanaged specifiers (**CS8888**). The `managed` calling convention is the default and can't be combined with `unmanaged` specifiers such as `Cdecl`, `Stdcall`, `Thiscall`, or `Fastcall`.
 
-Upgrade the target framework to .NET 5 or later to use extensible or runtime-default calling conventions (**CS8889**). The `UnmanagedCallersOnly` attribute and extensible calling convention types require runtime support not available in .NET Core 3.1 or earlier.
+Upgrade the target framework to .NET 5 or later to use extensible or runtime-default calling conventions (**CS8889**). The `UnmanagedCallersOnly` attribute and extensible calling convention types require runtime support that isn't available in .NET Core 3.1 or earlier.
 
-Ensure the calling convention type exists in the referenced assemblies (**CS8890**). Calling convention types such as `CallConvCdecl`, `CallConvStdcall`, `CallConvThiscall`, and `CallConvFastcall` are defined in `System.Runtime.CompilerServices`. If the type is not found, add a reference to the correct runtime library.
+Ensure the calling convention type exists in the referenced assemblies (**CS8890**). Calling convention types such as `CallConvCdecl`, `CallConvStdcall`, `CallConvThiscall`, and `CallConvFastcall` are defined in `System.Runtime.CompilerServices`. If the type isn't found, add a reference to the correct runtime library.
 
-Make custom calling convention types `public` (**CS8891**). If you define a custom calling convention type, it must be declared as `public` to be used in a function pointer type declaration.
+Make custom calling convention types `public` (**CS8891**). If you define a custom calling convention type, declare it as `public` to use it in a function pointer type declaration.
 
 ## Experimental and preview features
 
@@ -369,16 +369,16 @@ Make custom calling convention types `public` (**CS8891**). If you define a cust
 - **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 - **CS9268**: *'type' is for evaluation purposes only and is subject to change or removal in future updates: 'message'. Suppress this diagnostic to proceed.*
 
-These diagnostics indicate that you are using a feature or type that is marked as experimental or is only available in the preview language version.
+These diagnostics indicate that you're using a feature or type that's marked as experimental or is only available in the preview language version.
 
 > [!WARNING]
-> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+> Experimental features are subject to change. The APIs might change, or they might be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
-Set `<LangVersion>preview</LangVersion>` in your project file to use preview language features (**CS8652**). Preview features are not yet finalized and may change in future releases.
+Set `<LangVersion>preview</LangVersion>` in your project file to use preview language features (**CS8652**). Preview features aren't yet finalized and might change in future releases.
 
-Suppress the specific diagnostic ID to acknowledge the experimental nature of the API (**CS8058**, **CS8305**, **CS9204**, **CS9268**). Library authors mark APIs with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> to indicate they are subject to change. You can suppress the diagnostic using `#pragma warning disable` or by adding the diagnostic ID to `<NoWarn>` in your project file.
+Suppress the specific diagnostic ID to acknowledge the experimental nature of the API (**CS8058**, **CS8305**, **CS9204**, **CS9268**). Library authors mark APIs with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> to indicate they're subject to change. You can suppress the diagnostic by using `#pragma warning disable` or by adding the diagnostic ID to `<NoWarn>` in your project file.
 
-Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier (**CS9211**). The identifier must follow standard naming rules — it cannot contain spaces, special characters, or start with a digit. You can also declare your own experimental features using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
+Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier (**CS9211**). The identifier must follow standard naming rules - it can't contain spaces, special characters, or start with a digit. You can also declare your own experimental features by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
 
 ## Breaking changes on struct initialization
 
@@ -394,7 +394,7 @@ These errors and warnings help ensure that `struct` types are properly initializ
 
 Upgrade to C# 11 or later so that all `struct` constructors auto-default all fields (**CS0171**, **CS0188**, **CS0843** and their newer counterparts **CS8880**, **CS8881**, **CS8885**). Starting in C# 11, the compiler automatically initializes any fields not explicitly set in a constructor to their default values.
 
-Explicitly call the default constructor using `: this()` in your struct constructor if you cannot upgrade to C# 11 (**CS0171**, **CS0188**, **CS0843**). This ensures all fields receive their default values before your constructor body runs:
+Explicitly call the default constructor by using `: this()` in your struct constructor if you can't upgrade to C# 11 (**CS0171**, **CS0188**, **CS0843**). This approach ensures all fields receive their default values before your constructor body runs:
 
 ```csharp
 struct S
@@ -407,7 +407,7 @@ struct S
 }
 ```
 
-Assign all fields and auto-properties before using `this` or before the constructor returns (**CS9014**, **CS9015**, **CS9016**, **CS9017**). These diagnostics appear when a newer compiler detects that you may be reading a property or field before it has been assigned. Either explicitly assign a value or upgrade to a version where auto-defaulting eliminates the warning.
+Assign all fields and auto-properties before using `this` or before the constructor returns (**CS9014**, **CS9015**, **CS9016**, **CS9017**). These diagnostics appear when a newer compiler detects that you might be reading a property or field before it has been assigned. Either explicitly assign a value or upgrade to a version where auto-defaulting eliminates the warning.
 
 ## Implementation-specific attributes
 
@@ -416,6 +416,6 @@ Assign all fields and auto-properties before using `this` or before the construc
 
 These errors relate to attributes that are either compiler-generated or tied to specific runtime versions.
 
-Upgrade to C# 11 and .NET 7 or later to use `UnscopedRefAttribute` (**CS9269**). This attribute allows you to indicate that a `ref` return or `ref struct` parameter does not have a scoped lifetime. It requires both the language version and the target framework to meet the minimum requirements.
+Upgrade to C# 11 and .NET 7 or later to use `UnscopedRefAttribute` (**CS9269**). This attribute indicates that a `ref` return or `ref struct` parameter doesn't have a scoped lifetime. It requires both the language version and the target framework to meet the minimum requirements.
 
-Do not manually declare `Microsoft.CodeAnalysis.EmbeddedAttribute` (**CS9271**). The compiler generates the source for this attribute automatically when needed. If you have a manually declared type with this name, remove it or rename it to avoid conflicting with the compiler-generated version.
+Don't manually declare `Microsoft.CodeAnalysis.EmbeddedAttribute` (**CS9271**). The compiler generates the source for this attribute automatically when needed. If you have a manually declared type with this name, remove it or rename it to avoid conflicting with the compiler-generated version.

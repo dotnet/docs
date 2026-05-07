@@ -246,6 +246,9 @@ These errors indicate that the `<LangVersion>` setting in your project file or t
 
 Correct the `<LangVersion>` value in your project file to a valid language version string (**CS1617**, **CS8192**, **CS8303**). The valid values include `default`, `latest`, `preview`, `latestMajor`, or a specific version number such as `7.3`, `8.0`, `9.0`, `10`, `11`, `12`, `13`, or `14`. Don't include leading zeroes in the version number. See [C# language versioning](../language-versioning.md) for the full list of supported values.
 
+> [!TIP]
+> To see a list of supported language versions, you reference the table in this article, compile with `-langversion:?`, or temporarily set `<LangVersion>?</LangVersion>` in your project file before building.
+
 Update the .NET SDK to a version whose compiler supports the language version you specified (**CS8304**). Each version of the C# compiler supports language versions up to a specific maximum. If you specify a language version newer than the compiler supports, upgrade the SDK.
 
 Remove double-underscore identifiers or change the language version from `ISO-1` or `ISO-2` to a newer version (**CS1638**). The ISO language modes reserve identifiers containing `__` (double underscores) because they're not compliant with the ISO C# specification.
@@ -378,7 +381,7 @@ Set `<LangVersion>preview</LangVersion>` in your project file to use preview lan
 
 Suppress the specific diagnostic ID to acknowledge the experimental nature of the API (**CS8058**, **CS8305**, **CS9204**, **CS9268**). Library authors mark APIs with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> to indicate they're subject to change. You can suppress the diagnostic by using `#pragma warning disable` or by adding the diagnostic ID to `<NoWarn>` in your project file.
 
-Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier (**CS9211**). The identifier must follow standard naming rules - it can't contain spaces, special characters, or start with a digit. You can also declare your own experimental features by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
+Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier (**CS9211**). The identifier must follow standard naming rules. It can't contain spaces, special characters, or start with a digit. You can also declare your own experimental features by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
 
 ## Breaking changes on struct initialization
 
@@ -392,7 +395,7 @@ Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier 
 
 These errors and warnings help ensure that `struct` types are properly initialized before their fields are accessed. In earlier versions of C#, you must explicitly assign all fields in a struct in any constructor. The parameterless constructor initializes all fields to their default value. In later versions, all constructors initialize all fields. Either the field is explicitly set, set in a field initializer, or set to its default value.
 
-Upgrade to C# 11 or later so that all `struct` constructors auto-default all fields (**CS0171**, **CS0188**, **CS0843** and their newer counterparts **CS8880**, **CS8881**, **CS8885**). Starting in C# 11, the compiler automatically initializes any fields not explicitly set in a constructor to their default values.
+Upgrade to C# 11 or later so that all `struct` constructors auto-default all fields (**CS0171**, **CS0188**, **CS0843**, and their newer counterparts **CS8880**, **CS8881**, **CS8885**). Starting in C# 11, the compiler automatically initializes any fields not explicitly set in a constructor to their default values.
 
 Explicitly call the default constructor by using `: this()` in your struct constructor if you can't upgrade to C# 11 (**CS0171**, **CS0188**, **CS0843**). This approach ensures all fields receive their default values before your constructor body runs:
 

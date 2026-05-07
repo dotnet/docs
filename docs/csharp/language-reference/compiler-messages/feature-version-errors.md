@@ -5,12 +5,15 @@ f1_keywords:
   - "CS0171"
   - "CS0188"
   - "CS0843"
+  - "CS1617" # ERR_BadCompatMode  Invalid option for /langversion. Use '/langversion:?' to list supported values.
+  - "CS1638" # ERR_ReservedIdentifier  'identifier' is a reserved identifier and cannot be used when ISO language version mode is used
   - "CS8904" # ERR_UnexpectedVarianceStaticMember  Invalid variance: The type parameter '{1}' must be {3} valid on '{0}' unless language version '{4}' or greater is used. '{1}' is {2}.
   - "CS1738" # ERR_NamedArgumentSpecificationBeforeFixedArgument  Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments
   - "CS8022" # ERR_FeatureNotAvailableInVersion1  Feature is not available in C# 1. Please use language version.
   - "CS8023" # ERR_FeatureNotAvailableInVersion2  Feature is not available in C# 2. Please use language version.
   - "CS8024" # ERR_FeatureNotAvailableInVersion3  Feature is not available in C# 3. Please use language version.
   - "CS8025" # ERR_FeatureNotAvailableInVersion4  Feature is not available in C# 4. Please use language version.
+  - "CS8021" # WRN_NoRuntimeMetadataVersion  No value for RuntimeMetadataVersion found.
   - "CS8026" # ERR_FeatureNotAvailableInVersion5  Feature is not available in C# 5. Please use language version.
   - "CS8059" # ERR_FeatureNotAvailableInVersion6  Feature is not available in C# 6. Please use language version.
   - "CS8107" # ERR_FeatureNotAvailableInVersion7  Feature is not available in C# 7. Please use language version.
@@ -32,9 +35,12 @@ f1_keywords:
   - "CS8630" # ERR_NullableOptionNotAvailable  Invalid '{0}' value: '{1}' for C# {2}. Please use language version '{3}' or greater
   - "CS8314" # ERR_PatternWrongGenericTypeInVersion  An expression of type '{0}' cannot be handled by a pattern of type
   - "CS8652" # ERR_FeatureInPreview  The feature '{0}' is currently in Preview and *unsupported*. To use Preview features, use the 'preview' language version
+  - "CS8701" # ERR_RuntimeDoesNotSupportDefaultInterfaceImplementation  Target runtime doesn't support default interface implementation.
+  - "CS8702" # ERR_RuntimeDoesNotSupportDefaultInterfaceImplementationForMember  'member' cannot implement interface member because the target runtime doesn't support default interface implementation.
   - "CS8703" # ERR_InvalidModifierForLanguageVersion  The modifier '{0}' is not valid for this item in C# {1}. Please use language version '{2}' or greater.
   - "CS8704" # ERR_ImplicitImplementationOfNonPublicInterfaceMember  Type does not implement interface member. Type cannot implicitly implement a non-public member in selected version.
   - "CS8706" # ERR_LanguageVersionDoesNotSupportInterfaceImplementationForMember  Type cannot implement interface member '{1}' in type '{2}' because feature '{3}' is not available in 
+  - "CS8707" # ERR_RuntimeDoesNotSupportProtectedAccessForInterfaceMember  Target runtime doesn't support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.
   - "CS8830" # ERR_RuntimeDoesNotSupportCovariantReturnsOfClasses  Target runtime doesn't support covariant return types in overrides.
   - "CS8831" # ERR_RuntimeDoesNotSupportCovariantPropertiesOfClasses  Target runtime doesn't support covariant types in overrides.
   - "CS8888" # ERR_CannotSpecifyManagedWithUnmanagedSpecifiers  'managed' calling convention cannot be combined with unmanaged calling convention specifiers.
@@ -67,10 +73,14 @@ f1_keywords:
   - "CS9271"
   - "CS9327"
   - "CS9328"
+  - "CS9346" # ERR_EncUpdateRequiresEmittingExplicitInterfaceImplementationNotSupportedByTheRuntime
+  - "CS9352" # ERR_RuntimeDoesNotSupportExtendedLayoutTypes  The target runtime does not support extended layout types.
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
   - "CS0843"
+  - "CS1617"
+  - "CS1638"
   - "CS8904"
   - "CS1738"
   - "CS8022"
@@ -78,6 +88,7 @@ helpviewer_keywords:
   - "CS8024"
   - "CS8025"
   - "CS8026"
+  - "CS8021"
   - "CS8059"
   - "CS8107"
   - "CS8302"
@@ -98,9 +109,12 @@ helpviewer_keywords:
   - "CS8630"
   - "CS8314"
   - "CS8652"
+  - "CS8701"
+  - "CS8702"
   - "CS8703"
   - "CS8704"
   - "CS8706"
+  - "CS8707"
   - "CS8830"
   - "CS8831"
   - "CS8888"
@@ -133,6 +147,8 @@ helpviewer_keywords:
   - "CS9271"
   - "CS9327"
   - "CS9328"
+  - "CS9346"
+  - "CS9352"
 ms.date: 05/07/2026
 ---
 # Resolve warnings related to language features and versions
@@ -143,10 +159,13 @@ This article covers the following compiler warnings:
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058**: *Feature is not available. Use newer language version.*
+- **CS8021**: *No value for RuntimeMetadataVersion found. No assembly containing System.Object was found nor was a value for RuntimeMetadataVersion specified through options.*
 - **CS8058**: *Feature is experimental.*
 - **CS8192**: *Provided language version is unsupported or invalid*
 - **CS8303**: *Specified language version cannot have leading zeroes*
 - **CS8304**: *Compiler version is less than language version*
+- [**CS1617**](#cs1617): *Invalid option 'option' for /langversion. Use '/langversion:?' to list supported values.*
+- [**CS1638**](#cs1638): *'identifier' is a reserved identifier and cannot be used when ISO language version mode is used*
 - **CS1738**: *Named argument specifications must appear after all fixed arguments have been specified.*
 - **CS8306**: *Tuple element name is inferred.*
 - **CS8314**: *An expression of type cannot be handled by a pattern of type*
@@ -156,8 +175,11 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS8627**: *A nullable type parameter must be known to be a value type or non-nullable reference type*
 - **CS8630**: *Invalid nullable options. Use newer language version*
 - **CS8652**: *The modifier is not valid for this item.*
+- **CS8701**: *Target runtime doesn't support default interface implementation.*
+- **CS8702**: *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
 - **CS8704**: *Type does not implement interface member. It cannot implicitly implement a non-public member.*
 - **CS8706**: *Type cannot implement interface member because a feature is not available in this version.*
+- **CS8707**: *Target runtime doesn't support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
 - **CS8830**: *Target runtime doesn't support covariant return types in overrides. Return type must be 'type' to match overridden member 'member'*
 - **CS8831**: *Target runtime doesn't support covariant types in overrides. Type must be 'type' to match overridden member 'member'*
 - **CS8888**: *'managed' calling convention cannot be combined with unmanaged calling convention specifiers.*
@@ -188,6 +210,8 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS9271**](#implementation-specific-attributes): *The type '`Microsoft.CodeAnalysis.EmbeddedAttribute`' must be non-generic, internal, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
 - **CS9327**: *Feature is not available in C# 14.0. Use newer language version.*
 - **CS9328**: *Method uses a feature that is not supported by runtime async currently.*
+- **CS9346**: *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
+- **CS9352**: *The target runtime does not support extended layout types.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
@@ -266,3 +290,82 @@ class Test
 - **CS9271**: *The type '`Microsoft.CodeAnalysis.EmbeddedAttribute`' must be non-generic, internal, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
 
 The compiler generates the source for this attribute when needed for your source code. You shouldn't declare this type.
+
+## CS1617
+
+Invalid option 'option' for **LangVersion**. Use `?` to list supported values.
+
+This error occurs if you used the [**LangVersion**](../compiler-options/language.md#langversion) command line switch or project setting but didn't specify a valid language option. To resolve this error, check the command line syntax or project setting and change it to one of the listed options.
+
+For example, compiling with `csc -langversion:ISO` will generate error CS1617.
+
+### How to list supported language versions
+
+To see a list of supported language versions, you reference the table in this article, compile with `-langversion:?`, or temporarily set `<LangVersion>?</LangVersion>` in your project file before building.
+
+#### Use the reference table (recommended)
+
+The most reliable way to see supported language versions is to consult the reference table at the end of this article, which lists all currently supported language versions.
+
+#### Use the C# compiler directly
+
+Use the `-langversion:?` option with the C# compiler. You need to find the path to `csc.dll` in your .NET SDK installation:
+
+```console
+dotnet exec "/path/to/dotnet/sdk/version/Roslyn/bincore/csc.dll" -langversion:?
+```
+
+For example, on Linux with .NET 8 SDK:
+
+```console
+dotnet exec "/usr/lib/dotnet/sdk/8.0.117/Roslyn/bincore/csc.dll" -langversion:?
+```
+
+The exact path varies based on your operating system and .NET SDK version.
+
+#### Use a project file with diagnostic output (not recommended)
+
+You can temporarily set `<LangVersion>?</LangVersion>` in your project file and build with diagnostic verbosity:
+
+```console
+dotnet build -v diagnostic
+```
+
+Look for the "Supported language versions:" line in the output.
+
+> [!WARNING]
+> Setting `<LangVersion>?</LangVersion>` in a project file will cause the build to fail after displaying the supported versions. This is because the compiler exits after listing the versions instead of continuing to compile your code. Remove this setting after viewing the list.
+
+### Valid values for -langversion
+
+The valid values for the language versions depend on the .NET version you are using. See [the language version rules](../language-versioning.md#defaults) for more information on which language version is available with which version of .NET. If you are receiving this error while attempting to use a newer language version, either downgrade to a lower language version or update your .NET SDK to a version that supports the language version.
+
+The following table specifies the current valid values for `-langversion`:
+
+[!INCLUDE [langversion-table](../includes/langversion-table.md)]
+
+## CS1638
+
+'identifier' is a reserved identifier and cannot be used when ISO language version mode is used.
+
+When the ISO language compatibility option is specified by the **/langversion** compiler switch, any identifier with double underscores anywhere in the identifier will produce this error. To avoid this error, eliminate any identifiers with double underscores, or do not use the ISO-1 language version option.
+
+The following sample generates CS1638:
+
+```csharp
+// CS1638.cs
+// compile with: /langversion:ISO-1
+class bad__identifier // CS1638 (double underscores are not ISO compliant)
+{
+}
+
+// Try this instead:
+//class GoodIdentifier
+//{
+//}
+
+class CMain
+{
+    public static void Main() { }
+}
+```

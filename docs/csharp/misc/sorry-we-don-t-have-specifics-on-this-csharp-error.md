@@ -138,7 +138,6 @@ f1_keywords:
   - "CS8016"
   - "CS8017"
   - "CS8018"
-  - "CS8021"
   - "CS8027"
   - "CS8028"
   - "CS8029"
@@ -277,9 +276,6 @@ f1_keywords:
   - "CS8666"
   - "CS8669"
   - "CS8700"
-  - "CS8701"
-  - "CS8702"
-  - "CS8707"
   - "CS8712"
   - "CS8715"
   - "CS8716"
@@ -304,13 +300,11 @@ f1_keywords:
   - "CS8896"
 # Coming in C# 15
   - "CS9343" # misc
-  - "CS9346"
   - "CS9347"
   - "CS9348"
   - "CS9349"
   - "CS9350"
   - "CS9351"
-  - "CS9352"
   - "CS9353"
 helpviewer_keywords:
   - "errors [C#], additional information"

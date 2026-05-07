@@ -164,7 +164,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1617**](#language-version-configuration-errors): *Invalid option 'option' for /langversion. Use '/langversion:?' to list supported values.*
 - [**CS1638**](#language-version-configuration-errors): *'identifier' is a reserved identifier and cannot be used when ISO language version mode is used*
 - [**CS1738**](#feature-not-available-in-language-version): *Named argument specifications must appear after all fixed arguments have been specified. Please use language version 7.2 or greater to allow non-trailing named arguments.*
-- [**CS8021**](#target-runtime-does-not-support-feature): *No value for RuntimeMetadataVersion found. No assembly containing System.Object was found nor was a value for RuntimeMetadataVersion specified through options.*
+- [**CS8021**](#target-runtime-doesnt-support-feature): *No value for RuntimeMetadataVersion found. No assembly containing System.Object was found nor was a value for RuntimeMetadataVersion specified through options.*
 - [**CS8022**](#feature-not-available-in-language-version): *Feature is not available in C# 1. Please use language version 2 or greater.*
 - [**CS8023**](#feature-not-available-in-language-version): *Feature is not available in C# 2. Please use language version 3 or greater.*
 - [**CS8024**](#feature-not-available-in-language-version): *Feature is not available in C# 3. Please use language version 4 or greater.*
@@ -189,23 +189,23 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8627**](#feature-not-available-in-language-version): *A nullable type parameter must be known to be a value type or non-nullable reference type unless language version 'version' or greater is used. Consider changing the language version or adding a 'class', 'struct', or type constraint.*
 - [**CS8630**](#feature-not-available-in-language-version): *Invalid 'option' value: 'value' for C# version. Please use language version 'version' or greater.*
 - [**CS8652**](#experimental-and-preview-features): *The feature is currently in Preview and unsupported. To use Preview features, use the 'preview' language version.*
-- [**CS8701**](#target-runtime-does-not-support-feature): *Target runtime doesn't support default interface implementation.*
-- [**CS8702**](#target-runtime-does-not-support-feature): *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
+- [**CS8701**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support default interface implementation.*
+- [**CS8702**](#target-runtime-doesnt-support-feature): *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
 - [**CS8703**](#feature-not-available-in-language-version): *The modifier 'modifier' is not valid for this item in C# version. Please use language version 8.0 or greater.*
 - [**CS8704**](#feature-not-available-in-language-version): *'type' does not implement interface member 'member'. 'type' cannot implicitly implement a non-public member in C# version. Please use language version 'version' or greater.*
 - [**CS8706**](#feature-not-available-in-language-version): *Type cannot implement interface member in type because feature is not available in C# 7.3.*
-- [**CS8707**](#target-runtime-does-not-support-feature): *Target runtime doesn't support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
+- [**CS8707**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
 - [**CS8773**](#feature-not-available-in-language-version): *Feature is not available in C# 9. Please use language version 10 or greater.*
-- [**CS8830**](#target-runtime-does-not-support-feature): *Target runtime doesn't support covariant return types in overrides. Return type must be 'type' to match overridden member 'member'.*
-- [**CS8831**](#target-runtime-does-not-support-feature): *Target runtime doesn't support covariant types in overrides. Type must be 'type' to match overridden member 'member'.*
+- [**CS8830**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support covariant return types in overrides. Return type must be 'type' to match overridden member 'member'.*
+- [**CS8831**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support covariant types in overrides. Type must be 'type' to match overridden member 'member'.*
 - [**CS8888**](#function-pointer-and-calling-convention-errors): *'managed' calling convention cannot be combined with unmanaged calling convention specifiers.*
 - [**CS8889**](#function-pointer-and-calling-convention-errors): *The target runtime doesn't support extensible or runtime-environment default calling conventions.*
 - [**CS8890**](#function-pointer-and-calling-convention-errors): *Type 'type' is not defined.*
 - [**CS8891**](#function-pointer-and-calling-convention-errors): *Type 'type' must be public to be used as a calling convention.*
 - [**CS8904**](#feature-not-available-in-language-version): *Invalid variance: The type parameter must be invariantly valid on 'member' unless language version 9.0 or greater is used.*
 - [**CS8912**](#feature-not-available-in-language-version): *Inheriting from a record with a sealed 'Object.ToString' is not supported in C# 9.0. Please use language version 10.0 or greater.*
-- [**CS8919**](#target-runtime-does-not-support-feature): *Target runtime doesn't support static abstract members in interfaces.*
-- [**CS8929**](#target-runtime-does-not-support-feature): *'method' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support static abstract members in interfaces.*
+- [**CS8919**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support static abstract members in interfaces.*
+- [**CS8929**](#target-runtime-doesnt-support-feature): *'method' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support static abstract members in interfaces.*
 - [**CS8936**](#feature-not-available-in-language-version): *Feature is not available in C# 10. Please use language version 11 or greater.*
 - [**CS8957**](#feature-not-available-in-language-version): *Conditional expression is not valid in language version 8.0 because a common type was not found between 'type' and 'type'. To use a target-typed conversion, upgrade to language version 9.0 or greater.*
 - [**CS8967**](#feature-not-available-in-language-version): *Newlines inside a non-verbatim interpolated string are not supported in C# 10.0. Please use language version 11.0 or greater.*
@@ -213,24 +213,24 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9015**](#breaking-changes-on-struct-initialization): *Use of possibly unassigned field 'name'. Consider updating to language version 'version' to auto-default the field.*
 - [**CS9016**](#breaking-changes-on-struct-initialization): *Use of possibly unassigned auto-implemented property 'name'. Consider updating to language version 'version' to auto-default the property.*
 - [**CS9017**](#breaking-changes-on-struct-initialization): *Use of possibly unassigned field 'name'. Consider updating to language version 'version' to auto-default the field.*
-- [**CS9041**](#target-runtime-does-not-support-feature): *'type' requires compiler feature 'feature', which is not supported by this version of the C# compiler.*
+- [**CS9041**](#target-runtime-doesnt-support-feature): *'type' requires compiler feature 'feature', which is not supported by this version of the C# compiler.*
 - [**CS9058**](#feature-not-available-in-language-version): *Feature is not available in C# 11. Please use language version 12 or greater.*
-- [**CS9064**](#target-runtime-does-not-support-feature): *Target runtime doesn't support ref fields.*
-- [**CS9103**](#target-runtime-does-not-support-feature): *'type' is defined in a module with an unrecognized RefSafetyRulesAttribute version, expecting '11'.*
-- [**CS9171**](#target-runtime-does-not-support-feature): *Target runtime doesn't support inline array types.*
+- [**CS9064**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support ref fields.*
+- [**CS9103**](#target-runtime-doesnt-support-feature): *'type' is defined in a module with an unrecognized RefSafetyRulesAttribute version, expecting '11'.*
+- [**CS9171**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support inline array types.*
 - [**CS9194**](#feature-not-available-in-language-version): *Argument may not be passed with the 'ref' keyword. To pass 'ref' arguments to 'in' parameters, upgrade to language version 12 or greater.*
 - [**CS9202**](#feature-not-available-in-language-version): *Feature is not available in C# 12.0. Please use language version 13 or greater.*
 - [**CS9204**](#experimental-and-preview-features): *'type' is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 - [**CS9211**](#experimental-and-preview-features): *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
-- [**CS9240**](#target-runtime-does-not-support-feature): *Target runtime doesn't support by-ref-like generics.*
+- [**CS9240**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support by-ref-like generics.*
 - [**CS9260**](#feature-not-available-in-language-version): *Feature is not available in C# 13.0. Please use language version 14 or greater.*
 - [**CS9268**](#experimental-and-preview-features): *'type' is for evaluation purposes only and is subject to change or removal in future updates: 'message'. Suppress this diagnostic to proceed.*
 - [**CS9269**](#implementation-specific-attributes): *UnscopedRefAttribute is only valid in C# 11 or later or when targeting net7.0 or later.*
 - [**CS9271**](#implementation-specific-attributes): *The type 'Microsoft.CodeAnalysis.EmbeddedAttribute' must be non-generic, internal, non-file, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
 - [**CS9327**](#feature-not-available-in-language-version): *Feature is not available in C# 14.0. Please use language version 'version' or greater.*
-- [**CS9328**](#target-runtime-does-not-support-feature): *Method 'method' uses a feature that is not supported by runtime async currently. Opt the method out of runtime async by attributing it with 'System.Runtime.CompilerServices.RuntimeAsyncMethodGenerationAttribute(false)'.*
-- [**CS9346**](#target-runtime-does-not-support-feature): *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
-- [**CS9352**](#target-runtime-does-not-support-feature): *The target runtime does not support extended layout types.*
+- [**CS9328**](#target-runtime-doesnt-support-feature): *Method 'method' uses a feature that is not supported by runtime async currently. Opt the method out of runtime async by attributing it with 'System.Runtime.CompilerServices.RuntimeAsyncMethodGenerationAttribute(false)'.*
+- [**CS9346**](#target-runtime-doesnt-support-feature): *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
+- [**CS9352**](#target-runtime-doesnt-support-feature): *The target runtime does not support extended layout types.*
 
 The cause behind all these errors and warnings is that either the compiler or the runtime doesn't support a feature you're using. The resolution depends on whether the issue is a language version configuration problem, a language version mismatch, a runtime limitation, or an experimental feature.
 

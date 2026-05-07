@@ -500,8 +500,9 @@ items:
     href: ./compiler-messages/record-declaration-errors.md
     displayName: >
       record, record struct, record class, positional record,
-      CS8851, CS8858, CS8859, CS8860, CS8864, CS8865, CS8866, CS8870, CS8872, CS8873,
-      CS8874, CS8875, CS8877, CS8879, CS8907, CS8908, CS8913
+      CS8851, CS8857, CS8858, CS8859, CS8860, CS8864, CS8865, CS8866, CS8869, CS8870,
+      CS8871, CS8872, CS8873, CS8874, CS8875, CS8876, CS8877, CS8879, CS8906, CS8907,
+      CS8908, CS8913
   - name: Union type declarations
     href: ./compiler-messages/union-declaration-errors.md
     displayName: >
@@ -521,10 +522,12 @@ items:
     href: ./compiler-messages/property-declaration-errors.md
     displayName: >
       property, auto-implemented, init-only, field-backed,
-      CS0200, CS0545, CS0571, CS0840, CS1014, CS1043, CS8050, CS8051, CS8053, CS8145,
-      CS8147, CS8341, CS8657, CS8658, CS8659, CS8660, CS8661, CS8664, CS9029, CS9030,
-      CS9031, CS9032, CS9033, CS9034, CS9035, CS9036, CS9037, CS9038, CS9039, CS9040,
-      CS9042, CS9045, CS9258, CS9263, CS9264, CS9266, CS9273
+      CS0200, CS0273, CS0274, CS0275, CS0276, CS0442, CS0544, CS0545, CS0546, CS0547,
+      CS0548, CS0571, CS0610, CS0840, CS1014, CS1043, CS1715, CS8050, CS8051, CS8053,
+      CS8080, CS8145, CS8147, CS8341, CS8657, CS8658, CS8659, CS8660, CS8661, CS8664,
+      CS8852, CS8853, CS8855, CS8856, CS8903, CS9029, CS9030, CS9031, CS9032, CS9033,
+      CS9034, CS9035, CS9036, CS9037, CS9038, CS9039, CS9040, CS9042, CS9045, CS9258,
+      CS9263, CS9264, CS9266, CS9273
   - name: Operator declarations
     href: ./compiler-messages/overloaded-operator-errors.md
     displayName: >
@@ -999,14 +1002,6 @@ items:
       href: ../misc/cs0271.md
     - name: CS0272
       href: ../misc/cs0272.md
-    - name: CS0273
-      href: ../misc/cs0273.md
-    - name: CS0274
-      href: ../misc/cs0274.md
-    - name: CS0275
-      href: ../misc/cs0275.md
-    - name: CS0276
-      href: ../misc/cs0276.md
     - name: CS0281
       href: ../misc/cs0281.md
     - name: CS0283
@@ -1031,8 +1026,6 @@ items:
       href: ./compiler-messages/cs0433.md
     - name: CS0441
       href: ../misc/cs0441.md
-    - name: CS0442
-      href: ../misc/cs0442.md
     - name: CS0443
       href: ../misc/cs0443.md
     - name: CS0445
@@ -1101,16 +1094,8 @@ items:
       href: ./compiler-messages/interface-implementation-errors.md
     - name: CS0542
       href: ../misc/cs0542.md
-    - name: CS0544
-      href: ../misc/cs0544.md
     - name: CS0545
       href: ./compiler-messages/property-declaration-errors.md
-    - name: CS0546
-      href: ../misc/cs0546.md
-    - name: CS0547
-      href: ../misc/cs0547.md
-    - name: CS0548
-      href: ../misc/cs0548.md
     - name: CS0549
       href: ../misc/cs0549.md
     - name: CS0551
@@ -1145,8 +1130,6 @@ items:
       href: ../misc/cs0596.md
     - name: CS0601
       href: ../misc/cs0601.md
-    - name: CS0610
-      href: ../misc/cs0610.md
     - name: CS0619
       href: ../misc/cs0619.md
     - name: CS0620
@@ -1481,8 +1464,6 @@ items:
       href: ./compiler-messages/cs1705.md
     - name: CS1713
       href: ../misc/cs1713.md
-    - name: CS1715
-      href: ../misc/cs1715.md
     - name: CS1719
       href: ../misc/cs1719.md
     - name: CS1721
@@ -1639,8 +1620,6 @@ items:
       href: ./compiler-messages/cs8140.md
     - name: CS8141
       href: ./compiler-messages/cs8141.md
-    - name: CS8145
-      href: ./compiler-messages/property-declaration-errors.md
     - name: CS8146
       href: ./compiler-messages/cs8146.md
     - name: CS8147

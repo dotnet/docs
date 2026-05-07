@@ -35,6 +35,12 @@ f1_keywords:
   - "CS8703" # ERR_InvalidModifierForLanguageVersion  The modifier '{0}' is not valid for this item in C# {1}. Please use language version '{2}' or greater.
   - "CS8704" # ERR_ImplicitImplementationOfNonPublicInterfaceMember  Type does not implement interface member. Type cannot implicitly implement a non-public member in selected version.
   - "CS8706" # ERR_LanguageVersionDoesNotSupportInterfaceImplementationForMember  Type cannot implement interface member '{1}' in type '{2}' because feature '{3}' is not available in 
+  - "CS8830" # ERR_RuntimeDoesNotSupportCovariantReturnsOfClasses  Target runtime doesn't support covariant return types in overrides.
+  - "CS8831" # ERR_RuntimeDoesNotSupportCovariantPropertiesOfClasses  Target runtime doesn't support covariant types in overrides.
+  - "CS8888" # ERR_CannotSpecifyManagedWithUnmanagedSpecifiers  'managed' calling convention cannot be combined with unmanaged calling convention specifiers.
+  - "CS8889" # ERR_RuntimeDoesNotSupportUnmanagedDefaultCallConv  The target runtime doesn't support extensible or runtime-environment default calling conventions.
+  - "CS8890" # ERR_TypeNotFound  Type is not defined.
+  - "CS8891" # ERR_TypeMustBePublic  Type must be public to be used as a calling convention.
   - "CS8919"
   - "CS8929"
   - "CS8957" # ERR_NoImplicitConvTargetTypedConditional  Conditional expression is not valid in language version {0} because a common type was not found between '{1}' and '{2}'
@@ -95,6 +101,12 @@ helpviewer_keywords:
   - "CS8703"
   - "CS8704"
   - "CS8706"
+  - "CS8830"
+  - "CS8831"
+  - "CS8888"
+  - "CS8889"
+  - "CS8890"
+  - "CS8891"
   - "CS8957"
   - "CS8912"
   - "CS8919"
@@ -121,7 +133,7 @@ helpviewer_keywords:
   - "CS9271"
   - "CS9327"
   - "CS9328"
-ms.date: 05/23/2025
+ms.date: 05/07/2026
 ---
 # Resolve warnings related to language features and versions
 
@@ -146,6 +158,12 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS8652**: *The modifier is not valid for this item.*
 - **CS8704**: *Type does not implement interface member. It cannot implicitly implement a non-public member.*
 - **CS8706**: *Type cannot implement interface member because a feature is not available in this version.*
+- **CS8830**: *Target runtime doesn't support covariant return types in overrides. Return type must be 'type' to match overridden member 'member'*
+- **CS8831**: *Target runtime doesn't support covariant types in overrides. Type must be 'type' to match overridden member 'member'*
+- **CS8888**: *'managed' calling convention cannot be combined with unmanaged calling convention specifiers.*
+- **CS8889**: *The target runtime doesn't support extensible or runtime-environment default calling conventions.*
+- **CS8890**: *Type 'type' is not defined.*
+- **CS8891**: *Type 'type' must be public to be used as a calling convention.*
 - **CS8904**: *Invalid variance: The type parameter must be valid.*
 - **CS8912**: *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
 - **CS8919**: *Cannot implement specified interface member in type because the target runtime doesn't support static abstract members in interfaces*

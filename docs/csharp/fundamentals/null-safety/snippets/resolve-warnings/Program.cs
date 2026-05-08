@@ -23,8 +23,7 @@ internal static class Examples
     public static int LengthOfMessageUnsafe(string? message)
     {
         // Warning CS8602: dereference of a possibly null reference.
-        // return message.Length;
-        return message?.Length ?? 0;
+        return message.Length;
     }
     // </DereferenceWarning>
 
@@ -63,8 +62,7 @@ internal static class Examples
     public static void AssignmentWarning()
     {
         // Warning CS8600: converting null literal or possible null value to non-nullable type.
-        // string name = Lookup("nobody");
-        string name = Lookup("nobody") ?? string.Empty;
+        string name = Lookup("nobody");
         Console.WriteLine(name);
     }
     // </AssignmentWarning>
@@ -81,30 +79,30 @@ internal static class Examples
     // </AssignmentFixed>
 
     // <MissingAttribute>
-    public static bool IsPresentNoAttribute(string? value) =>
-        !string.IsNullOrEmpty(value);
+    public static bool IsPresent(string? text) =>
+        !string.IsNullOrEmpty(text);
 
-    public static void CallerWithoutAttribute(string? value)
+    public static void CallerWithoutAttribute(string? text)
     {
-        if (IsPresentNoAttribute(value))
+        if (IsPresent(text))
         {
             // Warning CS8602: dereference of a possibly null reference.
-            // The signature doesn't tell the compiler value is not-null here.
-            Console.WriteLine(value!.Length);
+            // The signature doesn't tell the compiler text is not-null here.
+            Console.WriteLine(text!.Length);
         }
     }
     // </MissingAttribute>
 
     // <WithAttribute>
-    public static bool IsPresent([NotNullWhen(true)] string? value) =>
-        !string.IsNullOrEmpty(value);
+    public static bool AttributedIsPresent([NotNullWhen(true)] string? text) =>
+        !string.IsNullOrEmpty(text);
 
-    public static void CallerWithAttribute(string? value)
+    public static void CallerWithAttribute(string? text)
     {
-        if (IsPresent(value))
+        if (AttributedIsPresent(text))
         {
-            // No warning: the attribute tells the compiler value is not-null.
-            Console.WriteLine(value.Length);
+            // No warning: the attribute tells the compiler text is not-null.
+            Console.WriteLine(text.Length);
         }
     }
     // </WithAttribute>
@@ -113,7 +111,7 @@ internal static class Examples
     public class PersonUninitialized
     {
         // Warning CS8618: Non-nullable property 'Name' is uninitialized.
-        public string Name { get; set; } = null!;
+        public string Name { get; set; }
     }
     // </UninitializedMember>
 

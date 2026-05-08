@@ -7,11 +7,8 @@ public enum QuestionType
     Text
 }
 
-public class SurveyQuestion
+public class SurveyQuestion(QuestionType typeOfQuestion, string text)
 {
-    public string QuestionText { get; }
-    public QuestionType TypeOfQuestion { get; }
-
-    public SurveyQuestion(QuestionType typeOfQuestion, string text) =>
-        (TypeOfQuestion, QuestionText) = (typeOfQuestion, text);
+    public string QuestionText { get; } = text;
+    public QuestionType TypeOfQuestion { get; } = typeOfQuestion;
 }

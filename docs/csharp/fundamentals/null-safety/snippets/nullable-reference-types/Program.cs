@@ -39,7 +39,7 @@ internal static class Examples
         public string? MiddleName { get; init; }
         public string LastName { get; } = lastName;
 
-        public string FullName => MiddleName is null
+        public override string ToString() => MiddleName is null
             ? $"{FirstName} {LastName}"
             : $"{FirstName} {MiddleName} {LastName}";
     }
@@ -47,7 +47,7 @@ internal static class Examples
     public static void DesignIntent()
     {
         Person p = new("Ada", "Lovelace") { MiddleName = "King" };
-        Console.WriteLine(p.FullName);
+        Console.WriteLine(p);
     }
     // </DesignIntent>
 

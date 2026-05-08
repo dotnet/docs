@@ -39,7 +39,7 @@ Or scope it to part of a file with a [preprocessor directive](../../language-ref
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullableDirective":::
 
-The context has two independent flags. The *annotation* flag controls whether `?` and `!` are meaningful in declarations. The *warning* flag controls whether the compiler emits diagnostics. You can enable each independently. Enabling warnings while leaving annotations off lets you address null-handling bugs before you take on annotating types. Enabling annotations while leaving warnings off lets you express your design intent in the API surface without producing diagnostics in implementation code that isn't ready yet. Either combination can be the right choice for a project at a given stage. For the migration trade-offs, see [Nullable migration strategies](migration-strategies.md).
+The context has two independent flags. The *annotation* flag controls whether `?` and `!` are meaningful in declarations. The *warning* flag controls whether the compiler emits diagnostics. You can enable each independently. Enabling warnings while leaving annotations off lets you address null-handling bugs before you take on annotating types. Enabling annotations while leaving warnings off lets you express your design intent in the API surface without producing diagnostics in implementation code that isn't ready yet. Either combination can be the right choice for a project at a given stage. For the migration trade-offs, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 ## Add a null check
 
@@ -126,12 +126,12 @@ If a helper method initializes the member, annotate the helper with <xref:System
 
 When a warning doesn't fit any of these patterns, the [Resolve nullable warnings](../../language-reference/compiler-messages/nullable-warnings.md) reference article lists the technique for every CS86xx warning the compiler emits.
 
-To plan a migration that progressively enables nullable reference types in an existing codebase, see [Nullable migration strategies](migration-strategies.md).
+To plan a migration that progressively enables nullable reference types in an existing codebase, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 ## Related content
 
 - [Nullable reference types](nullable-reference-types.md)
 - [Null operators](null-operators.md)
-- [Nullable migration strategies](migration-strategies.md)
+- [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md)
 - [Nullable static analysis attributes](../../language-reference/attributes/nullable-analysis.md)
 - [Resolve nullable warnings (compiler reference)](../../language-reference/compiler-messages/nullable-warnings.md)

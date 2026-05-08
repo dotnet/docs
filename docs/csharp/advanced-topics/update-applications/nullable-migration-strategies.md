@@ -9,9 +9,9 @@ ai-usage: ai-assisted
 # Nullable migration strategies
 
 > [!TIP]
-> **Starting a new project?** New projects created from .NET 6 or later templates already have `<Nullable>enable</Nullable>` set. You don't need a migration strategy—skip to [Resolve nullable warnings](resolve-warnings.md).
+> **Starting a new project?** New projects created from .NET 6 or later templates already have `<Nullable>enable</Nullable>` set. You don't need a migration strategy—skip to [Resolve nullable warnings](../../fundamentals/null-safety/resolve-warnings.md).
 >
-> **Maintaining an existing codebase?** Read [Nullable reference types](nullable-reference-types.md) first to understand contexts, annotations, and null-state. This article assumes you're familiar with those concepts and ready to plan a rollout.
+> **Maintaining an existing codebase?** Read [Nullable reference types](../../fundamentals/null-safety/nullable-reference-types.md) first to understand contexts, annotations, and null-state. This article assumes you're familiar with those concepts and ready to plan a rollout.
 
 When you turn on nullable reference types on a large project that started before nullable reference types were introduced, the compiler produces many warnings at once. Migration is about *sequencing* the work: choosing a default context, exposing warnings file by file or section by section, and converging on `<Nullable>enable</Nullable>` for the whole project. The right sequence depends on how active the codebase is and how much risk you can take in a single pass.
 
@@ -37,9 +37,9 @@ Pick the strategy that makes the next file you create do the right thing automat
 
 Your project file controls the global default. The `#nullable` preprocessor directives override it locally:
 
-:::code language="xml" source="snippets/migration-strategies/project-snippet.xml":::
+:::code language="xml" source="snippets/nullable-migration-strategies/project-snippet.xml":::
 
-:::code language="csharp" source="snippets/migration-strategies/Program.cs" id="DirectiveOverrides":::
+:::code language="csharp" source="snippets/nullable-migration-strategies/Program.cs" id="DirectiveOverrides":::
 
 ## Migrate file by file
 
@@ -47,7 +47,7 @@ The most predictable way to migrate a large project is to enable warnings or ann
 
 1. Pick a file. Start with the deepest leaf types in your dependency graph, then move outward. Annotating a type causes new warnings in its callers, so working bottom-up minimizes rework.
 1. Add the `#nullable` directive that opts the file into the new behavior. Use `#nullable enable` if you want both flags. Use `#nullable enable warnings` for warning-only.
-1. Address the warnings in the file using the techniques in [Resolve nullable warnings](resolve-warnings.md).
+1. Address the warnings in the file using the techniques in [Resolve nullable warnings](../../fundamentals/null-safety/resolve-warnings.md).
 1. Repeat for the next file.
 1. When every file in the project has its directive, remove the directives and set `<Nullable>enable</Nullable>` at the project level.
 
@@ -69,7 +69,7 @@ Lead with warnings when fixing latent <xref:System.NullReferenceException?displa
 Lead with annotations when stabilizing the public API surface is the priority. This sequence suits libraries: you can ship annotated signatures so consumers see the right contracts, then close out the internal warnings on your own schedule.
 
 1. **Phase 1 — Add annotations.** Set the project default to `annotations`. Reference types become non-nullable by default, but the compiler doesn't emit warnings, so the noise stays out of your way. Walk the public API and add `?` to every member that may legitimately return or accept `null`. Tighten the signatures that shouldn't. Because warnings are off, you can settle the API shape in focused commits without untangling the implementation at the same time.
-1. **Phase 2 — Address warnings.** Switch the project default to `enable`. The annotations you added in phase 1 now feed null-state analysis, so the warnings the compiler emits are higher quality from the start—each one points at code whose behavior doesn't match the contract you already published. Resolve them with the techniques in [Resolve nullable warnings](resolve-warnings.md).
+1. **Phase 2 — Address warnings.** Switch the project default to `enable`. The annotations you added in phase 1 now feed null-state analysis, so the warnings the compiler emits are higher quality from the start—each one points at code whose behavior doesn't match the contract you already published. Resolve them with the techniques in [Resolve nullable warnings](../../fundamentals/null-safety/resolve-warnings.md).
 
 ### Choosing between the orderings
 
@@ -94,11 +94,11 @@ After every file participates in the project default and the `<Nullable>enable</
 - Remove `null!` and `default!` initializers that you added only to silence warnings during migration. Replace them with proper initialization, or change the member type to nullable.
 - Spot-check the public API. Every member that returns or accepts `null` should be annotated with `?`. The annotations are part of your contract once the package ships.
 
-You're now in the same state as new projects: nullable reference types are part of the type system, and any new warnings reflect a real mismatch between declarations and code. Use [Resolve nullable warnings](resolve-warnings.md) to address them as they come up.
+You're now in the same state as new projects: nullable reference types are part of the type system, and any new warnings reflect a real mismatch between declarations and code. Use [Resolve nullable warnings](../../fundamentals/null-safety/resolve-warnings.md) to address them as they come up.
 
 ## Related content
 
-- [Nullable reference types](nullable-reference-types.md)
-- [Resolve nullable warnings](resolve-warnings.md)
+- [Nullable reference types](../../fundamentals/null-safety/nullable-reference-types.md)
+- [Resolve nullable warnings](../../fundamentals/null-safety/resolve-warnings.md)
 - [Nullable static analysis attributes](../../language-reference/attributes/nullable-analysis.md)
 - [Working with nullable reference types in EF Core](/ef/core/miscellaneous/nullable-reference-types)

@@ -170,5 +170,5 @@ The finished sample is in the [csharp/NullableIntroduction](https://github.com/d
 
 - [Nullable reference types](../null-safety/nullable-reference-types.md)
 - [Resolve nullable warnings](../null-safety/resolve-warnings.md)
-- [Nullable migration strategies](../null-safety/migration-strategies.md)
+- [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md)
 - [Working with nullable reference types in EF Core](/ef/core/miscellaneous/nullable-reference-types)

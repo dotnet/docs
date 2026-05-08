@@ -29,7 +29,7 @@ For new projects targeting .NET 6 or later, the project template includes the `<
 
 :::code language="xml" source="snippets/nullable-reference-types/project-snippet.xml":::
 
-For migration approaches that enable the feature gradually, file by file or warning-only first. For more information on migration, see [Nullable migration strategies](migration-strategies.md).
+For migration approaches that enable the feature gradually, file by file or warning-only first. For more information on migration, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 ## Express intent with annotations
 
@@ -123,6 +123,6 @@ Initialize array elements as part of creating the array. [Collection expressions
 
 - [Tutorial: Express your design intent with nullable and non-nullable reference types](../tutorials/nullable-reference-types.md)
 - [Resolve nullable warnings](resolve-warnings.md)
-- [Nullable migration strategies](migration-strategies.md)
+- [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md)
 - [Nullable static analysis attributes](../../language-reference/attributes/nullable-analysis.md)
 - [Resolve nullable warnings (compiler reference)](../../language-reference/compiler-messages/nullable-warnings.md)

@@ -206,7 +206,7 @@ You address almost all warnings using one of five techniques:
 - Adding attributes that describe null semantics.
 - Initializing variables correctly.
 
-If you're new to using nullable reference types, the [overview of nullable reference types](../../fundamentals/null-safety/nullable-reference-types.md) provides a background on what nullable reference types solve and how they work to provide warnings to possible mistakes in your code. You can also check the guidance on [migrating to nullable reference types](../../fundamentals/null-safety/migration-strategies.md) to learn more about enabling nullable reference types in an existing project.
+If you're new to using nullable reference types, the [overview of nullable reference types](../../fundamentals/null-safety/nullable-reference-types.md) provides a background on what nullable reference types solve and how they work to provide warnings to possible mistakes in your code. You can also check the guidance on [migrating to nullable reference types](../../advanced-topics/update-applications/nullable-migration-strategies.md) to learn more about enabling nullable reference types in an existing project.
 
 ## Configure nullable context
 
@@ -241,7 +241,7 @@ The nullable context has two independent flags that control different aspects:
 For detailed information about nullable contexts and migration strategies, see:
 
 - [Nullable reference types overview](../../fundamentals/null-safety/nullable-reference-types.md#nullable-context)
-- [Update a codebase with nullable reference types](../../fundamentals/null-safety/migration-strategies.md)
+- [Update a codebase with nullable reference types](../../advanced-topics/update-applications/nullable-migration-strategies.md)
 
 ## Incorrect annotation syntax
 

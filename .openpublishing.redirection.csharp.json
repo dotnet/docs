@@ -1,6 +1,10 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/csharp/fundamentals/null-safety/migration-strategies.md",
+      "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
+    },
+    {
       "source_path_from_root": "/docs/csharp/fundamentals/types/anonymous-types.md",
       "redirect_url": "/dotnet/csharp/fundamentals/types/tuples"
     },
@@ -587,6 +591,10 @@
     {
       "source_path_from_root": "/docs/csharp/features.md",
       "redirect_url": "/dotnet/csharp/programming-guide/concepts"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/fundamentals/null-safety/migration-strategies.md",
+      "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
     {
       "source_path_from_root": "/docs/csharp/fundamentals/types/anonymous-types.md",
@@ -3367,11 +3375,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/nullable-attributes.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/null-safety/migration-strategies"
+      "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
     {
       "source_path_from_root": "/docs/csharp/nullable-migration-strategies.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/null-safety/migration-strategies"
+      "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
     {
       "source_path_from_root": "/docs/csharp/nullable-references.md",
@@ -5618,7 +5626,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/upgrade-to-nullable-references.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/null-safety/migration-strategies"
+      "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
     {
       "source_path_from_root": "/docs/csharp/type-system.md",
@@ -5720,7 +5728,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/whats-new/tutorials/upgrade-to-nullable-references.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/null-safety/migration-strategies"
+      "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
     {
       "source_path_from_root": "/docs/csharp/write-safe-efficient-code.md",

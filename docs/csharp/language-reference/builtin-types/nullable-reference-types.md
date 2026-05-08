@@ -70,7 +70,7 @@ The preceding examples demonstrate how compiler's static analysis determines the
 
 ## Setting the nullable context
 
-You can control the nullable context in two ways. At the project level, add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../fundamentals/null-safety/migration-strategies.md). Before .NET 6, new projects use the default, `<Nullable>disable</Nullable>`. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
+You can control the nullable context in two ways. At the project level, add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../advanced-topics/update-applications/nullable-migration-strategies.md). Before .NET 6, new projects use the default, `<Nullable>disable</Nullable>`. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
 
 ## C# language specification
 

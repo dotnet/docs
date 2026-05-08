@@ -302,8 +302,6 @@ items:
     href: fundamentals/null-safety/nullable-reference-types.md
   - name: Resolve nullable warnings
     href: fundamentals/null-safety/resolve-warnings.md
-  - name: Nullable migration strategies
-    href: fundamentals/null-safety/migration-strategies.md
   - name: "Tutorial: Express your design intent with nullable reference types"
     href: fundamentals/tutorials/nullable-reference-types.md
 - name: C# concepts
@@ -351,6 +349,10 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Update existing apps
+    items:
+    - name: Nullable migration strategies
+      href: advanced-topics/update-applications/nullable-migration-strategies.md
   - name: Reflection and attributes
     items:
     - name: Overview

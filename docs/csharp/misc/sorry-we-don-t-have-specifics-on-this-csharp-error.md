@@ -306,6 +306,36 @@ f1_keywords:
   - "CS9350"
   - "CS9351"
   - "CS9353"
+# Collection arguments:
+  - "CS9354"
+  - "CS9355"
+  - "CS9356"
+  - "CS9357"
+  - "CS9358"
+  - "CS9359"
+# unsafe evolution
+  - "CS9360"
+  - "CS9361"
+  - "CS9362"
+  - "CS9363"
+  - "CS9364"
+  - "CS9365"
+  - "CS9366"
+# More unions:
+  - "CS9369"
+  - "CS9370"
+  - "CS9371"
+  - "CS9372"
+  - "CS9373"
+  - "CS9374"
+  - "CS9375"
+# More unsafe
+  - "CS9376"
+  - "CS9377"
+# Shebang
+  - "CS9378"
+# More unsafe
+  - "CS9379"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

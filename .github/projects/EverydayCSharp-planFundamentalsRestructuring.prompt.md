@@ -13,8 +13,8 @@
 - Cross reference liberally. However, it's assumed that readers are familiar with content in the "Get started" section. Links to that section should be minimal, and possibly scoped to recommendations for beginners to start there instead. Links and cross references should encourage readers to learn more and dive deeper into the fundamental concepts covered in this section.
 - If and only if a feature was first added in one of the last three released versions (C# 12 - 14) mention the first it was first introduced.
 - Every article must include a tip near the top that identifies where the article sits in the four-tier content structure (*Get started* → *Fundamentals* → *Deep dives* → *Reference*), describes who it's written for, and routes readers to the right tier based on their experience level (Goal 1).
-- Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the proposed TOC. When defining a concept, link to articles that provide more detail. Definitions are less important for concepts that aren't related to the C# language: Remember the goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
-- Similarly, define all terms that may be unfamiliar to the reader when they are first introduced. Link to articles that provide more detail on these terms. Remember that the audience for Fundamentals articles may not be familiar with all C# terminology, or all compputer science terminology. Provide clear definitions and context.
+- Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the proposed TOC. Remember that this is "fundamentals" content. Any term likely to be unfamiliar to a new C# developer should be defined. When defining a concept, link to articles that provide more detail. Definitions are less important for concepts that aren't related to the C# language: Remember the goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
+- Similarly, define all terms that may be unfamiliar to the reader when they are first introduced. Link to articles that provide more detail on these terms. Remember that the audience for Fundamentals articles is new to C# and the .NET ecosystem. They are likely not to be familiar with all C# terminology, or all computer science terminology. Provide clear definitions and context.
 - Set the `ms.topic` metadata value in each article's YAML front matter to match the article's content type (`overview`, `tutorial`, `concept`, `how-to`, `troubleshooting`, or `reference`).
 - After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links). This is mandatory for every article before it can be merged to ensure consistency and completeness across the Fundamentals section.
 - Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
@@ -92,7 +92,7 @@
 
 ### PR 7 — Tutorial: Choosing between tuples, records, structs, and classes
 
-[#53160](https://github.com/dotnet/docs/pull/53160) *In review*
+[#53160](https://github.com/dotnet/docs/pull/53160) *Merged*
 
 > ~4 files
 
@@ -103,7 +103,7 @@
 
 ### PR 8 — Null safety: overview, nullable value types, null operators
 
-[#53509](https://github.com/dotnet/docs/pull/53509) *In review*
+[#53509](https://github.com/dotnet/docs/pull/53509) *Merged*
 
 > ~10 files
 
@@ -114,6 +114,8 @@
 5. Snippet files + toc.yml
 
 ### PR 9 — Null safety: NRT, warnings, migration, tutorial
+
+[#53542](https://github.com/dotnet/docs/pull/53542) *In review*
 
 > ~10 files
 

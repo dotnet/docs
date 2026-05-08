@@ -82,6 +82,14 @@ items:
       href: fundamentals/null-safety/nullable-value-types.md
     - name: Null operators
       href: fundamentals/null-safety/null-operators.md
+  - name: Strings
+    items:
+    - name: Overview
+      href: fundamentals/strings/index.md
+    - name: Raw string literals
+      href: fundamentals/strings/raw-string-literals.md
+    - name: nameof operator
+      href: fundamentals/strings/nameof.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records

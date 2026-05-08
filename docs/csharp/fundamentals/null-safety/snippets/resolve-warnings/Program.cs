@@ -88,7 +88,7 @@ internal static class Examples
         {
             // Warning CS8602: dereference of a possibly null reference.
             // The signature doesn't tell the compiler text is not-null here.
-            Console.WriteLine(text!.Length);
+            Console.WriteLine(text.Length);
         }
     }
     // </MissingAttribute>

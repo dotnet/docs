@@ -80,8 +80,14 @@ items:
       href: fundamentals/null-safety/index.md
     - name: Nullable value types
       href: fundamentals/null-safety/nullable-value-types.md
+    - name: Nullable reference types
+      href: fundamentals/null-safety/nullable-reference-types.md
+    - name: Resolve nullable warnings
+      href: fundamentals/null-safety/resolve-warnings.md
     - name: Null operators
       href: fundamentals/null-safety/null-operators.md
+    - name: "Tutorial: Express your design intent with nullable reference types"
+      href: fundamentals/tutorials/nullable-reference-types.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -296,14 +302,6 @@ items:
     href: asynchronous-programming/cancel-async-tasks-after-a-period-of-time.md
   - name: Generate and consume asynchronous streams
     href: asynchronous-programming/generate-consume-asynchronous-stream.md
-- name: Null safety
-  items:
-  - name: Nullable reference types
-    href: fundamentals/null-safety/nullable-reference-types.md
-  - name: Resolve nullable warnings
-    href: fundamentals/null-safety/resolve-warnings.md
-  - name: "Tutorial: Express your design intent with nullable reference types"
-    href: fundamentals/tutorials/nullable-reference-types.md
 - name: C# concepts
   items:
   - name: Methods

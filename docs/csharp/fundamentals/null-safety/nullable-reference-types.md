@@ -23,7 +23,7 @@ Three building blocks work together:
 
 The compiler combines these signals to produce diagnostics. Warnings on a non-nullable variable mean the variable might receive `null`. Warnings on a nullable variable mean the code might *dereference* it without a null check. *Dereference* means to use the value the variable refers to—for example, to call a method on it (`variable.Method()`), read a property (`variable.Property`), or index into it (`variable[0]`). Dereferencing `null` throws an exception at run time. Either kind of warning means the code's behavior doesn't match its stated design.
 
-## Enable nullable reference types
+## Nullable context
 
 For new projects targeting .NET 6 or later, the project template includes the `<Nullable>enable</Nullable>` element by default. To enable the feature in an existing project, add it manually:
 

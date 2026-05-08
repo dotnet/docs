@@ -1,5 +1,5 @@
 ---
-title: Resolve nullable warnings
+title: Nullable reference type warnings
 description: Several compiler warnings indicate code that isn't null-safe. Learn how to address those warnings by making your code more resilient.
 f1_keywords:
   - "CS8597" # WRN_ThrowPossibleNull: Thrown value may be null.
@@ -126,7 +126,7 @@ helpviewer_keywords:
   - "CS8847"
 ms.date: 02/20/2025
 ---
-# Resolve nullable warnings
+# Nullable reference type warnings
 
 The purpose of nullable warnings is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that might lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
 

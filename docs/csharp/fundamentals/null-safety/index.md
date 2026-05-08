@@ -19,13 +19,13 @@ ai-usage: ai-assisted
 
 C# gives you three complementary tools to write null-safe code:
 
-- **Nullable value types**: let a value type like `int` or `bool` also hold `null`
+- **Nullable value types**: let a value type such as `int` or `bool` also hold `null`
 - **Nullable reference types**: let the compiler track whether a reference might be `null`
 - **Null operators**: express null-safe access and fallback logic concisely
 
 ## Nullable value types
 
-Value types like `int`, `double`, and `bool` can't hold `null` by default. Add `?` to the type name to create a *nullable value type* that holds either a value or `null`:
+Value types such as `int`, `double`, and `bool` can't hold `null` by default. Add `?` to the type name to create a *nullable value type* that holds either a value or `null`:
 
 :::code language="csharp" source="snippets/null-safety-overview/Program.cs" ID="NvtIntro":::
 

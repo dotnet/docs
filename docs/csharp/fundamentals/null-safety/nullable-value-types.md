@@ -1,5 +1,5 @@
 ---
-title: "Nullable value types: C# Fundamentals"
+title: "Nullable value types in C#"
 description: Learn how to use nullable value types (T?) in C# to represent value types that can be absent or undefined.
 ms.date: 04/30/2026
 ms.topic: concept-article
@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 A *nullable value type* `T?` represents all values of its underlying value type `T`, plus an additional `null` value. A variable of type `int?` holds any integer or `null` to represent "no value."
 
-Value types like `int`, `bool`, and `DateTime` can't hold `null` by default. This behavior is efficient and prevents many errors. However, this limitation creates a problem when a value might genuinely be absent. A common scenario is reading from a database: an integer column might contain a number, or it might contain no value at all (`NULL` in SQL). A plain `int` can't represent that absence, but `int?` can.
+Value types such as `int`, `bool`, and `DateTime` can't hold `null` by default. This behavior is efficient and prevents many errors. However, this limitation creates a problem when a value might genuinely be absent. A common scenario is reading from a database: an integer column might contain a number, or it might contain no value at all (`NULL` in SQL). A plain `int` can't represent that absence, but `int?` can.
 
 ## Declare a nullable value type
 

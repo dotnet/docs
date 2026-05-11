@@ -23,7 +23,7 @@ dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--no-self-contained] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
     [-p|--property:<PROPERTYNAME>=<VALUE>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained] [--source <SOURCE>]
-    [-t|--target <TARGET>]
+    [-t|--target:<TARGET>]
     [--tl:[auto|on|off]] [ --ucr|--use-current-runtime]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
@@ -157,15 +157,15 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   The URI of the NuGet package source to use during the restore operation.
 
-- **`-t|--target <TARGET>`**
+- **`-t|--target:<TARGET>`**
 
-    Specifies one or more MSBuild targets to run during the build, instead of the default target. Multiple targets can be specified by separating them with a semicolon or by repeating the option. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`.. For more information about targets, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
+    Specifies one or more MSBuild targets to run during the build, instead of the default target. Multiple targets can be specified by separating them with a semicolon or by repeating the option. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`. For more information about targets, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
 
-```dotnetcli
-dotnet build -t:Clean
-dotnet build -t:Rebuild
-dotnet build -t:Clean;Build
- ```
+  ```dotnetcli
+  dotnet build -t:Clean
+  dotnet build -t:Rebuild
+  dotnet build -t:Build
+  ```
 
 - [!INCLUDE [tl](includes/cli-tl.md)]
 
@@ -215,12 +215,12 @@ dotnet build -t:Clean;Build
 
 - Build the project and set version 1.2.3.4 as a build parameter using the `-p` [MSBuild option](#msbuild):
 
-   ```dotnetcli
+  ```dotnetcli
   dotnet build -p:Version=1.2.3.4
   ```
 
 - Run the `Clean` target to remove previous build outputs:
 
-    ```dotnetcli
-    dotnet build -t:Clean
-    ```
+  ```dotnetcli
+  dotnet build -t:Clean
+  ```

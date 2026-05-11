@@ -22,9 +22,9 @@ This article covers best practices for working with ZIP and TAR archives in .NET
 
 .NET provides built-in support for two of the most common archive formats:
 
-- **ZIP** (`System.IO.Compression`): A compressed archive format that bundles multiple files and directories into a single file. ZIP supports per-entry compression (Deflate, Deflate64, Stored). The primary types are <xref:System.IO.Compression.ZipArchive> for reading and writing archives, <xref:System.IO.Compression.ZipFile> for file-based convenience methods, and <xref:System.IO.Compression.ZipFileExtensions> for extraction helpers.
+- **ZIP** (`System.IO.Compression`): A compressed archive format that bundles multiple files and directories into a single file. ZIP supports per-entry compression (Deflate, Deflate64, Stored). The primary types are <xref:System.IO.Compression.ZipArchive?displayProperty=fullName> for reading and writing archives, <xref:System.IO.Compression.ZipFile?displayProperty=fullName> for file-based convenience methods, and <xref:System.IO.Compression.ZipFileExtensions?displayProperty=fullName> for extraction helpers.
 
-- **TAR** (`System.Formats.Tar`): A Unix-origin archive format that stores files, directories, and metadata (permissions, ownership, timestamps) without compression. .NET supports the V7, UStar, PAX, and GNU formats. The primary types are <xref:System.Formats.Tar.TarReader> and <xref:System.Formats.Tar.TarWriter> for streaming access, and <xref:System.Formats.Tar.TarFile> for file-based convenience methods. TAR is often combined with a compression layer (for example, <xref:System.IO.Compression.GZipStream> for `.tar.gz` files).
+- **TAR** (`System.Formats.Tar`): A Unix-origin archive format that stores files, directories, and metadata (permissions, ownership, timestamps) without compression. .NET supports the V7, UStar, PAX, and GNU formats. The primary types are <xref:System.Formats.Tar.TarReader?displayProperty=fullName> and <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> for streaming access, and <xref:System.Formats.Tar.TarFile?displayProperty=fullName> for file-based convenience methods. TAR is often combined with a compression layer (for example, <xref:System.IO.Compression.GZipStream?displayProperty=fullName> for `.tar.gz` files).
 
 ## Choose the right API
 
@@ -64,11 +64,14 @@ Best for: large archives, selective extraction, untrusted input, and custom proc
 
 ## Work with trusted archives
 
-When the archive source is known and trusted, the convenience methods give you a safe, one-line extraction path:
+When the archive source is known and trusted, the [convenience methods](#convenience-apis-one-shot-operations) give you a safe, one-line extraction path:
 
-- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*> and <xref:System.Formats.Tar.TarFile.ExtractToDirectory*> handle path validation automatically. They sanitize entry names, resolve each entry's full path, and verify the resolved path stays inside the destination directory.
-- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*> has overloads that default to not overwriting existing files. All <xref:System.Formats.Tar.TarFile.ExtractToDirectory*> overloads require the `overwriteFiles` parameter, so you must always choose explicitly.
+- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> handle path validation automatically. They sanitize entry names, resolve each entry's full path, and verify the resolved path stays inside the destination directory.
+
+- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> has overloads that default to not overwriting existing files. All <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> overloads require the `overwriteFiles` parameter, so you must always choose explicitly.
+
 - When overwriting is enabled during ZIP extraction, .NET extracts to a temporary file first and only replaces the target after successful extraction. This prevents partial corruption if the extraction fails.
+
 - TAR extraction handles overwriting differently: it deletes the existing file before writing the replacement. If extraction fails after deletion (for example, due to an I/O error or process interruption), the original file is lost and the replacement might be incomplete. Consider backing up critical files before overwriting with TAR extraction.
 
 > [!NOTE]
@@ -100,13 +103,13 @@ Neither <xref:System.IO.Compression.ZipArchive> nor <xref:System.Formats.Tar.Tar
 >
 > Always enforce limits on decompressed size and entry count when extracting untrusted archives.
 
-#### Enforce per-entry size limits
+- Enforce per-entry size limits
 
-:::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractEntry":::
+  :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractEntry":::
 
-#### Track aggregate size and entry count
+- Track aggregate size and entry count
 
-:::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractArchive":::
+  :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractArchive":::
 
 > [!TIP]
 > The same approach applies to TAR archives. Since TAR files are read entry-by-entry via <xref:System.Formats.Tar.TarReader.GetNextEntry*>, track both the cumulative data size and entry count as you iterate.
@@ -128,9 +131,9 @@ Key points:
 > [!WARNING]
 > The following APIs leave you completely unprotected against path traversal. You must validate paths yourself before calling them.
 
-- <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*> writes to whatever path you give it—no sanitization, no boundary check.
-- <xref:System.IO.Compression.ZipArchiveEntry.Open*> returns a raw `Stream`—the caller decides where to write.
-- <xref:System.Formats.Tar.TarEntry.ExtractToFile*> writes to the given path without validating it against any directory boundary.
+- <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*?displayProperty=nameWithType> writes to whatever path you give it—no sanitization, no boundary check.
+- <xref:System.IO.Compression.ZipArchiveEntry.Open*?displayProperty=nameWithType> returns a raw `Stream`—the caller decides where to write.
+- <xref:System.Formats.Tar.TarEntry.ExtractToFile*?displayProperty=nameWithType> writes to the given path without validating it against any directory boundary.
 
 **Vulnerable pattern—DO NOT USE without validation:**
 
@@ -154,9 +157,9 @@ If you need to preserve links, validate that the link target resolves within you
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="ValidateSymlink":::
 
-If your use case requires extracting archives with hard links but you want to avoid hard links on disk, <xref:System.Formats.Tar.TarHardLinkMode.CopyContents> copies the file content instead of creating a hard link. This eliminates hard-link-based attacks and produces more portable output on Windows.
+If your use case requires extracting archives with hard links but you want to avoid hard links on disk, <xref:System.Formats.Tar.TarHardLinkMode.CopyContents?displayProperty=nameWithType> copies the file content instead of creating a hard link. This eliminates hard-link-based attacks and produces more portable output on Windows.
 
-For reference, <xref:System.Formats.Tar.TarFile.ExtractToDirectory*> validates both the entry path and link target path against the destination directory boundary. If either resolves outside, an <xref:System.IO.IOException> is thrown. <xref:System.Formats.Tar.TarEntry.ExtractToFile*> rejects symbolic and hard link entries entirely—it throws <xref:System.InvalidOperationException>.
+For reference, <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> validates both the entry path and link target path against the destination directory boundary. If either resolves outside, an <xref:System.IO.IOException> is thrown. <xref:System.Formats.Tar.TarEntry.ExtractToFile*?displayProperty=nameWithType> rejects symbolic and hard link entries entirely—it throws <xref:System.InvalidOperationException>.
 
 ### Complete safe extraction examples
 
@@ -184,23 +187,23 @@ Understanding how .NET manages memory for ZIP and TAR operations helps you avoid
 
 ### ZipArchive memory usage
 
-Don't use <xref:System.IO.Compression.ZipArchiveMode.Update> for large or untrusted archives. When you open a <xref:System.IO.Compression.ZipArchive> in `Update` mode and call <xref:System.IO.Compression.ZipArchiveEntry.Open*> or `OpenAsync()` on an entry, its uncompressed data is loaded into a <xref:System.IO.MemoryStream> to support in-place modifications. Accessing entry metadata (such as <xref:System.IO.Compression.ZipArchiveEntry.FullName>, <xref:System.IO.Compression.ZipArchiveEntry.Length>, or <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes>) does not trigger decompression. For large or malicious archives, opening entry content streams can cause <xref:System.OutOfMemoryException>. Check <xref:System.IO.Compression.ZipArchiveEntry.Length> before calling <xref:System.IO.Compression.ZipArchiveEntry.Open*> to avoid decompressing unexpectedly large entries.
+Don't use <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> for large or untrusted archives. When you open a <xref:System.IO.Compression.ZipArchive> in `Update` mode and call <xref:System.IO.Compression.ZipArchiveEntry.Open*> or <xref:System.IO.Compression.ZipArchiveEntry.OpenAsync*> on an entry, its uncompressed data is loaded into a <xref:System.IO.MemoryStream> to support in-place modifications. Accessing entry metadata (such as <xref:System.IO.Compression.ZipArchiveEntry.FullName>, <xref:System.IO.Compression.ZipArchiveEntry.Length>, or <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes>) does not trigger decompression. For large or malicious archives, opening entry content streams can cause <xref:System.OutOfMemoryException>. Check <xref:System.IO.Compression.ZipArchiveEntry.Length> before calling <xref:System.IO.Compression.ZipArchiveEntry.Open*> to avoid decompressing unexpectedly large entries.
 
-Additionally, when you open a <xref:System.IO.Compression.ZipArchive> in <xref:System.IO.Compression.ZipArchiveMode.Read> mode with an **unseekable** stream (for example, a network stream), the runtime buffers the entire archive contents in memory to enable seeking through the central directory.
+Additionally, when you open a <xref:System.IO.Compression.ZipArchive> in <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> mode with an **unseekable** stream (for example, a network stream), the runtime buffers the entire archive contents in memory to enable seeking through the central directory.
 
-**Recommendation:** Only use `Update` mode for archives you trust and know are small enough to fit in memory. <xref:System.IO.Compression.ZipArchiveMode.Read> and <xref:System.IO.Compression.ZipArchiveMode.Create> modes are safer because they stream entry data rather than buffering it entirely in memory. To modify a large archive, open the original in `Read` mode, create a new archive in `Create` mode, and selectively copy entries:
+**Recommendation:** Only use `Update` mode for archives you trust and know are small enough to fit in memory. <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> and <xref:System.IO.Compression.ZipArchiveMode.Create?displayProperty=nameWithType> modes are safer because they stream entry data rather than buffering it entirely in memory. To modify a large archive, open the original in `Read` mode, create a new archive in `Create` mode, and selectively copy entries:
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="StreamingApproach":::
 
 ### TAR streaming model
 
-<xref:System.Formats.Tar.TarReader> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*> call. If you need to retain entry data, either copy it immediately or pass `copyContents: true` to <xref:System.Formats.Tar.TarReader.GetNextEntry*>, which copies the entry data into a separate <xref:System.IO.MemoryStream> that remains valid after advancing. Like <xref:System.IO.Compression.ZipArchiveMode.Update>, `copyContents: true` loads the full entry into memory, so check entry sizes before using it with untrusted archives.
+<xref:System.Formats.Tar.TarReader?displayProperty=fullName> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> call. If you need to retain entry data, either copy it immediately or pass `copyContents: true` to <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType>, which copies the entry data into a separate <xref:System.IO.MemoryStream> that remains valid after advancing. Like <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType>, `copyContents: true` loads the full entry into memory, so check entry sizes before using it with untrusted archives.
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="TarStreaming":::
 
 ### Thread safety
 
-<xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader>, and <xref:System.Formats.Tar.TarWriter> are not thread-safe. Don't access an instance from multiple threads concurrently. If you need to read multiple archives in parallel, open a separate instance per thread. For writing, synchronize access externally—multiple writers can't safely target the same archive file concurrently.
+<xref:System.IO.Compression.ZipArchive?displayProperty=fullName>, <xref:System.Formats.Tar.TarReader?displayProperty=fullName>, and <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> are not thread-safe. Don't access an instance from multiple threads concurrently. If you need to read multiple archives in parallel, open a separate instance per thread. For writing, synchronize access externally—multiple writers can't safely target the same archive file concurrently.
 
 ## Platform considerations
 
@@ -212,8 +215,8 @@ Archive behavior can vary between Windows and Unix. Keep these differences in mi
 
 ### Unix file permissions
 
-- **ZIP:** Unix permissions are stored in the upper 16 bits of <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes>. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because .NET on Windows sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
-- **TAR:** The <xref:System.Formats.Tar.TarEntry.Mode> property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime applies only the 9 ownership bits (rwx for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped for security.
+- **ZIP:** Unix permissions are stored in the upper 16 bits of <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes?displayProperty=nameWithType>. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because .NET on Windows sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
+- **TAR:** The <xref:System.Formats.Tar.TarEntry.Mode?displayProperty=nameWithType> property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime applies only the 9 ownership bits (rwx for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped for security.
 
 When processing untrusted archives, be aware that extracted files may have executable permissions set by the archive author. Untrusted archives could contain malicious executable files.
 
@@ -241,7 +244,7 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 ### ZIP comments and extra fields
 
 - **Archive and entry comments** are arbitrary strings. If your application displays or processes comments, sanitize them appropriately.
-- **Extra fields** are binary key-value pairs attached to each entry. The runtime preserves unknown extra fields and trailing data when reading and writing archives in <xref:System.IO.Compression.ZipArchiveMode.Update> mode and round-trips them as-is. If your application reads or interprets extra fields, validate their contents.
+- **Extra fields** are binary key-value pairs attached to each entry. The runtime preserves unknown extra fields and trailing data when reading and writing archives in <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> mode and round-trips them as-is. If your application reads or interprets extra fields, validate their contents.
 - **Entry name encoding:** when writing, the runtime uses ASCII for entry names that contain only ASCII printable characters (32-126) and UTF-8 (with the language encoding flag set) for names that contain other characters. When reading without a custom encoding, entries with or without the language encoding flag are decoded as UTF-8 (which also correctly decodes ASCII). Use the `entryNameEncoding` parameter on <xref:System.IO.Compression.ZipArchive> to override encoding when needed, but be aware the override affects all entries uniformly.
 
 ## Encryption considerations (.NET 11+)
@@ -331,11 +334,11 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 - **Path traversal:** Validate all destination paths with `Path.GetFullPath()` + `StartsWith()`.
 - **Decompression bombs:** Enforce limits on decompressed size (per-entry and total) and entry count.
 - **Symlink/hardlink attacks (TAR):** Validate link targets resolve within the destination, or skip link entries entirely.
-- **Memory limits:** Avoid <xref:System.IO.Compression.ZipArchiveMode.Update> for large untrusted archives. Avoid <xref:System.IO.Compression.ZipArchiveMode.Read> mode with unseekable streams from untrusted sources.
-- **Thread safety:** Don't share <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader>, or <xref:System.Formats.Tar.TarWriter> instances across threads.
+- **Memory limits:** Avoid <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> for large untrusted archives. Avoid <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> mode with unseekable streams from untrusted sources.
+- **Thread safety:** Don't share <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader?displayProperty=fullName>, or <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> instances across threads.
 - **Untrusted metadata:** Treat entry names, comments, and extra fields as untrusted input. Sanitize before display or processing.
 - **Overwrite behavior:** Default to `overwrite: false`.
-- **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
+- **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive?displayProperty=fullName>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
 
 ## Related content
 

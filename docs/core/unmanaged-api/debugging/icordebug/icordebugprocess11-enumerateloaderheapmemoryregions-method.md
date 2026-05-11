@@ -16,7 +16,7 @@ topic_type:
 ---
 # ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method
 
-[Supported in .NET 5 and later versions.]
+[Supported in .NET 5-.NET 10.]
 
 Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap-loader` command.
 

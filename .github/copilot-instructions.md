@@ -95,6 +95,13 @@ When adapting content from external sources like blog posts into documentation:
 - Note all generated sections requiring expert review.
 - Clear warnings about any uncertainties.
 
+## Writing Style
+
+When you create or edit documentation, apply these style rules to the content you produce:
+
+- **Avoid gerunds** — Don't use -ing verb forms where they obscure who performs the action. Write "When you work with LLMs..." instead of "When working with LLMs...". Write "Before you deploy the application..." instead of "Before deploying the application...".
+- **Lead with reasons** — Put the reason or purpose at the beginning of a sentence, not the end. Write "For better performance, cache and reuse the tokenizer" instead of "Cache and reuse the tokenizer for better performance". Write "To improve security, use HTTPS" instead of "Use HTTPS to improve security".
+
 ## Special Cases
 
 ### Breaking Changes

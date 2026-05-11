@@ -74,9 +74,9 @@ Before the .NET 7 SDK, the **AnalysisLevel** overwrote the **WarningLevel**.
 
 | Analysis level   | Meaning |
 |------------------|---------|
-| 5                | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression). |
+| 5                | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023---the-second-operand-of-an-is-or-as-operator-may-not-be-static-type). |
 | 6                | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences). |
-| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters). |
+| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters-such-names-may-become-reserved-for-the-language). |
 | latest (default) | Displays all informational warnings up to and including the current release. |
 | preview          | Displays all informational warnings up to and including the latest preview release. |
 | none             | Turns off all informational warnings. |

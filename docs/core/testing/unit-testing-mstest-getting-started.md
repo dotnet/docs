@@ -52,7 +52,7 @@ For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-t
 When you `build` the project, all needed components are restored and installed using the standard NuGet workflow. You can use the same tooling (for example, `dotnet test` or Visual Studio) as any other test project.
 
 > [!TIP]
-> By default, MSTest.Sdk uses the [MSTest runner with Microsoft.Testing.Platform](./unit-testing-mstest-running-tests.md). For advanced configuration options such as extension profiles, switching to VSTest, or integrating with Aspire and Playwright, see [MSTest SDK configuration](./unit-testing-mstest-sdk.md).
+> By default, MSTest.Sdk uses the [MSTest runner with MTP](./unit-testing-mstest-running-tests.md). For advanced configuration options such as extension profiles, switching to VSTest, or integrating with Aspire and Playwright, see [MSTest SDK configuration](./unit-testing-mstest-sdk.md).
 
 ## Alternative: Use the MSTest NuGet package
 
@@ -60,7 +60,7 @@ If you prefer not to use MSTest.Sdk, you can use the [MSTest](https://www.nuget.
 
 - `MSTest.TestFramework`, `MSTest.TestAdapter`, and `MSTest.Analyzers` for core MSTest functionality.
 - `Microsoft.NET.Test.Sdk` for VSTest integration and test host support.
-- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md) extensions.
+- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [MTP](../testing/unit-testing-mstest-running-tests.md) extensions.
 
 ## NuGet packages overview
 

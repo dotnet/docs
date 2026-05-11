@@ -1,14 +1,14 @@
 ---
-title: Microsoft.Testing.Platform config options
-description: Learn how to configure Microsoft.Testing.Platform using configuration settings.
+title: Microsoft.Testing.Platform (MTP) config options
+description: Learn how to configure MTP using configuration settings.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 08/15/2024
 ---
 
-# Microsoft.Testing.Platform configuration settings
+# Microsoft.Testing.Platform (MTP) configuration settings
 
-Microsoft.Testing.Platform supports the use of configuration files and environment variables to configure the behavior of the test platform. This article describes the configuration settings that you can use to configure the test platform.
+MTP supports the use of configuration files and environment variables to configure the behavior of the test platform. This article describes the configuration settings that you can use to configure the test platform.
 
 ## testconfig.json
 
@@ -29,7 +29,7 @@ The platform will automatically detect and load the *[appname].testconfig.json* 
 
 When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), you can simply create a *testconfig.json* file that will be automatically renamed to *[appname].testconfig.json* and moved to the output directory of the test project.
 
-Starting with Microsoft.Testing.Platform 1.5, you can use the command-line argument `--config-file` to specify the path to the *testconfig.json*. This file takes precedence over the *[appname].testconfig.json* file.
+Starting with MTP 1.5, you can use the command-line argument `--config-file` to specify the path to the *testconfig.json*. This file takes precedence over the *[appname].testconfig.json* file.
 
 > [!NOTE]
 > The *[appname].testconfig.json* file will get overwritten on subsequent builds.
@@ -43,4 +43,4 @@ Environment variables can be used to supply some runtime configuration informati
 
 ### `TESTINGPLATFORM_UI_LANGUAGE` environment variable
 
-Starting with Microsoft.Testing.Platform 1.5, this environment variable sets the language of the platform for displaying messages and logs using a locale value such as `en-us`. This language takes precedence over the Visual Studio and .NET SDK languages. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](/visualstudio/install/install-visual-studio).
+Starting with MTP 1.5, this environment variable sets the language of the platform for displaying messages and logs using a locale value such as `en-us`. This language takes precedence over the Visual Studio and .NET SDK languages. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](/visualstudio/install/install-visual-studio).

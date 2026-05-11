@@ -16,6 +16,9 @@ Out-of-support versions include 1.0, 1.1, 2.0, 2.1, 2.2, 3.0, 3.1, 5, 6, and 7.
 
 To resolve this error, change your project to target a supported version of .NET.
 
+> [!TIP]
+> You can use [GitHub Copilot modernization](../../porting/github-copilot-app-modernization/overview.md) to assess, plan, and upgrade your project to a supported version of .NET.
+
 If you want to suppress the message without targeting a later framework, set the MSBuild property `CheckEolTargetFramework` to `false`. You can set it in the project file or by passing `/p:CheckEolTargetFramework=false` to a .NET CLI command, such as `dotnet build`. Here's an example project file:
 
 ```xml

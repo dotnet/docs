@@ -15,7 +15,7 @@ This tutorial explores integration of the RAG pattern using OpenAI models and ve
 
 - [.NET 8.0](https://dotnet.microsoft.com/)
 - An [Azure Account](https://azure.microsoft.com/free)
-- An [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/introduction) service
+- An [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/) service
 - An [Azure OpenAI](/azure/ai-services/openai/overview) service
   - Deploy `text-embedding-ada-002` model for embeddings
   - Deploy `gpt-35-turbo` model for chat completions

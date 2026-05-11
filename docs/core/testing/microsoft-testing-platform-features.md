@@ -7,9 +7,9 @@ ms.date: 02/25/2026
 ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform features
+# Microsoft.Testing.Platform (MTP) features
 
-Microsoft.Testing.Platform ships with built-in features and can be extended through NuGet packages.
+MTP ships with built-in features and can be extended through NuGet packages.
 
 When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), installing an extension NuGet package is all you need — extensions are automatically detected and registered, and the entry point is generated for you.
 
@@ -21,9 +21,9 @@ Extensions that require a NuGet package are shipped with their own licensing mod
 
 Use the following path based on your goal:
 
-- Find command-line switches in one place: [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md).
+- Find command-line switches in one place: [MTP CLI options reference](./microsoft-testing-platform-cli-options.md).
 - Add capabilities to your test runs: use the feature pages in this article.
-- Create your own extension: [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md).
+- Create your own extension: [MTP architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md).
 
 ## Choose by scenario
 

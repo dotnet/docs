@@ -34,6 +34,18 @@ items:
         href: ../../standard/asynchronous-programming-patterns/common-async-bugs.md
       - name: Async lambda pitfalls
         href: ../../standard/asynchronous-programming-patterns/async-lambda-pitfalls.md
+      - name: Task exception handling
+        href: ../../standard/asynchronous-programming-patterns/task-exception-handling.md
+      - name: Complete your tasks
+        href: ../../standard/asynchronous-programming-patterns/complete-your-tasks.md
+      - name: Keep async methods alive
+        href: ../../standard/asynchronous-programming-patterns/keep-async-methods-alive.md
+      - name: Coordination primitives
+        items:
+        - name: Build async coordination primitives
+          href: ../../standard/asynchronous-programming-patterns/async-coordination-primitives.md
+        - name: Async semaphores, locks, and reader/writer coordination
+          href: ../../standard/asynchronous-programming-patterns/async-coordination-primitives-advanced.md
   - name: Event-based asynchronous pattern (EAP)
     items:
     - name: Documentation overview

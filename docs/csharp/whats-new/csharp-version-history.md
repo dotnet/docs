@@ -83,7 +83,7 @@ The following features were added in C# 11:
 - The `nint` and `uint` keywords alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType><xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
 - [`ref` fields and `scoped ref`](../language-reference/builtin-types/ref-struct.md#ref-fields)
 - Improved method group conversion to delegate.
-- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters-such-names-may-become-reserved-for-the-language)
 
 C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.
 
@@ -98,7 +98,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Interpolated string handlers](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
 - [`global using` directives](../language-reference/keywords/using-directive.md)
 - [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
-- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharpstandard/standard/patterns.md#1126-property-pattern)
 - Lambda expressions can have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
 - Lambda expressions can declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.

@@ -3,41 +3,51 @@ title: Resolve errors and warnings related to record declarations
 description: Learn how to diagnose and correct C# compiler errors and warnings when you declare record types, either record struct types or record class types.
 f1_keywords:
   - "CS8851"
+  - "CS8857"
   - "CS8858"
   - "CS8859"
   - "CS8860"
   - "CS8864"
   - "CS8865"
   - "CS8866"
+  - "CS8869"
   - "CS8870"
+  - "CS8871"
   - "CS8872"
   - "CS8873"
   - "CS8874"
   - "CS8875"
+  - "CS8876"
   - "CS8877"
   - "CS8879"
+  - "CS8906"
   - "CS8907"
   - "CS8908"
   - "CS8913"
 helpviewer_keywords:
   - "CS8851"
+  - "CS8857"
   - "CS8858"
   - "CS8859"
   - "CS8860"
   - "CS8864"
   - "CS8865"
   - "CS8866"
+  - "CS8869"
   - "CS8870"
+  - "CS8871"
   - "CS8872"
   - "CS8873"
   - "CS8874"
   - "CS8875"
+  - "CS8876"
   - "CS8877"
   - "CS8879"
+  - "CS8906"
   - "CS8907"
   - "CS8908"
   - "CS8913"
-ms.date: 03/06/2026
+ms.date: 04/29/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for record declarations
@@ -47,76 +57,90 @@ The C# compiler generates errors and warnings when you misuse [record types](../
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
-- [**CS8851**](#equality-members): *'Type' defines 'Equals' but not 'GetHashCode'*
-- [**CS8858**](#equality-members): *The receiver type is not a valid record type and is not a struct type.*
+- [**CS8851**](#equality-members): *'type' defines 'Equals' but not 'GetHashCode'*
+- [**CS8857**](#equality-members): *The receiver of a `with` expression must have a non-void type.*
+- [**CS8858**](#equality-members): *The receiver type 'type' is not a valid record type and is not a struct type.*
 - [**CS8859**](#reserved-member-names): *Members named 'Clone' are disallowed in records.*
 - [**CS8860**](#reserved-member-names): *Types and aliases should not be named 'record'.*
 - [**CS8864**](#record-inheritance): *Records may only inherit from object or another record.*
 - [**CS8865**](#record-inheritance): *Only records may inherit from records.*
-- [**CS8866**](#positional-members): *Record member must be a readable instance property or field of the type to match the positional parameter.*
-- [**CS8870**](#synthesized-member-signatures): *Member cannot be sealed because containing record is not sealed.*
-- [**CS8872**](#synthesized-member-signatures): *Member must allow overriding because the containing record is not sealed.*
-- [**CS8873**](#synthesized-member-signatures): *Record member must be public.*
-- [**CS8874**](#synthesized-member-signatures): *Record member must return type.*
-- [**CS8875**](#synthesized-member-signatures): *Record member must be protected.*
-- [**CS8877**](#synthesized-member-signatures): *Record member may not be static.*
-- [**CS8879**](#synthesized-member-signatures): *Record member must be private.*
-- [**CS8908**](#positional-members): *The type may not be used for a field of a record.*
-- [**CS8913**](#positional-members): *The positional member found corresponding to this parameter is hidden.*
+- [**CS8866**](#positional-members): *Record member 'member' must be a readable instance property or field of type 'type' to match positional parameter 'parameter'.*
+- [**CS8869**](#synthesized-member-signatures): *'member' does not override expected method from 'object'.*
+- [**CS8870**](#synthesized-member-signatures): *'member' cannot be sealed because containing record is not sealed.*
+- [**CS8871**](#synthesized-member-signatures): *'member' does not override expected method from 'type'.*
+- [**CS8872**](#synthesized-member-signatures): *'member' must allow overriding because the containing record is not sealed.*
+- [**CS8873**](#synthesized-member-signatures): *Record member 'member' must be public.*
+- [**CS8874**](#synthesized-member-signatures): *Record member 'member' must return 'type'.*
+- [**CS8875**](#synthesized-member-signatures): *Record member 'member' must be protected.*
+- [**CS8876**](#synthesized-member-signatures): *'member' does not override expected property from 'type'.*
+- [**CS8877**](#synthesized-member-signatures): *Record member 'member' may not be static.*
+- [**CS8879**](#synthesized-member-signatures): *Record member 'member' must be private.*
+- [**CS8906**](#synthesized-member-signatures): *Record equality contract property 'member' must have a get accessor.*
+- [**CS8908**](#positional-members): *The type 'type' may not be used for a field of a record.*
+- [**CS8913**](#positional-members): *The positional member 'member' found corresponding to this parameter is hidden.*
 
 In addition, this article covers the following warning:
 
-- [**CS8907**](#positional-members): *Parameter is unread. Did you forget to use it to initialize the property with that name?*
+- [**CS8907**](#positional-members): *Parameter 'name' is unread. Did you forget to use it to initialize the property with that name?*
 
 ## Synthesized member signatures
 
-- **CS8870**: *Member cannot be sealed because containing record is not sealed.*
-- **CS8872**: *Member must allow overriding because the containing record is not sealed.*
-- **CS8873**: *Record member must be public.*
-- **CS8874**: *Record member must return type.*
-- **CS8875**: *Record member must be protected.*
-- **CS8877**: *Record member may not be static.*
-- **CS8879**: *Record member must be private.*
+- **CS8869**: *'member' does not override expected method from 'object'.*
+- **CS8870**: *'member' cannot be sealed because containing record is not sealed.*
+- **CS8871**: *'member' does not override expected method from 'type'.*
+- **CS8872**: *'member' must allow overriding because the containing record is not sealed.*
+- **CS8873**: *Record member 'member' must be public.*
+- **CS8874**: *Record member 'member' must return 'type'.*
+- **CS8875**: *Record member 'member' must be protected.*
+- **CS8876**: *'member' does not override expected property from 'type'.*
+- **CS8877**: *Record member 'member' may not be static.*
+- **CS8879**: *Record member 'member' must be private.*
+- **CS8906**: *Record equality contract property 'member' must have a get accessor.*
 
 When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members) in the C# language specification.
 
 To correct these errors, apply the following changes to your explicitly declared record members:
 
 - Change the accessibility of the `Equals` method, `GetHashCode`, `ToString`, the deconstruct method, and the `EqualityContract` property or `op_Equality` and `op_Inequality` operators to `public`. The compiler requires these members to be publicly accessible so that value-based [equality](../builtin-types/record.md#value-equality) works correctly across all calling contexts (**CS8873**).
-1-- Change the accessibility of the `PrintMembers` method to `protected` when you declare it in a non-sealed record class. The method must be `protected` because derived records override it to include their own properties in the [formatted output](../builtin-types/record.md#built-in-formatting-for-display) (**CS8875**).
+- Change the accessibility of the `PrintMembers` method to `protected` when you declare it in a non-sealed record class. The method must be `protected` because derived records override it to include their own properties in the [formatted output](../builtin-types/record.md#built-in-formatting-for-display) (**CS8875**).
 - Change the accessibility of the `PrintMembers` method to `private` when you declare it in a sealed record class or a record struct. Because no derived type can exist, the method doesn't need to be accessible outside the type (**CS8879**).
 - Remove the `static` modifier from any explicitly declared synthesized member. Synthesized members operate on specific record instances to implement behaviors like equality comparison, formatting, and copying, so they must be instance members (**CS8877**).
 - Change the return type of the member to match the type the compiler expects. For example, the `EqualityContract` property must return `System.Type`, and the `Equals` method must return `bool`. The compiler relies on these exact return types to generate correct code for [equality](../builtin-types/record.md#equality-in-inheritance-hierarchies) and other synthesized behaviors (**CS8874**).
 - Remove the `sealed` modifier from any explicitly declared synthesized member in a non-sealed record. Derived records must be able to override these members to provide their own value-based equality and formatting logic (**CS8870**).
 - Declare explicitly provided synthesized members as `virtual` or `override` in a non-sealed record. The compiler requires these members to allow overriding so that derived records in the [inheritance hierarchy](../builtin-types/record.md#equality-in-inheritance-hierarchies) can customize their behavior (**CS8872**).
+- Ensure that your explicitly declared member overrides the expected method from `object` or from the base record type. For example, the `Equals` method must override `object.Equals`, and `GetHashCode` must override `object.GetHashCode`. The compiler checks that these members participate in the correct override chain so that [value-based equality](../builtin-types/record.md#value-equality) and other synthesized behaviors work correctly across the type hierarchy (**CS8869**, **CS8871**).
+- Ensure that your explicitly declared `EqualityContract` property overrides the base record's `EqualityContract` property. The compiler relies on the override chain for the equality contract to distinguish record types at run time within the [inheritance hierarchy](../builtin-types/record.md#equality-in-inheritance-hierarchies) (**CS8876**).
+- Add a `get` accessor to the `EqualityContract` property. The compiler reads the equality contract at run time to determine whether two record instances are of the same type, so the property must be readable (**CS8906**).
 
 ## Positional members
 
-- **CS8866**: *Record member must be a readable instance property or field of the type to match the positional parameter.*
-- **CS8907**: *Parameter is unread. Did you forget to use it to initialize the property with that name?*
-- **CS8908**: *The type may not be used for a field of a record.*
-- **CS8913**: *The positional member found corresponding to this parameter is hidden.*
+- **CS8866**: *Record member 'member' must be a readable instance property or field of type 'type' to match positional parameter 'parameter'.*
+- **CS8907**: *Parameter 'name' is unread. Did you forget to use it to initialize the property with that name?*
+- **CS8908**: *The type 'type' may not be used for a field of a record.*
+- **CS8913**: *The positional member 'member' found corresponding to this parameter is hidden.*
 
 When you declare a [positional record](../builtin-types/record.md#positional-syntax-for-property-and-field-definition), the compiler synthesizes properties that correspond to each positional parameter. These diagnostics indicate that your explicit declarations conflict with those synthesized properties. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members) in the C# language specification.
 
 To correct these errors, apply the following changes to your positional record declarations:
 
-- Change any explicitly declared member that corresponds to a positional parameter so that it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/functional/pattern-matching.md) can access the value correctly (**CS8866**).
-- Ensure that each positional parameter is used to initialize its corresponding property in the constructor body when you provide an explicit constructor. The compiler raises a warning when a parameter goes unused because it typically indicates a typo or a mismatch between the parameter name and the property name, which would leave the property uninitialized (**CS8907**).
+- Change any explicitly declared member that corresponds to a positional parameter so it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/functional/pattern-matching.md) can access the value correctly (**CS8866**).
+- Ensure that each positional parameter initializes its corresponding property in the constructor body when you provide an explicit constructor. The compiler raises a warning when a parameter goes unused because it typically indicates a typo or a mismatch between the parameter name and the property name, which would leave the property uninitialized (**CS8907**).
 - Change the type of a field declared in a record to a type that's valid in that context. Certain types, such as `Span<T>` or other `ref struct` types, can't be used as fields in a record because record types require all fields to be compatible with heap allocation and value-based equality (**CS8908**).
 - Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../fundamentals/functional/pattern-matching.md) (**CS8913**).
 
 ## Equality members
 
-- **CS8851**: *Type defines 'Equals' but not 'GetHashCode'*
-- **CS8858**: *The receiver type is not a valid record type and is not a struct type.*
+- **CS8851**: *'type' defines 'Equals' but not 'GetHashCode'*
+- **CS8857**: *The receiver of a `with` expression must have a non-void type.*
+- **CS8858**: *The receiver type 'type' is not a valid record type and is not a struct type.*
 
 [Record types](../builtin-types/record.md) provide built-in [value-based equality](../builtin-types/record.md#value-equality). These diagnostics arise when your declarations conflict with the equality contract. For the complete rules on equality, see [equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md).
 
 To correct these errors, apply the following changes:
 
 - Add a `GetHashCode` method whenever you define an `Equals` method. The [equality contract](../../programming-guide/statements-expressions-operators/equality-comparisons.md) requires that objects considered equal produce the same hash code, so the compiler enforces that these two methods are always defined together (**CS8851**).
-- Change the receiver of a `with` expression so that it's a [record type](../builtin-types/record.md) or a [struct type](../builtin-types/struct.md). The `with` expression creates a modified copy by using the type's copy constructor, which is only available on record types and struct types (**CS8858**).
+- Change the receiver of a `with` expression so that it's a [record type](../builtin-types/record.md) or a [struct type](../builtin-types/struct.md). The `with` expression creates a modified copy by using the `record` copy constructor, or value copy semantics for `struct` types (**CS8858**).
+- Ensure the receiver of a [`with` expression](../operators/with-expression.md) has a non-void type. The `with` expression produces a new copy of the receiver, so the receiver must evaluate to a value that can be copied (**CS8857**).
 
 ## Record inheritance
 

@@ -21,12 +21,48 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overloaded-operator-errors"
     },
     {
+      "source_path_from_root": "/docs/csharp/misc/cs0059.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0123.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0148.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs0220.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overloaded-operator-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0221.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overloaded-operator-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0273.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0274.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0275.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0276.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0410.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0442.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0463.md",
@@ -37,8 +73,32 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overloaded-operator-errors"
     },
     {
+      "source_path_from_root": "/docs/csharp/misc/cs0544.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0546.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0547.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0548.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs0594.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overloaded-operator-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0610.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0644.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0652.md",
@@ -203,6 +263,18 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs1559.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/entry-point-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs1599.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs1715.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs1958.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs2017.md",
@@ -1823,7 +1895,55 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/lambda-attributes.md",
-            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-10.0/lambda-improvements"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1222-anonymous-function-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/record-structs.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#164-synthesized-record-struct-members"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/parameterless-struct-constructors.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#1659-constructors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/GlobalUsingDirective.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/namespaces#1452-global-using-alias-directives"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/namespaces#143-namespace-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/patterns#1126-property-pattern"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/improved-interpolated-strings.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/attributes#23591-custom-interpolated-string-expression-handlers"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/constant_interpolated_strings.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1283-interpolated-string-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/lambda-improvements.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1222-anonymous-function-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/caller-argument-expression.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/attributes#23565-the-callerargumentexpression-attribute"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/enhanced-line-directives.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#658-line-directives"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/improved-definite-assignment.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/variables#944-precise-rules-for-determining-definite-assignment"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/async-method-builders.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/attributes#2355-the-asyncmethodbuilder-attribute"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-7.0/index.md",
@@ -1859,7 +1979,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-10.0/index.md",
-            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-10.0/record-structs"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#164-synthesized-record-struct-members"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-11.0/index.md",
@@ -5303,6 +5423,10 @@
         {
             "source_path_from_root": "/docs/csharp/tutorials/pattern-matching.md",
             "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/records.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/records"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/upgrade-to-nullable-references.md",

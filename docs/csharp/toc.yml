@@ -67,9 +67,21 @@ items:
       href: fundamentals/types/generics.md
     - name: Tuples and deconstruction
       href: fundamentals/types/tuples.md
+    - name: Type conversions, casting, and boxing
+      href: fundamentals/types/conversions.md
+    - name: Lambda expressions, delegates, and events
+      href: fundamentals/types/delegates-lambdas.md
     - name: Anonymous types
       href: programming-guide/classes-and-structs/anonymous-types.md
     # TODO: Delegates, lambdas and events
+  - name: Null safety
+    items:
+    - name: Overview
+      href: fundamentals/null-safety/index.md
+    - name: Nullable value types
+      href: fundamentals/null-safety/nullable-value-types.md
+    - name: Null operators
+      href: fundamentals/null-safety/null-operators.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -143,8 +155,12 @@ items:
     - name: Converting types
       displayName: cast, is, as
       href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+    - name: Choosing between tuples, records, structs, and classes
+      href: fundamentals/tutorials/choosing-types.md
     - name: Build data-driven algorithms with pattern matching
       href: fundamentals/tutorials/pattern-matching.md
+    - name: Use record types
+      href: fundamentals/tutorials/records.md
     # separating data and algorithms
     # Data transformations
     ## TODO: Replace with a tutorial (include async exceptions)
@@ -192,8 +208,6 @@ items:
       href: whats-new/tutorials/primary-constructors.md
 - name: Tutorials
   items:
-  - name: Explore record types
-    href: tutorials/records.md
   - name: Explore top-level statements
     href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges

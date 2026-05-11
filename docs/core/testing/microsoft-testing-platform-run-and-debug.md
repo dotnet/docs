@@ -1,6 +1,6 @@
 ---
-title: Run and debug tests with Microsoft.Testing.Platform
-description: Learn how to run and debug Microsoft.Testing.Platform test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
+title: Run and debug tests with Microsoft.Testing.Platform (MTP)
+description: Learn how to run and debug MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/24/2026
@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Run and debug tests
 
-`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+MTP test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 > [!TIP]
 > You can ignore a specific [exit code](./microsoft-testing-platform-troubleshooting.md#ignore-specific-exit-codes) using the `--ignore-exit-code` command line option.
@@ -21,7 +21,7 @@ ai-usage: ai-assisted
 > ```
 
 > [!IMPORTANT]
-> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md).
+> By default, MTP collects telemetry. For more information and options on opting out, see [MTP telemetry](microsoft-testing-platform-telemetry.md).
 
 ## [.NET CLI](#tab/dotnetcli)
 
@@ -68,7 +68,7 @@ For more information on `dotnet exec`, see [dotnet exec](../tools/dotnet.md#opti
 
 ### Use `dotnet test`
 
-`Microsoft.Testing.Platform` offers a compatibility layer with `vstest.console.exe` and [`dotnet test`](../tools/dotnet-test.md) ensuring you can run your tests as before while enabling new execution scenario.
+MTP offers a compatibility layer with `vstest.console.exe` and [`dotnet test`](../tools/dotnet-test.md) ensuring you can run your tests as before while enabling new execution scenario.
 
 ```dotnetcli
 dotnet test Contoso.MyTests.dll
@@ -76,11 +76,11 @@ dotnet test Contoso.MyTests.dll
 
 ## [Visual Studio](#tab/visual-studio)
 
-The `Microsoft.Testing.Platform` tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
+The MTP tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
 
 ### Run the app with Visual Studio
 
-`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+MTP test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate the test project you want to run in Solution Explorer, right select it and select **Set as Startup Project**.
 1. Select **Debug** > **Start without Debugging** (or use <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the selected test project.
@@ -89,7 +89,7 @@ Console window pops up with the execution and summary of your test run.
 
 ### Debug the app directly in Visual Studio
 
-`Microsoft.Testing.Platform` test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
+MTP test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
 
 1. Navigate the test project you want to run in Solution Explorer, right select it and select **Set as Startup Project**.
 1. Set breakpoint into the test that you'd like to debug.
@@ -110,7 +110,7 @@ The C# extension along with [C# Dev Kit](https://marketplace.visualstudio.com/it
 
 ### Run the app with Visual Studio Code
 
-`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+MTP test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate to a test file that you want to run tests for.
 1. Use <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the selected test project. If you have multiple projects a popup will ask you to select the one to run.
@@ -119,7 +119,7 @@ Console window pops up with the execution and summary of your test run.
 
 ### Debug the app directly in Visual Studio Code
 
-`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+MTP test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate to a test file that you want to run tests for.
 1. Use <kbd>F5</kbd> to debug the selected test project. If you have multiple projects a popup will ask you to select the one to run.
@@ -157,7 +157,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
       script: 'dotnet test' # add command-line options as needed
   ```
 
-- Run using the `DotNetCoreCLI` Azure task with test command. This requires a [`global.json`](../tools/global-json.md) file in your repository root that specifies Microsoft.Testing.Platform as the test runner:
+- Run using the `DotNetCoreCLI` Azure task with test command. This requires a [`global.json`](../tools/global-json.md) file in your repository root that specifies MTP as the test runner:
 
   ```json
   {
@@ -175,12 +175,12 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
   ```
 
   > [!NOTE]
-  > Support for Microsoft.Testing.Platform in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
+  > Support for MTP in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
 
 ---
 
 ## See also
 
-- [Microsoft.Testing.Platform overview](./microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md)
+- [MTP overview](./microsoft-testing-platform-intro.md)
+- [MTP CLI options reference](./microsoft-testing-platform-cli-options.md)
 - [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)

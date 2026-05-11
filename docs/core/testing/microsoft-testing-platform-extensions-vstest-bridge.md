@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform VSTest bridge extension
-description: Learn about the various Microsoft.Testing.Platform VSTest bridge extension and how to use it.
+title: Microsoft.Testing.Platform (MTP) VSTest bridge extension
+description: Learn about the MTP VSTest bridge extension and how to use it.
 author: evangelink
 ms.author: amauryleve
 ms.date: 04/10/2024
@@ -10,8 +10,8 @@ ms.date: 04/10/2024
 
 This extension provides a compatibility layer with VSTest allowing test frameworks that are already implemented with VSTest to:
 
-1. Run easily with Microsoft.Testing.Platform without a major rewrite.
-1. Support both VSTest and Microsoft.Testing.Platform with the same test framework implementation.
+- Run easily with Microsoft.Testing.Platform (MTP) without a major rewrite.
+- Support both VSTest and MTP with the same test framework implementation.
 
 This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge](https://nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) NuGet package.
 
@@ -27,30 +27,30 @@ When enabled by the test framework, you can use `--settings <SETTINGS_FILE>` to 
 
 ### RunConfiguration element
 
-The following **RunConfiguration** elements are not supported by `Microsoft.Testing.Platform`:
+The following **RunConfiguration** elements are not supported by MTP:
 
 | Node | Description | Reason / Workaround |
 |------|-------------|---------------------|
-| **MaxCpuCount** | This setting controls the level of parallelism on process-level. Use 0 to enable the maximum process-level parallelism.| When Microsoft.Testing.Platform is used with MSBuild, this option is [offloaded to MSBuild](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild). When a single executable is run, this option has no meaning for Microsoft.Testing.Platform. |
+| **MaxCpuCount** | This setting controls the level of parallelism on process-level. Use 0 to enable the maximum process-level parallelism.| When MTP is used with MSBuild, this option is [offloaded to MSBuild](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild). When a single executable is run, this option has no meaning for MTP. |
 | **ResultsDirectory** | The directory where test results are placed. The path is relative to the directory that contains the *.runsettings* file.| Use the command-line option `--results-directory` to determine the directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application. |
 | **TargetFrameworkVersion** | This setting defines the framework version, or framework family to use to run tests.| This option is ignored. The `<TargetFramework>` or `<TargetFrameworks>` MSBuild properties determine the target framework of the application. The tests are hosted in the final application. |
 | **TargetPlatform** | This setting defines the architecture to use to run tests. | `<RuntimeIdentifier>` determines the architecture of the final application that hosts the tests. |
-| **TreatTestAdapterErrorsAsWarnings** | Suppresses test adapter errors to become warnings. | Microsoft.Testing.Platform allows only one type of tests to be run from a single assembly, and failure to load the test framework or other parts of infrastructure will become an un-skippable error, because it signifies that some tests could not be discovered or run. |
-| **TestAdaptersPaths** | One or more paths to the directory where the TestAdapters are located| Microsoft.Testing.Platform does not use the concept of test adapters and does not allow dynamic loading of extensions unless they are part of the build, and are registered in `Program.cs`, either automatically via build targets or manually. |
+| **TreatTestAdapterErrorsAsWarnings** | Suppresses test adapter errors to become warnings. | MTP allows only one type of tests to be run from a single assembly, and failure to load the test framework or other parts of infrastructure will become an un-skippable error, because it signifies that some tests could not be discovered or run. |
+| **TestAdaptersPaths** | One or more paths to the directory where the TestAdapters are located| MTP does not use the concept of test adapters and does not allow dynamic loading of extensions unless they are part of the build, and are registered in `Program.cs`, either automatically via build targets or manually. |
 | **TestCaseFilter** | A filter to limit tests which will run. | Starting with v1.6, this runsettings entry is now supported. Before this version, you should use `--filter` command line option instead. |
 | **TestSessionTimeout** | Allows users to terminate a test session when it exceeds a given timeout.| There is no alternative option. |
-| **DotnetHostPath** | Specify a custom path to dotnet host that is used to run the test host. | Microsoft.Testing.Platform is not doing any additional resolving of dotnet. It depends fully on how dotnet resolves itself, which can be controlled by environment variables such as [`DOTNET_HOST_PATH`](../tools/dotnet-environment-variables.md#dotnet_host_path). |
-| **TreatNoTestsAsError** | Exit with non-zero exit code when no tests are discovered. | Microsoft.Testing.Platform will error by default when no tests are discovered or run in a test application. You can set how many tests you expect to find in the assembly by using `--minimum-expected-tests` command line parameter, which defaults to 1. |
+| **DotnetHostPath** | Specify a custom path to dotnet host that is used to run the test host. | MTP is not doing any additional resolving of dotnet. It depends fully on how dotnet resolves itself, which can be controlled by environment variables such as [`DOTNET_HOST_PATH`](../tools/dotnet-environment-variables.md#dotnet_host_path). |
+| **TreatNoTestsAsError** | Exit with non-zero exit code when no tests are discovered. | MTP will error by default when no tests are discovered or run in a test application. You can set how many tests you expect to find in the assembly by using `--minimum-expected-tests` command line parameter, which defaults to 1. |
 
 ### DataCollectors element
 
-`Microsoft.Testing.Platform` is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file or through the command line.
+MTP is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file or through the command line.
 
 Most importantly [hang](microsoft-testing-platform-crash-hang-dumps.md#hang-dump) and [crash](microsoft-testing-platform-crash-hang-dumps.md#crash-dump) extension, and [code coverage](microsoft-testing-platform-code-coverage.md) extension.
 
 ### LoggerRunSettings element
 
-Loggers in `Microsoft.Testing.Platform` are configured through command-line parameters or by settings in code.
+Loggers in MTP are configured through command-line parameters or by settings in code.
 
 ## VSTest filter support
 

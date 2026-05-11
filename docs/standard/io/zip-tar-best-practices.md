@@ -1,6 +1,7 @@
 ---
 title: Best practices for ZIP and TAR archives
 description: Learn best practices for working with ZIP and TAR archives in .NET, including API selection, trusted and untrusted extraction patterns, memory management, and platform considerations.
+ms.topic: best-practice
 ms.date: 04/10/2026
 ai-usage: ai-assisted
 dev_langs:

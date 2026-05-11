@@ -10,6 +10,7 @@ ai-usage: ai-assisted
 # Tutorial: Build file-based C# programs
 
 *File-based apps* are programs contained within a single `*.cs` file that you build and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, you can run file-based apps by using `#!` (shebang) [directives](../../language-reference/preprocessor-directives.md).
+
 In this tutorial, you:
 
 > [!div class="checklist"]
@@ -80,16 +81,13 @@ On Unix, you can execute file-based apps directly using just the source file nam
 1. Add a shebang (`#!`) directive as the first line of the `AsciiArt.cs` file:
 
    ```csharp
-   #!/usr/local/share/dotnet/dotnet
+   #!/usr/bin/env -S dotnet --
    ```
 
-The location of `dotnet` can be different on different Unix installations. Use the command `which dotnet` to locate the `dotnet` host in your environment.
+   This shebang uses `env` to find the `dotnet` in the PATH environment. The `-S` parameter lets the `env` command use the entire string (`dotnet --`) as the command to invoke. The `--` parameter ensures that when a user runs your app, any parameter provided by them is passed directly to your app, preventing `dotnet` from reading the parameters by mistake.
 
-Alternatively, you can use `#!/usr/bin/env dotnet` to resolve the dotnet path from the PATH environment variable automatically:
-
-```csharp
-#!/usr/bin/env dotnet
-```
+   > [!TIP]
+   > If the previous shebang doesn't work, try `#!/usr/bin/env dotnet` or the exact location of `dotnet`, for example `#!/usr/local/share/dotnet/dotnet --`.
 
 After making these two changes, you can run the program directly:
 

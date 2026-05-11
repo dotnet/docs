@@ -150,6 +150,9 @@ xUnit.net specific options:
 
 For more information, see [Microsoft.Testing.Platform documentation for xUnit.net](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Query Filter Language for xUnit.net](https://xunit.net/docs/query-filter-language).
 
+> [!TIP]
+> If your solution mixes test frameworks that use different filter syntaxes (for example, MSTest and xUnit.net), you can conditionally route framework-specific arguments using the `TestingPlatformCommandLineArguments` MSBuild property. For details, see [Solutions with mixed test frameworks or extensions](unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
+
 #### `--logger`
 
 What was usually referred to as "logger" in VSTest is referred to as "reporter" in MTP. In MTP, logging is explicitly for diagnosing purposes only.

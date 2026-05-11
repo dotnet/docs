@@ -163,7 +163,7 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
   Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [MTP overview](../testing/microsoft-testing-platform-intro.md) and [MTP features](../testing/microsoft-testing-platform-features.md).
 
   > [!TIP]
-  > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
+  > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property. This property is especially useful when your solution mixes test frameworks (for example, MSTest and xUnit.net) or when only some projects reference a particular extension. For more information, see [Solutions with mixed test frameworks or extensions](../testing/unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
 
 > [!NOTE]
 > To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.

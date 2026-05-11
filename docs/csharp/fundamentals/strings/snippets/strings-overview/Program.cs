@@ -12,6 +12,8 @@ public static class Program
         ShowEscapes();
         ShowEscEscape();
         ShowVerbatim();
+        ShowRaw();
+        ShowInterpolated();
         ShowUtf8Literal();
         ShowIndexing();
         ShowEqualityIntro();
@@ -80,7 +82,7 @@ public static class Program
         string esc = "\e[31mError\e[0m: file missing";
 
         Console.WriteLine(esc);                  // ESC[31mError ESC[0m: file missing
-        Console.WriteLine((int)esc[0]);          // 27
+        Console.WriteLine((int)'\e');          // 27
         // </EscEscape>
     }
 
@@ -95,6 +97,54 @@ public static class Program
         Console.WriteLine(winPath);
         Console.WriteLine(pattern);
         // </Verbatim>
+    }
+
+    private static void ShowRaw()
+    {
+        // <Raw>
+        // Raw string literals use three or more quotes and need no escaping.
+        // The source looks like the output, which is ideal for inline JSON, SQL, XML, and the like.
+        string json = """
+            {
+                "name": "Ada",
+                "roles": ["admin", "editor"]
+            }
+            """;
+
+        string sql = """
+            SELECT Id, Name
+            FROM   Users
+            WHERE  Name = 'O''Brien'
+            """;
+
+        Console.WriteLine(json);
+        Console.WriteLine(sql);
+        // </Raw>
+    }
+
+    private static void ShowInterpolated()
+    {
+        // <Interpolated>
+        // The $ prefix evaluates expressions inside { } and inserts their values.
+        string name = "Ada";
+        int score = 92;
+
+        string greeting = $"Hello, {name}! Your score is {score}.";
+        // Format specifiers and alignment work inside the holes.
+        string formatted = $"pi = {Math.PI:F3}, padded = |{name,10}|";
+
+        // Combine $ and """ for richly formatted multiline output.
+        string report = $"""
+            Report for {name}
+            -----------------
+            Score : {score}
+            Grade : {(score >= 90 ? "A" : "B")}
+            """;
+
+        Console.WriteLine(greeting);
+        Console.WriteLine(formatted);
+        Console.WriteLine(report);
+        // </Interpolated>
     }
 
     private static void ShowUtf8Literal()

@@ -11,13 +11,13 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
-> **Coming from Java or C++?** A C# `string` is an immutable reference type backed by <xref:System.String>. UTF-16 is the in-memory encoding, similar to Java's `String`. Unlike C/C++, strings aren't null-terminated and don't decay into pointers.
+> **Coming from Java or C++?** A C# `string` is an immutable reference type backed by <xref:System.String?>. UTF-16 is the in-memory encoding, similar to Java's `String`. Unlike C/C++, strings aren't null-terminated and don't decay into pointers.
 
-A *string* is a sequence of characters. In C#, `string` is the language keyword for the <xref:System.String> type. Every string literal you write produces a `System.String` instance.
+A *string* is a sequence of characters. In C#, `string` is the language keyword for the <xref:System.String?displayProperty=fullName> type. Every string literal you write produces a `System.String` instance.
 
 ## `string` vs. `String`
 
-The `string` keyword and the `String` type name refer to the same type. They compile to identical IL.
+The `string` keyword and the `String` type name refer to the same type. They compile to identical intermediate language (IL).
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="StringKeyword":::
 
@@ -25,13 +25,13 @@ Prefer the `string` keyword in your own code. It's consistent with the other bui
 
 ## Strings are immutable
 
-Once a `string` is created, its characters never change. Methods such as `ToUpperInvariant`, `Replace`, `Substring`, and `Trim` return a *new* string. The original instance is unchanged.
+Once a `string` is created, its characters never change. Methods such as `ToUpperInvariant`, `Replace`, `Substring`, and `Trim` return a *new* string that contains the modified value. The original instance is unchanged.
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Immutability":::
 
 Immutability makes strings safe to share across methods and threads, and it's why the `string` type behaves like a value in everyday use even though it's a reference type.
 
-When you build a string from many small pieces in a loop, each `+` or `Concat` call allocates a new instance. For that scenario, use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
+When you build a string from many small pieces in a loop, each `+` or `Concat` call allocates a new instance. When you build a string from several components, use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="StringBuilder":::
 
@@ -39,7 +39,12 @@ For a small fixed number of pieces, plain interpolation or `string.Concat` is cl
 
 ## String literals
 
-C# offers four literal forms. Each is suited to different content.
+C# offers four literal forms. Each is suited to different content. As a quick guide:
+
+- Reach for **regular literals** for short, simple text with at most a few escape sequences.
+- Use **verbatim literals** when backslashes dominate the content, such as Windows paths or regex patterns.
+- Prefer **raw string literals** for multiline or structurally formatted text, such as inline JSON, SQL, XML, or formatted message blocks.
+- Add a `$` prefix to any of the above to get an **interpolated string** when you need to embed values.
 
 ### Regular literals and escape sequences
 
@@ -53,6 +58,8 @@ Beginning in C# 13, `\e` represents the **ESC** control character (U+001B). It's
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="EscEscape":::
 
+Use a regular literal when the text is short and contains only a handful of escape sequences. Once the escapes start to outnumber the visible characters, switch to a verbatim or raw literal.
+
 ### Verbatim literals
 
 A verbatim literal is prefixed with `@`. Backslashes are treated literally, which is useful for Windows paths and regular-expression patterns:
@@ -61,13 +68,23 @@ A verbatim literal is prefixed with `@`. Backslashes are treated literally, whic
 
 To embed a literal quote inside a verbatim string, double it: `@"She said ""hi""."`. Verbatim strings can also span multiple physical lines.
 
+Verbatim literals are the right choice when backslashes are part of the content but you don't have many embedded quotes. For multiline text or content with quotes, raw string literals are usually clearer.
+
 ### Raw string literals
 
-For any literal that contains quotes, backslashes, or multiple lines, prefer **raw string literals**. They eliminate escape noise entirely. See [Raw string literals](raw-string-literals.md) for the full rules.
+For any literal that contains quotes, backslashes, or multiple lines, prefer **raw string literals**. They eliminate escape noise entirely, which makes them the best fit for inline JSON, SQL, XML, regex patterns, and formatted text blocks where the source should look like the output:
+
+:::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Raw":::
+
+Raw string literals all but eliminate escape sequences and accommodate any formatting and quoting you need. See [Raw string literals](raw-string-literals.md) for the full rules.
 
 ### Interpolated strings
 
-A `$` prefix turns a literal into an *interpolated string*. Expressions in `{}` holes are evaluated and their results inserted: `$"hello, {name}"`. Interpolation is the recommended way to compose strings from values in everyday code, and it works with raw string literals too — `$"""..."""`.
+A `$` prefix turns a literal into an *interpolated string*. Expressions in `{}` holes are evaluated and their results inserted, and you can apply standard format specifiers and alignment inside the holes. Interpolation also combines with the other literal forms — use `$@"..."` to interpolate a verbatim literal, or `$"""..."""` to interpolate a raw string literal for richly formatted output:
+
+:::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Interpolated":::
+
+Interpolation is the recommended way to compose strings from values in everyday code.
 
 ## UTF-8 string literals
 
@@ -79,7 +96,7 @@ The bytes are emitted at compile time, so there's no runtime encoding cost.
 
 ## Indexing and `char`
 
-A `string` is a sequence of UTF-16 *code units*. The indexer returns one <xref:System.Char>, which represents a single UTF-16 code unit, not necessarily a complete Unicode code point. `Length` returns the count of code units.
+A `string` is a sequence of UTF-16 *code units*. The indexer returns one <xref:System.Char?displayProperty=fullName>, which represents a single UTF-16 code unit, not necessarily a complete Unicode code point. `Length` returns the count of code units.
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Indexing":::
 

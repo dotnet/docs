@@ -18,24 +18,31 @@ helpviewer_keywords:
 
 # Best practices for working with ZIP and TAR archives in .NET
 
+This article covers best practices for working with ZIP and TAR archives in .NET. You'll learn how to choose the right API for your scenario, use the convenience methods effectively for trusted input, and safely handle untrusted archives to protect against common attacks like path traversal and zip bombs.
+
 .NET provides built-in support for two of the most common archive formats:
 
 - **ZIP** (`System.IO.Compression`): A compressed archive format that bundles multiple files and directories into a single file. ZIP supports per-entry compression (Deflate, Deflate64, Stored). The primary types are <xref:System.IO.Compression.ZipArchive> for reading and writing archives, <xref:System.IO.Compression.ZipFile> for file-based convenience methods, and <xref:System.IO.Compression.ZipFileExtensions> for extraction helpers.
 - **TAR** (`System.Formats.Tar`): A Unix-origin archive format that stores files, directories, and metadata (permissions, ownership, timestamps) without compression. .NET supports the V7, UStar, PAX, and GNU formats. The primary types are <xref:System.Formats.Tar.TarReader> and <xref:System.Formats.Tar.TarWriter> for streaming access, and <xref:System.Formats.Tar.TarFile> for file-based convenience methods. TAR is often combined with a compression layer (for example, <xref:System.IO.Compression.GZipStream> for `.tar.gz` files).
 
-This article helps you choose the right API, use the convenience methods effectively for trusted input, and safely handle untrusted archives.
-
 ## Choose the right API
 
 .NET offers two tiers of archive APIs. Pick the tier that matches your scenario.
 
+- [Convenience APIs (one-shot operations)](#convenience-apis-one-shot-operations)
+- [Streaming APIs (entry-by-entry control)](#streaming-apis-entry-by-entry-control)
+
 ### Convenience APIs (one-shot operations)
+
+Use these APIs to handle an entire archive in a single call. They're ideal for simple, trusted scenarios.
 
 - <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A> / <xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A>—create or extract an entire archive in one call.
 - <xref:System.Formats.Tar.TarFile.CreateFromDirectory%2A> / <xref:System.Formats.Tar.TarFile.ExtractToDirectory%2A>—same for TAR.
 - Best for: simple workflows with trusted input, quick scripts, build tooling.
 
 ### Streaming APIs (entry-by-entry control)
+
+Use these APIs for full control over each archive entry. They're essential for large archives or untrusted input.
 
 - <xref:System.IO.Compression.ZipArchive>—open an archive, iterate entries, read or write selectively. Use <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A> to extract individual entries, or <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A> to extract all entries from an already-opened archive.
 - <xref:System.Formats.Tar.TarReader> / <xref:System.Formats.Tar.TarWriter>—sequential entry-by-entry access. Use <xref:System.Formats.Tar.TarEntry.ExtractToFile%2A> to extract individual entries.
@@ -44,7 +51,7 @@ This article helps you choose the right API, use the convenience methods effecti
 If you control the archive source (your own build output, known-safe backups), the convenience APIs are the simplest choice. If the archive comes from an external source (user uploads, downloads, network transfers), use the streaming APIs with the safety checks described in this article.
 
 > [!CAUTION]
-> A ZIP archive primarily transmits files, while a TAR archive transmits a filesystem topology, including file types, symbolic links, hard links, permissions, and other metadata. This gives the TAR extraction process much more control over how data is represented on disk. Because these structures are meaningful to the filesystem, an adversary can influence security-impacting behaviors beyond filenames and file contents. Exercise extra caution when processing untrusted TAR archives.
+> ZIP and TAR archives differ significantly in what they store. ZIP primarily transmits files, while TAR transmits a complete filesystem topology, including file types, symbolic links, hard links, permissions, and other metadata. This difference has important security implications: TAR's richer structure gives an adversary more ways to influence how data is represented on disk, well beyond just filenames and file contents. Exercise extra caution when processing untrusted TAR archives.
 
 ## Work with trusted archives
 
@@ -61,6 +68,12 @@ When the archive source is known and trusted, the convenience methods give you a
 ## Handle untrusted archives safely
 
 For untrusted input—user uploads, third-party downloads, or network transfers—iterate over entries manually and enforce your own safety checks. The following subsections describe what you need to enforce and why.
+
+- [What the convenience methods don't protect you from](#what-the-convenience-methods-dont-protect-you-from)
+- [Enforce size and entry count limits](#enforce-size-and-entry-count-limits)
+- [Validate destination paths](#validate-destination-paths)
+- [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar)
+- [Complete safe extraction examples](#complete-safe-extraction-examples)
 
 ### What the convenience methods don't protect you from
 
@@ -140,19 +153,25 @@ For reference, <xref:System.Formats.Tar.TarFile.ExtractToDirectory%2A> validates
 
 Combine path traversal validation, size limits, entry count limits, and link handling in a single extraction loop.
 
-#### ZIP—complete safe extraction
+- **ZIP**
 
-The following method extracts a ZIP archive while enforcing all recommended safety checks:
+  The following method extracts a ZIP archive while enforcing all recommended safety checks:
 
-:::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractZip":::
+  :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractZip":::
 
-#### TAR—complete safe extraction
+- **TAR**
 
-TAR extraction differs from ZIP in several ways: entries are read sequentially (there's no central directory), link entries need explicit handling, and the `DataStream` must be consumed before advancing to the next entry.
+  TAR extraction differs from ZIP in several ways: entries are read sequentially (there's no central directory), link entries need explicit handling, and the `DataStream` must be consumed before advancing to the next entry.
 
-:::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractTar":::
+  :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="SafeExtractTar":::
 
 ## Memory and performance considerations
+
+Understanding how .NET manages memory for ZIP and TAR operations helps you avoid unexpected issues with large or untrusted archives.
+
+- [ZipArchive memory usage](#ziparchive-memory-usage)
+- [TAR streaming model](#tar-streaming-model)
+- [Thread safety](#thread-safety)
 
 ### ZipArchive memory usage
 
@@ -176,6 +195,12 @@ Additionally, when you open a <xref:System.IO.Compression.ZipArchive> in <xref:S
 
 ## Platform considerations
 
+Archive behavior can vary between Windows and Unix. Keep these differences in mind when writing cross-platform code.
+
+- [Unix file permissions](#unix-file-permissions)
+- [Special entry types (TAR)](#special-entry-types-tar)
+- [File name sanitization differs by platform](#file-name-sanitization-differs-by-platform)
+
 ### Unix file permissions
 
 - **ZIP:** Unix permissions are stored in the upper 16 bits of <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes>. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because .NET on Windows sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
@@ -189,7 +214,7 @@ Block devices, character devices, and FIFOs can only be created on Unix. Extract
 
 ### File name sanitization differs by platform
 
-On Windows, when using `ExtractToDirectory`, the runtime replaces control characters and ``"*:<>?|`` with underscores in entry names. On Unix, only null characters are replaced. Archive entries with names like `file:name.txt` are renamed to `file_name.txt` on Windows but extracted as-is on Unix. The per-entry APIs (`Open()`, `ExtractToFile()`) do not perform any name sanitization, so when using them with entry names from untrusted archives, validate the name and path before extracting (as shown in the [Validate destination paths](#validate-destination-paths) section).
+On Windows, when using `ExtractToDirectory`, the runtime replaces control characters and `"*:<>?|` with underscores in entry names. On Unix, only null characters are replaced. Archive entries with names like `file:name.txt` are renamed to `file_name.txt` on Windows but extracted as-is on Unix. The per-entry APIs (`Open()`, `ExtractToFile()`) do not perform any name sanitization, so when using them with entry names from untrusted archives, validate the name and path before extracting (as shown in the [Validate destination paths](#validate-destination-paths) section).
 
 ## Data integrity
 
@@ -199,8 +224,7 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 
 > [!NOTE]
 > In versions earlier than .NET 11, the runtime didn't validate ZIP CRC-32 values on read. The runtime computed CRC-32 values when writing ZIP entries for storage in the archive, but didn't verify them during extraction. If you target a runtime earlier than .NET 11, corrupt or tampered ZIP entries might be accepted silently.
-
-> [!NOTE]
+>
 > CRC-32 isn't a cryptographic hash—it detects accidental corruption but doesn't protect against intentional tampering by a sophisticated attacker.
 
 ## Untrusted metadata
@@ -213,10 +237,16 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 
 ## Encryption considerations (.NET 11+)
 
+.NET 11 adds support for reading and writing encrypted ZIP archives. The following subsections explain how to choose an encryption method, read encrypted entries, and use encrypted archives with the convenience APIs.
+
+- [Choose AES-256 for new archives](#choose-aes-256-for-new-archives)
+- [Read encrypted entries](#read-encrypted-entries)
+- [Convenience methods with encryption](#convenience-methods-with-encryption)
+
 > [!NOTE]
 > ZIP encryption support (ZipCrypto and WinZip AES) is new in .NET 11.
 
-.NET 11 adds support for reading and writing encrypted ZIP archives using WinZip-compatible encryption. The `ZipEncryptionMethod` enum specifies the encryption method:
+The `ZipEncryptionMethod` enum specifies the encryption method:
 
 | Value | Description |
 |-------|-------------|
@@ -298,7 +328,7 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 - **Overwrite behavior:** Default to `overwrite: false`.
 - **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
 
-## See also
+## Related content
 
 - <xref:System.IO.Compression>
 - <xref:System.Formats.Tar>

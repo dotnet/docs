@@ -195,36 +195,7 @@ dotnet test -p:MSTestSpecificArgs="--filter FullyQualifiedName~IntegrationTests"
 
 Each test project receives only the arguments relevant to its framework, and the other framework's arguments are never passed.
 
-### Common scenarios
-
-The following table lists some common options that differ between frameworks and can be routed using this pattern:
-
-| Scenario | MSTest / NUnit | xUnit.net |
-|----------|---------------|-----------|
-| Test filtering | `--filter <expression>` | `--filter-trait`, `--filter-class`, `--filter-method`, `--filter-query` |
-| xUnit.net built-in reports | Not available | `--report-xunit-junit`, `--report-xunit-html`, `--report-xunit-trx` |
-| Ignore zero tests | `--ignore-exit-code 8` | `--ignore-exit-code 8` |
-
 > [!TIP]
 > For arguments that are the same across all frameworks (such as `--ignore-exit-code 8` or `--report-trx`), set them directly in `TestingPlatformCommandLineArguments` without any condition.
 
-### Projects with different extensions
-
-The same pattern applies when only some test projects in a solution reference a particular extension. For example, if only certain projects reference `Microsoft.Testing.Extensions.HangDump`, passing `--hangdump` globally causes the other projects to fail with an unrecognized option error.
-
-To handle this case, condition the arguments on whether the extension's package is referenced. You can define a helper property in the project files that have the extension, and use that property as a condition:
-
-```xml
-<!-- In the .csproj files that reference HangDump (or via Directory.Build.targets) -->
-<PropertyGroup Condition="'$(EnableHangDump)' == 'true'">
-  <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) $(HangDumpArgs)</TestingPlatformCommandLineArguments>
-</PropertyGroup>
-```
-
-Then run:
-
-```dotnetcli
-dotnet test -p:HangDumpArgs="--hangdump --hangdump-timeout 10m"
-```
-
-Only the projects where `EnableHangDump` is `true` receive the hang dump arguments. You can set `EnableHangDump` in each project file that references the extension, or centrally in `Directory.Build.props` with a condition that checks for the package reference.
+The same pattern applies when only some test projects in a solution reference a particular extension. For example, if only certain projects reference `Microsoft.Testing.Extensions.HangDump`, passing `--hangdump` globally causes the other projects to fail with an unrecognized option error. Use the same conditional approach to route extension-specific arguments only to the projects that have the extension.

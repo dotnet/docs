@@ -13,7 +13,7 @@ topic_type:
 ---
 # ICorDebugProcess11 Interface
 
-[Supported in .NET 5-.NET 10.]
+[Supported in .NET 5 through .NET 10.]
 
 Provides a method that enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The returned information is the same information that would be shown by using the SOS `eeheap -loader` command.
 

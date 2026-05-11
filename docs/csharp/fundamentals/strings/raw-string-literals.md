@@ -17,7 +17,7 @@ A *raw string literal* is delimited by three or more double quotes. Inside the d
 
 A regular literal needs escapes for `"` and `\`. A verbatim literal still needs `""` to embed a quote. A raw literal needs neither:
 
-:::code language="csharp" source="snippets/strings-overview/Program.cs" ID="EscapeContrast":::
+:::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="EscapeContrast":::
 
 Each form produces the same string, but the raw version reads exactly like the JSON it represents.
 

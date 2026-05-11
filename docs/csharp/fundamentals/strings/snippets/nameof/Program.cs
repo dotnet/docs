@@ -40,7 +40,7 @@ public static class Program
         catch (ArgumentException ex)
         {
             // The exception's ParamName is the literal "name", produced by nameof at compile time.
-            Console.WriteLine($"{ex.ParamName}: {ex.Message.Split(' ')[0]}");
+            Console.WriteLine($"{ex.ParamName}: {ex.Message}");
         }
 
         static void Greet(string name)
@@ -68,7 +68,7 @@ public static class Program
         }
         catch (ArgumentNullException ex)
         {
-            Console.WriteLine(ex.ParamName);   // maybeCustomer
+            Console.WriteLine(ex.ParamName);   // customer
         }
 
         static void Save(Customer? customer)

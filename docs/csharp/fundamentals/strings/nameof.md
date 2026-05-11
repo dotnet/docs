@@ -19,7 +19,7 @@ The `nameof` operator returns the textual identifier of a symbol — a variable,
 
 :::code language="csharp" source="snippets/nameof/Program.cs" ID="Basic":::
 
-`nameof(customer.Name)` returns `"Name"`, not `"customer.Name"`. For the full qualified expression, only the last identifier is captured.
+`nameof(customer.Name)` returns `"Name"`, not `"customer.Name"`. For the fully qualified expression, only the last identifier is captured.
 
 ## Argument validation
 

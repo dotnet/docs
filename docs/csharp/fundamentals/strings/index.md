@@ -83,7 +83,7 @@ A `string` is a sequence of UTF-16 *code units*. The indexer returns one <xref:S
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Indexing":::
 
-For text that may contain emoji or characters outside the Basic Multilingual Plane, iterate by *rune* using <xref:System.Text.Rune> or by grapheme cluster using <xref:System.Globalization.StringInfo>. Plain `char` iteration works for most Western text and ASCII-dominant content.
+For text that might contain emoji or characters outside the Basic Multilingual Plane, iterate by *rune* using <xref:System.Text.Rune> or by grapheme cluster using <xref:System.Globalization.StringInfo>. Plain `char` iteration works for most Western text and ASCII-dominant content.
 
 ## String equality
 
@@ -95,7 +95,7 @@ For comparisons that need to be locale- or case-aware, pass an explicit <xref:Sy
 
 ## Common string operations
 
-The articles in this section cover the everyday operations on strings:
+Use the following table as a quick guide to everyday string operations in C#:
 
 | Category    | What it covers                                              |
 |-------------|-------------------------------------------------------------|

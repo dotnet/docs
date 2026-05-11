@@ -84,7 +84,7 @@ On Unix, you can execute file-based apps directly using just the source file nam
    #!/usr/bin/env -S dotnet --
    ```
 
-   This shebang uses `env` to find the `dotnet` in the PATH environment. The `-S` parameter lets the `env` command use the entire string (`dotnet --`) as the command to invoke. The `--` parameter ensures that when a user runs your app, any parameter provided by them is passed directly to your app, preventing `dotnet` from reading the parameters by mistake.
+   This shebang uses `env` to find `dotnet` in the PATH environment. The `-S` parameter enables `env` to pass `dotnet` and `--` as separate arguments. The `--` ensures that any arguments a user provides are passed directly to your app, preventing `dotnet` from consuming them by mistake.
 
    > [!TIP]
    > If the previous shebang doesn't work, try `#!/usr/bin/env dotnet` or the exact location of `dotnet`, for example `#!/usr/local/share/dotnet/dotnet --`.

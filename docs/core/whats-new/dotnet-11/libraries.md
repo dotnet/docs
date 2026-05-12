@@ -133,7 +133,7 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 
 ## UTF validation and invalid-subsequence search
 
-Two complementary additions land in <xref:System.Text.Unicode?displayProperty=fullName>. `Utf16.IsValid` answers whether a sequence is well-formed UTF-16 without scanning twice, and `Utf8.IndexOfInvalidSubsequence` / `Utf16.IndexOfInvalidSubsequence` return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together these let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
+Preview 4 adds two complementary features to <xref:System.Text.Unicode?displayProperty=fullName>. `Utf16.IsValid` answers whether a sequence is well-formed UTF-16 without scanning twice, and `Utf8.IndexOfInvalidSubsequence` / `Utf16.IndexOfInvalidSubsequence` return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together these let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="UtfValidation":::
 

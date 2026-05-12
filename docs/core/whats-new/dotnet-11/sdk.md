@@ -171,7 +171,7 @@ The `dotnet` CLI now uses OpenTelemetry (OTel) with Azure Monitor and OTLP expor
 
 ## NativeAOT entry point for the dotnet CLI
 
-Preview 4 lays the groundwork for a NativeAOT-compiled `dotnet` CLI host. The work introduces three layers:
+To enable near-instant startup for common CLI invocations, Preview 4 lays the groundwork for a NativeAOT-compiled `dotnet` CLI host. The work introduces three layers:
 
 - `dn.exe` — a NativeAOT host that resolves `DOTNET_ROOT` and `hostfxr` and marshals arguments into a NativeAOT shared library. This is for SDK-repository dogfooding, not production usage.
 - `dotnet-aot.dll` — a NativeAOT shared library that handles simple commands such as `--version` and `--info` directly, and falls back to the full managed CLI for everything else.

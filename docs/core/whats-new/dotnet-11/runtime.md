@@ -137,15 +137,13 @@ Breakpoints now bind correctly inside runtime-async methods, and the debugger ca
 - **Devirtualization in ReadyToRun images:** ReadyToRun (R2R) images can now devirtualize non-shared generic virtual method calls, improving performance of ahead-of-time compiled code for generic scenarios.
 - **SVE2 intrinsics:** New Arm SVE2 (Scalable Vector Extension 2) intrinsics are available: `ShiftRightLogicalNarrowingSaturate(Even|Odd)`. These expand the set of vectorized operations available on Arm hardware that supports SVE2.
 
-Preview 4 adds several more JIT optimizations:
+For better performance and code quality, Preview 4 adds several more JIT optimizations:
 
 ### Constant-folding SequenceEqual
 
-The JIT can now fold a `string.Equals` or `ReadOnlySpan<T>.SequenceEqual` call whose operands are both compile-time constants, replacing the byte-by-byte comparison with the constant `true` or `false` result. This matters most after inlining, when a caller passes another literal to a helper that compares against a known string:
+The JIT can now fold a `string.Equals` or `ReadOnlySpan<T>.SequenceEqual` call whose operands are both compile-time constants, replacing the byte-by-byte comparison with the constant `true` or `false` result. This matters most after inlining, when a caller passes another literal to a helper that compares against a known string. When `IsAdmin` is inlined into a caller that passes `"Guest"`, the JIT sees `"Guest" == "Admin"` and folds it to `false`:
 
 ```csharp
-// When IsAdmin is inlined into a caller that passes "Guest",
-// the JIT sees "Guest" == "Admin" and folds it to false.
 static bool IsAdmin(string role) => role == "Admin";
 ```
 

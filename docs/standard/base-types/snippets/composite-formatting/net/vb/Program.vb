@@ -1,4 +1,5 @@
-﻿Imports System.Text
+﻿Imports System
+Imports System.Text
 
 Module Program
     Sub Main(args As String())
@@ -145,6 +146,7 @@ Module Program
         ' Typically stored as a Shared ReadOnly field so it's parsed only once.
         Dim format As CompositeFormat = CompositeFormat.Parse("Name = {0}, hours = {1:hh}")
 
+        ' Pass Nothing for IFormatProvider to use the current culture.
         ' Use the pre-parsed format to avoid reparsing on every call.
         Dim result As String = String.Format(Nothing, format, "Fred", DateTime.Now)
         Console.WriteLine(result)

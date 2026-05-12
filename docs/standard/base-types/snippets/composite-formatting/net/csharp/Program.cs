@@ -149,6 +149,7 @@ void CompositeFormatDemo()
     // Typically stored as a static readonly field so it's parsed only once.
     CompositeFormat format = CompositeFormat.Parse("Name = {0}, hours = {1:hh}");
 
+    // Pass null for IFormatProvider to use the current culture.
     // Use the pre-parsed format to avoid reparsing on every call.
     string result = string.Format(null, format, "Fred", DateTime.Now);
     Console.WriteLine(result);

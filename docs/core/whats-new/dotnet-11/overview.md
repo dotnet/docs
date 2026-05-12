@@ -2,14 +2,14 @@
 title: What's new in .NET 11
 description: Learn about the new features introduced in .NET 11 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 04/14/2026
+ms.date: 05/12/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 11
 
-This article describes new features in .NET 11. It was last updated for Preview 3.
+This article describes new features in .NET 11. It was last updated for Preview 4.
 
 .NET 11 is currently in preview. The final release is expected in November 2026. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
@@ -20,9 +20,11 @@ Your feedback is important and appreciated. If you have questions or comments, u
 The .NET 11 runtime includes:
 
 - Updated minimum hardware requirements for x86/x64 and Arm64 architectures, requiring more modern instruction sets to improve performance and reduce maintenance complexity.
-- Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead. Starting with Preview 3, Runtime Async no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` for projects that target `net11.0`.
-- JIT improvements for bounds check elimination, redundant checked context removal, switch expression folding, and new Arm SVE2 intrinsics.
-- WebAssembly improvements, including WebCIL payload loading and better debugging symbols.
+- Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead. Starting with Preview 3, Runtime Async no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` for projects that target `net11.0`. Starting with Preview 4, the runtime libraries themselves are compiled with runtime-async.
+- JIT improvements for bounds check elimination, redundant checked context removal, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. Preview 4 also adds new Arm SVE2 intrinsics and improved hardware-intrinsic cost modeling.
+- `Comparer<T>.Default` and `EqualityComparer<T>.Default` specialized in ReadyToRun images, delivering up to 20× faster collection operations.
+- WebAssembly improvements, including WebCIL V1 as the default for CoreCLR WASM builds, native re-link support, and better debugging symbols.
+- Support for more than 1024 CPUs on Linux.
 
 For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
@@ -30,14 +32,20 @@ For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
 The .NET 11 libraries include new APIs for:
 
+- <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, `SafeProcessHandle` lifecycle methods, and tighter handle control.
+- Span-based Deflate, ZLib, and GZip encoder/decoder APIs for zero-allocation compression.
+- Floating-point hex formatting and parsing for exact IEEE-754 round-trips.
+- UTF validation and invalid-subsequence search in <xref:System.Text.Unicode?displayProperty=fullName>.
+- Rate-limiting improvements, including `RetryAfter` support in `FixedWindowRateLimiter`.
 - String and character manipulation, including Rune-based operations in <xref:System.String> and BFloat16 support in <xref:System.BitConverter>.
 - Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
-- Generic type info retrieval in <xref:System.Text.Json?displayProperty=fullName>.
-- System.Text.Json naming and ignore enhancements, including `JsonNamingPolicy.PascalCase`, per-member naming policy overrides, and type-level ignore conditions.
-- Tar archive format selection.
-- Numerics, including a <xref:System.Numerics.Matrix4x4> performance improvement.
-- Low-level I/O, including `SafeFileHandle` pipe-type reporting and anonymous pipe creation, and `RandomAccess` read/write on non-seekable handles.
-- Regular expression support for all Unicode newline sequences via <xref:System.Text.RegularExpressions.RegexOptions>.
+- System.Text.Json improvements, including generic type info retrieval, `JsonNamingPolicy.PascalCase`, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, and `Utf8JsonWriter.Reset` with options.
+- Built-in OpenTelemetry metrics for `MemoryCache`.
+- Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in `System.Runtime.CompilerServices`.
+- Tar archive format selection and GNU sparse format 1.0 support.
+- `Console` support for the `FORCE_COLOR` environment variable.
+- TLS handshake hardening and certificate-validation alerts on Linux.
+- HTTP/2 automatic downgrade for Windows authentication.
 
 For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
@@ -45,14 +53,20 @@ For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
 The .NET 11 SDK includes:
 
-- Smaller SDK installers on Linux and macOS through assembly deduplication.
+- Smaller SDK installers on Linux and macOS through assembly deduplication, with additional savings in Preview 4 by skipping crossgen for `DotnetTools`-only assemblies.
 - Improved [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) code analyzer with reduced noise and clearer diagnostic messages.
 - Analyzer bug fixes for [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md), [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md), and [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md).
 - A new NETSDK1235 warning for custom `.nuspec` files used with PackAsTool.
 - Support for creating and editing solution filters (`.slnf`) from the `dotnet sln` CLI.
 - File-based app support for `#:include` to split apps across multiple files.
 - A new `dotnet run -e` option to pass environment variables from the command line.
-- `dotnet watch` improvements, including Aspire app-host integration and automatic crash recovery.
+- `dotnet watch` improvements, including Aspire app-host integration, automatic crash recovery, and device selection for MAUI and mobile projects.
+- Fish shell completions matching Bash, Zsh, and PowerShell.
+- `dotnet reference add/remove` falls back to the current directory when no `--project` is supplied.
+- Launch settings notice moved to `stderr` so script output capture works cleanly.
+- Asset Groups for Static Web Assets.
+- OpenTelemetry replaces Application Insights for CLI telemetry.
+- Foundation for a NativeAOT entry point for the `dotnet` CLI.
 
 For more information, see [What's new in the SDK for .NET 11](sdk.md).
 

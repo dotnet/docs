@@ -2,14 +2,50 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 04/14/2026
+ms.date: 05/12/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 3.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 4.
+
+## Process API expansion
+
+<xref:System.Diagnostics.Process> gains a substantial set of new APIs in Preview 4, covering common scenarios where you previously had to wire up `OutputDataReceived`/`ErrorDataReceived` events manually or use P/Invoke.
+
+### Run-and-capture helpers
+
+New one-shot APIs let you launch a process and get its result without manual setup:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="ProcessRunAndCapture":::
+
+The full set of helpers includes:
+
+- `Process.Run` and `Process.RunAsync` — launch a process and return an exit-status result.
+- `Process.RunAndCaptureText` and `Process.RunAndCaptureTextAsync` — launch and capture stdout/stderr together with exit code.
+- `Process.ReadAllText`, `Process.ReadAllBytes`, and their async variants — read a child process's standard output in a single call.
+- `Process.ReadAllLinesAsync` — returns a stream of `ProcessOutputLine` values that distinguish stdout from stderr without string parsing.
+
+### Fire-and-forget launches
+
+- `Process.StartAndForget` — starts a child process when you don't intend to wait for it; the runtime detaches the handle automatically.
+- `ProcessStartInfo.StartDetached` — detaches from the parent's session/console so the child can outlive a terminal exit.
+- `ProcessStartInfo.KillOnParentExit` (Windows only) — the child is terminated when the parent process exits.
+
+### SafeProcessHandle lifecycle methods
+
+<xref:Microsoft.Win32.SafeHandles.SafeProcessHandle> gains lifecycle methods for advanced scenarios:
+
+- `SafeProcessHandle.Start` and a new `ProcessId` property — launch and identify processes without going through `Process` itself.
+- `SafeProcessHandle.Kill` and `SafeProcessHandle.Signal` — terminate or signal a process by handle.
+- `SafeProcessHandle.WaitForExit` and `SafeProcessHandle.WaitForExitAsync` — wait for a process to exit by handle.
+
+### Tighter handle control
+
+- `ProcessStartInfo.InheritedHandles` — specify exactly which OS handles a child process inherits, instead of using the all-or-nothing `UseShellExecute = false` default.
+- `ProcessStartInfo.StandardInputHandle`, `StandardOutputHandle`, and `StandardErrorHandle` — supply already-open `SafeFileHandle` values for redirection without the framework opening new ones.
 
 ## String and character enhancements
 
@@ -73,6 +109,12 @@ Previously, these streams didn't produce any output if no data was written, resu
 
 For more information, see [DeflateStream and GZipStream write headers and footers for empty payload](../../compatibility/core-libraries/11/deflatestream-gzipstream-empty-payload.md).
 
+### Span-based Deflate, ZLib, and GZip APIs
+
+<xref:System.IO.Compression> now offers `Span<byte>`/`ReadOnlySpan<byte>` encode and decode entry points for the Deflate, ZLib, and GZip formats. The new APIs mirror the shape of `BrotliEncoder`/`BrotliDecoder` and the Zstandard primitives, so you can compress and decompress buffers without allocating a `Stream`. This is useful for high-throughput scenarios such as protocol parsers, log shippers, and middleware that already operate on spans.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="ZLibEncoderSpan":::
+
 ## BFloat16 support in BitConverter
 
 The <xref:System.BitConverter> class now includes methods for converting between <xref:System.Numerics.BFloat16> values and byte arrays or bit representations. These new methods include:
@@ -82,6 +124,18 @@ The <xref:System.BitConverter> class now includes methods for converting between
 - <xref:System.BitConverter.BFloat16ToInt16Bits(System.Numerics.BFloat16)?displayProperty=nameWithType>, <xref:System.BitConverter.BFloat16ToUInt16Bits(System.Numerics.BFloat16)?displayProperty=nameWithType>, <xref:System.BitConverter.Int16BitsToBFloat16(System.Int16)?displayProperty=nameWithType>, and <xref:System.BitConverter.UInt16BitsToBFloat16(System.UInt16)?displayProperty=nameWithType> - Methods for converting between BFloat16 and its bit representation as `short` or `ushort`.
 
 BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonly used in machine learning and scientific computing.
+
+## Floating-point hex formatting and parsing
+
+`double`, `float`, and `Half` can now be formatted and parsed in their hexadecimal IEEE-754 form. The hex form preserves every bit of the underlying value, making it the right choice for golden-file tests, cross-language interop with C/C++ `printf("%a", ...)`, and any scenario where round-tripping a `double` through decimal text is too lossy.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="FloatingPointHex":::
+
+## UTF validation and invalid-subsequence search
+
+Two complementary additions land in <xref:System.Text.Unicode?displayProperty=fullName>. `Utf16.IsValid` answers whether a sequence is well-formed UTF-16 without scanning twice, and `Utf8.IndexOfInvalidSubsequence` / `Utf16.IndexOfInvalidSubsequence` return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together these let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="UtfValidation":::
 
 ## Collections improvements
 
@@ -129,9 +183,34 @@ Preview 3 expands the naming and ignore options available in `System.Text.Json`:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonNamingIgnore":::
 
-## Zstandard compression
+### F# discriminated union support
 
-The Zstandard compression APIs are now part of the <xref:System.IO.Compression?displayProperty=fullName> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. If you referenced the earlier preview package, remove the separate package reference:
+The serializer now understands F# discriminated unions out of the box. Apps that share types between F# producers and C# consumers no longer need a custom converter for the most common shapes:
+
+```fsharp
+type Shape =
+    | Circle of radius: float
+    | Square of side: float
+
+let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
+// {"$type":"Circle","radius":1.5}
+```
+
+### Utf8JsonWriter.Reset with options
+
+<xref:System.Text.Json.Utf8JsonWriter.Reset*> now accepts a <xref:System.Text.Json.JsonWriterOptions> parameter, so writer instances can be re-pooled with different options without allocating a new writer:
+
+```csharp
+using System.Text.Json;
+
+var writer = new Utf8JsonWriter(stream, new JsonWriterOptions { Indented = true });
+// ... write JSON ...
+
+// Reset with different options for next use — no allocation
+writer.Reset(stream2, new JsonWriterOptions { Indented = false });
+```
+
+## Zstandard compression
 
 ```diff
 -<PackageReference Include="System.IO.Compression.Zstandard" />
@@ -145,6 +224,8 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="TarArchiveFormat":::
 
+`TarReader` can now also read entries that use the GNU sparse format 1.0 (PAX) representation. The earlier 0.1 representation was already supported. With 1.0 support in place, `TarReader` matches what modern `tar` implementations write by default for sparse files.
+
 ## Numerics improvements
 
 ### Matrix4x4 performance
@@ -155,7 +236,7 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 
 ### SafeFileHandle pipe support
 
-<xref:Microsoft.Win32.SafeHandles.SafeFileHandle> gains two new members in Preview 3:
+<xref:Microsoft.Win32.SafeHandles.SafeFileHandle> gains two new members:
 
 - **`Type` property:** Reports whether a handle represents a file, pipe, socket, directory, or other OS object, without requiring platform-specific code.
 - **`CreateAnonymousPipe` method:** Creates a pair of connected anonymous pipe handles with independent async behavior for each end.
@@ -175,6 +256,106 @@ On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, whic
 A new <xref:System.Text.RegularExpressions.RegexOptions> flag, `AnyNewLine`, makes `^`, `$`, and `.` treat the full set of Unicode newline characters as line terminators—not just `\n`. This helps when parsing text that mixes Windows (`\r\n`), Unix (`\n`), and Unicode-specific (`\u0085`, `\u2028`, `\u2029`) line endings.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="RegexAnyNewLine":::
+
+### Regex engine and source generator fixes
+
+Preview 4 also includes several regex correctness and code-quality fixes:
+
+- The non-backtracking engine no longer takes super-linear time on certain nested-loop patterns and produces correct results for cases that previously diverged.
+- The regex compiler and source generator handle `resumeAt` correctly when a conditional appears inside a loop body.
+- The SYSLIB1045 code fixer no longer creates duplicate class names when applied across multiple partial declarations of the same class.
+
+## Rate-limiting improvements
+
+A cluster of <xref:System.Threading.RateLimiting?displayProperty=fullName> fixes lands in Preview 4:
+
+- <xref:System.Threading.RateLimiting.FixedWindowRateLimiter> now reports a `RetryAfter` metadata value that points to the next window boundary, so callers and middleware can honor it without guessing.
+- `TokenBucketRateLimiter.AttemptAcquire(0)` no longer mishandles partial token refills.
+- `ChainedRateLimiter` now correctly forwards `IdleDuration` and replenishment behavior from its inner limiters.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="RateLimitingRetryAfter":::
+
+## Configuration binding
+
+<xref:Microsoft.Extensions.Configuration?displayProperty=fullName> adds `ConfigurationIgnoreAttribute`, so models can opt individual properties out of binding declaratively without relying on `BindNonPublicProperties` toggles or custom converters:
+
+```csharp
+public sealed class AppOptions
+{
+    public string Endpoint { get; set; } = "";
+
+    [ConfigurationIgnore]
+    public string ComputedKey => Endpoint + ":default";
+}
+```
+
+`ConfigurationBinder` now also binds an empty array to a constructor parameter instead of throwing.
+
+`PhysicalFilesWatcher` no longer throws when its root directory doesn't yet exist, and `InMemoryDirectoryInfo` resolves `..` and other relative segments consistently with the physical provider.
+
+## MemoryCache OpenTelemetry metrics
+
+<xref:Microsoft.Extensions.Caching.Memory.MemoryCache> now emits a built-in set of OpenTelemetry (OTel)-compatible metrics without an extra adapter package. To opt in, set `TrackStatistics = true`:
+
+```csharp
+var cache = new MemoryCache(new MemoryCacheOptions
+{
+    TrackStatistics = true
+});
+```
+
+The new `Microsoft.Extensions.Caching.Memory.MemoryCache` meter publishes four observable instruments:
+
+- `dotnet.cache.requests` (with a `dotnet.cache.request.type` tag that distinguishes `hit` from `miss`)
+- `dotnet.cache.evictions`
+- `dotnet.cache.entries`
+- `dotnet.cache.estimated_size`
+
+Pass an `IMeterFactory` to the new `MemoryCache(options, loggerFactory, meterFactory)` constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
+
+## Discriminated-union scaffolding
+
+> [!NOTE]
+> This is a preview feature in .NET 11.
+
+Preview 4 introduces `UnionAttribute` and `IUnion` in `System.Runtime.CompilerServices`. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
+
+For the language-side design, see the [C# unions proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
+
+## MetadataLoadContext additions
+
+<xref:System.Reflection.MetadataLoadContext.GetLoadContext(System.Reflection.Assembly)?displayProperty=nameWithType> returns the load context that produced a given `Assembly`, mirroring the long-existing API on <xref:System.Runtime.Loader.AssemblyLoadContext>. This closes a gap for tooling that reflects over assemblies in an isolated `MetadataLoadContext` and needs to walk back from an `Assembly` reference to the context that owns it:
+
+```csharp
+using System.Reflection;
+using System.Reflection.Metadata;
+
+string[] paths = [typeof(object).Assembly.Location];
+using var mlc = new MetadataLoadContext(new PathAssemblyResolver(paths));
+Assembly asm = mlc.LoadFromAssemblyPath(typeof(object).Assembly.Location);
+
+MetadataLoadContext owner = MetadataLoadContext.GetLoadContext(asm)!;
+Console.WriteLine(ReferenceEquals(owner, mlc)); // true
+```
+
+## Console FORCE_COLOR support
+
+.NET console output now honors the [`FORCE_COLOR`](https://force-color.org/) standard alongside the existing `NO_COLOR` support. When `FORCE_COLOR` is set, `Console.IsOutputRedirected` no longer suppresses ANSI escape codes. This is useful when you pipe `dotnet run` output through `tee`, into a CI log viewer, or through `less -R`:
+
+```bash
+FORCE_COLOR=1 dotnet run | tee build.log
+```
+
+## TLS handshake hardening
+
+Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Transport Layer Security) reliability:
+
+- `SslStream` server-side handshake bounds-checking fixes in `TlsFrameHelper` close several edge cases that could surface as `IOException` on malformed ClientHello records.
+- On Linux, certificate-validation failures now surface as standard TLS alerts to the peer, matching Windows behavior. Connecting clients receive an actionable handshake error instead of a connection drop.
+
+## HTTP/2 automatic downgrade for Windows authentication
+
+<xref:System.Net.Http.HttpClient> automatically downgrades to HTTP/1.1 when a request requires Windows authentication (NTLM/Negotiate) over HTTP/2. The HTTP/2 specification disallows the connection-bound authentication schemes that NTLM and Kerberos rely on, so these requests previously failed. With the downgrade in place, applications targeting mixed-authentication environments—common in enterprise intranets—work without explicit `HttpRequestMessage.Version` overrides.
 
 ## See also
 

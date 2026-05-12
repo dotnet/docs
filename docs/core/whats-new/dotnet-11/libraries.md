@@ -13,7 +13,7 @@ This article describes new features in the .NET libraries for .NET 11. It was la
 
 ## Process API expansion
 
-<xref:System.Diagnostics.Process> gains a substantial set of new APIs in Preview 4, covering common scenarios where you previously had to wire up `OutputDataReceived`/`ErrorDataReceived` events manually or use P/Invoke.
+<xref:System.Diagnostics.Process> has a substantial set of new APIs that cover common scenarios where you previously had to wire up `OutputDataReceived`/`ErrorDataReceived` events manually or use P/Invoke.
 
 ### Run-and-capture helpers
 
@@ -133,7 +133,7 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 
 ## UTF validation and invalid-subsequence search
 
-Preview 4 adds two complementary features to <xref:System.Text.Unicode?displayProperty=fullName>. `Utf16.IsValid` answers whether a sequence is well-formed UTF-16 without scanning twice, and `Utf8.IndexOfInvalidSubsequence` / `Utf16.IndexOfInvalidSubsequence` return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together these let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
+<xref:System.Text.Unicode?displayProperty=fullName> has two new complementary features. `Utf16.IsValid` answers whether a sequence is well-formed UTF-16 without scanning twice, and `Utf8.IndexOfInvalidSubsequence` / `Utf16.IndexOfInvalidSubsequence` return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together, these methods let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="UtfValidation":::
 
@@ -198,7 +198,7 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 ### Utf8JsonWriter.Reset with options
 
-<xref:System.Text.Json.Utf8JsonWriter.Reset*> now accepts a <xref:System.Text.Json.JsonWriterOptions> parameter, so writer instances can be re-pooled with different options without allocating a new writer:
+<xref:System.Text.Json.Utf8JsonWriter.Reset*> now accepts a <xref:System.Text.Json.JsonWriterOptions> parameter, so writer instances can be repooled with different options without allocating a new writer:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="Utf8JsonWriterReset":::
 
@@ -253,15 +253,15 @@ A new <xref:System.Text.RegularExpressions.RegexOptions> flag, `AnyNewLine`, mak
 
 ### Regex engine and source generator fixes
 
-Preview 4 also includes several regex correctness and code-quality fixes:
+.NET 11 includes several regex correctness and code-quality fixes:
 
 - The non-backtracking engine no longer takes super-linear time on certain nested-loop patterns and produces correct results for cases that previously diverged.
 - The regex compiler and source generator handle `resumeAt` correctly when a conditional appears inside a loop body.
-- The SYSLIB1045 code fixer no longer creates duplicate class names when applied across multiple partial declarations of the same class.
+- The [SYSLIB1045](../../../fundamentals/syslib-diagnostics/syslib1040-1049.md) code fixer no longer creates duplicate class names when applied across multiple partial declarations of the same class.
 
 ## Rate-limiting improvements
 
-A cluster of <xref:System.Threading.RateLimiting?displayProperty=fullName> fixes lands in Preview 4:
+The <xref:System.Threading.RateLimiting?displayProperty=fullName> class has a handful of fixes in .NET 11:
 
 - <xref:System.Threading.RateLimiting.FixedWindowRateLimiter> now reports a `RetryAfter` metadata value that points to the next window boundary, so callers and middleware can honor it without guessing.
 - `TokenBucketRateLimiter.AttemptAcquire(0)` no longer mishandles partial token refills.
@@ -312,7 +312,7 @@ Pass an `IMeterFactory` to the new `MemoryCache(options, loggerFactory, meterFac
 > [!NOTE]
 > This is a preview feature in .NET 11.
 
-Preview 4 introduces `UnionAttribute` and `IUnion` in `System.Runtime.CompilerServices`. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
+.NET 11 introduces `UnionAttribute` and `IUnion` in `System.Runtime.CompilerServices`. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
 
 For the language-side design, see the [C# unions proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
 

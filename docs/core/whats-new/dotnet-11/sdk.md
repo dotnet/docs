@@ -24,7 +24,7 @@ Analysis found that 35% of the SDK directory consists of duplicate files. On Lin
 | linux-x64 | rpm | 165 | 122 | 26.0% |
 | linux-x64 | containers | Varies | Varies | 8–17% |
 
-Preview 4 trims the SDK further by skipping crossgen for assemblies that only exist under `DotnetTools/`. Assemblies that also exist outside `DotnetTools/` are still crossgen'd—they get the startup benefit and the duplicate is then removed—but assemblies unique to `DotnetTools/` are left as IL-only. On a `linux-x64` build, this reduces the SDK tarball by an additional 23.6 MB.
+The SDK is further trimmed because crossgen is skipped for assemblies that only exist under `DotnetTools/`. Assemblies that also exist outside `DotnetTools/` are still crossgen'd—they get the startup benefit and the duplicate is then removed—but assemblies unique to `DotnetTools/` are left as IL-only. On a `linux-x64` build, this reduces the SDK tarball by an additional 23.6 MB.
 
 Windows deduplication is planned for a future preview.
 
@@ -116,13 +116,13 @@ Environment variables passed this way are available to MSBuild logic as `Runtime
 
 ## dotnet watch improvements
 
-Preview 3 adds several `dotnet watch` improvements for long-running local development loops:
+.NET 11 adds several `dotnet watch` improvements for long-running local development loops:
 
 - **Aspire integration:** `dotnet watch` can now integrate with Aspire app hosts, enabling hot-reload workflows across the full Aspire application model.
 - **Crash recovery:** When the app crashes, `dotnet watch` automatically relaunches it on the next relevant file change.
 - **Windows desktop support:** Ctrl+C handling is improved for Windows desktop apps such as Windows Forms and WPF.
 
-Preview 4 adds device selection for MAUI and mobile projects. After picking a target framework, `dotnet watch` calls the `ComputeAvailableDevices` MSBuild target, auto-selects when there's a single device, and shows an interactive picker with search when there are several. The chosen device flows through to `dotnet build` and the launched `dotnet run` subprocess, including a re-restore when the device requires a `RuntimeIdentifier` not present in the original restore.
+.NET 11 also adds device selection for MAUI and mobile projects. After picking a target framework, `dotnet watch` calls the `ComputeAvailableDevices` MSBuild target, auto-selects when there's a single device, and shows an interactive picker with search when there are several. The chosen device flows through to `dotnet build` and the launched `dotnet run` subprocess, including a re-restore when the device requires a `RuntimeIdentifier` not present in the original restore.
 
 To pre-select a device from the command line, use:
 
@@ -130,10 +130,10 @@ To pre-select a device from the command line, use:
 dotnet watch --device <device-id>
 ```
 
-Preview 4 also fixes several long-standing `dotnet watch` issues:
+The following long-standing `dotnet watch` issues are fixed:
 
 - The framework selection prompt no longer appears stuck due to two readers both calling `Console.ReadKey()`.
-- Ctrl+C and Ctrl+R no longer surface a spurious `WebSocketException` or `ObjectDisposedException` when the WebSocket transport tears down.
+- <kbd>Ctrl+C</kbd> and <kbd>Ctrl+R</kbd> no longer surface a spurious `WebSocketException` or `ObjectDisposedException` when the WebSocket transport tears down.
 - Hot Reload no longer deadlocks on iOS when `UIKitSynchronizationContext` is installed before the startup hook runs.
 
 > [!NOTE]
@@ -159,7 +159,7 @@ Previously, these commands failed with `Could not find project or directory ''` 
 
 The `Using launch settings from ...` informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
 
-## Asset Groups for Static Web Assets
+## Asset groups for static web assets
 
 The Static Web Assets SDK adds support for **Asset Groups**, a way to declare groups of related assets that share publish, fingerprinting, and endpoint metadata. The related `DefineStaticWebAssetEndpoints` task gains an `AdditionalEndpointDefinitions` parameter, and the glob matcher exposes the captured `**` stem so additional endpoints (for example default-document routes like `/` for `**/index.html`) can be defined declaratively.
 
@@ -171,7 +171,7 @@ The `dotnet` CLI now uses OpenTelemetry (OTel) with Azure Monitor and OTLP expor
 
 ## NativeAOT entry point for the dotnet CLI
 
-To enable near-instant startup for common CLI invocations, Preview 4 lays the groundwork for a NativeAOT-compiled `dotnet` CLI host. The work introduces three layers:
+To enable near-instant startup for common CLI invocations, .NET 11 lays the groundwork for a NativeAOT-compiled `dotnet` CLI host. The work introduces three layers:
 
 - `dn.exe` — a NativeAOT host that resolves `DOTNET_ROOT` and `hostfxr` and marshals arguments into a NativeAOT shared library. This is for SDK-repository dogfooding, not production usage.
 - `dotnet-aot.dll` — a NativeAOT shared library that handles simple commands such as `--version` and `--info` directly, and falls back to the full managed CLI for everything else.
@@ -193,7 +193,7 @@ A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `d
 
 ## Breaking changes
 
-.NET 11 includes the following breaking changes in the SDK:
+.NET 11 includes some breaking changes in the SDK.
 
 ### Mono launch target no longer set automatically
 

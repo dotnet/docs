@@ -69,11 +69,11 @@ Runtime Async is a preview feature. To opt in, add the following property to you
 </PropertyGroup>
 ```
 
-Starting with Preview 3, a `net11.0` project no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` to use Runtime Async.
+A `net11.0` project no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` to use Runtime Async.
 
-Starting with Preview 4, the .NET runtime libraries themselves are compiled with `runtime-async=on`. The runtime libraries no longer contain compiler-generated state machines and rely entirely on runtime-provided async. This makes it possible to migrate an entire app (with only library dependencies) to the new model, and it provides broad functional and performance validation of the feature. The product team welcomes any reports—positive or negative—about throughput and library size changes you observe.
+The .NET runtime libraries themselves are compiled with `runtime-async=on`. The runtime libraries no longer contain compiler-generated state machines and rely entirely on runtime-provided async. This makes it possible to migrate an entire app (with only library dependencies) to the new model, and it provides broad functional and performance validation of the feature. The product team welcomes any reports—positive or negative—about throughput and library size changes you observe.
 
-Preview 4 also includes two additional improvements:
+.NET 11 also includes two additional improvements:
 
 - **Covariant `Task` → `Task<T>` overrides:** When a derived class returns `Task<T>` for a base method that returns `Task`, the runtime now generates a void-returning thunk that bridges the calling convention difference, so virtual dispatch works for both flavors. The same fix applies to NativeAOT.
 - **Inlining in crossgen2:** Restrictions that prevented runtime-async methods from being inlined during ReadyToRun (R2R) compilation have been removed. All async tests pass with both crossgen2 and composite R2R, and inlining of await-less async calls (the synchronous fast path) is confirmed end-to-end.
@@ -137,7 +137,7 @@ Breakpoints now bind correctly inside runtime-async methods, and the debugger ca
 - **Devirtualization in ReadyToRun images:** ReadyToRun (R2R) images can now devirtualize non-shared generic virtual method calls, improving performance of ahead-of-time compiled code for generic scenarios.
 - **SVE2 intrinsics:** New Arm SVE2 (Scalable Vector Extension 2) intrinsics are available: `ShiftRightLogicalNarrowingSaturate(Even|Odd)`. These expand the set of vectorized operations available on Arm hardware that supports SVE2.
 
-For better performance and code quality, Preview 4 adds several more JIT optimizations:
+For better performance and code quality, .NET 11 adds several more JIT optimizations:
 
 ### Constant-folding SequenceEqual
 
@@ -179,7 +179,7 @@ These optimizations are most visible after inlining, where guards from different
 
 ## Hardware intrinsics and code generation
 
-Preview 4 includes several new hardware intrinsics and code generation improvements:
+.NET 11 includes several new hardware intrinsics and code generation improvements:
 
 - **F16C acceleration for `Half` ↔ `float` conversions on x64:** When the CPU supports F16C (most AVX2-capable hardware), conversions between <xref:System.Half> and `float`/`double` now use the dedicated `vcvtph2ps`/`vcvtps2ph` instructions instead of helper calls.
 - **Better cost modeling for x86/x64 SIMD:** The JIT's floating-point execution and size costs previously reflected x87-era assumptions. Updated costs that reflect modern SSE/AVX hardware let the JIT make better decisions about hoisting and common subexpression elimination (CSE) around SIMD code.
@@ -207,7 +207,7 @@ Preview 3 expands browser and WebAssembly support with several improvements:
 - **Better debugging symbols:** Symbol and stack trace quality for WebAssembly debugging has improved, making it easier to diagnose issues in browser-hosted .NET apps.
 - **`float[]`, `Span<float>`, and `ArraySegment<float>` marshaling:** `float[]`, `Span<float>`, and `ArraySegment<float>` are now marshaled more directly across JavaScript boundaries, reducing overhead for interop-heavy code.
 
-Preview 4 adds significant CoreCLR-on-WebAssembly progress:
+.NET includes improvements to CoreCLR-on-WebAssembly:
 
 - **WebCIL V1 is the default for CoreCLR WASM builds:** The shared WebCIL header gains a `TableBase` field (28 → 32 bytes). Both Mono and CoreCLR readers accept V0 and V1. Crossgen2's `WasmObjectWriter` produces V1 directly, and CoreCLR-flavored WASM SDK builds default `WasmWebcilVersion` to `V1`.
 - **Native re-link works for CoreCLR WASM apps:** A full Emscripten-based pipeline replaces the previous stub targets. Re-linking `dotnet.native.wasm` from the runtime pack and including custom native code via `NativeFileReference` now works.

@@ -20,8 +20,8 @@ Your feedback is important and appreciated. If you have questions or comments, u
 The .NET 11 runtime includes:
 
 - Updated minimum hardware requirements for x86/x64 and Arm64 architectures, requiring more modern instruction sets to improve performance and reduce maintenance complexity.
-- Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead. Starting with Preview 3, Runtime Async no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` for projects that target `net11.0`. Starting with Preview 4, the runtime libraries themselves are compiled with runtime-async.
-- JIT improvements for bounds check elimination, redundant checked context removal, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. Preview 4 also adds new Arm SVE2 intrinsics and improved hardware-intrinsic cost modeling.
+- Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead. Runtime Async no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` for projects that target `net11.0`. The runtime libraries themselves are compiled with `runtime-async=on`.
+- JIT improvements for bounds check elimination, redundant checked context removal, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. There are also new Arm SVE2 intrinsics and improved hardware-intrinsic cost modeling.
 - `Comparer<T>.Default` and `EqualityComparer<T>.Default` specialized in ReadyToRun images, delivering up to 20× faster collection operations.
 - WebAssembly improvements, including WebCIL V1 as the default for CoreCLR WASM builds, native re-link support, and better debugging symbols.
 - Support for more than 1024 CPUs on Linux.
@@ -53,7 +53,7 @@ For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
 The .NET 11 SDK includes:
 
-- Smaller SDK installers on Linux and macOS through assembly deduplication, with additional savings in Preview 4 by skipping crossgen for `DotnetTools`-only assemblies.
+- Smaller SDK installers on Linux and macOS through assembly deduplication, with additional savings by skipping crossgen for `DotnetTools`-only assemblies.
 - Improved [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) code analyzer with reduced noise and clearer diagnostic messages.
 - Analyzer bug fixes for [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md), [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md), and [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md).
 - A new NETSDK1235 warning for custom `.nuspec` files used with PackAsTool.

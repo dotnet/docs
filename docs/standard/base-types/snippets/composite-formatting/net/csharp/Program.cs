@@ -1,3 +1,4 @@
+using System.Text;
 
 void Index()
 {
@@ -132,6 +133,7 @@ string.Format("Name = {0}, hours = {1:hh}", "Fred", DateTime.Now);
 // </basic>
 
 Index();
+CompositeFormatDemo();
 Multiple();
 Alignment();
 NowGood();
@@ -140,3 +142,16 @@ Examples_ToString();
 Examples_Currency();
 Examples_Multiple();
 Examples_Bar();
+
+void CompositeFormatDemo()
+{
+    // <compositeformat>
+    // Typically stored as a static readonly field so it's parsed only once.
+    CompositeFormat format = CompositeFormat.Parse("Name = {0}, hours = {1:hh}");
+
+    // Use the pre-parsed format to avoid reparsing on every call.
+    string result = string.Format(null, format, "Fred", DateTime.Now);
+    Console.WriteLine(result);
+    // Output: Name = Fred, hours = 06
+    // </compositeformat>
+}

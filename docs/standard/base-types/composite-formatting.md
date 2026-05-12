@@ -184,10 +184,25 @@ The following example demonstrates the use of width in formatting. The arguments
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_bar":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_bar":::
 
+## Improve performance with CompositeFormat
+
+Starting with .NET 8, use the <xref:System.Text.CompositeFormat> class to improve the performance of composite string formatting when the same format string is used repeatedly. Parsing a composite format string at runtime is expensive. <xref:System.Text.CompositeFormat> pre-parses the format string once when you create the instance, so the formatting code in your hot path can run much faster.
+
+To use `CompositeFormat`:
+
+1. Call <xref:System.Text.CompositeFormat.Parse(System.String)?displayProperty=nameWithType> to create a `CompositeFormat` instance. For best results, cache this instance—typically as a `static readonly` field in C# or a `Shared ReadOnly` field in Visual Basic—so the format string is parsed only once.
+1. Pass the cached instance to <xref:System.String.Format*?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType> instead of the original format string.
+
+:::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="compositeformat":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="compositeformat":::
+
+The [CA1863](../../../fundamentals/code-analysis/quality-rules/ca1863.md) code analyzer rule detects places in your code where you can use `CompositeFormat` to improve performance.
+
 ## See also
 
 - <xref:System.Console.WriteLine*>
 - <xref:System.String.Format*?displayProperty=nameWithType>
+- <xref:System.Text.CompositeFormat>
 - [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)
 - [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
 - [Formatting types](formatting-types.md)
@@ -198,3 +213,4 @@ The following example demonstrates the use of width in formatting. The arguments
 - [Standard TimeSpan format strings](standard-timespan-format-strings.md)
 - [Custom TimeSpan format strings](custom-timespan-format-strings.md)
 - [Enumeration format strings](enumeration-format-strings.md)
+- [CA1863: Use CompositeFormat](../../../fundamentals/code-analysis/quality-rules/ca1863.md)

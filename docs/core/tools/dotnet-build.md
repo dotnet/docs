@@ -22,8 +22,7 @@ dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--no-dependencies] [--no-incremental] [--no-restore] [--nologo]
     [--no-self-contained] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
     [-p|--property:<PROPERTYNAME>=<VALUE>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--sc|--self-contained] [--source <SOURCE>]
-    [-t|--target:<TARGET>]
+    [--sc|--self-contained] [--source <SOURCE>] [-t|--target:<TARGET>]
     [--tl:[auto|on|off]] [ --ucr|--use-current-runtime]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
@@ -159,11 +158,11 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 - **`-t|--target:<TARGET>`**
 
-    Specifies one or more MSBuild targets to run during the build, instead of the default target. Multiple targets can be specified by separating them with a semicolon or by repeating the option. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`. For more information about targets, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
+  Specifies one or more MSBuild targets to run during the build instead of the default target. Specify multiple targets by separating them with a semicolon or comma, or by repeating the option for each target. Corresponds to the MSBuild -target option. Common targets include Build (default), Clean, and Rebuild. For more information, see MSBuild Targets.
 
   ```dotnetcli
-  dotnet build -t:RunTests
-  dotnet build -t:GenerateApiClients
+  dotnet build -t:"Clean;RunTests"
+  dotnet build -t:Clean -t:GenerateApiClients
   dotnet build -t:RunCodeGeneration
   ```
 

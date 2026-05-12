@@ -162,9 +162,9 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
     Specifies one or more MSBuild targets to run during the build, instead of the default target. Multiple targets can be specified by separating them with a semicolon or by repeating the option. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`. For more information about targets, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
 
   ```dotnetcli
-  dotnet build -t:Clean
-  dotnet build -t:Rebuild
-  dotnet build -t:Build
+  dotnet build -t:RunTests
+  dotnet build -t:GenerateApiClients
+  dotnet build -t:RunCodeGeneration
   ```
 
 - [!INCLUDE [tl](includes/cli-tl.md)]

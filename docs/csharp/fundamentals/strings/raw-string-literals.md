@@ -13,10 +13,10 @@ ai-usage: ai-assisted
 >
 > **Coming from another language?** C# raw string literals fill the same role as Python's and Rust's `r"..."` strings, Java's text blocks (`"""..."""`), and the back-tick template strings in JavaScript, TypeScript, and Go. The C# syntax is closest to Java's text blocks, with extra rules for variable-length delimiters and interpolation.
 
-A *raw string literal* is delimited by three or more double quotes. Inside the delimiters, every character is taken literally — quotes and backslashes don't need escaping, and newlines are preserved as written. Use raw strings for any string that contains quotes, backslashes, or multiple lines: JSON, XML, SQL, regular expressions, file paths, and code samples.
+A *raw string literal* is delimited by three or more double quotes. Inside the delimiters, every character is taken literally. Quotes and backslashes don't need escaping, and newlines are preserved as written. Use raw strings for any string that contains quotes, backslashes, or multiple lines: JSON, XML, SQL, regular expressions, file paths, and code samples.
 
 > [!WARNING]
-> A raw string literal makes SQL easier to read, but it doesn't make SQL safer. Never concatenate or interpolate user-supplied values into a SQL command — that opens your application to SQL injection. Use parameterized commands instead: <xref:System.Data.Common.DbCommand.CreateParameter%2A?displayProperty=nameWithType> with <xref:System.Data.Common.DbParameterCollection.Add%2A?displayProperty=nameWithType>, or the higher-level helpers in [Entity Framework Core](/ef/core/querying/raw-sql) and [Dapper](https://github.com/DapperLib/Dapper). The same caution applies to other injection-prone formats such as shell commands, LDAP filters, and HTML.
+> A raw string literal makes SQL easier to read, but it doesn't make SQL safer. Never concatenate or interpolate user-supplied values into a SQL command. That practice opens your application to SQL injection. Use parameterized commands instead: <xref:System.Data.Common.DbCommand.CreateParameter%2A?displayProperty=nameWithType> with <xref:System.Data.Common.DbParameterCollection.Add%2A?displayProperty=nameWithType>, or the higher-level helpers in [Entity Framework Core](/ef/core/querying/raw-sql) and [Dapper](https://github.com/DapperLib/Dapper). The same caution applies to other injection-prone formats such as shell commands, LDAP filters, and HTML.
 
 ## A literal that contains quotes and backslashes
 
@@ -32,7 +32,7 @@ The opening and closing delimiters are each at least three double quotes, and th
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="SingleLine":::
 
-A single-line raw string can't be empty between its delimiters. It can end with a double quote, but it can't start with one — the compiler treats a leading double quote as an additional opening delimiter character. If your content must start with a quote, use a multiline raw string literal instead, which places the content on its own line where a leading quote is unambiguous.
+A single-line raw string can't be empty between its delimiters. It can end with a double quote, but it can't start with one. The compiler treats a leading double quote as an additional opening delimiter character. If your content must start with a quote, use a multiline raw string literal instead, which places the content on its own line where a leading quote is unambiguous.
 
 ## Multiline raw strings
 
@@ -40,11 +40,11 @@ For multiline content, the opening delimiter ends the line and the closing delim
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="Multiline":::
 
-The newline immediately after the opening `"""` and the newline immediately before the closing `"""` are not part of the value. They're delimiter whitespace. Likewise, any whitespace to the left of the closing `"""` is stripped from every content line, so you can indent the literal to match its enclosing code block without that indentation appearing in the string. The next section covers this rule in detail.
+The newline immediately after the opening `"""` and the newline immediately before the closing `"""` aren't part of the value. They're delimiter whitespace. Likewise, the compiler strips any whitespace to the left of the closing `"""` from every content line, so you can indent the literal to match its enclosing code block without that indentation appearing in the string. The next section covers this rule in detail.
 
 ## Indentation: the closing delimiter sets the margin
 
-The column of the closing `"""` defines a left margin. Whitespace up to that column is stripped from every content line. This rule lets you indent the literal to match the surrounding code without polluting the value:
+The column of the closing `"""` defines a left margin. The compiler strips whitespace up to that column from every content line. This rule lets you indent the literal to match the surrounding code without polluting the value:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="Indentation":::
 
@@ -52,7 +52,7 @@ If a content line has fewer leading whitespace characters than the closing delim
 
 ## Content that contains `"""`
 
-When the content itself contains a run of three or more quotes, increase the delimiter count. Use four quotes — or more — at the opening and closing. The delimiter count just has to exceed the longest run of quotes anywhere in the content:
+When the content itself contains a run of three or more quotes, increase the delimiter count. Use four or more quotes at the opening and closing. The delimiter count just has to exceed the longest run of quotes anywhere in the content:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="MoreQuotes":::
 
@@ -60,23 +60,23 @@ You can scale this up to any number of quotes. Five-quote and six-quote delimite
 
 ## Raw interpolated strings
 
-A `$` prefix on a raw string enables interpolation. Expressions in `{}` holes are evaluated and their results inserted into the value:
+Add a ` prefix to a raw string to enable interpolation. The expressions in `{}` holes are evaluated, and their results are inserted into the value:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="RawInterpolated":::
 
-If the content also needs literal `{` or `}` characters — common when generating JSON, CSS, or code — add more `$` signs. Each `$` raises the number of braces required to mark an interpolation hole. With `$$`, single `{` and `}` are literal and only `{{...}}` is treated as a hole:
+If the content also needs literal `{` or `}` characters, which are common when generating JSON, CSS, or code, add more ` signs. Each ` raises the number of braces required to mark an interpolation hole. With `$`, single `{` and `}` are literal and only `{{...}}` is treated as a hole:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="DoubleDollarInterpolation":::
 
-You can use any number of `$` signs to disambiguate brace runs. Triple-`$` literals are rare but available.
+Use any number of ` signs to disambiguate brace runs. Triple-` literals are rare but available.
 
 ## When to choose which literal
 
 Use a **raw string literal** whenever the content contains quotes, backslashes, or multiple lines. The result is shorter to read, easier to paste in or out of, and free of escape-sequence bugs.
 
-Use a **regular string literal** for short, single-line values without quotes or backslashes — names, messages, format placeholders.
+Use a **regular string literal** for short, single-line values without quotes or backslashes such as names, messages, format placeholders.
 
-Use a **verbatim string literal** (`@"..."`) only when working with existing code that uses them. For new code, raw strings cover every case verbatim strings cover, with cleaner syntax for embedded quotes.
+Use a **verbatim string literal** (`@"..."`) only when working with existing code that uses them. For new code, raw strings cover every case that verbatim strings cover, with cleaner syntax for embedded quotes.
 
 ## See also
 

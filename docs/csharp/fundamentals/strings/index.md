@@ -25,13 +25,13 @@ Prefer the `string` keyword in your own code. It's consistent with the other bui
 
 ## Strings are immutable
 
-Once a `string` is created, its characters never change. Methods such as `ToUpperInvariant`, `Replace`, `Substring`, and `Trim` return a *new* string that contains the modified value. The original instance is unchanged.
+*Immutable* means the value can't be changed after it's created. Once you create a `string`, you can't change its characters. Methods such as `ToUpperInvariant`, `Replace`, `Substring`, and `Trim` return a *new* string that contains the modified value. The original instance stays the same.
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Immutability":::
 
-Immutability makes strings safe to share across methods and threads, and it's why the `string` type behaves like a value in everyday use even though it's a reference type.
+Because strings are immutable, you can safely share them across methods and threads. This immutability explains why the `string` type behaves like a value in everyday use even though it's a reference type.
 
-When you build a string from many small pieces in a loop, each `+` or `Concat` call allocates a new instance. When you build a string from several components, use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
+When you build a string from many small pieces in a loop, each `+` or `Concat` call creates a new instance. When you build a string from several components, use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="StringBuilder":::
 
@@ -39,12 +39,12 @@ For a small fixed number of pieces, plain interpolation or `string.Concat` is cl
 
 ## String literals
 
-C# offers four literal forms. Each is suited to different content. As a quick guide:
+C# offers four literal forms. Each form suits different content. As a quick guide:
 
-- Reach for **regular literals** for short, simple text with at most a few escape sequences.
+- Use **regular literals** for short, simple text with at most a few escape sequences.
 - Use **verbatim literals** when backslashes dominate the content, such as Windows paths or regex patterns.
-- Prefer **raw string literals** for multiline or structurally formatted text, such as inline JSON, SQL, XML, or formatted message blocks.
-- Add a `$` prefix to any of the above to get an **interpolated string** when you need to embed values.
+- Use **raw string literals** for multiline or structurally formatted text, such as inline JSON, SQL, XML, or formatted message blocks.
+- Add a ` prefix to any of the above literals to get an **interpolated string** when you need to embed values.
 
 ### Regular literals and escape sequences
 

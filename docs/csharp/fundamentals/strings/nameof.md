@@ -11,9 +11,9 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For the complete operator reference, see [`nameof`](../../language-reference/operators/nameof.md) in the language reference.
 >
-> **Coming from another language?** Other languages have similar features — Java's reflective `Class.getSimpleName()`, JavaScript's `Function.name` and `Object.keys`, Python's `__name__` and `vars()`, and Swift's `#function`/`#keyPath`. Unlike most of those, C#'s `nameof` is a pure compile-time construct. It uses no reflection, allocates nothing at runtime, and produces a constant `string` that's baked into the assembly.
+> **Coming from another language?** Other languages have similar features. Java's reflective `Class.getSimpleName()`, JavaScript's `Function.name` and `Object.keys`, Python's `__name__` and `vars()`, and Swift's `#function`/`#keyPath`. Unlike most of those, C#'s `nameof` is a pure compile-time construct. It uses no reflection, allocates nothing at runtime, and produces a constant `string` that's baked into the assembly.
 
-The `nameof` operator returns the textual identifier of a symbol — a variable, parameter, type, member, or namespace — as a compile-time `string` constant. Anywhere you'd otherwise hardcode an identifier as a string, use `nameof`: the compiler verifies that the symbol exists, and rename refactorings update the result automatically.
+The `nameof` operator returns the textual identifier of a symbol, such as a variable, parameter, type, member, or namespace, as a compile-time `string` constant. Anywhere you'd otherwise hardcode an identifier as a string, use `nameof`: the compiler verifies that the symbol exists, and rename refactorings update the result automatically.
 
 ## What `nameof` returns
 
@@ -21,7 +21,7 @@ The `nameof` operator returns the textual identifier of a symbol — a variable,
 
 :::code language="csharp" source="snippets/nameof/Program.cs" ID="Basic":::
 
-`nameof(customer.Name)` returns `"Name"`, not `"customer.Name"`. For the fully qualified expression, only the last identifier is captured.
+The operand can also be a *qualified expression*, one that uses the dot operator to navigate from a containing scope to a member, such as `customer.Name`, `System.Console`, or `List<int>.Enumerator`. In that case, only the last identifier is captured: `nameof(customer.Name)` returns `"Name"`, not `"customer.Name"`.
 
 ## Argument validation
 
@@ -63,7 +63,7 @@ This is useful in logging, diagnostic messages, and attribute arguments where th
 
 ## Qualified names
 
-For a qualified expression — a type with a namespace, or a member with a receiver — `nameof` returns only the *last* identifier:
+For any qualified expression, `nameof` returns only the *last* identifier:
 
 :::code language="csharp" source="snippets/nameof/Program.cs" ID="QualifiedName":::
 
@@ -71,13 +71,13 @@ If you need the fully qualified name, use <xref:System.Type.FullName?displayProp
 
 ## Prefer `nameof` to identifier strings
 
-Anywhere a method, property, parameter, type, or namespace is referred to by name in code, use `nameof` instead of a string literal. Compared to a hardcoded string:
+Anywhere you refer to a method, property, parameter, type, or namespace by name in code, use `nameof` instead of a string literal. Compared to a hardcoded string:
 
 - The compiler verifies that the symbol exists. A typo becomes a build error, not a silent runtime bug.
 - Rename refactorings update the result automatically. Hardcoded strings drift out of sync.
 - The result is a compile-time constant, so there's no runtime cost.
 
-The recommendation applies to logging messages, exception arguments, attribute arguments, property-change notifications, and serialization key constants tied to a member name.
+This recommendation applies to logging messages, exception arguments, attribute arguments, property-change notifications, and serialization key constants tied to a member name.
 
 ## See also
 

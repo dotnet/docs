@@ -68,7 +68,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
 | 9.0.3xx     | 17.14                         | May '25   | Nov '26<sup>2</sup> |
 | 10.0.1xx    | 18.0                          | Nov '25   | Nov '28             |
-| 10.0.2xx    | 18.4                          | Mar '26   | May '26             |
+| 10.0.2xx    | 18.3                          | Mar '26   | May '26             |
 
 > [!NOTE]
 > <sup>1</sup> .1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).

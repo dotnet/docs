@@ -200,17 +200,11 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 <xref:System.Text.Json.Utf8JsonWriter.Reset*> now accepts a <xref:System.Text.Json.JsonWriterOptions> parameter, so writer instances can be re-pooled with different options without allocating a new writer:
 
-```csharp
-using System.Text.Json;
-
-var writer = new Utf8JsonWriter(stream, new JsonWriterOptions { Indented = true });
-// ... write JSON ...
-
-// Reset with different options for next use — no allocation
-writer.Reset(stream2, new JsonWriterOptions { Indented = false });
-```
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="Utf8JsonWriterReset":::
 
 ## Zstandard compression
+
+The Zstandard compression APIs are now part of the <xref:System.IO.Compression?displayProperty=fullName> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. If you referenced the earlier preview package, remove the separate package reference:
 
 ```diff
 -<PackageReference Include="System.IO.Compression.Zstandard" />

@@ -87,6 +87,22 @@ static class LibrariesExamples
         // </RateLimitingRetryAfter>
     }
 
+    static void Utf8JsonWriterResetExample()
+    {
+        // <Utf8JsonWriterReset>
+        using var stream = new MemoryStream();
+        using var writer = new Utf8JsonWriter(stream, new JsonWriterOptions { Indented = true });
+        writer.WriteStartObject();
+        writer.WriteString("name", "example");
+        writer.WriteEndObject();
+        writer.Flush();
+
+        // Reset with different options for next use — no new allocation needed
+        stream.SetLength(0);
+        writer.Reset(stream, new JsonWriterOptions { Indented = false });
+        // </Utf8JsonWriterReset>
+    }
+
     static void JsonTypeInfoExample()
     {
         // <JsonTypeInfoGeneric>

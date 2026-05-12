@@ -196,7 +196,7 @@ Preview 4 includes several new hardware intrinsics and code generation improveme
 
 `Comparer<T>.Default` and `EqualityComparer<T>.Default` are now specialized in ReadyToRun (R2R) images. Previously, the default comparers used reflection that R2R couldn't see ahead of time, causing callers to fall back to the JIT. R2R now generates a specialized helper in the image—mirroring the NativeAOT approach—and benchmarks show up to a 20× improvement for collections operations that rely on the default comparer.
 
-
+## VM improvements
 
 - **Cached interface dispatch on non-JIT platforms:** On platforms that lack JIT support, such as iOS, interface dispatch was falling back to an expensive generic fixup path. Cached dispatch yields up to 200x improvements in interface-heavy code on these targets.
 - **`Guid.NewGuid()` on Linux:** <xref:System.Guid.NewGuid?displayProperty=nameWithType> on Linux now uses the `getrandom()` syscall with batch caching instead of reading from `/dev/urandom`, yielding approximately 12% throughput improvement for GUID generation.

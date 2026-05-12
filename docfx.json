@@ -834,7 +834,11 @@
                 "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
             "ms.custom": {
-                "docs/ai/**/**.{md,yml}": "devx-track-dotnet"
+                "docs/ai/**/**.{md,yml}": "devx-track-dotnet",
+                "docs/core/testing/*microsoft-testing-platform*.md": "microsoft-testing-platform",
+                "docs/core/testing/test-platforms-overview.md": "microsoft-testing-platform",
+                "docs/core/testing/unit-testing-with-dotnet-test.md": "microsoft-testing-platform",
+                "docs/core/tools/dotnet-test-mtp.md": "microsoft-testing-platform"
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",

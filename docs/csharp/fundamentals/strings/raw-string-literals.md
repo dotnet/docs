@@ -68,7 +68,7 @@ If the content also needs literal `{` or `}` characters, which are common when g
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="DoubleDollarInterpolation":::
 
-Use any number of ` signs to disambiguate brace runs. Triple-` literals are rare but available.
+Use any number of `$` signs to disambiguate brace runs. Triple-`$` literals are rare but available.
 
 ## When to choose which literal
 

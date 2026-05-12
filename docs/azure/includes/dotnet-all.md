@@ -485,7 +485,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.49.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.49.1) |  |  |
 | Speech Extension Telemetry | NuGet [1.49.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.49.1) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [0.9.0-preview.1](https://www.nuget.org/packages/Azure.Connectors.Sdk/0.9.0-preview.1) |  |  |
+| Unknown Display Name | NuGet [0.10.0-preview.1](https://www.nuget.org/packages/Azure.Connectors.Sdk/0.10.0-preview.1) |  |  |
 | Unknown Display Name | NuGet [0.4.0](https://www.nuget.org/packages/Azure.Functions.Sdk/0.4.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Iot.Operations.ProtocolCompiler/1.0.0) |  |  |
 | Unknown Display Name | NuGet [0.8.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sdk/0.8.0-preview.1) |  |  |
@@ -571,7 +571,7 @@
 | Functions - Extensions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-dotnet-extensions) |
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
-| Functions extension for Azure SQL and SQL Server | NuGet [3.1.527](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.527) |  |  |
+| Functions extension for Azure SQL and SQL Server | NuGet [3.1.536](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.536) |  |  |
 | Functions extension for Cosmos DB | NuGet [4.15.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.15.0) |  | GitHub [4.15.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for Durable Task Framework | NuGet [3.12.5](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.12.5) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.12.5](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
@@ -622,7 +622,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.24.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.24.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/2.0.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.1.527](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.1.527) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.1.536](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.1.536) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.8.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.8.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.8.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.8.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.5.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.5.4) |  |  |

@@ -19,24 +19,45 @@ f1_keywords:
   - "CS0401"
   - "CS0403"
   - "CS0405"
+  - "CS0406"
+  - "CS0409"
+  - "CS0411"
   - "CS0412"
   - "CS0413"
   - "CS0417"
   - "CS0449"
   - "CS0450"
   - "CS0451"
+  - "CS0452"
+  - "CS0453"
   - "CS0454"
   - "CS0455"
+  - "CS0456"
+  - "CS0693"
   - "CS0694"
   - "CS0695"
   - "CS0698"
+  - "CS0699"
+  - "CS0701"
   - "CS0702"
   - "CS0703"
+  - "CS0704"
   - "CS0706"
   - "CS0717"
+  - "CS0718"
+  - "CS1720"
+  - "CS1763"
+  - "CS1948"
   - "CS1961"
+  - "CS3024"
   - "CS7002"
   - "CS8322"
+  - "CS8822"
+  - "CS8823"
+  - "CS8893"
+  - "CS8894"
+  - "CS8895"
+  - "CS8896"
   - "CS9011"
   - "CS9012"
   - "CS9338"
@@ -58,28 +79,49 @@ helpviewer_keywords:
   - "CS0401"
   - "CS0403"
   - "CS0405"
+  - "CS0406"
+  - "CS0409"
+  - "CS0411"
   - "CS0412"
   - "CS0413"
-  - "CS0694"
-  - "CS0695"
-  - "CS0698"
-  - "CS0702"
-  - "CS0703"
-  - "CS0706"
-  - "CS0717"
-  - "CS1961"
-  - "CS7002"
-  - "CS8322"
   - "CS0417"
   - "CS0449"
   - "CS0450"
   - "CS0451"
+  - "CS0452"
+  - "CS0453"
   - "CS0454"
   - "CS0455"
+  - "CS0456"
+  - "CS0693"
+  - "CS0694"
+  - "CS0695"
+  - "CS0698"
+  - "CS0699"
+  - "CS0701"
+  - "CS0702"
+  - "CS0703"
+  - "CS0704"
+  - "CS0706"
+  - "CS0717"
+  - "CS0718"
+  - "CS1720"
+  - "CS1763"
+  - "CS1948"
+  - "CS1961"
+  - "CS3024"
+  - "CS7002"
+  - "CS8322"
+  - "CS8822"
+  - "CS8823"
+  - "CS8893"
+  - "CS8894"
+  - "CS8895"
+  - "CS8896"
   - "CS9011"
   - "CS9012"
   - "CS9338"
-ms.date: 01/29/2026
+ms.date: 05/12/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to generic type parameters and generic type arguments
@@ -106,24 +148,45 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0401**](#constraint-declaration-and-ordering): *The `new()` constraint must be the last constraint specified.*
 - [**CS0403**](#generic-type-usage-restrictions): *Cannot convert null to type parameter because it could be a non-nullable value type. Consider using `default(T)` instead.*
 - [**CS0405**](#valid-constraint-types): *Duplicate constraint for type parameter.*
+- [**CS0406**](#anchor-tbd): *The class type constraint 'constraint' must come before any other constraints.*
+- [**CS0409**](#anchor-tbd): *A constraint clause has already been specified for type parameter 'type parameter'. All of the constraints for a type parameter must be specified in a single where clause.*
+- [**CS0411**](#anchor-tbd): *The type arguments for method 'method' cannot be inferred from the usage. Try specifying the type arguments explicitly.*
 - [**CS0412**](#type-parameter-declaration-and-naming): *Parameter: a parameter, local variable, or local function cannot have the same name as a method type parameter.*
 - [**CS0413**](#generic-type-usage-restrictions): *The type parameter cannot be used with the `as` operator because it does not have a class type constraint nor a `class` constraint.*
 - [**CS0417**](#constructor-constraints): *Identifier: cannot provide arguments when creating an instance of a variable type.*
 - [**CS0449**](#constraint-declaration-and-ordering): *The `class`, `struct`, `unmanaged`, `notnull`, and `default` constraints cannot be combined or duplicated, and must be specified first in the constraints list.*
 - [**CS0450**](#constraint-declaration-and-ordering): *Type Parameter: cannot specify both a constraint class and the `class` or `struct` constraint.*
 - [**CS0451**](#constraint-declaration-and-ordering): *The `new()` constraint cannot be used with the `struct` constraint.*
+- [**CS0452**](#anchor-tbd): *The type 'type name' must be a reference type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.*
+- [**CS0453**](#anchor-tbd): *The type 'type name' must be a non-nullable value type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.*
 - [**CS0454**](#constraint-conflicts-and-circular-dependencies): *Circular constraint dependency involving Type Parameter 1 and Type Parameter 2.*
 - [**CS0455**](#constraint-conflicts-and-circular-dependencies): *Type parameter inherits conflicting constraints.*
+- [**CS0456**](#anchor-tbd): *Type parameter 'type parameter 1' has the 'struct' constraint so 'type parameter 1' cannot be used as a constraint for 'type parameter 2'.*
+- [**CS0693**](#anchor-tbd): *Type parameter 'type parameter' has the same name as the type parameter from outer type 'type'.*
 - [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter has the same name as the containing type or method.*
 - [**CS0695**](#generic-type-usage-restrictions): *`T` cannot implement both interfaces because they may unify for some type parameter substitutions.*
 - [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from type because it is an attribute class.*
+- [**CS0699**](#anchor-tbd): *'generic' does not define type parameter 'identifier'.*
+- [**CS0701**](#anchor-tbd): *'identifier' is not a valid constraint. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
 - [**CS0702**](#valid-constraint-types): *Constraint cannot be special class.*
 - [**CS0703**](#valid-constraint-types): *Inconsistent accessibility: constraint type is less accessible than declaration.*
+- [**CS0704**](#anchor-tbd): *Cannot do non-virtual member lookup in 'type' because it is a type parameter.*
 - [**CS0706**](#valid-constraint-types): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class, or a type parameter.*
 - [**CS0717**](#valid-constraint-types): *Static class: static classes cannot be used as constraints.*
+- [**CS0718**](#anchor-tbd): *'type': static types cannot be used as type arguments.*
+- [**CS1720**](#anchor-tbd): *Expression will always cause a System.NullReferenceException because the default value of 'generic type' is null.*
+- [**CS1763**](#anchor-tbd): *'parameter' is of type 'type'. A default parameter value of a reference type other than string can only be initialized with null.*
+- [**CS1948**](#anchor-tbd): *The range variable 'name' cannot have the same name as a method type parameter.*
 - [**CS1961**](#type-parameter-variance): *Invalid variance: The type parameter must be validly variant on type.*
+- [**CS3024**](#anchor-tbd): *Constraint type 'type' is not CLS-compliant.*
 - [**CS7002**](#type-argument-count-and-usage): *Unexpected use of a generic name.*
 - [**CS8322**](#generic-type-usage-restrictions): *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
+- [**CS8822**](#anchor-tbd): *Method 'method' specifies a 'default' constraint for type parameter 'type parameter', but corresponding type parameter 'type parameter' of overridden or explicitly implemented method 'method' is constrained to a reference type or a value type.*
+- [**CS8823**](#anchor-tbd): *The 'default' constraint is valid on override and explicit interface implementation methods only.*
+- [**CS8893**](#anchor-tbd): *'type' is not a valid calling convention type for 'UnmanagedCallersOnly'.*
+- [**CS8894**](#anchor-tbd): *Cannot use 'type' as a parameter or return type on a method attributed with 'UnmanagedCallersOnly'.*
+- [**CS8895**](#anchor-tbd): *Methods attributed with 'UnmanagedCallersOnly' cannot have generic type parameters and cannot be declared in a generic type.*
+- [**CS8896**](#anchor-tbd): *'UnmanagedCallersOnly' can only be applied to ordinary static non-abstract, non-virtual methods or static local functions.*
 - [**CS9011**](#constraint-declaration-and-ordering): *Keyword `delegate` cannot be used as a constraint. Did you mean `System.Delegate`?*
 - [**CS9012**](#type-parameter-declaration-and-naming): *Unexpected keyword `record`. Did you mean `record struct` or `record class`?*
 - [**CS9338**](#generic-type-usage-restrictions): *Inconsistent accessibility: type is less accessible than class.*
@@ -376,3 +439,379 @@ interface IInvariant<T>
 ```
 
 For more information, see [Covariance and Contravariance in Generics](../../../standard/generics/covariance-and-contravariance.md).
+
+## CS0406
+
+The class type constraint 'constraint' must come before any other constraints.
+
+When a generic type or method has a class type constraint, that constraint must be listed first. To avoid this error, move the class type constraint to the beginning of the constraint list.
+
+```csharp
+// CS0406.cs
+// compile with: /target:library
+interface I {}
+class C {}
+class D<T> where T : I, C {}   // CS0406
+class D2<T> where T : C, I {}   // OK
+```
+
+## CS0409
+
+A constraint clause has already been specified for type parameter 'type parameter'. All of the constraints for a type parameter must be specified in a single where clause.
+
+Multiple constraint clauses (where clauses) were found for a single type parameter. Remove the extraneous where clause, or correct the where clauses so that a unique type parameter in each clause.
+
+```csharp
+// CS0409.cs
+interface I
+{
+}
+
+// Compiler error CS0409 is reported on the following line because T is specified in multiple where clauses.
+class Example<T> where T : I where T : new()
+{
+}
+
+// To resolve the error, combine the constraints for the same type parameter into a single clause.
+class Example<T> where T : I, new()
+{
+}
+
+// Using multiple where clauses is only valid when targeting different type parameters.
+class Example<T1, T2> where T1 : I where T2 : new()
+{
+}
+```
+
+## CS0411
+
+The type arguments for method 'method' cannot be inferred from the usage. Try specifying the type arguments explicitly.
+
+This error occurs if you call a generic method without explicitly providing the type arguments and the compiler cannot infer which type arguments are intended. To avoid this error, add the intended type arguments in angle brackets.
+
+### Example 1
+
+The following sample generates CS0411:
+
+```csharp
+// CS0411.cs
+class C
+{
+    void G<T>()
+    {
+    }
+
+    public static void Main()
+    {
+        G();  // CS0411
+        // Try this instead:
+        // G<int>();
+    }
+}
+```
+
+### Example 2
+
+Other possible error cases include when the parameter is `null`, which has no type information:
+
+```csharp
+// CS0411b.cs
+class C
+{
+    public void F<T>(T t) where T : C
+    {
+    }
+
+    public static void Main()
+    {
+        C c = new C();
+        c.F(null);  // CS0411
+    }
+}
+```
+
+## CS0452
+
+The type 'type name' must be a reference type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.
+
+This error occurs when you pass a value type such as a `struct` or `int` as a parameter to a generic type or method that has a reference type constraint.
+
+```csharp
+// CS0452.cs
+using System;
+public class BaseClass<S> where S : class { }
+public class Derived1 : BaseClass<int> { } // CS0452
+public class Derived2<S> : BaseClass<S> where S : struct { } // CS0452
+```
+
+For more information, see [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
+
+## CS0453
+
+The type 'Type Name' must be a non-nullable value type in order to use it as parameter 'Parameter Name' in the generic type or method 'Generic Identifier'.
+
+This error occurs when you use a [non-value type](../builtin-types/value-types.md) argument in instantiating a generic type or method that has the [**value** constraint](../../programming-guide/generics/constraints-on-type-parameters.md) on it. It can also occur when you use a nullable value type argument. See the last two lines of code in the following example.
+
+```csharp
+// CS0453.cs
+using System;
+public class HV<S> where S : struct { }
+
+// CS0453: string is not a value type
+public class H1 : HV<string> { }
+
+// CS0453: H1 is a class, not a struct
+public class H2 : HV<H1> { }
+
+// CS0453: HV is based on a class, not a struct
+public class H3<S> : HV<S> where S : class { }
+public class H4<S> : HV<S> where S : struct { } // OK
+
+// CS0453: HV accepts a nullable int type
+public class H4 : HV<int?> { }
+
+// CS0453: HV is based on Nullable type of int
+public class H5 : HV<Nullable<Nullable<int>>> { }
+```
+
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
+
+## CS0456
+
+Type parameter 'Type Parameter Name 1' has the 'struct' constraint so 'Type Parameter Name 1' cannot be used as a constraint for 'Type Parameter Name 2'.
+
+Value type constraints are implicitly sealed so those constraints cannot be used as constraints on a second type parameter. This is because value types cannot be overridden. To resolve this error, put a value type constraint directly on the second type parameter, instead of doing so indirectly by means of the first type parameter.
+
+```csharp
+// CS0456.cs
+// compile with: /target:library
+public class GenericsErrors
+{
+   public class G5<T> where T : struct
+   {
+      public class N<U> where U : T {}   // CS0456
+      public class N2<U> where U : struct {}   // OK
+   }
+}
+```
+
+## CS0693
+
+Type parameter 'type parameter' has the same name as the type parameter from outer type 'type'.
+
+This error occurs when you have a generic member such as a method inside a generic class. Since the method's type parameter is not necessarily the same as the class's type parameter, you cannot give them both the same name. For more information, see [Generic Methods](../../programming-guide/generics/generic-methods.md).
+
+To avoid this situation, use a different name for one of the type parameters.
+
+```csharp
+// CS0693.cs
+// compile with: /W:3 /target:library
+class Outer<T>
+{
+   class Inner<T> {}   // CS0693
+   // try the following line instead
+   // class Inner<U> {}
+}
+```
+
+## CS0699
+
+'generic' does not define type parameter 'identifier'.
+
+A type parameter was used in a generic definition that was not found in the declaration list of the type parameters for that generic. This can happen if the name used for the type parameter was inconsistent.
+
+The following sample generates CS0699:
+
+```csharp
+// CS0699.cs
+class C<T> where U : I   // CS0699 – U is not a valid type parameter
+{
+}
+```
+
+## CS0701
+
+'identifier' is not a valid constraint. A type used as a constraint must be an interface, a non-sealed class or a type parameter.
+
+This error occurs if a sealed type is used as a constraint. To resolve this error, use only non-sealed types as constraints.
+
+```csharp
+// CS0701.cs
+// compile with: /target:library
+class C<T> where T : System.String {}   // CS0701
+class D<T> where T : System.Attribute {}   // OK
+```
+
+## CS0704
+
+Cannot do non-virtual member lookup in 'type' because it is a type parameter.
+
+An inner type cannot be specified through a type parameter. Try using the desired type explicitly.
+
+```csharp
+// CS0704.cs
+class B
+{
+    public class I { }
+}
+
+class C<T> where T : B
+{
+    T.I f;  // CS0704 – member lookup on type parameter
+    // Try this instead:
+    // B.I f;
+}
+
+class CMain
+{
+    public static void Main() {}
+}
+```
+
+## CS0718
+
+'type': static types cannot be used as type arguments.
+
+Because a static type cannot be instantiated, it cannot be used as a generic argument. To resolve this error, remove the static type from the generic argument.
+
+```csharp
+// CS0718.cs
+public static class SC
+{
+    public static void F()
+    {
+    }
+}
+
+public class G<T>
+{
+}
+
+public class CMain
+{
+    public static void Main()
+    {
+        G<SC> gsc = new G<SC>();  // CS0718
+    }
+}
+```
+
+## CS1720
+
+Expression will always cause a System.NullReferenceException because the default value of 'generic type' is null.
+
+If you write an expression involving the default of a generic type variable that is a reference type (for example, a class), this error will occur. Consider the following expression:
+
+```csharp
+default(T).ToString()
+```
+
+Since `T` is a reference type, its default value is null, and so attempting to apply the <xref:System.Object.ToString*> method to it will throw a <xref:System.NullReferenceException>.
+
+The class reference constraint on type `T` ensures that `T` is a reference type.
+
+The following sample generates CS1720.
+
+```csharp
+// CS1720.cs
+using System;
+public class Tester
+{
+    public static void GenericClass<T>(T t1) where T : class
+    {
+        Console.WriteLine(default(T).ToString());  // CS1720
+    }
+    public static void Main() {}
+}
+```
+
+## CS1763
+
+'parameter' is of type 'type'. A default parameter value of a reference type other than string can only be initialized with null.
+
+```csharp
+// CS1763.cs
+class Program
+{
+    public void Goo<T, U>(T t = default(U)) where U : T
+    {
+    }
+    static void Main(string[] args)
+    {
+
+    }
+}
+```
+
+This example generates CS1763 because the `Goo<T,U>` parameter is declared with a default value of `default(U)` when the type of the parameter is `T`, despite the constraint that `U` derive from base class `T`.
+
+Changing `default(U)` to use the corresponding type argument corrects this error:
+
+```csharp
+    public void Goo<T, U>(T t = default(T)) where U : T
+    {
+    }
+```
+
+## CS1948
+
+The range variable 'name' cannot have the same name as a method type parameter.
+
+The same declaration space cannot contain two declarations of the same identifier.
+
+To correct this error, change the name of the range variable or the type parameter.
+
+The following example generates CS1948 because the identifier `T` is used for the range variable and for the type parameter on method `TestMethod`:
+
+```csharp
+// cs1948.cs
+using System.Linq;
+class Test
+{
+    public void TestMethod<T>(T t)
+    {
+        var x = from T in Enumerable.Range(1, 100) // CS1948
+                select T;
+    }
+}
+```
+
+## CS3024
+
+Constraint type 'type' is not CLS-compliant.
+
+The compiler issues this warning because the use of a non-CLS-compliant type as a generic type constraint could make it impossible for code written in some languages to consume your generic class.
+
+To eliminate this warning, use a CLS-compliant type for the type constraint.
+
+```csharp
+// cs3024.cs
+// Compile with: /target:library
+ [assembly: System.CLSCompliant(true)]
+
+[type: System.CLSCompliant(false)]
+public class TestClass // CS3024
+{
+    public ushort us;
+}
+[type: System.CLSCompliant(false)]
+public interface ITest // CS3024
+{}
+public interface I<T> where T : TestClass
+{}
+public class TestClass_2<T> where T : ITest
+{}
+public class TestClass_3<T> : I<T> where T : TestClass
+{}
+public class TestClass_4<T> : TestClass_2<T> where T : ITest
+{}
+public class Test
+{
+    public static int Main()
+    {
+        return 0;
+    }
+}
+```
+
+For more information, see [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md).

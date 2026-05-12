@@ -296,18 +296,12 @@ f1_keywords:
   - "CS8783" # local function
   - "CS8784" # source generator
   - "CS8785"
-  - "CS8822" # nullable / constraints
-  - "CS8823"
   - "CS8830" # feature / version
   - "CS8831"
   - "CS8888" # feature / version
   - "CS8889"
   - "CS8890"
   - "CS8891"
-  - "CS8893" # managed / unmanaged constraint
-  - "CS8894"
-  - "CS8895"
-  - "CS8896"
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9346"

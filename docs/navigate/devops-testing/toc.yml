@@ -32,7 +32,7 @@ items:
             href: ../../devops/dotnet-secure-github-action.md
             displayName: codeql,security,vulnerability,source scan
   - name: Testing
-    displayName: xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test
+    displayName: xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test,web test,Microsoft.Testing.Platform,MTP,testing platform,test runner
     items:
       - name: Overview
         href: ../../core/testing/index.md
@@ -257,60 +257,88 @@ items:
         items:
           - name: Overview
             href: ../../core/testing/test-platforms-overview.md
+            displayName: MTP vs VSTest,compare test platforms,choose test platform
           - name: Microsoft.Testing.Platform
+            displayName: MTP,testing platform,.NET test runner,VSTest alternative
             items:
               - name: Overview
                 href: ../../core/testing/microsoft-testing-platform-intro.md
+                displayName: MTP,testing platform,test runner,VSTest alternative
               - name: Run and debug tests
                 href: ../../core/testing/microsoft-testing-platform-run-and-debug.md
+                displayName: MTP,run tests,debug tests,dotnet test,CI pipeline
               - name: CLI options reference
                 href: ../../core/testing/microsoft-testing-platform-cli-options.md
+                displayName: MTP,command line,CLI,options,arguments,switches
               - name: Configuration
                 href: ../../core/testing/microsoft-testing-platform-config.md
+                displayName: MTP,testconfig.json,configuration,settings
               - name: Troubleshooting
                 href: ../../core/testing/microsoft-testing-platform-troubleshooting.md
+                displayName: MTP,exit codes,errors,troubleshoot
               - name: Features
+                displayName: MTP features,extensions,NuGet
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-features.md
+                    displayName: MTP features,extensions
                   - name: Terminal output
                     href: ../../core/testing/microsoft-testing-platform-terminal-output.md
+                    displayName: MTP,terminal,test reporter,ANSI,progress
                   - name: Test reports
                     href: ../../core/testing/microsoft-testing-platform-test-reports.md
+                    displayName: MTP,TRX,test report,Azure DevOps
                   - name: Code coverage
                     href: ../../core/testing/microsoft-testing-platform-code-coverage.md
+                    displayName: MTP,code coverage,coverage
                   - name: Crash and hang dumps
                     href: ../../core/testing/microsoft-testing-platform-crash-hang-dumps.md
+                    displayName: MTP,crash dump,hang dump,diagnostics
                   - name: OpenTelemetry
                     href: ../../core/testing/microsoft-testing-platform-open-telemetry.md
+                    displayName: MTP,OpenTelemetry,traces,metrics
                   - name: Retry
                     href: ../../core/testing/microsoft-testing-platform-retry.md
+                    displayName: MTP,retry,flaky tests
                   - name: Hot Reload
                     href: ../../core/testing/microsoft-testing-platform-hot-reload.md
+                    displayName: MTP,hot reload,live reload
                   - name: Microsoft Fakes
                     href: ../../core/testing/microsoft-testing-platform-fakes.md
+                    displayName: MTP,fakes,shims,stubs
                   - name: Telemetry
                     href: ../../core/testing/microsoft-testing-platform-telemetry.md
+                    displayName: MTP,telemetry,opt out
               - name: Migration
+                displayName: MTP,migrate,VSTest migration
                 items:
                   - name: Migrate from VSTest
                     href: ../../core/testing/migrating-vstest-microsoft-testing-platform.md
+                    displayName: MTP,VSTest,migration,migrate,switch
                   - name: Migrate from MTP v1 to v2
                     href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
+                    displayName: MTP v2,upgrade,breaking changes
               - name: Create custom extensions
+                displayName: MTP,extensibility,custom extensions
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-architecture.md
+                    displayName: MTP,architecture,custom test framework,extensibility
                   - name: Build a test framework
                     href: ../../core/testing/microsoft-testing-platform-architecture-test-framework.md
+                    displayName: MTP,custom test framework,ITestFramework
                   - name: VSTest Bridge
                     href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
+                    displayName: MTP,VSTest bridge,backward compatibility
                   - name: Build extensions
                     href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
+                    displayName: MTP,extensions,in-process,out-of-process
                   - name: Capabilities
                     href: ../../core/testing/microsoft-testing-platform-architecture-capabilities.md
+                    displayName: MTP,capabilities
                   - name: Services
                     href: ../../core/testing/microsoft-testing-platform-architecture-services.md
+                    displayName: MTP,services,IServiceProvider
           - name: VSTest
             href: https://github.com/microsoft/vstest
       - name: Testing with 'dotnet test'

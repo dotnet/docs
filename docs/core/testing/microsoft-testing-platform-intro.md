@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform overview
-description: Learn about Microsoft.Testing.Platform, a lightweight way to run tests without depending on the .NET SDK.
+title: Microsoft.Testing.Platform overview - .NET test runner
+description: Learn about Microsoft.Testing.Platform (MTP), a lightweight and portable .NET test runner and VSTest alternative for running unit tests in CI pipelines, CLI, and IDEs.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 03/17/2024

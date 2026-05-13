@@ -33,7 +33,6 @@ f1_keywords:
   - "CS1770"
   - "CS1773"
   - "CS1774"
-  - "CS1960"
   - "CS1982"
   - "CS1996"
   - "CS1997"
@@ -238,18 +237,12 @@ f1_keywords:
   - "CS8362"
   # C# 7.3 diagnostics
   - "CS8372"
-  - "CS8375"
-  - "CS8377"
   - "CS8378"
-  - "CS8379"
-  - "CS8380"
   - "CS8381"
   - "CS8383"
   - "CS8384"
   - "CS8385"
   - "CS8386"
-  - "CS8387"
-  - "CS8389"
   # C# 8.0 diagnostics
   - "CS8412"
   - "CS8413"
@@ -262,7 +255,6 @@ f1_keywords:
   - "CS8424"
   - "CS8425"
   - "CS8426"
-  - "CS8427"
   - "CS8428"
   - "CS8429"
   - "CS8635"
@@ -272,8 +264,6 @@ f1_keywords:
   - "CS8651"
   - "CS8656"
   - "CS8662"
-  - "CS8665"
-  - "CS8666"
   - "CS8669"
   - "CS8700"
   - "CS8712"
@@ -292,12 +282,6 @@ f1_keywords:
   - "CS8783" # local function
   - "CS8784" # source generator
   - "CS8785"
-  - "CS8822" # nullable / constraints
-  - "CS8823"
-  - "CS8893" # managed / unmanaged constraint
-  - "CS8894"
-  - "CS8895"
-  - "CS8896"
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9347"

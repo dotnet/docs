@@ -318,7 +318,7 @@ Enable direct execution of file-based apps on Unix-like systems by using a sheba
 Add a shebang at the top of your file:
 
 ```csharp
-#!/usr/bin/env dotnet
+#!/usr/bin/env -S dotnet --
 #:package Spectre.Console
 
 using Spectre.Console;
@@ -340,6 +340,11 @@ Run directly:
 
 > [!NOTE]
 > Use `LF` line endings instead of `CRLF` when you add a shebang. Don't include a BOM in the file.
+
+To prevent `dotnet` from consuming arguments that match its own parameters (such as `--help`), the shebang uses `--` as a separator. The `--` separator tells `dotnet` to forward all subsequent command-line arguments directly to your app. The `-S` flag lets `env` split the remaining text into separate arguments so you can include `--` in the shebang.
+
+> [!NOTE]
+> If `-S` isn't supported on your system, use `#!/usr/bin/env dotnet` instead. With this shebang, `dotnet` might consume arguments that match its own CLI parameters.
 
 ## Implicit build files
 

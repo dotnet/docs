@@ -1613,6 +1613,8 @@ The `TestingPlatformCommandLineArguments` property lets you specify command-line
 </PropertyGroup>
 ```
 
+You can also use conditions to pass different arguments to projects that use different test frameworks or extensions. For more information, see [Solutions with mixed test frameworks or extensions](../testing/unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
+
 ### TestingPlatformDotnetTestSupport
 
 The `TestingPlatformDotnetTestSupport` property enables testing MTP apps when using the VSTest mode of `dotnet test`.

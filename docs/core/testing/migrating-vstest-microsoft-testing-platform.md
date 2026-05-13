@@ -1,6 +1,6 @@
 ---
 title: Migration guide from VSTest to Microsoft.Testing.Platform (MTP)
-description: Learn how to migrate from VSTest to MTP
+description: Step-by-step guide to migrate from VSTest to Microsoft.Testing.Platform (MTP), including argument mapping, project configuration, and CI pipeline updates.
 author: Youssef1313
 ms.author: ygerges
 ms.date: 09/15/2025
@@ -149,6 +149,9 @@ xUnit.net specific options:
 - `--filter-query`
 
 For more information, see [Microsoft.Testing.Platform documentation for xUnit.net](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Query Filter Language for xUnit.net](https://xunit.net/docs/query-filter-language).
+
+> [!TIP]
+> If your solution mixes test frameworks that use different filter syntaxes (for example, MSTest and xUnit.net), you can conditionally route framework-specific arguments using the `TestingPlatformCommandLineArguments` MSBuild property. For details, see [Solutions with mixed test frameworks or extensions](unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
 
 #### `--logger`
 

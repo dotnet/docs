@@ -1,6 +1,6 @@
 ---
-title: Test platforms overview for .NET
-description: Learn how VSTest and Microsoft.Testing.Platform (MTP) differ, and choose the right test platform for your .NET test projects.
+title: Microsoft.Testing.Platform vs VSTest - .NET test platform comparison
+description: Compare Microsoft.Testing.Platform (MTP) and VSTest to choose the right .NET test platform for your projects, CI pipelines, and IDE integration.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 02/24/2026

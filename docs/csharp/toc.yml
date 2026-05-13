@@ -74,6 +74,14 @@ items:
     - name: Anonymous types
       href: programming-guide/classes-and-structs/anonymous-types.md
     # TODO: Delegates, lambdas and events
+  - name: Null safety
+    items:
+    - name: Overview
+      href: fundamentals/null-safety/index.md
+    - name: Nullable value types
+      href: fundamentals/null-safety/nullable-value-types.md
+    - name: Null operators
+      href: fundamentals/null-safety/null-operators.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records

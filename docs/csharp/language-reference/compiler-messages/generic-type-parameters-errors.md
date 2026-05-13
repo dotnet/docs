@@ -48,10 +48,20 @@ f1_keywords:
   - "CS1720"
   - "CS1763"
   - "CS1948"
+  - "CS1960"
   - "CS1961"
   - "CS3024"
   - "CS7002"
   - "CS8322"
+  - "CS8375"
+  - "CS8377"
+  - "CS8379"
+  - "CS8380"
+  - "CS8387"
+  - "CS8389"
+  - "CS8427"
+  - "CS8665"
+  - "CS8666"
   - "CS8822"
   - "CS8823"
   - "CS8893"
@@ -108,10 +118,20 @@ helpviewer_keywords:
   - "CS1720"
   - "CS1763"
   - "CS1948"
+  - "CS1960"
   - "CS1961"
   - "CS3024"
   - "CS7002"
   - "CS8322"
+  - "CS8375"
+  - "CS8377"
+  - "CS8379"
+  - "CS8380"
+  - "CS8387"
+  - "CS8389"
+  - "CS8427"
+  - "CS8665"
+  - "CS8666"
   - "CS8822"
   - "CS8823"
   - "CS8893"
@@ -177,10 +197,20 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1720**](#anchor-tbd): *Expression will always cause a System.NullReferenceException because the default value of 'generic type' is null.*
 - [**CS1763**](#anchor-tbd): *'parameter' is of type 'type'. A default parameter value of a reference type other than string can only be initialized with null.*
 - [**CS1948**](#anchor-tbd): *The range variable 'name' cannot have the same name as a method type parameter.*
+- [**CS1960**](#anchor-tbd): *Invalid variance modifier. Only interface and delegate type parameters can be specified as variant.*
 - [**CS1961**](#type-parameter-variance): *Invalid variance: The type parameter must be validly variant on type.*
 - [**CS3024**](#anchor-tbd): *Constraint type 'type' is not CLS-compliant.*
 - [**CS7002**](#type-argument-count-and-usage): *Unexpected use of a generic name.*
 - [**CS8322**](#generic-type-usage-restrictions): *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
+- [**CS8375**](#anchor-tbd): *The 'new()' constraint cannot be used with the 'unmanaged' constraint.*
+- [**CS8377**](#anchor-tbd): *The type 'type' must be a non-nullable value type, along with all fields at any level of nesting, in order to use it as parameter 'parameter' in the generic type or method 'generic'.*
+- [**CS8379**](#anchor-tbd): *Type parameter 'type parameter 1' has the 'unmanaged' constraint so 'type parameter 1' cannot be used as a constraint for 'type parameter 2'.*
+- [**CS8380**](#anchor-tbd): *'type': cannot specify both a constraint class and the 'unmanaged' constraint.*
+- [**CS8387**](#anchor-tbd): *Type parameter 'type parameter' has the same name as the type parameter from outer method 'method'.*
+- [**CS8389**](#anchor-tbd): *Omitting the type argument is not allowed in the current context.*
+- [**CS8427**](#anchor-tbd): *Enums, classes, and structures cannot be declared in an interface that has an 'in' or 'out' type parameter.*
+- [**CS8665**](#anchor-tbd): *Method 'method' specifies a 'class' constraint for type parameter 'type parameter', but corresponding type parameter 'type parameter' of overridden or explicitly implemented method 'method' is not a reference type.*
+- [**CS8666**](#anchor-tbd): *Method 'method' specifies a 'struct' constraint for type parameter 'type parameter', but corresponding type parameter 'type parameter' of overridden or explicitly implemented method 'method' is not a non-nullable value type.*
 - [**CS8822**](#anchor-tbd): *Method 'method' specifies a 'default' constraint for type parameter 'type parameter', but corresponding type parameter 'type parameter' of overridden or explicitly implemented method 'method' is constrained to a reference type or a value type.*
 - [**CS8823**](#anchor-tbd): *The 'default' constraint is valid on override and explicit interface implementation methods only.*
 - [**CS8893**](#anchor-tbd): *'type' is not a valid calling convention type for 'UnmanagedCallersOnly'.*

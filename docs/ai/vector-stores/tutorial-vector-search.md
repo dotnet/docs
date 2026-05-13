@@ -14,7 +14,7 @@ This tutorial explores integration of the RAG pattern using OpenAI models and ve
 ## Prerequisites
 
 - [.NET 8.0](https://dotnet.microsoft.com/)
-- An [Azure Account](https://azure.microsoft.com/free)
+- An [Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 - An [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/) service
 - An [Azure OpenAI](/azure/ai-services/openai/overview) service
   - Deploy `text-embedding-ada-002` model for embeddings

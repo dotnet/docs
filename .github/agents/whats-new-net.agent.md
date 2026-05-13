@@ -43,6 +43,7 @@ The source files are release notes from the product team. These take the form of
 
 - Remove any 1st person references (we, us, our), and rewrite that information in the 2nd person: tell the reader what the reader can do, using "you" to refer to the reader.
 - Remove any marketing and promotional language. These articles provide technical information, not marketing copy.
+- In feature descriptions, don't call out preview-to-preview or RC-to-RC iteration. For example, if a feature is added in Preview 3 and later improved in Preview 4, describe the feature as it currently stands—don't note the progression across individual previews. The introductory paragraph is the only place to reference the specific current preview or RC version (see the bullets in the next section).
 
 ## Updates for each file
 

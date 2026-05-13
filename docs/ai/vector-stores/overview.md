@@ -42,26 +42,11 @@ Other benefits of the RAG pattern include:
 - Overcome LLM token limits—the heavy lifting is done through the database vector search.
 - Reduce the costs from frequent fine-tuning on updated data.
 
-## The Microsoft.Extensions.VectorData library
+## Microsoft.Extensions.VectorData library
 
 To use vector search from .NET, you can use your regular database driver or SDK without requiring any additional library or API. For example, on SQL Server, vector search can be performed in T-SQL when using the standard .NET driver, SqlClient. However, accessing vector search in this way is often quite low-level, requires considerable ceremony to handle serialization/deserialization, and the resulting code isn't portable across databases.
 
-As an alternative, the [📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) package provides a unified layer of abstractions for interacting with vector stores in .NET. These abstractions let you write simple, high-level code against a single API, and swap out the underlying vector store with minimal changes to your application.
-
-The library provides the following key capabilities:
-
-- **Seamless .NET type mapping**: Map your .NET type directly to the database, similar to an object/relational mapper.
-- **Unified data model**: Define your data model once using .NET attributes and use it across any supported vector store.
-- **CRUD operations**: Create, read, update, and delete records in a vector store.
-- **Vector and hybrid search**: Query records by semantic similarity using vector search, or combine vector and text search for hybrid search.
-- **Embedding generation management**: Configure your embedding generator once and let the library transparently handle generation.
-- **Collection management**: Create, list, and delete collections (tables or indices) in a vector store.
-
-Microsoft.Extensions.VectorData is also the building block for additional, higher-level layers which need to interact with vector database. For example, the [Microsoft.Extensions.DataIngestion](../conceptual/data-ingestion.md).
-
-### Microsoft.Extensions.VectorData and Entity Framework Core
-
-If you are already using Entity Framework Core to access your database, it's likely that your database provider already supports vector search, and LINQ queries can be used to express such searches; Microsoft.Extensions.VectorData isn't necessarily needed in such applications. However, most dedicated vector databases are not supported by EF Core, and Microsoft.Extensions.VectorData can provide a good experience for working with those. In addition, you may also find yourself using both EF and Microsoft.Extensions.VectorData in the same application, e.g. when using an additional layer such as Microsoft.Extensions.DataIngestion.
+As an alternative, the [Microsoft.Extensions.VectorData library](../conceptual/mevd-library.md) provides a unified layer of abstractions for interacting with vector stores in .NET.
 
 ## Key abstractions
 

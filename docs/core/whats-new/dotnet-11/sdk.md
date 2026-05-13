@@ -11,22 +11,18 @@ ms.update-cycle: 3650-days
 
 This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 4.
 
-## SDK footprint and performance
-
-- [Smaller SDK installers on Linux and macOS](#smaller-sdk-installers-on-linux-and-macos)
-
-### Smaller SDK installers on Linux and macOS
+## SDK footprint
 
 The .NET SDK installer size on Linux and macOS has been reduced by deduplicating assemblies using symbolic links. Duplicate `.dll` and `.exe` files are identified by content hash and replaced with symbolic links pointing to a single copy. This affects tarballs, `.pkg`, `.deb`, and `.rpm` installers.
 
 Analysis found that 35% of the SDK directory consists of duplicate files. On Linux x64, that's 816 files totaling 140 MB on disk (53 MB compressed). By replacing duplicates with symbolic links, the Linux x64 archive drops significantly in size:
 
-| Platform | SDK artifact | .NET 10 size (MB) | .NET 11 Preview 2 size (MB) | Reduction |
-|---|---|---|---|---|
-| linux-x64 | tarball | 230 | 189 | 17.8% |
-| linux-x64 | deb | 164 | 122 | 25.6% |
-| linux-x64 | rpm | 165 | 122 | 26.0% |
-| linux-x64 | containers | Varies | Varies | 8–17% |
+| Platform  | SDK artifact | .NET 10 size (MB) | .NET 11 Preview 2 size (MB) | Reduction |
+|-----------|--------------|-------------------|-----------------------------|-----------|
+| linux-x64 | tarball      | 230               | 189                         | 17.8%     |
+| linux-x64 | deb          | 164               | 122                         | 25.6%     |
+| linux-x64 | rpm          | 165               | 122                         | 26.0%     |
+| linux-x64 | containers   | Varies            | Varies                      | 8–17%     |
 
 The SDK is further trimmed because crossgen is skipped for assemblies that only exist under `DotnetTools/`. Assemblies that also exist outside `DotnetTools/` are still crossgen'd—they get the startup benefit and the duplicate is then removed—but assemblies unique to `DotnetTools/` are left as IL-only. On a `linux-x64` build, this reduces the SDK tarball by an additional 23.6 MB.
 
@@ -69,10 +65,10 @@ The nine specific reasons are:
 
 #### Analyzer bug fixes
 
-| Analyzer | Fix |
-|----------|-----|
-| [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md) | Fixed false positive when C# extension members are present |
-| [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) | Fixed false positive when C# extension members are present |
+| Analyzer                                                              | Fix                                                          |
+|-----------------------------------------------------------------------|--------------------------------------------------------------|
+| [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md) | Fixed false positive when C# extension members are present   |
+| [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) | Fixed false positive when C# extension members are present   |
 | [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md) | Fixed improper handling of default interface implementations |
 
 #### AnalysisLevel corrected for .NET 11
@@ -177,7 +173,7 @@ Previously, these commands failed with `Could not find project or directory ''` 
 
 ### Launch settings notice moved to stderr
 
-The `Using launch settings from ...` informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
+The "Using launch settings from..." informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
 
 ### Other CLI improvements
 

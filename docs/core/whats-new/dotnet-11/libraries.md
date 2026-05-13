@@ -18,7 +18,7 @@ This article describes new features in the .NET libraries for .NET 11. It was la
 
 ### Process API expansion
 
-<xref:System.Diagnostics.Process> has a substantial set of new APIs that cover common scenarios where you previously had to wire up `OutputDataReceived`/`ErrorDataReceived` events manually or use P/Invoke.
+<xref:System.Diagnostics.Process> has a substantial set of new APIs that cover common scenarios where you previously had to wire up <xref:System.Diagnostics.Process.OutputDataReceived>/<xref:System.Diagnostics.Process.ErrorDataReceived> events manually or use P/Invoke.
 
 #### Run-and-capture helpers
 
@@ -28,33 +28,33 @@ New one-shot APIs let you launch a process and get its result without manual set
 
 The full set of helpers includes:
 
-- `Process.Run` and `Process.RunAsync` — launch a process and return an exit-status result.
-- `Process.RunAndCaptureText` and `Process.RunAndCaptureTextAsync` — launch and capture stdout/stderr together with exit code.
-- `Process.ReadAllText`, `Process.ReadAllBytes`, and their async variants — read a child process's standard output in a single call.
-- `Process.ReadAllLinesAsync` — returns a stream of `ProcessOutputLine` values that distinguish stdout from stderr without string parsing.
+- <xref:System.Diagnostics.Process.Run*?displayProperty=nameWithType> and <xref:System.Diagnostics.Process.RunAsync*?displayProperty=nameWithType> — launch a process and return an exit-status result.
+- <xref:System.Diagnostics.Process.RunAndCaptureText*?displayProperty=nameWithType> and <xref:System.Diagnostics.Process.RunAndCaptureTextAsync*?displayProperty=nameWithType> — launch and capture stdout/stderr together with exit code.
+- <xref:System.Diagnostics.Process.ReadAllText(System.Nullable{System.TimeSpan})?displayProperty=nameWithType>, <xref:System.Diagnostics.Process.ReadAllBytes(System.Nullable{System.TimeSpan})?displayProperty=nameWithType>, and their async variants — read a child process's standard output in a single call.
+- <xref:System.Diagnostics.Process.ReadAllLinesAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> — returns a stream of <xref:System.Diagnostics.ProcessOutputLine> values that distinguish stdout from stderr without string parsing.
 
 #### Fire-and-forget launches
 
-- `Process.StartAndForget` — starts a child process when you don't intend to wait for it; the runtime detaches the handle automatically.
-- `ProcessStartInfo.StartDetached` — detaches from the parent's session/console so the child can outlive a terminal exit.
-- `ProcessStartInfo.KillOnParentExit` (Windows only) — the child is terminated when the parent process exits.
+- <xref:System.Diagnostics.Process.StartAndForget*?displayProperty=nameWithType> — starts a child process when you don't intend to wait for it; the runtime detaches the handle automatically.
+- <xref:System.Diagnostics.ProcessStartInfo.StartDetached?displayProperty=nameWithType> — detaches from the parent's session/console so the child can outlive a terminal exit.
+- <xref:System.Diagnostics.ProcessStartInfo.KillOnParentExit?displayProperty=nameWithType> (Windows only) — the child is terminated when the parent process exits.
 
 #### SafeProcessHandle lifecycle methods
 
 <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle> gains lifecycle methods for advanced scenarios:
 
-- `SafeProcessHandle.Start` and a new `ProcessId` property — launch and identify processes without going through `Process` itself.
-- `SafeProcessHandle.Kill` and `SafeProcessHandle.Signal` — terminate or signal a process by handle.
-- `SafeProcessHandle.WaitForExit` and `SafeProcessHandle.WaitForExitAsync` — wait for a process to exit by handle.
+- <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Start(System.Diagnostics.ProcessStartInfo)?displayProperty=nameWithType> and a new <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.ProcessId?displayProperty=nameWithType> property — launch and identify processes without going through <xref:System.Diagnostics.Process> itself.
+- <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Kill?displayProperty=nameWithType> and <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Signal(System.Runtime.InteropServices.PosixSignal)?displayProperty=nameWithType> — terminate or signal a process by handle.
+- <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.WaitForExit?displayProperty=nameWithType> and <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.WaitForExitAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> — wait for a process to exit by handle.
 
 #### Tighter handle control
 
-- `ProcessStartInfo.InheritedHandles` — specify exactly which OS handles a child process inherits, instead of using the all-or-nothing `UseShellExecute = false` default.
-- `ProcessStartInfo.StandardInputHandle`, `StandardOutputHandle`, and `StandardErrorHandle` — supply already-open `SafeFileHandle` values for redirection without the framework opening new ones.
+- <xref:System.Diagnostics.ProcessStartInfo.InheritedHandles?displayProperty=nameWithType> — specify exactly which OS handles a child process inherits, instead of using the all-or-nothing `UseShellExecute = false` default.
+- <xref:System.Diagnostics.ProcessStartInfo.StandardInputHandle?displayProperty=nameWithType>, <xref:System.Diagnostics.ProcessStartInfo.StandardOutputHandle?displayProperty=nameWithType>, and <xref:System.Diagnostics.ProcessStartInfo.StandardErrorHandle?displayProperty=nameWithType> — supply already-open <xref:Microsoft.Win32.SafeHandles.SafeFileHandle?displayProperty=nameWithType> values for redirection without the framework opening new ones.
 
 ### Console FORCE_COLOR support
 
-.NET console output now honors the [`FORCE_COLOR`](https://force-color.org/) standard alongside the existing `NO_COLOR` support. When `FORCE_COLOR` is set, `Console.IsOutputRedirected` no longer suppresses ANSI escape codes. This is useful when you pipe `dotnet run` output through `tee`, into a CI log viewer, or through `less -R`:
+.NET console output now honors the [`FORCE_COLOR`](https://force-color.org/) standard alongside the existing `NO_COLOR` support. When `FORCE_COLOR` is set, <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> no longer suppresses ANSI escape codes. This is useful when you pipe `dotnet run` output through `tee`, into a CI log viewer, or through `less -R`:
 
 ```bash
 FORCE_COLOR=1 dotnet run | tee build.log
@@ -110,7 +110,7 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 ### UTF validation and invalid-subsequence search
 
-<xref:System.Text.Unicode?displayProperty=fullName> has two new complementary features. `Utf16.IsValid` answers whether a sequence is well-formed UTF-16 without scanning twice, and `Utf8.IndexOfInvalidSubsequence` / `Utf16.IndexOfInvalidSubsequence` return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together, these methods let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
+<xref:System.Text.Unicode?displayProperty=fullName> has two new complementary features. <xref:System.Text.Unicode.Utf16.IsValid(System.ReadOnlySpan{System.Char})?displayProperty=nameWithType> answers whether a sequence is well-formed UTF-16 without scanning twice, and <xref:System.Text.Unicode.Utf8.IndexOfInvalidSubsequence(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType> / <xref:System.Text.Unicode.Utf16.IndexOfInvalidSubsequence(System.ReadOnlySpan{System.Char})?displayProperty=nameWithType> return the position of the first ill-formed code-unit sequence (or `-1` for valid input). Together, these methods let parsers, validators, and serializers report precise errors instead of generic encoding-error messages.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="UtfValidation":::
 
@@ -128,11 +128,11 @@ This is particularly useful when working with source generation, NativeAOT, and 
 
 #### Naming and ignore defaults
 
-The naming and ignore options available in `System.Text.Json` now include:
+The naming and ignore options available in <xref:System.Text.Json?displayProperty=fullName> now include:
 
-- **`JsonNamingPolicy.PascalCase`**: A new built-in naming policy that converts property names to PascalCase. It joins the existing camelCase, snake_case, and kebab-case policies.
-- **Per-member naming policy**: The new `[JsonNamingPolicy]` attribute lets you override the naming policy on individual properties or fields, giving you fine-grained control without a custom converter.
-- **Type-level ignore conditions**: Applying `[JsonIgnore(Condition = ...)]` at the class or struct level sets the default ignore behavior for all members, so you no longer need to repeat the attribute on every nullable property.
+- **<xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>**: A new built-in naming policy that converts property names to PascalCase. It joins the existing camelCase, snake_case, and kebab-case policies.
+- **Per-member naming policy**: The new <xref:System.Text.Json.Serialization.JsonNamingPolicyAttribute?displayProperty=nameWithType> attribute lets you override the naming policy on individual properties or fields, giving you fine-grained control without a custom converter.
+- **Type-level ignore conditions**: Applying <xref:System.Text.Json.Serialization.JsonIgnoreAttribute?displayProperty=nameWithType> at the class or struct level sets the default ignore behavior for all members, so you no longer need to repeat the attribute on every nullable property.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonNamingIgnore":::
 
@@ -159,7 +159,7 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 #### AnyNewLine option
 
-A new <xref:System.Text.RegularExpressions.RegexOptions> flag, `AnyNewLine`, makes `^`, `$`, and `.` treat the full set of Unicode newline characters as line terminators—not just `\n`. This helps when parsing text that mixes Windows (`\r\n`), Unix (`\n`), and Unicode-specific (`\u0085`, `\u2028`, `\u2029`) line endings.
+A new <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> flag makes `^`, `$`, and `.` treat the full set of Unicode newline characters as line terminators—not just `\n`. This helps when parsing text that mixes Windows (`\r\n`), Unix (`\n`), and Unicode-specific (`\u0085`, `\u2028`, `\u2029`) line endings.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="RegexAnyNewLine":::
 
@@ -201,13 +201,13 @@ For more information, see [DeflateStream and GZipStream write headers and footer
 
 #### Span-based Deflate, ZLib, and GZip APIs
 
-<xref:System.IO.Compression> now offers `Span<byte>`/`ReadOnlySpan<byte>` encode and decode entry points for the Deflate, ZLib, and GZip formats. The new APIs mirror the shape of `BrotliEncoder`/`BrotliDecoder` and the Zstandard primitives, so you can compress and decompress buffers without allocating a `Stream`. This is useful for high-throughput scenarios such as protocol parsers, log shippers, and middleware that already operate on spans.
+<xref:System.IO.Compression> now offers `Span<byte>`/`ReadOnlySpan<byte>` encode and decode entry points for the Deflate, ZLib, and GZip formats. The new APIs, on types such as <xref:System.IO.Compression.DeflateEncoder>, <xref:System.IO.Compression.ZLibEncoder>, and <xref:System.IO.Compression.GZipEncoder>, mirror the shape of <xref:System.IO.Compression.BrotliEncoder>/<xref:System.IO.Compression.BrotliDecoder> and the Zstandard primitives. You can compress and decompress buffers without allocating a `Stream`. This is useful for high-throughput scenarios such as protocol parsers, log shippers, and middleware that already operate on spans.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="ZLibEncoderSpan":::
 
 ### Zstandard compression
 
-The Zstandard compression APIs are now part of the <xref:System.IO.Compression?displayProperty=fullName> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. The API surface is otherwise unchanged.
+The Zstandard compression APIs, for example, <xref:System.IO.Compression.ZStandardStream> and <xref:System.IO.Compression.ZStandardEncoder>, are now part of the <xref:System.IO.Compression> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. The API surface is otherwise unchanged.
 
 ### Tar archive format selection
 
@@ -243,18 +243,19 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 
 ### Numerics improvements
 
-#### Matrix4x4 performance
-
 <xref:System.Numerics.Matrix4x4.GetDeterminant?displayProperty=nameWithType> now uses an SSE-vectorized implementation, improving performance by approximately 15%.
 
 ### Low-level I/O improvements
+
+- [SafeFileHandle pipe support](#safefilehandle-pipe-support)
+- [RandomAccess pipe support](#randomaccess-pipe-support)
 
 #### SafeFileHandle pipe support
 
 <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> gains two new members:
 
-- **`Type` property:** Reports whether a handle represents a file, pipe, socket, directory, or other OS object, without requiring platform-specific code.
-- **`CreateAnonymousPipe` method:** Creates a pair of connected anonymous pipe handles with independent async behavior for each end.
+- **<xref:Microsoft.Win32.SafeHandles.SafeFileHandle.Type?displayProperty=nameWithType> property:** Reports whether a handle represents a file, pipe, socket, directory, or other OS object, without requiring platform-specific code.
+- **<xref:Microsoft.Win32.SafeHandles.SafeFileHandle.CreateAnonymousPipe(Microsoft.Win32.SafeHandles.SafeFileHandle@,Microsoft.Win32.SafeHandles.SafeFileHandle@,System.Boolean,System.Boolean)?displayProperty=nameWithType> method:** Creates a pair of connected anonymous pipe handles with independent async behavior for each end.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="SafeFileHandlePipe":::
 
@@ -265,6 +266,9 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, which reduces thread-pool blocking in process-heavy applications.
 
 ### Collections improvements
+
+- [BitArray.PopCount](#bitarraypopcount)
+- [IReadOnlySet support in JSON serialization](#ireadonlyset-support-in-json-serialization)
 
 #### BitArray.PopCount
 
@@ -286,7 +290,7 @@ The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class no
 > [!NOTE]
 > This is a preview feature in .NET 11.
 
-.NET 11 introduces `UnionAttribute` and `IUnion` in `System.Runtime.CompilerServices`. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
+.NET 11 introduces <xref:System.Runtime.CompilerServices.UnionAttribute?displayProperty=nameWithType> and <xref:System.Runtime.CompilerServices.IUnion?displayProperty=nameWithType> in <xref:System.Runtime.CompilerServices?displayProperty=fullName>. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
 
 For the language-side design, see the [C# unions proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
 
@@ -338,7 +342,7 @@ The <xref:System.Threading.RateLimiting?displayProperty=fullName> class has a ha
 
 ### Configuration binding
 
-<xref:Microsoft.Extensions.Configuration?displayProperty=fullName> adds `ConfigurationIgnoreAttribute`, so models can opt individual properties out of binding declaratively without relying on `BindNonPublicProperties` toggles or custom converters:
+<xref:Microsoft.Extensions.Configuration?displayProperty=fullName> adds <xref:Microsoft.Extensions.Configuration.ConfigurationIgnoreAttribute?displayProperty=nameWithType>, so models can opt individual properties out of binding declaratively without relying on `BindNonPublicProperties` toggles or custom converters:
 
 ```csharp
 public sealed class AppOptions
@@ -356,7 +360,7 @@ public sealed class AppOptions
 
 ### MemoryCache OpenTelemetry metrics
 
-<xref:Microsoft.Extensions.Caching.Memory.MemoryCache> now emits a built-in set of OpenTelemetry (OTel)-compatible metrics without an extra adapter package. To opt in, set `TrackStatistics = true`:
+<xref:Microsoft.Extensions.Caching.Memory.MemoryCache> now emits a built-in set of OpenTelemetry (OTel)-compatible metrics without an extra adapter package. To opt in, set <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.TrackStatistics?displayProperty=nameWithType> to `true`:
 
 ```csharp
 var cache = new MemoryCache(new MemoryCacheOptions
@@ -372,7 +376,7 @@ The new `Microsoft.Extensions.Caching.Memory.MemoryCache` meter publishes four o
 - `dotnet.cache.entries`
 - `dotnet.cache.estimated_size`
 
-Pass an `IMeterFactory` to the new `MemoryCache(options, loggerFactory, meterFactory)` constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
+Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
 
 ## Networking and transport security
 
@@ -383,7 +387,7 @@ Pass an `IMeterFactory` to the new `MemoryCache(options, loggerFactory, meterFac
 
 Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Transport Layer Security) reliability:
 
-- `SslStream` server-side handshake bounds-checking fixes in `TlsFrameHelper` close several edge cases that could surface as `IOException` on malformed ClientHello records.
+- <xref:System.Net.Security.SslStream> server-side handshake bounds-checking fixes in `TlsFrameHelper` close several edge cases that could surface as `IOException` on malformed ClientHello records.
 - On Linux, certificate-validation failures now surface as standard TLS alerts to the peer, matching Windows behavior. Connecting clients receive an actionable handshake error instead of a connection drop.
 
 ### HTTP/2 automatic downgrade for Windows authentication

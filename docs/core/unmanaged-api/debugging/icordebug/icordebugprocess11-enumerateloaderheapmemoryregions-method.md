@@ -16,7 +16,7 @@ topic_type:
 ---
 # ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method
 
-[Supported in .NET 5 through .NET 10.]
+Deprecated.
 
 Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap-loader` command.
 
@@ -42,7 +42,7 @@ HRESULT EnumerateLoaderHeapMemoryRegions(
 
  **Library:** CorGuids.lib
 
- **.NET Versions:** Available since .NET Core 5.0
+ **.NET Versions:** Available from .NET 8 through .NET 10.
 
 ## See also
 

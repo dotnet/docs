@@ -122,7 +122,7 @@ This improvement benefits anything that inspects the live execution stack, inclu
 
 ### NativeAOT and ReadyToRun support
 
-Preview 3 adds Runtime Async support for NativeAOT and ReadyToRun compilation. This extends the feature beyond JIT-compiled code to ahead-of-time compiled scenarios. The runtime also reuses continuation objects more aggressively and avoids saving unchanged locals, reducing allocation pressure in async-heavy code.
+Runtime Async supports NativeAOT and ReadyToRun compilation. This extends the feature beyond JIT-compiled code to ahead-of-time compiled scenarios. The runtime also reuses continuation objects more aggressively and avoids saving unchanged locals, reducing allocation pressure in async-heavy code.
 
 ### Debugging improvements
 
@@ -201,7 +201,7 @@ These optimizations are most visible after inlining, where guards from different
 
 ## WebAssembly improvements
 
-Preview 3 expands browser and WebAssembly support with several improvements:
+Browser and WebAssembly support has several improvements:
 
 - **WebCIL payload loading:** The runtime can now load WebCIL payloads directly, improving compatibility with browser-based deployment scenarios.
 - **Better debugging symbols:** Symbol and stack trace quality for WebAssembly debugging has improved, making it easier to diagnose issues in browser-hosted .NET apps.

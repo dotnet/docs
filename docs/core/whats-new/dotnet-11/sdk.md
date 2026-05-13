@@ -11,7 +11,11 @@ ms.update-cycle: 3650-days
 
 This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 4.
 
-## Smaller SDK installers on Linux and macOS
+## SDK footprint and performance
+
+- [Smaller SDK installers on Linux and macOS](#smaller-sdk-installers-on-linux-and-macos)
+
+### Smaller SDK installers on Linux and macOS
 
 The .NET SDK installer size on Linux and macOS has been reduced by deduplicating assemblies using symbolic links. Duplicate `.dll` and `.exe` files are identified by content hash and replaced with symbolic links pointing to a single copy. This affects tarballs, `.pkg`, `.deb`, and `.rpm` installers.
 
@@ -28,9 +32,14 @@ The SDK is further trimmed because crossgen is skipped for assemblies that only 
 
 Windows deduplication is planned for a future preview.
 
-## Code analyzer improvements
+## Code analysis and warnings
 
-### CA1873: Reduced noise and improved messages
+- [Code analyzer improvements](#code-analyzer-improvements)
+- [New SDK warnings](#new-sdk-warnings)
+
+### Code analyzer improvements
+
+#### CA1873: Reduced noise and improved messages
 
 Two improvements were made to [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) (Avoid potentially expensive logging):
 
@@ -58,7 +67,7 @@ The nine specific reasons are:
 - Await expression
 - With expression
 
-### Analyzer bug fixes
+#### Analyzer bug fixes
 
 | Analyzer | Fix |
 |----------|-----|
@@ -66,13 +75,13 @@ The nine specific reasons are:
 | [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) | Fixed false positive when C# extension members are present |
 | [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md) | Fixed improper handling of default interface implementations |
 
-### AnalysisLevel corrected for .NET 11
+#### AnalysisLevel corrected for .NET 11
 
 Projects with `AnalysisLevel=latest` were incorrectly using .NET 9 analyzer rules instead of the expected .NET 11 rules. This is now fixed.
 
-## New SDK warnings
+### New SDK warnings
 
-### NETSDK1235: Custom .nuspec with PackAsTool
+#### NETSDK1235: Custom .nuspec with PackAsTool
 
 A new warning is emitted when a project sets `PackAsTool=true` and specifies a custom `NuspecFile` property. Tool packages require specific layout and identifier conventions that custom `.nuspec` files typically violate:
 
@@ -82,7 +91,17 @@ warning NETSDK1235: .NET Tools do not support using a custom .nuspec file, but t
 
 The pack operation still proceeds with a warning to avoid breaking existing projects.
 
-## Solution filter CLI support
+## CLI workflow and developer productivity
+
+- [Solution filter CLI support](#solution-filter-cli-support)
+- [File-based apps split across files](#file-based-apps-split-across-files)
+- [Pass environment variables with dotnet run](#pass-environment-variables-with-dotnet-run)
+- [dotnet watch improvements](#dotnet-watch-improvements)
+- [Fish shell completions](#fish-shell-completions)
+- [dotnet reference falls back to current directory](#dotnet-reference-falls-back-to-current-directory)
+- [Launch settings notice moved to stderr](#launch-settings-notice-moved-to-stderr)
+
+### Solution filter CLI support
 
 `dotnet sln` can now create and edit solution filters (`.slnf`) directly from the CLI. Solution filters let large repositories load or build a subset of projects without changing the main solution. The supported operations mirror the existing `dotnet sln` commands:
 
@@ -93,7 +112,7 @@ dotnet sln MyApp.slnf list
 dotnet sln MyApp.slnf remove src/Lib/Lib.csproj
 ```
 
-## File-based apps split across files
+### File-based apps split across files
 
 File-based apps now support an `#:include` directive, so you can move shared helpers into separate files without giving up the file-based workflow:
 
@@ -104,7 +123,7 @@ File-based apps now support an `#:include` directive, so you can move shared hel
 Console.WriteLine(Helpers.FormatOutput(new Customer()));
 ```
 
-## Pass environment variables with dotnet run
+### Pass environment variables with dotnet run
 
 `dotnet run -e KEY=VALUE` passes environment variables to the launched app from the command line, without requiring you to export shell state or edit launch profiles:
 
@@ -114,7 +133,7 @@ dotnet run -e ASPNETCORE_ENVIRONMENT=Development -e LOG_LEVEL=Debug
 
 Environment variables passed this way are available to MSBuild logic as `RuntimeEnvironmentVariable` items.
 
-## dotnet watch improvements
+### dotnet watch improvements
 
 .NET 11 adds several `dotnet watch` improvements for long-running local development loops:
 
@@ -139,11 +158,11 @@ The following long-standing `dotnet watch` issues are fixed:
 > [!NOTE]
 > `dotnet watch` requires `<MtouchLink>None</MtouchLink>` in the `.csproj` file for iOS Simulator projects. See [dotnet/macios #25295](https://github.com/dotnet/macios/issues/25295).
 
-## Fish shell completions
+### Fish shell completions
 
 The fish shell provider previously emitted a one-liner that delegated every completion to a dynamic `dotnet complete` call. The generated script now walks the tokenized command line, emits static completions for subcommands, options, and positional arguments, and falls back to dynamic calls only where required. This matches the behavior of the Bash, Zsh, and PowerShell providers.
 
-## dotnet reference falls back to current directory
+### dotnet reference falls back to current directory
 
 `dotnet reference add` and `dotnet reference remove` now fall back to the current directory when no `--project` is supplied, matching the long-standing behavior of `dotnet reference list`:
 
@@ -155,21 +174,32 @@ dotnet reference remove ../ClassLib1/ClassLib1.csproj
 
 Previously, these commands failed with `Could not find project or directory ''` when run from a directory that contained a project file.
 
-## Launch settings notice moved to stderr
+### Launch settings notice moved to stderr
 
 The `Using launch settings from ...` informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
 
-## Asset groups for static web assets
+## Web assets and telemetry
+
+- [Asset groups for static web assets](#asset-groups-for-static-web-assets)
+- [OpenTelemetry replaces Application Insights for CLI telemetry](#opentelemetry-replaces-application-insights-for-cli-telemetry)
+
+### Asset groups for static web assets
 
 The Static Web Assets SDK adds support for **Asset Groups**, a way to declare groups of related assets that share publish, fingerprinting, and endpoint metadata. The related `DefineStaticWebAssetEndpoints` task gains an `AdditionalEndpointDefinitions` parameter, and the glob matcher exposes the captured `**` stem so additional endpoints (for example default-document routes like `/` for `**/index.html`) can be defined declaratively.
 
 This is infrastructure for ASP.NET Core component authors and SDK extension authors. Most app developers see the result indirectly as Razor and Blazor component packages ship cleaner static-asset metadata.
 
-## OpenTelemetry replaces Application Insights for CLI telemetry
+### OpenTelemetry replaces Application Insights for CLI telemetry
 
 The `dotnet` CLI now uses OpenTelemetry (OTel) with Azure Monitor and OTLP exporters for its opt-in telemetry, replacing the previous `Microsoft.ApplicationInsights` dependency. The user-facing behavior is unchanged—the same telemetry is collected with the same opt-out via `DOTNET_CLI_TELEMETRY_OPTOUT`. The motivation is to make the CLI NativeAOT-friendly.
 
-## NativeAOT entry point for the dotnet CLI
+## CLI architecture
+
+- [NativeAOT entry point for the dotnet CLI](#nativeaot-entry-point-for-the-dotnet-cli)
+- [Partial Ready-to-Run for upstack tooling](#partial-ready-to-run-for-upstack-tooling)
+- [Other CLI improvements](#other-cli-improvements)
+
+### NativeAOT entry point for the dotnet CLI
 
 To enable near-instant startup for common CLI invocations, .NET 11 lays the groundwork for a NativeAOT-compiled `dotnet` CLI host. The work introduces three layers:
 
@@ -179,11 +209,11 @@ To enable near-instant startup for common CLI invocations, .NET 11 lays the grou
 
 The goal is near-instant startup for the most common CLI invocations while preserving full functionality for the rest. The new entry point isn't the default `dotnet` binary yet.
 
-## Partial Ready-to-Run for upstack tooling
+### Partial Ready-to-Run for upstack tooling
 
 A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `dotnet/maui`) declare a list of assemblies to be partially R2R-compiled and excluded from the composite image. The motivating scenario is precompiling generated XAML code in Debug builds to speed up F5 without paying the full crossgen cost for the rest of the app. App developers don't set this property directly—it's a hook the mobile workloads use in their targets.
 
-## Other CLI improvements
+### Other CLI improvements
 
 - `dotnet format` now accepts `--framework` for multi-targeted projects.
 - `dotnet test` in Microsoft Testing Platform (MTP) mode now supports `--artifacts-path`.
@@ -192,6 +222,9 @@ A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `d
 - `dotnet publish` no longer removes native DLLs on subsequent runs of single-file publish.
 
 ## Breaking changes
+
+- [Mono launch target no longer set automatically](#mono-launch-target-no-longer-set-automatically)
+- [Template engine drops netstandard2.0](#template-engine-drops-netstandard20)
 
 .NET 11 includes some breaking changes in the SDK.
 

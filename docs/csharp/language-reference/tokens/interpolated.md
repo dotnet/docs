@@ -107,10 +107,7 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 
 ## C# language specification
 
-For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) and [custom interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#23591-custom-interpolated-string-expression-handlers) sections of the [C# language specification](~/_csharpstandard/standard/README.md) and the following new feature specifications:
-
-- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
+For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) and [custom interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#235101-custom-interpolated-string-expression-handlers) sections of the [C# language specification](~/_csharpstandard/standard/README.md). See also [String literals](~/_csharpstandard/standard/lexical-structure.md#6456-string-literals) for raw string literals.
 
 ## See also
 

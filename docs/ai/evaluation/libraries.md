@@ -99,4 +99,5 @@ For a more comprehensive tour of the functionality and APIs in the Microsoft.Ext
 
 ## See also
 
+- [Quickstart: Evaluate response quality](evaluate-ai-response.md)
 - [Evaluation of generative AI apps (Foundry)](/azure/ai-studio/concepts/evaluation-approach-gen-ai)

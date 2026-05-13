@@ -104,7 +104,7 @@ A *statement* performs an action. Statements control program flow, declare varia
 - `if (condition) { /* code */ }` (conditional statement)
 - `return result;` (return statement)
 
-Statements often contain expressions, and expressions can nest inside other expressions. For example, the following declaration statement assigns `f` to the result of an addition expression. That addition expression adds the results of two method call expressions:
+Statements often contain expressions, and expressions can nest inside other expressions. For example, the following declaration statement assigns `maxResult` to the result of an addition expression. That addition expression adds the results of two method call expressions:
 
 ```csharp
 var maxResult = Math.Max(a, b) + Math.Max(c, d);

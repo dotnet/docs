@@ -153,6 +153,7 @@ signtool [command] [options] [file_name | ...]
 |0|Execution was successful.|  
 |1|Execution has failed.|  
 |2|Execution has completed with warnings.|  
+|3|Execution failed with RuntimeException.|
 
 ## Examples  
 

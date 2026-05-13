@@ -49,7 +49,7 @@ Console.WriteLine(writeHandle.IsAsync); // false (blocking write end)
 
 For regular files opened with `FileOptions.Asynchronous`, `IsAsync` correctly returns `false` on Unix because regular file I/O is inherently synchronous at the kernel level.
 
-Additionally, on non-Windows platforms, constructing a `SendPacketsElement` with a `FileStream` no longer throws `ArgumentException` regardless of whether the stream is async.
+Additionally, on non-Windows platforms, constructing a `SendPacketsElement` with a `FileStream` no longer throws `ArgumentException`, regardless of whether the stream is async.
 
 ## Type of breaking change
 

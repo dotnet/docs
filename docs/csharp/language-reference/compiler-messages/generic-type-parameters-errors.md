@@ -278,7 +278,7 @@ For more information, see [Constraints on type parameters](../../programming-gui
 - **CS0717**: *Static class: static classes cannot be used as constraints.*
 - **CS3024**: *Constraint type 'type' is not CLS-compliant.*
 
-A constraint must be an interface, a non-sealed class or a type parameter. Certain types are invalid as constraints due to their special meaning in the .NET type system or because they can't be inherited.
+A constraint must be an interface, a non-sealed class, or a type parameter. Certain types are invalid as constraints due to their special meaning in the .NET type system or because they can't be inherited.
 
 - Remove duplicate constraints (**CS0405**). Each constraint can only appear once in a constraint clause. If you have `where T : I, I`, remove the duplicate.
 - Use only non-sealed types as constraints (**CS0701**). Sealed classes, structs, and enums can't be inherited, so they serve no purpose as constraints. Use an interface that the desired types implement, or use a non-sealed base class.
@@ -351,7 +351,7 @@ For more information, see [Constraints on type parameters](../../programming-gui
 
 These errors relate to the `new()` constraint and instantiating type parameters with the `new` operator.
 
-- Add the `new()` constraint to type parameters that need to be instantiated (**CS0304**). When you use `new T()` inside a generic type or method, the compiler must guarantee that any type argument has a parameterless constructor. The `new()` constraint provides this guarantee.
+- Add the `new()` constraint to type parameters that you need to instantiate (**CS0304**). When you use `new T()` inside a generic type or method, the compiler must guarantee that any type argument has a parameterless constructor. The `new()` constraint provides this guarantee.
 - Ensure type arguments have public parameterless constructors (**CS0310**). When a type parameter has the `new()` constraint, any concrete type used as a type argument must be non-abstract and must provide a public parameterless constructor. Types with only private, protected, or parameterized constructors can't satisfy the `new()` constraint.
 - Remove constructor arguments when instantiating type parameters (**CS0417**). The `new()` constraint only guarantees a parameterless constructor. You can't pass arguments to `new T(arguments)`. If you need to construct instances with specific arguments, consider using a factory pattern or an interface constraint that defines the construction behavior.
 
@@ -382,9 +382,9 @@ For more information, see [Generic Type Parameters](../../programming-guide/gene
 
 - **CS0411**: *The type arguments for method 'method' cannot be inferred from the usage. Try specifying the type arguments explicitly.*
 
-This error occurs when you call a generic method without explicitly providing the type arguments and the compiler can't infer which type arguments are intended. The compiler infers type arguments from the types of the method arguments passed at the call site.
+This error occurs when you call a generic method without explicitly providing the type arguments and the compiler can't infer which type arguments you intend. The compiler infers type arguments from the types of the method arguments you pass at the call site.
 
-- Specify the type arguments explicitly in angle brackets (**CS0411**). If the compiler can't determine the type arguments from the method arguments, provide them directly. For example, change `G()` to `G<int>()`. This commonly occurs when a generic method has no parameters from which to infer the type, or when a `null` argument is passed and the compiler can't determine the intended type.
+- Specify the type arguments explicitly in angle brackets (**CS0411**). If the compiler can't determine the type arguments from the method arguments, provide them directly. For example, change `G()` to `G<int>()`. This error commonly occurs when a generic method has no parameters from which to infer the type, or when a `null` argument is passed and the compiler can't determine the intended type.
 
 For more information, see [Generic Methods](../../programming-guide/generics/generic-methods.md).
 
@@ -437,7 +437,7 @@ For more information, see [Constraints on type parameters](../../programming-gui
 - **CS8895**: *Methods attributed with 'UnmanagedCallersOnly' cannot have generic type parameters and cannot be declared in a generic type.*
 - **CS8896**: *'UnmanagedCallersOnly' can only be applied to ordinary static non-abstract, non-virtual methods or static local functions.*
 
-The <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> attribute marks methods that can be called from unmanaged code. These methods have strict requirements because the runtime must handle the transition between managed and unmanaged calling conventions.
+The <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> attribute marks methods that unmanaged code can call. These methods have strict requirements because the runtime must handle the transition between managed and unmanaged calling conventions.
 
 - Use only valid calling convention types in the `UnmanagedCallersOnly` attribute (**CS8893**). The `CallConvs` property of the attribute accepts only recognized calling convention types from the `System.Runtime.CompilerServices` namespace.
 - Use only [blittable types](/dotnet/framework/interop/blittable-and-non-blittable-types) as parameter and return types (**CS8894**). Methods marked with `UnmanagedCallersOnly` can't use managed types (such as `string` or `object`) as parameter or return types because unmanaged callers can't manage the garbage-collected references.

@@ -1,7 +1,7 @@
 ---
 title: .NET + AI ecosystem tools and SDKs
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
-ms.date: 12/10/2025
+ms.date: 04/15/2026
 ms.topic: overview
 ---
 
@@ -9,8 +9,35 @@ ms.topic: overview
 
 The .NET ecosystem provides many powerful tools, libraries, and services to develop AI applications. .NET supports both cloud and local AI model connections, many different SDKs for various AI and vector database services, and other tools to help you build intelligent apps of varying scope and complexity.
 
-> [!IMPORTANT]
-> Not all of the SDKs and services presented in this article are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
+## Decide which tool to use
+
+The following table recommends which technology to use based on different objectives.
+
+| Objective                     | Technology to use |
+|-------------------------------|-------------------|
+| **Add AI behavior to an app** | Use [Microsoft.Extensions.AI library (MEAI)](#microsoftextensionsai-libraries). Add [Evaluations](#evaluation-libraries) once you have something worth measuring. |
+| **Work with your own data**   | Use [Microsoft.Extensions.DataIngestion (MEDI)](#microsoftextensionsdataingestion-medi) to read, chunk, or enrich content. Then use [Microsoft.Extensions.VectorData (MEVD)](#microsoftextensionsvectordata-mevd) to store and retrieve vectors. |
+| **Share or consume capabilities across AI clients** | Use an [MCP Server](#mcp-server) to publish capabilities, or an [MCP Client](#mcp-client) to consume them. |
+| **Build an agentic system**   | Use [Copilot SDK](#copilot-sdk) for a ready-made harness, or [Microsoft Agent Framework](#microsoft-agent-framework-maf) for multi-step goal pursuit, routing, or handoffs. |
+| **Choose a hosting or execution model** | Use [Azure AI Foundry](#azure-ai-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) for distributed multi-service systems. |
+| **Improve the developer workflow** | Use [AI Toolkit](#ai-toolkit). |
+
+Most production AI applications combine several components:
+
+- **Chat or summarization app**: MEAI + Evaluations
+- **RAG application**: MEDI + MEVD + MEAI
+- **Multi-agent system**: MEAI + MAF + Aspire
+- **Tool interoperability**: MEAI + MCP Server + MCP Client
+- **Enterprise cloud app**: MEAI + Azure AI Foundry + Aspire
+- **Local-first app**: MEAI + Foundry Local + AI Toolkit (development)
+
+Use these practical rules to choose quickly:
+
+- Start with `Microsoft.Extensions.AI` for most app-level AI features.
+- Add `Microsoft.Extensions.DataIngestion` and `Microsoft.Extensions.VectorData` when grounding responses with your own data.
+- Use MCP when capabilities must be shared across process or product boundaries.
+- Move to Agent Framework when one-step prompts become multi-step workflows.
+- Add evaluations once behavior is useful enough to measure and protect from regressions.
 
 ## Microsoft.Extensions.AI libraries
 
@@ -18,75 +45,96 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 `Microsoft.Extensions.AI` provides abstractions that can be implemented by various services, all adhering to the same core concepts. This library is not intended to provide APIs tailored to any specific provider's services. The goal of `Microsoft.Extensions.AI` is to act as a unifying layer within the .NET ecosystem, enabling developers to choose their preferred frameworks and libraries while ensuring seamless integration and collaboration across the ecosystem.
 
-## Other AI-related Microsoft.Extensions libraries
+MEAI gives .NET developers a clean abstraction for model interaction. It fits naturally into dependency injection, configuration, and existing app architectures and is the usual first layer of an AI-enabled .NET application.
 
-The [📦 Microsoft.Extensions.VectorData.Abstractions package](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) provides a unified layer of abstractions for interacting with a variety of vector stores. It lets you store processed chunks in vector stores such as Qdrant, Azure SQL, CosmosDB, MongoDB, ElasticSearch, and many more. For more information, see [Build a .NET AI vector search app](vector-stores/how-to/build-vector-search-app.md).
+MEAI alone isn't an agent framework. A one-shot call, chat feature, or tool-call loop can be built with MEAI without becoming "agentic." When the system needs goal-directed, multi-step orchestration, use [MAF](#microsoft-agent-framework-maf) instead.
 
-The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET building blocks for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially retrieval-augmented generation (RAG) scenarios. For more information, see [Data ingestion](conceptual/data-ingestion.md).
+For more information, see [Microsoft.Extensions.AI overview](microsoft-extensions-ai.md).
 
-## Microsoft Agent Framework
+## Evaluation libraries
 
-If you want to use low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview). Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Microsoft Foundry, and more.
+The [Microsoft.Extensions.AI.Evaluation library](evaluation/libraries.md) is the quality and regression layer for AI features built with the .NET AI stack. AI behavior changes readily as prompts, models, and tools evolve. The evaluations library gives teams a repeatable way to compare outputs and catch regressions.
 
-This framework is the recommended approach for .NET apps that need to build agentic AI systems with advanced orchestration, multi-agent collaboration, and enterprise-grade security and observability.
+For more information, see [Microsoft.Extensions.AI.Evaluation libraries](evaluation/libraries.md).
 
-Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. Agent Framework provides:
+## Microsoft.Extensions.DataIngestion (MEDI)
 
-- **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and *magentic* (where a lead agent directs other agents) orchestration patterns.
-- **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (for example, OpenAI or Foundry) using plugin and connector models.
-- **Enterprise-grade features**: Built-in observability (OpenTelemetry), Microsoft Entra security integration, and responsible AI features including prompt injection protection and task adherence monitoring.
-- **Standards-based interoperability**: Integration with open standards like Agent-to-Agent (A2A) protocol and Model Context Protocol (MCP) for agent discovery and tool interaction.
+[Microsoft.Extensions.DataIngestion](conceptual/medi-library.md) is the ingestion and preparation layer for AI-ready data in .NET.
 
-For more information, see the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview).
+Many AI apps fail before retrieval because data is messy, oversized, or poorly structured. Ingestion quality strongly affects downstream answer quality. MEDI prepares and shapes the data that MEVD or another store later queries.
 
-## Semantic Kernel for .NET
+For more information, see [Data ingestion for AI apps](conceptual/data-ingestion.md).
 
-[Semantic Kernel](/semantic-kernel/overview/) is an open-source library that enables AI integration and orchestration capabilities in your .NET apps. However, for new applications that require agentic capabilities, multi-agent orchestration, or enterprise-grade observability and security, the recommended framework is [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
+## Microsoft.Extensions.VectorData (MEVD)
 
-## .NET SDKs for building AI apps
+[Microsoft.Extensions.VectorData](conceptual/mevd-library.md) is the vector data storage and retrieval layer for semantic search, similarity lookup, and grounding in .NET AI apps.
 
-Many different SDKs are available to build .NET apps with AI capabilities depending on the target platform or AI model. OpenAI models offer powerful generative AI capabilities, while other Foundry tools provide intelligent solutions for a variety of specific scenarios.
+MEVD gives .NET applications a consistent way to work with vector stores and helps separate vector storage and retrieval concerns from model invocation concerns.
 
-### .NET SDKs for OpenAI models
+For more information, see [Vector stores overview](vector-stores/overview.md).
 
-| NuGet package | Supported models | Maintainer or vendor | Documentation |
-|---------------|------------------|----------------------|--------------|
-| [Microsoft.Agents.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Agents.AI.OpenAI/) | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) (Microsoft) | [Agent Framework documentation](/agent-framework/overview/agent-framework-overview) |
-| [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/) | [Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft) | [Azure OpenAI services documentation](/azure/ai-services/openai/) |
-| [OpenAI SDK](https://www.nuget.org/packages/OpenAI/) | [OpenAI supported models](https://platform.openai.com/docs/models) | [OpenAI SDK for .NET](https://github.com/openai/openai-dotnet) (OpenAI) | [OpenAI services documentation](https://platform.openai.com/docs/overview) |
+## MCP Server
 
-### .NET SDKs for Foundry Tools
+An MCP Server exposes capabilities such as tools, resources, or prompts over the Model Context Protocol so other assistants, IDEs, and agents can discover and use them through a standard protocol.
 
-Azure offers many other AI services, such as Foundry Tools, to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Foundry Tools](/azure/ai-services/what-are-ai-services) documentation.
+An MCP Server turns app capabilities into reusable AI-facing endpoints. It reduces duplicated tool integration work across assistants and creates a cleaner boundary between capability providers and capability consumers.
 
-| Service                           | Description                                  |
-|-----------------------------------|----------------------------------------------|
-| [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
-| [Content Safety in Foundry Control Plane](/azure/ai-services/content-safety/) | Detect unwanted or offensive content.                      |
-| [Azure Document Intelligence in Foundry Tools](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
-| [Azure Language in Foundry Tools](/azure/ai-services/language-service/)     | Build apps with industry-leading natural language understanding capabilities. |
-| [Azure Speech in Foundry Tools](/azure/ai-services/speech-service/)         | Speech to text, text to speech, translation, and speaker recognition. |
-| [Azure Translator in Foundry Tools](/azure/ai-services/translator/)         | AI-powered translation technology with support for more than 100 languages and dialects. |
-| [Azure Vision in Foundry Tools](/azure/ai-services/computer-vision/)        | Analyze content in images and videos.                      |
+An MCP Server is about *publishing* capabilities. If the capability is used only inside one app, ordinary in-process function calling is simpler.
 
-## Develop with local AI models
+## MCP Client
 
-.NET apps can also connect to local AI models for many different development scenarios. [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) is the recommended tool to connect to local models using .NET. This framework can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
+An MCP Client is the consumer side of the protocol: it connects to MCP servers and brings their exposed capabilities into an app, assistant, or agent runtime.
 
-For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/chat-local-model.md), including several small language models (SLMs) developed by Microsoft:
+An MCP Client is about *consuming* capabilities, not publishing them. If everything the app needs is local and in-process, ordinary function or tool calling is still simpler.
 
-| Model               | Description                                               |
-|---------------------|-----------------------------------------------------------|
-| [phi3 models][phi3] | A family of powerful SLMs with groundbreaking performance at low cost and low latency. |
-| [orca models][orca] | Research models in tasks such as reasoning over user-provided data, reading comprehension, math problem solving, and text summarization. |
+For more information, see [Get started with MCP](get-started-mcp.md).
 
-> [!NOTE]
-> The preceding SLMs can also be hosted on other services, such as Azure.
+## Microsoft Agent Framework (MAF)
 
-## Next steps
+Microsoft Agent Framework is the orchestration layer for systems that are truly agentic: they pursue a goal across multiple steps, make decisions along the way, use tools, and might coordinate multiple agents.
 
-- [What is Microsoft Agent Framework?](/agent-framework/overview/agent-framework-overview)
-- [Quickstart - Summarize text using Azure AI chat app with .NET](quickstarts/prompt-model.md)
+Not every AI feature needs MAF. If a direct MEAI call or a simple tool-calling loop solves the problem, use a simpler approach. MAF matters when orchestration complexity is the real challenge, not just model access.
 
-[phi3]: https://azure.microsoft.com/products/phi-3
-[orca]: https://www.microsoft.com/research/project/orca/
+For more information, see [Microsoft Agent Framework overview](/agent-framework/overview/agent-framework-overview).
+
+## AI Toolkit
+
+AI Toolkit is a VS Code extension pack for AI development that speeds up experimentation with models, prompts, agents, and evaluations.
+
+AI Toolkit isn't the core runtime architecture for the production app. It complements MEAI, Evaluations, and Foundry Local.
+
+For more information, see [AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview).
+
+## Copilot SDK
+
+Copilot SDK is a prebuilt agent harness and runtime that brings tools, context, and automatic tool calling out of the box.
+
+Copilot SDK is more opinionated and prewired than MEAI. If your goal is a fully custom app architecture, direct MEAI or MAF composition can be a better fit.
+
+For more information, see the [Copilot SDK repository](https://github.com/github/copilot-sdk).
+
+## Azure AI Foundry
+
+Azure AI Foundry is the managed cloud platform layer for enterprise AI solutions, with two primary functions: model management and hosted agents.
+
+Azure AI Foundry isn't the app-facing programming abstraction; MEAI still plays that role in .NET code. Azure AI Foundry becomes the right lead when the real question is *where* the model runs and under what controls.
+
+For more information, see the [Azure AI Foundry documentation](/azure/ai-foundry/).
+
+## Foundry Local
+
+Foundry Local is a local development and local-first deployment option for teams that need to keep AI workloads close to the machine or environment.
+
+Foundry Local is about the development and deployment path, not the higher-level app architecture itself. Local-to-cloud isn't a clean one-to-one move, so expect differences in features, hosting model, and operations.
+
+For more information, see the [Foundry Local documentation](/azure/foundry-local/).
+
+## Aspire
+
+Aspire is the orchestration, service-wiring, and observability layer for distributed .NET applications, including AI systems that span multiple services.
+
+AI systems often stop being "just one app" once retrieval, tools, gateways, and worker services are involved. Aspire helps teams keep those parts understandable and observable, and its visuals make it easier to trace AI flows across services.
+
+Aspire isn't specifically the AI runtime; it's the multi-service application layer around it. It doesn't replace MEAI, MAF, or Azure AI Foundry.
+
+For more information, see the [Aspire documentation](/dotnet/aspire/).

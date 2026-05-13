@@ -152,20 +152,20 @@ This article covers the following compiler errors:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0080**](#type-parameter-declaration-and-naming): *Constraints are not allowed on non-generic declarations.*
-- [**CS0081**](#type-parameter-declaration-and-naming): *Type parameter declaration must be an identifier, not a type.*
+- [**CS0081**](#type-parameter-declaration-and-naming): *Type parameter declaration must be an identifier not a type.*
 - [**CS0224**](#type-argument-count-and-usage): *A method with vararg cannot be generic, be in a generic type, or have a params parameter.*
 - [**CS0304**](#constructor-constraints): *Cannot create an instance of the variable type because it does not have the `new()` constraint.*
 - [**CS0305**](#type-argument-count-and-usage): *Using the generic type requires N type arguments.*
 - [**CS0306**](#type-argument-count-and-usage): *The type may not be used as a type argument.*
-- [**CS0307**](#type-argument-count-and-usage): *The identifier is not a generic method. If you intended an expression list, use parentheses around the expression.*
+- [**CS0307**](#type-argument-count-and-usage): *The 'identifier' cannot be used with type arguments.*
 - [**CS0308**](#type-argument-count-and-usage): *The non-generic type-or-method cannot be used with type arguments.*
 - [**CS0310**](#constructor-constraints): *The type must be a non-abstract type with a public parameterless constructor in order to use it as parameter in the generic type or method.*
 - [**CS0311**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter `T` in the generic type or method. There is no implicit reference conversion from type1 to type2.*
-- [**CS0312**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter in the generic type or method. The nullable type 'type1' does not satisfy the constraint.*
-- [**CS0313**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter in the generic type or method. The nullable type 'type1' does not satisfy the constraint. Nullable types can not satisfy any interface constraints.*
-- [**CS0314**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter in the generic type or method. There is no boxing conversion or type parameter conversion.*
-- [**CS0315**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter `T` in the generic type or method. There is no boxing conversion.*
-- [**CS0401**](#constraint-declaration-and-ordering): *The `new()` constraint must be the last constraint specified.*
+- [**CS0312**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter in the generic type or method. The nullable type 'type1' does not satisfy the constraint of 'constraint'.*
+- [**CS0313**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter in the generic type or method. The nullable type 'type1' does not satisfy the constraint of 'constraint'. Nullable types can not satisfy any interface constraints.*
+- [**CS0314**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter in the generic type or method. There is no boxing conversion or type parameter conversion from 'type' to 'constraint'.*
+- [**CS0315**](#constraint-satisfaction-and-conversions): *The type cannot be used as type parameter `T` in the generic type or method. There is no boxing conversion from 'type' to 'constraint'.*
+- [**CS0401**](#constraint-declaration-and-ordering): *The `new()` constraint must be the last restrictive constraint specified.*
 - [**CS0403**](#generic-type-usage-restrictions): *Cannot convert null to type parameter because it could be a non-nullable value type. Consider using `default(T)` instead.*
 - [**CS0405**](#valid-constraint-types): *Duplicate constraint for type parameter.*
 - [**CS0406**](#constraint-declaration-and-ordering): *The class type constraint 'constraint' must come before any other constraints.*
@@ -180,25 +180,25 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0452**](#constraint-satisfaction-and-conversions): *The type 'type name' must be a reference type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.*
 - [**CS0453**](#constraint-satisfaction-and-conversions): *The type 'type name' must be a non-nullable value type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.*
 - [**CS0454**](#constraint-conflicts-and-circular-dependencies): *Circular constraint dependency involving Type Parameter 1 and Type Parameter 2.*
-- [**CS0455**](#constraint-conflicts-and-circular-dependencies): *Type parameter inherits conflicting constraints.*
+- [**CS0455**](#constraint-conflicts-and-circular-dependencies): *Type parameter inherits conflicting constraints 'constraint1' and 'constraint2'.*
 - [**CS0456**](#constraint-conflicts-and-circular-dependencies): *Type parameter 'type parameter 1' has the 'struct' constraint so 'type parameter 1' cannot be used as a constraint for 'type parameter 2'.*
 - [**CS0693**](#type-parameter-declaration-and-naming): *Type parameter 'type parameter' has the same name as the type parameter from outer type 'type'.*
-- [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter has the same name as the containing type or method.*
-- [**CS0695**](#generic-type-usage-restrictions): *`T` cannot implement both interfaces because they may unify for some type parameter substitutions.*
+- [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter has the same name as the containing type, or method.*
+- [**CS0695**](#generic-type-usage-restrictions): *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
 - [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from type because it is an attribute class.*
 - [**CS0699**](#type-parameter-declaration-and-naming): *'generic' does not define type parameter 'identifier'.*
 - [**CS0701**](#valid-constraint-types): *'identifier' is not a valid constraint. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
 - [**CS0702**](#valid-constraint-types): *Constraint cannot be special class.*
 - [**CS0703**](#valid-constraint-types): *Inconsistent accessibility: constraint type is less accessible than declaration.*
 - [**CS0704**](#generic-type-usage-restrictions): *Cannot do non-virtual member lookup in 'type' because it is a type parameter.*
-- [**CS0706**](#valid-constraint-types): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class, or a type parameter.*
+- [**CS0706**](#valid-constraint-types): *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
 - [**CS0717**](#valid-constraint-types): *Static class: static classes cannot be used as constraints.*
 - [**CS0718**](#generic-type-usage-restrictions): *'type': static types cannot be used as type arguments.*
 - [**CS1720**](#generic-type-usage-restrictions): *Expression will always cause a System.NullReferenceException because the default value of 'generic type' is null.*
 - [**CS1763**](#generic-type-usage-restrictions): *'parameter' is of type 'type'. A default parameter value of a reference type other than string can only be initialized with null.*
 - [**CS1948**](#type-parameter-declaration-and-naming): *The range variable 'name' cannot have the same name as a method type parameter.*
 - [**CS1960**](#type-parameter-variance): *Invalid variance modifier. Only interface and delegate type parameters can be specified as variant.*
-- [**CS1961**](#type-parameter-variance): *Invalid variance: The type parameter must be validly variant on type.*
+- [**CS1961**](#type-parameter-variance): *Invalid variance: The type parameter must be covariantly valid on 'type'. 'type parameter' is contravariant.*
 - [**CS3024**](#valid-constraint-types): *Constraint type 'type' is not CLS-compliant.*
 - [**CS7002**](#type-argument-count-and-usage): *Unexpected use of a generic name.*
 - [**CS8322**](#generic-type-usage-restrictions): *Cannot pass argument with dynamic type to generic local function with inferred type arguments.*
@@ -224,10 +224,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 ## Type parameter declaration and naming
 
 - **CS0080**: *Constraints are not allowed on non-generic declarations.*
-- **CS0081**: *Type parameter declaration must be an identifier, not a type.*
+- **CS0081**: *Type parameter declaration must be an identifier not a type.*
 - **CS0412**: *Parameter: a parameter, local variable, or local function cannot have the same name as a method type parameter.*
 - **CS0693**: *Type parameter 'type parameter' has the same name as the type parameter from outer type 'type'.*
-- **CS0694**: *Type parameter has the same name as the containing type or method.*
+- **CS0694**: *Type parameter has the same name as the containing type, or method.*
 - **CS0699**: *'generic' does not define type parameter 'identifier'.*
 - **CS1948**: *The range variable 'name' cannot have the same name as a method type parameter.*
 - **CS8387**: *Type parameter 'type parameter' has the same name as the type parameter from outer method 'method'.*
@@ -246,7 +246,7 @@ For more information, see [Generic Type Parameters](../../programming-guide/gene
 
 ## Constraint declaration and ordering
 
-- **CS0401**: *The `new()` constraint must be the last constraint specified.*
+- **CS0401**: *The `new()` constraint must be the last restrictive constraint specified.*
 - **CS0406**: *The class type constraint 'constraint' must come before any other constraints.*
 - **CS0409**: *A constraint clause has already been specified for type parameter 'type parameter'. All of the constraints for a type parameter must be specified in a single where clause.*
 - **CS0449**: *The `class`, `struct`, `unmanaged`, `notnull`, and `default` constraints cannot be combined or duplicated, and must be specified first in the constraints list.*
@@ -274,11 +274,11 @@ For more information, see [Constraints on type parameters](../../programming-gui
 - **CS0701**: *'identifier' is not a valid constraint. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
 - **CS0702**: *Constraint cannot be special class.*
 - **CS0703**: *Inconsistent accessibility: constraint type is less accessible than declaration.*
-- **CS0706**: *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class, or a type parameter.*
+- **CS0706**: *Invalid constraint type. A type used as a constraint must be an interface, a non-sealed class or a type parameter.*
 - **CS0717**: *Static class: static classes cannot be used as constraints.*
 - **CS3024**: *Constraint type 'type' is not CLS-compliant.*
 
-A constraint must be an interface, a non-sealed class, or a type parameter. Certain types are invalid as constraints due to their special meaning in the .NET type system or because they can't be inherited.
+A constraint must be an interface, a non-sealed class or a type parameter. Certain types are invalid as constraints due to their special meaning in the .NET type system or because they can't be inherited.
 
 - Remove duplicate constraints (**CS0405**). Each constraint can only appear once in a constraint clause. If you have `where T : I, I`, remove the duplicate.
 - Use only non-sealed types as constraints (**CS0701**). Sealed classes, structs, and enums can't be inherited, so they serve no purpose as constraints. Use an interface that the desired types implement, or use a non-sealed base class.
@@ -292,11 +292,11 @@ For more information, see [Constraints on type parameters](../../programming-gui
 
 ## Constraint satisfaction and conversions
 
-- **CS0311**: *The type cannot be used as type parameter `T` in the generic type or method. There is no implicit reference conversion.*
-- **CS0312**: *The type cannot be used as type parameter in the generic type or method. The nullable type does not satisfy the constraint.*
-- **CS0313**: *The type cannot be used as type parameter in the generic type or method. The nullable type does not satisfy the constraint. Nullable types can not satisfy any interface constraints.*
-- **CS0314**: *The type cannot be used as the type parameter in the generic type or method. There is no boxing conversion or type parameter conversion.*
-- **CS0315**: *The type cannot be used as type parameter `T` in the generic type or method. There is no boxing conversion.*
+- **CS0311**: *The type cannot be used as type parameter `T` in the generic type or method. There is no implicit reference conversion from 'type1' to 'type2'.*
+- **CS0312**: *The type cannot be used as type parameter in the generic type or method. The nullable type does not satisfy the constraint of 'constraint'.*
+- **CS0313**: *The type cannot be used as type parameter in the generic type or method. The nullable type does not satisfy the constraint of 'constraint'. Nullable types can not satisfy any interface constraints.*
+- **CS0314**: *The type cannot be used as type parameter in the generic type or method. There is no boxing conversion or type parameter conversion from 'type' to 'constraint'.*
+- **CS0315**: *The type cannot be used as type parameter `T` in the generic type or method. There is no boxing conversion from 'type' to 'constraint'.*
 - **CS0452**: *The type 'type name' must be a reference type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.*
 - **CS0453**: *The type 'type name' must be a non-nullable value type in order to use it as parameter 'parameter name' in the generic type or method 'generic'.*
 - **CS8377**: *The type 'type' must be a non-nullable value type, along with all fields at any level of nesting, in order to use it as parameter 'parameter' in the generic type or method 'generic'.*
@@ -316,7 +316,7 @@ For more information, see [Constraints on type parameters](../../programming-gui
 ## Constraint conflicts and circular dependencies
 
 - **CS0454**: *Circular constraint dependency involving Type Parameter 1 and Type Parameter 2.*
-- **CS0455**: *Type parameter inherits conflicting constraints.*
+- **CS0455**: *Type parameter inherits conflicting constraints 'constraint1' and 'constraint2'.*
 - **CS0456**: *Type parameter 'type parameter 1' has the 'struct' constraint so 'type parameter 1' cannot be used as a constraint for 'type parameter 2'.*
 - **CS8379**: *Type parameter 'type parameter 1' has the 'unmanaged' constraint so 'type parameter 1' cannot be used as a constraint for 'type parameter 2'.*
 
@@ -362,7 +362,7 @@ For more information, see [Constraints on type parameters](../../programming-gui
 - **CS0224**: *A method with vararg cannot be generic, be in a generic type, or have a params parameter.*
 - **CS0305**: *Using the generic type requires N type arguments.*
 - **CS0306**: *The type may not be used as a type argument.*
-- **CS0307**: *The identifier is not a generic method. If you intended an expression list, use parentheses around the expression.*
+- **CS0307**: *The 'identifier' cannot be used with type arguments.*
 - **CS0308**: *The non-generic type-or-method cannot be used with type arguments.*
 - **CS7002**: *Unexpected use of a generic name.*
 - **CS8389**: *Omitting the type argument is not allowed in the current context.*
@@ -391,7 +391,7 @@ For more information, see [Generic Methods](../../programming-guide/generics/gen
 ## Type parameter variance
 
 - **CS1960**: *Invalid variance modifier. Only interface and delegate type parameters can be specified as variant.*
-- **CS1961**: *Invalid variance: The type parameter must be validly variant on type.*
+- **CS1961**: *Invalid variance: The type parameter must be covariantly valid on 'type'. 'type parameter' is contravariant.*
 - **CS8427**: *Enums, classes, and structures cannot be declared in an interface that has an 'in' or 'out' type parameter.*
 
 Variance modifiers (`in` for contravariance, `out` for covariance) control how you can use type parameters in interface and delegate declarations. Only interfaces and delegates support variance. A covariant (`out`) type parameter can only appear in output positions (return types), while a contravariant (`in`) type parameter can only appear in input positions (parameter types).
@@ -406,7 +406,7 @@ For more information, see [Covariance and Contravariance in Generics](../../../s
 
 - **CS0403**: *Cannot convert null to type parameter because it could be a non-nullable value type. Consider using `default(T)` instead.*
 - **CS0413**: *The type parameter cannot be used with the `as` operator because it does not have a class type constraint nor a `class` constraint.*
-- **CS0695**: *Type cannot implement both interfaces because they may unify for some type parameter substitutions.*
+- **CS0695**: *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
 - **CS0698**: *A generic type cannot derive from type because it is an attribute class.*
 - **CS0704**: *Cannot do non-virtual member lookup in 'type' because it is a type parameter.*
 - **CS0718**: *'type': static types cannot be used as type arguments.*

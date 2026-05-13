@@ -365,7 +365,7 @@ The new `Microsoft.Extensions.Caching.Memory.MemoryCache` meter publishes four o
 - `dotnet.cache.entries`
 - `dotnet.cache.estimated_size`
 
-Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache%23ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
+Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.%23ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
 
 ## Networking and transport security
 

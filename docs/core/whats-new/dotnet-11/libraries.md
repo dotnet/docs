@@ -207,7 +207,7 @@ For more information, see [DeflateStream and GZipStream write headers and footer
 
 ### Zstandard compression
 
-The Zstandard compression APIs, for example, <xref:System.IO.Compression.ZStandardStream> and <xref:System.IO.Compression.ZStandardEncoder>, are now part of the <xref:System.IO.Compression> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. The API surface is otherwise unchanged.
+The Zstandard compression APIs, for example, <xref:System.IO.Compression.ZstandardStream> and <xref:System.IO.Compression.ZstandardEncoder>, are now part of the <xref:System.IO.Compression> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. The API surface is otherwise unchanged.
 
 ### Tar archive format selection
 
@@ -326,19 +326,8 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 
 ## Caching and configuration
 
-- [Rate-limiting improvements](#rate-limiting-improvements)
 - [Configuration binding](#configuration-binding)
 - [MemoryCache OpenTelemetry metrics](#memorycache-opentelemetry-metrics)
-
-### Rate-limiting improvements
-
-The <xref:System.Threading.RateLimiting?displayProperty=fullName> class has a handful of fixes in .NET 11:
-
-- <xref:System.Threading.RateLimiting.FixedWindowRateLimiter> now reports a `RetryAfter` metadata value that points to the next window boundary, so callers and middleware can honor it without guessing.
-- `TokenBucketRateLimiter.AttemptAcquire(0)` no longer mishandles partial token refills.
-- `ChainedRateLimiter` now correctly forwards `IdleDuration` and replenishment behavior from its inner limiters.
-
-:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="RateLimitingRetryAfter":::
 
 ### Configuration binding
 
@@ -376,7 +365,7 @@ The new `Microsoft.Extensions.Caching.Memory.MemoryCache` meter publishes four o
 - `dotnet.cache.entries`
 - `dotnet.cache.estimated_size`
 
-Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
+Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache%23ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
 
 ## Networking and transport security
 

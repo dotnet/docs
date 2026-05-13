@@ -1,18 +1,13 @@
-using System;
-using System.Buffers;
+﻿using System.Buffers;
 using System.Diagnostics;
 using System.Formats.Tar;
 using System.Globalization;
-using System.IO;
 using System.IO.Compression;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
 using System.Text.RegularExpressions;
 using System.Text.Unicode;
-using System.Threading;
-using System.Threading.RateLimiting;
-using System.Threading.Tasks;
 using Microsoft.Win32.SafeHandles;
 
 static class LibrariesExamples
@@ -67,24 +62,6 @@ static class LibrariesExamples
         ReadOnlySpan<char> chars = "valid \uD83D\uDC4D end"; // valid UTF-16 (👍 emoji)
         bool ok = Utf16.IsValid(chars); // true
         // </UtfValidation>
-    }
-
-    static void RateLimitingRetryAfterExample()
-    {
-        // <RateLimitingRetryAfter>
-        var limiter = new FixedWindowRateLimiter(new FixedWindowRateLimiterOptions
-        {
-            PermitLimit = 10,
-            Window = TimeSpan.FromSeconds(1),
-            QueueLimit = 0,
-        });
-
-        RateLimitLease lease = limiter.AttemptAcquire();
-        if (!lease.IsAcquired && lease.TryGetMetadata(MetadataName.RetryAfter, out TimeSpan retry))
-        {
-            Console.WriteLine($"Rate limit exceeded. Retry after {retry}.");
-        }
-        // </RateLimitingRetryAfter>
     }
 
     static void Utf8JsonWriterResetExample()

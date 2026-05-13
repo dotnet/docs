@@ -15,7 +15,7 @@ On Unix, <xref:Microsoft.Win32.SafeHandles.SafeFileHandle.IsAsync?displayPropert
 
 ## Previous behavior
 
-Previously, `SafeFileHandle.IsAsync` on Unix returned `true` for regular files opened with `FileOptions.Asynchronous`, even though no `O_NONBLOCK` flag was set on the file descriptor (regular file I/O on Unix is inherently synchronous). For file descriptors that were genuinely non-blocking `IsAsync` incorrectly returned `false` on Unix.
+Previously, `SafeFileHandle.IsAsync` on Unix returned `true` for regular files opened with `FileOptions.Asynchronous`, even though no `O_NONBLOCK` flag was set on the file descriptor (regular file I/O on Unix is inherently synchronous). For file descriptors that were genuinely non-blocking, `IsAsync` incorrectly returned `false` on Unix.
 
 ```csharp
 using Microsoft.Win32.SafeHandles;

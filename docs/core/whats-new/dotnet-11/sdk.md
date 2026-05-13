@@ -100,6 +100,7 @@ The pack operation still proceeds with a warning to avoid breaking existing proj
 - [Fish shell completions](#fish-shell-completions)
 - [dotnet reference falls back to current directory](#dotnet-reference-falls-back-to-current-directory)
 - [Launch settings notice moved to stderr](#launch-settings-notice-moved-to-stderr)
+- [Other CLI improvements](#other-cli-improvements)
 
 ### Solution filter CLI support
 
@@ -178,6 +179,14 @@ Previously, these commands failed with `Could not find project or directory ''` 
 
 The `Using launch settings from ...` informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
 
+### Other CLI improvements
+
+- `dotnet format` now accepts `--framework` for multi-targeted projects.
+- `dotnet test` in Microsoft Testing Platform (MTP) mode now supports `--artifacts-path`.
+- `dotnet tool exec` and `dnx` no longer prompt for an extra approval when running tools.
+- `dotnet nuget <subcommand> --help` now correctly forwards to the NuGet CLI's help output instead of falling back to generic help.
+- `dotnet publish` no longer removes native DLLs on subsequent runs of single-file publish.
+
 ## Web assets and telemetry
 
 - [Asset groups for static web assets](#asset-groups-for-static-web-assets)
@@ -197,7 +206,6 @@ The `dotnet` CLI now uses OpenTelemetry (OTel) with Azure Monitor and OTLP expor
 
 - [NativeAOT entry point for the dotnet CLI](#nativeaot-entry-point-for-the-dotnet-cli)
 - [Partial Ready-to-Run for upstack tooling](#partial-ready-to-run-for-upstack-tooling)
-- [Other CLI improvements](#other-cli-improvements)
 
 ### NativeAOT entry point for the dotnet CLI
 
@@ -212,31 +220,6 @@ The goal is near-instant startup for the most common CLI invocations while prese
 ### Partial Ready-to-Run for upstack tooling
 
 A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `dotnet/maui`) declare a list of assemblies to be partially R2R-compiled and excluded from the composite image. The motivating scenario is precompiling generated XAML code in Debug builds to speed up F5 without paying the full crossgen cost for the rest of the app. App developers don't set this property directly—it's a hook the mobile workloads use in their targets.
-
-### Other CLI improvements
-
-- `dotnet format` now accepts `--framework` for multi-targeted projects.
-- `dotnet test` in Microsoft Testing Platform (MTP) mode now supports `--artifacts-path`.
-- `dotnet tool exec` and `dnx` no longer prompt for an extra approval when running tools.
-- `dotnet nuget <subcommand> --help` now correctly forwards to the NuGet CLI's help output instead of falling back to generic help.
-- `dotnet publish` no longer removes native DLLs on subsequent runs of single-file publish.
-
-## Breaking changes
-
-- [Mono launch target no longer set automatically](#mono-launch-target-no-longer-set-automatically)
-- [Template engine drops netstandard2.0](#template-engine-drops-netstandard20)
-
-.NET 11 includes some breaking changes in the SDK.
-
-### Mono launch target no longer set automatically
-
-Starting in .NET 11, the .NET SDK no longer automatically sets `mono` as the launch target for .NET Framework apps on Linux. If you rely on Mono for execution, update your launch configuration to specify `mono` explicitly.
-
-For more information, see [Mono launch target no longer set automatically](../../compatibility/sdk/11/mono-launch-target-removed.md).
-
-### Template engine drops netstandard2.0
-
-All template engine projects (`Microsoft.TemplateEngine.Abstractions`, `Core`, `Core.Contracts`, `Edge`, `IDE`, `Orchestrator.RunnableProjects`, `Utils`, and `TemplateLocalizer.Core`) now target only the current .NET minimum, current .NET, and .NET Framework tool current versions. Tools that consume the template engine libraries directly need to retarget. The `dotnet new` CLI is unaffected.
 
 ## See also
 

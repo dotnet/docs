@@ -151,9 +151,9 @@ signtool [command] [options] [file_name | ...]
 |Exit code|Description|  
 |---------------|-----------------|  
 |0|Execution was successful.|  
-|1|Execution has failed.|  
-|2|Execution has completed with warnings.|  
-|3|Execution failed with RuntimeException.|
+|1|Execution failed.|  
+|2|Execution completed with warnings.|  
+|3|Execution failed with an exception.|
 
 ## Examples  
 

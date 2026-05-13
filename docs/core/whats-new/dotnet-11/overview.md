@@ -13,8 +13,6 @@ This article describes new features in .NET 11. It was last updated for Preview 
 
 .NET 11 is currently in preview. The final release is expected in November 2026. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
-Your feedback is important and appreciated. If you have questions or comments, use the discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news).
-
 ## .NET runtime
 
 The .NET 11 runtime includes:
@@ -22,9 +20,6 @@ The .NET 11 runtime includes:
 - Updated minimum hardware requirements for x86/x64 and Arm64 architectures, requiring more modern instruction sets to improve performance and reduce maintenance complexity.
 - Runtime-native async (Runtime Async), which produces cleaner stack traces and lower overhead. Runtime Async no longer requires `<EnablePreviewFeatures>true</EnablePreviewFeatures>` for projects that target `net11.0`. The runtime libraries themselves are compiled with `runtime-async=on`.
 - JIT improvements for bounds check elimination, redundant checked context removal, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. There are also new Arm SVE2 intrinsics and improved hardware-intrinsic cost modeling.
-- `Comparer<T>.Default` and `EqualityComparer<T>.Default` specialized in ReadyToRun images, delivering up to 20× faster collection operations.
-- WebAssembly improvements, including WebCIL V1 as the default for CoreCLR WASM builds, native re-link support, and better debugging symbols.
-- Support for more than 1024 CPUs on Linux.
 
 For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
@@ -33,11 +28,6 @@ For more information, see [What's new in the .NET 11 runtime](runtime.md).
 The .NET 11 libraries include new APIs for:
 
 - <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, `SafeProcessHandle` lifecycle methods, and tighter handle control.
-- Span-based Deflate, ZLib, and GZip encoder/decoder APIs for zero-allocation compression.
-- Floating-point hex formatting and parsing for exact IEEE-754 round-trips.
-- UTF validation and invalid-subsequence search in <xref:System.Text.Unicode?displayProperty=fullName>.
-- Rate-limiting improvements, including `RetryAfter` support in `FixedWindowRateLimiter`.
-- String and character manipulation, including Rune-based operations in <xref:System.String> and BFloat16 support in <xref:System.BitConverter>.
 - Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
 - System.Text.Json improvements, including generic type info retrieval, `JsonNamingPolicy.PascalCase`, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, and `Utf8JsonWriter.Reset` with options.
 - Built-in OpenTelemetry metrics for `MemoryCache`.
@@ -55,16 +45,10 @@ The .NET 11 SDK includes:
 
 - Smaller SDK installers on Linux and macOS through assembly deduplication, with additional savings by skipping crossgen for `DotnetTools`-only assemblies.
 - Improved [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) code analyzer with reduced noise and clearer diagnostic messages.
-- Analyzer bug fixes for [CA1515](../../../fundamentals/code-analysis/quality-rules/ca1515.md), [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md), and [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md).
-- A new NETSDK1235 warning for custom `.nuspec` files used with PackAsTool.
 - Support for creating and editing solution filters (`.slnf`) from the `dotnet sln` CLI.
 - File-based app support for `#:include` to split apps across multiple files.
 - A new `dotnet run -e` option to pass environment variables from the command line.
 - `dotnet watch` improvements, including Aspire app-host integration, automatic crash recovery, and device selection for MAUI and mobile projects.
-- Fish shell completions matching Bash, Zsh, and PowerShell.
-- `dotnet reference add/remove` falls back to the current directory when no `--project` is supplied.
-- Launch settings notice moved to `stderr` so script output capture works cleanly.
-- Asset Groups for Static Web Assets.
 - OpenTelemetry replaces Application Insights for CLI telemetry.
 - Foundation for a NativeAOT entry point for the `dotnet` CLI.
 
@@ -83,9 +67,17 @@ C# 15 includes these features:
 
 For information about new C# features, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md).
 
-## Breaking changes
+## EF Core
 
-For information about breaking changes in .NET 11, see [Breaking changes in .NET 11](../../compatibility/11.md).
+See [What's new in EF Core for .NET 11](/ef/core/what-is-new/ef-core-11.0/whatsnew).
+
+## Windows Forms
+
+See [What's new in Windows Forms for .NET 11](/dotnet/desktop/winforms/whats-new/net110).
+
+## WPF
+
+See [What's new in WPF in .NET 11](/dotnet/desktop/wpf/whats-new/net110).
 
 ## See also
 

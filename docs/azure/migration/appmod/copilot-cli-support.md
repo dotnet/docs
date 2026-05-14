@@ -85,7 +85,7 @@ If you're already in a Copilot CLI session, use the `/agent` command to switch t
 Select `github-copilot-modernization:modernize` from the list.
 
 > [!IMPORTANT]
-> You must select the `github-copilot-modernization:modernize` agent before running any modernization prompts. Without selecting the agent, Copilot CLI uses the default agent which does not have access to the modernization tools.
+> You must select the `github-copilot-modernization:modernize` agent before running any modernization prompts. Without selecting the agent, Copilot CLI uses the default agent which cannot leverage the full multi-agent orchestration, enterprise playbook support, and specialized migration capabilities provided by the plugin.
 
 ### Run a modernization prompt
 

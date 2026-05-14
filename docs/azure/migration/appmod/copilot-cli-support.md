@@ -65,26 +65,43 @@ The plugin provides an autonomous, multi-agent workflow that assesses your .NET 
 
 ## Start a modernization task
 
-1. Navigate to your .NET project folder and start Copilot CLI:
+### Option 1: Start with the agent directly
 
-    ```bash
-    cd /path/to/your/dotnet-project
-    copilot --agent=github-copilot-modernization:modernize
-    ```
+Navigate to your .NET project folder and start Copilot CLI with the modernization agent:
 
-1. Describe what you want in natural language:
+```bash
+cd /path/to/your/dotnet-project
+copilot --agent=github-copilot-modernization:modernize
+```
 
-    ```text
-    copilot> modernize my application
-    ```
+### Option 2: Select the agent from inside Copilot CLI
 
-    Or be more specific:
+If you're already in a Copilot CLI session, use the `/agent` command to switch to the modernization agent:
 
-    ```text
-    copilot> modernize my .NET application for Azure
-    copilot> migrate this app from local SQL Server to Azure SQL Database
-    copilot> fix CVE vulnerabilities in my project
-    ```
+```text
+/agent
+```
+
+Select `github-copilot-modernization:modernize` from the list.
+
+> [!IMPORTANT]
+> You must select the `github-copilot-modernization:modernize` agent before running any modernization prompts. Without selecting the agent, Copilot CLI uses the default agent which does not have access to the modernization tools.
+
+### Run a modernization prompt
+
+Once the agent is active, describe what you want in natural language:
+
+```text
+copilot> modernize my application
+```
+
+Or be more specific:
+
+```text
+copilot> modernize my .NET application for Azure
+copilot> migrate this app from local SQL Server to Azure SQL Database
+copilot> fix CVE vulnerabilities in my project
+```
 
 For unattended execution, use the `--allow-all` flag:
 

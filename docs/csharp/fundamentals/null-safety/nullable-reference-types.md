@@ -21,7 +21,7 @@ Three building blocks work together:
 - *Null-state analysis* tracks whether the value of an expression is *not-null* or *maybe-null* at each point in your code.
 - *Attributes* on APIs describe more nuanced contracts, such as "this argument can be `null`, but the return value is null only when the argument is null."
 
-The compiler combines these signals to produce diagnostics. Warnings on a non-nullable variable mean the variable might receive `null`. Warnings on a nullable variable mean the code might *dereference* it without a null check. *Dereference* means to use the value the variable refers to—for example, to call a method on it (`variable.Method()`), read a property (`variable.Property`), or index into it (`variable[0]`). Dereferencing `null` throws an exception at run time. Either kind of warning means the code's behavior doesn't match its stated design.
+The compiler combines these signals to produce diagnostics. Warnings on a non-nullable variable mean the variable might receive `null`. Warnings on a nullable variable mean the code might *dereference* it without a null check. *Dereference* means to use the value the variable refers to—for example, to call a method on it (`variable.Method()`), read a property (`variable.Property`), or index into it (`variable[0]`). Dereferencing a variable that has a value of `null` throws an exception at run time. Either kind of warning means the code's behavior doesn't match its stated design.
 
 ## Nullable context
 
@@ -33,7 +33,7 @@ For migration approaches that enable the feature gradually, file by file or warn
 
 ## Express intent with annotations
 
-When you enable the feature, every reference type variable is *non-nullable* by default. Append `?` to declare a *nullable* reference type:
+When the feature is enabled, every reference type variable is *non-nullable* by default. Append `?` to declare a *nullable* reference type:
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="Annotations":::
 
@@ -55,7 +55,7 @@ The compiler tracks the *null-state* of every expression. The state is one of tw
 - *not-null* — the expression is known to be not `null`.
 - *maybe-null* — the expression might be `null`.
 
-A local variable's null-state can change on any line of code. The rule is simple: after an assignment, the variable takes on the null-state of the expression on the right-hand side; after a check against `null`, the variable takes on the null-state implied by the branch you're in. For example, assigning a non-null literal or checking that a variable isn't `null` makes it *not-null*, while assigning `null`, the result of a method whose return type is nullable, or a variable that's currently *maybe-null* makes it *maybe-null*:
+A local variable's null-state is updated as the compiler analyzes your code. Two things change it: **assignments** and **null checks**. After an assignment, the variable's null-state matches the expression on the right-hand side—if the expression is null or nullable, the variable becomes maybe-null; if the expression is a non-null literal, the variable becomes not-null. After a null check, the variable's null-state reflects whichever branch is taken.:
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="NullStateTracking":::
 
@@ -111,7 +111,9 @@ Two patterns can leave a non-nullable reference holding `null` without a warning
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="DefaultStructPitfall":::
 
-The fields hold `null` at run time, but the compiler doesn't warn. The same pitfall extends to *arrays of structs*: a new array initializes every element to the struct's default value, so each element's non-nullable reference fields start as `null`. If you must use a struct, prefer [required members](../../language-reference/keywords/required.md) (members the caller must initialize through an object initializer) or a parameterized constructor that callers must invoke, and populate every element of any array you create.
+The fields hold `null` at run time, but the compiler doesn't warn.
+
+The same pitfall extends to *arrays of structs*: a new array initializes every element to the struct's default value, so each element's non-nullable reference fields start as `null`. If you must use a struct, prefer [required members](../../language-reference/keywords/required.md) (members the caller must initialize through an object initializer) or a parameterized constructor that callers must invoke, and populate every element of any array you create.
 
 **Arrays of references.** A new array of a non-nullable reference type contains all `null` elements until you assign each one:
 

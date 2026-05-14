@@ -91,6 +91,7 @@ internal static class Examples
     // <NullForgiving>
     public static void NullForgiving()
     {
+        // Provide the name "ada", knowing it always returns a new string.
         string? maybeName = LookUpName("ada");
 
         // The compiler can't prove maybeName isn't null. The developer can.

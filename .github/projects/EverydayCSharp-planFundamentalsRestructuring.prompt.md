@@ -3,24 +3,52 @@
 **TL;DR:** Break the ~91-article restructuring into ~31 small, independently mergeable PRs organized in proposed TOC order. Each PR touches ≤10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
 
 **Conventions for every PR:**
+
+The Fundamentals audience is a developer who knows another language and is learning C#. An alternative audience is a new developer that has only months of experience with C# as their first programming language. They don't yet have C# vocabulary, can't recognize C#-specific idioms on sight, and don't share the project context an experienced C# developer takes for granted. The conventions below are grouped by the audience-derived principle they serve so each one's *why* stays visible.
+
+*Sample readability (P1) — write samples that a new C# developer can read line-by-line:*
+
+- All code examples are included from external snippet files (no inline code blocks), and every article has a corresponding snippet project.
+- All snippet code uses the full "Everyday C#" feature set per the feature tables.
+- Prefer file-based apps over larger project-based samples for simplicity and ease of understanding, unless a feature requires a more complex setup.
+- For any construct the sample isn't teaching, pick the most familiar form: use `while` or `foreach` before `for` (reserve `for` for explicit index iteration); use a regular method before a static factory unless the article is about factories.
+- Add a brief intent comment on any line whose purpose isn't immediately obvious — for example, lines like `_ = something;` or a literal argument with hidden significance.
+- When a sample illustrates a decision, show *both* branches and include the result as a trailing comment (`// => …`) so readers correlate code to output without running it.
+- Never place consecutive code snippets. They are hard to read and harder for readers to follow. Either intersperse explanatory text between snippets or combine related snippets into a single example.
+
+*Terminology (P2) — treat every C# term as new until the article defines it:*
+
+- Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the proposed TOC. Remember that this is "fundamentals" content. Any term likely to be unfamiliar to a new C# developer should be defined inline at first use — one short sentence — with a link to the deeper reference. This applies to terms the author considers obvious (for example, *dereference*, *type parameter* vs. *type argument*, *primary constructor*), not just terms the author considers new.
+- When a symbol's meaning depends on context (`T?` differs between value types, constrained reference types, and unconstrained generics), spell out which form you mean before listing rules. Lead a constraints discussion with a one-line model of what is being constrained.
+- Definitions are less important for concepts that aren't related to the C# language. The goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
+- Cross reference liberally. It's assumed readers are familiar with content in the "Get started" section, so links there should be minimal and scoped to recommendations for beginners to start there instead. Links and cross references should encourage readers to learn more and dive deeper into the fundamental concepts covered in this section.
+- If and only if a feature was first added in one of the last three released versions (C# 12–14), mention when it was first introduced.
+
+*Reader's project frame (P3) — default to a current project, and teach how to verify settings:*
+
+- Lead with the current-project assumption. "New projects from recent templates set `<Nullable>enable</Nullable>` in the project file" is the default framing for any setup or configuration statement — no opening hedge.
+- Immediately follow such statements with a one- or two-sentence pointer that shows existing-project readers where to verify the setting in their own `.csproj` and how to enable it if it's missing.
+- Reserve full migration guidance for the migration articles. When the existing-project path is more than a setting check (for example, planning a phased rollout), link out rather than inlining the strategy.
+- When a feature is recommended as the fix for a diagnostic, run the code and confirm the diagnostic actually clears in the scenario being recommended. Reviewer skepticism ("does that actually work here?") usually means the verification wasn't done.
+- When recommending a modern feature over an older alternative, always include a justification — state *why* the recommended approach is preferred. Never describe older features as obsolete or deprecated (Goal 9).
+
+*Structural hygiene that supports the principles above:*
+
+- Each article follows concept → example → concept → example structure. The concept discussion should include motivating scenarios for the feature or concept being covered.
+- One topic per paragraph. A new case (for example, "the same pitfall also applies to arrays of structs") starts a new paragraph.
+- Promote a bold paragraph-lead to `###` when it anchors more than one paragraph of content. Inline bold disappears in the TOC and is harder to scan.
+- Replace long "the rule is simple" prose with a short structured rule — a one-sentence lead, bold trigger words, then a two- or three-bullet list or a labeled example.
+- Prefer articles that are between a 5- and 10-minute read (roughly 1000–2000 words). Longer and shorter articles are allowed, but should be the exception.
+
+*Mechanics — TOC, metadata, links, redirects:*
+
 - Update `toc.yml` incrementally so new content is navigable immediately.
 - Add redirect entries for every moved file (use the "/.openpublishing/redirection.csharp.json" file).
-- All snippet code uses the full "Everyday C#" feature set per the feature tables.
-- Prefer file based apps over larger project-based samples for simplicity and ease of understanding, unless a feature requires a more complex setup.
-- All code examples are included from external snippet files (no inline code blocks), and every article has a corresponding snippet project.
-- Each article follows concept → example → concept → example structure. The concept discussion should include motivating scenarios for the feature or concept being covered.
-- Prefer articles that are between a 5 and 10 minute read (roughly 1000–2000 words). Longer and shorter artiles are allowed, but should be the exception.
-- Cross reference liberally. However, it's assumed that readers are familiar with content in the "Get started" section. Links to that section should be minimal, and possibly scoped to recommendations for beginners to start there instead. Links and cross references should encourage readers to learn more and dive deeper into the fundamental concepts covered in this section.
-- If and only if a feature was first added in one of the last three released versions (C# 12 - 14) mention the first it was first introduced.
 - Every article must include a tip near the top that identifies where the article sits in the four-tier content structure (*Get started* → *Fundamentals* → *Deep dives* → *Reference*), describes who it's written for, and routes readers to the right tier based on their experience level (Goal 1).
-- Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the proposed TOC. Remember that this is "fundamentals" content. Any term likely to be unfamiliar to a new C# developer should be defined. When defining a concept, link to articles that provide more detail. Definitions are less important for concepts that aren't related to the C# language: Remember the goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
-- Similarly, define all terms that may be unfamiliar to the reader when they are first introduced. Link to articles that provide more detail on these terms. Remember that the audience for Fundamentals articles is new to C# and the .NET ecosystem. They are likely not to be familiar with all C# terminology, or all computer science terminology. Provide clear definitions and context.
 - Set the `ms.topic` metadata value in each article's YAML front matter to match the article's content type (`overview`, `tutorial`, `concept`, `how-to`, `troubleshooting`, or `reference`).
 - After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links). This is mandatory for every article before it can be merged to ensure consistency and completeness across the Fundamentals section.
 - Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
-- When recommending a modern feature over an older alternative, always include a justification—state *why* the recommended approach is preferred. Never describe older features as obsolete or deprecated (Goal 9).
 - Do not add links to files that will be created in future PRs until those files are live. For example, if PR 3 creates the `fundamentals/types/enums.md` article, then earlier PRs should not link to that file until PR 3 is merged. This may require some temporary duplication of content or placeholders for links, but it will prevent broken links in merged PRs. Instead, when an article is created, add appropriate links to it in earlier articles as needed to connect the content together.
-- Never place consecutive code snippets. They are hard to read and harder for readers to follow. Either intersperse explanatory text between snippets or combine related snippets into a single example.
 
 ## Phase A: Program Structure (§7)
 

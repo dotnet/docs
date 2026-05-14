@@ -213,4 +213,3 @@ The [CA1863](../../../fundamentals/code-analysis/quality-rules/ca1863.md) code a
 - [Standard TimeSpan format strings](standard-timespan-format-strings.md)
 - [Custom TimeSpan format strings](custom-timespan-format-strings.md)
 - [Enumeration format strings](enumeration-format-strings.md)
-- [CA1863: Use CompositeFormat](../../../fundamentals/code-analysis/quality-rules/ca1863.md)

@@ -1,19 +1,19 @@
 ---
-title: Modernize applications using GitHub Copilot modernization in Copilot CLI
-description: Overview of modernizing Java and .NET applications using GitHub Copilot modernization plugin in Copilot CLI.
+title: Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
+description: Overview of migrating .NET applications to Azure using GitHub Copilot modernization plugin in Copilot CLI.
 ms.topic: concept-article
-ms.custom: devx-track-java, devx-track-dotnet
+ms.custom: devx-track-dotnet
 ms.date: 05/14/2026
 ms.reviewer: jessiehuang
 ---
 
-# Modernize applications using GitHub Copilot modernization in Copilot CLI
+# Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
 
 ## Overview
 
-Learn how to modernize Java and .NET applications using the **GitHub Copilot modernization** plugin in [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
+Learn how to migrate .NET applications to Azure using the **GitHub Copilot modernization** plugin in [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
 
-The plugin provides an autonomous, multi-agent workflow that assesses your application, generates an executable modernization plan, and carries out the migration — all from the terminal. It supports Java upgrades, Azure migrations, CVE vulnerability fixes, and application rearchitecture.
+The plugin provides an autonomous, multi-agent workflow that assesses your .NET application, generates an executable modernization plan, and carries out the migration — all from the terminal. It supports Azure migrations, CVE vulnerability fixes, and application rearchitecture.
 
 > [!NOTE]
 > GitHub Copilot CLI is available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
@@ -23,9 +23,8 @@ The plugin provides an autonomous, multi-agent workflow that assesses your appli
 
 | Capability | Description |
 |---|---|
-| **Java upgrades** | Java version upgrades (8 → 17 → 21), Spring Boot 2.x → 3.x, javax → jakarta migration, deprecated API migration |
-| **Azure migration** | Migrate Java and .NET applications to Azure services (Service Bus, Azure SQL, Redis, Key Vault, Application Insights, Managed Identity) |
-| **CVE and vulnerability fixing** | Scan and fix CVE vulnerabilities in Maven and NuGet dependencies |
+| **Azure migration** | Migrate .NET applications to Azure services (Service Bus, Azure SQL, Redis, Key Vault, Application Insights, Managed Identity) |
+| **CVE and vulnerability fixing** | Scan and fix CVE vulnerabilities in NuGet dependencies |
 | **Application rearchitecture** | Structural rewrites such as monolith-to-microservices decomposition, legacy UI modernization, and module extraction |
 | **.NET modernization** | Assess and migrate .NET applications to Azure, including NuGet security audits and ASP.NET-to-Azure migrations |
 
@@ -33,8 +32,7 @@ The plugin provides an autonomous, multi-agent workflow that assesses your appli
 
 - [Install Copilot CLI](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli).
 - A GitHub Copilot subscription. See [Copilot plans](https://github.com/features/copilot/plans?ref_product=copilot).
-- For Java projects: JDK 8+ and Maven or Gradle installed.
-- For .NET projects: .NET SDK installed.
+- .NET SDK installed.
 
 ## Install the plugin
 
@@ -67,10 +65,10 @@ The plugin provides an autonomous, multi-agent workflow that assesses your appli
 
 ## Start a modernization task
 
-1. Navigate to your project folder and start Copilot CLI:
+1. Navigate to your .NET project folder and start Copilot CLI:
 
     ```bash
-    cd /path/to/your/project
+    cd /path/to/your/dotnet-project
     copilot --agent=github-copilot-modernization:modernize
     ```
 
@@ -83,10 +81,9 @@ The plugin provides an autonomous, multi-agent workflow that assesses your appli
     Or be more specific:
 
     ```text
-    copilot> upgrade this app to Java 21
-    copilot> migrate this Spring Boot app to Azure
-    copilot> fix CVE vulnerabilities in my project
     copilot> modernize my .NET application for Azure
+    copilot> migrate this app from local SQL Server to Azure SQL Database
+    copilot> fix CVE vulnerabilities in my project
     ```
 
 For unattended execution, use the `--allow-all` flag:
@@ -101,7 +98,7 @@ The plugin uses a three-phase workflow that runs automatically. You don't need t
 
 ### Phase 1: Assessment
 
-- Auto-detects the project language (Java or .NET) and uses the appropriate analysis tools.
+- Detects .NET project structure and uses the appropriate analysis tools.
 - Analyzes dependencies, frameworks, and versions.
 - Identifies modernization opportunities and risks.
 - Saves results to `.github/modernize/assessment/`.
@@ -114,7 +111,7 @@ The plugin uses a three-phase workflow that runs automatically. You don't need t
 
 ### Phase 3: Execution
 
-- Routes tasks to specialized executor agents based on language and task type.
+- Routes tasks to specialized executor agents based on task type.
 - Each executor queries a knowledge base for migration patterns.
 - Monitors progress with automatic retry on failure.
 - Creates detailed per-task commits for review.
@@ -124,7 +121,7 @@ The orchestrator supports multiple entry points depending on your intent:
 | Workflow | When it activates | What happens |
 |---|---|---|
 | **Broad intent** | "modernize my application" | Full assess → plan → execute pipeline |
-| **Specific task** | "upgrade to Java 21" | Skips assessment, goes straight to plan → execute |
+| **Specific task** | "migrate from SQL Server to Azure SQL" | Skips assessment, goes straight to plan → execute |
 | **Execute existing plan** | "execute the plan" | Skips assessment and planning, runs an existing plan |
 | **Headless** | Unattended execution with `--allow-all` | Same as broad intent with no user prompts |
 
@@ -144,7 +141,7 @@ Place markdown files in the `.github/modernize/playbook/` directory of your proj
 | Policy type | Examples |
 |---|---|
 | **Target architectures** | Compute services (App Service, AKS, Container Apps), database choices (Azure SQL, Cosmos DB), messaging platforms (Service Bus, Event Hubs) |
-| **Upgrade standards** | Target Java version (17 or 21), Spring Boot version (3.x), .NET version, framework migration paths |
+| **Upgrade standards** | Target .NET version, framework migration paths |
 | **Guardrails** | Prohibited technologies, security requirements, compliance constraints, authentication standards |
 | **Coding standards** | Naming conventions, authentication patterns, logging frameworks |
 | **Migration strategy** | Scope boundaries, 6R classification preferences (rehost vs. refactor vs. rearchitect), phasing strategy |
@@ -157,10 +154,10 @@ Create a file at `.github/modernize/playbook/enterprise-standards.md`:
 # Enterprise Modernization Standards
 
 ## Target Architecture
-- All Java applications must target Java 21 and Spring Boot 3.x
 - Use Azure Container Apps for microservices deployments
-- Use Azure Service Bus for all asynchronous messaging (replace RabbitMQ, ActiveMQ)
-- Use Azure Database for PostgreSQL Flexible Server for relational data
+- Use Azure Service Bus for all asynchronous messaging
+- Use Azure SQL Database for relational data
+- Use Azure Blob Storage for file storage
 
 ## Security & Compliance
 - All services must authenticate using Managed Identity — no connection strings or passwords in code
@@ -168,7 +165,6 @@ Create a file at `.github/modernize/playbook/enterprise-standards.md`:
 
 ## Guardrails
 - Do not use Azure Functions for long-running processes
-- Do not introduce Kafka — use Event Hubs with Kafka protocol if needed
 - All infrastructure must be defined in Bicep
 ```
 
@@ -178,32 +174,31 @@ No fixed naming or structure is required. The orchestrator infers the purpose of
 
 Without a playbook, the plugin applies sensible defaults:
 
-- **Java**: Upgrade to 17+ (21 only if explicitly requested); Spring Boot 3.x with javax → jakarta migration.
 - **Azure**: Managed Identity for authentication; managed database services for relational data.
-- **Messaging**: RabbitMQ/ActiveMQ → Azure Service Bus; Kafka → Azure Event Hubs.
+- **Messaging**: On-premises messaging → Azure Service Bus.
 - **Infrastructure**: Bicep by default.
 
 ## Common scenarios
 
-### Java version upgrade
-
-```bash
-copilot --agent=github-copilot-modernization:modernize
-copilot> upgrade this app to Java 21
-```
-
-### Azure migration (Java)
-
-```bash
-copilot --agent=github-copilot-modernization:modernize
-copilot> migrate this Spring Boot app to Azure
-```
-
-### Azure migration (.NET)
+### Azure migration
 
 ```bash
 copilot --agent=github-copilot-modernization:modernize
 copilot> modernize my .NET application for Azure
+```
+
+### Migrate from local SQL Server to Azure SQL
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> migrate this app from local SQL Server to Azure SQL Database with managed identity
+```
+
+### Migrate from file I/O to Azure Blob Storage
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> migrate this app from local file I/O to Azure Blob Storage
 ```
 
 ### CVE and security fix
@@ -220,7 +215,7 @@ copilot --agent=github-copilot-modernization:modernize
 copilot> rearchitect my monolithic application into microservices
 ```
 
-### Full modernization (upgrade + migration)
+### Full modernization
 
 ```bash
 copilot --agent=github-copilot-modernization:modernize
@@ -244,8 +239,7 @@ copilot plugin install github-copilot-modernization@github-copilot-modernization
 
 ### Assessment fails: no application found
 
-- For Java projects: verify `pom.xml` or `build.gradle` exists in your project root.
-- For .NET projects: verify `.csproj` or `.sln` exists in your project root.
+- Verify `.csproj` or `.sln` exists in your project root.
 - Ensure you are in the correct directory before starting Copilot CLI.
 
 ### MCP server issues

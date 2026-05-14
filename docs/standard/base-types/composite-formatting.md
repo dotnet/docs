@@ -186,7 +186,7 @@ The following example demonstrates the use of width in formatting. The arguments
 
 ## Improve performance with CompositeFormat
 
-Starting with .NET 8, use the <xref:System.Text.CompositeFormat> class to improve the performance of composite string formatting when the same format string is used repeatedly. Parsing a composite format string at runtime is expensive, and <xref:System.Text.CompositeFormat> pre-parses it once when you create the instance, so the formatting code in your hot path can run much faster.
+Starting with .NET 8, use the <xref:System.Text.CompositeFormat> class to improve the performance of composite string formatting when the same format string is used repeatedly. Parsing a composite format string at runtime is expensive, and <xref:System.Text.CompositeFormat> pre-parses it once when you create the instance, so the formatting code in your performance-critical code path can run much faster.
 
 To use `CompositeFormat`:
 

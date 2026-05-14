@@ -2,8 +2,14 @@
 title: Errors and warnings associated with source generators and interceptors
 description: You might see these errors and warnings when code is compiled with source generators and interceptors. They indicate some condition where the compiler can't run the source generator, or the generate code isn't compilable.
 f1_keywords:
+  - "CS8032"
+  - "CS8033"
+  - "CS8034"
+  - "CS8040"
+  - "CS8700"
   - "CS8784"
   - "CS8785"
+  - "CS8850"
   - "CS9057"
   - "CS9067"
   - "CS9137"
@@ -42,8 +48,14 @@ f1_keywords:
   - "CS9235"
   - "CS9270"
 helpviewer_keywords:
+  - "CS8032"
+  - "CS8033"
+  - "CS8034"
+  - "CS8040"
+  - "CS8700"
   - "CS8784"
   - "CS8785"
+  - "CS8850"
   - "CS9057"
   - "CS9067"
   - "CS9137"
@@ -121,8 +133,14 @@ The following errors are generated when source generators or interceptors are lo
 
 The following warnings are generated when source generators or interceptors are loaded during a compilation:
 
+- [**CS8032**](#analyzer-compatibility): *An instance of analyzer 'analyzer' cannot be created from 'assembly' : 'reason'.*
+- [**CS8033**](#analyzer-compatibility): *The assembly 'assembly' does not contain any analyzers.*
+- [**CS8034**](#analyzer-compatibility): *Unable to load Analyzer assembly 'assembly' : 'reason'*
+- [**CS8040**](#analyzer-compatibility): *Skipping some types in analyzer assembly 'assembly' due to a ReflectionTypeLoadException : 'exception'.*
+- [**CS8700**](#analyzer-compatibility): *Multiple analyzer config files cannot be in the same directory ('directory').*
 - [**CS8784**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
 - [**CS8785**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
+- [**CS8850**](#analyzer-compatibility): *The assembly 'assembly' containing type 'type' references .NET Framework, which is not supported.*
 - [**CS9057**](#analyzer-compatibility): *Analyzer assembly cannot be used because it references a newer version of the compiler than the currently running version.*
 - [**CS9067**](#analyzer-compatibility): *Analyzer reference specified multiple times.*
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*

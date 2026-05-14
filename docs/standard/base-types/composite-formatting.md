@@ -196,7 +196,7 @@ To use `CompositeFormat`:
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="compositeformat":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="compositeformat":::
 
-The [CA1863](../../../fundamentals/code-analysis/quality-rules/ca1863.md) code analyzer rule detects places in your code where you can use `CompositeFormat` to improve performance.
+The [CA1863](../../fundamentals/code-analysis/quality-rules/ca1863.md) code analyzer rule detects places in your code where you can use `CompositeFormat` to improve performance.
 
 ## See also
 

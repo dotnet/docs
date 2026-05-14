@@ -2,6 +2,10 @@
 title: Errors and warnings associated with source generators and interceptors
 description: You might see these errors and warnings when code is compiled with source generators and interceptors. They indicate some condition where the compiler can't run the source generator, or the generate code isn't compilable.
 f1_keywords:
+  - "CS8784"
+  - "CS8785"
+  - "CS9057"
+  - "CS9067"
   - "CS9137"
   - "CS9138"
   - "CS9139"
@@ -37,9 +41,11 @@ f1_keywords:
   - "CS9234"
   - "CS9235"
   - "CS9270"
-  - "CS9057"
-  - "CS9067"
 helpviewer_keywords:
+  - "CS8784"
+  - "CS8785"
+  - "CS9057"
+  - "CS9067"
   - "CS9137"
   - "CS9138"
   - "CS9139"
@@ -75,8 +81,6 @@ helpviewer_keywords:
   - "CS9234"
   - "CS9235"
   - "CS9270"
-  - "CS9057"
-  - "CS9067"
 ms.date: 01/27/2026
 ---
 # Errors and warnings associated with source generators and interceptors

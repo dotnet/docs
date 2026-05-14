@@ -284,8 +284,6 @@ f1_keywords:
   - "CS8771"
   - "CS8772"
   - "CS8783" # local function
-  - "CS8784" # source generator
-  - "CS8785"
   - "CS8830" # feature / version
   - "CS8831"
   - "CS8888" # feature / version

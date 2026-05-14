@@ -97,7 +97,7 @@ ms.date: 01/27/2026
 ---
 # Errors and warnings associated with source generators and interceptors
 
-The following errors are generated when source generators or interceptors are loaded during a compilation:
+The following errors occur when the compiler loads source generators or interceptors during compilation:
 
 - [**CS9137**](#interceptors-are-experimental): *The 'interceptors' feature is not enabled in this namespace. Add `<Features>InterceptorsPreview</Features>` to your project.*
 - [**CS9138**](#incorrect-interceptor-declaration): *Method 'method' cannot be used as an interceptor because its containing type has type parameters.*
@@ -131,7 +131,7 @@ The following errors are generated when source generators or interceptors are lo
 - [**CS9234**](#incorrect-interceptor-declaration): *Cannot intercept a call in file 'file' because a matching file was not found in the compilation.*
 - [**CS9235**](#incorrect-interceptor-declaration): *The data argument to InterceptsLocationAttribute refers to an invalid position in file 'file'.*
 
-The following warnings are generated when source generators or interceptors are loaded during a compilation:
+The following warnings occur when the compiler loads source generators or interceptors during compilation:
 
 - [**CS8032**](#analyzer-and-source-generator-compatibility): *An instance of analyzer 'analyzer' cannot be created from 'assembly' : 'reason'.*
 - [**CS8033**](#analyzer-and-source-generator-compatibility): *The assembly 'assembly' does not contain any analyzers.*
@@ -154,7 +154,7 @@ These errors and warnings follow these themes:
 
 - **CS9137**: *The 'interceptors' feature is not enabled in this namespace. Add `<Features>InterceptorsPreview</Features>` to your project.*
 
-To use interceptors, add the `<Features>InterceptorsPreview</Features>` element to your project file within a `<PropertyGroup>` section (**CS9137**), because interceptors are an experimental feature that isn't enabled by default. This explicit opt-in is required because the interceptors feature is subject to breaking changes or removal in future releases, and the compiler needs confirmation that you understand the risks before allowing its use. For more information about interceptors and their capabilities, see [Interceptors](../../whats-new/csharp-12.md#interceptors) in the C# 12 features documentation.
+To use interceptors, add the `<Features>InterceptorsPreview</Features>` element to your project file within a `<PropertyGroup>` section (**CS9137**). Interceptors are an experimental feature and aren't enabled by default. This explicit opt-in is required because the interceptors feature is subject to breaking changes or removal in future releases. The compiler needs confirmation that you understand the risks before allowing its use. For more information about interceptors and their capabilities, see [Interceptors](../../whats-new/csharp-12.md#interceptors) in the C# 12 features documentation.
 
 ## Signature mismatch
 
@@ -210,7 +210,7 @@ To correct mapping errors, ensure your `InterceptsLocationAttribute` contains va
 
 ## Incorrect interceptor declaration
 
-The following errors indicate issues with interceptor declarations, including problems with the `InterceptsLocationAttribute` format or violations of interceptor rules:
+The following errors indicate problems with interceptor declarations, including issues with the `InterceptsLocationAttribute` format or violations of interceptor rules:
 
 - **CS9138**: *Method 'method' cannot be used as an interceptor because its containing type has type parameters.*
 - **CS9146**: *An interceptor method must be an ordinary member method.*
@@ -232,7 +232,7 @@ To correct interceptor declaration errors, follow these rules for valid intercep
 - Format the `InterceptsLocationAttribute` data argument correctly (**CS9231**). The attribute requires specifically structured data that encodes file path and position information. Ensure your source generator produces data in the expected format matching the current interceptors specification.
 - Use version '1' in your `InterceptsLocationAttribute` (**CS9232**), because it's the latest supported version. Update your source generator to output version 1 format attributes rather than unsupported version numbers.
 - Ensure unique file paths in your compilation (**CS9233**, **CS9234**). When the compilation contains duplicate file paths, rename or reorganize files to make each path unique. Verify that the file path in the attribute matches a file actually included in the compilation.
-- Validate position data points to valid code locations (**CS9235**). The line and character numbers must reference a valid interception point within the specified file. Regenerate the attribute if the source file has changed or if the position falls outside the file's bounds.
+- Validate position data points to valid code locations (**CS9235**). The line and character numbers must reference a valid interception point within the specified file. Regenerate the attribute if the source file changed or if the position falls outside the file's bounds.
 - Declare non-generic interceptor methods in non-generic types (**CS9138**). Interceptors can't be declared in types that have type parameters. If you need to intercept a generic method, create a non-generic interceptor in a non-generic containing type that works with the specific constructed type.
 - Make interceptors ordinary member methods (**CS9146**). Interceptors can't be operators, constructors, finalizers, properties, or indexers. Declare your interceptor as a regular static or instance method.
 - Intercept actual method invocations, not expressions (**CS9151**, **CS9207**). You can only intercept calls to ordinary member methods that are being invoked. You can't intercept method groups, delegates, or methods referenced without being called. Ensure the interceptable location identifies an actual method call.
@@ -240,7 +240,7 @@ To correct interceptor declaration errors, follow these rules for valid intercep
 - Don't intercept `nameof` operators (**CS9160**). The `nameof` operator doesn't invoke methods at runtime, so it can't be intercepted. Only intercept actual method calls that execute at runtime.
 - Remove `UnmanagedCallersOnlyAttribute` from interceptors (**CS9161**). Interceptors must be callable from managed code and can't be marked with `UnmanagedCallersOnlyAttribute`. Remove the attribute from your interceptor method declaration.
 - Declare interceptors within a namespace (**CS9206**). Interceptors can't be declared in the global namespace and must be contained within at least one namespace declaration. Wrap your interceptor class in a namespace.
-- Resolve duplicate file paths at the compilation level (**CS9152**). When multiple files share the same path in the compilation, the compiler can't determine which file to intercept in. Ensure build configuration produces unique file paths or use a different organization strategy for your source files.
+- Resolve duplicate file paths at the compilation level (**CS9152**). When multiple files share the same path in the compilation, the compiler can't determine which file to intercept. Ensure build configuration produces unique file paths or use a different organization strategy for your source files.
 
 ## Source generator failures
 
@@ -267,15 +267,15 @@ To correct these warnings, follow this guidance:
 - **CS9057**: *Analyzer assembly 'assembly' cannot be used because it references version 'version' of the compiler, which is newer than the currently running version 'currentVersion'.*
 - **CS9067**: *Analyzer reference 'reference' specified multiple times*
 
-These warnings and errors indicate issues with loading, instantiating, or configuring analyzer and source generator assemblies. Because source generators are loaded as analyzer assemblies, these diagnostics apply to both analyzers and source generators.
+These warnings and errors indicate problems with loading, instantiating, or configuring analyzer and source generator assemblies. Because source generators load as analyzer assemblies, these diagnostics apply to both analyzers and source generators.
 
-To correct these issues, follow this guidance:
+To correct these problems, follow this guidance:
 
-- Upgrade your .NET SDK or compiler version to match the analyzer's requirements, or use an older version of the analyzer package that is compatible with your current compiler (**CS9057**). This error occurs when an analyzer assembly targets a newer Roslyn API version than what the running compiler provides.
+- Upgrade your .NET SDK or compiler version to match the analyzer's requirements, or use an older version of the analyzer package that is compatible with your current compiler (**CS9057**). This error occurs when an analyzer assembly targets a newer Roslyn API version than the running compiler provides.
 - Remove duplicate analyzer references from your project (**CS9067**). Check your project file for repeated `<Analyzer>` or `<PackageReference>` elements that include the same analyzer assembly through different paths. Transitive package dependencies can also cause duplicates.
-- Verify the analyzer assembly is a valid .NET assembly and is not corrupted (**CS8034**). If the assembly can't be loaded at all, ensure the file exists at the referenced path and was built for a compatible target framework. Rebuild or reinstall the NuGet package to get a fresh copy.
+- Verify the analyzer assembly is a valid .NET assembly and isn't corrupted (**CS8034**). If the assembly can't be loaded at all, ensure the file exists at the referenced path and was built for a compatible target framework. Rebuild or reinstall the NuGet package to get a fresh copy.
 - Ensure the analyzer type has a public parameterless constructor (**CS8032**). The compiler instantiates analyzers by calling their default constructor. If the constructor throws an exception or requires parameters, the analyzer can't be created.
 - Verify the referenced assembly actually exports analyzer or source generator types (**CS8033**). An assembly referenced as an analyzer must contain types that implement `DiagnosticAnalyzer` or `ISourceGenerator`/`IIncrementalGenerator`. If the assembly is a runtime dependency rather than an analyzer, reference it as a normal project or package reference instead.
-- Resolve type loading issues in the analyzer assembly by ensuring all its dependencies are available (**CS8040**). A `ReflectionTypeLoadException` typically means the assembly references types from other assemblies that can't be found. Make sure all required dependencies are included in the analyzer's NuGet package.
+- Resolve type loading problems in the analyzer assembly by ensuring all its dependencies are available (**CS8040**). A `ReflectionTypeLoadException` typically means the assembly references types from other assemblies that can't be found. Make sure all required dependencies are included in the analyzer's NuGet package.
 - Ensure analyzer config files (`.editorconfig` or `.globalconfig`) are unique per directory (**CS8700**). The compiler doesn't allow multiple analyzer configuration files in the same directory because the precedence rules would be ambiguous. Merge the files or remove the duplicate.
 - Update the analyzer or source generator to target .NET Standard or modern .NET instead of .NET Framework (**CS8850**). Assemblies that reference .NET Framework aren't supported in the modern .NET compiler toolchain. If you maintain the analyzer, retarget it to `netstandard2.0`. If it's a third-party package, upgrade to a version that supports modern .NET.

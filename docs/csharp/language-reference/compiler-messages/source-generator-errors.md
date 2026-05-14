@@ -133,16 +133,16 @@ The following errors are generated when source generators or interceptors are lo
 
 The following warnings are generated when source generators or interceptors are loaded during a compilation:
 
-- [**CS8032**](#analyzer-compatibility): *An instance of analyzer 'analyzer' cannot be created from 'assembly' : 'reason'.*
-- [**CS8033**](#analyzer-compatibility): *The assembly 'assembly' does not contain any analyzers.*
-- [**CS8034**](#analyzer-compatibility): *Unable to load Analyzer assembly 'assembly' : 'reason'*
-- [**CS8040**](#analyzer-compatibility): *Skipping some types in analyzer assembly 'assembly' due to a ReflectionTypeLoadException : 'exception'.*
-- [**CS8700**](#analyzer-compatibility): *Multiple analyzer config files cannot be in the same directory ('directory').*
-- [**CS8784**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
-- [**CS8785**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
-- [**CS8850**](#analyzer-compatibility): *The assembly 'assembly' containing type 'type' references .NET Framework, which is not supported.*
-- [**CS9057**](#analyzer-compatibility): *Analyzer assembly cannot be used because it references a newer version of the compiler than the currently running version.*
-- [**CS9067**](#analyzer-compatibility): *Analyzer reference specified multiple times.*
+- [**CS8032**](#analyzer-and-source-generator-compatibility): *An instance of analyzer 'analyzer' cannot be created from 'assembly' : 'reason'.*
+- [**CS8033**](#analyzer-and-source-generator-compatibility): *The assembly 'assembly' does not contain any analyzers.*
+- [**CS8034**](#analyzer-and-source-generator-compatibility): *Unable to load Analyzer assembly 'assembly' : 'reason'*
+- [**CS8040**](#analyzer-and-source-generator-compatibility): *Skipping some types in analyzer assembly 'assembly' due to a ReflectionTypeLoadException : 'exception'.*
+- [**CS8700**](#analyzer-and-source-generator-compatibility): *Multiple analyzer config files cannot be in the same directory ('directory').*
+- [**CS8784**](#source-generator-failures): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
+- [**CS8785**](#source-generator-failures): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
+- [**CS8850**](#analyzer-and-source-generator-compatibility): *The assembly 'assembly' containing type 'type' references .NET Framework, which is not supported.*
+- [**CS9057**](#analyzer-and-source-generator-compatibility): *Analyzer assembly cannot be used because it references a newer version of the compiler than the currently running version.*
+- [**CS9067**](#analyzer-and-source-generator-compatibility): *Analyzer reference specified multiple times.*
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - [**CS9158**](#signature-mismatch): *Nullability of reference types in return type doesn't match interceptable method.*
 - [**CS9159**](#signature-mismatch): *Nullability of reference types in type of parameter doesn't match interceptable method.*
@@ -165,7 +165,7 @@ The following errors and warnings indicate a mismatch between the interceptor me
 - **CS9149**: *Interceptor must not have a `this` parameter because method does not have a `this` parameter.*
 - **CS9155**: *Cannot intercept call with `M` because it is not accessible within `V`.*
 - **CS9156**: *Cannot intercept call to `M` with `V` because of a difference in 'scoped' modifiers or `[UnscopedRef]` attributes.*
-- **CS9177**]: *Interceptor must be non-generic or have matching arity.*
+- **CS9177**: *Interceptor must be non-generic or have matching arity.*
 - **CS9178**: *Method must be non-generic to match*
 
 In addition, the following warnings indicate a mismatch in the signatures of the interceptor and the interceptable method:
@@ -242,14 +242,40 @@ To correct interceptor declaration errors, follow these rules for valid intercep
 - Declare interceptors within a namespace (**CS9206**). Interceptors can't be declared in the global namespace and must be contained within at least one namespace declaration. Wrap your interceptor class in a namespace.
 - Resolve duplicate file paths at the compilation level (**CS9152**). When multiple files share the same path in the compilation, the compiler can't determine which file to intercept in. Ensure build configuration produces unique file paths or use a different organization strategy for your source files.
 
-## Analyzer compatibility
+## Source generator failures
 
-The following warnings indicate issues with analyzer or source generator assemblies:
+- **CS8784**: *Generator 'generator' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
+- **CS8785**: *Generator 'generator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
 
+These warnings indicate that a source generator threw an unhandled exception during compilation. Source generators run as part of the build pipeline, and a failure prevents the generator from contributing its output to the compilation. For more information about implementing source generators, see [Source Generators](../../roslyn-sdk/source-generators-overview.md).
+
+To correct these warnings, follow this guidance:
+
+- Examine the full exception details in the build output to identify the root cause (**CS8784**, **CS8785**). The warning message includes the exception type, message, and stack trace, which can help you or the generator author diagnose the failure.
+- Ensure all required dependencies for the source generator are available in the project (**CS8784**). Initialization failures often occur when the generator can't locate a required assembly or resource during startup. Verify that the generator's NuGet package is correctly installed and all transitive dependencies are resolved.
+- Report the failure to the source generator's maintainer if the exception originates in third-party generator code (**CS8784**, **CS8785**). Include the full exception details from the build output in your bug report.
+- If you authored the source generator, add exception handling within your `Initialize` or `Execute` methods to catch and report errors gracefully (**CS8784**, **CS8785**).
+
+## Analyzer and source generator compatibility
+
+- **CS8032**: *An instance of analyzer 'analyzer' cannot be created from 'assembly' : 'reason'.*
+- **CS8033**: *The assembly 'assembly' does not contain any analyzers.*
+- **CS8034**: *Unable to load Analyzer assembly 'assembly' : 'reason'*
+- **CS8040**: *Skipping some types in analyzer assembly 'assembly' due to a ReflectionTypeLoadException : 'exception'.*
+- **CS8700**: *Multiple analyzer config files cannot be in the same directory ('directory').*
+- **CS8850**: *The assembly 'assembly' containing type 'type' references .NET Framework, which is not supported.*
 - **CS9057**: *Analyzer assembly cannot be used because it references a newer version of the compiler than the currently running version.*
 - **CS9067**: *Analyzer reference specified multiple times.*
 
-These warnings occur when there are compatibility issues with analyzer assemblies:
+These warnings and errors indicate issues with loading, instantiating, or configuring analyzer and source generator assemblies. Because source generators are loaded as analyzer assemblies, these diagnostics apply to both analyzers and source generators.
 
-- **CS9057** is generated when an analyzer assembly references a version of the Roslyn compiler that is newer than the one currently running. This prevents the analyzer from loading because it might depend on APIs or behaviors not available in the current compiler version. To resolve this, either upgrade your compiler/SDK to match the analyzer's requirements or use a version of the analyzer compatible with your current compiler version.
-- **CS9067** warns when the same analyzer assembly is referenced multiple times in your project. This typically happens when an analyzer is included through multiple paths or package references. While not an error, duplicate references can impact build performance and might cause unexpected behavior. Remove the duplicate references to resolve this warning.
+To correct these issues, follow this guidance:
+
+- Upgrade your .NET SDK or compiler version to match the analyzer's requirements, or use an older version of the analyzer package that is compatible with your current compiler (**CS9057**). This error occurs when an analyzer assembly targets a newer Roslyn API version than what the running compiler provides.
+- Remove duplicate analyzer references from your project (**CS9067**). Check your project file for repeated `<Analyzer>` or `<PackageReference>` elements that include the same analyzer assembly through different paths. Transitive package dependencies can also cause duplicates.
+- Verify the analyzer assembly is a valid .NET assembly and is not corrupted (**CS8034**). If the assembly can't be loaded at all, ensure the file exists at the referenced path and was built for a compatible target framework. Rebuild or reinstall the NuGet package to get a fresh copy.
+- Ensure the analyzer type has a public parameterless constructor (**CS8032**). The compiler instantiates analyzers by calling their default constructor. If the constructor throws an exception or requires parameters, the analyzer can't be created.
+- Verify the referenced assembly actually exports analyzer or source generator types (**CS8033**). An assembly referenced as an analyzer must contain types that implement `DiagnosticAnalyzer` or `ISourceGenerator`/`IIncrementalGenerator`. If the assembly is a runtime dependency rather than an analyzer, reference it as a normal project or package reference instead.
+- Resolve type loading issues in the analyzer assembly by ensuring all its dependencies are available (**CS8040**). A `ReflectionTypeLoadException` typically means the assembly references types from other assemblies that can't be found. Make sure all required dependencies are included in the analyzer's NuGet package.
+- Ensure analyzer config files (`.editorconfig` or `.globalconfig`) are unique per directory (**CS8700**). The compiler doesn't allow multiple analyzer configuration files in the same directory because the precedence rules would be ambiguous. Merge the files or remove the duplicate.
+- Update the analyzer or source generator to target .NET Standard or modern .NET instead of .NET Framework (**CS8850**). Assemblies that reference .NET Framework aren't supported in the modern .NET compiler toolchain. If you maintain the analyzer, retarget it to `netstandard2.0`. If it's a third-party package, upgrade to a version that supports modern .NET.

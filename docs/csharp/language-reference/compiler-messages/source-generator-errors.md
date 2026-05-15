@@ -155,7 +155,7 @@ These errors and warnings follow these themes:
 - **CS8784**: *Generator 'generator' failed to initialize. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'exception' with message 'message'.*
 - **CS8785**: *Generator 'generator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'exception' with message 'message'.*
 
-These warnings indicate that a source generator threw an unhandled exception during compilation. Source generators run as part of the build pipeline, and a failure prevents the generator from contributing its output to the compilation. For more information about implementing source generators, see [Source Generators](../../roslyn-sdk/source-generators-overview.md).
+These warnings indicate that a source generator threw an unhandled exception during compilation. Source generators run as part of the build pipeline, and a failure prevents the generator from contributing its output to the compilation. For more information about implementing source generators, see [Source Generators](../../roslyn-sdk/index.md#source-generators).
 
 To correct these warnings, follow this guidance:
 

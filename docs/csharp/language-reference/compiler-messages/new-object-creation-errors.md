@@ -78,4 +78,4 @@ Target-typed `new` expressions (introduced in C# 9) let you omit the type name w
 - Move the `new()` expression to a context where a target type is available (**CS8753**). Target-typed `new` is valid only in contexts where the compiler can determine a type, such as variable declarations with an explicit type, assignment expressions, return statements with a known return type, or argument positions with a known parameter type. You can't use `new()` in contexts like `var x = new();` where no target type exists.
 - Provide an explicit type for the `new` expression when no target type can be inferred (**CS8754**). This error occurs when you use `new()` in a position where the compiler has no way to determine what type to construct. Replace `new()` with `new ExplicitType()`, or declare the variable with an explicit type rather than `var`.
 
-For more information, see [Target-typed new expressions](../operators/new-operator.md#target-typed-new) and [C# 9 - Target-typed new expressions](../../whats-new/csharp-9.md#target-typed-new-expressions).
+For more information, see [Target-typed new expressions](../operators/new-operator.md#target-typed-new).

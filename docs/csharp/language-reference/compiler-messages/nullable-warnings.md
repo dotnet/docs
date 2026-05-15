@@ -240,7 +240,7 @@ The nullable context has two independent flags that control different aspects:
 
 For detailed information about nullable contexts and migration strategies, see:
 
-- [Nullable reference types overview](../../fundamentals/null-safety/nullable-reference-types.md#nullable-context)
+- [Nullable reference types](../builtin-types/nullable-reference-types.md)
 - [Update a codebase with nullable reference types](../../advanced-topics/update-applications/nullable-migration-strategies.md)
 
 ## Incorrect annotation syntax

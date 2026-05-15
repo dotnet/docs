@@ -103,7 +103,7 @@ The **nullable annotation context** determines the compiler's behavior. There ar
   - Reference type variables without the `?` suffix are non-nullable reference types.
   - You can use the null forgiving operator, `!`, but it has no effect.
 
-You can set the nullable annotation context and nullable warning context for a project by using the [`<Nullable>` element](language-reference/compiler-options/language.md) in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings it emits. The following table shows the allowable values and summarizes the contexts they specify.
+You can set the nullable annotation context and nullable warning context for a project by using the [`<Nullable>` element](../compiler-options/language.md) in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings it emits. The following table shows the allowable values and summarizes the contexts they specify.
 
 | Context | Dereference warnings | Assignment warnings | Reference types | `?` suffix | `!` operator |
 | - | - | - | - | - |
@@ -163,11 +163,11 @@ These nine combinations give you fine-grained control over the diagnostics the c
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in by using the [`#nullable`](language-reference/preprocessor-directives.md#nullable-context) preprocessor directive.
+> Generators can opt-in by using the [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directive.
 
 By default, nullable annotation and warning flags are **disabled**. That default means your existing code compiles without changes and without generating any new warnings. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in all project templates, setting these flags to **enabled**.
 
-These options provide two distinct strategies to [update an existing codebase](nullable-migration-strategies.md) to use nullable reference types.
+These options provide two distinct strategies to [update an existing codebase](../../advanced-topics/update-applications/nullable-migration-strategies.md) to use nullable reference types.
 
 ## Setting the nullable context
 

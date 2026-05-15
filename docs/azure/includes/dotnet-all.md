@@ -478,7 +478,7 @@
 | MCP Template Server | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-x64/0.0.9) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.2.0) |  |  |
-| OpenTelemetry Profiler | NuGet [1.0.0-beta9](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta9) |  |  |
+| OpenTelemetry Profiler | NuGet [1.0.1-beta.1](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.1-beta.1) |  |  |
 | Speech CLI | NuGet [1.50.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.50.0) |  |  |
 | Speech Extension Embedded SR | NuGet [1.50.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.50.0) |  |  |
 | Speech Extension Embedded TTS | NuGet [1.50.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.50.0) |  |  |

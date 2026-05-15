@@ -559,7 +559,7 @@ items:
     href: ./compiler-messages/new-and-object-creation-errors.md
     displayName: >
       new, object creation, target-typed new,
-      CS8752, CS8753, CS8754
+      CS0144, CS0712, CS1526, CS8181, CS8386, CS8752, CS8753, CS8754
   - name: Asynchronous methods
     href: ./compiler-messages/async-await-errors.md
     displayName: >
@@ -905,8 +905,6 @@ items:
       href: ../misc/cs0140.md
     - name: CS0143
       href: ../misc/cs0143.md
-    - name: CS0144
-      href: ../misc/cs0144.md
     - name: CS0145
       href: ../misc/cs0145.md
     - name: CS0146
@@ -1179,8 +1177,6 @@ items:
       href: ../misc/cs0709.md
     - name: CS0711
       href: ../misc/cs0711.md
-    - name: CS0712
-      href: ../misc/cs0712.md
     - name: CS0713
       href: ../misc/cs0713.md
     - name: CS0714
@@ -1337,8 +1333,6 @@ items:
       href: ../misc/cs1524.md
     - name: CS1525
       href: ../misc/cs1525.md
-    - name: CS1526
-      href: ../misc/cs1526.md
     - name: CS1527
       href: ../misc/cs1527.md
     - name: CS1528

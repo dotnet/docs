@@ -31,97 +31,51 @@ This article covers the following compiler errors and warnings:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
-- [**CS0144**](#anchor-tbd): *Cannot create an instance of the abstract type or interface 'type'*
-- [**CS0712**](#anchor-tbd): *Cannot create an instance of the static class 'type'*
-- [**CS1526**](#anchor-tbd): *A new expression requires an argument list or (), [], or {} after type*
-- [**CS8181**](#anchor-tbd): *'new' cannot be used with tuple type. Use a tuple literal expression instead.*
-- [**CS8386**](#anchor-tbd): *Invalid object creation*
-- [**CS8752**](#anchor-tbd): *The type 'type' may not be used as the target type of new()*
-- [**CS8753**](#anchor-tbd): *Use of new() is not valid in this context*
-- [**CS8754**](#anchor-tbd): *There is no target type for 'expression'*
+- [**CS0144**](#types-that-cannot-be-instantiated): *Cannot create an instance of the abstract type or interface 'type'*
+- [**CS0712**](#types-that-cannot-be-instantiated): *Cannot create an instance of the static class 'type'*
+- [**CS1526**](#new-expression-syntax-errors): *A new expression requires an argument list or (), [], or {} after type*
+- [**CS8181**](#new-expression-syntax-errors): *'new' cannot be used with tuple type. Use a tuple literal expression instead.*
+- [**CS8386**](#new-expression-syntax-errors): *Invalid object creation*
+- [**CS8752**](#target-typed-new-expressions): *The type 'type' may not be used as the target type of new()*
+- [**CS8753**](#target-typed-new-expressions): *Use of new() is not valid in this context*
+- [**CS8754**](#target-typed-new-expressions): *There is no target type for 'expression'*
 
-## CS0144
+## Types that cannot be instantiated
 
-Cannot create an instance of the abstract class or interface 'interface'
+- **CS0144**: *Cannot create an instance of the abstract type or interface 'type'*
+- **CS0712**: *Cannot create an instance of the static class 'type'*
 
-You cannot create an instance of an [abstract](../keywords/abstract.md) class or an [interface](../keywords/interface.md). For more information, see [Interfaces](../../fundamentals/types/interfaces.md).
+The `new` operator can only create instances of concrete, non-static types. The language prohibits instantiating abstract classes, interfaces, and static classes because these types are incomplete or aren't designed to have instances.
 
-The following sample generates CS0144:
+- Create a concrete class that derives from the abstract class, or create a class that implements the interface, then instantiate that concrete type (**CS0144**). You can't use `new` directly on an `abstract` class or an `interface` because they don't provide complete implementations. If you own the type, you can also remove the `abstract` modifier to make the class directly instantiable.
+- Remove the `new` expression and access the static class members directly through the class name (**CS0712**). Static classes exist solely to group static members and can't be instantiated. If you need an instance, remove the `static` modifier from the class declaration.
 
-```csharp
-// CS0144.cs
-interface MyInterface
-{
-}
-public class MyClass
-{
-   public static void Main()
-   {
-      MyInterface myInterface = new MyInterface ();   // CS0144
-   }
-}
-```
+For more information, see [abstract](../keywords/abstract.md), [interface](../keywords/interface.md), and [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
-### How to fix violations
+## `new` expression syntax errors
 
-You can solve this problem by implementing one of the two following solutions:
+- **CS1526**: *A new expression requires an argument list or (), [], or {} after type*
+- **CS8181**: *'new' cannot be used with tuple type. Use a tuple literal expression instead.*
+- **CS8386**: *Invalid object creation*
 
-1. Change the type declaration so that it's not abstract: Either remove the abstract keyword from the class declaration, or change the type from an interface to a class.
+These errors occur when the syntax of a `new` expression is malformed or when you use `new` with a type that requires a different creation syntax.
 
-2. Create a type that's derived from the abstract class or that implements the interface.
+- Add an argument list `()`, array dimensions `[]`, or an initializer `{}` after the type name in a `new` expression (**CS1526**). The `new` operator requires one of these to indicate how the object is constructed. For example, write `new MyClass()` instead of `new MyClass`.
+- Replace `new (int, string)(...)` with a tuple literal expression like `(1, "hello")` (**CS8181**). Tuple types use a dedicated literal syntax rather than the `new` operator. To create a tuple, use parenthesized values directly: `(int X, string Y) point = (1, "hello");`.
+- Ensure the `new` expression targets a valid constructible type (**CS8386**). This error occurs when the compiler can't determine a valid object creation from the syntax. Verify you're using a type name that supports construction, and that the expression is syntactically complete.
 
-## CS0712
+For more information, see [new operator](../operators/new-operator.md) and [Tuple types](../builtin-types/value-tuples.md).
 
-Cannot create an instance of the static class 'static class'
+## Target-typed `new` expressions
 
-It is not possible to create instances of static classes. Static classes are designed to contain static fields and methods, but may not be instantiated.
+- **CS8752**: *The type 'type' may not be used as the target type of new()*
+- **CS8753**: *Use of new() is not valid in this context*
+- **CS8754**: *There is no target type for 'expression'*
 
-### Example
+Target-typed `new` expressions (introduced in C# 9) let you omit the type name when the compiler can infer it from context, as in `MyClass x = new();`. These errors occur when the compiler can't determine a valid target type or when the inferred type isn't constructible.
 
-The following sample generates CS0712:
+- Use an explicit type name instead of target-typed `new()` when the target type is an interface, abstract class, static class, or other non-constructible type (**CS8752**). Target-typed `new()` infers the type from the left-hand side, but the inferred type must be a concrete, instantiable type. Write the full `new ConcreteType()` instead.
+- Move the `new()` expression to a context where a target type is available (**CS8753**). Target-typed `new` is valid only in contexts where the compiler can determine a type, such as variable declarations with an explicit type, assignment expressions, return statements with a known return type, or argument positions with a known parameter type. You can't use `new()` in contexts like `var x = new();` where no target type exists.
+- Provide an explicit type for the `new` expression when no target type can be inferred (**CS8754**). This error occurs when you use `new()` in a position where the compiler has no way to determine what type to construct. Replace `new()` with `new ExplicitType()`, or declare the variable with an explicit type rather than `var`.
 
-```csharp
-// CS0712.cs
-public static class SC
-{
-}
-
-public class CMain
-{
-    public static void Main()
-    {
-        SC sc = new SC();  // CS0712
-    }
-}
-```
-
-## CS1526
-
-A new expression requires (), [], or {} after type
-
-The [new](../operators/new-operator.md) operator, used to dynamically allocate memory for an object, was not specified correctly.
-
-### Example
-
-The following sample shows how to use `new` to allocate space for an array and an object.
-
-```csharp
-// CS1526.cs
-public class y
-{
-    public static int globalCounter = 0;
-    public int instanceCounter = 0;
-}
-
-public class z
-{
-    public static void Main()
-    {
-        y yInstance = new y;   // CS1526
-        y[] yArray = new y[10];   // Array of Ys
-
-        for (int i = 0; i < yArray.Length; i++)
-            yArray[i] = new y();   // an object of type y
-    }
-}
-```
+For more information, see [Target-typed new expressions](../operators/new-operator.md#target-typed-new) and [C# 9 - Target-typed new expressions](../../whats-new/csharp-9.md#target-typed-new-expressions).

@@ -31,8 +31,8 @@ This article covers the following compiler errors and warnings:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
-- [**CS0144**](#types-that-cannot-be-instantiated): *Cannot create an instance of the abstract type or interface 'type'*
-- [**CS0712**](#types-that-cannot-be-instantiated): *Cannot create an instance of the static class 'type'*
+- [**CS0144**](#types-that-cant-be-instantiated): *Cannot create an instance of the abstract type or interface 'type'*
+- [**CS0712**](#types-that-cant-be-instantiated): *Cannot create an instance of the static class 'type'*
 - [**CS1526**](#new-expression-syntax-errors): *A new expression requires an argument list or (), [], or {} after type*
 - [**CS8181**](#new-expression-syntax-errors): *'new' cannot be used with tuple type. Use a tuple literal expression instead.*
 - [**CS8386**](#new-expression-syntax-errors): *Invalid object creation*

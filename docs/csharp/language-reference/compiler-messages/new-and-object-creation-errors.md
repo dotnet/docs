@@ -40,7 +40,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8753**](#target-typed-new-expressions): *Use of new() is not valid in this context*
 - [**CS8754**](#target-typed-new-expressions): *There is no target type for 'expression'*
 
-## Types that cannot be instantiated
+## Types that can't be instantiated
 
 - **CS0144**: *Cannot create an instance of the abstract type or interface 'type'*
 - **CS0712**: *Cannot create an instance of the static class 'type'*

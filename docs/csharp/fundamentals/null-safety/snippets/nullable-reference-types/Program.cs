@@ -46,8 +46,13 @@ internal static class Examples
 
     public static void DesignIntent()
     {
-        Person p = new("Ada", "Lovelace") { MiddleName = "King" };
-        Console.WriteLine(p);
+        Person p1 = new("Ada", "Lovelace") { MiddleName = "King" };
+        Console.WriteLine(p1);
+        // Output: Ada King Lovelace
+
+        Person p2 = new("Grace", "Hopper");
+        Console.WriteLine(p2);
+        // Output: Grace Hopper
     }
     // </DesignIntent>
 
@@ -57,17 +62,12 @@ internal static class Examples
         string? message = null;
 
         // Warning: dereference of a possibly null reference.
-        // Console.WriteLine(message.Length);
+        Console.WriteLine(message.Length);
 
-        string? originalMessage = message;
         message = "Hello, World!";
 
         // No warning: the compiler tracks that message is now not-null.
         Console.WriteLine(message.Length);
-
-        // Warning: originalMessage might be null.
-        // Console.WriteLine(originalMessage.Length);
-        _ = originalMessage;
     }
     // </NullStateTracking>
 
@@ -80,12 +80,15 @@ internal static class Examples
 
     public static void FlowAnalysis(Node start)
     {
-        for (Node? current = start; current is not null; current = current.Parent)
+        Node? current = start;
+        while (current is not null)
         {
             // Inside the loop, the compiler knows current is not-null.
             Console.WriteLine(current.Name);
+
+            current = current.Parent;
         }
-    }
+   }
     // </FlowAnalysis>
 
     // <NullForgiving>

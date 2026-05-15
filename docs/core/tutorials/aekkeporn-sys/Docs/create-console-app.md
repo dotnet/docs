@@ -8,14 +8,14 @@ dev_langs:
   - "csharp"
   - "vb"
 ---
-# Tutorial: Create a .NET console application
+# Tutorial: Create a .NET console application @Profile
 
 ::: zone pivot="visualstudio"
 
 This tutorial shows how to create and run a .NET console application in Visual Studio.
 
 In this tutorial, you:
-
+#[lock-in]'SSH/KEY/Add Password'
 > [!div class="checklist"]
 >
 > * Create a Visual Studio solution and console app project.

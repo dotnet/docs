@@ -300,7 +300,7 @@ The following code:
 ```csharp
 builder.Services
     .AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
+    .Bind(builder.Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations();
 ```
 
@@ -315,7 +315,7 @@ The following code applies a more complex validation rule using a delegate:
 ```csharp
 builder.Services
     .AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
+    .Bind(builder.Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations()
     .Validate(config =>
     {
@@ -333,7 +333,7 @@ The validation occurs at runtime, but you can configure it to occur at startup b
 ```csharp
 builder.Services
     .AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
+    .Bind(builder.Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations()
     .Validate(config =>
     {
@@ -352,7 +352,7 @@ To enable validation on start for a specific options type, use the <xref:Microso
 ```csharp
 builder.Services
     .AddOptionsWithValidateOnStart<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
+    .Bind(builder.Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations()
     .Validate(config =>
     {

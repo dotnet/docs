@@ -1,7 +1,8 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 11/20/2025
+ms.date: 05/15/2026
+ai-usage: ai-assisted
 ---
 
 # .NET environment variables
@@ -210,6 +211,8 @@ This section describes the following environment variables:
 - [`DOTNET_CLI_CONTEXT_*`](#dotnet_cli_context_)
 - [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`](#dotnet_cli_workload_update_notify_disable)
 - [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`](#dotnet_cli_workload_update_notify_interval_hours)
+- [`DOTNET_SDK_VULNERABILITY_CHECK_DISABLE`](#dotnet_sdk_vulnerability_check_disable)
+- [`DOTNET_SDK_VULNERABILITY_CHECK_INTERVAL_HOURS`](#dotnet_sdk_vulnerability_check_interval_hours)
 - [`DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`](#dotnet_skip_workload_integrity_check)
 - [`DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`](#dotnet_tools_allow_manifest_in_root)
 - [`DOTNET_HOST_TRACE`](#dotnet_host_trace)
@@ -412,6 +415,14 @@ Disables background download of advertising manifests for workloads. Default is 
 ### `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
 
 Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+### `DOTNET_SDK_VULNERABILITY_CHECK_DISABLE`
+
+Disables the opt-in SDK vulnerability and end-of-life check. When set to `true`, the .NET CLI doesn't refresh the local SDK release metadata cache in the background, and the MSBuild check doesn't emit [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), or [NETSDK1240](sdk-errors/netsdk1240.md). The default is `false`. The check is also opt-in at the project level through the `CheckSdkVulnerabilities` MSBuild property.
+
+### `DOTNET_SDK_VULNERABILITY_CHECK_INTERVAL_HOURS`
+
+Specifies the minimum number of hours between background refreshes of the SDK release metadata cache used by the SDK vulnerability and end-of-life check. The default is `24`.
 
 ### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
 

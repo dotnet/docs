@@ -1,7 +1,8 @@
 ---
 title: dotnet sdk check command
 description: The 'dotnet sdk check' command tells you what is the latest available version of the .NET SDK and .NET Runtime.
-ms.date: 06/30/2021
+ms.date: 05/15/2026
+ai-usage: ai-assisted
 ---
 # dotnet sdk check
 
@@ -63,3 +64,7 @@ The latest versions of .NET can be installed from https://aka.ms/dotnet-core-dow
   ```dotnetcli
   dotnet sdk check
   ```
+
+## See also
+
+To get the same information as a build warning, set the `CheckSdkVulnerabilities` MSBuild property to `true` in your project. See [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), and [NETSDK1240](sdk-errors/netsdk1240.md).

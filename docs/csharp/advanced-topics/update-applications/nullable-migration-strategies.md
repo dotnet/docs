@@ -35,9 +35,11 @@ Pick the strategy that makes the next file you create do the right thing automat
 - **Warnings as the default.** Choose this default for a two-phase migration: address warnings while every reference type is still treated as oblivious, then turn on annotations. The two-phase split keeps each step's diff focused.
 - **Annotations as the default.** Start by annotating your public API (`?` on members that allow `null`) before chasing warnings. The compiler doesn't emit warnings yet, so you can settle the API surface without distraction.
 
-Your project file controls the global default. The `#nullable` preprocessor directives override it locally:
+Your project file controls the global default. `#nullable` [preprocessor directives](../../language-reference/preprocessor-directives.md) override that default for a region of code:
 
 :::code language="xml" source="snippets/nullable-migration-strategies/project-snippet.xml":::
+
+Inside source files, the directive opts a region in or out of the project's nullable setting:
 
 :::code language="csharp" source="snippets/nullable-migration-strategies/Program.cs" id="DirectiveOverrides":::
 

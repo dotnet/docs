@@ -8,11 +8,19 @@ internal static class Examples
     {
         Annotations();
         DesignIntent();
-        NullStateTracking();
+        try
+        {
+            // NullStateTracking deliberately dereferences a null reference
+            // to show the warning condition; the NullReferenceException
+            // it throws at run time is the runtime counterpart.
+            NullStateTracking();
+        }
+        catch (NullReferenceException)
+        {
+        }
         FlowAnalysis(new Node("root"));
         NullForgiving();
         NullAnalysisAttributes();
-        Generics();
         DefaultStructPitfall();
         ArrayPitfall();
     }
@@ -94,14 +102,18 @@ internal static class Examples
     // <NullForgiving>
     public static void NullForgiving()
     {
-        // Provide the name "ada", knowing it always returns a new string.
+        // "ada" matches a switch arm that returns a non-null string,
+        // but the return type is string? so the compiler treats the
+        // result as maybe-null.
         string? maybeName = LookUpName("ada");
 
-        // The compiler can't prove maybeName isn't null. The developer can.
+        // The ! tells the compiler "trust me, this isn't null." We just
+        // passed "ada", which the switch maps to "Ada Lovelace".
         int length = maybeName!.Length;
-        Console.WriteLine(length);
+        Console.WriteLine(length); // => 12
     }
 
+    // Returns string? because the wildcard arm yields null.
     private static string? LookUpName(string id) => id switch
     {
         "ada" => "Ada Lovelace",
@@ -128,39 +140,13 @@ internal static class Examples
     private static string? ReadInput() => "hello";
     // </NullAnalysisAttributes>
 
-    // <Generics>
-    public static T? FirstOrDefault<T>(IEnumerable<T> source)
-    {
-        foreach (T item in source)
-        {
-            return item;
-        }
-        return default;
-    }
-
-    public static void RequireNotNull<T>(T value) where T : notnull
-    {
-        ArgumentNullException.ThrowIfNull(value);
-    }
-
-    public static void Generics()
-    {
-        string? first = FirstOrDefault<string>([]);
-        Console.WriteLine(first ?? "<empty>");
-
-        RequireNotNull("not null");
-    }
-    // </Generics>
-
     // <DefaultStructPitfall>
-#pragma warning disable CS0649 // Fields are deliberately uninitialized to show the pitfall.
     public struct Student
     {
         public string FirstName;
         public string? MiddleName;
         public string LastName;
     }
-#pragma warning restore CS0649
 
     public static void DefaultStructPitfall()
     {

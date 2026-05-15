@@ -23,14 +23,13 @@ Three building blocks work together:
 
 The compiler combines these signals to produce diagnostics. Warnings on a non-nullable variable mean the variable might receive `null`. Warnings on a nullable variable mean the code might *dereference* it without a null check. *Dereference* means to use the value the variable refers to—for example, to call a method on it (`variable.Method()`), read a property (`variable.Property`), or index into it (`variable[0]`). Dereferencing a variable that has a value of `null` throws an exception at run time. Either kind of warning means the code's behavior doesn't match its stated design.
 
-? [!NOTE]
-> Nullable reference types are enabled by default, but can be desiabled when you're working on older projeccts that existed before the feature was added to the language. To enable it, you need to edit your project file and add:
->
-> ```xml
->     <Nullable>enable</Nullable>
-> ```
->
-> inside a `<PropertyGroup>` element.
+## Nullable context
+
+Projects created from recent .NET templates set `<Nullable>enable</Nullable>` in the project file, so the guidance in this article applies as written. If you're working in an older project, open the `.csproj` and check that the `<PropertyGroup>` contains the following line; add it if it's missing:
+
+```xml
+<Nullable>enable</Nullable>
+```
 
 ## Express intent with annotations
 
@@ -56,7 +55,7 @@ The compiler tracks the *null-state* of every expression. The state is one of tw
 - *not-null* — the expression is known to be not `null`.
 - *maybe-null* — the expression might be `null`.
 
-A local variable's null-state is updated as the compiler analyzes your code. Two things change it: **assignments** and **null checks**. After an assignment, the variable's null-state matches the expression on the right-hand side—if the expression is null or nullable, the variable becomes maybe-null; if the expression is a non-null literal, the variable becomes not-null. After a null check, the variable's null-state reflects whichever branch is taken.:
+A local variable's null-state is updated as the compiler analyzes your code. Two things change it: **assignments** and **null checks**. After an assignment, the variable's null-state matches the expression on the right-hand side. If the expression is null or nullable, the variable becomes maybe-null. If the expression is a non-null literal, the variable becomes not-null. After a null check, the variable's null-state reflects whichever branch is taken.
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="NullStateTracking":::
 
@@ -84,42 +83,6 @@ Annotations on a parameter or return type aren't always expressive enough. A met
 
 The <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute> tells the compiler that when `IsPresent` returns `true`, the argument is *not-null*. Inside the `if` block, the compiler treats `value` as *not-null* with no null-forgiving operator required. As of .NET 5, all .NET runtime APIs are annotated, so the analysis benefits any code that calls them.
 
-## Generics
-
-> [!TIP]
-> If you're not yet familiar with generics, read [Generic types and methods](../types/generics.md) first. The rest of this section assumes you understand generic type parameters and constraints.
-
-*Generics* let one class or method work with many types. The placeholder for the type is called a *type parameter*, usually written as `T`. The actual type the caller supplies when using the generic is the *type argument*. For example, in the following declaration, `T` is the type parameter:
-
-```csharp
-public class Box<T>
-{
-    public T Contents { get; set; }
-}
-```
-
-When you write `Box<string>`, the type argument is `string`; in `Box<int>`, the type argument is `int`. The compiler substitutes the type argument for every use of `T` inside the class.
-
-Because a type parameter can stand for either a reference type or a value type, the meaning of `T?` depends on which type argument the caller supplies. The following rules describe what `T?` resolves to when `T` has no constraints:
-
-- **The type argument is a non-nullable reference type.** For `Box<string>`, `T` is `string` and `T?` is `string?`—the corresponding nullable reference type.
-- **The type argument is a value type.** For `Box<int>`, `T` is `int` and `T?` is also `int`—the same value type. The annotation has no effect on value types unless the type parameter has the `struct` constraint, in which case `T?` means <xref:System.Nullable%601> (`int?`).
-- **The type argument is already nullable.** For `Box<string?>`, `T` is `string?` and `T?` is still `string?`. You don't get a "doubly nullable" type.
-
-*Constraints* restrict which type arguments are allowed. They also let the compiler reason about how `T` can be used:
-
-- `where T : class` requires a non-nullable reference type. `Box<string>` is allowed; `Box<string?>` produces a warning.
-- `where T : class?` allows either a nullable or a non-nullable reference type. Both `Box<string>` and `Box<string?>` are allowed.
-- `where T : struct` requires a non-nullable value type. `Box<int>` is allowed; `Box<int?>` isn't. With this constraint, `T?` inside the generic means <xref:System.Nullable%601>—for `Box<int>`, `T?` is `int?`.
-- `where T : notnull` requires a non-nullable reference or value type. `Box<string>` and `Box<int>` are allowed; `Box<string?>` produces a warning.
-- `where T : BaseType` requires a non-nullable reference type that derives from `BaseType`. Append `?` (`where T : BaseType?`) to allow nullable derived types as well.
-
-The constraints help the compiler reason about how a generic type parameter is used:
-
-:::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="Generics":::
-
-These rules can look complicated, but the goal is straightforward. You can write generic types and methods that work with non-nullable types, nullable value types, and nullable reference types alike. You can use any existing generic type or method with any of those kinds of type arguments. In day-to-day code, you rarely need to recall the rules in detail.
-
 ## Known pitfalls
 
 Two patterns can leave a non-nullable reference holding `null` without a warning. Both patterns are limitations of the static analysis, not bugs in your code.
@@ -130,15 +93,15 @@ You can create a struct with non-nullable reference fields by using `default` or
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="DefaultStructPitfall":::
 
-The fields hold `null` at run time, but the compiler doesn't warn.
+The fields hold `null` at run time, but the compiler doesn't warn. If you must use a struct, prefer [required members](../../language-reference/keywords/required.md), which are members the caller must initialize through an object initializer, or a parameterized constructor that callers must invoke.
 
-The same pitfall extends to *arrays of structs*: a new array initializes every element to the struct's default value, so each element's non-nullable reference fields start as `null`. If you must use a struct, prefer [required members](../../language-reference/keywords/required.md) (members the caller must initialize through an object initializer) or a parameterized constructor that callers must invoke, and populate every element of any array you create.
-
-### Arrays of references
+### Arrays of references and structs
 
 A new array of a non-nullable reference type contains all `null` elements until you assign each one:
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="ArrayPitfall":::
+
+The same pitfall applies to arrays of structs: every element starts as the struct's default value, so each element's non-nullable reference fields start as `null`.
 
 Initialize array elements as part of creating the array. [Collection expressions](../../language-reference/operators/collection-expressions.md) (the `[1, 2, 3]` literal syntax) and [target-typed `new`](../../language-reference/operators/new-operator.md#target-typed-new) (writing `new()` when the compiler can infer the type) make full initialization concise.
 

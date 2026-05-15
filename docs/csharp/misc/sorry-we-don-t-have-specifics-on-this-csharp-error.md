@@ -271,9 +271,6 @@ f1_keywords:
   - "CS8750"
   # C# 9 diagnostics start here
   - "CS8751" # misc
-  - "CS8752" # target type new 
-  - "CS8753"
-  - "CS8754"
   - "CS8760" # misc
   - "CS8761"
   - "CS8771"

@@ -55,7 +55,7 @@ Addresses an issue with running a WCF NamedPipe service inside a Win32 app conta
 
 ## Known issues in this release
 
-This update might fail to install when [applied through DISM](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows?view=windows-11) to an offline Windows 10 IoT Enterprise LTSC 21H2 image. A fix for this issue will be included in an upcoming .NET Framework update.
+This update might fail to install when [applied through DISM](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to an offline Windows 10 IoT Enterprise LTSC 21H2 image. A fix for this issue will be included in an upcoming .NET Framework update.
 
 ## Summary tables
 

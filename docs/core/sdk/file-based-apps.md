@@ -25,16 +25,27 @@ File-based apps use directives prefixed with `#:` to configure the build and run
 
 ### `#:include`
 
-Includes another C# source file in the file-based app.
+The `#:include` directive is available in .NET 11 Preview 3 and .NET SDK 10.0.300 and later.
 
-Included files compile as part of the same app. They can add types, top-level statements, and other declarations.
+Includes another file in the file-based app.
+
+The SDK maps included files to item types based on file extension:
+
+- `*.cs` to `Compile`
+- `*.resx` to `EmbeddedResource`
+- `*.json` to `None`
+- `*.razor` to `Content`
+
+Included `.cs` files compile as part of the same app, so they can add types and other declarations.
 
 ```csharp
 #:include helpers.cs
 #:include models/customer.cs
+#:include shared/**/*.cs
+#:include $(MSBuildProjectName).*.cs
 ```
 
-The `#:include` directive is available in .NET 11 Preview 3 and .NET SDK 10.0.3xx and later.
+`#:include` paths support glob patterns and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
 
 ### `#:package`
 

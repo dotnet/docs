@@ -45,7 +45,7 @@ The compiler includes `.cs` files as part of app compilation. These files can ad
 #:include $(MSBuildProjectName).*.cs
 ```
 
-`#:include` paths support literal paths, glob patterns, and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
+The `#:include` directive supports literal paths, glob patterns, and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
 
 ### `#:package`
 

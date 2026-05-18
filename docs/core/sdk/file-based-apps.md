@@ -36,7 +36,7 @@ The SDK maps included files to item types based on file extension:
 - `*.json` to `None`
 - `*.razor` to `Content`
 
-Included `.cs` files compile as part of the same app, so they can add types and other declarations.
+Included `.cs` files compile as part of the same app, so they can add types, methods, namespaces, and other declarations.
 
 ```csharp
 #:include helpers.cs
@@ -45,7 +45,7 @@ Included `.cs` files compile as part of the same app, so they can add types and 
 #:include $(MSBuildProjectName).*.cs
 ```
 
-`#:include` paths support glob patterns and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
+`#:include` paths support literal paths, glob patterns, and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
 
 ### `#:package`
 

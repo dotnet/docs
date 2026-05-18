@@ -132,7 +132,7 @@ internal static class Examples
     // <InitializedMember>
     public class PersonInitialized
     {
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; } = "John Doe";
     }
     // </InitializedMember>
 

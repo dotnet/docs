@@ -15,31 +15,22 @@ ai-usage: ai-assisted
 
 When you enable nullable reference types, the compiler issues warnings everywhere your code's behavior doesn't match its annotations. Most warnings fall into a small set of patterns. Once you recognize the pattern, the fix is usually one of five techniques:
 
-- Configure the nullable context.
 - Add a null check.
 - Add or remove a `?` or `!` annotation.
 - Add an attribute that describes the null contract.
 - Initialize variables correctly.
+- Configure the nullable context.
 
-This article walks through each technique with a representative example. The goal isn't to silence warnings; it's to make the code's null-handling intent explicit so the compiler reaches the same conclusions you do.
+This article walks through each technique with a representative example. The goal isn't to silence warnings. It's to make the code's null-handling intent explicit so the compiler reaches the same conclusions you do.
 
-## Configure the nullable context
+## Null-state: what the compiler tracks
 
-The first warnings you see in an existing project often have nothing to do with your code's logic. They're about the nullable context itself:
+Before you look at the techniques, it helps to know how the compiler tracks potential null-state violations. As it reads your code, the compiler keeps track of each expression's *null-state*: its analysis about whether the expression might be `null` at that point in the code. The null-state is one of two values:
 
-- The annotation `?` is used while annotations are disabled.
-- A `<Nullable>` value isn't recognized.
-- A `#nullable` directive is malformed.
+- *not-null* — the compiler can prove the expression isn't `null` here. You can safely use it without a check.
+- *maybe-null* — the compiler can't rule out `null`. Using the expression without checking it produces a warning.
 
-Enable the feature project-wide in your `.csproj`:
-
-:::code language="xml" source="snippets/resolve-warnings/project-snippet.xml":::
-
-Or scope it to part of a file with a [preprocessor directive](../../language-reference/preprocessor-directives.md) (a line starting with `#` that gives instructions to the compiler instead of producing executable code):
-
-:::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullableDirective":::
-
-The context has two independent flags. The *annotation* flag controls whether `?` and `!` are meaningful in declarations. The *warning* flag controls whether the compiler emits diagnostics. You can enable each independently. Enabling warnings while leaving annotations off lets you address null-handling bugs before you take on annotating types. Enabling annotations while leaving warnings off lets you express your design intent in the API surface without producing diagnostics in implementation code that isn't ready yet. Either combination can be the right choice for a project at a given stage. For the migration trade-offs, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
+A variable's null-state changes as the compiler follows your code. A method that might return `null` produces a *maybe-null* result. An `if (x is not null)` check narrows `x` to *not-null* inside the `if` block. The warnings you see are the compiler telling you it determined an expression is in a *maybe-null* state and you're about to use it as if it were *not-null*. Each technique in the rest of this article is a different way to give the compiler the information it needs to ensure an expression is *not-null* before you use it.
 
 ## Add a null check
 
@@ -47,11 +38,11 @@ The most common warning is *possible dereference of null*. The compiler tracked 
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="DereferenceWarning":::
 
-The fix is usually a *guard clause*. A *guard clause* is a check at the top of a method or block that returns or throws when an input is invalid, leaving only the safe path to continue. Once the check runs, the compiler updates the variable's null state to *not-null* on the safe path:
+The fix is usually a *guard clause*. A *guard clause* is a check at the top of a method or block that returns or throws when an input is invalid. Only the safe path continues. Once the check runs, the compiler updates the variable's null state to *not-null* on the safe path:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="DereferenceFixed":::
 
-[Pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { } value` that test the shape of a value), `??`, and `??=` produce the same effect:
+[Pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { } value` that test the shape of a value), `??`, and `??=` include null checks:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullOperatorsFix":::
 
@@ -63,8 +54,8 @@ For an in-depth tour of the operators, see [Null operators](null-operators.md).
 
 The compiler also warns you when your code assigns a *maybe-null* expression to a non-nullable variable. That warning means one of two things:
 
-- The variable shouldn't be non-nullable. Add a `?` to the type.
-- The expression shouldn't be maybe-null. Annotate the API that produced it.
+- The variable should allow null values. In that case, add a `?` to the type.
+- The expression never produces a null value. Annotate the API that produced it.
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="AssignmentWarning":::
 
@@ -114,13 +105,27 @@ You have several ways to address it. Pick the one that best matches your design 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="InitializedMember":::
 
 > [!TIP]
-> Choose this technique only when the type has a genuinely good default value: one that's a valid, fully-functional instance for callers to consume. Examples include <xref:System.String.Empty?displayProperty=nameWithType> or an empty collection. Don't invent a *sentinel* (a placeholder value such as `"N/A"`, `"unknown"`, or `-1` that you treat as "no value") to stand in for `null`: it silences the warning, but every caller has to know about and check for the sentinel, and the type system can't help. When no good default exists, make the property nullable instead.
+> Choose this technique only when the type has a genuinely good default value: one that's a valid, fully-functional instance for callers to consume. Examples include empty collections. Don't invent a *sentinel* (a placeholder value such as <xref:System.String.Empty?displayProperty=nameWithType>, "N/A"`, `"unknown"`, or `-1` that you treat as "no value") to stand in for `null`: it silences the warning, but every caller has to know about and check for the sentinel, and the type system can't help. When no good default exists, make the property nullable instead.
 
 **Make the property nullable.** When the value really might be missing, change the type to nullable:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullableMember":::
 
 If a helper method initializes the member, annotate the helper with <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> so the compiler can credit calls to it.
+
+## Configure the nullable context
+
+New C# projects enable nullable reference types by default, so most code you write or read already has the feature turned on. You generally don't need to configure anything. If you're curious whether a project has it enabled, or you need to change the setting, look for the `<Nullable>` element in the `.csproj`:
+
+:::code language="xml" source="snippets/resolve-warnings/project-snippet.xml":::
+
+The supported values are `enable` (the default for new projects), `disable`, `warnings`, and `annotations`. If the element is missing, the project uses whatever default the SDK and target framework set.
+
+To change the setting for part of a file without affecting the rest of the project, use a [preprocessor directive](../../language-reference/preprocessor-directives.md) (a line starting with `#` that gives instructions to the compiler instead of producing executable code):
+
+:::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullableDirective":::
+
+The `warnings` and `annotations` values turn on only part of the feature, and they're primarily useful in advanced scenarios such as migrating a large existing codebase one piece at a time. For those trade-offs, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md). For everyday work, `enable` and `disable` are the two values you need.
 
 ## Where to go next
 

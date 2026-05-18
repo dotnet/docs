@@ -36,7 +36,7 @@ The SDK maps included files to item types based on file extension:
 - `*.json` to `None`
 - `*.razor` to `Content`
 
-Included `.cs` files compile as part of the same app, so they can add types, methods, namespaces, and other declarations.
+Compile included `.cs` files as part of the same app. Use them to add types, methods, namespaces, and other declarations.
 
 ```csharp
 #:include helpers.cs

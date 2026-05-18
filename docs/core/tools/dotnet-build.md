@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 09/24/2025
+ms.date: 05/18/2026
 ---
 
 # dotnet build
@@ -158,7 +158,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 - **`-t|--target:<TARGET>`**
 
-  Specifies one or more MSBuild targets to run during the build instead of the default target. Specify multiple targets by separating them with a semicolon or comma, or by repeating the option for each target. Corresponds to the MSBuild -target option. Common targets include Build (default), Clean, and Rebuild. For more information, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
+  Specifies one or more MSBuild targets to run during the build instead of the default target. Specify multiple targets by separating them with a semicolon or comma, or by repeating the option for each target. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`. For more information, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
 
   ```dotnetcli
   dotnet build -t:"Clean;RunTests"

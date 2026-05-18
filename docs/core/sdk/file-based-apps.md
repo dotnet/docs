@@ -36,7 +36,7 @@ The SDK maps included files to item types based on file extension:
 - `*.json` to `None`
 - `*.razor` to `Content`
 
-The compiler includes `.cs` files as part of app compilation. These files can add types, methods, namespaces, and other declarations.
+The compiler includes `.cs` files as part of app compilation. These files can add types, methods, namespaces, and other declarations, but they can't add top-level statements.
 
 ```csharp
 #:include helpers.cs

@@ -26,7 +26,7 @@ The plugin provides an autonomous, multi-agent workflow that assesses your .NET 
 | **Azure migration** | Migrate .NET applications to Azure services (Service Bus, Azure SQL, Redis, Key Vault, Application Insights, Managed Identity) |
 | **CVE and vulnerability fixing** | Scan and fix CVE vulnerabilities in NuGet dependencies |
 | **Application rearchitecture** | Structural rewrites such as monolith-to-microservices decomposition, legacy UI modernization, and module extraction |
-| **.NET modernization** | Assess and migrate .NET applications to Azure, including NuGet security audits and ASP.NET-to-Azure migrations |
+| **.NET migration to Azure** | Assess and migrate .NET applications to Azure, including NuGet security audits and ASP.NET-to-Azure migrations |
 
 ## Prerequisites
 

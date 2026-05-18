@@ -584,9 +584,7 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 
 ### PublishRuntimeIdentifier
 
-Use the `PublishRuntimeIdentifier` property to specify a single [runtime identifier (RID)](../rid-catalog.md) for `dotnet publish`.
-
-Use `PublishRuntimeIdentifier` to specify a RID only for publish operations. This property was introduced in .NET 7 and doesn't affect build operations. For the publish operation, `PublishRuntimeIdentifier` sets `RuntimeIdentifier`. If you pass `RuntimeIdentifier` as a global property, that value takes precedence.
+Use `PublishRuntimeIdentifier` to specify a single [runtime identifier (RID)](../rid-catalog.md) only for `dotnet publish`. This property was introduced in .NET 7 and doesn't affect build operations. For the publish operation, `PublishRuntimeIdentifier` sets `RuntimeIdentifier`. If you pass `RuntimeIdentifier` as a global property, that value takes precedence.
 
 ```xml
 <PropertyGroup>

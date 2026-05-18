@@ -105,7 +105,7 @@ You have several ways to address it. Pick the one that best matches your design 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="InitializedMember":::
 
 > [!TIP]
-> Choose this technique only when the type has a genuinely good default value: one that's a valid, fully-functional instance for callers to consume. Examples include empty collections. Don't invent a *sentinel* (a placeholder value such as <xref:System.String.Empty?displayProperty=nameWithType>, "N/A"`, `"unknown"`, or `-1` that you treat as "no value") to stand in for `null`: it silences the warning, but every caller has to know about and check for the sentinel, and the type system can't help. When no good default exists, make the property nullable instead.
+> Choose this technique only when the type has a genuinely good default value: one that's a valid, fully-functional instance for callers to consume. Examples include empty collections. Don't invent a *sentinel* (a placeholder value such as <xref:System.String.Empty?displayProperty=nameWithType>, `"N/A"`, `"unknown"`, or `-1` that you treat as "no value") to stand in for `null`: it silences the warning, but every caller has to know about and check for the sentinel, and the type system can't help. When no good default exists, make the property nullable instead.
 
 **Make the property nullable.** When the value really might be missing, change the type to nullable:
 

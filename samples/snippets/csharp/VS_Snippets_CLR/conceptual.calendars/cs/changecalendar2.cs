@@ -59,9 +59,9 @@ public class Example
 //
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.UmAlQuraCalendar
-//    18/07/32
+//    18/07/1432
 //
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.HijriCalendar
-//    19/07/32
+//    19/07/1432
 // </Snippet2>

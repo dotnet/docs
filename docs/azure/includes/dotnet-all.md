@@ -511,7 +511,7 @@
 | Commerce Usage Aggregates | NuGet [1.5.3](https://www.nuget.org/packages/Microsoft.Azure.Commerce.UsageAggregates/1.5.3) |  |  |
 | Common | NuGet [2.2.1](https://www.nuget.org/packages/Microsoft.Azure.Common/2.2.1) |  |  |
 | Common - Dependencies | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Common.Dependencies/1.0.0) |  |  |
-| Cosmos DB | NuGet [3.58.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.58.0)<br>NuGet [3.60.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.60.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.58.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.58.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.58.0)<br>NuGet [3.61.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.61.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.58.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Movement | NuGet [2.0.5](https://www.nuget.org/packages/Microsoft.Azure.Storage.DataMovement/2.0.5) |  | GitHub [2.0.5](https://github.com/Azure/azure-storage-net-data-movement/tree/v1.3.0) |
 | DCAP | NuGet [1.13.1](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.13.1) |  | GitHub [1.13.1](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |

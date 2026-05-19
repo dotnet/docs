@@ -463,6 +463,12 @@ items:
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:
+  - name: Invalid command-line options
+    href: ./compiler-messages/invalid-build-command-line.md
+    displayName: >
+      command line, build configuration, compiler invocation,
+      CS1773, CS2038, CS2039, CS2040, CS2041, CS2042, CS2043, CS2044, CS2045, CS2046,
+      CS7038, CS8751, CS8771, CS8772
   - name: Preprocessor errors
     href: ./compiler-messages/preprocessor-errors.md
     displayName: >

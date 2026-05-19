@@ -281,16 +281,17 @@ Each element of the file is optional because it has a default value.
 ```json
 {
   "platformOptions": {
+    "resultDirectory": "./TestResults"
   },
   "mstest": {
     "execution": {
-        "mapInconclusiveToFailed" : true,
+        "mapInconclusiveToFailed": true,
         "disableAppDomain": true,
-        "considerFixturesAsSpecialTests" : false,
+        "considerFixturesAsSpecialTests": false
     },
-    "parallelism" : {
+    "parallelism": {
         "enabled": true,
-        "scope": "method",
+        "scope": "method"
     },
     "output": {
         "captureTrace": false

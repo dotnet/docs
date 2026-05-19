@@ -70,7 +70,7 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 
 - **`--test-modules <EXPRESSION>`**
 
-  Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../extensions/file-globbing.md).
+  Filters test modules using file globbing. Only tests belonging to those test modules run.
 
 - **`--root-directory <ROOT_PATH>`**
 

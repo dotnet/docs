@@ -259,12 +259,6 @@ f1_keywords:
   - "CS8656"
   - "CS8662"
   - "CS8669"
-  # C# 9 diagnostics start here
-  - "CS8760" # misc
-  - "CS8761"
-  - "CS8771"
-  - "CS8772"
-  - "CS8783" # local function
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9347"

@@ -466,9 +466,10 @@ items:
   - name: Invalid command-line options
     href: ./compiler-messages/invalid-build-command-line.md
     displayName: >
-      command line, build configuration, compiler invocation,
-      CS1773, CS2038, CS2039, CS2040, CS2041, CS2042, CS2043, CS2044, CS2045, CS2046,
-      CS7038, CS8751, CS8771, CS8772
+      command line, msbuild, dotnet build, csc,
+      CS0006, CS0007, CS0016, CS1564, CS1616, CS1668, CS1719, CS1773, CS2008, CS2019,
+      CS2029, CS2032, CS2036, CS2038, CS2039, CS2040, CS2041, CS2042, CS2043, CS2044,
+      CS2045, CS2046, CS3012, CS3013, CS7038, CS8751, CS8771, CS8772
   - name: Preprocessor errors
     href: ./compiler-messages/preprocessor-errors.md
     displayName: >
@@ -764,10 +765,6 @@ items:
       href: ../misc/cs0004.md
     - name: CS0005
       href: ../misc/cs0005.md
-    - name: CS0006
-      href: ./compiler-messages/cs0006.md
-    - name: CS0007
-      href: ./compiler-messages/cs0007.md
     - name: CS0008
       href: ../misc/cs0008.md
     - name: CS0009
@@ -782,8 +779,6 @@ items:
       href: ../misc/cs0014.md
     - name: CS0015
       href: ./compiler-messages/cs0015.md
-    - name: CS0016
-      href: ./compiler-messages/cs0016.md
     - name: CS0019
       href: ./compiler-messages/cs0019.md
     - name: CS0020
@@ -1370,8 +1365,6 @@ items:
       href: ../misc/cs1562.md
     - name: CS1563
       href: ../misc/cs1563.md
-    - name: CS1564
-      href: ./compiler-messages/cs1564.md
     - name: CS1565
       href: ../misc/cs1565.md
     - name: CS1566
@@ -1450,8 +1443,6 @@ items:
       href: ./compiler-messages/cs1705.md
     - name: CS1713
       href: ../misc/cs1713.md
-    - name: CS1719
-      href: ../misc/cs1719.md
     - name: CS1721
       href: ./compiler-messages/cs1721.md
     - name: CS1722
@@ -1546,8 +1537,6 @@ items:
       href: ../misc/cs2006.md
     - name: CS2007
       href: ../misc/cs2007.md
-    - name: CS2008
-      href: ../misc/cs2008.md
     - name: CS2011
       href: ../misc/cs2011.md
     - name: CS2012
@@ -1560,8 +1549,6 @@ items:
       href: ../misc/cs2016.md
     - name: CS2018
       href: ../misc/cs2018.md
-    - name: CS2019
-      href: ../misc/cs2019.md
     - name: CS2020
       href: ../misc/cs2020.md
     - name: CS2021
@@ -1570,14 +1557,10 @@ items:
       href: ../misc/cs2022.md
     - name: CS2024
       href: ../misc/cs2024.md
-    - name: CS2032
-      href: ./compiler-messages/cs2032.md
     - name: CS2033
       href: ../misc/cs2033.md
     - name: CS2035
       href: ../misc/cs2035.md
-    - name: CS2036
-      href: ../misc/cs2036.md
     - name: CS7003
       href: ./compiler-messages/cs7003.md
     - name: CS8070
@@ -1720,8 +1703,6 @@ items:
       href: ./compiler-messages/cs1598.md
     - name: CS1607
       href: ./compiler-messages/cs1607.md
-    - name: CS1616
-      href: ./compiler-messages/cs1616.md
     - name: CS1645
       href: ../misc/cs1645.md
     - name: CS1658
@@ -1756,8 +1737,6 @@ items:
       href: ../misc/cs2014.md
     - name: CS2023
       href: ../misc/cs2023.md
-    - name: CS2029
-      href: ../misc/cs2029.md
     - name: CS3000
       href: ../misc/cs3000.md
     - name: CS3001
@@ -1778,10 +1757,6 @@ items:
       href: ../misc/cs3010.md
     - name: CS3011
       href: ../misc/cs3011.md
-    - name: CS3012
-      href: ../misc/cs3012.md
-    - name: CS3013
-      href: ../misc/cs3013.md
     - name: CS3014
       href: ../misc/cs3014.md
     - name: CS3015
@@ -1838,8 +1813,6 @@ items:
       href: ../misc/cs1572.md
     - name: CS1587
       href: ../misc/cs1587.md
-    - name: CS1668
-      href: ../misc/cs1668.md
     - name: CS1698
       href: ../misc/cs1698.md
     - name: CS1701

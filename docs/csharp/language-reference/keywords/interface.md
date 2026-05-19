@@ -91,7 +91,7 @@ The following example demonstrates interface implementation. In this example, th
 
 ## C# language specification
 
-For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the feature spec for [static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md).
+For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), including [Interface operators](~/_csharpstandard/standard/interfaces.md#1947-interface-operators) and [Interface static constructors](~/_csharpstandard/standard/interfaces.md#1948-interface-static-constructors).
 
 ## See also
 

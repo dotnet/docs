@@ -87,7 +87,7 @@ For more information, see the following sections of the [C# language specificati
 - [Structs: Ref modifier](~/_csharpstandard/standard/structs.md#1623-ref-modifier)
 - [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16515-safe-context-constraint)
 
-For more information about `ref` fields, see the [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) proposal note.
+For more information about `ref` fields, see [Ref fields](~/_csharpstandard/standard/structs.md#16582-ref-fields) in the C# language specification.
 
 ## See also
 

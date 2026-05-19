@@ -265,7 +265,6 @@ f1_keywords:
   - "CS9359"
 # unsafe evolution
   - "CS9360"
-  - "CS9360"
   - "CS9361"
   - "CS9362"
   - "CS9363"

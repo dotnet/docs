@@ -260,7 +260,6 @@ f1_keywords:
   - "CS8662"
   - "CS8669"
   # C# 9 diagnostics start here
-  - "CS8751" # misc
   - "CS8760" # misc
   - "CS8761"
   - "CS8771"
@@ -283,6 +282,7 @@ f1_keywords:
   - "CS9359"
 # unsafe evolution
   - "CS9360"
+  - "CS9360"
   - "CS9361"
   - "CS9362"
   - "CS9363"
@@ -290,6 +290,8 @@ f1_keywords:
   - "CS9365"
   - "CS9366"
 # More unions:
+  - "CS9367"
+  - "CS9368"
   - "CS9369"
   - "CS9370"
   - "CS9371"
@@ -304,6 +306,11 @@ f1_keywords:
   - "CS9378"
 # More unsafe
   - "CS9379"
+  - "CS9380"
+  - "CS9381"
+  - "CS9382"
+  - "CS9383"
+  - "CS9384"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

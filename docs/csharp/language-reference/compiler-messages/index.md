@@ -1,12 +1,11 @@
 ---
 description: "C# Compiler Errors"
 title: "Compiler messages"
-ms.date: 05/21/2024
+ms.date: 05/19/2026
+f1_keywords:
+  - "CS8751"
 helpviewer_keywords: 
   - "C# language, compiler errors"
-  - "Visual C# compiler, errors"
-  - "errors [C#]"
-ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
 ---
 # C# Compiler Errors
 
@@ -20,6 +19,12 @@ If none of these steps leads to information about your error, go to the end of t
 For information about how to configure error and warning options in C#, see [C# compiler options](../compiler-options/index.md) or the Visual Studio [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
+
+## Internal compiler error (CS8751)
+
+- **CS8751**: *Internal error in the C# compiler.*
+
+CS8751 indicates an internal compiler error. Your code exposed a bug in the compiler itself, not in your source code. If you encounter this error, [file an issue in the Roslyn repository](https://github.com/dotnet/roslyn/issues/new/choose) with a minimal reproduction so the compiler team can investigate and fix the problem.
 
 ## See also
 

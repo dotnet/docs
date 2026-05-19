@@ -12,9 +12,6 @@ ms.custom: copilot-scenario-highlight
 
 *Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the `+` operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
 
-> [!TIP]
-> You can use AI assistance to [concatenate strings](#use-ai-to-concatenate-strings).
-
 ## String literals
 
 The following example splits a long string literal into smaller strings to improve readability in the source code. The code concatenates the smaller strings to create the long string literal. The parts are concatenated into a single string at compile time. There's no run-time performance cost regardless of the number of strings involved.

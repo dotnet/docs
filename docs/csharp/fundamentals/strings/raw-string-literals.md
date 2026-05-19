@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 A *raw string literal* is delimited by three or more double quotes. Inside the delimiters, every character is taken literally. Quotes and backslashes don't need escaping, and newlines are preserved as written. Use raw strings for any string that contains quotes, backslashes, or multiple lines: JSON, XML, SQL, regular expressions, file paths, and code samples.
 
 > [!WARNING]
-> A raw string literal makes SQL easier to read, but it doesn't make SQL safer. Never concatenate or interpolate user-supplied values into a SQL command. That practice opens your application to SQL injection. Use parameterized commands instead: <xref:System.Data.Common.DbCommand.CreateParameter%2A?displayProperty=nameWithType> with <xref:System.Data.Common.DbParameterCollection.Add%2A?displayProperty=nameWithType>, or the higher-level helpers in [Entity Framework Core](/ef/core/querying/raw-sql) and [Dapper](https://github.com/DapperLib/Dapper). The same caution applies to other injection-prone formats such as shell commands, LDAP filters, and HTML.
+> A raw string literal makes SQL easier to read, but it doesn't make SQL safer. Never concatenate or interpolate user-supplied values into a SQL command. That practice opens your application to SQL injection. Use parameterized commands instead: <xref:System.Data.Common.DbCommand.CreateParameter*?displayProperty=nameWithType> with <xref:System.Data.Common.DbParameterCollection.Add*?displayProperty=nameWithType>, or the higher-level helpers in [Entity Framework Core](/ef/core/querying/raw-sql) and [Dapper](https://github.com/DapperLib/Dapper). The same caution applies to other injection-prone formats such as shell commands, LDAP filters, and HTML.
 
 ## A literal that contains quotes and backslashes
 
@@ -60,11 +60,11 @@ You can scale this up to any number of quotes. Five-quote and six-quote delimite
 
 ## Raw interpolated strings
 
-Add a ` prefix to a raw string to enable interpolation. The expressions in `{}` holes are evaluated, and their results are inserted into the value:
+Add a `$` prefix to a raw string to enable interpolation. The expressions in `{}` holes are evaluated, and their results are inserted into the value:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="RawInterpolated":::
 
-If the content also needs literal `{` or `}` characters, which are common when generating JSON, CSS, or code, add more ` signs. Each ` raises the number of braces required to mark an interpolation hole. With `$`, single `{` and `}` are literal and only `{{...}}` is treated as a hole:
+If the content also needs literal `{` or `}` characters, which are common when generating JSON, CSS, or code, add more `$` signs. Each `$` raises the number of braces required to mark an interpolation hole. With `$$`, single `{` and `}` are literal and only `{{...}}` is treated as a hole:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="DoubleDollarInterpolation":::
 

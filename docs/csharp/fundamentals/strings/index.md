@@ -29,13 +29,13 @@ Prefer the `string` keyword in your own code. It's consistent with the other bui
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Immutability":::
 
-Because strings are immutable, you can safely share them across methods and threads. This immutability explains why the `string` type behaves like a value in everyday use even though it's a reference type.
+Because strings are immutable, you can safely share them across methods and threads. This immutability explains why the `string` type behaves like a value type in everyday use even though it's a reference type.
 
-When you build a string from many small pieces in a loop, each `+` or `Concat` call creates a new instance. When you build a string from several components, use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
+When you build a string from many small pieces in a loop, each `+` or `Concat` call creates a new instance. A better choice is to use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="StringBuilder":::
 
-For a small fixed number of pieces, plain interpolation or `string.Concat` is clearer and just as fast.
+For a small, fixed number of pieces, plain interpolation or `string.Concat` is clearer and just as fast.
 
 ## String literals
 
@@ -44,7 +44,7 @@ C# offers four literal forms. Each form suits different content. As a quick guid
 - Use **regular literals** for short, simple text with at most a few escape sequences.
 - Use **verbatim literals** when backslashes dominate the content, such as Windows paths or regex patterns.
 - Use **raw string literals** for multiline or structurally formatted text, such as inline JSON, SQL, XML, or formatted message blocks.
-- Add a ` prefix to any of the above literals to get an **interpolated string** when you need to embed values.
+- Add a `$` prefix to any of the aforementioned literals to get an **interpolated string** when you need to embed values.
 
 ### Regular literals and escape sequences
 
@@ -88,7 +88,7 @@ Interpolation is the recommended way to compose strings from values in everyday 
 
 ## UTF-8 string literals
 
-A `u8` suffix produces a <xref:System.ReadOnlySpan%601> of UTF-8 bytes instead of a `string`. UTF-8 literals are useful for HTTP, network protocols, file formats, and other byte-oriented APIs that don't need a UTF-16 `string` at all:
+A `u8` suffix produces a <xref:System.ReadOnlySpan`1> of UTF-8 bytes instead of a `string`. UTF-8 literals are useful for HTTP, network protocols, file formats, and other byte-oriented APIs that don't need a UTF-16 `string` at all:
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Utf8Literal":::
 
@@ -108,7 +108,7 @@ Equality on `string` compares the character sequences, not references:
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="EqualityIntro":::
 
-For comparisons that need to be locale- or case-aware, pass an explicit <xref:System.StringComparison> value. Use `StringComparison.Ordinal` for protocol values, identifiers, and other non-linguistic text.
+For comparisons that need to be locale-aware or case-aware, pass an explicit <xref:System.StringComparison> value. Use `StringComparison.Ordinal` for protocol values, identifiers, and other non-linguistic text.
 
 ## Common string operations
 

@@ -29,7 +29,7 @@ The classic use is producing the parameter name in a thrown exception. Pass `nam
 
 :::code language="csharp" source="snippets/nameof/Program.cs" ID="GuardClause":::
 
-For null checks specifically, prefer the framework's helpers. <xref:System.ArgumentNullException.ThrowIfNull%2A> captures the argument's name automatically through <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>, so a separate `nameof` isn't needed:
+For null checks specifically, prefer using exception helpers. These helpers, such as <xref:System.ArgumentNullException.ThrowIfNull*>, capture the argument's name automatically through <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>, so a separate `nameof` isn't needed:
 
 :::code language="csharp" source="snippets/nameof/Program.cs" ID="ThrowIfNull":::
 
@@ -37,7 +37,7 @@ Use `nameof` for the cases the helpers don't cover: <xref:System.ArgumentExcepti
 
 ## Property change notifications
 
-Types that implement <xref:System.ComponentModel.INotifyPropertyChanged> raise an event whose payload includes the changed property's name. Hardcoding the name as a string creates a silent bug if the property is renamed and the string isn't. Use `nameof`:
+Types that implement <xref:System.ComponentModel.INotifyPropertyChanged> raise an event whose payload includes the changed property's name. Hardcoding the name as a string creates a silent bug if the property is renamed and the string isn't. Use `nameof` instead:
 
 :::code language="csharp" source="snippets/nameof/Program.cs" ID="PersonType":::
 
@@ -84,5 +84,5 @@ This recommendation applies to logging messages, exception arguments, attribute 
 - [Strings overview](index.md)
 - [Raw string literals](raw-string-literals.md)
 - [`nameof` operator (language reference)](../../language-reference/operators/nameof.md)
-- <xref:System.ArgumentNullException.ThrowIfNull%2A>
+- <xref:System.ArgumentNullException.ThrowIfNull*>
 - <xref:System.ComponentModel.INotifyPropertyChanged>

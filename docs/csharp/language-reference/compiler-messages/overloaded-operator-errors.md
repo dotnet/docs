@@ -254,7 +254,7 @@ The C# language requires specific pairings and signatures for Boolean operators 
 - **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
 - **CS9027**: *Unexpected keyword 'unchecked'*
 
-The `checked` and `unchecked` keywords can only be applied to specific operator declarations. For the full rules, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
+The `checked` and `unchecked` keywords can only be applied to specific operator declarations. For the full rules, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [Operators](~/_csharpstandard/standard/classes.md#1510-operators) in the C# language specification.
 
 - Remove the `checked` or `unchecked` keyword from an unsupported operator (**CS9023**, **CS9024**). Only the arithmetic operators `+`, `-`, `*`, `/`, `++`, `--`, and explicit conversion operators support checked and unchecked variants. Other operators, such as comparison or equality operators, don't have distinct overflow behavior and can't be marked checked or unchecked.
 - Add a matching non-checked version of the operator (**CS9025**). A `checked` operator provides the overflow-throwing behavior, but the compiler also needs the corresponding unchecked version to use in `unchecked` contexts and as the default when neither context is specified.

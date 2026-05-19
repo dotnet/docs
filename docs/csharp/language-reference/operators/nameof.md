@@ -34,7 +34,7 @@ When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` char
 
 ## C# language specification
 
-For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#12823-the-nameof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md), and the [Extended `nameof` scope](~/_csharplang/proposals/csharp-11.0/extended-nameof-scope.md) feature specification.
+For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#12823-the-nameof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

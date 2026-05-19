@@ -268,7 +268,7 @@ To correct these errors:
 - Remove the `unscoped` modifier or the <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayProperty=nameWithType> attribute from struct constructors and init-only members. These members have special initialization semantics where the compiler must ensure that any references don't outlive the initialization phase, and allowing unscoped references would violate the guarantee that initialization completes before the struct becomes fully accessible (**CS9101**).
 - Remove the `unscoped` modifier from interface implementation methods when the corresponding interface method doesn't have it. The unscoped characteristic affects the method's contract regarding reference lifetime guarantees, and implementations must maintain the same contract as the interface they're implementing to ensure callers can rely on consistent lifetime behavior regardless of which implementation is invoked (**CS9102**).
 
-For more information about scoped and unscoped references, see [Method parameters](../keywords/method-parameters.md) and the [low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) feature specification.
+For more information about scoped and unscoped references, see [Method parameters](../keywords/method-parameters.md) and [Safe context constraint](~/_csharpstandard/standard/structs.md#16515-safe-context-constraint) in the C# language specification.
 
 ## Reference variables require a referent
 

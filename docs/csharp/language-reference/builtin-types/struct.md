@@ -180,7 +180,7 @@ For more information, see the [Structs](~/_csharpstandard/standard/structs.md) s
 - [Allow `with` expression on structs](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
 - [Record structs](~/_csharpstandard/standard/structs.md#164-synthesized-record-struct-members)
 
-You can also read about [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md) in the feature proposal specification.
+You can also read about [Auto default structs](~/_csharpstandard/standard/structs.md#16581-field-initializers) in the C# language specification.
 
 ## See also
 

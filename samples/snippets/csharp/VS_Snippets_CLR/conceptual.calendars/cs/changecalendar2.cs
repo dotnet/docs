@@ -18,10 +18,8 @@ public class Example
 
       // Change the current culture to Arabic (Saudi Arabia).
       Thread.CurrentThread.CurrentCulture = arSA;
-      Calendar umAlQura = new UmAlQuraCalendar();
 
       // Display date and information about the current culture.
-      arSA.DateTimeFormat.Calendar = umAlQura;
       DisplayCurrentInfo();
       Console.WriteLine(date1.ToString("dd'/'MM'/'yyyy"));
       Console.WriteLine();

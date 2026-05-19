@@ -141,12 +141,8 @@ f1_keywords:
   - "CS8027"
   - "CS8028"
   - "CS8029"
-  - "CS8032"
-  - "CS8033"
-  - "CS8034"
   - "CS8035" # build only diagnostic
   - "CS8036"
-  - "CS8040"
   - "CS8055"
   - "CS8057"
   - "CS8058"
@@ -190,7 +186,6 @@ f1_keywords:
   - "CS8138"
   - "CS8179"
   - "CS8180"
-  - "CS8181"
   - "CS8182"
   - "CS8183"
   - "CS8184"
@@ -243,7 +238,6 @@ f1_keywords:
   - "CS8383"
   - "CS8384"
   - "CS8385"
-  - "CS8386"
   # C# 8.0 diagnostics
   - "CS8412"
   - "CS8413"
@@ -266,7 +260,6 @@ f1_keywords:
   - "CS8656"
   - "CS8662"
   - "CS8669"
-  - "CS8700"
   - "CS8701"
   - "CS8702"
   - "CS8707"
@@ -276,16 +269,11 @@ f1_keywords:
   - "CS8750"
   # C# 9 diagnostics start here
   - "CS8751" # misc
-  - "CS8752" # target type new 
-  - "CS8753"
-  - "CS8754"
   - "CS8760" # misc
   - "CS8761"
   - "CS8771"
   - "CS8772"
   - "CS8783" # local function
-  - "CS8784" # source generator
-  - "CS8785"
   - "CS8830" # feature / version
   - "CS8831"
   - "CS8888" # feature / version

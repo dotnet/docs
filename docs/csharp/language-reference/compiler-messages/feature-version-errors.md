@@ -247,7 +247,7 @@ These errors indicate that the `<LangVersion>` setting in your project file or t
 Correct the `<LangVersion>` value in your project file to a valid language version string (**CS1617**, **CS8192**, **CS8303**). The valid values include `default`, `latest`, `preview`, `latestMajor`, or a specific version number such as `7.3`, `8.0`, `9.0`, `10`, `11`, `12`, `13`, or `14`. Don't include leading zeroes in the version number. See [C# language versioning](../language-versioning.md) for the full list of supported values.
 
 > [!TIP]
-> To see a list of supported language versions, you reference the table in this article, compile with `-langversion:?`, or temporarily set `<LangVersion>?</LangVersion>` in your project file before building.
+> To see a list of supported language versions, reference the table in this article, compile with `-langversion:?`, or temporarily set `<LangVersion>?</LangVersion>` in your project file before building.
 
 Update the .NET SDK to a version whose compiler supports the language version you specified (**CS8304**). Each version of the C# compiler supports language versions up to a specific maximum. If you specify a language version newer than the compiler supports, upgrade the SDK.
 
@@ -288,9 +288,9 @@ To learn more about the language versions supported for each framework version, 
 
 These errors all indicate that you're using a language feature that requires a newer C# version than your project currently targets. To resolve these errors, use one of the following options:
 
-Upgrade the target framework so the compiler automatically selects the required language version. Each target framework maps to a default C# version. For example, .NET 8 defaults to C# 12, .NET 9 defaults to C# 13, and .NET 10 defaults to C# 14. See the table in [Language version configuration errors](#language-version-configuration-errors) for the full mapping.
+- Upgrade the target framework so the compiler automatically selects the required language version. Each target framework maps to a default C# version. For example, .NET 8 defaults to C# 12, .NET 9 defaults to C# 13, and .NET 10 defaults to C# 14. See the table in [Language version configuration errors](#language-version-configuration-errors) for the full mapping.
 
-Set the `<LangVersion>` element in your project file to the required version or higher. For example, to enable C# 12 features, add `<LangVersion>12</LangVersion>` to a `<PropertyGroup>` in your project file.
+- Set the `<LangVersion>` element in your project file to the required version or higher. For example, to enable C# 12 features, add `<LangVersion>12</LangVersion>` to a `<PropertyGroup>` in your project file.
 
 If you can't upgrade, avoid the feature that triggered the error. The error message names the feature and the required version. The following list provides additional context for specific errors:
 

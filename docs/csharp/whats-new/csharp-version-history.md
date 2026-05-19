@@ -132,7 +132,7 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
   - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
   - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharpstandard/standard/attributes.md#2359-the-moduleinitializer-attribute)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#23510-the-moduleinitializer-attribute)
   - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
   - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)

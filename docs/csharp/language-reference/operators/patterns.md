@@ -298,7 +298,7 @@ You can also nest a subpattern within a slice pattern, as the following example 
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="SliceWithPattern":::
 
-For more information, see the [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md) feature proposal note.
+For more information, see [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern) in the C# language specification.
 
 ## Union patterns
 
@@ -326,12 +326,11 @@ For more information, see [Union matching](../builtin-types/union.md#union-match
 
 ## C# language specification
 
-For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), including:
 
-For information about features added in C# 11 and later versions, see the following feature proposal notes:
-
-- [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
-- [Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
+- [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern)
+- [Slice pattern](~/_csharpstandard/standard/patterns.md#11212-slice-pattern)
+- [Constant pattern](~/_csharpstandard/standard/patterns.md#1123-constant-pattern)
 
 ## See also
 

@@ -1,7 +1,7 @@
 items:
 - name: C# specifications
   href: index.yml
-- name: C# 10 early draft specification
+- name: C# 11 early draft specification
   items:
   - name: Overview
     href: overview.md
@@ -83,16 +83,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/ignored-directives.md
   - name: Types
     items:
-    - name: File local types
-      href: ../../../_csharplang/proposals/csharp-11.0/file-local-types.md
-    - name: Raw string literals
-      href: ../../../_csharplang/proposals/csharp-11.0/raw-string-literal.md
-    - name: Interpolated string newline
-      href: ../../../_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md
-    - name: UTF-8 string literals
-      href: ../../../_csharplang/proposals/csharp-11.0/utf8-string-literals.md
-    - name: Numeric IntPtr
-      href: ../../../_csharplang/proposals/csharp-11.0/numeric-intptr.md
     - name: Named and optional parameters in expression trees
       href: ../../../_csharplang/proposals/csharp-14.0/optional-and-named-parameters-in-expression-trees.md
   - name: Variables
@@ -103,12 +93,6 @@ items:
     items:
     - name: First class span types
       href: ../../../_csharplang/proposals/csharp-14.0/first-class-span-types.md
-  - name: Patterns
-    items:
-    - name: Pattern match span
-      href: ../../../_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md
-    - name: List patterns
-      href: ../../../_csharplang/proposals/csharp-11.0/list-patterns.md
   - name: Expressions
     items:
     - name: Collection expressions
@@ -123,14 +107,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
     - name: Simple lambda parameters with modifiers
       href: ../../../_csharplang/proposals/csharp-14.0/simple-lambda-parameters-with-modifiers.md
-    - name: Checked user-defined operators
-      href: ../../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
-    - name: Unsigned right-shift operator
-      href: ../../../_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md
-    - name: Relaxing shift operator
-      href: ../../../_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md
-    - name: Extended nameof scope
-      href: ../../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
     - name: Unbound generic types in nameof
       href: ../../../_csharplang/proposals/csharp-14.0/unbound-generic-types-in-nameof.md
     - name: Overload resolution priority
@@ -157,8 +133,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/field-keyword.md
     - name: Primary constructors
       href: ../../../_csharplang/proposals/csharp-12.0/primary-constructors.md
-    - name: Required members
-      href: ../../../_csharplang/proposals/csharp-11.0/required-members.md
     - name: Params collections
       href: ../../../_csharplang/proposals/csharp-13.0/params-collections.md
     - name: Extension members
@@ -167,10 +141,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/extension-operators.md
   - name: Structs
     items:
-    - name: Auto-default struct
-      href: ../../../_csharplang/proposals/csharp-11.0/auto-default-structs.md
-    - name: Low-level struct improvements
-      href: ../../../_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md
     - name: Inline arrays
       href: ../../../_csharplang/proposals/csharp-12.0/inline-arrays.md
   - name: Unions
@@ -179,14 +149,10 @@ items:
       href: ../../../_csharplang/proposals/unions.md
   - name: Interfaces
     items:
-    - name: Static abstracts in interfaces
-      href: ../../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
     - name: Allow ref struct interfaces
       href: ../../../_csharplang/proposals/csharp-13.0/ref-struct-interfaces.md
   - name: Attributes
     items:
-    - name: Generic attributes
-      href: ../../../_csharplang/proposals/csharp-11.0/generic-attributes.md
     - name: Experimental attribute
       href: ../../../_csharplang/proposals/csharp-12.0/experimental-attribute.md
 - name: Deviations from the C# standard

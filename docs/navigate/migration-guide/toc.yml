@@ -9,6 +9,21 @@ items:
       - name: Overview
         href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: copilot, upgrade
+      - name: Install
+        href: ../../core/porting/github-copilot-app-modernization/install.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: Core concepts
+        href: ../../core/porting/github-copilot-app-modernization/concepts.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: Working with the agent
+        href: ../../core/porting/github-copilot-app-modernization/working-with-agent.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: Scenarios and skills reference
+        href: ../../core/porting/github-copilot-app-modernization/scenarios-and-skills.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: Customization
+        href: ../../core/porting/github-copilot-app-modernization/customization.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
       - name: FAQ
         href: ../../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: copilot, upgrade
@@ -18,13 +33,17 @@ items:
           - name: How to upgrade with GitHub Copilot
             href: ../../core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
             displayName: copilot, upgrade
+          - name: How to apply custom upgrade instructions
+            href: ../../core/porting/github-copilot-app-modernization/how-to-custom-upgrade-instructions.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: copilot, upgrade
+          - name: Best practices
+            href: ../../core/porting/github-copilot-app-modernization/best-practices.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: copilot, upgrade
+          - name: Troubleshooting
+            href: ../../core/porting/github-copilot-app-modernization/troubleshooting.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: copilot, upgrade
       - name: Migrate .NET apps to Azure
-        expanded: false
-        items:
-          - name: Migrate a .NET project
-            href: ../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-          - name: Migration sample
-            href: ../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../azure/migration/appmod/predefined-tasks.md
 
   - name: Plan an upgrade from .NET Framework
     items:

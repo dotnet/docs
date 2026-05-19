@@ -127,7 +127,7 @@ but then the pointer is exposed outside of the `fixed` block. This creates a dan
 ### Recommendations
 
 1. ✔️ DO make sure that pointers in `fixed` blocks do not leave the defined scope.
-2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md).
+2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Safe context constraint](/dotnet/csharp/language-reference/language-specification/structs#16515-safe-context-constraint).
 
 ## 3. Internal implementation details of the runtime and libraries
 

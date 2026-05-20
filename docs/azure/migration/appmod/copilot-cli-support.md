@@ -23,16 +23,14 @@ The plugin provides an autonomous, multi-agent workflow that assesses your .NET 
 
 | Capability | Description |
 |---|---|
-| **Azure migration** | Migrate .NET applications to Azure services (Service Bus, Azure SQL, Redis, Key Vault, Application Insights, Managed Identity) |
+| **.NET migration to Azure** | Assess and migrate .NET applications to Azure services (Service Bus, Azure SQL, Redis, Key Vault, Application Insights, Managed Identity), including NuGet security audits and ASP.NET-to-Azure migrations |
 | **CVE and vulnerability fixing** | Scan and fix CVE vulnerabilities in NuGet dependencies |
 | **Application rearchitecture** | Structural rewrites such as monolith-to-microservices decomposition, legacy UI modernization, and module extraction |
-| **.NET migration to Azure** | Assess and migrate .NET applications to Azure, including NuGet security audits and ASP.NET-to-Azure migrations |
 
 ## Prerequisites
 
 - [Install Copilot CLI](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli).
 - A GitHub Copilot subscription. See [Copilot plans](https://github.com/features/copilot/plans?ref_product=copilot).
-- .NET SDK installed.
 
 ## Install the plugin
 
@@ -49,10 +47,10 @@ The plugin provides an autonomous, multi-agent workflow that assesses your .NET 
     copilot plugin install github-copilot-modernization@github-copilot-modernization
     ```
 
-1. Verify the plugin is installed by listing available agents:
+1. Verify the plugin is installed by listing installed plugins:
 
     ```text
-    /agent
+    /plugin list
     ```
 
     You should see `github-copilot-modernization:modernize` in the list.
@@ -151,7 +149,7 @@ Organizations can embed their modernization intent — target architectures, upg
 Place markdown files in the `.github/modernize/playbook/` directory of your project. The planning phase automatically reads all `.md` files in this folder and merges them with assessment results before generating the task plan.
 
 > [!IMPORTANT]
-> Playbook constraints override assessment recommendations. If your playbook specifies "use Azure Service Bus for messaging," that takes precedence regardless of what the assessment discovers.
+> Playbook constraints override assessment recommendations. If your playbook specifies "use Azure Service Bus for messaging" that takes precedence regardless of what the assessment discovers.
 
 ### What you can define in a playbook
 

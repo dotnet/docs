@@ -19,7 +19,7 @@ When you enable nullable reference types, the compiler issues warnings everywher
 - Add or remove a `?` or `!` annotation.
 - Add an attribute that describes the null contract.
 - Initialize variables correctly.
-- Configure the nullable context.
+- Verify the project setting.
 
 This article walks through each technique with a representative example. The goal isn't to silence warnings. It's to make the code's null-handling intent explicit so the compiler reaches the same conclusions you do.
 
@@ -113,19 +113,15 @@ You have several ways to address it. Pick the one that best matches your design 
 
 If a helper method initializes the member, annotate the helper with <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> so the compiler can credit calls to it.
 
-## Configure the nullable context
+## Verify the project setting
 
 New C# projects enable nullable reference types by default, so most code you write or read already has the feature turned on. You generally don't need to configure anything. If you're curious whether a project has it enabled, or you need to change the setting, look for the `<Nullable>` element in the `.csproj`:
 
 :::code language="xml" source="snippets/resolve-warnings/project-snippet.xml":::
 
-The supported values are `enable` (the default for new projects), `disable`, `warnings`, and `annotations`. If the element is missing, the project uses whatever default the SDK and target framework set.
+The common supported values are `enable` (the default for new projects) and `disable`. If the element is missing, the project uses whatever default the SDK and target framework set.
 
-To change the setting for part of a file without affecting the rest of the project, use a [preprocessor directive](../../language-reference/preprocessor-directives.md) (a line starting with `#` that gives instructions to the compiler instead of producing executable code):
-
-:::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullableDirective":::
-
-The `warnings` and `annotations` values turn on only part of the feature, and they're primarily useful in advanced scenarios such as migrating a large existing codebase one piece at a time. For those trade-offs, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md). For everyday work, `enable` and `disable` are the two values you need.
+If you need to enable nullable for only part of a file with `#nullable` directives, or use the partial `warnings` and `annotations` modes when migrating an existing codebase, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 ## Where to go next
 

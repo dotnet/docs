@@ -46,7 +46,7 @@ dotnet new console -n NullableIntroduction
 cd NullableIntroduction
 ```
 
-Open `NullableIntroduction.csproj` and confirm the `<Nullable>enable</Nullable>` element is set in the `PropertyGroup`. Templates from .NET 6 onward include it by default. If it's missing, add it manually:
+Open `NullableIntroduction.csproj`. New console projects from .NET 6 onward set `<Nullable>enable</Nullable>` in the `PropertyGroup`; if it's missing, add it manually:
 
 :::code language="xml" source="snippets/NullableIntroduction/NullableIntroduction.csproj":::
 

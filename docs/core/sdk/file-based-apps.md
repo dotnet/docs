@@ -25,7 +25,8 @@ File-based apps use directives prefixed with `#:` to configure the build and run
 
 ### `#:include`
 
-The `#:include` directive is available in .NET 11 Preview 3 and .NET SDK 10.0.300 and later.
+> [!NOTE]
+> This directive is available in .NET 11 Preview 3 and .NET SDK 10.0.300 and later.
 
 Includes another file in the file-based app.
 

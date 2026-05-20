@@ -405,6 +405,7 @@ The following MSBuild properties are documented in this section:
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
+- [PublishRuntimeIdentifier](#publishruntimeidentifier)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -581,6 +582,15 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
 > - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
 
+### PublishRuntimeIdentifier
+
+The `PublishRuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the `dotnet publish` command. This property is similar to the [RuntimeIdentifier](#runtimeidentifier) property, except that it's specific to the `publish` verb.
+
+```xml
+<PropertyGroup>
+  <PublishRuntimeIdentifier>linux-x64</PublishRuntimeIdentifier>
+</PropertyGroup>
+```
 ### PublishSelfContained
 
 The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.

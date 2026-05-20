@@ -53,14 +53,6 @@ The setter calls `OnPropertyChanged(nameof(Name))` so the property name and the 
 
 If the parameter is renamed, the `nameof` argument is updated by the same refactoring — the attribute can't fall out of date.
 
-## Unbound generic types
-
-Beginning in C# 14, `nameof` accepts an *unbound* generic type. The result is the simple type name without any arity or type-argument list:
-
-:::code language="csharp" source="snippets/nameof/Program.cs" ID="UnboundGenerics":::
-
-This is useful in logging, diagnostic messages, and attribute arguments where the generic type name matters but the type arguments don't.
-
 ## Qualified names
 
 For any qualified expression, `nameof` returns only the *last* identifier:

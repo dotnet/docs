@@ -42,6 +42,8 @@ For multiline content, the opening delimiter ends the line and the closing delim
 
 The newline immediately after the opening `"""` and the newline immediately before the closing `"""` aren't part of the value. They're delimiter whitespace. Likewise, the compiler strips any whitespace to the left of the closing `"""` from every content line, so you can indent the literal to match its enclosing code block without that indentation appearing in the string. The next section covers this rule in detail.
 
+If the content itself contains a run of `"""`, use four or more quotes for the delimiters. The delimiter count just has to exceed the longest run of quotes in the content. See [Raw string literals (language reference)](../../language-reference/tokens/raw-string.md) for the full rules.
+
 ## Indentation: the closing delimiter sets the margin
 
 The column of the closing `"""` defines a left margin. The compiler strips whitespace up to that column from every content line. This rule lets you indent the literal to match the surrounding code without polluting the value:
@@ -50,25 +52,13 @@ The column of the closing `"""` defines a left margin. The compiler strips white
 
 If a content line has fewer leading whitespace characters than the closing delimiter's column, the compiler reports an error. Keep all content lines indented at least as much as the closing `"""`.
 
-## Content that contains `"""`
-
-When the content itself contains a run of three or more quotes, increase the delimiter count. Use four or more quotes at the opening and closing. The delimiter count just has to exceed the longest run of quotes anywhere in the content:
-
-:::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="MoreQuotes":::
-
-You can scale this up to any number of quotes. Five-quote and six-quote delimiters work the same way.
-
 ## Raw interpolated strings
 
 Add a `$` prefix to a raw string to enable interpolation. The expressions in `{}` holes are evaluated, and their results are inserted into the value:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="RawInterpolated":::
 
-If the content also needs literal `{` or `}` characters, which are common when generating JSON, CSS, or code, add more `$` signs. Each `$` raises the number of braces required to mark an interpolation hole. With `$$`, single `{` and `}` are literal and only `{{...}}` is treated as a hole:
-
-:::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="DoubleDollarInterpolation":::
-
-Use any number of `$` signs to disambiguate brace runs. Triple-`$` literals are rare but available.
+If your interpolated content also needs literal `{` or `}` characters, see [Raw string literals (language reference)](../../language-reference/tokens/raw-string.md).
 
 ## When to choose which literal
 

@@ -31,11 +31,9 @@ Prefer the `string` keyword in your own code. It's consistent with the other bui
 
 Because strings are immutable, you can safely share them across methods and threads. This immutability explains why the `string` type behaves like a value type in everyday use even though it's a reference type.
 
-When you build a string from many small pieces in a loop, each `+` or `Concat` call creates a new instance. A better choice is to use <xref:System.Text.StringBuilder>, which appends in place and produces a single string at the end:
+When you build a string from many small pieces in a loop, use <xref:System.Text.StringBuilder> to append in place and produce a single string at the end:
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="StringBuilder":::
-
-For a small, fixed number of pieces, plain interpolation or `string.Concat` is clearer and just as fast.
 
 ## String literals
 
@@ -45,6 +43,7 @@ C# offers four literal forms. Each form suits different content. As a quick guid
 - Use **verbatim literals** when backslashes dominate the content, such as Windows paths or regex patterns.
 - Use **raw string literals** for multiline or structurally formatted text, such as inline JSON, SQL, XML, or formatted message blocks.
 - Add a `$` prefix to any of the aforementioned literals to get an **interpolated string** when you need to embed values.
+- Add a `u8` suffix to a literal to produce a UTF-8 byte sequence (a <xref:System.ReadOnlySpan%601> of `byte`) for byte-oriented APIs. See [UTF-8 string literals](../../language-reference/builtin-types/reference-types.md#utf-8-string-literals) in the language reference for details.
 
 ### Regular literals and escape sequences
 
@@ -85,14 +84,6 @@ A `$` prefix turns a literal into an *interpolated string*. Expressions in `{}` 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Interpolated":::
 
 Interpolation is the recommended way to compose strings from values in everyday code.
-
-## UTF-8 string literals
-
-A `u8` suffix produces a <xref:System.ReadOnlySpan`1> of UTF-8 bytes instead of a `string`. UTF-8 literals are useful for HTTP, network protocols, file formats, and other byte-oriented APIs that don't need a UTF-16 `string` at all:
-
-:::code language="csharp" source="snippets/strings-overview/Program.cs" ID="Utf8Literal":::
-
-The bytes are emitted at compile time, so there's no runtime encoding cost.
 
 ## Indexing and `char`
 

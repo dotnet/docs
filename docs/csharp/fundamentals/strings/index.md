@@ -21,7 +21,7 @@ The `string` keyword and the `String` type name refer to the same type. They com
 
 :::code language="csharp" source="snippets/strings-overview/Program.cs" ID="StringKeyword":::
 
-Prefer the `string` keyword in your own code. It's consistent with the other built-in type keywords (`int`, `bool`, `double`), and it works without a `using System;` directive. Reserve `String` for places where you need to call static members and want the type name visible (for example, `String.IsNullOrEmpty(value)` reads slightly more clearly than `string.IsNullOrEmpty(value)` to some teams — both compile identically).
+Prefer the `string` keyword in your own code. It's consistent with the other built-in type keywords (`int`, `bool`, `double`), and it works without a `using System;` directive.
 
 ## Strings are immutable
 

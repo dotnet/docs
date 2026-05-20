@@ -171,7 +171,6 @@ The following table shows a collection of directory meters used to monitor the O
 | `orleans-directory-lookups-local-directory-successes` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of local directory successful lookups. |
 | `orleans-directory-lookups-cache-issued` | <xref:System.Diagnostics.Metrics.Counter`1> | A count cached lookups issued. |
 | `orleans-directory-lookups-cache-successes` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of cached successful lookups. |
-| `orleans-directory-validations-cache-sent` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of directory cache validations sent.  |
 | `orleans-directory-validations-cache-received` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of directory cache validations received. |
 | `orleans-directory-partition-size` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | An observable gauge representing the directory partition size. |
 | `orleans-directory-cache-size` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | An observable gauge representing the directory cache size. |

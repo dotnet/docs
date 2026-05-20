@@ -71,6 +71,10 @@ For information about new C# features, see [What's new in C# 15](../../../csharp
 
 See [What's new in EF Core for .NET 11](/ef/core/what-is-new/ef-core-11.0/whatsnew).
 
+## Extensions libraries
+
+See [dotnet/extensions release notes](https://github.com/dotnet/extensions/releases).
+
 ## Windows Forms
 
 See [What's new in Windows Forms for .NET 11](/dotnet/desktop/winforms/whats-new/net110).

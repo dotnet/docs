@@ -141,6 +141,46 @@ builder.Services
 
 In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
 
+### Performance considerations
+
+`IOptionsSnapshot<T>` recomputes the options instance on every new scope by
+re-running the full configuration pipeline (`IConfigureOptions<T>`,
+`IConfigureNamedOptions<T>`, `IPostConfigureOptions<T>`, `IValidateOptions<T>`,
+and any `IConfiguration` binding registered via `Configure<T>(section)`). It
+does this whether or not the underlying configuration has actually changed, and
+once per named instance resolved in that scope.
+
+In ASP.NET Core, a scope corresponds to a single HTTP request, so this cost is
+paid on the request hot path. For options whose binding or post-configuration is
+non-trivial (large or deeply nested configuration sections, expensive
+`PostConfigure`, validation, and so on), this can add measurable per-request
+overhead.
+
+Consider the following alternatives:
+
+- If you don't need the value to change after the app starts, prefer
+  `IOptions<T>`. It's a singleton and the value is computed once for the
+  lifetime of the app.
+- If you need to observe configuration changes but want to avoid rebuilding
+  options on every scope, prefer `IOptionsMonitor<T>`. It's a singleton that
+  caches the options instance and only rebuilds when the underlying configuration
+  emits a change notification. Steady-state reads of `CurrentValue` or
+  `Get(name)` are cache hits.
+
+If you still need snapshot semantics (a value guaranteed not to change within a
+scope) but want to avoid the per-scope rebuild cost, you can layer on top of
+`IOptionsMonitor<T>` in one of two ways:
+
+- Capture `monitor.CurrentValue` once at the start of the scope and read it
+  from there for the rest of the scope.
+- Register the options type as scoped with a factory:
+
+  ```csharp
+  services.AddScoped(sp =>
+      sp.GetRequiredService<IOptionsMonitor<MyOptions>>().CurrentValue);
+  ```
+
+
 ## IOptionsMonitor
 
 The `IOptionsMonitor` type supports change notifications and enables scenarios where your app may need to respond to configuration source changes dynamically. This is useful when you need to react to changes in configuration data after the app has started. Change notifications are only supported for file-system based configuration providers, such as the following:

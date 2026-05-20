@@ -1,6 +1,6 @@
 # Draft Plan: Fundamentals Restructuring PR Breakdown
 
-**TL;DR:** Break the ~91-article restructuring into ~31 small, independently mergeable PRs organized in proposed TOC order. Each PR touches ≤10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
+**TL;DR:** Break the ~91-article restructuring into ~35 small, independently mergeable PRs organized in proposed TOC order. Each PR aims for ~10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. PR file budgets are advisory: a PR may exceed ~10 files when relocating text to other sections is the right call (Goal 11), and PRs that grow too large are split along a natural seam using letter suffixes (for example, PR 14a / PR 14b) so downstream PR numbers stay stable. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
 
 **Conventions for every PR:**
 
@@ -32,6 +32,15 @@ The Fundamentals audience is a developer who knows another language and is learn
 - When a feature is recommended as the fix for a diagnostic, run the code and confirm the diagnostic actually clears in the scenario being recommended. Reviewer skepticism ("does that actually work here?") usually means the verification wasn't done.
 - When recommending a modern feature over an older alternative, always include a justification — state *why* the recommended approach is preferred. Never describe older features as obsolete or deprecated (Goal 9).
 
+*Scope discipline (P4) — every section must earn its place in Fundamentals:*
+
+- Apply the two-criteria fit test (Goal 11) to every section, not just every article. *Filter A — universality:* used by almost all C# developers almost all of the time. *Filter B — accessibility:* readable by a developer with less than one month of .NET and C# experience given the Fundamentals coverage that precedes the article.
+- When a section fails Filter A, *cut the text from the Fundamentals draft and paste it into the most appropriate existing destination article* (Language Reference, a Deep dives section, or an Advanced section), with light editing for fit. Don't delete the content — pulled articles often carry valuable detail that simply belongs elsewhere. The canonical example is the nullable-reference-type migration article in PR 9: it targets large pre-C# 8 codebases and fails universality, so its migration-strategy text stays in the existing migration article and the Fundamentals NRT article links out instead of inlining.
+- When an *entire* article fails Filter A, don't pull it into Fundamentals at all. Document the decision as an explicit "leave in place" line item in the affected PR, with a one-line reason. Revisit when that area of the docs is restructured.
+- When content fails Filter B but passes Filter A, *rewrite — don't exclude.* Define vocabulary at first use, simplify the example, and lead with motivation. Accessibility failures are an editing problem, not a scoping problem.
+- Identify destinations at planning time, not at review time. If a PR's draft includes redistributed sections, name the destination files in the PR description before writing so reviewers see the full picture and the destinations don't drift.
+- Accept that redistribution may push a PR's file count above the ~10-file target. Exceeding the budget is acceptable when the alternative is losing content or merging an off-topic Fundamentals article. If the PR grows too large, split it along a natural seam (see the *Mechanics* group below).
+
 *Structural hygiene that supports the principles above:*
 
 - Each article follows concept → example → concept → example structure. The concept discussion should include motivating scenarios for the feature or concept being covered.
@@ -49,6 +58,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 - After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links). This is mandatory for every article before it can be merged to ensure consistency and completeness across the Fundamentals section.
 - Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
 - Do not add links to files that will be created in future PRs until those files are live. For example, if PR 3 creates the `fundamentals/types/enums.md` article, then earlier PRs should not link to that file until PR 3 is merged. This may require some temporary duplication of content or placeholders for links, but it will prevent broken links in merged PRs. Instead, when an article is created, add appropriate links to it in earlier articles as needed to connect the content together.
+- Every PR description lists redistributed content explicitly. For each section moved out of the Fundamentals draft, name the source (which planned Fundamentals article it was cut from), the destination (file path), and a one-line reason — formatted as `source draft article → destination file path → reason`. This keeps the trail visible for downstream review and for future restructuring of the destination area.
 
 ## Phase A: Program Structure (§7)
 
@@ -165,6 +175,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 4. New `fundamentals/strings/nameof.md` — `nameof` (C# 6)
 5. Snippet files + toc.yml
 
+> *Watch for redistribution:* the existing string content (verbatim, escape, raw-literal corners) often includes deep-cut detail (UTF-8 literals, custom interpolated string handlers, `Span<char>` manipulation, allocation comparisons) that fails universality. Cut those sub-sections to a Strings deep dive (or leave them in their current homes) and keep the Fundamentals overview, raw-literal, and `nameof` articles focused on everyday usage.
+
 ### PR 11 — Strings: interpolation + search + split
 
 > ~10 files
@@ -173,6 +185,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 2. Pull `fundamentals/strings/search.md` — from `how-to/search-strings.md`
 3. Pull `fundamentals/strings/split.md` — from `how-to/parse-strings-using-split.md`
 4. toc.yml + redirects
+
+> *Watch for redistribution:* the existing how-to articles for search and split include performance comparisons, regex-vs-method discussions, and `Span<char>`-based variants that fail universality. Cut those sub-sections to a Strings deep dive (or leave them in the existing how-to articles if those originals stay live), and pull only the everyday-usage core into Fundamentals.
 
 ### PR 12 — Strings: concatenate, modify, compare, interpolation tutorial
 
@@ -184,7 +198,9 @@ The Fundamentals audience is a developer who knows another language and is learn
 4. Pull `tutorials/string-interpolation.md` → `fundamentals/tutorials/string-interpolation.md`
 5. toc.yml + redirects
 
-## Phase E: Statements and Expressions (§12–§13) — 2 PRs
+> *Watch for redistribution:* the existing concatenate, modify, and compare how-tos include `StringBuilder` vs. concatenation benchmarks, culture-sensitive comparison deep-dives, and `string.Create`-style allocation guidance. Those sections fail universality — cut them to a Strings deep dive (or globalization content for culture-sensitive comparison) rather than carrying them into Fundamentals.
+
+## Phase E: Statements and Expressions (§12–§13) — 3 PRs
 
 ### PR 13 — Statements: selection + iteration
 
@@ -195,14 +211,24 @@ The Fundamentals audience is a developer who knows another language and is learn
 3. New `fundamentals/statements/iteration-statements.md` — `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops
 4. Snippet files + toc.yml
 
-### PR 14 — Statements: collections + LINQ + equality
+### PR 14a — Statements: collections + LINQ
 
-> ~10 files
+> ~8 files
 
 1. New `fundamentals/statements/collections.md` — Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12); ranges and indexes (C# 8) applied to collections
 2. New `fundamentals/statements/linq.md` — query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios
-3. New `fundamentals/types/equality.md` — value equality vs. reference equality; `Equals`, `==`, `ReferenceEquals`; struct vs. class defaults; `IEquatable<T>`; record equality semantics
-4. Snippet files + toc.yml
+3. Snippet files + toc.yml
+
+### PR 14b — Type system: equality
+
+> ~6 files
+
+1. New `fundamentals/types/equality.md` — value equality vs. reference equality; `Equals`, `==`, `ReferenceEquals`; struct vs. class defaults; `IEquatable<T>`; record equality semantics
+2. Snippet files + toc.yml
+
+> *Split rationale:* equality lives in the Type system area while collections and LINQ live in Statements; the topics share no snippet code and no readers will reach for them together. Splitting also leaves room for the equality redistribution work (move `IEqualityComparer<T>` design, `GetHashCode` contract, and operator overloading rules to Language Reference / OOP deep dive) without crowding collections and LINQ.
+
+> *Watch for redistribution:* the equality article will attract content that fails universality — `IEqualityComparer<T>` design, the full `GetHashCode` contract, operator overloading rules for `==` and `!=`, and equality semantics for ref structs. Move those topics to Language Reference (operator overloading, `GetHashCode` contract) or an OOP deep dive (`IEqualityComparer<T>`), and keep the Fundamentals article scoped to "what `==` and `Equals` do for the types you've already met."
 
 ## Phase F: Pattern Matching + Functional (§11–§12) — 5 PRs
 
@@ -242,6 +268,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 4. Pull `fundamentals/functional/iterators.md` — from `iterators.md` + `programming-guide/concepts/iterators.md`
 5. Snippet files + toc.yml + redirects
 
+> *Watch for redistribution:* the existing iterator content includes state-machine internals, `IAsyncEnumerable` mechanics, custom enumerator authoring, and exception-handling rules around `yield`. Those sections fail universality — move them to Language Reference (state-machine details, exception rules) or an Async/Iterators deep dive (`IAsyncEnumerable`, custom enumerators). Keep the Fundamentals iterators article on consuming and writing simple `yield return` iterators.
+
 ### PR 19 — Tutorial: Functional techniques in C#
 
 > ~4 files
@@ -249,7 +277,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 1. New `fundamentals/tutorials/functional-techniques.md` — breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area
 2. Snippet files + toc.yml
 
-## Phase G: Namespaces (§14) + Object-Oriented Programming (§15) — 8 PRs
+## Phase G: Namespaces (§14) + Object-Oriented Programming (§15) — 10 PRs
 
 ### PR 20 — Namespaces
 
@@ -267,13 +295,25 @@ The Fundamentals audience is a developer who knows another language and is learn
 3. Pull+merge `fundamentals/object-oriented/fields-constants.md` — from `programming-guide/classes-and-structs/fields.md` + `constants.md`; add backing field attributes (C# 7.3)
 4. toc.yml + redirects
 
-### PR 22 — OOP: properties + constructors
+> *Watch for redistribution:* the existing fields content includes `volatile`, `readonly` interaction with structs in detail, `fixed`-size buffers, and ref fields — all of which fail universality. Move those sub-sections to Language Reference (`volatile`, `fixed`) or a memory-model deep dive (ref fields, low-level field semantics). Keep Fundamentals on declaring and using fields and constants.
 
-> ~10 files
+### PR 22a — OOP: properties
+
+> ~6 files
 
 1. Pull+revise `fundamentals/object-oriented/properties.md` — from `programming-guide/classes-and-structs/properties.md` + related; add init-only (C# 9), required (C# 11), `field` keyword (C# 14)
-2. Pull+revise `fundamentals/object-oriented/constructors.md` — from `programming-guide/classes-and-structs/constructors.md` + related; add primary constructors (C# 12)
-3. toc.yml + redirects
+2. Snippet files + toc.yml + redirects
+
+### PR 22b — OOP: constructors
+
+> ~6 files
+
+1. Pull+revise `fundamentals/object-oriented/constructors.md` — from `programming-guide/classes-and-structs/constructors.md` + related; add primary constructors (C# 12)
+2. Snippet files + toc.yml + redirects
+
+> *Split rationale:* the properties article carries three substantial new features (init-only, required, `field`) and the constructors article carries primary constructors plus the redistribution of static-constructor ordering rules. Each is a focused topic with its own snippet code; combining them produced a PR that was both wide and deep.
+
+> *Watch for redistribution:* the existing property and constructor content includes `ref` returns from properties, indexed properties on COM interop, `[ModuleInitializer]`, and detailed static-constructor ordering rules. Those sub-sections fail universality — move them to Language Reference (ref returns, static-constructor ordering, module initializers) or COM-interop content. Keep Fundamentals on declaring properties (including init-only, required, and `field`) and writing instance/primary constructors.
 
 ### PR 23 — OOP: methods + lambdas in OOP
 
@@ -282,6 +322,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 1. Pull+merge `fundamentals/object-oriented/methods.md` — from `programming-guide/classes-and-structs/methods.md` + `methods.md`; add `params` collections (C# 13), expression-bodied
 2. New `fundamentals/object-oriented/lambdas-in-oop.md` — `Func<>`/`Action<>` as parameters, callback patterns, event handlers as lambdas
 3. Snippet files + toc.yml + redirects
+
+> *Watch for redistribution:* the existing methods content includes `ref readonly` parameters, `in` parameters, conditional methods (`[Conditional]`), method-resolution and overload-resolution rule details, and unsafe-context interactions. Those fail universality — move them to Language Reference (overload resolution, conditional methods, parameter modifiers) or an interop/unsafe deep dive. Keep the Fundamentals methods article on declaring methods, parameter passing, optional and named arguments, and `params`.
 
 ### PR 24 — OOP: inheritance merge + interfaces
 
@@ -300,14 +342,24 @@ The Fundamentals audience is a developer who knows another language and is learn
 3. Pull `tutorials/ranges-indexes.md` → `fundamentals/tutorials/ranges.md`
 4. toc.yml + redirects
 
-### PR 26 — OOP: events, partial types, object lifetime
+### PR 26a — OOP: events + partial types
 
-> ~10 files
+> ~6 files
 
 1. Pull subset `fundamentals/object-oriented/events.md` — from `programming-guide/events/`; subscribe/unsubscribe, standard pattern only
 2. New `fundamentals/object-oriented/partial-types.md` — partial classes/structs, partial methods (C# 9), partial properties (C# 13), partial events/constructors (C# 14)
-3. New `fundamentals/object-oriented/object-lifetime.md` — `using` statement, `using` declaration (C# 8), dispose pattern
-4. Snippet files + toc.yml + redirects
+3. Snippet files + toc.yml + redirects
+
+### PR 26b — OOP: object lifetime
+
+> ~5 files
+
+1. New `fundamentals/object-oriented/object-lifetime.md` — `using` statement, `using` declaration (C# 8), dispose pattern
+2. Snippet files + toc.yml
+
+> *Split rationale:* events and partial types are both type-shape topics with shared snippet patterns; object lifetime is a separate concern about resource management with substantial redistribution work (full dispose pattern, finalizers, `SafeHandle`, async-dispose authoring all move to a deep dive). Splitting lets reviewers focus on one concern per PR.
+
+> *Watch for redistribution:* the existing events content includes custom event accessors, weak-event patterns, and threading rules around event invocation — move those to an OOP deep dive. The full dispose pattern (finalizers, `SafeHandle`, suppress-finalize ordering, async-dispose authoring) and detailed garbage-collection interaction also fail universality — move them to a Deep dives article or the existing GC/Standard library content. Keep Fundamentals on subscribing to and raising events with the standard pattern, and on `using`/`using` declarations plus a brief "implement `IDisposable` when you wrap an unmanaged resource" pointer.
 
 ### PR 27 — OOP: encapsulation and composition
 
@@ -316,17 +368,27 @@ The Fundamentals audience is a developer who knows another language and is learn
 1. New `fundamentals/object-oriented/encapsulation-composition.md` — encapsulation as information hiding; composition over inheritance; combining objects to build complex behavior; comparison with inheritance-based designs
 2. Snippet files + toc.yml
 
-## Phase H: Remaining Sections — 4 PRs
+## Phase H: Remaining Sections — 5 PRs
 
-### PR 28 — Async basics + Attributes
+### PR 28a — Async basics
 
-> ~10 files
+> ~6 files
 
 1. Create `fundamentals/async/` directory
 2. Pull `asynchronous-programming/index.md` → `fundamentals/async/index.md` — async programming overview; redirect old URL
 3. New `fundamentals/async/consuming-async.md` — `async`/`await`, task-based pattern, async Main (C# 7.1), brief `await foreach`; link to Async focus section
-4. New `fundamentals/attributes.md` — common attributes, syntax, targets; defer custom attribute creation
-5. Snippet files + toc.yml + redirect
+4. Snippet files + toc.yml + redirect
+
+### PR 28b — Attributes
+
+> ~4 files
+
+1. New `fundamentals/attributes.md` — common attributes, syntax, targets; defer custom attribute creation
+2. Snippet files + toc.yml
+
+> *Split rationale:* async and attributes share neither subject matter nor snippet code; they were combined only to fit the file budget. Each topic also has its own redistribution work (async → Async deep dive; attributes → Language Reference / reflection deep dive). Splitting keeps each PR focused.
+
+> *Watch for redistribution:* the existing async overview includes `ConfigureAwait` rules, synchronization-context internals, `ValueTask`, `IAsyncDisposable`, custom awaiters, and `TaskCompletionSource` patterns — all of which fail universality. Move them to the Async deep dive. The existing attributes content includes custom-attribute authoring, attribute-target rules in detail, and reflection-based attribute reading — move those to Language Reference (attribute syntax and targets) or a reflection deep dive. Keep Fundamentals on consuming async APIs with `await` and on applying common attributes that already exist.
 
 ### PR 29 — XML docs + Coding style + Console app tutorial
 
@@ -359,6 +421,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > Addresses [#34831](https://github.com/dotnet/docs/issues/34831) — clean up the Exceptions section, move LINQ exceptions article to LINQ section, move Non-CLS exceptions to Advanced section.
 
+> *Watch for redistribution:* in addition to the LINQ exceptions and Non-CLS exceptions articles already flagged for relocation, the existing exceptions content includes CLR exception model details, Structured Exception Handling (SEH) interop, first-chance exceptions, and corrupted-state exception rules. Those sub-sections fail universality — move them to a runtime/advanced deep dive. Keep the modernization pass focused on idiomatic everyday exception handling.
+
 ## Verification
 
 - After each PR: verify redirect JSON entries resolve correctly
@@ -376,3 +440,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 - *Namespaces (§14) gets its own small PR (PR 20)* at the start of Phase G; single-article section
 - *Using .NET analyzers gets its own PR (PR 30)* after the Coding style PR; keeps PR 29 at ~10 files
 - *PRs within a phase are sequential* (e.g., Type system PRs 3→6 go in order); *phases are largely independent* and can run in parallel if multiple authors contribute
+- *Two-criteria fit test applied per section* — universality and beginner accessibility (Goal 11). Sections that fail universality are relocated (text moved, not deleted) to Language Reference, Deep dives, or Advanced; sections that fail only accessibility are rewritten in place.
+- *Out-of-scope full articles stay where they are.* Documented as explicit "leave in place" line items in the relevant PR; revisited when that area is restructured. The nullable-reference-type migration article is the canonical example.
+- *PR file budgets are advisory when redistribution is required.* A PR may exceed ~10 files when relocating text to other sections is the right call.
+- *Oversized PRs split along natural seams using letter suffixes* (e.g., PR 14a / PR 14b) so downstream PR numbers stay stable. Current splits: PR 14 → 14a (collections + LINQ) / 14b (equality); PR 22 → 22a (properties) / 22b (constructors); PR 26 → 26a (events + partial types) / 26b (object lifetime); PR 28 → 28a (async basics) / 28b (attributes).

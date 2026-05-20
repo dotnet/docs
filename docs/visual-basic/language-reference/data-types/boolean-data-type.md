@@ -20,7 +20,7 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
   
 ## Remarks  
 
- Use the [Boolean Data Type (Visual Basic)](boolean-data-type.md) to contain two-state values such as true/false, yes/no, or on/off.  
+ Use the `Boolean` data type to contain two-state values such as true/false, yes/no, or on/off.  
   
  The default value of `Boolean` is `False`.  
   

@@ -137,7 +137,6 @@ f1_keywords:
   - "CS8016"
   - "CS8017"
   - "CS8018"
-  - "CS8021"
   - "CS8027"
   - "CS8028"
   - "CS8029"
@@ -260,13 +259,6 @@ f1_keywords:
   - "CS8656"
   - "CS8662"
   - "CS8669"
-  - "CS8701"
-  - "CS8702"
-  - "CS8707"
-  - "CS8712"
-  - "CS8715"
-  - "CS8716"
-  - "CS8750"
   # C# 9 diagnostics start here
   - "CS8751" # misc
   - "CS8760" # misc
@@ -274,22 +266,44 @@ f1_keywords:
   - "CS8771"
   - "CS8772"
   - "CS8783" # local function
-  - "CS8830" # feature / version
-  - "CS8831"
-  - "CS8888" # feature / version
-  - "CS8889"
-  - "CS8890"
-  - "CS8891"
 # Coming in C# 15
   - "CS9343" # misc
-  - "CS9346"
   - "CS9347"
   - "CS9348"
   - "CS9349"
   - "CS9350"
   - "CS9351"
-  - "CS9352"
   - "CS9353"
+# Collection arguments:
+  - "CS9354"
+  - "CS9355"
+  - "CS9356"
+  - "CS9357"
+  - "CS9358"
+  - "CS9359"
+# unsafe evolution
+  - "CS9360"
+  - "CS9361"
+  - "CS9362"
+  - "CS9363"
+  - "CS9364"
+  - "CS9365"
+  - "CS9366"
+# More unions:
+  - "CS9369"
+  - "CS9370"
+  - "CS9371"
+  - "CS9372"
+  - "CS9373"
+  - "CS9374"
+  - "CS9375"
+# More unsafe
+  - "CS9376"
+  - "CS9377"
+# Shebang
+  - "CS9378"
+# More unsafe
+  - "CS9379"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

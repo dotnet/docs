@@ -115,7 +115,7 @@
 | Synapse - Monitoring | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Analytics.Synapse.Monitoring/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Analytics.Synapse.Monitoring-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.Synapse.Monitoring_1.0.0-beta.3/sdk/synapse/Azure.Analytics.Synapse.Monitoring/) |
 | Synapse - Spark | NuGet [1.0.0-preview.8](https://www.nuget.org/packages/Azure.Analytics.Synapse.Spark/1.0.0-preview.8) | [docs](/dotnet/api/overview/azure/Analytics.Synapse.Spark-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-preview.8](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.Synapse.Spark_1.0.0-preview.8/sdk/synapse/Azure.Analytics.Synapse.Spark/) |
 | System Events | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Messaging.EventGrid.SystemEvents/1.0.0) | [docs](/dotnet/api/overview/azure/Messaging.EventGrid.SystemEvents-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventGrid.SystemEvents_1.0.0/sdk/eventgrid/Azure.Messaging.EventGrid.SystemEvents/) |
-| System.ClientModel | NuGet [1.12.0](https://www.nuget.org/packages/System.ClientModel/1.12.0) | [docs](/dotnet/api/overview/azure/System.ClientModel-readme) | GitHub [1.12.0](https://github.com/Azure/azure-sdk-for-net/tree/System.ClientModel_1.12.0/sdk/core/System.ClientModel/) |
+| System.ClientModel | NuGet [1.13.0](https://www.nuget.org/packages/System.ClientModel/1.13.0) | [docs](/dotnet/api/overview/azure/System.ClientModel-readme) | GitHub [1.13.0](https://github.com/Azure/azure-sdk-for-net/tree/System.ClientModel_1.13.0/sdk/core/System.ClientModel/) |
 | Tables | NuGet [12.11.0](https://www.nuget.org/packages/Azure.Data.Tables/12.11.0) | [docs](/dotnet/api/overview/azure/Data.Tables-readme) | GitHub [12.11.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.Tables_12.11.0/sdk/tables/Azure.Data.Tables/) |
 | Text Analytics | NuGet [5.3.0](https://www.nuget.org/packages/Azure.AI.TextAnalytics/5.3.0) | [docs](/dotnet/api/overview/azure/AI.TextAnalytics-readme) | GitHub [5.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.TextAnalytics_5.3.0/sdk/textanalytics/Azure.AI.TextAnalytics/) |
 | Text Authoring | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.AI.Language.Text.Authoring/1.0.0-beta.2) | [docs](/dotnet/api/overview/azure/AI.Language.Text.Authoring-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Language.Text.Authoring_1.0.0-beta.2/sdk/cognitivelanguage/Azure.AI.Language.Text.Authoring/) |
@@ -456,13 +456,13 @@
 | Functions Worker Extension MCP SDK | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.4) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
-| IoT Operations Connector | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.0) |  |  |
+| IoT Operations Connector | NuGet [1.1.1](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.1.1) |  |  |
 | IoT Operations MQTT | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/1.1.0) |  |  |
 | IoT Operations Protocol | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/1.2.0) |  |  |
-| IoT Operations Services | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.2.0) |  |  |
+| IoT Operations Services | NuGet [1.2.1](https://www.nuget.org/packages/Azure.Iot.Operations.Services/1.2.1) |  |  |
 | IoT Operations Templates | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
-| Item Templates NetCore | NuGet [4.0.5544](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5544) |  |  |
-| Item Templates NetFx | NuGet [4.0.5544](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5544) |  |  |
+| Item Templates NetCore | NuGet [4.0.5569](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5569) |  |  |
+| Item Templates NetFx | NuGet [4.0.5569](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5569) |  |  |
 | MCP Template | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp/0.0.12) |  |  |
 | MCP Template | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.12) |  |  |
 | MCP Template | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-x64/0.0.12) |  |  |
@@ -573,7 +573,7 @@
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.536](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.536) |  |  |
-| Functions extension for Cosmos DB | NuGet [4.15.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.15.0) |  | GitHub [4.15.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
+| Functions extension for Cosmos DB | NuGet [4.16.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.16.0) |  | GitHub [4.16.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for Durable Task Framework | NuGet [3.12.5](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.12.5) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.12.5](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.16.5](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.16.5) |  |  |
@@ -595,10 +595,10 @@
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |
-| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5544](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5544) |  | GitHub [4.0.5544](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5569](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5569) |  | GitHub [4.0.5569](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
 | Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
-| Functions project template pack for Microsoft Template Engine | NuGet [4.0.5544](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5544) |  | GitHub [4.0.5544](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions project template pack for Microsoft Template Engine | NuGet [4.0.5569](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5569) |  | GitHub [4.0.5569](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions runtime assemblies for App Insights logging | NuGet [3.0.46](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.46) |  | GitHub [3.0.46](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
 | Functions runtime assemblies for logging | NuGet [4.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.3) |  |  |
 | Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.46](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.46) |  | GitHub [3.0.46](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
@@ -632,8 +632,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [2.52.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.52.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5544](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5544) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5544](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5544) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5569](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5569) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5569](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5569) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [2.0.7](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/2.0.7) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.3.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.3.6) |  |  |

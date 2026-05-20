@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Some Microsoft.Extensions packages included in shared framework
 
-To reduce application size, simplify package dependencies, and streamline servicing, .NET 11 includes nine `Microsoft.Extensions.*` libraries in the base shared framework. Projects that explicitly reference these packages receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510). You can resolve the warning by removing the `PackageReference`. If you depend on an older version of these packages, upgrading to the .NET 11 version might expose previously undocumented breaking changes introduced between older versions and .NET 11.
+To reduce application size, simplify package dependencies, and streamline servicing, .NET 11 includes nine `Microsoft.Extensions.*` libraries in the base shared framework. Projects that explicitly reference these packages receive build warning [NU1510](/nuget/reference/errors-and-warnings/nu1510). You can resolve the warning by removing the `PackageReference`. If you depend on an older version of these packages, upgrading to the .NET 11 version might expose breaking changes introduced between older versions and .NET 11.
 
 ## Version introduced
 
@@ -15,7 +15,7 @@ To reduce application size, simplify package dependencies, and streamline servic
 
 ## Previous behavior
 
-Previously, the following `Microsoft.Extensions.*` libraries weren't part of the .NET base shared framework. Projects that needed them required explicit `PackageReference` entries, and the build process copied the assemblies to the output folder:
+Previously, the following `Microsoft.Extensions.*` libraries weren't part of the .NET shared framework. (You get the shared framework by using `Sdk="Microsoft.NET.Sdk"`, or similarly referencing any of [the other .NET SDKs](../../../project-sdk/overview.md#available-sdks).) Projects that needed them required explicit `PackageReference` entries, and the build process copied the assemblies to the output folder:
 
 - [Microsoft.Extensions.Caching.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Abstractions)
 - [Microsoft.Extensions.Configuration.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Abstractions)

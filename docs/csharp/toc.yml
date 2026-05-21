@@ -94,8 +94,14 @@ items:
       href: fundamentals/strings/index.md
     - name: Raw string literals
       href: fundamentals/strings/raw-string-literals.md
+    - name: String interpolation
+      href: fundamentals/strings/interpolation.md
     - name: nameof operator
       href: fundamentals/strings/nameof.md
+    - name: Search strings
+      href: fundamentals/strings/search.md
+    - name: Split strings into substrings
+      href: fundamentals/strings/split.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -341,12 +347,8 @@ items:
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Split strings into substrings
-    href: how-to/parse-strings-using-split.md
   - name: Concatenate strings
     href: how-to/concatenate-multiple-strings.md
-  - name: Search strings
-    href: how-to/search-strings.md
   - name: Modify string contents
     href: how-to/modify-string-contents.md
   - name: Compare strings

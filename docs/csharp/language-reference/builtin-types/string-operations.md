@@ -1,7 +1,9 @@
 ---
 title: "String operations: pattern matching, performance, and span-based search"
 description: "Learn how to apply regular-expression patterns to strings, search strings with ReadOnlySpan<char>, and pick the right StringComparison for performance."
+ms.topic: reference
 ms.date: 05/21/2026
+ai-usage: ai-assisted
 ---
 
 # String operations: pattern matching, performance, and span-based search

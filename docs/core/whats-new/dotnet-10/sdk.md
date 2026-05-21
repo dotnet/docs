@@ -174,7 +174,7 @@ File-based apps also include enhanced features:
 - **Runtime path access**: App file and directory paths are available at runtime via `System.AppContext.GetData`.
 - **Enhanced shebang support**: Direct shell execution with improved shebang handling, including support for extensionless files.
 
-For multi-file file-based apps that use `#:include`, analyzer [CA2266](../../../fundamentals/code-analysis/quality-rules/ca2266.md) warns when the entry-point file doesn't start with a shebang line.
+To help you identify the entry point in multi-file file-based apps, analyzer [CA2266](../../../fundamentals/code-analysis/quality-rules/ca2266.md) warns when the entry-point file doesn't start with a shebang line.
 
 #### Project referencing example
 

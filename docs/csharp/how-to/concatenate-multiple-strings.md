@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "joining strings [C#]"
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
-ms.custom: copilot-scenario-highlight
 ---
 # How to concatenate multiple strings (C# Guide)
 

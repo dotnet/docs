@@ -23,7 +23,7 @@ public static class Program
 
     private static void SplitWords()
     {
-        // <split-words>
+        // <SplitWords>
         string phrase = "The quick brown fox jumps over the lazy dog.";
         string[] words = phrase.Split(' ');
 
@@ -40,12 +40,12 @@ public static class Program
         // => <the>
         // => <lazy>
         // => <dog.>
-        // </split-words>
+        // </SplitWords>
     }
 
     private static void IndexWords()
     {
-        // <index-words>
+        // <IndexWords>
         string phrase = "The quick brown fox jumps over the lazy dog.";
         string[] words = phrase.Split(' ');
 
@@ -57,12 +57,12 @@ public static class Program
         // => Index 1: <quick>
         // => Index 2: <brown>
         // => ...
-        // </index-words>
+        // </IndexWords>
     }
 
     private static void RepeatedSeparators()
     {
-        // <repeated-separators>
+        // <RepeatedSeparators>
         string phrase = "The quick brown    fox     jumps over the lazy dog.";
         string[] words = phrase.Split(' ');
 
@@ -79,12 +79,12 @@ public static class Program
         // => <>
         // => <fox>
         // => ...
-        // </repeated-separators>
+        // </RepeatedSeparators>
     }
 
     private static void MultiChar()
     {
-        // <multi-char>
+        // <MultiChar>
         char[] delimiters = [' ', ',', '.', ':', '\t'];
 
         string text = "one\ttwo three:four,five six seven";
@@ -105,12 +105,12 @@ public static class Program
         // => <five>
         // => <six>
         // => <seven>
-        // </multi-char>
+        // </MultiChar>
     }
 
     private static void MultiCharGaps()
     {
-        // <multi-char-gaps>
+        // <MultiCharGaps>
         char[] delimiters = [' ', ',', '.', ':', '\t'];
 
         string text = "one\ttwo :,five six seven";
@@ -124,12 +124,12 @@ public static class Program
             Console.WriteLine($"<{word}>");
         }
         // Adjacent delimiters produce empty entries — use StringSplitOptions.RemoveEmptyEntries to drop them.
-        // </multi-char-gaps>
+        // </MultiCharGaps>
     }
 
     private static void StringSeparators()
     {
-        // <string-separators>
+        // <StringSeparators>
         string[] separators = ["<<", "..."];
 
         string text = "one<<two......three<four";
@@ -146,12 +146,12 @@ public static class Program
         // => one
         // => two
         // => three<four
-        // </string-separators>
+        // </StringSeparators>
     }
 
     private static void LimitCount()
     {
-        // <limit-count>
+        // <LimitCount>
         string phrase = "The quick brown fox jumps over the lazy dog.";
         string[] words = phrase.Split(' ', 4, StringSplitOptions.None);
 
@@ -163,12 +163,12 @@ public static class Program
         // => <quick>
         // => <brown>
         // => <fox jumps over the lazy dog.>
-        // </limit-count>
+        // </LimitCount>
     }
 
     private static void TrimEntries()
     {
-        // <trim-entries>
+        // <TrimEntries>
         string numerals = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10";
         string[] trimmed = numerals.Split(',', StringSplitOptions.TrimEntries);
 
@@ -186,6 +186,6 @@ public static class Program
         }
         // => Trimmed entries: <1> <2> ... <10>
         // => Untrimmed entries: <1> < 2> ... < 10>
-        // </trim-entries>
+        // </TrimEntries>
     }
 }

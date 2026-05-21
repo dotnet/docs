@@ -15,7 +15,7 @@ public static class Program
 
     private static void RegexPattern()
     {
-        // <regex-pattern>
+        // <RegexPattern>
         string[] sentences =
         [
             "Put the water over there.",
@@ -38,12 +38,12 @@ public static class Program
                 Console.WriteLine();
             }
         }
-        // </regex-pattern>
+        // </RegexPattern>
     }
 
     private static void RegexValidate()
     {
-        // <regex-validate>
+        // <RegexValidate>
         string[] numbers =
         [
             "123-555-0190",
@@ -67,12 +67,12 @@ public static class Program
             Console.Write($"{s,14}");
             Console.WriteLine(Regex.IsMatch(s, pattern) ? " - valid" : " - invalid");
         }
-        // </regex-validate>
+        // </RegexValidate>
     }
 
     private static void SpanSearch()
     {
-        // <span-search>
+        // <SpanSearch>
         ReadOnlySpan<char> input = "key1=alpha;key2=beta;key3=gamma".AsSpan();
         ReadOnlySpan<char> needle = "key2=".AsSpan();
 
@@ -85,6 +85,6 @@ public static class Program
             Console.WriteLine($"key2 = {value}");
         }
         // => key2 = beta
-        // </span-search>
+        // </SpanSearch>
     }
 }

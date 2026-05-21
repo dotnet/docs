@@ -38,17 +38,17 @@ public static class Program
 
     private static void ContainsChar()
     {
-        // <contains-char>
+        // <ContainsChar>
         string path = "/usr/local/bin";
         bool hasSlash = path.Contains('/');
         Console.WriteLine($"Path contains '/': {hasSlash}");
         // => Path contains '/': True
-        // </contains-char>
+        // </ContainsChar>
     }
 
     private static void IndexOfExample()
     {
-        // <index-of>
+        // <IndexOf>
         string factMessage = "Extension methods have all the capabilities of regular static methods.";
 
         Console.WriteLine($"\"{factMessage}\"");
@@ -60,6 +60,6 @@ public static class Program
         Console.WriteLine($"""Substring between "methods" and "methods": '{between}'""");
         // => "Extension methods have all the capabilities of regular static methods."
         // => Substring between "methods" and "methods": ' have all the capabilities of regular static '
-        // </index-of>
+        // </IndexOf>
     }
 }

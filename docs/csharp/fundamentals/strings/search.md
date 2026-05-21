@@ -18,7 +18,7 @@ The <xref:System.String> class includes methods that answer two everyday questio
 - *Does this string contain that text?* — use <xref:System.String.Contains*>, <xref:System.String.StartsWith*>, or <xref:System.String.EndsWith*>.
 - *Where does that text occur?* — use <xref:System.String.IndexOf*> or <xref:System.String.LastIndexOf*>.
 
-For pattern matching (regular expressions), span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../standard/base-types/best-practices-strings.md).
+For pattern matching (regular expressions), span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../standard/base-types/best-practices-strings.md).
 
 ## Check whether a string contains text
 
@@ -30,13 +30,13 @@ These methods default to **case-sensitive, ordinal** comparison. To accept user 
 
 When you search for a single character, use the `char` overload of `Contains`. It avoids allocating a one-character string and is more direct:
 
-:::code language="csharp" source="snippets/search/Program.cs" id="contains-char":::
+:::code language="csharp" source="snippets/search/Program.cs" id="ContainsChar":::
 
 ## Locate the position of text
 
 `IndexOf` returns the zero-based index of the first occurrence of a substring (or character), and `LastIndexOf` returns the index of the last occurrence. Both return `-1` when the search text isn't present. Combine them to extract the text between two markers:
 
-:::code language="csharp" source="snippets/search/Program.cs" id="index-of":::
+:::code language="csharp" source="snippets/search/Program.cs" id="IndexOf":::
 
 When you need every occurrence rather than the first or last, iterate by passing the previous result plus one as the `startIndex` argument, or switch to a regular expression.
 
@@ -57,7 +57,7 @@ Ordinal comparison is the fastest option and the right default for anything that
 ## See also
 
 - [String operations: pattern matching, performance, and span-based search](../../language-reference/builtin-types/string-operations.md)
-- [Best practices for comparing strings in .NET](../../standard/base-types/best-practices-strings.md)
-- [Comparing strings](../../standard/base-types/comparing.md)
+- [Best practices for comparing strings in .NET](../../../standard/base-types/best-practices-strings.md)
+- [Comparing strings](../../../standard/base-types/comparing.md)
 - <xref:System.String?displayProperty=nameWithType>
 - <xref:System.StringComparison?displayProperty=nameWithType>

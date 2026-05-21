@@ -42,11 +42,11 @@ public static class Program
 
     private static void FormatString()
     {
-        // <format-string>
+        // <FormatString>
         var date = new DateTime(1731, 11, 25);
         Console.WriteLine($"On {date:dddd, MMMM dd, yyyy} L. Euler introduced the letter e to denote {Math.E:F5}.");
         // => On Sunday, November 25, 1731 L. Euler introduced the letter e to denote 2.71828.
-        // </format-string>
+        // </FormatString>
     }
 
     private static void Alignment()
@@ -77,7 +77,7 @@ public static class Program
 
     private static void AlignmentAndFormat()
     {
-        // <alignment-and-format>
+        // <AlignmentAndFormat>
         const int NameAlignment = -9;
         const int ValueAlignment = 7;
         double a = 3;
@@ -90,7 +90,7 @@ public static class Program
         // => |Arithmetic|  3.500|
         // => |Geometric|  3.464|
         // => |Harmonic |  3.429|
-        // </alignment-and-format>
+        // </AlignmentAndFormat>
     }
 
     private static void Escapes()
@@ -137,12 +137,12 @@ public static class Program
 
     private static void ConstantInterpolated()
     {
-        // <constant-interpolated>
+        // <ConstantInterpolated>
         const string Audience = "world";
         const string Greeting = $"Hello, {Audience}!";
         Console.WriteLine(Greeting);
         // => Hello, world!
-        // </constant-interpolated>
+        // </ConstantInterpolated>
     }
 
     private static void Culture()

@@ -22,7 +22,7 @@ The following example searches each sentence for the word *the* or *their*, case
 | `(ir)?`  | match 0 or 1 occurrence of `ir`  |
 | `\s`     | match a whitespace character     |
 
-:::code language="csharp" source="snippets/string-operations/Program.cs" id="regex-pattern":::
+:::code language="csharp" source="snippets/string-operations/Program.cs" id="RegexPattern":::
 
 ## Validate strings against a pattern
 
@@ -36,7 +36,7 @@ To check whether an entire input matches a shape, anchor the pattern with `^` an
 | `\d{4}` | match exactly four digit characters    |
 | `$`     | match the end of the string            |
 
-:::code language="csharp" source="snippets/string-operations/Program.cs" id="regex-validate":::
+:::code language="csharp" source="snippets/string-operations/Program.cs" id="RegexValidate":::
 
 For the full pattern syntax, see [Regular expression language — quick reference](../../../standard/base-types/regular-expression-language-quick-reference.md).
 
@@ -48,7 +48,7 @@ For the full pattern syntax, see [Regular expression language — quick referenc
 
 When you parse large inputs or run a search on a hot path, the per-call allocations of `string.Substring` and `string.Split` can dominate. `ReadOnlySpan<char>` gives you a view over an existing string (or array, or stack buffer) without copying, and <xref:System.MemoryExtensions> provides span-based equivalents of the common `string` methods, including <xref:System.MemoryExtensions.IndexOf*>:
 
-:::code language="csharp" source="snippets/string-operations/Program.cs" id="span-search":::
+:::code language="csharp" source="snippets/string-operations/Program.cs" id="SpanSearch":::
 
 Span-based search avoids allocations because the slices (`input[start..]`, `rest[..end]`) are simply windows over the original characters. The same approach scales to parsing key-value lists, headers, and other delimited text without ever calling `Substring`.
 

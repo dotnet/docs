@@ -17,13 +17,13 @@ ai-usage: ai-assisted
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="general":::
 
-Each `{ }` is an *interpolation expression*. C# evaluates the expression, converts the result to a string by calling its `ToString` method, and substitutes the text into the result. If the expression evaluates to `null`, C# substitutes an empty string. Interpolated strings are a more readable alternative to <xref:System.String.Format*?displayProperty=nameWithType> and support the full [composite formatting](../../standard/base-types/composite-formatting.md) feature set.
+Each `{ }` is an *interpolation expression*. C# evaluates the expression, converts the result to a string by calling its `ToString` method, and substitutes the text into the result. If the expression evaluates to `null`, C# substitutes an empty string. Interpolated strings are a more readable alternative to <xref:System.String.Format*?displayProperty=nameWithType> and support the full [composite formatting](../../../standard/base-types/composite-formatting.md) feature set.
 
 For the language-reference treatment of the syntax and the underlying handler types, see [interpolated string token](../../language-reference/tokens/interpolated.md). For performance-focused topics such as `Span<char>` interpolation and custom interpolated string handlers, see [String operations](../../language-reference/builtin-types/string-operations.md).
 
 ## Apply a format string
 
-To control how an expression result is formatted, follow the expression with a colon and a [standard or custom format string](../../standard/base-types/formatting-types.md):
+To control how an expression result is formatted, follow the expression with a colon and a [standard or custom format string](../../../standard/base-types/formatting-types.md):
 
 ```csharp
 {<expression>:<formatString>}
@@ -31,7 +31,7 @@ To control how an expression result is formatted, follow the expression with a c
 
 The following example formats a date and a numeric value:
 
-:::code language="csharp" source="snippets/interpolation/Program.cs" id="format-string":::
+:::code language="csharp" source="snippets/interpolation/Program.cs" id="FormatString":::
 
 ## Set the field width and alignment
 
@@ -49,7 +49,7 @@ When you need both alignment and a format string, put alignment first:
 {<expression>,<width>:<formatString>}
 ```
 
-:::code language="csharp" source="snippets/interpolation/Program.cs" id="alignment-and-format":::
+:::code language="csharp" source="snippets/interpolation/Program.cs" id="AlignmentAndFormat":::
 
 If the formatted value is longer than the requested width, C# ignores the width and emits the full value.
 
@@ -80,7 +80,7 @@ For better readability, you can break long interpolation expressions across mult
 
 When every interpolated expression is itself a constant `string`, the whole interpolated string is also a `const`. That makes it usable for attribute arguments, `switch` patterns, and other contexts that require compile-time constants:
 
-:::code language="csharp" source="snippets/interpolation/Program.cs" id="constant-interpolated":::
+:::code language="csharp" source="snippets/interpolation/Program.cs" id="ConstantInterpolated":::
 
 ## Format with a specific culture
 
@@ -96,7 +96,7 @@ For invariant output (logs, file formats, machine-readable data), pass <xref:Sys
 
 - [Interpolated string token](../../language-reference/tokens/interpolated.md)
 - [String operations: pattern matching, performance, and span-based search](../../language-reference/builtin-types/string-operations.md)
-- [Composite formatting](../../standard/base-types/composite-formatting.md)
-- [Formatting types in .NET](../../standard/base-types/formatting-types.md)
+- [Composite formatting](../../../standard/base-types/composite-formatting.md)
+- [Formatting types in .NET](../../../standard/base-types/formatting-types.md)
 - <xref:System.String.Format*?displayProperty=nameWithType>
 - <xref:System.FormattableString?displayProperty=nameWithType>

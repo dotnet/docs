@@ -28,15 +28,15 @@ The rest of this article walks through the common combinations.
 
 To split a phrase on whitespace, pass `' '` as the separator:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="split-words":::
+:::code language="csharp" source="snippets/split/Program.cs" id="SplitWords":::
 
 The returned array is zero-indexed, so you can iterate over it with `for` to recover the position of each word:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="index-words":::
+:::code language="csharp" source="snippets/split/Program.cs" id="IndexWords":::
 
 If the input contains runs of the separator character, `Split` produces empty entries — one for each "gap" between consecutive separators:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="repeated-separators":::
+:::code language="csharp" source="snippets/split/Program.cs" id="RepeatedSeparators":::
 
 Pass `StringSplitOptions.RemoveEmptyEntries` to drop those empty entries (shown later).
 
@@ -44,23 +44,23 @@ Pass `StringSplitOptions.RemoveEmptyEntries` to drop those empty entries (shown 
 
 When more than one character can act as a separator, pass them as an array. The following example treats spaces, commas, periods, colons, and tabs all as word boundaries:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="multi-char":::
+:::code language="csharp" source="snippets/split/Program.cs" id="MultiChar":::
 
 Adjacent separators still produce empty entries:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="multi-char-gaps":::
+:::code language="csharp" source="snippets/split/Program.cs" id="MultiCharGaps":::
 
-## Split on multi-character separators
+## Split on MultiCharacter separators
 
-To split on whole-word or multi-character separators, pass an array of strings together with a <xref:System.StringSplitOptions> value:
+To split on whole-word or MultiCharacter separators, pass an array of strings together with a <xref:System.StringSplitOptions> value:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="string-separators":::
+:::code language="csharp" source="snippets/split/Program.cs" id="StringSeparators":::
 
 ## Limit how many substrings you get back
 
 Pass a `count` argument to cap the number of results. The final entry holds everything that's left, including any remaining separators:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="limit-count":::
+:::code language="csharp" source="snippets/split/Program.cs" id="LimitCount":::
 
 This pattern is handy for `key=value` pairs and other formats where only the first separator is meaningful.
 
@@ -68,7 +68,7 @@ This pattern is handy for `key=value` pairs and other formats where only the fir
 
 `StringSplitOptions.TrimEntries` strips leading and trailing whitespace from every returned substring. You can combine it with `RemoveEmptyEntries` for typical CSV-style cleanup:
 
-:::code language="csharp" source="snippets/split/Program.cs" id="trim-entries":::
+:::code language="csharp" source="snippets/split/Program.cs" id="TrimEntries":::
 
 ## When to reach for a regular expression
 
@@ -79,4 +79,4 @@ This pattern is handy for `key=value` pairs and other formats where only the fir
 - <xref:System.String.Split*?displayProperty=nameWithType>
 - <xref:System.StringSplitOptions?displayProperty=nameWithType>
 - [String operations: pattern matching, performance, and span-based search](../../language-reference/builtin-types/string-operations.md)
-- [Extract elements from a string](../../standard/base-types/divide-up-strings.md)
+- [Extract elements from a string](../../../standard/base-types/divide-up-strings.md)

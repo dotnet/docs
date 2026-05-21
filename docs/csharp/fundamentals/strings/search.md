@@ -11,14 +11,14 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
-> **Coming from another language?** C# `string` methods such as `Contains`, `StartsWith`, and `IndexOf` parallel methods in Java's `String` and JavaScript's `String.prototype`. The key difference is that C# searches default to **ordinal, case-sensitive** comparison; for user-facing searches you might want to pass a <xref:System.StringComparison> value.
+> **Coming from another language?** C# `string` methods such as `Contains`, `StartsWith`, and `IndexOf` parallel methods in Java's `String` and JavaScript's `String.prototype`. The key difference is that some C# searches default to **ordinal, case-sensitive** comparison. Others default to the current culture's semantics. For user-facing searches, you might want to pass a <xref:System.StringComparison> value.
 
 The <xref:System.String> class includes methods that answer two everyday questions:
 
 - *Does this string contain that text?* — use <xref:System.String.Contains*>, <xref:System.String.StartsWith*>, or <xref:System.String.EndsWith*>.
 - *Where does that text occur?* — use <xref:System.String.IndexOf*> or <xref:System.String.LastIndexOf*>.
 
-For pattern matching (regular expressions), span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../standard/base-types/best-practices-strings.md).
+For regular expressions, span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../standard/base-types/best-practices-strings.md).
 
 ## Check whether a string contains text
 
@@ -44,15 +44,13 @@ When you need every occurrence rather than the first or last, iterate by passing
 
 Most search overloads accept an optional <xref:System.StringComparison> value. Pick it based on the kind of data you're searching:
 
-| Scenario                                                                | Recommended value                                               |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------|
-| Identifiers, file paths, protocol tokens, anything machine-defined      | <xref:System.StringComparison.Ordinal>                          |
-| Same as above, but you want case insensitivity                          | <xref:System.StringComparison.OrdinalIgnoreCase>                |
-| User-visible text where the current locale's rules should apply         | <xref:System.StringComparison.CurrentCulture>                   |
-| Same as above, ignoring case                                            | <xref:System.StringComparison.CurrentCultureIgnoreCase>         |
-| Persisted data that must compare the same on every machine and culture  | <xref:System.StringComparison.InvariantCulture> (rarely needed) |
+- If you're searching identifiers, file paths, protocol tokens, or anything else machine-defined, use <xref:System.StringComparison.Ordinal>.
+- If you're searching the same kind of machine-defined data but want case insensitivity, use <xref:System.StringComparison.OrdinalIgnoreCase>.
+- If you're searching user-visible text where the current locale's rules should apply, use <xref:System.StringComparison.CurrentCulture>.
+- If you're searching that same user-visible text and want to ignore case, use <xref:System.StringComparison.CurrentCultureIgnoreCase>.
+- If you're searching persisted data that must compare the same on every machine and culture, use <xref:System.StringComparison.InvariantCulture> (rarely needed).
 
-Ordinal comparison is the fastest option and the right default for anything that isn't natural-language text. Culture-aware comparison is significantly slower and can produce surprising results — for example, in some cultures the lowercase `i` doesn't match an uppercase `I` — so reserve it for searches that real users perform against real prose.
+Ordinal comparison is the fastest option and the right default for anything that isn't natural-language text. Culture-aware comparison is significantly slower and can produce surprising results. For example, in some cultures the lowercase `i` doesn't match an uppercase `I`.Reserve it for searches that users perform against prose.
 
 ## See also
 

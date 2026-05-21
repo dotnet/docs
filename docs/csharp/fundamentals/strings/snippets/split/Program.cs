@@ -123,7 +123,14 @@ public static class Program
         {
             Console.WriteLine($"<{word}>");
         }
-        // Adjacent delimiters produce empty entries — use StringSplitOptions.RemoveEmptyEntries to drop them.
+        // => 7 words in text:
+        // => <one>
+        // => <two>
+        // => <>
+        // => <>
+        // => <five>
+        // => <six>
+        // => <seven>
         // </MultiCharGaps>
     }
 

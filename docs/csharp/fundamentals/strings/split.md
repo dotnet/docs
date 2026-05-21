@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
-> **Coming from another language?** `string.Split` is C#'s counterpart to Java's `String.split` and JavaScript's `String.prototype.split`. Unlike those languages, C# returns an array (`string[]`), not a list, and the separator argument is a character or string — never a regular expression. For pattern-based splitting, see <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>.
+> **Coming from another language?** `string.Split` is C#'s counterpart to Java's `String.split` and JavaScript's `String.prototype.split`. Unlike those languages, C# returns an array (`string[]`), not a list, and the separator argument is a character or string, not a regular expression. For pattern-based splitting, see <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>.
 
 The <xref:System.String.Split*?displayProperty=nameWithType> method breaks a string into an array of substrings using one or more separators. It's the simplest way to parse delimited text such as words, CSV-style values, or protocol tokens.
 
@@ -30,11 +30,11 @@ To split a phrase on whitespace, pass `' '` as the separator:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="SplitWords":::
 
-The returned array is zero-indexed, so you can iterate over it with `for` to recover the position of each word:
+Iterate the returned array with `for` to recover the position of each word:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="IndexWords":::
 
-If the input contains runs of the separator character, `Split` produces empty entries — one for each "gap" between consecutive separators:
+If the input contains runs of the separator character, `Split` produces empty entries, one for each "gap" between consecutive separators:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="RepeatedSeparators":::
 
@@ -50,9 +50,9 @@ Adjacent separators still produce empty entries:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="MultiCharGaps":::
 
-## Split on MultiCharacter separators
+## Split on multicharacter separators
 
-To split on whole-word or MultiCharacter separators, pass an array of strings together with a <xref:System.StringSplitOptions> value:
+To split on whole-word or multicharacter separators, pass an array of strings together with a <xref:System.StringSplitOptions> value:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="StringSeparators":::
 
@@ -70,9 +70,9 @@ This pattern is handy for `key=value` pairs and other formats where only the fir
 
 :::code language="csharp" source="snippets/split/Program.cs" id="TrimEntries":::
 
-## When to reach for a regular expression
+## Use regular expressions
 
-`Split` works well for fixed character or string delimiters. For pattern-based splitting — for example, "split on any run of whitespace" or "split on either `;` or `, `" — use <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>. See [String operations](../../language-reference/builtin-types/string-operations.md) for an introduction to regular expressions on strings.
+`Split` works well for fixed character or string delimiters. For pattern-based splitting, use <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>. See [String operations](../../language-reference/builtin-types/string-operations.md) for an introduction to regular expressions on strings.
 
 ## See also
 

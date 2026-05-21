@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 >
 > **Coming from another language?** String interpolation in C# works much like template literals in JavaScript (`` `${x}` ``) or f-strings in Python (`f"{x}"`). The expression inside `{}` can be any valid C# expression, and you can add format and alignment specifiers without leaving the string.
 
-*String interpolation* lets you embed expression results directly in a string literal by prefixing the literal with `$`:
+*String interpolation* lets you embed expressions directly in a string literal by prefixing the literal with `$`:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="general":::
 
@@ -35,7 +35,7 @@ The following example formats a date and a numeric value:
 
 ## Set the field width and alignment
 
-To produce aligned output, follow the expression with a comma and a minimum field width. Positive widths right-align the value; negative widths left-align it:
+To produce aligned output, follow the expression with a comma and a minimum field width. Positive widths right-align the value, and negative widths left-align it:
 
 ```csharp
 {<expression>,<width>}
@@ -63,13 +63,13 @@ For paths and other strings that contain backslashes, prefer an [interpolated ra
 
 ## Use a conditional expression
 
-The colon has special meaning inside an interpolation expression, so wrap a [ternary conditional operator](../../language-reference/operators/conditional-operator.md) in parentheses:
+The colon has special meaning inside an interpolation expression, so wrap a [conditional operator](../../language-reference/operators/conditional-operator.md) in parentheses:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="conditional":::
 
 ## Span an expression across multiple lines
 
-For better readability, you can break long interpolation expressions across multiple lines. The example below uses an [interpolated raw string literal](../../language-reference/tokens/raw-string.md) so the expression body can wrap freely:
+For better readability, break long interpolation expressions across multiple lines. The following example uses an [interpolated raw string literal](../../language-reference/tokens/raw-string.md) so the expression body can wrap freely:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="newlines":::
 

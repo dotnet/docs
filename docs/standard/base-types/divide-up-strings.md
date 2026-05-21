@@ -132,5 +132,5 @@ The next example uses the index-from-end operator to remove a file extension (th
 ## See also
 
 - [.NET regular expressions](regular-expressions.md)
-- [How to parse strings using String.Split in C#](../../csharp/how-to/parse-strings-using-split.md)
+- [Split strings into substrings in C#](../../csharp/fundamentals/strings/split.md)
 - [Indices and ranges (C# guide)](../../csharp/tutorials/ranges-indexes.md)

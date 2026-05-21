@@ -36,7 +36,7 @@ A single-line raw string can't be empty between its delimiters. It can end with 
 
 ## Multiline raw strings
 
-For multiline content, the opening delimiter ends the line and the closing delimiter starts its own. As with single-line raw strings, the delimiter is three or more double quotes, and the closing delimiter must use the same number of quotes as the opening one. Three quotes is the common case, but you can use four, five, or more when the content itself contains a run of `"""` (see [Content that contains `"""`](#content-that-contains-)). Everything between the two delimiters is the value of the string, exactly as written:
+For multiline content, the opening delimiter ends the line and the closing delimiter starts its own. As with single-line raw strings, the delimiter is three or more double quotes, and the closing delimiter must use the same number of quotes as the opening one. Three quotes is the common case, but you can use four, five, or more when the content itself contains a run of `"""`. Everything between the two delimiters is the value of the string, exactly as written:
 
 :::code language="csharp" source="snippets/raw-string-literals/Program.cs" ID="Multiline":::
 

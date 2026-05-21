@@ -12,9 +12,6 @@ ms.custom: copilot-scenario-highlight
 
 *Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the `+` operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
 
-> [!TIP]
-> You can use AI assistance to [concatenate strings](#use-ai-to-concatenate-strings).
-
 ## String literals
 
 The following example splits a long string literal into smaller strings to improve readability in the source code. The code concatenates the smaller strings to create the long string literal. The parts are concatenated into a single string at compile time. There's no run-time performance cost regardless of the number of strings involved.
@@ -68,28 +65,8 @@ combines an array of words, adding a space between each word in the array:
 
 This option can cause more allocations than other methods for concatenating collections, as it creates an intermediate string for each iteration. If optimizing performance is critical, consider the [`StringBuilder`](#stringbuilder) class or the [`String.Concat` or `String.Join`](#stringconcat-or-stringjoin) method to concatenate a collection, instead of `Enumerable.Aggregate`.
 
-## Use AI to concatenate strings
-
-You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate strings. You can customize the prompt to specify the output format, variables, and the method to use per your requirements.
-
-Here's an example Copilot Chat prompt:
-
-```copilot-prompt
-Generate C# code to use string interpolation to build an output string:
-"Hello [name], today's date is [current date]. You have [count] new notifications."
-Use variables for: name is "John", date is today's date, and notification count is 3.
-Format the date as mm/dd/yyyy.
-Show the output.
-```
-
-Review Copilot's suggestions before applying them.
-
-For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
-
 ## See also
 
 - <xref:System.String>
 - <xref:System.Text.StringBuilder>
 - [Strings](../programming-guide/strings/index.md)
-- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

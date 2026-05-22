@@ -5,7 +5,7 @@ description: Assess and migrate your .NET project with GitHub Copilot. Learn how
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 01/26/2026
-zone_pivot_groups: ide-set-one
+zone_pivot_groups: copilot-modernization-install
 #customer intent: As a .NET developer, I want to assess my project's migration readiness so that I can identify potential challenges and plan the modernization process effectively.
 ---
 
@@ -22,6 +22,10 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 
 ::: zone pivot="vscode"  
 [!INCLUDE [quickstart-vscode](./includes/quickstart-vscode.md)]
+::: zone-end
+
+::: zone pivot="copilot-cli"
+[!INCLUDE [quickstart-copilot-cli](./includes/quickstart-copilot-cli.md)]
 ::: zone-end
 
 ## Next Steps

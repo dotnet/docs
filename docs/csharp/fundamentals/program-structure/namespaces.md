@@ -52,7 +52,7 @@ File-scoped namespaces reduce nesting and make files easier to read. You can onl
 Use *block-scoped* syntax when you need to declare more than one namespace in the same file. This style adds an extra level of indentation.
 
 > [!IMPORTANT]
-> It's considered bad-practice to declare more than one namespace in the same file. The more common scenario is to use *file-scoped* namespaces.
+> It's rare to declare more than one namespace in the same file. The more common scenario is to use *file-scoped* namespaces.
 
 The following snippet is an example of a *block-scoped* namespace:
 
@@ -60,11 +60,11 @@ The following snippet is an example of a *block-scoped* namespace:
 
 ## Using directives
 
-Without a `using` directive, you must refer to every type by its *fully qualified name*, the complete namespace path plus the type name:
+Without a `using` directive, you must refer to every type by its *fully qualified name*, the complete namespace path plus the type name. This style is verbose, repetitive, and harder to read, especially when a file uses many types from the same namespace:
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="FullyQualifiedName":::
 
-A `using` directive at the top of a file imports a namespace so you can use its types by their simple names:
+A `using` directive at the top of a file imports a namespace so you can use its types by their simple names. The directive appears once, and every reference in the file becomes shorter and easier to read:
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="UsingDirective":::
 
@@ -72,17 +72,20 @@ For more information, see the [`using` directive](../../language-reference/keywo
 
 ### Global using directives
 
-If you write the same `using` directives in every file, *global using* directives let you declare them once for your entire project. Place them in any file. Many teams create a dedicated `GlobalUsings.cs` file:
+A `using` directive only applies to the file it appears in. When you write the same `using` directives in every file, *global using* directives let you declare them once for your entire project. Place them in any file. Many teams create a dedicated `GlobalUsings.cs` file:
 
 :::code language="csharp" source="snippets/namespaces/GlobalUsings.cs" id="GlobalUsings":::
 
-After declaring a global using, every file in the project can refer to types from that namespace by using simple names without an additional `using` directive.
+After declaring a global using, every file in the project can refer to types from that namespace by their simple names without an additional `using` directive. Global usings remove repetition across files, shrink the `using` block at the top of each file, and centralize namespace policy for the project.
 
 ### Implicit usings
 
-The .NET SDK automatically generates global using directives for the most common namespaces based on your project type. Enable implicit usings by setting `<ImplicitUsings>enable</ImplicitUsings>` in your project file. For example, a console app project automatically imports `System`, `System.Collections.Generic`, `System.IO`, `System.Linq`, `System.Threading`, and `System.Threading.Tasks`. The current SDK enables `ImplicitUsings` when you create a new project by using `dotnet new`.
+For the most common namespaces, you don't have to write any `using` directives at all. The .NET SDK automatically generates global using directives based on your project type. Enable implicit usings by setting `<ImplicitUsings>enable</ImplicitUsings>` in your project file. For example, a console app project automatically imports <xref:System?displayProperty=fullName>, <xref:System.Collections.Generic?displayProperty=fullName>, <xref:System.IO?displayProperty=fullName>, <xref:System.Linq?displayProperty=fullName>, <xref:System.Threading?displayProperty=fullName>, and <xref:System.Threading.Tasks?displayProperty=fullName>. The current SDK enables `ImplicitUsings` when you create a new project by using `dotnet new`. New files start clean, with no boilerplate `using` block for everyday types like <xref:System.Console>, <xref:System.Collections.Generic.List`1>, or <xref:System.Threading.Tasks.Task>.
 
 For more information, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
+
+> [!NOTE]
+> The other code samples in this article, and most samples throughout the .NET docs, assume that implicit usings (or the equivalent global usings for the workload) are enabled. That's why you don't see `using System;` and similar directives at the top of each snippet, even though the code uses types like `Console` or `List<T>` by their simple names.
 
 ### Static using directives
 

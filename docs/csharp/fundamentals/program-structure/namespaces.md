@@ -64,7 +64,7 @@ Without a `using` directive, you must refer to every type by its *fully qualifie
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="FullyQualifiedName":::
 
-A `using` directive at the top of a file imports a namespace so you can use its types by their simple names. The directive appears once, and every reference in the file becomes shorter and easier to read:
+A `using` directive at the top of a file imports a namespace so you can use its types by their simple names. The following snippet shows the shorter type usage after that import, which keeps references throughout the file shorter and easier to read:
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="UsingDirective":::
 
@@ -80,7 +80,7 @@ After declaring a global using, every file in the project can refer to types fro
 
 ### Implicit usings
 
-For the most common namespaces, you don't have to write any `using` directives at all. The .NET SDK automatically generates global using directives based on your project type. Enable implicit usings by setting `<ImplicitUsings>enable</ImplicitUsings>` in your project file. For example, a console app project automatically imports <xref:System?displayProperty=fullName>, <xref:System.Collections.Generic?displayProperty=fullName>, <xref:System.IO?displayProperty=fullName>, <xref:System.Linq?displayProperty=fullName>, <xref:System.Threading?displayProperty=fullName>, and <xref:System.Threading.Tasks?displayProperty=fullName>. The current SDK enables `ImplicitUsings` when you create a new project by using `dotnet new`. New files start clean, with no boilerplate `using` block for everyday types like <xref:System.Console>, <xref:System.Collections.Generic.List`1>, or <xref:System.Threading.Tasks.Task>.
+For the most common namespaces, you don't have to write any `using` directives at all. The .NET SDK automatically generates global using directives based on your project type. Enable implicit usings by setting `<ImplicitUsings>enable</ImplicitUsings>` in your project file. For example, a console app project automatically imports <xref:System?displayProperty=fullName>, <xref:System.Collections.Generic?displayProperty=fullName>, <xref:System.IO?displayProperty=fullName>, <xref:System.Linq?displayProperty=fullName>, <xref:System.Threading?displayProperty=fullName>, and <xref:System.Threading.Tasks?displayProperty=fullName>. New projects that you create with `dotnet new` enable `ImplicitUsings` by default. New files start clean, with no boilerplate `using` block for everyday types like <xref:System.Console>, <xref:System.Collections.Generic.List`1>, or <xref:System.Threading.Tasks.Task>.
 
 For more information, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
 

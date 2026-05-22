@@ -1,5 +1,5 @@
 ---
-title: "Working with Assessment: Comprehensive guide to application assessment"
+title: "Assessment: Comprehensive guide to application assessment"
 description: Learn how to effectively work with application assessments in GitHub Copilot modernization, including configuration, interpretation, and report management.
 author: KarlErickson
 ms.author: karler

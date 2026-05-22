@@ -85,7 +85,7 @@ For the most common namespaces, you don't have to write any `using` directives a
 For more information, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
 
 > [!NOTE]
-> The other code samples in this article, and most samples throughout the .NET docs, assume that implicit usings (or the equivalent global usings for the workload) are enabled. That's why you don't see `using System;` and similar directives at the top of each snippet, even though the code uses types like `Console` or `List<T>` by their simple names.
+> The other code samples in this article, and most samples throughout the .NET docs, assume that implicit usings (or the equivalent global usings for the project type) are enabled. That's why you don't see `using System;` and similar directives at the top of each snippet, even though the code uses types like `Console` or `List<T>` by their simple names.
 
 ### Static using directives
 

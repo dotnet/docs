@@ -85,6 +85,13 @@ if (value is string s) { /* use s */ }
 
 To learn more, see [Pattern matching](../fundamentals/functional/pattern-matching.md).
 
+## Runtime model differences
+
+Even though C# and JavaScript look similar in syntax, they run very differently:
+
+- JavaScript runs on a runtime like V8 and uses an event loop to handle asynchronous work.
+- C# runs on the .NET runtime (CLR), where code is compiled into Intermediate Language (IL) and then executed using JIT or AOT compilation.
+
 ## What's new for you in C\#
 
 As you learn C#, you encounter concepts that aren't part of JavaScript. Some of these concepts might be familiar to you if you use TypeScript:

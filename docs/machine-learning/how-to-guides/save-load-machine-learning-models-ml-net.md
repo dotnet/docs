@@ -91,6 +91,9 @@ mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
 
 ## Load a model stored locally
 
+> [!IMPORTANT]
+> Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
 Models stored locally can be used in other processes or applications like ASP.NET Core and serverless web apps. For more information, see [Use ML.NET in Web API](./serve-model-web-api-ml-net.md) and [Deploy ML.NET Serverless Web App](./serve-model-serverless-azure-functions-ml-net.md).
 
 In a separate application or process, use the [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load%2A) method along with the file path to get the trained model into your application.

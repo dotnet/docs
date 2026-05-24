@@ -31,19 +31,19 @@ dotnet build -h|--help
 
 ## Description
 
-The `dotnet build` command builds the project, solution, or file-based app and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a _.dll_ extension. Depending on the project type and settings, other files may be included, such as:
+The `dotnet build` command builds the project, solution, or file-based app and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension. Depending on the project type and settings, other files may be included, such as:
 
 - An executable that can be used to run the application.
-- Symbol files used for debugging with a _.pdb_ extension.
-- A _.deps.json_ file, which lists the dependencies of the application or library.
-- A _.runtimeconfig.json_ file, which specifies the shared runtime and its version for an application.
+- Symbol files used for debugging with a *.pdb* extension.
+- A *.deps.json* file, which lists the dependencies of the application or library.
+- A *.runtimeconfig.json* file, which specifies the shared runtime and its version for an application.
 - Other libraries that the project depends on (via project references or NuGet package references).
 
 For executable projects targeting .NET Core 3.0 and later, library dependencies are copied to the output folder. This means that if there isn't any other publish-specific logic (such as Web projects have), the build output should be deployable.
 
 ### Implicit restore
 
-Building requires the _project.assets.json_ file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors.
+Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors.
 
 [!INCLUDE[dotnet restore note + options](includes/dotnet-restore-note-options.md)]
 
@@ -84,16 +84,17 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 - **`-bl|--binaryLogger:<FILE>`**
 
-    Enables the binary logger and optionally specifies the output file name.  
-    If no file name is provided, the default is `msbuild.binlog` in the current directory.
+  Enables the binary logger and optionally specifies the output file name.  
+  If no file name is provided, the default is `msbuild.binlog` in the current directory.
 
-    The binary log contains detailed build information and can be opened with the
-    [MSBuild Structured Log Viewer](https://msbuildlog.com).
+  The binary log contains detailed build information and can be opened with the
+  [MSBuild Structured Log Viewer](https://msbuildlog.com).
 
-    ```dotnetcli
-    dotnet build -bl
-    dotnet build -bl:build-log.binlog
-    ```
+  ```dotnetcli
+  dotnet build -bl
+  dotnet build -bl:build-log.binlog
+  ```
+
 
 - [!INCLUDE [configuration](includes/cli-configuration.md)]
 
@@ -101,69 +102,70 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 - **`-f|--framework <FRAMEWORK>`**
 
-    Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
+  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
 
 - **`--force`**
 
-    Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the _project.assets.json_ file.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 - [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--no-dependencies`**
 
-    Ignores project-to-project (P2P) references and only builds the specified root project.
+  Ignores project-to-project (P2P) references and only builds the specified root project.
 
 - **`--no-incremental`**
 
-    Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
+  Marks the build as unsafe for incremental build. This flag turns off incremental compilation and forces a clean rebuild of the project's dependency graph.
 
 - **`--no-restore`**
 
-    Doesn't execute an implicit restore during build.
+  Doesn't execute an implicit restore during build.
 
 - **`--nologo`**
 
-    Doesn't display the startup banner or the copyright message.
+  Doesn't display the startup banner or the copyright message.
 
 - [!INCLUDE [no-self-contained](includes/cli-no-self-contained.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-    Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`. For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
-    - .NET 7.0.200 SDK and later
+  Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
-        If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
 
 - [!INCLUDE [os](includes/cli-os.md)]
 
 - **`-p|--property:<PROPERTYNAME>=<VALUE>`**
 
-    Sets one or more MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+  Sets one or more MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
 
-    ```dotnetcli
-    --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
-    --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
-    ```
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-    Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
+  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
 
 - [!INCLUDE [self-contained](includes/cli-self-contained.md)]
 
 - **`--source <SOURCE>`**
 
-    The URI of the NuGet package source to use during the restore operation.
+  The URI of the NuGet package source to use during the restore operation.
 
 - **`-t|--target:<TARGET>`**
 
-    Specifies one or more MSBuild targets to run during the build instead of the default target. Specify multiple targets by separating them with a semicolon or comma, or by repeating the option for each target. The option supports both colon and space syntax, for example `-t:Clean` and `-t Clean`. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`. For more information, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
+  Specifies one or more MSBuild targets to run during the build instead of the default target. Specify multiple targets by separating them with a semicolon or comma, or by repeating the option for each target. Corresponds to the MSBuild `-target` option. Common targets include `Build` (default), `Clean`, and `Rebuild`. For more information, see [MSBuild Targets](/visualstudio/msbuild/msbuild-targets).
 
-    ```dotnetcli
-    dotnet build -t:"Clean;RunTests"
-    dotnet build -t:Clean -t:GenerateApiClients
-    dotnet build -t:RunCodeGeneration
-    ```
+  ```dotnetcli
+  dotnet build -t:"Clean;RunTests"
+  dotnet build -t:Clean -t:GenerateApiClients
+  dotnet build -t:RunCodeGeneration
+  ```
 
 - [!INCLUDE [tl](includes/cli-tl.md)]
 
@@ -173,7 +175,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
-    Sets the value of the `$(VersionSuffix)` property to use when building the project. This only works if the `$(Version)` property isn't set. Then, `$(Version)` is set to the `$(VersionPrefix)` combined with the `$(VersionSuffix)`, separated by a dash.
+  Sets the value of the `$(VersionSuffix)` property to use when building the project. This only works if the `$(Version)` property isn't set. Then, `$(Version)` is set to the `$(VersionPrefix)` combined with the `$(VersionSuffix)`, separated by a dash.
 
 - [!INCLUDE [help](includes/cli-help.md)]
 
@@ -181,50 +183,50 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 - Build a project and its dependencies:
 
-    ```dotnetcli
-    dotnet build
-    ```
+  ```dotnetcli
+  dotnet build
+  ```
 
 - Build a file-based app:
 
-    ```dotnetcli
-    dotnet build MyProject.cs
-    ```
+  ```dotnetcli
+  dotnet build MyProject.cs
+  ```
 
-    File-based app support was added in .NET SDK 10.0.100.
+  File-based app support was added in .NET SDK 10.0.100.
 
 - Build a project and its dependencies using Release configuration:
 
-    ```dotnetcli
-    dotnet build --configuration Release
-    ```
+  ```dotnetcli
+  dotnet build --configuration Release
+  ```
 
 - Build a project and its dependencies for a specific runtime (in this example, Linux):
 
-    ```dotnetcli
-    dotnet build --runtime linux-x64
-    ```
+  ```dotnetcli
+  dotnet build --runtime linux-x64
+  ```
 
 - Build the project and use the specified NuGet package source during the restore operation:
 
-    ```dotnetcli
-    dotnet build --source c:\packages\mypackages
-    ```
+  ```dotnetcli
+  dotnet build --source c:\packages\mypackages
+  ```
 
 - Build the project and set version 1.2.3.4 as a build parameter using the `-p` [MSBuild option](#msbuild):
 
-    ```dotnetcli
-    dotnet build -p:Version=1.2.3.4
-    ```
+  ```dotnetcli
+  dotnet build -p:Version=1.2.3.4
+  ```
 
 - Run the `Clean` target to remove previous build outputs:
 
-    ```dotnetcli
-    dotnet build -t:Clean
-    ```
+  ```dotnetcli
+  dotnet build -t:Clean
+  ```
 
 - Run the `Clean` target using the equivalent space-separated syntax:
 
-    ```dotnetcli
-    dotnet build -t Clean
-    ```
+  ```dotnetcli
+  dotnet build -t Clean
+  ```

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) troubleshooting
 description: Troubleshoot MTP issues, exit codes, and known problems.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/24/2026
+ms.date: 05/25/2026
 ai-usage: ai-assisted
 ---
 
@@ -85,6 +85,22 @@ Manually defining an entry point (`Main`) in a test project or referencing a tes
 - Disable the generation of the entry point by setting the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
 
 - Completely disable the transitive dependency to `Microsoft.Testing.Platform.MSBuild` by setting the `<IsTestingPlatformApplication>false</IsTestingPlatformApplication>` MSBuild property in the project that references a test project. This is needed when you reference a test project from a non-test project, for example, a console app that references a test application.
+
+#### Generated code namespace conflicts with a referenced type
+
+`Microsoft.Testing.Platform.MSBuild` generates the `SelfRegisteredExtensions` and `MicrosoftTestingPlatformEntryPoint` types inside the project's `$(RootNamespace)`. By default, `RootNamespace` matches the project name, which can collide with a type of the same fully qualified name exposed by a referenced assembly.
+
+For example, a project named `System.Security.Cryptography.ProtectedData.Tests` ends up generating code in the `System.Security.Cryptography.ProtectedData` namespace. If the project also references the `System.Security.Cryptography.ProtectedData` NuGet package, which contains a public `ProtectedData` type under the `System.Security.Cryptography` namespace, the compiler can no longer disambiguate between the generated namespace and the referenced type, and emits errors such as `CS0118` ("'ProtectedData' is a namespace but is used like a type").
+
+To resolve the conflict, override `RootNamespace` in your test project to a value that doesn't collide with any referenced type:
+
+```xml
+<PropertyGroup>
+  <RootNamespace>System.Security.Cryptography.ProtectedDataTests</RootNamespace>
+</PropertyGroup>
+```
+
+You can also clear `RootNamespace` entirely (`<RootNamespace />`), in which case the generated types are emitted into the global namespace.
 
 ### Microsoft.Testing.Extensions.Fakes
 

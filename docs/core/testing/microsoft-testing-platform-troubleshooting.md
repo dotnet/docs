@@ -88,7 +88,7 @@ Manually defining an entry point (`Main`) in a test project or referencing a tes
 
 #### Generated code namespace conflicts with a referenced type
 
-`Microsoft.Testing.Platform.MSBuild` generates the `SelfRegisteredExtensions` and `MicrosoftTestingPlatformEntryPoint` types inside the project's `$(RootNamespace)`. By default, `RootNamespace` matches the project name, which can collide with a type of the same fully qualified name exposed by a referenced assembly.
+`Microsoft.Testing.Platform.MSBuild` generates the `SelfRegisteredExtensions` and `TestingPlatformEntryPoint` types inside the project's `$(RootNamespace)`. By default, `RootNamespace` matches the project name, which can collide with a type of the same fully qualified name exposed by a referenced assembly.
 
 For example, a project named `System.Security.Cryptography.ProtectedData.Tests` ends up generating code in the `System.Security.Cryptography.ProtectedData` namespace. If the project also references the `System.Security.Cryptography.ProtectedData` NuGet package, which contains a public `ProtectedData` type under the `System.Security.Cryptography` namespace, the compiler can no longer disambiguate between the generated namespace and the referenced type, and emits errors such as `CS0118` ("'ProtectedData' is a namespace but is used like a type").
 

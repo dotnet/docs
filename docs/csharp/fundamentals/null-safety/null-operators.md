@@ -95,12 +95,12 @@ The `!` postfix operator suppresses nullable warnings. Append `!` to tell the co
 
 :::code language="csharp" source="snippets/null-operators/Program.cs" ID="NullForgiving":::
 
-Use `!` sparingly, and only when you have information the compiler doesn't. Examples include tests that intentionally pass `null` to validate argument-checking logic, or calling a method whose contract guarantees a non-null return for a known input. Overusing `!` defeats the purpose of nullable reference types. For a full explanation, see [Nullable reference types](../../nullable-references.md).
+Use `!` sparingly, and only when you have information the compiler doesn't. Examples include tests that intentionally pass `null` to validate argument-checking logic, or calling a method whose contract guarantees a non-null return for a known input. Overusing `!` defeats the purpose of nullable reference types. For a full explanation, see [Nullable reference types](nullable-reference-types.md).
 
 ## See also
 
 - [Null safety overview](index.md)
 - [Nullable value types](nullable-value-types.md)
-- [Nullable reference types](../../nullable-references.md)
+- [Nullable reference types](nullable-reference-types.md)
 - [Member access operators (language reference)](../../language-reference/operators/member-access-operators.md)
 - [Null-coalescing operators (language reference)](../../language-reference/operators/null-coalescing-operator.md)

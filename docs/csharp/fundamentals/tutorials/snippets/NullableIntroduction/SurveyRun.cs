@@ -2,7 +2,7 @@
 
 public class SurveyRun
 {
-    private List<SurveyQuestion> surveyQuestions = new List<SurveyQuestion>();
+    private List<SurveyQuestion> surveyQuestions = [];
 
     // <SnippetRunReport>
     public IEnumerable<SurveyResponse> AllParticipants => (respondents ?? Enumerable.Empty<SurveyResponse>());
@@ -19,7 +19,7 @@ public class SurveyRun
     public void PerformSurvey(int numberOfRespondents)
     {
         int respondentsConsenting = 0;
-        respondents = new List<SurveyResponse>();
+        respondents = [];
         while (respondentsConsenting < numberOfRespondents)
         {
             var respondent = SurveyResponse.GetRandomId();

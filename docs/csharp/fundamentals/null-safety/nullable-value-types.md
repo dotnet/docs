@@ -66,4 +66,4 @@ Null propagates through arithmetic by default. To prevent a null result from cas
 - [Null safety overview](index.md)
 - [Null operators](null-operators.md)
 - [Nullable value types (language reference)](../../language-reference/builtin-types/nullable-value-types.md)
-- [Nullable reference types](../../nullable-references.md)
+- [Nullable reference types](nullable-reference-types.md)

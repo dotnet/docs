@@ -18,7 +18,9 @@ The following example shows how to use a `nameof` expression:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="Examples":::
 
-The preceding example that uses `List<>` is supported in C# 14 and later. You can use a `nameof` expression to make the argument-checking code more maintainable:
+The preceding example that uses `List<>` is supported in C# 14 and later. The operand of `nameof` can be an unbound generic type, such as `List<>` or `Dictionary<,>`. The result is the simple type name without arity or any type-argument list — `nameof(List<>)` returns `"List"`. Unbound generic operands are useful in logging, diagnostic messages, and attribute arguments where the generic type name matters but the type arguments don't.
+
+You can use a `nameof` expression to make the argument-checking code more maintainable:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="ExceptionMessage":::
 

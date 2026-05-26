@@ -405,6 +405,7 @@ The following MSBuild properties are documented in this section:
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
+- [PublishRuntimeIdentifier](#publishruntimeidentifier)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -580,6 +581,16 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 >
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
 > - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
+
+### PublishRuntimeIdentifier
+
+Specify a single [runtime identifier (RID)](../rid-catalog.md) for publish operations only. This property was introduced in .NET 7. It doesn't affect build operations. During publish, `PublishRuntimeIdentifier` sets `RuntimeIdentifier`. If you pass `RuntimeIdentifier` as a global property, that value takes precedence.
+
+```xml
+<PropertyGroup>
+  <PublishRuntimeIdentifier>linux-x64</PublishRuntimeIdentifier>
+</PropertyGroup>
+```
 
 ### PublishSelfContained
 

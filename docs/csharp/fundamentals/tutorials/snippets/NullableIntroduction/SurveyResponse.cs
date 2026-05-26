@@ -1,20 +1,18 @@
 ﻿namespace NullableIntroduction;
 
-public class SurveyResponse
+public class SurveyResponse(int id)
 {
     // <SnippetRandom>
     private static readonly Random randomGenerator = new Random();
     public static SurveyResponse GetRandomId() => new SurveyResponse(randomGenerator.Next());
     // </SnippetRandom>
 
-    public int Id { get; }
+    public int Id { get; } = id;
 
     // <SnippetSurveyStatus>
     public bool AnsweredSurvey => surveyResponses != null;
     public string Answer(int index) => surveyResponses?.GetValueOrDefault(index) ?? "No answer";
     // </SnippetSurveyStatus>
-
-    public SurveyResponse(int id) => Id = id;
 
     // <SnippetAnswerSurvey>
     private Dictionary<int, string>? surveyResponses;

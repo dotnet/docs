@@ -42,11 +42,11 @@ The fix is usually a *guard clause*. A *guard clause* is a check at the top of a
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="DereferenceFixed":::
 
-[Pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { } value` that test the shape of a value), `??`, and `??=` include null checks:
+[Pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { }` that test the shape of a value), `??`, and `??=` include null checks:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullOperatorsFix":::
 
-The property pattern `{ Length: > 0 }` matches only when `message` is non-null *and* its `Length` property is greater than zero, so the compiler treats `nonEmpty` as *not-null* inside the `if` block. A simpler `is not null` test produces the same null-state narrowing without inspecting any properties.
+The property pattern `{ Length: > 0 }` matches only when `message` is non-null *and* its `Length` property is greater than zero, so the compiler treats `message` as *not-null* inside the `if` block. A simpler `is not null` test produces the same null-state narrowing without inspecting any properties.
 
 For an in-depth tour of the operators, see [Null operators](null-operators.md).
 
@@ -59,7 +59,7 @@ The compiler also warns you when your code assigns a *maybe-null* expression to 
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="AssignmentWarning":::
 
-If `Lookup` legitimately returns nothing, change the call site to accept the missing value:
+If `Lookup` legitimately returns null, change the call site to accept the missing value:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="AssignmentFixed":::
 

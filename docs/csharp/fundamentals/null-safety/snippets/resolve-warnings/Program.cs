@@ -47,9 +47,9 @@ internal static class Examples
         int length = message?.Length ?? 0;
 
         // Pattern matching narrows the type on the matching branch.
-        if (message is { Length: > 0 } nonEmpty)
+        if (message is { Length: > 0 })
         {
-            length = nonEmpty.Length;
+            length = message.Length;
         }
 
         return length;

@@ -61,7 +61,7 @@ A local variable's null-state is updated as the compiler analyzes your code. Two
 
 In the preceding example, the first dereference produces a warning because `message` is *maybe-null*. After the assignment to a non-null literal, the compiler knows `message` is *not-null*, so the second dereference is safe.
 
-Null-state analysis works across `if` checks, [pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { } value` that test the shape of a value), and control flow that loops or returns early:
+Null-state analysis works across `if` checks, [pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { }` that test the shape of a value), and control flow that loops or returns early:
 
 :::code language="csharp" source="snippets/nullable-reference-types/Program.cs" id="FlowAnalysis":::
 

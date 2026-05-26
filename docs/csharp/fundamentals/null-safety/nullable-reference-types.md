@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 >
 > **Experienced in another language?** If you worked with Kotlin's nullable types, TypeScript's `strictNullChecks`, or Swift's optionals, the model is familiar. C# uses static analysis and warning diagnostics instead of a separate type. Skim [Express intent with annotations](#express-intent-with-annotations) and [Null-state analysis](#null-state-analysis), and then jump to the [Tutorial: Express your design intent with nullable and non-nullable reference types](../tutorials/nullable-reference-types.md) to apply the feature.
 
-*Nullable reference types* are a group of features that minimize the chance your code throws <xref:System.NullReferenceException?displayProperty=nameWithType>. You declare which variables are intended to hold `null` and which aren't, and the compiler warns when those declarations don't match how your code uses them. The runtime behavior of your program is unchanged—nullable reference types are entirely a compile-time feature.
+*Nullable reference types* are a group of features that minimize the chance your code throws <xref:System.NullReferenceException?displayProperty=nameWithType>. You declare which variables are intended to hold `null` and which aren't, and the compiler warns when those declarations don't match how your code uses them. The runtime behavior of your program is unchanged. Nullable reference types are entirely a compile-time feature.
 
 Three building blocks work together:
 
@@ -21,7 +21,7 @@ Three building blocks work together:
 - *Null-state analysis* tracks whether the value of an expression is *not-null* or *maybe-null* at each point in your code.
 - *Attributes* on APIs describe more nuanced contracts, such as "this argument can be `null`, but the return value is null only when the argument is null."
 
-The compiler combines these signals to produce diagnostics. Warnings on a non-nullable variable mean the variable might receive `null`. Warnings on a nullable variable mean the code might *dereference* it without a null check. *Dereference* means to use the value the variable refers to—for example, to call a method on it (`variable.Method()`), read a property (`variable.Property`), or index into it (`variable[0]`). Dereferencing a variable that has a value of `null` throws an exception at run time. Either kind of warning means the code's behavior doesn't match its stated design.
+The compiler combines these signals to produce diagnostics. Warnings on a non-nullable variable mean the variable might receive `null`. Warnings on a nullable variable mean the code might *dereference* it without a null check. *Dereference* means to use the value the variable refers to. For example, to call a method on it (`variable.Method()`), read a property (`variable.Property`), or index into it (`variable[0]`). Dereferencing a variable that has a value of `null` throws an exception at run time. Either kind of warning means the code's behavior doesn't match its stated design.
 
 ## Nullable context
 
@@ -30,6 +30,8 @@ Projects created from recent .NET templates set `<Nullable>enable</Nullable>` in
 ```xml
 <Nullable>enable</Nullable>
 ```
+
+For more information on migrating a large application, see the article on [nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md) for more settings and directives.
 
 ## Express intent with annotations
 
@@ -52,8 +54,8 @@ The annotations drive the implementation of `ToString`. Because `FirstName` and 
 
 The compiler tracks the *null-state* of every expression. The state is one of two values:
 
-- *not-null* — the expression is known to be not `null`.
-- *maybe-null* — the expression might be `null`.
+- *not-null*: the expression is known to be not `null`.
+- *maybe-null*: the expression might be `null`.
 
 A local variable's null-state is updated as the compiler analyzes your code. Two things change it: **assignments** and **null checks**. After an assignment, the variable's null-state matches the expression on the right-hand side. If the expression is null or nullable, the variable becomes maybe-null. If the expression is a non-null literal, the variable becomes not-null. After a null check, the variable's null-state reflects whichever branch is taken.
 

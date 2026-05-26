@@ -26,10 +26,23 @@ In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> - Create a console app that has nullable reference types enabled.
-> - Build the survey with non-nullable reference types for required values.
-> - Generate respondents that use nullable reference types for missing answers.
-> - Read the survey results without writing any null checks the compiler hasn't asked for.
+> - Create the application.
+> - Build the survey questions.
+> - Build a survey of questions.
+> - Test the not-null requirement.
+> - Build response types.
+> - Create respondents.
+> - Generate one survey response.
+> - Build a set of survey responses.
+> - Examine the survey results.
+
+Three classes model the survey:
+
+- `SurveyQuestion`: one question. The text and question type are required.
+- `SurveyRun`: the collection of questions plus the list of respondents.
+- `SurveyResponse`: one respondent's answers, which might be missing.
+
+Each type uses non-nullable reference types for required values and nullable reference types for missing values.
 
 ## Prerequisites
 
@@ -46,22 +59,6 @@ dotnet new console -n NullableIntroduction
 cd NullableIntroduction
 ```
 
-Open `NullableIntroduction.csproj`. New console projects from .NET 6 onward set `<Nullable>enable</Nullable>` in the `PropertyGroup`; if it's missing, add it manually:
-
-:::code language="xml" source="snippets/NullableIntroduction/NullableIntroduction.csproj":::
-
-When you enable this feature, every reference type variable is non-nullable unless you append `?`. The compiler issues warnings when your code's null-handling doesn't match those declarations.
-
-## Design the survey types
-
-Three classes model the survey:
-
-- `SurveyQuestion` — one question. The text and question type are required.
-- `SurveyRun` — the collection of questions plus the list of respondents.
-- `SurveyResponse` — one respondent's answers, which might be missing.
-
-Each type uses non-nullable reference types for required values and nullable reference types for missing values.
-
 ## Build the survey questions
 
 Add a new file named `SurveyQuestion.cs` to the project, and replace its contents with the following code. The text and the question type are non-nullable, so the constructor must initialize both:
@@ -70,6 +67,8 @@ Add a new file named `SurveyQuestion.cs` to the project, and replace its content
 
 The constructor parameters are non-nullable reference types, so the compiler warns the caller if either argument might be `null`.
 
+## Build a survey of questions
+
 Next, add a new file named `SurveyRun.cs` to the project and define a `SurveyRun` class to hold the list of questions:
 
 ```csharp
@@ -77,7 +76,7 @@ namespace NullableIntroduction;
 
 public class SurveyRun
 {
-    private List<SurveyQuestion> surveyQuestions = new();
+    private List<SurveyQuestion> surveyQuestions = [];
 
     public void AddQuestion(QuestionType type, string question) =>
         AddQuestion(new SurveyQuestion(type, question));
@@ -87,11 +86,13 @@ public class SurveyRun
 }
 ```
 
-The `surveyQuestions` field is a non-nullable `List<SurveyQuestion>`. It uses [target-typed `new`](../../language-reference/operators/new-operator.md#target-typed-new) (the `new()` syntax that lets the compiler infer the type from the field's declaration) to initialize the list at the declaration, which satisfies the non-nullable contract. Both `AddQuestion` overloads accept non-nullable parameters, so the compiler enforces that callers don't pass `null`.
+The `surveyQuestions` field is a non-nullable `List<SurveyQuestion>`. It uses a [collection expression](../../language-reference/operators/collection-expressions.md) to initialize an empty list. Both `AddQuestion` overloads accept non-nullable parameters, so the compiler enforces that callers don't pass `null`.
 
 In `Program.cs`, create a `SurveyRun` and add three questions:
 
 :::code language="csharp" source="snippets/NullableIntroduction/Program.cs" id="SnippetAddQuestions":::
+
+## Test the not-null requirement
 
 To see how the compiler enforces non-nullable parameters, try adding the following line and rebuilding:
 
@@ -101,7 +102,7 @@ surveyRun.AddQuestion(QuestionType.Text, default);
 
 The compiler issues warning *CS8625* because `default` evaluates to `null` for a reference type, and `AddQuestion` expects a non-nullable `string`. Remove the line before continuing.
 
-## Create respondents and capture answers
+## Build response types
 
 Respondents can decline to take the survey, and even when they participate, they can skip individual questions. Both forms of "missing" are valid outcomes, and the type system should make them visible. You express both forms with `null`.
 
@@ -116,15 +117,21 @@ public class SurveyResponse(int id)
 }
 ```
 
+## Create respondents
+
 Add a *static factory method* (a `static` method that creates and returns a new instance of the type, an alternative to calling the constructor directly) that creates respondents with a random ID:
 
 :::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetRandom":::
+
+## Generate one survey response
 
 Next, add the method that asks the survey to a respondent. Store the answers in a nullable dictionary so the type itself communicates that the respondent might decline:
 
 :::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetAnswerSurvey":::
 
 The `surveyResponses` field is `Dictionary<int, string>?`. If you dereference the field without first checking for `null`, the compiler issues a warning. Inside `AnswerSurvey`, the compiler tracks that `surveyResponses` is *not-null* immediately after the `new` expression, so the loop body needs no extra check.
+
+## Build a set of survey responses
 
 Add a method on `SurveyRun` that builds up a list of respondents until enough consent to participate:
 
@@ -163,6 +170,8 @@ dotnet run
 ```
 
 The output is different on each run because respondents are generated randomly, but every line either reports a participant's answers or notes that they declined.
+
+## Conclusion
 
 The finished sample is in the [csharp/NullableIntroduction](https://github.com/dotnet/samples/tree/main/csharp/NullableIntroduction) folder of the [dotnet/samples](https://github.com/dotnet/samples) repository. Experiment by changing types between nullable and non-nullable. Removing a `?` where the design allows missing values produces compiler warnings that point to every place the missing value matters.
 

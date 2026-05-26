@@ -63,6 +63,8 @@ If `Lookup` legitimately returns null, change the call site to accept the missin
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="AssignmentFixed":::
 
+If `Lookup` never returns null, change its signature to return a non-nullable reference type. Scenarios where the null state of the returned value depends on the input, see the following section on null-analysis attributes.
+
 Use the null-forgiving operator `!` only when you can guarantee a value isn't null but can't express that guarantee in the type system. Each `!` is a place the compiler can no longer protect you, so prefer adding a check or annotating the source API.
 
 ## Add a null-analysis attribute

@@ -8,7 +8,7 @@ internal static class Examples
     {
         DereferenceFixed("hello");
         NullOperatorsFix(null);
-        AssignmentFixed("ada");
+        AssignmentFixed();
         CallerWithAttribute("ada");
         UseInitialized();
     }
@@ -68,9 +68,9 @@ internal static class Examples
     // </AssignmentWarning>
 
     // <AssignmentFixed>
-    public static void AssignmentFixed(string id)
+    public static void AssignmentFixed()
     {
-        string? name = Lookup(id);
+        string? name = Lookup("somebody");
         if (name is not null)
         {
             Console.WriteLine(name);

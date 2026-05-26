@@ -85,6 +85,13 @@ if (value is string s) { /* use s */ }
 
 To learn more, see [Pattern matching](../fundamentals/functional/pattern-matching.md).
 
+## Runtime model differences
+
+Even though C# and JavaScript look similar in syntax, they run very differently:
+
+- JavaScript runs on a runtime like V8 and uses an event loop to handle asynchronous work.
+- C# runs on the .NET runtime (CLR), where code is compiled into Intermediate Language (IL) and then executed using JIT or AOT compilation.
+
 ## What's new for you in C\#
 
 As you learn C#, you encounter concepts that aren't part of JavaScript. Some of these concepts might be familiar to you if you use TypeScript:
@@ -92,7 +99,7 @@ As you learn C#, you encounter concepts that aren't part of JavaScript. Some of 
 1. [***C# Type System***](../fundamentals/types/index.md): C# is a strongly typed language. Every variable has a type, and that type can't change. You define `class` or `struct` types. You can define [`interface`](../fundamentals/types/interfaces.md) definitions that define behavior implemented by other types. TypeScript includes many of these concepts, but because TypeScript is built on JavaScript, the type system isn't as strict.
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` expression](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
 1. [***String interpolation***](../language-reference/tokens/interpolated.md) and [***raw string literals***](../language-reference/builtin-types/reference-types.md#string-literals): String interpolation enables you to insert evaluated expressions in a string, rather than using positional identifiers. Raw string literals provide a way to minimize escape sequences in text.
-1. [***Nullable and non-nullable types***](../nullable-references.md): C# supports *nullable value types* and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. These features can minimize your application throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>. The syntax might be familiar from TypeScript's use of `?` for optional properties.
+1. [***Nullable and non-nullable types***](../fundamentals/null-safety/nullable-reference-types.md): C# supports *nullable value types* and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. These features can minimize your application throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>. The syntax might be familiar from TypeScript's use of `?` for optional properties.
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 
 > [!TIP]

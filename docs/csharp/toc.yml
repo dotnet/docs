@@ -80,8 +80,14 @@ items:
       href: fundamentals/null-safety/index.md
     - name: Nullable value types
       href: fundamentals/null-safety/nullable-value-types.md
+    - name: Nullable reference types
+      href: fundamentals/null-safety/nullable-reference-types.md
+    - name: Resolve nullable warnings
+      href: fundamentals/null-safety/resolve-warnings.md
     - name: Null operators
       href: fundamentals/null-safety/null-operators.md
+    - name: "Tutorial: Express your design intent with nullable reference types"
+      href: fundamentals/tutorials/nullable-reference-types.md
   - name: Strings
     items:
     - name: Overview
@@ -220,8 +226,6 @@ items:
     href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
-  - name: Work with nullable reference types
-    href: tutorials/nullable-reference-types.md
   - name: Explore patterns in objects
     href: tutorials/patterns-objects.md
   - name: String interpolation
@@ -308,10 +312,6 @@ items:
     href: asynchronous-programming/generate-consume-asynchronous-stream.md
 - name: C# concepts
   items:
-  - name: Nullable reference types
-    href: nullable-references.md
-  - name: Nullable reference migrations
-    href: nullable-migration-strategies.md
   - name: Methods
     href: methods.md
   - name: Iterators
@@ -355,6 +355,10 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Update existing apps
+    items:
+    - name: Nullable migration strategies
+      href: advanced-topics/update-applications/nullable-migration-strategies.md
   - name: Reflection and attributes
     items:
     - name: Overview

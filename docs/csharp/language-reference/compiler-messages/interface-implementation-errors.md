@@ -168,7 +168,7 @@ You can correct these errors using the following techniques:
 - Apply the `default` constraint to resolve ambiguities with nullable reference types in override and explicit interface implementations when using C# 9 or later (**CS0460**). This exception to the constraint inheritance rule allows you to explicitly specify the default constraint to disambiguate nullable annotation contexts.
 - Explicitly specify `where T : class` or `where T : struct` constraints on override and explicit interface implementation methods when using C# 8 or later to enable nullable reference type annotations (**CS0460**). These specific constraints are permitted to support nullable reference type analysis on type parameters that are constrained to reference or value types.
 
-For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md), [Interfaces](../../fundamentals/types/interfaces.md), and [Nullable reference types](../../nullable-references.md).
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md), [Interfaces](../../fundamentals/types/interfaces.md), and [Nullable reference types](../../fundamentals/null-safety/nullable-reference-types.md).
 
 ## Method visibility and modifiers
 

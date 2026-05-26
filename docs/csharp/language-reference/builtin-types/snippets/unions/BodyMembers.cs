@@ -1,11 +1,10 @@
 // <BodyMembers>
-public union OneOrMore<T>(T, IEnumerable<T>)
+public union OneOrMore<T>(T, IEnumerable<T>) where T : notnull
 {
-    public IEnumerable<T> AsEnumerable() => Value switch
+    public IEnumerable<T> AsEnumerable() => this switch
     {
         T single => [single],
-        IEnumerable<T> multiple => multiple,
-        _ => []
+        IEnumerable<T> multiple => multiple
     };
 }
 // </BodyMembers>

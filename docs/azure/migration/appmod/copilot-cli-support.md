@@ -1,5 +1,5 @@
 ---
-title: Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
+title: Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI (Preview)
 description: Overview of migrating .NET applications to Azure using GitHub Copilot modernization plugin in Copilot CLI.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet

@@ -95,7 +95,6 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
   dotnet build -bl:build-log.binlog
   ```
 
-
 - [!INCLUDE [configuration](includes/cli-configuration.md)]
 
 - [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]

@@ -36,6 +36,7 @@ f1_keywords:
   - "CS1021"
   - "CS1037"
   - "CS1553"
+  - "CS8761"
   - "CS8778"
   - "CS8973"
   - "CS9023"
@@ -84,6 +85,7 @@ helpviewer_keywords:
   - "CS1021"
   - "CS1037"
   - "CS1553"
+  - "CS8761"
   - "CS8778"
   - "CS8973"
   - "CS9023"
@@ -98,7 +100,7 @@ helpviewer_keywords:
   - "CS9340"
   - "CS9341"
   - "CS9342"
-ms.date: 03/25/2026
+ms.date: 05/19/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for operator declarations and overflow
@@ -145,6 +147,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8930**](static-abstract-interfaces.md#errors-in-type-implementing-interface-declaration): *Explicit implementation of a user-defined operator must be declared static*
 - [**CS8931**](static-abstract-interfaces.md#errors-in-interface-declaration): *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*
 - [**CS8778**](#overflow-and-underflow-errors): *Constant value 'value' may overflow 'type' at runtime (use 'unchecked' syntax to override)*
+- [**CS8761**](#operator-signature-requirements): *Operator 'operator' cannot be applied to 'default' and operand of type 'type' because it is a type parameter that is not known to be a reference type*
 - [**CS8973**](#overflow-and-underflow-errors): *The operation may overflow at runtime (use 'unchecked' syntax to override)*
 - [**CS9023**](#checked-operators): *Operator cannot be made checked.*
 - [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
@@ -172,6 +175,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9340**: *Operator cannot be applied to operands. The closest inapplicable candidate is shown.*
 - **CS9341**: *Operator cannot be applied to operand. The closest inapplicable candidate is shown.*
 - **CS9342**: *Operator resolution is ambiguous between the following members.*
+- **CS8761**: *Operator 'operator' cannot be applied to 'default' and operand of type 'type' because it is a type parameter that is not known to be a reference type*
 
 Each operator type has specific parameter and return type requirements defined by the language specification. For the full rules on which operators can be overloaded, see [Operator overloading](../operators/operator-overloading.md) and [Operators](~/_csharpstandard/standard/expressions.md#124-operators) in the C# specification.
 
@@ -184,6 +188,7 @@ Each operator type has specific parameter and return type requirements defined b
 - Change the return type of the operator to a non-void type (**CS0590**). Most user-defined operators must return a value. The exception is compound assignment operators, which require a `void` return type (**CS9310**).
 - Correct the parameter types or add missing operator overloads so the compiler can find a matching operator for the operand types used at the call site (**CS9340**, **CS9341**). When no applicable operator exists, the compiler shows the closest candidate to help diagnose the mismatch.
 - Add explicit casts at the call site, or provide more specific overloads to eliminate ambiguity when multiple operator overloads match equally well (**CS9342**).
+- Add a `class`, `struct`, or other type constraint to the type parameter so the compiler can determine the applicable operators for the `default` expression (**CS8761**). When a type parameter is unconstrained, the compiler can't determine whether `default` represents `null` (for reference types) or a zeroed value type, making binary operator resolution ambiguous. Alternatively, avoid using `default` directly in binary expressions with unconstrained generic types.
 
 > [!IMPORTANT]
 > The signature requirements for static binary operators and the corresponding instance compound assignment operators are different. Make sure the signature matches the declaration you want.

@@ -18,6 +18,7 @@ f1_keywords:
  - "CS1018" # ERR_ThisOrBaseExpected
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
  - "CS8091" # ERR_ExternHasConstructorInitializer
+ - "CS8760" # ERR_ExternEventInitializer
  - "CS8358" # ERR_AttributeCtorInParameter
  - "CS8813" # ERR_ModuleInitializerMethodMustBeOrdinary
  - "CS8814" # ERR_ModuleInitializerMethodMustBeAccessibleOutsideTopLevelType
@@ -78,6 +79,7 @@ helpviewer_keywords:
  - "CS8054"
  - "CS8091"
  - "CS8358"
+ - "CS8760"
  - "CS8813"
  - "CS8814"
  - "CS8815"
@@ -120,7 +122,7 @@ helpviewer_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
-ms.date: 05/01/2026
+ms.date: 05/19/2026
 ---
 # Resolve errors and warnings for constructor declarations and module initializers
 
@@ -143,6 +145,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1018**](#constructor-calls-with-base-and-this): *Keyword 'this' or 'base' expected.*
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
+- [**CS8760**](#constructor-declaration): *'event': extern event cannot have initializer.*
 - [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
 - [**CS8813**](#module-initializer-declarations): *A module initializer must be an ordinary member method*
 - [**CS8814**](#module-initializer-declarations): *Module initializer method 'method' must be accessible at the module level*
@@ -212,6 +215,7 @@ To correct these errors, ensure your static constructor declaration follows thes
 - **CS8054**: *Enums cannot contain explicit parameterless constructors.*
 - **CS8358**: *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
 - **CS8091**: *A constructor cannot be extern and have a constructor initializer.*
+- **CS8760**: *'event': extern event cannot have initializer.*
 
 You can declare constructors only in `class` and `struct` types, including `record class` and `record struct` types. For more information, see [Instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
@@ -221,6 +225,7 @@ To fix these errors, try the following suggestions:
 - Remove instance constructors from static classes, because static classes can't be instantiated and therefore can't have instance constructors (**CS0710**). If you need initialization logic, use a static constructor instead.
 - Change `in` or `ref readonly` parameters to pass-by-value parameters in attribute constructors, because attribute constructors don't support `in` or `ref readonly` parameter modifiers (**CS8358**). The runtime instantiates attributes by using reflection, which doesn't support the `in` or `ref readonly` modifier.
 - Remove the `: base()` or `: this()` constructor initializer from an `extern` constructor, because extern constructors can't chain to other constructors (**CS8091**). The implementation of an extern constructor is provided externally, so constructor chaining isn't possible.
+- Remove the initializer from an `extern` event declaration (**CS8760**). Extern events have their add and remove accessors provided by external code, so a field initializer in the source has no effect and isn't permitted by the compiler.
 
 The following warning can be generated for constructor declarations:
 

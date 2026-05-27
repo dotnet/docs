@@ -126,11 +126,9 @@ public static class Program
     {
         // <newlines>
         int[] numbers = [3, 1, 4, 1, 5, 9, 2, 6];
-        Console.WriteLine($"""
-            Total: {
+        Console.WriteLine($"Total: {
                 numbers.Sum()
-                }, average: {numbers.Average():F2}.
-            """);
+                }, average: {numbers.Average():F2}.");
         // => Total: 31, average: 3.88.
         // </newlines>
     }

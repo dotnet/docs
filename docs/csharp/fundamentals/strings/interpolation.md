@@ -17,9 +17,11 @@ ai-usage: ai-assisted
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="general":::
 
-Each `{ }` is an *interpolation expression*. C# evaluates the expression, converts the result to a string by calling its `ToString` method, and substitutes the text into the result. If the expression evaluates to `null`, C# substitutes an empty string. Interpolated strings are a more readable alternative to <xref:System.String.Format*?displayProperty=nameWithType> and support the full [composite formatting](../../../standard/base-types/composite-formatting.md) feature set.
+Each `{ }` is an *interpolation expression*. C# evaluates the expression, converts the result to a string by calling its `ToString()` method, and substitutes the text into the result. The string interpolation for a `null` expression is the empty string. In most cases, the default conversion produces the output you want, and you don't need to do anything more.
 
-For the language-reference treatment of the syntax and the underlying handler types, see [interpolated string token](../../language-reference/tokens/interpolated.md). For performance-focused topics such as `Span<char>` interpolation and custom interpolated string handlers, see [String operations](../../language-reference/builtin-types/string-operations.md).
+Interpolated strings are a more readable alternative to <xref:System.String.Format*?displayProperty=nameWithType>, and they support the full [composite formatting](../../../standard/base-types/composite-formatting.md) feature set. Anything you can do with a classic positional format string—format specifiers, alignment, culture-aware formatting, and constant strings—you can also do with an interpolated string. The rest of this article covers those options. Reach for them only when you need finer control over the result; otherwise, the plain `$"{expression}"` form is enough.
+
+For the language-reference treatment of the syntax and the underlying handler types, see [interpolated string](../../language-reference/tokens/interpolated.md) reference. For performance-focused topics such as `Span<char>` interpolation and custom interpolated string handlers, see [String operations](../../language-reference/builtin-types/string-operations.md).
 
 ## Apply a format string
 
@@ -29,7 +31,7 @@ To control how an expression result is formatted, follow the expression with a c
 {<expression>:<formatString>}
 ```
 
-The following example formats a date and a numeric value:
+The following example formats a <xref:System.DateTime> and a <xref:System.Double> value:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="FormatString":::
 
@@ -63,22 +65,19 @@ For paths and other strings that contain backslashes, prefer an [interpolated ra
 
 ## Use a conditional expression
 
-The colon has special meaning inside an interpolation expression, so wrap a [conditional operator](../../language-reference/operators/conditional-operator.md) in parentheses:
+The colon has special meaning inside an interpolation expression, so wrap a [conditional exoressuin](../../language-reference/operators/conditional-operator.md) in parentheses:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="conditional":::
 
 ## Span an expression across multiple lines
 
-For better readability, break long interpolation expressions across multiple lines. The following example uses an [interpolated raw string literal](../../language-reference/tokens/raw-string.md) so the expression body can wrap freely:
+For better readability, break long interpolation expressions across multiple lines. Multi-line interpolation expressions are available since C# 11. The following example adds newlines between the `{` and `}` characters to separate the interpolated expressions from the literal text:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="newlines":::
 
-> [!NOTE]
-> Multi-line interpolation expressions are available since C# 11.
-
 ## Build constant strings
 
-When every interpolated expression is itself a constant `string`, the whole interpolated string is also a `const`. That makes it usable for attribute arguments, `switch` patterns, and other contexts that require compile-time constants:
+You can build constant interpolated strings when every interpolated expression is a constant value.That makes it usable for attribute arguments, `switch` patterns, and other contexts that require compile-time constants:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="ConstantInterpolated":::
 

@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # String operations: pattern matching, performance, and span-based search
 
-This article covers string operations that go beyond the everyday `Contains`, `IndexOf`, and `Split` methods covered in the Fundamentals [Search strings](../../fundamentals/strings/search.md) and [Split strings into substrings](../../fundamentals/strings/split.md) articles. It focuses on three areas: regular-expression pattern matching, allocation-free search over <xref:System.ReadOnlySpan%601>, and performance considerations for `string` comparison.
+This article covers three string operations: regular-expression pattern matching with <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>, allocation-free search over <xref:System.ReadOnlySpan%601>, and choosing a <xref:System.StringComparison> value for correct, fast comparisons.
 
 ## Find specific text by using regular expressions
 

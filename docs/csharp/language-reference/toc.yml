@@ -463,6 +463,13 @@ items:
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:
+  - name: Invalid command-line options
+    href: ./compiler-messages/invalid-build-command-line.md
+    displayName: >
+      command line, msbuild, dotnet build, csc,
+      CS0006, CS0007, CS0016, CS1564, CS1616, CS1668, CS1719, CS1773, CS2008, CS2019,
+      CS2029, CS2032, CS2036, CS2038, CS2039, CS2040, CS2041, CS2042, CS2043, CS2044,
+      CS2045, CS2046, CS3012, CS3013, CS7038, CS8751, CS8771, CS8772
   - name: Preprocessor errors
     href: ./compiler-messages/preprocessor-errors.md
     displayName: >
@@ -475,8 +482,8 @@ items:
       CS0181, CS0243, CS0404, CS0415, CS0416, CS0447, CS0577, CS0578, CS0579, CS0582,
       CS0592, CS0609, CS0616, CS0625, CS0629, CS0636, CS0637, CS0641, CS0646, CS0647,
       CS0653, CS0657, CS0658, CS0668, CS0685, CS0735, CS0739, CS1608, CS1614, CS1618,
-      CS1667, CS1689, CS7014, CS7046, CS7047, CS7067, CS8959, CS8960, CS8961, CS8962,
-      CS8963, CS8968, CS8970, CS9331
+      CS1667, CS1689, CS7014, CS7046, CS7047, CS7067, CS8783, CS8959, CS8960, CS8961,
+      CS8962, CS8963, CS8968, CS8970, CS9331
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
     displayName: >
@@ -514,11 +521,11 @@ items:
     displayName: >
       Primary constructors, module initializers, UnmanagedCallersOnly,
       CS0132, CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0573, CS0710,
-      CS0768, CS0824, CS1018, CS8054, CS8091, CS8358, CS8813, CS8814, CS8815, CS8816,
-      CS8862, CS8867, CS8868, CS8878, CS8900, CS8901, CS8902, CS8910, CS8958, CS8982,
-      CS8983, CS9018, CS9019, CS9020, CS9021, CS9022, CS9105, CS9106, CS9107, CS9108,
-      CS9109, CS9110, CS9111, CS9112, CS9113, CS9114, CS9115, CS9116, CS9117, CS9118,
-      CS9119, CS9120, CS9121, CS9122, CS9124, CS9136, CS9179
+      CS0768, CS0824, CS1018, CS8054, CS8091, CS8358, CS8760, CS8813, CS8814, CS8815,
+      CS8816, CS8862, CS8867, CS8868, CS8878, CS8900, CS8901, CS8902, CS8910, CS8958,
+      CS8982, CS8983, CS9018, CS9019, CS9020, CS9021, CS9022, CS9105, CS9106, CS9107,
+      CS9108, CS9109, CS9110, CS9111, CS9112, CS9113, CS9114, CS9115, CS9116, CS9117,
+      CS9118, CS9119, CS9120, CS9121, CS9122, CS9124, CS9136, CS9179
   - name: Property declarations
     href: ./compiler-messages/property-declaration-errors.md
     displayName: >
@@ -537,7 +544,7 @@ items:
       CS0031, CS0056, CS0057, CS0215, CS0216, CS0217, CS0218, CS0220, CS0221, CS0448,
       CS0463, CS0543, CS0552, CS0553, CS0554, CS0555, CS0556, CS0557, CS0558, CS0559,
       CS0562, CS0563, CS0564, CS0567, CS0590, CS0594, CS0652, CS0659, CS0660, CS0661,
-      CS0715, CS1021, CS1037, CS1553, CS8778, CS8973, CS9023, CS9024, CS9025,
+      CS0715, CS1021, CS1037, CS1553, CS8761, CS8778, CS8973, CS9023, CS9024, CS9025,
       CS9027, CS9308, CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
   - name: Parameter / argument mismatch
     href: ./compiler-messages/parameter-argument-mismatch.md
@@ -758,10 +765,6 @@ items:
       href: ../misc/cs0004.md
     - name: CS0005
       href: ../misc/cs0005.md
-    - name: CS0006
-      href: ./compiler-messages/cs0006.md
-    - name: CS0007
-      href: ./compiler-messages/cs0007.md
     - name: CS0008
       href: ../misc/cs0008.md
     - name: CS0009
@@ -776,8 +779,6 @@ items:
       href: ../misc/cs0014.md
     - name: CS0015
       href: ./compiler-messages/cs0015.md
-    - name: CS0016
-      href: ./compiler-messages/cs0016.md
     - name: CS0019
       href: ./compiler-messages/cs0019.md
     - name: CS0020
@@ -1364,8 +1365,6 @@ items:
       href: ../misc/cs1562.md
     - name: CS1563
       href: ../misc/cs1563.md
-    - name: CS1564
-      href: ./compiler-messages/cs1564.md
     - name: CS1565
       href: ../misc/cs1565.md
     - name: CS1566
@@ -1444,8 +1443,6 @@ items:
       href: ./compiler-messages/cs1705.md
     - name: CS1713
       href: ../misc/cs1713.md
-    - name: CS1719
-      href: ../misc/cs1719.md
     - name: CS1721
       href: ./compiler-messages/cs1721.md
     - name: CS1722
@@ -1540,8 +1537,6 @@ items:
       href: ../misc/cs2006.md
     - name: CS2007
       href: ../misc/cs2007.md
-    - name: CS2008
-      href: ../misc/cs2008.md
     - name: CS2011
       href: ../misc/cs2011.md
     - name: CS2012
@@ -1554,8 +1549,6 @@ items:
       href: ../misc/cs2016.md
     - name: CS2018
       href: ../misc/cs2018.md
-    - name: CS2019
-      href: ../misc/cs2019.md
     - name: CS2020
       href: ../misc/cs2020.md
     - name: CS2021
@@ -1564,14 +1557,10 @@ items:
       href: ../misc/cs2022.md
     - name: CS2024
       href: ../misc/cs2024.md
-    - name: CS2032
-      href: ./compiler-messages/cs2032.md
     - name: CS2033
       href: ../misc/cs2033.md
     - name: CS2035
       href: ../misc/cs2035.md
-    - name: CS2036
-      href: ../misc/cs2036.md
     - name: CS7003
       href: ./compiler-messages/cs7003.md
     - name: CS8070
@@ -1714,8 +1703,6 @@ items:
       href: ./compiler-messages/cs1598.md
     - name: CS1607
       href: ./compiler-messages/cs1607.md
-    - name: CS1616
-      href: ./compiler-messages/cs1616.md
     - name: CS1645
       href: ../misc/cs1645.md
     - name: CS1658
@@ -1750,8 +1737,6 @@ items:
       href: ../misc/cs2014.md
     - name: CS2023
       href: ../misc/cs2023.md
-    - name: CS2029
-      href: ../misc/cs2029.md
     - name: CS3000
       href: ../misc/cs3000.md
     - name: CS3001
@@ -1772,10 +1757,6 @@ items:
       href: ../misc/cs3010.md
     - name: CS3011
       href: ../misc/cs3011.md
-    - name: CS3012
-      href: ../misc/cs3012.md
-    - name: CS3013
-      href: ../misc/cs3013.md
     - name: CS3014
       href: ../misc/cs3014.md
     - name: CS3015
@@ -1832,8 +1813,6 @@ items:
       href: ../misc/cs1572.md
     - name: CS1587
       href: ../misc/cs1587.md
-    - name: CS1668
-      href: ../misc/cs1668.md
     - name: CS1698
       href: ../misc/cs1698.md
     - name: CS1701

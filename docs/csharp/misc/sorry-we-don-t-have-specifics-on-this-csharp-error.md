@@ -31,20 +31,10 @@ f1_keywords:
   - "CS1768"
   - "CS1769"
   - "CS1770"
-  - "CS1773"
   - "CS1774"
   - "CS1982"
   - "CS1996"
   - "CS1997"
-  - "CS2038"
-  - "CS2039"
-  - "CS2040"
-  - "CS2041"
-  - "CS2042"
-  - "CS2043"
-  - "CS2044"
-  - "CS2045"
-  - "CS2046"
   - "CS3028"
   # C# 5 diagnostics
   - "CS4017"
@@ -78,7 +68,6 @@ f1_keywords:
   - "CS7033"
   - "CS7034"
   - "CS7035"
-  - "CS7038" # build only diagnostic
   - "CS7041"
   - "CS7042"
   - "CS7043"
@@ -259,13 +248,6 @@ f1_keywords:
   - "CS8656"
   - "CS8662"
   - "CS8669"
-  # C# 9 diagnostics start here
-  - "CS8751" # misc
-  - "CS8760" # misc
-  - "CS8761"
-  - "CS8771"
-  - "CS8772"
-  - "CS8783" # local function
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9347"
@@ -290,6 +272,8 @@ f1_keywords:
   - "CS9365"
   - "CS9366"
 # More unions:
+  - "CS9367"
+  - "CS9368"
   - "CS9369"
   - "CS9370"
   - "CS9371"
@@ -304,6 +288,11 @@ f1_keywords:
   - "CS9378"
 # More unsafe
   - "CS9379"
+  - "CS9380"
+  - "CS9381"
+  - "CS9382"
+  - "CS9383"
+  - "CS9384"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

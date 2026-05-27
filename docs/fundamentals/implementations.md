@@ -6,6 +6,10 @@ ms.custom: updateeachrelease
 ---
 # .NET implementations
 
+:::code language="bash" source="./test/script.sh" range="5-7":::
+
+:::code language="bash" source="./test/script.sh" id="install-cluster-connector-rhel":::
+
 A .NET app is developed for one or more *[implementations](../standard/glossary.md#implementation-of-net) of .NET*. Implementations of .NET include .NET Framework, .NET 5+ (and .NET Core), and Mono.
 
 Each implementation of .NET includes the following components:

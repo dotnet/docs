@@ -414,7 +414,7 @@ As detailed in the [requests section](#handling-requests), the testing platform 
 
 In this segment, we'll elucidate the various well-known `IProperty` options and their respective implications.
 
-For a comprehensive list of well-known properties, see [TestNodeProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeProperties.cs). If you notice that a property description is missing, please file an issue.
+For a comprehensive list of well-known properties, see [TestNodeStateProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeStateProperties.cs) (and other `Property` types in the same directory). If you notice that a property description is missing, please file an issue.
 
 These properties can be divided in the following categories:
 

@@ -412,11 +412,13 @@ internal sealed class TestingFramework
 
 As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, skipped, etc.). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
 
-In this segment, we'll elucidate the various well-known `IProperty` options and their respective implications.
+As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, and skipped). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
+
+This section describes the various well-known `IProperty` options and their respective implications.
 
 For a comprehensive list of well-known properties, see [TestNodeStateProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeStateProperties.cs) (and other `Property` types in the same directory). If you notice that a property description is missing, please file an issue.
 
-These properties can be divided in the following categories:
+These properties can be divided into the following categories:
 
 1. [*Generic information*](#generic-information): Properties that can be included in any kind of request.
 1. [*Discovery information*](#discovery-information): Properties that are supplied during a `DiscoverTestExecutionRequest` discovery request.

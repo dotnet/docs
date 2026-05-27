@@ -22,7 +22,7 @@ The following options control how the C# compiler creates or imports Win32 resou
 - **Win32Manifest** / `-win32manifest`: Specify a Win32 manifest file (.xml).
 - **NoWin32Manifest** / `-nowin32manifest`: Don't include the default Win32 manifest.
 - **EmbeddedResource** / `-resource`: Embed the specified resource (Short form: /res).
-- **LinkResource** / `-linkresources`: Link the specified resource to this assembly.
+- **LinkResource** / `-linkresource`: Link the specified resource to this assembly.
 
 > [!NOTE]
 > For more information about configuring these options for your project, see [Compiler options](index.md#how-to-set-options).
@@ -58,7 +58,7 @@ Use the **Win32Manifest** option to specify a user-defined Win32 application man
 `filename` is the name and location of the custom manifest file. By default, the C# compiler embeds an application manifest that specifies a requested execution level of `asInvoker`. It creates the manifest in the same folder where the executable is built. If you want to supply a custom manifest, for example to specify a requested execution level of `highestAvailable` or `requireAdministrator`, use this option to specify the name of the file.
 
 > [!NOTE]
-> The **Win32Manifest** option and the **Win32Resources** option are mutually exclusive. If you try to use both options in the same command line, you get a build error.
+> The **Win32Manifest** option and the **Win32Resource** option are mutually exclusive. If you try to use both options in the same command line, you get a build error.
 
 An application that has no application manifest that specifies a requested execution level is subject to file and registry virtualization under the User Account Control feature in Windows. For more information, see [User Account Control](/windows/access-protection/user-account-control/user-account-control-overview).
 

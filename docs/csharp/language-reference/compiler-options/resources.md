@@ -1,7 +1,8 @@
 ---
 description: "C# Compiler Options to control Windows resources embedded in a dotnet application."
 title: "Compiler Options - resource options"
-ms.date: 03/12/2021
+ms.date: 05/27/2026
+ai-usage: ai-assisted
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -9,8 +10,8 @@ helpviewer_keywords:
   - "Win32Icon compiler option [C#]"
   - "Win32Manifest compiler option [C#]"
   - "NoWin32Manifest compiler option [C#]"
-  - "Resources compiler option [C#]"
-  - "LinkResources compiler option [C#]"
+  - "EmbeddedResource compiler option [C#]"
+  - "LinkResource compiler option [C#]"
 ---
 # C# Compiler Options that specify resources
 
@@ -20,8 +21,8 @@ The following options control how the C# compiler creates or imports Win32 resou
 - **Win32Icon** / `-win32icon`: Reference metadata from the specified assembly file or files.
 - **Win32Manifest** / `-win32manifest`: Specify a Win32 manifest file (.xml).
 - **NoWin32Manifest** / `-nowin32manifest`: Don't include the default Win32 manifest.
-- **Resources** / `-resource`: Embed the specified resource (Short form: /res).
-- **LinkResources** / `-linkresources`: Link the specified resource to this assembly.
+- **EmbeddedResource** / `-resource`: Embed the specified resource (Short form: /res).
+- **LinkResource** / `-linkresources`: Link the specified resource to this assembly.
 
 > [!NOTE]
 > Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
@@ -82,28 +83,28 @@ When this option is used, the application will be subject to virtualization on W
 
 In Visual Studio, set this option in the **Application Property** page by selecting the **Create Application Without a Manifest** option in the **Manifest** drop down list. For more information, see [Application Page, Project Designer (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp).
 
-## Resources
+## EmbeddedResource
 
 Embeds the specified resource into the output file.
 
 ```xml
-<Resources Include=filename>
+<EmbeddedResource Include="filename">
   <LogicalName>identifier</LogicalName>
   <Access>accessibility-modifier</Access>
-</Resources>
+</EmbeddedResource>
 ```
 
 `filename` is the .NET resource file that you want to embed in the output file. `identifier` (optional) is the logical name for the resource; the name that is used to load the resource. The default is the name of the file. `accessibility-modifier` (optional) is the accessibility of the resource: public or private. The default is public. By default, resources are public in the assembly when they're created by using the C# compiler. To make the resources private, specify `private` as the accessibility modifier. No other accessibility other than `public` or `private` is allowed. If `filename` is a .NET resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time. The order of the resources in the output file is determined from the order specified in the project file.  
   
-## LinkResources
+## LinkResource
 
-Creates a link to a .NET resource in the output file. The resource file isn't added to the output file. **LinkResources** differs from the **Resource** option, which does embed a resource file in the output file.
+Creates a link to a .NET resource in the output file. The resource file isn't added to the output file. **LinkResource** differs from the **EmbeddedResource** option, which does embed a resource file in the output file.
 
 ```xml
-<LinkResources Include=filename>
+<LinkResource Include="filename">
   <LogicalName>identifier</LogicalName>
   <Access>accessibility-modifier</Access>
-</LinkResources>
+</LinkResource>
 ```
 
 `filename` is the .NET resource file to which you want to link from the assembly. `identifier` (optional) is the logical name for the resource; the name that is used to load the resource. The default is the name of the file. `accessibility-modifier` (optional) is the accessibility of the resource: public or private. The default is public. By default, linked resources are public in the assembly when they're created with the C# compiler. To make the resources private, specify `private` as the accessibility modifier. No other modifier other than `public` or `private` is allowed. If `filename` is a .NET resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time. The file specified in `filename` can be any format. For example, you may want to make a native DLL part of the assembly, so that it can be installed into the global assembly cache and accessed from managed code in the assembly. You can do the same thing in the Assembly Linker. For more information, see [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md) and [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md).

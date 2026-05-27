@@ -72,7 +72,7 @@ For more information, see the [`using` directive](../../language-reference/keywo
 
 ### Global using directives
 
-A `using` directive only applies to the file it appears in. When you write the same `using` directives in every file, *global using* directives let you declare them once for your entire project. Place them in any file. Many teams create a dedicated `GlobalUsings.cs` file:
+A `using` directive only applies to the file it appears in. Instead of repeating the same `using` directives in every file, use *global using* directives, which let you declare them once for your entire project. Place them in any file. Many teams create a dedicated `GlobalUsings.cs` file:
 
 :::code language="csharp" source="snippets/namespaces/GlobalUsings.cs" id="GlobalUsings":::
 

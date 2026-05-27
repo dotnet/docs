@@ -34,9 +34,7 @@ Modernization for .NET currently supports the following predefined tasks:
 
 - **Migrate to Azure Blob Storage**
 
-  Replace on-premises or cross-cloud object storage, or local file system file I/O, with Azure Blob Storage for unstructured data.
-
-  This migration knowledge was developed in collaboration with the Azure Storage team, drawing on their deep expertise in Blob Storage APIs, authentication patterns, and platform-specific behaviors to ensure the guidance reflects production-grade best practices.
+  Replace on-premises or cross-cloud object storage, or local file system file I/O, with Azure Blob Storage for unstructured data. This migration knowledge was developed in collaboration with the Azure Storage team, drawing on their deep expertise in Blob Storage APIs, authentication patterns, and platform-specific behaviors to ensure the guidance reflects production-grade best practices.
 
 - **Migrate to Microsoft Entra ID**
 

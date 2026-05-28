@@ -17,12 +17,10 @@ The <xref:System.String.Split*?displayProperty=nameWithType> method breaks a str
 
 The method has many overloads, but they cover four independent decisions:
 
-- **Separators**: one `char`, an array of `char`, one `string`, or an array of `string`.
+- **Separators**: one `char`, an array of `char`, one `string`, or an array of `string`s.
 - **Maximum result count**: cap the number of substrings returned.
 - **Empty-entry handling**: keep empty substrings (the default) or drop them with <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType>.
 - **Whitespace handling**: trim leading and trailing whitespace from each entry with <xref:System.StringSplitOptions.TrimEntries?displayProperty=nameWithType>.
-
-The rest of this article walks through the common combinations.
 
 ## Split a string into words
 
@@ -34,11 +32,11 @@ Iterate the returned array with `for` to recover the position of each word:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="IndexWords":::
 
-If the input contains runs of the separator character, `Split` produces empty entries, one for each "gap" between consecutive separators:
+If the input contains repeated instances of the separator character, `Split` produces empty entries, one for each "gap" between consecutive separators:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="RepeatedSeparators":::
 
-Pass `StringSplitOptions.RemoveEmptyEntries` to drop those empty entries (shown later).
+Pass `StringSplitOptions.RemoveEmptyEntries` to drop those empty entries, as shown later in this article.
 
 ## Split on multiple separator characters
 
@@ -52,7 +50,7 @@ Adjacent separators still produce empty entries:
 
 ## Split on multicharacter separators
 
-To split on whole-word or multicharacter separators, pass an array of strings together with a <xref:System.StringSplitOptions> value:
+To split on whole-word or multicharacter separators, pass an array of strings. The string-array overloads require a <xref:System.StringSplitOptions> value. Use `RemoveEmptyEntries` when repeated separators would otherwise produce empty results:
 
 :::code language="csharp" source="snippets/split/Program.cs" id="StringSeparators":::
 

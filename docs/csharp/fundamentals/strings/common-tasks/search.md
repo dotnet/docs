@@ -18,7 +18,7 @@ The <xref:System.String> class includes methods that answer two everyday questio
 - *Does this string contain that text?* — use <xref:System.String.Contains*>, <xref:System.String.StartsWith*>, or <xref:System.String.EndsWith*>.
 - *Where does that text occur?* — use <xref:System.String.IndexOf*> or <xref:System.String.LastIndexOf*>.
 
-For regular expressions, span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../../standard/base-types/best-practices-strings.md).
+More complex search and replacement algorithms can be built using regular expressions. For more information on regular expressions, and other string operations see the language reference article on [String operations](../../../language-reference/builtin-types/string-operations.md).
 
 ## Check whether a string contains text
 
@@ -51,6 +51,8 @@ Most search overloads accept an optional <xref:System.StringComparison> value. P
 - If you're searching persisted data that must compare the same on every machine and culture, use <xref:System.StringComparison.InvariantCulture> (rarely needed).
 
 Ordinal comparison is the fastest option and the right default for anything that isn't natural-language text. Culture-aware comparison is significantly slower and can produce surprising results. For example, in some cultures the lowercase `i` doesn't match an uppercase `I`.Reserve it for searches that users perform against prose.
+
+For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../../standard/base-types/best-practices-strings.md).
 
 ## See also
 

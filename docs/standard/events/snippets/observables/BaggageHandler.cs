@@ -2,22 +2,33 @@
 
 public sealed class BaggageHandler : IObservable<BaggageInfo>
 {
-    private readonly HashSet<IObserver<BaggageInfo>> _observers = new();
-    private readonly HashSet<BaggageInfo> _flights = new();
+    private readonly Lock _lock = new();
+    private readonly HashSet<IObserver<BaggageInfo>> _observers = [];
+    private readonly HashSet<BaggageInfo> _flights = [];
 
     public IDisposable Subscribe(IObserver<BaggageInfo> observer)
     {
-        // Check whether observer is already registered. If not, add it.
-        if (_observers.Add(observer))
+        BaggageInfo[] snapshot;
+
+        lock (_lock)
         {
-            // Provide observer with existing data.
-            foreach (BaggageInfo item in _flights)
+            // Check whether observer is already registered. If not, add it.
+            if (!_observers.Add(observer))
             {
-                observer.OnNext(item);
+                return new Unsubscriber<BaggageInfo>(_lock, _observers, observer);
             }
+
+            // Snapshot existing data while holding the lock.
+            snapshot = [.. _flights];
         }
 
-        return new Unsubscriber<BaggageInfo>(_observers, observer);
+        // Provide observer with existing data outside the lock.
+        foreach (BaggageInfo item in snapshot)
+        {
+            observer.OnNext(item);
+        }
+
+        return new Unsubscriber<BaggageInfo>(_lock, _observers, observer);
     }
 
     // Called to indicate all baggage is now unloaded.
@@ -27,11 +38,22 @@ public sealed class BaggageHandler : IObservable<BaggageInfo>
     public void BaggageStatus(int flightNumber, string from, int carousel)
     {
         var info = new BaggageInfo(flightNumber, from, carousel);
+        IObserver<BaggageInfo>[] snapshot;
 
         // Carousel is assigned, so add new info object to list.
-        if (carousel > 0 && _flights.Add(info))
+        if (carousel > 0)
         {
-            foreach (IObserver<BaggageInfo> observer in _observers)
+            lock (_lock)
+            {
+                if (!_flights.Add(info))
+                {
+                    return;
+                }
+
+                snapshot = [.. _observers];
+            }
+
+            foreach (IObserver<BaggageInfo> observer in snapshot)
             {
                 observer.OnNext(info);
             }
@@ -39,24 +61,37 @@ public sealed class BaggageHandler : IObservable<BaggageInfo>
         else if (carousel is 0)
         {
             // Baggage claim for flight is done.
-            if (_flights.RemoveWhere(
-                flight => flight.FlightNumber == info.FlightNumber) > 0)
+            lock (_lock)
             {
-                foreach (IObserver<BaggageInfo> observer in _observers)
+                if (_flights.RemoveWhere(
+                    flight => flight.FlightNumber == info.FlightNumber) == 0)
                 {
-                    observer.OnNext(info);
+                    return;
                 }
+
+                snapshot = [.. _observers];
+            }
+
+            foreach (IObserver<BaggageInfo> observer in snapshot)
+            {
+                observer.OnNext(info);
             }
         }
     }
 
     public void LastBaggageClaimed()
     {
-        foreach (IObserver<BaggageInfo> observer in _observers)
+        IObserver<BaggageInfo>[] snapshot;
+
+        lock (_lock)
+        {
+            snapshot = [.. _observers];
+            _observers.Clear();
+        }
+
+        foreach (IObserver<BaggageInfo> observer in snapshot)
         {
             observer.OnCompleted();
         }
-
-        _observers.Clear();
     }
 }

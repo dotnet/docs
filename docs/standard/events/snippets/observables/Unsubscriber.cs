@@ -1,13 +1,21 @@
 ﻿namespace Observables.Example;
 
-internal sealed class Unsubscriber<BaggageInfo> : IDisposable
+internal sealed class Unsubscriber<T> : IDisposable
 {
-    private readonly ISet<IObserver<BaggageInfo>> _observers;
-    private readonly IObserver<BaggageInfo> _observer;
+    private readonly Lock _lock;
+    private readonly ISet<IObserver<T>> _observers;
+    private readonly IObserver<T> _observer;
 
     internal Unsubscriber(
-        ISet<IObserver<BaggageInfo>> observers,
-        IObserver<BaggageInfo> observer) => (_observers, _observer) = (observers, observer);
+        Lock @lock,
+        ISet<IObserver<T>> observers,
+        IObserver<T> observer) => (_lock, _observers, _observer) = (@lock, observers, observer);
 
-    public void Dispose() => _observers.Remove(_observer);
+    public void Dispose()
+    {
+        lock (_lock)
+        {
+            _observers.Remove(_observer);
+        }
+    }
 }

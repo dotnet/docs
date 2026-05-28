@@ -1,7 +1,7 @@
 ---
 ms.topic: include
 ms.date: 05/22/2026
-title: GitHub Copilot modernization in Copilot CLI (Preview)
+title: GitHub Copilot modernization in Copilot CLI
 description: Learn how to assess .NET app readiness and migrate to Azure with GitHub Copilot modernization plugin in Copilot CLI. Follow step-by-step guidance for seamless modernization.
 ---
 

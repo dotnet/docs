@@ -16,16 +16,17 @@ zone_pivot_groups: operating-systems-set-three
 
 ## Synopsis
 
+```dotnetcli
+
+```
+
 ::: zone pivot="os-windows"
 
 ```dotnetcli
-dotnet-core-uninstall remove <TARGET> [--arm64|--x64|--x86] <VERSION>...
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
+dotnet-core-uninstall remove <TARGET> <FILTER> [-v|--verbosity <LEVEL>]
+    [--force] [-y|--yes]
 
-dotnet-core-uninstall remove <TARGET> [--arm64|--x64|--x86] <FILTER>
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
-
-dotnet-core-uninstall remove -h|--help|-?
+dotnet-core-uninstall remove -h|--help
 ```
 
 ::: zone-end
@@ -33,13 +34,10 @@ dotnet-core-uninstall remove -h|--help|-?
 ::: zone pivot="os-macos"
 
 ```dotnetcli
-dotnet-core-uninstall remove <TARGET> <VERSION>...
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
+dotnet-core-uninstall remove <TARGET> <FILTER> [-v|--verbosity <LEVEL>]
+    [--force] [-y|--yes] [--preserve-vs-for-mac-sdks]
 
-dotnet-core-uninstall remove <TARGET> <FILTER>
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
-
-dotnet-core-uninstall remove -h|--help|-?
+dotnet-core-uninstall remove -h|--help
 ```
 
 ::: zone-end
@@ -119,17 +117,6 @@ The `dotnet-core-uninstall remove` command removes .NET SDKs and runtimes from t
 
 These options are exclusive.
 
-::: zone pivot="os-macos"
-
-- **`--preserve-vs-for-mac-sdks`**
-
-  Prevents removal of SDKs and runtimes with a high probability of being used by Visual Studio for Mac.
-
-  > [!NOTE]
-  > Visual Studio for Mac is out of support.
-
-::: zone-end
-
 - **`--all`**
 
   Removes all the .NET SDKs and runtimes.
@@ -168,8 +155,6 @@ These options are exclusive.
 
   Executes the command without requiring a yes or no confirmation.
 
-::: zone pivot="os-windows"
-
 - **`--force`**
 
   Forces removal of versions that might be used by Visual Studio.
@@ -181,6 +166,13 @@ These options are exclusive.
 - **`--force`**
 
   Forces removal of versions that might be used by Visual Studio for Mac or SDKs.
+
+- **`--preserve-vs-for-mac-sdks`**
+
+  Prevents removal of SDKs and runtimes that have a high probability of being used by Visual Studio for Mac.
+
+  > [!NOTE]
+  > Visual Studio for Mac is out of support.
 
 ::: zone-end
 
@@ -194,7 +186,7 @@ These options are exclusive.
   - `d[etailed]`
   - `diag[nostic]`.
 
-- **`-?|-h|--help`**
+- **`-h|--help`**
 
   Shows help and usage information
 

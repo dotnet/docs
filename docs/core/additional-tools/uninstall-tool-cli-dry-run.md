@@ -22,7 +22,10 @@ zone_pivot_groups: operating-systems-set-three
 ::: zone pivot="os-windows"
 
 ```dotnetcli
-dotnet-core-uninstall dry-run [options] [<VERSION>...]
+dotnet-core-uninstall dry-run <TARGET> <FILTER> [-v|--verbosity <LEVEL>]
+    [--force] [-y|--yes]
+
+dotnet-core-uninstall dry-run -h|--help
 ```
 
 ::: zone-end
@@ -30,10 +33,14 @@ dotnet-core-uninstall dry-run [options] [<VERSION>...]
 ::: zone pivot="os-macos"
 
 ```dotnetcli
-dotnet-core-uninstall dry-run [options] [<VERSION>...]
+dotnet-core-uninstall dry-run <TARGET> <FILTER> [-v|--verbosity <LEVEL>]
+    [--force] [-y|--yes] [--preserve-vs-for-mac-sdks]
+
+dotnet-core-uninstall dry-run -h|--help
 ```
 
 ::: zone-end
+
 
 ## Description
 
@@ -196,11 +203,8 @@ These options are exclusive.
 - Dry run of removing all the .NET SDKs below the version `6.0.301`:
 
   ```console
-  dotnet-core-uninstall whatif --all-below 6.0.301 --sdk
+  dotnet-core-uninstall dry-run --all-below 6.0.301 --sdk
   ```
-
-  > [!TIP]
-  > The `dotnet-core-uninstall whatif` command is the same command as `dry-run`.
 
 ## See also
 

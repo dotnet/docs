@@ -2,7 +2,7 @@
 title: dotnet-core-uninstall dry-run command
 description: The dotnet-core-uninstall dry-run command simulates uninstalling the target .NET SDK or runtime. Status is reported for potential removal.
 author: adegeo
-ms.date: 08/04/2024
+ms.date: 05/27/2026
 zone_pivot_groups: operating-systems-set-three
 ---
 
@@ -22,13 +22,7 @@ zone_pivot_groups: operating-systems-set-three
 ::: zone pivot="os-windows"
 
 ```dotnetcli
-dotnet-core-uninstall dry-run <TARGET> [--x64|--x86] <VERSION>...
-    [-v|--verbosity <LEVEL>] [--force]
-
-dotnet-core-uninstall dry-run <TARGET> [--x64|--x86] <FILTER>
-    [-v|--verbosity <LEVEL>]
-
-dotnet-core-uninstall dry-run -h|--help|-?
+dotnet-core-uninstall dry-run [options] [<VERSION>...]
 ```
 
 ::: zone-end
@@ -36,13 +30,7 @@ dotnet-core-uninstall dry-run -h|--help|-?
 ::: zone pivot="os-macos"
 
 ```dotnetcli
-dotnet-core-uninstall dry-run <TARGET> <VERSION>...
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
-
-dotnet-core-uninstall dry-run <TARGET> <FILTER>
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
-
-dotnet-core-uninstall dry-run -h|--help|-?
+dotnet-core-uninstall dry-run [options] [<VERSION>...]
 ```
 
 ::: zone-end
@@ -53,10 +41,6 @@ The `dotnet-core-uninstall dry-run` command simulates .NET SDK and runtime remov
 
 ### Arguments
 
-**`TARGET`**
-
-  The type you want to uninstall. Valid options are listed in the [Options - TARGET](#options---target) section.
-
 **`VERSION`**
 
   The version to uninstall. You can list several versions separated by a space. Response files are also supported.
@@ -64,47 +48,53 @@ The `dotnet-core-uninstall dry-run` command simulates .NET SDK and runtime remov
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line. They're text files, typically with a *\*.rsp* extension, and each version is listed on a separate line. To specify a response file for the `VERSION` argument, use the \@ character immediately followed by the response file name.
 
-**`FILTER`**
-
-  Specifies a value used to filter the `TARGET`. Valid options are listed in the [Options - FILTER](#options---filter) section.
-
 ## Options - TARGET
 
 ::: zone pivot="os-windows"
 
 - **`--aspnet-runtime`**
-  
-  Discovers all the ASP.NET Core runtimes that can be uninstalled with this tool.
+
+  Removes ASP.NET Core runtimes only.
 
 - **`--hosting-bundle`**
-  
-  Lists all the .NET hosting bundles that can be uninstalled with this tool.
 
-::: zone-end
+  Removes .NET Core Runtime and Hosting Bundles only.
 
 - **`--runtime`**
 
-  Lists all the .NET runtimes that can be uninstalled with this tool.
+  Removes .NET Core runtimes only.
 
 - **`--sdk`**
 
-  Lists all the .NET SDKs that can be uninstalled with this tool.
+  Removes .NET Core SDKs only.
 
-::: zone pivot="os-windows"
+- **`--windows-desktop-runtime`**
+
+  Removes Windows Desktop runtimes only.
+
+- **`--arm64`**
+
+  Use with `--sdk`, `--runtime`, `--aspnet-runtime`, and `--windows-desktop-runtime` to remove arm64.
 
 - **`--x64`**
 
-  Lists all the x64 .NET SDKs and runtimes that can be uninstalled with this tool.
-
-  > [!NOTE]
-  > If `--x64` or `--x86` isn't specified, then both x64 and x86 will be removed.
+  Use with `--sdk`, `--runtime`, `--aspnet-runtime`, and `--windows-desktop-runtime` to remove x64.
 
 - **`--x86`**
 
-  Lists all the x86 .NET SDKs and runtimes that can be uninstalled with this tool.
+  Use with `--sdk`, `--runtime`, `--aspnet-runtime`, and `--windows-desktop-runtime` to remove x86.
 
-  > [!NOTE]
-  > If `--x64` or `--x86` isn't specified, then both x64 and x86 will be removed.
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- **`--runtime`**
+
+  Removes .NET Core runtimes only.
+
+- **`--sdk`**
+
+  Removes .NET Core SDKs only.
 
 ::: zone-end
 
@@ -146,26 +136,56 @@ These options are exclusive.
 
 ## Options
 
+::: zone pivot="os-windows"
+
 - **`--force`**
 
   Forces removal of versions that might be used by Visual Studio.
 
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- **`--force`**
+
+  Forces removal of versions that might be used by Visual Studio for Mac or SDKs.
+
+- **`--preserve-vs-for-mac-sdks`**
+
+  Prevents removal of SDKs and runtimes that have a high probability of being used by Visual Studio for Mac.
+
+  > [!NOTE]
+  > Visual Studio for Mac is out of support.
+
+::: zone-end
+
 - **`-v, --verbosity <LEVEL>`**
 
-  Sets the verbosity level. The default value is `normal`. Allowed values are:
+  Sets the verbosity level. Allowed values are:
 
   - `q[uiet]`
   - `m[inimal]`
   - `n[ormal]`
   - `d[etailed]`
-  - `diag[nostic]`.
+  - `diag[nostic]`
 
 - **`-?|-h|--help`**
 
-  Shows help and usage information
+  Shows help and usage information.
+
+::: zone pivot="os-windows"
 
 > [!NOTE]
-> By default, .NET SDKs and runtimes that might be required by Visual Studio or other SDKs aren't included in the `dotnet-core-uninstall dry-run` output. Also, depending on the state of the machine, some of the specified SDKs and runtimes might not be included in the output. To include all the SDKs and runtimes, list them explicitly as arguments or use the `--force` option.
+> By default, SDKs and runtimes that have a high probability of being used by Visual Studio aren't removed. To remove these, specify them individually or use `--force`. If removing SDKs or runtimes causes issues with your Visual Studio installation, run Repair. SDKs and runtimes are available for download at [https://aka.ms/dotnet-core-download](https://aka.ms/dotnet-core-download).
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+> [!NOTE]
+> Use `--preserve-vs-for-mac-sdks` to prevent removal of SDKs and runtimes that have a high probability of being used by Visual Studio for Mac. Visual Studio for Mac is out of support. SDKs and runtimes are available for download at [https://aka.ms/dotnet-core-download](https://aka.ms/dotnet-core-download).
+
+::: zone-end
 
 - Dry run of removing all the .NET runtimes that have been superseded by higher patches:
 

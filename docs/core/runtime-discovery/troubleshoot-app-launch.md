@@ -3,7 +3,7 @@ title: Troubleshoot app launch failures
 description: Learn about common reasons for app launch failures and possible solutions.
 ms.topic: troubleshooting
 ms.custom: linux-related-content
-ms.date: 03/29/2023
+ms.date: 05/27/2026
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -32,7 +32,7 @@ Host version: 7.0.0
 
 ::: zone pivot="os-linux"
 
-```bash
+```console
 You must install .NET to run this application.
 
 App: /home/user/repos/myapp/myapp
@@ -43,12 +43,12 @@ Host version: 7.0.0
 
 This may be due to a [package mix-up](../install/linux-package-mixup.md).
 
-Global installs are registered in the following location: `/etc/dotnet/install_location`. For more information, see [install locations](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md).
+Global installs are registered in `/etc/dotnet/install_location`. On some systems, architecture-specific files are also present, such as `/etc/dotnet/install_location_arm64`.
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
-```bash
+```console
 You must install .NET to run this application.
 
 App: /home/user/repos/myapp/myapp
@@ -57,7 +57,7 @@ Host version: 7.0.0
 .NET location: Not found
 ```
 
-Global installs are registered in the following location: `/etc/dotnet/install_location`. For more information, see [install locations](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md).
+Global installs are registered in `/etc/dotnet/install_location`. On some systems, architecture-specific files are also present, such as `/etc/dotnet/install_location_arm64`.
 ::: zone-end
 
 The error message includes a link to download .NET. You can follow that link to get to the appropriate download page. You can also pick the .NET version (specified by `Host version`) from [.NET downloads](https://dotnet.microsoft.com/download/dotnet).
@@ -69,7 +69,7 @@ On the [download page](https://dotnet.microsoft.com/download/dotnet) for the req
 ::: zone pivot="os-linux"
 .NET is available through various Linux package managers. For more information, see [Install .NET on Linux](../install/linux.md). (Preview versions of .NET aren't typically available through package managers.)
 
-You need to install the .NET Runtime package for the appropriate version, like `dotnet-runtime6`.
+You need to install the .NET Runtime package for the appropriate version, like `dotnet-runtime-10.0`.
 ::: zone-end
 
 Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.
@@ -96,7 +96,7 @@ The following frameworks were found:
 
 ::: zone pivot="os-linux"
 
-```bash
+```console
 You must install or update .NET to run this application.
 
 App: /home/user/repos/myapp/myapp
@@ -112,7 +112,7 @@ The following frameworks were found:
 
 ::: zone pivot="os-macos"
 
-```bash
+```console
 You must install or update .NET to run this application.
 
 App: /home/user/repos/myapp/myapp
@@ -164,7 +164,7 @@ On the [download page](https://dotnet.microsoft.com/download/dotnet) for the req
 ::: zone pivot="os-linux"
 .NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. (Preview versions of .NET aren't typically available through package managers.)
 
-You need to install the .NET runtime package for the appropriate version, like `dotnet-runtime6` or `dotnet-aspnet6`.
+You need to install the .NET runtime package for the appropriate version, like `dotnet-runtime-10.0` or `aspnetcore-runtime-10.0`.
 ::: zone-end
 
 Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.
@@ -180,67 +180,75 @@ In most cases, when the application that failed to launch is using such an insta
 `/usr/local/share/dotnet/`
 ::: zone-end
 
-## Other options
+## Check the DOTNET_ROOT environment variable
 
-There are other installation and workaround options to consider.
+The `DOTNET_ROOT` environment variable tells the application where to find the `dotnet` driver and the frameworks it needs. If this variable is set incorrectly, or points to a location that doesn't contain a valid .NET installation, the app fails to launch even when .NET is installed elsewhere on the machine.
 
-### Run the dotnet-install script
+Common problems to look for:
 
-Download the [dotnet-install script](../tools/dotnet-install-script.md#recommended-version) for your operating system. Run the script with options based on the information in the error message. The [dotnet-install script reference page](../tools/dotnet-install-script.md) shows all available options.
+- **Variable points to wrong location** — `DOTNET_ROOT` may be set to a path from a previous .NET installation, a CI environment, or a script that no longer reflects the current install location.
+- **Variable is set when it shouldn't be** — If `DOTNET_ROOT` is set in the environment, .NET skips the default install location entirely. Remove or update the variable if .NET has moved.
+- **Architecture mismatch** — Use the architecture-specific variant when running 32-bit apps on a 64-bit machine. For example, set `DOTNET_ROOT_X86` to point to the 32-bit installation. For more information, see [`DOTNET_ROOT` environment variable](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64).
+
+To diagnose, print the current value of the variable and confirm it points to a directory that contains a valid .NET installation:
 
 ::: zone pivot="os-windows"
-Launch [PowerShell](/powershell) and run:
 
 ```powershell
-dotnet-install.ps1 -Architecture <architecture> -InstallDir <directory> -Runtime <runtime> -Version <version>
+echo $env:DOTNET_ROOT
 ```
 
-For example, the error message in the previous section would correspond to:
+::: zone-end
 
-```powershell
-dotnet-install.ps1 -Architecture x64 -InstallDir "C:\Program Files\dotnet\" -Runtime dotnet -Version 5.0.15
+::: zone pivot="os-linux,os-macos"
+
+```bash
+echo $DOTNET_ROOT
 ```
 
-If you encounter an error stating that running scripts is disabled, you may need to set the [execution policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies) to allow the script to run:
+::: zone-end
 
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process
-```
+If the variable is set, verify that the path exists and contains the expected .NET version. If the variable isn't set, .NET falls back to the default install location for your platform.
 
-For more information on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell).
+::: zone pivot="os-windows"
+
+### Check the install location
+
+On Windows, .NET searches only one location&mdash;the first location where a .NET installation is found. If the framework lookup fails, verify that .NET is installed in the expected location.
+
+When you run the application through `dotnet`, frameworks are searched for in subdirectories relative to `dotnet`. When you run the application through its executable (`apphost`), .NET searches the following locations in order and uses the first one where an installation is found:
+
+1. Subdirectories relative to the `DOTNET_ROOT` environment variable (if set).
+1. Globally registered install location (if set) in `HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\<arch>\InstallLocation`.
+1. Default install location: `%ProgramFiles%\dotnet` (or `%ProgramFiles(x86)%\dotnet` for 32-bit processes on 64-bit Windows).
+
+If .NET is installed in a non-default location, make sure `DOTNET_ROOT` points to it so the app can find the correct installation.
+
+::: zone-end
+
+## Run the dotnet-install script
+
+Use the dotnet-install script when you need a quick, non-admin installation, such as in CI scenarios or temporary environments.
+
+The script installs .NET to a folder that you choose. It doesn't behave like the standard OS installer, and it creates a private installation.
+
+To run an app from that private installation, set the [`DOTNET_ROOT` (or the architecture-specific variant)](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variable when you launch through an executable (known as an `apphost`), or launch through the matching [`dotnet`](../tools/dotnet.md) host from the same install location.
+
+::: zone pivot="os-windows"
+For installation steps on Windows, see [Install with PowerShell](../install/windows.md#install-with-powershell).
 ::: zone-end
 
 ::: zone pivot="os-linux"
-
-```bash
-./dotnet-install.sh --architecture <architecture> --install-dir <directory> --runtime <runtime> --version <version>
-```
-
-For example, the error message in the previous section would correspond to:
-
-```bash
-./dotnet-install.sh --architecture x64 --install-dir /usr/share/dotnet/ --runtime dotnet --version 5.0.15
-```
-
-For more information on installation using the script, see [Scripted install](../install/linux-scripted-manual.md#scripted-install).
+For installation steps on Linux, see [Install .NET with a script](../install/linux-scripted-manual.md#scripted-install).
 ::: zone-end
 
 ::: zone pivot="os-macos"
-
-```bash
-./dotnet-install.sh --architecture <architecture> --install-dir <directory> --runtime <runtime> --version <version>
-```
-
-For example, the error message in the previous section would correspond to:
-
-```bash
-./dotnet-install.sh --architecture x64 --install-dir /usr/local/share/dotnet/ --runtime dotnet --version 5.0.15
-```
-
-For more information on installation using the script, see [Install .NET with a script](../install/macos.md#install-net-with-a-script).
+For installation steps on macOS, see [Install .NET with a script](../install/macos.md#install-net-with-a-script).
 ::: zone-end
 
-### Download binaries
+For script options and behavior details, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
+
+## Download binaries
 
 You can download a binary archive of .NET from the [download page](https://dotnet.microsoft.com/download/dotnet). From the **Binaries** column of the runtime download, download the binary release matching the required architecture. Extract the downloaded archive to the ".NET location" specified in the error message.
 
@@ -256,7 +264,7 @@ For more information about manual installation, see [Install .NET on Linux](../i
 For more information about manual installation, see [Install .NET on macOS](../install/macos.md#install-net-manually)
 ::: zone-end
 
-### Configure roll-forward behavior
+## Configure roll-forward behavior
 
 If you already have a higher version of the required framework installed, you can make the application run on that higher version by configuring its roll-forward behavior.
 
@@ -265,30 +273,6 @@ By default, an application requires a framework that matches the same major vers
 
 > [!NOTE]
 > Since using this option lets the application run on a different framework version than the one for which it was designed, it may result in unintended behavior due to changes between versions of a framework.
-
-::: zone pivot="os-windows"
-
-## Breaking changes
-
-### Multi-level lookup disabled for .NET 7 and later
-
-On Windows, before .NET 7, the application could search for frameworks in multiple [install locations](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md).
-
-1. Subdirectories relative to:
-
-   - `dotnet` executable when running the application through `dotnet`.
-   - `DOTNET_ROOT` environment variable (if set) when running the application through its executable (`apphost`).
-
-2. Globally registered install location (if set) in `HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\<arch>\InstallLocation`.
-3. Default install location of `%ProgramFiles%\dotnet` (or `%ProgramFiles(x86)%\dotnet` for 32-bit processes on 64-bit Windows).
-
-This multi-level lookup behavior was enabled by default but could be disabled by setting the environment variable `DOTNET_MULTILEVEL_LOOKUP=0`.
-
-For applications targeting .NET 7 and later, multi-level lookup is completely disabled and only one location&mdash;the first location where a .NET installation is found&mdash;is searched. When an application is run through `dotnet`, frameworks are only searched for in subdirectories relative to `dotnet`. When an application is run through its executable (`apphost`), frameworks are only searched for in the first of the previously listed locations where .NET is found.
-
-For more information, see [Multi-level lookup is disabled](../compatibility/deployment/7.0/multilevel-lookup.md).
-
-::: zone-end
 
 ## See also
 

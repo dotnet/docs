@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 # Split strings into substrings in C\#
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
 > **Coming from another language?** `string.Split` is C#'s counterpart to Java's `String.split` and JavaScript's `String.prototype.split`. Unlike those languages, C# returns an array (`string[]`), not a list, and the separator argument is a character or string, not a regular expression. For pattern-based splitting, see <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>.
 
@@ -72,11 +72,11 @@ This pattern is handy for `key=value` pairs and other formats where only the fir
 
 ## Use regular expressions
 
-`Split` works well for fixed character or string delimiters. For pattern-based splitting, use <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>. See [String operations](../../language-reference/builtin-types/string-operations.md) for an introduction to regular expressions on strings.
+`Split` works well for fixed character or string delimiters. For pattern-based splitting, use <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>. See [String operations](../../../language-reference/builtin-types/string-operations.md) for an introduction to regular expressions on strings.
 
 ## See also
 
 - <xref:System.String.Split*?displayProperty=nameWithType>
 - <xref:System.StringSplitOptions?displayProperty=nameWithType>
-- [String operations: pattern matching, performance, and span-based search](../../language-reference/builtin-types/string-operations.md)
-- [Extract elements from a string](../../../standard/base-types/divide-up-strings.md)
+- [String operations: pattern matching, performance, and span-based search](../../../language-reference/builtin-types/string-operations.md)
+- [Extract elements from a string](../../../../standard/base-types/divide-up-strings.md)

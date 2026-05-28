@@ -9,9 +9,9 @@ ai-usage: ai-assisted
 # Resolve nullable warnings
 
 > [!TIP]
-> **New to nullable reference types?** Read [Nullable reference types](nullable-reference-types.md) first to understand annotations and null-state analysis. This article assumes you're seeing warnings in a project where the feature is enabled.
+> **New to nullable reference types?** Read [Nullable reference types](../nullable-reference-types.md) first to understand annotations and null-state analysis. This article assumes you're seeing warnings in a project where the feature is enabled.
 >
-> **Looking for a specific compiler error code?** The [Resolve nullable warnings](../../language-reference/compiler-messages/nullable-warnings.md) reference article catalogs every CS86xx warning with the matching technique.
+> **Looking for a specific compiler error code?** The [Resolve nullable warnings](../../../language-reference/compiler-messages/nullable-warnings.md) reference article catalogs every CS86xx warning with the matching technique.
 
 When you enable nullable reference types, the compiler issues warnings everywhere your code's behavior doesn't match its annotations. Most warnings fall into a small set of patterns. Once you recognize the pattern, the fix is usually one of five techniques:
 
@@ -42,13 +42,13 @@ The fix is usually a *guard clause*. A *guard clause* is a check at the top of a
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="DereferenceFixed":::
 
-[Pattern matching](../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { }` that test the shape of a value), `??`, and `??=` include null checks:
+[Pattern matching](../../../language-reference/operators/patterns.md) (expressions such as `is null` or `is { }` that test the shape of a value), `??`, and `??=` include null checks:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="NullOperatorsFix":::
 
 The property pattern `{ Length: > 0 }` matches only when `message` is non-null *and* its `Length` property is greater than zero, so the compiler treats `message` as *not-null* inside the `if` block. A simpler `is not null` test produces the same null-state narrowing without inspecting any properties.
 
-For an in-depth tour of the operators, see [Null operators](null-operators.md).
+For an in-depth tour of the operators, see [Null operators](../null-operators.md).
 
 ## Adjust annotations
 
@@ -73,7 +73,7 @@ Sometimes the right fix isn't at the call site. A method's signature doesn't cap
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="MissingAttribute":::
 
-The body of `IsPresent` proves the argument isn't null when the method returns `true`, but the signature doesn't say so. Add a [nullable analysis attribute](../../language-reference/attributes/nullable-analysis.md) to make the contract part of the API:
+The body of `IsPresent` proves the argument isn't null when the method returns `true`, but the signature doesn't say so. Add a [nullable analysis attribute](../../../language-reference/attributes/nullable-analysis.md) to make the contract part of the API:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="WithAttribute":::
 
@@ -84,21 +84,21 @@ Common attributes include:
 - <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> — the listed members are *not-null* after the method returns.
 - <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute> — the method never returns normally (for example, it always throws).
 
-The full list is in [Nullable static analysis attributes](../../language-reference/attributes/nullable-analysis.md).
+The full list is in [Nullable static analysis attributes](../../../language-reference/attributes/nullable-analysis.md).
 
 ## Initialize non-nullable members
 
-A constructor warning means a non-nullable field, property, or [auto-property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) (a property that uses the compiler-generated backing field, such as `public string Name { get; set; }`) exits the constructor without being assigned a non-null value:
+A constructor warning means a non-nullable field, property, or [auto-property](../../../programming-guide/classes-and-structs/auto-implemented-properties.md) (a property that uses the compiler-generated backing field, such as `public string Name { get; set; }`) exits the constructor without being assigned a non-null value:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="UninitializedMember":::
 
 You have several ways to address it. Pick the one that best matches your design intent.
 
-**Require the value as a constructor argument.** Use a [primary constructor](../../whats-new/tutorials/primary-constructors.md) (parameters declared on the type itself, available throughout the body) or a regular constructor that initializes the property:
+**Require the value as a constructor argument.** Use a [primary constructor](../../../whats-new/tutorials/primary-constructors.md) (parameters declared on the type itself, available throughout the body) or a regular constructor that initializes the property:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="ConstructorInjected":::
 
-**Make the property `required`.** The caller must initialize it through an [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) (the `{ Property = value }` syntax that follows `new`):
+**Make the property `required`.** The caller must initialize it through an [object initializer](../../../programming-guide/classes-and-structs/object-and-collection-initializers.md) (the `{ Property = value }` syntax that follows `new`):
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="RequiredMember":::
 
@@ -123,18 +123,18 @@ New C# projects enable nullable reference types by default, so most code you wri
 
 The common supported values are `enable` (the default for new projects) and `disable`. If the element is missing, the project uses whatever default the SDK and target framework set.
 
-If you need to enable nullable for only part of a file with `#nullable` directives, or use the partial `warnings` and `annotations` modes when migrating an existing codebase, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
+If you need to enable nullable for only part of a file with `#nullable` directives, or use the partial `warnings` and `annotations` modes when migrating an existing codebase, see [Nullable migration strategies](../../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 ## Where to go next
 
-When a warning doesn't fit any of these patterns, the [Resolve nullable warnings](../../language-reference/compiler-messages/nullable-warnings.md) reference article lists the technique for every CS86xx warning the compiler emits.
+When a warning doesn't fit any of these patterns, the [Resolve nullable warnings](../../../language-reference/compiler-messages/nullable-warnings.md) reference article lists the technique for every CS86xx warning the compiler emits.
 
-To plan a migration that progressively enables nullable reference types in an existing codebase, see [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
+To plan a migration that progressively enables nullable reference types in an existing codebase, see [Nullable migration strategies](../../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 ## Related content
 
-- [Nullable reference types](nullable-reference-types.md)
-- [Null operators](null-operators.md)
-- [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md)
-- [Nullable static analysis attributes](../../language-reference/attributes/nullable-analysis.md)
-- [Resolve nullable warnings (compiler reference)](../../language-reference/compiler-messages/nullable-warnings.md)
+- [Nullable reference types](../nullable-reference-types.md)
+- [Null operators](../null-operators.md)
+- [Nullable migration strategies](../../../advanced-topics/update-applications/nullable-migration-strategies.md)
+- [Nullable static analysis attributes](../../../language-reference/attributes/nullable-analysis.md)
+- [Resolve nullable warnings (compiler reference)](../../../language-reference/compiler-messages/nullable-warnings.md)

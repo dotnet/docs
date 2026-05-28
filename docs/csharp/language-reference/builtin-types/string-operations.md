@@ -65,8 +65,8 @@ For machine-defined text, such as file names, URLs, HTTP headers, identifiers, c
 
 - [Regular expression language — quick reference](../../../standard/base-types/regular-expression-language-quick-reference.md)
 - [Best practices for comparing strings in .NET](../../../standard/base-types/best-practices-strings.md)
-- [Search strings](../../fundamentals/strings/search.md)
-- [Split strings into substrings](../../fundamentals/strings/split.md)
+- [Search strings](../../fundamentals/strings/common-tasks/search.md)
+- [Split strings into substrings](../../fundamentals/strings/common-tasks/split.md)
 - <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
 - <xref:System.MemoryExtensions?displayProperty=nameWithType>
 - <xref:System.StringComparison?displayProperty=nameWithType>

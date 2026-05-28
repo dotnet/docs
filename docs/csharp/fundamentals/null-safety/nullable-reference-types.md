@@ -110,7 +110,7 @@ Initialize array elements as part of creating the array. [Collection expressions
 ## Related content
 
 - [Tutorial: Express your design intent with nullable and non-nullable reference types](../tutorials/nullable-reference-types.md)
-- [Resolve nullable warnings](resolve-warnings.md)
+- [Resolve nullable warnings](./common-tasks/resolve-warnings.md)
 - [Nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md)
 - [Nullable static analysis attributes](../../language-reference/attributes/nullable-analysis.md)
 - [Resolve nullable warnings (compiler reference)](../../language-reference/compiler-messages/nullable-warnings.md)

@@ -73,7 +73,6 @@ items:
       href: fundamentals/types/delegates-lambdas.md
     - name: Anonymous types
       href: programming-guide/classes-and-structs/anonymous-types.md
-    # TODO: Delegates, lambdas and events
   - name: Null safety
     items:
     - name: Overview
@@ -82,12 +81,12 @@ items:
       href: fundamentals/null-safety/nullable-value-types.md
     - name: Nullable reference types
       href: fundamentals/null-safety/nullable-reference-types.md
-    - name: Resolve nullable warnings
-      href: fundamentals/null-safety/resolve-warnings.md
     - name: Null operators
       href: fundamentals/null-safety/null-operators.md
-    - name: "Tutorial: Express your design intent with nullable reference types"
-      href: fundamentals/tutorials/nullable-reference-types.md
+    - name: Common tasks
+      items:
+      - name: Resolve nullable warnings
+        href: fundamentals/null-safety/common-tasks/resolve-warnings.md
   - name: Strings
     items:
     - name: Overview
@@ -98,10 +97,12 @@ items:
       href: fundamentals/strings/interpolation.md
     - name: nameof operator
       href: fundamentals/strings/nameof.md
-    - name: Search strings
-      href: fundamentals/strings/search.md
-    - name: Split strings into substrings
-      href: fundamentals/strings/split.md
+    - name: Common tasks
+      items:
+      - name: Search strings
+        href: fundamentals/strings/common-tasks/search.md
+      - name: Split strings into substrings
+        href: fundamentals/strings/common-tasks/split.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -162,6 +163,8 @@ items:
       # TODO: Classes and objects (interfaces and classes)
       # TODO: Generics (methods and classes)
       # TODO: Fundamentals of using lambdas
+    - name: Express your design intent with nullable reference types
+      href: fundamentals/tutorials/nullable-reference-types.md
     - name: Introduction to classes
       href: fundamentals/tutorials/classes.md
     - name: Object-oriented C#

@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 # Search strings in C\#
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
 > **Coming from another language?** C# `string` methods such as `Contains`, `StartsWith`, and `IndexOf` parallel methods in Java's `String` and JavaScript's `String.prototype`. The key difference is that some C# searches default to **ordinal, case-sensitive** comparison. Others default to the current culture's semantics. For user-facing searches, you might want to pass a <xref:System.StringComparison> value.
 
@@ -18,7 +18,7 @@ The <xref:System.String> class includes methods that answer two everyday questio
 - *Does this string contain that text?* — use <xref:System.String.Contains*>, <xref:System.String.StartsWith*>, or <xref:System.String.EndsWith*>.
 - *Where does that text occur?* — use <xref:System.String.IndexOf*> or <xref:System.String.LastIndexOf*>.
 
-For regular expressions, span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../standard/base-types/best-practices-strings.md).
+For regular expressions, span-based search over `ReadOnlySpan<char>`, and performance considerations, see [String operations](../../../language-reference/builtin-types/string-operations.md). For an in-depth treatment of culture-aware comparison, see [Best practices for comparing strings](../../../../standard/base-types/best-practices-strings.md).
 
 ## Check whether a string contains text
 
@@ -54,8 +54,8 @@ Ordinal comparison is the fastest option and the right default for anything that
 
 ## See also
 
-- [String operations: pattern matching, performance, and span-based search](../../language-reference/builtin-types/string-operations.md)
-- [Best practices for comparing strings in .NET](../../../standard/base-types/best-practices-strings.md)
-- [Comparing strings](../../../standard/base-types/comparing.md)
+- [String operations: pattern matching, performance, and span-based search](../../../language-reference/builtin-types/string-operations.md)
+- [Best practices for comparing strings in .NET](../../../../standard/base-types/best-practices-strings.md)
+- [Comparing strings](../../../../standard/base-types/comparing.md)
 - <xref:System.String?displayProperty=nameWithType>
 - <xref:System.StringComparison?displayProperty=nameWithType>

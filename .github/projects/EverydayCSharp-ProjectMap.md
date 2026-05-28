@@ -117,6 +117,20 @@ entirely.
 - *Review every sample's using directives, type declarations, and local variables* to confirm they use the latest syntax (e.g., `global using`, file-scoped namespace, `var`, collection expressions, primary constructors) even when those features aren't the article's topic.
 - *Treat the three feature tables as a checklist* when writing or reviewing samples. If a feature from "Use in sample code without detailed explanation" appears naturally, use it without commentary. If a feature from "Include a subset" is relevant to the scenario, include it with a brief link to its full article.
 
+### Decision 11: Fundamentals folder layout — concepts, common tasks, tutorials
+
+**Choice:** Each Fundamentals section uses a three-bucket folder layout:
+
+- *Concept articles and the section overview* live at the section's top level (for example, `fundamentals/strings/index.md`, `fundamentals/strings/interpolation.md`).
+- *Task-style articles* that answer "how do I do X?" live under a `<section>/common-tasks/` subfolder (for example, `fundamentals/strings/common-tasks/search.md`), with their snippet projects under `<section>/common-tasks/snippets/`. The section's `toc.yml` renders a nested **Common tasks** group beneath the concept articles — a collapsible subnode, not a flat heading.
+- *Tutorials* live flat under `fundamentals/tutorials/` rather than nested per section.
+
+Sections without task-style articles don't get a `common-tasks/` subfolder.
+
+**Rationale:** Readers scan a section's TOC for either "explain this to me" (concepts) or "show me how to do this specific thing" (tasks). Visually separating the two via folder structure and a nested TOC group reduces cognitive load and signals which articles teach a concept versus demonstrate a task. Flat tutorials keep the tutorial index discoverable as a single learning path rather than scattering tutorials across section folders.
+
+**Origin:** Adopted in [PR 11 (#53991)](https://github.com/dotnet/docs/pull/53991), which moved `search.md` and `split.md` under `fundamentals/strings/common-tasks/`, relocated `resolve-warnings.md` to `fundamentals/null-safety/common-tasks/`, and moved the NRT tutorial to the flat `fundamentals/tutorials/` folder.
+
 ## Feature Coverage Decisions
 
 The following categorization is based on the [Roslyn Feature Status](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) and the
@@ -376,7 +390,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 18 | Nullable value types | 📝 New/Pull | `T?` for value types (C# 2), `HasValue`, `GetValueOrDefault` |
 | 19 | Nullable reference types | 📥 Consolidate | Pull from tutorials + concepts: enable NRT, annotating, `?`, `!`, flow analysis |
 | 20 | Null operators | 📝 New | `?.`, `?[]`, `??`, `??=` (C# 8), `is null`/`is not null`. Include how pattern matching (`is null`, `is not null`) helps with null checks. |
-| 21 | Resolve nullable warnings | 📥 Pull | Existing nullable warnings content |
+| 21 | Resolve nullable warnings | 📥 Pull | Existing nullable warnings content. Lives under `null-safety/common-tasks/` per [Decision 11](#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials). |
 | 22 | Nullable migration strategies | 📥 Pull | Existing migration content |
 | 74 | Tutorial: Explore nullable reference types | 📥 Pull from Tutorials | |
 
@@ -390,11 +404,11 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 24 | String interpolation | 📥 Pull/Revise | `$""` (C# 6), newlines (C# 11), constant interpolated strings (C# 10) |
 | 25 | Raw string literals | 📝 New | `"""` syntax (C# 11), raw interpolated strings |
 | 26 | `nameof` operator | 📝 New | `nameof` (C# 6) |
-| 27 | Search strings | 📥 Pull | From how-to |
-| 28 | Split strings into substrings | 📥 Pull | From how-to |
-| 29 | Concatenate strings | 📥 Pull | From how-to |
-| 30 | Modify string contents | 📥 Pull | From how-to |
-| 31 | Compare strings | 📥 Pull | From how-to |
+| 27 | Search strings | 📥 Pull | From how-to. Lives under `strings/common-tasks/` per [Decision 11](#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials). |
+| 28 | Split strings into substrings | 📥 Pull | From how-to. Lives under `strings/common-tasks/`. |
+| 29 | Concatenate strings | 📥 Pull | From how-to. Lives under `strings/common-tasks/`. |
+| 30 | Modify string contents | 📥 Pull | From how-to. Lives under `strings/common-tasks/`. |
+| 31 | Compare strings | 📥 Pull | From how-to. Lives under `strings/common-tasks/`. |
 | 76 | Tutorial: Explore string interpolation | 📥 Pull from Tutorials | |
 
 ### Statements and expressions (§12–§13)
@@ -492,7 +506,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | # | Article | Status | Notes |
 |---|---|---|---|
 | 62 | XML documentation | 📝 New or Pull | `///` comments, common tags |
-| 89 | Documentation generation tools | 📝 New | Generating XML output with `dotnet build`; DocFX; Sandcastle; other current tools |
+| 89 | Documentation generation tools | 📝 New | Generating XML output with `dotnet build`; DocFX; Sandcastle; other current tools. Lives under `xml-comments/common-tasks/` per [Decision 11](#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials). |
 | 80 | Tutorial: Generate API documentation | ✅ Exists | |
 
 ### Coding style (post-standard)
@@ -681,8 +695,9 @@ The following is the complete proposed TOC:
       # detailed explanation), is null / is not null
       href: fundamentals/null-safety/null-operators.md
     - name: Resolve nullable warnings
-      # PULL from existing nullable warnings content
-      href: fundamentals/null-safety/resolve-warnings.md
+      # PULL from existing nullable warnings content.
+      # Task-style article: lives under common-tasks/ per Decision 11.
+      href: fundamentals/null-safety/common-tasks/resolve-warnings.md
     - name: Nullable migration strategies
       # PULL from existing migration content
       href: fundamentals/null-safety/migration-strategies.md
@@ -709,20 +724,20 @@ The following is the complete proposed TOC:
       # unbound generic types in nameof (C# 14—use without explanation)
       href: fundamentals/strings/nameof.md
     - name: Search strings
-      # PULL from how-to
-      href: fundamentals/strings/search.md
+      # PULL from how-to. Task-style: under common-tasks/ per Decision 11.
+      href: fundamentals/strings/common-tasks/search.md
     - name: Split strings into substrings
-      # PULL from how-to
-      href: fundamentals/strings/split.md
+      # PULL from how-to. Task-style: under common-tasks/ per Decision 11.
+      href: fundamentals/strings/common-tasks/split.md
     - name: Concatenate strings
-      # PULL from how-to
-      href: fundamentals/strings/concatenate.md
+      # PULL from how-to. Task-style: under common-tasks/ per Decision 11.
+      href: fundamentals/strings/common-tasks/concatenate.md
     - name: Modify string contents
-      # PULL from how-to
-      href: fundamentals/strings/modify.md
+      # PULL from how-to. Task-style: under common-tasks/ per Decision 11.
+      href: fundamentals/strings/common-tasks/modify.md
     - name: Compare strings
-      # PULL from how-to
-      href: fundamentals/strings/compare.md
+      # PULL from how-to. Task-style: under common-tasks/ per Decision 11.
+      href: fundamentals/strings/common-tasks/compare.md
     - name: "Tutorial: Explore string interpolation"
       # PULL from current Tutorials section
       href: fundamentals/tutorials/string-interpolation.md
@@ -949,8 +964,9 @@ The following is the complete proposed TOC:
       # NEW (brief) or PULL: documenting code with ///, common tags
       href: fundamentals/xml-comments.md
     - name: Documentation generation tools
-      # NEW: dotnet build XML output, DocFX, Sandcastle, other current tools
-      href: fundamentals/xml-comments/documentation-tools.md
+      # NEW: dotnet build XML output, DocFX, Sandcastle, other current tools.
+      # Task-style: under common-tasks/ per Decision 11.
+      href: fundamentals/xml-comments/common-tasks/documentation-tools.md
     - name: "Tutorial: Generate API documentation with XML comments"
       href: fundamentals/tutorials/xml-documentation.md
 

@@ -59,6 +59,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 - Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
 - Do not add links to files that will be created in future PRs until those files are live. For example, if PR 3 creates the `fundamentals/types/enums.md` article, then earlier PRs should not link to that file until PR 3 is merged. This may require some temporary duplication of content or placeholders for links, but it will prevent broken links in merged PRs. Instead, when an article is created, add appropriate links to it in earlier articles as needed to connect the content together.
 - Every PR description lists redistributed content explicitly. For each section moved out of the Fundamentals draft, name the source (which planned Fundamentals article it was cut from), the destination (file path), and a one-line reason — formatted as `source draft article → destination file path → reason`. This keeps the trail visible for downstream review and for future restructuring of the destination area.
+- Follow the *Fundamentals folder layout convention*: each section's `index.md` and concept articles live at the section's top level (for example, `fundamentals/strings/interpolation.md`); task-style articles ("how do I do X?") are grouped under a `<section>/common-tasks/` subfolder (for example, `fundamentals/strings/common-tasks/search.md`) with their snippets under `<section>/common-tasks/snippets/`; tutorials live flat under `fundamentals/tutorials/` rather than nested per section. The section's `toc.yml` renders a nested **Common tasks** group beneath the concept articles. Sections without task-style articles don't get a `common-tasks/` subfolder. See [Decision 11](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials) in the Project Map.
 
 ## Phase A: Program Structure (§7)
 
@@ -153,19 +154,23 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ### PR 9 — Null safety: NRT, warnings, migration, tutorial
 
-[#53542](https://github.com/dotnet/docs/pull/53542) *In review*
+[#53542](https://github.com/dotnet/docs/pull/53542) *Merged*
 
 > ~10 files
 
 1. Consolidate `fundamentals/null-safety/nullable-reference-types.md` — pull from `nullable-references.md` + `tutorials/nullable-reference-types.md`
-2. Pull `fundamentals/null-safety/resolve-warnings.md` — from existing nullable warnings content
+2. Pull `fundamentals/null-safety/common-tasks/resolve-warnings.md` — from existing nullable warnings content
 3. Pull `fundamentals/null-safety/migration-strategies.md` — from `nullable-migration-strategies.md`
-4. Pull `tutorials/nullable-reference-types.md` → `fundamentals/tutorials/nullable-reference-types.md`
+4. Pull `tutorials/nullable-reference-types.md` → `fundamentals/tutorials/nullable-reference-types.md` (flat under tutorials, not nested under null-safety)
 5. toc.yml + redirects (4 redirect entries)
+
+> *Folder layout note:* `resolve-warnings.md` is the only task-style article in this section, so it goes under `null-safety/common-tasks/`. The other articles in this PR are concept content at the section root, and the NRT tutorial lives flat under `fundamentals/tutorials/` per the [folder layout convention](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials).
 
 ## Phase D: Strings — 3 PRs
 
 ### PR 10 — Strings: overview, raw strings, nameof
+
+[#53676](https://github.com/dotnet/docs/pull/53676) *Merged*
 
 > ~10 files
 
@@ -179,12 +184,16 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ### PR 11 — Strings: interpolation + search + split
 
+[#53991](https://github.com/dotnet/docs/pull/53991) *In review*
+
 > ~10 files
 
 1. Pull+revise `fundamentals/strings/interpolation.md` — from `tutorials/string-interpolation.md`; add newlines (C# 11), constant interpolated (C# 10)
-2. Pull `fundamentals/strings/search.md` — from `how-to/search-strings.md`
-3. Pull `fundamentals/strings/split.md` — from `how-to/parse-strings-using-split.md`
+2. Pull `fundamentals/strings/common-tasks/search.md` — from `how-to/search-strings.md`
+3. Pull `fundamentals/strings/common-tasks/split.md` — from `how-to/parse-strings-using-split.md`
 4. toc.yml + redirects
+
+> *Folder layout decision:* this PR introduces the `common-tasks/` subfolder convention for Fundamentals sections (now codified as [Decision 11](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials) in the Project Map). `interpolation.md` is a concept article and stays at the section root; `search.md` and `split.md` answer "how do I do X?" and go under `strings/common-tasks/` with snippets in `strings/common-tasks/snippets/`. The `toc.yml` renders **Common tasks** as a nested group beneath the concept articles in **Strings**.
 
 > *Watch for redistribution:* the existing how-to articles for search and split include performance comparisons, regex-vs-method discussions, and `Span<char>`-based variants that fail universality. Cut those sub-sections to a Strings deep dive (or leave them in the existing how-to articles if those originals stay live), and pull only the everyday-usage core into Fundamentals.
 
@@ -192,9 +201,9 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > ~10 files
 
-1. Pull `fundamentals/strings/concatenate.md` — from `how-to/concatenate-multiple-strings.md`
-2. Pull `fundamentals/strings/modify.md` — from `how-to/modify-string-contents.md`
-3. Pull `fundamentals/strings/compare.md` — from `how-to/compare-strings.md`
+1. Pull `fundamentals/strings/common-tasks/concatenate.md` — from `how-to/concatenate-multiple-strings.md`
+2. Pull `fundamentals/strings/common-tasks/modify.md` — from `how-to/modify-string-contents.md`
+3. Pull `fundamentals/strings/common-tasks/compare.md` — from `how-to/compare-strings.md`
 4. Pull `tutorials/string-interpolation.md` → `fundamentals/tutorials/string-interpolation.md`
 5. toc.yml + redirects
 
@@ -395,7 +404,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 > ~10 files
 
 1. New or pull `fundamentals/xml-comments.md` — `///` comments, common tags
-2. New `fundamentals/xml-comments/documentation-tools.md` — generating XML output with `dotnet build`; DocFX; Sandcastle; other current tools
+2. New `fundamentals/xml-comments/common-tasks/documentation-tools.md` — generating XML output with `dotnet build`; DocFX; Sandcastle; other current tools (task-style article under the `common-tasks/` subfolder per [Decision 11](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials))
 3. New `fundamentals/coding-style/design-alternatives.md` — common design decisions: patterns vs. branching, class vs. struct, `record` modifier, tuples, interfaces vs. abstract classes, `enum` vs. sealed hierarchy, delegates vs. single-method interfaces, and others
 4. Pull `tutorials/console-teleprompter.md` → `fundamentals/tutorials/console-app.md` + redirect
 5. toc.yml + redirects

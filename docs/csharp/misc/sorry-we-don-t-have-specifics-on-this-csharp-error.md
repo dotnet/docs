@@ -245,11 +245,11 @@ f1_keywords:
   ## Index and range
   - "CS8428"
   - "CS8429"
-  ## cant parse syntax
+  ## Can't parse syntax
   - "CS8635"
   - "CS8641"
   ## Default interface implementation
-  - "CS8646" 
+  - "CS8646"
   ## Patterns
   - "CS8650"
   - "CS8651"

@@ -1,14 +1,16 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 namespace StringInterpolation;
 
-class Program
+public static class Program
 {
-    static void Main(string[] args)
+    public static void Main()
     {
         StringInterpolationExample();
         Console.WriteLine();
         SpecifyFormatString();
+        Console.WriteLine();
+        SpecifyAlignment();
         Console.WriteLine();
         SpecifyAlignmentAndFormat();
         Console.WriteLine();
@@ -23,7 +25,6 @@ class Program
         InvariantCultureExample();
         Console.WriteLine();
         InvariantCultureExampleOld();
-        Console.WriteLine();
     }
 
     private static void StringInterpolationExample()
@@ -52,9 +53,8 @@ class Program
 
     private static void SpecifyAlignment()
     {
-
         // <AlignmentString>
-        var titles = new Dictionary<string, string>()
+        Dictionary<string, string> titles = new()
         {
             ["Doyle, Arthur Conan"] = "Hound of the Baskervilles, The",
             ["London, Jack"] = "Call of the Wild, The",
@@ -70,7 +70,7 @@ class Program
         }
         // Output:
         // Author and Title List
-        // 
+        //
         // |Author                   |                         Title|
         // |Doyle, Arthur Conan      |Hound of the Baskervilles, The|
         // |London, Jack             |         Call of the Wild, The|
@@ -100,17 +100,17 @@ class Program
     private static void EscapeSequenceExample()
     {
         // <Escapes>
-        var xs = new int[] { 1, 2, 7, 9 };
-        var ys = new int[] { 7, 9, 12 };
-        Console.WriteLine($"Find the intersection of the {{{string.Join(", ",xs)}}} and {{{string.Join(", ",ys)}}} sets.");
+        int[] xs = [1, 2, 7, 9];
+        int[] ys = [7, 9, 12];
+        Console.WriteLine($"Find the intersection of the {{{string.Join(", ", xs)}}} and {{{string.Join(", ", ys)}}} sets.");
         // Output:
         // Find the intersection of the {1, 2, 7, 9} and {7, 9, 12} sets.
 
-        var userName = "Jane";
-        var stringWithEscapes = $"C:\\Users\\{userName}\\Documents";
-        var verbatimInterpolated = $@"C:\Users\{userName}\Documents";
+        string userName = "Jane";
+        string stringWithEscapes = $"C:\\Users\\{userName}\\Documents";
+        string rawInterpolated = $"""C:\Users\{userName}\Documents""";
         Console.WriteLine(stringWithEscapes);
-        Console.WriteLine(verbatimInterpolated);
+        Console.WriteLine(rawInterpolated);
         // Output:
         // C:\Users\Jane\Documents
         // C:\Users\Jane\Documents
@@ -131,13 +131,13 @@ class Program
     private static void CultureSensitiveExample()
     {
         // <CultureSensitive>
-        var cultures = new System.Globalization.CultureInfo[]
-        {
-            System.Globalization.CultureInfo.GetCultureInfo("en-US"),
-            System.Globalization.CultureInfo.GetCultureInfo("en-GB"),
-            System.Globalization.CultureInfo.GetCultureInfo("nl-NL"),
-            System.Globalization.CultureInfo.InvariantCulture
-        };
+        CultureInfo[] cultures =
+        [
+            CultureInfo.GetCultureInfo("en-US"),
+            CultureInfo.GetCultureInfo("en-GB"),
+            CultureInfo.GetCultureInfo("nl-NL"),
+            CultureInfo.InvariantCulture
+        ];
         var date = DateTime.Now;
         var number = 31_415_926.536;
         foreach (var culture in cultures)
@@ -156,13 +156,13 @@ class Program
     private static void CultureSensitiveExampleOld()
     {
         // <CultureSensitiveOld>
-        var cultures = new System.Globalization.CultureInfo[]
-        {
-            System.Globalization.CultureInfo.GetCultureInfo("en-US"),
-            System.Globalization.CultureInfo.GetCultureInfo("en-GB"),
-            System.Globalization.CultureInfo.GetCultureInfo("nl-NL"),
-            System.Globalization.CultureInfo.InvariantCulture
-        };
+        CultureInfo[] cultures =
+        [
+            CultureInfo.GetCultureInfo("en-US"),
+            CultureInfo.GetCultureInfo("en-GB"),
+            CultureInfo.GetCultureInfo("nl-NL"),
+            CultureInfo.InvariantCulture
+        ];
         var date = DateTime.Now;
         var number = 31_415_926.536;
         FormattableString message = $"{date,23}{number,20:N3}";

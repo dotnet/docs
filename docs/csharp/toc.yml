@@ -103,6 +103,12 @@ items:
         href: fundamentals/strings/common-tasks/search.md
       - name: Split strings into substrings
         href: fundamentals/strings/common-tasks/split.md
+      - name: Concatenate strings
+        href: fundamentals/strings/common-tasks/concatenate.md
+      - name: Modify string contents
+        href: fundamentals/strings/common-tasks/modify.md
+      - name: Compare strings
+        href: fundamentals/strings/common-tasks/compare.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -184,6 +190,8 @@ items:
       href: fundamentals/tutorials/pattern-matching.md
     - name: Use record types
       href: fundamentals/tutorials/records.md
+    - name: "Tutorial: String interpolation"
+      href: fundamentals/tutorials/string-interpolation.md
     # separating data and algorithms
     # Data transformations
     ## TODO: Replace with a tutorial (include async exceptions)
@@ -237,8 +245,6 @@ items:
     href: tutorials/ranges-indexes.md
   - name: Explore patterns in objects
     href: tutorials/patterns-objects.md
-  - name: String interpolation
-    href: tutorials/string-interpolation.md
   - name: Console Application
     href: tutorials/console-teleprompter.md
   - name: REST Client
@@ -350,12 +356,6 @@ items:
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Concatenate strings
-    href: how-to/concatenate-multiple-strings.md
-  - name: Modify string contents
-    href: how-to/modify-string-contents.md
-  - name: Compare strings
-    href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics

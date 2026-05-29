@@ -227,24 +227,33 @@ f1_keywords:
   - "CS8384"
   - "CS8385"
   # C# 8.0 diagnostics
+  ## Async enumerables
   - "CS8412"
   - "CS8413"
   - "CS8414"
   - "CS8415"
   - "CS8419"
   - "CS8420"
+  ## Static local functions
   - "CS8421"
+  ## Attributes
   - "CS8423"
+  ## More async enumerators
   - "CS8424"
   - "CS8425"
   - "CS8426"
+  ## Index and range
   - "CS8428"
   - "CS8429"
+  ## cant parse syntax
   - "CS8635"
   - "CS8641"
-  - "CS8646"
+  ## Default interface implementation
+  - "CS8646" 
+  ## Patterns
   - "CS8650"
   - "CS8651"
+  ## Readonly struct members
   - "CS8656"
   - "CS8662"
   - "CS8669"
@@ -293,6 +302,10 @@ f1_keywords:
   - "CS9382"
   - "CS9383"
   - "CS9384"
+# More unions:
+  - "CS9385"
+  - "CS9386"
+  - "CS9387"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

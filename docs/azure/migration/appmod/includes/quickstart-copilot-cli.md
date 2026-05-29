@@ -1,6 +1,9 @@
 ---
 ms.topic: include
 ms.date: 05/22/2026
+author: alexwolfmsft
+ms.author: alexwolf
+ms.reviewer: alexwolf
 title: GitHub Copilot modernization in Copilot CLI
 description: Learn how to assess .NET app readiness and migrate to Azure with GitHub Copilot modernization plugin in Copilot CLI. Follow step-by-step guidance for seamless modernization.
 ---
@@ -60,11 +63,11 @@ GitHub Copilot modernization assessment helps you find app readiness challenges,
     copilot> modernize my application
     ```
 
-    The agent automatically starts the assessment phase, analyzing your project for migration readiness — including dependencies, frameworks, and Azure migration opportunities.
+    The agent automatically starts the assessment phase and analyzes your project for migration readiness—including dependencies, frameworks, and Azure migration opportunities.
 
 1. When the assessment finishes, the agent presents a summary of findings and asks: **"Proceed to planning?"**
 
-## App migrations
+## Migrate your app
 
 After reviewing the assessment, continue through the planning and execution phases.
 
@@ -76,7 +79,7 @@ The agent runs the complete workflow automatically when you confirm each phase:
 1. **Planning** → The agent generates a migration plan (`plan.md`) → Review and confirm
 1. **Execution** → The agent routes tasks to specialized executor agents that apply code changes, run builds, and validate results
 
-The agent handles everything — just confirm at each checkpoint.
+The agent handles everything—just confirm at each checkpoint.
 
 ### Specific migration task
 
@@ -86,7 +89,7 @@ If you already know what you want to migrate, skip the assessment and go straigh
 copilot> migrate from local SQL Server to Azure SQL Database
 ```
 
-Or for multiple tasks:
+For multiple tasks, list them:
 
 ```text
 copilot> migrate from RabbitMQ to Azure Service Bus and upgrade to .NET 9
@@ -102,19 +105,19 @@ copilot --agent=github-copilot-modernization:modernize --allow-all
 
 ### Enterprise rulebook
 
-Organizations can embed modernization policies by placing markdown files in the `.github/modernize/rulebook/` directory. The planning phase merges rulebook constraints with assessment results — rulebook policies take precedence over assessment recommendations.
+To embed modernization policies, place Markdown files in the `.github/modernize/rulebook/` directory. During the planning phase, rulebook constraints merge with assessment results—rulebook policies take precedence over assessment recommendations.
 
 For more information, see [Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI](../copilot-cli-support.md#define-enterprise-modernization-policies).
 
 ### Validation
 
-After code changes finish, the agent runs validation checks:
+After the agent applies code changes, it runs validation checks:
 
-1. Build the project and resolve any build errors.
-1. Detect Common Vulnerabilities and Exposures (CVEs) in dependencies and fix them.
-1. Run tests and fix failures.
+1. Builds the project and resolves any build errors.
+1. Detects Common Vulnerabilities and Exposures (CVEs) in dependencies and fixes them.
+1. Runs tests and fixes any failures.
 
-After all validations pass, the agent generates a summary. Review the results and verify:
+After all validation checks pass, the agent generates a summary. Review the results and verify:
 
 ```bash
 dotnet build

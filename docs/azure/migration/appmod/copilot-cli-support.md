@@ -7,13 +7,13 @@ ms.date: 05/14/2026
 ms.reviewer: jessiehuang
 ---
 
-# Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
+# Migrate .NET apps to Azure by using GitHub Copilot modernization in Copilot CLI
 
 ## Overview
 
-Learn how to migrate .NET applications to Azure using the **GitHub Copilot modernization** plugin in [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
+Learn how to migrate .NET applications to Azure by using the **GitHub Copilot modernization** plugin in [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
 
-The plugin provides an autonomous, multi-agent workflow that assesses your .NET application, generates an executable modernization plan, and carries out the migration — all from the terminal. It supports Azure migrations, CVE vulnerability fixes, and application rearchitecture.
+The plugin provides an autonomous, multi-agent workflow that assesses your .NET application, generates an executable modernization plan, and carries out the migration—all from the terminal. It supports Azure migrations, CVE vulnerability fixes, and application rearchitecture.
 
 > [!NOTE]
 > GitHub Copilot CLI is available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
@@ -55,11 +55,12 @@ The plugin provides an autonomous, multi-agent workflow that assesses your .NET 
 
     You should see `github-copilot-modernization:modernize` in the list.
 
-> [!TIP]
-> To update the plugin when a new version is available, run:
-> ```bash
-> copilot plugin update github-copilot-modernization@github-copilot-modernization
-> ```
+    > [!TIP]
+    > To update the plugin when a new version is available, run:
+    >
+    > ```bash
+    > copilot plugin update github-copilot-modernization@github-copilot-modernization
+    > ```
 
 ## Start a modernization task
 
@@ -83,7 +84,7 @@ If you're already in a Copilot CLI session, use the `/agent` command to switch t
 Select `github-copilot-modernization:modernize` from the list.
 
 > [!IMPORTANT]
-> You must select the `github-copilot-modernization:modernize` agent before running any modernization prompts. Without selecting the agent, Copilot CLI uses the default agent which cannot leverage the full multi-agent orchestration, enterprise playbook support, and specialized migration capabilities provided by the plugin.
+> You must select the `github-copilot-modernization:modernize` agent before you run any modernization prompts. Without this agent selected, Copilot CLI uses the default agent, which can't use the full multi-agent orchestration, enterprise playbook support, and specialized migration capabilities that the plugin provides.
 
 ### Run a modernization prompt
 
@@ -109,7 +110,7 @@ copilot --agent=github-copilot-modernization:modernize --allow-all
 
 ## How the workflow works
 
-The plugin uses a three-phase workflow that runs automatically. You don't need to invoke each phase manually — the orchestrator handles routing based on your request.
+The plugin uses a three-phase workflow that runs automatically. You don't need to invoke each phase manually—the orchestrator handles routing based on your request.
 
 ### Phase 1: Assessment
 
@@ -142,14 +143,14 @@ The orchestrator supports multiple entry points depending on your intent:
 
 ## Define enterprise modernization policies
 
-Organizations can embed their modernization intent — target architectures, upgrade standards, and compliance policies — directly into the workflow through a **playbook**. This ensures every generated plan aligns with enterprise standards without manual review of each decision.
+Organizations can embed their modernization intent—target architectures, upgrade standards, and compliance policies—directly into the workflow through a **playbook**. This approach ensures every generated plan aligns with enterprise standards without manual review of each decision.
 
 ### Set up a playbook
 
-Place markdown files in the `.github/modernize/playbook/` directory of your project. The planning phase automatically reads all `.md` files in this folder and merges them with assessment results before generating the task plan.
+Place Markdown files in the `.github/modernize/playbook/` directory of your project. The planning phase automatically reads all `.md` files in this folder and merges them with assessment results before it generates the task plan.
 
 > [!IMPORTANT]
-> Playbook constraints override assessment recommendations. If your playbook specifies "use Azure Service Bus for messaging" that takes precedence regardless of what the assessment discovers.
+> Playbook constraints override assessment recommendations. If your playbook specifies "use Azure Service Bus for messaging," that choice takes precedence regardless of what the assessment discovers.
 
 ### What you can define in a playbook
 
@@ -183,7 +184,7 @@ Create a file at `.github/modernize/playbook/enterprise-standards.md`:
 - All infrastructure must be defined in Bicep
 ```
 
-No fixed naming or structure is required. The orchestrator infers the purpose of each file from its content.
+No fixed naming or structure is required—the orchestrator infers the purpose of each file from its content.
 
 ### Built-in defaults
 
@@ -254,16 +255,16 @@ copilot plugin install github-copilot-modernization@github-copilot-modernization
 
 ### Assessment fails: no application found
 
-- Verify `.csproj` or `.sln` exists in your project root.
-- Ensure you are in the correct directory before starting Copilot CLI.
+- Verify that your project root contains a `.csproj` or `.sln` file.
+- Ensure you're in the correct directory before starting Copilot CLI.
 
 ### MCP server issues
 
-The plugin uses the MCP server defined in its configuration. If you encounter issues, try reinstalling the plugin to reset the MCP configuration.
+The plugin uses the MCP server defined in its configuration. If you encounter problems, reinstall the plugin to reset the MCP configuration.
 
 ## Provide feedback
 
-Share feedback about GitHub Copilot CLI using the [GitHub Copilot CLI feedback form](https://aka.ms/AM4DFeedback).
+Share feedback about GitHub Copilot CLI by using the [GitHub Copilot CLI feedback form](https://aka.ms/AM4DFeedback).
 
 ## Reference
 

@@ -18,7 +18,7 @@ The <xref:System.String> class includes methods that answer two everyday questio
 - *Does this string contain that text?* — use <xref:System.String.Contains*>, <xref:System.String.StartsWith*>, or <xref:System.String.EndsWith*>.
 - *Where does that text occur?* — use <xref:System.String.IndexOf*> or <xref:System.String.LastIndexOf*>.
 
-More complex search and replacement algorithms can be built using regular expressions. For more information on regular expressions, and other string operations see the language reference article on [String operations](../../../language-reference/builtin-types/string-operations.md).
+More complex search and replacement algorithms can be built using regular expressions. For more information on regular expressions and other string operations, see the language reference article on [String operations](../../../language-reference/builtin-types/string-operations.md).
 
 ## Check whether a string contains text
 

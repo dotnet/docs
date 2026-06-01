@@ -17,7 +17,7 @@ The <xref:System.String.Split*?displayProperty=nameWithType> method breaks a str
 
 The method has many overloads, but they cover four independent decisions:
 
-- **Separators**: one `char`, an array of `char`, one `string`, or an array of `string`s.
+- **Separators**: one `char`, an array of `char`, one `string`, or an array of `string`.
 - **Maximum result count**: cap the number of substrings returned.
 - **Empty-entry handling**: keep empty substrings (the default) or drop them with <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType>.
 - **Whitespace handling**: trim leading and trailing whitespace from each entry with <xref:System.StringSplitOptions.TrimEntries?displayProperty=nameWithType>.
@@ -70,7 +70,7 @@ This pattern is handy for `key=value` pairs and other formats where only the fir
 
 ## Use regular expressions
 
-`Split` works well for fixed character or string delimiters. For pattern-based splitting, use <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>. See [String operations](../../../language-reference/builtin-types/string-operations.md) for an introduction to regular expressions on strings.
+`Split` works well for fixed character or string delimiters. For pattern-based splitting, use <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=nameWithType>. For an introduction to regular expressions on strings, see [String operations](../../../language-reference/builtin-types/string-operations.md).
 
 ## See also
 

@@ -6,9 +6,9 @@ ms.date: 05/21/2026
 ai-usage: ai-assisted
 ---
 
-# String operations: pattern matching, performance, and span-based search
+# String operations: Pattern matching, performance, and span-based search
 
-This article covers three string operations: regular-expression pattern matching with <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>, allocation-free search over <xref:System.ReadOnlySpan%601>, and choosing a <xref:System.StringComparison> value for correct, fast comparisons.
+This article covers three string operations: regular-expression pattern matching with <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>, allocation-free search over <xref:System.ReadOnlySpan`1>, and choosing a <xref:System.StringComparison> value for correct, fast comparisons.
 
 ## Find specific text by using regular expressions
 
@@ -59,7 +59,7 @@ Most `string` instance methods have overloads that accept a <xref:System.StringC
 - **Speed.** Ordinal comparison is a byte-for-byte test that runs in tight, vectorized loops. Culture-aware comparison consults a sort table, walks combining characters, and applies locale-specific rules. For the same input, it can be an order of magnitude slower.
 - **Correctness.** Culture-aware comparison can fold characters that you don't expect (Turkish `i`/`I`, German `ß` to `ss`, ligatures). This behavior is right for sorting names a user sees but wrong for parsing identifiers, paths, or protocol tokens.
 
-For machine-defined text, such as file names, URLs, HTTP headers, identifiers, configuration keys, pass <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> explicitly. Reserve culture-aware values for natural-language text shown to users. For comprehensive guidance, see [Best practices for comparing strings in .NET](../../../standard/base-types/best-practices-strings.md).
+For machine-defined text, such as file names, URLs, HTTP headers, identifiers, and configuration keys, pass <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> explicitly. Reserve culture-aware values for natural-language text shown to users. For comprehensive guidance, see [Best practices for comparing strings in .NET](../../../standard/base-types/best-practices-strings.md).
 
 ## See also
 

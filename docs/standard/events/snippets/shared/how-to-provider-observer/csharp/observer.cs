@@ -1,10 +1,10 @@
-// <Snippet12>
-// <Snippet9>
-// <Snippet8>
+// <All>
+// <Subscribe>
+// <ClassDeclaration>
 namespace TemperatureSample;
 
 public sealed class TemperatureReporter : IObserver<Temperature>
-// </Snippet8>
+// </ClassDeclaration>
 {
     private IDisposable? _unsubscriber;
     private Temperature? _last;
@@ -14,13 +14,13 @@ public sealed class TemperatureReporter : IObserver<Temperature>
         ArgumentNullException.ThrowIfNull(provider);
         _unsubscriber = provider.Subscribe(this);
     }
-    // </Snippet9>
+    // </Subscribe>
 
-    // <Snippet10>
+    // <Unsubscribe>
     public void Unsubscribe() => _unsubscriber?.Dispose();
-    // </Snippet10>
+    // </Unsubscribe>
 
-    // <Snippet11>
+    // <ObserverMethods>
     public void OnCompleted() =>
         Console.WriteLine("Additional temperature data won't be transmitted.");
 
@@ -39,6 +39,6 @@ public sealed class TemperatureReporter : IObserver<Temperature>
 
         _last = value;
     }
-    // </Snippet11>
+    // </ObserverMethods>
 }
-// </Snippet12>
+// </All>

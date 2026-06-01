@@ -25,15 +25,11 @@ Starting in .NET 11, NuGet restore emits NU1703 when a package resolves
 to deprecated MonoAndroid assets for Android projects that target
 .NET 11 or later and use `SdkAnalysisLevel` `11.0.100` or later.
 
-```text
-Package 'PackageName' 1.0.0 uses the deprecated MonoAndroid framework instead of 'net6.0-android' or later. Consider upgrading to a newer version of this package or contacting the package author.
-```
+> Package 'PackageName' 1.0.0 uses the deprecated MonoAndroid framework instead of 'net6.0-android' or later. Consider upgrading to a newer version of this package or contacting the package author.
 
 ## Type of breaking change
 
-This change can affect
-[source compatibility](../../categories.md#source-incompatible) and/or
-[binary compatibility](../../categories.md#binary-incompatible).
+This change can affect [source compatibility](../../categories.md#source-incompatible).
 
 ## Reason for change
 
@@ -51,8 +47,7 @@ To resolve this warning, update to a package version that provides
 If no update exists:
 
 - You can suppress NU1703 for a specific package or for the project.
-- You can set `SdkAnalysisLevel` below `11.0.100` to opt out of this
-  warning wave.
+- To opt out of this warning wave, you can set `SdkAnalysisLevel` to a value below `11.0.100`.
 
 ## Affected APIs
 

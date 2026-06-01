@@ -1527,7 +1527,7 @@ The following table summarizes the diagnostics and behaviors affected by `SDKAna
 | 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
 | 10.0.300         | 'Restore' multi-targeting with duplicate target frameworks | Enables [multi-targeting with duplicate target frameworks](/nuget/consume-packages/package-references-in-project-files#multi-targeting-with-duplicate-frameworks) using `TargetFramework` alias. |
 | 10.0.300         | `TargetFramework` character validation | Emits [NU1019](/nuget/reference/errors-and-warnings/nu1019) error for path separator characters (`/` or `\`) in a `TargetFramework` property, and [NU1019](/nuget/reference/errors-and-warnings/nu1019) warning for non-ASCII characters. |
-| 11.0.100         | MonoAndroid framework deprecation warning | Emits [NU1703 warning](../compatibility/sdk/11/nu1703-deprecated-monoandroid-framework.md) when a package uses the deprecated `MonoAndroid` framework instead of a modern .NET Android target framework moniker. |
+| 11.0.100         | MonoAndroid framework deprecation warning | Emits [NU1703](../compatibility/sdk/11/nu1703-deprecated-monoandroid-framework.md) warning when a package uses the deprecated `MonoAndroid` framework instead of a modern .NET target framework moniker. |
 | 11.0.100         | `TargetFramework` non-ASCII character validation | Changes [NU1019](/nuget/reference/errors-and-warnings/nu1019) from a warning to an error when a `TargetFramework` property contains non-ASCII characters. |
 
 > [!NOTE]

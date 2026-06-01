@@ -58,7 +58,7 @@ This article gives a central entry point for MTP command-line options.
   Pauses test execution at startup so you can attach a debugger to the test process. Equivalent to setting the `TESTINGPLATFORM_WAIT_ATTACH_DEBUGGER` [environment variable](./microsoft-testing-platform-config.md#testingplatform_wait_attach_debugger-environment-variable) to `1`. Not supported on browser platforms.
 
   > [!NOTE]
-  > Before MTP 2.0, this option was named `--debug-wait-attach`. The old name was removed; use `--debug` instead.
+  > This option is available in MTP starting with version 1.9.0. It replaces the previous `--debug-wait-attach` option (introduced in MTP 1.6.0); the old name was removed and must no longer be used.
 
 - **`--diagnostic`**
 
@@ -88,6 +88,9 @@ This article gives a central entry point for MTP command-line options.
 
   Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
 
+  > [!NOTE]
+  > This option is available in MTP starting with version 1.8.0.
+
 - **`--help`**
 
   Prints out a description of how to use the command.
@@ -110,6 +113,9 @@ This article gives a central entry point for MTP command-line options.
 - **`--list-tests`**
 
   Lists the available tests without executing them. Optionally takes an argument that controls the output format: `text` (default, human-readable) or `json`.
+
+  > [!NOTE]
+  > The `json` output format is available in MTP starting with version 2.3.0.
 
 - **`--maximum-failed-tests`**
 

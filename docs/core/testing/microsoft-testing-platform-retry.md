@@ -38,7 +38,7 @@ This extension is intended for integration tests where the test depends heavily 
 | `--retry-failed-tests`                | Reruns any failed tests until they pass or until the maximum number of attempts is reached. Required to activate the extension. |
 | `--retry-failed-tests-max-percentage` | Avoids rerunning tests when the percentage of failed test cases crosses the specified threshold. Can't be combined with `--retry-failed-tests-max-tests`. Requires `--retry-failed-tests`. |
 | `--retry-failed-tests-max-tests`      | Avoids rerunning tests when the number of failed test cases crosses the specified limit. Can't be combined with `--retry-failed-tests-max-percentage`. Requires `--retry-failed-tests`. |
-| `--retry-failed-tests-delay`          | Adds a delay between retries. The delay is expressed as a time value, for example `200`, `500ms`, `1s`, `2.5m`, `1h`, `1d`. Default unit is milliseconds. Requires `--retry-failed-tests`. |
+| `--retry-failed-tests-delay`          | Adds a delay between retries. The delay is expressed as a time value, for example `200`, `500ms`, `1s`, `2.5m`, `1h`, `1d`. Default unit is milliseconds. Requires `--retry-failed-tests`. Available in MTP starting with version 2.3.0. |
 
 Both threshold options (`--retry-failed-tests-max-percentage` and `--retry-failed-tests-max-tests`) require `--retry-failed-tests` to also be set.
 

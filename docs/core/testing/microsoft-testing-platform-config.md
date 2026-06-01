@@ -169,14 +169,14 @@ The output directory of the diagnostic logging. If not specified, the file is ge
 The prefix for the log file name. Defaults to `"log_"`. Matches the `--diagnostic-file-prefix` command-line option.
 
 > [!NOTE]
-> The legacy `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable is still honored for backward compatibility but is deprecated and may be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` takes precedence.
+> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable is still honored for backward compatibility but is deprecated and may be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` takes precedence.
 
 ### `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` environment variable
 
 Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. Matches the `--diagnostic-synchronous-write` command-line option.
 
 > [!NOTE]
-> The legacy `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` environment variable is still honored for backward compatibility but is deprecated and may be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` takes precedence.
+> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` environment variable is still honored for backward compatibility but is deprecated and may be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` takes precedence.
 
 ### `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable
 
@@ -194,9 +194,15 @@ When set to `1` or `true`, suppresses the startup banner, the copyright message,
 
 When set to `1`, the test process pauses at startup and waits for a debugger to attach before proceeding. Equivalent to the `--debug` command-line option. Not supported on browser platforms.
 
+> [!NOTE]
+> This environment variable is available in MTP starting with version 1.6.0.
+
 ### `TESTINGPLATFORM_LAUNCH_ATTACH_DEBUGGER` environment variable
 
 When set to `1`, the test process calls `Debugger.Launch()` at startup, which prompts the system to launch a just-in-time debugger and attach it to the process. Use this variable to debug startup-time issues (for example, server-mode handshake) that occur before you can manually attach. On non-Windows platforms, the behavior depends on the configured JIT debugger.
+
+> [!NOTE]
+> This environment variable is available in MTP starting with version 1.6.0.
 
 > [!NOTE]
 > Diagnostic-related environment variables take precedence over their corresponding `--diagnostic-*` command-line arguments.

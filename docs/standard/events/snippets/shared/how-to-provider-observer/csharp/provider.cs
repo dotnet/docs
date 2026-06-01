@@ -1,16 +1,16 @@
-﻿// <Snippet7>
-// <Snippet3>
-// <Snippet2>
+﻿// <All>
+// <ObserverList>
+// <ClassDeclaration>
 namespace TemperatureSample;
 
 public sealed class TemperatureMonitor : IObservable<Temperature>
 {
-    // </Snippet2>
+    // </ClassDeclaration>
     private readonly List<IObserver<Temperature>> _observers = [];
     private readonly Lock _sync = new();
-    // </Snippet3>
+    // </ObserverList>
 
-    // <Snippet4>
+    // <Unsubscriber>
     private sealed class Unsubscriber(
         List<IObserver<Temperature>> observers,
         IObserver<Temperature> observer,
@@ -24,9 +24,9 @@ public sealed class TemperatureMonitor : IObservable<Temperature>
             }
         }
     }
-    // </Snippet4>
+    // </Unsubscriber>
 
-    // <Snippet5>
+    // <Subscribe>
     public IDisposable Subscribe(IObserver<Temperature> observer)
     {
         ArgumentNullException.ThrowIfNull(observer);
@@ -39,9 +39,9 @@ public sealed class TemperatureMonitor : IObservable<Temperature>
 
         return new Unsubscriber(_observers, observer, _sync);
     }
-    // </Snippet5>
+    // </Subscribe>
 
-    // <Snippet6>
+    // <Notify>
     public async Task GetTemperatureAsync(CancellationToken cancellationToken = default)
     {
         // Sample data that mimics a temperature device. A null value signals the end of transmission.
@@ -98,6 +98,6 @@ public sealed class TemperatureMonitor : IObservable<Temperature>
         foreach (IObserver<Temperature> observer in snapshot)
             observer.OnCompleted();
     }
-    // </Snippet6>
+    // </Notify>
 }
-// </Snippet7>
+// </All>

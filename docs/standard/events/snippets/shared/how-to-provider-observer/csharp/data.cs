@@ -1,5 +1,5 @@
-﻿// <Snippet1>
+﻿// <Temperature>
 namespace TemperatureSample;
 
 public readonly record struct Temperature(decimal Degrees, DateTime Date);
-// </Snippet1>
+// </Temperature>

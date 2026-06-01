@@ -1,4 +1,4 @@
-' <Snippet1>
+' <Temperature>
 Namespace Global.TemperatureSample
 
     Public Structure Temperature
@@ -12,4 +12,4 @@ Namespace Global.TemperatureSample
     End Structure
 
 End Namespace
-' </Snippet1>
+' </Temperature>

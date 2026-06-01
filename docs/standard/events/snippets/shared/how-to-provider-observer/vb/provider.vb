@@ -1,6 +1,6 @@
-' <Snippet7>
-' <Snippet3>
-' <Snippet2>
+' <All>
+' <ObserverList>
+' <ClassDeclaration>
 Imports System.Threading
 Imports System.Threading.Tasks
 
@@ -8,13 +8,13 @@ Namespace Global.TemperatureSample
 
     Public NotInheritable Class TemperatureMonitor
         Implements IObservable(Of Temperature)
-        ' </Snippet2>
+        ' </ClassDeclaration>
 
         Private ReadOnly _observers As New List(Of IObserver(Of Temperature))()
         Private ReadOnly _sync As New Object()
-        ' </Snippet3>
+        ' </ObserverList>
 
-        ' <Snippet4>
+        ' <Unsubscriber>
         Private NotInheritable Class Unsubscriber
             Implements IDisposable
 
@@ -36,9 +36,9 @@ Namespace Global.TemperatureSample
                 End SyncLock
             End Sub
         End Class
-        ' </Snippet4>
+        ' </Unsubscriber>
 
-        ' <Snippet5>
+        ' <Subscribe>
         Public Function Subscribe(observer As IObserver(Of Temperature)) As IDisposable _
             Implements IObservable(Of Temperature).Subscribe
 
@@ -52,9 +52,9 @@ Namespace Global.TemperatureSample
 
             Return New Unsubscriber(_observers, observer, _sync)
         End Function
-        ' </Snippet5>
+        ' </Subscribe>
 
-        ' <Snippet6>
+        ' <Notify>
         Public Async Function GetTemperatureAsync(Optional cancellationToken As CancellationToken = Nothing) As Task
             ' Sample data that mimics a temperature device. A Nothing value signals the end of transmission.
             Dim temps As Decimal?() = {
@@ -102,8 +102,8 @@ Namespace Global.TemperatureSample
                 observer.OnCompleted()
             Next
         End Sub
-        ' </Snippet6>
+        ' </Notify>
     End Class
 
 End Namespace
-' </Snippet7>
+' </All>

@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to implement an observer
 
-The observer design pattern requires a division between an observer, which registers for notifications, and a provider, which monitors data and sends notifications to one or more observers. This article discusses how to create an observer. A related article, [How to: Implement a Provider](how-to-implement-a-provider.md), discusses how to create a provider.
+The observer design pattern requires a division between an observer, which registers for notifications, and a provider, which monitors data and sends notifications to one or more observers. This article discusses how to create an observer. A related article, [How to implement a provider](how-to-implement-a-provider.md), discusses how to create a provider.
 
 ## Create an observer
 
@@ -58,6 +58,6 @@ To create an observer, implement the <xref:System.IObserver`1?displayProperty=na
 ## Related content
 
 - <xref:System.IObserver`1>
-- [Observer Design Pattern](observer-design-pattern.md)
-- [How to: Implement a Provider](how-to-implement-a-provider.md)
-- [Observer Design Pattern Best Practices](observer-design-pattern-best-practices.md)
+- [Observer design pattern](observer-design-pattern.md)
+- [How to implement a provider](how-to-implement-a-provider.md)
+- [Best practices for the observer design pattern](observer-design-pattern-best-practices.md)

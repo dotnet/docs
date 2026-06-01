@@ -66,6 +66,8 @@ items:
             items:
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
+              - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
+                href: sdk/11/nu1703-deprecated-monoandroid-framework.md
               - name: VSTest removes dependency on Newtonsoft.Json
                 href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10

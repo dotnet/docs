@@ -65,6 +65,9 @@ items:
     - name: Nullable reference types
       href: ./builtin-types/nullable-reference-types.md
       displayName: "? token, ? symbol"
+    - name: String operations
+      displayName: regex, ReadOnlySpan, StringComparison
+      href: ./builtin-types/string-operations.md
     - name: Collections and arrays
       items:
       - name: Collections

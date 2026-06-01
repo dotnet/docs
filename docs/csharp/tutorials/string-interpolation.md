@@ -1,11 +1,12 @@
 ---
-title: String interpolation
+title: Learn String interpolation
 description: Learn how to include formatted expression results in a result string in C# with string interpolation.
 author: pkulikov
 ms.subservice: fundamentals
 ms.date: 11/18/2025
+ms.topic: tutorial
 ---
-# String interpolation in C\#
+# Tutorial: Learn String interpolation in C\#
 
 This tutorial shows you how to use [string interpolation](../language-reference/tokens/interpolated.md) to format and include expression results in a result string. The examples assume that you're familiar with basic C# concepts and .NET type formatting. For more information about formatting types in .NET, see [Formatting types in .NET](../../standard/base-types/formatting-types.md).
 

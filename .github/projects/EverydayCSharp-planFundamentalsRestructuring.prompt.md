@@ -184,7 +184,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ### PR 11 — Strings: interpolation + search + split
 
-[#53991](https://github.com/dotnet/docs/pull/53991) *In review*
+[#53991](https://github.com/dotnet/docs/pull/53991) *Merged*
 
 > ~10 files
 

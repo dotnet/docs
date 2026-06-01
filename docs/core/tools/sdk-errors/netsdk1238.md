@@ -29,7 +29,7 @@ The check is opt-in and only runs when the MSBuild property `CheckSdkVulnerabili
 
 You can also pass `/p:CheckSdkVulnerabilities=true` to a .NET CLI command, such as `dotnet build`.
 
-The .NET CLI refreshes a local cache of SDK release metadata in the background (at most once every 24 hours) under `~/.dotnet/sdk-vulnerability-cache/`. The MSBuild check reads only that cache; it does not make network calls during the build. On machines that have never had network access, no warning is emitted.
+By default, the .NET CLI refreshes a local cache of SDK release metadata in the background at most once every 24 hours under `~/.dotnet/sdk-vulnerability-cache/`. To change that interval, set [`DOTNET_SDK_VULNERABILITY_CHECK_INTERVAL_HOURS`](../dotnet-environment-variables.md#dotnet_sdk_vulnerability_check_interval_hours). The MSBuild check reads only that cache; it does not make network calls during the build. On machines that have never had network access, no warning is emitted.
 
 ## Suppress the warning
 

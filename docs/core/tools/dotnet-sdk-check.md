@@ -67,4 +67,4 @@ The latest versions of .NET can be installed from https://aka.ms/dotnet-core-dow
 
 ## See also
 
-To get the same information as a build warning, set the `CheckSdkVulnerabilities` MSBuild property to `true` in your project. See [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), and [NETSDK1240](sdk-errors/netsdk1240.md).
+To get similar SDK status information as a build warning for the SDK that your build resolves, set the `CheckSdkVulnerabilities` MSBuild property to `true` in your project. See [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), and [NETSDK1240](sdk-errors/netsdk1240.md).

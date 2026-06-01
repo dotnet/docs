@@ -418,11 +418,11 @@ Specifies the minimum number of hours between background downloads of advertisin
 
 ### `DOTNET_SDK_VULNERABILITY_CHECK_DISABLE`
 
-Disables the opt-in SDK vulnerability and end-of-life check. When set to `true`, the .NET CLI doesn't refresh the local SDK release metadata cache in the background, and the MSBuild check doesn't emit [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), or [NETSDK1240](sdk-errors/netsdk1240.md). The default is `false`. The check is also opt-in at the project level through the `CheckSdkVulnerabilities` MSBuild property.
+Disables the opt-in SDK vulnerability, end-of-life, and feature-band discontinuation check. When set to `true`, the .NET CLI doesn't refresh the local SDK release metadata cache in the background, and the MSBuild check doesn't emit [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), or [NETSDK1240](sdk-errors/netsdk1240.md). The default is `false`. The check is also opt-in at the project level through the `CheckSdkVulnerabilities` MSBuild property.
 
 ### `DOTNET_SDK_VULNERABILITY_CHECK_INTERVAL_HOURS`
 
-Specifies the minimum number of hours between background refreshes of the SDK release metadata cache used by the SDK vulnerability and end-of-life check. The default is `24`.
+Specifies the minimum number of hours between background refreshes of the SDK release metadata cache used by the SDK vulnerability, end-of-life, and feature-band discontinuation check. The default is `24`.
 
 ### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
 

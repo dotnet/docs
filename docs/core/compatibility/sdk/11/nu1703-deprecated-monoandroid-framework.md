@@ -29,7 +29,7 @@ to deprecated MonoAndroid assets for Android projects that target
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-incompatible).
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 

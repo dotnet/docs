@@ -55,12 +55,13 @@ The plugin provides an autonomous, multi-agent workflow that assesses your .NET 
 
     You should see `github-copilot-modernization:modernize` in the list.
 
-    > [!TIP]
-    > To update the plugin when a new version is available, run:
-    >
-    > ```bash
-    > copilot plugin update github-copilot-modernization@github-copilot-modernization
-    > ```
+## Update the plugin
+
+To update the plugin when a new version is available, run:
+
+```bash
+copilot plugin update github-copilot-modernization@github-copilot-modernization
+```
 
 ## Start a modernization task
 

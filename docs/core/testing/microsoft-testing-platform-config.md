@@ -169,14 +169,14 @@ The output directory of the diagnostic logging. If not specified, the file is ge
 The prefix for the log file name. Defaults to `"log_"`. Matches the `--diagnostic-file-prefix` command-line option.
 
 > [!NOTE]
-> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable is still honored for backward compatibility but is deprecated and may be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` takes precedence.
+> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable is still honored for backward compatibility but is deprecated and might be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` takes precedence.
 
 ### `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` environment variable
 
 Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. Matches the `--diagnostic-synchronous-write` command-line option.
 
 > [!NOTE]
-> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` environment variable is still honored for backward compatibility but is deprecated and may be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` takes precedence.
+> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` environment variable is still honored for backward compatibility but is deprecated and might be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` takes precedence.
 
 ### `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable
 

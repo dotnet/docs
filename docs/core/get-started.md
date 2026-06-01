@@ -62,7 +62,6 @@ Console.WriteLine("Hello, World!");
 ```
 
 Breaking down each part:
- 
 - `Console` is a built-in .NET type that provides functionality for working with the console.
 - `WriteLine` is a method of `Console` that writes text followed by a new line.
 - `"Hello, World!"` is a string literal, a sequence of characters enclosed in double quotation marks. The text inside the string is what gets displayed in the console.

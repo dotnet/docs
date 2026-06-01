@@ -5,7 +5,7 @@ description: Assess and migrate your .NET project with GitHub Copilot. Learn how
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 01/26/2026
-zone_pivot_groups: copilot-modernization-install
+zone_pivot_groups: copilot-modernization-migrate
 #customer intent: As a .NET developer, I want to assess my project's migration readiness so that I can identify potential challenges and plan the modernization process effectively.
 ---
 

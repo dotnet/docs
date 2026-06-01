@@ -23,9 +23,9 @@ description: Learn how to assess .NET app readiness and migrate to Azure with Gi
 
 1. Add the marketplace and install the plugin:
 
-    ```bash
-    copilot plugin marketplace add microsoft/github-copilot-modernization
-    copilot plugin install github-copilot-modernization@github-copilot-modernization
+    ```text
+    /plugin marketplace add microsoft/github-copilot-modernization
+    /plugin install github-copilot-modernization@github-copilot-modernization
     ```
 
 1. Verify the plugin is installed:
@@ -75,9 +75,9 @@ After reviewing the assessment, continue through the planning and execution phas
 
 The agent runs the complete workflow automatically when you confirm each phase:
 
-1. **Assessment** → Review findings → Confirm to proceed
-1. **Planning** → The agent generates a migration plan (`plan.md`) → Review and confirm
-1. **Execution** → The agent routes tasks to specialized executor agents that apply code changes, run builds, and validate results
+1. **Assessment** → Review findings → Confirm to proceed.
+1. **Planning** → The agent generates a migration plan (`plan.md`) → Review and confirm.
+1. **Execution** → The agent routes tasks to specialized executor agents that apply code changes, run builds, and validate results.
 
 The agent handles everything—just confirm at each checkpoint.
 
@@ -103,9 +103,9 @@ For fully autonomous execution without prompts, use the `--allow-all` flag:
 copilot --agent=github-copilot-modernization:modernize --allow-all
 ```
 
-### Enterprise rulebook
+### Enterprise playbook
 
-To embed modernization policies, place Markdown files in the `.github/modernize/rulebook/` directory. During the planning phase, rulebook constraints merge with assessment results—rulebook policies take precedence over assessment recommendations.
+To embed modernization policies, place Markdown files in the `.github/modernize/playbook/` directory. During the planning phase, playbook constraints merge with assessment results—playbook policies take precedence over assessment recommendations.
 
 For more information, see [Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI](../copilot-cli-support.md#define-enterprise-modernization-policies).
 

@@ -1,11 +1,11 @@
-' <Snippet12>
-' <Snippet9>
-' <Snippet8>
+' <All>
+' <Subscribe>
+' <ClassDeclaration>
 Namespace Global.TemperatureSample
 
     Public NotInheritable Class TemperatureReporter
         Implements IObserver(Of Temperature)
-        ' </Snippet8>
+        ' </ClassDeclaration>
 
         Private _unsubscriber As IDisposable
         Private _last As Temperature?
@@ -14,15 +14,15 @@ Namespace Global.TemperatureSample
             ArgumentNullException.ThrowIfNull(provider)
             _unsubscriber = provider.Subscribe(Me)
         End Sub
-        ' </Snippet9>
+        ' </Subscribe>
 
-        ' <Snippet10>
+        ' <Unsubscribe>
         Public Sub Unsubscribe()
             _unsubscriber?.Dispose()
         End Sub
-        ' </Snippet10>
+        ' </Unsubscribe>
 
-        ' <Snippet11>
+        ' <ObserverMethods>
         Public Sub OnCompleted() Implements IObserver(Of Temperature).OnCompleted
             Console.WriteLine("Additional temperature data won't be transmitted.")
         End Sub
@@ -42,8 +42,8 @@ Namespace Global.TemperatureSample
 
             _last = value
         End Sub
-        ' </Snippet11>
+        ' </ObserverMethods>
     End Class
 
 End Namespace
-' </Snippet12>
+' </All>

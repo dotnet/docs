@@ -53,6 +53,33 @@ You ran your first .NET app. It's a simple app that prints the message "Hello, W
 
 Congratulations! You created a simple .NET application.
 
+## Understand the code
+
+The app consists of a single line of C# code:
+
+```csharp
+Console.WriteLine("Hello, World!");
+```
+
+Breaking down each part:
+
+- `Console` is a built-in .NET type that provides functionality for working with the console.
+- `WriteLine` is a method of `Console` that writes text followed by a new line.
+- `"Hello, World!"` is a string literal, a sequence of characters enclosed in double quotation marks. The text inside the string is what gets displayed in the console.
+- The semicolon (`;`) marks the end of a statement in C#.
+
+## How file-based apps work
+
+When you run the following command:
+
+```dotnetcli
+dotnet hello-world.cs
+```
+
+The .NET SDK automatically compiles the `.cs` file and runs the resulting app in one step. You don't need a project file (`.csproj`) or any extra setup.
+
+File-based apps are useful for learning, experimenting, and writing small utilities. As your applications grow, you'll typically use project-based apps to organize code, dependencies, and configuration.
+
 ## Cleanup resources
 
 GitHub automatically deletes your Codespace after 30 days of inactivity. If you plan to continue with .NET tutorials, you can leave your Codespace provisioned. If you're ready to download the .NET SDK to your computer, you can delete your Codespace. To delete your Codespace, open a browser window and navigate to [your Codespaces](https://github.com/codespaces). You should see a list of your codespaces in the window. Select the three dots (`...`) in the entry for the tutorial codespace and select **delete**.

@@ -6,7 +6,6 @@ ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
 ms.date: 06/01/2026
 no-loc: ["Program Files", "dotnet"]
-ms.custom: linux-related-content
 ai-usage: ai-assisted
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
@@ -405,7 +404,14 @@ Download a **binary** release for either the SDK or the runtime from one of the 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Choose the **Binaries** download (a _.zip_ file) for your CPU architecture. Extract the downloaded file, set the `DOTNET_ROOT` environment variable to the extracted folder's location, and then ensure `DOTNET_ROOT` is in `PATH`. Adding `DOTNET_ROOT` to `PATH` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
+After you download the binary release, follow these steps to extract it and configure the environment so the .NET CLI commands are available in the terminal:
+
+01. Choose the **Binaries** download (a _.zip_ file) for your CPU architecture.
+01. Extract the downloaded file.
+01. Set the `DOTNET_ROOT` environment variable to the extracted folder's location.
+01. Ensure `DOTNET_ROOT` is in `PATH`.
+
+For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 Different versions of .NET can be extracted to the same folder, where they coexist side-by-side.
 

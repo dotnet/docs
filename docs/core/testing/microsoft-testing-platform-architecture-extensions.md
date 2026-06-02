@@ -546,7 +546,7 @@ Ship a props file under `buildMultiTargeting/<PackageId>.props` inside your NuGe
 ```xml
 <Project>
   <ItemGroup>
-    <TestingPlatformBuilderHook Include="00000000-0000-0000-0000-000000000000">
+    <TestingPlatformBuilderHook Include="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx">
       <DisplayName>Contoso.MyExtension</DisplayName>
       <TypeFullName>Contoso.MyExtension.TestingPlatformBuilderHook</TypeFullName>
     </TestingPlatformBuilderHook>

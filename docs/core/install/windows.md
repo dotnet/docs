@@ -405,7 +405,7 @@ Download a **binary** release for either the SDK or the runtime from one of the 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Choose the **Binaries** download (a _.zip_ file) for your CPU architecture. Extract the downloaded file, set the `DOTNET_ROOT` environment variable to the extracted folder's location, and then ensure .NET is in `PATH`. Setting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
+Choose the **Binaries** download (a _.zip_ file) for your CPU architecture. Extract the downloaded file, set the `DOTNET_ROOT` environment variable to the extracted folder's location, and then ensure `DOTNET_ROOT` is in `PATH`. Adding `DOTNET_ROOT` to `PATH` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 Different versions of .NET can be extracted to the same folder, where they coexist side-by-side.
 
@@ -423,7 +423,7 @@ $env:DOTNET_ROOT = "$pwd\dotnet-install"
 New-Item -ItemType Directory -Force -Path $env:DOTNET_ROOT | Out-Null
 Expand-Archive -Path $DOTNET_FILE -DestinationPath $env:DOTNET_ROOT -Force
 
-$env:PATH = "$env:DOTNET_ROOT;$env:DOTNET_ROOT\tools;$env:PATH"
+$env:PATH = "$env:DOTNET_ROOT;$env:DOTNET_ROOT\tools;$env:USERPROFILE\.dotnet\tools;$env:PATH"
 ```
 
 You can install more than one version of .NET in the same folder.
@@ -441,7 +441,7 @@ To set the variables for your user account, run the following commands in PowerS
 ```powershell
 [Environment]::SetEnvironmentVariable("DOTNET_ROOT", "C:\dotnet", "User")
 
-$newPath = "C:\dotnet;C:\dotnet\tools;" + [Environment]::GetEnvironmentVariable("PATH", "User")
+$newPath = "C:\dotnet;C:\dotnet\tools;$env:USERPROFILE\.dotnet\tools;" + [Environment]::GetEnvironmentVariable("PATH", "User")
 [Environment]::SetEnvironmentVariable("PATH", $newPath, "User")
 ```
 

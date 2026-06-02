@@ -122,12 +122,13 @@ A contextual keyword provides a specific meaning in the code, but it isn't a res
         [`async`](async.md)  
         [`await`](../operators/await.md)  
         [`by`](by.md)  
+        [`closed`](closed.md)  
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
-        [`extension`](extension.md)  
     :::column-end:::
     :::column:::
+        [`extension`](extension.md)  
         [`field`](field.md)  
         [`file`](file.md)  
         [`from`](from-clause.md)  

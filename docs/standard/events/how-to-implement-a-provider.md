@@ -1,6 +1,6 @@
 ---
-description: "How to mplement a Provider"
-title: "How to: Implement a Provider"
+description: "Learn how to implement an observer pattern provider in .NET by creating an IObservable<T> type that tracks subscribers and pushes notifications."
+title: "How to implement a provider"
 ms.date: 06/01/2026
 dev_langs:
   - "csharp"

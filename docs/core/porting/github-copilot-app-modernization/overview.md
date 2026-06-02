@@ -56,6 +56,7 @@ Set up GitHub Copilot modernization in your development environment before using
 The modernization agent supports upgrading C# and Visual Basic projects of the following types:
 
 - ASP.NET Core (and related technologies such as MVC, Razor Pages, and Web API)
+- ASP.NET Web Forms
 - Blazor
 - Azure Functions
 - Windows Presentation Foundation (WPF)

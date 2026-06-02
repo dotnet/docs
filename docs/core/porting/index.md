@@ -35,7 +35,7 @@ The .NET SDK can target older versions of .NET, which you might need if you depl
 
 ## Choose an upgrade path
 
-Most upgrades fall into one of the following categories. Start with the conceptual guide that matches your scenario, then use the tooling described in the next section to perform the work.
+Most upgrades fall into one of the following categories. Start with the guidance that matches your scenario, then use the tooling described later in this article to perform the work.
 
 - **.NET Framework to modern .NET**
 
@@ -52,7 +52,7 @@ Most upgrades fall into one of the following categories. Start with the conceptu
 
 - **Modernize after upgrading**
 
-  After your app builds and runs on modern .NET, take advantage of newer patterns such as _appsettings.json_ configuration, dependency injection, and modern web and desktop controls. For ideas and step-by-step guidance, see [Modernize after upgrading to .NET from .NET Framework](modernize.md).
+  After your app builds and runs on modern .NET, take advantage of newer patterns such as `appsettings.json` configuration, dependency injection, and modern web and desktop controls. For ideas and step-by-step guidance, see [Modernize after upgrading to .NET from .NET Framework](modernize.md).
 
 - **Move to the cloud**
 

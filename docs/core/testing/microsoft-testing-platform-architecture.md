@@ -1,6 +1,6 @@
 ---
-title: Create custom extensions for Microsoft.Testing.Platform
-description: Learn how to build custom test frameworks and extensions for Microsoft.Testing.Platform.
+title: Create custom extensions for Microsoft.Testing.Platform (MTP)
+description: Learn how to build custom test frameworks and extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 02/24/2026
@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Create custom extensions
 
-This article is for developers building custom test frameworks or extensions for Microsoft.Testing.Platform.
+This article is for developers building custom test frameworks or extensions for Microsoft.Testing.Platform (MTP).
 
 > [!NOTE]
 > For complete sample code, see the [TestingPlatformExamples](https://github.com/microsoft/testfx/tree/main/samples/public/TestingPlatformExamples) in the Microsoft Test Framework repository.
@@ -76,6 +76,6 @@ public interface IExtension
 
 - [Build a test framework](./microsoft-testing-platform-architecture-test-framework.md): Create a custom `ITestFramework` implementation, handle requests, and report test results.
 - [Build extensions](./microsoft-testing-platform-architecture-extensions.md): Create in-process and out-of-process extensions such as data consumers, session handlers, and process monitors.
-- [VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md): Simplify migration of existing VSTest-based test frameworks to Microsoft.Testing.Platform.
+- [VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md): Simplify migration of existing VSTest-based test frameworks to MTP.
 - [Capabilities](./microsoft-testing-platform-architecture-capabilities.md): Declare and query framework and extension capabilities.
 - [Services](./microsoft-testing-platform-architecture-services.md): Access configuration, logging, message bus, and other platform services.

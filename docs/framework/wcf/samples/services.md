@@ -32,7 +32,7 @@ Demonstrates how to use standard endpoints in service configuration files.
 Demonstrates Extended Protection, a security initiative for protecting against man-in-the-middle (MITM) attacks.
 
 - [Configuration Channel Factory](configuration-channel-factory.md)\
-Demonstrates the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>.
+Demonstrates the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory`1>.
 
 - [Addressing](addressing.md)\
 Demonstrates various aspects and features of endpoint addresses.

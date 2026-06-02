@@ -53,7 +53,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## See also
 
 - <xref:System.ServiceModel.Configuration.MexTcpBindingElement>
-- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding%2A>
+- <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexTcpBinding*>
 - [How to: Publish Metadata for a Service Using a Configuration File](../../../wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
 - [Publishing and Retrieving Metadata Over a Custom Binding](../../../wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)
 - [Metadata](../../../wcf/feature-details/metadata.md)

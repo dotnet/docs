@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0057: X509Certificate2 and X509Certificate constructors for binary and file content are obsolete
 
-The constructors on <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> that accept content as a `byte[]`, `ReadOnlySpan<byte>`, or a `string` file path are obsolete, starting in .NET 9. The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import%2A> methods on X509Certificate2Collection are also obsolete. Calling them in code generates warning `SYSLIB0057` at compile time.
+The constructors on <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> that accept content as a `byte[]`, `ReadOnlySpan<byte>`, or a `string` file path are obsolete, starting in .NET 9. The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import*> methods on X509Certificate2Collection are also obsolete. Calling them in code generates warning `SYSLIB0057` at compile time.
 
 ## Reason for obsoletion
 
@@ -24,7 +24,7 @@ A new class called <xref:System.Security.Cryptography.X509Certificates.X509Certi
 - If you're loading X.509 content, use `X509CertificateLoader.LoadCertificate` or `X509CertificateLoader.LoadCertificateFromFile`.
 - If you're loading PKCS12 content, use `X509CertificateLoader.LoadPkcs12`, `X509CertificateLoader.LoadPkcs12FromFile`, `X509CertificateLoader.LoadPkcs12Collection`, or `X509CertificateLoader.LoadPkcs12CollectionFromFile`.
 - If you're loading PKCS7 content, use <xref:System.Security.Cryptography.Pkcs.SignedCms > from the System.Security.Cryptography.Pkcs package to inspect certificates in PKCS7 content.
-- If you're uncertain about the content type you're loading, use <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertContentType%2A> to determine the content type and call the appropriate API.
+- If you're uncertain about the content type you're loading, use <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCertContentType*> to determine the content type and call the appropriate API.
 
 The [Microsoft.Bcl.Cryptography package](https://www.nuget.org/packages/Microsoft.Bcl.Cryptography/) supplies `X509CertificateLoader` for .NET Framework and .NET Standard.
 

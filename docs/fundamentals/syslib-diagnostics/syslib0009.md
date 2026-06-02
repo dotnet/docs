@@ -10,15 +10,15 @@ f1_keywords:
 
 The following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0009` at compile time and throws a <xref:System.PlatformNotSupportedException> at runtime.
 
-- <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
-- <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
+- <xref:System.Net.AuthenticationManager.Authenticate*?displayProperty=nameWithType>
+- <xref:System.Net.AuthenticationManager.PreAuthenticate*?displayProperty=nameWithType>
 
 In .NET 9 and later versions, the entire <xref:System.Net.AuthenticationManager> class is marked obsolete. Use of this class generates warning `SYSLIB0009` at compile time.
 The methods in this class either no-op or throw a <xref:System.PlatformNotSupportedException> at runtime.
 
 ## Workarounds
 
-Implement <xref:System.Net.IAuthenticationModule>, which has methods that were previously called by <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>.
+Implement <xref:System.Net.IAuthenticationModule>, which has methods that were previously called by <xref:System.Net.AuthenticationManager.Authenticate*?displayProperty=nameWithType>.
 
 ## Suppress a warning
 

@@ -4,7 +4,7 @@ description: Learn about which versions of .NET SDK and .NET Runtime are support
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 11/08/2025
+ms.date: 04/23/2026
 ms.custom: updateeachrelease, linux-related-content
 
 #customer intent: As a user or developer, I want to know which versions of .NET are supported on macOS. I also need to know how to install .NET on macOS.
@@ -34,7 +34,7 @@ The following table lists the supported .NET releases, and which macOS they're s
 |------------------------|----------------|
 | macOS 26 "Tahoe"       | 10.0, 9.0, 8.0 |
 | macOS 15 "Sequoia"     | 10.0, 9.0, 8.0 |
-| macOS 14 "Sonoma"      | 9.0, 8.0       |
+| macOS 14 "Sonoma"      | 10.0, 9.0, 8.0 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

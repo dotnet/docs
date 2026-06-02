@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/11/2025
+ms.date: 04/23/2026
 ms.custom: linux-related-content
 ---
 
@@ -25,8 +25,7 @@ The following table is a list of currently supported .NET releases and the versi
 |--------|-------------------|------------------------------|
 | 3.23   | 10, 9, 8          | 10, 9, 8                     |
 | 3.22   | 10, 9, 8          | 9, 8                         |
-| 3.21   | 9, 8              | 9, 8                         |
-| 3.20   | 9, 8              | 8, 6                         |
+| 3.21   | 10, 9, 8          | 9, 8                         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -50,16 +49,16 @@ The following table is a list of currently supported .NET releases and the versi
 
 The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager, if a package is available for that architecture.
 
-| Architecture | .NET 10  | .NET 9            | .NET 8                 |
-|--------------|----------|-------------------|------------------------|
-| x86_64       | 3.22     | 3.20, 3.21, 3.22  | 3.20, 3.21, 3.22       |
-| x86          | None     | None              | None                   |
-| aarch64      | 3.22     | 3.20, 3.21, 3.22  | 3.20, 3.21, 3.22       |
-| armv7        | 3.22     | 3.20, 3.21, 3.22  | 3.20, 3.21, 3.22       |
-| armhf        | None     | None              | None                   |
-| s390x        | None     | None              | None                   |
-| ppc64le      | None     | None              | None                   |
-| riscv64      | None     | None              | None                   |
+| Architecture | .NET 10          | .NET 9           | .NET 8           |
+|--------------|------------------|------------------|------------------|
+| x86_64       | 3.21, 3.22, 3.23 | 3.21, 3.22, 3.23 | 3.21, 3.22, 3.23 |
+| x86          | None             | None             | None             |
+| aarch64      | 3.21, 3.22, 3.23 | 3.21, 3.22, 3.23 | 3.21, 3.22, 3.23 |
+| armv7        | 3.21, 3.22, 3.23 | 3.21, 3.22, 3.23 | 3.21, 3.22, 3.23 |
+| armhf        | None             | None             | None             |
+| s390x        | None             | None             | None             |
+| ppc64le      | None             | None             | None             |
+| riscv64      | None             | None             | None             |
 
 ## Install preview versions
 
@@ -73,7 +72,7 @@ The following table is a list of currently supported .NET releases and the archi
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
-### 3.20+
+### 3.21+
 
 - ca-certificates
 - libgcc

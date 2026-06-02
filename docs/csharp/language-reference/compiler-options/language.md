@@ -95,7 +95,7 @@ The following values are valid:
 
 For other ways to specify the C# language version, see [C# language versioning](../configure-language-version.md).
 
-For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.LanguageVersion%2A>.
+For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.LanguageVersion*>.
 
 ### C# language specification
 
@@ -149,19 +149,19 @@ The **Nullable** option lets you specify the nullable context. It can be set in 
 <Nullable>enable</Nullable>
 ```
 
-The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../../nullable-references.md#nullable-context). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../nullable-migration-strategies.md).
+The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../builtin-types/nullable-reference-types.md#nullable-context). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 > [!NOTE]
 > When there's no value set, the default value `disable` is applied, however the .NET 6 templates are by default provided with the **Nullable** value set to `enable`.
 
-Flow analysis is used to infer the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. Method calls are analyzed even when they're conditionally omitted. For instance, <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> in release mode.
+Flow analysis is used to infer the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. Method calls are analyzed even when they're conditionally omitted. For instance, <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> in release mode.
 
 Invocation of methods annotated with the following attributes will also affect flow analysis:
 
 - Simple pre-conditions: <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute>
 - Simple post-conditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullAttribute>
 - Conditional post-conditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute>
-- <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute> (for example, `DoesNotReturnIf(false)` for <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>) and <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute>
+- <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute> (for example, `DoesNotReturnIf(false)` for <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>) and <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute>
 - <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute>
 - Member post-conditions: <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String)> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String[])>
 

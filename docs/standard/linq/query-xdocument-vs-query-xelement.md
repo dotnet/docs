@@ -10,15 +10,15 @@ ms.assetid: 46221ff5-62ee-4de8-93ba-66465facb5c1
 
 # Query an `XDocument` vs. query an `XElement` (LINQ to XML)
 
-The query you write when you load a document via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType> differs slightly from what you write when you load via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>.
+The query you write when you load a document via <xref:System.Xml.Linq.XDocument.Load*?displayProperty=nameWithType> differs slightly from what you write when you load via <xref:System.Xml.Linq.XElement.Load*?displayProperty=nameWithType>.
 
 ## Comparison of `XDocument.Load` and `XElement.Load`
 
-When you load an XML document into an <xref:System.Xml.Linq.XElement> via <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>, the <xref:System.Xml.Linq.XElement> at the root of the XML tree contains the root element of the loaded document. However, when you load the same XML document into an <xref:System.Xml.Linq.XDocument> via <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>, the root of the tree is an <xref:System.Xml.Linq.XDocument> node, and the root element of the loaded document is the one allowed child <xref:System.Xml.Linq.XElement> node of the <xref:System.Xml.Linq.XDocument>. The LINQ to XML axes operate relative to the root node.
+When you load an XML document into an <xref:System.Xml.Linq.XElement> via <xref:System.Xml.Linq.XElement.Load*?displayProperty=nameWithType>, the <xref:System.Xml.Linq.XElement> at the root of the XML tree contains the root element of the loaded document. However, when you load the same XML document into an <xref:System.Xml.Linq.XDocument> via <xref:System.Xml.Linq.XDocument.Load*?displayProperty=nameWithType>, the root of the tree is an <xref:System.Xml.Linq.XDocument> node, and the root element of the loaded document is the one allowed child <xref:System.Xml.Linq.XElement> node of the <xref:System.Xml.Linq.XDocument>. The LINQ to XML axes operate relative to the root node.
 
 ## Example: Load an XML tree using `XElement.Load`, then query for child elements
 
-This first example loads an XML tree using <xref:System.Xml.Linq.XElement.Load%2A>. It then queries for the child elements of the root of the tree.
+This first example loads an XML tree using <xref:System.Xml.Linq.XElement.Load*>. It then queries for the child elements of the root of the tree.
 
 ```csharp
 // Create a simple document and write it to a file
@@ -122,7 +122,7 @@ Querying tree loaded with XDocument.Load
 
 Notice that the same query returned the one `Root` node instead of the three child nodes.
 
-One approach to dealing with this is to use the <xref:System.Xml.Linq.XDocument.Root%2A> property before accessing the axes methods, as follows:
+One approach to dealing with this is to use the <xref:System.Xml.Linq.XDocument.Root> property before accessing the axes methods, as follows:
 
 ```csharp
 // Create a simple document and write it to a file

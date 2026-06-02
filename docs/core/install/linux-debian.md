@@ -3,7 +3,7 @@ title: Install .NET on Debian
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 04/23/2026
 ms.custom: linux-related-content
 ---
 
@@ -133,23 +133,27 @@ When you install with a package manager, these libraries are installed for you. 
 
 ### 13.x
 
+- ca-certificates
 - libc6
 - libgcc-s1
 - libgssapi-krb5-2
-- libicu72
-- libssl3
+- libicu76
+- libssl3t64
 - libstdc++6
-- zlib1g
+- tzdata
+- zlib1g (required for .NET 8 only)
 
 ### 12.x
 
+- ca-certificates
 - libc6
 - libgcc-s1
 - libgssapi-krb5-2
 - libicu72
 - libssl3
 - libstdc++6
-- zlib1g
+- tzdata
+- zlib1g (required for .NET 8 only)
 
 ### Other notes
 

@@ -53,7 +53,7 @@ async Task<string> FetchDataAsync() {
 }
 ```
 
-Learn more: [Asynchronous programming](../asynchronous-programming/index.md)
+To learn more, see [Asynchronous programming](../asynchronous-programming/index.md).
 
 **Classes:**
 
@@ -69,7 +69,7 @@ class Point {
 record Point(int X, int Y);
 ```
 
-Learn more: [Records](../fundamentals/types/records.md)
+To learn more, see [Records](../fundamentals/types/records.md).
 
 **Pattern matching:**
 
@@ -83,7 +83,14 @@ if (typeof value === "string") { /* ... */ }
 if (value is string s) { /* use s */ }
 ```
 
-Learn more: [Pattern matching](../fundamentals/functional/pattern-matching.md)
+To learn more, see [Pattern matching](../fundamentals/functional/pattern-matching.md).
+
+## Runtime model differences
+
+Even though C# and JavaScript look similar in syntax, they run very differently:
+
+- JavaScript runs on a runtime like V8 and uses an event loop to handle asynchronous work.
+- C# runs on the .NET runtime (CLR), where code is compiled into Intermediate Language (IL) and then executed using JIT or AOT compilation.
 
 ## What's new for you in C\#
 
@@ -92,7 +99,7 @@ As you learn C#, you encounter concepts that aren't part of JavaScript. Some of 
 1. [***C# Type System***](../fundamentals/types/index.md): C# is a strongly typed language. Every variable has a type, and that type can't change. You define `class` or `struct` types. You can define [`interface`](../fundamentals/types/interfaces.md) definitions that define behavior implemented by other types. TypeScript includes many of these concepts, but because TypeScript is built on JavaScript, the type system isn't as strict.
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` expression](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
 1. [***String interpolation***](../language-reference/tokens/interpolated.md) and [***raw string literals***](../language-reference/builtin-types/reference-types.md#string-literals): String interpolation enables you to insert evaluated expressions in a string, rather than using positional identifiers. Raw string literals provide a way to minimize escape sequences in text.
-1. [***Nullable and non-nullable types***](../nullable-references.md): C# supports *nullable value types* and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. These features can minimize your application throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>. The syntax might be familiar from TypeScript's use of `?` for optional properties.
+1. [***Nullable and non-nullable types***](../fundamentals/null-safety/nullable-reference-types.md): C# supports *nullable value types* and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. These features can minimize your application throwing a <xref:System.NullReferenceException?displayProperty=nameWithType>. The syntax might be familiar from TypeScript's use of `?` for optional properties.
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 
 > [!TIP]
@@ -108,11 +115,11 @@ Some familiar features and idioms from JavaScript and TypeScript aren't availabl
 
 In addition, a few more TypeScript features aren't available in C#:
 
-1. ***Union types***: C# doesn't support union types. However, design proposals are in progress.
+1. ***Union types***: Beginning with C# 15, C# supports [union types](../language-reference/builtin-types/union.md). A union defines a closed set of named cases that a value can represent, and the compiler ensures exhaustive pattern matching over those cases.
 1. ***Decorators***: C# doesn't have decorators. Some common decorators, such as `@sealed` are reserved keywords in C#. Other common decorators might have corresponding [Attributes](../language-reference/attributes/general.md). For other decorators, you can create your own attributes.
 1. ***More forgiving syntax***: The C# compiler parses code more strictly than JavaScript requires.
 
-If you're building a web application, consider using [Blazor](/aspnet/core/blazor/index) to build your application. Blazor is a full-stack web framework built for C#. Blazor components can run on the server, as .NET assemblies, or on the client using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.
+If you're building a web application, consider using [Blazor](/aspnet/core/blazor/index) to build your application. Blazor is a full-stack web framework built for C#. Blazor components can run on the server, as .NET assemblies, or on the client by using WebAssembly. Blazor supports interop with your favorite JavaScript or TypeScript libraries.
 
 ## Next steps
 

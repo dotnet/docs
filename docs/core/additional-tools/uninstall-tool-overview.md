@@ -3,7 +3,7 @@ title: .NET Uninstall Tool overview
 description: An overview of .NET Uninstall Tool. This tool is a guided command-line tool that removes .NET SDKs and runtimes.
 author: adegeo
 ms.custom: devdivchpfy22
-ms.date: 08/04/2024
+ms.date: 03/20/2026
 zone_pivot_groups: operating-systems-set-three
 ---
 
@@ -51,19 +51,19 @@ winget install --id Microsoft.DotNet.UninstallTool --source winget
 
 ### Install with the MSI installer
 
-1. Download the _dotnet-core-uninstall-\*.msi_ installer from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
+1. Download the _dotnet-core-uninstall-\*.msi_ installer from the [GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
 1. Run the installer.
 
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
-01. Download the _dotnet-core-uninstall.tar.gz_ tarball from the [the GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
-01. Run the following shell script to extract the tarball to a directory named _dotnet-core-uninstall_ in your home directory:
+01. Download the _dotnet-core-uninstall-\*.tar.gz_ tarball from the [GitHub releases page](https://aka.ms/dotnet-core-uninstall-tool).
+01. Run the following shell script to extract the tarball to a directory named _dotnet-core-uninstall_ in your home directory. The following example extracts the Arm64 version of the tool:
 
     ```bash
     mkdir -p ~/dotnet-core-uninstall
-    tar -zxf dotnet-core-uninstall.tar.gz -C ~/dotnet-core-uninstall
+    tar -zxf dotnet-core-uninstall-osx-arm64.tar.gz -C ~/dotnet-core-uninstall
     ```
 
 ::: zone-end
@@ -96,7 +96,7 @@ To manually uninstall the tool, perform the following steps:
 
 ::: zone pivot="os-macos"
 
-If you extracted the _dotnet-core-uninstall.tar.gz_ tarball, delete the extracted files.
+If you extracted the _dotnet-core-uninstall-\*.tar.gz_ tarball, delete the extracted files.
 
 ::: zone-end
 

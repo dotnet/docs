@@ -62,7 +62,7 @@ For Each el In list1
 Next
 ```
 
-The <xref:System.Linq.Enumerable.Where%2A> method is an extension method. For more information, see [Extension Methods (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/extension-methods.md). Because <xref:System.Linq.Enumerable.Where%2A> is an extension method, the query above is compiled as though it were written as follows:
+The <xref:System.Linq.Enumerable.Where*> method is an extension method. For more information, see [Extension Methods (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/extension-methods.md). Because <xref:System.Linq.Enumerable.Where*> is an extension method, the query above is compiled as though it were written as follows:
 
 ```csharp
 XDocument po = XDocument.Load("PurchaseOrders.xml");
@@ -118,7 +118,7 @@ reader.Close()
 
 This query returns the same output as the examples that use LINQ to XML; the only difference is that LINQ to XML indents the printed XML, whereas <xref:System.Xml.XmlDocument> doesn't.
 
-However, the <xref:System.Xml.XmlDocument> approach generally doesn't perform as well as LINQ to XML, because the <xref:System.Xml.XmlNode.SelectNodes%2A> method must do the following every time it's called:
+However, the <xref:System.Xml.XmlDocument> approach generally doesn't perform as well as LINQ to XML, because the <xref:System.Xml.XmlNode.SelectNodes*> method must do the following every time it's called:
 
 - Parse the string that contains the XPath expression, breaking the string into tokens.
 - Validate the tokens to make sure that the XPath expression is valid.

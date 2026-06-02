@@ -48,13 +48,13 @@ If the data type of `expression` or `typename` is a class or structure you've de
 
 ## Conversion Keywords
 
- A comparison of the type conversion keywords is as follows.  
-  
-|Keyword|Data types|Argument relationship|Run-time failure|  
-|---|---|---|---|  
-|`CType`|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
-|[DirectCast Operator](directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
-|[TryCast](trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|  
+ A comparison of the type conversion keywords is as follows.
+
+|Keyword|Data types|Argument relationship|Run-time failure|
+|---|---|---|---|
+|`CType`|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|
+|[DirectCast Operator](directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|
+|[TryCast](trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|
 
 ## Overloading
 
@@ -62,7 +62,7 @@ The `CType` operator can also be overloaded on a class or structure defined outs
 
 ## Converting Dynamic Objects
 
-Type conversions of dynamic objects are performed by user-defined dynamic conversions that use the <xref:System.Dynamic.DynamicObject.TryConvert%2A> or <xref:System.Dynamic.DynamicMetaObject.BindConvert%2A> methods. If you're working with dynamic objects, use the <xref:Microsoft.VisualBasic.Conversion.CTypeDynamic%2A> method to convert the dynamic object.
+Type conversions of dynamic objects are performed by user-defined dynamic conversions that use the <xref:System.Dynamic.DynamicObject.TryConvert*> or <xref:System.Dynamic.DynamicMetaObject.BindConvert*> methods. If you're working with dynamic objects, use the <xref:Microsoft.VisualBasic.Conversion.CTypeDynamic*> method to convert the dynamic object.
 
 ## Example
 

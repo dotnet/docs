@@ -1,7 +1,7 @@
 ---
 title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
-ms.date: 12/05/2025
+ms.date: 04/22/2026
 ai-usage: ai-assisted
 ---
 # File-based apps
@@ -21,7 +21,32 @@ In this article, learn how to create, configure, and work with file-based apps e
 
 ## Supported directives
 
-File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives include: `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
+File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives are: `#:include`, `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
+
+### `#:include`
+
+> [!NOTE]
+> This directive is available in .NET 11 Preview 3 and .NET SDK 10.0.300 and later.
+
+Includes another file in the file-based app.
+
+The SDK maps included files to item types based on file extension:
+
+- `*.cs` to `Compile`
+- `*.resx` to `EmbeddedResource`
+- `*.json` to `None`
+- `*.razor` to `Content`
+
+The compiler includes `.cs` files as part of app compilation. These files can add types, methods, namespaces, and other declarations, but they cannot add top-level statements.
+
+```csharp
+#:include helpers.cs
+#:include models/customer.cs
+#:include shared/**/*.cs
+#:include $(MSBuildProjectName).*.cs
+```
+
+The `#:include` directive supports literal paths, glob patterns, and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
 
 ### `#:package`
 
@@ -318,7 +343,7 @@ Enable direct execution of file-based apps on Unix-like systems by using a sheba
 Add a shebang at the top of your file:
 
 ```csharp
-#!/usr/bin/env dotnet
+#!/usr/bin/env -S dotnet --
 #:package Spectre.Console
 
 using Spectre.Console;
@@ -340,6 +365,11 @@ Run directly:
 
 > [!NOTE]
 > Use `LF` line endings instead of `CRLF` when you add a shebang. Don't include a BOM in the file.
+
+To prevent `dotnet` from consuming arguments that match its own parameters (such as `--help`), the shebang uses `--` as a separator. The `--` separator tells `dotnet` to forward all subsequent command-line arguments directly to your app. The `-S` flag lets `env` split the remaining text into separate arguments so you can include `--` in the shebang.
+
+> [!NOTE]
+> If `-S` isn't supported on your system, use `#!/usr/bin/env dotnet` instead. With this shebang, `dotnet` might consume arguments that match its own CLI parameters.
 
 ## Implicit build files
 

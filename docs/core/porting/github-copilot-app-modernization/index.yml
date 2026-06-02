@@ -19,6 +19,14 @@ landingContent:
             url: overview.md
           - text: Install
             url: install.md
+          - text: Core concepts
+            url: concepts.md
+          - text: Working with the agent
+            url: working-with-agent.md
+          - text: Scenarios and skills reference
+            url: scenarios-and-skills.md
+          - text: Customization
+            url: customization.md
           - text: FAQ
             url: faq.yml
       - linkListType: how-to-guide
@@ -27,6 +35,10 @@ landingContent:
             url: how-to-upgrade-with-github-copilot.md
           - text: How to apply custom upgrade instructions
             url: how-to-custom-upgrade-instructions.md
+          - text: Best practices
+            url: best-practices.md
+          - text: Troubleshooting
+            url: troubleshooting.md
 
   - title: Migrate .NET apps to Azure
     linkLists:

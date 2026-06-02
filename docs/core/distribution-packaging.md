@@ -107,7 +107,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
-- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. The path may end with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. On some systems, architecture-specific files are also present, such as **/etc/dotnet/install_location_arm64**. The path might end with a newline. It's not necessary to add these files when the root is `/usr/share/dotnet`.
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 

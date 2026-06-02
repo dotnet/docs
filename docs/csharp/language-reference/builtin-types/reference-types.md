@@ -188,14 +188,14 @@ To include a double quotation mark in an @-quoted string, double it:
 
 ### UTF-8 string literals
 
-.NET stores strings using UTF-16 encoding. UTF-8 is the standard for Web protocols and other important libraries. You can add the `u8` suffix to a string literal to specify UTF-8 encoding. The compiler stores UTF-8 literals as `ReadOnlySpan<byte>` objects. Using a UTF-8 string literal creates a more clear declaration than declaring the equivalent <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as shown in the following code:
+.NET stores strings using UTF-16 encoding. UTF-8 is the standard for Web protocols and other important libraries. You can add the `u8` suffix to a string literal to specify UTF-8 encoding. The compiler stores UTF-8 literals as `ReadOnlySpan<byte>` objects. Using a UTF-8 string literal creates a more clear declaration than declaring the equivalent <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, as shown in the following code:
 
 ```csharp
 ReadOnlySpan<byte> AuthWithTrailingSpace = new byte[] { 0x41, 0x55, 0x54, 0x48, 0x20 };
 ReadOnlySpan<byte> AuthStringLiteral = "AUTH "u8;
 ```
 
-To store a UTF-8 string literal as an array, use <xref:System.ReadOnlySpan%601.ToArray?displayProperty=nameWithType> to copy the bytes containing the literal to the mutable array:
+To store a UTF-8 string literal as an array, use <xref:System.ReadOnlySpan`1.ToArray?displayProperty=nameWithType> to copy the bytes containing the literal to the mutable array:
 
 ```csharp
 byte[] AuthStringLiteral = "AUTH "u8.ToArray();
@@ -255,7 +255,7 @@ The following example contrasts a variable of type `dynamic` with a variable of 
 
 [!code-csharp[csrefKeywordsTypes#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic1.cs#21)]
 
-The <xref:System.Console.WriteLine%2A> statements display the run-time types of `dyn` and `obj`. At that point, both have the same type, integer. The following output is produced:
+The <xref:System.Console.WriteLine*> statements display the run-time types of `dyn` and `obj`. At that point, both have the same type, integer. The following output is produced:
 
 ```console
 System.Int32
@@ -283,8 +283,7 @@ For more information, see the following sections of the [C# language specificati
 - [§8.2.4 The dynamic type](~/_csharpstandard/standard/types.md#824-the-dynamic-type)
 - [§8.2.5 The string type](~/_csharpstandard/standard/types.md#825-the-string-type)
 - [§8.2.8 Delegate types](~/_csharpstandard/standard/types.md#828-delegate-types)
-- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [UTF-8 string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
+- [§6.4.5.6 String literals](~/_csharpstandard/standard/lexical-structure.md#6456-string-literals)
 
 ### See also
 

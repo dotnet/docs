@@ -59,7 +59,7 @@ Before releasing objects, the CLR automatically calls the `Finalize` method for 
 
 The `Finalize` destructor is a protected method that can be called only from the class it belongs to, or from derived classes. The system calls `Finalize` automatically when an object is destroyed, so you should not explicitly call `Finalize` from outside of a derived class's `Finalize` implementation.
 
-Unlike `Class_Terminate`, which executes as soon as an object is set to nothing, there is usually a delay between when an object loses scope and when Visual Basic calls the `Finalize` destructor. Visual Basic .NET allows for a second kind of destructor, <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>, which can be explicitly called at any time to immediately release resources.
+Unlike `Class_Terminate`, which executes as soon as an object is set to nothing, there is usually a delay between when an object loses scope and when Visual Basic calls the `Finalize` destructor. Visual Basic .NET allows for a second kind of destructor, <xref:System.IDisposable.Dispose*?displayProperty=nameWithType>, which can be explicitly called at any time to immediately release resources.
 
 > [!NOTE]
 > A `Finalize` destructor should not throw exceptions, because they cannot be handled by the application and can cause the application to terminate.
@@ -72,7 +72,7 @@ When an instance of a derived class is created, the `Sub New` constructor of the
 
 ![Screenshot showing class hierarchy constructors and inheritance.](./media/object-lifetime-how-objects-are-created-and-destroyed/subnew-constructor-inheritance.gif)
 
-When an object is no longer needed, the CLR calls the <xref:System.Object.Finalize%2A> method for that object before freeing its memory. The <xref:System.Object.Finalize%2A> method is called a `destructor` because it performs cleanup tasks, such as saving state information, closing files and connections to databases, and other tasks that must be done before releasing the object.
+When an object is no longer needed, the CLR calls the <xref:System.Object.Finalize*> method for that object before freeing its memory. The <xref:System.Object.Finalize*> method is called a `destructor` because it performs cleanup tasks, such as saving state information, closing files and connections to databases, and other tasks that must be done before releasing the object.
 
 ![Screenshot showing the Finalize method destructor.](./media/object-lifetime-how-objects-are-created-and-destroyed/finalize-method-destructor.gif)
 
@@ -80,7 +80,7 @@ When an object is no longer needed, the CLR calls the <xref:System.Object.Finali
 
 Class instances often control resources not managed by the CLR, such as Windows handles and database connections. These resources must be disposed of in the `Finalize` method of the class, so that they will be released when the object is destroyed by the garbage collector. However, the garbage collector destroys objects only when the CLR requires more free memory. This means that the resources may not be released until long after the object goes out of scope.
 
-To supplement garbage collection, your classes can provide a mechanism to actively manage system resources if they implement the <xref:System.IDisposable> interface. <xref:System.IDisposable> has one method, <xref:System.IDisposable.Dispose%2A>, which clients should call when they finish using an object. You can use the <xref:System.IDisposable.Dispose%2A> method to immediately release resources and perform tasks such as closing files and database connections. Unlike the `Finalize` destructor, the <xref:System.IDisposable.Dispose%2A> method is not called automatically. Clients of a class must explicitly call <xref:System.IDisposable.Dispose%2A> when you want to immediately release resources.
+To supplement garbage collection, your classes can provide a mechanism to actively manage system resources if they implement the <xref:System.IDisposable> interface. <xref:System.IDisposable> has one method, <xref:System.IDisposable.Dispose*>, which clients should call when they finish using an object. You can use the <xref:System.IDisposable.Dispose*> method to immediately release resources and perform tasks such as closing files and database connections. Unlike the `Finalize` destructor, the <xref:System.IDisposable.Dispose*> method is not called automatically. Clients of a class must explicitly call <xref:System.IDisposable.Dispose*> when you want to immediately release resources.
 
 ### Implementing IDisposable
 
@@ -92,7 +92,7 @@ A class that implements the <xref:System.IDisposable> interface should include t
   Protected disposed As Boolean = False
   ```
 
-- An overload of the <xref:System.IDisposable.Dispose%2A> that frees the class's resources. This method should be called by the <xref:System.IDisposable.Dispose%2A> and `Finalize` methods of the base class:
+- An overload of the <xref:System.IDisposable.Dispose*> that frees the class's resources. This method should be called by the <xref:System.IDisposable.Dispose*> and `Finalize` methods of the base class:
 
   ```vb
   Protected Overridable Sub Dispose(ByVal disposing As Boolean)
@@ -106,7 +106,7 @@ A class that implements the <xref:System.IDisposable> interface should include t
   End Sub
   ```
 
-- An implementation of <xref:System.IDisposable.Dispose%2A> that contains only the following code:
+- An implementation of <xref:System.IDisposable.Dispose*> that contains only the following code:
 
   ```vb
   Public Sub Dispose() Implements IDisposable.Dispose
@@ -140,7 +140,7 @@ Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 End Sub
 ```
 
-A derived class should not override the base class's <xref:System.IDisposable.Dispose%2A> and `Finalize` methods. When those methods are called from an instance of the derived class, the base class's implementation of those methods call the derived class's override of the `Dispose(disposing)` method.
+A derived class should not override the base class's <xref:System.IDisposable.Dispose*> and `Finalize` methods. When those methods are called from an instance of the derived class, the base class's implementation of those methods call the derived class's override of the `Dispose(disposing)` method.
 
 ## Garbage Collection and the Finalize Destructor
 
@@ -148,11 +148,11 @@ The .NET Framework uses the *reference-tracing garbage collection* system to per
 
 The CLR periodically destroys objects when the system determines that such objects are no longer needed. Objects are released more quickly when system resources are in short supply, and less frequently otherwise. The delay between when an object loses scope and when the CLR releases it means that, unlike with objects in Visual Basic 6.0 and earlier versions, you cannot determine exactly when the object will be destroyed. In such a situation, objects are said to have *non-deterministic lifetime*. In most cases, non-deterministic lifetime does not change how you write applications, as long as you remember that the `Finalize` destructor may not immediately execute when an object loses scope.
 
-Another difference between the garbage-collection systems involves the use of `Nothing`. To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned `Nothing` to object variables to release the references those variables held. If the variable held the last reference to the object, the object's resources were released immediately. In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately. To release resources immediately, use the object's <xref:System.IDisposable.Dispose%2A> method, if available. The only time you should set a variable to `Nothing` is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.
+Another difference between the garbage-collection systems involves the use of `Nothing`. To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned `Nothing` to object variables to release the references those variables held. If the variable held the last reference to the object, the object's resources were released immediately. In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately. To release resources immediately, use the object's <xref:System.IDisposable.Dispose*> method, if available. The only time you should set a variable to `Nothing` is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.
 
 ## See also
 
-- <xref:System.IDisposable.Dispose%2A>
+- <xref:System.IDisposable.Dispose*>
 - [Initialization and Termination of Components](/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
 - [New Operator](../../../language-reference/operators/new-operator.md)
 - [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)

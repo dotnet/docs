@@ -29,20 +29,20 @@ The <xref:System.Xml.XmlWriterSettings> class includes several properties that c
 
 |Property|Description|
 |--------------|-----------------|
-|<xref:System.Xml.XmlWriterSettings.Encoding*>|Specifies the text encoding to use. The default is `Encoding.UTF8`.|
-|<xref:System.Xml.XmlWriterSettings.Indent*>|Indicates whether to indent elements. The default is `false` (no indentation).|
-|<xref:System.Xml.XmlWriterSettings.IndentChars*>|Specifies the character string to use when indenting. The default is two spaces.|
-|<xref:System.Xml.XmlWriterSettings.NewLineChars*>|Specifies the character string to use for line breaks. The default is `\r\n` (carriage return, line feed) for non-Unix platforms, and `\n` (line feed) for Unix platforms.|
-|<xref:System.Xml.XmlWriterSettings.NewLineHandling*>|Specifies how to handle newline characters.|
-|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes*>|Indicates whether to write attributes on a new line. <xref:System.Xml.XmlWriterSettings.Indent*> should be set to `true` when using this property. The default is `false`.|
-|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration*>|Indicates whether to write an XML declaration. The default is `false`.|
+|<xref:System.Xml.XmlWriterSettings.Encoding>|Specifies the text encoding to use. The default is `Encoding.UTF8`.|
+|<xref:System.Xml.XmlWriterSettings.Indent>|Indicates whether to indent elements. The default is `false` (no indentation).|
+|<xref:System.Xml.XmlWriterSettings.IndentChars>|Specifies the character string to use when indenting. The default is two spaces.|
+|<xref:System.Xml.XmlWriterSettings.NewLineChars>|Specifies the character string to use for line breaks. The default is `\r\n` (carriage return, line feed) for non-Unix platforms, and `\n` (line feed) for Unix platforms.|
+|<xref:System.Xml.XmlWriterSettings.NewLineHandling>|Specifies how to handle newline characters.|
+|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes>|Indicates whether to write attributes on a new line. <xref:System.Xml.XmlWriterSettings.Indent> should be set to `true` when using this property. The default is `false`.|
+|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration>|Indicates whether to write an XML declaration. The default is `false`.|
 
-The <xref:System.Xml.XmlWriterSettings.Indent*> and <xref:System.Xml.XmlWriterSettings.IndentChars*> properties control how insignificant white space is formatted. For example, to indent element nodes:
+The <xref:System.Xml.XmlWriterSettings.Indent> and <xref:System.Xml.XmlWriterSettings.IndentChars> properties control how insignificant white space is formatted. For example, to indent element nodes:
 
 :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet8":::
 :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet8":::
 
-Use the <xref:System.Xml.XmlWriterSettings.NewLineOnAttributes*> to write each attribute on a new line with one extra level of indentation:
+Use the <xref:System.Xml.XmlWriterSettings.NewLineOnAttributes> to write each attribute on a new line with one extra level of indentation:
 
 :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet9":::
 :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet9":::

@@ -61,12 +61,12 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 ## See also
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
-- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
-- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris*>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode*>
+- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement.AllowedAudienceUris*>
 - <xref:System.ServiceModel.Configuration.AllowedAudienceUriElementCollection>
 - <xref:System.ServiceModel.Configuration.AllowedAudienceUriElement>
-- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowedAudienceUris%2A>
+- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowedAudienceUris*>
 - [\<allowedAudienceUris>](allowedaudienceuris.md)
 - [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)

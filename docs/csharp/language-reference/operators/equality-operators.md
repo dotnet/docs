@@ -3,10 +3,10 @@ title: "Equality operators - test if two objects are equal or not equal"
 description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality"
 ms.date: 01/20/2026
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "==_CSharpKeyword"
   - "!=_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "comparison operators [C#]"
   - "relational operators [C#]"
   - "equality operator [C#]"
@@ -49,7 +49,7 @@ By default, reference-type operands, excluding records, are equal if they refer 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="ReferenceTypesEquality":::
 
-As the example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+As the example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 
 ### Record types equality
 
@@ -78,7 +78,7 @@ Two [delegate](../../programming-guide/delegates/index.md) operands of the same 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="SnippetCheckReceiver":::
 
-For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12149-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12159-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 Delegates that come from evaluating semantically identical [lambda expressions](lambda-expressions.md) aren't equal, as the following example shows:
 
@@ -96,7 +96,7 @@ The following example demonstrates how to use the `!=` operator:
 
 You can [overload](operator-overloading.md) the `==` and `!=` operators in a user-defined type. If you overload one of these two operators, you must also overload the other operator.
 
-You can't explicitly overload the `==` and `!=` operators in a record type. To change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method with the following signature:
+You can't explicitly overload the `==` and `!=` operators in a record type. To change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable`1.Equals*?displayProperty=nameWithType> method with the following signature:
 
 ```csharp
 public virtual bool Equals(T? other);
@@ -104,15 +104,15 @@ public virtual bool Equals(T? other);
 
 ## C# language specification
 
-For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1214-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1215-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about equality of record types, see the [Equality members](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) section of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md).
+For more information about equality of record types, see the [Equality members](~/_csharpstandard/standard/classes.md#15162-equality-members) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
 - [C# operators and expressions](index.md)
-- <xref:System.IEquatable%601?displayProperty=nameWithType>
-- <xref:System.Object.Equals%2A?displayProperty=nameWithType>
-- <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>
+- <xref:System.IEquatable`1?displayProperty=nameWithType>
+- <xref:System.Object.Equals*?displayProperty=nameWithType>
+- <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType>
 - [Equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md)
 - [Comparison operators](comparison-operators.md)

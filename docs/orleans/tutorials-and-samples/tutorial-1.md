@@ -103,7 +103,7 @@ Add the following code to _Program.cs_ of the **Silo** project:
 
 The preceding code:
 
-- Configures the <xref:Microsoft.Extensions.Hosting.IHost> to use Orleans with the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans%2A> method.
+- Configures the <xref:Microsoft.Extensions.Hosting.IHost> to use Orleans with the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> method.
 - Specifies using the localhost clustering provider with the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.IPEndPoint,System.String,System.String)> method.
 - Runs the `host` and waits for the process to terminate by listening for <kbd>Ctrl</kbd>+<kbd>C</kbd> or `SIGTERM`.
 

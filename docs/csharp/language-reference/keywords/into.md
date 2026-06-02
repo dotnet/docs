@@ -2,10 +2,10 @@
 description: "into - C# Reference"
 title: "into keyword"
 ms.date: 01/21/2026
-f1_keywords: 
+f1_keywords:
   - "into_CSharpKeyword"
   - "into"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "into keyword [C#]"
 ---
 # into (C# Reference)
@@ -14,7 +14,7 @@ Use the `into` contextual keyword to create a temporary identifier that stores t
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following example shows how to use the `into` keyword to create a temporary identifier named `fruitGroup`, which has an inferred type of `IGrouping`. By using this identifier, you can call the <xref:System.Linq.Enumerable.Count%2A> method on each group and select only those groups that contain two or more words.
+The following example shows how to use the `into` keyword to create a temporary identifier named `fruitGroup`, which has an inferred type of `IGrouping`. By using this identifier, you can call the <xref:System.Linq.Enumerable.Count*> method on each group and select only those groups that contain two or more words.
 
 :::code language="csharp" source="./snippets/into.cs" id="18":::
 

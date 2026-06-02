@@ -29,7 +29,8 @@ By default, the comparison of an input string with any literal characters in a r
 | <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> | Not available | Change the search direction. Search moves from right to left instead of from left to right. | [Right-to-left mode](#right-to-left-mode) |
 | <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript> | Not available | Enable ECMAScript-compliant behavior for the expression. | [ECMAScript matching behavior](#ecmascript-matching-behavior) |
 | <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant> | Not available | Ignore cultural differences in language. | [Comparison using the invariant culture](#compare-using-the-invariant-culture) |
-| <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking> | Not available | Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)| [Nonbacktracking mode](#nonbacktracking-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking> | Not available | Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)| [NonBacktracking mode](#nonbacktracking-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine> | Not available | Make `^`, `$`, `\Z`, and `.` recognize all common newline sequences instead of only `\n`. (Available in .NET 11 and later versions.) | [AnyNewLine mode](#anynewline-mode) |
 
 ## Specify options
 
@@ -75,7 +76,7 @@ The following five regular expression options can be set both with the options p
 
 - <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType>
 
-The following five regular expression options can be set using the `options` parameter but cannot be set inline:
+The following seven regular expression options can be set using the `options` parameter but cannot be set inline:
 
 - <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>
 
@@ -87,16 +88,20 @@ The following five regular expression options can be set using the `options` par
 
 - <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>
 
+- <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType>
+
+- <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>
+
 ## Determine options
 
-You can determine which options were provided to a <xref:System.Text.RegularExpressions.Regex> object when it was instantiated by retrieving the value of the read-only <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property.
+You can determine which options were provided to a <xref:System.Text.RegularExpressions.Regex> object when it was instantiated by retrieving the value of the read-only <xref:System.Text.RegularExpressions.Regex.Options?displayProperty=nameWithType> property.
 
-To test for the presence of any option except <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, perform an AND operation with the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property and the <xref:System.Text.RegularExpressions.RegexOptions> value in which you are interested. Then test whether the result equals that <xref:System.Text.RegularExpressions.RegexOptions> value. The following example tests whether the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option has been set.
+To test for the presence of any option except <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, perform an AND operation with the value of the <xref:System.Text.RegularExpressions.Regex.Options?displayProperty=nameWithType> property and the <xref:System.Text.RegularExpressions.RegexOptions> value in which you are interested. Then test whether the result equals that <xref:System.Text.RegularExpressions.RegexOptions> value. The following example tests whether the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option has been set.
 
 [!code-csharp[Conceptual.Regex.Language.Options#19](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/determine1.cs#19)]
 [!code-vb[Conceptual.Regex.Language.Options#19](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/determine1.vb#19)]
 
-To test for <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, determine whether the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property is equal to <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, as the following example illustrates.
+To test for <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, determine whether the value of the <xref:System.Text.RegularExpressions.Regex.Options?displayProperty=nameWithType> property is equal to <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, as the following example illustrates.
 
 [!code-csharp[Conceptual.Regex.Language.Options#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/determine1.cs#20)]
 [!code-vb[Conceptual.Regex.Language.Options#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/determine1.vb#20)]
@@ -132,7 +137,7 @@ Because the <xref:System.Text.RegularExpressions.RegexOptions.None?displayProper
 
 The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.
 
-The following example defines a regular expression pattern, `\bthe\w*\b`, that matches all words starting with "the". Because the first call to the <xref:System.Text.RegularExpressions.Regex.Match%2A> method uses the default case-sensitive comparison, the output indicates that the string "The" that begins the sentence is not matched. It is matched when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>.
+The following example defines a regular expression pattern, `\bthe\w*\b`, that matches all words starting with "the". Because the first call to the <xref:System.Text.RegularExpressions.Regex.Match*> method uses the default case-sensitive comparison, the output indicates that the string "The" that begins the sentence is not matched. It is matched when the <xref:System.Text.RegularExpressions.Regex.Match*> method is called with options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>.
 
 [!code-csharp[Conceptual.Regex.Language.Options#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/case1.cs#1)]
 [!code-vb[Conceptual.Regex.Language.Options#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/case1.vb#1)]
@@ -150,7 +155,10 @@ By default, `$` will be satisfied only at the end of the input string. If you sp
 
 In neither case does `$` recognize the carriage return/line feed character combination (`\r\n`). `$` always ignores any carriage return (`\r`). To end your match with either `\r\n` or `\n`, use the subexpression `\r?$` instead of just `$`. Note that this will make the `\r` part of the match.
 
-The following example extracts bowlers' names and scores and adds them to a <xref:System.Collections.Generic.SortedList%602> collection that sorts them in descending order. The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method is called twice. In the first method call, the regular expression is `^(\w+)\s(\d+)$` and no options are set. As the output shows, because the regular expression engine cannot match the input pattern along with the beginning and end of the input string, no matches are found. In the second method call, the regular expression is changed to `^(\w+)\s(\d+)\r?$` and the options are set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>. As the output shows, the names and scores are successfully matched, and the scores are displayed in descending order.
+> [!TIP]
+> Starting with .NET 11, you can use <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> to make `^`, `$`, `\Z`, and `.` recognize all common newline sequences instead of only `\n`, removing the need for `\r?` workarounds. `AnyNewLine` also treats `\r\n` as an atomic newline sequence, so `\r` is never included in the match. For more information, see the [AnyNewLine mode](#anynewline-mode) section.
+
+The following example extracts bowlers' names and scores and adds them to a <xref:System.Collections.Generic.SortedList`2> collection that sorts them in descending order. The <xref:System.Text.RegularExpressions.Regex.Matches*> method is called twice. In the first method call, the regular expression is `^(\w+)\s(\d+)$` and no options are set. As the output shows, because the regular expression engine cannot match the input pattern along with the beginning and end of the input string, no matches are found. In the second method call, the regular expression is changed to `^(\w+)\s(\d+)\r?$` and the options are set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>. As the output shows, the names and scores are successfully matched, and the scores are displayed in descending order.
 
 [!code-csharp[Conceptual.Regex.Language.Options#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/multiline1.cs#3)]
 [!code-vb[Conceptual.Regex.Language.Options#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/multiline1.vb#3)]
@@ -197,7 +205,7 @@ is intended only to extract sentences that end with a period, exclamation point,
 
 Capturing groups that are not subsequently used can be expensive, because the regular expression engine must populate both the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects. As an alternative, you can use either the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> option or the `n` inline option to specify that the only valid captures are explicitly named or numbered groups that are designated by the `(?<`*name*`>` *subexpression*`)` construct.
 
-The following example displays information about the matches returned by the `\b\(?((\w+),?\s?)+[\.!?]\)?` regular expression pattern when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with and without the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> option. As the output from the first method call shows, the regular expression engine fully populates the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects with information about captured substrings. Because the second method is called with `options` set to <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType>, it does not capture information on groups.
+The following example displays information about the matches returned by the `\b\(?((\w+),?\s?)+[\.!?]\)?` regular expression pattern when the <xref:System.Text.RegularExpressions.Regex.Match*> method is called with and without the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> option. As the output from the first method call shows, the regular expression engine fully populates the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects with information about captured substrings. Because the second method is called with `options` set to <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType>, it does not capture information on groups.
 
 [!code-csharp[Conceptual.Regex.Language.Options#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/explicit1.cs#9)]
 [!code-vb[Conceptual.Regex.Language.Options#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit1.vb#9)]
@@ -246,7 +254,7 @@ However, this improvement in performance occurs only under the following conditi
 - A static regular expression is used in multiple calls to regular expression pattern-matching methods. (The performance improvement is possible because regular expressions used in static method calls are cached by the regular expression engine.)
 
 > [!NOTE]
-> The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the obsolete <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined, compiled regular expressions.
+> The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the obsolete <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined, compiled regular expressions.
 
 ## Ignore white space
 
@@ -370,7 +378,7 @@ The behavior of ECMAScript and canonical regular expressions differs in three ar
 
 By default, when the regular expression engine performs case-insensitive comparisons, it uses the casing conventions of the current culture to determine equivalent uppercase and lowercase characters.
 
-However, this behavior is undesirable for some types of comparisons, particularly when comparing user input to the names of system resources, such as passwords, files, or URLs. The following example illustrates such a scenario. The code is intended to block access to any resource whose URL is prefaced with **FILE://**. The regular expression attempts a case-insensitive match with the string by using the regular expression `$FILE://`. However, when the current system culture is tr-TR (Turkish-Türkiye), "I" is not the uppercase equivalent of "i". As a result, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method returns `false`, and access to the file is allowed.
+However, this behavior is undesirable for some types of comparisons, particularly when comparing user input to the names of system resources, such as passwords, files, or URLs. The following example illustrates such a scenario. The code is intended to block access to any resource whose URL is prefaced with **FILE://**. The regular expression attempts a case-insensitive match with the string by using the regular expression `$FILE://`. However, when the current system culture is tr-TR (Turkish-Türkiye), "I" is not the uppercase equivalent of "i". As a result, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> method returns `false`, and access to the file is allowed.
 
 [!code-csharp[Conceptual.Regex.Language.Options#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/culture1.cs#14)]
 [!code-vb[Conceptual.Regex.Language.Options#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#14)]
@@ -388,11 +396,11 @@ The following example is identical to the previous example, except that the stat
 [!code-csharp[Conceptual.Regex.Language.Options#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/culture1.cs#15)]
 [!code-vb[Conceptual.Regex.Language.Options#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#15)]
 
-## Nonbacktracking mode
+## NonBacktracking mode
 
 By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option, which was introduced in .NET 7, doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
 
-The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
+The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>, or <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
 
 - Atomic groups
 - Backreferences
@@ -404,6 +412,44 @@ The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayPro
 <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> also has a subtle difference with regards to execution. If a capture group is in a loop, most (non-.NET) regex engines only provide the last matched value for that capture. However, .NET's regex engine tracks all values that are captured inside a loop and provides access to them. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option is like most other regex implementations and only supports providing the final capture.
 
 For more information about backtracking, see [Backtracking in regular expressions](backtracking-in-regular-expressions.md).
+
+## AnyNewLine mode
+
+By default, .NET's regular expression engine treats only `\n` as a newline character. The anchors `^` and `$` (in <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> mode), `\Z`, and the wildcard `.` all use `\n` as the sole line boundary. This means that `$` doesn't match before `\r\n` (Windows-style line endings), and `.` matches `\r` but not `\n` (unless <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> is enabled, in which case `.` matches all characters), which leads to common bugs when processing text with mixed or non-Unix line endings.
+
+The <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType> option, which was introduced in .NET 11, makes these constructs recognize all common newline sequences: `\r\n` (CR+LF), `\r` (CR), `\n` (LF), `\u0085` (NEL), `\u2028` (LS), and `\u2029` (PS). This is consistent with [Unicode TR18 RL1.6](https://unicode.org/reports/tr18/#RL1.6).
+
+For example, without `AnyNewLine`, matching lines in a string with Windows line endings requires manual workarounds like `\r?$`:
+
+```csharp
+// BUG: .+$ captures trailing \r on Windows line endings
+var match = Regex.Match("foo\r\nbar", @".+$", RegexOptions.Multiline);
+Console.WriteLine(match.Value); // "foo\r" -- not "foo"!
+```
+
+With `AnyNewLine`, the anchors handle all newline types automatically:
+
+```csharp
+var match = Regex.Match("foo\r\nbar", @".+$",
+    RegexOptions.Multiline | RegexOptions.AnyNewLine);
+Console.WriteLine(match.Value); // "foo"
+```
+
+The following table summarizes how `AnyNewLine` affects each construct:
+
+| Construct            | Default behavior                     | With `AnyNewLine`                                                     |
+|----------------------|--------------------------------------|-----------------------------------------------------------------------|
+| `.` (default)        | Matches any character except `\n`    | Matches any character except `\r`, `\n`, `\u0085`, `\u2028`, `\u2029` |
+| `$` (Multiline)      | Matches before `\n`                  | Matches before `\r\n`, `\r`, `\n`, `\u0085`, `\u2028`, `\u2029`       |
+| `^` (Multiline)      | Matches after `\n`                   | Matches after `\r\n`, `\r`, `\n`, `\u0085`, `\u2028`, `\u2029`        |
+| `$` (default) / `\Z` | Matches before `\n` at end of string | Matches before any newline sequence at end of string                  |
+
+Key design points:
+
+- **`\r\n` is treated atomically**: `$` matches before the full `\r\n` sequence, never between `\r` and `\n`.
+- **`Singleline` takes precedence**: `.` with both `Singleline` and `AnyNewLine` matches every character (including newlines), consistent with `Singleline`'s existing behavior.
+- **`\A` and `\z` are unaffected**: Absolute start-of-string and end-of-string anchors don't change.
+- **Incompatible options**: `AnyNewLine` cannot be combined with <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. Attempting to do so throws an <xref:System.ArgumentOutOfRangeException>.
 
 ## See also
 

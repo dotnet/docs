@@ -24,7 +24,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
 
 ### Using the AssemblyName class
 
-1. Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A?displayProperty=nameWithType> method, passing the full file path and name of the file you are testing.
+1. Call the <xref:System.Reflection.AssemblyName.GetAssemblyName*?displayProperty=nameWithType> method, passing the full file path and name of the file you are testing.
 
 2. If a <xref:System.BadImageFormatException> exception is thrown, the file is not an assembly.
 
@@ -33,7 +33,7 @@ This example tests a DLL to see if it is an assembly.
 [!code-csharp[](snippets/identify/csharp/ExampleAssemblyName.cs#AssemblyName)]
 [!code-vb[](snippets/identify/visual-basic/ExampleAssemblyName.vb#AssemblyName)]
 
-The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.
+The <xref:System.Reflection.AssemblyName.GetAssemblyName*> method loads the test file, and then releases it once the information is read.
 
 ### Using the PEReader class
 
@@ -48,11 +48,11 @@ The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the te
 
 4. Check the value of the <xref:System.Reflection.PortableExecutable.PEReader.HasMetadata> property. If the value is `false`, the file is not an assembly.
 
-5. Call the <xref:System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader%2A> method on the PE reader instance to create a metadata reader.
+5. Call the <xref:System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader*> method on the PE reader instance to create a metadata reader.
 
 6. Check the value of the <xref:System.Reflection.Metadata.MetadataReader.IsAssembly> property. If the value is `true`, the file is an assembly.
 
-Unlike the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method, the <xref:System.Reflection.PortableExecutable.PEReader> class does not throw an exception on native Portable Executable (PE) files. This enables you to avoid the extra performance cost caused by exceptions when you need to check such files. You still need to handle exceptions in case the file does not exist or is not a PE file.
+Unlike the <xref:System.Reflection.AssemblyName.GetAssemblyName*> method, the <xref:System.Reflection.PortableExecutable.PEReader> class does not throw an exception on native Portable Executable (PE) files. This enables you to avoid the extra performance cost caused by exceptions when you need to check such files. You still need to handle exceptions in case the file does not exist or is not a PE file.
 
 This example shows how to determine if a file is an assembly using the <xref:System.Reflection.PortableExecutable.PEReader> class.
 

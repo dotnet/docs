@@ -49,9 +49,9 @@ Specifies the settings for a Windows credential to be used to represent the clie
 - <xref:System.ServiceModel.Configuration.WindowsClientElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Description.ClientCredentials>
-- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Windows%2A>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Windows*>
 - <xref:System.ServiceModel.Description.ClientCredentials>
-- <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials.Windows*>
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - [Securing Clients](../../../wcf/securing-clients.md)
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)

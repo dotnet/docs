@@ -2,10 +2,10 @@
 description: "Learn more about: How to: Restore time zones from an embedded resource"
 title: "How to: Restore time zones from an embedded resource"
 ms.date: "04/10/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time zones [.NET], deserializing"
   - "time zones [.NET], restoring"
 ms.topic: how-to
@@ -16,17 +16,17 @@ This topic describes how to restore time zones that have been saved in a resourc
 
 ### To deserialize a TimeZoneInfo object from an embedded resource
 
-1. If the time zone to be retrieved is not a custom time zone, try to instantiate it by using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method.
+1. If the time zone to be retrieved is not a custom time zone, try to instantiate it by using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById*> method.
 
 2. Instantiate a <xref:System.Resources.ResourceManager> object by passing the fully qualified name of the embedded resource file and a reference to the assembly that contains the resource file.
 
    If you cannot determine the fully qualified name of the embedded resource file, use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's manifest. An `.mresource` entry identifies the resource. In the example, the resource's fully qualified name is `SerializeTimeZoneData.SerializedTimeZones`.
 
-   If the resource file is embedded in the same assembly that contains the time zone instantiation code, you can retrieve a reference to it by calling the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> method.
+   If the resource file is embedded in the same assembly that contains the time zone instantiation code, you can retrieve a reference to it by calling the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.GetExecutingAssembly*> method.
 
-3. If the call to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method fails, or if a custom time zone is to be instantiated, retrieve a string that contains the serialized time zone by calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> method.
+3. If the call to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById*> method fails, or if a custom time zone is to be instantiated, retrieve a string that contains the serialized time zone by calling the <xref:System.Resources.ResourceManager.GetString*?displayProperty=nameWithType> method.
 
-4. Deserialize the time zone data by calling the <xref:System.TimeZoneInfo.FromSerializedString%2A> method.
+4. Deserialize the time zone data by calling the <xref:System.TimeZoneInfo.FromSerializedString*> method.
 
 ## Example
 
@@ -35,9 +35,9 @@ The following example deserializes a <xref:System.TimeZoneInfo> object stored in
 [!code-csharp[TimeZone2.Serialization#3](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#3)]
 [!code-vb[TimeZone2.Serialization#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#3)]
 
-This code illustrates exception handling to ensure that a <xref:System.TimeZoneInfo> object required by the application is present. It first tries to instantiate a <xref:System.TimeZoneInfo> object by retrieving it from the registry using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method. If the time zone cannot be instantiated, the code retrieves it from the embedded resource file.
+This code illustrates exception handling to ensure that a <xref:System.TimeZoneInfo> object required by the application is present. It first tries to instantiate a <xref:System.TimeZoneInfo> object by retrieving it from the registry using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById*> method. If the time zone cannot be instantiated, the code retrieves it from the embedded resource file.
 
-Because data for custom time zones (time zones instantiated by using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method) are not stored in the registry, the code does not call the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> to instantiate the time zone for Palmer, Antarctica. Instead, it immediately looks to the embedded resource file to retrieve a string that contains the time zone's data before it calls the <xref:System.TimeZoneInfo.FromSerializedString%2A> method.
+Because data for custom time zones (time zones instantiated by using the <xref:System.TimeZoneInfo.CreateCustomTimeZone*> method) are not stored in the registry, the code does not call the <xref:System.TimeZoneInfo.FindSystemTimeZoneById*> to instantiate the time zone for Palmer, Antarctica. Instead, it immediately looks to the embedded resource file to retrieve a string that contains the time zone's data before it calls the <xref:System.TimeZoneInfo.FromSerializedString*> method.
 
 ## Compiling the code
 

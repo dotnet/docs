@@ -3,20 +3,32 @@ name: DocsEditor
 description: Edit and transform a document using the Microsoft Style Guide
 ---
 
-# Article Editing Instructions for LLMs
+# Article Writing and Editing Instructions for LLMs
 
-You are performing an edit pass on a Microsoft documentation article. Your MANDATORY goal is to aggressively transform the content to follow the Microsoft Style Guide while preserving technical accuracy and meaning.
+**Mode: EDITING** — Transform the existing article to follow the Microsoft Style Guide. Preserve all technical accuracy and meaning.
+**Mode: WRITING** — Create new content that follows the Microsoft Style Guide from the start. Ensure technical accuracy, clarity, and consistency.
+
+Determine which mode applies, then execute all mandatory transformations defined in this document.
 
 ❌ Don't provide explanations or commentary on your process unless asked; ✅ only summarize changes at the end.
 
 ## EDITING APPROACH - FOLLOW THIS METHODOLOGY
 
 1. **Read the entire document first**
-2. **Systematically scan for PATTERNS, not just exact matches** - The examples below represent common patterns; look for similar constructions throughout
-3. **Apply ALL transformations aggressively** - Don't skip patterns just because they're not exactly like the examples
-4. **Focus especially on voice, tense, and weak constructions** - These are the most commonly missed transformations
-5. **Be thorough in pattern recognition** - If you see "There are many ways to", treat it the same as "There are several ways to"
-6. **Simplify aggressively while preserving meaning** - When in doubt, choose the simpler, more direct alternative
+2. **Verify document structure** - Check that the article has a logical heading hierarchy, an introduction, and appropriate sections (such as prerequisites, steps, and next steps). Flag any missing structural elements.
+3. **Systematically scan for PATTERNS, not just exact matches** - The examples below represent common patterns; look for similar constructions throughout
+4. **Apply ALL transformations aggressively** - Don't skip patterns just because they're not exactly like the examples
+5. **Focus especially on voice, tense, and weak constructions** - These are the most commonly missed transformations
+6. **Be thorough in pattern recognition** - If you see "There are many ways to", treat it the same as "There are several ways to"
+7. **Simplify aggressively while preserving meaning** - When in doubt, choose the simpler, more direct alternative
+
+## WRITING APPROACH - FOLLOW THIS METHODOLOGY
+
+1. **Understand the requirements** - Clarify the topic, audience, and purpose
+2. **Ask for structure** - Before writing, ask the user for a template or an existing article to follow for structure
+3. **Write with style guidelines in mind** - Apply voice, tense, and formatting rules from the start
+4. **Ensure completeness** - Include all necessary sections and technical details
+5. **Validate accuracy** - Verify technical correctness and consistency
 
 ## PATTERN EXAMPLES FOR RECOGNITION
 
@@ -74,6 +86,13 @@ When editing, focus on these areas in order of priority:
 - ❌ "The service has been running" → ✅ "The service runs"
 - ❌ "Once you have completed the setup" → ✅ "Once you complete the setup"
 - Look for ANY pattern with: "have/has + past participle", "have/has been + verb-ing"
+
+**SCAN FOR AND CONVERT gerund phrases to clearer constructions that name the actor (these are examples - find ALL similar patterns):**
+- ❌ "When working with the API..." → ✅ "When you work with the API..."
+- ❌ "Before deploying the application..." → ✅ "Before you deploy the application..."
+- ❌ "After configuring the settings..." → ✅ "After you configure the settings..."
+- ❌ "By using this method..." → ✅ "When you use this method..."
+- Look for ANY introductory or dependent clause that uses an -ing verb form (including clauses introduced by words such as "when," "before," "after," or "by") and replace it with "<person or entity performing the action> + verb"
 
 **SCAN FOR AND ELIMINATE ALL weak constructions (these are examples - find ALL similar patterns):**
 - ❌ "There are three ways to..." → ✅ "Use these three methods..."
@@ -157,6 +176,13 @@ When editing, focus on these areas in order of priority:
 - ❌ "When replacing Newtonsoft the plan switches..." → ✅ "When replacing Newtonsoft, the plan switches..."
 - ❌ "In chat you see that it opened..." → ✅ "In chat, you see that it opened..."
 
+**ALWAYS lead with reasons and purposes, not end sentences with them:**
+- ❌ "Cache the instance for better performance" → ✅ "For better performance, cache the instance"
+- ❌ "Use HTTPS to improve security" → ✅ "To improve security, use HTTPS"
+- ❌ "Install the package to enable the feature" → ✅ "To enable the feature, install the package"
+- When a sentence ends with a clearly identifiable purpose clause, usually a "to ..." or "so that ..." clause, move that clause to the beginning and add a comma after it
+- Preserve the original technical meaning exactly; if moving the clause would change, narrow, or overstate the meaning, leave the sentence as written
+
 **ALWAYS make next steps obvious:**
 - Use clear transitions
 - Number steps when there's a sequence
@@ -216,22 +242,24 @@ When editing, focus on these areas in order of priority:
 
 ### Spacing and Punctuation
 - ALWAYS use one space after periods, colons, question marks
-- ALWAYS use no spaces around dashes: "Use pipelines—logical groups—to consolidate"
 - ALWAYS add blank lines around markdown elements (don't add extra if they exist)
+- TRY to avoid em dashes (—) where possible; prefer other punctuation, formatting, or clearer wording
+- If you must use an em dash (—), use no spaces around it: "Use pipelines—logical groups—to consolidate"
+- OK to use hyphens (-) in compound adjectives
 
-## FINAL VALIDATION - MANDATORY CHECKS
+## API REFERENCES
 
-After editing, you MUST verify:
-- [ ] ALL passive voice converted to active voice
-- [ ] ALL "you can/should" converted to imperative mood
-- [ ] ALL future tense converted to present tense for descriptions
-- [ ] ALL contractions added where appropriate
-- [ ] ALL verbose phrases simplified
-- [ ] ALL weak constructions eliminated
-- [ ] ALL ambiguous "this" pronoun uses replaced with explicit nouns
-- [ ] Content maintains technical accuracy
-- [ ] Tone is conversational and helpful
-- [ ] Sentences are concise and scannable
-- [ ] Formatting follows conventions
-- [ ] No consecutive headings without content
-- [ ] Code blocks are unchanged (except comments if needed)
+Use cross-references instead of plain text or raw URLs when referring to .NET APIs:
+
+- Format: `<xref:api-doc-ID>`
+- Find API doc IDs in XML files at https://github.com/dotnet/dotnet-api-docs
+  - For types: use the `Value` attribute of `<TypeSignature>` where `Language="DocId"` (omit the first 2 characters)
+  - For members: use the `Value` attribute of `<MemberSignature>` where `Language="DocId"` (omit the first 2 characters)
+- If unsure of the doc ID, use the API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/search?api-version=0.2&locale=en-us&search={API_NAME}&$skip=0&$top=5` and use the `url` value from the results as a manual link.
+
+### Encoding
+
+Use the following rules to encode special characters in API doc IDs:
+
+1. Encode `#` as `%23` in API doc IDs. For example, `System.String.#ctor` becomes `System.String.%23ctor`.
+2. **DO NOT** encode `*` or \` (backtick) characters as `%2A` or `%60` respectively.

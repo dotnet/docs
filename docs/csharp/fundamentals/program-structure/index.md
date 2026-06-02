@@ -37,7 +37,7 @@ Starting with C# 14 and .NET 10, *file-based apps* let you run a program contain
 :::code language="csharp" source="./snippets/file-based-program/hello-world.cs":::
 
 > [!NOTE]
-> The `#!` line enables Unix shells to run the file directly. On any Unix system, set the *execute* (`+x`) permission and run the file from the command line.
+> The `#!` line enables Unix operating systems to execute the file directly (for example, `./hello-world.cs`). This requires the *execute* permission to be set (`chmod +x <file>`).
 
 File-based apps support all C# syntax and can use [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) to configure the build system. Use file-based apps for small command-line utilities, prototypes, and experiments. A file-based app consists of a single file in a directory:
 
@@ -104,7 +104,7 @@ A *statement* performs an action. Statements control program flow, declare varia
 - `if (condition) { /* code */ }` (conditional statement)
 - `return result;` (return statement)
 
-Statements often contain expressions, and expressions can nest inside other expressions. For example, the following declaration statement assigns `f` to the result of an addition expression. That addition expression adds the results of two method call expressions:
+Statements often contain expressions, and expressions can nest inside other expressions. For example, the following declaration statement assigns `maxResult` to the result of an addition expression. That addition expression adds the results of two method call expressions:
 
 ```csharp
 var maxResult = Math.Max(a, b) + Math.Max(c, d);

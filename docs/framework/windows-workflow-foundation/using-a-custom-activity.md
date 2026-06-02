@@ -19,4 +19,4 @@ Activities that derive from <xref:System.Activities.Activity> or its subclasses 
 
 3. To use the custom activity in the designer, locate the custom activity in the toolbox, and drag the activity onto the designer surface.
 
-4. To use the custom activity in code, add a `using` directive that refers to the custom activity project, and pass a new instance of the activity to <xref:System.Activities.WorkflowInvoker.Invoke%2A>.
+4. To use the custom activity in code, add a `using` directive that refers to the custom activity project, and pass a new instance of the activity to <xref:System.Activities.WorkflowInvoker.Invoke*>.

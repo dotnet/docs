@@ -28,7 +28,7 @@ C# 8.0 is also part of this release, which includes the [nullable reference type
 
 Tutorials related to C# 8.0 language features:
 
-- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
+- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/fundamentals/tutorials/nullable-reference-types.md)
 - [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/fundamentals/tutorials/pattern-matching.md)
 
@@ -446,7 +446,7 @@ For more information, see the [ranges and indices tutorial](../../csharp/tutoria
 
 ### Async streams
 
-The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
+The <xref:System.Collections.Generic.IAsyncEnumerable`1> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable`1>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
 
 The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
 

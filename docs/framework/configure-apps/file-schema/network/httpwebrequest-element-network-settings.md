@@ -79,5 +79,5 @@ Customizes Web request parameters.
 
 ## See also
 
-- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength%2A>
+- <xref:System.Net.HttpWebRequest.MaximumResponseHeadersLength*>
 - [Network Settings Schema](index.md)

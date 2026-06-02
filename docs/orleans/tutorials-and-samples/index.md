@@ -59,7 +59,7 @@ A social network pub/sub system where users send short text messages to each oth
 ### Chirper demonstrates
 
 - How to build a simplified social media / social network application using Orleans
-- How to store state within a grain using grain persistence (<xref:Orleans.Runtime.IPersistentState%601>)
+- How to store state within a grain using grain persistence (<xref:Orleans.Runtime.IPersistentState`1>)
 - Grains implementing multiple grain interfaces
 - Reentrant grains, allowing multiple grain calls to execute concurrently in a single-threaded, interleaving fashion
 - Using a *grain observer* (<xref:Orleans.IGrainObserver>) to receive push notifications from grains

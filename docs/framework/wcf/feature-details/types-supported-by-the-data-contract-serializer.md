@@ -1,6 +1,6 @@
 ---
 title: "Types Supported by the Data Contract Serializer"
-description: See the complete list of types that the WCF data contract serializer supports for serialization and deserialization. 
+description: See the complete list of types that the WCF data contract serializer supports for serialization and deserialization.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "serialization [WCF], supported types"
@@ -14,7 +14,7 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
 
 - Data contract types. These are types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has been applied. New custom types that represent business objects should normally be created as data contract types. For more information, see [Using Data Contracts](using-data-contracts.md) and [Serializable Types](serializable-types.md).
 
-- Collection types. These are types that represent lists of data. These can be regular arrays of types, or collection types, such as <xref:System.Collections.ArrayList> and <xref:System.Collections.Generic.Dictionary%602>. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute can be used to customize the serialization of these types, but is not required. For more information, see [Collection Types in Data Contracts](collection-types-in-data-contracts.md).
+- Collection types. These are types that represent lists of data. These can be regular arrays of types, or collection types, such as <xref:System.Collections.ArrayList> and <xref:System.Collections.Generic.Dictionary`2>. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute can be used to customize the serialization of these types, but is not required. For more information, see [Collection Types in Data Contracts](collection-types-in-data-contracts.md).
 
 - Enumeration types. Enumerations, including flag enumerations, are serializable. Optionally, enumeration types can be marked with the <xref:System.Runtime.Serialization.DataContractAttribute> attribute, in which case every member that participates in serialization must be marked with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute. Members that are not marked are not serialized. For more information, see [Enumeration Types in Data Contracts](enumeration-types-in-data-contracts.md).
 
@@ -33,7 +33,7 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
 
 The following is a list of limitations when using certain types in partial trust mode scenarios:
 
-- To serialize or deserialize a type that implements <xref:System.Runtime.Serialization.ISerializable> in partially-trusted code using the <xref:System.Runtime.Serialization.DataContractSerializer> requires the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> and <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> permissions.
+- To serialize or deserialize a type that implements <xref:System.Runtime.Serialization.ISerializable> in partially-trusted code using the <xref:System.Runtime.Serialization.DataContractSerializer> requires the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter*> and <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode*> permissions.
 
 - When running WCF code in [Partial Trust](partial-trust.md) mode, the serialization and deserialization of `readonly` fields (both `public` and `private`) is not supported. This is because the generated IL is unverifiable and therefore requires elevated permissions.
 
@@ -47,7 +47,7 @@ The following is a list of limitations when using certain types in partial trust
 
   - Known types must be specified in code or machine-level configuration (`Machine.config`). Known types cannot be specified in application-level configuration for security reasons.
 
-- Types that implement <xref:System.Runtime.Serialization.IObjectReference> throw an exception in a partially-trusted environment because the <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A> method requires the security permission `[SecurityPermission(SecurityAction.LinkDemand, Flags=SecurityPermissionFlag.SerializationFormatter)]`.
+- Types that implement <xref:System.Runtime.Serialization.IObjectReference> throw an exception in a partially-trusted environment because the <xref:System.Runtime.Serialization.IObjectReference.GetRealObject*> method requires the security permission `[SecurityPermission(SecurityAction.LinkDemand, Flags=SecurityPermissionFlag.SerializationFormatter)]`.
 
 ## Additional Notes on Serialization
 
@@ -63,7 +63,7 @@ The following rules also apply to types supported by the Data Contract Serialize
 
 - The <xref:System.Runtime.Serialization.DataContractSerializer> does not support the programming model used by the <xref:System.Xml.Serialization.XmlSerializer> and ASP.NET Web services. In particular, it does not support attributes like <xref:System.Xml.Serialization.XmlElementAttribute> and <xref:System.Xml.Serialization.XmlAttributeAttribute>. To enable support for this programming model, WCF must be switched to use the <xref:System.Xml.Serialization.XmlSerializer> instead of the <xref:System.Runtime.Serialization.DataContractSerializer>.
 
-- The <xref:System.DBNull> type is treated in a special way. It is a singleton type, and upon deserialization the deserializer respects the singleton constraint and points all `DBNull` references to the singleton instance. Because `DBNull` is a serializable type, it demands <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> permission.
+- The <xref:System.DBNull> type is treated in a special way. It is a singleton type, and upon deserialization the deserializer respects the singleton constraint and points all `DBNull` references to the singleton instance. Because `DBNull` is a serializable type, it demands <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter*> permission.
 
 ## See also
 

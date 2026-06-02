@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 11/06/2025
+ms.date: 04/13/2026
 ---
 
 # Cross-platform targeting
@@ -24,12 +24,10 @@ These goals don't always require the same approach. If your target applications 
 
 For more information about how .NET compares to .NET Standard, see [.NET 5 and .NET Standard](../net-standard.md#net-5-and-net-standard).
 
-![.NET Standard](./media/cross-platform-targeting/platforms-netstandard.png)
-
 If your project targets .NET or .NET Standard and compiles successfully, it doesn't guarantee that the library will run successfully on all platforms:
 
 - Platform-specific APIs will fail on other platforms. For example, <xref:Microsoft.Win32.Registry?displayProperty=nameWithType> will succeed on Windows and throw <xref:System.PlatformNotSupportedException> when used on any other OS.
-- APIs can behave differently. For example, reflection APIs have different performance characteristics when an application uses ahead-of-time compilation on iOS or UWP.
+- APIs can behave differently. For example, reflection APIs have different performance characteristics when an application uses ahead-of-time compilation on iOS or Android.
 
 > [!TIP]
 > The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
@@ -52,7 +50,7 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 ❌ DO NOT include a .NET Standard target if the library relies on a platform-specific app model.
 
-> For example, a UWP control toolkit library depends on an app model that is only available on UWP. App model specific APIs aren't available in .NET Standard.
+> For example, a WinUI control toolkit library depends on an app model that is only available on Windows. App model specific APIs aren't available in .NET Standard.
 
 ❌ DO NOT publish for `netstandard2.0` if your project or dependencies multi-target.
 
@@ -62,9 +60,9 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 Sometimes you need to access framework-specific APIs from your libraries. The best way to call framework-specific APIs is to use multi-targeting, which builds your project for many [.NET target frameworks](../frameworks.md) rather than for just one.
 
-To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With you multi-target, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet will pick the appropriate implementation. Your .NET Standard library serves as the fallback library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
+To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With multi-targeting, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet picks the appropriate implementation. Your .NET Standard library serves as the fallback library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
 
-![NuGet package with multiple assemblies](./media/cross-platform-targeting/nuget-package-multiple-assemblies.png)
+For example, a NuGet package that multi-targets `netstandard2.0` and `net8.0` contains separate assemblies for each target. NuGet selects the best-matching assembly for each consumer: .NET 8 applications use the `net8.0` assembly, while .NET Framework and older .NET applications fall back to the `netstandard2.0` assembly.
 
 ✔️ CONSIDER targeting .NET implementations in addition to .NET Standard.
 
@@ -80,8 +78,8 @@ public static class GpsLocation
     {
 #if NET462
         return CallDotNetFrameworkApi();
-#elif WINDOWS_UWP
-        return CallUwpApi();
+#elif NET8_0_WINDOWS
+        return CallWindowsApi();
 #else
         throw new PlatformNotSupportedException();
 #endif
@@ -93,7 +91,7 @@ public static class GpsLocation
     {
         get
         {
-#if NET462 || WINDOWS_UWP
+#if NET462 || NET8_0_WINDOWS
             return true;
 #else
             return false;

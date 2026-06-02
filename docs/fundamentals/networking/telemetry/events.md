@@ -456,6 +456,6 @@ If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggesti
 [`INetSecurityTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NetSecurity/INetSecurityTelemetryConsumer.cs
 [`ISocketsTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Sockets/ISocketsTelemetryConsumer.cs
 [`IKestrelTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Kestrel/IKestrelTelemetryConsumer.cs
-[`AsyncLocal`]: xref:System.Threading.AsyncLocal%601
+[`AsyncLocal`]: xref:System.Threading.AsyncLocal`1
 [`ActivityID`]: ../../../core/diagnostics/eventsource-activity-ids.md
 [microsoft/reverse-proxy issue]: https://github.com/microsoft/reverse-proxy/issues/new

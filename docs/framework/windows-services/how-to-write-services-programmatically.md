@@ -18,9 +18,9 @@ If you choose not to use the Windows Service project template, you can write you
 
 - You must set up your service class to inherit from the <xref:System.ServiceProcess.ServiceBase> class.
 
-- You must create a `Main` method for your service project that defines the services to run and calls the <xref:System.ServiceProcess.ServiceBase.Run%2A> method on them.
+- You must create a `Main` method for your service project that defines the services to run and calls the <xref:System.ServiceProcess.ServiceBase.Run*> method on them.
 
-- You must override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures and fill in any code you want them to run.
+- You must override the <xref:System.ServiceProcess.ServiceBase.OnStart*> and <xref:System.ServiceProcess.ServiceBase.OnStop*> procedures and fill in any code you want them to run.
 
 ### To write a service programmatically
 
@@ -49,7 +49,7 @@ If you choose not to use the Windows Service project template, you can write you
      [!code-csharp[VbRadconService#9](./snippets/MyNewService/csharp/MyNewService.cs#9)]
      [!code-vb[VbRadconService#9](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#9)]
 
-5. Override the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, and define any processing you want to occur when your service is started.
+5. Override the <xref:System.ServiceProcess.ServiceBase.OnStart*> method, and define any processing you want to occur when your service is started.
 
      [!code-csharp[VbRadconService#10](./snippets/MyNewService/csharp/MyNewService.cs#10)]
      [!code-vb[VbRadconService#10](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#10)]

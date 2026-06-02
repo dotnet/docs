@@ -15,8 +15,8 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet restore [<PROJECT>|<SOLUTION>|<FILE>]
-  [-a|--arch <ARCHITECTURE>] [--configfile <FILE>] [--disable-build-servers]
-  [--disable-parallel] [-f|--force] [--force-evaluate]
+  [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>] [--configfile <FILE>]
+  [--disable-build-servers] [--disable-parallel] [-f|--force] [--force-evaluate]
   [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>]
   [--locked-mode] [--no-dependencies] [--no-http-cache]
   [--os <OS>] [--packages <PACKAGES_DIRECTORY>]
@@ -92,6 +92,8 @@ There are three specific settings that `dotnet restore` ignores:
 ## Options
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
+
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
 - [!INCLUDE [configfile](includes/cli-configfile.md)]
 

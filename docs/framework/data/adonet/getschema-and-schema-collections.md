@@ -18,7 +18,7 @@ The `Connection` classes in each of the .NET Framework managed providers impleme
 
 ### Retrieving Schema Collections Example
 
- The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database:
+ The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema*> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database:
 
 ```vb
 Imports System.Data.SqlClient

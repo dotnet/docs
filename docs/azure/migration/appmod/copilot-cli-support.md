@@ -1,229 +1,273 @@
 ---
 title: Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
-description: Overview of migrating .NET applications to Azure using GitHub Copilot modernization in Copilot CLI.
+description: Overview of migrating .NET applications to Azure using GitHub Copilot modernization plugin in Copilot CLI.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
-ms.date: 11/11/2025
+ms.date: 05/14/2026
 ms.reviewer: jessiehuang
 ---
 
-# Migrate .NET apps to Azure using GitHub Copilot modernization in Copilot CLI
+# Migrate .NET apps to Azure by using GitHub Copilot modernization in Copilot CLI
 
 ## Overview
 
-Learn how to migrate .NET applications to Azure with **GitHub Copilot modernization** in the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
+Learn how to migrate .NET applications to Azure by using the **GitHub Copilot modernization** plugin in [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
 
->[!NOTE]
+The plugin provides an autonomous, multi-agent workflow that assesses your .NET application, generates an executable modernization plan, and carries out the migration—all from the terminal. It supports Azure migrations, CVE vulnerability fixes, and application rearchitecture.
+
+> [!NOTE]
 > GitHub Copilot CLI is available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 > If you receive Copilot through an organization, an admin must enable the Copilot CLI policy in the organization settings.
 
-## Why use Copilot CLI with modernization
+## What you can do
 
-- Run modernization tasks from the terminal - no need to switch to an IDE.
-- Use interactive (human-in-the-loop) and batch workflows.
+| Capability | Description |
+|---|---|
+| **.NET migration to Azure** | Assess and migrate .NET applications to Azure services (Service Bus, Azure SQL, Redis, Key Vault, Application Insights, Managed Identity), including NuGet security audits and ASP.NET-to-Azure migrations |
+| **CVE and vulnerability fixing** | Scan and fix CVE vulnerabilities in NuGet dependencies |
+| **Application rearchitecture** | Structural rewrites such as monolith-to-microservices decomposition, legacy UI modernization, and module extraction |
 
 ## Prerequisites
 
 - [Install Copilot CLI](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli).
 - A GitHub Copilot subscription. See [Copilot plans](https://github.com/features/copilot/plans?ref_product=copilot).
-- [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
 
-## Get started
+## Install the plugin
 
-1. In a terminal, navigate to the .NET project folder containing the code you want to work on.
-1. Run `copilot` to start Copilot CLI.
+1. In a terminal, run `copilot` to start Copilot CLI.
 
     ```bash
     copilot
     ```
 
-    :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of modernization entrance in Copilot CLI.":::
+1. Add the marketplace and install the plugin:
 
-    Copilot asks you to confirm that you trust the files in this folder. For details, see [Using Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#trusted-directories).
+    ```bash
+    copilot plugin marketplace add microsoft/github-copilot-modernization
+    copilot plugin install github-copilot-modernization@github-copilot-modernization
+    ```
 
-    Choose one of the options:
-
-    - **Yes, proceed**: Copilot can work with the files in this location for this session only.
-    - **Yes, and remember this folder for future sessions**: Trust the files in this folder for this and future sessions. You won't be asked again when you start Copilot CLI here. Only choose this option if you are sure it will always be safe for Copilot to work with files in this location.
-    - **No, exit (Esc)**: End the Copilot CLI session.
-
-### Add the MCP Server
-
-1. Run `/mcp add` in Copilot CLI using the configuration below. For example, here are two ways to add the .NET migration MCP server:
+1. Verify the plugin is installed by listing installed plugins:
 
     ```text
-    /mcp add DotNetAppModMcpServer-migrate
+    /plugin list
     ```
 
-1. Fill the fields as follows:
+    You should see `github-copilot-modernization:modernize` in the list.
 
-    - Server Type: Local
-    - Command: `dnx Microsoft.AppModernization.McpServer.DotNet.Migration --yes --source https://api.nuget.org/v3/index.json`
-    - Environment Variables: Leave empty.
-    - Tools: Use the default value `*`.
+## Update the plugin
 
-    Or update the `~/.copilot/mcp-config.json` file with the following information. For details, see [Add an MCP server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#add-an-mcp-server).
+To update the plugin when a new version is available, run:
 
-    ```json
-    {
-      "mcpServers": {
-        "DotNetAppModMcpServer-migrate": {
-          "type": "local",
-          "command": "dnx",
-          "tools": [
-            "*"
-          ],
-          "args": [
-            "Microsoft.AppModernization.McpServer.DotNet.Migration",
-            "--yes",
-            "--source",
-            "https://api.nuget.org/v3/index.json"
-          ]
-        }
-      }
-    }
-    ```
-
-1. Run `/mcp show` to confirm the MCP server configuration.
-
-    ```text
-    /mcp show
-    ```
-
-### Configure a custom agent
-
-1. Create a file in the local `~/.copilot/agents` directory named `modernize-azure-dotnet.agent.md`.
-1. Add the following content to define a User-level custom agent.
-
-    For more information, visit [Use custom agents in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents).
-
-    ```text
-    ---
-    # .NET modernize to azure assistant - Custom GitHub Copilot Agent
-    # This agent helps modernize .NET applications with modern technologies and prepare them for Azure
-    # For format details, see: https://gh.io/customagents/config
-
-    name: modernize-azure-dotnet
-    description: Expert assistant for modernizing .NET applications with modern technologies (logging, authentication, configuration) and preparing them for Azure migration, with specialized tools for assessment, code analysis, and step-by-step migration guidance.
-    ---
-
-    # .NET modernize to azure assistant
-
-    I am a specialized AI assistant for modernizing .NET applications with modern technologies and preparing them for Azure.
-
-    ## What I Can Do
-
-    - **Migration**: Execute structured migrations to modern technologies (logging, authentication, configuration, data access)
-    - **Validation**: Run builds, tests, CVE checks, and consistency/completeness verification
-    - **Tracking**: Maintain migration plans and progress in `.appmod/.migration/` directory
-    - **Azure Preparation**: Modernize code patterns for cloud-native Azure deployment
-
-    ## ⚠️ CRITICAL: Migration Workflow
-
-    ### 1. Planning Phase (REQUIRED FIRST STEP)
-    **Before any migration work, I MUST call `dotnet_migration_plan_tool` first.**
-
-    This tool will provide instructions for generating `plan.md` and `progress.md` files in `.appmod/.migration/`.
-
-    ### 2. Execution Phase
-    **I MUST strictly follow the plan and progress files.**
-
-    Migration phases in order:
-    1. **Analysis**: Analyze the solution structure and dependencies
-    2. **Dependencies**: Update NuGet packages and project references
-    3. **Configuration**: Migrate config files (app.config/web.config → appsettings.json)
-    4. **Code**: Transform code to modern .NET patterns
-    5. **Verification** (MANDATORY - NO SKIPPING):
-      - ✅ Build verification (use bash command `dotnet msbuild`)
-      - ✅ CVE vulnerability check (`check_cve_vulnerability`)
-      - ✅ Consistency check (`migration_consistency`)
-      - ✅ Completeness check (`migration_completeness`)
-      - ✅ Unit test verification (use bash command `dotnet test`)
-
-    ### 3. Completion Phase
-    **Write a brief summary of the migration process**, including:
-    - What was migrated
-    - Key changes made
-    - Verification results
-    - Any issues encountered and resolved
-
-    ## Core Principles
-
-    1. **Always call tools in real-time** - Never reuse previous results
-    2. **Follow the plan strictly** - Update `progress.md` after each task
-    3. **Never skip verification steps** - All checks are mandatory
-    4. **Use tools, not instructions** - Execute actions directly via tools
-    5. **Track progress** - Create Git branches and commits for each task
-
-    ## Important Rules
-
-    ✅ **DO:**
-    - Call `dotnet_migration_plan_tool` before any migration
-    - Follow plan.md and progress.md strictly
-    - Complete ALL verification steps
-    - Write migration summary at completion
-    - Read files before editing them
-    - Track all changes in Git
-
-    ❌ **DON'T:**
-    - Skip the planning tool
-    - Skip any verification steps
-    - Reuse previous tool results
-    - Stop mid-migration for confirmation
-    - Skip progress tracking
-
-    ---
-
-    **Ready to modernize your .NET applications?** Ask me to start a migration!
-
-    ```
-
-    Use the custom agent in one of the following ways:
-
-    - Use the slash command in interactive mode to select from the list of available custom agents:
-
-      ```text
-      /agent
-      ```
-
-      :::image type="content" source="./media/select-custom-agent.png" lightbox="./media/select-custom-agent.png" alt-text="Screenshot of selecting .NET migration custom agent in Copilot CLI.":::
-
-    - Call the custom agent directly in a prompt:
-
-      ```text
-      Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
-      ```
-
-### Run the migration task in Copilot CLI
-
-Describe your migration scenario in Copilot CLI to migrate your .NET app to Azure. Use a prompt like:
-
-```text
-*migrate from X to Y* for any migration task
+```bash
+copilot plugin update github-copilot-modernization@github-copilot-modernization
 ```
 
-Copilot CLI supports predefined migration scenarios that follow Microsoft best practices. For details, see [migration tasks](predefined-tasks.md).
+## Start a modernization task
 
-Example prompts:
+### Option 1: Start with the agent directly
 
-```text
-Use the dotnet modernization agent to migrate this app from local file I/O to Azure Blob Storage
-Use the dotnet modernization agent to migrate this app from local SQL Server to Azure SQL Database with managed identity
-Use the dotnet modernization agent to migrate this app from file-based logging to OpenTelemetry
+Navigate to your .NET project folder and start Copilot CLI with the modernization agent:
+
+```bash
+cd /path/to/your/dotnet-project
+copilot --agent=github-copilot-modernization:modernize
 ```
 
-The migration task runs and shows progress in Copilot CLI.
+### Option 2: Select the agent from inside Copilot CLI
 
-:::image type="content" source="./media/migrate-details.png" lightbox="./media/migrate-details.png" alt-text="Screenshot of a .NET migration task progress details in Copilot CLI.":::
+If you're already in a Copilot CLI session, use the `/agent` command to switch to the modernization agent:
 
-After migration, view the summary:
+```text
+/agent
+```
 
-:::image type="content" source="./media/migrate-summary.png" lightbox="./media/migrate-summary.png" alt-text="Screenshot of the .NET migration summary in Copilot CLI.":::
+Select `github-copilot-modernization:modernize` from the list.
+
+> [!IMPORTANT]
+> You must select the `github-copilot-modernization:modernize` agent before you run any modernization prompts. Without this agent selected, Copilot CLI uses the default agent, which can't use the full multi-agent orchestration, enterprise playbook support, and specialized migration capabilities that the plugin provides.
+
+### Run a modernization prompt
+
+Once the agent is active, describe what you want in natural language:
+
+```text
+copilot> modernize my application
+```
+
+Or be more specific:
+
+```text
+copilot> modernize my .NET application for Azure
+copilot> migrate this app from local SQL Server to Azure SQL Database
+copilot> fix CVE vulnerabilities in my project
+```
+
+For unattended execution, use the `--allow-all` flag:
+
+```bash
+copilot --agent=github-copilot-modernization:modernize --allow-all
+```
+
+## How the workflow works
+
+The plugin uses a three-phase workflow that runs automatically. You don't need to invoke each phase manually—the orchestrator handles routing based on your request.
+
+### Phase 1: Assessment
+
+- Detects .NET project structure and uses the appropriate analysis tools.
+- Analyzes dependencies, frameworks, and versions.
+- Identifies modernization opportunities and risks.
+- Saves results to `.github/modernize/assessment/`.
+
+### Phase 2: Planning
+
+- Loads assessment results and enterprise playbook constraints (if present).
+- Generates an executable task plan.
+- Saves the plan to `.github/modernize/<app>/plan.md` and `tasks.json`.
+
+### Phase 3: Execution
+
+- Routes tasks to specialized executor agents based on task type.
+- Each executor queries a knowledge base for migration patterns.
+- Monitors progress with automatic retry on failure.
+- Creates detailed per-task commits for review.
+
+The orchestrator supports multiple entry points depending on your intent:
+
+| Workflow | When it activates | What happens |
+|---|---|---|
+| **Broad intent** | "modernize my application" | Full assess → plan → execute pipeline |
+| **Specific task** | "migrate from SQL Server to Azure SQL" | Skips assessment, goes straight to plan → execute |
+| **Execute existing plan** | "execute the plan" | Skips assessment and planning, runs an existing plan |
+| **Headless** | Unattended execution with `--allow-all` | Same as broad intent with no user prompts |
+
+## Define enterprise modernization policies
+
+Organizations can embed their modernization intent—target architectures, upgrade standards, and compliance policies—directly into the workflow through a **playbook**. This approach ensures every generated plan aligns with enterprise standards without manual review of each decision.
+
+### Set up a playbook
+
+Place Markdown files in the `.github/modernize/playbook/` directory of your project. The planning phase automatically reads all `.md` files in this folder and merges them with assessment results before it generates the task plan.
+
+> [!IMPORTANT]
+> Playbook constraints override assessment recommendations. If your playbook specifies "use Azure Service Bus for messaging," that choice takes precedence regardless of what the assessment discovers.
+
+### What you can define in a playbook
+
+| Policy type | Examples |
+|---|---|
+| **Target architectures** | Compute services (App Service, AKS, Container Apps), database choices (Azure SQL, Cosmos DB), messaging platforms (Service Bus, Event Hubs) |
+| **Upgrade standards** | Target .NET version, framework migration paths |
+| **Guardrails** | Prohibited technologies, security requirements, compliance constraints, authentication standards |
+| **Coding standards** | Naming conventions, authentication patterns, logging frameworks |
+| **Migration strategy** | Scope boundaries, 6R classification preferences (rehost vs. refactor vs. rearchitect), phasing strategy |
+
+### Example playbook
+
+Create a file at `.github/modernize/playbook/enterprise-standards.md`:
+
+```markdown
+# Enterprise Modernization Standards
+
+## Target Architecture
+- Use Azure Container Apps for microservices deployments
+- Use Azure Service Bus for all asynchronous messaging
+- Use Azure SQL Database for relational data
+- Use Azure Blob Storage for file storage
+
+## Security & Compliance
+- All services must authenticate using Managed Identity — no connection strings or passwords in code
+- All public endpoints must be behind Azure Front Door
+
+## Guardrails
+- Do not use Azure Functions for long-running processes
+- All infrastructure must be defined in Bicep
+```
+
+No fixed naming or structure is required—the orchestrator infers the purpose of each file from its content.
+
+### Built-in defaults
+
+Without a playbook, the plugin applies sensible defaults:
+
+- **Azure**: Managed Identity for authentication; managed database services for relational data.
+- **Messaging**: On-premises messaging → Azure Service Bus.
+- **Infrastructure**: Bicep by default.
+
+## Common scenarios
+
+### Azure migration
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> modernize my .NET application for Azure
+```
+
+### Migrate from local SQL Server to Azure SQL
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> migrate this app from local SQL Server to Azure SQL Database with managed identity
+```
+
+### Migrate from file I/O to Azure Blob Storage
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> migrate this app from local file I/O to Azure Blob Storage
+```
+
+### CVE and security fix
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> fix CVE vulnerabilities in my project
+```
+
+### Application rearchitecture
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> rearchitect my monolithic application into microservices
+```
+
+### Full modernization
+
+```bash
+copilot --agent=github-copilot-modernization:modernize
+copilot> modernize my application
+```
+
+## Troubleshooting
+
+### Plugin not found
+
+```bash
+# Verify marketplace is added
+copilot plugin marketplace list
+
+# Re-add marketplace if needed
+copilot plugin marketplace add microsoft/github-copilot-modernization
+
+# Reinstall
+copilot plugin install github-copilot-modernization@github-copilot-modernization
+```
+
+### Assessment fails: no application found
+
+- Verify that your project root contains a `.csproj` or `.sln` file.
+- Ensure you're in the correct directory before starting Copilot CLI.
+
+### MCP server issues
+
+The plugin uses the MCP server defined in its configuration. If you encounter problems, reinstall the plugin to reset the MCP configuration.
 
 ## Provide feedback
 
-Share feedback about GitHub Copilot CLI using the [GitHub Copilot CLI feedback form](https://aka.ms/AM4DFeedback).
+Share feedback about GitHub Copilot CLI by using the [GitHub Copilot CLI feedback form](https://aka.ms/AM4DFeedback).
 
 ## Reference
 
 - [Using GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#using-copilot-cli)
+- [GitHub Copilot modernization plugin](https://github.com/microsoft/github-copilot-modernization)

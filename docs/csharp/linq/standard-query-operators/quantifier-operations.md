@@ -16,9 +16,9 @@ The following illustration depicts two different quantifier operations on two di
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
-|All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|
-|Any|Determines whether any elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|
-|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|
+|All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.All*?displayProperty=nameWithType>|
+|Any|Determines whether any elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.Any*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Any*?displayProperty=nameWithType>|
+|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Contains*?displayProperty=nameWithType>|
 
 ## All
 
@@ -27,7 +27,7 @@ The following example uses the `All` to find students that scored above 70 on al
 [!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
 
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AllQuantifier":::
-  
+
 ## Any
 
 The following example uses the `Any` to find students that scored greater than 95 on any exam.

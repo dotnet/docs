@@ -27,7 +27,7 @@
 /includes/ @dotnet/docs
 
 ############ What's new ###############
-/docs/whats-new/ @billwagner @dotnet/docs
+/docs/whats-new/ @gewarren @dotnet/docs
 
 ############ Guides ################
 # .NET Core
@@ -76,22 +76,22 @@
 /docs/azure/includes/ @dotnet/docs
 
 # Azure SDK catch-all entry
-/docs/azure/sdk/ @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/ @jsquire @alexwolfmsft @dotnet/docs
 
 # Azure SDK authentication topics
-/docs/azure/sdk/authentication/ @JonathanCrd @christothes @dotnet/docs @alexwolfmsft @scottaddie
+/docs/azure/sdk/authentication/ @JonathanCrd @dotnet/docs @alexwolfmsft
 
 # Azure SDK miscellaneous topics
-/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/azure-sdk-for-net.md @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
-/docs/azure/sdk/packages.md @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/protocol-convenience-methods.md @annelo-msft @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
-/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/azure-sdk-configure-proxy.md @JoshLove-msft @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/azure-sdk-for-net.md @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire @alexwolfmsft @m-nash @dotnet/docs
+/docs/azure/sdk/logging.md @JoshLove-msft @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/packages.md @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/pagination.md @JoshLove-msft @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/protocol-convenience-methods.md @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/thread-safety.md @JoshLove-msft @jsquire @alexwolfmsft @dotnet/docs
+/docs/azure/sdk/unit-testing-mocking.md @JoshLove-msft @jsquire @alexwolfmsft @dotnet/docs
 
 ############### Fundamentals ################
 
@@ -118,7 +118,7 @@
 # Config settings
 /docs/core/runtime-config/ @gewarren @dotnet/docs
 # Testing
-/docs/core/testing/ @meaghanlewis @Youssef1313
+/docs/core/testing/ @meaghanlewis @nohwnd @Evangelink
 # Tools
 /docs/core/tools/ @meaghanlewis @dotnet/docs
 # Tutorials

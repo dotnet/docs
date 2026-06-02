@@ -65,7 +65,7 @@ There's no binary isolation between these dependencies. They're only isolated by
 In each <xref:System.Runtime.Loader.AssemblyLoadContext>:
 
 - <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> may refer to a different <xref:System.Reflection.Assembly> instance.
-- <xref:System.Type.GetType%2A?displayProperty=nameWithType> may return a different type instance for the same type `name`.
+- <xref:System.Type.GetType*?displayProperty=nameWithType> may return a different type instance for the same type `name`.
 
 ## Shared dependencies
 
@@ -126,7 +126,7 @@ public static class Paths
 }
 ```
 
-Use <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=nameWithType> to read the property value. Pass `null` as the first argument because static members don't require an instance. Pass the fully qualified type name (including the namespace) to <xref:System.Reflection.Assembly.GetType(System.String)?displayProperty=nameWithType>:
+Use <xref:System.Reflection.PropertyInfo.GetValue*?displayProperty=nameWithType> to read the property value. Pass `null` as the first argument because static members don't require an instance. Pass the fully qualified type name (including the namespace) to <xref:System.Reflection.Assembly.GetType(System.String)?displayProperty=nameWithType>:
 
 ```csharp
 // Get the type from the loaded assembly using the fully qualified name
@@ -139,7 +139,7 @@ PropertyInfo rootIoProperty = pathsType.GetProperty("RootIO")
 DirectoryInfo rootIo = (DirectoryInfo)rootIoProperty.GetValue(null);
 ```
 
-Alternatively, C# compiles property accessors into methods with `get_` and `set_` prefixes. You can call these accessor methods directly using <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>. However, <xref:System.Type.GetMethod(System.String)?displayProperty=nameWithType> only returns public methods. When an accessor is non-public (such as the `private set` in the example), you must use the overload that accepts <xref:System.Reflection.BindingFlags>:
+Alternatively, C# compiles property accessors into methods with `get_` and `set_` prefixes. You can call these accessor methods directly using <xref:System.Type.GetMethod*?displayProperty=nameWithType>. However, <xref:System.Type.GetMethod(System.String)?displayProperty=nameWithType> only returns public methods. When an accessor is non-public (such as the `private set` in the example), you must use the overload that accepts <xref:System.Reflection.BindingFlags>:
 
 ```csharp
 // Public getter — no BindingFlags needed
@@ -155,7 +155,7 @@ MethodInfo setRootIo = pathsType.GetMethod(
 setRootIo.Invoke(null, new object[] { newValue });
 ```
 
-The same pattern applies to static fields, which you can access via <xref:System.Reflection.FieldInfo.GetValue%2A?displayProperty=nameWithType> and <xref:System.Reflection.FieldInfo.SetValue%2A?displayProperty=nameWithType>, and to static methods, which you invoke with <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=nameWithType>.
+The same pattern applies to static fields, which you can access via <xref:System.Reflection.FieldInfo.GetValue*?displayProperty=nameWithType> and <xref:System.Reflection.FieldInfo.SetValue*?displayProperty=nameWithType>, and to static methods, which you invoke with <xref:System.Reflection.MethodBase.Invoke*?displayProperty=nameWithType>.
 
 > [!NOTE]
 > If you retrieve a value whose type is defined in the loaded assembly, you might encounter type-conversion issues when you try to cast it in the calling context. For more information, see [Type-conversion issues](#type-conversion-issues).

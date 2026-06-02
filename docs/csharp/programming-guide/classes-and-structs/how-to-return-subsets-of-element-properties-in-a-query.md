@@ -45,5 +45,5 @@ To run this code, copy and paste the class into a C# console application  with a
   
 ## See also
 
-- [Anonymous Types](../../fundamentals/types/anonymous-types.md)
+- [Anonymous Types](anonymous-types.md)
 - [LINQ in C#](../../linq/index.md)

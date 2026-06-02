@@ -7,7 +7,7 @@ ai-usage: ai-generated
 
 # More restricted annotations on InvokeMember/FindMembers/DeclaredMembers
 
-Starting in .NET 10, the <xref:System.Reflection> APIs <xref:System.Reflection.IReflect.InvokeMember%2A>, <xref:System.Type.FindMembers%2A>, and <xref:System.Reflection.TypeInfo.DeclaredMembers> use more restricted annotations instead of <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType>.
+Starting in .NET 10, the <xref:System.Reflection> APIs <xref:System.Reflection.IReflect.InvokeMember*>, <xref:System.Type.FindMembers*>, and <xref:System.Reflection.TypeInfo.DeclaredMembers> use more restricted annotations instead of <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType>.
 
 This change affects scenarios where developers implement the <xref:System.Reflection.IReflect> interface or derive from <xref:System.Reflection.TypeInfo>. The previous use of <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType> was overly permissive and could lead to unintended behavior, such as capturing interface methods implemented by a class or generating warnings due to unsafe reflection calls.
 

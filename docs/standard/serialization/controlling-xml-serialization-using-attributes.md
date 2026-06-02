@@ -46,7 +46,7 @@ public class Book
 // <ISBN>1234567890</ISBN>.
 ```
 
-The default behavior can be changed if you want to give the element a new name. The following code shows how an attribute enables this functionality by setting the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> property of an <xref:System.Xml.Serialization.XmlElementAttribute>:
+The default behavior can be changed if you want to give the element a new name. The following code shows how an attribute enables this functionality by setting the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName> property of an <xref:System.Xml.Serialization.XmlElementAttribute>:
 
 ```vb
 Public Class TaxRates
@@ -159,7 +159,7 @@ The resulting XML might resemble the following code:
 
 ## Serializing Derived Classes
 
-Another use of the <xref:System.Xml.Serialization.XmlArrayItemAttribute> is to allow the serialization of derived classes. For example, another class named `Manager` that derives from `Employee` can be added to the previous example. If you don't apply the <xref:System.Xml.Serialization.XmlArrayItemAttribute>, the code will fail at runtime because the derived class type won't be recognized. To remedy this outcome, apply the attribute twice, each time setting the <xref:System.Xml.Serialization.XmlArrayItemAttribute.Type%2A> property for each acceptable type (base and derived).
+Another use of the <xref:System.Xml.Serialization.XmlArrayItemAttribute> is to allow the serialization of derived classes. For example, another class named `Manager` that derives from `Employee` can be added to the previous example. If you don't apply the <xref:System.Xml.Serialization.XmlArrayItemAttribute>, the code will fail at runtime because the derived class type won't be recognized. To remedy this outcome, apply the attribute twice, each time setting the <xref:System.Xml.Serialization.XmlArrayItemAttribute.Type> property for each acceptable type (base and derived).
 
 ```vb
 Public Class Group

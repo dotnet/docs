@@ -13,16 +13,16 @@ In some cases, grain code might need to "break out" of the Orleans task scheduli
 
 ## Task-based APIs
 
-1. `await`, <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> (see below), <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> all respect the current task scheduler. This means using them in the default way, without passing a different <xref:System.Threading.Tasks.TaskScheduler>, causes them to execute in the grain context.
+1. `await`, <xref:System.Threading.Tasks.TaskFactory.StartNew*?displayProperty=nameWithType> (see below), <xref:System.Threading.Tasks.Task.ContinueWith*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WhenAny*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Task.Delay*?displayProperty=nameWithType> all respect the current task scheduler. This means using them in the default way, without passing a different <xref:System.Threading.Tasks.TaskScheduler>, causes them to execute in the grain context.
 
-1. Both <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> and the `endMethod` delegate of <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A?displayProperty=nameWithType> do *not* respect the current task scheduler. They both use the `TaskScheduler.Default` scheduler, the .NET thread pool task scheduler. Therefore, code inside `Task.Run` and the `endMethod` in `Task.Factory.FromAsync` *always* runs on the .NET thread pool, outside the single-threaded execution model for Orleans grains. However, any code after `await Task.Run` or `await Task.Factory.FromAsync` runs back under the scheduler active at the point the task was created, which is the grain's scheduler.
+1. Both <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> and the `endMethod` delegate of <xref:System.Threading.Tasks.TaskFactory.FromAsync*?displayProperty=nameWithType> do *not* respect the current task scheduler. They both use the `TaskScheduler.Default` scheduler, the .NET thread pool task scheduler. Therefore, code inside `Task.Run` and the `endMethod` in `Task.Factory.FromAsync` *always* runs on the .NET thread pool, outside the single-threaded execution model for Orleans grains. However, any code after `await Task.Run` or `await Task.Factory.FromAsync` runs back under the scheduler active at the point the task was created, which is the grain's scheduler.
 
-1. <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=nameWithType> with `false` is an explicit API to escape the current task scheduler. It causes the code after an awaited <xref:System.Threading.Tasks.Task> to execute on the <xref:System.Threading.Tasks.TaskScheduler.Default%2A?displayProperty=nameWithType> scheduler (the .NET thread pool), thus breaking the single-threaded execution of the grain.
+1. <xref:System.Threading.Tasks.Task.ConfigureAwait*?displayProperty=nameWithType> with `false` is an explicit API to escape the current task scheduler. It causes the code after an awaited <xref:System.Threading.Tasks.Task> to execute on the <xref:System.Threading.Tasks.TaskScheduler.Default*?displayProperty=nameWithType> scheduler (the .NET thread pool), thus breaking the single-threaded execution of the grain.
 
     > [!CAUTION]
     > Generally, **never use `ConfigureAwait(false)` directly in grain code.**
 
-1. Methods with the signature `async void` should not be used with grains. They are intended for graphical user interface event handlers. An `async void` method can immediately crash the current process if it allows an exception to escape, with no way to handle the exception. This also applies to `List<T>.ForEach(async element => ...)` and any other method accepting an <xref:System.Action%601>, since the asynchronous delegate coerces into an `async void` delegate.
+1. Methods with the signature `async void` should not be used with grains. They are intended for graphical user interface event handlers. An `async void` method can immediately crash the current process if it allows an exception to escape, with no way to handle the exception. This also applies to `List<T>.ForEach(async element => ...)` and any other method accepting an <xref:System.Action`1>, since the asynchronous delegate coerces into an `async void` delegate.
 
 ### `Task.Factory.StartNew` and `async` delegates
 
@@ -136,7 +136,7 @@ If some *sync-over-async* work is unavoidable, moving that work to a separate sc
 | What are you trying to do? | How to do it |
 |--|--|
 | Run background work on .NET thread-pool threads. No grain code or grain calls are allowed. | `Task.Run` |
-| Run asynchronous worker task from grain code with Orleans turn-based concurrency guarantees ([see above](#taskfactorystartnew-and-async-delegates)). | `Task.Factory.StartNew(WorkerAsync).Unwrap()` (<xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A>) |
+| Run asynchronous worker task from grain code with Orleans turn-based concurrency guarantees ([see above](#taskfactorystartnew-and-async-delegates)). | `Task.Factory.StartNew(WorkerAsync).Unwrap()` (<xref:System.Threading.Tasks.TaskExtensions.Unwrap*>) |
 | Run synchronous worker task from grain code with Orleans turn-based concurrency guarantees. | `Task.Factory.StartNew(WorkerSync)` |
 | Timeouts for executing work items | `Task.Delay` + `Task.WhenAny` |
 | Call an asynchronous library method | `await` the library call |

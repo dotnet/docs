@@ -341,8 +341,8 @@ items:
             displayName: events
           - name: Raise and consume events
             href: ../standard/events/how-to-raise-and-consume-events.md
-          - name: Handle multiple events using event properties
-            href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
+          - name: Declare multiple events using event properties
+            href: ../standard/events/how-to-declare-multiple-events-using-event-properties.md
           - name: Observer design pattern
             items:
               - name: Overview
@@ -967,6 +967,8 @@ items:
                 href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
               - name: "How to: Compress and Extract Files"
                 href: ../standard/io/how-to-compress-and-extract-files.md
+              - name: ZIP and TAR best practices
+                href: ../standard/io/zip-tar-best-practices.md
               - name: Composing Streams
                 href: ../standard/io/composing-streams.md
               - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"

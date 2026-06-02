@@ -51,7 +51,7 @@ The `??` and `??=` operators are useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithNullableTypes":::
 
-  Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to use when a nullable type value is `null` should be the default value of the underlying value type.
+  Use the <xref:System.Nullable`1.GetValueOrDefault?displayProperty=nameWithType> method if the value to use when a nullable type value is `null` should be the default value of the underlying value type.
 
 - To make the argument-checking code more concise, use a [`throw` expression](../statements/exception-handling-statements.md#the-throw-expression) as the right-hand operand of the `??` operator:
 
@@ -80,9 +80,9 @@ You can't overload the `??` and `??=` operators.
 
 ## C# language specification
 
-For more information about the `??` operator, see [The null coalescing operator](~/_csharpstandard/standard/expressions.md#1217-the-null-coalescing-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information about the `??` operator, see [The null coalescing operator](~/_csharpstandard/standard/expressions.md#1218-the-null-coalescing-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about the `??=` operator, see the [Compound assignment](~/_csharpstandard/standard/expressions.md#12234-compound-assignment) section of the C# language specification.
+For more information about the `??=` operator, see the [Compound assignment](~/_csharpstandard/standard/expressions.md#12245-compound-assignment) section of the C# language specification.
 
 ## See also
 

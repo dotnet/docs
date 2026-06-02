@@ -127,7 +127,7 @@ The previous code revisions help get everything ready for breakfast at the same 
 > [!IMPORTANT]
 > The composition of an asynchronous operation followed by synchronous work is an asynchronous operation. Stated another way, if any portion of an operation is asynchronous, the entire operation is asynchronous.
 
-In the previous updates, you learned how to use <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> objects to hold running tasks. You wait on each task before you use its result. The next step is to create methods that represent the combination of other work. Before you serve breakfast, you want to wait on the task that represents toasting the bread before you spread the butter and jam.
+In the previous updates, you learned how to use <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> objects to hold running tasks. You wait on each task before you use its result. The next step is to create methods that represent the combination of other work. Before you serve breakfast, you want to wait on the task that represents toasting the bread before you spread the butter and jam.
 
 You can represent this work with the following code:
 
@@ -141,7 +141,7 @@ Async Function MakeToastWithButterAndJamAsync(number As Integer) As Task(Of Toas
 End Function
 ```
 
-The `MakeToastWithButterAndJamAsync` method has the `Async` modifier in its signature that signals to the compiler that the method contains an `Await` expression and contains asynchronous operations. The method represents the task that toasts the bread, then spreads the butter and jam. The method returns a <xref:System.Threading.Tasks.Task%601> object that represents the composition of the three operations.
+The `MakeToastWithButterAndJamAsync` method has the `Async` modifier in its signature that signals to the compiler that the method contains an `Await` expression and contains asynchronous operations. The method represents the task that toasts the bread, then spreads the butter and jam. The method returns a <xref:System.Threading.Tasks.Task`1> object that represents the composition of the three operations.
 
 The revised main block of code now looks like this:
 
@@ -248,7 +248,7 @@ Before you continue to the next section, comment out the following two statement
 
 ## Efficiently apply await expressions to tasks
 
-You can improve the series of `Await` expressions at the end of the previous code by using methods of the <xref:System.Threading.Tasks.Task> class. One API is the <xref:System.Threading.Tasks.Task.WhenAll%2A> method, which returns a <xref:System.Threading.Tasks.Task> object that completes when all the tasks in its argument list are complete. The following code demonstrates this method:
+You can improve the series of `Await` expressions at the end of the previous code by using methods of the <xref:System.Threading.Tasks.Task> class. One API is the <xref:System.Threading.Tasks.Task.WhenAll*> method, which returns a <xref:System.Threading.Tasks.Task> object that completes when all the tasks in its argument list are complete. The following code demonstrates this method:
 
 ```vb
 Await Task.WhenAll(eggsTask, hashBrownTask, toastTask)
@@ -258,7 +258,7 @@ Console.WriteLine("Toast is ready")
 Console.WriteLine("Breakfast is ready!")
 ```
 
-Another option is to use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method, which returns a `Task(Of Task)` object that completes when any of its arguments complete. You can wait on the returned task because you know the task is done. The following code shows how you can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to wait on the first task to finish and then process its result. After you process the result from the completed task, you remove the completed task from the list of tasks passed to the `WhenAny` method.
+Another option is to use the <xref:System.Threading.Tasks.Task.WhenAny*> method, which returns a `Task(Of Task)` object that completes when any of its arguments complete. You can wait on the returned task because you know the task is done. The following code shows how you can use the <xref:System.Threading.Tasks.Task.WhenAny*> method to wait on the first task to finish and then process its result. After you process the result from the completed task, you remove the completed task from the list of tasks passed to the `WhenAny` method.
 
 :::code language="vb" source="snippets/breakfast/ConcurrentBreakfast.vb" id="ConcurrentBreakfast":::
 
@@ -278,7 +278,7 @@ The final code is asynchronous. It more accurately reflects how a person might c
 
 ## Async/await vs ContinueWith
 
-The `Async` and `Await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith%2A> directly. While `Async`/`Await` and `ContinueWith` have similar semantics for handling asynchronous operations, the compiler doesn't necessarily translate `Await` expressions directly into `ContinueWith` method calls. Instead, the compiler generates optimized state machine code that provides the same logical behavior. This transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
+The `Async` and `Await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith*> directly. While `Async`/`Await` and `ContinueWith` have similar semantics for handling asynchronous operations, the compiler doesn't necessarily translate `Await` expressions directly into `ContinueWith` method calls. Instead, the compiler generates optimized state machine code that provides the same logical behavior. This transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
 
 Consider a scenario where you need to perform multiple sequential asynchronous operations. Here's how the same logic looks when implemented by using `ContinueWith` compared to `Async`/`Await`:
 
@@ -330,16 +330,16 @@ The same sequence of operations using `Async`/`Await` reads much more naturally:
 Async Function MakeBreakfastWithAsyncAwait() As Task
     Dim eggs = Await StartCookingEggsAsync()
     Console.WriteLine("Eggs ready, starting bacon...")
-    
+
     Dim bacon = Await StartCookingBaconAsync()
     Console.WriteLine("Bacon ready, starting toast...")
-    
+
     Dim toast = Await StartToastingBreadAsync()
     Console.WriteLine("Toast ready, applying butter...")
-    
+
     Dim butteredToast = Await ApplyButterAsync(toast)
     Console.WriteLine("Butter applied, applying jam...")
-    
+
     Dim finalToast = Await ApplyJamAsync(butteredToast)
     Console.WriteLine("Breakfast completed with Async/Await!")
 End Function

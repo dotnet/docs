@@ -89,7 +89,7 @@ This example produces the following output:
 
 ## See also
 
-- <xref:System.Xml.Linq.XElement.Attribute%2A>
-- <xref:System.Xml.Linq.XContainer.Elements%2A>
+- <xref:System.Xml.Linq.XElement.Attribute*>
+- <xref:System.Xml.Linq.XContainer.Elements*>
 - [Standard Query Operators Overview](../../csharp/linq/standard-query-operators/index.md)
 - [Projection Operations](../../csharp/linq/standard-query-operators/projection-operations.md)

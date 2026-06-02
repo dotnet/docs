@@ -1,6 +1,6 @@
 ---
-title: Microsoft.Testing.Platform code coverage
-description: Learn about collecting code coverage data with Microsoft.Testing.Platform.
+title: Microsoft.Testing.Platform (MTP) code coverage
+description: Learn about collecting code coverage data with MTP.
 author: evangelink
 ms.author: amauryleve
 ms.date: 02/25/2026
@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), code coverage extensions are auto-registered when you install their NuGet packages — no code changes needed.
 
-You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
+You can use the code coverage feature with Microsoft.Testing.Platform (MTP) to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
 ## Microsoft code coverage
 
@@ -43,9 +43,9 @@ For more information about the available options, see [settings](../additional-t
 
 ## Version compatibility
 
-The following table shows the compatibility between different versions of Microsoft.Testing.Extensions.CodeCoverage and Microsoft.Testing.Platform:
+The following table shows the compatibility between different versions of Microsoft.Testing.Extensions.CodeCoverage and MTP:
 
-| Microsoft.Testing.Extensions.CodeCoverage | Microsoft.Testing.Platform |
+| Microsoft.Testing.Extensions.CodeCoverage | MTP |
 |------------------------------------------|---------------------------|
 | 18.1.x                                  | 2.0.x                     |
 | 18.0.x                                  | 1.8.x                     |
@@ -56,7 +56,7 @@ The following table shows the compatibility between different versions of Micros
 
 ## Coverlet
 
-The Coverlet Microsoft Testing Platform Integration (`coverlet.MTP`) is a native extension for Microsoft.Testing.Platform that implements `coverlet.collector` functionality.
+The Coverlet Microsoft Testing Platform Integration (`coverlet.MTP`) is a native extension for MTP that implements `coverlet.collector` functionality.
 
 Add the `coverlet.MTP` NuGet package to your test project:
 

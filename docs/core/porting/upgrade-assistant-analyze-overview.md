@@ -4,7 +4,7 @@ description: "Describes how the code analysis function of .NET Upgrade Assistant
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 10/08/2024
+ms.date: 03/19/2026
 
 #customer intent: As a developer, I need to understand what the analyze function of .NET Upgrade Assistant does.
 
@@ -27,16 +27,6 @@ There are two types of analysis you can perform on your code:
 - Binary dependencies
 
   Analyzes the external binary dependencies (such as NuGet packages) for your projects.
-
-<!--
-
-Cutting this out until the extension docs are written
-
-## Custom configuration
-
-You can use a configuration file for the code analysis engine to control how the analysis is performed.
-
--->
 
 ## Reports
 

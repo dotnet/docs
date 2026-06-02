@@ -1,7 +1,8 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 09/29/2025
+ms.date: 04/02/2026
+ai-usage: ai-assisted
 ---
 # dotnet pack
 
@@ -14,13 +15,14 @@ ms.date: 09/29/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>]
-  [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
-  [--disable-build-servers] [--force] [--include-source] [--include-symbols]
-  [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo]
-  [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
-  [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
-  [--version-suffix <VERSION_SUFFIX>]
+dotnet pack [<PROJECT>|<SOLUTION>|<NUSPEC>|<FILE>]
+    [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
+    [--disable-build-servers] [--force] [--include-source] [--include-symbols]
+    [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo]
+    [-o|--output <OUTPUT_DIRECTORY>] [-p|--property:<PROPERTYNAME>=<VALUE>]
+    [--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+    [--version <VERSION>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet pack -h|--help
 ```
@@ -28,6 +30,8 @@ dotnet pack -h|--help
 ## Description
 
 The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file).
+
+Starting with .NET 10, you can also pass a *.nuspec* file or a file-based app (*.cs* file) directly as the argument. When you pass a *.nuspec* file, `dotnet pack` creates the package from the *.nuspec* file without requiring a project file and without running MSBuild. When you pass a file-based app, `dotnet pack` packs it without a project file.
 
 If you want to generate a package that contains the debug symbols, you have two options available:
 
@@ -41,8 +45,6 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 > [!NOTE]
 > In some cases, the implicit build cannot be performed. This can occur when `GeneratePackageOnBuild` is set, to avoid a cyclic dependency between build and pack targets. The build can also fail if there is a locked file or other issue.
 
-You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild `-p` switch for a couple of different scenarios.
-
 > [!NOTE]
 > Web projects aren't packable.
 
@@ -54,9 +56,16 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Arguments
 
-`PROJECT | SOLUTION`
+`PROJECT | SOLUTION | NUSPEC | FILE`
 
-  The project or solution to pack. It's either a path to a csproj, vbproj, or fsproj file, or to a solution file or directory. If not specified, the command searches the current directory for a project or solution file.
+  The project, solution, *.nuspec* file, or file-based app to pack.
+
+- `PROJECT` is the path to a `.csproj`, `.vbproj`, or `.fsproj` file, or to a directory containing a project file.
+- `SOLUTION` is the path to a solution file (`.sln` or `.slnx` extension), or to a directory containing a solution file.
+- `NUSPEC` is the path to a `.nuspec` file. Available starting in .NET 10.
+- `FILE` is the path to a file-based app (a C# file without a corresponding project file). Available starting in .NET 10. For more information, see [Build file-based C# apps](../../csharp/fundamentals/tutorials/file-based-programs.md).
+
+  If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
 
@@ -104,6 +113,17 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
     In the 7.0.200 SDK, if you specify the `--output` option when running this command on a solution, the CLI will emit an error. This is a regression and was fixed in 7.0.201 and later versions of the .NET SDK.
 
+- **`-p|--property:<PROPERTYNAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. When packing a *.nuspec* file directly, the properties are used for token replacement in the *.nuspec* file rather than as MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
+
+  For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference).
+
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
@@ -115,6 +135,13 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 - [!INCLUDE [tl](includes/cli-tl.md)]
 
 - [!INCLUDE [verbosity](includes/cli-verbosity.md)]
+
+- **`--version <VERSION>`**
+
+  The version of the package to create. When packing a *.nuspec* file, overrides the version number in the *.nuspec* file.
+
+  > [!NOTE]
+  > Available starting in .NET 10.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -184,7 +211,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   dotnet pack --runtime win-x64
   ```
 
-- Pack the project using a *.nuspec* file:
+- Pack the project using a *.nuspec* file (MSBuild project-based approach):
 
   ```dotnetcli
   dotnet pack ~/projects/app1/project.csproj -p:NuspecFile=~/projects/app1/project.nuspec -p:NuspecBasePath=~/projects/app1/nuget
@@ -195,3 +222,18 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   - [Packing using a .nuspec](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
   - [Advanced extension points to create customized package](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
   - [Global properties](/visualstudio/msbuild/msbuild-properties#global-properties)
+
+- Pack a *.nuspec* file directly, without a project file (.NET 10 and later):
+
+  ```dotnetcli
+  dotnet pack MyPackage.nuspec --output ./artifacts
+
+  ```dotnetcli
+  dotnet pack MyPackage.nuspec --version 1.2.3 --output ./artifacts
+  ```
+
+- Pack a *.nuspec* file directly and use token replacement (.NET 10 and later):
+
+  ```dotnetcli
+  dotnet pack MyPackage.nuspec --property:Version=1.2.3 --property:Configuration=Release --output ./artifacts
+  ```

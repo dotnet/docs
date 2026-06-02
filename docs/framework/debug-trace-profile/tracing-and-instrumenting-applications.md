@@ -33,7 +33,7 @@ Tracing is a way for you to monitor the execution of your application while it i
 
  Instrumenting your application by placing trace statements at strategic locations in your code is especially useful for distributed applications. By using trace statements you can instrument an application not only to display information when things go wrong, but also to monitor how well the application is performing.
 
- The <xref:System.Diagnostics.TraceSource> class provides enhanced tracing features and can be used in place of the static methods of the older <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> tracing classes. The familiar <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes are still widely used, but the <xref:System.Diagnostics.TraceSource> class is recommended for new tracing commands, such as <xref:System.Diagnostics.TraceSource.TraceEvent%2A> and <xref:System.Diagnostics.TraceSource.TraceData%2A>.
+ The <xref:System.Diagnostics.TraceSource> class provides enhanced tracing features and can be used in place of the static methods of the older <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> tracing classes. The familiar <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes are still widely used, but the <xref:System.Diagnostics.TraceSource> class is recommended for new tracing commands, such as <xref:System.Diagnostics.TraceSource.TraceEvent*> and <xref:System.Diagnostics.TraceSource.TraceData*>.
 
  The <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes are identical, except that procedures and functions of the <xref:System.Diagnostics.Trace> class are compiled by default into release builds, but those of the <xref:System.Diagnostics.Debug> class are not.
 
@@ -97,7 +97,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
 7. If a problem occurs during runtime, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).
 
-     The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection determines the target.
+     The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the <xref:System.Diagnostics.Trace.Listeners*?displayProperty=nameWithType> collection determines the target.
 
 8. Analyze the tracing messages to identify and understand the problem in the application.
 
@@ -115,9 +115,9 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
 ## Output from Tracing
 
- Trace output is collected by objects called *listeners*. A listener is an object that receives trace output and writes it to an output device (usually a window, log, or text file). When a trace listener is created, it is typically added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection, allowing the listener to receive all trace output.
+ Trace output is collected by objects called *listeners*. A listener is an object that receives trace output and writes it to an output device (usually a window, log, or text file). When a trace listener is created, it is typically added to the <xref:System.Diagnostics.Trace.Listeners*?displayProperty=nameWithType> collection, allowing the listener to receive all trace output.
 
- Tracing information is always written at least to the default <xref:System.Diagnostics.Trace> output target, the <xref:System.Diagnostics.DefaultTraceListener>. If for some reason you have deleted the <xref:System.Diagnostics.DefaultTraceListener> without adding any other listeners to the <xref:System.Diagnostics.Trace.Listeners%2A> collection, you will not receive any tracing messages. For more information, see [Trace Listeners](trace-listeners.md).
+ Tracing information is always written at least to the default <xref:System.Diagnostics.Trace> output target, the <xref:System.Diagnostics.DefaultTraceListener>. If for some reason you have deleted the <xref:System.Diagnostics.DefaultTraceListener> without adding any other listeners to the <xref:System.Diagnostics.Trace.Listeners*> collection, you will not receive any tracing messages. For more information, see [Trace Listeners](trace-listeners.md).
 
  The six <xref:System.Diagnostics.Debug> members and <xref:System.Diagnostics.Trace> methods that write tracing information are listed in the following table.
 
@@ -130,7 +130,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 |`WriteLine`|The specified text and a carriage return.|
 |`WriteLineIf`|The specified text and a carriage return, if the condition specified as an argument in the `WriteLineIf` statement is satisfied.|
 
- All listeners in the <xref:System.Diagnostics.Trace.Listeners%2A> collection receive the messages described in the above table, but the actions taken may vary depending on what kind of listener receives the message. For example, the <xref:System.Diagnostics.DefaultTraceListener> displays an assertion dialog box when it receives a `Fail` or failed `Assert` notification, but a <xref:System.Diagnostics.TextWriterTraceListener> simply writes the output to its stream.
+ All listeners in the <xref:System.Diagnostics.Trace.Listeners*> collection receive the messages described in the above table, but the actions taken may vary depending on what kind of listener receives the message. For example, the <xref:System.Diagnostics.DefaultTraceListener> displays an assertion dialog box when it receives a `Fail` or failed `Assert` notification, but a <xref:System.Diagnostics.TextWriterTraceListener> simply writes the output to its stream.
 
  You can produce custom results by implementing your own listener. A custom trace listener might, for example, display the messages to a message box, or connect to a database to add messages to a table. All custom listeners should support the six methods mentioned above. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.
 

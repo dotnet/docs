@@ -31,7 +31,7 @@ When authenticating as a server, <xref:System.Net.Security.SslStream> requires a
 
 There are multiple ways that a server certificate can be passed to <xref:System.Net.Security.SslStream>:
 
-- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync%2A?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
+- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync*?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
 - From a selection callback in <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback?displayProperty=nameWithType> property
 - By passing a <xref:System.Net.Security.SslStreamCertificateContext> in the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property
 
@@ -80,13 +80,13 @@ static bool CustomCertificateValidationCallback(
     {
         return true;
     }
-    
+
     // If there is something wrong other than a chain processing error, don't trust it.
     if (sslPolicyErrors != SslPolicyErrors.RemoteCertificateChainErrors)
     {
         return false;
     }
-    
+
     Debug.Assert(chain is not null);
 
     // If the reason for RemoteCertificateChainError is that the chain built empty, don't trust it.
@@ -124,7 +124,7 @@ static bool CustomCertificateValidationCallback(
     {
         return false;
     }
-    
+
     Debug.Assert(certificate is not null);
 
     const string ExpectedPublicKey =
@@ -147,4 +147,7 @@ static bool CustomCertificateValidationCallback(
 
 Server applications need to be careful when requiring and validating client certificates. Certificates may contain the [AIA (Authority Information Access)](http://www.pkiglobe.org/auth_info_access.html) extension which specifies where the issuer certificate can be downloaded. The server may therefore attempt to download the issuer certificate from external server when building the <xref:System.Security.Cryptography.X509Certificates.X509Chain> for the client certificate. Similarly, servers may need to contact external servers to ensure that the client certificate has not been revoked.
 
-The need to contact external servers when building and validating the <xref:System.Security.Cryptography.X509Certificates.X509Chain> may expose the application to denial of service attacks if the external servers are slow to respond. Therefore, server applications should configure the <xref:System.Security.Cryptography.X509Certificates.X509Chain> building behavior using the <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateChainPolicy>.
+The need to contact external servers when building and validating the <xref:System.Security.Cryptography.X509Certificates.X509Chain> might expose the application to denial of service attacks if the external servers are slow to respond. Therefore, server applications should configure the <xref:System.Security.Cryptography.X509Certificates.X509Chain> building behavior using the <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateChainPolicy>.
+
+> [!NOTE]
+> Starting in .NET 11, `SslStream` disables AIA certificate downloads by default when validating client certificates as a server. If no custom <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateChainPolicy> is provided, the server won't attempt to fetch missing intermediate certificates via AIA. For more information, see [SslStream server-side AIA certificate downloads disabled by default](../compatibility/networking/11/sslstream-aia-downloads-disabled.md).

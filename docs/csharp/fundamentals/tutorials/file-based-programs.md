@@ -10,6 +10,7 @@ ai-usage: ai-assisted
 # Tutorial: Build file-based C# programs
 
 *File-based apps* are programs contained within a single `*.cs` file that you build and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, you can run file-based apps by using `#!` (shebang) [directives](../../language-reference/preprocessor-directives.md).
+
 In this tutorial, you:
 
 > [!div class="checklist"]
@@ -69,7 +70,7 @@ File-based apps are regular C# programs. The only limitation is that you must wr
 >
 > Support for `#!` directives applies on Unix platforms only. There's no similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet` on the command line.
 
-On Unix, run file-based apps directly by typing just the source file name. Instead of using `dotnet AsciiArt.cs`, type the source file name on the command line. You need to make two changes:
+On Unix, you can execute file-based apps directly using just the source file name. You need to make two changes:
 
 1. Set *execute* permissions on the source file:
 
@@ -80,24 +81,21 @@ On Unix, run file-based apps directly by typing just the source file name. Inste
 1. Add a shebang (`#!`) directive as the first line of the `AsciiArt.cs` file:
 
    ```csharp
-   #!/usr/local/share/dotnet/dotnet
+   #!/usr/bin/env -S dotnet --
    ```
 
-The location of `dotnet` can be different on different Unix installations. Use the command `which dotnet` to locate the `dotnet` host in your environment.
+   This shebang uses `env` to find `dotnet` in the PATH environment. The `-S` parameter enables `env` to pass `dotnet` and `--` as separate arguments. The `--` ensures that any arguments a user provides are passed directly to your app, preventing `dotnet` from consuming them by mistake.
 
-Alternatively, you can use `#!/usr/bin/env dotnet` to resolve the dotnet path from the PATH environment variable automatically:
+   > [!TIP]
+   > If the previous shebang doesn't work, try `#!/usr/bin/env dotnet` or the exact location of `dotnet`, for example `#!/usr/local/share/dotnet/dotnet --`.
 
-```csharp
-#!/usr/bin/env dotnet
-```
-
-After making these two changes, you can run the program from the command line directly:
+After making these two changes, you can run the program directly:
 
 ```bash
 ./AsciiArt.cs
 ```
 
-If you prefer, you can remove the extension so you can type `./AsciiArt` instead. You can add the `#!` to your source file even if you use Windows. The Windows command line doesn't support `#!`, but the C# compiler allows that directive in file-based apps on all platforms.
+If you prefer, you can remove the extension so you can type `./AsciiArt` instead. You can add the `#!` to your source file even if you use Windows. Windows doesn't support `#!`, but the C# compiler allows that directive in file-based apps on all platforms.
 
 ## Read command line arguments
 

@@ -32,8 +32,8 @@ let! (result2 : int)  = stream.ReadAsync(buffer, offset, count, cancellationToke
 
 F# `task { }` expressions can await the following kinds of asynchronous operations:
 
-* .NET tasks, <xref:System.Threading.Tasks.Task%601> and the non-generic <xref:System.Threading.Tasks.Task>.
-* .NET value tasks, <xref:System.Threading.Tasks.ValueTask%601> and the non-generic <xref:System.Threading.Tasks.ValueTask>.
+* .NET tasks, <xref:System.Threading.Tasks.Task`1> and the non-generic <xref:System.Threading.Tasks.Task>.
+* .NET value tasks, <xref:System.Threading.Tasks.ValueTask`1> and the non-generic <xref:System.Threading.Tasks.ValueTask>.
 * F# async computations [`Async<T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html).
 * Any object following the "GetAwaiter" pattern specified in [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md).
 
@@ -64,7 +64,7 @@ task {
     use httpClient = new Net.Http.HttpClient()
     // use! Task<IDisposable>
     use! exampleDomain = httpClient.GetAsync "https://example.com/data.enc"
-   
+
     // use IDisposable
     use aes = Aes.Create()
     aes.KeySize <- 256
@@ -137,7 +137,7 @@ If you intend to correctly make your code cancelable, carefully check that you p
 
 ## Background tasks
 
-By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
+By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current*?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
 
 In practice, it's often desirable that library code that generates tasks ignores the synchronization context and instead always switches to the .NET thread pool, if necessary. You can achieve this using `backgroundTask { }`:
 
@@ -210,6 +210,6 @@ Tasks are implemented using Resumable Code, a new feature in F# 6. Tasks are com
 - [Resumable State Machines - F# Compiler Community Session](https://www.youtube.com/watch?v=GYi3ZMF8Pm0)
 - [Resumable Code - RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md)
 - <xref:System.Threading.Tasks.Task>
-- <xref:System.Threading.Tasks.Task%601>
+- <xref:System.Threading.Tasks.Task`1>
 - <xref:System.Threading.Tasks.ValueTask>
-- <xref:System.Threading.Tasks.ValueTask%601>
+- <xref:System.Threading.Tasks.ValueTask`1>

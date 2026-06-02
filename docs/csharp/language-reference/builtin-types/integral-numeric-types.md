@@ -103,7 +103,7 @@ The suffix determines the type of an integer literal as follows:
 
 - If the literal includes one of the `UL`, `Ul`, `uL`, `ul`, `LU`, `Lu`, `lU`, or `lu` suffixes, the compiler assigns the type as `ulong`.
 
-If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
+If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../compiler-messages/overloaded-operator-errors.md#overflow-and-underflow-errors) occurs.
 
 If the compiler determines the type of an integer literal as `int` and the value represented by the literal is within the range of the destination type, the value can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, `nint`, or `nuint`:
 
@@ -112,7 +112,7 @@ byte a = 17;
 byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
 ```
 
-As the preceding example shows, if the literal's value isn't within the range of the destination type, a compiler error [CS0031](../../misc/cs0031.md) occurs.
+As the preceding example shows, if the literal's value isn't within the range of the destination type, a compiler error [CS0031](../compiler-messages/overloaded-operator-errors.md#overflow-and-underflow-errors) occurs.
 
 You can also use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
 
@@ -155,8 +155,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [Integral types](~/_csharpstandard/standard/types.md#836-integral-types)
 - [Integer literals](~/_csharpstandard/standard/lexical-structure.md#6453-integer-literals)
-- [Native sized integral types](~/_csharplang/proposals/csharp-9.0/native-integers.md)
-- [Numeric `IntPtr` and `UIntPtr`](~/_csharplang/proposals/csharp-11.0/numeric-intptr.md)
+- [Native sized integral types](~/_csharpstandard/standard/types.md#836-integral-types)
 
 ## See also
 

@@ -22,7 +22,7 @@ The following procedures specify how to enable signature confirmation using an <
 
 2. Create an instance of the  <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.
 
-3. Set the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> to `true`.
+3. Set the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation*> to `true`.
 
 4. Add the security element to the binding collection.
 
@@ -58,7 +58,7 @@ The following procedures specify how to enable signature confirmation using an <
 
 ## Example
 
-The following code creates an instance of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> and sets the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> property to `true`. Note that this example does not use the `<secureConversationBootstrap>` element shown in the preceding example. This example demonstrates signature confirmation when using a Windows (Kerberos protocol) token. In this case, the signature of the client is returned in all responses from the service and is confirmed by the client.
+The following code creates an instance of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> and sets the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation> property to `true`. Note that this example does not use the `<secureConversationBootstrap>` element shown in the preceding example. This example demonstrates signature confirmation when using a Windows (Kerberos protocol) token. In this case, the signature of the client is returned in all responses from the service and is confirmed by the client.
 
 [!code-csharp[c_SignatureConfirmation#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_signatureconfirmation/cs/source.cs#1)]
 [!code-vb[c_SignatureConfirmation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_signatureconfirmation/vb/source.vb#1)]
@@ -67,6 +67,6 @@ The following code creates an instance of the <xref:System.ServiceModel.Channels
 
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>
-- <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement%2A>
+- <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement*>
 - [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [How to: Create a SecurityBindingElement for a Specified Authentication Mode](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

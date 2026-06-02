@@ -221,7 +221,7 @@ The order in which elements appear in the stack matters, because it is the order
 
 Use a custom binding when one of the system-provided bindings does not meet the requirements of your service. A custom binding could be used, for example, to enable the use of a new transport or a new encoder at a service endpoint.
 
-A custom binding is constructed using one of the <xref:System.ServiceModel.Channels.CustomBinding.%23ctor%2A> from a collection of binding elements that are "stacked" in a specific order:
+A custom binding is constructed using one of the <xref:System.ServiceModel.Channels.CustomBinding.%23ctor*> from a collection of binding elements that are "stacked" in a specific order:
 
 - At the top is an optional <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> that allows flowing transactions.
 

@@ -11,7 +11,7 @@ ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
 ---
 # `<listeners>` element for `<source>`
 
-Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection for a <xref:System.Diagnostics.TraceSource>. A listener directs the tracing output to an appropriate target, such as a log, window, or text file.
+Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners*> collection for a <xref:System.Diagnostics.TraceSource>. A listener directs the tracing output to an appropriate target, such as a log, window, or text file.
 
 [`<configuration>`](../configuration-element.md)
 &nbsp;&nbsp;[`<system.diagnostics>`](system-diagnostics-element.md)

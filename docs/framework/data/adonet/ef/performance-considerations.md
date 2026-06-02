@@ -41,7 +41,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 
 #### Deferred versus immediate execution
 
- When you create an <xref:System.Data.Objects.ObjectQuery%601> or LINQ query, the query may not be executed immediately. Query execution is deferred until the results are needed, such as during a `foreach` (C#) or `For Each` (Visual Basic) enumeration or when it is assigned to fill a <xref:System.Collections.Generic.List%601> collection. Query execution begins immediately when you call the <xref:System.Data.Objects.ObjectQuery%601.Execute%2A> method on an <xref:System.Data.Objects.ObjectQuery%601> or when you call a LINQ method that returns a singleton query, such as <xref:System.Linq.Enumerable.First%2A> or <xref:System.Linq.Enumerable.Any%2A>. For more information, see [Object Queries](/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)) and [Query Execution (LINQ to Entities)](./language-reference/query-execution.md).
+ When you create an <xref:System.Data.Objects.ObjectQuery`1> or LINQ query, the query may not be executed immediately. Query execution is deferred until the results are needed, such as during a `foreach` (C#) or `For Each` (Visual Basic) enumeration or when it is assigned to fill a <xref:System.Collections.Generic.List`1> collection. Query execution begins immediately when you call the <xref:System.Data.Objects.ObjectQuery`1.Execute*> method on an <xref:System.Data.Objects.ObjectQuery`1> or when you call a LINQ method that returns a singleton query, such as <xref:System.Linq.Enumerable.First*> or <xref:System.Linq.Enumerable.Any*>. For more information, see [Object Queries](/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)) and [Query Execution (LINQ to Entities)](./language-reference/query-execution.md).
 
 #### Client-side execution of LINQ queries
 
@@ -62,7 +62,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 - Queries against a conceptual model that seem simple may result in the execution of more complex queries against the data source. This can occur because the Entity Framework translates a query against a conceptual model into an equivalent query against the data source. When a single entity set in the conceptual model maps to more than one table in the data source, or when a relationship between entities is mapped to a join table, the query command executed against the data source query may require one or more joins.
 
     > [!NOTE]
-    > Use the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method of the <xref:System.Data.Objects.ObjectQuery%601> or <xref:System.Data.EntityClient.EntityCommand> classes to view the commands that are executed against the data source for a given query. For more information, see [How to: View the Store Commands](/previous-versions/dotnet/netframework-4.0/bb896348(v=vs.100)).
+    > Use the <xref:System.Data.Objects.ObjectQuery.ToTraceString*> method of the <xref:System.Data.Objects.ObjectQuery`1> or <xref:System.Data.EntityClient.EntityCommand> classes to view the commands that are executed against the data source for a given query. For more information, see [How to: View the Store Commands](/previous-versions/dotnet/netframework-4.0/bb896348(v=vs.100)).
 
 - Nested Entity SQL queries may create joins on the server and can return a large number of rows.
 
@@ -86,13 +86,13 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 
 ### Query Paths
 
- By default, when you execute an <xref:System.Data.Objects.ObjectQuery%601>, related objects are not returned (although objects that represent the relationships themselves are). You can load related objects in one of three ways:
+ By default, when you execute an <xref:System.Data.Objects.ObjectQuery`1>, related objects are not returned (although objects that represent the relationships themselves are). You can load related objects in one of three ways:
 
-1. Set the query path before the <xref:System.Data.Objects.ObjectQuery%601> is executed.
+1. Set the query path before the <xref:System.Data.Objects.ObjectQuery`1> is executed.
 
 2. Call the `Load` method on the navigation property that the object exposes.
 
-3. Set the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> option on the <xref:System.Data.Objects.ObjectContext> to `true`. Note that this is done automatically when you generate object-layer code with the [Entity Data Model Designer](/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)). For more information see [Generated Code Overview](/previous-versions/dotnet/netframework-4.0/cc982041(v=vs.100)).
+3. Set the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled*> option on the <xref:System.Data.Objects.ObjectContext> to `true`. Note that this is done automatically when you generate object-layer code with the [Entity Data Model Designer](/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)). For more information see [Generated Code Overview](/previous-versions/dotnet/netframework-4.0/cc982041(v=vs.100)).
 
  When you consider which option to use, be aware that there is a tradeoff between the number of requests against the database and the amount of data returned in a single query. For more information, see [Loading Related Objects](/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).
 
@@ -101,24 +101,24 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
  Query paths define the graph of objects that a query returns. When you define a query path, only a single request against the database is required to return all objects that the path defines. Using query paths can result in complex commands being executed against the data source from seemingly simple object queries. This occurs because one or more joins are required to return related objects in a single query. This complexity is greater in queries against a complex entity model, such as an entity with inheritance or a path that includes many-to-many relationships.
 
 > [!NOTE]
-> Use the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method to see the command that will be generated by an <xref:System.Data.Objects.ObjectQuery%601>. For more information, see [How to: View the Store Commands](/previous-versions/dotnet/netframework-4.0/bb896348(v=vs.100)).
+> Use the <xref:System.Data.Objects.ObjectQuery.ToTraceString*> method to see the command that will be generated by an <xref:System.Data.Objects.ObjectQuery`1>. For more information, see [How to: View the Store Commands](/previous-versions/dotnet/netframework-4.0/bb896348(v=vs.100)).
 
  When a query path includes too many related objects or the objects contain too much row data, the data source might be unable to complete the query. This occurs if the query requires intermediate temporary storage that exceeds the capabilities of the data source. When this occurs, you can reduce the complexity of the data source query by explicitly loading related objects.
 
 #### Explicitly loading related objects
 
- You can explicitly load related objects by calling the `Load` method on a navigation property that returns an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601>. Explicitly loading objects requires a round-trip to the database every time `Load` is called.
+ You can explicitly load related objects by calling the `Load` method on a navigation property that returns an <xref:System.Data.Objects.DataClasses.EntityCollection`1> or <xref:System.Data.Objects.DataClasses.EntityReference`1>. Explicitly loading objects requires a round-trip to the database every time `Load` is called.
 
 > [!NOTE]
 > if you call `Load` while looping through a collection of returned objects, such as when you use the `foreach` statement (`For Each` in Visual Basic), the data source-specific provider must support multiple active results sets on a single connection. For a SQL Server database, you must specify a value of `MultipleActiveResultSets = true` in the provider connection string.
 
- You can also use the <xref:System.Data.Objects.ObjectContext.LoadProperty%2A> method when there is no <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> properties on entities. This is useful when you are using POCO entities.
+ You can also use the <xref:System.Data.Objects.ObjectContext.LoadProperty*> method when there is no <xref:System.Data.Objects.DataClasses.EntityCollection`1> or <xref:System.Data.Objects.DataClasses.EntityReference`1> properties on entities. This is useful when you are using POCO entities.
 
  Although explicitly loading related objects will reduce the number of joins and reduced the amount of redundant data, `Load` requires repeated connections to the database, which can become costly when explicitly loading a large number of objects.
 
 ### Saving Changes
 
- When you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method on an <xref:System.Data.Objects.ObjectContext>, a separate create, update, or delete command is generated for every added, updated, or deleted object in the context. These commands are executed on the data source in a single transaction. As with queries, the performance of create, update, and delete operations depends on the complexity of the mapping in the conceptual model.
+ When you call the <xref:System.Data.Objects.ObjectContext.SaveChanges*> method on an <xref:System.Data.Objects.ObjectContext>, a separate create, update, or delete command is generated for every added, updated, or deleted object in the context. These commands are executed on the data source in a single transaction. As with queries, the performance of create, update, and delete operations depends on the complexity of the mapping in the conceptual model.
 
 ### Distributed Transactions
 
@@ -148,7 +148,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 
 #### Return the correct amount of data
 
- In some scenarios, specifying a query path using the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method is much faster because it requires fewer round trips to the database. However, in other scenarios, additional round trips to the database to load related objects may be faster because the simpler queries with fewer joins result in less redundancy of data. Because of this, we recommend that you test the performance of various ways to retrieve related objects. For more information, see [Loading Related Objects](/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).
+ In some scenarios, specifying a query path using the <xref:System.Data.Objects.ObjectQuery`1.Include*> method is much faster because it requires fewer round trips to the database. However, in other scenarios, additional round trips to the database to load related objects may be faster because the simpler queries with fewer joins result in less redundancy of data. Because of this, we recommend that you test the performance of various ways to retrieve related objects. For more information, see [Loading Related Objects](/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).
 
  To avoid returning too much data in a single query, consider paging the results of the query into more manageable groups. For more information, see [How to: Page Through Query Results](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)).
 
@@ -158,7 +158,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
 
 #### Consider opening the database connection manually
 
- When your application executes a series of object queries or frequently calls <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> to persist create, update, and delete operations to the data source, the Entity Framework must continuously open and close the connection to the data source. In these situations, consider manually opening the connection at the start of these operations and either closing or disposing of the connection when the operations are complete. For more information, see [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
+ When your application executes a series of object queries or frequently calls <xref:System.Data.Objects.ObjectContext.SaveChanges*> to persist create, update, and delete operations to the data source, the Entity Framework must continuously open and close the connection to the data source. In these situations, consider manually opening the connection at the start of these operations and either closing or disposing of the connection when the operations are complete. For more information, see [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
 
 ## Performance Data
 

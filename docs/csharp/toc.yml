@@ -51,20 +51,58 @@ items:
     items:
     - name: Overview
       href: fundamentals/types/index.md
-    # TODO: tuples
+    - name: Built-in types and literals
+      href: fundamentals/types/built-in-types.md
     - name: Classes
       href: fundamentals/types/classes.md
-    # TODO: Edit Records article so it doesn't depend on classes.
+    - name: Structs
+      href: fundamentals/types/structs.md
     - name: Records
       href: fundamentals/types/records.md
-    # TODO: structs
     - name: Interfaces
       href: fundamentals/types/interfaces.md
+    - name: Enumerations
+      href: fundamentals/types/enums.md
     - name: Generics
       href: fundamentals/types/generics.md
-    - name: Tuples and anonymous types
-      href: fundamentals/types/anonymous-types.md
-    # TODO: Delegates, lambdas and events
+    - name: Tuples and deconstruction
+      href: fundamentals/types/tuples.md
+    - name: Type conversions, casting, and boxing
+      href: fundamentals/types/conversions.md
+    - name: Lambda expressions, delegates, and events
+      href: fundamentals/types/delegates-lambdas.md
+    - name: Anonymous types
+      href: programming-guide/classes-and-structs/anonymous-types.md
+  - name: Null safety
+    items:
+    - name: Overview
+      href: fundamentals/null-safety/index.md
+    - name: Nullable value types
+      href: fundamentals/null-safety/nullable-value-types.md
+    - name: Nullable reference types
+      href: fundamentals/null-safety/nullable-reference-types.md
+    - name: Null operators
+      href: fundamentals/null-safety/null-operators.md
+    - name: Common tasks
+      items:
+      - name: Resolve nullable warnings
+        href: fundamentals/null-safety/common-tasks/resolve-warnings.md
+  - name: Strings
+    items:
+    - name: Overview
+      href: fundamentals/strings/index.md
+    - name: Raw string literals
+      href: fundamentals/strings/raw-string-literals.md
+    - name: String interpolation
+      href: fundamentals/strings/interpolation.md
+    - name: nameof operator
+      href: fundamentals/strings/nameof.md
+    - name: Common tasks
+      items:
+      - name: Search strings
+        href: fundamentals/strings/common-tasks/search.md
+      - name: Split strings into substrings
+        href: fundamentals/strings/common-tasks/split.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -118,12 +156,15 @@ items:
       href: fundamentals/tutorials/file-based-programs.md
     - name: "How to display command-line arguments"
       href: fundamentals/tutorials/how-to-display-command-line-arguments.md
-      # TODO: Command line processing tutorials
+    - name: "Build a command-line app with System.CommandLine"
+      href: fundamentals/tutorials/system-command-line.md
       # TODO: DTOs (tuples, anonymous types and records)
       # TODO: Values (record structs and structs)
       # TODO: Classes and objects (interfaces and classes)
       # TODO: Generics (methods and classes)
       # TODO: Fundamentals of using lambdas
+    - name: Express your design intent with nullable reference types
+      href: fundamentals/tutorials/nullable-reference-types.md
     - name: Introduction to classes
       href: fundamentals/tutorials/classes.md
     - name: Object-oriented C#
@@ -137,8 +178,12 @@ items:
     - name: Converting types
       displayName: cast, is, as
       href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+    - name: Choosing between tuples, records, structs, and classes
+      href: fundamentals/tutorials/choosing-types.md
     - name: Build data-driven algorithms with pattern matching
       href: fundamentals/tutorials/pattern-matching.md
+    - name: Use record types
+      href: fundamentals/tutorials/records.md
     # separating data and algorithms
     # Data transformations
     ## TODO: Replace with a tutorial (include async exceptions)
@@ -149,21 +194,13 @@ items:
 - name: What's new in C#
   items:
   - name: C# 15
-    items:
-    - name: What's new in C# 15
-      href: whats-new/csharp-15.md
+    href: whats-new/csharp-15.md
   - name: C# 14
-    items:
-    - name: What's new in C# 14
-      href: whats-new/csharp-14.md
+    href: whats-new/csharp-14.md
   - name: C# 13
-    items:
-    - name: What's new in C# 13
-      href: whats-new/csharp-13.md
+    href: whats-new/csharp-13.md
   - name: C# 12
-    items:
-    - name: What's new in C# 12
-      href: whats-new/csharp-12.md
+    href: whats-new/csharp-12.md
   - name: Breaking changes
     items:
     - name: After C# 14
@@ -194,14 +231,10 @@ items:
       href: whats-new/tutorials/primary-constructors.md
 - name: Tutorials
   items:
-  - name: Explore record types
-    href: tutorials/records.md
   - name: Explore top-level statements
     href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
-  - name: Work with nullable reference types
-    href: tutorials/nullable-reference-types.md
   - name: Explore patterns in objects
     href: tutorials/patterns-objects.md
   - name: String interpolation
@@ -288,10 +321,6 @@ items:
     href: asynchronous-programming/generate-consume-asynchronous-stream.md
 - name: C# concepts
   items:
-  - name: Nullable reference types
-    href: nullable-references.md
-  - name: Nullable reference migrations
-    href: nullable-migration-strategies.md
   - name: Methods
     href: methods.md
   - name: Iterators
@@ -321,12 +350,8 @@ items:
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Split strings into substrings
-    href: how-to/parse-strings-using-split.md
   - name: Concatenate strings
     href: how-to/concatenate-multiple-strings.md
-  - name: Search strings
-    href: how-to/search-strings.md
   - name: Modify string contents
     href: how-to/modify-string-contents.md
   - name: Compare strings
@@ -335,6 +360,10 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Update existing apps
+    items:
+    - name: Nullable migration strategies
+      href: advanced-topics/update-applications/nullable-migration-strategies.md
   - name: Reflection and attributes
     items:
     - name: Overview

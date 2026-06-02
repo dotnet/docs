@@ -329,9 +329,9 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `name` variable assignment. The **Locals** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
-1. Respond to the prompt by entering a string in the console window and pressing <kbd>Enter</kbd>. The console is unresponsive, and the string you entered isn't displayed in the console window, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will nevertheless capture your input.
+1. Respond to the prompt by entering a string in the console window and pressing <kbd>Enter</kbd>. The console is unresponsive, and the string you entered isn't displayed in the console window, but the <xref:System.Console.ReadLine*?displayProperty=nameWithType> method will nevertheless capture your input.
 
-1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `currentDate` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The console window also displays the string you entered at the prompt.
+1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `currentDate` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine*?displayProperty=nameWithType> method. The console window also displays the string you entered at the prompt.
 
 1. Press <kbd>F11</kbd>. The **Locals** window shows the value of the `currentDate` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The console window is unchanged.
 
@@ -371,11 +371,11 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
-   The **Debug Console** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
+   The **Debug Console** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine*?displayProperty=nameWithType> method will capture your input.
 
 1. Select **Step Into** or press <kbd>F11</kbd>.
 
-   Visual Studio Code highlights the `currentDate` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
+   Visual Studio Code highlights the `currentDate` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine*?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
 
 1. Select **Step Into** or press <kbd>F11</kbd>.
 

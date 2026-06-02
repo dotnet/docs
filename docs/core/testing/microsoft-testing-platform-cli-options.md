@@ -1,15 +1,15 @@
 ---
-title: Microsoft.Testing.Platform CLI options reference
-description: Find platform and extension command-line options for Microsoft.Testing.Platform in one place.
+title: Microsoft.Testing.Platform (MTP) CLI options reference
+description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/24/2026
+ms.date: 06/01/2026
 ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform CLI options reference
+# Microsoft.Testing.Platform (MTP) CLI options reference
 
-This article gives a central entry point for Microsoft.Testing.Platform command-line options.
+This article gives a central entry point for MTP command-line options.
 
 ## Platform options
 
@@ -53,6 +53,13 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
   Specifies a [*testconfig.json*](microsoft-testing-platform-config.md) file.
 
+- **`--debug`**
+
+  Pauses test execution at startup so you can attach a debugger to the test process. Equivalent to setting the `TESTINGPLATFORM_WAIT_ATTACH_DEBUGGER` [environment variable](./microsoft-testing-platform-config.md#testingplatform_wait_attach_debugger-environment-variable) to `1`. Not supported on browser platforms.
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 1.9.0. It replaces the previous `--debug-wait-attach` option (introduced in MTP 1.6.0); the old name was removed and must no longer be used.
+
 - **`--diagnostic`**
 
   Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
@@ -77,6 +84,13 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
   Exit the test process if dependent process exits. PID must be provided.
 
+- **`--filter-uid`**
+
+  Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 1.8.0.
+
 - **`--help`**
 
   Prints out a description of how to use the command.
@@ -98,18 +112,25 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 
 - **`--list-tests`**
 
-  List available tests. Tests won't be executed.
+  Lists the available tests without executing them. Optionally takes an argument that controls the output format: `text` (default, human-readable) or `json`.
+
+  > [!NOTE]
+  > The `json` output format is available in MTP starting with version 2.3.0.
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
 
   > [!NOTE]
-  > This feature is available in Microsoft.Testing.Platform starting with version 1.5.
+  > This feature is available in MTP starting with version 1.5.
 
 - **`--minimum-expected-tests`**
 
   Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.
+
+- **`--no-banner`**
+
+  Disables the startup banner, the copyright message, and the telemetry banner. The same effect can be achieved through the `TESTINGPLATFORM_NOBANNER` or `DOTNET_NOLOGO` [environment variables](./microsoft-testing-platform-config.md#environment-variables).
 
 - **`--results-directory`**
 
@@ -118,6 +139,10 @@ This article gives a central entry point for Microsoft.Testing.Platform command-
 - **`--timeout`**
 
   A global test execution timeout. Takes one argument as string in the format `<value>[h|m|s]` where `<value>` is float.
+
+- **`--treenode-filter`**
+
+  Filters the tests to run by using a tree filter expression. Tree filters offer richer matching than `--filter` for advanced scenarios.
 
 ## Extension options by scenario
 
@@ -142,6 +167,6 @@ For advanced diagnostics of registered providers and options, run with `--info`.
 
 ## See also
 
-- [Microsoft.Testing.Platform overview](./microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md)
+- [MTP overview](./microsoft-testing-platform-intro.md)
+- [MTP features](./microsoft-testing-platform-features.md)
 - [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)

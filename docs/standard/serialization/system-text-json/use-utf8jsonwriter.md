@@ -13,7 +13,7 @@ ms.topic: how-to
 
 This article shows how to use the <xref:System.Text.Json.Utf8JsonWriter> type for building custom serializers.
 
-<xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
+<xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class:
 
@@ -28,7 +28,7 @@ This approach also works if you need to do custom escaping. `System.Text.Json` d
 
 ## Write raw JSON
 
-In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. You can use <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> to do that. Here are typical scenarios:
+In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. You can use <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue*?displayProperty=nameWithType> to do that. Here are typical scenarios:
 
 * You have an existing JSON payload that you want to enclose in new JSON.
 * You want to format values differently from the default `Utf8JsonWriter` formatting.
@@ -45,14 +45,14 @@ The [StringEscapeHandling](https://www.newtonsoft.com/json/help/html/T_Newtonsof
 
 To write null values by using `Utf8JsonWriter`, call:
 
-* <xref:System.Text.Json.Utf8JsonWriter.WriteNull%2A> to write a key-value pair with null as the value.
-* <xref:System.Text.Json.Utf8JsonWriter.WriteNullValue%2A> to write null as an element of a JSON array.
+* <xref:System.Text.Json.Utf8JsonWriter.WriteNull*> to write a key-value pair with null as the value.
+* <xref:System.Text.Json.Utf8JsonWriter.WriteNullValue*> to write null as an element of a JSON array.
 
-For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A> and <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A> are equivalent to `WriteNull` and `WriteNullValue`.
+For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWriter.WriteString*> and <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue*> are equivalent to `WriteNull` and `WriteNullValue`.
 
 ## Write Timespan, Uri, or char values
 
-To write `Timespan`, `Uri`, or `char` values, format them as strings (by calling `ToString()`, for example) and call <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A>.
+To write `Timespan`, `Uri`, or `char` values, format them as strings (by calling `ToString()`, for example) and call <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue*>.
 
 ## See also
 

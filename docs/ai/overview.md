@@ -1,7 +1,7 @@
 ---
 title: Develop .NET apps with AI features
 description: Learn how you can build .NET applications that include AI features.
-ms.date: 12/10/2025
+ms.date: 04/15/2026
 ms.topic: overview
 ---
 
@@ -53,12 +53,12 @@ We recommend the following sequence of tutorials and articles for an introductio
 |-----------------------------|-------------------------------------------------------------------------|
 | Create a chat application   | [Build an Azure AI chat app with .NET](./quickstarts/build-chat-app.md) |
 | Summarize text              | [Summarize text using Azure AI chat app](./quickstarts/prompt-model.md) |
-| Chat with your data         | [Get insight about your data from a .NET Azure AI chat app](./quickstarts/build-vector-search-app.md) |
+| Chat with your data         | [Get insight about your data from a .NET Azure AI chat app](./vector-stores/how-to/build-vector-search-app.md) |
 | Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](./quickstarts/use-function-calling.md) |
 | Generate images             | [Generate images from text](./quickstarts/text-to-image.md) |
 | Train your own model        | [ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
-Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](./conceptual/how-genai-and-llms-work.md).
+Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](./conceptual/how-genai-and-llms-work.md). If you're not sure which .NET AI tool or SDK to use for your scenario, see [Decide which tool to use](./dotnet-ai-ecosystem.md#decide-which-tool-to-use).
 
 ## Next steps
 

@@ -40,7 +40,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 10. A
 | [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
 | [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
 | [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
-| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager`1> |
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
 | [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
@@ -58,6 +58,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 10. A
 | [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 | [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
 | [CA2265](quality-rules/ca2265.md) | Usage | Warning | .NET 9 | Do not compare `Span<T>` to `null` or `default` |
+| [CA2266](quality-rules/ca2266.md) | Usage | Warning | .NET 10 | File-based program entry point should start with `#!` |
 
 # [.NET 9](#tab/net-9)
 
@@ -75,7 +76,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 9. Ad
 | [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
 | [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
 | [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
-| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager`1> |
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
 | [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
@@ -109,7 +110,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 8. Ad
 | [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
 | [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
 | [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
-| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager`1> |
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
 | [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |

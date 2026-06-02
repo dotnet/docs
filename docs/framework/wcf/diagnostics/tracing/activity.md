@@ -46,7 +46,7 @@ This topic describes activity traces in the Windows Communication Foundation (WC
 
  Traces can be emitted using any schema, and across Microsoft platforms. "e2e" (for "End to End") is a commonly used schema. This schema includes a 128 bit identifier (gAId), the trace source name, and process ID. In managed code, <xref:System.Diagnostics.XmlWriterTraceListener> emits traces in the E2E schema.
 
- Developers can set the AID that is emitted with a trace by setting the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property with a Guid on Thread Local Storage (TLS). The following example demonstrates this.
+ Developers can set the AID that is emitted with a trace by setting the <xref:System.Diagnostics.CorrelationManager.ActivityId> property with a Guid on Thread Local Storage (TLS). The following example demonstrates this.
 
 ```csharp
 // set the current Activity ID to a new GUID.

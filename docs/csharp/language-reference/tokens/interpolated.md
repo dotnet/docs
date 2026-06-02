@@ -84,7 +84,7 @@ To resolve an interpolated string to a culture-specific result string, use the <
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="CultureSpecific":::
 
-In .NET 5 and earlier versions of .NET, use implicit conversion of an interpolated string to a <xref:System.FormattableString> instance. Then, you can use an instance <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method or a static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a culture-specific result string. The following example shows how to do that:
+In .NET 5 and earlier versions of .NET, use implicit conversion of an interpolated string to a <xref:System.FormattableString> instance. Then, you can use an instance <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method or a static <xref:System.FormattableString.Invariant*?displayProperty=nameWithType> method to produce a culture-specific result string. The following example shows how to do that:
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="CultureSpecificByFormattableString":::
 
@@ -96,22 +96,18 @@ If you're new to string interpolation, see the [String interpolation in C#](../.
 
 ## Compilation of interpolated strings
 
-The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName> processes it. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
+The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharpstandard/standard/attributes.md#235101-custom-interpolated-string-expression-handlers). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName> processes it. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
 
 > [!NOTE]
 > One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, might not evaluate all the interpolation expressions within the interpolated string under all conditions. That behavior means side effects of those expressions might not occur.
 
-If an interpolated string has the type `string`, the compiler typically transforms it into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+If an interpolated string has the type `string`, the compiler typically transforms it into a <xref:System.String.Format*?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format*?displayProperty=nameWithType> with <xref:System.String.Concat*?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
-If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
+If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create*?displayProperty=nameWithType> method.
 
 ## C# language specification
 
-For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following new feature specifications:
-
-- [Improved interpolated strings](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md)
-- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
+For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) and [custom interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#235101-custom-interpolated-string-expression-handlers) sections of the [C# language specification](~/_csharpstandard/standard/README.md). See also [String literals](~/_csharpstandard/standard/lexical-structure.md#6456-string-literals) for raw string literals.
 
 ## See also
 
@@ -119,6 +115,6 @@ For more information, see the [Interpolated string expressions](~/_csharpstandar
 - [Strings](../../programming-guide/strings/index.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
-- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.String.Format*?displayProperty=nameWithType>
 - [Simplify interpolation (style rule IDE0071)](../../../fundamentals/code-analysis/style-rules/ide0071.md)
 - [String interpolation in C# 10 and .NET 6 (.NET blog)](https://devblogs.microsoft.com/dotnet/string-interpolation-in-c-10-and-net-6/)

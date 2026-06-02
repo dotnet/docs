@@ -37,7 +37,7 @@ The correct approach is to use thread-safe operations that don't require shared 
 :::code language="csharp" source="./snippets/potential-pitfalls-with-plinq/csharp/RaceConditionExample/Program.cs" id="RaceConditionGood":::
 :::code language="vb" source="./snippets/potential-pitfalls-with-plinq/vb/RaceConditionExample/Program.vb" id="RaceConditionGood":::
 
-The `Sum` method handles parallelization internally in a thread-safe manner, ensuring correct results without the need for explicit synchronization. Other safe approaches include using <xref:System.Linq.ParallelEnumerable.Aggregate%2A> for custom aggregations or collecting results into thread-safe collections like <xref:System.Collections.Concurrent.ConcurrentBag%601>.
+The `Sum` method handles parallelization internally in a thread-safe manner, ensuring correct results without the need for explicit synchronization. Other safe approaches include using <xref:System.Linq.ParallelEnumerable.Aggregate*> for custom aggregations or collecting results into thread-safe collections like <xref:System.Collections.Concurrent.ConcurrentBag`1>.
 
 ## Avoid over-parallelization
 
@@ -77,7 +77,7 @@ a.AsParallel().Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));
 Most static methods in .NET are thread-safe and can be called from multiple threads concurrently. However, even in these cases, the synchronization involved can lead to significant slowdown in the query.
 
 > [!NOTE]
-> You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine%2A> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in PLINQ queries.
+> You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine*> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in PLINQ queries.
 
 ## Avoid unnecessary ordering operations
 
@@ -85,9 +85,9 @@ When PLINQ executes a query in parallel, it divides the source sequence into par
 
 ## Prefer ForAll to ForEach when it is possible
 
-Although PLINQ executes a query on multiple threads, if you consume the results in a `foreach` loop (`For Each` in Visual Basic), then the query results must be merged back into one thread and accessed serially by the enumerator. In some cases, this is unavoidable; however, whenever possible, use the `ForAll` method to enable each thread to output its own results, for example, by writing to a thread-safe collection such as <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType>.
+Although PLINQ executes a query on multiple threads, if you consume the results in a `foreach` loop (`For Each` in Visual Basic), then the query results must be merged back into one thread and accessed serially by the enumerator. In some cases, this is unavoidable; however, whenever possible, use the `ForAll` method to enable each thread to output its own results, for example, by writing to a thread-safe collection such as <xref:System.Collections.Concurrent.ConcurrentBag`1?displayProperty=nameWithType>.
 
-The same issue applies to <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. In other words, `source.AsParallel().Where().ForAll(...)` should be strongly preferred to `Parallel.ForEach(source.AsParallel().Where(), ...)`.
+The same issue applies to <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType>. In other words, `source.AsParallel().Where().ForAll(...)` should be strongly preferred to `Parallel.ForEach(source.AsParallel().Where(), ...)`.
 
 ## Be aware of thread affinity issues
 
@@ -95,7 +95,7 @@ Some technologies, for example, COM interoperability for Single-Threaded Apartme
 
 ## Don't assume that iterations of ForEach, For, and ForAll always execute in parallel
 
-It is important to keep in mind that individual iterations in a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>, or <xref:System.Linq.ParallelEnumerable.ForAll%2A> loop may but do not have to execute in parallel. Therefore, you should avoid writing any code that depends for correctness on parallel execution of iterations or on the execution of iterations in any particular order.
+It is important to keep in mind that individual iterations in a <xref:System.Threading.Tasks.Parallel.For*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType>, or <xref:System.Linq.ParallelEnumerable.ForAll*> loop may but do not have to execute in parallel. Therefore, you should avoid writing any code that depends for correctness on parallel execution of iterations or on the execution of iterations in any particular order.
 
 For example, this code is likely to deadlock:
 

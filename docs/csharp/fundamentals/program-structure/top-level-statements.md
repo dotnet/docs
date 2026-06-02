@@ -39,7 +39,7 @@ The compiler generates a method to serve as the program entry point for a projec
 | `return`                | `static int Main(string[] args)`             |
 | No `await` or `return`  | `static void Main(string[] args)`            |
 
-Starting with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* by using the command `dotnet <file.cs>`, or by using the `#!/usr/bin/env dotnet` directive as the first line (Unix shells only).
+Starting with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* by using the command `dotnet <file.cs>`, or directly using the filename on Unix (for example, `./file.cs`). The latter requires including the `#!/usr/bin/env dotnet` directive as the first line and setting the execute permission (`chmod +x <file>`).
 
 ## `using` directives
 
@@ -73,4 +73,4 @@ To return an exit code when the application ends, use the `return` statement. Th
 
 - [Main() and command-line arguments](main-command-line.md)
 - [General structure of a C# program](index.md)
-- [Feature specification - Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)
+- [Feature specification - Top-level statements](~/_csharpstandard/standard/basic-concepts.md#713-using-top-level-statements)

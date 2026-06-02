@@ -53,14 +53,14 @@ Although the compiler doesn't have a separate preprocessor, it processes the dir
 
 The C# compiler ignores any preprocessor directive that starts with `#:` or `#!`.
 
-The `#!` preprocessor directive enables Unix shells to directly execute a C# file by using `dotnet run`. For example:
+The `#!` preprocessor directive enables Unix operating systems to directly execute the C# file using its filename.
 
 ```csharp
-#!/usr/bin/env dotnet run
+#!/usr/bin/env dotnet
 Console.WriteLine("Hello");
 ```
 
-The preceding code snippet informs a Unix shell to execute the file by using `dotnet run`. The `/usr/bin/env` command locates the `dotnet` executable in your PATH, making this approach portable across different Unix and macOS distributions. The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
+The first line in the file informs a Unix operating system to execute the file using `dotnet`. The `/usr/bin/env` command locates the `dotnet` executable in your PATH, making this approach portable across different Unix and macOS distributions where `dotnet` may be installed at different locations. In addition to including this line in the C# file, you need to set the *execute* (`x`) permission (`chmod +x <file>`).
 
 The `#:` directives that are used in file-based apps are described in the [file based apps reference](../../core/sdk/file-based-apps.md).
   
@@ -340,7 +340,7 @@ page.razor(2, 2, 2, 27)error CS0117: 'DateTime' does not contain a definition fo
 
 Line 2, column 6 in `page.razor` is where the text `@DateTime.NowAndThen` begins, noted by `(2, 6)` in the directive. That span of `@DateTime.NowAndThen` ends at line 2, column 27, noted by the `(2, 27)` in the directive. The text for `DateTime.NowAndThen` begins in column 15 of `page.g.cs`, noted by the `15` in the directive. The compiler reports the error in its location in `page.razor`. The developer can navigate directly to the error in their source code, not the generated source.
 
-To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
+To see more examples of this format, see [Line directives](~/_csharpstandard/standard/lexical-structure.md#658-line-directives) in the C# specification.
 
 ## Pragmas
 

@@ -1,7 +1,7 @@
 Using character-based indexing with the <xref:System.Text.StringBuilder.Chars(System.Int32)> property can be extremely slow under the following conditions:
 
 - The <xref:System.Text.StringBuilder> instance is large (for example, it consists of several tens of thousands of characters).
-- The <xref:System.Text.StringBuilder> is "chunky." That is, repeated calls to methods such as <xref:System.Text.StringBuilder.Append*?displayProperty=nameWithType> have automatically expanded the object's <xref:System.Text.StringBuilder.Capacity*?displayProperty=nameWithType> property and allocated new chunks of memory to it.
+- The <xref:System.Text.StringBuilder> is "chunky." That is, repeated calls to methods such as <xref:System.Text.StringBuilder.Append*?displayProperty=nameWithType> have automatically expanded the object's <xref:System.Text.StringBuilder.Capacity?displayProperty=nameWithType> property and allocated new chunks of memory to it.
 
 Performance is severely impacted because each character access walks the entire linked list of chunks to find the correct buffer to index into.
 

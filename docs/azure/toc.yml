@@ -28,14 +28,12 @@ items:
       items:
         - name: Overview
           href: ../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
-        - name: FAQ
-          href: ../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
-        - name: Predefined Tasks
-          href: ./migration/appmod/predefined-tasks.md
-        - name: Working with assessment
-          href: ./migration/appmod/working-with-assessment.md
         - name: Quickstart - Assess and migrate a .NET project
           href: ./migration/appmod/quickstart.md
+        - name: Assessment guide
+          href: ./migration/appmod/working-with-assessment.md
+        - name: Predefined tasks
+          href: ./migration/appmod/predefined-tasks.md
         - name: Quickstart - Containerize a .NET project
           href: ./migration/appmod/containerization.md
         - name: Quickstart - Deploy a .NET project to Azure
@@ -46,6 +44,8 @@ items:
           href: ./migration/appmod/copilot-cli-support.md
         - name: Sample - Contoso University
           href: ./migration/appmod/sample.md
+        - name: FAQ
+          href: ../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Azure Migrate application and code assessment
       items:
       - name: Overview

@@ -14,6 +14,10 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/ai/conceptual/ai-tools.md",
+      "redirect_url": "/dotnet/ai/conceptual/calling-tools"
+    },
+    {
       "source_path_from_root": "/docs/ai/conceptual/evaluation-libraries.md",
       "redirect_url": "/dotnet/ai/evaluation/libraries",
       "redirect_document_id": true
@@ -21,6 +25,11 @@
     {
       "source_path_from_root": "/docs/ai/conceptual/understanding-openai-functions.md",
       "redirect_url": "/dotnet/ai/conceptual/ai-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/ai/conceptual/vector-databases.md",
+      "redirect_url": "/dotnet/ai/vector-stores/overview",
       "redirect_document_id": true
     },
     {
@@ -41,6 +50,11 @@
       "redirect_url": "/dotnet/ai"
     },
     {
+      "source_path_from_root": "/docs/ai/quickstarts/build-vector-search-app.md",
+      "redirect_url": "/dotnet/ai/vector-stores/how-to/build-vector-search-app",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/ai/quickstarts/evaluate-ai-response.md",
       "redirect_url": "/dotnet/ai/evaluation/evaluate-ai-response",
       "redirect_document_id": true
@@ -55,7 +69,7 @@
     },
     {
       "source_path_from_root": "/docs/ai/quickstarts/quickstart-ai-chat-with-data.md",
-      "redirect_url": "/dotnet/ai/quickstarts/build-vector-search-app"
+      "redirect_url": "/dotnet/ai/vector-stores/how-to/build-vector-search-app"
     },
     {
       "source_path_from_root": "/docs/ai/quickstarts/quickstart-assistants.md",
@@ -98,6 +112,21 @@
       "source_path_from_root": "/docs/ai/tutorials/evaluate-with-reporting.md",
       "redirect_url": "/dotnet/ai/evaluation/evaluate-with-reporting",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/ai/tutorials/tutorial-ai-vector-search.md",
+      "redirect_url": "/dotnet/ai/vector-stores/tutorial-vector-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/ai/vector-stores/embedding-generation.md",
+      "redirect_url": "/dotnet/ai/vector-stores/define-your-data-model#vector-properties-and-embedding-generation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/ai/vector-stores/hybrid-search.md",
+      "redirect_url": "/dotnet/ai/vector-stores/vector-search#hybrid-search",
+      "redirect_document_id": false
     }
   ]
 }

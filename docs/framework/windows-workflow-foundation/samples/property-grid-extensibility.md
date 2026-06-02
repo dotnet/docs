@@ -22,7 +22,7 @@ The inline editor sample demonstrates the following:
 
 - Creates a type that derives from <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor>.
 
-- In the constructor, the <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> value is set with a Windows Presentation Foundation (WPF) data template. This can be bound to a XAML template, but in this sample, code is used to initialize data binding.
+- In the constructor, the <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate*> value is set with a Windows Presentation Foundation (WPF) data template. This can be bound to a XAML template, but in this sample, code is used to initialize data binding.
 
 - The data template has a data context of the <xref:System.Activities.Presentation.PropertyEditing.PropertyValue> of the item rendered in the property grid. Note in the following code (from CustomInlineEditor.cs) that this context then binds to the `Value` property.
 
@@ -55,7 +55,7 @@ The dialog editor sample demonstrates the following:
 
 1. Creates a type that derives from <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor>.
 
-2. Sets the <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> value in the constructor with a WPF data template. This can be created in XAML, but in this sample, this is created in code.
+2. Sets the <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate*> value in the constructor with a WPF data template. This can be created in XAML, but in this sample, this is created in code.
 
 3. The data template has a data context of the <xref:System.Activities.Presentation.PropertyEditing.PropertyValue> of the item rendered in the property grid. In the following code, this then binds to the `Value` property. It is critical to also include an <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> to provide the button that raises the dialog in FilePickerEditor.cs.
 
@@ -80,7 +80,7 @@ The dialog editor sample demonstrates the following:
     this.InlineEditorTemplate.VisualTree = stack;
     ```
 
-4. Overrides the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog%2A> method in the designer type to handle the display of the dialog. In this sample, a basic <xref:System.Windows.Forms.FileDialog> is shown.
+4. Overrides the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog*> method in the designer type to handle the display of the dialog. In this sample, a basic <xref:System.Windows.Forms.FileDialog> is shown.
 
     ```csharp
     public override void ShowDialog(PropertyValue propertyValue, IInputElement commandSource)

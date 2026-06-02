@@ -2,10 +2,10 @@
 description: "orderby clause - C# Reference"
 title: "orderby clause"
 ms.date: 01/22/2026
-f1_keywords: 
+f1_keywords:
   - "orderby"
   - "orderby_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "orderby clause [C#]"
   - "orderby keyword [C#]"
 ---
@@ -23,7 +23,7 @@ The following example performs a primary sort on the students' last names, and t
 
 :::code language="csharp" source="./snippets/Orderby.cs" id="22":::
 
-At compile time, the `orderby` clause translates to a call to the <xref:System.Linq.Enumerable.OrderBy%2A> method. Multiple keys in the `orderby` clause translate to <xref:System.Linq.Enumerable.ThenBy%2A> method calls.
+At compile time, the `orderby` clause translates to a call to the <xref:System.Linq.Enumerable.OrderBy*> method. Multiple keys in the `orderby` clause translate to <xref:System.Linq.Enumerable.ThenBy*> method calls.
 
 ## See also
 

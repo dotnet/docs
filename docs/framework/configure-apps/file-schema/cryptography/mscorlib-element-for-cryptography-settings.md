@@ -46,7 +46,7 @@ Contains the [`<cryptographySettings>` element](cryptographysettings-element.md)
 
 ## Example
 
- The following example shows how to use the `<mscorlib>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.
+ The following example shows how to use the `<mscorlib>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create*> method to return a `MyCryptoRSAClass` object.
 
 ```xml
 <configuration>
@@ -69,7 +69,7 @@ Contains the [`<cryptographySettings>` element](cryptographysettings-element.md)
 
 ## See also
 
-- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>
+- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*>
 - <xref:System.Security.Cryptography>
 - [Configuration File Schema](../index.md)
 - [Cryptography Settings Schema](index.md)

@@ -30,7 +30,7 @@ ILogger provides the logging story for the OpenTelemetry implementation for .NET
 
 ### Console
 
-The <xref:System.Console?displayProperty=nameWithType> class has the <xref:System.Console.Write%2A> and <xref:System.Console.WriteLine%2A> methods that can be used in simple logging scenarios. These APIs are very easy to get started with but the solution won't be as flexible as a general purpose logging API. Console only allows [unstructured logging](#structured-and-unstructured-logging) and there is no configuration support to select which log messages are enabled or to retarget to a different [sink](#sinks). Using the ILogger or Trace APIs with a console sink doesn't take much additional effort and keeps the logging configurable.
+The <xref:System.Console?displayProperty=nameWithType> class has the <xref:System.Console.Write*> and <xref:System.Console.WriteLine*> methods that can be used in simple logging scenarios. These APIs are very easy to get started with but the solution won't be as flexible as a general purpose logging API. Console only allows [unstructured logging](#structured-and-unstructured-logging) and there is no configuration support to select which log messages are enabled or to retarget to a different [sink](#sinks). Using the ILogger or Trace APIs with a console sink doesn't take much additional effort and keeps the logging configurable.
 
 ### DiagnosticSource
 

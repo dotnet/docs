@@ -112,7 +112,7 @@ The `NativeMethods` class contains managed prototypes for the `TestStructInStruc
 
 - `TestArrayInStruct` declares a reference to type `MyArrayStruct` as its parameter.
 
-Structures as arguments to methods are passed by value unless the parameter contains the `ref` (**ByRef** in Visual Basic) keyword. For example, the `TestStructInStruct` method passes a reference (the value of an address) to an object of type `MyPerson2` to unmanaged code. To manipulate the structure that `MyPerson2` points to, the sample creates a buffer of a specified size and returns its address by combining the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> methods. Next, the sample copies the content of the managed structure to the unmanaged buffer. Finally, the sample uses the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A?displayProperty=nameWithType> method to marshal data from the unmanaged buffer to a managed object and the <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A?displayProperty=nameWithType> method to free the unmanaged block of memory.
+Structures as arguments to methods are passed by value unless the parameter contains the `ref` (**ByRef** in Visual Basic) keyword. For example, the `TestStructInStruct` method passes a reference (the value of an address) to an object of type `MyPerson2` to unmanaged code. To manipulate the structure that `MyPerson2` points to, the sample creates a buffer of a specified size and returns its address by combining the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem*?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.SizeOf*?displayProperty=nameWithType> methods. Next, the sample copies the content of the managed structure to the unmanaged buffer. Finally, the sample uses the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure*?displayProperty=nameWithType> method to marshal data from the unmanaged buffer to a managed object and the <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem*?displayProperty=nameWithType> method to free the unmanaged block of memory.
 
 ### Declaring Prototypes
 
@@ -356,11 +356,11 @@ The `NativeMethods` class contains the overloaded `TestOutArrayOfStructs` protot
 
 The `App` class implements the `UsingMarshaling` method, which performs all the tasks necessary to pass the array. The array is marked with the `out` (`ByRef` in Visual Basic) keyword to indicate that data passes from callee to caller. The implementation uses the following <xref:System.Runtime.InteropServices.Marshal> class methods:
 
-- <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> to marshal data from the unmanaged buffer to a managed object.
+- <xref:System.Runtime.InteropServices.Marshal.PtrToStructure*> to marshal data from the unmanaged buffer to a managed object.
 
-- <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> to release the memory reserved for strings in the structure.
+- <xref:System.Runtime.InteropServices.Marshal.DestroyStructure*> to release the memory reserved for strings in the structure.
 
-- <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> to release the memory reserved for the array.
+- <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem*> to release the memory reserved for the array.
 
 As previously mentioned, C# allows unsafe code and Visual Basic does not. In the C# sample, `UsingUnsafePointer` is an alternative method implementation that uses pointers instead of the <xref:System.Runtime.InteropServices.Marshal> class to pass back the array containing the `MyUnsafeStruct` structure.
 

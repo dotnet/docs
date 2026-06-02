@@ -1,6 +1,6 @@
 ---
-title: Build a test framework for Microsoft.Testing.Platform
-description: Learn how to create a custom test framework for Microsoft.Testing.Platform, including registration, lifecycle, and test node reporting.
+title: Build a test framework for Microsoft.Testing.Platform (MTP)
+description: Learn how to create a custom test framework for Microsoft.Testing.Platform (MTP), including registration, lifecycle, and test node reporting.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 02/24/2026
@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Build a test framework
 
-This article explains how to create a custom test framework for Microsoft.Testing.Platform. The test framework is the only mandatory extension. It discovers and runs tests, and reports results back to the platform.
+This article explains how to create a custom test framework for Microsoft.Testing.Platform (MTP). The test framework is the only mandatory extension. It discovers and runs tests, and reports results back to the platform.
 
 For the full extension point summary and in-process/out-of-process concepts, see [Create custom extensions](./microsoft-testing-platform-architecture.md).
 
@@ -21,7 +21,7 @@ The test framework is the primary extension that provides the testing platform w
 
 ### Register a testing framework
 
-This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md) documentation.
+This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [MTP architecture](./microsoft-testing-platform-architecture.md) documentation.
 
 The registration API is defined as follows:
 
@@ -412,11 +412,13 @@ internal sealed class TestingFramework
 
 As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, skipped, etc.). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
 
-In this segment, we'll elucidate the various well-known `IProperty` options and their respective implications.
+As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, and skipped). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
 
-For a comprehensive list of well-known properties, see [TestNodeProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeProperties.cs). If you notice that a property description is missing, please file an issue.
+This section describes the various well-known `IProperty` options and their respective implications.
 
-These properties can be divided in the following categories:
+For a comprehensive list of well-known properties, see [TestNodeStateProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeStateProperties.cs) (and other `Property` types in the same directory). If you notice that a property description is missing, please file an issue.
+
+These properties can be divided into the following categories:
 
 1. [*Generic information*](#generic-information): Properties that can be included in any kind of request.
 1. [*Discovery information*](#discovery-information): Properties that are supplied during a `DiscoverTestExecutionRequest` discovery request.

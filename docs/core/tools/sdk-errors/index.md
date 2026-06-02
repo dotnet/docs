@@ -2,7 +2,8 @@
 title: ".NET SDK error list"
 description: A complete list of NETSDKxxxx errors, with links to more info where more info is available.
 ms.topic: error-reference
-ms.date: 12/11/2023
+ms.date: 05/15/2026
+ai-usage: ai-assisted
 f1_keywords:
 - NETSDK1001
 - NETSDK1002
@@ -168,6 +169,9 @@ f1_keywords:
 - NETSDK1211
 - NETSDK1212
 - NETSDK1213
+- NETSDK1238
+- NETSDK1239
+- NETSDK1240
 ---
 # .NET SDK error list
 
@@ -374,3 +378,7 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |NETSDK1211|EnableSingleFileAnalyzer is not supported for the target framework. Consider multi-targeting to a supported framework to enable single-file analysis, and set EnableSingleFileAnalyzer only for the supported frameworks. For example:<br>`<EnableSingleFileAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</EnableSingleFileAnalyzer>`|
 |NETSDK1212|IsTrimmable and EnableTrimAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable trimming, and set IsTrimmable only for the supported frameworks. For example:<br>`<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>`|
 |NETSDK1213|Targeting .NET 8.0 or higher in Visual Studio 2022 17.7 is not supported.|
+|[NETSDK1237](netsdk1237.md)|Assembly '{0}' was listed in PublishReadyToRunPartialAssemblies but is being compiled into a composite image. Partial compilation is only supported for assemblies compiled separately. The assembly will be compiled fully into the composite image.|
+|[NETSDK1238](netsdk1238.md)|The current .NET SDK ({0}) has known vulnerabilities ({1}).{2} See <https://dotnet.microsoft.com/download>|
+|[NETSDK1239](netsdk1239.md)|The current .NET SDK ({0}) is end of life as of {1}. It will receive no further security updates: <https://dotnet.microsoft.com/download>|
+|[NETSDK1240](netsdk1240.md)|The current .NET SDK ({0}) has no newer release in its feature band. Update to version {1}: <https://dotnet.microsoft.com/download>|

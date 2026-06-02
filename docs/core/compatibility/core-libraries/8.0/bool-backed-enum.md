@@ -33,10 +33,10 @@ If you're using a Boolean-backed enumeration type, use a regular Boolean type or
 
 ## Affected APIs
 
-- <xref:System.Enum.Parse%2A?displayProperty=fullName>
-- <xref:System.Enum.TryParse%2A?displayProperty=fullName>
+- <xref:System.Enum.Parse*?displayProperty=fullName>
+- <xref:System.Enum.TryParse*?displayProperty=fullName>
 - <xref:System.Enum.Format(System.Type,System.Object,System.String)?displayProperty=fullName>
-- <xref:System.Enum.GetName%2A?displayProperty=fullName>
-- <xref:System.Enum.GetNames%2A?displayProperty=fullName>
-- <xref:System.Enum.GetValues%2A?displayProperty=fullName>
-- <xref:System.Enum.ToObject%2A?displayProperty=fullName>
+- <xref:System.Enum.GetName*?displayProperty=fullName>
+- <xref:System.Enum.GetNames*?displayProperty=fullName>
+- <xref:System.Enum.GetValues*?displayProperty=fullName>
+- <xref:System.Enum.ToObject*?displayProperty=fullName>

@@ -63,7 +63,7 @@ Exception types support the following features:
 
 ## Exception class properties
 
-The <xref:System.Exception> class includes a number of properties that help identify the code location, the type, the help file, and the reason for the exception: <xref:System.Exception.StackTrace*>, <xref:System.Exception.InnerException*>, <xref:System.Exception.Message*>, <xref:System.Exception.HelpLink*>, <xref:System.Exception.HResult*>, <xref:System.Exception.Source*>, <xref:System.Exception.TargetSite*>, and <xref:System.Exception.Data*>.
+The <xref:System.Exception> class includes a number of properties that help identify the code location, the type, the help file, and the reason for the exception: <xref:System.Exception.StackTrace>, <xref:System.Exception.InnerException>, <xref:System.Exception.Message>, <xref:System.Exception.HelpLink>, <xref:System.Exception.HResult>, <xref:System.Exception.Source>, <xref:System.Exception.TargetSite>, and <xref:System.Exception.Data>.
 
 When a causal relationship exists between two or more exceptions, the <xref:System.Exception.InnerException> property maintains this information. The outer exception is thrown in response to this inner exception. The code that handles the outer exception can use the information from the earlier inner exception to handle the error more appropriately. Supplementary information about the exception can be stored as a collection of key/value pairs in the <xref:System.Exception.Data> property.
 

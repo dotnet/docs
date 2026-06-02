@@ -49,7 +49,7 @@ Also note that
   byte b = 300;  // CS0031: Constant value '300' cannot be converted to a 'byte'
   ```
 
-If the constant value isn't within the range of the destination type, a compiler error [CS0031](../../misc/cs0031.md) occurs.
+If the constant value isn't within the range of the destination type, a compiler error [CS0031](../compiler-messages/overloaded-operator-errors.md#overflow-and-underflow-errors) occurs.
 
 ## Explicit numeric conversions
 

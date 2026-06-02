@@ -19,7 +19,7 @@ The following table shows the default values of C# types:
 | [char](char.md)                                                             | `'\0'` (U+0000) |
 | [enum](enum.md)                                                             | The value produced by the expression `(E)0`, where `E` is the enum identifier. |
 | [struct](struct.md)                                                         | The value produced by setting all value-type fields to their default values and all reference-type fields to `null`. |
-| Any [nullable value type](nullable-value-types.md)                          | An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of a nullable value type. |
+| Any [nullable value type](nullable-value-types.md)                          | An instance for which the <xref:System.Nullable`1.HasValue> property is `false` and the <xref:System.Nullable`1.Value> property is undefined. That default value is also known as the *null* value of a nullable value type. |
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -57,8 +57,8 @@ For more information, see the following sections of the [C# language specificati
 
 - [Default values](~/_csharpstandard/standard/variables.md#93-default-values)
 - [Default constructors](~/_csharpstandard/standard/types.md#833-default-constructors)
-- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
-- [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
+- [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1659-constructors)
+- [Auto default structs](~/_csharpstandard/standard/structs.md#16581-field-initializers)
 
 ## See also
 

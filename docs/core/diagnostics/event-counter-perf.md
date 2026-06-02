@@ -40,7 +40,7 @@ Below is an example of how to implement an <xref:System.Diagnostics.Tracing.Even
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
-The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> line is the <xref:System.Diagnostics.Tracing.EventSource> part and is not part of <xref:System.Diagnostics.Tracing.EventCounter>, it was written to show that you can log a message together with the event counter.
+The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent*?displayProperty=nameWithType> line is the <xref:System.Diagnostics.Tracing.EventSource> part and is not part of <xref:System.Diagnostics.Tracing.EventCounter>, it was written to show that you can log a message together with the event counter.
 
 ## Add an action filter
 

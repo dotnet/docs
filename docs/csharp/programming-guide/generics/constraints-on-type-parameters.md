@@ -6,7 +6,7 @@ f1_keywords:
   - "defaultconstraint_CSharpKeyword"
   - "notnull_CSharpKeyword"
   - "unmanaged_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "generics [C#], type constraints"
   - "type constraints [C#]"
   - "type parameters [C#], constraints"
@@ -29,7 +29,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 |`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` must be a non-nullable type that implements the specified interface.|
 |`where T :` *\<interface name>?*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` can be a nullable reference type, a non-nullable reference type, or a value type. `T` can't be a nullable value type.|
 |`where T : U`|The type argument supplied for `T` must be or derive from the argument supplied for `U`. In a nullable context, if `U` is a non-nullable reference type, `T` must be a non-nullable reference type. If `U` is a nullable reference type, `T` can be either nullable or non-nullable. |
-|`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md#default-constraint) spec proposal.|
+|`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharpstandard/standard/classes.md#1525-type-parameter-constraints) section of the C# language specification.|
 |`where T : allows ref struct`|This anti-constraint declares that the type argument for `T` can be a `ref struct` type. The generic type or method must obey ref safety rules for any instance of `T` because it might be a `ref struct`.|
 
 Some constraints are mutually exclusive, and some constraints must be in a specified order:
@@ -101,7 +101,7 @@ The `class` constraint in a nullable context specifies that the type argument mu
 
 ## `default` constraint
 
-The addition of nullable reference types complicates the use of `T?` in a generic type or method. `T?` can be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted as `T?` for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
+The addition of nullable reference types complicates the use of `T?` in a generic type or method. `T?` can be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted as `T?` for value types and reference types. However, if `T` is an instance of <xref:System.Nullable`1>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
 
 Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. The derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` nor `struct` constraint.
 
@@ -169,7 +169,7 @@ The preceding syntax would require implementers to use [explicit interface imple
 The `allows ref struct` anti-constraint declares that the corresponding type argument can be a [`ref struct`](../../language-reference/builtin-types/ref-struct.md) type. Instances of that type parameter must obey the following rules:
 
 - It can't be boxed.
-- It participates in [ref safety rules](~/_csharpstandard/standard/structs.md#16415-safe-context-constraint).
+- It participates in [ref safety rules](~/_csharpstandard/standard/structs.md#16515-safe-context-constraint).
 - Instances can't be used where a `ref struct` type isn't allowed, such as `static` fields.
 - Instances can be marked with the `scoped` modifier.
 

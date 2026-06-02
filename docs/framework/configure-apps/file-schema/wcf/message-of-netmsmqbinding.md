@@ -54,8 +54,8 @@ None
 ## See also
 
 - <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>
-- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>
-- <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message*>
+- <xref:System.ServiceModel.NetMsmqSecurity.Message*>
 - <xref:System.ServiceModel.MessageSecurityOverMsmq>
 - [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

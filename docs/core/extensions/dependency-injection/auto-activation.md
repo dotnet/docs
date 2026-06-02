@@ -45,7 +45,7 @@ The auto-activation package provides extension methods to register services that
 
 ### AddActivatedSingleton
 
-The <xref:Microsoft.Extensions.DependencyInjection.AutoActivationExtensions.AddActivatedSingleton%2A> method registers a service as a singleton and ensures it's activated at startup:
+The <xref:Microsoft.Extensions.DependencyInjection.AutoActivationExtensions.AddActivatedSingleton*> method registers a service as a singleton and ensures it's activated at startup:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -61,7 +61,7 @@ In this example, `MyService` is instantiated when `BuildServiceProvider()` is ca
 
 ### ActivateSingleton
 
-The <xref:Microsoft.Extensions.DependencyInjection.AutoActivationExtensions.ActivateSingleton%2A> method marks an already-registered singleton service for activation at startup:
+The <xref:Microsoft.Extensions.DependencyInjection.AutoActivationExtensions.ActivateSingleton*> method marks an already-registered singleton service for activation at startup:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -78,7 +78,7 @@ This approach is useful when you have existing service registrations that you wa
 
 ### TryAddActivatedSingleton
 
-The <xref:Microsoft.Extensions.DependencyInjection.AutoActivationExtensions.TryAddActivatedSingleton%2A> method conditionally registers a service for auto-activation only if it hasn't been registered already:
+The <xref:Microsoft.Extensions.DependencyInjection.AutoActivationExtensions.TryAddActivatedSingleton*> method conditionally registers a service for auto-activation only if it hasn't been registered already:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;

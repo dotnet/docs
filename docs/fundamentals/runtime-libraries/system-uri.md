@@ -79,7 +79,7 @@ In .NET Framework 4.5 and later versions, IRI is always enabled and can't be cha
 
 Enabling IDN converts all Unicode labels in a domain name to their Punycode equivalents. Punycode names contain only ASCII characters and always start with the xn-- prefix. The reason for this is to support existing DNS servers on the Internet, since most DNS servers only support ASCII characters (see RFC 3940).
 
-Enabling IDN affects the value of the <xref:System.Uri.DnsSafeHost?displayProperty=nameWithType> property. Enabling IDN can also change the behavior of the <xref:System.Uri.Equals*>, <xref:System.Uri.OriginalString*>, <xref:System.Uri.GetComponents*>, and <xref:System.Uri.IsWellFormedOriginalString*> methods.
+Enabling IDN affects the value of the <xref:System.Uri.DnsSafeHost?displayProperty=nameWithType> property. Enabling IDN can also change the behavior of the <xref:System.Uri.Equals*>, <xref:System.Uri.OriginalString>, <xref:System.Uri.GetComponents*>, and <xref:System.Uri.IsWellFormedOriginalString*> methods.
 
 There are three possible values for IDN depending on the DNS servers that are used:
 

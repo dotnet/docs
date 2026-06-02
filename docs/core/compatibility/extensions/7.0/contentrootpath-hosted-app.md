@@ -19,11 +19,11 @@ Starting with .NET 7, when a hosted application is launched with the current dir
 
 ## Previous behavior
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A?displayProperty=nameWithType> defaulted the <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath> property to <xref:System.Environment.CurrentDirectory?displayProperty=nameWithType> regardless of the value of the current directory.
+<xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder*?displayProperty=nameWithType> defaulted the <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath> property to <xref:System.Environment.CurrentDirectory?displayProperty=nameWithType> regardless of the value of the current directory.
 
 ## New behavior
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A?displayProperty=nameWithType> no longer defaults the <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath> property to the current directory if it's the `System` special folder on Windows. Instead, the base directory of the application is used.
+<xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder*?displayProperty=nameWithType> no longer defaults the <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath> property to the current directory if it's the `System` special folder on Windows. Instead, the base directory of the application is used.
 
 ## Type of breaking change
 
@@ -46,4 +46,4 @@ Host
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder*?displayProperty=fullName>

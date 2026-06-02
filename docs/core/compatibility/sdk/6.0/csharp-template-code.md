@@ -8,10 +8,10 @@ ms.date: 07/30/2021
 Starting in .NET 6, the project templates that ship with the .NET SDK use the latest C# language features. The following language features are used in template-generated code or enabled by default in the project:
 
 - [Top-level statements](../../../../csharp/fundamentals/program-structure/top-level-statements.md)
-- [Global using directives](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/GlobalUsingDirective.md)
-- [File-scoped namespaces](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/file-scoped-namespaces.md)
-- [Target-typed new expressions](/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)
-- [Nullable reference types](../../../../csharp/nullable-references.md)
+- [Global using directives](/dotnet/csharp/language-reference/language-specification/namespaces#1452-global-using-alias-directives)
+- [File-scoped namespaces](/dotnet/csharp/language-reference/language-specification/namespaces#143-namespace-declarations)
+- [Target-typed new expressions](/dotnet/csharp/language-reference/language-specification/expressions#128172-object-creation-expressions)
+- [Nullable reference types](../../../../csharp/fundamentals/null-safety/nullable-reference-types.md)
 - [Async Main return values](../../../../csharp/fundamentals/program-structure/main-command-line.md#main-return-values)
 
 Some of the latest C# language features are not supported by previous target frameworks, so you might experience issues in the following scenarios:

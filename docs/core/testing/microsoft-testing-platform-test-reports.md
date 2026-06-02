@@ -1,9 +1,9 @@
 ---
-title: Microsoft.Testing.Platform test reports
-description: Learn about the Microsoft.Testing.Platform extensions for generating test report files (TRX, Azure DevOps).
+title: Microsoft.Testing.Platform (MTP) test reports
+description: Learn about the MTP extensions for generating test report files (TRX, Azure DevOps).
 author: evangelink
 ms.author: amauryleve
-ms.date: 02/25/2026
+ms.date: 06/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -56,7 +56,19 @@ builder.TestHost.AddAzureDevOpsProvider();
 
 | Option | Description |
 |---|---|
-| `--report-azdo` | Enable outputting errors / warnings in CI builds. |
-| `--report-azdo-severity` | Severity to use for the reported event. Options are: `error` (default) and `warning`. |
+| `--report-azdo` | Enables the Azure DevOps report generator. Errors and warnings are written to the output in a format that Azure DevOps understands. |
+| `--report-azdo-severity` | Severity to use for reported events. Valid values are `error` (default) and `warning`. |
+| `--report-azdo-flaky-history` | Queries Azure DevOps test result history for the past N days (1-90) and annotates reported failures with flakiness context. Requires `--report-azdo`. |
+| `--report-azdo-demote-known-flaky` | Demotes failures that are flaky enough in the Azure DevOps history window (default threshold is 25%) from errors to warnings. Requires `--report-azdo` and `--report-azdo-flaky-history`. |
+| `--report-azdo-quarantine-file` | Path to a text file that lists quarantined test fully qualified names or glob patterns. Matching failures are reported as warnings. Requires `--report-azdo`. |
+| `--report-azdo-upload-artifacts` | Uploads test result files and/or adds build tags to Azure DevOps. Valid values are `off` (default), `tags-only`, `files`, and `all`. |
+| `--report-azdo-upload-artifact-include` | Includes files in the Azure DevOps artifact upload using glob patterns relative to the test results directory. Defaults to `**/*`. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
+| `--report-azdo-upload-artifact-exclude` | Excludes files from the Azure DevOps artifact upload using glob patterns relative to the test results directory. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
+| `--report-azdo-upload-artifact-name` | Overrides the Azure DevOps artifact container name. Defaults to `TestResults_{assemblyName}_{tfm}`. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
+| `--publish-azdo-test-results` | Publishes test results live to the Azure DevOps **Tests** tab. |
+| `--publish-azdo-run-name` | Sets a custom Azure DevOps test run name for live test-result publishing. Requires `--publish-azdo-test-results`. |
+
+> [!NOTE]
+> The Azure DevOps extension became stable in MTP 1.9.0 (`--report-azdo` and `--report-azdo-severity`). All other options in the table — `--report-azdo-flaky-history`, `--report-azdo-demote-known-flaky`, `--report-azdo-quarantine-file`, `--report-azdo-upload-artifacts`, `--report-azdo-upload-artifact-include`, `--report-azdo-upload-artifact-exclude`, `--report-azdo-upload-artifact-name`, `--publish-azdo-test-results`, and `--publish-azdo-run-name` — are available in MTP starting with version 2.3.0.
 
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.

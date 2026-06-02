@@ -320,7 +320,7 @@ For example, a closed `public` base class can have an `internal` direct descenda
 
 To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`) or make every direct descendant at least as accessible as the closed base type.
 
-When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `GateState?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched. The same rule applies to closed structs lifted to nullable types.
+When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `GateState?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
 
 Derivation from a closed class isn't transitive: a non-closed descendant of a closed class can be derived from in other assemblies. The compiler only treats the *direct* descendants as the exhaustive set. To make a switch over a descendant also benefit from exhaustiveness checking, declare the descendant `closed` (or `sealed`).
 

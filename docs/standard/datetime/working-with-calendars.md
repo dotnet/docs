@@ -74,6 +74,8 @@ The following example changes the calendar used by the Arabic (Saudi Arabia) cul
 [!code-csharp[Conceptual.Calendars#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/changecalendar2.cs#2)]
 [!code-vb[Conceptual.Calendars#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/changecalendar2.vb#2)]
 
+Before writing to the console, it's format is changed to UTF8 so that arabic letters can be displayed correctly.
+
 ## Dates and calendars
 
 With the exception of the constructors that include a parameter of type <xref:System.Globalization.Calendar> and allow the elements of a date (that is, the month, the day, and the year) to reflect values in a designated calendar, both <xref:System.DateTime> and <xref:System.DateTimeOffset> values are always based on the Gregorian calendar. This means, for example, that the <xref:System.DateTime.Year?displayProperty=nameWithType> property returns the year in the Gregorian calendar, and the <xref:System.DateTime.Day?displayProperty=nameWithType> property returns the day of the month in the Gregorian calendar.

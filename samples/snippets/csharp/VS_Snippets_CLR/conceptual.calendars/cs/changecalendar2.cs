@@ -9,6 +9,7 @@ public class Example
    {
       DateTime date1 = new DateTime(2011, 6, 20);
 
+      Console.OutputEncoding = Encoding.UTF8;
       DisplayCurrentInfo();
       // Display the date using the current culture and calendar.
       Console.WriteLine(date1.ToString("d"));

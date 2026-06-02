@@ -300,6 +300,57 @@ You can also nest a subpattern within a slice pattern, as the following example 
 
 For more information, see [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern) in the C# language specification.
 
+## Closed hierarchy patterns
+
+Starting in C# 15, a `switch` expression whose governing type is a [`closed`](../keywords/closed.md) class is *exhaustive* when its arms handle every direct descendant of that class. The compiler doesn't require a default arm because the switch is exhaustive:
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="GateStateTypes":::
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="DescribeGateState":::
+
+A closed hierarchy switch is exhaustive only when every direct descendant is reachable from the location of the switch. If a direct descendant is less accessible than the closed base type and isn't visible at the switch site, the compiler treats it as unhandled and warns that the switch isn't exhaustive.
+
+For example, a closed `public` base class can have an `internal` direct descendant. Code in the same assembly sees the full set of descendants, but code in another assembly doesn't:
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="ShapeTypes":::
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="ShapeAreaSameAssembly":::
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="ShapeNameCrossAssembly":::
+
+To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`) or make every direct descendant at least as accessible as the closed base type.
+
+When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `GateState?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched. The same rule applies to closed structs lifted to nullable types.
+
+Derivation from a closed class isn't transitive: a non-closed descendant of a closed class can be derived from in other assemblies. The compiler only treats the *direct* descendants as the exhaustive set. To make a switch over a descendant also benefit from exhaustiveness checking, declare the descendant `closed` (or `sealed`).
+
+Because indirect descendants don't expand the exhaustive set of the closed base, you don't have to add an arm for every transitive subtype to satisfy exhaustiveness. Subsumption between arms still works the same way it does for any class hierarchy: an arm that matches a base type covers every subtype, and a later arm that matches one of those subtypes is unreachable. Consider a closed `Vehicle` whose direct descendants are `Car` and `Truck`, plus an indirect descendant `Sedan` declared in another assembly:
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="VehicleTypes":::
+
+A switch over `Vehicle` is exhaustive after it handles `Car` and `Truck`, even though `Sedan` exists. The `Car` arm covers every `Sedan` value:
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="VehicleCategoryExhaustive":::
+
+To dispatch on `Sedan` specifically, place its arm *before* the `Car` arm. The `Car` arm remains reachable because it still matches every `Car` that isn't a `Sedan`:
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="VehicleCategorySedanFirst":::
+
+Reversing those two arms produces a subsumption error, just as it would in any other class hierarchy. The compiler detects that the `Car` arm already covers `Sedan`:
+
+```csharp
+string Category(Vehicle v) => v switch
+{
+    Car => "car",
+    Sedan => "sedan",  // Error CS8510: the pattern is unreachable. It has already been handled by 'Car => ...'.
+    Truck => "truck",
+};
+```
+
+If you want exhaustiveness to follow the hierarchy further down, declare `Car` itself `closed`. The compiler then treats `Sedan` (and any other direct descendant of `Car`) as part of an exhaustive set rooted at `Car`, so a switch arm of `Car` no longer satisfies exhaustiveness on its own when other direct descendants of `Car` exist. Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
+
+For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/closed-hierarchies.md).
+
 ## Union patterns
 
 Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns automatically *unwrap* the union. They apply to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:

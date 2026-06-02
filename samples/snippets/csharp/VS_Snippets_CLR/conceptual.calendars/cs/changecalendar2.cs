@@ -18,20 +18,18 @@ public class Example
 
       // Change the current culture to Arabic (Saudi Arabia).
       Thread.CurrentThread.CurrentCulture = arSA;
-
       // Display date and information about the current culture.
       DisplayCurrentInfo();
-      Console.WriteLine(date1.ToString("dd'/'MM'/'yyyy"));
+      Console.WriteLine(date1.ToString("d"));
       Console.WriteLine();
 
       // Change the calendar to Hijri.
       Calendar hijri = new HijriCalendar();
-      if (CalendarExists(arSA, hijri))
-      {
+      if (CalendarExists(arSA, hijri)) {
          arSA.DateTimeFormat.Calendar = hijri;
          // Display date and information about the current culture.
          DisplayCurrentInfo();
-         Console.WriteLine(date1.ToString("dd'/'MM'/'yyyy"));
+         Console.WriteLine(date1.ToString("d"));
       }
    }
 
@@ -57,9 +55,9 @@ public class Example
 //
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.UmAlQuraCalendar
-//    18/07/1432
+//    18/07/32
 //
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.HijriCalendar
-//    19/07/1432
+//    19/07/32
 // </Snippet2>

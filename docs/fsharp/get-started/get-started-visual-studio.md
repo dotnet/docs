@@ -1,7 +1,7 @@
 ---
 title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
-ms.date: 6/2/2026
+ms.date: 06/02/2026
 ---
 # Get started with F# in Visual Studio
 
@@ -15,13 +15,15 @@ One of the most basic projects in Visual Studio is the console app. Here's how t
 
 1. Open Visual Studio.
 
-2. On the start window, choose **Create a new project**.
+1. On the start window, choose **Create a new project**.
 
-3. On the **Create a new project** page, choose **F#** from the Language list.
+1. On the **Create a new project** page, choose **F#** from the Language list.
 
-4. Choose the **Console App** template, and then choose **Next**.
+1. Choose the **Console App** template, and then choose **Next**.
 
-6. On the **Configure your new project** page, enter a name in the **Project name** box. Then, choose **Create**. On the **Additional information** screen, accept the default .NET version, or choose your desired version.
+1. On the **Configure your new project** page, enter a name in the **Project name** box. Then, choose **Next**.
+
+1. On the **Additional information** screen, accept the default .NET version, or choose your desired version. Then, choose **Create**.
 
    Visual Studio creates the new F# project. You can see it in the Solution Explorer window.
 

@@ -51,7 +51,7 @@ public class ArrivalsMonitor : IObserver<BaggageInfo>
             // Flight has unloaded its baggage; remove from the monitor.
             if (info.Carousel is 0)
             {
-                string flightNumber = string.Format("{0,5}", info.FlightNumber);
+                string flightNumber = $"{info.FlightNumber,5}";
                 for (int index = _flights.Count - 1; index >= 0; index--)
                 {
                     string flightInfo = _flights[index];

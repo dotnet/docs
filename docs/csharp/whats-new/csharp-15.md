@@ -95,7 +95,17 @@ string Describe(GateState state) => state switch
 
 The `closed` modifier is a contextual keyword. A `closed` class is implicitly `abstract` and can't be combined with `sealed`, `static`, or an explicit `abstract` modifier. Derivation isn't transitive: a non-closed descendant of a closed class can still be derived from in other assemblies. To extend exhaustiveness checking down the hierarchy, mark intermediate descendants `closed` as well.
 
-For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md).
+> [!NOTE]
+> In C# 15 preview 5, the runtime doesn't yet ship `System.Runtime.CompilerServices.ClosedAttribute`. Until it does, every project that uses the `closed` modifier must declare the attribute itself:
+>
+> ```csharp
+> namespace System.Runtime.CompilerServices;
+>
+> [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
+> public sealed class ClosedAttribute : Attribute { }
+> ```
+
+For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md). You can copy the examples in this section, including the `ClosedAttribute` workaround, from the [keywords snippets project](https://github.com/dotnet/docs/blob/main/docs/csharp/language-reference/keywords/snippets/shared) in the `dotnet/docs` GitHub repository.
 
 <!-- Add when available
 ## See also

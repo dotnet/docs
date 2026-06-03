@@ -71,13 +71,13 @@ The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resourc
 - [`container.cpu.request.utilization`](#metric-containercpurequestutilization)
 - [`container.cpu.time`](#metric-containercputime)
 - [`container.memory.limit.utilization`](#metric-containermemorylimitutilization)
+- [`container.memory.request.utilization`](#metric-containermemoryrequestutilization)
 - [`container.memory.usage`](#metric-containermemoryusage)
 - [`process.cpu.utilization`](#metric-processcpuutilization)
 - [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)
-- [`system.network.connections`](#metric-systemnetworkconnections)
 
 > [!NOTE]
-> Metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter are in experimental stage. This means that there could be breaking changes to them.
+> Some metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter (such as network and disk I/O) are in experimental stage and not documented here. The core CPU and memory metrics listed below are stable.
 
 ##### Metric: `container.cpu.limit.utilization`
 
@@ -91,7 +91,7 @@ Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.
 
 ##### Metric: `container.cpu.request.utilization`
 
-The instrument is only available on a system running on containers on Linux.
+The instrument is only available on a system running on containers both on Windows and Linux.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
@@ -119,6 +119,16 @@ The instrument is only available on a system running on containers both on Windo
 
 Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
+##### Metric: `container.memory.request.utilization`
+
+The instrument is only available on a system running on containers both on Windows and Linux.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `container.memory.request.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running containerized application relative to resource request in range `[0, 1]`. |
+
+Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 9.8.0.
+
 ##### Metric: `container.memory.usage`
 
 The instrument is only available on a system running on containers either on Windows or Linux.
@@ -142,18 +152,5 @@ Available starting in: .NET 8.
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
 | `dotnet.process.memory.virtual.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running application in range `[0, 1]`. |
-
-Available starting in: .NET 8.
-
-##### Metric: `system.network.connections`
-
-| Name | Instrument Type | Unit (UCUM) | Description |
-| ---- | --------------- | ----------- | ----------- |
-| `system.network.connections` | <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> | `{connection}` | Number of network connections by state. |
-
-| Attribute              | Type     | Description                              | Examples          | Presence |
-|------------------------|----------|------------------------------------------|-------------------|----------|
-| `network.type`         | `string` | OSI network layer or non-OSI equivalent. | `ipv4`; `ipv6`    | Always   |
-| `system.network.state` | `string` | The state of a network connection.       | `close`; `listen` | Always   |
 
 Available starting in: .NET 8.

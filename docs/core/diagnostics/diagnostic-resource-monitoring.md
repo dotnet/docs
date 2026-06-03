@@ -98,8 +98,9 @@ For the source code of this example, see the [Resource monitoring sample](https:
 Since the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface is deprecated, migrate to the metrics-based approach. The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` package provides several metrics that you can use instead, for instance:
 
 - `container.cpu.limit.utilization`: The CPU consumption share of the running containerized application relative to resource limit in range `[0, 1]`. Available for containerized apps on Linux and Windows.
-- `container.cpu.request.utilization`: The CPU consumption share of the running containerized application relative to resource request in range `[0, 1]`. Available for containerized apps on Linux.
+- `container.cpu.request.utilization`: The CPU consumption share of the running containerized application relative to resource request in range `[0, 1]`. Available for containerized apps on Linux and Windows.
 - `container.memory.limit.utilization`: The memory consumption share of the running containerized application relative to resource limit in range `[0, 1]`. Available for containerized apps on Linux and Windows.
+- `container.memory.request.utilization`: The memory consumption share of the running containerized application relative to resource request in range `[0, 1]`. Available for containerized apps on Linux and Windows.
 
 For more information about the available metrics, see the [Built-in metrics: Microsoft.Extensions.Diagnostics.ResourceMonitoring](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring) section.
 
@@ -220,7 +221,7 @@ Once registered, the library emits the following metrics under the `Microsoft.Ex
 | `process.cpu.utilization` | ObservableGauge | Process CPU usage relative to the CPU limit, in the range [0, 1] |
 | `dotnet.process.memory.virtual.utilization` | ObservableGauge | Process memory usage relative to the memory limit, in the range [0, 1] |
 
-For the full list of metrics emitted by the base resource monitoring library (including network and disk I/O), see [.NET extensions metrics: Microsoft.Extensions.Diagnostics.ResourceMonitoring](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
+For the full list of metrics emitted by the base resource monitoring library, see [.NET extensions metrics: Microsoft.Extensions.Diagnostics.ResourceMonitoring](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
 
 ### Example output
 

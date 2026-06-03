@@ -142,6 +142,9 @@ ML.NET provides APIs to consume models in other formats like TensorFlow and ONNX
 
 These APIs are powered by [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET) and the [ONNX Runtime](https://onnxruntime.ai/).
 
+> [!IMPORTANT]
+> Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
 #### TensorFlow
 
 [TensorFlow](https://www.tensorflow.org/) is a deep learning framework with a rich ecosystem and a variety of pretrained models available in the [TensorFlow Hub](https://www.tensorflow.org/hub).
@@ -177,7 +180,7 @@ An inference pipeline using a pretrained ONNX model might look like the followin
 
 ```csharp
 // Append ApplyOnnxModel transform to pipeline containing any preprocessing transforms
-pipeline.Append((modelFile: modelLocation, outputColumnNames: new[] { TinyYoloModelSettings.ModelOutput }, inputColumnNames: new[] { TinyYoloModelSettings.ModelInput })
+pipeline.Append(mlContext.Transforms.ApplyOnnxModel(modelFile: modelLocation, outputColumnNames: new[] { TinyYoloModelSettings.ModelOutput }, inputColumnNames: new[] { TinyYoloModelSettings.ModelInput }));
 
 // Create ML.NET model from pipeline
 var model = pipeline.Fit(data);

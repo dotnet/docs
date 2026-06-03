@@ -33,4 +33,13 @@ public static class ClosedSwitchExamples
         // No warning: every direct descendant of 'GateState' is handled, and null is handled.
     };
     //</NullableSwitch>
+
+    //<TypeParameterConstrained>
+    public static string DescribeGate<X>(X gate) where X : GateState => gate switch
+    {
+        Closed => "closed",
+        Open(var percent) => $"{percent}% open",
+        // No warning: 'X' is constrained to a closed type, so its direct descendants exhaust the switch.
+    };
+    //</TypeParameterConstrained>
 }

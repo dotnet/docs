@@ -62,6 +62,14 @@ If you omit the `null` arm, the compiler warns that the pattern `null` isn't han
 
 For more information about how the compiler determines exhaustiveness, including how closed hierarchies interact with generic constraints and accessibility, see [Closed hierarchy patterns](../operators/patterns.md#closed-hierarchy-patterns).
 
+## Type parameters constrained to a closed type
+
+A type parameter constrained to a closed class is treated as that closed class for exhaustiveness checks. A `switch` expression whose governing value has such a type parameter is exhaustive when it handles every direct descendant of the closed constraint:
+
+:::code language="csharp" source="./snippets/shared/Closed.cs" id="TypeParameterConstrained":::
+
+This rule applies whether the type parameter appears on a method or on the containing type.
+
 ## Contextual keyword
 
 `closed` is a contextual keyword. It has special meaning only when it appears as a modifier on a class declaration. You can continue to use `closed` as an identifier in other contexts. If you need to use `closed` as an identifier in a position where the modifier would also be valid, prefix it with `@` (for example, `@closed`) to tell the compiler to treat it as an identifier rather than the modifier.

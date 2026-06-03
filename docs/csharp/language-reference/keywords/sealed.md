@@ -70,3 +70,4 @@ To determine whether to seal a class, method, or property, generally consider th
 - [Modifiers](index.md)
 - [override](override.md)
 - [virtual](virtual.md)
+- [closed](closed.md)

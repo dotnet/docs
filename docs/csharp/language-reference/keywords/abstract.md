@@ -102,4 +102,5 @@ The `Shape` class is declared `abstract`, which means you can't instantiate it d
 
 - [virtual](./virtual.md)
 - [override](./override.md)
+- [closed](./closed.md)
 - [C# Keywords](./index.md)

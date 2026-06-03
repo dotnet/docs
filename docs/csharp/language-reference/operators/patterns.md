@@ -349,6 +349,12 @@ string Category(Vehicle v) => v switch
 
 If you want exhaustiveness to follow the hierarchy further down, declare `Car` itself `closed`. The compiler then treats `Sedan` (and any other direct descendant of `Car`) as part of an exhaustive set rooted at `Car`, so a switch arm of `Car` no longer satisfies exhaustiveness on its own when other direct descendants of `Car` exist. Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
 
+### Type parameter governing types
+
+A `switch` expression whose governing type is a type parameter constrained to a closed class is exhaustive on the same terms as a switch over the closed class itself. To dispatch on a closed hierarchy from generic code, constrain the type parameter to the closed base and handle every direct descendant:
+
+:::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="TypeParamGoverningType":::
+
 For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/closed-hierarchies.md).
 
 ## Union patterns

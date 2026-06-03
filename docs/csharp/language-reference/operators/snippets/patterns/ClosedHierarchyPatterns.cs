@@ -81,3 +81,16 @@ public static class VehicleExamples
     };
     // </VehicleCategorySedanFirst>
 }
+
+public static class TypeParamGoverningTypeExamples
+{
+    // <TypeParamGoverningType>
+    public static string Describe<X>(X gate) where X : GateState => gate switch
+    {
+        Closed => "closed",
+        Open(var percent) => $"{percent}% open",
+        // No warning: 'X' is constrained to the closed type 'GateState',
+        // so handling every direct descendant exhausts the switch.
+    };
+    // </TypeParamGoverningType>
+}

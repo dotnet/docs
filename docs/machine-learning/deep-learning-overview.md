@@ -180,13 +180,13 @@ An inference pipeline using a pretrained ONNX model might look like the followin
 
 ```csharp
 // Append ApplyOnnxModel transform to pipeline containing any preprocessing transforms
-pipeline.Append(mlContext.Transforms.ApplyOnnxModel(modelFile: modelLocation, outputColumnNames: new[] { TinyYoloModelSettings.ModelOutput }, inputColumnNames: new[] { TinyYoloModelSettings.ModelInput }));
+pipeline = pipeline.Append(mlContext.Transforms.ApplyOnnxModel(modelFile: modelLocation, outputColumnNames: new[] { TinyYoloModelSettings.ModelOutput }, inputColumnNames: new[] { TinyYoloModelSettings.ModelInput }));
 
 // Create ML.NET model from pipeline
 var model = pipeline.Fit(data);
 
 // Use the model to make predictions
-var predictions = pipeline.Fit(data).GetColumn<float[]>(TinyYoloModelSettings.ModelOutput);
+var predictions = model.Transform(data).GetColumn<float[]>(TinyYoloModelSettings.ModelOutput);
 ```
 
 To get started consuming pretrained ONNX models with ML.NET, see the [Object detection using ONNX in ML.NET](tutorials/object-detection-onnx.md) tutorial.

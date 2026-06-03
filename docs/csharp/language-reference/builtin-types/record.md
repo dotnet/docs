@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "record keyword [C#]"
   - "record type [C#]"
+ai-usage: ai-assisted
 ---
 # Records (C# reference)
 
@@ -196,6 +197,8 @@ You can provide your own implementation of `PrintMembers` or the `ToString` over
 This section only applies to `record class` types.
 
 A record can inherit from another record. However, a record can't inherit from a class, and a class can't inherit from a record.
+
+Starting in C# 15, a `record class` can use the [`closed`](../keywords/closed.md) modifier to restrict direct derivation to its declaring assembly. Consumers can then write exhaustive `switch` expressions over its direct descendants without a default arm. For details, see [Closed hierarchy patterns](../operators/patterns.md#closed-hierarchy-patterns). The `closed` modifier doesn't apply to `record struct` types, because struct records can't be abstract.
 
 ### Positional parameters in derived record types
 

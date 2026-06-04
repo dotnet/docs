@@ -3,7 +3,8 @@ title: MSTest assertions
 description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 06/04/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest assertions
@@ -20,8 +21,8 @@ MSTest provides three assertion classes:
 | `StringAssert` | String-specific assertions for patterns, substrings, and comparisons. |
 | `CollectionAssert` | Collection assertions for comparing and validating collections. |
 
-> [!TIP]
-> When functionality exists in both `Assert` and `StringAssert`/`CollectionAssert`, prefer the `Assert` class. The `Assert` class provides better discoverability and is the recommended choice for new code. `StringAssert` and `CollectionAssert` are maintained for backward compatibility.
+> [!IMPORTANT]
+> For new code, always use the `Assert` class. The `StringAssert` and `CollectionAssert` classes are likely to be deprecated in a future release. They're maintained primarily for backward compatibility, but they're not recommended because splitting assertions across three types hurts discoverability—you can't see all available checks in a single IntelliSense list.
 
 All assertion methods accept an optional message parameter that displays when the assertion fails, helping you identify the cause:
 
@@ -107,8 +108,8 @@ public async Task AssertExamples()
 
 Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> class to compare and examine strings.
 
-> [!NOTE]
-> All `StringAssert` methods have equivalents in the `Assert` class. Prefer the `Assert` methods for better discoverability. The `StringAssert` class is maintained for backward compatibility.
+> [!WARNING]
+> The `StringAssert` class is likely to be deprecated in a future release. It's maintained for backward compatibility only and isn't recommended for new code. All `StringAssert` methods have equivalents on the `Assert` class, which offers better discoverability. To migrate existing usages, see analyzer [MSTEST0046](mstest-analyzers/mstest0046.md).
 
 Available APIs are:
 
@@ -122,8 +123,8 @@ Available APIs are:
 
 Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> class to compare collections of objects, or to verify the state of a collection.
 
-> [!NOTE]
-> When an equivalent method exists in the `Assert` class (such as `Assert.Contains`, `Assert.DoesNotContain`), prefer using `Assert` for better discoverability. The `CollectionAssert` class is maintained primarily for backward compatibility.
+> [!WARNING]
+> The `CollectionAssert` class is likely to be deprecated in a future release. It's maintained primarily for backward compatibility and isn't recommended for new code. When an equivalent method exists on `Assert` (such as `Assert.Contains`, `Assert.DoesNotContain`, or `Assert.HasCount`), use `Assert` for better discoverability.
 
 Available APIs are:
 
@@ -139,6 +140,51 @@ Available APIs are:
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.IsNotSubsetOf*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.IsSubsetOf*?displayProperty=nameWithType>
 
+## Create custom assertions with `Assert.That`
+
+The built-in assertion methods don't cover every scenario. To extend the assertion infrastructure with your own checks, MSTest exposes the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.That?displayProperty=nameWithType> singleton property as an extensibility hook. You add custom assertions as C# extension methods on the `Assert` instance type, and callers invoke them with the familiar `Assert.That.MyAssertion(...)` syntax.
+
+For better discoverability, organize project-wide assertions in a dedicated static class. Custom assertions reached through `Assert.That` show up alongside the built-in methods in IntelliSense, so consumers don't have to remember a separate helper type.
+
+### Author a custom assertion
+
+Add an extension method that targets the `Assert` type and throws <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> when the condition fails:
+
+```csharp
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+public static class CustomAssertExtensions
+{
+    public static void IsPrime(this Assert assert, int value)
+    {
+        if (value < 2 || Enumerable.Range(2, (int)Math.Sqrt(value) - 1).Any(i => value % i == 0))
+        {
+            throw new AssertFailedException($"Assert.That.IsPrime failed. Value <{value}> is not a prime number.");
+        }
+    }
+}
+```
+
+### Use a custom assertion
+
+After you import the namespace that contains your extension methods, call your custom assertion through `Assert.That`:
+
+```csharp
+[TestMethod]
+public void Compute_ReturnsPrime()
+{
+    int result = _calculator.NextPrime(10);
+    Assert.That.IsPrime(result);
+}
+```
+
+### Extension hooks on `StringAssert` and `CollectionAssert`
+
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.That?displayProperty=nameWithType> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.That?displayProperty=nameWithType> properties expose the same singleton pattern for backward compatibility. For new custom assertions, always target `Assert.That`. Otherwise, your helpers inherit the same discoverability problems as the legacy classes, and they'll need migration if `StringAssert` and `CollectionAssert` are deprecated.
+
+> [!NOTE]
+> Don't confuse the `Assert.That` singleton *property*—used as an extensibility hook—with the `Assert.That(() => condition)` extension *method* added in MSTest 3.8. The latter accepts a boolean expression and produces detailed failure messages by analyzing the expression tree (for example, `Assert.That(() => order.Total > 0)`). The two APIs share a name but serve different purposes.
+
 ## Best practices
 
 1. **Use specific assertions**: Prefer `AreEqual` over `IsTrue(a == b)` for better failure messages.
@@ -149,7 +195,9 @@ Available APIs are:
 
 1. **Use `Throws`/`ThrowsExactly` for exceptions**: In MSTest v3.8+, prefer `Assert.Throws`, `Assert.ThrowsExactly`, and their async counterparts (`ThrowsAsync`, `ThrowsExactlyAsync`) over the `ExpectedException` attribute.
 
-1. **Prefer `Assert` over `StringAssert`/`CollectionAssert`**: When functionality exists in both classes, use the `Assert` class for better discoverability and consistency.
+1. **Prefer `Assert` over `StringAssert`/`CollectionAssert`**: For better discoverability and consistency, use the `Assert` class. The `StringAssert` and `CollectionAssert` classes are likely to be deprecated in a future release.
+
+1. **Extend `Assert.That` for custom assertions**: For consistent discoverability, add custom assertions as extension methods on `Assert` and invoke them through `Assert.That`. Don't target `StringAssert.That` or `CollectionAssert.That` in new code.
 
 ## Related analyzers
 

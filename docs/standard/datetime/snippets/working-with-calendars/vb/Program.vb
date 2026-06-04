@@ -1,7 +1,7 @@
-﻿' Visual Basic .NET Document
+' Visual Basic .NET Document
 Option Strict On
 
-' <Snippet2>
+' <ChangeCalendar>
 Imports System.Globalization
 Imports System.Threading
 
@@ -9,6 +9,7 @@ Module Example
     Public Sub Main()
         Dim date1 As Date = #6/20/2011#
 
+        Console.OutputEncoding = System.Text.Encoding.UTF8
         DisplayCurrentInfo()
         ' Display the date using the current culture and calendar.
         Console.WriteLine(date1.ToString("d"))
@@ -60,4 +61,4 @@ End Module
 '    Current Culture: ar-SA
 '    Current Calendar: System.Globalization.HijriCalendar
 '    19/07/32
-' </Snippet2>
+' </ChangeCalendar>

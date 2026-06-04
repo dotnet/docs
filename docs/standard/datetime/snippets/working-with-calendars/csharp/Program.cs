@@ -1,4 +1,4 @@
-// <Snippet2>
+﻿// <ChangeCalendar>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -9,7 +9,7 @@ public class Example
    {
       DateTime date1 = new DateTime(2011, 6, 20);
 
-      Console.OutputEncoding = Encoding.UTF8;
+      Console.OutputEncoding = System.Text.Encoding.UTF8;
       DisplayCurrentInfo();
       // Display the date using the current culture and calendar.
       Console.WriteLine(date1.ToString("d"));
@@ -61,4 +61,4 @@ public class Example
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.HijriCalendar
 //    19/07/32
-// </Snippet2>
+// </ChangeCalendar>

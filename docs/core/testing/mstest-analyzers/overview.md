@@ -127,6 +127,8 @@ Rules for writing asynchronous test code correctly:
 - [MSTEST0045](mstest0045.md) - Use cooperative cancellation for timeout
 - [MSTEST0049](mstest0049.md) - Flow TestContext CancellationToken
 - [MSTEST0054](mstest0054.md) - Use CancellationToken property
+- [MSTEST0064](mstest0064.md) - Prefer async assertion methods
+- [MSTEST0067](mstest0067.md) - Avoid synchronously blocking calls in test code
 
 Related documentation: [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)
 
@@ -158,7 +160,9 @@ Rules for test initialization, cleanup, and lifecycle management:
 - [MSTEST0021](mstest0021.md) - Prefer Dispose over TestCleanup
 - [MSTEST0022](mstest0022.md) - Prefer TestCleanup over Dispose
 - [MSTEST0034](mstest0034.md) - Use ClassCleanupBehavior.EndOfClass
+- [MSTEST0047](mstest0047.md) - Suppress IDE0060 for unused TestContext parameter on initialize and cleanup methods
 - [MSTEST0050](mstest0050.md) - Global test fixture should be valid
+- [MSTEST0066](mstest0066.md) - `[Ignore]` should specify a justification
 
 Related documentation: [Lifecycle](../unit-testing-mstest-writing-tests-lifecycle.md)
 
@@ -180,6 +184,9 @@ Rules for using assertion methods correctly and effectively:
 - [MSTEST0051](mstest0051.md) - Assert.Throws should contain single statement
 - [MSTEST0053](mstest0053.md) - Avoid Assert format parameters
 - [MSTEST0058](mstest0058.md) - Avoid asserts in catch blocks
+- [MSTEST0064](mstest0064.md) - Prefer async assertion methods
+- [MSTEST0065](mstest0065.md) - Avoid Assert.AreEqual on collection types
+- [MSTEST0068](mstest0068.md) - Use Assert instead of CollectionAssert
 
 Related documentation: [Assertions](../unit-testing-mstest-writing-tests-assertions.md)
 
@@ -262,6 +269,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0044](mstest0044.md) | Design | Prefer TestMethod over DataTestMethod | Info |
 | [MSTEST0045](mstest0045.md) | Design | Use cooperative cancellation for timeout | Info |
 | [MSTEST0046](mstest0046.md) | Usage | Use Assert instead of StringAssert | Info |
+| [MSTEST0047](mstest0047.md) | Suppression | Suppress IDE0060 for unused TestContext parameter | N/A |
 | [MSTEST0048](mstest0048.md) | Usage | TestContext property usage | Warning |
 | [MSTEST0049](mstest0049.md) | Usage | Flow TestContext CancellationToken | Info |
 | [MSTEST0050](mstest0050.md) | Usage | Global test fixture should be valid | Warning |
@@ -278,6 +286,11 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0061](mstest0061.md) | Usage | Use OSCondition attribute instead of runtime check | Info |
 | [MSTEST0062](mstest0062.md) | Usage | Avoid out/ref test method parameters | Warning |
 | [MSTEST0063](mstest0063.md) | Usage | Test class should have valid constructor | Warning |
+| [MSTEST0064](mstest0064.md) | Usage | Prefer async assertion methods | Info |
+| [MSTEST0065](mstest0065.md) | Usage | Avoid `Assert.AreEqual` on collection types | Warning |
+| [MSTEST0066](mstest0066.md) | Design | `[Ignore]` should specify a justification | Info |
+| [MSTEST0067](mstest0067.md) | Usage | Avoid synchronously blocking calls in test code | Info (disabled by default) |
+| [MSTEST0068](mstest0068.md) | Usage | Use `Assert` instead of `CollectionAssert` | Info |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

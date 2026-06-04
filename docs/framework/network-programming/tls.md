@@ -180,7 +180,7 @@ The following sections show how to configure your application to use "currently 
 
 #### .NET Framework 4.6.2 using TCP transport security with certificate credentials
 
-The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the section [For WCF TCP transport using transport security with certificate credentials](#wcf-tcp-cert).
+The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see [TCP transport using transport security with certificate credentials](#tcp-transport-using-transport-security-with-certificate-credentials).
 
 #### .NET Framework 3.5 using TCP transport security with certificate credentials
 

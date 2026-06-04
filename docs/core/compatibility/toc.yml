@@ -8,6 +8,32 @@ items:
         items:
           - name: Overview
             href: 11.md
+          - name: ASP.NET Core
+            items:
+              - name: Blazor custom event registration throws when name matches a browser event
+                href: aspnetcore/11/blazor-custom-event-name-collision.md
+              - name: Blazor enhanced navigation no longer preloads resources
+                href: aspnetcore/11/blazor-enhanced-nav-preloading-disabled.md
+              - name: ConcurrencyLimiter middleware removed
+                href: aspnetcore/11/concurrencylimiter-removed.md
+              - name: Hosting emits OpenTelemetry HTTP semantic-convention tags by default
+                href: aspnetcore/11/http-activity-otel-semconv.md
+              - name: Kestrel tightens HTTP protocol compliance
+                href: aspnetcore/11/kestrel-strict-protocol-compliance.md
+              - name: Microsoft.OpenApi upgraded to 3.x
+                href: aspnetcore/11/microsoft-openapi-3x.md
+              - name: Obsolete Blazor APIs removed
+                href: aspnetcore/11/blazor-obsolete-apis-removed.md
+              - name: OpenAPI server URL no longer has a trailing slash when PathBase is empty
+                href: aspnetcore/11/openapi-server-url-trailing-slash.md
+              - name: Passkey sign-in enforces email/phone confirmation and lockout
+                href: aspnetcore/11/passkey-signin-enforces-confirmation-lockout.md
+              - name: "Response compression always emits Vary: Accept-Encoding"
+                href: aspnetcore/11/response-compression-always-vary.md
+              - name: SqlClient Active Directory authentication moved to a separate package
+                href: aspnetcore/11/sqlclient-azure-extensions-required.md
+              - name: WebAssemblyHostBuilder loads environment variables into IConfiguration
+                href: aspnetcore/11/wasm-env-vars-in-configuration.md
           - name: Core .NET libraries
             items:
               - name: CRC32 validation added when reading ZIP archive entries

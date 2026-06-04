@@ -1,54 +1,41 @@
 ﻿// <ChangeCalendar>
-using System;
 using System.Globalization;
-using System.Threading;
 
-public class Example
+DateTime date1 = new(2011, 6, 20);
+
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+DisplayCurrentInfo();
+// Display the date using the current culture and calendar.
+Console.WriteLine(date1.ToString("d"));
+Console.WriteLine();
+
+CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
+
+// Change the current culture to Arabic (Saudi Arabia).
+CultureInfo.CurrentCulture = arSA;
+// Display date and information about the current culture.
+DisplayCurrentInfo();
+Console.WriteLine(date1.ToString("d"));
+Console.WriteLine();
+
+// Change the calendar to Hijri.
+Calendar hijri = new HijriCalendar();
+if (CalendarExists(arSA, hijri))
 {
-   public static void Main()
-   {
-      DateTime date1 = new DateTime(2011, 6, 20);
-
-      Console.OutputEncoding = System.Text.Encoding.UTF8;
-      DisplayCurrentInfo();
-      // Display the date using the current culture and calendar.
-      Console.WriteLine(date1.ToString("d"));
-      Console.WriteLine();
-
-      CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-
-      // Change the current culture to Arabic (Saudi Arabia).
-      Thread.CurrentThread.CurrentCulture = arSA;
-      // Display date and information about the current culture.
-      DisplayCurrentInfo();
-      Console.WriteLine(date1.ToString("d"));
-      Console.WriteLine();
-
-      // Change the calendar to Hijri.
-      Calendar hijri = new HijriCalendar();
-      if (CalendarExists(arSA, hijri)) {
-         arSA.DateTimeFormat.Calendar = hijri;
-         // Display date and information about the current culture.
-         DisplayCurrentInfo();
-         Console.WriteLine(date1.ToString("d"));
-      }
-   }
-
-   private static void DisplayCurrentInfo()
-   {
-      Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.Name}");
-      Console.WriteLine($"Current Calendar: {DateTimeFormatInfo.CurrentInfo.Calendar}");
-   }
-
-   private static bool CalendarExists(CultureInfo culture, Calendar cal)
-   {
-      foreach (Calendar optionalCalendar in culture.OptionalCalendars)
-         if (cal.ToString().Equals(optionalCalendar.ToString()))
-            return true;
-
-      return false;
-   }
+    arSA.DateTimeFormat.Calendar = hijri;
+    // Display date and information about the current culture.
+    DisplayCurrentInfo();
+    Console.WriteLine(date1.ToString("d"));
 }
+
+static void DisplayCurrentInfo()
+{
+    Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.Name}");
+    Console.WriteLine($"Current Calendar: {DateTimeFormatInfo.CurrentInfo.Calendar}");
+}
+
+static bool CalendarExists(CultureInfo culture, Calendar cal) =>
+    culture.OptionalCalendars.Any(optional => optional.ToString() == cal.ToString());
 // The example displays the following output:
 //    Current Culture: en-US
 //    Current Calendar: System.Globalization.GregorianCalendar
@@ -56,9 +43,9 @@ public class Example
 //
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.UmAlQuraCalendar
-//    18/07/32
+//    18‏‏/7‏‏/1432 بعد الهجرة
 //
 //    Current Culture: ar-SA
 //    Current Calendar: System.Globalization.HijriCalendar
-//    19/07/32
+//    19‏‏/7‏‏/1432 بعد الهجرة
 // </ChangeCalendar>

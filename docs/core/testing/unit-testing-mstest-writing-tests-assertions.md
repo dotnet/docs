@@ -151,6 +151,8 @@ For better discoverability, organize project-wide assertions in a dedicated stat
 Add an extension method that targets the `Assert` type and throws <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> when the condition fails:
 
 ```csharp
+using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 public static class CustomAssertExtensions
@@ -182,8 +184,10 @@ public void Compute_ReturnsPrime()
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.That?displayProperty=nameWithType> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert.That?displayProperty=nameWithType> properties expose the same singleton pattern for backward compatibility. For new custom assertions, always target `Assert.That`. Otherwise, your helpers inherit the same discoverability problems as the legacy classes, and they'll need migration if `StringAssert` and `CollectionAssert` are deprecated.
 
+### `Assert.That` property versus `Assert.That(...)` method
+
 > [!NOTE]
-> Don't confuse the `Assert.That` singleton *property*—used as an extensibility hook—with the `Assert.That(() => condition)` extension *method* added in MSTest 3.8. The latter accepts a boolean expression and produces detailed failure messages by analyzing the expression tree (for example, `Assert.That(() => order.Total > 0)`). The two APIs share a name but serve different purposes.
+> Don't confuse the `Assert.That` singleton *property*—used as an extensibility hook—with the `Assert.That(() => condition)` *method* added in MSTest 3.8. The latter accepts a boolean expression and produces detailed failure messages by analyzing the expression tree (for example, `Assert.That(() => order.Total > 0)`). The two APIs share a name but serve different purposes.
 
 ## Best practices
 

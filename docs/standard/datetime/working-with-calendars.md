@@ -74,7 +74,7 @@ The following example changes the calendar used by the Arabic (Saudi Arabia) cul
 [!code-csharp[Conceptual.Calendars#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/changecalendar2.cs#2)]
 [!code-vb[Conceptual.Calendars#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/changecalendar2.vb#2)]
 
-Before writing to the console, it's format is changed to UTF8 so that arabic letters can be displayed correctly.
+Before the example writes to the console, it changes the console's output encoding to UTF-8 so that Arabic letters display correctly.
 
 ## Dates and calendars
 

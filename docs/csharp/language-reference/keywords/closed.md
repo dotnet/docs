@@ -19,22 +19,24 @@ Starting in C# 15, you can apply the `closed` modifier to a class to declare a *
 
 ```csharp
 // Assembly 1
-public closed record class GateState;
-public record class Closed : GateState;
-public record class Open(float Percent) : GateState;
+public closed record class JobStatus;
+public record class Queued : JobStatus;
+public record class Running(int PercentComplete) : JobStatus;
+public record class Completed(TimeSpan Elapsed) : JobStatus;
+public record class Failed(string Error) : JobStatus;
 
 // Assembly 2
-public record class Locked : GateState; // Error: 'GateState' is a closed class
+public record class Paused : JobStatus; // Error: 'JobStatus' is a closed class
 ```
 
-The same-assembly restriction applies only to *direct* descendants of the closed class. A class that derives from a closed class isn't itself closed unless you also mark it `closed`. Because `Closed` in the previous example is a plain record, another assembly can derive from it:
+The same-assembly restriction applies only to *direct* descendants of the closed class. A class that derives from a closed class isn't itself closed unless you also mark it `closed`. Because `Failed` in the previous example is a plain record, another assembly can derive from it:
 
 ```csharp
 // Assembly 2
-public record class Locked : Closed; // OK: 'Closed' isn't sealed or closed
+public record class RetryableFailed(string Error, int Attempts) : Failed(Error); // OK: 'Failed' isn't sealed or closed
 ```
 
-If you want to prevent derivation from `Closed` as well, declare it as `sealed` or `closed`.
+If you want to prevent derivation from `Failed` as well, declare it as `sealed` or `closed`.
 
 ## Declaration rules
 
@@ -44,7 +46,7 @@ The `closed` modifier is a class modifier:
 - A direct subtype of a closed class must be declared in the same assembly and module as the closed base class.
 - A class that derives from a closed class isn't itself closed. Apply the `closed` modifier again if you want a derived class to also be closed.
 
-If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. This rule isn't about the `closed` modifier itself: a *closed constructed type* is a generic type whose type arguments are fully specified (such as `C<int>`), as opposed to an *open type* like `C<T>`. The rule ensures that each closed constructed type of the base class has exactly one corresponding closed constructed type among its direct descendants, so the compiler can reason about exhaustiveness.
+If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. This rule isn't about the `closed` modifier itself: a *closed constructed type* is a generic type whose type arguments are fully specified (such as `Tree<int>`), as opposed to an *open type* like `Tree<T>`. The rule ensures that each closed constructed type of the base class has exactly one corresponding closed constructed type among its direct descendants, so the compiler can reason about exhaustiveness.
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="GenericRule":::
 
@@ -54,7 +56,7 @@ When a `switch` expression handles every direct descendant of a closed class, th
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="ExhaustiveSwitch":::
 
-When the switch governing expression is nullable, `null` becomes another possible value that the switch must handle. A switch over `GateState?` is exhaustive only when it also covers `null`:
+When the switch governing expression is nullable, `null` becomes another possible value that the switch must handle. A switch over `JobStatus?` is exhaustive only when it also covers `null`:
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="NullableSwitch":::
 

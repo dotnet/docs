@@ -1,23 +1,25 @@
 namespace Patterns.ClosedHierarchy;
 
-// <GateStateTypes>
-public closed record class GateState;
-public record class Closed : GateState;
-public record class Open(float Percent) : GateState;
-// </GateStateTypes>
+// <PaymentMethodTypes>
+public closed record class PaymentMethod;
+public record class Cash : PaymentMethod;
+public record class Card(string Last4) : PaymentMethod;
+public record class BankTransfer(string Iban) : PaymentMethod;
+// </PaymentMethodTypes>
 
-public static class GateStateExamples
+public static class PaymentMethodExamples
 {
-    public static string Run(GateState state) => Describe(state);
+    public static string Run(PaymentMethod method) => Describe(method);
 
-    // <DescribeGateState>
-    public static string Describe(GateState state) => state switch
+    // <DescribePaymentMethod>
+    public static string Describe(PaymentMethod method) => method switch
     {
-        Closed => "closed",
-        Open(var percent) => $"{percent}% open",
-        // No warning: every direct descendant of 'GateState' is handled.
+        Cash => "cash",
+        Card(var last4) => $"card ending {last4}",
+        BankTransfer(var iban) => $"bank transfer to {iban}",
+        // No warning: every direct descendant of 'PaymentMethod' is handled.
     };
-    // </DescribeGateState>
+    // </DescribePaymentMethod>
 }
 
 // <ShapeTypes>
@@ -85,11 +87,12 @@ public static class VehicleExamples
 public static class TypeParamGoverningTypeExamples
 {
     // <TypeParamGoverningType>
-    public static string Describe<X>(X gate) where X : GateState => gate switch
+    public static string Describe<X>(X method) where X : PaymentMethod => method switch
     {
-        Closed => "closed",
-        Open(var percent) => $"{percent}% open",
-        // No warning: 'X' is constrained to the closed type 'GateState',
+        Cash => "cash",
+        Card(var last4) => $"card ending {last4}",
+        BankTransfer(var iban) => $"bank transfer to {iban}",
+        // No warning: 'X' is constrained to the closed type 'PaymentMethod',
         // so handling every direct descendant exhausts the switch.
     };
     // </TypeParamGoverningType>

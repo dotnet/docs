@@ -158,6 +158,9 @@ For users of MTP that are using the VSTest mode of `dotnet test`, there are few 
 1. If passing a specific project (or directory containing project), for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.
 1. If passing a specific dll, for example, `dotnet test path/to/UnitTests.dll`, this should become `dotnet test --test-modules path/to/UnitTests.dll`. Note that `--test-modules` also supports globbing.
 
+> [!TIP]
+> Even though `--` is no longer required in MTP mode, you can still use it to mark where test application arguments begin. The separator avoids a parser quirk that can change the meaning of unrecognized arguments interleaved with options that `dotnet test` understands, and it also protects your scripts if `dotnet test` later starts recognizing one of those tokens. For more information, see [Pass arguments to the test application](../tools/dotnet-test-mtp.md#pass-arguments-to-the-test-application).
+
 ## Solutions with mixed test frameworks or extensions
 
 When a solution contains test projects that use different test frameworks (for example, MSTest and xUnit.net) or different sets of extensions, running `dotnet test` with framework-specific or extension-specific command-line options can fail. Options that are valid for one project are unrecognized by another, causing exit code 5 (invalid command-line arguments). For example:

@@ -322,7 +322,7 @@ The `null` pattern checks whether the union's `Value` is null. For class-based u
 
 When a union type provides the *non-boxing access pattern* (`HasValue` and `TryGetValue` members), the compiler uses those members to avoid boxing value-type cases during pattern matching.
 
-For more information, see [Union matching](../builtin-types/union.md#union-matching). For the specification, see [Unions](~/_csharplang/proposals/unions.md).
+For more information, see [Union matching](../builtin-types/union.md#union-pattern-matching). For the specification, see [Unions](~/_csharplang/proposals/unions.md).
 
 ## C# language specification
 

@@ -289,11 +289,11 @@ For more information, see:
 
 When deploying .NET applications to Kubernetes, consider the following recommendations:
 
-1. **Use the Kubernetes package in Kubernetes environments.** Always prefer `AddKubernetesResourceMonitoring()` over `AddResourceMonitoring()` when running in a Kubernetes cluster. It provides accurate resource utilization metrics by reading values directly from the pod specification through environment variables.
+- **Use the Kubernetes package in Kubernetes environments.** Always prefer `AddKubernetesResourceMonitoring()` over `AddResourceMonitoring()` when running in a Kubernetes cluster. It provides accurate resource utilization metrics by reading CPU and memory request values directly from environment variables rather than inferring them from cgroup parameters.
 
-1. **Expose resource metadata through the Downward API.** Configure your deployment manifests to expose CPU and memory limits and requests as environment variables. This ensures the library has access to the exact values you specified in your pod spec.
+- **Expose resource metadata through the Downward API.** Configure your deployment manifests to expose CPU and memory limits and requests as environment variables. This ensures the library has access to the exact values you specified in your pod spec.
 
-1. **Test metric accuracy after cluster upgrades.** When upgrading your Kubernetes cluster or OCI runtime (runc, crun), verify that your resource utilization metrics still report expected values, especially if you use the base `AddResourceMonitoring()` method.
+- **Test metric accuracy after cluster upgrades.** When upgrading your Kubernetes cluster or OCI runtime (runc, crun), verify that your resource utilization metrics still report expected values, especially if you use the base `AddResourceMonitoring()` method.
 
 ## Kubernetes probes
 

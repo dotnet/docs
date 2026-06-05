@@ -1,14 +1,11 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet2>
+' <ChangeCalendar>
 Imports System.Globalization
-Imports System.Threading
 
 Module Example
     Public Sub Main()
         Dim date1 As Date = #6/20/2011#
 
+        Console.OutputEncoding = System.Text.Encoding.UTF8
         DisplayCurrentInfo()
         ' Display the date using the current culture and calendar.
         Console.WriteLine(date1.ToString("d"))
@@ -17,7 +14,7 @@ Module Example
         Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
 
         ' Change the current culture to Arabic (Saudi Arabia).
-        Thread.CurrentThread.CurrentCulture = arSA
+        CultureInfo.CurrentCulture = arSA
         ' Display date and information about the current culture.
         DisplayCurrentInfo()
         Console.WriteLine(date1.ToString("d"))
@@ -34,18 +31,12 @@ Module Example
     End Sub
 
     Private Sub DisplayCurrentInfo()
-        Console.WriteLine("Current Culture: {0}",
-                          CultureInfo.CurrentCulture.Name)
-        Console.WriteLine("Current Calendar: {0}",
-                          DateTimeFormatInfo.CurrentInfo.Calendar)
+        Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.Name}")
+        Console.WriteLine($"Current Calendar: {DateTimeFormatInfo.CurrentInfo.Calendar}")
     End Sub
 
-    Private Function CalendarExists(ByVal culture As CultureInfo,
-                                    cal As Calendar) As Boolean
-        For Each optionalCalendar As Calendar In culture.OptionalCalendars
-            If cal.ToString().Equals(optionalCalendar.ToString()) Then Return True
-        Next
-        Return False
+    Private Function CalendarExists(culture As CultureInfo, cal As Calendar) As Boolean
+        Return culture.OptionalCalendars.Any(Function(optional1) optional1.ToString() = cal.ToString())
     End Function
 End Module
 ' The example displays the following output:
@@ -55,9 +46,9 @@ End Module
 '    
 '    Current Culture: ar-SA
 '    Current Calendar: System.Globalization.UmAlQuraCalendar
-'    18/07/32
+'    18‏‏/7‏‏/1432 بعد الهجرة
 '    
 '    Current Culture: ar-SA
 '    Current Calendar: System.Globalization.HijriCalendar
-'    19/07/32
-' </Snippet2>
+'    19‏‏/7‏‏/1432 بعد الهجرة
+' </ChangeCalendar>

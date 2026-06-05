@@ -58,9 +58,9 @@ public class TestClass
 
 Choose the assertion that matches your intent:
 
-- Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSequenceEqual*> for ordered element-wise comparison.
+- Use `Assert.AreSequenceEqual` for ordered element-wise comparison.
 - Use `Assert.AreSequenceEqual(expected, actual, SequenceOrder.InAnyOrder)` for unordered element-wise comparison.
-- Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEquivalent*> for deep structural comparison.
+- Use `Assert.AreEquivalent` for deep structural comparison.
 
 ```csharp
 [TestClass]

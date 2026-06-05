@@ -49,7 +49,11 @@ public class TestClass
         Assert.Throws<InvalidOperationException>(() => DoAsync().GetAwaiter().GetResult());
     }
 
-    private static Task DoAsync() => throw new InvalidOperationException();
+    private static async Task DoAsync()
+    {
+        await Task.Yield();
+        throw new InvalidOperationException();
+    }
 }
 ```
 
@@ -67,7 +71,11 @@ public class TestClass
         await Assert.ThrowsAsync<InvalidOperationException>(() => DoAsync());
     }
 
-    private static Task DoAsync() => throw new InvalidOperationException();
+    private static async Task DoAsync()
+    {
+        await Task.Yield();
+        throw new InvalidOperationException();
+    }
 }
 ```
 

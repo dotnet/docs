@@ -302,7 +302,7 @@ For more information, see [List pattern](~/_csharpstandard/standard/patterns.md#
 
 ## Union patterns
 
-Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns automatically *unwrap* the union. They apply to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
+Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns generally *unwrap* the union. The pattern applies to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
 
 ```csharp
 public record class Cat(string Name);

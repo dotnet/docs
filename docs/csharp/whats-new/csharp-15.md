@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: Get an overview of the new features in C# 15. C# 15 ships with .NET 11.
-ms.date: 03/20/2026
+ms.date: 06/05/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -67,7 +67,7 @@ string name = pet switch
 };
 ```
 
-Union types first appeared in .NET 11 Preview 2. In early .NET 11 previews, the `UnionAttribute` and `IUnion` interface aren't included in the runtime, so you must declare them in your project. Later .NET 11 preview versions include these runtime types. Also, some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented, including *union member providers*. Those features are coming in future previews.
+The runtime includes the `UnionAttribute` and `IUnion` types beginning with Preview 5. Some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented. Those features are coming in future previews.
 
 For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/unions.md).
 

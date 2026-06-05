@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 03/20/2026
+ms.date: 06/05/2026
 f1_keywords:
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -318,7 +318,7 @@ For example, a closed `public` base class can have an `internal` direct descenda
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="ShapeNameCrossAssembly":::
 
-To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`) or make every direct descendant at least as accessible as the closed base type.
+To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`), add a base class arm (`Shape` in the preceding example),     or make every direct descendant at least as accessible as the closed base type.
 
 When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `PaymentMethod?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
 
@@ -347,7 +347,15 @@ string Category(Vehicle v) => v switch
 };
 ```
 
-If you want exhaustiveness to follow the hierarchy further down, declare `Car` itself `closed`. The compiler then treats `Sedan` (and any other direct descendant of `Car`) as part of an exhaustive set rooted at `Car`, so a switch arm of `Car` no longer satisfies exhaustiveness on its own when other direct descendants of `Car` exist. Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
+If you want exhaustiveness to follow the hierarchy further down, declare `Car` itself `closed`. The compiler then treats every direct descendant of `Car` (such as `Sedan`) as the exhaustive set rooted at `Car`. A switch whose governing type is `Car` is exhaustive when it does any of the following:
+
+- Handle every direct descendant of `Car` with its own arm.
+- Include a `Car` arm, which covers every `Car` value (including all subtypes).
+- Include a discard arm (`_ => ...`) or an arm for a base type of `Car`, such as `Vehicle`.
+
+A switch whose governing type is `Vehicle` has choices: Code that handles `Car` and `Truck` is still exhaustive, because the `Car` arm covers every subtype of `Car`. Marking `Car` `closed` simply gives you a second option for that switch. You can keep the single `Car` arm, or replace it with one arm per direct descendant of `Car` (alongside the `Truck` arm) and still be exhaustive.
+
+Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
 
 ### Type parameter governing types
 

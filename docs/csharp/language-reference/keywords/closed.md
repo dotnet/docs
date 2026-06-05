@@ -13,9 +13,7 @@ ai-usage: ai-assisted
 ---
 # closed (C# Reference)
 
-Starting in C# 15, you can apply the `closed` modifier to a class to declare a *closed hierarchy*. A closed class can only be derived from within its declaring assembly. Because the set of direct descendants is fixed, a `switch` expression that handles each direct descendant exhausts the closed base type and doesn't need a default arm.
-
-[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+Starting in C# 15, you can apply the `closed` modifier to a class to declare a *closed hierarchy*. You can only derive a direct subtype from a closed class within its declaring assembly. Because the set of direct descendants is fixed, a `switch` expression that handles each direct descendant exhausts the closed base type and doesn't need a default arm.
 
 ```csharp
 // Assembly 1
@@ -38,17 +36,28 @@ public record class RetryableFailed(string Error, int Attempts) : Failed(Error);
 
 If you want to prevent derivation from `Failed` as well, declare it as `sealed` or `closed`.
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+> [!NOTE]
+>`closed` is a contextual keyword. It has special meaning only when it appears as a modifier on a class declaration. You can continue to use `closed` as an identifier in other contexts. If you need to use `closed` as an identifier in a position where the modifier would also be valid, prefix it with `@` (for example, `@closed`) to tell the compiler to treat it as an identifier rather than the modifier.
+
 ## Declaration rules
 
 The `closed` modifier is a class modifier:
 
 - A `closed` class is implicitly [`abstract`](abstract.md). You can't combine `closed` with `sealed`, `static`, or an explicit `abstract` modifier.
-- A direct subtype of a closed class must be declared in the same assembly and module as the closed base class.
+- You must declare a direct subtype of a closed class in the same assembly and module as the closed base class.
 - A class that derives from a closed class isn't itself closed. Apply the `closed` modifier again if you want a derived class to also be closed.
 
 If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. This rule isn't about the `closed` modifier itself: a *closed constructed type* is a generic type whose type arguments are fully specified (such as `Tree<int>`), as opposed to an *open type* like `Tree<T>`. The rule ensures that each closed constructed type of the base class has exactly one corresponding closed constructed type among its direct descendants, so the compiler can reason about exhaustiveness.
 
-:::code language="csharp" source="./snippets/shared/Closed.cs" id="GenericRule":::
+```csharp
+public closed record class Tree<T>;
+
+public record class Leaf<T>(T Value) : Tree<T>;                       // OK: 'T' appears in the base class
+public record class Branch<T>(Tree<T> Left, Tree<T> Right) : Tree<T>; // OK: 'T' appears in the base class
+public record class Constant<U>(U Value) : Tree<int> { } // Error: 'U' isn't used in the base class
+```
 
 ## Exhaustive switch expressions
 
@@ -71,10 +80,6 @@ A type parameter constrained to a closed class is treated as that closed class f
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="TypeParameterConstrained":::
 
 This rule applies whether the type parameter appears on a method or on the containing type.
-
-## Contextual keyword
-
-`closed` is a contextual keyword. It has special meaning only when it appears as a modifier on a class declaration. You can continue to use `closed` as an identifier in other contexts. If you need to use `closed` as an identifier in a position where the modifier would also be valid, prefix it with `@` (for example, `@closed`) to tell the compiler to treat it as an identifier rather than the modifier.
 
 ## C# language specification
 

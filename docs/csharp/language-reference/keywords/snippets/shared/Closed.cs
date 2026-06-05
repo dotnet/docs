@@ -8,11 +8,6 @@ public record class Completed(TimeSpan Elapsed) : JobStatus;
 public record class Failed(string Error) : JobStatus;
 
 //<GenericRule>
-public closed record class Tree<T>;
-
-public record class Leaf<T>(T Value) : Tree<T>;                       // OK: 'T' appears in the base class
-public record class Branch<T>(Tree<T> Left, Tree<T> Right) : Tree<T>; // OK: 'T' appears in the base class
-// public record class Constant<U>(U Value) : Tree<int> { } // Error: 'U' isn't used in the base class
 //</GenericRule>
 
 public static class ClosedSwitchExamples

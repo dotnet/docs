@@ -1,4 +1,4 @@
-namespace Patterns.ClosedHierarchy;
+﻿namespace Patterns.ClosedHierarchy;
 
 // <PaymentMethodTypes>
 public closed record class PaymentMethod;
@@ -60,7 +60,7 @@ public record class Car(int Doors) : Vehicle;
 public record class Truck(double PayloadTons) : Vehicle;
 
 // Assembly 2
-public record class Sedan(int Doors) : Car;
+public record class Sedan(int Doors) : Car(Doors);
 // </VehicleTypes>
 
 public static class VehicleExamples

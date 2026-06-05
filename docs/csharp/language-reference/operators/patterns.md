@@ -318,7 +318,7 @@ For example, a closed `public` base class can have an `internal` direct descenda
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="ShapeNameCrossAssembly":::
 
-To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`), add a base class arm (`Shape` in the preceding example),     or make every direct descendant at least as accessible as the closed base type.
+To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`), add a base class arm (`Shape` in the preceding example), or make every direct descendant at least as accessible as the closed base type.
 
 When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `PaymentMethod?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
 
@@ -349,9 +349,9 @@ string Category(Vehicle v) => v switch
 
 If you want exhaustiveness to follow the hierarchy further down, declare `Car` itself `closed`. The compiler then treats every direct descendant of `Car` (such as `Sedan`) as the exhaustive set rooted at `Car`. A switch whose governing type is `Car` is exhaustive when it does any of the following:
 
-- Handle every direct descendant of `Car` with its own arm.
-- Include a `Car` arm, which covers every `Car` value (including all subtypes).
-- Include a discard arm (`_ => ...`) or an arm for a base type of `Car`, such as `Vehicle`.
+- Handles every direct descendant of `Car` with its own arm.
+- Includes a `Car` arm, which covers every `Car` value (including all subtypes).
+- Includes a discard arm (`_ => ...`) or an arm for a base type of `Car`, such as `Vehicle`.
 
 A switch whose governing type is `Vehicle` has choices: Code that handles `Car` and `Truck` is still exhaustive, because the `Car` arm covers every subtype of `Car`. Marking `Car` `closed` simply gives you a second option for that switch. You can keep the single `Car` arm, or replace it with one arm per direct descendant of `Car` (alongside the `Truck` arm) and still be exhaustive.
 

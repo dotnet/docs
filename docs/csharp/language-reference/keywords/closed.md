@@ -39,7 +39,7 @@ If you want to prevent derivation from `Failed` as well, declare it as `sealed` 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 > [!NOTE]
->`closed` is a contextual keyword. It has special meaning only when it appears as a modifier on a class declaration. You can continue to use `closed` as an identifier in other contexts. If you need to use `closed` as an identifier in a position where the modifier would also be valid, prefix it with `@` (for example, `@closed`) to tell the compiler to treat it as an identifier rather than the modifier.
+> `closed` is a contextual keyword. It has special meaning only when it appears as a modifier on a class declaration. You can continue to use `closed` as an identifier in other contexts. If you need to use `closed` as an identifier in a position where the modifier would also be valid, prefix it with `@` (for example, `@closed`) to tell the compiler to treat it as an identifier rather than the modifier.
 
 ## Declaration rules
 

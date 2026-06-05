@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 03/20/2026
+ms.date: 06/05/2026
 f1_keywords:
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -316,7 +316,7 @@ string Describe(Pet pet) => pet switch
 };
 ```
 
-Two patterns are exceptions: the `var` pattern and the discard `_` pattern apply to the union value itself, not its `Value` property.
+Three patterns are exceptions: the discard `_` pattern, the `var` pattern, and the `not` pattern apply to the union value itself, not its `Value` property.
 
 The `null` pattern checks whether the union's `Value` is null. For class-based unions, `null` also succeeds when the union reference itself is null.
 

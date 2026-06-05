@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 02/03/2026
+ms.date: 06/05/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -167,6 +167,16 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 
 > [!NOTE]
 > To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.
+
+## Forward arguments to the test application
+
+`dotnet test` forwards any token it doesn't recognize to the test application. When a recognized option appears between an unrecognized option name and its value, removing the recognized option can change how the leftover tokens bind to options in the test application. To avoid this ambiguity, place test application arguments after a literal `--`:
+
+```dotnetcli
+dotnet test --results-directory TestResults -- --report-trx --report-trx-filename A.trx
+```
+
+The same parser behavior applies to `dotnet run` and `dotnet build`. For a detailed example, see [Forward arguments to the application](dotnet-run.md#forward-arguments-to-the-application) in the `dotnet run` reference.
 
 ## Examples
 

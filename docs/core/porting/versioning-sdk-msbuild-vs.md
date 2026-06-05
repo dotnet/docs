@@ -64,11 +64,13 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 8.0.2xx     | 17.9                          | Feb '24   | May '24             |
 | 8.0.3xx     | 17.10                         | May '24   | Jan '26             |
 | 8.0.4xx     | 17.11                         | Aug '24   | Nov '26<sup>2</sup> |
-| 9.0.1xx     | 17.12                         | Nov '24   | May '26             |
+| 9.0.1xx     | 17.12                         | Nov '24   | Nov '26<sup>1</sup> |
 | 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
-| 9.0.3xx     | 17.14                         | May '25   | Nov '26<sup>2</sup> |
-| 10.0.1xx    | 18.0                          | Nov '25   | Nov '28             |
+| 9.0.3xx     | 17.14                         | May '25   | Nov '26             |
+| 10.0.1xx    | 18.0                          | Nov '25   | Nov '28<sup>1</sup> |
 | 10.0.2xx    | 18.4                          | Mar '26   | May '26             |
+| 10.0.3xx    | 18.6                          | May '26   | Aug '26             |
+| 10.0.4xx    | 18.9                          | Aug '26   | Nov '28             |
 
 > [!NOTE]
 > <sup>1</sup> .1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).
@@ -100,6 +102,8 @@ The following policy dictates which versions of MSBuild and Visual Studio a give
 | 9.0.300 | 17.14 | 17.12            | Net9.0 | Net9.0 |
 | 10.0.100 | 18.0 | 17.14            | Net9.0 | Net10.0 |
 | 10.0.200 | 18.4 | 18.0            | Net10.0 | Net10.0 |
+| 10.0.300 | 18.6 | 18.0            | Net10.0 | Net10.0 |
+| 10.0.400 | 18.9 | 18.0            | Net10.0 | Net10.0 |
 
 > [!NOTE]
 > The table depicts how these versioning rules are applied, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
@@ -149,6 +153,9 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 10.0.100 RC 2       | 18.0.0 Insiders (11111.16)|
 | 11.0.100 Preview 1  | 18.4.0 Insiders           |
 | 11.0.100 Preview 2  | 18.5.0 Insiders           |
+| 11.0.100 Preview 3  | 18.6.0 Insiders           |
+| 11.0.100 Preview 4  | 18.7.0 Insiders           |
+| 11.0.100 Preview 5  | 18.8.0 Insiders           |
 
 ## Reference
 

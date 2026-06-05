@@ -81,10 +81,9 @@ In logical patterns, each branch follows the unwrapping rule individually. The l
 ```csharp
 GetPet() switch
 {
-    // 'var pet' captures the Pet?; 'not null' checks Value
+    // 'var pet' captures the Pet?; 'not null' applies to the Pet? value (not pet.Value)
     var pet and not null => ...,
-    // 'not null' checks Value; 'var value' still captures the Pet? because the
-    // 'not null' branch doesn't change the incoming value for the right branch
+    // 'not null' doesn't unwrap to Pet, so 'var value' still captures the Pet?
     not null and var value => ...,
 }
 ```

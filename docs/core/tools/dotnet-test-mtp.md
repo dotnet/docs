@@ -168,28 +168,15 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 > [!NOTE]
 > To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.
 
-## Pass arguments to the test application
+## Forward arguments to the test application
 
-`dotnet test` forwards any argument it doesn't recognize to the test application. The forwarded arguments keep their original order, but `dotnet test` first removes the options it understands. When a recognized option appears between an unrecognized option name and its value, removing the recognized option can change the meaning of the remaining arguments.
-
-For example, the following command interleaves the `dotnet test` option `--results-directory` between MTP options that the test app understands:
-
-```dotnetcli
-dotnet test --report-trx --report-trx-filename --results-directory TestResults A.trx
-```
-
-After `dotnet test` consumes `--results-directory TestResults`, the test application receives `--report-trx --report-trx-filename A.trx`. The test application then treats `A.trx` as the value of `--report-trx-filename`, which doesn't match what you typed on the command line.
-
-To avoid this ambiguity, place test application arguments after a literal `--`:
+`dotnet test` forwards any token it doesn't recognize to the test application. When a recognized option appears between an unrecognized option name and its value, removing the recognized option can change how the leftover tokens bind to options in the test application. To avoid this ambiguity, place test application arguments after a literal `--`:
 
 ```dotnetcli
 dotnet test --results-directory TestResults -- --report-trx --report-trx-filename A.trx
 ```
 
-The `--` separator marks every following token as a test application argument, so `dotnet test` doesn't reorder or reinterpret them. The separator also future-proofs scripts against new `dotnet test` options that might later match a token previously forwarded to the test application.
-
-> [!NOTE]
-> The same behavior applies to `dotnet run` and `dotnet build`, which also forward unrecognized tokens to the target application or MSBuild. For more details, see [dotnet/sdk#51990](https://github.com/dotnet/sdk/issues/51990).
+The same parser behavior applies to `dotnet run` and `dotnet build`. For a detailed example, see [Forward arguments to the application](dotnet-run.md#forward-arguments-to-the-application) in the `dotnet run` reference.
 
 ## Examples
 

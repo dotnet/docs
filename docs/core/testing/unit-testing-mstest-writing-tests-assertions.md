@@ -22,7 +22,7 @@ MSTest provides three assertion classes:
 | `CollectionAssert` | Collection assertions for comparing and validating collections. |
 
 > [!IMPORTANT]
-> For new code, always use the `Assert` class. The `StringAssert` and `CollectionAssert` classes are likely to be deprecated in a future release. They're maintained primarily for backward compatibility, but they're not recommended because splitting assertions across three types hurts discoverability—you can't see all available checks in a single IntelliSense list.
+> For new code, always use the `Assert` class. The `StringAssert` and `CollectionAssert` classes are likely to be deprecated in a future release. They're maintained primarily for backward compatibility, but they're not recommended because splitting assertions across three types hurts discoverability.
 
 All assertion methods accept an optional message parameter that displays when the assertion fails, helping you identify the cause:
 
@@ -187,21 +187,21 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.That?display
 ### `Assert.That` property versus `Assert.That(...)` method
 
 > [!NOTE]
-> Don't confuse the `Assert.That` singleton *property*—used as an extensibility hook—with the `Assert.That(() => condition)` *method* added in MSTest 3.8. The latter accepts a boolean expression and produces detailed failure messages by analyzing the expression tree (for example, `Assert.That(() => order.Total > 0)`). The two APIs share a name but serve different purposes.
+> Don't confuse the `Assert.That` singleton *property*—used as an extensibility hook—with the `Assert.That(() => condition)` *method* added in MSTest 3.8. The latter accepts a Boolean expression and produces detailed failure messages by analyzing the expression tree (for example, `Assert.That(() => order.Total > 0)`). The two APIs share a name but serve different purposes.
 
 ## Best practices
 
-1. **Use specific assertions**: Prefer `AreEqual` over `IsTrue(a == b)` for better failure messages.
+- **Use specific assertions**: Prefer `AreEqual` over `IsTrue(a == b)` for better failure messages.
 
-1. **Include descriptive messages**: Help identify failures quickly with clear assertion messages.
+- **Include descriptive messages**: Help identify failures quickly with clear assertion messages.
 
-1. **Test one thing at a time**: Each test method should verify a single behavior.
+- **Test one thing at a time**: Each test method should verify a single behavior.
 
-1. **Use `Throws`/`ThrowsExactly` for exceptions**: In MSTest v3.8+, prefer `Assert.Throws`, `Assert.ThrowsExactly`, and their async counterparts (`ThrowsAsync`, `ThrowsExactlyAsync`) over the `ExpectedException` attribute.
+- **Use `Throws`/`ThrowsExactly` for exceptions**: In MSTest v3.8+, prefer `Assert.Throws`, `Assert.ThrowsExactly`, and their async counterparts (`ThrowsAsync`, `ThrowsExactlyAsync`) over the `ExpectedException` attribute.
 
-1. **Prefer `Assert` over `StringAssert`/`CollectionAssert`**: For better discoverability and consistency, use the `Assert` class. The `StringAssert` and `CollectionAssert` classes are likely to be deprecated in a future release.
+- **Prefer `Assert` over `StringAssert`/`CollectionAssert`**: For better discoverability and consistency, use the `Assert` class. The `StringAssert` and `CollectionAssert` classes are likely to be deprecated in a future release.
 
-1. **Extend `Assert.That` for custom assertions**: For consistent discoverability, add custom assertions as extension methods on `Assert` and invoke them through `Assert.That`. Don't target `StringAssert.That` or `CollectionAssert.That` in new code.
+- **Extend `Assert.That` for custom assertions**: For consistent discoverability, add custom assertions as extension methods on `Assert` and invoke them through `Assert.That`. Don't target `StringAssert.That` or `CollectionAssert.That` in new code.
 
 ## Related analyzers
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 09/29/2025
+ms.date: 06/05/2026
 ---
 # dotnet run
 
@@ -60,6 +60,29 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   Arguments passed to the application that is being run.
   
   Any arguments that aren't recognized by `dotnet run` are passed to the application. To separate arguments for `dotnet run` from arguments for the application, use the `--` option.
+
+## Forward arguments to the application
+
+`dotnet run` forwards any token it doesn't recognize to the application. The forwarded tokens keep their original order, but `dotnet run` first removes the options it understands. When a recognized option appears between an unrecognized option name and its value, removing the recognized option can change the meaning of the leftover tokens.
+
+For example, the following command interleaves the recognized option `--project` between tokens the application is meant to receive:
+
+```dotnetcli
+dotnet run --app-flag --app-name --project ConsoleApp.csproj A.txt
+```
+
+After `dotnet run` consumes `--project ConsoleApp.csproj`, the application receives `--app-flag --app-name A.txt`. The application then treats `A.txt` as the value of `--app-name`, which doesn't match the original command line.
+
+To avoid this ambiguity, place application arguments after a literal `--`:
+
+```dotnetcli
+dotnet run --project ConsoleApp.csproj -- --app-flag --app-name A.txt
+```
+
+The `--` separator marks every following token as an application argument, so `dotnet run` doesn't reorder or reinterpret them. The separator also future-proofs scripts against new `dotnet run` options that might later match a token previously forwarded to the application.
+
+> [!NOTE]
+> The same behavior applies to `dotnet build` and to `dotnet test` in Microsoft.Testing.Platform (MTP) mode, which forward unrecognized tokens to MSBuild or to the test application respectively. For more information about `dotnet test`, see [Forward arguments to the test application](dotnet-test-mtp.md#forward-arguments-to-the-test-application).
 
 ## Options
 

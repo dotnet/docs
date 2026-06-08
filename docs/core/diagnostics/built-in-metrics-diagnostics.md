@@ -75,9 +75,10 @@ The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resourc
 - [`container.memory.usage`](#metric-containermemoryusage)
 - [`process.cpu.utilization`](#metric-processcpuutilization)
 - [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)
+- [`system.network.connections`](#metric-systemnetworkconnections)
 
 > [!NOTE]
-> Some metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter (such as network and disk I/O) are in experimental stage and not documented here. The core CPU and memory metrics listed below are stable.
+> Some metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter (such as disk I/O) are in experimental stage and not documented here.
 
 ##### Metric: `container.cpu.limit.utilization`
 
@@ -152,5 +153,18 @@ Available starting in: .NET 8.
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
 | `dotnet.process.memory.virtual.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running application in range `[0, 1]`. |
+
+Available starting in: .NET 8.
+
+##### Metric: `system.network.connections`
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `system.network.connections` | <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> | `{connection}` | Number of network connections by state. |
+
+| Attribute              | Type     | Description                              | Examples          | Presence |
+|------------------------|----------|------------------------------------------|-------------------|----------|
+| `network.type`         | `string` | OSI network layer or non-OSI equivalent. | `ipv4`; `ipv6`    | Always   |
+| `system.network.state` | `string` | The state of a network connection.       | `close`; `listen` | Always   |
 
 Available starting in: .NET 8.

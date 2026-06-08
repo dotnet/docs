@@ -26,9 +26,11 @@ helpviewer_keywords:
 > [!WARNING]
 > TLS 1.0 and 1.1 were deprecated by [RFC8996](https://datatracker.ietf.org/doc/rfc8996/). This document covers TLS 1.2 and TLS 1.3 only.
 
-The Transport Layer Security (TLS) protocol is an industry latest version of the standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.3](https://tools.ietf.org/html/rfc8446) is a standard that provides security improvements over previous versions. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
+The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.3](https://tools.ietf.org/html/rfc8446) is the latest version of the TLS standard and provides important security improvements over previous versions.
 
-## Who can benefit from this document?
+## Who can benefit from this article?
+
+If you're a developer building an app that communicates over a network, ensure those communications are protected, especially if sensitive data is exchanged. The guidelines in this article help you protect those communications in apps that:
 
 - Directly using the <xref:System.Net> APIs (for example, <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType>).
 - Directly using WCF clients and services using the <xref:System.ServiceModel?displayProperty=nameWithType> namespace.
@@ -54,20 +56,20 @@ For more information, see [TLS protocol version support in Schannel](/windows/wi
 ## Recommendations
 
 - For TLS 1.3, target .NET Framework 4.8 or later. See the [Audit your code](#audit-your-code-and-make-code-changes) section for information about verifying your `target framework`.
-- Do not specify the TLS version explicitly, that is, don't use the method overloads of `SslStream` that take an explicit `SslProtocols` parameter. That lets the OS decide on the TLS version.
+- Do not specify the TLS version explicitly, that is, don't use the method overloads of `SslStream` that take an explicit `SslProtocols` parameter. Avoiding those overloads lets the OS decide on the TLS version.
   - If you must set <xref:System.Net.ServicePointManager.SecurityProtocol?displayProperty=nameWithType>, then set it to <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType>. That will also use the OS default.
   - If you must use the method overloads of `SslStream` that take an explicit `SslProtocols` parameter, then pass `SslProtocols.SystemDefault` as argument. That will also use the OS default.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version explicitly.
 
 > [!WARNING]
-> Do not use `SslProtocols.Default`, because it sets TLS version to SSL3 and TLS 1.0, which are obsoleted.
+> Do not use `SslProtocols.Default`, because it sets TLS version to SSL3 and TLS 1.0, both of which are obsolete.
 
 When your app lets the OS choose the TLS version:
 
 - It automatically takes advantage of new TLS protocols added in the future.
 - The OS blocks protocols that are discovered not to be secure (for example, SSL3 and TLS 1.0).
 
-This article explains how to enable the strongest security available for the version of .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.3 connection, explicitly setting to a lower TLS version prevents a TLS 1.3 connection.
+This article explains how to enable the strongest security available for the version of .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.3 connection, explicitly setting a lower TLS version prevents a TLS 1.3 connection.
 
 If you can't avoid specifying a protocol version explicitly, we strongly recommend that you specify TLS 1.2 or TLS 1.3. For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) whitepaper.
 
@@ -140,7 +142,7 @@ Because the <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=
 
 #### For SslStream
 
-<xref:System.Net.Security.SslStream>, using .NET Framework 4.7 and later versions, defaults to the OS choosing the best security protocol and version. To get the default OS best choice, if possible, don't use the method overloads of <xref:System.Net.Security.SslStream> that take an explicit <xref:System.Security.Authentication.SslProtocols> parameter. Otherwise, pass <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>. We recommend that you don't use <xref:System.Security.Authentication.SslProtocols.Default>; setting `SslProtocols.Default` forces the use of SSL 3.0 /TLS 1.0 and prevents TLS 1.2.
+<xref:System.Net.Security.SslStream>, using .NET Framework 4.7 and later versions, defaults to the OS choosing the best security protocol and version. To get the default OS best choice, if possible, don't use the method overloads of <xref:System.Net.Security.SslStream> that take an explicit <xref:System.Security.Authentication.SslProtocols> parameter. Otherwise, pass <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>. We recommend that you don't use <xref:System.Security.Authentication.SslProtocols.Default>; setting `SslProtocols.Default` forces the use of SSL 3.0 / TLS 1.0 and prevents TLS 1.2.
 
 Don't set a value for the <xref:System.Net.ServicePointManager.SecurityProtocol> property (for HTTP networking).
 

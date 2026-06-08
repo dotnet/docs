@@ -67,7 +67,7 @@ string name = pet switch
 };
 ```
 
-The runtime includes the `UnionAttribute` and `IUnion` types beginning with Preview 5. Some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented. Those features are coming in future previews.
+The runtime includes the `UnionAttribute` and `IUnion` types beginning with .NET 11 Preview 5. Some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented. Those features are coming in future previews.
 
 For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/unions.md).
 

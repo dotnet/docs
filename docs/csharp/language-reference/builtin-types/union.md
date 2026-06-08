@@ -119,7 +119,7 @@ If the null state of the union's `Value` property is "maybe null," you must also
 
 :::code language="csharp" source="snippets/unions/NullHandling.cs" id="NullHandling":::
 
-This situation can arise when the `union` expression is the default value, or isn't definitely assigned, as shown in the preceding sample.
+This situation can arise when the `union` expression is the default value or isn't definitely assigned, as shown in the preceding sample.
 
 ## Nullability
 
@@ -133,7 +133,7 @@ The compiler tracks the null state of a union's `Value` property through the fol
 
 The compiler converts a `union` declaration to a `struct` declaration. The struct is marked with the `[System.Runtime.CompilerServices.Union]` attribute and implements the `IUnion` interface. It includes a public constructor and an implicit conversion for each case type along with a `Value` property. That generated form is opinionated. It's always a struct, always boxes value-type cases, and always stores contents as `object?`.
 
-You might need different behavior if you want to adapt an existing type, create a class-based union, use a custom storage strategy, or need interop support. You can create a union type manually.
+You might need different behavior if you want to adapt an existing type, create a class-based union, or use a custom storage strategy, or if you need interop support. You can create a union type manually.
 
 Any class or struct with a `[Union]` attribute is a *union type* if it follows the *basic union pattern*. The basic union pattern requires:
 

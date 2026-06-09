@@ -267,7 +267,7 @@ static class LibrariesExamples
         source.Append("World!");
 
         // MoveChunks transfers all content from source to a new StringBuilder.
-        // After the call, source is empty.
+        // After the call, source contains no characters.
         StringBuilder dest = StringBuilder.MoveChunks(source);
         Console.WriteLine(dest);          // Hello, World!
         Console.WriteLine(source.Length); // 0

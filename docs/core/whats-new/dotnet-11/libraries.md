@@ -96,7 +96,7 @@ The <xref:System.Globalization.TextInfo> class now provides <xref:System.Globali
 
 #### StringBuilder.MoveChunks
 
-<xref:System.Text.StringBuilder.MoveChunks(System.Text.StringBuilder)?displayProperty=nameWithType> is a new static method that transfers all content from a source `StringBuilder` to a new `StringBuilder` without copying any characters. After the call, the source `StringBuilder` is empty:
+To transfer content without copying characters, use the new static <xref:System.Text.StringBuilder.MoveChunks(System.Text.StringBuilder)?displayProperty=nameWithType> method, which moves all content from a source `StringBuilder` to a new `StringBuilder`. After the call, the source `StringBuilder` has a length of 0:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="StringBuilderMoveChunks":::
 
@@ -166,8 +166,8 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 <xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProperty=nameWithType> gains two new capabilities:
 
-- **`PipeWriter` target:** New overloads accept a <xref:System.IO.Pipelines.PipeWriter> as the output destination, making it easy to integrate JSON streaming directly into pipeline-based I/O scenarios.
-- **`topLevelValues` parameter:** When set to `true`, the method writes each item as a top-level JSON value separated by newlines (newline-delimited JSON, or NDJSON) instead of wrapping all items in a JSON array. Both `Stream` and `PipeWriter` overloads support the parameter.
+- **`PipeWriter` target:** For pipeline-based I/O scenarios, new overloads accept a <xref:System.IO.Pipelines.PipeWriter> as the output destination, making it easy to integrate JSON streaming directly.
+- **`topLevelValues` parameter:** For NDJSON output, set this parameter to `true` to write each item as a top-level JSON value separated by newlines instead of wrapping all items in a JSON array. Both `Stream` and `PipeWriter` overloads support the parameter.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonSerializeAsyncEnumerablePipe":::
 
@@ -249,7 +249,7 @@ LINQ gains several new join operations, plus tuple-returning overloads for the e
 
 #### LeftJoin, RightJoin, and FullJoin
 
-Three new outer-join operations return tuples directly, making them easy to work with using pattern matching and deconstruction:
+Because the three new outer-join operations return tuples directly, you can work with them easily using pattern matching and deconstruction:
 
 - <xref:System.Linq.Enumerable.LeftJoin*?displayProperty=nameWithType> — Returns all elements from the left (outer) sequence. When there's no matching element in the right (inner) sequence, the inner element is `null`.
 - <xref:System.Linq.Enumerable.RightJoin*?displayProperty=nameWithType> — Returns all elements from the right (inner) sequence. When there's no matching element in the left (outer) sequence, the outer element is `null`.
@@ -337,7 +337,7 @@ The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class no
 
 #### EqualityComparer&lt;T&gt;.Create
 
-A new <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method creates an equality comparer from a key selector function. You can pass an optional <xref:System.Collections.Generic.IEqualityComparer`1> for the key type itself:
+To create an equality comparer from a key selector function, use the new <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method. You can pass an optional <xref:System.Collections.Generic.IEqualityComparer`1> for the key type itself:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="EqualityComparerCreate":::
 
@@ -470,7 +470,7 @@ The class supports the full key lifecycle: key generation, PKCS#8 and SubjectPub
 
 ### CryptographicOperations.FixedTimeEquals overload
 
-<xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals*?displayProperty=nameWithType> gains a new overload that compares a <xref:System.ReadOnlySpan`1> with a single `byte` value in constant time. This is useful for secret-comparison scenarios where the expected value is a single known byte:
+For secret-comparison scenarios where the expected value is a single known byte, use the new <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals*?displayProperty=nameWithType> overload that compares a <xref:System.ReadOnlySpan`1> with a single `byte` value in constant time:
 
 ```csharp
 bool equal = CryptographicOperations.FixedTimeEquals(receivedSpan, 0x42);

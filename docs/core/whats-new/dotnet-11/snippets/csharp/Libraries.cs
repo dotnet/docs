@@ -181,19 +181,16 @@ static class LibrariesExamples
     static void LinqJoinsExample()
     {
         // <LinqJoins>
-        record Product(int Id, string Name, string? Category);
-        record Category(string Name, string Description);
-
-        var products = new List<Product>
+        var products = new List<(int Id, string Name, string? Category)>
         {
-            new(1, "Laptop", "Electronics"),
-            new(2, "Mouse", "Electronics"),
-            new(3, "Orphan", null), // No matching category
+            (1, "Laptop", "Electronics"),
+            (2, "Mouse", "Electronics"),
+            (3, "Orphan", null), // No matching category
         };
-        var categories = new List<Category>
+        var categories = new List<(string Name, string Description)>
         {
-            new("Electronics", "Electronic devices"),
-            new("Furniture", "Office furniture"), // No matching product
+            ("Electronics", "Electronic devices"),
+            ("Furniture", "Office furniture"), // No matching product
         };
 
         // LeftJoin: all products, matched categories (null if none)
@@ -227,16 +224,15 @@ static class LibrariesExamples
     static void EqualityComparerCreateExample()
     {
         // <EqualityComparerCreate>
-        record Person(string Name, int Age);
 
         // Create an equality comparer based on a key selector
-        var byName = EqualityComparer<Person>.Create(p => p.Name);
+        var byName = EqualityComparer<(string Name, int Age)>.Create(p => p.Name);
 
-        var people = new HashSet<Person>(byName)
+        var people = new HashSet<(string Name, int Age)>(byName)
         {
-            new("Alice", 30),
-            new("Bob", 25),
-            new("Alice", 40), // Duplicate by name — not added
+            ("Alice", 30),
+            ("Bob", 25),
+            ("Alice", 40), // Duplicate by name — not added
         };
         Console.WriteLine(people.Count); // 2
         // </EqualityComparerCreate>

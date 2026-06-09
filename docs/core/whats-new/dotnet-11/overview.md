@@ -29,7 +29,7 @@ The .NET 11 libraries include new APIs for:
 
 - <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, `SafeProcessHandle` lifecycle methods, and tighter handle control.
 - Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
-- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, and `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level value (NDJSON) output.
+- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, and `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level values (NDJSON) output.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
 - Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
 - Tar archive format selection and GNU sparse format 1.0 support.

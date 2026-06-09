@@ -259,7 +259,7 @@ Because the three new outer-join operations return tuples directly, you can work
 
 #### Tuple-returning Join and GroupJoin overloads
 
-New overloads of <xref:System.Linq.Enumerable.Join*?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.GroupJoin*?displayProperty=nameWithType> return tuples directly without requiring a result selector, and accept an optional <xref:System.Collections.Generic.IEqualityComparer`1> parameter. The optional comparer overload is also available on the existing `FullJoin`, `LeftJoin`, and `RightJoin` operations.
+New overloads of <xref:System.Linq.Enumerable.Join*?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.GroupJoin*?displayProperty=nameWithType> return tuples directly without requiring a result selector, and accept an optional <xref:System.Collections.Generic.IEqualityComparer`1> parameter. The optional comparer overload is also available on the `FullJoin`, `LeftJoin`, and `RightJoin` operations.
 
 ```csharp
 var products = new[] { (Id: 1, Name: "Laptop"), (Id: 2, Name: "Mouse") };

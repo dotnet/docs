@@ -1,8 +1,12 @@
 ﻿using System.Buffers;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Formats.Tar;
 using System.Globalization;
 using System.IO.Compression;
+using System.IO.Pipelines;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
@@ -172,6 +176,157 @@ static class LibrariesExamples
 
         Console.WriteLine(matches.Count); // 4
         // </RegexAnyNewLine>
+    }
+
+    static void LinqJoinsExample()
+    {
+        // <LinqJoins>
+        record Product(int Id, string Name, string? Category);
+        record Category(string Name, string Description);
+
+        var products = new List<Product>
+        {
+            new(1, "Laptop", "Electronics"),
+            new(2, "Mouse", "Electronics"),
+            new(3, "Orphan", null), // No matching category
+        };
+        var categories = new List<Category>
+        {
+            new("Electronics", "Electronic devices"),
+            new("Furniture", "Office furniture"), // No matching product
+        };
+
+        // LeftJoin: all products, matched categories (null if none)
+        var leftJoined = products.LeftJoin(
+            categories,
+            p => p.Category,
+            c => c.Name);
+
+        foreach (var (product, category) in leftJoined)
+            Console.WriteLine($"{product.Name}: {category?.Description ?? "(none)"}");
+        // Laptop: Electronic devices
+        // Mouse: Electronic devices
+        // Orphan: (none)
+
+        // FullJoin: all products and categories, paired where they match
+        var fullJoined = products.FullJoin(
+            categories,
+            p => p.Category,
+            c => c.Name);
+
+        foreach (var (product, category) in fullJoined)
+            Console.WriteLine(
+                $"{product?.Name ?? "(none)"}: {category?.Description ?? "(none)"}");
+        // Laptop: Electronic devices
+        // Mouse: Electronic devices
+        // Orphan: (none)
+        // (none): Office furniture
+        // </LinqJoins>
+    }
+
+    static void EqualityComparerCreateExample()
+    {
+        // <EqualityComparerCreate>
+        record Person(string Name, int Age);
+
+        // Create an equality comparer based on a key selector
+        var byName = EqualityComparer<Person>.Create(p => p.Name);
+
+        var people = new HashSet<Person>(byName)
+        {
+            new("Alice", 30),
+            new("Bob", 25),
+            new("Alice", 40), // Duplicate by name — not added
+        };
+        Console.WriteLine(people.Count); // 2
+        // </EqualityComparerCreate>
+    }
+
+    static void RandomGenericExample()
+    {
+        // <RandomGeneric>
+        // Generate a random integer of any binary integer type
+        int i = Random.Shared.NextInteger<int>();
+        long l = Random.Shared.NextInteger<long>(0L, 100L);
+        byte b = Random.Shared.NextInteger<byte>(maxValue: (byte)10);
+
+        // Generate a random floating-point value of any IEEE-754 type
+        float f = Random.Shared.NextBinaryFloat<float>();
+        double d = Random.Shared.NextBinaryFloat<double>();
+        Half h = Random.Shared.NextBinaryFloat<Half>();
+
+        Console.WriteLine($"int={i}, long={l}, byte={b}");
+        Console.WriteLine($"float={f}, double={d}, Half={h}");
+        // </RandomGeneric>
+    }
+
+    static void StringBuilderMoveChunksExample()
+    {
+        // <StringBuilderMoveChunks>
+        var source = new StringBuilder("Hello, ");
+        source.Append("World!");
+
+        // MoveChunks transfers all content from source to a new StringBuilder.
+        // After the call, source is empty.
+        StringBuilder dest = StringBuilder.MoveChunks(source);
+        Console.WriteLine(dest);          // Hello, World!
+        Console.WriteLine(source.Length); // 0
+        // </StringBuilderMoveChunks>
+    }
+
+    static async Task JsonSerializeAsyncEnumerablePipeExample()
+    {
+        // <JsonSerializeAsyncEnumerablePipe>
+        static async IAsyncEnumerable<int> GenerateNumbers()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                yield return i;
+                await Task.Yield();
+            }
+        }
+
+        var pipe = new Pipe();
+
+        // Write a JSON array: [0,1,2,3,4]
+        await JsonSerializer.SerializeAsyncEnumerable(
+            pipe.Writer,
+            GenerateNumbers());
+
+        // Write NDJSON (one value per line): 0\n1\n2\n3\n4\n
+        await JsonSerializer.SerializeAsyncEnumerable(
+            pipe.Writer,
+            GenerateNumbers(),
+            topLevelValues: true);
+        // </JsonSerializeAsyncEnumerablePipe>
+    }
+
+    static void X25519KeyExchangeExample()
+    {
+        // <X25519KeyExchange>
+        // Generate key pairs for Alice and Bob
+        using X25519DiffieHellman alice = X25519DiffieHellman.GenerateKey();
+        using X25519DiffieHellman bob = X25519DiffieHellman.GenerateKey();
+
+        // Each party derives the shared secret using the other's public key
+        byte[] aliceShared = alice.DeriveRawSecretAgreement(bob);
+        byte[] bobShared = bob.DeriveRawSecretAgreement(alice);
+
+        // Both parties arrive at the same secret
+        Console.WriteLine(aliceShared.SequenceEqual(bobShared)); // True
+        // </X25519KeyExchange>
+    }
+
+    static void NullableUnderlyingTypeExample()
+    {
+        // <NullableUnderlyingType>
+        Type nullableIntType = typeof(int?);
+        Type? underlying = nullableIntType.GetNullableUnderlyingType();
+        Console.WriteLine(underlying); // System.Int32
+
+        Type nonNullable = typeof(int);
+        Console.WriteLine(nonNullable.GetNullableUnderlyingType() is null); // True
+        // </NullableUnderlyingType>
     }
 }
 

@@ -1,5 +1,4 @@
 ﻿using System.Buffers;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Formats.Tar;
 using System.Globalization;
@@ -14,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Text.Unicode;
 using Microsoft.Win32.SafeHandles;
 
-static class LibrariesExamples
+public static class LibrariesExamples
 {
     static async Task ProcessRunAndCaptureExample()
     {
@@ -178,7 +177,7 @@ static class LibrariesExamples
         // </RegexAnyNewLine>
     }
 
-    static void LinqJoinsExample()
+    public static void LinqJoinsExample()
     {
         // <LinqJoins>
         var products = new List<(int Id, string Name, string? Category)>
@@ -200,7 +199,7 @@ static class LibrariesExamples
             c => c.Name);
 
         foreach (var (product, category) in leftJoined)
-            Console.WriteLine($"{product.Name}: {category?.Description ?? "(none)"}");
+            Console.WriteLine($"{product.Name}: {category.Description ?? "(none)"}");
         // Laptop: Electronic devices
         // Mouse: Electronic devices
         // Orphan: (none)
@@ -213,7 +212,7 @@ static class LibrariesExamples
 
         foreach (var (product, category) in fullJoined)
             Console.WriteLine(
-                $"{product?.Name ?? "(none)"}: {category?.Description ?? "(none)"}");
+                $"{product.Name ?? "(none)"}: {category.Description ?? "(none)"}");
         // Laptop: Electronic devices
         // Mouse: Electronic devices
         // Orphan: (none)

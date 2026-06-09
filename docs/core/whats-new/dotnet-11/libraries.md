@@ -325,7 +325,7 @@ On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, whic
 
 - [BitArray.PopCount](#bitarraypopcount)
 - [IReadOnlySet support in JSON serialization](#ireadonlyset-support-in-json-serialization)
-- [EqualityComparer&lt;T&gt;.Create](#equalitycomparertcreate)
+- [EqualityComparer\<T>.Create](#equalitycomparertcreate)
 
 #### BitArray.PopCount
 
@@ -335,7 +335,7 @@ The <xref:System.Collections.BitArray> class now includes a <xref:System.Collect
 
 The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet`1> collections.
 
-#### EqualityComparer&lt;T&gt;.Create
+#### EqualityComparer\<T>.Create
 
 To create an equality comparer from a key selector function, use the new <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method. You can pass an optional <xref:System.Collections.Generic.IEqualityComparer`1> for the key type itself:
 

@@ -32,11 +32,11 @@ Starting in .NET 11, these packages only target `net9.0`, `net11.0`, and `net472
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-incompatible) and [binary compatibility](../../categories.md#binary-incompatible).
+This change can affect [source compatibility](../../categories.md#source-compatibility) and [binary compatibility](../../categories.md#binary-compatibility).
 
 ## Reason for change
 
-NuGet dropped `netstandard` support starting with version 7.0. `Microsoft.TemplateEngine.Edge` depends on NuGet packages (`NuGet.Configuration`, `NuGet.Credentials`, and `NuGet.Protocol`), which made it increasingly difficult to maintain `netstandard2.0` compatibility. To avoid transitive dependency conflicts, the project had to pin these packages to older versions and disable `CentralPackageTransitivePinningEnabled`. Dropping `netstandard2.0` removes this constraint and allows the packages to stay current with their dependencies.
+NuGet client SDK packages (`NuGet.*`) stopped targeting `netstandard2.0` starting with version 7.0. `Microsoft.TemplateEngine.Edge` depends on NuGet packages (`NuGet.Configuration`, `NuGet.Credentials`, and `NuGet.Protocol`), which made it increasingly difficult to maintain `netstandard2.0` compatibility. To avoid transitive dependency conflicts, the project had to pin these packages to older versions and disable `CentralPackageTransitivePinningEnabled`. Dropping `netstandard2.0` removes this constraint and allows the packages to stay current with their dependencies.
 
 For more context, see [dotnet/sdk#54041](https://github.com/dotnet/sdk/pull/54041).
 

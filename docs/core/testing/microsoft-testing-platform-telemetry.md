@@ -88,6 +88,39 @@ The telemetry feature collects the following data points:
 | All | Version of your test adapter. |
 | All | Guid to correlate events from a single runner. |
 | 1.0.3 | Guid to correlate events from a single test run. |
+| (main) | Timestamp when test adapter loading started. |
+| (main) | Timestamp when test adapter loading completed. |
+| (main) | Usage statistics for MSTest attributes, as JSON. |
+| (main) | Timestamp when test host builder execution started. |
+| (main) | Timestamp when test host builder execution completed. |
+| (main) | Count of assertion methods used, as JSON. |
+| (main) | Timeout in milliseconds for assembly cleanup. |
+| (main) | Timeout in milliseconds for assembly initialization. |
+| (main) | Boolean for capturing debug traces. |
+| (main) | Timeout in milliseconds for class cleanup. |
+| (main) | Timeout in milliseconds for class initialization. |
+| (main) | Boolean for treating empty data sources as inconclusive. |
+| (main) | Boolean for enabling cooperative cancellation. |
+| (main) | Source of MSTest configuration (runsettings or testconfig). |
+| (main) | Timestamp when test host creation started. |
+| (main) | Timestamp when test host creation completed. |
+| (main) | Count of custom test method types used. |
+| (main) | Boolean indicating if application exited gracefully. |
+| (main) | Timestamp when test execution load phase started. |
+| (main) | Timestamp when test execution load phase completed. |
+| (main) | Boolean for mapping inconclusive tests to failed. |
+| (main) | Boolean for mapping non-runnable tests to failed. |
+| (main) | Boolean for ordering tests alphabetically by name. |
+| (main) | Boolean indicating if test parallelization is enabled. |
+| (main) | Boolean indicating if random test order seed was provided. |
+| (main) | Boolean for randomizing test execution order. |
+| (main) | Unique identifier for the test reporter. |
+| (main) | Timestamp when test request started. |
+| (main) | Timestamp when test request completed. |
+| (main) | Timeout in milliseconds for test cleanup. |
+| (main) | Timeout in milliseconds for test initialization. |
+| (main) | Timeout in milliseconds for test execution. |
+| (main) | Boolean for treating discovery warnings as errors. |
 
 ## Continuous integration detection
 

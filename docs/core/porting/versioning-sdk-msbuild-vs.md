@@ -3,7 +3,7 @@ title: .NET SDK, MSBuild, and Visual Studio versioning
 description: Learn about the versioning relationship between the .NET SDK and MSBuild/Visual Studio.
 author: StephenBonikowsky
 ms.custom: updateeachrelease
-ms.date: 03/09/2026
+ms.date: 06/08/2026
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 

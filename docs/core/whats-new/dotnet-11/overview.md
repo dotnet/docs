@@ -36,7 +36,7 @@ The .NET 11 libraries include new APIs for:
 - `Console` support for the `FORCE_COLOR` environment variable.
 - TLS handshake hardening and certificate-validation alerts on Linux.
 - HTTP/2 automatic downgrade for Windows authentication.
-- New LINQ join operations: `LeftJoin`, `RightJoin`, `FullJoin`, and tuple-returning `Join` and `GroupJoin` overloads across <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
+- LINQ join improvements, including `FullJoin` and tuple-returning `Join` and `GroupJoin` overloads, across <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
 - A new <xref:System.Security.Cryptography.X25519DiffieHellman> class for X25519 key exchange.
 - Generic overloads on <xref:System.Random> — `NextInteger<T>` and `NextBinaryFloat<T>` — that work with any numeric generic type.
 - <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method that creates a comparer from a key selector.

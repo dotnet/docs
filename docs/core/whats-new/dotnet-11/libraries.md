@@ -245,15 +245,15 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 
 ### LINQ join improvements
 
-LINQ gains several new join operations, plus tuple-returning overloads for the existing `Join` and `GroupJoin` methods. All new operations are available on <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
+LINQ adds join enhancements, including a new `FullJoin` operation and tuple-returning overloads for the existing `Join` and `GroupJoin` methods. These APIs are available on <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
 
 #### LeftJoin, RightJoin, and FullJoin
 
-Because the three new outer-join operations return tuples directly, you can work with them easily using pattern matching and deconstruction:
+Because the three outer-join operations return tuples directly, you can work with them easily using pattern matching and deconstruction:
 
-- <xref:System.Linq.Enumerable.LeftJoin*?displayProperty=nameWithType> — Returns all elements from the left (outer) sequence. When there's no matching element in the right (inner) sequence, the inner element is `null`.
-- <xref:System.Linq.Enumerable.RightJoin*?displayProperty=nameWithType> — Returns all elements from the right (inner) sequence. When there's no matching element in the left (outer) sequence, the outer element is `null`.
-- <xref:System.Linq.Enumerable.FullJoin*?displayProperty=nameWithType> — Returns all elements from both sequences, with `null` on either side when there's no match.
+- <xref:System.Linq.Enumerable.LeftJoin*?displayProperty=nameWithType> — Returns all elements from the left (outer) sequence. When there's no matching element in the right (inner) sequence, the inner element is `default` (typically `null` for reference types).
+- <xref:System.Linq.Enumerable.RightJoin*?displayProperty=nameWithType> — Returns all elements from the right (inner) sequence. When there's no matching element in the left (outer) sequence, the outer element is `default` (typically `null` for reference types).
+- <xref:System.Linq.Enumerable.FullJoin*?displayProperty=nameWithType> — Returns all elements from both sequences, using `default` on either side when there's no match.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="LinqJoins":::
 

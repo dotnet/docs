@@ -17,14 +17,14 @@ The .NET SDK template engine NuGet packages no longer target `netstandard2.0`. P
 
 Previously, to support consumption from projects targeting .NET Standard 2.0 (including .NET Framework 4.6.1+ and .NET Core 2.0+), the following packages included a `netstandard2.0` target:
 
-- `Microsoft.TemplateEngine.Abstractions`
-- `Microsoft.TemplateEngine.Core`
-- `Microsoft.TemplateEngine.Core.Contracts`
-- `Microsoft.TemplateEngine.Edge`
-- `Microsoft.TemplateEngine.Orchestrator.RunnableProjects`
-- `Microsoft.TemplateEngine.Utils`
-- `Microsoft.TemplateEngine.IDE`
-- `Microsoft.TemplateLocalizer.Core`
+- [`Microsoft.TemplateEngine.Abstractions`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Abstractions)
+- [`Microsoft.TemplateEngine.Core`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Core)
+- [`Microsoft.TemplateEngine.Core.Contracts`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Core.Contracts)
+- [`Microsoft.TemplateEngine.Edge`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Edge)
+- [`Microsoft.TemplateEngine.Orchestrator.RunnableProjects`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Orchestrator.RunnableProjects)
+- [`Microsoft.TemplateEngine.Utils`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Utils)
+- [`Microsoft.TemplateEngine.IDE`](https://www.nuget.org/packages/Microsoft.TemplateEngine.IDE)
+- [`Microsoft.TemplateLocalizer.Core`](https://www.nuget.org/packages/Microsoft.TemplateLocalizer.Core)
 
 ## New behavior
 
@@ -43,32 +43,6 @@ For more context, see [dotnet/sdk#54041](https://github.com/dotnet/sdk/pull/5404
 ## Recommended action
 
 Update your consuming project to target `net9.0` or later, or `net472` or later (.NET Framework). If you relied on the `netstandard2.0` target to consume these packages from a .NET Standard class library, retarget that library to one of the supported frameworks.
-
-For example, change your project file from:
-
-```xml
-<TargetFramework>netstandard2.0</TargetFramework>
-```
-
-to one of the following:
-
-```xml
-<TargetFramework>net9.0</TargetFramework>
-```
-
-```xml
-<TargetFramework>net472</TargetFramework>
-```
-
-If you need to multi-target and keep `netstandard2.0` for other consumers, you can conditionally reference these packages only for the supported target frameworks:
-
-```xml
-<TargetFrameworks>netstandard2.0;net9.0</TargetFrameworks>
-
-<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-  <PackageReference Include="Microsoft.TemplateEngine.Edge" Version="..." />
-</ItemGroup>
-```
 
 ## Affected APIs
 

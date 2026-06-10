@@ -88,6 +88,7 @@ The telemetry feature collects the following data points:
 | All | Version of your test adapter. |
 | All | Guid to correlate events from a single runner. |
 | 1.0.3 | Guid to correlate events from a single test run. |
+| 2.1.0 | Count of tests discovered. |
 
 ## Continuous integration detection
 

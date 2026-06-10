@@ -104,23 +104,25 @@ The telemetry feature collects the following data points:
 | (main) | Source of MSTest configuration (runsettings or testconfig). |
 | (main) | Timestamp when test host creation started. |
 | (main) | Timestamp when test host creation completed. |
-| (main) | Count of custom test method types used. |
-| (main) | Boolean indicating if application exited gracefully. |
-| (main) | Timestamp when test execution load phase started. |
-| (main) | Timestamp when test execution load phase completed. |
-| (main) | Boolean for mapping inconclusive tests to failed. |
-| (main) | Boolean for mapping non-runnable tests to failed. |
-| (main) | Boolean for ordering tests alphabetically by name. |
-| (main) | Boolean indicating if test parallelization is enabled. |
-| (main) | Boolean indicating if random test order seed was provided. |
-| (main) | Boolean for randomizing test execution order. |
+| (main) | Anonymized list of custom test method types used, as JSON. |
+| (main) | If the application exited gracefully. |
+| (main) | Timestamp when test request execution started. |
+| (main) | Timestamp when test request execution completed. |
+| (main) | If inconclusive tests were mapped to failed. |
+| (main) | If non-runnable tests were mapped to failed. |
+| (main) | If tests were ordered alphabetically by name. |
+| (main) | If test parallelization was enabled. |
+| (main) | If a random test order seed was provided. |
+| (main) | If test execution order was randomized. |
 | (main) | Unique identifier for the test reporter. |
 | (main) | Timestamp when test request started. |
 | (main) | Timestamp when test request completed. |
 | (main) | Timeout in milliseconds for test cleanup. |
 | (main) | Timeout in milliseconds for test initialization. |
 | (main) | Timeout in milliseconds for test execution. |
-| (main) | Boolean for treating discovery warnings as errors. |
+| (main) | If discovery warnings were treated as errors. |
+
+Items marked `(main)` aren't tied to a released MTP version yet and might change before release.
 
 ## Continuous integration detection
 

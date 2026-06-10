@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: Get an overview of the new features in C# 15. C# 15 ships with .NET 11.
-ms.date: 03/20/2026
+ms.date: 06/05/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -12,6 +12,7 @@ C# 15 includes the following new features. Try these features by using the lates
 
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
+- [Closed hierarchies](#closed-hierarchies)
 
 C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -70,6 +71,41 @@ string name = pet switch
 Union types first appeared in .NET 11 Preview 2. In early .NET 11 previews, the `UnionAttribute` and `IUnion` interface aren't included in the runtime, so you must declare them in your project. Later .NET 11 preview versions include these runtime types. Also, some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented, including *union member providers*. Those features are coming in future previews.
 
 For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/unions.md).
+
+## Closed hierarchies
+
+Starting in C# 15, you can apply the `closed` modifier to a class to declare a *closed hierarchy*. A closed class can only be derived from within its declaring assembly, which fixes the set of direct descendants at compile time:
+
+```csharp
+public closed record class GateState;
+public record class Closed : GateState;
+public record class Open(float Percent) : GateState;
+```
+
+Because the compiler knows every direct descendant, a `switch` expression that handles each one is exhaustive and doesn't need a default arm:
+
+```csharp
+string Describe(GateState state) => state switch
+{
+    Closed => "closed",
+    Open(var percent) => $"{percent}% open",
+    // No warning: every direct descendant of 'GateState' is handled.
+};
+```
+
+The `closed` modifier is a contextual keyword. A `closed` class is implicitly `abstract` and can't be combined with `sealed`, `static`, or an explicit `abstract` modifier. Derivation isn't transitive: a non-closed descendant of a closed class can still be derived from in other assemblies. To extend exhaustiveness checking down the hierarchy, mark intermediate descendants `closed` as well.
+
+> [!NOTE]
+> In C# 15 preview 5, the runtime doesn't yet ship `System.Runtime.CompilerServices.ClosedAttribute`. Until it does, every project that uses the `closed` modifier must declare the attribute itself:
+>
+> ```csharp
+> namespace System.Runtime.CompilerServices;
+>
+> [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
+> public sealed class ClosedAttribute : Attribute { }
+> ```
+
+For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md). You can copy the examples in this section, including the `ClosedAttribute` workaround, from the [keywords snippets project](https://github.com/dotnet/docs/blob/main/docs/csharp/language-reference/keywords/snippets/shared) in the `dotnet/docs` GitHub repository.
 
 <!-- Add when available
 ## See also

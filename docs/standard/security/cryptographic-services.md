@@ -65,9 +65,9 @@ Secret-key encryption algorithms use a single secret key to encrypt and decrypt 
 
 Secret-key encryption is also referred to as symmetric encryption because the same key is used for encryption and decryption. Secret-key encryption algorithms are very fast (compared with public-key algorithms) and are well suited for performing cryptographic transformations on large streams of data. Asymmetric encryption algorithms such as RSA are limited mathematically in how much data they can encrypt. Symmetric encryption algorithms do not generally have those problems.
 
-A type of secret-key algorithm called a block cipher is used to encrypt one block of data at a time. Block ciphers such as Data Encryption Standard (DES), TripleDES, and Advanced Encryption Standard (AES) cryptographically transform an input block of *n* bytes into an output block of encrypted bytes. If you want to encrypt or decrypt a sequence of bytes, you have to do it block by block. Because *n* is small (8 bytes for DES and TripleDES; 16 bytes [the default], 24 bytes, or 32 bytes for AES), data values that are larger than *n* have to be encrypted one block at a time. Data values that are smaller than *n* have to be expanded to *n* in order to be processed.
+A type of secret-key algorithm called a block cipher is used to encrypt one block of data at a time. Block ciphers such as Data Encryption Standard (DES), TripleDES, and Advanced Encryption Standard (AES) cryptographically transform an input block of *n* bytes into an output block of encrypted bytes. If you want to encrypt or decrypt a sequence of bytes, you have to do it block by block. Because *n* is small (8 bytes for DES and TripleDES; 16 bytes [the default], 24 bytes, or 32 bytes for AES), data values that are larger than *n* have to be encrypted one block at a time. Data values that are smaller than *n* have to be expanded to *n* in order to be processed. There are multiple algorithms for handling the sequence of blocks, known as the "block cipher mode of operation", "block cipher chain mode" or just "chain mode".
 
-One simple form of block cipher is called the electronic codebook (ECB) mode. ECB mode is not considered secure, because it does not use an initialization vector to initialize the first plaintext block. For a given secret key *k*, a simple block cipher that does not use an initialization vector will encrypt the same input block of plaintext into the same output block of ciphertext. Therefore, if you have duplicate blocks in your input plaintext stream, you will have duplicate blocks in your output ciphertext stream. These duplicate output blocks alert unauthorized users to the weak encryption used the algorithms that might have been employed, and the possible modes of attack. The ECB cipher mode is therefore quite vulnerable to analysis, and ultimately, key discovery.
+One simple form of block cipher mode is called Electronic CodeBook (ECB). ECB mode is not considered secure, because it does not use an initialization vector to initialize the first plaintext block. For a given secret key *k*, a simple block cipher that does not use an initialization vector will encrypt the same input block of plaintext into the same output block of ciphertext. Therefore, if you have duplicate blocks in your input plaintext stream, you will have duplicate blocks in your output ciphertext stream. These duplicate output blocks alert unauthorized users to the weak encryption used the algorithms that might have been employed, and the possible modes of attack. The ECB cipher mode is therefore quite vulnerable to analysis, and ultimately, key discovery.
 
 The block cipher classes that are provided in the base class library use a default chaining mode called cipher-block chaining (CBC), although you can change this default if you want.
 
@@ -119,7 +119,7 @@ The following list offers comparisons between public-key and secret-key cryptogr
 
 - <xref:System.Security.Cryptography.DSA>
 
-RSA allows both encryption and signing, but DSA can be used only for signing. DSA is not as secure as RSA, and we recommend RSA. Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than private-key algorithms.
+RSA allows both encryption and signing, but DSA can be used only for signing. DSA is not as secure as RSA, and we recommend RSA. Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than secret-key algorithms.
 
 ## Digital Signatures
 
@@ -170,13 +170,13 @@ None of the previous methods will prevent someone from reading Alice's messages,
 
 - <xref:System.Security.Cryptography.SHA512>.
 
-.NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1>. But the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead. SHA-2 includes SHA256, SHA384, and SHA512.
+.NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1> for standards conformance and backward compatibility with existing data formats and protocols. However, the MD5 and SHA-1 algorithms have been found to be insecure per [NIST SP 800-131A](https://csrc.nist.gov/pubs/sp/800/131/a/r2/final).
 
 ## Random Number Generation
 
 Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in .NET use random number generators to generate cryptographic keys.
 
-The <xref:System.Security.Cryptography.RandomNumberGenerator> class is an implementation of a random number generator algorithm.
+Use the static methods of <xref:System.Security.Cryptography.RandomNumberGenerator> to obtain cryptographically secure random numbers.
 
 ## ClickOnce Manifests
 

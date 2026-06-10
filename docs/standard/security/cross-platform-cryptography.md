@@ -19,6 +19,9 @@ The dependency on OS libraries also means that .NET apps can only use cryptograp
 
 This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Cryptography Model](cryptography-model.md) and [.NET Cryptographic Services](cryptographic-services.md).
 
+> [!IMPORTANT]
+> The following tables show platform support, not recommendations for new development. Some algorithms and modes remain available for standards conformance and backward compatibility even though current guidance deprecates them for new systems.
+
 ## Hash and Message Authentication Algorithms
 
 All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries with the exception of .NET on Browser WASM. In Browser WASM, SHA-1, SHA-2-256, SHA-2-384, SHA-2-512 and the HMAC equivalents are implemented using managed code.

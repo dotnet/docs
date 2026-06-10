@@ -46,7 +46,7 @@ If you're using OpenSSL-backed primitives without any specific intention of usin
 * `new ECDsaOpenSsl(...)` -> `ECDsa.Create(...)`
 * `new RSAOpenSsl(...)` -> `RSA.Create(...)`
 
-<xref:System.Security.Cryptography.AesCcm?displayProperty=fullName> has no functional equivalent on macOS. Consider using a different cryptographic primitive, such as <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName>, instead.
+<xref:System.Security.Cryptography.AesCcm?displayProperty=fullName> has no functional equivalent on macOS.
 
 ## Affected APIs
 

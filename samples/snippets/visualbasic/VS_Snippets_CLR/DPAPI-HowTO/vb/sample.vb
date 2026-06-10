@@ -22,21 +22,21 @@ Public Module MemoryProtectionSample
             '
             ''''''''''''''''''''''''''''''''''''
             ' Create the original data to be encrypted (The data length should be a multiple of 16).
-            Dim toEncrypt As Byte() = UnicodeEncoding.ASCII.GetBytes("ThisIsSomeData16")
+            Dim toEncrypt As Byte() = Encoding.ASCII.GetBytes("ThisIsSomeData16")
 
-            Console.WriteLine("Original data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Original data: " + Encoding.ASCII.GetString(toEncrypt))
             Console.WriteLine("Encrypting...")
 
             ' Encrypt the data in memory.
             EncryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon)
 
-            Console.WriteLine("Encrypted data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Encrypted data: " + Encoding.ASCII.GetString(toEncrypt))
             Console.WriteLine("Decrypting...")
 
             ' Decrypt the data in memory.
             DecryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon)
 
-            Console.WriteLine("Decrypted data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Decrypted data: " + Encoding.ASCII.GetString(toEncrypt))
 
 
             ''''''''''''''''''''''''''''''''''''
@@ -45,7 +45,7 @@ Public Module MemoryProtectionSample
             '
             ''''''''''''''''''''''''''''''''''''
             ' Create the original data to be encrypted
-            toEncrypt = UnicodeEncoding.ASCII.GetBytes("This is some data of any length.")
+            toEncrypt = Encoding.ASCII.GetBytes("This is some data of any length.")
 
             ' Create a file.
             Dim fStream As New FileStream("Data.dat", FileMode.OpenOrCreate)
@@ -54,7 +54,7 @@ Public Module MemoryProtectionSample
             Dim entropy As Byte() = CreateRandomEntropy()
 
             Console.WriteLine()
-            Console.WriteLine("Original data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Original data: " + Encoding.ASCII.GetString(toEncrypt))
             Console.WriteLine("Encrypting and writing to disk...")
 
             ' Encrypt a copy of the data to the stream.
@@ -72,7 +72,7 @@ Public Module MemoryProtectionSample
 
             fStream.Close()
 
-            Console.WriteLine("Decrypted data: " + UnicodeEncoding.ASCII.GetString(decryptData))
+            Console.WriteLine("Decrypted data: " + Encoding.ASCII.GetString(decryptData))
 
 
         Catch e As Exception
@@ -88,7 +88,7 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("Buffer")
         End If
         If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
+            Throw New ArgumentException("The buffer length was 0.", NameOf(Buffer))
         End If
 
         ' Encrypt the data in memory. The result is stored in the same array as the original data.
@@ -102,7 +102,7 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("Buffer")
         End If
         If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
+            Throw New ArgumentException("The buffer length was 0.", NameOf(Buffer))
         End If
 
         ' Decrypt the data in memory. The result is stored in the same array as the original data.
@@ -115,11 +115,10 @@ Public Module MemoryProtectionSample
         ' Create a byte array to hold the random value.
         Dim entropy(15) As Byte
 
-        ' Create a new instance of the RNGCryptoServiceProvider.
         ' Fill the array with a random value.
-        Dim RNG As New RNGCryptoServiceProvider()
-
-        RNG.GetBytes(entropy)
+        Using rng As New RNGCryptoServiceProvider()
+            rng.GetBytes(entropy)
+        End Using
 
         ' Return the array.
         Return entropy
@@ -133,13 +132,13 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("Buffer")
         End If
         If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
+            Throw New ArgumentException("The buffer length was 0.", NameOf(Buffer))
         End If
         If Entropy Is Nothing Then
             Throw New ArgumentNullException("Entropy")
         End If
         If Entropy.Length <= 0 Then
-            Throw New ArgumentException("Entropy")
+            Throw New ArgumentException("The entropy length was 0.", NameOf(Entropy))
         End If
         If S Is Nothing Then
             Throw New ArgumentNullException("S")
@@ -167,13 +166,13 @@ Public Module MemoryProtectionSample
             Throw New ArgumentNullException("S")
         End If
         If Length <= 0 Then
-            Throw New ArgumentException("Length")
+            Throw New ArgumentException("The given length was 0.", NameOf(Length))
         End If
         If Entropy Is Nothing Then
             Throw New ArgumentNullException("Entropy")
         End If
         If Entropy.Length <= 0 Then
-            Throw New ArgumentException("Entropy")
+            Throw New ArgumentException("The entropy length was 0.", NameOf(Entropy))
         End If
 
 
@@ -182,7 +181,17 @@ Public Module MemoryProtectionSample
 
         ' Read the encrypted data from a stream.
         If S.CanRead Then
-            S.Read(inBuffer, 0, Length)
+            Dim offset As Integer = 0
+
+            While offset < Length
+                Dim bytesRead As Integer = S.Read(inBuffer, offset, Length - offset)
+
+                If bytesRead = 0 Then
+                    Throw New EndOfStreamException("Could not read the expected number of bytes from the stream.")
+                End If
+
+                offset += bytesRead
+            End While
 
             outBuffer = ProtectedData.Unprotect(inBuffer, Entropy, Scope)
         Else

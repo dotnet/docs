@@ -64,7 +64,7 @@ In most cases, you don't need to directly reference an algorithm implementation 
 
 You can select an algorithm for different reasons: for example, for data integrity, for data privacy, or to generate a key. Symmetric and hash algorithms are intended for protecting data for either integrity reasons (protect from change) or privacy reasons (protect from viewing). Hash algorithms are used primarily for data integrity.
 
-Here is a list of recommended algorithms by application:
+Here is a partial list of algorithms by application:
 
 - Data privacy:
   - <xref:System.Security.Cryptography.Aes>
@@ -82,6 +82,7 @@ Here is a list of recommended algorithms by application:
   - <xref:System.Security.Cryptography.RandomNumberGenerator.Fill*?displayProperty=nameWithType>
 - Generating a key from a password:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>
+
 
 ## See also
 

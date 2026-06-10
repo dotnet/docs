@@ -35,6 +35,22 @@ namespace CryptoWalkThru
 
         private void Close_Click(object sender, EventArgs e) => Application.Exit();
 
+        private static void ReadBytesExactly(Stream stream, byte[] buffer, int offset, int count)
+        {
+            while (count > 0)
+            {
+                int bytesRead = stream.Read(buffer, offset, count);
+
+                if (bytesRead == 0)
+                {
+                    throw new EndOfStreamException("Could not read the expected number of bytes from the stream.");
+                }
+
+                offset += bytesRead;
+                count -= bytesRead;
+            }
+        }
+
         #endregion
 
         #region Snippet2 - buttonCreateAsmKeys
@@ -205,10 +221,8 @@ namespace CryptoWalkThru
             // file (inFs) and save the decrypted file (outFs).
             using (var inFs = new FileStream(file.FullName, FileMode.Open))
             {
-                inFs.Seek(0, SeekOrigin.Begin);
-                inFs.Read(LenK, 0, 3);
-                inFs.Seek(4, SeekOrigin.Begin);
-                inFs.Read(LenIV, 0, 3);
+                ReadBytesExactly(inFs, LenK, 0, LenK.Length);
+                ReadBytesExactly(inFs, LenIV, 0, LenIV.Length);
 
                 // Convert the lengths to integer values.
                 int lenK = BitConverter.ToInt32(LenK, 0);
@@ -230,9 +244,9 @@ namespace CryptoWalkThru
                 // starting from index 8
                 // after the length values.
                 inFs.Seek(8, SeekOrigin.Begin);
-                inFs.Read(KeyEncrypted, 0, lenK);
+                ReadBytesExactly(inFs, KeyEncrypted, 0, lenK);
                 inFs.Seek(8 + lenK, SeekOrigin.Begin);
-                inFs.Read(IV, 0, lenIV);
+                ReadBytesExactly(inFs, IV, 0, lenIV);
 
                 Directory.CreateDirectory(DecrFolder);
                 //<Snippet10>

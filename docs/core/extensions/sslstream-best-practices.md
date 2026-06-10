@@ -20,7 +20,7 @@ Deferring the decision to the OS automatically uses the most recent version of T
 
 ## Select cipher suites
 
-`SslStream` allows users to specify which cipher suites can be negotiated by the TLS handshake via the <xref:System.Net.Security.CipherSuitesPolicy> class. As with TLS versions, it's recommended to let the OS decide which are the best cipher suites to negotiate with, and, therefore, it's recommended to avoid using <xref:System.Net.Security.CipherSuitesPolicy>.
+`SslStream` allows users to specify which cipher suites can be negotiated by the TLS handshake via the <xref:System.Net.Security.CipherSuitesPolicy> class. As with TLS versions, it's recommended to let the OS decide which are the best cipher suites to negotiate with, and avoid using <xref:System.Net.Security.CipherSuitesPolicy> unless you have a specific interoperability requirement.
 
 > [!NOTE]
 > <xref:System.Net.Security.CipherSuitesPolicy> is not supported on Windows and attempts to instantiate it will cause <xref:System.NotSupportedException> to be thrown.
@@ -37,7 +37,7 @@ There are multiple ways that a server certificate can be passed to <xref:System.
 
 The recommended approach is to use the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property. When the certificate is obtained by one of the other two ways, a <xref:System.Net.Security.SslStreamCertificateContext> instance is created internally by the <xref:System.Net.Security.SslStream> implementation. Creating a <xref:System.Net.Security.SslStreamCertificateContext> involves building an <xref:System.Security.Cryptography.X509Certificates.X509Chain> which is a CPU intensive operation. It is more efficient to create a <xref:System.Net.Security.SslStreamCertificateContext> once and reuse it for multiple <xref:System.Net.Security.SslStream> instances.
 
-Reusing <xref:System.Net.Security.SslStreamCertificateContext> instances also enables additional features such us [TLS session resumption](https://datatracker.ietf.org/doc/html/rfc5077) on Linux servers.
+Reusing <xref:System.Net.Security.SslStreamCertificateContext> instances also enables additional features such as [TLS session resumption](https://datatracker.ietf.org/doc/html/rfc5077) on Linux servers.
 
 ## Custom `X509Certificate` validation
 

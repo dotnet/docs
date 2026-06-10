@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) telemetry
 description: Learn about the telemetry data collected by MTP and how to disable it.
 author: nohwnd
 ms.author: jajares
-ms.date: 02/25/2026
+ms.date: 06/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -96,22 +96,24 @@ The telemetry feature collects the following data points:
 | (main) | Count of assertion methods used, as JSON. |
 | (main) | Timeout in milliseconds for assembly cleanup. |
 | (main) | Timeout in milliseconds for assembly initialization. |
-| (main) | Boolean for capturing debug traces. |
+| (main) | If capturing debug traces is enabled. |
 | (main) | Timeout in milliseconds for class cleanup. |
 | (main) | Timeout in milliseconds for class initialization. |
-| (main) | Boolean for treating empty data sources as inconclusive. |
-| (main) | Boolean for enabling cooperative cancellation. |
-| (main) | Source of MSTest configuration (runsettings or testconfig). |
+| (main) | If empty data sources are treated as inconclusive. |
+| (main) | If a cooperative cancellation timeout was configured. |
+| (main) | Source of MSTest configuration (`runsettings`, `testconfig.json`, or `none`). |
 | (main) | Timestamp when test host creation started. |
 | (main) | Timestamp when test host creation completed. |
 | (main) | Anonymized list of custom test method types used, as JSON. |
+| (main) | Anonymized list of custom test class types used, as JSON. |
 | (main) | If the application exited gracefully. |
 | (main) | Timestamp when test request execution started. |
 | (main) | Timestamp when test request execution completed. |
 | (main) | If inconclusive tests were mapped to failed. |
 | (main) | If non-runnable tests were mapped to failed. |
 | (main) | If tests were ordered alphabetically by name. |
-| (main) | If test parallelization was enabled. |
+| (main) | Parallelization scope (`MethodLevel` or `ClassLevel`). |
+| (main) | Number of parallel workers configured for test execution. |
 | (main) | If a random test order seed was provided. |
 | (main) | If test execution order was randomized. |
 | (main) | Unique identifier for the test reporter. |

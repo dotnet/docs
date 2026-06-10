@@ -254,8 +254,9 @@ When you publish a self-contained deployment (SCD), the publishing process creat
 Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
 
 > [!IMPORTANT]
-> **Breaking change in .NET 8:** Starting in .NET 8, specifying a runtime identifier (via `-r <RID>`) no longer implies self-contained deployment. In .NET 7 and earlier, using `-r <RID>` automatically produced a self-contained app. To produce a self-contained app in .NET 8 and later, explicitly add `--self-contained` to the publish command. If you specify a RID without `--self-contained`, the app is published as framework-dependent and requires the .NET runtime on the target machine. For more information, see [Runtime-specific apps no longer self-contained](../compatibility/sdk/8.0/runtimespecific-app-default.md).
-
+> **Breaking change in .NET 8:** In .NET 8 and later, when you specify a runtime identifier with `-r <RID>`, the SDK no longer publishes a self-contained app by default.
+> In .NET 7 and earlier, `-r <RID>` produced a self-contained app. To publish a self-contained app in .NET 8 and later, add `--self-contained` to the publish command.
+> If you specify a RID without `--self-contained`, the SDK publishes a framework-dependent app, and the target machine must have the .NET runtime installed. For more information, see [Runtime-specific apps no longer self-contained](../compatibility/sdk/8.0/runtimespecific-app-default.md).
 **Advantages**
 
 - **Control .NET version**: Control which version of .NET is deployed with the app.

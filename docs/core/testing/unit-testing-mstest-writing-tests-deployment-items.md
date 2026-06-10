@@ -28,6 +28,7 @@ The attribute accepts a relative or absolute path:
 The attribute can be applied to a test method, a test class, or both. Multiple instances are allowed and combine:
 
 ```csharp
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
@@ -68,7 +69,7 @@ Copies the file or folder identified by `path` into the root of the deployment d
 
 // Copy the entire TestFiles folder (and all of its subfolders) into the
 // deployment directory.
-[DeploymentItem(@"TestFiles\")]
+[DeploymentItem("TestFiles")]
 ```
 
 ### `DeploymentItemAttribute(string path, string outputDirectory)`
@@ -82,7 +83,7 @@ Copies the items into a subdirectory of the deployment directory, given by `outp
 
 // Copies the contents of the Resources folder into a "Resources"
 // subfolder of the deployment directory.
-[DeploymentItem(@"Resources\", "Resources")]
+[DeploymentItem("Resources", "Resources")]
 ```
 
 The `outputDirectory` parameter must be a folder path. It can't be used to rename the file. To deploy a file with a different name, rename it in the source folder (or use a post-build step).
@@ -103,9 +104,9 @@ Add the files to your test project and mark them to copy to the build output dir
 </ItemGroup>
 ```
 
-After a build, the `TestFiles` folder is replicated in `bin\<Configuration>\<TargetFramework>\TestFiles\`, and `[DeploymentItem(@"TestFiles\")]` resolves correctly.
+After a build, the `TestFiles` folder is replicated in `bin\<Configuration>\<TargetFramework>\TestFiles\`, and `[DeploymentItem("TestFiles")]` resolves correctly.
 
-### Use a post-build event
+### Use a post-build target
 
 For files that live outside the test project, copy them into the build output directory as part of the build:
 
@@ -121,6 +122,8 @@ For files that live outside the test project, copy them into the build output di
 Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType> if you need the absolute path of the deployment directory&mdash;for example, to pass it to a process you spawn or to log it for diagnostics:
 
 ```csharp
+using System.IO;
+
 [TestMethod]
 [DeploymentItem(@"TestFiles\input.json")]
 public void ProcessInput_FromDeployedFile_Succeeds()
@@ -155,7 +158,7 @@ When MSTest runs in legacy mode (a `.testsettings` file is used, or `RunSettings
 
 - **Prefer `CopyToOutputDirectory` over deep relative paths.** Don't reach into source folders with `..\..\` style paths&mdash;they tie your tests to a specific repository layout. Stage the files in the build output directory first.
 - **Keep deployment items small.** Each item is copied for every test run; large files slow down test execution.
-- **Use folders to deploy related assets together.** `[DeploymentItem(@"TestFiles\")]` is easier to maintain than dozens of per-file attributes.
+- **Use folders to deploy related assets together.** `[DeploymentItem("TestFiles")]` is easier to maintain than dozens of per-file attributes.
 - **Prefer embedded resources or in-memory data for small fixtures.** Embedded resources eliminate the need for deployment and avoid I/O at test time.
 - **Don't rely on the working directory being the project directory.** During test execution, the working directory is the deployment directory, not the test project folder.
 

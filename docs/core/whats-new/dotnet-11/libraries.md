@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 05/12/2026
+ms.date: 06/09/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 4.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 5.
 
 ## Diagnostics and process execution
 
@@ -31,6 +31,7 @@ The full set of helpers includes:
 - <xref:System.Diagnostics.Process.Run*?displayProperty=nameWithType> and <xref:System.Diagnostics.Process.RunAsync*?displayProperty=nameWithType> — launch a process and return an exit-status result.
 - <xref:System.Diagnostics.Process.RunAndCaptureText*?displayProperty=nameWithType> and <xref:System.Diagnostics.Process.RunAndCaptureTextAsync*?displayProperty=nameWithType> — launch and capture stdout/stderr together with exit code.
 - <xref:System.Diagnostics.Process.ReadAllText(System.Nullable{System.TimeSpan})?displayProperty=nameWithType>, <xref:System.Diagnostics.Process.ReadAllBytes(System.Nullable{System.TimeSpan})?displayProperty=nameWithType>, and their async variants — read a child process's standard output in a single call.
+- <xref:System.Diagnostics.Process.ReadAllLines(System.Nullable{System.TimeSpan})?displayProperty=nameWithType> — synchronously reads all lines of output from a child process, returning a sequence of <xref:System.Diagnostics.ProcessOutputLine> values that distinguish stdout from stderr.
 - <xref:System.Diagnostics.Process.ReadAllLinesAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> — returns a stream of <xref:System.Diagnostics.ProcessOutputLine> values that distinguish stdout from stderr without string parsing.
 
 #### Fire-and-forget launches
@@ -93,6 +94,12 @@ The <xref:System.Char> struct now includes an <xref:System.Char.Equals(System.Ch
 
 The <xref:System.Globalization.TextInfo> class now provides <xref:System.Globalization.TextInfo.ToLower(System.Text.Rune)?displayProperty=nameWithType> and <xref:System.Globalization.TextInfo.ToUpper(System.Text.Rune)?displayProperty=nameWithType> methods that accept <xref:System.Text.Rune> parameters, enabling you to perform case conversions on individual Unicode scalar values.
 
+#### StringBuilder.MoveChunks
+
+To transfer content without copying characters, use the new static <xref:System.Text.StringBuilder.MoveChunks(System.Text.StringBuilder)?displayProperty=nameWithType> method, which moves all content from a source `StringBuilder` to a new `StringBuilder`. After the call, the source `StringBuilder` has a length of 0:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="StringBuilderMoveChunks":::
+
 ### Base64 encoding improvements
 
 .NET 11 adds new APIs and overloads to the existing <xref:System.Buffers.Text.Base64> type, providing comprehensive support for Base64 encoding and decoding. These additions offer improved performance and flexibility compared to existing methods.
@@ -154,6 +161,15 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 <xref:System.Text.Json.Utf8JsonWriter.Reset*> now accepts a <xref:System.Text.Json.JsonWriterOptions> parameter, so writer instances can be repooled with different options without allocating a new writer:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="Utf8JsonWriterReset":::
+
+#### SerializeAsyncEnumerable improvements
+
+<xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProperty=nameWithType> gains two new capabilities:
+
+- **`PipeWriter` target:** For pipeline-based I/O scenarios, new overloads accept a <xref:System.IO.Pipelines.PipeWriter> as the output destination, making it easy to integrate JSON streaming directly.
+- **`topLevelValues` parameter:** For NDJSON output, set this parameter to `true` to write each item as a top-level JSON value separated by newlines instead of wrapping all items in a JSON array. Both `Stream` and `PipeWriter` overloads support the parameter.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonSerializeAsyncEnumerablePipe":::
 
 ### Regular expression improvements
 
@@ -219,11 +235,42 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 
 ## Collections, numerics, and low-level I/O
 
+- [LINQ join improvements](#linq-join-improvements)
 - [BFloat16 support in BitConverter](#bfloat16-support-in-bitconverter)
 - [Floating-point hex formatting and parsing](#floating-point-hex-formatting-and-parsing)
-- [Collections improvements](#collections-improvements)
 - [Numerics improvements](#numerics-improvements)
+- [Random generic methods](#random-generic-methods)
 - [Low-level I/O improvements](#low-level-io-improvements)
+- [Collections improvements](#collections-improvements)
+
+### LINQ join improvements
+
+LINQ adds join enhancements, including a new `FullJoin` operation and tuple-returning overloads for the existing `Join` and `GroupJoin` methods. These APIs are available on <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
+
+#### LeftJoin, RightJoin, and FullJoin
+
+Because the three outer-join operations return tuples directly, you can work with them easily using pattern matching and deconstruction:
+
+- <xref:System.Linq.Enumerable.LeftJoin*?displayProperty=nameWithType> — Returns all elements from the left (outer) sequence. When there's no matching element in the right (inner) sequence, the inner element is `default` (typically `null` for reference types).
+- <xref:System.Linq.Enumerable.RightJoin*?displayProperty=nameWithType> — Returns all elements from the right (inner) sequence. When there's no matching element in the left (outer) sequence, the outer element is `default` (typically `null` for reference types).
+- <xref:System.Linq.Enumerable.FullJoin*?displayProperty=nameWithType> — Returns all elements from both sequences, using `default` on either side when there's no match.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="LinqJoins":::
+
+#### Tuple-returning Join and GroupJoin overloads
+
+New overloads of <xref:System.Linq.Enumerable.Join*?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.GroupJoin*?displayProperty=nameWithType> return tuples directly without requiring a result selector, and accept an optional <xref:System.Collections.Generic.IEqualityComparer`1> parameter. The optional comparer overload is also available on the `FullJoin`, `LeftJoin`, and `RightJoin` operations.
+
+```csharp
+var products = new[] { (Id: 1, Name: "Laptop"), (Id: 2, Name: "Mouse") };
+var orders = new[] { (ProductId: 1, Qty: 3), (ProductId: 1, Qty: 1) };
+
+var result = products.Join(orders, p => p.Id, o => o.ProductId);
+foreach (var (product, order) in result)
+    Console.WriteLine($"{product.Name}: qty={order.Qty}");
+// Laptop: qty=3
+// Laptop: qty=1
+```
 
 ### BFloat16 support in BitConverter
 
@@ -244,6 +291,15 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 ### Numerics improvements
 
 <xref:System.Numerics.Matrix4x4.GetDeterminant?displayProperty=nameWithType> now uses an SSE-vectorized implementation, improving performance by approximately 15%.
+
+### Random generic methods
+
+<xref:System.Random> gains two new generic methods that work with any numeric type implementing the appropriate generic math interfaces:
+
+- <xref:System.Random.NextInteger*?displayProperty=nameWithType> — Generates a random integer of type `T` where `T` implements `IBinaryInteger<T>` and `IMinMaxValue<T>`. Overloads accept an upper bound or both lower and upper bounds.
+- <xref:System.Random.NextBinaryFloat*?displayProperty=nameWithType> — Generates a random floating-point value of type `T` where `T` implements `IBinaryFloatingPointIeee754<T>`.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="RandomGeneric":::
 
 ### Low-level I/O improvements
 
@@ -269,6 +325,7 @@ On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, whic
 
 - [BitArray.PopCount](#bitarraypopcount)
 - [IReadOnlySet support in JSON serialization](#ireadonlyset-support-in-json-serialization)
+- [EqualityComparer\<T>.Create](#equalitycomparertcreate)
 
 #### BitArray.PopCount
 
@@ -278,10 +335,17 @@ The <xref:System.Collections.BitArray> class now includes a <xref:System.Collect
 
 The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet`1> collections.
 
+#### EqualityComparer\<T>.Create
+
+To create an equality comparer from a key selector function, use the new <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method. You can pass an optional <xref:System.Collections.Generic.IEqualityComparer`1> for the key type itself:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="EqualityComparerCreate":::
+
 ## Extensions and developer platform
 
 - [Discriminated-union scaffolding](#discriminated-union-scaffolding)
 - [MetadataLoadContext additions](#metadataloadcontext-additions)
+- [Reflection improvements](#reflection-improvements)
 - [URI data scheme constant](#uri-data-scheme-constant)
 - [StringSyntax attribute enhancements](#stringsyntax-attribute-enhancements)
 
@@ -314,6 +378,18 @@ Console.WriteLine(ReferenceEquals(owner, mlc)); // true
 
 A new <xref:System.Uri.UriSchemeData?displayProperty=nameWithType> constant has been added, representing the `data:` URI scheme. This constant provides a standardized way to reference data URIs.
 
+### Reflection improvements
+
+#### Type.GetNullableUnderlyingType
+
+<xref:System.Type?displayProperty=fullName> gains a new virtual method, <xref:System.Type.GetNullableUnderlyingType?displayProperty=nameWithType>, that returns the underlying value type for a `Nullable<T>` type, or `null` for any non-nullable type. Implementations are provided on <xref:System.Type>, <xref:System.Reflection.Emit.TypeBuilder>, <xref:System.Reflection.Emit.EnumBuilder>, <xref:System.Reflection.Emit.GenericTypeParameterBuilder>, and <xref:System.Reflection.TypeDelegator>:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="NullableUnderlyingType":::
+
+#### ConstructorInfo.GetGenericArguments
+
+<xref:System.Reflection.ConstructorInfo.GetGenericArguments?displayProperty=nameWithType> now has an override, providing a consistent way to retrieve generic type arguments for constructor definitions, matching the behavior already available on other `MethodBase` subclasses.
+
 ### StringSyntax attribute enhancements
 
 The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now includes constants for common programming languages:
@@ -328,6 +404,7 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 
 - [Configuration binding](#configuration-binding)
 - [MemoryCache OpenTelemetry metrics](#memorycache-opentelemetry-metrics)
+- [Options builder validation improvements](#options-builder-validation-improvements)
 
 ### Configuration binding
 
@@ -367,10 +444,44 @@ The new `Microsoft.Extensions.Caching.Memory.MemoryCache` meter publishes four o
 
 Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.%23ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
 
+### Options builder validation improvements
+
+<xref:Microsoft.Extensions.Options.OptionsBuilder`1> gains a new generic <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Validate*?displayProperty=nameWithType> overload that accepts a type parameter instead of a factory delegate. The type must implement <xref:Microsoft.Extensions.Options.IValidateOptions`1> and be registered in the dependency-injection container. This aligns options validation with the standard DI pattern:
+
+```csharp
+services.AddSingleton<IValidateOptions<MyOptions>, MyOptionsValidator>();
+services.AddOptions<MyOptions>()
+    .Bind(configuration.GetSection("MyOptions"))
+    .Validate<MyOptionsValidator>();
+```
+
+## Cryptography
+
+- [X25519 Diffie-Hellman key exchange](#x25519-diffie-hellman-key-exchange)
+- [CryptographicOperations.FixedTimeEquals overload](#cryptographicoperationsfixedtimeequals-overload)
+
+### X25519 Diffie-Hellman key exchange
+
+The new <xref:System.Security.Cryptography.X25519DiffieHellman?displayProperty=fullName> abstract class provides a clean API for the X25519 elliptic-curve Diffie-Hellman algorithm, which is widely used in TLS 1.3, SSH, and Signal-protocol implementations. Platform-specific implementations are provided through <xref:System.Security.Cryptography.X25519DiffieHellmanCng> (Windows) and <xref:System.Security.Cryptography.X25519DiffieHellmanOpenSsl> (Linux and macOS), but the portable `GenerateKey()` factory method picks the right one automatically:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="X25519KeyExchange":::
+
+The class supports the full key lifecycle: key generation, PKCS#8 and SubjectPublicKeyInfo import/export, PEM serialization, and raw private/public key access.
+
+### CryptographicOperations.FixedTimeEquals overload
+
+For secret-comparison scenarios where the expected value is a single known byte, use the new <xref:System.Security.Cryptography.CryptographicOperations.FixedTimeEquals*?displayProperty=nameWithType> overload that compares a <xref:System.ReadOnlySpan`1> with a single `byte` value in constant time:
+
+```csharp
+bool equal = CryptographicOperations.FixedTimeEquals(receivedSpan, 0x42);
+```
+
 ## Networking and transport security
 
 - [TLS handshake hardening](#tls-handshake-hardening)
 - [HTTP/2 automatic downgrade for Windows authentication](#http2-automatic-downgrade-for-windows-authentication)
+- [QUIC stream priority](#quic-stream-priority)
+- [Video MIME type constants](#video-mime-type-constants)
 
 ### TLS handshake hardening
 
@@ -382,6 +493,43 @@ Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Trans
 ### HTTP/2 automatic downgrade for Windows authentication
 
 <xref:System.Net.Http.HttpClient> automatically downgrades to HTTP/1.1 when a request requires Windows authentication (NTLM/Negotiate) over HTTP/2. The HTTP/2 specification disallows the connection-bound authentication schemes that NTLM and Kerberos rely on, so these requests previously failed. With the downgrade in place, applications targeting mixed-authentication environments—common in enterprise intranets—work without explicit `HttpRequestMessage.Version` overrides.
+
+### QUIC stream priority
+
+<xref:System.Net.Quic.QuicStream> gains a <xref:System.Net.Quic.QuicStream.Priority?displayProperty=nameWithType> property and a <xref:System.Net.Quic.QuicStream.DefaultPriority?displayProperty=nameWithType> constant that exposes HTTP/3 stream prioritization (RFC 9218). Priority values range from 0 (highest) to 255 (lowest), with a default of 127:
+
+```csharp
+// Increase priority for interactive streams
+stream.Priority = 64; // Higher priority than the default 127
+```
+
+### Video MIME type constants
+
+A new <xref:System.Net.Mime.MediaTypeNames.Video?displayProperty=nameWithType> class provides string constants for common video media types:
+
+- `MediaTypeNames.Video.Mp4` — `"video/mp4"`
+- `MediaTypeNames.Video.Mpeg` — `"video/mpeg"`
+- `MediaTypeNames.Video.Ogg` — `"video/ogg"`
+- `MediaTypeNames.Video.QuickTime` — `"video/quicktime"`
+- `MediaTypeNames.Video.WebM` — `"video/webm"`
+
+These join the existing `MediaTypeNames.Application`, `MediaTypeNames.Image`, `MediaTypeNames.Text`, and `MediaTypeNames.Multipart` classes.
+
+## Unsafe API accessibility
+
+.NET 11 removes the `[RequiresUnsafe]` attribute from a large set of APIs that take pointer parameters. Previously, calling these methods from code that used `unsafe` blocks still required a project-level `<AllowUnsafeBlocks>true</AllowUnsafeBlocks>` setting because the attribute enforced that requirement independently. Now, only the standard `unsafe` block or method modifier is required.
+
+Affected APIs include:
+
+- <xref:System.Buffer.MemoryCopy*?displayProperty=nameWithType>
+- <xref:System.ReadOnlySpan`1.%23ctor(System.Void*,System.Int32)?displayProperty=nameWithType> and <xref:System.Span`1.%23ctor(System.Void*,System.Int32)?displayProperty=nameWithType>
+- <xref:System.Runtime.CompilerServices.Unsafe?displayProperty=fullName> pointer methods such as `AsRef`, `Read`, `Write`, and `Copy`
+- <xref:System.Runtime.InteropServices.NativeMemory?displayProperty=fullName> methods
+- <xref:System.Text.Encoding?displayProperty=fullName> pointer overloads (all encoding classes)
+- <xref:System.Numerics.Vector?displayProperty=fullName> pointer-based `Load` and `Store` methods
+- Interop marshalling types in <xref:System.Runtime.InteropServices.Marshalling?displayProperty=fullName>
+
+This change reduces friction for advanced scenarios such as interop authoring, memory-mapped files, and low-level buffer manipulation, where unsafe context is already required by the calling code.
 
 ## See also
 

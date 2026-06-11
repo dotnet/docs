@@ -1,28 +1,32 @@
-using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
-// <RuntimeAsyncStackTrace>
-// To enable runtime async, add the following to your .csproj:
-//   <Features>runtime-async=on</Features>
-
-await OuterAsync();
-
-static async Task OuterAsync()
+public class RuntimeExamples
 {
-    await Task.CompletedTask;
-    await MiddleAsync();
-}
+    public static async Task Run()
+    {
+        // <RuntimeAsyncStackTrace>
+        // To enable runtime async, add the following to your .csproj:
+        //   <Features>runtime-async=on</Features>
 
-static async Task MiddleAsync()
-{
-    await Task.CompletedTask;
-    await InnerAsync();
-}
+        await OuterAsync();
 
-static async Task InnerAsync()
-{
-    await Task.CompletedTask;
-    Console.WriteLine(new StackTrace(fNeedFileInfo: true));
+        static async Task OuterAsync()
+        {
+            await Task.CompletedTask;
+            await MiddleAsync();
+        }
+
+        static async Task MiddleAsync()
+        {
+            await Task.CompletedTask;
+            await InnerAsync();
+        }
+
+        static async Task InnerAsync()
+        {
+            await Task.CompletedTask;
+            Console.WriteLine(new StackTrace(fNeedFileInfo: true));
+        }
+        // </RuntimeAsyncStackTrace>
+    }
 }
-// </RuntimeAsyncStackTrace>

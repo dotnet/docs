@@ -367,7 +367,7 @@ For more information, see the [closed modifier](../keywords/closed.md). For the 
 
 ## Union patterns
 
-Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns automatically *unwrap* the union. They apply to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
+Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns generally *unwrap* the union. The pattern applies to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
 
 ```csharp
 public record class Cat(string Name);
@@ -381,13 +381,13 @@ string Describe(Pet pet) => pet switch
 };
 ```
 
-Two patterns are exceptions: the `var` pattern and the discard `_` pattern apply to the union value itself, not its `Value` property.
+Three patterns are exceptions: the discard `_` pattern, the `var` pattern, and the `not` pattern apply to the union value itself, not its `Value` property.
 
 The `null` pattern checks whether the union's `Value` is null. For class-based unions, `null` also succeeds when the union reference itself is null.
 
 When a union type provides the *non-boxing access pattern* (`HasValue` and `TryGetValue` members), the compiler uses those members to avoid boxing value-type cases during pattern matching.
 
-For more information, see [Union matching](../builtin-types/union.md#union-matching). For the specification, see [Unions](~/_csharplang/proposals/unions.md).
+For more information, see [Union matching](../builtin-types/union.md#union-pattern-matching). For the specification, see [Unions](~/_csharplang/proposals/unions.md).
 
 ## C# language specification
 

@@ -2,14 +2,14 @@
 title: What's new in .NET 11
 description: Learn about the new features introduced in .NET 11 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 05/12/2026
+ms.date: 06/09/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 11
 
-This article describes new features in .NET 11. It was last updated for Preview 4.
+This article describes new features in .NET 11. It was last updated for Preview 5.
 
 .NET 11 is currently in preview. The final release is expected in November 2026. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
@@ -29,13 +29,19 @@ The .NET 11 libraries include new APIs for:
 
 - <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, `SafeProcessHandle` lifecycle methods, and tighter handle control.
 - Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
-- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, and <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options.
+- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, and `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level values (NDJSON) output.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
 - Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
 - Tar archive format selection and GNU sparse format 1.0 support.
 - `Console` support for the `FORCE_COLOR` environment variable.
 - TLS handshake hardening and certificate-validation alerts on Linux.
 - HTTP/2 automatic downgrade for Windows authentication.
+- LINQ join improvements, including `FullJoin` and tuple-returning `Join` and `GroupJoin` overloads, across <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
+- A new <xref:System.Security.Cryptography.X25519DiffieHellman> class for X25519 key exchange.
+- Generic overloads on <xref:System.Random> — `NextInteger<T>` and `NextBinaryFloat<T>` — that work with any numeric generic type.
+- <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method that creates a comparer from a key selector.
+- <xref:System.Net.Quic.QuicStream.Priority?displayProperty=nameWithType> for HTTP/3 stream prioritization.
+- Video MIME type constants in <xref:System.Net.Mime.MediaTypeNames.Video>.
 
 For more information, see [What's new in the .NET 11 libraries](libraries.md).
 

@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language."
 title: "C# Keywords and contextual keywords"
-ms.date: 01/21/2026
+ms.date: 06/05/2026
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -122,12 +122,13 @@ A contextual keyword provides a specific meaning in the code, but it isn't a res
         [`async`](async.md)  
         [`await`](../operators/await.md)  
         [`by`](by.md)  
+        [`closed`](closed.md)  
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
-        [`extension`](extension.md)  
     :::column-end:::
     :::column:::
+        [`extension`](extension.md)  
         [`field`](field.md)  
         [`file`](file.md)  
         [`from`](from-clause.md)  

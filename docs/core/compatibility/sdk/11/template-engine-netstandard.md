@@ -24,7 +24,7 @@ Previously, to support consumption from projects targeting .NET Standard 2.0 (in
 - [`Microsoft.TemplateEngine.Orchestrator.RunnableProjects`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Orchestrator.RunnableProjects)
 - [`Microsoft.TemplateEngine.Utils`](https://www.nuget.org/packages/Microsoft.TemplateEngine.Utils)
 - [`Microsoft.TemplateEngine.IDE`](https://www.nuget.org/packages/Microsoft.TemplateEngine.IDE)
-- [`Microsoft.TemplateLocalizer.Core`](https://www.nuget.org/packages/Microsoft.TemplateLocalizer.Core)
+- [`Microsoft.TemplateLocalizer.Core`](https://www.nuget.org/packages/Microsoft.TemplateEngine.TemplateLocalizer.Core)
 
 ## New behavior
 

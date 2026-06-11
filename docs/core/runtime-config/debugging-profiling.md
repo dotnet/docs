@@ -81,7 +81,7 @@ The following table compares perf maps and jit maps.
 |------------------------|--------------|--------|
 | **runtimeconfig.json** | N/A          | N/A    |
 | **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
-| [**Diagnostics IPC Command**](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md) | N/A | N/A |
+| [**Diagnostics IPC Command**](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md) | `EnablePerfMap`, `DisablePerfMap` | `EnablePerfMap(PerfMapType.All)` - perf maps and jit dumps<br/>`EnablePerfMap(PerfMapType.JitDump)` - jit dumps only<br/>`EnablePerfMap(PerfMapType.PerfMap)` - perf maps only<br/>`DisablePerfMap()` - disabled |
 
 For EventPipe-related environment variables, see [Trace using environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables).
 

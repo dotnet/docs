@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 03/19/2026
+ms.date: 06/10/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ---

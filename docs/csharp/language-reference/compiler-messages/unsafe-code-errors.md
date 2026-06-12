@@ -44,6 +44,10 @@ f1_keywords:
  - "CS9368"
  - "CS9376"
  - "CS9377"
+ - "CS9379"
+ - "CS9388"
+ - "CS9389"
+ - "CS9390"
 helpviewer_keywords:
  - "CS0193"
  - "CS0196"
@@ -87,6 +91,10 @@ helpviewer_keywords:
  - "CS9368"
  - "CS9376"
  - "CS9377"
+ - "CS9379"
+ - "CS9388"
+ - "CS9389"
+ - "CS9390"
 ms.date: 04/01/2026
 ai-usage: ai-assisted
 ---
@@ -139,6 +147,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9368**](#unsafe-member-safety-contracts): *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
 - [**CS9376**](#unsafe-context-requirements): *An unsafe context is required for constructor 'constructor' marked as '`RequiresUnsafe`' or '`extern`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
 - [**CS9377**](#unsafe-member-safety-contracts): *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
+- [**CS9379**](#anchor-tbd): *Do not use '`RequiresUnsafeAttribute`' in source; use the '`unsafe`' modifier instead.*
+- [**CS9388**](#anchor-tbd): *The '`safe`' modifier may only be used on '`extern`' members that are not marked '`unsafe`'.*
+- [**CS9389**](#anchor-tbd): *'`extern`' member must be marked '`unsafe`' or '`safe`'.*
+- [**CS9390**](#anchor-tbd): *Both partial member declarations must be marked '`safe`' or neither may be marked '`safe`'*
 
 ## Pointer operations and dereferencing
 

@@ -38,6 +38,8 @@ items:
                 href: cryptography/11/dsa-removed-macos.md
           - name: Extensions
             items:
+              - name: CborReader and CborWriter enforce a default maximum nesting depth
+                href: extensions/11/cbor-max-depth.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
               - name: Some Microsoft.Extensions packages included in shared framework

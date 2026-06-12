@@ -91,12 +91,7 @@ dotnet completions script fish | source
 
 #### Nushell
 
-Add the following to the beginning of your `config.nu` file:
-
-```nu
-dotnet completions script nushell | save -f ~/.local/share/nushell/completions/dotnet.nu
-use ~/.local/share/nushell/completions/dotnet.nu *
-```
+Run `dotnet completions script nushell` and add the snippet it provides to your `config.nu` file.
 
 ## Dynamic completion scripts (all versions)
 

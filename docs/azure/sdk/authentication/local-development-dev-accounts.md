@@ -74,8 +74,8 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides implementations of <xref:Azure.Core.TokenCredential> that support various scenarios and Microsoft Entra authentication flows. The Azure SDK for .NET offers two patterns for registering Azure service clients with dependency injection:
 
-- **Microsoft.Extensions.Azure (stable)**: register clients with `AddAzureClients` and pass a `TokenCredential` to `UseCredential` in code. Use this pattern for production apps today.
-- **Azure.Identity configuration and DI (preview)**: bind clients and their credentials to a section of `appsettings.json`. No `TokenCredential` instance is constructed in code. Tracked by [azure-sdk-for-net#55491](https://github.com/Azure/azure-sdk-for-net/issues/55491).
+- The **Microsoft.Extensions.Azure** pattern is stable. You register clients with `AddAzureClients` and pass a `TokenCredential` to `UseCredential` in code. Use this pattern for production apps today.
+- The **Azure.Identity configuration and DI** pattern is in preview. You bind clients and their credentials to a section of `appsettings.json`, and no `TokenCredential` instance is constructed in code. This pattern is tracked by [azure-sdk-for-net#55491](https://github.com/Azure/azure-sdk-for-net/issues/55491).
 
 Select a tab to see the steps for each pattern.
 
@@ -133,7 +133,7 @@ Select a tab to see the steps for each pattern.
 
     The package pulls in a compatible prerelease of `Azure.Identity` transitively.
 
-1. In `appsettings.json`, add a section that describes the client endpoint and credential. The section name is arbitrary; you reference it by name when you register the client:
+1. In `appsettings.json`, add a section that describes the client endpoint and credential. The section name is arbitrary, and you reference it by name when you register the client:
 
     ```json
     "KeyVaultSecrets": {

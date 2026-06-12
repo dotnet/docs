@@ -4,10 +4,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <!-- SCME0002 covers the experimental configuration and DI APIs in
-         System.ClientModel / Azure.Identity. Suppress here so the next-gen
-         snippets compile. Remove after the APIs stabilize. -->
-    <NoWarn>$(NoWarn);SCME0002</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

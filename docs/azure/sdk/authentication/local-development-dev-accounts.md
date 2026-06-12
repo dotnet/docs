@@ -75,7 +75,7 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides implementations of <xref:Azure.Core.TokenCredential> that support various scenarios and Microsoft Entra authentication flows. The Azure SDK for .NET offers two patterns for registering Azure service clients with dependency injection:
 
 - The **Microsoft.Extensions.Azure** pattern is stable. You register clients with `AddAzureClients` and pass a `TokenCredential` to `UseCredential` in code. Use this pattern for production apps today.
-- The **Azure.Identity configuration and DI** pattern is in preview. You bind clients and their credentials to a section of `appsettings.json`, and no `TokenCredential` instance is constructed in code. This pattern is tracked by [azure-sdk-for-net#55491](https://github.com/Azure/azure-sdk-for-net/issues/55491).
+- The **Azure.Identity configuration and DI** pattern is in preview. You bind clients and their credentials to a section of `appsettings.json`, and no `TokenCredential` instance is constructed in code.
 
 Select a tab to see the steps for each pattern.
 
@@ -117,13 +117,15 @@ Select a tab to see the steps for each pattern.
 ### [Azure.Identity configuration and DI (preview)](#tab/config-di)
 
 > [!IMPORTANT]
-> The configuration and dependency injection APIs shown in this tab are in public preview and emit diagnostic ID `SCME0002`. Service-specific registration extensions (for example, `AddSecretClient`) are rolling out incrementally across the Azure SDK client libraries. To use these APIs today, install a prerelease of the relevant client library and suppress `SCME0002` in your project file:
+> The configuration and dependency injection APIs shown in this tab are in public preview and emit diagnostic ID `SCME0002`. Service-specific registration extensions (for example, `AddSecretClient`) are rolling out incrementally across the Azure SDK client libraries. To use these APIs today, install a prerelease of the relevant client library and suppress `SCME0002` inline at each call site, so the diagnostic still surfaces for any future preview API you adopt:
 >
-> ```xml
-> <PropertyGroup>
->   <NoWarn>$(NoWarn);SCME0002</NoWarn>
-> </PropertyGroup>
+> ```csharp
+> #pragma warning disable SCME0002
+> builder.AddSecretClient("KeyVaultSecrets");
+> #pragma warning restore SCME0002
 > ```
+>
+> If you prefer a project-wide suppression instead, add `<NoWarn>$(NoWarn);SCME0002</NoWarn>` to a `PropertyGroup` in your project file.
 
 1. Add a reference to the preview release of the client library that ships the next-gen extensions. For example, to register a Key Vault `SecretClient`:
 
@@ -144,7 +146,16 @@ Select a tab to see the steps for each pattern.
     }
     ```
 
-    `CredentialSource` accepts any credential supported by Azure.Identity, including `AzureCliCredential`, `AzureDeveloperCliCredential`, `AzurePowerShellCredential`, `VisualStudioCredential`, `VisualStudioCodeCredential`, `EnvironmentCredential`, `ManagedIdentityCredential`, and `InteractiveBrowserCredential`.
+    `CredentialSource` accepts any credential supported by Azure.Identity, including:
+
+    - `AzureCliCredential`
+    - `AzureDeveloperCliCredential`
+    - `AzurePowerShellCredential`
+    - `VisualStudioCredential`
+    - `VisualStudioCodeCredential`
+    - `EnvironmentCredential`
+    - `ManagedIdentityCredential`
+    - `InteractiveBrowserCredential`
 
 1. In `Program.cs`, add a `using` directive for the client namespace and register the client by binding it to the configuration section:
 

@@ -76,9 +76,11 @@ void registerUsingUserPrincipal(WebApplicationBuilder builder)
 void registerUsingNextGen(WebApplicationBuilder builder)
 {
     #region snippet_NextGenAddSecretClient
-    // Binds the "KeyVaultSecrets" section of appsettings.json and resolves the
-    // credential from the nested "Credential" subsection automatically.
+    // SCME0002 flags the experimental config + DI APIs. Scope the suppression
+    // narrowly so the rest of the project still surfaces the diagnostic.
+#pragma warning disable SCME0002
     builder.AddSecretClient("KeyVaultSecrets");
+#pragma warning restore SCME0002
     #endregion snippet_NextGenAddSecretClient
 }
 

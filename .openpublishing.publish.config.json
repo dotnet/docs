@@ -20,7 +20,8 @@
         "RestApi": "Content",
         "Tutorial": "Content"
       },
-      "build_entry_point": "docs"
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
@@ -32,7 +33,13 @@
   "need_pr_comments": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
-   {
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates67.docs.msft",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "main",

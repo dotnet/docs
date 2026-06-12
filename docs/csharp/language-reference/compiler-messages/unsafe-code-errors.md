@@ -298,4 +298,3 @@ To declare and use fixed-size buffers correctly:
 - **CS8812**: *Cannot convert &method group 'method' to non-function pointer type 'type'.*
 
 To get a function pointer, use the address-of operator with an explicit function pointer type cast. Don't use the [address-of operator `&`](../operators/pointer-related-operators.md#address-of-operator-) to assign method groups to `void*` or other non-function pointer types. For more information, see [Function pointers](../unsafe-code.md#function-pointers).
-

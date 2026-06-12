@@ -131,7 +131,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs*
 - [**CS1656**](#fixed-statement-usage): *Cannot assign to 'variable' because it is a 'read-only variable type'*
 - [**CS1663**](#fixed-size-buffers): *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
-- [**CS1664**](#fixed-size-buffers): *Fixed size buffer of length 'value' and type 'type' is too big*
+- [**CS1664**](#fixed-size-buffers): *Fixed size buffer of length 'length' and type 'type' is too big*
 - [**CS1665**](#fixed-size-buffers): *Fixed size buffers must have a length greater than zero*
 - [**CS1666**](#fixed-size-buffers): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
 - [**CS1708**](#fixed-size-buffers): *Fixed size buffers can only be accessed through locals or fields*
@@ -271,7 +271,7 @@ These diagnostics enforce the C# 15 safety contract rules for members marked as 
 - **CS1641**: *A fixed size buffer field must have the array size specifier after the field name*
 - **CS1642**: *Fixed size buffer fields may only be members of structs*
 - **CS1663**: *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
-- **CS1664**: *Fixed size buffer of length 'value' and type 'type' is too big*
+- **CS1664**: *Fixed size buffer of length 'length' and type 'type' is too big*
 - **CS1665**: *Fixed size buffers must have a length greater than zero*
 - **CS1666**: *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
 - **CS1708**: *Fixed size buffers can only be accessed through locals or fields*

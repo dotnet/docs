@@ -91,7 +91,7 @@ dotnet completions script fish | source
 
 #### Nushell
 
-Run `dotnet completions script nushell` and add the snippet it provides to your `config.nu` file.
+Run `dotnet completions script nushell` and follow the instructions it provides in your `config.nu` file.  
 e.g., if you were not using any external completers, add the following to the end of the file:
 ```nu
 let dotnet_completer = {|spans|
@@ -197,33 +197,22 @@ complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 
 ### nushell
 
-To add tab completion to your **nushell** for .NET CLI, add the following to the beginning of your `config.nu` file:
-
+To add tab completion to your **nushell** for .NET CLI, run `dotnet completions script nushell` and follow the instructions it provides in your `config.nu` file.  
+e.g., if you were not using any external completers, add the following to the end of the file:
 ```nu
-let external_completer = { |spans|
-    {
-        dotnet: { ||
-            dotnet complete (
-                $spans | skip 1 | str join " "
-            ) | lines
-        }
-    } | get $spans.0 | each { || do $in }
+let dotnet_completer = {|spans|
+    dotnet complete ($spans | str join " ") | lines
 }
-```
 
-And then in the `config` record, find the `completions` section and add the `external_completer` that was defined earlier to `external`:
-
-```nu
-let-env config = {
-    # your options here
-    completions: {
-        # your options here
-        external: {
-            # your options here
-            completer: $external_completer # add it here
-        }
-    }
+let multiple_completers = {|spans|
+    match $spans.0 {
+        "dotnet" => $dotnet_completer
+        _ => { [] } # Fallback to empty list
+    } | do $in $spans
 }
+
+$env.config.completions.external.enable = true
+$env.config.completions.external.completer = $multiple_completers
 ```
 
 ## Completion examples

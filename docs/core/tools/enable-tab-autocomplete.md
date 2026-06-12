@@ -92,6 +92,22 @@ dotnet completions script fish | source
 #### Nushell
 
 Run `dotnet completions script nushell` and add the snippet it provides to your `config.nu` file.
+e.g., if you were not using any external completers, add the following to the end of the file:
+```nu
+let dotnet_completer = {|spans|
+    dotnet complete ($spans | str join " ") | lines
+}
+
+let multiple_completers = {|spans|
+    match $spans.0 {
+        "dotnet" => $dotnet_completer
+        _ => { [] } # Fallback to empty list
+    } | do $in $spans
+}
+
+$env.config.completions.external.enable = true
+$env.config.completions.external.completer = $multiple_completers
+```
 
 ## Dynamic completion scripts (all versions)
 

@@ -205,6 +205,9 @@ With the empty `IDataView` created, the pipeline can be built to do the predicti
     - **outputColumnNames** - A string array containing the names of all of the output column names, which can be found when analyzing the ONNX model in Netron.
     - **inputColumnNames** - A string array containing the names of all of the input column name, which can also be found when analyzing the ONNX model in Netron.
 
+   > [!IMPORTANT]
+   > Only apply models from trusted sources. Applying models from untrusted sources is a security risk.
+
    ```csharp
    .Append(context.Transforms.ApplyOnnxModel(outputColumnNames: new string[] { "detected_boxes", "detected_scores", "detected_classes" }, inputColumnNames: new string[] { "image_tensor" }, modelFile: "./Model/model.onnx"));
    ```

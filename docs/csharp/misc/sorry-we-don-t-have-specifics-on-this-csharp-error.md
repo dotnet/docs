@@ -220,12 +220,10 @@ f1_keywords:
   - "CS8360"
   - "CS8362"
   # C# 7.3 diagnostics
-  - "CS8372"
   - "CS8378"
   - "CS8381"
   - "CS8383"
   - "CS8384"
-  - "CS8385"
   # C# 8.0 diagnostics
   ## Async enumerables
   - "CS8412"

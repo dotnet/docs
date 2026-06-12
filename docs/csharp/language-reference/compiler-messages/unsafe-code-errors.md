@@ -22,6 +22,7 @@ f1_keywords:
  - "CS1642"
  - "CS1656"
  - "CS1663"
+ - "CS1664"
  - "CS1665"
  - "CS1666"
  - "CS1708"
@@ -30,6 +31,8 @@ f1_keywords:
  - "CS1919"
  - "CS7092"
  - "CS8372"
+ - "CS8385"
+ - "CS8500"
  - "CS8812"
  - "CS9049"
  - "CS9123"
@@ -69,6 +72,7 @@ helpviewer_keywords:
  - "CS1642"
  - "CS1656"
  - "CS1663"
+ - "CS1664"
  - "CS1665"
  - "CS1666"
  - "CS1708"
@@ -77,6 +81,8 @@ helpviewer_keywords:
  - "CS1919"
  - "CS7092"
  - "CS8372"
+ - "CS8385"
+ - "CS8500"
  - "CS8812"
  - "CS9049"
  - "CS9123"
@@ -125,6 +131,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
 - [**CS1656**](#fixed-statement-usage): *Cannot assign to 'variable' because it is a 'read-only variable type'*
 - [**CS1663**](#fixed-size-buffers): *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
+- [**CS1664**](#fixed-size-buffers): *Fixed size buffer of length 'value' and type 'type' is too big*
 - [**CS1665**](#fixed-size-buffers): *Fixed size buffers must have a length greater than zero*
 - [**CS1666**](#fixed-size-buffers): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
 - [**CS1708**](#fixed-size-buffers): *Fixed size buffers can only be accessed through locals or fields*
@@ -133,6 +140,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS4004**](#unsafe-context-requirements): *Cannot `await` in an unsafe context*
 - [**CS7092**](#fixed-size-buffers): *A fixed buffer may only have one dimension.*
 - [**CS8372**](#fixed-size-buffers): *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute on a property*
+- [**CS8385**](#fixed-statement-usage): *The given expression cannot be used in a fixed statement*
+- [**CS8500**](#pointer-types-and-managed-types): *This takes the address of, gets the size of, or declares a pointer to a managed type ('type')*
 - [**CS8812**](#function-pointers): *Cannot convert &method group 'method' to non-function pointer type 'type'.*
 - [**CS9049**](#fixed-size-buffers): *A fixed field must not be a ref field.*
 - [**CS9123**](#unsafe-context-requirements): *The '`&`' operator should not be used on parameters or local variables in async methods.*

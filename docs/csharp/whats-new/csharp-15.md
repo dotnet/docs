@@ -13,7 +13,7 @@ C# 15 includes the following new features. Try these features by using the lates
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
 - [Closed hierarchies](#closed-hierarchies)
-- [Unsafe evolution](#unsafe-evolution)
+- [Memory safety](#memory-safety)
 
 C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -108,7 +108,7 @@ The `closed` modifier is a contextual keyword. A `closed` class is implicitly `a
 
 For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md). You can copy the examples in this section, including the `ClosedAttribute` workaround, from the [keywords snippets project](https://github.com/dotnet/docs/blob/main/docs/csharp/language-reference/keywords/snippets/shared) in the `dotnet/docs` GitHub repository.
 
-## Unsafe evolution
+## Memory safety
 
 C# 15 begins to evolve the rules for unsafe code. Historically, the `unsafe` context covered the existence of pointer types. The updated rules tie the `unsafe` context to the operations that access unmanaged memory, not to the existence of a pointer.
 
@@ -136,7 +136,7 @@ The operations that access the pointed-to memory, such as pointer indirection (`
 
 The .NET 11 Preview 5 compiler implements these relaxations. A later preview adds the *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword.
 
-For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#unsafe-evolution-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#memory-safety-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 <!-- Add when available
 ## See also

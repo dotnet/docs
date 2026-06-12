@@ -31,12 +31,12 @@ Unsafe code has the following properties:
 
 For information about best practices for unsafe code in C#, see [Unsafe code best practices](../../standard/unsafe-code/best-practices.md).
 
-## Unsafe evolution (preview)
+## Memory safety (preview)
 
 > [!IMPORTANT]
-> Unsafe evolution is a preview feature in C# 15. The behavior described in this section can change before the feature ships. To try the relaxations, set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`.
+> Memory safety is a preview feature in C# 15. The behavior described in this section can change before the feature ships. To try the relaxations, set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`.
 
-Unsafe evolution narrows the definition of an unsafe context. Historically, the `unsafe` context covered the existence of pointer types. The updated rules tie the `unsafe` context to the operations that access memory the runtime doesn't manage. The existence of a pointer isn't unsafe; the dereference of a pointer is.
+The memory safety feature narrows the definition of an unsafe context. Historically, the `unsafe` context covered the existence of pointer types. The updated rules tie the `unsafe` context to the operations that access memory the runtime doesn't manage. The existence of a pointer isn't unsafe; the dereference of a pointer is.
 
 Under the updated rules, the following operations no longer require an `unsafe` context:
 
@@ -47,9 +47,9 @@ Under the updated rules, the following operations no longer require an `unsafe` 
 
 The following example creates and pins pointers without an `unsafe` context:
 
-:::code language="csharp" source="snippets/unsafe-evolution/Relaxations.cs" id="CreatePointer":::
+:::code language="csharp" source="snippets/memory-safety/Relaxations.cs" id="CreatePointer":::
 
-:::code language="csharp" source="snippets/unsafe-evolution/Relaxations.cs" id="FixedStatement":::
+:::code language="csharp" source="snippets/memory-safety/Relaxations.cs" id="FixedStatement":::
 
 These relaxations apply whenever you compile with the `preview` language version, whether or not an assembly opts in to the updated memory safety rules.
 
@@ -61,13 +61,13 @@ The operations that access the pointed-to memory still require an `unsafe` conte
 
 The following example pins an array without an `unsafe` context but dereferences the pointer inside one:
 
-:::code language="csharp" source="snippets/unsafe-evolution/Relaxations.cs" id="Dereference":::
+:::code language="csharp" source="snippets/memory-safety/Relaxations.cs" id="Dereference":::
 
 ### Updated memory safety rules
 
 Later previews extend the meaning of `unsafe` as a member modifier. Today, `unsafe` on a member only allows pointers in the signature and body. Under the updated memory safety rules, `unsafe` on a member marks it as *requires-unsafe*: callers must use the member from an `unsafe` context. The audit obligation moves to the caller. An assembly opts in to this enforcement, and the compiler records the choice with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The feature also adds a `safe` contextual keyword that marks `extern` members and explicit-layout fields as safe.
 
-The compiler in .NET 11 Preview 5 implements the pointer relaxations but doesn't yet enforce the *requires-unsafe* rules, the assembly opt-in, or the `safe` keyword. For the full design, see the [unsafe evolution feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+The compiler in .NET 11 Preview 5 implements the pointer relaxations but doesn't yet enforce the *requires-unsafe* rules, the assembly opt-in, or the `safe` keyword. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 ## Pointer types
 

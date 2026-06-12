@@ -41,7 +41,7 @@ unsafe
 To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option. The common language runtime can't verify unsafe code.
 
 > [!NOTE]
-> Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature narrows the operations that require an `unsafe` context. Creating a pointer, the `fixed` statement, and converting a `stackalloc` to a pointer no longer require an `unsafe` context. Only operations that access the pointed-to memory, such as pointer indirection, do. A later preview also changes `unsafe` on a member to mark it as *requires-unsafe*, so callers must use the member from an `unsafe` context.
+> Beginning with C# 15, the [memory safety](../unsafe-code.md#memory-safety-preview) preview feature narrows the operations that require an `unsafe` context. Creating a pointer, the `fixed` statement, and converting a `stackalloc` to a pointer no longer require an `unsafe` context. Only operations that access the pointed-to memory, such as pointer indirection, do. A later preview also changes `unsafe` on a member to mark it as *requires-unsafe*, so callers must use the member from an `unsafe` context.
 
 ## Example
 

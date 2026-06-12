@@ -21,7 +21,7 @@ The `fixed` statement prevents the [garbage collector](../../../standard/garbage
 > You can use the `fixed` statement only in an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled by using the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
 
 > [!NOTE]
-> Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature lets you use the `fixed` statement outside an `unsafe` context. Only operations that access the pinned memory through the pointer, such as pointer indirection, still require an `unsafe` context.
+> Beginning with C# 15, the [memory safety](../unsafe-code.md#memory-safety-preview) preview feature lets you use the `fixed` statement outside an `unsafe` context. Only operations that access the pinned memory through the pointer, such as pointer indirection, still require an `unsafe` context.
 
 You can initialize the declared pointer as follows:
 

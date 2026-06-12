@@ -39,7 +39,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
   As the preceding example shows, you must use an `unsafe` context when you work with pointer types.
 
   > [!NOTE]
-  > Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature lets you convert a `stackalloc` expression to a pointer outside an `unsafe` context. Operations that access the allocated memory through the pointer still require an `unsafe` context.
+  > Beginning with C# 15, the [memory safety](../unsafe-code.md#memory-safety-preview) preview feature lets you convert a `stackalloc` expression to a pointer outside an `unsafe` context. Operations that access the allocated memory through the pointer still require an `unsafe` context.
 
   For pointer types, you can use a `stackalloc` expression only in a local variable declaration to initialize the variable.
 

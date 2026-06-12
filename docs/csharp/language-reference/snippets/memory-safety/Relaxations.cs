@@ -1,9 +1,9 @@
-// This file demonstrates the C# 15 unsafe evolution relaxations verified against
+// This file demonstrates the C# 15 memory safety relaxations verified against
 // .NET 11 Preview 5. Creating pointers, the fixed statement, stackalloc-to-pointer,
 // and sizeof no longer require an unsafe context. Only operations that access the
 // pointed-to memory still require one.
 
-namespace UnsafeEvolution;
+namespace MemorySafety;
 
 public class Relaxations
 {

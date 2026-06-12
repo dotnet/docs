@@ -65,7 +65,7 @@ When the `DOTNET_PROFILER_PATH*` [environment variables](#environment-variable-c
 
 - Enables or disables perf maps or jit dumps. These files allow third party tools, such as the Linux `perf` tool, to provide human readable names for dynamically generated code and precompiled ReadyToRun (R2R) modules.
 - If you omit this setting, writing perf map and jit dump files are both disabled. This is equivalent to setting the value to `0`.
-- On .NET 8 and later, the runtime can enable and disable perf maps and jit dump files on demand in response to a diagnostic IPC request. See [EnablePerfMap](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md#enableperfmap), [DisablePerfMap](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md#disableperfmap), and [DiagnosticsClient APIs](../diagnostics/microsoft-diagnostics-netcore-client.md#perfmap-methods).
+- On .NET 8 and later, profiling tools can enable perfmaps on demand without needing any environment variable configuration. However not every profiling tool implements this. Manually setting the environment is still required for at least the Linux 'perf' tool and 'perfcollect'.
 - When perf maps are disabled, not all managed callsites will be properly resolved.
 - Depending on the Linux kernel version, both formats are supported by the `perf` tool.
 - Enabling perf maps or jit dumps might cause up to a 20% overhead, though often it's much less. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both. The impact only occurs while the application is JITing code. Often that occurs at startup, but it might occur later if the application is running a new code path for the first time.
@@ -81,7 +81,6 @@ The following table compares perf maps and jit maps.
 |------------------------|--------------|--------|
 | **runtimeconfig.json** | N/A          | N/A    |
 | **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
-| [**Diagnostics IPC Command**](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md) | `EnablePerfMap`, `DisablePerfMap` | `EnablePerfMap(PerfMapType.All)` - perf maps and jit dumps<br/>`EnablePerfMap(PerfMapType.JitDump)` - jit dumps only<br/>`EnablePerfMap(PerfMapType.PerfMap)` - perf maps only<br/>`DisablePerfMap()` - disabled |
 
 For EventPipe-related environment variables, see [Trace using environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables).
 

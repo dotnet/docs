@@ -1,10 +1,12 @@
 ﻿using Microsoft.Extensions.Azure;
 using Azure.Storage.Blobs;
 using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 
 var builder = WebApplication.CreateBuilder(args);
 
 registerUsingUserPrincipal(builder);
+registerUsingNextGen(builder);
 
 var app = builder.Build();
 
@@ -66,6 +68,18 @@ void registerUsingUserPrincipal(WebApplicationBuilder builder)
         clientBuilder.UseCredential(credential);
     });
     #endregion snippet_DefaultAzureCredentialDev
+}
+
+// Demonstrates the next-gen configuration and dependency injection pattern from
+// System.ClientModel / Azure.Identity. The credential and endpoint are read from
+// the "KeyVaultSecrets" section of appsettings.json.
+void registerUsingNextGen(WebApplicationBuilder builder)
+{
+    #region snippet_NextGenAddSecretClient
+    // Binds the "KeyVaultSecrets" section of appsettings.json and resolves the
+    // credential from the nested "Credential" subsection automatically.
+    builder.AddSecretClient("KeyVaultSecrets");
+    #endregion snippet_NextGenAddSecretClient
 }
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

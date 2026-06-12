@@ -4,6 +4,10 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- SCME0002 covers the experimental configuration and DI APIs in
+         System.ClientModel / Azure.Identity. Suppress here so the next-gen
+         snippets compile. Remove after the APIs stabilize. -->
+    <NoWarn>$(NoWarn);SCME0002</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +16,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Microsoft.Extensions.Azure" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
+    <!-- Preview release that ships the AddSecretClient extension for the
+         next-gen configuration and DI pattern. Tracked by
+         https://github.com/Azure/azure-sdk-for-net/issues/55491. -->
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" VersionOverride="4.12.0-beta.1" />
   </ItemGroup>
 
 </Project>

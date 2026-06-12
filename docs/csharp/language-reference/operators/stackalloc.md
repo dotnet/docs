@@ -1,7 +1,7 @@
 ---
 title: "stackalloc expression - Allocate variable storage on the stack instead of the heap"
 description: "The C# stackalloc expression allocates a block of memory on the stack. Stackalloc memory is automatically discarded when that method returns."
-ms.date: 01/20/2026
+ms.date: 06/16/2026
 f1_keywords:
   - "stackalloc_CSharpKeyword"
 helpviewer_keywords:
@@ -37,6 +37,9 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="AssignToPointer":::
 
   As the preceding example shows, you must use an `unsafe` context when you work with pointer types.
+
+  > [!NOTE]
+  > Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature lets you convert a `stackalloc` expression to a pointer outside an `unsafe` context. Operations that access the allocated memory through the pointer still require an `unsafe` context.
 
   For pointer types, you can use a `stackalloc` expression only in a local variable declaration to initialize the variable.
 

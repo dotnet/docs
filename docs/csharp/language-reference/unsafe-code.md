@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
-ms.date: 01/16/2026
+ms.date: 06/16/2026
 f1_keywords:
   - "functionPointer_CSharpKeyword"
 helpviewer_keywords:
@@ -30,6 +30,44 @@ Unsafe code has the following properties:
 - You must add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option to compile the code that contains unsafe blocks.
 
 For information about best practices for unsafe code in C#, see [Unsafe code best practices](../../standard/unsafe-code/best-practices.md).
+
+## Unsafe evolution (preview)
+
+> [!IMPORTANT]
+> Unsafe evolution is a preview feature in C# 15. The behavior described in this section can change before the feature ships. To try the relaxations, set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`.
+
+Unsafe evolution narrows the definition of an unsafe context. Historically, the `unsafe` context covered the existence of pointer types. The updated rules tie the `unsafe` context to the operations that access memory the runtime doesn't manage. The existence of a pointer isn't unsafe; the dereference of a pointer is.
+
+Under the updated rules, the following operations no longer require an `unsafe` context:
+
+- Declaring a pointer type and taking the address of a variable with the `&` operator.
+- The [`fixed`](statements/fixed.md) statement that pins a variable.
+- Converting a [`stackalloc`](operators/stackalloc.md) expression to a pointer.
+- The [`sizeof`](operators/sizeof.md) operator applied to any unmanaged type.
+
+The following example creates and pins pointers without an `unsafe` context:
+
+:::code language="csharp" source="snippets/unsafe-evolution/Relaxations.cs" id="CreatePointer":::
+
+:::code language="csharp" source="snippets/unsafe-evolution/Relaxations.cs" id="FixedStatement":::
+
+These relaxations apply whenever you compile with the `preview` language version, whether or not an assembly opts in to the updated memory safety rules.
+
+The operations that access the pointed-to memory still require an `unsafe` context:
+
+- Pointer indirection (`*p`), pointer member access (`p->member`), and pointer element access (`p[i]`).
+- Function pointer invocation.
+- Element access on a fixed-size buffer.
+
+The following example pins an array without an `unsafe` context but dereferences the pointer inside one:
+
+:::code language="csharp" source="snippets/unsafe-evolution/Relaxations.cs" id="Dereference":::
+
+### Updated memory safety rules
+
+Later previews extend the meaning of `unsafe` as a member modifier. Today, `unsafe` on a member only allows pointers in the signature and body. Under the updated memory safety rules, `unsafe` on a member marks it as *requires-unsafe*: callers must use the member from an `unsafe` context. The audit obligation moves to the caller. An assembly opts in to this enforcement, and the compiler records the choice with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The feature also adds a `safe` contextual keyword that marks `extern` members and explicit-layout fields as safe.
+
+The compiler in .NET 11 Preview 5 implements the pointer relaxations but doesn't yet enforce the *requires-unsafe* rules, the assembly opt-in, or the `safe` keyword. For the full design, see the [unsafe evolution feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 ## Pointer types
 

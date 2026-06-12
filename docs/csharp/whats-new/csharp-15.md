@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: Get an overview of the new features in C# 15. C# 15 ships with .NET 11.
-ms.date: 06/05/2026
+ms.date: 06/16/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -13,6 +13,7 @@ C# 15 includes the following new features. Try these features by using the lates
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
 - [Closed hierarchies](#closed-hierarchies)
+- [Unsafe evolution](#unsafe-evolution)
 
 C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -106,6 +107,36 @@ The `closed` modifier is a contextual keyword. A `closed` class is implicitly `a
 > ```
 
 For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md). You can copy the examples in this section, including the `ClosedAttribute` workaround, from the [keywords snippets project](https://github.com/dotnet/docs/blob/main/docs/csharp/language-reference/keywords/snippets/shared) in the `dotnet/docs` GitHub repository.
+
+## Unsafe evolution
+
+C# 15 begins to evolve the rules for unsafe code. Historically, the `unsafe` context covered the existence of pointer types. The updated rules tie the `unsafe` context to the operations that access unmanaged memory, not to the existence of a pointer.
+
+When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
+
+- Declaring a pointer type and taking the address of a variable with the `&` operator.
+- The `fixed` statement that pins a variable.
+- Converting a `stackalloc` expression to a pointer.
+- The `sizeof` operator applied to any unmanaged type.
+
+The following example creates and pins a pointer without an `unsafe` context:
+
+```csharp
+int number = 42;
+int* pointer = &number;
+
+int[] numbers = [10, 20, 30];
+fixed (int* first = numbers)
+{
+    // Dereferencing the pointer still requires an unsafe context.
+}
+```
+
+The operations that access the pointed-to memory, such as pointer indirection (`*p`), pointer member access (`p->member`), pointer element access (`p[i]`), and function pointer invocation, still require an `unsafe` context.
+
+The .NET 11 Preview 5 compiler implements these relaxations. A later preview adds the *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword.
+
+For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#unsafe-evolution-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 <!-- Add when available
 ## See also

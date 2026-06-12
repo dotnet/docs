@@ -1,7 +1,7 @@
 ---
 title: "sizeof operator - determine the storage needs for a type"
 description: "Learn about the C# `sizeof` operator that returns the memory amount occupied by a variable of a given type."
-ms.date: 02/06/2026
+ms.date: 06/16/2026
 f1_keywords:
   - "sizeof_CSharpKeyword"
   - "sizeof"
@@ -35,6 +35,9 @@ The expressions presented in the following table are evaluated at compile time t
 The size of the types in the preceding table is a compile-time constant.
 
 In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` on any non-`void` type, including types constructed from type parameters.
+
+> [!NOTE]
+> Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature lets you use `sizeof` on any unmanaged type outside an `unsafe` context.
 
 - The size of a reference or pointer type is the size of a reference or pointer, not the size of the object it might refer to.
 - The size of a value type, unmanaged or not, is the size of such a value.

@@ -1,7 +1,7 @@
 ---
 title: "Pointer related operators - access memory and dereference memory locations"
 description: "Learn about C# operators that you can use when working with pointers. You use these operators to access memory, index memory locations and dereference the storage at a memory location"
-ms.date: 01/20/2026
+ms.date: 06/16/2026
 author: pkulikov
 f1_keywords: 
   - "->_CSharpKeyword"
@@ -39,6 +39,9 @@ For information about pointer types, see [Pointer types](../unsafe-code.md#point
 
 > [!NOTE]
 > Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. You must compile the code that contains unsafe blocks with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+
+> [!NOTE]
+> Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature lets you use the address-of `&` operator outside an `unsafe` context. The pointer indirection, member access, and element access operators that read or write the pointed-to memory still require an `unsafe` context.
 
 ## <a name="address-of-operator-"></a> Address-of operator &amp;
 

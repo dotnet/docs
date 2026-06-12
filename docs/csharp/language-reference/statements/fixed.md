@@ -1,7 +1,7 @@
 ---
 title: "fixed statement - pin a moveable variable"
 description: "Use the C# `fixed` statement to pin a moveable variable and declare a pointer to that variable. The address of a pinned variable doesn't change during execution of the statement."
-ms.date: 01/16/2026
+ms.date: 06/16/2026
 f1_keywords:
   - "fixed_CSharpKeyword"
   - "fixed"
@@ -19,6 +19,9 @@ The `fixed` statement prevents the [garbage collector](../../../standard/garbage
 
 > [!NOTE]
 > You can use the `fixed` statement only in an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled by using the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+
+> [!NOTE]
+> Beginning with C# 15, the [unsafe evolution](../unsafe-code.md#unsafe-evolution-preview) preview feature lets you use the `fixed` statement outside an `unsafe` context. Only operations that access the pinned memory through the pointer, such as pointer indirection, still require an `unsafe` context.
 
 You can initialize the declared pointer as follows:
 

@@ -66,11 +66,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Deeply nested CBOR data can cause excessive memory consumption and execution time. Skipping over a deeply nested array or map requires processing every element in the structure, which can use a surprising amount of memory. This change is consistent with the behavior of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
+To prevent excessive memory consumption and execution time, this change limits the nesting depth. Skipping over a deeply nested array or map requires processing every element in the structure, which can use a surprising amount of memory. This change is also consistent with the behavior of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
 
 ## Recommended action
 
-If your application legitimately processes CBOR data nested more deeply than the defaults allow (64 levels for reading, 1000 levels for writing), use the new options types to specify a larger limit:
+If your application processes CBOR data nested more deeply than the defaults allow (64 levels for reading, 1000 levels for writing), use the new options types to specify a larger limit:
 
 ```csharp
 // For reading CBOR data nested more than 64 levels deep

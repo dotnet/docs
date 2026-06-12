@@ -74,8 +74,8 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides implementations of <xref:Azure.Core.TokenCredential> that support various scenarios and Microsoft Entra authentication flows. The Azure SDK for .NET offers two patterns for registering Azure service clients with dependency injection:
 
-- **Microsoft.Extensions.Azure (stable)** — register clients with `AddAzureClients` and pass a `TokenCredential` to `UseCredential` in code. Use this pattern for production apps today.
-- **Azure.Identity configuration and DI (preview)** — bind clients and their credentials to a section of `appsettings.json`. No `TokenCredential` instance is constructed in code. Tracked by [azure-sdk-for-net#55491](https://github.com/Azure/azure-sdk-for-net/issues/55491).
+- **Microsoft.Extensions.Azure (stable)**: register clients with `AddAzureClients` and pass a `TokenCredential` to `UseCredential` in code. Use this pattern for production apps today.
+- **Azure.Identity configuration and DI (preview)**: bind clients and their credentials to a section of `appsettings.json`. No `TokenCredential` instance is constructed in code. Tracked by [azure-sdk-for-net#55491](https://github.com/Azure/azure-sdk-for-net/issues/55491).
 
 Select a tab to see the steps for each pattern.
 
@@ -133,7 +133,7 @@ Select a tab to see the steps for each pattern.
 
     The package pulls in a compatible prerelease of `Azure.Identity` transitively.
 
-1. In `appsettings.json`, add a section that describes the client endpoint and credential. The section name is arbitrary — you reference it by name when you register the client:
+1. In `appsettings.json`, add a section that describes the client endpoint and credential. The section name is arbitrary; you reference it by name when you register the client:
 
     ```json
     "KeyVaultSecrets": {
@@ -150,7 +150,7 @@ Select a tab to see the steps for each pattern.
 
     :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_NextGenAddSecretClient":::
 
-    The credential is resolved from the `Credential` subsection automatically — no `TokenCredential` instance is constructed in code.
+    The credential is resolved from the `Credential` subsection automatically. No `TokenCredential` instance is constructed in code.
 
 > [!NOTE]
 > Service-specific extensions like `AddSecretClient` ship with each client library as it adopts the pattern. For libraries that haven't shipped a dedicated extension yet, use the generic `builder.AddAzureClient<TClient, TSettings>("section-name")` method from `Azure.Identity` instead.

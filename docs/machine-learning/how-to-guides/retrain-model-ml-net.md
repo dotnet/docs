@@ -30,6 +30,9 @@ The following algorithms are retrainable in ML.NET:
 
 ## Load pretrained model
 
+> [!IMPORTANT]
+> Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
 First, load the pretrained model into your application. To learn more about loading training pipelines and models, see [Save and load a trained model](save-load-machine-learning-models-ml-net.md).
 
 ```csharp

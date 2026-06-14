@@ -135,6 +135,9 @@ The following link provides more information if you want to learn more about [de
 
 1. Then, add a new method called `Configure` to register the `PredictionEnginePool` service below the constructor.
 
+    > [!IMPORTANT]
+    > Only add models from trusted sources. Adding models from untrusted sources is a security risk.
+
     [!code-csharp [ConfigureServices](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L32-L36)]
 
 At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it.

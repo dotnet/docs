@@ -99,4 +99,3 @@ There is no AppContext switch to restore the previous unlimited-depth behavior.
 - <xref:System.Formats.Cbor.CborWriter.WriteStartIndefiniteLengthByteString?displayProperty=fullName>
 - <xref:System.Formats.Cbor.CborWriter.WriteStartIndefiniteLengthTextString?displayProperty=fullName>
 - <xref:System.Formats.Cbor.CborWriter.WriteStartMap(System.Nullable{System.Int32})?displayProperty=fullName>
-

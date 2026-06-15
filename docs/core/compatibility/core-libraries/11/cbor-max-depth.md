@@ -66,7 +66,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change limits the nesting depth to prevent excessive memory consumption and execution time. Skipping over a deeply nested array or map requires every element in the structure to be processed, which can use a surprising amount of memory. This change is also consistent with the behavior of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
+This change limits the nesting depth to prevent excessive memory consumption and execution time. When you skip over a deeply nested array or map, the system must process every element in the structure, which can use a surprising amount of memory. This change is also consistent with the behavior of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
 
 ## Recommended action
 
@@ -87,7 +87,7 @@ var writer = new CborWriter(writerOptions);
 > [!NOTE]
 > Unlike `Utf8JsonReader`/`Utf8JsonWriter`, setting `MaxDepth = 0` in CBOR means *no nesting is allowed* (not "use the runtime default"). To use the runtime default, set `MaxDepth = -1` or omit the property when constructing `CborReaderOptions`/`CborWriterOptions`.
 
-No AppContext switch restores the previous unlimited-depth behavior.
+You cannot use an AppContext switch to restore the previous unlimited-depth behavior.
 
 ## Affected APIs
 

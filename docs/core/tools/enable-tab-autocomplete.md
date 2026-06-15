@@ -115,7 +115,9 @@ pack
 
 If that command doesn't work, make sure that .NET Core 2.0 SDK or later is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK or later. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
 
-### PowerShell
+### Configure shells to use native completions
+
+#### PowerShell
 
 To add tab completion to **PowerShell** for the .NET CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
 
@@ -131,7 +133,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 }
 ```
 
-### Bash
+#### Bash
 
 Add the following code to your `.bashrc` file:
 
@@ -151,7 +153,7 @@ function _dotnet_bash_complete()
 complete -f -F _dotnet_bash_complete dotnet
 ```
 
-### Zsh
+#### Zsh
 
 Add the following code to your `.zshrc` file:
 
@@ -176,7 +178,7 @@ _dotnet_zsh_complete()
 compdef _dotnet_zsh_complete dotnet
 ```
 
-### Fish
+#### Fish
 
 Add the following code to your `config.fish` file:
 
@@ -184,7 +186,7 @@ Add the following code to your `config.fish` file:
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 ```
 
-### Nushell
+#### Nushell
 
 Add the following code to your `config.nu` file:
 

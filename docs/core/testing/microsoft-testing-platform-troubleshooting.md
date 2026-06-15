@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) troubleshooting
 description: Troubleshoot MTP issues, exit codes, and known problems.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 05/25/2026
+ms.date: 06/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -64,8 +64,8 @@ You can also enable the diagnostic logs using the environment variables:
 | `TESTINGPLATFORM_DIAGNOSTIC` | If set to `1`, enables the diagnostic logging. |
 | `TESTINGPLATFORM_DIAGNOSTIC_VERBOSITY` | Defines the verbosity level. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`. |
 | `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_DIRECTORY` | The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory. |
-| `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` | The prefix for the log file name. Defaults to `"log_"`. |
-| `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` | Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. |
+| `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` | The prefix for the log file name. Defaults to `"log_"`. Available in MTP starting with version 2.3.0; the legacy name `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` is still honored for backward compatibility. |
+| `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` | Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. Available in MTP starting with version 2.3.0; the legacy name `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` is still honored for backward compatibility. |
 
 > [!NOTE]
 > Environment variables take precedence over the command line arguments.

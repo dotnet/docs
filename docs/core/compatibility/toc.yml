@@ -18,8 +18,6 @@ items:
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
-              - name: MemoryStream maximum capacity updated and exception behavior changed
-                href: core-libraries/11/memorystream-max-capacity.md
               - name: NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions
                 href: core-libraries/11/namedpipeserverstream-unix-permissions.md
               - name: Nullable.GetUnderlyingType throws for custom Type subclasses
@@ -42,6 +40,8 @@ items:
             items:
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
+              - name: Some Microsoft.Extensions packages included in shared framework
+                href: extensions/11/extensions-in-shared-framework.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected
@@ -68,6 +68,8 @@ items:
                 href: sdk/11/mono-launch-target-removed.md
               - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
+              - name: Template engine packages no longer support netstandard2.0
+                href: sdk/11/template-engine-netstandard.md
               - name: VSTest removes dependency on Newtonsoft.Json
                 href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10

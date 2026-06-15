@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) terminal output
 description: Learn about the built-in terminal test reporter in MTP, including output modes, ANSI support, and progress indicators.
 author: evangelink
 ms.author: amauryleve
-ms.date: 02/25/2026
+ms.date: 06/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -45,6 +45,9 @@ The progress bar is written based on the selected mode:
 
 | Option | Description |
 |---|---|
-| `--no-progress` | Disable reporting progress to screen. |
-| `--no-ansi` | Disable outputting ANSI escape characters to screen. |
-| `--output` | Output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. Default is `Normal`. |
+| `--no-progress` | Disables reporting progress to screen. |
+| `--no-ansi` | Disables outputting ANSI escape characters to screen. |
+| `--ansi` | Controls whether ANSI escape characters are emitted. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). Available in MTP starting with version 2.3.0. |
+| `--output` | Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. Default is `Normal`. |
+| `--show-stdout` | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. Available in MTP starting with version 2.2.1. |
+| `--show-stderr` | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. Available in MTP starting with version 2.2.1. |

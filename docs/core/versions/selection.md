@@ -3,7 +3,7 @@ title: Select which .NET version to use
 description: Learn how .NET automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/22/2025
+ms.date: 05/15/2026
 ai-usage: ai-assisted
 ---
 
@@ -57,6 +57,8 @@ For more information about SDK version selection, see the [Matching rules](../to
 ### Updating the SDK version
 
 It's important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
+
+To surface related warnings at build time for the resolved SDK, set the `CheckSdkVulnerabilities` MSBuild property to `true`. The build then warns if the resolved .NET SDK has known vulnerabilities ([NETSDK1238](../tools/sdk-errors/netsdk1238.md)), is end of life ([NETSDK1239](../tools/sdk-errors/netsdk1239.md)), or is on a feature band that has no newer release ([NETSDK1240](../tools/sdk-errors/netsdk1240.md)).
 
 ## Target framework monikers define build time APIs
 

@@ -150,6 +150,9 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 ## Load the pretrained TensorFlow model
 
+> [!IMPORTANT]
+> Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
 1. Add code to load the TensorFlow model:
 
     [!code-csharp[LoadTensorFlowModel](./snippets/text-classification-tf/csharp/Program.cs#LoadTensorFlowModel)]

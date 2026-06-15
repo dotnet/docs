@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 03/19/2026
+ms.date: 06/10/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ---
@@ -311,8 +311,8 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 - .NET 10+
 
 > [!NOTE]
-> The `collect-linux` verb only runs on Linux x64 and Linux Arm64 environments that have glibc version 2.35 or later.
-> All of the [.NET 10 officially supported Linux distros](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux) support this requirement except Alpine 3.22, CentOS Stream 9, and any distros based off Red Hat Enterprise Linux 9.
+> The `collect-linux` verb only runs on Linux x64 and Linux Arm64 environments that have glibc version 2.27 or later.
+> All of the [.NET 10 officially supported Linux distros](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux) support this requirement except Alpine 3.22.
 > A quick way to check the version of a system's libc is with the command `ldd --version` or by executing the libc library directly.
 
 > [!TIP]

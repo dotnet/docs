@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # CborReader and CborWriter enforce a default maximum nesting depth
 
-Starting in .NET 11, `CborReader` and `CborWriter` enforce a maximum nesting depth by default. Reading or writing CBOR data that exceeds the configured maximum depth throws an exception.
+Starting in .NET 11, <xref:System.Formats.Cbor.CborReader> and <xref:System.Formats.Cbor.CborWriter> enforce a maximum nesting depth by default. Reading or writing CBOR data that exceeds the configured maximum depth throws an exception.
 
 ## Version introduced
 
@@ -66,7 +66,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-To prevent excessive memory consumption and execution time, this change limits the nesting depth. Skipping over a deeply nested array or map requires processing every element in the structure, which can use a surprising amount of memory. This change is also consistent with the behavior of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
+This change limits the nesting depth to prevent excessive memory consumption and execution time. Skipping over a deeply nested array or map requires every element in the structure to be processed, which can use a surprising amount of memory. This change is also consistent with the behavior of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
 
 ## Recommended action
 
@@ -87,7 +87,7 @@ var writer = new CborWriter(writerOptions);
 > [!NOTE]
 > Unlike `Utf8JsonReader`/`Utf8JsonWriter`, setting `MaxDepth = 0` in CBOR means *no nesting is allowed* (not "use the runtime default"). To use the runtime default, set `MaxDepth = -1` or omit the property when constructing `CborReaderOptions`/`CborWriterOptions`.
 
-There is no AppContext switch to restore the previous unlimited-depth behavior.
+No AppContext switch restores the previous unlimited-depth behavior.
 
 ## Affected APIs
 

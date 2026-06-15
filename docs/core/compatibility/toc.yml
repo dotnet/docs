@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: CborReader and CborWriter enforce a default maximum nesting depth
+                href: core-libraries/11/cbor-max-depth.md
               - name: CRC32 validation added when reading ZIP archive entries
                 href: core-libraries/11/ziparchive-entry-crc32-validation.md
               - name: DateOnly and TimeOnly TryParse methods throw for invalid input
@@ -38,8 +40,6 @@ items:
                 href: cryptography/11/dsa-removed-macos.md
           - name: Extensions
             items:
-              - name: CborReader and CborWriter enforce a default maximum nesting depth
-                href: extensions/11/cbor-max-depth.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
               - name: Some Microsoft.Extensions packages included in shared framework

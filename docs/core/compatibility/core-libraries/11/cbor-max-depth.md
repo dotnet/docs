@@ -95,7 +95,8 @@ There is no AppContext switch to restore the previous unlimited-depth behavior.
 - <xref:System.Formats.Cbor.CborReader.ReadStartMap?displayProperty=fullName>
 - <xref:System.Formats.Cbor.CborReader.ReadStartIndefiniteLengthByteString?displayProperty=fullName>
 - <xref:System.Formats.Cbor.CborReader.ReadStartIndefiniteLengthTextString?displayProperty=fullName>
-- <xref:System.Formats.Cbor.CborWriter.WriteStartArray(System.Int32)?displayProperty=fullName>
-- <xref:System.Formats.Cbor.CborWriter.WriteStartIndefiniteLengthArray?displayProperty=fullName>
+- <xref:System.Formats.Cbor.CborWriter.WriteStartArray(System.Nullable{System.Int32})?displayProperty=nameWithType>
+- <xref:System.Formats.Cbor.CborWriter.WriteStartIndefiniteLengthByteString?displayProperty=fullName>
+- <xref:System.Formats.Cbor.CborWriter.WriteStartIndefiniteLengthTextString?displayProperty=fullName>
 - <xref:System.Formats.Cbor.CborWriter.WriteStartMap(System.Nullable{System.Int32})?displayProperty=fullName>
-- <xref:System.Formats.Cbor.CborWriter.WriteStartIndefiniteLengthMap?displayProperty=fullName>
+

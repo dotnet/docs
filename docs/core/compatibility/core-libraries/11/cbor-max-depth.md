@@ -87,7 +87,7 @@ var writer = new CborWriter(writerOptions);
 > [!NOTE]
 > Unlike `Utf8JsonReader`/`Utf8JsonWriter`, setting `MaxDepth = 0` in CBOR means *no nesting is allowed* (not "use the runtime default"). To use the runtime default, set `MaxDepth = -1` or omit the property when constructing `CborReaderOptions`/`CborWriterOptions`.
 
-You cannot use an AppContext switch to restore the previous unlimited-depth behavior.
+There is no AppContext switch to restore the previous unlimited-depth behavior.
 
 ## Affected APIs
 

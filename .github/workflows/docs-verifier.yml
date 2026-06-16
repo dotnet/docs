@@ -19,7 +19,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout the repository
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
 
       - name: Validate
         uses: dotnet/docs-tools/actions/docs-verifier@1397e452fa0b49e9e52bc2443cd9ec6182a05294 # main

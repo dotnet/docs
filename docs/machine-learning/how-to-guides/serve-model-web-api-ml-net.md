@@ -105,6 +105,9 @@ The following link provides more information if you want to learn more about [de
 
 Add the following code to your *Program.cs* file:
 
+> [!IMPORTANT]
+> Only add models from trusted sources. Adding models from untrusted sources is a security risk.
+
 ```csharp
 builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
     .FromFile(modelName: "SentimentAnalysisModel", filePath: "sentiment_model.zip", watchForChanges: true);

@@ -3,7 +3,8 @@ title: Testing with 'dotnet test'
 description: Learn more about how 'dotnet test' works and its support for VSTest and Microsoft.Testing.Platform (MTP)
 author: Youssef1313
 ms.author: ygerges
-ms.date: 03/26/2025
+ms.date: 06/05/2026
+ai-usage: ai-assisted
 ---
 
 # Testing with 'dotnet test'
@@ -157,6 +158,9 @@ For users of MTP that are using the VSTest mode of `dotnet test`, there are few 
 1. If passing a specific solution (or directory containing solution), for example, `dotnet test MySolution.sln`, this should become `dotnet test --solution MySolution.sln`.
 1. If passing a specific project (or directory containing project), for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.
 1. If passing a specific dll, for example, `dotnet test path/to/UnitTests.dll`, this should become `dotnet test --test-modules path/to/UnitTests.dll`. Note that `--test-modules` also supports globbing.
+
+> [!TIP]
+> Even though `--` is no longer required in MTP mode, you can still use it to mark where test application arguments begin. The separator avoids a parser quirk where unrecognized arguments change meaning when interleaved with options that `dotnet test` understands. The separator also protects your scripts if `dotnet test` later starts recognizing one of those tokens. For more information, see [Forward arguments to the test application](../tools/dotnet-test-mtp.md#forward-arguments-to-the-test-application).
 
 ## Solutions with mixed test frameworks or extensions
 

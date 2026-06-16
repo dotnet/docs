@@ -1,9 +1,9 @@
 ---
 title: Microsoft.Testing.Platform (MTP) test reports
-description: Learn about the MTP extensions for generating test report files (TRX, Azure DevOps).
+description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps).
 author: evangelink
 ms.author: amauryleve
-ms.date: 06/01/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -28,14 +28,83 @@ builder.AddTrxReportProvider();
 > [!NOTE]
 > When using manual registration, register the TRX report provider last. The current implementation depends on registration order, so registering it after all other extensions ensures it captures all test data.
 
+> [!NOTE]
+> Available in MTP starting with version 1.9.0, the TRX report includes the test `Description` field.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0, TRX results stream to disk as the run progresses. If the test host crashes, the TRX file keeps the results collected before the crash.
+
 ### Options
 
 | Option | Description |
 |---|---|
 | `--report-trx` | Generates the TRX report. |
-| `--report-trx-filename` | The name of the generated TRX report. The default name matches the following format `<UserName>_<MachineName>_<yyyy-MM-dd_HH_mm_ss.fffffff>.trx`. |
+| `--report-trx-filename` | The name of the generated TRX report. Before MTP 2.3.0, the default name matches the following format: `<UserName>_<MachineName>_<yyyy-MM-dd_HH_mm_ss.fffffff>.trx`. Available in MTP starting with version 2.3.0, the default name uses the deterministic `<assembly>_<tfm>_<arch>` form. You can also include a relative path and placeholders such as `{asm}`, `{tfm}`, `{arch}`, and `{time}`. |
 
 The report is saved inside the default _TestResults_ folder that can be specified through the `--results-directory` command line argument.
+
+## HTML reports
+
+The HTML report creates an interactive, self-contained HTML file for a test session. This extension requires the [Microsoft.Testing.Extensions.HtmlReport](https://nuget.org/packages/Microsoft.Testing.Extensions.HtmlReport) NuGet package.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0. When you use [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), the package auto-registers this extension unless you set the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddHtmlReportProvider();
+```
+
+### Options
+
+| Option | Description |
+|---|---|
+| `--report-html` | Generates the HTML report. Available in MTP starting with version 2.3.0. |
+| `--report-html-filename` | The name of the generated HTML report. The value must end with `.html`. You can include a relative path that stays under the test results directory. Requires `--report-html`. Available in MTP starting with version 2.3.0. |
+
+## JUnit reports
+
+The JUnit report creates a JUnit-compatible XML file for a test session. This extension requires the [Microsoft.Testing.Extensions.JUnitReport](https://nuget.org/packages/Microsoft.Testing.Extensions.JUnitReport) NuGet package.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0. When you use [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), the package auto-registers this extension unless you set the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddJUnitReportProvider();
+```
+
+### Options
+
+| Option | Description |
+|---|---|
+| `--report-junit` | Generates the JUnit XML report. Available in MTP starting with version 2.3.0. |
+| `--report-junit-filename` | The name of the generated JUnit XML report. The value must end with `.xml`. You can include a relative path that stays under the test results directory. Requires `--report-junit`. Available in MTP starting with version 2.3.0. |
+
+## CTRF reports
+
+The CTRF report creates a JSON file that uses the [Common Test Report Format](https://ctrf.io) for a test session. This extension requires the [Microsoft.Testing.Extensions.CtrfReport](https://nuget.org/packages/Microsoft.Testing.Extensions.CtrfReport) NuGet package.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0. When you use [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), the package auto-registers this extension unless you set the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddCtrfReportProvider();
+```
+
+### Options
+
+| Option | Description |
+|---|---|
+| `--report-ctrf` | Generates the CTRF JSON report. Available in MTP starting with version 2.3.0. |
+| `--report-ctrf-filename` | The name of the generated CTRF JSON report. The value must end with `.json`. You can include a relative path that stays under the test results directory. Requires `--report-ctrf`. Available in MTP starting with version 2.3.0. |
 
 ## Azure DevOps reports
 

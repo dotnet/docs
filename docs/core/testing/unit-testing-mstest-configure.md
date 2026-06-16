@@ -3,7 +3,8 @@ title: Configure MSTest
 description: Learn how to configure MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 04/16/2024
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # Configure MSTest
@@ -35,6 +36,7 @@ The following runsettings entries let you configure how MSTest behaves.
 |**DeployTestSourceDependencies**|true|A value indicating whether the test source references are to be deployed.|
 |**EnableBaseClassTestMethodsFromOtherAssemblies**|true|A value indicating whether to enable discovery of test methods from base classes in a different assembly from the inheriting test class.|
 |**ForcedLegacyMode**|false|In older versions of Visual Studio, the MSTest adapter was optimized to make it faster and more scalable. Some behavior, such as the order in which tests are run, might not be exactly as it was in previous editions of Visual Studio. Set the value to **true** to use the older test adapter.<br /><br />For example, you might use this setting if you have an *app.config* file specified for a unit test.<br /><br />We recommend that you consider refactoring your tests to allow you to use the newer adapter.|
+|**LaunchDebuggerOnTestFailure**|false|Starting with MSTest 4.2, when set to **true**, MSTest launches the debugger when a test fails.|
 |**MapInconclusiveToFailed**|false|If a test completes with an inconclusive status, it's mapped to the skipped status in **Test Explorer**. If you want inconclusive tests to be shown as failed, set the value to **true**.|
 |**MapNotRunnableToFailed**|true|A value indicating whether a not runnable result is mapped to failed test.|
 |**OrderTestsByNameInClass**|false|If you want to run tests by test names both in Test Explorers and on the command line, set this value to **true**.|
@@ -214,6 +216,7 @@ All the settings in this section belong to the `execution` element.
 | considerEmptyDataSourceAsInconclusive | false | When set to `true`, an empty data source is considered as inconclusive. |
 | considerFixturesAsSpecialTests | false | To display `AssemblyInitialize`, `AssemblyCleanup`, `ClassInitialize`, `ClassCleanup` as individual entries in Visual Studio and Visual Studio Code `Test Explorer` and _.trx_ log, set this value to **true**. |
 | mapInconclusiveToFailed | false | If a test completes with an inconclusive status, it's mapped to the skipped status in **Test Explorer**. If you want inconclusive tests to be shown as failed, set the value to **true**. |
+| launchDebuggerOnTestFailure | false | Starting with MSTest 4.2, when set to `true`, MSTest launches the debugger when a test fails. |
 | mapNotRunnableToFailed | true | A value indicating whether a not runnable result is mapped to failed test. |
 | treatClassAndAssemblyCleanupWarningsAsErrors | false | To see your failures in class cleanups as errors, set this value to **true**. |
 | treatDiscoveryWarningsAsErrors | false | To report test discovery warnings as errors, set this value to **true**. |

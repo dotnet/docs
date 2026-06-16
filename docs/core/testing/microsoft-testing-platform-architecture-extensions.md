@@ -3,7 +3,7 @@ title: Build extensions for Microsoft.Testing.Platform (MTP)
 description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 06/02/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -206,35 +206,38 @@ If your extension requires intensive initialization and you need to use the asyn
 
 ### The `ITestApplicationLifecycleCallbacks` extensions
 
-The `ITestApplicationLifecycleCallbacks` is an *in-process* extension that enables the execution of code before everything, it's like to have access to the first line of the hypothetical *main* of the *test host*.
+> [!IMPORTANT]
+> `ITestApplicationLifecycleCallbacks` was removed in MTP 2.0.0. Use `ITestHostApplicationLifetime` instead. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#removed-obsolete-types).
 
-To register a custom `ITestApplicationLifecycleCallbacks`, utilize the following api:
+The `ITestHostApplicationLifetime` interface lets an *in-process* extension run code at the start and end of the *test host*.
+
+To register a custom `ITestHostApplicationLifetime`, use the following API:
 
 ```csharp
 var builder = await TestApplication.CreateBuilderAsync(args);
 
 // ...
 
-builder.TestHost.AddTestApplicationLifecycleCallbacks(
+builder.TestHost.AddTestHostApplicationLifetime(
     static serviceProvider
-    => new CustomTestApplicationLifecycleCallbacks());
+    => new CustomTestHostApplicationLifetime());
 ```
 
-The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
+The factory uses the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to access the services offered by the testing platform.
 
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
 
-The `ITestApplicationLifecycleCallbacks` interface includes the following methods:
+The `ITestHostApplicationLifetime` interface includes the following methods:
 
 ```csharp
-public interface ITestApplicationLifecycleCallbacks : ITestHostExtension
+public interface ITestHostApplicationLifetime : ITestHostExtension
 {
     Task BeforeRunAsync(CancellationToken cancellationToken);
 
     Task AfterRunAsync(
         int exitCode,
-        CancellationToken cancellation);
+        CancellationToken cancellationToken);
 }
 
 public interface ITestHostExtension : IExtension
@@ -242,7 +245,7 @@ public interface ITestHostExtension : IExtension
 }
 ```
 
-The `ITestApplicationLifecycleCallbacks` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+The `ITestHostApplicationLifetime` interface extends `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 `BeforeRunAsync`: This method serves as the initial point of contact for the *test host* and is the first opportunity for an *in-process* extension to execute a feature. It's typically used to establish a connection with any corresponding *out-of-process* extensions if a feature is designed to operate across both environments.
 
@@ -492,7 +495,7 @@ Consider the following details for this API:
 
 `OnTestHostProcessStartedAsync`: This method is invoked immediately after the test host starts. This method offers an object that implements the `ITestHostProcessInformation` interface, which provides key details about the test host process result.
 > [!IMPORTANT]
-> The invocation of this method does not halt the test host's execution. If you need to pause it, you should register an [*in-process*](./microsoft-testing-platform-architecture.md#in-process-vs-out-of-process-extensions) extension such as [`ITestApplicationLifecycleCallbacks`](#the-itestapplicationlifecyclecallbacks-extensions) and synchronize it with the *out-of-process* extension.
+> The invocation of this method does not halt the test host's execution. If you need to pause it, you should register an [*in-process*](./microsoft-testing-platform-architecture.md#in-process-vs-out-of-process-extensions) extension such as [`ITestHostApplicationLifetime`](#the-itestapplicationlifecyclecallbacks-extensions) and synchronize it with the *out-of-process* extension.
 
 `OnTestHostProcessExitedAsync`: This method is invoked when the test suite execution is complete. This method supplies an object that adheres to the `ITestHostProcessInformation` interface, which conveys crucial details about the outcome of the test host process.
 
@@ -598,13 +601,13 @@ The testing platform consists of a [testing framework](./microsoft-testing-platf
 1. [ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process
 1. Test host process start
 1. [ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process, this event can intertwine the actions of *in-process* extensions, depending on race conditions.
-1. [ITestApplicationLifecycleCallbacks.BeforeRunAsync](#the-itestsessionlifetimehandler-extensions): In-process
+1. [ITestHostApplicationLifetime.BeforeRunAsync](#the-itestapplicationlifecyclecallbacks-extensions): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionStartingAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestFramework.CreateTestSessionAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process
 1. [ITestFramework.ExecuteRequestAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process, this method can be called one or more times. At this point, the testing framework will transmit information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) that can be utilized by the [IDataConsumer](#the-idataconsumer-extensions).
 1. [ITestFramework.CloseTestSessionAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions): In-process
-1. [ITestApplicationLifecycleCallbacks.AfterRunAsync](#the-itestsessionlifetimehandler-extensions): In-process
+1. [ITestHostApplicationLifetime.AfterRunAsync](#the-itestapplicationlifecyclecallbacks-extensions): In-process
 1. In-process cleanup, involves calling dispose and [IAsyncCleanableExtension](#asynchronous-initialization-and-cleanup-of-extensions) on all extension points.
 1. [ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process
 1. Out-of-process cleanup, involves calling dispose and [IAsyncCleanableExtension](#asynchronous-initialization-and-cleanup-of-extensions) on all extension points.

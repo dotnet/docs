@@ -3,7 +3,8 @@ title: MSTest assertions
 description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest assertions
@@ -32,6 +33,9 @@ Assert.AreEqual(expected, actual, "Values should match after processing");
 ## The `Assert` class
 
 Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to verify that the code under test behaves as expected.
+
+> [!NOTE]
+> Starting with MSTest 4.0, all `Assert` APIs capture the argument expression and include it in failure messages. This support provides richer diagnostics without a manual `message` parameter.
 
 ### Common assertion methods
 
@@ -66,6 +70,14 @@ public async Task AssertExamples()
 }
 ```
 
+### The `Assert.That` method
+
+Starting with MSTest 4.0, `Assert.That` evaluates any Boolean expression and produces a clear failure message. For richer diagnostics, `Assert.That` uses `[CallerArgumentExpression]` to capture the expression text automatically.
+
+```csharp
+Assert.That(order.Total > 0);
+```
+
 ### Available APIs
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType>
@@ -78,10 +90,12 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotEndWith*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotMatchRegex*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotStartWith*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.EndsWith*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HasCount*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsEmpty*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsExactInstanceOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsGreaterThan*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsGreaterThanOrEqualTo*?displayProperty=nameWithType>
@@ -91,6 +105,7 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsLessThanOrEqualTo*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNegative*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotEmpty*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotExactInstanceOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull*?displayProperty=nameWithType>
@@ -98,10 +113,20 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.MatchesRegex*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.StartsWith*?displayProperty=nameWithType>
+- `Assert.That`
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync*?displayProperty=nameWithType>
+
+> [!NOTE]
+> Starting with MSTest 3.8, collection assertions include `Assert.Contains`, `Assert.DoesNotContain`, `Assert.HasCount`, `Assert.IsEmpty`, `Assert.IsNotEmpty`, and `Assert.ContainsSingle`.
+>
+> Starting with MSTest 3.10, comparison assertions include `Assert.IsInRange`, `Assert.IsGreaterThan`, `Assert.IsGreaterThanOrEqualTo`, `Assert.IsLessThan`, `Assert.IsLessThanOrEqualTo`, `Assert.IsPositive`, and `Assert.IsNegative`.
+>
+> Starting with MSTest 3.10, string-matching assertions include `Assert.StartsWith`, `Assert.EndsWith`, `Assert.MatchesRegex`, `Assert.DoesNotStartWith`, `Assert.DoesNotEndWith`, and `Assert.DoesNotMatchRegex`.
+>
+> Starting with MSTest 4.1, `Assert.IsExactInstanceOfType` and `Assert.IsNotExactInstanceOfType` require an exact type match. Unlike `Assert.IsInstanceOfType`, these methods don't match derived types.
 
 ## The `StringAssert` class
 

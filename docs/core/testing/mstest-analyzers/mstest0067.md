@@ -16,16 +16,16 @@ dev_langs:
 ---
 # MSTEST0067: Avoid synchronously blocking calls in test code
 
-| Property                            | Value                                                                                    |
-|-------------------------------------|------------------------------------------------------------------------------------------|
-| **Rule ID**                         | MSTEST0067                                                                               |
-| **Title**                           | Avoid synchronously blocking calls in test code                                          |
-| **Category**                        | Usage                                                                                    |
-| **Fix is breaking or non-breaking** | Non-breaking                                                                             |
-| **Enabled by default**              | No                                                                                       |
-| **Default severity**                | Info                                                                                     |
-| **Introduced in version**           | 4.3.0                                                                                    |
-| **Is there a code fix**             | No                                                                                       |
+| Property                            | Value                                           |
+|-------------------------------------|-------------------------------------------------|
+| **Rule ID**                         | MSTEST0067                                      |
+| **Title**                           | Avoid synchronously blocking calls in test code |
+| **Category**                        | Usage                                           |
+| **Fix is breaking or non-breaking** | Non-breaking                                    |
+| **Enabled by default**              | No                                              |
+| **Default severity**                | Info                                            |
+| **Introduced in version**           | 4.3.0                                           |
+| **Is there a code fix**             | No                                              |
 
 > [!NOTE]
 > This rule is available starting with MSTest 4.3. It's disabled by default. It's enabled as a warning when `<MSTestAnalysisMode>All</MSTestAnalysisMode>` is set.

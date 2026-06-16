@@ -14,6 +14,26 @@ These features require installing additional NuGet packages, as described in eac
 > [!TIP]
 > When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), these extensions are auto-registered when you install their NuGet packages — no code changes needed. The manual registration specified in this article is only required if you disabled the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.
 
+## Report file names
+
+Every report extension writes its file to the test results directory, which you can set with the [`--results-directory`](microsoft-testing-platform-cli-options.md) option. To override the name, use the matching `--report-*-filename` option. Each report section lists the default name for that report.
+
+A file name can include a relative path that stays within the test results directory, and it can use the following replacement items (placeholders):
+
+| Placeholder | Description |
+|---|---|
+| `{asm}` | Entry assembly name, or `unknown` when it's unavailable. |
+| `{tfm}` | Target framework moniker detected at run time, such as `net9.0`. |
+| `{arch}` | Process architecture, such as `x64`, `x86`, or `arm64`. |
+| `{pname}` | Process name. |
+| `{pid}` | Process ID. |
+| `{time}` | High-precision timestamp. |
+
+For example, `--report-trx-filename "{asm}_{tfm}_{arch}.trx"` reproduces the default TRX name.
+
+> [!NOTE]
+> Placeholder names are case-sensitive and use lowercase. Placeholder support for report file names is available in MTP starting with version 2.3.0.
+
 ## Visual Studio test reports (TRX)
 
 The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension requires the [Microsoft.Testing.Extensions.TrxReport](https://nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) NuGet package.
@@ -39,7 +59,7 @@ builder.AddTrxReportProvider();
 | Option | Description |
 |---|---|
 | `--report-trx` | Generates the TRX report. |
-| `--report-trx-filename` | The name of the generated TRX report. Before MTP 2.3.0, the default name matches the following format: `<UserName>_<MachineName>_<yyyy-MM-dd_HH_mm_ss.fffffff>.trx`. Available in MTP starting with version 2.3.0, the default name uses the deterministic `<assembly>_<tfm>_<arch>` form. You can also include a relative path and placeholders such as `{asm}`, `{tfm}`, `{arch}`, and `{time}`. |
+| `--report-trx-filename` | The name of the generated TRX report. Starting with MTP 2.3.0, the default is the deterministic `{asm}_{tfm}_{arch}.trx` form; before MTP 2.3.0, the default was `<UserName>_<MachineName>_<yyyy-MM-dd_HH_mm_ss.fffffff>.trx`. To customize the name, see [Report file names](#report-file-names). |
 
 The report is saved inside the default _TestResults_ folder that can be specified through the `--results-directory` command line argument.
 
@@ -48,7 +68,7 @@ The report is saved inside the default _TestResults_ folder that can be specifie
 The HTML report creates an interactive, self-contained HTML file for a test session. This extension requires the [Microsoft.Testing.Extensions.HtmlReport](https://nuget.org/packages/Microsoft.Testing.Extensions.HtmlReport) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. When you use [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), the package auto-registers this extension unless you set the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
+> Available in MTP starting with version 2.3.0. This extension is experimental, so its options and output format might change in a future version.
 
 ### Manual registration
 
@@ -61,15 +81,15 @@ builder.AddHtmlReportProvider();
 
 | Option | Description |
 |---|---|
-| `--report-html` | Generates the HTML report. Available in MTP starting with version 2.3.0. |
-| `--report-html-filename` | The name of the generated HTML report. The value must end with `.html`. You can include a relative path that stays under the test results directory. Requires `--report-html`. Available in MTP starting with version 2.3.0. |
+| `--report-html` | Generates the HTML report. |
+| `--report-html-filename` | The name of the generated HTML report. The value must end with `.html`. The default is `{asm}_{tfm}_{arch}.html`. To customize the name, see [Report file names](#report-file-names). Requires `--report-html`. |
 
 ## JUnit reports
 
 The JUnit report creates a JUnit-compatible XML file for a test session. This extension requires the [Microsoft.Testing.Extensions.JUnitReport](https://nuget.org/packages/Microsoft.Testing.Extensions.JUnitReport) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. When you use [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), the package auto-registers this extension unless you set the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
+> Available in MTP starting with version 2.3.0. This extension is experimental, so its options and output format might change in a future version.
 
 ### Manual registration
 
@@ -82,15 +102,15 @@ builder.AddJUnitReportProvider();
 
 | Option | Description |
 |---|---|
-| `--report-junit` | Generates the JUnit XML report. Available in MTP starting with version 2.3.0. |
-| `--report-junit-filename` | The name of the generated JUnit XML report. The value must end with `.xml`. You can include a relative path that stays under the test results directory. Requires `--report-junit`. Available in MTP starting with version 2.3.0. |
+| `--report-junit` | Generates the JUnit XML report. |
+| `--report-junit-filename` | The name of the generated JUnit XML report. The value must end with `.xml`. The default is `{asm}_{tfm}_{arch}.xml`. To customize the name, see [Report file names](#report-file-names). Requires `--report-junit`. |
 
 ## CTRF reports
 
 The CTRF report creates a JSON file that uses the [Common Test Report Format](https://ctrf.io) for a test session. This extension requires the [Microsoft.Testing.Extensions.CtrfReport](https://nuget.org/packages/Microsoft.Testing.Extensions.CtrfReport) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. When you use [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), the package auto-registers this extension unless you set the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
+> Available in MTP starting with version 2.3.0. This extension is experimental, so its options and output format might change in a future version.
 
 ### Manual registration
 
@@ -103,8 +123,8 @@ builder.AddCtrfReportProvider();
 
 | Option | Description |
 |---|---|
-| `--report-ctrf` | Generates the CTRF JSON report. Available in MTP starting with version 2.3.0. |
-| `--report-ctrf-filename` | The name of the generated CTRF JSON report. The value must end with `.json`. You can include a relative path that stays under the test results directory. Requires `--report-ctrf`. Available in MTP starting with version 2.3.0. |
+| `--report-ctrf` | Generates the CTRF JSON report. |
+| `--report-ctrf-filename` | The name of the generated CTRF JSON report. The value must end with `.json`. The default is `<UserName>_<MachineName>_<assembly>_<tfm>_<timestamp>.ctrf.json`. To customize the name, see [Report file names](#report-file-names). Requires `--report-ctrf`. |
 
 ## Azure DevOps reports
 

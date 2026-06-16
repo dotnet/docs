@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Deploy files alongside MSTest tests
 
-Some tests need extra files at run time, such as test data, configuration files, golden masters, or native dependencies. Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute> to declare files and folders that should be available next to your test assembly when each test runs.
+Some tests need extra files at runtime, such as test data, configuration files, golden masters, or native dependencies. Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute> to declare files and folders that should be available next to your test assembly when each test runs.
 
 ## Overview
 
@@ -52,7 +52,7 @@ public class ConfigurationTests
 
 ## Constructor overloads
 
-`DeploymentItemAttribute` has two constructors.
+`DeploymentItemAttribute` has two constructors: [`DeploymentItemAttribute(string path)`](#deploymentitemattribute-string-path-) and [`DeploymentItemAttribute(string path, string outputDirectory)`](#deploymentitemattribute-string-path--string-outputdirectory-).
 
 ### `DeploymentItemAttribute(string path)`
 
@@ -86,7 +86,7 @@ Copies the items into a subdirectory of the deployment directory, given by `outp
 [DeploymentItem("Resources", "Resources")]
 ```
 
-The `outputDirectory` parameter must be a folder path. It can't be used to rename the file. To deploy a file with a different name, rename it in the source folder (or use a post-build step).
+The `outputDirectory` argument must be a folder path. It can't be used to rename the file. To deploy a file with a different name, rename it in the source folder (or use a post-build step).
 
 ## Ensure source files reach the build output directory
 
@@ -117,9 +117,9 @@ For files that live outside the test project, copy them into the build output di
 </Target>
 ```
 
-## Inspect the deployment directory at run time
+## Inspect the deployment directory at runtime
 
-Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType> if you need the absolute path of the deployment directory&mdash;for example, to pass it to a process you spawn or to log it for diagnostics:
+If you need the absolute path of the deployment directory&mdash;for example, to pass it to a process you spawn or to log it for diagnostics&mdash;use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType>:
 
 ```csharp
 using System.IO;

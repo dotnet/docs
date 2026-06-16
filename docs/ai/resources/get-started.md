@@ -17,7 +17,3 @@ This article contains an organized list of the best learning resources for .NET 
 
 - [AI workshop](https://github.com/dotnet-presentations/ai-workshop)
 - [Steve Sanderson's AI workshop](https://github.com/SteveSandersonMS/dotnet-ai-workshop)
-
-## Sample apps
-
-- [AI samples for .NET](https://github.com/dotnet/ai-samples)

@@ -106,7 +106,7 @@ public async Task AssertExamples()
 ### Soft assertions with `Assert.Scope()`
 
 > [!IMPORTANT]
-> `Assert.Scope()` is an experimental API. Using it produces the `MSTESTEXP` diagnostic, which you must suppress (for example, with `#pragma warning disable MSTESTEXP` or in your project's _.editorconfig_) to acknowledge that the shape and behavior of the API can change in future releases.
+> `Assert.Scope()` is an experimental API. Using it produces the `MSTESTEXP` diagnostic, which you suppress (for example, with `#pragma warning disable MSTESTEXP` or in your project's `.editorconfig` file) to acknowledge that the shape and behavior of the API can change in future releases.
 
 By default, every assertion throws an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> as soon as it fails, which ends the test immediately. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Scope> introduces *soft assertions*: while a scope is active, assertion failures are collected instead of thrown, so execution continues and you can see every failure in the scope at once. When the scope is disposed, the collected failures are reported together:
 
@@ -147,7 +147,7 @@ If a failed assertion would lead to a `NullReferenceException` (or any other exc
 
 #### Value-returning assertions return `null`/`default` on failure inside a scope
 
-Some assertions return a value on success — for example, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*> return the caught exception, and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsSingle*> returns the matched element. When one of these assertions *fails* inside a scope, the failure is collected and the method returns `null`/`default` instead of throwing:
+Some assertions return a value on success—for example, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*> return the caught exception, and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsSingle*> returns the matched element. When one of these assertions *fails* inside a scope, the failure is collected and the method returns `null`/`default` instead of throwing:
 
 ```csharp
 using (Assert.Scope())
@@ -155,7 +155,7 @@ using (Assert.Scope())
     // No exception is thrown by the lambda, so the assertion fails. The failure is
     // collected and 'ex' is null. Accessing 'ex' below throws NullReferenceException.
     InvalidOperationException ex = Assert.Throws<InvalidOperationException>(() => { });
-    _ = ex.Message; // NullReferenceException — don't use the return value in a scope
+    _ = ex.Message; // NullReferenceException—don't use the return value in a scope
 }
 ```
 

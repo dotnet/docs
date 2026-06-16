@@ -20,7 +20,7 @@ The error applies to the `android`, `ios`, `maccatalyst`, and `tvos` target plat
 Choose one of the following options:
 
 - Build the project with the CoreCLR runtime. Remove the `UseMonoRuntime` property from the project, or set it to `false`.
-- If the project requires the Mono runtime, target .NET 10. Change the target framework to a .NET 10 mobile target framework moniker, for example `net10.0-android` or `net10.0-ios`, and build the project with the .NET 10 SDK.
+- If the project requires the Mono runtime, target .NET 10. Change the target framework to a .NET 10 mobile target framework moniker, for example `net10.0-android` or `net10.0-ios`
 
 ## See also
 

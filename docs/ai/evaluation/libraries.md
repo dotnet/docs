@@ -93,7 +93,14 @@ The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Ev
 
 The libraries are flexible and you can pick the components you need. For example, disable response caching or tailor reporting to work best in your environment. You can also customize and configure your evaluations, for example, by adding customized metrics and reporting options.
 
-## See also
+## Usage examples
+
+For usage examples, see the following tutorials:
 
 - [Quickstart: Evaluate response quality](evaluate-ai-response.md)
+- [Tutorial: Evaluate response quality with caching and reporting](evaluate-with-reporting.md)
+- [Tutorial: Evaluate response safety with caching and reporting](evaluate-safety.md)
+
+## See also
+
 - [Evaluation of generative AI apps (Foundry)](/azure/ai-studio/concepts/evaluation-approach-gen-ai)

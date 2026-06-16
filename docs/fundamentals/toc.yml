@@ -467,7 +467,6 @@ items:
                 href: ../standard/base-types/best-practices-strings.md
               - name: Displaying and persisting formatted data
                 href: ../standard/base-types/best-practices-display-data.md
-
           - name: Basic string operations
             items:
               - name: Create new strings
@@ -740,16 +739,17 @@ items:
             href: ../standard/commandline/syntax.md
           - name: How to
             expanded: true
-            - name: Parse and invoke the result
-              href: ../standard/commandline/how-to-parse-and-invoke.md
-            - name: Customize parsing and validation
-              href: ../standard/commandline/how-to-customize-parsing-and-validation.md
-            - name: Configure the parser
-              href: ../standard/commandline/how-to-configure-the-parser.md
-            - name: Enable and customize tab completion
-              href: ../standard/commandline/how-to-enable-tab-completion.md
-            - name: Customize help
-              href: ../standard/commandline/how-to-customize-help.md
+            items:
+              - name: Parse and invoke the result
+                href: ../standard/commandline/how-to-parse-and-invoke.md
+              - name: Customize parsing and validation
+                href: ../standard/commandline/how-to-customize-parsing-and-validation.md
+              - name: Configure the parser
+                href: ../standard/commandline/how-to-configure-the-parser.md
+              - name: Enable and customize tab completion
+                href: ../standard/commandline/how-to-enable-tab-completion.md
+              - name: Customize help
+                href: ../standard/commandline/how-to-customize-help.md
           - name: Design guidance
             href: ../standard/commandline/design-guidance.md
           - name: Migration guide to 2.0.0-beta5

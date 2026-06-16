@@ -18,6 +18,8 @@ helpviewer_keywords:
 - Finalizers
 - Other local functions
 
+Beginning with C# 8.0, local function parameters can shadow local variables and parameters from an enclosing scope.
+
 However, local functions can't be declared inside an expression-bodied member.
 
 > [!NOTE]

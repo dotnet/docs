@@ -598,9 +598,9 @@ The testing platform consists of a [testing framework](./microsoft-testing-platf
 
 1. [ITestHostEnvironmentVariableProvider.UpdateAsync](#the-itesthostenvironmentvariableprovider-extensions) : Out-of-process
 1. [ITestHostEnvironmentVariableProvider.ValidateTestHostEnvironmentVariablesAsync](#the-itesthostenvironmentvariableprovider-extensions) : Out-of-process
-1. [ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process
+1. [ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync](#the-itesthostprocesslifetimehandler-extensions) : Out-of-process
 1. Test host process start
-1. [ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process, this event can intertwine the actions of *in-process* extensions, depending on race conditions.
+1. [ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync](#the-itesthostprocesslifetimehandler-extensions) : Out-of-process, this event can intertwine the actions of *in-process* extensions, depending on race conditions.
 1. [ITestHostApplicationLifetime.BeforeRunAsync](#the-itestapplicationlifecyclecallbacks-extensions): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionStartingAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestFramework.CreateTestSessionAsync](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension): In-process
@@ -609,7 +609,7 @@ The testing platform consists of a [testing framework](./microsoft-testing-platf
 1. [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestHostApplicationLifetime.AfterRunAsync](#the-itestapplicationlifecyclecallbacks-extensions): In-process
 1. In-process cleanup, involves calling dispose and [IAsyncCleanableExtension](#asynchronous-initialization-and-cleanup-of-extensions) on all extension points.
-1. [ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync](#the-itestsessionlifetimehandler-extensions) : Out-of-process
+1. [ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync](#the-itesthostprocesslifetimehandler-extensions) : Out-of-process
 1. Out-of-process cleanup, involves calling dispose and [IAsyncCleanableExtension](#asynchronous-initialization-and-cleanup-of-extensions) on all extension points.
 
 ## Extensions helpers

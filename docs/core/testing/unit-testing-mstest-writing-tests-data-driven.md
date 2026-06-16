@@ -195,7 +195,7 @@ The data source can return any `IEnumerable<T>` where `T` is one of the types li
 
 ### Data sources
 
-The data source can be a method, property, or field. All three are interchangeable—choose based on your preference:
+The data source can be a method or property and, starting with MSTest v3.11, a field. These sources are interchangeable, so choose based on your preference:
 
 > [!NOTE]
 > Starting with MSTest v3.8, `DynamicData` auto-detects the data source type. You don't need to specify `DynamicDataSourceType` explicitly.

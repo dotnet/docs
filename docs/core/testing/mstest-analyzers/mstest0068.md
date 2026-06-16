@@ -53,7 +53,7 @@ The following <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAsser
 > [!WARNING]
 > When migrating from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> to <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>, be careful about the change in parameter order for `Contains`, `DoesNotContain`, and `AllItemsAreInstancesOfType`. In <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>, the expected value is always the first parameter.
 
-Overloads of `AreEqual`/`AreNotEqual` that take an <xref:System.Collections.IComparer> are skipped because `Assert.AreSequenceEqual` expects an <xref:System.Collections.Generic.IEqualityComparer%601> (different semantics). Overloads of `AreEquivalent`/`AreNotEquivalent` that take an <xref:System.Collections.Generic.IEqualityComparer%601> are also skipped. `IsSubsetOf`/`IsNotSubsetOf` have no direct <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> equivalent today and are not handled.
+Overloads of `AreEqual`/`AreNotEqual` that take an <xref:System.Collections.IComparer> are skipped because `Assert.AreSequenceEqual` expects an <xref:System.Collections.Generic.IEqualityComparer`1> (different semantics). Overloads of `AreEquivalent`/`AreNotEquivalent` that take an <xref:System.Collections.Generic.IEqualityComparer`1> are also skipped. `IsSubsetOf`/`IsNotSubsetOf` have no direct <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> equivalent today and are not handled.
 
 ## How to fix violations
 

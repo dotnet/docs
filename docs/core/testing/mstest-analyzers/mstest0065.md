@@ -32,11 +32,11 @@ dev_langs:
 
 ## Cause
 
-A call to <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*?displayProperty=nameWithType> is made on a value whose static type implements <xref:System.Collections.Generic.IEnumerable%601> (other than <xref:System.String>).
+A call to <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*?displayProperty=nameWithType> is made on a value whose static type implements <xref:System.Collections.Generic.IEnumerable`1> (other than <xref:System.String>).
 
 ## Rule description
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*> use <xref:System.Collections.Generic.EqualityComparer%601.Default?displayProperty=nameWithType>. For most collection types — for example arrays, <xref:System.Collections.Generic.List%601>, or any user-defined type implementing <xref:System.Collections.Generic.IEnumerable%601> — this falls back to reference equality (or to whatever equality the type defines for itself), and not to element-wise comparison. As a result, the assertion almost never asserts what the test author intended.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*> use <xref:System.Collections.Generic.EqualityComparer`1.Default?displayProperty=nameWithType>. For most collection types — for example arrays, <xref:System.Collections.Generic.List`1>, or any user-defined type implementing <xref:System.Collections.Generic.IEnumerable`1> — this falls back to reference equality (or to whatever equality the type defines for itself), and not to element-wise comparison. As a result, the assertion almost never asserts what the test author intended.
 
 ```csharp
 [TestClass]

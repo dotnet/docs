@@ -32,7 +32,7 @@ dev_langs:
 
 ## Cause
 
-Test code uses a synchronously blocking call such as <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType>, or <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType>.
+Test code uses a synchronously blocking call such as <xref:System.Threading.Thread.Sleep*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.Wait*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WaitAll*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WaitAny*?displayProperty=nameWithType>, or <xref:System.Threading.Tasks.Task`1.Result?displayProperty=nameWithType>.
 
 The rule fires on methods marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> (including custom attributes that inherit from it) and on fixture methods marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>, `GlobalTestInitializeAttribute`, and `GlobalTestCleanupAttribute`.
 

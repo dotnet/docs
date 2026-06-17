@@ -4,7 +4,7 @@ description: Learn the difference between delegates and events and when to use e
 ms.date: 03/11/2025
 ms.subservice: fundamentals
 ---
-# Distinguishing Delegates and Events
+# Distinguishing delegates and events
 
 [Previous](modern-events.md)
 

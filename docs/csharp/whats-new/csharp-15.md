@@ -110,9 +110,11 @@ For more information, see the [closed modifier](../language-reference/keywords/c
 
 ## Memory safety
 
-C# 15 begins to evolve the rules for unsafe code. Historically, the `unsafe` context covered the existence of pointer types. The updated rules tie the `unsafe` context to the operations that access unmanaged memory, not to the existence of a pointer.
+C# 15 begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
 
-When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
+In the complete model, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. An assembly opts in to this enforcement, and the compiler records the choice with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and explicit-layout fields as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
+
+The first step includes the pointer relaxations. When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
 
 - Declaring a pointer type and taking the address of a variable with the `&` operator.
 - The `fixed` statement that pins a variable.
@@ -134,12 +136,10 @@ fixed (int* first = numbers)
 
 The operations that access the pointed-to memory, such as pointer indirection (`*p`), pointer member access (`p->member`), pointer element access (`p[i]`), and function pointer invocation, still require an `unsafe` context.
 
-The .NET 11 Preview 5 compiler implements these relaxations. A later preview adds the *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword.
+The *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword come in a later preview.
 
 For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#memory-safety-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
-<!-- Add when available
 ## See also
 
 - [What's new in .NET 11](../../core/whats-new/dotnet-11/overview.md)
-- -->

@@ -39,8 +39,7 @@ For information about pointer types, see [Pointer types](../unsafe-code.md#point
 
 > [!NOTE]
 > Most operations with pointers require an [unsafe](../keywords/unsafe.md) context, and you must compile unsafe code with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
-> Beginning with C# 15, the [memory safety](../unsafe-code.md#memory-safety-preview) preview feature lets you use the address-of `&` operator outside an `unsafe` context.
-> The pointer indirection, member access, and element access operators that read or write the pointed-to memory still require an `unsafe` context.
+> The [memory safety](../unsafe-code.md#memory-safety-preview) preview feature available in C# 15 lets you use the address-of `&` operator outside an `unsafe` context. Even when enabled, the pointer indirection, member access, and element access operators that read or write the pointed-to memory still require an `unsafe` context.
 
 ## <a name="address-of-operator-"></a> Address-of operator &amp;
 

@@ -20,7 +20,7 @@ The `fixed` statement prevents the [garbage collector](../../../standard/garbage
 > [!NOTE]
 > To use the `fixed` statement, compile the code with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
 >
-> In C# 14 and earlier, you must use the `fixed` statement in an `unsafe` context. In C# 15 preview, the [memory safety](../unsafe-code.md#memory-safety-preview) feature lets you use `fixed` outside an `unsafe` context, but pointer indirection and other operations that access pinned memory still require an `unsafe` context.
+> The [memory safety](../unsafe-code.md#memory-safety-preview) preview feature available in C# 15 feature lets you use `fixed` outside an `unsafe` context, but pointer indirection and other operations that access pinned memory still require an `unsafe` context.
 You can initialize the declared pointer as follows:
 
 - With an array, as the example at the beginning of this article shows. The initialized pointer contains the address of the first array element.

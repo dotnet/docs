@@ -69,7 +69,7 @@ This article gives a central entry point for MTP command-line options.
   Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This slows down the test execution.
 
   > [!NOTE]
-  > Available in MTP starting with version 2.0.0. It replaced the previous `--diagnostic-filelogger-synchronouswrite` option, which was removed in MTP 2.0.0.
+  > Available in MTP starting with version 2.0.0. It replaces the previous `--diagnostic-filelogger-synchronouswrite` option, which was removed in MTP 2.0.0.
 
 - **`--diagnostic-output-directory`**
 
@@ -80,7 +80,7 @@ This article gives a central entry point for MTP command-line options.
   The prefix for the log file name. Defaults to `"log"`.
 
   > [!NOTE]
-  > Available in MTP starting with version 2.0.0. It replaced the previous `--diagnostic-output-fileprefix` option, which was removed in MTP 2.0.0.
+  > Available in MTP starting with version 2.0.0. It replaces the previous `--diagnostic-output-fileprefix` option, which was removed in MTP 2.0.0.
 
 - **`--diagnostic-verbosity`**
 

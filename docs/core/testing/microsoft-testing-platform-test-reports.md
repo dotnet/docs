@@ -23,7 +23,7 @@ A file name can include a relative path that stays within the test results direc
 | Placeholder | Description |
 |---|---|
 | `{asm}` | Entry assembly name, or `unknown` when it's unavailable. |
-| `{tfm}` | Target framework moniker detected at run time, such as `net9.0`. |
+| `{tfm}` | Target framework moniker detected at runtime, such as `net9.0`. |
 | `{arch}` | Process architecture, such as `x64`, `x86`, or `arm64`. |
 | `{pname}` | Process name. |
 | `{pid}` | Process ID. |
@@ -68,7 +68,7 @@ The report is saved inside the default _TestResults_ folder that can be specifie
 The HTML report creates an interactive, self-contained HTML file for a test session. This extension requires the [Microsoft.Testing.Extensions.HtmlReport](https://nuget.org/packages/Microsoft.Testing.Extensions.HtmlReport) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. This extension is experimental, so its options and output format might change in a future version.
+> Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
 
 ### Manual registration
 
@@ -89,7 +89,7 @@ builder.AddHtmlReportProvider();
 The JUnit report creates a JUnit-compatible XML file for a test session. This extension requires the [Microsoft.Testing.Extensions.JUnitReport](https://nuget.org/packages/Microsoft.Testing.Extensions.JUnitReport) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. This extension is experimental, so its options and output format might change in a future version.
+> Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
 
 ### Manual registration
 
@@ -110,7 +110,7 @@ builder.AddJUnitReportProvider();
 The CTRF report creates a JSON file that uses the [Common Test Report Format](https://ctrf.io) for a test session. This extension requires the [Microsoft.Testing.Extensions.CtrfReport](https://nuget.org/packages/Microsoft.Testing.Extensions.CtrfReport) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. This extension is experimental, so its options and output format might change in a future version.
+> Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
 
 ### Manual registration
 

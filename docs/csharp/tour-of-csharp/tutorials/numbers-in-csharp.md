@@ -99,7 +99,7 @@ void WorkWithIntegers()
 
 ## Explore order of operations
 
-1. Comment out the call to `WorkingWithIntegers()`. This change makes the output less cluttered as you work in this section:
+1. Comment out the call to `WorkWithIntegers()`. This change makes the output less cluttered as you work in this section:
 
    ```csharp
    //WorkWithIntegers();

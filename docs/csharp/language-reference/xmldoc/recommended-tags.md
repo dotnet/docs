@@ -90,6 +90,10 @@ helpviewer_keywords:
   - "cref [C#]"
   - "cross-references [C#], tags"
   - "<seealso> C# XML tag"
+  - "safety"
+  - "<safety>"
+  - "safety C# XML tag"
+  - "<safety> C# XML tag"
 ---
 # Recommended XML tags for C# documentation comments
 
@@ -233,6 +237,16 @@ The `<exception>` tag lets you specify which exceptions can be thrown. Apply thi
 ```
 
 The `<value>` tag lets you describe the value that a property represents. When you add a property by using the code wizard in the Visual Studio .NET development environment, it adds a [`<summary>`](#summary) tag for the new property. You manually add a `<value>` tag to describe the value that the property represents.
+
+### `<safety>`
+
+```xml
+<safety>description</safety>
+```
+
+Use the `<safety>` tag to document the contract that a caller of a *caller-unsafe* member must satisfy. The [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview), which is in preview in C# 15 and .NET 11, marks a member `unsafe` to push the obligation to audit safety onto the caller. The `<safety>` block states the conditions the caller must guarantee, so the contract lives in the documentation where every caller and reviewer sees it. You can also place a `<safety>` block on an `unsafe` field to record the invariant that the enclosing type maintains.
+
+The C# compiler doesn't recognize or process the `<safety>` tag. Like any custom tag, the compiler copies it verbatim to the output XML file. A memory safety analyzer might flag a caller-unsafe member that's missing a `<safety>` block, but the compiler itself doesn't enforce its presence or contents. For more information, see [Safety documentation](../unsafe-code.md#safety-documentation).
 
 ## Format documentation output
 

@@ -383,7 +383,7 @@ A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` nam
 
 ### The safe keyword
 
-The updated model adds a `safe` contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
+The updated model adds a [`safe`](keywords/safe.md) contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 

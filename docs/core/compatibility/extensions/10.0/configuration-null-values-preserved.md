@@ -104,7 +104,9 @@ The binder now also binds `null` to non-nullable value-type properties (for exam
 
 Previously, with the JSON configuration provider, binding a `null` to such a property threw an `InvalidOperationException` similar to the following, because the provider had converted the `null` into an empty string and an empty string can't be converted to the target value type:
 
-    Failed to convert configuration value at 'SomeSection:DayOfWeekProperty' to type 'System.DayOfWeek'.
+```output
+Failed to convert configuration value at 'SomeSection:DayOfWeekProperty' to type 'System.DayOfWeek'.
+```
 
 Starting in .NET 10, the same binding succeeds and the property is set to its default value. For example, a `null` bound to a `DayOfWeek` property results in `DayOfWeek.Sunday` (`0`), and a `null` bound to an `int` property results in `0`. No exception is thrown.
 

@@ -34,7 +34,7 @@ You need to reconcile this opposing guidance. Somehow, you must create a safe `a
 
 First, notice that the handler is marked as an async handler. Because it's being assigned to an event handler delegate type, it has a void return type. That means you must follow the pattern shown in the handler, and not allow any exceptions to be thrown out of the context of the async handler. Because it doesn't return a task, there's no task that can report the error by entering the faulted state. Because the method is async, the method can't throw the exception. (The calling method continues execution because it's `async`.) The actual runtime behavior is defined differently for different environments. It might terminate the thread or the process that owns the thread, or leave the process in an indeterminate state. All of these potential outcomes are highly undesirable.
 
-You should wrap the `await` expression for the async Task in your own try block. If it does cause a faulted task, you can log the error. If it's an error from which your application can't recover, you can exit the program quickly and gracefully
+You should wrap the `await` expression for the async Task in your own try block. If it does cause a faulted task, you can log the error. If it's an error from which your application can't recover, you can exit the program quickly and gracefully.
 
 This article explained the major updates to the .NET event pattern. You might see many examples of the earlier versions in the libraries you work with. However, you should understand what the latest patterns are as well. You can see the finished code for the sample at [Program.cs](https://github.com/dotnet/docs/blob/main/docs/csharp/snippets/events/Program.cs).
 

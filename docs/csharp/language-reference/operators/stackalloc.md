@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # stackalloc expression (C# reference)
 
-A `stackalloc` expression allocates a block of memory on the stack. A stack-allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
+A `stackalloc` expression allocates a block of memory on the stack. A stack-allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated by `stackalloc`. A stack-allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't need to be pinned by a [`fixed` statement](../statements/fixed.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -19,7 +19,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="AssignToSpan":::
 
-  You don't need to use an [unsafe](../keywords/unsafe.md) context when you assign a stack allocated memory block to a <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> variable.
+  You don't need to use an [unsafe](../keywords/unsafe.md) context when you assign a stack-allocated memory block to a <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> variable.
 
   When you work with those types, you can use a `stackalloc` expression in [conditional](conditional-operator.md) or assignment expressions, as the following example shows:
 
@@ -30,7 +30,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="Nested":::
 
   > [!NOTE]
-  > Use <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> types to work with stack allocated memory whenever possible.
+  > Use <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> types to work with stack-allocated memory whenever possible.
 
 - A [pointer type](../unsafe-code.md#pointer-types), as the following example shows:
 
@@ -45,7 +45,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
 The amount of memory available on the stack is limited. If you allocate too much memory on the stack, a <xref:System.StackOverflowException> is thrown. To avoid that exception, follow these rules:
 
-- Limit the amount of memory you allocate with `stackalloc`. For example, if the intended buffer size is below a certain limit, you allocate the memory on the stack; otherwise, use an array of the required length, as the following code shows:
+- Limit the amount of memory you allocate by using `stackalloc`. For example, if the intended buffer size is below a certain limit, allocate the memory on the stack. Otherwise, use an array of the required length, as the following code shows:
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="LimitStackalloc":::
 
@@ -54,7 +54,7 @@ The amount of memory available on the stack is limited. If you allocate too much
 
 - Avoid using `stackalloc` inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
 
-The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer, or a method like <xref:System.Span`1.Clear*?displayProperty=nameWithType> before it's used.
+The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer or a method like <xref:System.Span`1.Clear*?displayProperty=nameWithType> before it's used.
 
 > [!IMPORTANT]
 > Not initializing memory allocated by `stackalloc` is an important difference from the `new` operator. Memory allocated by using the `new` operator is initialized to the 0 bit pattern.
@@ -63,7 +63,7 @@ You can use array initializer syntax to define the content of the newly allocate
 
 :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="StackallocInit":::
 
-In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value. When you use the [collection expression](./collection-expressions.md) syntax to initialize the span, the compiler can use stack allocated storage for a span if it doesn't violate ref safety.
+In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value. When you use the [collection expression](./collection-expressions.md) syntax to initialize the span, the compiler can use stack-allocated storage for a span if it doesn't violate ref safety.
 
 ## Security
 

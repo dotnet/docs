@@ -124,7 +124,7 @@ The following example converts an `int*` to a `byte*`. Notice that the pointer p
 
 ### Fixed-size buffers
 
-Arrays are reference types, so in safe code a struct field that's an array stores only a reference to the array's elements, not the elements themselves. The size of the following `struct` doesn't depend on the number of elements in the array, because `pathName` is a reference:
+Arrays are reference types, so in safe code, a struct field that's an array stores only a reference to the array's elements, not the elements themselves. The size of the following `struct` doesn't depend on the number of elements in the array, because `pathName` is a reference:
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="6":::
 
@@ -221,7 +221,7 @@ The updated model separates two things the original model treats as one: the *ex
 
 ### Caller-unsafe members
 
-In the original model, the `unsafe` modifier on a member only allows pointers in the member's signature and body; it tells callers nothing. The updated model gives the modifier meaning for callers. When you mark a member `unsafe`, the compiler treats it as *caller-unsafe* (also called *requires-unsafe*): every caller must invoke it from an `unsafe` context, and the obligation to audit safety moves to that caller.
+In the original model, the `unsafe` modifier on a member only allows pointers in the member's signature and body. It doesn't inform callers about safety. The updated model gives the modifier meaning for callers. When you mark a member `unsafe`, the compiler treats it as *caller-unsafe* (also called *requires-unsafe*): every caller must invoke it from an `unsafe` context, and the obligation to audit safety moves to that caller.
 
 The `unsafe` modifier on a member signature no longer establishes an unsafe context for the body. The two roles split:
 
@@ -253,13 +253,13 @@ unsafe
 
 The updated model also tightens a few related rules:
 
-- The `unsafe` modifier produces an error on a type declaration, a static constructor, and a finalizer, because the modifier has no caller to inform there.
+- The `unsafe` modifier produces an error on a type declaration, a static constructor, and a finalizer, because the modifier has no caller to inform.
 - Delegates can't be `unsafe`, because a delegate is type-shaped.
 - A type whose parameterless constructor is `unsafe` doesn't satisfy the `new()` constraint.
 
 ### Operations that require an unsafe context
 
-The operations that access the pointed-to memory require an `unsafe` context:
+Operations that access the pointed-to memory require an `unsafe` context:
 
 - Pointer indirection (`*p`), pointer member access (`p->member`), and pointer element access (`p[i]`).
 - Function pointer invocation.
@@ -271,7 +271,7 @@ The following example pins an array without an `unsafe` context but dereferences
 
 ### Relaxed operations
 
-Operation that don't access pointed-to memory no longer requires an `unsafe` context:
+Operations that don't access pointed-to memory no longer require an `unsafe` context:
 
 - Declaring a pointer type and taking the address of a variable with the `&` operator.
 - The [`fixed`](statements/fixed.md) statement that pins a variable.
@@ -351,7 +351,7 @@ The `/// <safety>` block tells you the contract.The contract belongs in the docu
 
 ### Unsafe fields
 
-A field needs the `unsafe` modifier when its declared type doesn't express contracts that the enclosing type maintains and other code depends on. The unsafety lives in the gap between what the type system sees and what the type promises. The modifier forces every write to the field into an `unsafe` block, which keeps the writes reviewable in one place.
+Use the `unsafe` modifier for a field when its declared type doesn't express contracts that the enclosing type maintains and other code depends on. The unsafety exists in the gap between what the type system sees and what the type promises. The modifier forces every write to the field into an `unsafe` block, which keeps the writes reviewable in one place.
 
 The clearest case is a field that holds a native pointer. The pointer doesn't declare how many bytes it addresses as a <xref:System.Span`1?displayProperty=nameWithType> does, so the containing type maintains that information itself:
 
@@ -402,7 +402,7 @@ internal static unsafe partial nint strlen(byte* str);
 
 The updated model has two independent project-level switches:
 
-- A new opt-in property turns on the updated rules. With the property off, the original rules apply. With it on, `unsafe` on a member propagates to callers, and the compiler records the choice in the assembly with the <xref:System.Runtime.CompilerServices.MemorySafetyRulesAttribute> attribute.
+- A new opt-in property turns on the updated rules. When the property is off, the original rules apply. When it's on, `unsafe` on a member propagates to callers, and the compiler records the choice in the assembly with the <xref:System.Runtime.CompilerServices.MemorySafetyRulesAttribute> attribute.
 - The existing [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) property gates every appearance of the `unsafe` keyword, including the inner blocks at call sites. It defaults to `false`, so a project at the default can't call any unsafe API.
 
 The two properties combine as follows:

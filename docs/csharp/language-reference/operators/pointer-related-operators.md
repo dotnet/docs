@@ -167,7 +167,7 @@ Use parentheses, `()`, to change the order of evaluation imposed by operator pre
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
-## Operator overloadability
+## Operator overloading
 
 You can't overload the pointer-related operators `&`, `*`, `->`, and `[]` in a user-defined type.
 

@@ -117,7 +117,7 @@ In the complete model, `unsafe` on a member marks it as *requires-unsafe*: the a
 The first step includes the pointer relaxations. When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
 
 - Declaring a pointer type and taking the address of a variable with the `&` operator.
-- The `fixed` statement that pins a variable.
+- The `fixed` statement, which pins a variable.
 - Converting a `stackalloc` expression to a pointer.
 - The `sizeof` operator applied to any unmanaged type.
 

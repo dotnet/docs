@@ -20,9 +20,9 @@ Most of the C# code you write is verifiably safe code. *Verifiably safe code* me
 
 [!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
-C# also supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. Unsafe code isn't necessarily dangerous; it's just code whose safety .NET tools can't verify. You use unsafe code to call native functions that require pointers, and in some cases to improve performance through direct memory access that avoids array bounds checks. Unsafe code also introduces security and stability risks. To compile code that contains an `unsafe` context, add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+C# also supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. Unsafe code isn't necessarily dangerous; it's just code whose safety can't be verified by .NET tools. You use unsafe code to call native functions that require pointers, and in some cases to improve performance through direct memory access that avoids array-bounds checks. Unsafe code also introduces security and stability risks. To compile code that contains an `unsafe` context, add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
-C# defines two models for what counts as unsafe code: the original model and an updated memory safety model that's in preview in C# 15 and .NET 11. For how the two models differ, see [Two models for unsafe code](#two-models-for-unsafe-code).
+C# defines two models for what counts as unsafe code: the original model and an updated memory safety model that's in preview in C# 15 and .NET 11. For information about how the two models differ, see [Two models for unsafe code](#two-models-for-unsafe-code).
 
 For information about best practices for unsafe code in C#, see [Unsafe code best practices](../../standard/unsafe-code/best-practices.md).
 
@@ -206,7 +206,7 @@ You can learn more about function pointers in the [Function pointers](~/_csharps
 
 The following example uses pointers to copy bytes from one array to another.
 
-This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](statements/fixed.md) statement declares pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that garbage collection doesn't move the arrays. The `fixed` block pins the memory blocks for the arrays in the scope of the block. Because the `Copy` method in this example uses the `unsafe` keyword, you must compile it by using the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+This example uses the [`unsafe`](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [`fixed`](statements/fixed.md) statement declares pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that garbage collection doesn't move the arrays. The `fixed` block pins the memory blocks for the arrays in the scope of the block. Because the `Copy` method in this example uses the `unsafe` keyword, you must compile it by using the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 This example accesses the elements of both arrays by using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays.
 
@@ -398,7 +398,7 @@ internal static unsafe partial nint strlen(byte* str);
 
 `getpid` takes no parameters and returns a primitive, so the author attests that the call is safe and callers use it without ceremony. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to callers. Omitting both modifiers is an error, which forces you to make the safety decision. A field in a struct with explicit layout uses the same rule.
 
-### Opt in and cross-assembly behavior
+### Opt-in and cross-assembly behavior
 
 The updated model has two independent project-level switches:
 

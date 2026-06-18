@@ -18,7 +18,7 @@ You encounter generics constantly in everyday C#. Collections, async return type
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="EverydayGenerics":::
 
-In each case, the type argument in angle brackets (`<int>`, `<string>`, `<Product>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety. You can't accidentally add a `string` to a `List<int>`.
+In each case, the type argument in angle brackets (`<int>`, `<string>`, `<decimal>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety. You can't accidentally add a `string` to a `List<int>`.
 
 ## Consuming generic types
 

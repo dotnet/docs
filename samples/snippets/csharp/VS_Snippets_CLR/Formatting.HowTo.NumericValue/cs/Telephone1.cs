@@ -15,7 +15,7 @@ public class TelephoneFormatter : IFormatProvider, ICustomFormatter
    public string Format(string format, object arg, IFormatProvider formatProvider)
    {
       // Check whether this is an appropriate callback
-      if (! this.Equals(formatProvider))
+      if (!this.Equals(formatProvider))
          return null;
 
       // Set default format specifier

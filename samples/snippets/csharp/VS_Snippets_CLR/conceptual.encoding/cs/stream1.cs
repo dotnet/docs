@@ -68,7 +68,7 @@ public class Example
    {
       bool result = original.Equals(decoded);
       Console.WriteLine($"original = decoded: {original.Equals(decoded, StringComparison.Ordinal)}");
-      if (! result) {
+      if (!result) {
          Console.WriteLine("Code points in original string:");
          foreach (var ch in original)
             Console.Write("{0} ", Convert.ToUInt16(ch).ToString("X4"));

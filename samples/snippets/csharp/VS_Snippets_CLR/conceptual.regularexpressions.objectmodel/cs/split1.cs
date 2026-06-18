@@ -10,7 +10,7 @@ public class Example
       string pattern = @"\b\d{1,2}\.\s";
       foreach (string item in Regex.Split(input, pattern))
       {
-         if (! String.IsNullOrEmpty(item))
+         if (!String.IsNullOrEmpty(item))
             Console.WriteLine(item);
       }
    }

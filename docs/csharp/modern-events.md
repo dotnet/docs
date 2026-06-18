@@ -22,7 +22,7 @@ You shouldn't change the `FileFoundArgs` from a class (reference type) to a stru
 
 Next, let's consider how this change can be backwards compatible. The removal of the constraint doesn't affect any existing code. Any existing event argument types do still derive from `System.EventArgs`. Backwards compatibility is one major reason why they continue to derive from `System.EventArgs`. Any existing event subscribers are subscribers to an event that followed the classic pattern.
 
-Following similar logic, any event argument type created now wouldn't have any subscribers in any existing codebases. New event types that don't derive from `System.EventArgs` doesn't break those codebases.
+Following similar logic, any event argument type created now wouldn't have any subscribers in any existing codebases. New event types that don't derive from `System.EventArgs` don't break those codebases.
 
 ## Events with Async subscribers
 

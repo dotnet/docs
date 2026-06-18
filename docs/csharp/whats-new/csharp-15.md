@@ -138,7 +138,7 @@ The operations that access the pointed-to memory, such as pointer indirection (`
 
 The *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword come in a later preview.
 
-For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#memory-safety-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 ## See also
 

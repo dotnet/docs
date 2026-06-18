@@ -37,7 +37,7 @@ The size of the types in the preceding table is a compile-time constant.
 In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` on any non-`void` type, including types constructed from type parameters.
 
 > [!NOTE]
-> The [memory safety](../unsafe-code.md#memory-safety-preview) preview feature available in C# 15 lets you use `sizeof` on any unmanaged type outside an `unsafe` context.
+> The [memory safety](../unsafe-code.md#the-updated-memory-safety-model-preview) preview feature available in C# 15 lets you use `sizeof` on any unmanaged type outside an `unsafe` context.
 
 - The size of a reference or pointer type is the size of a reference or pointer, not the size of the object it might refer to.
 - The size of a value type, unmanaged or not, is the size of such a value.

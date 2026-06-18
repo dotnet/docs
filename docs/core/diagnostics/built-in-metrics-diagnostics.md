@@ -86,7 +86,7 @@ The instrument is only available on a system running on containers both on Windo
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `container.cpu.limit.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
+| `container.cpu.limit.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running containerized application relative to resource limit. Linux: range `[0, 1]` by default. Windows: range `[0, 100]` by default. See `UseZeroToOneRangeForMetrics` and `UseZeroToOneRangeForLinuxMetrics` options to change the default behavior. |
 
 Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
@@ -96,7 +96,7 @@ The instrument is only available on a system running on containers both on Windo
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `container.cpu.request.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running containerized application relative to resource request in range `[0, 1]`. |
+| `container.cpu.request.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running containerized application relative to resource request. Linux: range `[0, 1]` by default. Windows: range `[0, 100]` by default. See `UseZeroToOneRangeForMetrics` and `UseZeroToOneRangeForLinuxMetrics` options to change the default behavior. |
 
 Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
@@ -116,7 +116,7 @@ The instrument is only available on a system running on containers both on Windo
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `container.memory.limit.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
+| `container.memory.limit.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running containerized application relative to resource limit. Linux: range `[0, 1]` by default. Windows: range `[0, 100]` by default. See `UseZeroToOneRangeForMetrics` and `UseZeroToOneRangeForLinuxMetrics` options to change the default behavior. |
 
 Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
@@ -126,7 +126,7 @@ The instrument is only available on a system running on containers both on Windo
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `container.memory.request.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running containerized application relative to resource request in range `[0, 1]`. |
+| `container.memory.request.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running containerized application relative to resource request. Linux: range `[0, 1]` by default. Windows: range `[0, 100]` by default. See `UseZeroToOneRangeForMetrics` and `UseZeroToOneRangeForLinuxMetrics` options to change the default behavior. |
 
 Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 9.8.0.
 
@@ -144,7 +144,7 @@ Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 9.8.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `process.cpu.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running application in range `[0, 1]`. |
+| `process.cpu.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running application. Linux: range `[0, 1]` by default. Windows: range `[0, 100]` by default. See `UseZeroToOneRangeForMetrics` and `UseZeroToOneRangeForLinuxMetrics` options to change the default behavior. |
 
 Available starting in: .NET 8.
 
@@ -152,7 +152,7 @@ Available starting in: .NET 8.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `dotnet.process.memory.virtual.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running application in range `[0, 1]`. |
+| `dotnet.process.memory.virtual.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running application. Linux: range `[0, 1]` by default. Windows: range `[0, 100]` by default. See `UseZeroToOneRangeForMetrics` and `UseZeroToOneRangeForLinuxMetrics` options to change the default behavior. |
 
 Available starting in: .NET 8.
 

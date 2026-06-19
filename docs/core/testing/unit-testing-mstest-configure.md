@@ -307,14 +307,14 @@ Each element of the file is optional because it has a default value.
 
 ## MSBuild properties
 
-Starting with MSTest 4.3, you can opt in to assembly-level parallelization from your project file or *Directory.Build.props*, without authoring an `[assembly: Parallelize]` attribute. These properties emit the corresponding assembly attribute during build, so they require `GenerateAssemblyInfo` to be `true` (the default for SDK-style projects).
+Starting with MSTest 4.3, opt in to assembly-level parallelization from your project file or `Directory.Build.props` without authoring an `[assembly: Parallelize]` attribute. These properties emit the corresponding assembly attribute during build, so they require `GenerateAssemblyInfo` to be `true` (the default for SDK-style projects).
 
 | Property | Default | Description |
 |----------|---------|-------------|
-| `MSTestParallelizeScope` | | The parallelization scope. Set it to `MethodLevel` or `ClassLevel` to emit `[assembly: Parallelize(Scope = ...)]`, or to `None` to emit `[assembly: DoNotParallelize]`. |
+| `MSTestParallelizeScope` | | The parallelization scope. Set it to `MethodLevel` or `ClassLevel` to emit `[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]` (or `ExecutionScope.ClassLevel`), or to `None` to emit `[assembly: DoNotParallelize]`. |
 | `MSTestParallelizeWorkers` | | The maximum number of worker threads, emitted as the `Workers` value of `[assembly: Parallelize]`. A value of `0` maps to the number of processors on the current machine. This property can't be set when `MSTestParallelizeScope` is `None`. |
 
-The following example enables method-level parallelization with four workers for every test project that imports the *Directory.Build.props* file:
+The following example enables method-level parallelization with four workers for every test project that imports the `Directory.Build.props` file:
 
 ```xml
 <Project>

@@ -59,7 +59,7 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0061](mstest0061.md) | Use OSCondition attribute instead of runtime check. | Info | Yes |
 | [MSTEST0062](mstest0062.md) | Avoid out/ref test method parameters. | Warning | Yes |
 | [MSTEST0063](mstest0063.md) | Test class should have valid constructor. | Warning | No |
-| [MSTEST0070](mstest0070.md) | \[MemberCondition] arguments should be valid. | Warning | No |
+| [MSTEST0070](mstest0070.md) | `[MemberCondition]` arguments should be valid. | Warning | No |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

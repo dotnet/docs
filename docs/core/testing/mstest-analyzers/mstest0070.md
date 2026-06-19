@@ -35,7 +35,7 @@ A `[MemberCondition]` attribute references a member that the test framework can'
 
 The `[MemberCondition]` attribute conditionally runs or skips a test class or test method based on the value of one or more static `bool` members. You reference each member by its declaring type and name, for example `[MemberCondition(typeof(MyConditions), nameof(MyConditions.IsEnabled))]`.
 
-Because the member is referenced by name, the test framework resolves it through reflection at run time. If the member doesn't exist, isn't `public`, isn't `static`, doesn't return `bool`, requires parameters, or is a write-only property, evaluating the condition throws an <xref:System.InvalidOperationException> and the test fails. This analyzer surfaces those problems at build time so that typos and refactors don't silently break test gating.
+Because the member is referenced by name, the test framework resolves it through reflection at runtime. If the member doesn't exist, isn't `public`, isn't `static`, doesn't return `bool`, requires parameters, or is a write-only property, evaluating the condition throws an <xref:System.InvalidOperationException> and the test fails. This analyzer surfaces those problems at build time so that typos and refactors don't silently break test gating.
 
 The rule reports a violation when a referenced member:
 
@@ -124,7 +124,7 @@ public void Test3()
 
 ## When to suppress warnings
 
-Don't suppress warnings from this rule. A `[MemberCondition]` attribute that references an invalid member throws at run time and causes the test to fail rather than evaluate the condition.
+Don't suppress warnings from this rule. A `[MemberCondition]` attribute that references an invalid member throws at runtime and causes the test to fail rather than evaluate the condition.
 
 ## Suppress a warning
 

@@ -109,7 +109,7 @@ public async Task AssertExamples()
 > [!IMPORTANT]
 > `Assert.Scope()` is an experimental API. Using it produces the `MSTESTEXP` diagnostic, which you suppress (for example, with `#pragma warning disable MSTESTEXP` or in your project's `.editorconfig` file) to acknowledge that the shape and behavior of the API can change in future releases.
 
-By default, every assertion throws an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> as soon as it fails, which ends the test immediately. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Scope> introduces *soft assertions*: while a scope is active, assertion failures are collected instead of thrown, so execution continues and you can see every failure in the scope at once. When the scope is disposed, the collected failures are reported together:
+By default, every assertion throws an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> as soon as it fails, which ends the test immediately. `Assert.Scope()` introduces *soft assertions*: while a scope is active, assertion failures are collected instead of thrown, so execution continues and you can see every failure in the scope at once. When the scope is disposed, the collected failures are reported together:
 
 ```csharp
 [TestMethod]

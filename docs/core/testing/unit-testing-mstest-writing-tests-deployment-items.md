@@ -52,7 +52,7 @@ public class ConfigurationTests
 
 ## Constructor overloads
 
-`DeploymentItemAttribute` has two constructors: [`DeploymentItemAttribute(string path)`](#deploymentitemattribute-string-path-) and [`DeploymentItemAttribute(string path, string outputDirectory)`](#deploymentitemattribute-string-path--string-outputdirectory-).
+`DeploymentItemAttribute` has two constructors: [`DeploymentItemAttribute(string path)`](#deploymentitemattributestring-path) and [`DeploymentItemAttribute(string path, string outputDirectory)`](#deploymentitemattributestring-path-string-outputdirectory).
 
 ### `DeploymentItemAttribute(string path)`
 

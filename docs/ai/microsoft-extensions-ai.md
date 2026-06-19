@@ -57,7 +57,7 @@ You can start building with `Microsoft.Extensions.AI` in the following ways:
 - **Application developers**: Use the abstractions to simplify integration into your apps. This enables portability across models and services, facilitates testing and mocking, leverages middleware provided by the ecosystem, and maintains a consistent API throughout your app, even if you use different services in different parts of your application.
 - **Ecosystem contributors**: If you're interested in contributing to the ecosystem, consider writing custom middleware components.
 
-For more samples, see the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHub repository. For an end-to-end sample, see [eShopSupport](https://github.com/dotnet/eShopSupport).
+For an end-to-end sample, see [eShopSupport](https://github.com/dotnet/eShopSupport).
 
 ## See also
 

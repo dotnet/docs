@@ -38,7 +38,7 @@ compound expressions
 </tr>
 <tr><td>
 
-nested `let` bindings
+nested let bindings
 
 </td><td>
 
@@ -83,7 +83,7 @@ end
 </td>
 </tr>
 <tr><td>
-`for...do`
+for...do
 </td><td>
 
 ```fsharp
@@ -102,7 +102,7 @@ done
 </td>
 </tr>
 <tr><td>
-`while...do`
+while...do
 </td><td>
 
 ```fsharp
@@ -121,7 +121,7 @@ done
 </td>
 </tr>
 <tr><td>
-`for...in`
+for...in
 </td><td>
 
 ```fsharp
@@ -140,7 +140,7 @@ done
 </td>
 </tr>
 <tr><td>
-`do`
+do
 </td><td>
 
 ```fsharp

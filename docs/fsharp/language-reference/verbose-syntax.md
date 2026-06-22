@@ -61,7 +61,9 @@ let f x =
 </td>
 </tr>
 <tr><td>
+    
 code block
+
 </td><td>
 
 ```fsharp
@@ -83,7 +85,9 @@ end
 </td>
 </tr>
 <tr><td>
+    
 `for...do`
+
 </td><td>
 
 ```fsharp
@@ -102,7 +106,9 @@ done
 </td>
 </tr>
 <tr><td>
+    
 `while...do`
+
 </td><td>
 
 ```fsharp
@@ -140,7 +146,9 @@ done
 </td>
 </tr>
 <tr><td>
+    
 `do`
+
 </td><td>
 
 ```fsharp

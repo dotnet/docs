@@ -272,7 +272,7 @@ f1_keywords:
   - "CS9357"
   - "CS9358"
   - "CS9359"
-# unsafe evolution
+# memory safety
   - "CS9360"
   - "CS9361"
   - "CS9362"

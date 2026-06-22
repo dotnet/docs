@@ -63,6 +63,6 @@ To correct these errors, apply the following changes to your union members:
 
 - **CS9372**: *An expression of type cannot be handled by this pattern, see additional errors at this location.*
 
-This error arises when you use an incorrect pattern form with a union type. For the complete rules on union pattern matching, see [union matching](../builtin-types/union.md#union-matching).
+This error arises when you use an incorrect pattern form with a union type. For the complete rules on union pattern matching, see [union matching](../builtin-types/union.md#union-pattern-matching).
 
 To correct this error, use the correct pattern form when matching against a union value (**CS9372**). Patterns on a union apply to the union's `Value` property, not the union value itself. If the compiler reports that a pattern can't handle the expression, check that you're matching against the case types listed in the union declaration. Review the additional errors at the same location for details about which pattern is invalid.

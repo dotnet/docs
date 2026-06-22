@@ -405,7 +405,7 @@ To create a `PersistedAssemblyBuilder` instance, call its constructor and pass t
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Reflection.cs" id="SaveAssembly":::
 
-The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class includes PDB support. You can emit symbol info and use it to debug a generated assembly. The API has a similar shape to the .NET Framework implementation. For more information, see [Emit symbols and generate PDB](../../../fundamentals/runtime-libraries/system-reflection-emit-persistedassemblybuilder.md#emit-symbols-and-generate-pdb).
+The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> class includes PDB support. You can emit symbol info and use it to debug a generated assembly. The API has a similar shape to the .NET Framework implementation. For more information, see [Emit symbols and generate PDB](xref:System.Reflection.Emit.PersistedAssemblyBuilder#emit-symbols-and-generate-pdb).
 
 ### Type-name parsing
 

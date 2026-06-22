@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: Get an overview of the new features in C# 15. C# 15 ships with .NET 11.
-ms.date: 03/20/2026
+ms.date: 06/16/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -12,6 +12,8 @@ C# 15 includes the following new features. Try these features by using the lates
 
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
+- [Closed hierarchies](#closed-hierarchies)
+- [Memory safety](#memory-safety)
 
 C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -67,12 +69,77 @@ string name = pet switch
 };
 ```
 
-Union types first appeared in .NET 11 Preview 2. In early .NET 11 previews, the `UnionAttribute` and `IUnion` interface aren't included in the runtime, so you must declare them in your project. Later .NET 11 preview versions include these runtime types. Also, some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented, including *union member providers*. Those features are coming in future previews.
+The runtime includes the `UnionAttribute` and `IUnion` types beginning with .NET 11 Preview 5. Some features from the [proposal specification](~/_csharplang/proposals/unions.md) aren't yet implemented. Those features are coming in future previews.
 
 For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/unions.md).
 
-<!-- Add when available
+## Closed hierarchies
+
+Starting in C# 15, you can apply the `closed` modifier to a class to declare a *closed hierarchy*. A closed class can only be derived from within its declaring assembly, which fixes the set of direct descendants at compile time:
+
+```csharp
+public closed record class GateState;
+public record class Closed : GateState;
+public record class Open(float Percent) : GateState;
+```
+
+Because the compiler knows every direct descendant, a `switch` expression that handles each one is exhaustive and doesn't need a default arm:
+
+```csharp
+string Describe(GateState state) => state switch
+{
+    Closed => "closed",
+    Open(var percent) => $"{percent}% open",
+    // No warning: every direct descendant of 'GateState' is handled.
+};
+```
+
+The `closed` modifier is a contextual keyword. A `closed` class is implicitly `abstract` and can't be combined with `sealed`, `static`, or an explicit `abstract` modifier. Derivation isn't transitive: a non-closed descendant of a closed class can still be derived from in other assemblies. To extend exhaustiveness checking down the hierarchy, mark intermediate descendants `closed` as well.
+
+> [!NOTE]
+> In C# 15 preview 5, the runtime doesn't yet ship `System.Runtime.CompilerServices.ClosedAttribute`. Until it does, every project that uses the `closed` modifier must declare the attribute itself:
+>
+> ```csharp
+> namespace System.Runtime.CompilerServices;
+>
+> [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
+> public sealed class ClosedAttribute : Attribute { }
+> ```
+
+For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md). You can copy the examples in this section, including the `ClosedAttribute` workaround, from the [keywords snippets project](https://github.com/dotnet/docs/blob/main/docs/csharp/language-reference/keywords/snippets/shared) in the `dotnet/docs` GitHub repository.
+
+## Memory safety
+
+C# 15 begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
+
+In the complete model, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. An assembly opts in to this enforcement, and the compiler records the choice with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and explicit-layout fields as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
+
+The first step includes the pointer relaxations. When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
+
+- Declaring a pointer type and taking the address of a variable with the `&` operator.
+- The `fixed` statement, which pins a variable.
+- Converting a `stackalloc` expression to a pointer.
+- The `sizeof` operator applied to any unmanaged type.
+
+The following example creates and pins a pointer without an `unsafe` context:
+
+```csharp
+int number = 42;
+int* pointer = &number;
+
+int[] numbers = [10, 20, 30];
+fixed (int* first = numbers)
+{
+    // Dereferencing the pointer still requires an unsafe context.
+}
+```
+
+The operations that access the pointed-to memory, such as pointer indirection (`*p`), pointer member access (`p->member`), pointer element access (`p[i]`), and function pointer invocation, still require an `unsafe` context.
+
+The *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword come in a later preview.
+
+For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+
 ## See also
 
 - [What's new in .NET 11](../../core/whats-new/dotnet-11/overview.md)
-- -->

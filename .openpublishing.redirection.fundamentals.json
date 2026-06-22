@@ -25,10 +25,6 @@
             "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
-            "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/singlefile-warnings.md",
-            "redirect_url": "/dotnet/core/deploying/single-file/warnings/overview"
-        },
-        {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/il3000.md",
             "redirect_url": "/dotnet/core/deploying/single-file/warnings/il3000"
         },
@@ -46,6 +42,10 @@
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/publish-warnings.md",
+            "redirect_url": "/dotnet/core/deploying/single-file/warnings/overview"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/singlefile-warnings.md",
             "redirect_url": "/dotnet/core/deploying/single-file/warnings/overview"
         },
         {
@@ -165,40 +165,20 @@
             "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/language-rules"
         },
         {
-            "source_path_from_root": "/docs/fundamentals/networking/httpclient.md",
-            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/customize-help.md",
-            "redirect_url": "/dotnet/standard/commandline/how-to-customize-help"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/define-commands.md",
-            "redirect_url": "/dotnet/standard/commandline/syntax#commands"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/dependency-injection.md",
-            "redirect_url": "/dotnet/standard/commandline/migration-guide-2.0.0-beta5#invocation"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/handle-termination.md",
-            "redirect_url": "/dotnet/standard/commandline/how-to-parse-and-invoke#process-termination-timeout"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/model-binding.md",
-            "redirect_url": "/dotnet/standard/commandline/how-to-parse-and-invoke"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/use-middleware.md",
-            "redirect_url": "/dotnet/standard/commandline/migration-guide-2.0.0-beta5#configuration"
-        },
-        {
-            "source_path_from_root": "/docs/standard/commandline/tab-completion.md",
-            "redirect_url": "/dotnet/standard/commandline/how-to-enable-tab-completion"
+            "source_path_from_root": "/docs/fundamentals/networking/http/http-autoclient.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
         },
         {
             "source_path_from_root": "/docs/fundamentals/networking/httpclient-guidelines.md",
             "redirect_url": "/dotnet/fundamentals/networking/http/httpclient-guidelines"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/httpclient.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/networking-telemetry.md",
+            "redirect_url": "/dotnet/fundamentals/networking/telemetry/overview"
         },
         {
             "source_path_from_root": "/docs/fundamentals/package-validation/baseline-version-validator.md",
@@ -226,10 +206,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path_from_root": "/docs/fundamentals/networking/networking-telemetry.md",
-            "redirect_url": "/dotnet/fundamentals/networking/telemetry/overview"
-        },
-        {
             "source_path_from_root": "/docs/fundamentals/productivity/code-analysis.md",
             "redirect_url": "/dotnet/fundamentals/code-analysis/overview"
         },
@@ -242,12 +218,692 @@
             "redirect_url": "/dotnet/fundamentals/reflection/overview"
         },
         {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/microsoft-win32-registry.md",
+            "redirect_url": "/dotnet/api/microsoft.win32.registry"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-accessviolationexception.md",
+            "redirect_url": "/dotnet/api/system.accessviolationexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-appcontext.md",
+            "redirect_url": "/dotnet/api/system.appcontext"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-appdomain-unhandledexception.md",
+            "redirect_url": "/dotnet/api/system.appdomain.unhandledexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-boolean.md",
+            "redirect_url": "/dotnet/api/system.boolean"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-byte.md",
+            "redirect_url": "/dotnet/api/system.byte"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-char.md",
+            "redirect_url": "/dotnet/api/system.char"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-collections-generic-hashset{t}.md",
+            "redirect_url": "/dotnet/api/system.collections.generic.hashset-1"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-collections-generic-list{t}.md",
+            "redirect_url": "/dotnet/api/system.collections.generic.list-1"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-collections-objectmodel-keyedcollection{tkey,titem}-changeitemkey.md",
+            "redirect_url": "/dotnet/api/system.collections.objectmodel.keyedcollection-2.changeitemkey"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-collections-objectmodel-observablecollection{t}.md",
+            "redirect_url": "/dotnet/api/system.collections.objectmodel.observablecollection-1"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-console.md",
+            "redirect_url": "/dotnet/api/system.console"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-convert.md",
+            "redirect_url": "/dotnet/api/system.convert"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-commandbehavior.md",
+            "redirect_url": "/dotnet/api/system.data.commandbehavior"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-datacolumn-expression.md",
+            "redirect_url": "/dotnet/api/system.data.datacolumn.expression"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-dataset.md",
+            "redirect_url": "/dotnet/api/system.data.dataset"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-datatable.md",
+            "redirect_url": "/dotnet/api/system.data.datatable"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md",
             "redirect_url": "/dotnet/framework/data/adonet/sql/linq/"
         },
         {
             "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md",
             "redirect_url": "/dotnet/framework/data/adonet/sql/linq/"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-datetime-tobinary.md",
+            "redirect_url": "/dotnet/api/system.datetime.tobinary"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-datetime-tryparse.md",
+            "redirect_url": "/dotnet/api/system.datetime.tryparse"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-datetime.md",
+            "redirect_url": "/dotnet/api/system.datetime"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-decimal.md",
+            "redirect_url": "/dotnet/api/system.decimal"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-delegate-createdelegate.md",
+            "redirect_url": "/dotnet/api/system.delegate.createdelegate"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-diagnostics-performancecountertype.md",
+            "redirect_url": "/dotnet/api/system.diagnostics.performancecountertype"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md",
+            "redirect_url": "/dotnet/api/system.diagnostics.processstartinfo.useshellexecute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-diagnostics-tracing-eventsource.md",
+            "redirect_url": "/dotnet/api/system.diagnostics.tracing.eventsource"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-diagnostics-tracing-eventwritteneventargs.md",
+            "redirect_url": "/dotnet/api/system.diagnostics.tracing.eventwritteneventargs"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-double-compareto.md",
+            "redirect_url": "/dotnet/api/system.double.compareto"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-double-epsilon.md",
+            "redirect_url": "/dotnet/api/system.double.epsilon"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-double-equals.md",
+            "redirect_url": "/dotnet/api/system.double.equals"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-double.md",
+            "redirect_url": "/dotnet/api/system.double"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-drawing-drawing2d-matrix.md",
+            "redirect_url": "/dotnet/api/system.drawing.drawing2d.matrix"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-dynamic-expandoobject.md",
+            "redirect_url": "/dotnet/api/system.dynamic.expandoobject"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-enum.md",
+            "redirect_url": "/dotnet/api/system.enum"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-environment-getenvironmentvariable.md",
+            "redirect_url": "/dotnet/api/system.environment.getenvironmentvariable"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-exception-data.md",
+            "redirect_url": "/dotnet/api/system.exception.data"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-exception-message.md",
+            "redirect_url": "/dotnet/api/system.exception.message"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-exception.md",
+            "redirect_url": "/dotnet/api/system.exception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-flagsattribute.md",
+            "redirect_url": "/dotnet/api/system.flagsattribute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-gc.md",
+            "redirect_url": "/dotnet/api/system.gc"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-compareinfo.md",
+            "redirect_url": "/dotnet/api/system.globalization.compareinfo"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-compareoptions.md",
+            "redirect_url": "/dotnet/api/system.globalization.compareoptions"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-cultureandregioninfobuilder-ctor.md",
+            "redirect_url": "/dotnet/api/system.globalization.cultureandregioninfobuilder.ctor"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-cultureandregioninfobuilder.md",
+            "redirect_url": "/dotnet/api/system.globalization.cultureandregioninfobuilder"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-cultureinfo-currentculture.md",
+            "redirect_url": "/dotnet/api/system.globalization.cultureinfo.currentculture"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-cultureinfo-currentuiculture.md",
+            "redirect_url": "/dotnet/api/system.globalization.cultureinfo.currentuiculture"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-cultureinfo-invariantculture.md",
+            "redirect_url": "/dotnet/api/system.globalization.cultureinfo.invariantculture"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-cultureinfo.md",
+            "redirect_url": "/dotnet/api/system.globalization.cultureinfo"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-datetimeformatinfo.md",
+            "redirect_url": "/dotnet/api/system.globalization.datetimeformatinfo"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-numberformatinfo.md",
+            "redirect_url": "/dotnet/api/system.globalization.numberformatinfo"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-persiancalendar.md",
+            "redirect_url": "/dotnet/api/system.globalization.persiancalendar"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-regioninfo.md",
+            "redirect_url": "/dotnet/api/system.globalization.regioninfo"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-sortkey.md",
+            "redirect_url": "/dotnet/api/system.globalization.sortkey"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-globalization-sortversion.md",
+            "redirect_url": "/dotnet/api/system.globalization.sortversion"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-iasyncdisposable.md",
+            "redirect_url": "/dotnet/api/system.iasyncdisposable"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-idisposable.md",
+            "redirect_url": "/dotnet/api/system.idisposable"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-int32.md",
+            "redirect_url": "/dotnet/api/system.int32"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-int64.md",
+            "redirect_url": "/dotnet/api/system.int64"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-invalidcastexception.md",
+            "redirect_url": "/dotnet/api/system.invalidcastexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-invalidoperationexception.md",
+            "redirect_url": "/dotnet/api/system.invalidoperationexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-io-filestream.md",
+            "redirect_url": "/dotnet/api/system.io.filestream"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-io-filesystemwatcher.md",
+            "redirect_url": "/dotnet/api/system.io.filesystemwatcher"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md",
+            "redirect_url": "/dotnet/api/system.linq.expressions.binaryexpression"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-linq-expressions-expression-add.md",
+            "redirect_url": "/dotnet/api/system.linq.expressions.expression.add"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-midpointrounding.md",
+            "redirect_url": "/dotnet/api/system.midpointrounding"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-net-ftpwebrequest-proxy.md",
+            "redirect_url": "/dotnet/api/system.net.ftpwebrequest.proxy"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-net-http-httpclient.md",
+            "redirect_url": "/dotnet/api/system.net.http.httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-net-http-httpclienthandler.md",
+            "redirect_url": "/dotnet/api/system.net.http.httpclienthandler"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-net-httplistener.md",
+            "redirect_url": "/dotnet/api/system.net.httplistener"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-net-sockets-socket.md",
+            "redirect_url": "/dotnet/api/system.net.sockets.socket"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-notimplementedexception.md",
+            "redirect_url": "/dotnet/api/system.notimplementedexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-notsupportedexception.md",
+            "redirect_url": "/dotnet/api/system.notsupportedexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-nullable.md",
+            "redirect_url": "/dotnet/api/system.nullable"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-nullable{t}.md",
+            "redirect_url": "/dotnet/api/system.nullable-1"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-numerics-biginteger.md",
+            "redirect_url": "/dotnet/api/system.numerics.biginteger"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-numerics-complex.md",
+            "redirect_url": "/dotnet/api/system.numerics.complex"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-object-equals.md",
+            "redirect_url": "/dotnet/api/system.object.equals"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-object-finalize.md",
+            "redirect_url": "/dotnet/api/system.object.finalize"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-object-gethashcode.md",
+            "redirect_url": "/dotnet/api/system.object.gethashcode"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-object-tostring.md",
+            "redirect_url": "/dotnet/api/system.object.tostring"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-object.md",
+            "redirect_url": "/dotnet/api/system.object"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-random.md",
+            "redirect_url": "/dotnet/api/system.random"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-context-customreflectioncontext.md",
+            "redirect_url": "/dotnet/api/system.reflection.context.customreflectioncontext"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-assemblybuilder.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.assemblybuilder"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicilinfo.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicilinfo"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod-createdelegate.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicmethod.createdelegate"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod-ctor.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicmethod.ctor"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod-getilgenerator.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicmethod.getilgenerator"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod-invoke.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicmethod.invoke"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod-issecuritycritical.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicmethod.issecuritycritical"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-dynamicmethod.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.dynamicmethod"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-methodbuilder.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.methodbuilder"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-persistedassemblybuilder.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.persistedassemblybuilder"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-emit-typebuilder.md",
+            "redirect_url": "/dotnet/api/system.reflection.emit.typebuilder"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-reflection-portableexecutable-debugdirectoryentrytype.md",
+            "redirect_url": "/dotnet/api/system.reflection.portableexecutable.debugdirectoryentrytype"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-missingmanifestresourceexception.md",
+            "redirect_url": "/dotnet/api/system.resources.missingmanifestresourceexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-neutralresourceslanguageattribute.md",
+            "redirect_url": "/dotnet/api/system.resources.neutralresourceslanguageattribute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-resourcemanager-ctor.md",
+            "redirect_url": "/dotnet/api/system.resources.resourcemanager.ctor"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-resourcemanager-getobject.md",
+            "redirect_url": "/dotnet/api/system.resources.resourcemanager.getobject"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-resourcemanager-getstring.md",
+            "redirect_url": "/dotnet/api/system.resources.resourcemanager.getstring"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-resourcemanager.md",
+            "redirect_url": "/dotnet/api/system.resources.resourcemanager"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-resourcereader.md",
+            "redirect_url": "/dotnet/api/system.resources.resourcereader"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-resources-satellitecontractversionattribute.md",
+            "redirect_url": "/dotnet/api/system.resources.satellitecontractversionattribute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-compilerservices-internalsvisibletoattribute.md",
+            "redirect_url": "/dotnet/api/system.runtime.compilerservices.internalsvisibletoattribute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-compilerservices-runtimehelpers-gethashcode.md",
+            "redirect_url": "/dotnet/api/system.runtime.compilerservices.runtimehelpers.gethashcode"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-interopservices-comexception.md",
+            "redirect_url": "/dotnet/api/system.runtime.interopservices.comexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-interopservices-comwrappers.md",
+            "redirect_url": "/dotnet/api/system.runtime.interopservices.comwrappers"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-interopservices-icustommarshaler.md",
+            "redirect_url": "/dotnet/api/system.runtime.interopservices.icustommarshaler"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-interopservices-marshal-getactiveobject.md",
+            "redirect_url": "/dotnet/api/system.runtime.interopservices.marshal.getactiveobject"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-interopservices-safehandle.md",
+            "redirect_url": "/dotnet/api/system.runtime.interopservices.safehandle"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-loader-assemblyloadcontext.md",
+            "redirect_url": "/dotnet/api/system.runtime.loader.assemblyloadcontext"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-serialization-datacontractattribute.md",
+            "redirect_url": "/dotnet/api/system.runtime.serialization.datacontractattribute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-serialization-datacontractserializer.md",
+            "redirect_url": "/dotnet/api/system.runtime.serialization.datacontractserializer"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-serialization-iextensibledataobject.md",
+            "redirect_url": "/dotnet/api/system.runtime.serialization.iextensibledataobject"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-serialization-xsddatacontractexporter.md",
+            "redirect_url": "/dotnet/api/system.runtime.serialization.xsddatacontractexporter"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-runtime-versioning-componentguaranteesattribute.md",
+            "redirect_url": "/dotnet/api/system.runtime.versioning.componentguaranteesattribute"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-security-cryptography-rsacryptoserviceprovider.md",
+            "redirect_url": "/dotnet/api/system.security.cryptography.rsacryptoserviceprovider"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-security-cryptography-rsaparameters.md",
+            "redirect_url": "/dotnet/api/system.security.cryptography.rsaparameters"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-security-cryptography-xml-signedxml.md",
+            "redirect_url": "/dotnet/api/system.security.cryptography.xml.signedxml"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-security-securestring.md",
+            "redirect_url": "/dotnet/api/system.security.securestring"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-single-compareto.md",
+            "redirect_url": "/dotnet/api/system.single.compareto"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-single-epsilon.md",
+            "redirect_url": "/dotnet/api/system.single.epsilon"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-single-equals.md",
+            "redirect_url": "/dotnet/api/system.single.equals"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-single.md",
+            "redirect_url": "/dotnet/api/system.single"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-span{t}.md",
+            "redirect_url": "/dotnet/api/system.span-1"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-string-ctor.md",
+            "redirect_url": "/dotnet/api/system.string.ctor"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-string-format.md",
+            "redirect_url": "/dotnet/api/system.string.format"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-string-intern.md",
+            "redirect_url": "/dotnet/api/system.string.intern"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-string-isnullorempty.md",
+            "redirect_url": "/dotnet/api/system.string.isnullorempty"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-string.md",
+            "redirect_url": "/dotnet/api/system.string"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-stringcomparer.md",
+            "redirect_url": "/dotnet/api/system.stringcomparer"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-text-encoding-default.md",
+            "redirect_url": "/dotnet/api/system.text.encoding.default"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-text-encoding.md",
+            "redirect_url": "/dotnet/api/system.text.encoding"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-text-regularexpressions-regex-match.md",
+            "redirect_url": "/dotnet/api/system.text.regularexpressions.regex.match"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-text-regularexpressions-regex.md",
+            "redirect_url": "/dotnet/api/system.text.regularexpressions.regex"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-text-rune.md",
+            "redirect_url": "/dotnet/api/system.text.rune"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-text-stringbuilder.md",
+            "redirect_url": "/dotnet/api/system.text.stringbuilder"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-threading-monitor-wait.md",
+            "redirect_url": "/dotnet/api/system.threading.monitor.wait"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-threading-monitor.md",
+            "redirect_url": "/dotnet/api/system.threading.monitor"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-threading-readerwriterlockslim.md",
+            "redirect_url": "/dotnet/api/system.threading.readerwriterlockslim"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-threading-tasks-task.md",
+            "redirect_url": "/dotnet/api/system.threading.tasks.task"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-threading-tasks-taskscheduler.md",
+            "redirect_url": "/dotnet/api/system.threading.tasks.taskscheduler"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-threading-thread.md",
+            "redirect_url": "/dotnet/api/system.threading.thread"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-timespan-parse.md",
+            "redirect_url": "/dotnet/api/system.timespan.parse"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-timespan-tryparse.md",
+            "redirect_url": "/dotnet/api/system.timespan.tryparse"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-timespan.md",
+            "redirect_url": "/dotnet/api/system.timespan"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-type-getproperty.md",
+            "redirect_url": "/dotnet/api/system.type.getproperty"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-type-gettype.md",
+            "redirect_url": "/dotnet/api/system.type.gettype"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-type-makegenerictype.md",
+            "redirect_url": "/dotnet/api/system.type.makegenerictype"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-type.md",
+            "redirect_url": "/dotnet/api/system.type"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-typeinitializationexception.md",
+            "redirect_url": "/dotnet/api/system.typeinitializationexception"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-uri.md",
+            "redirect_url": "/dotnet/api/system.uri"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-version.md",
+            "redirect_url": "/dotnet/api/system.version"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-linq-xname.md",
+            "redirect_url": "/dotnet/api/system.xml.linq.xname"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-linq-xnamespace.md",
+            "redirect_url": "/dotnet/api/system.xml.linq.xnamespace"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-schema-xmlschemaset.md",
+            "redirect_url": "/dotnet/api/system.xml.schema.xmlschemaset"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-serialization-codegenerationoptions.md",
+            "redirect_url": "/dotnet/api/system.xml.serialization.codegenerationoptions"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-serialization-xmlserializer.md",
+            "redirect_url": "/dotnet/api/system.xml.serialization.xmlserializer"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlconvert.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlconvert"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmldocument.md",
+            "redirect_url": "/dotnet/api/system.xml.xmldocument"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlreader-create.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlreader.create"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlreader.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlreader"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlreadersettings-dtdprocessing.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlreadersettings.dtdprocessing"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlreadersettings-schemas.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlreadersettings.schemas"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlreadersettings.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlreadersettings"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlresolver.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlresolver"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlsecureresolver.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlsecureresolver"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmltextreader.md",
+            "redirect_url": "/dotnet/api/system.xml.xmltextreader"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmltextwriter.md",
+            "redirect_url": "/dotnet/api/system.xml.xmltextwriter"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xmlwriter.md",
+            "redirect_url": "/dotnet/api/system.xml.xmlwriter"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-xml-xsl-xslcompiledtransform.md",
+            "redirect_url": "/dotnet/api/system.xml.xsl.xslcompiledtransform"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1004.md",
@@ -594,8 +1250,32 @@
             "redirect_url": "/dotnet/toc/tools-diagnostics/index"
         },
         {
-            "source_path_from_root": "/docs/fundamentals/networking/http/http-autoclient.md",
-            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+            "source_path_from_root": "/docs/standard/commandline/customize-help.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-customize-help"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/define-commands.md",
+            "redirect_url": "/dotnet/standard/commandline/syntax#commands"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/dependency-injection.md",
+            "redirect_url": "/dotnet/standard/commandline/migration-guide-2.0.0-beta5#invocation"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/handle-termination.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-parse-and-invoke#process-termination-timeout"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/model-binding.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-parse-and-invoke"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/tab-completion.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-enable-tab-completion"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/use-middleware.md",
+            "redirect_url": "/dotnet/standard/commandline/migration-guide-2.0.0-beta5#configuration"
         }
     ]
 }

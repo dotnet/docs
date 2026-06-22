@@ -63,6 +63,7 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0065](mstest0065.md) | Avoid `Assert.AreEqual` on collection types. | Warning | No |
 | [MSTEST0067](mstest0067.md) | Avoid synchronously blocking calls in test code. | Info (disabled by default) | No |
 | [MSTEST0068](mstest0068.md) | Use `Assert` instead of `CollectionAssert`. | Info | Yes |
+| [MSTEST0070](mstest0070.md) | `[MemberCondition]` arguments should be valid. | Warning | No |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 
@@ -149,6 +150,7 @@ Rules for asynchronous test code:
 - **[MSTEST0059](mstest0059.md)**: Don't use both Parallelize and DoNotParallelize.
 - **[MSTEST0060](mstest0060.md)**: Avoid duplicate TestMethodAttribute.
 - **[MSTEST0061](mstest0061.md)**: Use OSCondition attribute for platform checks.
+- **[MSTEST0070](mstest0070.md)**: `[MemberCondition]` arguments must reference valid members.
 
 ## Related documentation
 

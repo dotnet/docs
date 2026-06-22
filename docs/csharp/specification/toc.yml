@@ -139,6 +139,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/extensions.md
     - name: Extension operators
       href: ../../../_csharplang/proposals/csharp-14.0/extension-operators.md
+    - name: Closed hierarchies
+      href: ../../../_csharplang/proposals/closed-hierarchies.md
   - name: Structs
     items:
     - name: Inline arrays
@@ -155,6 +157,10 @@ items:
     items:
     - name: Experimental attribute
       href: ../../../_csharplang/proposals/csharp-12.0/experimental-attribute.md
+  - name: Unsafe code
+    items:
+    - name: Memory safety
+      href: ../../../_csharplang/proposals/unsafe-evolution.md
 - name: Deviations from the C# standard
   href: ../../../_roslyn/docs/compilers/CSharp/Deviations from Standard.md
 - name: Other C# documentation

@@ -14,6 +14,9 @@ This article explains the policies used by the .NET tools, SDK, and runtime for 
 - Easy and efficient deployment of .NET, including security and reliability updates.
 - Use the latest tools and commands independent of target runtime.
 
+> [!TIP]
+> If you reached this page from a "compatible .NET SDK was not found" build error, [download the .NET SDK](https://dotnet.microsoft.com/download/dotnet) to install the required version. Alternatively, update your *global.json* file to match a version that's already installed.
+
 Version selection occurs:
 
 - When you run an SDK command, [the SDK uses the latest installed version](#the-sdk-uses-the-latest-installed-version).

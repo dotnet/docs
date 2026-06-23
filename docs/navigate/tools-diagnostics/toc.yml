@@ -99,6 +99,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1239.md
               - name: NETSDK1240
                 href: ../../core/tools/sdk-errors/netsdk1240.md
+              - name: NETSDK1242
+                href: ../../core/tools/sdk-errors/netsdk1242.md
           - name: BuildCheck rules
             items:
               - name: Index of rules
@@ -572,14 +574,6 @@ items:
             items:
               - name: Get started
                 href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md
-          - name: Supplemental API remarks
-            items:
-              - name: The EventSource class
-                href: ../../fundamentals/runtime-libraries/system-diagnostics-tracing-eventsource.md
-              - name: The EventWrittenEventArgs class
-                href: ../../fundamentals/runtime-libraries/system-diagnostics-tracing-eventwritteneventargs.md
-              - name: The PerformanceCounterType enum
-                href: ../../fundamentals/runtime-libraries/system-diagnostics-performancecountertype.md
       - name: .NET CLI global tools
         items:
           - name: Overview

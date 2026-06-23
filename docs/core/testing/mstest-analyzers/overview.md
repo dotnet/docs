@@ -209,6 +209,7 @@ Rules for configuring test execution, parallelization, and other test settings:
 - [MSTEST0055](mstest0055.md) - Do not ignore string method return value
 - [MSTEST0059](mstest0059.md) - Use Parallelize attribute correctly
 - [MSTEST0061](mstest0061.md) - Use OSCondition attribute instead of runtime check
+- [MSTEST0070](mstest0070.md) - `[MemberCondition]` arguments should be valid
 
 Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), [Running tests](../unit-testing-mstest-running-tests.md)
 
@@ -278,6 +279,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0061](mstest0061.md) | Usage | Use OSCondition attribute instead of runtime check | Info |
 | [MSTEST0062](mstest0062.md) | Usage | Avoid out/ref test method parameters | Warning |
 | [MSTEST0063](mstest0063.md) | Usage | Test class should have valid constructor | Warning |
+| [MSTEST0070](mstest0070.md) | Usage | `[MemberCondition]` arguments should be valid | Warning |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

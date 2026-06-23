@@ -118,7 +118,7 @@ Callers can iterate the collection by using an `await foreach` statement:
 
 :::code language="csharp" source="./snippets/shared/AsyncSamples.cs" id="UseReadSequence":::
 
-Finally, as part of the .NET ecosystem, you can use [Visual Studio](https://visualstudio.microsoft.com/vs), or [Visual Studio Code](https://code.visualstudio.com) with the [C# DevKit](https://code.visualstudio.com/docs/csharp/get-started). These tools provide rich understanding of C#, including the code you write. They also provide debugging capabilities.
+Finally, as part of the .NET ecosystem, you can use [Visual Studio](https://visualstudio.microsoft.com/vs) or [Visual Studio Code](https://code.visualstudio.com) with the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started). These tools provide a rich understanding of C#, including the code you write. They also provide debugging capabilities.
 
 > [!TIP]
 > To learn more about pattern matching, LINQ, and async programming, see the [functional techniques](../fundamentals/functional/pattern-matching.md), [LINQ overview](../linq/index.md), and [asynchronous programming](../asynchronous-programming/index.md) sections.

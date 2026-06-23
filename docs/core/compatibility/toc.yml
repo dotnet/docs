@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: CborReader and CborWriter enforce a default maximum nesting depth
+                href: core-libraries/11/cbor-max-depth.md
               - name: CRC32 validation added when reading ZIP archive entries
                 href: core-libraries/11/ziparchive-entry-crc32-validation.md
               - name: DateOnly and TimeOnly TryParse methods throw for invalid input
@@ -66,6 +68,8 @@ items:
             items:
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
+              - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
+                href: sdk/11/nu1703-deprecated-monoandroid-framework.md
               - name: Template engine packages no longer support netstandard2.0
                 href: sdk/11/template-engine-netstandard.md
               - name: VSTest removes dependency on Newtonsoft.Json

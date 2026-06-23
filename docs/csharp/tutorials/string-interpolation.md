@@ -24,7 +24,7 @@ As the example shows, you include an expression in an interpolated string by enc
 
 Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format*?displayProperty=nameWithType> method. Every interpolated string must have:
 
-- A string literal that begins with the `$` character before its opening quotation mark character. There can't be any spaces between the `$` symbol and the quotation mark character.
+- A string literal that begins with the `$` character before its opening quotation mark character. There can't be any spaces between the `$` symbol and the quotation mark character. 
 - One or more *interpolation expressions*. You indicate an interpolation expression with an opening and closing brace (`{` and `}`). You can put any C# expression that returns a value (including `null`) inside the braces.
 
 C# evaluates the expression between the `{` and `}` characters with the following rules:
@@ -78,7 +78,7 @@ For more information, see the [Width component](../../standard/base-types/compos
 
 Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences).
 
-To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. 
 
 To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 

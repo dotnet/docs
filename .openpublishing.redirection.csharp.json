@@ -2,19 +2,23 @@
   "redirections": [
     {
       "source_path_from_root": "/docs/csharp/how-to/compare-strings.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/compare"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/compare",
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/docs/csharp/how-to/concatenate-multiple-strings.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/concatenate"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/concatenate",
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/docs/csharp/how-to/modify-string-contents.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/modify"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/modify",
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/string-interpolation.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation",
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/docs/csharp/fundamentals/null-safety/migration-strategies.md",

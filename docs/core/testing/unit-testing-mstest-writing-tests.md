@@ -119,6 +119,7 @@ MSTest documentation is organized by topic:
 | [Execution control](unit-testing-mstest-writing-tests-controlling-execution.md) | Threading, parallelization, timeouts, retries, and conditional execution |
 | [Test organization](unit-testing-mstest-writing-tests-organizing.md) | Categories, priorities, owners, and metadata |
 | [TestContext](unit-testing-mstest-writing-tests-testcontext.md) | Access test runtime information |
+| [Deployment items](unit-testing-mstest-writing-tests-deployment-items.md) | Copy files and folders alongside test assemblies |
 
 ## Attribute quick reference
 
@@ -133,6 +134,7 @@ MSTest documentation is organized by topic:
 | Conditional | `Ignore`, `OSCondition`, `CICondition` | [Execution control](unit-testing-mstest-writing-tests-controlling-execution.md) |
 | Metadata | `TestCategory`, `TestProperty`, `Owner`, `Priority` | [Test organization](unit-testing-mstest-writing-tests-organizing.md) |
 | Work tracking | `WorkItem`, `GitHubWorkItem` | [Test organization](unit-testing-mstest-writing-tests-organizing.md) |
+| Test resources | `DeploymentItem` | [Deployment items](unit-testing-mstest-writing-tests-deployment-items.md) |
 
 ## Assertions
 

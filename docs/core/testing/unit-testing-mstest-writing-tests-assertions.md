@@ -3,7 +3,7 @@ title: MSTest assertions
 description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/04/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -103,6 +103,72 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync*?displayProperty=nameWithType>
+
+### Soft assertions with `Assert.Scope()`
+
+> [!IMPORTANT]
+> `Assert.Scope()` is an experimental API. Using it produces the `MSTESTEXP` diagnostic, which you suppress (for example, with `#pragma warning disable MSTESTEXP` or in your project's `.editorconfig` file) to acknowledge that the shape and behavior of the API can change in future releases.
+
+By default, every assertion throws an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> as soon as it fails, which ends the test immediately. `Assert.Scope()` introduces *soft assertions*: while a scope is active, assertion failures are collected instead of thrown, so execution continues and you can see every failure in the scope at once. When the scope is disposed, the collected failures are reported together:
+
+```csharp
+[TestMethod]
+public void ValidatePerson()
+{
+    using (Assert.Scope())
+    {
+        Assert.AreEqual("Jane", person.FirstName); // failure collected, execution continues
+        Assert.AreEqual("Doe", person.LastName);   // failure collected, execution continues
+        Assert.IsTrue(person.IsActive);            // failure collected, execution continues
+    }
+    // On Dispose, all collected failures are reported together.
+}
+```
+
+When the scope is disposed:
+
+- If exactly one failure was collected, the original `AssertFailedException` is thrown.
+- If multiple failures were collected, a single `AssertFailedException` is thrown that wraps all of them in an `AggregateException`.
+
+#### Postconditions aren't enforced inside a scope
+
+Because a failing assertion no longer throws inside a scope, code that runs after it can't rely on the assertion having succeeded. This applies to *every* postcondition, including nullability and type narrowing:
+
+```csharp
+using (Assert.Scope())
+{
+    Assert.IsNotNull(item);
+    // 'item' might still be null here: the failure was collected, not thrown.
+    Assert.AreEqual("expected", item.Value);
+    // 'item.Value' might not equal "expected" either.
+}
+```
+
+If a failed assertion would lead to a `NullReferenceException` (or any other exception) on a later line within the scope, that secondary exception is a symptom of the already-collected failure, not a separate bug. The original assertion failure is still reported when the scope is disposed.
+
+#### Value-returning assertions return `null`/`default` on failure inside a scope
+
+Some assertions return a value on success—for example, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*> return the caught exception, and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsSingle*> returns the matched element. When one of these assertions *fails* inside a scope, the failure is collected and the method returns `null`/`default` instead of throwing:
+
+```csharp
+using (Assert.Scope())
+{
+    // No exception is thrown by the lambda, so the assertion fails. The failure is
+    // collected and 'ex' is null. Accessing 'ex' below throws NullReferenceException.
+    InvalidOperationException ex = Assert.Throws<InvalidOperationException>(() => { });
+    _ = ex.Message; // NullReferenceException—don't use the return value in a scope
+}
+```
+
+Don't rely on the value returned by a soft assertion inside a scope. If you need the returned value (such as the caught exception), call the assertion *outside* the scope, or restructure the test so nothing depends on the return value until after the scope is disposed.
+
+#### `Assert.Fail` and `Assert.Inconclusive` always throw
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*> are never soft. They always throw immediately, even inside a scope, because they express an unconditional test outcome. Use one of them when a condition is critical and the rest of the test can't meaningfully continue without it.
+
+#### Nested scopes aren't supported
+
+You can't nest `Assert.Scope()` calls. Only one assertion scope can be active at a time.
 
 ## The `StringAssert` class
 

@@ -36,7 +36,7 @@ To embed computed expressions in a string, prefer [string interpolation](../inte
 
 :::code language="csharp" source="snippets/concatenate/Program.cs" id="Interpolation":::
 
-When every interpolated expression is a constant, you can assign the result to a constant.
+When every interpolated expression is itself a constant string, you can assign the interpolated result to a `const` string.
 
 ## Join a collection of strings
 

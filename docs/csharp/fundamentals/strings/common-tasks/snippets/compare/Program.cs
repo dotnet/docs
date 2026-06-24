@@ -11,6 +11,8 @@ public static class Program
         OrderStrings();
         Console.WriteLine();
         ConstantPattern();
+        Console.WriteLine();
+        SwitchExpression();
     }
 
     private static void DefaultEquality()
@@ -73,5 +75,30 @@ public static class Program
         }
         // => The system is ready.
         // </ConstantPattern>
+    }
+
+    private static void SwitchExpression()
+    {
+        // <SwitchExpression>
+        foreach (string heading in new[] { "North", "South", "East", "West", "NE" })
+        {
+            // A switch expression matches each constant pattern in turn and
+            // returns the first match. The discard (_) handles every other value.
+            string instruction = heading switch
+            {
+                "North" => "Travel due North for 10 km.",
+                "South" => "Travel due South for 10 km.",
+                "East" => "Travel due East for 10 km.",
+                "West" => "Travel due West for 10 km.",
+                _ => $"Unknown heading: {heading}.",
+            };
+            Console.WriteLine(instruction);
+        }
+        // => Travel due North for 10 km.
+        // => Travel due South for 10 km.
+        // => Travel due East for 10 km.
+        // => Travel due West for 10 km.
+        // => Unknown heading: NE.
+        // </SwitchExpression>
     }
 }

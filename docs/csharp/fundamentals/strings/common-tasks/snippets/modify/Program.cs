@@ -102,8 +102,9 @@ public static class Program
         // <CharArray>
         string phrase = "The quick brown fox jumps over the fence.";
 
-        // A string is immutable, so copy it to a char array to edit in place.
-        char[] characters = phrase.ToCharArray();
+        // A string is immutable, so copy it into a Span<char> to edit in place.
+        Span<char> characters = stackalloc char[phrase.Length];
+        phrase.CopyTo(characters);
         int index = phrase.IndexOf("fox");
         if (index != -1)
         {

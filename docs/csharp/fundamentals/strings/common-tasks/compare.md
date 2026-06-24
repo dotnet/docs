@@ -1,7 +1,7 @@
 ---
 title: "Compare strings in C#"
 description: Learn how to compare strings in C# for equality and sort order, how ordinal and culture-aware comparisons differ, and how to choose a StringComparison value.
-ms.date: 05/21/2026
+ms.date: 06/24/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -22,7 +22,7 @@ The <xref:System.StringComparison> enumeration combines these factors into a sin
 
 ## Compare for equality
 
-The <xref:System.String.Equals*?displayProperty=nameWithType> method and the `==` operator both perform a **case-sensitive, ordinal** comparison by default. Ordinal comparison checks the binary value of each character, so it's fast and gives the same result on every machine. Make your intent explicit by calling the overload that takes a <xref:System.StringComparison> value:
+The <xref:System.String.Equals*?displayProperty=nameWithType> method and the `==` operator both perform a **case-sensitive, ordinal** comparison by default. Ordinal comparison checks the binary value of each character, so it's fast and gives the same result on every machine. You can make your intent explicit by calling the overload that takes a <xref:System.StringComparison> value:
 
 :::code language="csharp" source="snippets/compare/Program.cs" id="DefaultEquality":::
 
@@ -37,13 +37,19 @@ To determine sort order rather than equality, use <xref:System.String.Compare*?d
 :::code language="csharp" source="snippets/compare/Program.cs" id="Order":::
 
 > [!IMPORTANT]
-> `Compare` and `CompareTo` default to a *culture-aware* comparison, while `Equals` and `==` default to *ordinal*. To avoid surprises, always pass an explicit <xref:System.StringComparison> value so your code states which behavior it wants.
+> `Compare` and `CompareTo` default to a *culture-aware* comparison, while `Equals` and `==` default to *ordinal*. To avoid surprises, pass an explicit <xref:System.StringComparison> value so your code states which behavior it wants.
 
-## Compare against a constant with `is`
+## Compare against constants with pattern matching `is` or `switch`
 
 When the value you compare against is a constant, you can use the [`is` operator](../../../language-reference/operators/is.md) with a [constant pattern](../../../language-reference/operators/patterns.md#constant-pattern) as a readable alternative to `==`:
 
 :::code language="csharp" source="snippets/compare/Program.cs" id="ConstantPattern":::
+
+To compare a string against several constants, use a [`switch` expression](../../../language-reference/operators/switch-expression.md). Each arm tests a [constant pattern](../../../language-reference/operators/patterns.md#constant-pattern), and the discard pattern (`_`) handles every value that doesn't match. The next example maps a direction keyword to a travel instruction:
+
+:::code language="csharp" source="snippets/compare/Program.cs" id="SwitchExpression":::
+
+A `switch` expression that tests string constants performs the same case-sensitive, ordinal comparison as `==`, so `"north"` doesn't match the `"North"` arm.
 
 ## Choose the right comparison
 

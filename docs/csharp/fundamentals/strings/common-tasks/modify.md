@@ -1,7 +1,7 @@
 ---
 title: "Modify string contents in C#"
 description: Learn how to produce modified strings in C# with Replace, Trim, Remove, regular expressions, and character arrays, and why each operation returns a new string.
-ms.date: 05/21/2026
+ms.date: 06/24/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -29,6 +29,8 @@ The original string is unchanged, which demonstrates immutability: `Replace` cre
 
 :::code language="csharp" source="snippets/modify/Program.cs" id="ReplaceChar":::
 
+Both overloads replace *every* match in the string, not just the first. Whether you pass a single character or a string, `Replace` substitutes all occurrences in one call.
+
 ## Trim whitespace
 
 Use <xref:System.String.Trim*?displayProperty=nameWithType>, <xref:System.String.TrimStart*?displayProperty=nameWithType>, and <xref:System.String.TrimEnd*?displayProperty=nameWithType> to remove leading or trailing whitespace. Each method returns a new string:
@@ -51,7 +53,7 @@ For pattern-based searching rather than replacement, see [Search strings in C#](
 
 ## Modify individual characters
 
-To change characters by position, copy the string to a character array, modify the array, and then build a new string from it. The following example finds the word "fox" and replaces it with "cat":
+To change characters by position, copy the string into a <xref:System.Span`1> of characters, modify the span, and then build a new string from it. The following example finds the word "fox" and replaces it with "cat":
 
 :::code language="csharp" source="snippets/modify/Program.cs" id="CharArray":::
 

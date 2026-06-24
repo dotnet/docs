@@ -1,7 +1,7 @@
 ---
 title: "Concatenate strings in C#"
 description: Learn how to combine strings in C# with the + operator, string interpolation, string.Concat, string.Join, and StringBuilder, and how to choose between them.
-ms.date: 05/21/2026
+ms.date: 06/24/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -32,11 +32,11 @@ To combine string variables, use the `+` operator to produce a new string, or `+
 
 ## Use string interpolation
 
-For better readability, prefer [string interpolation](../interpolation.md) over a chain of `+` operators when you mix literal text with variables. Interpolation keeps the shape of the result string visible in the source:
+To embed computed expressions in a string, prefer [string interpolation](../interpolation.md) over positional placeholders like the `{0}` and `{1}` tokens that <xref:System.String.Format*?displayProperty=nameWithType> inherits from C-style formatting. Interpolation places each expression inline where its value appears, so the result string stays readable and you can't misalign an argument:
 
 :::code language="csharp" source="snippets/concatenate/Program.cs" id="Interpolation":::
 
-When every interpolated expression is a constant, the result is a constant string you can use to initialize other constants.
+When every interpolated expression is a constant, you can assign the result to a constant.
 
 ## Join a collection of strings
 

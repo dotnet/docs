@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 >
 > **Coming from another language?** C# concatenation with `+` parallels Java and JavaScript. C# adds [string interpolation](../interpolation.md) (`$"{x}"`), similar to JavaScript template literals and Python f-strings, as the preferred way to build strings from variables. For building strings in a loop, C# offers <xref:System.Text.StringBuilder>, much like Java's `StringBuilder`.
 
-*Concatenation* appends one string to the end of another to produce a new string. C# gives you several ways to concatenate, and the best choice depends on whether you're joining a fixed set of values, a collection, or building a string piece by piece in a loop.
+*Concatenation* appends one string to the end of another to produce a new string. C# gives you several ways to concatenate, and the best choice depends on whether you're joining a fixed set of values or a collection, or building a string piece by piece in a loop.
 
 ## Concatenate string literals
 

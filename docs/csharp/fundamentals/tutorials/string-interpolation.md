@@ -27,7 +27,7 @@ mkdir StringInterpolation
 cd StringInterpolation
 ```
 
-Create an empty file named *report.cs* in that folder and open it in your editor. You add code to it in the sections that follow, and you run the app at any point with `dotnet run report.cs`.
+Create an empty file named *report.cs* in that folder and open it in your editor. You add code to it in the sections that follow, and you run the app with `dotnet run report.cs`.
 
 ## Insert values into text
 
@@ -61,7 +61,7 @@ The left-aligned name column and right-aligned numeric columns line up into a re
 
 ## Produce culture-specific output
 
-An interpolated string uses the [current culture](../../../standard/base-types/formatting-types.md) by default. When you need a specific culture, such as a fixed format for logs or a locale for a receipt, pass a culture to <xref:System.String.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler%40)?displayProperty=nameWithType>. Add the following code:
+An interpolated string uses the [current culture](../../../standard/base-types/formatting-types.md) by default. When you need a specific culture, such as a fixed format for logs or a locale for a receipt, pass a culture to <xref:System.String.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)?displayProperty=nameWithType>. Add the following code:
 
 :::code language="csharp" source="snippets/string-interpolation/Program.cs" id="Culture":::
 

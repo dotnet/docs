@@ -57,7 +57,7 @@ To change characters by position, copy the string into a <xref:System.Span`1> of
 
 :::code language="csharp" source="snippets/modify/Program.cs" id="CharArray":::
 
-For high-performance scenarios that avoid intermediate allocations, the runtime provides lower-level APIs such as <xref:System.String.Create*?displayProperty=nameWithType>. Those techniques are an advanced topic; for everyday code, the methods in this article are the right choice.
+For high-performance scenarios that avoid intermediate allocations, the runtime provides lower-level APIs such as <xref:System.String.Create*?displayProperty=nameWithType>. Those techniques are advanced; for everyday code, the methods in this article are the right choice.
 
 ## See also
 

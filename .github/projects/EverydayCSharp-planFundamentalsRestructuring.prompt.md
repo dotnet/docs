@@ -14,14 +14,20 @@ The Fundamentals audience is a developer who knows another language and is learn
 - For any construct the sample isn't teaching, pick the most familiar form: use `while` or `foreach` before `for` (reserve `for` for explicit index iteration); use a regular method before a static factory unless the article is about factories.
 - Add a brief intent comment on any line whose purpose isn't immediately obvious — for example, lines like `_ = something;` or a literal argument with hidden significance.
 - When a sample illustrates a decision, show *both* branches and include the result as a trailing comment (`// => …`) so readers correlate code to output without running it.
+- Lead with the simplest correct form first. When you contrast correct and incorrect code, show the correct version first, explain why it works, then show the incorrect version with the diagnostic it produces.
+- Show each common form of a construct, not just one — for example, a single null-conditional access (`a?.b`) and a chain (`a?.b?.c`) — so readers recognize the pattern when they meet variations.
+- Don't use a contextual keyword (`value`, `record`, `field`, `scoped`) as a sample identifier; it reads as the keyword and obscures the lesson.
+- In tutorials, when a code block belongs in a new file, tell the reader to create the file and give it a name. Don't drop code that has nowhere to live.
 - Never place consecutive code snippets. They are hard to read and harder for readers to follow. Either intersperse explanatory text between snippets or combine related snippets into a single example.
 
 *Terminology (P2) — treat every C# term as new until the article defines it:*
 
 - Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the proposed TOC. Remember that this is "fundamentals" content. Any term likely to be unfamiliar to a new C# developer should be defined inline at first use — one short sentence — with a link to the deeper reference. This applies to terms the author considers obvious (for example, *dereference*, *type parameter* vs. *type argument*, *primary constructor*), not just terms the author considers new.
+- *Use the official term for every concept, and define it.* Match the term used in the language spec, the API reference, or the Microsoft style guide; never coin a synonym for an established term (for example, don't call an annotation a "hint," and don't say null state "moves" when it *changes* on a line). Introduce the term, define it in one sentence at first use, then state the rule that uses it.
 - When a symbol's meaning depends on context (`T?` differs between value types, constrained reference types, and unconstrained generics), spell out which form you mean before listing rules. Lead a constraints discussion with a one-line model of what is being constrained.
 - Definitions are less important for concepts that aren't related to the C# language. The goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
 - Cross reference liberally. It's assumed readers are familiar with content in the "Get started" section, so links there should be minimal and scoped to recommendations for beginners to start there instead. Links and cross references should encourage readers to learn more and dive deeper into the fundamental concepts covered in this section.
+- Link every API type, member, or namespace named in prose with an `<xref:...>` cross-reference, not plain text or a hand-built URL.
 - If and only if a feature was first added in one of the last three released versions (C# 12–14), mention when it was first introduced.
 
 *Reader's project frame (P3) — default to a current project, and teach how to verify settings:*
@@ -43,6 +49,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 *Structural hygiene that supports the principles above:*
 
+- *Open with what the article covers and its key takeaway.* Don't open with what the article *doesn't* cover or with "X and Y are different," and don't link back to the section overview from the introduction. When the default behavior is usually what readers want, say so, and frame the advanced features as options for when the default doesn't fit.
 - Each article follows concept → example → concept → example structure. The concept discussion should include motivating scenarios for the feature or concept being covered.
 - One topic per paragraph. A new case (for example, "the same pitfall also applies to arrays of structs") starts a new paragraph.
 - Promote a bold paragraph-lead to `###` when it anchors more than one paragraph of content. Inline bold disappears in the TOC and is harder to scan.
@@ -53,13 +60,17 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 - Update `toc.yml` incrementally so new content is navigable immediately.
 - Add redirect entries for every moved file (use the "/.openpublishing/redirection.csharp.json" file).
+- *Make every move build-clean.* A redirect alone doesn't silence "Invalid link" warnings: when you move or rename a file, also fix every inbound relative link repo-wide (sibling articles, the section `index.md`, `toc.yml`, and cross-section files such as `docs/standard/...`) and the moved file's own outbound links, all in the same PR.
+- *Match the snippet mechanism to the code's build behavior.* Code that should compile lives in a snippet project referenced with `:::code` (CI compiles it). Code that intentionally *doesn't compile* stays inline in a fenced ```` ```csharp ```` block, never in a snippet project. Code that intentionally *warns* (for example, a nullable diagnostic) lives in a snippet project configured not to fail on that warning and must actually emit it — don't comment it out or "fix" it. Before deleting or moving a snippet file, grep every `source=` reference to it and update them in the same commit.
 - Every article must include a tip near the top that identifies where the article sits in the four-tier content structure (*Get started* → *Fundamentals* → *Deep dives* → *Reference*), describes who it's written for, and routes readers to the right tier based on their experience level (Goal 1).
 - Set the `ms.topic` metadata value in each article's YAML front matter to match the article's content type (`overview`, `tutorial`, `concept`, `how-to`, `troubleshooting`, or `reference`).
 - After writing content, verify the article's structure, required metadata, and sections against the template for its content type (see the [Include major topic types](EverydayCSharp-ProjectMap.md#include-major-topic-types) table for template links). This is mandatory for every article before it can be merged to ensure consistency and completeness across the Fundamentals section.
 - Do not add F1 or helpviewer keywords to Fundamentals articles. When pulling content from the Reference section, remove any F1 or helpviewer keywords.
 - Do not add links to files that will be created in future PRs until those files are live. For example, if PR 3 creates the `fundamentals/types/enums.md` article, then earlier PRs should not link to that file until PR 3 is merged. This may require some temporary duplication of content or placeholders for links, but it will prevent broken links in merged PRs. Instead, when an article is created, add appropriate links to it in earlier articles as needed to connect the content together.
+- *Branch from `main`.* When a prerequisite PR is still in review, assume it merges — don't rebase your branch onto the prerequisite's branch, and don't link to files that aren't live yet.
 - Every PR description lists redistributed content explicitly. For each section moved out of the Fundamentals draft, name the source (which planned Fundamentals article it was cut from), the destination (file path), and a one-line reason — formatted as `source draft article → destination file path → reason`. This keeps the trail visible for downstream review and for future restructuring of the destination area.
 - Follow the *Fundamentals folder layout convention*: each section's `index.md` and concept articles live at the section's top level (for example, `fundamentals/strings/interpolation.md`); task-style articles ("how do I do X?") are grouped under a `<section>/common-tasks/` subfolder (for example, `fundamentals/strings/common-tasks/search.md`) with their snippets under `<section>/common-tasks/snippets/`; tutorials live flat under `fundamentals/tutorials/` rather than nested per section. The section's `toc.yml` renders a nested **Common tasks** group beneath the concept articles. Sections without task-style articles don't get a `common-tasks/` subfolder. See [Decision 11](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials) in the Project Map.
+- *Run the pre-submit checklist before opening the PR* rather than leaving it for a late review pass. Confirm that every output-producing sample shows its result as a trailing `// => …` comment; that samples saturate the everyday-feature set even when those features aren't the topic; that no contextual keyword is used as an identifier; that every newly introduced term is defined at first use; and that each article's structure and required metadata match the template for its content type.
 
 ## Phase A: Program Structure (§7)
 
@@ -100,7 +111,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ### PR 4 — Type system: classes, structs, records
 
-[#52605](https://github.com/dotnet/docs/pull/52605) *Merged*
+[#52685](https://github.com/dotnet/docs/pull/52685) *Merged*
 
 1. Revise `fundamentals/types/classes.md` — static classes (C# 2), object/collection initializers (C# 3)
 2. New `fundamentals/types/structs.md` — struct design, auto-default (C# 11), parameterless constructors (C# 10), readonly members (C# 8), record structs (C# 10)
@@ -160,9 +171,9 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 1. Consolidate `fundamentals/null-safety/nullable-reference-types.md` — pull from `nullable-references.md` + `tutorials/nullable-reference-types.md`
 2. Pull `fundamentals/null-safety/common-tasks/resolve-warnings.md` — from existing nullable warnings content
-3. Pull `fundamentals/null-safety/migration-strategies.md` — from `nullable-migration-strategies.md`
+3. *Migration article stays in place* — the `nullable-migration-strategies.md` content remains at `advanced-topics/update-applications/nullable-migration-strategies.md` (the "Update existing apps" area); the Fundamentals NRT article links out to it rather than inlining migration strategy, because the migration guidance targets large pre-C# 8 codebases and fails Filter A universality (Goal 11 / Decision 1). No Fundamentals migration article is created.
 4. Pull `tutorials/nullable-reference-types.md` → `fundamentals/tutorials/nullable-reference-types.md` (flat under tutorials, not nested under null-safety)
-5. toc.yml + redirects (4 redirect entries)
+5. toc.yml + redirects (for the consolidated NRT article, `resolve-warnings.md`, and the NRT tutorial)
 
 > *Folder layout note:* `resolve-warnings.md` is the only task-style article in this section, so it goes under `null-safety/common-tasks/`. The other articles in this PR are concept content at the section root, and the NRT tutorial lives flat under `fundamentals/tutorials/` per the [folder layout convention](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials).
 
@@ -198,6 +209,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 > *Watch for redistribution:* the existing how-to articles for search and split include performance comparisons, regex-vs-method discussions, and `Span<char>`-based variants that fail universality. Cut those sub-sections to a Strings deep dive (or leave them in the existing how-to articles if those originals stay live), and pull only the everyday-usage core into Fundamentals.
 
 ### PR 12 — Strings: concatenate, modify, compare, interpolation tutorial
+
+[#54475](https://github.com/dotnet/docs/pull/54475) *Merged*
 
 > ~10 files
 

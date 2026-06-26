@@ -19,13 +19,13 @@ If you must preserve the .NET Framework 4 sizing behavior, set `SubsystemVersion
 </PropertyGroup>
 ```
 
-You can also use the [SubsystemVersion compiler option for C#](/dotnet/csharp/language-reference/compiler-options/advanced#subsystemversion) or the [-subsystemversion compiler option for Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion).
+You can also use the [SubsystemVersion compiler option for C#](/dotnet/csharp/language-reference/compiler-options/advanced#subsystemversion) or the [SubsystemVersion compiler option for Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion).
 
 Review your code that sizes or positions Windows Forms UI with <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType> values or other `GetSystemMetrics`-based values.
 
 | Name    | Value       |
 | ------- | ----------- |
-| Scope   | Edge        |
+| Scope   | Minor        |
 | Version | 4.5         |
 | Type    | Retargeting |
 

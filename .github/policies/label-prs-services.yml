@@ -45,7 +45,7 @@ configuration:
                 pattern: (?i).*_vblang/spec.*
             then:
             - addLabel:
-                label: dotnet-visualbasic/svc
+                label: dotnet-visual-basic/svc
             - addLabel:
                 label: vb-spec/subsvc
           - if:
@@ -653,14 +653,14 @@ configuration:
                 pattern: (?i).*docs/visual-basic.*
             then:
             - addLabel:
-                label: dotnet-visualbasic/svc
+                label: dotnet-visual-basic/svc
           - if:
             - filesMatchPattern:
                 matchAny: true
                 pattern: (?i).*docs/visual-basic/language-reference/error-messages.*
             then:
             - addLabel:
-                label: dotnet-visualbasic/svc
+                label: dotnet-visual-basic/svc
             - addLabel:
                 label: errors-warnings/subsvc
           - if:
@@ -669,7 +669,7 @@ configuration:
                 pattern: (?i).*docs/visual-basic/misc.*
             then:
             - addLabel:
-                label: dotnet-visualbasic/svc
+                label: dotnet-visual-basic/svc
             - addLabel:
                 label: errors-warnings/subsvc
 onFailure:

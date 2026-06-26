@@ -197,7 +197,7 @@ For more information about the correct syntax, see [Switch expression](../operat
 - **CS9336**: *The pattern is redundant.*
 - **CS9337**: *The pattern is too complex to analyze for redundancy.*
 
-Reorder or remove unreachable case labels in `switch` statements (**CS8120**). A `case` label is unreachable when a previous case already handles all values that the later case would match. This occurs when a more general pattern appears before a more specific one, or when the pattern is impossible to match for the input type.
+Reorder or remove unreachable case labels in `switch` statements (**CS8120**). A `case` label is unreachable when a previous case already handles all values that the later case would match. This situation occurs when a more general pattern appears before a more specific one, or when the pattern is impossible to match for the input type.
 
 Add switch arms that handle all possible input values to create exhaustive switch expressions (**CS8509**, **CS8524**, **CS8846**). Switch expressions must cover every possible value of the input type. Otherwise, the compiler can't guarantee that the expression produces a result for all inputs. The compiler warns separately for unnamed enum values (**CS8524**) and for cases where a `when` clause might match an otherwise-unhandled value (**CS8846**). Use the discard pattern (`_`) as a final catch-all arm to match any remaining values that you don't need to handle explicitly.
 

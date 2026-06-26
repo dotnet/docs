@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/csharp/how-to/compare-strings.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/compare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/csharp/how-to/concatenate-multiple-strings.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/concatenate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/csharp/how-to/modify-string-contents.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/modify",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/csharp/tutorials/string-interpolation.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/csharp/fundamentals/null-safety/migration-strategies.md",
       "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
@@ -5095,11 +5115,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-compare-strings.md",
-      "redirect_url": "/dotnet/csharp/how-to/compare-strings"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/compare"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
-      "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/concatenate"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
@@ -5115,7 +5135,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-modify-string-contents.md",
-      "redirect_url": "/dotnet/csharp/how-to/modify-string-contents"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/modify"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
@@ -5338,12 +5358,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings-local.md",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings.yml",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation",
-      "redirect_document_id": true
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/quick-starts/introduction-to-classes.md",
@@ -5482,11 +5501,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings-local.md",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings.yml",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/patterns-objects.md",

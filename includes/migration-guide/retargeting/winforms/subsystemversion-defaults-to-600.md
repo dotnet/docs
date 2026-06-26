@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 #### Details
 
-When you build Windows Forms apps with MSBuild after retargeting to .NET Framework 4.5, the default `SubsystemVersion` changes from `4.00` to `6.00`. Windows uses the subsystem version when it reports some window metrics. As a result, code that calculates window or form sizes from <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType> values, such as <xref:System.Windows.Forms.SystemInformation.FixedFrameBorderSize?displayProperty=nameWithType>, might produce different layout results than the same code produced on .NET Framework 4.
+When you build Windows Forms apps after retargeting to .NET Framework 4.5, the default `SubsystemVersion` changes from `4.00` to `6.00`. Windows uses the subsystem version when it reports some window metrics. As a result, code that calculates window or form sizes from <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType> values, such as <xref:System.Windows.Forms.SystemInformation.FixedFrameBorderSize?displayProperty=nameWithType>, might produce different layout results than the same code produced on .NET Framework 4.
 
 #### Suggestion
 

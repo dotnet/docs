@@ -23,9 +23,9 @@ The MSTest runner is open source and builds on the [MTP](./microsoft-testing-pla
 
 ## Enable MTP in an MSTest project
 
-It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (MTP) and its extensions.
+Use [MSTest SDK](./unit-testing-mstest-sdk.md) to greatly simplify your project configuration, version management, and alignment of MTP and its extensions.
 
-When you use `MSTest SDK`, by default you're opted in to using MTP.
+`MSTest.Sdk` replaces `Microsoft.NET.Sdk` as the project SDK, and MTP is enabled by default:
 
 ```xml
 <Project Sdk="MSTest.Sdk/4.1.0">
@@ -39,7 +39,10 @@ When you use `MSTest SDK`, by default you're opted in to using MTP.
 </Project>
 ```
 
-Alternatively, you can enable MSTest runner by adding the `EnableMSTestRunner` property and setting `OutputType` to `Exe` in your project file. You also need to ensure that you're using `MSTest 3.2.0` or newer. We strongly recommend you update to the latest MSTest version available.
+> [!NOTE]
+> Because `MSTest.Sdk` replaces `Microsoft.NET.Sdk`, it isn't compatible with projects that require a different project SDK. For example, ASP.NET Core integration test projects that require `Microsoft.NET.Sdk.Web` can't use `MSTest.Sdk`.
+
+If your project uses a project SDK other than `Microsoft.NET.Sdk`—for example, ASP.NET Core integration test projects that require `Microsoft.NET.Sdk.Web`—enable the MSTest runner by adding the `EnableMSTestRunner` property and setting `OutputType` to `Exe` in your project file. Ensure that you're using `MSTest 3.2.0` or newer, and update to the latest MSTest version available.
 
 Consider the following example project file:
 

@@ -47,7 +47,7 @@ configuration:
             - addLabel:
                 label: dotnet-visual-basic/svc
             - addLabel:
-                label: vb-spec/subsvc
+                label: vb-language-spec/subsvc
           - if:
             - filesMatchPattern:
                 matchAny: true

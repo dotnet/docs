@@ -519,11 +519,12 @@ items:
       CS8851, CS8857, CS8858, CS8859, CS8860, CS8864, CS8865, CS8866, CS8869, CS8870,
       CS8871, CS8872, CS8873, CS8874, CS8875, CS8876, CS8877, CS8879, CS8906, CS8907,
       CS8908, CS8913
-  - name: Union type declarations
+  - name: Union types and closed hierarchies
     href: ./compiler-messages/union-declaration-errors.md
     displayName: >
-      union, union type, case type,
-      CS9370, CS9371, CS9372, CS9373, CS9374, CS9375
+      union, union type, case type, closed hierarchy, closed type,
+      CS9369, CS9370, CS9371, CS9372, CS9373, CS9374, CS9375,
+      CS9380, CS9381, CS9382, CS9383, CS9384, CS9385, CS9386, CS9387
   - name: Constructors and module initializers
     href: ./compiler-messages/constructor-errors.md
     displayName: >

@@ -1,37 +1,64 @@
 ---
-title: "Resolve errors and warnings related to union type declarations"
-description: "This article helps you diagnose and correct compiler errors and warnings related to union type declarations."
+title: "Resolve errors and warnings related to union type and closed hierarchy declarations"
+description: "This article helps you diagnose and correct compiler errors and warnings related to union type and closed hierarchy declarations."
 f1_keywords:
+  - "CS9369"
   - "CS9370"
   - "CS9371"
   - "CS9372"
   - "CS9373"
   - "CS9374"
   - "CS9375"
+  - "CS9380"
+  - "CS9381"
+  - "CS9382"
+  - "CS9383"
+  - "CS9384"
+  - "CS9385"
+  - "CS9386"
+  - "CS9387"
 helpviewer_keywords:
+  - "CS9369"
   - "CS9370"
   - "CS9371"
   - "CS9372"
   - "CS9373"
   - "CS9374"
   - "CS9375"
-ms.date: 04/03/2026
+  - "CS9380"
+  - "CS9381"
+  - "CS9382"
+  - "CS9383"
+  - "CS9384"
+  - "CS9385"
+  - "CS9386"
+  - "CS9387"
+ms.date: 06/26/2026
 ai-usage: ai-assisted
 ---
-# Resolve errors and warnings for union type declarations
+# Resolve errors and warnings for union type and closed hierarchy declarations
 
-The C# compiler generates errors when you misuse [union types](../builtin-types/union.md). Union types represent a value that can be one of several *case types*, with implicit conversions and exhaustive pattern matching. These diagnostics help you follow the rules for declaring and using union types.
+The C# compiler generates errors when you misuse [union types](../builtin-types/union.md) or closed type hierarchies. Union types represent a value that can be one of several *case types*, with implicit conversions and exhaustive pattern matching. Closed hierarchies restrict which types can derive from a base type. These diagnostics help you follow the rules for declaring and using union types and closed hierarchies.
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
+- [**CS9369**](#anchor-tbd): *An expression tree may not contain a union conversion.*
 - [**CS9370**](#union-declaration-requirements): *A union declaration must specify at least one case type.*
 - [**CS9371**](#union-declaration-requirements): *Cannot convert type to 'object' via an implicit reference or boxing conversion.*
 - [**CS9372**](#pattern-matching-limitations): *An expression of type cannot be handled by this pattern, see additional errors at this location.*
 - [**CS9373**](#union-member-restrictions): *Instance fields, auto-properties, or field-like events are not permitted in a 'union' declaration.*
 - [**CS9374**](#union-member-restrictions): *Explicitly declared public constructors with a single parameter are not permitted in a 'union' declaration.*
 - [**CS9375**](#union-member-restrictions): *A constructor declared in a 'union' declaration must have a 'this' initializer that calls a synthesized constructor or an explicitly declared constructor.*
+- [**CS9380**](#anchor-tbd): *Types and aliases cannot be named 'closed'.*
+- [**CS9381**](#anchor-tbd): *'type': a closed type cannot be sealed or static*
+- [**CS9382**](#anchor-tbd): *'type': cannot use a closed type 'type' from another assembly as a base type.*
+- [**CS9383**](#anchor-tbd): *'type': The type parameter 'parameter' must be referenced in the base type 'type' because the base type is closed.*
+- [**CS9384**](#anchor-tbd): *'type': a closed type cannot be marked abstract because it is always implicitly abstract.*
+- [**CS9385**](#anchor-tbd): *A union type must have at least one union creation member.*
+- [**CS9386**](#anchor-tbd): *A union member provider type must have an instance 'Value' property of type 'object?' or 'object'. The property must have a public get accessor.*
+- [**CS9387**](#anchor-tbd): *A 'union' declaration cannot use a union member provider interface.*
 
 ## Union declaration requirements
 

@@ -2,7 +2,6 @@
 title: "Resolve errors and warnings related to union type and closed hierarchy declarations"
 description: "This article helps you diagnose and correct compiler errors and warnings related to union type and closed hierarchy declarations."
 f1_keywords:
-  - "CS9369"
   - "CS9370"
   - "CS9371"
   - "CS9372"
@@ -18,7 +17,6 @@ f1_keywords:
   - "CS9386"
   - "CS9387"
 helpviewer_keywords:
-  - "CS9369"
   - "CS9370"
   - "CS9371"
   - "CS9372"
@@ -44,7 +42,6 @@ The C# compiler generates errors when you misuse [union types](../builtin-types/
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
-- [**CS9369**](#anchor-tbd): *An expression tree may not contain a union conversion.*
 - [**CS9370**](#union-declaration-requirements): *A union declaration must specify at least one case type.*
 - [**CS9371**](#union-declaration-requirements): *Cannot convert type to 'object' via an implicit reference or boxing conversion.*
 - [**CS9372**](#pattern-matching-limitations): *An expression of type cannot be handled by this pattern, see additional errors at this location.*

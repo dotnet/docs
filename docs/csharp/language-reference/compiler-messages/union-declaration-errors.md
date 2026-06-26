@@ -41,8 +41,8 @@ That's by design. The text closely matches the text of the compiler error / warn
  -->
 
 - [**CS9370**](#union-declaration-requirements): *A union declaration must specify at least one case type.*
-- [**CS9371**](#union-declaration-requirements): *Cannot convert type to 'object' via an implicit reference or boxing conversion.*
-- [**CS9373**](#union-member-restrictions): *Instance fields, auto-properties, or field-like events are not permitted in a 'union' declaration.*
+- [**CS9371**](#union-declaration-requirements): *Cannot convert type 'type' to 'object' via an implicit reference or boxing conversion.*
+- [**CS9373**](#union-member-restrictions): *Instance fields, auto-properties or field-like events are not permitted in a 'union' declaration.*
 - [**CS9374**](#union-member-restrictions): *Explicitly declared public constructors with a single parameter are not permitted in a 'union' declaration.*
 - [**CS9375**](#union-member-restrictions): *A constructor declared in a 'union' declaration must have a 'this' initializer that calls a synthesized constructor or an explicitly declared constructor.*
 - [**CS9380**](#closed-hierarchy-restrictions): *Types and aliases cannot be named 'closed'.*
@@ -57,7 +57,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 ## Union declaration requirements
 
 - **CS9370**: *A union declaration must specify at least one case type.*
-- **CS9371**: *Cannot convert type to 'object' via an implicit reference or boxing conversion.*
+- **CS9371**: *Cannot convert type 'type' to 'object' via an implicit reference or boxing conversion.*
 
 A [union declaration](../builtin-types/union.md#union-declarations) specifies a name and a list of case types. These errors enforce the structural requirements of a valid union declaration. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/unions.md).
 
@@ -68,7 +68,7 @@ To correct these errors, apply the following changes to your union declaration:
 
 ## Union member restrictions
 
-- **CS9373**: *Instance fields, auto-properties, or field-like events are not permitted in a 'union' declaration.*
+- **CS9373**: *Instance fields, auto-properties or field-like events are not permitted in a 'union' declaration.*
 - **CS9374**: *Explicitly declared public constructors with a single parameter are not permitted in a 'union' declaration.*
 - **CS9375**: *A constructor declared in a 'union' declaration must have a 'this' initializer that calls a synthesized constructor or an explicitly declared constructor.*
 

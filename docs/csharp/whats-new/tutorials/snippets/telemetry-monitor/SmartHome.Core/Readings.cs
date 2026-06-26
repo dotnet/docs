@@ -1,4 +1,4 @@
-namespace SmartHome.Core;
+﻿namespace SmartHome.Core;
 
 // <ReadingUnion>
 // A union declaration is shorthand for a struct that holds one of the listed
@@ -20,17 +20,3 @@ public static class ReadingReporter
     };
     // </ReadingConsume>
 }
-
-// <OneOrMore>
-// A generic union declaration can include members. This one normalizes a value
-// that's either a single item or a sequence of items.
-public union OneOrMore<T>(T, IEnumerable<T>)
-{
-    public IEnumerable<T> AsEnumerable() => this switch
-    {
-        IEnumerable<T> many => many,
-        T one => [one],
-        null => [],
-    };
-}
-// </OneOrMore>

@@ -86,13 +86,19 @@ To read the result, switch over the case types. The compiler verifies that you h
 
 A value converts to the union implicitly, so you assign a `T` or an `Exception` directly to a `Result<T>`.
 
-## Add members to a union
+## Reuse a generic union across numeric types
 
-A union declaration can include a body with members. The following generic union normalizes a value that's either a single item or a sequence. Its `AsEnumerable` method switches over `this` to return a uniform sequence:
+A generic union pays off when you reuse it across several closed-over types. Sensors report at different resolutions: a contact sensor uses a `byte`, a position sensor uses a `short`, and a counter uses an `int`. A single generic union models a sample from any of them. A `Sample<T>` holds either an in-range reading of type `T` or a `Saturated` marker for a sensor that railed:
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Readings.cs" id="OneOrMore":::
+:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sample.cs" id="SampleUnion":::
 
-The `null` arm handles the default value of the union. Because a union is a struct, an uninitialized `OneOrMore<T>` has null contents, so the switch must cover that case.
+The `where T : struct, INumber<T>` constraint keeps `T` a non-nullable numeric value type. Because neither case type is nullable, a switch over the cases needs no null arm. A union declaration can also include a body, so `Sample<T>` adds an `InRange` property that patterns over `this` to report whether the sample carries a usable reading.
+
+The constraint lets a single method process every numeric width. To scale any reading to a fraction of full scale, the method relies on <xref:System.Numerics.INumber`1> arithmetic:
+
+:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sample.cs" id="SampleConsume":::
+
+Because `Saturated` is a value type and `T` is constrained to a value type, the switch over `T` and `Saturated` is exhaustive without a null arm. The same `Normalize` method works for a `Sample<byte>`, a `Sample<short>`, or a `Sample<int>`.
 
 ## Build a custom union that avoids boxing
 
@@ -118,16 +124,17 @@ Run the app:
 dotnet run --project SmartHome.App
 ```
 
-The readings, results, and quantities each print through their exhaustive switches:
+The readings, results, samples, and quantities each print through their exhaustive switches:
 
 ```output
 Reading: 23.5
 Reading: on
 Reading: offline
 Reading: no reading
-Rooms: Kitchen, Garage
 Success: 42
 Failure: sensor timed out
+Sample: 78% (in range: True)
+Sample: 100% (in range: False)
 3 items
 2.50 units
 ```

@@ -10,15 +10,17 @@ foreach (Reading reading in readings)
 }
 Console.WriteLine($"Reading: {ReadingReporter.Render(default)}");
 
-// Generic union declaration with a member.
-OneOrMore<string> rooms = new(["Kitchen", "Garage"]);
-Console.WriteLine($"Rooms: {string.Join(", ", rooms.AsEnumerable())}");
-
 // Migrate from a conventional result type to a union.
 Result<double> ok = 42.0;
 Result<double> bad = new TimeoutException("sensor timed out");
 Console.WriteLine(ResultReporter.Describe(ok));
 Console.WriteLine(ResultReporter.Describe(bad));
+
+// Generic union reused across numeric widths.
+Sample<byte> raw = (byte)200;
+Sample<short> railed = new Saturated(High: true);
+Console.WriteLine($"Sample: {SampleReporter.Normalize(raw, byte.MaxValue):P0} (in range: {raw.InRange})");
+Console.WriteLine($"Sample: {SampleReporter.Normalize(railed, short.MaxValue):P0} (in range: {railed.InRange})");
 
 // Custom non-boxing union.
 Console.WriteLine(QuantityReporter.Describe(new Quantity(3)));

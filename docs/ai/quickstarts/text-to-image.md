@@ -156,7 +156,7 @@ This hosting approach provides several benefits:
 - **Dependency injection**: The image generator is available throughout your application via DI.
 - **Lifecycle management**: Services are properly initialized and disposed of by the hosting infrastructure.
 - **Testability**: Mock implementations can be easily substituted for testing.
-- **Integration with .NET Aspire**: When using .NET Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
+- **Integration with Aspire**: When using Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
 
 ## Best practices
 

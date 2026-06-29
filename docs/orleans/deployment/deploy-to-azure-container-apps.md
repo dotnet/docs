@@ -31,7 +31,6 @@ If your Orleans application uses [Aspire](../host/aspire-integration.md), you ca
 
 - [Aspire CLI](https://aspire.dev/get-started/install-cli/) installed
 - [Azure CLI](/cli/azure/install-azure-cli) installed
-- [Aspire workload](https://aspire.dev/get-started/install-cli/)
 - An Azure subscription with permissions to create resources
 - Docker Desktop or Podman running (for building container images)
 

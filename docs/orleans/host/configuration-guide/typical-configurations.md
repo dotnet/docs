@@ -13,9 +13,9 @@ Below are examples of typical configurations you can use for development and pro
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-## Recommended: .NET Aspire configuration
+## Recommended: Aspire configuration
 
-[.NET Aspire](../aspire-integration.md) is the recommended approach for configuring Orleans applications. Aspire provides declarative resource management, automatic service discovery, built-in observability, and simplified deployment—eliminating most manual configuration.
+[Aspire](../aspire-integration.md) is the recommended approach for configuring Orleans applications. Aspire provides declarative resource management, automatic service discovery, built-in observability, and simplified deployment—eliminating most manual configuration.
 
 ### Production configuration with Redis
 
@@ -121,7 +121,7 @@ builder.Build().Run();
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableServiceClient`, or `AddKeyedAzureBlobServiceClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
 
-For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../aspire-integration.md).
+For comprehensive documentation on Orleans and Aspire integration, see [Orleans and Aspire integration](../aspire-integration.md).
 
 :::zone-end
 
@@ -133,7 +133,7 @@ For more information, see [Local development configuration](local-development-co
 
 ## Traditional configurations (without Aspire)
 
-The following sections describe traditional Orleans configurations that don't use .NET Aspire. These are useful when Aspire isn't available or when you need fine-grained control over Orleans configuration.
+The following sections describe traditional Orleans configurations that don't use Aspire. These are useful when Aspire isn't available or when you need fine-grained control over Orleans configuration.
 
 :::zone-end
 

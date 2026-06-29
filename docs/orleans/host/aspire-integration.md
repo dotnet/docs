@@ -28,7 +28,7 @@ Orleans integration with Aspire uses the `Aspire.Hosting.Orleans` package in you
 Before using Orleans with Aspire, ensure you have:
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [Aspire workload](https://aspire.dev/get-started/install-cli/)
+- [Aspire CLI](https://aspire.dev/get-started/install-cli/)
 - An IDE with Aspire support (Visual Studio 2022 17.9+, VS Code with C# Dev Kit, or JetBrains Rider)
 
 ## Required packages

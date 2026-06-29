@@ -130,7 +130,7 @@ Outside of the selection of the runner and runner-specific extensions, `MSTest.S
 
 ### Test with Aspire
 
-Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](https://aspire.dev/get-started/what-is-aspire/).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0.

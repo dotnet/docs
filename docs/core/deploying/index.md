@@ -536,3 +536,4 @@ For more information about container deployment, see [.NET SDK container creatio
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Select the .NET version to use](../versions/selection.md)
 - [Publishing for macOS](macos.md)
+- [What is the Aspire AppHost?](https://aspire.dev/get-started/app-host/)—Manage multi-container orchestration during development with a code-first approach.

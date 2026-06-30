@@ -103,6 +103,11 @@ As Figure 4-17 shows, real-time HTTP communication means that you can have serve
 
 SignalR is a good way to achieve real-time communication for pushing content to the clients from a back-end server. Since communication is in real time, client apps show the changes almost instantly. This is usually handled by a protocol such as WebSockets, using many WebSockets connections (one per client). A typical example is when a service communicates a change in the score of a sports game to many client web apps simultaneously.
 
+### Additional resources
+
+- **Service discovery in Aspire** \
+  <https://aspire.dev/fundamentals/service-discovery/>—Aspire provides built-in service discovery for inter-service communication in .NET distributed apps.
+
 >[!div class="step-by-step"]
 >[Previous](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
 >[Next](asynchronous-message-based-communication.md)

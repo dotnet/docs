@@ -120,3 +120,4 @@ The preceding code executes the delegate within the `ExecuteAsync` method. When 
 
 - [Build resilient HTTP apps: Key development patterns](http-resilience.md)
 - [Challenges of idempotent handling of retried calls](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing)
+- [Service defaults](https://aspire.dev/fundamentals/service-defaults/)—Aspire's service defaults project configures resilience pipelines for `HttpClient` automatically.

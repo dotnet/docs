@@ -85,6 +85,9 @@ var retryPolicy = Policy
 - **Marc Brooker. Jitter: Making Things Better With Randomness**
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
+- **Aspire service defaults** \
+  <https://aspire.dev/fundamentals/service-defaults/>—Aspire provides convention-based resilience setup for `HttpClient`, replacing manual Polly configuration.
+
 >[!div class="step-by-step"]
 >[Previous](use-httpclientfactory-to-implement-resilient-http-requests.md)
 >[Next](implement-circuit-breaker-pattern.md)

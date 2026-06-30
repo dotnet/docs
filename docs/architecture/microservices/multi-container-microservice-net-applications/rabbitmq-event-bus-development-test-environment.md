@@ -128,6 +128,8 @@ A production-ready solution with support for RabbitMQ.
 - **Rebus** - Open source .NET Service Bus \
   <https://github.com/rebus-org/Rebus>
 
+- **Aspire integrations** - Aspire can manage RabbitMQ as a resource with `builder.AddRabbitMQ()`. See the [Aspire integrations gallery](https://aspire.dev/integrations/) for available hosting extensions.
+
 > [!div class="step-by-step"]
 > [Previous](integration-event-based-microservice-communications.md)
 > [Next](subscribe-events.md)

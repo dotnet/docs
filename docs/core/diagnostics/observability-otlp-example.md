@@ -150,3 +150,7 @@ The dashboard shows a list of traces with summary information. Whenever spans wi
 [![Spans in standalone dashboard](./media/aspire-dashboard-spans-thumb.png)](./media/aspire-dashboard-spans.png#lightbox)
 
 Selecting a span shows its details including any properties on the span, such as the `greeting` tag that you set in [step 3](#3-create-an-api-endpoint).
+
+## See also
+
+- [Standalone Aspire dashboard](https://aspire.dev/dashboard/standalone-aspire-dashboard/)—The canonical Aspire documentation for the standalone dashboard.

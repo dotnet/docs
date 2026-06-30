@@ -133,6 +133,9 @@ Yet another drawback with this direct client-to-service approach is that it make
 
 As mentioned in the architecture section, when designing and building a complex application based on microservices, you might consider the use of multiple fine-grained API Gateways instead of the simpler direct client-to-microservice communication approach.
 
+> [!TIP]
+> [Aspire](https://aspire.dev/get-started/aspire-architecture/) directly addresses many of these distributed-app challenges—including deployment complexity, service discovery, and inter-service communication—with a code-first orchestration approach.
+
 **Partitioning the microservices**. Finally, no matter, which approach you take for your microservice architecture, another challenge is deciding how to partition an end-to-end application into multiple microservices. As noted in the architecture section of the guide, there are several techniques and approaches you can take. Basically, you need to identify areas of the application that are decoupled from the other areas and that have a low number of hard dependencies. In many cases, this approach is aligned to partitioning services by use case. For example, in our e-shop application, we have an ordering service that is responsible for all the business logic related to the order process. We also have the catalog service and the basket service that implement other capabilities. Ideally, each service should have only a small set of responsibilities. This approach is similar to the single responsibility principle (SRP) applied to classes, which states that a class should only have one reason to change. But in this case, it is about microservices, so the scope will be larger than a single class. Most of all, a microservice has to be autonomous, end to end, including responsibility for its own data sources.
 
 ## External versus internal architecture and design patterns

@@ -4,6 +4,7 @@ description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
 ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # MSTest usage rules

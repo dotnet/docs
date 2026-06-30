@@ -4,6 +4,7 @@ description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
 ms.date: 12/20/2023
+ai-usage: ai-assisted
 ---
 
 # MSTest code analysis

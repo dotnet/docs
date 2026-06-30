@@ -4,6 +4,7 @@ author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
 ms.date: 02/13/2024
+ai-usage: ai-assisted
 ---
 
 # MSTest SDK configuration

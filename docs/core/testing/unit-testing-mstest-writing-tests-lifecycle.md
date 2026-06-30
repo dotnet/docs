@@ -4,6 +4,7 @@ description: Learn about the creation and lifecycle of test classes and test met
 author: marcelwgn
 ms.author: marcelwagner
 ms.date: 07/15/2025
+ai-usage: ai-assisted
 ---
 
 # MSTest lifecycle

@@ -478,7 +478,7 @@ public class CIAwareTests
 
 ### `MemberConditionAttribute`
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.MemberConditionAttribute>, introduced in MSTest 4.3, runs or skips a test class or test method based on the value of one or more static `bool` members. Each member is referenced by its declaring type and name, and must be `public static`, return `bool`, and (for methods) be parameterless. When several members are specified, they're combined with a logical AND. Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionMode> to invert the condition.
+The `MemberConditionAttribute`, introduced in MSTest 4.3, runs or skips a test class or test method based on the value of one or more static `bool` members. Each member is referenced by its declaring type and name, and must be `public static`, return `bool`, and (for methods) be parameterless. When several members are specified, they're combined with a logical AND. Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionMode> to invert the condition.
 
 ```csharp
 public static class TestConditions
@@ -508,7 +508,7 @@ public class FeatureTests
 
 ### `ArchitectureConditionAttribute`
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ArchitectureConditionAttribute>, introduced in MSTest 4.3, runs or skips tests based on the process architecture. Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestArchitectures> flags enum to specify which architectures apply.
+The `ArchitectureConditionAttribute`, introduced in MSTest 4.3, runs or skips tests based on the process architecture. Use the `TestArchitectures` flags enum to specify which architectures apply.
 
 ```csharp
 [TestClass]
@@ -530,7 +530,7 @@ public class ArchitectureTests
 
 ### `ExecutableConditionAttribute`
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExecutableConditionAttribute>, introduced in MSTest 4.3, runs or skips tests based on whether an external tool is available. The test runs only when the specified executable can be resolved; you can optionally pass arguments that are used when probing the tool.
+The `ExecutableConditionAttribute`, introduced in MSTest 4.3, runs or skips tests based on whether an external tool is available. The test runs only when the specified executable can be resolved; you can optionally pass arguments that are used when probing the tool.
 
 ```csharp
 [TestClass]

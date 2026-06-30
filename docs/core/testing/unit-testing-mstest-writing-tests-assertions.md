@@ -69,23 +69,13 @@ public async Task AssertExamples()
 
 ### Available APIs
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AddValueFormatter*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreAllDistinct*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreAllNotNull*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreAllOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEquivalent*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEquivalent*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSequenceEqual*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSequenceEqual*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Contains*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsAll*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsSingle*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotContain*?displayProperty=nameWithType>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotContainAll*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotEndWith*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotMatchRegex*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotStartWith*?displayProperty=nameWithType>

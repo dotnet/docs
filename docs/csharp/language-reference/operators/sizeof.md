@@ -34,6 +34,8 @@ The expressions presented in the following table are evaluated at compile time t
 
 The size of the types in the preceding table is a compile-time constant.
 
+For an enum type, the result of the `sizeof` operator is the size of the enum's underlying integral type. The result is computed at compile time.
+
 In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` on any non-`void` type, including types constructed from type parameters.
 
 > [!NOTE]

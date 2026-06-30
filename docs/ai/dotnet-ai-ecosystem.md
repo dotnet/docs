@@ -137,4 +137,4 @@ AI systems often stop being "just one app" once retrieval, tools, gateways, and 
 
 Aspire isn't specifically the AI runtime; it's the multi-service application layer around it. It doesn't replace MEAI, MAF, or Azure AI Foundry.
 
-For more information, see the [Aspire documentation](/dotnet/aspire/).
+For more information, see the [Aspire documentation](https://aspire.dev/).

@@ -316,18 +316,18 @@ To configure Redis as the default grain storage provider, use <xref:Orleans.Host
 
 The <xref:Orleans.Persistence.RedisStorageOptions> class provides the following configuration options:
 
-| Property | Type | Description |
-|----------|------|-------------|
+| Property               | Type                   | Description                                             |
+|------------------------|------------------------|---------------------------------------------------------|
 | `ConfigurationOptions` | `ConfigurationOptions` | The StackExchange.Redis client configuration. Required. |
-| `DeleteStateOnClear` | `bool` | Whether to delete state from Redis when <xref:Orleans.Grain`1.ClearStateAsync*> is called. Default is `false`. |
-| `EntryExpiry` | `TimeSpan?` | Optional expiration time for entries. Only set this for ephemeral environments like testing, as it can cause duplicate activations. Default is `null`. |
+| `DeleteStateOnClear`   | `bool`                 | Whether to delete state from Redis when <xref:Orleans.Grain`1.ClearStateAsync*> is called. Default is `false`. |
+| `EntryExpiry`          | `TimeSpan?`            | Optional expiration time for entries. Only set this for ephemeral environments like testing, as it can cause duplicate activations. Default is `null`. |
 | `GrainStorageSerializer` | `IGrainStorageSerializer` | The serializer to use for grain state. Default uses the Orleans serializer. |
-| `CreateMultiplexer` | `Func<RedisStorageOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
-| `GetStorageKey` | `Func<string, GrainId, RedisKey>` | Custom function to generate the Redis key for a grain. Default format is `{ServiceId}/state/{grainId}/{grainType}`. |
+| `CreateMultiplexer`    | `Func<RedisStorageOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
+| `GetStorageKey`        | `Func<string, GrainId, RedisKey>` | Custom function to generate the Redis key for a grain. Default format is `{ServiceId}/state/{grainId}/{grainType}`. |
 
 ### Aspire integration
 
-When using [Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource.
+When using [Aspire](https://aspire.dev/get-started/what-is-aspire/), you can integrate Redis grain storage with the Aspire-managed Redis resource.
 
 ```csharp
 // In your AppHost project
@@ -371,18 +371,18 @@ To configure Cosmos DB as the default grain storage provider, use <xref:Orleans.
 
 The <xref:Orleans.Persistence.Cosmos.CosmosGrainStorageOptions> class provides the following configuration options:
 
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| `DatabaseName` | `string` | `"Orleans"` | The name of the Cosmos DB database. |
-| `ContainerName` | `string` | `"OrleansStorage"` | The name of the container for grain state data. |
-| `IsResourceCreationEnabled` | `bool` | `false` | When `true`, automatically creates the database and container if they don't exist. |
-| `DeleteStateOnClear` | `bool` | `false` | Whether to delete state from Cosmos DB when <xref:Orleans.Grain`1.ClearStateAsync*> is called. |
-| `InitStage` | `int` | `ServiceLifecycleStage.ApplicationServices` | The stage of silo lifecycle when storage is initialized. |
-| `StateFieldsToIndex` | `List<string>` | Empty | JSON paths of state properties to include in the Cosmos DB index. |
-| `PartitionKeyPath` | `string` | `"/PartitionKey"` | The JSON path for the partition key in the container. |
-| `DatabaseThroughput` | `int?` | `null` | The provisioned throughput for the database. If `null`, uses serverless mode. |
-| `ContainerThroughputProperties` | `ThroughputProperties?` | `null` | The throughput properties for the container. |
-| `ClientOptions` | `CosmosClientOptions` | `new()` | The options passed to the Cosmos DB client. |
+| Property                    | Type     | Default            | Description                                                                        |
+|-----------------------------|----------|--------------------|------------------------------------------------------------------------------------|
+| `DatabaseName`              | `string` | `"Orleans"`        | The name of the Cosmos DB database.                                                |
+| `ContainerName`             | `string` | `"OrleansStorage"` | The name of the container for grain state data.                                    |
+| `IsResourceCreationEnabled` | `bool`   | `false`            | When `true`, automatically creates the database and container if they don't exist. |
+| `DeleteStateOnClear`        | `bool`   | `false`            | Whether to delete state from Cosmos DB when <xref:Orleans.Grain`1.ClearStateAsync*> is called. |
+| `InitStage`                 | `int`    | `ServiceLifecycleStage.ApplicationServices` | The stage of silo lifecycle when storage is initialized.  |
+| `StateFieldsToIndex`        | `List<string>` | Empty        | JSON paths of state properties to include in the Cosmos DB index.                  |
+| `PartitionKeyPath`          | `string` | `"/PartitionKey"`  | The JSON path for the partition key in the container.                              |
+| `DatabaseThroughput`        | `int?`   | `null`             | The provisioned throughput for the database. If `null`, uses serverless mode.      |
+| `ContainerThroughputProperties` | `ThroughputProperties?` | `null` | The throughput properties for the container.                                |
+| `ClientOptions`             | `CosmosClientOptions` | `new()` | The options passed to the Cosmos DB client.                                      |
 
 ### Custom partition key provider
 

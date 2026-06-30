@@ -10,7 +10,7 @@ zone_pivot_groups: orleans-version
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-[Aspire](/dotnet/aspire/get-started/aspire-overview) provides a streamlined approach to building cloud-native applications with built-in support for Orleans. Starting with Orleans 8.0, you can use Aspire to orchestrate your Orleans cluster, manage backing resources (like Redis or Azure Storage), and automatically configure service discovery, observability, and health checks.
+[Aspire](https://aspire.dev/get-started/what-is-aspire/) provides a streamlined approach to building cloud-native applications with built-in support for Orleans. Starting with Orleans 8.0, you can use Aspire to orchestrate your Orleans cluster, manage backing resources (like Redis or Azure Storage), and automatically configure service discovery, observability, and health checks.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Orleans integration with Aspire uses the `Aspire.Hosting.Orleans` package in you
 Before using Orleans with Aspire, ensure you have:
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [Aspire workload](/dotnet/aspire/fundamentals/setup-tooling)
+- [Aspire CLI](https://aspire.dev/get-started/install-cli/)
 - An IDE with Aspire support (Visual Studio 2022 17.9+, VS Code with C# Dev Kit, or JetBrains Rider)
 
 ## Required packages
@@ -189,8 +189,8 @@ Aspire automatically configures health check endpoints. You can add Orleans-spec
 
 ## See also
 
-- [Aspire overview](/dotnet/aspire/get-started/aspire-overview)
-- [Aspire setup and tooling](/dotnet/aspire/fundamentals/setup-tooling)
+- [Aspire overview](https://aspire.dev/get-started/what-is-aspire/)
+- [Aspire setup and tooling](https://aspire.dev/get-started/install-cli/)
 - [Orleans configuration guide](configuration-guide/index.md)
 - [Orleans Redis providers](../grains/grain-persistence/index.md#redis-grain-persistence)
 - [Orleans Azure Storage providers](../grains/grain-persistence/azure-storage.md)

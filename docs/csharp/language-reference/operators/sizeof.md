@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # sizeof operator - determine the memory needs for a given type
 
-The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md) whose size isn't platform-dependent, or an [enumeration type](../builtin-types/enum.md). The size of these types is a compile-time constant, so `sizeof` doesn't require an unsafe context.
+The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md) whose size isn't platform-dependent, or an [enumeration type](../builtin-types/enum.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

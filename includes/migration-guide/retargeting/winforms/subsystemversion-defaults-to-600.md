@@ -24,8 +24,8 @@ You can also use the [SubsystemVersion compiler option for C#](/dotnet/csharp/la
 Review your code that sizes or positions Windows Forms UI with <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType> values or other `GetSystemMetrics`-based values.
 
 | Name    | Value       |
-| ------- | ----------- |
-| Scope   | Minor        |
+|:--------|:------------|
+| Scope   | Minor       |
 | Version | 4.5         |
 | Type    | Retargeting |
 

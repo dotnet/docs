@@ -76,6 +76,9 @@ TestContext.Properties["MyKey"] = "MyValue";
 string value = TestContext.Properties["MyKey"]?.ToString();
 ```
 
+> [!NOTE]
+> Starting with MSTest 4.3, custom properties added to `TestContext.Properties` in `[AssemblyInitialize]` flow to every class and test in the assembly, and properties added in `[ClassInitialize]` flow to every test in that class. This lets fixtures publish shared context that test methods can read.
+
 ### Associate data to a test
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile(System.String)?displayProperty=nameWithType> method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (for example, log files, screenshots, or data files) that you want to attach to the test results.

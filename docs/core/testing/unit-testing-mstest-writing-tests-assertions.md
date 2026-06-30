@@ -69,13 +69,23 @@ public async Task AssertExamples()
 
 ### Available APIs
 
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AddValueFormatter*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreAllDistinct*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreAllNotNull*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreAllOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEquivalent*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEquivalent*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSequenceEqual*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSequenceEqual*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Contains*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsAll*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsSingle*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotContain*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotContainAll*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotEndWith*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotMatchRegex*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotStartWith*?displayProperty=nameWithType>
@@ -103,6 +113,27 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync*?displayProperty=nameWithType>
+
+### New collection and equivalence assertions in MSTest 4.3
+
+> [!NOTE]
+> The following assertion methods were introduced in MSTest 4.3.0.
+
+- `Assert.AreSequenceEqual` / `Assert.AreNotSequenceEqual` — element-wise sequence comparison. Pass `SequenceOrder.InAnyOrder` to ignore element order.
+- `Assert.AreEquivalent` / `Assert.AreNotEquivalent` — deep structural comparison of two objects or collections.
+- `Assert.ContainsAll` / `Assert.DoesNotContainAll` — assert that a collection contains (or doesn't contain) every expected element.
+- `Assert.AreAllNotNull` — assert that every element of a collection is non-`null`.
+- `Assert.AreAllDistinct` — assert that all elements of a collection are distinct.
+- `Assert.AreAllOfType` — assert that every element of a collection is of an expected type.
+
+When comparing collections, prefer these methods over `Assert.AreEqual`, which compares references rather than elements.
+
+MSTest 4.3 also adds:
+
+- `Assert.AddValueFormatter` to customize how values are rendered in assertion failure messages.
+- <xref:System.Span`1> and <xref:System.Memory`1> overloads for `Assert.HasCount`.
+- Structured assertion failure messages for `Assert.IsTrue`, `Assert.IsFalse`, `Assert.IsNull`, and `Assert.IsNotNull` that include the evaluated expression.
+- Interpolated-string message overloads for the async `Assert.ThrowsAsync`/`Assert.ThrowsExactlyAsync` methods, and rejection of `ValueTask<TResult>`-returning delegates that would otherwise not be awaited.
 
 ### Soft assertions with `Assert.Scope()`
 

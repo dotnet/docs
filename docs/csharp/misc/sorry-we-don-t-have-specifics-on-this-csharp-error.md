@@ -220,12 +220,10 @@ f1_keywords:
   - "CS8360"
   - "CS8362"
   # C# 7.3 diagnostics
-  - "CS8372"
   - "CS8378"
   - "CS8381"
   - "CS8383"
   - "CS8384"
-  - "CS8385"
   # C# 8.0 diagnostics
   ## Async enumerables
   - "CS8412"
@@ -272,17 +270,7 @@ f1_keywords:
   - "CS9357"
   - "CS9358"
   - "CS9359"
-# unsafe evolution
-  - "CS9360"
-  - "CS9361"
-  - "CS9362"
-  - "CS9363"
-  - "CS9364"
-  - "CS9365"
-  - "CS9366"
 # More unions:
-  - "CS9367"
-  - "CS9368"
   - "CS9369"
   - "CS9370"
   - "CS9371"
@@ -290,13 +278,9 @@ f1_keywords:
   - "CS9373"
   - "CS9374"
   - "CS9375"
-# More unsafe
-  - "CS9376"
-  - "CS9377"
 # Shebang
   - "CS9378"
-# More unsafe
-  - "CS9379"
+# More union / closed
   - "CS9380"
   - "CS9381"
   - "CS9382"

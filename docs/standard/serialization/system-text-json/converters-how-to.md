@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 10/22/2025
+ms.date: 03/23/2026
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -49,6 +49,8 @@ Some examples of types that can be handled by the basic pattern include:
 
 The basic pattern creates a class that can handle one type. The factory pattern creates a class that determines, at runtime, which specific type is required and dynamically creates the appropriate converter.
 
+Starting in .NET 11, you can also use open generic converters directly with `[JsonConverter]` on a generic type, without the factory pattern. For more information, see [Use open generic converters with \[JsonConverter\]](#use-open-generic-converters-with-jsonconverter).
+
 ## Sample basic converter
 
 The following sample is a converter that overrides default serialization for an existing data type. The converter uses mm/dd/yyyy format for `DateTimeOffset` properties.
@@ -81,9 +83,73 @@ The following steps explain how to create a converter by following the factory p
 * Override the `CreateConverter` method to return an instance of a converter class that will handle the type-to-convert that is provided at runtime.
 * Create the converter class that the `CreateConverter` method instantiates.
 
-The factory pattern is required for open generics because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
+The factory pattern is required for open generics in .NET 10 and earlier because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle. Starting in .NET 11, you can use open generic converters directly with `[JsonConverter]` for simpler cases. For more information, see [Use open generic converters with \[JsonConverter\]](#use-open-generic-converters-with-jsonconverter).
 
 The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes.
+
+## Use open generic converters with [JsonConverter]
+
+Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonConverterAttribute> supports open generic converter types on generic types when the total type parameter arity matches. This feature lets you apply a `[JsonConverter]` attribute directly using an open generic converter type (for example, `typeof(OptionConverter<>)`) without implementing a <xref:System.Text.Json.Serialization.JsonConverterFactory>. The serializer automatically constructs the closed generic converter at runtime.
+
+### Define the generic type
+
+Annotate your generic type with `[JsonConverter]`, specifying the open generic converter type. The type parameter count on the converter must match the target type:
+
+:::code language="csharp" source="snippets/converters-how-to/csharp/OpenGenericConverter.cs" id="OptionType":::
+
+### Implement the converter
+
+Derive your converter from `JsonConverter<T>` using the same generic type parameters as the target type:
+
+:::code language="csharp" source="snippets/converters-how-to/csharp/OpenGenericConverter.cs" id="OptionConverter":::
+
+### Serialize and deserialize
+
+Use `Option<T>` values directly&mdash;no additional configuration is required:
+
+```csharp
+string json = JsonSerializer.Serialize(new Option<int>(42));
+Console.WriteLine(json);
+// Output: 42
+
+Option<int> option = JsonSerializer.Deserialize<Option<int>>(json);
+Console.WriteLine(option.Value);
+// Output: 42
+```
+
+The converter also works on properties of types that use `Option<T>`:
+
+:::code language="csharp" source="snippets/converters-how-to/csharp/OpenGenericConverter.cs" id="Usage":::
+
+### How it works
+
+When the serializer encounters a type annotated with an open generic converter (such as `[JsonConverter(typeof(OptionConverter<>))]`), it:
+
+1. Detects that the converter type is an open generic type.
+1. Verifies that the total number of generic type parameters on the converter matches the target type.
+1. Constructs the closed generic converter (for example, `OptionConverter<int>`) using the target type's type arguments.
+
+This automatic construction also works with:
+
+* **Multiple type parameters**: For example, `[JsonConverter(typeof(ResultConverter<,>))]` on `Result<T, TError>`.
+* **Nested generic converters**: Converter types that are nested within other generic types.
+* **Property-level attributes**: `[JsonConverter(typeof(OptionConverter<>))]` applied to individual properties.
+
+### When to use the factory pattern versus open generic converters
+
+Use open generic converters with `[JsonConverter]` when:
+
+* The converter has the same number of type parameters as the type it converts.
+* You want the simplest possible registration with no factory boilerplate.
+
+Continue to use <xref:System.Text.Json.Serialization.JsonConverterFactory> when:
+
+* The converter needs to handle types with varying generic arity (for example, a single factory that creates converters for both `Result<T>` and `Result<T, TError>`).
+* You need custom logic in `CanConvert` to determine which types the converter supports.
+* You register the converter through <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> instead of the `[JsonConverter]` attribute.
+
+> [!NOTE]
+> If the type parameter count on the converter doesn't match the target type, an <xref:System.InvalidOperationException> is thrown at runtime.
 
 ## The use of `Utf8JsonReader` in the `Read` method
 

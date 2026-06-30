@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/docs/csharp/how-to/compare-strings.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/compare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/csharp/how-to/concatenate-multiple-strings.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/concatenate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/csharp/how-to/modify-string-contents.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/modify",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/csharp/tutorials/string-interpolation.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/csharp/fundamentals/null-safety/migration-strategies.md",
       "redirect_url": "/dotnet/csharp/advanced-topics/update-applications/nullable-migration-strategies"
     },
@@ -365,6 +385,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
     },
     {
+      "source_path_from_root": "/docs/csharp/misc/cs1664.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/unsafe-code-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs1668.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/invalid-build-command-line"
     },
@@ -455,6 +479,10 @@
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0703.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/generic-type-parameters-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs8500.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/unsafe-code-errors"
     },
     {
       "source_path_from_root": "/redirections/proposals/csharp-7.0/binary-literals.md",
@@ -5087,11 +5115,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-compare-strings.md",
-      "redirect_url": "/dotnet/csharp/how-to/compare-strings"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/compare"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
-      "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/concatenate"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
@@ -5107,7 +5135,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-modify-string-contents.md",
-      "redirect_url": "/dotnet/csharp/how-to/modify-string-contents"
+      "redirect_url": "/dotnet/csharp/fundamentals/strings/common-tasks/modify"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
@@ -5330,12 +5358,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings-local.md",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings.yml",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation",
-      "redirect_document_id": true
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/quick-starts/introduction-to-classes.md",
@@ -5474,11 +5501,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings-local.md",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings.yml",
-      "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/string-interpolation"
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/patterns-objects.md",

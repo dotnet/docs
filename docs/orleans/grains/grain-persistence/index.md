@@ -325,9 +325,9 @@ The <xref:Orleans.Persistence.RedisStorageOptions> class provides the following 
 | `CreateMultiplexer` | `Func<RedisStorageOptions, Task<IConnectionMultiplexer>>` | Custom factory for creating the Redis connection multiplexer. |
 | `GetStorageKey` | `Func<string, GrainId, RedisKey>` | Custom function to generate the Redis key for a grain. Default format is `{ServiceId}/state/{grainId}/{grainType}`. |
 
-### .NET Aspire integration
+### Aspire integration
 
-When using [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource.
+When using [Aspire](/dotnet/aspire/get-started/aspire-overview), you can integrate Redis grain storage with the Aspire-managed Redis resource.
 
 ```csharp
 // In your AppHost project

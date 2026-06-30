@@ -48,7 +48,7 @@ To begin, make sure you have [Docker Desktop for Windows](https://docs.docker.co
 
 [Get started with Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/)
 
-In addition, you need Visual Studio 2022 or later with the **.ASP.NET and web development** workload installed, as shown in Figure 5-2.
+In addition, you need Visual Studio 2022 or later with the **ASP.NET and web development** workload installed, as shown in Figure 5-2.
 
 ![Screenshot of the .NET Core cross-platform development selection.](./media/docker-app-development-workflow/dotnet-core-cross-platform-development.png)
 

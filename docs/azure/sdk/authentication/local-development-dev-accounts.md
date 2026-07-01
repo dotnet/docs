@@ -2,7 +2,8 @@
 title: Authenticate .NET apps to Azure using developer accounts
 description: Learn how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
 ms.topic: how-to
-ms.date: 11/25/2025
+ms.date: 06/12/2026
+ai-usage: ai-assisted
 ms.custom:
   - devx-track-dotnet
   - engagement-fy23
@@ -71,11 +72,14 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 ## Authenticate to Azure services from your app
 
-The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides implementations of <xref:Azure.Core.TokenCredential> that support various scenarios and Microsoft Entra authentication flows. The steps ahead demonstrate how to use <xref:Azure.Identity.DefaultAzureCredential> or a specific development tool credential when working with user accounts locally.
+The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides implementations of <xref:Azure.Core.TokenCredential> that support various scenarios and Microsoft Entra authentication flows. The Azure SDK for .NET offers two patterns for registering Azure service clients with dependency injection:
 
-### Implement the code
+- The **Microsoft.Extensions.Azure** pattern is stable. You register clients with `AddAzureClients` and pass a `TokenCredential` to `UseCredential` in code. Use this pattern for production apps today.
+- The **Azure.Identity configuration and DI** pattern is in preview. You bind clients and their credentials to a section of `appsettings.json`, and no `TokenCredential` instance is constructed in code.
 
-Complete the following steps:
+Select a tab to see the steps for each pattern.
+
+### [Microsoft.Extensions.Azure (stable)](#tab/mea)
 
 1. Add references to the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) packages in your project:
 
@@ -109,3 +113,57 @@ Complete the following steps:
 
     > [!TIP]
     > When your team uses multiple development tools to authenticate with Azure, prefer a local development-optimized instance of `DefaultAzureCredential` over tool-specific credentials.
+
+### [Azure.Identity configuration and DI (preview)](#tab/config-di)
+
+> [!IMPORTANT]
+> The configuration and dependency injection APIs shown in this tab are in public preview and emit diagnostic ID `SCME0002`. Service-specific registration extensions (for example, `AddSecretClient`) are rolling out incrementally across the Azure SDK client libraries. To use these APIs today, install a prerelease of the relevant client library and suppress `SCME0002` inline at each call site, so the diagnostic still surfaces for any future preview API you adopt:
+>
+> ```csharp
+> #pragma warning disable SCME0002
+> builder.AddSecretClient("KeyVaultSecrets");
+> #pragma warning restore SCME0002
+> ```
+>
+> If you prefer a project-wide suppression instead, add `<NoWarn>$(NoWarn);SCME0002</NoWarn>` to a `PropertyGroup` in your project file.
+
+1. Add a reference to the preview release of the client library that ships the next-gen extensions. For example, to register a Key Vault `SecretClient`:
+
+    ```dotnetcli
+    dotnet package add Azure.Security.KeyVault.Secrets --prerelease
+    ```
+
+    The package pulls in a compatible prerelease of `Azure.Identity` transitively.
+
+1. In `appsettings.json`, add a section that describes the client endpoint and credential. The section name is arbitrary, and you reference it by name when you register the client:
+
+    ```json
+    "KeyVaultSecrets": {
+      "VaultUri": "https://<vault-name>.vault.azure.net",
+      "Credential": {
+        "CredentialSource": "AzureCliCredential"
+      }
+    }
+    ```
+
+    `CredentialSource` accepts any credential supported by Azure.Identity, including:
+
+    - `AzureCliCredential`
+    - `AzureDeveloperCliCredential`
+    - `AzurePowerShellCredential`
+    - `VisualStudioCredential`
+    - `VisualStudioCodeCredential`
+    - `EnvironmentCredential`
+    - `ManagedIdentityCredential`
+    - `InteractiveBrowserCredential`
+
+1. In `Program.cs`, add a `using` directive for the client namespace and register the client by binding it to the configuration section:
+
+    :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_NextGenAddSecretClient":::
+
+    The credential is resolved from the `Credential` subsection automatically. No `TokenCredential` instance is constructed in code.
+
+> [!NOTE]
+> Service-specific extensions like `AddSecretClient` ship with each client library as it adopts the pattern. For libraries that haven't shipped a dedicated extension yet, use the generic `builder.AddAzureClient<TClient, TSettings>("section-name")` method from `Azure.Identity` instead.
+
+---

@@ -4,6 +4,7 @@ description: Learn about the creation and lifecycle of test classes and test met
 author: marcelwgn
 ms.author: marcelwagner
 ms.date: 07/15/2025
+ai-usage: ai-assisted
 ---
 
 # MSTest lifecycle
@@ -72,6 +73,37 @@ public class AssemblyLifecycleExample
 >
 > - [MSTEST0012](mstest-analyzers/mstest0012.md) - validates `AssemblyInitialize` signature.
 > - [MSTEST0013](mstest-analyzers/mstest0013.md) - validates `AssemblyCleanup` signature.
+
+### Shared assembly fixtures with `AssemblyFixtureProvider`
+
+> [!NOTE]
+> The `AssemblyFixtureProviderAttribute` was introduced in MSTest 4.3.0.
+
+By default, `[AssemblyInitialize]` and `[AssemblyCleanup]` methods must be declared in the test assembly that uses them. The `AssemblyFixtureProviderAttribute` lets you declare those methods once in a shared library and have them discovered and run once per consuming test assembly. Apply the assembly-level attribute and point it at the type that hosts the `[AssemblyInitialize]`/`[AssemblyCleanup]` methods.
+
+```csharp
+// In a shared library.
+public static class SharedAssemblyFixtures
+{
+    [AssemblyInitialize]
+    public static void Init(TestContext context)
+    {
+        // Runs once per consuming test assembly.
+    }
+
+    [AssemblyCleanup]
+    public static void Cleanup()
+    {
+    }
+}
+```
+
+```csharp
+// In each test assembly that should run the shared fixtures.
+[assembly: AssemblyFixtureProvider(typeof(SharedAssemblyFixtures))]
+```
+
+The attribute allows multiple providers per assembly, so you can compose fixtures from several shared types.
 
 ## Class-level lifecycle
 

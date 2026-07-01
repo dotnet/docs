@@ -4,6 +4,7 @@ description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
 ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # MSTest usage rules
@@ -59,7 +60,9 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0061](mstest0061.md) | Use OSCondition attribute instead of runtime check. | Info | Yes |
 | [MSTEST0062](mstest0062.md) | Avoid out/ref test method parameters. | Warning | Yes |
 | [MSTEST0063](mstest0063.md) | Test class should have valid constructor. | Warning | No |
+| [MSTEST0069](mstest0069.md) | Inherited `[TestClass]` is ignored by the MSTest source generator. | Warning | No |
 | [MSTEST0070](mstest0070.md) | `[MemberCondition]` arguments should be valid. | Warning | No |
+| [MSTEST0071](mstest0071.md) | Test method should not specify a display name equal to its name. | Info | Yes |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 
@@ -73,6 +76,7 @@ Ensure your test classes, methods, and fixtures follow MSTest requirements:
 - **[MSTEST0003](mstest0003.md)**: Test method layout requirements (⚠️ escalated to Error).
 - **[MSTEST0030](mstest0030.md)**: Methods with [TestMethod] must be in a [TestClass].
 - **[MSTEST0063](mstest0063.md)**: Test class constructor validation.
+- **[MSTEST0069](mstest0069.md)**: Apply [TestClass] directly so source-generated discovery finds the class.
 
 ### Lifecycle methods
 
@@ -143,6 +147,7 @@ Rules for asynchronous test code:
 - **[MSTEST0060](mstest0060.md)**: Avoid duplicate TestMethodAttribute.
 - **[MSTEST0061](mstest0061.md)**: Use OSCondition attribute for platform checks.
 - **[MSTEST0070](mstest0070.md)**: `[MemberCondition]` arguments must reference valid members.
+- **[MSTEST0071](mstest0071.md)**: Don't set a display name equal to the test method name.
 
 ## Related documentation
 

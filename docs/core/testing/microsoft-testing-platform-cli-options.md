@@ -144,6 +144,13 @@ This article gives a central entry point for MTP command-line options.
 
   Filters the tests to run by using a tree filter expression. Tree filters offer richer matching than `--filter` for advanced scenarios.
 
+- **`--zero-tests-policy`**
+
+  Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds; with `strict`, it fails with exit code 8 (the behavior before 2.3.0).
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 2.3.0.
+
 ## Extension options by scenario
 
 Use the following table to find extension options quickly.

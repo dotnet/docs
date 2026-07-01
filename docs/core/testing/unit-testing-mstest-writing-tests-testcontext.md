@@ -4,6 +4,7 @@ description: Learn about the TestContext class of MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 11/12/2024
+ai-usage: ai-assisted
 ---
 
 # The `TestContext` class
@@ -75,6 +76,9 @@ You can use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Prope
 TestContext.Properties["MyKey"] = "MyValue";
 string value = TestContext.Properties["MyKey"]?.ToString();
 ```
+
+> [!NOTE]
+> Starting with MSTest 4.3, custom properties added to `TestContext.Properties` in `[AssemblyInitialize]` flow to every class and test in the assembly, and properties added in `[ClassInitialize]` flow to every test in that class. This lets fixtures publish shared context that test methods can read.
 
 ### Associate data to a test
 

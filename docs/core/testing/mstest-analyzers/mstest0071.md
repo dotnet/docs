@@ -29,7 +29,7 @@ dev_langs:
 
 ## Cause
 
-A test method sets a `DisplayName` (on `[TestMethod]` or `[DataRow]`) to a value that's identical to the test method name.
+A test method sets a `DisplayName` (on <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>) to a value that's identical to the test method name.
 
 ## Rule description
 

@@ -3,7 +3,8 @@ title: Test organization and metadata in MSTest
 description: Learn how to organize and categorize tests in MSTest using categories, properties, priorities, owners, and work item references.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # Test organization and metadata in MSTest
@@ -287,6 +288,9 @@ public class BugFixTests
 ### `GitHubWorkItemAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.GitHubWorkItemAttribute> links tests to GitHub issues.
+
+> [!NOTE]
+> The `GitHubWorkItemAttribute` was introduced in MSTest 3.8.
 
 ```csharp
 [TestClass]

@@ -3,7 +3,8 @@ title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest, including initialization and cleanup at assembly, class, and test levels.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 07/15/2025
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest lifecycle
@@ -118,6 +119,9 @@ public class ClassLifecycleExample
 - `ClassInitialize` requires one `TestContext` parameter
 - `ClassCleanup` accepts zero parameters, or one `TestContext` parameter (MSTest 3.8+)
 - Only one of each attribute allowed per class
+
+> [!NOTE]
+> Starting with MSTest 4.2, MSTest reports failures in `ClassCleanup` and `AssemblyCleanup` as a separate test result. The separate result makes cleanup failures easier to identify in Test Explorer and TRX reports.
 
 ### Inheritance behavior
 

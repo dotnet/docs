@@ -3,7 +3,8 @@ title: Test execution and control in MSTest
 description: Learn how to control test execution in MSTest with parallelization, threading, timeouts, retries, and conditional execution.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # Test execution and control in MSTest
@@ -361,7 +362,7 @@ public class RetryTests
 
 ### Custom retry implementations
 
-Create custom retry logic by inheriting from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryBaseAttribute>:
+Starting with MSTest 3.8, create custom retry logic by inheriting from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryBaseAttribute>:
 
 ```csharp
 public class CustomRetryAttribute : RetryBaseAttribute
@@ -387,6 +388,9 @@ Conditional execution attributes control whether tests run based on specific con
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionBaseAttribute> is the abstract base class for conditional execution. MSTest provides several built-in implementations.
 
 > [!NOTE]
+> The `ConditionBaseAttribute` was introduced in MSTest 3.8.
+
+> [!NOTE]
 > By default, condition attributes aren't inherited. Applying them to a base class doesn't affect derived classes. Custom condition attributes can override this behavior by redefining `AttributeUsage`, but this isn't recommended to maintain consistency with the built-in condition attributes.
 
 > [!TIP]
@@ -397,6 +401,9 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionBaseAttribute> i
 ### `OSConditionAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OSConditionAttribute> runs or skips tests based on the operating system. Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OperatingSystems> flags enum to specify which operating systems apply.
+
+> [!NOTE]
+> The `OSConditionAttribute` was introduced in MSTest 3.8.
 
 ```csharp
 [TestClass]
@@ -444,6 +451,9 @@ Combine operating systems with the bitwise OR operator (`|`).
 ### `CIConditionAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CIConditionAttribute> runs or skips tests based on whether they're executing in a continuous integration environment.
+
+> [!NOTE]
+> The `CIConditionAttribute` was introduced in MSTest 3.10.
 
 ```csharp
 [TestClass]

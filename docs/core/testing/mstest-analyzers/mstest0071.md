@@ -13,7 +13,6 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
-- VB
 ---
 # MSTEST0071: Test method should not specify a display name equal to its name
 

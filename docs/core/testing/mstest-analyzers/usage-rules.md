@@ -59,6 +59,10 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0061](mstest0061.md) | Use OSCondition attribute instead of runtime check. | Info | Yes |
 | [MSTEST0062](mstest0062.md) | Avoid out/ref test method parameters. | Warning | Yes |
 | [MSTEST0063](mstest0063.md) | Test class should have valid constructor. | Warning | No |
+| [MSTEST0064](mstest0064.md) | Prefer async assertion methods. | Info | No |
+| [MSTEST0065](mstest0065.md) | Avoid `Assert.AreEqual` on collection types. | Warning | No |
+| [MSTEST0067](mstest0067.md) | Avoid synchronously blocking calls in test code. | Info (disabled by default) | No |
+| [MSTEST0068](mstest0068.md) | Use `Assert` instead of `CollectionAssert`. | Info | Yes |
 | [MSTEST0070](mstest0070.md) | `[MemberCondition]` arguments should be valid. | Warning | No |
 
 \* Escalated to Error in `Recommended` and `All` modes.
@@ -113,6 +117,9 @@ Rules for correct and effective assertion usage:
 - **[MSTEST0051](mstest0051.md)**: Assert.Throws should test single statement.
 - **[MSTEST0053](mstest0053.md)**: Use string interpolation instead of format parameters.
 - **[MSTEST0058](mstest0058.md)**: Don't put assertions in catch blocks.
+- **[MSTEST0064](mstest0064.md)**: Prefer async assertion methods over blocking on async code.
+- **[MSTEST0065](mstest0065.md)**: Avoid `Assert.AreEqual` on collection types.
+- **[MSTEST0068](mstest0068.md)**: Prefer `Assert` over `CollectionAssert`.
 
 ### TestContext usage
 
@@ -129,6 +136,7 @@ Proper usage of the TestContext object:
 Rules for asynchronous test code:
 
 - **[MSTEST0040](mstest0040.md)**: Avoid asserts in async void methods.
+- **[MSTEST0067](mstest0067.md)**: Avoid `Thread.Sleep`, `Task.Wait`, and other synchronously blocking calls in test code (opt-in).
 
 ### Test configuration
 

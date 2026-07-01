@@ -17,6 +17,7 @@ Suppression rules automatically suppress diagnostics from other analyzers (like 
 | [MSTEST0027](mstest0027.md) | Suppress async suffix for test methods. | VSTHRD200 |
 | [MSTEST0028](mstest0028.md) | Suppress async suffix for test fixture methods. | VSTHRD200 |
 | [MSTEST0033](mstest0033.md) | Suppress non-nullable reference not initialized. | CS8618 |
+| [MSTEST0047](mstest0047.md) | Suppress unused `TestContext` parameter on initialize and cleanup methods. | IDE0060 |
 
 ## How suppression rules work
 
@@ -62,6 +63,26 @@ public class MyTests
 }
 ```
 
+### IDE0060: Remove unused parameter
+
+**Suppressed by**: [MSTEST0047](mstest0047.md)
+
+**Why suppress**: <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>, `GlobalTestInitializeAttribute`, and `GlobalTestCleanupAttribute` methods are required by MSTest to declare a `TestContext` parameter even when the parameter isn't used. Without this suppression, IDE0060 produces noise that the user can't fix without breaking the test signature.
+
+**Example**:
+
+```csharp
+[TestClass]
+public class MyTests
+{
+    [ClassInitialize]
+    public static void ClassInit(TestContext context) // IDE0060 would warn without suppression
+    {
+        // Do work that doesn't need the context.
+    }
+}
+```
+
 ## Disable suppression rules
 
 If you prefer to see these warnings, disable the suppression rules in your `.editorconfig`:
@@ -71,6 +92,7 @@ If you prefer to see these warnings, disable the suppression rules in your `.edi
 dotnet_diagnostic.MSTEST0027.severity = none
 dotnet_diagnostic.MSTEST0028.severity = none
 dotnet_diagnostic.MSTEST0033.severity = none
+dotnet_diagnostic.MSTEST0047.severity = none
 ```
 
 ## Related documentation

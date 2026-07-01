@@ -270,26 +270,8 @@ f1_keywords:
   - "CS9357"
   - "CS9358"
   - "CS9359"
-# More unions:
-  - "CS9369"
-  - "CS9370"
-  - "CS9371"
-  - "CS9372"
-  - "CS9373"
-  - "CS9374"
-  - "CS9375"
 # Shebang
   - "CS9378"
-# More union / closed
-  - "CS9380"
-  - "CS9381"
-  - "CS9382"
-  - "CS9383"
-  - "CS9384"
-  # More unions:
-  - "CS9385"
-  - "CS9386"
-  - "CS9387"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

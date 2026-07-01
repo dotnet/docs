@@ -34,7 +34,7 @@ ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for union type and closed hierarchy declarations
 
-The C# compiler generates errors when you misuse [union types](../builtin-types/union.md) or closed type hierarchies. Union types represent a value that can be one of several *case types*, with implicit conversions and exhaustive pattern matching. Closed hierarchies restrict which types can derive from a base type. These diagnostics help you follow the rules for declaring and using union types and closed hierarchies.
+The C# compiler generates errors when you misuse [union types](../builtin-types/union.md) or closed type hierarchies. A union type represents a value that can be one of several *case types*, with implicit conversions and exhaustive pattern matching. Closed hierarchies restrict which types can derive from a base type. These diagnostics help you follow the rules for declaring and using union types and closed hierarchies.
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -96,7 +96,7 @@ To correct these errors, apply the following changes to your union member provid
 
 ## Closed hierarchy restrictions
 
-- **CS9380**: *Types and aliases cannot be named 'closed'.*
+- **CS9380**: *Types and aliases cannot be named `closed`.*
 - **CS9381**: *'type': a closed type cannot be sealed or static*
 - **CS9382**: *'type': cannot use a closed type 'type' from another assembly as a base type.*
 - **CS9383**: *'type': The type parameter 'parameter' must be referenced in the base type 'type' because the base type is closed.*

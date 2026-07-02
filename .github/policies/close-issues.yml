@@ -94,3 +94,7 @@ configuration:
                     pattern: '### Description[\n\r]+\[Skriv din feedback här\][\n\r]+###'
             then:
               - addLabel: 'needs-more-info'
+              - removeLabel: ':watch: Not Triaged'
+              - addReply:
+                  reply: >-
+                    This issue appears to have an empty description. Please edit the issue to add a description so we can investigate; if the editor keeps resetting, add the details as a comment.

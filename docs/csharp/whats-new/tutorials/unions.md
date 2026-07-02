@@ -123,7 +123,7 @@ The `HasValue` property and the `TryGetValue` overloads let the compiler match e
 
 The console app drives each union. Replace the contents of `Program.cs`:
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.App/Program.cs" id="ProgramMain":::
+:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.App/Program.cs" id="UnionMain":::
 
 Run the app:
 

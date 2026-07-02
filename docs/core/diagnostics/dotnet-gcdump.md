@@ -1,8 +1,9 @@
 ---
 title: dotnet-gcdump diagnostic tool - .NET CLI
 description: Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
-ms.date: 06/03/2025
+ms.date: 07/02/2026
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 # Heap analysis tool (dotnet-gcdump)
 
@@ -46,6 +47,9 @@ The `dotnet-gcdump` global tool collects GC (Garbage Collector) dumps of live .N
 - Analyzing roots of objects (answering questions like, "what still has a reference to this type?").
 - Collecting general statistics about the counts of objects on the heap.
 
+> [!NOTE]
+> `dotnet-gcdump collect` and `report` default to non-lossy (`Block`) buffering, which produces complete dumps on large heaps. `Block` requires a .NET 11+ target runtime; on older runtimes the tool automatically falls back to the lossy buffer.
+
 ### View the GC dump captured from dotnet-gcdump
 
 On Windows, `.gcdump` files can be viewed in [PerfView](https://github.com/microsoft/perfview) for analysis or in Visual Studio. Currently, there is no way of opening a `.gcdump` on non-Windows platforms.
@@ -80,7 +84,7 @@ Collects a GC dump from a currently running process.
 ### Synopsis
 
 ```console
-dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-file-path>] [-v|--verbose] [-t|--timeout <timeout>] [-n|--name <name>] [--dsrouter <ios|ios-sim|android|android-emu>]
+dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-file-path>] [-v|--verbose] [-t|--timeout <timeout>] [-n|--name <name>] [--dsrouter <ios|ios-sim|android|android-emu>] [--buffering-mode <Drop|Block>]
 ```
 
 ### Options
@@ -130,6 +134,13 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 - **`--dsrouter <ios|ios-sim|android|android-emu>`**
 
   Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
+
+- **`--buffering-mode <Drop|Block>`**
+
+  Sets how the runtime buffers events while the GC dump is collected. Accepts `0`/`Drop` or `1`/`Block` (case-insensitive), and defaults to `Block`.
+
+  - `0` / `Drop`: the lossy circular buffer. Events are dropped when the buffer overflows.
+  - `1` / `Block` (default): non-lossy collection. The runtime blocks event producers until the buffer drains instead of overwriting events when the buffer fills, which produces a complete GC dump on large heaps. `Block` requires a .NET 11+ target runtime and can make collection slower because the target application pauses more while the GC dump is collected. On older runtimes, the tool automatically falls back to `Drop` (lossy).
 
 > [!NOTE]
 > To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
@@ -198,7 +209,7 @@ Generate a report from a previously generated GC dump or from a running process,
 ### Synopsis
 
 ```console
-dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <HeapStat>]
+dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <HeapStat>] [--buffering-mode <Drop|Block>]
 ```
 
 ### Options
@@ -214,6 +225,13 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 - **`-t|--report-type <HeapStat>`**
 
   The type of report to generate. Available options: heapstat (default).
+
+- **`--buffering-mode <Drop|Block>`**
+
+  When you report from a running process with `--process-id`, sets how the runtime buffers events while the GC dump is collected. Accepts `0`/`Drop` or `1`/`Block` (case-insensitive), and defaults to `Block`. The option has no effect when you report from an existing `.gcdump` file.
+
+  - `0` / `Drop`: the lossy circular buffer. Events are dropped when the buffer overflows.
+  - `1` / `Block` (default): non-lossy collection. The runtime blocks event producers until the buffer drains instead of overwriting events when the buffer fills, which produces a complete report on large heaps. `Block` requires a .NET 11+ target runtime and can make collection slower because the target application pauses more while the GC dump is collected. On older runtimes, the tool automatically falls back to `Drop` (lossy).
 
 ### Examples
 
@@ -253,7 +271,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - `dotnet-gcdump` is unable to generate a `.gcdump` file due to missing information, for example, **[Error] Exception during gcdump: System.ApplicationException: ETL file shows the start of a heap dump but not its completion.**. Or, the `.gcdump` file doesn't include the entire heap.
 
-   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. If the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace may be dropped. In this case, to diagnose issues with the heap, it's recommended to collect a dump of the process.
+   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. If the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace might be dropped. On a .NET 11+ target runtime, the default non-lossy `--buffering-mode Block` prevents this by blocking event producers instead of dropping events. On older runtimes, where the tool falls back to the lossy buffer, or as an alternative, collect a dump of the process to diagnose issues with the heap.
 
 - `dotnet-gcdump` appears to cause an Out Of Memory issue in a memory constrained environment.
 

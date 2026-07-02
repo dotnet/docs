@@ -5,7 +5,7 @@ author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
-ms.date: 07/02s/2026
+ms.date: 07/02/2026
 ai-usage: ai-assisted
 #customer intent: As a C# developer, I model a value that can be one of several types so the compiler enforces that I handle every case.
 ---

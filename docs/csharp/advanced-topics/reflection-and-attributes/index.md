@@ -133,7 +133,7 @@ The following table shows the list of possible `target` values.
 | `module`     | Current assembly module                                                |
 | `field`      | Field in a class or a struct                                           |
 | `event`      | Event                                                                  |
-| `method`     | Method, constructor (including a primary constructor), or `get` and `set` property accessors              |
+| `method`     | Method, constructor (including a primary constructor), or `get` and `set` property accessors |
 | `param`      | Method parameters or `set` property accessor parameters                |
 | `property`   | Property                                                               |
 | `return`     | Return value of a method, property indexer, or `get` property accessor |

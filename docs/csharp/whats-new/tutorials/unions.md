@@ -5,13 +5,13 @@ author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
-ms.date: 02/16/2026
+ms.date: 07/02s/2026
 ai-usage: ai-assisted
 #customer intent: As a C# developer, I model a value that can be one of several types so the compiler enforces that I handle every case.
 ---
 # Tutorial: Explore C# union types
 
-A *union type* holds a single value that's one of a fixed set of types. Unions are useful when a value is conceptually "one of these," such as a sensor reading that's a number, a switch state, or a status message. Because the set of cases is fixed, the compiler can verify that you handle every case when you read the value.
+A *union type* holds a single value that's one of a fixed set of types. Those types typically aren't related by inheritance, so a union lets you group unrelated types without forcing them into a common base class or interface. Unions are useful when a value is conceptually "one of these," such as a sensor reading that's a number, a switch state, or a status message. Because the set of cases is fixed, the compiler can verify that you handle every case when you read the value.
 
 In this tutorial, you build the readings layer of a smart-home telemetry monitor. You declare union types for sensor data, you replace a hand-rolled result type with a union, and you create a custom union for performance-sensitive code.
 
@@ -28,7 +28,7 @@ In this tutorial, you:
 
 This tutorial uses preview language features. You need an SDK that supports union types and a language version set to `preview`.
 
-- The .NET SDK that includes the union types preview feature. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet).
+- The .NET 11 SDK that includes the union types preview feature. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet).
 - An editor such as Visual Studio or Visual Studio Code with the C# Dev Kit.
 
 > [!IMPORTANT]
@@ -58,59 +58,66 @@ You build a class library, `SmartHome.Core`, that holds the union types, and a c
 
 ## Declare a union type
 
-A *union declaration* lists the case types in parentheses. The following declaration says a `Reading` holds a `double`, a `bool`, or a `string`:
+Start with the raw sensor data. A reading arrives as a number, a switch state, or a status message, so you model it as a union of those three types.
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Readings.cs" id="ReadingUnion":::
+1. In `SmartHome.Core`, add a file named `Readings.cs` and declare the `Reading` union. A *union declaration* lists the case types in parentheses:
 
-The `string?` case is nullable, so the contents of a `Reading` can be null. The compiler treats null as a distinct case you must handle.
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Readings.cs" id="ReadingUnion":::
 
-To read a union, switch over the case types. Each type pattern applies to the union's *contents*, not to the `Reading` value:
+1. In the same file, add a method that reads a `Reading` by switching over its case types:
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Readings.cs" id="ReadingConsume":::
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Readings.cs" id="ReadingConsume":::
 
-The switch is exhaustive. Because `string?` is nullable, the compiler requires the `null` arm. If you remove any arm, the compiler reports that a case isn't covered. That guarantee is the central benefit of a union: when you add a case type later, every switch that reads the union flags the missing arm.
+Each type pattern applies to the union's *contents*, not to the `Reading` instance, because most patterns unwrap the union. The `string?` case is nullable, so the compiler treats null as a distinct case and requires the `null` arm. The switch is exhaustive: if you remove any arm, the compiler reports that a case isn't covered. That guarantee is one benefit of a union. When you add a case type later, every switch that reads the union flags the missing arm. For more information, see [Union exhaustiveness](../../language-reference/builtin-types/union.md#union-exhaustiveness) and [Union patterns](../../language-reference/operators/patterns.md#union-patterns).
 
 ## Migrate a result type to a generic union
 
-Unions work well with generics. A common pattern is a result type that holds either a success value or an error. Many codebases model that with a class that exposes a success flag and two fields:
+When a sensor read can fail, you need a type that carries either a value or an error. Many codebases model that type with a class that exposes a success flag and two fields. Replace that class with a generic union.
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultBefore":::
+1. In `SmartHome.Core`, add a file named `Result.cs` with the hand-rolled result class that the migration replaces:
 
-Nothing stops a caller from reading `Value` on a failure or `Error` on a success. A generic union expresses the same intent and removes the invalid states. A `Result<T>` holds either a `T` or an `Exception`:
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultBefore":::
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultUnion":::
+1. Replace that class with a generic union. A `Result<T>` holds either a `T` or an `Exception`:
 
-To read the result, switch over the case types. The compiler verifies that you handle the value, the error, and null:
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultUnion":::
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultConsume":::
+1. Add a method that reads the result by switching over its case types:
 
-A value converts to the union implicitly, so you assign a `T` or an `Exception` directly to a `Result<T>`.
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultConsume":::
+
+The original class lets a caller incorrectly read `Value` on a failure or `Error` on a success. The union removes those invalid states: a `Result<T>` is either a `T` that holds the successful result or an `Exception` that explains why the operation failed. Each case converts to the union implicitly, so you assign an instance of `T` or an instance of `Exception` directly to a `Result<T>`. When you read the result, a switch verifies that you handle the success value, the failure, and null. For more information, see [Union declarations](../../language-reference/builtin-types/union.md#union-declarations) and [Union conversions](../../language-reference/builtin-types/union.md#union-conversions).
 
 ## Reuse a generic union across numeric types
 
-A generic union pays off when you reuse it across several closed-over types. Sensors report at different resolutions: a contact sensor uses a `byte`, a position sensor uses a `short`, and a counter uses an `int`. A single generic union models a sample from any of them. A `Sample<T>` holds either an in-range reading of type `T` or a `Saturated` marker for a sensor that railed:
+Sensors report at different resolutions: a contact sensor uses a `byte`, a position sensor uses a `short`, and a counter uses an `int`. Rather than write a union per type, write one generic union and instantiate it with each numeric type.
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sample.cs" id="SampleUnion":::
+1. In `SmartHome.Core`, add a file named `Sample.cs` and declare the `Sample<T>` union. It holds either an in-range reading of type `T` or a `Saturated` marker for a sensor that railed. Give the union a body that adds an `InRange` property:
 
-The `where T : struct, INumber<T>` constraint keeps `T` a non-nullable numeric value type. Because neither case type is nullable, a switch over the cases needs no null arm. A union declaration can also include a body, so `Sample<T>` adds an `InRange` property that patterns over `this` to report whether the sample carries a usable reading.
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sample.cs" id="SampleUnion":::
 
-The constraint lets a single method process every numeric width. To scale any reading to a fraction of full scale, the method relies on <xref:System.Numerics.INumber`1> arithmetic:
+1. Add a `Normalize` method that scales any reading to a fraction of full scale:
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sample.cs" id="SampleConsume":::
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sample.cs" id="SampleConsume":::
 
-Because `Saturated` is a value type and `T` is constrained to a value type, the switch over `T` and `Saturated` is exhaustive without a null arm. The same `Normalize` method works for a `Sample<byte>`, a `Sample<short>`, or a `Sample<int>`.
+The `where T : struct, INumber<T>` constraint keeps `T` a non-nullable numeric value type and lets a single method process every numeric width through <xref:System.Numerics.INumber`1> arithmetic. The same `Normalize` method works for a `Sample<byte>`, a `Sample<short>`, or a `Sample<int>`. Because `Saturated` is a value type and `T` is constrained to a value type, neither case is nullable, so the switch is exhaustive without a null arm. The `InRange` property shows that a union declaration can carry its own members and pattern over `this`. For more information, see [Union declarations](../../language-reference/builtin-types/union.md#union-declarations).
 
 ## Build a custom union that avoids boxing
 
-A union declaration lowers to a struct that stores its value in a single `object?` field, so a value-type case boxes when you store it. For performance-sensitive code, you can implement the union pattern by hand to store the value without boxing. Apply the `[Union]` attribute to the struct, and provide the access members the compiler uses to match each case:
+A union declaration is a struct that stores its value in a single `object?` field, so a value-type case boxes when you store it. For performance-sensitive code, implement the union pattern by hand to store the value without boxing.
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Quantity.cs" id="QuantityUnion":::
+1. In `SmartHome.Core`, add a file named `Quantity.cs`. Apply the `[Union]` attribute to a struct, and provide the access members the compiler uses to match each case:
 
-The `HasValue` property and the `TryGetValue` overloads let the compiler match each case without boxing. The struct stores the value in a `double` field and a discriminator, so neither the `int` case nor the `double` case allocates.
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Quantity.cs" id="QuantityUnion":::
 
-You consume a custom union the same way you consume a union declaration. The switch over `int` and `double` is exhaustive, and no null arm is needed because neither case type is nullable:
+1. Add a method that consumes the custom union the same way you consume a union declaration:
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Quantity.cs" id="QuantityConsume":::
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Quantity.cs" id="QuantityConsume":::
+
+The `HasValue` property and the `TryGetValue` overloads let the compiler match each case without boxing. The struct stores the value in a `double` field and a discriminator, so neither the `int` case nor the `double` case allocates. The switch over `int` and `double` is exhaustive, and no null arm is needed because neither case type is nullable. For more information, see [Custom union types](../../language-reference/builtin-types/union.md#custom-union-types).
+
+> [!NOTE]
+> Another scenario for a custom union is to add language support to an existing type that models a union. If your app has union-like types you created before C# had `union` types, apply the `Union` attribute and implement the `IUnion` interface on those types. The compiler then gives your custom type the same language support as a union declaration. For details, see the [Unions feature specification](~/_csharplang/proposals/unions.md).
 
 ## Run the sample
 
@@ -138,6 +145,16 @@ Sample: 100% (in range: False)
 3 items
 2.50 units
 ```
+
+## Summary
+
+You built the readings layer of a smart-home telemetry monitor and, in the process, worked through the core union scenarios. You:
+
+- Declared a `Reading` union and read it with an exhaustive switch, letting the compiler flag any case you don't handle.
+- Handled a nullable case, where the compiler requires a `null` arm.
+- Replaced a hand-rolled result type with a generic `Result<T>` union that models success or failure without invalid states.
+- Reused a generic `Sample<T>` union across several numeric types with a constraint, and added members to the union declaration.
+- Built a custom `[Union]` struct that avoids boxing for performance-sensitive code.
 
 ## Related content
 

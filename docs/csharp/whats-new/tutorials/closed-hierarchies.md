@@ -110,7 +110,7 @@ The switch over `Single<T>` and `Group<T>` is exhaustive because `Report<T>` is 
 
 The console app builds each sensor and report, then prints them through the exhaustive switches:
 
-:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.App/Program.cs" id="ProgramMain":::
+:::code language="csharp" source="snippets/telemetry-monitor/SmartHome.App/Program.cs" id="ClosedMain":::
 
 Run the app:
 

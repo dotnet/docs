@@ -9,7 +9,7 @@ namespace SmartHome.Core;
 // behaviors; the non-boxing access members (HasValue and TryGetValue) let the
 // compiler match each case without boxing.
 [Union]
-public readonly struct Quantity
+public readonly struct Quantity : IUnion
 {
     private readonly double _value;
     private readonly bool _isCount;
@@ -17,7 +17,7 @@ public readonly struct Quantity
     public Quantity(int count) => (_value, _isCount) = (count, true);
     public Quantity(double measure) => (_value, _isCount) = (measure, false);
 
-    public object Value => _isCount ? (int)_value : _value;
+    public object? Value => _isCount ? (int)_value : _value;
 
     public bool HasValue => true;
     public bool TryGetValue(out int value)

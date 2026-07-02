@@ -94,7 +94,3 @@ configuration:
                     pattern: '### Description[\n\r]+\[Skriv din feedback här\][\n\r]+###'
             then:
               - addLabel: 'needs-more-info'
-              - removeLabel: ':watch: Not Triaged'
-              - addReply:
-                  reply: This issue has been automatically closed due to an empty issue description from the original author. Feel free to reopen it if you have more information that can help us investigate the issue further.
-              - closeIssue

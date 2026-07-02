@@ -1,10 +1,11 @@
 ---
 title: Microsoft.Diagnostics.NETCore.Client API
 description: In this article, you'll learn about the Microsoft.Diagnostics.NETCore.Client APIs.
-ms.date: 12/08/2025
+ms.date: 07/02/2026
 author: tommcdon
 ms.author: tommcdon
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 
 # Microsoft.Diagnostics.NETCore.Client API
@@ -343,6 +344,13 @@ public sealed class EventPipeSessionConfiguration
         long rundownKeyword,
         bool requestStackwalk = true);
 
+    public EventPipeSessionConfiguration(
+        IEnumerable<EventPipeProvider> providers,
+        int circularBufferSizeMB,
+        long rundownKeyword,
+        bool requestStackwalk,
+        EventPipeBufferingMode bufferingMode);
+
     public bool RequestRundown { get; }
 
     public int CircularBufferSizeInMB { get; }
@@ -350,6 +358,8 @@ public sealed class EventPipeSessionConfiguration
     public bool RequestStackwalk { get; }
 
     public long RundownKeyword { get; }
+
+    public EventPipeBufferingMode BufferingMode { get; }
 
     public IReadOnlyCollection<EventPipeProvider> Providers { get; }
 }
@@ -362,6 +372,9 @@ Represents the configuration for an `EventPipeSession`.
 * `requestRundown` : If `true`, request rundown events from the runtime.
 * `requestStackwalk` : If `true`, record a stack trace for every emitted event.
 * `rundownKeyword` : The keyword mask used for rundown events.
+* `bufferingMode` : The [`EventPipeBufferingMode`](#eventpipebufferingmode-enum) for the session. Use `Block` to request non-lossy collection. Passing `Block` requires a .NET 11+ target runtime; on an older runtime, `StartEventPipeSession` throws [`UnknownCommandException`](#unknowncommandexception).
+
+The `BufferingMode` property returns the buffering mode for the session. The default value, `Drop`, keeps the runtime's lossy circular buffer.
 
 ## EventPipeProvider class
 
@@ -374,6 +387,13 @@ public class EventPipeProvider
         long keywords = 0,
         IDictionary<string, string> arguments = null)
 
+    public EventPipeProvider(
+        string name,
+        EventLevel eventLevel,
+        long keywords,
+        IDictionary<string, string> arguments,
+        EventPipeProviderEventFilter eventFilter)
+
     public string Name { get; }
 
     public EventLevel EventLevel { get; }
@@ -381,6 +401,8 @@ public class EventPipeProvider
     public long Keywords { get; }
 
     public IDictionary<string, string> Arguments { get; }
+
+    public EventPipeProviderEventFilter EventFilter { get; }
 
     public override string ToString();
 
@@ -402,9 +424,16 @@ public EventPipeProvider(
     EventLevel eventLevel,
     long keywords = 0,
     IDictionary<string, string> arguments = null)
+
+public EventPipeProvider(
+    string name,
+    EventLevel eventLevel,
+    long keywords,
+    IDictionary<string, string> arguments,
+    EventPipeProviderEventFilter eventFilter)
 ```
 
-Creates a new instance of `EventPipeProvider` with the given provider name, <xref:System.Diagnostics.Tracing.EventLevel>, keywords, and arguments.
+Creates a new instance of `EventPipeProvider` with the given provider name, <xref:System.Diagnostics.Tracing.EventLevel>, keywords, and arguments. The second overload also takes an [`EventPipeProviderEventFilter`](#eventpipeprovidereventfilter-class) that filters which Event IDs the runtime enables for the provider. When you set an event filter, the session requires a .NET 10+ target runtime.
 
 ### Name property
 
@@ -438,9 +467,63 @@ public IDictionary<string, string> Arguments { get; }
 
 Gets an `IDictionary` of key-value pair strings representing optional arguments to be passed to `EventSource` representing the given `EventPipeProvider`.
 
+### EventFilter property
+
+```csharp
+public EventPipeProviderEventFilter EventFilter { get; }
+```
+
+Gets the optional [`EventPipeProviderEventFilter`](#eventpipeprovidereventfilter-class) that the runtime applies to this provider's Event IDs after the keyword and level filter. When the value is `null`, the runtime enables every Event ID that the keyword and level filter allows.
+
 ### Remarks
 
 This class is immutable, because EventPipe does not allow a provider's configuration to be modified during an EventPipe session as of .NET Core 3.1.
+
+## EventPipeProviderEventFilter class
+
+```csharp
+public sealed class EventPipeProviderEventFilter
+{
+    public EventPipeProviderEventFilter(
+        bool enable,
+        IReadOnlyList<uint> eventIds);
+
+    public bool Enable { get; }
+
+    public IReadOnlyList<uint> EventIds { get; }
+}
+```
+
+Represents an optional per-provider filter on Event IDs. The runtime applies the filter after the keyword and level filter of the associated [`EventPipeProvider`](#eventpipeprovider-class). Event filters require a .NET 10+ target runtime.
+
+### Constructor
+
+```csharp
+public EventPipeProviderEventFilter(
+    bool enable,
+    IReadOnlyList<uint> eventIds);
+```
+
+Creates a new instance of `EventPipeProviderEventFilter`.
+
+* `enable` : If `true`, `eventIds` is an allow-list and the runtime enables only those Event IDs. If `false`, `eventIds` is a deny-list and the runtime enables every Event ID except those listed. An empty deny-list therefore enables all events.
+* `eventIds` : The Event IDs to enable or disable, as determined by `enable`.
+
+### Enable property
+
+```csharp
+public bool Enable { get; }
+```
+
+Gets a value that indicates whether [`EventIds`](#eventids-property) is an allow-list (`true`) or a deny-list (`false`).
+
+### EventIds property
+
+```csharp
+public IReadOnlyList<uint> EventIds { get; }
+```
+
+Gets the list of Event IDs that the filter enables or disables.
 
 ## EventPipeSession class
 
@@ -576,6 +659,21 @@ Represents the type of perf map behavior that can be enabled.
 * `JitDump` : Enable JIT dump perf map output.
 * `PerfMap` : Enable traditional perf map output.
 
+## EventPipeBufferingMode enum
+
+```csharp
+public enum EventPipeBufferingMode
+{
+    Drop = 0,
+    Block = 1
+}
+```
+
+Controls how the runtime's per-session event buffer behaves when it fills faster than the session drains it.
+
+* `Drop` : The runtime default. The session uses a circular buffer that drops events when it overflows, so collection is lossy.
+* `Block` : Non-lossy collection. The runtime blocks event producers until the reader frees buffer capacity instead of dropping events. Use it for collections that must be complete, such as a heap snapshot on a large heap. `Block` requires a .NET 11+ target runtime; on an older runtime, starting the session throws [`UnknownCommandException`](#unknowncommandexception).
+
 ## Exceptions
 
 Exceptions that are thrown from the library are of type `DiagnosticsClientException` or a derived type.
@@ -591,6 +689,22 @@ public class UnsupportedCommandException : DiagnosticsClientException
 ```
 
 This may be thrown when the command is not supported by either the library or the target process's runtime.
+
+### UnknownCommandException
+
+```csharp
+public class UnknownCommandException : UnsupportedCommandException
+```
+
+This is thrown when the target runtime doesn't recognize the requested command, typically because the runtime is too old to support it. For example, `StartEventPipeSession` throws it when you request [`EventPipeBufferingMode.Block`](#eventpipebufferingmode-enum) on a runtime older than .NET 11. Because it derives from `UnsupportedCommandException`, an existing `catch (UnsupportedCommandException)` still catches it.
+
+### InvalidCommandArgumentException
+
+```csharp
+public class InvalidCommandArgumentException : UnsupportedCommandException
+```
+
+This is thrown when the target runtime recognizes the command but rejects its payload argument.
 
 ### UnsupportedProtocolException
 

@@ -70,6 +70,10 @@ Start with the sensor model. The monitor supports a fixed set of sensor kinds, s
 
    :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sensors.cs" id="SensorExhaustive":::
 
+1. Build the project. In earlier previews, you need to add a polyfill for the `Closed` attribute:
+
+   :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/ClosedPolyfill.cs":::
+
 The `closed` modifier restricts the direct subtypes of `Sensor` to the declaring assembly, and a `closed` type is implicitly abstract, so you can't instantiate it directly. Because the compiler knows the complete set of subtypes, the switch needs no default arm. If you add a new sensor type later, the compiler reports that this switch no longer covers every case. That feedback is the central benefit of a closed hierarchy. The compiler points you to every match that needs to change. The `Temperature` and `Humidity` cases are sealed because their shape is final, while `Contact` stays open as an extension point that the next section covers. For more information, see the [`closed` modifier](../../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../../language-reference/operators/patterns.md#closed-hierarchy-patterns).
 
 ## Decide what to seal

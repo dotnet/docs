@@ -94,6 +94,7 @@ The `AttributeUsage` attribute determines how a custom attribute class can be us
   - Module
   - Field
   - Event
+  - Constructor
   - Method
   - Parameter
   - Property

@@ -52,7 +52,13 @@ You can coordinate the interaction of threads that acquire a lock on the same ob
 For more information, see the <xref:System.Threading.Monitor> API reference.
 
 > [!NOTE]
-> Use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly. Those statements are implemented by using the <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> methods and a `try…finally` block to ensure that the acquired lock is always released.
+> Use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly.
+>
+> In .NET 9 and C# 13 or later, use a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance for best performance. In that case, `lock` uses <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType>.
+>
+> This approach is better than locking a general `object` because it uses a lock type designed for synchronization and reduces accidental reuse of unrelated objects.
+>
+> Visual Basic doesn't support `System.Threading.Lock` in `SyncLock`, so use a dedicated private reference type for `SyncLock`. For C# versions before 13, for .NET versions before 9, and for Visual Basic, these statements use <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> with a `try…finally` block to ensure that the acquired lock is always released.
 
 ### Mutex class
 

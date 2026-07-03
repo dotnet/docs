@@ -31,7 +31,7 @@ Use the following path based on your goal:
 
 - Need to customize terminal output: [Terminal output](./microsoft-testing-platform-terminal-output.md) (built-in)
 - Need TRX or Azure DevOps reports: [Test reports](./microsoft-testing-platform-test-reports.md) (extension)
-- Need GitHub Actions-native output (log groups, annotations, job summary): [GitHub Actions report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) (extension, experimental)
+- Need GitHub Actions-native output (log groups, annotations, and job summary): [GitHub Actions report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) (extension, experimental)
 - Need coverage data: [Code coverage](./microsoft-testing-platform-code-coverage.md) (extension)
 - Need crash or hang diagnostics: [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) (extension)
 - Need to retry failed tests: [Retry](./microsoft-testing-platform-retry.md#retry) (extension)
@@ -58,7 +58,7 @@ Generate test report files (TRX, Azure DevOps).
 
 **[GitHub Actions report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport)** (experimental, introduced in MTP 2.3.0)
 
-Emit GitHub Actions-native workflow commands so test runs produce a first-class experience: per-assembly log groups, failure annotations (surfaced in the workflow **Annotations** tab and, when the source location resolves, on the pull request's **Files changed** diff), a markdown job summary appended to `GITHUB_STEP_SUMMARY`, and slow-test notices. The extension activates automatically when the `GITHUB_ACTIONS` environment variable is `true`, or elsewhere with the `--report-gh` switch. Each feature is individually toggleable through the `--report-gh-groups`, `--report-gh-annotations`, `--report-gh-step-summary`, `--report-gh-slow-test-notices`, and `--report-gh-slow-test-threshold` options. Register it manually with `builder.AddGitHubActionsProvider()`.
+Emit GitHub Actions-native workflow commands so test runs produce a first-class experience: per-assembly log groups, failure annotations (surfaced in the workflow **Annotations** tab and, when the source location resolves, on the pull request's **Files changed** diff), a Markdown job summary appended to `GITHUB_STEP_SUMMARY`, and slow-test notices. The extension activates automatically when the `GITHUB_ACTIONS` environment variable is `true`, or elsewhere with the `--report-gh` switch. Each feature can be turned on or off individually with the `--report-gh-groups`, `--report-gh-annotations`, `--report-gh-step-summary`, and `--report-gh-slow-test-notices` options, and the slow-test threshold is set with `--report-gh-slow-test-threshold`. Register it manually with `builder.AddGitHubActionsProvider()`.
 
 **[Code coverage](./microsoft-testing-platform-code-coverage.md)**
 

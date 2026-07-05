@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # configProperties in .runtimeconfig.dev.json override .runtimeconfig.json
 
-If an app defines the same runtime `configProperties` key in both `.runtimeconfig.json` and `.runtimeconfig.dev.json`, the `.runtimeconfig.dev.json` value now wins.
+If an app defines the same runtime `configProperties` key in both `.runtimeconfig.json` and `.runtimeconfig.dev.json`, the `.runtimeconfig.dev.json` value takes precedence.
 
 ## Version introduced
 
@@ -45,7 +45,7 @@ With this configuration, the runtime used `System.GC.Concurrent: true`.
 
 ## New behavior
 
-Starting in .NET 11, `.runtimeconfig.dev.json` takes precedence over `.runtimeconfig.json` for duplicate `configProperties` keys.
+Starting in .NET 11, to support development-time overrides, `.runtimeconfig.dev.json` takes precedence over `.runtimeconfig.json` for duplicate `configProperties` keys.
 
 Using the same example, the runtime now uses `System.GC.Concurrent: false`.
 
@@ -55,15 +55,15 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-To support development-time overrides, `.runtimeconfig.dev.json` now overrides matching values in `.runtimeconfig.json`.
+This change enables developers to override production settings during development without modifying production configuration files.
 
 For more information, see [dotnet/runtime issue #126606](https://github.com/dotnet/runtime/issues/126606).
 
 ## Recommended action
 
-To keep production behavior predictable, only put development-time overrides in `.runtimeconfig.dev.json`.
+For predictable production behavior, only place development-time overrides in `.runtimeconfig.dev.json`.
 
-If you don't want an override at development time, remove the duplicate key from `.runtimeconfig.dev.json`.
+To prevent a development-time override, remove the duplicate key from `.runtimeconfig.dev.json`.
 
 ## Affected APIs
 

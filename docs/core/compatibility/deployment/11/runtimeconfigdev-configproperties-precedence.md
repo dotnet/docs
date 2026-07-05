@@ -45,7 +45,7 @@ With this configuration, the runtime used `System.GC.Concurrent: true`.
 
 ## New behavior
 
-Starting in .NET 11, to support development-time overrides, `.runtimeconfig.dev.json` takes precedence over `.runtimeconfig.json` for duplicate `configProperties` keys.
+To support development-time overrides in .NET 11, `.runtimeconfig.dev.json` takes precedence over `.runtimeconfig.json` for duplicate `configProperties` keys.
 
 Using the same example, the runtime now uses `System.GC.Concurrent: false`.
 

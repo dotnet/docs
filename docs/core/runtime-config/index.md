@@ -39,6 +39,8 @@ Specify runtime configuration options in the **configProperties** section of the
 }
 ```
 
+Starting in .NET 11 Preview 6, if both *[appname].runtimeconfig.json* and *[appname].runtimeconfig.dev.json* define the same key in `configProperties`, the value in *[appname].runtimeconfig.dev.json* takes precedence. For more information, see [configProperties in .runtimeconfig.dev.json override .runtimeconfig.json](../compatibility/deployment/11/runtimeconfigdev-configproperties-precedence.md).
+
 ### Example [appname].runtimeconfig.json file
 
 If you're placing the options in the *output* JSON file, nest them under the `runtimeOptions` property.

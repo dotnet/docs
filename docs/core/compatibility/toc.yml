@@ -36,6 +36,8 @@ items:
                 href: core-libraries/11/ziparchive-createasync-eager-load.md
           - name: Cryptography
             items:
+              - name: AsnEncodedData.RawData setter is obsolete
+                href: cryptography/11/asnencodeddata-rawdata-setter-obsolete.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
           - name: Extensions

@@ -66,6 +66,8 @@ items:
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild
             items:
+              - name: dnx scripts bypass global.json SDK selection
+                href: sdk/11/dnx-scripts-bypass-global-json.md
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
               - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
@@ -194,8 +196,6 @@ items:
                 href: sdk/10.0/dotnet-cli-stderr-output.md
               - name: .NET tool packaging creates RuntimeIdentifier-specific tool packages
                 href: sdk/10.0/dotnet-tool-pack-publish.md
-              - name: dnx scripts bypass global.json SDK selection
-                href: sdk/10.0/dnx-scripts-bypass-global-json.md
               - name: dnx.ps1 file is no longer included in .NET SDK
                 href: sdk/10.0/dnx-ps1-removed.md
               - name: Double quotes in file-level directives are disallowed

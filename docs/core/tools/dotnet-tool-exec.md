@@ -41,7 +41,7 @@ When you run `dotnet tool exec`, the command:
 This command also exists in two other forms for easier use
 
 * `dotnet dnx` - A hidden alias for `dotnet tool exec` that is used as a way to easily implement the `dnx` script itself
-* `dnx` - A shell script provided by the installer and available on `PATH`. It allows for very simple use of tools directly via `dnx <toolname>`. Starting in .NET 10 SDK 10.0.302, the script bypasses the .NET muxer and any `global.json` SDK pinning—it finds the newest installed SDK using `dotnet --list-sdks` and invokes it directly. To use `global.json` SDK selection instead, run `dotnet dnx` explicitly.
+* `dnx` - A shell script provided by the installer and available on `PATH`. It allows for simple use of tools directly via `dnx <toolname>`.
 
 ## Arguments
 

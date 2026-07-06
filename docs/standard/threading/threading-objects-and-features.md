@@ -25,7 +25,7 @@ Along with the <xref:System.Threading.Thread?displayProperty=nameWithType> class
 |[SpinWait](spinwait.md)|Describes the <xref:System.Threading.SpinWait?displayProperty=nameWithType> structure, which provides support for spin-based waiting.|
 
 > [!NOTE]
-> In .NET 9 and C# 13 or later, prefer a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance with the C# `lock` statement for general locking scenarios. This approach improves performance and reduces mistakes from locking shared objects that weren't meant for synchronization. For details, see [Overview of synchronization primitives](overview-of-synchronization-primitives.md) and [The lock statement](../../csharp/language-reference/statements/lock.md). In Visual Basic, continue to use `SyncLock`.
+> In .NET 9 and C# 13 or later, prefer a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance with the C# `lock` statement for general locking scenarios. This approach improves performance and reduces mistakes from locking shared objects that weren't meant for synchronization. For details, see [Overview of synchronization primitives](overview-of-synchronization-primitives.md) and [The lock statement](../../csharp/language-reference/statements/lock.md). In Visual Basic, continue to use `SyncLock` with a dedicated private reference type.
 
 ## See also
 

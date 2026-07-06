@@ -13,8 +13,7 @@ ms.assetid: b2944911-0e8f-427d-a8bb-077550618935
 
 The first five articles of this section are designed to help you determine when to use managed threading and to explain some basic features. For information on classes that provide additional features, see [Threading Objects and Features](threading-objects-and-features.md) and [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md).
 
-> [!NOTE]
-> In .NET 9 and C# 13 or later, use a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance with the C# [lock statement](../../csharp/language-reference/statements/lock.md). This approach improves performance and reduces mistakes from locking the wrong object. In Visual Basic, continue to use [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md).
+> In .NET 9 and C# 13 or later, use a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance with the C# [lock statement](../../csharp/language-reference/statements/lock.md). This approach improves performance and reduces mistakes from locking the wrong object. In Visual Basic, continue to use [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) with a dedicated private reference type.
 
  The remaining articles in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.
 

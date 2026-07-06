@@ -52,7 +52,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 
 | Member            | Type          | Description |
 | ----------------- | ------------- | ----------- |
-| `$schema`         | URI           | The JSON schema for the *template.json* file. Editors that support JSON schemas enable JSON-editing features when the schema is specified. For example, [Visual Studio Code](https://code.visualstudio.com/) requires this member to enable IntelliSense. Use a value of `http://json.schemastore.org/template`. |
+| `$schema`         | URI           | The JSON schema for the *template.json* file. Editors that support JSON schemas enable JSON-editing features when the schema is specified. For example, [Visual Studio Code](https://code.visualstudio.com/) requires this member to enable IntelliSense. Use a value of `https://json.schemastore.org/template`. |
 | `author`          | string        | The author of the template. |
 | `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the `dotnet new list` command. |
 | `identity`        | string        | A unique name for this template. |
@@ -61,7 +61,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | `sourceName`       | string        | The name in the source tree to replace with the name the user specifies. The template engine will look for any occurrence of the `sourceName` mentioned in the config file and replace it in file names and file contents. The value to be replaced with can be given using the `-n` or `--name` options while running a template. If no name is specified, the current directory is used.|
 | `preferNameDirectory`       | Boolean        | Indicates whether to create a directory for the template if name is specified but an output directory isn't set (instead of creating the content directly in the current directory). The default value is false.|
 
-The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki). For deeper examples and information on how to make your templates visible in Visual Studio, check out the [resources that Sayed Hashimi has created](https://github.com/sayedihashimi/template-sample).
+The full schema for the *template.json* file is found at the [JSON Schema Store](https://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki). For deeper examples and information on how to make your templates visible in Visual Studio, check out the [resources that Sayed Hashimi has created](https://github.com/sayedihashimi/template-sample).
 
 #### Example
 
@@ -80,7 +80,7 @@ The *template.json* file looks like the following:
 
 ```json
 {
-  "$schema": "http://json.schemastore.org/template",
+  "$schema": "https://json.schemastore.org/template",
   "author": "Travis Chau",
   "classifications": [ "Common", "Console" ],
   "identity": "AdatumCorporation.ConsoleTemplate.CSharp",
@@ -123,7 +123,7 @@ For example, here's *template.json* file with some localizable fields:
 
 ```JSON
 {
-  "$schema": "http://json.schemastore.org/template",
+  "$schema": "https://json.schemastore.org/template",
   "author": "Microsoft",
   "classifications": "Config",
   "name": "EditorConfig file",
@@ -322,4 +322,4 @@ dotnet new <TEMPLATE>
 - [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
 - [Template samples](https://aka.ms/template-samples)
 - [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
-- [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)
+- [*template.json* schema at the JSON Schema Store](https://json.schemastore.org/template)

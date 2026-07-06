@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 11 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 11 with a custom diagnostic ID.
-ms.date: 04/03/2026
+ms.date: 07/06/2026
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 11)
 

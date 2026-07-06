@@ -322,4 +322,4 @@ dotnet new <TEMPLATE>
 - [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
 - [Template samples](https://aka.ms/template-samples)
 - [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
-- [*template.json* schema at the JSON Schema Store](https://json.schemastore.org/template)
+- [*template.json* schema at the JSON Schema Store](https://www.schemastore.org)

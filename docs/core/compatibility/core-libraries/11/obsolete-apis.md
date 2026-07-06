@@ -19,6 +19,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | Diagnostic ID                                                           | Description | Severity |
 |-------------------------------------------------------------------------|-------------|----------|
 | [SYSLIB0064](../../../../fundamentals/syslib-diagnostics/syslib0064.md) | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. | Warning |
+| [SYSLIB0065](../../../../fundamentals/syslib-diagnostics/syslib0065.md) | The `set` accessor of <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> is obsolete. Use the constructor of the appropriate type to decode data, or use <xref:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType> for mutable scenarios. | Warning |
 
 ## Version introduced
 
@@ -40,6 +41,10 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=fullName>
+
+### SYSLIB0065
+
+- `set` accessor of <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=fullName>
 
 ## See also
 

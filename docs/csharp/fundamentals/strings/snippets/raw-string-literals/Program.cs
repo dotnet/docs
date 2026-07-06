@@ -69,7 +69,7 @@ public static class Program
         Console.WriteLine(xml);
         // <order id="42">
         //     <item>book</item>
-        // </order>
+        // Output: </order>
         // </Indentation>
     }
 

@@ -329,7 +329,7 @@ Specifies whether performance details about the current CLI session are logged. 
 
 Specifies whether the .NET SDK uses its native (ahead-of-time compiled) CLI command-handling fast path. When enabled, common commands (such as command parsing, `dotnet --version`, and `dotnet --info`) are handled by a native entry point for faster startup, transparently falling back to the managed CLI for anything the fast path doesn't handle.
 
-This fast path is enabled by default. To opt out and route every invocation to the managed CLI, set this variable to `false`, `0`, `no`, or `off`. To explicitly enable it, set it to `true`, `1`, `yes`, or `on`, or leave it unset.
+This fast path is enabled by default on all platforms except macOS. On macOS it's disabled by default because of a command-line parsing issue ([dotnet/command-line-api#2812](https://github.com/dotnet/command-line-api/issues/2812)) and will be enabled once that issue is resolved. To opt out and route every invocation to the managed CLI, set this variable to `false`, `0`, `no`, or `off`. To explicitly enable it (for example, on macOS), set it to `true`, `1`, `yes`, or `on`.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 

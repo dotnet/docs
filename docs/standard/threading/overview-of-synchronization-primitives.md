@@ -58,7 +58,7 @@ For more information, see the <xref:System.Threading.Monitor> API reference.
 >
 > This approach is better than locking a general `object` because it uses a lock type designed for synchronization and reduces accidental reuse of unrelated objects.
 >
-> Visual Basic doesn't support `System.Threading.Lock` in `SyncLock`, so use a dedicated private reference type for `SyncLock`. For C# versions before 13, for .NET versions before 9, and for Visual Basic, these statements use <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> with a `try…finally` block to ensure that the acquired lock is always released.
+> Visual Basic doesn't support `System.Threading.Lock` in `SyncLock`, so use a dedicated private reference type for `SyncLock`. For C# versions before 13, .NET versions before 9, and Visual Basic, these statements use <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> with a `try…finally` block to ensure that the acquired lock is always released.
 
 ### Mutex class
 

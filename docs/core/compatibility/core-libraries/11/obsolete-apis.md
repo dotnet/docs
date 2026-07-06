@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 11)
 
-Some APIs have been marked as obsolete, starting in .NET 11.
+Some APIs are marked as obsolete, starting in .NET 11.
 
 For cryptography-specific obsoletions in .NET 11, see [Cryptography obsoletions (.NET 11)](../../cryptography/11/obsolete-apis.md).
 

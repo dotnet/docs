@@ -7,13 +7,13 @@ ai-usage: ai-assisted
 ---
 # Cryptography obsoletions (.NET 11)
 
-Some cryptography APIs have been marked as obsolete, starting in .NET 11.
+Some cryptography APIs are marked as obsolete, starting in .NET 11.
 
 For obsoletions in other core .NET library areas, see [API obsoletions with non-default diagnostic IDs (.NET 11)](../../core-libraries/11/obsolete-apis.md).
 
 ## Previous behavior
 
-Previously, you could set <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> without any build warning. On derived types, such as <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension>, that setter could silently desynchronize the cached decoded state from the new raw data.
+Previously, you could set <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> without any build warning. On derived types such as <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension>, the setter could silently desynchronize the cached decoded state from the new raw data.
 
 ## New behavior
 
@@ -35,7 +35,7 @@ This obsoletion can affect [source compatibility](../../categories.md#source-com
 
 ## Reason for change
 
-Because <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> isn't `virtual`, setting it on a derived instance can leave cached decoded values stale. Derived types can't react when the raw data changes.
+Because <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> isn't `virtual`, setting it on a derived instance can leave cached decoded values stale, and derived types can't react when the raw data changes.
 
 ## Recommended action
 

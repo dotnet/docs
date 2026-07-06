@@ -39,9 +39,9 @@ Because <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayPropert
 
 ## Recommended action
 
-- Use the constructor of the appropriate type to decode data.
-- For mutable scenarios, use <xref:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType>.
-- If you must keep the existing code, suppress the warning by using the custom `SYSLIB0065` diagnostic ID.
+Use the constructor of the appropriate type to decode data. For mutable scenarios, use <xref:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType>.
+
+If you must keep the existing code, suppress the warning by using the custom `SYSLIB0065` diagnostic ID.
 
 ## Affected APIs
 

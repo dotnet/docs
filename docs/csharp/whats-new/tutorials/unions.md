@@ -1,6 +1,6 @@
 ---
 title: Explore union types in C#
-description: "Union types let a single value hold one of a fixed set of types. Learn to declare union types, match their cases exhaustively, build custom unions, and use unions with generics."
+description: "Union types let a single value hold one of a fixed set of types. Learn to declare union types, match their cases exhaustively, build custom unions, and use them with generics."
 author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 A *union type* holds a single value that's one of a fixed set of types. Those types typically aren't related by inheritance, so a union lets you group unrelated types without forcing them into a common base class or interface. Unions are useful when a value is conceptually "one of these," such as a sensor reading that's a number, a switch state, or a status message. Because the set of cases is fixed, the compiler can verify that you handle every case when you read the value.
 
-In this tutorial, you build the readings layer of a smart-home telemetry monitor. You declare union types for sensor data, you replace a hand-rolled result type with a union, and you create a custom union for performance-sensitive code.
+In this tutorial, you build the readings layer of a smart-home telemetry monitor. You declare union types for sensor data, replace a hand-rolled result type with a union, and create a custom union for performance-sensitive code.
 
 In this tutorial, you:
 

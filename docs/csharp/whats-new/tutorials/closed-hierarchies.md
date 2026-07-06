@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 A *closed hierarchy* restricts the direct subtypes of a base type to the assembly that declares it. Because the compiler knows the full set of subtypes, it can verify that a switch handles every one without a default arm. Closed hierarchies suit domains where the set of cases is stable and you want the compiler to flag every place that needs to change when you add a case.
 
-In this tutorial, you build the sensor model of a smart-home telemetry monitor. You declare a closed hierarchy of sensor types, you match the sensors exhaustively, and you decide which cases to seal and which to leave open for extension.
+In this tutorial, you build the sensor model of a smart-home telemetry monitor. You declare a closed hierarchy of sensor types, match the sensors exhaustively, and decide which cases to seal and which to leave open for extension.
 
 In this tutorial, you:
 

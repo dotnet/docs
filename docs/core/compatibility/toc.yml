@@ -36,6 +36,8 @@ items:
                 href: core-libraries/11/ziparchive-createasync-eager-load.md
           - name: Cryptography
             items:
+              - name: API obsoletions
+                href: cryptography/11/obsolete-apis.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
           - name: Extensions

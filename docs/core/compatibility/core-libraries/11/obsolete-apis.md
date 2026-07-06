@@ -9,8 +9,6 @@ ai-usage: ai-assisted
 
 Some APIs are marked as obsolete, starting in .NET 11.
 
-For cryptography-specific obsoletions in .NET 11, see [Cryptography obsoletions (.NET 11)](../../cryptography/11/obsolete-apis.md).
-
 This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
 ## Change description

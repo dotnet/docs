@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 Some cryptography APIs have been marked as obsolete, starting in .NET 11.
 
-For obsoletions in other Core .NET library areas, see [API obsoletions with non-default diagnostic IDs (.NET 11)](../../core-libraries/11/obsolete-apis.md).
+For obsoletions in other core .NET library areas, see [API obsoletions with non-default diagnostic IDs (.NET 11)](../../core-libraries/11/obsolete-apis.md).
 
 ## Previous behavior
 

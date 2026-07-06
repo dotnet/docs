@@ -39,7 +39,7 @@ Specify runtime configuration options in the **configProperties** section of the
 }
 ```
 
-Starting in .NET 11 Preview 6, to support development-time overrides, the value in *[appname].runtimeconfig.dev.json* takes precedence when you define the same key in `configProperties` in both files.
+Starting in .NET 11, to support development-time overrides, the value in *[appname].runtimeconfig.dev.json* takes precedence when you define the same key in `configProperties` in both *[appname].runtimeconfig.dev.json* and *[appname].runtimeconfig.json*.
 
 For more information, see [configProperties in .runtimeconfig.dev.json override .runtimeconfig.json](../compatibility/deployment/11/runtimeconfigdev-configproperties-precedence.md).
 

@@ -22,6 +22,7 @@ Unrecognized command or argument 'execute'
 ```
 
 Starting with .NET 10 SDK 10.0.302 (and later) and .NET 11 Preview 6, the `dnx` and `dnx.cmd` scripts use `dotnet --list-sdks` to identify the newest installed SDK. They then invoke `dotnet exec <sdk-path>/dotnet.dll dnx` directly, bypassing the .NET muxer and any `global.json` SDK pinning.
+
 ## Type of breaking change
 
 This change is a [behavioral change](../../categories.md#behavioral-change).

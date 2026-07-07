@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/01/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -68,6 +68,9 @@ This article gives a central entry point for MTP command-line options.
 
   Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This slows down the test execution.
 
+  > [!NOTE]
+  > Available in MTP starting with version 2.0.0. It replaces the previous `--diagnostic-filelogger-synchronouswrite` option, which was removed in MTP 2.0.0.
+
 - **`--diagnostic-output-directory`**
 
   The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
@@ -75,6 +78,9 @@ This article gives a central entry point for MTP command-line options.
 - **`--diagnostic-file-prefix`**
 
   The prefix for the log file name. Defaults to `"log"`.
+
+  > [!NOTE]
+  > Available in MTP starting with version 2.0.0. It replaces the previous `--diagnostic-output-fileprefix` option, which was removed in MTP 2.0.0.
 
 - **`--diagnostic-verbosity`**
 

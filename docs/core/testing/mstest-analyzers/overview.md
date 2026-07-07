@@ -193,6 +193,7 @@ Rules for properly using the TestContext object:
 - [MSTEST0005](mstest0005.md) - TestContext should be valid
 - [MSTEST0024](mstest0024.md) - Do not store static TestContext
 - [MSTEST0033](mstest0033.md) - Suppress non-nullable reference not initialized warning
+- [MSTEST0047](mstest0047.md) - Suppress IDE0060 for the TestContext parameter
 - [MSTEST0048](mstest0048.md) - TestContext property usage
 - [MSTEST0049](mstest0049.md) - Flow TestContext CancellationToken
 - [MSTEST0054](mstest0054.md) - Use CancellationToken property
@@ -266,6 +267,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0044](mstest0044.md) | Design | Prefer TestMethod over DataTestMethod | Info |
 | [MSTEST0045](mstest0045.md) | Design | Use cooperative cancellation for timeout | Info |
 | [MSTEST0046](mstest0046.md) | Usage | Use Assert instead of StringAssert | Info |
+| [MSTEST0047](mstest0047.md) | Suppression | Suppress IDE0060 for the TestContext parameter | N/A |
 | [MSTEST0048](mstest0048.md) | Usage | TestContext property usage | Warning |
 | [MSTEST0049](mstest0049.md) | Usage | Flow TestContext CancellationToken | Info |
 | [MSTEST0050](mstest0050.md) | Usage | Global test fixture should be valid | Warning |

@@ -22,6 +22,7 @@ f1_keywords:
  - "CS1642"
  - "CS1656"
  - "CS1663"
+ - "CS1664"
  - "CS1665"
  - "CS1666"
  - "CS1708"
@@ -30,6 +31,8 @@ f1_keywords:
  - "CS1919"
  - "CS7092"
  - "CS8372"
+ - "CS8385"
+ - "CS8500"
  - "CS8812"
  - "CS9049"
  - "CS9123"
@@ -44,6 +47,10 @@ f1_keywords:
  - "CS9368"
  - "CS9376"
  - "CS9377"
+ - "CS9379"
+ - "CS9388"
+ - "CS9389"
+ - "CS9390"
 helpviewer_keywords:
  - "CS0193"
  - "CS0196"
@@ -65,6 +72,7 @@ helpviewer_keywords:
  - "CS1642"
  - "CS1656"
  - "CS1663"
+ - "CS1664"
  - "CS1665"
  - "CS1666"
  - "CS1708"
@@ -73,6 +81,8 @@ helpviewer_keywords:
  - "CS1919"
  - "CS7092"
  - "CS8372"
+ - "CS8385"
+ - "CS8500"
  - "CS8812"
  - "CS9049"
  - "CS9123"
@@ -87,6 +97,10 @@ helpviewer_keywords:
  - "CS9368"
  - "CS9376"
  - "CS9377"
+ - "CS9379"
+ - "CS9388"
+ - "CS9389"
+ - "CS9390"
 ms.date: 04/01/2026
 ai-usage: ai-assisted
 ---
@@ -105,26 +119,29 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0211**](#fixed-statement-usage): *Cannot take the address of the given expression*
 - [**CS0212**](#fixed-statement-usage): *You can only take the address of an unfixed expression inside of a `fixed` statement initializer*
 - [**CS0213**](#fixed-statement-usage): *You cannot use the `fixed` statement to take the address of an already fixed expression*
-- [**CS0214**](#unsafe-context-requirements): *Pointers and fixed-size buffers may only be used in an unsafe context*
+- [**CS0214**](#unsafe-context-requirements): *Pointers and fixed size buffers may only be used in an unsafe context*
 - [**CS0227**](#unsafe-context-requirements): *Unsafe code may only appear if compiling with `/unsafe`*
 - [**CS0233**](#pointer-types-and-managed-types): *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
 - [**CS0242**](#pointer-operations-and-dereferencing): *The operation in question is undefined on void pointers*
 - [**CS0244**](#unsafe-context-requirements): *Neither '`is`' nor '`as`' is valid on pointer types*
 - [**CS0254**](#fixed-statement-usage): *The right hand side of a fixed statement assignment may not be a cast expression*
 - [**CS0459**](#fixed-statement-usage): *Cannot take the address of a read-only local variable*
-- [**CS0821**](#fixed-statement-usage): *Implicitly typed local variables cannot be fixed*
+- [**CS0821**](#fixed-statement-usage): *Implicitly-typed local variables cannot be fixed*
 - [**CS1641**](#fixed-size-buffers): *A fixed size buffer field must have the array size specifier after the field name*
-- [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
+- [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs*
 - [**CS1656**](#fixed-statement-usage): *Cannot assign to 'variable' because it is a 'read-only variable type'*
 - [**CS1663**](#fixed-size-buffers): *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
+- [**CS1664**](#fixed-size-buffers): *Fixed size buffer of length 'length' and type 'type' is too big*
 - [**CS1665**](#fixed-size-buffers): *Fixed size buffers must have a length greater than zero*
 - [**CS1666**](#fixed-size-buffers): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
 - [**CS1708**](#fixed-size-buffers): *Fixed size buffers can only be accessed through locals or fields*
 - [**CS1716**](#fixed-size-buffers): *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute. Use the 'fixed' field modifier instead.*
-- [**CS1919**](#unsafe-context-requirements): *Unsafe type 'type name' cannot be used in object creation.*
+- [**CS1919**](#unsafe-context-requirements): *Unsafe type 'type name' cannot be used in object creation*
 - [**CS4004**](#unsafe-context-requirements): *Cannot `await` in an unsafe context*
 - [**CS7092**](#fixed-size-buffers): *A fixed buffer may only have one dimension.*
 - [**CS8372**](#fixed-size-buffers): *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute on a property*
+- [**CS8385**](#fixed-statement-usage): *The given expression cannot be used in a fixed statement*
+- [**CS8500**](#pointer-types-and-managed-types): *This takes the address of, gets the size of, or declares a pointer to a managed type ('type')*
 - [**CS8812**](#function-pointers): *Cannot convert &method group 'method' to non-function pointer type 'type'.*
 - [**CS9049**](#fixed-size-buffers): *A fixed field must not be a ref field.*
 - [**CS9123**](#unsafe-context-requirements): *The '`&`' operator should not be used on parameters or local variables in async methods.*
@@ -139,6 +156,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9368**](#unsafe-member-safety-contracts): *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
 - [**CS9376**](#unsafe-context-requirements): *An unsafe context is required for constructor 'constructor' marked as '`RequiresUnsafe`' or '`extern`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
 - [**CS9377**](#unsafe-member-safety-contracts): *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
+- [**CS9379**](#unsafe-member-safety-contracts): *Do not use '`RequiresUnsafeAttribute`' in source; use the '`unsafe`' modifier instead.*
+- [**CS9388**](#unsafe-member-safety-contracts): *The '`safe`' modifier may only be used on '`extern`' members that are not marked '`unsafe`'.*
+- [**CS9389**](#unsafe-member-safety-contracts): *'`extern`' member must be marked '`unsafe`' or '`safe`'.*
+- [**CS9390**](#unsafe-member-safety-contracts): *Both partial member declarations must be marked '`safe`' or neither may be marked '`safe`'*
 
 ## Pointer operations and dereferencing
 
@@ -156,11 +177,13 @@ To use pointer operations correctly, follow the rules for dereferencing, indexin
 
 - **CS0208**: *Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')*
 - **CS0233**: *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
+- **CS8500**: *This takes the address of, gets the size of, or declares a pointer to a managed type ('type')*
 
 To work with pointers and the `sizeof` operator correctly, use unmanaged types and proper contexts. For more information, see [Unmanaged types](../builtin-types/unmanaged-types.md) and the [`sizeof` operator](../operators/sizeof.md).
 
 - Use pointers only with unmanaged types (**CS0208**). Don't take the address of, get the size of, or declare pointers to managed types. Managed types include reference types and structs that contain reference type fields or properties.
 - Use the [`sizeof`](../operators/sizeof.md) operator within an [`unsafe`](../keywords/unsafe.md) context when working with types whose size isn't a compile-time constant (**CS0233**).
+- Avoid taking the address of, getting the size of, or declaring a pointer to a managed type (**CS8500**). This warning (level 4) fires when the compiler detects pointer operations on managed types. A managed type is any reference type, or any struct that contains a reference type as a field or property. For more information, see [Unmanaged types](../builtin-types/unmanaged-types.md).
 
 ## Fixed statement usage
 
@@ -171,8 +194,9 @@ To work with pointers and the `sizeof` operator correctly, use unmanaged types a
 - **CS0213**: *You cannot use the fixed statement to take the address of an already fixed expression*
 - **CS0254**: *The right hand side of a fixed statement assignment may not be a cast expression*
 - **CS0459**: *Cannot take the address of a read-only local variable*
-- **CS0821**: *Implicitly typed local variables cannot be fixed*
+- **CS0821**: *Implicitly-typed local variables cannot be fixed*
 - **CS1656**: *Cannot assign to 'variable' because it is a 'read-only variable type'*
+- **CS8385**: *The given expression cannot be used in a fixed statement*
 
 These errors occur when you use the [`fixed` statement](../statements/fixed.md) incorrectly. The `fixed` statement prevents the garbage collector from relocating a movable variable and declares a pointer to that variable. For more information, see [Unsafe code and pointers](../unsafe-code.md).
 
@@ -187,6 +211,7 @@ To use the `fixed` statement correctly:
 - Don't take the address of read-only local variables (**CS0459**). Variables in `foreach` loops, `using` statements, and `fixed` statements are read-only. This error is no longer produced by current versions of the compiler.
 - Use explicit types instead of `var` in `fixed` statements (**CS0821**).
 - Don't assign to variables in read-only contexts like `foreach` loops, `using` statements, or `fixed` statements (**CS1656**).
+- Use only expressions that support pinning in a `fixed` statement (**CS8385**). The expression must be an addressable variable, a string, or a type that implements a suitable `GetPinnableReference` method.
 
 ## Unsafe context requirements
 
@@ -223,6 +248,10 @@ These diagnostics occur when you use unsafe code constructs without the required
 - **CS9367**: *`RequiresUnsafeAttribute` cannot be applied to this symbol.*
 - **CS9368**: *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
 - **CS9377**: *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
+- **CS9379**: *Do not use '`RequiresUnsafeAttribute`' in source; use the '`unsafe`' modifier instead.*
+- **CS9388**: *The '`safe`' modifier may only be used on '`extern`' members that are not marked '`unsafe`'.*
+- **CS9389**: *'`extern`' member must be marked '`unsafe`' or '`safe`'.*
+- **CS9390**: *Both partial member declarations must be marked '`safe`' or neither may be marked '`safe`'*
 
 These diagnostics enforce the C# 15 safety contract rules for members marked as unsafe. The compiler ensures that unsafe members don't violate the safety expectations established by base classes and interfaces. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
 
@@ -232,25 +261,30 @@ These diagnostics enforce the C# 15 safety contract rules for members marked as 
 - Apply `RequiresUnsafeAttribute` only to supported symbol types (**CS9367**). This attribute can be applied to methods, properties, events, constructors, and types, but not all symbol kinds support it.
 - Enable the updated memory safety rules to use `RequiresUnsafeAttribute` (**CS9368**). This attribute is part of C# 15's refined memory safety model and isn't recognized under legacy rules. Ensure your project targets a language version that supports the updated rules.
 - Remove the `unsafe` modifier when it has no effect (**CS9377**). Under the current memory safety rules, certain contexts don't require or benefit from the `unsafe` modifier. The compiler warns when the modifier is meaningless so you can clean up unnecessary annotations.
+- Use the `unsafe` modifier directly on the member declaration instead of applying `RequiresUnsafeAttribute` in source (**CS9379**). The attribute is intended for metadata representation only; in source code, the `unsafe` keyword is the correct mechanism.
+- Apply the `safe` modifier only to `extern` members that aren't already marked `unsafe` (**CS9388**). The `safe` modifier explicitly opts an extern member out of the default unsafe assumption for extern declarations.
+- Mark every `extern` member as either `unsafe` or `safe` (**CS9389**). Under the updated memory safety rules, extern members must explicitly declare their safety contract because the compiler can't verify the implementation.
+- Ensure both partial member declarations agree on the `safe` modifier (**CS9390**). If one partial declaration is marked `safe`, the other must also be marked `safe` to maintain a consistent safety contract.
 
 ## Fixed-size buffers
 
 - **CS1641**: *A fixed size buffer field must have the array size specifier after the field name*
 - **CS1642**: *Fixed size buffer fields may only be members of structs*
 - **CS1663**: *Fixed size buffer type must be one of the following: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float` or `double`*
+- **CS1664**: *Fixed size buffer of length 'length' and type 'type' is too big*
 - **CS1665**: *Fixed size buffers must have a length greater than zero*
-- **CS1666**: *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement*
+- **CS1666**: *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
 - **CS1708**: *Fixed size buffers can only be accessed through locals or fields*
-- **CS1716**: *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute. Use the 'fixed' field modifier instead*
+- **CS1716**: *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute. Use the 'fixed' field modifier instead.*
 - **CS7092**: *A fixed buffer may only have one dimension.*
 - **CS8372**: *Do not use '`System.Runtime.CompilerServices.FixedBuffer`' attribute on a property*
-- **CS9049**: *A fixed field must not be a ref field*
+- **CS9049**: *A fixed field must not be a ref field.*
 
 These errors occur when you work with fixed-size buffers. Fixed-size buffers are arrays embedded directly in structs and are primarily used for interop scenarios. For more information, see [Fixed-size buffers](../unsafe-code.md#fixed-size-buffers).
 
 To declare and use fixed-size buffers correctly:
 
-- Specify the array size after the field name using a positive integer constant (**CS1641**, **CS1665**).
+- Specify the array size after the field name using a positive integer constant (**CS1641**, **CS1665**). The total size of the buffer (element count multiplied by element size) must not exceed 2^31 bytes (**CS1664**).
 - Declare fixed-size buffers only in structs, not in classes (**CS1642**). Use a regular array if you need the field in a class.
 - Use one of the supported element types: `bool`, `byte`, `short`, `int`, `long`, `char`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double` (**CS1663**).
 - Use a `fixed` statement to pin the containing struct before accessing the buffer (**CS1666**).

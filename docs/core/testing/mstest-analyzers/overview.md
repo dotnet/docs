@@ -4,6 +4,7 @@ description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
 ms.date: 12/20/2023
+ai-usage: ai-assisted
 ---
 
 # MSTest code analysis
@@ -112,6 +113,8 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0057](mstest0057.md) - TestMethodAttribute should propagate source information
 - [MSTEST0060](mstest0060.md) - Duplicate TestMethodAttribute
 - [MSTEST0063](mstest0063.md) - Test class should have valid constructor
+- [MSTEST0069](mstest0069.md) - Inherited `[TestClass]` is ignored by the MSTest source generator
+- [MSTEST0071](mstest0071.md) - Test method should not specify a display name equal to its name
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
@@ -292,7 +295,9 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0066](mstest0066.md) | Design | `[Ignore]` should specify a justification | Info |
 | [MSTEST0067](mstest0067.md) | Usage | Avoid synchronously blocking calls in test code | Info (disabled by default) |
 | [MSTEST0068](mstest0068.md) | Usage | Use `Assert` instead of `CollectionAssert` | Info |
+| [MSTEST0069](mstest0069.md) | Usage | Inherited `[TestClass]` is ignored by the MSTest source generator | Warning |
 | [MSTEST0070](mstest0070.md) | Usage | `[MemberCondition]` arguments should be valid | Warning |
+| [MSTEST0071](mstest0071.md) | Usage | Test method should not specify a display name equal to its name | Info |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

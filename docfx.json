@@ -214,7 +214,7 @@
                 "_csharplang/**/*.{md,yml}": "dotnet-csharp",
                 "_csharpstandard/**/*.{md,yml}": "dotnet-csharp",
                 "_roslyn/docs/compilers/CSharp/*.{md,yml}": "dotnet-csharp",
-                "_vblang/spec/*.{md,yml}": "dotnet-visualbasic",
+                "_vblang/spec/*.{md,yml}": "dotnet-visual-basic",
                 "docs/architecture/**/**.{md,yml}": "dotnet-architecture",
                 "docs/azure/**/*.{md,yml}": "dotnet-azure",
                 "docs/core/**/*.{md,yml}": "dotnet-fundamentals",
@@ -227,7 +227,7 @@
                 "docs/standard/data/**/**.{md,yml}": "dotnet-data",
                 "docs/standard/design-guidelines/*.{md,yml}": "dotnet",
                 "docs/standard/security/*.{md,yml}": "dotnet",
-                "docs/visual-basic/**/**.{md,yml}": "dotnet-visualbasic",
+                "docs/visual-basic/**/**.{md,yml}": "dotnet-visual-basic",
                 "docs/orleans/**/**.{md,yml}": "dotnet-orleans"
             },
             "ms.topic": {
@@ -522,7 +522,7 @@
                 "_csharplang/**/*.{md,yml}": "lang-spec",
                 "_csharpstandard/**/*.{md,yml}": "lang-spec",
                 "_roslyn/docs/compilers/CSharp/*.{md,yml}": "whats-new",
-                "_vblang/spec/*.{md,yml}": "vb-spec",
+                "_vblang/spec/*.{md,yml}": "vb-language-spec",
                 "docs/ai/**/**.{md,yml}": "intelligent-apps",
                 "docs/architecture/blazor-for-web-forms-developers/**/**.{md,yml}": "blazor",
                 "docs/architecture/cloud-native/**/**.{md,yml}": "cloud-native",

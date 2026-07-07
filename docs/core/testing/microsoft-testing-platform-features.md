@@ -80,3 +80,29 @@ Run tests that use Microsoft Fakes for stubs and shims.
 **[Telemetry](./microsoft-testing-platform-telemetry.md)**
 
 Telemetry collection. Learn how to opt out and what data is collected.
+
+## Logging integration
+
+> [!NOTE]
+> The Microsoft.Extensions.Logging bridge was introduced in MTP 2.3.0.
+
+The [Microsoft.Testing.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Logging) package bridges Microsoft.Testing.Platform diagnostics to <xref:Microsoft.Extensions.Logging.ILogger>, so platform and extension logs flow through the same `Microsoft.Extensions.Logging` pipeline your application already uses.
+
+Manual registration:
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddMicrosoftExtensionsLogging(logging => logging.AddConsole());
+```
+
+## Experimental extensions
+
+The following extensions are experimental. Their APIs are annotated with the `TPEXP` diagnostic and might change in a future release; using them requires acknowledging the experimental diagnostic. For more information, see [Microsoft.Testing.Platform diagnostics](https://aka.ms/testingplatform/diagnostics).
+
+**[Video recorder](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VideoRecorder)** (experimental, introduced in MTP 2.3.0)
+
+Records the screen during a test run. It requires `ffmpeg` to be available on the machine and is enabled with the `--capture-video` option. Register it manually with `builder.AddVideoRecorderProvider()`.
+
+**[Packaged app deployment](https://www.nuget.org/packages/Microsoft.Testing.Extensions.PackagedApp)** (experimental, introduced in MTP 2.3.0)
+
+A reference extension that uses the experimental `ITestHostLauncher` extension point to deploy and launch a packaged-app test host. Register it manually with `builder.AddPackagedAppDeployment()`.

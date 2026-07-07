@@ -4,6 +4,7 @@ author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
 ms.date: 02/13/2024
+ai-usage: ai-assisted
 ---
 
 # MSTest SDK configuration
@@ -130,7 +131,7 @@ Outside of the selection of the runner and runner-specific extensions, `MSTest.S
 
 ### Test with Aspire
 
-Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](https://aspire.dev/get-started/what-is-aspire/).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0.
@@ -228,6 +229,31 @@ If you're using the VSTest mode of `dotnet test`, here's an example update when 
 -    arguments: '--configuration Release'
 +    arguments: '--configuration Release -- --report-trx --results-directory $(Agent.TempDirectory) --coverage'
 ```
+
+## Experimental features
+
+The following MSTest 4.3 features are **experimental**. Their public APIs are subject to change, and they're surfaced behind experimental diagnostics, so opting in requires acknowledging the corresponding diagnostic ID. Use them with that caveat in mind.
+
+### Reflection source generator
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The MSTest reflection source generator discovers tests at compile time instead of relying on runtime reflection, which makes test projects compatible with trimming and Native AOT. Enable it by adding the [MSTest.SourceGeneration](https://www.nuget.org/packages/MSTest.SourceGeneration) package. When the source generator is active, test classes must declare `[TestClass]` directly rather than inherit it; the [MSTEST0069](mstest-analyzers/mstest0069.md) analyzer flags classes that rely on an inherited `[TestClass]`.
+
+### Programmatic test filtering with `ITestFilter`
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The experimental `ITestFilter` extension point, registered through `[TestFilterProviderAttribute]`, lets you decide programmatically whether each test runs, before any test class is loaded. This is useful for custom selection logic that can't be expressed with command-line filters.
+
+### `TestRun.Current` and planned tests
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The experimental `TestRun.Current` API (from RFC 014) exposes information about the current run, including the set of planned tests, so extensions and fixtures can inspect what's scheduled to execute.
 
 ## Known limitations
 

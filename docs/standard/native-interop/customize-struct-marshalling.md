@@ -48,8 +48,6 @@ struct UnsafeBuffer
     {
         fixed (byte* p = &b)
         {
-            // This treats p as a 100-byte buffer, but only 1 byte is allocated
-            // This may interpret p as a 100-byte buffer, but only 1 byte is allocated
             // This may interpret p as a 100-byte buffer, but only 1 byte is allocated
             // Writing beyond the first byte corrupts memory
         }

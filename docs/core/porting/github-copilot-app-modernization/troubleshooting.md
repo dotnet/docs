@@ -76,7 +76,7 @@ These issues relate to build failures, NuGet restore problems, and code generati
 
 1. Tell the agent about the failure. The agent analyzes errors automatically.
 1. If the agent can't resolve the issue, revert the last commit (`git revert HEAD`) and ask the agent to try a different approach.
-1. For complex failures, check `tasks/{taskId}/progress-details.md` to understand what the agent changed and in what order.
+1. For complex failures, check `tasks.md` to find the failing task ID, and then review `tasks/{taskId}/progress-details.md` to understand what the agent changed and in what order.
 
 ### NuGet restore fails
 
@@ -185,7 +185,7 @@ These issues relate to custom skills and scenario instruction files.
 When something isn't working as expected:
 
 1. **Ask the agent:** Ask _"What went wrong with the last task?"_ The agent can often explain what happened and suggest next steps.
-1. **Review the task progress:** Open `tasks/{taskId}/progress-details.md` in `.github/upgrades/{scenarioId}/`. The progress details show what the agent did, including any errors it encountered.
+1. **Review the task progress:** Open `tasks.md` in `.github/upgrades/{scenarioId}/` to find the last task ID, and then open `tasks/{taskId}/progress-details.md`. The progress details show what the agent did, including any errors it encountered.
 1. **File an issue:** If you've found a bug or the agent consistently fails at something, file an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
 
 ## Related content

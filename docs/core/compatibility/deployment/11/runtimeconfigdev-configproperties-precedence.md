@@ -57,7 +57,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 This change enables developers to override production settings during development without modifying production configuration files.
 
-For more information, see [dotnet/runtime issue #126606](https://github.com/dotnet/runtime/issues/126606).
+For more information, see [dotnet/runtime#126606](https://github.com/dotnet/runtime/issues/126606).
 
 ## Recommended action
 

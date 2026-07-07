@@ -2,7 +2,7 @@
 title: Install GitHub Copilot modernization
 description: "Learn how to install and set up GitHub Copilot modernization across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com."
 ms.topic: install-set-up-deploy
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 zone_pivot_groups: copilot-modernization-install
 
@@ -22,14 +22,14 @@ Before you install, make sure you have:
 
 - Windows operating system.
 - [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17+).
-- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled: **GitHub Copilot**, **GitHub Copilot modernization**.
+- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled: **GitHub Copilot**, **GitHub Copilot app modernization**.
 - GitHub Copilot subscription (paid or free).
 - [Sign in to Visual Studio with a GitHub account](/visualstudio/ide/work-with-github-accounts) that has [Copilot access](https://docs.github.com/copilot/get-started/plans#ready-to-choose-a-plan).
 - Code written in C# or Visual Basic.
 
 ## Install
 
-Visual Studio includes GitHub Copilot modernization, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
+Visual Studio includes GitHub Copilot modernization, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
 
 ## Verify the installation
 
@@ -51,7 +51,7 @@ Before you install, make sure you have:
 ## Install
 
 1. In Visual Studio Code, open the **Extensions** view (<kbd>Ctrl+Shift+X</kbd>).
-1. Search for **GitHub Copilot modernization**.
+1. Search for **GitHub Copilot modernization for .NET**.
 1. Select **Install**.
 
 The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `modernize-dotnet`.

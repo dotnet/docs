@@ -398,7 +398,10 @@ The following example is identical to the previous example, except that the stat
 
 ## NonBacktracking mode
 
-By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option, which was introduced in .NET 7, doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
+By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes back and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option, which was introduced in .NET 7, doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
+
+> [!WARNING]
+> The .NET regex engine assumes the *pattern* is trusted. NonBacktracking mode doesn't change this assumption: it guards against expensive *input*, not against actively malicious *patterns*. For more information, see [Use trusted patterns](best-practices-regex.md#use-trusted-patterns).
 
 The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>, or <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
 

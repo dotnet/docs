@@ -72,6 +72,8 @@ items:
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild
             items:
+              - name: dnx scripts bypass global.json SDK selection
+                href: sdk/11/dnx-scripts-bypass-global-json.md
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
               - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets

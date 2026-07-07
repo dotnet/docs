@@ -128,6 +128,27 @@ Assert.That(order.Total > 0);
 >
 > Starting with MSTest 4.1, `Assert.IsExactInstanceOfType` and `Assert.IsNotExactInstanceOfType` require an exact type match. Unlike `Assert.IsInstanceOfType`, these methods don't match derived types.
 
+### New collection and equivalence assertions in MSTest 4.3
+
+> [!NOTE]
+> The following assertion methods were introduced in MSTest 4.3.0.
+
+- `Assert.AreSequenceEqual` / `Assert.AreNotSequenceEqual` — element-wise sequence comparison. Pass `SequenceOrder.InAnyOrder` to ignore element order.
+- `Assert.AreEquivalent` / `Assert.AreNotEquivalent` — deep structural comparison of two objects or collections.
+- `Assert.ContainsAll` / `Assert.DoesNotContainAll` — assert that a collection contains (or doesn't contain) every expected element.
+- `Assert.AreAllNotNull` — assert that every element of a collection is non-`null`.
+- `Assert.AreAllDistinct` — assert that all elements of a collection are distinct.
+- `Assert.AreAllOfType` — assert that every element of a collection is of an expected type.
+
+When comparing collections, prefer these methods over `Assert.AreEqual`, which compares references rather than elements.
+
+MSTest 4.3 also adds:
+
+- `Assert.AddValueFormatter` to customize how values are rendered in assertion failure messages.
+- <xref:System.Span`1> and <xref:System.Memory`1> overloads for `Assert.HasCount`.
+- Structured assertion failure messages for `Assert.IsTrue`, `Assert.IsFalse`, `Assert.IsNull`, and `Assert.IsNotNull` that include the evaluated expression.
+- Interpolated-string message overloads for the async `Assert.ThrowsAsync`/`Assert.ThrowsExactlyAsync` methods, and rejection of `ValueTask<TResult>`-returning delegates that would otherwise not be awaited.
+
 ### Soft assertions with `Assert.Scope()`
 
 > [!IMPORTANT]

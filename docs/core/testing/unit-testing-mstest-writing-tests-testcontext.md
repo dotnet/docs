@@ -80,6 +80,8 @@ string value = TestContext.Properties["MyKey"]?.ToString();
 
 > [!NOTE]
 > Starting with MSTest 4.2, test categories from `[TestCategory]` are included in <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType>.
+>
+> Starting with MSTest 4.3, custom properties added to `TestContext.Properties` in `[AssemblyInitialize]` flow to every class and test in the assembly, and properties added in `[ClassInitialize]` flow to every test in that class. This lets fixtures publish shared context that test methods can read.
 
 ### Access `TestContext` from the current call stack
 

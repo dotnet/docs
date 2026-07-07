@@ -355,6 +355,9 @@ public class RetryTests
 > [!NOTE]
 > Only one `RetryAttribute` can be present on a test method. You can't use `RetryAttribute` on methods that aren't marked with `TestMethod`.
 
+> [!NOTE]
+> Starting with MSTest 4.3, `RetryAttribute` can also be applied at the test class level. When applied to a test class, it applies to every test method in the class. A `RetryAttribute` on a method takes precedence over one on the containing class.
+
 > [!TIP]
 > Related analyzers:
 >
@@ -478,6 +481,80 @@ public class CIAwareTests
     public void LocalDevelopmentOnlyTest()
     {
         // Skipped in CI, runs during local development
+    }
+}
+```
+
+### `MemberConditionAttribute`
+
+The `MemberConditionAttribute`, introduced in MSTest 4.3, runs or skips a test class or test method based on the value of one or more static `bool` members. Each member is referenced by its declaring type and name, and must be `public static`, return `bool`, and (for methods) be parameterless. When several members are specified, they're combined with a logical AND. Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionMode> to invert the condition.
+
+```csharp
+public static class TestConditions
+{
+    public static bool IsFeatureEnabled => true;
+}
+
+[TestClass]
+public class FeatureTests
+{
+    [TestMethod]
+    [MemberCondition(typeof(TestConditions), nameof(TestConditions.IsFeatureEnabled))]
+    public void RunsWhenFeatureEnabled()
+    {
+    }
+
+    [TestMethod]
+    [MemberCondition(ConditionMode.Exclude, typeof(TestConditions), nameof(TestConditions.IsFeatureEnabled))]
+    public void SkippedWhenFeatureEnabled()
+    {
+    }
+}
+```
+
+> [!TIP]
+> Related analyzer: [MSTEST0070](mstest-analyzers/mstest0070.md) - `[MemberCondition]` arguments should be valid.
+
+### `ArchitectureConditionAttribute`
+
+The `ArchitectureConditionAttribute`, introduced in MSTest 4.3, runs or skips tests based on the process architecture. Use the `TestArchitectures` flags enum to specify which architectures apply.
+
+```csharp
+[TestClass]
+public class ArchitectureTests
+{
+    [TestMethod]
+    [ArchitectureCondition(TestArchitectures.X64)]
+    public void RunsOnX64()
+    {
+    }
+
+    [TestMethod]
+    [ArchitectureCondition(ConditionMode.Exclude, TestArchitectures.X86)]
+    public void SkippedOnX86()
+    {
+    }
+}
+```
+
+### `ExecutableConditionAttribute`
+
+The `ExecutableConditionAttribute`, introduced in MSTest 4.3, runs or skips tests based on whether an external tool is available. The test runs only when the specified executable can be resolved; you can optionally pass arguments that are used when probing the tool.
+
+```csharp
+[TestClass]
+public class ToolTests
+{
+    [TestMethod]
+    [ExecutableCondition("git")]
+    public void RunsWhenGitIsAvailable()
+    {
+    }
+
+    [TestMethod]
+    [ExecutableCondition("docker", "--version")]
+    public void RunsWhenDockerResponds()
+    {
     }
 }
 ```

@@ -29,7 +29,7 @@ Before you install, make sure you have:
 
 ## Install
 
-Visual Studio includes GitHub Copilot modernization, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
+Visual Studio includes GitHub Copilot modernization through the **GitHub Copilot app modernization** optional component, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
 
 ## Verify the installation
 

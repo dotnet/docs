@@ -39,7 +39,7 @@ The following example shows the incorrect approach that can lead to memory corru
 ```csharp
 // ❌ DON'T: This is dangerous and can corrupt memory
 [StructLayout(LayoutKind.Explicit, Size = 100)]
-struct UnsafeBuffer
+class Bad100ByteBuffer
 {
     [FieldOffset(0)]
     private byte b;
@@ -48,7 +48,6 @@ struct UnsafeBuffer
     {
         fixed (byte* p = &b)
         {
-            // This may interpret p as a 100-byte buffer, but only 1 byte is allocated
             // Writing beyond the first byte corrupts memory
         }
     }
@@ -59,8 +58,14 @@ Instead, use `InlineArrayAttribute` to create a properly sized buffer:
 
 ```csharp
 // ✔️ DO: Use InlineArrayAttribute for fixed-size buffers
-struct SafeBuffer
+class Good100ByteBuffer
 {
+    [InlineArray(100)]
+    private struct Buffer100
+    {
+        private byte _element0;
+    }
+
     private Buffer100 buffer;
 
     unsafe void UseBuffer()
@@ -70,12 +75,6 @@ struct SafeBuffer
             // The buffer is guaranteed to be 100 bytes
         }
     }
-}
-
-[InlineArray(100)]
-internal struct Buffer100
-{
-    private byte _element0;
 }
 ```
 

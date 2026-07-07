@@ -43,12 +43,7 @@ For an end-to-end walkthrough, see [Core concepts](concepts.md).
 
 The most common scenario. Upgrades your projects from any older .NET variant to the latest:
 
-| Source                       | Target                    |
-|------------------------------|---------------------------|
-| .NET Framework (any version) | .NET 8 or later           |
-| .NET Framework (any version) | .NET Framework 4.8.1      |
-| .NET Core 1.x–3.x            | .NET 8 or later           |
-| .NET 5 or later              | .NET 8 or later           |
+[!INCLUDE[supported-upgrade-paths](./includes/supported-upgrade-paths.md)]
 
 The agent analyzes your dependency graph, checks NuGet compatibility, identifies breaking changes, and creates a task plan using the best strategy for your solution (bottom-up, top-down, or all-at-once). If your projects need format conversions, the agent handles them automatically as part of the upgrade.
 

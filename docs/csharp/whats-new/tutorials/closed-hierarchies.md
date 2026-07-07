@@ -66,7 +66,7 @@ Start with the sensor model. The monitor supports a fixed set of sensor kinds, s
 
    :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sensors.cs" id="ClosedSensor":::
 
-1. In the same file, add a method that matches every sensor with a switch:
+1. In the same file, add a method that matches every sensor with a switch expression:
 
    :::code language="csharp" source="snippets/telemetry-monitor/SmartHome.Core/Sensors.cs" id="SensorExhaustive":::
 
@@ -136,7 +136,7 @@ Report leaves: 3
 
 You built the sensor model of a smart-home telemetry monitor and, in the process, worked through closed-hierarchy scenarios. You:
 
-- Declared a `closed` `Sensor` base type and matched its subtypes with an exhaustive switch that needs no default arm.
+- Declared a `closed Sensor` base type and matched its subtypes with an exhaustive switch that needs no default arm.
 - Weighed the three choices for each subtype: `closed` to continue the hierarchy in the same assembly, `sealed` to end it, or unmarked to leave an extension point.
 - Extended the open `Contact` case from a separate assembly with `DoorContact`, and confirmed it still matches the `Contact` case in the existing switch.
 - Declared a generic closed hierarchy, `Report<T>`, and folded it with a recursive exhaustive switch.

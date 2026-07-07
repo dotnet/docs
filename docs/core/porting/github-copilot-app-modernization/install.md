@@ -74,7 +74,7 @@ The extension automatically acquires the .NET SDK if it's missing, registers too
 
 Before you install, make sure you have:
 
-- [GitHub Copilot CLI](gh.io/cli) installed.
+- [GitHub Copilot CLI](https://gh.io/cli) installed.
 - GitHub Copilot subscription (paid or free).
 
 ## Install
@@ -107,7 +107,7 @@ Run `/agent` to confirm that `upgrade-agent` appears in the agent list.
 
 Before you install, make sure you have:
 
-- [GitHub Copilot app](gh.io/app) installed.
+- [GitHub Copilot app](https://gh.io/app) installed.
 - GitHub Copilot subscription (paid or free).
 
 ## Install

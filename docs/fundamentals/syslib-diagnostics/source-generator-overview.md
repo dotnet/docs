@@ -160,13 +160,13 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1220][1220] | JsonSourceGenerator encountered a [JsonConverterAttribute] with an invalid type argument. |
 | [SYSLIB1221][1221] | JsonSourceGenerator does not support this C# language version. |
 | [SYSLIB1222][1222] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
-| [SYSLIB1223][1223] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
+| [SYSLIB1223][1223] | Attributes deriving from JsonConverterAttribute are not supported by the source generator. |
 | [SYSLIB1224][1224] | Types annotated with JsonSerializableAttribute must be classes deriving from JsonSerializerContext. |
-| [SYSLIB1225][1225] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1226][1226] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1227][1227] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1228][1228] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1229][1229] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1225][1225] | Type includes a ref-like property, a field, or a constructor parameter. |
+| [SYSLIB1226][1226] | `JsonIgnoreCondition.Always` is not valid on type-level `JsonIgnoreAttribute` annotations. |
+| [SYSLIB1227][1227] | Union case types cannot be unambiguously classified by JSON value type. |
+| [SYSLIB1228][1228] | Union type shape is not a valid C# union. |
+| [SYSLIB1229][1229] | Open generic derived type could not be resolved for the polymorphic base type. |
 | [SYSLIB1230][1230] | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->

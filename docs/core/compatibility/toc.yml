@@ -36,8 +36,14 @@ items:
                 href: core-libraries/11/ziparchive-createasync-eager-load.md
           - name: Cryptography
             items:
+              - name: API obsoletions
+                href: cryptography/11/obsolete-apis.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+          - name: Deployment
+            items:
+              - name: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json
+                href: deployment/11/runtimeconfigdev-configproperties-precedence.md
           - name: Extensions
             items:
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails

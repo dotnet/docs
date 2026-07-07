@@ -48,7 +48,7 @@ Microsoft values your feedback and uses it to improve the agent. Leave feedback 
 
 - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) options.
 
-- File an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
+- File an issue at the [Upgrade Agent GitHub repository](https://github.com/microsoft/upgrade-agent-plugins).
 
 ## Prerequisites
 

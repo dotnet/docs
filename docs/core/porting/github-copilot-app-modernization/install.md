@@ -51,15 +51,20 @@ Before you install, make sure you have:
 ## Install
 
 1. In Visual Studio Code, open the **Extensions** view (<kbd>Ctrl+Shift+X</kbd>).
-1. Search for **GitHub Copilot modernization for .NET**.
+1. Search for **GitHub Copilot upgrade**.
 1. Select **Install**.
 
-The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `modernize-dotnet`.
+The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `Upgrade`.
 
 ## Verify the installation
 
 1. Open a project in Visual Studio Code.
-1. Open **GitHub Copilot Chat** and type `@modernize-dotnet`.
+1. Open the **GitHub Copilot Chat** window.
+1. Send `@upgrade` in chat and see if it responds.
+
+   \-or-
+
+   Select the `Agent` dropdown and find the `Upgrade` entry.
 
 ::: zone-end
 
@@ -69,7 +74,7 @@ The extension automatically acquires the .NET SDK if it's missing, registers too
 
 Before you install, make sure you have:
 
-- GitHub Copilot CLI installed.
+- [GitHub Copilot CLI](gh.io/cli) installed.
 - GitHub Copilot subscription (paid or free).
 
 ## Install
@@ -81,40 +86,46 @@ To install:
 1. Add the marketplace plugin:
 
    ```console
-   /plugin marketplace add dotnet/modernize-dotnet
+   /plugin marketplace add microsoft/upgrade-agent-plugins
    ```
 
 1. Install the plugin:
 
    ```console
-   /plugin install modernize-dotnet@modernize-dotnet-plugins
+   /plugin install upgrade-agent@upgrade-agent-plugins
    ```
 
 ## Verify the installation
 
-Run `/agent` to confirm that `modernize-dotnet` appears in the agent list.
+Run `/agent` to confirm that `upgrade-agent` appears in the agent list.
 
 ::: zone-end
 
-::: zone pivot="github-com"
+::: zone pivot="github-copilot-app"
 
 ## Prerequisites
 
 Before you install, make sure you have:
 
-- GitHub Copilot Enterprise or Business subscription with coding agents enabled.
-- Repository admin access.
+- [GitHub Copilot app](gh.io/app) installed.
+- GitHub Copilot subscription (paid or free).
 
 ## Install
 
-Add the custom coding agent to your repository:
+To install:
 
-1. Review [adding custom coding agents to your repository](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents).
-1. Add the `modernize-dotnet` agent. See the [coding agent README](https://github.com/dotnet/modernize-dotnet/blob/main/coding-agent/README.md) for details.
+1. Click on [this link](https://github.com/copilot/app/launch?entry_point=upgrade_agent_docs&open=ghapp%3A%2F%2Fplugins%2Fmarketplace%2Fadd%3Fsource%3Dmicrosoft%2Fupgrade-agent-plugins) to automatically open the **Settings** > **Plugins** window in the GitHub Copilot app.
+1. In the **Add plugin marketplace?** dialog, select **Allow**.
+1. In the **Plugins** window, select **Add marketplace**.
+1. Expand the **upgrade-agent-plugins** entry and select **Install** on the **upgrade-agent** plugin.
 
 ## Verify the installation
 
-Confirm that the `modernize-dotnet` agent appears as an available coding agent in your repository.
+Run `/agent` to confirm that `upgrade-agent:upgrade` appears in the agent list.
+
+-or-
+
+Select the **Default agent** dropdown and find the **Upgrade** entry.
 
 ::: zone-end
 

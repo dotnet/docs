@@ -50,6 +50,8 @@ Before you install, make sure you have:
 
 ## Install
 
+Install through the Visual Studio Code:
+
 1. In Visual Studio Code, open the **Extensions** view (<kbd>Ctrl+Shift+X</kbd>).
 1. Search for **GitHub Copilot upgrade**.
 1. Select **Install**.
@@ -79,7 +81,7 @@ Before you install, make sure you have:
 
 ## Install
 
-To install:
+Install through the GitHub Copilot CLI:
 
 1. Open the GitHub Copilot chat window.
 
@@ -112,7 +114,7 @@ Before you install, make sure you have:
 
 ## Install
 
-To install:
+Install through the GitHub Copilot app:
 
 1. Click on [this link](https://github.com/copilot/app/launch?entry_point=upgrade_agent_docs&open=ghapp%3A%2F%2Fplugins%2Fmarketplace%2Fadd%3Fsource%3Dmicrosoft%2Fupgrade-agent-plugins) to automatically open the **Settings** > **Plugins** window in the GitHub Copilot app.
 1. In the **Add plugin marketplace?** dialog, select **Allow**.

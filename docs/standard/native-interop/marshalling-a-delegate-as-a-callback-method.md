@@ -10,7 +10,6 @@ dev_langs:
 helpviewer_keywords:
   - "data marshalling, Callback sample"
   - "marshaling, Callback sample"
-ms.assetid: 6ddd7866-9804-4571-84de-83f5cc017a5a
 ---
 # Marshalling a Delegate as a Callback Method
 

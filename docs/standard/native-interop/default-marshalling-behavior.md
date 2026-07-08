@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "interop marshalling, default"
   - "interoperation with unmanaged code, marshalling"
   - "marshaling behavior"
-ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 ---
 # Default Marshalling Behavior
 

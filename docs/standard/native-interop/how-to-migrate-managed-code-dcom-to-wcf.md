@@ -3,7 +3,6 @@ title: "How to: Migrate managed-code DCOM to WCF"
 description: Migrate Distributed Component Object Model (DCOM) managed code calls between servers and clients to Windows Communication Foundation (WCF).
 ms.date: 07/08/2026
 ai-usage: ai-assisted
-ms.assetid: 52961ffc-d1c7-4f83-832c-786444b951ba
 ---
 # How to: Migrate managed-code DCOM to WCF
 

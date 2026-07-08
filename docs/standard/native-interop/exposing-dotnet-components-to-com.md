@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "exposing .NET components to COM"
   - "interoperation with unmanaged code, exposing .NET components"
   - "COM interop, exposing COM components"
-ms.assetid: e42a65f7-1e61-411f-b09a-aca1bbce24c6
 ---
 # Expose .NET components to COM
 

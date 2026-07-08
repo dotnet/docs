@@ -17,7 +17,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, packaging assemblies"
   - "COM interop, exposing COM components"
   - "Reqasm.exe"
-ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
 ---
 # Package a .NET Framework assembly for COM
 

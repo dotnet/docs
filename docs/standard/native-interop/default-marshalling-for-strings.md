@@ -9,7 +9,6 @@ dev_langs:
 helpviewer_keywords:
   - "strings, interop marshalling"
   - "interop marshalling, strings"
-ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 ---
 # Default marshalling for strings
 

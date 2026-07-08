@@ -16,7 +16,6 @@ helpviewer_keywords:
   - "TypeLibConverter class, importing type library as assembly"
   - "COM interop, importing type library"
   - "COM interop, exposing COM components"
-ms.assetid: d1898229-cd40-426e-a275-f3eb65fbc79f
 ---
 # Import a type library as an assembly
 

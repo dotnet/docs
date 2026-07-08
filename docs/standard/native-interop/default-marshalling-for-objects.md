@@ -9,7 +9,6 @@ dev_langs:
 helpviewer_keywords:
   - "objects, interop marshalling"
   - "interop marshalling, objects"
-ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
 ---
 # Default Marshalling for Objects
 

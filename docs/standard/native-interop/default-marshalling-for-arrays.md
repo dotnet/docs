@@ -9,7 +9,6 @@ dev_langs:
 helpviewer_keywords:
   - "interop marshalling, arrays"
   - "arrays, interop marshalling"
-ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
 ---
 # Default Marshalling for Arrays
 

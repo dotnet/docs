@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "copying, interop marshalling"
   - "interop marshalling, copying"
   - "interop marshalling, pinning"
-ms.assetid: 0059f576-e460-4e70-b257-668870e420b8
 ---
 # Copying and Pinning
 

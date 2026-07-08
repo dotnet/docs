@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "marshaling, COM interop"
   - "interop marshalling"
   - "interop marshalling, about interop marshalling"
-ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
 ---
 # Interop Marshaling
 

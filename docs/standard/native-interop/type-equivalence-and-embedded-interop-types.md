@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "embedded interop types"
   - "primary interop assemblies,not necessary in CLR version 4"
   - "NoPIA"
-ms.assetid: 78892eba-2a58-4165-b4b1-0250ee2f41dc
 ---
 # Type equivalence and embedded interop types
 

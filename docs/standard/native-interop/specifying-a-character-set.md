@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "platform invoke, attribute fields"
   - "attribute fields in platform invoke, CharSet"
   - "CharSet field"
-ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
 ---
 # Specify a character set
 

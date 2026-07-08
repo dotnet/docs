@@ -8,7 +8,6 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "platform invoke, calling unmanaged functions"
-ms.assetid: 9b92ac73-32b7-4e1b-862e-6d8d950cf169
 ---
 # Passing Structures
 

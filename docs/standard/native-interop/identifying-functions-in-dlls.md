@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, platform invoke"
   - "identifying DLL functions"
   - "DLL functions"
-ms.assetid: 3e3f6780-6d90-4413-bad7-ba641220364d
 ---
 # Identifying Functions in DLLs
 

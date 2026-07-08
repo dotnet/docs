@@ -13,7 +13,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, importing type library"
   - "type libraries"
   - "COM interop, importing type library"
-ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
 ---
 # Reference .NET types from COM
 

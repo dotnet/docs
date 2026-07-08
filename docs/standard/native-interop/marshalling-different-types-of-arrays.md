@@ -9,7 +9,6 @@ dev_langs:
 helpviewer_keywords:
   - "marshaling, Arrays sample"
   - "data marshalling, Arrays sample"
-ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 ---
 # Marshalling Different Types of Arrays
 

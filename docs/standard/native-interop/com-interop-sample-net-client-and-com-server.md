@@ -10,7 +10,6 @@ dev_langs:
 helpviewer_keywords:
   - "interoperation with unmanaged code, samples"
   - "COM interop, samples"
-ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
 ---
 # COM interop sample: .NET client and COM server
 

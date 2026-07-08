@@ -11,7 +11,7 @@ ms.assetid: 4b2fcf8a-429d-43ce-8334-e026040be8bb
 # How to: Register primary interop assemblies
 
 > [!NOTE]
-> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](cominterop.md) and [COM source generation](comwrappers-source-generation.md).
+> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](../../standard/native-interop/cominterop.md) and [COM source generation](../../standard/native-interop/comwrappers-source-generation.md).
 
 Classes can be marshalled only by COM interop and are always marshalled as interfaces. In some cases the interface used to marshal the class is known as the class interface. For information about overriding the class interface with an interface of your choice, see [COM Callable Wrapper](../../standard/native-interop/com-callable-wrapper.md).
 
@@ -21,23 +21,22 @@ Classes can be marshalled only by COM interop and are always marshalled as inter
 
  Even if you do not plan to expose third-party COM types, using the primary interop assembly can ease the task of interoperating with COM components. However, this strategy provides no insulation from changes a vendor might make to types defined in a primary interop assembly. When your application requires such insulation, generate your own interop assembly instead of using the primary interop assembly.
 
- You must register all acquired primary interop assemblies on your development computer before you can reference them with Visual Studio. Visual Studio looks for and uses a primary interop assembly the first time that you reference a type from a COM type library. If Visual Studio cannot locate the primary interop assembly associated with the type library, it prompts you to acquire it or offers to create an interop assembly instead. Likewise, the [Type Library Importer (Tlbimp.exe)](../../framework/tools/tlbimp-exe-type-library-importer.md) also uses the registry to locate primary interop assemblies.
+ You must register all acquired primary interop assemblies on your development computer before you can reference them with Visual Studio. Visual Studio looks for and uses a primary interop assembly the first time that you reference a type from a COM type library. If Visual Studio cannot locate the primary interop assembly associated with the type library, it prompts you to acquire it or offers to create an interop assembly instead. Likewise, the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md) also uses the registry to locate primary interop assemblies.
 
  Although it is not necessary to register primary interop assemblies unless you plan to use Visual Studio, registration provides two advantages:
 
 - A registered primary interop assembly is clearly marked under the registry key of the original type library. Registration is the best way for you to locate a primary interop assembly on your computer.
-
 - You can avoid accidentally generating and using a new interop assembly if, at some time in the future, you do use Visual Studio to reference a type for which you have an unregistered primary interop assembly.
 
-Use the [Assembly Registration Tool (Regasm.exe)](../../framework/tools/regasm-exe-assembly-registration-tool.md) to register a primary interop assembly.
+Use the [Assembly Registration Tool (Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md) to register a primary interop assembly.
 
-## To register a primary interop assembly
+## Register a primary interop assembly
 
-1. At the command prompt, type:
+To register a primary interop assembly, at the command prompt, type:
 
-     **regasm** *assemblyname*
+`regasm <assemblyname>`
 
-     In this command, *assemblyname* is the file name of the assembly that is registered. Regasm.exe adds an entry for the primary interop assembly under the same registry key as the original type library.
+In this command, *assemblyname* is the file name of the assembly that is registered. Regasm.exe adds an entry for the primary interop assembly under the same registry key as the original type library.
 
 ## Example
 

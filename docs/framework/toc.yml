@@ -159,6 +159,22 @@ items:
     href: performance/
   - name: Dynamic programming
     href: reflection-and-codedom/
+  - name: Interoperate with unmanaged code
+    items:
+    - name: Overview
+      href: interop/index.md
+    - name: Registration-free COM interop
+      href: interop/registration-free-com-interop.md
+    - name: "How to: Create COM wrappers"
+      href: interop/how-to-create-com-wrappers.md
+    - name: "How to: Create wrappers manually"
+      href: interop/how-to-create-wrappers-manually.md
+    - name: "How to: Generate primary interop assemblies using Tlbimp.exe"
+      href: interop/how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md
+    - name: "How to: Register primary interop assemblies"
+      href: interop/how-to-register-primary-interop-assemblies.md
+    - name: "How to: Configure .NET Framework-based COM components for registration-free activation"
+      href: interop/configure-net-framework-based-com-components-for-reg.md
   - name: Unmanaged API reference
     href: unmanaged-api/
 - name: Tools

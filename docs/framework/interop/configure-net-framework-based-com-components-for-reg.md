@@ -10,20 +10,18 @@ helpviewer_keywords:
   - "manifests [.NET Framework]"
   - "registration-free COM interop, configuring .NET Framework-based components"
   - "activation, registration-free"
-ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
 ---
 # How to: Configure .NET Framework-based COM components for registration-free activation
 
 > [!NOTE]
-> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](cominterop.md) and [COM source generation](comwrappers-source-generation.md).
+> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](../../standard/native-interop/cominterop.md) and [COM source generation](../../standard/native-interop/comwrappers-source-generation.md).
 
 Registration-free activation for .NET Framework-based components is only slightly more complicated than it is for COM components. The setup requires two manifests:
 
 - COM applications must have a Win32-style application manifest to identify the managed component.
-
 - .NET Framework-based components must have a component manifest for activation information needed at runtime.
 
- This topic describes how to associate an application manifest with an application; associate a component manifest with a component; and embed a component manifest in an assembly.
+This article describes how to associate an application manifest with an application; associate a component manifest with a component; and embed a component manifest in an assembly.
 
 ## Create an application manifest
 
@@ -153,7 +151,7 @@ You can install an application manifest in the same directory as the COM applica
 
  You must embed the component manifest as a resource in the assembly.
 
-#### To embed a component manifest in a managed assembly
+### Embed a component manifest in a managed assembly
 
 1. Create a resource script that contains the following statement:
 

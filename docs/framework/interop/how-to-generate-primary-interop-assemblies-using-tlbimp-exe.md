@@ -12,33 +12,30 @@ ms.assetid: 5419011c-6e57-40f6-8c65-386db8f7a651
 # How to: Generate primary interop assemblies using Tlbimp.exe
 
 > [!NOTE]
-> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](cominterop.md) and [COM source generation](comwrappers-source-generation.md).
+> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](../../standard/native-interop/cominterop.md) and [COM source generation](../../standard/native-interop/comwrappers-source-generation.md).
 
 There are two ways to generate a primary interop assembly:
 
-- Using the [Type Library Importer (Tlbimp.exe)](../../framework/tools/tlbimp-exe-type-library-importer.md) provided by the Windows SDK.
+- Using the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md) provided by the Windows SDK.
 
-  The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../../framework/tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:
+  The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:
 
   - Checks for other registered primary interop assemblies before creating new interop assemblies for any nested type library references.
-
   - Fails to emit the primary interop assembly if you do not specify either the container or file name to give the primary interop assembly a strong name.
-
   - Fails to emit a primary interop assembly if you omit references to dependent assemblies.
-
   - Fails to emit a primary interop assembly if you add references to dependent assemblies that are not primary interop assemblies.
 
 - Creating primary interop assemblies manually in source code by using a language that is compliant with the Common Language Specification (CLS), such as C#. This approach is useful when a type library is unavailable.
 
 You must have a cryptographic key pair to sign the assembly with a strong name. For details, see [Creating A Key Pair](../../standard/assembly/create-public-private-key-pair.md).
 
-### To generate a primary interop assembly using Tlbimp.exe
+## Generate a primary interop assembly using Tlbimp.exe
 
 1. At the command prompt, type:
 
-    **tlbimp** *tlbfile*  **/primary /keyfile:** *filename* **/out:** *assemblyname*
+   **tlbimp** *tlbfile*  **/primary /keyfile:** *filename* **/out:** *assemblyname*
 
-    In this command, *tlbfile* is the file containing the COM type library, *filename* is the name of the container or file that contains the key pair, and *assemblyname* is the name of the assembly to sign with a strong name.
+   In this command, *tlbfile* is the file containing the COM type library, *filename* is the name of the container or file that contains the key pair, and *assemblyname* is the name of the assembly to sign with a strong name.
 
 Primary interop assemblies can reference only other primary interop assemblies. If your assembly references types from a third-party COM type library, you must obtain a primary interop assembly from the publisher before you can generate your primary interop assembly. If you are the publisher, you must generate a primary interop assembly for the dependent type library before generating the referencing primary interop assembly.
 

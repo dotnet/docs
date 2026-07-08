@@ -356,15 +356,17 @@ items:
     - name: Calling conventions
       href: ../../standard/native-interop/calling-conventions.md
     - name: Consume unmanaged DLL functions
-      href: ../../standard/native-interop/consuming-unmanaged-dll-functions.md
       items:
+      - name: Overview
+        href: ../../standard/native-interop/consuming-unmanaged-dll-functions.md
       - name: Identify functions in DLLs
         href: ../../standard/native-interop/identifying-functions-in-dlls.md
       - name: Create a class to hold DLL functions
         href: ../../standard/native-interop/creating-a-class-to-hold-dll-functions.md
       - name: Create prototypes in managed code
-        href: ../../standard/native-interop/creating-prototypes-in-managed-code.md
         items:
+        - name: Overview
+          href: ../../standard/native-interop/creating-prototypes-in-managed-code.md
         - name: Specify an entry point
           href: ../../standard/native-interop/specifying-an-entry-point.md
         - name: Specify a character set
@@ -372,8 +374,9 @@ items:
         - name: Platform invoke examples
           href: ../../standard/native-interop/platform-invoke-examples.md
       - name: Call a DLL function
-        href: ../../standard/native-interop/calling-a-dll-function.md
         items:
+        - name: Overview
+          href: ../../standard/native-interop/calling-a-dll-function.md
         - name: Pass structures
           href: ../../standard/native-interop/passing-structures.md
         - name: Callback functions
@@ -400,11 +403,13 @@ items:
     - name: "Tutorial: Use custom marshallers in source generation"
       href: ../../standard/native-interop/tutorial-custom-marshaller.md
     - name: Interop marshalling
-      href: ../../standard/native-interop/interop-marshalling.md
       items:
+      - name: Overview
+        href: ../../standard/native-interop/interop-marshalling.md
       - name: Default marshalling behavior
-        href: ../../standard/native-interop/default-marshalling-behavior.md
         items:
+        - name: Overview
+          href: ../../standard/native-interop/default-marshalling-behavior.md
         - name: Blittable and non-blittable types
           href: ../../standard/native-interop/blittable-and-non-blittable-types.md
         - name: Copying and pinning
@@ -416,8 +421,9 @@ items:
         - name: Default marshalling for strings
           href: ../../standard/native-interop/default-marshalling-for-strings.md
       - name: Marshal data with platform invoke
-        href: ../../standard/native-interop/marshalling-data-with-platform-invoke.md
         items:
+        - name: Overview
+          href: ../../standard/native-interop/marshalling-data-with-platform-invoke.md
         - name: Marshal strings
           href: ../../standard/native-interop/marshalling-strings.md
         - name: MsgBox sample
@@ -429,8 +435,9 @@ items:
         - name: Marshal a delegate as a callback method
           href: ../../standard/native-interop/marshalling-a-delegate-as-a-callback-method.md
       - name: Marshal data with COM interop
-        href: ../../standard/native-interop/marshalling-data-with-com-interop.md
         items:
+        - name: Overview
+          href: ../../standard/native-interop/marshalling-data-with-com-interop.md
         - name: "How to: Create wrappers manually"
           href: ../../standard/native-interop/how-to-create-wrappers-manually.md
         - name: "How to: Migrate managed-code DCOM to WCF"
@@ -460,8 +467,9 @@ items:
       - name: "How to: Create COM wrappers"
         href: ../../standard/native-interop/how-to-create-com-wrappers.md
     - name: Expose COM components to .NET
-      href: ../../standard/native-interop/exposing-com-components.md
       items:
+      - name: Overview
+        href: ../../standard/native-interop/exposing-com-components-to-net.md
       - name: Import a type library as an assembly
         href: ../../standard/native-interop/importing-a-type-library-as-an-assembly.md
       - name: "How to: Add references to type libraries"
@@ -475,8 +483,9 @@ items:
       - name: "Sample: .NET client and COM server"
         href: ../../standard/native-interop/com-interop-sample-net-client-and-com-server.md
     - name: Expose .NET components to COM
-      href: ../../standard/native-interop/exposing-dotnet-components-to-com.md
       items:
+      - name: Overview
+        href: ../../standard/native-interop/exposing-net-components-to-com.md
       - name: Package an assembly for COM
         href: ../../standard/native-interop/packaging-an-assembly-for-com.md
       - name: Register assemblies with COM
@@ -499,11 +508,6 @@ items:
         href: ../../standard/native-interop/how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md
       - name: "How to: Register primary interop assemblies"
         href: ../../standard/native-interop/how-to-register-primary-interop-assemblies.md
-    - name: Registration-free COM interop
-      href: ../../standard/native-interop/registration-free-com-interop.md
-      items:
-      - name: "How to: Configure .NET Framework-based COM components for registration-free activation"
-        href: ../../standard/native-interop/configure-net-framework-based-com-components-for-reg.md
   - name: Apply interop attributes
     href: ../../standard/native-interop/apply-interop-attributes.md
   - name: HRESULT and PreserveSig

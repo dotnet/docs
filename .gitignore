@@ -1,5 +1,6 @@
 docs/_build/
 .idea/
+*.tmp
 *.swp
 rebuild.cmd
 
@@ -33,6 +34,7 @@ _dependentPackages/
 **/.vscode/
 .vscode/
 !.vscode/extensions.json
+*.lscache
 
 # Visual Studio 2019
 .vs

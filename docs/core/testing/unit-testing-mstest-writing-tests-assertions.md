@@ -3,7 +3,7 @@ title: MSTest assertions
 description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/04/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -33,6 +33,9 @@ Assert.AreEqual(expected, actual, "Values should match after processing");
 ## The `Assert` class
 
 Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to verify that the code under test behaves as expected.
+
+> [!NOTE]
+> Starting with MSTest 4.0, all `Assert` APIs capture the argument expression and include it in failure messages. This support provides richer diagnostics without a manual `message` parameter.
 
 ### Common assertion methods
 
@@ -67,6 +70,14 @@ public async Task AssertExamples()
 }
 ```
 
+### The `Assert.That` method
+
+Starting with MSTest 4.0, `Assert.That` evaluates any Boolean expression and produces a clear failure message. For richer diagnostics, `Assert.That` uses `[CallerArgumentExpression]` to capture the expression text automatically.
+
+```csharp
+Assert.That(order.Total > 0);
+```
+
 ### Available APIs
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*?displayProperty=nameWithType>
@@ -79,10 +90,12 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotEndWith*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotMatchRegex*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.DoesNotStartWith*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.EndsWith*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HasCount*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsEmpty*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsExactInstanceOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsGreaterThan*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsGreaterThanOrEqualTo*?displayProperty=nameWithType>
@@ -92,6 +105,7 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsLessThanOrEqualTo*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNegative*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotEmpty*?displayProperty=nameWithType>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotExactInstanceOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull*?displayProperty=nameWithType>
@@ -99,10 +113,107 @@ public async Task AssertExamples()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.MatchesRegex*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.StartsWith*?displayProperty=nameWithType>
+- `Assert.That`
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*?displayProperty=nameWithType>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync*?displayProperty=nameWithType>
+
+> [!NOTE]
+> Starting with MSTest 3.8, collection assertions include `Assert.Contains`, `Assert.DoesNotContain`, `Assert.HasCount`, `Assert.IsEmpty`, `Assert.IsNotEmpty`, and `Assert.ContainsSingle`.
+>
+> Starting with MSTest 3.10, comparison assertions include `Assert.IsInRange`, `Assert.IsGreaterThan`, `Assert.IsGreaterThanOrEqualTo`, `Assert.IsLessThan`, `Assert.IsLessThanOrEqualTo`, `Assert.IsPositive`, and `Assert.IsNegative`.
+>
+> Starting with MSTest 3.10, string-matching assertions include `Assert.StartsWith`, `Assert.EndsWith`, `Assert.MatchesRegex`, `Assert.DoesNotStartWith`, `Assert.DoesNotEndWith`, and `Assert.DoesNotMatchRegex`.
+>
+> Starting with MSTest 4.1, `Assert.IsExactInstanceOfType` and `Assert.IsNotExactInstanceOfType` require an exact type match. Unlike `Assert.IsInstanceOfType`, these methods don't match derived types.
+
+### New collection and equivalence assertions in MSTest 4.3
+
+> [!NOTE]
+> The following assertion methods were introduced in MSTest 4.3.0.
+
+- `Assert.AreSequenceEqual` / `Assert.AreNotSequenceEqual` — element-wise sequence comparison. Pass `SequenceOrder.InAnyOrder` to ignore element order.
+- `Assert.AreEquivalent` / `Assert.AreNotEquivalent` — deep structural comparison of two objects or collections.
+- `Assert.ContainsAll` / `Assert.DoesNotContainAll` — assert that a collection contains (or doesn't contain) every expected element.
+- `Assert.AreAllNotNull` — assert that every element of a collection is non-`null`.
+- `Assert.AreAllDistinct` — assert that all elements of a collection are distinct.
+- `Assert.AreAllOfType` — assert that every element of a collection is of an expected type.
+
+When comparing collections, prefer these methods over `Assert.AreEqual`, which compares references rather than elements.
+
+MSTest 4.3 also adds:
+
+- `Assert.AddValueFormatter` to customize how values are rendered in assertion failure messages.
+- <xref:System.Span`1> and <xref:System.Memory`1> overloads for `Assert.HasCount`.
+- Structured assertion failure messages for `Assert.IsTrue`, `Assert.IsFalse`, `Assert.IsNull`, and `Assert.IsNotNull` that include the evaluated expression.
+- Interpolated-string message overloads for the async `Assert.ThrowsAsync`/`Assert.ThrowsExactlyAsync` methods, and rejection of `ValueTask<TResult>`-returning delegates that would otherwise not be awaited.
+
+### Soft assertions with `Assert.Scope()`
+
+> [!IMPORTANT]
+> `Assert.Scope()` is an experimental API. Using it produces the `MSTESTEXP` diagnostic, which you suppress (for example, with `#pragma warning disable MSTESTEXP` or in your project's `.editorconfig` file) to acknowledge that the shape and behavior of the API can change in future releases.
+
+By default, every assertion throws an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> as soon as it fails, which ends the test immediately. `Assert.Scope()` introduces *soft assertions*: while a scope is active, assertion failures are collected instead of thrown, so execution continues and you can see every failure in the scope at once. When the scope is disposed, the collected failures are reported together:
+
+```csharp
+[TestMethod]
+public void ValidatePerson()
+{
+    using (Assert.Scope())
+    {
+        Assert.AreEqual("Jane", person.FirstName); // failure collected, execution continues
+        Assert.AreEqual("Doe", person.LastName);   // failure collected, execution continues
+        Assert.IsTrue(person.IsActive);            // failure collected, execution continues
+    }
+    // On Dispose, all collected failures are reported together.
+}
+```
+
+When the scope is disposed:
+
+- If exactly one failure was collected, the original `AssertFailedException` is thrown.
+- If multiple failures were collected, a single `AssertFailedException` is thrown that wraps all of them in an `AggregateException`.
+
+#### Postconditions aren't enforced inside a scope
+
+Because a failing assertion no longer throws inside a scope, code that runs after it can't rely on the assertion having succeeded. This applies to *every* postcondition, including nullability and type narrowing:
+
+```csharp
+using (Assert.Scope())
+{
+    Assert.IsNotNull(item);
+    // 'item' might still be null here: the failure was collected, not thrown.
+    Assert.AreEqual("expected", item.Value);
+    // 'item.Value' might not equal "expected" either.
+}
+```
+
+If a failed assertion would lead to a `NullReferenceException` (or any other exception) on a later line within the scope, that secondary exception is a symptom of the already-collected failure, not a separate bug. The original assertion failure is still reported when the scope is disposed.
+
+#### Value-returning assertions return `null`/`default` on failure inside a scope
+
+Some assertions return a value on success—for example, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*> return the caught exception, and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ContainsSingle*> returns the matched element. When one of these assertions *fails* inside a scope, the failure is collected and the method returns `null`/`default` instead of throwing:
+
+```csharp
+using (Assert.Scope())
+{
+    // No exception is thrown by the lambda, so the assertion fails. The failure is
+    // collected and 'ex' is null. Accessing 'ex' below throws NullReferenceException.
+    InvalidOperationException ex = Assert.Throws<InvalidOperationException>(() => { });
+    _ = ex.Message; // NullReferenceException—don't use the return value in a scope
+}
+```
+
+Don't rely on the value returned by a soft assertion inside a scope. If you need the returned value (such as the caught exception), call the assertion *outside* the scope, or restructure the test so nothing depends on the return value until after the scope is disposed.
+
+#### `Assert.Fail` and `Assert.Inconclusive` always throw
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*> are never soft. They always throw immediately, even inside a scope, because they express an unconditional test outcome. Use one of them when a condition is critical and the rest of the test can't meaningfully continue without it.
+
+#### Nested scopes aren't supported
+
+You can't nest `Assert.Scope()` calls. Only one assertion scope can be active at a time.
 
 ## The `StringAssert` class
 

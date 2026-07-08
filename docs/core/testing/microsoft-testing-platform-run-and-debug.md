@@ -3,7 +3,7 @@ title: Run and debug tests with Microsoft.Testing.Platform (MTP)
 description: Learn how to run and debug MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/24/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -22,6 +22,11 @@ MTP test projects are built as executables that can be run (or debugged) directl
 
 > [!IMPORTANT]
 > By default, MTP collects telemetry. For more information and options on opting out, see [MTP telemetry](microsoft-testing-platform-telemetry.md).
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0.
+>
+> For a graceful stop, press <kbd>Ctrl</kbd>+<kbd>C</kbd> once to request cancellation. Running tests can finish teardown. To terminate immediately, press <kbd>Ctrl</kbd>+<kbd>C</kbd> again.
 
 ## [.NET CLI](#tab/dotnetcli)
 

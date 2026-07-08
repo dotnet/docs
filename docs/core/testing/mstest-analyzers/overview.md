@@ -4,6 +4,7 @@ description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
 ms.date: 12/20/2023
+ai-usage: ai-assisted
 ---
 
 # MSTest code analysis
@@ -112,6 +113,8 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0057](mstest0057.md) - TestMethodAttribute should propagate source information
 - [MSTEST0060](mstest0060.md) - Duplicate TestMethodAttribute
 - [MSTEST0063](mstest0063.md) - Test class should have valid constructor
+- [MSTEST0069](mstest0069.md) - Inherited `[TestClass]` is ignored by the MSTest source generator
+- [MSTEST0071](mstest0071.md) - Test method should not specify a display name equal to its name
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
@@ -190,6 +193,7 @@ Rules for properly using the TestContext object:
 - [MSTEST0005](mstest0005.md) - TestContext should be valid
 - [MSTEST0024](mstest0024.md) - Do not store static TestContext
 - [MSTEST0033](mstest0033.md) - Suppress non-nullable reference not initialized warning
+- [MSTEST0047](mstest0047.md) - Suppress IDE0060 for the TestContext parameter
 - [MSTEST0048](mstest0048.md) - TestContext property usage
 - [MSTEST0049](mstest0049.md) - Flow TestContext CancellationToken
 - [MSTEST0054](mstest0054.md) - Use CancellationToken property
@@ -209,6 +213,7 @@ Rules for configuring test execution, parallelization, and other test settings:
 - [MSTEST0055](mstest0055.md) - Do not ignore string method return value
 - [MSTEST0059](mstest0059.md) - Use Parallelize attribute correctly
 - [MSTEST0061](mstest0061.md) - Use OSCondition attribute instead of runtime check
+- [MSTEST0070](mstest0070.md) - `[MemberCondition]` arguments should be valid
 
 Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), [Running tests](../unit-testing-mstest-running-tests.md)
 
@@ -262,6 +267,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0044](mstest0044.md) | Design | Prefer TestMethod over DataTestMethod | Info |
 | [MSTEST0045](mstest0045.md) | Design | Use cooperative cancellation for timeout | Info |
 | [MSTEST0046](mstest0046.md) | Usage | Use Assert instead of StringAssert | Info |
+| [MSTEST0047](mstest0047.md) | Suppression | Suppress IDE0060 for the TestContext parameter | N/A |
 | [MSTEST0048](mstest0048.md) | Usage | TestContext property usage | Warning |
 | [MSTEST0049](mstest0049.md) | Usage | Flow TestContext CancellationToken | Info |
 | [MSTEST0050](mstest0050.md) | Usage | Global test fixture should be valid | Warning |
@@ -278,6 +284,9 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0061](mstest0061.md) | Usage | Use OSCondition attribute instead of runtime check | Info |
 | [MSTEST0062](mstest0062.md) | Usage | Avoid out/ref test method parameters | Warning |
 | [MSTEST0063](mstest0063.md) | Usage | Test class should have valid constructor | Warning |
+| [MSTEST0069](mstest0069.md) | Usage | Inherited `[TestClass]` is ignored by the MSTest source generator | Warning |
+| [MSTEST0070](mstest0070.md) | Usage | `[MemberCondition]` arguments should be valid | Warning |
+| [MSTEST0071](mstest0071.md) | Usage | Test method should not specify a display name equal to its name | Info |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

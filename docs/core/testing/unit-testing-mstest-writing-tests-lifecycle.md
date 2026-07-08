@@ -3,7 +3,8 @@ title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest, including initialization and cleanup at assembly, class, and test levels.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 07/15/2025
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest lifecycle
@@ -73,6 +74,37 @@ public class AssemblyLifecycleExample
 > - [MSTEST0012](mstest-analyzers/mstest0012.md) - validates `AssemblyInitialize` signature.
 > - [MSTEST0013](mstest-analyzers/mstest0013.md) - validates `AssemblyCleanup` signature.
 
+### Shared assembly fixtures with `AssemblyFixtureProvider`
+
+> [!NOTE]
+> The `AssemblyFixtureProviderAttribute` was introduced in MSTest 4.3.0.
+
+By default, `[AssemblyInitialize]` and `[AssemblyCleanup]` methods must be declared in the test assembly that uses them. The `AssemblyFixtureProviderAttribute` lets you declare those methods once in a shared library and have them discovered and run once per consuming test assembly. Apply the assembly-level attribute and point it at the type that hosts the `[AssemblyInitialize]`/`[AssemblyCleanup]` methods.
+
+```csharp
+// In a shared library.
+public static class SharedAssemblyFixtures
+{
+    [AssemblyInitialize]
+    public static void Init(TestContext context)
+    {
+        // Runs once per consuming test assembly.
+    }
+
+    [AssemblyCleanup]
+    public static void Cleanup()
+    {
+    }
+}
+```
+
+```csharp
+// In each test assembly that should run the shared fixtures.
+[assembly: AssemblyFixtureProvider(typeof(SharedAssemblyFixtures))]
+```
+
+The attribute allows multiple providers per assembly, so you can compose fixtures from several shared types.
+
 ## Class-level lifecycle
 
 Class lifecycle methods run once per test class, before and after all test methods in that class. Use these for setup shared across tests in a class.
@@ -118,6 +150,9 @@ public class ClassLifecycleExample
 - `ClassInitialize` requires one `TestContext` parameter
 - `ClassCleanup` accepts zero parameters, or one `TestContext` parameter (MSTest 3.8+)
 - Only one of each attribute allowed per class
+
+> [!NOTE]
+> Starting with MSTest 4.2, MSTest reports failures in `ClassCleanup` and `AssemblyCleanup` as a separate test result. The separate result makes cleanup failures easier to identify in Test Explorer and TRX reports.
 
 ### Inheritance behavior
 

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) OpenTelemetry
 description: Learn how to use the OpenTelemetry extension to emit traces and metrics from MTP.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/25/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -12,6 +12,9 @@ ai-usage: ai-assisted
 This feature requires the [Microsoft.Testing.Extensions.OpenTelemetry](https://nuget.org/packages/Microsoft.Testing.Extensions.OpenTelemetry) NuGet package.
 
 This extension integrates [OpenTelemetry](https://opentelemetry.io/) with Microsoft.Testing.Platform (MTP), allowing test runs to emit traces and metrics through the standard OpenTelemetry SDK.
+
+> [!NOTE]
+> This extension is available in MTP starting with version 2.1.0.
 
 > [!IMPORTANT]
 > This extension is currently experimental. All public APIs are gated behind the `TPEXP` diagnostic ID.

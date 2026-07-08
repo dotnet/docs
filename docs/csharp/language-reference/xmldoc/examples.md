@@ -44,11 +44,11 @@ Add XML comments for `<summary>`, `<param>`, and, if necessary, `<typeparam>` to
 
 The C# compiler copies the XML nodes from the `extension` block to all members declared in that block.
 
-For an extension indexer, `cref` syntax can reference the indexer and its accessors through the `extension` block that declares it. The following examples show how to reference the `this[int]` indexer and its generated `get_Item` accessor from the preceding example:
+For an extension indexer, `cref` syntax can reference the indexer and its accessors through the `extension` block that declares it, and it can reference the implementation methods on the containing class. The following examples show how to reference the `this[int]` indexer and its generated `get_Item` accessor from the preceding example:
 
 ```csharp
 /// <seealso cref="Extensions.extension{TSequence}(System.Collections.Generic.IEnumerable{TSequence}).this[int]"/>
-/// <seealso cref="Extensions.get_Item"/>
+/// <seealso cref="Extensions.extension{TSequence}(System.Collections.Generic.IEnumerable{TSequence}).get_Item(int)"/>
 ```
 
 ## Math class example

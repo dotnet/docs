@@ -36,7 +36,7 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 | **SqlClient upgrade** | Upgrades from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
 | **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
 | **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
-| **Aspire integration** | Adds .NET Aspire support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
+| **Aspire integration** | Adds [Aspire](https://aspire.dev) support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
 | **Aspire version upgrade** | Upgrades existing Aspire applications to newer versions. | _"Upgrade my Aspire version"_ |
 | **WebForms-to-Blazor upgrade** | Upgrades ASP.NET Web Forms applications to Blazor. | _"Migrate my Web Forms app to Blazor"_ |
 

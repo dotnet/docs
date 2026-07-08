@@ -33,7 +33,7 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 | [**SqlClient upgrade**](#sqlclient-upgrade) | Upgrades System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient to the modern package"_ |
 | [**Azure Functions upgrade**](#azure-functions-upgrade) | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
 | [**Semantic Kernel to Agents**](#semantic-kernel-to-microsoft-agent-framework) | Upgrades from SK Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
-| [**Aspire integration**](#aspire-integration) | Adds .NET Aspire support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
+| [**Aspire integration**](#aspire-integration) | Adds [Aspire](https://aspire.dev) support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
 | [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire applications to newer versions. | _"Upgrade my Aspire version"_ |
 | [**WebForms-to-Blazor upgrade**](#webforms-to-blazor-upgrade) | Upgrades ASP.NET Web Forms applications to Blazor. | _"Migrate my Web Forms app to Blazor"_ |
 
@@ -69,11 +69,11 @@ Upgrades from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAge
 
 ### Aspire integration
 
-Adds .NET Aspire support to existing applications for inner-loop development and Azure deployment. Configures the Aspire orchestration layer and integrates with the Aspire CLI agent.
+Adds [Aspire](https://aspire.dev) support to existing applications for inner-loop development and Azure deployment. Configures the Aspire orchestration layer and integrates with the Aspire CLI agent.
 
 ### Aspire version upgrade
 
-Upgrades existing .NET Aspire applications to newer versions of Aspire. Handles package updates, configuration changes, and breaking API changes between Aspire versions.
+Upgrades existing Aspire applications to newer versions of Aspire. Handles package updates, configuration changes, and breaking API changes between Aspire versions.
 
 ### WebForms-to-Blazor upgrade
 

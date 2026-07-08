@@ -192,6 +192,7 @@ This section describes the following environment variables:
 - [`DOTNET_SERVICING`](#dotnet_servicing)
 - [`DOTNET_NOLOGO`](#dotnet_nologo)
 - [`DOTNET_CLI_PERF_LOG`](#dotnet_cli_perf_log)
+- [`DOTNET_CLI_ENABLEAOT`](#dotnet_cli_enableaot)
 - [`DOTNET_GENERATE_ASPNET_CERTIFICATE`](#dotnet_generate_aspnet_certificate)
 - [`DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`](#dotnet_add_global_tools_to_path)
 - [`DOTNET_CLI_TELEMETRY_OPTOUT`](#dotnet_cli_telemetry_optout)
@@ -323,6 +324,18 @@ Specifies whether .NET welcome and telemetry messages are displayed on the first
 ### `DOTNET_CLI_PERF_LOG`
 
 Specifies whether performance details about the current CLI session are logged. Enabled when set to `1`, `true`, or `yes`. This is disabled by default.
+
+### `DOTNET_CLI_ENABLEAOT`
+
+Specifies whether the .NET SDK uses its native (ahead-of-time compiled) CLI command-handling fast path. When enabled, common commands (such as command-line parsing, `dotnet --version`, and `dotnet --info`) are handled by a native entry point for faster startup, transparently falling back to the managed CLI for anything the fast path doesn't handle.
+
+Set this variable to control the fast path explicitly:
+
+- To enable it, set the variable to `true`, `1`, `yes`, or `on`.
+- To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
+
+> [!NOTE]
+> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on Windows. On macOS and Linux it's disabled by default because of a command-line parsing issue ([dotnet/command-line-api#2812](https://github.com/dotnet/command-line-api/issues/2812)): when the native CLI is loaded as a NativeAOT shared library, `Environment.GetCommandLineArgs()` returns an empty array on those platforms, which causes command-line parsing to throw. It will be enabled by default on macOS and Linux once that issue is resolved. In the meantime, you can opt in early on those platforms by setting the variable to a value that enables it.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 

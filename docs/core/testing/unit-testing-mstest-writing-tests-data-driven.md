@@ -4,7 +4,7 @@ description: Learn how to use data-driven testing in MSTest with DataRow, Dynami
 author: Evangelink
 ms.author: amauryleve
 ai-usage: ai-assisted
-ms.date: 03/09/2026
+ms.date: 06/16/2026
 ---
 
 # Data-driven testing in MSTest
@@ -98,6 +98,9 @@ public class DataRowExamples
 }
 ```
 
+> [!NOTE]
+> Starting with MSTest v3.10, use `DateOnly` and `TimeOnly` as `DataRow` arguments and in `DynamicData` parameterized tests.
+
 ### Using params for variable arguments
 
 Use the `params` keyword to accept a variable number of arguments:
@@ -114,6 +117,20 @@ public class ParamsExample
     {
         Assert.IsTrue(values.Length > 0);
     }
+}
+```
+
+### Generic test methods
+
+Starting with MSTest v3.8, a `TestMethod` can have type parameters. The framework infers type arguments from `DataRow` or `DynamicData` values:
+
+```csharp
+[TestMethod]
+[DataRow(42)]
+[DataRow("alpha")]
+public void Value_RoundTrips<T>(T value)
+{
+    Assert.AreEqual(value, value);
 }
 ```
 
@@ -178,7 +195,10 @@ The data source can return any `IEnumerable<T>` where `T` is one of the types li
 
 ### Data sources
 
-The data source can be a method, property, or field. All three are interchangeable—choose based on your preference:
+The data source can be a method or property and, starting with MSTest v3.11, a field. These sources are interchangeable, so choose based on your preference:
+
+> [!NOTE]
+> Starting with MSTest v3.8, `DynamicData` auto-detects the data source type. You don't need to specify `DynamicDataSourceType` explicitly.
 
 ```csharp
 [TestClass]
@@ -231,6 +251,9 @@ public class DynamicDataExample
 > [!NOTE]
 > Data source methods, properties, and fields must be `public static` and return an `IEnumerable<T>` of a supported type.
 
+> [!NOTE]
+> Starting with MSTest v3.11, the data source can be a field. Earlier versions support methods and properties.
+
 > [!TIP]
 > Related analyzer: [MSTEST0018](mstest-analyzers/mstest0018.md) validates that the data source exists, is accessible, and has the correct signature.
 
@@ -258,6 +281,19 @@ public class DynamicDataExternalExample
         Assert.IsTrue(value1 > 0);
     }
 }
+```
+
+### Parameterized `DynamicData` source methods
+
+Starting with MSTest v3.10, pass values to a `DynamicData` source method with the `Arguments` property:
+
+```csharp
+[TestMethod]
+[DynamicData(nameof(GetValues), Arguments = new object[] { true })]
+public void Value_IsPositive(int value, bool expected) => Assert.AreEqual(expected, value > 0);
+
+public static IEnumerable<(int Value, bool Expected)> GetValues(bool includeZero) =>
+    includeZero ? [(1, true), (0, false)] : [(1, true)];
 ```
 
 ### Custom display names
@@ -325,6 +361,9 @@ public class IgnoreDynamicDataExample
 ## `TestDataRow`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> class provides enhanced control over test data in data-driven tests. Use <xref:System.Collections.Generic.IEnumerable`1> of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> as your data source return type to specify:
+
+> [!NOTE]
+> MSTest introduced `TestDataRow<T>` in version 3.8.
 
 - **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.DisplayName> property.
 - **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.TestCategories> property.

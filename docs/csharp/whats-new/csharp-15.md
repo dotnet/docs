@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: Get an overview of the new features in C# 15. C# 15 ships with .NET 11.
-ms.date: 06/16/2026
+ms.date: 07/08/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -13,6 +13,7 @@ C# 15 includes the following new features. Try these features by using the lates
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
 - [Closed hierarchies](#closed-hierarchies)
+- [Extension indexers](#extension-indexers)
 - [Memory safety](#memory-safety)
 
 C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
@@ -107,6 +108,31 @@ The `closed` modifier is a contextual keyword. A `closed` class is implicitly `a
 > ```
 
 For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/closed-hierarchies.md). You can copy the examples in this section, including the `ClosedAttribute` workaround, from the [keywords snippets project](https://github.com/dotnet/docs/blob/main/docs/csharp/language-reference/keywords/snippets/shared) in the `dotnet/docs` GitHub repository.
+
+## Extension indexers
+
+Starting with C# 15, you can declare *indexers* in an `extension` block. Extension indexers let you index into a receiver as though the indexer were declared on the receiver type. Because indexers are always instance members, an extension block that declares an indexer must provide a named receiver parameter.
+
+The following example declares a get-only indexer on `IEnumerable<int>` that returns the element at a specified position:
+
+```csharp
+public static class SequenceIndexer
+{
+    extension(IEnumerable<int> sequence)
+    {
+        public int this[int index] => sequence.ElementAt(index);
+    }
+}
+```
+
+You index into the receiver as though the indexer were a member of the receiver type:
+
+```csharp
+IEnumerable<int> numbers = Enumerable.Range(1, 10);
+int third = numbers[2];
+```
+
+For more information, see [Extension declaration](../language-reference/keywords/extension.md#extension-indexers) in the language reference or the [feature specification](~/_csharplang/proposals/extension-indexers.md).
 
 ## Memory safety
 

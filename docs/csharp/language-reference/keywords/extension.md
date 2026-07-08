@@ -1,7 +1,7 @@
 ---
 title: "Extension member declarations"
 description: "Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface."
-ms.date: 01/21/2026
+ms.date: 07/08/2026
 f1_keywords:
   - "extension_CSharpKeyword"
   - "extension"
@@ -12,7 +12,7 @@ Starting with C# 14, top-level, nongeneric `static class` declarations can use `
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The `extension` block specifies the type and receiver for extension members. You can declare methods, properties, or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
+The `extension` block specifies the type and receiver for extension members. You can declare methods, properties, indexers, or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
 
 > [!NOTE]
 > All the examples in this article include XML comments for the members and the extension block. The node on the `extension` block describes the extended type and the receiver parameter. The C# compiler copies this node to the generated member for all members in the extension block. These examples demonstrate the preferred style for generating XML documentation for extension members.
@@ -66,9 +66,22 @@ The equivalent extension method declarations demonstrate how those type paramete
 
 :::code language="csharp" source="./snippets/ExtensionMethods.cs" id="GenericExtensionMethods":::
 
+## Extension indexers
+
+Starting with C# 15, you can declare *indexers* in an `extension` block. An extension indexer lets you index into a receiver as though the indexer were declared on the receiver type. Because indexers are always instance members, an extension block that declares an indexer must provide a named receiver parameter. Extension indexers support the same features as ordinary indexers, including `get` and `set` accessors, expression-bodied accessors, and ref-returning accessors.
+
+The following example declares a get-only indexer on `IEnumerable<int>` that returns the element at a specified position:
+
+:::code language="csharp" source="./snippets/extensions.cs" id="ExtensionIndexer":::
+
+You index into the receiver as though the indexer were a member of the receiver type:
+
+:::code language="csharp" source="./snippets/extensions.cs" id="UseExtensionIndexer":::
+
 ## See also
 
 - [Extensions feature specification](~/_csharplang/proposals/csharp-14.0/extensions.md)
+- [Extension indexers feature specification](~/_csharplang/proposals/extension-indexers.md)
 
 ## C# language specification
 

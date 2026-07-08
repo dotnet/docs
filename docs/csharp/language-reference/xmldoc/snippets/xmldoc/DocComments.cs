@@ -362,6 +362,13 @@ public static class Extensions
                 yield return generator();
             }
         }
+
+        /// <summary>
+        /// Gets the element at the specified position in the sequence.
+        /// </summary>
+        /// <param name="index">The zero-based position of the element to retrieve.</param>
+        /// <returns>The element at the specified position.</returns>
+        public TSequence this[int index] => sequence.ElementAt(index);
     }
 }
 // </ExtensionExample>

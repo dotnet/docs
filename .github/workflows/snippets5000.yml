@@ -41,7 +41,7 @@ jobs:
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
-      uses: actions/setup-dotnet@9a946fdbd5fb07b82b2f5a4466058b876ab72bb2 #@5.3.0
+      uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 #@5.4.0
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
         dotnet-quality: ${{ env.DOTNET_QUALITY }}

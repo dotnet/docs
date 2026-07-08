@@ -21,7 +21,7 @@ Set up GitHub Copilot modernization in your development environment before start
 
 ## Initiate the upgrade
 
-To start an upgrade, use the `modernize-dotnet` agent in Copilot:
+To start the upgrade, follow these steps:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 

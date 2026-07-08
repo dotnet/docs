@@ -76,10 +76,13 @@ Follow these guidelines to write clear, effective custom upgrade instructions th
 
 Before running the instruction during an upgrade, validate it in isolation. Isolated testing helps you refine detection and verify code changes.
 
-1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
+### Initiate the upgrade
 
-   > [!NOTE]
-   > These steps apply to Visual Studio. In Visual Studio Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
+Use the following steps to start an upgrade:
+
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
+
+### Customize the upgrade
 
 1. In chat, invoke the instruction with wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
 1. Confirm in the chat window that Copilot retrieved the instruction file:
@@ -106,12 +109,16 @@ If the test run doesn't produce the expected results, use these troubleshooting 
 
 Use these steps to incorporate an existing custom upgrade instruction into the assessment stage of an upgrade.
 
-1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
+### Initiate the upgrade
 
-   > [!NOTE]
-   > These steps apply to Visual Studio. In Visual Studio Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel.
+To start the upgrade, follow these steps:
 
-1. In the chat, choose `Upgrade to a newer version of .NET`. Answer Copilot's questions until it begins the assessment.
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
+
+### Customize the upgrade
+
+Follow these steps during the assessment stage:
+
 1. Monitor the chat to see if Copilot automatically retrieves your custom instruction file during the assessment. Look for a message indicating it opened the Markdown instruction file.
 
    If Copilot doesn't automatically apply the custom instructions, explicitly request them. Use wording similar to the file name. For example, `use the custom instructions to replace Newtonsoft with System.Text.Json during the assessment`.

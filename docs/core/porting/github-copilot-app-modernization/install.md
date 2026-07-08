@@ -62,9 +62,9 @@ The extension automatically acquires the .NET SDK if it's missing, registers too
 
 1. Open a project in Visual Studio Code.
 1. Open the **GitHub Copilot Chat** window.
-1. Send `@upgrade` in chat and see if it responds.
+1. Send `@upgrade` in chat and confirm the agent responds.
 
-   \-or-
+   -or-
 
    Select the `Agent` dropdown and find the `Upgrade` entry.
 

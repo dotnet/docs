@@ -20,7 +20,7 @@ COM interop functionality can be achieved through a built-in system in the .NET 
 
 ## .NET Framework interop guidance
 
-If you maintain .NET Framework apps, use these interop articles:
+If you maintain .NET Framework apps, use these interop articles.
 
 - [Expose COM components to .NET Framework](../../framework/interop/exposing-com-components.md)
 - [Expose .NET Framework components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)

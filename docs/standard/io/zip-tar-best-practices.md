@@ -253,7 +253,7 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 
 ### TAR extended attributes and link names
 
-- **PAX extended attributes** (<xref:System.Formats.Tar.PaxTarEntry.ExtendedAttributes?displayProperty=nameWithType>) are an arbitrary, archive-supplied set of key-value strings. A PAX entry can carry many attributes, and individual values can be large. The format also uses these attributes to override standard header fields such as the entry path, link name, and size. Treat them as untrusted input: if your application reads or acts on extended attributes, validate their contents and bound how many you process and how large they can be.
+- **PAX extended attributes** (<xref:System.Formats.Tar.PaxTarEntry.ExtendedAttributes?displayProperty=nameWithType>) are an arbitrary, archive-supplied set of key-value strings. A PAX entry can carry many attributes, and individual values can be large. The format also uses these attributes to override standard header fields such as the entry path, link name, and size. Treat them as untrusted input: if your application reads or acts on extended attributes, validate their contents and set limits on how many you process and how large they can be.
 - **Link names** (<xref:System.Formats.Tar.TarEntry.LinkName?displayProperty=nameWithType>) on symbolic-link and hard-link entries are archive-supplied paths. Validate them the same way you validate entry names—see [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar).
 
 ## Encryption considerations (.NET 11+)
@@ -345,7 +345,7 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 - **Symlink/hardlink attacks (TAR):** Validate link targets resolve within the destination, or skip link entries entirely.
 - **Memory limits:** Avoid <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> for large untrusted archives. Avoid <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> mode with unseekable streams from untrusted sources.
 - **Thread safety:** Don't share <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader?displayProperty=fullName>, or <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> instances across threads.
-- **Untrusted metadata:** Treat entry names, link names, comments, ZIP extra fields, and TAR PAX extended attributes as untrusted input. Validate and bound them before display or processing.
+- **Untrusted metadata:** Treat entry names, link names, comments, ZIP extra fields, and TAR PAX extended attributes as untrusted input. Validate them and set limits before display or processing.
 - **Overwrite behavior:** Default to `overwrite: false`.
 - **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive?displayProperty=fullName>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
 

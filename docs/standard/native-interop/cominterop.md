@@ -17,3 +17,15 @@ COM interop functionality can be achieved through a built-in system in the .NET 
 - [Runtime Callable Wrappers](./runtime-callable-wrapper.md)
 - [Qualifying .NET Types for COM Interoperation](./qualify-net-types-for-interoperation.md)
 - [Trimmer and Native AOT-friendly COM interop](./tutorial-comwrappers.md)
+
+## .NET Framework interop guidance
+
+If you maintain .NET Framework apps, use these interop articles:
+
+- [Expose COM components to .NET Framework](../../framework/interop/exposing-com-components.md)
+- [Expose .NET Framework components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Consume unmanaged DLL functions](../../framework/interop/consuming-unmanaged-dll-functions.md)
+- [Interop marshalling in .NET Framework](../../framework/interop/interop-marshalling.md)
+- [Map HRESULTs and exceptions](../../framework/interop/how-to-map-hresults-and-exceptions.md)
+- [Type equivalence and embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
+- [Registration-free COM interop](../../framework/interop/registration-free-com-interop.md)

@@ -57,5 +57,5 @@ COM clients can consume C# types that have been correctly exposed. The basic ste
 - [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)
 - [Introduction to COM Interop in Visual Basic](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
 - [Marshaling between Managed and Unmanaged Code](../../../framework/interop/interop-marshalling.md)
-- [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
+- [Interoperating with Unmanaged Code](../../../standard/native-interop/cominterop.md)
 - [Registering Assemblies with COM](../../../framework/interop/registering-assemblies-with-com.md)

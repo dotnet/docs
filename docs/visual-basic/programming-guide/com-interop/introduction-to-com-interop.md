@@ -57,7 +57,7 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 
 - [COM Interop](index.md)
 - [Walkthrough: Implementing Inheritance with COM Objects](walkthrough-implementing-inheritance-with-com-objects.md)
-- [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
+- [Interoperating with Unmanaged Code](../../../standard/native-interop/cominterop.md)
 - [Troubleshooting Interoperability](troubleshooting-interoperability.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)

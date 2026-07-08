@@ -274,7 +274,7 @@ As you can see, these tables match the C++ example, so these interfaces will fun
 
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 - <xref:System.Runtime.InteropServices.ComImportAttribute>
-- [Expose .NET Framework components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Expose .NET Framework components to COM](exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
 - [Apply interop attributes](apply-interop-attributes.md)
-- [Package a .NET Framework assembly for COM](../../framework/interop/packaging-an-assembly-for-com.md)
+- [Package a .NET Framework assembly for COM](packaging-an-assembly-for-com.md)

@@ -67,7 +67,7 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
 ## See also
 
 - <xref:System.Runtime.InteropServices>
-- [Exposing .NET Framework Components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
 - [Attributes](../attributes/index.md)
 - [Qualifying .NET Types for Interoperation](qualify-net-types-for-interoperation.md)
-- [Packaging a .NET Framework Assembly for COM](../../framework/interop/packaging-an-assembly-for-com.md)
+- [Packaging a .NET Framework Assembly for COM](packaging-an-assembly-for-com.md)

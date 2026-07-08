@@ -552,13 +552,13 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/docs/framework/data/adonet/sql/sqldependency-in-an-aspnet-app.md",
+      "redirect_url": "/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server"
+    },
+    {
       "source_path_from_root": "/docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md",
       "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/framework/data/adonet/sql/sqldependency-in-an-aspnet-app.md",
-      "redirect_url": "/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server"
     },
     {
       "source_path_from_root": "/docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md",
@@ -969,12 +969,12 @@
       "redirect_url": "/dotnet/framework"
     },
     {
-      "source_path_from_root": "/docs/framework/get-started/the-net-framework-and-out-of-band-releases.md",
-      "redirect_url": "/dotnet/framework/get-started/out-of-band-releases"
-    },
-    {
       "source_path_from_root": "/docs/framework/get-started/net-core-and-open-source.md",
       "redirect_url": "/dotnet/core/introduction"
+    },
+    {
+      "source_path_from_root": "/docs/framework/get-started/the-net-framework-and-out-of-band-releases.md",
+      "redirect_url": "/dotnet/framework/get-started/out-of-band-releases"
     },
     {
       "source_path_from_root": "/docs/framework/install/dotnet-35-windows-10.md",
@@ -983,27 +983,6 @@
     {
       "source_path_from_root": "/docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
       "redirect_url": "/dotnet/framework/install/dotnet-35-windows"
-    },
-    {
-      "source_path_from_root": "/docs/framework/install/on-windows-7.md",
-      "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-7",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/docs/framework/install/on-windows-8.md",
-      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/install/on-windows-8-1.md",
-      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/install/on-windows-10.md",
-      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/install/on-windows-11.md",
-      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
     },
     {
       "source_path_from_root": "/docs/framework/install/on-server-2019.md",
@@ -1015,6 +994,27 @@
     },
     {
       "source_path_from_root": "/docs/framework/install/on-server-2025.md",
+      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/install/on-windows-10.md",
+      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/install/on-windows-11.md",
+      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/install/on-windows-7.md",
+      "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-7",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/docs/framework/install/on-windows-8-1.md",
+      "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/install/on-windows-8.md",
       "redirect_url": "/dotnet/framework/install/on-windows-and-server"
     },
     {
@@ -1037,8 +1037,33 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/framework/interop/blittable-and-non-blittable-types.md",
+      "redirect_url": "/dotnet/standard/native-interop/blittable-and-non-blittable-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/callback-functions.md",
+      "redirect_url": "/dotnet/standard/native-interop/callback-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/calling-a-dll-function.md",
+      "redirect_url": "/dotnet/standard/native-interop/calling-a-dll-function",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/framework/interop/com-callable-wrapper.md",
       "redirect_url": "/dotnet/standard/native-interop/com-callable-wrapper",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/com-interop-sample-com-client-and-net-server.md",
+      "redirect_url": "/dotnet/standard/native-interop/com-interop-sample-com-client-and-net-server",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/com-interop-sample-net-client-and-com-server.md",
+      "redirect_url": "/dotnet/standard/native-interop/com-interop-sample-net-client-and-com-server",
       "redirect_document_id": true
     },
     {
@@ -1047,8 +1072,258 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/framework/interop/compiling-an-interop-project.md",
+      "redirect_url": "/dotnet/standard/native-interop/compiling-an-interop-project",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/configure-net-framework-based-com-components-for-reg.md",
+      "redirect_url": "/dotnet/standard/native-interop/configure-net-framework-based-com-components-for-reg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/consuming-unmanaged-dll-functions.md",
+      "redirect_url": "/dotnet/standard/native-interop/consuming-unmanaged-dll-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/copying-and-pinning.md",
+      "redirect_url": "/dotnet/standard/native-interop/copying-and-pinning",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/creating-a-class-to-hold-dll-functions.md",
+      "redirect_url": "/dotnet/standard/native-interop/creating-a-class-to-hold-dll-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/creating-prototypes-in-managed-code.md",
+      "redirect_url": "/dotnet/standard/native-interop/creating-prototypes-in-managed-code",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshaling-behavior.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-behavior",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshaling-for-arrays.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-for-arrays",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshaling-for-objects.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-for-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshaling-for-strings.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-for-strings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshalling-behavior.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-behavior",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshalling-for-arrays.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-for-arrays",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshalling-for-objects.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-for-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/default-marshalling-for-strings.md",
+      "redirect_url": "/dotnet/standard/native-interop/default-marshalling-for-strings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/deploying-an-interop-application.md",
+      "redirect_url": "/dotnet/standard/native-interop/deploying-an-interop-application",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/exposing-com-components.md",
+      "redirect_url": "/dotnet/standard/native-interop/exposing-com-components",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/exposing-dotnet-components-to-com.md",
+      "redirect_url": "/dotnet/standard/native-interop/exposing-dotnet-components-to-com",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-add-references-to-type-libraries.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-add-references-to-type-libraries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-create-com-wrappers.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-create-com-wrappers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-create-wrappers-manually.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-create-wrappers-manually",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-generate-interop-assemblies-from-type-libraries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-generate-primary-interop-assemblies-using-tlbimp-exe",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-implement-callback-functions.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-implement-callback-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-map-hresults-and-exceptions.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-map-hresults-and-exceptions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-migrate-managed-code-dcom-to-wcf",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-reference-net-types-from-com.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-reference-net-types-from-com",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/how-to-register-primary-interop-assemblies.md",
+      "redirect_url": "/dotnet/standard/native-interop/how-to-register-primary-interop-assemblies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/identifying-functions-in-dlls.md",
+      "redirect_url": "/dotnet/standard/native-interop/identifying-functions-in-dlls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/importing-a-type-library-as-an-assembly.md",
+      "redirect_url": "/dotnet/standard/native-interop/importing-a-type-library-as-an-assembly",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/index.md",
+      "redirect_url": "/dotnet/standard/native-interop/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/interop-marshaling.md",
+      "redirect_url": "/dotnet/standard/native-interop/interop-marshalling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/interop-marshalling.md",
+      "redirect_url": "/dotnet/standard/native-interop/interop-marshalling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-a-delegate-as-a-callback-method",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshaling-classes-structures-and-unions.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-classes-structures-and-unions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshaling-data-with-com-interop.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-data-with-com-interop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshaling-data-with-platform-invoke.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-data-with-platform-invoke",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshaling-different-types-of-arrays.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-different-types-of-arrays",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshaling-strings.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-strings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshalling-a-delegate-as-a-callback-method.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-a-delegate-as-a-callback-method",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshalling-classes-structures-and-unions.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-classes-structures-and-unions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshalling-data-with-com-interop.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-data-with-com-interop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshalling-data-with-platform-invoke.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-data-with-platform-invoke",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshalling-different-types-of-arrays.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-different-types-of-arrays",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/marshalling-strings.md",
+      "redirect_url": "/dotnet/standard/native-interop/marshalling-strings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/msgbox-sample.md",
+      "redirect_url": "/dotnet/standard/native-interop/msgbox-sample",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/packaging-an-assembly-for-com.md",
+      "redirect_url": "/dotnet/standard/native-interop/packaging-an-assembly-for-com",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/passing-structures.md",
+      "redirect_url": "/dotnet/standard/native-interop/passing-structures",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/platform-invoke-examples.md",
+      "redirect_url": "/dotnet/standard/native-interop/platform-invoke-examples",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/framework/interop/qualifying-net-types-for-interoperation.md",
       "redirect_url": "/dotnet/standard/native-interop/qualify-net-types-for-interoperation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/registering-assemblies-with-com.md",
+      "redirect_url": "/dotnet/standard/native-interop/registering-assemblies-with-com",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/interop/registration-free-com-interop.md",
+      "redirect_url": "/dotnet/standard/native-interop/registration-free-com-interop",
       "redirect_document_id": true
     },
     {
@@ -1057,58 +1332,23 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/interop/default-marshaling-behavior.md",
-      "redirect_url": "/dotnet/framework/interop/default-marshalling-behavior",
+      "source_path_from_root": "/docs/framework/interop/specifying-a-character-set.md",
+      "redirect_url": "/dotnet/standard/native-interop/specifying-a-character-set",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/interop/default-marshaling-for-arrays.md",
-      "redirect_url": "/dotnet/framework/interop/default-marshalling-for-arrays",
+      "source_path_from_root": "/docs/framework/interop/specifying-an-entry-point.md",
+      "redirect_url": "/dotnet/standard/native-interop/specifying-an-entry-point",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/interop/default-marshaling-for-objects.md",
-      "redirect_url": "/dotnet/framework/interop/default-marshalling-for-objects",
+      "source_path_from_root": "/docs/framework/interop/type-equivalence-and-embedded-interop-types.md",
+      "redirect_url": "/dotnet/standard/native-interop/type-equivalence-and-embedded-interop-types",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/interop/default-marshaling-for-strings.md",
-      "redirect_url": "/dotnet/framework/interop/default-marshalling-for-strings",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/interop-marshaling.md",
-      "redirect_url": "/dotnet/framework/interop/interop-marshalling",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md",
-      "redirect_url": "/dotnet/framework/interop/marshalling-a-delegate-as-a-callback-method",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/marshaling-classes-structures-and-unions.md",
-      "redirect_url": "/dotnet/framework/interop/marshalling-classes-structures-and-unions",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/marshaling-data-with-com-interop.md",
-      "redirect_url": "/dotnet/framework/interop/marshalling-data-with-com-interop",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/marshaling-data-with-platform-invoke.md",
-      "redirect_url": "/dotnet/framework/interop/marshalling-data-with-platform-invoke",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/marshaling-different-types-of-arrays.md",
-      "redirect_url": "/dotnet/framework/interop/marshalling-different-types-of-arrays",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/interop/marshaling-strings.md",
-      "redirect_url": "/dotnet/framework/interop/marshalling-strings",
+      "source_path_from_root": "/docs/framework/mef/attributed-programming-model-overview-mef.md",
+      "redirect_url": "/dotnet/standard/mef/attributed-programming-model-overview-mef",
       "redirect_document_id": true
     },
     {
@@ -1117,19 +1357,14 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/framework/mef/mef-for-net-for-windows-store-apps.md",
-      "redirect_url": "/previous-versions/dotnet/framework/mef/mef-for-net-for-windows-store-apps",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/docs/framework/mef/index.md",
       "redirect_url": "/dotnet/standard/mef/index",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/mef/attributed-programming-model-overview-mef.md",
-      "redirect_url": "/dotnet/standard/mef/attributed-programming-model-overview-mef",
-      "redirect_document_id": true
+      "source_path_from_root": "/docs/framework/mef/mef-for-net-for-windows-store-apps.md",
+      "redirect_url": "/previous-versions/dotnet/framework/mef/mef-for-net-for-windows-store-apps",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
@@ -1160,12 +1395,12 @@
       "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md",
-      "redirect_url": "/dotnet/framework/install/how-to-determine-which-versions-are-installed"
-    },
-    {
       "source_path_from_root": "/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md",
       "redirect_url": "/dotnet/framework/install/how-to-determine-which-net-framework-updates-are-installed"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md",
+      "redirect_url": "/dotnet/framework/install/how-to-determine-which-versions-are-installed"
     },
     {
       "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
@@ -1248,12 +1483,12 @@
       "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/retargeting/index.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-    },
-    {
       "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.1.md",
       "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.x"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
     },
     {
       "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.md",
@@ -1330,6 +1565,10 @@
     {
       "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.1.md",
       "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
     },
     {
       "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.md",
@@ -1428,6 +1667,10 @@
       "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
     },
     {
+      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.7.2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+    },
+    {
       "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.7.md",
       "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
     },
@@ -1456,43 +1699,47 @@
       "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.8-4.8.1.md",
-      "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.7.2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
-    },
-    {
       "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7.2-4.8.md",
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.5.2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+      "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.8-4.8.1.md",
+      "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.6.2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+      "source_path_from_root": "/docs/framework/migration-guide/retargeting/index.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.7.2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7.2-4.8.md",
-      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-1.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
+      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
     },
     {
       "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.5.1.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+    },
+    {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.5.2.md",
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
     },
     {
@@ -1600,6 +1847,10 @@
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
     },
     {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.6.2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+    },
+    {
       "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.6.md",
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
     },
@@ -1668,6 +1919,10 @@
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
     },
     {
+      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.7.2.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+    },
+    {
       "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.7.md",
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
     },
@@ -1696,32 +1951,12 @@
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.8-4.8.1.md",
+      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7.2-4.8.md",
       "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
     },
     {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-1.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-    },
-    {
-      "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
-      "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+      "source_path_from_root": "/docs/framework/migration-guide/runtime/4.8-4.8.1.md",
+      "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
     },
     {
       "source_path_from_root": "/docs/framework/migration-guide/runtime/index.md",
@@ -1969,12 +2204,252 @@
       "redirect_url": "/windows/uwp/dotnet-native/typeparameter-element-net-native"
     },
     {
+      "source_path_from_root": "/docs/framework/network-programming/accessing-the-internet-through-a-proxy.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/asynchronous-client-socket-example.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/asynchronous-server-socket-example.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/automatic-proxy-detection.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/changes-to-ntlm-authentication-for-httpwebrequest-in-version-3-5-sp1.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/changes-to-the-system-uri-namespace-in-version-2-0.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview#identifying-resources"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/connection-grouping.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/creating-internet-requests.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/deriving-from-webrequest.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/deriving-from-webresponse.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/enabling-and-disabling-ipv6.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#disable-or-enable-ipv6"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/handling-errors.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-response-errors"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-access-http-specific-properties.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-assign-user-information-to-group-connections.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-create-a-socket.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-detect-network-availability-and-address-changes.md",
+      "redirect_url": "/dotnet/fundamentals/networking/network-info#network-change-events"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-get-interface-and-protocol-information.md",
+      "redirect_url": "/dotnet/fundamentals/networking/network-info#network-statistics-and-properties"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#disable-or-enable-ipv6"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-override-a-global-proxy-selection.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#global-default-proxy"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-ping-a-host.md",
+      "redirect_url": "/dotnet/fundamentals/networking/network-info#determine-if-a-remote-host-is-reachable"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-register-a-custom-protocol-using-webrequest.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-send-data-using-the-webrequest-class.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/http.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+    },
+    {
       "source_path_from_root": "/docs/framework/network-programming/httplistener.md",
       "redirect_url": "/dotnet/api/system.net.httplistener"
     },
     {
-      "source_path_from_root": "/docs/framework/reflection-and-codedom/index.md",
-      "redirect_url": "/dotnet/fundamentals/reflection/reflection"
+      "source_path_from_root": "/docs/framework/network-programming/index.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/international-resource-identifier-support-in-system-uri.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview#identifying-resources"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/internet-protocol-version-6.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/introducing-pluggable-protocols.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/ipv6-addressing.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-addressing"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/ipv6-auto-configuration.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-auto-configuration"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/ipv6-routing.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-routing"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/listening-with-sockets.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/making-asynchronous-requests.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/managing-connections.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/nat-traversal-using-ipv6-and-teredo.md",
+      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/network-isolation-for-windows-store-apps.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/network-programming-how-to-topics.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/network-programming-samples.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/networkinformation.md",
+      "redirect_url": "/dotnet/fundamentals/networking/network-info"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/programming-pluggable-protocols.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/proxy-configuration.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/requesting-data.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/socket-code-examples.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/socket-performance-enhancements-in-version-3-5.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/sockets.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/synchronous-client-socket-example.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/synchronous-server-socket-example.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/tcp-udp.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/understanding-webrequest-problems-and-exceptions.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-response-errors"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-client-socket.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-server-socket.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-client-socket.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-server-socket.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-application-protocols.md",
+      "redirect_url": "/dotnet/fundamentals/networking/overview"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-client-sockets.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-streams-on-the-network.md",
+      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+    },
+    {
+      "source_path_from_root": "/docs/framework/network-programming/using-tcp-services.md",
+      "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
     },
     {
       "source_path_from_root": "/docs/framework/reflection-and-codedom/accessing-custom-attributes.md",
@@ -2015,6 +2490,10 @@
     {
       "source_path_from_root": "/docs/framework/reflection-and-codedom/how-to-hook-up-a-delegate-using-reflection.md",
       "redirect_url": "/dotnet/fundamentals/reflection/how-to-hook-up-a-delegate-using-reflection"
+    },
+    {
+      "source_path_from_root": "/docs/framework/reflection-and-codedom/index.md",
+      "redirect_url": "/dotnet/fundamentals/reflection/reflection"
     },
     {
       "source_path_from_root": "/docs/framework/reflection-and-codedom/reflection-and-generic-types.md",
@@ -2257,16 +2736,6 @@
       "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
     },
     {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/dotnet-debugging.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/index",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/clrcreateinstance-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/clrcreateinstance-function",
-      "redirect_document_id": true
-    },
-    {
       "source_path_from_root": "/docs/framework/unmanaged-api/debugging/closeclrenumeration-function.md",
       "redirect_url": "/dotnet/core/unmanaged-api/debugging/closeclrenumeration-function",
       "redirect_document_id": true
@@ -2274,6 +2743,11 @@
     {
       "source_path_from_root": "/docs/framework/unmanaged-api/debugging/closeresumehandle-function.md",
       "redirect_url": "/dotnet/core/unmanaged-api/debugging/closeresumehandle-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/clrcreateinstance-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/clrcreateinstance-function",
       "redirect_document_id": true
     },
     {
@@ -2524,6 +2998,76 @@
     {
       "source_path_from_root": "/docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md",
       "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/corgcreferencetype-enumeration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createprocessforlaunch-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createprocessforlaunch-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createversionstringfrommodule-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/dotnet-debugging.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/enumerateclrs-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/enumerateclrs-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/getstartupnotificationevent-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/getstartupnotificationevent-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method",
       "redirect_document_id": true
     },
     {
@@ -5467,6 +6011,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/libraryproviderindextype-enumeration.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/libraryproviderindextype-enumeration",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/framework/unmanaged-api/debugging/logginglevelenum-enumeration.md",
       "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/logginglevelenum-enumeration",
       "redirect_document_id": true
@@ -5474,91 +6023,6 @@
     {
       "source_path_from_root": "/docs/framework/unmanaged-api/debugging/logswitchcallreason-enumeration.md",
       "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/logswitchcallreason-enumeration",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/variablelocationtype-enumeration",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/writeablemetadataupdatemode-enumeration",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/metadata/corelementtype-enumeration.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/metadata/enumerations/corelementtype-enumeration",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createversionstringfrommodule-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createprocessforlaunch-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/createprocessforlaunch-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/enumerateclrs-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/enumerateclrs-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/getstartupnotificationevent-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/getstartupnotificationevent-function",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/libraryproviderindextype-enumeration.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/libraryproviderindextype-enumeration",
       "redirect_document_id": true
     },
     {
@@ -5572,13 +6036,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartupex-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartupex-function",
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartup3-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartup3-function",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartup3-function.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartup3-function",
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartupex-function.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartupex-function",
       "redirect_document_id": true
     },
     {
@@ -5592,8 +6056,28 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/variablelocationtype-enumeration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/debugging/icordebug/writeablemetadataupdatemode-enumeration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/metadata/assemblymetadata-structure.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/metadata/structures/assemblymetadata-structure",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/docs/framework/unmanaged-api/metadata/assemblyrefflags-enumeration.md",
       "redirect_url": "/dotnet/core/unmanaged-api/metadata/enumerations/corassemblyflags-enumeration"
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/metadata/cor-field-offset-structure.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/metadata/structures/cor-field-offset-structure",
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/docs/framework/unmanaged-api/metadata/corassemblyflags-enumeration.md",
@@ -5608,6 +6092,11 @@
     {
       "source_path_from_root": "/docs/framework/unmanaged-api/metadata/cordeclsecurity-enumeration.md",
       "redirect_url": "/dotnet/core/unmanaged-api/metadata/enumerations/cordeclsecurity-enumeration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/framework/unmanaged-api/metadata/corelementtype-enumeration.md",
+      "redirect_url": "/dotnet/core/unmanaged-api/metadata/enumerations/corelementtype-enumeration",
       "redirect_document_id": true
     },
     {
@@ -6741,16 +7230,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/docs/framework/unmanaged-api/metadata/assemblymetadata-structure.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/metadata/structures/assemblymetadata-structure",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/docs/framework/unmanaged-api/metadata/cor-field-offset-structure.md",
-      "redirect_url": "/dotnet/core/unmanaged-api/metadata/structures/cor-field-offset-structure",
-      "redirect_document_id": true
-    },
-    {
       "source_path_from_root": "/docs/framework/unmanaged-api/metadata/osinfo-structure.md",
       "redirect_url": "/dotnet/core/unmanaged-api/metadata/structures/osinfo-structure",
       "redirect_document_id": true
@@ -6975,16 +7454,16 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-use-a-custom-user-name-and-password-validator.md",
-      "redirect_url": "/previous-versions/dotnet/framework/wcf/feature-details/how-to-use-custom-user-name-password-validator"
-    },
-    {
       "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md",
       "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729672(v=vs.100)"
     },
     {
       "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md",
       "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729688(v=vs.100)"
+    },
+    {
+      "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-use-a-custom-user-name-and-password-validator.md",
+      "redirect_url": "/previous-versions/dotnet/framework/wcf/feature-details/how-to-use-custom-user-name-password-validator"
     },
     {
       "source_path_from_root": "/docs/framework/wcf/feature-details/migrate-asp-net-web-service-client-to-wcf.md",
@@ -7507,6 +7986,10 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
+      "redirect_url": "/dotnet/desktop/xaml-services/escape-sequence-markup-extension"
+    },
+    {
       "source_path_from_root": "/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md",
       "redirect_url": "/dotnet/desktop/xaml-services/types-for-primitives"
     },
@@ -7685,254 +8168,6 @@
     {
       "source_path_from_root": "/docs/framework/xaml-services/xml-space-handling-in-xaml.md",
       "redirect_url": "/dotnet/desktop/xaml-services/xml-space-handling"
-    },
-    {
-      "source_path_from_root": "/docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
-      "redirect_url": "/dotnet/desktop/xaml-services/escape-sequence-markup-extension"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/index.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/introducing-pluggable-protocols.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/network-programming-how-to-topics.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/requesting-data.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/creating-internet-requests.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-send-data-using-the-webrequest-class.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-streams-on-the-network.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/making-asynchronous-requests.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/handling-errors.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-response-errors"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/programming-pluggable-protocols.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-register-a-custom-protocol-using-webrequest.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/deriving-from-webrequest.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/deriving-from-webresponse.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-application-protocols.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/http.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-access-http-specific-properties.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/managing-connections.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/connection-grouping.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-assign-user-information-to-group-connections.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/tcp-udp.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-tcp-services.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/sockets.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-client-socket.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-server-socket.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-client-socket.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-server-socket.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/synchronous-client-socket-example.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/synchronous-server-socket-example.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/asynchronous-client-socket-example.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/asynchronous-server-socket-example.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/listening-with-sockets.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/socket-code-examples.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/socket-performance-enhancements-in-version-3-5.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/network-programming-samples.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/network-isolation-for-windows-store-apps.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/understanding-webrequest-problems-and-exceptions.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-response-errors"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/using-client-sockets.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-create-a-socket.md",
-      "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/internet-protocol-version-6.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/ipv6-addressing.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-addressing"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/ipv6-routing.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-routing"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/ipv6-auto-configuration.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-auto-configuration"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/enabling-and-disabling-ipv6.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#disable-or-enable-ipv6"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#disable-or-enable-ipv6"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/networkinformation.md",
-      "redirect_url": "/dotnet/fundamentals/networking/network-info"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-detect-network-availability-and-address-changes.md",
-      "redirect_url": "/dotnet/fundamentals/networking/network-info#network-change-events"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-get-interface-and-protocol-information.md",
-      "redirect_url": "/dotnet/fundamentals/networking/network-info#network-statistics-and-properties"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-ping-a-host.md",
-      "redirect_url": "/dotnet/fundamentals/networking/network-info#determine-if-a-remote-host-is-reachable"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/accessing-the-internet-through-a-proxy.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/automatic-proxy-detection.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-override-a-global-proxy-selection.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#global-default-proxy"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/international-resource-identifier-support-in-system-uri.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview#identifying-resources"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/nat-traversal-using-ipv6-and-teredo.md",
-      "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/proxy-configuration.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/changes-to-the-system-uri-namespace-in-version-2-0.md",
-      "redirect_url": "/dotnet/fundamentals/networking/overview#identifying-resources"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/changes-to-ntlm-authentication-for-httpwebrequest-in-version-3-5-sp1.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
-    },
-    {
-      "source_path_from_root": "/docs/framework/network-programming/how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md",
-      "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
     }
   ]
 }

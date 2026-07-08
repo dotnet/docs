@@ -13,7 +13,7 @@ The Component Object Model (COM) lets an object expose its functionality to othe
   
  .NET Framework applications will eventually replace those developed with COM. Until then, you may have to use or create COM objects by using Visual Studio. Interoperability with COM, or *COM interop*, enables you to use existing COM objects while transitioning to the .NET Framework at your own pace.  
   
- By using the .NET Framework to create COM components, you can use registration-free COM interop. This lets you control which DLL version is enabled when more than one version is installed on a computer, and lets end users use XCOPY or FTP to copy your application to an appropriate directory on their computer where it can be run. For more information, see [Registration-Free COM Interop](../../../framework/interop/registration-free-com-interop.md).  
+ By using the .NET Framework to create COM components, you can use registration-free COM interop. This lets you control which DLL version is enabled when more than one version is installed on a computer, and lets end users use XCOPY or FTP to copy your application to an appropriate directory on their computer where it can be run. For more information, see [Registration-Free COM Interop](../../../standard/native-interop/registration-free-com-interop.md).  
   
 ## Managed Code and Data  
 
@@ -51,16 +51,16 @@ The Component Object Model (COM) lets an object expose its functionality to othe
   
 ## Interoperability Marshalling  
 
- All .NET Framework applications share a set of common types that enable interoperability of objects, regardless of the programming language that is used. The parameters and return values of COM objects sometimes use data types that differ from those used in managed code. *Interoperability marshalling* is the process of packaging parameters and return values into equivalent data types as they move to and from COM objects. For more information, see [Interop Marshaling](../../../framework/interop/interop-marshalling.md).  
+ All .NET Framework applications share a set of common types that enable interoperability of objects, regardless of the programming language that is used. The parameters and return values of COM objects sometimes use data types that differ from those used in managed code. *Interoperability marshalling* is the process of packaging parameters and return values into equivalent data types as they move to and from COM objects. For more information, see [Interop Marshaling](../../../standard/native-interop/interop-marshalling.md).  
   
 ## See also
 
 - [COM Interop](index.md)
 - [Walkthrough: Implementing Inheritance with COM Objects](walkthrough-implementing-inheritance-with-com-objects.md)
-- [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
+- [Interoperating with Unmanaged Code](../../../standard/native-interop/index.md)
 - [Troubleshooting Interoperability](troubleshooting-interoperability.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
 - [Tlbexp.exe (Type Library Exporter)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
-- [Interop Marshaling](../../../framework/interop/interop-marshalling.md)
-- [Registration-Free COM Interop](../../../framework/interop/registration-free-com-interop.md)
+- [Interop Marshaling](../../../standard/native-interop/interop-marshalling.md)
+- [Registration-Free COM Interop](../../../standard/native-interop/registration-free-com-interop.md)

@@ -129,6 +129,9 @@ Key points:
 - The `StartsWith` check ensures the resolved path is still inside the destination.
 - The trailing directory separator on `fullDestDir` is critical—without it, a path like `/safe-dir-evil/file` would incorrectly match `/safe-dir`.
 
+> [!NOTE]
+> Boundary validation assumes the destination directory itself is a real directory you control. If the destination directory or one of its parents is already a junction or symbolic link, extraction follows that link and writes to the link's target—even with <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType>, which otherwise rejects entries and link targets that escape the destination. When handling untrusted archives, extract into a fresh, application-controlled directory rather than a reused or externally-writable location.
+
 > [!WARNING]
 > The following APIs leave you completely unprotected against path traversal. You must validate paths yourself before calling them.
 
@@ -248,6 +251,11 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 - **Extra fields** are binary key-value pairs attached to each entry. The runtime preserves unknown extra fields and trailing data when reading and writing archives in <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> mode and round-trips them as-is. If your application reads or interprets extra fields, validate their contents.
 - **Entry name encoding:** when writing, the runtime uses ASCII for entry names that contain only ASCII printable characters (32-126) and UTF-8 (with the language encoding flag set) for names that contain other characters. When reading without a custom encoding, entries with or without the language encoding flag are decoded as UTF-8 (which also correctly decodes ASCII). Use the `entryNameEncoding` parameter on <xref:System.IO.Compression.ZipArchive> to override encoding when needed, but be aware the override affects all entries uniformly.
 
+### TAR extended attributes and link names
+
+- **PAX extended attributes** (<xref:System.Formats.Tar.PaxTarEntry.ExtendedAttributes?displayProperty=nameWithType>) are an arbitrary, archive-supplied set of key-value strings. A PAX entry can carry many attributes, and individual values can be large. The format also uses these attributes to override standard header fields such as the entry path, link name, and size. Treat them as untrusted input: if your application reads or acts on extended attributes, validate their contents and bound how many you process and how large they can be.
+- **Link names** (<xref:System.Formats.Tar.TarEntry.LinkName?displayProperty=nameWithType>) on symbolic-link and hard-link entries are archive-supplied paths. Validate them the same way you validate entry names—see [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar).
+
 ## Encryption considerations (.NET 11+)
 
 .NET 11 adds support for reading and writing encrypted ZIP archives. The following subsections explain how to choose an encryption method, read encrypted entries, and use encrypted archives with the convenience APIs.
@@ -337,7 +345,7 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 - **Symlink/hardlink attacks (TAR):** Validate link targets resolve within the destination, or skip link entries entirely.
 - **Memory limits:** Avoid <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> for large untrusted archives. Avoid <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> mode with unseekable streams from untrusted sources.
 - **Thread safety:** Don't share <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader?displayProperty=fullName>, or <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> instances across threads.
-- **Untrusted metadata:** Treat entry names, comments, and extra fields as untrusted input. Sanitize before display or processing.
+- **Untrusted metadata:** Treat entry names, link names, comments, ZIP extra fields, and TAR PAX extended attributes as untrusted input. Validate and bound them before display or processing.
 - **Overwrite behavior:** Default to `overwrite: false`.
 - **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive?displayProperty=fullName>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
 

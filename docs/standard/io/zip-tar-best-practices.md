@@ -130,7 +130,7 @@ Key points:
 - The trailing directory separator on `fullDestDir` is critical—without it, a path like `/safe-dir-evil/file` would incorrectly match `/safe-dir`.
 
 > [!NOTE]
-> Boundary validation assumes the destination directory itself is a real directory you control. If the destination directory or one of its parents is already a junction or symbolic link, extraction follows that link and writes to the link's target—even with <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType>, which otherwise rejects entries and link targets that escape the destination. When handling untrusted archives, extract into a fresh, application-controlled directory rather than a reused or externally-writable location.
+> Boundary validation assumes the destination directory itself is a real directory you control. If the destination directory or one of its parents is already a junction or symbolic link, extraction follows that link and writes to the link's target—even with <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType>, which otherwise rejects entries and link targets that escape the destination. When handling untrusted archives, extract into a fresh, application-controlled directory rather than a reused or externally writable location.
 
 > [!WARNING]
 > The following APIs leave you completely unprotected against path traversal. You must validate paths yourself before calling them.

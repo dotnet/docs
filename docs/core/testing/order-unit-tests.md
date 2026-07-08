@@ -1,7 +1,7 @@
 ---
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
-ms.date: 02/20/2026
+ms.date: 07/08/2026
 ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ---
@@ -48,6 +48,23 @@ Starting with MSTest 3.6, a new runsettings option lets you run tests by test na
 
 </RunSettings>
 ```
+
+## Order randomly
+
+Starting with MSTest 4.3, to surface hidden ordering dependencies between tests, you can run tests in a random order. Set the `RandomizeTestOrder` setting to **true** in your runsettings file:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+  <MSTest>
+    <RandomizeTestOrder>true</RandomizeTestOrder>
+  </MSTest>
+
+</RunSettings>
+```
+
+To make the random order reproducible across runs, set the `RandomTestOrderSeed` setting to an integer seed. When the seed is unset, a new seed is used for each run. You can't combine `RandomizeTestOrder` with `OrderTestsByNameInClass`. For more information, see [Configure MSTest](unit-testing-mstest-configure.md).
 
 :::zone-end
 :::zone pivot="xunit"

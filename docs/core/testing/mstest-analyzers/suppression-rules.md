@@ -17,7 +17,7 @@ Suppression rules automatically suppress diagnostics from other analyzers (like 
 | [MSTEST0027](mstest0027.md) | Suppress async suffix for test methods. | VSTHRD200 |
 | [MSTEST0028](mstest0028.md) | Suppress async suffix for test fixture methods. | VSTHRD200 |
 | [MSTEST0033](mstest0033.md) | Suppress non-nullable reference not initialized. | CS8618 |
-| [MSTEST0047](mstest0047.md) | Suppress unused `TestContext` parameter on initialize and cleanup methods. | IDE0060 |
+| [MSTEST0047](mstest0047.md) | Suppress the unused TestContext parameter of fixture methods. | IDE0060 |
 
 ## How suppression rules work
 
@@ -67,7 +67,7 @@ public class MyTests
 
 **Suppressed by**: [MSTEST0047](mstest0047.md)
 
-**Why suppress**: <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>, `GlobalTestInitializeAttribute`, and `GlobalTestCleanupAttribute` methods are required by MSTest to declare a `TestContext` parameter even when the parameter isn't used. Without this suppression, IDE0060 produces noise that the user can't fix without breaking the test signature.
+**Why suppress**: MSTest lets you receive the `TestContext` as a parameter of fixture methods marked with `[AssemblyInitialize]`, `[ClassInitialize]`, `[GlobalTestInitialize]`, or `[GlobalTestCleanup]`. MSTest requires this parameter even when the method body doesn't use it, so IDE0060 (which flags unused parameters) doesn't apply.
 
 **Example**:
 
@@ -76,9 +76,9 @@ public class MyTests
 public class MyTests
 {
     [ClassInitialize]
-    public static void ClassInit(TestContext context) // IDE0060 would warn without suppression
+    public static void ClassInitialize(TestContext context) // IDE0060 would warn without suppression
     {
-        // Do work that doesn't need the context.
+        // context isn't used, but MSTest requires the parameter
     }
 }
 ```

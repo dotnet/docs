@@ -75,7 +75,7 @@ Although this application uses several projects for organizational purposes, it'
 
 **Figure 5-4.** Simple deployment of Azure Web App
 
-As application needs grow, more complex and robust deployment solutions may be required. Figure 5-5 shows an example of a more complex deployment plan that supports additional capabilities.
+As the application grows, more complex and robust deployment solutions may be required. Figure 5-5 shows an example of a more complex deployment plan that supports additional capabilities.
 
 ![Deploying a web app to an Azure App Service](./media/image5-5.png)
 

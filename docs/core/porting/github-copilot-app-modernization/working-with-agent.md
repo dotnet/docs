@@ -2,7 +2,7 @@
 title: Work with GitHub Copilot modernization
 description: "Learn how to collaborate effectively with GitHub Copilot modernization, including communication patterns, teaching preferences, mid-session corrections, and multi-session workflows."
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to learn how to work effectively with the GitHub Copilot modernization agent so that I can get the best results from my .NET upgrade.
@@ -196,7 +196,6 @@ The agent maintains several files in `.github/upgrades/{scenarioId}/` that give 
 | File | What it shows |
 |---|---|
 | `tasks.md` | Visual progress overview with all tasks, status indicators (✅ done, 🔄 in progress, ⬜ pending), and a progress bar |
-| `execution-log.md` | Complete chronological audit trail of every action the agent took, when, and what happened |
 | `assessment.md` | The initial analysis of your solution, including dependencies, breaking changes, and upgrade complexity |
 | `scenario-instructions.md` | Your preferences and the agent's learned decisions |
 | `tasks/{taskId}/progress-details.md` | Per-task details: build errors encountered, how they were resolved, test results, and decisions made |
@@ -230,7 +229,7 @@ Large upgrades, such as a 20-project solution, a complex framework upgrade, or a
 ### Tips for multi-session work
 
 - **Commit the state folder.** Push `.github/upgrades/` to your branch to back up the folder and make it visible to your team.
-- **Review between sessions.** Read `tasks.md` and `execution-log.md` to refresh your memory on what happened in the last session.
+- **Review between sessions.** Read `tasks.md` to refresh your memory on what happened in the last session.
 - **Update preferences as you learn.** If you discover something in testing that should change the agent's approach, tell the agent at the start of the next session.
 
 ## Ask for help

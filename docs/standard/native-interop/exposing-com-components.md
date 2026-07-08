@@ -14,7 +14,7 @@ ms.assetid: e78b14f1-e487-43cd-9c6d-1a07483f1730
 > [!NOTE]
 > This article describes .NET Framework COM interop guidance that uses legacy tools and deployment models, such as primary interop assemblies, the global assembly cache, and registry-based COM registration. For modern .NET, use [COM source generation](comwrappers-source-generation.md) or the <xref:System.Runtime.InteropServices.ComWrappers> API. For more information, see [COM interop](cominterop.md).
 
-This section summarizes the process needed to expose an existing COM component to managed code. For details about writing COM servers that tightly integrate with .NET, see [Design Considerations for Interoperation](/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100)).
+This section summarizes the process needed to expose an existing COM component to managed code. 
   
  Existing COM components are valuable resources in managed code as middle-tier business applications or as isolated functionality. An ideal component has a primary interop assembly and conforms tightly to the programming standards imposed by COM.  
   

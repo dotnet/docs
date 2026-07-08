@@ -44,7 +44,7 @@ Use [MSTest SDK](./unit-testing-mstest-sdk.md) to greatly simplify your project 
 >
 > For example, some ASP.NET Core integration test projects use `Microsoft.NET.Sdk.Web`. `MSTest.Sdk` derives from `Microsoft.NET.Sdk`, so it doesn't import the ASP.NET Core SDK targets that `Microsoft.NET.Sdk.Web` provides.
 
-If your project uses an SDK other than `Microsoft.NET.Sdk`, keep that SDK, and configure MSTest manually. Add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file. Then add the MSTest references that your project requires. Ensure that you're using MSTest 3.2.0 or newer, and update to the latest MSTest version available. The following example uses `Microsoft.NET.Sdk`, but the same properties work with other project SDKs (for example, `Microsoft.NET.Sdk.Web`).
+You can also configure MSTest manually instead of using `MSTest.Sdk`. Manual configuration is required when your project needs a different top-level SDK (for example, `Microsoft.NET.Sdk.Web`), but you can also choose it with the standard `Microsoft.NET.Sdk`. Add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file. Then add the MSTest references that your project requires. Ensure that you're using MSTest 3.2.0 or newer, and update to the latest MSTest version available.
 
 Consider the following example project file:
 

@@ -41,14 +41,13 @@ Beyond custom upgrade instructions, you can extend GitHub Copilot modernization 
 
 Follow these steps to generate and refine a new instruction file. These sections focus on replacing `Newtonsoft.Json` with `System.Text.Json` as an example.
 
-1. In the **Solution Explorer** window, right-click the **solution** > **Modernize**.
+### Initiate the upgrade
 
-   \-or-
+Use the following steps to start an upgrade:
 
-   Open the Copilot chat panel and type `@Modernize` to start a conversation with the agent.
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-   > [!NOTE]
-   > These steps apply to Visual Studio. In Visual Studio Code and other environments, invoke the `modernize-dotnet` agent directly from the Copilot chat panel. In Visual Studio, the agent is named `Modernize`.
+### Create the instruction file
 
 1. In the chat, type: `I want to generate a custom upgrade instruction`.
 1. When asked, provide a scenario like `I want to replace Newtonsoft with System.Text.Json` to have Copilot create the file.
@@ -82,7 +81,7 @@ Use the following steps to start an upgrade:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-### Customize the upgrade
+### Test the upgrade instruction
 
 1. In chat, invoke the instruction with wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
 1. Confirm in the chat window that Copilot retrieved the instruction file:

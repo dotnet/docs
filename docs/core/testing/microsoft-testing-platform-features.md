@@ -17,7 +17,7 @@ If you opt out of the auto-generated entry point by setting `<GenerateTestingPla
 
 Extensions that require a NuGet package are shipped with their own licensing model (some less permissive), be sure to refer to the license associated with the extensions you want to use.
 
-Some extensions are *experimental*: their APIs are annotated with the `TPEXP` diagnostic and might change in a future release, so you must acknowledge the diagnostic to use them. Experimental extensions are marked **(experimental)** in the following lists. For more information, see [Microsoft.Testing.Platform diagnostics](https://aka.ms/testingplatform/diagnostics).
+Some extensions are *experimental*: their APIs are annotated with the `TPEXP` diagnostic and might change in a future release, so you must acknowledge the diagnostic to use them. Experimental extensions are marked **(experimental)** in the following lists.
 
 ## Start here
 

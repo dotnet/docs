@@ -117,8 +117,8 @@ Some unmanaged calls can be channeled through SOAP, such as the calls between se
 |-----------|-----------------|
 |[Default Marshalling Behavior](default-marshalling-behavior.md)|Describes the rules that the interop marshalling service uses to marshal data.|
 |[Marshalling Data with Platform Invoke](marshalling-data-with-platform-invoke.md)|Describes how to declare method parameters and pass arguments to functions exported by unmanaged libraries.|
-|[Marshalling Data with COM Interop](marshalling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshalling behavior.|
-|[How to: Migrate Managed-Code DCOM to WCF](how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|
+|[Marshalling Data with COM Interop](../../framework/interop/marshalling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshalling behavior.|
+|[How to: Migrate Managed-Code DCOM to WCF](../../framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|
 |[How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in .NET.|
 |[Interoperating Using Generic Types](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Describes which actions are supported when using generic types for COM interoperability.|
 |[Interoperating with Unmanaged Code](index.md)|Describes interoperability services provided by the common language runtime.|

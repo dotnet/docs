@@ -437,11 +437,11 @@ items:
       - name: Marshal data with COM interop
         items:
         - name: Overview
-          href: ../../standard/native-interop/marshalling-data-with-com-interop.md
+          href: ../../framework/interop/marshalling-data-with-com-interop.md
         - name: "How to: Create wrappers manually"
           href: ../../standard/native-interop/how-to-create-wrappers-manually.md
         - name: "How to: Migrate managed-code DCOM to WCF"
-          href: ../../standard/native-interop/how-to-migrate-managed-code-dcom-to-wcf.md
+          href: ../../framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md
   - name: Interop best practices
     href: ../../standard/native-interop/best-practices.md
   - name: Host .NET from native code

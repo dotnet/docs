@@ -12,7 +12,7 @@ Starting with C# 14, top-level, nongeneric `static class` declarations can use `
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The `extension` block specifies the type and receiver for extension members. You can declare methods, properties, indexers, or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
+The `extension` block specifies the type and receiver for extension members. You can declare methods, properties, indexers, and operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
 
 > [!NOTE]
 > All the examples in this article include XML comments for the members and the extension block. The node on the `extension` block describes the extended type and the receiver parameter. The C# compiler copies this node to the generated member for all members in the extension block. These examples demonstrate the preferred style for generating XML documentation for extension members.

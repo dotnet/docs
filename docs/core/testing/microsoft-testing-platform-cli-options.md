@@ -95,7 +95,7 @@ This article gives a central entry point for MTP command-line options.
   Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
 
   > [!NOTE]
-  > This option is available in MTP starting with version 1.8.0. You can't combine `--filter-uid` with `--treenode-filter`.
+  > This option is available in MTP starting with version 1.8.0. Starting with MTP 2.3.0, you can't combine `--filter-uid` with `--treenode-filter`; specifying both fails command-line validation with the `InvalidCommandLine` exit code.
 
 - **`--help`**
 
@@ -151,7 +151,7 @@ This article gives a central entry point for MTP command-line options.
   Filters the tests to run by using a tree filter expression. Tree filters offer richer matching than `--filter` for advanced scenarios.
 
   > [!NOTE]
-  > You can't combine `--treenode-filter` with `--filter-uid`. Starting with MTP 2.3.0, specifying both options fails command-line validation with the `InvalidCommandLine` exit code.
+  > Starting with MTP 2.3.0, you can't combine `--treenode-filter` with `--filter-uid`; specifying both fails command-line validation with the `InvalidCommandLine` exit code.
 
 - **`--zero-tests-policy`**
 

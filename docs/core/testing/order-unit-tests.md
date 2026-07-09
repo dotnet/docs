@@ -51,7 +51,7 @@ Starting with MSTest 3.6, a new runsettings option lets you run tests by test na
 
 ## Order randomly
 
-Starting with MSTest 4.3, to surface hidden ordering dependencies between tests, you can run tests in a random order. Set the `RandomizeTestOrder` setting to **true** in your runsettings file:
+In MSTest 4.3 and later, run tests in a random order to surface hidden ordering dependencies between tests. To enable random order, set the `RandomizeTestOrder` setting to **true** in your runsettings file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -64,7 +64,7 @@ Starting with MSTest 4.3, to surface hidden ordering dependencies between tests,
 </RunSettings>
 ```
 
-To make the random order reproducible across runs, set the `RandomTestOrderSeed` setting to an integer seed. When the seed is unset, a new seed is used for each run. You can't combine `RandomizeTestOrder` with `OrderTestsByNameInClass`. For more information, see [Configure MSTest](unit-testing-mstest-configure.md).
+To make the random order reproducible, set the `RandomTestOrderSeed` setting to an integer seed. MSTest then replays the same order on every run. When you leave the seed unset, MSTest generates a new seed for each run. Don't combine `RandomizeTestOrder` with `OrderTestsByNameInClass`, because MSTest applies only one ordering mode at a time. For more information, see [Configure MSTest](unit-testing-mstest-configure.md).
 
 :::zone-end
 :::zone pivot="xunit"

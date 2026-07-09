@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/16/2026
+ms.date: 07/09/2026
 ai-usage: ai-assisted
 ---
 
@@ -95,7 +95,7 @@ This article gives a central entry point for MTP command-line options.
   Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
 
   > [!NOTE]
-  > This option is available in MTP starting with version 1.8.0.
+  > This option is available in MTP starting with version 1.8.0. You can't combine `--filter-uid` with `--treenode-filter`.
 
 - **`--help`**
 
@@ -149,6 +149,9 @@ This article gives a central entry point for MTP command-line options.
 - **`--treenode-filter`**
 
   Filters the tests to run by using a tree filter expression. Tree filters offer richer matching than `--filter` for advanced scenarios.
+
+  > [!NOTE]
+  > You can't combine `--treenode-filter` with `--filter-uid`. Starting with MTP 2.3.0, specifying both options fails command-line validation with the `InvalidCommandLine` exit code.
 
 - **`--zero-tests-policy`**
 

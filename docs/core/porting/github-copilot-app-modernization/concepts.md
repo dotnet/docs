@@ -2,7 +2,7 @@
 title: GitHub Copilot modernization core concepts
 description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to understand the core concepts of GitHub Copilot modernization so that I can use the agent effectively and get the best results from my upgrades.
@@ -158,7 +158,6 @@ The agent maintains persistent state so you can stop and resume at any time. Eve
 | `upgrade-options.md` | Confirmed upgrade decisions |
 | `plan.md` | The upgrade plan with strategy and task descriptions |
 | `tasks.md` | Visual progress dashboard showing task status |
-| `execution-log.md` | Detailed log of all changes and decisions |
 | `tasks/{taskId}/task.md` | Per-task scope and context |
 | `tasks/{taskId}/progress-details.md` | Per-task execution notes and results |
 

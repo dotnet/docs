@@ -3,7 +3,7 @@ title: Configure MSTest
 description: Learn how to configure MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/16/2026
+ms.date: 06/19/2026
 ai-usage: ai-assisted
 ---
 
@@ -23,30 +23,32 @@ The following runsettings entries let you configure how MSTest behaves.
 
 | Configuration | Default | Values |
 |---------------|---------|--------|
-|**AssemblyCleanupTimeout**|0|Specify globally the timeout to apply on each instance of assembly cleanup method. `[Timeout]` attribute specified on the assembly cleanup method overrides the global timeout .|
-|**AssemblyInitializeTimeout**|0|Specify globally the timeout to apply on each instance of assembly initialize method. `[Timeout]` attribute specified on the assembly initialize method overrides the global timeout .|
-|**AssemblyResolution**|false|You can specify paths to extra assemblies when finding and running unit tests. For example, use these paths for dependency assemblies that aren't in the same directory as the test assembly. To specify a path, use a **Directory Path** element. Paths can include environment variables.<br /><br />`<AssemblyResolution>  <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`<br /><br />This feature is only applied when using a .NET Framework target.|
-|**CaptureTraceOutput**|true|Capture text messages coming from the `Console.Write*`, `Trace.Write*`, and `Debug.Write*` APIs that will be associated to the current running test.|
-|**ClassCleanupLifecycle**|EndOfClass|If you want the class cleanup to occur at the end of assembly, set it to **EndOfAssembly**. (No longer supported starting from MSTest v4 as EndOfClass is the default and only [ClassCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) behavior)|
-|**ClassCleanupTimeout**|0|Specify globally the timeout to apply on each instance of class cleanup method. `[Timeout]` attribute specified on the class cleanup method overrides the global timeout.|
-|**ClassInitializeTimeout**|0|Specify globally the timeout to apply on each instance of class initialize method. `[Timeout]` attribute specified on the class initialize method overrides the global timeout.|
-|**ConsiderFixturesAsSpecialTests**|false|To display `AssemblyInitialize`, `AssemblyCleanup`, `ClassInitialize`, `ClassCleanup` as individual entries in Visual Studio and Visual Studio Code `Test Explorer` and _.trx_ log, set this value to **true**|
-|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|To retain the deployment directory after a test run, set this value to **false**.|
-|**DeploymentEnabled**|true|If you set the value to **false**, deployment items that you specify in your test method aren't copied to the deployment directory.|
-|**DeployTestSourceDependencies**|true|A value indicating whether the test source references are to be deployed.|
-|**EnableBaseClassTestMethodsFromOtherAssemblies**|true|A value indicating whether to enable discovery of test methods from base classes in a different assembly from the inheriting test class.|
-|**ForcedLegacyMode**|false|In older versions of Visual Studio, the MSTest adapter was optimized to make it faster and more scalable. Some behavior, such as the order in which tests are run, might not be exactly as it was in previous editions of Visual Studio. Set the value to **true** to use the older test adapter.<br /><br />For example, you might use this setting if you have an *app.config* file specified for a unit test.<br /><br />We recommend that you consider refactoring your tests to allow you to use the newer adapter.|
-|**LaunchDebuggerOnTestFailure**|false|Starting with MSTest 4.2, when set to **true**, MSTest launches the debugger when a test fails.|
-|**MapInconclusiveToFailed**|false|If a test completes with an inconclusive status, it's mapped to the skipped status in **Test Explorer**. If you want inconclusive tests to be shown as failed, set the value to **true**.|
-|**MapNotRunnableToFailed**|true|A value indicating whether a not runnable result is mapped to failed test.|
-|**OrderTestsByNameInClass**|false|If you want to run tests by test names both in Test Explorers and on the command line, set this value to **true**.|
-|**Parallelize**||Used to set the parallelization settings:<br /><br />**Workers**: The number of threads/workers to be used for parallelization, which is by default **the number of processors on the current machine**.<br /><br />**SCOPE**: The scope of parallelization. You can set it to **MethodLevel**. By default, it's **ClassLevel**.<br /><br />`<Parallelize><Workers>32</Workers><Scope>MethodLevel</Scope></Parallelize>`|
-|**SettingsFile**||You can specify a test settings file to use with the MSTest adapter here. You can also specify a test settings file [from the settings menu](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#specify-a-run-settings-file-in-the-ide).<br /><br />If you specify this value, you must also set the **ForcedLegacyMode** to **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**TestCleanupTimeout**|0|Specify globally the timeout to apply on each instance of test cleanup method. `[Timeout]` attribute specified on the test cleanup method overrides the global timeout.|
-|**TestInitializeTimeout**|0|Specify globally the timeout to apply on each instance of test initialize method. `[Timeout]` attribute specified on the test initialize method overrides the global timeout.|
-|**TestTimeout**|0|Gets specified global test case timeout.|
-|**TreatClassAndAssemblyCleanupWarningsAsErrors**|false|To see your failures in class cleanups as errors, set this value to **true**.|
-|**TreatDiscoveryWarningsAsErrors**|false|To report test discovery warnings as errors, set this value to **true**.|
+|`AssemblyCleanupTimeout`|0|Specify globally the timeout to apply on each instance of assembly cleanup method. `[Timeout]` attribute specified on the assembly cleanup method overrides the global timeout .|
+|`AssemblyInitializeTimeout`|0|Specify globally the timeout to apply on each instance of assembly initialize method. `[Timeout]` attribute specified on the assembly initialize method overrides the global timeout .|
+|`AssemblyResolution`|false|You can specify paths to extra assemblies when finding and running unit tests. For example, use these paths for dependency assemblies that aren't in the same directory as the test assembly. To specify a path, use a **Directory Path** element. Paths can include environment variables.<br /><br />`<AssemblyResolution>  <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`<br /><br />This feature is only applied when using a .NET Framework target.|
+|`CaptureTraceOutput`|true|Capture text messages coming from the `Console.Write*`, `Trace.Write*`, and `Debug.Write*` APIs that will be associated to the current running test.|
+|`ClassCleanupLifecycle`|EndOfClass|If you want the class cleanup to occur at the end of assembly, set it to `EndOfAssembly`. (No longer supported starting from MSTest v4 as `EndOfClass` is the default and only [ClassCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) behavior)|
+|`ClassCleanupTimeout`|0|Specify globally the timeout to apply on each instance of class cleanup method. `[Timeout]` attribute specified on the class cleanup method overrides the global timeout.|
+|`ClassInitializeTimeout`|0|Specify globally the timeout to apply on each instance of class initialize method. `[Timeout]` attribute specified on the class initialize method overrides the global timeout.|
+|`ConsiderFixturesAsSpecialTests`|false|To display `AssemblyInitialize`, `AssemblyCleanup`, `ClassInitialize`, `ClassCleanup` as individual entries in Visual Studio and Visual Studio Code `Test Explorer` and _.trx_ log, set this value to **true**|
+|`DeleteDeploymentDirectoryAfterTestRunIsComplete`|true|To retain the deployment directory after a test run, set this value to **false**.|
+|`DeploymentEnabled`|true|If you set the value to **false**, deployment items that you specify in your test method aren't copied to the deployment directory.|
+|`DeployTestSourceDependencies`|true|A value indicating whether the test source references are to be deployed.|
+|`EnableBaseClassTestMethodsFromOtherAssemblies`|true|A value indicating whether to enable discovery of test methods from base classes in a different assembly from the inheriting test class.|
+|`ForcedLegacyMode`|false|In older versions of Visual Studio, the MSTest adapter was optimized to make it faster and more scalable. Some behavior, such as the order in which tests are run, might not be exactly as it was in previous editions of Visual Studio. Set the value to **true** to use the older test adapter.<br /><br />For example, you might use this setting if you have an *app.config* file specified for a unit test.<br /><br />We recommend that you consider refactoring your tests to allow you to use the newer adapter.|
+|`LaunchDebuggerOnTestFailure`|false|Starting with MSTest 4.2, when set to **true**, MSTest launches the debugger when a test fails.|
+|`MapInconclusiveToFailed`|false|If a test completes with an inconclusive status, it's mapped to the skipped status in **Test Explorer**. If you want inconclusive tests to be shown as failed, set the value to **true**.|
+|`MapNotRunnableToFailed`|true|A value indicating whether a not runnable result is mapped to failed test.|
+|`OrderTestsByNameInClass`|false|If you want to run tests by test names both in Test Explorers and on the command line, set this value to **true**.|
+|`Parallelize`||Used to set the parallelization settings:<br /><br />`Workers`: The number of threads/workers to be used for parallelization, which is by default **the number of processors on the current machine**.<br /><br />`Scope`: The scope of parallelization. You can set it to `MethodLevel`. By default, it's `ClassLevel`.<br /><br />`<Parallelize><Workers>32</Workers><Scope>MethodLevel</Scope></Parallelize>`|
+|`RandomizeTestOrder`|false|Starting with MSTest 4.3, set this value to **true** to run tests in a random order, which helps surface hidden ordering dependencies between tests. This setting can't be combined with `OrderTestsByNameInClass`.|
+|`RandomTestOrderSeed`||Starting with MSTest 4.3, when `RandomizeTestOrder` is **true**, set an integer seed to make the random order reproducible across runs. When unset, a new seed is used for each run.|
+|`SettingsFile`||You can specify a test settings file to use with the MSTest adapter here. You can also specify a test settings file [from the settings menu](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#specify-a-run-settings-file-in-the-ide).<br /><br />If you specify this value, you must also set the `ForcedLegacyMode` to **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|`TestCleanupTimeout`|0|Specify globally the timeout to apply on each instance of test cleanup method. `[Timeout]` attribute specified on the test cleanup method overrides the global timeout.|
+|`TestInitializeTimeout`|0|Specify globally the timeout to apply on each instance of test initialize method. `[Timeout]` attribute specified on the test initialize method overrides the global timeout.|
+|`TestTimeout`|0|Gets specified global test case timeout.|
+|`TreatClassAndAssemblyCleanupWarningsAsErrors`|false|To see your failures in class cleanups as errors, set this value to **true**.|
+|`TreatDiscoveryWarningsAsErrors`|false|To report test discovery warnings as errors, set this value to **true**.|
 
 ### `TestRunParameter` element
 
@@ -218,6 +220,8 @@ All the settings in this section belong to the `execution` element.
 | mapInconclusiveToFailed | false | If a test completes with an inconclusive status, it's mapped to the skipped status in **Test Explorer**. If you want inconclusive tests to be shown as failed, set the value to **true**. |
 | launchDebuggerOnTestFailure | false | Starting with MSTest 4.2, when set to `true`, MSTest launches the debugger when a test fails. |
 | mapNotRunnableToFailed | true | A value indicating whether a not runnable result is mapped to failed test. |
+| randomizeTestOrder | false | Starting with MSTest 4.3, set this value to `true` to run tests in a random order, which helps surface hidden ordering dependencies between tests. This setting can't be combined with `orderTestsByNameInClass`. |
+| randomTestOrderSeed | | Starting with MSTest 4.3, when `randomizeTestOrder` is `true`, set an integer seed to make the random order reproducible across runs. When unset, a new seed is used for each run. |
 | treatClassAndAssemblyCleanupWarningsAsErrors | false | To see your failures in class cleanups as errors, set this value to **true**. |
 | treatDiscoveryWarningsAsErrors | false | To report test discovery warnings as errors, set this value to **true**. |
 
@@ -301,4 +305,24 @@ Each element of the file is optional because it has a default value.
     }
   }
 }
+```
+
+## MSBuild properties
+
+Starting with MSTest 4.3, opt in to assembly-level parallelization from your project file or `Directory.Build.props` without authoring an `[assembly: Parallelize]` attribute. These properties emit the corresponding assembly attribute during build, so they require `GenerateAssemblyInfo` to be `true` (the default for SDK-style projects).
+
+| Property | Default | Description |
+|----------|---------|-------------|
+| `MSTestParallelizeScope` | | The parallelization scope. Set it to `MethodLevel` or `ClassLevel` to emit `[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]` (or `ExecutionScope.ClassLevel`), or to `None` to emit `[assembly: DoNotParallelize]`. |
+| `MSTestParallelizeWorkers` | | The maximum number of worker threads, emitted as the `Workers` value of `[assembly: Parallelize]`. A value of `0` maps to the number of processors on the current machine. This property can't be set when `MSTestParallelizeScope` is `None`. |
+
+The following example enables method-level parallelization with four workers for every test project that imports the `Directory.Build.props` file:
+
+```xml
+<Project>
+  <PropertyGroup>
+    <MSTestParallelizeScope>MethodLevel</MSTestParallelizeScope>
+    <MSTestParallelizeWorkers>4</MSTestParallelizeWorkers>
+  </PropertyGroup>
+</Project>
 ```

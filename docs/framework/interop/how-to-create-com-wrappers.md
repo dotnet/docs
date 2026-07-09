@@ -1,13 +1,17 @@
 ---
-title: "How to: Create COM Wrappers"
-description: Create Component Object Model (COM) wrappers using Visual Studio or .NET tools (Tlbimp.exe and Regasm.exe). Both methods generate two types of COM wrappers.
-ms.date: "03/30/2017"
+title: "How to: Create COM wrappers"
+description: Create Component Object Model (COM) wrappers using Visual Studio or .NET Framework tools (Tlbimp.exe and Regasm.exe). Both methods generate two types of COM wrappers.
+ms.date: 07/08/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "COM,wrappers creating"
   - "COM,wrappers Visual Studio"
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
 ---
-# How to: Create COM Wrappers
+# How to: Create COM wrappers
+
+> [!NOTE]
+> This guidance is specific to .NET Framework. For modern .NET COM interop, use source-generated COM interop or the `System.Runtime.InteropServices.ComWrappers` API. For more information, see [COM interop overview](../../standard/native-interop/cominterop.md) and [COM source generation](../../standard/native-interop/comwrappers-source-generation.md).
 
 You can create Component Object Model (COM) wrappers by using Visual Studio features or the .NET Framework tools Tlbimp.exe and Regasm.exe. Both methods generate two types of COM wrappers:
 
@@ -17,19 +21,16 @@ You can create Component Object Model (COM) wrappers by using Visual Studio feat
 
 In Visual Studio, you can add the COM wrapper as a reference to your project.
 
-## Wrap COM Objects in a Managed Application
+## Wrap COM objects in a managed application
 
 ### To create a runtime callable wrapper using Visual Studio
 
 1. Open the project for your managed application.
-
 2. On the **Project** menu, click **Show All Files**.
-
 3. On the **Project** menu, click **Add Reference**.
-
 4. In the Add Reference dialog box, click the **COM** tab, select the component you want to use, and click **OK**.
 
-     In **Solution Explorer**, note that the COM component is added to the References folder in your project.
+   In **Solution Explorer**, note that the COM component is added to the References folder in your project.
 
 You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for Visual Basic or a `Using` directive for C#.
 
@@ -38,11 +39,11 @@ You can now write code to access the COM object. You can begin by declaring the 
 
 ### To create a runtime callable wrapper using .NET Framework tools
 
-- Run the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md) tool.
+- Run the [Tlbimp.exe (Type Library Importer)](../../framework/tools/tlbimp-exe-type-library-importer.md) tool.
 
  This tool creates an assembly that contains runtime metadata for the types defined in the original type library.
 
-## Wrap Managed Objects in a Native Application
+## Wrap managed objects in a native application
 
 ### To create a COM callable wrapper using Visual Studio
 
@@ -60,11 +61,11 @@ You can now write code to access the COM object. You can begin by declaring the 
 
 ### To create a COM callable wrapper using .NET Framework tools
 
-Run the [Regasm.exe (Assembly Registration Tool)](../tools/regasm-exe-assembly-registration-tool.md) tool.
+Run the [Regasm.exe (Assembly Registration Tool)](../../framework/tools/regasm-exe-assembly-registration-tool.md) tool.
 
 This tool reads the assembly metadata and adds the necessary entries to the registry. As a result, COM clients can create .NET Framework classes transparently. You can use the assembly as if it were a native COM class.
 
-You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.
+You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../../framework/tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.
 
 ## See also
 

@@ -449,7 +449,7 @@ Specifies whether .NET SDK local tools search for tool manifest files in the roo
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
 > [!NOTE]
-> Prior to .NET 10, the `COREHOST_` prefix was used instead of `DOTNET_HOST_` (e.g., `COREHOST_TRACE`). The functionality and values remain identical.
+> Prior to .NET 10, the `COREHOST_` prefix was used instead of `DOTNET_HOST_` (for example, `COREHOST_TRACE`). The functionality and values remain identical.
 
 - `DOTNET_HOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
 - `DOTNET_HOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `DOTNET_HOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.

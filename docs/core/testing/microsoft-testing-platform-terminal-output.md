@@ -43,15 +43,18 @@ The progress bar is written based on the selected mode:
 
 ## Options
 
-| Option | Description |
-|---|---|
-| `--no-progress` | Disables reporting progress to screen. Deprecated in MTP 2.3.0 in favor of `--progress off`. |
-| `--progress` | Controls whether progress is shown. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). Available in MTP starting with version 2.3.0. |
-| `--no-ansi` | Disables outputting ANSI escape characters to screen. |
-| `--ansi` | Controls whether ANSI escape characters are emitted. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). Available in MTP starting with version 2.3.0. |
-| `--output` | Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. Default is `Normal`. |
-| `--show-stdout` | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. Available in MTP starting with version 2.2.1. |
-| `--show-stderr` | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. Available in MTP starting with version 2.2.1. |
+| Option | MTP version | Description |
+|---|---|---|
+| `--no-progress` | — | Disables reporting progress to screen. Deprecated in MTP 2.3.0 in favor of `--progress off`. |
+| `--progress` | 2.3.0 | Controls whether progress is shown. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). |
+| `--no-ansi` | — | Disables outputting ANSI escape characters to screen. |
+| `--ansi` | 2.3.0 | Controls whether ANSI escape characters are emitted. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). |
+| `--output` | — | Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. Default is `Normal`. |
+| `--show-stdout` | 2.2.1 | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
+| `--show-stderr` | 2.2.1 | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
+
+> [!NOTE]
+> A dash (—) in the **MTP version** column marks core options that aren't tied to a specific version because they've been available since the platform's initial releases.
 
 > [!NOTE]
 > Starting with MTP 2.3.0, when MTP detects that it runs inside an LLM or AI tool environment, it suppresses the startup banner and changes the default of `--show-stdout` and `--show-stderr` from `All` to `Failed` to reduce noise.

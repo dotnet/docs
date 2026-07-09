@@ -434,14 +434,6 @@ items:
           href: ../../standard/native-interop/marshalling-different-types-of-arrays.md
         - name: Marshal a delegate as a callback method
           href: ../../standard/native-interop/marshalling-a-delegate-as-a-callback-method.md
-      - name: Marshal data with COM interop
-        items:
-        - name: Overview
-          href: ../../framework/interop/marshalling-data-with-com-interop.md
-        - name: "How to: Create wrappers manually"
-          href: ../../standard/native-interop/how-to-create-wrappers-manually.md
-        - name: "How to: Migrate managed-code DCOM to WCF"
-          href: ../../framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md
   - name: Interop best practices
     href: ../../standard/native-interop/best-practices.md
   - name: Host .NET from native code
@@ -464,12 +456,10 @@ items:
         href: ../../standard/native-interop/tutorial-comwrappers.md
       - name: Source generation
         href: ../../standard/native-interop/comwrappers-source-generation.md
-      - name: "How to: Create COM wrappers"
-        href: ../../standard/native-interop/how-to-create-com-wrappers.md
     - name: Expose COM components to .NET
       items:
       - name: Overview
-        href: ../../standard/native-interop/exposing-com-components-to-net.md
+        href: ../../standard/native-interop/exposing-com-components.md
       - name: Import a type library as an assembly
         href: ../../standard/native-interop/importing-a-type-library-as-an-assembly.md
       - name: "How to: Add references to type libraries"
@@ -485,7 +475,7 @@ items:
     - name: Expose .NET components to COM
       items:
       - name: Overview
-        href: ../../standard/native-interop/exposing-net-components-to-com.md
+        href: ../../standard/native-interop/exposing-dotnet-components-to-com.md
       - name: Package an assembly for COM
         href: ../../standard/native-interop/packaging-an-assembly-for-com.md
       - name: Register assemblies with COM
@@ -502,12 +492,6 @@ items:
       href: ../../standard/native-interop/type-equivalence-and-embedded-interop-types.md
     - name: "How to: Map HRESULTs and exceptions"
       href: ../../standard/native-interop/how-to-map-hresults-and-exceptions.md
-    - name: Primary interop assemblies
-      items:
-      - name: "How to: Generate primary interop assemblies using Tlbimp.exe"
-        href: ../../standard/native-interop/how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md
-      - name: "How to: Register primary interop assemblies"
-        href: ../../standard/native-interop/how-to-register-primary-interop-assemblies.md
   - name: Apply interop attributes
     href: ../../standard/native-interop/apply-interop-attributes.md
   - name: HRESULT and PreserveSig

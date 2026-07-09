@@ -38,8 +38,8 @@ By convention, C# programs use `PascalCase` for type names, namespaces, and all 
 - Prefer clarity over brevity.
 - Use PascalCase for class names and method names.
 - Use camelCase for method arguments, local variables, and private non-constant fields.
-- Use PascalCase for constant names, both fields and local constants. This convention applies to all access modifiers, including private constants, which don't use the `_camelCase` prefix applied to private non-constant fields.
-- Private instance fields start with an underscore (`_`), but this prefix doesn't apply to private constants.
+- Use PascalCase for constant names, both fields and local constants. This convention applies to all access modifiers, including `private` and `internal`.
+- Private non-constant instance fields start with an underscore (`_`).
 - Static fields start with `s_`. This convention isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is [configurable in editorconfig](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.
 - Use meaningful and descriptive namespaces that follow the reverse domain name notation.
@@ -133,7 +133,7 @@ For more information on positional records, see [Positional syntax for property 
 Use camel casing ("camelCasing") when naming `private` or `internal` non-constant fields, and prefix them with `_`. Use camel casing when naming local variables, including instances of a delegate type.
 
 > [!NOTE]
-> Because constants follow different naming conventions, even `private` and `internal` constants use PascalCase, not `_camelCase`. For example:
+> To maintain consistency with constant naming conventions, `private` and `internal` constants use PascalCase, not `_camelCase`. For example:
 >
 > ```csharp
 > public class DataService

@@ -454,6 +454,7 @@ Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, 
 - `DOTNET_HOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
 - `DOTNET_HOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `DOTNET_HOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
 - `DOTNET_HOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `DOTNET_HOST_TRACE=1`.
+
   - `4` - all tracing information is written
   - `3` - only informational, warning, and error messages are written
   - `2` - only warning and error messages are written

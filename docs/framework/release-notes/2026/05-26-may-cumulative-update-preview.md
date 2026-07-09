@@ -18,10 +18,9 @@ There are no new security improvements in this release. This update is cumulativ
 
 ### Quality and reliability improvements
 
-**.NET Libraries**
+#### .NET libraries
 
-- Addresses an issue with synchronous `HttpWebRequest` connections where requests could hang in specific secure connection scenarios with certain server configurations.
-
+Addresses an issue with synchronous `HttpWebRequest` connections where requests could hang in specific secure connection scenarios with certain server configurations.
 **.NET Runtime**
 
 - Addresses an issue in the Visual Studio x86 native debugger where certain floating-point values could be reported incorrectly during step operations in mixed-code applications.

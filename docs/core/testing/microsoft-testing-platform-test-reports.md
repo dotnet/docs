@@ -159,4 +159,7 @@ builder.TestHost.AddAzureDevOpsProvider();
 | `--publish-azdo-test-results` | 2.3.0 | Publishes test results live to the Azure DevOps **Tests** tab. |
 | `--publish-azdo-run-name` | 2.3.0 | Sets a custom Azure DevOps test run name for live test-result publishing. Requires `--publish-azdo-test-results`. |
 
+> [!NOTE]
+> The **MTP version** column lists the MTP release in which each option first became available in a stable build. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0.
+
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.

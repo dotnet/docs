@@ -54,4 +54,7 @@ The progress bar is written based on the selected mode:
 | `--show-stderr` | 2.2.1 | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
 
 > [!NOTE]
+> A dash (—) in the **MTP version** column marks core options that aren't tied to a specific version because they've been available since the platform's initial releases.
+
+> [!NOTE]
 > Starting with MTP 2.3.0, when MTP detects that it runs inside an LLM or AI tool environment, it suppresses the startup banner and changes the default of `--show-stdout` and `--show-stderr` from `All` to `Failed` to reduce noise.

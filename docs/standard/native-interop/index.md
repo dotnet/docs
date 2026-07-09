@@ -1,7 +1,8 @@
 ---
 title: Native interoperability - .NET
 description: Learn how to interface with native components in .NET.
-ms.date: 01/18/2019
+ms.date: 07/08/2026
+ai-usage: ai-assisted
 ---
 # Native interoperability
 
@@ -24,3 +25,13 @@ The previous list doesn't cover all of the potential situations and scenarios in
 - [Type marshalling](type-marshalling.md)
 - [Native interoperability best practices](best-practices.md)
 - [Disabled runtime marshalling](disabled-marshalling.md)
+
+## COM interop
+
+On Windows, you can also interoperate with Component Object Model (COM) components&mdash;both consuming COM components from .NET and exposing .NET components to COM.
+
+- [COM interop overview](cominterop.md)
+- [Expose COM components to .NET](exposing-com-components.md)
+- [Expose .NET components to COM](exposing-dotnet-components-to-com.md)
+- [Interop marshalling](interop-marshalling.md)
+- [How to: Map HRESULTs and exceptions](how-to-map-hresults-and-exceptions.md)

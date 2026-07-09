@@ -72,6 +72,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0040](ide0040.md) | Add accessibility modifiers | [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers) |
 > | [IDE0041](ide0041.md) | Use is null check | [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method) |
 > | [IDE0042](ide0042.md) | Deconstruct variable declaration | [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration) |
+> | [IDE0043](ide0043.md) | Invalid format string | |
 > | [IDE0044](ide0044.md) | Add readonly modifier | [dotnet_style_readonly_field](ide0044.md#dotnet_style_readonly_field) |
 > | [IDE0045](ide0045.md) | Use conditional expression for assignment | [dotnet_style_prefer_conditional_expression_over_assignment](ide0045.md#dotnet_style_prefer_conditional_expression_over_assignment) |
 > | [IDE0046](ide0046.md) | Use conditional expression for return | [dotnet_style_prefer_conditional_expression_over_return](ide0046.md#dotnet_style_prefer_conditional_expression_over_return) |
@@ -150,8 +151,11 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0360](ide0360.md) | Simplify property accessor | [csharp_style_prefer_simple_property_accessors](ide0360.md#csharp_style_prefer_simple_property_accessors) |
 > | [IDE0370](ide0370.md) | Remove unnecessary suppression | |
 > | [IDE0380](ide0380.md) | Remove unnecessary 'unsafe' modifier | |
+> | [IDE0390](ide0390-ide0391.md) | Make method synchronous | |
+> | [IDE0391](ide0390-ide0391.md) | Make method synchronous | |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
+> | [IDE1007](ide1007.md) | The name does not exist in the current context | |
 > | [IDE2000](ide2000.md) | Avoid multiple blank lines | [dotnet_style_allow_multiple_blank_lines_experimental](ide2000.md#dotnet_style_allow_multiple_blank_lines_experimental)† |
 > | [IDE2001](ide2001.md) | Embedded statements must be on their own line | [csharp_style_allow_embedded_statements_on_same_line_experimental](ide2001.md#csharp_style_allow_embedded_statements_on_same_line_experimental)† |
 > | [IDE2002](ide2002.md) | Consecutive braces must not have blank line between them | [csharp_style_allow_blank_lines_between_consecutive_braces_experimental](ide2002.md#csharp_style_allow_blank_lines_between_consecutive_braces_experimental)† |

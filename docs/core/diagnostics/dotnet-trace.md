@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 07/02/2026
+ms.date: 07/09/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ai-usage: ai-assisted
@@ -115,7 +115,7 @@ dotnet-trace collect
   Sets how the runtime buffers events. Accepts `0`/`Drop` or `1`/`Block` (case-insensitive), and defaults to `Drop`.
 
   - `0` / `Drop` (default): the lossy circular buffer. Events are dropped when the buffer overflows.
-  - `1` / `Block`: non-lossy tracing. The runtime blocks the threads emitting events until the buffer drains instead of dropping events, which produces a complete trace. `Block` requires a .NET 11+ target runtime and can make the traced application slower because event-emitting threads pause while the buffer stays full. On older runtimes, starting the trace fails; retry with `Drop` (the default).
+  - `1` / `Block`: non-lossy tracing. The runtime blocks the threads emitting events when the buffer is full instead of dropping events, which produces a complete trace. It's non-lossy only up to the buffer's capacity, not against host memory exhaustion. Under memory pressure, events can still be dropped. `Block` requires a .NET 11+ target runtime and can make the traced application slower because event-emitting threads pause while the buffer stays full. On older runtimes, starting the trace fails; retry with `Drop` (the default).
 
 - **`--buffersize <size>`**
 

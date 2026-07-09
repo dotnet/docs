@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 11/07/2025
+ms.date: 07/09/2026
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -96,6 +96,7 @@ C# style rules:
 - [Convert to 'Program.Main' style program (IDE0211)](ide0211.md)
 - [Use primary constructor (IDE0290)](ide0290.md)
 - [Prefer 'System.Threading.Lock' (IDE0330)](ide0330.md)
+- [Use labeled jump statement (IDE0410)](ide0410.md)
 
 ### Expression-bodied members
 

@@ -48,7 +48,7 @@ The `dotnet-gcdump` global tool collects GC (Garbage Collector) dumps of live .N
 - Collecting general statistics about the counts of objects on the heap.
 
 > [!NOTE]
-> `dotnet-gcdump` collects with non-lossy buffering so the GC dump is complete on large heaps. Non-lossy buffering requires a .NET 11+ target runtime; on older runtimes the tool automatically falls back to lossy buffering. Non-lossy buffering is complete only up to the runtime's buffer capacity, not against host memory exhaustion. Under memory pressure, the runtime can still drop events.
+> `dotnet-gcdump` collects with non-lossy buffering so the GC dump is complete on large heaps. Non-lossy buffering requires a .NET 11+ target runtime; on older runtimes, the tool automatically falls back to lossy buffering. Non-lossy buffering is complete only up to the runtime's buffer capacity, not against host memory exhaustion. Under memory pressure, the runtime can still drop events.
 
 ### View the GC dump captured from dotnet-gcdump
 

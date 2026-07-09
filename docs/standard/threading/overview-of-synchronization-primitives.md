@@ -12,6 +12,13 @@ ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
 
 .NET provides a range of types that you can use to synchronize access to a shared resource or coordinate thread interaction.
 
+> [!NOTE]
+> PLEASE NOTE: This article was written in 2018. In the meanwhile, more synchronization primitives were developed, which are not yet described in this article:
+>
+> - <xref:System.Threading.Lock?displayProperty=nameWithType>
+>
+> Descriptions for these types will be added when this article is reworked.
+
 > [!IMPORTANT]
 > Use the same synchronization primitive instance to protect access of a shared resource. If you use different synchronization primitive instances to protect the same resource, you'll circumvent the protection provided by a synchronization primitive.
 

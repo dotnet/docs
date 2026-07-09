@@ -5,7 +5,7 @@ ms.date: 07/08/2026
 ai-usage: ai-assisted
 ---
 
-# Native interoperability
+# Interoperate with unmanaged code
 
 Native interoperability is the set of techniques that let managed .NET code communicate with unmanaged APIs and components. Common scenarios include calling Win32 APIs, working with COM components, and exchanging types across managed and native boundaries.
 

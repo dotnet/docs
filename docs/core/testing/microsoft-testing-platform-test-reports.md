@@ -1,6 +1,6 @@
 ---
 title: Microsoft.Testing.Platform (MTP) test reports
-description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps).
+description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
 ms.date: 06/16/2026
@@ -163,3 +163,30 @@ builder.TestHost.AddAzureDevOpsProvider();
 > The Azure DevOps extension became stable in MTP 1.9.0 (`--report-azdo` and `--report-azdo-severity`). All other options in the table — `--report-azdo-flaky-history`, `--report-azdo-demote-known-flaky`, `--report-azdo-quarantine-file`, `--report-azdo-summary`, `--report-azdo-stackframe-filter`, `--report-azdo-upload-artifacts`, `--report-azdo-upload-artifact-include`, `--report-azdo-upload-artifact-exclude`, `--report-azdo-upload-artifact-name`, `--publish-azdo-test-results`, and `--publish-azdo-run-name` — are available in MTP starting with version 2.3.0.
 
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
+
+## GitHub Actions reports
+
+The GitHub Actions report emits GitHub Actions-native workflow commands so test runs produce a first-class experience on the runner: per-assembly log groups, failure and skip annotations (surfaced in the workflow **Annotations** tab and, when the source location resolves, on the pull request's **Files changed** diff), a Markdown job summary appended to the file referenced by `GITHUB_STEP_SUMMARY`, and slow-test notices. This extension requires the [Microsoft.Testing.Extensions.GitHubActionsReport](https://nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) NuGet package.
+
+The extension activates only when the run is on GitHub Actions (the `GITHUB_ACTIONS` environment variable is `true`) and the `--report-gh` switch is set; otherwise it does nothing. When active, each feature is enabled by default and can be turned off individually with its `--report-gh-*` option.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddGitHubActionsProvider();
+```
+
+### Options
+
+| Option | MTP version | Description |
+|---|---|---|
+| `--report-gh` | 2.3.0 | Enables the GitHub Actions report generator so test runs emit workflow commands. Requires the run to be on GitHub Actions. |
+| `--report-gh-groups` | 2.3.0 | Enables or disables per-assembly log groups. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
+| `--report-gh-annotations` | 2.3.0 | Enables or disables annotations for failed and skipped tests. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
+| `--report-gh-step-summary` | 2.3.0 | Enables or disables writing a Markdown job summary to the file referenced by `GITHUB_STEP_SUMMARY`. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
+| `--report-gh-slow-test-notices` | 2.3.0 | Enables or disables slow-test notices. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
+| `--report-gh-slow-test-threshold` | 2.3.0 | The duration a test can run before a slow-test notice is emitted. Accepts a bare number of seconds or a value with a unit suffix such as `90s`, `2m`, or `1.5h`. The default is `60s`. Requires `--report-gh`. |

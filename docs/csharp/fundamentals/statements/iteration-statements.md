@@ -11,17 +11,21 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For the complete syntax, see [iteration statements](../../language-reference/statements/iteration-statements.md) in the language reference.
 >
-> **Coming from another language?** All four C# loops (`foreach`, `while`, `do`-`while`, and `for`) have direct equivalents in Java, C++, and JavaScript. The one to reach for most is `foreach`, which iterates a collection without an index, like Java's enhanced `for` or JavaScript's `for...of`.
+> **Coming from another language?** All four C# loops (`foreach`, `while`, `do`-`while`, and `for`) have direct equivalents in Java, C++, and JavaScript. You use `foreach` most often. It iterates a collection without an index, like Java's enhanced `for` or JavaScript's `for...of`.
 
 Iteration statements run a block of code repeatedly. Each pass through the block is an *iteration*, and a repeating block is a *loop*. C# provides four loops. Start with `foreach` for collections, use `while` and `do`-`while` when a condition controls the repetition, and use `for` when you need an explicit index.
 
 ## Iterate a collection with `foreach`
 
-The `foreach` statement runs its body once for each element in a collection, in order. It's the default choice for reading a collection because you don't manage an index or a bounds check, which removes a whole class of off-by-one errors:
+The `foreach` statement runs its body once for each element in a collection, in order. It's the most common choice for reading a collection because you don't manage an index or a bounds check. The `foreach` statement prevents typical off-by-one errors:
 
 :::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="Foreach":::
 
 `foreach` works with any type that C# recognizes as a sequence, including arrays, <xref:System.Collections.Generic.List`1>, and <xref:System.Collections.Generic.Dictionary`2>. The iteration variable (`name` in the previous example) is read-only, so you can't reassign it inside the loop.
+
+The body of a loop is a single *statement*, which is one complete instruction that C# runs, such as an assignment or a method call. A *block statement* groups zero or more statements between braces (`{ }`) and counts as a single statement itself. That's why braces are legal even around one line: the block is the statement that the loop repeats.
+
+Enclose the loop body in braces, even for a single statement. Braces make the scope explicit and prevent a common mistake: adding a second line later that you expect to run each iteration, but that runs once after the loop instead. C# doesn't treat whitespace as significant, so indentation alone never decides which statements belong to the loop; only the braces do. Indent your code for readability, but rely on braces to define the block.
 
 ## Repeat while a condition holds with `while`
 
@@ -39,7 +43,7 @@ A `do`-`while` loop checks its condition *after* each iteration, so the body alw
 
 ## Count with `for`
 
-A `for` loop packs three parts into its header: an *initializer* that runs once before the loop, a *condition* that's checked before each iteration, and an *iterator* that runs after each iteration. Reach for `for` when you need the index itself, not just the elements:
+A `for` loop statement contains three parts: an *initializer* that runs once before the loop, a *condition* that's checked before each iteration, and an *iterator* that runs after each iteration. Use `for` when you need the index itself, not just the elements:
 
 :::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="For":::
 
@@ -57,7 +61,9 @@ The `continue` statement skips the rest of the current iteration and moves on to
 
 ## Iterate an asynchronous stream with `await foreach`
 
-When elements arrive over time, such as pages from a web API or rows from a database, a collection can produce them asynchronously as an <xref:System.Collections.Generic.IAsyncEnumerable`1>. Use `await foreach` to consume such a stream: each iteration can suspend while the next element is produced, without blocking the thread:
+An *asynchronous stream* is a reader that uses an asynchronous task to produce each next element. C# represents it with the <xref:System.Collections.Generic.IAsyncEnumerable`1> interface. Data that arrives over time, such as pages from a web API or rows from a database, fits this model: retrieving the next element is an awaitable operation instead of an immediate return.
+
+To consume an asynchronous stream, put the `await` keyword before `foreach`. Each iteration awaits the next element, so the loop suspends while that element is produced instead of blocking the thread:
 
 :::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="AwaitForeach":::
 

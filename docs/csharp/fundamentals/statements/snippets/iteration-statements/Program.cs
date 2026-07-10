@@ -52,9 +52,9 @@ public static class Program
         do
         {
             attempts++;
-            Console.WriteLine($"Attempt {attempts}"); // => Attempt 1
+            Console.WriteLine($"Attempt {attempts}"); // => Attempt 1, then Attempt 2, then Attempt 3
         }
-        while (attempts < 1);
+        while (attempts < 3);
         // </DoWhile>
     }
 

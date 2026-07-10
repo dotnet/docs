@@ -1,5 +1,5 @@
 ---
-title: Microsoft.Extensions integration
+title: Microsoft.Testing.Platform (MTP) Microsoft.Extensions integration
 description: Learn about the MTP extensions that bridge Microsoft.Testing.Platform to the Microsoft.Extensions.* libraries your application already uses.
 author: evangelink
 ms.author: amauryleve

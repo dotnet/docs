@@ -335,7 +335,7 @@ Set this variable to control the fast path explicitly:
 - To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
 
 > [!NOTE]
-> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on Windows. On macOS and Linux it's disabled by default because of a command-line parsing issue ([dotnet/command-line-api#2812](https://github.com/dotnet/command-line-api/issues/2812)): when the native CLI is loaded as a NativeAOT shared library, `Environment.GetCommandLineArgs()` returns an empty array on those platforms, which causes command-line parsing to throw. It will be enabled by default on macOS and Linux once that issue is resolved. In the meantime, you can opt in early on those platforms by setting the variable to a value that enables it.
+> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To turn it off, set the variable to a value that disables it.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 

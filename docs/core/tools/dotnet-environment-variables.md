@@ -335,7 +335,7 @@ Set this variable to control the fast path explicitly:
 - To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
 
 > [!NOTE]
-> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To turn it off, set the variable to a value that disables it.
+> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 

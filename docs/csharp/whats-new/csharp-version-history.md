@@ -363,7 +363,7 @@ C# version 4.0, released with Visual Studio 2010, introduced some interesting ne
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
-- [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
+- [Embedded interop types](../../standard/native-interop/type-equivalence-and-embedded-interop-types.md)
 
 Embedded interop types eased the deployment pain of creating COM interop assemblies for your application. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 

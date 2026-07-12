@@ -1,18 +1,16 @@
 ---
-title: "How to: Migrate Managed-Code DCOM to WCF"
+title: "How to: Migrate managed-code DCOM to WCF"
 description: Migrate Distributed Component Object Model (DCOM) managed code calls between servers and clients to Windows Communication Foundation (WCF).
-ms.date: "03/30/2017"
-ms.assetid: 52961ffc-d1c7-4f83-832c-786444b951ba
+ms.date: 07/08/2026
+ai-usage: ai-assisted
 ---
-# How to: Migrate Managed-Code DCOM to WCF
+# How to: Migrate managed-code DCOM to WCF
 
-Windows Communication Foundation (WCF) is the recommended and secure choice over Distributed Component Object Model (DCOM) for managed code calls between servers and clients in a distributed environment. This article shows how you to migrate code from DCOM to WCF for the following scenarios.
+Windows Communication Foundation (WCF) is recommended over Distributed Component Object Model (DCOM) for managed code calls between servers and clients in a distributed environment. This article shows how you to migrate code from DCOM to WCF for the following scenarios:
 
-- The remote service returns an object by-value to the client
-
-- The client sends an object by-value to the remote service
-
-- The remote service returns an object by-reference to the client
+- The remote service returns an object by-value to the client.
+- The client sends an object by-value to the remote service.
+- The remote service returns an object by-reference to the client.
 
  For security reasons, sending an object by-reference from the client to the service is not allowed in WCF. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service.  For more information about duplex services, see [Duplex Services](../wcf/feature-details/duplex-services.md).
 

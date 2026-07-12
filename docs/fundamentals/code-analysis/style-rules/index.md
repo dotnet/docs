@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 05/20/2025
+ms.date: 07/09/2026
 author: gewarren
 ms.author: gewarren
 ---
@@ -153,6 +153,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0380](ide0380.md) | Remove unnecessary 'unsafe' modifier | |
 > | [IDE0390](ide0390-ide0391.md) | Make method synchronous | |
 > | [IDE0391](ide0390-ide0391.md) | Make method synchronous | |
+> | [IDE0410](ide0410.md) | Use labeled jump statement | [csharp_style_prefer_labeled_jump_statements](ide0410.md#csharp_style_prefer_labeled_jump_statements) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 > | [IDE1007](ide1007.md) | The name does not exist in the current context | |

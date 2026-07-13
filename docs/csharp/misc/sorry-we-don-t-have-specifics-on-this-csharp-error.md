@@ -178,7 +178,6 @@ f1_keywords:
   - "CS8183"
   - "CS8184"
   - "CS8185"
-  - "CS8186"
   - "CS8187"
   - "CS8188"
   - "CS8189"
@@ -251,7 +250,6 @@ f1_keywords:
   - "CS9349"
   - "CS9350"
   - "CS9351"
-  - "CS9353"
 # Collection arguments:
   - "CS9354"
   - "CS9355"

@@ -10,6 +10,7 @@ f1_keywords:
   - "CS0446"
   - "CS1579"
   - "CS1640"
+  - "CS8186"
   - "CS8412"
   - "CS8413"
   - "CS8414"
@@ -19,6 +20,7 @@ f1_keywords:
   - "CS8424"
   - "CS8425"
   - "CS8426"
+  - "CS9353"
 helpviewer_keywords:
   - "CS0202"
   - "CS0230"
@@ -28,6 +30,7 @@ helpviewer_keywords:
   - "CS0446"
   - "CS1579"
   - "CS1640"
+  - "CS8186"
   - "CS8412"
   - "CS8413"
   - "CS8414"
@@ -37,6 +40,7 @@ helpviewer_keywords:
   - "CS8424"
   - "CS8425"
   - "CS8426"
+  - "CS9353"
 ms.date: 07/13/2026
 ai-usage: ai-assisted
 ---
@@ -57,6 +61,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0446**](#anchor-tbd): *Foreach cannot operate on a 'method group'. Did you intend to invoke the 'method group'?*
 - [**CS1579**](#anchor-tbd): *foreach statement cannot operate on variables of type 'type' because 'type' does not contain a public instance or extension definition for 'member'*
 - [**CS1640**](#anchor-tbd): *foreach statement cannot operate on variables of type 'type' because it implements multiple instantiations of 'interface'; try casting to a specific interface instantiation*
+- [**CS8186**](#anchor-tbd): *A foreach loop must declare its iteration variables.*
 - [**CS8412**](#anchor-tbd): *Asynchronous foreach requires that the return type 'type' of 'method' must have a suitable public 'MoveNextAsync' method and public 'Current' property*
 - [**CS8413**](#anchor-tbd): *Asynchronous foreach statement cannot operate on variables of type 'type' because it implements multiple instantiations of 'interface'; try casting to a specific interface instantiation*
 - [**CS8414**](#anchor-tbd): *foreach statement cannot operate on variables of type 'type' because 'type' does not contain a public instance or extension definition for 'member'. Did you mean 'await foreach' rather than 'foreach'?*
@@ -66,6 +71,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8424**](#anchor-tbd): *The EnumeratorCancellationAttribute applied to parameter 'name' will have no effect. The attribute is only effective on a parameter of type CancellationToken in an async-iterator method returning IAsyncEnumerable*
 - [**CS8425**](#anchor-tbd): *Async-iterator 'method' has one or more parameters of type 'CancellationToken' but none of them is decorated with the 'EnumeratorCancellation' attribute, so the cancellation token parameter from the generated 'IAsyncEnumerable<>.GetAsyncEnumerator' will be unconsumed*
 - [**CS8426**](#anchor-tbd): *The attribute [EnumeratorCancellation] cannot be used on multiple parameters*
+- [**CS9353**](#anchor-tbd): *'type' does not contain a definition for 'member' and no accessible extension method 'member' accepting a first argument of type 'type' could be found (did you mean to iterate over the async collection with 'await foreach' instead?)*
 
 ## CS0202
 
@@ -419,3 +425,15 @@ public class Test
     }
 }
 ```
+
+## CS8186
+
+A foreach loop must declare its iteration variables.
+
+This error occurs when you use a `foreach` statement without declaring a new iteration variable. You must specify both a type (or `var`) and an identifier for the loop variable.
+
+## CS9353
+
+'type' does not contain a definition for 'member' and no accessible extension method 'member' accepting a first argument of type 'type' could be found (did you mean to iterate over the async collection with 'await foreach' instead?)
+
+This error occurs when you use a regular `foreach` on a type that only implements <xref:System.Collections.Generic.IAsyncEnumerable%601> but not <xref:System.Collections.Generic.IEnumerable%601>. To resolve this error, use `await foreach` instead of `foreach`.

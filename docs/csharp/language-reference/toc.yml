@@ -622,6 +622,11 @@ items:
       yield return, yield break,
       CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154,
       CS8176, CS9237, CS9238, CS9239
+  - name: foreach statements and async enumerables
+    href: ./compiler-messages/foreach-diagnostics.md
+    displayName: >
+      foreach, await foreach, async enumerable, GetAsyncEnumerator, IAsyncEnumerable,
+      CS8412, CS8413, CS8414, CS8415, CS8419, CS8420, CS8424, CS8425, CS8426
   - name: Extension declarations
     href: ./compiler-messages/extension-declarations.md
     displayName: >

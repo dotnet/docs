@@ -225,21 +225,10 @@ f1_keywords:
   - "CS8383"
   - "CS8384"
   # C# 8.0 diagnostics
-  ## Async enumerables
-  - "CS8412"
-  - "CS8413"
-  - "CS8414"
-  - "CS8415"
-  - "CS8419"
-  - "CS8420"
   ## Static local functions
   - "CS8421"
   ## Attributes
   - "CS8423"
-  ## More async enumerators
-  - "CS8424"
-  - "CS8425"
-  - "CS8426"
   ## Index and range
   - "CS8428"
   - "CS8429"

@@ -73,7 +73,7 @@ The other issue with `StringBuilder` is that it always copies the return buffer 
 
 If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not** include a hidden null, which is always accounted for in interop. It's common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshalling to minimize copies.
 
-For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshalling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
+For more information on string marshalling, see [Default Marshalling for Strings](default-marshalling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
 
 > **Windows Specific**
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
@@ -162,7 +162,7 @@ These rules differ from the built-in system primarily in situations where `bool`
 
 For more information, see:
 
-- [Blittable and Non-Blittable Types](../../framework/interop/blittable-and-non-blittable-types.md)
+- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Type Marshalling](type-marshalling.md)
 
 ## Keeping managed objects alive

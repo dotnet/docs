@@ -307,13 +307,22 @@ items:
                     displayName: MTP,terminal,test reporter,ANSI,progress
                   - name: Test reports
                     href: ../../core/testing/microsoft-testing-platform-test-reports.md
-                    displayName: MTP,TRX,test report,Azure DevOps
+                    displayName: MTP,TRX,test report,Azure DevOps,GitHub Actions
                   - name: Code coverage
                     href: ../../core/testing/microsoft-testing-platform-code-coverage.md
                     displayName: MTP,code coverage,coverage
                   - name: Crash and hang dumps
                     href: ../../core/testing/microsoft-testing-platform-crash-hang-dumps.md
                     displayName: MTP,crash dump,hang dump,diagnostics
+                  - name: Diagnostics
+                    href: ../../core/testing/microsoft-testing-platform-diagnostics.md
+                    displayName: MTP,diagnostics,video recorder,screen recording,capture video
+                  - name: Test host deployment
+                    href: ../../core/testing/microsoft-testing-platform-test-host-deployment.md
+                    displayName: MTP,test host,deployment,packaged app,UWP,WinUI,ITestHostLauncher
+                  - name: Microsoft.Extensions integration
+                    href: ../../core/testing/microsoft-testing-platform-extensions-integration.md
+                    displayName: MTP,Microsoft.Extensions,logging bridge,ILogger,Microsoft.Extensions.Logging
                   - name: OpenTelemetry
                     href: ../../core/testing/microsoft-testing-platform-open-telemetry.md
                     displayName: MTP,OpenTelemetry,traces,metrics

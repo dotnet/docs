@@ -37,8 +37,8 @@ By convention, C# programs use `PascalCase` for type names, namespaces, and all 
 - Use meaningful and descriptive names for variables, methods, and classes.
 - Prefer clarity over brevity.
 - Use PascalCase for class names and method names.
-- Use camelCase for method arguments, local variables, and private non-constant fields.
-- Private non-constant instance fields start with an underscore (`_`).
+- Use camelCase for method arguments, local variables, and private and internal non-constant fields.
+- Private and internal non-constant instance fields start with an underscore (`_`).
 - To maintain consistency across all access modifiers, use PascalCase for constant names, both fields and local constants, including `private` and `internal` constants.
 - Static fields start with `s_`. This convention isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is [configurable in editorconfig](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.

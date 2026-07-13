@@ -119,6 +119,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
+  For the full list of test platform environment variables, see [Environment variables](https://github.com/microsoft/vstest/blob/main/docs/environment-variables.md).
+
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. Supported dump types are `full` (default), and `mini`. Implies `--blame-crash`.
@@ -168,7 +170,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
-  Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+  Enables data collector for the test run. For more information, including the Event Log data collector and guidance for authoring your own data collector, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
 
   For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested), [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis), and [GitHub issue dotnet/docs#34479](https://github.com/dotnet/docs/issues/34479).
 

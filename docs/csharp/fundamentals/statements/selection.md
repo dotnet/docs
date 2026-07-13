@@ -21,9 +21,9 @@ An `if` statement runs its block only when its Boolean expression is `true`. Add
 
 :::code language="csharp" source="./snippets/selection-statements/Program.cs" id="IfElse":::
 
-The body of an `if` or `else` is a single *statement*, which is one complete instruction that C# runs, such as an assignment or a method call. A *block statement* groups zero or more statements between braces (`{ }`) and counts as a single statement itself. That's why braces are legal even around one line: the block is the statement that the branch runs.
+The body of an `if` or `else` is a single *statement*, such as an assignment or a method call. A *block statement* is itself a single statement that encloses zero or more statements in braces (`{ }`).
 
-Enclose the branch bodies in braces, even for a single statement. Braces make the scope explicit and prevent a common mistake: adding a second line later that you expect to run conditionally, but that runs unconditionally instead. C# doesn't treat whitespace as significant, so indentation alone never decides which statements belong to a branch; only the braces do. Indent your code for readability, but rely on braces to define the block.
+Many coding standards recommend that you enclose the branch bodies in braces, even for a single statement. Braces make the scope explicit. It prevents a common mistake: adding a second line later that you expect to run conditionally, but that runs unconditionally instead. Only the braces decide which statements belong to the branch. C# doesn't treat whitespace as significant, so indentation alone never does. Braces are legal even around one line: the block is the single statement that the branch runs. Indent your code for readability, but rely on braces to define the block.
 
 ## Test several conditions with `else if`
 
@@ -67,7 +67,7 @@ A `switch` expression is the expression counterpart to the `switch` statement. I
 
 ## See also
 
-- [Iteration statements](iteration-statements.md)
+- [Iteration statements](iteration.md)
 - [Pattern matching](../functional/pattern-matching.md)
 - [Selection statements (language reference)](../../language-reference/statements/selection-statements.md)
 - [Conditional operator (language reference)](../../language-reference/operators/conditional-operator.md)

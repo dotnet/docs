@@ -23,9 +23,9 @@ The `foreach` statement runs its body once for each element in a collection, in 
 
 `foreach` works with any type that C# recognizes as a sequence, including arrays, <xref:System.Collections.Generic.List`1>, and <xref:System.Collections.Generic.Dictionary`2>. The iteration variable (`name` in the previous example) is read-only, so you can't reassign it inside the loop.
 
-The body of a loop is a single *statement*, which is one complete instruction that C# runs, such as an assignment or a method call. A *block statement* groups zero or more statements between braces (`{ }`) and counts as a single statement itself. That's why braces are legal even around one line: the block is the statement that the loop repeats.
+The body of a loop is a single *statement*, such as an assignment or a method call. A *block statement* is itself a single statement that encloses zero or more statements in braces (`{ }`).
 
-Enclose the loop body in braces, even for a single statement. Braces make the scope explicit and prevent a common mistake: adding a second line later that you expect to run each iteration, but that runs once after the loop instead. C# doesn't treat whitespace as significant, so indentation alone never decides which statements belong to the loop; only the braces do. Indent your code for readability, but rely on braces to define the block.
+Many coding standards recommend that you enclose the loop body in braces, even for a single statement. Braces make the scope explicit. It prevents a common mistake: adding a second line later that you expect to run each iteration, but that runs once after the loop instead. Only the braces decide which statements belong to the loop. C# doesn't treat whitespace as significant, so indentation alone never does. Braces are legal even around one line: the block is the single statement that the loop repeats. Indent your code for readability, but rely on braces to define the block.
 
 ## Repeat while a condition holds with `while`
 
@@ -43,11 +43,11 @@ A `do`-`while` loop checks its condition *after* each iteration, so the body alw
 
 ## Count with `for`
 
-A `for` loop statement contains three parts: an *initializer* that runs once before the loop, a *condition* that's checked before each iteration, and an *iterator* that runs after each iteration. Use `for` when you need the index itself, not just the elements:
+A `for` loop statement contains three parts: an *initializer* that runs once before the loop, a *condition* that's checked before each iteration, and an *iterator* that runs after each iteration. Use `for` when you need the index itself, not just the elements. Typically, you need the index when you want to modify the element rather than reading its value.
 
 :::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="For":::
 
-When you only need the elements and not their positions, prefer `foreach`. It states the intent more clearly and avoids index arithmetic.
+When you only read the elements, when you don't use the positions or assign new values, prefer `foreach`. It states the intent more clearly and avoids index arithmetic.
 
 ## Exit or skip with `break` and `continue`
 
@@ -71,6 +71,6 @@ Asynchronous streams build on `async` and `await`. For a full walkthrough, see [
 
 ## See also
 
-- [Selection statements](selection-statements.md)
+- [Selection statements](selection.md)
 - [Iteration statements (language reference)](../../language-reference/statements/iteration-statements.md)
 - [Generate and consume asynchronous streams](../../asynchronous-programming/generate-consume-asynchronous-stream.md)

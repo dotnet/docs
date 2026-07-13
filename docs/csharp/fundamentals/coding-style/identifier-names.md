@@ -132,17 +132,6 @@ For more information on positional records, see [Positional syntax for property 
 
 Use camel casing ("camelCasing") when naming `private` or `internal` non-constant fields, and prefix them with `_`. Use camel casing when naming local variables, including instances of a delegate type.
 
-> [!NOTE]
-> Private and internal constants use PascalCase (not `_camelCase`) to maintain consistency with constant naming conventions. For example:
->
-> ```csharp
-> public class DataService
-> {
->     private const int MaxRetryCount = 3;   // PascalCase for constants
->     private IWorkerQueue _workerQueue;     // _camelCase for non-constant fields
-> }
-> ```
-
 ```csharp
 public class DataService
 {

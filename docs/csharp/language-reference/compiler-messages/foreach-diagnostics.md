@@ -81,7 +81,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 These errors indicate that the [`foreach` statement](../statements/iteration-statements.md#the-foreach-statement) itself is malformed, regardless of whether the collection type is valid.
 
-Declare both a type (or `var`) and an identifier for the iteration variable (**CS0230**, **CS8186**). The `foreach` statement requires a loop variable declaration — you can't omit either the type or the name. For example, write `foreach (int x in collection)` rather than `foreach (int in collection)`.
+Declare both a type (or `var`) and an identifier for the iteration variable (**CS0230**, **CS8186**). The `foreach` statement requires a loop variable declaration. You can't omit either the type or the name. For example, write `foreach (int x in collection)` rather than `foreach (int in collection)`.
 
 Invoke the method or delegate rather than passing it as a collection expression (**CS0446**). If you reference a method group or delegate without parentheses in the `in` clause, the compiler reports this error because it expects a collection value. Add parentheses to call the method, provided it returns an enumerable type: `foreach (var item in GetItems())`.
 
@@ -139,7 +139,7 @@ Use `foreach` instead of `await foreach` when the collection implements only <xr
 - **CS8419**: *The body of an async-iterator method must contain a 'yield' statement.*
 - **CS8420**: *The body of an async-iterator method must contain a 'yield' statement. Consider removing 'async' from the method declaration or adding a 'yield' statement.*
 
-These errors fire when a method's signature declares it as an async iterator (it's `async` and returns <xref:System.Collections.Generic.IAsyncEnumerable%601> or <xref:System.Collections.Generic.IAsyncEnumerator%601>) but the body contains no `yield return` or `yield break` statement.
+These errors occur when a method's signature declares it as an async iterator (it's `async` and returns <xref:System.Collections.Generic.IAsyncEnumerable%601> or <xref:System.Collections.Generic.IAsyncEnumerator%601>) but the body contains no `yield return` or `yield break` statement.
 
 Add at least one `yield return` statement to the method body to make it a valid async-iterator method. If you didn't intend the method to be an iterator, remove the `async` modifier and change the return type, or return a constructed async enumerable from a different source instead.
 
@@ -153,8 +153,8 @@ For more information on iterator methods, see [Iterators](../../iterators.md) an
 
 These diagnostics relate to the <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute>, which connects a <xref:System.Threading.CancellationToken> parameter to the token supplied by <xref:System.Collections.Generic.IAsyncEnumerable%601.GetAsyncEnumerator(System.Threading.CancellationToken)>.
 
-Apply `[EnumeratorCancellation]` only to a parameter of type <xref:System.Threading.CancellationToken> in an async-iterator method that returns <xref:System.Collections.Generic.IAsyncEnumerable%601> (**CS8424**). The attribute has no effect in any other context — non-token parameters, non-iterator methods, or methods returning other types.
+Apply `[EnumeratorCancellation]` only to a parameter of type <xref:System.Threading.CancellationToken> in an async-iterator method that returns <xref:System.Collections.Generic.IAsyncEnumerable%601> (**CS8424**). The attribute has no effect in any other context, such as non-token parameters, non-iterator methods, or methods returning other types.
 
-Add the `[EnumeratorCancellation]` attribute to exactly one `CancellationToken` parameter (**CS8425**). Without this attribute, the token provided by callers through `WithCancellation` is not forwarded to the iterator body. The generated `GetAsyncEnumerator(CancellationToken)` parameter goes unconsumed.
+Add the `[EnumeratorCancellation]` attribute to exactly one `CancellationToken` parameter (**CS8425**). Without this attribute, the token provided by callers through `WithCancellation` isn't forwarded to the iterator body. The generated `GetAsyncEnumerator(CancellationToken)` parameter goes unconsumed.
 
-Apply the attribute to only one parameter — not multiple (**CS8426**). The runtime infrastructure supports forwarding a single cancellation token to the iterator. If you have multiple token parameters, designate only one with the attribute and combine others manually using <xref:System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken)>.
+Apply the attribute to only one parameter, not multiple (**CS8426**). The runtime infrastructure supports forwarding a single cancellation token to the iterator. If you have multiple token parameters, designate only one with the attribute and combine others manually using <xref:System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken)>.

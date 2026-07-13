@@ -97,15 +97,14 @@ Invoke the method or delegate rather than passing it as a collection expression 
 The `foreach` statement uses a pattern-based approach rather than requiring a specific interface. For a type to be enumerable, it must provide:
 
 - A public parameterless `GetEnumerator` method (or `GetAsyncEnumerator` for `await foreach`) whose return type is a class, struct, or interface.
-- On the enumerator return type: a public `Current` property and a public parameterless `MoveNext` method returning `bool` (or `MoveNextAsync` returning `ValueTask<bool>` for async).
-
+- On the enumerator return type: a public `Current` property and a public parameterless `MoveNext` method returning `bool` (or a public parameterless `MoveNextAsync` method that returns `Task<bool>`, `ValueTask<bool>`, or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value).
 For details on the enumerable pattern, see [Iteration statements - `foreach`](../statements/iteration-statements.md#the-foreach-statement).
 
 Ensure `GetEnumerator` returns a proper enumerator type — not an array or pointer (**CS0202**). The return value must be a type that itself exposes `MoveNext` and `Current`.
 
 Add a public `GetEnumerator` method if the type doesn't have one (**CS1579**). Alternatively, implement <xref:System.Collections.Generic.IEnumerable%601> or provide an extension method named `GetEnumerator`. For `await foreach`, provide `GetAsyncEnumerator` or implement <xref:System.Collections.Generic.IAsyncEnumerable%601>.
 
-Ensure that `GetAsyncEnumerator` returns a type with a public `MoveNextAsync` method returning `ValueTask<bool>` and a public `Current` property (**CS8412**). This is the async equivalent of **CS0202**.
+Ensure that `GetAsyncEnumerator` returns a type with a public `Current` property and a public parameterless `MoveNextAsync` method that returns `Task<bool>`, `ValueTask<bool>`, or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value (**CS8412**). This is the async equivalent of **CS0202**.
 
 Resolve ambiguity when multiple methods match the pattern name (**CS0278**). This warning occurs when the compiler finds two candidates for `MoveNext` or `GetEnumerator`. Remove or rename the conflicting member, or cast to a specific interface to disambiguate.
 

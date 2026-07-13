@@ -31,7 +31,7 @@ dotnet test --filter <Expression>
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory` |
   | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
-  | Nunit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
+  | Nunit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory`<br>`Category`<br>`Property` |
 
 * **Operators**
 
@@ -43,6 +43,21 @@ dotnet test --filter <Expression>
 * **Value** is a string. All the lookups are case insensitive.
 
 ## Character escaping
+
+Use escape sequences to represent filter operator characters in a filter value. These escape sequences are separate from any escaping your shell requires.
+
+| Escape sequence | Represents           |
+| --------------- | -------------------- |
+| `\\`          | `\`                  |
+| `\(`           | `(`                  |
+| `\)`           | `)`                  |
+| `\&`           | `&`                  |
+| `\|`           | <code>&#124;</code> |
+| `\=`           | `=`                  |
+| `\!`           | `!`                  |
+| `\~`           | `~`                  |
+
+To escape filter values programmatically, use the `Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.FilterHelper.Escape` API from the `Microsoft.VisualStudio.TestPlatform.ObjectModel` NuGet package.
 
 To use an exclamation mark (`!`) in a filter expression, you have to escape it in some Linux or macOS shells by putting a backslash in front of it (`\!`). For example, the following filter skips all tests in a namespace that contains `IntegrationTests`:
 

@@ -65,7 +65,9 @@ The full set of helpers includes:
 var startInfo = new ProcessStartInfo("worker.exe") { StartSuspended = true };
 using var process = Process.Start(startInfo)!;
 
-// Attach diagnostics while the process is suspended.
+// Attach diagnostics or configure job objects while the process is suspended,
+// then call Resume to start execution once your setup is complete.
+AttachProfiler(process);
 process.SafeHandle.Resume();
 ```
 
@@ -216,11 +218,18 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 `System.Text.Json` can now serialize and deserialize C# union types. The serializer recognizes a union through the new `JsonTypeInfoKind.Union` contract kind, reads and writes the active case, and supports both the reflection-based serializer and the source generator. When you serialize a union, `System.Text.Json` writes the value of whichever case is active, so a union of `int` and `string` round-trips cleanly:
 
-```jsonc
-// A union value holding its string case
-"hello"
-// The same union holding its int case
-42
+```json
+{
+  "id": 1,
+  "payload": "hello"
+}
+```
+
+```json
+{
+  "id": 2,
+  "payload": 42
+}
 ```
 
 The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. Union types are a C# language preview feature. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
@@ -358,7 +367,7 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 
 ### Cross-lane vector operations
 
-`Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>` gain a set of lane construction and composition methods that previously required hand-written shuffles. The new methods fall into a few families:
+`Vector64<T>`, `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, and `Vector<T>` gain a set of lane construction and composition methods that previously required hand-written shuffles. The new methods fall into a few families:
 
 - **Patterned construction:** `CreateGeometricSequence`, `CreateAlternatingSequence`, and `CreateHarmonicSequence` build a vector from a starting value and a rule.
 - **Interleave and de-interleave:** `Zip`, `ZipLower`/`ZipUpper`, `Unzip`, `UnzipEven`/`UnzipOdd`.

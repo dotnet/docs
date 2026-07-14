@@ -34,6 +34,9 @@ Use the following path based on your goal:
 - Need GitHub Actions-native output (log groups, annotations, and job summary): [GitHub Actions report](./microsoft-testing-platform-test-reports.md#github-actions-reports) (extension, experimental)
 - Need coverage data: [Code coverage](./microsoft-testing-platform-code-coverage.md) (extension)
 - Need crash or hang diagnostics: [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) (extension)
+- Need to record the screen during a run: [Diagnostics](./microsoft-testing-platform-diagnostics.md) (extension, experimental)
+- Need to deploy and launch a packaged-app test host: [Test host deployment](./microsoft-testing-platform-test-host-deployment.md) (extension, experimental)
+- Need to route platform logs through `Microsoft.Extensions.Logging`: [Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md) (extension, experimental)
 - Need to retry failed tests: [Retry](./microsoft-testing-platform-retry.md#retry) (extension)
 - Need hot reload support: [Hot Reload](./microsoft-testing-platform-hot-reload.md) (extension)
 - Need Microsoft Fakes support: [Microsoft Fakes](./microsoft-testing-platform-fakes.md) (extension)
@@ -84,23 +87,14 @@ Run tests that use Microsoft Fakes for stubs and shims.
 
 Telemetry collection. Learn how to opt out and what data is collected.
 
-**[Video recorder](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VideoRecorder)** (experimental, introduced in MTP 2.3.0)
+**[Diagnostics](./microsoft-testing-platform-diagnostics.md)** (experimental, introduced in MTP 2.3.0)
 
-Record the screen during a test run. It requires `ffmpeg` to be available on the machine and is enabled with the `--capture-video` option. Register it manually with `builder.AddVideoRecorderProvider()`.
+Capture evidence to diagnose a run, such as recording the screen with the video recorder.
 
-**[Packaged app deployment](https://www.nuget.org/packages/Microsoft.Testing.Extensions.PackagedApp)** (experimental, introduced in MTP 2.3.0)
+**[Test host deployment](./microsoft-testing-platform-test-host-deployment.md)** (experimental, introduced in MTP 2.3.0)
 
-A reference extension that uses the experimental `ITestHostLauncher` extension point to deploy and launch a packaged-app test host. Register it manually with `builder.AddPackagedAppDeployment()`.
+Control how and where the test host is deployed and launched, such as deploying and launching a packaged-app test host.
 
-## Microsoft.Extensions integration
+**[Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md)** (experimental, introduced in MTP 2.3.0)
 
-These extensions bridge Microsoft.Testing.Platform to the `Microsoft.Extensions.*` libraries your application already uses.
-
-**[Logging bridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Logging)** (experimental, introduced in MTP 2.3.0)
-
-The Microsoft.Testing.Extensions.Logging package bridges Microsoft.Testing.Platform diagnostics to <xref:Microsoft.Extensions.Logging.ILogger>, so platform and extension logs flow through the same `Microsoft.Extensions.Logging` pipeline your application already uses. Register it manually with the following call:
-
-```csharp
-var builder = await TestApplication.CreateBuilderAsync(args);
-builder.AddMicrosoftExtensionsLogging(logging => logging.AddConsole());
-```
+Bridge platform and extension diagnostics into the `Microsoft.Extensions.*` libraries your application already uses, such as forwarding logs through the `Microsoft.Extensions.Logging` pipeline.

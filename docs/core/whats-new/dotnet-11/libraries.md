@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 06/09/2026
+ms.date: 07/14/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 5.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 6.
 
 ## Diagnostics and process execution
 
@@ -53,6 +53,24 @@ The full set of helpers includes:
 - <xref:System.Diagnostics.ProcessStartInfo.InheritedHandles?displayProperty=nameWithType> — specify exactly which OS handles a child process inherits, instead of using the all-or-nothing `UseShellExecute = false` default.
 - <xref:System.Diagnostics.ProcessStartInfo.StandardInputHandle?displayProperty=nameWithType>, <xref:System.Diagnostics.ProcessStartInfo.StandardOutputHandle?displayProperty=nameWithType>, and <xref:System.Diagnostics.ProcessStartInfo.StandardErrorHandle?displayProperty=nameWithType> — supply already-open <xref:Microsoft.Win32.SafeHandles.SafeFileHandle?displayProperty=nameWithType> values for redirection without the framework opening new ones.
 
+#### Suspended starts and process lookup
+
+`System.Diagnostics.Process` adds finer control over starting and finding processes:
+
+- `ProcessStartInfo.StartSuspended` starts a process in a suspended state on Windows. Pair it with `SafeProcessHandle.Resume` to let it run once you've finished any setup, such as attaching a debugger or configuring job objects.
+- `Process.TryGetProcessById` returns `false` instead of throwing when no process with the given ID exists.
+- `SafeProcessHandle.Open` and `TryOpen` open a handle to an existing process by ID.
+
+```csharp
+var startInfo = new ProcessStartInfo("worker.exe") { StartSuspended = true };
+using var process = Process.Start(startInfo)!;
+
+// Attach diagnostics or configure job objects while the process is suspended,
+// then call Resume to start execution once your setup is complete.
+AttachProfiler(process);
+process.SafeHandle.Resume();
+```
+
 ### Console FORCE_COLOR support
 
 .NET console output now honors the [`FORCE_COLOR`](https://force-color.org/) standard alongside the existing `NO_COLOR` support. When `FORCE_COLOR` is set, <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> no longer suppresses ANSI escape codes. This is useful when you pipe `dotnet run` output through `tee`, into a CI log viewer, or through `less -R`:
@@ -60,6 +78,31 @@ The full set of helpers includes:
 ```bash
 FORCE_COLOR=1 dotnet run | tee build.log
 ```
+
+## In-memory stream adapters
+
+Four new `Stream` types wrap common in-memory data so you can pass them to any API that expects a `Stream`, without copying into a `MemoryStream` first:
+
+- `ReadOnlyMemoryStream` exposes a `ReadOnlyMemory<byte>` as a read-only stream.
+- `WritableMemoryStream` exposes a writable `Memory<byte>` as a fixed-size stream.
+- `ReadOnlySequenceStream` exposes a `ReadOnlySequence<byte>` (for example, buffers from `System.IO.Pipelines`) as a stream without flattening it.
+- `StringStream` reads a `string` or `ReadOnlyMemory<char>` as a stream using a specified encoding.
+
+```csharp
+using System.IO;
+using System.Text;
+
+// Pass a string to an API that takes a Stream, with no intermediate byte[] needed.
+using Stream config = new StringStream(yamlText, Encoding.UTF8);
+var settings = ParseConfiguration(config);
+
+// Expose an existing buffer as a read-only stream, for example as an HTTP request body.
+ReadOnlyMemory<byte> payload = GetPayload();
+using Stream body = new ReadOnlyMemoryStream(payload);
+await httpClient.PostAsync(uri, new StreamContent(body));
+```
+
+`ReadOnlySequenceStream` is especially useful with `System.IO.Pipelines`, because it streams directly over the segments of a `ReadOnlySequence<byte>` instead of allocating a contiguous copy.
 
 ## Text, serialization, and data handling
 
@@ -171,6 +214,26 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonSerializeAsyncEnumerablePipe":::
 
+#### C# union type serialization
+
+`System.Text.Json` can now serialize and deserialize C# union types. The serializer recognizes a union through the new `JsonTypeInfoKind.Union` contract kind, reads and writes the active case, and supports both the reflection-based serializer and the source generator. When you serialize a union, `System.Text.Json` writes the value of whichever case is active, so a union of `int` and `string` round-trips cleanly:
+
+```json
+{
+  "id": 1,
+  "payload": "hello"
+}
+```
+
+```json
+{
+  "id": 2,
+  "payload": 42
+}
+```
+
+The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. Union types are a C# language preview feature. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
+
 ### Regular expression improvements
 
 #### AnyNewLine option
@@ -240,6 +303,7 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 - [Floating-point hex formatting and parsing](#floating-point-hex-formatting-and-parsing)
 - [Numerics improvements](#numerics-improvements)
 - [Random generic methods](#random-generic-methods)
+- [Cross-lane vector operations](#cross-lane-vector-operations)
 - [Low-level I/O improvements](#low-level-io-improvements)
 - [Collections improvements](#collections-improvements)
 
@@ -300,6 +364,27 @@ BFloat16 (Brain Floating Point) is a 16-bit floating-point format that's commonl
 - <xref:System.Random.NextBinaryFloat*?displayProperty=nameWithType> — Generates a random floating-point value of type `T` where `T` implements `IBinaryFloatingPointIeee754<T>`.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="RandomGeneric":::
+
+### Cross-lane vector operations
+
+`Vector64<T>`, `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, and `Vector<T>` gain a set of lane construction and composition methods that previously required hand-written shuffles. The new methods fall into a few families:
+
+- **Patterned construction:** `CreateGeometricSequence`, `CreateAlternatingSequence`, and `CreateHarmonicSequence` build a vector from a starting value and a rule.
+- **Interleave and de-interleave:** `Zip`, `ZipLower`/`ZipUpper`, `Unzip`, `UnzipEven`/`UnzipOdd`.
+- **Rearrange:** The `Concat` family (`ConcatLowerLower`, `ConcatLowerUpper`, `ConcatUpperLower`, `ConcatUpperUpper`) and `Reverse`.
+
+```csharp
+using System.Runtime.Intrinsics;
+
+// {1, 2, 4, 8} — each lane is the previous lane times two
+Vector128<int> powers = Vector128.CreateGeometricSequence(1, 2);
+
+// Interleave two vectors lane-by-lane
+(Vector128<int> lower, Vector128<int> upper) =
+    Vector128.Zip(Vector128.Create(1), Vector128.Create(2));
+```
+
+These building blocks are useful for image processing, audio digital signal processing (DSP), and other SIMD-intensive workloads that need fine-grained control over vector element layout, without falling back to platform-specific intrinsics.
 
 ### Low-level I/O improvements
 
@@ -405,6 +490,8 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 - [Configuration binding](#configuration-binding)
 - [MemoryCache OpenTelemetry metrics](#memorycache-opentelemetry-metrics)
 - [Options builder validation improvements](#options-builder-validation-improvements)
+- [Asynchronous validation with DataAnnotations](#asynchronous-validation-with-dataannotations)
+- [Activity tracing configuration](#activity-tracing-configuration)
 
 ### Configuration binding
 
@@ -454,6 +541,62 @@ services.AddOptions<MyOptions>()
     .Bind(configuration.GetSection("MyOptions"))
     .Validate<MyOptionsValidator>();
 ```
+
+### Asynchronous validation with DataAnnotations
+
+`System.ComponentModel.DataAnnotations` now supports asynchronous validation. A validation rule that needs to do I/O—a database lookup or a remote API call—can now run without blocking a thread. There are three new ways to express an async rule:
+
+- Derive from `AsyncValidationAttribute` and override its `IsValidAsync` method.
+- Implement `IAsyncValidatableObject` on the model.
+- Call the new `Validator.ValidateObjectAsync`, `TryValidateObjectAsync`, `ValidatePropertyAsync`, and `ValidateValueAsync` methods.
+
+```csharp
+using System;
+using System.ComponentModel.DataAnnotations;
+
+public sealed class ValidVatNumberAttribute : AsyncValidationAttribute
+{
+    protected override ValidationResult? IsValid(object? value, ValidationContext context) =>
+        throw new InvalidOperationException("Validate this attribute with IsValidAsync.");
+
+    protected override async Task<ValidationResult?> IsValidAsync(
+        object? value, ValidationContext context, CancellationToken cancellationToken)
+    {
+        var registry = context.GetRequiredService<IVatRegistry>();
+        return await registry.IsRegisteredAsync((string?)value, cancellationToken)
+            ? ValidationResult.Success
+            : new ValidationResult("That VAT number isn't registered with the tax authority.");
+    }
+}
+
+public class Invoice
+{
+    [Required]
+    [StringLength(14, MinimumLength = 8)]
+    [RegularExpression(@"^[A-Z]{2}[A-Z0-9]+$")]
+    [ValidVatNumber] // asynchronous
+    public string VatNumber { get; set; } = "";
+}
+
+var context = new ValidationContext(model, serviceProvider, items: null);
+await Validator.ValidateObjectAsync(model, context, validateAllProperties: true);
+```
+
+`Microsoft.Extensions.Options` gains matching support: options can be validated asynchronously, including at startup through the new `IAsyncStartupValidator`. This lets an app fail fast when an option that requires a network check is misconfigured.
+
+### Activity tracing configuration
+
+A new tracing configuration API in `Microsoft.Extensions.Diagnostics` lets you turn `Activity` tracing on and off with rules instead of wiring up `ActivityListener` instances manually. Call `AddTracing` and describe which activity sources, operations, and listeners to enable or disable. Rules can be driven from configuration, so tracing can be tuned without a redeploy.
+
+```csharp
+builder.Services.AddTracing(tracing =>
+{
+    tracing.EnableTracing(sourceName: "MyCompany.Orders");
+    tracing.DisableTracing(sourceName: "MyCompany.Orders", operationName: "HealthCheck");
+});
+```
+
+The same release adds `ActivitySourceFactory` and unseals `ActivitySource`, which together support factory-driven creation and refreshable listeners.
 
 ## Cryptography
 

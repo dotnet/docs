@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # Built-in numeric conversions (C# reference)
 
-C# provides a set of [integral](integral-numeric-types.md) and [floating-point](floating-point-numeric-types.md) numeric types. An `implicit` or `explicit` conversion exists between any two numeric types. Use a [cast expression](../operators/type-testing-and-cast.md#cast-expression) to perform an `explicit` conversion.
+C# provides a set of [integral](integral-numeric-types.md) and [floating-point](floating-point-numeric-types.md) numeric types. An implicit or explicit conversion exists between any two numeric types. Use a [cast expression](../operators/type-testing-and-cast.md#cast-expression) to perform an explicit conversion.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -22,17 +22,17 @@ The following table shows the predefined implicit conversions between the built-
 
 | From                                     | To     |
 |------------------------------------------|--------|
-| [sbyte](integral-numeric-types.md)       | `short`, `int`, `long`, `float`, `double`, `decimal`, or `nint` |
-| [byte](integral-numeric-types.md)        | `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `nint`, or `nuint` |
-| [short](integral-numeric-types.md)       | `int`, `long`, `float`, `double`, `decimal`, or `nint` |
-| [ushort](integral-numeric-types.md)      | `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `nint`, or `nuint` |
-| [int](integral-numeric-types.md)         | `long`, `float`, `double`, `decimal`, or `nint` |
-| [uint](integral-numeric-types.md)        | `long`, `ulong`, `float`, `double`, `decimal`, or `nuint` |
-| [long](integral-numeric-types.md)        | `float`, `double`, or `decimal` |
-| [ulong](integral-numeric-types.md)       | `float`, `double`, or `decimal` |
-| [float](floating-point-numeric-types.md) | `double` |
-| [nint](integral-numeric-types.md)        | `long`, `float`, `double`, or `decimal` |
-| [nuint](integral-numeric-types.md)       | `ulong`, `float`, `double`, or `decimal` |
+| [`sbyte`](integral-numeric-types.md)       | `short`, `int`, `long`, `float`, `double`, `decimal`, or `nint` |
+| [`byte`](integral-numeric-types.md)        | `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `nint`, or `nuint` |
+| [`short`](integral-numeric-types.md)       | `int`, `long`, `float`, `double`, `decimal`, or `nint` |
+| [`ushort`](integral-numeric-types.md)      | `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `nint`, or `nuint` |
+| [`int`](integral-numeric-types.md)         | `long`, `float`, `double`, `decimal`, or `nint` |
+| [`uint`](integral-numeric-types.md)        | `long`, `ulong`, `float`, `double`, `decimal`, or `nuint` |
+| [`long`](integral-numeric-types.md)        | `float`, `double`, or `decimal` |
+| [`ulong`](integral-numeric-types.md)       | `float`, `double`, or `decimal` |
+| [`float`](floating-point-numeric-types.md) | `double` |
+| [`nint`](integral-numeric-types.md)        | `long`, `float`, `double`, or `decimal` |
+| [`nuint`](integral-numeric-types.md)       | `ulong`, `float`, `double`, or `decimal` |
 
 > [!NOTE]
 > The implicit conversions from `int`, `uint`, `long`, `ulong`, `nint`, or `nuint` to `float` and from `long`, `ulong`, `nint`, or `nuint` to `double` can cause a loss of precision, but never a loss of an order of magnitude. The other implicit numeric conversions never lose any information.

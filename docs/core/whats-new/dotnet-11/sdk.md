@@ -222,7 +222,7 @@ OpenTelemetry tracing spans are emitted from the AOT path with correct parent/ch
 
 A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `dotnet/maui`) declare a list of assemblies to be partially R2R-compiled and excluded from the composite image. The motivating scenario is precompiling generated XAML code in Debug builds to speed up F5 without paying the full crossgen cost for the rest of the app. App developers don't set this property directly—it's a hook the mobile workloads use in their targets.
 
-## Testing improvements
+## Test improvements
 
 - [dotnet test improvements](#dotnet-test-improvements)
 - [Test templates support xUnit v3 and NUnit on Microsoft.Testing.Platform](#test-templates-support-xunit-v3-and-nunit-on-microsofttestingplatform)
@@ -259,7 +259,7 @@ dotnet new nunit --test-runner Microsoft.Testing.Platform
 
 Both options are available for C#, F#, and VB templates.
 
-## Container and tooling improvements
+## Container and tooling updates
 
 - [Multi-arch container builds with Podman](#multi-arch-container-builds-with-podman)
 - [TypeScript outputs integrate with Static Web Assets](#typescript-outputs-integrate-with-static-web-assets)
@@ -279,7 +279,7 @@ The `dotnet` CLI no longer suppresses the MSBuild build server when `DOTNET_CLI_
 
 The OTLP telemetry exporter is now also enabled when any standard OpenTelemetry `OTEL_EXPORTER_OTLP_*` environment variable is present (endpoint, protocol, headers, or timeout—including signal-specific `_TRACES_*` and `_METRICS_*` variants), in addition to the existing `DOTNET_CLI_TELEMETRY_ENABLE_EXPORTER` flag.
 
-## File-based apps DLL includes
+## Include DLLs in file-based apps
 
 File-based apps can now include compiled DLL references using `#:include` without a feature flag. The default item-type mapping treats `.dll` files as `Reference` items, so you can reference prebuilt libraries directly:
 

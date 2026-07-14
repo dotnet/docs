@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
-ms.custom: copilot-scenario-highlight
 ---
 
 # How to customize property names and values with System.Text.Json
@@ -27,9 +26,6 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 
 > [!NOTE]
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
-
-> [!TIP]
-> You can use AI assistance to [create an object with custom serialization properties](#use-ai-to-customize-how-property-names-are-serialized).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
@@ -243,43 +239,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use AI to customize how property names are serialized
-
-You can use AI tools, such as GitHub Copilot, to apply patterns of changes to how your code serializes.
-
-Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attributes to every property in your class. You can use Copilot to make these changes with a chat prompt like this:
-
-```copilot-prompt
-Update #ClassName:
-when the property name contains more than one word,
-change the serialized property name to use underscores between words.
-Use built-in serialization attributes.
-```
-
-Here's a more complete version of the example that includes a simple class.
-
-```copilot-prompt
-Take this C# class:
-public class WeatherForecast
-{
-    public DateTime Date { get; set; }
-    public int TemperatureC { get; set; }
-    public int TemperatureF { get; set; }
-    public string? Summary { get; set; }
-    public int WindSpeed { get; set; }
-}
-When the property name contains more than one word,
-change the serialized property name to use underscores between words.
-Use built-in serialization attributes.
-```
-
-Review Copilot's suggestions before applying them.
-
-For more information about GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
-
 ## See also
 
 - [System.Text.Json overview](overview.md)
 - [How to serialize and deserialize JSON](how-to.md)
-- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

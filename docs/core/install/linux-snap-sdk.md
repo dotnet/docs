@@ -63,7 +63,7 @@ The following table lists the .NET SDK snap packages you can install:
 
 ## 2. Map the dotnet command
 
-Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide. Create this link only if you want to map the `dotnet` command to this specific Snap installation. If you already have .NET installed through another method, creating this link overwrites that mapping.
+Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide. Create this link only if you want to map the `dotnet` command to this specific Snap installation. If you already have .NET installed through another method and you create this link, it overwrites that mapping.
 
 If `/usr/local/bin/dotnet` already exists, remove it before you create the link.
 

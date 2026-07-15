@@ -178,7 +178,6 @@ f1_keywords:
   - "CS8183"
   - "CS8184"
   - "CS8185"
-  - "CS8186"
   - "CS8187"
   - "CS8188"
   - "CS8189"
@@ -225,21 +224,10 @@ f1_keywords:
   - "CS8383"
   - "CS8384"
   # C# 8.0 diagnostics
-  ## Async enumerables
-  - "CS8412"
-  - "CS8413"
-  - "CS8414"
-  - "CS8415"
-  - "CS8419"
-  - "CS8420"
   ## Static local functions
   - "CS8421"
   ## Attributes
   - "CS8423"
-  ## More async enumerators
-  - "CS8424"
-  - "CS8425"
-  - "CS8426"
   ## Index and range
   - "CS8428"
   - "CS8429"
@@ -262,7 +250,6 @@ f1_keywords:
   - "CS9349"
   - "CS9350"
   - "CS9351"
-  - "CS9353"
 # Collection arguments:
   - "CS9354"
   - "CS9355"

@@ -6,10 +6,17 @@ public static class Program
     {
         QuerySyntaxExample();
         MethodSyntaxExample();
+        QuerySyntaxClearerExample();
+        MethodSyntaxClearerExample();
         LambdaExpressionsExample();
+        QuerySyntaxLambdaExample();
         CommonOperatorsExample();
         GroupByExample();
         DeferredExecutionExample();
+        ImmediateExecutionExample();
+        ComposeQuerySyntaxExample();
+        ComposeMethodSyntaxExample();
+        ComposeWithCachingExample();
     }
 
     private static void QuerySyntaxExample()
@@ -47,6 +54,42 @@ public static class Program
         // </MethodSyntax>
     }
 
+    private static void QuerySyntaxClearerExample()
+    {
+        // <QuerySyntaxClearer>
+        (string Area, int Priority)[] workItems =
+        [
+            ("docs", 2),
+            ("tests", 1),
+            ("deploy", 4),
+            ("api", 1)
+        ];
+
+        IEnumerable<string> nextItems =
+            from item in workItems
+            let label = $"{item.Area}: P{item.Priority}"
+            where item.Priority <= 2
+            orderby item.Priority, item.Area
+            select label;
+
+        foreach (string item in nextItems)
+        {
+            Console.WriteLine(item); // => api: P1, then tests: P1, then docs: P2
+        }
+        // </QuerySyntaxClearer>
+    }
+
+    private static void MethodSyntaxClearerExample()
+    {
+        // <MethodSyntaxClearer>
+        List<string> workItems = ["design", "docs", "deploy", "review"];
+
+        int count = workItems.Count(item => item.StartsWith('d'));
+
+        Console.WriteLine($"Starts with d: {count}"); // => Starts with d: 3
+        // </MethodSyntaxClearer>
+    }
+
     private static void LambdaExpressionsExample()
     {
         // <LambdaExpressions>
@@ -61,6 +104,31 @@ public static class Program
             Console.WriteLine(name); // => ANA, then BEN
         }
         // </LambdaExpressions>
+    }
+
+    private static void QuerySyntaxLambdaExample()
+    {
+        // <QuerySyntaxLambda>
+        string[] workItems = ["docs", "test", "deploy"];
+
+        IEnumerable<string> querySyntax =
+            from item in workItems
+            where item.Length == 4
+            select item;
+
+        IEnumerable<string> methodSyntax =
+            workItems.Where(item => item.Length == 4);
+
+        foreach (string item in querySyntax)
+        {
+            Console.WriteLine($"Query syntax: {item}"); // => Query syntax: docs, then Query syntax: test
+        }
+
+        foreach (string item in methodSyntax)
+        {
+            Console.WriteLine($"Method syntax: {item}"); // => Method syntax: docs, then Method syntax: test
+        }
+        // </QuerySyntaxLambda>
     }
 
     private static void CommonOperatorsExample()
@@ -115,5 +183,105 @@ public static class Program
         }
         // </DeferredExecution>
     }
-}
 
+    private static void ImmediateExecutionExample()
+    {
+        // <ImmediateExecution>
+        List<string> workItems = ["design", "docs"];
+
+        IEnumerable<string> query = workItems.Where(item => item.StartsWith('d'));
+
+        int count = query.Count();
+        Console.WriteLine($"Count before add: {count}"); // => Count before add: 2
+
+        workItems.Add("deploy");
+
+        Console.WriteLine($"Stored count: {count}"); // => Stored count: 2
+        Console.WriteLine($"Current count: {query.Count()}"); // => Current count: 3
+        // </ImmediateExecution>
+    }
+
+    private static void ComposeQuerySyntaxExample()
+    {
+        // <ComposeQuerySyntax>
+        (string Title, int Priority, bool IsOpen)[] items =
+        [
+            ("docs", 2, true),
+            ("tests", 1, true),
+            ("deploy", 3, false),
+            ("api", 1, true)
+        ];
+
+        IEnumerable<(string Title, int Priority, bool IsOpen)> openItems =
+            from item in items
+            where item.IsOpen
+            select item;
+
+        IEnumerable<string> topOpenItems =
+            from item in openItems
+            where item.Priority == 1
+            orderby item.Title
+            select item.Title;
+
+        foreach (string title in topOpenItems)
+        {
+            Console.WriteLine(title); // => api, then tests
+        }
+        // </ComposeQuerySyntax>
+    }
+
+    private static void ComposeMethodSyntaxExample()
+    {
+        // <ComposeMethodSyntax>
+        (string Title, string Area, bool IsOpen)[] items =
+        [
+            ("write docs", "docs", true),
+            ("fix tests", "tests", true),
+            ("deploy site", "deploy", false)
+        ];
+
+        bool onlyDocs = true;
+
+        IEnumerable<(string Title, string Area, bool IsOpen)> query =
+            items.Where(item => item.IsOpen);
+
+        if (onlyDocs)
+        {
+            query = query.Where(item => item.Area == "docs");
+        }
+
+        foreach (string title in query.Select(item => item.Title))
+        {
+            Console.WriteLine(title); // => write docs
+        }
+        // </ComposeMethodSyntax>
+    }
+
+    private static void ComposeWithCachingExample()
+    {
+        // <ComposeWithCaching>
+        List<(string Title, int Priority, bool IsOpen)> items =
+        [
+            ("docs", 2, true),
+            ("tests", 1, true),
+            ("deploy", 3, false)
+        ];
+
+        List<(string Title, int Priority, bool IsOpen)> openItems = items
+            .Where(item => item.IsOpen)
+            .ToList();
+
+        items.Add(("api", 1, true));
+
+        IEnumerable<string> cachedTopOpenItems = openItems
+            .Where(item => item.Priority == 1)
+            .OrderBy(item => item.Title)
+            .Select(item => item.Title);
+
+        foreach (string title in cachedTopOpenItems)
+        {
+            Console.WriteLine(title); // => tests
+        }
+        // </ComposeWithCaching>
+    }
+}

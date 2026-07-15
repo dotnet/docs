@@ -7,6 +7,7 @@ public static class Program
         ChooseCollectionExample();
         ArraysExample();
         ListChangesExample();
+        ListInsertRemoveExample();
         DictionaryLookupExample();
         CollectionExpressionsExample();
         IndexesAndRangesExample();
@@ -53,6 +54,31 @@ public static class Program
         Console.WriteLine($"Has review: {workItems.Contains("review")}"); // => Has review: True
         Console.WriteLine($"Index of test: {workItems.IndexOf("test")}"); // => Index of test: 1
         // </ListChanges>
+    }
+
+    private static void ListInsertRemoveExample()
+    {
+        // <ListInsertRemove>
+        List<string> workItems = ["design", "test"];
+
+        workItems.Insert(1, "code");
+        Console.WriteLine($"Insert middle: {string.Join(", ", workItems)}"); // => Insert middle: design, code, test
+
+        workItems.Insert(0, "plan");
+        Console.WriteLine($"Insert front: {string.Join(", ", workItems)}"); // => Insert front: plan, design, code, test
+
+        workItems.InsertRange(workItems.Count, ["review", "deploy"]);
+        Console.WriteLine($"Insert range at end: {string.Join(", ", workItems)}"); // => Insert range at end: plan, design, code, test, review, deploy
+
+        workItems.RemoveAt(workItems.Count - 1);
+        Console.WriteLine($"Remove end: {string.Join(", ", workItems)}"); // => Remove end: plan, design, code, test, review
+
+        workItems.RemoveAt(2);
+        Console.WriteLine($"Remove middle: {string.Join(", ", workItems)}"); // => Remove middle: plan, design, test, review
+
+        workItems.RemoveAt(0);
+        Console.WriteLine($"Remove front: {string.Join(", ", workItems)}"); // => Remove front: design, test, review
+        // </ListInsertRemove>
     }
 
     private static void DictionaryLookupExample()
@@ -109,8 +135,12 @@ public static class Program
 
         Console.WriteLine($"Last: {phases[^1]}"); // => Last: deploy
         Console.WriteLine($"Middle: {string.Join(", ", phases[1..3])}"); // => Middle: code, test
+        Console.WriteLine($"Last two: {string.Join(", ", phases[^2..])}"); // => Last two: test, deploy
+        Console.WriteLine($"Without ends: {string.Join(", ", phases[1..^1])}"); // => Without ends: code, test
+        Console.WriteLine($"First two: {string.Join(", ", phases[..2])}"); // => First two: design, code
+        Console.WriteLine($"From third: {string.Join(", ", phases[2..])}"); // => From third: test, deploy
+        Console.WriteLine($"All phases: {string.Join(", ", phases[..])}"); // => All phases: design, code, test, deploy
         Console.WriteLine($"List last: {checklist[^1]}"); // => List last: review
         // </IndexesAndRanges>
     }
 }
-

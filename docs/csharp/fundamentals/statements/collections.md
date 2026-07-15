@@ -9,11 +9,11 @@ ai-usage: ai-assisted
 # Common collection types
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For the complete syntax, see [collections](../../language-reference/builtin-types/collections.md), [arrays](../../language-reference/builtin-types/arrays.md), and [collection expressions](../../language-reference/operators/collection-expressions.md) in the language reference.
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For more information about collections, see [Collections](../../language-reference/builtin-types/collections.md) in the language reference. For more information about arrays, see [The array reference type](../../language-reference/builtin-types/arrays.md) in the language reference. For more information about collection expressions, see [Collection expressions (Collection literals)](../../language-reference/operators/collection-expressions.md) in the language reference.
 >
 > **Coming from another language?** C# arrays are fixed-size ordered collections, like arrays in Java or C++. <xref:System.Collections.Generic.List`1> is the everyday growable sequence, like Java's `ArrayList`, JavaScript's arrays, or Python's lists. <xref:System.Collections.Generic.Dictionary`2> stores values by key, like maps or dictionaries in many languages.
 
-A *collection* is an object that stores multiple related values. Each value in a collection is an *element*. C# developers commonly start with three collection shapes: arrays for fixed-size ordered data, <xref:System.Collections.Generic.List`1> for ordered data that grows or shrinks, and <xref:System.Collections.Generic.Dictionary`2> for values that you find by key.
+A *collection* is an object that stores multiple related values. Each value in a collection is an *element*. Choose an array when the set is fixed, such as the status names your work-item tracker always uses. Choose a <xref:System.Collections.Generic.List`1> when items come and go, such as a backlog that gains new work and drops completed items. Choose a <xref:System.Collections.Generic.Dictionary`2> when you look up values by a key, such as finding a work item by ID or a setting by name. The next section turns those examples into a quick decision model.
 
 ## Choose a collection shape
 
@@ -21,7 +21,7 @@ Choose the collection that matches how your code uses the data. A *sequence* sto
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ChooseCollection":::
 
-<xref:System.Collections.Generic.List`1> and <xref:System.Collections.Generic.Dictionary`2> are *generic types*. A generic type uses a type argument, such as `string` or `int`, to say what kind of values it stores. Generics let you reuse the same collection shape, such as a list or dictionary, with different element types, such as `string`, `int`, or a custom type. They also provide *type safety*: the compiler guarantees every element is the declared type, so you don't need casts and can't accidentally store the wrong type. For more information, see [Generic classes and methods](../types/generics.md).
+<xref:System.Collections.Generic.List`1> and <xref:System.Collections.Generic.Dictionary`2> are *generic types*. A generic type uses a type argument, such as `string` or `int`, to say what kind of values it stores. Generics let you reuse the same collection shape, such as a list or dictionary, with different element types, such as `string`, `int`, or a custom type. They also provide *type safety*: the compiler guarantees every element is the declared type, so you don't need casts and can't accidentally store the wrong type. For more information about generic types, see [Generic types and methods](../types/generics.md) in the fundamentals.
 
 ## Store fixed-size data in arrays
 
@@ -31,7 +31,7 @@ An array is an ordered collection with a fixed length. You access an array eleme
 
 Use `foreach` when you want to read every element in order. Use an index when the position matters, such as when you need the first element, the last element, or the position returned by <xref:System.Array.IndexOf*?displayProperty=nameWithType>.
 
-## Grow a sequence with `List<T>`
+## Grow and shrink a sequence with `List<T>`
 
 A <xref:System.Collections.Generic.List`1> stores elements in order and can grow or shrink as your program runs. Use <xref:System.Collections.Generic.List`1.Add*> to append an element, <xref:System.Collections.Generic.List`1.Remove*> to remove a matching element, <xref:System.Collections.Generic.List`1.Contains*> to test whether an element exists, and <xref:System.Collections.Generic.List`1.IndexOf*> to find an element's position.
 
@@ -39,13 +39,19 @@ A <xref:System.Collections.Generic.List`1> stores elements in order and can grow
 
 A <xref:System.Collections.Generic.List`1> keeps the remaining elements in order when you add or remove items. When you remove an element, later elements move to lower indexes.
 
+Use <xref:System.Collections.Generic.List`1.Insert*> to add one element at a specific position, <xref:System.Collections.Generic.List`1.InsertRange*> to add several elements at a position, and <xref:System.Collections.Generic.List`1.RemoveAt*> to remove an element by index:
+
+:::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ListInsertRemove":::
+
+Adding or removing at the end of a <xref:System.Collections.Generic.List`1> is fast. Adding with <xref:System.Collections.Generic.List`1.Add*> is an O(1) operation on average, and removing the last element with <xref:System.Collections.Generic.List`1.RemoveAt*> is O(1). Inserting or removing at the front or middle is O(n) because every later element shifts to a new index. If your code frequently inserts or removes at the front, a <xref:System.Collections.Generic.List`1> might be the wrong collection shape.
+
 ## Look up items by key with `Dictionary<TKey,TValue>`
 
 A <xref:System.Collections.Generic.Dictionary`2> stores key/value pairs. A *key/value pair* is one key and the value associated with that key; .NET represents one pair with <xref:System.Collections.Generic.KeyValuePair`2>. Use the dictionary indexer to add or update a value by key, and use <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> when the key might not exist.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="DictionaryLookup":::
 
-An *indexer* lets you use bracket syntax to access a value from an object. The dictionary indexer is useful when the key must exist or when you're assigning a value. <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> is safer for reads when the key might be missing because it reports both outcomes without throwing an exception. For more information about bracket access, see the [member access operators](../../language-reference/operators/member-access-operators.md#indexer-operator-).
+An *indexer* lets you use bracket syntax to access a value from an object. The dictionary indexer is useful when the key must exist or when you're assigning a value. <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> is safer for reads when the key might be missing because it reports both outcomes without throwing an exception. For more information about the indexer operator, see [Member access operators](../../language-reference/operators/member-access-operators.md#indexer-operator-) in the language reference.
 
 ## Create collections with collection expressions
 
@@ -57,11 +63,11 @@ Collection expressions keep initialization concise. A collection expression has 
 
 ## Read from positions with indexes and ranges
 
-Beginning with C# 8, an <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..`. Arrays support both indexes and ranges. <xref:System.Collections.Generic.List`1> supports indexes, including from-end indexes, but it doesn't support the range operator directly.
+An <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..`. From-end indexes can appear on either side of `..`. If you omit the start index, the range starts at the beginning. If you omit the end index, the range continues through the last element. The range `..` means the entire collection. Arrays support both indexes and ranges. <xref:System.Collections.Generic.List`1> supports indexes, including from-end indexes, but it doesn't support the range operator directly.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="IndexesAndRanges":::
 
-Use ranges when the subsection is part of the data you're working with. Use a <xref:System.Collections.Generic.List`1> index when you need one item by position. For more range examples, see [Explore indexes and ranges](../../tutorials/ranges-indexes.md).
+Use ranges when the subsection is part of the data you're working with. Use a <xref:System.Collections.Generic.List`1> index when you need one item by position. For more information about indexes and ranges, see the [Explore ranges of data using indices and ranges](../../tutorials/ranges-indexes.md) tutorial.
 
 ## See also
 

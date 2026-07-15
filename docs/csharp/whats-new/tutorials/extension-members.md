@@ -179,7 +179,7 @@ Now, use the indexer to read and write points along the path:
 
 :::code language="csharp" source="snippets/PointExtensions/ExtensionMemberDemonstrations.cs" id="PathIndexerUse":::
 
-Both accessors throw <xref:System.ArgumentOutOfRangeException> when the index doesn't refer to an offset in the path.
+Both accessors share a small private `ValidatePathIndex` helper in the same `PointExtensions` class that bounds-checks the index and throws <xref:System.ArgumentOutOfRangeException> when it doesn't refer to an offset in the path.
 
 ## Completed sample
 

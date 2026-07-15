@@ -93,7 +93,6 @@ public static class PointExtensions
             }
         }
     }
-    // </PathIndexer>
 
     private static void ValidatePathIndex(Path path, int index)
     {
@@ -103,4 +102,5 @@ public static class PointExtensions
                 "Index must refer to an offset in the path.");
         }
     }
+    // </PathIndexer>
 }

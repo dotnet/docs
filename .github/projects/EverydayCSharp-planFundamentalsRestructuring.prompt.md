@@ -226,6 +226,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ### PR 13 — Statements: selection + iteration
 
+[#54716](https://github.com/dotnet/docs/pull/54716) *Merged*
+
 > ~8 files
 
 1. Create `fundamentals/statements/` directory

@@ -60,9 +60,9 @@ public static class PointExtensions
         // </TransformationMethods>
     }
 
+    // <PathIndexer>
     extension(Path path)
     {
-        // <PathIndexer>
         public Point this[int index]
         {
             get
@@ -92,8 +92,8 @@ public static class PointExtensions
                 path.SetOffset(index, (value.X - previousPoint.X, value.Y - previousPoint.Y));
             }
         }
-        // </PathIndexer>
     }
+    // </PathIndexer>
 
     private static void ValidatePathIndex(Path path, int index)
     {

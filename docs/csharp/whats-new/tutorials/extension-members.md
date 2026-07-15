@@ -33,9 +33,9 @@ In this tutorial, you:
 
 ## Create the sample application
 
-Start by creating a console application that demonstrates both traditional extension methods and the new extension members syntax. You'll create extensions for the <xref:System.Drawing.Point?displayProperty=fullName> type. This type comes from the `System.Drawing` namespace and is typically used in Windows Forms applications.
+Start by creating a console application that demonstrates both traditional extension methods and the new extension members syntax. You create extensions for the <xref:System.Drawing.Point?displayProperty=fullName> type. This type comes from the `System.Drawing` namespace and is typically used in Windows Forms applications.
 
-1. Create a new console application:
+1. Create a new console application.
 
    ```dotnetcli
    dotnet new console -n PointExtensions
@@ -101,11 +101,11 @@ Next, examine the following code that performs arithmetic with points:
 
 :::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="PointArithmetic":::
 
-Traditional extension methods can't add operators to existing types. You must implement arithmetic operations manually, making the code verbose and harder to read. The algorithm gets duplicated whenever the operation is needed, which creates more opportunities for small mistakes to enter the code base. It's better to place that code in one location. Add the following operators to your extension block in `NewExtensionsMembers.cs`:
+Traditional extension methods can't add operators to existing types. You must implement arithmetic operations manually, which makes the code verbose and harder to read. The algorithm gets duplicated whenever you need the operation, which creates more opportunities for small mistakes to enter the code base. It's better to place that code in one location. Add the following operators to your extension block in `NewExtensionsMembers.cs`:
 
 :::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="ArithmeticOperators":::
 
-Extension members enable you to add operators directly to existing types. Now you can perform arithmetic operations using natural syntax:
+By using extension members, you can add operators directly to existing types. Now you can perform arithmetic operations by using natural syntax:
 
 :::code language="csharp" source="snippets/PointExtensions/ExtensionMemberDemonstrations.cs" id="PointArithmeticWithOperators":::
 
@@ -153,17 +153,21 @@ The key difference is syntax: extension members use `extension (Type variableNam
 
 C# 15 adds indexers to `extension` blocks. An indexer has no name. Code accesses it with `this[...]` in the declaration and with indexed syntax at the call site.
 
+Imagine a path type that stores each step as a relative offset. When you ask for `path[i]`, you want the absolute point at that step. When you assign `path[i] = target`, you want the type to update the one offset that gets you there. Indexed access reads like "the point at this step" and keeps the offset-to-point math in one place.
+
+Imagine that `Path` came from a library. If you don't own the type, you can't add an indexer to its source. Before C# 15, you could add methods, but you couldn't add `this[...]` indexed access to a type you don't control. This tutorial defines `Path` so the sample is runnable; think of it as standing in for that library type.
+
 For this section, add a `Path` type. The type stores a sequence of `(dX, dY)` offsets. Each offset says how far to move from the previous point. The first offset starts at `Point.Origin`, the static extension property you added earlier.
 
-The sample defines `Path` in the `ExtensionMembers` namespace. That keeps the sample type separate from <xref:System.IO.Path>. The demo file uses a `using Path = ExtensionMembers.Path;` alias, so every `Path` in the demo means the sample path type.
+Create a new file named `Path.cs` in the same project as the other sample files. Add the `Path` type to the `ExtensionMembers` namespace in that file. Keeping `Path` in this namespace makes it your sample type, not <xref:System.IO.Path>. The demo file uses a `using Path = ExtensionMembers.Path;` alias, so every `Path` in the demo means the sample path type.
 
 :::code language="csharp" source="snippets/PointExtensions/Path.cs" id="PathType":::
 
-Now add an indexer for `Path`:
+Now add an indexer for `Path`. Put this code in the existing `PointExtensions` static class in `NewExtensionsMembers.cs`. Add it as a new `extension(Path path)` block, separate from the `extension(Point)` block for static members and operators and separate from the `extension(ref Point point)` block for instance methods:
 
 :::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="PathIndexer":::
 
-Indexers are always instance members, so the extension block names the receiver: `extension(Path path)`. A block written as `extension(Path)` wouldn't provide a `path` variable for the indexer body.
+Indexers are always instance members, so this new extension block must name the receiver: `extension(Path path)`. A block written as `extension(Path)` wouldn't provide a `path` variable for the indexer body.
 
 `Path` is a class that owns a list of offsets. The indexer doesn't need a `ref` receiver because the setter changes the contents of that existing `Path` object.
 
@@ -199,7 +203,7 @@ This example demonstrates how extension members create a cohesive API that feels
 
 ### Migration benefits
 
-When migrating from traditional extension methods to extension members, you gain:
+When you migrate from traditional extension methods to extension members, you get:
 
 1. **Static properties**: Add constants and computed values to types.
 1. **Operators**: Enable natural mathematical and logical operations.

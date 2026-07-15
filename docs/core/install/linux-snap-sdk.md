@@ -63,6 +63,7 @@ The following table lists the .NET SDK snap packages you can install:
 Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide.
 
 If `/usr/local/bin/dotnet` already exists, remove it before you create the link.
+
 ```bash
 sudo ln -s /snap/dotnet-sdk-100/current/usr/bin/dotnet /usr/local/bin/dotnet
 ```

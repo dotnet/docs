@@ -1,12 +1,12 @@
 ---
-title: "Collections in C#"
+title: "Arrays, lists, and dictionaries in C#"
 description: Store, update, search, and read groups of values by using arrays, lists, dictionaries, collection expressions, indexes, and ranges.
 ms.date: 07/15/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 
-# Collections
+# Arrays, lists, and dictionaries
 
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For the complete syntax, see [collections](../../language-reference/builtin-types/collections.md), [arrays](../../language-reference/builtin-types/arrays.md), and [collection expressions](../../language-reference/operators/collection-expressions.md) in the language reference.
@@ -72,5 +72,3 @@ Use ranges when the subsection is part of the data you're working with. Use a <x
 - [Collection expressions](../../language-reference/operators/collection-expressions.md)
 - [Member access operators](../../language-reference/operators/member-access-operators.md)
 - [Explore indexes and ranges](../../tutorials/ranges-indexes.md)
-
-

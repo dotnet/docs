@@ -76,5 +76,3 @@ This article uses in-memory collections to teach LINQ syntax and core operators.
 - [Standard query operators](../../linq/standard-query-operators/index.md)
 - [Lambda expressions](../../language-reference/operators/lambda-expressions.md)
 - [LINQ and collections](../../linq/how-to-query-collections.md)
-
-

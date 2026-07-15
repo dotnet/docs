@@ -142,7 +142,7 @@ Snap packages can map an alias to a command provided by the package. By default,
 For .NET 9 and later:
 
 ```bash
-sudo snap alias dotnet-sdk-100.dotnet dotnet
+sudo snap alias dotnet-sdk-100 dotnet
 ```
 
 For .NET 8 and earlier:
@@ -187,7 +187,7 @@ Try the following steps to fix the issue:
     Use the following command to create a symbolic link to the snap package. For .NET 9 and later, use the version-specific package name:
 
     ```bash
-    ln -s /snap/dotnet-sdk-100/current/dotnet /usr/local/bin/dotnet
+    ln -s /snap/dotnet-sdk-100/current/usr/bin/dotnet /usr/local/bin/dotnet
     ```
 
     For .NET 8 and earlier:

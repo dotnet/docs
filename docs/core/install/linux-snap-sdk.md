@@ -3,7 +3,7 @@ title: Install .NET SDK on Linux with Snap
 description: Learn about how to install the .NET SDK snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/23/2026
+ms.date: 07/15/2026
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content, updateeachrelease
 ai-usage: ai-assisted
@@ -38,10 +38,10 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 
 [!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
-To install the .NET SDK, use version-specific snap package identifiers because this approach lets you install and manage multiple SDK versions side by side. For example, use `dotnet-sdk-80` for .NET 8 and `dotnet-sdk-100` for .NET 10. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK. After installation, use that version-specific package identifier in the commands in this article.
+To install the .NET SDK, use version-specific snap package identifiers because this approach lets you install and manage multiple SDK versions side by side. For example, use `dotnet-sdk-80` for .NET 8 and `dotnet-sdk-100` for .NET 10. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK. This article uses the .NET 10 SDK snap package; if you're using a different package, substitute it.
 
 > [!TIP]
-> The [Snapcraft .NET SDK package page](https://snapcraft.io/dotnet-sdk) ([.NET 8](https://snapcraft.io/dotnet-sdk-80), [.NET 9](https://snapcraft.io/dotnet-sdk-90), [.NET 10](https://snapcraft.io/dotnet-sdk-100)) includes distribution-specific instructions on how to install Snapcraft and .NET.
+> The Snapcraft .NET SDK package page ([.NET 8](https://snapcraft.io/dotnet-sdk-80), [.NET 9](https://snapcraft.io/dotnet-sdk-90), [.NET 10](https://snapcraft.io/dotnet-sdk-100)) includes distribution-specific instructions on how to install Snapcraft and .NET.
 
 01. Open a terminal.
 01. Use `snap install` to install the .NET SDK snap package.
@@ -52,9 +52,7 @@ To install the .NET SDK, use version-specific snap package identifiers because t
     sudo snap install dotnet-sdk-100
     ```
 
-    Replace `100` with the SDK version you want to install, such as `80` for .NET 8 or `90` for .NET 9.
-
-The following table lists the snap packages you can install:
+The following table lists the .NET SDK snap packages you can install:
 
 | .NET version | Snap package     |
 |--------------|------------------|
@@ -69,10 +67,6 @@ Because Snap installations don't automatically map the `dotnet` terminal command
 ```bash
 sudo ln -s /snap/dotnet-sdk-100/current/usr/bin/dotnet /usr/local/bin/dotnet
 ```
-
-To understand the command structure, the symbolic link source path points to the `dotnet` executable under `usr/bin`.
-
-Replace `100` with the SDK version you installed, such as `80` for .NET 8 or `90` for .NET 9.
 
 ## 3. Export the install location
 

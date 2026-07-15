@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with VSTest
 description: The dotnet test command is used to execute unit tests in a given project using VSTest.
-ms.date: 12/29/2024
+ms.date: 07/15/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with VSTest
@@ -180,6 +180,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
+  To set the trace level, append `;tracelevel=<LEVEL>` to the log file name, for example `--diag:log.txt;tracelevel=verbose`. The allowed values for `tracelevel` are `off`, `error`, `warning`, `info`, and `verbose`. The default value is `verbose`.
+
 - [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <NAME="VALUE">`**
@@ -274,7 +276,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
-  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md).
+  Starting with the .NET 5 SDK, you can also set `TestRunParameters` from the command line, for example: `dotnet test -- TestRunParameters.Parameter(name="myParam", value="value")`. `RunSettings` arguments take precedence over values from a `.runsettings` file.
+
+  For more information, see [Passing RunSettings arguments through command line](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md).
 
 ## Examples
 
@@ -377,8 +381,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 | Test Framework | Supported properties                                                                                      |
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
-| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Category</li></ul>                                 |
-| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>Category</li><li>Priority</li></ul>                                   |
+| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
+| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>Priority</li><li>TestCategory</li><li>Category</li><li>Property</li></ul> |
+
+For xUnit, a trait defined with `[Trait("key", "value")]` is filtered by its key (for example, `[Trait("Category", "bvt")]` is matched with `--filter Category=bvt`). For NUnit, `TestCategory` and `Category` are equivalent, and a property defined with `[Property("key", "value")]` is filtered by its key.
 
 The `<operator>` describes the relationship between the property and the value:
 

@@ -36,8 +36,6 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 
 ## 1. Install the SDK
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 To install the .NET SDK, use version-specific snap package identifiers because this approach lets you install and manage multiple SDK versions side by side. For example, use `dotnet-sdk-80` for .NET 8 and `dotnet-sdk-100` for .NET 10. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK. This article uses the .NET 10 SDK snap package; if you're using a different package, substitute it.
 
 > [!TIP]

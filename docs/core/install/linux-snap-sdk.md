@@ -16,6 +16,9 @@ This article describes how to install the .NET SDK snap package. .NET SDK snap p
 
 A snap is a bundle of an app and its dependencies that works across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Get started](https://snapcraft.io/docs/tutorials/get-started/#tutorials-get-started).
 
+> [!IMPORTANT]
+> If you install .NET with Snap, use Snap to manage all your .NET installations. Avoid mixing Snap with other installation methods, such as a package manager or the scripted install, because mixing methods can cause conflicts.
+
 > [!CAUTION]
 > Snap installations of .NET may have problems running [.NET tools](../tools/global-tools.md). If you wish to use .NET tools, we recommend that you install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
 >
@@ -60,7 +63,7 @@ The following table lists the .NET SDK snap packages you can install:
 
 ## 2. Map the dotnet command
 
-Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide.
+Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide. Create this link only if you want to map the `dotnet` command to this specific Snap installation. If you already have .NET installed through another method, creating this link overwrites that mapping.
 
 If `/usr/local/bin/dotnet` already exists, remove it before you create the link.
 

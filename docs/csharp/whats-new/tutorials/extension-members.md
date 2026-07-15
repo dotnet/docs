@@ -1,33 +1,35 @@
 ---
-title: Explore extension members in C# 14 to enhance existing types
-description: "C# 14 provides new syntax for extensions that support properties and operators, and enables extensions on a type as well as an instance. Learn to use them, and how to migrate existing extension methods to extension members"
+title: Explore extension members in C# 14 and C# 15 to enhance existing types
+description: "C# 14 extension members add properties and operators to existing types. C# 15 extension indexers add indexed access. Learn both with runnable Point and Path examples."
 author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
-ms.date: 10/06/2025
+ms.date: 07/15/2026
 ai-usage: ai-assisted
 #customer intent: As a C# developer, I reduce repeated code by introducing extension members for common tasks 
 ---
-# Tutorial: Explore extension members in C# 14
+# Tutorial: Explore extension members in C# 14 and C# 15
 
-C# 14 introduces extension members, an enhancement to the existing extension methods. Extension members enable you to add properties and operators. You can also extend types in addition to instances of types. This capability allows you to create more natural and expressive APIs when extending types you don't control.
+C# 14 introduced extension members, an enhancement to the existing extension methods. Extension members enable you to add properties and operators. You can also extend types as well as instances of types. C# 15 adds extension indexers, so an existing type can support indexed access from an extension block.
 
-In this tutorial, you explore extension members by enhancing the `System.Drawing.Point` type with mathematical operations, coordinate transformations, and utility properties. You learn how to migrate existing extension methods to the new extension member syntax and understand when to use each approach.
+In this tutorial, you explore extension members by enhancing the `System.Drawing.Point` type with mathematical operations, coordinate transformations, and utility properties. Then you add indexed access to a `Path` type that stores point-to-point offsets. You learn how to migrate existing extension methods to the new extension member syntax and when each approach fits.
 
 In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> * Create extension members with static properties and operators.
+> * Create C# 14 extension members with static properties and operators.
 > * Implement coordinate transformations using extension members.
 > * Migrate traditional extension methods to extension member syntax.
+> * Add a C# 15 extension indexer that reads and updates absolute points in a path.
 > * Compare extension members with traditional extension methods.
 
 ## Prerequisites
 
-- The .NET 10 SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
-- Visual Studio 2026. Download it from the [Visual Studio page](https://visualstudio.microsoft.com).
+- The .NET 11 preview SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/11.0).
+- Visual Studio 2026 with preview features enabled. Download it from the [Visual Studio page](https://visualstudio.microsoft.com).
+- This sample sets `<LangVersion>preview</LangVersion>` because extension indexers are a C# 15 preview feature.
 
 ## Create the sample application
 
@@ -39,6 +41,10 @@ Start by creating a console application that demonstrates both traditional exten
    dotnet new console -n PointExtensions
    cd PointExtensions
    ```
+
+1. Update the project file so the sample targets .NET 11 and uses preview language features:
+
+   :::code language="xml" source="snippets/PointExtensions/PointExtensions.csproj":::
 
 1. Copy the following code into a new file named `ExtensionMethods.cs`:
 
@@ -135,27 +141,45 @@ Extension members use a different syntax but provide the same functionality. Add
 
 :::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="TransformationMethods":::
 
-The preceding code doesn't compile yet. It's the first extension you wrote that extends an *instance* of the `Point` class, instead of the type itself. To support instance extensions, your extension block needs to name the receiver parameter. Edit the following line:
+These methods extend an instance of the `Point` struct, not the `Point` type. The extension block names the receiver parameter so the method body can read that point. The sample uses `extension(ref Point point)` because `Translate`, `Scale`, and `Rotate` change the caller's `Point`. Without `ref`, those methods would update a copy of the struct, and the caller wouldn't see the change.
 
-```csharp
-    extension (Point)
-```
-
-So that it gives a name to the `Point` instance:
-
-```csharp
-    extension (Point point)
-```
-
-Now, the code compiles. You can call these new instance methods exactly as you accessed traditional extension methods:
+You can call these new instance methods exactly as you accessed traditional extension methods:
 
 :::code language="csharp" source="snippets/PointExtensions/ExtensionMemberDemonstrations.cs" id="InstanceMethods":::
 
 The key difference is syntax: extension members use `extension (Type variableName)` instead of `this Type variableName`.
 
+## Add extension indexers
+
+C# 15 adds indexers to `extension` blocks. An indexer has no name. Code accesses it with `this[...]` in the declaration and with indexed syntax at the call site.
+
+For this section, add a `Path` type. The type stores a sequence of `(dX, dY)` offsets. Each offset says how far to move from the previous point. The first offset starts at `Point.Origin`, the static extension property you added earlier.
+
+The sample defines `Path` in the `ExtensionMembers` namespace. That keeps the sample type separate from <xref:System.IO.Path>. The demo file uses a `using Path = ExtensionMembers.Path;` alias, so every `Path` in the demo means the sample path type.
+
+:::code language="csharp" source="snippets/PointExtensions/Path.cs" id="PathType":::
+
+Now add an indexer for `Path`:
+
+:::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="PathIndexer":::
+
+Indexers are always instance members, so the extension block names the receiver: `extension(Path path)`. A block written as `extension(Path)` wouldn't provide a `path` variable for the indexer body.
+
+`Path` is a class that owns a list of offsets. The indexer doesn't need a `ref` receiver because the setter changes the contents of that existing `Path` object.
+
+The getter starts at `Point.Origin`, then adds the offsets from index `0` through the requested index. With offsets `(2, 3)`, `(1, 1)`, and `(-1, 4)`, the absolute points are `(2, 3)`, `(3, 4)`, and `(2, 8)`.
+
+The setter receives a target absolute point. It leaves earlier offsets alone and changes only the offset at the requested index. The new offset is the target point minus the absolute point at the previous index. Later points shift because they remain relative to the changed offset.
+
+Now, use the indexer to read and write points along the path:
+
+:::code language="csharp" source="snippets/PointExtensions/ExtensionMemberDemonstrations.cs" id="PathIndexerUse":::
+
+Both accessors throw <xref:System.ArgumentOutOfRangeException> when the index doesn't refer to an offset in the path.
+
 ## Completed sample
 
-The final example shows the advantages when you combine static properties, operators, and instance methods to create comprehensive type extensions.
+The final example shows the advantages when you combine static properties, operators, instance methods, and an indexer to create comprehensive type extensions.
 
 Compare the extension member version:
 
@@ -171,6 +195,7 @@ This example demonstrates how extension members create a cohesive API that feels
 - Apply mathematical operators naturally (`point + offset`, `point * scale`)
 - Chain transformations using both operators and methods
 - Convert between related types (`ToVector()`)
+- Read and update absolute points along a path with `path[index]`
 
 ### Migration benefits
 
@@ -178,8 +203,9 @@ When migrating from traditional extension methods to extension members, you gain
 
 1. **Static properties**: Add constants and computed values to types.
 1. **Operators**: Enable natural mathematical and logical operations.
+1. **Indexers**: Add C# 15 indexed access that can compute values from an existing type and update its stored state.
 1. **Unified syntax**: All extension logic uses the same `extension` declaration.
-1. **Type-level extensions**: Extend the type itself, not just instances.
+1. **Type-level extensions**: Extend the type itself, not only instances.
 
 Run the complete application to see both approaches side by side and observe how extension members provide a more integrated development experience.
 
@@ -187,4 +213,7 @@ Run the complete application to see both approaches side by side and observe how
 
 - [Extension methods (C# Programming Guide)](../../programming-guide/classes-and-structs/extension-methods.md)
 - [What's new in C# 14](../csharp-14.md)
+- [What's new in C# 15](../csharp-15.md)
+- [`extension` keyword (C# reference)](../../language-reference/keywords/extension.md)
+- [Extension indexers feature specification](~/_csharplang/proposals/extension-indexers.md)
 - [Operator overloading (C# reference)](../../language-reference/operators/operator-overloading.md)

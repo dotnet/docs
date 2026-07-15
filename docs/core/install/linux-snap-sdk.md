@@ -46,12 +46,10 @@ To install the .NET SDK, use version-specific snap package identifiers because t
 01. Open a terminal.
 01. Use `snap install` to install the .NET SDK snap package.
 
-    The `--classic` parameter is required.
-
     The following command installs .NET SDK 10:
 
     ```bash
-    sudo snap install dotnet-sdk-100 --classic
+    sudo snap install dotnet-sdk-100
     ```
 
     Replace `100` with the SDK version you want to install, such as `80` for .NET 8 or `90` for .NET 9.

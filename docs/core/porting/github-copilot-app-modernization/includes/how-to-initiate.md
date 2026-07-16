@@ -8,7 +8,7 @@ ms.topic: include
 1. Start the agent by using one of these methods:
 
    - **Visual Studio**: Right-click the solution or project in **Solution Explorer** and select **Modernize**. Alternatively, open the **GitHub Copilot Chat** window and type `@Modernize`.
-   - **Visual Studio Code**: Open the **GitHub Copilot Chat** panel and type `@modernize-dotnet`.
+   - **Visual Studio Code**: Open the **GitHub Copilot Chat** panel and type `@upgrade`.
    - **GitHub Copilot CLI**: Type `@upgrade` followed by your upgrade or migration request.
    - **GitHub Copilot app**: In the **Agent** picker, select `Upgrade`.
 

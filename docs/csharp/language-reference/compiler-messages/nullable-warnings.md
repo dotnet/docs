@@ -131,6 +131,7 @@ helpviewer_keywords:
   - "CS8825"
   - "CS8847"
 ms.date: 07/16/2026
+ai-usage: ai-assisted
 ---
 # Nullable reference type warnings
 

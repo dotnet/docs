@@ -41,8 +41,11 @@ f1_keywords:
   - "CS8643" # WRN_NullabilityMismatchInExplicitlyImplementedInterface: Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.
   - "CS8644" # WRN_NullabilityMismatchInInterfaceImplementedByBase:  '{0}' does not implement interface member '{1}'. Nullability of reference types in interface implemented by the base type doesn't match.
   - "CS8645" # WRN_DuplicateInterfaceWithNullabilityMismatchInBaseList: '{0}' is already listed in the interface list on type '{1}' with different nullability of reference types.
+  - "CS8650"
+  - "CS8651"
   - "CS8655" # WRN_SwitchExpressionNotExhaustiveForNull: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.
   - "CS8667" # WRN_NullabilityMismatchInConstraintsOnPartialImplementation: Partial method declarations of '{0}' have inconsistent nullability in constraints for type parameter '{1}'
+  - "CS8669"
   - "CS8670" # WRN_NullReferenceInitializer: Object or collection initializer implicitly dereferences possibly null member '{0}'.
   - "CS8714" # WRN_NullabilityMismatchInTypeParameterNotNullConstraint: The type '{2}' cannot be used as type parameter '{1}' in the generic type or method '{0}'. Nullability of type argument '{2}' doesn't match 'notnull' constraint.
   - "CS8762" # WRN_ParameterConditionallyDisallowsNull: Parameter '{0}' must have a non-null value when exiting with '{1}'.
@@ -98,13 +101,16 @@ helpviewer_keywords:
   - "CS8634"
   - "CS8636"
   - "CS8637"
-  - "CS8668"
   - "CS8639"
   - "CS8643"
   - "CS8644"
   - "CS8645"
+  - "CS8650"
+  - "CS8651"
   - "CS8655"
   - "CS8667"
+  - "CS8668"
+  - "CS8669"
   - "CS8670"
   - "CS8714"
   - "CS8762"
@@ -124,7 +130,7 @@ helpviewer_keywords:
   - "CS8824"
   - "CS8825"
   - "CS8847"
-ms.date: 02/20/2025
+ms.date: 07/16/2026
 ---
 # Nullable reference type warnings
 
@@ -173,8 +179,11 @@ This article covers the following compiler warnings:
 - [**CS8643**](#mismatch-in-nullability-declaration) - *Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.*
 - [**CS8644**](#mismatch-in-nullability-declaration) - *Type does not implement interface member. Nullability of reference types in interface implemented by the base type doesn't match.*
 - [**CS8645**](#mismatch-in-nullability-declaration) - *Member is already listed in the interface list on type with different nullability of reference types.*
+- [**CS8650**](#incorrect-annotation-syntax) - *It is not legal to use nullable reference type 'type?' in an is-type expression; use the underlying type 'type' instead.*
+- [**CS8651**](#incorrect-annotation-syntax) - *It is not legal to use nullable reference type 'type?' in an as expression; use the underlying type 'type' instead.*
 - [**CS8655**](#exhaustive-switch-expression) - *The switch expression does not handle some null inputs (it is not exhaustive).*
 - [**CS8667**](#mismatch-in-nullability-declaration) - *Partial method declarations have inconsistent nullability in constraints for type parameter.*
+- [**CS8669**](#configure-nullable-context) - *The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source.*
 - [**CS8670**](#possible-dereference-of-null) - *Object or collection initializer implicitly dereferences possibly null member.*
 - [**CS8714**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'notnull' constraint.*
 - [**CS8762**](#nonnullable-reference-not-initialized) - *Parameter  must have a non-null value when exiting.*
@@ -216,6 +225,7 @@ The following warnings indicate that you haven't set the nullable context correc
 - **CS8636** - *Invalid option for `/nullable`; must be `disable`, `enable`, `warnings` or `annotations`*
 - **CS8637** - *Expected `enable`, `disable`, or `restore`*
 - **CS8668** - *Expected `warnings`, `annotations`, or end of directive*
+- **CS8669** - *The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source.*
 
 To set the nullable context correctly, you have two options:
 
@@ -238,6 +248,8 @@ The nullable context has two independent flags that control different aspects:
 - **Annotation flag**: Controls whether you can use `?` to declare nullable reference types and `!` to surpress individual warnings.
 - **Warning flag**: Controls whether the compiler emits nullability warnings
 
+In generated code, add an explicit `#nullable` directive to the generated source before you use nullable annotations (**CS8669**). Project-level nullable settings might not apply to generated source files.
+
 For detailed information about nullable contexts and migration strategies, see:
 
 - [Nullable reference types](../builtin-types/nullable-reference-types.md)
@@ -251,6 +263,8 @@ These errors and warnings indicate that usage of the `!` or `?` annotation is in
 - **CS8623** - *Explicit application of `System.Runtime.CompilerServices.NullableAttribute` is not allowed.*
 - **CS8628** - *Cannot use a nullable reference type in object creation.*
 - **CS8639** - *The typeof operator cannot be used on a nullable reference type*
+- **CS8650** - *It is not legal to use nullable reference type 'type?' in an is-type expression; use the underlying type 'type' instead.*
+- **CS8651** - *It is not legal to use nullable reference type 'type?' in an as expression; use the underlying type 'type' instead.*
 
 The `?` annotation in a declaration indicates that the variable might be null. It doesn't indicate a different runtime type. Both the following declarations are the same runtime type:
 
@@ -264,7 +278,7 @@ The `?` is a hint to the compiler on the expectation for null values.
 The `!` annotation on an expression indicates that you know the expression is safe and should be assumed to be not null.
 
 - You must use these annotations, not the <xref:System.Runtime.CompilerServices.NullableAttribute?displayProperty=nameWithType> in your code.
-- Because the `?` is an annotation, not a type, you can't use it with [`typeof`](../operators/type-testing-and-cast.md#the-typeof-operator), or [`new`](../operators/new-operator.md) expressions.
+- Because the `?` is an annotation, not a type, you can't use it with [`typeof`](../operators/type-testing-and-cast.md#the-typeof-operator), [`new`](../operators/new-operator.md), [`is`](../operators/type-testing-and-cast.md#the-is-operator), or [`as`](../operators/type-testing-and-cast.md#the-as-operator) expressions. Use the underlying nonnullable reference type in `is` and `as` expressions because nullable annotations have no runtime representation (**CS8650**, **CS8651**).
 - The `!` operator can't be applied to a variable expression or a method group.
 - The `!` operator can't be applied to the left of a member access operator, such as `obj.Field!.Method()`.
 

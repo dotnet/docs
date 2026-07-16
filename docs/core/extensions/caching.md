@@ -365,6 +365,8 @@ Consider any of the available implementations of the `IDistributedCache` from th
 
 - [`Microsoft.Extensions.Caching.SqlServer`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.SqlServer)
 - [`Microsoft.Extensions.Caching.StackExchangeRedis`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis)
+- [`Microsoft.Extensions.Caching.Cosmos`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos)
+- [`Microsoft.Extensions.Caching.Postgres`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres)
 - [`NCache.Microsoft.Extensions.Caching.OpenSource`](https://www.nuget.org/packages/NCache.Microsoft.Extensions.Caching.OpenSource)
 
 ### Distributed caching API

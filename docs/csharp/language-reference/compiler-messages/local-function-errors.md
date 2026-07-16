@@ -26,8 +26,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8108**](#params-parameters-and-dynamic-arguments): *Cannot pass argument with dynamic type to params parameter 'parameter' of local function 'method'.*
 - [**CS8112**](#local-function-bodies): *Local function 'method' must declare a body because it is not marked 'static extern'.*
 - [**CS8321**](#unused-local-functions): *The local function 'method' is declared but never used*
-- [**CS8421**](#static-local-functions-cannot-capture-state): *A static local function cannot contain a reference to 'variable'.*
-- [**CS8422**](#static-local-functions-cannot-capture-state): *A static local function cannot contain a reference to 'this' or 'base'.*
+- [**CS8421**](#static-local-functions-cant-capture-state): *A static local function cannot contain a reference to 'variable'.*
+- [**CS8422**](#static-local-functions-cant-capture-state): *A static local function cannot contain a reference to 'this' or 'base'.*
 
 [Local functions](../../programming-guide/classes-and-structs/local-functions.md) were added in C# 7.0. They let you declare helper methods inside another member. The diagnostics in this article cover local function declarations, calls, usage, and the extra capture restrictions for `static` local functions.
 

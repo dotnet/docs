@@ -35,7 +35,7 @@ A [`readonly struct`](../builtin-types/struct.md#readonly-struct) declaration pr
 
 Every instance field declared in a `readonly struct` must also be `readonly` (**CS8340**). Add the `readonly` modifier to each instance field, convert mutable fields to immutable state, or remove `readonly` from the struct declaration when instances must mutate.
 
-Field-like events aren't allowed in a `readonly struct` (**CS8342**) because the compiler-generated backing field would be mutable. Use a manually implemented event with explicit `add` and `remove` accessors, or remove `readonly` from the struct declaration.
+Field-like events aren't allowed in a `readonly struct` (**CS8342**) because the compiler-generated backing field is mutable. Use a manually implemented event with explicit `add` and `remove` accessors, or remove `readonly` from the struct declaration.
 
 ## Readonly struct member restrictions
 

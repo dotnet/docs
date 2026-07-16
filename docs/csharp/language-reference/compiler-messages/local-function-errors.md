@@ -47,9 +47,9 @@ A local function call can't pass a `dynamic` argument to a `params` parameter. C
 
 - **CS8321**: *The local function 'method' is declared but never used*
 
-The compiler reports this warning when a local function is declared but no reachable code calls it. Remove the unused local function, or call it from the enclosing member. If the local function is intended for a future change, keep it out of the source until it is needed.
+The compiler reports this warning when you declare a local function but no reachable code calls it. Remove the unused local function, or call it from the enclosing member. If you intend to use the local function in a future change, keep it out of the source until it's needed.
 
-## Static local functions cannot capture state
+## Static local functions can't capture state
 
 - **CS8421**: *A static local function cannot contain a reference to 'variable'.*
 - **CS8422**: *A static local function cannot contain a reference to 'this' or 'base'.*

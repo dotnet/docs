@@ -9,21 +9,21 @@ ai-usage: ai-assisted
 # LINQ queries
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For more information about providers, operators, and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md).
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For more information about providers, operators, and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
 >
 > **Coming from another language?** LINQ query syntax reads like a SQL-style query written inside C#. LINQ method syntax reads like chained collection operations in JavaScript, Java streams, or Python pipelines. Both forms describe the same query.
 
-*Language Integrated Query (LINQ)* is the C# feature set for querying data with C# syntax. A *query* describes which data to read and how to shape the result. A query reads from a *data source*. A data source can be an in-memory collection, such as an array or <xref:System.Collections.Generic.List`1>, or an external source, such as a database or XML, exposed through a LINQ provider. A *LINQ provider* is a library that connects LINQ syntax to a specific kind of data source. A *sequence* is an ordered set of elements represented by <xref:System.Collections.Generic.IEnumerable`1>. This article uses in-memory collections for its examples; for more information about provider-based queries, see [Language Integrated Query (LINQ)](../../linq/index.md).
+*Language Integrated Query (LINQ)* is the C# feature set for querying data with C# syntax. A *query* describes which data to read and how to shape the result. A query reads from a *data source*. A data source can be an in-memory collection, such as an array or <xref:System.Collections.Generic.List`1>, or an external source, such as a database or XML, exposed through a LINQ provider. A *LINQ provider* is a library that connects LINQ syntax to a specific kind of data source. A *sequence* is an ordered set of elements represented by <xref:System.Collections.Generic.IEnumerable`1>. This article uses in-memory collections for its examples; for more information about provider-based queries, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
 
-## Query data with LINQ
+## LINQ query expression syntax
 
 The examples in this article read [in-memory collections](collections.md) such as arrays and <xref:System.Collections.Generic.List`1>. A query usually has three parts: specify the data source, describe the result, and enumerate the source to produce the result. To *enumerate* a sequence means to read its elements one at a time, often with `foreach`.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="QuerySyntax":::
 
-The query describes the result before the `foreach` loop reads it. Because a query describes the result before it enumerates the source, you can *compose* it: build up a more complex query from smaller operations, and combine it with other queries, before any work runs.
+The query expression starts with `from` to name the data source and range variable. The `where` clause keeps only matching elements, `orderby` sorts them, and `select` shapes the result.
 
-## Write the same query with method syntax
+## LINQ method syntax
 
 *Query syntax* uses clauses such as `from`, `where`, `orderby`, and `select`. *Method syntax* calls LINQ methods directly. For in-memory sequences, the standard LINQ methods are the built-in <xref:System.Linq.Enumerable> methods for filtering, projection, sorting, grouping, and related operations.
 
@@ -35,28 +35,28 @@ Query syntax often reads well when the query has several clauses. The `let` clau
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="QuerySyntaxClearer":::
 
-Method syntax often reads well for short operations that don't have a query-syntax keyword. For example, <xref:System.Linq.Enumerable.Count*> returns one value directly:
+Method syntax often reads well for short operations. It also reads well for operators that don't have a query-syntax keyword. For example, <xref:System.Linq.Enumerable.Count*> returns one value directly:
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="MethodSyntaxClearer":::
 
-## Use lambda expressions in LINQ
+## Lambda expressions and LINQ
 
 A *lambda expression* is an anonymous function that you can pass as an argument. LINQ method syntax commonly uses lambda expressions to say what each operator should do with each element.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="LambdaExpressions":::
 
-In `name => name.Length == 3`, `name` is the input element and `name.Length == 3` is the Boolean expression that decides whether the element stays in the result. For more information about lambda expressions, see [Lambda expressions - Lambda expressions and anonymous functions](../../language-reference/operators/lambda-expressions.md) in the language reference.
+In `name => name.Length == 3`, `name` is the input element and `name.Length == 3` is the Boolean expression that decides whether the element belongs in the result. For more information about lambda expressions and delegate types, see [Lambda expressions, delegates, and events](../types/delegates-lambdas.md) in the fundamentals. For more information about lambda expression syntax, see [Lambda expressions - Lambda expressions and anonymous functions](../../language-reference/operators/lambda-expressions.md) in the language reference.
 
 Query-syntax clauses use lambda expressions too. Clauses such as `where`, `orderby`, and `select` compile to method calls that take lambda expressions. The range variable becomes the lambda parameter, and the clause expression becomes the lambda body. Query syntax is a concise way to write those same lambdas:
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="QuerySyntaxLambda":::
 
-## Shape data with LINQ methods
+## Common LINQ methods
 
-Use <xref:System.Linq.Enumerable.Where*> to keep only the elements that match a condition. Use <xref:System.Linq.Enumerable.Select*> to transform each element into a new value; C# calls this operation a *projection*. Use <xref:System.Linq.Enumerable.OrderBy*> to sort elements. Use aggregation methods such as <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.Count*>, and <xref:System.Linq.Enumerable.Aggregate*> to combine all elements into a single value. These methods are in the <xref:System.Linq> namespace and work with sequences such as <xref:System.Collections.Generic.IEnumerable`1>.
+Use <xref:System.Linq.Enumerable.Where*> to keep only the elements that match a condition. Use <xref:System.Linq.Enumerable.Select*> to transform each element into a new value; C# calls this operation a *projection*. Use <xref:System.Linq.Enumerable.OrderBy*> to sort elements. Use aggregation methods such as <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.Count*>, and <xref:System.Linq.Enumerable.Aggregate*> to produce a single value from all elements in the data source. These methods are in the <xref:System.Linq> namespace and work with sequences such as <xref:System.Collections.Generic.IEnumerable`1>.
 
 > [!NOTE]
-> If you know the functional-programming terms, <xref:System.Linq.Enumerable.Where*> is a *filter*, <xref:System.Linq.Enumerable.Select*> is a *map* (C# calls it a projection), and aggregation methods such as <xref:System.Linq.Enumerable.Aggregate*>, <xref:System.Linq.Enumerable.Sum*>, and <xref:System.Linq.Enumerable.Count*> are a *reduce*.
+> If you know the traditional functional-programming terms, <xref:System.Linq.Enumerable.Where*> is a *filter*, <xref:System.Linq.Enumerable.Select*> is a *map* (C# calls it a projection), and aggregation methods such as <xref:System.Linq.Enumerable.Aggregate*>, <xref:System.Linq.Enumerable.Sum*>, and <xref:System.Linq.Enumerable.Count*> are a *reduce*.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="CommonOperators":::
 
@@ -68,7 +68,7 @@ Use <xref:System.Linq.Enumerable.GroupBy*> when the result should contain groups
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="GroupBy":::
 
-Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see [Language Integrated Query (LINQ)](../../linq/index.md).
+Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
 
 ## Run a query
 
@@ -76,15 +76,17 @@ Many LINQ operators use *deferred execution*. Deferred execution means operators
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="DeferredExecution":::
 
-Other operations run a query immediately. Operators that return a single value, such as <xref:System.Linq.Enumerable.Count*>, <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.First*>, and <xref:System.Linq.Enumerable.Any*>, must read the elements when you call them so they can produce that value. Materializing a sequence with <xref:System.Linq.Enumerable.ToList*> or <xref:System.Linq.Enumerable.ToArray*> also runs the query immediately.
+Other operations run a query immediately. Operators that return a single value, such as <xref:System.Linq.Enumerable.Count*>, <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.First*>, and <xref:System.Linq.Enumerable.Any*>, must read the elements when you call them so they can produce that value.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="ImmediateExecution":::
 
-There isn't one single trigger that runs every query. *Eager evaluation*, also called immediate evaluation, runs the query right away and stores or returns the result. Scalar and aggregate operators such as <xref:System.Linq.Enumerable.Count*>, <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.First*>, and <xref:System.Linq.Enumerable.Any*> use eager evaluation. So do <xref:System.Linq.Enumerable.ToList*> and <xref:System.Linq.Enumerable.ToArray*> when you need a snapshot of the current results. For more information about deferred execution, see [Introduction to LINQ Queries](../../linq/get-started/introduction-to-linq-queries.md) in the LINQ documentation.
+There isn't one single trigger that runs a query. *Eager evaluation*, also called immediate evaluation, runs the query right away and stores or returns the result. Scalar and aggregate operators such as <xref:System.Linq.Enumerable.Count*>, <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.First*>, and <xref:System.Linq.Enumerable.Any*> use eager evaluation. So do <xref:System.Linq.Enumerable.ToList*> and <xref:System.Linq.Enumerable.ToArray*> when you need a snapshot of the current results. For more information about deferred execution, see [Introduction to LINQ Queries](../../linq/get-started/introduction-to-linq-queries.md) in the LINQ documentation.
 
 ## Compose queries
 
-To *compose* a query, start with a base query stored in a variable, then build a more specific query from it. Because execution is deferred, each step describes more of the result. No work happens until you enumerate the final query.
+Real queries often grow from smaller decisions: start with a shared filter, add a sort for one screen, or apply an optional condition from user input. By composing queries, you can keep each step readable and reuse common parts instead of repeating one large query.
+
+Imagine an app that shows open work items in several places. One view needs all open items, and another view needs only the highest-priority open items. To *compose* a query, start with a base query stored in a variable, then build a more specific query from it. Because execution is deferred, each step describes more of the result. No work happens until you enumerate the final query.
 
 The following example stores the open work items in one query, then reuses that query to find the highest-priority open items:
 
@@ -94,18 +96,17 @@ You can also compose queries with method syntax. The next example starts with al
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="ComposeMethodSyntax":::
 
-Composition can use both *eager evaluation* and *deferred execution*. Materialize a shared intermediate result with <xref:System.Linq.Enumerable.ToList*> or <xref:System.Linq.Enumerable.ToArray*> when you want that part to run once and stay fixed. Then build another deferred query from the cached results for the final output:
+Composition can use either or both *eager evaluation* and *deferred execution*. Materialize a shared intermediate result with <xref:System.Linq.Enumerable.ToList*> or <xref:System.Linq.Enumerable.ToArray*> when you want that part to run once and stay fixed. Then build another deferred query from the cached results for the final output:
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="ComposeWithCaching":::
 
-## Go deeper with LINQ
+## Explore LINQ in depth
 
-This article uses in-memory collections to teach LINQ syntax and core operators. The LINQ section covers more operators and advanced scenarios, including joins, XML, database providers, dynamic queries, and custom operators.
+This article uses in-memory collections to teach LINQ syntax and core operators. For more information about LINQ operators and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section. The LINQ section covers joins, XML, database providers, dynamic queries, and custom operators.
 
 ## See also
 
 - [Collections](collections.md)
-- [Language Integrated Query (LINQ)](../../linq/index.md)
 - [Introduction to LINQ queries](../../linq/get-started/introduction-to-linq-queries.md)
 - [Write LINQ queries](../../linq/get-started/write-linq-queries.md)
 - [Standard query operators](../../linq/standard-query-operators/index.md)

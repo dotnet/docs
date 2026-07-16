@@ -6,9 +6,11 @@ public static class Program
     {
         ChooseCollectionExample();
         ArraysExample();
+        ArrayElementUpdateExample();
         ListChangesExample();
         ListInsertRemoveExample();
         DictionaryLookupExample();
+        DictionaryUpdatesExample();
         CollectionExpressionsExample();
         IndexesAndRangesExample();
     }
@@ -42,6 +44,18 @@ public static class Program
         // </Arrays>
     }
 
+    private static void ArrayElementUpdateExample()
+    {
+        // <ArrayElementUpdate>
+        string[] stages = ["design", "code", "test"];
+
+        stages[0] = "plan";
+
+        Console.WriteLine(string.Join(", ", stages)); // => plan, code, test
+        Console.WriteLine($"Length: {stages.Length}"); // => Length: 3
+        // </ArrayElementUpdate>
+    }
+
     private static void ListChangesExample()
     {
         // <ListChanges>
@@ -49,10 +63,11 @@ public static class Program
 
         workItems.Add("review");
         workItems.Remove("code");
+        workItems[1] = "verify";
 
-        Console.WriteLine(string.Join(", ", workItems)); // => design, test, review
+        Console.WriteLine(string.Join(", ", workItems)); // => design, verify, review
         Console.WriteLine($"Has review: {workItems.Contains("review")}"); // => Has review: True
-        Console.WriteLine($"Index of test: {workItems.IndexOf("test")}"); // => Index of test: 1
+        Console.WriteLine($"Index of verify: {workItems.IndexOf("verify")}"); // => Index of verify: 1
         // </ListChanges>
     }
 
@@ -115,6 +130,33 @@ public static class Program
         // </DictionaryLookup>
     }
 
+    private static void DictionaryUpdatesExample()
+    {
+        // <DictionaryUpdates>
+        Dictionary<string, int> priorities = new()
+        {
+            ["docs"] = 2,
+            ["tests"] = 1
+        };
+
+        priorities["docs"] = 1;
+        Console.WriteLine($"docs priority: {priorities["docs"]}"); // => docs priority: 1
+
+        string key = "deploy";
+        if (priorities.TryGetValue(key, out int oldPriority))
+        {
+            Console.WriteLine($"{key} changed from {oldPriority} to 3");
+        }
+        else
+        {
+            Console.WriteLine($"{key} didn't have a priority yet"); // => deploy didn't have a priority yet
+        }
+
+        priorities[key] = 3;
+        Console.WriteLine($"deploy priority: {priorities[key]}"); // => deploy priority: 3
+        // </DictionaryUpdates>
+    }
+
     private static void CollectionExpressionsExample()
     {
         // <CollectionExpressions>
@@ -141,6 +183,7 @@ public static class Program
         Console.WriteLine($"From third: {string.Join(", ", phases[2..])}"); // => From third: test, deploy
         Console.WriteLine($"All phases: {string.Join(", ", phases[..])}"); // => All phases: design, code, test, deploy
         Console.WriteLine($"List last: {checklist[^1]}"); // => List last: review
+        Console.WriteLine($"List first two: {string.Join(", ", checklist.GetRange(0, 2))}"); // => List first two: design, test
         // </IndexesAndRanges>
     }
 }

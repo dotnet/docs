@@ -17,7 +17,7 @@ A *collection* is an object that stores multiple related values. Each value in a
 
 ## Choose a collection shape
 
-Choose the collection that matches how your code uses the data. A *sequence* stores elements in order so you can reach them by position. Use an *array*, which is represented by <xref:System.Array>, when you need a fixed-size sequence. Use <xref:System.Collections.Generic.List`1> when you need a sequence that can add or remove elements. A *map* stores values that you reach by key instead of by position. Use <xref:System.Collections.Generic.Dictionary`2> when each element has a lookup key, such as a name, ID, or code. The examples use a *collection expression*, which creates a collection from values between square brackets; [later in this article](#create-collections-with-collection-expressions), you learn the syntax in more detail.
+Choose the collection that matches how your code uses the data. A *sequence* stores elements in order so you can reach them by position. Use an *array*, which is represented by <xref:System.Array>, when you know the number of positions the sequence needs. An array's length can't change after you create it, but you can replace the element stored at an existing position. Use <xref:System.Collections.Generic.List`1> when you need a sequence that can add or remove elements. A *map* stores values that you reach by key instead of by position. Use <xref:System.Collections.Generic.Dictionary`2> when each element has a lookup key, such as a name, ID, or code. The examples use a *collection expression*, which creates a collection from expressions between square brackets; [later in this article](#create-collections-with-collection-expressions), you learn the syntax in more detail.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ChooseCollection":::
 
@@ -31,9 +31,13 @@ An array is an ordered collection with a fixed length. You access an array eleme
 
 Use `foreach` when you want to read every element in order. Use an index when the position matters, such as when you need the first element, the last element, or the position returned by <xref:System.Array.IndexOf*?displayProperty=nameWithType>.
 
+The length of an array is fixed, but the elements in that array can change. Assign a new value to an existing index when the position stays the same but the stored value needs an update:
+
+:::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ArrayElementUpdate":::
+
 ## Grow and shrink a sequence with `List<T>`
 
-A <xref:System.Collections.Generic.List`1> stores elements in order and can grow or shrink as your program runs. Use <xref:System.Collections.Generic.List`1.Add*> to append an element, <xref:System.Collections.Generic.List`1.Remove*> to remove a matching element, <xref:System.Collections.Generic.List`1.Contains*> to test whether an element exists, and <xref:System.Collections.Generic.List`1.IndexOf*> to find an element's position.
+A <xref:System.Collections.Generic.List`1> stores elements in order and can grow or shrink as your program runs. Use <xref:System.Collections.Generic.List`1.Add*> to append an element, <xref:System.Collections.Generic.List`1.Remove*> to remove a matching element, <xref:System.Collections.Generic.List`1.Contains*> to test whether an element exists, and <xref:System.Collections.Generic.List`1.IndexOf*> to find an element's position. Use the list indexer to replace the value at an existing position.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ListChanges":::
 
@@ -43,7 +47,7 @@ Use <xref:System.Collections.Generic.List`1.Insert*> to add one element at a spe
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ListInsertRemove":::
 
-Adding or removing at the end of a <xref:System.Collections.Generic.List`1> is fast. Adding with <xref:System.Collections.Generic.List`1.Add*> is an O(1) operation on average, and removing the last element with <xref:System.Collections.Generic.List`1.RemoveAt*> is O(1). Inserting or removing at the front or middle is O(n) because every later element shifts to a new index. If your code frequently inserts or removes at the front, a <xref:System.Collections.Generic.List`1> might be the wrong collection shape.
+Adding or removing at the end of a <xref:System.Collections.Generic.List`1> is fast. Adding with <xref:System.Collections.Generic.List`1.Add*> is an O(1) operation on average, and removing the last element with <xref:System.Collections.Generic.List`1.RemoveAt*> is O(1). Inserting or removing at the front or middle is O(n) because every later element shifts to a new index. Big-O notation describes how the work grows as the collection size, `n`, grows. O(1), pronounced "order one," means the operation takes about the same amount of work no matter how many elements the collection contains. O(n), pronounced "order n," means the work grows roughly in proportion to the number of elements. If your code frequently inserts or removes at the front, a <xref:System.Collections.Generic.List`1> might be the wrong collection shape.
 
 ## Look up items by key with `Dictionary<TKey,TValue>`
 
@@ -53,21 +57,37 @@ A <xref:System.Collections.Generic.Dictionary`2> stores key/value pairs. A *key/
 
 An *indexer* lets you use bracket syntax to access a value from an object. The dictionary indexer is useful when the key must exist or when you're assigning a value. <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> is safer for reads when the key might be missing because it reports both outcomes without throwing an exception. For more information about the indexer operator, see [Member access operators](../../language-reference/operators/member-access-operators.md#indexer-operator-) in the language reference.
 
+You can also change the value associated with a key that already exists. When your code knows the dictionary contains the key, assign through the indexer. When the key might or might not exist and you need to react to the current value, use <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> first, then assign the new value:
+
+:::code language="csharp" source="./snippets/collections-statements/Program.cs" id="DictionaryUpdates":::
+
 ## Create collections with collection expressions
 
-A *collection expression* creates a collection from values between square brackets. Beginning with C# 12, collection expressions can create arrays, lists, and other collection types. A *spread element* copies the elements from another collection into the new collection.
+A *collection expression* creates a collection from expressions between square brackets. Collection expressions can create arrays, lists, and other collection types. A *spread element* copies the elements from another collection into the new collection.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="CollectionExpressions":::
 
-Collection expressions keep initialization concise. A collection expression has no type of its own. Because `[...]` is typeless by itself, the compiler converts the same expression into the collection shape the context calls for. The receiving variable or parameter can turn it into an array, a <xref:System.Collections.Generic.List`1>, or another supported collection type.
+Collection expressions keep initialization concise. A collection expression has no type of its own. Because `[...]` is typeless by itself, the compiler converts the expression into the collection shape the context calls for. The receiving variable or parameter can turn it into an array, a <xref:System.Collections.Generic.List`1>, or other supported collection type.
 
 ## Read from positions with indexes and ranges
 
-An <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..`. From-end indexes can appear on either side of `..`. If you omit the start index, the range starts at the beginning. If you omit the end index, the range continues through the last element. The range `..` means the entire collection. Arrays support both indexes and ranges. <xref:System.Collections.Generic.List`1> supports indexes, including from-end indexes, but it doesn't support the range operator directly.
+An <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..`. Arrays support both indexes and ranges.
+
+Use a from-end index with `^` when you want to count backward from the end. The expression `phases[^1]` reads the last element, and `phases[^2]` reads the next-to-last element.
+
+Use a range `a..b` when you want elements from position `a` up to, but not including, position `b`. The expression `phases[1..3]` creates a new array that contains positions `1` and `2`.
+
+Use an open-start range `..b` when the slice starts at the beginning. The expression `phases[..2]` returns the first two elements.
+
+Use an open-end range `a..` when the slice continues through the last element. The expression `phases[2..]` returns the elements from position `2` to the end.
+
+Use the full range `..` when you want a copy of the whole array. The expression `phases[..]` creates a new array with all the same elements.
+
+<xref:System.Collections.Generic.List`1> supports the indexer syntax for one element, including from-end indexes such as `checklist[^1]`. It doesn't support the range operator directly. Use <xref:System.Collections.Generic.List`1.GetRange*> when you need a range from a list.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="IndexesAndRanges":::
 
-Use ranges when the subsection is part of the data you're working with. Use a <xref:System.Collections.Generic.List`1> index when you need one item by position. For more information about indexes and ranges, see the [Explore ranges of data using indices and ranges](../../tutorials/ranges-indexes.md) tutorial.
+Indexes answer "which single element?" Ranges answer "which contiguous slice?" Use indexes when your code needs one position and ranges when the subsection is part of the data you're working with. For more information about indexes and ranges, see the [Explore ranges of data using indices and ranges](../../tutorials/ranges-indexes.md) tutorial.
 
 ## See also
 

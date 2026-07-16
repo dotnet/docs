@@ -551,11 +551,11 @@ items:
       CS8852, CS8853, CS8855, CS8856, CS8903, CS9029, CS9030, CS9031, CS9032, CS9033,
       CS9034, CS9035, CS9036, CS9037, CS9038, CS9039, CS9040, CS9042, CS9045, CS9258,
       CS9263, CS9264, CS9266, CS9273
-  - name: readonly struct members
-    href: ./compiler-messages/readonly-member-errors.md
+  - name: readonly structs and members
+    href: ./compiler-messages/readonly-struct-errors.md
     displayName: >
       readonly struct, readonly member, readonly event, implicit copy,
-      CS8656, CS8662
+      CS8340, CS8342, CS8656, CS8662
   - name: Operator declarations
     href: ./compiler-messages/overloaded-operator-errors.md
     displayName: >
@@ -566,11 +566,11 @@ items:
       CS0562, CS0563, CS0564, CS0567, CS0590, CS0594, CS0652, CS0659, CS0660, CS0661,
       CS0715, CS1021, CS1037, CS1553, CS8761, CS8778, CS8973, CS9023, CS9024, CS9025,
       CS9027, CS9308, CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
-  - name: Index and range expressions
-    href: ./compiler-messages/index-range-errors.md
+  - name: Indexer and element access
+    href: ./compiler-messages/indexer-access-errors.md
     displayName: >
-      index, range, Index, Range, indexer, named argument,
-      CS8428, CS8429
+      index, range, Index, Range, indexer, element access, accessor, indexed property,
+      CS0021, CS0154, CS0271, CS0272, CS0856, CS0857, CS1545, CS1546, CS8428, CS8429
   - name: Parameter / argument mismatch
     href: ./compiler-messages/parameter-argument-mismatch.md
     displayName: >
@@ -715,11 +715,11 @@ items:
       CS1688, CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175,
       CS8820, CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098,
       CS9099, CS9100, CS9236
-  - name: Static local functions
-    href: ./compiler-messages/static-local-function-errors.md
+  - name: Local functions
+    href: ./compiler-messages/local-function-errors.md
     displayName: >
-      static local function, local function, capture, enclosing scope,
-      CS8421
+      local function, static local function, capture, enclosing scope, params,
+      CS8108, CS8112, CS8321, CS8421, CS8422
   - name: Delegate and function pointer declarations
     href: ./compiler-messages/delegate-function-pointer-diagnostics.md
     displayName: >
@@ -1360,8 +1360,6 @@ items:
       href: ../misc/cs1542.md
     - name: CS1545
       href: ../misc/cs1545.md
-    - name: CS1546
-      href: ./compiler-messages/cs1546.md
     - name: CS1547
       href: ../misc/cs1547.md
     - name: CS1548
@@ -1638,8 +1636,6 @@ items:
       href: ./compiler-messages/cs8354.md
     - name: CS8355
       href: ./compiler-messages/cs8355.md
-    - name: CS8422
-      href: ./compiler-messages/cs8422.md
     - name: CS9043
       href: ./compiler-messages/cs9043.md
   - name: Level 1 warning messages

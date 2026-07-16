@@ -246,7 +246,7 @@ To set the nullable context correctly, you have two options:
 
 The nullable context has two independent flags that control different aspects:
 
-- **Annotation flag**: Controls whether you can use `?` to declare nullable reference types and `!` to surpress individual warnings.
+- **Annotation flag**: Controls whether you can use `?` to declare nullable reference types and `!` to suppress individual warnings.
 - **Warning flag**: Controls whether the compiler emits nullability warnings
 
 In generated code, add an explicit `#nullable` directive to the generated source before you use nullable annotations (**CS8669**). Project-level nullable settings might not apply to generated source files.

@@ -35,7 +35,7 @@ Query syntax often reads well when the query has several clauses. The `let` clau
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="QuerySyntaxClearer":::
 
-Method syntax often reads well for short operations. It also reads well for operators that don't have a query-syntax keyword. For example, <xref:System.Linq.Enumerable.Count*> returns one value directly:
+Method syntax often reads well for short operations. It's necessary for methods that don't have query-syntax keyword. For example, <xref:System.Linq.Enumerable.Count*> returns one value directly:
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="MethodSyntaxClearer":::
 
@@ -45,7 +45,7 @@ A *lambda expression* is an anonymous function that you can pass as an argument.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="LambdaExpressions":::
 
-In `name => name.Length == 3`, `name` is the input element and `name.Length == 3` is the Boolean expression that decides whether the element belongs in the result. For more information about lambda expressions and delegate types, see [Lambda expressions, delegates, and events](../types/delegates-lambdas.md) in the fundamentals. For more information about lambda expression syntax, see [Lambda expressions - Lambda expressions and anonymous functions](../../language-reference/operators/lambda-expressions.md) in the language reference.
+In `name => name.Length == 3`, `name` is the input element and `name.Length == 3` is the Boolean expression that decides whether the element belongs in the result. For more information about lambda expressions and delegate types, see [Lambda expressions, delegates, and events](../types/delegates-lambdas.md) in the fundamentals. For detailed information about lambda expression syntax, see [Lambda expressions - Lambda expressions and anonymous functions](../../language-reference/operators/lambda-expressions.md) in the language reference.
 
 Query-syntax clauses use lambda expressions too. Clauses such as `where`, `orderby`, and `select` compile to method calls that take lambda expressions. The range variable becomes the lambda parameter, and the clause expression becomes the lambda body. Query syntax is a concise way to write those same lambdas:
 
@@ -68,7 +68,7 @@ Use <xref:System.Linq.Enumerable.GroupBy*> when the result should contain groups
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="GroupBy":::
 
-Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
+Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see the [Language Integrated Query (LINQ)](../../linq/index.md) section.
 
 ## Run a query
 
@@ -80,7 +80,7 @@ Other operations run a query immediately. Operators that return a single value, 
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="ImmediateExecution":::
 
-There isn't one single trigger that runs a query. *Eager evaluation*, also called immediate evaluation, runs the query right away and stores or returns the result. Scalar and aggregate operators such as <xref:System.Linq.Enumerable.Count*>, <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.First*>, and <xref:System.Linq.Enumerable.Any*> use eager evaluation. So do <xref:System.Linq.Enumerable.ToList*> and <xref:System.Linq.Enumerable.ToArray*> when you need a snapshot of the current results. For more information about deferred execution, see [Introduction to LINQ Queries](../../linq/get-started/introduction-to-linq-queries.md) in the LINQ documentation.
+There's no single trigger that runs a query. *Eager evaluation*, also called immediate evaluation, runs the query right away and stores or returns the result. Scalar and aggregate operators such as <xref:System.Linq.Enumerable.Count*>, <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.First*>, and <xref:System.Linq.Enumerable.Any*> use eager evaluation. So do <xref:System.Linq.Enumerable.ToList*> and <xref:System.Linq.Enumerable.ToArray*> when you need a snapshot of the current results. For more information about deferred execution, see [Introduction to LINQ Queries](../../linq/get-started/introduction-to-linq-queries.md) in the LINQ documentation.
 
 ## Compose queries
 

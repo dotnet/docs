@@ -49,7 +49,7 @@ Use <xref:System.Collections.Generic.List`1.Insert*> to add one element at a spe
 
 Adding or removing at the end of a <xref:System.Collections.Generic.List`1> is fast. Adding with <xref:System.Collections.Generic.List`1.Add*> is an O(1) operation on average, and removing the last element with <xref:System.Collections.Generic.List`1.RemoveAt*> is O(1). Inserting or removing at the front or middle is O(n) because every later element shifts to a new index. Big-O notation describes how the work grows as the collection size, `n`, grows. O(1), pronounced "order one," means the operation takes about the same amount of work no matter how many elements the collection contains. O(n), pronounced "order n," means the work grows roughly in proportion to the number of elements. If your code frequently inserts or removes at the front, a <xref:System.Collections.Generic.List`1> might be the wrong collection shape.
 
-## Look up items by key with `Dictionary<TKey,TValue>`
+## Associate a value by key with `Dictionary<TKey,TValue>`
 
 A <xref:System.Collections.Generic.Dictionary`2> stores key/value pairs. A *key/value pair* is one key and the value associated with that key; .NET represents one pair with <xref:System.Collections.Generic.KeyValuePair`2>. Use the dictionary indexer to add or update a value by key, and use <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> when the key might not exist.
 
@@ -63,7 +63,7 @@ You can also change the value associated with a key that already exists. When yo
 
 ## Create collections with collection expressions
 
-A *collection expression* creates a collection from expressions between square brackets. Collection expressions can create arrays, lists, and other collection types. A *spread element* copies the elements from another collection into the new collection.
+A *collection expression* creates a collection from expressions between square brackets. Beginning with C# 12, collection expressions can create arrays, lists, and other collection types. A *spread element* copies the elements from another collection into the new collection.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="CollectionExpressions":::
 
@@ -71,7 +71,7 @@ Collection expressions keep initialization concise. A collection expression has 
 
 ## Read from positions with indexes and ranges
 
-An <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..`. Arrays support both indexes and ranges.
+An <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..` (a sequence of 2 dots). Arrays and `List<T>` support both indexes and ranges.
 
 Use a from-end index with `^` when you want to count backward from the end. The expression `phases[^1]` reads the last element, and `phases[^2]` reads the next-to-last element.
 
@@ -82,8 +82,6 @@ Use an open-start range `..b` when the slice starts at the beginning. The expres
 Use an open-end range `a..` when the slice continues through the last element. The expression `phases[2..]` returns the elements from position `2` to the end.
 
 Use the full range `..` when you want a copy of the whole array. The expression `phases[..]` creates a new array with all the same elements.
-
-<xref:System.Collections.Generic.List`1> supports the indexer syntax for one element, including from-end indexes such as `checklist[^1]`. It doesn't support the range operator directly. Use <xref:System.Collections.Generic.List`1.GetRange*> when you need a range from a list.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="IndexesAndRanges":::
 

@@ -183,7 +183,7 @@ public static class Program
         Console.WriteLine($"From third: {string.Join(", ", phases[2..])}"); // => From third: test, deploy
         Console.WriteLine($"All phases: {string.Join(", ", phases[..])}"); // => All phases: design, code, test, deploy
         Console.WriteLine($"List last: {checklist[^1]}"); // => List last: review
-        Console.WriteLine($"List first two: {string.Join(", ", checklist.GetRange(0, 2))}"); // => List first two: design, test
+        Console.WriteLine($"List first two: {string.Join(", ", checklist[0..2])}"); // => List first two: design, test
         // </IndexesAndRanges>
     }
 }

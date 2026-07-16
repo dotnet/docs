@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: -subsystemversion (Visual Basic)"
 title: "-subsystemversion"
-ms.date: 03/13/2018
+ms.date: 07/16/2026
 helpviewer_keywords:
   - "/subsystemversion compiler option [Visual Basic]"
   - "-subsystemversion compiler option [Visual Basic]"
@@ -25,21 +25,13 @@ Specifies the minimum version of the subsystem on which the generated executable
 
 `major.minor`
 
-The minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7 if you set the value of this option to 6.01, as the table later in this topic describes. You must specify the values for `major` and `minor` as integers.
+The minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7 if you set the value of this option to 6.01. You must specify the values for `major` and `minor` as integers.
 
 Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. We recommend expressing the minor version as two digits to avoid confusion.
 
 ## Remarks
 
-The following table lists common subsystem versions of Windows.
-
-|Windows version|Subsystem version|
-|---------------------|-----------------------|
-|Windows Server 2003|5.02|
-|Windows Vista|6.00|
-|Windows 7|6.01|
-|Windows Server 2008|6.01|
-|Windows 8|6.02|
+For more information about Windows subsystem versions, see [Operating System Version](/windows/win32/sysinfo/operating-system-version).
 
 ## Default values
 

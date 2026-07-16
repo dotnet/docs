@@ -56,7 +56,7 @@ Install as a Visual Studio Code extension:
 1. Search for **GitHub Copilot upgrade**.
 1. Select **Install**.
 
-The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `modernize-dotnet`.
+The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `Upgrade`.
 
 ## Verify the installation
 

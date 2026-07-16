@@ -53,7 +53,7 @@ Before you install, make sure you have:
 Install as a Visual Studio Code extension:
 
 1. In Visual Studio Code, open the **Extensions** view (<kbd>Ctrl+Shift+X</kbd>).
-1. Search for **GitHub Copilot modernization**.
+1. Search for **GitHub Copilot upgrade**.
 1. Select **Install**.
 
 The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `modernize-dotnet`.
@@ -62,11 +62,11 @@ The extension automatically acquires the .NET SDK if it's missing, registers too
 
 1. Open a project in Visual Studio Code.
 1. Open the **GitHub Copilot Chat** view.
-1. Send `@modernize-dotnet` in chat and confirm the agent responds.
+1. Send `@upgrade` in chat and confirm the agent responds.
 
    -or-
 
-   Select the **Agent** picker and find the `modernize-dotnet` entry.
+   Select the **Agent** picker and find the `Upgrade` entry.
 
 ::: zone-end
 

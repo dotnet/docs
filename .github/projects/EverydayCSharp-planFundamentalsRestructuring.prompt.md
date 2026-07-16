@@ -1,6 +1,6 @@
 # Draft Plan: Fundamentals Restructuring PR Breakdown
 
-**TL;DR:** Break the ~91-article restructuring into ~35 small, independently mergeable PRs organized in proposed TOC order. Each PR aims for ~10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. PR file budgets are advisory: a PR may exceed ~10 files when relocating text to other sections is the right call (Goal 11), and PRs that grow too large are split along a natural seam using letter suffixes (for example, PR 14a / PR 14b) so downstream PR numbers stay stable. Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
+**TL;DR:** Break the ~91-article restructuring into ~35 small, independently mergeable PRs organized in proposed TOC order. Each PR aims for ~10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. PR file budgets are advisory: a PR may exceed ~10 files when relocating text to other sections is the right call (Goal 11), and PRs that grow too large are split along a natural seam into separate, consecutively numbered PRs (for example, the collections/LINQ and equality work split into PR 14a / PR 14b). Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
 
 **Conventions for every PR:**
 
@@ -71,6 +71,8 @@ The Fundamentals audience is a developer who knows another language and is learn
 - Every PR description lists redistributed content explicitly. For each section moved out of the Fundamentals draft, name the source (which planned Fundamentals article it was cut from), the destination (file path), and a one-line reason — formatted as `source draft article → destination file path → reason`. This keeps the trail visible for downstream review and for future restructuring of the destination area.
 - Follow the *Fundamentals folder layout convention*: each section's `index.md` and concept articles live at the section's top level (for example, `fundamentals/strings/interpolation.md`); task-style articles ("how do I do X?") are grouped under a `<section>/common-tasks/` subfolder (for example, `fundamentals/strings/common-tasks/search.md`) with their snippets under `<section>/common-tasks/snippets/`; tutorials live flat under `fundamentals/tutorials/` rather than nested per section. The section's `toc.yml` renders a nested **Common tasks** group beneath the concept articles. Sections without task-style articles don't get a `common-tasks/` subfolder. See [Decision 11](EverydayCSharp-ProjectMap.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials) in the Project Map.
 - *Run the pre-submit checklist before opening the PR* rather than leaving it for a late review pass. Confirm that every output-producing sample shows its result as a trailing `// => …` comment; that samples saturate the everyday-feature set even when those features aren't the topic; that no contextual keyword is used as an identifier; that every newly introduced term is defined at first use; and that each article's structure and required metadata match the template for its content type.
+- *Every PR leaves its section coherent.* After a PR merges, the section it touches must be publishable: no placeholder or "coming soon"/"TODO"/stub articles, no empty or orphaned TOC nodes, and no broken links. If a subtopic can't be finished in the PR, leave it out of both the article and the TOC rather than shipping a stub.
+- *Place or reorder a TOC node only when its backing content is live in the same PR.* Never insert a TOC node ahead of the article that fills it, and never move a section into its final Option A position until the moved content is live. When a PR reorders nodes (for example, lifting Patterns §11 above Expressions §12 and Statements §13), it names the prerequisite PR that made the moved content live.
 
 ## Phase A: Program Structure (§7)
 
@@ -222,7 +224,21 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing concatenate, modify, and compare how-tos include `StringBuilder` vs. concatenation benchmarks, culture-sensitive comparison deep-dives, and `string.Create`-style allocation guidance. Those sections fail universality — cut them to a Strings deep dive (or globalization content for culture-sensitive comparison) rather than carrying them into Fundamentals.
 
-## Phase E: Statements and Expressions (§12–§13) — 3 PRs
+## Phase E: Expressions and Statements (§12–§13) — 7 PRs
+
+> *Eventual TOC order (Option A, standard-faithful):* **Pattern matching (§11) → Expressions and
+> operators (§12) → Statements (§13)**. PR build order differs from TOC order because PR 13
+> (Statements: selection + iteration) and PR 14a (collections + LINQ) already shipped/are in flight;
+> the new Expressions PRs (15, 16) render *before* the Statements node in `toc.yml`. See
+> [Decision 12](EverydayCSharp-ProjectMap.md#decision-12-expressions-and-operators-section).
+>
+> *Decomposition (this batch):* 15 (Expressions overview + precedence) and 16 (Expressions
+> operators) are the content PRs; each inserts its own TOC node with a live article behind it. Two
+> follow-ups are sequenced *after* their prerequisites so no PR ships a placeholder or a link to a
+> not-yet-live target: **17** (deferred `?:` slim-down of the merged Selection-statements article)
+> and **18** (cross-link wiring from already-shipped Built-in types and Null safety articles into the
+> new Expressions section). 17 and 18 are small, run last in the cluster, and touch shipped articles
+> only to remove duplication or add now-safe links.
 
 ### PR 13 — Statements: selection + iteration
 
@@ -237,11 +253,16 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ### PR 14a — Statements: collections + LINQ
 
+[#54807](https://github.com/dotnet/docs/pull/54807) *In progress*
 > ~8 files
 
 1. New `fundamentals/statements/collections.md` — Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12); ranges and indexes (C# 8) applied to collections
 2. New `fundamentals/statements/linq.md` — query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios
 3. Snippet files + toc.yml
+
+> *Reorder label (no content change):* the section/TOC node **"Statements and expressions" →
+> "Statements"** (§13). This is a label-only change to the in-flight work; the true §12 expression
+> content moves to the new Expressions and operators section (PRs 15/16).
 
 ### PR 14b — Type system: equality
 
@@ -252,37 +273,147 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Split rationale:* equality lives in the Type system area while collections and LINQ live in Statements; the topics share no snippet code and no readers will reach for them together. Splitting also leaves room for the equality redistribution work (move `IEqualityComparer<T>` design, `GetHashCode` contract, and operator overloading rules to Language Reference / OOP deep dive) without crowding collections and LINQ.
 
+> *Cross-link (Decision 12):* the equality *operators* (`==`, `!=`) get a survey slot in the new
+> Expressions operators article (PR 16); this article stays in Type system and owns equality
+> *semantics*. Cross-link the two so readers move between operator syntax and equality behavior.
+
 > *Watch for redistribution:* the equality article will attract content that fails universality — `IEqualityComparer<T>` design, the full `GetHashCode` contract, operator overloading rules for `==` and `!=`, and equality semantics for ref structs. Move those topics to Language Reference (operator overloading, `GetHashCode` contract) or an OOP deep dive (`IEqualityComparer<T>`), and keep the Fundamentals article scoped to "what `==` and `Equals` do for the types you've already met."
 
-## Phase F: Pattern Matching + Functional (§11–§12) — 5 PRs
+> *Coherence check:* Type-system equality node stays live with a complete article; the outbound
+> cross-link to the equality-operator survey is **deferred to PR 16** (its target, `operators.md`,
+> lands there). No placeholder; no forward link.
 
-### PR 15 — Pattern matching: overview + declaration/constant/var + type patterns
+### PR 15 — Expressions: overview + operator precedence
 
-> ~10 files
+> ~5 files
 
-1. Revise `fundamentals/functional/pattern-matching.md` — high-level introduction to pattern matching and switch expressions (C# 8); motivate when and why to use patterns vs. imperative branching
-2. New `fundamentals/functional/declaration-constant-var-patterns.md` — declaration patterns, constant patterns, var patterns (combined into one article because each is brief on its own)
-3. New `fundamentals/functional/type-patterns.md` — type-testing patterns, pattern matching with generics (C# 7.1)
-4. Snippet files + toc.yml
+1. Create `fundamentals/expressions/` directory
+2. New `fundamentals/expressions/index.md` — what an expression is; expression vs. statement; expression classifications (value vs. variable); operands and operators; the operator precedence and associativity table (§12.4.2); evaluation order and side effects
+3. Snippet files + toc.yml — **insert the "Expressions and operators (§12)" TOC node immediately before the Statements node** (the concrete, live anchor at this point). The node ships with `index.md` behind it, so it's never empty. The final Patterns-above-Expressions ordering is completed by PR 19, when the standalone Patterns §11 node is created
+4. Cross-links that are **safe to add now** (targets already live): Expressions overview → LINQ (Statements, PR 14a) and → Null operators `??`/`?.` (Null safety, merged)
 
-### PR 16 — Pattern matching: property/positional + relational/logical + list patterns
+> *Spec anchor:* §12.1–§12.2, §12.4.1–§12.4.2. Precedence is rule-heavy — present it as a structured
+> table and verify each row against §12.4.2 before review.
 
-> ~10 files
+> *Deferred links (targets not yet live):* Expressions overview → **switch expression** is added by
+> **PR 19** (which creates `patterns/pattern-matching.md`); the **operators** cross-link is added by
+> **PR 16** (which creates `operators.md`). Don't link either until those PRs merge.
 
-1. New `fundamentals/functional/property-positional-patterns.md` — property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8)
-2. New `fundamentals/functional/relational-logical-patterns.md` — relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9)
-3. New `fundamentals/functional/list-patterns.md` — list patterns (C# 11), slice patterns
-4. Snippet files + toc.yml
+> *Coherence check:* Expressions node goes live with a complete overview article and the precedence
+> table; only backward links (to already-live LINQ and null operators) are wired; forward links to
+> switch expression and `operators.md` are deferred to the PRs that create them.
 
-### PR 17 — Pattern matching: deconstruction + tutorial
+### PR 16 — Expressions: arithmetic, comparison, logical, and assignment operators
 
 > ~6 files
 
-1. Revise `fundamentals/functional/deconstruct.md` — records, tuples, custom `Deconstruct`, mixed deconstructions
-2. Pull `tutorials/patterns-objects.md` → `fundamentals/tutorials/pattern-matching.md`
-3. Updated snippets + toc.yml + redirect
+1. New `fundamentals/expressions/operators.md` — arithmetic (`+ - * / %`), unary (`+ - !`), increment/decrement (`++ --`), relational (`< > <= >=`), equality operators (`== !=`, survey; cross-link to `fundamentals/types/equality.md` for semantics), conditional-logical (`&& ||` with short-circuiting), the conditional operator (`?:`, §12.20), simple and compound assignment (`= += -= *= /= %=`)
+2. Snippet files + toc.yml — add the `operators.md` node under the already-live Expressions node (PR 15)
+3. Cross-links safe to add now: operators.md → Type-system equality (PR 14b, live) for equality *semantics*; operators.md → Language Reference for the excluded shift/bitwise/`checked`-`unchecked` operators (Reference already live). Add the reciprocal Expressions-overview → operators link in `index.md` here
 
-### PR 18 — Functional techniques
+> *Spec anchor:* §12.12, §12.14.1–11, §12.8.16, §12.9.2–4/7, §12.16, §12.20, §12.23.1–2/5.
+
+> *Single-article scope (refinement of Q5):* the reduced §12 scope (shift/bitwise/`checked`-`unchecked`
+> excluded per Q6) keeps `operators.md` inside the 1000–2000-word target as one coherent article, so
+> the Expressions section stays **two articles** (overview + operators). Splitting `operators.md`
+> across two PRs (e.g., arithmetic/relational/equality vs. boolean/`?:`/assignment) was considered and
+> **rejected**: it would either ship a partial operators article after the first PR (violating the
+> coherence rule) or create two thin sub-articles against the two-article decision. One focused article
+> is the cleaner review unit.
+
+> *Excluded (Decision 12):* shift operators (`<< >> >>>`, §12.13), integer/bitwise logical operators
+> (`& | ^ ~`, §12.15/§12.9.5), and `checked`/`unchecked` (§12.8.20) are too niche for Fundamentals —
+> they stay in the Language Reference; this article cross-links out rather than teaching them. Their
+> snippets are **not** authored in Fundamentals.
+
+> *Coherence check:* Expressions section is complete after this PR (overview + operators, both live);
+> `?:` is taught here as a §12.20 expression; equality-semantics and Language-Reference links point
+> only at live targets. The remaining inbound links from shipped Built-in types / Null safety articles
+> are wired in PR 18.
+
+### PR 17 — Deferred cleanup: slim `?:` in Selection statements (later pass)
+
+> ~2 files · **DEFERRED — sequence after PR 16; not part of the initial reorder batch**
+
+1. Trim the "ternary conditional operator" coverage in the merged `fundamentals/statements/selection-statements.md` (shipped in PR 13) to a brief mention **plus a cross-reference** to the Expressions `operators.md` article, removing the duplicated teaching of `?:`
+2. Updated snippet references (if any) + toc.yml (no node change)
+
+> *Rationale (Q5):* PR 16 now teaches `?:` as a §12.20 expression, so the merged Selection-statements
+> article no longer needs to teach it. This is a pure de-duplication + cross-reference pass on already
+> shipped content — held back as a *later cleanup* so the initial reorder batch doesn't touch PR 13's
+> merged article. **Prerequisite:** PR 16 live (the cross-reference target must exist first).
+
+> *Coherence check:* Selection-statements article stays complete and publishable — `?:` is still
+> introduced, just no longer taught in duplicate; the cross-reference points at the now-live
+> `operators.md`. No stub, no broken link.
+
+### PR 18 — Cross-link wiring: shipped articles → Expressions section
+
+> ~3 files · **sequence after PRs 15 + 16**
+
+1. Add inbound cross-links from already-shipped articles into the new Expressions section, now that both Expressions articles are live: **Built-in types → Expressions operators** (operators on the types just introduced) and **Null safety (`??`/`?.`) → Expressions overview** (reciprocal of the overview → null-operators link added in PR 15)
+2. toc.yml unchanged (no new nodes) — link-only edits to existing, shipped articles
+
+> *Rationale:* these links edit already-merged Fundamentals articles (Built-in types, Null safety)
+> whose natural owner PRs shipped before the Expressions section existed. Wiring them in one small,
+> clearly-scoped PR after the Expressions content is live keeps every earlier merged PR build-clean and
+> avoids forward links. Relational-patterns → relational-operators and Expressions-overview → switch
+> expression are **not** here — those are owned by PRs 20 and 19 respectively (the PRs that create the
+> patterns side of each link).
+
+> *Coherence check:* purely additive links to live targets; no new articles, no TOC nodes, nothing to
+> leave incomplete. Every touched article was already coherent and stays so.
+
+## Phase F: Pattern Matching (§11) + Functional (§12) — 5 PRs
+
+> *Option A ordering (Decision 12):* Pattern matching (§11) is sequenced **before** Expressions and
+> operators (§12) and Statements (§13) in the eventual TOC. The pattern-matching articles move out of
+> `fundamentals/functional/` into a dedicated **`fundamentals/patterns/`** folder so patterns stand as
+> their own §11 section rather than a sub-topic of Functional techniques. Functional techniques
+> (lambdas, local functions, iterators — PRs 22–23) remain in `fundamentals/functional/`.
+
+### PR 19 — Pattern matching: overview + declaration/constant/var + type patterns
+
+> ~10 files
+
+1. Revise `fundamentals/patterns/pattern-matching.md` — high-level introduction to pattern matching and switch expressions (C# 8); motivate when and why to use patterns vs. imperative branching
+2. New `fundamentals/patterns/declaration-constant-var-patterns.md` — declaration patterns, constant patterns, var patterns (combined into one article because each is brief on its own)
+3. New `fundamentals/patterns/type-patterns.md` — type-testing patterns, pattern matching with generics (C# 7.1)
+4. Snippet files + toc.yml + redirects (from former `fundamentals/functional/` paths)
+5. **Create the `fundamentals/patterns/` TOC section and reorder it into its final Option A position** — the Patterns (§11) node moves above the Expressions (§12) and Statements (§13) nodes. This reorder happens here because this is the first PR where `patterns/` content is live. **Prerequisite:** the Expressions node (PRs 15/16) is already live, so there's a stable §12 node to sit above
+6. Add the deferred **Expressions overview → switch expression** cross-link in `expressions/index.md` (its target, `patterns/pattern-matching.md`, becomes live in this PR)
+
+> *Coherence check:* the Patterns node is populated with real articles (overview + basics) the moment
+> it's inserted/reordered — never an empty node; redirects cover every moved `functional/` path; the
+> switch-expression back-link is wired only now that its target is live. The remaining pattern
+> articles (PRs 20–21) expand the already-live, already-positioned Patterns node.
+
+### PR 20 — Pattern matching: property/positional + relational/logical + list patterns
+
+> ~10 files
+
+1. New `fundamentals/patterns/property-positional-patterns.md` — property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8)
+2. New `fundamentals/patterns/relational-logical-patterns.md` — relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9)
+3. New `fundamentals/patterns/list-patterns.md` — list patterns (C# 11), slice patterns
+4. Snippet files + toc.yml
+5. Add the **relational patterns → relational operators** cross-link (from `relational-logical-patterns.md` to `expressions/operators.md`, live since PR 16) so readers connect `< > <= >=` patterns to the operators
+
+> *Coherence check:* new pattern articles slot under the already-live, already-positioned Patterns
+> node; the relational-operators link points at a live target (PR 16). No reorder needed here; no
+> placeholder.
+
+### PR 21 — Pattern matching: deconstruction + tutorial
+
+> ~6 files
+
+1. Revise `fundamentals/patterns/deconstruct.md` — records, tuples, custom `Deconstruct`, mixed deconstructions
+2. Pull `tutorials/patterns-objects.md` → `fundamentals/tutorials/pattern-matching.md`
+3. Updated snippets + toc.yml + redirect (including redirect from former `fundamentals/functional/deconstruct.md`)
+
+> *Coherence check:* completes the Patterns section; the tutorial and revised deconstruct article are
+> both live with redirects for every moved path. Patterns §11 is fully coherent after this PR.
+
+### PR 22 — Functional techniques
 
 > ~10 files
 
@@ -294,7 +425,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing iterator content includes state-machine internals, `IAsyncEnumerable` mechanics, custom enumerator authoring, and exception-handling rules around `yield`. Those sections fail universality — move them to Language Reference (state-machine details, exception rules) or an Async/Iterators deep dive (`IAsyncEnumerable`, custom enumerators). Keep the Fundamentals iterators article on consuming and writing simple `yield return` iterators.
 
-### PR 19 — Tutorial: Functional techniques in C#
+### PR 23 — Tutorial: Functional techniques in C#
 
 > ~4 files
 
@@ -303,14 +434,26 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ## Phase G: Namespaces (§14) + Object-Oriented Programming (§15) — 10 PRs
 
-### PR 20 — Namespaces
+### PR 24 — Namespaces (CONSOLIDATE, Decision 12b)
 
-> ~4 files
+> ~5 files
 
-1. New `fundamentals/namespaces/overview.md` — motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; nested namespaces
-2. Snippet files + toc.yml
+1. New `fundamentals/namespaces/overview.md` — **canonical §14 Namespaces article**: motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; `global using` directives; namespace aliases; nested namespaces
+2. **Slim the already-shipped `fundamentals/program-structure/namespaces.md`** to a brief intro + cross-reference to the canonical article (avoid duplicate coverage). This is a build-clean change to shipped content — **add a redirect and fix inbound links** that pointed at the program-structure article
+3. Snippet files + toc.yml + redirect + inbound-link fix
 
-### PR 21 — OOP: overview, access modifiers, fields/constants
+> *Consolidation rationale (2b):* §14 Namespaces gets one canonical home under `fundamentals/namespaces/`.
+> The Program-structure "Namespaces and using directives" article (shipped in PR 1) is reduced to a short
+> orientation pointer so beginners meet the concept early without the section duplicating the full §14
+> treatment. Because the program-structure article already shipped, verify the build stays clean:
+> add the redirect and update every inbound cross-link.
+
+> *Coherence check:* after this PR §14 has exactly one canonical article (`namespaces/overview.md`);
+> the shipped `program-structure/namespaces.md` is a slim intro + cross-reference (not a stub — it
+> still reads as a complete short article and routes onward); redirect + repo-wide inbound-link fixes
+> land in this same PR, so nothing is duplicated, orphaned, or broken after merge.
+
+### PR 25 — OOP: overview, access modifiers, fields/constants
 
 > ~10 files
 
@@ -321,14 +464,14 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing fields content includes `volatile`, `readonly` interaction with structs in detail, `fixed`-size buffers, and ref fields — all of which fail universality. Move those sub-sections to Language Reference (`volatile`, `fixed`) or a memory-model deep dive (ref fields, low-level field semantics). Keep Fundamentals on declaring and using fields and constants.
 
-### PR 22a — OOP: properties
+### PR 26 — OOP: properties
 
 > ~6 files
 
 1. Pull+revise `fundamentals/object-oriented/properties.md` — from `programming-guide/classes-and-structs/properties.md` + related; add init-only (C# 9), required (C# 11), `field` keyword (C# 14)
 2. Snippet files + toc.yml + redirects
 
-### PR 22b — OOP: constructors
+### PR 27 — OOP: constructors
 
 > ~6 files
 
@@ -339,7 +482,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing property and constructor content includes `ref` returns from properties, indexed properties on COM interop, `[ModuleInitializer]`, and detailed static-constructor ordering rules. Those sub-sections fail universality — move them to Language Reference (ref returns, static-constructor ordering, module initializers) or COM-interop content. Keep Fundamentals on declaring properties (including init-only, required, and `field`) and writing instance/primary constructors.
 
-### PR 23 — OOP: methods + lambdas in OOP
+### PR 28 — OOP: methods + lambdas in OOP
 
 > ~10 files
 
@@ -349,7 +492,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing methods content includes `ref readonly` parameters, `in` parameters, conditional methods (`[Conditional]`), method-resolution and overload-resolution rule details, and unsafe-context interactions. Those fail universality — move them to Language Reference (overload resolution, conditional methods, parameter modifiers) or an interop/unsafe deep dive. Keep the Fundamentals methods article on declaring methods, parameter passing, optional and named arguments, and `params`.
 
-### PR 24 — OOP: inheritance merge + interfaces
+### PR 29 — OOP: inheritance merge + interfaces
 
 > ~10 files
 
@@ -357,7 +500,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 2. Pull+revise `fundamentals/object-oriented/interfaces.md` — from `programming-guide/interfaces/`; implementing, explicit implementation, interfaces vs. abstract classes
 3. toc.yml + redirects
 
-### PR 25 — OOP: indexers, extensions, ranges tutorial
+### PR 30 — OOP: indexers, extensions, ranges tutorial
 
 > ~10 files
 
@@ -366,7 +509,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 3. Pull `tutorials/ranges-indexes.md` → `fundamentals/tutorials/ranges.md`
 4. toc.yml + redirects
 
-### PR 26a — OOP: events + partial types
+### PR 31 — OOP: events + partial types
 
 > ~6 files
 
@@ -374,7 +517,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 2. New `fundamentals/object-oriented/partial-types.md` — partial classes/structs, partial methods (C# 9), partial properties (C# 13), partial events/constructors (C# 14)
 3. Snippet files + toc.yml + redirects
 
-### PR 26b — OOP: object lifetime
+### PR 32 — OOP: object lifetime
 
 > ~5 files
 
@@ -385,7 +528,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing events content includes custom event accessors, weak-event patterns, and threading rules around event invocation — move those to an OOP deep dive. The full dispose pattern (finalizers, `SafeHandle`, suppress-finalize ordering, async-dispose authoring) and detailed garbage-collection interaction also fail universality — move them to a Deep dives article or the existing GC/Standard library content. Keep Fundamentals on subscribing to and raising events with the standard pattern, and on `using`/`using` declarations plus a brief "implement `IDisposable` when you wrap an unmanaged resource" pointer.
 
-### PR 27 — OOP: encapsulation and composition
+### PR 33 — OOP: encapsulation and composition
 
 > ~6 files
 
@@ -394,7 +537,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 ## Phase H: Remaining Sections — 5 PRs
 
-### PR 28a — Async basics
+### PR 34 — Async basics
 
 > ~6 files
 
@@ -403,7 +546,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 3. New `fundamentals/async/consuming-async.md` — `async`/`await`, task-based pattern, async Main (C# 7.1), brief `await foreach`; link to Async focus section
 4. Snippet files + toc.yml + redirect
 
-### PR 28b — Attributes
+### PR 35 — Attributes
 
 > ~4 files
 
@@ -414,7 +557,7 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 > *Watch for redistribution:* the existing async overview includes `ConfigureAwait` rules, synchronization-context internals, `ValueTask`, `IAsyncDisposable`, custom awaiters, and `TaskCompletionSource` patterns — all of which fail universality. Move them to the Async deep dive. The existing attributes content includes custom-attribute authoring, attribute-target rules in detail, and reflection-based attribute reading — move those to Language Reference (attribute syntax and targets) or a reflection deep dive. Keep Fundamentals on consuming async APIs with `await` and on applying common attributes that already exist.
 
-### PR 29 — XML docs + Coding style + Console app tutorial
+### PR 36 — XML docs + Coding style + Console app tutorial
 
 > ~10 files
 
@@ -428,14 +571,14 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 6. Cross-cutting: all Coding style articles should mention `.editorconfig` usage and link to the EditorConfig section in "Get started". Link to pertinent analyzer rules and code style rules relevant to each article's design decisions.
 
-### PR 30 — Using .NET analyzers
+### PR 37 — Using .NET analyzers
 
 > ~4 files
 
 1. New `fundamentals/coding-style/analyzers.md` — Roslyn analyzers, .NET SDK analyzers, StyleCop, enabling/configuring via `.editorconfig` and `AnalysisLevel`; finding and fixing code issues
 2. Snippet files + toc.yml
 
-### PR 31 — Exceptions modernization pass
+### PR 38 — Exceptions modernization pass
 
 > ~9 files
 
@@ -459,12 +602,15 @@ The Fundamentals audience is a developer who knows another language and is learn
 - *~10 total files per PR* including toc.yml, redirects, and snippets; tutorial-only PRs may be smaller (~4 files)
 - *Move + revise in same PR* rather than two-step
 - *Incremental TOC updates* — each PR makes its section live immediately
-- *Polymorphism → redirect to merged Inheritance article* (PR 24)
-- *Pattern matching split into 3 PRs* (PRs 15–17) per project map decision: overview + basics | structural patterns | deconstruct + tutorial
-- *Namespaces (§14) gets its own small PR (PR 20)* at the start of Phase G; single-article section
-- *Using .NET analyzers gets its own PR (PR 30)* after the Coding style PR; keeps PR 29 at ~10 files
+- *Polymorphism → redirect to merged Inheritance article* (PR 29)
+- *Pattern matching split into 3 PRs* (PRs 19–21) per project map decision: overview + basics | structural patterns | deconstruct + tutorial. **Relocated to `fundamentals/patterns/`** (Decision 12, Option A) so §11 stands as its own section before Expressions/Statements.
+- *Namespaces (§14) gets its own PR (PR 24)* at the start of Phase G. **Consolidated (Decision 12b):** `fundamentals/namespaces/overview.md` is the canonical §14 article; the shipped Program-structure "Namespaces" article (PR 1) is slimmed to intro + cross-reference with a redirect + inbound-link fix.
+- *Using .NET analyzers gets its own PR (PR 37)* after the Coding style PR; keeps PR 36 at ~10 files
 - *PRs within a phase are sequential* (e.g., Type system PRs 3→6 go in order); *phases are largely independent* and can run in parallel if multiple authors contribute
 - *Two-criteria fit test applied per section* — universality and beginner accessibility (Goal 11). Sections that fail universality are relocated (text moved, not deleted) to Language Reference, Deep dives, or Advanced; sections that fail only accessibility are rewritten in place.
 - *Out-of-scope full articles stay where they are.* Documented as explicit "leave in place" line items in the relevant PR; revisited when that area is restructured. The nullable-reference-type migration article is the canonical example.
 - *PR file budgets are advisory when redistribution is required.* A PR may exceed ~10 files when relocating text to other sections is the right call.
-- *Oversized PRs split along natural seams using letter suffixes* (e.g., PR 14a / PR 14b) so downstream PR numbers stay stable. Current splits: PR 14 → 14a (collections + LINQ) / 14b (equality); PR 22 → 22a (properties) / 22b (constructors); PR 26 → 26a (events + partial types) / 26b (object lifetime); PR 28 → 28a (async basics) / 28b (attributes).
+- *Oversized PRs are split along natural seams into separate, consecutively numbered PRs* so each stays small enough for focused human review. (The old letter-suffix convention is retired now that upcoming PRs use plain integers; only the in-flight **PR 14a** / **PR 14b** keep their suffixes.) Current split work: Statements collections + LINQ (PR 14a) and Type-system equality (PR 14b); the Expressions section — overview + precedence (PR 15) and operators + assignment (PR 16) — plus its deferred `?:` cleanup (PR 17) and cross-link wiring (PR 18); OOP properties (PR 26) and constructors (PR 27); OOP events + partial types (PR 31) and object lifetime (PR 32); Async basics (PR 34) and Attributes (PR 35).
+- *Expressions and operators (§12) gets a dedicated section* (Decision 12, Option A) via PRs 15/16 — `fundamentals/expressions/index.md` (overview + operator precedence/associativity) and `fundamentals/expressions/operators.md` (arithmetic, unary, `++`/`--`, relational, equality survey, `&&`/`||`, `?:`, simple + compound assignment). Kept as **two articles** (refinement of Q5): the Q6 exclusions keep `operators.md` a single coherent article, so it is not split across PRs. **Excluded from Fundamentals** (stay in Language Reference, cross-linked): shift (`<< >> >>>`), integer/bitwise logical (`& | ^ ~`), and `checked`/`unchecked`.
+- *Deferred cleanup is its own PR (PR 17).* Trimming the `?:` (ternary conditional) mention in the merged Selection-statements article (PR 13) to a cross-reference — now that `?:` is taught in PR 16 — is a **later-cleanup item, sequenced after 16, not part of the initial reorder batch**.
+- *Cross-link wiring into the Expressions section is PR 18*, sequenced after 15/16: it adds inbound links from the already-shipped Built-in types and Null safety articles once both Expressions articles are live. Relational-patterns→relational-operators and Expressions-overview→switch-expression links are owned by PRs 20 and 19 respectively (they land with the patterns-side content).

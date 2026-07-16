@@ -137,6 +137,76 @@ Sections without task-style articles don't get a `common-tasks/` subfolder.
 
 **Origin:** Adopted in [PR 11 (#53991)](https://github.com/dotnet/docs/pull/53991), which moved `search.md` and `split.md` under `fundamentals/strings/common-tasks/`, relocated `resolve-warnings.md` to `fundamentals/null-safety/common-tasks/`, and moved the NRT tutorial to the flat `fundamentals/tutorials/` folder.
 
+### Decision 12: Expressions and operators section
+
+**Choice:** Add a dedicated **Expressions and operators (§12)** section, positioned per the C#
+standard **after Pattern matching (§11) and before Statements (§13)**. It has two concept articles:
+an overview + operator-precedence article (`fundamentals/expressions/index.md`) and an operators
+article (`fundamentals/expressions/operators.md`).
+
+**Rationale:** §12 is the largest clause in the standard, but the earlier plan had no home for the
+core operator set — arithmetic (`+ - * / %`), unary (`+ - !`), increment/decrement (`++ --`),
+relational (`< > <= >=`), equality operators (`== !=`), conditional-logical (`&& ||`), the
+conditional operator (`?:`), operator precedence/associativity, and simple + compound assignment.
+These pass both fit-test filters (universal and beginner-accessible), so they belong in Fundamentals.
+The section is sequenced before Statements because expressions are the building blocks that
+statements compose, matching §12 → §13.
+
+**Scope boundary (excluded → Language Reference, cross-linked):** shift operators (`<< >> >>>`,
+§12.13), integer/bitwise logical operators (`& | ^ ~`, §12.15/§12.9.5), and `checked`/`unchecked`
+(§12.8.20) are too niche for everyday code (fail Filter A). They stay in the Language Reference; the
+new articles cross-link out. The equality *operators* get a survey slot here, but equality
+*semantics* stay in **Type system > Reference vs. value equality** (`fundamentals/types/equality.md`),
+cross-linked rather than duplicated. The conditional `?:` operator is taught here; trimming its
+mention in the merged Selection-statements article is a **deferred later-cleanup item**.
+
+**Ordering (Option A):** The Fundamentals section order mirrors the standard where content belongs
+to a clause: Program structure → Type system → Null safety → Strings → **Pattern matching (§11)** →
+**Expressions and operators (§12)** → **Statements (§13)** → Functional techniques → Namespaces →
+OOP → Async → Exceptions → Attributes → XML docs → Coding style. Pattern-matching articles move to a
+`fundamentals/patterns/` folder (their own §11 section) instead of `fundamentals/functional/`.
+
+**§12 coverage map (for the authors of the two new articles).** §12 is the standard's largest clause
+and its subclauses are scattered across already-merged sections; the two new articles own only the
+gap. Use this map to avoid duplicating covered material and to wire cross-links to the existing homes.
+
+*Write in the new Expressions articles (the gap — nothing owns these today):* operator precedence &
+associativity + evaluation order (§12.4.2); arithmetic `+ - * / %` (§12.12); unary `+ - !`
+(§12.9.2–4); increment/decrement `++ --` (§12.8.16, §12.9.7); relational `< > <= >=` (§12.14.1–4);
+equality-operator survey `== !=` (§12.14.5–11); conditional-logical `&& ||` with short-circuiting
+(§12.16); conditional operator `?:` (§12.20, re-homed from Selection statements); simple + compound
+assignment `= += -= *= /= %=` (§12.23.2/.5).
+
+*Already covered elsewhere (cross-link, do not re-teach):* literals/`default`/`new`
+(§12.8.2/.17/.21 → Type system > Built-in types); interpolated strings (§12.8.3 → Strings);
+`nameof` (§12.8.23 → Strings); tuple literals (§12.8.6 → Type system > Tuples); null-conditional
+`?.`/`?[]` and null-coalescing `??`/`??=` (§12.8.8/.11/.13, §12.17 → Null safety > Null operators);
+null-forgiving `!` (§12.8.9 → Null safety > NRT); cast/`as` (§12.9.8, §12.14.13 → Type system >
+Conversions); index-from-end `^` and range `..` (§12.9.6, §12.10 → Collections / Indexers); `await`
+(§12.9.9 → Async); switch expression (§12.11 → Pattern matching, §11); `is` (§12.14.12 → Pattern
+matching); throw expression (§12.18 → Exceptions); lambdas (§12.21 → Delegates / Functional); query
+expressions/LINQ (§12.22 → Statements > LINQ); deconstructing assignment (§12.23.3 → Patterns >
+Deconstruction); event assignment (§12.23.6 → OOP > Events). Equality *semantics* (`Equals`,
+`IEquatable<T>`, record equality) stay in **Type system > Reference vs. value equality**; the new
+survey cross-links to it.
+
+*Excluded from Fundamentals (Q6 — stay in Language Reference, cross-link out only):* shift
+`<< >> >>>` (§12.13); integer/bitwise logical `& | ^` and complement `~` (§12.15, §12.9.5);
+`checked`/`unchecked` (§12.8.20).
+
+### Decision 12b: Consolidate Namespaces (§14) to one canonical article
+
+**Choice:** The standalone **Namespaces (§14)** article (`fundamentals/namespaces/overview.md`,
+article #100) is the canonical §14 home. The shipped Program-structure article
+`fundamentals/program-structure/namespaces.md` (article #4) is slimmed to a brief intro +
+cross-reference to #100.
+
+**Rationale:** §14 Namespaces is its own clause, distinct from §7 program structure, and the two
+articles duplicated file-scoped namespaces, global/static `using`, and aliases. Consolidating removes
+the overlap and keeps Program structure focused on §7. Because the program-structure article is
+already published, the slim requires a redirect (if any URL changes) and a repo-wide inbound-link fix
+per the build-clean rule.
+
 ## Feature Coverage Decisions
 
 The following categorization is based on the [Roslyn Feature Status](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) and the
@@ -218,7 +288,8 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Properties, Indexers | C# 1 | OOP > Properties, Indexers |
 | Reference parameters (`ref`/`out`) | C# 1 | OOP > Methods |
 | `params` arrays | C# 1 | OOP > Methods |
-| Expressions | C# 1 | Throughout |
+| Expressions | C# 1 | Expressions and operators |
+| Operators (arithmetic, relational, equality, logical, conditional, assignment) | C# 1 | Expressions and operators |
 | Selection statements (`if`/`else`, `switch`) | C# 1 | Statements |
 | Iteration statements (`for`, `foreach`, `while`, `do`-`while`) | C# 1 | Statements |
 | `using` statement | C# 1 | OOP > Object lifetime |
@@ -360,7 +431,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 1 | Overview | 🟡 Revise | Add file-scoped namespaces, global usings as default style. Distinguish the uses of file-based apps, top-level statements / project-based apps, and `Main`-style project-based apps. |
 | 2 | Main method and entry points | ✅ Exists | Include async Main (C# 7.1). Include file-based apps |
 | 3 | Top-level statements | ✅ Exists | Mention file-local types (C# 11) as helpers |
-| 4 | Namespaces and using directives | 📝 New | File-scoped namespaces (C# 10), global usings (C# 10), static using (C# 6), type/namespace aliases (subset). Link to information about implicit usings in the SDK section. |
+| 4 | Namespaces and using directives | 📝 New | *Slimmed to a brief intro + cross-reference* per [Decision 12b](#decision-12-expressions-and-operators-section): the canonical §14 treatment lives in the standalone [Namespaces (§14)](#namespaces-14) section (article #100). This article keeps a short intro to file-scoped namespaces and using directives in the context of program structure and links to #100. Needs a redirect + repo-wide inbound-link fix (shipped article). |
 | 5 | Preprocessor directives | 📝 New | `#if`, `#region`, `#nullable`, `#pragma warning` only |
 | 67 | Tutorial: Build file-based apps | ✅ Exists | |
 | 68 | Tutorial: Display command-line arguments | ✅ Exists | Consider a top-level statements pivot, and a file-based apps pivot. File-based apps pivot should be the default. |
@@ -417,17 +488,11 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 31 | Compare strings | 📥 Pull | From how-to. Lives under `strings/common-tasks/`. |
 | 76 | Tutorial: Explore string interpolation | 📥 Pull from Tutorials | |
 
-### Statements and expressions (§12–§13)
-
-| # | Article | Status | Notes |
-|---|---|---|---|
-| 83 | Selection statements | 📝 New | `if`/`else` branching, `switch` statement, ternary conditional operator; links to pattern matching for `switch` expressions |
-| 84 | Iteration statements | 📝 New | `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops |
-| 85 | Working with collections | 📝 New | Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12) including spread elements (`..`) to compose sequences; ranges and indexes (C# 8) applied to collections |
-| 86 | LINQ and query expressions | 📝 New | Query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios |
-| 99 | Reference vs. value equality | 📝 New | Value equality vs. reference equality; `Equals`, `==`, `ReferenceEquals`; struct vs. class defaults; `IEquatable<T>`; record equality semantics |
-
 ### Pattern matching (§11)
+
+Sequenced before Expressions (§12) and Statements (§13) to mirror the C# standard's clause order
+(§11 → §12 → §13). Pattern-matching articles live under `fundamentals/patterns/` (their own §11
+section), not under `fundamentals/functional/`.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
@@ -441,6 +506,34 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 34 | Deconstruction | 🟡 Revise | Records, tuples, custom `Deconstruct` |
 | 73 | Tutorial: Explore pattern matching | 📥 Pull from Tutorials | |
 | 78 | Tutorial: Build data-driven algorithms with pattern matching | ✅ Exists | |
+
+### Expressions and operators (§12)
+
+Fills the §12 operator gap (see [Decision 12](#decision-12-expressions-and-operators-section)).
+Sequenced before Statements (§13) per the standard. Articles live under `fundamentals/expressions/`.
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 102 | Overview and operator precedence | 📝 New | What an expression is; expression vs. statement; expression classifications (value vs. variable); operands and operators; the operator precedence and associativity table; evaluation order and side effects. Cross-links to switch expression (Pattern matching) and LINQ (Statements). |
+| 103 | Arithmetic, comparison, logical, and assignment operators | 📝 New | Arithmetic (`+ - * / %`), unary (`+ - !`), increment/decrement (`++ --`), relational (`< > <= >=`), equality operators (`== !=`, survey; cross-link to Reference vs. value equality for semantics), conditional-logical (`&& ||` with short-circuiting), the conditional operator (`?:`, §12.20), simple and compound assignment (`= += -= *= /= %=`) |
+
+> *Excluded from Fundamentals (stay in Language Reference, cross-linked out):* shift operators
+> (`<< >> >>>`, §12.13), integer/bitwise logical operators (`& | ^ ~`, §12.15/§12.9.5), and
+> `checked`/`unchecked` (§12.8.20). They fail Filter A universality for everyday code.
+
+### Statements (§13)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 83 | Selection statements | 📝 New | `if`/`else` branching, `switch` statement, ternary conditional operator; links to pattern matching for `switch` expressions |
+| 84 | Iteration statements | 📝 New | `for`, `foreach`, `while`, `do`-`while`; iterating collections; `break` and `continue` in loops |
+| 85 | Working with collections | 📝 New | Arrays, `List<T>`, `Dictionary<K,V>`; adding, removing, and searching elements; collection expressions (C# 12) including spread elements (`..`) to compose sequences; ranges and indexes (C# 8) applied to collections |
+| 86 | LINQ and query expressions | 📝 New | Query syntax, fluent (method) syntax, common operators (`Where`, `Select`, `OrderBy`, `GroupBy`); lambda expressions in LINQ context; link to LINQ Focus section for advanced scenarios |
+| 99 | Reference vs. value equality | 📝 New | Value equality vs. reference equality; `Equals`, `==`, `ReferenceEquals`; struct vs. class defaults; `IEquatable<T>`; record equality semantics. Stays in the Type system area (file `fundamentals/types/equality.md`); cross-linked from the Expressions equality-operator survey. |
+
+> *Note:* the conditional `?:` operator is taught in the Expressions and operators section (§12.20).
+> Trimming the `ternary conditional operator` mention in Selection statements to a cross-reference is
+> a **deferred later-cleanup item**, not part of this reorder batch.
 
 ### Functional techniques (§12)
 
@@ -456,7 +549,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 100 | Namespaces | 📝 New | Motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; nested namespaces. Complements OOP section's structural concepts. |
+| 100 | Namespaces | 📝 New | **Canonical §14 article** (Decision 12b). Motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; `extern alias` mention; nested namespaces. The Program-structure "Namespaces and using directives" article (#4) is slimmed to a brief intro + link here. |
 
 ### Object-oriented programming (§15)
 
@@ -531,9 +624,9 @@ The following outline shows every article in the proposed Fundamentals section, 
 |---|---|---|
 | ✅ Exists, no change needed | 19 | Exceptions, Coding style, some Tutorials, some Program structure |
 | 🟡 Revise existing article | 9 | Structure overview, Records, Pattern matching overview, Deconstruction, Functional overview, OOP overview, Inheritance merge |
-| 📝 New article to write | 41 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, Documentation generation tools, Design alternatives, Using .NET analyzers, System.CommandLine tutorial, Choosing-types tutorial, Declaration/constant/var patterns, Type patterns, Property/positional patterns, Relational/logical patterns, List patterns, Functional techniques tutorial, Organizing programs, Reference vs. value equality, Namespaces, and others |
+| 📝 New article to write | ~43 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, **Expressions overview + operator precedence, Arithmetic/comparison/logical/assignment operators**, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, Documentation generation tools, Design alternatives, Using .NET analyzers, System.CommandLine tutorial, Choosing-types tutorial, Declaration/constant/var patterns, Type patterns, Property/positional patterns, Relational/logical patterns, List patterns, Functional techniques tutorial, Organizing programs, Reference vs. value equality, Namespaces, and others |
 | 📥 Pull and revise from other section | 22 | From Programming Guide, Concepts, How-to, Tutorials, Async section |
-| **Total** | **~91** | Not including potential article splits |
+| **Total** | **~93** | Not including potential article splits |
 
 ## Content Sources for Pull Articles
 
@@ -603,7 +696,9 @@ The following is the complete proposed TOC:
     - name: Top-level statements
       href: fundamentals/program-structure/top-level-statements.md
     - name: Namespaces and using directives
-      # NEW: file-scoped namespaces, global usings, static using, type aliases (subset)
+      # SLIMMED (Decision 12b): brief intro + cross-reference to the canonical
+      # §14 Namespaces article (fundamentals/namespaces/overview.md).
+      # Redirect + repo-wide inbound-link fix required (shipped article).
       href: fundamentals/program-structure/namespaces.md
     - name: Preprocessor directives
       # NEW: #if, #region, #nullable, #pragma warning only
@@ -748,12 +843,70 @@ The following is the complete proposed TOC:
       # PULL from current Tutorials section
       href: fundamentals/tutorials/string-interpolation.md
 
-  # ─── §12–§13 Statements and expressions ───
-  - name: Statements and expressions
+  # ─── §11 Patterns and pattern matching ───
+  # Sequenced before §12/§13 per the standard. Articles live under fundamentals/patterns/.
+  - name: Pattern matching
+    items:
+    - name: Overview
+      # REVISE: high-level intro to pattern matching and switch expressions (C# 8).
+      # Motivate when/why to use patterns vs. imperative branching.
+      href: fundamentals/patterns/pattern-matching.md
+    - name: Declaration, constant, and var patterns
+      # NEW: declaration patterns, constant patterns, var patterns
+      href: fundamentals/patterns/declaration-constant-var-patterns.md
+    - name: Type patterns
+      # NEW: type-testing patterns, pattern matching with generics (C# 7.1)
+      href: fundamentals/patterns/type-patterns.md
+    - name: Property and positional patterns
+      # NEW: property patterns (C# 8), extended property (C# 10),
+      # positional patterns (C# 8)
+      href: fundamentals/patterns/property-positional-patterns.md
+    - name: Relational and logical patterns
+      # NEW: relational patterns, and/or/not combinators,
+      # parenthesized patterns (C# 9)
+      href: fundamentals/patterns/relational-logical-patterns.md
+    - name: List patterns
+      # NEW: list patterns (C# 11), slice patterns
+      href: fundamentals/patterns/list-patterns.md
+    - name: Discards
+      # EXISTS: keep or merge into pattern matching
+      href: fundamentals/patterns/discards.md
+    - name: Deconstruction
+      # REVISE: records, tuples, custom Deconstruct;
+      # mixed deconstructions (C# 10—use without explanation)
+      href: fundamentals/patterns/deconstruct.md
+    - name: "Tutorial: Explore pattern matching"
+      # PULL from current Tutorials section
+      href: fundamentals/tutorials/pattern-matching.md
+    - name: "Tutorial: Build data-driven algorithms with pattern matching"
+      href: fundamentals/tutorials/pattern-matching-advanced.md
+
+  # ─── §12 Expressions and operators ───
+  # NEW section (Decision 12). Fills the §12 operator gap; before §13 Statements.
+  - name: Expressions and operators
+    items:
+    - name: Overview and operator precedence
+      # NEW: expression vs. statement, expression classifications,
+      # operator precedence and associativity, evaluation order.
+      # Cross-links to switch expression (Pattern matching) and LINQ (Statements).
+      href: fundamentals/expressions/index.md
+    - name: Arithmetic, comparison, logical, and assignment operators
+      # NEW: arithmetic (+ - * / %), unary (+ - !), increment/decrement (++ --),
+      # relational (< > <= >=), equality operators (== !=; cross-link to
+      # Reference vs. value equality), conditional-logical (&& || short-circuit),
+      # conditional operator (?:), simple + compound assignment (= += -= ...).
+      # EXCLUDED (stay in Language Reference, cross-linked): shift (<< >> >>>),
+      # bitwise (& | ^ ~), checked/unchecked.
+      href: fundamentals/expressions/operators.md
+
+  # ─── §13 Statements ───
+  - name: Statements
     items:
     - name: Selection statements
       # NEW: if/else branching, switch statement, ternary conditional;
-      # links to pattern matching for switch expressions
+      # links to pattern matching for switch expressions.
+      # (Deferred cleanup: trim the ?: mention to a cross-reference to
+      # Expressions and operators §12.20 — not part of this batch.)
       href: fundamentals/statements/selection-statements.md
     - name: Iteration statements
       # NEW: for, foreach, while, do-while; iterating collections;
@@ -770,45 +923,9 @@ The following is the complete proposed TOC:
       href: fundamentals/statements/linq.md
     - name: Reference vs. value equality
       # NEW: value vs reference equality, Equals, ==, ReferenceEquals,
-      # struct vs class defaults, IEquatable<T>, record equality
+      # struct vs class defaults, IEquatable<T>, record equality.
+      # Stays in Type system area; cross-linked from Expressions operator survey.
       href: fundamentals/types/equality.md
-
-  # ─── §11 Patterns and pattern matching ───
-  - name: Pattern matching
-    items:
-    - name: Overview
-      # REVISE: high-level intro to pattern matching and switch expressions (C# 8).
-      # Motivate when/why to use patterns vs. imperative branching.
-      href: fundamentals/functional/pattern-matching.md
-    - name: Declaration, constant, and var patterns
-      # NEW: declaration patterns, constant patterns, var patterns
-      href: fundamentals/functional/declaration-constant-var-patterns.md
-    - name: Type patterns
-      # NEW: type-testing patterns, pattern matching with generics (C# 7.1)
-      href: fundamentals/functional/type-patterns.md
-    - name: Property and positional patterns
-      # NEW: property patterns (C# 8), extended property (C# 10),
-      # positional patterns (C# 8)
-      href: fundamentals/functional/property-positional-patterns.md
-    - name: Relational and logical patterns
-      # NEW: relational patterns, and/or/not combinators,
-      # parenthesized patterns (C# 9)
-      href: fundamentals/functional/relational-logical-patterns.md
-    - name: List patterns
-      # NEW: list patterns (C# 11), slice patterns
-      href: fundamentals/functional/list-patterns.md
-    - name: Discards
-      # EXISTS: keep or merge into pattern matching
-      href: fundamentals/functional/discards.md
-    - name: Deconstruction
-      # REVISE: records, tuples, custom Deconstruct;
-      # mixed deconstructions (C# 10—use without explanation)
-      href: fundamentals/functional/deconstruct.md
-    - name: "Tutorial: Explore pattern matching"
-      # PULL from current Tutorials section
-      href: fundamentals/tutorials/pattern-matching.md
-    - name: "Tutorial: Build data-driven algorithms with pattern matching"
-      href: fundamentals/tutorials/pattern-matching-advanced.md
 
   # ─── §12 Expressions / Functional techniques ───
   - name: Functional techniques
@@ -839,8 +956,9 @@ The following is the complete proposed TOC:
   - name: Namespaces
     items:
     - name: Organizing code with namespaces
-      # NEW: motivation for namespaces, declaring, file-scoped (C# 10),
-      # using directives, aliases, nested namespaces
+      # CANONICAL §14 article (Decision 12b): motivation for namespaces, declaring,
+      # file-scoped (C# 10), using directives, aliases, extern alias, nested namespaces.
+      # The program-structure namespaces article is slimmed to a brief intro + link here.
       href: fundamentals/namespaces/overview.md
 
   # ─── §15 Classes / OOP ───

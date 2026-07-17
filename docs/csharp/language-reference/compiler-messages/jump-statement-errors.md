@@ -64,9 +64,6 @@ To resolve these errors:
 - When you write a labeled `break` (`break label;`), apply the same label to an enclosing loop or `switch` statement. The label must name a loop or `switch` that contains the `break` statement (**CS9393**).
 - When you write a labeled `continue` (`continue label;`), apply the same label to an enclosing loop. A labeled `continue` can target only a loop, not a `switch` statement, because `continue` starts the next loop iteration (**CS9394**).
 
-> [!NOTE]
-> CS9393 and CS9394 are planned for C# 15, and labeled `break` and `continue` aren't available in public builds yet. Labeled `break` and `continue` let a statement in a nested loop target a specific enclosing loop or `switch` statement by name, which replaces the need for a `goto` statement or a flag variable. You apply a label to the target loop or `switch` statement, then reference that label in the `break` or `continue` statement, as in `outer: for (...) { ... break outer; }`. For more information about this feature, see the [labeled break and continue proposal](https://github.com/dotnet/csharplang/blob/main/proposals/labeled-break-continue.md).
-
 For more information about these statements, see [The `break` statement](../statements/jump-statements.md#the-break-statement) and [The `continue` statement](../statements/jump-statements.md#the-continue-statement) in the jump statements article.
 
 ## Goto statement targets

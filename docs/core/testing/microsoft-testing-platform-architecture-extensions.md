@@ -423,7 +423,7 @@ internal sealed class CoverageReportProducer(IMessageBus messageBus)
 }
 ```
 
-To attach a file to a *specific test* so that the terminal, `dotnet test`, and IDEs associate and display it with that test, don't publish a stand-alone file artifact. Instead, add one or more `FileArtifactProperty` entries to the `TestNode` that your [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) reports through a [`TestNodeUpdateMessage`](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data). `FileArtifactProperty` was introduced in MTP 1.7.0:
+To attach a file to a *specific test* so that the terminal, `dotnet test`, and IDEs associate and display it with that test, don't publish a standalone file artifact. Instead, add one or more `FileArtifactProperty` entries to the `TestNode` that your [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) reports through a [`TestNodeUpdateMessage`](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data). `FileArtifactProperty` was introduced in MTP 1.7.0:
 
 ```csharp
 var testNode = new TestNode

@@ -3,7 +3,7 @@ title: Build extensions for Microsoft.Testing.Platform (MTP)
 description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 06/16/2026
+ms.date: 07/17/2026
 ai-usage: ai-assisted
 ---
 
@@ -150,9 +150,9 @@ Please note that the `ValidateCommandLineOptionsAsync` method provides the [`ICo
 
 ### The `ITestSessionLifetimeHandler` extensions
 
-The `ITestSessionLifeTimeHandler` is an *in-process* extension that enables the execution of code *before* and *after* the test session.
+The `ITestSessionLifetimeHandler` is an *in-process* extension that enables the execution of code *before* and *after* the test session.
 
-To register a custom `ITestSessionLifeTimeHandler`, utilize the following API:
+To register a custom `ITestSessionLifetimeHandler`, utilize the following API:
 
 ```csharp
 var builder = await TestApplication.CreateBuilderAsync(args);
@@ -160,7 +160,7 @@ var builder = await TestApplication.CreateBuilderAsync(args);
 // ...
 
 builder.TestHost.AddTestSessionLifetimeHandle(
-    static serviceProvider => new CustomTestSessionLifeTimeHandler());
+    static serviceProvider => new CustomTestSessionLifetimeHandler());
 ```
 
 The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
@@ -168,18 +168,21 @@ The factory utilizes the [IServiceProvider](./microsoft-testing-platform-archite
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
 
-The `ITestSessionLifeTimeHandler` interface includes the following methods:
+The `ITestSessionLifetimeHandler` interface includes the following methods:
 
 ```csharp
 public interface ITestSessionLifetimeHandler : ITestHostExtension
 {
-    Task OnTestSessionStartingAsync(
-        SessionUid sessionUid,
-        CancellationToken cancellationToken);
+    Task OnTestSessionStartingAsync(ITestSessionContext testSessionContext);
 
-    Task OnTestSessionFinishingAsync(
-        SessionUid sessionUid,
-        CancellationToken cancellationToken);
+    Task OnTestSessionFinishingAsync(ITestSessionContext testSessionContext);
+}
+
+public interface ITestSessionContext
+{
+    SessionUid SessionUid { get; }
+
+    CancellationToken CancellationToken { get; }
 }
 
 public readonly struct SessionUid(string value)
@@ -192,15 +195,18 @@ public interface ITestHostExtension : IExtension
 }
 ```
 
+> [!IMPORTANT]
+> In MTP 2.0.0, both methods changed to take a single `ITestSessionContext` parameter that exposes the `SessionUid` and the `CancellationToken`. In MTP 1.x, each method took a separate `SessionUid` and `CancellationToken` argument. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#api-signature-changes).
+
 The `ITestSessionLifetimeHandler` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 Consider the following details for this API:
 
-`OnTestSessionStartingAsync`: This method is invoked prior to the commencement of the test session and receives the `SessionUid` object, which provides an opaque identifier for the current test session.
+`OnTestSessionStartingAsync`: This method is invoked prior to the commencement of the test session and receives the `ITestSessionContext`, whose `SessionUid` provides an opaque identifier for the current test session.
 
 `OnTestSessionFinishingAsync`: This method is invoked after the completion of the test session, ensuring that the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) has finished executing all tests and has reported all relevant data to the platform. Typically, in this method, the extension employs the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to transmit custom assets or data to the shared platform bus. This method can also signal to any custom *out-of-process* extension that the test session has concluded.
 
-Finally, both APIs take a `CancellationToken` which the extension is expected to honor.
+Finally, the `ITestSessionContext` exposes a `CancellationToken` which the extension is expected to honor.
 
 If your extension requires intensive initialization and you need to use the async/await pattern, you can refer to the [`Async extension initialization and cleanup`](#asynchronous-initialization-and-cleanup-of-extensions). If you need to *share state* between extension points, you can refer to the [`CompositeExtensionFactory<T>`](#the-compositeextensionfactoryt) section.
 
@@ -257,7 +263,7 @@ Finally, both APIs take a `CancellationToken` which the extension is expected to
 
 ### The `IDataConsumer` extensions
 
-The `IDataConsumer` is an *in-process* extension capable of subscribing to and receiving `IData` information that is pushed to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) and its extensions.
+The `IDataConsumer` is an *in-process* extension capable of subscribing to and receiving `IData` information that is published to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) and its extensions.
 
 *This extension point is crucial as it enables developers to gather and process all the information generated during a test session.*
 
@@ -280,7 +286,7 @@ The factory utilizes the [IServiceProvider](./microsoft-testing-platform-archite
 The `IDataConsumer` interface includes the following methods:
 
 ```csharp
-public interface IDataConsumer : ITestHostExtension
+public interface IDataConsumer : IExtension
 {
     Type[] DataTypesConsumed { get; }
 
@@ -297,11 +303,14 @@ public interface IData
 }
 ```
 
-The `IDataConsumer` is a type of `ITestHostExtension`, which serves as a base for all *test host* extensions. Like all other extension points, it also inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
+> [!IMPORTANT]
+> In MTP 2.0.0, `IDataConsumer` moved to the `Microsoft.Testing.Platform.Extensions` namespace and now extends [`IExtension`](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface) directly. In MTP 1.x, it extended `ITestHostExtension`. You still register it with `builder.TestHost.AddDataConsumer(...)`. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#api-signature-changes).
+
+The `IDataConsumer` inherits from [IExtension](./microsoft-testing-platform-architecture-test-framework.md#the-iextension-interface). Therefore, like any other extension, you can choose to enable or disable it using the `IExtension.IsEnabledAsync` API.
 
 `DataTypesConsumed`: This property returns a list of `Type` that this extension plans to consume. It corresponds to `IDataProducer.DataTypesProduced`. Notably, an `IDataConsumer` can subscribe to multiple types originating from different `IDataProducer` instances without any issues.
 
-`ConsumeAsync`: This method is triggered whenever data of a type to which the current consumer is subscribed is pushed onto the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service). It receives the `IDataProducer` to provide details about the data payload's producer, as well as the `IData` payload itself. As you can see, `IData` is a generic placeholder interface that contains general informative data. The ability to push different types of `IData` implies that the consumer needs to *switch* on the type itself to cast it to the correct type and access the specific information.
+`ConsumeAsync`: This method is triggered whenever data of a type to which the current consumer is subscribed is published to the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service). It receives the `IDataProducer` to provide details about the data payload's producer, as well as the `IData` payload itself. As you can see, `IData` is a generic placeholder interface that contains general informative data. The ability to publish different types of `IData` implies that the consumer needs to *switch* on the type itself to cast it to the correct type and access the specific information.
 
 A sample implementation of a consumer that wants to elaborate the [`TestNodeUpdateMessage`](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data) produced by a [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) could be:
 
@@ -351,14 +360,105 @@ internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
 Finally, the API takes a `CancellationToken` which the extension is expected to honor.
 
 > [!IMPORTANT]
-> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to future requirements. However, the platform ensures that this method is always called once, eliminating the need for complex synchronization, as well as managing the scalability of the consumers.
+> Process the payload directly within the `ConsumeAsync` method. A regular `IDataConsumer` consumes data asynchronously: the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) queues each published payload and processes it on a background loop, so `IMessageBus.PublishAsync` doesn't block the producer, and there's no guarantee about when `ConsumeAsync` runs relative to the producer continuing its work. The platform serializes delivery so that only one payload is processed at a time per consumer, which eliminates the need for complex synchronization within a single consumer.
+
+<!-- avoid "No space in block quote" block quotes follow each other -->
+
+> [!NOTE]
+> For scenarios that need a guarantee that consumption happens before the producer proceeds (for example, before a test starts running), MTP 2.3.0 introduced the experimental `IBlockingDataConsumer` marker interface (requires the `TPEXP` diagnostic to be suppressed). A consumer that also implements `IBlockingDataConsumer` is invoked *inline* by the message bus: calls are serialized, `PublishAsync` blocks until `ConsumeAsync` completes, and any exception thrown by `ConsumeAsync` propagates back to the producer that published the data. The message bus skips delivering a producer's data back to that same producer (same UID), so publishing under your own UID is safe. However, a blocking consumer must not, from within `ConsumeAsync`, publish data that is routed back to itself under a *different* producer UID, because that reentrancy would deadlock.
 
 <!-- avoid "No space in block quote" block quotes follow each other -->
 
 > [!WARNING]
-> When using `IDataConsumer` in conjunction with [ITestHostProcessLifetimeHandler](#the-itestsessionlifetimehandler-extensions) within a [composite extension point](#the-compositeextensionfactoryt), **it's crucial to disregard any data received post the execution of [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions)**. The `OnTestSessionFinishingAsync` is the final opportunity to process accumulated data and transmit new information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service), hence, any data consumed beyond this point will not be *utilizable* by the extension.
+> When using `IDataConsumer` in conjunction with [ITestSessionLifetimeHandler](#the-itestsessionlifetimehandler-extensions) within a [composite extension point](#the-compositeextensionfactoryt), **it's crucial to disregard any data received post the execution of [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions)**. The `OnTestSessionFinishingAsync` is the final opportunity to process accumulated data and transmit new information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service), hence, any data consumed beyond this point will not be *utilizable* by the extension.
 
 If your extension requires intensive initialization and you need to use the async/await pattern, you can refer to the [`Async extension initialization and cleanup`](#asynchronous-initialization-and-cleanup-of-extensions). If you need to *share state* between extension points, you can refer to the [`CompositeExtensionFactory<T>`](#the-compositeextensionfactoryt) section.
+
+### Message bus file artifacts
+
+A custom `IData` payload has no automatic UI or command-line output. The platform only surfaces data for which a matching consumer is registered, so if you publish your own `IData` type and nothing consumes it, nothing is printed or forwarded. To make files that your extension produces visible to users and tooling, publish one of the built-in file artifact messages, which the built-in *terminal* and *dotnet test* consumers already recognize.
+
+For run-level or session-level files, publish a `FileArtifact` or a `SessionFileArtifact`. Both were introduced in MTP 1.0.0 and live in the `Microsoft.Testing.Platform.Extensions.Messages` namespace:
+
+- `FileArtifact` is unscoped. Use it for a file that isn't tied to a specific test session.
+- `SessionFileArtifact` is scoped to a run/session through its `SessionUid`. Use it for artifacts produced for the run as a whole, such as coverage results, reports, dumps, or recorded videos.
+
+The built-in terminal and `dotnet test` consumers pick up both types and print or forward the file paths, so the files become discoverable in the console output and across the `dotnet test` pipe. Because consumers control the ultimate presentation, keep each file on disk and available for as long as it might be consumed or forwarded; don't delete it inside the same `PublishAsync` call.
+
+The artifact object itself carries no producer identity. The message bus supplies the originating `IDataProducer` to each consumer through the `dataProducer` argument of `IDataConsumer.ConsumeAsync`, so consumers learn who produced a file from that argument, not from the artifact. The message bus also doesn't take ownership of, move, or delete the referenced file: the producer owns the file's lifetime, and consumers only receive, read, or forward its path.
+
+> [!NOTE]
+> Third-party `IDataConsumer` registration is public only on `builder.TestHost` (the *in-process* test host). There's no public `builder.TestHostControllers.AddDataConsumer` API for *out-of-process* consumers. The first-party report extensions that display artifacts use internal platform integration that custom extensions can't rely on. To surface files from your own extension, publish the built-in artifact messages described here and let the built-in consumers present them.
+
+A producer that publishes a session artifact must implement `IDataProducer` and list the exact runtime message types it publishes in `DataTypesProduced`. The following example publishes a coverage report when the session finishes:
+
+```csharp
+internal sealed class CoverageReportProducer(IMessageBus messageBus)
+    : IDataProducer, ITestSessionLifetimeHandler
+{
+    public string Uid => nameof(CoverageReportProducer);
+    public string Version => "1.0.0";
+    public string DisplayName => "Coverage report producer";
+    public string Description => "Publishes the coverage report as a session artifact.";
+
+    // List the exact runtime message types this producer publishes.
+    public Type[] DataTypesProduced => new[] { typeof(SessionFileArtifact) };
+
+    public Task<bool> IsEnabledAsync() => Task.FromResult(true);
+
+    public Task OnTestSessionStartingAsync(ITestSessionContext context)
+        => Task.CompletedTask;
+
+    public Task OnTestSessionFinishingAsync(ITestSessionContext context)
+    {
+        var report = new FileInfo("coverage.cobertura.xml");
+        return messageBus.PublishAsync(
+            this,
+            new SessionFileArtifact(
+                context.SessionUid,
+                report,
+                "Code coverage",
+                "Cobertura coverage report for the run."));
+    }
+}
+```
+
+To attach a file to a *specific test* so that the terminal, `dotnet test`, and IDEs associate and display it with that test, don't publish a stand-alone file artifact. Instead, add one or more `FileArtifactProperty` entries to the `TestNode` that your [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) reports through a [`TestNodeUpdateMessage`](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data). `FileArtifactProperty` was introduced in MTP 1.7.0:
+
+```csharp
+var testNode = new TestNode
+{
+    Uid = testUid,
+    DisplayName = testDisplayName,
+    Properties = new PropertyBag(
+        PassedTestNodeStateProperty.CachedInstance,
+        new FileArtifactProperty(
+            new FileInfo("screenshot.png"),
+            "Failure screenshot",
+            "Screenshot captured while the test ran.")),
+};
+
+await messageBus.PublishAsync(
+    dataProducer,
+    new TestNodeUpdateMessage(sessionUid, testNode));
+```
+
+> [!IMPORTANT]
+> `TestNodeFileArtifact` is obsolete and was removed in MTP 2.0.0. Use `FileArtifactProperty` on the `TestNode` to attach test-level files. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#removed-obsolete-types).
+
+> [!NOTE]
+> MTP 2.4.0 (unreleased as of July 2026) adds an experimental `kind` constructor overload and `Kind` property to `FileArtifact` and `SessionFileArtifact` (requires the `TPEXP` diagnostic to be suppressed). `Kind` is a producer-asserted, reverse-DNS identifier of the artifact *format* (for example, `microsoft.testing.trx`, `microsoft.testing.junit`, `microsoft.testing.ctrf`, or `microsoft.testing.html`) that post-processing can use to group artifacts of the same format for consolidation. Leave it `null` or omit it when the producer doesn't declare a known kind. At this time, `Kind` is only a metadata contract; don't assume broad merge orchestration beyond that.
+>
+> ```csharp
+> #pragma warning disable TPEXP // Experimental API.
+> new SessionFileArtifact(
+>     context.SessionUid,
+>     trxFile,
+>     "TRX report",
+>     "Test results in TRX format.",
+>     kind: "microsoft.testing.trx");
+> #pragma warning restore TPEXP
+> ```
 
 ### The `ITestHostEnvironmentVariableProvider` extensions
 
@@ -687,3 +787,6 @@ The following combinations are possible:
 
 * For `ITestApplicationBuilder.TestHost`, you can combine `IDataConsumer` and `ITestSessionLifetimeHandler`.
 * For `ITestApplicationBuilder.TestHostControllers`, you can combine `ITestHostEnvironmentVariableProvider` and `ITestHostProcessLifetimeHandler`.
+
+> [!NOTE]
+> `IDataConsumer` is an *in-process* extension, so custom consumers are registered only through `builder.TestHost` (including via `CompositeExtensionFactory<T>`). There's no public API to register an `IDataConsumer` on `builder.TestHostControllers`.

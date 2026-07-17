@@ -69,7 +69,7 @@ Reading an indexer requires an accessible `get` accessor. Writing an indexer req
 
 Some metadata patterns, especially from COM or other .NET languages, expose indexed properties that C# can't bind with ordinary property or indexer syntax. Supply all required indexed property arguments when the metadata requires them (**CS0856**). When C# requires indexed property arguments to be optional, change the imported member or wrapper so all arguments are optional (**CS0857**).
 
-For unsupported imported properties, indexers, or events, call the generated accessor method directly (**CS1545**, **CS1546**). For example, call `get_Prop(arguments)` or `set_Prop(arguments, value)` instead of using property syntax when the member can't be represented directly in C#.
+For unsupported imported properties, indexers, or events, call the generated accessor method directly from C# source when the accessor itself is callable (**CS1545**, **CS1546**). For example, call `get_Prop(arguments)` or `set_Prop(arguments, value)` instead of using property syntax when the member can't be represented directly in C#.
 
 ## Implicit index and range indexers
 
@@ -80,4 +80,10 @@ The compiler can synthesize an indexer for the [index from end (`^`) and range (
 
 ## Related diagnostics
 
-For more information about array indexing and rank, see [Resolve errors and warnings related to array and collection declarations and initializations](array-declaration-errors.md) in C# compiler messages. For more information about argument lists, see [Errors and warnings for parameter / argument mismatches](parameter-argument-mismatch.md) in C# compiler messages. For more information about overload resolution for indexers and element access, see [Fix errors that involve overload resolution](overload-resolution.md) in C# compiler messages. For more information about read-only and init-only properties, see [Compiler Errors on property declarations](property-declaration-errors.md) in C# compiler messages. For more information about dynamic binding, see [Resolve errors related to dynamic binding and the dynamic type](dynamic-type-and-binding-errors.md) in C# compiler messages. For more information about indexer access in expression trees, see [Some expressions are prohibited in expression trees](expression-tree-restrictions.md) in C# compiler messages. For more information about inline array element access, see [Resolve errors related to inline arrays](inline-array-errors.md) in C# compiler messages.
+- For more information about array indexing and rank, see [Resolve errors and warnings related to array and collection declarations and initializations](array-declaration-errors.md) in C# compiler messages.
+- For more information about argument lists, see [Errors and warnings for parameter / argument mismatches](parameter-argument-mismatch.md) in C# compiler messages.
+- For more information about overload resolution for indexers and element access, see [Fix errors that involve overload resolution](overload-resolution.md) in C# compiler messages.
+- For more information about read-only and init-only properties, see [Compiler Errors on property declarations](property-declaration-errors.md) in C# compiler messages.
+- For more information about dynamic binding, see [Resolve errors related to dynamic binding and the dynamic type](dynamic-type-and-binding-errors.md) in C# compiler messages.
+- For more information about indexer access in expression trees, see [Some expressions are prohibited in expression trees](expression-tree-restrictions.md) in C# compiler messages.
+- For more information about inline array element access, see [Resolve errors related to inline arrays](inline-array-errors.md) in C# compiler messages.

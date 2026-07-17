@@ -48,4 +48,7 @@ Field-like events can't be marked `readonly` (**CS8662**). Remove the `readonly`
 
 ## Related diagnostics
 
-For more information about auto-implemented properties in readonly structs, see [Compiler Errors on property declarations](property-declaration-errors.md) in C# compiler messages. That article includes **CS8341**, the third readonly struct declaration rule. For more information about readonly properties, indexers, and accessors, see [Compiler Errors on property declarations](property-declaration-errors.md) in C# compiler messages. For more information about readonly partial declarations, see [Compiler Errors on partial type and member declarations](partial-declarations.md) in C# compiler messages. For more information about readonly types and primary constructors, see [Resolve errors related to constructor declarations and module initializers](constructor-errors.md) in C# compiler messages.
+- For more information about auto-implemented properties in readonly structs, see [Compiler Errors on property declarations](property-declaration-errors.md) in C# compiler messages. That article includes **CS8341**, the third readonly struct declaration rule.
+- For more information about readonly properties, indexers, and accessors, see [Compiler Errors on property declarations](property-declaration-errors.md) in C# compiler messages.
+- For more information about readonly partial declarations, see [Compiler Errors on partial type and member declarations](partial-declarations.md) in C# compiler messages.
+- For more information about readonly types and primary constructors, see [Resolve errors related to constructor declarations and module initializers](constructor-errors.md) in C# compiler messages.

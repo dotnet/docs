@@ -629,6 +629,11 @@ items:
       foreach, await foreach, async enumerable, GetAsyncEnumerator, IAsyncEnumerable,
       CS0202, CS0230, CS0278, CS0279, CS0280, CS0446, CS1579, CS1640, CS8186, CS8412,
       CS8413, CS8414, CS8415, CS8419, CS8420, CS8424, CS8425, CS8426, CS9353
+  - name: Jump statements
+    href: ./compiler-messages/jump-statement-errors.md
+    displayName: >
+      break, continue, goto, return, labeled break, labeled continue,
+      CS0126, CS0127, CS0139, CS0153, CS0159, CS0161, CS0163, CS0469, CS9393, CS9394
   - name: Extension declarations
     href: ./compiler-messages/extension-declarations.md
     displayName: >
@@ -901,10 +906,6 @@ items:
       href: ./compiler-messages/cs0120.md
     - name: CS0122
       href: ./compiler-messages/cs0122.md
-    - name: CS0126
-      href: ../misc/cs0126.md
-    - name: CS0127
-      href: ../misc/cs0127.md
     - name: CS0128
       href: ../misc/cs0128.md
     - name: CS0131
@@ -917,8 +918,6 @@ items:
       href: ../misc/cs0135.md
     - name: CS0136
       href: ../misc/cs0136.md
-    - name: CS0139
-      href: ../misc/cs0139.md
     - name: CS0140
       href: ../misc/cs0140.md
     - name: CS0143
@@ -935,8 +934,6 @@ items:
       href: ./compiler-messages/cs0151.md
     - name: CS0152
       href: ../misc/cs0152.md
-    - name: CS0153
-      href: ../misc/cs0153.md
     - name: CS0154
       href: ../misc/cs0154.md
     - name: CS0155
@@ -947,14 +944,8 @@ items:
       href: ../misc/cs0157.md
     - name: CS0158
       href: ../misc/cs0158.md
-    - name: CS0159
-      href: ../misc/cs0159.md
     - name: CS0160
       href: ../misc/cs0160.md
-    - name: CS0161
-      href: ../misc/cs0161.md
-    - name: CS0163
-      href: ./compiler-messages/cs0163.md
     - name: CS0165
       href: ./compiler-messages/cs0165.md
     - name: CS0167
@@ -1773,8 +1764,6 @@ items:
       href: ../misc/cs0458.md
     - name: CS0464
       href: ../misc/cs0464.md
-    - name: CS0469
-      href: ../misc/cs0469.md
     - name: CS0472
       href: ../misc/cs0472.md
     - name: CS0618

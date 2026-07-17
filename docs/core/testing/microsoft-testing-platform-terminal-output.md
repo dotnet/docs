@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) terminal output
 description: Learn about the built-in terminal test reporter in MTP, including output modes, ANSI support, and progress indicators.
 author: evangelink
 ms.author: amauryleve
-ms.date: 06/16/2026
+ms.date: 07/17/2026
 ai-usage: ai-assisted
 ---
 
@@ -40,6 +40,14 @@ The progress bar is written based on the selected mode:
 
 - ANSI, the progress bar is animated, sticking to the bottom of the screen and is refreshed every 500ms. The progress bar hides once test execution is done.
 - non-ANSI, the progress bar is written to screen as is every 3 seconds. The progress remains in the output.
+
+### Direct console output and progress redraw
+
+To animate the progress bar, the ANSI progress renderer takes control of the terminal cursor and repeatedly redraws the bottom of the screen. Any text that's written directly to `stdout` or `stderr` outside the test framework's capture path can be overwritten or removed during this redraw. For example, a `Console.WriteLine` call from assembly-level or session-level lifecycle code (such as a `Before(Assembly)` or `Before(TestSession)` hook), or from an extension, might flash briefly and then disappear when the progress bar refreshes.
+
+This behavior is distinct from *captured* per-test standard output and error. Text that a test writes while it runs is captured by the framework and shown according to `--show-stdout` and `--show-stderr`, so the animated progress bar doesn't overwrite it.
+
+If your code must write directly to the console and you need that output to remain visible, use `--progress off` to disable the animated progress bar. Alternatively, `--ansi off` switches to the append-only progress renderer, which writes progress as new lines instead of redrawing in place and so doesn't overwrite prior direct output.
 
 ## Options
 

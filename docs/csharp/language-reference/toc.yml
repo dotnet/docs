@@ -484,13 +484,18 @@ items:
       CS1024, CS1025, CS1027, CS1028, CS1029, CS1030, CS1032, CS1038, CS1040, CS1517,
       CS1560, CS1576, CS1578, CS1633, CS1634, CS1635, CS1691, CS1692, CS1694, CS1695,
       CS1696, CS1709, CS9297, CS9298, CS9299, CS9314
+  - name: Parsing C# code
+    href: ./compiler-messages/parsing-errors.md
+    displayName: >
+      parser, lexer, unexpected character, else statement,
+      CS8635, CS8641
   - name: Attribute declaration and usage
     href: ./compiler-messages/attribute-usage-errors.md
     displayName: >
       CS0181, CS0243, CS0404, CS0415, CS0416, CS0447, CS0577, CS0578, CS0579, CS0582,
       CS0592, CS0609, CS0616, CS0625, CS0629, CS0636, CS0637, CS0641, CS0646, CS0647,
       CS0653, CS0657, CS0658, CS0668, CS0685, CS0735, CS0739, CS1608, CS1614, CS1618,
-      CS1667, CS1689, CS7014, CS7046, CS7047, CS7067, CS8783, CS8959, CS8960, CS8961,
+      CS1667, CS1689, CS7014, CS7046, CS7047, CS7067, CS8423, CS8783, CS8959, CS8960, CS8961,
       CS8962, CS8963, CS8968, CS8970, CS9331
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
@@ -546,6 +551,11 @@ items:
       CS8852, CS8853, CS8855, CS8856, CS8903, CS9029, CS9030, CS9031, CS9032, CS9033,
       CS9034, CS9035, CS9036, CS9037, CS9038, CS9039, CS9040, CS9042, CS9045, CS9258,
       CS9263, CS9264, CS9266, CS9273
+  - name: Readonly structs and members
+    href: ./compiler-messages/readonly-struct-errors.md
+    displayName: >
+      readonly struct, readonly member, readonly event, implicit copy,
+      CS8340, CS8342, CS8656, CS8662
   - name: Operator declarations
     href: ./compiler-messages/overloaded-operator-errors.md
     displayName: >
@@ -556,6 +566,11 @@ items:
       CS0562, CS0563, CS0564, CS0567, CS0590, CS0594, CS0652, CS0659, CS0660, CS0661,
       CS0715, CS1021, CS1037, CS1553, CS8761, CS8778, CS8973, CS9023, CS9024, CS9025,
       CS9027, CS9308, CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
+  - name: Indexer and element access
+    href: ./compiler-messages/indexer-access-errors.md
+    displayName: >
+      index, range, Index, Range, indexer, element access, accessor, indexed property,
+      CS0021, CS0154, CS0271, CS0272, CS0856, CS0857, CS1545, CS1546, CS8428, CS8429
   - name: Parameter / argument mismatch
     href: ./compiler-messages/parameter-argument-mismatch.md
     displayName: >
@@ -593,7 +608,7 @@ items:
       interface,
       CS0071, CS0106, CS0277, CS0425, CS0460, CS0470, CS0473, CS0531, CS0535, CS0538,
       CS0539, CS0540, CS0541, CS0550, CS0551, CS0630, CS0686, CS0736, CS0737, CS0738,
-      CS8705, CS8707, CS8711, CS8854, CS9333, CS9334
+      CS8646, CS8705, CS8707, CS8711, CS8854, CS9333, CS9334
   - name: Reference parameters
     href: ./compiler-messages/ref-modifiers-errors.md
     displayName: >
@@ -662,9 +677,10 @@ items:
       CS8597, CS8598, CS8600, CS8601, CS8602, CS8604, CS8605, CS8607, CS8608, CS8609,
       CS8610, CS8611, CS8612, CS8613, CS8614, CS8615, CS8616, CS8617, CS8618, CS8619,
       CS8620, CS8621, CS8622, CS8623, CS8624, CS8625, CS8628, CS8629, CS8631, CS8632,
-      CS8634, CS8636, CS8637, CS8639, CS8655, CS8633, CS8643, CS8644, CS8645, CS8762,
-      CS8763, CS8764, CS8765, CS8766, CS8667, CS8768, CS8670, CS8714, CS8767, CS8769,
-      CS8770, CS8774, CS8776, CS8775, CS8777, CS8819, CS8824, CS8825, CS8847
+      CS8633, CS8634, CS8636, CS8637, CS8639, CS8643, CS8644, CS8645, CS8650, CS8651,
+      CS8655, CS8667, CS8669, CS8670, CS8714, CS8762, CS8763, CS8764, CS8765, CS8766,
+      CS8767, CS8768, CS8769, CS8770, CS8774, CS8775, CS8776, CS8777, CS8819, CS8824,
+      CS8825, CS8847
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
     displayName: >
@@ -704,6 +720,11 @@ items:
       CS1688, CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175,
       CS8820, CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098,
       CS9099, CS9100, CS9236
+  - name: Local functions
+    href: ./compiler-messages/local-function-errors.md
+    displayName: >
+      local function, static local function, capture, enclosing scope, params,
+      CS8108, CS8112, CS8321, CS8421, CS8422
   - name: Delegate and function pointer declarations
     href: ./compiler-messages/delegate-function-pointer-diagnostics.md
     displayName: >
@@ -1330,8 +1351,6 @@ items:
       href: ../misc/cs1542.md
     - name: CS1545
       href: ../misc/cs1545.md
-    - name: CS1546
-      href: ./compiler-messages/cs1546.md
     - name: CS1547
       href: ../misc/cs1547.md
     - name: CS1548
@@ -1608,8 +1627,6 @@ items:
       href: ./compiler-messages/cs8354.md
     - name: CS8355
       href: ./compiler-messages/cs8355.md
-    - name: CS8422
-      href: ./compiler-messages/cs8422.md
     - name: CS9043
       href: ./compiler-messages/cs9043.md
   - name: Level 1 warning messages

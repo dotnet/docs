@@ -34,7 +34,7 @@ This article covers the following compiler errors and warnings:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
-The following errors occur when a `break`, `continue`, `goto`, or `return` statement can't reach a valid target:
+The following errors occur when you use a `break`, `continue`, `goto`, or `return` statement in a way that doesn't match the surrounding control flow:
 
 - [**CS0126**](#return-statement-values): *An object of a type convertible to 'type' is required*
 - [**CS0127**](#return-statement-values): *Since 'method' returns void, a return keyword must not be followed by an object expression*
@@ -65,7 +65,7 @@ To resolve these errors:
 - When you write a labeled `continue` (`continue label;`), apply the same label to an enclosing loop. A labeled `continue` can target only a loop, not a `switch` statement, because `continue` starts the next loop iteration (**CS9394**).
 
 > [!NOTE]
-> CS9393 and CS9394 are new in C# 15. Labeled `break` and `continue` let a statement in a nested loop target a specific enclosing loop or `switch` statement by name, which replaces the need for a `goto` statement or a flag variable. You apply a label to the target loop or `switch` statement, then reference that label in the `break` or `continue` statement, as in `outer: for (...) { ... break outer; }`. For more information about this feature, see the [labeled break and continue proposal](https://github.com/dotnet/csharplang/blob/main/proposals/labeled-break-continue.md).
+> CS9393 and CS9394 are planned for C# 15, and labeled `break` and `continue` aren't available in public builds yet. Labeled `break` and `continue` let a statement in a nested loop target a specific enclosing loop or `switch` statement by name, which replaces the need for a `goto` statement or a flag variable. You apply a label to the target loop or `switch` statement, then reference that label in the `break` or `continue` statement, as in `outer: for (...) { ... break outer; }`. For more information about this feature, see the [labeled break and continue proposal](https://github.com/dotnet/csharplang/blob/main/proposals/labeled-break-continue.md).
 
 For more information about these statements, see [The `break` statement](../statements/jump-statements.md#the-break-statement) and [The `continue` statement](../statements/jump-statements.md#the-continue-statement) in the jump statements article.
 
@@ -101,7 +101,7 @@ For more information about the `switch` statement, see [The `switch` statement](
 - **CS0127**: *Since 'method' returns void, a return keyword must not be followed by an object expression*
 - **CS0161**: *'method': not all code paths return a value*
 
-The `return` statement ends execution of the containing method, and returns control, and optionally a value, to the caller. The value in a `return` statement must be compatible with the return type of the method, property accessor, or local function that contains it. The compiler reports these diagnostics when the `return` statement and the return type disagree, or when a value-returning member can end without returning a value.
+The `return` statement ends execution of the containing member and returns control to the caller. A `return` statement can also return a value.
 
 To resolve these errors:
 

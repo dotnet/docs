@@ -245,7 +245,7 @@ Specifies the minimum version of the subsystem on which the executable file runs
 <SubsystemVersion>major.minor</SubsystemVersion>
 ```
 
-The `major.minor` specify the minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7. Set the value of this option to 6.01. You specify the values for `major` and `minor` as integers. Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. We recommend expressing the minor version as two digits to avoid confusion.
+The `major.minor` value specifies the minimum required version of the subsystem, expressed as a dot-separated major and minor version. For example, to prevent your application from running on operating systems older than Windows 7, set this option to `6.01`. Specify the values for `major` and `minor` as integers. Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. Express the minor version as two digits to avoid confusion.
 
 For more information about Windows subsystem versions, see [Operating System Version](/windows/win32/sysinfo/operating-system-version).
 

@@ -10,7 +10,7 @@ public static class SimpleVectorization
     // Idempotent search that re-processes the final vector instead of a scalar loop.
     public static bool Contains(ReadOnlySpan<int> buffer, int searched)
     {
-        Debug.Assert(Vector128.IsHardwareAccelerated && buffer.Length >= Vector128<int>.Count);
+        Debug.Assert(Vector128.IsHardwareAccelerated);
 
         Vector128<int> values = Vector128.Create(searched);
         ReadOnlySpan<int> remaining = buffer;
@@ -24,11 +24,22 @@ public static class SimpleVectorization
             remaining = remaining.Slice(Vector128<int>.Count);
         }
 
-        // If any elements remain, re-check the last full vector in the buffer.
-        if (!remaining.IsEmpty)
+        if (remaining.IsEmpty)
+        {
+            return false;
+        }
+
+        // A partial vector remains. When the buffer holds at least one full vector,
+        // re-check the last one (overlapping the tail); otherwise scan the few elements directly.
+        if (buffer.Length >= Vector128<int>.Count)
         {
             Vector128<int> tail = Vector128.Create(buffer.Slice(buffer.Length - Vector128<int>.Count));
-            if (Vector128.EqualsAny(tail, values))
+            return Vector128.EqualsAny(tail, values);
+        }
+
+        foreach (int value in remaining)
+        {
+            if (value == searched)
             {
                 return true;
             }

@@ -28,6 +28,9 @@ Console.WriteLine($"Sum<int>(small)    = {AdvancedVectorization.Sum<int>(new int
 Console.WriteLine($"Sum<int>(1..37)    = {AdvancedVectorization.Sum<int>(Enumerable.Range(1, 37).ToArray())}");
 Console.WriteLine($"Contains(7)        = {SimpleVectorization.Contains(numbers, 7)}");
 Console.WriteLine($"Contains(42)       = {SimpleVectorization.Contains(numbers, 42)}");
+Console.WriteLine($"Contains(small,2)  = {SimpleVectorization.Contains(new int[] { 1, 2, 3 }, 2)}");
+Console.WriteLine($"Contains(small,9)  = {SimpleVectorization.Contains(new int[] { 1, 2, 3 }, 9)}");
+Console.WriteLine($"Contains(empty)    = {SimpleVectorization.Contains(Array.Empty<int>(), 1)}");
 Console.WriteLine();
 
 byte[] ascii = "Hello, SIMD!"u8.ToArray();

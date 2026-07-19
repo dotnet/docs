@@ -18,20 +18,20 @@ ai-usage: ai-assisted
 ## Synopsis
 
 ```dotnetcli
-dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Diag <PATH_TO_LOG_FILE>]
+dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Collect <DATA_COLLECTOR_NAME>]
+    [--Diag <PATH_TO_LOG_FILE>] [-e|--Environment <NAME>="<VALUE>"]
     [--Framework <FRAMEWORK>] [--InIsolation] [-lt|--ListTests <FILE_NAME>]
     [--logger <LOGGER_URI/FRIENDLY_NAME>] [--Parallel]
-    [--ParentProcessId <PROCESS_ID>] [--Platform] <PLATFORM_TYPE>
-    [--Port <PORT>] [--ResultsDirectory<PATH>] [--Settings <SETTINGS_FILE>]
-    [--TestAdapterPath <PATH>] [--TestCaseFilter <EXPRESSION>]
-    [--Tests <TEST_NAMES>] [[--] <args>...]
+    [--Platform <PLATFORM_TYPE>] [--ResultsDirectory <PATH>]
+    [--Settings <SETTINGS_FILE>] [--TestAdapterPath <PATH>]
+    [--TestCaseFilter <EXPRESSION>] [--Tests <TEST_NAMES>] [[--] <args>...]
 
 dotnet vstest -?|--Help
 ```
 
 ## Description
 
-The `dotnet vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
+The `dotnet vstest` command runs the `VSTest.Console` command-line application to run automated unit tests. The options in this article are forwarded to `vstest.console`. For the complete list of command-line options, see [vstest.console.exe command line options](https://github.com/microsoft/vstest/blob/main/docs/commandline.md).
 
 ## Arguments
 
@@ -45,9 +45,17 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Runs the tests in blame mode. This option is helpful in isolating the problematic tests causing test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
+- **`--Collect <DATA_COLLECTOR_NAME>`**
+
+  Enables a data collector for the test run. For example, `--Collect "Code Coverage"` collects code coverage with the built-in Visual Studio collector, and `--Collect "XPlat Code Coverage"` uses the cross-platform Coverlet collector. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+
 - **`--Diag <PATH_TO_LOG_FILE>`**
 
   Enables verbose logs for the test platform. Logs are written to the provided file.
+
+- **`-e|--Environment <NAME>="<VALUE>"`**
+
+  Sets the value of an environment variable for the test host process. Creates the variable if it doesn't exist, overrides it if it does. Using this option forces the tests to run in an isolated process. Specify the option multiple times to set multiple variables.
 
 - **`--Framework <FRAMEWORK>`**
 
@@ -87,17 +95,9 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Run tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the `MaxCpuCount` property under the `RunConfiguration` node in the *runsettings* file.
 
-- **`--ParentProcessId <PROCESS_ID>`**
-
-  Process ID of the parent process responsible for launching the current process.
-
 - **`--Platform <PLATFORM_TYPE>`**
 
   Target platform architecture used for test execution. Valid values are `x86`, `x64`, `ARM`, `ARM64`, `S390x`, `Ppc64le`, `RiscV64`, and `LoongArch64`.
-
-- **`--Port <PORT>`**
-
-  Specifies the port for the socket connection and receiving the event messages.
 
 - **`--ResultsDirectory:<PATH>`**
 
@@ -166,3 +166,4 @@ dotnet vstest /Tests:TestMethod1,TestMethod2
 ## See also
 
 - [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options)
+- [vstest.console.exe command line options (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/commandline.md)

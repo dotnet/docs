@@ -165,5 +165,5 @@ dotnet vstest /Tests:TestMethod1,TestMethod2
 
 ## See also
 
-- [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options)
-- [vstest.console.exe command line options (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/commandline.md)
+- [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options) - the official Microsoft Learn reference for the `VSTest.Console.exe` tool, including options that `dotnet vstest` doesn't expose. Start here for stable, curated documentation.
+- [vstest.console.exe command line options (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/commandline.md) - the source-derived reference in the `microsoft/vstest` repo. Use it for the most up-to-date option details and internal switches, plus links to related runsettings, filtering, and diagnostics docs.

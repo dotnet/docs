@@ -241,11 +241,11 @@ On Arm64, each logical grouping of instruction sets has its own switch:
 | `EnableArm64Crc32` | `1` | CRC32 |
 | `EnableArm64Dczva` | `1` | `DC ZVA` cache-zeroing |
 | `EnableArm64Dp` | `1` | Dot Product |
-| `EnableArm64Rdm` | `1` | Rounding Double Multiply (RDMA) |
+| `EnableArm64Rdm` | `1` | Rounding Doubling Multiply Accumulate (RDM) |
 | `EnableArm64Sha1` | `1` | SHA1 |
 | `EnableArm64Sha256` | `1` | SHA256 |
-| `EnableArm64Rcpc` | `1` | Release Consistent processor consistent (RCPC) |
-| `EnableArm64Rcpc2` | `1` | RCPC2 |
+| `EnableArm64Rcpc` | `1` | Release-Consistent, processor-consistent ordering (RCpc) |
+| `EnableArm64Rcpc2` | `1` | RCpc2 |
 | `EnableArm64Cssc` | `0` | Common Short Sequence Compression (CSSC) |
 | `EnableArm64Sve` | `1` | Scalable Vector Extension (SVE) |
 | `EnableArm64Sve2` | `1` | SVE2 |

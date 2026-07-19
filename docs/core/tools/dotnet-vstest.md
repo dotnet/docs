@@ -19,7 +19,7 @@ ai-usage: ai-assisted
 
 ```dotnetcli
 dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Collect <DATA_COLLECTOR_NAME>]
-    [--Diag <PATH_TO_LOG_FILE>] [-e|--Environment <NAME>="<VALUE>"]
+    [--Diag <PATH_TO_LOG_FILE>] [-e|--Environment <NAME="VALUE">]
     [--Framework <FRAMEWORK>] [--InIsolation] [-lt|--ListTests <FILE_NAME>]
     [--logger <LOGGER_URI/FRIENDLY_NAME>] [--Parallel]
     [--Platform <PLATFORM_TYPE>] [--ResultsDirectory <PATH>]
@@ -53,7 +53,7 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Enables verbose logs for the test platform. Logs are written to the provided file.
 
-- **`-e|--Environment <NAME>="<VALUE>"`**
+- **`-e|--Environment <NAME="VALUE">`**
 
   Sets the value of an environment variable for the test host process. Creates the variable if it doesn't exist, overrides it if it does. Using this option forces the tests to run in an isolated process. Specify the option multiple times to set multiple variables.
 
@@ -99,7 +99,7 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Target platform architecture used for test execution. Valid values are `x86`, `x64`, `ARM`, `ARM64`, `S390x`, `Ppc64le`, `RiscV64`, and `LoongArch64`.
 
-- **`--ResultsDirectory:<PATH>`**
+- **`--ResultsDirectory <PATH>`**
 
   Test results directory will be created in specified path if not exists.
 

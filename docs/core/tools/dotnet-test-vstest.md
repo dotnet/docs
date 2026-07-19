@@ -148,7 +148,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit, NUnit, and MSTest 2.2.4+, the timeout is renewed after every test case. For MSTest before version 2.2.4, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
-  You can also configure blame in a `.runsettings` file and pass it with `--settings`. Runsettings configuration supports the same blame behavior and additional keys that aren't exposed as top-level `dotnet test` switches, such as `CollectDumpOnTestSessionHang` and `MonitorPostmortemDebugger`. For more information, see [Blame data collector](https://github.com/microsoft/vstest/blob/main/docs/extensions/blame-datacollector.md).
+  You can also configure blame in a `.runsettings` file and pass it with `--settings`. The `.runsettings` file supports the same blame behavior and additional keys that aren't exposed as top-level `dotnet test` switches, such as `CollectDumpOnTestSessionHang` and `MonitorPostmortemDebugger`. For more information, see [Blame data collector](https://github.com/microsoft/vstest/blob/main/docs/extensions/blame-datacollector.md).
 
   ```xml
   <RunSettings>
@@ -156,8 +156,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
       <DataCollectors>
         <DataCollector friendlyName="blame" enabled="True">
           <Configuration>
-            <CollectDump CollectAlways="true" DumpType="Full" />
-            <CollectDumpOnTestSessionHang TestTimeout="30min" HangDumpType="Full" />
+            <CollectDump CollectAlways="true" DumpType="full" />
+            <CollectDumpOnTestSessionHang TestTimeout="30min" HangDumpType="full" />
             <MonitorPostmortemDebugger DumpDirectoryPath="C:\Dumps" />
           </Configuration>
         </DataCollector>
@@ -190,7 +190,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
-  Enables data collector for the test run. For more information, including the Event Log data collector and guidance for authoring your own data collector, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+  Enables a data collector for the test run. For more information, including the Event Log data collector and guidance for authoring your own data collector, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
 
   For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested), [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis), and [GitHub issue dotnet/docs#34479](https://github.com/dotnet/docs/issues/34479).
 
@@ -200,7 +200,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
-  To set the trace level, append `;tracelevel=<LEVEL>` to the log file name, for example `--diag:log.txt;tracelevel=verbose`. The allowed values for `tracelevel` are `off`, `error`, `warning`, `info`, and `verbose`. The default value is `verbose`.
+  To set the trace level, append `;tracelevel=<LEVEL>` to the log file name, for example `--diag log.txt;tracelevel=verbose`. The allowed values for `tracelevel` are `off`, `error`, `warning`, `info`, and `verbose`. The default value is `verbose`.
 
 - [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 

@@ -448,5 +448,6 @@ When discovery finds no matching tests, the run prints a warning rather than an 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md)
+- [VSTest environment variables (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/environment-variables.md)
 - [dotnet test](dotnet-test.md)
 - [dotnet test with MTP](dotnet-test-mtp.md)

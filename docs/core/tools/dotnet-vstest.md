@@ -167,3 +167,4 @@ dotnet vstest /Tests:TestMethod1,TestMethod2
 
 - [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options) - the official Microsoft Learn reference for the `VSTest.Console.exe` tool, including options that `dotnet vstest` doesn't expose. Start here for stable, curated documentation.
 - [vstest.console.exe command line options (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/commandline.md) - the source-derived reference in the `microsoft/vstest` repo. Use it for the most up-to-date option details and internal switches, plus links to related runsettings, filtering, and diagnostics docs.
+- [VSTest environment variables (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/environment-variables.md) - environment variables that VSTest and the test host recognize, such as `VSTEST_DUMP_FORCEPROCDUMP` and the `VSTEST_DOTNET_ROOT_*` variables the .NET SDK sets when it launches `vstest.console`.

@@ -2,7 +2,8 @@
 title: Run selected unit tests
 description: How to use a filter expression to run selected unit tests with the dotnet test command in .NET Core.
 author: smadala
-ms.date: 10/29/2021
+ms.date: 07/19/2026
+ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ms.topic: reference
 ---
@@ -70,6 +71,8 @@ For `FullyQualifiedName` values that include a comma for generic type parameters
 ```dotnetcli
 dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1%2CParameterType2>.MyTestMethod"
 ```
+
+Because your shell also parses the filter expression, quote the entire `--filter` value whenever it contains characters your shell treats specially, such as `<`, `>`, or `,`. Quoting is required in PowerShell, where the comma is the array operator.
 
 For `Name` or `DisplayName`, use the URL encoding for the special characters. For example, to run a test with the name `MyTestMethod` and a string value `"text"`, use the following filter:
 
@@ -243,7 +246,7 @@ To run tests that have either a <xref:System.Reflection.Module.FullyQualifiedNam
 dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Priority=1"
 ```
 
-For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
+For more information, see [TestCase filter](https://github.com/microsoft/vstest/blob/main/docs/filter.md).
 
 :::zone-end
 

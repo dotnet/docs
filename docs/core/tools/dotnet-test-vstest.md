@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with VSTest
 description: The dotnet test command is used to execute unit tests in a given project using VSTest.
-ms.date: 07/15/2026
+ms.date: 07/19/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with VSTest
@@ -165,6 +165,26 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
     </DataCollectionRunSettings>
   </RunSettings>
   ```
+
+  The following tables map the blame options to their `dotnet test` switches and `.runsettings` elements. For the complete blame collector reference, see [Blame data collector](https://github.com/microsoft/vstest/blob/main/docs/extensions/blame-datacollector.md).
+
+  Crash dump options:
+
+  | Behavior | `dotnet test` switch | `.runsettings` element |
+  | --- | --- | --- |
+  | Collect a crash dump | `--blame-crash` | `<CollectDump />` |
+  | Collect even on a clean exit | `--blame-crash-collect-always` | `<CollectDump CollectAlways="true" />` |
+  | Dump type (`mini`, `full`; default `full`) | `--blame-crash-dump-type` | `<CollectDump DumpType="full" />` |
+
+  Hang dump options:
+
+  | Behavior | `dotnet test` switch | `.runsettings` element |
+  | --- | --- | --- |
+  | Collect a hang dump | `--blame-hang` | `<CollectDumpOnTestSessionHang />` |
+  | Timeout before the hang dump (default `1h`) | `--blame-hang-timeout` | `<CollectDumpOnTestSessionHang TestTimeout="90m" />` |
+  | Hang dump type (`mini`, `full`, `none`) | `--blame-hang-dump-type` | `<CollectDumpOnTestSessionHang HangDumpType="mini" />` |
+
+  For Microsoft.Testing.Platform (MTP) test apps, the `--blame-*` switches and the blame data collector don't apply. MTP uses `--crashdump`, `--hangdump`, and `--hangdump-timeout` from the `Microsoft.Testing.Extensions.CrashDump` and `Microsoft.Testing.Extensions.HangDump` packages. For more information, see [dotnet test with MTP](dotnet-test-mtp.md).
 
 - [!INCLUDE [configuration](includes/cli-configuration.md)]
 
@@ -409,6 +429,19 @@ Expressions can be joined with conditional operators:
 You can enclose expressions in parenthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
 For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+
+## Exit codes
+
+When you run tests through the VSTest path, `dotnet test` reports the outcome with one of two exit codes:
+
+| Exit code | Meaning |
+| --------- | ------- |
+| `0` | Success. The requested operation completed and, for a test run, all executed tests passed. |
+| `1` | Failure. For example, one or more tests failed, a run error was reported, the command line was invalid, a test source couldn't be loaded, or the run was aborted or canceled. |
+
+The underlying `vstest.console` process never returns any other value.
+
+When discovery finds no matching tests, the run prints a warning rather than an error and still returns `0` by default. To make a run that discovers or selects zero tests return `1` instead, set `RunConfiguration.TreatNoTestsAsError` to `true` in a `.runsettings` file.
 
 ## See also
 

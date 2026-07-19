@@ -1,7 +1,8 @@
 ---
 title: dotnet vstest command
 description: The dotnet vstest command builds a project and all of its dependencies.
-ms.date: 10/28/2025
+ms.date: 07/19/2026
+ai-usage: ai-assisted
 ---
 # dotnet vstest
 
@@ -92,7 +93,7 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--Platform <PLATFORM_TYPE>`**
 
-  Target platform architecture used for test execution. Valid values are `x86`, `x64`, and `ARM`.
+  Target platform architecture used for test execution. Valid values are `x86`, `x64`, `ARM`, `ARM64`, `S390x`, `Ppc64le`, `RiscV64`, and `LoongArch64`.
 
 - **`--Port <PORT>`**
 
@@ -112,7 +113,7 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--TestCaseFilter <EXPRESSION>`**
 
-  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
+  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/microsoft/vstest/blob/main/docs/filter.md).
 
 - **`--Tests <TEST_NAMES>`**
 

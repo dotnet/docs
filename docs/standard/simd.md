@@ -48,7 +48,7 @@ The matrix types support matrix math such as transpose and multiplication:
 
 :::code language="csharp" source="./snippets/simd/csharp/NumericsExamples.cs" id="MatrixMultiply":::
 
-## Vector<T>
+## Vector\<T>
 
 `Vector<T>` represents a variable-width vector of a primitive numeric type. Its length is fixed for the lifetime of the process, but the value of `Vector<T>.Count` depends on the CPU that runs the code. The Just-In-Time (JIT) compiler treats `Count` as a constant, so loops written against it optimize well.
 
@@ -193,7 +193,7 @@ Beyond those two, the runtime recognizes a knob per logical grouping of instruct
 
 > [!IMPORTANT]
 > These are diagnostic tools, meant primarily for testing and validation—exercising each code path, reproducing a hardware-specific issue, or confirming a fallback. They aren't designed for general or production use, and they aren't a stability contract: the set below is what .NET 11 recognizes; earlier releases exposed a different set—the baseline and AVX-512 knobs in particular were reconfigured—so confirm the names against the runtime version you target.
-> 
+>
 > They also have limits on what they reach. Because they gate JIT decisions, they don't affect code that was already compiled ahead of time through ReadyToRun or Native AOT, and they don't necessarily affect internal routines the runtime and core libraries use themselves. Treat them as a way to steer your own JIT-compiled code, not a global off switch for an instruction set.
 
 The base switch and the width caps apply on every architecture:

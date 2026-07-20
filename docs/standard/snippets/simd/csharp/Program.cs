@@ -1,6 +1,7 @@
 using System.Numerics;
 using System.Linq;
 using System.Runtime.Intrinsics;
+using System.Runtime.Intrinsics.X86;
 using SimdSnippets;
 
 // Verification runner. Not part of the published snippets.
@@ -49,3 +50,14 @@ float[] b = [5, 6, 7, 8];
 float[] c = [1, 1, 1, 1];
 Console.WriteLine($"MultiplyAdd = [{string.Join(", ", TensorPrimitivesExample.MultiplyAdd(a, b, c))}]");
 Console.WriteLine($"CosineSimilarity(a, a) = {TensorPrimitivesExample.CosineSimilarity(a, a)}");
+Console.WriteLine();
+
+if (Sse3.IsSupported && Avx.IsSupported)
+{
+    Vector128<float> v128 = Vector128.Create(1f, 2f, 3f, 4f);
+    Vector256<float> v256 = Vector256.Create(1f, 2f, 3f, 4f, 10f, 20f, 30f, 40f);
+
+    Console.WriteLine($"SumVector128       = {LaneCrossingExample.SumVector128(v128)}");
+    Console.WriteLine($"SumVector256Naive  = {LaneCrossingExample.SumVector256Naive(v256)}");
+    Console.WriteLine($"SumVector256       = {LaneCrossingExample.SumVector256(v256)}");
+}

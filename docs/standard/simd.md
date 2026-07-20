@@ -79,12 +79,73 @@ Types that aren't supported, such as `char` and `bool`, can still be vectorized 
 
 ## Cross-platform vectorization with Vector128
 
-`Vector128<T>` is the common denominator across every platform that supports vectorization, so it's the best place to start. It holds a 128-bit vector: 16 bytes, 8 shorts, 4 ints/floats, or 2 longs/doubles. `Vector256<T>` is twice as wide, and `Vector512<T>` twice again. Not all hardware supports the larger widths, so the examples that follow use `Vector128` for portability.
+`Vector128<T>` is the common denominator across every platform that supports vectorization, so it's the best place to start. It holds a 128-bit vector: 16 bytes, 8 shorts, 4 ints/floats, or 2 longs/doubles.
+
+```
+------------------------------128-bits---------------------------
+|             64                |               64              |
+-----------------------------------------------------------------
+|      32       |      32       |      32       |      32       |
+-----------------------------------------------------------------
+|  16   |  16   |  16   |  16   |  16   |  16   |  16   |  16   |
+-----------------------------------------------------------------
+| 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
+-----------------------------------------------------------------
+```
+
+`Vector256<T>` is twice as wide, and `Vector512<T>` twice again. Not all hardware supports the larger widths, so the examples that follow use `Vector128` for portability.
 
 Each width has a generic type (`Vector128<T>`) for the data and a non-generic static class (<xref:System.Runtime.Intrinsics.Vector128>) that holds most of the operations, including static factory methods like `Create` and `Load`. Operators such as `+`, `&`, and `<<` are the idiomatic way to express arithmetic and bit operations; prefer them over the named method equivalents to avoid operator-precedence bugs and improve readability. For algorithms that depend on byte order, branch on <xref:System.BitConverter.IsLittleEndian>, which the JIT also folds to a constant.
 
 > [!NOTE]
 > On x86/x64, `Vector256<T>` operations are generally treated as two independent 128-bit "lanes". For most element-wise operations this is transparent, but operations that cross lanes (such as shuffles or pairwise/horizontal operations) might behave differently or cost more than the `Vector128` equivalent. Confirm with benchmarks before assuming a wider vector is faster.
+
+### Lane-crossing operations don't widen for free
+
+Element-wise operations don't care about width: `v1 + v2` is the same per-element result whether `v1` and `v2` are `Vector128<T>` or `Vector256<T>`—widening just processes one more lane's worth of data per instruction. `Add` on `v = [a, b, c, d]` and `w = [e, f, g, h]` always combines same-index elements:
+
+```
+v: [ a | b | c | d ]
+w: [ e | f | g | h ]
+     +   +   +   +
+r: [a+e|b+f|c+g|d+h]
+```
+
+Lane-crossing operations don't scale up that simply, because which elements get combined depends on the vector's width. A pairwise reduction combines *adjacent* elements instead of same-index ones, so widening changes what ends up paired together:
+
+```
+v:       [  a  |  b  |  c  |  d  ]
+            \_____/     \_____/
+round 1: [ a+b | c+d | a+b | c+d ]
+            \_________________/
+round 2: [  S  |  S  |  S  |  S  ]   (S = a+b+c+d)
+```
+
+That's exactly what a horizontal reduction does: sum a vector's elements with two rounds of pairwise adds. On `Vector128<float>` (4 elements), two calls to <xref:System.Runtime.Intrinsics.X86.Sse3.HorizontalAdd*> get you the full sum:
+
+:::code language="csharp" source="./snippets/simd/csharp/LaneCrossingExample.cs" id="SumVector128":::
+
+Extend the same two-call pattern to `Vector256<float>` (8 elements) and it looks right—it isn't. <xref:System.Runtime.Intrinsics.X86.Avx.HorizontalAdd*> doesn't operate across the whole 256-bit vector; it repeats the pairwise pattern independently within each 128-bit lane. Two rounds gives you the lower lane's sum (elements 0-3) broadcast across the lower lane and the upper lane's sum (elements 4-7) broadcast across the upper lane, not the sum of all eight elements:
+
+:::code language="csharp" source="./snippets/simd/csharp/LaneCrossingExample.cs" id="SumVector256Naive":::
+
+To get the correct total, bridge the lane boundary explicitly: read each lane's partial sum with `GetLower`/`GetUpper` and add them together—`GetLower` and `GetUpper` split a vector into its first and second halves:
+
+```
+------------------------------128-bits---------------------------
+|           LOWER               |             UPPER             |
+-----------------------------------------------------------------
+|      32       |      32       |      32       |      32       |
+-----------------------------------------------------------------
+|  16   |  16   |  16   |  16   |  16   |  16   |  16   |  16   |
+-----------------------------------------------------------------
+| 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
+-----------------------------------------------------------------
+```
+
+:::code language="csharp" source="./snippets/simd/csharp/LaneCrossingExample.cs" id="SumVector256":::
+
+That extra step is the real cost of crossing lanes. A lane-crossing algorithm doesn't just widen for free the way an element-wise one does—measure before assuming the wider vector wins.
 
 ### Common operations
 

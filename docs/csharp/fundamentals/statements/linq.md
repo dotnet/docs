@@ -74,7 +74,7 @@ Use <xref:System.Linq.Enumerable.GroupBy*> when the result should contain groups
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="GroupBy":::
 
-Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
+Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see [Language Integrated Query (LINQ)](../../linq/index.md).
 
 ## Run a query
 

@@ -1,5 +1,5 @@
 ---
-title: Use SIMD and Hardware Intrinsics in .NET
+title: Use SIMD and hardware intrinsics in .NET
 description: Learn about the layered SIMD support in .NET, from System.Numerics vector types to cross-platform Vector64/128/256/512 APIs, hardware intrinsics, and TensorPrimitives.
 author: FIVIL
 ms.author: tagoo
@@ -7,7 +7,7 @@ ms.date: 07/18/2026
 ai-usage: ai-assisted
 ---
 
-# Use SIMD and Hardware Intrinsics in .NET
+# Use SIMD and hardware intrinsics in .NET
 
 SIMD (single instruction, multiple data) is hardware support for applying one operation to multiple pieces of data in parallel with a single instruction. Vectorized code processes several values per iteration instead of one, which can greatly increase throughput for the kind of numeric, scientific, graphics, text-processing, and data-parallel work where the same operation repeats over a buffer. The trade-off is added complexity, so it pays off most when the input is large enough and the win is confirmed with measurements.
 
@@ -17,13 +17,13 @@ SIMD (single instruction, multiple data) is hardware support for applying one op
 
 | API | Namespace | When to use it |
 | --- | --- | --- |
-| Fixed-purpose vector and matrix types | <xref:System.Numerics?displayProperty=fullName> | Graphics and geometry math with 2-4 element vectors, matrices, quaternions, and planes. |
-| `Vector<T>` | <xref:System.Numerics?displayProperty=fullName> | Portable, variable-width vectorization when you don't need per-platform control. |
-| `Vector64<T>`, `Vector128<T>`, `Vector256<T>`, `Vector512<T>` | <xref:System.Runtime.Intrinsics?displayProperty=fullName> | Cross-platform, fixed-width vectorization with fine-grained control. This is the recommended starting point for new vectorized algorithms. |
-| Hardware intrinsics | <xref:System.Runtime.Intrinsics.X86?displayProperty=fullName>, <xref:System.Runtime.Intrinsics.Arm?displayProperty=fullName>, <xref:System.Runtime.Intrinsics.Wasm?displayProperty=fullName> | Specific processor instructions that the higher-level APIs don't expose, for the last bit of performance on a hot path. |
-| `TensorPrimitives` | <xref:System.Numerics.Tensors?displayProperty=fullName> | Ready-made, vectorized math over spans. It does the vectorization for you. |
+| Fixed-purpose vector and matrix types | <xref:System.Numerics> | Graphics and geometry math with 2-4 element vectors, matrices, quaternions, and planes. |
+| `Vector<T>` | <xref:System.Numerics> | Portable, variable-width vectorization when you don't need per-platform control. |
+| `Vector64<T>`, `Vector128<T>`, `Vector256<T>`, `Vector512<T>` | <xref:System.Runtime.Intrinsics> | Cross-platform, fixed-width vectorization with fine-grained control. This is the recommended starting point for new vectorized algorithms. |
+| Hardware intrinsics | <xref:System.Runtime.Intrinsics.X86>, <xref:System.Runtime.Intrinsics.Arm>, <xref:System.Runtime.Intrinsics.Wasm> | Specific processor instructions that the higher-level APIs don't expose, for the last bit of performance on a hot path. |
+| `TensorPrimitives` | <xref:System.Numerics.Tensors> | Ready-made, vectorized math over spans. It does the vectorization for you. |
 
-Where these APIs overlap, they relate through layers of abstraction. The generic vector types are the foundational interchange types that the other layers pass around, so they're technically the lowest level: the variable-width `Vector<T>`, which grows to whatever width the running hardware supports, and the fixed-width `Vector64<T>` through `Vector512<T>`. The platform-specific hardware intrinsics in <xref:System.Runtime.Intrinsics.X86?displayProperty=fullName>, <xref:System.Runtime.Intrinsics.Arm?displayProperty=fullName>, and <xref:System.Runtime.Intrinsics.Wasm?displayProperty=fullName> operate on those types, each mapping directly to an individual processor instruction. The cross-platform operations exposed on the generic types sit a step above the platform-specific intrinsics, lowering to them for each target. Higher still are the managed APIs that operate over entire buffers—vectorized methods on `Span<T>` and `string`, and <xref:System.Numerics.Tensors.TensorPrimitives>—which build on the layers below, so you get SIMD acceleration without hand-writing any of it. The <xref:System.Numerics> fixed-shape types are domain-specific convenience types for graphics and geometry rather than part of this interchange stack.
+Where these APIs overlap, they relate through layers of abstraction. The generic vector types are the foundational interchange types that the other layers pass around, so they're technically the lowest level: the variable-width `Vector<T>`, which grows to whatever width the running hardware supports, and the fixed-width `Vector64<T>` through `Vector512<T>`. The platform-specific hardware intrinsics in <xref:System.Runtime.Intrinsics.X86>, <xref:System.Runtime.Intrinsics.Arm>, and <xref:System.Runtime.Intrinsics.Wasm> operate on those types, each mapping directly to an individual processor instruction. The cross-platform operations exposed on the generic types sit a step above the platform-specific intrinsics, lowering to them for each target. Higher still are the managed APIs that operate over entire buffers—vectorized methods on `Span<T>` and `string`, and <xref:System.Numerics.Tensors.TensorPrimitives>—which build on the layers below, so you get SIMD acceleration without hand-writing any of it. The <xref:System.Numerics> fixed-shape types are domain-specific convenience types for graphics and geometry rather than part of this interchange stack.
 
 The rest of this article works through these APIs from the highest level to the lowest, then covers testing, benchmarking, and best practices.
 
@@ -68,12 +68,12 @@ SIMD-accelerated types work even on hardware or JIT configurations that don't su
 
 These properties are turned into constants by the JIT, so the branches you don't take are eliminated and there's no runtime cost to checking them. Don't cache the values; read them directly where you need them. The same applies to the `Count` properties (for example, `Vector128<T>.Count`), which are also JIT-time constants.
 
-Most operations on an accelerated width are themselves accelerated, but it isn't guaranteed for every operation. For example, floating-point division may be accelerated where integer division isn't. When `Vector256` is accelerated, `Vector128` usually is too, but there's no guarantee, so check each width you use.
+Most operations on an accelerated width are themselves accelerated, but it isn't guaranteed for every operation. For example, floating-point division might be accelerated where integer division isn't. When `Vector256` is accelerated, `Vector128` usually is too, but there's no guarantee, so check each width you use.
 
 > [!TIP]
 > If an operation you need isn't accelerated on a platform you care about, or you'd like a new cross-platform API, file an issue on [dotnet/runtime](https://github.com/dotnet/runtime/issues). The same applies to codegen improvements.
 
-Not every element type is valid for every vector. `Vector128<T>` and its siblings support the primitive numeric types (`byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, and `nuint`) today, and that set may grow to include other types in the future. Use `Vector128<T>.IsSupported` to determine whether a given `T` is valid, which is especially useful from generic code.
+Not every element type is valid for every vector. `Vector128<T>` and its siblings support the primitive numeric types (`byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, and `nuint`) today, and that set might grow to include other types in the future. Use `Vector128<T>.IsSupported` to determine whether a given `T` is valid, which is especially useful from generic code.
 
 Types that aren't supported, such as `char` and `bool`, can still be vectorized by reinterpreting the buffer as a supported type of the same size. Use <xref:System.Runtime.InteropServices.MemoryMarshal.Cast*> to reinterpret a span—for example, `char` to `ushort`—or the vector's `As<TFrom, TTo>` method to reinterpret a vector you already hold. Reinterpretation only changes the type, not the underlying bits, so it's your responsibility to keep the data well-formed: a `bool` must stay `0` or `1`, and a `char` must remain a valid UTF-16 code unit. If a vectorized operation could produce an out-of-range value, take care to normalize the result before writing it back.
 
@@ -84,11 +84,11 @@ Types that aren't supported, such as `char` and `bool`, can still be vectorized 
 Each width has a generic type (`Vector128<T>`) for the data and a non-generic static class (<xref:System.Runtime.Intrinsics.Vector128>) that holds most of the operations, including static factory methods like `Create` and `Load`. Operators such as `+`, `&`, and `<<` are the idiomatic way to express arithmetic and bit operations; prefer them over the named method equivalents to avoid operator-precedence bugs and improve readability. For algorithms that depend on byte order, branch on <xref:System.BitConverter.IsLittleEndian>, which the JIT also folds to a constant.
 
 > [!NOTE]
-> On x86/x64, `Vector256<T>` operations are generally treated as two independent 128-bit "lanes". For most element-wise operations this is transparent, but operations that cross lanes (such as shuffles or pairwise/horizontal operations) may behave differently or cost more than the `Vector128` equivalent. Confirm with benchmarks before assuming a wider vector is faster.
+> On x86/x64, `Vector256<T>` operations are generally treated as two independent 128-bit "lanes". For most element-wise operations this is transparent, but operations that cross lanes (such as shuffles or pairwise/horizontal operations) might behave differently or cost more than the `Vector128` equivalent. Confirm with benchmarks before assuming a wider vector is faster.
 
 ### Common operations
 
-`Vector128` and its wider siblings expose a large API surface. You don't need to memorize it—know the categories and look up the details when you need them. Every operation has a software fallback for platforms that can't accelerate it. The table below covers essentially the whole surface.
+`Vector128` and its wider siblings expose a large API surface. You don't need to memorize it—know the categories and look up the details when you need them. Every operation has a software fallback for platforms that can't accelerate it. The following table covers essentially the whole surface.
 
 | Category | What it does | Representative APIs |
 | --- | --- | --- |
@@ -132,7 +132,7 @@ There are two distinct fallbacks. A buffer that's too small for even the narrowe
 
 :::code language="csharp" source="./snippets/simd/csharp/AdvancedVectorization.cs" id="VectorSmall":::
 
-`sizeof(T)` is also a JIT-time constant (and, with the `unmanaged` constraint, doesn't require an `unsafe` context in C# 15 / .NET 11), so `SumVectorSmall` dispatches on the element width to a table sized for the widest vector's worth of elements—the same approach <xref:System.Numerics.Tensors.TensorPrimitives> uses. Only the 4-byte table is shown; the 1-, 2-, and 8-byte tables share its shape. Its larger cases fold the leftover with a `Vector256` or `Vector128` using two overlapping loads—one from the start, one from the end—so the wider-remainder handling for the omitted `Vector512`/`Vector256` paths lives right in the jump table. The two loads overlap whenever the length isn't an exact multiple of the width, so the tail is masked to the additive identity with `ConditionalSelect` before it's summed. That mask is only needed because addition is non-idempotent; an idempotent operation such as a search could fold the overlapping tail in directly. A buffer on hardware with no vectorization at all falls through to `SumScalar`, an ordinary scalar loop.
+`sizeof(T)` is also a JIT-time constant (and, with the `unmanaged` constraint, doesn't require an `unsafe` context in C# 15 / .NET 11), so `SumVectorSmall` dispatches on the element width to a table sized for the widest vector's worth of elements—the same approach <xref:System.Numerics.Tensors.TensorPrimitives> uses. Only the 4-byte table is shown; the 1-byte, 2-byte, and 8-byte tables share its shape. Its larger cases fold the leftover with a `Vector256` or `Vector128` using two overlapping loads—one from the start, one from the end—so the wider-remainder handling for the omitted `Vector512`/`Vector256` paths lives right in the jump table. The two loads overlap whenever the length isn't an exact multiple of the width, so the tail is masked to the additive identity with `ConditionalSelect` before it's summed. That mask is only needed because addition is non-idempotent; an idempotent operation such as a search could fold the overlapping tail in directly. A buffer on hardware with no vectorization at all falls through to `SumScalar`, an ordinary scalar loop.
 
 ### Loop over the input and handle the remainder
 
@@ -153,7 +153,7 @@ An **idempotent** operation such as searching for a value can reprocess the over
 
 ### Load and store vectors safely
 
-For most code, `Vector128.Create(span)` and <xref:System.Runtime.Intrinsics.Vector128.CopyTo*> are the simplest way to move data between a span and a vector, and the JIT keeps them efficient. When you need the lower-level load and store—for example, to walk a buffer by managed reference—prefer the <xref:System.Runtime.Intrinsics.Vector128.LoadUnsafe*> and <xref:System.Runtime.Intrinsics.Vector128.StoreUnsafe*> overloads that take a managed reference and an `nuint` element offset. Unlike the pointer-based `Load`/`Store` overloads, they don't require pinning the buffer, and unlike raw reference arithmetic they don't need you to manually advance a `ref`. Both alternatives are easy to get wrong in ways that introduce garbage-collector holes or access violations.
+For most code, `Vector128.Create(span)` and <xref:System.Runtime.Intrinsics.Vector128.CopyTo*> are the simplest way to move data between a span and a vector, and the JIT keeps them efficient. When you need the lower-level load and store—for example, to walk a buffer by managed reference—prefer the <xref:System.Runtime.Intrinsics.Vector128.LoadUnsafe*> and <xref:System.Runtime.Intrinsics.Vector128.StoreUnsafe*> overloads that take a managed reference and an `nuint` element offset. Unlike the pointer-based `Load`/`Store` overloads, they don't require pinning the buffer, and unlike raw reference arithmetic, they don't need you to manually advance a `ref`. Both alternatives are easy to get wrong in ways that introduce garbage-collector holes or access violations.
 
 So that empty buffers don't throw, get the starting reference from <xref:System.Runtime.InteropServices.MemoryMarshal.GetReference*> (or <xref:System.Runtime.InteropServices.MemoryMarshal.GetArrayDataReference*> for arrays) rather than `ref span[0]`.
 
@@ -192,9 +192,9 @@ To exercise every path on a single machine, run the test suite once with no over
 Beyond those two, the runtime recognizes a knob per logical grouping of instruction sets, each prefixed with `DOTNET_`. A single knob can cover several related instruction sets—`EnableAVX2`, for instance, gates AVX2 along with BMI1, BMI2, F16C, FMA, LZCNT, and MOVBE. Setting a knob to `0` disables its whole group and everything layered on top of it. Setting it to `1` (the default for most) allows the group, but the hardware must still actually support it—enabling a knob the current CPU lacks is ignored, so you can only ever narrow what's used, never force an unsupported instruction on and break yourself. `DOTNET_EnableHWIntrinsic=0` is the big hammer—it turns off everything down to the base, so `Vector128`, `Vector64`, and `Vector<T>` all report no acceleration and the code falls to its software path.
 
 > [!IMPORTANT]
-> These are diagnostic tools, meant primarily for testing and validation—exercising each code path, reproducing a hardware-specific issue, or confirming a fallback. They aren't designed for general or production use, and they aren't a stability contract: the set below is what .NET 11 recognizes; earlier releases exposed a different set—the baseline and AVX-512 knobs in particular were reconfigured—so confirm the names against the runtime version you target.
+> These are diagnostic tools, meant primarily for testing and validation—exercising each code path, reproducing a hardware-specific issue, or confirming a fallback. They aren't designed for general or production use, and they aren't a stability contract. The following set is what .NET 11 recognizes; earlier releases exposed a different set—the baseline and AVX-512 knobs in particular were reconfigured—so confirm the names against the runtime version you target.
 >
-> They also have limits on what they reach. Because they gate JIT decisions, they don't affect code that was already compiled ahead of time through ReadyToRun or Native AOT, and they don't necessarily affect internal routines the runtime and core libraries use themselves. Treat them as a way to steer your own JIT-compiled code, not a global off switch for an instruction set.
+> These tools also have limits on what they reach. Because they gate JIT decisions, they don't affect code that was already compiled ahead of time through ReadyToRun or Native AOT, and they don't necessarily affect internal routines the runtime and core libraries use themselves. Treat them as a way to steer your own JIT-compiled code, not a global off switch for an instruction set.
 
 The base switch and the width caps apply on every architecture:
 
@@ -259,7 +259,7 @@ A knob defaulting to `0` (for example, `EnableAVX10v2` or `EnableArm64Cssc`) gat
 
 ## Benchmark to confirm the win
 
-Vectorization adds complexity, so measure that it pays off before you keep it. Use [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet), and use the same environment variables above to compare the scalar, `Vector128`, and `Vector256` implementations in one run. BenchmarkDotNet's disassembly diagnoser can also emit the generated assembly, which is invaluable when tuning high-performance code.
+Vectorization adds complexity, so measure that it pays off before you keep it. Use [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet), and use the same environment variables shown previously to compare the scalar, `Vector128`, and `Vector256` implementations in one run. BenchmarkDotNet's disassembly diagnoser can also emit the generated assembly, which is invaluable when tuning high-performance code.
 
 A few things to keep in mind:
 
@@ -278,5 +278,5 @@ A few things to keep in mind:
 
 ## See also
 
-- <xref:System.Runtime.Intrinsics?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics>
 - <xref:System.Numerics.Tensors.TensorPrimitives>

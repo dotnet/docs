@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 >
 > **Coming from another language?** LINQ query syntax reads like a SQL-style query written inside C#. LINQ method syntax reads like chained collection operations in JavaScript, Java streams, or Python pipelines. Both forms describe the same query.
 
-*Language Integrated Query (LINQ)* is the C# feature set for querying data with C# syntax. Many LINQ operators use *deferred execution*: they describe the result first and read the data later, when your code asks for the results. A *query* describes which data to read and how to shape the result. A query reads from a *data source*. A data source can be an in-memory collection, such as an array or <xref:System.Collections.Generic.List`1>, or an external source, such as a database or XML, exposed through a LINQ provider. A *LINQ provider* is a library that connects LINQ syntax to a specific kind of data source. This article uses in-memory collections for its examples. A *sequence* is an ordered set of elements represented by <xref:System.Collections.Generic.IEnumerable`1>. For more information about provider-based queries, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
+*Language Integrated Query (LINQ)* is the C# feature set for querying data with C# syntax. Many LINQ operators use *deferred execution*: they describe the result first and read the data later, when your code asks for the results. A *query* describes which data to read and how to shape the result. A query reads from a *data source*. A data source can be an in-memory collection, such as an array or <xref:System.Collections.Generic.List`1>, or an external source, such as a database or XML, exposed through a LINQ provider. A *LINQ provider* is a library that connects LINQ syntax to a specific kind of data source. This article uses in-memory collections for its examples. A *sequence* is an ordered set of elements represented by <xref:System.Collections.Generic.IEnumerable`1>. For more information about provider-based queries, see [Language Integrated Query (LINQ)](../../linq/index.md).
 
 ## LINQ query expression syntax
 
@@ -108,7 +108,7 @@ Composition can use either or both *eager evaluation* and *deferred execution*. 
 
 ## Explore LINQ in depth
 
-This article uses in-memory collections to teach LINQ syntax and core operators. For more information about LINQ operators and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section. The LINQ section covers joins, XML, database providers, dynamic queries, and custom operators.
+This article uses in-memory collections to teach LINQ syntax and core operators. For more information about LINQ operators and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md). That article covers joins, XML, database providers, dynamic queries, and custom operators.
 
 ## See also
 

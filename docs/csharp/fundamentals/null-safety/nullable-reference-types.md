@@ -3,7 +3,7 @@ title: Nullable reference types
 description: Use nullable reference types to express your intent about which variables can be null. The compiler then warns when your code might dereference null.
 ms.date: 05/04/2026
 ms.topic: concept-article
-ms.subservice: null-safety
+ms.subservice: nullable-reference-types
 ai-usage: ai-assisted
 ---
 # Nullable reference types

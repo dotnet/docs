@@ -32,8 +32,13 @@ public static class Program
 
         foreach (string name in query)
         {
-            Console.WriteLine(name); // => Cleo, then Dara
+            Console.WriteLine(name);
         }
+        // This example produces the following output:
+        //
+        //    Cleo
+        //    Dara
+        //
         // </QuerySyntax>
     }
 
@@ -49,8 +54,13 @@ public static class Program
 
         foreach (string name in query)
         {
-            Console.WriteLine(name); // => Cleo, then Dara
+            Console.WriteLine(name);
         }
+        // This example produces the following output:
+        //
+        //    Cleo
+        //    Dara
+        //
         // </MethodSyntax>
     }
 
@@ -74,8 +84,14 @@ public static class Program
 
         foreach (string item in nextItems)
         {
-            Console.WriteLine(item); // => api: P1, then tests: P1, then docs: P2
+            Console.WriteLine(item);
         }
+        // This example produces the following output:
+        //
+        //    api: P1
+        //    tests: P1
+        //    docs: P2
+        //
         // </QuerySyntaxClearer>
     }
 
@@ -101,8 +117,13 @@ public static class Program
 
         foreach (string name in shortNames)
         {
-            Console.WriteLine(name); // => ANA, then BEN
+            Console.WriteLine(name);
         }
+        // This example produces the following output:
+        //
+        //    ANA
+        //    BEN
+        //
         // </LambdaExpressions>
     }
 
@@ -121,13 +142,20 @@ public static class Program
 
         foreach (string item in querySyntax)
         {
-            Console.WriteLine($"Query syntax: {item}"); // => Query syntax: docs, then Query syntax: test
+            Console.WriteLine($"Result: {item}");
         }
 
         foreach (string item in methodSyntax)
         {
-            Console.WriteLine($"Method syntax: {item}"); // => Method syntax: docs, then Method syntax: test
+            Console.WriteLine($"Result: {item}");
         }
+        // This example produces the following output:
+        //
+        //    Result: docs
+        //    Result: test
+        //    Result: docs
+        //    Result: test
+        //
         // </QuerySyntaxLambda>
     }
 
@@ -149,8 +177,14 @@ public static class Program
 
         foreach (string item in plannedWork)
         {
-            Console.WriteLine(item); // => Code: 1, then Docs: 2, then Test: 3
+            Console.WriteLine(item);
         }
+        // This example produces the following output:
+        //
+        //    Code: 1
+        //    Docs: 2
+        //    Test: 3
+        //
         // </CommonOperators>
     }
 
@@ -163,8 +197,13 @@ public static class Program
 
         foreach (IGrouping<char, string> group in groups)
         {
-            Console.WriteLine($"{group.Key}: {string.Join(", ", group)}"); // => a: api, auth, then d: docs, deploy
+            Console.WriteLine($"{group.Key}: {string.Join(", ", group)}");
         }
+        // This example produces the following output:
+        //
+        //    a: api, auth
+        //    d: docs, deploy
+        //
         // </GroupBy>
     }
 
@@ -177,10 +216,17 @@ public static class Program
 
         workItems.Add("deploy");
 
+        // The query runs here, when foreach asks for the results.
         foreach (string item in query)
         {
-            Console.WriteLine(item); // => design, then docs, then deploy
+            Console.WriteLine(item);
         }
+        // This example produces the following output:
+        //
+        //    design
+        //    docs
+        //    deploy
+        //
         // </DeferredExecution>
     }
 
@@ -191,13 +237,20 @@ public static class Program
 
         IEnumerable<string> query = workItems.Where(item => item.StartsWith('d'));
 
+        // Count() reads the matching elements right when this line runs.
         int count = query.Count();
-        Console.WriteLine($"Count before add: {count}"); // => Count before add: 2
+        Console.WriteLine($"Count before add: {count}");
 
         workItems.Add("deploy");
 
-        Console.WriteLine($"Stored count: {count}"); // => Stored count: 2
-        Console.WriteLine($"Current count: {query.Count()}"); // => Current count: 3
+        Console.WriteLine($"Stored count: {count}");
+        Console.WriteLine($"Current count: {query.Count()}");
+        // This example produces the following output:
+        //
+        //    Count before add: 2
+        //    Stored count: 2
+        //    Current count: 3
+        //
         // </ImmediateExecution>
     }
 
@@ -225,8 +278,13 @@ public static class Program
 
         foreach (string title in topOpenItems)
         {
-            Console.WriteLine(title); // => api, then tests
+            Console.WriteLine(title);
         }
+        // This example produces the following output:
+        //
+        //    api
+        //    tests
+        //
         // </ComposeQuerySyntax>
     }
 

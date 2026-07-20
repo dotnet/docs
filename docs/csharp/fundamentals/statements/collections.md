@@ -17,7 +17,7 @@ A *collection* is an object that stores multiple related values. Each value in a
 
 ## Choose a collection shape
 
-Choose the collection that matches how your code uses the data. A *sequence* stores elements in order so you can reach them by position. Use an *array*, which is represented by <xref:System.Array>, when you know the number of positions the sequence needs. An array's length can't change after you create it, but you can replace the element stored at an existing position. Use <xref:System.Collections.Generic.List`1> when you need a sequence that can add or remove elements. A *map* stores values that you reach by key instead of by position. Use <xref:System.Collections.Generic.Dictionary`2> when each element has a lookup key, such as a name, ID, or code. The examples use a *collection expression*, which creates a collection from expressions between square brackets; [later in this article](#create-collections-with-collection-expressions), you learn the syntax in more detail.
+Choose the collection that matches how your code uses the data. A *sequence* stores elements in order so you can reach them by position. Use an *array*, which is represented by <xref:System.Array>, when you know the number of positions the sequence needs. An array's length can't change after you create it, but you can replace the element stored at an existing position. Use <xref:System.Collections.Generic.List`1> when you need a sequence that can add or remove elements. A *dictionary* stores values that you reach by key instead of by position. Use <xref:System.Collections.Generic.Dictionary`2> when each element has a lookup key, such as a name, ID, or code. The examples use a *collection expression*, which creates a collection from expressions between square brackets. The "Create collections with collection expressions" section explains that syntax in more detail.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ChooseCollection":::
 
@@ -47,7 +47,10 @@ Use <xref:System.Collections.Generic.List`1.Insert*> to add one element at a spe
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="ListInsertRemove":::
 
-Adding or removing at the end of a <xref:System.Collections.Generic.List`1> is fast. Adding with <xref:System.Collections.Generic.List`1.Add*> is an O(1) operation on average, and removing the last element with <xref:System.Collections.Generic.List`1.RemoveAt*> is O(1). Inserting or removing at the front or middle is O(n) because every later element shifts to a new index. Big-O notation describes how the work grows as the collection size, `n`, grows. O(1), pronounced "order one," means the operation takes about the same amount of work no matter how many elements the collection contains. O(n), pronounced "order n," means the work grows roughly in proportion to the number of elements. If your code frequently inserts or removes at the front, a <xref:System.Collections.Generic.List`1> might be the wrong collection shape.
+Adding or removing at the end of a <xref:System.Collections.Generic.List`1> is fast. Adding with <xref:System.Collections.Generic.List`1.Add*> is an O(1) operation on average, and removing the last element with <xref:System.Collections.Generic.List`1.RemoveAt*> is O(1). Inserting or removing at the front or middle is O(n) because every later element shifts to a new index. If your code frequently inserts or removes at the front, a <xref:System.Collections.Generic.List`1> might be the wrong collection shape.
+
+> [!TIP]
+> Big-O notation describes how the work grows as the collection size, `n`, grows. O(1), pronounced "order one," means the operation takes about the same amount of work no matter how many elements the collection contains. O(n), pronounced "order n," means the work grows roughly in proportion to the number of elements in the collection.
 
 ## Associate a value by key with `Dictionary<TKey,TValue>`
 
@@ -55,9 +58,9 @@ A <xref:System.Collections.Generic.Dictionary`2> stores key/value pairs. A *key/
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="DictionaryLookup":::
 
-An *indexer* lets you use bracket syntax to access a value from an object. The dictionary indexer is useful when the key must exist or when you're assigning a value. <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> is safer for reads when the key might be missing because it reports both outcomes without throwing an exception. For more information about the indexer operator, see [Member access operators](../../language-reference/operators/member-access-operators.md#indexer-operator-) in the language reference.
+An *indexer* lets you use bracket syntax to access a value from an object. The dictionary indexer is useful when the key must exist or when you're assigning a value. <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> checks whether a key exists and gives you the value when it does. For more information about the indexer operator, see [Member access operators](../../language-reference/operators/member-access-operators.md#indexer-operator-) in the language reference.
 
-You can also change the value associated with a key that already exists. When your code knows the dictionary contains the key, assign through the indexer. When the key might or might not exist and you need to react to the current value, use <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> first, then assign the new value:
+You can also change the value associated with a key that already exists. Assign through the indexer to add a key or replace the value for an existing key. If the replacement depends on the current value, read the value first, then assign the new value:
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="DictionaryUpdates":::
 
@@ -67,25 +70,21 @@ A *collection expression* creates a collection from expressions between square b
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="CollectionExpressions":::
 
-Collection expressions keep initialization concise. A collection expression has no type of its own. Because `[...]` is typeless by itself, the compiler converts the expression into the collection shape the context calls for. The receiving variable or parameter can turn it into an array, a <xref:System.Collections.Generic.List`1>, or other supported collection type.
+Collection expressions keep initialization concise. A collection expression has no type of its own. The compiler converts the expression into the collection shape the context calls for. The receiving variable or parameter can turn it into an array, a <xref:System.Collections.Generic.List`1>, or other supported collection type.
 
 ## Read from positions with indexes and ranges
 
-An <xref:System.Index> can count from the end of a sequence with `^`, and a <xref:System.Range> can select a slice with `..` (a sequence of 2 dots). Arrays and `List<T>` support both indexes and ranges.
+Indexes answer "which single element?" Ranges answer "which contiguous slice?" Use indexes when your code needs one element and ranges when the subsection is part of the data you're working with. Arrays and `List<T>` support both indexes and ranges.
 
-Use a from-end index with `^` when you want to count backward from the end. The expression `phases[^1]` reads the last element, and `phases[^2]` reads the next-to-last element.
+An <xref:System.Index> can count from the start or from the end of a sequence. Use the number directly to count from the start: `phases[0]` reads the first element, and `phases[1]` reads the second element. Use `^` to count from the end: `phases[^1]` reads the last element, and `phases[^2]` reads the next-to-last element.
 
-Use a range `a..b` when you want elements from position `a` up to, but not including, position `b`. The expression `phases[1..3]` creates a new array that contains positions `1` and `2`.
+An <xref:System.Range> selects a slice with `..` (two dots). The range operator isn't the same as the spread element you saw earlier in collection expressions, even though both use dots. Use a range `a..b` when you want elements from index `a` up to, but ***not including***, index `b`. The expression `phases[1..3]` creates a new array that contains the elements at index `1` and index `2`.
 
-Use an open-start range `..b` when the slice starts at the beginning. The expression `phases[..2]` returns the first two elements.
-
-Use an open-end range `a..` when the slice continues through the last element. The expression `phases[2..]` returns the elements from position `2` to the end.
-
-Use the full range `..` when you want a copy of the whole array. The expression `phases[..]` creates a new array with all the same elements.
+You can omit one or both range indexes. Omit the start index when the slice starts at the beginning, as in `phases[..2]` for the first two elements. Omit the end index when the slice continues through the last element, as in `phases[2..]` for the elements from index `2` to the end. Omit both indexes when you want a copy of the whole array, as in `phases[..]`. A range can mix index kinds. The expression `phases[1..^1]` combines a from-start index and a from-end index to return the middle elements, `code` and `test`.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="IndexesAndRanges":::
 
-Indexes answer "which single element?" Ranges answer "which contiguous slice?" Use indexes when your code needs one position and ranges when the subsection is part of the data you're working with. For more information about indexes and ranges, see the [Explore ranges of data using indices and ranges](../../tutorials/ranges-indexes.md) tutorial.
+For more information about indexes and ranges, see [Explore ranges of data using indices and ranges](../../tutorials/ranges-indexes.md) in the tutorials.
 
 ## See also
 

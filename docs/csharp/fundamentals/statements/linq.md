@@ -9,15 +9,15 @@ ai-usage: ai-assisted
 # LINQ queries
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For more information about providers, operators, and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. For more information about providers, operators, and advanced scenarios, see [Language Integrated Query (LINQ)](../../linq/index.md).
 >
 > **Coming from another language?** LINQ query syntax reads like a SQL-style query written inside C#. LINQ method syntax reads like chained collection operations in JavaScript, Java streams, or Python pipelines. Both forms describe the same query.
 
-*Language Integrated Query (LINQ)* is the C# feature set for querying data with C# syntax. A *query* describes which data to read and how to shape the result. A query reads from a *data source*. A data source can be an in-memory collection, such as an array or <xref:System.Collections.Generic.List`1>, or an external source, such as a database or XML, exposed through a LINQ provider. A *LINQ provider* is a library that connects LINQ syntax to a specific kind of data source. A *sequence* is an ordered set of elements represented by <xref:System.Collections.Generic.IEnumerable`1>. This article uses in-memory collections for its examples; for more information about provider-based queries, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
+*Language Integrated Query (LINQ)* is the C# feature set for querying data with C# syntax. Many LINQ operators use *deferred execution*: they describe the result first and read the data later, when your code asks for the results. A *query* describes which data to read and how to shape the result. A query reads from a *data source*. A data source can be an in-memory collection, such as an array or <xref:System.Collections.Generic.List`1>, or an external source, such as a database or XML, exposed through a LINQ provider. A *LINQ provider* is a library that connects LINQ syntax to a specific kind of data source. This article uses in-memory collections for its examples. A *sequence* is an ordered set of elements represented by <xref:System.Collections.Generic.IEnumerable`1>. For more information about provider-based queries, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
 
 ## LINQ query expression syntax
 
-The examples in this article read [in-memory collections](collections.md) such as arrays and <xref:System.Collections.Generic.List`1>. A query usually has three parts: specify the data source, describe the result, and enumerate the source to produce the result. To *enumerate* a sequence means to read its elements one at a time, often with `foreach`.
+The examples in this article read in-memory collections such as arrays and <xref:System.Collections.Generic.List`1>. A query usually has three parts: specify the data source, describe the result, and enumerate the source to produce the result. To *enumerate* a sequence means to read its elements one at a time, often with `foreach`.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="QuerySyntax":::
 
@@ -45,7 +45,7 @@ A *lambda expression* is an anonymous function that you can pass as an argument.
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="LambdaExpressions":::
 
-In `name => name.Length == 3`, `name` is the input element and `name.Length == 3` is the Boolean expression that decides whether the element belongs in the result. For more information about lambda expressions and delegate types, see [Lambda expressions, delegates, and events](../types/delegates-lambdas.md) in the fundamentals. For detailed information about lambda expression syntax, see [Lambda expressions - Lambda expressions and anonymous functions](../../language-reference/operators/lambda-expressions.md) in the language reference.
+In `name => name.Length == 3`, `name` is the input element and `name.Length == 3` is the Boolean expression that decides whether the element belongs in the result. For more information about lambda expressions and delegate types, see [Lambda expressions, delegates, and events](../types/delegates-lambdas.md) in the fundamentals.
 
 Query-syntax clauses use lambda expressions too. Clauses such as `where`, `orderby`, and `select` compile to method calls that take lambda expressions. The range variable becomes the lambda parameter, and the clause expression becomes the lambda body. Query syntax is a concise way to write those same lambdas:
 
@@ -53,7 +53,13 @@ Query-syntax clauses use lambda expressions too. Clauses such as `where`, `order
 
 ## Common LINQ methods
 
-Use <xref:System.Linq.Enumerable.Where*> to keep only the elements that match a condition. Use <xref:System.Linq.Enumerable.Select*> to transform each element into a new value; C# calls this operation a *projection*. Use <xref:System.Linq.Enumerable.OrderBy*> to sort elements. Use aggregation methods such as <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.Count*>, and <xref:System.Linq.Enumerable.Aggregate*> to produce a single value from all elements in the data source. These methods are in the <xref:System.Linq> namespace and work with sequences such as <xref:System.Collections.Generic.IEnumerable`1>.
+The most common LINQ methods cover the everyday steps of a query: filter data, shape results, sort, group, and summarize. These methods are in the <xref:System.Linq> namespace and work with sequences such as <xref:System.Collections.Generic.IEnumerable`1>.
+
+- <xref:System.Linq.Enumerable.Where*> keeps only the elements that match a condition.
+- <xref:System.Linq.Enumerable.Select*> transforms each element into a new value. C# calls this operation a *projection*.
+- <xref:System.Linq.Enumerable.OrderBy*> sorts elements.
+- <xref:System.Linq.Enumerable.GroupBy*> creates groups of elements that share a key.
+- Aggregation methods such as <xref:System.Linq.Enumerable.Sum*>, <xref:System.Linq.Enumerable.Count*>, and <xref:System.Linq.Enumerable.Aggregate*> produce a single value from all elements in the data source.
 
 > [!NOTE]
 > If you know the traditional functional-programming terms, <xref:System.Linq.Enumerable.Where*> is a *filter*, <xref:System.Linq.Enumerable.Select*> is a *map* (C# calls it a projection), and aggregation methods such as <xref:System.Linq.Enumerable.Aggregate*>, <xref:System.Linq.Enumerable.Sum*>, and <xref:System.Linq.Enumerable.Count*> are a *reduce*.
@@ -68,7 +74,7 @@ Use <xref:System.Linq.Enumerable.GroupBy*> when the result should contain groups
 
 :::code language="csharp" source="./snippets/linq-statements/Program.cs" id="GroupBy":::
 
-Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see the [Language Integrated Query (LINQ)](../../linq/index.md) section.
+Grouping is useful for summaries, reports, and menus. For more information about joins, nested groupings, and provider-specific behavior, see [Language Integrated Query (LINQ)](../../linq/index.md) in the LINQ section.
 
 ## Run a query
 

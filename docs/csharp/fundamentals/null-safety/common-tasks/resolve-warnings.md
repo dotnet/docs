@@ -3,7 +3,7 @@ title: Resolve nullable warnings
 description: Learn the five techniques you use to address nullable warnings in C# and make your code resilient to null reference exceptions.
 ms.date: 05/04/2026
 ms.topic: concept-article
-ms.subservice: null-safety
+ms.subservice: nullable-reference-types
 ai-usage: ai-assisted
 ---
 # Resolve nullable warnings

@@ -3,7 +3,7 @@ title: Nullable migration strategies
 description: Learn how to enable nullable reference types in an existing C# codebase. Choose a default context, address warnings progressively, and fully migrate.
 ms.date: 05/04/2026
 ms.topic: concept-article
-ms.subservice: null-safety
+ms.subservice: nullable-reference-types
 ai-usage: ai-assisted
 ---
 # Nullable migration strategies

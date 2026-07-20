@@ -24,7 +24,6 @@ Millions of developers use .NET to create applications that run on the web, on m
 .NET libraries support a wide range of AI service providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers that integrate with `Microsoft.Extensions.AI`:
 
 | Provider | Description |
-|----------|------------------------|---------------------------|-----------------|-------------|
 |----------|------------------|
 | OpenAI | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
 | Azure OpenAI | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |

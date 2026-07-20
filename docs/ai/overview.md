@@ -25,6 +25,7 @@ Millions of developers use .NET to create applications that run on the web, on m
 
 | Provider | Description |
 |----------|------------------------|---------------------------|-----------------|-------------|
+|----------|------------------|
 | OpenAI | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
 | Azure OpenAI | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
 | Azure AI Foundry | Microsoft's managed platform for building and deploying AI agents at scale |

@@ -202,6 +202,28 @@ public static class GenericExtensions
 }
 // </GenericExtension>
 
+// <ExtensionIndexer>
+/// <summary>
+/// Contains an extension indexer for numeric sequences.
+/// </summary>
+public static class SequenceIndexer
+{
+    /// <summary>
+    /// Defines an indexer for integer sequences.
+    /// </summary>
+    /// <param name="sequence">The sequence used as a receiver.</param>
+    extension(IEnumerable<int> sequence)
+    {
+        /// <summary>
+        /// Gets the element at the specified position in the sequence.
+        /// </summary>
+        /// <param name="index">The zero-based position of the element to retrieve.</param>
+        /// <value>The element at the specified position.</value>
+        public int this[int index] => sequence.ElementAt(index);
+    }
+}
+// </ExtensionIndexer>
+
 public static class ExtensionExamples
 {
     public static void BasicExample()
@@ -219,5 +241,9 @@ public static class ExtensionExamples
         var newSequence = IEnumerable<int>.Generate(5, 10, 2);
         var identity = IEnumerable<int>.Identity;
         // </UseStaticExtensions>
+
+        // <UseExtensionIndexer>
+        int third = numbers[2];
+        // </UseExtensionIndexer>
     }
 }

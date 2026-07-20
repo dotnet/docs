@@ -259,6 +259,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-directive-errors#cs0116"
     },
     {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0163.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0178.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
     },
@@ -309,6 +313,10 @@
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0417.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/generic-type-parameters-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0446.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0467.md",
@@ -435,8 +443,16 @@
       "redirect_url": "/dotnet/csharp/misc/cs1503"
     },
     {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1546.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/indexer-access-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1564.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/invalid-build-command-line"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1579.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1614.md",
@@ -445,6 +461,10 @@
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1616.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/invalid-build-command-line"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1640.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1656.md",
@@ -653,6 +673,10 @@
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8418.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#implementing-idisposable-and-iasyncdisposable"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8422.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/local-function-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8515.md",
@@ -1801,6 +1825,14 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
     },
     {
+      "source_path_from_root": "/docs/csharp/misc/cs0126.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0127.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs0132.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/constructor-errors#static-constructors"
     },
@@ -1809,12 +1841,28 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-directive-errors"
     },
     {
+      "source_path_from_root": "/docs/csharp/misc/cs0139.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs0144.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/new-object-creation-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0148.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/delegate-function-pointer-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0153.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0159.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0161.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0171.md",
@@ -1847,6 +1895,10 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs0200.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/property-declaration-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0202.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0206.md",
@@ -1911,6 +1963,10 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs0227.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/unsafe-code-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0230.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0231.md",
@@ -1987,6 +2043,18 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs0277.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/interface-implementation-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0278.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0279.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0280.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0282.md",
@@ -2191,6 +2259,10 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs0466.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/params-arrays"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0469.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/jump-statement-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0470.md",

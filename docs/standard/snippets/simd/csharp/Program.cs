@@ -52,12 +52,15 @@ Console.WriteLine($"MultiplyAdd = [{string.Join(", ", TensorPrimitivesExample.Mu
 Console.WriteLine($"CosineSimilarity(a, a) = {TensorPrimitivesExample.CosineSimilarity(a, a)}");
 Console.WriteLine();
 
-if (Sse3.IsSupported && Avx.IsSupported)
+if (Sse3.IsSupported)
 {
     Vector128<float> v128 = Vector128.Create(1f, 2f, 3f, 4f);
-    Vector256<float> v256 = Vector256.Create(1f, 2f, 3f, 4f, 10f, 20f, 30f, 40f);
-
     Console.WriteLine($"SumVector128       = {LaneCrossingExample.SumVector128(v128)}");
+}
+
+if (Avx.IsSupported)
+{
+    Vector256<float> v256 = Vector256.Create(1f, 2f, 3f, 4f, 10f, 20f, 30f, 40f);
     Console.WriteLine($"SumVector256Naive  = {LaneCrossingExample.SumVector256Naive(v256)}");
     Console.WriteLine($"SumVector256       = {LaneCrossingExample.SumVector256(v256)}");
 }

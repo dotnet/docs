@@ -121,7 +121,7 @@ round 1: [ a+b | c+d | a+b | c+d ]
 round 2: [  S  |  S  |  S  |  S  ]   (S = a+b+c+d)
 ```
 
-That's exactly what a horizontal reduction does: sum a vector's elements with two rounds of pairwise adds. On `Vector128<float>` (4 elements), two calls to <xref:System.Runtime.Intrinsics.X86.Sse3.HorizontalAdd*> get you the full sum:
+That's exactly what a horizontal reduction does: sum a vector's elements with two rounds of pairwise adds. On x86/x64, `Vector128<float>` (4 elements) gets you there with two calls to <xref:System.Runtime.Intrinsics.X86.Sse3.HorizontalAdd*>:
 
 :::code language="csharp" source="./snippets/simd/csharp/LaneCrossingExample.cs" id="SumVector128":::
 

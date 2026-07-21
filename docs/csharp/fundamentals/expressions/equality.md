@@ -55,7 +55,7 @@ A plain `struct` inherits <xref:System.ValueType.Equals*> from <xref:System.Valu
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="StructEquality":::
 
-Structs don't get a predefined `==` operator. Writing `p1 == p2` on a plain struct compiles only if the struct declares its own `operator ==`. Use <xref:System.Object.Equals*> directly to compare plain structs, or implement <xref:System.IEquatable`1> to add typed equality and avoid the reflection overhead in the default <xref:System.ValueType.Equals*> implementation.
+Structs don't get a predefined `==` operator. Writing `p1 == p2` on a plain struct compiles only if the struct declares its own `operator ==`. A struct can declare `==`/`!=` without implementing <xref:System.IEquatable`1>, and it can implement <xref:System.IEquatable`1> without declaring those operators; the language treats those choices independently. For a complete, efficient value-type equality implementation, you typically provide both: a user-defined `==`/`!=` pair for operator comparisons and <xref:System.IEquatable`1> for typed equality that avoids the reflection overhead in the default <xref:System.ValueType.Equals*> implementation. Use <xref:System.Object.Equals*> directly when comparing plain structs that don't declare operators.
 
 ## Records provide value equality automatically
 
@@ -69,7 +69,7 @@ The same compiler generation applies to `record struct` types:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordStructEquality":::
 
-Unlike a plain `struct`, a `record struct` generates `==` and `!=` operators in addition to <xref:System.Object.Equals*>. For more information about record types and their equality semantics, see [Records](../types/records.md).
+Record types generate the whole equality set for their own type. Both `record class` and `record struct` types include a strongly typed `Equals(T?)` implementation, which means they implement <xref:System.IEquatable`1>, along with <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*>. They also generate `==` and `!=` operators. Unlike a plain `struct`, a `record struct` therefore supports `==` and `!=` automatically. For more information about record types and their equality semantics, see [Records](../types/records.md).
 
 ## Tuples use value equality
 
@@ -81,23 +81,27 @@ For more information about tuple syntax and deconstruction, see [Tuples and deco
 
 ## Add value equality to your own types
 
-When a class or struct represents a value — a color, a measurement, a currency amount — you want two instances with the same data to compare as equal. Prefer `record class` or `record struct` first. Record types exist to generate value equality for you, including <xref:System.Object.Equals*>, <xref:System.Object.GetHashCode*>, and `==`/`!=` operators. For more information about record types, see [Records](../types/records.md).
+> [!IMPORTANT]
+> This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead — it generates all these members for you. Implement them manually only when your type can't be a record.
 
-Use the manual <xref:System.IEquatable`1> path only when you must, such as when the type has mutable state, complex construction rules, or another constraint that prevents it from being a record. The interface requires one member: a strongly typed `Equals(T?)` method that avoids boxing and provides the most efficient comparison path:
+When a class or struct represents a value — a color, a measurement, a currency amount — and it can't be a `record`, implement a consistent set of equality members. <xref:System.IEquatable`1> is only the typed part: the interface requires `Equals(T?)`, but a correct value-equality type provides all the related members so every equality path agrees. The language doesn't force the object override, hash code override, or operators, except that user-defined `==` and `!=` must be declared as a pair.
+
+In a complete manual implementation, provide these members together:
+
+- `Equals(T?)`, declared by implementing <xref:System.IEquatable`1>. Compare the fields you care about.
+- An `override` of <xref:System.Object.Equals*> that delegates to the typed version. This override keeps object-level equality consistent.
+- An `override` of <xref:System.Object.GetHashCode*>. Objects that are equal must return the same hash code. Without this pairing, the type behaves incorrectly in hash-based collections such as `Dictionary<TKey,TValue>` or `HashSet<T>`. See <xref:System.Object.GetHashCode*> for guidance on a correct implementation.
+- `==` and `!=` operators. Add them as a pair because the compiler requires a type that overloads one to overload the other.
+
+The following example starts with the typed `Equals(T?)`, <xref:System.Object.Equals*>, and <xref:System.Object.GetHashCode*> members so you can see their effect before operators are added:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="ColorDefinition":::
 
-In practice, provide these related members together:
-
-- The typed `Equals(T?)` required by <xref:System.IEquatable`1>. Compare the fields you care about.
-- An `override` of <xref:System.Object.Equals*> that delegates to the typed version. This override isn't part of <xref:System.IEquatable`1>, but it keeps object-level equality consistent.
-- An `override` of <xref:System.Object.GetHashCode*>. This override isn't part of <xref:System.IEquatable`1>, but objects that are equal must return the same hash code. Without this pairing, the type behaves incorrectly in hash-based collections such as `Dictionary<TKey,TValue>` or `HashSet<T>`. See <xref:System.Object.GetHashCode*> for guidance on a correct implementation.
-
-After implementing <xref:System.IEquatable`1>, `Equals` reflects value equality, but `==` still tests identity for classes unless you also add operator overloads. Plain structs still don't have a predefined `==` operator unless you declare one:
+At this point, `Equals` reflects value equality, but `==` still tests identity for the class because the type hasn't declared `==` and `!=` operators. Plain structs likewise still don't have a predefined `==` operator unless you declare one:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="IEquatableUsage":::
 
-Adding `==` and `!=` operators is a separate step, and the compiler requires them as a pair. For details, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
+Adding `==` and `!=` operators completes the member set. For details, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
 
 ## `Object.ReferenceEquals` — test identity directly
 

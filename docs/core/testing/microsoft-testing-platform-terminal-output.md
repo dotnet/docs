@@ -45,9 +45,9 @@ The progress bar is written based on the selected mode:
 
 To animate the progress bar, the ANSI progress renderer takes control of the terminal cursor and repeatedly redraws the bottom of the screen. Any text that's written directly to `stdout` or `stderr` outside the test framework's capture path can be overwritten or removed during this redraw. For example, a `Console.WriteLine` call from assembly-level or session-level lifecycle code (such as a `Before(Assembly)` or `Before(TestSession)` hook), or from an extension, might flash briefly and then disappear when the progress bar refreshes.
 
-This behavior is distinct from *captured* per-test standard output and error. Text that a test writes while it runs is captured by the framework and shown according to `--show-stdout` and `--show-stderr`, so the animated progress bar doesn't overwrite it.
+This behavior is distinct from *captured* per-test standard output and standard error. Output that a test writes while it runs is captured by the framework and shown according to `--show-stdout` and `--show-stderr`, so the progress bar doesn't overwrite it.
 
-If your code must write directly to the console and you need that output to remain visible, use `--progress off` to disable the animated progress bar. Alternatively, `--ansi off` switches to the append-only progress renderer, which writes progress as new lines instead of redrawing in place and so doesn't overwrite prior direct output.
+If your code must write directly to the console and you need that output to remain visible, disable progress (`--progress off` in MTP 2.3.0+, or `--no-progress` in earlier versions). Alternatively, disable ANSI (`--ansi off` in MTP 2.3.0+, or `--no-ansi` in earlier versions) to use the non-ANSI progress output, which appends new lines instead of redrawing in place and doesn't overwrite prior direct output.
 
 ## Options
 

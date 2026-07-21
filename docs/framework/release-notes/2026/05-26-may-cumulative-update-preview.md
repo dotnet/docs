@@ -3,7 +3,7 @@ title: May 2026 cumulative update preview
 description: Learn about the improvements in the .NET Framework May 2026 cumulative update preview.
 ms.date: 05/26/2026
 ---
-# May 2026 cumulative update preview
+# .NET Framework May 2026 cumulative update preview
 
 _Released May 26, 2026_
 

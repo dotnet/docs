@@ -152,7 +152,7 @@ Please note that the `ValidateCommandLineOptionsAsync` method provides the [`ICo
 
 The `ITestSessionLifetimeHandler` is an *in-process* extension that enables the execution of code *before* and *after* the test session.
 
-To register a custom `ITestSessionLifetimeHandler`, utilize the following API:
+To register a custom `ITestSessionLifetimeHandler`, use the following API:
 
 ```csharp
 var builder = await TestApplication.CreateBuilderAsync(args);
@@ -206,7 +206,7 @@ Consider the following details for this API:
 
 `OnTestSessionFinishingAsync`: This method is invoked after the completion of the test session, ensuring that the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) has finished executing all tests and has reported all relevant data to the platform. Typically, in this method, the extension employs the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to transmit custom assets or data to the shared platform bus. This method can also signal to any custom *out-of-process* extension that the test session has concluded.
 
-Finally, the `ITestSessionContext` exposes a `CancellationToken` which the extension is expected to honor.
+Finally, the `ITestSessionContext` exposes a `CancellationToken` that the extension is expected to honor.
 
 If your extension requires intensive initialization and you need to use the async/await pattern, you can refer to the [`Async extension initialization and cleanup`](#asynchronous-initialization-and-cleanup-of-extensions). If you need to *share state* between extension points, you can refer to the [`CompositeExtensionFactory<T>`](#the-compositeextensionfactoryt) section.
 
@@ -444,7 +444,7 @@ await messageBus.PublishAsync(
 ```
 
 > [!IMPORTANT]
-> `TestNodeFileArtifact` is obsolete and was removed in MTP 2.0.0. Use `FileArtifactProperty` on the `TestNode` to attach test-level files. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#removed-obsolete-types).
+> `TestNodeFileArtifact` is obsolete and was removed in MTP 2.0.0. To attach test-level files, use `FileArtifactProperty` on the `TestNode`. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#removed-obsolete-types).
 
 > [!NOTE]
 > MTP 2.4.0 (unreleased as of July 2026) adds an experimental `kind` constructor overload and `Kind` property to `FileArtifact` and `SessionFileArtifact` (requires the `TPEXP` diagnostic to be suppressed). `Kind` is a producer-asserted, reverse-DNS identifier of the artifact *format* (for example, `microsoft.testing.trx`, `microsoft.testing.junit`, `microsoft.testing.ctrf`, or `microsoft.testing.html`) that post-processing can use to group artifacts of the same format for consolidation. Leave it `null` or omit it when the producer doesn't declare a known kind. At this time, `Kind` is only a metadata contract; don't assume broad merge orchestration beyond that.

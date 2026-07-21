@@ -1,6 +1,6 @@
 ---
-title: "Object equality in C#"
-description: Learn how C# determines whether two values are equal. Understand value equality, reference equality, ==, !=, Equals, GetHashCode, ReferenceEquals, and IEquatable<T> for classes, structs, records, and tuples.
+title: "C# Equality comparisons"
+description: Learn how C# compares values and references with ==, !=, Equals, GetHashCode, and ReferenceEquals for classes, structs, records, and tuples.
 ms.date: 07/21/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
@@ -69,7 +69,7 @@ The same compiler generation applies to `record struct` types:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordStructEquality":::
 
-Record types generate the whole equality set for their own type. Both `record class` and `record struct` types include a strongly typed `Equals(T?)` implementation, which means they override <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*>. They also generate `==` and `!=` operators. Unlike a plain `struct`, a `record struct` therefore supports `==` and `!=` automatically. For more information about record types and their equality semantics, see [Records](../types/records.md).
+Record types generate the whole equality set for their own type. Both `record class` and `record struct` types override <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*>. They also generate `==` and `!=` operators, plus a strongly typed `Equals(T?)` implementation. Unlike a plain `struct`, a `record struct` therefore supports `==` and `!=` automatically. For more information about record types and their equality semantics, see [Records](../types/records.md).
 
 ## Tuples use value equality
 
@@ -84,7 +84,7 @@ For more information about tuple syntax and deconstruction, see [Tuples and deco
 > [!IMPORTANT]
 > This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead — it generates all these members for you. Implement them manually only when your type can't be a record.
 
-When a class or struct represents a value — a color, a measurement, a currency amount — and it can't be a `record`, implement a consistent set of equality members. A correct value-equality type provides all the related members so every equality path agrees. The language enforces that user-defined `==` and `!=` must be declared as a pair. If you provide those, you'll get a warning if you don't also override <xref:System.Object.GetHashCode?displayProperty=nameWithType>
+When a class or struct represents a value — a color, a measurement, a currency amount — and it can't be a `record`, implement a consistent set of equality members. A correct value-equality type provides all the related members so every equality path agrees. The language enforces that user-defined `==` and `!=` must be declared as a pair. If you provide those operators, the compiler warns you if you don't also override <xref:System.Object.Equals?displayProperty=nameWithType> (CS0660) and <xref:System.Object.GetHashCode?displayProperty=nameWithType> (CS0661).
 
 In a complete manual implementation, provide these members:
 
@@ -93,7 +93,7 @@ In a complete manual implementation, provide these members:
 - An `override` of <xref:System.Object.GetHashCode*>. Objects that are equal must return the same hash code. Without this pairing, the type behaves incorrectly in hash-based collections such as `Dictionary<TKey,TValue>` or `HashSet<T>`. See <xref:System.Object.GetHashCode*> for guidance on a correct implementation.
 - `Equals(T?)`, declared by implementing <xref:System.IEquatable`1>. Compare the fields you care about.
 
-The following example starts with the typed `Equals(T?)`, <xref:System.Object.Equals*>, and <xref:System.Object.GetHashCode*> members so you can see their effect before operators are added:
+The following example starts with the <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*> overrides, plus a typed `Equals(T?)` member, so you can see their effect before the `==` and `!=` operators are added:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="ColorDefinition":::
 

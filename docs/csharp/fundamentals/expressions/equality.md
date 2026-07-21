@@ -55,7 +55,7 @@ A plain `struct` inherits <xref:System.ValueType.Equals*> from <xref:System.Valu
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="StructEquality":::
 
-A plain `struct` inherits `Equals` from <xref:System.ValueType>, which gives field-by-field value equality, but structs don't get a predefined `==` operator. Writing `p1 == p2` on a plain struct compiles only if the struct declares its own `operator ==`. Use <xref:System.Object.Equals*> directly to compare plain structs, or implement <xref:System.IEquatable`1> to add typed equality and avoid the reflection overhead in the default <xref:System.ValueType.Equals*> implementation.
+Structs don't get a predefined `==` operator. Writing `p1 == p2` on a plain struct compiles only if the struct declares its own `operator ==`. Use <xref:System.Object.Equals*> directly to compare plain structs, or implement <xref:System.IEquatable`1> to add typed equality and avoid the reflection overhead in the default <xref:System.ValueType.Equals*> implementation.
 
 ## Records provide value equality automatically
 

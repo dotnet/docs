@@ -9,7 +9,7 @@ ms.update-cycle: 3650-days
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10.
+This article describes new features and enhancements in the .NET SDK for .NET 10. You can [download .NET 10 here](https://get.dot.net/10).
 
 ## .NET tools enhancements
 

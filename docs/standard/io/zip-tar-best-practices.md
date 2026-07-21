@@ -87,7 +87,7 @@ For untrusted inputâ€”user uploads, third-party downloads, or network transfersâ
 - [Validate file names](#validate-file-names)
 - [Validate destination paths](#validate-destination-paths)
 - [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar)
-- [Entry permission bits (Unix only)](#entry-permission-bits)
+- [Entry permission bits (Unix only)](#entry-permission-bits-unix-only)
 - [Complete safe extraction examples](#complete-safe-extraction-examples)
 
 ### What the convenience methods don't protect you from
@@ -170,7 +170,7 @@ For reference, <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayPrope
 
 ### Entry permission bits (Unix only)
 
-On Unix-like systems, the convenience APIs apply permission bits from the archive metadata to the extracted file/directory. These permissions may be too broad for the application scenario. E.g. applications may want to prevent extraction of files with executable permissions set. See [Unix file permissions](#unix-file-permissions) later in the document for more details.
+On Unix-like systems, the convenience APIs apply permission bits from the archive metadata to the extracted file/directory. These permissions might be too broad for the application scenario. Applications might want to prevent extraction of files with executable permissions set. See [Unix file permissions](#unix-file-permissions) later in the document for more details.
 
 ### Complete safe extraction examples
 

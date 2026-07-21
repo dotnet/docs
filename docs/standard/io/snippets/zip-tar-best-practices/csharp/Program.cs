@@ -114,9 +114,9 @@ void SafeExtractZip(string archivePath, string destinationDir,
         // allowed on certain filesystems or have a special meaning. Applications should
         // apply their own policies regarding allowed filenames. ValidateName is a placeholder
         // for such a policy.
-        if (!ValidateName(entry.Name))
+        if (!ValidateName(entry.FullName))
         {
-            throw new IOException($"Entry name '{entry.Name}' is not allowed.");
+            throw new IOException($"Entry name '{entry.FullName}' is not allowed.");
         }
 
         // ExternalAttributes carry permission bits for Unix platforms, by clearing the
@@ -203,7 +203,7 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
             throw new IOException($"Entry name '{entry.Name}' is not allowed.");
         }
 
-        // Mask the entry's permission bits to a safe subset, this subset may depend on your application's needs.
+        // Mask the entry's permission bits to a safe subset. This subset may depend on your application's needs.
         const UnixFileMode PermittedFileModes =
             UnixFileMode.UserRead | UnixFileMode.UserWrite |
             UnixFileMode.GroupRead |

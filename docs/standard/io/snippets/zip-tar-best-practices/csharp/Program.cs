@@ -71,6 +71,13 @@ void DangerousExtract(string extractDir)
 }
 // </VulnerablePattern>
 
+bool ValidateName(string name)
+{
+    // Placeholder for a policy that checks for allowed characters, reserved names, etc.
+    // For example, you might disallow names with invalid characters or reserved device names.
+    return !string.IsNullOrWhiteSpace(name) && !name.Contains("..");
+}
+
 // <SafeExtractZip>
 void SafeExtractZip(string archivePath, string destinationDir,
     long maxTotalSize, long maxEntrySize, int maxEntryCount)
@@ -102,6 +109,19 @@ void SafeExtractZip(string archivePath, string destinationDir,
                 $"Entry '{entry.FullName}' exceeds per-entry size limit.");
         if (totalSize > maxTotalSize)
             throw new InvalidOperationException("Archive exceeds total size limit.");
+
+        // The entry Name can contain arbitrary characters. Some characters may not be
+        // allowed on certain filesystems or have a special meaning. Applications should
+        // apply their own policies regarding allowed filenames. ValidateName is a placeholder
+        // for such a policy.
+        if (!ValidateName(entry.Name))
+        {
+            throw new IOException($"Entry name '{entry.Name}' is not allowed.");
+        }
+
+        // ExternalAttributes carry permission bits for Unix platforms, by clearing the
+        // attributes we enforce extraction with default file permissions.
+        entry.ExternalAttributes = 0;
 
         // Resolve the full destination path using Path.GetFullPath, which
         // normalizes away any "../" segments. Then verify the result still
@@ -173,6 +193,34 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
 
         if (!allowedTypes.Contains(entry.EntryType))
             continue;
+
+        // The entry Name can contain arbitrary characters. Some characters may not be
+        // allowed on certain filesystems or have a special meaning. Applications should
+        // apply their own policies regarding allowed filenames. ValidateName is a placeholder
+        // for such a policy.
+        if (!ValidateName(entry.Name))
+        {
+            throw new IOException($"Entry name '{entry.Name}' is not allowed.");
+        }
+
+        // Mask the entry's permission bits to a safe subset, this subset may depend on your application's needs.
+        const UnixFileMode PermittedFileModes =
+            UnixFileMode.UserRead | UnixFileMode.UserWrite |
+            UnixFileMode.GroupRead |
+            UnixFileMode.OtherRead;
+
+        const UnixFileMode PermittedDirectoryModes =
+            PermittedFileModes |
+            UnixFileMode.UserExecute | UnixFileMode.GroupExecute | UnixFileMode.OtherExecute;
+
+        if (entry.EntryType == TarEntryType.Directory)
+        {
+            entry.Mode &= PermittedDirectoryModes;
+        }
+        else
+        {
+            entry.Mode &= PermittedFileModes;
+        }
 
         // Normalize and validate the path, same as the ZIP example.
         string destPath = Path.GetFullPath(Path.Join(fullDestDir, entry.Name));

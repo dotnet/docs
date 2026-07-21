@@ -43,3 +43,5 @@ configuration:
                   label: code-of-conduct
             then:
               - closeIssue
+              - removeLabel:
+                  label: ':watch: Not Triaged'

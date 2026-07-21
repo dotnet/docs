@@ -3,7 +3,7 @@ title: Build a test framework for Microsoft.Testing.Platform (MTP)
 description: Learn how to create a custom test framework for Microsoft.Testing.Platform (MTP), including registration, lifecycle, and test node reporting.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 02/24/2026
+ms.date: 07/17/2026
 ai-usage: ai-assisted
 ---
 
@@ -390,7 +390,12 @@ internal sealed class TestingFramework
 }
 ```
 
-If your test adapter requires the publication of *files* during execution, you can find the recognized properties in this source file: <https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/FileArtifacts.cs>. As you can see, you can provide file assets in a general manner or associate them with a specific `TestNode`. Remember, if you intend to push a `SessionFileArtifact`, you must declare it to the platform in advance, as shown below:
+If your test adapter produces *files* during execution, the platform recognizes two distinct mechanisms, and the right one depends on whether the file belongs to a specific test or to the run as a whole. For details, see [Message bus file artifacts](./microsoft-testing-platform-architecture-extensions.md#message-bus-file-artifacts).
+
+- Run-level or session-level files are standalone bus messages: publish a `FileArtifact` (unscoped) or a `SessionFileArtifact` (scoped to the run through its `SessionUid`).
+- Test-specific attachments aren't standalone messages. Add them as `FileArtifactProperty` entries on `TestNode.Properties` inside a `TestNodeUpdateMessage`, so the terminal, `dotnet test`, and IDEs associate each file with its test.
+
+If you intend to publish a `SessionFileArtifact`, you must declare that runtime type to the platform in advance through `DataTypesProduced`, as shown below. Note that `FileArtifactProperty` isn't listed separately, because it travels inside a `TestNodeUpdateMessage` rather than as its own message type:
 
 ```csharp
 internal sealed class TestingFramework

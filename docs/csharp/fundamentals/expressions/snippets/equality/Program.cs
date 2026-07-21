@@ -46,7 +46,7 @@ var red1 = new Color(255, 0, 0);
 var red2 = new Color(255, 0, 0);
 
 Console.WriteLine(red1.Equals(red2)); // => True
-Console.WriteLine(red1 == red2);      // => False  (no == override; identity check)
+Console.WriteLine(red1 == red2);      // => False  (no == overload; identity check)
 // </IEquatableUsage>
 
 // <ReferenceEqualsDemo>

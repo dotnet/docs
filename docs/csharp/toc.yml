@@ -59,8 +59,6 @@ items:
       href: fundamentals/types/structs.md
     - name: Records
       href: fundamentals/types/records.md
-    - name: Equality
-      href: fundamentals/types/equality.md
     - name: Interfaces
       href: fundamentals/types/interfaces.md
     - name: Enumerations
@@ -117,6 +115,8 @@ items:
         href: fundamentals/tutorials/string-interpolation.md
   - name: Expressions and statements
     items:
+    - name: Equality
+      href: fundamentals/expressions/equality.md
     - name: Selection statements
       href: fundamentals/statements/selection.md
     - name: Iteration statements

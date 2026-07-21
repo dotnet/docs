@@ -61,7 +61,7 @@ The same compiler generation applies to `record struct` types:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordStructEquality":::
 
-Unlike a plain `struct`, a `record struct` generates `==` and `!=` operators in addition to <xref:System.Object.Equals*>. For more about record types and their equality semantics, see [Records](records.md).
+Unlike a plain `struct`, a `record struct` generates `==` and `!=` operators in addition to <xref:System.Object.Equals*>. For more about record types and their equality semantics, see [Records](../types/records.md).
 
 ## Tuples use value equality
 
@@ -69,11 +69,11 @@ C# tuples are value types. Two tuples are equal when every element value matches
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="TupleEquality":::
 
-For more about tuple syntax and deconstruction, see [Tuples and deconstruction](tuples.md).
+For more about tuple syntax and deconstruction, see [Tuples and deconstruction](../types/tuples.md).
 
 ## Add value equality to a class
 
-When a class represents a value — a color, a measurement, a currency amount — you want two instances with the same data to compare as equal. The simplest approach is the `record class` modifier, which generates all equality members automatically; see [Records](records.md).
+When a class represents a value — a color, a measurement, a currency amount — you want two instances with the same data to compare as equal. The simplest approach is the `record class` modifier, which generates all equality members automatically; see [Records](../types/records.md).
 
 When you need a full class with value equality — for example, because the type has mutable state, a complex constructor, or can't be a record — implement <xref:System.IEquatable`1>. The interface requires a strongly typed `Equals(T?)` method that avoids boxing and provides the most efficient comparison path:
 
@@ -101,11 +101,11 @@ A common use is inside an `Equals` override to short-circuit the full comparison
 
 ## See also
 
-- [Type system overview](index.md)
-- [Classes](classes.md)
-- [Structs](structs.md)
-- [Records](records.md)
-- [Tuples and deconstruction](tuples.md)
+- [Type system overview](../types/index.md)
+- [Classes](../types/classes.md)
+- [Structs](../types/structs.md)
+- [Records](../types/records.md)
+- [Tuples and deconstruction](../types/tuples.md)
 - [Equality operators (language reference)](../../language-reference/operators/equality-operators.md)
 - <xref:System.IEquatable`1>
 - <xref:System.Object.Equals*>

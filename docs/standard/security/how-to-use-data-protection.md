@@ -1,7 +1,8 @@
 ---
 title: "How to: Use Data Protection"
 description: Learn how to use data protection by accessing the data protection API (DPAPI) in .NET.
-ms.date: 07/14/2020
+ms.date: 07/22/2026
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -22,8 +23,6 @@ ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 > [!NOTE]
 > This article applies to Windows.
 >
-> If you target .NET on Windows, install the [`System.Security.Cryptography.ProtectedData`](https://www.nuget.org/packages/System.Security.Cryptography.ProtectedData/) NuGet package before you use <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.DataProtectionScope>.
->
 > For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).
 
 .NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.
@@ -34,7 +33,7 @@ Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a cop
 
 1. Create random entropy.
 
-2. Call the static <xref:System.Security.Cryptography.ProtectedData.Protect*> method while passing an array of bytes to encrypt, the entropy, and the data protection scope.
+2. Call the static <xref:System.Security.Cryptography.ProtectedData.Protect*> method while passing an array of bytes to encrypt, the entropy, and (if applicable) the data protection scope.
 
 3. Write the encrypted data to a file or stream.
 
@@ -42,7 +41,7 @@ Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a cop
 
 1. Read the encrypted data from a file or stream.
 
-2. Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect*> method while passing an array of bytes to decrypt and the data protection scope.
+2. Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect*> method while passing an array of bytes to decrypt and (if applicable) the data protection scope.
 
 ## Example
 
@@ -51,18 +50,25 @@ The following code example demonstrates two forms of encryption and decryption. 
 > [!NOTE]
 > If you target .NET instead of .NET Framework, <xref:System.Security.Cryptography.ProtectedMemory> isn't available. The `EncryptInMemoryData` and `DecryptInMemoryData` methods rely on that API, so those methods don't compile on .NET.
 
-[!code-csharp[DPAPI-HowTO#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs/sample.cs#1)]
-[!code-vb[DPAPI-HowTO#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DPAPI-HowTO/vb/sample.vb#1)]
+### [.NET Framework](#tab/net-framework)
 
-## Compiling the Code
-
-This example compiles and runs only when targeting .NET Framework and running on Windows.
+To compile the sample:
 
 - Include a reference to `System.Security.dll`.
 
-- Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.
+This sample compiles and runs when targeting .NET Framework on Windows. To compile the sample, add a library reference to `System.Security.dll`.
 
-- If you target .NET instead of .NET Framework, install the [`System.Security.Cryptography.ProtectedData`](https://www.nuget.org/packages/System.Security.Cryptography.ProtectedData/) NuGet package to use <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.DataProtectionScope>. .NET doesn't support <xref:System.Security.Cryptography.ProtectedMemory> or `MemoryProtectionScope`, so the full sample in this article doesn't compile on .NET.
+:::code language="csharp" source="./snippets/how-to-use-data-protection/framework/csharp/sample.cs" id="FullSample":::
+:::code language="vb" source="./snippets/how-to-use-data-protection/framework/vb/sample.vb":::
+
+### [.NET](#tab/net)
+
+This sample compiles and runs when targeting .NET on Windows. To compile the sample, add [`System.Security.Cryptography.ProtectedData`](https://www.nuget.org/packages/System.Security.Cryptography.ProtectedData/) NuGet package.
+
+:::code language="csharp" source="./snippets/how-to-use-data-protection/net/csharp/sample.cs":::
+:::code language="vb" source="./snippets/how-to-use-data-protection/net/vb/sample.vb":::
+
+---
 
 ## See also
 

@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  status_checker_job:
+  preview_link_generator_job:
     name: Generate preview link table
     runs-on: ubuntu-latest
     permissions:

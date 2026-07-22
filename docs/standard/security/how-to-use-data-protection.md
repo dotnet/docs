@@ -59,7 +59,7 @@ This sample compiles and runs when you target .NET on Windows. To compile the sa
 
 ### [.NET Framework](#tab/net-framework)
 
-This sample compiles and runs when you target .NET Framework on Windows. To compile the sample, add a library reference to `System.Security.dll`.
+This sample compiles and runs when you target .NET Framework on Windows. To compile the sample, add reference to the `System.Security.dll` library.
 
 :::code language="csharp" source="./snippets/how-to-use-data-protection/framework/csharp/sample.cs":::
 :::code language="vb" source="./snippets/how-to-use-data-protection/framework/vb/sample.vb":::

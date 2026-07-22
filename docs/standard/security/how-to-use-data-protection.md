@@ -48,6 +48,9 @@ Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a cop
 
 The following code example demonstrates two forms of encryption and decryption.  First, the code example encrypts and then decrypts an in-memory array of bytes.  Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.  The example displays the original data, the encrypted data, and the decrypted data.
 
+> [!NOTE]
+> If you target .NET instead of .NET Framework, <xref:System.Security.Cryptography.ProtectedMemory> isn't available. The `EncryptInMemoryData` and `DecryptInMemoryData` methods rely on that API, so those methods don't compile on .NET.
+
 [!code-csharp[DPAPI-HowTO#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs/sample.cs#1)]
 [!code-vb[DPAPI-HowTO#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DPAPI-HowTO/vb/sample.vb#1)]
 

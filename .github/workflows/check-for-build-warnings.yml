@@ -20,6 +20,6 @@ jobs:
       with:
         egress-policy: audit
 
-    - uses: dotnet/docs-tools/actions/status-checker@main
+    - uses: dotnet/docs-tools/actions/status-checker@e761d65daef04078de70423f735850919b4c8610
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}

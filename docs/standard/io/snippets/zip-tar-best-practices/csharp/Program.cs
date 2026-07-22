@@ -110,7 +110,7 @@ void SafeExtractZip(string archivePath, string destinationDir,
         if (totalSize > maxTotalSize)
             throw new InvalidOperationException("Archive exceeds total size limit.");
 
-        // The entry Name can contain arbitrary characters. Some characters may not be
+        // The entry Name can contain arbitrary characters. Some characters might not be
         // allowed on certain filesystems or have a special meaning. Applications should
         // apply their own policies regarding allowed filenames. ValidateName is a placeholder
         // for such a policy.
@@ -119,8 +119,8 @@ void SafeExtractZip(string archivePath, string destinationDir,
             throw new IOException($"Entry name '{entry.FullName}' is not allowed.");
         }
 
-        // ExternalAttributes carry permission bits for Unix platforms, by clearing the
-        // attributes we enforce extraction with default file permissions.
+        // ExternalAttributes carry permission bits for Unix platforms. Clearing the
+        // attributes enforces extraction with default file permissions.
         entry.ExternalAttributes = 0;
 
         // Resolve the full destination path using Path.GetFullPath, which
@@ -194,7 +194,7 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
         if (!allowedTypes.Contains(entry.EntryType))
             continue;
 
-        // The entry Name can contain arbitrary characters. Some characters may not be
+        // The entry Name can contain arbitrary characters. Some characters might not be
         // allowed on certain filesystems or have a special meaning. Applications should
         // apply their own policies regarding allowed filenames. ValidateName is a placeholder
         // for such a policy.
@@ -203,7 +203,8 @@ void SafeExtractTar(Stream archiveStream, string destinationDir,
             throw new IOException($"Entry name '{entry.Name}' is not allowed.");
         }
 
-        // Mask the entry's permission bits to a safe subset. This subset may depend on your application's needs.
+        // Mask the entry's permission bits to a safe subset.
+        // This subset depends on your application's needs.
         const UnixFileMode PermittedFileModes =
             UnixFileMode.UserRead | UnixFileMode.UserWrite |
             UnixFileMode.GroupRead |

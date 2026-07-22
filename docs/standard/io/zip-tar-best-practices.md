@@ -119,7 +119,7 @@ Neither <xref:System.IO.Compression.ZipArchive> nor <xref:System.Formats.Tar.Tar
 
 ### Validate file names
 
-Depending on the filesystem, some characters may not be allowed in filenames (or allowed only in certain positions), or have special meaning. Applications should check that the extracted entry names conform to an acceptable pattern.
+Depending on the filesystem, some characters might not be allowed in filenames (or allowed only in certain positions), or have special meaning. Applications should check that the extracted entry names conform to an acceptable pattern.
 
 ### Validate destination paths
 
@@ -170,7 +170,7 @@ For reference, <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayPrope
 
 ### Entry permission bits (Unix only)
 
-On Unix-like systems, the convenience APIs apply permission bits from the archive metadata to the extracted file/directory. These permissions might be too broad for the application scenario. Applications might want to prevent extraction of files with executable permissions set. See [Unix file permissions](#unix-file-permissions) later in the document for more details.
+On Unix-like systems, the convenience APIs apply permission bits from the archive metadata to the extracted file or directory. These permissions might be too broad for the application scenario. In your application, you might want to prevent extraction of files that have executable permissions set. For more information, see the [Unix file permissions](#unix-file-permissions) section of this article.
 
 ### Complete safe extraction examples
 
@@ -229,12 +229,12 @@ Archive behavior can vary between Windows and Unix. Keep these differences in mi
 - **ZIP:** Unix permissions are stored in the upper 16 bits of <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes?displayProperty=nameWithType>. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because .NET on Windows sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
 - **TAR:** The <xref:System.Formats.Tar.TarEntry.Mode?displayProperty=nameWithType> property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime applies only the 9 ownership bits (rwx for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped for security.
 
-When processing untrusted archives, be aware that extracted files may have executable permissions set by the archive author. Untrusted archives could contain malicious executable files. Since <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarEntry.Mode?displayProperty=nameWithType> are writable, you can modify them before extraction:
+When processing untrusted archives, be aware that extracted files might have executable permissions set by the archive author. Untrusted archives could contain malicious executable files. Since <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarEntry.Mode?displayProperty=nameWithType> are writable, you can modify them before extraction:
 
 ```csharp
 foreach (ZipArchiveEntry entry in archive.Entries)
 {
-    // unset the external attributes to force extraction with default unix permission bits
+    // Unset the external attributes to force extraction with default Unix permission bits.
     entry.ExternalAttributes = 0;
 
     // .. other validation omitted for brevity

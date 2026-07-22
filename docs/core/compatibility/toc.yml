@@ -78,6 +78,8 @@ items:
                 href: sdk/11/mono-launch-target-removed.md
               - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
+              - name: NuGet pack warns for package IDs with restricted characters
+                href: sdk/11/nuget-pack-nu5052-packageid.md
               - name: Template engine packages no longer support netstandard2.0
                 href: sdk/11/template-engine-netstandard.md
               - name: VSTest removes dependency on Newtonsoft.Json

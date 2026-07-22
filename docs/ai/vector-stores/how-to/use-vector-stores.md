@@ -22,7 +22,7 @@ This article shows you how to use the key features of the library.
 Install a provider package for your vector database. The `Microsoft.Extensions.VectorData.Abstractions` package is brought in automatically as a transitive dependency. The following example uses the in-memory provider for development and testing:
 
 ```dotnetcli
-dotnet package add CommunityToolkit.VectorData.InMemory --prerelease
+dotnet package add CommunityToolkit.VectorData.InMemory
 ```
 
 For production scenarios, replace `CommunityToolkit.VectorData.InMemory` with the provider for your database.

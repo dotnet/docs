@@ -43,7 +43,7 @@ dotnet new console --framework net8.0 --name VectorIngest
 cd VectorIngest
 dotnet package add Azure.AI.OpenAI
 dotnet package add Microsoft.Extensions.AI.OpenAI
-dotnet package add CommunityToolkit.VectorData.Redis --prerelease
+dotnet package add CommunityToolkit.VectorData.Redis
 dotnet package add DocumentFormat.OpenXml
 ```
 

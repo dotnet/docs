@@ -65,7 +65,7 @@ Complete the following steps to create a .NET console app that can:
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
     dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package CommunityToolkit.VectorData.InMemory --prerelease
+    dotnet add package CommunityToolkit.VectorData.InMemory
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     dotnet add package System.Linq.AsyncEnumerable
@@ -85,7 +85,7 @@ Complete the following steps to create a .NET console app that can:
 
     ```bash
     dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet package add CommunityToolkit.VectorData.InMemory --prerelease
+    dotnet package add CommunityToolkit.VectorData.InMemory
     dotnet package add Microsoft.Extensions.Configuration
     dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     dotnet package add System.Linq.AsyncEnumerable

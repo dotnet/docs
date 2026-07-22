@@ -86,5 +86,11 @@ internal static class NativeMethods
 
     [DllImport("PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
     internal static extern void TestArrayInStruct(ref MyArrayStruct myStruct);
+
+    [DllImport("PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    internal static extern unsafe void* CreateTestClass();
+
+    [DllImport("PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    internal static extern unsafe void DeleteTestClass(void* instance);
 }
 // </NativeMethods>

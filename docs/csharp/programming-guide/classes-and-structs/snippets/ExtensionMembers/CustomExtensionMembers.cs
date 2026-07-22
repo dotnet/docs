@@ -125,7 +125,7 @@ public static class AccountExtensions
 {
     extension(ref Account account)
     {
-        // ref keyword can also appear before the this keyword
+        // account is the receiver (analogous to the this parameter in extension methods), and ref means the receiver is passed by reference
         public void Deposit(float amount)
         {
             account.balance += amount;

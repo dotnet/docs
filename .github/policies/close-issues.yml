@@ -1,6 +1,9 @@
-name: Close issues
+id: close.issues
+name: GitOps.IssueManagement
 description: Close issues based on label
+owner:
 resource: repository
+disabled: false
 where:
 configuration:
     resourceManagementConfiguration:
@@ -35,7 +38,7 @@ configuration:
               - removeLabel:
                   label: needs-more-info
             triggerOnOwnActions: true
-              
+
           - description: Close issues labeled 'code-of-conduct'
             if:
               - payloadType: Issues

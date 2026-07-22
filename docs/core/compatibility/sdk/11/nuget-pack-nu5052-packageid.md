@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # NuGet pack warns for package IDs with restricted characters
 
-Starting in .NET 11 Preview 6, `dotnet pack` emits warning **NU5052** when a package ID contains characters outside the restricted character set enforced by nuget.org.
+Starting in .NET 11, `dotnet pack` emits warning **NU5052** when a package ID contains characters outside the restricted character set enforced by nuget.org.
 
 ## Version introduced
 

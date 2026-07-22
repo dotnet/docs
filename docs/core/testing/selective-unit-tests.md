@@ -96,7 +96,7 @@ namespace MSTestNamespace
 | `dotnet test --filter FullyQualifiedName!=MSTestNamespace.UnitTest1.TestMethod1` | Runs all tests except `MSTestNamespace.UnitTest1.TestMethod1`. |
 | `dotnet test --filter TestCategory=CategoryA` | Runs tests that are annotated with `[TestCategory("CategoryA")]`. |
 | `dotnet test --filter Priority=2` | Runs tests that are annotated with `[Priority(2)]`. |
-| `dotnet test --filter "Id=<guid>"` | Runs the test case whose discovered `TestCase.Id` exactly matches the GUID. |
+| `dotnet test --filter "Id=<guid>"` | Runs the test case whose discovered `TestCase.Id` value exactly matches the GUID. |
 
 `Id` filtering requires MSTest.TestAdapter 3.6 or later. Obtain the GUID from the test case that VSTest discovery returns in `TestCase.Id`. This filter can select one unfolded data-driven iteration without matching or escaping its display name. Each row must be discovered as an individual test case; a folded data-driven test exposes only one parent identity.
 

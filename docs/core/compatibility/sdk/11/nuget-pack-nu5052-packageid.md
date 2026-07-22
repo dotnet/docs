@@ -19,10 +19,10 @@ Previously, `dotnet pack` produced a package for any package ID that the legacy 
 
 ## New behavior
 
-Starting in .NET 11 (with `SdkAnalysisLevel >= 11.0.100`, first introduced in .NET 11 Preview 6), packing a project whose `PackageId` doesn't meet the restricted rules emits warning **NU5052**. A valid package ID:
+Starting in .NET 11 (with `SdkAnalysisLevel >= 11.0.100`), packing a project whose `PackageId` doesn't meet the restricted rules emits warning **NU5052**. A valid package ID:
 
 - Must start with a letter, digit, or underscore (`_`).
-- May contain only ASCII letters, digits, dots (`.`), dashes (`-`), and underscores (`_`).
+- Can contain only ASCII letters, digits, dots (`.`), dashes (`-`), and underscores (`_`).
 - Can't contain consecutive `.` or `-` characters.
 - Must be 100 characters or fewer.
 

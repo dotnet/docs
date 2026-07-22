@@ -35,7 +35,7 @@ Some types change those defaults:
 
 Equality is woven through these related members:
 
-- `==` — the equality operator. Most types use this as the primary equality check. Its behavior depends on whether the type has a built-in or user-defined `==` operator. Informally, both operands must be the same type.
+- `==` — the equality operator. Most types use this as the primary equality check. Its behavior depends on whether the type has a built-in or user-defined `==` operator. In general, the operands must be comparable; the compiler can apply built-in conversions (such as numeric promotions), and user-defined operators can compare different types.
 - `!=` — the inequality operator. When a type defines a user-defined `==` operator, it must also define `!=`.
 - <xref:System.Object.Equals*> — a virtual method inherited by every type. It can be overridden to change equality semantics.
 - <xref:System.Object.GetHashCode*> — a virtual method used by hash-based collections. When two values are equal, their hash codes must also be equal.

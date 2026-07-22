@@ -22,10 +22,10 @@ This article shows you how to use the key features of the library.
 Install a provider package for your vector database. The `Microsoft.Extensions.VectorData.Abstractions` package is brought in automatically as a transitive dependency. The following example uses the in-memory provider for development and testing:
 
 ```dotnetcli
-dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+dotnet package add CommunityToolkit.VectorData.InMemory --prerelease
 ```
 
-For production scenarios, replace `Microsoft.SemanticKernel.Connectors.InMemory` with the provider for your database. For available providers, see [Out-of-the-box Vector Store providers](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/). (Despite the inclusion of "SemanticKernel" in the provider package names, these providers have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.)
+For production scenarios, replace `CommunityToolkit.VectorData.InMemory` with the provider for your database.
 
 ## Define a data model
 

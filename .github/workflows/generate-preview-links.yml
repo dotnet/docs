@@ -1,4 +1,4 @@
-name: 'OPS status checker'
+name: 'Preview link generator'
 
 on:
   pull_request_target:
@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   status_checker_job:
-    name: Look for build warnings
+    name: Generate preview link table
     runs-on: ubuntu-latest
     permissions:
         statuses: read
@@ -20,6 +20,8 @@ jobs:
       with:
         egress-policy: audit
 
-    - uses: dotnet/docs-tools/actions/status-checker@main
+    - uses: dotnet/docs-tools/actions/preview-link-generator@main
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
+        docs_path: "docs"
+        url_base_path: "dotnet"

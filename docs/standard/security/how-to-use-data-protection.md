@@ -54,7 +54,7 @@ The following code example shows two forms of encryption and decryption. First, 
 
 This sample compiles and runs when you target .NET Framework on Windows. To compile the sample, add a library reference to `System.Security.dll`.
 
-:::code language="csharp" source="./snippets/how-to-use-data-protection/framework/csharp/sample.cs" id="FullSample":::
+:::code language="csharp" source="./snippets/how-to-use-data-protection/framework/csharp/sample.cs":::
 :::code language="vb" source="./snippets/how-to-use-data-protection/framework/vb/sample.vb":::
 
 ### [.NET](#tab/net)

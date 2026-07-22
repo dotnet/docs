@@ -1,42 +1,31 @@
-﻿' <snippet1>
-Imports System.IO
+﻿Imports System.IO
 Imports System.Text
 Imports System.Security.Cryptography
 
-
-
 Public Module MemoryProtectionSample
-
     Sub Main()
-        Run()
-
-    End Sub
-
-
-    Sub Run()
         Try
-
             ''''''''''''''''''''''''''''''''''''
             '
             ' Memory Encryption - ProtectedMemory
             '
             ''''''''''''''''''''''''''''''''''''
             ' Create the original data to be encrypted (The data length should be a multiple of 16).
-            Dim toEncrypt As Byte() = UnicodeEncoding.ASCII.GetBytes("ThisIsSomeData16")
+            Dim toEncrypt As Byte() = Encoding.ASCII.GetBytes("ThisIsSomeData16")
 
-            Console.WriteLine("Original data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Original data: " + Encoding.ASCII.GetString(toEncrypt))
             Console.WriteLine("Encrypting...")
 
             ' Encrypt the data in memory.
             EncryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon)
 
-            Console.WriteLine("Encrypted data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Encrypted data: " + Encoding.ASCII.GetString(toEncrypt))
             Console.WriteLine("Decrypting...")
 
             ' Decrypt the data in memory.
             DecryptInMemoryData(toEncrypt, MemoryProtectionScope.SameLogon)
 
-            Console.WriteLine("Decrypted data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Decrypted data: " + Encoding.ASCII.GetString(toEncrypt))
 
 
             ''''''''''''''''''''''''''''''''''''
@@ -45,7 +34,7 @@ Public Module MemoryProtectionSample
             '
             ''''''''''''''''''''''''''''''''''''
             ' Create the original data to be encrypted
-            toEncrypt = UnicodeEncoding.ASCII.GetBytes("This is some data of any length.")
+            toEncrypt = Encoding.ASCII.GetBytes("This is some data of any length.")
 
             ' Create a file.
             Dim fStream As New FileStream("Data.dat", FileMode.OpenOrCreate)
@@ -54,7 +43,7 @@ Public Module MemoryProtectionSample
             Dim entropy As Byte() = CreateRandomEntropy()
 
             Console.WriteLine()
-            Console.WriteLine("Original data: " + UnicodeEncoding.ASCII.GetString(toEncrypt))
+            Console.WriteLine("Original data: " + Encoding.ASCII.GetString(toEncrypt))
             Console.WriteLine("Encrypting and writing to disk...")
 
             ' Encrypt a copy of the data to the stream.
@@ -72,8 +61,7 @@ Public Module MemoryProtectionSample
 
             fStream.Close()
 
-            Console.WriteLine("Decrypted data: " + UnicodeEncoding.ASCII.GetString(decryptData))
-
+            Console.WriteLine("Decrypted data: " + Encoding.ASCII.GetString(decryptData))
 
         Catch e As Exception
             Console.WriteLine("ERROR: " + e.Message)
@@ -81,9 +69,7 @@ Public Module MemoryProtectionSample
 
     End Sub
 
-
-
-    Sub EncryptInMemoryData(ByVal Buffer() As Byte, ByVal Scope As MemoryProtectionScope)
+    Sub EncryptInMemoryData(Buffer() As Byte, Scope As MemoryProtectionScope)
         If Buffer Is Nothing Then
             Throw New ArgumentNullException("Buffer")
         End If
@@ -96,8 +82,7 @@ Public Module MemoryProtectionSample
 
     End Sub
 
-
-    Sub DecryptInMemoryData(ByVal Buffer() As Byte, ByVal Scope As MemoryProtectionScope)
+    Sub DecryptInMemoryData(Buffer() As Byte, Scope As MemoryProtectionScope)
         If Buffer Is Nothing Then
             Throw New ArgumentNullException("Buffer")
         End If
@@ -109,7 +94,6 @@ Public Module MemoryProtectionSample
         ProtectedMemory.Unprotect(Buffer, Scope)
 
     End Sub
-
 
     Function CreateRandomEntropy() As Byte()
         ' Create a byte array to hold the random value.
@@ -126,9 +110,7 @@ Public Module MemoryProtectionSample
 
     End Function 'CreateRandomEntropy
 
-
-
-    Function EncryptDataToStream(ByVal Buffer() As Byte, ByVal Entropy() As Byte, ByVal Scope As DataProtectionScope, ByVal S As Stream) As Integer
+    Function EncryptDataToStream(Buffer() As Byte, Entropy() As Byte, Scope As DataProtectionScope, S As Stream) As Integer
         If Buffer Is Nothing Then
             Throw New ArgumentNullException("Buffer")
         End If
@@ -161,8 +143,7 @@ Public Module MemoryProtectionSample
 
     End Function 'EncryptDataToStream
 
-
-    Function DecryptDataFromStream(ByVal Entropy() As Byte, ByVal Scope As DataProtectionScope, ByVal S As Stream, ByVal Length As Integer) As Byte()
+    Function DecryptDataFromStream(Entropy() As Byte, Scope As DataProtectionScope, S As Stream, Length As Integer) As Byte()
         If S Is Nothing Then
             Throw New ArgumentNullException("S")
         End If
@@ -175,7 +156,6 @@ Public Module MemoryProtectionSample
         If Entropy.Length <= 0 Then
             Throw New ArgumentException("Entropy")
         End If
-
 
         Dim inBuffer(Length - 1) As Byte
         Dim outBuffer() As Byte
@@ -194,4 +174,3 @@ Public Module MemoryProtectionSample
 
     End Function 'DecryptDataFromStream 
 End Module 'MemoryProtectionSample
-' </snippet1>

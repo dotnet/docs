@@ -14,6 +14,7 @@ C# 15 includes the following new features. Try these features by using the lates
 - [Union types](#union-types)
 - [Closed hierarchies](#closed-hierarchies)
 - [Extension indexers](#extension-indexers)
+- [Labeled `break` and `continue`](#labeled-break-and-continue)
 - [Memory safety](#memory-safety)
 
 C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
@@ -133,6 +134,32 @@ int third = numbers[2];
 ```
 
 For more information, see [Extension declaration](../language-reference/keywords/extension.md#extension-indexers) in the language reference or the [feature specification](~/_csharplang/proposals/extension-indexers.md).
+
+## Labeled `break` and `continue`
+
+Starting with C# 15, `break` and `continue` statements can name a label on an enclosing construct. Use a labeled `break` to exit an enclosing loop or `switch` statement. Use a labeled `continue` to start the next iteration of an enclosing loop.
+
+```csharp
+outer: for (int row = 0; row < grid.Height; row++)
+{
+    for (int column = 0; column < grid.Width; column++)
+    {
+        if (grid[row, column].IsBlocked)
+        {
+            continue outer;
+        }
+
+        if (grid[row, column].IsGoal)
+        {
+            break outer;
+        }
+    }
+}
+```
+
+The label is placed directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their existing behavior and target the innermost applicable statement.
+
+For more information, see [Jump statements](../language-reference/statements/jump-statements.md) in the language reference or the [feature specification](~/_csharplang/proposals/labeled-break-continue.md).
 
 ## Memory safety
 

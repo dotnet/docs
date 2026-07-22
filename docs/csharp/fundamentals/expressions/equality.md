@@ -1,7 +1,7 @@
 ---
 title: "C# Equality comparisons"
 description: Learn how C# compares values and references with ==, !=, Equals, GetHashCode, and ReferenceEquals for classes, structs, records, and tuples.
-ms.date: 07/21/2026
+ms.date: 07/22/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -13,22 +13,42 @@ ai-usage: ai-assisted
 >
 > **Coming from another language?** In Java, `==` on objects and JavaScript `===` on objects test identity, not content. C# classes work the same way by default. In Python, `==` calls `__eq__` and tests content by default - similar to how C# [records](../types/records.md) compare. C# [structs](../types/structs.md) also compare by value when you call `Equals`.
 
-C# distinguishes two kinds of equality. *Value equality* means two instances are equal when their data matches. *Reference equality* means two variables are equal only when they point to the same object in memory. This condition is also called *identity*. Knowing which kind applies to a type prevents subtle bugs where two objects that look identical aren't considered equal, or where a mutation through one variable silently changes what another variable sees.
+C# distinguishes two kinds of equality. *Value equality* means two instances are equal when their data matches. *Reference equality* means two variables are equal only when they point to the same object in memory. This condition is also called *identity*. The kind of type gives you the best first clue about the default equality behavior: value types usually compare data, and reference types usually compare identity. Defaults aren't destiny, but that mental model prevents subtle bugs where two objects that look identical aren't considered equal, or where a mutation through one variable silently changes what another variable sees.
 
-## Value equality and reference equality
+## Value types, reference types, and equality defaults
 
 Every type in C# is either a *value type* or a *reference type*. A *value type* holds its data directly in the variable. A *reference type* holds a reference to an object. When you assign a reference-type variable to another variable, both variables refer to the same object. This article uses that distinction as a quick refresher. For more information about value types and reference types, see [Type system overview](../types/index.md#value-types-and-reference-types).
 
-The default equality behavior follows the kind of type:
+The default equality behavior usually follows the kind of type:
 
-- **Built-in numeric types and [enums](../types/enums.md)** (value types): value equality. Two `int` variables are equal when their numeric values match.
-- **[Structs](../types/structs.md)** (value types): value equality through the inherited `Equals` method. All fields are compared, but plain structs don't get a predefined `==` operator.
-- **[Tuples](../types/tuples.md)** (value types): value equality. Two tuples are equal when all their element values match.
-- **[Classes](../types/classes.md)** (reference types): reference equality. `==` and <xref:System.Object.Equals*> test whether two variables point to the same object.
+- **Built-in numeric types and [enums](../types/enums.md)** are value types. Two `int` variables are equal when their numeric values match.
+- **[Structs](../types/structs.md)** are value types. A plain `struct` uses value equality when you call <xref:System.Object.Equals*>.
+- **[Tuples](../types/tuples.md)** are value types. Two tuples are equal when all their element values match.
+- **[Classes](../types/classes.md)** are reference types. A plain class uses reference equality, so `==` and <xref:System.Object.Equals*> test whether two variables point to the same object.
 
-Some types change those defaults:
+A plain class shows reference equality. Two separate objects with the same data aren't equal, but two variables that refer to the same object are equal:
 
-- **[Record classes and record structs](../types/records.md#record-class-vs-record-struct)** generate value equality and include `==`/`!=` operators.
+:::code language="csharp" source="snippets/equality/Program.cs" ID="ClassEquality":::
+
+A plain `struct` shows value equality through <xref:System.Object.Equals*>. Two struct instances are equal when their fields match:
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="StructEquality":::
+
+Plain structs don't get a predefined `==` operator. Writing `p1 == p2` on a plain struct compiles only if the struct declares its own `operator ==`. If you need operator comparisons for a struct, define `==` and `!=` as a pair and keep them consistent with <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*>.
+
+Tuples are value types too. Two tuples are equal when every element value matches. Element names in a named tuple are a compile-time convenience and aren't considered during comparison. Only positions and values matter:
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="TupleEquality":::
+
+For more information about tuple syntax and deconstruction, see [Tuples and deconstruction](../types/tuples.md).
+
+## Types can define different equality semantics
+
+Defaults aren't destiny. Some types define equality semantics that differ from the type-kind default, and your own types can do the same when their data should determine equality.
+
+Common exceptions and customizations include:
+
+- **[Records](../types/records.md)** generate value equality and include `==`/`!=` operators. The next section shows how the `record` modifier gives value equality to both record classes and record structs.
 - **Strings** are classes, but `==` and <xref:System.Object.Equals*> compare string content, not identity.
 - **Your own classes and structs** can define value equality when their data should determine equality.
 
@@ -36,29 +56,15 @@ Equality is woven through these related members:
 
 - `==` - the equality operator. Most types use this as the primary equality check. Its behavior depends on whether the type has a built-in or user-defined `==` operator.
 - `!=` - the inequality operator. When a type defines a user-defined `==` operator, it must also define `!=`.
-- <xref:System.Object.Equals*> - a virtual method inherited by every type. You can override it to change equality semantics.
+- <xref:System.Object.Equals*> - a virtual method inherited by every type. You can override it to change equality semantics for a type.
 - <xref:System.Object.GetHashCode*> - a virtual method used by hash-based collections. When two values are equal, their hash codes must also be equal.
 - <xref:System.Object.ReferenceEquals*> - a static method that always tests identity.
 
-## Classes use reference equality by default
+## Use records for value equality
 
-A plain class inherits `==` and <xref:System.Object.Equals*> from <xref:System.Object>. Both test identity: whether two variables refer to the same object. Two distinct objects with identical data aren't equal:
+Use the `record` modifier to give a data-focused type value equality when the type can be a record. The compiler generates <xref:System.Object.Equals*>, <xref:System.Object.GetHashCode*>, and `==`/`!=` members that compare every declared property value.
 
-:::code language="csharp" source="snippets/equality/Program.cs" ID="ClassEquality":::
-
-Assigning a class variable copies the reference, not the data. After `order3 = order1`, both variables point to the same object, so `==` returns `True`.
-
-## Structs use value equality
-
-A plain `struct` compares values when you call `Equals`. Two struct instances are equal when all their fields match:
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="StructEquality":::
-
-Structs don't get a predefined `==` operator. Writing `p1 == p2` on a plain struct compiles only if the struct declares its own `operator ==`. If you need operator comparisons for a struct, define `==` and `!=` as a pair and keep them consistent with `Equals` and `GetHashCode`.
-
-## Records provide value equality automatically
-
-The `record` modifier generates value equality for both class-based and struct-based records. The compiler synthesizes <xref:System.Object.Equals*>, <xref:System.Object.GetHashCode*>, and `==`/`!=` that compare every declared property value:
+A `record class` is still a reference type, but it compares values instead of identity:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordEquality":::
 
@@ -70,25 +76,17 @@ The same compiler generation applies to `record struct` types:
 
 Record types generate the whole equality set for their own type. Both `record class` and `record struct` types override <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*>. They also generate `==` and `!=` operators, plus a typed `Equals` method for the record type. Unlike a plain `struct`, a `record struct` therefore supports `==` and `!=` automatically. For more information about record types and their equality semantics, see [Records](../types/records.md#value-equality).
 
-## Tuples use value equality
-
-C# tuples are value types. Two tuples are equal when every element value matches. Element names in a named tuple are a compile-time convenience and aren't considered during comparison. Only positions and values matter:
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="TupleEquality":::
-
-For more information about tuple syntax and deconstruction, see [Tuples and deconstruction](../types/tuples.md).
-
-## Add value equality to your own types
+## Implement equality yourself when a type can't be a record
 
 > [!IMPORTANT]
 > This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead. It generates all these members for you. Implement them manually only when your type can't be a record.
 
-When a class or struct represents a value, such as a color or a measurement, you must implement a consistent set of equality members. A correct value-equality type provides all the related members so every equality path agrees. The easiest way to achieve this consistency is to declare the type as a `record`. If you must derive from some non-record class, you need to implement these methods yourself. The language enforces that user-defined `==` and `!=` operators must be declared as a pair. If you provide those operators, compiler warning [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.Equals*?displayProperty=nameWithType> override. Warning [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.GetHashCode?displayProperty=nameWithType> override.
+When a class or struct represents a value, such as a color or a measurement, the equality members for that type must agree. The easiest way to achieve this consistency is to declare the type as a `record`. If the type can't be a record, such as when it must derive from a non-record class, implement the equality members yourself. The language enforces that user-defined `==` and `!=` operators must be declared as a pair. If you provide those operators, compiler warning [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.Equals*?displayProperty=nameWithType> override. Warning [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.GetHashCode?displayProperty=nameWithType> override.
 
 In a complete manual implementation, provide these members:
 
 - `==` and `!=` operators. Add them as a pair because the compiler requires a type that overloads one to overload the other.
-- An `override` of <xref:System.Object.Equals*>. This override keeps object-level equality consistent.
+- An `override` of <xref:System.Object.Equals*>. This override changes equality semantics for the type and keeps object-level equality consistent.
 - An `override` of <xref:System.Object.GetHashCode*>. Objects that are equal must return the same hash code. Without this pairing, the type behaves incorrectly in hash-based collections such as `Dictionary<TKey,TValue>` or `HashSet<T>`. See <xref:System.Object.GetHashCode*> for guidance on a correct implementation.
 - Optionally, a typed `Equals` method by implementing <xref:System.IEquatable`1>. You often see this written as `Equals(T?)` in docs: `T` is a [type parameter](../types/generics.md), a placeholder for the current type, and `?` is a [nullable annotation](../null-safety/index.md) that says the argument can be `null`. This typed method can avoid extra conversions when callers already have the same type, but it's a secondary optimization.
 
@@ -102,9 +100,9 @@ At this point, `Equals` reflects value equality, but `==` still tests identity f
 
 Adding `==` and `!=` operators is the remaining step when you need operator comparisons. This article intentionally stops before the full operator implementation so the first pass can focus on the equality contract. The operator-focused follow-up shows the completed shape. For the operator syntax, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
 
-## `Object.ReferenceEquals` — test identity directly
+## Use `Object.ReferenceEquals` to test identity directly
 
-<xref:System.Object.ReferenceEquals*> always tests identity regardless of how a type overrides <xref:System.Object.Equals*> or overloads `==`. Use it when you need to confirm whether two variables point to the exact same object:
+<xref:System.Object.ReferenceEquals*> always tests identity regardless of how a type overrides <xref:System.Object.Equals*> or overloads `==`. Use it as an identity diagnostic when you need to confirm whether two variables point to the exact same object:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="ReferenceEqualsDemo":::
 

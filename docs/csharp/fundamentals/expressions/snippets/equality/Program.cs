@@ -77,16 +77,23 @@ record Person(string First, string Last);
 record struct Dimension(double Width, double Height);
 
 // <ColorDefinition>
-sealed class Color(int r, int g, int b) : IEquatable<Color>
+class Color : IEquatable<Color>
 {
-    public int R { get; } = r;
-    public int G { get; } = g;
-    public int B { get; } = b;
+    public Color(int r, int g, int b)
+    {
+        R = r;
+        G = g;
+        B = b;
+    }
+
+    public int R { get; }
+    public int G { get; }
+    public int B { get; }
 
     public bool Equals(Color? other) =>
         other is not null && R == other.R && G == other.G && B == other.B;
 
-    public override bool Equals(object? obj) => Equals(obj as Color);
+    public override bool Equals(object? obj) => obj is Color other && Equals(other);
     public override int GetHashCode() => HashCode.Combine(R, G, B);
 }
 // </ColorDefinition>
@@ -95,3 +102,4 @@ class Document(string title)
 {
     public string Title { get; } = title;
 }
+

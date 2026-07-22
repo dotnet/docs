@@ -25,7 +25,7 @@ Install a provider package for your vector database. The `Microsoft.Extensions.V
 dotnet package add CommunityToolkit.VectorData.InMemory
 ```
 
-For production scenarios, replace `CommunityToolkit.VectorData.InMemory` with the provider for your database.
+For production scenarios, replace `CommunityToolkit.VectorData.InMemory` with the provider for your database. For available providers, see [Out-of-the-box Vector Store providers](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/).
 
 ## Define a data model
 

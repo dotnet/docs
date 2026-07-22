@@ -33,7 +33,7 @@ Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a cop
 
 1. Create random entropy.
 
-2. Call the static <xref:System.Security.Cryptography.ProtectedData.Protect*> method while passing an array of bytes to encrypt, the entropy, and (if applicable) the data protection scope.
+2. Call the static <xref:System.Security.Cryptography.ProtectedData.Protect*> method while passing an array of bytes to encrypt, the entropy, and the data protection scope.
 
 3. Write the encrypted data to a file or stream.
 
@@ -41,7 +41,7 @@ Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a cop
 
 1. Read the encrypted data from a file or stream.
 
-2. Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect*> method while passing an array of bytes to decrypt and (if applicable) the data protection scope.
+2. Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect*> method while passing an array of bytes to decrypt and the data protection scope.
 
 ## Example
 
@@ -50,19 +50,19 @@ The following code example shows two forms of encryption and decryption. First, 
 > [!IMPORTANT]
 > <xref:System.Security.Cryptography.ProtectedMemory> is only available for .NET Framework. <xref:System.Security.Cryptography.ProtectedData> is available on .NET and .NET Framework.
 
-### [.NET Framework](#tab/net-framework)
-
-This sample compiles and runs when you target .NET Framework on Windows. To compile the sample, add a library reference to `System.Security.dll`.
-
-:::code language="csharp" source="./snippets/how-to-use-data-protection/framework/csharp/sample.cs":::
-:::code language="vb" source="./snippets/how-to-use-data-protection/framework/vb/sample.vb":::
-
 ### [.NET](#tab/net)
 
 This sample compiles and runs when you target .NET on Windows. To compile the sample, add the [`System.Security.Cryptography.ProtectedData`](https://www.nuget.org/packages/System.Security.Cryptography.ProtectedData/) NuGet package.
 
 :::code language="csharp" source="./snippets/how-to-use-data-protection/net/csharp/sample.cs":::
 :::code language="vb" source="./snippets/how-to-use-data-protection/net/vb/sample.vb":::
+
+### [.NET Framework](#tab/net-framework)
+
+This sample compiles and runs when you target .NET Framework on Windows. To compile the sample, add a library reference to `System.Security.dll`.
+
+:::code language="csharp" source="./snippets/how-to-use-data-protection/framework/csharp/sample.cs":::
+:::code language="vb" source="./snippets/how-to-use-data-protection/framework/vb/sample.vb":::
 
 ---
 

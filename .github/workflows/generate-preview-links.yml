@@ -4,16 +4,13 @@ on:
   pull_request_target:
     types: [opened, synchronize, reopened]
 
-permissions:
-  contents: read
-
 jobs:
   status_checker_job:
     name: Generate preview link table
     runs-on: ubuntu-latest
     permissions:
-        statuses: read
-        pull-requests: write
+      statuses: read
+      pull-requests: write
     steps:
     - name: Harden Runner
       uses: step-security/harden-runner@bf7454d06d71f1098171f2acdf0cd4708d7b5920 # v2.20.0

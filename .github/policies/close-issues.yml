@@ -27,7 +27,7 @@ configuration:
           - isAction:
               action: Created
           - isActivitySender:
-              issueAuthor: True
+              issueAuthor: true
           - hasLabel:
               label: needs-more-info
           - isOpen

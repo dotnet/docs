@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
-> **Coming from another language?** In Java, `==` on objects and JavaScript `===` on objects test identity, not content. C# classes work the same way by default. In Python, `==` calls `__eq__` and tests content by default - similar to how C# [records](../types/records.md) compare. C# [structs](../types/structs.md) also compare by value when you call `Equals`.
+> **Coming from another language?** In Java, `==` on objects and JavaScript `===` on objects test identity, not content. C# classes work the same way by default. In Python, `==` calls `__eq__` and tests content by default , similar to how C# [records](../types/records.md) compare. C# [structs](../types/structs.md) also compare by value when you call `Equals`.
 
 C# distinguishes two kinds of equality. *Value equality* means two instances are equal when their data matches. *Reference equality* means two variables are equal only when they point to the same object in memory. This condition is also called *identity*. The kind of type gives you the best first clue about the default equality behavior: value types usually compare data, and reference types usually compare identity. Defaults aren't destiny, but that mental model prevents subtle bugs where two objects that look identical aren't considered equal, or where a mutation through one variable silently changes what another variable sees.
 
@@ -54,11 +54,11 @@ Common exceptions and customizations include:
 
 Equality is woven through these related members:
 
-- `==` - the equality operator. Most types use this as the primary equality check. Its behavior depends on whether the type has a built-in or user-defined `==` operator.
-- `!=` - the inequality operator. When a type defines a user-defined `==` operator, it must also define `!=`.
-- <xref:System.Object.Equals*> - a virtual method inherited by every type. You can override it to change equality semantics for a type.
-- <xref:System.Object.GetHashCode*> - a virtual method used by hash-based collections. When two values are equal, their hash codes must also be equal.
-- <xref:System.Object.ReferenceEquals*> - a static method that always tests identity.
+- `==`: the equality operator. Most types use this as the primary equality check. Its behavior depends on whether the type has a built-in or user-defined `==` operator.
+- `!=`: the inequality operator. When a type defines a user-defined `==` operator, it must also define `!=`.
+- <xref:System.Object.Equals*>: a virtual method inherited by every type. You can override it to change equality semantics for a type.
+- <xref:System.Object.GetHashCode*>: a virtual method used by hash-based collections. When two values are equal, their hash codes must also be equal.
+- <xref:System.Object.ReferenceEquals*>: a static method that always tests identity.
 
 ## Use records for value equality
 
@@ -81,7 +81,7 @@ Record types generate the whole equality set for their own type. Both `record cl
 > [!IMPORTANT]
 > This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead. It generates all these members for you. Implement them manually only when your type can't be a record.
 
-When a class or struct represents a value, such as a color or a measurement, the equality members for that type must agree. The easiest way to achieve this consistency is to declare the type as a `record`. If the type can't be a record, such as when it must derive from a non-record class, implement the equality members yourself. The language enforces that user-defined `==` and `!=` operators must be declared as a pair. If you provide those operators, compiler warning [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.Equals*?displayProperty=nameWithType> override. Warning [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.GetHashCode?displayProperty=nameWithType> override.
+When a class or struct represents a value, such as a color or a measurement, the equality members for that type must agree. The easiest way to achieve this consistency is to declare the type as a `record`. If the type can't be a record, such as when it must derive from a non-record class, implement the equality members yourself. The language enforces that user-defined `==` and `!=` operators must be declared as a pair. If you provide those operators, compiler warning [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.Equals*?displayProperty=nameWithType> override. Warning [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.GetHashCode*?displayProperty=nameWithType> override.
 
 In a complete manual implementation, provide these members:
 

@@ -13,7 +13,7 @@ The source generator is triggered when <xref:Microsoft.Extensions.Logging.Logger
 
 ## Basic usage
 
-> [IMPORTANT]
+> [!TIP]
 > The examples in this article use the following namespace:
 >
 > :::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="CommonUsings":::

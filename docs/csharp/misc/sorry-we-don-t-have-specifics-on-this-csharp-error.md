@@ -7,8 +7,6 @@ f1_keywords:
   - "CS0257"
   - "CS0595"
   - "CS0847"
-  - "CS0856"
-  - "CS0857"
   - "CS1066"
   - "CS1072"
   - "CS1073"
@@ -158,9 +156,7 @@ f1_keywords:
   - "CS8104"
   - "CS8105"
   - "CS8106"
-  - "CS8108"
   - "CS8111"
-  - "CS8112"
   - "CS8113"
   # C# 7.0 diagnostics
   - "CS8115"
@@ -178,7 +174,6 @@ f1_keywords:
   - "CS8183"
   - "CS8184"
   - "CS8185"
-  - "CS8186"
   - "CS8187"
   - "CS8188"
   - "CS8189"
@@ -201,13 +196,10 @@ f1_keywords:
   - "CS8310"
   - "CS8312"
   # C# 7.2 diagnostics
-  - "CS8321"
   - "CS8323"
   - "CS8328"
   - "CS8335"
   - "CS8336"
-  - "CS8340"
-  - "CS8342"
   - "CS8346"
   - "CS8347"
   - "CS8348"
@@ -225,36 +217,13 @@ f1_keywords:
   - "CS8383"
   - "CS8384"
   # C# 8.0 diagnostics
-  ## Async enumerables
-  - "CS8412"
-  - "CS8413"
-  - "CS8414"
-  - "CS8415"
-  - "CS8419"
-  - "CS8420"
   ## Static local functions
-  - "CS8421"
   ## Attributes
-  - "CS8423"
-  ## More async enumerators
-  - "CS8424"
-  - "CS8425"
-  - "CS8426"
   ## Index and range
-  - "CS8428"
-  - "CS8429"
   ## Can't parse syntax
-  - "CS8635"
-  - "CS8641"
   ## Default interface implementation
-  - "CS8646"
   ## Patterns
-  - "CS8650"
-  - "CS8651"
   ## Readonly struct members
-  - "CS8656"
-  - "CS8662"
-  - "CS8669"
 # Coming in C# 15
   - "CS9343" # misc
   - "CS9347"
@@ -262,7 +231,6 @@ f1_keywords:
   - "CS9349"
   - "CS9350"
   - "CS9351"
-  - "CS9353"
 # Collection arguments:
   - "CS9354"
   - "CS9355"

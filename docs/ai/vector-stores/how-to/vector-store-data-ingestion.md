@@ -36,14 +36,14 @@ The rest of these instructions assume that you're using a container with these s
 
 ## Create your project
 
-Create a new project and add NuGet package references for the [Redis provider](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis), the [OpenXml package](https://www.nuget.org/packages/DocumentFormat.OpenXml) to read the Word document, and the Azure OpenAI packages for generating embeddings.
+Create a new project and add NuGet package references for the [Redis provider](https://www.nuget.org/packages/CommunityToolkit.VectorData.Redis), the [OpenXml package](https://www.nuget.org/packages/DocumentFormat.OpenXml) to read the Word document, and the Azure OpenAI packages for generating embeddings.
 
 ```dotnetcli
 dotnet new console --framework net8.0 --name VectorIngest
 cd VectorIngest
 dotnet package add Azure.AI.OpenAI
 dotnet package add Microsoft.Extensions.AI.OpenAI
-dotnet package add Microsoft.SemanticKernel.Connectors.Redis --prerelease
+dotnet package add CommunityToolkit.VectorData.Redis
 dotnet package add DocumentFormat.OpenXml
 ```
 

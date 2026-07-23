@@ -3,6 +3,7 @@ title: .NET + AI ecosystem tools and SDKs
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
 ms.date: 04/15/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # .NET + AI ecosystem tools and SDKs
@@ -19,8 +20,8 @@ The following table recommends which technology to use based on different object
 | **Work with your own data**   | Use [Microsoft.Extensions.DataIngestion (MEDI)](#microsoftextensionsdataingestion-medi) to read, chunk, or enrich content. Then use [Microsoft.Extensions.VectorData (MEVD)](#microsoftextensionsvectordata-mevd) to store and retrieve vectors. |
 | **Share or consume capabilities across AI clients** | Use an [MCP Server](#mcp-server) to publish capabilities, or an [MCP Client](#mcp-client) to consume them. |
 | **Build an agentic system**   | Use [Copilot SDK](#copilot-sdk) for a ready-made harness, or [Microsoft Agent Framework](#microsoft-agent-framework-maf) for multi-step goal pursuit, routing, or handoffs. |
-| **Choose a hosting or execution model** | Use [Azure AI Foundry](#azure-ai-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) for distributed multi-service systems. |
-| **Improve the developer workflow** | Use [AI Toolkit](#ai-toolkit). |
+| **Choose a hosting or execution model** | Use [Microsoft Foundry](#microsoft-foundry) for managed cloud, [Foundry Local](#foundry-local) for local-first or privacy-sensitive execution, and [Aspire](#aspire) for distributed multi-service systems. |
+| **Improve the developer workflow** | Use [Foundry Toolkit](#foundry-toolkit). |
 
 Most production AI applications combine several components:
 
@@ -28,8 +29,8 @@ Most production AI applications combine several components:
 - **RAG application**: MEDI + MEVD + MEAI
 - **Multi-agent system**: MEAI + MAF + Aspire
 - **Tool interoperability**: MEAI + MCP Server + MCP Client
-- **Enterprise cloud app**: MEAI + Azure AI Foundry + Aspire
-- **Local-first app**: MEAI + Foundry Local + AI Toolkit (development)
+- **Enterprise cloud app**: MEAI + Microsoft Foundry + Aspire
+- **Local-first app**: MEAI + Foundry Local + Foundry Toolkit (development)
 
 Use these practical rules to choose quickly:
 
@@ -97,13 +98,13 @@ Not every AI feature needs MAF. If a direct MEAI call or a simple tool-calling l
 
 For more information, see [Microsoft Agent Framework overview](/agent-framework/overview/agent-framework-overview).
 
-## AI Toolkit
+## Foundry Toolkit
 
-AI Toolkit is a VS Code extension pack for AI development that speeds up experimentation with models, prompts, agents, and evaluations.
+Foundry Toolkit is a VS Code extension pack for AI development that speeds up experimentation with models, prompts, agents, and evaluations.
 
-AI Toolkit isn't the core runtime architecture for the production app. It complements MEAI, Evaluations, and Foundry Local.
+Foundry Toolkit isn't the core runtime architecture for the production app. It complements MEAI, Evaluations, and Foundry Local.
 
-For more information, see [AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview).
+For more information, see [Foundry Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview).
 
 ## Copilot SDK
 
@@ -113,13 +114,13 @@ Copilot SDK is more opinionated and prewired than MEAI. If your goal is a fully 
 
 For more information, see the [Copilot SDK repository](https://github.com/github/copilot-sdk).
 
-## Azure AI Foundry
+## Microsoft Foundry
 
-Azure AI Foundry is the managed cloud platform layer for enterprise AI solutions, with two primary functions: model management and hosted agents.
+Microsoft Foundry is the managed cloud platform layer for enterprise AI solutions, with two primary functions: model management and hosted agents.
 
-Azure AI Foundry isn't the app-facing programming abstraction; MEAI still plays that role in .NET code. Azure AI Foundry becomes the right lead when the real question is *where* the model runs and under what controls.
+Microsoft Foundry isn't the app-facing programming abstraction; MEAI still plays that role in .NET code. Microsoft Foundry becomes the right lead when the real question is *where* the model runs and under what controls.
 
-For more information, see the [Azure AI Foundry documentation](/azure/ai-foundry/).
+For more information, see the [Microsoft Foundry documentation](/azure/ai-foundry/).
 
 ## Foundry Local
 
@@ -135,6 +136,6 @@ Aspire is the orchestration, service-wiring, and observability layer for distrib
 
 AI systems often stop being "just one app" once retrieval, tools, gateways, and worker services are involved. Aspire helps teams keep those parts understandable and observable, and its visuals make it easier to trace AI flows across services.
 
-Aspire isn't specifically the AI runtime; it's the multi-service application layer around it. It doesn't replace MEAI, MAF, or Azure AI Foundry.
+Aspire isn't specifically the AI runtime; it's the multi-service application layer around it. It doesn't replace MEAI, MAF, or Microsoft Foundry.
 
 For more information, see the [Aspire documentation](https://aspire.dev/).

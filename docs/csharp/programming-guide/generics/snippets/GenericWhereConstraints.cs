@@ -1,5 +1,3 @@
-using static Generics.UnmanagedExtensions;
-
 namespace Generics
 {
     // <Snippet1>
@@ -270,7 +268,7 @@ namespace Generics
         private static void TestEnumValues()
         {
             // <Snippet20>
-            var map = EnumNamedValues<Rainbow>();
+            var map = Rainbow.EnumNamedValues();
 
             foreach (var pair in map)
                 Console.WriteLine($"{pair.Key}:\t{pair.Value}");

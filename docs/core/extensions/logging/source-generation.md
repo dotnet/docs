@@ -226,7 +226,7 @@ The [Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Ex
 
 To enable redaction, use the [Microsoft.Extensions.Compliance.Redaction](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Redaction) library. This library provides **redactors**—components that transform sensitive data (for example, by erasing, masking, or hashing it) so that it's safe to output. Redactors are selected based on **data classification**, which lets you label data according to its sensitivity (such as personal, private, or public).
 
-The redaction examples also require the following additional namespaces:
+The redaction examples require the following namespaces:
 
 :::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="RedactionUsings":::
 

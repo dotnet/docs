@@ -154,7 +154,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   <RunSettings>
     <DataCollectionRunSettings>
       <DataCollectors>
-        <DataCollector friendlyName="blame" enabled="True">
+        <DataCollector friendlyName="blame" enabled="true">
           <Configuration>
             <CollectDump CollectAlways="true" DumpType="full" />
             <CollectDumpOnTestSessionHang TestTimeout="30min" HangDumpType="full" />

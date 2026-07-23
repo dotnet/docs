@@ -1,7 +1,8 @@
 ---
 title: dotnet vstest command
 description: The dotnet vstest command builds a project and all of its dependencies.
-ms.date: 10/28/2025
+ms.date: 07/19/2026
+ai-usage: ai-assisted
 ---
 # dotnet vstest
 
@@ -17,20 +18,20 @@ ms.date: 10/28/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Diag <PATH_TO_LOG_FILE>]
-    [--Framework <FRAMEWORK>] [--InIsolation] [-lt|--ListTests <FILE_NAME>]
-    [--logger <LOGGER_URI/FRIENDLY_NAME>] [--Parallel]
-    [--ParentProcessId <PROCESS_ID>] [--Platform] <PLATFORM_TYPE>
-    [--Port <PORT>] [--ResultsDirectory<PATH>] [--Settings <SETTINGS_FILE>]
-    [--TestAdapterPath <PATH>] [--TestCaseFilter <EXPRESSION>]
-    [--Tests <TEST_NAMES>] [[--] <args>...]
+dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Collect:<DATA_COLLECTOR_NAME>]
+    [--Diag:<PATH_TO_LOG_FILE>] [-e|--Environment:<NAME="VALUE">]
+    [--Framework:<FRAMEWORK>] [--InIsolation] [-lt|--ListTests:<FILE_NAME>]
+    [--logger:<LOGGER_URI/FRIENDLY_NAME>] [--Parallel]
+    [--Platform:<PLATFORM_TYPE>] [--ResultsDirectory:<PATH>]
+    [--Settings:<SETTINGS_FILE>] [--TestAdapterPath:<PATH>]
+    [--TestCaseFilter:<EXPRESSION>] [--Tests:<TEST_NAMES>] [[--] <args>...]
 
 dotnet vstest -?|--Help
 ```
 
 ## Description
 
-The `dotnet vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
+The `dotnet vstest` command runs the `VSTest.Console` command-line application to run automated unit tests. The options in this article are forwarded to `vstest.console`. For the complete list of command-line options, see [vstest.console.exe command line options](https://github.com/microsoft/vstest/blob/main/docs/commandline.md).
 
 ## Arguments
 
@@ -44,11 +45,19 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Runs the tests in blame mode. This option is helpful in isolating the problematic tests causing test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
-- **`--Diag <PATH_TO_LOG_FILE>`**
+- **`--Collect:<DATA_COLLECTOR_NAME>`**
+
+  Enables a data collector for the test run. For example, `--Collect:"Code Coverage"` collects code coverage with the built-in Visual Studio collector, and `--Collect:"XPlat Code Coverage"` uses the cross-platform Coverlet collector. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+
+- **`--Diag:<PATH_TO_LOG_FILE>`**
 
   Enables verbose logs for the test platform. Logs are written to the provided file.
 
-- **`--Framework <FRAMEWORK>`**
+- **`-e|--Environment:<NAME="VALUE">`**
+
+  Sets the value of an environment variable for the test host process. Creates the variable if it doesn't exist, overrides it if it does. Using this option forces the tests to run in an isolated process. Specify the option multiple times to set multiple variables.
+
+- **`--Framework:<FRAMEWORK>`**
 
   Target .NET Framework version used for test execution. An example of a valid value is `.NETFramework,Version=v7.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
 
@@ -56,11 +65,11 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Runs the tests in an isolated process. This makes *vstest.console.exe* process less likely to be stopped on an error in the tests, but tests may run slower.
 
-- **`-lt|--ListTests <FILE_NAME>`**
+- **`-lt|--ListTests:<FILE_NAME>`**
 
   Lists all discovered tests from the given test container.
 
-- **`--logger <LOGGER_URI/FRIENDLY_NAME>`**
+- **`--logger:<LOGGER_URI/FRIENDLY_NAME>`**
 
   Specify a logger for test results.
 
@@ -86,35 +95,27 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
   Run tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the `MaxCpuCount` property under the `RunConfiguration` node in the *runsettings* file.
 
-- **`--ParentProcessId <PROCESS_ID>`**
+- **`--Platform:<PLATFORM_TYPE>`**
 
-  Process ID of the parent process responsible for launching the current process.
-
-- **`--Platform <PLATFORM_TYPE>`**
-
-  Target platform architecture used for test execution. Valid values are `x86`, `x64`, and `ARM`.
-
-- **`--Port <PORT>`**
-
-  Specifies the port for the socket connection and receiving the event messages.
+  Target platform architecture used for test execution. Valid values are `x86`, `x64`, `ARM`, `ARM64`, `S390x`, `Ppc64le`, `RiscV64`, and `LoongArch64`.
 
 - **`--ResultsDirectory:<PATH>`**
 
   Test results directory will be created in specified path if not exists.
 
-- **`--Settings <SETTINGS_FILE>`**
+- **`--Settings:<SETTINGS_FILE>`**
 
   Settings to use when running tests.
 
-- **`--TestAdapterPath <PATH>`**
+- **`--TestAdapterPath:<PATH>`**
 
   Use custom test adapters from a given path (if any) in the test run.
 
-- **`--TestCaseFilter <EXPRESSION>`**
+- **`--TestCaseFilter:<EXPRESSION>`**
 
-  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
+  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/microsoft/vstest/blob/main/docs/filter.md).
 
-- **`--Tests <TEST_NAMES>`**
+- **`--Tests:<TEST_NAMES>`**
 
   Run tests with names that match the provided values. Separate multiple values with commas.
 
@@ -164,4 +165,6 @@ dotnet vstest /Tests:TestMethod1,TestMethod2
 
 ## See also
 
-- [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options)
+- [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options) - the official Microsoft Learn reference for the `VSTest.Console.exe` tool, including options that `dotnet vstest` doesn't expose. Start here for stable, curated documentation.
+- [vstest.console.exe command line options (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/commandline.md) - the source-derived reference in the `microsoft/vstest` repo. Use it for the most up-to-date option details and internal switches, plus links to related runsettings, filtering, and diagnostics docs.
+- [VSTest environment variables (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/environment-variables.md) - environment variables that VSTest and the test host recognize, such as `VSTEST_DUMP_FORCEPROCDUMP` and the `VSTEST_DOTNET_ROOT_*` variables the .NET SDK sets when it launches `vstest.console`.

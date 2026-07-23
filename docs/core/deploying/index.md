@@ -58,6 +58,9 @@ dotnet publish -c Release -f net9.0
 
 The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net9.0` publishes to `./bin/Release/net9.0/publish/`. However, you can opt in to a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
+> [!IMPORTANT]
+> When you skip the build step during publish by passing the `--no-build` parameter, use the same options you used when you built the app, including target framework and build mode. For example, don't build as a framework-dependent app and then publish as a self-contained app.
+
 ::: zone-end
 
 ::: zone pivot="visualstudio"
@@ -107,25 +110,21 @@ dotnet publish -c Release -r <RID>
 
 For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
 
-::: zone pivot="cli,vscode"
-
 ## Quick reference
 
-The following table provides quick examples of how to publish your app.
+The following table provides quick examples of how to publish your app with the `dotnet` CLI:
 
-| Publish Mode | Command |
+| Publish mode | Command |
 |--|--|
-| [Framework-dependent deployment](#framework-dependent-deployment) | `dotnet publish -c Release [-r <RID>]` |
-| [Framework-dependent deployment (DLL)](#framework-dependent-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
-| [Self-contained deployment](#self-contained-deployment) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
-| [Single-file deployment](#single-file-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
-| [Native AOT deployment](#native-aot-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
-| [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
+| [Framework-dependent deployment](#publish-as-framework-dependent) | `dotnet publish -c Release [-r <RID>]` |
+| [Framework-dependent deployment (DLL)](#cross-platform-dll-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
+| [Self-contained deployment](#publish-as-self-contained) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
+| [Single-file deployment](#publish-as-single-file) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
+| [Native AOT deployment](#publish-as-native-aot) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
+| [ReadyToRun deployment](#publish-as-readytorun) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
 | [Container deployment](#container-deployment) | `dotnet publish -c Release [-r <RID>] -t:PublishContainer` |
 
-::: zone-end
-
-## Framework-dependent deployment
+## Publish as framework-dependent
 
 Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable is created that can be used to start your app. The platform-specific executable is named something similar to `myapp.exe` on Windows or just `myapp` on other platforms.
 
@@ -247,11 +246,11 @@ dotnet publish -c Release -p:UseAppHost=false
 
 ::: zone-end
 
-## Self-contained deployment
+## Publish as self-contained
 
 When you publish a self-contained deployment (SCD), the publishing process creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET. These dependencies must be present on the environment before the app runs.
 
-Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
+Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 **Advantages**
 
@@ -296,7 +295,7 @@ dotnet publish -c Release -r <RID> --self-contained true
 
 ::: zone-end
 
-## Single-file deployment
+## Publish as single-file
 
 When you publish your app as a single-file deployment, all application-dependent files are bundled into a single binary. This deployment model is available for both framework-dependent and self-contained applications, providing an attractive option to deploy and distribute your application as a single file.
 
@@ -314,7 +313,7 @@ Single-file apps are always OS and architecture specific. You need to publish fo
 - **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
 - **Platform-specific**: Must publish separate files for each target platform.
 
-Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#readytorun-deployment) for further optimization.
+Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#publish-as-native-aot) for further optimization.
 
 For more information about single-file deployment, see [Single-file deployment](single-file/overview.md).
 
@@ -349,7 +348,7 @@ dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 
 ::: zone-end
 
-## Native AOT deployment
+## Publish as native AOT
 
 Native AOT deployment compiles your app directly to native code, eliminating the need for a runtime. This publishing option uses **self-contained deployment** mode, as the compiled native code must include everything needed to run the application. This results in faster startup times and reduced memory usage, but comes with some limitations on supported features.
 
@@ -411,7 +410,7 @@ For more information about Native AOT deployment, see [Native AOT deployment](na
 
 ::: zone-end
 
-## ReadyToRun deployment
+## Publish as ReadyToRun
 
 When you publish your app with ReadyToRun compilation, your application assemblies are compiled as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation that improves startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. This publishing option can be used with both **framework-dependent** and **self-contained** deployment modes.
 

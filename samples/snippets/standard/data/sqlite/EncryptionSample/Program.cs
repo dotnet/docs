@@ -10,7 +10,6 @@ namespace EncryptionSample
     {
         static void Main()
         {
-            const string baseConnectionString = "Data Source=EncryptionSample.db";
             var password = "...";
 
             // Notice which packages are referenced by this project:
@@ -19,8 +18,9 @@ namespace EncryptionSample
 
             // The Password keyword in the connection string specifies the encryption key.
             #region snippet_ConnectionStringBuilder
-            var connectionString = new SqliteConnectionStringBuilder(baseConnectionString)
+            var connectionString = new SqliteConnectionStringBuilder
             {
+                DataSource = "EncryptionSample.db",
                 Mode = SqliteOpenMode.ReadWriteCreate,
                 Password = password
             }.ToString();
@@ -47,8 +47,9 @@ namespace EncryptionSample
             Console.Write("Password (it's 'password'): ");
             password = Console.ReadLine();
 
-            connectionString = new SqliteConnectionStringBuilder(baseConnectionString)
+            connectionString = new SqliteConnectionStringBuilder
             {
+                DataSource = "EncryptionSample.db",
                 Mode = SqliteOpenMode.ReadWrite,
                 Password = password
             }.ToString();

@@ -227,7 +227,7 @@ For more information, see the following resources:
   dotnet publish
   ```
 
-  Starting with .NET Core 3.0 SDK, this example also creates a [framework-dependent executable](../deploying/index.md##publish-as-framework-dependent) for the current platform.
+  Starting with .NET Core 3.0 SDK, this example also creates a [framework-dependent executable](../deploying/index.md#publish-as-framework-dependent) for the current platform.
 
 - Create a [self-contained executable](../deploying/index.md#publish-as-self-contained) for the project in the current directory, for a specific runtime:
 
@@ -237,7 +237,7 @@ For more information, see the following resources:
 
   The RID must be in the project file.
 
-- Create a [framework-dependent executable](../deploying/index.md##publish-as-framework-dependent) for the project in the current directory, for a specific platform:
+- Create a [framework-dependent executable](../deploying/index.md#publish-as-framework-dependent) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
   dotnet publish --runtime osx-x64 --self-contained false

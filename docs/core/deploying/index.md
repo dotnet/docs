@@ -250,7 +250,7 @@ dotnet publish -c Release -p:UseAppHost=false
 
 When you publish a self-contained deployment (SCD), the publishing process creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET. These dependencies must be present on the environment before the app runs.
 
-Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#publish-as-self-containeds-include-the-selected-runtime).
+Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#publish-as-self-containede).
 
 **Advantages**
 
@@ -313,7 +313,7 @@ Single-file apps are always OS and architecture specific. You need to publish fo
 - **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
 - **Platform-specific**: Must publish separate files for each target platform.
 
-Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#publish-as-native-readytorun) for further optimization.
+Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#publish-as-native-aot) for further optimization.
 
 For more information about single-file deployment, see [Single-file deployment](single-file/overview.md).
 

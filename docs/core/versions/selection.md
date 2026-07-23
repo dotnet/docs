@@ -22,7 +22,7 @@ Version selection occurs:
 - When you run an SDK command, [the SDK uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
 - When you build an assembly, [target framework monikers define build time APIs](#target-framework-monikers-define-build-time-apis).
 - When you run a .NET application, [target framework dependent apps roll-forward](#framework-dependent-apps-roll-forward).
-- When you publish a self-contained application, [self-contained deployments include the selected runtime](#publish-as-self-containeds-include-the-selected-runtime).
+- When you publish a self-contained application, [self-contained deployments include the selected runtime](#publish-as-self-containede).
 
 The rest of this document examines those four scenarios.
 
@@ -87,7 +87,7 @@ For more information, see [.NET 5 and .NET Standard](../../standard/net-standard
 
 ## Framework-dependent apps roll-forward
 
-When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md##publish-as-framework-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md##publish-as-framework-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-as-framework-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-as-framework-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `net5.0` in your project file, and `5.0.2` is the latest .NET runtime installed, the `5.0.2` runtime is used.
 

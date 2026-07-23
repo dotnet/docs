@@ -9,7 +9,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # Troubleshoot app launch failures
 
-This article describes some common reasons and possible solutions for application launch failures. It relates to [framework-dependent applications](../deploying/index.md##publish-as-framework-dependent), which rely on a .NET installation on your machine.
+This article describes some common reasons and possible solutions for application launch failures. It relates to [framework-dependent applications](../deploying/index.md#publish-as-framework-dependent), which rely on a .NET installation on your machine.
 
 If you already know which .NET version you need, you can download it from [.NET downloads](https://dotnet.microsoft.com/download/dotnet).
 
@@ -279,4 +279,4 @@ By default, an application requires a framework that matches the same major vers
 - [Install .NET](../install/index.yml)
 - [.NET install locations](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md)
 - [Check installed .NET versions](../install/how-to-detect-installed-versions.md)
-- [Framework-dependent applications](../deploying/index.md##publish-as-framework-dependent)
+- [Framework-dependent applications](../deploying/index.md#publish-as-framework-dependent)

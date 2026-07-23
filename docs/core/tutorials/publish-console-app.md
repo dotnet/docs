@@ -139,7 +139,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld.exe*
 
-      This is the [framework-dependent executable](../deploying/index.md##publish-as-framework-dependent) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
+      This is the [framework-dependent executable](../deploying/index.md#publish-as-framework-dependent) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
 
    - *HelloWorld.pdb* (optional for deployment)
 
@@ -175,7 +175,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld.exe* (*HelloWorld* on Linux or macOS.)
 
-      This is the [framework-dependent executable](../deploying/index.md##publish-as-framework-dependent) version of the application. The file is operating-system-specific.
+      This is the [framework-dependent executable](../deploying/index.md#publish-as-framework-dependent) version of the application. The file is operating-system-specific.
 
    - *HelloWorld.pdb* (optional for deployment)
 
@@ -203,7 +203,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld*
 
-      This is the [framework-dependent executable](../deploying/index.md##publish-as-framework-dependent) version of the application. The file is operating-system-specific. Codespaces runs on Linux, so this a Linux executable.
+      This is the [framework-dependent executable](../deploying/index.md#publish-as-framework-dependent) version of the application. The file is operating-system-specific. Codespaces runs on Linux, so this a Linux executable.
 
    - *HelloWorld.deps.json*
 

@@ -16,7 +16,9 @@ The source generator is triggered when <xref:Microsoft.Extensions.Logging.Logger
 > [!TIP]
 > The examples in this article use the following namespace:
 >
-> :::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="CommonUsings":::
+> ```csharp
+> using Microsoft.Extensions.Logging;
+> ```
 
 To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile time and generates an implementation of the `partial` method.
 
@@ -228,7 +230,7 @@ To enable redaction, use the [Microsoft.Extensions.Compliance.Redaction](https:/
 
 The redaction examples require the following namespaces:
 
-:::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="RedactionUsings":::
+:::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs":::
 
 To use redaction with source-generated logging methods, you should:
 

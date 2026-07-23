@@ -114,7 +114,7 @@ For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid
 
 The following table provides quick examples of how to publish your app with the `dotnet` CLI:
 
-| Publish Mode | Command |
+| Publish mode | Command |
 |--|--|
 | [Framework-dependent deployment](#publish-as-framework-dependent) | `dotnet publish -c Release [-r <RID>]` |
 | [Framework-dependent deployment (DLL)](#cross-platform-dll-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |

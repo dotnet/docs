@@ -250,7 +250,7 @@ dotnet publish -c Release -p:UseAppHost=false
 
 When you publish a self-contained deployment (SCD), the publishing process creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET. These dependencies must be present on the environment before the app runs.
 
-Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#publish-as-self-contained).
+Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 **Advantages**
 

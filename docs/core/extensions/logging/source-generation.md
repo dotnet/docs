@@ -18,7 +18,7 @@ The source generator is triggered when <xref:Microsoft.Extensions.Logging.Logger
 >
 > :::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="CommonUsings":::
 
-To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile time, and generates an implementation of the `partial` method.
+To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile time and generates an implementation of the `partial` method.
 
 :::code language="csharp" source="./snippets/source-generation/csharp/BasicUsage/StaticLog.cs" id="StaticLogMethod":::
 

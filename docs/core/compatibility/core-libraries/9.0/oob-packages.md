@@ -1,7 +1,7 @@
 ---
 title: "New version of some OOB packages"
 description: Learn about the breaking change in core .NET libraries where updates were made to TFMs and package versions for several OOB packages.
-ms.date: 12/4/2024
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43564
 ---
@@ -54,6 +54,8 @@ The source code of these packages was moved from their old branch, which was alr
 ## Recommended action
 
 Depending on the package, different recommended actions are provided. For more information, see the [package support policy](https://github.com/dotnet/maintenance-packages/tree/main/package-support-policy.md).
+
+If you're using these packages in an ASP.NET Framework web application that precompiles Razor (*.cshtml*) views with `aspnet_compiler.exe`, upgrading to new package versions might cause `CS0012` errors because some assemblies are framework facades that aren't copied to the bin folder. For more information and the fix, see [CS0012 in ASP.NET Framework web apps with Razor precompilation](../../../../csharp/language-reference/compiler-messages/assembly-references.md#cs0012-in-aspnet-framework-web-apps-with-razor-precompilation).
 
 ## Affected APIs
 

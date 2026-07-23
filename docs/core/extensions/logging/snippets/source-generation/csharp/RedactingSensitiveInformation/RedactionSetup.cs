@@ -5,10 +5,10 @@ using Microsoft.Extensions.Logging;
 
 namespace RedactingSensitiveInformation;
 
-// Supporting types copied from the data classification taxonomy pattern.
-// DataClassification.Private is used as a value for SetRedactor().
-// DataClassification.PrivateAttribute (as [MyTaxonomyClassifications.Private]) is used to
-// annotate logging parameters.
+// MyTaxonomyClassifications.Private serves two roles:
+// - As a DataClassification value passed to SetRedactor().
+// - As [MyTaxonomyClassifications.Private] on logging parameters, resolved via the
+//   nested PrivateAttribute class (C# drops the "Attribute" suffix in attribute syntax).
 public static class MyTaxonomyClassifications
 {
     private static string Name => "MyTaxonomy";

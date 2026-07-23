@@ -13,6 +13,11 @@ The source generator is triggered when <xref:Microsoft.Extensions.Logging.Logger
 
 ## Basic usage
 
+> [IMPORTANT]
+> The examples in this article use the following namespace:
+>
+> :::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="CommonUsings":::
+
 To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile time, and generates an implementation of the `partial` method.
 
 :::code language="csharp" source="./snippets/source-generation/csharp/BasicUsage/StaticLog.cs" id="StaticLogMethod":::
@@ -221,6 +226,10 @@ The [Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Ex
 
 To enable redaction, use the [Microsoft.Extensions.Compliance.Redaction](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Redaction) library. This library provides **redactors**—components that transform sensitive data (for example, by erasing, masking, or hashing it) so that it's safe to output. Redactors are selected based on **data classification**, which lets you label data according to its sensitivity (such as personal, private, or public).
 
+The redaction examples also require the following additional namespaces:
+
+:::code language="csharp" source="./snippets/source-generation/csharp/Usings.cs" id="RedactionUsings":::
+
 To use redaction with source-generated logging methods, you should:
 
 1. Classify your sensitive data using a data classification system.
@@ -236,9 +245,7 @@ You'll need to have a setting similar to this:
 
 :::code language="csharp" source="./snippets/source-generation/csharp/RedactingSensitiveInformation/RedactionSetup.cs" id="RedactionSetup":::
 
-The output should be like this:
-
-`User SSN: *****`
+The output should be like this: `User SSN: *****`.
 
 This approach ensures that only redacted data is logged, even when using compile-time generated logging APIs. You can use different redactors for different data types or classifications, and update your redaction logic centrally.
 

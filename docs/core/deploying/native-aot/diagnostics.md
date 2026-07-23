@@ -75,7 +75,7 @@ This mechanism leverages the fact that at the time `RhThrowEx` is called, the CP
 
 When publishing, the Native AOT compiler produces both an executable and a symbol file. Native debugging, and related activities like profiling, require access to the native symbol file. If this file isn't present, you might have degraded or broken results.
 
-For information about the name and location of the symbol file, see [Native debug information](index.md#publish-as-native-aot).
+For information about the name and location of the symbol file, see [Native debug information](index.md#native-aot-deployment).
 
 ## CPU profiling
 

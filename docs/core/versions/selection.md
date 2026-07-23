@@ -22,7 +22,7 @@ Version selection occurs:
 - When you run an SDK command, [the SDK uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
 - When you build an assembly, [target framework monikers define build time APIs](#target-framework-monikers-define-build-time-apis).
 - When you run a .NET application, [target framework dependent apps roll-forward](#framework-dependent-apps-roll-forward).
-- When you publish a self-contained application, [self-contained deployments include the selected runtime](#publish-as-self-containede).
+- When you publish a self-contained application, [self-contained deployments include the selected runtime](#publish-as-self-contained).
 
 The rest of this document examines those four scenarios.
 

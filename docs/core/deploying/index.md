@@ -124,8 +124,6 @@ The following table provides quick examples of how to publish your app with the 
 | [ReadyToRun deployment](#publish-as-readytorun) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
 | [Container deployment](#container-deployment) | `dotnet publish -c Release [-r <RID>] -t:PublishContainer` |
 
-<a id="framework-dependent-deployment"></a>
-
 ## Publish as framework-dependent
 
 Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable is created that can be used to start your app. The platform-specific executable is named something similar to `myapp.exe` on Windows or just `myapp` on other platforms.
@@ -248,13 +246,11 @@ dotnet publish -c Release -p:UseAppHost=false
 
 ::: zone-end
 
-<a id="self-contained-deployment"></a>
-
 ## Publish as self-contained
 
 When you publish a self-contained deployment (SCD), the publishing process creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET. These dependencies must be present on the environment before the app runs.
 
-Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
+Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#publish-as-self-containeds-include-the-selected-runtime).
 
 **Advantages**
 
@@ -299,8 +295,6 @@ dotnet publish -c Release -r <RID> --self-contained true
 
 ::: zone-end
 
-<a id="single-file-deployment"></a>
-
 ## Publish as single-file
 
 When you publish your app as a single-file deployment, all application-dependent files are bundled into a single binary. This deployment model is available for both framework-dependent and self-contained applications, providing an attractive option to deploy and distribute your application as a single file.
@@ -319,7 +313,7 @@ Single-file apps are always OS and architecture specific. You need to publish fo
 - **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
 - **Platform-specific**: Must publish separate files for each target platform.
 
-Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#readytorun-deployment) for further optimization.
+Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#publish-as-native-readytorun) for further optimization.
 
 For more information about single-file deployment, see [Single-file deployment](single-file/overview.md).
 
@@ -353,8 +347,6 @@ dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 01. Select **Save** and then **Publish**.
 
 ::: zone-end
-
-<a id="native-aot-deployment"></a>
 
 ## Publish as native AOT
 
@@ -417,8 +409,6 @@ Native AOT publishing must be configured in the project file. You can't enable i
 For more information about Native AOT deployment, see [Native AOT deployment](native-aot/index.md).
 
 ::: zone-end
-
-<a id="readytorun-deployment"></a>
 
 ## Publish as ReadyToRun
 

@@ -156,7 +156,7 @@ When deploying a [framework-dependent deployment](index.md#framework-dependent-d
 ```
 
 > [!NOTE]
-> For [self-contained deployment](index.md#self-contained-deployment) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, `<PublishWithAspNetCoreTargetManifest>` cannot be set to `true` for an self-contained app.
+> For [self-contained deployment](index.md#publish-as-self-contained) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, `<PublishWithAspNetCoreTargetManifest>` cannot be set to `true` for an self-contained app.
 
 ## See also
 

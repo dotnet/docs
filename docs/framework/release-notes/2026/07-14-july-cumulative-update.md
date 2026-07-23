@@ -3,7 +3,7 @@ title: July 2026 cumulative update
 description: Learn about the improvements in the .NET Framework July 2026 cumulative update.
 ms.date: 07/14/2026
 ---
-# July 2026 cumulative update
+# .NET Framework July 2026 cumulative update
 
 _Released July 14, 2026_
 

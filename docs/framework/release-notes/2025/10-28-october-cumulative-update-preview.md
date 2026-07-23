@@ -3,7 +3,7 @@ title: October 2025 cumulative update preview
 description: Learn about the improvements in the .NET Framework October 2025 cumulative update preview.
 ms.date: 10/28/2025
 ---
-# October 2025 cumulative update preview
+# .NET Framework October 2025 cumulative update preview
 
 _Released October 28, 2025_
 

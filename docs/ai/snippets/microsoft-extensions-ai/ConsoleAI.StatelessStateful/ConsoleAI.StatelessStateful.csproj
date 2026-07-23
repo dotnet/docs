@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="10.7.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="10.8.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OllamaSharp" Version="5.4.25" />
+    <PackageReference Include="OllamaSharp" Version="5.4.27" />
   </ItemGroup>
 
   <ItemGroup>

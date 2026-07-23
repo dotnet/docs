@@ -90,5 +90,13 @@ Friend Class NativeMethods
     <DllImport("PinvokeLib.dll", CallingConvention:=CallingConvention.Cdecl)>
     Friend Shared Sub TestArrayInStruct(ByRef myStruct As MyArrayStruct)
     End Sub
+
+    <DllImport("PinvokeLib.dll", CallingConvention:=CallingConvention.Cdecl)>
+    Friend Shared Function CreateTestClass() As IntPtr
+    End Function
+
+    <DllImport("PinvokeLib.dll", CallingConvention:=CallingConvention.Cdecl)>
+    Friend Shared Sub DeleteTestClass(ByVal instance As IntPtr)
+    End Sub
 End Class
 ' </NativeMethods>

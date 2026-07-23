@@ -59,7 +59,7 @@ dotnet publish -c Release -f net9.0
 The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net9.0` publishes to `./bin/Release/net9.0/publish/`. However, you can opt in to a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 > [!IMPORTANT]
-> When you skip the build step during publish by passing the `--no-build` parameter, publish with the same configuration you used to build. For example, don't build as a framework-dependent app and then publish as a self-contained app.
+> When you skip the build step during publish by passing the `--no-build` parameter, use the same options you used when you built the app, including target framework and build mode. For example, don't build as a framework-dependent app and then publish as a self-contained app.
 
 ::: zone-end
 
@@ -116,13 +116,15 @@ The following table provides quick examples of how to publish your app with the 
 
 | Publish Mode | Command |
 |--|--|
-| [Framework-dependent deployment](#framework-dependent-deployment) | `dotnet publish -c Release [-r <RID>]` |
-| [Framework-dependent deployment (DLL)](#framework-dependent-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
-| [Self-contained deployment](#self-contained-deployment) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
-| [Single-file deployment](#single-file-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
-| [Native AOT deployment](#native-aot-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
-| [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
+| [Framework-dependent deployment](#publish-as-framework-dependent) | `dotnet publish -c Release [-r <RID>]` |
+| [Framework-dependent deployment (DLL)](#cross-platform-dll-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
+| [Self-contained deployment](#publish-as-self-contained) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
+| [Single-file deployment](#publish-as-single-file) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
+| [Native AOT deployment](#publish-as-native-aot) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
+| [ReadyToRun deployment](#publish-as-readytorun) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
 | [Container deployment](#container-deployment) | `dotnet publish -c Release [-r <RID>] -t:PublishContainer` |
+
+<a id="framework-dependent-deployment"></a>
 
 ## Publish as framework-dependent
 
@@ -246,6 +248,8 @@ dotnet publish -c Release -p:UseAppHost=false
 
 ::: zone-end
 
+<a id="self-contained-deployment"></a>
+
 ## Publish as self-contained
 
 When you publish a self-contained deployment (SCD), the publishing process creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET. These dependencies must be present on the environment before the app runs.
@@ -294,6 +298,8 @@ dotnet publish -c Release -r <RID> --self-contained true
 01. Select **Save** and then **Publish**.
 
 ::: zone-end
+
+<a id="single-file-deployment"></a>
 
 ## Publish as single-file
 
@@ -347,6 +353,8 @@ dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 01. Select **Save** and then **Publish**.
 
 ::: zone-end
+
+<a id="native-aot-deployment"></a>
 
 ## Publish as native AOT
 
@@ -409,6 +417,8 @@ Native AOT publishing must be configured in the project file. You can't enable i
 For more information about Native AOT deployment, see [Native AOT deployment](native-aot/index.md).
 
 ::: zone-end
+
+<a id="readytorun-deployment"></a>
 
 ## Publish as ReadyToRun
 

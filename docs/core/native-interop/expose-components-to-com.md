@@ -2,7 +2,6 @@
 title: "Exposing .NET Core components to COM"
 description: "This tutorial shows you how to expose a class to COM from .NET Core. You generate a COM server and a side-by-side server manifest for Registry-Free COM."
 ms.date: 07/12/2019
-ai-usage: ai-assisted
 helpviewer_keywords:
   - "exposing .NET Core components to COM"
   - "interoperation with unmanaged code, exposing .NET Core components"

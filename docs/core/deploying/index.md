@@ -313,7 +313,7 @@ Single-file apps are always OS and architecture specific. You need to publish fo
 - **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
 - **Platform-specific**: Must publish separate files for each target platform.
 
-Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#readytorun-deployment) for further optimization.
+Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#publish-as-readytorun) for further optimization.
 
 For more information about single-file deployment, see [Single-file deployment](single-file/overview.md).
 

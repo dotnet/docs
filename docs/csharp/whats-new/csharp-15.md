@@ -159,7 +159,7 @@ outer: for (int row = 0; row < grid.Height; row++)
 }
 ```
 
-The label is placed directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their existing behavior and target the innermost applicable statement.
+The label is placed directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their original behavior and target the innermost applicable statement.
 
 The [IDE0410](../../fundamentals/code-analysis/style-rules/ide0410.md) style rule flags the Boolean flag and `goto` patterns that a labeled jump statement can replace, and shows before-and-after examples of each.
 

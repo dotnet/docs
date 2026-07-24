@@ -157,7 +157,7 @@ outer: for (int row = 0; row < grid.Height; row++)
 }
 ```
 
-The label is placed directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their existing behavior and target the innermost applicable statement.
+The label is placed directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their original behavior and target the innermost applicable statement.
 
 For more information, see [Jump statements](../language-reference/statements/jump-statements.md) in the language reference or the [feature specification](~/_csharplang/proposals/labeled-break-continue.md).
 

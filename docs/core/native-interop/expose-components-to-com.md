@@ -128,3 +128,5 @@ There is a fully functional [COM server sample](https://github.com/dotnet/sample
 Exposing COM components from [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) via the [EnableComHosting property](../project-sdk/msbuild-props.md#enablecomhosting) is not supported.
 
 Additionally, loading both .NET Framework and .NET Core into the same process does have diagnostic limitations. The primary limitation is the debugging of managed components as it is not possible to debug both .NET Framework and .NET Core at the same time. In addition, the two runtime instances don't share managed assemblies. This means that it isn't possible to share actual .NET types across the two runtimes and instead all interactions must be restricted to the exposed COM interface contracts.
+
+For scenarios where you need command-line COM tools similar to tools that .NET Framework provided, see the community project [`dscom`](https://github.com/dspace-group/dscom). This project isn't a Microsoft tool, so support comes from the project maintainers.

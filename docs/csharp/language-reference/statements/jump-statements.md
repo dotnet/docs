@@ -55,6 +55,8 @@ Starting in C# 15, a `continue` statement can optionally specify a label that id
 
 For both labeled `break` and labeled `continue`, only the statement immediately nested in a labeled statement has that label. For example, in `a: b: while (...)`, the `while` statement is labeled `b`, not `a`.
 
+Labeled jump statements often replace a Boolean flag that propagates a break or continue outward through nested loops, or a `goto` that jumps past the loops. The [IDE0410](../../../fundamentals/code-analysis/style-rules/ide0410.md) style rule detects those patterns and offers a labeled `break` or `continue` as a clearer replacement.
+
 ## The `return` statement
 
 The `return` statement terminates execution of the function where it appears. It returns control and the function's result, if any, to the caller.
@@ -159,3 +161,4 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [`yield` statement](yield.md)
+- [IDE0410: Use labeled jump statement](../../../fundamentals/code-analysis/style-rules/ide0410.md)

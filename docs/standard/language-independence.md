@@ -30,7 +30,7 @@ To design a component that's language independent, you only need to apply the ru
 > [!IMPORTANT]
 > The rules for CLS compliance apply only to a component's public interface, not to its private implementation.
 
-For example, unsigned integers other than <xref:System.Byte> are not CLS-compliant. Because the `Person` class in the following example exposes an `Age` property of type <xref:System.UInt16>, the following code displays a compiler warning.
+For example, unsigned integers other than <xref:System.Byte> are not CLS-compliant. Because the `Person` class in the following example exposes an `Age` property of type <xref:System.UInt16>, the following code displays a compiler warning. You can make the `Person` class CLS-compliant by changing the type of the `Age` property from <xref:System.UInt16> to <xref:System.Int16>, which is a CLS-compliant, 16-bit signed integer. You don't have to change the type of the private `personAge` field.
 
 [!code-csharp[Conceptual.CLSCompliant#1](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/public1.cs#1)]
 [!code-vb[Conceptual.CLSCompliant#1](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/public1.vb#1)]

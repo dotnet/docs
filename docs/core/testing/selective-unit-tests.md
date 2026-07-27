@@ -32,7 +32,7 @@ dotnet test --filter <Expression>
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory`<br>`Id` |
   | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
-  | Nunit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
+  | NUnit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory`<br>`Category`<br>`Property` |
 
 * **Operators**
 
@@ -45,6 +45,21 @@ dotnet test --filter <Expression>
 
 ## Character escaping
 
+Use escape sequences to represent filter operator characters in a filter value. These escape sequences are separate from any escaping your shell requires.
+
+| Escape sequence | Represents           |
+| --------------- | -------------------- |
+| `\\`          | `\`                  |
+| `\(`           | `(`                  |
+| `\)`           | `)`                  |
+| `\&`           | `&`                  |
+| `\|`           | <code>&#124;</code> |
+| `\=`           | `=`                  |
+| `\!`           | `!`                  |
+| `\~`           | `~`                  |
+
+To escape filter values programmatically, use the `Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.FilterHelper.Escape` API from the `Microsoft.VisualStudio.TestPlatform.ObjectModel` NuGet package.
+
 To use an exclamation mark (`!`) in a filter expression, you have to escape it in some Linux or macOS shells by putting a backslash in front of it (`\!`). For example, the following filter skips all tests in a namespace that contains `IntegrationTests`:
 
 ```dotnetcli
@@ -56,6 +71,8 @@ For `FullyQualifiedName` values that include a comma for generic type parameters
 ```dotnetcli
 dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1%2CParameterType2>.MyTestMethod"
 ```
+
+Because your shell also parses the filter expression, quote the entire `--filter` value whenever it contains characters your shell treats specially, such as `<`, `>`, or `,`. Quoting is required in PowerShell, where the comma is the array operator.
 
 For `Name` or `DisplayName`, use the URL encoding for the special characters. For example, to run a test with the name `MyTestMethod` and a string value `"text"`, use the following filter:
 
@@ -232,7 +249,7 @@ To run tests that have either a <xref:System.Reflection.Module.FullyQualifiedNam
 dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Priority=1"
 ```
 
-For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
+For more information, see [TestCase filter](https://github.com/microsoft/vstest/blob/main/docs/filter.md).
 
 :::zone-end
 

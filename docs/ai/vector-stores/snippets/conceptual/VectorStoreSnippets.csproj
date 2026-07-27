@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Search.Documents" Version="12.0.0" />
-    <PackageReference Include="Microsoft.Extensions.AI" Version="10.7.0" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.7.0" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="10.8.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.8.0" />
     <PackageReference Include="CommunityToolkit.VectorData.AzureAISearch" Version="1.0.0" />
     <PackageReference Include="CommunityToolkit.VectorData.InMemory" Version="1.0.0" />
     <PackageReference Include="CommunityToolkit.VectorData.Qdrant" Version="1.0.0" />

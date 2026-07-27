@@ -84,7 +84,7 @@
 | OpenAI Assistants | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.OpenAI.Assistants/1.0.0-beta.4) | [docs](/dotnet/api/overview/azure/AI.OpenAI.Assistants-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.OpenAI.Assistants_1.0.0-beta.4/sdk/openai/Azure.AI.OpenAI.Assistants/) |
 | OpenAI Inference | NuGet [2.1.0](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0)<br>NuGet [2.9.0-beta.1](https://www.nuget.org/packages/Azure.AI.OpenAI/2.9.0-beta.1) | [docs](/dotnet/api/overview/azure/AI.OpenAI-readme) | GitHub [2.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.OpenAI_2.1.0/sdk/openai/Azure.AI.OpenAI/)<br>GitHub [2.9.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.OpenAI_2.9.0-beta.1/sdk/openai/Azure.AI.OpenAI/) |
 | OpenTelemetry AspNetCore | NuGet [1.5.0](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore/1.5.0) | [docs](/dotnet/api/overview/azure/Monitor.OpenTelemetry.AspNetCore-readme) | GitHub [1.5.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.OpenTelemetry.AspNetCore_1.5.0/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/) |
-| OpenTelemetry Exporter | NuGet [1.8.2](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Exporter/1.8.2) | [docs](/dotnet/api/overview/azure/Monitor.OpenTelemetry.Exporter-readme) | GitHub [1.8.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.OpenTelemetry.Exporter_1.8.2/sdk/monitor/Azure.Monitor.OpenTelemetry.Exporter/) |
+| OpenTelemetry Exporter | NuGet [1.8.3](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Exporter/1.8.3) | [docs](/dotnet/api/overview/azure/Monitor.OpenTelemetry.Exporter-readme) | GitHub [1.8.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Monitor.OpenTelemetry.Exporter_1.8.3/sdk/monitor/Azure.Monitor.OpenTelemetry.Exporter/) |
 | Personalizer | NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.AI.Personalizer/2.0.0-beta.2) | [docs](/dotnet/api/overview/azure/AI.Personalizer-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [2.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Personalizer_2.0.0-beta.2/sdk/personalizer/Azure.AI.Personalizer/) |
 | Playwright | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Developer.Playwright/1.0.0) | [docs](/dotnet/api/overview/azure/Developer.Playwright-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.Playwright_1.0.0/sdk/loadtestservice/Azure.Developer.Playwright/) |
 | Playwright NUnit | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Developer.Playwright.NUnit/1.0.0) | [docs](/dotnet/api/overview/azure/Developer.Playwright.NUnit-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.Playwright.NUnit_1.0.0/sdk/loadtestservice/Azure.Developer.Playwright.NUnit/) |
@@ -494,12 +494,12 @@
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.2.0) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.1-beta.7](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.1-beta.7) |  |  |
-| Speech CLI | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.51.0) |  |  |
-| Speech Extension Embedded SR | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.51.0) |  |  |
-| Speech Extension Embedded TTS | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.51.0) |  |  |
-| Speech Extension MAS | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.51.0) |  |  |
-| Speech Extension ONNX Runtime | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.51.0) |  |  |
-| Speech Extension Telemetry | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.51.0) |  |  |
+| Speech CLI | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.51.1) |  |  |
+| Speech Extension Embedded SR | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.51.1) |  |  |
+| Speech Extension Embedded TTS | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.51.1) |  |  |
+| Speech Extension MAS | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.51.1) |  |  |
+| Speech Extension ONNX Runtime | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.51.1) |  |  |
+| Speech Extension Telemetry | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.51.1) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [5.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Abstractions/5.0.0-preview.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.DotNet/1.0.0-preview.1) |  |  |
@@ -591,8 +591,8 @@
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
-| Speech | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.51.0)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
-| Speech Remote Conversation | NuGet [1.51.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.51.0) |  |  |
+| Speech | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.51.1)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
+| Speech Remote Conversation | NuGet [1.51.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.51.1) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |

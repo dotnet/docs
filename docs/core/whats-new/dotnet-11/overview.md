@@ -83,6 +83,10 @@ C# 15 includes these features:
 
 - [Collection expression arguments](../../../csharp/whats-new/csharp-15.md#collection-expression-arguments)
 - [Union types](../../../csharp/whats-new/csharp-15.md#union-types)
+- [Closed hierarchies](../../../csharp/whats-new/csharp-15.md#closed-hierarchies)
+- [Extension indexers](../../../csharp/whats-new/csharp-15.md#extension-indexers)
+- [Labeled `break` and `continue`](../../../csharp/whats-new/csharp-15.md#labeled-break-and-continue)
+- [Memory safety](../../../csharp/whats-new/csharp-15.md#memory-safety)
 
 For information about new C# features, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md).
 

@@ -50,7 +50,7 @@ The following algorithm describes how the runtime loads a managed assembly.
     - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load*?displayProperty=nameWithType> function.
     - Check the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance's cache and run [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic. If an assembly is newly loaded, a reference is added to the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance's `cache-by-name`.
     - Raise the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext. Handlers are invoked in registration order. The first handler that returns a non-null assembly ends the resolution.
-    - Raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event. Handlers are invoked in registration order. The first handler that returns a non-null assembly ends the resolution. Note that <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> registers its own handler for this event when called, so if you register your own handler first, your handler is invoked before the `LoadFrom` handler.
+    - Raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event. Handlers are invoked in registration order. The first handler that returns a non-null assembly ends the resolution.
 
 3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly in the following priority order:
 

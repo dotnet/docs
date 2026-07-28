@@ -100,23 +100,6 @@ When you create your own template, you declare its type using the `tags.type` fi
 
 ## Template structure
 
-<!--
-- A template is a folder containing source files/folders and a `.template.config` subfolder.
-- The `.template.config` folder must contain a `template.json` file.
-- Source files can be any type of file — not limited to .NET project types.
-- The template engine uses source files as-is; no special tokens need to be injected into the source code.
-- Because of this, template source files can be compiled, run, and debugged normally during development.
-- Explain that an existing project can be turned into a template by just adding `.template.config/template.json`.
-- Show a simple folder structure example:
-  ```
-  mytemplate/
-  ├── console.cs
-  ├── readme.txt
-  └── .template.config/
-        template.json
-  ```
--->
-
 A template is a folder on disk that contains two things: your source files and a special `.template.config` subfolder. When you run `dotnet new <shortName>`, the template engine copies your source files to the output location and applies any configuration you've defined.
 
 ```text
@@ -135,31 +118,20 @@ The only required file inside `.template.config` is `template.json`. That file t
 
 ### The template.json file
 
-<!--
-- Describe the purpose of template.json: provides configuration to the template engine.
-- Cover required/common fields with a table (matching existing custom-templates.md table):
-  - $schema, author, classifications, identity, name, shortName, sourceName, preferNameDirectory
-- Explain `sourceName`: the template engine replaces occurrences of this value in file names and file contents with the name the user provides (via -n or --name), or defaults to the current folder name.
-- Explain `classifications`: appear as tags in `dotnet new list`; searchable by users.
-- Mention the full schema is at JSON Schema Store.
-- Link to dotnet templating wiki for advanced configuration.
-- Show a minimal template.json example.
--->
-
 The `template.json` file is the only required piece of configuration in a template. It lives inside the `.template.config` folder and tells the template engine how to present and process your template. The following table describes the common fields:
 
-| Field | Type | Description |
-|---|---|---|
-| `$schema` | URI | The JSON schema for `template.json`. Set to `https://json.schemastore.org/template` to enable IntelliSense in editors like Visual Studio Code. |
-| `author` | string | The author of the template. |
-| `classifications` | array(string) | Tags users can use to find the template with `dotnet new search` or `dotnet new list`. These appear in the **Tags** column of the template list. |
-| `identity` | string | A unique identifier for this template. |
-| `name` | string | The display name of the template shown to users. |
-| `shortName` | string | The short name users pass to `dotnet new` to create from this template, such as `console` or `classlib`. |
-| `sourceName` | string | A string in your source files and file names that the template engine replaces with the name the user provides via `-n` or `--name`. If the user doesn't provide a name, the current directory name is used. |
-| `preferNameDirectory` | boolean | When `true` and the user provides a name but no output directory, the template engine creates a new directory with that name instead of writing files into the current directory. Defaults to `false`. |
+| Field                 | Type          | Description                                                                                                                                                                                                  |
+|-----------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `$schema`             | URI           | The JSON schema for `template.json`. Set to `https://json.schemastore.org/template` to enable IntelliSense in editors like Visual Studio Code.                                                               |
+| `author`              | string        | The author of the template.                                                                                                                                                                                  |
+| `classifications`     | array(string) | Tags users can use to find the template with `dotnet new search` or `dotnet new list`. These appear in the **Tags** column of the template list.                                                             |
+| `identity`            | string        | A unique identifier for this template.                                                                                                                                                                       |
+| `name`                | string        | The display name of the template shown to users.                                                                                                                                                             |
+| `shortName`           | string        | The short name users pass to `dotnet new` to create from this template, such as `console` or `classlib`.                                                                                                     |
+| `sourceName`          | string        | A string in your source files and file names that the template engine replaces with the name the user provides via `-n` or `--name`. If the user doesn't provide a name, the current directory name is used. |
+| `preferNameDirectory` | boolean       | When `true` and the user provides a name but no output directory, the template engine creates a new directory with that name instead of writing files into the current directory. Defaults to `false`.       |
 
-Two fields deserve extra attention. The `sourceName` field is how templates handle naming: set it to a string that appears in your file names and source code (such as `MyTemplate`), and the template engine replaces every occurrence with whatever name the user passes when creating the template. The `classifications` field controls discoverability — choose tags that accurately describe your template's purpose so users can find it when searching.
+Two fields deserve extra attention. The `sourceName` field is how templates handle naming: set it to a string that appears in your file names and source code (such as `MyTemplate`), and the template engine replaces every occurrence with whatever name the user passes when creating the template. The `classifications` field controls discoverability; choose tags that accurately describe your template's purpose so users can find it when searching.
 
 Here's a minimal `template.json` for a console template:
 
@@ -178,15 +150,6 @@ Here's a minimal `template.json` for a console template:
 The full schema is available at [JSON Schema Store](https://www.schemastore.org/template.json). For advanced configuration options such as conditional file inclusion, post-creation actions, and multi-project templates, see the [dotnet/templating GitHub wiki](https://github.com/dotnet/templating/wiki).
 
 ### Template parameters (symbols)
-
-<!--
-- The `symbols` section defines custom parameters for the template.
-- Each symbol maps to a CLI option the user can pass to `dotnet new <shortName>`.
-- Describe common symbol settings: type, description, datatype, replaces, fileRename, defaultValue.
-- Explain how `replaces` and `fileRename` work: text substitution in file contents and file names respectively.
-- Show a simple example: a `ClassName` symbol that renames both the file and the class.
-- Show how to discover a template's available parameters with `dotnet new <shortName> -?`.
--->
 
 The `symbols` section in `template.json` defines the parameters users can pass when creating from your template. Each symbol becomes a CLI option on `dotnet new <shortName>`, so a symbol named `ClassName` becomes `--ClassName` (or `-C` if you define a short name).
 
@@ -228,17 +191,20 @@ dotnet new <shortName> -?
 
 ## Template packages
 
-[Explain what a template package is: a NuGet package containing one or more templates. Describe how packages enable distribution of templates.]
+A template package is a NuGet (_.nupkg_) file that bundles one or more templates together. When you install a template package, the .NET template engine registers every template inside it at once. This makes packages the standard way to distribute templates: you can publish a single package to nuget.org, a private NuGet feed, or share a local _.nupkg_ file, and users install the whole collection with one command.
 
-<!--
-- A template package is a NuGet (.nupkg) file that bundles one or more templates.
-- Installing a template package installs all templates it contains at once.
-- Template packages can be distributed via nuget.org, a private NuGet feed, or a local file.
-- Mention that a C# project file (.csproj) with special settings is used to pack templates into a NuGet package.
-- Key .csproj settings: PackageType=Template, IncludeContentInPack=true, IncludeBuildOutput=false, ContentTargetFolders=content.
-- Reference: cli-templates-create-template-package.md for the full walkthrough.
-- Mention the Microsoft.TemplateEngine.Authoring.Templates NuGet package that provides a `templatepack` project template for authoring.
--->
+To build a template package, you use a C# project file (_.csproj_) configured to act as a **packaging project** rather than a compilation project. The key settings that make this work are:
+
+| Setting                | Value      | Purpose                                                      |
+|------------------------|------------|--------------------------------------------------------------|
+| `PackageType`          | `Template` | Marks the package as a template package so it appears in `dotnet new search` results. |
+| `IncludeContentInPack` | `true`     | Includes content files in the NuGet package.                 |
+| `IncludeBuildOutput`   | `false`    | Prevents compiled binaries from being added to the package.  |
+| `ContentTargetFolders` | `content`  | Places your template folders inside the `content` folder of the NuGet package, which is where the template engine expects to find them. |
+
+The easiest way to create a packaging project is the `templatepack` project template, provided by the [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) NuGet package. Install that package once, then run `dotnet new templatepack -n <PackageName>` to scaffold a ready-to-use packaging project. The generated project already includes the correct `.csproj` settings, a `content` folder for your templates, and MSBuild tasks for template validation and optional localization.
+
+For a full walkthrough of creating, packing, and publishing a template package, see [Tutorial: Create a template package](../tutorials/cli-templates-create-template-package.md).
 
 ## Install and uninstall templates
 
@@ -276,7 +242,7 @@ dotnet new <shortName> -?
 [Explain how templates created with the .NET template engine also appear and work in Visual Studio.]
 
 <!--
-- Visual Studio uses the same .NET template engine as `dotnet new`.
+- Visual Studio uses the same .NET template engine as `dotnet new`. (Validate this item. Doesn't VS have it's own template engine? This makes it sound like .NET template and VS template are one and the same.)
 - Project templates appear in the Visual Studio "Create a new project" dialog.
 - Item templates do NOT currently appear in the "Add > New Item" dialog.
 - When published to nuget.org as a template package, templates become discoverable in Visual Studio's template search.

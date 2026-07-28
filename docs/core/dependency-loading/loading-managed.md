@@ -33,9 +33,6 @@ The direct use of the following APIs will also trigger loads:
 > [!IMPORTANT]
 > Unlike .NET Framework, the `assemblyFile` parameter of <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> is treated as a file path in .NET, not a URI. In .NET Framework, you can pass a file URI (for example, `file:///C:/path/to/assembly.dll`)—such as one constructed from <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>—and the assembly loads successfully. In .NET, the `assemblyFile` value is passed to <xref:System.IO.Path.GetFullPath*?displayProperty=nameWithType>, which doesn't properly handle URIs, so the load fails. If you already have a file URI string, first create a <xref:System.Uri> instance and use its <xref:System.Uri.LocalPath> property to get the file path before calling <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType>. To get the file path of an already-loaded assembly, use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead of `CodeBase`.
 
-> [!NOTE]
-> When you call <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType>, the runtime registers an <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> handler at that point. Handlers for <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> are invoked in registration order. The first handler that returns a non-null assembly ends the resolution. If you register your own handler before calling `LoadFrom`, your handler is invoked first. If your handler returns `null`, the `LoadFrom` handler is invoked next and might resolve the dependency from the same directory as the loaded assembly. This means that you might see the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event fire for a dependency even when your own <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> handler returned `null` for it—because another registered handler (such as the one from `LoadFrom`) successfully resolved it afterward.
-
 ## Algorithm
 
 The following algorithm describes how the runtime loads a managed assembly.
@@ -52,8 +49,8 @@ The following algorithm describes how the runtime loads a managed assembly.
     - Check its `cache-by-name`.
     - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load*?displayProperty=nameWithType> function.
     - Check the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance's cache and run [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic. If an assembly is newly loaded, a reference is added to the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance's `cache-by-name`.
-    - Raise the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext.
-    - Raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
+    - Raise the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext. Handlers are invoked in registration order. The first handler that returns a non-null assembly ends the resolution.
+    - Raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event. Handlers are invoked in registration order. The first handler that returns a non-null assembly ends the resolution. Note that <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> registers its own handler for this event when called, so if you register your own handler first, your handler is invoked before the `LoadFrom` handler.
 
 3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly in the following priority order:
 

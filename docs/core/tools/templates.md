@@ -1,0 +1,201 @@
+---
+title: .NET templates overview
+description: Learn how .NET templates work, how they're structured, and what you can do with them using the dotnet new command and Visual Studio.
+author: adegeo
+ms.author: adegeo
+ms.topic: overview
+ms.date: 07/28/2026
+ai-usage: ai-assisted
+
+#customer intent: As a .NET developer, I want to understand how .NET templates work so that I can use, create, and distribute templates for projects and files.
+
+---
+
+<!-- REFERENCE MATERIAL AND RULES
+
+## Key Content Requirements
+
+### Audience Focus
+
+- Primary audience: beginner .NET developers who want to understand the template system
+- Secondary audience: intermediate developers who want to create or distribute their own templates
+- The article should explain HOW templates work conceptually, not just list commands
+
+### Goal of This Article
+
+This is a replacement for `custom-templates.md`. The old article focused on "custom" templates only. This new overview should:
+- Cover templates broadly (built-in AND custom)
+- Explain the template engine and how it works
+- Explain what a template IS (source files + template.json)
+- Cover types of templates (item, project)
+- Cover how to install, use, and uninstall templates
+- Cover how to create and package templates (high-level, with links to tutorials for details)
+- Mention Visual Studio integration
+
+### Terminology
+
+- Say "the .NET template engine" or "template engine" for the underlying system
+- Say "template package" for a NuGet package containing one or more templates
+- Use "dotnet new" when referring to the CLI command
+- Don't use "custom templates" as the main framing — all templates (built-in and third-party) are just "templates"
+
+### Do NOT
+
+- Go into deep tutorial detail — link to the tutorial series for that
+- Reproduce the full tutorial steps
+- Focus only on CLI — mention Visual Studio integration
+
+## Reference Material
+
+The following files were used as source material:
+
+- Existing article being replaced: docs/core/tools/custom-templates.md
+- Tutorial 1 (item template): docs/core/tutorials/cli-templates-create-item-template.md
+- Tutorial 2 (project template): docs/core/tutorials/cli-templates-create-project-template.md
+- Tutorial 3 (template package): docs/core/tutorials/cli-templates-create-template-package.md
+
+When linking to these tutorials, use relative paths from docs/core/tools/.
+When linking to learn.microsoft.com content, use the /dotnet/... URL path.
+
+-->
+
+# What are .NET templates?
+
+[Introduce the .NET template system: what templates are, what they produce (projects, files, resources), and why they exist. Mention that both the `dotnet new` CLI command and Visual Studio use the same template engine. Briefly mention built-in templates that ship with the SDK and the ability to install community or custom templates.]
+
+<!--
+- Define what a template is: a blueprint that generates projects, files, or resources.
+- Explain that the .NET SDK ships with built-in templates (console apps, class libraries, ASP.NET, etc.).
+- Mention that developers can install additional templates from NuGet or create their own.
+- State that both `dotnet new` and Visual Studio use the same underlying template engine.
+- Link to the `dotnet new` command reference for how to use templates from the CLI.
+- Mention `dotnet new list` to see currently installed templates.
+-->
+
+## Template types
+
+[Explain the two main types of templates: item templates and project templates. Describe what each type produces and when to use each.]
+
+<!--
+- Item templates: generate one or more files added to an existing project (code files, config files, etc.).
+- Project templates: generate an entire ready-to-run project structure.
+- Explain the `tags/type` field in template.json that categorizes a template as "item" or "project."
+- Note that "item" and "project" are recommended values, not enforced by the engine.
+- Mention that item templates don't appear in the Visual Studio "Add > New Item" dialog (current limitation).
+- Reference: custom-templates.md existing content, tutorial articles.
+-->
+
+## Template structure
+
+[Explain how a template is structured on disk — the source files plus the required `.template.config/template.json` configuration file.]
+
+<!--
+- A template is a folder containing source files/folders and a `.template.config` subfolder.
+- The `.template.config` folder must contain a `template.json` file.
+- Source files can be any type of file — not limited to .NET project types.
+- The template engine uses source files as-is; no special tokens need to be injected into the source code.
+- Because of this, template source files can be compiled, run, and debugged normally during development.
+- Explain that an existing project can be turned into a template by just adding `.template.config/template.json`.
+- Show a simple folder structure example:
+  ```
+  mytemplate/
+  ├── console.cs
+  ├── readme.txt
+  └── .template.config/
+        template.json
+  ```
+-->
+
+### The template.json file
+
+[Explain the `template.json` configuration file: what it does, required fields, and optional fields that enable advanced features.]
+
+<!--
+- Describe the purpose of template.json: provides configuration to the template engine.
+- Cover required/common fields with a table (matching existing custom-templates.md table):
+  - $schema, author, classifications, identity, name, shortName, sourceName, preferNameDirectory
+- Explain `sourceName`: the template engine replaces occurrences of this value in file names and file contents with the name the user provides (via -n or --name), or defaults to the current folder name.
+- Explain `classifications`: appear as tags in `dotnet new list`; searchable by users.
+- Mention the full schema is at JSON Schema Store.
+- Link to dotnet templating wiki for advanced configuration.
+- Show a minimal template.json example.
+-->
+
+### Template parameters (symbols)
+
+[Explain the `symbols` section in template.json, which defines parameters that users can pass when creating from a template.]
+
+<!--
+- The `symbols` section defines custom parameters for the template.
+- Each symbol maps to a CLI option the user can pass to `dotnet new <shortName>`.
+- Describe common symbol settings: type, description, datatype, replaces, fileRename, defaultValue.
+- Explain how `replaces` and `fileRename` work: text substitution in file contents and file names respectively.
+- Show a simple example: a `ClassName` symbol that renames both the file and the class.
+- Show how to discover a template's available parameters with `dotnet new <shortName> -?`.
+-->
+
+## Template packages
+
+[Explain what a template package is: a NuGet package containing one or more templates. Describe how packages enable distribution of templates.]
+
+<!--
+- A template package is a NuGet (.nupkg) file that bundles one or more templates.
+- Installing a template package installs all templates it contains at once.
+- Template packages can be distributed via nuget.org, a private NuGet feed, or a local file.
+- Mention that a C# project file (.csproj) with special settings is used to pack templates into a NuGet package.
+- Key .csproj settings: PackageType=Template, IncludeContentInPack=true, IncludeBuildOutput=false, ContentTargetFolders=content.
+- Reference: cli-templates-create-template-package.md for the full walkthrough.
+- Mention the Microsoft.TemplateEngine.Authoring.Templates NuGet package that provides a `templatepack` project template for authoring.
+-->
+
+## Install and uninstall templates
+
+[Describe how to install templates from the various sources and how to list and uninstall them.]
+
+<!--
+- Use `dotnet new install <source>` where source can be:
+  - A NuGet package ID (from nuget.org)
+  - A NuGet package ID with a custom source (--nuget-source)
+  - A path to a local .nupkg file
+  - A file system directory that contains a template (the folder with .template.config inside)
+- Use `dotnet new uninstall` (no args) to list all installed template packages and their uninstall commands.
+- Use `dotnet new uninstall <PACKAGE_ID_or_PATH>` to uninstall by ID (NuGet) or path (file system).
+- Warn that templates can execute MSBuild and arbitrary code — only install trusted templates.
+- Note that built-in SDK templates are not shown in the uninstall list.
+- Show a few example commands.
+-->
+
+## Template localization
+
+[Explain that templates support localization so template metadata appears in the user's language.]
+
+<!--
+- The template engine supports optional localization of template metadata (name, description, symbols, etc.).
+- Localization files are JSON files placed in `.template.config/localize/`.
+- File naming convention: `templatestrings.<lang-code>.json`.
+- Localization keys reference elements in template.json using `/` as a path delimiter.
+- Localization is optional when creating templates.
+- Link to the dotnet templating wiki localization page for more detail.
+- Show a brief example of a templatestrings.pt-BR.json file.
+-->
+
+## Visual Studio integration
+
+[Explain how templates created with the .NET template engine also appear and work in Visual Studio.]
+
+<!--
+- Visual Studio uses the same .NET template engine as `dotnet new`.
+- Project templates appear in the Visual Studio "Create a new project" dialog.
+- Item templates do NOT currently appear in the "Add > New Item" dialog.
+- When published to nuget.org as a template package, templates become discoverable in Visual Studio's template search.
+- Link to relevant Visual Studio docs or Sayed Hashimi's template-sample repo for deeper VS integration guidance.
+-->
+
+## Related content
+
+- [Tutorial: Create an item template](../tutorials/cli-templates-create-item-template.md)
+- [Tutorial: Create a project template](../tutorials/cli-templates-create-project-template.md)
+- [Tutorial: Create a template package](../tutorials/cli-templates-create-template-package.md)
+- [dotnet new command](dotnet-new.md)
+- [dotnet/templating GitHub repo wiki](https://github.com/dotnet/templating/wiki)
+- [Template samples](https://aka.ms/template-samples)

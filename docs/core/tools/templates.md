@@ -53,6 +53,7 @@ The following files were used as source material:
 - Tutorial 1 (item template): docs/core/tutorials/cli-templates-create-item-template.md
 - Tutorial 2 (project template): docs/core/tutorials/cli-templates-create-project-template.md
 - Tutorial 3 (template package): docs/core/tutorials/cli-templates-create-template-package.md
+- template.json schema: https://www.schemastore.org/template.json
 
 When linking to these tutorials, use relative paths from docs/core/tools/.
 When linking to learn.microsoft.com content, use the /dotnet/... URL path.
@@ -74,16 +75,28 @@ When linking to learn.microsoft.com content, use the /dotnet/... URL path.
 
 ## Template types
 
-[Explain the two main types of templates: item templates and project templates. Describe what each type produces and when to use each.]
-
 <!--
 - Item templates: generate one or more files added to an existing project (code files, config files, etc.).
-- Project templates: generate an entire ready-to-run project structure.
-- Explain the `tags/type` field in template.json that categorizes a template as "item" or "project."
-- Note that "item" and "project" are recommended values, not enforced by the engine.
+- Project templates: generate an entire project structure.
+- Solution templates: generate a solution with one or more projects.
+- Explain the `tags/type` field in template.json that categorizes a template as "item", "project", or "solution."
+- Note that "item", "project", and "solution" are the only valid values, enforced by the schema.
 - Mention that item templates don't appear in the Visual Studio "Add > New Item" dialog (current limitation).
 - Reference: custom-templates.md existing content, tutorial articles.
 -->
+
+The .NET template engine supports three types of templates: item templates, project templates, and solution templates.
+
+- **Item templates** generate one or more files, such as a code file, configuration file, or other resource, without generating an entire project around them. For example, an item template might produce a class file that adds a set of extension methods, or a JSON configuration file that follows a standard layout your team uses. To learn how to build an item template, see [Tutorial: Create an item template](../tutorials/cli-templates-create-item-template.md).
+
+- **Project templates** generate a complete project structure. When you run `dotnet new console`, for example, the console project template produces a `.csproj` file, a `Program.cs` file, and any other files that make up the project. Use a project template when you want to give users a full project starting point rather than individual files. To learn how to build a project template, see [Tutorial: Create a project template](../tutorials/cli-templates-create-project-template.md).
+
+- **Solution templates** generate a solution with one or more projects. Use a solution template when you want to scaffold an entire multi-project structure — for example, an API project paired with a test project — in a single step.
+
+When you create your own template, you declare its type using the `tags.type` field in the `template.json` configuration file. The valid values are `"project"`, `"item"`, and `"solution"`. These values let users filter results when they search for templates with `dotnet new search` or `dotnet new list`.
+
+> [!TIP]
+> Project templates appear in the Visual Studio **Create a new project** dialog, but item templates don't appear in the **Add** > **New Item** dialog. You can use item templates from the `dotnet new` CLI.
 
 ## Template structure
 

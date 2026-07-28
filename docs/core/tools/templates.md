@@ -100,8 +100,6 @@ When you create your own template, you declare its type using the `tags.type` fi
 
 ## Template structure
 
-[Explain how a template is structured on disk — the source files plus the required `.template.config/template.json` configuration file.]
-
 <!--
 - A template is a folder containing source files/folders and a `.template.config` subfolder.
 - The `.template.config` folder must contain a `template.json` file.
@@ -119,9 +117,23 @@ When you create your own template, you declare its type using the `tags.type` fi
   ```
 -->
 
-### The template.json file
+A template is a folder on disk that contains two things: your source files and a special `.template.config` subfolder. When you run `dotnet new <shortName>`, the template engine copies your source files to the output location and applies any configuration you've defined.
 
-[Explain the `template.json` configuration file: what it does, required fields, and optional fields that enable advanced features.]
+```text
+mytemplate/
+├── console.cs
+├── readme.txt
+└── .template.config/
+    └── template.json
+```
+
+The source files can be any type of file. The template engine doesn't require you to inject special tokens or markers into your source code. It uses your files as-is, which means you can build, run, and debug a template's source project exactly like a normal .NET project. To turn an existing project into a template, add a `.template.config/template.json` file to the project root.
+
+You can optionally inject substitution tokens tied to template parameters (symbols) directly into your source files and file names, but doing so means those files are no longer runnable as a normal .NET project.
+
+The only required file inside `.template.config` is `template.json`. That file tells the template engine everything it needs: the template's name, short name, author, classifications, and any parameters users can pass when they create from the template.
+
+### The template.json file
 
 <!--
 - Describe the purpose of template.json: provides configuration to the template engine.
@@ -134,9 +146,38 @@ When you create your own template, you declare its type using the `tags.type` fi
 - Show a minimal template.json example.
 -->
 
-### Template parameters (symbols)
+The `template.json` file is the only required piece of configuration in a template. It lives inside the `.template.config` folder and tells the template engine how to present and process your template. The following table describes the common fields:
 
-[Explain the `symbols` section in template.json, which defines parameters that users can pass when creating from a template.]
+| Field | Type | Description |
+|---|---|---|
+| `$schema` | URI | The JSON schema for `template.json`. Set to `https://json.schemastore.org/template` to enable IntelliSense in editors like Visual Studio Code. |
+| `author` | string | The author of the template. |
+| `classifications` | array(string) | Tags users can use to find the template with `dotnet new search` or `dotnet new list`. These appear in the **Tags** column of the template list. |
+| `identity` | string | A unique identifier for this template. |
+| `name` | string | The display name of the template shown to users. |
+| `shortName` | string | The short name users pass to `dotnet new` to create from this template, such as `console` or `classlib`. |
+| `sourceName` | string | A string in your source files and file names that the template engine replaces with the name the user provides via `-n` or `--name`. If the user doesn't provide a name, the current directory name is used. |
+| `preferNameDirectory` | boolean | When `true` and the user provides a name but no output directory, the template engine creates a new directory with that name instead of writing files into the current directory. Defaults to `false`. |
+
+Two fields deserve extra attention. The `sourceName` field is how templates handle naming: set it to a string that appears in your file names and source code (such as `MyTemplate`), and the template engine replaces every occurrence with whatever name the user passes when creating the template. The `classifications` field controls discoverability — choose tags that accurately describe your template's purpose so users can find it when searching.
+
+Here's a minimal `template.json` for a console template:
+
+```json
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Your Name",
+  "classifications": [ "Common", "Console" ],
+  "identity": "MyCompany.ConsoleTemplate.CSharp",
+  "name": "My Console App",
+  "shortName": "myconsole",
+  "sourceName": "MyConsoleApp"
+}
+```
+
+The full schema is available at [JSON Schema Store](https://www.schemastore.org/template.json). For advanced configuration options such as conditional file inclusion, post-creation actions, and multi-project templates, see the [dotnet/templating GitHub wiki](https://github.com/dotnet/templating/wiki).
+
+### Template parameters (symbols)
 
 <!--
 - The `symbols` section defines custom parameters for the template.
@@ -146,6 +187,44 @@ When you create your own template, you declare its type using the `tags.type` fi
 - Show a simple example: a `ClassName` symbol that renames both the file and the class.
 - Show how to discover a template's available parameters with `dotnet new <shortName> -?`.
 -->
+
+The `symbols` section in `template.json` defines the parameters users can pass when creating from your template. Each symbol becomes a CLI option on `dotnet new <shortName>`, so a symbol named `ClassName` becomes `--ClassName` (or `-C` if you define a short name).
+
+Each symbol entry supports the following common settings:
+
+| Setting | Description |
+|---|---|
+| `type` | Must be `"parameter"` for user-facing parameters. |
+| `description` | Shown in the template help output when users run `dotnet new <shortName> -?`. |
+| `datatype` | The expected data type, such as `"text"`, `"bool"`, or `"choice"`. |
+| `replaces` | A string in your source file contents that the template engine replaces with the parameter value. |
+| `fileRename` | A string in your source file names that the template engine replaces with the parameter value. |
+| `defaultValue` | The value used when the user doesn't supply the parameter. |
+
+The `replaces` and `fileRename` settings are how symbols drive substitution. When a user provides a value, the template engine replaces every occurrence of the `replaces` string inside file contents and every occurrence of the `fileRename` string in file names. If the user doesn't provide a value, the `defaultValue` is used instead.
+
+For example, the following symbol lets users set the class name when they create from the template. The file is renamed and the class inside it is updated to match:
+
+```json
+"symbols": {
+  "ClassName": {
+    "type": "parameter",
+    "description": "The name of the code file and class.",
+    "datatype": "text",
+    "replaces": "StringExtensions",
+    "fileRename": "StringExtensions",
+    "defaultValue": "StringExtensions"
+  }
+}
+```
+
+With this symbol defined, a user can run `dotnet new <shortName> --ClassName MyHelpers` to produce a file named `MyHelpers.cs` containing a class named `MyHelpers`. Without the flag, the file and class keep the default name `StringExtensions`.
+
+To see all available parameters for any installed template, pass `-?` to the template's short name:
+
+```dotnetcli
+dotnet new <shortName> -?
+```
 
 ## Template packages
 

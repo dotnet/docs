@@ -24,10 +24,10 @@ items:
     href: dotnet-dev-env-checklist.md
 - name: Migrate to Azure
   items:
-    - name: GitHub Copilot modernization for .NET
+    - name: GitHub Copilot upgrade / Upgrade agent
       items:
         - name: Overview
-          href: ../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: ../core/porting/github-copilot-upgrade/overview.md?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
         - name: Quickstart - Assess and migrate a .NET project
           href: ./migration/appmod/quickstart.md
         - name: Assessment guide
@@ -45,7 +45,7 @@ items:
         - name: Sample - Contoso University
           href: ./migration/appmod/sample.md
         - name: FAQ
-          href: ../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: ../core/porting/github-copilot-upgrade/faq.yml?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Azure Migrate application and code assessment
       items:
       - name: Overview

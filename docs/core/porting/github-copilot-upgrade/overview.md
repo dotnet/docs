@@ -1,24 +1,24 @@
 ---
-title: GitHub Copilot modernization overview
-description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
+title: GitHub Copilot upgrade / Upgrade agent overview
+description: "Learn about GitHub Copilot upgrade / Upgrade agent, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
 titleSuffix: ""
 ms.topic: overview
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to learn about what GitHub Copilot modernization is, so that I understand its capabilities and how I can take advantage of it.
+#customer intent: As a developer, I want to learn about what the GitHub Copilot upgrade agent is, so that I understand its capabilities and how I can take advantage of it.
 
 ---
 
-# What is GitHub Copilot modernization?
+# What is GitHub Copilot upgrade / Upgrade agent?
 
-GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
+The GitHub Copilot upgrade agent is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
 
 Use this agent to:
 
 - Upgrade to a newer version of .NET.
 - Migrate technologies and deploy to Azure.
-- Modernize your .NET app, especially when upgrading from .NET Framework.
+- Modernize your .NET app (especially when upgrading from .NET Framework).
 - Assess your application's code, configuration, and dependencies.
 - Plan and set up the right Azure resource.
 - Fix issues and apply best practices for cloud migration.
@@ -26,7 +26,7 @@ Use this agent to:
 
 ## Scenarios
 
-The agent provides multiple end-to-end modernization workflows called _scenarios_. Each scenario is a managed workflow that guides you through a specific type of upgrade or migration:
+The agent provides multiple end-to-end upgrade workflows called _scenarios_. Each scenario is a managed workflow that guides you through a specific type of upgrade or migration:
 
 | Scenario | Description | Example prompt |
 |---|---|---|
@@ -52,11 +52,11 @@ Microsoft values your feedback and uses it to improve the agent. Leave feedback 
 
 ## Prerequisites
 
-Set up GitHub Copilot modernization in your development environment before using the agent. For installation steps, see [Install GitHub Copilot modernization](install.md).
+Set up the GitHub Copilot upgrade agent in your development environment before using the agent. For installation steps, see [Install GitHub Copilot upgrade / Upgrade agent](install.md).
 
 ## Upgrade .NET projects
 
-The modernization agent supports upgrading C# and Visual Basic projects of the following types:
+The upgrade agent supports upgrading C# and Visual Basic projects of the following types:
 
 - ASP.NET Core (and related technologies such as MVC, Razor Pages, and Web API)
 - ASP.NET Web Forms
@@ -70,7 +70,7 @@ The modernization agent supports upgrading C# and Visual Basic projects of the f
 - Console apps
 - Test projects (MSTest, NUnit, and xUnit)
 
-To start an upgrade, see [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md).
+To start an upgrade, see [Upgrade a .NET app with the GitHub Copilot upgrade agent](how-to-upgrade-with-github-copilot.md).
 
 ### Supported upgrade paths
 
@@ -80,7 +80,7 @@ The agent supports the following upgrade paths:
 
 ## Migrate .NET projects to Azure
 
-The modernization agent simplifies Azure migrations through automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation:
+The upgrade agent simplifies Azure migrations through automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation:
 
 - Analysis and intelligent recommendations.
 
@@ -100,7 +100,7 @@ The modernization agent simplifies Azure migrations through automated analysis, 
 
 ### Predefined tasks for migration
 
-GitHub Copilot modernization for .NET offers predefined tasks that capture industry best practices and cover common migration scenarios.
+The GitHub Copilot upgrade agent offers predefined tasks that capture industry best practices and cover common migration scenarios.
 
 - **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI, and Azure PostgreSQL**
 
@@ -148,7 +148,7 @@ To start an upgrade or migration process, see:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
-When you ask the modernization agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot assesses your project and runs a three-stage workflow. Each stage produces Markdown files under `.github/upgrades/{scenarioId}` in your repository so you can review what comes next before you continue. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
+When you ask the upgrade agent to upgrade your app, Copilot first prompts you to create a new branch if you're working in a Git repository. Then Copilot assesses your project and runs a three-stage workflow. Each stage produces Markdown files under `.github/upgrades/{scenarioId}` in your repository so you can review what comes next before you continue. If `.github/upgrades/{scenarioId}` already exists from a prior attempt, Copilot asks whether to continue or start fresh.
 
 Copilot starts by examining your project structure, dependencies, and code patterns to build a comprehensive assessment. The `assessment.md` file lists breaking changes, API compatibility problems, deprecated patterns, and the upgrade scope.
 
@@ -218,11 +218,11 @@ The tool collects data about project types, intent to upgrade, and upgrade durat
 
 ## Related content
 
-- [Install GitHub Copilot modernization](install.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Install GitHub Copilot upgrade / Upgrade agent](install.md)
+- [Upgrade a .NET app with the GitHub Copilot upgrade agent](how-to-upgrade-with-github-copilot.md)
 - [Core concepts](concepts.md)
 - [Scenarios and skills reference](scenarios-and-skills.md)
 - [Best practices](best-practices.md)
-- [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
+- [Troubleshoot the GitHub Copilot upgrade agent](troubleshooting.md)
 - [Quickstart: Migrate a .NET project to Azure](../../../azure/migration/appmod/quickstart.md)
-- [GitHub Copilot modernization FAQ](faq.yml)
+- [GitHub Copilot upgrade FAQ](faq.yml)

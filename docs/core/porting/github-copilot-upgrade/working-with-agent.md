@@ -1,19 +1,19 @@
 ---
-title: Work with GitHub Copilot modernization
-description: "Learn how to collaborate effectively with GitHub Copilot modernization, including communication patterns, teaching preferences, mid-session corrections, and multi-session workflows."
+title: Work with GitHub Copilot upgrade / Upgrade agent
+description: "Learn how to collaborate effectively with the GitHub Copilot upgrade agent, including communication patterns, teaching preferences, mid-session corrections, and multi-session workflows."
 ms.topic: concept-article
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to learn how to work effectively with the GitHub Copilot modernization agent so that I can get the best results from my .NET upgrade.
+#customer intent: As a developer, I want to learn how to work effectively with the GitHub Copilot upgrade agent so that I can get the best results from my .NET upgrade.
 
 ---
 
-# Work with GitHub Copilot modernization
+# Work with GitHub Copilot upgrade / Upgrade agent
 
-This article covers how to communicate with the GitHub Copilot modernization agent, teach it your preferences, correct mistakes, review its work, and manage upgrades across multiple sessions.
+This article covers how to communicate with the GitHub Copilot upgrade agent, teach it your preferences, correct mistakes, review its work, and manage upgrades across multiple sessions.
 
-GitHub Copilot modernization is an interactive collaborator that asks questions, proposes strategies, adapts to your feedback, and learns from your preferences over time. To get the best results, give the agent context. The more it knows about your goals, constraints, and preferences, the better it performs.
+The GitHub Copilot upgrade agent is an interactive collaborator that asks questions, proposes strategies, adapts to your feedback, and learns from your preferences over time. To get the best results, give the agent context. The more it knows about your goals, constraints, and preferences, the better it performs.
 
 ```text
 ❌ Vague — the agent has to guess
@@ -292,8 +292,8 @@ Positive feedback helps just as much as corrections and confirms the agent is on
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
+- [What is GitHub Copilot upgrade / Upgrade agent?](overview.md)
 - [Core concepts](concepts.md)
 - [Best practices](best-practices.md)
-- [Customize GitHub Copilot modernization](customization.md)
-- [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
+- [Customize the GitHub Copilot upgrade agent](customization.md)
+- [Troubleshoot the GitHub Copilot upgrade agent](troubleshooting.md)

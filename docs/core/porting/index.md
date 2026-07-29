@@ -58,9 +58,9 @@ Most upgrades fall into one of the following categories. Start with the guidance
 
   Containerize your app, replace on-premises components with managed services, and adopt cloud patterns for reliability and observability.
 
-## GitHub Copilot app modernization (recommended)
+## GitHub Copilot upgrade (recommended)
 
-The [GitHub Copilot app modernization agent](github-copilot-app-modernization/overview.md) provides an AI-assisted, end-to-end experience that speeds porting and modernization work. The agent analyzes your project and writes a plan to complete your desired upgrade. You can adjust and iterate on the plan, then perform the upgrades. With this agent, you can:
+The [GitHub Copilot upgrade](github-copilot-upgrade/overview.md) provides an AI-assisted, end-to-end experience that speeds porting and modernization work. The agent analyzes your project and writes a plan to complete your desired upgrade. You can adjust and iterate on the plan, then perform the upgrades. With this agent, you can:
 
 - Upgrade projects to a newer .NET version.
 - Assess your application's code, configuration, and dependencies.
@@ -70,15 +70,15 @@ The [GitHub Copilot app modernization agent](github-copilot-app-modernization/ov
 - Fix issues and apply cloud-migration best practices.
 - Validate that your app builds and that tests pass.
 
-Use the agent when you want a guided, AI-powered path to assess, remediate, and modernize codebases—particularly for projects that have many dependencies, rely on Windows-specific APIs, or that you plan to containerize or migrate to the cloud. For more information, see [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md).
+Use the agent when you want a guided, AI-powered path to assess, remediate, and modernize codebases—particularly for projects that have many dependencies, rely on Windows-specific APIs, or that you plan to containerize or migrate to the cloud. For more information, see [What is GitHub Copilot upgrade](github-copilot-upgrade/overview.md).
 
 ### .NET Upgrade Assistant (deprecated)
 
-[.NET Upgrade Assistant](upgrade-assistant-overview.md) is a Visual Studio extension and CLI tool that analyzes a project and applies common upgrade changes. It's officially deprecated in favor of the GitHub Copilot app modernization agent and is no longer actively developed. Use it only if you can't use the modernization agent—for example, if your environment doesn't have access to GitHub Copilot. New work should target the modernization agent instead.
+[.NET Upgrade Assistant](upgrade-assistant-overview.md) is a Visual Studio extension and CLI tool that analyzes a project and applies common upgrade changes. It's officially deprecated in favor of the GitHub Copilot upgrade agent and is no longer actively developed. Use it only if you can't use the upgrade agent—for example, if your environment doesn't have access to GitHub Copilot. New work should target the upgrade agent instead.
 
 ## Next steps
 
 - [Overview of porting from .NET Framework to .NET](framework-overview.md)
-- [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md)
+- [What is GitHub Copilot upgrade](github-copilot-upgrade/overview.md)
 - [Modernize after upgrading to .NET from .NET Framework](modernize.md)
 - [.NET releases, patches, and support](../releases-and-support.md)

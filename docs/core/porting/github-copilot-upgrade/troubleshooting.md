@@ -1,17 +1,17 @@
 ---
-title: Troubleshoot GitHub Copilot modernization
-description: "Find solutions to common problems when you use GitHub Copilot modernization for .NET, including workflow, build, Git, performance, and customization issues."
+title: Troubleshoot the GitHub Copilot upgrade agent
+description: "Find solutions to common problems when you use the GitHub Copilot upgrade agent for .NET, including workflow, build, Git, performance, and customization issues."
 ms.topic: troubleshooting-general
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to troubleshoot issues with GitHub Copilot modernization so that I can resolve problems and continue my .NET upgrade.
+#customer intent: As a developer, I want to troubleshoot issues with the GitHub Copilot upgrade agent so that I can resolve problems and continue my .NET upgrade.
 
 ---
 
-# Troubleshoot GitHub Copilot modernization
+# Troubleshoot the GitHub Copilot upgrade agent
 
-This article covers common issues you might encounter when you use GitHub Copilot modernization for .NET, organized by category. Each entry follows a problem, cause, and solution format so you can find and resolve issues quickly.
+This article covers common issues you might encounter when you use the GitHub Copilot upgrade agent for .NET, organized by category. Each entry follows a problem, cause, and solution format so you can find and resolve issues quickly.
 
 ## Workflow issues
 
@@ -190,7 +190,7 @@ When something isn't working as expected:
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
+- [What is GitHub Copilot upgrade / Upgrade agent?](overview.md)
 - [Best practices](best-practices.md)
 - [Core concepts](concepts.md)
-- [GitHub Copilot modernization FAQ](faq.yml)
+- [GitHub Copilot upgrade FAQ](faq.yml)

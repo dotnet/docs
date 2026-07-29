@@ -5,7 +5,7 @@ ms.date: 01/22/2026
 
 ## Prerequisites
 
-[!INCLUDE [github-copilot-app-modernization-prereqs](../../../../includes/github-copilot-app-modernization-prereqs.md)]
+[!INCLUDE [github-copilot-upgrade-prereqs](../../../../includes/github-copilot-upgrade-prereqs.md)]
 
 ## Assess app readiness
 
@@ -95,4 +95,4 @@ Choose one of the predefined options and send it in the chat:
 
 - [Working with assessment](../working-with-assessment.md)
 - [Predefined Tasks](../predefined-tasks.md)
-- [Frequently Asked Questions](../../../../core/porting/github-copilot-app-modernization/faq.yml)
+- [Frequently Asked Questions](../../../../core/porting/github-copilot-upgrade/faq.yml)

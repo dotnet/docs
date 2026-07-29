@@ -23,7 +23,7 @@ In this quickstart, you learn how to containerize your project using GitHub Copi
 
 Before you begin, make sure you have:
 
-[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
+[!INCLUDE [github-copilot-upgrade-prereqs](../../../includes/github-copilot-upgrade-prereqs.md)]
 
 ## Containerize your project
 

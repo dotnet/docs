@@ -1,17 +1,17 @@
 ---
-title: GitHub Copilot modernization core concepts
-description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
+title: GitHub Copilot upgrade / Upgrade agent core concepts
+description: "Learn the key concepts behind the GitHub Copilot upgrade agent, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
 ms.topic: concept-article
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to understand the core concepts of GitHub Copilot modernization so that I can use the agent effectively and get the best results from my upgrades.
+#customer intent: As a developer, I want to understand the core concepts of the GitHub Copilot upgrade agent so that I can use the agent effectively and get the best results from my upgrades.
 
 ---
 
-# GitHub Copilot modernization concepts
+# GitHub Copilot upgrade / Upgrade agent concepts
 
-GitHub Copilot modernization uses a structured approach to upgrade .NET projects. Understanding how the agent works, including its scenarios, skills, tasks, and workflow, helps you collaborate with the agent effectively and get the best results.
+The GitHub Copilot upgrade agent uses a structured approach to upgrade .NET projects. Understanding how the agent works, including its scenarios, skills, tasks, and workflow, helps you collaborate with the agent effectively and get the best results.
 
 > [!TIP]
 > Think of the agent as a skilled colleague who understands .NET deeply, follows a structured plan, and adapts to your feedback. The more context you give, the better the agent performs.
@@ -28,7 +28,7 @@ The agent excels at collaboration, not automation in a vacuum:
 
 ## Scenarios
 
-A _scenario_ is a managed, end-to-end modernization workflow. When you tell the agent "upgrade my solution to .NET 10," you're triggering the `.NET version upgrade` scenario.
+A _scenario_ is a managed, end-to-end upgrade workflow. When you tell the agent "upgrade my solution to .NET 10," you're triggering the `.NET version upgrade` scenario.
 
 ### How scenarios are discovered
 
@@ -112,7 +112,7 @@ During the assessment stage, the agent evaluates your solution and recommends on
 
 ## Skills
 
-_Skills_ are smaller, targeted modernization capabilities. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step upgrade instructions. Invoke a skill directly during an upgrade: _"upgrade the WCF services in my project to CoreWCF."_
+_Skills_ are smaller, targeted upgrade capabilities. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step upgrade instructions. Invoke a skill directly during an upgrade: _"upgrade the WCF services in my project to CoreWCF."_
 
 The agent ships with 30+ built-in skills organized by domain:
 
@@ -207,8 +207,8 @@ Best for first-time users, complex solutions, and when you want to learn the pro
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
+- [What is GitHub Copilot upgrade / Upgrade agent?](overview.md)
 - [Scenarios and skills reference](scenarios-and-skills.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Upgrade a .NET app with the GitHub Copilot upgrade agent](how-to-upgrade-with-github-copilot.md)
 - [Best practices](best-practices.md)
-- [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
+- [Troubleshoot the GitHub Copilot upgrade agent](troubleshooting.md)

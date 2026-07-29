@@ -1,17 +1,17 @@
 ---
-title: GitHub Copilot modernization scenarios and skills
-description: "Complete reference of all scenarios and built-in upgrade skills available in GitHub Copilot modernization for .NET, organized by domain."
+title: GitHub Copilot upgrade / Upgrade agent scenarios and skills
+description: "Complete reference of all scenarios and built-in upgrade skills available in the GitHub Copilot upgrade agent for .NET, organized by domain."
 ms.topic: reference
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to see all the scenarios and skills that GitHub Copilot modernization supports so that I can understand which upgrade tasks the agent can handle for me.
+#customer intent: As a developer, I want to see all the scenarios and skills that the GitHub Copilot upgrade agent supports so that I can understand which upgrade tasks the agent can handle for me.
 
 ---
 
 # Scenarios and skills reference
 
-GitHub Copilot modernization for .NET helps you modernize through _scenarios_ and _skills_:
+The GitHub Copilot upgrade agent for .NET helps you upgrade through _scenarios_ and _skills_:
 
 - **Scenarios** are end-to-end managed workflows for major upgrade goals, such as upgrading from .NET Framework to .NET 10. Scenarios coordinate the full lifecycle: assessment, planning, and task-by-task execution.
 - **Skills** are focused capabilities for specific upgrade tasks, such as converting EF6 to EF Core or replacing WCF with CoreWCF. Skills activate automatically when the agent encounters relevant code during an upgrade.
@@ -201,7 +201,7 @@ For more information about creating custom skills, see [Apply custom upgrade ins
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
+- [What is GitHub Copilot upgrade / Upgrade agent?](overview.md)
 - [Core concepts](concepts.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Upgrade a .NET app with the GitHub Copilot upgrade agent](how-to-upgrade-with-github-copilot.md)
 - [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md)

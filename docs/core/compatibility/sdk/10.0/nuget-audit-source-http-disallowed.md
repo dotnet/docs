@@ -19,7 +19,7 @@ Previously, if an `auditSource` used an insecure `http://` URL, NuGetAudit conti
 
 ## New behavior
 
-Starting in .NET 10.0.400 SDK, NuGet raises error NU1302 when an `auditSource` uses an insecure `http://` URL. The error message instructs you to update the URL to use HTTPS, or to set `allowInsecureConnections="true"` in your *nuget.config* file.
+Starting in .NET 10.0.400 SDK, NuGet raises error NU1302 when an `auditSource` uses an insecure `http://` URL. The error message instructs you to update the URL to use HTTPS or set `allowInsecureConnections="true"` in your *nuget.config* file.
 
 ## Type of breaking change
 
@@ -27,7 +27,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change aligns audit sources with the behavior of package sources, which already require HTTPS by default. For more information, see the [security best practices for NuGet](https://devblogs.microsoft.com/nuget/nugetaudit-2-0-elevating-security-and-trust-in-package-management/).
+This change aligns audit sources with the behavior of package sources, which already require HTTPS by default.
 
 ## Recommended action
 

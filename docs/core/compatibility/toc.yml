@@ -236,6 +236,8 @@ items:
                 href: sdk/10.0/deps-json-trimmed-packages.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet audit sources no longer allow insecure HTTP by default
+                href: sdk/10.0/nuget-audit-source-http-disallowed.md
               - name: NuGet logs an error for invalid package IDs
                 href: sdk/10.0/nuget-packageid-validation.md
               - name: PackageReference without a version raises error

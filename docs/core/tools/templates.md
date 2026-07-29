@@ -4,74 +4,20 @@ description: Learn how .NET templates work, how they're structured, and what you
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 07/28/2026
+ms.date: 07/29/2026
 ai-usage: ai-assisted
 
 #customer intent: As a .NET developer, I want to understand how .NET templates work so that I can use, create, and distribute templates for projects and files.
 
 ---
 
-<!-- REFERENCE MATERIAL AND RULES
-
-## Key Content Requirements
-
-### Audience Focus
-
-- Primary audience: beginner .NET developers who want to understand the template system
-- Secondary audience: intermediate developers who want to create or distribute their own templates
-- The article should explain HOW templates work conceptually, not just list commands
-
-### Goal of This Article
-
-This is a replacement for `custom-templates.md`. The old article focused on "custom" templates only. This new overview should:
-- Cover templates broadly (built-in AND custom)
-- Explain the template engine and how it works
-- Explain what a template IS (source files + template.json)
-- Cover types of templates (item, project)
-- Cover how to install, use, and uninstall templates
-- Cover how to create and package templates (high-level, with links to tutorials for details)
-- Mention Visual Studio integration
-
-### Terminology
-
-- Say "the .NET template engine" or "template engine" for the underlying system
-- Say "template package" for a NuGet package containing one or more templates
-- Use "dotnet new" when referring to the CLI command
-- Don't use "custom templates" as the main framing — all templates (built-in and third-party) are just "templates"
-
-### Do NOT
-
-- Go into deep tutorial detail — link to the tutorial series for that
-- Reproduce the full tutorial steps
-- Focus only on CLI — mention Visual Studio integration
-
-## Reference Material
-
-The following files were used as source material:
-
-- Existing article being replaced: docs/core/tools/custom-templates.md
-- Tutorial 1 (item template): docs/core/tutorials/cli-templates-create-item-template.md
-- Tutorial 2 (project template): docs/core/tutorials/cli-templates-create-project-template.md
-- Tutorial 3 (template package): docs/core/tutorials/cli-templates-create-template-package.md
-- template.json schema: https://www.schemastore.org/template.json
-
-When linking to these tutorials, use relative paths from docs/core/tools/.
-When linking to learn.microsoft.com content, use the /dotnet/... URL path.
-
--->
-
 # What are .NET templates?
 
-[Introduce the .NET template system: what templates are, what they produce (projects, files, resources), and why they exist. Mention that both the `dotnet new` CLI command and Visual Studio use the same template engine. Briefly mention built-in templates that ship with the SDK and the ability to install community or custom templates.]
+A .NET template is a blueprint that generates projects, files, or other resources from a predefined structure. When you run `dotnet new console`, the .NET template engine reads the console project template and produces a working project in your current directory. Visual Studio's **Create a new project** dialog also uses the .NET template engine for .NET project templates, so templates you create for the CLI work in Visual Studio too.
 
-<!--
-- Define what a template is: a blueprint that generates projects, files, or resources.
-- Explain that the .NET SDK ships with built-in templates (console apps, class libraries, ASP.NET, etc.).
-- Mention that developers can install additional templates from NuGet or create their own.
-- State that both `dotnet new` and Visual Studio use the same underlying template engine.
-- Link to the `dotnet new` command reference for how to use templates from the CLI.
-- Mention `dotnet new list` to see currently installed templates.
--->
+The .NET SDK ships with built-in templates for common starting points like console apps, class libraries, and ASP.NET projects. To see every template currently installed, run `dotnet new list`. Beyond the built-in templates, you can install community templates from NuGet or build your own.
+
+This article focuses on how templates are structured. It also provides an overview of how to install and distribute templates. For step-by-step instructions to create and package templates, see the [Related content](#related-content) section.
 
 ## Template types
 
@@ -103,24 +49,26 @@ mytemplate/
 
 The source files can be any type of file. The template engine doesn't require you to inject special tokens or markers into your source code. It uses your files as-is, which means you can build, run, and debug a template's source project exactly like a normal .NET project. To turn an existing project into a template, add a `.template.config/template.json` file to the project root.
 
-You can optionally inject substitution tokens tied to template parameters (symbols) directly into your source files and file names, but doing so means those files are no longer runnable as a normal .NET project.
+You can optionally inject substitution tokens tied to template parameters (symbols) directly into your source files and file names. If the tokens aren't valid source code, you can't build, run, or debug the source project before you deploy it as a template. The tokens don't affect projects that users create from the deployed template because the template engine replaces them during project creation.
 
 The only required file inside `.template.config` is `template.json`. That file tells the template engine everything it needs: the template's name, short name, author, classifications, and any parameters users can pass when they create from the template. You can also place an `icon.png` file in the `.template.config` folder. The terminal doesn't display icons, but Visual Studio shows the icon next to your template in the **Create a new project** dialog. A 128×128 PNG works well.
 
 ### The template.json file
 
-The `template.json` file is the only required piece of configuration in a template. It lives inside the `.template.config` folder and tells the template engine how to present and process your template. The following table describes the common fields:
+The `template.json` file is the only required piece of configuration in a template. It lives inside the `.template.config` folder and tells the template engine how to present and process your template. The following table describes common required and optional fields:
 
-| Field                 | Type          | Description                                                                                                                                                                                                  |
-|-----------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `$schema`             | URI           | The JSON schema for `template.json`. Set to `https://json.schemastore.org/template` to enable IntelliSense in editors like Visual Studio Code.                                                               |
-| `author`              | string        | The author of the template.                                                                                                                                                                                  |
-| `classifications`     | array(string) | Tags users can use to find the template with `dotnet new search` or `dotnet new list`. These appear in the **Tags** column of the template list.                                                             |
-| `identity`            | string        | A unique identifier for this template.                                                                                                                                                                       |
-| `name`                | string        | The display name of the template shown to users.                                                                                                                                                             |
-| `shortName`           | string        | The short name users pass to `dotnet new` to create from this template, such as `console` or `classlib`.                                                                                                     |
-| `sourceName`          | string        | A string in your source files and file names that the template engine replaces with the name the user provides via `-n` or `--name`. If the user doesn't provide a name, the current directory name is used. |
-| `preferNameDirectory` | boolean       | When `true` and the user provides a name but no output directory, the template engine creates a new directory with that name instead of writing files into the current directory. Defaults to `false`.       |
+| Field                 | Type          | Required | Description |
+|-----------------------|---------------|----------|-------------|
+| `$schema`             | URI           | No       | The JSON schema for `template.json`. Set to `https://json.schemastore.org/template` to enable IntelliSense in editors like Visual Studio Code. |
+| `author`              | string        | No       | The author of the template. |
+| `classifications`     | array(string) | No       | Tags users can use to find the template with `dotnet new search` or `dotnet new list`. These values appear in the **Tags** column of the template list. |
+| `description`         | string        | No       | A description of what the template creates. |
+| `identity`            | string        | Yes      | A unique identifier for the template. |
+| `name`                | string        | Yes      | The display name of the template shown to users. |
+| `shortName`           | string        | Yes      | The short name users pass to `dotnet new` to create from the template, such as `console` or `classlib`. |
+| `sourceName`          | string        | No       | A string in your source files and file names that the template engine replaces with the name the user provides via `-n` or `--name`. If the user doesn't provide a name, the engine uses the current directory name. |
+| `preferNameDirectory` | boolean       | No       | When `true` and the user provides a name but no output directory, the template engine creates a new directory with that name instead of writing files into the current directory. The default is `false`. |
+| `tags`                | object        | No       | Metadata that identifies properties such as the template language and type. Use `tags.language` for the language and `tags.type` for `project`, `item`, or `solution`. |
 
 Two fields deserve extra attention. The `sourceName` field is how templates handle naming: set it to a string that appears in your file names and source code (such as `MyTemplate`), and the template engine replaces every occurrence with whatever name the user passes when creating the template. The `classifications` field controls discoverability; choose tags that accurately describe your template's purpose so users can find it when searching.
 
@@ -131,10 +79,15 @@ Here's a minimal `template.json` for a console template:
   "$schema": "https://json.schemastore.org/template",
   "author": "Your Name",
   "classifications": [ "Common", "Console" ],
+  "description": "Creates a console application.",
   "identity": "MyCompany.ConsoleTemplate.CSharp",
   "name": "My Console App",
   "shortName": "myconsole",
-  "sourceName": "MyConsoleApp"
+  "sourceName": "MyConsoleApp",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
 }
 ```
 
@@ -182,9 +135,9 @@ dotnet new <shortName> -?
 
 ## Template packages
 
-A template package is a NuGet (_.nupkg_) file that bundles one or more templates together. When you install a template package, the .NET template engine registers every template inside it at once. This makes packages the standard way to distribute templates: you can publish a single package to nuget.org, a private NuGet feed, or share a local _.nupkg_ file, and users install the whole collection with one command.
+A template package is a NuGet (`.nupkg`) file that bundles one or more templates together. When you install a template package, the .NET template engine registers every template inside it at once. Packages are the standard way to distribute templates. You can publish a single package to NuGet.org or a private NuGet feed, or share a local `.nupkg` file. Users install the whole collection with one command.
 
-To build a template package, you use a C# project file (_.csproj_) configured to act as a **packaging project** rather than a compilation project. The key settings that make this work are:
+To build a template package, use a C# project file (`.csproj`) configured to act as a **packaging project** rather than a compilation project. The key settings that make this work are:
 
 | Setting                | Value      | Purpose                                                      |
 |------------------------|------------|--------------------------------------------------------------|
@@ -193,7 +146,21 @@ To build a template package, you use a C# project file (_.csproj_) configured to
 | `IncludeBuildOutput`   | `false`    | Prevents compiled binaries from being added to the package.  |
 | `ContentTargetFolders` | `content`  | Places your template folders inside the `content` folder of the NuGet package, which is where the template engine expects to find them. |
 
-The easiest way to create a packaging project is the `templatepack` project template, provided by the [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) NuGet package. Install that package once, then run `dotnet new templatepack -n <PackageName>` to scaffold a ready-to-use packaging project. The generated project already includes the correct `.csproj` settings, a `content` folder for your templates, and MSBuild tasks for template validation and optional localization.
+The `templatepack` project template provides the easiest way to create a packaging project:
+
+1. Install the [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) NuGet package:
+
+   ```dotnetcli
+   dotnet new install Microsoft.TemplateEngine.Authoring.Templates
+   ```
+
+1. Create the packaging project:
+
+   ```dotnetcli
+   dotnet new templatepack -n <PackageName>
+   ```
+
+The generated project includes the correct `.csproj` settings, a `content` folder for your templates, and MSBuild tasks for template validation and optional localization.
 
 For a full walkthrough of creating, packing, and publishing a template package, see [Tutorial: Create a template package](../tutorials/cli-templates-create-template-package.md).
 
@@ -201,19 +168,19 @@ For a full walkthrough of creating, packing, and publishing a template package, 
 
 To install a template, use the `dotnet new install` command with a source argument. The source can be any of the following:
 
-- A NuGet package ID, which installs the latest version from nuget.org:
+- A NuGet package ID, which installs the latest stable version from the NuGet sources configured for the current directory:
 
   ```dotnetcli
   dotnet new install AdatumCorporation.ConsoleTemplate.CSharp
   ```
 
-- A NuGet package ID with a custom feed URL, using `--nuget-source` to point to a private or internal NuGet feed:
+- A NuGet package ID with a custom feed URL. The `--nuget-source` option uses the specified feed, in addition to the configured NuGet sources, for this installation command only:
 
   ```dotnetcli
   dotnet new install AdatumCorporation.ConsoleTemplate.CSharp --nuget-source https://mynugetfeed.example.com/v3/index.json
   ```
 
-- A path to a local _.nupkg_ file:
+- A path to a local `.nupkg` file:
 
   ```dotnetcli
   dotnet new install ./AdatumCorporation.ConsoleTemplate.CSharp.1.0.0.nupkg
@@ -236,10 +203,18 @@ To see all installed template packages and the exact command to uninstall each o
 dotnet new uninstall
 ```
 
-To uninstall a specific template package, pass the NuGet package ID or the file system path that you used when you installed it:
+To uninstall a specific template package, pass its identifier. For a package installed from a NuGet source or a local `.nupkg` file, use the NuGet package ID. For a template installed from a directory, use the directory path.
+
+Use the package ID to uninstall a NuGet package:
 
 ```dotnetcli
 dotnet new uninstall AdatumCorporation.ConsoleTemplate.CSharp
+```
+
+Use the directory path to uninstall a template installed from a directory:
+
+```dotnetcli
+dotnet new uninstall ./mytemplate/
 ```
 
 The built-in SDK templates don't appear in the uninstall list and can't be removed with `dotnet new uninstall`.

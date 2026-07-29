@@ -107,7 +107,7 @@ In the second group, the `<TargetFramework>` setting ensures that MSBuild runs p
 `<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
 
 > [!TIP]
-> For more information about NuGet metadata settings, see [Pack a template into a NuGet package (nupkg file)](../tools/custom-templates.md#pack-a-template-into-a-nuget-package-nupkg-file).
+> For more information about NuGet metadata settings, see [Template packages](../tools/templates.md#template-packages).
 
 The created project file includes [template authoring MSBuild tasks](https://aka.ms/templating-authoring-tools) and localization settings.
 
@@ -209,7 +209,7 @@ Congratulations! You've installed and uninstalled a template package.
 
 ## Next steps
 
-To learn more about templates, most of which you've already learned, see the [Custom templates for dotnet new](../tools/custom-templates.md) article.
+To learn more about templates, see [.NET templates overview](../tools/templates.md).
 
 * [Template Authoring Tools](https://aka.ms/templating-authoring-tools)
 * [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)

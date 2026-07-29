@@ -74,4 +74,4 @@ The `dotnet new uninstall` command uninstalls a template package at the `PATH` o
 - [dotnet new command](dotnet-new.md)
 - [dotnet new list command](dotnet-new-list.md)
 - [dotnet new search command](dotnet-new-search.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates overview](templates.md)

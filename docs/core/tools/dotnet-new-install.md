@@ -100,4 +100,4 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 - [`dotnet new` command](dotnet-new.md)
 - [`dotnet new search` command](dotnet-new-search.md)
-- [Custom templates for `dotnet new`](custom-templates.md)
+- [.NET templates overview](templates.md)

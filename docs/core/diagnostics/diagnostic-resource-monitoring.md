@@ -199,7 +199,7 @@ The `divisor: "1m"` for CPU fields ensures Kubernetes expresses the value in mil
 
 In your application code, call <xref:Microsoft.Extensions.DependencyInjection.KubernetesResourceQuotaServiceCollectionExtensions.AddKubernetesResourceMonitoring*> with the environment variable prefix that matches your Kubernetes manifest:
 
-:::code source="snippets/resource-monitoring-kubernetes/Program.cs" id="setup":::
+:::code source="snippets/resource-monitoring-kubernetes/Program.cs":::
 
 The `"MY_APP_"` prefix tells the library to look for environment variables named `MY_APP_LIMITS_CPU`, `MY_APP_LIMITS_MEMORY`, `MY_APP_REQUESTS_CPU`, and `MY_APP_REQUESTS_MEMORY`.
 
@@ -227,7 +227,6 @@ For the full list of metrics emitted by the base resource monitoring library, se
 
 When you run your application inside a Kubernetes pod with the environment variables configured, the metrics produce values such as:
 
-```
 Instrument: container.cpu.limit.utilization
   Value: 0.23
 

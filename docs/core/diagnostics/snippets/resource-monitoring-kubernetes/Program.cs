@@ -1,4 +1,3 @@
-// <setup>
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -10,4 +9,3 @@ var app = Host.CreateDefaultBuilder()
     .Build();
 
 await app.RunAsync();
-// </setup>

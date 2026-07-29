@@ -195,7 +195,7 @@ To install a template, use the `dotnet new install` command with a source argume
   Installing from a directory is especially useful during template development because it lets you test your template without packing it first.
 
 > [!WARNING]
-> Templates can execute MSBuild tasks and arbitrary code during project creation. Only install templates from sources you trust.
+> Templates can run MSBuild tasks and arbitrary code during project creation. Only install templates from sources you trust.
 
 To see all installed template packages and the exact command to uninstall each one, run `dotnet new uninstall` with no arguments:
 

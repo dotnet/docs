@@ -75,16 +75,6 @@ When linking to learn.microsoft.com content, use the /dotnet/... URL path.
 
 ## Template types
 
-<!--
-- Item templates: generate one or more files added to an existing project (code files, config files, etc.).
-- Project templates: generate an entire project structure.
-- Solution templates: generate a solution with one or more projects.
-- Explain the `tags/type` field in template.json that categorizes a template as "item", "project", or "solution."
-- Note that "item", "project", and "solution" are the only valid values, enforced by the schema.
-- Mention that item templates don't appear in the Visual Studio "Add > New Item" dialog (current limitation).
-- Reference: custom-templates.md existing content, tutorial articles.
--->
-
 The .NET template engine supports three types of templates: item templates, project templates, and solution templates.
 
 - **Item templates** generate one or more files, such as a code file, configuration file, or other resource, without generating an entire project around them. For example, an item template might produce a class file that adds a set of extension methods, or a JSON configuration file that follows a standard layout your team uses. To learn how to build an item template, see [Tutorial: Create an item template](../tutorials/cli-templates-create-item-template.md).
@@ -96,7 +86,7 @@ The .NET template engine supports three types of templates: item templates, proj
 When you create your own template, you declare its type using the `tags.type` field in the `template.json` configuration file. The valid values are `"project"`, `"item"`, and `"solution"`. These values let users filter results when they search for templates with `dotnet new search` or `dotnet new list`.
 
 > [!TIP]
-> Project templates appear in the Visual Studio **Create a new project** dialog, but item templates don't appear in the **Add** > **New Item** dialog. You can use item templates from the `dotnet new` CLI.
+> Project and solution templates appear in the Visual Studio **Create a new project** dialog, but item templates don't appear in the **Add** > **New Item** dialog. You can use item templates from the `dotnet new` CLI.
 
 ## Template structure
 
@@ -107,14 +97,15 @@ mytemplate/
 ├── console.cs
 ├── readme.txt
 └── .template.config/
-    └── template.json
+    ├── template.json
+    └── icon.png
 ```
 
 The source files can be any type of file. The template engine doesn't require you to inject special tokens or markers into your source code. It uses your files as-is, which means you can build, run, and debug a template's source project exactly like a normal .NET project. To turn an existing project into a template, add a `.template.config/template.json` file to the project root.
 
 You can optionally inject substitution tokens tied to template parameters (symbols) directly into your source files and file names, but doing so means those files are no longer runnable as a normal .NET project.
 
-The only required file inside `.template.config` is `template.json`. That file tells the template engine everything it needs: the template's name, short name, author, classifications, and any parameters users can pass when they create from the template.
+The only required file inside `.template.config` is `template.json`. That file tells the template engine everything it needs: the template's name, short name, author, classifications, and any parameters users can pass when they create from the template. You can also place an `icon.png` file in the `.template.config` folder. The terminal doesn't display icons, but Visual Studio shows the icon next to your template in the **Create a new project** dialog. A 128×128 PNG works well.
 
 ### The template.json file
 
@@ -255,29 +246,67 @@ The built-in SDK templates don't appear in the uninstall list and can't be remov
 
 ## Template localization
 
-[Explain that templates support localization so template metadata appears in the user's language.]
+The .NET template engine supports optional localization of template metadata. When you provide localization files, hosts such as `dotnet new` and the Visual Studio **New Project** dialog display the template's name, description, and symbol information in the user's language instead of the original authored language.
 
-<!--
-- The template engine supports optional localization of template metadata (name, description, symbols, etc.).
-- Localization files are JSON files placed in `.template.config/localize/`.
-- File naming convention: `templatestrings.<lang-code>.json`.
-- Localization keys reference elements in template.json using `/` as a path delimiter.
-- Localization is optional when creating templates.
-- Link to the dotnet templating wiki localization page for more detail.
-- Show a brief example of a templatestrings.pt-BR.json file.
--->
+The following template fields support localization:
+
+- `name`
+- `author`
+- `description`
+- Symbol `description` and `displayName`
+- Description and display name for each choice in a choice parameter
+- Post action `description` and `manualInstructions`
+
+To add localization, create a `localize` subfolder inside `.template.config` and add one JSON file per language. Name each file `templatestrings.<lang-code>.json`, where `<lang-code>` matches a valid <xref:System.Globalization.CultureInfo> name, such as `pt-BR`, `zh-Hans`, or `de`. Each file contains key-value pairs where the key is a path to the element in `template.json`, using `/` as a delimiter for nested fields.
+
+For example, given a `template.json` with the following content:
+
+```json
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Microsoft",
+  "classifications": [ "Config" ],
+  "name": "EditorConfig file",
+  "description": "Creates an .editorconfig file for configuring code style preferences.",
+  "symbols": {
+    "Empty": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Empty",
+      "description": "Creates empty .editorconfig instead of the defaults for .NET."
+    }
+  }
+}
+```
+
+A Brazilian Portuguese localization file named `templatestrings.pt-BR.json` would look like this:
+
+```json
+{
+  "author": "Microsoft",
+  "name": "Arquivo EditorConfig",
+  "description": "Cria um arquivo .editorconfig para configurar as preferências de estilo de código.",
+  "symbols/Empty/displayName": "Vazio",
+  "symbols/Empty/description": "Cria .editorconfig vazio em vez dos padrões para .NET."
+}
+```
+
+The template engine parses these files when it loads template information, and it returns localized values automatically based on the current UI culture—no extra steps are required from the user.
+
+Localization is optional. If you don't include localization files, the template works normally and always displays the values from `template.json`. For more information, see the [dotnet/templating wiki localization page](https://aka.ms/templating-localization).
 
 ## Visual Studio integration
 
-[Explain how templates created with the .NET template engine also appear and work in Visual Studio.]
+Visual Studio's **Create a new project** dialog uses the .NET template engine for .NET project templates. Templates you create for `dotnet new` work in Visual Studio too, without any extra configuration. When you install a template package with `dotnet new install`, Visual Studio automatically detects and surfaces those templates in the dialog.
 
-<!--
-- Visual Studio uses the same .NET template engine as `dotnet new`. (Validate this item. Doesn't VS have it's own template engine? This makes it sound like .NET template and VS template are one and the same.)
-- Project templates appear in the Visual Studio "Create a new project" dialog.
-- Item templates do NOT currently appear in the "Add > New Item" dialog.
-- When published to nuget.org as a template package, templates become discoverable in Visual Studio's template search.
-- Link to relevant Visual Studio docs or Sayed Hashimi's template-sample repo for deeper VS integration guidance.
--->
+**Project and solution templates** appear in the **Create a new project** dialog alongside the built-in SDK templates. Users can find your template by name, language, or by the tags from the `classifications` field in `template.json`. Accurate classifications help your template surface in the right filter categories, so choose them carefully. To give your template a polished appearance in the dialog, add an `icon.png` to the `.template.config` folder — Visual Studio displays it next to your template's name.
+
+**Item templates** don't currently appear in the **Add** > **New Item** dialog. Users can still create from item templates using `dotnet new <shortName>` in the terminal, but Visual Studio doesn't surface them in its item-creation UI.
+
+To make your template discoverable to Visual Studio users who haven't installed it yet, publish your template package to nuget.org. The **Create a new project** dialog includes an **Install more templates from the online search** option that searches nuget.org for template packages. When a user installs your package through that option, Visual Studio uses the same install mechanism as `dotnet new install`.
+
+For deeper guidance on Visual Studio-specific integration—such as controlling template sort order and configuring additional IDE-specific options—see [Sayed Hashimi's template-sample repository](https://github.com/sayedihashimi/template-sample).
 
 ## Related content
 

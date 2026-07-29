@@ -712,7 +712,7 @@ This may be thrown when the runtime responds with an error to a given command.
 public class UnsupportedCommandException : ServerErrorException
 ```
 
-This may be thrown when the command is not supported by either the library or the target process's runtime.
+This exception is thrown when the command is not supported by either the library or the target process's runtime.
 
 ### ProfilerAlreadyActiveException
 
@@ -728,4 +728,4 @@ This exception is thrown when a profiler is already loaded into the target runti
 public class BadEncodingException : ServerErrorException
 ```
 
-This is thrown when the target runtime can't decode the command payload and rejects it. From a well-formed client, it usually means the runtime is too old to understand a newer configured option value, so it rejects the request while parsing.
+This exception is thrown when the target runtime can't decode the command payload and rejects it. From a well-formed client, it usually means the runtime is too old to understand a newer configured option value, so it rejects the request while parsing.

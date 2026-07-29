@@ -27,7 +27,7 @@ The .NET template engine supports three types of templates: item templates, proj
 
 - **Project templates** generate a complete project structure. When you run `dotnet new console`, for example, the console project template produces a `.csproj` file, a `Program.cs` file, and any other files that make up the project. Use a project template when you want to give users a full project starting point rather than individual files. To learn how to build a project template, see [Tutorial: Create a project template](../tutorials/cli-templates-create-project-template.md).
 
-- **Solution templates** generate a solution with one or more projects. Use a solution template when you want to scaffold an entire multi-project structure — for example, an API project paired with a test project — in a single step.
+- **Solution templates** generate a solution with one or more projects. For example, a solution template can create an API project paired with a test project in a single step.
 
 When you create your own template, you declare its type using the `tags.type` field in the `template.json` configuration file. The valid values are `"project"`, `"item"`, and `"solution"`. These values let users filter results when they search for templates with `dotnet new search` or `dotnet new list`.
 

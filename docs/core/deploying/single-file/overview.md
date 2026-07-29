@@ -160,7 +160,7 @@ Only managed DLLs are bundled with the app into a single executable. When the ap
 
 To embed those files for extraction and get one output file, set the property `IncludeNativeLibrariesForSelfExtract` to `true`.
 
-Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems.
+Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems. We don't recommend this option: it's a .NET Core 3.1 compatibility mode and may be removed in a future release.
 
 > [!IMPORTANT]
 > If extraction is used, the files are extracted to disk before the app starts:

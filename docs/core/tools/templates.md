@@ -208,20 +208,50 @@ For a full walkthrough of creating, packing, and publishing a template package, 
 
 ## Install and uninstall templates
 
-[Describe how to install templates from the various sources and how to list and uninstall them.]
+To install a template, use the `dotnet new install` command with a source argument. The source can be any of the following:
 
-<!--
-- Use `dotnet new install <source>` where source can be:
-  - A NuGet package ID (from nuget.org)
-  - A NuGet package ID with a custom source (--nuget-source)
-  - A path to a local .nupkg file
-  - A file system directory that contains a template (the folder with .template.config inside)
-- Use `dotnet new uninstall` (no args) to list all installed template packages and their uninstall commands.
-- Use `dotnet new uninstall <PACKAGE_ID_or_PATH>` to uninstall by ID (NuGet) or path (file system).
-- Warn that templates can execute MSBuild and arbitrary code — only install trusted templates.
-- Note that built-in SDK templates are not shown in the uninstall list.
-- Show a few example commands.
--->
+- A NuGet package ID, which installs the latest version from nuget.org:
+
+  ```dotnetcli
+  dotnet new install AdatumCorporation.ConsoleTemplate.CSharp
+  ```
+
+- A NuGet package ID with a custom feed URL, using `--nuget-source` to point to a private or internal NuGet feed:
+
+  ```dotnetcli
+  dotnet new install AdatumCorporation.ConsoleTemplate.CSharp --nuget-source https://mynugetfeed.example.com/v3/index.json
+  ```
+
+- A path to a local _.nupkg_ file:
+
+  ```dotnetcli
+  dotnet new install ./AdatumCorporation.ConsoleTemplate.CSharp.1.0.0.nupkg
+  ```
+
+- A path to a directory that contains the template (the folder with `.template.config` inside):
+
+  ```dotnetcli
+  dotnet new install ./mytemplate/
+  ```
+
+  Installing from a directory is especially useful during template development because it lets you test your template without packing it first.
+
+> [!WARNING]
+> Templates can execute MSBuild tasks and arbitrary code during project creation. Only install templates from sources you trust.
+
+To see all installed template packages and the exact command to uninstall each one, run `dotnet new uninstall` with no arguments:
+
+```dotnetcli
+dotnet new uninstall
+```
+
+To uninstall a specific template package, pass the NuGet package ID or the file system path that you used when you installed it:
+
+```dotnetcli
+dotnet new uninstall AdatumCorporation.ConsoleTemplate.CSharp
+```
+
+The built-in SDK templates don't appear in the uninstall list and can't be removed with `dotnet new uninstall`.
 
 ## Template localization
 

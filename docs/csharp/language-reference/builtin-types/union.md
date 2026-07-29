@@ -171,6 +171,9 @@ The compiler prefers `TryGetValue` over the `Value` property when implementing p
 
 ### Union member providers
 
+> [!NOTE]
+> If a `IUnionMembers` interface is used all union members must be defined on that interface
+
 A union type can delegate its union members to a nested `IUnionMembers` interface. When this interface is present, the compiler looks for `Create` factory methods instead of constructors:
 
 :::code language="csharp" source="snippets/unions/MemberProvider.cs" id="MemberProvider":::

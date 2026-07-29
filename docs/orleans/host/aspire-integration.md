@@ -28,7 +28,7 @@ Orleans integration with Aspire uses the `Aspire.Hosting.Orleans` package in you
 Before using Orleans with Aspire, ensure you have:
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [Aspire cli](https://aspire.dev/get-started/install-cli/)
+- [Aspire CLI](https://aspire.dev/get-started/install-cli/)
 - An IDE with Aspire support (Visual Studio 2022 17.9+, VS Code with [`microsoft-aspire.aspire-vscode`](https://marketplace.visualstudio.com/items?itemName=microsoft-aspire.aspire-vscode), or JetBrains Rider)
 
 ## Required packages
@@ -206,6 +206,6 @@ Consider upgrading to Orleans 8.0 or later to take advantage of the Aspire integ
 
 :::zone target="docs" pivot="orleans-3-x"
 
-Aspire integration is available in Orleans 8.0 and later. Orleans 3.x does not support .NET Aspire.
+Aspire integration is available in Orleans 8.0 and later. Orleans 3.x does not support Aspire.
 
 :::zone-end

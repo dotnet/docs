@@ -4,10 +4,6 @@ on: pull_request
 permissions:
   contents: read
 
-env:
-  GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   validate:
     name: MSDocs build verifier
@@ -23,3 +19,6 @@ jobs:
 
       - name: Validate
         uses: dotnet/docs-tools/actions/docs-verifier@1397e452fa0b49e9e52bc2443cd9ec6182a05294 # main
+        env:
+          GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

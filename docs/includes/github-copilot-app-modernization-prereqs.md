@@ -23,4 +23,4 @@ ms.topic: include
 - Code must be written in C#.
 
 > [!NOTE]
-> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot modernization](../core/porting/github-copilot-app-modernization/install.md).
+> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot modernization](../core/porting/github-copilot-app-upgrade/install.md).

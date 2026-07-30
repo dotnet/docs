@@ -36,7 +36,7 @@ When you create your own template, you declare its type using the `tags.type` fi
 
 ## Template structure
 
-A template is a folder on disk that contains two things: your source files and a special `.template.config` subfolder. When you run `dotnet new <shortName>`, the template engine copies your source files to the output location and applies any configuration you've defined.
+A template is a folder on disk that contains two things: the template source files and a special `.template.config` subfolder. When you run `dotnet new <shortName>`, the template engine copies the source files to the output location and applies any configuration that's defined for the template.
 
 ```text
 mytemplate/
@@ -47,11 +47,11 @@ mytemplate/
     └── icon.png
 ```
 
-The source files can be any type of file. The template engine doesn't require you to inject special tokens or markers into your source code. It uses your files as-is, which means you can build, run, and debug a template's source project exactly like a normal .NET project. To turn an existing project into a template, add a `.template.config/template.json` file to the project root.
+The source files can be any type of file. The template engine doesn't require you to inject special tokens or markers into the source code. It uses the files as-is, which means you can build, run, and debug a template's source project exactly like a normal .NET project. To turn an existing project into a template, add a `.template.config/template.json` file to the project root.
 
-You can optionally inject substitution tokens tied to template parameters (symbols) directly into your source files and file names. If the tokens aren't valid source code, you can't build, run, or debug the source project before you deploy it as a template. The tokens don't affect projects that users create from the deployed template because the template engine replaces them during project creation.
+You can optionally inject substitution tokens tied to template parameters (symbols) directly into template source files and file names. If the tokens aren't valid source code, you can't build, run, or debug the source project before you deploy it as a template. The tokens don't affect projects that users create from the deployed template because the template engine replaces them during project creation.
 
-The only required file inside `.template.config` is `template.json`. That file tells the template engine everything it needs: the template's name, short name, author, classifications, and any parameters users can pass when they create from the template. You can also place an `icon.png` file in the `.template.config` folder. The terminal doesn't display icons, but Visual Studio shows the icon next to your template in the **Create a new project** dialog. A 128×128 PNG works well.
+The only required file inside `.template.config` is `template.json`. That file tells the template engine everything it needs: the template's name, short name, author, classifications, and any parameters users can pass when they create from the template. You can also place an `icon.png` file in the `.template.config` folder. The terminal doesn't display icons, but Visual Studio shows the icon next to the template in the **Create a new project** dialog. A 128×128 PNG works well.
 
 ### The template.json file
 
@@ -269,15 +269,15 @@ A Brazilian Portuguese localization file named `templatestrings.pt-BR.json` woul
 
 The template engine parses these files when it loads template information, and it returns localized values automatically based on the current UI culture—no extra steps are required from the user.
 
-Localization is optional. If you don't include localization files, the template works normally and always displays the values from `template.json`. For more information, see the [dotnet/templating wiki localization page](https://aka.ms/templating-localization).
+Localization is optional. If you don't include localization files, the template works normally and always displays the values from `template.json`. For more information, see the [dotnet/templating wiki localization page](https://github.com/dotnet/templating/wiki/Localization).
 
 ## Visual Studio integration
 
 Visual Studio's **Create a new project** dialog uses the .NET template engine for .NET project templates. Templates you create for `dotnet new` work in Visual Studio too, without any extra configuration. When you install a template package with `dotnet new install`, Visual Studio automatically detects and surfaces those templates in the dialog.
 
-**Project and solution templates** appear in the **Create a new project** dialog alongside the built-in SDK templates. Users can find your template by name, language, or by the tags from the `classifications` field in `template.json`. Accurate classifications help your template surface in the right filter categories, so choose them carefully. To give your template a polished appearance in the dialog, add an `icon.png` to the `.template.config` folder — Visual Studio displays it next to your template's name.
+**Project and solution templates** appear in the **Create a new project** dialog alongside the built-in SDK templates. Other users can find your template by name, language, or the tags from the `classifications` field in `template.json`. Accurate classifications help your template surface in the right filter categories, so choose them carefully. To give your template a polished appearance in the dialog, add an `icon.png` to the `.template.config` folder — Visual Studio displays it next to your template's name.
 
-**Item templates** don't currently appear in the **Add** > **New Item** dialog. Users can still create from item templates using `dotnet new <shortName>` in the terminal, but Visual Studio doesn't surface them in its item-creation UI.
+**Item templates** don't currently appear in the **Add** > **New Item** dialog. Users can still use item templates with the `dotnet new` command in the terminal.
 
 To make your template discoverable to Visual Studio users who haven't installed it yet, publish your template package to nuget.org. The **Create a new project** dialog includes an **Install more templates from the online search** option that searches nuget.org for template packages. When a user installs your package through that option, Visual Studio uses the same install mechanism as `dotnet new install`.
 
@@ -290,4 +290,4 @@ For deeper guidance on Visual Studio-specific integration—such as controlling 
 - [Tutorial: Create a template package](../tutorials/cli-templates-create-template-package.md)
 - [dotnet new command](dotnet-new.md)
 - [dotnet/templating GitHub repo wiki](https://github.com/dotnet/templating/wiki)
-- [Template samples](https://aka.ms/template-samples)
+- [Template samples](https://github.com/dotnet/templating/tree/main/dotnet-template-samples)

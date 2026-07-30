@@ -4,11 +4,11 @@ metadata:
   description: "This article answers frequently asked questions about GitHub Copilot modernization for .NET."
   titleSuffix: ""
   ms.topic: faq
-  ms.date: 07/07/2026
+  ms.date: 07/30/2026
 
 title: GitHub Copilot modernization FAQ
 summary: |
-  GitHub Copilot modernization is an interactive GitHub Copilot agent that adds capabilities to your development environment. This article answers frequently asked questions. For more information, see [What is GitHub Copilot modernization](../../../core/porting/github-copilot-app-modernization/overview.md).
+  GitHub Copilot modernization is an interactive GitHub Copilot agent that adds capabilities to your development environment. This article answers frequently asked questions. For more information, see [What is GitHub Copilot modernization](overview.md).
 
   The tool requires one of the following GitHub Copilot subscriptions:
 
@@ -27,7 +27,7 @@ sections:
     questions:
       - question: What can the agent do?
         answer: |
-          GitHub Copilot modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps modernize services for Azure, upgrades dependencies, and fixes errors in code after the upgrade. The agent performs the following steps in a Copilot chat session:
+          GitHub Copilot modernization is focused on migrating and modernizing your .NET applications for Azure. It helps assess your app for Azure readiness, generates a migration plan, and guides you through the steps to deploy your app to Azure. The agent performs the following steps in a Copilot chat session:
 
           - Analyzes your projects and proposes a modernization plan.
           - Runs a series of tasks to modernize your projects according to the plan.
@@ -35,6 +35,8 @@ sections:
           - Fixes issues automatically during the code transformation.
           - Reports progress and allows access to code changes and logs.
           - Learns from your interactions during the session to improve subsequent transformations.
+
+          To upgrade your .NET projects to newer versions of .NET, GitHub Copilot modernization uses the [GitHub Copilot upgrade agent](../../../core/porting/github-copilot-upgrade/overview.md).
 
       - question: What limitations are there?
         answer: |
@@ -52,7 +54,7 @@ sections:
 
       - question: Can I customize or guide the agent?
         answer: |
-          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in modernization skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Apply custom upgrade instructions](../../../core/porting/github-copilot-app-modernization/how-to-custom-upgrade-instructions.md).
+          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in modernization skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios.
 
           If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, the agent learns from that interaction in the short term. Preferences and decisions are saved to `scenario-instructions.md` in the `.github/upgrades/` folder so they persist across sessions.
 
@@ -74,47 +76,6 @@ sections:
       - question: Can I disable telemetry?
         answer: |
           Yes. In Visual Studio, select **Help** > **Privacy** > **Privacy Settings** > **"No, I would not like to participate."** Telemetry settings might vary by development environment. Check your tool's privacy settings for more information.
-
-  - name: Upgrade .NET apps
-    questions:
-      - question: What can the agent upgrade?
-        answer: |
-          GitHub Copilot modernization helps you upgrade your .NET projects or modernize them for Azure. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Microsoft Agent Framework upgrade. For a full reference, see [Scenarios and skills reference](../../../core/porting/github-copilot-app-modernization/scenarios-and-skills.md).
-
-          The agent works with these project types:
-
-          - Azure Functions
-          - Console apps and class libraries
-          - Web technologies such as:
-            - MVC
-            - Blazor
-            - Razor Pages
-            - Web API
-            - ASP.NET Web Forms
-          - Desktop technologies such as Windows Forms, Windows Presentation Foundation, and WinUI
-          - .NET MAUI and Xamarin
-          - Test projects such as MSTest, NUnit, and xUnit
-          - .NET Framework projects
-
-          The agent supports both C# and Visual Basic.
-
-      - question: What .NET versions can I upgrade to?
-        answer: |
-          The agent supports the following upgrade paths:
-
-          [!INCLUDE[supported-upgrade-paths](../../../core/porting/github-copilot-app-modernization/includes/supported-upgrade-paths.md)]
-
-      - question: Can I use the agent offline?
-        answer: |
-          No. The agent requires an internet connection and the GitHub Copilot cloud infrastructure. The agent works with all Copilot subscription tiers, including the free tier.
-
-      - question: Does the agent modify files outside the solution?
-        answer: |
-          No. The agent only modifies files within your workspace and the `.github/upgrades/` folder. Custom task data stays in your repository.
-
-      - question: Can I partially accept the agent's changes?
-        answer: |
-          Yes. Because each task is committed separately, you can cherry-pick specific commits by using standard Git commands. Review the commit history with `git log --oneline` and use `git cherry-pick` to select individual changes.
 
   - name: Migrate to Azure
     questions:
@@ -138,7 +99,7 @@ sections:
           - Logging
           - Security
 
-          For more information about these scenarios, see [Predefined tasks for migration](../../../core/porting/github-copilot-app-modernization/overview.md#predefined-tasks-for-migration).
+          For more information about these scenarios, see [Predefined tasks for migration](overview.md#predefined-tasks-for-migration).
 
       - question: Can I monitor assessment progress?
         answer: |
@@ -156,4 +117,4 @@ sections:
 additionalContent: |
     ## Related content
 
-    To learn more, see [What is GitHub Copilot modernization?](../../../core/porting/github-copilot-app-modernization/overview.md).
+    To learn more, see [What is GitHub Copilot modernization?](overview.md).

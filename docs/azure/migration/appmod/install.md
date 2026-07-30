@@ -133,7 +133,6 @@ Select the **Default agent** picker and find the **Upgrade** entry.
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](../../../core/porting/github-copilot-app-modernization/overview.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](../../../core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot.md)
-- [Core concepts](../../../core/porting/github-copilot-app-modernization/concepts.md)
 - [GitHub Copilot modernization FAQ](faq.yml)
+- [Quickstart: Assess and migrate a .NET project with GitHub Copilot modernization for .NET](quickstart.md)
+- [Application assessment with GitHub Copilot modernization](working-with-assessment.md)

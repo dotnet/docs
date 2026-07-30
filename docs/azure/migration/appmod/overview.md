@@ -3,7 +3,8 @@ title: GitHub Copilot modernization overview
 description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
 titleSuffix: ""
 ms.topic: overview
-ms.date: 07/07/2026
+ms.date: 07/30/2026
+ms.custom: devx-track-dotnet
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to learn about what GitHub Copilot modernization is, so that I understand its capabilities and how I can take advantage of it.

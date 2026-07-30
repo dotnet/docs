@@ -1,7 +1,7 @@
 ---
-author: adegeo
-ms.author: adegeo
-ms.date: 03/04/2026
+author: alexwolfmsft
+ms.author: alexwolf
+ms.date: 07/30/2026
 ms.topic: include
 # Shared by Azure .NET app modernization articles
 ---

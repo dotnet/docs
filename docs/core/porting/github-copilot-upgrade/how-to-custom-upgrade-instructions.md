@@ -1,6 +1,6 @@
 ---
 title: Apply custom upgrade instructions for .NET upgrades
-description: "Create and apply custom upgrade instructions with GitHub Copilot modernization to automate .NET upgrades. Write, test, and integrate instructions for consistent transformations."
+description: "Create and apply custom upgrade instructions with GitHub Copilot upgrade to automate .NET upgrades. Write, test, and integrate instructions for consistent transformations."
 author: kschlobohm
 ms.topic: how-to
 ms.date: 03/04/2026
@@ -12,17 +12,17 @@ ai-usage: ai-assisted
 
 # Apply custom upgrade instructions for .NET upgrades
 
-Custom upgrade instructions are Markdown files that guide GitHub Copilot modernization to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or applying a specific API upgrade.
+Custom upgrade instructions are Markdown files that guide GitHub Copilot upgrade to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or applying a specific API upgrade.
 
 This article explains how to create and structure a custom upgrade instruction file, test it in isolation, and integrate it into the assessment stage of an upgrade workflow.
 
 ## Prerequisites
 
-Set up GitHub Copilot modernization in your development environment before creating custom instructions. For installation steps, see [Install GitHub Copilot modernization](install.md).
+Set up GitHub Copilot upgrade in your development environment before creating custom instructions. For installation steps, see [Install GitHub Copilot upgrade](install.md).
 
 ## Understand custom upgrade instructions
 
-GitHub Copilot modernization retrieves custom upgrade instructions as Markdown files on demand during the assessment and planning stages of an upgrade. Custom upgrade instructions differ from `copilot-instructions.md` because they're:
+GitHub Copilot upgrade retrieves custom upgrade instructions as Markdown files on demand during the assessment and planning stages of an upgrade. Custom upgrade instructions differ from `copilot-instructions.md` because they're:
 
 - Targeted to automating code and dependency changes.
 - Retrieved only when relevant to the current upgrade assessment or plan.
@@ -35,7 +35,7 @@ Structure your instruction files with:
 - Explicit step logic ("If X is found, do Y"). Avoid vague language.
 - (Recommended) One or more diff examples captured from actual local edits to guide transformations.
 
-Beyond custom upgrade instructions, you can extend GitHub Copilot modernization through the standard skills and instructions system. Skills add capabilities to the agent, and instruction files (like `copilot-instructions.md`) provide global guidance.
+Beyond custom upgrade instructions, you can extend GitHub Copilot upgrade through the standard skills and instructions system. Skills add capabilities to the agent, and instruction files (like `copilot-instructions.md`) provide global guidance.
 
 ## Create a custom upgrade instruction
 
@@ -159,7 +159,7 @@ Remove or consolidate any temporary instruction files to avoid overlapping trans
 
 ## Related content
 
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
-- [GitHub Copilot modernization FAQ](faq.yml)
-- [What is GitHub Copilot modernization?](overview.md)
-- [Install GitHub Copilot modernization](install.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [GitHub Copilot upgrade FAQ](faq.yml)
+- [What is GitHub Copilot upgrade?](overview.md)
+- [Install GitHub Copilot upgrade](install.md)

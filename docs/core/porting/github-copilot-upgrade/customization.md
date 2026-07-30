@@ -1,17 +1,17 @@
 ---
-title: Customize GitHub Copilot modernization
-description: "Learn how to customize GitHub Copilot modernization with custom skills, custom scenarios, scenario artifact edits, and chat instructions to encode your team's upgrade patterns."
+title: Customize GitHub Copilot upgrade
+description: "Learn how to customize GitHub Copilot upgrade with custom skills, custom scenarios, scenario artifact edits, and chat instructions to encode your team's upgrade patterns."
 ms.topic: concept-article
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to customize GitHub Copilot modernization so that I can encode my team's upgrade patterns, enforce coding standards during upgrades, and define custom upgrade workflows.
+#customer intent: As a developer, I want to customize GitHub Copilot upgrade so that I can encode my team's upgrade patterns, enforce coding standards during upgrades, and define custom upgrade workflows.
 
 ---
 
-# Customize GitHub Copilot modernization
+# Customize GitHub Copilot upgrade
 
-GitHub Copilot modernization is extensible. The agent provides multiple customization points to encode your team's upgrade patterns, enforce coding standards during upgrades, and define new upgrade workflows.
+GitHub Copilot upgrade is extensible. The agent provides multiple customization points to encode your team's upgrade patterns, enforce coding standards during upgrades, and define new upgrade workflows.
 
 ## Customization points overview
 

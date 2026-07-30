@@ -1,17 +1,17 @@
 ---
-title: Best practices for GitHub Copilot modernization
-description: "Learn best practices for using GitHub Copilot modernization to upgrade .NET projects, including preparation, collaboration tips, common pitfalls, and recovery strategies."
+title: Best practices for GitHub Copilot upgrade
+description: "Learn best practices for using GitHub Copilot upgrade to upgrade .NET projects, including preparation, collaboration tips, common pitfalls, and recovery strategies."
 ms.topic: best-practice
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to follow best practices when using GitHub Copilot modernization so that I can get the best results from my .NET upgrades and avoid common problems.
+#customer intent: As a developer, I want to follow best practices when using GitHub Copilot upgrade so that I can get the best results from my .NET upgrades and avoid common problems.
 
 ---
 
-# Best practices for GitHub Copilot modernization
+# Best practices for GitHub Copilot upgrade
 
-Follow these guidelines to get the best results from GitHub Copilot modernization when upgrading .NET projects.
+Follow these guidelines to get the best results from GitHub Copilot upgrade when upgrading .NET projects.
 
 ## Before you start
 
@@ -224,7 +224,7 @@ Your original code is untouched. If you're working without source control, resto
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [What is GitHub Copilot upgrade?](overview.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
 - [Core concepts](concepts.md)
-- [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
+- [Troubleshoot GitHub Copilot upgrade](troubleshooting.md)

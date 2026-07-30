@@ -1,18 +1,18 @@
 ---
-title: Install GitHub Copilot modernization
-description: "Learn how to install and set up GitHub Copilot modernization across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com."
+title: Install GitHub Copilot upgrade
+description: "Learn how to install and set up GitHub Copilot upgrade across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com."
 ms.topic: install-set-up-deploy
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 zone_pivot_groups: copilot-modernization-install
 
-#customer intent: As a developer, I want to install GitHub Copilot modernization so that I can upgrade my .NET applications.
+#customer intent: As a developer, I want to install GitHub Copilot upgrade so that I can upgrade my .NET applications.
 
 ---
 
-# Install GitHub Copilot modernization
+# Install GitHub Copilot upgrade
 
-GitHub Copilot modernization works across multiple development environments. Choose your preferred environment to install and set up GitHub Copilot modernization.
+GitHub Copilot upgrade works across multiple development environments. Choose your preferred environment to install and set up GitHub Copilot upgrade.
 
 ::: zone pivot="visualstudio"
 
@@ -29,7 +29,7 @@ Before you install, make sure you have:
 
 ## Install
 
-Visual Studio includes GitHub Copilot modernization through the **GitHub Copilot app modernization** optional component, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
+Visual Studio includes GitHub Copilot upgrade through the **GitHub Copilot app modernization** optional component, so you don't need to install it separately. Enable the **GitHub Copilot** and **GitHub Copilot app modernization** optional components in the **.NET desktop development** workload through the Visual Studio Installer.
 
 ## Verify the installation
 
@@ -133,7 +133,7 @@ Select the **Default agent** picker and find the **Upgrade** entry.
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [What is GitHub Copilot upgrade?](overview.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
 - [Core concepts](concepts.md)
-- [GitHub Copilot modernization FAQ](faq.yml)
+- [GitHub Copilot upgrade FAQ](faq.yml)

@@ -1,8 +1,9 @@
 ---
 title: dotnet-gcdump diagnostic tool - .NET CLI
 description: Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
-ms.date: 06/03/2025
+ms.date: 07/09/2026
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 # Heap analysis tool (dotnet-gcdump)
 
@@ -45,6 +46,9 @@ The `dotnet-gcdump` global tool collects GC (Garbage Collector) dumps of live .N
 - Comparing the number of objects on the heap at several points in time.
 - Analyzing roots of objects (answering questions like, "what still has a reference to this type?").
 - Collecting general statistics about the counts of objects on the heap.
+
+> [!NOTE]
+> `dotnet-gcdump` collects with non-lossy buffering so the GC dump is complete on large heaps. Non-lossy buffering requires a .NET 11+ target runtime; on older runtimes, the tool automatically falls back to lossy buffering. Non-lossy buffering is complete only up to the runtime's buffer capacity, not against host memory exhaustion. Under memory pressure, the runtime can still drop events.
 
 ### View the GC dump captured from dotnet-gcdump
 
@@ -253,7 +257,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - `dotnet-gcdump` is unable to generate a `.gcdump` file due to missing information, for example, **[Error] Exception during gcdump: System.ApplicationException: ETL file shows the start of a heap dump but not its completion.**. Or, the `.gcdump` file doesn't include the entire heap.
 
-   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. If the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace may be dropped. In this case, to diagnose issues with the heap, it's recommended to collect a dump of the process.
+   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. If the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace might be dropped. On a .NET 11+ target runtime, `dotnet-gcdump`'s non-lossy buffering prevents this by blocking event producers instead of dropping events, up to the buffer's capacity. On older runtimes, where the tool falls back to the lossy buffer, or as an alternative, collect a dump of the process to diagnose issues with the heap.
 
 - `dotnet-gcdump` appears to cause an Out Of Memory issue in a memory constrained environment.
 

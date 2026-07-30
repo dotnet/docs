@@ -44,8 +44,10 @@ items:
           href: ./migration/appmod/copilot-cli-support.md
         - name: Sample - Contoso University
           href: ./migration/appmod/sample.md
+        - name: Install
+          href: ./migration/appmod/install.md
         - name: FAQ
-          href: ../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: ./migration/appmod/faq.yml
     - name: Azure Migrate application and code assessment
       items:
       - name: Overview

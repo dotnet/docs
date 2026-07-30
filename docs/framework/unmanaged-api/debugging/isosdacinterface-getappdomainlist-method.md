@@ -56,3 +56,6 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::GetAppDomainStoreData Method](isosdacinterface-getappdomainstoredata-method.md)
+- [ISOSDacInterface::GetAppDomainData Method](isosdacinterface-getappdomaindata-method.md)
+- [ISOSDacInterface::GetAssemblyData Method](isosdacinterface-getassemblydata-method.md)

@@ -62,3 +62,6 @@ The `MODULEMAPTRAVERSE` callback has the following signature: `typedef void (*MO
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [ModuleMapType Enumeration](modulemaptype-enumeration.md)
+- [ISOSDacInterface::GetModule Method](isosdacinterface-getmodule-method.md)
+- [ISOSDacInterface::GetModuleData Method](isosdacinterface-getmoduledata-method.md)
+- [ISOSDacInterface::GetILForModule Method](isosdacinterface-getilformodule-method.md)

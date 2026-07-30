@@ -54,3 +54,7 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpGcHeapDetails Structure](dacpgcheapdetails-structure.md)
+- [ISOSDacInterface::GetGCHeapData Method](isosdacinterface-getgcheapdata-method.md)
+- [ISOSDacInterface::GetGCHeapList Method](isosdacinterface-getgcheaplist-method.md)
+- [ISOSDacInterface::GetGCHeapStaticData Method](isosdacinterface-getgcheapstaticdata-method.md)
+- [ISOSDacInterface::GetHeapSegmentData Method](isosdacinterface-getheapsegmentdata-method.md)

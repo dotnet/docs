@@ -54,3 +54,4 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpCCWData Structure](dacpccwdata-structure.md)
+- [ISOSDacInterface::GetCCWInterfaces Method](isosdacinterface-getccwinterfaces-method.md)

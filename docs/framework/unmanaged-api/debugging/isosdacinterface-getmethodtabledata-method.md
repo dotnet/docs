@@ -54,3 +54,7 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpMethodTableData Structure](dacpmethodtabledata-structure.md)
+- [ISOSDacInterface::GetMethodTableSlot Method](isosdacinterface-getmethodtableslot-method.md)
+- [ISOSDacInterface::GetMethodTableFieldData Method](isosdacinterface-getmethodtablefielddata-method.md)
+- [ISOSDacInterface::GetMethodTableForEEClass Method](isosdacinterface-getmethodtableforeeclass-method.md)
+- [ISOSDacInterface::GetFieldDescData Method](isosdacinterface-getfielddescdata-method.md)

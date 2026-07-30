@@ -53,3 +53,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::GetThreadStoreData Method](isosdacinterface-getthreadstoredata-method.md)
+- [ISOSDacInterface::GetThreadData Method](isosdacinterface-getthreaddata-method.md)

@@ -55,3 +55,4 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::TraverseVirtCallStubHeap Method](isosdacinterface-traversevirtcallstubheap-method.md)

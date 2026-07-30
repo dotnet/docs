@@ -66,3 +66,6 @@ The context is the original context with any unwinding applied to it. As unwindi
 
 - [Debugging](index.md)
 - [IXCLRDataStackWalk Interface](ixclrdatastackwalk-interface.md)
+- [IXCLRDataStackWalk::SetContext Method](ixclrdatastackwalk-setcontext-method.md)
+- [IXCLRDataStackWalk::Next Method](ixclrdatastackwalk-next-method.md)
+- [IXCLRDataStackWalk::GetFrame Method](ixclrdatastackwalk-getframe-method.md)

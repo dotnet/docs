@@ -59,3 +59,7 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::GetMethodDescData Method](isosdacinterface-getmethoddescdata-method.md)
+- [ISOSDacInterface::GetMethodDescPtrFromIP Method](isosdacinterface-getmethoddescptrfromip-method.md)
+- [ISOSDacInterface::GetMethodDescPtrFromFrame Method](isosdacinterface-getmethoddescptrfromframe-method.md)
+- [ISOSDacInterface::GetMethodDescFromToken Method](isosdacinterface-getmethoddescfromtoken-method.md)

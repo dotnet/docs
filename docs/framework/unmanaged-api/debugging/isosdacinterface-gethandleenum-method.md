@@ -52,3 +52,5 @@ The returned `ISOSHandleEnum` enumerator derives from `ISOSEnum` and provides a 
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::GetHandleEnumForTypes Method](isosdacinterface-gethandleenumfortypes-method.md)
+- [ISOSDacInterface::GetStackReferences Method](isosdacinterface-getstackreferences-method.md)

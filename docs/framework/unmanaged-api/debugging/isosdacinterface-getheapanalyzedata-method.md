@@ -54,3 +54,4 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpGcHeapAnalyzeData Structure](dacpgcheapanalyzedata-structure.md)
+- [ISOSDacInterface::GetHeapAnalyzeStaticData Method](isosdacinterface-getheapanalyzestaticdata-method.md)

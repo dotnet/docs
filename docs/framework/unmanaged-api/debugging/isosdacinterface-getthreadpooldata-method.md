@@ -51,3 +51,4 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpThreadpoolData Structure](dacpthreadpooldata-structure.md)
+- [ISOSDacInterface::GetWorkRequestData Method](isosdacinterface-getworkrequestdata-method.md)

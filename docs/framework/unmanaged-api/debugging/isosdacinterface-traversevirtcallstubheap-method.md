@@ -59,3 +59,4 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [VCSHeapType Enumeration](vcsheaptype-enumeration.md)
+- [ISOSDacInterface::TraverseLoaderHeap Method](isosdacinterface-traverseloaderheap-method.md)

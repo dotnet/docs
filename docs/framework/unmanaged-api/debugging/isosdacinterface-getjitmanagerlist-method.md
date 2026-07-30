@@ -57,3 +57,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpJitManagerInfo Structure](dacpjitmanagerinfo-structure.md)
+- [ISOSDacInterface::GetCodeHeaderData Method](isosdacinterface-getcodeheaderdata-method.md)
+- [ISOSDacInterface::GetCodeHeapList Method](isosdacinterface-getcodeheaplist-method.md)

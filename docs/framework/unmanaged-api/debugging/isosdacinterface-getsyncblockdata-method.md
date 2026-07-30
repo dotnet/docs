@@ -54,3 +54,4 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpSyncBlockData Structure](dacpsyncblockdata-structure.md)
+- [ISOSDacInterface::GetSyncBlockCleanupData Method](isosdacinterface-getsyncblockcleanupdata-method.md)

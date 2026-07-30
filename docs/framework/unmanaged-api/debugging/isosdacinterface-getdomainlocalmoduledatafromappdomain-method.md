@@ -57,3 +57,6 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpDomainLocalModuleData Structure](dacpdomainlocalmoduledata-structure.md)
+- [ISOSDacInterface::GetDomainLocalModuleData Method](isosdacinterface-getdomainlocalmoduledata-method.md)
+- [ISOSDacInterface::GetDomainLocalModuleDataFromModule Method](isosdacinterface-getdomainlocalmoduledatafrommodule-method.md)
+- [ISOSDacInterface::GetThreadLocalModuleData Method](isosdacinterface-getthreadlocalmoduledata-method.md)

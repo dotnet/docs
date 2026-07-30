@@ -56,3 +56,6 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::GetModule Method](isosdacinterface-getmodule-method.md)
+- [ISOSDacInterface::GetModuleData Method](isosdacinterface-getmoduledata-method.md)
+- [ISOSDacInterface::TraverseModuleMap Method](isosdacinterface-traversemodulemap-method.md)

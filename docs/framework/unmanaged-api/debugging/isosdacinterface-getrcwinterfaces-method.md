@@ -60,3 +60,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpCOMInterfacePointerData Structure](dacpcominterfacepointerdata-structure.md)
+- [ISOSDacInterface::GetRCWData Method](isosdacinterface-getrcwdata-method.md)
+- [ISOSDacInterface::TraverseRCWCleanupList Method](isosdacinterface-traversercwcleanuplist-method.md)

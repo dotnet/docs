@@ -60,3 +60,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpJitCodeHeapInfo Structure](dacpjitcodeheapinfo-structure.md)
+- [ISOSDacInterface::GetCodeHeaderData Method](isosdacinterface-getcodeheaderdata-method.md)
+- [ISOSDacInterface::GetJitManagerList Method](isosdacinterface-getjitmanagerlist-method.md)

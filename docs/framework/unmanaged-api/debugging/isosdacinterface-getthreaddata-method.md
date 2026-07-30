@@ -54,3 +54,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
 - [DacpThreadData Structure](dacpthreaddata-structure.md)
+- [ISOSDacInterface::GetThreadStoreData Method](isosdacinterface-getthreadstoredata-method.md)
+- [ISOSDacInterface::GetThreadFromThinlockID Method](isosdacinterface-getthreadfromthinlockid-method.md)

@@ -65,3 +65,5 @@ The callback receives the RCW address, COM context address, thread address, a fl
 
 - [Debugging](index.md)
 - [ISOSDacInterface Interface](isosdacinterface-interface.md)
+- [ISOSDacInterface::GetRCWData Method](isosdacinterface-getrcwdata-method.md)
+- [ISOSDacInterface::GetRCWInterfaces Method](isosdacinterface-getrcwinterfaces-method.md)

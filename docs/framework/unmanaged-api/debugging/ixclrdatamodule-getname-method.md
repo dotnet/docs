@@ -60,3 +60,5 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
 
 - [Debugging](index.md)
 - [IXCLRDataModule Interface](ixclrdatamodule-interface.md)
+- [IXCLRDataModule::GetFileName Method](ixclrdatamodule-getfilename-method.md)
+- [IXCLRDataModule::GetVersionId Method](ixclrdatamodule-getversionid-method.md)

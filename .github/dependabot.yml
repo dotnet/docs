@@ -1909,6 +1909,19 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/logging/snippets/source-generation/csharp" #csharp.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/async-state/csharp/AspNetCoreIntegration" #AspNetCoreIntegration.csproj
     schedule:
       interval: "weekly"
@@ -2573,19 +2586,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/logging/getting-started-open-telemetry" #getting-started-open-telemetry.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    cooldown:
-      default-days: 7
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/logging/getting-started-type-category-name" #getting-started-type-category-name.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

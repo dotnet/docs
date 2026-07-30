@@ -43,7 +43,6 @@ struct DacpThreadpoolData : ZeroInit<DacpThreadpoolData>
     int HillClimbingLogSize;
 
     DWORD NumTimers;
-    // TODO: mstanton, stuff to enumerate timers too...
 
     LONG   NumCPThreads;
     LONG   NumFreeCPThreads;

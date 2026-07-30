@@ -25,7 +25,7 @@ Indicates the kind of module map to traverse.
 ## Syntax
 
 ```cpp
-typedef enum ModuleMapType { TYPEDEFTOMETHODTABLE, TYPEREFTOMETHODTABLE };
+typedef enum ModuleMapType { TYPEDEFTOMETHODTABLE, TYPEREFTOMETHODTABLE } ModuleMapType;
 ```
 
 ## Members

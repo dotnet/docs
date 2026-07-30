@@ -29,8 +29,7 @@ Defines a transport buffer for thread-local module information.
 ```cpp
 struct DacpThreadLocalModuleData : ZeroInit<DacpThreadLocalModuleData>
 {
-    // These two parameters are used as input params when calling the
-    // no-argument form of Request below.
+    // These two parameters are used as input parameters when populating the structure.
     CLRDATA_ADDRESS threadAddr;
     ULONG64 ModuleIndex;
     

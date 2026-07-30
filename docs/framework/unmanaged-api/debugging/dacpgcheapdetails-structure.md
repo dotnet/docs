@@ -49,7 +49,7 @@ struct DacpGcHeapDetails : ZeroInit<DacpGcHeapDetails>
     CLRDATA_ADDRESS highest_address;
     CLRDATA_ADDRESS card_table;
 
-    // Use this for workstation mode (DacpGcHeapDat.bServerMode==FALSE).
+    // Use this for workstation mode (DacpGcHeapData.bServerMode==FALSE).
     HRESULT Request(ISOSDacInterface *sos)
     {
         return sos->GetGCHeapStaticData(this);

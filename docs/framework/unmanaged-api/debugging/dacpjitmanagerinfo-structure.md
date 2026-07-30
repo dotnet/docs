@@ -54,7 +54,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-
 ## See also
 
 - [Debugging](index.md)

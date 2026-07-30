@@ -29,8 +29,7 @@ Defines a transport buffer for domain-local module information.
 ```cpp
 struct DacpDomainLocalModuleData : ZeroInit<DacpDomainLocalModuleData>
 {
-    // These two parameters are used as input params when calling the
-    // no-argument form of Request below.
+    // These two parameters are used as input parameters when calling Request below.
     CLRDATA_ADDRESS appDomainAddr;
     ULONG64  ModuleID;
     
@@ -57,7 +56,7 @@ struct DacpDomainLocalModuleData : ZeroInit<DacpDomainLocalModuleData>
 | `pDynamicClassTable` | The address of the dynamic class table. |
 | `pGCStaticDataStart` | The start address for garbage-collected static data. |
 | `pNonGCStaticDataStart` | The start address for non-garbage-collected static data. |
-| `Request` | Populates the structure by calling `ISOSDacInterface::GetDomainLocalModuleData`. |
+| `Request` | Populates the structure by calling [`ISOSDacInterface::GetDomainLocalModuleData`](isosdacinterface-getdomainlocalmoduledata-method.md). |
 
 ## Remarks
 
@@ -74,3 +73,4 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 - [Debugging](index.md)
 - [Debugging Structures](debugging-structures.md)
+- [ISOSDacInterface::GetDomainLocalModuleData Method](isosdacinterface-getdomainlocalmoduledata-method.md)

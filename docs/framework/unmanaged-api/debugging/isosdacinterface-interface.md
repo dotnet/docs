@@ -34,6 +34,7 @@ Provides helper methods to access data from `SOS`.
 | [GetCCWInterfaces](isosdacinterface-getccwinterfaces-method.md) | Retrieves COM interface pointer data for a COM callable wrapper (CCW). |
 | [GetCodeHeaderData](isosdacinterface-getcodeheaderdata-method.md) | Retrieves code header data for the JIT-compiled method that contains the specified instruction pointer. |
 | [GetCodeHeapList](isosdacinterface-getcodeheaplist-method.md) | Retrieves the list of code heaps for the specified JIT manager. |
+| [GetDomainLocalModuleData](isosdacinterface-getdomainlocalmoduledata-method.md) | Retrieves data for the domain-local module at the specified address. |
 | [GetDomainLocalModuleDataFromAppDomain](isosdacinterface-getdomainlocalmoduledatafromappdomain-method.md) | Retrieves domain-local module data for the specified application domain and module identifier. |
 | [GetDomainLocalModuleDataFromModule](isosdacinterface-getdomainlocalmoduledatafrommodule-method.md) | Retrieves domain-local module data for the specified module. |
 | [GetFieldDescData](isosdacinterface-getfielddescdata-method.md) | Gets data for a FieldDesc address. |

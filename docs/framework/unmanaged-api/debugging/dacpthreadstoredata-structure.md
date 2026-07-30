@@ -38,7 +38,7 @@ struct DacpThreadStoreData : ZeroInit<DacpThreadStoreData>
     CLRDATA_ADDRESS finalizerThread;
     CLRDATA_ADDRESS gcThread;
     DWORD fHostConfig;          // Uses hosting flags defined above
-	
+ 
     HRESULT Request(ISOSDacInterface *sos)
     {
         return sos->GetThreadStoreData(this);

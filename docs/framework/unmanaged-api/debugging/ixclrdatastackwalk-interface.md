@@ -27,6 +27,7 @@ Provides methods for walking the stack.
 
 | Method                                                                                                                  | Description                                 |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [GetContext](ixclrdatastackwalk-getcontext-method.md) | Gets the current context of this stack walk. |
 | [SetContext](ixclrdatastackwalk-setcontext-method.md) | Change the context of this stack walk. |
 | [GetFrameType](ixclrdatastackwalk-getframetype-method.md) | Gets information about the type of the current frame. |
 | [GetFrame](ixclrdatastackwalk-getframe-method.md) | Gets the current frame if it is recognized. |

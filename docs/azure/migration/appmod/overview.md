@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot modernization overview
-description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
+description: "Learn about GitHub Copilot modernization, a Copilot agent that migrates .NET applications to Azure through automated assessment, AI-driven code remediation, and deployment automation."
 titleSuffix: ""
 ms.topic: overview
 ms.date: 07/30/2026
@@ -13,35 +13,23 @@ ai-usage: ai-assisted
 
 # What is GitHub Copilot modernization?
 
-GitHub Copilot modernization is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
+GitHub Copilot modernization is a GitHub Copilot agent that migrates .NET applications to Azure quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and deployment across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
 
 Use this agent to:
 
-- Upgrade to a newer version of .NET.
 - Migrate technologies and deploy to Azure.
-- Modernize your .NET app, especially when upgrading from .NET Framework.
-- Assess your application's code, configuration, and dependencies.
-- Plan and set up the right Azure resource.
+- Assess your application's code, configuration, and dependencies for Azure readiness.
+- Plan and set up the right Azure resources.
 - Fix issues and apply best practices for cloud migration.
-- Validate that your app builds and tests successfully.
+- Validate that your app builds and tests successfully after migration.
+
+When your migration requires upgrading to a newer version of .NET, the modernization agent invokes [GitHub Copilot upgrade](../../../core/porting/github-copilot-upgrade/overview.md) to handle the version upgrade.
 
 ## Scenarios
 
-The agent provides multiple end-to-end modernization workflows called _scenarios_. Each scenario is a managed workflow that guides you through a specific type of upgrade or migration:
+The agent provides predefined migration scenarios for common Azure targets. For a full reference, see the [Predefined tasks for migration](#predefined-tasks-for-migration) section below.
 
-| Scenario | Description | Example prompt |
-|---|---|---|
-| **.NET version upgrade** | Upgrades from older .NET versions to .NET 8, 9, 10, or later. | _"Upgrade my solution to .NET 10"_ |
-| **SDK-style conversion** | Converts legacy project format to SDK-style. | _"Convert to SDK-style"_ |
-| **Newtonsoft.Json upgrade** | Replaces Newtonsoft.Json with System.Text.Json. | _"Upgrade from Newtonsoft.Json"_ |
-| **SqlClient upgrade** | Upgrades from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
-| **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
-| **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
-| **Aspire integration** | Adds [Aspire](https://aspire.dev) support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
-| **Aspire version upgrade** | Upgrades existing Aspire applications to newer versions. | _"Upgrade my Aspire version"_ |
-| **WebForms-to-Blazor upgrade** | Upgrades ASP.NET Web Forms applications to Blazor. | _"Migrate my Web Forms app to Blazor"_ |
-
-For a full reference of all scenarios and 30+ built-in upgrade skills, see [Scenarios and skills reference](scenarios-and-skills.md).
+When a migration requires upgrading the .NET version, the modernization agent coordinates with [GitHub Copilot upgrade](../../../core/porting/github-copilot-upgrade/overview.md) to perform the version upgrade as part of the migration workflow.
 
 ## Provide feedback
 
@@ -121,7 +109,7 @@ GitHub Copilot modernization for .NET offers predefined tasks that capture indus
 
 ## Upgrade .NET projects
 
-The modernization agent supports upgrading C# and Visual Basic projects to the latest version of .NET by using the GitHub Copilot upgrade agent. For more information, see [What is GitHub Copilot upgrade?](../../../core/porting/github-copilot-upgrade/overview.md).
+When your migration requires upgrading your .NET projects to a newer version, the GitHub Copilot modernization agent calls [GitHub Copilot upgrade](../../../core/porting/github-copilot-upgrade/overview.md) to perform the version upgrade. The upgrade runs as part of the overall modernization workflow. For more information about what the upgrade agent supports, see [What is GitHub Copilot upgrade?](../../../core/porting/github-copilot-upgrade/overview.md).
 
 ## How it works
 

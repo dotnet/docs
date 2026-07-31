@@ -1,5 +1,5 @@
 ---
-title: "Whats new in C# 15"
+title: What's new in C# 15
 description: "Discover what's new in C# 15, including features such as union types, the closed modifier, extension indexers, and pointer relaxations. Try examples in your code."
 ms.date: 07/08/2026
 ms.topic: whats-new

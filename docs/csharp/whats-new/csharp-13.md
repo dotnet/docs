@@ -1,5 +1,5 @@
 ---
-title: "Whats new in C# 13"
+title: What's new in C# 13
 description: "Discover what's new in C# 13, including params collections, a new lock object, ref struct interfaces, partial properties, and more. Try examples in your code."
 ms.date: 11/18/2025
 ms.topic: whats-new

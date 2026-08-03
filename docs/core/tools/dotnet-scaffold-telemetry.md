@@ -43,25 +43,23 @@ Protecting your privacy is important to us. If you suspect the telemetry feature
 * File an issue in the [dotnet/scaffolding](https://github.com/dotnet/scaffolding/issues) repository.
 * Send an email to [dotnet@microsoft.com](mailto:dotnet@microsoft.com) for investigation.
 
-The telemetry feature collects the following data.
+The telemetry feature collects the following data for .NET SDK version 8.0 and later:
 
-| .NET SDK versions | Data |
-|--------------|------|
-| >=8.0        | Timestamp of invocation. |
-| >=8.0        | Three-octet IP address used to determine the geographical location. |
-| >=8.0        | Operating system and version. |
-| >=8.0        | Runtime ID (RID) the tool is running on. |
-| >=8.0        | Whether the tool is running in a container. |
-| >=8.0        | Hashed Media Access Control (MAC) address: a cryptographically (SHA256) hashed and unique ID for a machine. |
-| >=8.0        | Kernel version. |
-| >=8.0        | dotnet-scaffold version. |
-| >=8.0        | Hashed tool information (tool name, tool version, tool package name, tool package version, chosen scaffolder category, related scaffolding categories). |
-| >=8.0        | Tool level (global or local tool). |
-| >=8.0        | Hashed command invoked (for example, `mvccontroller`) and whether it succeeded. |
-| >=8.0        | dotnet-scaffold-aspnet scaffolder name, step names, and whether they succeeded. |
-| >=8.0        | dotnet-scaffold-aspire scaffolder name and whether it succeeded. |
-| >=8.0        | dotnet-scaffold-aspnet scaffolder validation method name and whether it succeeded. |
-| >=8.0        | dotnet-scaffold-aspire scaffolder validation method name and whether it succeeded. |
+* Timestamp of invocation.
+* Three-octet IP address used to determine the geographical location.
+* Operating system and version.
+* Runtime ID (RID) the tool is running on.
+* Whether the tool is running in a container.
+* Hashed Media Access Control (MAC) address: a cryptographically (SHA256) hashed and unique ID for a machine.
+* Kernel version.
+* dotnet-scaffold version.
+* Hashed tool information (tool name, tool version, tool package name, tool package version, chosen scaffolder category, related scaffolding categories).
+* Tool level (global or local tool).
+* Hashed command invoked (for example, `mvccontroller`) and whether it succeeded.
+* dotnet-scaffold-aspnet scaffolder name, step names, and whether they succeeded.
+* dotnet-scaffold-aspire scaffolder name and whether it succeeded.
+* dotnet-scaffold-aspnet scaffolder validation method name and whether it succeeded.
+* dotnet-scaffold-aspire scaffolder validation method name and whether it succeeded.
 
 ## Additional resources
 

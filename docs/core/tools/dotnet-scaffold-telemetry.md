@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ---
 # dotnet-scaffold telemetry
 
-The `dotnet-scaffold` command includes a telemetry feature that collects usage data. This feature helps the `dotnet-scaffold` team understand how the tool is used so it can be improved.
+The `dotnet-scaffold` command includes a telemetry feature that collects usage data. This feature helps the `dotnet-scaffold` team understand how the tool is used so they can improve it.
 
 ## How to opt out
 
@@ -16,7 +16,7 @@ The `dotnet-scaffold` telemetry feature is enabled by default. To opt out of the
 
 ## Disclosure
 
-When you run the `dotnet-scaffold` tool the first time, it displays output similar to the following example. The text might vary slightly depending on the version of the tool you're running. This "first run" experience is how Microsoft notifies you about data collection.
+When you run the `dotnet-scaffold` tool for the first time, it displays output similar to the following example. The text might vary slightly depending on the version of the tool you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 ```console
 dotnet-scaffold collects usage data in order to help us improve your experience. The data is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_SCAFFOLD_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.

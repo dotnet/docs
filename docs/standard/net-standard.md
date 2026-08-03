@@ -1,5 +1,5 @@
 ---
-title: Microsoft .NET Standard Overview
+title: .NET Standard overview
 description: Learn what .NET Standard is, which implementations support each version, and why .NET 5 and later versions simplify cross-platform code sharing.
 ms.date: 11/06/2025
 ms.service: dotnet

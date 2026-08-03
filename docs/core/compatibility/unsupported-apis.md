@@ -247,9 +247,13 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CngProvider?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CngUIPolicy?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CompositeMLDsa.GenerateKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportCompositeMLDsaPrivateKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
 | <xref:System.Security.Cryptography.CompositeMLDsa.ImportCompositeMLDsaPublicKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportFromEncryptedPem*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
 | <xref:System.Security.Cryptography.CompositeMLDsa.ImportFromPem*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
-| <xref:System.Security.Cryptography.CompositeMLDsa.ImportFromPkcs8*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportEncryptedPkcs8PrivateKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportPkcs8PrivateKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportSubjectPublicKeyInfo*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
 | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor*> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |

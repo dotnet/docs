@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # ChangeToken.OnChange async overloads rebind existing Task-returning callbacks
 
-Starting in .NET 11, <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange*> adds async callback overloads. After you recompile against .NET 11, existing calls that pass an `async` lambda or a `Task`-returning callback can silently bind to a different overload and behave differently at run time.
+Starting in .NET 11, <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange*> adds async callback overloads. After you recompile against .NET 11, existing calls that pass an `async` lambda or a `Task`-returning callback can silently bind to a different overload and behave differently at runtime.
 
 ## Version introduced
 

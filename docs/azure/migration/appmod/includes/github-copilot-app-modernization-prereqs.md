@@ -1,6 +1,4 @@
 ---
-author: alexwolfmsft
-ms.author: alexwolf
 ms.date: 07/30/2026
 ms.topic: include
 # Shared by Azure .NET app modernization articles

@@ -1,8 +1,6 @@
 ---
 title: Monitor upgrades with the Upgrade Dashboard
 description: "Learn how to use the Upgrade Dashboard to monitor progress, review assessment results, inspect dependencies, and check upgrade settings."
-author: adegeo
-ms.author: adegeo
 ms.topic: concept-article
 ms.date: 08/03/2026
 ai-usage: ai-assisted
@@ -40,14 +38,14 @@ Use the eight tabs in the top navigation bar to inspect different parts of the u
 
 | Tab | Purpose |
 | --- | --- |
-| **Overview** | Summarizes the upgrade session. |
-| **Scenario** | Shows the active scenario and its phases. |
-| **Tasks** | Tracks the upgrade plan and individual tasks. |
-| **Projects** | Lists projects, target frameworks, and assessment incidents. |
-| **Dependencies** | Reports package and reference compatibility. |
-| **Assessment** | Presents codebase assessment results. |
-| **Options** | Shows the current upgrade strategy and settings. |
-| **Activity** | Records file changes, commits, and build events. |
+| [**Overview**](#overview-tab) | Summarizes the upgrade session. |
+| [**Scenario**](#scenario-tab) | Shows the active scenario and its phases. |
+| [**Tasks**](#tasks-tab) | Tracks the upgrade plan and individual tasks. |
+| [**Projects**](#projects-tab) | Lists projects, target frameworks, and assessment incidents. |
+| [**Dependencies**](#dependencies-tab) | Reports package and reference compatibility. |
+| [**Assessment**](#assessment-tab) | Presents codebase assessment results. |
+| [**Options**](#options-tab) | Shows the current upgrade strategy and settings. |
+| [**Activity**](#activity-tab) | Records file changes, commits, and build events. |
 
 ## Overview tab
 

@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 03/16/2026
+ms.date: 08/03/2026
 ai-usage: ai-assisted
 ---
 # APIs that always throw exceptions on .NET (Core)
@@ -246,6 +246,10 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CngKeyCreationParameters?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CngProvider?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CngUIPolicy?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CompositeMLDsa.GenerateKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportCompositeMLDsaPublicKey*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportFromPem*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
+| <xref:System.Security.Cryptography.CompositeMLDsa.ImportFromPkcs8*?displayProperty=nameWithType>\* | Windows, for algorithms not natively supported |
 | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor*> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |

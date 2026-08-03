@@ -15,13 +15,22 @@ Starting in .NET 11, <xref:System.Security.Cryptography.CompositeMLDsa> on Windo
 
 ## Previous behavior
 
-Previously, <xref:System.Security.Cryptography.CompositeMLDsa> APIs on Windows worked for any composite algorithm as long as its underlying components (ML-DSA, RSA, and ECDSA) were supported. Algorithms that combine ML-DSA with EdDSA (Ed25519 or Ed448) always threw <xref:System.PlatformNotSupportedException> on Windows, because Windows doesn't support EdDSA.
+Previously, <xref:System.Security.Cryptography.CompositeMLDsa> APIs on Windows worked for any composite algorithm as long as its underlying components (ML-DSA, RSA, and ECDSA) were supported, including all the RSA-based composite algorithms. Algorithms that combine ML-DSA with EdDSA (Ed25519 or Ed448) always threw <xref:System.PlatformNotSupportedException> on Windows, because Windows doesn't support EdDSA.
 
 ## New behavior
 
-Starting in .NET 11, <xref:System.Security.Cryptography.CompositeMLDsa> APIs on Windows only support the composite algorithms that Windows implements natively in CNG. Windows currently implements native support for a subset of the Composite ML-DSA parameter sets that pair ML-DSA with ECDSA. All other composite algorithms, including every algorithm that pairs ML-DSA with RSA, now throw <xref:System.PlatformNotSupportedException> on Windows.
+Starting in .NET 11, <xref:System.Security.Cryptography.CompositeMLDsa> APIs on Windows only support the composite algorithms that Windows implements natively in CNG. Windows currently implements native support for exactly these four parameter sets, all of which pair ML-DSA with ECDSA:
 
-For the current list of natively supported parameter sets, see the `cbParameterSet` field of the [`BCRYPT_PQDSA_KEY_BLOB`](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob#cbparameterset) structure.
+| Windows parameter set          | Composite ML-DSA algorithm       | `CompositeMLDsaAlgorithm` member |
+|---------------------------------|-----------------------------------|-----------------------------------|
+| `44-ECDSA-P256-SHA256`          | Composite ML-DSA-44 and ECDSA P256 | `MLDsa44WithECDsaP256` |
+| `65-ECDSA-P256-SHA512`          | Composite ML-DSA-65 and ECDSA P256 | `MLDsa65WithECDsaP256` |
+| `65-ECDSA-P384-SHA512`          | Composite ML-DSA-65 and ECDSA P384 | `MLDsa65WithECDsaP384` |
+| `87-ECDSA-P384-SHA512`          | Composite ML-DSA-87 and ECDSA P384 | `MLDsa87WithECDsaP384` |
+
+All other composite algorithms now throw <xref:System.PlatformNotSupportedException> on Windows. This includes every algorithm that pairs ML-DSA with RSA, which worked previously, and every algorithm that pairs ML-DSA with EdDSA (Ed25519 or Ed448), which already threw <xref:System.PlatformNotSupportedException> before this change.
+
+For more information, see the `cbParameterSet` field of the [`BCRYPT_PQDSA_KEY_BLOB`](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob#cbparameterset) structure.
 
 ## Type of breaking change
 

@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: Assembly.GetCallingAssembly behavior changes when stack trace support is disabled
+                href: core-libraries/11/assembly-getcallingassembly-stacktracesupport-disabled.md
               - name: CborReader and CborWriter enforce a default maximum nesting depth
                 href: core-libraries/11/cbor-max-depth.md
               - name: CRC32 validation added when reading ZIP archive entries

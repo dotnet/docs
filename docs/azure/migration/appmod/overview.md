@@ -27,7 +27,7 @@ When your migration requires upgrading to a newer version of .NET, the moderniza
 
 ## Scenarios
 
-The agent provides predefined migration scenarios for common Azure targets. For a full reference, see the [Predefined tasks for migration](#predefined-tasks-for-migration) section below.
+The agent provides predefined migration scenarios for common Azure targets. For a full reference, see the [Predefined tasks for migration](#predefined-tasks-for-migration) section.
 
 When a migration requires upgrading the .NET version, the modernization agent coordinates with [GitHub Copilot upgrade](../../../core/porting/github-copilot-upgrade/overview.md) to perform the version upgrade as part of the migration workflow.
 

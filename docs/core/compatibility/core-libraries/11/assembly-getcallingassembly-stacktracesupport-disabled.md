@@ -23,7 +23,7 @@ Starting in .NET 11, on Native AOT, <xref:System.Reflection.Assembly.GetCallingA
 
 The exception message is:
 
-`Unable to retrieve stack trace information when StackTraceSupport feature switch is set to false.`
+> Unable to retrieve stack trace information when StackTraceSupport feature switch is set to false.
 
 ## Type of breaking change
 

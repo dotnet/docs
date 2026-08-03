@@ -365,24 +365,26 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflec
 
 | Algorithm                              | Windows                       | Linux          | Apple | Android | Browser |
 |----------------------------------------|-------------------------------|----------------|-------|---------|---------|
-| MLDSA44-RSA2048-PSS-SHA256             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA44-RSA2048-PKCS15-SHA256          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-RSA2048-PSS-SHA256             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-RSA2048-PKCS15-SHA256          | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA44-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
 | MLDSA44-ECDSA-P256-SHA256              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA3072-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PKCS15-SHA512          | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PKCS15-SHA512          | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-ECDSA-P256-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-ECDSA-brainpoolP256r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-brainpoolP256r1-SHA512   | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
 | MLDSA87-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA87-ECDSA-brainpoolP384r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-brainpoolP384r1-SHA512   | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA87-Ed448-SHAKE256                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
-| MLDSA87-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA87-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA87-ECDSA-P521-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-RSA3072-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-RSA4096-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-P521-SHA512              | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+Starting in .NET 11, Windows support for Composite ML-DSA uses the native Windows implementation, which only supports the algorithms marked "Windows 11 Insiders (Latest)" in the preceding table. For more information, see [Composite ML-DSA on Windows uses native implementation](../../core/compatibility/cryptography/11/compositemldsa-windows-native.md).
 
 #### Native interop composite ML-DSA
 

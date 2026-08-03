@@ -82,7 +82,7 @@ You can't control this behavior with an AppContext switch or configuration setti
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange(System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Func{System.Threading.Tasks.Task})?displayProperty=fullName>
-- <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange``1(System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Func{``0,System.Threading.Tasks.Task},``0)?displayProperty=fullName>
+- `OnChange(Func<IChangeToken?> changeTokenProducer, Func<Task> changeTokenConsumer)` <!-- <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange(System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Func{System.Threading.Tasks.Task})?displayProperty=fullName> -->
+- `OnChange<TState>(Func<IChangeToken?> changeTokenProducer, Func<TState, Task> changeTokenConsumer, TState state)` <!-- <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange``1(System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Func{``0,System.Threading.Tasks.Task},``0)?displayProperty=fullName> -->
 - <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange(System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Action)?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange``1(System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Action{``0},``0)?displayProperty=fullName>

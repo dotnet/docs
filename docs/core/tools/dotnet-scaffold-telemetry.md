@@ -60,8 +60,8 @@ The telemetry feature collects the following data.
 | >=8.0        | Hashed command invoked (for example, `mvccontroller`) and whether it succeeded. |
 | >=8.0        | dotnet-scaffold-aspnet scaffolder name, step names, and whether they succeeded. |
 | >=8.0        | dotnet-scaffold-aspire scaffolder name and whether it succeeded. |
-| >=8.0        | dotnet-scaffold aspnet scaffolder validation method name and whether it succeeded. |
-| >=8.0        | dotnet-scaffold aspire scaffolder validation method name and whether it succeeded. |
+| >=8.0        | dotnet-scaffold-aspnet scaffolder validation method name and whether it succeeded. |
+| >=8.0        | dotnet-scaffold-aspire scaffolder validation method name and whether it succeeded. |
 
 ## Additional resources
 

@@ -1,6 +1,6 @@
 ---
 title: Install GitHub Copilot upgrade
-description: "Learn how to install and set up GitHub Copilot upgrade across Visual Studio, Visual Studio Code, GitHub Copilot CLI, GitHub Copilot App, and GitHub.com."
+description: "Learn how to install and set up GitHub Copilot upgrade across Visual Studio, Visual Studio Code, GitHub Copilot CLI, GitHub Copilot app, and GitHub.com."
 ms.topic: install-set-up-deploy
 ms.date: 07/07/2026
 ai-usage: ai-assisted

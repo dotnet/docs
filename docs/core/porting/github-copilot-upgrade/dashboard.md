@@ -19,7 +19,7 @@ The Upgrade Dashboard provides a visual view of a GitHub Copilot upgrade session
 - Check the upgrade strategy and settings.
 - Publish the assessment as a private GitHub gist for team review.
 
-In the GitHub Copilot App for desktop, the dashboard opens as a side panel. In the GitHub Copilot CLI, it opens in your browser. The dashboard isn't available in Visual Studio Code, Visual Studio, or other IDEs.
+In the GitHub Copilot app for desktop, the dashboard opens as a side panel. In the GitHub Copilot CLI, it opens in your browser. The dashboard isn't available in Visual Studio Code, Visual Studio, or other IDEs.
 
 ## Open the dashboard
 
@@ -170,7 +170,7 @@ Use the **Log**, **Commits**, and **By file** subtabs to review activity. Each l
 
 ## Limitations
 
-- Access the dashboard only through the GitHub Copilot App for desktop or the GitHub Copilot CLI.
+- Access the dashboard only through the GitHub Copilot app for desktop or the GitHub Copilot CLI.
 - Change supported preferences through the agent chat or controls on the **Options** tab. The dashboard doesn't provide direct access to other session settings.
 - Start an upgrade session before you expect the dashboard to show data. A repository without upgrade artifacts displays an empty state.
 - Keep the agent active for live updates on the **Activity** tab. A completed or stopped session displays only historical events.

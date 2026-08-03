@@ -81,7 +81,7 @@ To migrate your .NET applications to Azure, use the [GitHub Copilot modernizatio
 
 ## Monitor upgrades with the dashboard
 
-The Upgrade Dashboard provides a visual view of an upgrade session in GitHub Copilot CLI and GitHub Copilot App. Use its panels to track overall progress, scenarios, tasks, projects, dependencies, assessment results, upgrade options, and agent activity.
+The Upgrade Dashboard provides a visual view of an upgrade session in GitHub Copilot CLI and GitHub Copilot app. Use its panels to track overall progress, scenarios, tasks, projects, dependencies, assessment results, upgrade options, and agent activity.
 
 To open the dashboard, ask Copilot to show it during an upgrade session. The dashboard isn't currently available in Visual Studio, Visual Studio Code, or other IDEs. For details about each panel, see [Monitor upgrades with the Upgrade Dashboard](dashboard.md).
 

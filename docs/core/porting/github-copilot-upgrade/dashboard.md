@@ -19,7 +19,7 @@ The dashboard appears as a side panel in the GitHub Copilot App (desktop). When 
 
 ## Use cases
 
-The Upgrade Dashboard covers several monitoring scenarios during an upgrade session:
+The Upgrade Dashboard supports these monitoring scenarios during an upgrade session:
 
 - **Monitor progress in real time**: Track which tasks the agent has completed, which are in progress, and which have failed, without polling the agent chat.
 - **Review assessment results**: Examine severity levels, incident categories, and mandatory issues before deciding on next steps.
@@ -38,17 +38,17 @@ Example prompts:
 
 When you're using the GitHub Copilot App, the dashboard opens in the side panel. When you're using the GitHub Copilot CLI, it opens in your browser.
 
-## Dashboard panels
+## Dashboard tabs
 
 The dashboard is organized into eight tabs, accessible from the top navigation bar. A global progress bar in the header shows overall task progress at a glance, so you always know where the session stands, no matter which tab you're viewing.
 
 The tabs, in order, are: **Overview**, **Scenario**, **Tasks**, **Projects**, **Dependencies**, **Assessment**, **Options**, and **Activity**.
 
-## Panel - Overview
+## Overview tab
 
 The Overview tab is the default view when you open the dashboard. It summarizes the entire upgrade session on a single screen.
 
-At the top, a scenario card shows the active upgrade scenario. The details displayed include its name (for example, `dotnet-version-upgrade`), the current TFM and the upgrade target (for example, `net472 → net10.0`), a progress bar, and phase dots indicating which phases are complete and which are in progress.
+At the top, a scenario card shows the active upgrade scenario. The details include its name (for example, `dotnet-version-upgrade`), the current TFM and the upgrade target (for example, `net472 → net10.0`), a progress bar, and phase dots indicating which phases are complete and which are in progress.
 
 Below the scenario card, an "At a glance" section displays six stat tiles:
 
@@ -61,7 +61,7 @@ Below the scenario card, an "At a glance" section displays six stat tiles:
 
 :::image type="content" source="media/dashboard/overview.png" alt-text="Screenshot of the Upgrade Dashboard Overview tab." lightbox="media/dashboard/overview.png":::
 
-## Panel - Scenario
+## Scenario tab
 
 The Scenario tab shows the active upgrade scenario and all available scenarios for the repository.
 
@@ -71,13 +71,13 @@ Below the card, a phase pipeline displays each phase of the upgrade as a labeled
 
 :::image type="content" source="media/dashboard/scenario.png" alt-text="Screenshot of the Upgrade Dashboard Scenario tab." lightbox="media/dashboard/scenario.png":::
 
-## Panel - Tasks
+## Tasks tab
 
 The Tasks tab shows every task the agent is executing as part of the current scenario, along with a natural-language overview of the upgrade plan.
 
 Four summary tiles at the top show counts for TOTAL, COMPLETE, IN PROGRESS, and FAILED tasks. A progress bar below the tiles shows the overall percentage complete (for example, "20% 1/5"), and a scenario label identifies which scenario the tasks belong to.
 
-An Overview section appears below the progress bar. This section is a narrative paragraph that describes the upgrade strategy. For example, which projects are being upgraded first and the overall sequencing approach.
+An Overview section appears below the progress bar. The section contains a narrative paragraph that describes the upgrade strategy. For example, which projects are being upgraded first and the overall sequencing approach.
 
 The task list below is numbered and hierarchical. Each task shows its current state with an icon:
 
@@ -87,7 +87,7 @@ The task list below is numbered and hierarchical. Each task shows its current st
 
 :::image type="content" source="media/dashboard/tasks.png" alt-text="Screenshot of the Upgrade Dashboard Tasks tab." lightbox="media/dashboard/tasks.png":::
 
-## Panel - Projects
+## Projects tab
 
 The Projects tab lists every `.csproj` and `.fsproj` file discovered in the repository, along with per-project assessment data.
 
@@ -104,7 +104,7 @@ In graph view, the projects are displayed as circles with connected lines demons
 
 :::image type="content" source="media/dashboard/projects.png" alt-text="Screenshot of the Upgrade Dashboard Projects tab." lightbox="media/dashboard/projects.png":::
 
-## Panel - Dependencies
+## Dependencies tab
 
 The Dependencies tab analyzes the NuGet package and assembly reference health of your solution against the target framework.
 
@@ -118,11 +118,11 @@ A **Dependency Analysis Target** card at the top shows the target TFM (for examp
 
 A compatibility breakdown bar shows the overall health of packages at a glance: **Valid** (green), **Partial** (amber), **Incompatible** (red), and **Unknown** (gray), each with a count. The path of the `dependencies-health.json` file the dashboard is reading appears beneath the bar.
 
-The packages table lists every package with five columns: **PACKAGE**, **PROJECTS**, **VERSIONS**, **RECOMMENDED**, and **COMPAT**. Compatibility appears as either "OK" (green) or "Incompat" (red). Incompatible packages show an **Explain** button, that when selected ask the agent to explain the incompatibility directly in the chat.
+The packages table lists every package with five columns: **PACKAGE**, **PROJECTS**, **VERSIONS**, **RECOMMENDED**, and **COMPAT**. Compatibility appears as either "OK" (green) or "Incompat" (red). Incompatible packages show an **Explain** button that, when selected, asks the agent to explain the incompatibility directly in the chat.
 
 :::image type="content" source="media/dashboard/dependencies.png" alt-text="Screenshot of the Upgrade Dashboard Dependencies tab." lightbox="media/dashboard/dependencies.png":::
 
-## Panel - Assessment
+## Assessment tab
 
 The Assessment tab provides the full codebase assessment against the target framework, including severity breakdowns, category charts, and a narrative assessment document.
 
@@ -135,11 +135,11 @@ Two bar charts visualize the incident distribution:
 
 The tab has three sub-tabs: **Summary**, **Issues**, and **Features**. The Summary sub-tab contains a narrative assessment document with a table of contents covering sections such as Executive Summary, Projects Compatibility, Package Compatibility, and API Compatibility. The Issues and Features sub-tabs provide per-issue and per-feature breakdowns.
 
-Two icons appear in the top-right corner of the Assessment tab. The **info** icon displays assessment metadata such as the assessment date and version. The **share** icon publishes the current assessment as a private GitHub gist, making it easy to share with your team.
+Two icons appear in the top-right corner of the Assessment tab. The **info** icon displays assessment metadata such as the assessment date and version. The **share** icon publishes the current assessment as a private GitHub gist that you can share with your team.
 
 :::image type="content" source="media/dashboard/assessment.png" alt-text="Screenshot of the Upgrade Dashboard Assessment tab." lightbox="media/dashboard/assessment.png":::
 
-## Panel - Options
+## Options tab
 
 The Options tab shows the configuration the agent is using for the current upgrade session. This tab is read-only. It reflects choices made when you started the session, though you can change some preferences through the agent chat or the toggle provided on this tab.
 
@@ -158,9 +158,9 @@ The tab is organized into three sections:
 
 :::image type="content" source="media/dashboard/options.png" alt-text="Screenshot of the Upgrade Dashboard Options tab." lightbox="media/dashboard/options.png":::
 
-## Panel - Activity
+## Activity tab
 
-The Activity tab provides a live, timestamped log of every action the agent has taken. The path to the `activity.jsonl` file being tailed is displayed at the top of the panel.
+The Activity tab provides a live, timestamped log of every action the agent has taken. The path to the `activity.jsonl` file being tailed appears at the top of the panel.
 
 The tab has three sub-tabs: **Log**, **Commits**, and **By File**. The Log sub-tab is a chronological event list that updates in real time as the agent runs, with new entries appearing at the top as the log grows. Each entry shows:
 

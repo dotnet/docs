@@ -19,7 +19,7 @@ Previously, on Native AOT, <xref:System.Reflection.Assembly.GetCallingAssembly?d
 
 ## New behavior
 
-Starting in .NET 11, on Native AOT, <xref:System.Reflection.Assembly.GetCallingAssembly?displayProperty=nameWithType> returns the calling assembly by inspecting stack trace data. Starting in .NET 11, on both Native AOT and CoreCLR, the method throws <xref:System.NotSupportedException> if <xref:System.Diagnostics.StackTrace.IsSupported?displayProperty=nameWithType> is `false`, for example when the `StackTraceSupport` feature switch is set to `false`.
+Starting in .NET 11, on Native AOT, <xref:System.Reflection.Assembly.GetCallingAssembly?displayProperty=nameWithType> returns the calling assembly by inspecting stack trace data. Starting in .NET 11, on both Native AOT and CoreCLR, the method throws <xref:System.NotSupportedException> if `StackTrace.IsSupported` is `false`, for example when the `StackTraceSupport` feature switch is set to `false`.
 
 The exception message is:
 

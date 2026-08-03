@@ -3,7 +3,7 @@ title: Monitor upgrades with the Upgrade Dashboard
 description: "Learn how to use the Upgrade Dashboard to monitor progress, review assessment results, inspect dependencies, and check upgrade settings."
 author: adegeo
 ms.author: adegeo
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/03/2026
 ai-usage: ai-assisted
 
@@ -25,7 +25,7 @@ In the GitHub Copilot App for desktop, the dashboard opens as a side panel. In t
 
 ## Open the dashboard
 
-The dashboard doesn't open automatically. Ask Copilot to show the dashboard in your initial prompt or during an active upgrade session.
+When you start an upgrade session, Copilot opens the dashboard automatically. If the dashboard doesn't open, ask Copilot to show it in your initial prompt or during an active upgrade session.
 
 Example prompts:
 

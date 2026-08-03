@@ -79,6 +79,12 @@ The agent supports the following upgrade paths:
 
 To migrate your .NET applications to Azure, use the [GitHub Copilot modernization agent](../../../azure/migration/appmod/overview.md). The modernization agent handles Azure-specific scenarios such as database migration, storage, identity, messaging, and deployment.
 
+## Monitor upgrades with the dashboard
+
+The Upgrade Dashboard provides a visual view of an upgrade session in GitHub Copilot CLI and GitHub Copilot App. Use its panels to track overall progress, scenarios, tasks, projects, dependencies, assessment results, upgrade options, and agent activity.
+
+To open the dashboard, ask Copilot to show it during an upgrade session. The dashboard isn't currently available in Visual Studio, Visual Studio Code, or other IDEs. For details about each panel, see [Monitor upgrades with the Upgrade Dashboard](dashboard.md).
+
 ## How it works
 
 To start an upgrade or migration process, see:
@@ -157,6 +163,7 @@ The tool collects data about project types, intent to upgrade, and upgrade durat
 
 - [Install GitHub Copilot upgrade](install.md)
 - [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [Monitor upgrades with the Upgrade Dashboard](dashboard.md)
 - [Core concepts](concepts.md)
 - [Scenarios and skills reference](scenarios-and-skills.md)
 - [Best practices](best-practices.md)

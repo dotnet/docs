@@ -56,13 +56,13 @@ The telemetry feature collects the following data.
 | >=8.0        | Hashed Media Access Control (MAC) address: a cryptographically (SHA256) hashed and unique ID for a machine. |
 | >=8.0        | Kernel version. |
 | >=8.0        | dotnet-scaffold version. |
-| >=8.0        | Hashed tool information (tool name, tool version, tool package name, tool package version, chosen scaffolder category, related scaffolding categories) |
-| >=8.0        | Tool level (global or local tool) |
+| >=8.0        | Hashed tool information (tool name, tool version, tool package name, tool package version, chosen scaffolder category, related scaffolding categories). |
+| >=8.0        | Tool level (global or local tool). |
 | >=8.0        | Hashed command invoked (for example, `mvccontroller`) and whether it succeeded. |
 | >=8.0        | dotnet-scaffold-aspnet scaffolder name, step names, and whether they succeeded. |
 | >=8.0        | dotnet-scaffold-aspire scaffolder name and whether it succeeded. |
-| >=8.0        | dotnet-scaffold aspnet scaffolder validation method name and whether they succeed. |
-| >=8.0        | dotnet-scaffold aspire scaffolder validation method name and whether they succeed. |
+| >=8.0        | dotnet-scaffold aspnet scaffolder validation method name and whether it succeed. |
+| >=8.0        | dotnet-scaffold aspire scaffolder validation method name and whether it succeed. |
 
 ## Additional resources
 

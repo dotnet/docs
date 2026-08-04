@@ -92,9 +92,9 @@ int main(int argc, char *argv[])
     // STEP 3: Load managed assembly and get function pointer to a managed method
     //
     const string_t dotnetlib_path = root_path + STR("DotNetLib.dll");
+    // <SnippetLoadAndGet>
     const char_t *dotnet_type = STR("DotNetLib.Lib, DotNetLib");
     const char_t *dotnet_type_method = STR("Hello");
-    // <SnippetLoadAndGet>
     // Function pointer to managed delegate
     component_entry_point_fn hello = nullptr;
     int rc = load_assembly_and_get_function_pointer(

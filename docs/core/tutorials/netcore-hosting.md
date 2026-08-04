@@ -69,7 +69,7 @@ The `hostfxr_initialize_for_runtime_config` and `hostfxr_get_runtime_delegate` f
 
 ### Step 3 - Load managed assembly and get function pointer to a managed method
 
-The runtime delegate is called to load the managed assembly and get a function pointer to a managed method. The delegate requires the assembly path, assembly-qualified type name, and method name as inputs and returns a function pointer that can be used to invoke the managed method. Specify the type name in the format `Namespace.TypeName, AssemblyName`. For example, use `MyLibrary.EntryPoint, MyLibrary` for the `EntryPoint` type in the `MyLibrary` assembly.
+The runtime delegate is called to load the managed assembly and get a function pointer to a managed method. The delegate requires the assembly path, assembly-qualified type name, and method name as inputs and returns a function pointer that can be used to invoke the managed method.
 
 [!code-cpp[HostFxrHost#LoadAndGet](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/NativeHost/nativehost.cpp#LoadAndGet)]
 
@@ -79,7 +79,7 @@ By passing `nullptr` as the delegate type name when calling the runtime delegate
 public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 ```
 
-A different signature can be used by specifying an assembly-qualified delegate type name when calling the runtime delegate. Use the same `Namespace.TypeName, AssemblyName` format for the delegate type name.
+A different signature can be used by specifying an assembly-qualified delegate type name when calling the runtime delegate.
 
 ### Step 4 - Run managed code!
 

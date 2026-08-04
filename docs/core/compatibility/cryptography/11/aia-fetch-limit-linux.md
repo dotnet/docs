@@ -15,7 +15,7 @@ On Linux and other OpenSSL-based platforms, certificate chain building via Autho
 
 ## Previous behavior
 
-Previously, on OpenSSL-based platforms, <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)> performed AIA fetches to download intermediate certificates as many times as needed to complete the chain. For example, a chain that required three intermediate certificates downloaded through AIA could succeed:
+Previously, on OpenSSL-based platforms, <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType> performed AIA fetches to download intermediate certificates as many times as needed to complete the chain. For example, a chain that required three intermediate certificates downloaded through AIA could succeed:
 
 ```csharp
 using var cert = X509Certificate2.CreateFromPem(leafCertificateWithThreeAiaHops);
@@ -29,7 +29,7 @@ Console.WriteLine(result); // Could print True with 3+ AIA fetches
 
 ## New behavior
 
-Starting in .NET 11, on OpenSSL-based platforms, <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)> performs at most two AIA fetches per chain build, which matches Windows behavior. If the chain requires more than two intermediates to be downloaded through AIA, the chain build doesn't succeed through AIA downloads alone:
+Starting in .NET 11, on OpenSSL-based platforms, <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType> performs at most two AIA fetches per chain build, which matches Windows behavior. If the chain requires more than two intermediates to be downloaded through AIA, the chain build doesn't succeed through AIA downloads alone:
 
 ```csharp
 using var cert = X509Certificate2.CreateFromPem(leafCertificateWithThreeAiaHops);
@@ -38,7 +38,7 @@ using var chain = new X509Chain();
 // On Linux with .NET 11+, if three or more AIA fetches are required,
 // the build fails.
 bool result = chain.Build(cert);
-Console.WriteLine(result); // May print False if more than 2 AIA fetches would be needed
+Console.WriteLine(result); // Prints False if more than two AIA fetches are needed.
 ```
 
 ## Type of breaking change
@@ -72,4 +72,4 @@ Alternatively, install the intermediate certificates in the user or system inter
 
 ## Affected APIs
 
-* <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=fullName>

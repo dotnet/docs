@@ -16,7 +16,7 @@ The `dotnet-scaffold` command includes a telemetry feature that collects usage d
 dotnet tool install --global Microsoft.dotnet-scaffold
 ```
 
-For more information about the tool, see the [dotnet/Scaffolding repository](https://github.com/dotnet/Scaffolding) and the [Getting Started guide](https://github.com/dotnet/Scaffolding/blob/main/docs/Getting-Started.md).
+For more information about the `dotnet-scaffold` tool, see the [dotnet/Scaffolding repository](https://github.com/dotnet/Scaffolding) and the [Getting Started guide](https://github.com/dotnet/Scaffolding/blob/main/docs/Getting-Started.md).
 
 ## How to opt out
 

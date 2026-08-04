@@ -10,6 +10,14 @@ ai-usage: ai-assisted
 
 The `dotnet-scaffold` command includes a telemetry feature that collects usage data. This feature helps the `dotnet-scaffold` team understand how the tool is used so they can improve it.
 
+The `dotnet-scaffold` tool is a .NET global tool that generates code to speed up development. It isn't included with the .NET SDK, so install it separately with the following command:
+
+```dotnetcli
+dotnet tool install --global Microsoft.dotnet-scaffold
+```
+
+For more information about the tool, see the [dotnet/Scaffolding repository](https://github.com/dotnet/Scaffolding) and the [Getting Started guide](https://github.com/dotnet/Scaffolding/blob/main/docs/Getting-Started.md).
+
 ## How to opt out
 
 The `dotnet-scaffold` telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_SCAFFOLD_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
@@ -65,3 +73,6 @@ Protecting your privacy is important to us. If you suspect the telemetry feature
 
 * [.NET SDK telemetry](telemetry.md)
 * [.NET CLI telemetry data](https://dotnet.microsoft.com/platform/telemetry)
+* [dotnet/Scaffolding repository](https://github.com/dotnet/Scaffolding)
+* [Get started with dotnet-scaffold](https://github.com/dotnet/Scaffolding/blob/main/docs/Getting-Started.md)
+* [Microsoft.dotnet-scaffold NuGet package](https://www.nuget.org/packages/Microsoft.dotnet-scaffold/)

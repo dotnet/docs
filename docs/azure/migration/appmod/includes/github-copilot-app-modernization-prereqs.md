@@ -1,9 +1,7 @@
 ---
-author: adegeo
-ms.author: adegeo
-ms.date: 03/04/2026
+ms.date: 07/30/2026
 ms.topic: include
-# Shared by Azure.NET app mod and .NET app mod
+# Shared by Azure .NET app modernization articles
 ---
 
 - Windows Operating System.
@@ -23,4 +21,4 @@ ms.topic: include
 - Code must be written in C#.
 
 > [!NOTE]
-> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot modernization](../core/porting/github-copilot-app-modernization/install.md).
+> These prerequisites apply to Visual Studio. For other development environments, see [Install GitHub Copilot modernization](../install.md).

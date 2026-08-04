@@ -1,17 +1,17 @@
 ---
-title: GitHub Copilot modernization core concepts
-description: "Learn the key concepts behind GitHub Copilot modernization, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
+title: GitHub Copilot upgrade core concepts
+description: "Learn the key concepts behind GitHub Copilot upgrade, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
 ms.topic: concept-article
 ms.date: 07/07/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to understand the core concepts of GitHub Copilot modernization so that I can use the agent effectively and get the best results from my upgrades.
+#customer intent: As a developer, I want to understand the core concepts of GitHub Copilot upgrade so that I can use the agent effectively and get the best results from my upgrades.
 
 ---
 
-# GitHub Copilot modernization concepts
+# GitHub Copilot upgrade concepts
 
-GitHub Copilot modernization uses a structured approach to upgrade .NET projects. Understanding how the agent works, including its scenarios, skills, tasks, and workflow, helps you collaborate with the agent effectively and get the best results.
+GitHub Copilot upgrade uses a structured approach to upgrade .NET projects. Understanding how the agent works, including its scenarios, skills, tasks, and workflow, helps you collaborate with the agent effectively and get the best results.
 
 > [!TIP]
 > Think of the agent as a skilled colleague who understands .NET deeply, follows a structured plan, and adapts to your feedback. The more context you give, the better the agent performs.
@@ -28,7 +28,7 @@ The agent excels at collaboration, not automation in a vacuum:
 
 ## Scenarios
 
-A _scenario_ is a managed, end-to-end modernization workflow. When you tell the agent "upgrade my solution to .NET 10," you're triggering the `.NET version upgrade` scenario.
+A _scenario_ is a managed, end-to-end upgrade workflow. When you tell the agent "upgrade my solution to .NET 10," you're triggering the `.NET version upgrade` scenario.
 
 ### How scenarios are discovered
 
@@ -207,8 +207,8 @@ Best for first-time users, complex solutions, and when you want to learn the pro
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
+- [What is GitHub Copilot upgrade?](overview.md)
 - [Scenarios and skills reference](scenarios-and-skills.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
 - [Best practices](best-practices.md)
-- [Troubleshoot GitHub Copilot modernization](troubleshooting.md)
+- [Troubleshoot GitHub Copilot upgrade](troubleshooting.md)

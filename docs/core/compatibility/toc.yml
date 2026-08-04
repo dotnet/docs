@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: CborReader and CborWriter enforce a default maximum nesting depth
+                href: core-libraries/11/cbor-max-depth.md
               - name: CRC32 validation added when reading ZIP archive entries
                 href: core-libraries/11/ziparchive-entry-crc32-validation.md
               - name: DateOnly and TimeOnly TryParse methods throw for invalid input
@@ -18,8 +20,6 @@ items:
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
-              - name: MemoryStream maximum capacity updated and exception behavior changed
-                href: core-libraries/11/memorystream-max-capacity.md
               - name: NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions
                 href: core-libraries/11/namedpipeserverstream-unix-permissions.md
               - name: Nullable.GetUnderlyingType throws for custom Type subclasses
@@ -36,10 +36,18 @@ items:
                 href: core-libraries/11/ziparchive-createasync-eager-load.md
           - name: Cryptography
             items:
+              - name: API obsoletions
+                href: cryptography/11/obsolete-apis.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+          - name: Deployment
+            items:
+              - name: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json
+                href: deployment/11/runtimeconfigdev-configproperties-precedence.md
           - name: Extensions
             items:
+              - name: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks
+                href: extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
               - name: Some Microsoft.Extensions packages included in shared framework
@@ -66,8 +74,16 @@ items:
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild
             items:
+              - name: dnx scripts bypass global.json SDK selection
+                href: sdk/11/dnx-scripts-bypass-global-json.md
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
+              - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
+                href: sdk/11/nu1703-deprecated-monoandroid-framework.md
+              - name: NuGet pack warns for package IDs with restricted characters
+                href: sdk/11/nuget-pack-nu5052-packageid.md
+              - name: Template engine packages no longer support netstandard2.0
+                href: sdk/11/template-engine-netstandard.md
               - name: VSTest removes dependency on Newtonsoft.Json
                 href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10
@@ -222,6 +238,8 @@ items:
                 href: sdk/10.0/deps-json-trimmed-packages.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet audit sources no longer allow insecure HTTP by default
+                href: sdk/10.0/nuget-audit-source-http-disallowed.md
               - name: NuGet logs an error for invalid package IDs
                 href: sdk/10.0/nuget-packageid-validation.md
               - name: PackageReference without a version raises error

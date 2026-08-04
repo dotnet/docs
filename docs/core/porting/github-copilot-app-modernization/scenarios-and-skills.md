@@ -2,7 +2,7 @@
 title: GitHub Copilot modernization scenarios and skills
 description: "Complete reference of all scenarios and built-in upgrade skills available in GitHub Copilot modernization for .NET, organized by domain."
 ms.topic: reference
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to see all the scenarios and skills that GitHub Copilot modernization supports so that I can understand which upgrade tasks the agent can handle for me.
@@ -33,6 +33,9 @@ Scenarios are the agent's top-level upgrade workflows. When you start a conversa
 | [**SqlClient upgrade**](#sqlclient-upgrade) | Upgrades System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient to the modern package"_ |
 | [**Azure Functions upgrade**](#azure-functions-upgrade) | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
 | [**Semantic Kernel to Agents**](#semantic-kernel-to-microsoft-agent-framework) | Upgrades from SK Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
+| [**Aspire integration**](#aspire-integration) | Adds [Aspire](https://aspire.dev) support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
+| [**Aspire version upgrade**](#aspire-version-upgrade) | Upgrades existing Aspire applications to newer versions. | _"Upgrade my Aspire version"_ |
+| [**WebForms-to-Blazor upgrade**](#webforms-to-blazor-upgrade) | Upgrades ASP.NET Web Forms applications to Blazor. | _"Migrate my Web Forms app to Blazor"_ |
 
 For an end-to-end walkthrough, see [Core concepts](concepts.md).
 
@@ -40,11 +43,7 @@ For an end-to-end walkthrough, see [Core concepts](concepts.md).
 
 The most common scenario. Upgrades your projects from any older .NET variant to the latest:
 
-| Source                       | Target          |
-|------------------------------|-----------------|
-| .NET Framework (any version) | .NET 8 or later |
-| .NET Core 1.x–3.x            | .NET 8 or later |
-| .NET 5 or later              | .NET 8 or later |
+[!INCLUDE[supported-upgrade-paths](./includes/supported-upgrade-paths.md)]
 
 The agent analyzes your dependency graph, checks NuGet compatibility, identifies breaking changes, and creates a task plan using the best strategy for your solution (bottom-up, top-down, or all-at-once). If your projects need format conversions, the agent handles them automatically as part of the upgrade.
 
@@ -67,6 +66,18 @@ Upgrades Azure Functions from the in-process hosting model to the isolated worke
 ### Semantic Kernel to Microsoft Agent Framework
 
 Upgrades from Semantic Kernel Agents (`ChatCompletionAgent`, `OpenAIAssistantAgent`) to [Microsoft Agent Framework](/agent-framework/overview/). Updates packages and API patterns.  
+
+### Aspire integration
+
+Adds [Aspire](https://aspire.dev) support to existing applications for inner-loop development and Azure deployment. Configures the Aspire orchestration layer and integrates with the Aspire CLI agent.
+
+### Aspire version upgrade
+
+Upgrades existing Aspire applications to newer versions of Aspire. Handles package updates, configuration changes, and breaking API changes between Aspire versions.
+
+### WebForms-to-Blazor upgrade
+
+Upgrades ASP.NET Web Forms applications to Blazor using native Blazor and HTML5 patterns. Converts Web Forms pages, controls, and code-behind to Blazor components.
 
 ## Upgrade skills: common
 
@@ -94,6 +105,7 @@ Skills for upgrading data access layers, including Entity Framework, LINQ to SQL
 | **Upgrading EDMX to Code-First** | Converts EF6 Database-First (`.edmx`) models to EF Core Code-First. Scaffolds entities from the database. |
 | **Upgrading EF DbContext** | Registers `DbContext` in ASP.NET Core dependency injection. Handles both EF6 to EF Core and existing EF Core patterns. |
 | **Upgrading EF6 Code-First to EF Core** | Upgrades EF6 Code-First to EF Core. Swaps packages, updates namespaces, and replaces `EntityTypeConfiguration` and `DbModelBuilder`. |
+| **Upgrading LINQ to SQL to EF Core** | Migrates LINQ to SQL (`System.Data.Linq`) data access to Entity Framework Core. |
 | **Upgrading to Microsoft.Data.SqlClient** | Upgrades from `System.Data.SqlClient`. Handles the `Encrypt=true` default change and connection string differences. |
 
 ## Upgrade skills: web and ASP.NET
@@ -147,6 +159,7 @@ Skills for upgrading ASP.NET Framework applications to ASP.NET Core.
 | **Upgrading Azure Functions Startup** | Upgrades Azure Functions from the in-process `Startup` class to isolated worker model with `Program.cs`. |
 | **Upgrading Azure Functions to v2** | Upgrades Azure Functions to the v2 hosting pattern using `IHostApplicationBuilder`. |
 | **Upgrading Azure Key Vault** | Upgrades legacy Azure Key Vault SDK to the modern `Azure.Security.KeyVault` libraries. |
+| **Upgrading Azure SDK** | Upgrades legacy Azure SDK dependencies to the latest `Azure.*` libraries. |
 | **Upgrading Azure Service Bus** | Upgrades legacy Azure Service Bus SDK to the modern `Azure.Messaging.ServiceBus` library. |
 | **Upgrading Azure Storage** | Upgrades legacy Azure Storage SDK to the modern `Azure.Storage` libraries. |
 

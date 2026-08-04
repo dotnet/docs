@@ -48,6 +48,7 @@ f1_keywords:
   - "CS9337"
   - "CS9344"
   - "CS9345"
+  - "CS9372"
 helpviewer_keywords:
   - "CS8116"
   - "CS8117"
@@ -90,11 +91,13 @@ helpviewer_keywords:
   - "CS9013"
   - "CS9060"
   - "CS9134"
+  - "CS9135"
   - "CS9336"
   - "CS9337"
   - "CS9344"
   - "CS9345"
-ms.date: 03/16/2026
+  - "CS9372"
+ms.date: 06/26/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in pattern matching expressions
@@ -147,6 +150,7 @@ This article covers the following compiler errors and warnings:
 - [**CS9337**](#pattern-completeness-and-redundancy): *The pattern is too complex to analyze for redundancy.*
 - [**CS9344**](#switch-expression-syntax-errors): *The '==' operator is not supported in a pattern.*
 - [**CS9345**](#switch-expression-syntax-errors): *The '!=' operator is not supported in a pattern. Use 'not' to represent a negated pattern.*
+- [**CS9372**](#type-pattern-errors): *An expression of type cannot be handled by this pattern, see additional errors at this location.*
 
 ## Switch expression syntax errors
 
@@ -194,7 +198,7 @@ For more information about the correct syntax, see [Switch expression](../operat
 - **CS9336**: *The pattern is redundant.*
 - **CS9337**: *The pattern is too complex to analyze for redundancy.*
 
-Reorder or remove unreachable case labels in `switch` statements (**CS8120**). A `case` label is unreachable when a previous case already handles all values that the later case would match. This occurs when a more general pattern appears before a more specific one, or when the pattern is impossible to match for the input type.
+Reorder or remove unreachable case labels in `switch` statements (**CS8120**). A `case` label is unreachable when a previous case already handles all values that the later case would match. This situation occurs when a more general pattern appears before a more specific one, or when the pattern is impossible to match for the input type.
 
 Add switch arms that handle all possible input values to create exhaustive switch expressions (**CS8509**, **CS8524**, **CS8846**). Switch expressions must cover every possible value of the input type. Otherwise, the compiler can't guarantee that the expression produces a result for all inputs. The compiler warns separately for unnamed enum values (**CS8524**) and for cases where a `when` clause might match an otherwise-unhandled value (**CS8846**). Use the discard pattern (`_`) as a final catch-all arm to match any remaining values that you don't need to handle explicitly.
 
@@ -219,6 +223,7 @@ For more information about exhaustiveness requirements and pattern optimization,
 - **CS8782**: *Relational patterns may not be used for a floating-point NaN.*
 - **CS8978**: *'...' cannot be made nullable.*
 - **CS9060**: *Cannot use a numeric constant or relational pattern on '...' because it inherits from or extends 'INumberBase&lt;T&gt;'. Consider using a type pattern to narrow to a specific numeric type.*
+- **CS9372**: *An expression of type cannot be handled by this pattern, see additional errors at this location.*
 
 Use the underlying type instead of the nullable type in patterns (**CS8116**). You can't use a nullable value type like `int?` directly in a type pattern. Instead, use the underlying type (`int`), and the pattern matches both nullable and non-nullable values.
 
@@ -239,6 +244,8 @@ Use a supported type with relational patterns (**CS8781**, **CS8782**). Relation
 Use the underlying type directly in patterns when working with types that can't be made nullable (**CS8978**). Types like `System.Nullable<T>`, pointer types, and ref struct types can't be made nullable. You must use the base type in your pattern matching logic.
 
 Use type patterns to narrow generic numeric types to specific numeric types before applying numeric constants or relational patterns (**CS9060**). You can't match generic numeric types that implement `INumberBase<T>` directly by using numeric constants or relational patterns. The compiler can't determine which specific numeric type is being matched. You must first narrow the value to a concrete numeric type like `int`, `double`, or `decimal`.
+
+Use the correct pattern form when matching against a [union](../builtin-types/union.md) value (**CS9372**). Patterns on a union type apply to the union's `Value` property, not the union value itself. If the compiler reports that a pattern can't handle the expression, check that you're matching against the case types listed in the union declaration. Review the additional errors at the same location for details about which specific pattern is invalid.
 
 For more information about type patterns, see [Nullable value types](../builtin-types/nullable-value-types.md), [Patterns](../operators/patterns.md), and [Generic math](../../../standard/generics/math.md).
 

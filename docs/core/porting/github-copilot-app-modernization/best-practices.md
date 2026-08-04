@@ -2,7 +2,7 @@
 title: Best practices for GitHub Copilot modernization
 description: "Learn best practices for using GitHub Copilot modernization to upgrade .NET projects, including preparation, collaboration tips, common pitfalls, and recovery strategies."
 ms.topic: best-practice
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to follow best practices when using GitHub Copilot modernization so that I can get the best results from my .NET upgrades and avoid common problems.

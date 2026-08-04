@@ -1,7 +1,7 @@
 ---
 title: "Union types"
 description: Learn about union types in C#. Unions express values from a closed set of types with exhaustive pattern matching support.
-ms.date: 03/20/2026
+ms.date: 06/05/2026
 f1_keywords:
   - "union_CSharpKeyword"
 helpviewer_keywords:
@@ -32,9 +32,6 @@ A union differs from other type declarations in important ways:
 - Unlike an `interface`, a union is closed—you define the complete list of case types in the declaration, and the compiler uses that list for exhaustiveness checks.
 - Unlike a `record`, a union doesn't add equality, cloning, or deconstruction behavior. A union focuses on "which case is it?" rather than "what fields does it have?"
 
-> [!IMPORTANT]
-> In .NET 11 Preview 2, the runtime doesn't include the `UnionAttribute` and `IUnion` interface. To use union types, you must declare them yourself. To see the required declarations, see [Union implementation](#union-implementation).
-
 ## Union declarations
 
 A union declaration specifies a name and a list of case types:
@@ -51,40 +48,43 @@ public union Pet(Cat, Dog, Bird);
 
 When a case type is a value type (like `int`), the value is boxed when stored in the union's `Value` property. Unions store their contents as a single `object?` reference.
 
-A union declaration can include a body with additional members, just like a struct, subject to some restrictions. Union declarations can't include instance fields, auto-properties, or field-like events. You also can't declare public constructors with a single parameter, because the compiler generates those constructors as union creation members:
+A union declaration can include a body with additional members, just like a struct, subject to some restrictions. Union declarations can't include instance fields, auto-properties, or field-like events. You also can't declare public constructors with a single parameter, because the compiler generates those constructors as union creation members. The following `Length` union adds a `TotalMeters` property that uses pattern matching to handle every case type, along with an `Add` method that combines two lengths:
 
 :::code language="csharp" source="snippets/unions/BodyMembers.cs" id="BodyMembers":::
 
 ## Union conversions
 
-An implicit *union conversion* exists from each case type to the union type. You don't need to call a constructor explicitly:
+An implicit *union conversion* exists from each case type to the union type:
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="BasicConversion":::
 
-Union conversions work by calling the corresponding generated constructor. If a user-defined implicit conversion operator exists for the same type, the user-defined operator takes priority over the union conversion. For details on conversion priority, see the [language specification](~/_csharplang/proposals/unions.md).
+Union conversions work by calling the corresponding generated constructor. If a user-defined implicit conversion operator exists for the same type, the user-defined operator takes priority over the union conversion. If more than one case type is equally applicable to the source value, the union conversion is ambiguous, and the compiler reports an error. For details on conversion priority, see the [feature specification](~/_csharplang/proposals/unions.md).
 
 A union conversion to a nullable union struct (`T?`) also works when `T` is a union type:
 
 :::code language="csharp" source="snippets/unions/NullHandling.cs" id="NullableUnionExample":::
 
-## Union matching
+## Union pattern matching
 
-When you pattern match on a union type, patterns apply to the union's `Value` property, not the union value itself. This "unwrapping" behavior means the union is transparent to pattern matching:
+When you pattern match on a union type, patterns generally apply to the union's `Value` property, not the union value itself. This "unwrapping" behavior means the union is transparent to pattern matching:
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="PatternMatching":::
 
-Two patterns are exceptions to this rule: the `var` pattern and the discard `_` pattern apply to the union value itself, not its `Value` property. Use `var` to capture the union value when `GetPet()` returns a `Pet?` (`Nullable<Pet>`):
+Three patterns are exceptions to this rule: the discard `_` pattern, the `var` pattern, and the `not` pattern apply to the union value itself, not its `Value` property. Use `var` to capture the union value when `GetPet()` returns a `Pet?` (`Nullable<Pet>`):
 
 ```csharp
 if (GetPet() is var pet) { /* pet is the Pet? value returned from GetPet */ }
 ```
 
-In logical patterns, each branch follows the unwrapping rule individually. The following pattern tests that the `Pet?` isn't null *and* its `Value` isn't null:
+In logical patterns, each branch follows the unwrapping rule individually. The left branch of an `and` pattern can change the incoming value that the right branch sees. Because the `not` pattern applies to the incoming union value rather than its `Value`, a leading `not null` doesn't unwrap the value for the branch that follows it:
 
 ```csharp
 GetPet() switch
 {
-    var pet and not null => ..., // 'var pet' captures the Pet?; 'not null' checks Value
+    // 'var pet' captures the Pet?; 'not null' applies to the Pet? value (not pet.Value)
+    var pet and not null => ...,
+    // 'not null' doesn't unwrap to Pet, so 'var value' still captures the Pet?
+    not null and var value => ...,
 }
 ```
 
@@ -111,7 +111,7 @@ For nullable union struct types (`Pet?`), `null` succeeds when the nullable wrap
 
 ## Union exhaustiveness
 
-A `switch` expression is exhaustive when it handles all case types of a union. The compiler warns only if a case type isn't handled. You don't need to include a discard pattern (`_`) or `var` pattern to match any type:
+A `switch` expression is exhaustive when it handles all case types of a union. The compiler warns only if a case type isn't handled. You don't need to include a discard pattern (`_`) or `var` pattern to match any type when the expression is definitely assigned:
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="PatternMatching":::
 
@@ -119,18 +119,21 @@ If the null state of the union's `Value` property is "maybe null," you must also
 
 :::code language="csharp" source="snippets/unions/NullHandling.cs" id="NullHandling":::
 
+This situation can arise when the `union` expression is the default value or isn't definitely assigned, as shown in the preceding sample.
+
 ## Nullability
 
 The compiler tracks the null state of a union's `Value` property through the following rules:
 
+- The default null state of a union's `Value` property is "maybe null" if the default null state of any case type is "maybe null." Otherwise, the default null state is "not null."
 - When you create a union value from a case type (through a constructor or union conversion), `Value` gets the null state of the incoming value.
 - When the non-boxing access pattern's `HasValue` or `TryGetValue(...)` members query the union's contents, the null state of `Value` becomes "not null" on the `true` branch.
 
 ## Custom union types
 
-The compiler converts a `union` declaration to a `struct` declaration. The struct is marked with the `[System.Runtime.CompilerServices.Union]` attribute, implements the `IUnion` interface. It includes a public constructor and an implicit conversion for each case type along with a `Value` property. That generated form is opinionated. It's always a struct, always boxes value-type cases, and always stores contents as `object?`.
+The compiler converts a `union` declaration to a `struct` declaration. The struct is marked with the `[System.Runtime.CompilerServices.Union]` attribute and implements the `IUnion` interface. It includes a public constructor and an implicit conversion for each case type along with a `Value` property. That generated form is opinionated. It's always a struct, always boxes value-type cases, and always stores contents as `object?`.
 
-When you need different behavior - such as a class-based union, a custom storage strategy, interop support, or if you want to adapt an existing type - you can create a union type manually.
+You might need different behavior if you want to adapt an existing type, create a class-based union, or use a custom storage strategy, or if you need interop support. You can create a union type manually.
 
 Any class or struct with a `[Union]` attribute is a *union type* if it follows the *basic union pattern*. The basic union pattern requires:
 
@@ -138,7 +141,7 @@ Any class or struct with a `[Union]` attribute is a *union type* if it follows t
 - One or more public constructors, each with a single by-value or `in` parameter. The parameter type of each constructor defines a *case type*.
 - A public `Value` property of type `object?` (or `object`) with a `get` accessor.
 
-All union members must be public. The compiler uses these members to implement union conversions, pattern matching, and exhaustiveness checks. You can also implement the [non-boxing access pattern](#non-boxing-access-pattern) or create a [class-based union type](#class-based-union-types).
+All the preceding union members must be public. The compiler uses these members to implement union conversions, pattern matching, and exhaustiveness checks. You can also implement the [non-boxing access pattern](#non-boxing-access-pattern) or create a [class-based union type](#class-based-union-types). Your custom union type can add additional members.
 
 The compiler assumes that custom union types satisfy these behavioral rules:
 
@@ -158,7 +161,7 @@ The following example shows a custom union type:
 A custom union type can optionally implement the *non-boxing access pattern* to enable strongly typed access to value-type cases without boxing during pattern matching. This pattern requires:
 
 - A `HasValue` property of type `bool` that returns `true` when `Value` isn't `null`.
-- A `TryGetValue` method for each case type that returns `bool` and delivers the value through an `out` parameter.
+- A `TryGetValue` method for each case type that returns `bool` and delivers the value through an `out` parameter. `TryGetValue` returns `true` only when `Value` is a non-null value of that case type. The `out` parameter's type is identity-convertible to the case type, or to the underlying value type when the case type is a nullable value type.
 
 :::code language="csharp" source="snippets/unions/NonBoxingAccess.cs" id="NonBoxingAccessPattern":::
 
@@ -166,8 +169,6 @@ A custom union type can optionally implement the *non-boxing access pattern* to 
 
 The compiler prefers `TryGetValue` over the `Value` property when implementing pattern matching, which avoids boxing value types.
 
-<!-- Union member providers aren't yet available in .NET 11 Preview 2. Uncomment the following section when the feature ships. -->
-<!--
 ### Union member providers
 
 A union type can delegate its union members to a nested `IUnionMembers` interface. When this interface is present, the compiler looks for `Create` factory methods instead of constructors:
@@ -175,7 +176,6 @@ A union type can delegate its union members to a nested `IUnionMembers` interfac
 :::code language="csharp" source="snippets/unions/MemberProvider.cs" id="MemberProvider":::
 
 Union member providers are useful when the union type needs a private constructor or when the creation logic requires a factory pattern, such as with `record class` union types.
--->
 
 ### Class-based union types
 
@@ -189,9 +189,20 @@ For class-based unions, the `null` pattern matches both a null reference and a n
 
 ## Union implementation
 
-The following attribute and interface support union types at compile time and runtime:
+<!-- TODO: Replace with xrefs and remove the copied code when Preview 5 API ref is available. -->
+Union types rely on the `UnionAttribute` and `IUnion` types in the `System.Runtime.CompilerServices` namespace. The runtime includes these types beginning with .NET 11 Preview 5:
 
-:::code language="csharp" source="snippets/unions/RuntimePolyfill.cs" id="RuntimePolyfill":::
+```csharp
+namespace System.Runtime.CompilerServices;
+
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false)]
+public sealed class UnionAttribute : Attribute;
+
+public interface IUnion
+{
+    object? Value { get; }
+}
+```
 
 Union declarations generated by the compiler implement `IUnion` <!--<xref:System.Runtime.CompilerServices.IUnion>-->. You can check for any union value at runtime by using `IUnion`:
 
@@ -210,9 +221,6 @@ When you declare a `union` type, the compiler generates a struct that implements
     public object? Value { get; }
 }
 ```
-
-> [!IMPORTANT]
-> In .NET 11 Preview 2, these types aren't included in the runtime. To use union types, you must declare them in your project. They'll be included in a future .NET preview.
 
 ## C# language specification
 

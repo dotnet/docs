@@ -93,11 +93,14 @@ The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Ev
 
 The libraries are flexible and you can pick the components you need. For example, disable response caching or tailor reporting to work best in your environment. You can also customize and configure your evaluations, for example, by adding customized metrics and reporting options.
 
-## Samples
+## Usage examples
 
-For a more comprehensive tour of the functionality and APIs in the Microsoft.Extensions.AI.Evaluation libraries, see the [API usage examples (dotnet/ai-samples repo)](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/). These examples are a collection of unit tests. Each unit test showcases a specific concept or API and builds on the concepts and APIs showcased in previous unit tests.
+For usage examples, see the following tutorials:
+
+- [Quickstart: Evaluate response quality](evaluate-ai-response.md)
+- [Tutorial: Evaluate response quality with caching and reporting](evaluate-with-reporting.md)
+- [Tutorial: Evaluate response safety with caching and reporting](evaluate-safety.md)
 
 ## See also
 
-- [Quickstart: Evaluate response quality](evaluate-ai-response.md)
 - [Evaluation of generative AI apps (Foundry)](/azure/ai-studio/concepts/evaluation-approach-gen-ai)

@@ -85,7 +85,7 @@ The managed execution process includes the following steps, which are discussed 
 - [Metadata and Self-Describing Components](metadata-and-self-describing-components.md)
 - [Ilasm.exe (IL Assembler)](../framework/tools/ilasm-exe-il-assembler.md)
 - [Security](security/index.md)
-- [Interoperating with Unmanaged Code](../framework/interop/index.md)
+- [Interoperating with Unmanaged Code](../standard/native-interop/index.md)
 - [Deployment](../framework/deployment/net-framework-applications.md)
 - [Assemblies in .NET](assembly/index.md)
 - [Application Domains](../framework/app-domains/application-domains.md)

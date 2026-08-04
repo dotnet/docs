@@ -2,7 +2,7 @@
 title: How to upgrade a .NET app with GitHub Copilot modernization
 description: "Learn how to upgrade your .NET applications to newer versions using GitHub Copilot modernization. This step-by-step guide covers assessment and the three-stage workflow: assessment, planning, and execution."
 ms.topic: how-to
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to upgrade my .NET app using GitHub Copilot modernization so that I can modernize my codebase efficiently with AI assistance through a structured three-stage process.
@@ -21,7 +21,7 @@ Set up GitHub Copilot modernization in your development environment before start
 
 ## Initiate the upgrade
 
-To start an upgrade, use the `modernize-dotnet` agent in Copilot:
+To start the upgrade, follow these steps:
 
 [!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 

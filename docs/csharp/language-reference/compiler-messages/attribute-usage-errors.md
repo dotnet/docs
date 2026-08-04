@@ -38,13 +38,14 @@ f1_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8423"
+  - "CS8783"
   - "CS8959"
   - "CS8960"
   - "CS8961"
   - "CS8962"
   - "CS8963"
   - "CS8968"
-  - "CS8783"
   - "CS8970"
   - "CS9331"
 helpviewer_keywords:
@@ -84,16 +85,17 @@ helpviewer_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8423"
+  - "CS8783"
   - "CS8959"
   - "CS8960"
   - "CS8961"
   - "CS8962"
   - "CS8963"
   - "CS8968"
-  - "CS8783"
   - "CS8970"
   - "CS9331"
-ms.date: 05/19/2026
+ms.date: 07/16/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -139,13 +141,14 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
+- [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
 - [**CS8960**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
 - [**CS8961**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
 - [**CS8962**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
 - [**CS8963**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
 - [**CS8968**](#attribute-arguments-and-parameters): *An attribute type argument cannot use type parameters*
-- [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8970**](#attribute-arguments-and-parameters): *Type cannot be used in this context because it cannot be represented in metadata.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
 
@@ -210,6 +213,7 @@ The following errors occur when you apply attributes in invalid locations or use
 - **CS0658**: *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - **CS1667**: *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
 - **CS7014**: *Attributes are not valid in this context.*
+- **CS8423**: *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 
 To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets) and the [C# language specification section on attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification).
 
@@ -218,6 +222,7 @@ To correct these errors, follow these rules. For more information, see [Attribut
 - The attribute target specifier you used isn't a recognized specifier (**CS0658**). Valid specifiers include `assembly:`, `module:`, `type:`, `method:`, `property:`, `field:`, `event:`, `param:`, and `return:`.
 - Some attributes, such as <xref:System.ObsoleteAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on property or event accessors (**CS1667**). Move the attribute from the accessor to the property or event declaration itself.
 - Attributes can only appear on program elements that support them (**CS7014**). If you're applying assembly-level or module-level attributes, use the `assembly:` or `module:` target specifiers and place them at the top of the file.
+- Attributes on event `add` and `remove` accessors aren't allowed (**CS8423**). Apply the attribute to the event declaration, or use a valid target such as `method:` or `param:` on a declaration that supports that target.
 
 ## Predefined attributes
 

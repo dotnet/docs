@@ -23,9 +23,9 @@ The MSTest runner is open source and builds on the [MTP](./microsoft-testing-pla
 
 ## Enable MTP in an MSTest project
 
-It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (MTP) and its extensions.
+Use [MSTest SDK](./unit-testing-mstest-sdk.md) to greatly simplify your project configuration, version management, and alignment of MTP and its extensions.
 
-When you use `MSTest SDK`, by default you're opted in to using MTP.
+`MSTest.Sdk` replaces `Microsoft.NET.Sdk` as the project SDK, and MTP is enabled by default:
 
 ```xml
 <Project Sdk="MSTest.Sdk/4.1.0">
@@ -39,7 +39,12 @@ When you use `MSTest SDK`, by default you're opted in to using MTP.
 </Project>
 ```
 
-Alternatively, you can enable MSTest runner by adding the `EnableMSTestRunner` property and setting `OutputType` to `Exe` in your project file. You also need to ensure that you're using `MSTest 3.2.0` or newer. We strongly recommend you update to the latest MSTest version available.
+> [!NOTE]
+> `MSTest.Sdk` works only when your project can use `Microsoft.NET.Sdk` as its base SDK. If your project requires a different SDK, don't replace the `<Project Sdk="...">` value with `MSTest.Sdk`.
+>
+> For example, some ASP.NET Core integration test projects use `Microsoft.NET.Sdk.Web`. `MSTest.Sdk` derives from `Microsoft.NET.Sdk`, so it doesn't import the ASP.NET Core SDK targets that `Microsoft.NET.Sdk.Web` provides.
+
+You can also configure MSTest manually instead of using `MSTest.Sdk`. Manual configuration is required when your project needs a different top-level SDK (for example, `Microsoft.NET.Sdk.Web`), but you can also choose it with the standard `Microsoft.NET.Sdk`. Add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file. Then add the MSTest references that your project requires. Ensure that you're using MSTest 3.2.0 or newer, and update to the latest MSTest version available.
 
 Consider the following example project file:
 

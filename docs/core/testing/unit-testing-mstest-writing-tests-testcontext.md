@@ -3,7 +3,8 @@ title: MSTest TestContext
 description: Learn about the TestContext class of MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 11/12/2024
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # The `TestContext` class
@@ -37,10 +38,11 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> provides inf
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.CurrentTestOutcome?displayProperty=nameWithType> - the result of the current test.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.FullyQualifiedTestClassName?displayProperty=nameWithType> - the full name of the test class.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunDirectory?displayProperty=nameWithType> - the directory where the test run is executed.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType> - the directory where the deployment items are located.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType> - the directory where the deployment items are located. To populate this directory, use [`DeploymentItemAttribute`](unit-testing-mstest-writing-tests-deployment-items.md).
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory?displayProperty=nameWithType> - the directory where the test results are stored.  Typically a subdirectory of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunDirectory?displayProperty=nameWithType>.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunResultsDirectory?displayProperty=nameWithType> - the directory where the test results are stored. Typically a subdirectory of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory?displayProperty=nameWithType>.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestResultsDirectory?displayProperty=nameWithType> - the directory where the test results are stored. Typically a subdirectory of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory?displayProperty=nameWithType>.
+- Starting with MSTest 3.9, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunCount?displayProperty=nameWithType> - the number of times the current test has run, counting from 1. The value is greater than 1 when a test is retried with `[Retry]`.
 
 In MSTest 3.7 and later, the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class also provides new properties helpful for `TestInitialize` and `TestCleanup` methods:
 
@@ -75,6 +77,15 @@ You can use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Prope
 TestContext.Properties["MyKey"] = "MyValue";
 string value = TestContext.Properties["MyKey"]?.ToString();
 ```
+
+> [!NOTE]
+> Starting with MSTest 4.2, test categories from `[TestCategory]` are included in <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType>.
+>
+> Starting with MSTest 4.3, custom properties added to `TestContext.Properties` in `[AssemblyInitialize]` flow to every class and test in the assembly, and properties added in `[ClassInitialize]` flow to every test in that class. This lets fixtures publish shared context that test methods can read.
+
+### Access `TestContext` from the current call stack
+
+Starting with MSTest 4.2, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Current?displayProperty=nameWithType> returns the current test's <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> from anywhere in the call stack during test method execution. This API is experimental, uses the `[Experimental]` attribute, and might change in a future MSTest version.
 
 ### Associate data to a test
 

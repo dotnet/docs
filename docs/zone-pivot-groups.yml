@@ -56,8 +56,8 @@ groups:
       title: Visual Studio Code
     - id: copilot-cli
       title: GitHub Copilot CLI
-    - id: github-com
-      title: GitHub.com
+    - id: github-copilot-app
+      title: GitHub Copilot app
 - id: copilot-modernization-migrate
   title: Development environment
   prompt: Choose your development environment
@@ -176,8 +176,6 @@ groups:
   title: MEAI targets
   prompt: Choose a host service for your AI models
   pivots:
-    - id: github-models
-      title: GitHub Models
     - id: azure-openai
       title: Azure OpenAI
     - id: openai

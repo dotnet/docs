@@ -1,12 +1,13 @@
 ---
 title: "Records"
 description: Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
-ms.date: 01/14/2026
+ms.date: 06/05/2026
 f1_keywords:
   - "record_CSharpKeyword"
 helpviewer_keywords:
   - "record keyword [C#]"
   - "record type [C#]"
+ai-usage: ai-assisted
 ---
 # Records (C# reference)
 
@@ -197,6 +198,8 @@ This section only applies to `record class` types.
 
 A record can inherit from another record. However, a record can't inherit from a class, and a class can't inherit from a record.
 
+Starting in C# 15, a `record class` can use the [`closed`](../keywords/closed.md) modifier to restrict direct derivation to its declaring assembly. Consumers can then write exhaustive `switch` expressions over its direct descendants without a default arm. For details, see [Closed hierarchy patterns](../operators/patterns.md#closed-hierarchy-patterns). The `closed` modifier doesn't apply to `record struct` types, because struct records can't be abstract.
+
 ### Positional parameters in derived record types
 
 The derived record declares positional parameters for all the parameters in the base record primary constructor. The base record declares and initializes those properties. The derived record doesn't hide them, but only creates and initializes properties for parameters that aren't declared in its base record.
@@ -225,14 +228,14 @@ The result of a `with` expression has the same run-time type as the expression's
 
 ### `PrintMembers` formatting in derived records
 
-The synthesized `PrintMembers` method of a derived record type calls the base implementation. The result is that all public properties and fields of both derived and base types are included in the `ToString` output, as shown in the following example:
+The synthesized `PrintMembers` method of a derived record type calls the base implementation. The result is that the `ToString` output includes all public properties and fields of both derived and base types, as shown in the following example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringInheritance":::
 
-You can provide your own implementation of the `PrintMembers` method. If you do that, use the following signature:
+You can provide your own implementation of the `PrintMembers` method. If you do, use the following signature:
 
 * For a `sealed` record that derives from `object` (doesn't declare a base record): `private bool PrintMembers(StringBuilder builder)`;
-* For a `sealed` record that derives from another record (note that the enclosing type is `sealed`, so the method is effectively `sealed`): `protected override bool PrintMembers(StringBuilder builder)`;
+* For a `sealed` record that derives from another record (the enclosing type is `sealed`, so the method is effectively `sealed`): `protected override bool PrintMembers(StringBuilder builder)`;
 * For a record that isn't `sealed` and derives from object: `protected virtual bool PrintMembers(StringBuilder builder);`
 * For a record that isn't `sealed` and derives from another record: `protected override bool PrintMembers(StringBuilder builder);`
 

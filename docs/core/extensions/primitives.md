@@ -48,7 +48,7 @@ As an alternative to calling `RegisterChangeCallback`, you could use the <xref:M
 
 :::code source="./snippets/primitives/change/Example.Static.cs" id="Static":::
 
-Much like previous examples, you'll need an implementation of `IChangeToken` that is produced by the `changeTokenProducer`. The producer is defined as a `Func<IChangeToken>` and it's expected that this will return a new token every invocation. The `consumer` is either an `Action` when not using `state`, or an `Action<TState>` where the generic type `TState` flows through the change notification.
+Much like previous examples, you'll need an implementation of `IChangeToken` that is produced by the `changeTokenProducer`. The producer is defined as a `Func<IChangeToken>` and it's expected that this will return a new token every invocation. The `consumer` is an `Action` or `Func<Task>` when not using `state`, or an `Action<TState>` or `Func<TState, Task>` where the generic type `TState` flows through the change notification.
 
 ## String tokenizers, segments, and values
 

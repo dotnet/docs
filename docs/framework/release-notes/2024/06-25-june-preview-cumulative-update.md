@@ -3,7 +3,7 @@ title: June 2024 cumulative update preview
 description: Learn about the improvements in the .NET Framework June 2024 cumulative update preview.
 ms.date: 06/25/2024
 ---
-# June 2024 cumulative update preview
+# .NET Framework June 2024 cumulative update preview
 
 _Released June 25, 2024_
 

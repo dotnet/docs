@@ -80,10 +80,8 @@ items:
                 href: ../../core/porting/net-framework-tech-unavailable.md
               - name: Unsupported APIs
                 items:
-                - name: Tools to find unsupported APIs
-                  href: ../../core/porting/unsupported-apis.md
-                - name: Unsupported API list
-                  href: ../../core/compatibility/unsupported-apis.md
+                  - name: Unsupported API list
+                    href: ../../core/compatibility/unsupported-apis.md
           - name: Needed changes before porting code
             href: ../../core/porting/premigration-needed-changes.md
       - name: Upgrade
@@ -129,15 +127,5 @@ items:
               - name: How to analyze a project
                 href: ../../core/porting/upgrade-assistant-how-to-analyze.md
                 displayName: upgrade assistant
-          - name: Project upgrade guide
-            items:
-              - name: ASP.NET
-                href: /aspnet/core/migration/fx-to-core/tooling
-              - name: Windows Presentation Foundation
-                href: /dotnet/desktop/wpf/migration/
-              - name: Windows Forms
-                href: /dotnet/desktop/winforms/migration/
-              - name: Universal Windows Platform
-                href: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant
           - name: Telemetry
             href: ../../core/porting/upgrade-assistant-telemetry.md

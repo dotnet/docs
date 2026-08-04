@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with VSTest
 description: The dotnet test command is used to execute unit tests in a given project using VSTest.
-ms.date: 12/29/2024
+ms.date: 07/19/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with VSTest
@@ -119,6 +119,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
+  For the full list of test platform environment variables, see [Environment variables](https://github.com/microsoft/vstest/blob/main/docs/environment-variables.md).
+
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
   The type of crash dump to be collected. Supported dump types are `full` (default), and `mini`. Implies `--blame-crash`.
@@ -146,11 +148,49 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit, NUnit, and MSTest 2.2.4+, the timeout is renewed after every test case. For MSTest before version 2.2.4, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
+  You can also configure blame in a `.runsettings` file and pass it with `--settings`. The `.runsettings` file supports the same blame behavior and additional keys that aren't exposed as top-level `dotnet test` switches, such as `CollectDumpOnTestSessionHang` and `MonitorPostmortemDebugger`. For more information, see [Blame data collector](https://github.com/microsoft/vstest/blob/main/docs/extensions/blame-datacollector.md).
+
+  ```xml
+  <RunSettings>
+    <DataCollectionRunSettings>
+      <DataCollectors>
+        <DataCollector friendlyName="blame" enabled="true">
+          <Configuration>
+            <CollectDump CollectAlways="true" DumpType="full" />
+            <CollectDumpOnTestSessionHang TestTimeout="30min" HangDumpType="full" />
+            <MonitorPostmortemDebugger DumpDirectoryPath="C:\Dumps" />
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </DataCollectionRunSettings>
+  </RunSettings>
+  ```
+
+  The following tables map the blame options to their `dotnet test` switches and `.runsettings` elements. For the complete blame collector reference, see [Blame data collector](https://github.com/microsoft/vstest/blob/main/docs/extensions/blame-datacollector.md).
+
+  Crash dump options:
+
+  | Behavior | `dotnet test` switch | `.runsettings` element |
+  | --- | --- | --- |
+  | Collect a crash dump | `--blame-crash` | `<CollectDump />` |
+  | Collect even on a clean exit | `--blame-crash-collect-always` | `<CollectDump CollectAlways="true" />` |
+  | Dump type (`mini`, `full`; default `full`) | `--blame-crash-dump-type` | `<CollectDump DumpType="full" />` |
+
+  Hang dump options:
+
+  | Behavior | `dotnet test` switch | `.runsettings` element |
+  | --- | --- | --- |
+  | Collect a hang dump | `--blame-hang` | `<CollectDumpOnTestSessionHang />` |
+  | Timeout before the hang dump (default `1h`) | `--blame-hang-timeout` | `<CollectDumpOnTestSessionHang TestTimeout="90m" />` |
+  | Hang dump type (`mini`, `full`, `none`) | `--blame-hang-dump-type` | `<CollectDumpOnTestSessionHang HangDumpType="mini" />` |
+
+  For Microsoft.Testing.Platform (MTP) test apps, the `--blame-*` switches and the blame data collector don't apply. MTP uses `--crashdump`, `--hangdump`, and `--hangdump-timeout` from the `Microsoft.Testing.Extensions.CrashDump` and `Microsoft.Testing.Extensions.HangDump` packages. For more information, see [dotnet test with MTP](dotnet-test-mtp.md).
+
 - [!INCLUDE [configuration](includes/cli-configuration.md)]
 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
-  Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+  Enables a data collector for the test run. For more information, including the Event Log data collector and guidance for authoring your own data collector, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
 
   For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested), [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis), and [GitHub issue dotnet/docs#34479](https://github.com/dotnet/docs/issues/34479).
 
@@ -159,6 +199,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-d|--diag <LOG_FILE>`**
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
+
+  To set the trace level, append `;tracelevel=<LEVEL>` to the log file name, for example `--diag log.txt;tracelevel=verbose`. The allowed values for `tracelevel` are `off`, `error`, `warning`, `info`, and `verbose`. The default value is `verbose`.
 
 - [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
@@ -254,7 +296,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
-  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md).
+  Starting with the .NET 5 SDK, you can also set `TestRunParameters` from the command line, for example: `dotnet test -- TestRunParameters.Parameter(name="myParam", value="value")`. `RunSettings` arguments take precedence over values from a `.runsettings` file.
+
+  For more information, see [Passing RunSettings arguments through command line](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md).
 
 ## Examples
 
@@ -357,8 +401,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 | Test Framework | Supported properties                                                                                      |
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
-| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Category</li></ul>                                 |
-| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>Category</li><li>Priority</li></ul>                                   |
+| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
+| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>Priority</li><li>TestCategory</li><li>Category</li><li>Property</li></ul> |
+
+For xUnit, a trait defined with `[Trait("key", "value")]` is filtered by its key (for example, `[Trait("Category", "bvt")]` is matched with `--filter Category=bvt`). For NUnit, `TestCategory` and `Category` are equivalent, and a property defined with `[Property("key", "value")]` is filtered by its key.
 
 The `<operator>` describes the relationship between the property and the value:
 
@@ -384,10 +430,24 @@ You can enclose expressions in parenthesis when using conditional operators (for
 
 For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
+## Exit codes
+
+When you run tests through the VSTest path, `dotnet test` reports the outcome with one of two exit codes:
+
+| Exit code | Meaning |
+| --------- | ------- |
+| `0` | Success. The requested operation completed and, for a test run, all executed tests passed. |
+| `1` | Failure. For example, one or more tests failed, a run error was reported, the command line was invalid, a test source couldn't be loaded, or the run was aborted or canceled. |
+
+The underlying `vstest.console` process never returns any other value.
+
+When discovery finds no matching tests, the run prints a warning rather than an error and still returns `0` by default. To make a run that discovers or selects zero tests return `1` instead, set `RunConfiguration.TreatNoTestsAsError` to `true` in a `.runsettings` file.
+
 ## See also
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md)
+- [VSTest environment variables (microsoft/vstest)](https://github.com/microsoft/vstest/blob/main/docs/environment-variables.md)
 - [dotnet test](dotnet-test.md)
 - [dotnet test with MTP](dotnet-test-mtp.md)

@@ -2,7 +2,6 @@
 title: "Managed Threading Best Practices"
 description: Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
 ms.date: 03/13/2026
-ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -94,6 +93,8 @@ Consider the following guidelines when using multiple threads:
 - Don't use types as lock objects. That is, avoid code such as `lock(typeof(X))` in C# or `SyncLock(GetType(X))` in Visual Basic, or the use of <xref:System.Threading.Monitor.Enter*?displayProperty=nameWithType> with <xref:System.Type> objects. For a given type, there is only one instance of <xref:System.Type?displayProperty=nameWithType> per application domain. If the type you take a lock on is public, code other than your own can take locks on it, leading to deadlocks. For additional issues, see [Reliability Best Practices](../../framework/performance/reliability-best-practices.md).
 
 - Use caution when locking on instances, for example `lock(this)` in C# or `SyncLock(Me)` in Visual Basic. If other code in your application, external to the type, takes a lock on the object, deadlocks could occur.
+
+- In .NET 9 and C# 13 or later, use a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance as your lock object with the C# [lock statement](../../csharp/language-reference/statements/lock.md). In Visual Basic, continue to use a dedicated private reference type instance with `SyncLock`.
 
 - Do ensure that a thread that has entered a monitor always leaves that monitor, even if an exception occurs while the thread is in the monitor. The C# [lock](../../csharp/language-reference/statements/lock.md) statement and the Visual Basic [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement provide this behavior automatically, employing a **finally** block to ensure that <xref:System.Threading.Monitor.Exit*?displayProperty=nameWithType> is called. If you cannot ensure that **Exit** will be called, consider changing your design to use **Mutex**. A mutex is automatically released when the thread that currently owns it terminates.
 

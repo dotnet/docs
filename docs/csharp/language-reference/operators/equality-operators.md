@@ -65,7 +65,7 @@ Two [string](../builtin-types/reference-types.md#the-string-type) operands are e
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="StringEquality":::
 
-String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../how-to/compare-strings.md).
+String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../fundamentals/strings/common-tasks/compare.md).
 
 ### Delegate equality
 

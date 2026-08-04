@@ -3,7 +3,7 @@ title: GitHub Copilot modernization overview
 description: "Learn about GitHub Copilot modernization, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects and migrates apps to Azure."
 titleSuffix: ""
 ms.topic: overview
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to learn about what GitHub Copilot modernization is, so that I understand its capabilities and how I can take advantage of it.
@@ -36,6 +36,9 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 | **SqlClient upgrade** | Upgrades from System.Data.SqlClient to Microsoft.Data.SqlClient. | _"Update SqlClient"_ |
 | **Azure Functions upgrade** | Upgrades Azure Functions from in-process to isolated worker model. | _"Upgrade my Azure Functions"_ |
 | **Semantic Kernel to Agents** | Upgrades Semantic Kernel Agents to Microsoft Agent Framework. | _"Upgrade my SK agents"_ |
+| **Aspire integration** | Adds [Aspire](https://aspire.dev) support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
+| **Aspire version upgrade** | Upgrades existing Aspire applications to newer versions. | _"Upgrade my Aspire version"_ |
+| **WebForms-to-Blazor upgrade** | Upgrades ASP.NET Web Forms applications to Blazor. | _"Migrate my Web Forms app to Blazor"_ |
 
 For a full reference of all scenarios and 30+ built-in upgrade skills, see [Scenarios and skills reference](scenarios-and-skills.md).
 
@@ -45,7 +48,7 @@ Microsoft values your feedback and uses it to improve the agent. Leave feedback 
 
 - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) options.
 
-- File an issue at the [@modernize-dotnet GitHub repository](https://github.com/dotnet/modernize-dotnet).
+- File an issue at the [Upgrade Agent GitHub repository](https://github.com/microsoft/upgrade-agent-plugins).
 
 ## Prerequisites
 
@@ -73,11 +76,7 @@ To start an upgrade, see [Upgrade a .NET app with GitHub Copilot modernization](
 
 The agent supports the following upgrade paths:
 
-| Source                       | Target          |
-|------------------------------|-----------------|
-| .NET Framework (any version) | .NET 8 or later |
-| .NET Core 1.x–3.x            | .NET 8 or later |
-| .NET 5 or later              | .NET 8 or later |
+[!INCLUDE[supported-upgrade-paths](./includes/supported-upgrade-paths.md)]
 
 ## Migrate .NET projects to Azure
 
@@ -193,7 +192,6 @@ The agent stores all upgrade state in `.github/upgrades/{scenarioId}/`. The fold
 | `plan.md` | Ordered task plan |
 | `tasks.md` | Live progress dashboard |
 | `scenario-instructions.md` | Agent's persistent memory, including preferences, decisions, and custom instructions |
-| `execution-log.md` | Detailed audit trail of all changes |
 | `tasks/{taskId}/task.md` | Per-task scope and context |
 | `tasks/{taskId}/progress-details.md` | Per-task execution notes and results |
 

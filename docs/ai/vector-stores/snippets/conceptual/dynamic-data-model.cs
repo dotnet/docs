@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.VectorData;
-using Microsoft.SemanticKernel.Connectors.Qdrant;
+using CommunityToolkit.VectorData.Qdrant;
 using Qdrant.Client;
 
 public class DynamicDataModel

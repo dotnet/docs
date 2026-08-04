@@ -50,4 +50,4 @@ The `invalidVariant` managed debugging assistant (MDA) is activated when an inva
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshalling.md)
+- [Interop Marshaling](../../standard/native-interop/interop-marshalling.md)

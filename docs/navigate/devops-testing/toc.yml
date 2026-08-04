@@ -70,6 +70,8 @@ items:
                     href: ../../core/testing/unit-testing-mstest-writing-tests-controlling-execution.md
                   - name: Test organization
                     href: ../../core/testing/unit-testing-mstest-writing-tests-organizing.md
+                  - name: Deployment items
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-deployment-items.md
               - name: Running tests
                 items:
                   - name: Overview
@@ -112,6 +114,8 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0044.md
                       - name: MSTEST0045
                         href: ../../core/testing/mstest-analyzers/mstest0045.md
+                      - name: MSTEST0066
+                        href: ../../core/testing/mstest-analyzers/mstest0066.md
                   - name: Performance rules
                     items:
                       - name: Overview
@@ -128,6 +132,8 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0028.md
                       - name: MSTEST0033
                         href: ../../core/testing/mstest-analyzers/mstest0033.md
+                      - name: MSTEST0047
+                        href: ../../core/testing/mstest-analyzers/mstest0047.md
                   - name: Usage rules
                     items:
                       - name: Overview
@@ -222,6 +228,20 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0062.md
                       - name: MSTEST0063
                         href: ../../core/testing/mstest-analyzers/mstest0063.md
+                      - name: MSTEST0064
+                        href: ../../core/testing/mstest-analyzers/mstest0064.md
+                      - name: MSTEST0065
+                        href: ../../core/testing/mstest-analyzers/mstest0065.md
+                      - name: MSTEST0067
+                        href: ../../core/testing/mstest-analyzers/mstest0067.md
+                      - name: MSTEST0068
+                        href: ../../core/testing/mstest-analyzers/mstest0068.md
+                      - name: MSTEST0069
+                        href: ../../core/testing/mstest-analyzers/mstest0069.md
+                      - name: MSTEST0070
+                        href: ../../core/testing/mstest-analyzers/mstest0070.md
+                      - name: MSTEST0071
+                        href: ../../core/testing/mstest-analyzers/mstest0071.md
               - name: Migration
                 items:
                   - name: Migrate from MSTest v1 to v3
@@ -287,13 +307,22 @@ items:
                     displayName: MTP,terminal,test reporter,ANSI,progress
                   - name: Test reports
                     href: ../../core/testing/microsoft-testing-platform-test-reports.md
-                    displayName: MTP,TRX,test report,Azure DevOps
+                    displayName: MTP,TRX,test report,Azure DevOps,GitHub Actions
                   - name: Code coverage
                     href: ../../core/testing/microsoft-testing-platform-code-coverage.md
                     displayName: MTP,code coverage,coverage
                   - name: Crash and hang dumps
                     href: ../../core/testing/microsoft-testing-platform-crash-hang-dumps.md
                     displayName: MTP,crash dump,hang dump,diagnostics
+                  - name: Diagnostics
+                    href: ../../core/testing/microsoft-testing-platform-diagnostics.md
+                    displayName: MTP,diagnostics,video recorder,screen recording,capture video
+                  - name: Test host deployment
+                    href: ../../core/testing/microsoft-testing-platform-test-host-deployment.md
+                    displayName: MTP,test host,deployment,packaged app,UWP,WinUI,ITestHostLauncher
+                  - name: Microsoft.Extensions integration
+                    href: ../../core/testing/microsoft-testing-platform-extensions-integration.md
+                    displayName: MTP,Microsoft.Extensions,logging bridge,ILogger,Microsoft.Extensions.Logging
                   - name: OpenTelemetry
                     href: ../../core/testing/microsoft-testing-platform-open-telemetry.md
                     displayName: MTP,OpenTelemetry,traces,metrics

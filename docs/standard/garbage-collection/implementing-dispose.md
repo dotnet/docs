@@ -178,4 +178,4 @@ The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespac
 - <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>
 - <xref:System.Object.Finalize*?displayProperty=nameWithType>
 - [Define and consume classes and structs (C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)
-- [The SafeHandle class](../../fundamentals/runtime-libraries/system-runtime-interopservices-safehandle.md)
+- [The SafeHandle class](xref:System.Runtime.InteropServices.SafeHandle)

@@ -46,9 +46,9 @@ However, as an application developer, you would likely prefer to rely on the ric
 
 For more information on Aspire, see:
 
-- [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
-- [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
-- [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
+- [Aspire Overview](https://aspire.dev/get-started/what-is-aspire/)
+- [Telemetry in Aspire](https://aspire.dev/fundamentals/telemetry/)
+- [Aspire Dashboard](https://aspire.dev/dashboard/explore/)
 
 ### Reuse Service Defaults project without Aspire Orchestration
 
@@ -86,7 +86,7 @@ The following diagram illustrates the behavior of the spans and their relationsh
 
 ### Walkthrough: Using the experimental connection tracing in .NET 9
 
-This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collect-systemnet-traces) as well. The key step is to enable the ActivitySources.
+This walkthrough uses an [Aspire Starter App](https://aspire.dev/get-started/first-app/) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collect-systemnet-traces) as well. The key step is to enable the ActivitySources.
 
 1. Create an **Aspire 9 Starter App** by using `dotnet new`:
 
@@ -102,7 +102,7 @@ This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/b
 
     :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_ConnectionTracing":::
 
-1. Start the solution. This should open the [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/overview).
+1. Start the solution. This should open the [Aspire Dashboard](https://aspire.dev/dashboard/overview/).
 
 1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`.
 

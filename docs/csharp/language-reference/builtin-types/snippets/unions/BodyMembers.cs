@@ -1,11 +1,17 @@
 // <BodyMembers>
-public union OneOrMore<T>(T, IEnumerable<T>) where T : notnull
+public record class Meters(double Value);
+public record class Feet(double Value);
+
+public union Length(Meters, Feet)
 {
-    public IEnumerable<T> AsEnumerable() => this switch
+    public double TotalMeters => this switch
     {
-        T single => [single],
-        IEnumerable<T> multiple => multiple
+        Meters m => m.Value,
+        Feet f => f.Value * 0.3048,
+        _ => throw new InvalidOperationException("The Length has no value."),
     };
+
+    public Length Add(Length other) => new Meters(TotalMeters + other.TotalMeters);
 }
 // </BodyMembers>
 
@@ -19,11 +25,14 @@ public static class BodyMembersScenario
     // <BodyMembersExample>
     static void BodyMembersExample()
     {
-        OneOrMore<string> single = "hello";
-        OneOrMore<string> multiple = new[] { "a", "b", "c" }.AsEnumerable();
+        Length distance = new Meters(10.0);
+        Length height = new Feet(3.0);
 
-        Console.WriteLine(string.Join(", ", single.AsEnumerable())); // output: hello
-        Console.WriteLine(string.Join(", ", multiple.AsEnumerable())); // output: a, b, c
+        Console.WriteLine(distance.TotalMeters); // output: 10
+        Console.WriteLine(height.TotalMeters);   // output: 0.9144
+
+        Length total = distance.Add(height);
+        Console.WriteLine(total.TotalMeters);    // output: 10.9144
     }
     // </BodyMembersExample>
 }

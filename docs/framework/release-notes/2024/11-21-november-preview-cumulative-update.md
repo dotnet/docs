@@ -3,7 +3,7 @@ title: November 2024 cumulative update preview
 description: Learn about the improvements in the .NET Framework November 2024 cumulative update preview.
 ms.date: 11/21/2024
 ---
-# November 2024 cumulative update preview
+# .NET Framework November 2024 cumulative update preview
 
 _Released Novemeber 21, 2024_
 _*Revised: December 18th, 2024 to updated the quality and reliability improvement.  If you have already installed this update, no action is needed.

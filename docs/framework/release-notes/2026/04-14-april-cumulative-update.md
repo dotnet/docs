@@ -3,7 +3,7 @@ title: April 2026 cumulative update
 description: Learn about the improvements in the .NET Framework April 2026 cumulative update.
 ms.date: 04/28/2026
 ---
-# April 2026 cumulative update
+# .NET Framework April 2026 cumulative update
 
 _Released April 14, 2026_
 _Updated April 28, 2026, to include a known issue._

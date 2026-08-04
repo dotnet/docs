@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) config options
 description: Learn how to configure MTP using testconfig.json configuration settings and environment variables.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/01/2026
+ms.date: 06/16/2026
 ai-usage: ai-assisted
 ---
 
@@ -78,9 +78,27 @@ Example:
 }
 ```
 
-### Extension options are CLI-only
+### Environment variables in testconfig.json
 
-Extension features such as [crash dump](microsoft-testing-platform-crash-hang-dumps.md), [hang dump](microsoft-testing-platform-crash-hang-dumps.md), [retry](microsoft-testing-platform-retry.md), [TRX reports](microsoft-testing-platform-test-reports.md), and [code coverage](microsoft-testing-platform-code-coverage.md) are **not** configurable via *testconfig.json*. These features are configured exclusively through command-line arguments.
+> [!NOTE]
+> Available in MTP starting with version 2.3.0.
+
+The `environmentVariables` section sets environment variables for the test process before it starts. Use string values for each variable.
+
+```json
+{
+  "environmentVariables": {
+    "DOTNET_ENVIRONMENT": "Development",
+    "FEATURE_FLAG": "true"
+  }
+}
+```
+
+### CLI options in testconfig.json
+
+Before MTP 2.3.0, extension features such as [crash dump](microsoft-testing-platform-crash-hang-dumps.md), [hang dump](microsoft-testing-platform-crash-hang-dumps.md), [retry](microsoft-testing-platform-retry.md), [TRX reports](microsoft-testing-platform-test-reports.md), and [code coverage](microsoft-testing-platform-code-coverage.md) aren't configurable via *testconfig.json*. These features are configured exclusively through command-line arguments.
+
+Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json* through `IConfiguration`. This support includes extension options, so you can use JSON entries for options that you don't want to pass on the command line each run. Command-line arguments still take precedence.
 
 For a complete reference of command-line options, see [MTP CLI options reference](microsoft-testing-platform-cli-options.md).
 
@@ -128,9 +146,9 @@ If you're migrating from a *.runsettings* file, the following table maps common 
 | `RunConfiguration/MaxCpuCount` | No equivalent | Process-level parallelism is controlled by `dotnet test --max-parallel-test-modules` or MSBuild `/m` option. |
 | `MSTest/*` | `mstest.*` | See [Configure MSTest — testconfig.json](unit-testing-mstest-configure.md#testconfigjson). |
 | `xUnit/*` | `xUnit.*` | See [xUnit.net testconfig.json](https://xunit.net/docs/config-testconfig-json). |
-| `LoggerRunSettings/Loggers` | CLI only | Use `--report-trx` or similar CLI options. |
-| `DataCollectionRunSettings` (blame) | CLI only | Use `--crashdump` and `--hangdump` CLI options. See [Crash and hang dumps](microsoft-testing-platform-crash-hang-dumps.md). |
-| `DataCollectionRunSettings` (coverage) | CLI only | Use `--coverage` CLI option. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
+| `LoggerRunSettings/Loggers` | CLI options | Use `--report-trx` or similar CLI options. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. |
+| `DataCollectionRunSettings` (blame) | CLI options | Use `--crashdump` and `--hangdump` CLI options. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Crash and hang dumps](microsoft-testing-platform-crash-hang-dumps.md). |
+| `DataCollectionRunSettings` (coverage) | CLI options | Use `--coverage` CLI option. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
 | `TestRunParameters` | `--test-parameter` CLI | Use `--test-parameter key=value` on the command line. |
 
 ## Environment variables
@@ -185,6 +203,13 @@ A semicolon-separated list of exit codes to ignore. When an exit code is ignored
 ### `TESTINGPLATFORM_NOBANNER` environment variable
 
 When set to `1` or `true`, suppresses the startup banner, the copyright message, and the telemetry banner. Equivalent to the `--no-banner` command-line option. The `DOTNET_NOLOGO` environment variable has the same effect.
+
+### `NO_COLOR` environment variable
+
+When set to any non-empty value, suppresses all ANSI color output. MTP honors the [`NO_COLOR`](https://no-color.org/) convention.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0.
 
 ### `DOTNET_NOLOGO` environment variable
 

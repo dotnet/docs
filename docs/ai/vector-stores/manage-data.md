@@ -24,7 +24,7 @@ public class Hotel
     [VectorStoreData(IsFullTextIndexed = true)]
     public required string Description { get; set; }
 
-    [VectorStoreVector(Dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity)]
+    [VectorStoreVector(dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity)]
     public required string DescriptionEmbedding { get; set; }
 
     [VectorStoreData(IsIndexed = true)]

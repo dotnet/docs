@@ -2,7 +2,7 @@
 title: Customize GitHub Copilot modernization
 description: "Learn how to customize GitHub Copilot modernization with custom skills, custom scenarios, scenario artifact edits, and chat instructions to encode your team's upgrade patterns."
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to customize GitHub Copilot modernization so that I can encode my team's upgrade patterns, enforce coding standards during upgrades, and define custom upgrade workflows.

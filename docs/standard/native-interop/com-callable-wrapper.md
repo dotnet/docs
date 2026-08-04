@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "callable wrappers"
   - "interoperation with unmanaged code, COM wrappers"
   - "COM callable wrappers"
-ms.assetid: d04be3b5-27b9-4f5b-8469-a44149fabf78
 ---
 
 # COM Callable Wrapper
@@ -192,7 +191,7 @@ If your application requires early-bound calls to COM event interface methods, y
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
 - [COM Wrappers](com-wrappers.md)
-- [Exposing .NET Framework Components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
 - [Exposing .NET Core Components to COM](../../core/native-interop/expose-components-to-com.md)
 - [Qualifying .NET Types for Interoperation](qualify-net-types-for-interoperation.md)
 - [Runtime Callable Wrapper](runtime-callable-wrapper.md)

@@ -160,7 +160,25 @@ items:
   - name: Dynamic programming
     href: reflection-and-codedom/
   - name: Interoperate with unmanaged code
-    href: interop/
+    items:
+    - name: Overview
+      href: interop/index.md
+    - name: Registration-free COM interop
+      href: interop/registration-free-com-interop.md
+    - name: "How to: Create COM wrappers"
+      href: interop/how-to-create-com-wrappers.md
+    - name: "How to: Create wrappers manually"
+      href: interop/how-to-create-wrappers-manually.md
+    - name: Marshal data with COM interop
+      href: interop/marshalling-data-with-com-interop.md
+    - name: "How to: Migrate managed-code DCOM to WCF"
+      href: interop/how-to-migrate-managed-code-dcom-to-wcf.md
+    - name: "How to: Generate primary interop assemblies using Tlbimp.exe"
+      href: interop/how-to-generate-primary-interop-assemblies-using-tlbimp-exe.md
+    - name: "How to: Register primary interop assemblies"
+      href: interop/how-to-register-primary-interop-assemblies.md
+    - name: "How to: Configure .NET Framework-based COM components for registration-free activation"
+      href: interop/configure-net-framework-based-com-components-for-reg.md
   - name: Unmanaged API reference
     href: unmanaged-api/
 - name: Tools
@@ -661,6 +679,10 @@ items:
     items:
     - name: Overview and index
       href: release-notes/release-notes.md
+    - name: July 2026 cumulative update
+      href: release-notes/2026/07-14-july-cumulative-update.md
+    - name: May 2026 cumulative update preview
+      href: release-notes/2026/05-26-may-cumulative-update-preview.md
     - name: May 2026 cumulative update
       href: release-notes/2026/05-12-may-cumulative-update.md
     - name: April 2026 cumulative update

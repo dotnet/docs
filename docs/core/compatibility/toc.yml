@@ -24,6 +24,8 @@ items:
                 href: core-libraries/11/namedpipeserverstream-unix-permissions.md
               - name: Nullable.GetUnderlyingType throws for custom Type subclasses
                 href: core-libraries/11/nullable-getunderlyingtype-throws.md
+              - name: PackagePart.GetStream() returns a non-seekable stream for compressed parts in ReadWrite packages
+                href: core-libraries/11/packagepart-getstream-non-seekable.md
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/11/obsolete-apis.md
               - name: SafeFileHandle.IsAsync and FileStream.IsAsync accurately reflect non-blocking state on Unix

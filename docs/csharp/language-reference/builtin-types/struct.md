@@ -1,6 +1,6 @@
 ---
-title: "Structure types"
-description: Learn about the struct type in C#
+title: Structure types
+description: "Structure types (struct) give C# lightweight, data-centric value types. See how value semantics, copying, and boxing work, and when to choose a class instead."
 ms.date: 01/14/2026
 f1_keywords:
   - "struct_CSharpKeyword"

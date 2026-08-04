@@ -1,6 +1,6 @@
 ---
 title: What's new in C# 12
-description: Get an overview of the new features in C# 12.
+description: "Discover what's new in C# 12, including collection expressions, inline arrays, default lambda parameters, and interceptors. Try examples in your code."
 ms.date: 03/19/2024
 ms.topic: whats-new
 ---

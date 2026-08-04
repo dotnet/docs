@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ---
 # PackagePart.GetStream() returns a non-seekable stream for compressed parts in ReadWrite packages
 
-When you open a <xref:System.IO.Packaging.Package> with `FileAccess.ReadWrite` and then open a compressed part for reading that hasn't been modified in the current session, <xref:System.IO.Packaging.PackagePart.GetStream*?displayProperty=nameWithType> now returns a forward-only stream instead of a seekable <xref:System.IO.MemoryStream>.
+When you open a <xref:System.IO.Packaging.Package> with <System.IO.FileAccess.ReadWrite?displayProperty=nameWithType> and then open a compressed part for reading that hasn't been modified in the current session, <xref:System.IO.Packaging.PackagePart.GetStream*?displayProperty=nameWithType> now returns a forward-only stream instead of a seekable <xref:System.IO.MemoryStream>.
 
 ## Version introduced
 
@@ -20,7 +20,7 @@ Previously, when you opened a `Package` with `FileAccess.ReadWrite` (which maps 
 using Package package = Package.Open("file.docx", FileMode.Open, FileAccess.ReadWrite);
 PackagePart part = package.GetPart(new Uri("/word/document.xml", UriKind.Relative));
 
-// Previously: returned a seekable MemoryStream.
+// Returned a seekable MemoryStream.
 using Stream stream = part.GetStream(FileMode.Open, FileAccess.Read);
 Console.WriteLine(stream.CanSeek);   // true
 stream.Seek(0, SeekOrigin.Begin);    // succeeded
@@ -35,7 +35,7 @@ Starting in .NET 11, the same call returns a forward-only (non-seekable) stream 
 using Package package = Package.Open("file.docx", FileMode.Open, FileAccess.ReadWrite);
 PackagePart part = package.GetPart(new Uri("/word/document.xml", UriKind.Relative));
 
-// Now: returns a forward-only (non-seekable) stream.
+// Returns a forward-only (non-seekable) stream.
 using Stream stream = part.GetStream(FileMode.Open, FileAccess.Read);
 Console.WriteLine(stream.CanSeek);   // false
 stream.Seek(0, SeekOrigin.Begin);    // throws NotSupportedException
@@ -57,7 +57,7 @@ The following scenarios aren't affected:
 - Uncompressed (`Stored`) parts: They remain seekable.
 - Parts modified earlier in the current session: They're served from an in-memory snapshot, so they remain seekable.
 - `Stream.Length`: It still works for all read streams.
-- Forward-only consumers (the common case, such as `XmlReader`, `XDocument.Load`, the Open XML SDK, and `CopyTo`): They're unaffected.
+- Forward-only consumers (the common case, such as `XmlReader`, `XDocument.Load`, the Open XML SDK, and `CopyTo`).
 - Target frameworks earlier than .NET 11: The optimization is gated behind `NET11_0_OR_GREATER`.
 
 ## Type of breaking change

@@ -23,7 +23,7 @@ In the GitHub Copilot app for desktop, the dashboard opens as a side panel. In o
 
 ## Open the dashboard
 
-When you start an upgrade session, Copilot may open the dashboard automatically. If the dashboard doesn't open, ask Copilot to show it in your initial prompt or during an active upgrade session.
+When you start an upgrade session, Copilot might open the dashboard automatically. If the dashboard doesn't open, ask Copilot to show it in your initial prompt or during an active upgrade session.
 
 Example prompts:
 

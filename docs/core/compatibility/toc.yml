@@ -86,6 +86,8 @@ items:
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
               - name: NuGet pack warns for package IDs with restricted characters
                 href: sdk/11/nuget-pack-nu5052-packageid.md
+              - name: SDK local container runtime selection prefers platform-native tools
+                href: sdk/11/native-local-container-runtimes.md
               - name: Template engine packages no longer support netstandard2.0
                 href: sdk/11/template-engine-netstandard.md
               - name: VSTest removes dependency on Newtonsoft.Json

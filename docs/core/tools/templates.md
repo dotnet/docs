@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 As a template author, you create .NET templates—blueprints that generate projects, files, or other resources from a predefined structure. When users run `dotnet new <shortName>`, the .NET template engine reads the template and produces the output in the current directory. Visual Studio's **Create a new project** dialog also uses the .NET template engine for .NET project templates, so templates you author for the CLI work in Visual Studio too.
 
-The .NET SDK ships with built-in templates for common starting points like console apps, class libraries, and ASP.NET projects. Beyond those built-in templates, you can install templates, and create and distribute your own templates as NuGet packages.
+The .NET SDK ships with built-in templates for common starting points like console apps, class libraries, and ASP.NET projects. Beyond those built-in templates, you can author your own templates and distribute them as NuGet packages.
 
 This article is a reference for template authors. It covers how templates are structured, configured, and distributed. For step-by-step instructions to create and package templates, see the [Related content](#related-content) section.
 
@@ -25,7 +25,7 @@ The .NET template engine supports three types of templates: item templates, proj
 
 - **Item templates** generate one or more files, such as a code file, configuration file, or other resource, without generating an entire project around them. For example, an item template might produce a class file that adds a set of extension methods, or a JSON configuration file that follows a standard layout your team uses. To learn how to build an item template, see [Tutorial: Create an item template](../tutorials/cli-templates-create-item-template.md).
 
-- **Project templates** generate a complete project structure. When you run `dotnet new console`, for example, the console project template produces a `.csproj` file, a `Program.cs` file, and any other files that make up the project. Use a project template when you want to give users a full project starting point rather than individual files. To learn how to build a project template, see [Tutorial: Create a project template](../tutorials/cli-templates-create-project-template.md).
+- **Project templates** generate a complete project structure. The built-in console project template, for example, produces a `.csproj` file, a `Program.cs` file, and any other files that make up the project. Author a project template when you want to give users a full project starting point rather than individual files. To learn how to build a project template, see [Tutorial: Create a project template](../tutorials/cli-templates-create-project-template.md).
 
 - **Solution templates** generate a solution with one or more projects. For example, a solution template can create an API project paired with a test project in a single step.
 
@@ -127,7 +127,7 @@ For example, the following symbol lets users set the class name when they create
 
 With this symbol defined, a user can run `dotnet new <shortName> --ClassName MyHelpers` to produce a file named `MyHelpers.cs` containing a class named `MyHelpers`. Without the flag, the file and class keep the default name `StringExtensions`.
 
-To see all available parameters for any installed template, pass `-?` to the template's short name:
+To verify the parameters your template exposes, pass `-?` to its short name after you install it:
 
 ```dotnetcli
 dotnet new <shortName> -?
@@ -135,7 +135,7 @@ dotnet new <shortName> -?
 
 ## Template packages
 
-A template package is a NuGet (`.nupkg`) file that bundles one or more templates together. When you install a template package, the .NET template engine registers every template inside it at once. Packages are the standard way to distribute templates. You can publish a single package to NuGet.org or a private NuGet feed, or share a local `.nupkg` file. Users install the whole collection with one command.
+A template package is a NuGet (`.nupkg`) file that bundles one or more of your templates together. When a user installs your template package, the .NET template engine registers every template inside it at once. Packages are the standard way to distribute templates. Publish a single package to NuGet.org or a private NuGet feed, or share a local `.nupkg` file, and users get the whole collection with one command.
 
 To build a template package, use a C# project file (`.csproj`) configured to act as a **packaging project** rather than a compilation project. The key settings that make this work are:
 
@@ -269,9 +269,9 @@ Localization is optional. If you don't include localization files, the template 
 
 ## Visual Studio integration
 
-Visual Studio's **Create a new project** dialog uses the .NET template engine for .NET project templates. Templates you create for `dotnet new` work in Visual Studio too, without any extra configuration. When you install a template package with `dotnet new install`, Visual Studio automatically detects and surfaces those templates in the dialog.
+Visual Studio's **Create a new project** dialog uses the .NET template engine for .NET project templates. Templates you author for `dotnet new` work in Visual Studio too, without any extra configuration. When a user installs your template package with `dotnet new install`, Visual Studio automatically detects and surfaces those templates in the dialog.
 
-**Project and solution templates** appear in the **Create a new project** dialog alongside the built-in SDK templates. Other users can find your template by name, language, or the tags from the `classifications` field in `template.json`. Accurate classifications help your template surface in the right filter categories, so choose them carefully. To give your template a polished appearance in the dialog, add an `icon.png` to the `.template.config` folder — Visual Studio displays it next to your template's name.
+**Project and solution templates** appear in the **Create a new project** dialog alongside the built-in SDK templates. Users can find templates by name, language, or the tags from the `classifications` field in the template's `template.json` file. Accurate classifications help your template surface in the right filter categories, so choose them carefully. To give your template a polished appearance in the dialog, add an `icon.png` to the `.template.config` folder — Visual Studio displays it next to your template's name.
 
 **Item templates** don't currently appear in the **Add** > **New Item** dialog. Users can still use item templates with the `dotnet new` command in the terminal.
 

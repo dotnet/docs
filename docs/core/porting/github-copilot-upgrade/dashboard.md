@@ -19,11 +19,11 @@ The Upgrade Dashboard provides a visual view of a GitHub Copilot upgrade session
 - Check the upgrade strategy and settings.
 - Publish the assessment as a private GitHub gist for team review.
 
-In the GitHub Copilot app for desktop, the dashboard opens as a side panel. In the GitHub Copilot CLI, it opens in your browser. The dashboard isn't available in Visual Studio Code, Visual Studio, or other IDEs.
+In the GitHub Copilot app for desktop, the dashboard opens as a side panel. In other environments, such as the GitHub Copilot CLI or an IDE, it opens in your browser.
 
 ## Open the dashboard
 
-When you start an upgrade session, Copilot opens the dashboard automatically. If the dashboard doesn't open, ask Copilot to show it in your initial prompt or during an active upgrade session.
+When you start an upgrade session, Copilot may open the dashboard automatically. If the dashboard doesn't open, ask Copilot to show it in your initial prompt or during an active upgrade session.
 
 Example prompts:
 

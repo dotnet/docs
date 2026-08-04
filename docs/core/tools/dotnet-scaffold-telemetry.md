@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 The `dotnet-scaffold` command includes a telemetry feature that collects usage data. This feature helps the `dotnet-scaffold` team understand how the tool is used so they can improve it.
 
-The `dotnet-scaffold` tool is a .NET global tool that generates code to speed up development. It isn't included with the .NET SDK, so install it separately with the following command:
+`dotnet-scaffold` is a .NET global tool that generates code to speed up development. The telemetry feature applies when you use the tool, which isn't included with the .NET SDK. To install it, run the following command:
 
 ```dotnetcli
 dotnet tool install --global Microsoft.dotnet-scaffold

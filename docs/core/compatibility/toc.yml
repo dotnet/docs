@@ -40,6 +40,8 @@ items:
                 href: cryptography/11/obsolete-apis.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+              - name: Linux AIA certificate fetching limited to two fetches per chain build
+                href: cryptography/11/aia-fetch-limit-linux.md
           - name: Deployment
             items:
               - name: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json

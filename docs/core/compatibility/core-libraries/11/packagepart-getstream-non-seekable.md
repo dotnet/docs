@@ -56,7 +56,7 @@ The following scenarios aren't affected:
 - Read-only packages (`FileAccess.Read`): Their compressed part streams were already forward-only.
 - Uncompressed (`Stored`) parts: They remain seekable.
 - Parts modified earlier in the current session: They're served from an in-memory snapshot, so they remain seekable.
-- `Stream.Length`: It still works for all read streams.
+- Accessing `Stream.Length`.
 - Forward-only consumers (the common case, such as `XmlReader`, `XDocument.Load`, the Open XML SDK, and `CopyTo`).
 - Target frameworks earlier than .NET 11: The optimization is gated behind `NET11_0_OR_GREATER`.
 
@@ -76,7 +76,7 @@ If your code requires a seekable stream from a compressed part of a `ReadWrite` 
 
 ```csharp
 using Stream partStream = part.GetStream(FileMode.Open, FileAccess.Read);
-using var seekable = new MemoryStream();
+using MemoryStream seekable = new();
 partStream.CopyTo(seekable);
 seekable.Position = 0;
 // Use 'seekable'. It's fully buffered and seekable.

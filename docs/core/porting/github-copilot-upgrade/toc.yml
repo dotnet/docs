@@ -1,5 +1,5 @@
 items:
-  - name: GitHub Copilot modernization for .NET
+  - name: GitHub Copilot upgrade for .NET
     href: index.yml
   - name: Overview
     href: overview.md
@@ -7,6 +7,8 @@ items:
     href: install.md
   - name: Core concepts
     href: concepts.md
+  - name: Dashboard
+    href: dashboard.md
   - name: Working with the agent
     href: working-with-agent.md
   - name: Scenarios and skills reference
@@ -30,4 +32,4 @@ items:
         href: troubleshooting.md
 
   - name: Migrate .NET apps to Azure
-    href: ../../../azure/migration/appmod/predefined-tasks.md
+    href: ../../../azure/migration/appmod/overview.md

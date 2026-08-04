@@ -40,6 +40,8 @@ items:
                 href: cryptography/11/obsolete-apis.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+              - name: Linux AIA certificate fetching limited to two fetches per chain build
+                href: cryptography/11/aia-fetch-limit-linux.md
           - name: Deployment
             items:
               - name: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json
@@ -78,6 +80,8 @@ items:
                 href: sdk/11/dnx-scripts-bypass-global-json.md
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
+              - name: NativeAOT CLI command handling enabled by default
+                href: sdk/11/native-cli-command-handling-enabled.md
               - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
               - name: NuGet pack warns for package IDs with restricted characters

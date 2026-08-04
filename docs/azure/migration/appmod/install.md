@@ -2,11 +2,12 @@
 title: Install GitHub Copilot modernization
 description: "Learn how to install and set up GitHub Copilot modernization across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com."
 ms.topic: install-set-up-deploy
-ms.date: 07/07/2026
+ms.date: 07/30/2026
+ms.custom: devx-track-dotnet
 ai-usage: ai-assisted
 zone_pivot_groups: copilot-modernization-install
 
-#customer intent: As a developer, I want to install GitHub Copilot modernization so that I can upgrade my .NET applications.
+#customer intent: As a developer, I want to install GitHub Copilot modernization so that I can modernize my .NET applications.
 
 ---
 
@@ -53,20 +54,18 @@ Before you install, make sure you have:
 Install as a Visual Studio Code extension:
 
 1. In Visual Studio Code, open the **Extensions** view (<kbd>Ctrl+Shift+X</kbd>).
-1. Search for **GitHub Copilot upgrade**.
+1. Search for **GitHub Copilot modernization**.
 1. Select **Install**.
-
-The extension automatically acquires the .NET SDK if it's missing, registers tools, and adds the agent to Copilot Chat as `Upgrade`.
 
 ## Verify the installation
 
 1. Open a project in Visual Studio Code.
 1. Open the **GitHub Copilot Chat** view.
-1. Send `@upgrade` in chat and confirm the agent responds.
+1. Send `@modernize` in chat and confirm the agent responds.
 
    -or-
 
-   Select the **Agent** picker and find the `Upgrade` entry.
+   Select the **Agent** picker and find the `Modernize` entry.
 
 ::: zone-end
 
@@ -88,18 +87,18 @@ Install through the GitHub Copilot CLI:
 1. Add the marketplace plugin:
 
    ```console
-   /plugin marketplace add microsoft/upgrade-agent-plugins
+   /plugin marketplace add microsoft/github-copilot-modernization
    ```
 
 1. Install the plugin:
 
    ```console
-   /plugin install upgrade-agent@upgrade-agent-plugins
+   /plugin install github-copilot-modernization@github-copilot-modernization
    ```
 
 ## Verify the installation
 
-Run `/agent` to confirm that `upgrade-agent` appears in the agent list.
+Run `/plugin list` to confirm that `github-copilot-modernization@github-copilot-modernization` appears in the list.
 
 ::: zone-end
 
@@ -116,24 +115,19 @@ Before you install, make sure you have:
 
 Install through the GitHub Copilot app:
 
-1. Click [https://github.com/copilot/app/launch](https://github.com/copilot/app/launch?entry_point=upgrade_agent_docs&open=ghapp%3A%2F%2Fplugins%2Fmarketplace%2Fadd%3Fsource%3Dmicrosoft%2Fupgrade-agent-plugins) to automatically open the **Settings** > **Plugins** window in the GitHub Copilot app.
+1. Click [https://github.com/copilot/app/launch](https://github.com/copilot/app/launch?entry_point=modernization_agent_dotnetdocs&open=ghapp%3A%2F%2Fplugins%2Fmarketplace%2Fadd%3Fsource%3Dmicrosoft%2Fgithub-copilot-modernization) to automatically open the **Settings** > **Plugins** window in the GitHub Copilot app.
 1. In the **Add plugin marketplace?** dialog, select **Allow**.
 1. In the **Plugins** window, select **Add marketplace**.
-1. Expand the **upgrade-agent-plugins** entry and select **Install** on the **upgrade-agent** plugin.
+1. Expand the **github-copilot-modernization** entry and select **Install** on the **github-copilot-modernization** plugin.
 
 ## Verify the installation
 
-Run `/agent` to confirm that `upgrade-agent:upgrade` appears in the agent list.
-
--or-
-
-Select the **Default agent** picker and find the **Upgrade** entry.
+Run `/agent` to confirm that the new agent appears in the agent list.
 
 ::: zone-end
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](overview.md)
-- [Upgrade a .NET app with GitHub Copilot modernization](how-to-upgrade-with-github-copilot.md)
-- [Core concepts](concepts.md)
 - [GitHub Copilot modernization FAQ](faq.yml)
+- [Quickstart: Assess and migrate a .NET project with GitHub Copilot modernization for .NET](quickstart.md)
+- [Application assessment with GitHub Copilot modernization](working-with-assessment.md)

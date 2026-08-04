@@ -8,8 +8,8 @@ public record class Outcome<T> : Outcome<T>.IUnionMembers
 
     public interface IUnionMembers
     {
-        static Outcome<T> Create(T? value) => new(value: value);
-        static Outcome<T> Create(Exception? value) => new(value: value);
+        static Outcome<T> Create(T? value) => new((object?)value);
+        static Outcome<T> Create(Exception? value) => new((object?)value);
         object? Value { get; }
 
         // only when needed

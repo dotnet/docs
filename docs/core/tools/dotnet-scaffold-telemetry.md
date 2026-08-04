@@ -31,18 +31,6 @@ To suppress the "first run" experience text, set the `DOTNET_SCAFFOLD_SKIP_FIRST
 
 ## Data points
 
-The telemetry feature doesn't collect:
-
-* Personal data, such as usernames, email addresses, or URLs.
-* Any project data.
-
-The data is sent securely to Microsoft servers and held under restricted access.
-
-Protecting your privacy is important to us. If you suspect the telemetry feature is collecting sensitive data or the data is being insecurely or inappropriately handled, take one of the following actions:
-
-* File an issue in the [dotnet/scaffolding](https://github.com/dotnet/scaffolding/issues) repository.
-* Send an email to [dotnet@microsoft.com](mailto:dotnet@microsoft.com) for investigation.
-
 The telemetry feature collects the following data for .NET SDK version 8.0 and later:
 
 * Timestamp of invocation.
@@ -60,6 +48,18 @@ The telemetry feature collects the following data for .NET SDK version 8.0 and l
 * dotnet-scaffold-aspire scaffolder name and whether it succeeded.
 * dotnet-scaffold-aspnet scaffolder validation method name and whether it succeeded.
 * dotnet-scaffold-aspire scaffolder validation method name and whether it succeeded.
+
+The telemetry feature **does not** collect:
+
+* Personal data, such as usernames, email addresses, or URLs.
+* Any project data.
+
+The data is sent securely to Microsoft servers and held under restricted access.
+
+Protecting your privacy is important to us. If you suspect the telemetry feature is collecting sensitive data or the data is being insecurely or inappropriately handled, take one of the following actions:
+
+* File an issue in the [dotnet/scaffolding](https://github.com/dotnet/scaffolding/issues) repository.
+* Send an email to [dotnet@microsoft.com](mailto:dotnet@microsoft.com) for investigation.
 
 ## Additional resources
 

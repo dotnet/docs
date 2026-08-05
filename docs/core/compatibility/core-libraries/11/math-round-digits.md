@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Math.Round and MathF.Round return correctly rounded results
 
-<xref:System.Math.Round(System.Double,System.Int32)> and <xref:System.MathF.Round(System.Single,System.Int32)>, and their <xref:System.MidpointRounding> overloads, now return the value that's correctly rounded to the requested number of fractional digits based on the *exact* value of the input. Some inputs now round to a different (and correct) result than in previous releases. In addition, the `digits` argument no longer has an upper limit.
+<xref:System.Math.Round(System.Double,System.Int32)?displayProperty=nameWithType> and <xref:System.MathF.Round(System.Single,System.Int32)?displayProperty=nameWithType>, and their <xref:System.MidpointRounding> overloads, now return the value that's correctly rounded to the requested number of fractional digits based on the *exact* value of the input. Some inputs now round to a different (and correct) result than in previous releases. In addition, the `digits` argument no longer has an upper limit.
 
 ## Version introduced
 
@@ -57,7 +57,7 @@ Most code needs no change and benefits from the corrected results.
 
 If you depend on the exact prior (incorrect) output, round using the previous approach explicitly, for example, `Math.Round(value * pow10, mode) / pow10`. Alternatively, perform the rounding using `decimal` when the values represent base-10 quantities such as currency.
 
-`double` and `float` are binary floating-point types and can't exactly represent most decimal fractions. For exact decimal rounding of decimal quantities, prefer <xref:System.Decimal>.
+`double` and `float` are binary floating-point types and can't exactly represent most decimal fractions. For exact decimal rounding of decimal quantities, prefer <xref:System.Decimal>. <System.Numerics.Decimal32>, <System.Numerics.Decimal64>, and <System.Numerics.Decimal128> are IEEE 754 decimal-based types with expanded ranges and functionality, and are also suitable for this type of work.
 
 ## Affected APIs
 
@@ -66,4 +66,4 @@ If you depend on the exact prior (incorrect) output, round using the previous ap
 - <xref:System.MathF.Round(System.Single,System.Int32)?displayProperty=fullName>
 - <xref:System.MathF.Round(System.Single,System.Int32,System.MidpointRounding)?displayProperty=fullName>
 
-The same corrected behavior and lifted `digits` range flow through the numeric interface entry points that delegate to these methods, for example, `double.Round`, `float.Round`, `Half.Round`, and `NFloat.Round`. <xref:System.Math.Round(System.Decimal,System.Int32)> and the single-argument <xref:System.Math.Round(System.Double)> and <xref:System.MathF.Round(System.Single)> overloads are unaffected.
+The same corrected behavior and lifted `digits` range flow through the numeric interface entry points that delegate to these methods, for example, `double.Round`, `float.Round`, `Half.Round`, and `NFloat.Round`. <xref:System.Math.Round(System.Decimal,System.Int32)?displayProperty=nameWithType> and the single-argument <xref:System.Math.Round(System.Double)?displayProperty=nameWithType> and <xref:System.MathF.Round(System.Single)?displayProperty=nameWithType> overloads are unaffected.

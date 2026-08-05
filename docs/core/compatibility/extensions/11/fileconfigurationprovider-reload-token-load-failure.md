@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # FileConfigurationProvider doesn't raise reload token after ignored load failure
 
-In .NET 11, <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> doesn't call `OnReload` or fire its reload token after <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider.Load> fails and its <xref:Microsoft.Extensions.Configuration.FileConfigurationSource.OnLoadException> callback ignores the exception.
+<xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> no longer calls `OnReload` or fires its reload token after <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider.Load> fails and its <xref:Microsoft.Extensions.Configuration.FileConfigurationSource.OnLoadException> callback ignores the exception.
 
 ## Version introduced
 

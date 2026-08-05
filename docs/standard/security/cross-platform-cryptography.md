@@ -3,6 +3,7 @@ title: "Cross-platform cryptography"
 description: Learn about cryptographic capabilities on platforms supported by .NET.
 ms.date: 08/03/2026
 ms.subservice: standard-library
+ms.topic: reference
 helpviewer_keywords:
   - "cryptography, cross-platform"
   - "encryption, cross-platform"
@@ -383,8 +384,6 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflec
 | MLDSA87-RSA3072-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA87-RSA4096-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA87-ECDSA-P521-SHA512              | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-
-Starting in .NET 11, Windows support for Composite ML-DSA uses the native Windows implementation, which only supports the algorithms marked "Windows 11 Insiders (Latest)" in the preceding table. For more information, see [Composite ML-DSA on Windows uses native implementation](../../core/compatibility/cryptography/11/compositemldsa-windows-native.md).
 
 #### Native interop composite ML-DSA
 

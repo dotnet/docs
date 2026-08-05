@@ -50,6 +50,8 @@ items:
             items:
               - name: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks
                 href: extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md
+              - name: FileConfigurationProvider doesn't raise reload token after ignored load failure
+                href: extensions/11/fileconfigurationprovider-reload-token-load-failure.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
               - name: Some Microsoft.Extensions packages included in shared framework

@@ -1006,6 +1006,6 @@ The following table shows templates that have been discontinued and no longer co
 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new list command](dotnet-new-list.md)
-- [.NET templates overview](templates.md)
+- [.NET templates for authors](templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
 - [Implicit using directives](../project-sdk/overview.md#implicit-using-directives)

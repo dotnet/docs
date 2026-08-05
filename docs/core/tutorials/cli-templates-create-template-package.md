@@ -209,7 +209,7 @@ Congratulations! You've installed and uninstalled a template package.
 
 ## Next steps
 
-To learn more about templates, see [.NET templates overview](../tools/templates.md).
+To learn more about templates, see [.NET templates for authors](../tools/templates.md).
 
 * [Template Authoring Tools](https://aka.ms/templating-authoring-tools)
 * [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)

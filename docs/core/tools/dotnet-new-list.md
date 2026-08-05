@@ -148,4 +148,4 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new search command](dotnet-new-search.md)
-- [.NET templates overview](templates.md)
+- [.NET templates for authors](templates.md)

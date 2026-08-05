@@ -85,4 +85,4 @@ The `dotnet new update` command with `--check-only` option checks for available 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new search command](dotnet-new-search.md)
 - [dotnet new install command](dotnet-new-install.md)
-- [.NET templates overview](templates.md)
+- [.NET templates for authors](templates.md)

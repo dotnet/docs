@@ -130,4 +130,4 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new list command](dotnet-new-list.md)
-- [.NET templates overview](templates.md)
+- [.NET templates for authors](templates.md)

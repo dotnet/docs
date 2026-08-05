@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # FileConfigurationSource.OnLoadException callback is called for IO errors
 
-<xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> and its derived types (used by `AddJsonFile`, `AddXmlFile`, and `AddIniFile`) now forward IO errors to the `OnLoadException` callback in addition to parsing errors.
+<xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> and its derived types (used by <Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile*>, <Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile*>, and <Microsoft.Extensions.Configuration.IniConfigurationExtensions.AddIniFile*>) now forward IO errors to the <xref:Microsoft.Extensions.Configuration.FileConfigurationSource.OnLoadException> callback in addition to parsing errors.
 
 ## Version introduced
 
@@ -38,26 +38,6 @@ This change is a bug fix. Configuration file IO errors are meaningful load failu
 - If you detected IO exceptions from `FileConfigurationProvider` or a derived type using `TaskScheduler.UnobservedTaskException`, move that logic to the `OnLoadException` callback.
 - Verify that any callback registered in `OnLoadException` can handle exceptions of any type, not just `InvalidDataException` or `FileNotFoundException`. Avoid unconditional casts, and use pattern matching or type checks instead.
 
-```csharp
-options.OnLoadException = context =>
-{
-    // Handle any exception type, not just InvalidDataException or FileNotFoundException.
-    if (context.Exception is IOException ioException)
-    {
-        // Handle IO errors.
-    }
-    else if (context.Exception is InvalidDataException invalidDataException)
-    {
-        // Handle parsing errors.
-    }
-
-    context.Ignore = true;
-};
-```
-
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Configuration.FileConfigurationSource.OnLoadException>
-- <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationSource.OnLoadException>
-- <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationSource.OnLoadException>
-- <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource.OnLoadException>
+- <xref:Microsoft.Extensions.Configuration.FileConfigurationSource.OnLoadException?displayProperty=fullName>

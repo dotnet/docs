@@ -49,7 +49,7 @@ All the following conditions must be true simultaneously for you to observe this
 - The part is opened for reading only (`GetStream(FileMode.Open, FileAccess.Read)`).
 - The part is compressed (`CompressionOption` other than `NotCompressed`).
 - The part wasn't written or modified earlier in the same session.
-- The consumer seeks the stream or reads `Position`.
+- The consumer unconditionally seeks the stream or reads `Position`.
 
 The following scenarios aren't affected:
 

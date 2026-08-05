@@ -1,6 +1,6 @@
 // <MemberProvider>
 [System.Runtime.CompilerServices.Union]
-public record class Outcome<T> : Outcome<T>.IUnionMembers
+public struct Outcome<T> : Outcome<T>.IUnionMembers
 {
     private readonly object? _value;
 
@@ -8,8 +8,8 @@ public record class Outcome<T> : Outcome<T>.IUnionMembers
 
     public interface IUnionMembers
     {
-        static Outcome<T> Create(T? value) => new((object?)value);
-        static Outcome<T> Create(Exception? value) => new((object?)value);
+        static Outcome<T> Create(T? value) => new(value);
+        static Outcome<T> Create(Exception? value) => new(value);
         object? Value { get; }
 
         // only when needed

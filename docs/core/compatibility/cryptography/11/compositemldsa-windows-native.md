@@ -42,7 +42,7 @@ It's preferable to use the native implementation the operating system provides r
 
 ## Recommended action
 
-Before you use a specific Composite ML-DSA algorithm on Windows, call <xref:System.Security.Cryptography.CompositeMLDsa.IsAlgorithmSupported%2A> to check whether the algorithm is supported. If an algorithm isn't supported, choose a supported algorithm or handle the resulting <xref:System.PlatformNotSupportedException>.
+Before you use a specific Composite ML-DSA algorithm on Windows, call <xref:System.Security.Cryptography.CompositeMLDsa.IsAlgorithmSupported*> to check whether the algorithm is supported. If an algorithm isn't supported, choose a supported algorithm or handle the resulting <xref:System.PlatformNotSupportedException>.
 
 ```csharp
 if (CompositeMLDsa.IsAlgorithmSupported(CompositeMLDsaAlgorithm.MLDsa65WithECDsaP384))

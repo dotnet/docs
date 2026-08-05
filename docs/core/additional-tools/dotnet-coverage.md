@@ -796,6 +796,10 @@ You can use the `merge` command to convert a code coverage report to another for
 dotnet-coverage merge -o output.xml -f xml input.coverage
 ```
 
+## Telemetry
+
+Starting with version 18.10.0, the `dotnet-coverage` tool collects telemetry data to help Microsoft understand how to improve the products. This usage data indicates which commands are used and which options are set when the tool runs. You can disable telemetry at any time. For more information about the data that's collected and how to opt out, see [Microsoft.CodeCoverage.Console telemetry](/visualstudio/test/microsoft-code-coverage-console-tool-telemetry?view=visualstudio).
+
 ## See also
 
 * [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis)

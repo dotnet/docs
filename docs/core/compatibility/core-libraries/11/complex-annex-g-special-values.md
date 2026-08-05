@@ -45,7 +45,7 @@ new Complex(double.PositiveInfinity, double.PositiveInfinity) * new Complex(1.0,
 
 Division by a zero divisor is likewise governed by Annex G: the result is a directed infinity, or NaN for `0/0`. For example, `(1, 0) / (0, 0)` yields an infinite real component rather than a fully NaN result.
 
-The change spans `operator *`, `operator /`, `Multiply`, `Divide`, `Reciprocal`, `Abs`, `Pow`, and the elementary functions (`Sqrt`, `Exp`, `Log`, `Log10`, and the trigonometric, hyperbolic, and inverse-trigonometric functions). One case Annex G leaves explicitly unspecified—the sign of a zero-valued quotient component from `operator /`—might also differ.
+The change spans `operator *`, `operator /`, `Multiply`, `Divide`, `Reciprocal`, `Abs`, `Pow`, and the elementary functions (`Sqrt`, `Exp`, `Log`, `Log10`, and the trigonometric, hyperbolic, and inverse-trigonometric functions). One case Annex G leaves explicitly unspecified, that is, the sign of a zero-valued quotient component from `operator /`, might also differ.
 
 ## Type of breaking change
 
@@ -59,19 +59,21 @@ For more information, see [dotnet/runtime#131132](https://github.com/dotnet/runt
 
 ## Recommended action
 
-Most code benefits from the more accurate results and needs no change. If your code explicitly depends on the previous `(NaN, NaN)` results for special-value inputs—for example, tests that assert `NaN` for `Complex` operations on infinities, or logic that treats any non-finite input as producing `NaN`—update it to expect the Annex G values. There's no compatibility switch to restore the previous behavior.
+Most code benefits from the more accurate results and needs no change. If your code explicitly depends on the previous `(NaN, NaN)` results for special-value inputs, update it to expect the Annex G values. Such code might be tests that assert `NaN` for `Complex` operations on infinities, or logic that treats any non-finite input as producing `NaN`.
+
+There's no compatibility switch to restore the previous behavior.
 
 ## Affected APIs
 
-- <xref:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.op_Division(System.Numerics.Complex,System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Divide(System.Numerics.Complex,System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Reciprocal(System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Abs(System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Pow(System.Numerics.Complex,System.Numerics.Complex)> and <xref:System.Numerics.Complex.Pow(System.Numerics.Complex,System.Double)>
-- <xref:System.Numerics.Complex.Sqrt(System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Exp(System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Log(System.Numerics.Complex)> (all overloads) and <xref:System.Numerics.Complex.Log10(System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Sin(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Cos(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Tan(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Sinh(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Cosh(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Tanh(System.Numerics.Complex)>
-- <xref:System.Numerics.Complex.Asin(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Acos(System.Numerics.Complex)>, <xref:System.Numerics.Complex.Atan(System.Numerics.Complex)>
+- <xref:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.op_Division(System.Numerics.Complex,System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Divide(System.Numerics.Complex,System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Reciprocal(System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Abs(System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Pow(System.Numerics.Complex,System.Numerics.Complex)?displayProperty=nameWithType> and <xref:System.Numerics.Complex.Pow(System.Numerics.Complex,System.Double)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Sqrt(System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Exp(System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Log(System.Numerics.Complex)?displayProperty=nameWithType> (all overloads) and <xref:System.Numerics.Complex.Log10(System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Sin(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Cos(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Tan(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Sinh(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Cosh(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Tanh(System.Numerics.Complex)?displayProperty=nameWithType>
+- <xref:System.Numerics.Complex.Asin(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Acos(System.Numerics.Complex)?displayProperty=nameWithType>, <xref:System.Numerics.Complex.Atan(System.Numerics.Complex)?displayProperty=nameWithType>

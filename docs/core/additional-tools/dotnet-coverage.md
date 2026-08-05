@@ -1,8 +1,9 @@
 ---
 title: dotnet-coverage code coverage tool - .NET CLI
 description: Learn how to install and use the dotnet-coverage CLI tool to collect code coverage data of a running process.
-ms.date: 10/21/2021
+ms.date: 08/05/2026
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 # dotnet-coverage code coverage utility
 
@@ -798,7 +799,7 @@ dotnet-coverage merge -o output.xml -f xml input.coverage
 
 ## Telemetry
 
-Starting with version 18.10.0, the `dotnet-coverage` tool collects telemetry data to help Microsoft understand how to improve the products. This usage data indicates which commands are used and which options are set when the tool runs. You can disable telemetry at any time. For more information about the data that's collected and how to opt out, see [Microsoft.CodeCoverage.Console telemetry](/visualstudio/test/microsoft-code-coverage-console-tool-telemetry).
+Starting with version 18.10.0, the `dotnet-coverage` tool collects telemetry data to help Microsoft improve the code coverage tools. The data records which commands you run and which options you set when you run the tool. You can disable telemetry at any time. For more information about the data that's collected and how to opt out, see [Microsoft.CodeCoverage.Console telemetry](/visualstudio/test/microsoft-code-coverage-console-tool-telemetry).
 
 ## See also
 

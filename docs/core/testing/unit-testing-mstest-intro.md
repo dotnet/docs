@@ -32,8 +32,8 @@ MSTest supports a wide range of .NET platforms and target frameworks. The follow
 |----------|-------------------|-------------------|-------------------|-------|
 | **.NET** | .NET 8+ | Full parallelization | All attributes | Recommended for new projects |
 | **.NET Framework** | 4.6.2+ | Full parallelization | All attributes | Full feature support |
-| **UWP** | UAP 10, .NET 9+ with UAP | UI thread | `UITestMethod` | Requires settings `<UseUwp>true</UseUwp>`; see [UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
-| **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | Requires Windows App SDK; see [WinUI sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankWinUINet9App) |
+| **UWP** | UAP 10, .NET 9+ with UAP | UI thread | `UITestMethod` | Use VSTest. Modern .NET UWP requires `<UseUwp>true</UseUwp>`; see [UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
+| **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | Requires Windows App SDK; see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md) |
 | **Native AOT** | .NET 8+ | Full parallelization | Most attributes | Limited feature set; see [Native AOT sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 | **Browser WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | Custom Microsoft.Testing.Platform host support starts with MSTest 4.4 |
 
@@ -57,7 +57,7 @@ public class UwpTests
 }
 ```
 
-For UWP setup, see the [BlankUwpNet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App).
+Use VSTest for classic UWP and modern .NET UWP because both run in an AppContainer. For a modern .NET UWP setup, see the [BlankUwpNet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App).
 
 #### WinUI 3 testing
 
@@ -77,7 +77,7 @@ public class WinUITests
 }
 ```
 
-For WinUI setup, see the [BlankWinUINet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankWinUINet9App) and [MSTestRunnerWinUI sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/MSTestRunnerWinUI).
+To configure unpackaged or packaged full-trust WinUI 3 tests, see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
 Starting with MSTest 4.4, Microsoft.Testing.Platform also supports unpackaged WinUI test applications. VSTest doesn't support this scenario. For setup details, see the [unpackaged WinUI sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/MSTestRunnerWinUIUnpackaged).
 
@@ -138,5 +138,6 @@ The MSTest team carefully reviews and minimizes breaking changes. When breaking 
 - [Get started with MSTest](unit-testing-mstest-getting-started.md)
 - [Write tests](unit-testing-mstest-writing-tests.md)
 - [Run tests](unit-testing-mstest-running-tests.md)
+- [Test WinUI 3 apps](unit-testing-mstest-winui.md)
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [MSTest code analyzers](mstest-analyzers/overview.md)

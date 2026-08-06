@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform vs VSTest - .NET test platform comparison
 description: Compare Microsoft.Testing.Platform (MTP) and VSTest to choose the right .NET test platform for your projects, CI pipelines, and IDE integration.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/24/2026
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -29,7 +29,8 @@ Use the following scenarios to choose quickly.
 | Use case | Choose | Why |
 |---|---|---|
 | You need Native AOT or trimming test execution scenarios. | MTP | MTP supports these modern deployment scenarios, while VSTest doesn't. |
-| You're building packaged WinUI or UWP test projects. | VSTest | These project types aren't currently supported by MTP. |
+| You're building UWP or another AppContainer test project. | VSTest | The MTP packaged-app extension supports full-trust packaged desktop hosts, not AppContainer hosts. |
+| You're testing an unpackaged or packaged full-trust WinUI 3 app. | MTP | MTP can run inside the WinUI app. Packaged full-trust apps use an experimental extension for package registration and AUMID activation. |
 | You need to mix .NET tests and non-.NET test adapters (for example JavaScript or C++ adapters). | VSTest | VSTest supports mixed-language adapter scenarios, while MTP is .NET-specific. |
 | You want test projects to behave like regular executables (`dotnet run`, direct executable run, `dotnet watch`, and startup-project F5 flows). | MTP | MTP is executable-first, so test apps run like standard .NET apps in local and CI workflows. |
 | You rely on long-established integrations across existing tooling. | VSTest | VSTest has the longest compatibility track record across existing products, tasks, and pipelines. MTP support is growing in the ecosystem, but some integrations may lag behind VSTest. |
@@ -71,3 +72,4 @@ For complete details about `dotnet test` modes and arguments, see [Testing with 
 - Understand VSTest options: [VSTest options](/visualstudio/test/vstest-console-options)
 - Migrate from VSTest: [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md)
 - Add capabilities: [MTP features](./microsoft-testing-platform-features.md)
+- Test WinUI 3 apps: [WinUI 3 testing with MSTest and MTP](./unit-testing-mstest-winui.md)

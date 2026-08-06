@@ -3,7 +3,8 @@ title: MSTest overview
 description: Learn about MSTest, Microsoft's testing framework for .NET, including supported platforms, key features, and getting started.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 08/06/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest overview
@@ -32,7 +33,7 @@ MSTest supports a wide range of .NET platforms and target frameworks. The follow
 | **.NET** | .NET 8+ | Full parallelization | All attributes | Recommended for new projects |
 | **.NET Framework** | 4.6.2+ | Full parallelization | All attributes | Full feature support |
 | **UWP** | UAP 10, .NET 9+ with UAP | UI thread | `UITestMethod` | Requires settings `<UseUwp>true</UseUwp>`; see [UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
-| **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | Requires Windows App SDK; see [WinUI sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankWinUINet9App) |
+| **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | Requires Windows App SDK; see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md) |
 | **Native AOT** | .NET 8+ | Full parallelization | Most attributes | Limited feature set; see [Native AOT sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 
 ### Platform-specific considerations
@@ -75,7 +76,7 @@ public class WinUITests
 }
 ```
 
-For WinUI setup, see the [BlankWinUINet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankWinUINet9App) and [MSTestRunnerWinUI sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/MSTestRunnerWinUI).
+To configure unpackaged or packaged full-trust WinUI 3 tests, see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
 #### Native AOT
 
@@ -125,5 +126,6 @@ The MSTest team carefully reviews and minimizes breaking changes. When breaking 
 - [Get started with MSTest](unit-testing-mstest-getting-started.md)
 - [Write tests](unit-testing-mstest-writing-tests.md)
 - [Run tests](unit-testing-mstest-running-tests.md)
+- [Test WinUI 3 apps](unit-testing-mstest-winui.md)
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [MSTest code analyzers](mstest-analyzers/overview.md)

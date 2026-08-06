@@ -1,14 +1,14 @@
 ---
 title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
-ms.date: 05/06/2025
+ms.date: 08/06/2026
 ---
 
 # IHttpClientFactory with .NET
 
-In this article, you'll learn how to use the `IHttpClientFactory` interface to create `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for a while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
+This article explains how to use the `IHttpClientFactory` interface to create `HttpClient` types with .NET fundamentals such as dependency injection (DI), logging, and configuration. <xref:System.Net.Http.HttpClient> makes HTTP requests and handles HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 
-With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
+<xref:System.Net.Http.IHttpClientFactory> is available in .NET, but not .NET Framework. It creates `HttpClient` instances with custom configurations and lets .NET workloads use resilient, transient-fault-handling third-party middleware.
 
 > [!WARNING]
 > If your app requires cookies, it's recommended to avoid using <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> sharing might leak cookies between unrelated parts of the application. Moreover, when <xref:Microsoft.Extensions.Http.HttpClientFactoryOptions.HandlerLifetime> expires, the handler is recycled, meaning that all cookies stored in its <xref:System.Net.CookieContainer> are lost.

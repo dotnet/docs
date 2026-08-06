@@ -16,7 +16,7 @@ ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
 Multithreading requires careful programming. For most tasks, you can reduce complexity by queuing requests for execution by thread pool threads. This topic addresses more difficult situations, such as coordinating the work of multiple threads, or handling threads that block.
 
 > [!NOTE]
-> Starting with .NET Framework 4, the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming in .NET](../parallel-programming/index.md).
+> The Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming in .NET](../parallel-programming/index.md).
 
 ## Deadlocks and race conditions
 

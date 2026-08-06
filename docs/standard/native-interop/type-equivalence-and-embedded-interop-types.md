@@ -1,6 +1,6 @@
 ---
 title: "Type equivalence and embedded interop types"
-description: Understand type equivalence between .NET types and members with a managed assembly, and COM types that are embedded into that assembly. Available in .NET; introduced in .NET Framework 4.
+description: Understand type equivalence between .NET types and members with a managed assembly, and COM types that are embedded into that assembly.
 ms.date: 07/08/2026
 ai-usage: ai-assisted
 helpviewer_keywords:

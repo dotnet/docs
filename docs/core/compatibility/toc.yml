@@ -12,6 +12,8 @@ items:
             items:
               - name: CborReader and CborWriter enforce a default maximum nesting depth
                 href: core-libraries/11/cbor-max-depth.md
+              - name: Complex special-value results now follow C23 Annex G
+                href: core-libraries/11/complex-annex-g-special-values.md
               - name: CRC32 validation added when reading ZIP archive entries
                 href: core-libraries/11/ziparchive-entry-crc32-validation.md
               - name: DateOnly and TimeOnly TryParse methods throw for invalid input
@@ -20,13 +22,17 @@ items:
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: Math.Round and MathF.Round return correctly rounded results
+                href: core-libraries/11/math-round-digits.md
               - name: NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions
                 href: core-libraries/11/namedpipeserverstream-unix-permissions.md
               - name: Nullable.GetUnderlyingType throws for custom Type subclasses
                 href: core-libraries/11/nullable-getunderlyingtype-throws.md
+              - name: PackagePart.GetStream() returns non-seekable stream for compressed parts
+                href: core-libraries/11/packagepart-getstream-non-seekable.md
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/11/obsolete-apis.md
-              - name: SafeFileHandle.IsAsync and FileStream.IsAsync accurately reflect non-blocking state on Unix
+              - name: SafeFileHandle.IsAsync and FileStream.IsAsync accurately reflect non-blocking state
                 href: core-libraries/11/safefilehandle-isasync-unix.md
               - name: TAR-reading APIs verify header checksums when reading
                 href: core-libraries/11/tar-checksum-validation.md

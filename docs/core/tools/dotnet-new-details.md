@@ -64,4 +64,4 @@ If the package is installed locally or is found on the official NuGet website, i
 - [dotnet new uninstall command](dotnet-new-uninstall.md)
 - [dotnet new list command](dotnet-new-list.md)
 - [dotnet new search command](dotnet-new-search.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)

@@ -39,7 +39,7 @@ A test passes a constant absolute path, or a relative path literal, directly to 
 
 ## Rule description
 
-A hardcoded or relative constant path targets a location shared by every other test in the assembly, and a relative path additionally resolves against the process-global current directory. Under in-assembly parallelization, two tests can then write to the same location concurrently and collide.
+A hardcoded or relative constant path targets a location shared by every other test in the assembly. Under in-assembly parallelization, two tests can then write to the same location concurrently and collide.
 
 ```csharp
 [TestMethod]

@@ -8,7 +8,7 @@ ms.date: 08/06/2026
 
 This article explains how to use the `IHttpClientFactory` interface to create `HttpClient` types with .NET fundamentals such as dependency injection (DI), logging, and configuration. <xref:System.Net.Http.HttpClient> makes HTTP requests and handles HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 
-<xref:System.Net.Http.IHttpClientFactory> is available in .NET, but not .NET Framework. It creates `HttpClient` instances with custom configurations and lets .NET workloads use resilient, transient-fault-handling third-party middleware.
+To use <xref:System.Net.Http.IHttpClientFactory> in .NET or .NET Framework, reference the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. The factory creates `HttpClient` instances with custom configurations and lets .NET workloads use resilient, transient-fault-handling third-party middleware.
 
 > [!WARNING]
 > If your app requires cookies, it's recommended to avoid using <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> sharing might leak cookies between unrelated parts of the application. Moreover, when <xref:Microsoft.Extensions.Http.HttpClientFactoryOptions.HandlerLifetime> expires, the handler is recycled, meaning that all cookies stored in its <xref:System.Net.CookieContainer> are lost.
@@ -19,7 +19,7 @@ This article explains how to use the `IHttpClientFactory` interface to create `H
 
 ## The `IHttpClientFactory` type
 
-All of the sample source code provided in this article requires the installation of the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Furthermore, the code examples demonstrate the usage of HTTP `GET` requests to retrieve user `Todo` objects from the free [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) API.
+All of the sample source code provided in this article requires the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/microsoft.extensions.hosting) NuGet packages. Furthermore, the code examples demonstrate the usage of HTTP `GET` requests to retrieve user `Todo` objects from the free [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) API.
 
 When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
 

@@ -25,7 +25,7 @@ Meet these requirements before you use the extension:
 
 - Target Windows platform version `10.0.19041.0` or later.
 - To register an unsigned build-output layout, enable Developer Mode or configure sideloading.
-- Use a full-trust packaged desktop host. The extension doesn't support UWP or other AppContainer hosts.
+- Use a full-trust packaged desktop host. The extension doesn't support classic UWP, modern .NET UWP with `UseUwp`, or other AppContainer hosts.
 
 For a complete self-hosted WinUI configuration, see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 

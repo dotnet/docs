@@ -32,7 +32,7 @@ MSTest supports a wide range of .NET platforms and target frameworks. The follow
 |----------|-------------------|-------------------|-------------------|-------|
 | **.NET** | .NET 8+ | Full parallelization | All attributes | Recommended for new projects |
 | **.NET Framework** | 4.6.2+ | Full parallelization | All attributes | Full feature support |
-| **UWP** | UAP 10, .NET 9+ with UAP | UI thread | `UITestMethod` | Requires settings `<UseUwp>true</UseUwp>`; see [UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
+| **UWP** | UAP 10, .NET 9+ with UAP | UI thread | `UITestMethod` | Use VSTest. Modern .NET UWP requires `<UseUwp>true</UseUwp>`; see [UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
 | **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | Requires Windows App SDK; see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md) |
 | **Native AOT** | .NET 8+ | Full parallelization | Most attributes | Limited feature set; see [Native AOT sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 
@@ -56,7 +56,7 @@ public class UwpTests
 }
 ```
 
-For UWP setup, see the [BlankUwpNet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App).
+Use VSTest for classic UWP and modern .NET UWP because both run in an AppContainer. For a modern .NET UWP setup, see the [BlankUwpNet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App).
 
 #### WinUI 3 testing
 

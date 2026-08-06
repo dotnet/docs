@@ -35,6 +35,14 @@ Unless your tests require package identity, use an unpackaged app. The unpackage
 
 Until a public MTP preview includes full-trust MSIX registration and AUMID activation, use VSTest for packaged full-trust WinUI 3 tests.
 
+### Understand the UWP boundary
+
+Don't treat UWP as another packaged WinUI 3 model. Both classic UWP projects that target UAP 10 and modern .NET UWP projects that set `UseUwp` to `true` run in an AppContainer. Packaging a WinUI 3 desktop app doesn't place it in that app model.
+
+Use VSTest for classic UWP and modern .NET UWP tests. The MTP packaged-app launcher targets full-trust packaged desktop hosts. It can't deliver its activation arguments or controller connection to an AppContainer host.
+
+For a modern .NET UWP configuration, see the [MSTest .NET 9 UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App).
+
 ## Configure the WinUI test host
 
 Both deployment models use the same self-hosted MTP setup.

@@ -21,7 +21,7 @@ ai-usage: ai-assisted
 | **Category**                        | Usage                                                                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                             |
 | **Enabled by default**              | Yes                                                                                      |
-| **Default severity**                | Warning starting with MSTest 4.3, Error before                                           |
+| **Default severity**                | Warning in MSTest 4.3 and later; error in earlier versions                               |
 | **Introduced in version**           | 3.10.0                                                                                   |
 | **Is there a code fix**             | No                                                                                       |
 

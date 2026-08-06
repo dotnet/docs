@@ -33,7 +33,7 @@ Starting with MSTest 4.4, the rule also detects coalescing assignments, such as 
 
 ## Rule description
 
-The `TestContext` parameter passed to each initialize method (`[AssemblyInitialize]` or `[ClassInitialize]`) is specific to the current context and is not updated on each test execution. Storing, for reuse, this `TextContext` object will most of the time lead to issues.
+The `TestContext` parameter passed to each initialize method (`[AssemblyInitialize]` or `[ClassInitialize]`) is specific to the current context and is not updated on each test execution. Storing, for reuse, this `TestContext` object will most of the time lead to issues.
 
 ## How to fix violations
 

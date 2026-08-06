@@ -437,6 +437,9 @@ public class RetryTests
 
 Starting with MSTest 3.8, create custom retry logic by inheriting from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.RetryBaseAttribute>:
 
+> [!IMPORTANT]
+> The `RetryBaseAttribute.ExecuteAsync` API, and its `RetryContext` and `RetryResult` types, are experimental. Using them produces the `MSTESTEXP` diagnostic, which you must acknowledge before you use the API.
+
 ```csharp
 public class CustomRetryAttribute : RetryBaseAttribute
 {

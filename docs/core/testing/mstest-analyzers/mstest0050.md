@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0050: Global test fixture should be valid"
 description: "Learn about code analysis rule MSTEST0050: Global test fixture should be valid"
-ms.date: 07/29/2025
+ms.date: 08/06/2026
 f1_keywords:
 - MSTEST0050
 - GlobalTestFixtureShouldBeValidAnalyzer
@@ -10,6 +10,7 @@ helpviewer_keywords:
 - MSTEST0050
 author: Evangelink
 ms.author: amauryleve
+ai-usage: ai-assisted
 ---
 # MSTEST0050: Global test fixture should be valid
 
@@ -20,7 +21,7 @@ ms.author: amauryleve
 | **Category**                        | Usage                                                                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                             |
 | **Enabled by default**              | Yes                                                                                      |
-| **Default severity**                | Error                                                                                    |
+| **Default severity**                | Warning starting with MSTest 4.3, Error before                                           |
 | **Introduced in version**           | 3.10.0                                                                                   |
 | **Is there a code fix**             | No                                                                                       |
 

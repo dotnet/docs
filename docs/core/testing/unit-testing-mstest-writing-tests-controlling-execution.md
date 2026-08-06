@@ -3,7 +3,7 @@ title: Test execution and control in MSTest
 description: Learn how to control test execution in MSTest with parallelization, threading, timeouts, retries, and conditional execution.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/19/2026
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -197,6 +197,74 @@ public class MixedTests
 > [!NOTE]
 > You only need `DoNotParallelize` when you've enabled parallel execution with the `Parallelize` attribute.
 
+### `ResourceLockAttribute`
+
+> [!IMPORTANT]
+> `ResourceLockAttribute` is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
+
+Use `[ResourceLock]` to serialize only tests that access the same named resource. Unlike `[DoNotParallelize]`, a resource lock doesn't block tests that use unrelated resources. The default `ReadWrite` mode is exclusive, while multiple tests that request `ResourceAccessMode.Read` for the same resource can run together.
+
+```csharp
+private const string Database = "integration-database";
+
+[TestMethod]
+[ResourceLock(Database, Mode = ResourceAccessMode.Read)]
+public void ReadsSharedSchema() { }
+```
+
+For process-wide state, use the constants in `WellKnownResources`: `CurrentDirectory`, `EnvironmentVariables`, and `Console`. Lock names use ordinal, case-sensitive equality and coordinate tests only within one test source or assembly. They don't coordinate tests from separate assemblies, processes, or machines, even when those tests use the same key.
+
+Lock scope follows the configured parallelization scope:
+
+- With `ClassLevel`, MSTest combines every lock declared on the class and its methods, then holds the strongest mode for the entire class lifecycle.
+- With `MethodLevel`, MSTest acquires locks for each test, including its test initialization and cleanup.
+- When parallelization is disabled, resource locks have no effect.
+
+If a test also uses `[DoNotParallelize]`, `[DoNotParallelize]` takes precedence and MSTest ignores its resource locks. A test that waits for a contended lock occupies a worker, so heavy lock contention can still reduce throughput.
+
+> [!TIP]
+> MSTest 4.4 adds parallel-safety analyzers [MSTEST0073](mstest-analyzers/mstest0073.md) through [MSTEST0077](mstest-analyzers/mstest0077.md) to help you declare stable lock keys and protect shared process state.
+
+## Test dependencies
+
+> [!IMPORTANT]
+> Test dependencies are planned for MSTest 4.4 and are available only in preview builds until MSTest 4.4.0 is released.
+
+Use `[DependsOn]` for integration or end-to-end tests that must run after other tests. Dependencies form a directed acyclic graph, so independent branches can still run in parallel.
+
+```csharp
+[TestMethod]
+public void CreateCart() { }
+
+[TestMethod, DependsOn(nameof(CreateCart))]
+public void PlaceOrder() { }
+```
+
+Apply multiple `[DependsOn]` attributes for fan-in, or apply the attribute to several tests for fan-out. You can reference a method in the same class, every test in another class, or one method in another class. Apply `[DependsOn]` to a test class to give every test in that class the dependency. When a dependency targets a data-driven test, MSTest waits for all its data rows.
+
+By default, a failed prerequisite skips its dependents, and the skip propagates. MSTest evaluates `ProceedOnFailure` per dependent test, not per edge. To run a dependent after failed prerequisites, set `ProceedOnFailure = true` on every `[DependsOn]` declaration for that test. One declaration left at the default causes MSTest to skip the dependent. MSTest reports dependency cycles before execution and fails the tests in the cycle. If a dependency isn't part of the selected run, MSTest warns and ignores the missing edge so filters and single-test runs still work.
+
+With Microsoft.Testing.Platform, you can also declare dependencies under `mstest.execution.dependencies` in `testconfig.json`:
+
+- Use `chains` for straight sequences.
+- Use `nodes` for fan-in, fan-out, and `proceedOnFailure`.
+
+```json
+{
+  "mstest": { "execution": { "dependencies": {
+    "chains": [["Contoso.Setup.CreateDatabase", "Contoso.Tests.ImportData"]],
+    "nodes": [{ "test": "Contoso.Reports.*", "dependsOn": ["Contoso.Tests.ImportData"], "proceedOnFailure": true }]
+  }}}
+}
+```
+
+Reference one test with its `Namespace.Class.Method` name, or reference every test in a class with `Namespace.Class.*`. MSTest merges configuration dependencies with dependencies declared through attributes.
+
+The `testconfig.json` form works only with Microsoft.Testing.Platform. The `[DependsOn]` attribute works with both Microsoft.Testing.Platform and VSTest. For build-time validation, enable [MSTEST0078](mstest-analyzers/mstest0078.md).
+
+> [!TIP]
+> Prefer independent tests, fixtures, or per-test setup for unit tests. Dependencies make tests harder to run in isolation, so reserve them for suites where the sequence itself is part of the scenario.
+
 ## Timeout attributes
 
 Timeout attributes prevent tests from running indefinitely and help identify performance issues.
@@ -357,6 +425,8 @@ public class RetryTests
 
 > [!NOTE]
 > Starting with MSTest 4.3, `RetryAttribute` can also be applied at the test class level. When applied to a test class, it applies to every test method in the class. A `RetryAttribute` on a method takes precedence over one on the containing class.
+>
+> Starting with MSTest 4.4, Microsoft.Testing.Platform reports every retry attempt in terminal output and identifies flaky and retried tests in the run summary. CTRF reports include retry details. TRX and JUnit reports continue to contain one final result per test, and superseded attempts don't affect the process exit code.
 
 > [!TIP]
 > Related analyzers:
@@ -463,17 +533,10 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CIConditionAttribute> run
 public class CIAwareTests
 {
     [TestMethod]
-    [CICondition] // Default: runs only in CI
+    [CICondition(ConditionMode.Include)]
     public void CIOnlyTest()
     {
         // Runs only in CI environments
-    }
-
-    [TestMethod]
-    [CICondition(ConditionMode.Include)]
-    public void ExplicitCIOnlyTest()
-    {
-        // Same as above, explicitly stated
     }
 
     [TestMethod]

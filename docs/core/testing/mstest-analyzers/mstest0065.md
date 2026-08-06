@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0065: Avoid Assert.AreEqual on collection types"
 description: "Learn about code analysis rule MSTEST0065: Avoid Assert.AreEqual on collection types"
-ms.date: 06/04/2026
+ms.date: 08/06/2026
 f1_keywords:
 - MSTEST0065
 - AvoidAssertAreEqualOnCollectionsAnalyzer
@@ -29,6 +29,8 @@ dev_langs:
 
 > [!NOTE]
 > This rule is available starting with MSTest 4.3.
+>
+> Starting with MSTest 4.3.3, the rule doesn't report collection types that declare their own equality behavior.
 
 ## Cause
 

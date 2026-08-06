@@ -239,27 +239,25 @@ The following MSTest 4.3 features are **experimental**. Their public APIs are su
 > [!NOTE]
 > Introduced in MSTest 4.3.0 (experimental).
 
-The MSTest reflection source generator moves test discovery, construction, and invocation from runtime reflection to compile time. Two problems motivate it:
+The MSTest reflection source generator replaces the assembly-wide reflection scan that finds `[TestClass]` types (`Assembly.GetTypes()`) with a compile-time class registry, and it supplies pre-built construction, invocation, and attribute data for the test methods it recognizes on those classes. It doesn't remove reflection everywhere: enumerating the methods on a discovered class (`Type.GetMethods()`) always happens at run time, in both source generation modes. Two problems motivate the generator:
 
-- When you publish a test project with [trimming](../deploying/trimming/trimming-options.md) or [Native AOT](../deploying/native-aot/index.md), the trimmer can't prove which types and methods MSTest's own reflection calls will touch at run time, so it can remove them. MSTest's reflection call sites are already annotated to suppress the resulting build warnings, but that suppression doesn't stop the trimmer from removing the members. Without the generator, a trimmed or Native AOT test binary can discover zero tests or throw `MissingMethodException`, even though the build itself is clean.
-- Reflecting over an assembly's types and methods at startup (`Assembly.GetTypes()`, then per-class `Type.GetMethods()`) costs time on every run, trimmed or not. Replacing that scan with a compile-time registry reduces startup cost, most noticeably for large test suites.
+- When you publish a test project with [trimming](../deploying/trimming/trimming-options.md) or [Native AOT](../deploying/native-aot/index.md), the trimmer can't prove which types and members MSTest's own reflection calls will touch at run time, so it can remove them. MSTest's reflection call sites are already annotated to suppress the resulting build warnings, but that suppression doesn't stop the trimmer from removing the members. Without the generator, a trimmed or Native AOT test binary can discover zero tests or throw `MissingMethodException`, even though the build itself is clean.
+- Reflecting over an assembly's types (`Assembly.GetTypes()`) at startup costs time on every run, trimmed or not. Replacing that scan with a compile-time class registry reduces startup discovery cost, most noticeably for large test suites. Per-class method enumeration (`Type.GetMethods()`) still happens at run time for every discovered class; the generator doesn't change that cost.
 
-Enable the generator by adding a reference to the [MSTest.SourceGeneration](https://www.nuget.org/packages/MSTest.SourceGeneration) package. Only prerelease versions are published today, so reference an explicit prerelease version:
+Enable the generator by adding a reference to the [MSTest.SourceGeneration](https://www.nuget.org/packages/MSTest.SourceGeneration) package. Only prerelease versions are published today:
 
-```xml
-<ItemGroup>
-    <PackageReference Include="MSTest.SourceGeneration" Version="2.0.0-alpha.*" />
-</ItemGroup>
+```dotnetcli
+dotnet add package MSTest.SourceGeneration --prerelease
 ```
 
-Your test code doesn't change. The generator emits a module initializer that registers your `[TestClass]` types and their `[TestMethod]`s with the adapter before it would otherwise scan the assembly.
+Your test code doesn't change. The generator emits a module initializer that adds your `[TestClass]` types to a compile-time class registry, replacing the assembly-wide reflection scan the adapter would otherwise perform to find test classes. For each `[TestMethod]` whose shape the generator recognizes (see [Supported test shapes](#supported-test-shapes)), it also emits pre-built attribute data and constructor/invocation delegates, which the adapter uses once it locates that method. Locating the methods on a class still happens through `Type.GetMethods()`, regardless of source generation mode.
 
 #### Choose a source generation mode
 
-The `MSTestSourceGenMode` MSBuild property selects what the generator emits for classes and methods it discovers:
+The `MSTestSourceGenMode` MSBuild property selects what the generator emits for the classes it discovers and the recognized methods on them:
 
-- `ReflectionFree` (the default): emits pre-built attribute arrays plus constructor, method, and property-setter delegates, so the adapter constructs tests, invokes them, and reads their attributes without runtime reflection.
-- `Rooting`: emits only the type and method registry plus `[DynamicDependency(All, typeof(T))]` for each discovered class and its accessible base types. This keeps the trimmer from removing those members, but the adapter still constructs tests, invokes them, and reads their attributes through runtime reflection.
+- `ReflectionFree` (the default): for a recognized method, the generator emits pre-built attribute data plus constructor, method, and property-setter delegates. Once the adapter locates that method (still through `Type.GetMethods()`), it uses the generated delegates instead of reflecting further to construct the instance, invoke the method, or read its attributes.
+- `Rooting`: emits only the class registry plus `[DynamicDependency(All, typeof(T))]` for each discovered class and its accessible base types. This keeps the trimmer from removing those members, but construction, invocation, and attribute reads all go through runtime reflection, for every method.
 
 ```xml
 <PropertyGroup>
@@ -267,7 +265,7 @@ The `MSTestSourceGenMode` MSBuild property selects what the generator emits for 
 </PropertyGroup>
 ```
 
-Both modes still fall back to runtime reflection for operations the generator doesn't model, such as enumerating every constructor or property on a type, or resolving a type by name across assemblies.
+Neither mode makes method discovery itself reflection-free: enumerating the methods on a class always uses `Type.GetMethods()`. Both modes also still fall back to runtime reflection for operations the generator doesn't model at all, such as enumerating every constructor or property on a type, or resolving a type by name across assemblies.
 
 #### Supported test shapes
 
@@ -276,33 +274,39 @@ With the generator active, it discovers and models:
 - Ordinary `[TestClass]` types with `[TestMethod]`s, as long as `[TestClass]` is declared directly on the type.
 - `[DataRow]` arguments, bound through the same generated invoker that calls the test method.
 - `[DynamicData]` sources. The generator still evaluates the referenced member at run time, but generated code constructs and invokes the test with the resulting values.
-- Base-class test fixtures, as long as `[TestClass]` is on the concrete (most derived) type. The generator still finds inherited test methods and shared `[ClassInitialize]`/`[TestContext]` members from accessible base types.
+- Base-class test fixtures, as long as `[TestClass]` is on the concrete (most derived) type. The generator still finds inherited test methods and shared `[ClassInitialize]`/`[TestContext]` members from accessible base types. The base class doesn't need its own registry entry — including when it's abstract — because its members become part of the concrete derived class's generated data.
 
 #### Unsupported test shapes
 
-The generator silently skips the following shapes. Tests with these shapes keep working when the generator isn't active, because runtime reflection finds them, but they're invisible to the generator's registry:
+Two different limitations apply, with different consequences for whether a test still runs.
 
-| Shape | Why it's skipped | Workaround |
+**Classes the registry omits.** The generator can't add the following class shapes to its compile-time class registry, so they're invisible to it. In an assembly where the generator did register at least one other class, these classes aren't reflectively rediscovered as a fallback — their tests don't run:
+
+| Shape | Why it's omitted | Workaround |
 |-------|-------------------|------------|
 | A class relies on a `[TestClass]` attribute inherited from a base class | Discovery doesn't follow inheritance | Apply `[TestClass]` directly to the derived class. Flagged by [MSTEST0069](mstest-analyzers/mstest0069.md) |
 | Open generic test class (`class Foo<T>`) | An open generic type can't be referenced at the point where the generator registers types | Make the class non-generic, or instantiate a concrete derived class |
-| Generic test method | A generic method's type arguments aren't known at compile time | Replace it with one or more non-generic methods |
-| Test method with a `ref`, `out`, or `in` parameter | The generated invoker passes arguments as `object?[]`, which can't represent a by-ref parameter | Use a wrapper type or a non-by-ref signature |
 | `file`-local test class | The generated registration code lives in a different file and can't reference a file-local type | Move the class out of file scope |
 | Private or protected nested test class | The generated registration code can't reference a type that's not visible outside its container | Make the test class, and every type that contains it, at least `internal` |
 | Static test class | The generator models instance-based test execution | Remove the `static` modifier |
-| Abstract test class | An abstract class can't be instantiated directly | Add a concrete derived class annotated with `[TestClass]`; the abstract class's members stay rooted through that derived class |
 
-Only the first row has a shipping diagnostic ([MSTEST0069](mstest-analyzers/mstest0069.md)) today. The generator's design defines dedicated diagnostics for the other shapes, but as of this writing those diagnostics aren't included in the publicly published `MSTest.SourceGeneration` package, so don't expect to see them yet.
+Only the first row has a shipping diagnostic today ([MSTEST0069](mstest-analyzers/mstest0069.md)). The generator's design defines dedicated diagnostics for the other rows, but those diagnostics aren't included in the publicly published `MSTest.SourceGeneration` package as of this writing.
+
+**Methods the generator doesn't model.** These method shapes don't get generated attribute data or an invocation delegate, but they still run: enumerating the methods on a class always uses runtime reflection, so a method with one of these shapes is still found and still executes through reflection, the same as it would without the generator active, as long as its containing class is otherwise in the registry.
+
+| Shape | Why it isn't modeled |
+|-------|-----------------------|
+| Generic test method | Its type arguments aren't known at compile time |
+| Test method with a `ref`, `out`, or `in` parameter | The generated invoker's arguments are `object?[]`, which can't represent a by-ref parameter |
 
 #### Rooting compared with discovery
 
 Two different questions matter for a trimmed or Native AOT test project, and it helps to keep them separate:
 
-- **Discovery** is whether the generator's compile-time registry knows about a class or method at all. A shape from the previous table is invisible to the registry regardless of how you configure trimming.
-- **Rooting** is whether the trimmer keeps a class or method's IL in the published output. The registry roots every class and method it discovers: `ReflectionFree` mode through direct code references, and `Rooting` mode through `[DynamicDependency(All, typeof(T))]`.
+- **Discovery** is whether the generator's compile-time class registry knows about a class at all. The class shapes in the first table above are invisible to the registry regardless of how you configure trimming. Method-level gaps don't affect discovery: reflection always enumerates a class's methods, so a generic method or a method with a by-ref parameter is found whether or not the generator modeled it.
+- **Rooting** is whether the trimmer keeps a class's IL, and its members', in the published output. The registry roots every class it discovers: `ReflectionFree` mode through direct code references to the generated delegates, and `Rooting` mode through `[DynamicDependency(All, typeof(T))]`.
 
-Because rooting only applies to what the generator discovers, an unsupported shape isn't rooted either, and its tests silently don't run once your assembly also has other source-generated test classes. Adding `<TrimmerRootAssembly Include="$(AssemblyName)" />` (see [Prepare .NET libraries for trimming](../deploying/trimming/prepare-libraries-for-trimming.md)) keeps the trimmer from removing that assembly's members, but it doesn't add a class back to the generator's discovery registry. For a genuinely unsupported shape, the fix is to change the shape, not to add a trimmer root.
+Because rooting only applies to classes the generator discovers, a class that's omitted from the registry isn't rooted either, and its tests silently don't run in a trimmed or Native AOT publish once your assembly also has other source-generated test classes. Adding `<TrimmerRootAssembly Include="$(AssemblyName)" />` (see [Prepare .NET libraries for trimming](../deploying/trimming/prepare-libraries-for-trimming.md)) keeps the trimmer from removing that assembly's members, but it doesn't add the class back to the generator's discovery registry — the adapter still doesn't consider it to exist in that assembly. For a genuinely omitted class, the fix is to change its shape, not to add a trimmer root. Unsupported method shapes don't need this workaround at all: their containing class is rooted normally, and because method enumeration is always reflective, those methods keep working without any additional trimming configuration.
 
 For more information about the generator's design and current limitations, see the [source generator design document](https://github.com/microsoft/testfx/blob/main/docs/source-generator/design.md) in the testfx repository.
 

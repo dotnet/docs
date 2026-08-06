@@ -30,7 +30,8 @@ Use the following scenarios to choose quickly.
 |---|---|---|
 | You need Native AOT or trimming test execution scenarios. | MTP | MTP supports these modern deployment scenarios, while VSTest doesn't. |
 | You're building UWP or another AppContainer test project. | VSTest | The MTP packaged-app extension supports full-trust packaged desktop hosts, not AppContainer hosts. |
-| You're testing an unpackaged or packaged full-trust WinUI 3 app. | MTP | MTP can run inside the WinUI app. Packaged full-trust apps use an experimental extension for package registration and AUMID activation. |
+| You're testing an unpackaged WinUI 3 app. | MTP | MTP can run inside the WinUI app and start its executable directly. |
+| You're testing a packaged full-trust WinUI 3 app. | MTP preview | An experimental extension provides package registration and AUMID activation. The implementation isn't available in a public NuGet package yet. |
 | You need to mix .NET tests and non-.NET test adapters (for example JavaScript or C++ adapters). | VSTest | VSTest supports mixed-language adapter scenarios, while MTP is .NET-specific. |
 | You want test projects to behave like regular executables (`dotnet run`, direct executable run, `dotnet watch`, and startup-project F5 flows). | MTP | MTP is executable-first, so test apps run like standard .NET apps in local and CI workflows. |
 | You rely on long-established integrations across existing tooling. | VSTest | VSTest has the longest compatibility track record across existing products, tasks, and pipelines. MTP support is growing in the ecosystem, but some integrations may lag behind VSTest. |

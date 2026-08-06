@@ -19,7 +19,7 @@ These extensions control how and where MTP deploys and starts the test host. The
 The packaged-app extension registers a full-trust packaged Windows test host from its build-output layout and activates it by Application User Model ID (AUMID). It's the reference consumer of the experimental `ITestHostLauncher` extension point for packaged Windows apps. This extension requires the [Microsoft.Testing.Extensions.PackagedApp](https://nuget.org/packages/Microsoft.Testing.Extensions.PackagedApp) NuGet package.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
+> The extension package is available starting with MTP version 2.3.0. Full-trust MSIX registration and AUMID activation are implemented in the `microsoft/testfx` repository but aren't available in a public NuGet package as of August 6, 2026. The extension is experimental, and its options and output format might change in a future version.
 
 Meet these requirements before you use the extension:
 

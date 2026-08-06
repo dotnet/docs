@@ -18,6 +18,8 @@ Choose between two WinUI 3 deployment models:
 
 > [!IMPORTANT]
 > The packaged-app extension supports full-trust packaged desktop apps. It doesn't support UWP or other AppContainer test hosts.
+>
+> Packaged full-trust AUMID activation is implemented in the `microsoft/testfx` repository but isn't available in a public NuGet package as of August 6, 2026. The current `1.0.0-alpha` packages don't contain the Windows-specific activation implementation. Use the packaged setup only after a package release identifies support for full-trust MSIX registration and AUMID activation.
 
 ## Choose a deployment model
 
@@ -136,13 +138,9 @@ Keep the default packaged WinUI configuration:
 - Keep `Package.appxmanifest` and the package assets in the project.
 - Set `EnableMsixTooling` to `true` if your project uses the single-project MSIX packaging tools.
 
-Add the packaged-app extension:
+After a preview that includes full-trust MSIX registration and AUMID activation becomes available, add that specific version of the [Microsoft.Testing.Extensions.PackagedApp](https://www.nuget.org/packages/Microsoft.Testing.Extensions.PackagedApp) package. Don't use an earlier `1.0.0-alpha` package for this setup.
 
-```dotnetcli
-dotnet add package Microsoft.Testing.Extensions.PackagedApp --prerelease
-```
-
-The package is currently available only as a prerelease. Its MSBuild props register the launcher through `AddSelfRegisteredExtensions`. Don't also call `AddPackagedAppDeployment`. An MTP run can register only one test host launcher.
+The package's MSBuild props register the launcher through `AddSelfRegisteredExtensions`. Don't also call `AddPackagedAppDeployment`. An MTP run can register only one test host launcher.
 
 The launcher performs these actions:
 

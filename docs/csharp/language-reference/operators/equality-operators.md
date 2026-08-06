@@ -57,7 +57,7 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
 
-As the preceding example shows, for reference-type members their reference values are compared, not the referenced instances.
+As the preceding example shows, the equality of reference-type members is compared using their specific equality implementations.
 
 ### String equality
 

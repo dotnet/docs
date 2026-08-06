@@ -44,6 +44,8 @@ items:
             items:
               - name: API obsoletions
                 href: cryptography/11/obsolete-apis.md
+              - name: Composite ML-DSA on Windows uses native implementation
+                href: cryptography/11/compositemldsa-windows-native.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
               - name: Linux AIA certificate fetching limited to two fetches per chain build

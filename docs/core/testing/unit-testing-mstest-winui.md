@@ -139,10 +139,10 @@ Keep the default packaged WinUI configuration:
 Add the packaged-app extension:
 
 ```dotnetcli
-dotnet add package Microsoft.Testing.Extensions.PackagedApp
+dotnet add package Microsoft.Testing.Extensions.PackagedApp --prerelease
 ```
 
-The package's MSBuild props register its launcher through `AddSelfRegisteredExtensions`. Don't also call `AddPackagedAppDeployment`. An MTP run can register only one test host launcher.
+The package is currently available only as a prerelease. Its MSBuild props register the launcher through `AddSelfRegisteredExtensions`. Don't also call `AddPackagedAppDeployment`. An MTP run can register only one test host launcher.
 
 The launcher performs these actions:
 
@@ -156,7 +156,7 @@ The launcher ignores an unrelated manifest in an ancestor directory unless an `A
 Meet these requirements before you run a packaged test app:
 
 - Use a Windows-specific target framework with platform version `10.0.19041.0` or later.
-- To register the unsigned build-output layout, enable Windows Developer Mode or configure sideloading.
+- To register the unsigned build-output layout, enable Developer Mode or configure sideloading.
 - Use a full-trust packaged desktop app. The extension doesn't support UWP or other AppContainer hosts.
 
 > [!CAUTION]
@@ -184,7 +184,7 @@ Use these checks for the most common setup failures:
 
 | Symptom | Check |
 |---|---|
-| The app reports multiple calls to `Application.Start`. | Remove `WinUITestTarget` from the self-hosted test app. |
+| The app reports multiple calls to `Application.Start`. | Remove the `WinUITestTarget` attribute from the self-hosted test app. |
 | The test run finishes but the process stays open. | Close the test window and call `Exit` in a `finally` block after `RunAsync`. |
 | Failed tests still return process exit code `0`. | Assign the result of `RunAsync` to `Environment.ExitCode`. |
 | An unpackaged run fails because `AppxManifest.xml` is missing. | Confirm that the project enables MTP and that the run doesn't use VSTest. |

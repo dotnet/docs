@@ -72,4 +72,4 @@ For complete details about `dotnet test` modes and arguments, see [Testing with 
 - Understand VSTest options: [VSTest options](/visualstudio/test/vstest-console-options)
 - Migrate from VSTest: [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md)
 - Add capabilities: [MTP features](./microsoft-testing-platform-features.md)
-- Test WinUI 3 apps: [WinUI 3 testing with MSTest and MTP](./unit-testing-mstest-winui.md)
+- Test WinUI 3 apps: [Test WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)

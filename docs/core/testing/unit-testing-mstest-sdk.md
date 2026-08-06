@@ -257,7 +257,7 @@ Your test code doesn't change. The generator emits a module initializer that add
 The `MSTestSourceGenMode` MSBuild property selects what the generator emits for the classes it discovers and the recognized methods on them:
 
 - `ReflectionFree` (the default): for a recognized method, the generator emits pre-built attribute data plus constructor, method, and property-setter delegates. Once the adapter locates that method (still through `Type.GetMethods()`), it uses the generated delegates instead of reflecting further to construct the instance, invoke the method, or read its attributes.
-- `Rooting`: emits only the class registry plus `[DynamicDependency(All, typeof(T))]` for each discovered class and its accessible base types. This keeps the trimmer from removing those members, but construction, invocation, and attribute reads all go through runtime reflection, for every method.
+- `Rooting`: emits the class and recognized-method registries plus `[DynamicDependency(All, typeof(T))]` for each discovered class and its accessible base types. This keeps the trimmer from removing those members, but construction, invocation, and attribute reads all go through runtime reflection, for every method.
 
 ```xml
 <PropertyGroup>

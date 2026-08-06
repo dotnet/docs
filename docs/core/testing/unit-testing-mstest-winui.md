@@ -28,10 +28,12 @@ Choose the deployment model before you configure the test project.
 | Requirement | Choose | Test host startup |
 |---|---|---|
 | Your tests don't need package identity or APIs that require package identity. | Unpackaged | MTP starts the app executable directly. |
-| Your tests require MSIX package identity or packaged-app behavior. | Packaged full-trust | The packaged-app extension registers the build output and activates the app by Application User Model ID (AUMID). |
+| Your tests require MSIX package identity or packaged-app behavior. | Packaged full-trust after the MTP preview becomes publicly available | The packaged-app extension registers the build output and activates the app by Application User Model ID (AUMID). |
 | Your tests must run in UWP or another AppContainer. | VSTest | The MTP packaged-app extension doesn't support AppContainer isolation. |
 
 Unless your tests require package identity, use an unpackaged app. The unpackaged model doesn't require package registration, Developer Mode, or the experimental packaged-app extension.
+
+Until a public MTP preview includes full-trust MSIX registration and AUMID activation, use VSTest for packaged full-trust WinUI 3 tests.
 
 ## Configure the WinUI test host
 

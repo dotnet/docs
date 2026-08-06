@@ -3,7 +3,7 @@ title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest, including initialization and cleanup at assembly, class, and test levels.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 06/16/2026
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -104,6 +104,9 @@ public static class SharedAssemblyFixtures
 ```
 
 The attribute allows multiple providers per assembly, so you can compose fixtures from several shared types.
+
+> [!WARNING]
+> Starting with MSTest 4.4, MSTest skips `AssemblyFixtureProviderAttribute` discovery when dynamic code isn't supported, including Native AOT runs. Use fixture methods declared directly in the test assembly for Native AOT. The [MSTEST0072](mstest-analyzers/mstest0072.md) analyzer reports configurations that it can detect at build time.
 
 ## Class-level lifecycle
 
@@ -230,7 +233,7 @@ public class GlobalTestLifecycleExample
 - Multiple methods with these attributes are allowed across the assembly
 
 > [!NOTE]
-> When multiple `GlobalTestInitialize` or `GlobalTestCleanup` methods exist, the execution order isn't guaranteed. The `TimeoutAttribute` isn't supported on `GlobalTestInitialize` methods.
+> When multiple `GlobalTestInitialize` or `GlobalTestCleanup` methods exist, the execution order isn't guaranteed. Starting with MSTest 4.4, global fixture methods support `[Timeout]` and the dedicated [global fixture timeout settings](unit-testing-mstest-configure.md#timeout-settings).
 
 > [!TIP]
 > Related analyzer: [MSTEST0050](mstest-analyzers/mstest0050.md) - validates global test fixture methods.

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 06/16/2026
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -90,6 +90,8 @@ The JUnit report creates a JUnit-compatible XML file for a test session. This ex
 
 > [!NOTE]
 > Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
+>
+> Starting with MSTest.Sdk 4.3, enable this extension with `<EnableMicrosoftTestingExtensionsJUnitReport>true</EnableMicrosoftTestingExtensionsJUnitReport>`. The extension isn't part of the `Default` or `AllMicrosoft` MSTest.Sdk profiles.
 
 ### Manual registration
 
@@ -125,6 +127,8 @@ builder.AddCtrfReportProvider();
 |---|---|
 | `--report-ctrf` | Generates the CTRF JSON report. |
 | `--report-ctrf-filename` | The name of the generated CTRF JSON report. The value must end with `.json`. The default is `<UserName>_<MachineName>_<assembly>_<tfm>_<timestamp>.ctrf.json`. To customize the name, see [Report file names](#report-file-names). Requires `--report-ctrf`. |
+
+Starting with MSTest 4.4, CTRF results for retried tests include the `retries` and `retryAttempts` fields. When a test passes after an earlier failed attempt, its result also includes `flaky: true`. The terminal summary identifies flaky and retried tests. TRX and JUnit reports keep one final result per test instead of recording every attempt.
 
 ## Azure DevOps reports
 

@@ -3,7 +3,8 @@ title: Run tests with MSTest
 description: Learn about how to run MSTest tests using VSTest or Microsoft.Testing.Platform (MTP).
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/24/2024
+ms.date: 08/06/2026
+ai-usage: ai-assisted
 ---
 
 # Run tests with MSTest
@@ -151,5 +152,6 @@ Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=Category
 ## See also
 
 - [Testing with `dotnet test`](unit-testing-with-dotnet-test.md)
+- [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md)
 - [Filter tests](selective-unit-tests.md)
 - [Order unit tests](order-unit-tests.md)

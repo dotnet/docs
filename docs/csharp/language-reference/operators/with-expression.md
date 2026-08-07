@@ -37,7 +37,7 @@ You can't customize the copy semantics for structure types.
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [`with` expression](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
-- [Copy and Clone members](~/_csharpstandard/standard/classes.md#15163-copy-and-clone-members)
+- [Copy and Clone members](~/_csharpstandard/standard/classes.md#151664-copy-and-clone-members)
 
 ## See also
 

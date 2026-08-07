@@ -57,8 +57,8 @@ For more information, see the following sections of the [C# language specificati
 
 - [Default values](~/_csharpstandard/standard/variables.md#93-default-values)
 - [Default constructors](~/_csharpstandard/standard/types.md#833-default-constructors)
-- [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1659-constructors)
-- [Auto default structs](~/_csharpstandard/standard/structs.md#16581-field-initializers)
+- [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1669-constructors)
+- [Auto default structs](~/_csharpstandard/standard/structs.md#16681-field-initializers)
 
 ## See also
 

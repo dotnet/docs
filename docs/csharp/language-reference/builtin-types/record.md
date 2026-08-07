@@ -262,7 +262,7 @@ For more information, see the [Classes](~/_csharpstandard/standard/classes.md) s
 
 For more information about these features, see the following feature proposal notes:
 
-- [Records](~/_csharpstandard/standard/classes.md#1516-synthesized-record-class-members)
+- [Records](~/_csharpstandard/standard/classes.md#1516-record-classes)
 - [Init-only setters](~/_csharpstandard/standard/classes.md#15733-init-accessors)
 - [Covariant returns](~/_csharpstandard/standard/classes.md#1565-override-methods)
 

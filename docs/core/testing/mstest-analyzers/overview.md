@@ -3,7 +3,7 @@ title: MSTest code analysis
 description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
-ms.date: 12/20/2023
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -115,6 +115,9 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0063](mstest0063.md) - Test class should have valid constructor
 - [MSTEST0069](mstest0069.md) - Inherited `[TestClass]` is ignored by the MSTest source generator
 - [MSTEST0071](mstest0071.md) - Test method should not specify a display name equal to its name
+- [MSTEST0072](mstest0072.md) - `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation
+- [MSTEST0078](mstest0078.md) - `[DependsOn]` arguments should be valid
+- [MSTEST0081](mstest0081.md) - `[TestFilterProvider]` should reference a valid test filter type
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
@@ -207,6 +210,18 @@ Rules for properly using the TestContext object:
 
 Related documentation: [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)
 
+### Parallel test safety
+
+Rules that help parallel tests coordinate shared resources and avoid process-wide state:
+
+- [MSTEST0073](mstest0073.md) - Prefer a constant for the `[ResourceLock]` resource key
+- [MSTEST0074](mstest0074.md) - Test mutating process-global state should declare a resource lock
+- [MSTEST0075](mstest0075.md) - Avoid changing the current directory in a parallelized test
+- [MSTEST0076](mstest0076.md) - Avoid mutating process-wide culture in a parallelized test
+- [MSTEST0077](mstest0077.md) - Avoid hardcoded or shared filesystem paths in a parallelized test
+
+Related documentation: [Test execution and control](../unit-testing-mstest-writing-tests-controlling-execution.md), [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)
+
 ### Test configuration
 
 Rules for configuring test execution, parallelization, and other test settings:
@@ -221,6 +236,11 @@ Rules for configuring test execution, parallelization, and other test settings:
 - [MSTEST0059](mstest0059.md) - Use Parallelize attribute correctly
 - [MSTEST0061](mstest0061.md) - Use OSCondition attribute instead of runtime check
 - [MSTEST0070](mstest0070.md) - `[MemberCondition]` arguments should be valid
+- [MSTEST0072](mstest0072.md) - `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation
+- [MSTEST0078](mstest0078.md) - `[DependsOn]` arguments should be valid
+- [MSTEST0079](mstest0079.md) - Use ArchitectureCondition attribute instead of runtime checks
+- [MSTEST0080](mstest0080.md) - Use CICondition attribute instead of environment checks
+- [MSTEST0081](mstest0081.md) - `[TestFilterProvider]` should reference a valid test filter type
 
 Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), [Running tests](../unit-testing-mstest-running-tests.md)
 
@@ -299,6 +319,16 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0069](mstest0069.md) | Usage | Inherited `[TestClass]` is ignored by the MSTest source generator | Warning |
 | [MSTEST0070](mstest0070.md) | Usage | `[MemberCondition]` arguments should be valid | Warning |
 | [MSTEST0071](mstest0071.md) | Usage | Test method should not specify a display name equal to its name | Info |
+| [MSTEST0072](mstest0072.md) | Usage | `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation | Warning |
+| [MSTEST0073](mstest0073.md) | Usage | Prefer a constant for the `[ResourceLock]` resource key | Info |
+| [MSTEST0074](mstest0074.md) | Usage | Test mutating process-global state should declare a resource lock | Info |
+| [MSTEST0075](mstest0075.md) | Usage | Avoid changing the current directory in a parallelized test | Info |
+| [MSTEST0076](mstest0076.md) | Usage | Avoid mutating process-wide culture in a parallelized test | Info |
+| [MSTEST0077](mstest0077.md) | Usage | Avoid hardcoded or shared filesystem paths in a parallelized test | Info |
+| [MSTEST0078](mstest0078.md) | Usage | `[DependsOn]` arguments should be valid | Warning |
+| [MSTEST0079](mstest0079.md) | Usage | Use ArchitectureCondition attribute instead of runtime checks | Info |
+| [MSTEST0080](mstest0080.md) | Usage | Use CICondition attribute instead of environment checks | Info |
+| [MSTEST0081](mstest0081.md) | Usage | `[TestFilterProvider]` should reference a valid test filter type | Warning |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

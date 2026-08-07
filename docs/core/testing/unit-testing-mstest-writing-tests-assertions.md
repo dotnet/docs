@@ -3,7 +3,7 @@ title: MSTest assertions
 description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/16/2026
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -144,10 +144,14 @@ When comparing collections, prefer these methods over `Assert.AreEqual`, which c
 
 MSTest 4.3 also adds:
 
-- `Assert.AddValueFormatter` to customize how values are rendered in assertion failure messages.
+- The experimental `Assert.AddValueFormatter` API to customize how values are rendered in assertion failure messages.
 - <xref:System.Span`1> and <xref:System.Memory`1> overloads for `Assert.HasCount`.
 - Structured assertion failure messages for `Assert.IsTrue`, `Assert.IsFalse`, `Assert.IsNull`, and `Assert.IsNotNull` that include the evaluated expression.
 - Interpolated-string message overloads for the async `Assert.ThrowsAsync`/`Assert.ThrowsExactlyAsync` methods, and rejection of `ValueTask<TResult>`-returning delegates that would otherwise not be awaited.
+- Complete exception details, including stack traces and inner exceptions, in `Assert.Throws*` failure messages.
+- Assertion failure stacks that hide MSTest implementation frames and render built-in numeric values at full precision.
+
+`Assert.AddValueFormatter` returns an <xref:System.IDisposable> registration. Dispose the registration to remove the formatter. The formatter applies only to the current asynchronous context, so parallel tests can use different formatters without changing each other's output. Because the API is experimental in MSTest 4.3, acknowledge or suppress the `MSTESTEXP` diagnostic before you use it.
 
 ### Soft assertions with `Assert.Scope()`
 

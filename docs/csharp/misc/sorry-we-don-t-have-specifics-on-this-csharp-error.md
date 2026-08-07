@@ -216,15 +216,7 @@ f1_keywords:
   - "CS8381"
   - "CS8383"
   - "CS8384"
-  # C# 8.0 diagnostics
-  ## Static local functions
-  ## Attributes
-  ## Index and range
-  ## Can't parse syntax
-  ## Default interface implementation
-  ## Patterns
-  ## Readonly struct members
-# Coming in C# 15
+  # Coming in C# 15
   - "CS9343" # misc
   - "CS9347"
   - "CS9348"

@@ -206,6 +206,10 @@ items:
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
                 href: networking/10.0/uri-length-limits-removed.md
+          - name: .NET MAUI
+            items:
+              - name: WPF BlazorWebView requires a Windows 10 target framework
+                href: maui/10.0/wpf-blazorwebview-windows-target-framework.md
           - name: Reflection
             items:
               - name: More restricted annotations on InvokeMember/FindMembers/DeclaredMembers

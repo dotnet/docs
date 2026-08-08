@@ -6,7 +6,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # SqlClient Support for high availability and disaster recovery
 
-This article discusses SqlClient support (added in .NET Framework 4.5) for high availability and disaster recovery with the Always On features: Always On availability groups (AGs) and Always On failover cluster instances (FCIs) with SQL Server 2012 or later.
+This article discusses SqlClient support for high availability and disaster recovery with the Always On features: Always On availability groups (AGs) and Always On failover cluster instances (FCIs) with SQL Server 2012 or later.
 
  You can now specify an availability group listener or the name of an FCI in the connection property. If a SqlClient application is connected to a database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.
 

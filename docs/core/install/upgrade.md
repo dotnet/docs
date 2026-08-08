@@ -1,7 +1,7 @@
 ---
 title: Upgrade to a new .NET version
 description: Learn how to upgrade an app to a new .NET version. Upgrade .NET when the current version goes out of support or when you want to use new features of .NET. Control versions of SDK, analyzers, and packages for predictable builds.
-ms.date: 04/23/2026
+ms.date: 07/21/2026
 ai-usage: ai-assisted
 ---
 
@@ -140,6 +140,22 @@ To ensure builds fail if the lock file is out of date:
 ```
 
 After enabling lock files, run `dotnet restore` to generate the *packages.lock.json* file. Commit this file to source control.
+
+> [!IMPORTANT]
+> When you use package lock files, also pin the SDK version in a *global.json* file with `rollForward` set to `disable`. This keeps the SDK version and dependency graph in lockstep, preventing the lock file from changing unexpectedly when the SDK updates.
+
+Create a *global.json* file at the solution root with the exact SDK version and no roll-forward:
+
+```json
+{
+  "sdk": {
+    "version": "9.0.100",
+    "rollForward": "disable"
+  }
+}
+```
+
+For more information, see [Control SDK version with global.json](#control-sdk-version-with-globaljson). For related tracking issues, see <https://github.com/dotnet/aspnetcore/issues/65061> and <https://github.com/dotnet/sdk/issues/48795>.
 
 #### Central package management
 

@@ -142,7 +142,7 @@ To ensure builds fail if the lock file is out of date:
 After enabling lock files, run `dotnet restore` to generate the *packages.lock.json* file. Commit this file to source control.
 
 > [!IMPORTANT]
-> When you use package lock files, also pin the SDK version in a *global.json* file with `rollForward` set to `disable`. This keeps the SDK version and dependency graph in lockstep, preventing the lock file from changing unexpectedly when the SDK updates.
+> When you use package lock files, pin the SDK version in a *global.json* file and set `rollForward` to `disable`. An exact SDK version helps prevent unexpected lock-file changes after an SDK update.
 
 Create a *global.json* file at the solution root with the exact SDK version and no roll-forward:
 

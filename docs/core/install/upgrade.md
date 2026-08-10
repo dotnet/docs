@@ -122,38 +122,40 @@ By managing package versions consistently across projects, you can prevent unexp
 
 Package lock files ensure that package restore operations use the exact same package versions across different environments. The lock file (`packages.lock.json`) records the exact versions of all packages and their dependencies.
 
-Enable lock files in your project file:
-
-```xml
-<PropertyGroup>
-  <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-</PropertyGroup>
-```
-
-To ensure builds fail if the lock file is out of date:
-
-```xml
-<PropertyGroup>
-  <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-  <RestoreLockedMode>true</RestoreLockedMode>
-</PropertyGroup>
-```
-
-After enabling lock files, run `dotnet restore` to generate the *packages.lock.json* file. Commit this file to source control.
-
 > [!IMPORTANT]
-> When you use package lock files, pin the SDK version in a *global.json* file and set `rollForward` to `disable`. An exact SDK version helps prevent unexpected lock-file changes after an SDK update.
+> A package lock file doesn't isolate the dependency graph from SDK changes. The .NET SDK includes NuGet and controls parts of the restore process. To prevent an SDK update from changing the lock file unexpectedly, pin the SDK version and disable roll-forward.
 
-Create a *global.json* file at the solution root with the exact SDK version and no roll-forward:
+To lock the SDK and package dependency graph, complete these steps:
 
-```json
-{
-  "sdk": {
-    "version": "9.0.100",
-    "rollForward": "disable"
-  }
-}
-```
+1. Create a *global.json* file at the solution root. Specify the exact SDK version and set `rollForward` to `disable`:
+
+   ```json
+   {
+     "sdk": {
+       "version": "9.0.100",
+       "rollForward": "disable"
+     }
+   }
+   ```
+
+1. Enable lock-file generation in your project file:
+
+   ```xml
+   <PropertyGroup>
+     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+   </PropertyGroup>
+   ```
+
+1. Run `dotnet restore` to generate the *packages.lock.json* file, and then commit the file to source control.
+
+1. To make builds fail when the package references and lock file don't match, enable locked mode in your project file:
+
+   ```xml
+   <PropertyGroup>
+     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+     <RestoreLockedMode>true</RestoreLockedMode>
+   </PropertyGroup>
+   ```
 
 For more information, see [Control SDK version with global.json](#control-sdk-version-with-globaljson). For related tracking issues, see <https://github.com/dotnet/aspnetcore/issues/65061> and <https://github.com/dotnet/sdk/issues/48795>.
 

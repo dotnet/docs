@@ -43,22 +43,26 @@ Parentheses override precedence and document your intent at the same time. When 
 
 :::code language="csharp" source="snippets/expressions/Program.cs" ID="ParenthesesClarity":::
 
-Prefer parentheses over memorizing obscure precedence rules. A reader who sees `(a | b) & c` knows exactly what you intended; `a | b & c` requires them to recall that `&` binds more tightly than `|`.
+The last two lines show that parentheses can change the result, not just the style. When `&&` and `||` appear together, add parentheses to spell out which condition combines first. A reader who sees `(isAdmin && isOwner) || isSuperUser` knows the intent immediately.
 
 ## Operand evaluation order
 
-Regardless of precedence, C# evaluates the *operands* of most operators from left to right before applying the operator. Precedence determines which operator applies to which operands; left-to-right evaluation determines when each operand expression runs.
+Regardless of precedence, C# evaluates the *operands* of most operators from left to right before applying the operator. Precedence determines which operator applies to which operands; left-to-right evaluation determines the order in which sub-expressions run.
 
 ```csharp
-int x = 1;
-int result = (x++) + (x++);   // first operand: x=1→2; second operand: x=2→3; result = 1 + 2 = 3
+int a = 6;
+int b = 2;
+int c = 3;
+
+// a / b is evaluated before + c, because / has higher precedence than +
+int result = a / b + c;   // (6 / 2) + 3 = 6
 ```
 
-This distinction rarely matters unless operands have side effects. In practice, write each side effect on its own statement for clarity.
+This distinction rarely matters in everyday code. In practice, use parentheses or separate statements when you need a specific order.
 
 ## Associativity
 
-When two operators have the same precedence level, *associativity* decides which one applies first. Most C# operators are *left-associative*: `a - b - c` groups as `(a - b) - c`. Assignment operators are *right-associative*: `a = b = 0` groups as `a = (b = 0)`, so `b` is set first, then `a` is set to the same value.
+When two operators have the same precedence level, *associativity* decides which one applies first. Most C# operators are *left-associative*: `a - b - c` groups as `(a - b) - c`, working left to right.
 
 ## Short-circuit evaluation
 
@@ -70,8 +74,6 @@ The logical operators `&&` (AND) and `||` (OR) are *short-circuit* operators: th
 :::code language="csharp" source="snippets/expressions/Program.cs" ID="ShortCircuit":::
 
 Short-circuit evaluation is useful for null checks: `text != null && text.Length > 0` is safe because the second condition runs only when `text` is not null. For a broader look at null-safe operators, see [C# null operators](../null-safety/null-operators.md).
-
-The non-short-circuit alternatives `&` and `|` always evaluate both sides. Use them only when the right-side side effect must always run.
 
 ## See also
 

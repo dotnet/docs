@@ -1,16 +1,30 @@
 // <ParenthesesClarity>
-int a = 3;
-int b = 4;
-int c = 2;
+int score = 80;
+int bonus = 15;
+int threshold = 90;
+bool eligible = true;
 
-// Without parentheses: relies on knowing that & binds tighter than |
-bool result1 = a > 1 | b > 1 & c > 1;   // evaluated as: a > 1 | (b > 1 & c > 1)
+// Without parentheses: || binds less tightly than &&, so this reads as:
+//   eligible && (score + bonus > threshold) || bonus > 20
+bool result1 = eligible && score + bonus > threshold || bonus > 20;
 
-// With parentheses: intent is explicit
-bool result2 = (a > 1 | b > 1) & c > 1; // parentheses force | before &
+// With parentheses: forces the || to combine two complete conditions
+bool result2 = (eligible && score + bonus > threshold) || bonus > 20;
 
 Console.WriteLine(result1); // => True
-Console.WriteLine(result2); // => True  (same result here, but intent is unambiguous)
+Console.WriteLine(result2); // => True
+
+// Parentheses can also change the result:
+bool isAdmin = false;
+bool isOwner = true;
+
+// Without: && binds tighter, so: isAdmin && (isOwner || true)
+bool access1 = isAdmin && isOwner || true;
+// With: forces the || to run first
+bool access2 = isAdmin && (isOwner || true);
+
+Console.WriteLine(access1); // => True   (true || anything is true)
+Console.WriteLine(access2); // => False  (false && anything is false)
 // </ParenthesesClarity>
 
 // <ShortCircuit>

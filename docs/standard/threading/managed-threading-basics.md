@@ -1,7 +1,7 @@
 ---
 title: "Managed Threading Basics"
 description: See links to other managed threading articles, covering topics such as exceptions, synchronizing data, foreground & background threads, local storage, and more.
-ms.date: "03/30/2017"
+ms.date: 08/06/2026
 helpviewer_keywords:
   - "multiple threads"
   - "threading [.NET], multiple threads"
@@ -18,7 +18,7 @@ The first five articles of this section are designed to help you determine when 
  The remaining articles in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.
 
 > [!NOTE]
-> Starting with .NET Framework 4, the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../parallel-programming/index.md).
+> The Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../parallel-programming/index.md).
 
 ## In this section
 

@@ -8,7 +8,7 @@ dev_langs:
 ---
 # Provider statistics for SQL Server
 
-Starting with .NET Framework version 2.0, the .NET Framework Data Provider for SQL Server supports runtime statistics. You must enable statistics by setting the <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled> property of the <xref:System.Data.SqlClient.SqlConnection> object to `True` after you have a valid connection object created.
+The .NET Framework Data Provider for SQL Server supports runtime statistics. Enable statistics by setting the <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled> property on a valid <xref:System.Data.SqlClient.SqlConnection> object to `True`.
 
 After statistics are enabled, you can review them as a "snapshot in time" by retrieving an <xref:System.Collections.IDictionary> reference via the <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics*> method of the <xref:System.Data.SqlClient.SqlConnection> object. You enumerate through the list as a set of name/value pair dictionary entries. These name/value pairs are unordered. At any time, you can call the <xref:System.Data.SqlClient.SqlConnection.ResetStatistics*> method of the <xref:System.Data.SqlClient.SqlConnection> object to reset the counters.
 

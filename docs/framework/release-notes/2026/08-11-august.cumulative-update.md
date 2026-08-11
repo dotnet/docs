@@ -14,11 +14,11 @@ _Released August 11, 2026_
 
 ### Security improvements
 
-### CVE-2026-65810 – Elevation of Privilege vulnerability
+#### CVE-2026-65810 – Elevation of Privilege vulnerability
 
 This security update addresses an elevation of privilege vulnerability detailed in [CVE-2026-65810](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65810).
 
-### CVE-2026-62872 – Elevation of Privilege vulnerability
+#### CVE-2026-62872 – Elevation of Privilege vulnerability
 
 This security update addresses an elevation of privilege vulnerability detailed in [CVE-2026-62872](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62872).
 

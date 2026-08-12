@@ -56,7 +56,7 @@ You can convert a *collection expression* to different collection types, includi
 >
 > This behavior is distinct from LINQ, where a sequence might not be instantiated until it is enumerated. You can't use collection expressions to generate an infinite sequence that won't be enumerated.
 
-The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty``1?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, the storage might be stack allocated. The [collection expressions feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md) specifies the rules the compiler must follow.
+The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty``1?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, the storage might be stack allocated. The [§12.8.25 Collection expressions](~/_csharpstandard/standard/expressions.md#12825-collection-expressions) clause of the C# standard specifies the rules the compiler must follow.
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs might require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
@@ -64,7 +64,7 @@ Many APIs are overloaded with multiple collection types as parameters. Because a
 - Conversion to <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, or another [`ref struct`](../builtin-types/ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
 
-When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span object's *safe context* comes from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).
+When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span object's *safe context* comes from the *safe context* of all elements included in the span. For detailed rules, see [§9.7.2 Ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts) in the C# standard.
 
 ## Collection builder
 

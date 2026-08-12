@@ -85,9 +85,9 @@ The compiler enforces these restrictions. If you write `ref struct` types that i
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Structs: Ref modifier](~/_csharpstandard/standard/structs.md#1623-ref-modifier)
-- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16615-safe-context-constraint)
+- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16815-safe-context-constraint)
 
-For more information about `ref` fields, see [Ref fields](~/_csharpstandard/standard/structs.md#16682-ref-fields) in the C# language specification.
+For more information about `ref` fields, see [Ref fields](~/_csharpstandard/standard/structs.md#16882-ref-fields) in the C# language specification.
 
 ## See also
 

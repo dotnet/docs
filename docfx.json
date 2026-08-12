@@ -49,7 +49,6 @@
             },
             {
                 "files": [
-                    "csharp-12.0/*.md",
                     "csharp-13.0/*.md",
                     "csharp-14.0/*.md",
                     "csharp-15.0/*.md",
@@ -503,8 +502,7 @@
                 "docs/visual-basic/**/**.{md,yml}": "wiwagn"
             },
             "ms.date": {
-                "_csharpstandard/standard/*.md": "09/12/2025",
-                "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
+                "_csharpstandard/standard/*.md": "08/12/2026",
                 "_csharplang/proposals/csharp-13.0/*.md": "10/31/2024",
                 "_csharplang/proposals/csharp-14.0/*.md": "08/06/2025",
                 "_csharplang/proposals/csharp-15.0/*.md": "08/12/2026",
@@ -617,13 +615,6 @@
                 "_csharpstandard/standard/standard-library.md": "Standard library",
                 "_csharpstandard/standard/documentation-comments.md": "Documentation comments",
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
-                "_csharplang/proposals/csharp-12.0/primary-constructors.md": "Primary constructors",
-                "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Alias any type",
-                "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
-                "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays, or fixed sized buffers",
-                "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
-                "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Experimental attribute",
-                "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters",
                 "_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md": "Better conversion from collection expression",
                 "_csharplang/proposals/csharp-13.0/esc-escape-sequence.md": "String/Character escape sequence '\\e'",
                 "_csharplang/proposals/csharp-13.0/lock-object.md": "Obey lock object semantics for lock statements",
@@ -704,13 +695,6 @@
                 "_csharpstandard/standard/standard-library.md": "This appendix lists requirements of the specification library. The C# language relies on these types for some of its behavior.",
                 "_csharpstandard/standard/documentation-comments.md": "This appendix describes XML comments that are used to document your program.",
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
-                "_csharplang/proposals/csharp-12.0/primary-constructors.md": "Primary constructors put the parameters of one constructor in scope for the whole class or struct to be used for initialization or directly as object state. The trade-off is that any other constructors must call through the primary constructor.",
-                "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
-                "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
-                "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
-                "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
-                "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
-                "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters enforce that arguments are passed by references, where `in` parameters allow the compiler some flexibiility.",
                 "_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md": "Conversions from collection expressions match the element type before matching the collection type.",
                 "_csharplang/proposals/csharp-13.0/esc-escape-sequence.md" : "The sequence '\\e' is now interpreted as the 'ESC' character, character point '0x1b'",
                 "_csharplang/proposals/csharp-13.0/lock-object.md": "Special-case how `System.Threading.Lock` interacts with the `lock` keyword by calling its `EnterScope` method. Add static analysis warnings to prevent accidental misuse of the type where possible.",
@@ -760,7 +744,6 @@
             "titleSuffix": {
                 "docs/**/*.{md,yml}": ".NET",
                 "_csharpstandard/standard/*.md": "C# language specification",
-                "_csharplang/proposals/csharp-12.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-13.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-14.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-15.0/*.md": "C# feature specifications",

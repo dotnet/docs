@@ -2,14 +2,14 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 07/14/2026
+ms.date: 08/12/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 6.
+This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 7.
 
 ## Updated minimum hardware requirements
 
@@ -130,12 +130,15 @@ Breakpoints now bind correctly inside runtime-async methods, and the debugger ca
 
 ### Runtime Async performance improvements
 
-Preview 6 adds several performance improvements to Runtime Async:
+Runtime Async includes several performance improvements:
 
 - **JIT async support:** The JIT compiles a dedicated runtime-async version of a synchronous, task-returning method rather than delegating through a thunk. The JIT turns the method's tail calls into runtime-async calls and awaits the task that would otherwise be returned, eliminating an extra layer of indirection.
 - **Tail-merged suspension points:** The JIT tail-merges async suspension points so generated code is smaller.
 - **Cached continuations:** Continuations used for runtime-async callable task thunks are cached and reused.
 - **Pooled methods opt out:** Methods that are already pooled opt out of runtime-async, avoiding redundant work.
+- **Tiered async compilation:** Async versions now flow through tiered compilation, so hot async methods get tier 1 optimizations after warm-up.
+- **Task and ValueTask factory intrinsics:** The JIT recognizes common factories, such as `Task.FromResult`, `Task.CompletedTask`, and `ValueTask.FromResult`, and folds them into faster async paths.
+- **Tail-await optimizations:** Implicit tailcalls from async methods are enabled again when the method directly returns another async result, and `await Task.Yield()` avoids extra allocations in runtime-async paths.
 
 #### Async continuations without ExecutionContext
 
@@ -154,6 +157,8 @@ The runtime now detects when a continuation has nothing to restore and skips the
 - **`Math.BigMul` on x64:** `Math.BigMul(long, long, out long)` is now significantly faster on x64. The JIT generates a single `MUL r/m64` instruction when both operands are 64-bit values and the caller requests the high half of the result, eliminating the previous helper call.
 - **Single-IG prolog restriction removed:** The JIT no longer requires the function prolog to fit in a single instruction group (IG). Complex prologues with many saved registers, large stack allocations, or runtime-async state setup no longer trigger fallback paths.
 - **`SELECT(cond, cns, cns)` folding:** The JIT now folds conditional selects whose two branches both produce the same constant into just that constant—for example, `condition ? 42 : 42` becomes `42`. This fold eliminates unnecessary comparisons that can appear after earlier optimizations unify branches.
+- **AVX-VNNI-512 intrinsics:** <xref:System.Runtime.Intrinsics.X86.AvxVnni.V512?displayProperty=nameWithType> adds 512-bit dot-product intrinsics for CPUs that support `AVX512-VNNI`.
+- **Saturating floating-point conversions:** Unchecked `float` and `double` conversions to small integer types now saturate to type bounds instead of wrapping through intermediate truncation.
 - **ARM64 `Vector<T>` by reference for SVE:** When the runtime is compiled with ARM SVE support, `Vector<T>` values are passed by reference rather than by value, aligning with the ARM calling convention for scalable types and enabling better code generation for SVE-intensive code.
 
 For better performance and code quality, .NET 11 adds several more JIT optimizations:
@@ -233,6 +238,8 @@ Browser and WebAssembly support has several improvements:
 - **JavaScript minification in Release builds:** Browser CoreCLR Release builds ship minified JavaScript.
 - **NativeAOT publish for WASM no longer drops package satellites:** Satellite assemblies from NuGet packages are now passed to ILC and pruned from the publish output, fixing localization for AOT-published apps that depend on packages such as `System.CommandLine`.
 
+CoreCLR on WebAssembly now runs the libraries test suite end to end.
+
 ## Platform support for more than 1024 CPUs
 
 The .NET runtime can now initialize on machines with more than 1024 logical processors. Previously, `sched_getaffinity` was called with the default `cpu_set_t` (capped at 1024), causing initialization to fail on high-core-count servers. The runtime now allocates the CPU set dynamically. The GC retains its 1024-heap limit, but the CPU count limit is removed.
@@ -246,6 +253,8 @@ This capability is specific to mobile platforms.
 ## NativeAOT: faster interface dispatch
 
 NativeAOT now uses a dispatch helper for interface method calls. Instead of a direct fat-pointer call sequence, the runtime routes interface dispatch through a shared helper that can be patched to the correct implementation after the call site warms up. This reduces the binary size of interface call sites and improves throughput on workloads with many interface method calls.
+
+Generic virtual method dispatch also uses the shared dispatch-cell infrastructure, which improves both monomorphic and polymorphic call performance. In addition, <xref:System.Reflection.Assembly.GetCallingAssembly?displayProperty=nameWithType> now works on NativeAOT when stack trace data is available.
 
 ## SIMD lane construction and composition
 
@@ -269,6 +278,10 @@ Vector128<int> powers = Vector128.CreateGeometricSequence(1, 2);
 ```
 
 These APIs are available on `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`. They're building blocks for image processing, audio digital signal processing (DSP), and other SIMD-intensive workloads that need fine-grained control over vector element layout.
+
+## Runtime diagnostics
+
+The async profiler now instruments both runtime-async methods and compiler-generated async state-machine methods, so tools receive one consistent event model regardless of async implementation style. The runtime also adds improved interpreter perf-map logging support, and fixes parsing of `CORECLR_NOTIFICATION_PROFILERS` lists that don't end with a semicolon.
 
 ## See also
 

@@ -58,7 +58,7 @@ An implicit *union conversion* exists from each case type to the union type:
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="BasicConversion":::
 
-Union conversions work by calling the corresponding generated constructor. If a user-defined implicit conversion operator exists for the same type, the user-defined operator takes priority over the union conversion. If more than one case type is equally applicable to the source value, the union conversion is ambiguous, and the compiler reports an error. For details on conversion priority, see the [feature specification](~/_csharplang/proposals/unions.md).
+Union conversions work by calling the corresponding generated constructor. If a user-defined implicit conversion operator exists for the same type, the user-defined operator takes priority over the union conversion. If more than one case type is equally applicable to the source value, the union conversion is ambiguous, and the compiler reports an error. For details on conversion priority, see the [feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
 
 A union conversion to a nullable union struct (`T?`) also works when `T` is a union type:
 
@@ -224,7 +224,7 @@ When you declare a `union` type, the compiler generates a struct that implements
 
 ## C# language specification
 
-For more information, see the [Unions](~/_csharplang/proposals/unions.md) feature specification.
+For more information, see the [Unions](~/_csharplang/proposals/csharp-15.0/unions.md) feature specification.
 
 ## See also
 

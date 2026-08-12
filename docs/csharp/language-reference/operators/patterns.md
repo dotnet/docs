@@ -363,7 +363,7 @@ A `switch` expression whose governing type is a type parameter constrained to a 
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="TypeParamGoverningType":::
 
-For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/closed-hierarchies.md).
+For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
 
 ## Union patterns
 
@@ -387,7 +387,7 @@ The `null` pattern checks whether the union's `Value` is null. For class-based u
 
 When a union type provides the *non-boxing access pattern* (`HasValue` and `TryGetValue` members), the compiler uses those members to avoid boxing value-type cases during pattern matching.
 
-For more information, see [Union matching](../builtin-types/union.md#union-pattern-matching). For the specification, see [Unions](~/_csharplang/proposals/unions.md).
+For more information, see [Union matching](../builtin-types/union.md#union-pattern-matching). For the specification, see [Unions](~/_csharplang/proposals/csharp-15.0/unions.md).
 
 ## C# language specification
 

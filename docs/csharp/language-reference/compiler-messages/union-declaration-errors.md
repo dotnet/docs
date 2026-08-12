@@ -59,7 +59,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9370**: *A union declaration must specify at least one case type.*
 - **CS9371**: *Cannot convert type 'type' to 'object' via an implicit reference or boxing conversion.*
 
-A [union declaration](../builtin-types/union.md#union-declarations) specifies a name and a list of case types. These errors enforce the structural requirements of a valid union declaration. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/unions.md).
+A [union declaration](../builtin-types/union.md#union-declarations) specifies a name and a list of case types. These errors enforce the structural requirements of a valid union declaration. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
 
 To correct these errors, apply the following changes to your union declaration:
 
@@ -72,7 +72,7 @@ To correct these errors, apply the following changes to your union declaration:
 - **CS9374**: *Explicitly declared public constructors with a single parameter are not permitted in a 'union' declaration.*
 - **CS9375**: *A constructor declared in a 'union' declaration must have a 'this' initializer that calls a synthesized constructor or an explicitly declared constructor.*
 
-A [union declaration](../builtin-types/union.md#union-declarations) can include a body with additional members, but the compiler restricts what you can declare. These restrictions ensure that the compiler-generated conversion constructors and storage mechanism work correctly. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/unions.md).
+A [union declaration](../builtin-types/union.md#union-declarations) can include a body with additional members, but the compiler restricts what you can declare. These restrictions ensure that the compiler-generated conversion constructors and storage mechanism work correctly. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
 
 To correct these errors, apply the following changes to your union members:
 
@@ -86,7 +86,7 @@ To correct these errors, apply the following changes to your union members:
 - **CS9386**: *A union member provider type must have an instance 'Value' property of type 'object?' or 'object'. The property must have a public get accessor.*
 - **CS9387**: *A 'union' declaration cannot use a union member provider interface.*
 
-A union member provider is a type that implements the union pattern through an interface rather than the `union` keyword. These errors enforce the structural requirements for types participating in the union member provider pattern. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/unions.md).
+A union member provider is a type that implements the union pattern through an interface rather than the `union` keyword. These errors enforce the structural requirements for types participating in the union member provider pattern. For the complete rules, see the [union types feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
 
 To correct these errors, apply the following changes to your union member provider:
 
@@ -102,7 +102,7 @@ To correct these errors, apply the following changes to your union member provid
 - **CS9383**: *'type': The type parameter 'parameter' must be referenced in the base type 'type' because the base type is closed.*
 - **CS9384**: *'type': a closed type cannot be marked abstract because it is always implicitly abstract.*
 
-A closed type hierarchy restricts which types can derive from a base type. The compiler enforces these restrictions to ensure that the set of derived types is known and exhaustive. For the complete rules, see the [closed hierarchies feature specification](~/_csharplang/proposals/closed-hierarchies.md).
+A closed type hierarchy restricts which types can derive from a base type. The compiler enforces these restrictions to ensure that the set of derived types is known and exhaustive. For the complete rules, see the [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
 
 To correct these errors, apply the following changes to your closed hierarchy declaration:
 

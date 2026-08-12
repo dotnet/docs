@@ -100,7 +100,7 @@ items:
     - name: Better conversion from collection expression
       href: ../../../_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md
     - name: Collection expression arguments
-      href: ../../../_csharplang/proposals/collection-expression-arguments.md
+      href: ../../../_csharplang/proposals/csharp-15.0/collection-expression-arguments.md
     - name: Method group natural type conversion
       href: ../../../_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md
     - name: Optional Lambda expression parameters
@@ -124,7 +124,7 @@ items:
     - name: Allow `ref` and `unsafe`
       href: ../../../_csharplang/proposals/csharp-13.0/ref-unsafe-in-iterators-async.md 
     - name: Labeled `break` and `continue`
-      href: ../../../_csharplang/proposals/labeled-break-continue.md
+      href: ../../../_csharplang/proposals/csharp-15.0/labeled-break-continue.md
   - name: Classes
     items: 
     - name: Partial properties
@@ -141,8 +141,10 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/extensions.md
     - name: Extension operators
       href: ../../../_csharplang/proposals/csharp-14.0/extension-operators.md
+    - name: Extension indexers
+      href: ../../../_csharplang/proposals/csharp-15.0/extension-indexers.md
     - name: Closed hierarchies
-      href: ../../../_csharplang/proposals/closed-hierarchies.md
+      href: ../../../_csharplang/proposals/csharp-15.0/closed-hierarchies.md
   - name: Structs
     items:
     - name: Inline arrays
@@ -150,7 +152,7 @@ items:
   - name: Unions
     items:
     - name: Union types
-      href: ../../../_csharplang/proposals/unions.md
+      href: ../../../_csharplang/proposals/csharp-15.0/unions.md
   - name: Interfaces
     items:
     - name: Allow ref struct interfaces

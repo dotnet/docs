@@ -103,7 +103,7 @@ The first parameter provides the name of the *Builder* class. The second attribu
 
 ## Collection expression arguments
 
-Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax. For more information, see the [collection expression arguments feature specification](~/_csharplang/proposals/collection-expression-arguments.md).
+Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax. For more information, see the [collection expression arguments feature specification](~/_csharplang/proposals/csharp-15.0/collection-expression-arguments.md).
 
 The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element are passed to the appropriate constructor or create method based on the target type. You can use any valid expression for the arguments in the `with` element.
 

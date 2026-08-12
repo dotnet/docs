@@ -17,7 +17,7 @@ An *expression* is a piece of code that the compiler evaluates. Most expressions
 
 ```csharp
 int total = 3 + 4 * 2;          // arithmetic expression → value 11
-bool isReady = total > 10;       // comparison expression → value false
+bool isReady = total > 10;       // comparison expression → value true
 Console.WriteLine("done");       // void method call → no value
 ```
 

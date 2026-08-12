@@ -1,7 +1,7 @@
 ---
 title: "Standard specification"
 description: "Understand the relationships among the ECMA C# standard and the working draft."
-ms.date: 05/13/2026
+ms.date: 08/12/2026
 ---
 # C# standard specification
 

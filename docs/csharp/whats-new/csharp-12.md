@@ -81,7 +81,7 @@ foreach (var element in single)
 
 The spread element evaluates each element of the enumerations expression. Each element is included in the output collection.
 
-You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
+You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [§12.8.25 Collection expressions](~/_csharpstandard/standard/expressions.md#12825-collection-expressions) clause of the C# standard.
 
 ## `ref readonly` parameters
 
@@ -93,7 +93,7 @@ The addition of `ref readonly` parameters enables more clarity for APIs that mig
 - APIs that take an `in` parameter, but logically require a variable. A value expression doesn't work. An example is <xref:System.ReadOnlySpan`1.%23ctor(`0@)?displayProperty=fullName>.
 - APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef*?displayProperty=fullName>.
 
-To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#ref-readonly-modifier) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
+To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#ref-readonly-modifier) in the language reference, or the [ref readonly parameters](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
 
 ## Default lambda parameters
 
@@ -103,7 +103,7 @@ You can learn more about default parameters on lambda expressions in the article
 
 ## Alias any type
 
-You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/csharp-12.0/using-alias-types.md). For an example refactoring walkthrough, see [Refactor your code using alias any type on the .NET blog](https://devblogs.microsoft.com/dotnet/refactor-your-code-using-alias-any-type/).
+You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see [§14.6.2 Using alias directives](~/_csharpstandard/standard/namespaces.md#1462-using-alias-directives) in the C# standard. For an example refactoring walkthrough, see [Refactor your code using alias any type on the .NET blog](https://devblogs.microsoft.com/dotnet/refactor-your-code-using-alias-any-type/).
 
 ## Inline arrays
 
@@ -138,7 +138,7 @@ The difference is that the compiler can take advantage of known information abou
 
 ## Experimental attribute
 
-Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](../language-reference/attributes/general.md#experimental-attributes), or the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
+Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](../language-reference/attributes/general.md#experimental-attributes), or the [feature specification](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/experimental-attribute.md).
 
 ## Interceptors
 

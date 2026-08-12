@@ -114,7 +114,7 @@ Lambda expressions with default parameters or `params` collections as parameters
 
 Or, you can use implicitly typed variables with `var` declarations to define the delegate type. The compiler synthesizes the correct delegate type.
 
-For more information about default parameters on lambda expressions, see the feature spec for [default parameters on lambda expressions](~/_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md).
+For more information about default parameters on lambda expressions, see the [default parameters on lambda expressions](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/lambda-method-group-defaults.md) feature specification.
 
 ## Async lambdas
 

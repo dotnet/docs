@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 07/14/2026
+ms.date: 08/12/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 6.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 7.
 
 ## Diagnostics and process execution
 
@@ -57,9 +57,9 @@ The full set of helpers includes:
 
 `System.Diagnostics.Process` adds finer control over starting and finding processes:
 
-- `ProcessStartInfo.StartSuspended` starts a process in a suspended state on Windows. Pair it with `SafeProcessHandle.Resume` to let it run once you've finished any setup, such as attaching a debugger or configuring job objects.
-- `Process.TryGetProcessById` returns `false` instead of throwing when no process with the given ID exists.
-- `SafeProcessHandle.Open` and `TryOpen` open a handle to an existing process by ID.
+- <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> starts a process in a suspended state on Windows and macOS. Pair it with <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Resume?displayProperty=nameWithType> to let it run once you've finished any setup, such as attaching a debugger or configuring job objects.
+- <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> returns `false` instead of throwing when no process with the given ID exists.
+- `SafeProcessHandle.Open()` and `SafeProcessHandle.TryOpen()` open a handle to an existing process by ID.
 
 ```csharp
 var startInfo = new ProcessStartInfo("worker.exe") { StartSuspended = true };
@@ -234,6 +234,10 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. Union types are a C# language preview feature. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
 
+#### Closed-hierarchy polymorphism inference
+
+<xref:System.Text.Json.JsonSerializerOptions> adds `JsonSerializerOptions.InferClosedTypePolymorphism` so the serializer can infer polymorphic metadata for C# closed hierarchies without requiring explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> annotations on each base type. Explicit registrations still take precedence.
+
 ### Regular expression improvements
 
 #### AnyNewLine option
@@ -270,6 +274,10 @@ Additionally, a new <xref:System.IO.Compression.ZipArchiveEntry.CompressionMetho
 
 <xref:System.IO.Compression.ZipArchive> validates the CRC32 checksum when reading ZIP entries. Corrupted or truncated archives that previously passed without error now throw <xref:System.IO.InvalidDataException>, helping you detect data integrity issues early.
 
+#### ZIP archive password support
+
+<xref:System.IO.Compression.ZipArchiveEntry> now supports password-protected entries for read and write operations. Use the new password-aware `Open` and `OpenAsync` overloads, and use password plus `ZipEncryptionMethod` when you create encrypted entries.
+
 #### DeflateStream and GZipStream behavior change
 
 Starting in .NET 11, <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream> always write format headers and footers to the output stream, even when no data is written. This ensures the output is a valid compressed stream according to the Deflate and GZip specifications.
@@ -299,6 +307,9 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 ## Collections, numerics, and low-level I/O
 
 - [LINQ join improvements](#linq-join-improvements)
+- [IEEE 754 decimal floating-point types](#ieee-754-decimal-floating-point-types)
+- [Partial numeric parsing](#partial-numeric-parsing)
+- [Generic Complex\<T>](#generic-complext)
 - [BFloat16 support in BitConverter](#bfloat16-support-in-bitconverter)
 - [Floating-point hex formatting and parsing](#floating-point-hex-formatting-and-parsing)
 - [Numerics improvements](#numerics-improvements)
@@ -320,6 +331,18 @@ Because the three outer-join operations return tuples directly, you can work wit
 - <xref:System.Linq.Enumerable.FullJoin*?displayProperty=nameWithType> — Returns all elements from both sequences, using `default` on either side when there's no match.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="LinqJoins":::
+
+### IEEE 754 decimal floating-point types
+
+<xref:System.Numerics> adds `Decimal32`, `Decimal64`, and `Decimal128`, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
+
+### Partial numeric parsing
+
+`System.Numerics.INumberBase<T>.TryParsePartial()` adds partial parsing overloads that report consumed input. Use this API to parse delimited formats, such as CSV, so you don't copy substrings.
+
+### Generic Complex\<T>
+
+`System.Numerics.Complex<T>` is now available, so complex arithmetic can use several floating-point types, including `float`, `Half`, `BFloat16`, and the new decimal floating-point types.
 
 #### Tuple-returning Join and GroupJoin overloads
 
@@ -431,6 +454,8 @@ To create an equality comparer from a key selector function, use the new <xref:S
 - [Discriminated-union scaffolding](#discriminated-union-scaffolding)
 - [MetadataLoadContext additions](#metadataloadcontext-additions)
 - [Reflection improvements](#reflection-improvements)
+- [Assembly.Location override for AssemblyLoadContext](#assemblylocation-override-for-assemblyloadcontext)
+- [Reduced contention in System.IO.Pipelines](#reduced-contention-in-systemiopipelines)
 - [URI data scheme constant](#uri-data-scheme-constant)
 - [StringSyntax attribute enhancements](#stringsyntax-attribute-enhancements)
 
@@ -475,6 +500,14 @@ A new <xref:System.Uri.UriSchemeData?displayProperty=nameWithType> constant has 
 
 <xref:System.Reflection.ConstructorInfo.GetGenericArguments?displayProperty=nameWithType> now has an override, providing a consistent way to retrieve generic type arguments for constructor definitions, matching the behavior already available on other `MethodBase` subclasses.
 
+### Assembly.Location override for AssemblyLoadContext
+
+`AssemblyLoadContext.SetAssemblyLocationOverride` is a set-once callback that can override the location reported by <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>. This API helps hosts that stage assemblies in temporary paths or virtualized locations report stable, meaningful locations to diagnostics and resource-loading code.
+
+### Reduced contention in System.IO.Pipelines
+
+<xref:System.IO.Pipelines?displayProperty=fullName> reduces reader and writer lock contention under high fan-in workloads. Internal changes include lower lock scope, local queue continuation scheduling, and pool updates that improve cache locality.
+
 ### StringSyntax attribute enhancements
 
 The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now includes constants for common programming languages:
@@ -490,6 +523,8 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 - [Configuration binding](#configuration-binding)
 - [MemoryCache OpenTelemetry metrics](#memorycache-opentelemetry-metrics)
 - [Options builder validation improvements](#options-builder-validation-improvements)
+- [Asynchronous ChangeToken.OnChange](#asynchronous-changetokenonchange)
+- [Options-aware HybridCache factories](#options-aware-hybridcache-factories)
 - [Asynchronous validation with DataAnnotations](#asynchronous-validation-with-dataannotations)
 - [Activity tracing configuration](#activity-tracing-configuration)
 
@@ -541,6 +576,14 @@ services.AddOptions<MyOptions>()
     .Bind(configuration.GetSection("MyOptions"))
     .Validate<MyOptionsValidator>();
 ```
+
+### Asynchronous ChangeToken.OnChange
+
+<xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange*> now has `Func<Task>` overloads, so you can run asynchronous callbacks without using `async void`. Re-registration now happens after the returned task completes.
+
+### Options-aware HybridCache factories
+
+<xref:Microsoft.Extensions.Caching.Hybrid.HybridCache.GetOrCreateAsync*> now has overloads that provide a mutable factory context. You can set entry-level options, such as expiration and local cache size, from the value-producing callback.
 
 ### Asynchronous validation with DataAnnotations
 
@@ -622,6 +665,9 @@ bool equal = CryptographicOperations.FixedTimeEquals(receivedSpan, 0x42);
 ## Networking and transport security
 
 - [TLS handshake hardening](#tls-handshake-hardening)
+- [HTTP request compression](#http-request-compression)
+- [Configurable HTTP connection eviction](#configurable-http-connection-eviction)
+- [DNS record resolution APIs](#dns-record-resolution-apis)
 - [HTTP/2 automatic downgrade for Windows authentication](#http2-automatic-downgrade-for-windows-authentication)
 - [QUIC stream priority](#quic-stream-priority)
 - [Video MIME type constants](#video-mime-type-constants)
@@ -632,6 +678,18 @@ Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Trans
 
 - <xref:System.Net.Security.SslStream> server-side handshake bounds-checking fixes in `TlsFrameHelper` close several edge cases that could surface as `IOException` on malformed ClientHello records.
 - On Linux, certificate-validation failures now surface as standard TLS alerts to the peer, matching Windows behavior. Connecting clients receive an actionable handshake error instead of a connection drop.
+
+### HTTP request compression
+
+<xref:System.Net.Http?displayProperty=fullName> adds `GZipCompressedContent`, `BrotliCompressedContent`, and `ZstandardCompressedContent` wrappers for request bodies. These wrappers set the `Content-Encoding` header and stream compressed content as the request serializes.
+
+### Configurable HTTP connection eviction
+
+<xref:System.Net.Http.SocketsHttpHandler> now provides `ShouldEvictConnection` for per-connection eviction decisions. This callback lets you retire connections based on age, endpoint details, and DNS changes instead of fixed lifetime-only policies.
+
+### DNS record resolution APIs
+
+<xref:System.Net.Dns?displayProperty=fullName> adds typed record-resolution APIs, including `ResolveSrv()`, `ResolveMx()`, `ResolveTxt()`, `ResolveCName()`, `ResolvePtr()`, and `ResolveNs()`, together with `Async` variants. The results include records, response code, and negative-cache time-to-live (TTL) metadata through `DnsResult<T>`.
 
 ### HTTP/2 automatic downgrade for Windows authentication
 

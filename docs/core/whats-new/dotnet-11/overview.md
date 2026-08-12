@@ -35,7 +35,7 @@ The .NET 11 libraries include new APIs for:
 
 - <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, `SafeProcessHandle` lifecycle methods, tighter handle control, and new `ProcessStartInfo.StartSuspended` for suspended starts and `Process.TryGetProcessById` for safe process lookup.
 - Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
-- New numeric APIs, including IEEE 754 decimal floating-point types (`Decimal32`, `Decimal64`, and `Decimal128`), `INumberBase<TSelf>.TryParsePartial` for delimiter-aware parsing, and generic <xref:System.Numerics.Complex`1>.
+- New numeric APIs, including IEEE 754 decimal floating-point types (`Decimal32`, `Decimal64`, and `Decimal128`), `INumberBase<TSelf>.TryParsePartial` for delimiter-aware parsing, and generic `System.Numerics.Complex<T>`.
 - System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level values (NDJSON) output, and serialization of C# union types.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
 - Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.

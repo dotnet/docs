@@ -59,7 +59,7 @@ The full set of helpers includes:
 
 - <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> starts a process in a suspended state on Windows and macOS. Pair it with <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Resume?displayProperty=nameWithType> to let it run once you've finished any setup, such as attaching a debugger or configuring job objects.
 - <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> returns `false` instead of throwing when no process with the given ID exists.
-- <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Open(System.Int32,System.Diagnostics.ProcessAccess,System.Boolean)?displayProperty=nameWithType> and <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.TryOpen(System.Int32,System.Diagnostics.ProcessAccess,System.Boolean,Microsoft.Win32.SafeHandles.SafeProcessHandle@)?displayProperty=nameWithType> open a handle to an existing process by ID.
+- `SafeProcessHandle.Open()` and `SafeProcessHandle.TryOpen()` open a handle to an existing process by ID.
 
 ```csharp
 var startInfo = new ProcessStartInfo("worker.exe") { StartSuspended = true };
@@ -236,7 +236,7 @@ The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-class
 
 #### Closed-hierarchy polymorphism inference
 
-<xref:System.Text.Json.JsonSerializerOptions> adds <xref:System.Text.Json.JsonSerializerOptions.InferClosedTypePolymorphism?displayProperty=nameWithType> so the serializer can infer polymorphic metadata for C# closed hierarchies without requiring explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> annotations on each base type. Explicit registrations still take precedence.
+<xref:System.Text.Json.JsonSerializerOptions> adds `JsonSerializerOptions.InferClosedTypePolymorphism` so the serializer can infer polymorphic metadata for C# closed hierarchies without requiring explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> annotations on each base type. Explicit registrations still take precedence.
 
 ### Regular expression improvements
 
@@ -276,7 +276,7 @@ Additionally, a new <xref:System.IO.Compression.ZipArchiveEntry.CompressionMetho
 
 #### ZIP archive password support
 
-<xref:System.IO.Compression.ZipArchiveEntry> now supports password-protected entries for read and write operations. Use the new password-aware `Open` and `OpenAsync` overloads, and use password plus <xref:System.IO.Compression.ZipEncryptionMethod> when you create encrypted entries.
+<xref:System.IO.Compression.ZipArchiveEntry> now supports password-protected entries for read and write operations. Use the new password-aware `Open` and `OpenAsync` overloads, and use password plus `ZipEncryptionMethod` when you create encrypted entries.
 
 #### DeflateStream and GZipStream behavior change
 
@@ -334,15 +334,15 @@ Because the three outer-join operations return tuples directly, you can work wit
 
 ### IEEE 754 decimal floating-point types
 
-<xref:System.Numerics> adds <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
+<xref:System.Numerics> adds `Decimal32`, `Decimal64`, and `Decimal128`, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
 
 ### Partial numeric parsing
 
-<xref:System.Numerics.INumberBase`1.TryParsePartial*> adds partial parsing overloads that report consumed input. Use this API to parse delimited formats, such as CSV, so you don't copy substrings.
+`System.Numerics.INumberBase<T>.TryParsePartial()` adds partial parsing overloads that report consumed input. Use this API to parse delimited formats, such as CSV, so you don't copy substrings.
 
 ### Generic Complex\<T>
 
-<xref:System.Numerics.Complex`1> is now available, so complex arithmetic can use several floating-point types, including `float`, `Half`, `BFloat16`, and the new decimal floating-point types.
+`System.Numerics.Complex<T>` is now available, so complex arithmetic can use several floating-point types, including `float`, `Half`, `BFloat16`, and the new decimal floating-point types.
 
 #### Tuple-returning Join and GroupJoin overloads
 
@@ -502,7 +502,7 @@ A new <xref:System.Uri.UriSchemeData?displayProperty=nameWithType> constant has 
 
 ### Assembly.Location override for AssemblyLoadContext
 
-<xref:System.Runtime.Loader.AssemblyLoadContext.SetAssemblyLocationOverride?displayProperty=nameWithType> is a set-once callback that can override the location reported by <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>. This API helps hosts that stage assemblies in temporary paths or virtualized locations report stable, meaningful locations to diagnostics and resource-loading code.
+`AssemblyLoadContext.SetAssemblyLocationOverride` is a set-once callback that can override the location reported by <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>. This API helps hosts that stage assemblies in temporary paths or virtualized locations report stable, meaningful locations to diagnostics and resource-loading code.
 
 ### Reduced contention in System.IO.Pipelines
 
@@ -681,15 +681,15 @@ Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Trans
 
 ### HTTP request compression
 
-<xref:System.Net.Http?displayProperty=fullName> adds <xref:System.Net.Http.GZipCompressedContent>, <xref:System.Net.Http.BrotliCompressedContent>, and <xref:System.Net.Http.ZstandardCompressedContent> wrappers for request bodies. These wrappers set the `Content-Encoding` header and stream compressed content as the request serializes.
+<xref:System.Net.Http?displayProperty=fullName> adds `GZipCompressedContent`, `BrotliCompressedContent`, and `ZstandardCompressedContent` wrappers for request bodies. These wrappers set the `Content-Encoding` header and stream compressed content as the request serializes.
 
 ### Configurable HTTP connection eviction
 
-<xref:System.Net.Http.SocketsHttpHandler> now provides <xref:System.Net.Http.SocketsHttpHandler.ShouldEvictConnection> for per-connection eviction decisions. This callback lets you retire connections based on age, endpoint details, and DNS changes instead of fixed lifetime-only policies.
+<xref:System.Net.Http.SocketsHttpHandler> now provides `ShouldEvictConnection` for per-connection eviction decisions. This callback lets you retire connections based on age, endpoint details, and DNS changes instead of fixed lifetime-only policies.
 
 ### DNS record resolution APIs
 
-<xref:System.Net.Dns?displayProperty=fullName> adds typed record-resolution APIs, including <xref:System.Net.Dns.ResolveSrv*>, <xref:System.Net.Dns.ResolveMx*>, <xref:System.Net.Dns.ResolveTxt*>, <xref:System.Net.Dns.ResolveCName*>, <xref:System.Net.Dns.ResolvePtr*>, and <xref:System.Net.Dns.ResolveNs*>, together with `Async` variants. The results include records, response code, and negative-cache time-to-live (TTL) metadata through <xref:System.Net.DnsResult`1>.
+<xref:System.Net.Dns?displayProperty=fullName> adds typed record-resolution APIs, including `ResolveSrv()`, `ResolveMx()`, `ResolveTxt()`, `ResolveCName()`, `ResolvePtr()`, and `ResolveNs()`, together with `Async` variants. The results include records, response code, and negative-cache time-to-live (TTL) metadata through `DnsResult<T>`.
 
 ### HTTP/2 automatic downgrade for Windows authentication
 

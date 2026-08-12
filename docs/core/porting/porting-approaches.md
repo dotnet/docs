@@ -2,7 +2,6 @@
 title: Porting approaches
 description: Create a porting plan that best reflects your project and context.
 author: StephenBonikowsky
-ms.author: stebon
 ms.date: 09/15/2025
 ---
 # Create a porting plan

@@ -172,7 +172,7 @@ dotnet reference remove ../ClassLib1/ClassLib1.csproj
 
 Previously, these commands failed with `Could not find project or directory ''` when run from a directory that contained a project file.
 
-### dotnet reference support for file-based apps
+### 'dotnet reference' support for file-based apps
 
 `dotnet reference` now supports file-based apps. Use `dotnet reference add --file app.cs <project-path>` to add `#:project` directives directly to your file-based app, and use `dotnet reference list` and `dotnet reference remove` to manage those references.
 

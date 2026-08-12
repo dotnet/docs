@@ -309,7 +309,7 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 - [LINQ join improvements](#linq-join-improvements)
 - [IEEE 754 decimal floating-point types](#ieee-754-decimal-floating-point-types)
 - [Partial numeric parsing](#partial-numeric-parsing)
-- [Generic Complex\<T\>](#generic-complext)
+- [Generic Complex\<T>](#generic-complext)
 - [BFloat16 support in BitConverter](#bfloat16-support-in-bitconverter)
 - [Floating-point hex formatting and parsing](#floating-point-hex-formatting-and-parsing)
 - [Numerics improvements](#numerics-improvements)
@@ -334,13 +334,13 @@ Because the three outer-join operations return tuples directly, you can work wit
 
 ### IEEE 754 decimal floating-point types
 
-<xref:System.Numerics?displayProperty=fullName> adds <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
+<xref:System.Numerics> adds <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
 
 ### Partial numeric parsing
 
 <xref:System.Numerics.INumberBase`1.TryParsePartial*> adds partial parsing overloads that report consumed input. Use this API to parse delimited formats, such as CSV, so you don't copy substrings.
 
-### Generic Complex\<T\>
+### Generic Complex\<T>
 
 <xref:System.Numerics.Complex`1> is now available, so complex arithmetic can use several floating-point types, including `float`, `Half`, `BFloat16`, and the new decimal floating-point types.
 

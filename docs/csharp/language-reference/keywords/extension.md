@@ -81,7 +81,7 @@ You index into the receiver as though the indexer were a member of the receiver 
 ## See also
 
 - [Extensions feature specification](~/_csharplang/proposals/csharp-14.0/extensions.md)
-- [Extension indexers feature specification](~/_csharplang/proposals/extension-indexers.md)
+- [Extension indexers feature specification](~/_csharplang/proposals/csharp-15.0/extension-indexers.md)
 
 ## C# language specification
 

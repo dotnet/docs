@@ -219,5 +219,5 @@ Run the complete application to see both approaches side by side and observe how
 - [What's new in C# 14](../csharp-14.md)
 - [What's new in C# 15](../csharp-15.md)
 - [`extension` keyword (C# reference)](../../language-reference/keywords/extension.md)
-- [Extension indexers feature specification](~/_csharplang/proposals/extension-indexers.md)
+- [Extension indexers feature specification](~/_csharplang/proposals/csharp-15.0/extension-indexers.md)
 - [Operator overloading (C# reference)](../../language-reference/operators/operator-overloading.md)

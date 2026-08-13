@@ -109,7 +109,7 @@ Upgrades ASP.NET Web Forms applications to Blazor Server. Converts Web Forms pag
 
 ### WinForms feature adoption
 
-Adopts modern Windows Forms features in applications that already target .NET 8 or later, including dark mode (`Application.SetColorMode`), async APIs (`Control.InvokeAsync`, `Form.ShowDialogAsync`, `TaskDialog.ShowDialogAsync`), and MVVM patterns. Dark mode and the async APIs require .NET 9 or later. The agent often suggests this scenario after a .NET version upgrade completes.
+Adopts modern Windows Forms features in applications that already target .NET 8 or later, including dark mode (`Application.SetColorMode`), async APIs (`Control.InvokeAsync`, `Form.ShowAsync`, `Form.ShowDialogAsync`, and `TaskDialog.ShowDialogAsync`), and MVVM patterns. Dark mode and the async APIs require .NET 9 or later. In .NET 9, `Form.ShowAsync` and `Form.ShowDialogAsync` are experimental, so opt in by suppressing warning `WFO5002`. The agent often suggests this scenario after a .NET version upgrade completes.
 
 ## Upgrade skills: common
 

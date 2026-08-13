@@ -75,11 +75,12 @@ For more information about how the compiler determines exhaustiveness, including
 
 ## Type parameters constrained to a closed type
 
-A type parameter constrained to a closed class is treated as that closed class for exhaustiveness checks. A `switch` expression whose governing value has such a type parameter is exhaustive when it handles every direct descendant of the closed constraint:
+The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md#exhaustiveness-of-type-parameters-constrained-to-closed-type) treats a type parameter constrained to a closed class the same as that closed class for exhaustiveness checks: a `switch` expression whose governing value has such a type parameter is exhaustive when it handles every direct descendant of the closed constraint, regardless of whether the type parameter appears on a method or on the containing type:
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="TypeParameterConstrained":::
 
-This rule applies whether the type parameter appears on a method or on the containing type.
+> [!NOTE]
+> The .NET 11 Preview 6 compiler doesn't yet implement this extension. As the preceding example shows, a `switch` expression whose governing type is a type parameter constrained to a closed class currently produces a non-exhaustive switch warning, even when every direct descendant is handled. Switch over the closed class directly, as shown in [Exhaustive switch expressions](#exhaustive-switch-expressions), to get exhaustiveness checking today.
 
 ## C# language specification
 

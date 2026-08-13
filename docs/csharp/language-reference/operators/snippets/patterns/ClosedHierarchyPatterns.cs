@@ -86,14 +86,17 @@ public static class VehicleExamples
 
 public static class TypeParamGoverningTypeExamples
 {
+#pragma warning disable CS8509 // Preview 6 doesn't yet extend exhaustiveness through a type-parameter constraint.
     // <TypeParamGoverningType>
     public static string Describe<X>(X method) where X : PaymentMethod => method switch
     {
         Cash => "cash",
         Card(var last4) => $"card ending {last4}",
         BankTransfer(var iban) => $"bank transfer to {iban}",
-        // No warning: 'X' is constrained to the closed type 'PaymentMethod',
-        // so handling every direct descendant exhausts the switch.
+        // The specification treats this switch as exhaustive because 'X' is constrained
+        // to the closed type 'PaymentMethod', but the .NET 11 Preview 6 compiler doesn't
+        // yet implement that extension and warns here.
     };
     // </TypeParamGoverningType>
+#pragma warning restore CS8509
 }

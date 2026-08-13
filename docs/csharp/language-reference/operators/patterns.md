@@ -359,9 +359,12 @@ Marking `Car` `closed` also makes it implicitly `abstract`, which means you can 
 
 ### Type parameter governing types
 
-A `switch` expression whose governing type is a type parameter constrained to a closed class is exhaustive on the same terms as a switch over the closed class itself. To dispatch on a closed hierarchy from generic code, constrain the type parameter to the closed base and handle every direct descendant:
+The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md#exhaustiveness-of-type-parameters-constrained-to-closed-type) defines a `switch` expression whose governing type is a type parameter constrained to a closed class as exhaustive on the same terms as a switch over the closed class itself, so generic code could dispatch on a closed hierarchy by constraining the type parameter to the closed base and handling every direct descendant:
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="TypeParamGoverningType":::
+
+> [!NOTE]
+> The .NET 11 Preview 6 compiler doesn't yet implement this extension. As the preceding example shows, a `switch` expression governed by a type parameter constrained to a closed class currently produces a non-exhaustive switch warning, even when every direct descendant is handled. Switch over a variable of the closed base type directly, as shown earlier in this article, to get exhaustiveness checking today.
 
 For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
 

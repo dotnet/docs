@@ -12,7 +12,7 @@ public struct Outcome<T> : Outcome<T>.IUnionMembers
         static Outcome<T> Create(Exception? value) => new(value);
         object? Value { get; }
 
-        // only when needed
+        // Optional but recommended: TryGetValue enables efficient pattern matching
         bool TryGetValue(out T value);
         bool TryGetValue(out Exception value);
     }

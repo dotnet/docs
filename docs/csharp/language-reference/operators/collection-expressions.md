@@ -149,3 +149,4 @@ The `with(...)` element has the following restrictions:
 - It must be the first element in the collection expression.
 - Arguments can't have `dynamic` type.
 - It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).
+- The arguments in `with(...)` don't affect whether a conversion exists from the collection expression to a candidate target type, and the compiler ignores them during overload resolution and type inference. Only the presence of a `with(...)` element—not its arguments—affects whether the conversion exists.

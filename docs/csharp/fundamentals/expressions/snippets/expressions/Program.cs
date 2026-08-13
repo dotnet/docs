@@ -27,6 +27,17 @@ Console.WriteLine(access1); // => True   (true || anything is true)
 Console.WriteLine(access2); // => False  (false && anything is false)
 // </ParenthesesClarity>
 
+// <StepByStep>
+int a = 6;
+int b = 2;
+int c = 3;
+
+// Step 1: / has higher precedence than +, so evaluate a / b first → 3
+// Step 2: add the result to c → 3 + 3 = 6
+int result = a / b + c;   // (6 / 2) + 3 = 6
+Console.WriteLine(result); // => 6
+// </StepByStep>
+
 // <ShortCircuit>
 string? text = null;
 
@@ -42,4 +53,9 @@ Console.WriteLine(hasContent); // => True
 string word = "hello";
 bool anyMatch = word.StartsWith("h") || word.StartsWith("x");
 Console.WriteLine(anyMatch); // => True  (right side never evaluated)
+
+// ?. short-circuits on null: returns null without accessing .Length
+string? maybeNull = null;
+int? length = maybeNull?.Length;   // length is null; no NullReferenceException
+Console.WriteLine(length.HasValue); // => False
 // </ShortCircuit>

@@ -51,7 +51,7 @@ The most common scenario. Upgrades your projects from any older .NET variant to 
 
 [!INCLUDE[supported-upgrade-paths](./includes/supported-upgrade-paths.md)]
 
-The agent analyzes your dependency graph, checks NuGet compatibility, identifies breaking changes, and creates a task plan using the best strategy for your solution (bottom-up, top-down, or all-at-once). If your projects need format conversions, the agent handles them automatically as part of the upgrade. The agent also explains release status and support lifecycle (LTS versus STS) so you can pick an appropriate target.
+The agent analyzes your dependency graph, checks NuGet compatibility, identifies breaking changes, and creates a task plan using the best strategy for your solution (bottom-up, top-down, or all-at-once). If your projects need format conversions, the agent handles them automatically as part of the upgrade. To help you pick an appropriate target, the agent also explains release status and support lifecycle (LTS versus STS).
 
 When the upgrade finishes, the agent can generate a report and suggest follow-on work, such as Aspire integration, an EF6-to-EF Core upgrade, WinForms feature adoption, or ARM64 migration.
 

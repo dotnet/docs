@@ -193,7 +193,26 @@ fixed (int* first = numbers)
 
 The operations that access the pointed-to memory, such as pointer indirection (`*p`), pointer member access (`p->member`), pointer element access (`p[i]`), and function pointer invocation, still require an `unsafe` context.
 
-The *requires-unsafe* member model, the assembly opt-in to the updated memory safety rules, and the `safe` contextual keyword come in a later preview.
+C# 15 also adds an `unsafe` expression, `unsafe(expression)`, that establishes an unsafe context for a single expression. It's useful where an `unsafe` block can't appear syntactically, such as a field initializer, a constructor initializer, or a `catch` filter:
+
+```csharp
+class Header
+{
+    // A field initializer can't contain an unsafe block, but it can contain an unsafe expression.
+    static readonly int Signature = unsafe(ReadSignature());
+
+    static unsafe int ReadSignature()
+    {
+        int rawValue = 0x1234;
+        int* pointer = &rawValue;
+        return *pointer;
+    }
+}
+```
+
+Like the rest of the memory safety preview, `unsafe` expressions require the `preview` language version and the `AllowUnsafeBlocks` compiler option.
+
+The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and explicit-layout fields. However, the *requires-unsafe* member model and the assembly opt-in to the updated memory safety rules aren't available yet, so `safe` and `unsafe` currently have no effect on callers.
 
 For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 

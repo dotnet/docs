@@ -57,8 +57,8 @@ The full set of helpers includes:
 
 `System.Diagnostics.Process` adds finer control over starting and finding processes:
 
-- <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> starts a process in a suspended state on Windows and macOS. Pair it with <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle.Resume?displayProperty=nameWithType> to let it run once you've finished any setup, such as attaching a debugger or configuring job objects.
-- <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> returns `false` instead of throwing when no process with the given ID exists.
+- `ProcessStartInfo.StartSuspended` starts a process in a suspended state on Windows and macOS. Pair it with `SafeProcessHandle.Resume` to let it run once you've finished any setup, such as attaching a debugger or configuring job objects.
+- `Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)` returns `false` instead of throwing when no process with the given ID exists.
 - `SafeProcessHandle.Open()` and `SafeProcessHandle.TryOpen()` open a handle to an existing process by ID.
 
 ```csharp

@@ -83,7 +83,7 @@ This rule applies whether the type parameter appears on a method or on the conta
 
 ## C# language specification
 
-For more information, see the [Closed hierarchies](~/_csharplang/proposals/closed-hierarchies.md) feature specification.
+For more information, see the [Closed hierarchies](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md) feature specification.
 
 ## See also
 

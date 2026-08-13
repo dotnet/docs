@@ -168,7 +168,7 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
-Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see the [feature spec](~/_csharplang/proposals/csharp-12.0/using-alias-types.md).
+Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see [§14.6.2 Using alias directives](~/_csharpstandard/standard/namespaces.md#1462-using-alias-directives) in the C# standard.
 
 ## Qualified alias member
 

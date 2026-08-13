@@ -385,7 +385,7 @@ Three patterns are exceptions: the discard `_` pattern, the `var` pattern, and t
 
 The `null` pattern checks whether the union's `Value` is null. For class-based unions, `null` also succeeds when the union reference itself is null.
 
-When a union type provides the *non-boxing access pattern* (`HasValue` and `TryGetValue` members), the compiler uses those members to avoid boxing value-type cases during pattern matching.
+When a union type provides the *non-boxing access pattern*, the compiler calls `TryGetValue` for type-pattern checks and `HasValue` for null-pattern checks, avoiding boxing for value-type cases. Each member applies to its own pattern kind—neither is a fallback for the other. When a member is missing, the compiler checks the `Value` property for that pattern instead.
 
 For more information, see [Union matching](../builtin-types/union.md#union-pattern-matching). For the specification, see [Unions](~/_csharplang/proposals/csharp-15.0/unions.md).
 

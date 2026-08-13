@@ -167,7 +167,7 @@ A custom union type can optionally implement the *non-boxing access pattern* to 
 
 :::code language="csharp" source="snippets/unions/NonBoxingAccess.cs" id="NonBoxingExample":::
 
-The compiler prefers `TryGetValue` over the `Value` property when implementing pattern matching, which avoids boxing value types.
+For pattern matching, the compiler calls `TryGetValue` for type-pattern checks (such as `union is T`) and `HasValue` for null-pattern checks (such as `union is null`), avoiding boxing for value-type cases. Each member applies to its own pattern kind—neither is a fallback for the other. When a member is missing, the compiler checks the `Value` property for that pattern instead. For more information, see [How the compiler generates code for pattern matching](#union-member-providers).
 
 ### Union member providers
 

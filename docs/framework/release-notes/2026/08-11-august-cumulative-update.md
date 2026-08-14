@@ -94,7 +94,7 @@ The following table is for earlier Windows Server versions for Security and Qual
 
 The operating system rows list a KB that's used for update-offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework updates that will be installed. Updates for individual .NET Framework versions are installed based on the version of .NET Framework that's already present on the device. Because of this, the operating system KB is not expected to be listed as an installed update on the device. The expected updates to be installed are the .NET Framework specific version updates listed in the preceding table.
 
-This update installs the complete .NET Framework 3.5 product for Windows 11, version 26H1 (build version 28000) and newer. Unlike traditional cumulative updates that patch individual components, this delivers the full .NET Framework 3.5 product as a standalone installer. It replaces any previously installed version.
+This update installs the complete .NET Framework 3.5 product for Windows 11, version 26H1 (build version 28000) and newer. Unlike traditional cumulative updates that patch individual components, this update delivers the full .NET Framework 3.5 product as a standalone installer. It replaces any previously installed version.
 
 | Product version | .NET Framework 3.5 product update |
 | --- | --- |

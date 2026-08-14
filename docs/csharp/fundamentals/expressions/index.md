@@ -19,23 +19,24 @@ The simplest expressions are *literals* (like `42` or `"hello"`) and *variable n
 
 ### Expressions and statements
 
-An expression produces a value. A *statement* is a complete instruction that the program executes — and many statements contain expressions. For example, in the statement `int total = 3 + 4 * 2;`, the expression `3 + 4 * 2` is evaluated first, and then the assignment statement stores the resulting value in `total`. This article focuses on expressions — how they're formed, how they're evaluated, and how they combine.
+An expression produces a value. A *statement* is a complete instruction that the program executes. Many statements contain expressions. For example, `int total = 3 + 4 * 2;` is a variable declaration statement. The compiler evaluates the initializer expression `3 + 4 * 2`, which produces `11`, and assigns that value to the new variable `total`. This article focuses on expressions — how they're formed, how they're evaluated, and how they combine.
 
 ## Combining expressions
 
 Expressions can be combined. Consider `3 + 4 * 2`. This single expression actually contains two smaller expressions: the *multiplication expression* `4 * 2` and the *addition expression* `3 + <result>`. When expressions are combined, C# needs a rule to decide which one to evaluate first. That rule is *operator precedence*.
 
-You don't need to memorize every detail of precedence. Three tiers cover nearly all everyday code, and when you're unsure, parentheses always make the order explicit and clear.
+You don't need to memorize every detail of precedence. Four tiers cover nearly all everyday code, and when you're unsure, parentheses always make the order explicit and clear.
 
 ## Operator precedence
 
 *Operator precedence* determines which part of a combined expression is evaluated first — exactly like the order-of-operations rules you learned in math class.
 
-Three tiers cover most real code:
+Four tiers cover most real code, ordered from tightest to loosest binding:
 
-1. **Arithmetic first** — `*`, `/`, `%` bind tighter than `+` and `-`. Multiplication and division happen before addition and subtraction.
-2. **Comparison next** — `<`, `>`, `<=`, `>=`, `==`, `!=` bind less tightly than arithmetic, so arithmetic completes before the comparison.
-3. **Logical last** — `&&` and `||` bind least tightly of the common operators, so comparisons complete before the logical combination.
+1. **Primary and unary first** — the tightest-binding operations: member access (`x.y`), method calls (`f()`), indexing (`a[i]`), null-conditional access (`?.`, `?[]`), and unary operators (`-x`, `!flag`, `++i`). These always apply before anything else.
+2. **Arithmetic next** — `*`, `/`, `%` bind tighter than `+` and `-`. Multiplication and division happen before addition and subtraction.
+3. **Comparison next** — `<`, `>`, `<=`, `>=`, `==`, `!=` bind less tightly than arithmetic, so arithmetic completes before the comparison.
+4. **Logical last** — `&&` and `||` bind least tightly of the common operators, so comparisons complete before the logical combination.
 
 This means the expression `score + bonus > threshold && attempts < maxAttempts` evaluates exactly as you'd read it: add `score` and `bonus`, compare the sum to `threshold`, compare `attempts` to `maxAttempts`, then combine the two `bool` results with `&&`.
 
@@ -43,7 +44,7 @@ The full operator precedence table — covering every operator — lives in the 
 
 ### Use parentheses to make intent clear
 
-Parentheses override precedence and document your intent at the same time. When the order isn't obvious from the three tiers above, add parentheses:
+Parentheses override precedence and document your intent at the same time. When the order isn't obvious from the four tiers above, add parentheses:
 
 :::code language="csharp" source="snippets/expressions/Program.cs" ID="ParenthesesClarity":::
 
@@ -67,11 +68,19 @@ C# follows the same process, guided by two rules:
 
 ### Paper-and-pencil evaluation
 
-Consider the expression `a / b + c` with `a = 6`, `b = 2`, `c = 3`. Working through it step by step — just as you would on paper:
+Consider the expression `3 + 6 / 2`. Even though addition appears first in reading order, `/` has higher precedence than `+`, so `6 / 2` is the sub-expression that evaluates first. Working through it step by step — exactly as you would on paper:
+
+```
+3 + 6 / 2
+      ↓   (evaluate 6 / 2 → 3)
+3 +   3
+  ↓   (evaluate 3 + 3 → 6)
+  6
+```
 
 :::code language="csharp" source="snippets/expressions/Program.cs" ID="StepByStep":::
 
-`/` has higher precedence than `+`, so `a / b` is the first sub-expression. Its result, `3`, becomes the left operand of `+`. Then `3 + c` evaluates to `6`.
+The interim value `3` produced by `6 / 2` becomes the right operand of `+`, and the final result is `6`. Each sub-expression produces an interim value; those interim values feed the next sub-expression, until only one value remains.
 
 *Associativity* is a related concept: when two operators have the same precedence, associativity decides which one goes first. Most C# operators are *left-associative*, meaning they group left to right. So `a - b - c` is the same as `(a - b) - c`, not `a - (b - c)`.
 

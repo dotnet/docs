@@ -28,13 +28,10 @@ Console.WriteLine(access2); // => False  (false && anything is false)
 // </ParenthesesClarity>
 
 // <StepByStep>
-int a = 6;
-int b = 2;
-int c = 3;
-
-// Step 1: / has higher precedence than +, so evaluate a / b first → 3
-// Step 2: add the result to c → 3 + 3 = 6
-int result = a / b + c;   // (6 / 2) + 3 = 6
+// 3 + 6 / 2
+// Step 1: 6 / 2 has higher precedence → interim value 3
+// Step 2: 3 + 3 → final result 6
+int result = 3 + 6 / 2;
 Console.WriteLine(result); // => 6
 // </StepByStep>
 

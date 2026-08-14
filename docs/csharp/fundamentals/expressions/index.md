@@ -29,7 +29,7 @@ You don't need to memorize the complete precedence hierarchy. The next section s
 
 ## Operator precedence
 
-*Operator precedence* describes how operators *bind* to their operands when you combine expressions. An operator that binds more tightly claims its operands before a lower-precedence operator can. In `3 + 4 * 2`, `*` binds more tightly than `+`, so it claims `4` and `2` as its operands first. The result of `4 * 2` then becomes an operand of `+`. Binding is about how the expression is structured — which operator applies to which sub-expressions — not about the runtime order in which values are computed. For runtime order, see [How expressions are evaluated](#how-expressions-are-evaluated).
+*Operator precedence* determines how a combined expression *groups* into sub-expressions — the same idea as the order-of-operations rules from math class. An operator with higher precedence *binds more tightly* to its neighboring operands, meaning the expression is structured as if those operands are parenthesized together. In `3 + 4 * 2`, `*` has higher precedence than `+`, so the expression groups as `3 + (4 * 2)`, not `(3 + 4) * 2`.
 
 C# has more precedence groups than the four summarized here. Those additional groups enforce familiar rules — for example, multiplication before addition — and cover the complete set of operators. The following groups cover what you encounter most often in everyday code:
 

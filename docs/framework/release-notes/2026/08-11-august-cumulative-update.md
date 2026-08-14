@@ -2,6 +2,7 @@
 title: August 2026 cumulative update
 description: Learn about the improvements in the .NET Framework August 2026 cumulative update.
 ms.date: 08/11/2026
+ai-usage: ai-generated
 ---
 # .NET Framework August 2026 cumulative update
 
@@ -22,19 +23,19 @@ This security update addresses an elevation of privilege vulnerability detailed 
 
 This security update addresses an elevation of privilege vulnerability detailed in [CVE-2026-62872](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62872).
 
-### CVE-2026-62886 – Remote Code Execution vulnerability
+#### CVE-2026-62886 – Remote Code Execution vulnerability
 
 This security update addresses a remote code execution vulnerability detailed in [CVE-2026-62886](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886).
 
-### CVE-2026-62897 – Remote Code Execution vulnerability
+#### CVE-2026-62897 – Remote Code Execution vulnerability
 
 This security update addresses a remote code execution vulnerability detailed in [CVE-2026-62897](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62897).
 
-### CVE-2026-62902 – Information Disclosure vulnerability
+#### CVE-2026-62902 – Information Disclosure vulnerability
 
 This security update addresses an information disclosure vulnerability detailed in [CVE-2026-62902](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62902).
 
-### CVE-2026-70354 – Remote Code Execution vulnerability
+#### CVE-2026-70354 – Remote Code Execution vulnerability
 
 This security update addresses a remote code execution vulnerability detailed in [CVE-2026-70354](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70354).
 
@@ -48,7 +49,7 @@ This release contains no known issues.
 
 ## Summary tables
 
-TThe following table outlines the updates in this release.
+The following table outlines the updates in this release.
 
 | Product version | Cumulative update |
 | --- | --- |

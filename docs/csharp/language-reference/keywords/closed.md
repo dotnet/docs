@@ -1,7 +1,7 @@
 ---
 title: "closed modifier"
 description: "Learn about the closed class modifier in C#. A closed class restricts derivation to its declaring assembly so consumers can write exhaustive switch expressions over its direct descendants."
-ms.date: 06/02/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "closed"
   - "closed_CSharpKeyword"

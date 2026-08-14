@@ -1,7 +1,7 @@
 ---
 title: "Recommended XML documentation tags"
 description: This article provides the syntax and definitions for recommended tags on types, and their members for XML documentation.
-ms.date: 01/16/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "<summary>"
   - "summary"
@@ -228,7 +228,7 @@ The `<paramref>` tag provides a way to indicate that a word in the code comments
 
 - cref = "`member`": A reference to an exception that's available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within quotation marks (").
 
-The `<exception>` tag lets you specify which exceptions can be thrown. Apply this tag to definitions for methods, properties, events, and indexers.
+The `<exception>` tag lets you specify which exceptions a method can throw. Apply this tag to definitions for methods, properties, events, and indexers.
 
 ### `<value>`
 
@@ -417,12 +417,12 @@ Recommendation:
 <include file='filename' path='tagpath[@name="id"]' />
 ```
 
-- `filename`: The name of the XML file containing the documentation. You can qualify the file name with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
-- `path`: The path of the tags in `filename` that leads to the XML comment to use. The path can include one or multiple attributes like `name`, but they're not required. The attributes can have values like `id`, but values aren't required either. Enclose the path including possible attributes in single quotation marks (' ').
+- `filename`: The name of the XML file containing the documentation. Qualify the file name with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
+- `path`: The path of the tags in `filename` that leads to the XML comment to use. The path can include one or multiple attributes like `name`, but they're not required. The attributes can have values like `id`, but values aren't required either. Enclose the path, including possible attributes, in single quotation marks (' ').
 - `attribName`, `attribName1`: The names of optional attributes.
 - `attribValue`, `attribValue1`: The optional values of the attributes. If you don't specify a value, any value is accepted when searching for the comment in `filename`. Enclose the attribute value in quotation marks (").
 
-By using the `<include>` tag, you can refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
+By using the `<include>` tag, you can refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can check out the source code file and someone else can check out the documentation file. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
 
 For example, the following source code uses the `<include>` tag to include remarks. The file path is relative to the source.
 

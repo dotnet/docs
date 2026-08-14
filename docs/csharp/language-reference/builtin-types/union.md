@@ -1,7 +1,7 @@
 ---
 title: "Union types"
 description: Learn about union types in C#. Unions express values from a closed set of types with exhaustive pattern matching support.
-ms.date: 06/05/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "union_CSharpKeyword"
 helpviewer_keywords:
@@ -141,7 +141,7 @@ Any class or struct with a `[Union]` attribute is a *union type* if it follows t
 - One or more public constructors, each with a single by-value or `in` parameter. The parameter type of each constructor defines a *case type*.
 - A public `Value` property of type `object?` (or `object`) with a `get` accessor.
 
-All the preceding union members must be public. The compiler uses these members to implement union conversions, pattern matching, and exhaustiveness checks. You can also implement the [non-boxing access pattern](#non-boxing-access-pattern) or create a [class-based union type](#class-based-union-types). Your custom union type can add additional members.
+All the preceding union members must be public. The compiler uses these members to implement union conversions, pattern matching, and exhaustiveness checks. You can also implement the [non-boxing access pattern](#non-boxing-access-pattern) or create a [class-based union type](#class-based-union-types). Your custom union type can add more members.
 
 The compiler assumes that custom union types satisfy these behavioral rules:
 

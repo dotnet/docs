@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 06/17/2026
+ms.date: 08/14/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -288,7 +288,7 @@ These relaxations apply whenever you compile with the `preview` language version
 
 ### Unsafe expressions
 
-An `unsafe` expression, `unsafe(expression)`, establishes an unsafe context for evaluating a single expression. It's useful where an `unsafe` block can't appear syntactically, such as a field initializer, a constructor initializer, or the `when` clause of a `catch` clause. The unsafe context ends at the closing parenthesis, so it doesn't widen to cover the rest of the containing statement.
+An `unsafe` expression, `unsafe(expression)`, creates an unsafe context for evaluating a single expression. It's useful in situations where an `unsafe` block can't appear syntactically, such as a field initializer, a constructor initializer, or the `when` clause of a `catch` clause. The unsafe context ends at the closing parenthesis, so it doesn't extend to the rest of the containing statement.
 
 The following example dereferences a pointer inside a field initializer, a position that can't contain an `unsafe` block:
 
@@ -302,7 +302,7 @@ Like other unsafe code, an `unsafe` expression requires the [**AllowUnsafeBlocks
 
 ### Discharge caller-unsafe obligations
 
-A member that calls a caller-unsafe operation has two choices: propagate the obligation, or discharge it.
+A member that calls a caller-unsafe operation has two choices: propagate the obligation or discharge it.
 
 - **Propagate**: Mark your own member `unsafe`. The obligation passes to your callers. Use propagation when you can't fully validate the obligation yourself.
 - **Discharge**: Leave your member's signature safe. Validate the obligation inside the member, usually with runtime guards, then perform the unsafe operation in an inner `unsafe` block. A member that contains an inner `unsafe` block but doesn't mark its own signature `unsafe` is an *unsafe boundary*: it turns unsafe code into a safe-callable surface.

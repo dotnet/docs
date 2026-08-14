@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: "Discover what's new in C# 15, including features such as union types, the closed modifier, extension indexers, and pointer relaxations. Try examples in your code."
-ms.date: 07/08/2026
+ms.date: 08/14/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -149,7 +149,7 @@ outer: for (int row = 0; row < grid.Height; row++)
 }
 ```
 
-The label is placed directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their original behavior and target the innermost applicable statement.
+Place the label directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their original behavior and target the innermost applicable statement.
 
 The [IDE0410](../../fundamentals/code-analysis/style-rules/ide0410.md) style rule flags the Boolean flag and `goto` patterns that a labeled jump statement can replace, and shows before-and-after examples of each.
 

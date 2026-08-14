@@ -1,7 +1,7 @@
 ---
 description: "safe modifier - C# Reference"
 title: "safe modifier"
-ms.date: 06/17/2026
+ms.date: 08/14/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "safe_CSharpKeyword"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 The `safe` contextual keyword attests that a declaration is sound in places where the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview) requires you to make the safety choice explicit. You apply `safe` as a modifier on a declaration that the compiler can't classify on its own, such as an `extern` member or a field in a struct with explicit layout. The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
 
 > [!IMPORTANT]
-> The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. Starting with .NET 11 Preview 6, the compiler recognizes `safe` as a modifier on `extern` members and explicit-layout fields, and the examples in this article compile. However, there's no public opt-in for the updated caller-safety rules yet, so the compiler doesn't enforce the safety choice that `safe` and [`unsafe`](unsafe.md) express: omitting both modifiers doesn't produce an error, and neither modifier changes what callers can do. To follow the feature, set the [`LangVersion`](../compiler-options/language.md#langversion) compiler option to `preview`. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+> The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. The compiler accepts `safe` as a modifier on `extern` members and explicit-layout fields. However, there's no public opt-in for the updated caller-safety rules yet, so the compiler doesn't enforce the safety choice that `safe` and [`unsafe`](unsafe.md) express: omitting both modifiers doesn't produce an error, and neither modifier changes what callers can do. To follow the feature, set the [`LangVersion`](../compiler-options/language.md#langversion) compiler option to `preview`. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 ## Extern members
 

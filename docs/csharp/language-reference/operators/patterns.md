@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 06/05/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -274,7 +274,7 @@ For more information, see the [Discard pattern](~/_csharpstandard/standard/patte
 
 ## Parenthesized pattern
 
-You can put parentheses around any pattern. Typically, you do this to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
+You can put parentheses around any pattern. Typically, you use parentheses to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
@@ -320,7 +320,7 @@ For example, a closed `public` base class can have an `internal` direct descenda
 
 To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`), add a base class arm (`Shape` in the preceding example), or make every direct descendant at least as accessible as the closed base type.
 
-When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `PaymentMethod?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
+When the governing type is nullable, `null` is an extra value the switch must handle. A switch over `PaymentMethod?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
 
 Derivation from a closed class isn't transitive: a non-closed descendant of a closed class can be derived from in other assemblies. The compiler only treats the *direct* descendants as the exhaustive set. To make a switch over a descendant also benefit from exhaustiveness checking, declare the descendant `closed` (or `sealed`).
 
@@ -355,16 +355,16 @@ If you want exhaustiveness to follow the hierarchy further down, declare `Car` i
 
 A switch whose governing type is `Vehicle` has choices: Code that handles `Car` and `Truck` is still exhaustive, because the `Car` arm covers every subtype of `Car`. Marking `Car` `closed` simply gives you a second option for that switch. You can keep the single `Car` arm, or replace it with one arm per direct descendant of `Car` (alongside the `Truck` arm) and still be exhaustive.
 
-Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
+Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That condition might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
 
 ### Type parameter governing types
 
-The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md#exhaustiveness-of-type-parameters-constrained-to-closed-type) defines a `switch` expression whose governing type is a type parameter constrained to a closed class as exhaustive on the same terms as a switch over the closed class itself, so generic code could dispatch on a closed hierarchy by constraining the type parameter to the closed base and handling every direct descendant:
+The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md#exhaustiveness-of-type-parameters-constrained-to-closed-type) defines a `switch` expression whose governing type is a type parameter constrained to a closed class as exhaustive on the same terms as a switch over the closed class itself. So, generic code can dispatch on a closed hierarchy by constraining the type parameter to the closed base and handling every direct descendant:
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="TypeParamGoverningType":::
 
 > [!NOTE]
-> The .NET 11 Preview 6 compiler doesn't yet implement this extension. As the preceding example shows, a `switch` expression governed by a type parameter constrained to a closed class currently produces a non-exhaustive switch warning, even when every direct descendant is handled. Switch over a variable of the closed base type directly, as shown earlier in this article, to get exhaustiveness checking today.
+> The .NET 11 Preview 6 compiler doesn't yet implement this extension. As the preceding example shows, a `switch` expression governed by a type parameter constrained to a closed class currently produces a non-exhaustive switch warning, even when you handle every direct descendant. Switch over a variable of the closed base type directly, as shown earlier in this article, to get exhaustiveness checking today.
 
 For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
 
@@ -394,7 +394,7 @@ For more information, see [Union matching](../builtin-types/union.md#union-patte
 
 ## C# language specification
 
-For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), including:
+For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md}), including:
 
 - [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern)
 - [Slice pattern](~/_csharpstandard/standard/patterns.md#11212-slice-pattern)

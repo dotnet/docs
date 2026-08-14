@@ -33,7 +33,7 @@ You don't need to memorize every detail of precedence. Four tiers cover nearly a
 
 Four tiers cover most real code, ordered from tightest to loosest binding:
 
-1. **Primary and unary first** — the tightest-binding operations: member access (`x.y`), method calls (`f()`), indexing (`a[i]`), null-conditional access (`?.`, `?[]`), and unary operators (`-x`, `!flag`, `++i`). These always apply before anything else.
+1. **Primary, unary, and range** — all three groups bind more tightly than arithmetic. *Primary* operators include member access (`x.y`), method calls (`f()`), indexing (`a[i]`), and null-conditional access (`?.`, `?[]`). *Unary* operators act on a single operand: negation (`-x`), logical NOT (`!flag`), and prefix/postfix increment (`++i`). The *range* operator (`..`) builds index ranges for slice expressions, like `array[1..4]`. Each of these groups sits in its own precedence band, but all of them evaluate before any arithmetic.
 2. **Arithmetic next** — `*`, `/`, `%` bind tighter than `+` and `-`. Multiplication and division happen before addition and subtraction.
 3. **Comparison next** — `<`, `>`, `<=`, `>=`, `==`, `!=` bind less tightly than arithmetic, so arithmetic completes before the comparison.
 4. **Logical last** — `&&` and `||` bind least tightly of the common operators, so comparisons complete before the logical combination.

@@ -35,7 +35,6 @@ public static class ClosedSwitchExamples
     };
     //</NullableSwitch>
 
-#pragma warning disable CS8509 // Preview 6 doesn't yet extend exhaustiveness through a type-parameter constraint.
     //<TypeParameterConstrained>
     public static string DescribeJob<X>(X status) where X : JobStatus => status switch
     {
@@ -43,10 +42,8 @@ public static class ClosedSwitchExamples
         Running(var percent) => $"{percent}% complete",
         Completed(var elapsed) => $"finished in {elapsed.TotalSeconds:F1}s",
         Failed(var error) => $"failed: {error}",
-        // The specification treats this switch as exhaustive because 'X' is constrained
-        // to a closed type, but the .NET 11 Preview 6 compiler doesn't yet implement
-        // that extension and warns here.
+        // No warning: 'X' is constrained to a closed type, so the compiler treats
+        // this switch as exhaustive because every direct descendant is handled.
     };
     //</TypeParameterConstrained>
-#pragma warning restore CS8509
 }

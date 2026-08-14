@@ -79,9 +79,6 @@ The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="TypeParameterConstrained":::
 
-> [!NOTE]
-> The .NET 11 Preview 6 compiler doesn't yet implement this extension. As the preceding example shows, a `switch` expression whose governing type is a type parameter constrained to a closed class currently produces a non-exhaustive switch warning, even when every direct descendant is handled. Switch over the closed class directly, as shown in [Exhaustive switch expressions](#exhaustive-switch-expressions), to get exhaustiveness checking today.
-
 ## C# language specification
 
 For more information, see the [Closed hierarchies](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md) feature specification.

@@ -363,9 +363,6 @@ The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="TypeParamGoverningType":::
 
-> [!NOTE]
-> The .NET 11 Preview 6 compiler doesn't yet implement this extension. As the preceding example shows, a `switch` expression governed by a type parameter constrained to a closed class currently produces a non-exhaustive switch warning, even when you handle every direct descendant. Switch over a variable of the closed base type directly, as shown earlier in this article, to get exhaustiveness checking today.
-
 For more information, see the [closed modifier](../keywords/closed.md). For the specification, see [Closed hierarchies](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
 
 ## Union patterns
@@ -394,7 +391,7 @@ For more information, see [Union matching](../builtin-types/union.md#union-patte
 
 ## C# language specification
 
-For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md}), including:
+For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), including:
 
 - [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern)
 - [Slice pattern](~/_csharpstandard/standard/patterns.md#11212-slice-pattern)

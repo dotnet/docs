@@ -1,7 +1,7 @@
 // This file demonstrates the C# 15 memory safety relaxations and the `unsafe`
-// expression, verified against .NET 11 Preview 6. Creating pointers, the fixed
-// statement, stackalloc-to-pointer, and sizeof no longer require an unsafe
-// context. Only operations that access the pointed-to memory still require one.
+// expression. Creating pointers, the fixed statement, stackalloc-to-pointer,
+// and sizeof no longer require an unsafe context. Only operations that access
+// the pointed-to memory still require one.
 
 using System.Threading.Tasks;
 

@@ -454,13 +454,13 @@
 | App Configuration Provider | NuGet [8.6.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.6.0) |  |  |
 | Azure Functions CLI | NuGet [5.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Abstractions/5.0.0-preview.1) |  |  |
 | Azure Functions SDK | NuGet [0.5.0](https://www.nuget.org/packages/Azure.Functions.Sdk/0.5.0) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp/3.0.0-beta.34) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/3.0.0-beta.34) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp.linux-x64/3.0.0-beta.34) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/3.0.0-beta.34) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp.osx-x64/3.0.0-beta.34) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp.win-arm64/3.0.0-beta.34) |  |  |
-| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [3.0.0-beta.34](https://www.nuget.org/packages/Azure.Mcp.win-x64/3.0.0-beta.34) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp/3.0.0-beta.35) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/3.0.0-beta.35) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp.linux-x64/3.0.0-beta.35) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/3.0.0-beta.35) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp.osx-x64/3.0.0-beta.35) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp.win-arm64/3.0.0-beta.35) |  |  |
+| Azure MCP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [3.0.0-beta.35](https://www.nuget.org/packages/Azure.Mcp.win-x64/3.0.0-beta.35) |  |  |
 | Azure MCP Types Internal | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Caching - PostgreSQL | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.2) |  |  |

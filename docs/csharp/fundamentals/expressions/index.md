@@ -29,11 +29,11 @@ You don't need to memorize the complete precedence hierarchy. The next section s
 
 ## Operator precedence
 
-*Operator precedence* describes how operators *bind* to their operands when expressions are combined. An operator that binds more tightly claims its operands before a lower-precedence operator can. In `3 + 4 * 2`, `*` binds more tightly than `+`, so it claims `4` and `2` as its operands first. The result of `4 * 2` then becomes an operand of `+`. Binding is about how the expression is structured — which operator applies to which sub-expressions — not about the runtime order in which values are computed (that's covered in [How expressions are evaluated](#how-expressions-are-evaluated)).
+*Operator precedence* describes how operators *bind* to their operands when you combine expressions. An operator that binds more tightly claims its operands before a lower-precedence operator can. In `3 + 4 * 2`, `*` binds more tightly than `+`, so it claims `4` and `2` as its operands first. The result of `4 * 2` then becomes an operand of `+`. Binding is about how the expression is structured — which operator applies to which sub-expressions — not about the runtime order in which values are computed. For runtime order, see [How expressions are evaluated](#how-expressions-are-evaluated).
 
 C# has more precedence groups than the four summarized here. Those additional groups enforce familiar rules — for example, multiplication before addition — and cover the complete set of operators. The following groups cover what you encounter most often in everyday code:
 
-1. **Primary, unary, and range** — these are three distinct precedence groups, all of which bind more tightly than arithmetic. This summary combines them into one step because, for practical purposes, they all apply before arithmetic does.
+1. **Primary, unary, and range** — these are three distinct precedence groups, all of which bind more tightly than arithmetic. This summary combines them into one step because, for practical purposes, they all apply before arithmetic.
    - *Primary* operators — member access (`x.y`), method calls (`f()`), indexing (`a[i]`), and null-conditional access (`?.`, `?[]`) — bind most tightly of all.
    - *Unary* operators act on a single operand: negation (`-x`), logical NOT (`!flag`), prefix increment (`++i`), and postfix increment (`i++`).
    - The *range* operator (`..`) builds index ranges for slice expressions, like `array[1..4]`.
@@ -41,7 +41,7 @@ C# has more precedence groups than the four summarized here. Those additional gr
 3. **Comparison** — `<`, `>`, `<=`, `>=`, `==`, `!=` bind less tightly than arithmetic, so arithmetic completes before the comparison.
 4. **Logical** — `&&` and `||` bind least tightly of the common operators, so comparisons complete before the logical combination.
 
-This means the expression `score + bonus > threshold && attempts < maxAttempts` evaluates exactly as you'd read it: add `score` and `bonus`, compare the sum to `threshold`, compare `attempts` to `maxAttempts`, then combine the two `bool` results with `&&`.
+This precedence means the expression `score + bonus > threshold && attempts < maxAttempts` evaluates exactly as you'd read it: add `score` and `bonus`, compare the sum to `threshold`, compare `attempts` to `maxAttempts`, then combine the two `bool` results with `&&`. Adding parentheses to make every grouping explicit shows the same structure: `((score + bonus) > threshold) && (attempts < maxAttempts)`.
 
 For the complete precedence hierarchy covering every operator, see [C# operators and expressions](../../language-reference/operators/index.md).
 

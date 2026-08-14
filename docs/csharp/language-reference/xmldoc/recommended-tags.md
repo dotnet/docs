@@ -228,7 +228,7 @@ The `<paramref>` tag provides a way to indicate that a word in the code comments
 
 - cref = "`member`": A reference to an exception that's available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within quotation marks (").
 
-The `<exception>` tag lets you specify which exceptions a method can throw. Apply this tag to definitions for methods, properties, events, and indexers.
+The `<exception>` tag lets you specify which exceptions a member can throw. Apply this tag to definitions for methods, properties, events, and indexers.
 
 ### `<value>`
 

@@ -25,26 +25,29 @@ An expression produces a value. A *statement* is a complete instruction that the
 
 Expressions can be combined. Consider `3 + 4 * 2`. This single expression actually contains two smaller expressions: the *multiplication expression* `4 * 2` and the *addition expression* `3 + <result>`. When expressions are combined, C# needs a rule to decide which one to evaluate first. That rule is *operator precedence*.
 
-You don't need to memorize every detail of precedence. Four tiers cover nearly all everyday code, and when you're unsure, parentheses always make the order explicit and clear.
+You don't need to memorize the complete precedence hierarchy. The next section summarizes the everyday groups, and parentheses always let you make the order explicit when you're unsure.
 
 ## Operator precedence
 
-*Operator precedence* determines which part of a combined expression is evaluated first — exactly like the order-of-operations rules you learned in math class.
+*Operator precedence* describes how operators *bind* to their operands when expressions are combined. An operator that binds more tightly claims its operands before a lower-precedence operator can. In `3 + 4 * 2`, `*` binds more tightly than `+`, so it claims `4` and `2` as its operands first. The result of `4 * 2` then becomes an operand of `+`. Binding is about how the expression is structured — which operator applies to which sub-expressions — not about the runtime order in which values are computed (that's covered in [How expressions are evaluated](#how-expressions-are-evaluated)).
 
-Four tiers cover most real code, ordered from tightest to loosest binding:
+C# has more precedence groups than the four summarized here. Those additional groups enforce familiar rules — for example, multiplication before addition — and cover the complete set of operators. The following groups cover what you encounter most often in everyday code:
 
-1. **Primary, unary, and range** — all three groups bind more tightly than arithmetic. *Primary* operators include member access (`x.y`), method calls (`f()`), indexing (`a[i]`), and null-conditional access (`?.`, `?[]`). *Unary* operators act on a single operand: negation (`-x`), logical NOT (`!flag`), prefix increment (`++i`), and postfix increment (`i++`). The *range* operator (`..`) builds index ranges for slice expressions, like `array[1..4]`. Each of these groups sits in its own precedence band, but all of them evaluate before any arithmetic.
-2. **Arithmetic next** — `*`, `/`, `%` bind tighter than `+` and `-`. Multiplication and division happen before addition and subtraction.
-3. **Comparison next** — `<`, `>`, `<=`, `>=`, `==`, `!=` bind less tightly than arithmetic, so arithmetic completes before the comparison.
-4. **Logical last** — `&&` and `||` bind least tightly of the common operators, so comparisons complete before the logical combination.
+1. **Primary, unary, and range** — these are three distinct precedence groups, all of which bind more tightly than arithmetic. This summary combines them into one step because, for practical purposes, they all apply before arithmetic does.
+   - *Primary* operators — member access (`x.y`), method calls (`f()`), indexing (`a[i]`), and null-conditional access (`?.`, `?[]`) — bind most tightly of all.
+   - *Unary* operators act on a single operand: negation (`-x`), logical NOT (`!flag`), prefix increment (`++i`), and postfix increment (`i++`).
+   - The *range* operator (`..`) builds index ranges for slice expressions, like `array[1..4]`.
+2. **Arithmetic** — `*`, `/`, `%` bind more tightly than `+` and `-`. Multiplication and division happen before addition and subtraction.
+3. **Comparison** — `<`, `>`, `<=`, `>=`, `==`, `!=` bind less tightly than arithmetic, so arithmetic completes before the comparison.
+4. **Logical** — `&&` and `||` bind least tightly of the common operators, so comparisons complete before the logical combination.
 
 This means the expression `score + bonus > threshold && attempts < maxAttempts` evaluates exactly as you'd read it: add `score` and `bonus`, compare the sum to `threshold`, compare `attempts` to `maxAttempts`, then combine the two `bool` results with `&&`.
 
-The full operator precedence table — covering every operator — lives in the language reference: [C# operators and expressions](../../language-reference/operators/index.md).
+For the complete precedence hierarchy covering every operator, see [C# operators and expressions](../../language-reference/operators/index.md).
 
 ### Use parentheses to make intent clear
 
-Parentheses override precedence and document your intent at the same time. When the order isn't obvious from the four tiers above, add parentheses:
+Parentheses override precedence and document your intent at the same time. When the order isn't obvious from the groups above, add parentheses:
 
 :::code language="csharp" source="snippets/expressions/Program.cs" ID="ParenthesesClarity":::
 

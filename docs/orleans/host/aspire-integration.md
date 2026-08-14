@@ -14,7 +14,7 @@ zone_pivot_groups: orleans-version
 
 ## Overview
 
-Orleans integration with Aspire uses the `Aspire.Hosting.Orleans` package in your AppHost project. This package provides extension methods to:
+Orleans integration with Aspire uses the [`Aspire.Hosting.Orleans` package](https://aspire.dev/integrations/frameworks/orleans/) in your AppHost project. This package provides extension methods to:
 
 - Define Orleans as a distributed resource
 - Configure clustering providers (Redis, Azure Storage, ADO.NET)
@@ -29,7 +29,11 @@ Before using Orleans with Aspire, ensure you have:
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 - [Aspire CLI](https://aspire.dev/get-started/install-cli/)
-- An IDE with Aspire support (Visual Studio 2022 17.9+, VS Code with C# Dev Kit, or JetBrains Rider)
+- An IDE with Aspire support, such as one of the following:
+  - Visual Studio 2022 version 17.9+
+  - Visual Studio Code with C# Dev Kit and the [`microsoft-aspire.aspire-vscode`](https://marketplace.visualstudio.com/items?itemName=microsoft-aspire.aspire-vscode) extension.
+  - JetBrains Rider
+- Familiarize yourself with the [Aspire Orleans integration pack](https://aspire.dev/integrations/frameworks/orleans)
 
 ## Required packages
 
@@ -91,7 +95,7 @@ For separate client projects, configure the Orleans client similarly:
 
 ## AppHost extension methods reference
 
-The `Aspire.Hosting.Orleans` package provides these extension methods:
+The [`Aspire.Hosting.Orleans` package](https://www.nuget.org/packages/Aspire.Hosting.Orleans) provides these extension methods:
 
 ### Core methods
 

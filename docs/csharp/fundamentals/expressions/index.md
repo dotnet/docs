@@ -29,7 +29,7 @@ You don't need to memorize the complete precedence hierarchy. The next section s
 
 ## Operator precedence
 
-*Operator precedence* determines how a combined expression *groups* into sub-expressions — the same idea as the order-of-operations rules from math class. An operator with higher precedence *binds more tightly* to its neighboring operands, meaning the expression is structured as if those operands are parenthesized together. In `3 + 4 * 2`, `*` has higher precedence than `+`, so the expression groups as `3 + (4 * 2)`, not `(3 + 4) * 2`.
+*Operator precedence* determines how a combined expression *groups* into sub-expressions. This concept is similar to the order-of-operations rules from math class. An operator with higher precedence *binds more tightly* to its operands. The expression is structured as if those operands are parenthesized together. In `3 + 4 * 2`, `*` has higher precedence than `+`, so the expression groups as `3 + (4 * 2)`, not `(3 + 4) * 2`.
 
 C# has more precedence groups than the four summarized here. Those additional groups enforce familiar rules — for example, multiplication before addition — and cover the complete set of operators. The following groups cover what you encounter most often in everyday code:
 
@@ -93,7 +93,7 @@ Short-circuit evaluation is particularly useful for null checks:
 
 :::code language="csharp" source="snippets/expressions/Program.cs" ID="ShortCircuit":::
 
-`text != null && text.Length > 0` is safe because the second condition runs only when `text` is not `null`. Similarly, `?.` stops evaluation when it encounters a `null` reference, which avoids a `NullReferenceException` without an explicit `if` check.
+`text != null && text.Length > 0` is safe because the second condition runs only when `text` isn't `null`. Similarly, `?.` stops evaluation when it encounters a `null` reference, which avoids a `NullReferenceException` without an explicit `if` check.
 
 For a broader look at null-safe operators, see [C# null operators](../null-safety/null-operators.md).
 

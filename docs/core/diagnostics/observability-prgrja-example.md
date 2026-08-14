@@ -3,6 +3,7 @@ title: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
 description: A walkthrough of how to use OpenTelemetry in .NET to export telemetry to Prometheus, Grafana, and Jaeger
 ms.date: 6/14/2023
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger
@@ -19,7 +20,7 @@ dotnet new web
 
 ## 2. Add metrics and activity definitions
 
-The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Example`).
+The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Example`). The code sets `Counts the number of greetings` as the metric description, and Prometheus exposes this counter as `greetings_count`.
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_CustomMetrics":::
 
@@ -173,16 +174,12 @@ info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5212
 ```
 
-Modify the Prometheus YAML configuration file to specify the port for your HTTP scraping endpoint and set a lower scraping interval. For example:
+Modify the Prometheus YAML configuration file and add a scrape job for your app endpoint. Keep the existing `prometheus` job unchanged. For example:
 
 ```yaml
-  scrape_configs:
+scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
-  - job_name: "prometheus"
-
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
-
+  - job_name: "OpenTelemetryTest"
     scrape_interval: 1s # poll very quickly for a more responsive demo
     static_configs:
       - targets: ["localhost:5212"]

@@ -71,6 +71,8 @@
 
 ### PR 15 — Expressions: overview + operator precedence
 
+[#55355](https://github.com/dotnet/docs/pull/55355) - *in review*
+
 > ~5 files
 
 1. ~~Create `fundamentals/expressions/` directory~~ — **already created by PR 14b** when the equality article was relocated there (see the "As shipped" note under PR 14b). This PR adds `index.md` beside the shipped `equality.md`.

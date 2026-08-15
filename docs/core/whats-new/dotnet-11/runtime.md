@@ -2,7 +2,7 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 08/12/2026
+ms.date: 08/15/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---

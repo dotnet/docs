@@ -183,21 +183,21 @@ These improvements unlock further downstream optimizations such as inlining and 
 ```csharp
 IfaceGeneric<string> caller = new Caller<string>();
 Iface obj = Activator.CreateInstance<Impl>();
-caller.M(obj, "test"); // Can be optimized down to Console.WriteLine("test")
+caller.DefaultImpl(obj, "test"); // Can be optimized down to Console.WriteLine("test")
 
 interface Iface
 {
-    void M<T>(T value);
+    void GenericMethod<T>(T value);
 }
 
 interface IfaceGeneric<T>
 {
-    void M(Iface obj, T value) => obj.M(value);
+    void DefaultImpl(Iface obj, T value) => obj.GenericMethod(value);
 }
 
 class Impl : Iface
 {
-    public void M<T>(T value) => Console.WriteLine(value);
+    public void GenericMethod<T>(T value) => Console.WriteLine(value);
 }
 
 class Caller<T> : IfaceGeneric<T>

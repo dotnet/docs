@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Minimum hardware requirements updated"
-description: "Learn about the breaking change in .NET 11 where x86/x64 minimum hardware requirements and ReadyToRun targets have been updated."
+description: "Learn about the breaking change in .NET 11 where x86/x64 minimum hardware requirements and x86/x64 and Arm64 ReadyToRun targets have been updated."
 ms.date: 08/15/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/48045
@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/48045
 
 # Minimum hardware requirements updated
 
-The minimum hardware requirements for .NET 11 have been updated to require more modern instruction sets on x86/x64 architectures. Additionally, the ReadyToRun (R2R) compilation targets have been updated on x86/x64 and Arm64 to take advantage of newer hardware capabilities.
+The minimum hardware requirements for .NET 11 have been updated to require more modern instruction sets on x86/x64 architectures. Additionally, the ReadyToRun (R2R) compilation targets for x86/x64 and Arm64 have been updated to take advantage of newer hardware capabilities.
 
 ### Arm64
 

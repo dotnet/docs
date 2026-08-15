@@ -11,6 +11,9 @@ f1_keywords:
 
 This warning indicates that the feature band of the .NET SDK used to build your project has no newer release, even though a newer SDK exists in a different feature band on the same major version. The full warning message is similar to the following example:
 
+> [!NOTE]
+> This check is available in .NET 11 Preview 5 and later.
+
 > NETSDK1240: The current .NET SDK (\<version>) has no newer release in its feature band. Update to version \<version>: <https://dotnet.microsoft.com/download>
 
 A .NET SDK version has the form `<major>.<minor>.<feature-band><patch>` (for example, `8.0.404`, where `4xx` is the feature band). When the recommended servicing path moves to a different feature band, the older band stops receiving updates. To resolve the warning, install the recommended .NET SDK version from <https://dotnet.microsoft.com/download> and update your `global.json` (if present) to select it.

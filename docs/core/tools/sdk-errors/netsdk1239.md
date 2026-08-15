@@ -11,6 +11,9 @@ f1_keywords:
 
 This warning indicates that the .NET SDK used to build your project is end of life (EOL) and no longer receives security updates. The full warning message is similar to the following example:
 
+> [!NOTE]
+> This check is available in .NET 11 Preview 5 and later.
+
 > NETSDK1239: The current .NET SDK (\<version>) is end of life as of \<date>. It will receive no further security updates: <https://dotnet.microsoft.com/download>
 
 To resolve the warning, install a supported .NET SDK from <https://dotnet.microsoft.com/download> and update your `global.json` (if present) to select the new version. For the current support timeline, see [.NET releases and support](../../releases-and-support.md).

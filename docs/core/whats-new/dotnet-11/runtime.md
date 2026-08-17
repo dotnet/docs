@@ -157,7 +157,7 @@ The runtime now detects when a continuation has nothing to restore and skips the
 - **`Math.BigMul` on x64:** `Math.BigMul(long, long, out long)` is now significantly faster on x64. The JIT generates a single `MUL r/m64` instruction when both operands are 64-bit values and the caller requests the high half of the result, eliminating the previous helper call.
 - **Single-IG prolog restriction removed:** The JIT no longer requires the function prolog to fit in a single instruction group (IG). Complex prologues with many saved registers, large stack allocations, or runtime-async state setup no longer trigger fallback paths.
 - **`SELECT(cond, cns, cns)` folding:** The JIT now folds conditional selects whose two branches both produce the same constant into just that constant—for example, `condition ? 42 : 42` becomes `42`. This fold eliminates unnecessary comparisons that can appear after earlier optimizations unify branches.
-- **AVX-VNNI-512 intrinsics:** `AvxVnni.V51` adds 512-bit dot-product intrinsics for CPUs that support `AVX512-VNNI`.
+- **AVX-VNNI-512 intrinsics:** <xref:System.Runtime.Intrinsics.X86.AvxVnni.V512> adds 512-bit dot-product intrinsics for CPUs that support `AVX512-VNNI`.
 - **Saturating floating-point conversions:** Unchecked `float` and `double` conversions to small integer types now saturate to type bounds instead of wrapping through intermediate truncation.
 - **ARM64 `Vector<T>` by reference for SVE:** When the runtime is compiled with ARM SVE support, `Vector<T>` values are passed by reference rather than by value, aligning with the ARM calling convention for scalable types and enabling better code generation for SVE-intensive code.
 

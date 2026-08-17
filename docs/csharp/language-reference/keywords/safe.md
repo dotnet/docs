@@ -1,7 +1,7 @@
 ---
 description: "safe modifier - C# Reference"
 title: "safe modifier"
-ms.date: 06/17/2026
+ms.date: 08/14/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "safe_CSharpKeyword"
@@ -14,14 +14,14 @@ helpviewer_keywords:
 The `safe` contextual keyword attests that a declaration is sound in places where the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview) requires you to make the safety choice explicit. You apply `safe` as a modifier on a declaration that the compiler can't classify on its own, such as an `extern` member or a field in a struct with explicit layout. The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
 
 > [!IMPORTANT]
-> The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. The compiler in .NET 11 Preview 5 doesn't yet recognize the keyword. To follow the feature, set the [`LangVersion`](../compiler-options/language.md#langversion) compiler option to `preview`. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md). The code in this article shows the proposed syntax and doesn't compile with the current preview compiler.
+> The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. The compiler accepts `safe` as a modifier on `extern` members and explicit-layout fields. However, there's no public opt-in for the updated caller-safety rules yet, so the compiler doesn't enforce the safety choice that `safe` and [`unsafe`](unsafe.md) express: omitting both modifiers doesn't produce an error, and neither modifier changes what callers can do. To follow the feature, set the [`LangVersion`](../compiler-options/language.md#langversion) compiler option to `preview`. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 ## Extern members
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 
 ```csharp
-// Preview: illustrates the updated model, which the current compiler doesn't enforce yet.
+// Compiles under LangVersion preview, but the safety choice isn't enforced yet.
 [LibraryImport("libc")]
 internal static safe partial int getpid();
 
@@ -29,14 +29,14 @@ internal static safe partial int getpid();
 internal static unsafe partial nint strlen(byte* str);
 ```
 
-`getpid` takes no parameters and returns a primitive, so the author attests that the call is safe, and callers use it without an `unsafe` context. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to its callers. Omitting both modifiers is an error, which forces you to make the safety decision.
+`getpid` takes no parameters and returns a primitive, so the author attests that the call is safe, and callers use it without an `unsafe` context. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to its callers. Omitting both modifiers is intended to be an error under the updated model, but the compiler doesn't yet enforce that rule because there's no public opt-in for the updated rules.
 
 ## Explicit-layout fields
 
 In a struct with `[StructLayout(LayoutKind.Explicit)]`, fields can overlap in memory, so the compiler can't reason about whether a read through one field is sound. You mark every field of such a struct either `safe` or `unsafe`:
 
 ```csharp
-// Preview
+// Compiles under LangVersion preview, but the safety choice isn't enforced yet.
 [StructLayout(LayoutKind.Explicit)]
 internal struct Union
 {
@@ -48,7 +48,7 @@ internal struct Union
 }
 ```
 
-A field that holds a native pointer, or whose type otherwise carries an invariant the type system can't express, is `unsafe`. A field whose type is fully described by the type system is `safe`. As with `extern` members, omitting both modifiers is an error.
+A field that holds a native pointer, or whose type otherwise carries an invariant the type system can't express, is `unsafe`. A field whose type is fully described by the type system is `safe`. As with `extern` members, omitting both modifiers is intended to be an error under the updated model, but the compiler doesn't yet enforce that rule.
 
 ## C# language specification
 

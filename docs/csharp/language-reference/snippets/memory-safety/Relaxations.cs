@@ -1,7 +1,9 @@
-// This file demonstrates the C# 15 memory safety relaxations verified against
-// .NET 11 Preview 5. Creating pointers, the fixed statement, stackalloc-to-pointer,
-// and sizeof no longer require an unsafe context. Only operations that access the
-// pointed-to memory still require one.
+// This file demonstrates the C# 15 memory safety relaxations and the `unsafe`
+// expression. Creating pointers, the fixed statement, stackalloc-to-pointer,
+// and sizeof no longer require an unsafe context. Only operations that access
+// the pointed-to memory still require one.
+
+using System.Threading.Tasks;
 
 namespace MemorySafety;
 
@@ -58,4 +60,33 @@ public class Relaxations
         }
     }
     // </Dereference>
+
+    // <UnsafeExpression>
+    // A field initializer can't contain an unsafe block, but it can contain an
+    // unsafe expression. The unsafe context ends at the closing parenthesis.
+    public static readonly int Signature = unsafe(ReadSignature());
+
+    private static unsafe int ReadSignature()
+    {
+        int rawValue = 0x1234;
+        int* pointer = &rawValue;
+        return *pointer;
+    }
+    // </UnsafeExpression>
+
+    // <AwaitUnsafeExpression>
+    public static async Task<int> ReadSignatureAsync()
+    {
+        // The unsafe expression scopes the unsafe context to the call that
+        // produces the task. The 'await' itself stays outside that context.
+        return await unsafe(ReadSignatureCoreAsync());
+    }
+
+    private static unsafe Task<int> ReadSignatureCoreAsync()
+    {
+        int rawValue = 0x1234;
+        int* pointer = &rawValue;
+        return Task.FromResult(*pointer);
+    }
+    // </AwaitUnsafeExpression>
 }

@@ -52,7 +52,7 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
 - **`--add-source|--nuget-source <SOURCE>`**
 
-  By default, `dotnet new update` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet sources for the operation. Specify `--nuget-source` to use a source in addition to the configured sources for this command only. The option doesn't add the source to your NuGet configuration.
+  By default, `dotnet new update` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet sources for the operation. Specify `--nuget-source` to use a source in addition to the configured sources.
   To check the configured sources for the current directory, use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior). Available since .NET SDK 7.0.100.
 
 - **`--check-only|--dry-run`**

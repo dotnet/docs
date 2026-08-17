@@ -1,50 +1,50 @@
 ---
 title: "Resolve errors and warnings related to tuples"
-description: "This article helps you diagnose and correct compiler errors and warnings related to tuple declarations, element names, metadata, conversions, equality, type inference, and pattern matching"
+description: "This article helps you diagnose and correct compiler errors and warnings related to tuple declarations, element names, metadata, conversions, equality, type inference, and pattern matching."
 f1_keywords:
-  - CS8123
-  - CS8124
-  - CS8125
-  - CS8126
-  - CS8127
-  - CS8128
-  - CS8135
-  - CS8137
-  - CS8138
-  - CS8139
-  - CS8140
-  - CS8141
-  - CS8142
-  - CS8179
-  - CS8182
-  - CS8210
-  - CS8307
-  - CS8383
-  - CS8384
-  - CS8516
-  - CS8522
+  - "CS8123"
+  - "CS8124"
+  - "CS8125"
+  - "CS8126"
+  - "CS8127"
+  - "CS8128"
+  - "CS8135"
+  - "CS8137"
+  - "CS8138"
+  - "CS8139"
+  - "CS8140"
+  - "CS8141"
+  - "CS8142"
+  - "CS8179"
+  - "CS8182"
+  - "CS8210"
+  - "CS8307"
+  - "CS8383"
+  - "CS8384"
+  - "CS8516"
+  - "CS8522"
 helpviewer_keywords:
-  - CS8123
-  - CS8124
-  - CS8125
-  - CS8126
-  - CS8127
-  - CS8128
-  - CS8135
-  - CS8137
-  - CS8138
-  - CS8139
-  - CS8140
-  - CS8141
-  - CS8142
-  - CS8179
-  - CS8182
-  - CS8210
-  - CS8307
-  - CS8383
-  - CS8384
-  - CS8516
-  - CS8522
+  - "CS8123"
+  - "CS8124"
+  - "CS8125"
+  - "CS8126"
+  - "CS8127"
+  - "CS8128"
+  - "CS8135"
+  - "CS8137"
+  - "CS8138"
+  - "CS8139"
+  - "CS8140"
+  - "CS8141"
+  - "CS8142"
+  - "CS8179"
+  - "CS8182"
+  - "CS8210"
+  - "CS8307"
+  - "CS8383"
+  - "CS8384"
+  - "CS8516"
+  - "CS8522"
 ms.date: 08/17/2026
 ai-usage: ai-assisted
 ---
@@ -107,7 +107,7 @@ When a type signature includes named tuples, the compiler must reference `TupleE
 ## ValueTuple infrastructure
 
 - **CS8128**: *Member 'member' was not found on type 'type' from assembly 'assembly'.*
-- **CS8179**: *Predefined type 'type' is not defined or imported*
+- **CS8179**: *Predefined type 'type' is not defined or imported.*
 - **CS8182**: *Predefined type 'type' must be a struct.*
 
 These errors occur when the compiler can't find or validate required `System.ValueTuple` types that underlie tuple syntax. Add the `System.ValueTuple` NuGet package for frameworks that don't include it built-in (for example, older .NET Framework versions) (**CS8179**). Verify that `ValueTuple` types are structs, not classes. If a custom class shadows system types, remove or rename it (**CS8182**). If a specific member (`Item1`, `Item2`, `Rest`) is missing from the predefined `ValueTuple` type, verify that your project references the correct runtime or NuGet package version (**CS8128**).

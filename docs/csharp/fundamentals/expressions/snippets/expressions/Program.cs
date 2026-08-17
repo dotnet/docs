@@ -18,7 +18,7 @@ Console.WriteLine(result2); // => True
 bool isAdmin = false;
 bool isOwner = true;
 
-// Without: && binds tighter, so: isAdmin && (isOwner || true)
+// Without: && binds tighter, so: (isAdmin && isOwner) || true
 bool access1 = isAdmin && isOwner || true;
 // With: forces the || to run first
 bool access2 = isAdmin && (isOwner || true);

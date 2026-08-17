@@ -209,7 +209,7 @@ Additionally, when you open a <xref:System.IO.Compression.ZipArchive> in <xref:S
 <xref:System.Formats.Tar.TarReader?displayProperty=fullName> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> call. If you need to retain entry data, copy it immediately to a separate <xref:System.IO.MemoryStream> that remains valid after advancing.
 
 > [!WARNING]
-> Avoid using <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> with `copyContents: true` on untrusted archives, as it allocates potentially large amount of memory for the <xref:System.IO.MemoryStream> to hold the entry contents. Pass `copyContents: false` and validate the entry size before materializing the contents manually.
+> Avoid using <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> with `copyContents: true` on untrusted archives, as it allocates a potentially large amount of memory for the <xref:System.IO.MemoryStream> to hold the entry contents. Pass `copyContents: false` and validate the entry size before materializing the contents manually.
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="TarStreaming":::
 

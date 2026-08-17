@@ -23,7 +23,7 @@ bool access1 = isAdmin && isOwner || true;
 // With: forces the || to run first
 bool access2 = isAdmin && (isOwner || true);
 
-Console.WriteLine(access1); // => True   (true || anything is true)
+Console.WriteLine(access1); // => True   (false && true is false; false || true is true)
 Console.WriteLine(access2); // => False  (false && anything is false)
 // </ParenthesesClarity>
 

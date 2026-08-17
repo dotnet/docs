@@ -82,10 +82,6 @@ This security update addresses a denial of service vulnerability detailed in [CV
 
 This security update addresses a tampering vulnerability detailed in [CVE-2026-50659](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50659).
 
-#### CVE-2026-56158 – .NET Framework Remote Code Execution vulnerability
-
-This security update addresses a remote code execution vulnerability detailed in [CVE-2026-56158](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56158).
-
 ### Quality and reliability improvements
 
 **.NET Libraries**

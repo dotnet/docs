@@ -9,10 +9,9 @@ f1_keywords:
 ---
 # NETSDK1238: The current .NET SDK has known vulnerabilities
 
-This warning indicates that the .NET SDK used to build your project has one or more known Common Vulnerabilities and Exposures (CVEs). The full warning message is similar to the following example:
+**This article applies to:** ✔️ .NET 11 Preview 5 and later versions
 
-> [!NOTE]
-> This check is available in .NET 11 Preview 5 and later.
+This warning indicates that the .NET SDK used to build your project has one or more known Common Vulnerabilities and Exposures (CVEs). The full warning message is similar to the following example:
 
 > NETSDK1238: The current .NET SDK (\<version>) has known vulnerabilities (\<CVE list>). Update to version \<version>. See <https://dotnet.microsoft.com/download>
 

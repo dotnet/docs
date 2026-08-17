@@ -521,9 +521,10 @@ items:
   - name: Tuple declarations
     href: ./compiler-messages/tuple-errors.md
     displayName: >
-      tuples, tuple element names, tuple metadata, tuple conversions, tuple equality,
-      CS8123, CS8126, CS8128, CS8135, CS8137, CS8138, CS8179, CS8182, CS8307, CS8383,
-      CS8384
+      tuples, tuple element names, tuple metadata, tuple conversions, tuple equality, tuple pattern matching,
+      CS8123, CS8124, CS8125, CS8126, CS8127, CS8128, CS8135, CS8137, CS8138, CS8139,
+      CS8140, CS8141, CS8142, CS8179, CS8181, CS8182, CS8210, CS8306, CS8307, CS8383,
+      CS8384, CS8516, CS8522
   - name: Record declarations
     href: ./compiler-messages/record-declaration-errors.md
     displayName: >
@@ -1561,12 +1562,6 @@ items:
       href: ./compiler-messages/cs7003.md
     - name: CS8070
       href: ./compiler-messages/cs8070.md
-    - name: CS8124
-      href: ./compiler-messages/cs8124.md
-    - name: CS8125
-      href: ./compiler-messages/cs8125.md
-    - name: CS8127
-      href: ./compiler-messages/cs8127.md
     - name: CS8129
       href: ./compiler-messages/cs8129.md
     - name: CS8130
@@ -1575,12 +1570,6 @@ items:
       href: ./compiler-messages/cs8131.md
     - name: CS8132
       href: ./compiler-messages/cs8132.md
-    - name: CS8139
-      href: ./compiler-messages/cs8139.md
-    - name: CS8140
-      href: ./compiler-messages/cs8140.md
-    - name: CS8141
-      href: ./compiler-messages/cs8141.md
     - name: CS8146
       href: ./compiler-messages/cs8146.md
     - name: CS8147
@@ -1621,8 +1610,6 @@ items:
       href: ./compiler-messages/cs8173.md
     - name: CS8174
       href: ./compiler-messages/cs8174.md
-    - name: CS8210
-      href: ./compiler-messages/cs8210.md
     - name: CS8333
       href: ./compiler-messages/cs8333.md
     - name: CS8334

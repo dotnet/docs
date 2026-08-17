@@ -146,4 +146,3 @@ These errors relate to tuple expression formation. Tuples require at least two e
 - [Deconstruction](../../fundamentals/functional/deconstruct.md)
 - [Pattern matching](../../fundamentals/functional/pattern-matching.md)
 - [Void](../builtin-types/void.md)
-

@@ -1,9 +1,18 @@
 ---
 title: "C# Equality comparisons"
-description: Learn how C# compares values and references with ==, !=, Equals, GetHashCode, and ReferenceEquals for classes, structs, records, and tuples.
-ms.date: 07/22/2026
+description: Learn how C# compares values and references with ==, !=, Equals, GetHashCode, and ReferenceEquals for classes, structs, records, and tuples. Covers the equivalence contract, polymorphic equality in class hierarchies, and records with collection members.
+ms.date: 08/18/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
+helpviewer_keywords:
+  - "object equality [C#]"
+  - "value equality [C#]"
+  - "reference equality [C#]"
+  - "object identity [C#]"
+  - "object equivalence [C#]"
+  - "overriding Equals method [C#]"
+  - "Equals method [C#], overriding"
+  - "equivalence [C#]"
 ---
 
 # C# Equality comparisons
@@ -90,6 +99,16 @@ In a complete manual implementation, provide these members:
 - An `override` of <xref:System.Object.GetHashCode*>. Objects that are equal must return the same hash code. Without this pairing, the type behaves incorrectly in hash-based collections such as `Dictionary<TKey,TValue>` or `HashSet<T>`. See <xref:System.Object.GetHashCode*> for guidance on a correct implementation.
 - Optionally, a typed `Equals` method by implementing <xref:System.IEquatable`1>. You often see this written as `Equals(T?)` in docs: `T` is a [type parameter](../types/generics.md), a placeholder for the current type, and `?` is a [nullable annotation](../null-safety/index.md) that says the argument can be `null`. This typed method can avoid extra conversions when callers already have the same type, but it's a secondary optimization.
 
+A correct implementation also satisfies the *equivalence contract*. The following rules assume `x`, `y`, and `z` are not null:
+
+1. **Reflexive**: `x.Equals(x)` returns `true`.
+2. **Symmetric**: `x.Equals(y)` returns the same value as `y.Equals(x)`.
+3. **Transitive**: if `x.Equals(y)` and `y.Equals(z)` are both `true`, then `x.Equals(z)` must be `true`.
+4. **Consistent**: successive calls to `x.Equals(y)` return the same value as long as neither object changes.
+5. **Null behavior**: `x.Equals(null)` returns `false`; `x.Equals(y)` must not throw when called on a non-null `x`.
+
+The symmetric and transitive rules are easy to violate in inheritance hierarchies. See [Polymorphic equality in unsealed class hierarchies](#polymorphic-equality-in-unsealed-class-hierarchies) for guidance.
+
 The following example starts with the <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*> overrides, plus the optional typed `Equals` member, so you can see their effect before the `==` and `!=` operators are added. `HashCode.Combine` is a library helper that builds one hash code from the same values used by `Equals`:
 
 :::code language="csharp" source="snippets/equality/Program.cs" ID="ColorDefinition":::
@@ -110,6 +129,51 @@ A common use is inside an `Equals` override to short-circuit the full comparison
 
 > [!NOTE]
 > Advanced detail: when variables are typed as an [interface](../types/interfaces.md), `==` checks whether the interface variables refer to the same object. A call to `Equals` still runs the underlying object's implementation.
+
+> [!NOTE]
+> <xref:System.Object.ReferenceEquals*> always returns `false` when comparing value types, even if both arguments contain the same values. This is because each value-type argument is independently *boxed* into a separate heap object when passed to `ReferenceEquals`.
+
+## Records with reference-type members
+
+Record equality is synthesized from the members' own equality. Each property or field is compared using its own `Equals` method. For most scalar values—`int`, `string`, `DateTime`, and similar types—that works exactly as you'd expect. The subtlety arises with common mutable collections such as `List<T>` or `T[]`: these types compare by reference, so two record instances that contain *different list objects with the same content* are **not** considered equal by the synthesized record equality.
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionProblem":::
+
+`playlist1` and `playlist2` are separate `List<string>` instances. Even though their contents match, `Equals` returns `false`.
+
+When you need two-record equality to reflect collection *contents*, you have a few options:
+
+- **Custom `IEquatable<T>` override**: Implement `IEquatable<T>` on the record and use <xref:System.Linq.Enumerable.SequenceEqual*?displayProperty=nameWithType> (or an appropriate comparison) for the collection members.
+
+  :::code language="csharp" source="snippets/equality/Program.cs" ID="PlaylistFixedDefinition":::
+
+  :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionFixed":::
+
+- **Use collection types with value equality**: <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType> doesn't override equality either, but a record that wraps a `ReadOnlySpan<T>` or uses `SequenceEqual` in a custom `Equals` achieves the same goal. The key insight is to pick the right abstraction rather than fighting the defaults.
+
+- **Design around identity**: If the record represents an entity rather than a value—and the collection members are logically shared—then reference equality for those members may be intentional. Design the type to reuse the same list instance where equality matters.
+
+## Polymorphic equality in unsealed class hierarchies
+
+Implementing value equality in an unsealed class hierarchy requires extra care. The hazard is that `IEquatable<T>.Equals(T? other)` is dispatched at compile time based on the *declared type* of the variable, not the runtime type. If `TwoDPoint` declares a non-virtual `Equals(TwoDPoint? other)`, then a variable declared as `TwoDPoint` but holding a `ThreeDPoint` at runtime calls `TwoDPoint.Equals`, silently ignoring the extra dimension. The result is that two points with different `Z` values incorrectly compare as equal.
+
+**The fix**: make the typed `Equals` method `virtual` and add a `GetType() == other.GetType()` guard. This ensures that objects of different runtime types are never considered equal, regardless of the declared type of the variable.
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="PolymorphicEqualityDefinition":::
+
+Usage with a variable declared as the base type:
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="PolymorphicEqualityUsage":::
+
+Key points for unsealed class hierarchies:
+
+- **`GetType()` guard**: including `GetType() == other.GetType()` in the base class `Equals` prevents a `Circle` from comparing equal to a `Square` with the same color, and prevents a `Circle` from comparing equal to a `Shape` base with the same color.
+- **`virtual` on the typed `Equals`**: lets each derived class augment the comparison with its own fields by calling `base.Equals(other)`.
+- **`GetHashCode` must include `GetType()`**: two objects are only considered equal when their runtime types match, so `GetHashCode` must reflect that. `HashCode.Combine(GetType(), ...)` achieves this.
+- **Sealed classes are simpler**: a `sealed` class can't be subclassed, so compile-time and runtime types always agree. The standard `IEquatable<T>` pattern shown for `Color` earlier in this article is correct and complete for sealed classes without any virtual dispatch.
+
+> [!TIP]
+> Records handle inheritance correctly out of the box. When a base record and a derived record are both compared using `==` or `Equals`, the compiler-generated equality checks both the runtime type and all declared properties. Prefer `record` over a manual unsealed-class hierarchy when value equality is your goal.
 
 ## See also
 

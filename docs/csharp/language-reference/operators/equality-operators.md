@@ -114,5 +114,5 @@ For more information about equality of record types, see the [Equality members](
 - <xref:System.IEquatable`1?displayProperty=nameWithType>
 - <xref:System.Object.Equals*?displayProperty=nameWithType>
 - <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType>
-- [Equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md)
+- [Equality comparisons](../../fundamentals/expressions/equality.md)
 - [Comparison operators](comparison-operators.md)

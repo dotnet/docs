@@ -5784,6 +5784,18 @@
     {
       "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
       "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/equality-comparisons.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#use-objectreferenceequals-to-test-identity-directly"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#implement-equality-yourself-when-a-type-cant-be-a-record"
     }
   ]
 }

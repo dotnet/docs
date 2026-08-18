@@ -119,3 +119,4 @@ A common use is inside an `Equals` override to short-circuit the full comparison
 - [Records](../types/records.md)
 - [Tuples and deconstruction](../types/tuples.md)
 - [Equality operators (language reference)](../../language-reference/operators/equality-operators.md)
+- [Arithmetic, comparison, logical, and assignment operators](operators.md) — the equality operator survey alongside arithmetic, logical, and assignment operators

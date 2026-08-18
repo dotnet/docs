@@ -110,7 +110,7 @@ When a type signature includes named tuples, the compiler must reference `TupleE
 - **CS8179**: *Predefined type 'type' is not defined or imported.*
 - **CS8182**: *Predefined type 'type' must be a struct.*
 
-These errors occur when the compiler can't find or validate required `System.ValueTuple` types that underlie tuple syntax. Add the `System.ValueTuple` NuGet package for frameworks that don't include it built-in (for example, older .NET Framework versions) (**CS8179**). Verify that `ValueTuple` types are structs, not classes. If a custom class shadows system types, remove or rename it (**CS8182**). If a specific member (`Item1`, `Item2`, `Rest`) is missing from the predefined `ValueTuple` type, verify that your project references the correct runtime or NuGet package version (**CS8128**).
+These errors occur when the compiler can't find or validate required <Xref:System.ValueTuple?displayProperty=fullName> types that underlie tuple syntax. Add the `System.ValueTuple` NuGet package for frameworks that don't include it built-in (for example, older .NET Framework versions) (**CS8179**). Verify that `ValueTuple` types are structs, not classes. If a custom class shadows system types, remove or rename it (**CS8182**). If a specific member (`Item1`, `Item2`, `Rest`) is missing from the predefined `ValueTuple` type, verify that your project references the correct runtime or NuGet package version (**CS8128**).
 
 ## Tuple structure and literals
 
@@ -138,7 +138,7 @@ These errors relate to tuple expression formation. Tuples require at least two e
 - **CS8516**: *The name 'name' does not identify tuple element 'element'.*
 - **CS8522**: *Element names are not permitted when pattern-matching via 'System.Runtime.CompilerServices.ITuple'.*
 
-**CS8516** occurs when a tuple pattern uses a property name that doesn't match any element of the tuple type. Verify the element names of the tuple type and correct the pattern property name. **CS8522** occurs when a positional pattern uses named subpatterns against a type that implements `System.Runtime.CompilerServices.ITuple` but isn't a known tuple type. Remove element names from the pattern and match positionally.
+**CS8516** occurs when a tuple pattern uses a property name that doesn't match any element of the tuple type. Verify the element names of the tuple type and correct the pattern property name. **CS8522** occurs when a positional pattern uses named subpatterns against a type that implements <xref:System.Runtime.CompilerServices.ITuple> but isn't a known tuple type. Remove element names from the pattern and match positionally.
 
 ## See also
 

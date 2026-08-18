@@ -102,7 +102,7 @@ Tuple element names are part of method signatures and must be consistent across 
 - **CS8137**: *Cannot define a class or member that utilizes tuples because the compiler required type 'type' cannot be found. Are you missing a reference?*
 - **CS8138**: *Cannot reference 'System.Runtime.CompilerServices.TupleElementNamesAttribute' explicitly. Use the tuple syntax to define tuple names.*
 
-When a type signature includes named tuples, the compiler must reference `TupleElementNamesAttribute` to store element names in metadata. Ensure your project references a .NET runtime that provides `System.Runtime.CompilerServices.TupleElementNamesAttribute`, or add the `System.Runtime` NuGet package for older frameworks (**CS8137**). Use tuple literal syntax with element names—for example, `(int x, string y)`—instead of explicitly referencing the attribute. The compiler generates the metadata automatically (**CS8138**).
+When a type signature includes named tuples, the compiler must reference <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute> to store element names in metadata. Ensure your project references a .NET runtime that provides <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute?displayProperty=fullName>, or add the `System.Runtime` NuGet package for older frameworks (**CS8137**). Use tuple literal syntax with element names—for example, `(int x, string y)`—instead of explicitly referencing the attribute. The compiler generates the metadata automatically (**CS8138**).
 
 ## ValueTuple infrastructure
 

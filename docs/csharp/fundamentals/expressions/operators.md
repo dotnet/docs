@@ -19,13 +19,13 @@ An *operator* combines one or more *operands* into a single value. You already k
 
 The five arithmetic operators perform numeric calculations.
 
-| Operator | Name | Example | Result |
-|----------|------|---------|--------|
-| `+` | Addition | `10 + 3` | `13` |
-| `-` | Subtraction | `10 - 3` | `7` |
-| `*` | Multiplication | `10 * 3` | `30` |
-| `/` | Division | `10 / 3` | `3` |
-| `%` | Remainder | `10 % 3` | `1` |
+| Operator | Name           | Example  | Result |
+|----------|----------------|----------|--------|
+| `+`      | Addition       | `10 + 3` | `13`   |
+| `-`      | Subtraction    | `10 - 3` | `7`    |
+| `*`      | Multiplication | `10 * 3` | `30`   |
+| `/`      | Division       | `10 / 3` | `3`    |
+| `%`      | Remainder      | `10 % 3` | `1`    |
 
 :::code language="csharp" source="snippets/operators/Program.cs" ID="ArithmeticOps":::
 
@@ -131,11 +131,11 @@ Compound assignment operators combine a binary operation with assignment:
 
 | Operator | Equivalent to |
 |----------|---------------|
-| `x += y` | `x = x + y` |
-| `x -= y` | `x = x - y` |
-| `x *= y` | `x = x * y` |
-| `x /= y` | `x = x / y` |
-| `x %= y` | `x = x % y` |
+| `x += y` | `x = x + y`   |
+| `x -= y` | `x = x - y`   |
+| `x *= y` | `x = x * y`   |
+| `x /= y` | `x = x / y`   |
+| `x %= y` | `x = x % y`   |
 
 :::code language="csharp" source="snippets/operators/Program.cs" ID="AssignmentOps":::
 

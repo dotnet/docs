@@ -147,6 +147,6 @@ Console.WriteLine($"{a2} {b2} {c2}"); // => 0 0 0
 
 // Compound assignment evaluates the left side once and converts back to the LHS type
 byte small = 200;
-small += 10;  // equivalent to: small = (byte)(small + 10); result wraps to 210
+small += 10;  // equivalent to: small = (byte)(small + 10); result is 210
 Console.WriteLine(small); // => 210
 // </AssignmentChain>

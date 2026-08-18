@@ -1,7 +1,7 @@
 ---
 title: How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
 description: "Learn how to handle overflow JSON or use JsonElement or JsonNode while using System.Text.Json to serialize and deserialize JSON in .NET."
-ms.date: 07/21/2021
+ms.date: 08/18/2026
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # How to handle overflow JSON or use JsonElement or JsonNode
@@ -44,10 +45,20 @@ And the JSON to be deserialized is this:
 }
 ```
 
-If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, apply the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) attribute to a property of type `Dictionary<string,object>` or `Dictionary<string,JsonElement>`:
+If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, apply the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) attribute to a property or field. Use one of these supported declarations:
+
+* Declare the extension-data member as <xref:System.Text.Json.Nodes.JsonObject>.
+* Declare the extension-data member as [`IDictionary<string, object>`](xref:System.Collections.Generic.IDictionary`2).
+* Declare the extension-data member as [`IDictionary<string, JsonElement>`](xref:System.Collections.Generic.IDictionary`2).
+* Declare the extension-data member as [`IReadOnlyDictionary<string, object>`](xref:System.Collections.Generic.IReadOnlyDictionary`2) in .NET 11 and later.
+* Declare the extension-data member as [`IReadOnlyDictionary<string, JsonElement>`](xref:System.Collections.Generic.IReadOnlyDictionary`2) in .NET 11 and later.
+
+For mutable dictionary extension data, use any type assignable to one of the supported `IDictionary` interfaces, such as `Dictionary<string, JsonElement>`. The read-only declarations must use one of the exact `IReadOnlyDictionary` interface types listed above.
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithExtensionData":::
 :::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithExtensionData":::
+
+For an `IReadOnlyDictionary` extension-data member, .NET 11 materializes a `Dictionary<string, object>` or `Dictionary<string, JsonElement>`. The member must be writable because the serializer seeds the new dictionary from existing values and assigns it back. If an incoming JSON property duplicates an existing key, the incoming value wins.
 
 The following table shows the result of deserializing the JSON shown earlier into this sample type. The extra data becomes key-value pairs of the `ExtensionData` property:
 
@@ -79,6 +90,8 @@ When the target object is serialized, the extension data key value pairs become 
 ```
 
 Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets the JSON make a round trip without losing any extra data that otherwise wouldn't be deserialized.
+
+Starting in .NET 11, serialization flattens `JsonObject` extension data into the containing JSON object. The `JsonObject` properties appear directly in the containing object, not under the extension-data member name.
 
 The following example shows a round trip from JSON to a deserialized object and back to JSON:
 

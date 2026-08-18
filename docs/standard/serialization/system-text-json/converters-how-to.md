@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 03/23/2026
+ms.date: 08/18/2026
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -89,11 +89,11 @@ The `Enum` type is similar to an open generic type: a converter for `Enum` has t
 
 ## Use open generic converters with [JsonConverter]
 
-Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonConverterAttribute> supports open generic converter types on generic types when the total type parameter arity matches. This feature lets you apply a `[JsonConverter]` attribute directly using an open generic converter type (for example, `typeof(OptionConverter<>)`) without implementing a <xref:System.Text.Json.Serialization.JsonConverterFactory>. The serializer automatically constructs the closed generic converter at runtime.
+Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonConverterAttribute> supports open generic converter types on generic types when the total type parameter arity matches. This feature lets you apply a `[JsonConverter]` attribute directly using an open generic converter type (for example, `typeof(OptionConverter<>)`) without implementing a <xref:System.Text.Json.Serialization.JsonConverterFactory>. The serializer automatically constructs the closed generic converter. Reflection-based serialization and source generation both support this feature.
 
 ### Define the generic type
 
-Annotate your generic type with `[JsonConverter]`, specifying the open generic converter type. The type parameter count on the converter must match the target type:
+Annotate your generic type with `[JsonConverter]`, specifying the open generic converter type. The converter and target type must have matching total generic arity:
 
 :::code language="csharp" source="snippets/converters-how-to/csharp/OpenGenericConverter.cs" id="OptionType":::
 
@@ -149,7 +149,7 @@ Continue to use <xref:System.Text.Json.Serialization.JsonConverterFactory> when:
 * You register the converter through <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> instead of the `[JsonConverter]` attribute.
 
 > [!NOTE]
-> If the type parameter count on the converter doesn't match the target type, an <xref:System.InvalidOperationException> is thrown at runtime.
+> At run time, using an open generic converter on a non-generic type or with mismatched total generic arity throws an <xref:System.InvalidOperationException>. The message identifies the converter and target type.
 
 ## The use of `Utf8JsonReader` in the `Read` method
 

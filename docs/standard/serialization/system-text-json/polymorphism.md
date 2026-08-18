@@ -1,7 +1,7 @@
 ---
 title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
-ms.date: 10/18/2024
+ms.date: 08/18/2026
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # How to serialize properties of derived classes with System.Text.Json
@@ -560,6 +561,68 @@ JsonSerializer.Serialize<IPoint>(new BasePointWithTimeSeries());
 JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
 ```
 
+## Infer polymorphism from a closed hierarchy
+
+Starting in .NET 11, `System.Text.Json` can infer derived types from a C# [closed hierarchy](../../../csharp/language-reference/keywords/closed.md). Enable inference on one hierarchy through <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType>:
+
+> [!IMPORTANT]
+> Closed hierarchies are a C# 15 preview feature. Set `<LangVersion>preview</LangVersion>` in your project to use the `closed` modifier.
+
+```csharp
+[JsonPolymorphic(InferClosedTypePolymorphism = true)]
+public closed class Shape;
+public sealed class Circle : Shape;
+public sealed class Square : Shape;
+```
+
+The serializer registers each derived type and uses its simple type name as a string discriminator. For example, a `Circle` payload contains `"$type":"Circle"`.
+
+To enable inference for every closed hierarchy that an options instance handles, set <xref:System.Text.Json.JsonSerializerOptions.InferClosedTypePolymorphism?displayProperty=nameWithType>:
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    InferClosedTypePolymorphism = true
+};
+```
+
+For source generation, set <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType>:
+
+```csharp
+[JsonSourceGenerationOptions(InferClosedTypePolymorphism = true)]
+[JsonSerializable(typeof(Shape))]
+internal partial class AppJsonContext : JsonSerializerContext;
+```
+
+Set inference on the source-generation attribute when you use a generated context. Enabling only the runtime `JsonSerializerOptions` property can't add derived-type metadata that the source generator didn't emit.
+
+The type-level attribute takes precedence over the global setting. Set `InferClosedTypePolymorphism = false` on <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> to opt one hierarchy out of a global setting.
+
+Explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> registrations replace inference for that hierarchy. They don't extend the inferred list. Applying `InferClosedTypePolymorphism = true` to a type that isn't `closed` throws an <xref:System.InvalidOperationException> with reflection-based serialization and produces a source-generation error. Inferred types with duplicate simple names produce discriminator collisions, and every inferred type must be at least as accessible as the closed base.
+
+## Configure open generic derived types
+
+Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> accepts an open generic derived type when the serializer can resolve a unique closed type from the serialized base type:
+
+```csharp
+[JsonDerivedType(typeof(Derived<>), "derived")]
+public class Base<T>;
+public class Derived<T> : Base<T>;
+```
+
+```vb
+<JsonDerivedType(GetType(Derived(Of )), "derived")>
+Public Class Base(Of T)
+End Class
+Public Class Derived(Of T)
+    Inherits Base(Of T)
+End Class
+```
+
+For `Base<int>`, the serializer registers `Derived<int>`. The same resolution supports generic interfaces, reordered type parameters, nested generic arguments, arrays, and derived types that fix some base type arguments to concrete types.
+
+Every derived type parameter must be inferable from the closed base type, the substitution must be unambiguous, and the resulting type must satisfy its generic constraints. Reflection-based serialization throws <xref:System.InvalidOperationException> for an unsupported specialization. Source generation reports `SYSLIB1229`, and the generated hierarchy still fails when the serializer configures it. Suppressing the warning doesn't make the registration valid.
+
 ## Configure polymorphism with the contract model
 
 For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), to configure polymorphism use the [contract model](custom-contracts.md). The contract model is a set of APIs that can be used to configure polymorphism in a type hierarchy by creating a custom <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver> subclass that dynamically provides polymorphic configuration per type, as shown in the following example:
@@ -633,3 +696,4 @@ End Class
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
+* [Serialize union types](union-types.md)

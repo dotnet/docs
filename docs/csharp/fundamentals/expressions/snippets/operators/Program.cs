@@ -12,9 +12,17 @@ Console.WriteLine(apples % oranges);  // => 1   (remainder)
 int result = 7 / 2;
 Console.WriteLine(result); // => 3, not 3.5
 
+// Truncation applies to negative results too: -7 / 2 is -3, not -4
+int negResult = -7 / 2;
+Console.WriteLine(negResult); // => -3
+
 // To get a decimal result, at least one operand must be a double or float
 double precise = 7.0 / 2;
 Console.WriteLine(precise); // => 3.5
+
+// Remainder with negative operands: the sign of the result matches the dividend
+Console.WriteLine(-7 % 3);  // => -1  (-7 = 3 × -2 + (-1))
+Console.WriteLine(7 % -3);  // => 1   ( 7 = -3 × -2 + 1)
 // </ArithmeticOps>
 
 // <UnaryOps>
@@ -61,25 +69,23 @@ Console.WriteLine(speed >= limit);  // => True   (greater than or equal)
 Console.WriteLine(speed <= limit);  // => False  (less than or equal)
 
 // Relational operators work on all numeric types and char
+// char comparison uses the character's numeric Unicode code point, not alphabetical position
+// 'B' (U+0042, value 66) is less than 'A' (U+0041, value 65)? No — 'A' (65) < 'B' (66)
 char grade = 'B';
-Console.WriteLine(grade >= 'A' && grade <= 'C'); // => True
+Console.WriteLine(grade >= 'A' && grade <= 'C'); // => True  ('A'=65 <= 'B'=66 <= 'C'=67)
 // </RelationalOps>
 
 // <EqualityOps>
 int expected = 42;
 int actual = 42;
 
-Console.WriteLine(actual == expected);  // => True   (values match)
-Console.WriteLine(actual != expected);  // => False  (values differ)
+Console.WriteLine(actual == expected);  // => True   (values are equal)
+Console.WriteLine(actual != expected);  // => False  (true when values are not equal)
 
 string name = "Alice";
 Console.WriteLine(name == "Alice");  // => True   (string content matches)
 Console.WriteLine(name == "alice");  // => False  (case-sensitive)
 
-// A common mistake: assignment (=) instead of equality (==)
-// The following line assigns 10 to x, not a comparison:
-//   bool wrong = (x = 10);  // compiler error: can't convert int to bool directly
-// Use == to compare
 int x = 5;
 Console.WriteLine(x == 10);  // => False
 // </EqualityOps>
@@ -115,11 +121,6 @@ int divisor = 0;
 // The division 10 / divisor is never evaluated because divisor == 0 is true
 int safe = divisor == 0 ? -1 : 10 / divisor;
 Console.WriteLine(safe); // => -1
-
-// Nested ?: is possible but use sparingly — an if/else is often clearer
-int points = 85;
-string grade2 = points >= 90 ? "A" : points >= 70 ? "B" : "C";
-Console.WriteLine(grade2); // => B
 // </ConditionalOp>
 
 // <AssignmentOps>
@@ -130,12 +131,14 @@ Console.WriteLine(level); // => 5
 // Compound assignment: short form of binary operation + assignment
 int hp = 100;
 hp += 20;   // same as: hp = hp + 20
+Console.WriteLine(hp); // => 120
 hp -= 10;   // same as: hp = hp - 10
+Console.WriteLine(hp); // => 110
 hp *= 2;    // same as: hp = hp * 2
+Console.WriteLine(hp); // => 220
 hp /= 3;    // same as: hp = hp / 3 (integer division)
+Console.WriteLine(hp); // => 73
 hp %= 7;    // same as: hp = hp % 7
-
-// Trace: 100 +20→ 120 -10→ 110 *2→ 220 /3→ 73 (integer division) %7→ 3
 Console.WriteLine(hp); // => 3
 // </AssignmentOps>
 

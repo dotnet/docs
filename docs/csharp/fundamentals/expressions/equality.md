@@ -51,6 +51,20 @@ Tuples are value types too. Two tuples are equal when every element value matche
 
 For more information about tuple syntax and deconstruction, see [Tuples and deconstruction](../types/tuples.md).
 
+## Use `Object.ReferenceEquals` to test identity directly
+
+<xref:System.Object.ReferenceEquals*> always tests identity regardless of how a type overrides <xref:System.Object.Equals*> or overloads `==`. Use it as an identity diagnostic when you need to confirm whether two variables point to the exact same object:
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="ReferenceEqualsDemo":::
+
+A common use is inside an `Equals` override to short-circuit the full comparison: when both arguments are the same reference, they're always equal without checking individual fields.
+
+> [!NOTE]
+> Advanced detail: when variables are typed as an [interface](../types/interfaces.md), `==` checks whether the interface variables refer to the same object. A call to `Equals` still runs the underlying object's implementation.
+
+> [!NOTE]
+> <xref:System.Object.ReferenceEquals*> always returns `false` when comparing value types, even if both arguments contain the same values. This is because each value-type argument is independently *boxed* into a separate heap object when passed to `ReferenceEquals`.
+
 ## Types can define different equality semantics
 
 Defaults aren't destiny. Some types define equality semantics that differ from the type-kind default, and your own types can do the same when their data should determine equality.
@@ -85,10 +99,30 @@ The same compiler generation applies to `record struct` types:
 
 Record types generate the whole equality set for their own type. Both `record class` and `record struct` types override <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*>. They also generate `==` and `!=` operators, plus a typed `Equals` method for the record type. Unlike a plain `struct`, a `record struct` therefore supports `==` and `!=` automatically. For more information about record types and their equality semantics, see [Records](../types/records.md#value-equality).
 
+## Records with reference-type members
+
+Record equality is synthesized from the members' own equality. Each property or field is compared using its own `Equals` method. For most scalar values—`int`, `string`, `DateTime`, and similar types—that works exactly as you'd expect. The subtlety arises with common mutable collections such as `List<T>` or `T[]`: these types compare by reference, so two record instances that contain *different list objects with the same content* are **not** considered equal by the synthesized record equality.
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionProblem":::
+
+`playlist1` and `playlist2` are separate `List<string>` instances. Even though their contents match, `Equals` returns `false`.
+
+When you need two-record equality to reflect collection *contents*, you have a few options:
+
+- **Custom `IEquatable<T>` override**: Implement `IEquatable<T>` on the record and use <xref:System.Linq.Enumerable.SequenceEqual*?displayProperty=nameWithType> (or an appropriate comparison) for the collection members.
+
+  :::code language="csharp" source="snippets/equality/Program.cs" ID="PlaylistFixedDefinition":::
+
+  :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionFixed":::
+
+- **Use collection types with value equality**: <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType> doesn't override equality either, but a record that wraps a `ReadOnlySpan<T>` or uses `SequenceEqual` in a custom `Equals` achieves the same goal. The key insight is to pick the right abstraction rather than fighting the defaults.
+
+- **Design around identity**: If the record represents an entity rather than a value—and the collection members are logically shared—then reference equality for those members may be intentional. Design the type to reuse the same list instance where equality matters.
+
 ## Implement equality yourself when a type can't be a record
 
 > [!IMPORTANT]
-> This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead. It generates all these members for you. Implement them manually only when your type can't be a record.
+> This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead. It generates all these members for you. Implement them manually only when your type can't be a record. Correctly implementing all the requirements for equality requires you to understand the expectations for these operations. This section contains all those rules. While those seem complicated remember that you can almost always use a `record` type and have the language automatically create implementations that comply with all these requirements.
 
 When a class or struct represents a value, such as a color or a measurement, the equality members for that type must agree. The easiest way to achieve this consistency is to declare the type as a `record`. If the type can't be a record, such as when it must derive from a non-record class, implement the equality members yourself. The language enforces that user-defined `==` and `!=` operators must be declared as a pair. If you provide those operators, compiler warning [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.Equals*?displayProperty=nameWithType> override. Warning [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.GetHashCode*?displayProperty=nameWithType> override.
 
@@ -118,40 +152,6 @@ At this point, `Equals` reflects value equality, but `==` still tests identity f
 :::code language="csharp" source="snippets/equality/Program.cs" ID="IEquatableUsage":::
 
 Adding `==` and `!=` operators is the remaining step when you need operator comparisons. This article intentionally stops before the full operator implementation so the first pass can focus on the equality contract. The operator-focused follow-up shows the completed shape. For the operator syntax, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
-
-## Use `Object.ReferenceEquals` to test identity directly
-
-<xref:System.Object.ReferenceEquals*> always tests identity regardless of how a type overrides <xref:System.Object.Equals*> or overloads `==`. Use it as an identity diagnostic when you need to confirm whether two variables point to the exact same object:
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="ReferenceEqualsDemo":::
-
-A common use is inside an `Equals` override to short-circuit the full comparison: when both arguments are the same reference, they're always equal without checking individual fields.
-
-> [!NOTE]
-> Advanced detail: when variables are typed as an [interface](../types/interfaces.md), `==` checks whether the interface variables refer to the same object. A call to `Equals` still runs the underlying object's implementation.
-
-> [!NOTE]
-> <xref:System.Object.ReferenceEquals*> always returns `false` when comparing value types, even if both arguments contain the same values. This is because each value-type argument is independently *boxed* into a separate heap object when passed to `ReferenceEquals`.
-
-## Records with reference-type members
-
-Record equality is synthesized from the members' own equality. Each property or field is compared using its own `Equals` method. For most scalar values—`int`, `string`, `DateTime`, and similar types—that works exactly as you'd expect. The subtlety arises with common mutable collections such as `List<T>` or `T[]`: these types compare by reference, so two record instances that contain *different list objects with the same content* are **not** considered equal by the synthesized record equality.
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionProblem":::
-
-`playlist1` and `playlist2` are separate `List<string>` instances. Even though their contents match, `Equals` returns `false`.
-
-When you need two-record equality to reflect collection *contents*, you have a few options:
-
-- **Custom `IEquatable<T>` override**: Implement `IEquatable<T>` on the record and use <xref:System.Linq.Enumerable.SequenceEqual*?displayProperty=nameWithType> (or an appropriate comparison) for the collection members.
-
-  :::code language="csharp" source="snippets/equality/Program.cs" ID="PlaylistFixedDefinition":::
-
-  :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionFixed":::
-
-- **Use collection types with value equality**: <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType> doesn't override equality either, but a record that wraps a `ReadOnlySpan<T>` or uses `SequenceEqual` in a custom `Equals` achieves the same goal. The key insight is to pick the right abstraction rather than fighting the defaults.
-
-- **Design around identity**: If the record represents an entity rather than a value—and the collection members are logically shared—then reference equality for those members may be intentional. Design the type to reuse the same list instance where equality matters.
 
 ## Polymorphic equality in unsealed class hierarchies
 

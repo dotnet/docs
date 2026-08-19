@@ -25,15 +25,22 @@ description: Push inline code block snippets out of articles into standalone fil
 - Code is pseudo-code or conceptual examples
 
 ## Target folder structure
-- Path pattern: `./snippets/{article-name}/[optional-sub-subject]/{code-language}/`
-- Example C#: `./snippets/create-app/csharp/`
-- Example VB: `./snippets/create-app/vb/`
+- Path pattern: `./snippets/{article-name}/[net-or-framework]/[optional-sub-subject]/{code-language}/`
+- Example C# (standard): `./snippets/create-app/csharp/`
+- Example VB (standard): `./snippets/create-app/vb/`
+- Example C# (.NET, dual-framework article): `./snippets/create-app/net/csharp/`
+- Example C# (.NET Framework, dual-framework article): `./snippets/create-app/framework/csharp/`
+- Example C# (clash avoidance): `./snippets/create-app/AsyncProgram/csharp/`
 
 **Path components explained:**
 - `./`: Current folder of the article being edited
 - `snippets/`: Root folder for all snippets
 - `{article-name}`: The markdown article filename WITHOUT the `.md` extension
   - Example: For article `create-app.md` → use `create-app`
+- `[net-or-framework]`: An optional subfolder used only when the article demonstrates BOTH .NET and .NET Framework approaches:
+  - `net/`: For .NET (.NET 6 and newer) snippets
+  - `framework/`: For .NET Framework snippets
+  - Omit this subfolder entirely when the article targets only one framework
 - `[optional-sub-subject]`: An optional subfolder to avoid clashes. Used when snippets in the same article can't be merged — for example, two snippets that both require a `Program.cs` file but demonstrate different things. Use descriptive subfolder names like `AsyncProgram/` and `SyncProgram/`.
 - `{code-language}`:
   - `csharp`: For C# code (also use for XAML snippets)
@@ -88,6 +95,7 @@ description: Push inline code block snippets out of articles into standalone fil
 - DO NOT use language tabs in the article — place references side-by-side, like so:
   ```markdown
   :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
+
   :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
   ```
 - Verify all paths and identifiers are correct.

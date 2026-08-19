@@ -30,8 +30,8 @@ ai-usage: ai-assisted
 
 This article covers the following compiler errors and warnings:
 
-<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+<!-- The text in this list generates issues for Acrolinx, because it doesn't use contractions.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 
 - [**CS8129**](#deconstruct-method-requirements): *No suitable 'Deconstruct' instance or extension method was found for type 'type', with count out parameters and a void return type.*
@@ -65,7 +65,7 @@ Supply a typed, deconstructable expression on the right so the compiler can dete
 - **CS8132**: *Cannot deconstruct a tuple of 'element count' elements into 'variable count' variables.*
 - **CS8134**: *Deconstruction must contain at least two variables.*
 
-Use at least two variables in a deconstruction (**CS8134**). Match the number of variables on the left to the number of tuple elements on the right, and add a discard (`_`) for each value that isn't needed (**CS8132**). For more information, see [discards in tuple and object deconstruction](../../fundamentals/functional/discards.md#tuple-and-object-deconstruction).
+Use at least two variables in a deconstruction (**CS8134**). Match the number of variables on the left to the number of tuple elements on the right, and add a discard (`_`) for each value that you don't need (**CS8132**). For more information, see [discards in tuple and object deconstruction](../../fundamentals/functional/discards.md#tuple-and-object-deconstruction).
 
 ## Deconstruction declaration and assignment syntax
 

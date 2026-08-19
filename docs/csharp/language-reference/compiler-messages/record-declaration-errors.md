@@ -54,7 +54,7 @@ ai-usage: ai-assisted
 
 The C# compiler generates errors and warnings when you misuse [record types](../builtin-types/record.md). Record types provide built-in members that implement value-based equality. These diagnostics help you follow the rules for declaring and using record types.
 
-<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
+<!-- The text in this list generates issues for Acrolinx, because it doesn't use contractions.
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS8851**](#equality-members): *'type' defines 'Equals' but not 'GetHashCode'*

@@ -41,14 +41,6 @@ var t2 = (Name: "Grace", Role: "Engineer");
 Console.WriteLine(t1 == t2); // => True
 // </TupleEquality>
 
-// <IEquatableUsage>
-var red1 = new Color(255, 0, 0);
-var red2 = new Color(255, 0, 0);
-
-Console.WriteLine(red1.Equals(red2)); // => True
-Console.WriteLine(red1 == red2);      // => False  (no == overload; identity check)
-// </IEquatableUsage>
-
 // <ReferenceEqualsDemo>
 var doc1 = new Document("Report");
 var doc2 = new Document("Report");
@@ -84,28 +76,6 @@ struct Point(int x, int y)
 record Person(string First, string Last);
 
 record struct Dimension(double Width, double Height);
-
-// <ColorDefinition>
-class Color : IEquatable<Color>
-{
-    public Color(int r, int g, int b)
-    {
-        R = r;
-        G = g;
-        B = b;
-    }
-
-    public int R { get; }
-    public int G { get; }
-    public int B { get; }
-
-    public bool Equals(Color? other) =>
-        other is not null && R == other.R && G == other.G && B == other.B;
-
-    public override bool Equals(object? obj) => obj is Color other && Equals(other);
-    public override int GetHashCode() => HashCode.Combine(R, G, B);
-}
-// </ColorDefinition>
 
 class Document(string title)
 {

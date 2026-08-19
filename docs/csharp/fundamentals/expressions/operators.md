@@ -58,12 +58,12 @@ When `++` or `--` appears as a standalone statement (not part of a larger expres
 
 Relational operators compare two values and return a `bool`.
 
-| Operator | Meaning | Example |
-|----------|---------|---------|
-| `<` | Less than | `speed < limit` |
-| `>` | Greater than | `speed > limit` |
-| `<=` | Less than or equal | `score <= 100` |
-| `>=` | Greater than or equal | `score >= 0` |
+| Operator | Meaning               | Example         |
+|----------|-----------------------|-----------------|
+| `<`      | Less than             | `speed < limit` |
+| `>`      | Greater than          | `speed > limit` |
+| `<=`     | Less than or equal    | `score <= 100`  |
+| `>=`     | Greater than or equal | `score >= 0`    |
 
 :::code language="csharp" source="snippets/operators/Program.cs" ID="RelationalOps":::
 

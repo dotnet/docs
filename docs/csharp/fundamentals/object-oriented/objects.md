@@ -8,34 +8,34 @@ helpviewer_keywords:
 ---
 # Objects - create instances of types
 
-A class or struct definition is like a blueprint that specifies what the type can do. An object is basically a block of memory that is allocated and configured according to the blueprint. A program might create many objects of the same class. Objects are also called instances, and they can be stored in either a named variable or in an array or collection. Client code is the code that uses these variables to call the methods and access the public properties of the object. In an object-oriented language such as C#, a typical program consists of multiple objects interacting dynamically.
+A class or struct definition is like a blueprint that specifies what the type can do. An object is a block of memory that the program allocates and configures according to the blueprint. A program might create many objects of the same class. You can also call objects instances. You can store them in a named variable or in an array or collection. Client code uses these variables to call the methods and access the public properties of the object. In an object-oriented language such as C#, a typical program consists of multiple objects interacting dynamically.
 
 > [!NOTE]
-> Static types behave differently than what is described here. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
+> Static types behave differently than what is described in this article. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
-## Struct Instances vs. Class Instances
+## Struct instances vs. class instances
 
-Because classes are reference types, a variable of a class object holds a reference to the address of the object on the managed heap. If a second variable of the same type is assigned to the first variable, then both variables refer to the object at that address. This point is discussed in more detail later in this article.
+Because classes are reference types, a variable of a class object holds a reference to the address of the object on the managed heap. If you assign a second variable of the same type to the first variable, both variables refer to the object at that address. This article discusses this point in more detail later.
 
-Instances of classes are created by using the [`new` operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person2` are instances, or objects, of that type.
+You create instances of classes by using the [`new` operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person2` are instances, or objects, of that type.
 
 :::code language="csharp" source="./snippets/objects/Program.cs":::
 
-Because structs are value types, a variable of a struct object holds a copy of the entire object. Instances of structs can also be created by using the `new` operator, but this isn't required, as shown in the following example:
+Because structs are value types, a variable of a struct object holds a copy of the entire object. You can also create instances of structs by using the `new` operator, but you don't need to use it, as shown in the following example:
 
 :::code language="csharp" source="./snippets/objects/Application.cs":::
 
-The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it's declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object are out of scope. It isn't possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in .NET, see [Garbage Collection](../../../standard/garbage-collection/index.md).
+The thread stack allocates memory for both `p1` and `p2`. The program reclaims that memory along with the type or method in which you declare it. This memory management is one reason why structs are copied on assignment. By contrast, the common language runtime automatically reclaims (garbage collects) the memory it allocates for a class instance when all references to the object go out of scope. You can't deterministically destroy a class object like you can in C++. For more information about garbage collection in .NET, see [Garbage Collection](../../../standard/garbage-collection/index.md).
 
 > [!NOTE]
-> The allocation and deallocation of memory on the managed heap is highly optimized in the common language runtime. In most cases, there's no significant difference in the performance cost of allocating a class instance on the heap versus allocating a struct instance on the stack.
+> The common language runtime highly optimizes the allocation and deallocation of memory on the managed heap. In most cases, there's no significant difference in the performance cost of allocating a class instance on the heap versus allocating a struct instance on the stack.
 
-## Object Identity vs. Value Equality
+## Object identity vs. value equality
 
-When you compare two objects for equality, you must first distinguish whether you want to know whether the two variables represent the same object in memory, or whether the values of one or more of their fields are equivalent. If you're intending to compare values, you must consider whether the objects are instances of value types (structs) or reference types (classes, delegates, arrays).
+When you compare two objects for equality, first decide whether you want to know if the two variables represent the same object in memory or if the values of one or more of their fields are equivalent. If you want to compare values, consider whether the objects are instances of value types (structs) or reference types (classes, delegates, arrays).
 
-- To determine whether two class instances refer to the same location in memory (which means that they have the same *identity*), use the static <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType> method. (<xref:System.Object?displayProperty=nameWithType> is the implicit base class for all value types and reference types, including user-defined structs and classes.)
-- The <xref:System.ValueType.Equals*?displayProperty=nameWithType> method, by default, determines whether the instance fields in two struct instances have the same values. Because all structs implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, you call the method directly on your object as shown in the following example:
+- Use the static <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType> method to determine whether two class instances refer to the same location in memory (which means that they have the same *identity*). (<xref:System.Object?displayProperty=nameWithType> is the implicit base class for all value types and reference types, including user-defined structs and classes.)
+- By default, the <xref:System.ValueType.Equals*?displayProperty=nameWithType> method determines whether the instance fields in two struct instances have the same values. Because all structs implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, you call the method directly on your object as shown in the following example:
 
   :::code language="csharp" source="./snippets/objects/Equality.cs" ID="Snippet32":::
 
@@ -43,9 +43,9 @@ When you compare two objects for equality, you must first distinguish whether yo
 
 - To determine whether the values of the fields in two class instances are equal, you might be able to use the <xref:System.Object.Equals*> method or the [== operator](../../language-reference/operators/equality-operators.md#equality-operator-). However, only use them if the class has overridden or overloaded them to provide a custom definition of what "equality" means for objects of that type. The class might also implement the <xref:System.IEquatable`1> interface or the <xref:System.Collections.Generic.IEqualityComparer`1> interface. Both interfaces provide methods that can be used to test value equality. When designing your own classes that override `Equals`, make sure to follow the guidelines stated in [Implement equality yourself when a type can't be a record](../expressions/equality.md#implement-equality-yourself-when-a-type-cant-be-a-record) and <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.
 
-## Related Sections
+## Related sections
 
-For more information:
+For more information, see:
 
 - [Classes](../types/classes.md)
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md)

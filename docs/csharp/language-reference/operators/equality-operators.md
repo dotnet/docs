@@ -51,7 +51,7 @@ By default, reference-type operands, excluding records, are equal if they refer 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="ReferenceTypesEquality":::
 
-As the example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+As the preceding example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 
 ### Record types equality
 
@@ -96,7 +96,32 @@ The following example demonstrates how to use the `!=` operator:
 
 ## Equality in class hierarchies
 
-Value equality in an unsealed class hierarchy requires more care than in a sealed class. The hazard is that `IEquatable<T>.Equals(T? other)` dispatch follows the *declared type* (the type written in the variable declaration) of the variable, not its runtime type. If `Shape` declares a non-`virtual` `Equals(Shape? other)`, a variable typed as `Shape` that holds a `Circle` at runtime invokes `Shape.Equals`—silently ignoring `Circle`-specific fields. Two `Circle` objects with different radii can compare as equal when accessed through a `Shape` variable.
+Records handle inheritance correctly without manual work. The compiler-generated equality checks both runtime type and all declared properties, so it automatically satisfies the symmetry and transitivity requirements. Prefer `record` over a manual unsealed hierarchy when value equality is the goal.
+
+> [!IMPORTANT]
+> Use `record` whenever possible — the compiler generates all required equality members for you. Manual implementation is only needed when your type must derive from a non-record class or has other constraints that prevent `record`.
+
+Here is a minimal manual implementation for a value type that can't be a record:
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="ColorDefinition":::
+
+The implementation provides three required members: `Equals(T?)` as the core comparison, `override Equals(object?)` for object-level calls, and `override GetHashCode()` so hash-based collections work correctly. `HashCode.Combine` is a library helper that builds one hash from the same values used by `Equals`. Implementing <xref:System.IEquatable`1> (the `Equals(T?)` overload) is optional but avoids boxing when callers already have the concrete type.
+
+When you also define `==` and `!=`, the language requires them as a pair; warnings [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) and [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) remind you to keep all four members consistent.
+
+With the three members above in place, `Equals` reflects value equality, but `==` still tests identity because no `==` operator has been declared yet:
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="IEquatableUsage":::
+
+A correct implementation must also satisfy the *equivalence contract* (assume `x`, `y`, and `z` are non-null):
+
+1. **Reflexive**: `x.Equals(x)` returns `true`.
+2. **Symmetric**: `x.Equals(y)` returns the same value as `y.Equals(x)`.
+3. **Transitive**: if `x.Equals(y)` and `y.Equals(z)` are both `true`, then `x.Equals(z)` must be `true`.
+4. **Consistent**: successive calls to `x.Equals(y)` return the same value as long as neither object changes.
+5. **Null behavior**: `x.Equals(null)` returns `false`; `x.Equals(y)` must not throw when called on a non-null `x`.
+
+Value equality in an unsealed class hierarchy requires more care than in a sealed class to satisfy the symmetric and transitive rules. The hazard is that `IEquatable<T>.Equals(T? other)` dispatch follows the *declared type* (the type written in the variable declaration) of the variable, not its runtime type. If `Shape` declares a non-`virtual` `Equals(Shape? other)`, a variable typed as `Shape` that holds a `Circle` at runtime invokes `Shape.Equals`—silently ignoring `Circle`-specific fields. Two `Circle` objects with different radii can compare as equal when accessed through a `Shape` variable.
 
 The correct pattern requires two cooperating requirements: make the typed `Equals` method `virtual` so each derived class can extend the comparison, and add a `GetType() == other.GetType()` guard in the base-class implementation so objects of different runtime types are never considered equal.
 
@@ -125,13 +150,7 @@ A derived class that adds fields overrides the typed `Equals`, casts to its own 
 
 ### Sealed classes are simpler
 
-A `sealed` class cannot be subclassed, so compile-time and runtime types always agree. The `GetType()` guard and `virtual` dispatch are unnecessary. The `IEquatable<T>` pattern shown in [Implement equality yourself](../../fundamentals/expressions/equality.md#implement-equality-yourself-when-a-type-cant-be-a-record) is correct and complete for a sealed class.
-
-### Prefer records for value equality in hierarchies
-
-Records handle inheritance correctly without manual work. The compiler-generated equality checks both runtime type and all declared properties, satisfying the symmetry and transitivity requirements automatically. Prefer `record` over a manual unsealed hierarchy when value equality is the goal.
-
-For an introduction to equality semantics across C# type kinds, see [Equality comparisons](../../fundamentals/expressions/equality.md).
+You can't subclass a `sealed` class, so compile-time and runtime types always agree. You don't need the `GetType()` guard or `virtual` dispatch. The `IEquatable<T>` pattern shown in [Implement equality yourself when a type can't be a record](#implement-equality-yourself-when-a-type-cant-be-a-record) is correct and complete for a sealed class.
 
 ## Operator overloadability
 

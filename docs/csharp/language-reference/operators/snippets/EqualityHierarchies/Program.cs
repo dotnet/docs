@@ -1,3 +1,11 @@
+// <IEquatableUsage>
+var red1 = new Color(255, 0, 0);
+var red2 = new Color(255, 0, 0);
+
+Console.WriteLine(red1.Equals(red2)); // => True
+Console.WriteLine(red1 == red2);      // => False  (no == overload; identity check)
+// </IEquatableUsage>
+
 // <HierarchyUsage>
 Shape circle1 = new Circle("red", 5.0);
 Shape circle2 = new Circle("red", 7.0);
@@ -50,3 +58,25 @@ class Circle : Shape
     public override int GetHashCode() => HashCode.Combine(GetType(), Color, Radius);
 }
 // </HierarchyCircleDefinition>
+
+// <ColorDefinition>
+class Color : IEquatable<Color>
+{
+    public Color(int r, int g, int b)
+    {
+        R = r;
+        G = g;
+        B = b;
+    }
+
+    public int R { get; }
+    public int G { get; }
+    public int B { get; }
+
+    public bool Equals(Color? other) =>
+        other is not null && R == other.R && G == other.G && B == other.B;
+
+    public override bool Equals(object? obj) => obj is Color other && Equals(other);
+    public override int GetHashCode() => HashCode.Combine(R, G, B);
+}
+// </ColorDefinition>

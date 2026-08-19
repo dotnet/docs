@@ -84,7 +84,7 @@ As previously mentioned, the *.NET* implementation offers significant benefits f
 - [ASP.NET Core targeting .NET Framework](/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-2.2&preserve-view=true#aspnet-core-targeting-net-framework)
 - [Target frameworks](frameworks.md)
 - [.NET introduction](../core/introduction.md)
-- [Porting from .NET Framework to .NET 5](../core/porting/framework-overview.md)
+- [Port from .NET Framework to .NET](../core/porting/framework-overview.md)
 - [Introduction to .NET and Docker](../core/docker/introduction.md)
 - [.NET implementations](../fundamentals/implementations.md)
 - [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)

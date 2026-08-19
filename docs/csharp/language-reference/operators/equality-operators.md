@@ -1,7 +1,7 @@
 ---
 title: "Equality operators - test if two objects are equal or not equal"
-description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality"
-ms.date: 01/20/2026
+description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality. Learn how to implement value equality correctly in sealed types and unsealed class hierarchies."
+ms.date: 08/19/2026
 author: pkulikov
 f1_keywords:
   - "==_CSharpKeyword"
@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "inequality operator [C#]"
   - "not equals operator [C#]"
   - "!= operator [C#]"
+  - "equality in class hierarchies [C#]"
+  - "polymorphic equality [C#]"
 ---
 # Equality operators - test if two objects are equal or not
 
@@ -91,6 +93,45 @@ The inequality operator `!=` returns `true` if its operands aren't equal, and `f
 The following example demonstrates how to use the `!=` operator:
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="NonEquality":::
+
+## Equality in class hierarchies
+
+Value equality in an unsealed class hierarchy requires more care than in a sealed class. The hazard is that `IEquatable<T>.Equals(T? other)` dispatch follows the *declared type* of the variable, not its runtime type. If `Shape` declares a non-`virtual` `Equals(Shape? other)`, a variable typed as `Shape` that holds a `Circle` at runtime invokes `Shape.Equals`—silently ignoring `Circle`-specific fields. Two `Circle` objects with different radii can compare as equal when accessed through a `Shape` variable.
+
+The correct pattern requires two cooperating requirements: make the typed `Equals` method `virtual` so each derived class can extend the comparison, and add a `GetType() == other.GetType()` guard in the base-class implementation so objects of different runtime types are never considered equal.
+
+### Base class implementation
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="HierarchyShapeDefinition":::
+
+Key points:
+
+- **`virtual` typed `Equals`**: each derived class overrides this method to augment the comparison with its own fields.
+- **`GetType()` guard**: `GetType() == other.GetType()` prevents a `Circle` from equaling a `Shape` with the same color, and prevents objects of different derived types from equaling each other.
+- **`GetHashCode` includes `GetType()`**: because two objects are equal only when their runtime types match, `GetHashCode` must hash the runtime type as well as the data fields. Omitting `GetType()` here causes incorrect behavior in `Dictionary<TKey,TValue>` and `HashSet<T>`.
+- **`==` delegates to `Equals`**: keeps operator and method equality consistent.
+
+### Derived class implementation
+
+A derived class that adds fields overrides the typed `Equals`, casts to its own type, calls `base.Equals`, then compares its own fields:
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="HierarchyCircleDefinition":::
+
+`base.Equals(c)` enforces the `GetType()` guard and checks the shared fields. The cast via `other is Circle c` fails fast when the argument is a `Shape` of any other derived type.
+
+### Usage through a base-type variable
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="HierarchyUsage":::
+
+### Sealed classes are simpler
+
+A `sealed` class cannot be subclassed, so compile-time and runtime types always agree. The `GetType()` guard and `virtual` dispatch are unnecessary. The `IEquatable<T>` pattern shown in [Implement equality yourself](../../fundamentals/expressions/equality.md#implement-equality-yourself-when-a-type-cant-be-a-record) is correct and complete for a sealed class.
+
+### Prefer records for value equality in hierarchies
+
+Records handle inheritance correctly without manual work. The compiler-generated equality checks both runtime type and all declared properties, satisfying the symmetry and transitivity requirements automatically. Prefer `record` over a manual unsealed hierarchy when value equality is the goal.
+
+For an introduction to equality semantics across C# type kinds, see [Equality comparisons](../../fundamentals/expressions/equality.md).
 
 ## Operator overloadability
 

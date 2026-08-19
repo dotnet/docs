@@ -525,6 +525,11 @@ items:
       CS8123, CS8124, CS8125, CS8126, CS8127, CS8128, CS8135, CS8137, CS8138, CS8139,
       CS8140, CS8141, CS8142, CS8179, CS8182, CS8210, CS8307, CS8383, CS8384, CS8516,
       CS8522
+  - name: Deconstruction, discards, and out variables
+    href: ./compiler-messages/deconstruction-errors.md
+    displayName: >
+      deconstruction, discards, out variables,
+      CS8129, CS8130, CS8131, CS8132, CS8134, CS8136, CS8183, CS8187, CS8197, CS8199
   - name: Record declarations
     href: ./compiler-messages/record-declaration-errors.md
     displayName: >
@@ -1566,14 +1571,6 @@ items:
       href: ./compiler-messages/cs7035.md
     - name: CS8070
       href: ./compiler-messages/cs8070.md
-    - name: CS8129
-      href: ./compiler-messages/cs8129.md
-    - name: CS8130
-      href: ./compiler-messages/cs8130.md
-    - name: CS8131
-      href: ./compiler-messages/cs8131.md
-    - name: CS8132
-      href: ./compiler-messages/cs8132.md
     - name: CS8146
       href: ./compiler-messages/cs8146.md
     - name: CS8147

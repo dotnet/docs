@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 06/17/2026
+ms.date: 08/14/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -215,7 +215,7 @@ This example accesses the elements of both arrays by using indices rather than a
 ## The updated memory safety model (preview)
 
 > [!IMPORTANT]
-> The updated memory safety model is a preview feature in C# 15 and .NET 11. It continues to evolve based on feedback during the preview releases. To try the model, use the .NET 11 (preview) SDK and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. The compiler in .NET 11 Preview 5 implements the pointer relaxations but doesn't yet enforce the caller obligations, the assembly opt-in, or the `safe` keyword. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+> The updated memory safety model is a preview feature in C# 15 and .NET 11. It continues to evolve based on feedback during the preview releases. To try the model, use the .NET 11 (preview) SDK and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. The compiler currently implements the pointer relaxations and `unsafe` expressions, and it recognizes the `safe` keyword. It doesn't yet enforce caller-unsafe obligations or the assembly opt-in: there's no public opt-in property yet, so `unsafe` and `safe` have no effect on callers. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 The updated model separates two things the original model treats as one: the *existence* of pointer code and the *propagation* of safety obligations to callers. Marking a member `unsafe` no longer just permits pointers in its body; it makes the member *caller-unsafe*, so every caller must either propagate that obligation or discharge it behind a validated, safe-callable boundary. To support that separation, the model also narrows the unsafe context: the existence of a pointer isn't unsafe, only the operations that access memory the runtime doesn't manage. The narrowing lets you hold, pass, and return pointers in safe code, while `unsafe` marks the operations and members that can actually violate memory safety.
 
@@ -286,9 +286,23 @@ The following example creates and pins pointers without an `unsafe` context:
 
 These relaxations apply whenever you compile with the `preview` language version, whether or not an assembly opts in to the updated memory safety rules.
 
+### Unsafe expressions
+
+An `unsafe` expression, `unsafe(expression)`, creates an unsafe context for evaluating a single expression. It's useful in situations where an `unsafe` block can't appear syntactically, such as a field initializer, a constructor initializer, or the `when` clause of a `catch` clause. The unsafe context ends at the closing parenthesis, so it doesn't extend to the rest of the containing statement.
+
+The following example dereferences a pointer inside a field initializer, a position that can't contain an `unsafe` block:
+
+:::code language="csharp" source="snippets/memory-safety/Relaxations.cs" id="UnsafeExpression":::
+
+An `unsafe` expression also lets you scope the unsafe context around one operand of `await`, instead of wrapping the whole `await` expression in an `unsafe` block. The `await` itself stays outside the unsafe context; only the call that produces the awaited task runs inside it:
+
+:::code language="csharp" source="snippets/memory-safety/Relaxations.cs" id="AwaitUnsafeExpression":::
+
+Like other unsafe code, an `unsafe` expression requires the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option, and it requires the `preview` language version.
+
 ### Discharge caller-unsafe obligations
 
-A member that calls a caller-unsafe operation has two choices: propagate the obligation, or discharge it.
+A member that calls a caller-unsafe operation has two choices: propagate the obligation or discharge it.
 
 - **Propagate**: Mark your own member `unsafe`. The obligation passes to your callers. Use propagation when you can't fully validate the obligation yourself.
 - **Discharge**: Leave your member's signature safe. Validate the obligation inside the member, usually with runtime guards, then perform the unsafe operation in an inner `unsafe` block. A member that contains an inner `unsafe` block but doesn't mark its own signature `unsafe` is an *unsafe boundary*: it turns unsafe code into a safe-callable surface.

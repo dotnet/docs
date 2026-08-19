@@ -1,7 +1,7 @@
 ---
 title: "Union types"
 description: Learn about union types in C#. Unions express values from a closed set of types with exhaustive pattern matching support.
-ms.date: 06/05/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "union_CSharpKeyword"
 helpviewer_keywords:
@@ -141,7 +141,7 @@ Any class or struct with a `[Union]` attribute is a *union type* if it follows t
 - One or more public constructors, each with a single by-value or `in` parameter. The parameter type of each constructor defines a *case type*.
 - A public `Value` property of type `object?` (or `object`) with a `get` accessor.
 
-All the preceding union members must be public. The compiler uses these members to implement union conversions, pattern matching, and exhaustiveness checks. You can also implement the [non-boxing access pattern](#non-boxing-access-pattern) or create a [class-based union type](#class-based-union-types). Your custom union type can add additional members.
+All the preceding union members must be public. The compiler uses these members to implement union conversions, pattern matching, and exhaustiveness checks. You can also implement the [non-boxing access pattern](#non-boxing-access-pattern) or create a [class-based union type](#class-based-union-types). Your custom union type can add more members.
 
 The compiler assumes that custom union types satisfy these behavioral rules:
 
@@ -167,11 +167,28 @@ A custom union type can optionally implement the *non-boxing access pattern* to 
 
 :::code language="csharp" source="snippets/unions/NonBoxingAccess.cs" id="NonBoxingExample":::
 
-The compiler prefers `TryGetValue` over the `Value` property when implementing pattern matching, which avoids boxing value types.
+For pattern matching, the compiler calls `TryGetValue` for type-pattern checks (such as `union is T`) and `HasValue` for null-pattern checks (such as `union is null`), avoiding boxing for value-type cases. Each member applies to its own pattern kind—neither is a fallback for the other. When a member is missing, the compiler checks the `Value` property for that pattern instead. For more information, see [How the compiler generates code for pattern matching](#union-member-providers).
 
 ### Union member providers
 
-A union type can delegate its union members to a nested `IUnionMembers` interface. When this interface is present, the `union` type behaves as a *union member provider*. The compiler generates code to call the `IUnionMembers` interface. It won't generate calls to members declared on the union type that aren't members of the nested `IUnionMembers` interface. As the following example shows, that means you must add the necessary factory methods and the appropriate `TryGetValue` methods for all case types:
+A union type can delegate its union members to a nested `IUnionMembers` interface. When this interface is present, the `union` type behaves as a *union member provider*, and the compiler generates calls only to the members declared on `IUnionMembers`. Members declared on the union type itself, but omitted from the `IUnionMembers` interface, aren't used by the compiler.
+
+When using a union member provider, the interface must declare these required members:
+
+- **Static `Create` methods**: One for each case type, with a single parameter and a return type identity-convertible to the union type. These methods establish your case types.
+- **`Value` property**: A public `object` or `object?` property with a `get` accessor that returns the contained value.
+
+You can optionally declare these members on the interface so the compiler generates more efficient pattern matching code:
+
+- **`TryGetValue` methods**: One for each case type, returning `bool` with an `out` parameter of the case type.
+- **`HasValue` property**: A public `bool` property with a `get` accessor returning `true` when `Value` isn't `null`.
+
+**How the compiler generates code for pattern matching**: `TryGetValue` and `HasValue` apply to different kinds of patterns—neither is a fallback for the other:
+
+- For a *type pattern*, such as `union is T`, the compiler calls `TryGetValue(out T value)` when declared, extracting the value and applying the pattern to it without boxing. Otherwise, the compiler applies the pattern to the `Value` property, which performs a runtime type check against `T` and can box the value when `T` is a value type.
+- For a *null pattern*, such as `union is null`, the compiler calls `HasValue` when declared to test whether the union contains a value. Otherwise, the compiler applies the null pattern to the `Value` property directly.
+
+Each member is independently optional: without `TryGetValue`, type patterns use `Value`; without `HasValue`, null patterns use `Value`. Declaring either member lets the compiler generate more efficient, strongly typed code for that pattern kind:
 
 :::code language="csharp" source="snippets/unions/MemberProvider.cs" id="MemberProvider":::
 

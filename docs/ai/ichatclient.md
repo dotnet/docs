@@ -172,3 +172,10 @@ For more realistic, concrete implementations of `IChatClient`, see:
 > This feature is experimental and subject to change.
 
 Chat reduction helps manage conversation history by limiting the number of messages or summarizing older messages when the conversation exceeds a specified length. The `Microsoft.Extensions.AI` library provides reducers like <xref:Microsoft.Extensions.AI.MessageCountingChatReducer> that limits the number of non-system messages, and <xref:Microsoft.Extensions.AI.SummarizingChatReducer> that automatically summarizes older messages while preserving context.
+
+## Chat routing (experimental)
+
+> [!IMPORTANT]
+> This feature is experimental and subject to change.
+
+Chat routing helps direct each request to one of several chat clients&mdash;for example, based on the content of the request, or by failing over to another client when one is unavailable. The `Microsoft.Extensions.AI` library provides <xref:Microsoft.Extensions.AI.RoutingChatClient>, an abstract `IChatClient` that selects and invokes another client for each request, and <xref:Microsoft.Extensions.AI.FailoverChatClient>, an abstract subclass that retries with another client when an attempt fails before producing output. Samples include <xref:Microsoft.Extensions.AI.OrderedFailoverChatClient>, which fails over across an ordered sequence of clients, and <xref:Microsoft.Extensions.AI.SemanticRoutingChatClient>, which selects a client based on the semantic similarity of the request to example utterances.

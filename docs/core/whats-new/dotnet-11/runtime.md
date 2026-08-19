@@ -2,7 +2,7 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 08/12/2026
+ms.date: 08/15/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
@@ -152,12 +152,11 @@ The runtime now detects when a continuation has nothing to restore and skips the
 - **Redundant checked context removal:** The JIT can now prove and remove redundant checked arithmetic contexts—for example, when a value is already known to be in range. This optimization eliminates unnecessary overflow checks in generated code.
 - **Switch expression folding:** Multi-target `switch` expressions now fold into simpler branchless checks when the targets are a small set of constants, for example `x is 0 or 1 or 2 or 3 or 4`.
 - **Faster uint-to-float/double casts:** Casting `uint` to `float` or `double` is faster on pre-AVX-512 x86 hardware.
-- **Devirtualization in ReadyToRun images:** ReadyToRun (R2R) images can now devirtualize non-shared generic virtual method calls, improving performance of ahead-of-time compiled code for generic scenarios.
 - **SVE2 intrinsics:** New Arm SVE2 (Scalable Vector Extension 2) intrinsics are available: `ShiftRightLogicalNarrowingSaturate(Even|Odd)`. These expand the set of vectorized operations available on Arm hardware that supports SVE2.
 - **`Math.BigMul` on x64:** `Math.BigMul(long, long, out long)` is now significantly faster on x64. The JIT generates a single `MUL r/m64` instruction when both operands are 64-bit values and the caller requests the high half of the result, eliminating the previous helper call.
 - **Single-IG prolog restriction removed:** The JIT no longer requires the function prolog to fit in a single instruction group (IG). Complex prologues with many saved registers, large stack allocations, or runtime-async state setup no longer trigger fallback paths.
 - **`SELECT(cond, cns, cns)` folding:** The JIT now folds conditional selects whose two branches both produce the same constant into just that constant—for example, `condition ? 42 : 42` becomes `42`. This fold eliminates unnecessary comparisons that can appear after earlier optimizations unify branches.
-- **AVX-VNNI-512 intrinsics:** `AvxVnni.V51` adds 512-bit dot-product intrinsics for CPUs that support `AVX512-VNNI`.
+- **AVX-VNNI-512 intrinsics:** <xref:System.Runtime.Intrinsics.X86.AvxVnni.V512?displayProperty=nameWithType> exposes 512-bit forms of the `AVX-VNNI` multiply-add intrinsics on CPUs with `AVX512-VNNI` support.
 - **Saturating floating-point conversions:** Unchecked `float` and `double` conversions to small integer types now saturate to type bounds instead of wrapping through intermediate truncation.
 - **ARM64 `Vector<T>` by reference for SVE:** When the runtime is compiled with ARM SVE support, `Vector<T>` values are passed by reference rather than by value, aligning with the ARM calling convention for scalable types and enabling better code generation for SVE-intensive code.
 
@@ -172,6 +171,41 @@ static bool IsAdmin(string role) => role == "Admin";
 ```
 
 The optimization applies to string literals, `const string` fields, and UTF-8 literals (for example, `"PNG"u8`).
+
+### Devirtualization improvements
+
+The JIT can now devirtualize generic virtual methods, including non-shared generic virtual methods and shared generic virtual methods that don't require a runtime lookup. Default interface methods declared on generic interfaces can now be devirtualized as well.
+
+In addition, the result of `Activator.CreateInstance<T>()` is now treated as having an exact type, allowing the JIT to devirtualize subsequent calls made on the returned object.
+
+These improvements unlock further downstream optimizations such as inlining and constant folding, reducing runtime dispatch overhead and improving performance. For example:
+
+```csharp
+IfaceGeneric<string> caller = new Caller<string>();
+Iface obj = Activator.CreateInstance<Impl>();
+caller.DefaultImpl(obj, "test"); // Can be optimized down to Console.WriteLine("test")
+
+interface Iface
+{
+    void GenericMethod<T>(T value);
+}
+
+interface IfaceGeneric<T>
+{
+    void DefaultImpl(Iface obj, T value) => obj.GenericMethod(value);
+}
+
+class Impl : Iface
+{
+    public void GenericMethod<T>(T value) => Console.WriteLine(value);
+}
+
+class Caller<T> : IfaceGeneric<T>
+{
+}
+```
+
+Here the JIT can determine the exact implementation behind both interface calls, devirtualize them, inline through the call chain, and ultimately fold the code down to the equivalent of `Console.WriteLine("test")`.
 
 ### Eliminating bounds checks after an empty-span guard
 

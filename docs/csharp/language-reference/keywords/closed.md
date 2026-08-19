@@ -1,7 +1,7 @@
 ---
 title: "closed modifier"
 description: "Learn about the closed class modifier in C#. A closed class restricts derivation to its declaring assembly so consumers can write exhaustive switch expressions over its direct descendants."
-ms.date: 06/02/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "closed"
   - "closed_CSharpKeyword"
@@ -75,11 +75,9 @@ For more information about how the compiler determines exhaustiveness, including
 
 ## Type parameters constrained to a closed type
 
-A type parameter constrained to a closed class is treated as that closed class for exhaustiveness checks. A `switch` expression whose governing value has such a type parameter is exhaustive when it handles every direct descendant of the closed constraint:
+The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md#exhaustiveness-of-type-parameters-constrained-to-closed-type) treats a type parameter constrained to a closed class the same as that closed class for exhaustiveness checks: a `switch` expression whose governing value has such a type parameter is exhaustive when it handles every direct descendant of the closed constraint, regardless of whether the type parameter appears on a method or on the containing type:
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="TypeParameterConstrained":::
-
-This rule applies whether the type parameter appears on a method or on the containing type.
 
 ## C# language specification
 

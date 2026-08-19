@@ -15,6 +15,9 @@ This warning indicates that the .NET SDK used to build your project has one or m
 
 To resolve the warning, install a patched .NET SDK from <https://dotnet.microsoft.com/download> and update your `global.json` (if present) to select the new version.
 
+> [!NOTE]
+> This check is available in .NET 11 Preview 5 and later versions.
+
 ## How the check works
 
 The check is opt-in and only runs when the MSBuild property `CheckSdkVulnerabilities` is set to `true`:

@@ -17,6 +17,9 @@ To resolve the warning, install a supported .NET SDK from <https://dotnet.micros
 
 This warning is distinct from [NETSDK1138](netsdk1138.md), which is raised when your project's *target framework* is out of support. NETSDK1239 is raised when the *SDK that runs the build* is out of support, regardless of which framework you target.
 
+> [!NOTE]
+> This check is available in .NET 11 Preview 5 and later versions.
+
 ## How the check works
 
 The check is opt-in and only runs when the MSBuild property `CheckSdkVulnerabilities` is set to `true`:

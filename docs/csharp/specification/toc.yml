@@ -1,7 +1,7 @@
 items:
 - name: C# specifications
   href: index.yml
-- name: C# 11 early draft specification
+- name: C# 13 early draft specification
   items:
   - name: Overview
     href: overview.md
@@ -77,8 +77,6 @@ items:
     displayName: feature specifications
   - name: Lexical structure
     items:
-    - name: "Escape sequence '\\e'"
-      href: ../../../_csharplang/proposals/csharp-13.0/esc-escape-sequence.md
     - name: "Ignored directives"
       href: ../../../_csharplang/proposals/csharp-14.0/ignored-directives.md
   - name: Types
@@ -91,40 +89,26 @@ items:
       href: ../../../_csharplang/proposals/csharp-14.0/first-class-span-types.md
   - name: Expressions
     items:
-    - name: Better conversion from collection expression
-      href: ../../../_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md
     - name: Collection expression arguments
       href: ../../../_csharplang/proposals/csharp-15.0/collection-expression-arguments.md
-    - name: Method group natural type conversion
-      href: ../../../_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md
     - name: Simple lambda parameters with modifiers
       href: ../../../_csharplang/proposals/csharp-14.0/simple-lambda-parameters-with-modifiers.md
     - name: Unbound generic types in nameof
       href: ../../../_csharplang/proposals/csharp-14.0/unbound-generic-types-in-nameof.md
-    - name: Overload resolution priority
-      href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
     - name: Null conditional assignment
       href: ../../../_csharplang/proposals/csharp-14.0/null-conditional-assignment.md
     - name: User defined compound assignment operators
       href: ../../../_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md
   - name: Statements
     items:
-    - name: Lock object semantics
-      href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
-    - name: Allow `ref` and `unsafe`
-      href: ../../../_csharplang/proposals/csharp-13.0/ref-unsafe-in-iterators-async.md 
     - name: Labeled `break` and `continue`
       href: ../../../_csharplang/proposals/csharp-15.0/labeled-break-continue.md
   - name: Classes
     items: 
-    - name: Partial properties
-      href: ../../../_csharplang/proposals/csharp-13.0/partial-properties.md
     - name: Partial events and constructors
       href: ../../../_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md
     - name: Field backed properties
       href: ../../../_csharplang/proposals/csharp-14.0/field-keyword.md
-    - name: Params collections
-      href: ../../../_csharplang/proposals/csharp-13.0/params-collections.md
     - name: Extension members
       href: ../../../_csharplang/proposals/csharp-14.0/extensions.md
     - name: Extension operators
@@ -137,10 +121,6 @@ items:
     items:
     - name: Union types
       href: ../../../_csharplang/proposals/csharp-15.0/unions.md
-  - name: Interfaces
-    items:
-    - name: Allow ref struct interfaces
-      href: ../../../_csharplang/proposals/csharp-13.0/ref-struct-interfaces.md
   - name: Unsafe code
     items:
     - name: Memory safety

@@ -101,6 +101,8 @@ Records handle inheritance correctly without manual work. The compiler-generated
 > [!IMPORTANT]
 > Use `record` whenever possible — the compiler generates all required equality members for you. Manual implementation is only needed when your type must derive from a non-record class or has other constraints that prevent `record`.
 
+### Implement equality yourself when a type can't be a record
+
 Here is a minimal manual implementation for a value type that can't be a record:
 
 :::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="ColorDefinition":::

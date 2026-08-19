@@ -68,7 +68,7 @@ You may create types that define their own rules for equality or define a
 natural ordering among objects of that type.
 
 - [Test for reference-based equality](../fundamentals/expressions/equality.md#use-objectreferenceequals-to-test-identity-directly).
-- [Define value-based equality for a type](../fundamentals/expressions/equality.md#implement-equality-yourself-when-a-type-cant-be-a-record).
+- [Define value-based equality for a type](../language-reference/operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record).
 
 ## Exception handling
 

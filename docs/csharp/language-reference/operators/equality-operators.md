@@ -96,7 +96,7 @@ The following example demonstrates how to use the `!=` operator:
 
 ## Equality in class hierarchies
 
-Value equality in an unsealed class hierarchy requires more care than in a sealed class. The hazard is that `IEquatable<T>.Equals(T? other)` dispatch follows the *declared type* of the variable, not its runtime type. If `Shape` declares a non-`virtual` `Equals(Shape? other)`, a variable typed as `Shape` that holds a `Circle` at runtime invokes `Shape.Equals`—silently ignoring `Circle`-specific fields. Two `Circle` objects with different radii can compare as equal when accessed through a `Shape` variable.
+Value equality in an unsealed class hierarchy requires more care than in a sealed class. The hazard is that `IEquatable<T>.Equals(T? other)` dispatch follows the *declared type* (the type written in the variable declaration) of the variable, not its runtime type. If `Shape` declares a non-`virtual` `Equals(Shape? other)`, a variable typed as `Shape` that holds a `Circle` at runtime invokes `Shape.Equals`—silently ignoring `Circle`-specific fields. Two `Circle` objects with different radii can compare as equal when accessed through a `Shape` variable.
 
 The correct pattern requires two cooperating requirements: make the typed `Equals` method `virtual` so each derived class can extend the comparison, and add a `GetType() == other.GetType()` guard in the base-class implementation so objects of different runtime types are never considered equal.
 

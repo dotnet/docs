@@ -141,6 +141,7 @@ A correct implementation must also satisfy the *equivalence contract* (assume `x
 The symmetric and transitive rules require extra care in unsealed hierarchies — see [Equality in class hierarchies](../../language-reference/operators/equality-operators.md#equality-in-class-hierarchies) in the language reference.
 
 For the complete `==` and `!=` operator syntax, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
+
 ## Polymorphic equality in unsealed class hierarchies
 
 Implementing value equality in an unsealed class hierarchy is error-prone. The key hazard: `IEquatable<T>.Equals(T?)` dispatches on the *declared* type of the variable, not the runtime type, so a base-class implementation can silently ignore fields added by derived classes. The fix requires a `virtual` typed `Equals` and a `GetType() == other.GetType()` guard. Records handle this correctly out of the box — prefer `record` whenever value equality is the goal.

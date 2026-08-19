@@ -1,16 +1,19 @@
 ---
 name: migrate-code-snippets
-description: 'Migrates .NET documentation code from the legacy ~/samples/snippets/ location to article-relative ./snippets/ projects. Use when replacing legacy [!code-*] references, creating compilable C# and Visual Basic snippet projects, or removing migrated legacy snippets.'
-argument-hint: 'Provide the article whose legacy snippets need migration'
+description: 'Migrates .NET documentation code from the legacy ~/samples/snippets/ location to article-relative ./snippets/ projects for an input article file. Use when replacing legacy [!code-*] references, creating compilable C# and Visual Basic snippet projects, or removing migrated legacy snippets.'
+argument-hint: 'Provide the Markdown article file whose legacy snippets need migration'
 owner: adegeo
 version: 2
+ai-usage: ai-assisted
 ---
 
 # Migrate Code Snippets
 
 Migrate code snippets from the legacy `~/samples/snippets/` location to the `./snippets/` location relative to the article that uses the snippet. Legacy snippets are often outdated, incomplete, and unable to compile. New snippets must be complete, compilable, and include project files. Unless the article is part of a language guide, provide both C# and Visual Basic versions of each snippet.
 
-Unless the user asks otherwise, update only the target article and its snippet files. Don't update other articles that reference the same legacy snippets. At the end of the migration, ask for permission to update those articles separately.
+## Input
+
+This skill requires one Markdown article file as input. Treat the supplied file as the target article. If the user doesn't provide a file, ask for one before you begin the migration. Don't update other articles that reference the same legacy snippets.
 
 ## Avoid Common Mistakes
 

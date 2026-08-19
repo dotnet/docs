@@ -143,7 +143,7 @@ Compound assignment is more than just a shorthand. It evaluates the left-hand si
 
 :::code language="csharp" source="snippets/operators/Program.cs" ID="AssignmentChain":::
 
-`small += 10` compiles because the compiler inserts the narrowing conversion automatically. `small = small + 10` would require an explicit `(byte)` cast, because the arithmetic promotes both operands to `int`.
+`small += 10` compiles because the compiler inserts the narrowing conversion automatically — the result, `210`, fits within the `byte` range of 0–255. `small = small + 10` would require an explicit `(byte)` cast, because the arithmetic promotes both operands to `int`.
 
 ## Other C# operators
 

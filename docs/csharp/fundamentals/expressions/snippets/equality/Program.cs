@@ -66,21 +66,6 @@ Console.WriteLine(playlist1.Equals(playlist2));                        // => Fal
 Console.WriteLine(playlist1.Tracks.SequenceEqual(playlist2.Tracks));   // => True
 // </RecordWithCollectionProblem>
 
-// <RecordWithCollectionFixed>
-var fixed1 = new PlaylistFixed("Chill", new List<string> { "Song A", "Song B" });
-var fixed2 = new PlaylistFixed("Chill", new List<string> { "Song A", "Song B" });
-
-Console.WriteLine(fixed1.Equals(fixed2)); // => True
-// </RecordWithCollectionFixed>
-
-// <PolymorphicEqualityUsage>
-Shape circle1 = new Circle("red", 5.0);
-Shape circle2 = new Circle("red", 7.0);
-Shape circle3 = new Circle("red", 5.0);
-
-Console.WriteLine(circle1.Equals(circle2)); // => False  (Radius differs)
-Console.WriteLine(circle1.Equals(circle3)); // => True
-// </PolymorphicEqualityUsage>
 
 // ── Type declarations ────────────────────────────────────────────────────────
 
@@ -127,59 +112,5 @@ class Document(string title)
     public string Title { get; } = title;
 }
 
-// <PolymorphicEqualityDefinition>
-// Unsealed class hierarchy — make the typed Equals virtual and guard with GetType()
-// so a derived instance is never equal to an instance of a different runtime type.
-class Shape : IEquatable<Shape>
-{
-    public string Color { get; }
-    public Shape(string color) => Color = color;
-
-    public override bool Equals(object? obj) => Equals(obj as Shape);
-
-    // virtual so derived classes can override the comparison logic
-    public virtual bool Equals(Shape? other) =>
-        other is not null &&
-        GetType() == other.GetType() &&   // reject different runtime types
-        Color == other.Color;
-
-    public override int GetHashCode() => HashCode.Combine(GetType(), Color);
-
-    public static bool operator ==(Shape? l, Shape? r) => l?.Equals(r) ?? r is null;
-    public static bool operator !=(Shape? l, Shape? r) => !(l == r);
-}
-
-class Circle : Shape
-{
-    public double Radius { get; }
-    public Circle(string color, double radius) : base(color) => Radius = radius;
-
-    public override bool Equals(object? obj) => Equals(obj as Shape);
-
-    public override bool Equals(Shape? other) =>
-        other is Circle c && base.Equals(c) && Radius == c.Radius;
-
-    public override int GetHashCode() => HashCode.Combine(Color, Radius);
-}
-// </PolymorphicEqualityDefinition>
 
 record Playlist(string Name, List<string> Tracks);
-
-// <PlaylistFixedDefinition>
-record PlaylistFixed(string Name, List<string> Tracks) : IEquatable<PlaylistFixed>
-{
-    public virtual bool Equals(PlaylistFixed? other) =>
-        other is not null &&
-        Name == other.Name &&
-        Tracks.SequenceEqual(other.Tracks);
-
-    public override int GetHashCode()
-    {
-        var hc = new HashCode();
-        hc.Add(Name);
-        foreach (var t in Tracks) hc.Add(t);
-        return hc.ToHashCode();
-    }
-}
-// </PlaylistFixedDefinition>
-

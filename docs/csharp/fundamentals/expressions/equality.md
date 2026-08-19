@@ -107,33 +107,30 @@ Record equality is synthesized from the members' own equality. Each property or 
 
 `playlist1` and `playlist2` are separate `List<string>` instances. Even though their contents match, `Equals` returns `false`.
 
-When you need two-record equality to reflect collection *contents*, you have a few options:
+When you need record equality to reflect collection *contents*, you have a few options:
 
-- **Custom `IEquatable<T>` override**: Implement `IEquatable<T>` on the record and use <xref:System.Linq.Enumerable.SequenceEqual*?displayProperty=nameWithType> (or an appropriate comparison) for the collection members.
-
-  :::code language="csharp" source="snippets/equality/Program.cs" ID="PlaylistFixedDefinition":::
-
-  :::code language="csharp" source="snippets/equality/Program.cs" ID="RecordWithCollectionFixed":::
-
-- **Use collection types with value equality**: <xref:System.Collections.Immutable.ImmutableArray`1?displayProperty=nameWithType> doesn't override equality either, but a record that wraps a `ReadOnlySpan<T>` or uses `SequenceEqual` in a custom `Equals` achieves the same goal. The key insight is to pick the right abstraction rather than fighting the defaults.
-
-- **Design around identity**: If the record represents an entity rather than a value—and the collection members are logically shared—then reference equality for those members may be intentional. Design the type to reuse the same list instance where equality matters.
+- **Implement `IEquatable<T>`** on the record and override `Equals` to use <xref:System.Linq.Enumerable.SequenceEqual*?displayProperty=nameWithType> for the collection members.
+- **Use a collection type with value equality** — for example, a custom `IEqualityComparer<T>` or a type whose own `Equals` compares elements.
+- **Design around identity**: if the record represents an entity rather than a pure value, reference equality for its collection members may be intentional.
 
 ## Implement equality yourself when a type can't be a record
 
 > [!IMPORTANT]
-> This section shows how to implement by hand the equality behavior that the compiler generates when you add `record` to a type. If your type can be a record, use `record` instead. It generates all these members for you. Implement them manually only when your type can't be a record. Correctly implementing all the requirements for equality requires you to understand the expectations for these operations. This section contains all those rules. While those seem complicated remember that you can almost always use a `record` type and have the language automatically create implementations that comply with all these requirements.
+> Use `record` whenever possible — the compiler generates all required equality members for you. Manual implementation is only needed when your type must derive from a non-record class or has other constraints that prevent `record`.
 
-When a class or struct represents a value, such as a color or a measurement, the equality members for that type must agree. The easiest way to achieve this consistency is to declare the type as a `record`. If the type can't be a record, such as when it must derive from a non-record class, implement the equality members yourself. The language enforces that user-defined `==` and `!=` operators must be declared as a pair. If you provide those operators, compiler warning [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.Equals*?displayProperty=nameWithType> override. Warning [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) means the type also needs an <xref:System.Object.GetHashCode*?displayProperty=nameWithType> override.
+Here is a minimal manual implementation for a value type that can't be a record:
 
-In a complete manual implementation, provide these members:
+:::code language="csharp" source="snippets/equality/Program.cs" ID="ColorDefinition":::
 
-- `==` and `!=` operators. Add them as a pair because the compiler requires a type that overloads one to overload the other.
-- An `override` of <xref:System.Object.Equals*>. This override changes equality semantics for the type and keeps object-level equality consistent.
-- An `override` of <xref:System.Object.GetHashCode*>. Objects that are equal must return the same hash code. Without this pairing, the type behaves incorrectly in hash-based collections such as `Dictionary<TKey,TValue>` or `HashSet<T>`. See <xref:System.Object.GetHashCode*> for guidance on a correct implementation.
-- Optionally, a typed `Equals` method by implementing <xref:System.IEquatable`1>. You often see this written as `Equals(T?)` in docs: `T` is a [type parameter](../types/generics.md), a placeholder for the current type, and `?` is a [nullable annotation](../null-safety/index.md) that says the argument can be `null`. This typed method can avoid extra conversions when callers already have the same type, but it's a secondary optimization.
+The implementation provides three required members: `Equals(Color?)` as the core comparison, `override Equals(object?)` for object-level calls, and `override GetHashCode()` so hash-based collections work correctly. `HashCode.Combine` is a library helper that builds one hash from the same values used by `Equals`. Implementing <xref:System.IEquatable`1> (the `Equals(Color?)` overload) is optional but avoids boxing when callers already have the concrete type.
 
-A correct implementation also satisfies the *equivalence contract*. The following rules assume `x`, `y`, and `z` are not null:
+When you also define `==` and `!=`, the language requires them as a pair; warnings [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) and [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) remind you to keep all four members consistent.
+
+With the three members above in place, `Equals` reflects value equality, but `==` still tests identity because no `==` operator has been declared yet:
+
+:::code language="csharp" source="snippets/equality/Program.cs" ID="IEquatableUsage":::
+
+A correct implementation must also satisfy the *equivalence contract* (assume `x`, `y`, and `z` are non-null):
 
 1. **Reflexive**: `x.Equals(x)` returns `true`.
 2. **Symmetric**: `x.Equals(y)` returns the same value as `y.Equals(x)`.
@@ -141,39 +138,14 @@ A correct implementation also satisfies the *equivalence contract*. The followin
 4. **Consistent**: successive calls to `x.Equals(y)` return the same value as long as neither object changes.
 5. **Null behavior**: `x.Equals(null)` returns `false`; `x.Equals(y)` must not throw when called on a non-null `x`.
 
-The symmetric and transitive rules are easy to violate in inheritance hierarchies. See [Polymorphic equality in unsealed class hierarchies](#polymorphic-equality-in-unsealed-class-hierarchies) for guidance.
+The symmetric and transitive rules require extra care in unsealed hierarchies — see [Equality in class hierarchies](../../language-reference/operators/equality-operators.md#equality-in-class-hierarchies) in the language reference.
 
-The following example starts with the <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*> overrides, plus the optional typed `Equals` member, so you can see their effect before the `==` and `!=` operators are added. `HashCode.Combine` is a library helper that builds one hash code from the same values used by `Equals`:
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="ColorDefinition":::
-
-At this point, `Equals` reflects value equality, but `==` still tests identity for the class because the type hasn't declared `==` and `!=` operators. Plain structs likewise still don't have a predefined `==` operator unless you declare one:
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="IEquatableUsage":::
-
-Adding `==` and `!=` operators is the remaining step when you need operator comparisons. This article intentionally stops before the full operator implementation so the first pass can focus on the equality contract. The operator-focused follow-up shows the completed shape. For the operator syntax, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
-
+For the complete `==` and `!=` operator syntax, see [Equality operators](../../language-reference/operators/equality-operators.md) in the language reference.
 ## Polymorphic equality in unsealed class hierarchies
 
-Implementing value equality in an unsealed class hierarchy requires extra care. The hazard is that `IEquatable<T>.Equals(T? other)` is dispatched at compile time based on the *declared type* of the variable, not the runtime type. If `TwoDPoint` declares a non-virtual `Equals(TwoDPoint? other)`, then a variable declared as `TwoDPoint` but holding a `ThreeDPoint` at runtime calls `TwoDPoint.Equals`, silently ignoring the extra dimension. The result is that two points with different `Z` values incorrectly compare as equal.
+Implementing value equality in an unsealed class hierarchy is error-prone. The key hazard: `IEquatable<T>.Equals(T?)` dispatches on the *declared* type of the variable, not the runtime type, so a base-class implementation can silently ignore fields added by derived classes. The fix requires a `virtual` typed `Equals` and a `GetType() == other.GetType()` guard. Records handle this correctly out of the box — prefer `record` whenever value equality is the goal.
 
-**The fix**: make the typed `Equals` method `virtual` and add a `GetType() == other.GetType()` guard. This ensures that objects of different runtime types are never considered equal, regardless of the declared type of the variable.
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="PolymorphicEqualityDefinition":::
-
-Usage with a variable declared as the base type:
-
-:::code language="csharp" source="snippets/equality/Program.cs" ID="PolymorphicEqualityUsage":::
-
-Key points for unsealed class hierarchies:
-
-- **`GetType()` guard**: including `GetType() == other.GetType()` in the base class `Equals` prevents a `Circle` from comparing equal to a `Square` with the same color, and prevents a `Circle` from comparing equal to a `Shape` base with the same color.
-- **`virtual` on the typed `Equals`**: lets each derived class augment the comparison with its own fields by calling `base.Equals(other)`.
-- **`GetHashCode` must include `GetType()`**: two objects are only considered equal when their runtime types match, so `GetHashCode` must reflect that. `HashCode.Combine(GetType(), ...)` achieves this.
-- **Sealed classes are simpler**: a `sealed` class can't be subclassed, so compile-time and runtime types always agree. The standard `IEquatable<T>` pattern shown for `Color` earlier in this article is correct and complete for sealed classes without any virtual dispatch.
-
-> [!TIP]
-> Records handle inheritance correctly out of the box. When a base record and a derived record are both compared using `==` or `Equals`, the compiler-generated equality checks both the runtime type and all declared properties. Prefer `record` over a manual unsealed-class hierarchy when value equality is your goal.
+For the complete pattern, hazard explanation, and worked examples, see [Equality in class hierarchies](../../language-reference/operators/equality-operators.md#equality-in-class-hierarchies) in the language reference.
 
 ## See also
 
@@ -183,4 +155,5 @@ Key points for unsealed class hierarchies:
 - [Records](../types/records.md)
 - [Tuples and deconstruction](../types/tuples.md)
 - [Equality operators (language reference)](../../language-reference/operators/equality-operators.md)
+- [Equality in class hierarchies](../../language-reference/operators/equality-operators.md#equality-in-class-hierarchies) — advanced guidance on polymorphic equality
 - [Arithmetic, comparison, logical, and assignment operators](operators.md) — the equality operator survey alongside arithmetic, logical, and assignment operators

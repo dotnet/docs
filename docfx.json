@@ -49,7 +49,6 @@
             },
             {
                 "files": [
-                    "csharp-13.0/*.md",
                     "csharp-14.0/*.md",
                     "csharp-15.0/*.md",
                     "unsafe-evolution.md"
@@ -502,8 +501,7 @@
                 "docs/visual-basic/**/**.{md,yml}": "wiwagn"
             },
             "ms.date": {
-                "_csharpstandard/standard/*.md": "08/12/2026",
-                "_csharplang/proposals/csharp-13.0/*.md": "10/31/2024",
+                "_csharpstandard/standard/*.md": "08/19/2026",
                 "_csharplang/proposals/csharp-14.0/*.md": "08/06/2025",
                 "_csharplang/proposals/csharp-15.0/*.md": "08/12/2026",
                 "_csharplang/proposals/*.md": "08/12/2026",
@@ -615,15 +613,6 @@
                 "_csharpstandard/standard/standard-library.md": "Standard library",
                 "_csharpstandard/standard/documentation-comments.md": "Documentation comments",
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
-                "_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md": "Better conversion from collection expression",
-                "_csharplang/proposals/csharp-13.0/esc-escape-sequence.md": "String/Character escape sequence '\\e'",
-                "_csharplang/proposals/csharp-13.0/lock-object.md": "Obey lock object semantics for lock statements",
-                "_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md": "Method group natural type improvements",
-                "_csharplang/proposals/csharp-13.0/params-collections.md": "Params collections",
-                "_csharplang/proposals/csharp-13.0/ref-unsafe-in-iterators-async.md": "Allow ref and unsafe in iterators and async methods",
-                "_csharplang/proposals/csharp-13.0/ref-struct-interfaces.md": "Allow ref struct types to implement some interfaces",
-                "_csharplang/proposals/csharp-13.0/partial-properties.md": "All partial properties and indexers",
-                "_csharplang/proposals/csharp-13.0/overload-resolution-priority.md": "Overload resolution priority tiebreaker attribute",
                 "_csharplang/proposals/csharp-14.0/field-keyword.md": "The `field` contextual keyword",
                 "_csharplang/proposals/csharp-14.0/unbound-generic-types-in-nameof.md": "Unbound generic types in `nameof`",
                 "_csharplang/proposals/csharp-14.0/first-class-span-types.md": "First-class span types",
@@ -695,15 +684,6 @@
                 "_csharpstandard/standard/standard-library.md": "This appendix lists requirements of the specification library. The C# language relies on these types for some of its behavior.",
                 "_csharpstandard/standard/documentation-comments.md": "This appendix describes XML comments that are used to document your program.",
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
-                "_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md": "Conversions from collection expressions match the element type before matching the collection type.",
-                "_csharplang/proposals/csharp-13.0/esc-escape-sequence.md" : "The sequence '\\e' is now interpreted as the 'ESC' character, character point '0x1b'",
-                "_csharplang/proposals/csharp-13.0/lock-object.md": "Special-case how `System.Threading.Lock` interacts with the `lock` keyword by calling its `EnterScope` method. Add static analysis warnings to prevent accidental misuse of the type where possible.",
-                "_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md": "This proposal refines the determination of the natural type of a method group by considering candidates scope-by-scope and pruning at each scope.",
-                "_csharplang/proposals/csharp-13.0/params-collections.md": "Allow the `params` modifier on collection types beyond arrays, including `IEnumerable` types.",
-                "_csharplang/proposals/csharp-13.0/ref-unsafe-in-iterators-async.md": "This proposal modifies restrictions to enable ref local variables and unsafe blocks in iterators and async methods",
-                "_csharplang/proposals/csharp-13.0/ref-struct-interfaces.md": "This proposal provides features that enable interface authors to allow `ref struct` types to implement a particular interface",
-                "_csharplang/proposals/csharp-13.0/partial-properties.md": "This proposal provides for partial properties and indexers, allowing the definition of a property or indexer to be split across multiple parts.",
-                "_csharplang/proposals/csharp-13.0/overload-resolution-priority.md": "This proposal introduces a new attribute, `OverloadResolutionPriorityAttribute`, that can be applied to methods to influence overload resolution.",
                 "_csharplang/proposals/csharp-14.0/field-keyword.md": "This proposal introduces a new keyword, `field`, that accesses the compiler generated backing field in a property accessor.",
                 "_csharplang/proposals/csharp-14.0/unbound-generic-types-in-nameof.md": "This proposal introduces the ability to use unbound generic types such as `List<>` in `nameof` expressions. The type argument isn't required.",
                 "_csharplang/proposals/csharp-14.0/first-class-span-types.md": "This proposal provides several implicit conversions to `Span<T>` and `ReadOnlySpan<T>` that enable library authors to have fewer overloads and developers to write code that resolves to faster Span based APIs",
@@ -744,7 +724,6 @@
             "titleSuffix": {
                 "docs/**/*.{md,yml}": ".NET",
                 "_csharpstandard/standard/*.md": "C# language specification",
-                "_csharplang/proposals/csharp-13.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-14.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/csharp-15.0/*.md": "C# feature specifications",
                 "_csharplang/proposals/*.md": "C# feature specifications (preview)",

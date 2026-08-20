@@ -584,6 +584,11 @@ items:
       CS0182, CS0591, CS0599, CS0617, CS0633, CS0643, CS0655, CS0839, CS1016, CS1739,
       CS1740, CS1742, CS1744, CS1746, CS7036, CS7067, CS8196, CS8324, CS8861, CS8905,
       CS8943, CS8944, CS8945, CS8948, CS8949, CS8950, CS8951, CS8964, CS8965, CS8966
+  - name: Deconstruction, discards, and out variables
+    href: ./compiler-messages/deconstruction-errors.md
+    displayName: >
+      deconstruction, discards, out variables,
+      CS8129, CS8130, CS8131, CS8132, CS8134, CS8136, CS8183, CS8187, CS8197, CS8199
   - name: Generic type parameters and type arguments
     href: ./compiler-messages/generic-type-parameters-errors.md
     displayName: >
@@ -1566,14 +1571,6 @@ items:
       href: ./compiler-messages/cs7035.md
     - name: CS8070
       href: ./compiler-messages/cs8070.md
-    - name: CS8129
-      href: ./compiler-messages/cs8129.md
-    - name: CS8130
-      href: ./compiler-messages/cs8130.md
-    - name: CS8131
-      href: ./compiler-messages/cs8131.md
-    - name: CS8132
-      href: ./compiler-messages/cs8132.md
     - name: CS8146
       href: ./compiler-messages/cs8146.md
     - name: CS8147

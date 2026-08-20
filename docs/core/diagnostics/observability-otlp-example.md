@@ -36,16 +36,18 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 
 ## 4. Reference the OpenTelemetry packages
 
-Use the NuGet Package Manager or command line to add the following NuGet packages:
+Use the NuGet Package Manager, or the following `dotnet add package` commands, to add the OpenTelemetry packages:
 
-``` xml
-  <ItemGroup>
-    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.17.0" />
-    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.17.0" />
-    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.17.0" />
-    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.17.0" />
-  </ItemGroup>
+``` dotnetcli
+dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
+dotnet add package OpenTelemetry.Extensions.Hosting
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore
+dotnet add package OpenTelemetry.Instrumentation.Http
 ```
+
+Alternatively, add the following `PackageReference` items directly to the project file:
+
+:::code language="xml" source="snippets/observability-otlp-example/csharp/observability-otlp-example.csproj" id="PackageReferences":::
 
 > [!NOTE]
 > Use the latest versions, as the OTel APIs are constantly evolving.

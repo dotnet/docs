@@ -57,9 +57,7 @@ The `if` and `switch` statements decide which code runs. When you instead need t
 
 The conditional operator `?:` chooses one of two values based on a Boolean condition.
 
-<!-- Remove these comment markers after dotnet/docs#55469 merges and this branch is rebased.
 For its syntax, short-circuit behavior, and guidance on choosing it instead of `if`/`else`, see [Conditional operator `?:`](../expressions/operators.md#conditional-operator-).
--->
 
 ### `switch` expression
 

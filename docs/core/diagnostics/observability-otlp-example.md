@@ -26,13 +26,13 @@ dotnet new web
 
 Add the following `using` directives to the top of the file:
 
-:::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_Usings":::
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Snippet_Usings":::
 
 ## 3. Add metrics and activity definitions
 
 The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`Otel.Example`). Insert this code before `builder.Build();`:
 
-:::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_CustomMetrics":::
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Snippet_CustomMetrics":::
 
 ## 4. Reference the OpenTelemetry packages
 
@@ -54,7 +54,7 @@ Use the NuGet Package Manager or command line to add the following NuGet package
 
 Insert the following code before `builder.Build();`, after the code added in [step 3](#3-add-metrics-and-activity-definitions):
 
-:::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_OTEL":::
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Snippet_OTEL":::
 
 This code sets up OpenTelemetry with the different sources of telemetry:
 
@@ -82,11 +82,11 @@ You can add additional environment variables for the [.NET OTLP Exporter](https:
 
 Insert the following code between `builder.Build();` and `app.Run()`:
 
-:::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_MapGet":::
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Snippet_MapGet":::
 
 Insert the following function at the bottom of the file:
 
-:::code language="csharp" source="snippets/OTLP-Example/csharp/Program.cs" id="Snippet_SendGreeting":::
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Snippet_SendGreeting":::
 
 > [!NOTE]
 > The endpoint definition doesn't use anything specific to OpenTelemetry. It uses the .NET APIs for observability.

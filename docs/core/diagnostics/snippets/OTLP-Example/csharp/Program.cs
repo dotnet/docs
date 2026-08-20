@@ -1,5 +1,4 @@
 ﻿// <WholeProgram>
-// <Snippet_Usings>
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using OpenTelemetry.Metrics;
@@ -9,7 +8,6 @@ using OpenTelemetry.Exporter;
 using OpenTelemetry.Logs;
 using OpenTelemetry;
 using Azure.Monitor.OpenTelemetry.AspNetCore;
-// </Snippet_Usings>
 
 var builder = WebApplication.CreateBuilder(args);
 

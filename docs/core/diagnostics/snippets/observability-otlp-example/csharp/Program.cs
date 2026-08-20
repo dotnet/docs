@@ -1,4 +1,4 @@
-// <Snippet_Usings>
+// <Usings>
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using OpenTelemetry.Exporter;
@@ -6,20 +6,20 @@ using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
-// </Snippet_Usings>
+// </Usings>
 
-// <Snippet_CustomMetrics>
+// <CustomMetrics>
 // Custom metrics for the application
 var greeterMeter = new Meter("OTel.Example", "1.0.0");
 var countGreetings = greeterMeter.CreateCounter<int>("greetings.count", description: "Counts the number of greetings");
 
 // Custom ActivitySource for the application
 var greeterActivitySource = new ActivitySource("OTel.Example");
-// </Snippet_CustomMetrics>
+// </CustomMetrics>
 
 var builder = WebApplication.CreateBuilder(args);
 
-// <Snippet_OTEL>
+// <OTEL>
 // Configure the shared OTLP connection used by logs, metrics, and traces.
 var otlpEndpoint = new Uri(builder.Configuration["OTEL_EXPORTER_OTLP_ENDPOINT"]!);
 Action<OtlpExporterOptions> configureOtlp = options =>
@@ -63,17 +63,17 @@ otel.WithTracing(tracing =>
     tracing.AddSource(greeterActivitySource.Name);
     tracing.AddOtlpExporter(configureOtlp);
 });
-// </Snippet_OTEL>
+// </OTEL>
 
 var app = builder.Build();
 
-// <Snippet_MapGet>
+// <MapGet>
 app.MapGet("/", SendGreeting);
-// </Snippet_MapGet>
+// </MapGet>
 
 app.Run();
 
-// <Snippet_SendGreeting>
+// <SendGreeting>
 async Task<string> SendGreeting(ILogger<Program> logger)
 {
     // Create a new Activity scoped to the method
@@ -90,4 +90,4 @@ async Task<string> SendGreeting(ILogger<Program> logger)
 
     return "Hello World!";
 }
-// </Snippet_SendGreeting>
+// </SendGreeting>

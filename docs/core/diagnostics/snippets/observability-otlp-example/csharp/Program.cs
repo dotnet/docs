@@ -47,11 +47,15 @@ otel.WithMetrics(metrics =>
 {
     // Metrics provider from OpenTelemetry
     metrics.AddAspNetCoreInstrumentation();
-    //Our custom metrics
+
+    // Our custom metrics
     metrics.AddMeter(greeterMeter.Name);
-    // Metrics provides by ASP.NET Core in .NET
+
+    // Metrics provided by ASP.NET Core in .NET
     metrics.AddMeter("Microsoft.AspNetCore.Hosting");
     metrics.AddMeter("Microsoft.AspNetCore.Server.Kestrel");
+
+    // Export the metrics via OTLP
     metrics.AddOtlpExporter(configureOtlp);
 });
 

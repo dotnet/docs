@@ -22,19 +22,7 @@ Create a simple web API project by using the **ASP.NET Core Empty** template in 
 dotnet new web
 ```
 
-## 2. Add using directives
-
-Add the following `using` directives to the top of the file:
-
-:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Usings":::
-
-## 3. Add metrics and activity definitions
-
-The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`Otel.Example`). Insert this code before `builder.Build();`:
-
-:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="CustomMetrics":::
-
-## 4. Reference the OpenTelemetry packages
+## 2. Reference the OpenTelemetry packages
 
 Use the NuGet Package Manager, or the following `dotnet add package` commands, to add the OpenTelemetry packages:
 
@@ -52,9 +40,21 @@ Alternatively, add the following `PackageReference` items directly to the projec
 > [!NOTE]
 > Use the latest versions, as the OTel APIs are constantly evolving.
 
+## 3. Add using directives
+
+Add the following `using` directives to the top of the file:
+
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="Usings":::
+
+## 4. Add metrics and activity definitions
+
+The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`Otel.Example`). Insert this code before `builder.Build`:
+
+:::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="CustomMetrics":::
+
 ## 5. Configure OpenTelemetry with the correct providers
 
-Insert the following code before `builder.Build();`, after the code added in [step 3](#3-add-metrics-and-activity-definitions):
+Insert the following code before `builder.Build`:
 
 :::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="OTEL":::
 
@@ -82,7 +82,7 @@ You can add additional environment variables for the [.NET OTLP Exporter](https:
 
 ## 7. Create an API endpoint
 
-Insert the following code between `builder.Build();` and `app.Run()`:
+Insert the following code between `builder.Build` and `app.Run()`:
 
 :::code language="csharp" source="snippets/observability-otlp-example/csharp/Program.cs" id="MapGet":::
 

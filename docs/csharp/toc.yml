@@ -122,6 +122,8 @@ items:
     - name: Operators
       displayName: "+, -, *, /, %, unary +, unary -, !, ++, --, <, >, <=, >=, ==, !=, &&, ||, ?:, =, +=, -=, *=, /=, %="
       href: fundamentals/expressions/operators.md
+    - name: Statements overview
+      href: fundamentals/statements/index.md
     - name: Selection statements
       href: fundamentals/statements/selection.md
     - name: Iteration statements
@@ -538,12 +540,14 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
-  - name: Statements, expressions, and equality
-    items:
-    - name: Statements
-      href: programming-guide/statements-expressions-operators/statements.md
-    - name: Expression-bodied members
-      href: programming-guide/statements-expressions-operators/expression-bodied-members.md
+    - name: Equality and equality comparisons
+      items:
+      - name: Equality comparisons
+        href: programming-guide/statements-expressions-operators/equality-comparisons.md
+      - name: "How to define value equality for a type"
+        href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
+      - name: "How to test for reference equality (identity)"
+        href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: Types
     items:
     - name: Casting and Type Conversions

@@ -93,6 +93,8 @@
 
 ### PR 16 — Expressions: arithmetic, comparison, logical, and assignment operators
 
+[#55469](https://github.com/dotnet/docs/pull/55469) *in review*
+
 > ~6 files
 
 1. New `fundamentals/expressions/operators.md` — arithmetic (`+ - * / %`), unary (`+ - !`), increment/decrement (`++ --`), relational (`< > <= >=`), equality operators (`== !=`, survey; cross-link to `fundamentals/expressions/equality.md` for semantics), conditional-logical (`&& ||` with short-circuiting), the conditional operator (`?:`, §12.20), simple and compound assignment (`= += -= *= /= %=`)

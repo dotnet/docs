@@ -71,7 +71,7 @@
 
 ### PR 15 — Expressions: overview + operator precedence
 
-[#55355](https://github.com/dotnet/docs/pull/55355) - *in review*
+[#55355](https://github.com/dotnet/docs/pull/55355) - *merged*
 
 > ~5 files
 
@@ -93,7 +93,7 @@
 
 ### PR 16 — Expressions: arithmetic, comparison, logical, and assignment operators
 
-[#55469](https://github.com/dotnet/docs/pull/55469) *in review*
+[#55469](https://github.com/dotnet/docs/pull/55469) *merged*
 
 > ~6 files
 

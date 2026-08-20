@@ -1,6 +1,6 @@
 ---
 title: "Resolve errors from invalid expression contexts"
-description: "This article helps you diagnose and correct compiler errors and warnings from expressions that appear in contexts where they are not permitted"
+description: "This article helps you diagnose and correct C# compiler errors and warnings from expressions that appear in contexts where they are not permitted"
 f1_keywords:
   - "CS0175"
   - "CS0186"

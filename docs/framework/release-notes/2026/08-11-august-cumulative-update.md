@@ -7,7 +7,7 @@ ai-usage: ai-generated
 # .NET Framework August 2026 cumulative update
 
 _Released August 11, 2026_
-_Updated August 20, 2026 to include known issues_
+_Updated August 20, 2026, to include known issues._
 
 ## Summary of what's new in this release
 

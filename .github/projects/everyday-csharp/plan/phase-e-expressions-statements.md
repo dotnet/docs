@@ -123,6 +123,8 @@
 
 ### PR 17 — Deferred cleanup: slim `?:` in Selection statements (later pass)
 
+[#55613](https://github.com/dotnet/docs/pull/55613) *in draft status*
+
 > ~2 files · **DEFERRED — sequence after PR 16; not part of the initial reorder batch**
 
 1. Trim the "ternary conditional operator" coverage in the merged `fundamentals/statements/selection-statements.md` (shipped in PR 13) to a brief mention **plus a cross-reference** to the Expressions `operators.md` article, removing the duplicated teaching of `?:`

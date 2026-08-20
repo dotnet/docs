@@ -1,27 +1,27 @@
-using System.Text;
-
 namespace StatementsOverview;
 
 public static class Program
 {
-    public static async Task Main()
+    public static void Main()
     {
-        await ShowExpressionStatements();
+        ShowStatementRecipe();
         ShowBlocksAndScope();
     }
 
-    private static async Task ShowExpressionStatements()
+    private static void ShowStatementRecipe()
     {
-        // <ExpressionStatements>
-        int quantity = 0;
+        // <StatementRecipe>
+        int quantity = 5;
+        Console.WriteLine($"Quantity: {quantity}"); // => Quantity: 5
 
-        quantity = 5;                       // Assignment
-        Console.WriteLine(quantity);        // Method invocation // => 5
-        new StringBuilder();                // Object creation
-        quantity++;                         // Postfix increment
-        --quantity;                         // Prefix decrement
-        await Task.CompletedTask;           // Await expression
-        // </ExpressionStatements>
+        if (quantity < 10)
+        {
+            quantity = 10;
+            Console.WriteLine("Restocked"); // => Restocked
+        }
+
+        Console.WriteLine($"Quantity: {quantity}"); // => Quantity: 10
+        // </StatementRecipe>
     }
 
     private static void ShowBlocksAndScope()

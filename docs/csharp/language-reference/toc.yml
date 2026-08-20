@@ -732,6 +732,11 @@ items:
       CS1688, CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175,
       CS8820, CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098,
       CS9099, CS9100, CS9236
+  - name: Expression-form restrictions
+    href: ./compiler-messages/expression-form-restrictions.md
+    displayName: >
+      throw expressions, declaration expressions, invalid contexts,
+      CS8115, CS8185, CS8209, CS8310, CS8312
   - name: Local functions
     href: ./compiler-messages/local-function-errors.md
     displayName: >

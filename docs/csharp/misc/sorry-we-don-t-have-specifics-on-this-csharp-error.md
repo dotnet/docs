@@ -157,9 +157,7 @@ f1_keywords:
   - "CS8111"
   - "CS8113"
   # C# 7.0 diagnostics
-  - "CS8115"
   - "CS8180"
-  - "CS8185"
   - "CS8188"
   - "CS8189"
   - "CS8190"
@@ -168,15 +166,12 @@ f1_keywords:
   - "CS8202"
   - "CS8205"
   - "CS8206"
-  - "CS8209"
   # C# 7.1 diagnostics
   - "CS8300"
   - "CS8301"
   - "CS8305"
   - "CS8308"
   - "CS8309"
-  - "CS8310"
-  - "CS8312"
   # C# 7.2 diagnostics
   - "CS8323"
   - "CS8328"

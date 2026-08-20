@@ -155,6 +155,7 @@ A contextual keyword provides a specific meaning in the code, but it isn't a res
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  
+        [`safe`](safe.md)  
     :::column-end:::
     :::column:::
         [`scoped`](../statements/declarations.md#scoped-ref)  

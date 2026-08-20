@@ -39,4 +39,4 @@ If you need the previous format, you can use a custom string formatting mechanis
 
 ## See also
 
-- [Format a complex number](../../../../fundamentals/runtime-libraries/system-numerics-complex.md#format-a-complex-number)
+- [Format a complex number](xref:System.Numerics.Complex#format-a-complex-number)

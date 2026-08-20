@@ -8,7 +8,7 @@ ms.update-cycle: 3650-days
 
 # What's new in the SDK and tooling for .NET 9
 
-This article describes new features in the .NET SDK and tooling for .NET 9.
+This article describes new features in the .NET SDK and tooling for .NET 9. You can [download .NET 9 here](https://dotnet.microsoft.com/download/dotnet/9.0).
 
 ## Unit testing
 

@@ -88,8 +88,7 @@ The writer can also automatically generate embeddings for your chunks using <xre
 
 ```csharp
 OpenAIClient openAIClient = new(
-    new ApiKeyCredential(Environment.GetEnvironmentVariable("GITHUB_TOKEN")!),
-    new OpenAIClientOptions { Endpoint = new Uri("https://models.github.ai/inference") });
+    new ApiKeyCredential(Environment.GetEnvironmentVariable("OPENAI_API_KEY")!));
 
 IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator =
     openAIClient.GetEmbeddingClient("text-embedding-3-small").AsIEmbeddingGenerator();

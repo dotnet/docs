@@ -3,8 +3,6 @@ description: This template is for .NET product team members to report breaking c
 title: "[Breaking change]: "
 labels:
   - breaking-change
-  - Pri1
-  - doc-idea
 assignees:
  - gewarren
 body:
@@ -24,9 +22,6 @@ body:
         - .NET 8
         - .NET 9
         - .NET 10
-        - .NET 11 Preview 1
-        - .NET 11 Preview 2
-        - .NET 11 Preview 3
         - .NET 11 Preview 4
         - .NET 11 Preview 5
         - .NET 11 Preview 6
@@ -89,6 +84,7 @@ body:
         - Cryptography
         - Debugger
         - Deployment
+        - dotnetup
         - Extensions
         - Globalization
         - Interop

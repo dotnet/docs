@@ -1,7 +1,7 @@
 ---
 title: "Recommended XML documentation tags"
 description: This article provides the syntax and definitions for recommended tags on types, and their members for XML documentation.
-ms.date: 01/16/2026
+ms.date: 08/14/2026
 f1_keywords:
   - "<summary>"
   - "summary"
@@ -90,6 +90,10 @@ helpviewer_keywords:
   - "cref [C#]"
   - "cross-references [C#], tags"
   - "<seealso> C# XML tag"
+  - "safety"
+  - "<safety>"
+  - "safety C# XML tag"
+  - "<safety> C# XML tag"
 ---
 # Recommended XML tags for C# documentation comments
 
@@ -224,7 +228,7 @@ The `<paramref>` tag provides a way to indicate that a word in the code comments
 
 - cref = "`member`": A reference to an exception that's available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within quotation marks (").
 
-The `<exception>` tag lets you specify which exceptions can be thrown. Apply this tag to definitions for methods, properties, events, and indexers.
+The `<exception>` tag lets you specify which exceptions a member can throw. Apply this tag to definitions for methods, properties, events, and indexers.
 
 ### `<value>`
 
@@ -233,6 +237,16 @@ The `<exception>` tag lets you specify which exceptions can be thrown. Apply thi
 ```
 
 The `<value>` tag lets you describe the value that a property represents. When you add a property by using the code wizard in the Visual Studio .NET development environment, it adds a [`<summary>`](#summary) tag for the new property. You manually add a `<value>` tag to describe the value that the property represents.
+
+### `<safety>`
+
+```xml
+<safety>description</safety>
+```
+
+Use the `<safety>` tag to document the contract that a caller of a *caller-unsafe* member must satisfy under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview), a preview feature in C# 15 and .NET 11. In the completed design, marking a member `unsafe` pushes the obligation to audit safety onto the caller, and the `<safety>` block states the conditions the caller must guarantee. The current preview compiler doesn't yet enforce that obligation—see the caveat in [Unsafe code, pointer types, and function pointers](../unsafe-code.md#the-updated-memory-safety-model-preview)—so today, `<safety>` documents a contract you maintain by convention. You can also place a `<safety>` block on an `unsafe` field to record the invariant that the enclosing type maintains.
+
+The C# compiler doesn't recognize or process the `<safety>` tag. Like any custom tag, the compiler copies it verbatim to the output XML file. A memory safety analyzer might flag a caller-unsafe member that's missing a `<safety>` block, but the compiler itself doesn't enforce its presence or contents. For more information, see [Safety documentation](../unsafe-code.md#safety-documentation).
 
 ## Format documentation output
 
@@ -403,12 +417,12 @@ Recommendation:
 <include file='filename' path='tagpath[@name="id"]' />
 ```
 
-- `filename`: The name of the XML file containing the documentation. You can qualify the file name with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
-- `path`: The path of the tags in `filename` that leads to the XML comment to use. The path may include one or multiple attributes like `name`, but they are not required. The attributes may have values like `id`, but values are not required either. Enclose the path including possible attributes in single quotation marks (' ').
+- `filename`: The name of the XML file containing the documentation. Qualify the file name with a path relative to the source code file. Enclose `filename` in single quotation marks (' ').
+- `path`: The path of the tags in `filename` that leads to the XML comment to use. The path can include one or multiple attributes like `name`, but they're not required. The attributes can have values like `id`, but values aren't required either. Enclose the path, including possible attributes, in single quotation marks (' ').
 - `attribName`, `attribName1`: The names of optional attributes.
-- `attribValue`, `attribValue1`: The optional values of the attributes. If no value is specified, any value will be accepted when searching for the comment in `filename`. Enclose the attribute value in quotation marks (").
+- `attribValue`, `attribValue1`: The optional values of the attributes. If you don't specify a value, any value is accepted when searching for the comment in `filename`. Enclose the attribute value in quotation marks (").
 
-By using the `<include>` tag, you can refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
+By using the `<include>` tag, you can refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can check out the source code file and someone else can check out the documentation file. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
 
 For example, the following source code uses the `<include>` tag to include remarks. The file path is relative to the source.
 
@@ -487,7 +501,7 @@ The `href` attribute means a reference to a web page. You can use it to directly
 
 - `TResult`: The name of the type parameter. Enclose the name in quotation marks (").
 
-The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag is displayed in IntelliSense.
+Use the `<typeparam>` tag in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag appears in IntelliSense.
 
 ### `<typeparamref>`
 
@@ -497,11 +511,11 @@ The `<typeparam>` tag should be used in the comment for a generic type or method
 
 - `TKey`: The name of the type parameter. Enclose the name in quotation marks (").
 
-Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
+Use this tag to enable consumers of the documentation file to format the word in some distinct way, such as in italics.
 
 ### User-defined tags
 
-All the tags outlined in this article represent those tags recognized by the C# compiler. However, a user is free to define their own tags.
-Tools like Sandcastle bring support for extra tags like [`<event>`](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [`<note>`](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
+All the tags outlined in this article represent tags recognized by the C# compiler. However, you can define your own tags.
+Tools like [Sandcastle](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) bring support for extra tags like [`<event>`](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [`<note>`](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
 and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
-Custom or in-house documentation generation tools can also be used with the standard tags, and multiple output formats from HTML to PDF can be supported.
+You can also use custom or in-house documentation generation tools with the standard tags, and support multiple output formats from HTML to PDF.

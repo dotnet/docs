@@ -19,6 +19,8 @@ items:
         href: ../../core/tools/test-prerelease-sdk-locally.md
       - name: Telemetry
         href: ../../core/tools/telemetry.md
+      - name: dotnet-scaffold telemetry
+        href: ../../core/tools/dotnet-scaffold-telemetry.md
       - name: Signed-package verification
         href: ../../core/tools/nuget-signed-package-verification.md
       - name: Artifacts output layout
@@ -99,6 +101,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1239.md
               - name: NETSDK1240
                 href: ../../core/tools/sdk-errors/netsdk1240.md
+              - name: NETSDK1242
+                href: ../../core/tools/sdk-errors/netsdk1242.md
           - name: BuildCheck rules
             items:
               - name: Index of rules
@@ -148,8 +152,8 @@ items:
                 href: ../../core/tools/dotnet-new-update.md
               - name: .NET default templates
                 href: ../../core/tools/dotnet-new-sdk-templates.md
-              - name: Custom templates
-                href: ../../core/tools/custom-templates.md
+              - name: Author .NET templates
+                href: ../../core/tools/templates.md
           - name: dotnet nuget
             items:
               - name: dotnet nuget delete
@@ -572,14 +576,6 @@ items:
             items:
               - name: Get started
                 href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md
-          - name: Supplemental API remarks
-            items:
-              - name: The EventSource class
-                href: ../../fundamentals/runtime-libraries/system-diagnostics-tracing-eventsource.md
-              - name: The EventWrittenEventArgs class
-                href: ../../fundamentals/runtime-libraries/system-diagnostics-tracing-eventwritteneventargs.md
-              - name: The PerformanceCounterType enum
-                href: ../../fundamentals/runtime-libraries/system-diagnostics-performancecountertype.md
       - name: .NET CLI global tools
         items:
           - name: Overview
@@ -3765,6 +3761,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0041.md
                   - name: IDE0042
                     href: ../../fundamentals/code-analysis/style-rules/ide0042.md
+                  - name: IDE0043
+                    href: ../../fundamentals/code-analysis/style-rules/ide0043.md
                   - name: IDE0044
                     href: ../../fundamentals/code-analysis/style-rules/ide0044.md
                   - name: IDE0045
@@ -3915,8 +3913,16 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0370.md
                   - name: IDE0380
                     href: ../../fundamentals/code-analysis/style-rules/ide0380.md
+                  - name: IDE0390
+                    href: ../../fundamentals/code-analysis/style-rules/ide0390-ide0391.md
+                  - name: IDE0391
+                    href: ../../fundamentals/code-analysis/style-rules/ide0390-ide0391.md
+                  - name: IDE0410
+                    href: ../../fundamentals/code-analysis/style-rules/ide0410.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
+                  - name: IDE1007
+                    href: ../../fundamentals/code-analysis/style-rules/ide1007.md
                   - name: IDE2000
                     href: ../../fundamentals/code-analysis/style-rules/ide2000.md
                   - name: IDE2001
@@ -4097,8 +4103,12 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0061.md
           - name: SYSLIB0062
             href: ../../fundamentals/syslib-diagnostics/syslib0062.md
+          - name: SYSLIB0063
+            href: ../../fundamentals/syslib-diagnostics/syslib0063.md
           - name: SYSLIB0064
             href: ../../fundamentals/syslib-diagnostics/syslib0064.md
+          - name: SYSLIB0065
+            href: ../../fundamentals/syslib-diagnostics/syslib0065.md
       - name: Experimental features
         items:
           - name: Overview

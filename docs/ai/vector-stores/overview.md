@@ -55,7 +55,7 @@ Here's a minimal end-to-end example that creates a collection, upserts records, 
 ```csharp
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.VectorData;
-using Microsoft.SemanticKernel.Connectors.InMemory;
+using CommunityToolkit.VectorData.InMemory;
 
 // Configure an embedding generator to transform text to embeddings
 IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator = ...;
@@ -85,22 +85,19 @@ class Movie
     [VectorStoreData]
     public string Title { get; set; }
 
-    [VectorStoreVector(Dimensions: 1536)]
+    [VectorStoreVector(dimensions: 1536)]
     public string Description { get; set; }
 }
 ```
 
 ## Vector store providers
 
-The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate [provider packages](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/) provide implementations for specific vector databases. Choose the provider that matches your vector database, for example, [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch).
-
-> [!NOTE]
-> Despite the inclusion of "SemanticKernel" in the package names, these providers have nothing to do with Semantic Kernel and are usable anywhere in .NET, including Agent Framework.
+The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate provider packages provide implementations for specific vector databases. Choose the provider that matches your vector database, for example, [CommunityToolkit.VectorData.AzureAISearch](https://www.nuget.org/packages/CommunityToolkit.VectorData.AzureAISearch).
 
 All providers implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract classes, so you can switch between them without changing your application logic.
 
 > [!TIP]
-> Use the in-memory provider ([Microsoft.SemanticKernel.Connectors.InMemory](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory)) during initial development/prototyping - it doesn't require any external service or configuration, and you can swap it out for a production provider later. Avoid using the InMemory provider for testing, as there can be important differences between this provider and your production database. Consider using [testcontainers](https://dotnet.testcontainers.org/) to run tests against your production database system.
+> Use the in-memory provider ([CommunityToolkit.VectorData.InMemory](https://www.nuget.org/packages/CommunityToolkit.VectorData.InMemory)) during initial development/prototyping - it doesn't require any external service or configuration, and you can swap it out for a production provider later. Avoid using the InMemory provider for testing, as there can be important differences between this provider and your production database. Consider using [testcontainers](https://dotnet.testcontainers.org/) to run tests against your production database system.
 
 ## Related content
 

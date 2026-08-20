@@ -1,0 +1,35 @@
+---
+ms.topic: include
+ai-usage: ai-assisted
+---
+
+### SubsystemVersion defaults to 6.00 when you retarget Windows Forms applications to .NET Framework 4.5
+
+#### Details
+
+When you build Windows Forms apps after retargeting to .NET Framework 4.5, the default `SubsystemVersion` changes from `4.00` to `6.00`. Windows uses the subsystem version when it reports some window metrics. As a result, code that calculates window or form sizes from <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType> values, such as <xref:System.Windows.Forms.SystemInformation.FixedFrameBorderSize?displayProperty=nameWithType>, might produce different layout results than the same code produced on .NET Framework 4.
+
+#### Suggestion
+
+If you must preserve the .NET Framework 4 sizing behavior, set `SubsystemVersion` to `4.00` in your project file:
+
+```xml
+<PropertyGroup>
+  <SubsystemVersion>4.00</SubsystemVersion>
+</PropertyGroup>
+```
+
+You can also use the [SubsystemVersion compiler option for C#](/dotnet/csharp/language-reference/compiler-options/advanced#subsystemversion) or the [SubsystemVersion compiler option for Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion).
+
+Review your code that sizes or positions Windows Forms UI with <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType> values or other `GetSystemMetrics`-based values.
+
+| Name    | Value       |
+|:--------|:------------|
+| Scope   | Minor       |
+| Version | 4.5         |
+| Type    | Retargeting |
+
+#### Affected APIs
+
+- <xref:System.Windows.Forms.SystemInformation?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.SystemInformation.FixedFrameBorderSize?displayProperty=nameWithType>

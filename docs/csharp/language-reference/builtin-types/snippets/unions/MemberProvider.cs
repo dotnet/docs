@@ -1,6 +1,6 @@
 // <MemberProvider>
 [System.Runtime.CompilerServices.Union]
-public record class Outcome<T> : Outcome<T>.IUnionMembers
+public struct Outcome<T> : Outcome<T>.IUnionMembers
 {
     private readonly object? _value;
 
@@ -11,9 +11,35 @@ public record class Outcome<T> : Outcome<T>.IUnionMembers
         static Outcome<T> Create(T? value) => new(value);
         static Outcome<T> Create(Exception? value) => new(value);
         object? Value { get; }
+
+        // Optional but recommended: TryGetValue enables efficient pattern matching
+        bool TryGetValue(out T value);
+        bool TryGetValue(out Exception value);
     }
 
     object? IUnionMembers.Value => _value;
+
+    public bool TryGetValue(out T value)
+    {
+        if (_value is T t)
+        {
+            value = t;
+            return true;
+        }
+        value = default!;
+        return false;
+    }
+
+    public bool TryGetValue(out Exception value)
+    {
+        if (_value is Exception e)
+        {
+            value = e;
+            return true;
+        }
+        value = default!;
+        return false;
+    }
 }
 // </MemberProvider>
 

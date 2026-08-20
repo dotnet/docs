@@ -119,7 +119,7 @@ class Program
     {
         Console.WriteLine("Deleting from file");
 
-        var lines = File.ReadLines(file.FullName).Where(line => searchTerms.All(s => !line.Contains(s)));
+        var lines = File.ReadLines(file.FullName).Where(line => searchTerms.All(s => !line.Contains(s))).ToList();
         File.WriteAllLines(file.FullName, lines);
     }
     internal static void AddToFile(FileInfo file, string quote, string byline)

@@ -77,7 +77,7 @@ Beginning in C# 12, types, methods, and assemblies can be marked with the <xref:
 > [!WARNING]
 > Experimental features are subject to changes. The APIs can change, or they can be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental. You can learn more about how APIs are marked as experimental in our article on [preview APIs](../../../fundamentals/runtime-libraries/preview-apis.md#experimentalattribute).
 
-You can read more details about the `Experimental` attribute in the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
+You can read more details about the `Experimental` attribute in the [feature specification](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/experimental-attribute.md).
 
 The Windows Foundation Metadata libraries use the <xref:Windows.Foundation.Metadata.ExperimentalAttribute?displayProperty=nameWithType>, which predates C# 12.
 
@@ -94,6 +94,7 @@ The `AttributeUsage` attribute determines how a custom attribute class can be us
   - Module
   - Field
   - Event
+  - Constructor
   - Method
   - Parameter
   - Property
@@ -133,6 +134,8 @@ If <xref:System.AttributeUsageAttribute.Inherited> is `false`, then derived clas
 In this case, `NonInheritedAttribute` isn't applied to `DClass` via inheritance.
 
 You can also use these keywords to specify where an attribute should be applied. For example, you can use the `field:` specifier to add an attribute to the backing field of an [automatically implemented property](../../programming-guide/classes-and-structs/properties.md#automatically-implemented-properties). Or you can use the `field:`, `property:` or `param:` specifier to apply an attribute to any of the elements generated from a positional record. For an example, see [Positional syntax for property definition](../builtin-types/record.md#positional-syntax-for-property-and-field-definition).
+
+When you apply an attribute to a type with a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), the attribute is applied to the class. You can specify that it's applied to the constructor by choosing the `method` target, which matches the *Constructor* attribute target.
 
 ## `AsyncMethodBuilder` attribute
 
@@ -260,7 +263,7 @@ Overload resolution considers the two methods equally good for some argument typ
 
 :::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOrpaExample":::
 
-All overloads with a lower priority than the highest overload priority are removed from the set of applicable methods. Methods without this attribute have the overload priority set to the default of zero. Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [Overload resolution](~/_csharplang/proposals/csharp-13.0/overload-resolution-priority.md#overload-resolution-priority) impacts choosing the better method. Otherwise, unexpected errors can result.
+All overloads with a lower priority than the highest overload priority are removed from the set of applicable methods. Methods without this attribute have the overload priority set to the default of zero. Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [overload resolution priority](~/_csharpstandard/standard/attributes.md#23514-the-overloadresolutionpriority-attribute) impacts choosing the better method. Otherwise, unexpected errors can result.
 
 ## EnumeratorCancellation attribute
 

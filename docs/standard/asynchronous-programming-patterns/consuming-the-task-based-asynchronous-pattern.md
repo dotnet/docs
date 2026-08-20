@@ -1,7 +1,7 @@
 ---
 title: "Consuming the Task-based Asynchronous Pattern"
 description: Learn to consume the Task-based Asynchronous Pattern (TAP) when working with asynchronous operations.
-ms.date: "04/17/2026"
+ms.date: 08/06/2026
 helpviewer_keywords:
   - ".NET and TAP"
   - "asynchronous design patterns, .NET"
@@ -15,7 +15,7 @@ When you use the Task-based Asynchronous Pattern (TAP) to work with asynchronous
 
 ## Suspending Execution with Await
 
-You can use the [await](../../csharp/language-reference/operators/await.md) keyword in C# and the [Await Operator](../../visual-basic/language-reference/operators/await-operator.md) in Visual Basic to asynchronously await <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> objects. When you await a <xref:System.Threading.Tasks.Task>, the `await` expression is of type `void`. When you await a <xref:System.Threading.Tasks.Task`1>, the `await` expression is of type `TResult`. An `await` expression must occur inside the body of an asynchronous method. (These language features were introduced in .NET Framework 4.5.)
+You can use the [await](../../csharp/language-reference/operators/await.md) keyword in C# and the [Await Operator](../../visual-basic/language-reference/operators/await-operator.md) in Visual Basic to asynchronously await <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> objects. When you await a <xref:System.Threading.Tasks.Task>, the `await` expression is of type `void`. When you await a <xref:System.Threading.Tasks.Task`1>, the `await` expression is of type `TResult`. An `await` expression must occur inside the body of an asynchronous method.
 
  Under the covers, the await functionality installs a callback on the task by using a continuation. This callback resumes the asynchronous method at the point of suspension. When the asynchronous method is resumed, if the awaited operation completed successfully and was a <xref:System.Threading.Tasks.Task`1>, its `TResult` is returned. If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state, an <xref:System.OperationCanceledException> exception is thrown. If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, the exception that caused it to fault is thrown. A `Task` can fault as a result of multiple exceptions, but only one of these exceptions is propagated. However, the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property returns an <xref:System.AggregateException> exception that contains all the errors.
 
@@ -58,7 +58,7 @@ Use <xref:System.Threading.Tasks.Task.ConfigureAwait*> when the continuation doe
 
 ## Canceling an asynchronous operation
 
-Starting with .NET Framework 4, TAP methods that support cancellation provide at least one overload that accepts a cancellation token (<xref:System.Threading.CancellationToken> object).
+TAP methods that support cancellation provide at least one overload that accepts a cancellation token (<xref:System.Threading.CancellationToken> object).
 
  You create a cancellation token through a cancellation token source (<xref:System.Threading.CancellationTokenSource> object). The source's <xref:System.Threading.CancellationTokenSource.Token> property returns the cancellation token that signals when the source's <xref:System.Threading.CancellationTokenSource.Cancel*> method is called.
 

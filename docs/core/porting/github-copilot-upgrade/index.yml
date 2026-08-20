@@ -1,0 +1,71 @@
+### YamlMime:Landing
+
+title: Use GitHub Copilot upgrade to upgrade .NET apps
+summary: Learn about upgrading .NET apps with GitHub Copilot upgrade.
+
+metadata:
+  title: Use GitHub Copilot upgrade to upgrade .NET apps
+  description: Learn about upgrading .NET apps with GitHub Copilot upgrade.
+  ms.topic: landing-page
+  ms.date: 08/03/2026
+
+landingContent:
+
+  - title: Upgrade .NET apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Upgrade .NET apps
+            url: overview.md
+      - linkListType: get-started
+        links:
+          - text: Install
+            url: install.md
+      - linkListType: concept
+        links:
+          - text: Core concepts
+            url: concepts.md
+          - text: Working with the agent
+            url: working-with-agent.md
+          - text: Dashboard
+            url: dashboard.md
+          - text: Customization
+            url: customization.md
+      - linkListType: how-to-guide
+        links:
+          - text: How to upgrade a .NET app
+            url: how-to-upgrade-with-github-copilot.md
+          - text: How to apply custom upgrade instructions
+            url: how-to-custom-upgrade-instructions.md
+          - text: Troubleshooting
+            url: troubleshooting.md
+      - linkListType: learn
+        links:
+          - text: Best practices
+            url: best-practices.md
+          - text: Scenarios and skills reference
+            url: scenarios-and-skills.md
+          - text: FAQ
+            url: faq.yml
+
+  - title: Migrate .NET apps to Azure
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: GitHub Copilot modernization overview
+            url: ../../../azure/migration/appmod/overview.md
+
+  - title: Get help and community
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: File an issue for GitHub Copilot upgrade
+            url: https://github.com/microsoft/upgrade-agent-plugins
+          - text: Report a problem with GitHub Copilot upgrade in Visual Studio
+            url: /visualstudio/ide/report-a-problem
+      - linkListType: learn
+        links:
+          - text: .NET on Q&A
+            url: /answers/products/dotnet
+          - text: .NET tech community forums
+            url: https://techcommunity.microsoft.com/category/dotnet

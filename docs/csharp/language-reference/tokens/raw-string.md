@@ -77,3 +77,4 @@ The raw string literal's content must not contain a set of contiguous `"` charac
 - [C# special characters](./index.md)
 - [C# string interpolation](./interpolated.md)
 - [String literals (C# language specification)](~/_csharpstandard/standard/lexical-structure.md#6456-string-literals)
+- [Raw String literals (C# fundamentals)](../../fundamentals/strings/raw-string-literals.md)

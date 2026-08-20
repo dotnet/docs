@@ -192,6 +192,7 @@ This section describes the following environment variables:
 - [`DOTNET_SERVICING`](#dotnet_servicing)
 - [`DOTNET_NOLOGO`](#dotnet_nologo)
 - [`DOTNET_CLI_PERF_LOG`](#dotnet_cli_perf_log)
+- [`DOTNET_CLI_ENABLEAOT`](#dotnet_cli_enableaot)
 - [`DOTNET_GENERATE_ASPNET_CERTIFICATE`](#dotnet_generate_aspnet_certificate)
 - [`DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`](#dotnet_add_global_tools_to_path)
 - [`DOTNET_CLI_TELEMETRY_OPTOUT`](#dotnet_cli_telemetry_optout)
@@ -216,7 +217,6 @@ This section describes the following environment variables:
 - [`DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`](#dotnet_skip_workload_integrity_check)
 - [`DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`](#dotnet_tools_allow_manifest_in_root)
 - [`DOTNET_HOST_TRACE`](#dotnet_host_trace)
-- [`COREHOST_TRACE`](#corehost_trace)
 - [`SuppressNETCoreSdkPreviewMessage`](#suppressnetcoresdkpreviewmessage)
 - [Configure MSBuild in the .NET CLI](#configure-msbuild-in-the-net-cli)
 - [`DOTNET_NEW_PREFERRED_LANG`](#dotnet_new_preferred_lang)
@@ -323,6 +323,18 @@ Specifies whether .NET welcome and telemetry messages are displayed on the first
 ### `DOTNET_CLI_PERF_LOG`
 
 Specifies whether performance details about the current CLI session are logged. Enabled when set to `1`, `true`, or `yes`. This is disabled by default.
+
+### `DOTNET_CLI_ENABLEAOT`
+
+Specifies whether the .NET SDK uses its native (ahead-of-time compiled) CLI command-handling fast path. When enabled, common commands (such as command-line parsing, `dotnet --version`, and `dotnet --info`) are handled by a native entry point for faster startup, transparently falling back to the managed CLI for anything the fast path doesn't handle.
+
+Set this variable to control the fast path explicitly:
+
+- To enable it, set the variable to `true`, `1`, `yes`, or `on`.
+- To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
+
+> [!NOTE]
+> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 
@@ -434,9 +446,10 @@ Specifies whether .NET SDK local tools search for tool manifest files in the roo
 
 ### `DOTNET_HOST_TRACE`
 
-**This variable applies to .NET 10 and later versions.** For older versions, replace the `DOTNET_HOST_` prefix with [`COREHOST_`](#corehost_trace).
-
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
+
+> [!NOTE]
+> Prior to .NET 10, the `COREHOST_` prefix was used instead of `DOTNET_HOST_` (for example, `COREHOST_TRACE`). The functionality and values remain identical.
 
 - `DOTNET_HOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
 - `DOTNET_HOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `DOTNET_HOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
@@ -448,17 +461,6 @@ Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, 
   - `1` - only error messages are written
 
 The typical way to get detailed trace information about application startup is to set `DOTNET_HOST_TRACE=1` and `DOTNET_HOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
-
-### `COREHOST_TRACE`
-
-Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
-
-> [!NOTE]
-> Starting with .NET 10, use the [`DOTNET_HOST_TRACE`](#dotnet_host_trace) environment variables instead. The `COREHOST_TRACE` variables work the same as `DOTNET_HOST_TRACE` variables.
-
-- `COREHOST_TRACE` - see [`DOTNET_HOST_TRACE`](#dotnet_host_trace).
-- `COREHOST_TRACEFILE` - see [`DOTNET_HOST_TRACEFILE`](#dotnet_host_trace).
-- `COREHOST_TRACE_VERBOSITY` - see [`DOTNET_HOST_TRACE_VERBOSITY`](#dotnet_host_trace).
 
 ### `SuppressNETCoreSdkPreviewMessage`
 

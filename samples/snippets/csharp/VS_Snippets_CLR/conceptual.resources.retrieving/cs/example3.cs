@@ -19,7 +19,7 @@ public class Example
          Console.WriteLine($"\n{greeting}!");
          Console.Write(rm.GetString("Prompt", CultureInfo.CurrentCulture));
          string name = Console.ReadLine();
-         if (! String.IsNullOrEmpty(name))
+         if (!String.IsNullOrEmpty(name))
             Console.WriteLine("{0}, {1}!", greeting, name);
       }
       Console.WriteLine();

@@ -212,6 +212,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
 - [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- Lambda expressions, anonymous methods, and local functions can declare parameters that shadow local variables and parameters from an enclosing scope.
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
 - [Asynchronous streams](../language-reference/statements/iteration-statements.md#await-foreach)
@@ -362,7 +363,7 @@ C# version 4.0, released with Visual Studio 2010, introduced some interesting ne
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
-- [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
+- [Embedded interop types](../../standard/native-interop/type-equivalence-and-embedded-interop-types.md)
 
 Embedded interop types eased the deployment pain of creating COM interop assemblies for your application. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 

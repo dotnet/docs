@@ -23,7 +23,7 @@ C# 12 shipped with the .NET 8 SDK. For more information, see [What's new in C# 1
 
 ## Aspire
 
-Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 8. For more information, see [Aspire](/dotnet/aspire).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 8. For more information, see [Aspire](https://aspire.dev/).
 
 ## ASP.NET Core
 

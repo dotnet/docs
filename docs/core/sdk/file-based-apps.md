@@ -420,9 +420,9 @@ Caching improves build performance but can cause confusion when:
 
 - Clear cache artifacts for file-based apps by using the following command:
 
-```dotnetcli
-dotnet clean file-based-apps
-```
+  ```dotnetcli
+  dotnet clean file-based-apps
+  ```
 
 - Force a clean build to bypass cache:
 

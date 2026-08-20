@@ -54,7 +54,6 @@ to clarify expected behavior in our community. For more information, see the [.N
 ## :octocat: GitHub Action workflows
 
 - [![Live branch protection](https://github.com/dotnet/docs/actions/workflows/live-protection.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/live-protection.yml): Adds a comment to PRs that were not automated, but rather manually created that target the `live` branch.
-- [![Close stale issues](https://github.com/dotnet/docs/actions/workflows/stale.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/stale.yml):  Closes stale issues that have not been updated in 180 days.
 - [![`dependabot` auto-approve and auto-merge](https://github.com/dotnet/docs/actions/workflows/dependabot-approve-and-automerge.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/dependabot-approve-and-automerge.yml):  Automatically approves and auto-merges PRs originating from the `dependabbot[bot]`.
 - [![Generate what's new article](https://github.com/dotnet/docs/actions/workflows/whats-new.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/whats-new.yml):  Creates a PR to generate the "What's new" article on the first of every month.
 - [![Markdownlint](https://github.com/dotnet/docs/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/markdownlint.yml):  The current status for the entire repositories Markdown linter status.

@@ -57,7 +57,7 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
 
-As the preceding example shows, for reference-type members their reference values are compared, not the referenced instances.
+As the preceding example shows, the equality of reference-type members is compared using their specific equality implementations.
 
 ### String equality
 
@@ -65,7 +65,7 @@ Two [string](../builtin-types/reference-types.md#the-string-type) operands are e
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="StringEquality":::
 
-String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../how-to/compare-strings.md).
+String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../fundamentals/strings/common-tasks/compare.md).
 
 ### Delegate equality
 
@@ -106,7 +106,7 @@ public virtual bool Equals(T? other);
 
 For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1215-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about equality of record types, see the [Equality members](~/_csharpstandard/standard/classes.md#15162-equality-members) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information about equality of record types, see the [Equality members](~/_csharpstandard/standard/classes.md#151643-equality-members) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

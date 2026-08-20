@@ -99,10 +99,34 @@ items:
       href: fundamentals/strings/nameof.md
     - name: Common tasks
       items:
+      - name: Concatenate strings
+        href: fundamentals/strings/common-tasks/concatenate.md
+      - name: Modify string contents
+        href: fundamentals/strings/common-tasks/modify.md
+      - name: Compare strings
+        href: fundamentals/strings/common-tasks/compare.md
       - name: Search strings
         href: fundamentals/strings/common-tasks/search.md
       - name: Split strings into substrings
         href: fundamentals/strings/common-tasks/split.md
+    - name: Tutorials
+      items:
+      - name: Use string interpolation
+        href: fundamentals/tutorials/string-interpolation.md
+  - name: Expressions and statements
+    items:
+    - name: Expressions overview
+      href: fundamentals/expressions/index.md
+    - name: Equality
+      href: fundamentals/expressions/equality.md
+    - name: Selection statements
+      href: fundamentals/statements/selection.md
+    - name: Iteration statements
+      href: fundamentals/statements/iteration.md
+    - name: Collections
+      href: fundamentals/statements/collections.md
+    - name: LINQ
+      href: fundamentals/statements/linq.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -223,6 +247,10 @@ items:
     href: whats-new/version-update-considerations.md
   - name: Tutorials
     items:
+    - name: Explore union types
+      href: whats-new/tutorials/unions.md
+    - name: Explore closed hierarchies
+      href: whats-new/tutorials/closed-hierarchies.md
     - name: Explore extension members
       href: whats-new/tutorials/extension-members.md
     - name: Explore compound assignment
@@ -237,8 +265,6 @@ items:
     href: tutorials/ranges-indexes.md
   - name: Explore patterns in objects
     href: tutorials/patterns-objects.md
-  - name: String interpolation
-    href: tutorials/string-interpolation.md
   - name: Console Application
     href: tutorials/console-teleprompter.md
   - name: REST Client
@@ -350,12 +376,6 @@ items:
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Concatenate strings
-    href: how-to/concatenate-multiple-strings.md
-  - name: Modify string contents
-    href: how-to/modify-string-contents.md
-  - name: Compare strings
-    href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
@@ -412,10 +432,6 @@ items:
       href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
     - name: DebugView Syntax
       href: advanced-topics/expression-trees/debugview-syntax.md
-    - name: Supplemental API - Expression class add method
-      href: ../fundamentals/runtime-libraries/system-linq-expressions-expression-add.md
-    - name: Supplemental API - BinaryExpression class
-      href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
   - name: Native interoperability
     items:
     - name: Overview

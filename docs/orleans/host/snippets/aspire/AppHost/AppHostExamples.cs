@@ -5,7 +5,7 @@ namespace Orleans.Docs.Snippets.Aspire;
 
 #pragma warning disable CS0219 // Variable is assigned but its value is never used
 
-// This file contains examples for Orleans .NET Aspire integration documentation.
+// This file contains examples for Orleans Aspire integration documentation.
 // Each example is wrapped in a region marker and a method to allow compilation.
 
 public static class AppHostExamples

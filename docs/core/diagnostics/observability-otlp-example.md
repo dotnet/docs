@@ -1,13 +1,15 @@
 ---
-title: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard"
-description: An introduction to observing .NET apps with OTLP and the standalone Aspire Dashboard
+title: "Use OpenTelemetry with OTLP and the Aspire Dashboard"
+description: Learn how to instrument a .NET app with OpenTelemetry and send logs, metrics, and traces to the Aspire Dashboard using OTLP.
 ms.date: 08/20/2026
 ms.topic: how-to
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
 ---
 
-# Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
+# Use OpenTelemetry with OTLP and the Aspire Dashboard
+
+This article shows you how to instrument a .NET web API with OpenTelemetry and send its logs, metrics, and traces to the Aspire Dashboard using OTLP. You add the OpenTelemetry packages, configure custom metrics and traces, and view the results in the dashboard.
 
 The Aspire Dashboard is a standard part of Aspire, but it's also available as a [standalone Docker container](https://aspire.dev/dashboard/standalone/) that provides an OTLP endpoint for sending telemetry. The dashboard visualizes logs, metrics, and traces. Using the dashboard this way has no dependency on Aspire, and it visualizes telemetry from any app that sends telemetry via OTLP. It works equally well for apps written in Java, GoLang, or Python, provided they can send their telemetry to an OTLP endpoint.
 

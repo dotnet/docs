@@ -3,7 +3,8 @@ title: MSTest Usage rules (code analysis)
 description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
-ms.date: 10/01/2025
+ms.date: 08/06/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest usage rules
@@ -39,7 +40,7 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0038](mstest0038.md) | Avoid Assert.AreSame with value types. | Info | Yes |
 | [MSTEST0039](mstest0039.md) | Use newer Assert.Throws methods. | Info | Yes |
 | [MSTEST0040](mstest0040.md) | Avoid using asserts in async void context. | Warning | No |
-| [MSTEST0041](mstest0041.md) | Use condition-based attributes with test class. | Warning | No |
+| [MSTEST0041](mstest0041.md) | Use condition-based attributes with test class. | Warning | Yes |
 | [MSTEST0042](mstest0042.md) | Duplicate DataRow. | Warning | No |
 | [MSTEST0043](mstest0043.md) | Use retry attribute on test method. | Warning → Error* | Yes |
 | [MSTEST0046](mstest0046.md) | Use Assert instead of StringAssert. | Info | Yes |
@@ -59,6 +60,23 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0061](mstest0061.md) | Use OSCondition attribute instead of runtime check. | Info | Yes |
 | [MSTEST0062](mstest0062.md) | Avoid out/ref test method parameters. | Warning | Yes |
 | [MSTEST0063](mstest0063.md) | Test class should have valid constructor. | Warning | No |
+| [MSTEST0064](mstest0064.md) | Prefer async assertion methods. | Info | No |
+| [MSTEST0065](mstest0065.md) | Avoid `Assert.AreEqual` on collection types. | Warning | No |
+| [MSTEST0067](mstest0067.md) | Avoid synchronously blocking calls in test code. | Info (disabled by default) | No |
+| [MSTEST0068](mstest0068.md) | Use `Assert` instead of `CollectionAssert`. | Info | Yes |
+| [MSTEST0069](mstest0069.md) | Inherited `[TestClass]` is ignored by the MSTest source generator. | Warning | No |
+| [MSTEST0070](mstest0070.md) | `[MemberCondition]` arguments should be valid. | Warning | No |
+| [MSTEST0071](mstest0071.md) | Test method should not specify a display name equal to its name. | Info | Yes |
+| [MSTEST0072](mstest0072.md) | `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation. | Warning | No |
+| [MSTEST0073](mstest0073.md) | Prefer a constant for the `[ResourceLock]` resource key. | Info | No |
+| [MSTEST0074](mstest0074.md) | Test mutating process-global state should declare a resource lock. | Info | Yes |
+| [MSTEST0075](mstest0075.md) | Avoid changing the current directory in a parallelized test. | Info | Yes |
+| [MSTEST0076](mstest0076.md) | Avoid mutating process-wide culture in a parallelized test. | Info | No |
+| [MSTEST0077](mstest0077.md) | Avoid hardcoded or shared filesystem paths in a parallelized test. | Info | No |
+| [MSTEST0078](mstest0078.md) | `[DependsOn]` arguments should be valid. | Warning | No |
+| [MSTEST0079](mstest0079.md) | Use ArchitectureCondition attribute instead of runtime checks. | Info | Yes |
+| [MSTEST0080](mstest0080.md) | Use CICondition attribute instead of environment checks. | Info | Yes |
+| [MSTEST0081](mstest0081.md) | `[TestFilterProvider]` should reference a valid test filter type. | Warning | No |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 
@@ -72,6 +90,7 @@ Ensure your test classes, methods, and fixtures follow MSTest requirements:
 - **[MSTEST0003](mstest0003.md)**: Test method layout requirements (⚠️ escalated to Error).
 - **[MSTEST0030](mstest0030.md)**: Methods with [TestMethod] must be in a [TestClass].
 - **[MSTEST0063](mstest0063.md)**: Test class constructor validation.
+- **[MSTEST0069](mstest0069.md)**: Apply [TestClass] directly so source-generated discovery finds the class.
 
 ### Lifecycle methods
 
@@ -85,6 +104,7 @@ Validate initialization and cleanup methods:
 - **[MSTEST0013](mstest0013.md)**: AssemblyCleanup validation.
 - **[MSTEST0034](mstest0034.md)**: Set ClassCleanupBehavior.EndOfClass.
 - **[MSTEST0050](mstest0050.md)**: Global test fixture validation.
+- **[MSTEST0072](mstest0072.md)**: Don't use shared assembly fixture providers with ahead-of-time compilation.
 
 ### Data-driven testing
 
@@ -112,6 +132,9 @@ Rules for correct and effective assertion usage:
 - **[MSTEST0051](mstest0051.md)**: Assert.Throws should test single statement.
 - **[MSTEST0053](mstest0053.md)**: Use string interpolation instead of format parameters.
 - **[MSTEST0058](mstest0058.md)**: Don't put assertions in catch blocks.
+- **[MSTEST0064](mstest0064.md)**: Prefer async assertion methods over blocking on async code.
+- **[MSTEST0065](mstest0065.md)**: Avoid `Assert.AreEqual` on collection types.
+- **[MSTEST0068](mstest0068.md)**: Prefer `Assert` over `CollectionAssert`.
 
 ### TestContext usage
 
@@ -128,6 +151,17 @@ Proper usage of the TestContext object:
 Rules for asynchronous test code:
 
 - **[MSTEST0040](mstest0040.md)**: Avoid asserts in async void methods.
+- **[MSTEST0067](mstest0067.md)**: Avoid `Thread.Sleep`, `Task.Wait`, and other synchronously blocking calls in test code (opt-in).
+
+### Parallel test safety
+
+Rules for tests that run in parallel:
+
+- **[MSTEST0073](mstest0073.md)**: Use shared constants for resource lock keys.
+- **[MSTEST0074](mstest0074.md)**: Lock mutations to process-global state.
+- **[MSTEST0075](mstest0075.md)**: Lock current-directory changes.
+- **[MSTEST0076](mstest0076.md)**: Avoid process-wide culture mutations.
+- **[MSTEST0077](mstest0077.md)**: Avoid shared filesystem paths.
 
 ### Test configuration
 
@@ -141,6 +175,12 @@ Rules for asynchronous test code:
 - **[MSTEST0059](mstest0059.md)**: Don't use both Parallelize and DoNotParallelize.
 - **[MSTEST0060](mstest0060.md)**: Avoid duplicate TestMethodAttribute.
 - **[MSTEST0061](mstest0061.md)**: Use OSCondition attribute for platform checks.
+- **[MSTEST0070](mstest0070.md)**: `[MemberCondition]` arguments must reference valid members.
+- **[MSTEST0071](mstest0071.md)**: Don't set a display name equal to the test method name.
+- **[MSTEST0078](mstest0078.md)**: Validate `[DependsOn]` targets and dependency graphs.
+- **[MSTEST0079](mstest0079.md)**: Use `ArchitectureCondition` instead of runtime architecture checks.
+- **[MSTEST0080](mstest0080.md)**: Use `CICondition` instead of environment checks.
+- **[MSTEST0081](mstest0081.md)**: Validate test filter provider registrations.
 
 ## Related documentation
 

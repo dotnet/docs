@@ -63,7 +63,7 @@ If you want an enumeration type to represent a combination of choices, define en
 
 :::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetFlags":::
 
-For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](../../../fundamentals/runtime-libraries/system-enum.md#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
+For more information and examples, see <xref:System.FlagsAttribute?displayProperty=nameWithType> and [Non-exclusive members and the Flags attribute](xref:System.Enum#non-exclusive-members-and-the-flags-attribute).
 
 ## The System.Enum type and enum constraint
 

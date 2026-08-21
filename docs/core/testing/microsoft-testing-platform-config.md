@@ -3,7 +3,8 @@ title: Microsoft.Testing.Platform (MTP) config options
 description: Learn how to configure MTP using testconfig.json configuration settings and environment variables.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 05/13/2026
+ms.date: 06/16/2026
+ai-usage: ai-assisted
 ---
 
 # Microsoft.Testing.Platform (MTP) configuration settings
@@ -77,9 +78,27 @@ Example:
 }
 ```
 
-### Extension options are CLI-only
+### Environment variables in testconfig.json
 
-Extension features such as [crash dump](microsoft-testing-platform-crash-hang-dumps.md), [hang dump](microsoft-testing-platform-crash-hang-dumps.md), [retry](microsoft-testing-platform-retry.md), [TRX reports](microsoft-testing-platform-test-reports.md), and [code coverage](microsoft-testing-platform-code-coverage.md) are **not** configurable via *testconfig.json*. These features are configured exclusively through command-line arguments.
+> [!NOTE]
+> Available in MTP starting with version 2.3.0.
+
+The `environmentVariables` section sets environment variables for the test process before it starts. Use string values for each variable.
+
+```json
+{
+  "environmentVariables": {
+    "DOTNET_ENVIRONMENT": "Development",
+    "FEATURE_FLAG": "true"
+  }
+}
+```
+
+### CLI options in testconfig.json
+
+Before MTP 2.3.0, extension features such as [crash dump](microsoft-testing-platform-crash-hang-dumps.md), [hang dump](microsoft-testing-platform-crash-hang-dumps.md), [retry](microsoft-testing-platform-retry.md), [TRX reports](microsoft-testing-platform-test-reports.md), and [code coverage](microsoft-testing-platform-code-coverage.md) aren't configurable via *testconfig.json*. These features are configured exclusively through command-line arguments.
+
+Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json* through `IConfiguration`. This support includes extension options, so you can use JSON entries for options that you don't want to pass on the command line each run. Command-line arguments still take precedence.
 
 For a complete reference of command-line options, see [MTP CLI options reference](microsoft-testing-platform-cli-options.md).
 
@@ -127,9 +146,9 @@ If you're migrating from a *.runsettings* file, the following table maps common 
 | `RunConfiguration/MaxCpuCount` | No equivalent | Process-level parallelism is controlled by `dotnet test --max-parallel-test-modules` or MSBuild `/m` option. |
 | `MSTest/*` | `mstest.*` | See [Configure MSTest — testconfig.json](unit-testing-mstest-configure.md#testconfigjson). |
 | `xUnit/*` | `xUnit.*` | See [xUnit.net testconfig.json](https://xunit.net/docs/config-testconfig-json). |
-| `LoggerRunSettings/Loggers` | CLI only | Use `--report-trx` or similar CLI options. |
-| `DataCollectionRunSettings` (blame) | CLI only | Use `--crashdump` and `--hangdump` CLI options. See [Crash and hang dumps](microsoft-testing-platform-crash-hang-dumps.md). |
-| `DataCollectionRunSettings` (coverage) | CLI only | Use `--coverage` CLI option. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
+| `LoggerRunSettings/Loggers` | CLI options | Use `--report-trx` or similar CLI options. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. |
+| `DataCollectionRunSettings` (blame) | CLI options | Use `--crashdump` and `--hangdump` CLI options. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Crash and hang dumps](microsoft-testing-platform-crash-hang-dumps.md). |
+| `DataCollectionRunSettings` (coverage) | CLI options | Use `--coverage` CLI option. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
 | `TestRunParameters` | `--test-parameter` CLI | Use `--test-parameter key=value` on the command line. |
 
 ## Environment variables
@@ -163,17 +182,52 @@ Defines the verbosity level when diagnostics are enabled. The available values a
 
 The output directory of the diagnostic logging. If not specified, the file is generated in the default *TestResults* directory.
 
-### `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable
+### `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` environment variable
 
-The prefix for the log file name. Defaults to `"log_"`.
+The prefix for the log file name. Defaults to `"log_"`. Matches the `--diagnostic-file-prefix` command-line option.
 
-### `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` environment variable
+> [!NOTE]
+> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable is still honored for backward compatibility but is deprecated and might be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` takes precedence.
 
-Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
+### `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` environment variable
+
+Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. Matches the `--diagnostic-synchronous-write` command-line option.
+
+> [!NOTE]
+> This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` environment variable is still honored for backward compatibility but is deprecated and might be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` takes precedence.
 
 ### `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable
 
 A semicolon-separated list of exit codes to ignore. When an exit code is ignored, the process returns `0` instead. For example, `TESTINGPLATFORM_EXITCODE_IGNORE=2;8` ignores test failures and no-tests-ran scenarios.
+
+### `TESTINGPLATFORM_NOBANNER` environment variable
+
+When set to `1` or `true`, suppresses the startup banner, the copyright message, and the telemetry banner. Equivalent to the `--no-banner` command-line option. The `DOTNET_NOLOGO` environment variable has the same effect.
+
+### `NO_COLOR` environment variable
+
+When set to any non-empty value, suppresses all ANSI color output. MTP honors the [`NO_COLOR`](https://no-color.org/) convention.
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0.
+
+### `DOTNET_NOLOGO` environment variable
+
+When set to `1` or `true`, suppresses the startup banner, the copyright message, and the telemetry banner. This is the standard .NET CLI environment variable and is honored by MTP. See also `TESTINGPLATFORM_NOBANNER`.
+
+### `TESTINGPLATFORM_WAIT_ATTACH_DEBUGGER` environment variable
+
+When set to `1`, the test process pauses at startup and waits for a debugger to attach before proceeding. Equivalent to the `--debug` command-line option. Not supported on browser platforms.
+
+> [!NOTE]
+> This environment variable is available in MTP starting with version 1.6.0.
+
+### `TESTINGPLATFORM_LAUNCH_ATTACH_DEBUGGER` environment variable
+
+When set to `1`, the test process calls `Debugger.Launch()` at startup, which prompts the system to launch a just-in-time debugger and attach it to the process. Use this variable to debug startup-time issues (for example, server-mode handshake) that occur before you can manually attach. On non-Windows platforms, the behavior depends on the configured JIT debugger.
+
+> [!NOTE]
+> This environment variable is available in MTP starting with version 1.6.0.
 
 > [!NOTE]
 > Diagnostic-related environment variables take precedence over their corresponding `--diagnostic-*` command-line arguments.

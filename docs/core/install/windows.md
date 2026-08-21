@@ -4,9 +4,8 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 04/23/2026
+ms.date: 06/01/2026
 no-loc: ["Program Files", "dotnet"]
-ms.custom: linux-related-content
 ai-usage: ai-assisted
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
@@ -393,6 +392,68 @@ If you install the SDK, you don't need to install the runtimes.
     > The SDK is installed by omitting the `-Runtime` switch.
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
+## Manual install
+
+As an alternative to the installers and package managers, you can download and manually install the SDK and runtime. Manual installation is commonly used as part of continuous integration testing or on systems where you don't have administrative privileges. For most developers and users, it's better to use one of the installer methods.
+
+Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
+
+- ✔️ [.NET 10 downloads](https://dotnet.microsoft.com/download/dotnet/10.0)
+- ✔️ [.NET 9 downloads](https://dotnet.microsoft.com/download/dotnet/9.0)
+- ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
+
+After you download the binary release, follow these steps to extract it and configure the environment so the .NET CLI commands are available in the terminal:
+
+01. Choose the **Binaries** download (a _.zip_ file) for your CPU architecture.
+01. Extract the downloaded file.
+01. Set the `DOTNET_ROOT` environment variable to the extracted folder's location.
+01. Ensure `DOTNET_ROOT` is in `PATH`.
+
+For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
+
+Different versions of .NET can be extracted to the same folder, where they coexist side-by-side.
+
+### Example
+
+The following commands use PowerShell to extract the .NET binary release to a `dotnet-install` folder in the current working directory and configure the environment variables for the current session. The `$DOTNET_FILE` variable is the file name of the .NET binary release you downloaded.
+
+> [!IMPORTANT]
+> If you run these commands, remember to change the `$DOTNET_FILE` value to the name of the .NET binary you downloaded.
+
+```powershell
+$DOTNET_FILE = "dotnet-sdk-9.0.306-win-x64.zip"
+$env:DOTNET_ROOT = "$pwd\dotnet-install"
+
+New-Item -ItemType Directory -Force -Path $env:DOTNET_ROOT | Out-Null
+Expand-Archive -Path $DOTNET_FILE -DestinationPath $env:DOTNET_ROOT -Force
+
+$env:PATH = "$env:DOTNET_ROOT;$env:DOTNET_ROOT\tools;$env:USERPROFILE\.dotnet\tools;$env:PATH"
+```
+
+You can install more than one version of .NET in the same folder.
+
+To make these settings persist across terminal sessions, set them as user or system environment variables. For more information, see [Set environment variables system-wide](#set-environment-variables-system-wide).
+
+To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+
+### Set environment variables system-wide
+
+The variables set in the previous example only apply to the current PowerShell session. To make them available in every terminal session, store them as user or system environment variables.
+
+To set the variables for your user account, run the following commands in PowerShell. Replace the path with the folder where you extracted .NET:
+
+```powershell
+[Environment]::SetEnvironmentVariable("DOTNET_ROOT", "C:\dotnet", "User")
+
+$newPath = "C:\dotnet;C:\dotnet\tools;$env:USERPROFILE\.dotnet\tools;" + [Environment]::GetEnvironmentVariable("PATH", "User")
+[Environment]::SetEnvironmentVariable("PATH", $newPath, "User")
+```
+
+To set the variables system-wide for all users, replace `"User"` with `"Machine"` in the previous commands and run PowerShell as an administrator.
+
+Close and reopen your terminal for the changes to take effect.
 
 ## Validation
 

@@ -97,9 +97,9 @@ siloBuilder.AddAzureBlobGrainStorage(
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-## .NET Aspire integration for grain persistence
+## Aspire integration for grain persistence
 
-[.NET Aspire](../../host/aspire-integration.md) simplifies Azure Storage grain persistence configuration by managing resource provisioning and connection automatically.
+[Aspire](../../host/aspire-integration.md) simplifies Azure Storage grain persistence configuration by managing resource provisioning and connection automatically.
 
 ### Azure Blob Storage with Aspire
 
@@ -173,7 +173,7 @@ builder.Build().Run();
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedAzureBlobServiceClient` or `AddKeyedAzureTableServiceClient`) to register the storage client in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the storage client and will throw a dependency resolution error at runtime.
 
-For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../../host/aspire-integration.md).
+For comprehensive documentation on Orleans and Aspire integration, see [Orleans and Aspire integration](../../host/aspire-integration.md).
 
 :::zone-end
 

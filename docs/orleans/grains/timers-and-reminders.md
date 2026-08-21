@@ -219,11 +219,11 @@ The <xref:Orleans.Reminders.Cosmos.CosmosReminderTableOptions> class provides th
 > [!IMPORTANT]
 > If you have a heterogenous cluster, where the silos handle different grain types (implement different interfaces), every silo must add the configuration for Reminders, even if the silo itself doesn't handle any reminders.
 
-### .NET Aspire integration for reminders
+### Aspire integration for reminders
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-When using [.NET Aspire](../host/aspire-integration.md), you can configure Orleans reminders declaratively in your AppHost project. Aspire automatically injects the necessary configuration into your silo projects via environment variables.
+When using [Aspire](../host/aspire-integration.md), you can configure Orleans reminders declaratively in your AppHost project. Aspire automatically injects the necessary configuration into your silo projects via environment variables.
 
 #### Redis reminders with Aspire
 
@@ -266,7 +266,7 @@ For local development, you can use in-memory reminders that don't require extern
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient` or `AddKeyedAzureTableClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
 
-For more information about Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
+For more information about Orleans and Aspire integration, see [Orleans and Aspire integration](../host/aspire-integration.md).
 
 :::zone-end
 

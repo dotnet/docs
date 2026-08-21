@@ -34,7 +34,7 @@ Using `--vulnerable` also does an implicit restore to find NuGetAudit warnings.
 However, if your project uses `WarningsAsErrors` or `TreatWarningsAsErrors`, NuGet's restore warnings can cause restore to fail, preventing the update from completing.
 
 We recommend taking advantage of MSBuild conditions and environment variables as a workaround until [this feature request](https://github.com/NuGet/Home/issues/14311) is implemented.
-For example, set `<TreatWarningsAsErrors Condition=" '$(CustomCondition)' == ''>true</TreatWarningsAsErrors>` in your project, and then on most Linux and Mac shells you can run `CustomCondition=true dotnet package update`.
+For example, set `<TreatWarningsAsErrors Condition="'$(CustomCondition)' == ''">true</TreatWarningsAsErrors>` in your project, and then on most Linux and Mac shells you can run `CustomCondition=true dotnet package update`.
 On Windows Command Prompt and PowerShell, you will need to set the environment variable, run dotnet package update, then unset the environment variable as three separate commands.
 
 ## Arguments

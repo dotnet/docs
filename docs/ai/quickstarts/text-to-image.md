@@ -119,7 +119,7 @@ The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azur
 
    :::code language="csharp" source="snippets/text-to-image/hosting/Program.cs" id="SnippetSetup":::
 
-   The <xref:Microsoft.Extensions.Hosting.AspireAzureOpenAIExtensions.AddAzureOpenAIClient(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String,System.Action{Aspire.Azure.AI.OpenAI.AzureOpenAISettings},System.Action{Azure.Core.Extensions.IAzureClientBuilder{Azure.AI.OpenAI.AzureOpenAIClient,Azure.AI.OpenAI.AzureOpenAIClientOptions}})> method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
+   The [AddAzureOpenAIClient](https://aspire.dev/reference/api/csharp/aspire.azure.ai.openai/aspireazureopenaiextensions/methods/#addazureopenaiclient) method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
 
    ```json
    {
@@ -156,7 +156,7 @@ This hosting approach provides several benefits:
 - **Dependency injection**: The image generator is available throughout your application via DI.
 - **Lifecycle management**: Services are properly initialized and disposed of by the hosting infrastructure.
 - **Testability**: Mock implementations can be easily substituted for testing.
-- **Integration with .NET Aspire**: When using .NET Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
+- **Integration with Aspire**: When using Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
 
 ## Best practices
 

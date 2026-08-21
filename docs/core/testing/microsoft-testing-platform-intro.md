@@ -3,7 +3,8 @@ title: Microsoft.Testing.Platform overview - .NET test runner
 description: Learn about Microsoft.Testing.Platform (MTP), a lightweight and portable .NET test runner and VSTest alternative for running unit tests in CI pipelines, CLI, and IDEs.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 03/17/2024
+ms.date: 08/06/2026
+ai-usage: ai-assisted
 ---
 
 # Microsoft.Testing.Platform (MTP) overview
@@ -25,6 +26,7 @@ Use the following path, based on what you need next:
 - Understand platform behavior in CLI: [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)
 - Find platform and extension CLI switches in one place: [MTP CLI options reference](./microsoft-testing-platform-cli-options.md)
 - Configure framework runners: [Run tests with MSTest](./unit-testing-mstest-running-tests.md) or [MTP support in NUnit (NUnit runner)](./unit-testing-nunit-runner-intro.md)
+- Host MTP in a WinUI 3 app: [Test WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)
 - Migrate an existing VSTest setup: [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md)
 - Add diagnostics, coverage, and reporting: [MTP features](./microsoft-testing-platform-features.md)
 - Build your own extension: [MTP architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md)

@@ -71,7 +71,7 @@ This small example demonstrates the motivation for this feature. You can use nat
 
 The previous example used `static abstract` to declare the `++` operator: every implementing type *must* provide its own implementation. You can also declare `static virtual` members that provide a default implementation. Implementing types can use the default or override it. This distinction is useful when there's a reasonable default that works for most types, but some types need specialized behavior.
 
-The following example defines an `IDescribable<T>` interface with a `static abstract` property, `TypeName`, and a `static virtual` method, `Describe()`. The `TypeName` property is abstract because each type must supply its own name. The `Describe()` method is virtual because returning the type name is a sensisble default for most types:
+The following example defines an `IDescribable<T>` interface with a `static abstract` property, `TypeName`, and a `static virtual` method, `Describe()`. The `TypeName` property is abstract because each type must supply its own name. The `Describe()` method is virtual because returning the type name is a sensible default for most types:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Describable.cs" id="Describable":::
 

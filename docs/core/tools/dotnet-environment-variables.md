@@ -1,7 +1,8 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 11/20/2025
+ms.date: 05/15/2026
+ai-usage: ai-assisted
 ---
 
 # .NET environment variables
@@ -191,6 +192,7 @@ This section describes the following environment variables:
 - [`DOTNET_SERVICING`](#dotnet_servicing)
 - [`DOTNET_NOLOGO`](#dotnet_nologo)
 - [`DOTNET_CLI_PERF_LOG`](#dotnet_cli_perf_log)
+- [`DOTNET_CLI_ENABLEAOT`](#dotnet_cli_enableaot)
 - [`DOTNET_GENERATE_ASPNET_CERTIFICATE`](#dotnet_generate_aspnet_certificate)
 - [`DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`](#dotnet_add_global_tools_to_path)
 - [`DOTNET_CLI_TELEMETRY_OPTOUT`](#dotnet_cli_telemetry_optout)
@@ -210,10 +212,11 @@ This section describes the following environment variables:
 - [`DOTNET_CLI_CONTEXT_*`](#dotnet_cli_context_)
 - [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`](#dotnet_cli_workload_update_notify_disable)
 - [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`](#dotnet_cli_workload_update_notify_interval_hours)
+- [`DOTNET_SDK_VULNERABILITY_CHECK_DISABLE`](#dotnet_sdk_vulnerability_check_disable)
+- [`DOTNET_SDK_VULNERABILITY_CHECK_INTERVAL_HOURS`](#dotnet_sdk_vulnerability_check_interval_hours)
 - [`DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`](#dotnet_skip_workload_integrity_check)
 - [`DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`](#dotnet_tools_allow_manifest_in_root)
 - [`DOTNET_HOST_TRACE`](#dotnet_host_trace)
-- [`COREHOST_TRACE`](#corehost_trace)
 - [`SuppressNETCoreSdkPreviewMessage`](#suppressnetcoresdkpreviewmessage)
 - [Configure MSBuild in the .NET CLI](#configure-msbuild-in-the-net-cli)
 - [`DOTNET_NEW_PREFERRED_LANG`](#dotnet_new_preferred_lang)
@@ -321,6 +324,18 @@ Specifies whether .NET welcome and telemetry messages are displayed on the first
 
 Specifies whether performance details about the current CLI session are logged. Enabled when set to `1`, `true`, or `yes`. This is disabled by default.
 
+### `DOTNET_CLI_ENABLEAOT`
+
+Specifies whether the .NET SDK uses its native (ahead-of-time compiled) CLI command-handling fast path. When enabled, common commands (such as command-line parsing, `dotnet --version`, and `dotnet --info`) are handled by a native entry point for faster startup, transparently falling back to the managed CLI for anything the fast path doesn't handle.
+
+Set this variable to control the fast path explicitly:
+
+- To enable it, set the variable to `true`, `1`, `yes`, or `on`.
+- To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
+
+> [!NOTE]
+> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
+
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 
 Specifies whether to generate an ASP.NET Core certificate. The default value is `true`, but this can be overridden by setting this environment variable to either `0`, `false`, or `no`.
@@ -413,6 +428,14 @@ Disables background download of advertising manifests for workloads. Default is 
 
 Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
 
+### `DOTNET_SDK_VULNERABILITY_CHECK_DISABLE`
+
+Disables the opt-in SDK vulnerability, end-of-life, and feature-band discontinuation check. When set to `true`, the .NET CLI doesn't refresh the local SDK release metadata cache in the background, and the MSBuild check doesn't emit [NETSDK1238](sdk-errors/netsdk1238.md), [NETSDK1239](sdk-errors/netsdk1239.md), or [NETSDK1240](sdk-errors/netsdk1240.md). The default is `false`. The check is also opt-in at the project level through the `CheckSdkVulnerabilities` MSBuild property.
+
+### `DOTNET_SDK_VULNERABILITY_CHECK_INTERVAL_HOURS`
+
+Specifies the minimum number of hours between background refreshes of the SDK release metadata cache used by the SDK vulnerability, end-of-life, and feature-band discontinuation check. The default is `24`.
+
 ### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
 
 Specifies whether to skip the workload integrity check on first-run. The integrity check ensures that workloads from previous feature bands are accessible to the currently installed SDK. Set the value to `true`, `1`, or `yes` to skip the check. The default is `false`, meaning the integrity check is performed.
@@ -423,9 +446,10 @@ Specifies whether .NET SDK local tools search for tool manifest files in the roo
 
 ### `DOTNET_HOST_TRACE`
 
-**This variable applies to .NET 10 and later versions.** For older versions, replace the `DOTNET_HOST_` prefix with [`COREHOST_`](#corehost_trace).
-
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
+
+> [!NOTE]
+> Prior to .NET 10, the `COREHOST_` prefix was used instead of `DOTNET_HOST_` (for example, `COREHOST_TRACE`). The functionality and values remain identical.
 
 - `DOTNET_HOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
 - `DOTNET_HOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `DOTNET_HOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
@@ -437,17 +461,6 @@ Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, 
   - `1` - only error messages are written
 
 The typical way to get detailed trace information about application startup is to set `DOTNET_HOST_TRACE=1` and `DOTNET_HOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
-
-### `COREHOST_TRACE`
-
-Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
-
-> [!NOTE]
-> Starting with .NET 10, use the [`DOTNET_HOST_TRACE`](#dotnet_host_trace) environment variables instead. The `COREHOST_TRACE` variables work the same as `DOTNET_HOST_TRACE` variables.
-
-- `COREHOST_TRACE` - see [`DOTNET_HOST_TRACE`](#dotnet_host_trace).
-- `COREHOST_TRACEFILE` - see [`DOTNET_HOST_TRACEFILE`](#dotnet_host_trace).
-- `COREHOST_TRACE_VERBOSITY` - see [`DOTNET_HOST_TRACE_VERBOSITY`](#dotnet_host_trace).
 
 ### `SuppressNETCoreSdkPreviewMessage`
 

@@ -97,9 +97,9 @@ This topic is continued with a couple of example walkthroughs for using OpenTele
 
 ## OpenTelemetry in Aspire
 
-[Aspire](/dotnet/aspire/get-started/aspire-overview) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
+[Aspire](https://aspire.dev/get-started/what-is-aspire/) is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in an Aspire solution.
 
-The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file. For exporting telemetry, Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
+The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/microsoft/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file. For exporting telemetry, Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
 
 The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The Aspire dashboard is launched automatically when you <kbd>F5</kbd> the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 
@@ -107,9 +107,9 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
 For more details on Aspire see:
 
-- [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
-- [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
-- [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
+- [Aspire Overview](https://aspire.dev/get-started/what-is-aspire/)
+- [Telemetry in Aspire](https://aspire.dev/fundamentals/telemetry/)
+- [Aspire Dashboard](https://aspire.dev/dashboard/explore/)
 
 ### Reuse Service Defaults project without Aspire Orchestration
 

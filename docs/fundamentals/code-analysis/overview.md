@@ -58,6 +58,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 10. A
 | [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 | [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
 | [CA2265](quality-rules/ca2265.md) | Usage | Warning | .NET 9 | Do not compare `Span<T>` to `null` or `default` |
+| [CA2266](quality-rules/ca2266.md) | Usage | Warning | .NET 10 | File-based program entry point should start with `#!` |
 
 # [.NET 9](#tab/net-9)
 

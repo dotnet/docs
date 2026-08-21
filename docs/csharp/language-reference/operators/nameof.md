@@ -18,7 +18,9 @@ The following example shows how to use a `nameof` expression:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="Examples":::
 
-The preceding example that uses `List<>` is supported in C# 14 and later. You can use a `nameof` expression to make the argument-checking code more maintainable:
+The preceding example that uses `List<>` is supported in C# 14 and later. The operand of `nameof` can be an unbound generic type, such as `List<>` or `Dictionary<,>`. The result is the simple type name without arity or any type-argument list — `nameof(List<>)` returns `"List"`. Unbound generic operands are useful in logging, diagnostic messages, and attribute arguments where the generic type name matters but the type arguments don't.
+
+You can use a `nameof` expression to make the argument-checking code more maintainable:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="ExceptionMessage":::
 
@@ -34,7 +36,7 @@ When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` char
 
 ## C# language specification
 
-For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#12823-the-nameof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md), and the [Extended `nameof` scope](~/_csharplang/proposals/csharp-11.0/extended-nameof-scope.md) feature specification.
+For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#12823-the-nameof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

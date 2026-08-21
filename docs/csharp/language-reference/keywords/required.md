@@ -35,4 +35,4 @@ The following code shows a class hierarchy that uses the `required` modifier for
 
 :::code language="csharp" source="./snippets/RequiredExample.cs" id="SnippetRequired":::
 
-For more information on required members, see the [C#11 - Required members](~/_csharplang/proposals/csharp-11.0/required-members.md) feature specification.
+For more information on required members, see [Properties](~/_csharpstandard/standard/classes.md#157-properties) and [Required member attributes](~/_csharpstandard/standard/attributes.md#23511-required-member-attributes) in the C# language specification.

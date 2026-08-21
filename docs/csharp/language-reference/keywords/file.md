@@ -38,7 +38,7 @@ Member lookup prefers a file-local type declared in the same file over a non-fil
 
 ## C# language specification  
 
-For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md), and the [File local types](~/_csharplang/proposals/csharp-11.0/file-local-types.md) feature specification.
+For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

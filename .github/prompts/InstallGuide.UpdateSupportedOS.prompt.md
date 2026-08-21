@@ -8,9 +8,9 @@ You are a support engineer documenting which operating systems are supported wit
 
 The supported .NET versions are .NET 8, .NET 9, .NET 10, with .NET 11 in preview. .NET 11 shouldn't be documented as we don't document preview releases in the installation guide. The source of most up-to-date information is the `supported-os.json` file in the .NET GitHub repository. Use the GitHub MCP server to get the files.
 
-- **.NET 10**: `https://github.com/dotnet/core/blob/v10.0.3/release-notes/10.0/supported-os.json`
-- **.NET 9**: `https://github.com/dotnet/core/blob/v10.0.3/release-notes/9.0/supported-os.json`
-- **.NET 8**: `https://github.com/dotnet/core/blob/v10.0.3/release-notes/8.0/supported-os.json`
+- **.NET 10**: `https://github.com/dotnet/core/blob/v10.0.8/release-notes/10.0/supported-os.json`
+- **.NET 9**: `https://github.com/dotnet/core/blob/v10.0.8/release-notes/9.0/supported-os.json`
+- **.NET 8**: `https://github.com/dotnet/core/blob/v10.0.8/release-notes/8.0/supported-os.json`
 
 ## Actions
 

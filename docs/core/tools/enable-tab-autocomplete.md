@@ -91,11 +91,11 @@ dotnet completions script fish | source
 
 #### Nushell
 
-Add the following to the beginning of your `config.nu` file:
+Add the following line(s) to your `config.nu` file:
 
 ```nu
-dotnet completions script nushell | save -f ~/.local/share/nushell/completions/dotnet.nu
-use ~/.local/share/nushell/completions/dotnet.nu *
+mkdir ($nu.data-dir | path join "vendor/autoload") # Only add this line if not already present in your config.
+dotnet completions script nushell | save -f ($nu.data-dir | path join "vendor/autoload/dotnet-completions.nu")
 ```
 
 ## Dynamic completion scripts (all versions)
@@ -115,7 +115,9 @@ pack
 
 If that command doesn't work, make sure that .NET Core 2.0 SDK or later is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK or later. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
 
-### PowerShell
+### Configure shells to use native completions
+
+#### PowerShell
 
 To add tab completion to **PowerShell** for the .NET CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
 
@@ -131,9 +133,9 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 }
 ```
 
-### bash
+#### Bash
 
-To add tab completion to your **bash** shell for the .NET CLI, add the following code to your `.bashrc` file:
+Add the following code to your `.bashrc` file:
 
 ```bash
 # bash parameter completion for the dotnet CLI
@@ -151,9 +153,9 @@ function _dotnet_bash_complete()
 complete -f -F _dotnet_bash_complete dotnet
 ```
 
-### zsh
+#### Zsh
 
-To add tab completion to your **zsh** shell for the .NET CLI, add the following code to your `.zshrc` file:
+Add the following code to your `.zshrc` file:
 
 ```zsh
 # zsh parameter completion for the dotnet CLI
@@ -176,43 +178,26 @@ _dotnet_zsh_complete()
 compdef _dotnet_zsh_complete dotnet
 ```
 
-### fish
+#### Fish
 
-To add tab completion to your **fish** shell for the .NET CLI, add the following code to your `config.fish` file:
+Add the following code to your `config.fish` file:
 
 ```fish
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 ```
 
-### nushell
+#### Nushell
 
-To add tab completion to your **nushell** for .NET CLI, add the following to the beginning of your `config.nu` file:
-
-```nu
-let external_completer = { |spans|
-    {
-        dotnet: { ||
-            dotnet complete (
-                $spans | skip 1 | str join " "
-            ) | lines
-        }
-    } | get $spans.0 | each { || do $in }
-}
-```
-
-And then in the `config` record, find the `completions` section and add the `external_completer` that was defined earlier to `external`:
+Add the following code to your `config.nu` file:
 
 ```nu
-let-env config = {
-    # your options here
-    completions: {
-        # your options here
-        external: {
-            # your options here
-            completer: $external_completer # add it here
-        }
-    }
+def "nu-complete dotnet" [context: string] {
+    ^dotnet complete $"($context)" | lines 
 }
+
+export extern "dotnet" [
+    ...command: string@"nu-complete dotnet"
+]
 ```
 
 ## Completion examples

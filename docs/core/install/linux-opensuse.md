@@ -20,9 +20,6 @@ The following table is a list of currently supported .NET releases on openSUSE L
 | openSUSE Leap    | .NET     |
 |------------------|----------|
 | 16               | 10, 9, 8 |
-| 15.6<sup>*</sup> | 10, 9, 8 |
-
-<sup>* Support ends April 30, 2026.</sup>
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -42,41 +39,6 @@ The following table is a list of currently supported .NET releases on openSUSE L
 sudo zypper install libicu
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 wget https://packages.microsoft.com/config/opensuse/16/prod.repo
-sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
-sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
-```
-
-# [.NET 10](#tab/dotnet10)
-
-[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
-
-[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
-
-# [.NET 9](#tab/dotnet9)
-
-[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
-
-[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
-
-# [.NET 8](#tab/dotnet8)
-
-[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
-
-[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
-
----
-
-## openSUSE Leap 15
-
-> [!IMPORTANT]
-> Support ends April 30, 2026.
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo zypper install libicu
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-wget https://packages.microsoft.com/config/opensuse/15/prod.repo
 sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```

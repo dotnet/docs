@@ -44,7 +44,7 @@ By using the `?` annotation, you declare your intent:
 
 :::code language="csharp" source="snippets/null-safety-overview/Program.cs" ID="NrtIntro":::
 
-All .NET projects that modern SDK templates create enable nullable reference types by default. For complete guidance on enabling and annotating, see [Nullable reference types](../../nullable-references.md).
+All .NET projects that modern SDK templates create enable nullable reference types by default. For complete guidance on enabling and annotating, see [Nullable reference types](nullable-reference-types.md).
 
 ## Null operators
 

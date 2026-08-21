@@ -7,31 +7,50 @@ items:
     expanded: true
     items:
       - name: Overview
-        href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../core/porting/github-copilot-upgrade/overview.md
+        displayName: copilot, upgrade
+      - name: Install
+        href: ../../core/porting/github-copilot-upgrade/install.md
+        displayName: copilot, upgrade
+      - name: Core concepts
+        href: ../../core/porting/github-copilot-upgrade/concepts.md
+        displayName: copilot, upgrade
+      - name: Working with the agent
+        href: ../../core/porting/github-copilot-upgrade/working-with-agent.md
+        displayName: copilot, upgrade
+      - name: Scenarios and skills reference
+        href: ../../core/porting/github-copilot-upgrade/scenarios-and-skills.md
+        displayName: copilot, upgrade
+      - name: Customization
+        href: ../../core/porting/github-copilot-upgrade/customization.md
         displayName: copilot, upgrade
       - name: FAQ
-        href: ../../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../core/porting/github-copilot-upgrade/faq.yml
         displayName: copilot, upgrade
       - name: Upgrade .NET apps
         expanded: false
         items:
           - name: How to upgrade with GitHub Copilot
-            href: ../../core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: ../../core/porting/github-copilot-upgrade/how-to-upgrade-with-github-copilot.md
+            displayName: copilot, upgrade
+          - name: How to apply custom upgrade instructions
+            href: ../../core/porting/github-copilot-upgrade/how-to-custom-upgrade-instructions.md
+            displayName: copilot, upgrade
+          - name: Best practices
+            href: ../../core/porting/github-copilot-upgrade/best-practices.md
+            displayName: copilot, upgrade
+          - name: Troubleshooting
+            href: ../../core/porting/github-copilot-upgrade/troubleshooting.md
             displayName: copilot, upgrade
       - name: Migrate .NET apps to Azure
-        expanded: false
-        items:
-          - name: Migrate a .NET project
-            href: ../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-          - name: Migration sample
-            href: ../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../azure/migration/appmod/predefined-tasks.md
 
   - name: Plan an upgrade from .NET Framework
     items:
       - name: Overview
         href: ../../core/porting/framework-overview.md
       - name: Upgrade with GitHub Copilot
-        href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../core/porting/github-copilot-upgrade/overview.md
         displayName: copilot, upgrade, modernization
       - name: General information
         items:
@@ -60,11 +79,7 @@ items:
               - name: Unavailable technologies
                 href: ../../core/porting/net-framework-tech-unavailable.md
               - name: Unsupported APIs
-                items:
-                - name: Tools to find unsupported APIs
-                  href: ../../core/porting/unsupported-apis.md
-                - name: Unsupported API list
-                  href: ../../core/compatibility/unsupported-apis.md
+                href: ../../core/compatibility/unsupported-apis.md
           - name: Needed changes before porting code
             href: ../../core/porting/premigration-needed-changes.md
       - name: Upgrade
@@ -79,9 +94,9 @@ items:
           - name: Application porting guides
             items:
               - name: Windows Forms
-                href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+                href: /dotnet/desktop/winforms/migration/
               - name: Windows Presentation Foundation
-                href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+                href: /dotnet/desktop/wpf/migration/
               - name: C++/CLI projects
                 href: ../../core/porting/cpp-cli.md
       - name: Post-upgrade
@@ -110,15 +125,5 @@ items:
               - name: How to analyze a project
                 href: ../../core/porting/upgrade-assistant-how-to-analyze.md
                 displayName: upgrade assistant
-          - name: Project upgrade guide
-            items:
-              - name: ASP.NET
-                href: /aspnet/core/migration/fx-to-core/tooling
-              - name: Windows Presentation Foundation
-                href: /dotnet/desktop/wpf/migration/
-              - name: Windows Forms
-                href: /dotnet/desktop/winforms/migration/
-              - name: Universal Windows Platform
-                href: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant
           - name: Telemetry
             href: ../../core/porting/upgrade-assistant-telemetry.md

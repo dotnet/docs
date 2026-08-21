@@ -283,8 +283,7 @@ For more information, see the following sections of the [C# language specificati
 - [§8.2.4 The dynamic type](~/_csharpstandard/standard/types.md#824-the-dynamic-type)
 - [§8.2.5 The string type](~/_csharpstandard/standard/types.md#825-the-string-type)
 - [§8.2.8 Delegate types](~/_csharpstandard/standard/types.md#828-delegate-types)
-- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [UTF-8 string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
+- [§6.4.5.6 String literals](~/_csharpstandard/standard/lexical-structure.md#6456-string-literals)
 
 ### See also
 

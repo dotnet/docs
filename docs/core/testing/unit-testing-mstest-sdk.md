@@ -3,7 +3,8 @@ title: MSTest SDK configuration
 author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 02/13/2024
+ms.date: 08/06/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest SDK configuration
@@ -104,6 +105,8 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 
 For a list of all available extensions, see [MTP features](./microsoft-testing-platform-features.md).
 
+Starting with MSTest.Sdk 4.3, enable the experimental JUnit report extension with `<EnableMicrosoftTestingExtensionsJUnitReport>true</EnableMicrosoftTestingExtensionsJUnitReport>`, then pass `--report-junit` when you run the test application. The extension is available only with Microsoft.Testing.Platform and isn't included in the `Default` or `AllMicrosoft` profiles.
+
 > [!WARNING]
 > It's important to review the licensing terms for each extension as they might vary.
 
@@ -130,7 +133,7 @@ Outside of the selection of the runner and runner-specific extensions, `MSTest.S
 
 ### Test with Aspire
 
-Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](https://aspire.dev/get-started/what-is-aspire/).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0.
@@ -228,6 +231,60 @@ If you're using the VSTest mode of `dotnet test`, here's an example update when 
 -    arguments: '--configuration Release'
 +    arguments: '--configuration Release -- --report-trx --results-directory $(Agent.TempDirectory) --coverage'
 ```
+
+## Experimental features
+
+The following MSTest 4.3 features are **experimental**. Their public APIs are subject to change, and they're surfaced behind experimental diagnostics, so opting in requires acknowledging the corresponding diagnostic ID. Use them with that caveat in mind.
+
+### Reflection source generator
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The MSTest reflection source generator discovers tests at compile time instead of relying on runtime reflection, which makes test projects compatible with trimming and Native AOT. Enable it by adding the [MSTest.SourceGeneration](https://www.nuget.org/packages/MSTest.SourceGeneration) package. When the source generator is active, test classes must declare `[TestClass]` directly rather than inherit it; the [MSTEST0069](mstest-analyzers/mstest0069.md) analyzer flags classes that rely on an inherited `[TestClass]`.
+
+Starting with MSTest 4.3.2, `MSTestSourceGenMode` defaults to `ReflectionFree` for trimmed and Native AOT projects.
+
+Starting with MSTest 4.4, reflection-free generation materializes complete inherited attribute metadata, including `AttributeUsage` and `AllowMultiple`. When the generator can't materialize metadata statically, MSTest falls back to reflection where the runtime supports it.
+
+### Programmatic test filtering with `ITestFilter`
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The experimental `ITestFilter` extension point, registered through `[TestFilterProviderAttribute]`, lets you decide programmatically whether each test runs, before any test class is loaded. This is useful for custom selection logic that can't be expressed with command-line filters.
+
+Implement `ITestFilter.Filter(TestFilterContext)` to inspect metadata without loading the test class:
+
+```csharp
+public sealed class MyFilter : ITestFilter
+{
+    public TestFilterResult Filter(TestFilterContext context) =>
+        context.DisplayName.Contains("Nightly", StringComparison.Ordinal)
+            ? TestFilterResult.Run : TestFilterResult.Drop;
+}
+```
+
+Return `TestFilterResult.Run` to run the test, `Drop` to omit it without a result, or `Skip(reason)` to report a skipped result. MSTest can call one filter instance concurrently, so implementations must be thread-safe. Command-line and test-explorer filters run before `ITestFilter`, while `[Ignore]` is evaluated afterward.
+
+Starting with MSTest 4.4, .NET projects can use the generic, type-safe registration form `[assembly: TestFilterProvider<MyFilter>]`. The compiler then enforces that `MyFilter` implements `ITestFilter` and has a public parameterless constructor. The generic attribute isn't available for .NET Framework. For a multi-targeted project, select the generic or non-generic form with a target-framework preprocessor symbol.
+
+```csharp
+#if NET
+[assembly: TestFilterProvider<MyFilter>]
+#else
+[assembly: TestFilterProvider(typeof(MyFilter))]
+#endif
+```
+
+Starting with MSTest 4.4, the [MSTEST0081](mstest-analyzers/mstest0081.md) analyzer fully validates the non-generic registration form. For the generic form, it still reports generic filter types and assemblies that register more than one provider.
+
+### `TestRun.Current` and planned tests
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The experimental `TestRun.Current` API (from RFC 014) exposes information about the current run, including the set of planned tests, so extensions and fixtures can inspect what's scheduled to execute.
 
 ## Known limitations
 

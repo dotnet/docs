@@ -11,7 +11,7 @@ Starting in .NET 6, the project templates that ship with the .NET SDK use the la
 - [Global using directives](/dotnet/csharp/language-reference/language-specification/namespaces#1452-global-using-alias-directives)
 - [File-scoped namespaces](/dotnet/csharp/language-reference/language-specification/namespaces#143-namespace-declarations)
 - [Target-typed new expressions](/dotnet/csharp/language-reference/language-specification/expressions#128172-object-creation-expressions)
-- [Nullable reference types](../../../../csharp/nullable-references.md)
+- [Nullable reference types](../../../../csharp/fundamentals/null-safety/nullable-reference-types.md)
 - [Async Main return values](../../../../csharp/fundamentals/program-structure/main-command-line.md#main-return-values)
 
 Some of the latest C# language features are not supported by previous target frameworks, so you might experience issues in the following scenarios:

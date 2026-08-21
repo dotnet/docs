@@ -12,7 +12,7 @@ public record class Hotel
     [VectorStoreData(IsFullTextIndexed = true)]
     public string? Description { get; set; }
 
-    [VectorStoreVector(Dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity)]
+    [VectorStoreVector(dimensions: 1536, DistanceFunction = DistanceFunction.CosineSimilarity)]
     public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
 
     [VectorStoreData(IsIndexed = true)]

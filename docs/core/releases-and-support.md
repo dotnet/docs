@@ -1,7 +1,7 @@
 ---
 title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET.
-ms.date: 11/18/2025
+ms.date: 05/15/2026
 ms.custom: updateeachrelease
 ms.topic: overview
 ai-usage: ai-assisted
@@ -108,6 +108,8 @@ For information about the latest servicing updates for each major and minor vers
 ## End of support
 
 End of support refers to the date after which Microsoft no longer provides fixes, updates, or technical assistance for a product version. Before this date, move to a supported version. Versions that are out of support no longer receive security updates that protect your applications and data. For the supported date ranges for each version of .NET, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
+To detect builds running on an unsupported SDK, set the `CheckSdkVulnerabilities` MSBuild property to `true` in your project. The build then emits warning [NETSDK1239](tools/sdk-errors/netsdk1239.md) when the resolved .NET SDK is end of life.
 
 ## Supported operating systems
 

@@ -38,6 +38,8 @@ f1_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8423"
+  - "CS8783"
   - "CS8959"
   - "CS8960"
   - "CS8961"
@@ -83,6 +85,8 @@ helpviewer_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8423"
+  - "CS8783"
   - "CS8959"
   - "CS8960"
   - "CS8961"
@@ -91,7 +95,7 @@ helpviewer_keywords:
   - "CS8968"
   - "CS8970"
   - "CS9331"
-ms.date: 02/13/2026
+ms.date: 07/16/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -137,6 +141,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
+- [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
 - [**CS8960**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
 - [**CS8961**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
@@ -207,6 +213,7 @@ The following errors occur when you apply attributes in invalid locations or use
 - **CS0658**: *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - **CS1667**: *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
 - **CS7014**: *Attributes are not valid in this context.*
+- **CS8423**: *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 
 To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets) and the [C# language specification section on attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification).
 
@@ -215,6 +222,7 @@ To correct these errors, follow these rules. For more information, see [Attribut
 - The attribute target specifier you used isn't a recognized specifier (**CS0658**). Valid specifiers include `assembly:`, `module:`, `type:`, `method:`, `property:`, `field:`, `event:`, `param:`, and `return:`.
 - Some attributes, such as <xref:System.ObsoleteAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on property or event accessors (**CS1667**). Move the attribute from the accessor to the property or event declaration itself.
 - Attributes can only appear on program elements that support them (**CS7014**). If you're applying assembly-level or module-level attributes, use the `assembly:` or `module:` target specifiers and place them at the top of the file.
+- Attributes on event `add` and `remove` accessors aren't allowed (**CS8423**). Apply the attribute to the event declaration, or use a valid target such as `method:` or `param:` on a declaration that supports that target.
 
 ## Predefined attributes
 
@@ -234,16 +242,16 @@ The following errors occur when you use specific predefined .NET attributes inco
 
 To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
 
-- The <xref:System.Runtime.CompilerServices.IndexerNameAttribute> can only be applied to indexers that aren't explicit interface member declarations (**CS0415**). Remove the attribute from explicit interface indexers, because the interface already defines the indexer name.
+- You can apply <xref:System.Runtime.CompilerServices.IndexerNameAttribute> only to indexers that aren't explicit interface member declarations (**CS0415**). Remove the attribute from explicit interface indexers, because the interface already defines the indexer name.
 - You can't apply `IndexerName` to indexers marked with `override` because override indexers inherit their name from the base class (**CS0609**). Remove the `IndexerName` attribute from the override indexer.
 - Every instance field in a type marked with `StructLayout(LayoutKind.Explicit)` must have a <xref:System.Runtime.InteropServices.FieldOffsetAttribute> (**CS0625**). Explicit layout requires that you specify the byte offset for each instance field.
-- The <xref:System.Runtime.InteropServices.FieldOffsetAttribute> can only be placed on members of types that have <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit` (**CS0636**). Add the `StructLayout` attribute to the containing type declaration.
+- You can place the <xref:System.Runtime.InteropServices.FieldOffsetAttribute> only on members of types that have <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit` (**CS0636**). Add the `StructLayout` attribute to the containing type declaration.
 - The `FieldOffset` attribute isn't allowed on `static` or `const` fields because explicit layout applies only to instance fields (**CS0637**). Remove the `FieldOffset` attribute from the static or const field.
 - You can't apply <xref:System.Reflection.DefaultMemberAttribute> to a type that already contains an indexer because the compiler automatically defines the default member for types with indexers (**CS0646**). Remove the `DefaultMember` attribute.
 - All <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attributes within a type must specify the same name (**CS0668**). Change the names to match, because the runtime uses a single name for all indexers on a type.
-- The type specified as an argument for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> must be a non-generic, non-nested, non-pointer, non-array type (**CS0735**). Only top-level named types are valid forwarding targets.
+- You must specify a non-generic, non-nested, non-pointer, non-array type as an argument for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> (**CS0735**). Only top-level named types are valid forwarding targets.
 - An assembly can have only one <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for each external type (**CS0739**). Locate and remove the duplicate `TypeForwardedTo` declaration.
-- The <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> isn't permitted on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
+- You can't use the <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
 - Some attributes are reserved for the compiler and can't be applied manually in source code (**CS9331**). Replace the attribute with the equivalent C# language syntax that causes the compiler to generate it.
 
 ## Conditional attribute usage
@@ -258,6 +266,7 @@ You see the following errors when you apply the <xref:System.Diagnostics.Conditi
 - **CS0685**: *Conditional member 'member' cannot have an out parameter.*
 - **CS1618**: *Cannot create delegate with method because it or a method it overrides has a Conditional attribute*
 - **CS1689**: *Attribute is only valid on methods or attribute classes*
+- **CS8783**: *Local function 'method' must be 'static' in order to use the Conditional attribute*
 
 To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute>, [Conditional methods](~/_csharpstandard/standard/attributes.md#23532-conditional-methods), and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
 
@@ -269,6 +278,7 @@ To correct these errors, follow these rules. For more information, see <xref:Sys
 - Conditional methods can't have `out` parameters because the `out` variable value would be undefined when the compiler omits the method call (**CS0685**). Remove the `out` parameters from the method, or remove the `Conditional` attribute.
 - You can't create a delegate that references a conditional method because the method might not exist in builds where the condition symbol isn't defined (**CS1618**). Remove the `Conditional` attribute from the method, or don't use it as a delegate target.
 - The `Conditional` attribute is only valid on methods and attribute classes (**CS1689**). It isn't valid on other declaration types such as non-attribute classes, structs, or interfaces.
+- A local function must be declared `static` to use the `Conditional` attribute (**CS8783**). Non-static local functions capture state from the enclosing method, and the compiler can't safely omit a call that might involve captured variables. Add the `static` modifier to the local function, or remove the `[Conditional]` attribute.
 
 ## CallerArgumentExpression attribute usage
 

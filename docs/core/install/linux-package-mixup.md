@@ -263,7 +263,6 @@ Many other users have reported these problems. The following is a list of those 
 
 - Generic errors without clear messages
 
-  - [Core #4605: cannot run "dotnet new console"](https://github.com/dotnet/core/issues/4605)
   - [Core #4644: Cannot install .NET Core SDK 2.1 on Fedora 32](https://github.com/dotnet/core/issues/4655)
   - [Runtime #49375: After updating to 5.0.200-1 using package manager, it appears that no sdks are installed](https://github.com/dotnet/runtime/issues/49375)
   - [Installer #16438: The application '--version' does not exist](https://github.com/dotnet/installer/issues/16438)

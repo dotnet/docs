@@ -91,7 +91,7 @@ The output is as follows.
 
 ```console
 Length of empty array: 0
-Area of floats set to 5.0: [|5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0|]
+Array of floats set to 5.0: [|5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0; 5.0|]
 Array of squares: [|0; 1; 4; 9; 16; 25; 36; 49; 64; 81|]
 ```
 

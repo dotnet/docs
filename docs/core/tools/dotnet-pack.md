@@ -211,6 +211,12 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
   dotnet pack --runtime win-x64
   ```
 
+- Pack the project in the current directory into a deterministic package (.NET 10.0.400 and later):
+
+  ```dotnetcli
+  dotnet pack -p:Deterministic=true -p:DeterministicTimestamp="2026-12-19T16:39:57-08:00"
+  ```
+
 - Pack the project using a *.nuspec* file (MSBuild project-based approach):
 
   ```dotnetcli

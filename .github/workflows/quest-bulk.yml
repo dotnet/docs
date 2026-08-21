@@ -28,7 +28,7 @@ jobs:
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        uses: step-security/harden-runner@b09bb98e06d4d774595224525879c09bc6e98c40 # v2.20.1
         with:
           egress-policy: audit
 
@@ -46,13 +46,21 @@ jobs:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
           audience: ${{ secrets.OSMP_API_AUDIENCE }}
-     
+
+      - name: Azure DevOps OpenID Connect
+        id: azure-devops-oidc-auth
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          audience: ${{ secrets.QUEST_AUDIENCE }}
+
       - name: bulk-sequester
         id: bulk-sequester
         uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__QuestAccessToken: ${{ steps.azure-devops-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
           ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}

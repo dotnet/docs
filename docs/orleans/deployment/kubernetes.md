@@ -24,9 +24,9 @@ The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Micr
 
 Note that the Kubernetes hosting package doesn't use Kubernetes for clustering. A separate clustering provider is still needed. For more information on configuring clustering, see the [Server configuration](../host/configuration-guide/server-configuration.md) documentation.
 
-## Deploy to Kubernetes with .NET Aspire
+## Deploy to Kubernetes with Aspire
 
-.NET Aspire simplifies Kubernetes deployment by automatically generating Kubernetes manifests from your AppHost configuration. Instead of manually writing YAML files, Aspire can produce the necessary deployment, service, and configuration resources based on your application's dependency graph.
+Aspire simplifies Kubernetes deployment by automatically generating Kubernetes manifests from your AppHost configuration. Instead of manually writing YAML files, Aspire can produce the necessary deployment, service, and configuration resources based on your application's dependency graph.
 
 ### Add the Kubernetes hosting integration
 
@@ -100,7 +100,7 @@ helm install my-orleans-app ./k8s-manifests/charts/my-orleans-app
 
 For detailed information about the Aspire Kubernetes integration, see the [Aspire Kubernetes integration documentation](https://aspire.dev/integrations/compute/kubernetes/).
 
-For more information about configuring Orleans with .NET Aspire, see [.NET Aspire Orleans integration](../host/aspire-integration.md).
+For more information about configuring Orleans with Aspire, see [Aspire Orleans integration](../host/aspire-integration.md).
 
 ## Manual Kubernetes configuration
 

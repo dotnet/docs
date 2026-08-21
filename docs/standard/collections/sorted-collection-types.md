@@ -40,7 +40,7 @@ For sorted lists or dictionaries that must be accessible concurrently from multi
 > [!NOTE]
 > For values that contain their own keys (for example, employee records that contain an employee ID number), you can create a keyed collection that has some characteristics of a list and some characteristics of a dictionary by deriving from the <xref:System.Collections.ObjectModel.KeyedCollection`2> generic class.
 
-Starting with .NET Framework 4, the <xref:System.Collections.Generic.SortedSet`1> class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the <xref:System.Collections.Generic.HashSet`1> class implement the <xref:System.Collections.Generic.ISet`1> interface.
+The <xref:System.Collections.Generic.SortedSet`1> class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the <xref:System.Collections.Generic.HashSet`1> class implement the <xref:System.Collections.Generic.ISet`1> interface.
 
 ## See also
 

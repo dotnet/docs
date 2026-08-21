@@ -405,6 +405,7 @@ The following MSBuild properties are documented in this section:
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
+- [PublishRuntimeIdentifier](#publishruntimeidentifier)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -581,9 +582,19 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
 > - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
 
+### PublishRuntimeIdentifier
+
+Specify a single [runtime identifier (RID)](../rid-catalog.md) for publish operations only. This property was introduced in .NET 7. It doesn't affect build operations. During publish, `PublishRuntimeIdentifier` sets `RuntimeIdentifier`. If you pass `RuntimeIdentifier` as a global property, that value takes precedence.
+
+```xml
+<PropertyGroup>
+  <PublishRuntimeIdentifier>linux-x64</PublishRuntimeIdentifier>
+</PropertyGroup>
+```
+
 ### PublishSelfContained
 
-The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#publish-as-self-contained). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property was introduced in .NET 7. It's similar to the [SelfContained](#selfcontained) property, except that it's specific to the `publish` verb. It's recommended to use `PublishSelfContained` instead of `SelfContained`.
 
@@ -663,7 +674,7 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 
 ### SelfContained
 
-The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#publish-as-self-contained). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property is similar to the [PublishSelfContained](#publishselfcontained) property. It's recommended to use `PublishSelfContained` instead of `SelfContained` when possible.
 
@@ -1152,7 +1163,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
-(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
+(But for performance reasons, a [handful of code-style rules](https://github.com/dotnet/roslyn/blob/7c69ea6a9a16bd8ded79ce0d7c0256d59736d486/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L140) that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>
@@ -1514,6 +1525,10 @@ The following table summarizes the diagnostics and behaviors affected by `SDKAna
 | 10.0.100         | 'Restore' package pruning       | [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) is enabled by default for projects that target .NET 8+ or .NET Standard 2.0+. |
 | 10.0.100         | 'Restore' resolver with lock files | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) instead of legacy dependency graph resolver (.NET 8 SDK and earlier). |
 | 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
+| 10.0.300         | 'Restore' multi-targeting with duplicate target frameworks | Enables [multi-targeting with duplicate target frameworks](/nuget/consume-packages/package-references-in-project-files#multi-targeting-with-duplicate-frameworks) using `TargetFramework` alias. |
+| 10.0.300         | `TargetFramework` character validation | Emits [NU1019](/nuget/reference/errors-and-warnings/nu1019) error for path separator characters (`/` or `\`) in a `TargetFramework` property, and [NU1019](/nuget/reference/errors-and-warnings/nu1019) warning for non-ASCII characters. |
+| 11.0.100         | MonoAndroid framework deprecation warning | Emits [NU1703](/nuget/reference/errors-and-warnings/nu1703) warning when a package uses the deprecated `MonoAndroid` framework instead of a modern .NET target framework moniker. |
+| 11.0.100         | `TargetFramework` non-ASCII character validation | Changes [NU1019](/nuget/reference/errors-and-warnings/nu1019) from a warning to an error when a `TargetFramework` property contains non-ASCII characters. |
 
 > [!NOTE]
 > The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.

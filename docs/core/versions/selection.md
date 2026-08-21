@@ -3,7 +3,7 @@ title: Select which .NET version to use
 description: Learn how .NET automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/22/2025
+ms.date: 05/15/2026
 ai-usage: ai-assisted
 ---
 
@@ -13,6 +13,9 @@ This article explains the policies used by the .NET tools, SDK, and runtime for 
 
 - Easy and efficient deployment of .NET, including security and reliability updates.
 - Use the latest tools and commands independent of target runtime.
+
+> [!TIP]
+> If you reached this page from a "compatible .NET SDK was not found" build error, [download the .NET SDK](https://dotnet.microsoft.com/download/dotnet) to install the required version. Alternatively, update your *global.json* file to match a version that's already installed.
 
 Version selection occurs:
 
@@ -58,6 +61,8 @@ For more information about SDK version selection, see the [Matching rules](../to
 
 It's important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
 
+To surface related warnings at build time for the resolved SDK, set the `CheckSdkVulnerabilities` MSBuild property to `true`. The build then warns if the resolved .NET SDK has known vulnerabilities ([NETSDK1238](../tools/sdk-errors/netsdk1238.md)), is end of life ([NETSDK1239](../tools/sdk-errors/netsdk1239.md)), or is on a feature band that has no newer release ([NETSDK1240](../tools/sdk-errors/netsdk1240.md)).
+
 ## Target framework monikers define build time APIs
 
 You build your project against APIs defined in a **target framework moniker** (TFM). You specify the [target framework](../../standard/frameworks.md) in the project file. Set the `TargetFramework` element in your project file as shown in the following example:
@@ -82,7 +87,7 @@ For more information, see [.NET 5 and .NET Standard](../../standard/net-standard
 
 ## Framework-dependent apps roll-forward
 
-When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#framework-dependent-deployment) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#framework-dependent-deployment) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-as-framework-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-as-framework-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `net5.0` in your project file, and `5.0.2` is the latest .NET runtime installed, the `5.0.2` runtime is used.
 
@@ -174,7 +179,7 @@ Then the resolved version is as follows in each case:
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployment). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not runtime.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-as-self-contained). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not runtime.
 
 The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` selects .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 

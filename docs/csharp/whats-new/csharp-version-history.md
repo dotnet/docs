@@ -132,7 +132,7 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
   - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
   - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharpstandard/standard/attributes.md#2359-the-moduleinitializer-attribute)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#23510-the-moduleinitializer-attribute)
   - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
   - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)
@@ -212,6 +212,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
 - [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- Lambda expressions, anonymous methods, and local functions can declare parameters that shadow local variables and parameters from an enclosing scope.
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
 - [Asynchronous streams](../language-reference/statements/iteration-statements.md#await-foreach)
@@ -362,7 +363,7 @@ C# version 4.0, released with Visual Studio 2010, introduced some interesting ne
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
-- [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
+- [Embedded interop types](../../standard/native-interop/type-equivalence-and-embedded-interop-types.md)
 
 Embedded interop types eased the deployment pain of creating COM interop assemblies for your application. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 

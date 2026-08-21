@@ -1,0 +1,128 @@
+### YamlMime:FAQ
+metadata:
+  title: GitHub Copilot upgrade for .NET FAQ
+  description: "This article answers frequently asked questions about GitHub Copilot upgrade for .NET."
+  titleSuffix: ""
+  ms.topic: faq
+  ms.date: 07/07/2026
+
+title: GitHub Copilot upgrade FAQ
+summary: |
+  GitHub Copilot upgrade is an interactive GitHub Copilot agent that adds capabilities to your development environment. This article answers frequently asked questions. For more information, see [What is GitHub Copilot upgrade](overview.md).
+
+  The tool requires one of the following GitHub Copilot subscriptions:
+
+  - Copilot Free (Starting with Visual Studio 2026 version 18.1)
+  - Copilot Pro
+  - Copilot Pro+
+  - Copilot Business
+  - Copilot Enterprise
+
+  GitHub Copilot upgrade is available in Visual Studio, Visual Studio Code, GitHub Copilot CLI, and on GitHub.com. For Visual Studio, it's included in [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) (or Visual Studio 2022 version 17.14.17 and newer).
+  
+  For more information about installation, [Install GitHub Copilot upgrade](install.md).
+
+sections:
+  - name: Upgrade agent
+    questions:
+      - question: What can the agent do?
+        answer: |
+          GitHub Copilot upgrade helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It upgrades dependencies and fixes errors in code after the upgrade. The agent performs the following steps in a Copilot chat session:
+
+          - Analyzes your projects and proposes an upgrade plan.
+          - Runs a series of tasks to upgrade your projects according to the plan.
+          - Operates in a working branch under a local Git repository.
+          - Fixes issues automatically during the code transformation.
+          - Reports progress and allows access to code changes and logs.
+          - Learns from your interactions during the session to improve subsequent transformations.
+
+      - question: What limitations are there?
+        answer: |
+          - The agent requires a local Git repository.
+          - The upgrade suggestions aren't guaranteed to follow best practices.
+          - Code fixes and corrections you provide to Copilot during the upgrade process don't persist and aren't remembered for future upgrades.
+
+      - question: Which model should I use?
+        answer: |
+          Use a good coding model. Model availability is dependent on your Copilot subscription and environment. For a comparison of models, see [GitHub Copilot AI model comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison).
+
+      - question: Can I train the model based on my code base?
+        answer: |
+          No. Unlike traditional AI tools where you might enter freeform prompts, the agent operates in a structured way. The AI is embedded in the build-and-fix process, so the prompts it uses are predefined and tied to the upgrade plan. You can't train it on your codebase, but it's used as context by the agent.
+
+      - question: Can I customize or guide the agent?
+        answer: |
+          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in upgrade skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md).
+
+          If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, the agent learns from that interaction in the short term. Preferences and decisions are saved to `scenario-instructions.md` in the `.github/upgrades/` folder so they persist across sessions.
+
+      - question: Does the agent store my source code?
+        answer: |
+          The agent never stores your codebase or uses your code to train the model. Once an upgrade completes, the agent deletes session data.
+
+      - question: Can I provide feedback?
+        answer: |
+          Yes! There are two ways to provide feedback:
+          
+          - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a Problem](/visualstudio/ide/report-a-problem) features.
+          - File an issue at the [upgrade-agent-plugins GitHub repository](https://github.com/microsoft/upgrade-agent-plugins).
+
+      - question: What data is collected?
+        answer: |
+          The agent collects telemetry only about project types, intent to upgrade, and upgrade duration. The data is aggregated through your development environment and doesn't contain user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
+
+      - question: Can I disable telemetry?
+        answer: |
+          Yes. In Visual Studio, select **Help** > **Privacy** > **Privacy Settings** > **"No, I would not like to participate."** Telemetry settings might vary by development environment. Check your tool's privacy settings for more information.
+
+  - name: Upgrade .NET apps
+    questions:
+      - question: What can the agent upgrade?
+        answer: |
+          GitHub Copilot upgrade helps you upgrade your .NET projects. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Microsoft Agent Framework upgrade. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
+
+          The agent works with these project types:
+
+          - Azure Functions
+          - Console apps and class libraries
+          - Web technologies such as:
+            - MVC
+            - Blazor
+            - Razor Pages
+            - Web API
+            - ASP.NET Web Forms
+          - Desktop technologies such as Windows Forms, Windows Presentation Foundation, and WinUI
+          - .NET MAUI and Xamarin
+          - Test projects such as MSTest, NUnit, and xUnit
+          - .NET Framework projects
+
+          The agent supports both C# and Visual Basic.
+
+      - question: What .NET versions can I upgrade to?
+        answer: |
+          The agent supports the following upgrade paths:
+
+          [!INCLUDE[supported-upgrade-paths](./includes/supported-upgrade-paths.md)]
+
+      - question: Can I use the agent offline?
+        answer: |
+          No. The agent requires an internet connection and the GitHub Copilot cloud infrastructure. The agent works with all Copilot subscription tiers, including the free tier.
+
+      - question: Does the agent modify files outside the solution?
+        answer: |
+          No. The agent only modifies files within your workspace and the `.github/upgrades/` folder. Custom task data stays in your repository.
+
+      - question: Can I partially accept the agent's changes?
+        answer: |
+          Yes. Because each task is committed separately, you can cherry-pick specific commits by using standard Git commands. Review the commit history with `git log --oneline` and use `git cherry-pick` to select individual changes.
+
+  - name: Migrate to Azure
+    questions:
+      - question: Can GitHub Copilot upgrade migrate my app to Azure?
+        answer: |
+          Azure migration scenarios are handled by the GitHub Copilot modernization agent. For more information, see [GitHub Copilot modernization overview](../../../azure/migration/appmod/overview.md).
+
+additionalContent: |
+    ## Related content
+
+    To learn more, see [What is GitHub Copilot upgrade?](overview.md).

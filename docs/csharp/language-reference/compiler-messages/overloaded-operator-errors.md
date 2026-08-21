@@ -36,6 +36,7 @@ f1_keywords:
   - "CS1021"
   - "CS1037"
   - "CS1553"
+  - "CS8761"
   - "CS8778"
   - "CS8973"
   - "CS9023"
@@ -84,6 +85,7 @@ helpviewer_keywords:
   - "CS1021"
   - "CS1037"
   - "CS1553"
+  - "CS8761"
   - "CS8778"
   - "CS8973"
   - "CS9023"
@@ -98,15 +100,15 @@ helpviewer_keywords:
   - "CS9340"
   - "CS9341"
   - "CS9342"
-ms.date: 03/25/2026
+ms.date: 05/19/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for operator declarations and overflow
 
 This article covers the following compiler errors and warnings:
 
-<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+<!-- The text in this list generates issues for Acrolinx, because it doesn't use contractions.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0031**](#overflow-and-underflow-errors): *Constant value 'value' cannot be converted to a 'type'*
 - [**CS0056**](#inconsistent-accessibility): *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'*
@@ -145,6 +147,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8930**](static-abstract-interfaces.md#errors-in-type-implementing-interface-declaration): *Explicit implementation of a user-defined operator must be declared static*
 - [**CS8931**](static-abstract-interfaces.md#errors-in-interface-declaration): *User-defined conversion in an interface must convert to or from a type parameter on the enclosing type constrained to the enclosing type*
 - [**CS8778**](#overflow-and-underflow-errors): *Constant value 'value' may overflow 'type' at runtime (use 'unchecked' syntax to override)*
+- [**CS8761**](#operator-signature-requirements): *Operator 'operator' cannot be applied to 'default' and operand of type 'type' because it is a type parameter that is not known to be a reference type*
 - [**CS8973**](#overflow-and-underflow-errors): *The operation may overflow at runtime (use 'unchecked' syntax to override)*
 - [**CS9023**](#checked-operators): *Operator cannot be made checked.*
 - [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
@@ -172,6 +175,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9340**: *Operator cannot be applied to operands. The closest inapplicable candidate is shown.*
 - **CS9341**: *Operator cannot be applied to operand. The closest inapplicable candidate is shown.*
 - **CS9342**: *Operator resolution is ambiguous between the following members.*
+- **CS8761**: *Operator 'operator' cannot be applied to 'default' and operand of type 'type' because it is a type parameter that is not known to be a reference type*
 
 Each operator type has specific parameter and return type requirements defined by the language specification. For the full rules on which operators can be overloaded, see [Operator overloading](../operators/operator-overloading.md) and [Operators](~/_csharpstandard/standard/expressions.md#124-operators) in the C# specification.
 
@@ -184,6 +188,7 @@ Each operator type has specific parameter and return type requirements defined b
 - Change the return type of the operator to a non-void type (**CS0590**). Most user-defined operators must return a value. The exception is compound assignment operators, which require a `void` return type (**CS9310**).
 - Correct the parameter types or add missing operator overloads so the compiler can find a matching operator for the operand types used at the call site (**CS9340**, **CS9341**). When no applicable operator exists, the compiler shows the closest candidate to help diagnose the mismatch.
 - Add explicit casts at the call site, or provide more specific overloads to eliminate ambiguity when multiple operator overloads match equally well (**CS9342**).
+- Add a `class`, `struct`, or other type constraint to the type parameter so the compiler can determine the applicable operators for the `default` expression (**CS8761**). When a type parameter is unconstrained, the compiler can't determine whether `default` represents `null` (for reference types) or a zeroed value type, making binary operator resolution ambiguous. Alternatively, avoid using `default` directly in binary expressions with unconstrained generic types.
 
 > [!IMPORTANT]
 > The signature requirements for static binary operators and the corresponding instance compound assignment operators are different. Make sure the signature matches the declaration you want.
@@ -226,7 +231,7 @@ All types used in a public operator's signature must be at least as accessible a
 
 The C# language restricts which types can participate in user-defined conversions. For the full rules, see [User-defined conversion operators](../operators/user-defined-conversion-operators.md) and [Conversion operators](~/_csharpstandard/standard/classes.md#15104-conversion-operators) in the C# specification.
 
-- Remove the conversion operator that converts to or from an interface type (**CS0552**). The language prohibits user-defined conversions involving interface types because interface conversions are handled through the type system's reference conversions and boxing. Use explicit interface implementations or helper methods instead.
+- Remove the conversion operator that converts to or from an interface type (**CS0552**). The language prohibits user-defined conversions involving interface types because the type system handles interface conversions through reference conversions and boxing. Use explicit interface implementations or helper methods instead.
 - Remove the conversion operator that converts to or from a base class (**CS0553**). Conversions between a type and its base class already exist through implicit reference conversions (upcast) and explicit reference conversions (downcast), so a user-defined conversion would create ambiguity.
 - Remove the conversion operator that converts to or from a derived class (**CS0554**). Like base class conversions, conversions between a type and its derived types are built into the language through inheritance, and user-defined conversions would conflict with them.
 - Remove the conversion operator that converts the enclosing type to itself (**CS0555**). Every type already has an implicit identity conversion to itself, so a user-defined conversion from a type to the same type is redundant and not permitted.
@@ -254,7 +259,7 @@ The C# language requires specific pairings and signatures for Boolean operators 
 - **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
 - **CS9027**: *Unexpected keyword 'unchecked'*
 
-The `checked` and `unchecked` keywords can only be applied to specific operator declarations. For the full rules, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
+The `checked` and `unchecked` keywords can only be applied to specific operator declarations. For the full rules, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [Operators](~/_csharpstandard/standard/classes.md#1510-operators) in the C# language specification.
 
 - Remove the `checked` or `unchecked` keyword from an unsupported operator (**CS9023**, **CS9024**). Only the arithmetic operators `+`, `-`, `*`, `/`, `++`, `--`, and explicit conversion operators support checked and unchecked variants. Other operators, such as comparison or equality operators, don't have distinct overflow behavior and can't be marked checked or unchecked.
 - Add a matching non-checked version of the operator (**CS9025**). A `checked` operator provides the overflow-throwing behavior, but the compiler also needs the corresponding unchecked version to use in `unchecked` contexts and as the default when neither context is specified.
@@ -270,7 +275,7 @@ The compiler enforces strict matching between operator declarations and the inte
 
 - Change the implementing member to an operator declaration that matches the interface's operator member, or change the interface member to a method if the implementing member is a method (**CS9311**). An operator can only implement an interface member that's also declared as an operator—you can't satisfy an operator contract with a regular method, or vice versa.
 - Change the overriding member to an operator declaration that matches the base class's operator member, or change the base class member to a method if the derived class member is a method (**CS9312**). Like interface implementation, an override must match the kind of member being overridden—an operator can't override a non-operator member.
-- Change the compound assignment operator declaration to accept exactly one parameter (**CS9313**). Compound assignment operators are instance members where the left operand is implicitly `this`, so only the right-hand operand is declared as a parameter.
+- Change the compound assignment operator declaration to accept exactly one parameter (**CS9313**). Compound assignment operators are instance members where the left operand is implicitly `this`, so you only declare the right-hand operand as a parameter.
 
 ## Equality operators
 
@@ -278,7 +283,7 @@ The compiler enforces strict matching between operator declarations and the inte
 - **CS0660**: *Type defines operator == or operator != but doesn't override Object.Equals(object o)*
 - **CS0661**: *Type defines operator == or operator != but doesn't override Object.GetHashCode()*
 
-The compiler requires that equality-related overrides and operator definitions stay in sync. When you override <xref:System.Object.Equals*?displayProperty=nameWithType> or define `operator ==` / `operator !=`, you must also provide the related overrides. For the full rules, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
+The compiler requires that equality-related overrides and operator definitions stay in sync. When you override <xref:System.Object.Equals*?displayProperty=nameWithType> or define `operator ==` / `operator !=`, you must also provide the related overrides. For the full rules, see [Implement equality yourself when a type can't be a record](../operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record) and [Equality operators](../operators/equality-operators.md).
 
 - Add an override of <xref:System.Object.GetHashCode*?displayProperty=nameWithType> when you override <xref:System.Object.Equals*?displayProperty=nameWithType> (**CS0659**). Hash-based collections like <xref:System.Collections.Generic.Dictionary`2> and <xref:System.Collections.Generic.HashSet`1> rely on the contract that two objects that are equal must return the same hash code. Without a matching `GetHashCode` override, objects that compare as equal might hash to different buckets, causing lookups and deduplication to fail silently.
 - Add an override of <xref:System.Object.Equals*?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0660**). Code that calls `Equals` directly—including many framework APIs, LINQ methods, and collection operations—won't use your custom operator. Without a consistent `Equals` override, the same two objects might be considered equal by `==` but not by `Equals`, leading to unpredictable behavior.

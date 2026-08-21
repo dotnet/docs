@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 05/12/2026
+ms.date: 08/12/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 11
 
-This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 4.
+This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 7. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
 ## SDK footprint
 
@@ -95,6 +95,7 @@ The pack operation still proceeds with a warning to avoid breaking existing proj
 - [dotnet watch improvements](#dotnet-watch-improvements)
 - [Fish shell completions](#fish-shell-completions)
 - [dotnet reference falls back to current directory](#dotnet-reference-falls-back-to-current-directory)
+- [dotnet reference support for file-based apps](#dotnet-reference-support-for-file-based-apps)
 - [Launch settings notice moved to stderr](#launch-settings-notice-moved-to-stderr)
 - [Other CLI improvements](#other-cli-improvements)
 
@@ -171,6 +172,10 @@ dotnet reference remove ../ClassLib1/ClassLib1.csproj
 
 Previously, these commands failed with `Could not find project or directory ''` when run from a directory that contained a project file.
 
+### 'dotnet reference' support for file-based apps
+
+`dotnet reference` now supports file-based apps. Use `dotnet reference add --file app.cs <project-path>` to add `#:project` directives directly to your file-based app, and use `dotnet reference list` and `dotnet reference remove` to manage those references.
+
 ### Launch settings notice moved to stderr
 
 The "Using launch settings from..." informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
@@ -201,21 +206,120 @@ The `dotnet` CLI now uses OpenTelemetry (OTel) with Azure Monitor and OTLP expor
 ## CLI architecture
 
 - [NativeAOT entry point for the dotnet CLI](#nativeaot-entry-point-for-the-dotnet-cli)
+- [MSBuild server enabled by default](#msbuild-server-enabled-by-default)
 - [Partial Ready-to-Run for upstack tooling](#partial-ready-to-run-for-upstack-tooling)
 
 ### NativeAOT entry point for the dotnet CLI
 
-To enable near-instant startup for common CLI invocations, .NET 11 lays the groundwork for a NativeAOT-compiled `dotnet` CLI host. The work introduces three layers:
+To enable near-instant startup for common CLI invocations, .NET 11 now enables the NativeAOT-compiled `dotnet` CLI host by default. You can opt out by setting `DOTNET_CLI_ENABLEAOT=false`. The managed and NativeAOT parsers share one implementation, so the AOT path parses, validates, and renders `--help` for every command.
 
-- `dn.exe` — a NativeAOT host that resolves `DOTNET_ROOT` and `hostfxr` and marshals arguments into a NativeAOT shared library. This is for SDK-repository dogfooding, not production usage.
-- `dotnet-aot.dll` — a NativeAOT shared library that handles simple commands such as `--version` and `--info` directly, and falls back to the full managed CLI for everything else.
-- `dotnet.dll` — the existing managed CLI, with `#if CLI_AOT` conditionals so the same source files can be compiled into both paths.
+Commands that can run entirely without the managed runtime execute natively. Every other command transparently falls back to the managed CLI. The following commands are fully served from the AOT path:
 
-The goal is near-instant startup for the most common CLI invocations while preserving full functionality for the rest. The new entry point isn't the default `dotnet` binary yet.
+- `dotnet --version`, `dotnet --info`, `dotnet --help`
+- `dotnet <command> --help` for every built-in command
+- `dotnet --cli-schema`
+- `dotnet sln list`, `dotnet sln migrate`, `dotnet sln remove`
+
+Tool and external-command invocations (global tools, PATH commands, app-base commands) now resolve and launch out-of-process from the AOT path as well, skipping the 600–700 ms managed CLI startup for commands like `dotnet ef` or `dotnet dev-certs`.
+
+OpenTelemetry tracing spans are emitted from the AOT path with correct parent/child relationships to the managed CLI spans, enabling end-to-end distributed trace analysis across both hosts.
+
+### MSBuild server enabled by default
+
+The MSBuild server is now enabled by default. This keeps a warm MSBuild worker between CLI invocations, which reduces startup overhead for repeated build and test commands. To opt out, set `DOTNET_CLI_USE_MSBUILD_SERVER=false` or `MSBUILDUSESERVER=0`.
 
 ### Partial Ready-to-Run for upstack tooling
 
 A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `dotnet/maui`) declare a list of assemblies to be partially R2R-compiled and excluded from the composite image. The motivating scenario is precompiling generated XAML code in Debug builds to speed up F5 without paying the full crossgen cost for the rest of the app. App developers don't set this property directly—it's a hook the mobile workloads use in their targets.
+
+## Test improvements
+
+- [dotnet test improvements](#dotnet-test-improvements)
+- [dotnet test run-level policy options](#dotnet-test-run-level-policy-options)
+- [dotnet test support for traversal projects](#dotnet-test-support-for-traversal-projects)
+- [dotnet test reporter and artifacts improvements](#dotnet-test-reporter-and-artifacts-improvements)
+- [Test templates support xUnit v3 and NUnit on Microsoft.Testing.Platform](#test-templates-support-xunit-v3-and-nunit-on-microsofttestingplatform)
+
+### dotnet test improvements
+
+.NET 11 adds several capabilities to `dotnet test` when running through Microsoft Testing Platform (MTP):
+
+- **`--no-dependencies`**: Skips building project-to-project references, matching the existing `dotnet build --no-dependencies` behavior.
+- **`DOTNET_TEST_RUNNER` environment variable**: Selects the test runner without requiring a `global.json` change. Set it to `VSTest` or `Microsoft.Testing.Platform` to override `global.json` for the current session.
+- **`--use-current-runtime` / `--ucr`**: Targets the current runtime during restore and build, matching the option already available on `dotnet build` and `dotnet publish`.
+- **`--test-modules` exclusion patterns**: Patterns starting with `!` are now treated as excludes, and whitespace between semicolons is trimmed, making YAML-folded CI expressions work correctly.
+- **Per-assembly test counts**: The summary line for multi-assembly runs now includes per-assembly counts.
+- **Terminal logger arguments**: `--tl`, `--terminallogger`, and `--tlp` are now forwarded to MSBuild instead of being passed as test application arguments.
+- **Live display of in-flight tests**: The progress area shows tests that are running, using a new `TestInProgressMessages` IPC event. The panel keeps per-assembly trimming for large parallel runs and is enabled only for interactive ANSI terminals.
+- **Two-stage Ctrl+C cancellation**: The first press stops scheduling new test apps and shows a hint; the second press force-kills all child test processes.
+- **`--device` for MAUI**: Select a device per target framework when running tests for .NET MAUI projects.
+- **Protocol 1.1.0 output forwarding**: When the test host supports protocol 1.1.0, stdout/stderr and `IOutputDevice` messages are streamed live through the terminal reporter instead of being shown only on failure.
+
+### dotnet test run-level policy options
+
+`dotnet test` now supports run-level `--timeout` and `--maximum-failed-tests` options in Microsoft Testing Platform mode. These options let you stop long or noisy runs consistently across multi-project executions.
+
+### dotnet test support for traversal projects
+
+`dotnet test` now supports `Microsoft.Build.Traversal` projects. The SDK expands traversal graphs, deduplicates repeated references, and executes tests for the aggregated project set.
+
+### dotnet test reporter and artifacts improvements
+
+Reporter and artifact handling has been improved for multi-module runs, including expected-versus-actual rendering in failure output, whole-run zero-test verdict logic, and automatic post-processing of compatible test artifacts.
+
+### Test templates support xUnit v3 and NUnit on Microsoft.Testing.Platform
+
+The built-in `xunit` template adds a `--xunit-version` option. Use `v3` to generate an xUnit v3 project that defaults to Microsoft.Testing.Platform as the runner:
+
+```bash
+dotnet new xunit --xunit-version v3
+dotnet new xunit --xunit-version v3 --test-runner VSTest
+```
+
+The `nunit` template similarly adds a `--test-runner` option to opt in to Microsoft.Testing.Platform:
+
+```bash
+dotnet new nunit --test-runner Microsoft.Testing.Platform
+```
+
+Both options are available for C#, F#, and VB templates.
+
+## Container and tooling updates
+
+- [Multi-arch container builds with Podman](#multi-arch-container-builds-with-podman)
+- [Platform-native local container runtime selection](#platform-native-local-container-runtime-selection)
+- [TypeScript outputs integrate with Static Web Assets](#typescript-outputs-integrate-with-static-web-assets)
+- [MSBuild server and OpenTelemetry environment variables](#msbuild-server-and-opentelemetry-environment-variables)
+
+### Multi-arch container builds with Podman
+
+The SDK's built-in container publishing now supports building multi-architecture container images when using Podman as the container engine. Previously, multi-arch builds required Docker. This unblocks rootless multi-arch workflows on Linux distributions that ship Podman by default.
+
+### Platform-native local container runtime selection
+
+Container publishing now prefers platform-native local runtimes when available: `wslc` on Windows, and `container` on macOS. Docker and Podman remain fallbacks. To force a runtime, set `LocalRegistry` explicitly in your project or publish profile.
+
+### TypeScript outputs integrate with Static Web Assets
+
+Projects that use `Microsoft.TypeScript.MSBuild` in Razor Class Libraries now properly integrate TypeScript compilation outputs with ASP.NET Core Static Web Assets. The new integration hooks TypeScript outputs into the Static Web Assets pipeline after compilation, enabling compression, fingerprinting, and correct rebuild behavior. Previously, rebuild operations could fail because TypeScript outputs were discovered before compilation or stale references persisted after clean.
+
+### MSBuild server and OpenTelemetry environment variables
+
+The `dotnet` CLI no longer suppresses the MSBuild build server when `DOTNET_CLI_USE_MSBUILD_SERVER` is unset. Previously the CLI unconditionally wrote `MSBUILDUSESERVER=0`, overriding any user-set value. Now, if `DOTNET_CLI_USE_MSBUILD_SERVER` is not set, the CLI leaves `MSBUILDUSESERVER` untouched so you can enable the MSBuild server directly.
+
+The OTLP telemetry exporter is now also enabled when any standard OpenTelemetry `OTEL_EXPORTER_OTLP_*` environment variable is present (endpoint, protocol, headers, or timeout—including signal-specific `_TRACES_*` and `_METRICS_*` variants), in addition to the existing `DOTNET_CLI_TELEMETRY_ENABLE_EXPORTER` flag.
+
+## Include DLLs in file-based apps
+
+File-based apps can now include compiled DLL references using `#:include` without a feature flag. The default item-type mapping treats `.dll` files as `Reference` items, so you can reference prebuilt libraries directly:
+
+```csharp
+#:include ./libs/MyLibrary.dll
+
+MyLibrary.Helper.DoWork();
+```
+
+Additionally, more `#:` directives are now allowed to appear as duplicates across included files when their values match (`#:sdk`, `#:property`, `#:package`), enabling self-contained library files that declare their own dependencies without conflicting when multiple entry points include them.
 
 ## See also
 

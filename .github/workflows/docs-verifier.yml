@@ -4,22 +4,21 @@ on: pull_request
 permissions:
   contents: read
 
-env:
-  GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   validate:
     name: MSDocs build verifier
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        uses: step-security/harden-runner@b09bb98e06d4d774595224525879c09bc6e98c40 # v2.20.1
         with:
           egress-policy: audit
 
       - name: Checkout the repository
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Validate
-        uses: dotnet/docs-tools/actions/docs-verifier@1397e452fa0b49e9e52bc2443cd9ec6182a05294 # main
+        uses: dotnet/docs-tools/actions/docs-verifier@main
+        env:
+          GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

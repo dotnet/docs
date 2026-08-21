@@ -99,6 +99,10 @@ Use `!` sparingly, and only when you have information the compiler doesn't. Exam
 
 ## See also
 
+<!-- Remove this HTML comment after dotnet/docs#55469 is merged and this branch is rebased.
+- [Expressions overview](../expressions/index.md)
+-->
+
 - [Null safety overview](index.md)
 - [Nullable value types](nullable-value-types.md)
 - [Nullable reference types](nullable-reference-types.md)

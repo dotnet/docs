@@ -9,8 +9,6 @@ ai-usage: ai-assisted
 
 # Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
 
-This article is one of a series of examples that illustrate [.NET observability with OpenTelemetry](./observability-with-otel.md).
-
 The Aspire Dashboard is a standard part of Aspire, but it's also available as a [standalone Docker container](https://aspire.dev/dashboard/standalone/) that provides an OTLP endpoint for sending telemetry. The dashboard visualizes logs, metrics, and traces. Using the dashboard this way has no dependency on Aspire, and it visualizes telemetry from any app that sends telemetry via OTLP. It works equally well for apps written in Java, GoLang, or Python, provided they can send their telemetry to an OTLP endpoint.
 
 The Aspire Dashboard requires less configuration and fewer setup steps than open-source solutions such as [Prometheus, Grafana, and Jaeger](./observability-prgrja-example.md). But unlike those tools, the Aspire Dashboard is a developer visualization tool, not a production monitoring tool.

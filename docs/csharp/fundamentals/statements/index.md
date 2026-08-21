@@ -31,7 +31,7 @@ A *declaration statement* introduces a local variable or constant. An initialize
 int quantity = 5;
 ```
 
-The complete line is a declaration statement. The initializer `5` is an expression within that statement. A declaration isn't an expression, so you can't place a declaration where C# expects a value.
+The complete line is a declaration statement. The initializer `5` is an expression within that statement.
 
 An *assignment expression* stores a value in a variable, property, indexer, or other storage location. C# permits an assignment expression to form an *expression statement*:
 
@@ -54,9 +54,9 @@ Only the following expression forms can be expression statements:
 - Prefix or postfix increment and decrement expressions
 - `await` expressions
 
-Not every expression can stand alone as a statement. For example, `quantity + 1;` computes a value but doesn't use it, so the compiler reports [Compiler Error CS0201](../../language-reference/compiler-messages/cs0201.md).
+Not every expression can stand alone as a statement. For example, `quantity + 1;` computes a value but doesn't use it. It's not a valid statement.
 
-<!-- Remove this HTML comment after dotnet/docs#55469 is merged and this branch is rebased. For more information, see the [Expressions overview](../expressions/index.md). -->
+Here's a useful working definition: a statement is roughly like a complete sentence in English, while an [expression](../expressions/index.md) is like a phrase. This distinction helps you understand the formal terminology and explanations you'll encounter in documentation and specifications, though ordinary coding rarely requires you to remember the distinction consciously.
 
 ## Group statements in blocks
 
@@ -66,7 +66,7 @@ Selection and iteration statements call their body an *embedded statement*. That
 
 Prefer a block even when a body contains only one statement. Braces show which statements belong to the body and prevent later edits from accidentally placing a statement outside it.
 
-### Blocks and variable scope
+### Blocks define variable scope
 
 Variables declared in a block are in scope from their declaration through the end of that block. A nested block can use variables declared by an enclosing block, but the enclosing block can't use variables declared only in the nested block:
 
@@ -84,16 +84,6 @@ After you recognize statements as commands, you can choose among their different
 - **Handle exceptions:** [Exception-handling statements](../../language-reference/statements/exception-handling-statements.md), such as `try`, `catch`, and `throw`, respond to or report errors.
 - **Manage resources:** The [`using` statement](../../language-reference/statements/using.md) ensures that resources are disposed.
 - **Use specialized behavior:** The [`checked` and `unchecked`](../../language-reference/statements/checked-and-unchecked.md), [`fixed`](../../language-reference/statements/fixed.md), and [`lock`](../../language-reference/statements/lock.md) statements support specific scenarios.
-
-## Less common statements
-
-The *empty statement* is a lone semicolon:
-
-```csharp
-;
-```
-
-It performs no action. An empty statement is legal where C# expects a statement, but a stray semicolon after an `if`, `while`, or `for` can create an empty body and cause unexpected behavior. Use an empty statement only when the no-op is intentional and clear.
 
 ## C# language specification
 

@@ -224,9 +224,9 @@ Once registered, the library emits the following metrics under the `Microsoft.Ex
 For the full list of metrics emitted by the base resource monitoring library, see [.NET extensions metrics: Microsoft.Extensions.Diagnostics.ResourceMonitoring](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
 
 ### Example output
-
 When you run your application inside a Kubernetes pod with the environment variables configured, the metrics produce values such as:
 
+```
 Instrument: container.cpu.limit.utilization
   Value: 0.23
 

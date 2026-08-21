@@ -123,7 +123,7 @@
 
 ### PR 17 — Deferred cleanup: slim `?:` in Selection statements (later pass)
 
-[#55613](https://github.com/dotnet/docs/pull/55613) *in draft status*
+[#55613](https://github.com/dotnet/docs/pull/55613) *merged*
 
 > ~2 files · **DEFERRED — sequence after PR 16; not part of the initial reorder batch**
 

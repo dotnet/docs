@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 07/09/2026
+ms.date: 08/21/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ai-usage: ai-assisted
@@ -298,9 +298,6 @@ dotnet-trace collect
 > - When you specify a stopping event through the `--stopping-event-*` options, as the EventStream is being parsed asynchronously, there will be some events that pass through between the time a trace event matching the specified stopping event options is parsed and the EventPipeSession is stopped.
 
 ## dotnet-trace collect-linux
-
-> [!NOTE]
-> The `collect-linux` verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files, but other ways of using the trace file, such as [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report), might not work yet.
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` enables the following additional features over [`collect`](#dotnet-trace-collect).
 
@@ -740,12 +737,6 @@ This example captures CPU samples for all processes on the machine. Any processe
 
   ```output
   $ sudo dotnet-trace collect-linux
-  ==========================================================================================
-  The collect-linux verb is a new preview feature and relies on an updated version of the
-  .nettrace file format. The latest PerfView release supports these trace files but other
-  ways of using the trace file may not work yet. For more details, see the docs at
-  https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace.
-  ==========================================================================================
   No providers, profiles, ClrEvents, or PerfEvents were specified, defaulting to trace profiles 'dotnet-common' + 'cpu-sampling'.
 
   Provider Name                           Keywords            Level               Enabled By
@@ -769,12 +760,6 @@ For environments with multiple .NET versions installed, running `collect-linux` 
 
   ```output
   $ dotnet-trace collect-linux --probe
-  ==========================================================================================
-  The collect-linux verb is a new preview feature and relies on an updated version of the
-  .nettrace file format. The latest PerfView release supports these trace files but other
-  ways of using the trace file may not work yet. For more details, see the docs at
-  https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace.
-  ==========================================================================================
   Probing .NET processes for support of the EventPipe UserEvents IPC command used by collect-linux. Requires runtime '10.0.0' or later.
   .NET processes that support the command:
   3802935 MyApp

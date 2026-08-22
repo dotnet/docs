@@ -20,6 +20,9 @@ jobs:
         with:
           egress-policy: audit
 
+      - name: Wait for OPS status check to start
+        run: sleep 180
+
       - uses: dotnet/docs-tools/actions/status-checker@main
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}

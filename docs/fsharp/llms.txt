@@ -1,0 +1,133 @@
+# F# Official Documentation ( Microsoft Learn )
+
+> Curated index of the F# Language Reference and related resources.  
+> Pages are grouped by topic; follow the links for full details in HTML or their `.md` counterparts when available.
+
+## Organizing Code
+- [Namespaces](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/namespaces): Group program elements under qualified names.  
+- [Modules](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/modules): File- or scope-level containers for values, types, and functions.  
+- [open Declarations](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/open-declarations): Bring module/namespace members into scope without full qualification.  
+- [Signatures](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/signatures): `.fsi` files that declare public shapes of modules and namespaces.  
+- [Access Control](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/access-control): `public`, `private`, `internal`, etc., for types and members.  
+- [XML Documentation](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/xml-documentation): Triple-slash comments that generate API docs.
+
+## Literals and Strings
+- [Literals](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/literals): Numeric/text literals and explicit type suffixes.  
+- [Strings](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/strings): Immutable UTF-16 text; new `s[i]`/`s[i..j]` syntax in F# 6+.  
+- [Interpolated Strings](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/interpolated-strings): Embed F# expressions with `$"…{expr}…"`.  
+
+## Values and Functions
+- [Values](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/values): `let`-bound immutable data.  
+- [Functions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/functions): Named, curried functions, composition, partial application.  
+- [Function Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/function-expressions): Anonymous functions with `fun`.
+
+## Loops and Conditionals
+- [if/then/else](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/conditional-expressions): Expression-based branching.  
+- [for…in](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/loops-for-in): Iterate over enumerables.  
+- [for…to](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/loops-for-to): Numeric range loops.  
+- [while…do](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/loops-while-do): Condition-controlled loops.
+
+## Pattern Matching
+- [Pattern Matching](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching): Decompose data with patterns.  
+- [Match Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/match-expressions): Branch on patterns.  
+- [Active Patterns](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/active-patterns): Custom pattern recognizers.
+
+## Exception Handling
+- [Exception Handling](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/exception-handling): Overview of exceptions.  
+- [try…with](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/try-with-expressions): Catch exceptions.  
+- [try…finally](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/try-finally-expressions): Cleanup code even on error.  
+- [use/use!](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/use-keyword): Deterministic disposal.  
+- [Assertions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/assertions): Debug-time checks.
+
+## Types & Inference
+- [Types](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/fsharp-types): Naming and semantics overview.  
+- [Basic Types](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/basic-types): Ints, floats, chars, etc.  
+- [Unit Type](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/unit-type): Placeholder value `()`.  
+- [Type Abbreviations](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-abbreviations)  
+- [Type Inference](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-inference)  
+- [Casting & Conversions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/casting-and-conversions)  
+- [Generics](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/generics)  
+- [Automatic Generalization](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/automatic-generalization)  
+- [Constraints](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/constraints)  
+- [Flexible Types](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/flexible-types)  
+- [Units of Measure](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/units-of-measure)  
+- [Byrefs](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/byrefs)
+
+## Tuples, Collections & Options
+- [Tuples](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/tuples)  
+- [Collections](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/fsharp-collection-types)  
+- [Lists](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/lists)  
+- [Options](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/options)  
+- [Arrays](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/arrays)  
+- [Sequences](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/sequences)  
+- [Sequence Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/sequence-expressions)  
+- [Reference Cells](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/reference-cells)
+
+## Records & Discriminated Unions
+- [Records](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/records)  
+- [Anonymous Records](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/anonymous-records)  
+- [Discriminated Unions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions)  
+- [Structs](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/structs)  
+- [Enumerations](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/enumerations)
+
+## Object Programming
+- [Classes](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/classes)  
+- [Interfaces](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/interfaces)  
+- [Abstract Classes](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/abstract-classes)  
+- [Type Extensions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-extensions)  
+- [Delegates](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/delegates)  
+- [Inheritance](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/inheritance)  
+- [Members](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/members)  
+- [Parameters and Arguments](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/parameters-and-arguments)  
+- [Operator Overloading](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/operator-overloading)  
+- [Object Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/object-expressions)
+
+## Async, Tasks & Lazy
+- [Async Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/async-expressions)  
+- [Task Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/task-expressions): Author `.NET Task<'T>` code with `task { … }`.  
+- [Lazy Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/lazy-expressions)
+
+## Computation Expressions & Queries
+- [Computation Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/computation-expressions)  
+- [Query Expressions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/query-expressions)
+
+## Reflection & Formatting
+- [Attributes](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/attributes)  
+- [nameof](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/nameof)  
+- [Caller Information](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/caller-information)  
+- [Source Line/File/Path](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/source-line-file-path-identifiers)  
+- [Code Quotations](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/code-quotations)  
+- [Plain Text Formatting](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/plain-text-formatting)
+
+## Type Providers
+- [Type Providers](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/type-providers)  
+- [Create a Type Provider](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/create-a-type-provider)
+
+## Reference Tables & Compiler
+- [Keyword Reference](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/keyword-reference)  
+- [Symbol and Operator Reference](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference)  
+- [Compiler Options](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/compiler-options)  
+- [Compiler Directives](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/compiler-directives)
+
+## Libraries
+- [FSharp.Core API](https://fsharp.github.io/fsharp-core-api/): Full API surface of the standard F# library.
+
+---
+
+## Coding Standards Guidance (for LLM-generated code)
+
+- Prefer **`task { … }` computation expressions** over older `async { … }` when interoperating with .NET libraries that consume `Task<'T>`; use `let!`/`return!` and support `and!` for concurrency.  
+- Use **modern indexing and slicing**: `array[i]`, `str[0..3]`, not `array.[i]` or `str.[…]`.  
+- Default to **pipeline (`|>`)** and **function composition (`>>`)** for data-flow; avoid imperative loops unless necessary.  
+- Write **immutable data** by default; if mutation is required, encapsulate it with clear intent (`mutable` fields, `ref` cells, or controlled `ValueTask` workflows).  
+- Follow latest **F# style suggestions** (modules first, explicit namespace, PascalCase types, camelCase values).  
+- Ensure **XML documentation** for public APIs and **triple-slash comments** are present.  
+
+---
+
+## Additional F# Community Resources
+- [FSharp.org](https://fsharp.org/): Home of the F# Software Foundation—news, language specification, getting-started guides, and community links.  
+- [F# for Fun and Profit](https://fsharpforfunandprofit.com/): Extensive tutorials, blog posts, and domain-driven design patterns in F#.  
+- [F# Weekly](https://sergeytihon.com/category/f-weekly/): Weekly digest of tooling, libraries, and community updates.  
+- [F# Slack](https://functionalprogramming.slack.com/): Real-time Q&A with the F# community.  
+- [Community Forums](https://forums.fsharp.org/): Threaded discussions for advanced topics and announcements.

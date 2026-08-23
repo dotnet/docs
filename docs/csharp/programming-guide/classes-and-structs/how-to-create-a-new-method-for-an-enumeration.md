@@ -18,6 +18,16 @@ You can call the extension method as though it was declared on the `enum` type:
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="ExampleExtendEnum":::
 
+:::output
+First is a passing grade.
+Second is not a passing grade.
+
+Raising the bar. Passing grade is now C!
+
+First is not a passing grade.
+Second is not a passing grade.
+:::
+
 Beginning with C# 14, you can declare *extension members* in an extension block. The new syntax enables you to add *extension properties*. You can also add extension members that appear to be new static methods or properties. You're no longer limited to extensions that appear to be instance methods. The following example shows an extension block that adds an instance extension property for `Passing`, and a static extension property for `MinimumPassingGrade`:
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="EnumExtensionMembers":::

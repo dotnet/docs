@@ -1,7 +1,7 @@
 ---
 title: Microsoft.Diagnostics.NETCore.Client API
 description: In this article, you'll learn about the Microsoft.Diagnostics.NETCore.Client APIs.
-ms.date: 07/09/2026
+ms.date: 08/24/2026
 author: tommcdon
 ms.author: tommcdon
 ms.topic: reference
@@ -374,7 +374,7 @@ Represents the configuration for an `EventPipeSession`.
 * `rundownKeyword` : The keyword mask used for rundown events.
 * `bufferingMode` : The [`EventPipeBufferingMode`](#eventpipebufferingmode-enum) for the session. Use `Block` to request non-lossy collection. Passing `Block` requires a .NET 11+ target runtime; on an older runtime, `StartEventPipeSession` throws [`UnsupportedCommandException`](#unsupportedcommandexception).
 
-The `BufferingMode` property returns the buffering mode for the session. The default value, `Drop`, keeps the runtime's lossy circular buffer.
+The `BufferingMode` property returns the buffering mode for the session. The default value, `Drop`, keeps the runtime's lossy buffer.
 
 ## EventPipeProvider class
 
@@ -671,7 +671,7 @@ public enum EventPipeBufferingMode
 
 Controls how the runtime's per-session event buffer behaves when it fills faster than the session drains it.
 
-* `Drop` : The runtime default. The session uses a circular buffer that drops events when it overflows, so collection is lossy.
+* `Drop` : The runtime default. The session uses a buffer that drops events when it overflows, so collection is lossy.
 * `Block` : Non-lossy collection. The runtime blocks event producers when the buffer is full instead of dropping events. Use it for collections that must be complete, such as a heap snapshot on a large heap. `Block` is non-lossy only up to the buffer's capacity, not against host memory exhaustion: if the runtime can't allocate the memory it needs to reserve buffer space, or during session shutdown, it drops the event instead of blocking. `Block` requires a .NET 11+ target runtime; on an older runtime, starting the session throws [`UnsupportedCommandException`](#unsupportedcommandexception).
 
 ## Exceptions

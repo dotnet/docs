@@ -1,7 +1,7 @@
 ---
 title: EventPipe Overview
 description: Learn about EventPipe and how to use it for tracing your .NET applications to diagnose performance issues.
-ms.date: 07/09/2026
+ms.date: 08/24/2026
 ms.topic: overview
 ai-usage: ai-assisted
 ---
@@ -81,13 +81,11 @@ However, you can use the following environment variables to set up an EventPipe 
 * `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
   > [!NOTE]
-  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
-  >
-  > As of .NET 11, a streaming session can opt into non-lossy buffering with `DOTNET_EventPipeBufferingMode=1` (or `--buffering-mode Block` in [dotnet-trace](./dotnet-trace.md)) to block the threads emitting events when the buffer is full instead of dropping them. Non-lossy buffering trades application throughput for completeness. It's non-lossy only up to the buffer's capacity, not against host memory exhaustion. Under memory pressure, the runtime can still drop events.
+  > If the target process writes events too frequently, it can overflow this buffer, and some events might be dropped. If the runtime drops too many events, set `DOTNET_EventPipeBufferingMode=1` or increase the buffer size to see if the number of dropped events decreases. If the number of dropped events does not decrease with a larger buffer size, a slow reader might prevent the target process's buffers from being flushed.
 
-* `DOTNET_EventPipeBufferingMode`: Available in .NET 11 and later. Controls how the startup EventPipe session's buffer behaves when it fills faster than it's drained. Set it to `0` (default) for the lossy circular buffer that drops events on overflow, or `1` for non-lossy (Block) buffering, which pauses the threads that emit events when the buffer is full instead of dropping them. Only `0` and `1` are valid, and `1` requires a streaming session (see `DOTNET_EventPipeOutputStreaming`); any other value, or `1` for a non-streaming file session, starts no session.
+* `DOTNET_EventPipeBufferingMode`: Available in .NET 11 and later. This setting controls how the startup EventPipe session handles recording an event when the in-memory buffer is full. Set it to `0` (default) to drop events that would overflow the buffer, or `1` to pause event-writing threads until buffer space becomes available. `1` requires a streaming session (see `DOTNET_EventPipeOutputStreaming`).
 
-* `DOTNET_EventPipeOutputStreaming`: Set this to `1` to stream the startup EventPipe session's events continuously instead of buffering them and writing at process exit. A streaming session is required for `DOTNET_EventPipeBufferingMode=1` (non-lossy) to take effect.
+* `DOTNET_EventPipeOutputStreaming`: Set this to `1` to stream the startup EventPipe session's events to disk as quickly as possible after they occur. By default, events are stored in memory and not written to disk until the application is exiting. A streaming session is required for `DOTNET_EventPipeBufferingMode=1` to take effect.
 
 * `DOTNET_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 

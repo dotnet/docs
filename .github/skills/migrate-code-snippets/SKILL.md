@@ -4,7 +4,6 @@ description: 'Migrates .NET documentation code from the legacy ~/samples/snippet
 argument-hint: 'Provide the Markdown article file whose legacy snippets need migration'
 owner: adegeo
 version: 2
-ai-usage: ai-assisted
 ---
 
 # Migrate Code Snippets
@@ -23,11 +22,7 @@ This skill requires one Markdown article file as input. Treat the supplied file 
 - Update every legacy snippet reference in the target article.
 - Don't leave incomplete or noncompilable code.
 
-## Snippet Locations
-
-This repository has two locations for code snippets.
-
-### Legacy Location
+## Legacy Snippets
 
 - Path: `~/samples/snippets/`
 - Example: `~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs`
@@ -40,47 +35,6 @@ Legacy article references generally use this syntax:
 [!code-{code-language}[description](~/samples/snippets/{path-to-file}#{snippet-identifier})]
 ```
 
-### Current Location
-
-Use this path pattern:
-
-`./snippets/{article-name}/[net-or-framework]/[optional-subject]/{code-language}/`
-
-Examples:
-
-- Standard C#: `./snippets/anchors-in-regular-expressions/csharp/Form1.cs`
-- Standard Visual Basic: `./snippets/anchors-in-regular-expressions/vb/Form1.vb`
-- .NET in a dual-framework article: `./snippets/clipboard-operations/net/csharp/Form1.cs`
-- .NET Framework in a dual-framework article: `./snippets/clipboard-operations/framework/csharp/Form1.cs`
-- Separate projects to prevent conflicts: `./snippets/program-structure/AsyncProgram/csharp/Program.cs`
-- Language guide: `./snippets/pattern-matching/Program.cs`
-
-The path components have these meanings:
-
-- `./`: The folder that contains the target article.
-- `snippets/`: The root folder for that article's snippets.
-- `{article-name}`: The article filename without the `.md` extension. For example, use `anchors-in-regular-expressions` for `anchors-in-regular-expressions.md`.
-- `[net-or-framework]`: An optional folder for articles that demonstrate both platforms. Use `net/` for modern .NET (like .NET 10) and `framework/` for .NET Framework. Omit this folder when the article targets only one platform.
-- `[optional-subject]`: An optional descriptive folder for snippets that can't compile in one project, such as two examples that each require a different `Program.cs` file.
-- `{code-language}`: Use `csharp` for C# and `vb` for Visual Basic.
-
-For a C# or Visual Basic language-guide article, provide only the guide's language and omit the language folder. For all other articles, provide both languages and include the `csharp/` and `vb/` folders.
-
-Current snippets must:
-
-- Be complete and compilable.
-- Include a project file.
-- Target the latest .NET or .NET Framework version appropriate to the article.
-- Provide both C# and Visual Basic versions, except in language-guide articles.
-- Use syntax appropriate for the target platform.
-- Use meaningful CamelCase snippet identifiers, such as `BasicClipboardData`, `CustomDataFormat`, or `ClipboardImageHandling`. Don't use identifiers such as `1`, `2`, `code1`, or `snippet1`.
-
-Current article references use this syntax:
-
-```markdown
-:::code language="{code-language}" source="{relative-file-path}" id="{snippet-identifier}":::
-```
-
 ## Migration Workflow
 
 Follow these steps in order.
@@ -91,29 +45,25 @@ Follow these steps in order.
 2. Identify the language of each reference.
 3. Record each source file and snippet identifier.
 4. Read the referenced legacy code and enough article context to preserve its behavior and target platform.
+5. Determine which examples require separate subject folders because their entry points, project types, target frameworks, or dependencies conflict.
 
-### 2. Create or Reuse the Folder Structure
+### 2. Create the Snippet Folder Structure
 
-1. Use `./snippets/{article-name}/[optional-subject]/{code-language}/` unless the platform or language-guide rules require another structure.
-2. If the article already has current snippets, reuse its folder structure and merge code into an existing project when practical. Add classes or code files as needed. The code must compile, but the program entry point doesn't need to run every snippet.
-3. If the article has no current snippet project, use the `dotnet` CLI to create one. Never create project files manually.
-4. Create a console app unless the snippet requires another project type, such as Windows Forms.
-5. Specify a meaningful project name with `-n`. For example, use `dotnet new console -n ClipboardExample` for clipboard examples or `dotnet new console -n EventsOverview` for event examples.
+Choose every required platform, subject, and language path segment. For a language-guide article, omit the language segment. Load and follow the `create-snippet-folders` skill with the target article and the complete list of chosen segments. Use the returned directories for the migrated files.
 
-### 3. Migrate the Code
+### 3. Create or Reuse the Projects
+
+Reuse an existing project only when its language, platform, project type, and dependencies are compatible with the migrated code. For each new project, change to its intended snippet directory and use the `dotnet` CLI to create it. Never create project files manually, and don't specify an output folder with `-o`.
+
+Use `dotnet new console` unless the snippet requires another project type, such as Windows Forms. Specify a meaningful project name with `-n`, such as `ClipboardExample` or `EventsOverview`.
+
+### 4. Migrate the Code
 
 1. Copy the snippet code and only the supporting code required for it to compile.
 2. Preserve the original code and behavior. Don't modernize it.
 3. Add only the minimum scaffolding necessary for compilation.
 
-### 4. Provide the Required Languages
-
-For standard articles, create both versions:
-
-- C#: `./snippets/{article-name}/csharp/`
-- Visual Basic: `./snippets/{article-name}/vb/`
-
-For a language-guide article, create only the guide's language and use `./snippets/{article-name}/` without a language folder.
+For every structure returned by the shared skill, provide the corresponding C# or Visual Basic version. The code must compile, but the project entry point doesn't need to run every snippet.
 
 ### 5. Update the Article References
 

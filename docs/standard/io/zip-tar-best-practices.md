@@ -54,7 +54,7 @@ Best for: simple workflows with trusted input, quick scripts, and build tooling.
 
 Use these APIs for full control over each archive entry. They're essential for large archives or untrusted input.
 
-- **ZIP:** Use <xref:System.IO.Compression.ZipArchive?displayProperty=fullName> to open an archive and iterate, read, or write entries selectively. Use <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*> to extract individual entries, or <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory*> to extract all entries from an already-opened archive.
+- **ZIP:** Use <xref:System.IO.Compression.ZipArchive?displayProperty=fullName> to open an archive and iterate, read, or write entries selectively. Use <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*> to extract individual entries.
 
 - **TAR:** Use <xref:System.Formats.Tar.TarReader?displayProperty=fullName> and <xref:System.Formats.Tar.TarWriter> for sequential entry-by-entry access. Use <xref:System.Formats.Tar.TarEntry.ExtractToFile*?displayProperty=fullName> to extract individual entries.
 
@@ -75,24 +75,19 @@ When the archive source is known and trusted, the [convenience methods](#conveni
 
 - TAR extraction handles overwriting differently: it deletes the existing file before writing the replacement. If extraction fails after deletion (for example, due to an I/O error or process interruption), the original file is lost and the replacement might be incomplete. Consider backing up critical files before overwriting with TAR extraction.
 
-> [!NOTE]
-> The convenience methods don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
+> [!WARNING]
+> The `ExtractToDirectory` convenience methods must only be used on trusted inputs. These helpers don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
 
 ## Handle untrusted archives safely
 
 For untrusted input—user uploads, third-party downloads, or network transfers—iterate over entries manually and enforce your own safety checks. The following subsections describe what you need to enforce and why.
 
-- [What the convenience methods don't protect you from](#what-the-convenience-methods-dont-protect-you-from)
 - [Enforce size and entry count limits](#enforce-size-and-entry-count-limits)
 - [Validate file names](#validate-file-names)
 - [Validate destination paths](#validate-destination-paths)
 - [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar)
 - [Entry permission bits (Unix only)](#entry-permission-bits-unix-only)
 - [Complete safe extraction examples](#complete-safe-extraction-examples)
-
-### What the convenience methods don't protect you from
-
-`ExtractToDirectory` protects against *path traversal*—an attack where a malicious entry name like `../../etc/passwd` tries to write outside the destination directory. The method resolves each entry's full path and rejects any that fall outside the target directory (for TAR, this check also covers symbolic link targets). However, `ExtractToDirectory` doesn't enforce size limits or entry count limits.
 
 ### Enforce size and entry count limits
 
@@ -211,7 +206,10 @@ Additionally, when you open a <xref:System.IO.Compression.ZipArchive> in <xref:S
 
 ### TAR streaming model
 
-<xref:System.Formats.Tar.TarReader?displayProperty=fullName> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> call. If you need to retain entry data, either copy it immediately or pass `copyContents: true` to <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType>, which copies the entry data into a separate <xref:System.IO.MemoryStream> that remains valid after advancing. Like <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType>, `copyContents: true` loads the full entry into memory, so check entry sizes before using it with untrusted archives.
+<xref:System.Formats.Tar.TarReader?displayProperty=fullName> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> call. If you need to retain entry data, copy it immediately to a separate <xref:System.IO.MemoryStream> that remains valid after advancing.
+
+> [!WARNING]
+> Avoid using <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> with `copyContents: true` on untrusted archives, as it allocates a potentially large amount of memory for the <xref:System.IO.MemoryStream> to hold the entry contents. Pass `copyContents: false` and validate the entry size before materializing the contents manually.
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="TarStreaming":::
 

@@ -732,6 +732,12 @@ items:
       CS1688, CS1706, CS1731, CS1732, CS1764, CS1911, CS1989, CS3006, CS8030, CS8175,
       CS8820, CS8821, CS8916, CS8917, CS8934, CS8971, CS8972, CS8974, CS8975, CS9098,
       CS9099, CS9100, CS9236
+  - name: Expression-form restrictions
+    href: ./compiler-messages/expression-form-restrictions.md
+    displayName: >
+      keyword contexts, base keyword, null, void, throw expressions,
+      declaration expressions, invalid contexts,
+      CS0175, CS0186, CS1547, CS8115, CS8185, CS8209, CS8310, CS8312
   - name: Local functions
     href: ./compiler-messages/local-function-errors.md
     displayName: >
@@ -991,8 +997,6 @@ items:
       href: ./compiler-messages/cs0173.md
     - name: CS0174
       href: ../misc/cs0174.md
-    - name: CS0175
-      href: ../misc/cs0175.md
     - name: CS0176
       href: ../misc/cs0176.md
     - name: CS0177
@@ -1001,8 +1005,6 @@ items:
       href: ../misc/cs0179.md
     - name: CS0180
       href: ../misc/cs0180.md
-    - name: CS0186
-      href: ../misc/cs0186.md
     - name: CS0191
       href: ../misc/cs0191.md
     - name: CS0198
@@ -1363,8 +1365,6 @@ items:
       href: ../misc/cs1542.md
     - name: CS1545
       href: ../misc/cs1545.md
-    - name: CS1547
-      href: ../misc/cs1547.md
     - name: CS1548
       href: ./compiler-messages/cs1548.md
     - name: CS1551

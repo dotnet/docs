@@ -5069,6 +5069,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/default"
     },
     {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/expression-bodied-members.md",
+      "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition"
+    },
+    {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/expressions.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/index"
     },
@@ -5090,7 +5094,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/index.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/statements"
+      "redirect_url": "/dotnet/csharp/fundamentals/statements"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md",
@@ -5103,6 +5107,10 @@
     {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/overloadable-operators.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading#overloadable-operators"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/statements.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/statements"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md",
@@ -5828,6 +5836,33 @@
     {
       "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
       "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/equality-comparisons.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#use-objectreferenceequals-to-test-identity-directly"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#implement-equality-yourself-when-a-type-cant-be-a-record"
+    },
+    {
+      "source_path": "docs/csharp/misc/cs0175.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "docs/csharp/misc/cs0186.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "docs/csharp/misc/cs1547.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
+      "redirect_document_id": "false"
     }
   ]
 }

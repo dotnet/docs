@@ -305,7 +305,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
-- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
@@ -442,7 +442,7 @@ The major features of C# 1.0 included:
 - [Properties](../programming-guide/classes-and-structs/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
-- [Statements](../programming-guide/statements-expressions-operators/statements.md)
+- [Statements](../fundamentals/statements/index.md)
 - [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

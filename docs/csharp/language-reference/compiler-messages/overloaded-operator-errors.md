@@ -107,8 +107,8 @@ ai-usage: ai-assisted
 
 This article covers the following compiler errors and warnings:
 
-<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+<!-- The text in this list generates issues for Acrolinx, because it doesn't use contractions.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0031**](#overflow-and-underflow-errors): *Constant value 'value' cannot be converted to a 'type'*
 - [**CS0056**](#inconsistent-accessibility): *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'*
@@ -231,7 +231,7 @@ All types used in a public operator's signature must be at least as accessible a
 
 The C# language restricts which types can participate in user-defined conversions. For the full rules, see [User-defined conversion operators](../operators/user-defined-conversion-operators.md) and [Conversion operators](~/_csharpstandard/standard/classes.md#15104-conversion-operators) in the C# specification.
 
-- Remove the conversion operator that converts to or from an interface type (**CS0552**). The language prohibits user-defined conversions involving interface types because interface conversions are handled through the type system's reference conversions and boxing. Use explicit interface implementations or helper methods instead.
+- Remove the conversion operator that converts to or from an interface type (**CS0552**). The language prohibits user-defined conversions involving interface types because the type system handles interface conversions through reference conversions and boxing. Use explicit interface implementations or helper methods instead.
 - Remove the conversion operator that converts to or from a base class (**CS0553**). Conversions between a type and its base class already exist through implicit reference conversions (upcast) and explicit reference conversions (downcast), so a user-defined conversion would create ambiguity.
 - Remove the conversion operator that converts to or from a derived class (**CS0554**). Like base class conversions, conversions between a type and its derived types are built into the language through inheritance, and user-defined conversions would conflict with them.
 - Remove the conversion operator that converts the enclosing type to itself (**CS0555**). Every type already has an implicit identity conversion to itself, so a user-defined conversion from a type to the same type is redundant and not permitted.
@@ -275,7 +275,7 @@ The compiler enforces strict matching between operator declarations and the inte
 
 - Change the implementing member to an operator declaration that matches the interface's operator member, or change the interface member to a method if the implementing member is a method (**CS9311**). An operator can only implement an interface member that's also declared as an operator—you can't satisfy an operator contract with a regular method, or vice versa.
 - Change the overriding member to an operator declaration that matches the base class's operator member, or change the base class member to a method if the derived class member is a method (**CS9312**). Like interface implementation, an override must match the kind of member being overridden—an operator can't override a non-operator member.
-- Change the compound assignment operator declaration to accept exactly one parameter (**CS9313**). Compound assignment operators are instance members where the left operand is implicitly `this`, so only the right-hand operand is declared as a parameter.
+- Change the compound assignment operator declaration to accept exactly one parameter (**CS9313**). Compound assignment operators are instance members where the left operand is implicitly `this`, so you only declare the right-hand operand as a parameter.
 
 ## Equality operators
 
@@ -283,7 +283,7 @@ The compiler enforces strict matching between operator declarations and the inte
 - **CS0660**: *Type defines operator == or operator != but doesn't override Object.Equals(object o)*
 - **CS0661**: *Type defines operator == or operator != but doesn't override Object.GetHashCode()*
 
-The compiler requires that equality-related overrides and operator definitions stay in sync. When you override <xref:System.Object.Equals*?displayProperty=nameWithType> or define `operator ==` / `operator !=`, you must also provide the related overrides. For the full rules, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
+The compiler requires that equality-related overrides and operator definitions stay in sync. When you override <xref:System.Object.Equals*?displayProperty=nameWithType> or define `operator ==` / `operator !=`, you must also provide the related overrides. For the full rules, see [Implement equality yourself when a type can't be a record](../operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record) and [Equality operators](../operators/equality-operators.md).
 
 - Add an override of <xref:System.Object.GetHashCode*?displayProperty=nameWithType> when you override <xref:System.Object.Equals*?displayProperty=nameWithType> (**CS0659**). Hash-based collections like <xref:System.Collections.Generic.Dictionary`2> and <xref:System.Collections.Generic.HashSet`1> rely on the contract that two objects that are equal must return the same hash code. Without a matching `GetHashCode` override, objects that compare as equal might hash to different buckets, causing lookups and deduplication to fail silently.
 - Add an override of <xref:System.Object.Equals*?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0660**). Code that calls `Equals` directly—including many framework APIs, LINQ methods, and collection operations—won't use your custom operator. Without a consistent `Equals` override, the same two objects might be considered equal by `==` but not by `Equals`, leading to unpredictable behavior.

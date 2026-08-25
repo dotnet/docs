@@ -3,7 +3,7 @@ title: Build extensions for Microsoft.Testing.Platform (MTP)
 description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/17/2026
+ms.date: 08/25/2026
 ai-usage: ai-assisted
 ---
 
@@ -311,6 +311,9 @@ The `IDataConsumer` inherits from [IExtension](./microsoft-testing-platform-arch
 `DataTypesConsumed`: This property returns a list of `Type` that this extension plans to consume. It corresponds to `IDataProducer.DataTypesProduced`. Notably, an `IDataConsumer` can subscribe to multiple types originating from different `IDataProducer` instances without any issues.
 
 `ConsumeAsync`: This method is triggered whenever data of a type to which the current consumer is subscribed is published to the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service). It receives the `IDataProducer` to provide details about the data payload's producer, as well as the `IData` payload itself. As you can see, `IData` is a generic placeholder interface that contains general informative data. The ability to publish different types of `IData` implies that the consumer needs to *switch* on the type itself to cast it to the correct type and access the specific information.
+
+> [!IMPORTANT]
+> The message bus doesn't invoke an `IDataConsumer` for data from an `IDataProducer` whose `IExtension.Uid` matches the consumer's `IExtension.Uid`. If an extension both publishes and subscribes to message bus data, assign distinct UIDs to its producer and consumer registrations. To process data that the extension produces itself, call the processing logic directly instead of routing the data through the message bus.
 
 A sample implementation of a consumer that wants to elaborate the [`TestNodeUpdateMessage`](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data) produced by a [testing framework](./microsoft-testing-platform-architecture-test-framework.md#test-framework-extension) could be:
 

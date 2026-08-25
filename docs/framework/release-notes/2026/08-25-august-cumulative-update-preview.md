@@ -1,11 +1,11 @@
 ---
 title: August 2026 cumulative update preview
 description: Learn about the improvements in the .NET Framework August 2026 cumulative update preview.
-ms.date: 08/25/2026
+ms.date: 08/27/2026
 ---
 # .NET Framework August 2026 cumulative update preview
 
-_Released August 25, 2026_
+_Released August 27, 2026_
 
 ## Summary of what's new in this release
 

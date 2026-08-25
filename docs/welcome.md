@@ -25,7 +25,7 @@ Also follow the latest .NET events:
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET 11](core/whats-new/dotnet-11/overview.md)
+- [What's new in .NET 11](core/whats-new/dotnet-11/overvieeew.md)
 - [What's new in C# 15](./csharp/whats-new/csharp-15.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
 

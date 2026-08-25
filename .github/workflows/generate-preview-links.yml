@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       statuses: read
+      checks: write
       pull-requests: write
     steps:
       - name: Harden Runner

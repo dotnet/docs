@@ -14,13 +14,13 @@ This article shows how to get the value of elements. There are two main ways to 
 
 - Cast an <xref:System.Xml.Linq.XElement> or an <xref:System.Xml.Linq.XAttribute> to the desired type. The explicit conversion operator then converts the contents of the element or attribute to the specified type and assigns it to your variable.
 
-- Use the <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> or <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType> properties. You can also set the value using these properties.
+- Use the <xref:System.Xml.Linq.XElement.Value*?displayProperty=nameWithType> or <xref:System.Xml.Linq.XAttribute.Value?displayProperty=nameWithType> properties. You can also set the value using these properties.
 
-With C#, casting is generally the better approach. If you cast the element or attribute to a nullable value type, the code is simpler to write when retrieving the value of an element (or attribute) that may not exist. The last example in this article demonstrates this. However, you can't set the contents of an element through casting, as you can through <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property.
+With C#, casting is generally the better approach. If you cast the element or attribute to a nullable value type, the code is simpler to write when retrieving the value of an element (or attribute) that may not exist. The last example in this article demonstrates this. However, you can't set the contents of an element through casting, as you can through <xref:System.Xml.Linq.XElement.Value?displayProperty=nameWithType> property.
 
-With Visual Basic, the better approach is to use the <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property.
+With Visual Basic, the better approach is to use the <xref:System.Xml.Linq.XElement.Value?displayProperty=nameWithType> property.
 
-## String cast example  
+## String cast example
 
 To retrieve the value of an element, cast the <xref:System.Xml.Linq.XElement> object to your desired type. You can cast an element to a string, as follows:
 
@@ -43,9 +43,9 @@ This example produces the following output:
 Value of e:abcde
 ```
 
-## Integer cast example  
+## Integer cast example
 
-You can also cast elements to types other than string. For example, if you have an element that contains an integer, you can cast it to `int`, as shown in the following code:  
+You can also cast elements to types other than string. For example, if you have an element that contains an integer, you can cast it to `int`, as shown in the following code:
 
 ```csharp
 XElement e = new XElement("Age", "44");
@@ -72,7 +72,7 @@ LINQ to XML provides the same cast operators for <xref:System.Xml.Linq.XAttribut
 
 ## Value property example
 
-You can use the <xref:System.Xml.Linq.XElement.Value%2A> property to retrieve the contents of an element:
+You can use the <xref:System.Xml.Linq.XElement.Value> property to retrieve the contents of an element:
 
 ```csharp
 XElement e = new XElement("StringElement", "abcde");
@@ -95,7 +95,7 @@ Value of e:abcde
 
 ## Element might not exist example
 
-Sometimes you try to retrieve the value of an element even though you're not sure if it exists. In this case, when you assign the casted element to a nullable reference type or nullable value type, if the element doesn't exist, the assigned variable is set to `null` (C#) or `nothing` (Visual Basic). The following code shows that when the element may not exist, it's easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.
+Sometimes you try to retrieve the value of an element even though you're not sure if it exists. In this case, when you assign the casted element to a nullable reference type or nullable value type, if the element doesn't exist, the assigned variable is set to `null` (C#) or `nothing` (Visual Basic). The following code shows that when the element may not exist, it's easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value> property.
 
 ```csharp
 XElement root = new XElement("Root",

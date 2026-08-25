@@ -2,7 +2,7 @@
 title: "How to: Expose a Contract to SOAP and Web Clients"
 description: Learn how to make a WFC server endpoint available to both SOAP and non-SOAP clients. By default, endpoints are available only to SOAP clients.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: bb765a48-12f2-430d-a54d-6f0c20f2a23a
@@ -54,7 +54,7 @@ By default, Windows Communication Foundation (WCF) makes endpoints available onl
 
 ## To call service operations on the Web endpoint in code
 
-1. Create an instance of <xref:System.ServiceModel.Web.WebChannelFactory%601> within a `using` block, as shown in the following code.
+1. Create an instance of <xref:System.ServiceModel.Web.WebChannelFactory`1> within a `using` block, as shown in the following code.
 
      [!code-csharp[htSoapWeb#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/htsoapweb/cs/program.cs#6)]
      [!code-vb[htSoapWeb#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htsoapweb/vb/program.vb#6)]

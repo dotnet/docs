@@ -209,7 +209,7 @@ The following example declares a property in a class.
 
 The following example shows how to create a parameterized property, also called an indexer, which allows array-like access to a collection:
 
-[!code-vb[VbVbalrStatements#52](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#52)]
+[!code-vb[VbVbalrStatements#59](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#59)]
 
 For comprehensive examples of property usage, including automatic implementation, mixed access levels, and validation scenarios, see [Property Procedures](../../programming-guide/language-features/procedures/property-procedures.md).
 

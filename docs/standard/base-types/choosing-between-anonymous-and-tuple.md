@@ -1,20 +1,18 @@
 ---
 title: Choosing between anonymous and tuple types
 description: Learn when it's appropriate to choose between anonymous types, and tuple type.
-author: IEvangelist
-ms.author: dapine
 ms.topic: concept-article
 ms.date: 07/01/2020
 ---
 # Choosing between anonymous and tuple types
 
-Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple%602?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple%602?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
+Choose between anonymous types, <xref:System.Tuple`2?displayProperty=nameWithType>, and <xref:System.ValueTuple`2?displayProperty=nameWithType> based on usability, performance, and tradeoffs. `ValueTuple` provides a value type with the flexibility of anonymous types. This article explains when to choose each type.
 
 ## Usability and functionality
 
-Anonymous types were introduced in C# 3.0 with Language-Integrated Query (LINQ) expressions. With LINQ, developers often project results from queries into anonymous types that hold a few select properties from the objects they're working with. Consider the following example, that instantiates an array of <xref:System.DateTime> objects, and iterates through them projecting into an anonymous type with two properties.
+With Language-Integrated Query (LINQ), you often project query results into anonymous types that hold a few selected properties from the source objects. The following example instantiates an array of <xref:System.DateTime> objects and projects each object into an anonymous type with two properties.
 
-```csharp-interactive
+```csharp
 var dates = new[]
 {
     DateTime.UtcNow.AddHours(-1),
@@ -48,9 +46,9 @@ internal sealed class f__AnonymousType0
 }
 ```
 
-For more information, see [anonymous types](../../csharp/fundamentals/types/anonymous-types.md). The same functionality exists with tuples when projecting into LINQ queries, you can select properties into tuples. These tuples flow through the query, just as anonymous types would. Now consider the following example using the `System.Tuple<string, long>`.
+For more information, see [anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). The same functionality exists with tuples when projecting into LINQ queries, you can select properties into tuples. These tuples flow through the query, just as anonymous types would. Now consider the following example using the `System.Tuple<string, long>`.
 
-```csharp-interactive
+```csharp
 var dates = new[]
 {
     DateTime.UtcNow.AddHours(-1),
@@ -66,9 +64,9 @@ foreach (var tuple in
 }
 ```
 
-With the <xref:System.Tuple%602?displayProperty=nameWithType>, the instance exposes numbered item properties, such as `Item1`, and `Item2`. These property names can make it more difficult to understand the intent of the property values, as the property name only provides the ordinal. Furthermore, the `System.Tuple` types are reference `class` types. The <xref:System.ValueTuple%602?displayProperty=nameWithType> however, is a value `struct` type. The following C# snippet, uses `ValueTuple<string, long>` to project into. In doing so, it assigns using a literal syntax.
+With the <xref:System.Tuple`2?displayProperty=nameWithType>, the instance exposes numbered item properties, such as `Item1`, and `Item2`. These property names can make it more difficult to understand the intent of the property values, as the property name only provides the ordinal. Furthermore, the `System.Tuple` types are reference `class` types. The <xref:System.ValueTuple`2?displayProperty=nameWithType> however, is a value `struct` type. The following C# snippet, uses `ValueTuple<string, long>` to project into. In doing so, it assigns using a literal syntax.
 
-```csharp-interactive
+```csharp
 var dates = new[]
 {
     DateTime.UtcNow.AddHours(-1),
@@ -95,10 +93,10 @@ You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, 
 ### Key differences
 
 | Name                     | Access modifier | Type     | Custom member name | Deconstruction support | Expression tree support |
-|--------------------------|-----------------|----------|----------------------|------------------------|-------------------------|
-| Anonymous types          | `internal`      | `class`  | ✔️                   | ❌                     | ✔️                     |
-| <xref:System.Tuple>      | `public`        | `class`  | ❌                   | ❌                     | ✔️                     |
-| <xref:System.ValueTuple> | `public`        | `struct` | ✔️                   | ✔️                     | ❌                     |
+|--------------------------|-----------------|----------|--------------------|------------------------|-------------------------|
+| Anonymous types          | `internal`      | `class`  | ✔️                 | ❌                     | ✔️ |
+| <xref:System.Tuple>      | `public`        | `class`  | ❌                 | ❌                     | ✔️ |
+| <xref:System.ValueTuple> | `public`        | `struct` | ✔️                 | ✔️                     | ❌ |
 
 ### Serialization
 
@@ -114,7 +112,7 @@ As a developer choosing between tuples and anonymous types, there are several fa
 
 ## See also
 
-- [Anonymous types](../../csharp/fundamentals/types/anonymous-types.md)
+- [Anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md)
 - [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md)

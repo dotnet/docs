@@ -1,9 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SystemTextJsonSamples
+﻿namespace SystemTextJsonSamples
 {
     public class Program
     {
@@ -17,8 +12,6 @@ namespace SystemTextJsonSamples
             MetadataOnlyNoOptions.Program.Main();
             Console.WriteLine("\n============================= SerializeOnlyWithOptions\n");
             SerializeOnlyWithOptions.Program.Main();
-            Console.WriteLine("\n============================= JsonSerializerOptionsExample\n");
-            JsonSerializerOptionsExample.Program.Main();
             Console.WriteLine("\n============================= ObjectProperties\n");
             ObjectProperties.Program.Main();
         }

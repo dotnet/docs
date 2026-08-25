@@ -16,7 +16,7 @@ Calling them in code generates warning `SYSLIB0053` at compile time.
 
 ## Reason for obsoletion
 
-AES-GCM supports tags of various lengths, from 12 to 16 bytes, depending on the platform. Previously, the <xref:System.Security.Cryptography.AesGcm> class would determine the desired tag size based on the size of the tag itself. For example, if <xref:System.Security.Cryptography.AesGcm.Decrypt%2A> was called with a 14 byte tag, it was assumed the tag was supposed to be 14 bytes.
+AES-GCM supports tags of various lengths, from 12 to 16 bytes, depending on the platform. Previously, the <xref:System.Security.Cryptography.AesGcm> class would determine the desired tag size based on the size of the tag itself. For example, if <xref:System.Security.Cryptography.AesGcm.Decrypt*> was called with a 14 byte tag, it was assumed the tag was supposed to be 14 bytes.
 
 However, AES-GCM supports these various lengths by truncation. AES-GCM natively produces 16 byte tags, and shorter tags are produced by truncating the tag.
 

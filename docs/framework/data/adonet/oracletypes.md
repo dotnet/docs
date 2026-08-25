@@ -44,7 +44,7 @@ public void Setup(string connectionString)
 
 ## Retrieve data from the Oracle table
 
- This example uses an **OracleDataReader** to access the data, and uses several **OracleType** structures to display the data.
+ This example uses an `OracleDataReader` to access the data, and uses several `OracleType` structures to display the data.
 
 ```csharp
 public void ReadOracleTypesExample(string connectionString)

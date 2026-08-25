@@ -179,7 +179,7 @@ public partial class PropertyBag
 // In file2.cs
 public partial class PropertyBag
 {
-    // Defining declaration
+    // Implementing declaration
     public partial int MyProperty { get => field; set; }
 }
 

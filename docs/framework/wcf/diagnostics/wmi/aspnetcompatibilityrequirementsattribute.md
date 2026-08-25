@@ -6,39 +6,39 @@ ms.assetid: 00908a39-a21b-4029-bbb9-33e5a6ed25a7
 ---
 # AspNetCompatibilityRequirementsAttribute
 
-AspNetCompatibilityRequirementsAttribute  
-  
-## Syntax  
-  
+AspNetCompatibilityRequirementsAttribute
+
+## Syntax
+
 ```csharp
-class AspNetCompatibilityRequirementsAttribute : Behavior  
-{  
-  string RequirementsMode;  
-};  
-```  
-  
-## Methods  
+class AspNetCompatibilityRequirementsAttribute : Behavior
+{
+  string RequirementsMode;
+};
+```
 
- The AspNetCompatibilityRequirementsAttribute class does not define any methods.  
-  
-## Properties  
+## Methods
 
- The AspNetCompatibilityRequirementsAttribute class has the following property.  
-  
-### RequirementsMode  
+ The AspNetCompatibilityRequirementsAttribute class does not define any methods.
 
- Data type: string  
-  
- Access type: Read-only  
-  
- Indicates if ASP.NET compatibility mode is active.  
-  
-## Requirements  
-  
-|MOF|Declared in Servicemodel.mof.|  
-|---------|-----------------------------------|  
-|Namespace|Defined in root\ServiceModel|  
-  
+## Properties
+
+ The AspNetCompatibilityRequirementsAttribute class has the following property.
+
+### RequirementsMode
+
+ Data type: string
+
+ Access type: Read-only
+
+ Indicates if ASP.NET compatibility mode is active.
+
+## Requirements
+
+|MOF|Declared in Servicemodel.mof.|
+|---------|-----------------------------------|
+|Namespace|Defined in root\ServiceModel|
+
 ## See also
 
-- <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled%2A>
+- <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled*>

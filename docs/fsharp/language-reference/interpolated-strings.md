@@ -2,6 +2,7 @@
 title: Interpolated strings
 description: Learn about interpolated strings, a special form of string that allows you to embed F# expressions directly inside them.
 ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # Interpolated strings
@@ -33,6 +34,9 @@ printfn $"I think {3.0 + 0.14} is close to {System.Math.PI}!"
 
 The contents in between each `{}` brace pair can be any F# expression.
 
+For non-typed interpolated strings (without format specifiers), the expression is converted to a string using the `ToString()` method. If the expression evaluates to `null`, an empty string is used.
+
+For typed interpolated strings with format specifiers (such as `%s{expr}` or `%d{expr}`), the conversion follows the rules defined for that specific format specifier.
 To escape a `{}` brace pair, write two of them like so:
 
 ```fsharp
@@ -104,7 +108,7 @@ let data = [0..4]
 let output = $"The data is %A{data}"  // "The data is [0; 1; 2; 3; 4]"
 ```
 
-.NET-style specifiers are those usable with <xref:System.String.Format%2A?displayProperty=nameWithType>, placed after a `:` within the braces. For example:
+.NET-style specifiers are those usable with <xref:System.String.Format*?displayProperty=nameWithType>, placed after a `:` within the braces. For example:
 
 ```fsharp
 let pi = $"{System.Math.PI:N4}"  // "3.1416"

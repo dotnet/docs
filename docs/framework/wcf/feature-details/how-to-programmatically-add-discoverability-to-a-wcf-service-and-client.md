@@ -90,14 +90,14 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
 
      This tells WCF that the <xref:System.ServiceModel.Discovery.DiscoveryClient> class should use the standard UDP discovery endpoint to send and receive discovery messages.
 
-8. On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.
+8. On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find*> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.
 
     ```csharp
     // Find ICalculatorService endpoints
     FindResponse findResponse = discoveryClient.Find(new FindCriteria(typeof(ICalculator)));
     ```
 
-9. After the call to <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A>, check to see if there is at least one matching service and return the <xref:System.ServiceModel.EndpointAddress> of the first matching service. Otherwise return `null`.
+9. After the call to <xref:System.ServiceModel.Discovery.DiscoveryClient.Find*>, check to see if there is at least one matching service and return the <xref:System.ServiceModel.EndpointAddress> of the first matching service. Otherwise return `null`.
 
     ```csharp
     if (findResponse.Endpoints.Count > 0)

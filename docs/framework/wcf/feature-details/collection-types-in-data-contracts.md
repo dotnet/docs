@@ -13,15 +13,15 @@ ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
 ---
 # Collection Types in Data Contracts
 
-A *collection* is a list of items of a certain type. In the .NET Framework, such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.
+A *collection* is a list of items of a certain type. In the .NET Framework, such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList`1>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.
 
 A special form of collection exists that represents an association between one item (the "key") and another (the "value"). In the .NET Framework, these are represented by types such as <xref:System.Collections.Hashtable> and the generic dictionary. For example, an association collection may map a city ("key") to its population ("value"). These collections are called *dictionary collections*, regardless of their actual type.
 
 Collections receive special treatment in the data contract model.
 
-Types that implement the <xref:System.Collections.IEnumerable> interface, including arrays and generic collections, are recognized as collections. Of those, types that implement the <xref:System.Collections.IDictionary> or Generic <xref:System.Collections.Generic.IDictionary%602> interfaces are dictionary collections; all others are list collections.
+Types that implement the <xref:System.Collections.IEnumerable> interface, including arrays and generic collections, are recognized as collections. Of those, types that implement the <xref:System.Collections.IDictionary> or Generic <xref:System.Collections.Generic.IDictionary`2> interfaces are dictionary collections; all others are list collections.
 
-Additional requirements on collection types, such as having a method called `Add` and a parameterless constructor, are discussed in detail in the following sections. This ensures that collection types can be both serialized and deserialized. This means that some collections are not directly supported, such as the Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> (because it has no parameterless constructor). However, for information about circumventing these restrictions, see the section "Using Collection Interface Types and Read-Only Collections" later in this topic.
+Additional requirements on collection types, such as having a method called `Add` and a parameterless constructor, are discussed in detail in the following sections. This ensures that collection types can be both serialized and deserialized. This means that some collections are not directly supported, such as the Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection`1> (because it has no parameterless constructor). However, for information about circumventing these restrictions, see the section "Using Collection Interface Types and Read-Only Collections" later in this topic.
 
 The types contained in collections must be data contract types, or be otherwise serializable. For more information, see [Types Supported by the Data Contract Serializer](types-supported-by-the-data-contract-serializer.md).
 
@@ -60,16 +60,16 @@ Similar to list collections, all dictionary collections that have the same key a
 
 Only the data contract type matters as far as collection equivalence is concerned, not .NET types. That is, a collection of Type1 is considered equivalent to a collection of Type2 if Type1 and Type2 have equivalent data contracts.
 
-Non-generic collections are considered to have the same data contract as generic collections of type `Object`. (For example, the data contracts for <xref:System.Collections.ArrayList> and Generic <xref:System.Collections.Generic.List%601> of `Object` are the same.)
+Non-generic collections are considered to have the same data contract as generic collections of type `Object`. (For example, the data contracts for <xref:System.Collections.ArrayList> and Generic <xref:System.Collections.Generic.List`1> of `Object` are the same.)
 
 ## Using Collection Interface Types and Read-Only Collections
 
-Collection interface types (<xref:System.Collections.IEnumerable>, <xref:System.Collections.IDictionary>, generic <xref:System.Collections.Generic.IDictionary%602>, or interfaces derived from these interfaces) are also considered as having collection data contracts, equivalent to collection data contracts for actual collection types. Thus, it is possible to declare the type being serialized as a collection interface type and the results are the same as if an actual collection type had been used. For example, the following data contracts are equivalent.
+Collection interface types (<xref:System.Collections.IEnumerable>, <xref:System.Collections.IDictionary>, generic <xref:System.Collections.Generic.IDictionary`2>, or interfaces derived from these interfaces) are also considered as having collection data contracts, equivalent to collection data contracts for actual collection types. Thus, it is possible to declare the type being serialized as a collection interface type and the results are the same as if an actual collection type had been used. For example, the following data contracts are equivalent.
 
 [!code-csharp[c_collection_types_in_data_contracts#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#1)]
 [!code-vb[c_collection_types_in_data_contracts#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#1)]
 
-During serialization, when the declared type is an interface, the actual instance type used can be any type that implements that interface. Restrictions discussed previously (having a parameterless constructor and an `Add` method) do not apply. For example, you can set addresses in Customer2 to an instance of Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of Address, even though you cannot directly declare a data member of type Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>.
+During serialization, when the declared type is an interface, the actual instance type used can be any type that implements that interface. Restrictions discussed previously (having a parameterless constructor and an `Add` method) do not apply. For example, you can set addresses in Customer2 to an instance of Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection`1> of Address, even though you cannot directly declare a data member of type Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection`1>.
 
 During deserialization, when the declared type is an interface, the serialization engine chooses a type that implements the declared interface, and the type is instantiated. The known types mechanism (described in [Data Contract Known Types](data-contract-known-types.md)) has no effect here; the choice of type is built into WCF.
 
@@ -147,7 +147,7 @@ List collections contain repeating entries. Normally, each repeating entry is re
 
 In the `CustomerList` examples, the collections contained strings. The data contract name for the string primitive type is "string", so the repeating element was "\<string>".
 
-However, using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> property on the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute, this repeating element name can be customized. For an example, see the following type.
+However, using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName> property on the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute, this repeating element name can be customized. For an example, see the following type.
 
 [!code-csharp[c_collection_types_in_data_contracts#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#4)]
 [!code-vb[c_collection_types_in_data_contracts#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#4)]
@@ -167,9 +167,9 @@ The namespace of the repeating element is always the same as the namespace of th
 
 ### Customizing Dictionary Collections
 
-Dictionary collections are essentially lists of entries, where each entry has a key followed by a value. Just as with regular lists, you can change the element name that corresponds to the repeating element by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> property.
+Dictionary collections are essentially lists of entries, where each entry has a key followed by a value. Just as with regular lists, you can change the element name that corresponds to the repeating element by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName> property.
 
-Additionally, you can change the element names that represent the key and the value by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> and <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> properties. The namespaces for these elements are the same as the namespace of the collection data contract.
+Additionally, you can change the element names that represent the key and the value by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName*> and <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName> properties. The namespaces for these elements are the same as the namespace of the collection data contract.
 
 For an example, see the following type.
 
@@ -225,13 +225,13 @@ Customized collection types, collection interfaces, and arrays are still treated
 
 ## Collections and Schema
 
-All equivalent collections have the same representation in XML Schema definition language (XSD) schema. Because of this, you normally do not get the same collection type in the generated client code as the one on the server. For example, the server may use a data contract with a Generic <xref:System.Collections.Generic.List%601> of Integer data member, but in the generated client code the same data member may become an array of integers.
+All equivalent collections have the same representation in XML Schema definition language (XSD) schema. Because of this, you normally do not get the same collection type in the generated client code as the one on the server. For example, the server may use a data contract with a Generic <xref:System.Collections.Generic.List`1> of Integer data member, but in the generated client code the same data member may become an array of integers.
 
 Dictionary collections are marked with a WCF-specific schema annotation that indicate that they are dictionaries; otherwise, they are indistinguishable from simple lists that contain entries with a key and a value. For an exact description of how collections are represented in data contract schema, see [Data Contract Schema Reference](data-contract-schema-reference.md).
 
 By default, types are not generated for non-customized collections in imported code. Data members of list collection types are imported as arrays, and data members of dictionary collection types are imported as Generic Dictionary.
 
-However, for customized collections, separate types are generated, marked with the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute. (A customized collection type in the schema is one that does not use the default namespace, name, repeating element name, or key/value element names.) These types are empty types that derive from Generic <xref:System.Collections.Generic.List%601> for list types and Generic Dictionary for dictionary types.
+However, for customized collections, separate types are generated, marked with the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute. (A customized collection type in the schema is one that does not use the default namespace, name, repeating element name, or key/value element names.) These types are empty types that derive from Generic <xref:System.Collections.Generic.List`1> for list types and Generic Dictionary for dictionary types.
 
 For example, you may have the following types on the server.
 
@@ -243,16 +243,16 @@ When the schema is exported and imported back again, the generated client code i
 [!code-csharp[c_collection_types_in_data_contracts#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#8)]
 [!code-vb[c_collection_types_in_data_contracts#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#8)]
 
-You may want to use different types in generated code than the default ones. For example, you may want to use Generic <xref:System.ComponentModel.BindingList%601> instead of regular arrays for your data members to make it easier to bind them to user interface components.
+You may want to use different types in generated code than the default ones. For example, you may want to use Generic <xref:System.ComponentModel.BindingList`1> instead of regular arrays for your data members to make it easier to bind them to user interface components.
 
-To choose collection types to generate, pass a list of collection types you want to use into the <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes%2A> property of the <xref:System.Runtime.Serialization.ImportOptions> object when importing schema. These types are called *referenced collection types*.
+To choose collection types to generate, pass a list of collection types you want to use into the <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes> property of the <xref:System.Runtime.Serialization.ImportOptions> object when importing schema. These types are called *referenced collection types*.
 
 When generic types are being referenced, they must either be fully-open generics or fully-closed generics.
 
 > [!NOTE]
 > When using the Svcutil.exe tool, this reference can be accomplished by using the **/collectionType** command-line switch (short form: **/ct**). Keep in mind that you must also specify the assembly for the referenced collection types using the **/reference** switch (short form: **/r**). If the type is generic, it must be followed by a back quote and the number of generic parameters. The back quote (\`) is not to be confused with the single quote (‘) character. You can specify multiple referenced collection types by using the **/collectionType** switch more than once.
 
-For example, to cause all lists to be imported as Generic <xref:System.Collections.Generic.List%601>.
+For example, to cause all lists to be imported as Generic <xref:System.Collections.Generic.List`1>.
 
 ```console
 svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\System.dll /ct:System.Collections.Generic.List`1
@@ -260,14 +260,14 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 
 When importing any collection, this list of referenced collection types is scanned, and the best-matching collection is used if one is found, either as a data member type (for non-customized collections) or as a base type to derive from (for customized collections). Dictionaries are only matched against dictionaries, while lists are matched against lists.
 
-For example, if you add the Generic <xref:System.ComponentModel.BindingList%601> and <xref:System.Collections.Hashtable> to the list of referenced types, the generated client code for the preceding example is similar to the following.
+For example, if you add the Generic <xref:System.ComponentModel.BindingList`1> and <xref:System.Collections.Hashtable> to the list of referenced types, the generated client code for the preceding example is similar to the following.
 
 [!code-csharp[c_collection_types_in_data_contracts#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#9)]
 [!code-vb[c_collection_types_in_data_contracts#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#9)]
 
 You can specify collection interface types as part of your referenced collection types, but you cannot specify invalid collection types (such as ones with no `Add` method or public constructor).
 
-A closed generic is considered to be the best match. (Non-generic types are considered equivalent to closed generics of `Object`). For example, if the types Generic <xref:System.Collections.Generic.List%601> of <xref:System.DateTime>, Generic <xref:System.ComponentModel.BindingList%601> (open generic), and <xref:System.Collections.ArrayList> are the referenced collection types, the following is generated.
+A closed generic is considered to be the best match. (Non-generic types are considered equivalent to closed generics of `Object`). For example, if the types Generic <xref:System.Collections.Generic.List`1> of <xref:System.DateTime>, Generic <xref:System.ComponentModel.BindingList`1> (open generic), and <xref:System.Collections.ArrayList> are the referenced collection types, the following is generated.
 
 [!code-csharp[c_collection_types_in_data_contracts#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#10)]
 [!code-vb[c_collection_types_in_data_contracts#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#10)]
@@ -283,7 +283,7 @@ For list collections, only the cases in the following table are supported.
 
 If a type implements more than one list collection interface, the following restrictions apply:
 
-- If the type implements Generic <xref:System.Collections.Generic.IEnumerable%601> (or its derived interfaces) multiple times for different types, the type is not considered a valid referenced collection type and is ignored. This is true even if some implementations are invalid or use open generics. For example, a type that implements Generic <xref:System.Collections.Generic.IEnumerable%601> of `int` and Generic <xref:System.Collections.Generic.IEnumerable%601> of T would never be used as a referenced collection of `int` or any other type, regardless of whether the type has an `Add` method accepting `int` or an `Add` method accepting a parameter of type T, or both.
+- If the type implements Generic <xref:System.Collections.Generic.IEnumerable`1> (or its derived interfaces) multiple times for different types, the type is not considered a valid referenced collection type and is ignored. This is true even if some implementations are invalid or use open generics. For example, a type that implements Generic <xref:System.Collections.Generic.IEnumerable`1> of `int` and Generic <xref:System.Collections.Generic.IEnumerable`1> of T would never be used as a referenced collection of `int` or any other type, regardless of whether the type has an `Add` method accepting `int` or an `Add` method accepting a parameter of type T, or both.
 
 - If the type implements a generic collection interface as well as <xref:System.Collections.IList>, the type is never used as a referenced collection type unless the generic collection interface is a closed generic of type <xref:System.Object>.
 
@@ -292,16 +292,16 @@ For dictionary collections, only the cases in the following table are supported.
 |Referenced type|Interface implemented by referenced type|Example|Type treated as|
 |---------------------|----------------------------------------------|-------------|---------------------|
 |Non-generic or closed generic (any number of parameters)|<xref:System.Collections.IDictionary>|`MyType : IDictionary`<br /><br /> or<br /><br /> `MyType<T> : IDictionary` where T=`int`|Closed generic `IDictionary<object,object>`|
-|Closed generic (any number of parameters)|<xref:System.Collections.Generic.IDictionary%602>, closed|`MyType<T> : IDictionary<string, bool>` where T=`int`|Closed generic (for example, `IDictionary<string,bool>`)|
-|Closed generic (any number of parameters)|Generic <xref:System.Collections.Generic.IDictionary%602>, one of either key or value is closed, the other is open and uses one of type’s parameters|`MyType<T,U,V> : IDictionary<string,V>` where T=`int`, U=`float`,V=`bool`<br /><br /> or<br /><br /> `MyType<Z> : IDictionary<Z,bool>` where Z=`string`|Closed generic (For example, `IDictionary<string,bool>`)|
-|Closed generic (any number of parameters)|Generic <xref:System.Collections.Generic.IDictionary%602>, both key and value are open and each uses one of the type’s parameters|`MyType<T,U,V> : IDictionary<V,U>` where T=`int`, U=`bool`, V=`string`|Closed generic (for example, `IDictionary<string,bool>`)|
-|Open generic (two parameters)|Generic <xref:System.Collections.Generic.IDictionary%602>, open, uses both of the type’s generic parameters in the order they appear|`MyType<K,V> : IDictionary<K,V>`, K and V both open|Open generic (for example, `IDictionary<K,V>`)|
+|Closed generic (any number of parameters)|<xref:System.Collections.Generic.IDictionary`2>, closed|`MyType<T> : IDictionary<string, bool>` where T=`int`|Closed generic (for example, `IDictionary<string,bool>`)|
+|Closed generic (any number of parameters)|Generic <xref:System.Collections.Generic.IDictionary`2>, one of either key or value is closed, the other is open and uses one of type’s parameters|`MyType<T,U,V> : IDictionary<string,V>` where T=`int`, U=`float`,V=`bool`<br /><br /> or<br /><br /> `MyType<Z> : IDictionary<Z,bool>` where Z=`string`|Closed generic (For example, `IDictionary<string,bool>`)|
+|Closed generic (any number of parameters)|Generic <xref:System.Collections.Generic.IDictionary`2>, both key and value are open and each uses one of the type’s parameters|`MyType<T,U,V> : IDictionary<V,U>` where T=`int`, U=`bool`, V=`string`|Closed generic (for example, `IDictionary<string,bool>`)|
+|Open generic (two parameters)|Generic <xref:System.Collections.Generic.IDictionary`2>, open, uses both of the type’s generic parameters in the order they appear|`MyType<K,V> : IDictionary<K,V>`, K and V both open|Open generic (for example, `IDictionary<K,V>`)|
 
-If the type implements both <xref:System.Collections.IDictionary> and Generic <xref:System.Collections.Generic.IDictionary%602>, only Generic <xref:System.Collections.Generic.IDictionary%602> is considered.
+If the type implements both <xref:System.Collections.IDictionary> and Generic <xref:System.Collections.Generic.IDictionary`2>, only Generic <xref:System.Collections.Generic.IDictionary`2> is considered.
 
 Referencing partial generic types is not supported.
 
-Duplicates are not allowed, for example, you cannot add both the Generic <xref:System.Collections.Generic.List%601> of `Integer` and the Generic Collection of `Integer` to <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes%2A>, because this makes it impossible to determine which one to use when a list of integers is found in the schema. Duplicates are detected only if there is a type in the schema that exposes the duplicates problem. For example, if the schema being imported does not contain lists of integers, it is allowed to have both the Generic <xref:System.Collections.Generic.List%601> of `Integer` and the Generic Collection of `Integer` in the <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes%2A>, but neither has any effect.
+Duplicates are not allowed, for example, you cannot add both the Generic <xref:System.Collections.Generic.List`1> of `Integer` and the Generic Collection of `Integer` to <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes*>, because this makes it impossible to determine which one to use when a list of integers is found in the schema. Duplicates are detected only if there is a type in the schema that exposes the duplicates problem. For example, if the schema being imported does not contain lists of integers, it is allowed to have both the Generic <xref:System.Collections.Generic.List`1> of `Integer` and the Generic Collection of `Integer` in the <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes*>, but neither has any effect.
 
 ## Advanced Collection Rules
 
@@ -327,19 +327,19 @@ The following is a list of collection rules for serialization:
 
 |Collection type implements|Method(s) called on serialization|Method(s) called on deserialization|
 |--------------------------------|-----------------------------------------|-------------------------------------------|
-|Generic <xref:System.Collections.Generic.IDictionary%602>|`get_Keys`, `get_Values`|Generic Add|
+|Generic <xref:System.Collections.Generic.IDictionary`2>|`get_Keys`, `get_Values`|Generic Add|
 |<xref:System.Collections.IDictionary>|`get_Keys`, `get_Values`|`Add`|
-|Generic <xref:System.Collections.Generic.IList%601>|Generic <xref:System.Collections.Generic.IList%601> indexer|Generic Add|
-|Generic <xref:System.Collections.Generic.ICollection%601>|Enumerator|Generic Add|
+|Generic <xref:System.Collections.Generic.IList`1>|Generic <xref:System.Collections.Generic.IList`1> indexer|Generic Add|
+|Generic <xref:System.Collections.Generic.ICollection`1>|Enumerator|Generic Add|
 |<xref:System.Collections.IList>|<xref:System.Collections.IList> Indexer|`Add`|
-|Generic <xref:System.Collections.Generic.IEnumerable%601>|`GetEnumerator`|A non-static method called `Add` that takes one parameter of the appropriate type (the type of the generic parameter or one of its base types). Such a method must exist for the serializer to treat a collection type as a collection during both serialization and deserialization.|
+|Generic <xref:System.Collections.Generic.IEnumerable`1>|`GetEnumerator`|A non-static method called `Add` that takes one parameter of the appropriate type (the type of the generic parameter or one of its base types). Such a method must exist for the serializer to treat a collection type as a collection during both serialization and deserialization.|
 |<xref:System.Collections.IEnumerable> (and thus <xref:System.Collections.ICollection>, which derives from it)|`GetEnumerator`|A non-static method called `Add` that takes one parameter of type `Object`. Such a method must exist for the serializer to treat a collection type as a collection during both serialization and deserialization.|
 
-The preceding table lists collection interfaces in descending order of precedence. This means, for example, that if a type implements both <xref:System.Collections.IList> and Generic <xref:System.Collections.Generic.IEnumerable%601>, the collection is serialized and deserialized according to the <xref:System.Collections.IList> rules:
+The preceding table lists collection interfaces in descending order of precedence. This means, for example, that if a type implements both <xref:System.Collections.IList> and Generic <xref:System.Collections.Generic.IEnumerable`1>, the collection is serialized and deserialized according to the <xref:System.Collections.IList> rules:
 
 - At deserialization, all collections are deserialized by first creating an instance of the type by calling the parameterless constructor, which must be present for the serializer to treat a collection type as a collection during both serialization and deserialization.
 
-- If the same generic collection interface is implemented more than once (for example, if a type implements both Generic <xref:System.Collections.Generic.ICollection%601> of `Integer` and Generic <xref:System.Collections.Generic.ICollection%601> of <xref:System.String>) and no higher-precedence interface is found, the collection is not treated as a valid collection.
+- If the same generic collection interface is implemented more than once (for example, if a type implements both Generic <xref:System.Collections.Generic.ICollection`1> of `Integer` and Generic <xref:System.Collections.Generic.ICollection`1> of <xref:System.String>) and no higher-precedence interface is found, the collection is not treated as a valid collection.
 
 - Collection types can have the <xref:System.SerializableAttribute> attribute applied to them and can implement the <xref:System.Runtime.Serialization.ISerializable> interface. Both of these are ignored. However, if the type does not fully meet collection type requirements (for example, the `Add` method is missing), the type is not considered a collection type, and thus the <xref:System.SerializableAttribute> attribute and the <xref:System.Runtime.Serialization.ISerializable> interface are used to determine whether the type can be serialized.
 
@@ -371,7 +371,7 @@ The following uses of the <xref:System.Runtime.Serialization.CollectionDataContr
 
 - Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a non-collection type.
 
-- Attempting to set <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> or <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> on a <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute applied to a non-dictionary type.
+- Attempting to set <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName*> or <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName*> on a <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute applied to a non-dictionary type.
 
 ### Polymorphism Rules
 

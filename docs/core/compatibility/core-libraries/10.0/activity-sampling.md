@@ -12,34 +12,34 @@ The <xref:System.Diagnostics.ActivitySamplingResult?displayProperty=nameWithType
 
 When creating an `Activity` without a parent, `ActivitySamplingResult` drives whether the `Activity` is created and then how the `Recorded` and `IsAllDataRequested` properties are set:
 
-|ActivitySamplingResult|Activity created|Activity.Recorded|Activity.IsAllDataRequested|
-|---|---|---|---|
-|None|No|||
-|PropagationData|Yes|False|False|
-|AllData|Yes|False|True|
-|AllDataAndRecorded|Yes|True|True|
+| ActivitySamplingResult | Activity created | Activity.Recorded | Activity.IsAllDataRequested |
+|------------------------|------------------|-------------------|-----------------------------|
+| None                   | No               |                   |                             |
+| PropagationData        | Yes              | False             | False                       |
+| AllData                | Yes              | False             | True                        |
+| AllDataAndRecorded     | Yes              | True              | True                        |
 
-It is also possible to create an `Activity` with a parent. The parent could be in the same process, or it could be a remote parent propagated to the current process.
+It's also possible to create an `Activity` with a parent. The parent could be in the same process, or it could be a remote parent propagated to the current process.
 
 ## Previous behavior
 
 Previously, when creating an `Activity` as `PropagationData` with a parent marked as `Recorded`, the `Recorded` and `IsAllDataRequested` properties were set as follows:
 
-|ActivitySamplingResult|Activity created|Activity.Recorded|Activity.IsAllDataRequested|
-|---|---|---|---|
-|PropagationData|Yes|True|False|
+| ActivitySamplingResult | Activity created | Activity.Recorded | Activity.IsAllDataRequested |
+|------------------------|------------------|-------------------|-----------------------------|
+| PropagationData        | Yes              | True              | False                       |
 
 ## New behavior
 
 Starting in .NET 10, when you create an `Activity` as `PropagationData` with a parent marked as `Recorded`, the `Recorded` and `IsAllDataRequested` properties are set as follows:
 
-|ActivitySamplingResult|Activity created|Activity.Recorded|Activity.IsAllDataRequested|
-|---|---|---|---|
-|PropagationData|Yes|False|False|
+| ActivitySamplingResult | Activity created | Activity.Recorded | Activity.IsAllDataRequested |
+|------------------------|------------------|-------------------|-----------------------------|
+| PropagationData        | Yes              | False             | False                       |
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

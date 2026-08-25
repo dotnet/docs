@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 03/25/2025
+ms.date: 07/09/2026
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -46,7 +46,7 @@ or
 
   If you're using the .NET 8 SDK or an earlier version and you want the severity to be respected at build time, you can do so in one of two ways:
 
-  - Set the [\<AnalysisLevel>](../../../core/project-sdk/msbuild-props.md#analysislevel) or `<AnalysisLevelStyle>` property to `9.0` or higher, or to `preview`.
+  - Set the [`<AnalysisLevel>`](../../../core/project-sdk/msbuild-props.md#analysislevel) or `<AnalysisLevelStyle>` property to `9.0` or higher, or to `preview`.
   - Set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = warning`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]
@@ -96,6 +96,7 @@ C# style rules:
 - [Convert to 'Program.Main' style program (IDE0211)](ide0211.md)
 - [Use primary constructor (IDE0290)](ide0290.md)
 - [Prefer 'System.Threading.Lock' (IDE0330)](ide0330.md)
+- [Use labeled jump statement (IDE0410)](ide0410.md)
 
 ### Expression-bodied members
 
@@ -151,6 +152,7 @@ C# style rules:
 - [Simplify 'default' expression (IDE0034)](ide0034.md)
 - [Use local function instead of lambda (IDE0039)](ide0039.md)
 - [Deconstruct variable declaration (IDE0042)](ide0042.md)
+- [Invalid format string (IDE0043)](ide0043.md)
 - [Use index operator (IDE0056)](ide0056.md)
 - [Use range operator (IDE0057)](ide0057.md)
 - [Add missing cases to switch expression (IDE0072)](ide0072.md)
@@ -160,6 +162,7 @@ C# style rules:
 - [Prefer 'null' check over type check (IDE0150)](ide0150.md)
 - [Use tuple to swap values (IDE0180)](ide0180.md)
 - [Add explicit cast in foreach loop (IDE0220)](ide0220.md)
+- [Add explicit cast (IDE0221)](ide0221.md)
 - [Use UTF-8 string literal (IDE0230)](ide0230.md)
 - [Nullable directive is redundant (IDE0240)](ide0240.md)
 - [Nullable directive is unnecessary (IDE0241)](ide0241.md)
@@ -172,6 +175,8 @@ C# style rules:
 - [Use collection expression for new (IDE0306)](ide0306.md)
 - [Use unbound generic type (IDE0340)](ide0340.md)
 - [Use implicitly typed lambda (IDE0350)](ide0350.md)
+- [Simplify property accessor (IDE0360)](ide0360.md)
+- [The name does not exist in the current context (IDE1007)](ide1007.md)
 
 Visual Basic style rules:
 
@@ -205,6 +210,8 @@ C# style rules:
 - [Struct can be made 'readonly' (IDE0250)](ide0250.md)
 - [Member can be made 'readonly' (IDE0251)](ide0251.md)
 - [Make anonymous function static (IDE0320)](ide0320.md)
+- [Remove unnecessary `unsafe` modifier (IDE0380)](ide0380.md)
+- [Make method synchronous (IDE0390, IDE0391)](ide0390-ide0391.md)
 
 ### New-line preferences
 
@@ -259,11 +266,15 @@ C# style rules:
 
 - [Remove unnecessary suppression (IDE0079)](ide0079.md)
 
+C# style rules:
+
+- [Remove unnecessary suppression (null-forgiving operator) (IDE0370)](ide0370.md)
+
 ### `This.` and `me.` preferences
 
 .NET style rules (C# and Visual Basic):
 
-- [this and Me preferences (IDE0003, IDE0009)](ide0003-ide0009.md)
+- [Member-access qualification preferences (IDE0003 and IDE0009)](ide0003-ide0009.md)
 
 ### `var` preferences
 

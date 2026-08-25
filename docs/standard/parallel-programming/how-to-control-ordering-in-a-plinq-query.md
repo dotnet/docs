@@ -11,7 +11,7 @@ ms.assetid: c67eccc7-004d-4b2f-987e-919cbbd62ef7
 ---
 # How to: Control Ordering in a PLINQ Query
 
-These examples show how to control the ordering in a PLINQ query by using the <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> extension method.
+These examples show how to control the ordering in a PLINQ query by using the <xref:System.Linq.ParallelEnumerable.AsOrdered*> extension method.
 
 > [!WARNING]
 > These examples are primarily intended to demonstrate usage, and may or may not run faster than the equivalent sequential LINQ to Objects queries.

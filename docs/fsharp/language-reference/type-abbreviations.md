@@ -7,6 +7,9 @@ ms.date: 05/16/2016
 
 A *type abbreviation* is an alias or alternate name for a type.
 
+> [!NOTE]
+> The "type abbreviation" feature allows you to create alternate names that are either shorter or longer than the original type name. It's common to abbreviate long type names or create simpler names for type applications with specific generic arguments. You can use type abbreviations to create longer, more descriptive names that improve code readability.
+
 ## Syntax
 
 ```fsharp

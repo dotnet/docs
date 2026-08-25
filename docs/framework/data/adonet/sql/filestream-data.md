@@ -166,8 +166,6 @@ namespace FileStreamTest
 }
 ```
 
-For another sample, see [How to store and fetch binary data into a file stream column](https://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).
-
 ## SQL Server docs resources
 
 The complete documentation for FILESTREAM is located in the following sections of the SQL Server docs.

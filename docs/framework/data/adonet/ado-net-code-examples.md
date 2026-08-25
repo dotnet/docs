@@ -144,7 +144,7 @@ End Class
 
 ### Typed ObjectQuery
 
-The code in this example uses an <xref:System.Data.Objects.ObjectQuery%601> to return data as Categories objects. For more information, see [Object Queries](/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)).
+The code in this example uses an <xref:System.Data.Objects.ObjectQuery`1> to return data as Categories objects. For more information, see [Object Queries](/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)).
 
 ```csharp
 using System;

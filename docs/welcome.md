@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
-description: Getting started with the .NET family of technologies.
-ms.date: 11/22/2024
+description: Learn how to get started with the .NET family of technologies.
+ms.date: 04/30/2026
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -25,10 +25,9 @@ Also follow the latest .NET events:
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET 9](core/whats-new/dotnet-9/overview.md)
-- [What's new in C# 13](./csharp/whats-new/csharp-13.md)
+- [What's new in .NET 11](core/whats-new/dotnet-11/overview.md)
+- [What's new in C# 15](./csharp/whats-new/csharp-15.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
-- [What's new in .NET Framework](framework/whats-new/index.md)
 
 ## Documentation
 
@@ -55,13 +54,14 @@ Explore videos on web, mobile, desktop, C#, machine learning, containers/Docker,
 This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source. The following list shows the main .NET GitHub repositories:
 
 - [.NET runtime](https://github.com/dotnet/runtime)
-- [.NET SDK](https://github.com/dotnet/sdk)
+- [.NET SDK and analyzers](https://github.com/dotnet/sdk)
 - [.NET extensions](https://github.com/dotnet/extensions)
-- [Aspire](https://github.com/dotnet/aspire)
+- [ASP.NET Core](https://github.com/dotnet/aspnetcore)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
-- [.NET code analyzers](https://github.com/dotnet/roslyn-analyzers)
 - [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)
 - [Windows Forms](https://github.com/dotnet/winforms)
 - [WPF](https://github.com/dotnet/wpf)
+- [WinUI](https://github.com/microsoft/microsoft-ui-xaml)
+- [WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK)
 
 You can join other people who are already active in the [.NET community](https://dotnet.microsoft.com/platform/community) to find out what's new or ask for help.

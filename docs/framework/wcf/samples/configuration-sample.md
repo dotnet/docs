@@ -20,7 +20,7 @@ To enable discovery, a few changes must be made in the application configuration
 
 - A discovery endpoint must be added to the `<service>` element. This is a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint. This is a system endpoint that the runtime associates with the discovery service. The discovery service listens for messages on this endpoint.
 
-- A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at run time and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.
+- A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at runtime and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.
 
 The following config snippet shows a service with an application endpoint and a discovery endpoint defined:
 
@@ -50,7 +50,7 @@ To take advantage of announcements, you will need to add an announcement endpoin
 
 Adding an announcement endpoint to the discovery service behavior creates a default announcement client for the service. This guarantees that the service will send an online and offline announcement when the service is opened and closed respectively.
 
-This configuration file goes beyond just those simple steps by modifying additional behaviors. It is possible to control discovery-related information by using specific endpoints. That is, a user can control whether an endpoint can be discovered and the user can also mark that endpoint with <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Scopes%2A> and custom XML metadata. To do this, the user must add a `behaviorConfiguration` property to the application endpoint. In this case, the following property is added to the application endpoint.
+This configuration file goes beyond just those simple steps by modifying additional behaviors. It is possible to control discovery-related information by using specific endpoints. That is, a user can control whether an endpoint can be discovered and the user can also mark that endpoint with <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Scopes*> and custom XML metadata. To do this, the user must add a `behaviorConfiguration` property to the application endpoint. In this case, the following property is added to the application endpoint.
 
 `behaviorConfiguration="endpointBehaviorConfiguration"`
 

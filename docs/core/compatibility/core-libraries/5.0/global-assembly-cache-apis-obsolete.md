@@ -25,7 +25,7 @@ Assembly asm = typeof(object).Assembly;
 Console.WriteLine(asm.GlobalAssemblyCache);
 ```
 
-In .NET 5 and later versions, the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property continues to always return `false`. However, the property getter is also marked as obsolete to indicate to callers that they should stop accessing the property. Libraries and apps should not use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> API to make determinations about run-time behavior, as it always returns `false` in .NET Core and .NET 5 and later versions.
+In .NET 5 and later versions, the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property continues to always return `false`. However, the property getter is also marked as obsolete to indicate to callers that they should stop accessing the property. Libraries and apps should not use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> API to make determinations about runtime behavior, as it always returns `false` in .NET Core and .NET 5 and later versions.
 
 ```csharp
 Assembly asm = typeof(object).Assembly;
@@ -33,7 +33,7 @@ Assembly asm = typeof(object).Assembly;
 Console.WriteLine(asm.GlobalAssemblyCache);
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core.
+This is a compile-time only change. There is no runtime change from previous versions of .NET Core.
 
 ## Reason for change
 
@@ -45,7 +45,7 @@ The global assembly cache (GAC) does not exist as a concept in .NET Core and .NE
 
 ## Recommended action
 
-- If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at run time, reconsider whether the flow still makes sense for a .NET Core or .NET 5+ application.
+- If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at runtime, reconsider whether the flow still makes sense for a .NET Core or .NET 5+ application.
 
 - If you must continue to use the obsolete APIs, you can suppress the `SYSLIB0005` warning in code.
 

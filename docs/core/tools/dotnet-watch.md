@@ -19,7 +19,7 @@ dotnet watch [<command>]
   [--list] [--no-hot-reload] [--no-self-contained]
   [--non-interactive] [--project <PROJECT>] [--sc|--self-contained]
   [-q|--quiet] [-v|--verbose] [--version]
-  [--] <forwarded arguments> 
+  [--] <forwarded arguments>
 
 dotnet watch -?|-h|--help
 ```
@@ -63,15 +63,15 @@ As an alternative to disabling response compression, manually add the browser re
 
 ## Options
 
-[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
-[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`--list`**
 
   Lists all discovered files without starting the watcher.
 
-[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
+- [!INCLUDE [no-self-contained](includes/cli-no-self-contained.md)]
 
 - **`--no-hot-reload`**
 
@@ -85,7 +85,7 @@ As an alternative to disabling response compression, manually add the browser re
 
   Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
 
-[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
+- [!INCLUDE [self-contained](includes/cli-self-contained.md)]
 
 - **`-q|--quiet`**
 
@@ -103,7 +103,7 @@ As an alternative to disabling response compression, manually add the browser re
 
   The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Environment variables
 
@@ -115,7 +115,7 @@ As an alternative to disabling response compression, manually add the browser re
 
 - **`DOTNET_USE_POLLING_FILE_WATCHER`**
 
-  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
+  When set to `1` or `true`, `dotnet watch` uses a polling file watcher instead of <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType>. Polling is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch*?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
 - **`DOTNET_WATCH`**
 
@@ -159,7 +159,7 @@ As an alternative to disabling response compression, manually add the browser re
 - **`DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`**
 
   When set to `1` or `true`, `dotnet watch` won't do special handling for static content files. `dotnet watch` sets MSBuild property `DotNetWatchContentFiles` to `false`.
-  
+
 - **`DOTNET_WATCH_RESTART_ON_RUDE_EDIT`**
 
   When set to `1` or `true`, `dotnet watch` will always restart on rude edits instead of asking.
@@ -189,9 +189,11 @@ More files can be watched by adding items to the `Watch` group. For example, the
 </ItemGroup>
 ```
 
-## Ignore specified files
+## Ignore specified files and folders
 
-`dotnet watch` will ignore `Compile` and `EmbeddedResource` items that have the `Watch="false"` attribute, as shown in the following example:
+Use the `Watch="false"` attribute to ignore specified files. Use the `DefaultItemExcludes` property to ignore folders or files from being watched.
+
+To prevent `dotnet watch` from watching files, use the `Compile` and `EmbeddedResource` items with the `Watch="false"` attribute, as shown in the following example:
 
 ```xml
 <ItemGroup>
@@ -200,13 +202,35 @@ More files can be watched by adding items to the `Watch` group. For example, the
 </ItemGroup>
 ```
 
-`dotnet watch` will ignore project references that have the `Watch="false"` attribute, as shown in the following example:
+`dotnet watch` ignores project references that have the `Watch="false"` attribute, as shown in the following example:
 
 ```xml
 <ItemGroup>
   <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" Watch="false" />
 </ItemGroup>
 ```
+
+Starting in .NET 10, use the `DefaultItemExcludes` property to exclude entire folders or file patterns from being watched by `dotnet watch`. This approach is useful when you want to exclude files that aren't relevant to compilation or files that trigger unwanted restarts or reloads.
+
+For example, files in the `App_Data` folder of ASP.NET Core applications might change while the app runs, causing unnecessary page reloads. Exclude this folder from being watched:
+
+```xml
+<PropertyGroup>
+  <DefaultItemExcludes>$(DefaultItemExcludes);**/App_Data/**</DefaultItemExcludes>
+</PropertyGroup>
+```
+
+Exclude multiple patterns by separating them with semicolons:
+
+```xml
+<PropertyGroup>
+  <DefaultItemExcludes>$(DefaultItemExcludes);**/App_Data/**;**/temp/**;**/*.log</DefaultItemExcludes>
+</PropertyGroup>
+```
+
+The `DefaultItemExcludes` property affects all default item types, like `Compile` and `EmbeddedResource`. The `Watch="false"` attribute provides finer control over specific files or project references.
+
+For more information, see the [DefaultItemExcludes reference](../project-sdk/msbuild-props.md#defaultitemexcludes).
 
 ## Advanced configuration
 
@@ -243,7 +267,7 @@ For information about what kinds of changes are considered rude edits, see [Edit
 To disable hot reload when you run `dotnet watch`, use the `--no-hot-reload` option, as shown in the following example:
 
 ```.NET CLI
-dotnet watch --no-hot-reload 
+dotnet watch --no-hot-reload
 ```
 
 ## Examples

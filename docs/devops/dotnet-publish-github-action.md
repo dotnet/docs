@@ -1,8 +1,6 @@
 ---
 title: Create a publish app GitHub workflow
 description: In this quickstart, you will learn how to create a GitHub workflow to publish your .NET source code.
-author: IEvangelist
-ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
 ---
@@ -15,7 +13,7 @@ In this quickstart, you will learn how to create a GitHub workflow to publish yo
 
 - A [GitHub account](https://github.com/join).
 - A .NET source code repository.
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An ASP.NET Core web app.
 - An Azure App Service resource.
 
@@ -23,7 +21,7 @@ In this quickstart, you will learn how to create a GitHub workflow to publish yo
 
 To publish the app to Azure, open the Azure portal for the App Service instance of the application. In the resource **Overview**, select **Get publish profile** and save the **.PublishSetting* file locally.
 
-:::image type="content" source="media/get-publish-profile.png" alt-text="Azure Portal, App Service resource: Get publish profile":::
+:::image type="content" source="media/get-publish-profile.png" alt-text="Azure portal, App Service resource: Get publish profile":::
 
 > [!WARNING]
 > The publish profile contains sensitive information, such as credentials for accessing your Azure App Service resource. This information should always be treated very carefully.

@@ -1,7 +1,7 @@
 ---
 title: What is the TimeProvider class
 description: Learn about the TimeProvider class in .NET and .NET Framework. TimeProvider provides an abstraction over time.
-ms.date: 12/03/2024
+ms.date: 01/16/2026
 ms.topic: overview
 dev_langs:
   - "csharp"
@@ -14,7 +14,14 @@ helpviewer_keywords:
 
 # What is TimeProvider?
 
-<xref:System.TimeProvider?displayProperty=fullName> is an abstraction of time that provides a point in time as a <xref:System.DateTimeOffset> type. By using `TimeProvider`, you ensure that your code is testable and predictable. `TimeProvider` was introduced in .NET 8 and is also available for .NET Framework 4.7+ and .NET Standard 2.0 as a NuGet package.
+<xref:System.TimeProvider?displayProperty=fullName> is an abstraction of time that provides a point in time as a <xref:System.DateTimeOffset> type. By using `TimeProvider`, you ensure that your code is testable and predictable. `TimeProvider` is available on the following frameworks:
+
+| Framework | Notes |
+|---|---|
+| .NET 8+ | Included in the framework. |
+| .NET 5 - .NET 7 | Provided in the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider). |
+| .NET Framework 4.6.2+ | Provided in the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider). |
+| .NET Standard 2.0 | Provided in the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider). |
 
 The <xref:System.TimeProvider> class defines the following capabilities:
 
@@ -28,16 +35,16 @@ The <xref:System.TimeProvider> class defines the following capabilities:
 
 .NET provides an implementation of <xref:System.TimeProvider> through the <xref:System.TimeProvider.System?displayProperty=nameWithType> property, with the following characteristics:
 
-- Date and time are calculated with <xref:System.DateTimeOffset.UtcNow?displayProperty=nameWithType> and <xref:System.TimeZoneInfo.Local?displayProperty=nameWithType>.
+- Date and time are calculated by using <xref:System.DateTimeOffset.UtcNow?displayProperty=nameWithType> and <xref:System.TimeZoneInfo.Local?displayProperty=nameWithType>.
 - Timestamps are provided by <xref:System.Diagnostics.Stopwatch?displayProperty=fullName>.
 - Timers are implemented through an internal class and exposed as <xref:System.Threading.ITimer?displayProperty=nameWithType>.
 
-The following example demonstrates using <xref:System.TimeProvider> to get the current date and time:
+The following example shows how to use <xref:System.TimeProvider> to get the current date and time:
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/Program.cs" id="GetLocal":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/Program.vb" id="GetLocal":::
 
-The following example demonstrates capturing elapsed time with <xref:System.TimeProvider.GetTimestamp?displayProperty=nameWithType>:
+The following example shows how to capture elapsed time by using <xref:System.TimeProvider.GetTimestamp?displayProperty=nameWithType>:
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/Program.cs" id="Timestamp":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/Program.vb" id="Timestamp":::
@@ -54,12 +61,12 @@ The following list describes some of the capabilities of the <xref:Microsoft.Ext
 
 ## Custom implementation
 
-While [FakeTimeProvider](#faketimeprovider-implementation) should cover most scenarios requiring predictability with time, you can still provide your own implementation. Create a new class that derives from <xref:System.TimeProvider> and override members to control how time is provided. For example, the following class only provides a single date, the date of the moon landing:
+While [FakeTimeProvider](#faketimeprovider-implementation) covers most scenarios that require predictability with time, you can still provide your own implementation. Create a new class that derives from <xref:System.TimeProvider> and override members to control how time is provided. For example, the following class only provides a single date, the date of the moon landing:
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/MoonLandingTimeProviderPST.cs" id="CustomProvider":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/MoonLandingTimeProviderPST.vb" id="CustomProvider":::
 
-If code using this class calls `MoonLandingTimeProviderPST.GetUtcNow`, the date of the moon landing in UTC is returned. If `MoonLandingTimeProviderPST.GetLocalNow` is called, the base class applies `MoonLandingTimeProviderPST.LocalTimeZone` to `GetUtcNow` and returns the moon landing date and time in the PST timezone.
+If code using this class calls `MoonLandingTimeProviderPST.GetUtcNow`, the date of the moon landing in UTC is returned. If `MoonLandingTimeProviderPST.GetLocalNow` is called, the base class applies `MoonLandingTimeProviderPST.LocalTimeZone` to `GetUtcNow` and returns the moon landing date and time in the PST time zone.
 
 To demonstrate the usefulness of controlling time, consider the following example. Let's say that you're writing a calendar app that sends a greeting to the user when the app is first opened each day. The app says a special greeting when the current day has an event associated with it, such as the anniversary of the moon landing.
 
@@ -80,7 +87,7 @@ And unit tests can be written to test specific scenarios, such as testing the an
 
 ## Use with .NET
 
-Starting with .NET 8, the <xref:System.TimeProvider> class is provided by the runtime library. Older versions of .NET or libraries targeting .NET Standard 2.0, must reference the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
+Starting with .NET 8, the runtime library provides the <xref:System.TimeProvider> class. Older versions of .NET or libraries targeting .NET Standard 2.0 must reference the [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
 
 The following methods related to asynchronous programming work with `TimeProvider`:
 
@@ -92,7 +99,7 @@ The following methods related to asynchronous programming work with `TimeProvide
 
 ## Use with .NET Framework
 
-<xref:System.TimeProvider> is implemented by the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
+The [`Microsoft.Bcl.TimeProvider` NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/) implements <xref:System.TimeProvider>.
 
 Support for working with `TimeProvider` in asynchronous programming scenarios was added through the following extension methods:
 

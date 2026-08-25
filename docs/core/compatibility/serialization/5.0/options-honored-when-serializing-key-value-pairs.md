@@ -5,13 +5,13 @@ ms.date: 10/18/2020
 ---
 # PropertyNamingPolicy, PropertyNameCaseInsensitive, and Encoder options are honored when serializing and deserializing key-value pairs
 
-<xref:System.Text.Json.JsonSerializer> now honors the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.Encoder> options when serializing the <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> property names of a <xref:System.Collections.Generic.KeyValuePair%602> instance. Additionally, <xref:System.Text.Json.JsonSerializer> honors the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> options when deserializing <xref:System.Collections.Generic.KeyValuePair%602> instances.
+<xref:System.Text.Json.JsonSerializer> now honors the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.Encoder> options when serializing the <xref:System.Collections.Generic.KeyValuePair`2.Key> and <xref:System.Collections.Generic.KeyValuePair`2.Value> property names of a <xref:System.Collections.Generic.KeyValuePair`2> instance. Additionally, <xref:System.Text.Json.JsonSerializer> honors the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> options when deserializing <xref:System.Collections.Generic.KeyValuePair`2> instances.
 
 ## Change description
 
 ### Serialization
 
-In .NET Core 3.x versions and in the 4.6.0-4.7.2 versions of the [System.Text.Json NuGet package](https://www.nuget.org/packages/System.Text.Json), the properties of <xref:System.Collections.Generic.KeyValuePair%602> instances are always serialized as "Key" and "Value" exactly, regardless of any <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.Encoder?displayProperty=nameWithType> options. The following code example shows how the <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> properties are *not* camel-cased after serialization, even though the specified property-naming policy dictates so.
+In .NET Core 3.x versions and in the 4.6.0-4.7.2 versions of the [System.Text.Json NuGet package](https://www.nuget.org/packages/System.Text.Json), the properties of <xref:System.Collections.Generic.KeyValuePair`2> instances are always serialized as "Key" and "Value" exactly, regardless of any <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.Encoder?displayProperty=nameWithType> options. The following code example shows how the <xref:System.Collections.Generic.KeyValuePair`2.Key> and <xref:System.Collections.Generic.KeyValuePair`2.Value> properties are *not* camel-cased after serialization, even though the specified property-naming policy dictates so.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
@@ -21,7 +21,7 @@ Console.WriteLine(JsonSerializer.Serialize(kvp, options));
 // Actual: {"Key":1,"Value":1}
 ```
 
-Starting in .NET 5, the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.Encoder> options are honored when serializing <xref:System.Collections.Generic.KeyValuePair%602> instances. The following code example shows how the <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> properties are camel-cased after serialization, in accordance with the specified property-naming policy.
+Starting in .NET 5, the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.Encoder> options are honored when serializing <xref:System.Collections.Generic.KeyValuePair`2> instances. The following code example shows how the <xref:System.Collections.Generic.KeyValuePair`2.Key> and <xref:System.Collections.Generic.KeyValuePair`2.Value> properties are camel-cased after serialization, in accordance with the specified property-naming policy.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
@@ -41,7 +41,7 @@ string json = @"{""key"":1,""value"":1}";
 JsonSerializer.Deserialize<KeyValuePair<int, int>>(json, options);
 ```
 
-Starting in .NET 5, the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> options are honored when deserializing using <xref:System.Text.Json.JsonSerializer>. For example, the following code snippet shows successful deserialization of lowercased <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> property names because the specified property-naming policy permits it.
+Starting in .NET 5, the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> and <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> options are honored when deserializing using <xref:System.Text.Json.JsonSerializer>. For example, the following code snippet shows successful deserialization of lowercased <xref:System.Collections.Generic.KeyValuePair`2.Key> and <xref:System.Collections.Generic.KeyValuePair`2.Value> property names because the specified property-naming policy permits it.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
@@ -52,7 +52,7 @@ Console.WriteLine(kvp.Key); // 1
 Console.WriteLine(kvp.Value); // 1
 ```
 
-To accommodate payloads that were serialized with previous versions, "Key" and "Value" are special-cased to match when deserializing. Even though the <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> property names aren't camel-cased according to the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> option in the following code example, they deserialize successfully.
+To accommodate payloads that were serialized with previous versions, "Key" and "Value" are special-cased to match when deserializing. Even though the <xref:System.Collections.Generic.KeyValuePair`2.Key> and <xref:System.Collections.Generic.KeyValuePair`2.Value> property names aren't camel-cased according to the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> option in the following code example, they deserialize successfully.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
@@ -69,7 +69,7 @@ Console.WriteLine(kvp.Value); // 1
 
 ## Reason for change
 
-Substantial customer feedback indicated that the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> should be honored. For completeness, the <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> and <xref:System.Text.Json.JsonSerializerOptions.Encoder> options are also honored, so that <xref:System.Collections.Generic.KeyValuePair%602> instances are treated the same as any other plain old CLR object (POCO).
+Substantial customer feedback indicated that the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> should be honored. For completeness, the <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> and <xref:System.Text.Json.JsonSerializerOptions.Encoder> options are also honored, so that <xref:System.Collections.Generic.KeyValuePair`2> instances are treated the same as any other plain old CLR object (POCO).
 
 ## Recommended action
 
@@ -77,11 +77,11 @@ If this change is disruptive to you, you can use a [custom converter](../../../.
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.SerializeAsync%2A?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.SerializeAsync*?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.DeserializeAsync*?displayProperty=fullName>
 
 <!--
 

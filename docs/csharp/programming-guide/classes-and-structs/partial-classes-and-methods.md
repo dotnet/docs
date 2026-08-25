@@ -1,7 +1,7 @@
 ---
 title: "Partial Classes and Members"
 description: Partial classes and members in C# split the definition of a class, a struct, an interface, or a member over two or more source files.
-ms.date: 03/11/2025
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "partial methods [C#]"
   - "partial members [C#]"
@@ -123,8 +123,6 @@ Beginning with C# 13, the implementing declaration for a partial property can us
 
 You can use `field` in either the `get` or `set` accessor, or both.
 
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
-
 Partial members enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 
 - **Template code**: The template reserves a method name and signature so that generated code can call the method. These methods follow the restrictions that enable a developer to decide whether to implement the method. If the method isn't implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation isn't supplied. No compile-time or run-time errors result if the method is called but not implemented.
@@ -149,7 +147,7 @@ partial void OnNameChanged()
 
 ## C# Language Specification
 
-For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The new features for partial members are defined in the feature specifications for [extending partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md), [partial properties and indexers](~/_csharplang/proposals/csharp-13.0/partial-properties.md), and [partial events and constructors](~/_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md).
+For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The standard defines [extending partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods), [partial properties](~/_csharpstandard/standard/classes.md#1577-partial-properties), and [partial indexers](~/_csharpstandard/standard/classes.md#1593-partial-indexers). The [partial events and constructors](~/_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md) feature specification defines later partial members.
 
 ## See also
 

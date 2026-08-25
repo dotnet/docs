@@ -1,59 +1,71 @@
 ---
 title: Debugging profiling config settings
-description: Learn about run-time settings that configure debugging and profiling for .NET apps.
-ms.date: 11/27/2019
+description: Learn about runtime settings that configure debugging and profiling for .NET apps.
+ms.date: 06/10/2026
 ---
 # Runtime configuration options for debugging and profiling
 
 This article details the settings you can use to configure .NET debugging and profiling.
 
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+> [!NOTE]
+> Starting in .NET 11, profiler environment variables support both `DOTNET` and `CORECLR` prefixes. The `DOTNET` prefix is the new standard; `CORECLR` is maintained for backwards compatibility and might be removed in the future.
 
 ## Enable diagnostics
 
 - Configures whether the debugger, the profiler, and EventPipe diagnostics are enabled or disabled.
 - If you omit this setting, diagnostics are enabled. This is equivalent to setting the value to `1`.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_EnableDiagnostics` or `DOTNET_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
+|                          | Setting name               | Values                           |
+|--------------------------|----------------------------|----------------------------------|
+| **runtimeconfig.json**   | N/A                        | N/A                              |
+| **Environment variable** | `DOTNET_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
 
 ## Enable profiling
 
 - Configures whether profiling is enabled for the currently running process.
 - If you omit this setting, profiling is disabled. This is equivalent to setting the value to `0`.
+- To load a profiler, in addition to enabling profiling, the profiler GUID and profiler location also need to be configured using these settings.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `CORECLR_ENABLE_PROFILING` | `0` - disabled<br/>`1` - enabled |
+|                          | Setting name              | Values                           |
+|--------------------------|---------------------------|----------------------------------|
+| **runtimeconfig.json**   | N/A                       | N/A                              |
+| **Environment variable** | `DOTNET_ENABLE_PROFILING` | `0` - disabled<br/>`1` - enabled |
 
 ## Profiler GUID
 
 - Specifies the GUID of the profiler to load into the currently running process.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `CORECLR_PROFILER` | *string-guid* |
+|                          | Setting name                            | Values        |
+|--------------------------|-----------------------------------------|---------------|
+| **runtimeconfig.json**   | N/A                                     | N/A           |
+| **Environment variable** | `CORECLR_PROFILER` or `DOTNET_PROFILER` | *string-guid* |
 
 ## Profiler location
 
+Once profiling is enabled, the profiler can be loaded in two ways: with environment variables (cross-plat) or through the registry (Windows only). The profiler path environment variables take precedence over any COM library path in the registry if both are specified.
+
+### Environment variable (cross-plat)
+
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
-- For more information, see [Finding the profiler library](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/profiling/Profiler%20Loading.md).
 
-| | Setting name | Values |
-| - | - | - |
-| **Environment variable** | `CORECLR_PROFILER_PATH` | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_32` | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_64` | *string-path* |
+|                          | Setting name                                                  | Values        |
+|--------------------------|---------------------------------------------------------------|---------------|
+| **Environment variable** | `CORECLR_PROFILER_PATH` or `DOTNET_PROFILER_PATH`             | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_32` or `DOTNET_PROFILER_PATH_32`       | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_64` or `DOTNET_PROFILER_PATH_64`       | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_ARM32` or `DOTNET_PROFILER_PATH_ARM32` | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_ARM64` or `DOTNET_PROFILER_PATH_ARM64` | *string-path* |
+
+### Through the registry (Windows only)
+
+When the `DOTNET_PROFILER_PATH*` [environment variables](#environment-variable-cross-plat) aren't set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
 
 ## Export perf maps and jit dumps
 
 - Enables or disables perf maps or jit dumps. These files allow third party tools, such as the Linux `perf` tool, to provide human readable names for dynamically generated code and precompiled ReadyToRun (R2R) modules.
 - If you omit this setting, writing perf map and jit dump files are both disabled. This is equivalent to setting the value to `0`.
+- On .NET 8 and later, profiling tools can enable perfmaps on demand without needing any environment variable configuration. However not every profiling tool implements this. Manually setting the environment is still required for at least the Linux 'perf' tool and 'perfcollect'.
 - When perf maps are disabled, not all managed callsites will be properly resolved.
 - Depending on the Linux kernel version, both formats are supported by the `perf` tool.
 - Enabling perf maps or jit dumps might cause up to a 20% overhead, though often it's much less. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both. The impact only occurs while the application is JITing code. Often that occurs at startup, but it might occur later if the application is running a new code path for the first time.
@@ -65,20 +77,22 @@ The following table compares perf maps and jit maps.
 | *Perf maps* | Emits `/tmp/perf-<pid>.map`, which contains symbolic information for dynamically generated code.<br/>Emits `/tmp/perfinfo-<pid>.map`, which includes ReadyToRun (R2R) module symbol information and is used by [PerfCollect](../diagnostics/trace-perfcollect-lttng.md). | Perf maps are supported on all Linux kernel versions. |
 | *Jit dumps* | The jit dump format supersedes perf maps and contains more detailed symbolic information. When enabled, jit dumps are output to `/tmp/jit-<pid>.dump` files. | Linux kernel versions 5.4 or higher. |
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
+|                        | Setting name | Values |
+|------------------------|--------------|--------|
+| **runtimeconfig.json** | N/A          | N/A    |
+| **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
+
+For EventPipe-related environment variables, see [Trace using environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables).
 
 ## Perf log markers
 
 - Enables or disables the specified signal to be accepted and ignored as a marker in the perf logs.
 - If you omit this setting, the specified signal is not ignored. This is equivalent to setting the value to `0`.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapIgnoreSignal` or `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
+|                          | Setting name                 | Values                           |
+|--------------------------|------------------------------|----------------------------------|
+| **runtimeconfig.json**   | N/A                          | N/A                              |
+| **Environment variable** | `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
 
 > [!NOTE]
 > This setting is ignored if [DOTNET_PerfMapEnabled](#export-perf-maps-and-jit-dumps) is omitted or set to `0` (that is, disabled).

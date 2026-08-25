@@ -9,13 +9,13 @@ ms.topic: how-to
 
 # Chain standard query operators together (C#) (LINQ to XML)
 
-The standard query operators can be chained together. For example, you can interject the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> operator (invoked by the `where` clause), and it operates in a lazy fashion; that is, no intermediate results are materialized by it.
+The standard query operators can be chained together. For example, you can interject the <xref:System.Linq.Enumerable.Where*?displayProperty=nameWithType> operator (invoked by the `where` clause), and it operates in a lazy fashion; that is, no intermediate results are materialized by it.
 
 ## Example: Interject a where clause
 
-In this example, the <xref:System.Linq.Enumerable.Where%2A> method is called before calling `ConvertCollectionToUpperCase`. The <xref:System.Linq.Enumerable.Where%2A> method operates in almost exactly the same way as the lazy methods used in previous examples in this tutorial, `ConvertCollectionToUpperCase` and `AppendString`.
+In this example, the <xref:System.Linq.Enumerable.Where*> method is called before calling `ConvertCollectionToUpperCase`. The <xref:System.Linq.Enumerable.Where*> method operates in almost exactly the same way as the lazy methods used in previous examples in this tutorial, `ConvertCollectionToUpperCase` and `AppendString`.
 
-One difference is that in this case, the <xref:System.Linq.Enumerable.Where%2A> method iterates through its source collection, determines that the first item doesn't pass the predicate, and then gets the next item, which does pass. It then yields the second item.
+One difference is that in this case, the <xref:System.Linq.Enumerable.Where*> method iterates through its source collection, determines that the first item doesn't pass the predicate, and then gets the next item, which does pass. It then yields the second item.
 
 However, the basic idea is the same: intermediate collections aren't materialized unless they have to be.
 

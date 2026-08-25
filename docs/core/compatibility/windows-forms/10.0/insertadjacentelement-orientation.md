@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Renamed parameter in HtmlElement.InsertAdjacentElement"
-description: Learn about the .NET 10 Preview 1 breaking change in Windows Forms where the parameter `orient` was renamed to `orientation`.
+description: Learn about the breaking change in Windows Forms where the parameter `orient` was renamed to `orientation`.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
 ---
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Previous behavior
 
-Calls to <xref:System.Windows.Forms.HtmlElement.InsertAdjacentElement(System.Windows.Forms.HtmlElementInsertionOrientation,System.Windows.Forms.HtmlElement)?displayProperty=nameWithType> included the `orient` parameter:
+Previously, calls to <xref:System.Windows.Forms.HtmlElement.InsertAdjacentElement(System.Windows.Forms.HtmlElementInsertionOrientation,System.Windows.Forms.HtmlElement)?displayProperty=nameWithType> included the `orient` parameter:
 
 ```csharp
 element.InsertAdjacentElement(orient: HtmlElementInsertionOrientation.AfterEnd, newElement);
@@ -27,7 +27,7 @@ element.InsertAdjacentElement(orientation: HtmlElementInsertionOrientation.After
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

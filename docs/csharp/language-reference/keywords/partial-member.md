@@ -1,7 +1,7 @@
 ---
 description: "Partial members are members that can be declared in one partial type declaration and defined in a separate partial type declaration."
 title: "Partial members"
-ms.date: 03/13/2025
+ms.date: 01/22/2026
 f1_keywords: 
   - "partialmethod_CSharpKeyword"
 helpviewer_keywords: 
@@ -15,6 +15,8 @@ A partial member has one *declaring declaration* and often one *implementing dec
 - Signatures in both parts of the partial type must match.
 
 The `partial` keyword isn't allowed on static constructors, finalizers, or overloaded operators. Before C# 14, `partial` wasn't allowed on instance constructors or event declarations. Before C# 13, `partial` wasn't allowed on properties or indexers.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 A partial method isn't required to have an implementing declaration in the following cases:
 
@@ -43,7 +45,7 @@ The following example shows a declaring declaration and an implementing declarat
 
 The preceding example illustrates rules on how the two declarations are combined:
 
-- *Signature matches*: In general, the signatures for the declaring and implementing declarations must match. This includes accessibility modifier on methods, properties, indexers, and individual accessors. It includes the parameter type and ref-kind modifiers on all parameters. The return type and any ref-kind modifier must match. Tuple member names must match. However, some rules are flexible:
+- *Signature matches*: In general, the signatures for the declaring and implementing declarations must match. This rule includes the accessibility modifier on methods, properties, indexers, and individual accessors. It includes the parameter type and ref-kind modifiers on all parameters. The return type and any ref-kind modifier must match. Tuple member names must match. However, some rules are flexible:
   - The declaring and implementing declarations can have different [nullable](../compiler-options/language.md#nullable) annotations settings. Meaning that one can be *nullable oblivious* and the other *nullable enabled*.
   - Nullability differences that don't involve *oblivious nullability* generates a warning.
   - Default parameter values don't need to match. The compiler issues a warning if the implementing declaration of a method or indexer declares a default parameter value.

@@ -41,7 +41,7 @@ The `in` modifier on the generic type argument is covered in the article
 on covariance.
 
 There are variations of the `Action` delegate that contain up to
-16 arguments such as <xref:System.Action%6016>.
+16 arguments such as <xref:System.Action`16>.
 It's important that these definitions use different generic arguments for each of the
 delegate arguments: That gives you maximum flexibility. The method arguments need not be, but may be, the same type.
 
@@ -61,14 +61,14 @@ The `out` modifier on the result generic type argument is covered in the
 article on covariance.
 
 There are variations of the `Func` delegate with up to
-16 input arguments such as <xref:System.Func%6017>.
+16 input arguments such as <xref:System.Func`17>.
 The type of the result is always the last type parameter in all the `Func`
 declarations, by convention.
 
 Use one of the `Func` types for any delegate type that returns a value.
 
 There's also a specialized
-<xref:System.Predicate%601>
+<xref:System.Predicate`1>
 type for a delegate that returns a test on a single value:
 
 ```csharp

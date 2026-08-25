@@ -10,9 +10,8 @@ Module Program
         ' <Snippet1>
         Const state As String = "MI"
         Const stateName As String = "Michigan"
-        Const capital As String = "Lansing"
-        Dim stateInfo = (state:=state, stateName:=stateName, capital:=capital)
-        Console.WriteLine($"{stateInfo.stateName}: 2-letter code: {stateInfo.state}, Capital {stateInfo.capital}")
+        Dim stateInfo = (state:=state, stateName:=stateName)
+        Console.WriteLine($"{stateInfo.stateName}: 2-letter code: {stateInfo.state}")
         ' The example displays the following output:
         '      Michigan: 2-letter code: MI, Capital Lansing
         ' </Snippet1>

@@ -2,11 +2,13 @@
 title: Upgrade Assistant Telemetry
 description: Learn about telemetry collected by the Upgrade Assistant.
 author: tasou
-ms.date: 05/22/2023
+ms.date: 03/19/2026
 ---
 # Upgrade Assistant telemetry
 
 The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry feature that collects usage data. The telemetry data is used to help understand how to make improvements to the tool.
+
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
 
 ## How to opt out
 

@@ -28,7 +28,7 @@ This example shows how to add XML documentation comments to your code.
 
 4. Add additional code that uses the type or member with the new XML documentation comments.
 
-    IntelliSense displays the text from the \<summary> tag for the type or member.
+    IntelliSense displays the text from the `<summary>` tag for the type or member.
 
 5. Compile the code to generate an XML file containing the documentation comments. For more information, see [-doc](../../reference/command-line-compiler/doc.md).
 

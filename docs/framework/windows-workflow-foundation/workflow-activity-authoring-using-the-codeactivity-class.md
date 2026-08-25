@@ -6,17 +6,17 @@ ms.assetid: cfe315c1-f86d-43ec-b9ce-2f8c469b1106
 ---
 # Workflow Activity Authoring Using the CodeActivity Class
 
-Activities created by inheriting from <xref:System.Activities.CodeActivity> can implement basic imperative behavior by overriding the <xref:System.Activities.CodeActivity.Execute%2A> method.
+Activities created by inheriting from <xref:System.Activities.CodeActivity> can implement basic imperative behavior by overriding the <xref:System.Activities.CodeActivity.Execute*> method.
 
 ## Using CodeActivityContext
 
- Features of the workflow runtime can be accessed from within the <xref:System.Activities.CodeActivity.Execute%2A> method by using members of the `context` parameter, of type <xref:System.Activities.CodeActivityContext>. The features available through <xref:System.Activities.CodeActivityContext> include the following:
+ Features of the workflow runtime can be accessed from within the <xref:System.Activities.CodeActivity.Execute*> method by using members of the `context` parameter, of type <xref:System.Activities.CodeActivityContext>. The features available through <xref:System.Activities.CodeActivityContext> include the following:
 
 - Getting and setting the values of variables and arguments.
 
-- Custom tracking features using <xref:System.Activities.CodeActivityContext.Track%2A>.
+- Custom tracking features using <xref:System.Activities.CodeActivityContext.Track*>.
 
-- Access to the activity’s execution properties using <xref:System.Activities.CodeActivityContext.GetProperty%2A>.
+- Access to the activity’s execution properties using <xref:System.Activities.CodeActivityContext.GetProperty*>.
 
 #### To create a custom activity that inherits from CodeActivity
 
@@ -41,7 +41,7 @@ Activities created by inheriting from <xref:System.Activities.CodeActivity> can 
     class HelloActivity : CodeActivity
     ```
 
-7. Add functionality to the class by adding an <xref:System.Activities.CodeActivity.Execute%2A> method.
+7. Add functionality to the class by adding an <xref:System.Activities.CodeActivity.Execute*> method.
 
     ```csharp
     protected override void Execute(CodeActivityContext context)

@@ -7,7 +7,7 @@ ms.date: 11/03/2022
 
 For applications that have an *app.config* file, the `<configuration><configSections>` entry is no longer allowed to contain a `<section name="system.diagnostics">` entry. If present, you must remove the entry.
 
-Having a `<section name="system.diagnostics">` entry throws the following run-time exception when the configuration system is first used:
+Having a `<section name="system.diagnostics">` entry throws the following runtime exception when the configuration system is first used:
 
 > **ConfigurationErrorsException: Section or group name 'system.diagnostics' is already defined. Updates to this may only occur at the configuration level where it is defined.**
 

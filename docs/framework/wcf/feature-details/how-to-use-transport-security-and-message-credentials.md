@@ -17,61 +17,61 @@ Securing a service with both transport and message credentials uses the best of 
 
  If the transport is HTTP (using the <xref:System.ServiceModel.WSHttpBinding>), SSL over HTTP provides the transport-level security. In that case, you must configure the computer hosting the service with an SSL certificate bound to a port, as shown later in this topic.
 
- If the transport is TCP (using the <xref:System.ServiceModel.NetTcpBinding>), by default the transport-level security provided is Windows security, or SSL over TCP. When using SSL over TCP, you must specify the certificate using the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A> method, as shown later in this topic.
+ If the transport is TCP (using the <xref:System.ServiceModel.NetTcpBinding>), by default the transport-level security provided is Windows security, or SSL over TCP. When using SSL over TCP, you must specify the certificate using the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate*> method, as shown later in this topic.
 
 ### To use the WSHttpBinding with a certificate for transport security (in code)
 
 1. Use the HttpCfg.exe tool to bind an SSL certificate to a port on the machine. For more information, see [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md).
 
-2. Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.
+2. Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set the <xref:System.ServiceModel.WSHttpSecurity.Mode> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.
 
-3. Set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property to an appropriate value. (For more information, see [Selecting a Credential Type](selecting-a-credential-type.md).) The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.
+3. Set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType> property to an appropriate value. (For more information, see [Selecting a Credential Type](selecting-a-credential-type.md).) The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.
 
 4. Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "HTTPS" scheme and must contain the actual name of the machine and the port number that the SSL certificate is bound to. (Alternatively, you can set the base address in configuration.)
 
-5. Add a service endpoint using the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint%2A> method.
+5. Add a service endpoint using the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint*> method.
 
-6. Create the instance of the <xref:System.ServiceModel.ServiceHost> and call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method, as shown in the following code.
+6. Create the instance of the <xref:System.ServiceModel.ServiceHost> and call the <xref:System.ServiceModel.ICommunicationObject.Open*> method, as shown in the following code.
 
      [!code-csharp[c_SettingSecurityMode#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_settingsecuritymode/cs/source.cs#7)]
      [!code-vb[c_SettingSecurityMode#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_settingsecuritymode/vb/source.vb#7)]
 
 ### To use the NetTcpBinding with a certificate for transport security (in code)
 
-1. Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.
+1. Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.
 
-2. Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.
+2. Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType*> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.
 
 3. Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "net.tcp" scheme. (Alternatively, you can set the base address in configuration.)
 
 4. Create the instance of the <xref:System.ServiceModel.ServiceHost> class.
 
-5. Use the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential> class to explicitly set the X.509 certificate for the service.
+5. Use the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate*> method of the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential> class to explicitly set the X.509 certificate for the service.
 
-6. Add a service endpoint using the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint%2A> method.
+6. Add a service endpoint using the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint*> method.
 
-7. Call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method, as shown in the following code.
+7. Call the <xref:System.ServiceModel.ICommunicationObject.Open*> method, as shown in the following code.
 
      [!code-csharp[c_SettingSecurityMode#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_settingsecuritymode/cs/source.cs#8)]
      [!code-vb[c_SettingSecurityMode#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_settingsecuritymode/vb/source.vb#8)]
 
 ### To use the NetTcpBinding with Windows for transport security (in code)
 
-1. Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode%2A> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.
+1. Create an instance of the <xref:System.ServiceModel.NetTcpBinding> class and set the <xref:System.ServiceModel.NetTcpSecurity.Mode> property to <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.
 
-2. Set the transport security to use Windows by setting the <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A> to <xref:System.ServiceModel.TcpClientCredentialType.Windows>. (Note that this is the default.)
+2. Set the transport security to use Windows by setting the <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType*> to <xref:System.ServiceModel.TcpClientCredentialType.Windows>. (Note that this is the default.)
 
-3. Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType%2A> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.
+3. Set the <xref:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType*> to an appropriate value. The following code uses the <xref:System.ServiceModel.MessageCredentialType.Certificate> value.
 
 4. Create an instance of the <xref:System.Uri> class with an appropriate base address. Note that the address must use the "net.tcp" scheme. (Alternatively, you can set the base address in configuration.)
 
 5. Create the instance of the <xref:System.ServiceModel.ServiceHost> class.
 
-6. Use the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential> class to explicitly set the X.509 certificate for the service.
+6. Use the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate*> method of the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential> class to explicitly set the X.509 certificate for the service.
 
-7. Add a service endpoint using the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint%2A> method.
+7. Add a service endpoint using the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint*> method.
 
-8. Call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method, as shown in the following code.
+8. Call the <xref:System.ServiceModel.ICommunicationObject.Open*> method, as shown in the following code.
 
      [!code-csharp[c_SettingSecurityMode#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_settingsecuritymode/cs/source.cs#9)]
      [!code-vb[c_SettingSecurityMode#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_settingsecuritymode/vb/source.vb#9)]

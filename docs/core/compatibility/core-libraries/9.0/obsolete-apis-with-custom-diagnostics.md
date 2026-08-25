@@ -18,7 +18,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 |---------------|-------------|----------|
 | [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0014](../../../../fundamentals/syslib-diagnostics/syslib0014.md) | <xref:System.Net.ServicePointManager> is fully obsolete. Settings on <xref:System.Net.ServicePointManager> don't affect <xref:System.Net.Security.SslStream> or <xref:System.Net.Http.HttpClient> (this behavior hasn't changed since .NET 6). | Warning |
-| [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead*?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite*?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read*?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write*?displayProperty=nameWithType> instead. | Warning |
 | [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. | Warning |
 | [SYSLIB0056](../../../../fundamentals/syslib-diagnostics/syslib0056.md) | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. | Warning |
 | [SYSLIB0057](../../../../fundamentals/syslib-diagnostics/syslib0057.md) | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. | Warning |
@@ -49,8 +49,8 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ### SYSLIB0054
 
-- <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=fullName>
-- <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=fullName>
+- <xref:System.Threading.Thread.VolatileRead*?displayProperty=fullName>
+- <xref:System.Threading.Thread.VolatileWrite*?displayProperty=fullName>
 
 ### SYSLIB0055
 

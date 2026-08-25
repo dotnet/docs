@@ -15,7 +15,7 @@ topic_type:
 ---
 # AssemblyFlags Enumeration
 
-Contains values that describe run-time features of an assembly.
+Contains values that describe runtime features of an assembly.
 
 ## Syntax
 

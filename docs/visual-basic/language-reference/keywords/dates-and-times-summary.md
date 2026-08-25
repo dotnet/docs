@@ -2,7 +2,7 @@
 description: "Learn more about: Dates and Times Summary (Visual Basic)"
 title: "Dates and Times Summary"
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dates [Visual Basic], Visual Basic data types"
   - "dates [Visual Basic], run-time library members"
   - "dates [Visual Basic], Visual Basic keywords"
@@ -14,17 +14,17 @@ ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
 ---
 # Dates and Times Summary (Visual Basic)
 
-Visual Basic language keywords and run-time library members are organized by purpose and use.  
-  
-|Action|Language element|  
-|------------|----------------------|  
-|Get the current date or time.|<xref:Microsoft.VisualBasic.DateAndTime.Now%2A>, <xref:Microsoft.VisualBasic.DateAndTime.Today%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>|  
-|Perform date calculations.|<xref:Microsoft.VisualBasic.DateAndTime.DateAdd%2A>, <xref:Microsoft.VisualBasic.DateAndTime.DateDiff%2A>, <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>|  
-|Return a date.|<xref:Microsoft.VisualBasic.DateAndTime.DateSerial%2A>, <xref:Microsoft.VisualBasic.DateAndTime.DateValue%2A>, <xref:Microsoft.VisualBasic.DateAndTime.MonthName%2A>, <xref:Microsoft.VisualBasic.DateAndTime.WeekdayName%2A>|  
-|Return a time.|<xref:Microsoft.VisualBasic.DateAndTime.TimeSerial%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeValue%2A>|  
-|Set the date or time.|<xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeString%2A>, <xref:Microsoft.VisualBasic.DateAndTime.Today%2A>|  
-|Time a process.|<xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>|  
-  
+Visual Basic language keywords and run-time library members are organized by purpose and use.
+
+|Action|Language element|
+|------------|----------------------|
+|Get the current date or time.|<xref:Microsoft.VisualBasic.DateAndTime.Now*>, <xref:Microsoft.VisualBasic.DateAndTime.Today*>, <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay*>|
+|Perform date calculations.|<xref:Microsoft.VisualBasic.DateAndTime.DateAdd*>, <xref:Microsoft.VisualBasic.DateAndTime.DateDiff*>, <xref:Microsoft.VisualBasic.DateAndTime.DatePart*>|
+|Return a date.|<xref:Microsoft.VisualBasic.DateAndTime.DateSerial*>, <xref:Microsoft.VisualBasic.DateAndTime.DateValue*>, <xref:Microsoft.VisualBasic.DateAndTime.MonthName*>, <xref:Microsoft.VisualBasic.DateAndTime.WeekdayName*>|
+|Return a time.|<xref:Microsoft.VisualBasic.DateAndTime.TimeSerial*>, <xref:Microsoft.VisualBasic.DateAndTime.TimeValue*>|
+|Set the date or time.|<xref:Microsoft.VisualBasic.DateAndTime.DateString*>, <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay*>, <xref:Microsoft.VisualBasic.DateAndTime.TimeString*>, <xref:Microsoft.VisualBasic.DateAndTime.Today*>|
+|Time a process.|<xref:Microsoft.VisualBasic.DateAndTime.Timer*>|
+
 ## See also
 
 - [Keywords](index.md)

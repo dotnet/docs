@@ -2,7 +2,7 @@
 title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
-ms.date: 12/20/2024
+ms.date: 11/18/2025
 ms.custom: "updateeachrelease"
 ---
 
@@ -12,6 +12,21 @@ This article provides a history of each major release of the C# language. The C#
 
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
+
+## C# version 14
+
+*Released November 2025*
+
+C# 14 includes the following new features:
+
+- [Extension members](./csharp-14.md#extension-members)
+- [Null-conditional assignment](./csharp-14.md#null-conditional-assignment)
+- [`nameof` supports unbound generic types](./csharp-14.md#unbound-generic-types-and-nameof)
+- [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](./csharp-14.md#implicit-span-conversions)
+- [Modifiers on simple lambda parameters](./csharp-14.md#simple-lambda-parameters-with-modifiers)
+- [`field` backed properties](./csharp-14.md#the-field-keyword)
+- [`partial` events and constructors](./csharp-14.md#more-partial-members)
+- [user-defined compound assignment operators](./csharp-14.md#user-defined-compound-assignment)
 
 ## C# version 13
 
@@ -29,8 +44,6 @@ C# 13 includes the following new features:
 - You can allow `ref struct` types as arguments for type parameters in generics.
 - Partial properties and indexers are now allowed in `partial` types.
 - Overload resolution priority allows library authors to designate one overload as better than others.
-
-And, the `field` contextual keyword to access the compiler generated backing field in an automatically implemented property was released as a preview feature.
 
 ## C# version 12
 
@@ -56,21 +69,21 @@ Overall, C# 12 provides new features that make you more productive writing C# co
 
 The following features were added in C# 11:
 
-- [Raw string literals](./csharp-11.md#raw-string-literals)
-- [Generic math support](./csharp-11.md#generic-math-support)
-- [Generic attributes](./csharp-11.md#generic-attributes)
-- [UTF-8 string literals](./csharp-11.md#utf-8-string-literals)
-- [Newlines in string interpolation expressions](./csharp-11.md#newlines-in-string-interpolations)
-- [List patterns](./csharp-11.md#list-patterns)
-- [File-local types](./csharp-11.md#file-local-types)
-- [Required members](./csharp-11.md#required-members)
-- [Auto-default structs](./csharp-11.md#auto-default-struct)
-- [Pattern match `Span<char>` on a constant `string`](./csharp-11.md#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
-- [Extended `nameof` scope](./csharp-11.md#extended-nameof-scope)
-- [Numeric IntPtr](./csharp-11.md#numeric-intptr-and-uintptr)
-- [`ref` fields and `scoped ref`](./csharp-11.md#ref-fields-and-ref-scoped-variables)
-- [Improved method group conversion to delegate](./csharp-11.md#improved-method-group-conversion-to-delegate)
-- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+- [Raw string literals](../language-reference/builtin-types/reference-types.md#string-literals).
+- [Generic math support](../language-reference/keywords/interface.md#static-abstract-and-virtual-members).
+- [Generic attributes](../advanced-topics/reflection-and-attributes/creating-custom-attributes.md).
+- [UTF-8 string literals](../language-reference/builtin-types/reference-types.md#utf-8-string-literals).
+- [Newlines in string interpolation expressions](../language-reference/tokens/interpolated.md).
+- [List patterns](../language-reference/operators/patterns.md#list-patterns).
+- [File-local types](../language-reference/keywords/file.md).
+- [Required members](../programming-guide/classes-and-structs/properties.md#required-properties).
+- [Auto-default structs](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).
+- Pattern match `Span<char>` on a constant `string`.
+- Extended `nameof` scope.
+- The `nint` and `uint` keywords alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType><xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
+- [`ref` fields and `scoped ref`](../language-reference/builtin-types/ref-struct.md#ref-fields)
+- Improved method group conversion to delegate.
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters-such-names-may-become-reserved-for-the-language)
 
 C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.
 
@@ -85,7 +98,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Interpolated string handlers](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
 - [`global using` directives](../language-reference/keywords/using-directive.md)
 - [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
-- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharpstandard/standard/patterns.md#1126-property-pattern)
 - Lambda expressions can have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
 - Lambda expressions can declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
@@ -96,11 +109,6 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Allow `AsyncMethodBuilder` attribute on methods](../language-reference/attributes/general.md#asyncmethodbuilder-attribute)
 - [CallerArgumentExpression attribute](../language-reference/attributes/caller-information.md#argument-expressions)
 - C# 10 supports a new format for the `#line` pragma.
-
-More features were available in *preview* mode. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
-
-- [Generic attributes](./csharp-11.md#generic-attributes) later in this article.
-- [static abstract members in interfaces](./csharp-11.md#generic-math-support).
 
 C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
 
@@ -121,25 +129,25 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
 - [Top-level statements](../fundamentals/program-structure/top-level-statements.md)
 - Pattern matching enhancements: [relational patterns](../language-reference/operators/patterns.md#relational-patterns) and [logical patterns](../language-reference/operators/patterns.md#logical-patterns)
 - [Performance and interop](#performance-and-interop)
-  - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
-  - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
+  - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
+  - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
-  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#23510-the-moduleinitializer-attribute)
+  - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
-  - [Target-typed `new` expressions](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
-  - [`static` anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
-  - [Target-typed conditional expressions](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
-  - [Covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
-  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
-  - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
-  - [Attributes on local functions](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
+  - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)
+  - [`static` anonymous functions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions)
+  - [Target-typed conditional expressions](~/_csharpstandard/standard/expressions.md#1221-conditional-operator)
+  - [Covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods)
+  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
+  - [Lambda discard parameters](~/_csharpstandard/standard/expressions.md#12222-anonymous-function-signatures)
+  - [Attributes on local functions](~/_csharpstandard/standard/statements.md#1364-local-function-declarations)
 
 C# 9 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
 
 [Top level statements](../fundamentals/program-structure/top-level-statements.md) means your main program is simpler to read. There's less need for ceremony: a namespace, a `Program` class, and `static void Main()` are all unnecessary.
 
-The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
+The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
 The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
 
@@ -204,6 +212,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
 - [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- Lambda expressions, anonymous methods, and local functions can declare parameters that shadow local variables and parameters from an enclosing scope.
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
 - [Asynchronous streams](../language-reference/statements/iteration-statements.md#await-foreach)
@@ -296,7 +305,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
-- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
@@ -354,7 +363,7 @@ C# version 4.0, released with Visual Studio 2010, introduced some interesting ne
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
-- [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
+- [Embedded interop types](../../standard/native-interop/type-equivalence-and-embedded-interop-types.md)
 
 Embedded interop types eased the deployment pain of creating COM interop assemblies for your application. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 
@@ -369,7 +378,7 @@ Dynamic binding gives you the potential for errors but also great power within t
 C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
-- [Anonymous types](../fundamentals/types/anonymous-types.md)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/get-started/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
@@ -404,7 +413,7 @@ Other C# 2.0 features added capabilities to existing features:
 - Static classes
 - Delegate inference
 
-While C# began as a generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. With generics, types and methods can operate on an arbitrary type while still retaining type safety. For instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type-safe operations on those strings or integers while you iterate through them. Using generics is better than creating a `ListInt` type that derives from `ArrayList` or casting from `Object` for every operation.
+While C# began as a generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. With generics, types and methods can operate on an arbitrary type while still retaining type safety. For instance, having a <xref:System.Collections.Generic.List`1> lets you have `List<string>` or `List<int>` and perform type-safe operations on those strings or integers while you iterate through them. Using generics is better than creating a `ListInt` type that derives from `ArrayList` or casting from `Object` for every operation.
 
 C# version 2.0 brought iterators. To put it succinctly, iterators let you examine all the items in a `List` (or other Enumerable types) with a `foreach` loop. Having iterators as a first-class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
 
@@ -412,7 +421,7 @@ C# version 2.0 brought iterators. To put it succinctly, iterators let you examin
 
 *Released April 2003*
 
-C# version 1.2 shipped with Visual Studio .NET 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose%2A> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
+C# version 1.2 shipped with Visual Studio .NET 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose*> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
 
 ## C# version 1.0
 
@@ -433,7 +442,7 @@ The major features of C# 1.0 included:
 - [Properties](../programming-guide/classes-and-structs/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
-- [Statements](../programming-guide/statements-expressions-operators/statements.md)
+- [Statements](../fundamentals/statements/index.md)
 - [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

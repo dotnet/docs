@@ -70,7 +70,7 @@ The key members of the **DeviceStatistics** class are detailed below:
     </ManufacturerSpecific>
     ```
 
-    When an application requests all statistics from the device, the device returns a `<Parameter>` entry for every defined statistic in the device category. The device category is defined by the version of the XML schema specified by the **version** attribute in the `<UPOSStat>` tag. If the device does not record any statistics, the `<Value>` tag will be empty.
+    When an application requests all statistics from the device, the device returns a `<Parameter>` entry for every defined statistic in the device category. The device category is defined by the version of the XML schema specified by the `version` attribute in the `<UPOSStat>` tag. If the device does not record any statistics, the `<Value>` tag will be empty.
 
 POS for .NET uses handlers to perform the reading and writing of statistics in a manner similar to the way events are handled. When one of these statistic handlers is created, it is assigned to a particular device statistic. When this statistic is read or updated, the handler calls a delegate that is able to read from or write to the device as necessary.
 

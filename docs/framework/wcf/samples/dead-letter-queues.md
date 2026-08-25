@@ -20,15 +20,15 @@ Because queued communication can involve a certain amount of dormancy, you may w
 
 The dead-letter queue in the `NetMsmqBinding` binding is expressed in the following properties:
 
-- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
+- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue> property to express the kind of dead-letter queue required by the client. This enumeration has the following values:
 
 - `None`: No dead-letter queue is required by the client.
 
 - `System`: The system dead-letter queue is used to store dead messages. The system dead-letter queue is shared by all applications running on the computer.
 
-- `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on Windows Vista. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
+- `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue> property is used to store dead messages. This feature is only available on Windows Vista. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
 
-- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in Windows Vista.
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue> property to express the specific queue to use as a dead-letter queue. This is available only in Windows Vista.
 
 In this sample, the client sends a batch of messages to the service from within the scope of a transaction and specifies an arbitrarily low value for "time-to-live" for these messages (about 2 seconds). The client also specifies a custom dead-letter queue to use to enqueue the messages that have expired.
 
@@ -147,7 +147,7 @@ The dead-letter message service reads messages from the dead-letter queue. The d
 > [!NOTE]
 > The dead-letter queue is a client queue and is local to the client queue manager.
 
-The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus%2A>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:
+The dead-letter message service implementation checks for the reason a message failed delivery and takes corrective measures. The reason for a message failure is captured in two enumerations, <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure*> and <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryStatus*>. You can retrieve the <xref:System.ServiceModel.Channels.MsmqMessageProperty> from the <xref:System.ServiceModel.OperationContext> as shown in the following sample code:
 
 ```csharp
 public void SubmitPurchaseOrder(PurchaseOrder po)

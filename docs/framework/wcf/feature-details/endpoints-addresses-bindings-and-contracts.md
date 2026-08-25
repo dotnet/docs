@@ -30,9 +30,9 @@ Each endpoint consists of the following:
 
 - Address: The address uniquely identifies the endpoint and tells potential consumers of the service where it is located. It is represented in the WCF object model by the <xref:System.ServiceModel.EndpointAddress> class. An <xref:System.ServiceModel.EndpointAddress> class contains:
 
-  - A <xref:System.ServiceModel.EndpointAddress.Uri%2A> property, which represents the address of the service.
+  - A <xref:System.ServiceModel.EndpointAddress.Uri> property, which represents the address of the service.
 
-  - An <xref:System.ServiceModel.EndpointAddress.Identity%2A> property, which represents the security identity of the service and a collection of optional message headers. The optional message headers are used to provide additional and more detailed addressing information to identify or interact with the endpoint.
+  - An <xref:System.ServiceModel.EndpointAddress.Identity> property, which represents the security identity of the service and a collection of optional message headers. The optional message headers are used to provide additional and more detailed addressing information to identify or interact with the endpoint.
 
   For more information, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).
 
@@ -58,7 +58,7 @@ Each endpoint consists of the following:
 
   For more information about defining a contract, see [Designing Service Contracts](../designing-service-contracts.md).
 
-- Behaviors: You can use endpoint behaviors to customize the local behavior of the service endpoint. Endpoint behaviors achieve this by participating in the process of building a WCF runtime. An example of an endpoint behavior is the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property, which allows you to specify a different listening address than the SOAP or Web Services Description Language (WSDL) address. For more information, see [ClientViaBehavior](../diagnostics/wmi/clientviabehavior.md).
+- Behaviors: You can use endpoint behaviors to customize the local behavior of the service endpoint. Endpoint behaviors achieve this by participating in the process of building a WCF runtime. An example of an endpoint behavior is the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri> property, which allows you to specify a different listening address than the SOAP or Web Services Description Language (WSDL) address. For more information, see [ClientViaBehavior](../diagnostics/wmi/clientviabehavior.md).
 
 ## Defining Endpoints
 

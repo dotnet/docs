@@ -5,7 +5,7 @@ ms.date: 05/18/2022
 ---
 # Equals method behavior change for NaN
 
-The `Equals(T other)` instance method for the following types was updated to meet the <xref:System.IEquatable%601> implementation requirements. As a result, the method now correctly handles NaN. This change ensures the types can correctly be used alongside `GetHashCode`, <xref:System.Collections.Generic.Dictionary%602>, and other hash sets.
+The `Equals(T other)` instance method for the following types was updated to meet the <xref:System.IEquatable`1> implementation requirements. As a result, the method now correctly handles NaN. This change ensures the types can correctly be used alongside `GetHashCode`, <xref:System.Collections.Generic.Dictionary`2>, and other hash sets.
 
 - <xref:System.Numerics.Matrix3x2?displayProperty=fullName>
 - <xref:System.Numerics.Matrix4x4?displayProperty=fullName>
@@ -14,10 +14,10 @@ The `Equals(T other)` instance method for the following types was updated to mee
 - <xref:System.Numerics.Vector2?displayProperty=fullName>
 - <xref:System.Numerics.Vector3?displayProperty=fullName>
 - <xref:System.Numerics.Vector4?displayProperty=fullName>
-- <xref:System.Numerics.Vector%601?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Vector64%601?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Vector128%601?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Vector256%601?displayProperty=fullName>
+- <xref:System.Numerics.Vector`1?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Vector64`1?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Vector128`1?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Vector256`1?displayProperty=fullName>
 
 ## Previous behavior
 
@@ -50,7 +50,7 @@ Console.WriteLine(s.Contains(v)); // False
 
 ## New behavior
 
-The behavior is now the same as for the primitive floating-point types, which is that the `==` and `!=` methods continue to follow the IEEE 754 requirements where `NaN != NaN`. But the `Equals(T other)` instance methods follow the <xref:System.IEquatable%601> requirements so that `NaN.Equals(NaN)`.
+The behavior is now the same as for the primitive floating-point types, which is that the `==` and `!=` methods continue to follow the IEEE 754 requirements where `NaN != NaN`. But the `Equals(T other)` instance methods follow the <xref:System.IEquatable`1> requirements so that `NaN.Equals(NaN)`.
 
 For example (no change):
 
@@ -87,7 +87,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-The previous implementation did not meet the implementation requirements of <xref:System.IEquatable%601> or `object.Equals(object obj)`. This resulted in the affected types not being usable in hash sets or with `GetHashCode`.
+The previous implementation did not meet the implementation requirements of <xref:System.IEquatable`1> or `object.Equals(object obj)`. This resulted in the affected types not being usable in hash sets or with `GetHashCode`.
 
 ## Recommended action
 
@@ -95,14 +95,14 @@ If you prefer the previous behavior, switch to using `==` or `!=` instead of `Eq
 
 ## Affected APIs
 
-- <xref:System.Numerics.Matrix3x2.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Matrix4x4.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Plane.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Quaternion.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Vector2.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Vector3.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Vector4.Equals%2A?displayProperty=fullName>
-- <xref:System.Numerics.Vector%601.Equals%2A?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Vector64%601.Equals%2A?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Vector128%601.Equals%2A?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Vector256%601.Equals%2A?displayProperty=fullName>
+- <xref:System.Numerics.Matrix3x2.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Matrix4x4.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Plane.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Quaternion.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Vector2.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Vector3.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Vector4.Equals*?displayProperty=fullName>
+- <xref:System.Numerics.Vector`1.Equals*?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Vector64`1.Equals*?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Vector128`1.Equals*?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Vector256`1.Equals*?displayProperty=fullName>

@@ -1,6 +1,6 @@
 ---
-title: Deploy your project to Azure by using GitHub Copilot app modernization for .NET
-description: Learn how to deploy your migrated .NET project to Azure by using GitHub Copilot app modernization for .NET.
+title: Deploy your project to Azure by using GitHub Copilot modernization for .NET
+description: Learn how to deploy your migrated .NET project to Azure by using GitHub Copilot modernization for .NET.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/17/2025
@@ -8,17 +8,17 @@ author: JiDong
 ms.author: donji
 ---
 
-# Quickstart: Use GitHub Copilot app modernization for .NET to deploy your project to Azure
+# Quickstart: Use GitHub Copilot modernization for .NET to deploy your project to Azure
 
-In this quickstart, you learn how to deploy your project to Azure with GitHub Copilot app modernization for .NET. This tool lets you deploy migrated projects to Azure and automatically fixes deployment errors during the process.
+In this quickstart, you learn how to deploy your project to Azure with GitHub Copilot modernization for .NET. This tool lets you deploy migrated projects to Azure and automatically fixes deployment errors during the process.
 
 ## Prerequisites
 
-[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
+[!INCLUDE [github-copilot-app-modernization-prereqs](./includes/github-copilot-app-modernization-prereqs.md)]
 
 ## Deploy your project
 
-The App Modernization for .NET deployment feature helps you deploy your migrated app to Azure. Follow these steps to start the deployment process:
+The Modernization for .NET deployment feature helps you deploy your migrated app to Azure. Follow these steps to start the deployment process:
 
 1. In Visual Studio, open your migrated project.
 
@@ -28,11 +28,17 @@ The App Modernization for .NET deployment feature helps you deploy your migrated
 
         :::image type="content" source="media/start-deploy.png" alt-text="Screenshot that shows how to start the deployment process in GitHub Copilot.":::
 
-    - **Use a deployment prompt**: You can enter the following prompt in Copilot chat to deploy your project to Azure:
+    - **Use a deployment prompt to provision new Azure infrastructure and deploy your project**: You can enter the following prompt in Copilot chat to deploy your project to Azure:
 
-        *Scan my project to identify all Azure-relevant resources, programming languages, frameworks, dependencies, and configuration files needed for deployment, and develop an architecture diagram for me using #appmod-generate-architecture-diagram. Based on that diagram, help me develop and execute a plan using #appmod-get-plan to deploy my project to Azure. deployTool: azcli, hosting service: non-aks.*
+        *Scan my project carefully to identify all Azure-relevant resources, programming languages, frameworks, dependencies, and configuration files needed for deployment. Develop an architecture diagram for me using #appmod-generate-architecture-diagram. Based on that diagram along with all info you get from project scan, help me develop a deploy-and-provision plan WITH TOOL #appmod-get-plan and execute it to deploy my project to Azure. deployTool: azd, IacType: Bicep, hosting service: non-aks.*
 
         :::image type="content" source="media/start-deploy-prompt.png" alt-text="Screenshot that shows how to start the deployment process in GitHub Copilot by using a prompt.":::
+
+    - **Use a deployment prompt to deploy your project to existing Azure resources**: You can enter the following prompt in Copilot chat to deploy your project to existing Azure resources:
+
+        *Deploy my project to my existing Azure resource group [resource group ID] in subscription [subscription ID]. Use the #appmod-get-plan tool to develop and execute a plan.*
+
+        :::image type="content" source="media/start-deploy-existing-prompt.png" alt-text="Screenshot that shows how to start the deploy to existing Azure resource process in GitHub Copilot by using a prompt.":::
 
 1. After you start the deployment, GitHub Copilot might ask for your approval to use tools or run commands. Grant permission when prompted.
 

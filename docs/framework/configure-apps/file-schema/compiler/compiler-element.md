@@ -12,14 +12,14 @@ helpviewer_keywords:
   - "compiler element"
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 ---
-# \<compiler> Element
+# `<compiler>` Element
 
 Specifies the compiler configuration attributes for a language provider.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<compiler>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.codedom>`](system-codedom-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<compilers>`](compilers-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<compiler>`
 
 ## Syntax
 
@@ -65,7 +65,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 Each `<compiler>` element specifies the compiler configuration attributes for a specific language provider. The provider extends the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> class for a specific language; the `<compiler>` element defines the compiler and code generator settings for the language provider.
 
-The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.
+The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo*?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.
 
 Compiler elements in the application or Web configuration file can supplement or override the settings in the machine configuration file. If more than one provider implementation is configured for the same language name or the same file extension, the last matching configuration overrides any previous configured providers for that language name or file extension.
 
@@ -100,6 +100,6 @@ The following example illustrates a typical compiler configuration element:
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Configuration File Schema](../index.md)
-- [\<compilers> Element](compilers-element.md)
+- [`<compilers>` Element](compilers-element.md)
 - [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

@@ -8,19 +8,19 @@ ms.assetid: cf4096d0-4bb3-45a9-9a6b-f01e29a60333
 
 .NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces. The following interfaces are now variant:
 
-- <xref:System.Collections.Generic.IEnumerable%601> (T is covariant)
+- <xref:System.Collections.Generic.IEnumerable`1> (T is covariant)
 
-- <xref:System.Collections.Generic.IEnumerator%601> (T is covariant)
+- <xref:System.Collections.Generic.IEnumerator`1> (T is covariant)
 
-- <xref:System.Linq.IQueryable%601> (T is covariant)
+- <xref:System.Linq.IQueryable`1> (T is covariant)
 
-- <xref:System.Linq.IGrouping%602> (`TKey` and `TElement` are covariant)
+- <xref:System.Linq.IGrouping`2> (`TKey` and `TElement` are covariant)
 
-- <xref:System.Collections.Generic.IComparer%601> (T is contravariant)
+- <xref:System.Collections.Generic.IComparer`1> (T is contravariant)
 
-- <xref:System.Collections.Generic.IEqualityComparer%601> (T is contravariant)
+- <xref:System.Collections.Generic.IEqualityComparer`1> (T is contravariant)
 
-- <xref:System.IComparable%601> (T is contravariant)
+- <xref:System.IComparable`1> (T is contravariant)
 
 Covariance permits a method to have a more derived return type than that defined by the generic type parameter of the interface. To illustrate the covariance feature, consider these generic interfaces: `IEnumerable(Of Object)` and `IEnumerable(Of String)`. The `IEnumerable(Of String)` interface does not inherit the `IEnumerable(Of Object)` interface. However, the `String` type does inherit the `Object` type, and in some cases you may want to assign objects of these interfaces to each other. This is shown in the following code example.
 
@@ -29,9 +29,9 @@ Dim strings As IEnumerable(Of String) = New List(Of String)
 Dim objects As IEnumerable(Of Object) = strings
 ```
 
-In earlier versions of the .NET Framework, this code causes a compilation error in Visual Basic with `Option Strict On`. But now you can use `strings` instead of `objects`, as shown in the previous example, because the <xref:System.Collections.Generic.IEnumerable%601> interface is covariant.
+In earlier versions of the .NET Framework, this code causes a compilation error in Visual Basic with `Option Strict On`. But now you can use `strings` instead of `objects`, as shown in the previous example, because the <xref:System.Collections.Generic.IEnumerable`1> interface is covariant.
 
-Contravariance permits a method to have argument types that are less derived than that specified by the generic parameter of the interface. To illustrate contravariance, assume that you have created a `BaseComparer` class to compare instances of the `BaseClass` class. The `BaseComparer` class implements the `IEqualityComparer(Of BaseClass)` interface. Because the <xref:System.Collections.Generic.IEqualityComparer%601> interface is now contravariant, you can use `BaseComparer` to compare instances of classes that inherit the `BaseClass` class. This is shown in the following code example.
+Contravariance permits a method to have argument types that are less derived than that specified by the generic parameter of the interface. To illustrate contravariance, assume that you have created a `BaseComparer` class to compare instances of the `BaseClass` class. The `BaseComparer` class implements the `IEqualityComparer(Of BaseClass)` interface. Because the <xref:System.Collections.Generic.IEqualityComparer`1> interface is now contravariant, you can use `BaseComparer` to compare instances of classes that inherit the `BaseClass` class. This is shown in the following code example.
 
 ```vb
 ' Simple hierarchy of classes.
@@ -76,7 +76,7 @@ Dim integers As IEnumerable(Of Integer) = New List(Of Integer)
 ' Dim objects As IEnumerable(Of Object) = integers
 ```
 
-It is also important to remember that classes that implement variant interfaces are still invariant. For example, although <xref:System.Collections.Generic.List%601> implements the covariant interface <xref:System.Collections.Generic.IEnumerable%601>, you cannot implicitly convert `List(Of Object)` to `List(Of String)`. This is illustrated in the following code example.
+It is also important to remember that classes that implement variant interfaces are still invariant. For example, although <xref:System.Collections.Generic.List`1> implements the covariant interface <xref:System.Collections.Generic.IEnumerable`1>, you cannot implicitly convert `List(Of Object)` to `List(Of String)`. This is illustrated in the following code example.
 
 ```vb
 ' The following statement generates a compiler error

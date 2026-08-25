@@ -12,9 +12,7 @@ One important aspect of Orleans is its support for customization of serializatio
 
 ## Serialization providers
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
 Orleans provides two serializer implementations:
 
@@ -40,7 +38,7 @@ internal sealed class CustomOrleansSerializer :
     IGeneralizedCodec, IGeneralizedCopier, ITypeFilter
 {
     void IFieldCodec.WriteField<TBufferWriter>(
-        ref Writer<TBufferWriter> writer, 
+        ref Writer<TBufferWriter> writer,
         uint fieldIdDelta,
         Type expectedType,
         object value) =>
@@ -95,9 +93,7 @@ Additional considerations would be to expose an overload that accepts custom ser
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the <xref:Orleans.Serialization.IExternalSerializer> type described in the custom serialization section of this article. Integrations for some common serializers are maintained alongside Orleans, for example:
 
@@ -137,7 +133,7 @@ Serializers are registered for each supported data type at silo start-up and whe
 
 A hand-crafted serializer routine will rarely perform better than the generated versions. If you are tempted to write one, you should first consider the following options:
 
-- If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the <xref:System.NonSerializedAttribute>. This will cause the generated code to skip these fields when copying and serializing. Use <xref:Orleans.Concurrency.ImmutableAttribute> and <xref:Orleans.Concurrency.Immutable%601> where possible to avoid copying immutable data. For more information, see [Optimize copying](serialization-immutability.md#optimize-copying). If you're avoiding using the standard generic collection types, don't. The Orleans runtime contains custom serializers for the generic collections that use the semantics of the collections to optimize copying, serializing, and deserializing. These collections also have special "abbreviated" representations in the serialized byte stream, resulting in even more performance advantages. For instance, a `Dictionary<string, string>` will be faster than a `List<Tuple<string, string>>`.
+- If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the <xref:System.NonSerializedAttribute>. This will cause the generated code to skip these fields when copying and serializing. Use <xref:Orleans.Concurrency.ImmutableAttribute> and <xref:Orleans.Concurrency.Immutable`1> where possible to avoid copying immutable data. For more information, see [Optimize copying](serialization-immutability.md#optimize-copying). If you're avoiding using the standard generic collection types, don't. The Orleans runtime contains custom serializers for the generic collections that use the semantics of the collections to optimize copying, serializing, and deserializing. These collections also have special "abbreviated" representations in the serialized byte stream, resulting in even more performance advantages. For instance, a `Dictionary<string, string>` will be faster than a `List<Tuple<string, string>>`.
 
 - The most common case where a custom serializer can provide a noticeable performance gain is when there is significant semantic information encoded in the data type that is not available by simply copying field values. For instance, arrays that are sparsely populated may often be more efficiently serialized by treating the array as a collection of index/value pairs, even if the app keeps the data as a fully realized array for speed of operation.
 
@@ -163,14 +159,14 @@ static private object Copy(object input, ICopyContext context)
 
 Copiers are usually the simplest serializer routines to write. They take an object, guaranteed to be of the same type as the type the copier is defined in, and must return a semantically-equivalent copy of the object.
 
-If, as part of copying the object, a sub-object needs to be copied, the best way to do so is to use the <xref:Orleans.Serialization.SerializationManager.DeepCopyInner%2A?displayProperty=nameWithType> routine:
+If, as part of copying the object, a sub-object needs to be copied, the best way to do so is to use the <xref:Orleans.Serialization.SerializationManager.DeepCopyInner*?displayProperty=nameWithType> routine:
 
 ```csharp
 var fooCopy = SerializationManager.DeepCopyInner(foo, context);
 ```
 
 > [!IMPORTANT]
-> It is important to use <xref:Orleans.Serialization.SerializationManager.DeepCopyInner%2A?displayProperty=nameWithType>, instead of <xref:Orleans.Serialization.SerializationManager.DeepCopy%2A?displayProperty=nameWithType>, to maintain the object identity context for the full copy operation.
+> It is important to use <xref:Orleans.Serialization.SerializationManager.DeepCopyInner*?displayProperty=nameWithType>, instead of <xref:Orleans.Serialization.SerializationManager.DeepCopy*?displayProperty=nameWithType>, to maintain the object identity context for the full copy operation.
 
 #### Maintain object identity
 
@@ -185,7 +181,7 @@ if (fooCopy is null)
 }
 ```
 
-The last line is the call to <xref:Orleans.Serialization.SerializationContext.RecordObject%2A>, which is required so that possible future references to the same object as `foo` references will get found properly by <xref:Orleans.Serialization.SerializationContext.CheckObjectWhileCopying%2A>.
+The last line is the call to <xref:Orleans.Serialization.SerializationContext.RecordObject*>, which is required so that possible future references to the same object as `foo` references will get found properly by <xref:Orleans.Serialization.SerializationContext.CheckObjectWhileCopying*>.
 
 > [!NOTE]
 > This should only be done for class instances, _not_ `struct` instances or .NET primitives such as `string`, `Uri`, and `enum`.
@@ -209,7 +205,7 @@ static private void Serialize(
 
 As with copiers, the "input" object passed to a serializer is guaranteed to be an instance of the defining type. The "expected" type may be ignored; it is based on compile-time type information about the data item, and is used at a higher level to form the type prefix in the byte stream.
 
-To serialize sub-objects, use the <xref:Orleans.Serialization.SerializationManager.SerializeInner%2A?displayProperty=nameWithType> routine:
+To serialize sub-objects, use the <xref:Orleans.Serialization.SerializationManager.SerializeInner*?displayProperty=nameWithType> routine:
 
 ```csharp
 SerializationManager.SerializeInner(foo, context, typeof(FooType));
@@ -235,7 +231,7 @@ static private object Deserialize(
 
 The "expected" type may be ignored; it is based on compile-time type information about the data item and is used at a higher level to form the type prefix in the byte stream. The actual type of the object to be created will always be the type of class in which the deserializer is defined.
 
-To deserialize sub-objects, use the <xref:Orleans.Serialization.SerializationManager.DeserializeInner%2A?displayProperty=nameWithType> routine:
+To deserialize sub-objects, use the <xref:Orleans.Serialization.SerializationManager.DeserializeInner*?displayProperty=nameWithType> routine:
 
 ```csharp
 var foo = SerializationManager.DeserializeInner(typeof(FooType), context);

@@ -42,7 +42,7 @@ Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum
 |<xref:System.Windows.Automation.RangeValuePattern.SmallChangeProperty>|Property|None|
 |<xref:System.Windows.Automation.RangeValuePattern.MaximumProperty>|Property|None|
 |<xref:System.Windows.Automation.RangeValuePattern.MinimumProperty>|Property|None|
-|<xref:System.Windows.Automation.RangeValuePattern.SetValue%2A>|Methods|None|
+|<xref:System.Windows.Automation.RangeValuePattern.SetValue*>|Methods|None|
 
  This control pattern has no associated events.
 
@@ -54,7 +54,7 @@ Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.RangeValuePattern.SetValue%2A> is called with a value that is either greater than <xref:System.Windows.Automation.RangeValuePattern.MaximumProperty> or less than <xref:System.Windows.Automation.RangeValuePattern.MinimumProperty>.|
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.RangeValuePattern.SetValue*> is called with a value that is either greater than <xref:System.Windows.Automation.RangeValuePattern.MaximumProperty> or less than <xref:System.Windows.Automation.RangeValuePattern.MinimumProperty>.|
 
 ## See also
 

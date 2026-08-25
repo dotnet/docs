@@ -12,7 +12,7 @@ Starting with .NET 10, WPF applications fail to build if `<Grid.ColumnDefinition
 
 ## Version introduced
 
-.NET 10 Preview 5
+.NET 10
 
 ## Previous behavior
 

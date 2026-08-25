@@ -16,7 +16,7 @@ topic_type:
 
 # XpsDocumentWriter.\_WritingCancelled Event
 
-Occurs when a <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> or <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> operation is canceled.
+Occurs when a <xref:System.Windows.Xps.XpsDocumentWriter.Write*> or <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync*> operation is canceled.
 
 ## Syntax
 

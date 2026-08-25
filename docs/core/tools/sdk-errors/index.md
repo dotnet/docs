@@ -2,7 +2,8 @@
 title: ".NET SDK error list"
 description: A complete list of NETSDKxxxx errors, with links to more info where more info is available.
 ms.topic: error-reference
-ms.date: 12/11/2023
+ms.date: 05/15/2026
+ai-usage: ai-assisted
 f1_keywords:
 - NETSDK1001
 - NETSDK1002
@@ -168,6 +169,9 @@ f1_keywords:
 - NETSDK1211
 - NETSDK1212
 - NETSDK1213
+- NETSDK1238
+- NETSDK1239
+- NETSDK1240
 ---
 # .NET SDK error list
 
@@ -370,7 +374,12 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |NETSDK1207|Ahead-of-time compilation is not supported for the target framework.|
 |NETSDK1208|The target platform identifier {0} was not recognized. This is because MSBuildEnableWorkloadResolver is set to false which disables .NET SDK Workloads which is required for this identifier. Unset this environment variable or MSBuild property to enable workloads.|
 |NETSDK1209|The current Visual Studio version does not support targeting {0} {1}.  Either target {0} {2} or lower, or use Visual Studio version {3} or higher.|
-|NETSDK1210|IsAotCompatible and EnableAotAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable ahead-of-time compilation analysis, and set IsAotCompatible only for the supported frameworks. For example:<br>`<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))>true</IsAotCompatible>`|
+|NETSDK1210|IsAotCompatible and EnableAotAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable ahead-of-time compilation analysis, and set IsAotCompatible only for the supported frameworks. For example:<br>`<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsAotCompatible>`|
 |NETSDK1211|EnableSingleFileAnalyzer is not supported for the target framework. Consider multi-targeting to a supported framework to enable single-file analysis, and set EnableSingleFileAnalyzer only for the supported frameworks. For example:<br>`<EnableSingleFileAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</EnableSingleFileAnalyzer>`|
-|NETSDK1212|IsTrimmable and EnableTrimAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable trimming, and set IsTrimmable only for the supported frameworks. For example:<br>`<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true</IsTrimmable>`|
+|NETSDK1212|IsTrimmable and EnableTrimAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable trimming, and set IsTrimmable only for the supported frameworks. For example:<br>`<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>`|
 |NETSDK1213|Targeting .NET 8.0 or higher in Visual Studio 2022 17.7 is not supported.|
+|[NETSDK1237](netsdk1237.md)|Assembly '{0}' was listed in PublishReadyToRunPartialAssemblies but is being compiled into a composite image. Partial compilation is only supported for assemblies compiled separately. The assembly will be compiled fully into the composite image.|
+|[NETSDK1238](netsdk1238.md)|The current .NET SDK ({0}) has known vulnerabilities ({1}).{2} See <https://dotnet.microsoft.com/download>|
+|[NETSDK1239](netsdk1239.md)|The current .NET SDK ({0}) is end of life as of {1}. It will receive no further security updates: <https://dotnet.microsoft.com/download>|
+|[NETSDK1240](netsdk1240.md)|The current .NET SDK ({0}) has no newer release in its feature band. Update to version {1}: <https://dotnet.microsoft.com/download>|
+|[NETSDK1242](netsdk1242.md)|Building {0} projects with the Mono runtime is not supported in .NET 11.0 and later. Use the CoreCLR runtime or target .NET 10.0.|

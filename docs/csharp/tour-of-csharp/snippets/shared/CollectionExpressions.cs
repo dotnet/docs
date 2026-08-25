@@ -15,7 +15,7 @@
             // <RangeAndIndex>
             string second = names[1]; // 0-based index
             string last = names[^1]; // ^1 is the last element
-            int[] smallNumbers = numbers[0..5]; // 0 to 4
+            int[] smallNumbers = numbers[0..5]; // elements at indexes 0 to 4
             // </RangeAndIndex>
         }
     }

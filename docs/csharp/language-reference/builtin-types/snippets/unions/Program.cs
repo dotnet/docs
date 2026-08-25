@@ -1,0 +1,9 @@
+BasicUnionScenario.Run();
+GenericUnionScenario.Run();
+ValueTypeCasesScenario.Run();
+BodyMembersScenario.Run();
+NullHandlingScenario.Run();
+ManualUnionScenario.Run();
+NonBoxingAccessScenario.Run();
+ClassUnionScenario.Run();
+MemberProviderScenario.Run();

@@ -22,16 +22,16 @@ ms.topic: how-to
 
 1. Get the <xref:System.Windows.Automation.AutomationElement> whose control patterns you are interested in.
 
-2. Call <xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns%2A> to get all control patterns from the element.
+2. Call <xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns*> to get all control patterns from the element.
 
 > [!CAUTION]
-> It is strongly recommended that a client not use <xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns%2A>. Performance can be severely affected as this method calls <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> internally for each existing control pattern. If possible, a client should call <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> for the key patterns of interest.
+> It is strongly recommended that a client not use <xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns*>. Performance can be severely affected as this method calls <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern*> internally for each existing control pattern. If possible, a client should call <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern*> for the key patterns of interest.
 
 ### Obtain a Specific Control Pattern
 
 1. Get the <xref:System.Windows.Automation.AutomationElement> whose control patterns you are interested in.
 
-2. Call <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> or <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern%2A> to query for a specific pattern. These methods are similar, but if the pattern is not found, <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> raises an exception, and <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern%2A> returns `false`.
+2. Call <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern*> or <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern*> to query for a specific pattern. These methods are similar, but if the pattern is not found, <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern*> raises an exception, and <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern*> returns `false`.
 
 ## Example
 

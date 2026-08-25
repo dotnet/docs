@@ -1,7 +1,7 @@
 ---
 title: "How to: Sign an assembly with a strong name"
 description: This article shows you how to sign a .NET assembly with a strong name by using the Signing tab, the Assembly Linker, assembly attributes, or compiler options.
-ms.date: 08/29/2022
+ms.date: 10/20/2025
 helpviewer_keywords:
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"

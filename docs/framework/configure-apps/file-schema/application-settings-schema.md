@@ -2,7 +2,7 @@
 description: "Learn more about: Application Settings schema"
 title: "Application Settings schema"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "schema application settings"
   - "application settings, schema [Windows Forms]"
   - "Windows Forms, application settings schema"
@@ -25,29 +25,29 @@ Application settings defines the following elements as part of the configuration
 
 | Element                    | Description                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------- |
-| **\<applicationSettings>** | Contains all **\<setting>** tags specific to the application.                         |
-| **\<userSettings>**        | Contains all **\<setting>** tags specific to the current user.                        |
-| **\<setting>**             | Defines a setting. Child of either **\<applicationSettings>** or **\<userSettings>**. |
-| **\<value>**               | Defines a setting's value. Child of **\<setting>**.                                   |
+| `<applicationSettings>` | Contains all `<setting>` tags specific to the application.                         |
+| `<userSettings>`        | Contains all `<setting>` tags specific to the current user.                        |
+| `<setting>`             | Defines a setting. Child of either `<applicationSettings>` or `<userSettings>`. |
+| `<value>`               | Defines a setting's value. Child of `<setting>`.                                   |
 
-## \<applicationSettings> element
+## `<applicationSettings>` element
 
-This element contains all **\<setting>** tags that are specific to an instance of the application on a client computer. It defines no attributes.
+This element contains all `<setting>` tags that are specific to an instance of the application on a client computer. It defines no attributes.
 
-## \<userSettings> element
+## `<userSettings>` element
 
-This element contains all **\<setting>** tags that are specific to the user who is currently using the application. It defines no attributes.
+This element contains all `<setting>` tags that are specific to the user who is currently using the application. It defines no attributes.
 
-## \<setting> element
+## `<setting>` element
 
 This element defines a setting. It has the following attributes.
 
 | Attribute        | Description |
 | ---------------- | ----------- |
-| **name**         | Required. The unique ID of the setting. Settings created through Visual Studio are saved with the name `ProjectName.Properties.Settings`. |
-| **serializeAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
+| `name`         | Required. The unique ID of the setting. Settings created through Visual Studio are saved with the name `ProjectName.Properties.Settings`. |
+| `serializeAs` | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
 
-Add the names for settings that you create in **\<applicationSettings>** as entries under the **\<configSections>** element at the top of the file. For example:
+Add the names for settings that you create in `<applicationSettings>` as entries under the `<configSections>` element at the top of the file. For example:
 
 ```xml
 <configuration>
@@ -61,7 +61,7 @@ Add the names for settings that you create in **\<applicationSettings>** as entr
 </configuration>
 ```
 
-## \<value> element
+## `<value>` element
 
 This element contains the value of a setting.
 

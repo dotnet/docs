@@ -47,10 +47,10 @@ The basic structure of a derived EventSource is always the same. In particular:
 with a <xref:System.Diagnostics.Tracing.EventAttribute?displayProperty=nameWithType> or implicitly by the ordinal number of
 the method in the class. For example using implicit numbering the first method in the class has ID 1, the second has ID 2, and
 so on.
-5. Event logging methods must call a <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A>,
-<xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A>,
-<xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> or
-<xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> overload.
+5. Event logging methods must call a <xref:System.Diagnostics.Tracing.EventSource.WriteEvent*>,
+<xref:System.Diagnostics.Tracing.EventSource.WriteEventCore*>,
+<xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId*> or
+<xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore*> overload.
 6. The event ID, whether implied or explicit, must match the first argument passed to the WriteEvent\* API it calls.
 7. The number, types and order of arguments passed to the EventSource method must align with how they're passed
 to the WriteEvent\* APIs. For WriteEvent the arguments follow the Event ID, for WriteEventWithRelatedActivityId the arguments
@@ -80,7 +80,7 @@ the same Guid.
 6. Call <xref:System.Diagnostics.Tracing.EventSource.IsEnabled> before performing any resource intensive work related to
 firing an event, such as computing an expensive event argument that won't be needed if the event is disabled.
 7. Attempt to keep EventSource object back compatible and version them appropriately. The default version for an event is 0.
-The version can be changed by setting <xref:System.Diagnostics.Tracing.EventAttribute.Version%2A?displayProperty=nameWithType>.
+The version can be changed by setting <xref:System.Diagnostics.Tracing.EventAttribute.Version?displayProperty=nameWithType>.
 Change the version of an event whenever you change the data that is serialized with it. Always add new serialized data to the
 end of the event declaration, that is, at the end of the list of method parameters. If this isn't possible, create a new event with a
 new ID to replace the old one.
@@ -192,8 +192,8 @@ in a debugger, or use event tracing with the .NET runtime's [Exception events](.
 
 ETW has concepts of [Tasks and OpCodes](/windows/win32/wes/defining-tasks-and-opcodes),
 which are further mechanisms for tagging and filtering events. You can associate events with specific tasks and opcodes
-using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
-<xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here's an example:
+using the <xref:System.Diagnostics.Tracing.EventAttribute.Task> and
+<xref:System.Diagnostics.Tracing.EventAttribute.Opcode> properties. Here's an example:
 
 ```C#
 [EventSource(Name = "Samples-EventSourceDemos-Customized")]
@@ -238,7 +238,7 @@ manifest format and self-describing (sometimes called tracelogging) format. Mani
 and log an XML document representing the events defined on the class upon initialization. This requires the EventSource
 to reflect over itself to generate the provider and event metadata. In the Self-describing format metadata for each event is
 transmitted inline with the event data rather than up-front. The self-describing approach supports the more flexible
-<xref:System.Diagnostics.Tracing.EventSource.Write%2A> methods that can send arbitrary events without having created
+<xref:System.Diagnostics.Tracing.EventSource.Write*> methods that can send arbitrary events without having created
 a pre-defined event logging method. It's also slightly faster at startup because it avoids eager reflection. However the
 extra metadata that's emitted with each event adds a small performance overhead, which may not be desirable when sending
 a high volume of events.

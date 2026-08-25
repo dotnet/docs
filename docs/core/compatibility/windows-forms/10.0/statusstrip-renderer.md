@@ -9,7 +9,7 @@ ms.date: 02/12/2025
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 

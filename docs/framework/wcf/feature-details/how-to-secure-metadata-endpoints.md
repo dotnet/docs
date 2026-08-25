@@ -24,11 +24,11 @@ This topic walks through the steps to create an endpoint secured by a Secure Soc
 
 2. Create a new instance of the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class.
 
-3. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> property of the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class to `true`.
+3. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled> property of the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class to `true`.
 
-4. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> property to an appropriate URL. Note that if you specify an absolute address, the URL must begin with the scheme `https://`. If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.
+4. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl> property to an appropriate URL. Note that if you specify an absolute address, the URL must begin with the scheme `https://`. If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.
 
-5. Add the instance to the behaviors collection that the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property of the <xref:System.ServiceModel.Description.ServiceDescription> class returns, as shown in the following code.
+5. Add the instance to the behaviors collection that the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors> property of the <xref:System.ServiceModel.Description.ServiceDescription> class returns, as shown in the following code.
 
     [!code-csharp[c_HowToSecureEndpoint#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosecureendpoint/cs/source.cs#1)]
     [!code-vb[c_HowToSecureEndpoint#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosecureendpoint/vb/source.vb#1)]
@@ -92,9 +92,9 @@ The code example uses the following namespaces:
 
 ## See also
 
-- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled*>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
-- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl*>
 - [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md)
 - [Working with Certificates](working-with-certificates.md)
 - [Security Considerations with Metadata](security-considerations-with-metadata.md)

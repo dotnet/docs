@@ -24,8 +24,8 @@ When an application invokes the method **PosExplorer.GetDevices**, **PosExplorer
 
 1. Searches for all assemblies in the specified POS for .NET directories.
 2. If the assembly is not marked with the **PosAssembly** global attribute, discards it.
-3. Searches for classes marked with the **ServiceObject** attribute. For each such class:
-    1. Looks for a hardware ID associated with this class, as either a **HardwareId** attribute or within the [Plug and Play XML Configuration](plug-and-play-xml-configuration.md) file. If there is no hardware ID, leaves the Service Object in the **PosExplorer** list.
+3. Searches for classes marked with the `ServiceObject` attribute. For each such class:
+    1. Looks for a hardware ID associated with this class, as either a `HardwareId` attribute or within the [Plug and Play XML Configuration](plug-and-play-xml-configuration.md) file. If there is no hardware ID, leaves the Service Object in the **PosExplorer** list.
     2. If there is a hardware ID, then queries Windows to retrieve the device's status. If the device is attached to the computer, leaves it in the **PosExplorer** list.
     3. If the device is not attached to the computer, removes it from the **PosExplorer** list.
 

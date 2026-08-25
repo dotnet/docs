@@ -9,7 +9,7 @@ metadata:
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
   ms.service: dotnet-azure
-  ms.date: 08/15/2024
+  ms.date: 03/20/2026
 
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -73,10 +73,10 @@ conceptualContent:
     - title: Create cloud native apps
       links:
         - itemType: overview
-          url: /dotnet/aspire/get-started/aspire-overview
-          text: Build cloud native apps using Aspire
+          url: https://aspire.dev/get-started/what-is-aspire/
+          text: What is Aspire?
         - itemType: quickstart
-          url: /dotnet/aspire/get-started/build-your-first-aspire-app?tabs=visual-studio
+          url: https://aspire.dev/get-started/first-app/
           text: Build your first Aspire app
         - itemType: quickstart
           text: Run and debug a microservice in Kubernetes
@@ -103,7 +103,7 @@ conceptualContent:
           text: Build a chat app
         - itemType: quickstart
           text: Generate images
-          url: ../ai/quickstarts/generate-images.md
+          url: ../ai/quickstarts/text-to-image.md
         - itemType: concept
           text: Understand prompt engineering
           url: ../ai/conceptual/prompt-engineering-dotnet.md

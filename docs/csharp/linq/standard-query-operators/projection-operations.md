@@ -15,9 +15,9 @@ The standard query operator methods that perform projection are listed in the fo
 
 | Method names | Description | C# query expression syntax | More information |
 |--|--|--|--|
-| Select | Projects values that are based on a transform function. | `select` | <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> |
-| SelectMany | Projects sequences of values that are based on a transform function and then flattens them into one sequence. | Use multiple `from` clauses | <xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SelectMany%2A?displayProperty=nameWithType> |
-| Zip | Produces a sequence of tuples with elements from 2-3 specified sequences. | Not applicable. | <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Zip%2A?displayProperty=nameWithType> |
+| Select | Projects values that are based on a transform function. | `select` | <xref:System.Linq.Enumerable.Select*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Select*?displayProperty=nameWithType> |
+| SelectMany | Projects sequences of values that are based on a transform function and then flattens them into one sequence. | Use multiple `from` clauses | <xref:System.Linq.Enumerable.SelectMany*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SelectMany*?displayProperty=nameWithType> |
+| Zip | Produces a sequence of tuples with elements from 2-3 specified sequences. | Not applicable. | <xref:System.Linq.Enumerable.Zip*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Zip*?displayProperty=nameWithType> |
 
 ## `Select`
 
@@ -57,7 +57,7 @@ Consider the following collections:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="NumbersAndLetters":::
 
-To project these sequences together, use the <xref:System.Linq.Enumerable.Zip%60%602(System.Collections.Generic.IEnumerable{%60%600},System.Collections.Generic.IEnumerable{%60%601})?displayProperty=nameWithType> operator:
+To project these sequences together, use the <xref:System.Linq.Enumerable.Zip``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1})?displayProperty=nameWithType> operator:
 
 :::code source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="ZipTuple":::
 
@@ -68,7 +68,7 @@ The second overload accepts a `third` sequence. Let's create another collection,
 
 :::code source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="Emoji":::
 
-To project these sequences together, use the <xref:System.Linq.Enumerable.Zip%60%603(System.Collections.Generic.IEnumerable{%60%600},System.Collections.Generic.IEnumerable{%60%601},System.Collections.Generic.IEnumerable{%60%602})?displayProperty=nameWithType> operator:
+To project these sequences together, use the <xref:System.Linq.Enumerable.Zip``3(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Collections.Generic.IEnumerable{``2})?displayProperty=nameWithType> operator:
 
 :::code source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="ZipTriple":::
 
@@ -96,7 +96,7 @@ This illustration depicts how `SelectMany` concatenates the intermediate sequenc
 
 ### Code example
 
-The following example compares the behavior of `Select` and `SelectMany`. The code creates a "bouquet" of flowers by taking the items from each list of flower names in the source collection. In the following example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is a collection of values. This example requires the extra `foreach` loop in order to enumerate each string in each subsequence.
+The following example compares the behavior of `Select` and `SelectMany`. The code creates a "bouquet" of flowers by taking the items from each list of flower names in the source collection. In the following example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select``2%28System.Collections.Generic.IEnumerable%7B``0%7D%2CSystem.Func%7B``0%2C``1%7D%29> uses is a collection of values. This example requires the extra `foreach` loop in order to enumerate each string in each subsequence.
 
 :::code source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="SelectVsSelectMany":::
 

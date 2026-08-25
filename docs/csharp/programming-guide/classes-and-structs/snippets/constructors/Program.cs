@@ -25,7 +25,10 @@ public class Adult : Person
    public Adult(string lastName, string firstName) : base(lastName, firstName)
    { }
 
-   static Adult() => minimumAge = 18;
+   static Adult()
+   {
+       minimumAge = 18;
+   }
 
    // Remaining implementation of Adult class.
 }

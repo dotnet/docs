@@ -1,8 +1,8 @@
 ---
 title: .NET Runtime config options
 description: Learn how to configure the .NET runtime using configuration settings.
-ms.topic: article
-ms.date: 07/23/2021
+ms.topic: concept-article
+ms.date: 01/12/2026
 ---
 # .NET runtime configuration settings
 
@@ -12,9 +12,9 @@ ms.date: 07/23/2021
 |---------------------------------------------------|----------------------------------------|
 | The [runtimeconfig.json file](#runtimeconfigjson) | Applies the setting to a specific app. Use this file if multiple instances of your app run at the same time on a single system, and you want to configure each for optimum performance. |
 | [MSBuild properties](#msbuild-properties)         | Applies the setting to a specific app. MSBuild properties take precedence over settings in *runtimeconfig.json*. |
-| [Environment variables](#environment-variables)   | Applies the setting to all .NET apps.  |
+| [Environment variables](#environment-variables)   | Applies the setting to all .NET apps. Starting in .NET 9, environment variables take precedence over both MSBuild properties and *runtimeconfig.json* settings. For more information, see [Environment variables take precedence in app runtime configuration settings](../compatibility/deployment/9.0/envvar-precedence.md). |
 
-Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
+Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch*?displayProperty=nameWithType> method.
 
 > [!NOTE]
 > The articles in this section concern configuration of the .NET runtime itself. If you're migrating an app from .NET Framework to .NET and are looking for a replacement for the *app.config* file, see [Modernize after upgrading to .NET](../porting/modernize.md#appconfig). For information about supplying custom configuration values to .NET apps, see [Configuration in .NET](../extensions/configuration.md).
@@ -38,6 +38,10 @@ Specify runtime configuration options in the **configProperties** section of the
   "config-property-name2": "config-value2"
 }
 ```
+
+Starting in .NET 11, to support development-time overrides, the value in *[appname].runtimeconfig.dev.json* takes precedence when you define the same key in `configProperties` in both *[appname].runtimeconfig.dev.json* and *[appname].runtimeconfig.json*.
+
+For more information, see [configProperties in .runtimeconfig.dev.json override .runtimeconfig.json](../compatibility/deployment/11/runtimeconfigdev-configproperties-precedence.md).
 
 ### Example [appname].runtimeconfig.json file
 
@@ -112,9 +116,10 @@ MSBuild properties for configuring the behavior of the runtime are noted in the 
 
 ## Environment variables
 
-Environment variables can be used to supply some runtime configuration information. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**.
+Environment variables can be used to supply some runtime configuration information. Configuration knobs specified as environment variables generally have the prefix `DOTNET_`. (For .NET Framework runtime configuration, use the `COMPlus_` prefix instead.)
 
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+> [!NOTE]
+> Starting in .NET 9, environment variables take precedence over both MSBuild properties and *runtimeconfig.json* settings. For more information about this breaking change, see [Environment variables take precedence in app runtime configuration settings](../compatibility/deployment/9.0/envvar-precedence.md).
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 

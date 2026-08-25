@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Potential pitfalls with PLINQ"
 title: "Potential pitfalls with PLINQ"
-ms.date: "03/30/2017"
+ms.date: "03/04/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -21,6 +22,22 @@ Parallelization sometimes causes a PLINQ query to run slower than its LINQ to Ob
 ## Avoid writing to shared memory locations
 
 In sequential code, it is not uncommon to read from or write to static variables or class fields. However, whenever multiple threads are accessing such variables concurrently, there is a big potential for race conditions. Even though you can use locks to synchronize access to the variable, the cost of synchronization can hurt performance. Therefore, we recommend that you avoid, or at least limit, access to shared state in a PLINQ query as much as possible.
+
+### Example: Race condition with shared memory
+
+The following example demonstrates a race condition that occurs when multiple threads write to a shared variable. The variable `total` is accessed and modified concurrently by multiple threads without synchronization, leading to unpredictable results:
+
+:::code language="csharp" source="./snippets/potential-pitfalls-with-plinq/csharp/RaceConditionExample/Program.cs" id="RaceConditionBad":::
+:::code language="vb" source="./snippets/potential-pitfalls-with-plinq/vb/RaceConditionExample/Program.vb" id="RaceConditionBad":::
+
+In this code, the operation `total += n` is not atomic. It involves reading the current value of `total`, adding `n`, and writing the result back to `total`. When multiple threads execute this operation simultaneously, they can read the same value, add to it in different threads, and write back results that overwrite each other. This causes some additions to be lost, producing an incorrect final result.
+
+The correct approach is to use thread-safe operations that don't require shared mutable state:
+
+:::code language="csharp" source="./snippets/potential-pitfalls-with-plinq/csharp/RaceConditionExample/Program.cs" id="RaceConditionGood":::
+:::code language="vb" source="./snippets/potential-pitfalls-with-plinq/vb/RaceConditionExample/Program.vb" id="RaceConditionGood":::
+
+The `Sum` method handles parallelization internally in a thread-safe manner, ensuring correct results without the need for explicit synchronization. Other safe approaches include using <xref:System.Linq.ParallelEnumerable.Aggregate*> for custom aggregations or collecting results into thread-safe collections like <xref:System.Collections.Concurrent.ConcurrentBag`1>.
 
 ## Avoid over-parallelization
 
@@ -60,7 +77,7 @@ a.AsParallel().Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));
 Most static methods in .NET are thread-safe and can be called from multiple threads concurrently. However, even in these cases, the synchronization involved can lead to significant slowdown in the query.
 
 > [!NOTE]
-> You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine%2A> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in PLINQ queries.
+> You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine*> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in PLINQ queries.
 
 ## Avoid unnecessary ordering operations
 
@@ -68,9 +85,9 @@ When PLINQ executes a query in parallel, it divides the source sequence into par
 
 ## Prefer ForAll to ForEach when it is possible
 
-Although PLINQ executes a query on multiple threads, if you consume the results in a `foreach` loop (`For Each` in Visual Basic), then the query results must be merged back into one thread and accessed serially by the enumerator. In some cases, this is unavoidable; however, whenever possible, use the `ForAll` method to enable each thread to output its own results, for example, by writing to a thread-safe collection such as <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType>.
+Although PLINQ executes a query on multiple threads, if you consume the results in a `foreach` loop (`For Each` in Visual Basic), then the query results must be merged back into one thread and accessed serially by the enumerator. In some cases, this is unavoidable; however, whenever possible, use the `ForAll` method to enable each thread to output its own results, for example, by writing to a thread-safe collection such as <xref:System.Collections.Concurrent.ConcurrentBag`1?displayProperty=nameWithType>.
 
-The same issue applies to <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. In other words, `source.AsParallel().Where().ForAll(...)` should be strongly preferred to `Parallel.ForEach(source.AsParallel().Where(), ...)`.
+The same issue applies to <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType>. In other words, `source.AsParallel().Where().ForAll(...)` should be strongly preferred to `Parallel.ForEach(source.AsParallel().Where(), ...)`.
 
 ## Be aware of thread affinity issues
 
@@ -78,7 +95,7 @@ Some technologies, for example, COM interoperability for Single-Threaded Apartme
 
 ## Don't assume that iterations of ForEach, For, and ForAll always execute in parallel
 
-It is important to keep in mind that individual iterations in a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>, or <xref:System.Linq.ParallelEnumerable.ForAll%2A> loop may but do not have to execute in parallel. Therefore, you should avoid writing any code that depends for correctness on parallel execution of iterations or on the execution of iterations in any particular order.
+It is important to keep in mind that individual iterations in a <xref:System.Threading.Tasks.Parallel.For*?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType>, or <xref:System.Linq.ParallelEnumerable.ForAll*> loop may but do not have to execute in parallel. Therefore, you should avoid writing any code that depends for correctness on parallel execution of iterations or on the execution of iterations in any particular order.
 
 For example, this code is likely to deadlock:
 

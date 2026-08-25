@@ -121,7 +121,7 @@ In the *Consume* step, Model Builder provides project templates that you can use
 
 ### Configure the PredictionEngine pool
 
-To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionEngine%602>. <xref:Microsoft.ML.PredictionEngine%602> is not thread-safe. Additionally, you have to create an instance of it everywhere it's needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an <xref:Microsoft.Extensions.ObjectPool.ObjectPool%601> of <xref:Microsoft.ML.PredictionEngine%602> objects for use throughout your application.
+To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionEngine`2>. <xref:Microsoft.ML.PredictionEngine`2> is not thread-safe. Additionally, you have to create an instance of it everywhere it's needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an <xref:Microsoft.Extensions.ObjectPool.ObjectPool`1> of <xref:Microsoft.ML.PredictionEngine`2> objects for use throughout your application.
 
 1. Install the *Microsoft.Extensions.ML* NuGet package:
 
@@ -140,7 +140,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     using static SentimentRazor.SentimentAnalysis;
     ```
 
-1. Configure the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> for your application in the *Program.cs* file:
+1. Configure the <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> for your application in the *Program.cs* file:
 
     ```csharp
     builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
@@ -149,7 +149,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 ### Create sentiment analysis handler
 
-Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> to return a prediction needs to be added.
+Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> to return a prediction needs to be added.
 
 1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following `using` directives:
 
@@ -158,15 +158,15 @@ Predictions will be made inside the main page of the application. Therefore, a m
     using static SentimentRazor.SentimentAnalysis;
     ```
 
-    In order to use the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> configured in the *Program.cs* file, you have to inject it into the constructor of the model where you want to use it.
+    In order to use the <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> configured in the *Program.cs* file, you have to inject it into the constructor of the model where you want to use it.
 
-1. Add a variable to reference the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> inside the `IndexModel` class inside the *Pages/Index.cshtml.cs* file.
+1. Add a variable to reference the <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> inside the `IndexModel` class inside the *Pages/Index.cshtml.cs* file.
 
     ```csharp
     private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
     ```
 
-1. Modify the constructor in the `IndexModel` class and inject the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> service into it.
+1. Modify the constructor in the `IndexModel` class and inject the <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> service into it.
 
     ```csharp
     public IndexModel(ILogger<IndexModel> logger, PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
@@ -199,7 +199,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
         var input = new ModelInput { SentimentText = text };
         ```
 
-    1. Use the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> to predict sentiment.
+    1. Use the <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> to predict sentiment.
 
         ```csharp
         var prediction = _predictionEnginePool.Predict(input);
@@ -359,7 +359,7 @@ When the application launches, enter *This model doesn't have enough data!* into
 ![Running window with the predicted sentiment window](./media/sentiment-analysis-model-builder/web-app.png)
 
 > [!NOTE]
-> <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> creates multiple instances of <xref:Microsoft.ML.PredictionEngine%602>. Because of the size of the model, the first time you use it to make a prediction, it can take a couple of seconds. Subsequent predictions should be instantaneous.
+> <xref:Microsoft.Extensions.ML.PredictionEnginePool`2> creates multiple instances of <xref:Microsoft.ML.PredictionEngine`2>. Because of the size of the model, the first time you use it to make a prediction, it can take a couple of seconds. Subsequent predictions should be instantaneous.
 
 ## Next steps
 

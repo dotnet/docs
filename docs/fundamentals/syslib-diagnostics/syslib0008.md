@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0008: CreatePdbGenerator is not supported
 
-The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> API is marked obsolete, starting in .NET 5. Using this API generates warning `SYSLIB0008` at compile time and throws a <xref:System.PlatformNotSupportedException> at run time.
+The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> API is marked obsolete, starting in .NET 5. Using this API generates warning `SYSLIB0008` at compile time and throws a <xref:System.PlatformNotSupportedException> at runtime.
 
 ## Suppress a warning
 

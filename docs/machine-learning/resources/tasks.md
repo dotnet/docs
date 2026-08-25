@@ -282,7 +282,7 @@ The forecasting task use past time-series data to make predictions about future 
 
 You can train a forecasting model with the following algorithm:
 
-<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A>
+<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa*>
 
 ## Object detection
 

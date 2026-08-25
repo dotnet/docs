@@ -15,7 +15,7 @@ The `My.Application.Log` and `My.Log` objects make it easy to write logging and 
 
 ## How Messages are Logged
 
-First, the severity of the message is checked with the <xref:System.Diagnostics.TraceSource.Switch%2A> property of the log's <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A> property. By default, only messages of severity "Information" and higher are passed on to the trace listeners, specified in the log's `TraceListener` collection. Then, each listener compares the severity of the message to the listener's <xref:System.Diagnostics.TraceSource.Switch%2A> property. If the message's severity is high enough, the listener writes out the message.
+First, the severity of the message is checked with the <xref:System.Diagnostics.TraceSource.Switch> property of the log's <xref:Microsoft.VisualBasic.Logging.Log.TraceSource> property. By default, only messages of severity "Information" and higher are passed on to the trace listeners, specified in the log's `TraceListener` collection. Then, each listener compares the severity of the message to the listener's <xref:System.Diagnostics.TraceSource.Switch> property. If the message's severity is high enough, the listener writes out the message.
 
 The following diagram shows how a message written to the `WriteEntry` method gets passed to the `WriteLine` methods of the log's trace listeners:
 
@@ -31,7 +31,7 @@ If the assembly has no configuration file, the `My.Application.Log` and `My.Log`
 
 The debug output can be viewed in the Visual Studio **Output** window when running your application in debug mode. To open the **Output** window, click the **Debug** menu item, point to **Windows**, and then click **Output**. In the **Output** window, select **Debug** from the **Show output from** box.
 
-By default, `My.Application.Log` writes the log file in the path for the user's application data. You can get the path from the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> property of the <xref:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter%2A> object. The format of that path is as follows:
+By default, `My.Application.Log` writes the log file in the path for the user's application data. You can get the path from the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName> property of the <xref:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter*> object. The format of that path is as follows:
 
 `BasePath`\\`CompanyName`\\`ProductName`\\`ProductVersion`
 

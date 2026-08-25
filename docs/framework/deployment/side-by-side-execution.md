@@ -58,7 +58,7 @@ The portable executable (PE) file header of each managed application and compone
 
 ### Runtime Version Information in the Application Configuration File
 
-In addition to the information in the PE file header, an application can be deployed with an application configuration file that provides runtime version information. The application configuration file is an XML-based file that is created by the application developer and that ships with an application. The [\<requiredRuntime> Element](../configure-apps/file-schema/startup/requiredruntime-element.md) of the [\<startup> section](../configure-apps/file-schema/startup/startup-element.md), if it is present in this file, specifies which versions of the runtime and which versions of a component the application supports. You can also use this file in testing to test an application's compatibility with different versions of the runtime.
+In addition to the information in the PE file header, an application can be deployed with an application configuration file that provides runtime version information. The application configuration file is an XML-based file that is created by the application developer and that ships with an application. The [`<requiredRuntime>` Element](../configure-apps/file-schema/startup/requiredruntime-element.md) of the [`<startup>` section](../configure-apps/file-schema/startup/startup-element.md), if it is present in this file, specifies which versions of the runtime and which versions of a component the application supports. You can also use this file in testing to test an application's compatibility with different versions of the runtime.
 
 Unmanaged code, including COM and COM+ applications, can have application configuration files that the runtime uses for interacting with managed code. The application configuration file affects any managed code that you activate through COM. The file can specify which runtime versions it supports, as well as assembly redirects. By default, COM interop applications calling to managed code use the latest version of the runtime installed on the computer.
 
@@ -78,7 +78,7 @@ The runtime uses the application configuration file and the portable executable 
 
 If an application configuration file is present, the runtime determines the appropriate runtime version to load based on the results of the following process:
 
-1. The runtime examines the [\<supportedRuntime> Element](../configure-apps/file-schema/startup/supportedruntime-element.md) element in the application configuration file. If one or more of the supported runtime versions specified in the **\<supportedRuntime>** element are present, the runtime loads the runtime version specified by the first **\<supportedRuntime>** element. If this version is not available, the runtime examines the next **\<supportedRuntime>** element and attempts to load the runtime version specified. If this runtime version is not available, subsequent **\<supportedRuntime>** elements are examined. If none of the supported runtime versions are available, the runtime fails to load a runtime version and displays a message to the user (see step 3).
+1. The runtime examines the [`<supportedRuntime>` Element](../configure-apps/file-schema/startup/supportedruntime-element.md) element in the application configuration file. If one or more of the supported runtime versions specified in the `<supportedRuntime>` element are present, the runtime loads the runtime version specified by the first `<supportedRuntime>` element. If this version is not available, the runtime examines the next `<supportedRuntime>` element and attempts to load the runtime version specified. If this runtime version is not available, subsequent `<supportedRuntime>` elements are examined. If none of the supported runtime versions are available, the runtime fails to load a runtime version and displays a message to the user (see step 3).
 
 2. The runtime reads the PE file header of the application's executable file. If the runtime version specified by the PE file header is available, the runtime loads that version. If the runtime version specified is not available, the runtime searches for a runtime version determined by Microsoft to be compatible with the runtime version in the PE header. If that version is not found, the process continues to step 3.
 
@@ -94,7 +94,7 @@ If an application configuration file is present, the runtime determines the appr
 
 Because they are a potential source of side-by-side problems, partially qualified assembly references can be used only to bind to assemblies within an application directory. Avoid partially qualified assembly references in your code.
 
-To mitigate partially qualified assembly references in code, you can use the [\<qualifyAssembly>](../configure-apps/file-schema/runtime/qualifyassembly-element.md) element in an application configuration file to fully qualify partially qualified assembly references that occur in code. Use the **\<qualifyAssembly>** element to specify only fields that were not set in the partial reference. The assembly identity listed in the **fullName** attribute must contain all the information needed to fully qualify the assembly name: assembly name, public key, culture, and version.
+To mitigate partially qualified assembly references in code, you can use the [\<qualifyAssembly>](../configure-apps/file-schema/runtime/qualifyassembly-element.md) element in an application configuration file to fully qualify partially qualified assembly references that occur in code. Use the `<qualifyAssembly>` element to specify only fields that were not set in the partial reference. The assembly identity listed in the `fullName` attribute must contain all the information needed to fully qualify the assembly name: assembly name, public key, culture, and version.
 
  The following example shows the application configuration file entry to fully qualify an assembly called `myAssembly`.
 
@@ -111,7 +111,7 @@ publicKeyToken=...,
  Whenever an assembly load statement references `myAssembly`, these configuration file settings cause the runtime to automatically translate the partially qualified `myAssembly` reference to a fully qualified reference. For example, Assembly.Load("myAssembly") becomes Assembly.Load("myAssembly, version=1.0.0.0, publicKeyToken=..., culture=neutral").
 
 > [!NOTE]
-> You can use the **LoadWithPartialName** method to bypass the common language runtime restriction that prohibits partially referenced assemblies from being loaded from the global assembly cache. This method should be used only in remoting scenarios as it can easily cause problems in side-by-side execution.
+> You can use the `LoadWithPartialName` method to bypass the common language runtime restriction that prohibits partially referenced assemblies from being loaded from the global assembly cache. This method should be used only in remoting scenarios as it can easily cause problems in side-by-side execution.
 
 ## Related Topics
 

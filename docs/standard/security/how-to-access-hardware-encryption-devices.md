@@ -25,7 +25,7 @@ The <xref:System.Security.Cryptography.CspParameters> class creates a cryptograp
 
 1. Create a new instance of the <xref:System.Security.Cryptography.CspParameters> class, passing the integer provider type and the provider name to the constructor.
 
-2. Pass the appropriate flags to the <xref:System.Security.Cryptography.CspParameters.Flags%2A> property of the newly created <xref:System.Security.Cryptography.CspParameters> object.  For example, pass the <xref:System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer> flag.
+2. Pass the appropriate flags to the <xref:System.Security.Cryptography.CspParameters.Flags> property of the newly created <xref:System.Security.Cryptography.CspParameters> object.  For example, pass the <xref:System.Security.Cryptography.CspProviderFlags.UseDefaultKeyContainer> flag.
 
 3. Create a new instance of an <xref:System.Security.Cryptography.AsymmetricAlgorithm> class (for example, the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class), passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.
 
@@ -37,7 +37,7 @@ The <xref:System.Security.Cryptography.CspParameters> class creates a cryptograp
 
 2. Create a new instance of the <xref:System.Security.Cryptography.RNGCryptoServiceProvider>, passing the <xref:System.Security.Cryptography.CspParameters> object to the constructor.
 
-3. Create a random value using the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes%2A> or <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes%2A> method.
+3. Create a random value using the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes*> or <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes*> method.
 
 ## Example
 

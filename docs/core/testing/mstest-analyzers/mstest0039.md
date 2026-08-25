@@ -24,7 +24,7 @@ ms.author: ygerges
 | **Introduced in version**           | 3.8.0                                                                  |
 | **Is there a code fix**             | Yes                                                                    |
 
-> [NOTE]
+> [!NOTE]
 > This analyzer is no longer relevant for MSTest 4 as the old assertion APIs were removed.
 
 ## Cause

@@ -2,7 +2,7 @@
 description: "Learn more about: XDR Validation with XmlSchemaCollection"
 title: "XDR Validation with XmlSchemaCollection"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 00833027-1428-4586-83c1-42f5de3323d1
@@ -150,5 +150,5 @@ The following outlines the contents of the XDR schema file, *HeadCount.xdr*, to 
 
 ## See also
 
-- <xref:System.Xml.XmlValidatingReader.ValidationType%2A>
+- <xref:System.Xml.XmlValidatingReader.ValidationType*>
 - [XmlSchemaCollection Schema Compilation](xmlschemacollection-schema-compilation.md)

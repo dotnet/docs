@@ -13,7 +13,7 @@ api_type:
 ---
 # Message.WriteStartHeaders Method
 
-Writes the start header into an XML file by calling the <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A?displayProperty=nameWithType> method.
+Writes the start header into an XML file by calling the <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders*?displayProperty=nameWithType> method.
 
 ```csharp
 internal void WriteStartHeaders(XmlDictionaryWriter writer)

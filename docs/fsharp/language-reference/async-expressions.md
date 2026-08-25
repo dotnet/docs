@@ -36,8 +36,8 @@ let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 
 `let!` can only be used to await F# async computations [`Async<T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html) directly. You can await other kinds of asynchronous operations indirectly:
 
-* .NET tasks, <xref:System.Threading.Tasks.Task%601> and the non-generic <xref:System.Threading.Tasks.Task>, by combining with `Async.AwaitTask`
-* .NET value tasks, <xref:System.Threading.Tasks.ValueTask%601> and the non-generic <xref:System.Threading.Tasks.ValueTask>, by combining with `.AsTask()` and `Async.AwaitTask`
+* .NET tasks, <xref:System.Threading.Tasks.Task`1> and the non-generic <xref:System.Threading.Tasks.Task>, by combining with `Async.AwaitTask`
+* .NET value tasks, <xref:System.Threading.Tasks.ValueTask`1> and the non-generic <xref:System.Threading.Tasks.ValueTask>, by combining with `.AsTask()` and `Async.AwaitTask`
 * Any object following the "GetAwaiter" pattern specified in [F# RFC FS-1097](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1097-task-builder.md), by combining with `task { return! expr } |> Async.AwaitTask`.
 
 ## Control Flow

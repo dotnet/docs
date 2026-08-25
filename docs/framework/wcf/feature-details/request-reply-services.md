@@ -24,7 +24,7 @@ public interface IRequestReplyCalculator
 }  
 ```  
   
- You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `false` because this is the default behavior.  
+ You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> property to `false` because this is the default behavior.  
   
 ## See also
 

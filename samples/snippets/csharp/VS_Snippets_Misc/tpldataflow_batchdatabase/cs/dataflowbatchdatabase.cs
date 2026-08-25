@@ -1,4 +1,4 @@
-// <snippet100>
+﻿// <snippet100>
 // <snippet1>
 using System;
 using System.Collections.Generic;
@@ -18,21 +18,19 @@ namespace DataflowBatchDatabase
       // The number of employees to add to the database.
       // TODO: Change this value to experiment with different numbers of
       // employees to insert into the database.
-      static readonly int insertCount = 256;
+      static readonly int s_insertCount = 256;
 
       // The size of a single batch of employees to add to the database.
       // TODO: Change this value to experiment with different batch sizes.
-      static readonly int insertBatchSize = 96;
+      static readonly int s_insertBatchSize = 96;
 
       // The source database file.
       // TODO: Change this value if Northwind.sdf is at a different location
       // on your computer.
-      static readonly string sourceDatabase =
-         @"C:\...\Northwind.sdf";
+      static readonly string s_sourceDatabase = @"C:\...\Northwind.sdf";
 
       // TODO: Change this value if you require a different temporary location.
-      static readonly string scratchDatabase =
-         @"C:\Temp\Northwind.sdf";
+      static readonly string s_scratchDatabase = @"C:\Temp\Northwind.sdf";
       // </snippet2>
 
       // <snippet3>
@@ -48,12 +46,14 @@ namespace DataflowBatchDatabase
 
          // A random number generator that helps tp generate
          // Employee property values.
-         static Random rand = new Random(42);
+         static readonly Random s_rand = new Random(42);
 
          // Possible random first names.
-         static readonly string[] firstNames = { "Tom", "Mike", "Ruth", "Bob", "John" };
+         static readonly string[] s_firstNames =
+                { "Tom", "Mike", "Ruth", "Bob", "John" };
          // Possible random last names.
-         static readonly string[] lastNames = { "Jones", "Smith", "Johnson", "Walker" };
+         static readonly string[] s_lastNames =
+                { "Jones", "Smith", "Johnson", "Walker" };
 
          // Creates an Employee object that contains random
          // property values.
@@ -62,8 +62,8 @@ namespace DataflowBatchDatabase
             return new Employee
             {
                EmployeeID = -1,
-               LastName = lastNames[rand.Next() % lastNames.Length],
-               FirstName = firstNames[rand.Next() % firstNames.Length]
+               LastName = s_lastNames[s_rand.Next() % s_lastNames.Length],
+               FirstName = s_firstNames[s_rand.Next() % s_firstNames.Length]
             };
          }
       }
@@ -89,8 +89,8 @@ namespace DataflowBatchDatabase
                {
                   // Set parameters.
                   command.Parameters.Clear();
-                  command.Parameters.Add("@lastName", employees[i].LastName);
-                  command.Parameters.Add("@firstName", employees[i].FirstName);
+                  command.Parameters.AddWithValue("@lastName", employees[i].LastName);
+                  command.Parameters.AddWithValue("@firstName", employees[i].FirstName);
 
                   // Execute the command.
                   command.ExecuteNonQuery();
@@ -135,11 +135,12 @@ namespace DataflowBatchDatabase
             new SqlConnection(connectionString))
          {
             SqlCommand command = new SqlCommand(
-               string.Format(
-                  "SELECT [Employee ID] FROM Employees " +
-                  "WHERE [Last Name] = '{0}' AND [First Name] = '{1}'",
-                  lastName, firstName),
+               "SELECT [Employee ID] FROM Employees " +
+               "WHERE [Last Name] = @lastName AND [First Name] = @firstName",
                connection);
+
+            command.Parameters.Add("@lastName", System.Data.SqlDbType.NVarChar).Value = lastName;
+            command.Parameters.Add("@firstName", System.Data.SqlDbType.NVarChar).Value = firstName;
 
             connection.Open();
             try
@@ -289,7 +290,7 @@ namespace DataflowBatchDatabase
       }
       // </Snippet7>
 
-      static void Main(string[] args)
+      static void Main()
       {
          // Create a connection string for accessing the database.
          // The connection string refers to the temporary database location.
@@ -300,13 +301,13 @@ namespace DataflowBatchDatabase
 
          // Start with a clean database file by copying the source database to
          // the temporary location.
-         File.Copy(sourceDatabase, scratchDatabase, true);
+         File.Copy(s_sourceDatabase, s_scratchDatabase, true);
 
          // Demonstrate multiple insert operations without batching.
          Console.WriteLine("Demonstrating non-batched database insert operations...");
          Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
          stopwatch.Start();
-         AddEmployees(connectionString, insertCount);
+         AddEmployees(connectionString, s_insertCount);
          stopwatch.Stop();
          Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.",
             GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds);
@@ -314,13 +315,13 @@ namespace DataflowBatchDatabase
          Console.WriteLine();
 
          // Start again with a clean database file.
-         File.Copy(sourceDatabase, scratchDatabase, true);
+         File.Copy(s_sourceDatabase, s_scratchDatabase, true);
 
          // Demonstrate multiple insert operations, this time with batching.
          Console.WriteLine("Demonstrating batched database insert operations...");
          Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
          stopwatch.Restart();
-         AddEmployeesBatched(connectionString, insertBatchSize, insertCount);
+         AddEmployeesBatched(connectionString, s_insertBatchSize, s_insertCount);
          stopwatch.Stop();
          Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.",
             GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds);
@@ -328,17 +329,18 @@ namespace DataflowBatchDatabase
          Console.WriteLine();
 
          // Start again with a clean database file.
-         File.Copy(sourceDatabase, scratchDatabase, true);
+         File.Copy(s_sourceDatabase, s_scratchDatabase, true);
 
          // Demonstrate multiple retrieval operations with error reporting.
          Console.WriteLine("Demonstrating batched join database select operations...");
          // Add a small number of employees to the database.
-         AddEmployeesBatched(connectionString, insertBatchSize, 16);
+         AddEmployeesBatched(connectionString, s_insertBatchSize, 16);
          // Query for random employees.
-         GetRandomEmployees(connectionString, insertBatchSize, 10);
+         GetRandomEmployees(connectionString, s_insertBatchSize, 10);
       }
    }
 }
+
 /* Sample output:
 Demonstrating non-batched database insert operations...
 Original size of Employee table: 15.

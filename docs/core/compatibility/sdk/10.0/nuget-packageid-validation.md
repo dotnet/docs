@@ -11,7 +11,7 @@ NuGet now validates package IDs when they're used to create URLs in .NET 10. If 
 
 ## Version introduced
 
-.NET 10 RC 1
+.NET 10
 
 ## Previous behavior
 

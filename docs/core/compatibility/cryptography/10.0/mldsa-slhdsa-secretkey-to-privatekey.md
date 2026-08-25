@@ -12,7 +12,7 @@ Some methods and properties in the `[Experimental]` post-quantum cryptography (P
 
 ## Version introduced
 
-.NET 10 RC 1
+.NET 10
 
 ## Previous behavior
 
@@ -20,7 +20,7 @@ Previously, you could call methods like `ImportMLDsaSecretKey` and `ImportSlhDsa
 
 ## New behavior
 
-Starting in .NET 10 RC 1, you must call methods like `ImportMLDsaPrivateKey` or `ImportSlhDsaPrivateKey`, and access properties like `PrivateKeySizeInBytes`.
+Starting in .NET 10, you must call methods like `ImportMLDsaPrivateKey` or `ImportSlhDsaPrivateKey`, and access properties like `PrivateKeySizeInBytes`.
 
 ## Type of breaking change
 

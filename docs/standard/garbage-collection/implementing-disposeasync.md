@@ -1,9 +1,7 @@
 ---
 title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
-author: IEvangelist
-ms.author: dapine
-ms.date: 05/12/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -44,7 +42,7 @@ The `public` parameterless `DisposeAsync()` method is called implicitly in an `a
 public async ValueTask DisposeAsync()
 {
     // Perform async cleanup.
-    await DisposeAsyncCore();
+    await DisposeAsyncCore().ConfigureAwait(false);
 
     // Dispose of unmanaged resources.
     Dispose(false);
@@ -78,7 +76,7 @@ In the preceding example:
 
 - The `ExampleAsyncDisposable` is a nonsealed class that implements the <xref:System.IAsyncDisposable> interface.
 - It contains a private `IAsyncDisposable` field, `_example`, that's initialized in the constructor.
-- The `DisposeAsync` method delegates to the `DisposeAsyncCore` method and calls <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> to notify the garbage collector that the finalizer doesn't have to run.
+- The `DisposeAsync` method delegates to the `DisposeAsyncCore` method and calls <xref:System.GC.SuppressFinalize*?displayProperty=nameWithType> to notify the garbage collector that the finalizer doesn't have to run.
 - It contains a `DisposeAsyncCore()` method that calls the `_example.DisposeAsync()` method, and sets the field to `null`.
 - The `DisposeAsyncCore()` method is `virtual`, which allows subclasses to override it with custom behavior.
 
@@ -135,13 +133,13 @@ await using var transaction = await context.Database.BeginTransactionAsync(token
 
 In the preceding example:
 
-- The <xref:System.Data.Common.DbConnection.BeginTransactionAsync%2A> method is awaited.
+- The <xref:System.Data.Common.DbConnection.BeginTransactionAsync*> method is awaited.
 - The return type is <xref:System.Data.Common.DbTransaction>, which implements `IAsyncDisposable`.
 - The `transaction` is used asynchronously, and also awaited.
 
 ## Stacked usings
 
-In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `await using` statements with <xref:System.Threading.Tasks.ValueTask.ConfigureAwait%2A> could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync> in errant conditions. To ensure that <xref:System.IAsyncDisposable.DisposeAsync> is always called, you should avoid stacking. The following three code examples show acceptable patterns to use instead.
+In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `await using` statements with <xref:System.Threading.Tasks.ValueTask.ConfigureAwait*> could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync> in errant conditions. To ensure that <xref:System.IAsyncDisposable.DisposeAsync> is always called, you should avoid stacking. The following three code examples show acceptable patterns to use instead.
 
 ### Acceptable pattern one
 
@@ -174,7 +172,7 @@ The highlighted lines in the following code show what it means to have "stacked 
 
 For a dual implementation example of `IDisposable` and `IAsyncDisposable`, see the <xref:System.Text.Json.Utf8JsonWriter> source code [on GitHub](https://github.com/dotnet/runtime/blob/035b729d829368c2790d825bd02db14f0c0fd2ea/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
 
-- [Disposal of services](../../core/extensions/dependency-injection-guidelines.md#disposal-of-services)
+- [Disposal of services](../../core/extensions/dependency-injection/guidelines.md#disposal-of-services)
 - <xref:System.IAsyncDisposable>
 - <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>
 - <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)>

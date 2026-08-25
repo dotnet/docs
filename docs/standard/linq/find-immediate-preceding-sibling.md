@@ -10,11 +10,11 @@ ms.topic: how-to
 
 # How to find the immediate preceding sibling (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> to find the sibling that immediately precedes a node, and how to use LINQ to XML query to do the same thing. Due to the difference in the semantics of positional predicates for the preceding sibling axes in XPath as opposed to LINQ to XML, this is one of the more interesting comparisons.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate*> to find the sibling that immediately precedes a node, and how to use LINQ to XML query to do the same thing. Due to the difference in the semantics of positional predicates for the preceding sibling axes in XPath as opposed to LINQ to XML, this is one of the more interesting comparisons.
 
 ## Example: Find the next to last element
 
-In this example, the LINQ to XML query uses the <xref:System.Linq.Enumerable.Last%2A> operator to find the last node in the collection returned by <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A>. By contrast, the XPath expression uses a predicate with a value of 1 to find the immediately preceding element.
+In this example, the LINQ to XML query uses the <xref:System.Linq.Enumerable.Last*> operator to find the last node in the collection returned by <xref:System.Xml.Linq.XNode.ElementsBeforeSelf*>. By contrast, the XPath expression uses a predicate with a value of 1 to find the immediately preceding element.
 
 ```csharp
 XElement root = XElement.Parse(

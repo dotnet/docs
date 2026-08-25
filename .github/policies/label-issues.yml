@@ -24,6 +24,23 @@ configuration:
                         label: okr-quality
 
         eventResponderTasks:
+
+            - description: >-
+                Assign issues labeled breaking-change to gewarren
+              if:
+                - payloadType: Issues
+                - or:
+                  - and:
+                    - isAction:
+                        action: Opened
+                    - hasLabel:
+                        label: 'breaking-change'
+                  - labelAdded:
+                      label: 'breaking-change'
+              then:
+                - assignTo:
+                    user: gewarren
+        
             - description: >-
                 Add "not triaged" label when:
                 * Issue is opened
@@ -31,12 +48,12 @@ configuration:
                 * 'needs-more-info' label removed
               if:
                 - payloadType: Issues
-                - or:                
+                - or:
                   - or:
-                    - isAction: 
+                    - isAction:
                         action: Opened
-                    - isAction: 
-                        action: Reopened                        
+                    - isAction:
+                        action: Reopened
                   - labelRemoved:
                       label: 'needs-more-info'
               then:
@@ -52,11 +69,11 @@ configuration:
                     label: ':watch: Not Triaged'
                 - or:
                   - and:
-                    - isAction: 
+                    - isAction:
                         action: Closed
                     - isActivitySender:
-                        issueAuthor: true                  
-                  - labelAdded: 
+                        issueAuthor: true
+                  - labelAdded:
                       label: ':world_map: reQUEST'
               then:
                 - removeLabel: ':watch: Not Triaged'

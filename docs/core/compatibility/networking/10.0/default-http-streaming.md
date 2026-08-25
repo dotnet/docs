@@ -12,11 +12,11 @@ Browser HTTP clients now enable streaming HTTP responses by default. Consequentl
 
 ## Version introduced
 
-.NET 10 Preview 3
+.NET 10
 
 ## Previous behavior
 
-In browser environments such as WebAssembly (WASM) and Blazor, the HTTP client buffered the entire response by default. The <xref:System.Net.Http.HttpContent> object contained a <xref:System.IO.MemoryStream> unless you explicitly opted in to streaming responses using the `WebAssemblyEnableStreamingResponse` option.
+Previously, in browser environments such as WebAssembly (WASM) and Blazor, the HTTP client buffered the entire response by default. The <xref:System.Net.Http.HttpContent> object contained a <xref:System.IO.MemoryStream> unless you explicitly opted in to streaming responses using the `WebAssemblyEnableStreamingResponse` option.
 
 ```csharp
 var response = await httpClient.GetAsync("https://example.com");
@@ -25,7 +25,7 @@ var contentStream = await response.Content.ReadAsStreamAsync(); // Returns Memor
 
 ## New behavior
 
-Streaming HTTP responses are now enabled by default. The <xref:System.Net.Http.HttpContent> no longer contains a <xref:System.IO.MemoryStream>. Instead, <xref:System.Net.Http.HttpContent.ReadAsStreamAsync*?displayProperty=nameWithType> returns a `BrowserHttpReadStream`, which does not support synchronous operations.
+Starting in .NET 10, streaming HTTP responses are enabled by default. The <xref:System.Net.Http.HttpContent> no longer contains a <xref:System.IO.MemoryStream>. Instead, <xref:System.Net.Http.HttpContent.ReadAsStreamAsync*?displayProperty=nameWithType> returns a `BrowserHttpReadStream`, which does not support synchronous operations.
 
 ```csharp
 var response = await httpClient.GetAsync("https://example.com");

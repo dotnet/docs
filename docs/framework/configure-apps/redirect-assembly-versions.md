@@ -1,7 +1,8 @@
 ---
 title: "Redirecting Assembly Versions"
-description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies.
-ms.date: "03/30/2017"
+description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies. Learn how to enable binding redirects for unit test projects.
+ms.date: "03/02/2026"
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "assembly binding, redirection"
   - "redirecting assembly binding to earlier version"
@@ -95,6 +96,23 @@ Plugins might honor *.dll.config* files, however, they also might not. The only 
 
 You might try to solve this problem with <xref:System.AppDomain.AssemblyResolve> event handlers, but that doesn't work since those handlers only are called on a failed load. If an assembly load succeeds, either because it was loaded by another assembly or the host, or was present in the GAC, an `AssemblyResolve` handler won't be called.
 
+### Generate binding redirects for unit test projects
+
+Unit test projects compile to DLLs, not executables. Automatic binding redirect generation only applies to executable output types, so unit test projects don't receive binding redirects by default. When a unit test project references assemblies that have conflicting versions, tests might fail at runtime with exceptions such as <xref:System.IO.FileLoadException>.
+
+To generate a *.dll.config* file with binding redirects for a unit test project, add both `AutoGenerateBindingRedirects` and `GenerateBindingRedirectsOutputType` to the project file:
+
+```xml
+<PropertyGroup>
+  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+</PropertyGroup>
+```
+
+The `GenerateBindingRedirectsOutputType` property instructs MSBuild to generate a *.dll.config* file alongside the test assembly output, even though the output type is a class library (DLL). Most test runners, including [VSTest](https://github.com/microsoft/vstest), load this configuration file when running tests.
+
+After adding these properties and rebuilding the project, verify that a *.dll.config* file appears in the build output directory next to the test assembly. The file contains the binding redirects needed to resolve assembly version conflicts at test run time.
+
 ## Redirect versions at the machine level
 
 There might be rare cases when a machine administrator wants all apps on a computer to use a specific version of an assembly. For example, a specific version might fix a security hole. If an assembly is redirected in the machine's configuration file, called *machine.config*, all apps on that machine that use the old version are directed to use the new version. The machine configuration file overrides the app configuration file and the publisher policy file. This *machine.config* file is located at *%windir%\Microsoft.NET\Framework\[version]\config\machine.config* for 32-bit machines, or *%windir%\Microsoft.NET\Framework64\[version]\config\machine.config* for 64-bit machines.
@@ -176,7 +194,7 @@ For example, to redirect one reference to a .NET Framework 3.5 assembly and anot
 ## See also
 
 - [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md)
-- [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
+- [`<bindingRedirect>` Element](./file-schema/runtime/bindingredirect-element.md)
 - [Assembly Binding Redirection Security Permission](assembly-binding-redirection-security-permission.md)
 - [Assemblies in .NET](../../standard/assembly/index.md)
 - [Programming with Assemblies](../../standard/assembly/index.md)

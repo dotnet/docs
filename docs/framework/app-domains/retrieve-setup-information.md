@@ -18,7 +18,7 @@ ms.assetid: 5cdb12ae-1e37-4a62-8ec7-93d6dcc6e8d9
 
 Each instance of an application domain consists of both properties and <xref:System.AppDomainSetup> information. You can retrieve setup information from an application domain using the <xref:System.AppDomain?displayProperty=nameWithType> class. This class provides several members that retrieve configuration information about an application domain.
 
- You can also query the **AppDomainSetup** object for the application domain to obtain setup information that was passed to the domain when it was created.
+ You can also query the `AppDomainSetup` object for the application domain to obtain setup information that was passed to the domain when it was created.
 
  The following example creates a new application domain and then prints several member values to the console.
 

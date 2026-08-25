@@ -1,14 +1,14 @@
 ---
-title: Microsoft.Testing.Platform capabilities overview
-description: Learn about Microsoft.Testing.Platform capabilities concept.
+title: Microsoft.Testing.Platform (MTP) capabilities overview
+description: Learn about MTP capabilities concept.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
 ---
 
-# Microsoft.Testing.Platform capabilities
+# Microsoft.Testing.Platform (MTP) capabilities
 
-In the context of Microsoft.Testing.Platform, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
+In the context of MTP, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
 
 The *requesters* can be any component involved in a test session, such as the platform, an extension, or the testing framework itself.
 
@@ -19,7 +19,7 @@ The primary objective of the capability system is to facilitate effective commun
 Let's consider a hypothetical example to demonstrate the necessity of a capability system.
 
 > [!NOTE]
-> This example is purely for illustrative purposes and isn't currently implemented within Microsoft.Testing.Platform or any testing framework.
+> This example is purely for illustrative purposes and isn't currently implemented within MTP or any testing framework.
 
 Imagine a situation where you have an extension that requires the testing framework to execute no more than one test at a time. Furthermore, after each test, the extension needs to know the CPU usage for that specific test.
 
@@ -28,7 +28,7 @@ To accommodate the preceding scenario, you need to inquire from the testing fram
 1. It has the capability to execute only one test at a time.
 2. It can provide information regarding the amount of CPU consumed by each test.
 
-How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In Microsoft.Testing.Platform, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
+How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In MTP, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
 
 ```csharp
 // Base capabilities contracts
@@ -54,7 +54,7 @@ public interface ITestFrameworkCapability : ICapability
 }
 ```
 
-As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./microsoft-testing-platform-architecture-extensions.md#create-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework) process.
+As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./microsoft-testing-platform-architecture-test-framework.md#create-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./microsoft-testing-platform-architecture-test-framework.md#register-a-testing-framework) process.
 
 To create a capability that addresses the aforementioned scenario, you define it as follows:
 
@@ -111,11 +111,11 @@ In conclusion, let's summarize the primary aspects of the capability system:
 * It's essential for facilitating clear and stable communication between components.
 * All capabilities should inherit from `ICapability` or an interface that inherits from it, and are exposed through a collection with the `ICapabilities` interface.
 * It aids in the evolution of features without causing breaking changes. If a certain capability isn't supported, appropriate action can be taken.
-* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. Microsoft.Testing.Platform can also *own* a capability in the same way as any other extension.
+* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. MTP can also *own* a capability in the same way as any other extension.
 
 ## Framework capabilities
 
-The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework).
+The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./microsoft-testing-platform-architecture-test-framework.md#register-a-testing-framework).
 
 ### `IBannerMessageOwnerCapability`
 

@@ -1,0 +1,211 @@
+---
+title: What's new in C# 15
+description: "Discover what's new in C# 15, including features such as union types, the closed modifier, extension indexers, and pointer relaxations. Try examples in your code."
+ms.date: 08/14/2026
+ms.topic: whats-new
+ms.update-cycle: 365-days
+ai-usage: ai-assisted
+---
+# What's new in C# 15
+
+C# 15 includes the following new features. Try these features by using the latest [Visual Studio 2026](https://visualstudio.microsoft.com/) insiders version or the [.NET 11 preview SDK](https://dotnet.microsoft.com/download/dotnet):
+
+- [Collection expression arguments](#collection-expression-arguments)
+- [Union types](#union-types)
+- [Closed hierarchies](#closed-hierarchies)
+- [Extension indexers](#extension-indexers)
+- [Labeled `break` and `continue`](#labeled-break-and-continue)
+- [Memory safety](#memory-safety)
+
+C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+
+You can download the latest .NET 11 preview SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2026 insiders](https://visualstudio.microsoft.com/vs/), which includes the .NET 11 preview SDK.
+
+The "What's new in C#" page adds new features when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
+
+You can find any breaking changes introduced in C# 15 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2011.md).
+
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
+## Collection expression arguments
+
+You can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
+
+The following example shows how to pass a capacity argument to a `List<T>` constructor and a comparer to a `HashSet<T>`:
+
+```csharp
+string[] values = ["one", "two", "three"];
+
+// Pass capacity argument to List<T> constructor
+List<string> names = [with(capacity: values.Length * 2), .. values];
+
+// Pass comparer argument to HashSet<T> constructor
+HashSet<string> set = [with(StringComparer.OrdinalIgnoreCase), "Hello", "HELLO", "hello"];
+// set contains only one element because all strings are equal with OrdinalIgnoreCase
+```
+
+To learn more about collection expression arguments, see the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md#collection-expression-arguments) or the [feature specification](~/_csharplang/proposals/csharp-15.0/collection-expression-arguments.md). For information on using collection expression arguments in collection initializers, see [Object and Collection Initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-expression-arguments).
+
+## Union types
+
+C# 15 introduces *union types*, which represent a value that can be one of several *case types*. Declare a union with the `union` keyword:
+
+```csharp
+public record class Cat(string Name);
+public record class Dog(string Name);
+public record class Bird(string Name);
+
+public union Pet(Cat, Dog, Bird);
+```
+
+Unions provide implicit conversions from each case type, and the compiler ensures `switch` expressions are exhaustive across all case types:
+
+```csharp
+Pet pet = new Dog("Rex");
+
+string name = pet switch
+{
+    Dog d => d.Name,
+    Cat c => c.Name,
+    Bird b => b.Name,
+};
+```
+
+The runtime includes the `UnionAttribute` and `IUnion` types beginning with .NET 11 Preview 5. Some features from the [proposal specification](~/_csharplang/proposals/csharp-15.0/unions.md) aren't yet implemented. Those features are coming in future previews.
+
+For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
+
+## Closed hierarchies
+
+Starting in C# 15, you can apply the `closed` modifier to a class to declare a *closed hierarchy*. A closed class can only be derived from within its declaring assembly, which fixes the set of direct descendants at compile time:
+
+```csharp
+public closed record class GateState;
+public record class Closed : GateState;
+public record class Open(float Percent) : GateState;
+```
+
+Because the compiler knows every direct descendant, a `switch` expression that handles each one is exhaustive and doesn't need a default arm:
+
+```csharp
+string Describe(GateState state) => state switch
+{
+    Closed => "closed",
+    Open(var percent) => $"{percent}% open",
+    // No warning: every direct descendant of 'GateState' is handled.
+};
+```
+
+The `closed` modifier is a contextual keyword. A `closed` class is implicitly `abstract` and can't be combined with `sealed`, `static`, or an explicit `abstract` modifier. Derivation isn't transitive: a non-closed descendant of a closed class can still be derived from in other assemblies. To extend exhaustiveness checking down the hierarchy, mark intermediate descendants `closed` as well.
+
+For more information, see the [closed modifier](../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../language-reference/operators/patterns.md#closed-hierarchy-patterns) in the language reference, or the [feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
+
+## Extension indexers
+
+Starting with C# 15, you can declare *indexers* in an `extension` block. Extension indexers let you index into a receiver as though the indexer were declared on the receiver type. Because indexers are always instance members, an extension block that declares an indexer must provide a named receiver parameter.
+
+The following example declares a get-only indexer on `IEnumerable<int>` that returns the element at a specified position:
+
+```csharp
+public static class SequenceIndexer
+{
+    extension(IEnumerable<int> sequence)
+    {
+        public int this[int index] => sequence.ElementAt(index);
+    }
+}
+```
+
+You index into the receiver as though the indexer were a member of the receiver type:
+
+```csharp
+IEnumerable<int> numbers = Enumerable.Range(1, 10);
+int third = numbers[2];
+```
+
+For more information, see [Extension declaration](../language-reference/keywords/extension.md#extension-indexers) in the language reference or the [feature specification](~/_csharplang/proposals/csharp-15.0/extension-indexers.md).
+
+## Labeled `break` and `continue`
+
+Starting with C# 15, `break` and `continue` statements can name a label on an enclosing construct. Use a labeled `break` to exit an enclosing loop or `switch` statement. Use a labeled `continue` to start the next iteration of an enclosing loop.
+
+Labeled `break` and `continue` replace the workarounds you'd otherwise use to steer control flow through nested loops, such as a Boolean flag that you set in an inner loop and then check at each outer level, or a `goto` that jumps past the loops. Naming the target loop directly on the jump statement removes that bookkeeping and makes the intended control flow easier to read.
+
+```csharp
+outer: for (int row = 0; row < grid.Height; row++)
+{
+    for (int column = 0; column < grid.Width; column++)
+    {
+        if (grid[row, column].IsBlocked)
+        {
+            continue outer;
+        }
+
+        if (grid[row, column].IsGoal)
+        {
+            break outer;
+        }
+    }
+}
+```
+
+Place the label directly on the loop or `switch` statement it identifies. Without a label, `break` and `continue` keep their original behavior and target the innermost applicable statement.
+
+The [IDE0410](../../fundamentals/code-analysis/style-rules/ide0410.md) style rule flags the Boolean flag and `goto` patterns that a labeled jump statement can replace, and shows before-and-after examples of each.
+
+For more information, see [Jump statements](../language-reference/statements/jump-statements.md) in the language reference or the [feature specification](~/_csharplang/proposals/csharp-15.0/labeled-break-continue.md).
+
+## Memory safety
+
+C# 15 begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
+
+In the complete model, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. An assembly opts in to this enforcement, and the compiler records the choice with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and explicit-layout fields as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
+
+The first step includes the pointer relaxations. When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
+
+- Declaring a pointer type and taking the address of a variable with the `&` operator.
+- The `fixed` statement, which pins a variable.
+- Converting a `stackalloc` expression to a pointer.
+- The `sizeof` operator applied to any unmanaged type.
+
+The following example creates and pins a pointer without an `unsafe` context:
+
+```csharp
+int number = 42;
+int* pointer = &number;
+
+int[] numbers = [10, 20, 30];
+fixed (int* first = numbers)
+{
+    // Dereferencing the pointer still requires an unsafe context.
+}
+```
+
+The operations that access the pointed-to memory, such as pointer indirection (`*p`), pointer member access (`p->member`), pointer element access (`p[i]`), and function pointer invocation, still require an `unsafe` context.
+
+C# 15 also adds an `unsafe` expression, `unsafe(expression)`, that establishes an unsafe context for a single expression. It's useful where an `unsafe` block can't appear syntactically, such as a field initializer, a constructor initializer, or a `catch` filter:
+
+```csharp
+class Header
+{
+    // A field initializer can't contain an unsafe block, but it can contain an unsafe expression.
+    static readonly int Signature = unsafe(ReadSignature());
+
+    static unsafe int ReadSignature()
+    {
+        int rawValue = 0x1234;
+        int* pointer = &rawValue;
+        return *pointer;
+    }
+}
+```
+
+Like the rest of the memory safety preview, `unsafe` expressions require the `preview` language version and the `AllowUnsafeBlocks` compiler option.
+
+The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and explicit-layout fields. However, the *requires-unsafe* member model and the assembly opt-in to the updated memory safety rules aren't available yet, so `safe` and `unsafe` currently have no effect on callers.
+
+For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+
+## See also
+
+- [What's new in .NET 11](../../core/whats-new/dotnet-11/overview.md)

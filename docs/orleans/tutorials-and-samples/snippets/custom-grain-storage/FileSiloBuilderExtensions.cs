@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Orleans.Runtime;
 using Orleans.Storage;
@@ -10,10 +10,11 @@ public static class FileSiloBuilderExtensions
     public static ISiloBuilder AddFileGrainStorage(
         this ISiloBuilder builder,
         string providerName,
-        Action<FileGrainStorageOptions> options) =>
-        builder.ConfigureServices(
-            services => services.AddFileGrainStorage(
-                providerName, options));
+        Action<FileGrainStorageOptions> options)
+    {
+        builder.Services.AddFileGrainStorage(providerName, options);
+        return builder;
+    }
 
     public static IServiceCollection AddFileGrainStorage(
         this IServiceCollection services,
@@ -27,9 +28,16 @@ public static class FileSiloBuilderExtensions
             IPostConfigureOptions<FileGrainStorageOptions>,
             DefaultStorageProviderSerializerOptionsConfigurator<FileGrainStorageOptions>>();
 
-        return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)
-            .AddSingletonNamedService(providerName,
-                (p, n) =>
-                    (ILifecycleParticipant<ISiloLifecycle>)p.GetRequiredServiceByName<IGrainStorage>(n));
+        // <KeyedRegistrations>
+        services.AddKeyedSingleton<IGrainStorage>(
+            providerName,
+            (sp, key) => FileGrainStorageFactory.Create(sp, key?.ToString() ?? providerName));
+
+        services.AddKeyedSingleton<ILifecycleParticipant<ISiloLifecycle>>(
+            providerName,
+            (sp, key) => (ILifecycleParticipant<ISiloLifecycle>)sp.GetRequiredKeyedService<IGrainStorage>(key));
+        // </KeyedRegistrations>
+
+        return services;
     }
 }

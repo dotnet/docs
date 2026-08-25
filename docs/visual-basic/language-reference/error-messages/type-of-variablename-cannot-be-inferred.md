@@ -60,7 +60,7 @@ Dim n = 20
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Conversion.Val%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Val*>
 - [For...Next Statement](../statements/for-next-statement.md)
 - [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
 - [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)

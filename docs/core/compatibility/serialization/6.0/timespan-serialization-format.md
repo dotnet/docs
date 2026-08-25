@@ -57,7 +57,7 @@ public class TimeSpanConverter : JsonConverter<TimeSpan>
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=fullName>
 
 ## See also
 

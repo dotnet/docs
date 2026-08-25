@@ -69,7 +69,7 @@ The name of r1 and the name in 'n' refer to the same instance.
 
 As mentioned earlier, the benefit of atomized objects is that when you use one of the axis methods that take an <xref:System.Xml.Linq.XName> as a parameter, the axis method only has to determine that two names reference the same instance to select the desired elements.
 
-The following example passes an <xref:System.Xml.Linq.XName> to the <xref:System.Xml.Linq.XContainer.Descendants%2A> method call, which then has better performance because of the atomization pattern.
+The following example passes an <xref:System.Xml.Linq.XName> to the <xref:System.Xml.Linq.XContainer.Descendants*> method call, which then has better performance because of the atomization pattern.
 
 ```csharp
 var root = new XElement("Root",

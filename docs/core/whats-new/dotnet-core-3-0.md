@@ -14,7 +14,7 @@ ms.update-cycle: 3650-days
 
 This article describes what is new in .NET Core 3.0. One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or newer, or [Visual Studio Code](https://code.visualstudio.com/) with the latest **C# extension**.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) or newer, or [Visual Studio Code](https://code.visualstudio.com/) with the latest **C# extension**.
 
 [Download and get started with .NET Core 3.0](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
 
@@ -28,7 +28,7 @@ C# 8.0 is also part of this release, which includes the [nullable reference type
 
 Tutorials related to C# 8.0 language features:
 
-- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
+- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/fundamentals/tutorials/nullable-reference-types.md)
 - [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/fundamentals/tutorials/pattern-matching.md)
 
@@ -51,13 +51,13 @@ Language enhancements were added to support the following API features detailed 
 </Project>
 ```
 
-If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
+If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
 
 ## Compile/Deploy
 
 ### Default executables
 
-.NET Core now builds [framework-dependent executables](../deploying/index.md#framework-dependent-deployment) by default. This behavior is new for applications that use a globally installed version of .NET Core. Previously, only [self-contained deployments](../deploying/index.md#self-contained-deployment) would produce an executable.
+.NET Core now builds [framework-dependent executables](../deploying/index.md#publish-as-framework-dependent) by default. This behavior is new for applications that use a globally installed version of .NET Core. Previously, only [self-contained deployments](../deploying/index.md#publish-as-self-contained) would produce an executable.
 
 During `dotnet build` or `dotnet publish`, an executable (known as the **appHost**) is created that matches the environment and platform of the SDK you're using. You can expect the same things with these executables as you would other native executables, such as:
 
@@ -72,7 +72,7 @@ Starting with the notarized .NET Core SDK 3.0 for macOS, the setting to produce 
 
 When the appHost setting is enabled, .NET Core generates a native Mach-O executable when you build or publish. Your app runs in the context of the appHost when it is run from source code with the `dotnet run` command, or by starting the Mach-O executable directly.
 
-Without the appHost, the only way a user can start a [framework-dependent](../deploying/index.md#framework-dependent-deployment) app is with the `dotnet <filename.dll>` command. An appHost is always created when you publish your app [self-contained](../deploying/index.md#self-contained-deployment).
+Without the appHost, the only way a user can start a [framework-dependent](../deploying/index.md#publish-as-framework-dependent) app is with the `dotnet <filename.dll>` command. An appHost is always created when you publish your app [self-contained](../deploying/index.md#publish-as-self-contained).
 
 You can either configure the appHost at the project level, or toggle the appHost for a specific `dotnet` command with the `-p:UseAppHost` parameter:
 
@@ -175,7 +175,7 @@ To disable TC completely, use this MSBuild property in your project file:
 > [!TIP]
 > If you change these settings in the project file, you may need to perform a clean build for the new settings to be reflected (delete the `obj` and `bin` directories and rebuild).
 
-For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../runtime-config/compilation.md).
+For more information about configuring compilation at runtime, see [Runtime configuration options for compilation](../runtime-config/compilation.md).
 
 ### ReadyToRun images
 
@@ -329,7 +329,7 @@ Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. Whi
 
 [MSIX](/windows/msix/) is a new Windows application package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
 
-The [Windows Application Packaging Project](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployment) .NET Core applications.
+The [Windows Application Packaging Project](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#publish-as-self-contained) .NET Core applications.
 
 The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
 
@@ -446,7 +446,7 @@ For more information, see the [ranges and indices tutorial](../../csharp/tutoria
 
 ### Async streams
 
-The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
+The <xref:System.Collections.Generic.IAsyncEnumerable`1> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable`1>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
 
 The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
 

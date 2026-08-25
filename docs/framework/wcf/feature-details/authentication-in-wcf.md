@@ -20,7 +20,7 @@ The following topics show a number of different mechanisms in Windows Communicat
  As an extra safeguard, a client can authenticate the service by specifying the expected *identity* of the service. If the expected identity and the identity returned by the service do not match, authentication fails.
 
  [Security Negotiation and Timeouts](security-negotiation-and-timeouts.md)
- Describes how to use the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.NegotiationTimeout%2A> property in the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> class.
+ Describes how to use the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.NegotiationTimeout> property in the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> class.
 
  [Debugging Windows Authentication Errors](debugging-windows-authentication-errors.md)
  Focuses on common problems encountered when using Windows authentication.

@@ -11,7 +11,7 @@ ms.custom: "updateeachrelease"
 
 ## Cloud apps
 
-* [Aspire](/dotnet/aspire)
+* [Aspire](https://aspire.dev/)
 * [Serverless functions](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
 * [Web and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
 
@@ -23,7 +23,7 @@ ms.custom: "updateeachrelease"
 
 ## Other app types
 
-* [Console apps](tutorials/with-visual-studio-code.md)
+* [Console apps](tutorials/create-console-app.md)
 * [Internet of Things (IoT)](../iot/index.yml)
 * [Machine learning](../machine-learning/index.yml)
 * [Windows services](/aspnet/core/host-and-deploy/windows-service)

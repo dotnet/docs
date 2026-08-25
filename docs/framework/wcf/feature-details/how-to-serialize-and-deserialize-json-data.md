@@ -53,7 +53,7 @@ This article is based on the [DataContractJsonSerializer sample](../samples/json
     var ser = new DataContractJsonSerializer(typeof(Person));
     ```
 
-3. Use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A> method to write JSON data to the stream.
+3. Use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject*> method to write JSON data to the stream.
 
     ```csharp
     ser.WriteObject(stream1, p);
@@ -70,7 +70,7 @@ This article is based on the [DataContractJsonSerializer sample](../samples/json
 
 ## To deserialize an instance of type Person from JSON
 
-1. Deserialize the JSON-encoded data into a new instance of `Person` by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject%2A> method of the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.
+1. Deserialize the JSON-encoded data into a new instance of `Person` by using the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject*> method of the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.
 
     ```csharp
     stream1.Position = 0;

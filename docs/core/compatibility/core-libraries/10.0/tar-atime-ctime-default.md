@@ -15,7 +15,7 @@ Other minor fixes have been made to <xref:System.Formats.Tar> to prioritize roun
 
 ## Version introduced
 
-.NET 10 Preview 5
+.NET 10
 
 ## Previous behavior
 

@@ -22,7 +22,7 @@ WCF does not support impersonation and an <xref:System.InvalidOperationException
 
 - The authentication mode results in a Windows identity.
 
-- The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property of the <xref:System.ServiceModel.OperationBehaviorAttribute> is set to <xref:System.ServiceModel.ImpersonationOption.Required>.
+- The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation> property of the <xref:System.ServiceModel.OperationBehaviorAttribute> is set to <xref:System.ServiceModel.ImpersonationOption.Required>.
 
 - A state-based security context token (SCT) is created (by default, creation is disabled).
 
@@ -31,18 +31,18 @@ WCF does not support impersonation and an <xref:System.InvalidOperationException
  Alternatively, in configuration, the token is enabled by creating a `<customBinding>`, then adding a `<security>` element, and setting the `authenticationMode` attribute to SecureConversation and the `requireSecurityContextCancellation` attribute to `true`.
 
 > [!NOTE]
-> The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on Windows XP.
+> The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement*> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on Windows XP.
 
 ### Possible ASP.NET conflict
 
-WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts a WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.
+WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts a WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.
 
 ### Assembly loads may fail under impersonation
 
 If the impersonated context does not have access rights to load an assembly and if it is the first time the common language runtime (CLR) is attempting to load the assembly for that AppDomain, the <xref:System.AppDomain> caches the failure. Subsequent attempts to load that assembly (or assemblies) fail, even after reverting the impersonation, and even if the reverted context has access rights to load the assembly. This is because the CLR does not reattempt the load after the user context is changed. You must restart the application domain to recover from the failure.
 
 > [!NOTE]
-> The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md).
+> The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md).
 
 ### Delegation requires credential negotiation
 

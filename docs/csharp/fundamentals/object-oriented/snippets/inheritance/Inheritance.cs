@@ -28,10 +28,10 @@
         // Instance constructor that has three parameters.
         public WorkItem(string title, string desc, TimeSpan joblen)
         {
-            this.ID = GetNextID();
-            this.Title = title;
-            this.Description = desc;
-            this.jobLength = joblen;
+            ID = GetNextID();
+            Title = title;
+            Description = desc;
+            jobLength = joblen;
         }
 
         // Static constructor to initialize the static member, currentID. This
@@ -93,10 +93,10 @@
     public class Shape
     {
         // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
+        public int X { get; init; }
+        public int Y { get; init; }
+        public int Height { get; init; }
+        public int Width { get; init; }
 
         // Virtual method
         public virtual void Draw()
@@ -143,12 +143,12 @@
             // can all be used wherever a Shape is expected. No cast is
             // required because an implicit conversion exists from a derived
             // class to its base class.
-            var shapes = new List<Shape>
-            {
+            List<Shape> shapes =
+            [
                 new Rectangle(),
                 new Triangle(),
                 new Circle()
-            };
+            ];
 
             // Polymorphism at work #2: the virtual method Draw is
             // invoked on each of the derived classes, not the base class.
@@ -170,7 +170,7 @@
         public static void VirtualExamples()
         {
             //<SnippetTestVirtualMethods>
-            DerivedClass B = new DerivedClass();
+            DerivedClass B = new();
             B.DoWork();  // Calls the new method.
 
             BaseClass A = B;
@@ -183,10 +183,7 @@
     public class BaseClass
     {
         public virtual void DoWork() { }
-        public virtual int WorkProperty
-        {
-            get { return 0; }
-        }
+        public virtual int WorkProperty => 0;
     }
     public class DerivedClass : BaseClass
     {
@@ -227,7 +224,7 @@
             public static void Example()
             {
                 //<SnippetUseNewMethods>
-                DerivedClass B = new DerivedClass();
+                DerivedClass B = new();
                 B.DoWork();  // Calls the new method.
 
                 BaseClass A = (BaseClass)B;

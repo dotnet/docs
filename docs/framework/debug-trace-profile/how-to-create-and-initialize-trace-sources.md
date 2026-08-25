@@ -15,7 +15,7 @@ ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
 
 [!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
-The <xref:System.Diagnostics.TraceSource> class is used by applications to produce traces that can be associated with the application. <xref:System.Diagnostics.TraceSource> provides tracing methods that allow you to easily trace events, trace data, and issue informational traces. Trace output from <xref:System.Diagnostics.TraceSource> can be created and initialized with or without the use of configuration files. This topic provides instructions for both options. However, we recommend that you use configuration files to facilitate the reconfiguration of the traces produced by trace sources at run time.
+The <xref:System.Diagnostics.TraceSource> class is used by applications to produce traces that can be associated with the application. <xref:System.Diagnostics.TraceSource> provides tracing methods that allow you to easily trace events, trace data, and issue informational traces. Trace output from <xref:System.Diagnostics.TraceSource> can be created and initialized with or without the use of configuration files. This topic provides instructions for both options. However, we recommend that you use configuration files to facilitate the reconfiguration of the traces produced by trace sources at runtime.
 
 ### To create and initialize a trace source using a configuration file
 
@@ -65,7 +65,7 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
 
      The configuration file initializes the settings for the trace source at the time the application is initialized. The application can dynamically change the properties set by the configuration file to override any settings specified by the user. For example, you might want to ensure that critical messages are always sent to a text file, regardless of the current configuration settings. The example code demonstrates how to override configuration file settings to ensure that critical messages are output to the trace listeners.
 
-     Changing the configuration file settings while the application is executing does not change the initial settings. To change the settings, you must either restart the application or programmatically refresh the application by using the <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=nameWithType> method.
+     Changing the configuration file settings while the application is executing does not change the initial settings. To change the settings, you must either restart the application or programmatically refresh the application by using the <xref:System.Diagnostics.Trace.Refresh*?displayProperty=nameWithType> method.
 
 ### To initialize trace sources, listeners, and filters without a configuration file
 

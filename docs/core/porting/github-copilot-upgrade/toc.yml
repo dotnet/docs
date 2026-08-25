@@ -1,0 +1,35 @@
+items:
+  - name: GitHub Copilot upgrade for .NET
+    href: index.yml
+  - name: Overview
+    href: overview.md
+  - name: Install
+    href: install.md
+  - name: Core concepts
+    href: concepts.md
+  - name: Dashboard
+    href: dashboard.md
+  - name: Working with the agent
+    href: working-with-agent.md
+  - name: Scenarios and skills reference
+    href: scenarios-and-skills.md
+  - name: Customization
+    href: customization.md
+  - name: FAQ
+    href: faq.yml
+    displayName: copilot, upgrade
+
+  - name: Upgrade .NET apps
+    expanded: true
+    items:
+      - name: How to upgrade with GitHub Copilot
+        href: how-to-upgrade-with-github-copilot.md
+      - name: How to apply custom upgrade instructions
+        href: how-to-custom-upgrade-instructions.md
+      - name: Best practices
+        href: best-practices.md
+      - name: Troubleshooting
+        href: troubleshooting.md
+
+  - name: Migrate .NET apps to Azure
+    href: ../../../azure/migration/appmod/overview.md

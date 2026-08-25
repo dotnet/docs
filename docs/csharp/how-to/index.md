@@ -15,8 +15,8 @@ There are several tips and tricks that are common C# developer practices:
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
-- [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
-- [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
+- [Implement and call a custom extension member](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
+- [Create a new method for an `enum` type using extension member](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ### Class, record, and struct members
 
@@ -41,12 +41,12 @@ These articles help you work with collections of data.
 
 Strings are the fundamental data type used to display or manipulate text. These articles demonstrate common practices with strings.
 
-- [Compare strings](compare-strings.md).
-- [Modify the contents of a string](modify-string-contents.md).
+- [Compare strings](../fundamentals/strings/common-tasks/compare.md).
+- [Modify the contents of a string](../fundamentals/strings/common-tasks/modify.md).
 - [Determine if a string represents a number](../programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md).
-- [Use `String.Split` to separate strings](parse-strings-using-split.md).
-- [Combine multiple strings into one](concatenate-multiple-strings.md).
-- [Search for text in a string](search-strings.md).
+- [Use `String.Split` to separate strings](../fundamentals/strings/common-tasks/split.md).
+- [Combine multiple strings into one](../fundamentals/strings/common-tasks/concatenate.md).
+- [Search for text in a string](../fundamentals/strings/common-tasks/search.md).
 
 ## Convert between types
 
@@ -67,8 +67,8 @@ You may need to convert an object to a different type.
 You may create types that define their own rules for equality or define a
 natural ordering among objects of that type.
 
-- [Test for reference-based equality](../programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md).
-- [Define value-based equality for a type](../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md).
+- [Test for reference-based equality](../fundamentals/expressions/equality.md#use-objectreferenceequals-to-test-identity-directly).
+- [Define value-based equality for a type](../language-reference/operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record).
 
 ## Exception handling
 

@@ -37,7 +37,7 @@ To pass arbitrary information alongside the `HttpRequestMessage`, you can use th
 
 ✔️ CONSIDER encapsulating all the scope-related (for example, authentication) logic in a separate `DelegatingHandler` that's **not** created by the `IHttpClientFactory`, and use it to wrap the `IHttpClientFactory`-created handler.
 
-To create just an `HttpMessageHandler` without `HttpClient`, call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A?displayProperty=nameWithType> for any registered _named client_. In that case, you will need to create an `HttpClient` instance yourself using the combined handler. You can find a fully runnable example for this workaround on [GitHub](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
+To create just an `HttpMessageHandler` without `HttpClient`, call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler*?displayProperty=nameWithType> for any registered _named client_. In that case, you will need to create an `HttpClient` instance yourself using the combined handler. You can find a fully runnable example for this workaround on [GitHub](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
 
 For more information, see the [Message Handler Scopes in IHttpClientFactory](httpclient-factory.md#message-handler-scopes-in-ihttpclientfactory) section in the `IHttpClientFactory` guidelines.
 
@@ -122,7 +122,7 @@ In case two different _typed clients_ are registered on a common interface, they
 
 ✔️ CONSIDER registering and configuring a _named client_ separately, and then linking it to one or multiple _typed clients_, either by specifying the name in `AddHttpClient<T>` call or by calling `AddTypedClient` during the _named client_ setup.
 
-By design, registering and configuring a _named client_ with the same name several times just appends the configuration actions to the list of existing ones. This behavior of `IHttpClientFactory` might not be obvious, but it is the same approach that is used by the [Options pattern](options.md) and configuration APIs like <xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A>.
+By design, registering and configuring a _named client_ with the same name several times just appends the configuration actions to the list of existing ones. This behavior of `IHttpClientFactory` might not be obvious, but it is the same approach that is used by the [Options pattern](options.md) and configuration APIs like <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Configure*>.
 
 This is mostly useful for advanced handler configurations, for example, adding a custom handler to a _named client_ defined externally, or mocking a primary handler for tests, but it works for `HttpClient` instance configuration as well. For example, the three following examples will result in an `HttpClient` configured in the **same** way (both `BaseAddress` and `DefaultRequestHeaders` are set):
 
@@ -157,7 +157,7 @@ services.AddHttpClient<FooLogger>("LogClient");
 services.AddHttpClient<BarLogger>("LogClient");
 ```
 
-The same thing can also be achieved by calling <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient%2A> during the _named client_ configuration:
+The same thing can also be achieved by calling <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient*> during the _named client_ configuration:
 
 ```csharp
 services.AddHttpClient("LogClient", c => c.BaseAddress = new Uri(LogServerAddress))

@@ -10,13 +10,13 @@ ms.topic: how-to
 
 # How to populate an XML tree with an XmlWriter (LINQ to XML)
 
-One way to populate an XML tree is to use <xref:System.Xml.Linq.XContainer.CreateWriter%2A> to create an <xref:System.Xml.XmlWriter>, and then write to the <xref:System.Xml.XmlWriter>. The XML tree is populated with all nodes that are written to the <xref:System.Xml.XmlWriter>.
+One way to populate an XML tree is to use <xref:System.Xml.Linq.XContainer.CreateWriter*> to create an <xref:System.Xml.XmlWriter>, and then write to the <xref:System.Xml.XmlWriter>. The XML tree is populated with all nodes that are written to the <xref:System.Xml.XmlWriter>.
 
 You'd typically use this method when you use LINQ to XML with another class that expects to write to an <xref:System.Xml.XmlWriter>, such as <xref:System.Xml.Xsl.XslCompiledTransform>.
 
 ## Example: Create an XmlWriter to accept the output of an XSLT transformation
 
-You can use <xref:System.Xml.Linq.XContainer.CreateWriter%2A> to create an <xref:System.Xml.XmlWriter> to accept the output of an XSLT transformation. This is shown in the following example, which does the following:
+You can use <xref:System.Xml.Linq.XContainer.CreateWriter*> to create an <xref:System.Xml.XmlWriter> to accept the output of an XSLT transformation. This is shown in the following example, which does the following:
 
 - Creates an XML tree and an <xref:System.Xml.XmlReader> to read from it.
 - Creates a new tree and an <xref:System.Xml.XmlWriter> to write to it.
@@ -107,7 +107,7 @@ This example produces the following output:
 
 ## See also
 
-- <xref:System.Xml.Linq.XContainer.CreateWriter%2A>
+- <xref:System.Xml.Linq.XContainer.CreateWriter*>
 - <xref:System.Xml.XmlWriter>
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - [XML trees](functional-construction.md)

@@ -289,7 +289,7 @@ The events described in this article collect information relating to loading and
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`AssemblyLoadFromResolveHandlerInvoked`|295|An <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> handler has been invoked.|
+|`AssemblyLoadFromResolveHandlerInvoked`|295|An <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> handler has been invoked.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

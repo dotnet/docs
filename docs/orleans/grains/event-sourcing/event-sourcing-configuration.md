@@ -2,7 +2,7 @@
 title: Event sourcing configuration
 description: Learn about event sourcing configuration in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Event sourcing configuration
@@ -17,7 +17,7 @@ As before, interfaces depend only on the `Microsoft.Orleans.Core` package becaus
 
 ### Grain implementations
 
-Journaled grains need to derive from <xref:Orleans.EventSourcing.JournaledGrain%602> or <xref:Orleans.EventSourcing.JournaledGrain%601>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
+Journaled grains need to derive from <xref:Orleans.EventSourcing.JournaledGrain`2> or <xref:Orleans.EventSourcing.JournaledGrain`1>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
 
 ### Log-consistency providers
 
@@ -73,9 +73,9 @@ public class ChatGrain :
 }
 ```
 
-### `StorageProvider` attributes
+### <xref:Orleans.Providers.StorageProviderAttribute> attributes
 
-Some log-consistency providers (including `LogStorage` and `StateStorage`) use a standard `StorageProvider` to communicate with storage. Specify this provider using a separate `StorageProvider` attribute, as follows:
+Some log-consistency providers (including `LogStorage` and `StateStorage`) use a standard <xref:Orleans.Providers.StorageProviderAttribute> to communicate with storage. Specify this provider using a separate <xref:Orleans.Providers.StorageProviderAttribute> attribute, as follows:
 
 ```csharp
 [LogConsistencyProvider(ProviderName = "LogStorage")]
@@ -89,7 +89,7 @@ public class ChatGrain :
 
 ## Default providers
 
-You can omit the `LogConsistencyProvider` and/or `StorageProvider` attributes if a default is specified in the configuration. Do this by using the special name `Default` for the respective provider. For example:
+You can omit the `LogConsistencyProvider` and/or <xref:Orleans.Providers.StorageProviderAttribute> attributes if a default is specified in the configuration. Do this by using the special name `Default` for the respective provider. For example:
 
 ```xml
 <LogConsistencyProviders>

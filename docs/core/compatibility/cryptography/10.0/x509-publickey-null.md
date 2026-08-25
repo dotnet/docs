@@ -8,15 +8,15 @@ ms.custom: https://github.com/dotnet/docs/issues/45325
 
 # X509Certificate and PublicKey key parameters can be null
 
-In .NET 10, the behavior of <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.PublicKey> has changed. When these objects contain a key without algorithm parameters, they now return `null` instead of an empty array.
+The behavior of <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.PublicKey> has changed. When these objects contain a key without algorithm parameters, they now return `null` instead of an empty array.
 
 ## Version introduced
 
-.NET 10 Preview 3
+.NET 10
 
 ## Previous behavior
 
-<xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.PublicKey> objects that contained a key without algorithm parameters would return an empty array when accessing the key algorithm parameters.
+Previously, <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.PublicKey> objects that contained a key without algorithm parameters returned an empty array when accessing the key algorithm parameters.
 
 ```csharp
 byte[] parameters = certificate.GetKeyAlgorithmParameters();
@@ -25,7 +25,7 @@ byte[] parameters = certificate.GetKeyAlgorithmParameters();
 
 ## New behavior
 
-<xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.PublicKey> objects that contain a key without algorithm parameters will return `null` when accessing the key algorithm parameters.
+Starting in .NET 10, <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.PublicKey> objects that contain a key without algorithm parameters return `null` when accessing the key algorithm parameters.
 
 ```csharp
 byte[] parameters = certificate.GetKeyAlgorithmParameters();

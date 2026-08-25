@@ -101,7 +101,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
     {
         var json = await client.GetStringAsync(
             "https://api.github.com/orgs/dotnet/repos");
-    
+
         Console.Write(json);
     }
    ```
@@ -121,7 +121,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
 
 ## Deserialize the JSON Result
 
-The following steps simplify the approach to fetching the data and processing it. You will use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [📦 System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package to fetch and deserialize the JSON results into objects.
+The following steps simplify the approach to fetching the data and processing it. You will use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync*> extension method that's part of the [📦 System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package to fetch and deserialize the JSON results into objects.
 
 1. Create a file named *Repository.cs* and add the following code:
 
@@ -135,17 +135,17 @@ The following steps simplify the approach to fetching the data and processing it
 
    Although the `GetFromJsonAsync` method you will use in the next point has a benefit of being case-insensitive when it comes to property names, the C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md).
 
-1. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
+1. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync*?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
 
     ```csharp
     var repositories = await client.GetFromJsonAsync<List<Repository>>("https://api.github.com/orgs/dotnet/repos");
     ```
 
-   The updated code replaces <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> with <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType>.
+   The updated code replaces <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> with <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync*?displayProperty=nameWithType>.
 
    The first argument to `GetFromJsonAsync` method is an `await` expression. `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement. The next parameter, `requestUri` is optional and doesn't have to be provided if was already specified when creating the `client` object. You didn't provide the `client` object with the URI to send request to, so you specified the URI now. The last optional parameter, the `CancellationToken` is omitted in the code snippet.
 
-   The `GetFromJsonAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the fetched JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` record, because the JSON text represents a collection of repository objects.
+   The `GetFromJsonAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the fetched JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List`1?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` record, because the JSON text represents a collection of repository objects.
 
 1. Add code to display the name of each repository. Replace the lines that read:
 
@@ -209,26 +209,29 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 
 ## Deserialize more properties
 
-The following steps add code to process more of the properties in the received JSON packet. You probably won't want to process every property, but adding a few more demonstrates other features of C#.
+In the following steps, we extend the code to process more properties from the JSON payload returned by the GitHub API. You probably won't need to process every property, but adding a few demonstrates additional C# features.
 
-1. Replace the contents of `Repository` class, with the following `record` definition:
+1. Replace the contents of the `Repository` class with the following `record` definition. Make sure to import the `System.Text.Json.Serialization` namespace and apply the `[JsonPropertyName]` attribute to map JSON fields to C# properties explicitly.
 
-    ```csharp
+   ```csharp
+    using System.Text.Json.Serialization;
+
     public record class Repository(
-        string Name,
-        string Description,
-        Uri GitHubHomeUrl,
-        Uri Homepage,
-        int Watchers,
-        DateTime LastPushUtc
-    );
-    ```
+      string Name,
+      string Description,
+      [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
+      Uri Homepage,
+      int Watchers,
+      [property: JsonPropertyName("pushed_at")] DateTime LastPushUtc
+     );
+   ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 
-   JSON most often uses lowercase for names of it's objects, however we don't need to make any conversion and can keep the uppercase of the fields names, because, like mentioned in one of previous points, the `GetFromJsonAsync` extension method is case-insensitive when it comes to property names.
+   JSON often uses `lowercase` or `snake_case` for property names. Fields like `html_url` and `pushed_at` do not follow C# PascalCase naming conventions. Using `[JsonPropertyName]` ensures that these JSON keys are correctly bound to their corresponding C# properties, even when their names differ in case or contain underscores. This approach guarantees predictable and stable deserialization while allowing PascalCase property names in C#.
+Additionally, the `GetFromJsonAsync` method is `case-insensitive` when matching property names, so no further conversion is necessary.
 
-1. Update the `foreach` loop in the *Program.cs* file to display the property values:
+2. Update the `foreach` loop in the *Program.cs* file to display the property values:
 
     ```csharp
     foreach (var repo in repositories)
@@ -242,7 +245,7 @@ The following steps add code to process more of the properties in the received J
     }
     ```
 
-1. Run the app.
+3. Run the app.
 
    The list now includes the additional properties.
 
@@ -254,7 +257,7 @@ The date of the last push operation is formatted in this fashion in the JSON res
 2016-02-08T21:27:00Z
 ```
 
-This format is for Coordinated Universal Time (UTC), so the result of deserialization is a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>.
+This format is for Coordinated Universal Time (UTC), so the result of deserialization is a <xref:System.DateTime> value whose <xref:System.DateTime.Kind> property is <xref:System.DateTimeKind.Utc>.
 
 To get a date and time represented in your time zone, you have to write a custom conversion method.
 

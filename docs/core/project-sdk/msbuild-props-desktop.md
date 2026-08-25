@@ -20,7 +20,7 @@ This page is a reference for the MSBuild properties and items that you use to co
 To use WinForms or WPF, specify the following settings in the project file of your WinForms or WPF project:
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
-- Set [`TargetFramework`](msbuild-props.md#targetframework) to a [Windows-specific target framework moniker](../../standard/frameworks.md#net-5-os-specific-tfms), such as `net8.0-windows`.
+- Set [`TargetFramework`](msbuild-props.md#targetframework) to a [Windows-specific target framework moniker](../../standard/frameworks.md#os-specific-tfms), such as `net8.0-windows`.
 - Add a UI framework property (or both, if necessary):
   - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
   - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.

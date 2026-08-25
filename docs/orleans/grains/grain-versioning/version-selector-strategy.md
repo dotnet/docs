@@ -2,7 +2,7 @@
 title: Version selector strategy
 description: Learn how to use the version selector strategy in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Version selector strategy

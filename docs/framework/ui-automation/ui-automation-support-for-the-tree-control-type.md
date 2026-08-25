@@ -65,8 +65,8 @@ ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
 |Control Pattern/Pattern Property|Support/Value|Notes|
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.ISelectionProvider>|Depends|Tree controls that contain a set of selectable items must implement this control pattern. This control pattern does not have to be implemented if selecting an item does not convey meaningful information to the user.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple%2A>|See notes.|Implement this property if the tree control supports multiple selection (most tree controls do not support multiple selection).|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A>|See notes.|The value of this property is exposed if the control requires that an item be selected.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple>|See notes.|Implement this property if the tree control supports multiple selection (most tree controls do not support multiple selection).|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired>|See notes.|The value of this property is exposed if the control requires that an item be selected.|
 |<xref:System.Windows.Automation.Provider.IScrollProvider>|Depends|Implement this control pattern if the contents of the tree container can be scrolled.|
 
 <a name="Required_UI_Automation_Events"></a>

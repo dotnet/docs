@@ -1,9 +1,7 @@
 ---
 title: Service discovery in .NET
 description: Learn how to use the Microsoft.Extensions.ServiceDiscovery library to simplify the integration of service discovery patterns in .NET applications.
-author: IEvangelist
-ms.author: dapine
-ms.date: 04/10/2024
+ms.date: 10/20/2025
 ms.topic: overview
 ---
 
@@ -18,20 +16,19 @@ To get started with service discovery in .NET, install the [Microsoft.Extensions
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.ServiceDiscovery --prerelease
+dotnet add package Microsoft.Extensions.ServiceDiscovery
 ```
 
 Or, if you're using .NET 10+ SDK:
 
 ```dotnetcli
-dotnet package add Microsoft.Extensions.ServiceDiscovery --prerelease
+dotnet package add Microsoft.Extensions.ServiceDiscovery
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.ServiceDiscovery"
-                  Version="[SelectVersion]" />
+<PackageReference Include="Microsoft.Extensions.ServiceDiscovery" />
 ```
 
 ---
@@ -40,7 +37,7 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 
 ## Example usage
 
-In the _Program.cs_ file of your project, call the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryHttpClientBuilderExtensions.AddServiceDiscovery%2A> extension method to add service discovery to the host, configuring default service endpoint resolvers:
+In the _Program.cs_ file of your project, call the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryHttpClientBuilderExtensions.AddServiceDiscovery*> extension method to add service discovery to the host, configuring default service endpoint resolvers:
 
 ```csharp
 builder.Services.AddServiceDiscovery();
@@ -109,7 +106,7 @@ Here's an example demonstrating how to configure endpoints for the service named
 
 The preceding example adds two endpoints for the service named _catalog_: `https://localhost:8080`, and `"https://10.46.24.90:80"`. Each time the _catalog_ is resolved, one of these endpoints is selected.
 
-If service discovery was added to the host using the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddServiceDiscoveryCore%2A> extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddConfigurationServiceEndpointProvider%2A> extension method on `IServiceCollection`.
+If service discovery was added to the host using the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddServiceDiscoveryCore*> extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddConfigurationServiceEndpointProvider*> extension method on `IServiceCollection`.
 
 ### Configuration
 
@@ -119,12 +116,12 @@ The configuration resolver is configured using the <xref:Microsoft.Extensions.Se
 
 - **ApplyHostNameMetadata**: A delegate used to determine if host name metadata should be applied to resolved endpoints. It defaults to a function that returns `false`.
 
-To configure these options, you can use the `Configure` extension method on the `IServiceCollection` within your application's `Startup` class or `Program` file:
+To configure these options, you can call the <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*> extension method on the `IServiceCollection` within your application's `Startup` class or `Program` file:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
+builder.Services.Configure<ConfigurationServiceEndpointProviderOptions>(
     static options =>
     {
         options.SectionName = "MyServiceEndpoints";
@@ -149,8 +146,8 @@ The pass-through resolver performs no external resolution and instead resolves e
 
 The pass-through provider is configured by-default when adding service discovery via the `AddServiceDiscovery` extension method.
 
-If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on `IServiceCollection`, the pass-through provider can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddPassThroughServiceEndpointProvider%2A> extension method on `IServiceCollection`.
+If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on `IServiceCollection`, the pass-through provider can be added by calling the <xref:Microsoft.Extensions.DependencyInjection.ServiceDiscoveryServiceCollectionExtensions.AddPassThroughServiceEndpointProvider*> extension method on `IServiceCollection`.
 
 ## See also
 
-- [Service discovery in Aspire](/dotnet/aspire/service-discovery/overview)
+- [Service discovery in Aspire](https://aspire.dev/fundamentals/service-discovery/)

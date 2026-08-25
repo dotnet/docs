@@ -28,7 +28,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
 
 #### To demonstrate first-chance exception notifications in the default application domain
 
-1. Define an event handler for the <xref:System.AppDomain.FirstChanceException> event, using a lambda function, and attach it to the event. In this example, the event handler prints the name of the application domain where the event was handled and the exception's <xref:System.Exception.Message%2A> property.
+1. Define an event handler for the <xref:System.AppDomain.FirstChanceException> event, using a lambda function, and attach it to the event. In this example, the event handler prints the name of the application domain where the event was handled and the exception's <xref:System.Exception.Message> property.
 
      [!code-csharp[System.AppDomain.FirstChanceException_howto_simple#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto_simple/cs/example.cs#2)]
      [!code-vb[System.AppDomain.FirstChanceException_howto_simple#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto_simple/vb/example.vb#2)]
@@ -54,7 +54,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
 
 #### To receive first-chance exception notifications in an application domain that you create
 
-1. Define an event handler for the <xref:System.AppDomain.FirstChanceException> event. This example uses a `static` method (`Shared` method in Visual Basic) that prints the name of the application domain where the event was handled and the exception's <xref:System.Exception.Message%2A> property.
+1. Define an event handler for the <xref:System.AppDomain.FirstChanceException> event. This example uses a `static` method (`Shared` method in Visual Basic) that prints the name of the application domain where the event was handled and the exception's <xref:System.Exception.Message> property.
 
      [!code-csharp[System.AppDomain.FirstChanceException_howto#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/cs/example.cs#3)]
      [!code-vb[System.AppDomain.FirstChanceException_howto#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/vb/example.vb#3)]
@@ -64,7 +64,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
      [!code-csharp[System.AppDomain.FirstChanceException_howto#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/cs/example.cs#2)]
      [!code-vb[System.AppDomain.FirstChanceException_howto#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/vb/example.vb#2)]
 
-     You can handle this event in the default application domain in the same way. Use the `static` (`Shared` in Visual Basic) <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property in `Main()` to get a reference to the default application domain.
+     You can handle this event in the default application domain in the same way. Use the `static` (`Shared` in Visual Basic) <xref:System.AppDomain.CurrentDomain?displayProperty=nameWithType> property in `Main()` to get a reference to the default application domain.
 
 #### To demonstrate first-chance exception notifications in the application domain
 

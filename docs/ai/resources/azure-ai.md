@@ -9,4 +9,4 @@ ms.topic: reference
 
 This article contains an organized list of the best learning resources for .NET developers who are building AI apps using Azure services. Resources include popular quickstart articles, reference samples, documentation, and training courses.
 
-[!INCLUDE [include-file-from-azure-dev-docs-pr](~/azure-dev-docs-pr/articles/ai/includes/azure-ai-for-developers-dotnet.md)]
+[!INCLUDE [include-file-from-azure-dev-docs-pr](~/azure-dev-docs/articles/ai/includes/azure-ai-for-developers-dotnet.md)]

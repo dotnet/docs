@@ -12,7 +12,7 @@ The [`dotnet restore` command](../../../tools/dotnet-restore.md), which restores
 [NuGetAudit](../8.0/dotnet-restore-audit.md) was introduced in .NET 8 to emit warnings for packages with known security vulnerabilities.
 By default, only direct package references were audited, however, it was possible to change the `NuGetAuditMode` property to include all packages.
 
-In .NET 9 preview 6, NuGetAuditMode's default was changed to `all` for all projects, and this change was reverted back to `direct` in the .NET 9.0.101 SDK.
+In a .NET 9 preview version, NuGetAuditMode's default was changed to `all` for all projects, and this change was reverted back to `direct` in the .NET 9.0.101 SDK.
 
 ## New behavior
 

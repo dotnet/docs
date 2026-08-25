@@ -21,16 +21,16 @@ Const constantlist
 
 ## Parts
 
-`attributelist`  
+`attributelist`
 Optional. List of attributes that apply to all the constants declared in this statement. See [Attribute List](attribute-list.md) in angle brackets ("`<`" and "`>`").
 
-`accessmodifier`  
+`accessmodifier`
 Optional. Use this to specify what code can access these constants. Can be [Public](../modifiers/public.md), [Protected](../modifiers/protected.md), [Friend](../modifiers/friend.md), [Protected Friend](../modifiers/protected-friend.md), [Private](../modifiers/private.md), or [Private Protected](../modifiers/private-protected.md).
 
-`Shadows`  
+`Shadows`
 Optional. Use this to redeclare and hide a programming element in a base class. See [Shadows](../modifiers/shadows.md).
 
-`constantlist`  
+`constantlist`
 Required. List of constants being declared in this statement.
 
 `constant` `[ ,` `constant` `... ]`
@@ -97,12 +97,12 @@ If you define a constant with data type `Object`, the Visual Basic compiler give
 
 [!code-vb[VbVbalrStatements#87](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#87)]
 
-The preceding example uses the <xref:System.Type.ToString%2A> method on the <xref:System.Type> object returned by the [GetType Operator](../operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.
+The preceding example uses the <xref:System.Type.ToString*> method on the <xref:System.Type> object returned by the [GetType Operator](../operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
-- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Asc*>
+- <xref:Microsoft.VisualBasic.Strings.AscW*>
 - [Enum Statement](enum-statement.md)
 - [#Const Directive](../directives/const-directive.md)
 - [Dim Statement](dim-statement.md)

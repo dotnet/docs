@@ -1,12 +1,12 @@
 ---
 title: "Equality operators - test if two objects are equal or not equal"
-description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality"
-ms.date: 02/18/2025
+description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality. Learn how to implement value equality correctly in sealed types and unsealed class hierarchies."
+ms.date: 08/19/2026
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "==_CSharpKeyword"
   - "!=_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "comparison operators [C#]"
   - "relational operators [C#]"
   - "equality operator [C#]"
@@ -15,10 +15,14 @@ helpviewer_keywords:
   - "inequality operator [C#]"
   - "not equals operator [C#]"
   - "!= operator [C#]"
+  - "equality in class hierarchies [C#]"
+  - "polymorphic equality [C#]"
 ---
 # Equality operators - test if two objects are equal or not
 
 The [`==` (equality)](#equality-operator-) and [`!=` (inequality)](#inequality-operator-) operators check if their operands are equal or not. Value types are equal when their contents are equal. Reference types are equal when the two variables refer to the same storage.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 You can use the [`is`](./is.md) pattern matching operator as an alternative to an `==` test when you test against a [constant value](./patterns.md#constant-pattern). The `is` operator uses the default equality semantics for all value and reference types.
 
@@ -30,10 +34,10 @@ The equality operator `==` returns `true` if its operands are equal, `false` oth
 
 Operands of the [built-in value types](../builtin-types/value-types.md#built-in-value-types) are equal if their values are equal:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="ValueTypesEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="ValueTypesEquality":::
 
 > [!NOTE]
-> For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands isn't a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value isn't greater than, less than, or equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
+> For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands isn't a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That condition means that the `NaN` value isn't greater than, less than, or equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
 Two operands of the same [enum](../builtin-types/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
@@ -47,7 +51,7 @@ By default, reference-type operands, excluding records, are equal if they refer 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="ReferenceTypesEquality":::
 
-As the example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+As the preceding example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 
 ### Record types equality
 
@@ -55,46 +59,106 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
 
-As the preceding example shows, for reference-type members their reference values are compared, not the referenced instances.
+As the preceding example shows, the equality of reference-type members is compared using their specific equality implementations.
 
 ### String equality
 
 Two [string](../builtin-types/reference-types.md#the-string-type) operands are equal when both of them are `null` or both string instances are of the same length and have identical characters in each character position:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="StringEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="StringEquality":::
 
-String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../how-to/compare-strings.md).
+String equality comparisons are case-sensitive ordinal comparisons. For more information about string comparison, see [How to compare strings in C#](../../fundamentals/strings/common-tasks/compare.md).
 
 ### Delegate equality
 
-Two [delegate](../../programming-guide/delegates/index.md) operands of the same run-time type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
+Two [delegate](../../programming-guide/delegates/index.md) operands of the same run-time type are equal when both of them are `null` or their invocation lists are the same length and have equal entries in each position:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="DelegateEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="DelegateEquality":::
 
 > [!IMPORTANT]
 > Equal entries in an invocation list include all fixed parameters in the invocation, including the receiver. The receiver is the instance of an object represented by `this` when the entry is invoked.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="SnippetCheckReceiver":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="SnippetCheckReceiver":::
 
-For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12139-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12159-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-Delegates that are produced from evaluation of semantically identical [lambda expressions](lambda-expressions.md) aren't equal, as the following example shows:
+Delegates that come from evaluating semantically identical [lambda expressions](lambda-expressions.md) aren't equal, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="IdenticalLambdas":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="IdenticalLambdas":::
 
 ## Inequality operator `!=`
 
-The inequality operator `!=` returns `true` if its operands aren't equal, `false` otherwise. For the operands of the [built-in types](../builtin-types/built-in-types.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
+The inequality operator `!=` returns `true` if its operands aren't equal, and `false` otherwise. For the operands of the [built-in types](../builtin-types/built-in-types.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
 
-The following example demonstrates the usage of the `!=` operator:
+The following example demonstrates how to use the `!=` operator:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="NonEquality":::
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="NonEquality":::
+
+## Equality in class hierarchies
+
+Records handle inheritance correctly without manual work. The compiler-generated equality checks both runtime type and all declared properties, so it automatically satisfies the symmetry and transitivity requirements. Prefer `record` over a manual unsealed hierarchy when value equality is the goal.
+
+> [!IMPORTANT]
+> Use `record` whenever possible — the compiler generates all required equality members for you. Manual implementation is only needed when your type must derive from a non-record class or has other constraints that prevent `record`.
+
+### Implement equality yourself when a type can't be a record
+
+Here is a minimal manual implementation for a value type that can't be a record:
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="ColorDefinition":::
+
+The implementation provides three required members: `Equals(T?)` as the core comparison, `override Equals(object?)` for object-level calls, and `override GetHashCode()` so hash-based collections work correctly. `HashCode.Combine` is a library helper that builds one hash from the same values used by `Equals`. Implementing <xref:System.IEquatable`1> (the `Equals(T?)` overload) is optional but avoids boxing when callers already have the concrete type.
+
+When you also define `==` and `!=`, the language requires them as a pair; warnings [CS0660](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) and [CS0661](../../language-reference/compiler-messages/overloaded-operator-errors.md#equality-operators) remind you to keep all four members consistent.
+
+With the three members above in place, `Equals` reflects value equality, but `==` still tests identity because no `==` operator has been declared yet:
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="IEquatableUsage":::
+
+A correct implementation must also satisfy the *equivalence contract* (assume `x`, `y`, and `z` are non-null):
+
+1. **Reflexive**: `x.Equals(x)` returns `true`.
+2. **Symmetric**: `x.Equals(y)` returns the same value as `y.Equals(x)`.
+3. **Transitive**: if `x.Equals(y)` and `y.Equals(z)` are both `true`, then `x.Equals(z)` must be `true`.
+4. **Consistent**: successive calls to `x.Equals(y)` return the same value as long as neither object changes.
+5. **Null behavior**: `x.Equals(null)` returns `false`; `x.Equals(y)` must not throw when called on a non-null `x`.
+
+Value equality in an unsealed class hierarchy requires more care than in a sealed class to satisfy the symmetric and transitive rules. The hazard is that `IEquatable<T>.Equals(T? other)` dispatch follows the *declared type* (the type written in the variable declaration) of the variable, not its runtime type. If `Shape` declares a non-`virtual` `Equals(Shape? other)`, a variable typed as `Shape` that holds a `Circle` at runtime invokes `Shape.Equals`—silently ignoring `Circle`-specific fields. Two `Circle` objects with different radii can compare as equal when accessed through a `Shape` variable.
+
+The correct pattern requires two cooperating requirements: make the typed `Equals` method `virtual` so each derived class can extend the comparison, and add a `GetType() == other.GetType()` guard in the base-class implementation so objects of different runtime types are never considered equal.
+
+### Base class implementation
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="HierarchyShapeDefinition":::
+
+Key points:
+
+- **`virtual` typed `Equals`**: each derived class overrides this method to augment the comparison with its own fields.
+- **`GetType()` guard**: `GetType() == other.GetType()` prevents a `Circle` from equaling a `Shape` with the same color, and prevents objects of different derived types from equaling each other.
+- **`GetHashCode` includes `GetType()`**: because two objects are equal only when their runtime types match, `GetHashCode` must hash the runtime type as well as the data fields. Omitting `GetType()` here causes incorrect behavior in `Dictionary<TKey,TValue>` and `HashSet<T>`.
+- **`==` delegates to `Equals`**: keeps operator and method equality consistent.
+
+### Derived class implementation
+
+A derived class that adds fields overrides the typed `Equals`, casts to its own type, calls `base.Equals`, then compares its own fields:
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="HierarchyCircleDefinition":::
+
+`base.Equals(c)` enforces the `GetType()` guard and checks the shared fields. The cast via `other is Circle c` fails fast when the argument is a `Shape` of any other derived type.
+
+### Usage through a base-type variable
+
+:::code language="csharp" source="snippets/EqualityHierarchies/Program.cs" id="HierarchyUsage":::
+
+### Sealed classes are simpler
+
+You can't subclass a `sealed` class, so compile-time and runtime types always agree. You don't need the `GetType()` guard or `virtual` dispatch. The `IEquatable<T>` pattern shown in [Implement equality yourself when a type can't be a record](#implement-equality-yourself-when-a-type-cant-be-a-record) is correct and complete for a sealed class.
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `==` and `!=` operators. If a type overloads one of the two operators, it must also overload the other one.
+You can [overload](operator-overloading.md) the `==` and `!=` operators in a user-defined type. If you overload one of these two operators, you must also overload the other operator.
 
-A record type can't explicitly overload the `==` and `!=` operators. If you need to change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method with the following signature:
+You can't explicitly overload the `==` and `!=` operators in a record type. To change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable`1.Equals*?displayProperty=nameWithType> method with the following signature:
 
 ```csharp
 public virtual bool Equals(T? other);
@@ -102,15 +166,15 @@ public virtual bool Equals(T? other);
 
 ## C# language specification
 
-For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1213-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1215-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about equality of record types, see the [Equality members](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) section of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md).
+For more information about equality of record types, see the [Equality members](~/_csharpstandard/standard/classes.md#151643-equality-members) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
 - [C# operators and expressions](index.md)
-- <xref:System.IEquatable%601?displayProperty=nameWithType>
-- <xref:System.Object.Equals%2A?displayProperty=nameWithType>
-- <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>
-- [Equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md)
+- <xref:System.IEquatable`1?displayProperty=nameWithType>
+- <xref:System.Object.Equals*?displayProperty=nameWithType>
+- <xref:System.Object.ReferenceEquals*?displayProperty=nameWithType>
+- [Equality comparisons](../../fundamentals/expressions/equality.md)
 - [Comparison operators](comparison-operators.md)

@@ -11,7 +11,7 @@ This topic discusses best practices for reliable sessions.
 
 ## Setting MaxTransferWindowSize
 
-Reliable sessions in Windows Communication Foundation (WCF) use a transfer window to hold messages on the client and service. The configurable property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indicates how many messages the transfer window can hold.
+Reliable sessions in Windows Communication Foundation (WCF) use a transfer window to hold messages on the client and service. The configurable property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize*> indicates how many messages the transfer window can hold.
 
 On the sender, this indicates how many messages the transfer window can hold while waiting for acknowledgements; on the receiver, it indicates how many messages to buffer for the service.
 
@@ -25,7 +25,7 @@ In this context, the term *network* corresponds to everything used as the basis 
 
 Efficient use of the network ensures that network capacity is fully used. Both the amount of data that can be transferred per second over the network (*data rate*) and the time it takes to transfer data from the sender to the receiver (*latency*) impact how effectively the network is utilized.
 
-On the sender, the property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indicates how many messages its transfer window can hold while waiting for acknowledgements. If the network latency is high and in order to ensure a responsive sender and effective network utilization, you should increase the transfer window size.
+On the sender, the property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize*> indicates how many messages its transfer window can hold while waiting for acknowledgements. If the network latency is high and in order to ensure a responsive sender and effective network utilization, you should increase the transfer window size.
 
 For example even if the sender keeps up with data rate, latency could be high if several intermediaries exist between the sender and receiver or the data must pass through a lossy intermediary or network. Thus, the sender has to wait for acknowledgements for the messages in its transfer window before accepting new messages to send on the wire. The smaller the buffer with high latency, the less effective the network utilization. On the other hand, too high a transfer window size may impact the service because the service may need to catch up to the high rate of data sent by the client.
 
@@ -41,7 +41,7 @@ We recommended that you use the same `MaxTransferWindowSize` on both the sender 
 
 *Flow control* is a mechanism that ensures that the sender and receiver keep pace with each other, that is, the messages are consumed and acted upon as fast as they're produced. The transfer window size on the client and service ensures that the sender and receiver are within a reasonable window of synchronization.
 
-We highly recommended that you set the property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled%2A> to `true` when you're using a reliable session between a WCF client and a WCF service.
+We highly recommended that you set the property <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled*> to `true` when you're using a reliable session between a WCF client and a WCF service.
 
 ## Setting MaxPendingChannels
 
@@ -55,7 +55,7 @@ It's also possible that the pending channels in the queue remain in the queue fo
 
 When writing a service that services multiple clients simultaneously, you should set a value that's suitable for your needs. Setting too high a value for the `MaxPendingChannels` property impacts your working set.
 
-The default value for <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxPendingChannels%2A> is four channels.
+The default value for <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxPendingChannels*> is four channels.
 
 ## Reliable sessions and hosting
 

@@ -14,9 +14,9 @@ In .NET Framework, there is no way to unload an individual assembly without unlo
 
 To load an assembly into an application domain, use one of the several load methods contained in the classes <xref:System.AppDomain> and <xref:System.Reflection.Assembly>. For more information, see [How to: Load assemblies into an application domain](../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md). Note that .NET Core supports only a single application domain.
 
-To unload an assembly in the .NET Framework, you must unload all of the application domains that contain it. To unload an application domain, use the <xref:System.AppDomain.Unload%2A?displayProperty=nameWithType> method. For more information, see [How to: Unload an application domain](../../framework/app-domains/how-to-unload-an-application-domain.md).
+To unload an assembly in the .NET Framework, you must unload all of the application domains that contain it. To unload an application domain, use the <xref:System.AppDomain.Unload*?displayProperty=nameWithType> method. For more information, see [How to: Unload an application domain](../../framework/app-domains/how-to-unload-an-application-domain.md).
 
-If you want to unload some assemblies but not others in a .NET Framework application, consider creating a new application domain, executing the code inside that domain, and then unloading that application domain. For more information, see [How to: Unload an application domain](../../framework/app-domains/how-to-unload-an-application-domain.md).  
+If you want to unload some assemblies but not others in a .NET Framework application, consider creating a new application domain, executing the code inside that domain, and then unloading that application domain. For more information, see [How to: Unload an application domain](../../framework/app-domains/how-to-unload-an-application-domain.md).
 
 ## See also
 

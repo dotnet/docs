@@ -32,7 +32,7 @@ It's better to signal to the user that the operation cannot be performed instead
 
 If a ping payload is necessary, run the application as `root`, or grant the `cap_net_raw` capability using the `setcap` utility.
 
-Otherwise, use an overload of <xref:System.Net.NetworkInformation.Ping.SendPingAsync%2A?displayProperty=nameWithType> that does not accept a custom payload, or pass in an empty array.
+Otherwise, use an overload of <xref:System.Net.NetworkInformation.Ping.SendPingAsync*?displayProperty=nameWithType> that does not accept a custom payload, or pass in an empty array.
 
 ## Affected APIs
 

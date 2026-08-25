@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to retrieve a collection of elements (LINQ to XML)
 
-This article demonstrates the <xref:System.Xml.Linq.XContainer.Elements%2A> method, which retrieves a collection of the child elements of an element.
+This article demonstrates the <xref:System.Xml.Linq.XContainer.Elements*> method, which retrieves a collection of the child elements of an element.
 
 ## Example: Iterate through the child elements of an element
 

@@ -3,7 +3,7 @@ title: Troubleshoot .NET package mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
 ms.author: adegeo
-ms.date: 11/04/2024
+ms.date: 04/23/2026
 ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 zone_pivot_groups: operating-systems-set-two
@@ -263,7 +263,6 @@ Many other users have reported these problems. The following is a list of those 
 
 - Generic errors without clear messages
 
-  - [Core #4605: cannot run "dotnet new console"](https://github.com/dotnet/core/issues/4605)
   - [Core #4644: Cannot install .NET Core SDK 2.1 on Fedora 32](https://github.com/dotnet/core/issues/4655)
   - [Runtime #49375: After updating to 5.0.200-1 using package manager, it appears that no sdks are installed](https://github.com/dotnet/runtime/issues/49375)
   - [Installer #16438: The application '--version' does not exist](https://github.com/dotnet/installer/issues/16438)

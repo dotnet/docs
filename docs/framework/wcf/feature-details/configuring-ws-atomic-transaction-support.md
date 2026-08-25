@@ -36,13 +36,13 @@ To register the product, execute the following command from a Command Prompt win
 
 To enable the WS-AT protocol service inside MSDTC using port 443 and an X.509 certificate with a private key that has been installed in the local machine store, use the wsatConfig.exe tool with the following command.
 
-`WsatConfig.exe –network:enable –port:8443 –endpointCert:<machine|"Issuer\SubjectName"> -accountsCerts:<thumbprint|"Issuer\SubjectName"> -restart`
+`WsatConfig.exe -network:enable -port:8443 -endpointCert:<machine|"Issuer\SubjectName"> -accountsCerts:<thumbprint|"Issuer\SubjectName"> -restart`
 
 Substitute the respective parameters with values relevant to your environment.
 
 To disable the WS-AT protocol service inside MSDTC, use the wsatConfig.exe tool with the following command.
 
-`WsatConfig.exe –network:disable -restart`
+`WsatConfig.exe -network:disable -restart`
 
 ## Configure trust between two machines
 

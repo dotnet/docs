@@ -11,7 +11,7 @@ NuGet packages or other libraries that don't contribute any runtime assets are n
 
 ## Version introduced
 
-.NET 10 Preview 5
+.NET 10
 
 ## Previous behavior
 

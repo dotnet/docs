@@ -936,7 +936,7 @@ module ImplementingInterfaces =
 
 
     /// This is an object that implements IDisposable via an Object Expression
-    /// Unlike other languages such as C# or Java, a new type definition is not needed
+    /// Unlike other languages, such as C#, a new type definition is not needed
     /// to implement an interface.
     let interfaceImplementation =
         { new System.IDisposable with

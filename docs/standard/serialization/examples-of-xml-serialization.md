@@ -339,13 +339,13 @@ public class Employees : ICollection
     {
         empArray.CopyTo(a, index);
     }
-    
+
     public int Count => empArray.Count;
-    
+
     public object SyncRoot => this;
-    
+
     public bool IsSynchronized => false;
-    
+
     public IEnumerator GetEnumerator() => empArray.GetEnumerator();
 
     public void Add(Employee newEmployee)
@@ -358,9 +358,9 @@ public class Employee
 {
     public string EmpName;
     public string EmpID;
-    
+
     public Employee() {}
-    
+
     public Employee(string empName, string empID)
     {
         EmpName = empName;
@@ -373,7 +373,7 @@ public class Employee
 
 You can cut and paste the following example code into a text file and rename it with a .cs or .vb file name extension. Use the C# or Visual Basic compiler to compile the file. Then run it using the name of the executable.
 
-This example uses a simple scenario to demonstrate how an instance of an object is created and serialized into a file stream using the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method. The XML stream is saved to a file. The same file is then read and reconstructed into a copy of the original object using the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.
+This example uses a simple scenario to demonstrate how an instance of an object is created and serialized into a file stream using the <xref:System.Xml.Serialization.XmlSerializer.Serialize*> method. The XML stream is saved to a file. The same file is then read and reconstructed into a copy of the original object using the <xref:System.Xml.Serialization.XmlSerializer.Deserialize*> method.
 
 In this example, a class named `PurchaseOrder` is serialized and then deserialized. A second class named `Address` is also included because the public field named `ShipTo` must be set to an `Address`. Similarly, an `OrderedItem` class is included because an array of `OrderedItem` objects must be set to the `OrderedItems` field. Finally, a class named `Test` contains the code that serializes and deserializes the classes.
 
@@ -382,7 +382,7 @@ The `CreatePO` method creates the `PurchaseOrder`, `Address`, and `OrderedItem` 
 > [!NOTE]
 > The code passes the type of class that will be serialized to the constructor. The code also creates a `FileStream` that's used to write the XML stream to an XML document.
 
-The `ReadPo` method is a little simpler. It just creates objects to deserialize and reads out their values. As with the `CreatePo` method, you must first construct an <xref:System.Xml.Serialization.XmlSerializer>, passing the type of class to be deserialized to the constructor. Also, a <xref:System.IO.FileStream> is required to read the XML document. To deserialize the objects, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method with the <xref:System.IO.FileStream> as an argument. The deserialized object must be cast to an object variable of type `PurchaseOrder`. The code then reads the values of the deserialized `PurchaseOrder`.
+The `ReadPo` method is a little simpler. It just creates objects to deserialize and reads out their values. As with the `CreatePo` method, you must first construct an <xref:System.Xml.Serialization.XmlSerializer>, passing the type of class to be deserialized to the constructor. Also, a <xref:System.IO.FileStream> is required to read the XML document. To deserialize the objects, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize*> method with the <xref:System.IO.FileStream> as an argument. The deserialized object must be cast to an object variable of type `PurchaseOrder`. The code then reads the values of the deserialized `PurchaseOrder`.
 
 > [!NOTE]
 > You can read the *PO.xml* file that's created to see the actual XML output.

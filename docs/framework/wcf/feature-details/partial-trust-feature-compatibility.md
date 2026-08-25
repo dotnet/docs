@@ -16,7 +16,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 - Internet Zone permissions
 
- Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at run time.
+ Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.
 
 ## Contracts
 
@@ -56,7 +56,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 ### Security
 
- Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at run time.
+ Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.
 
 ### Unsupported Bindings
 
@@ -80,13 +80,13 @@ WCF supports a subset of features in applications running under either of the fo
 
 ### Collection Types
 
- Some collection types implement both <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.IEnumerable>. Examples include types that implement <xref:System.Collections.Generic.ICollection%601>. Such types can implement a `public` implementation of `GetEnumerator()`, and an explicit implementation of `GetEnumerator()`. In this case, <xref:System.Runtime.Serialization.DataContractSerializer> invokes the `public` implementation of `GetEnumerator()`, and not the explicit implementation of `GetEnumerator()`. If none of the `GetEnumerator()` implementations are `public` and all are explicit implementations, then <xref:System.Runtime.Serialization.DataContractSerializer> invokes `IEnumerable.GetEnumerator()`.
+ Some collection types implement both <xref:System.Collections.Generic.IEnumerable`1> and <xref:System.Collections.IEnumerable>. Examples include types that implement <xref:System.Collections.Generic.ICollection`1>. Such types can implement a `public` implementation of `GetEnumerator()`, and an explicit implementation of `GetEnumerator()`. In this case, <xref:System.Runtime.Serialization.DataContractSerializer> invokes the `public` implementation of `GetEnumerator()`, and not the explicit implementation of `GetEnumerator()`. If none of the `GetEnumerator()` implementations are `public` and all are explicit implementations, then <xref:System.Runtime.Serialization.DataContractSerializer> invokes `IEnumerable.GetEnumerator()`.
 
  For collection types when WCF is running in a partial trust environment, if none of the `GetEnumerator()` implementations are `public`, or none of them are explicit interface implementations, then a security exception is thrown.
 
 ### NetDataContractSerializer
 
- Many .NET Framework collection types such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ArrayList>, <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Hashtable> are not supported by the <xref:System.Runtime.Serialization.NetDataContractSerializer> in partial trust. These types have the `[Serializable]` attribute set, and as stated previously in the Serialization section, this attribute is not supported in partial trust. The <xref:System.Runtime.Serialization.DataContractSerializer> treats collections in a special way and is thus able to get around this restriction, but the <xref:System.Runtime.Serialization.NetDataContractSerializer> has no such mechanism to circumvent this restriction.
+ Many .NET Framework collection types such as <xref:System.Collections.Generic.List`1>, <xref:System.Collections.ArrayList>, <xref:System.Collections.Generic.Dictionary`2> and <xref:System.Collections.Hashtable> are not supported by the <xref:System.Runtime.Serialization.NetDataContractSerializer> in partial trust. These types have the `[Serializable]` attribute set, and as stated previously in the Serialization section, this attribute is not supported in partial trust. The <xref:System.Runtime.Serialization.DataContractSerializer> treats collections in a special way and is thus able to get around this restriction, but the <xref:System.Runtime.Serialization.NetDataContractSerializer> has no such mechanism to circumvent this restriction.
 
  The <xref:System.DateTimeOffset> type is not supported by the <xref:System.Runtime.Serialization.NetDataContractSerializer> in partial trust.
 
@@ -168,7 +168,7 @@ WCF supports a subset of features in applications running under either of the fo
 
 - Performance counters
 
- Use of WCF features that are not supported in a partial trust environment may result in exceptions at run time.
+ Use of WCF features that are not supported in a partial trust environment may result in exceptions at runtime.
 
 ## Unlisted Features
 

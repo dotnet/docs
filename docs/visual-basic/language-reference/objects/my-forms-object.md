@@ -21,7 +21,7 @@ You can access the forms provided by the `My.Forms` object by using the name of 
 
 The `My.Forms` object exposes only the forms associated with the current project. It does not provide access to forms declared in referenced DLLs. To access a form that a DLL provides, you must use the qualified name of the form, written as *DllName*.*FormName*.
 
-You can use the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A> property to get a collection of all the application's open forms.
+You can use the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms> property to get a collection of all the application's open forms.
 
 The object and its properties are available only for Windows applications.
 
@@ -34,7 +34,7 @@ Each property of the `My.Forms` object provides access to an instance of a form 
 
 The `My.Forms` object provides access to the instance of the application's main form that was created on startup. For all other forms, the `My.Forms` object creates a new instance of the form when it is accessed and stores it. Subsequent attempts to access that property return that instance of the form.
 
-You can dispose of a form by assigning `Nothing` to the property for that form. The property setter calls the <xref:System.Windows.Forms.Form.Close%2A> method of the form, and then assigns `Nothing` to the stored value. If you assign any value other than `Nothing` to the property, the setter throws an <xref:System.ArgumentException> exception.
+You can dispose of a form by assigning `Nothing` to the property for that form. The property setter calls the <xref:System.Windows.Forms.Form.Close*> method of the form, and then assigns `Nothing` to the stored value. If you assign any value other than `Nothing` to the property, the setter throws an <xref:System.ArgumentException> exception.
 
 You can test whether a property of the `My.Forms` object stores an instance of the form by using the `Is` or `IsNot` operator. You can use those operators to check if the value of the property is `Nothing`.
 
@@ -67,9 +67,9 @@ This code will work only in a Windows Application project.
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms*>
 - <xref:System.Windows.Forms.Form>
-- <xref:System.Windows.Forms.Form.Close%2A>
+- <xref:System.Windows.Forms.Form.Close*>
 - [Objects](index.md)
 - [Is Operator](../operators/is-operator.md)
 - [IsNot Operator](../operators/isnot-operator.md)

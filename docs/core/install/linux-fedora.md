@@ -3,7 +3,7 @@ title: Install .NET on Fedora
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/01/2024
+ms.date: 04/23/2026
 ms.custom: linux-related-content
 ---
 
@@ -22,12 +22,18 @@ For more information on installing .NET without a package manager, see one of th
 
 The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
-| Fedora | .NET          |
-|--------|---------------|
-| 41     | 9.0, 8.0      |
-| 40     | 9.0, 8.0      |
+| Fedora | .NET     |
+|--------|----------|
+| 44     | 10, 9, 8 |
+| 43     | 10, 9, 8 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
 
 # [.NET 9](#tab/dotnet9)
 
@@ -49,7 +55,23 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Dependencies
 
-[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
+.NET depends on various Linux packages for different functionality. The following packages are required:
+
+- glibc
+- libgcc
+- ca-certificates
+- openssl-libs
+- libstdc++
+- libicu
+- tzdata
+- krb5-libs
+- zlib (required for .NET 8 only)
+
+You can install all the required packages with the following command:
+
+```bash
+sudo dnf install -y glibc libgcc ca-certificates openssl-libs libstdc++ libicu tzdata krb5-libs zlib
+```
 
 ## How to install other versions
 
@@ -78,4 +100,4 @@ For more information about solving these problems, see [Troubleshoot `fxr`, `lib
 
 - [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
-- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET](../tutorials/create-console-app.md)

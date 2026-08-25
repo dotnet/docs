@@ -8,7 +8,7 @@ ms.custom: "pos-restored-from-archive"
 
 # POS Exception Handling (POS for .NET v1.14 SDK Documentation)
 
-Error handling in Microsoft Point of Service for .NET (POS for .NET) is built on the object-oriented model of throwing and catching exceptions. Different exceptions are thrown in response to run-time errors, and each exception contains information about the error that triggered it in the form of an <xref:Microsoft.PointOfService.ErrorCode>.
+Error handling in Microsoft Point of Service for .NET (POS for .NET) is built on the object-oriented model of throwing and catching exceptions. Different exceptions are thrown in response to runtime errors, and each exception contains information about the error that triggered it in the form of an <xref:Microsoft.PointOfService.ErrorCode>.
 
 The **ErrorCode** property of a thrown exception holds information about the cause of the error. Possible values for this property represent the full set of standard Unified Point Of Service (UnifiedPOS) error codes. For more information about the mapping between UnifiedPOS error codes and the POS for .NET **ErrorCode** values, see POS for .NET [Exception Classes](exception-classes.md).
 

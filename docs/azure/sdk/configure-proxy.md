@@ -1,5 +1,5 @@
 ---
-title: Configure a proxy when using the Azure SDK for .NET 
+title: Configure a proxy when using the Azure SDK for .NET
 description: Learn different approaches for configuring a proxy for use with the Azure SDK for .NET client libraries.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23
@@ -20,7 +20,7 @@ The proxy can be configured via code or via an environment variable. The approac
 To programmatically configure a proxy, complete the following steps:
 
 1. Create an <xref:System.Net.Http.HttpClientHandler> object whose `Proxy` property is set.
-1. Create a service client options object whose <xref:Azure.Core.ClientOptions.Transport%2A> property is set to an `HttpClientTransport` object accepting the `HttpClientHandler` instance.
+1. Create a service client options object whose <xref:Azure.Core.ClientOptions.Transport> property is set to an `HttpClientTransport` object accepting the `HttpClientHandler` instance.
 1. Pass the service client options object to the service client constructor.
 
 Using the Azure Key Vault Secrets library as an example, you'd have the following code:

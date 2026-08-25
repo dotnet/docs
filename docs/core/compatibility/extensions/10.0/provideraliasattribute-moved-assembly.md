@@ -11,7 +11,7 @@ The <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> attribute has bee
 
 ## Version introduced
 
-.NET 10 Preview 4
+.NET 10
 
 ## Previous behavior
 

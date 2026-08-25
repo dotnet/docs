@@ -2,7 +2,7 @@
 description: "Learn more about: Efficient Use of Data Types (Visual Basic)"
 title: "Efficient Use of Data Types"
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "performance, data type efficiency"
   - "data types [Visual Basic], weak typing"
   - "AscW function [Visual Basic], preferred to Asc"
@@ -50,10 +50,10 @@ Protected s As String
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
-- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
-- <xref:Microsoft.VisualBasic.Strings.Chr%2A>
-- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Asc*>
+- <xref:Microsoft.VisualBasic.Strings.AscW*>
+- <xref:Microsoft.VisualBasic.Strings.Chr*>
+- <xref:Microsoft.VisualBasic.Strings.ChrW*>
 - [Data Types](index.md)
 - [Numeric Data Types](numeric-data-types.md)
 - [Variable Declaration](../variables/variable-declaration.md)

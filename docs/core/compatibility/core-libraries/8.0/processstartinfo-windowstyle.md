@@ -49,4 +49,4 @@ This change affects code that specified <xref:System.Diagnostics.ProcessStartInf
 
 ## Affected APIs
 
-- <xref:System.Diagnostics.Process.Start%2A?displayName=fullName>
+- <xref:System.Diagnostics.Process.Start*?displayName=fullName>

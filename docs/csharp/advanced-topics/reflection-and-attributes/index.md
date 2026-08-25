@@ -16,7 +16,7 @@ Attributes have the following properties:
 
 ## Work with reflection
 
-[Reflection](../../../fundamentals/reflection/reflection.md) APIs provided by <xref:System.Type> describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. When you use attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
+[Reflection](../../../fundamentals/reflection/overview.md) APIs provided by <xref:System.Type> describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. When you use attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
 
 Here's a simple example of reflection with the <xref:System.Object.GetType> method. All types from the `Object` base class inherit this method, which is used to obtain the type of a variable:
 
@@ -45,8 +45,8 @@ System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d
 
 The C# keywords `protected` and `internal` have no meaning in Intermediate Language (IL) and aren't used in the reflection APIs. The corresponding terms in IL are *Family* and *Assembly*. Here some ways you can use these terms:
 
-- To identify an `internal` method by using reflection, use the <xref:System.Reflection.MethodBase.IsAssembly%2A> property.
-- To identify a `protected internal` method, use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>.
+- To identify an `internal` method by using reflection, use the <xref:System.Reflection.MethodBase.IsAssembly> property.
+- To identify a `protected internal` method, use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly*>.
 
 ## Work with attributes
 
@@ -133,7 +133,7 @@ The following table shows the list of possible `target` values.
 | `module`     | Current assembly module                                                |
 | `field`      | Field in a class or a struct                                           |
 | `event`      | Event                                                                  |
-| `method`     | Method or `get` and `set` property accessors                           |
+| `method`     | Method, constructor (including a primary constructor), or `get` and `set` property accessors |
 | `param`      | Method parameters or `set` property accessor parameters                |
 | `property`   | Property                                                               |
 | `return`     | Return value of a method, property indexer, or `get` property accessor |
@@ -187,7 +187,7 @@ Reflection is useful in the following scenarios:
 - [Common attributes (C#)](../../language-reference/attributes/global.md)
 - [Caller information (C#)](../../language-reference/attributes/caller-information.md)
 - [Attributes](../../../standard/attributes/index.md)
-- [Reflection](../../../fundamentals/reflection/reflection.md)
+- [Reflection](../../../fundamentals/reflection/overview.md)
 - [View type information](../../../fundamentals/reflection/viewing-type-information.md)
 - [Reflection and generic types](../../../fundamentals/reflection/reflection-and-generic-types.md)
 - <xref:System.Reflection.Emit>

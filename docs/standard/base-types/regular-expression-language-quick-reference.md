@@ -101,7 +101,7 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 ### Lookarounds at a glance
 
 When the regular expression engine hits a **lookaround expression**, it takes a substring reaching from the current position to the start (lookbehind) or end (lookahead) of the original string, and then runs
-<xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> on that substring using the lookaround pattern. Success of this subexpression's result is then determined by whether it's a positive or negative assertion.
+<xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> on that substring using the lookaround pattern. Success of this subexpression's result is then determined by whether it's a positive or negative assertion.
 
 | Lookaround   | Name                     | Function                                                                                 |
 |--------------|--------------------------|------------------------------------------------------------------------------------------|

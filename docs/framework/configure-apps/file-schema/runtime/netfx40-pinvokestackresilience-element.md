@@ -7,13 +7,13 @@ helpviewer_keywords:
   - "NetFx40_PInvokeStackResilience element"
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
 ---
-# \<NetFx40_PInvokeStackResilience> Element
+# `<NetFx40_PInvokeStackResilience>` Element
 
-Specifies whether the runtime automatically fixes incorrect platform invoke declarations at run time, at the cost of slower transitions between managed and unmanaged code.
+Specifies whether the runtime automatically fixes incorrect platform invoke declarations at runtime, at the cost of slower transitions between managed and unmanaged code.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_PInvokeStackResilience>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<NetFx40_PInvokeStackResilience>`
 
 ## Syntax
 
@@ -29,7 +29,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |Attribute|Description|
 |---------------|-----------------|
-|`enabled`|Required attribute.<br /><br /> Specifies whether the runtime detects incorrect platform invoke declarations and automatically fixes the stack at run time on 32-bit platforms.|
+|`enabled`|Required attribute.<br /><br /> Specifies whether the runtime detects incorrect platform invoke declarations and automatically fixes the stack at runtime on 32-bit platforms.|
 
 ## enabled Attribute
 
@@ -51,7 +51,7 @@ None.
 
 ## Remarks
 
-This element enables you to trade faster interop marshalling for run-time resilience against incorrect platform invoke declarations.
+This element enables you to trade faster interop marshalling for runtime resilience against incorrect platform invoke declarations.
 
 Starting with the .NET Framework 4, a streamlined interop marshalling architecture provides a significant performance improvement for transitions from managed code to unmanaged code. In earlier versions of the .NET Framework, the marshalling layer detected incorrect platform invoke declarations on 32-bit platforms and automatically fixed the stack. The new marshalling architecture eliminates this step. As a result, transitions are very fast, but an incorrect platform invoke declaration can cause a program failure.
 

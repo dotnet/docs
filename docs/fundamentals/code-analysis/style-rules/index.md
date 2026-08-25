@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 05/20/2025
+ms.date: 07/09/2026
 author: gewarren
 ms.author: gewarren
 ---
@@ -37,12 +37,12 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | - | - | - |
 > | [IDE0001](ide0001.md) | Simplify name | |
 > | [IDE0002](ide0002.md) | Simplify member access | |
-> | [IDE0003](ide0003-ide0009.md) | Remove `this` or `Me` qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
+> | [IDE0003](ide0003-ide0009.md) | Name can be simplified | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
 > | [IDE0004](ide0004.md) | Remove unnecessary cast | |
 > | [IDE0005](ide0005.md) | Remove unnecessary import | |
 > | [IDE0007](ide0007-ide0008.md) | Use `var` instead of explicit type | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
 > | [IDE0008](ide0007-ide0008.md) | Use explicit type instead of `var` | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
-> | [IDE0009](ide0003-ide0009.md) | Add `this` or `Me` qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
+> | [IDE0009](ide0003-ide0009.md) | Member access should be qualified | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
 > | [IDE0010](ide0010.md) | Add missing cases to switch statement | |
 > | [IDE0011](ide0011.md) | Add braces | [csharp_prefer_braces](ide0011.md#csharp_prefer_braces) |
 > | [IDE0016](ide0016.md) | Use throw expression | [csharp_style_throw_expression](ide0016.md#csharp_style_throw_expression) |
@@ -72,6 +72,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0040](ide0040.md) | Add accessibility modifiers | [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers) |
 > | [IDE0041](ide0041.md) | Use is null check | [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method) |
 > | [IDE0042](ide0042.md) | Deconstruct variable declaration | [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration) |
+> | [IDE0043](ide0043.md) | Invalid format string | |
 > | [IDE0044](ide0044.md) | Add readonly modifier | [dotnet_style_readonly_field](ide0044.md#dotnet_style_readonly_field) |
 > | [IDE0045](ide0045.md) | Use conditional expression for assignment | [dotnet_style_prefer_conditional_expression_over_assignment](ide0045.md#dotnet_style_prefer_conditional_expression_over_assignment) |
 > | [IDE0046](ide0046.md) | Use conditional expression for return | [dotnet_style_prefer_conditional_expression_over_return](ide0046.md#dotnet_style_prefer_conditional_expression_over_return) |
@@ -95,7 +96,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0064](ide0064.md) | Make struct fields writable | |
 > | [IDE0065](ide0065.md) | `using` directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
 > | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
-> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine%2A?displayProperty=fullName> | |
+> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine*?displayProperty=fullName> | [dotnet_prefer_system_hash_code](ide0070.md#dotnet_prefer_system_hash_code) |
 > | [IDE0071](ide0071.md) | Simplify interpolation | [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation) |
 > | [IDE0072](ide0072.md) | Add missing cases to switch expression | |
 > | [IDE0073](ide0073.md) | Use file header | [file_header_template](ide0073.md#file_header_template) |
@@ -126,6 +127,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0210](ide0210.md) | Convert to top-level statements | [csharp_style_prefer_top_level_statements](ide0210.md#csharp_style_prefer_top_level_statements) |
 > | [IDE0211](ide0211.md) | Convert to 'Program.Main' style program | [csharp_style_prefer_top_level_statements](ide0211.md#csharp_style_prefer_top_level_statements) |
 > | [IDE0220](ide0220.md) | Add explicit cast in foreach loop | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
+> | [IDE0221](ide0221.md) | Add explicit cast | [dotnet_style_prefer_non_hidden_explicit_cast_in_source](ide0221.md#dotnet_style_prefer_non_hidden_explicit_cast_in_source) |
 > | [IDE0230](ide0230.md) | Use UTF-8 string literal | [csharp_style_prefer_utf8_string_literals](ide0230.md#csharp_style_prefer_utf8_string_literals) |
 > | [IDE0240](ide0240.md) | Nullable directive is redundant | |
 > | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |
@@ -146,8 +148,15 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0330](ide0330.md) | Prefer 'System.Threading.Lock' | [csharp_prefer_system_threading_lock](ide0330.md#csharp_prefer_system_threading_lock) |
 > | [IDE0340](ide0340.md) | Use unbound generic type | [csharp_style_prefer_unbound_generic_type_in_nameof](ide0340.md#csharp_style_prefer_unbound_generic_type_in_nameof) |
 > | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
+> | [IDE0360](ide0360.md) | Simplify property accessor | [csharp_style_prefer_simple_property_accessors](ide0360.md#csharp_style_prefer_simple_property_accessors) |
+> | [IDE0370](ide0370.md) | Remove unnecessary suppression | |
+> | [IDE0380](ide0380.md) | Remove unnecessary 'unsafe' modifier | |
+> | [IDE0390](ide0390-ide0391.md) | Make method synchronous | |
+> | [IDE0391](ide0390-ide0391.md) | Make method synchronous | |
+> | [IDE0410](ide0410.md) | Use labeled jump statement | [csharp_style_prefer_labeled_jump_statements](ide0410.md#csharp_style_prefer_labeled_jump_statements) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
+> | [IDE1007](ide1007.md) | The name does not exist in the current context | |
 > | [IDE2000](ide2000.md) | Avoid multiple blank lines | [dotnet_style_allow_multiple_blank_lines_experimental](ide2000.md#dotnet_style_allow_multiple_blank_lines_experimental)† |
 > | [IDE2001](ide2001.md) | Embedded statements must be on their own line | [csharp_style_allow_embedded_statements_on_same_line_experimental](ide2001.md#csharp_style_allow_embedded_statements_on_same_line_experimental)† |
 > | [IDE2002](ide2002.md) | Consecutive braces must not have blank line between them | [csharp_style_allow_blank_lines_between_consecutive_braces_experimental](ide2002.md#csharp_style_allow_blank_lines_between_consecutive_braces_experimental)† |

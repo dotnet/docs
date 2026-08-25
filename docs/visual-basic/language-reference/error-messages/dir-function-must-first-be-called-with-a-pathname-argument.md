@@ -16,4 +16,4 @@ An initial call to the `Dir` function does not include the `PathName` argument. 
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.FileSystem.Dir%2A>
+- <xref:Microsoft.VisualBasic.FileSystem.Dir*>

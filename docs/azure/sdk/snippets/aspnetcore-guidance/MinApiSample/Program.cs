@@ -33,8 +33,6 @@ builder.Services.AddAzureClients(clientBuilder =>
                     .CreateSender(queue)).WithName(queue);
     }
 
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-
     // Set up any default settings
     clientBuilder.ConfigureDefaults(
         builder.Configuration.GetSection("AzureDefaults"));

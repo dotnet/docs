@@ -12,7 +12,7 @@ NETSDK1182 indicates that you're trying to open a .NET 6+ project in Visual Stud
 
 > Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.
 
-To resolve this error switch to Visual Studio 2022, or change your project to target .NET 5 or earlier.
+To resolve this error, switch to Visual Studio 2022 or later, or change your project to target .NET 5 or earlier.
 
 ## See also
 

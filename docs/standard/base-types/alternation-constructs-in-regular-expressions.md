@@ -31,8 +31,8 @@ You can use the vertical bar (`|`) character to match any one of a series of pat
 
 Like the positive character class, the `|` character can be used to match any one of a number of single characters. The following example uses both a positive character class and either/or pattern matching with the `|` character to locate occurrences of the words "gray" or "grey" in a string. In this case, the `|` character produces a regular expression that is more verbose.
 
-[!code-csharp[RegularExpressions.Language.Alternation#1](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation1.cs#1)]
-[!code-vb[RegularExpressions.Language.Alternation#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation1.vb#1)]
+:::code language="csharp" source="./snippets/alternation-constructs-in-regular-expressions/csharp/Program.cs" id="EitherOrCharacterClass":::
+:::code language="vb" source="./snippets/alternation-constructs-in-regular-expressions/vb/Program.vb" id="EitherOrCharacterClass":::
 
 The regular expression that uses the `|` character, `\bgr(a|e)y\b`, is interpreted as shown in the following table:
 
@@ -45,8 +45,8 @@ The regular expression that uses the `|` character, `\bgr(a|e)y\b`, is interpret
 
 The `|` character can also be used to perform an either/or match with multiple characters or subexpressions, which can include any combination of character literals and regular expression language elements. (The character class does not provide this functionality.) The following example uses the `|` character to extract either a U.S. Social Security Number (SSN), which is a 9-digit number with the format *ddd*-*dd*-*dddd*, or a U.S. Employer Identification Number (EIN), which is a 9-digit number with the format *dd*-*ddddddd*.
 
-[!code-csharp[RegularExpressions.Language.Alternation#2](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation2.cs#2)]
-[!code-vb[RegularExpressions.Language.Alternation#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation2.vb#2)]  
+:::code language="csharp" source="./snippets/alternation-constructs-in-regular-expressions/csharp/Program.cs" id="EitherOrPatterns":::
+:::code language="vb" source="./snippets/alternation-constructs-in-regular-expressions/vb/Program.vb" id="EitherOrPatterns":::
 
 The regular expression `\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as shown in the following table:
   
@@ -79,8 +79,8 @@ where `(?=`*expression*`)` is a zero-width assertion construct. (For more inform
   
 The following example is a variation of the example that appears in the [Either/Or Pattern Matching with &#124;](#Either_Or) section. It uses conditional matching to determine whether the first three characters after a word boundary are two digits followed by a hyphen. If they are, it attempts to match a U.S. Employer Identification Number (EIN). If not, it attempts to match a U.S. Social Security Number (SSN).
 
-[!code-csharp[RegularExpressions.Language.Alternation#3](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation3.cs#3)]
-[!code-vb[RegularExpressions.Language.Alternation#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation3.vb#3)]
+:::code language="csharp" source="./snippets/alternation-constructs-in-regular-expressions/csharp/Program.cs" id="ConditionalExpression":::
+:::code language="vb" source="./snippets/alternation-constructs-in-regular-expressions/vb/Program.vb" id="ConditionalExpression":::
 
 The regular expression pattern `\b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as shown in the following table:
 
@@ -118,8 +118,8 @@ If *name* does not correspond to the name of a capturing group that is used in t
 
 The following example is a variation of the example that appears in the [Either/Or Pattern Matching with &#124;](#Either_Or) section. It uses a capturing group named `n2` that consists of two digits followed by a hyphen. The alternation construct tests whether this capturing group has been matched in the input string. If it has, the alternation construct attempts to match the last seven digits of a nine-digit U.S. Employer Identification Number (EIN). If it has not, it attempts to match a nine-digit U.S. Social Security Number (SSN).
 
-[!code-csharp[RegularExpressions.Language.Alternation#4](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation4.cs#4)]
-[!code-vb[RegularExpressions.Language.Alternation#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation4.vb#4)]
+:::code language="csharp" source="./snippets/alternation-constructs-in-regular-expressions/csharp/Program.cs" id="ConditionalNamedGroup":::
+:::code language="vb" source="./snippets/alternation-constructs-in-regular-expressions/vb/Program.vb" id="ConditionalNamedGroup":::
 
 The regular expression pattern `\b(?<n2>\d{2}-)?(?(n2)\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as shown in the following table:
 
@@ -134,8 +134,8 @@ The regular expression pattern `\b(?<n2>\d{2}-)?(?(n2)\d{7}|\d{3}-\d{2}-\d{4})\b
 
 A variation of this example that uses a numbered group instead of a named group is shown in the following example. Its regular expression pattern is `\b(\d{2}-)?(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b`.
 
-[!code-csharp[RegularExpressions.Language.Alternation#5](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation5.cs#5)]
-[!code-vb[RegularExpressions.Language.Alternation#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation5.vb#5)]
+:::code language="csharp" source="./snippets/alternation-constructs-in-regular-expressions/csharp/Program.cs" id="ConditionalNumberedGroup":::
+:::code language="vb" source="./snippets/alternation-constructs-in-regular-expressions/vb/Program.vb" id="ConditionalNumberedGroup":::
 
 ## See also
 

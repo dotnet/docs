@@ -1,12 +1,14 @@
 ---
 title: "Identifier names - rules and conventions"
 description: "Learn the rules for valid identifier names in the C# programming language. In addition, learn the common naming conventions used by the .NET runtime team and the .NET docs team."
-ms.date: 11/27/2023
+ms.date: 10/10/2025
 ai-usage: ai-assisted
 ---
 # C# identifier naming rules and conventions
 
 An **identifier** is the name you assign to a type (class, interface, struct, delegate, or enum), member, variable, or namespace.
+
+This article covers the essential rules for valid C# identifiers and the naming conventions used to help you write consistent, professional code.
 
 ## Naming rules
 
@@ -35,9 +37,9 @@ By convention, C# programs use `PascalCase` for type names, namespaces, and all 
 - Use meaningful and descriptive names for variables, methods, and classes.
 - Prefer clarity over brevity.
 - Use PascalCase for class names and method names.
-- Use camelCase for method arguments, local variables, and private fields.
-- Use PascalCase for constant names, both fields and local constants.
-- Private instance fields start with an underscore (`_`).
+- Use camelCase for method arguments, local variables, and private and internal non-constant fields.
+- Private and internal non-constant instance fields start with an underscore (`_`).
+- To maintain consistency across all access modifiers, use PascalCase for constant names, both fields and local constants, including `private` and `internal` constants.
 - Static fields start with `s_`. This convention isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is [configurable in editorconfig](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.
 - Use meaningful and descriptive namespaces that follow the reverse domain name notation.
@@ -128,7 +130,7 @@ For more information on positional records, see [Positional syntax for property 
 
 ### Camel case
 
-Use camel casing ("camelCasing") when naming `private` or `internal` fields and prefix them with `_`. Use camel casing when naming local variables, including instances of a delegate type.
+Use camel casing ("camelCasing") when naming `private` or `internal` non-constant fields, and prefix them with `_`. Use camel casing when naming local variables, including instances of a delegate type.
 
 ```csharp
 public class DataService
@@ -184,15 +186,15 @@ The following guidelines apply to type parameters on generic type parameters. Ty
 
 - **Do** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name wouldn't add value.
 
-   :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersOne":::
+   :::code language="csharp" source="./snippets/coding-conventions/Program.cs" id="TypeParametersOne":::
 
 - **Consider** using `T` as the type parameter name for types with one single letter type parameter.
 
-   :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersTwo":::
+   :::code language="csharp" source="./snippets/coding-conventions/Program.cs" id="TypeParametersTwo":::
 
 - **Do** prefix descriptive type parameter names with "T".
 
-   :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersThree":::
+   :::code language="csharp" source="./snippets/coding-conventions/Program.cs" id="TypeParametersThree":::
 
 - **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` might be called `TSession`.
 

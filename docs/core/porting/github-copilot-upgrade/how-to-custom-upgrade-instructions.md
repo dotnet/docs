@@ -1,0 +1,165 @@
+---
+title: Apply custom upgrade instructions for .NET upgrades
+description: "Create and apply custom upgrade instructions with GitHub Copilot upgrade to automate .NET upgrades. Write, test, and integrate instructions for consistent transformations."
+author: kschlobohm
+ms.topic: how-to
+ms.date: 03/04/2026
+ai-usage: ai-assisted
+
+#customer intent: As a developer, I want to apply custom upgrade instructions during a .NET upgrade so that I can automate specific changes consistently.
+
+---
+
+# Apply custom upgrade instructions for .NET upgrades
+
+Custom upgrade instructions are Markdown files that guide GitHub Copilot upgrade to apply specific transformations during an upgrade. Create these files to automate repetitive changes, such as replacing one library with another or applying a specific API upgrade.
+
+This article explains how to create and structure a custom upgrade instruction file, test it in isolation, and integrate it into the assessment stage of an upgrade workflow.
+
+## Prerequisites
+
+Set up GitHub Copilot upgrade in your development environment before creating custom instructions. For installation steps, see [Install GitHub Copilot upgrade](install.md).
+
+## Understand custom upgrade instructions
+
+GitHub Copilot upgrade retrieves custom upgrade instructions as Markdown files on demand during the assessment and planning stages of an upgrade. Custom upgrade instructions differ from `copilot-instructions.md` because they're:
+
+- Targeted to automating code and dependency changes.
+- Retrieved only when relevant to the current upgrade assessment or plan.
+- Reusable across solutions when copied into each repository.
+
+Structure your instruction files with:
+
+- A short title describing the action. For example, "replace Newtonsoft.Json with System.Text.Json."
+- A concise problem statement or prerequisite section.
+- Explicit step logic ("If X is found, do Y"). Avoid vague language.
+- (Recommended) One or more diff examples captured from actual local edits to guide transformations.
+
+Beyond custom upgrade instructions, you can extend GitHub Copilot upgrade through the standard skills and instructions system. Skills add capabilities to the agent, and instruction files (like `copilot-instructions.md`) provide global guidance.
+
+## Create a custom upgrade instruction
+
+Follow these steps to generate and refine a new instruction file. These sections focus on replacing `Newtonsoft.Json` with `System.Text.Json` as an example.
+
+### Initiate the upgrade
+
+Use the following steps to start an upgrade:
+
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
+
+### Create the instruction file
+
+1. In the chat, type: `I want to generate a custom upgrade instruction`.
+1. When asked, provide a scenario like `I want to replace Newtonsoft with System.Text.Json` to have Copilot create the file.
+1. When Copilot creates the new file, such as `replace_newtonsoft_with_system_text_json.md`, review the content and refine it in chat. For example, ask Copilot to _"clarify detection criteria"_ or _"add a prerequisite section."_
+
+   > [!TIP]
+   > Add the file to the solution for visibility if it isn't already included.
+
+1. Strengthen the instruction with real diff examples.
+
+   1. Make the desired code changes manually in one project. For example, "remove the `Newtonsoft.Json` package, update using directives, and replace `JsonConvert` code with `JsonSerializer`."
+   1. In chat, with the instruction file open, type: `Check my git changes and add diffs as examples to my instruction file`.
+   1. Confirm Copilot used a git diff and appended a fenced diff block or structured example to the Markdown file.
+
+### Authoring tips
+
+Follow these guidelines to write clear, effective custom upgrade instructions that Copilot can interpret reliably:
+
+- Use clear conditional phrasing: `If code references X, then do Y.`
+- Keep one transformation per file; use prerequisites when multiple files must run in sequence.
+- Provide at least one concrete example, such as a diff or before/after snippet, to improve transformation accuracy.
+- Avoid ambiguous verbs like "improve" or "fix"; use explicit actions like "replace," "remove," and "update."
+
+## Test a custom upgrade instruction (one-time run)
+
+Before running the instruction during an upgrade, validate it in isolation. Isolated testing helps you refine detection and verify code changes.
+
+### Initiate the upgrade
+
+Use the following steps to start an upgrade:
+
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
+
+### Test the upgrade instruction
+
+1. In chat, invoke the instruction with wording similar to the file name. For example, `replace Newtonsoft with System.Text.Json`.
+1. Confirm in the chat window that Copilot retrieved the instruction file:
+
+   ```text
+   > Getting instructions for 'replace Newtonsoft with System.Text.Json'.
+   
+   Perfect! I've retrieved the scenario instructions for upgrading from Newtonsoft.Json to System.Text.Json. Now I'll begin the analysis following the scenario-specific instructions.
+   ```
+
+   If Copilot doesn't indicate it found the instructions, retry with keywords from the file's name, such as the same verb and noun combinations.
+
+1. Review the proposed changes (solution diffs, pending commits, or previewed modifications) to confirm the custom upgrade instruction behaves as expected.
+
+### Validation tips
+
+If the test run doesn't produce the expected results, use these troubleshooting tips to refine your instruction file:
+
+- If Copilot only updates package versions instead of replacing the package, ensure the instruction explicitly says to remove or replace the old package.
+- Use consistent naming so that natural-language activation matches. For example, start the file name with `replace_` and begin your chat request with "Replace ...".
+- During testing, add any missing code patterns as examples to improve coverage.
+
+## Apply custom instructions during an upgrade
+
+Use these steps to incorporate an existing custom upgrade instruction into the assessment stage of an upgrade.
+
+### Initiate the upgrade
+
+To start the upgrade, follow these steps:
+
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
+
+### Customize the upgrade
+
+Follow these steps during the assessment stage:
+
+1. Monitor the chat to see if Copilot automatically retrieves your custom instruction file during the assessment. Look for a message indicating it opened the Markdown instruction file.
+
+   If Copilot doesn't automatically apply the custom instructions, explicitly request them. Use wording similar to the file name. For example, `use the custom instructions to replace Newtonsoft with System.Text.Json during the assessment`.
+
+1. Wait for Copilot to confirm it retrieved the Markdown file. If you don't see a reference to the instruction file, restate the request using the file's key verbs (replace, update, remove) and package names.
+1. Review the generated `assessment.md` file in the `.github/upgrades` folder. Confirm the assessment includes issues and changes that your custom instruction identified.
+
+   For example, when replacing Newtonsoft, the assessment identifies:
+   - Projects using `Newtonsoft.Json` packages.
+   - Code patterns to refactor for `System.Text.Json`.
+   - Dependencies to remove or replace.
+
+1. If needed, edit the `assessment.md` file to add context or adjust the identified issues before proceeding.
+1. Tell Copilot to continue to the planning stage once the assessment reflects your custom instruction.
+1. Review the `plan.md` file that Copilot generates. This file includes strategies for addressing the issues from the assessment.
+1. Continue through the execution stage by telling Copilot to proceed. Monitor the `tasks.md` file as Copilot applies the transformations.
+
+### Tips for better activation
+
+How you name and invoke custom upgrade instructions affects whether Copilot retrieves them automatically. Follow these guidelines to improve activation reliability:
+
+- Match the file's verb. If the file name uses `replace`, use that phrasing (not `upgrade` or `fix`).
+- Keep one transformation per file for clarity and reuse. Sequence multiple files by listing prerequisites in each file.
+- Request custom instructions during the assessment stage for best results, rather than waiting until planning or execution.
+- Avoid ambiguous requests like _"improve the assessment."_ Be explicit: "apply the replace_newtonsoft_with_system_text_json instructions during assessment."
+
+## Validate the applied changes
+
+After the upgrade completes:
+
+1. Review the `tasks.md` file in `.github/upgrades` to see the status of tasks related to your custom instruction.
+1. Check the Git commits created during the execution stage for changes related to the custom instruction.
+1. Run your tests to ensure functional behavior remains correct.
+1. **Optional**: Capture a diff example from the successful change and add it to the instruction file to strengthen future automation.
+
+## Clean up resources
+
+Remove or consolidate any temporary instruction files to avoid overlapping transformations in future upgrades.
+
+## Related content
+
+- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [GitHub Copilot upgrade FAQ](faq.yml)
+- [What is GitHub Copilot upgrade?](overview.md)
+- [Install GitHub Copilot upgrade](install.md)

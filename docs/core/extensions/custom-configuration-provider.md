@@ -1,9 +1,7 @@
 ---
 title: Implement a custom configuration provider
 description: Learn how to implement a custom configuration provider in .NET apps. Explore a database configuration provider that uses Entity Framework Core.
-author: IEvangelist
-ms.author: dapine
-ms.date: 02/20/2024
+ms.date: 10/20/2025
 ms.topic: how-to
 ---
 
@@ -66,7 +64,7 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 :::code language="csharp" source="snippets/configuration/custom-provider/WidgetOptions.cs":::
 
-A call to <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> registers a configuration instance, which `TOptions` binds against.
+A call to <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure*> registers a configuration instance, which `TOptions` binds against.
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="14,16-19":::
 
@@ -77,4 +75,4 @@ The preceding code configures the `WidgetOptions` object from the `"WidgetOption
 - [Configuration in .NET](configuration.md)
 - [Configuration providers in .NET](configuration-providers.md)
 - [Options pattern in .NET](options.md)
-- [Dependency injection in .NET](dependency-injection.md)
+- [Dependency injection in .NET](dependency-injection/overview.md)

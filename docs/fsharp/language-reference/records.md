@@ -6,18 +6,22 @@ ms.date: 12/21/2021
 ---
 # Records (F#)
 
-Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types.  They are reference types by default.
+Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types. They are reference types by default.
 
 ## Syntax
 
 ```fsharp
 [ attributes ]
 type [accessibility-modifier] typename =
-    { [ mutable ] label1 : type1;
-      [ mutable ] label2 : type2;
-      ... }
+    [accessibility-modifier] { 
+        [ mutable ] label1 : type1;
+        [ mutable ] label2 : type2;
+        ... 
+    }
     [ member-list ]
 ```
+
+The `accessibility modifier` before the `typename` affects the visibility of the entire type, and is `public` by default. The second `accessibility modifier` only affects the constructor and fields.
 
 ## Remarks
 
@@ -96,15 +100,15 @@ For example, the following code defines a `Person` and `Address` type as mutuall
 ```fsharp
 // Create a Person type and use the Address type that is not defined
 type Person =
-  { Name: string
-    Age: int
-    Address: Address }
+    { Name: string
+      Age: int
+      Address: Address }
 // Define the Address type which is used in the Person record
 and Address =
-  { Line1: string
-    Line2: string
-    PostCode: string
-    Occupant: Person }
+    { Line1: string
+      Line2: string
+      PostCode: string
+      Occupant: Person }
 ```
 
 To create instances of both, you do the following:
@@ -112,17 +116,17 @@ To create instances of both, you do the following:
 ```fsharp
 // Create a Person type and use the Address type that is not defined
 let rec person =
-  {
-      Name = "Person name"
-      Age = 12
-      Address =
-          {
-              Line1 = "line 1"
-              Line2 = "line 2"
-              PostCode = "abc123"
-              Occupant = person
-          }
-  }
+    {
+        Name = "Person name"
+        Age = 12
+        Address =
+            {
+                Line1 = "line 1"
+                Line2 = "line 2"
+                PostCode = "abc123"
+                Occupant = person
+            }
+    }
 ```
 
 If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.
@@ -147,9 +151,9 @@ You can specify members on records much like you can with classes. There is no s
 
 ```fsharp
 type Person =
-  { Name: string
-    Age: int
-    Address: string }
+    { Name: string
+      Age: int
+      Address: string }
 
     static member Default =
         { Name = "Phillip"
@@ -163,9 +167,9 @@ If you use a self identifier, that identifier refers to the instance of the reco
 
 ```fsharp
 type Person =
-  { Name: string
-    Age: int
-    Address: string }
+    { Name: string
+      Age: int
+      Address: string }
 
     member this.WeirdToString() =
         this.Name + this.Address + string this.Age
@@ -173,6 +177,48 @@ type Person =
 let p = { Name = "a"; Age = 12; Address = "abc123" }
 let weirdString = p.WeirdToString()
 ```
+
+## Accessibility Modifiers on Records
+
+The following code illustrates the use of accessibility modifiers. There are three files in the project: `Module1.fs`, `Test1.fs`, and `Test2.fs`. An internal record type and a record type with a private constructor are defined in Module1.
+
+```fsharp
+// Module1.fs
+
+module Module1
+
+type internal internalRecd = { X: int }
+
+type recdWithInternalCtor = private { Y: int }
+```
+
+In the `Test1.fs` file, the internal record must be initialized with the `internal` access modifier, that's because the protection level of the value and the record must match, and both must belong to the same assembly.
+
+```fsharp
+// Test1.fs
+
+module Test1
+
+open Module1
+
+let myInternalRecd1 = { X = 2 } // This line will cause a compiler error.
+
+let internal myInternalRecd2 = { X = 4 } // This is OK
+```
+
+In the `Test2.fs` file, the record with the private constructor cannot be initialized directly due the protection level of the constructor.
+
+```fsharp
+// Test2.fs
+
+module Test2
+
+open Module1
+
+let myRecdWithInternalCtor = { Y = 6 } // This line will cause a compiler error.
+```
+
+For more information about accessibility modifiers, see the [Access Control](./access-control.md) article.
 
 ## Differences Between Records and Classes
 

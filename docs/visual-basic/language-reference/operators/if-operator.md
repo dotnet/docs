@@ -60,6 +60,6 @@ When the `Boolean` argument is omitted, the first argument must be a reference o
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Interaction.IIf%2A>
+- <xref:Microsoft.VisualBasic.Interaction.IIf*>
 - [Nullable Value Types](../../programming-guide/language-features/data-types/nullable-value-types.md)
 - [Nothing](../nothing.md)

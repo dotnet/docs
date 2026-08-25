@@ -1,7 +1,7 @@
 ---
 title: "Working with .resx Files Programmatically"
 description: Create or retrieve data from XML resource (.resx) files programmatically using types and members in the System.Resources namespace of the .NET Class Library.
-ms.date: 03/13/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -27,13 +27,13 @@ This article discusses working with XML (.resx) files that contain resources. Fo
 
 You can use the <xref:System.Resources.ResXResourceWriter?displayProperty=nameWithType> class to create a .resx file programmatically, by following these steps:
 
-1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
+1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close*?displayProperty=nameWithType> method in step 3.
 
-2. Call the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each resource you want to add to the file. Use the overloads of this method to add string, object, and binary (byte array) data. If the resource is an object, it must be serializable.
+2. Call the <xref:System.Resources.ResXResourceWriter.AddResource*?displayProperty=nameWithType> method for each resource you want to add to the file. Use the overloads of this method to add string, object, and binary (byte array) data. If the resource is an object, it must be serializable.
 
-3. Call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method to generate the resource file and to release all resources. If the <xref:System.Resources.ResXResourceWriter> object was created within a `using` block, resources are written to the .resx file and the resources used by the <xref:System.Resources.ResXResourceWriter> object are released at the end of the `using` block.
+3. Call the <xref:System.Resources.ResXResourceWriter.Close*?displayProperty=nameWithType> method to generate the resource file and to release all resources. If the <xref:System.Resources.ResXResourceWriter> object was created within a `using` block, resources are written to the .resx file and the resources used by the <xref:System.Resources.ResXResourceWriter> object are released at the end of the `using` block.
 
-The resulting .resx file has the appropriate header and a `data` tag for each resource added by the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method.
+The resulting .resx file has the appropriate header and a `data` tag for each resource added by the <xref:System.Resources.ResXResourceWriter.AddResource*?displayProperty=nameWithType> method.
 
 > [!WARNING]
 > Do not use resource files to store passwords, security-sensitive information, or private data.
@@ -50,9 +50,9 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 
 ## Enumerate resources
 
- In some cases, you may want to retrieve all resources, instead of a specific resource, from a .resx file. To do this, you can use the <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class, which provides an enumerator for all resources in the .resx file. The <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class implements <xref:System.Collections.IDictionaryEnumerator>, which returns a <xref:System.Collections.DictionaryEntry> object that represents a particular resource for each iteration of the loop. Its <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property returns the resource's key, and its <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property returns the resource's value.
+ In some cases, you may want to retrieve all resources, instead of a specific resource, from a .resx file. To do this, you can use the <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class, which provides an enumerator for all resources in the .resx file. The <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class implements <xref:System.Collections.IDictionaryEnumerator>, which returns a <xref:System.Collections.DictionaryEntry> object that represents a particular resource for each iteration of the loop. Its <xref:System.Collections.DictionaryEntry.Key?displayProperty=nameWithType> property returns the resource's key, and its <xref:System.Collections.DictionaryEntry.Value?displayProperty=nameWithType> property returns the resource's value.
 
- The following example creates a <xref:System.Resources.ResXResourceReader> object for the CarResources.resx file created in the previous example and iterates through the resource file. It adds the two `Automobile` objects that are defined in the resource file to a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> object, and it adds five of the six strings to a <xref:System.Collections.SortedList> object. The values in the <xref:System.Collections.SortedList> object are converted to a parameter array, which is used to display column headings to the console. The `Automobile` property values are also displayed to the console.
+ The following example creates a <xref:System.Resources.ResXResourceReader> object for the CarResources.resx file created in the previous example and iterates through the resource file. It adds the two `Automobile` objects that are defined in the resource file to a <xref:System.Collections.Generic.List`1?displayProperty=nameWithType> object, and it adds five of the six strings to a <xref:System.Collections.SortedList> object. The values in the <xref:System.Collections.SortedList> object are converted to a parameter array, which is used to display column headings to the console. The `Automobile` property values are also displayed to the console.
 
  [!code-csharp[Conceptual.Resources.ResX#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resx/cs/enumerate1.cs#2)]
  [!code-vb[Conceptual.Resources.ResX#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/enumerate1.vb#2)]
@@ -68,7 +68,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 
 ## Convert .resx files to binary .resources files
 
- Converting .resx files to embedded binary resource (*.resources*) files has significant advantages. Although .resx files are easy to read and maintain during application development, they are rarely included with finished applications. If they are distributed with an application, they exist as separate files apart from the application executable and its accompanying libraries. In contrast, *.resources* files are embedded in the application executable or its accompanying assemblies. In addition, for localized applications, relying on .resx files at run time places the responsibility for handling resource fallback on the developer. In contrast, if a set of satellite assemblies that contain embedded .resources files has been created, the common language runtime handles the resource fallback process.
+ Converting .resx files to embedded binary resource (*.resources*) files has significant advantages. Although .resx files are easy to read and maintain during application development, they are rarely included with finished applications. If they are distributed with an application, they exist as separate files apart from the application executable and its accompanying libraries. In contrast, *.resources* files are embedded in the application executable or its accompanying assemblies. In addition, for localized applications, relying on .resx files at runtime places the responsibility for handling resource fallback on the developer. In contrast, if a set of satellite assemblies that contain embedded .resources files has been created, the common language runtime handles the resource fallback process.
 
  To convert a *.resx* file to a *.resources* file, you use [Resource File Generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md), which has the following basic syntax:
 

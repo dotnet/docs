@@ -17,11 +17,11 @@ Using Windows Communication Foundation (WCF), the service can specify how a clie
 
 2. Open the XML configuration file. If you use the Svcutil.exe tool, the default name of the file is Output.config.
 
-3. Find the **\<security>** element with the **mode** attribute (**\<security mode =**`MessageOrTransport`**>** where `MessageOrTransport` is set to one of the security modes.
+3. Find the **\<security>** element with the `mode` attribute (**\<security mode =**`MessageOrTransport`**>** where `MessageOrTransport` is set to one of the security modes.
 
 4. Find the child element that matches the mode value. For example, if the mode is set to **Message**, find the **\<message>** element contained in the **\<security>** element.
 
-5. Note the value assigned to the **clientCredentialType** attribute. The actual value depends on which mode is used, transport or message.
+5. Note the value assigned to the `clientCredentialType` attribute. The actual value depends on which mode is used, transport or message.
 
 The following XML code shows configuration for a client using message security and requiring a certificate to authenticate the client.
 
@@ -44,7 +44,7 @@ This example sets the security mode to Transport mode and sets the client creden
 
 2. Create an instance of the WCF client using the generated code.
 
-3. On the client class, set the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class to an appropriate value. This example sets the property to an X.509 certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.
+3. On the client class, set the <xref:System.ServiceModel.ClientBase`1.ClientCredentials> property of the <xref:System.ServiceModel.ClientBase`1> class to an appropriate value. This example sets the property to an X.509 certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate*> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.
 
      [!code-csharp[c_TcpService#4](../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpservice/cs/source.cs#4)]
      [!code-vb[c_TcpService#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpservice/vb/source.vb#4)]
@@ -91,9 +91,9 @@ This example sets the security mode to Transport mode and sets the client creden
 ## See also
 
 - <xref:System.ServiceModel.NetTcpBinding>
-- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate*>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
-- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.ClientBase`1>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
 - [Programming WCF Security](./feature-details/programming-wcf-security.md)
 - [Selecting a Credential Type](./feature-details/selecting-a-credential-type.md)

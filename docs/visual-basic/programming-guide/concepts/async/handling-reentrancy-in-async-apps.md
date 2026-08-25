@@ -199,7 +199,7 @@ In `AccessTheWebAsync`, make the following changes.
 
 - Add a parameter to accept the cancellation token from `StartButton_Click`.
 
-- Use the <xref:System.Net.Http.HttpClient.GetAsync%2A> method to download the websites because `GetAsync` accepts a <xref:System.Threading.CancellationToken> argument.
+- Use the <xref:System.Net.Http.HttpClient.GetAsync*> method to download the websites because `GetAsync` accepts a <xref:System.Threading.CancellationToken> argument.
 
 - Before calling `DisplayResults` to display the results for each downloaded website, check `ct` to verify that the current operation hasn’t been canceled.
 
@@ -403,7 +403,7 @@ End Sub
 
 #### The AccessTheWebAsync Method
 
-This example splits `AccessTheWebAsync` into two methods. The first method, `AccessTheWebAsync`, starts all the download tasks for a group and sets up `pendingWork` to control the display process. The method uses a Language Integrated Query (LINQ query) and <xref:System.Linq.Enumerable.ToArray%2A> to start all the download tasks at the same time.
+This example splits `AccessTheWebAsync` into two methods. The first method, `AccessTheWebAsync`, starts all the download tasks for a group and sets up `pendingWork` to control the display process. The method uses a Language Integrated Query (LINQ query) and <xref:System.Linq.Enumerable.ToArray*> to start all the download tasks at the same time.
 
 `AccessTheWebAsync` then calls `FinishOneGroupAsync` to await the completion of each download and display its length.
 

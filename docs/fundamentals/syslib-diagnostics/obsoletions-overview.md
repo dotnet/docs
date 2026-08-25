@@ -1,7 +1,7 @@
 ---
 title: Obsolete features in .NET 5+
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 01/14/2025
+ms.date: 04/03/2026
 ai-usage: ai-assisted
 ---
 
@@ -9,15 +9,19 @@ ai-usage: ai-assisted
 
 Starting in .NET 5, some APIs that are newly marked as obsolete make use of two new properties on <xref:System.ObsoleteAttribute>.
 
-- The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the .NET 5+ obsoletions, the format for the custom diagnostic ID is `SYSLIB0XXX`.
-
+- The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the `System*` namespace obsoletions, the format for the custom diagnostic ID is `SYSLIB0XXX`. In the case of the `Microsoft.Extensions` obsoletions, the format for the custom diagnostic ID is `EXTOBS0XXX`.
 - The <xref:System.ObsoleteAttribute.UrlFormat?displayProperty=nameWithType> property tells the compiler to include a URL link to learn more about the obsoletion.
 
-If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIB0XXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the reference tables that follow. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIB0XXX` or `EXTOBS0XXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
 
-## Reference
+The following tables provide an index to obsolete APIs with custom diagnostic IDs in .NET 5 and later versions:
 
-The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+.
+- [SYSLIB obsoletions](#syslib-obsoletions)
+- [EXTOBS obsoletions](#extobs-obsoletions)
+
+## SYSLIB obsoletions
+
+The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 
 | Diagnostic ID | Warning or error | Description |
 |---------------|------------------|-------------|
@@ -36,7 +40,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0013](syslib0013.md) | Warning | <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType> can corrupt the Uri string in some cases. Consider using <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType> for query string components instead. |
 | [SYSLIB0014](syslib0014.md) | Warning | <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.ServicePoint>, and <xref:System.Net.WebClient> are obsolete. Use <xref:System.Net.Http.HttpClient> instead. |
 | [SYSLIB0015](syslib0015.md) | Warning | <xref:System.Runtime.CompilerServices.DisablePrivateReflectionAttribute> has no effect in .NET 6+. |
-| [SYSLIB0016](syslib0016.md) | Warning | Use the <xref:System.Drawing.Graphics.GetContextInfo%2A?displayProperty=nameWithType> overloads that accept arguments for better performance and fewer allocations. |
+| [SYSLIB0016](syslib0016.md) | Warning | Use the <xref:System.Drawing.Graphics.GetContextInfo*?displayProperty=nameWithType> overloads that accept arguments for better performance and fewer allocations. |
 | [SYSLIB0017](syslib0017.md) | Warning | Strong-name signing is not supported and throws <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0018](syslib0018.md) | Warning | Reflection-only loading is not supported and throws <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0019](syslib0019.md) | Warning | The <xref:System.Runtime.InteropServices.RuntimeEnvironment?displayProperty=nameWithType> members <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile>, <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)>, and <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)> are no longer supported and throw <xref:System.PlatformNotSupportedException>. |
@@ -56,7 +60,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0033](syslib0033.md) | Warning | <xref:System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> is obsolete and is not supported. Use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> instead. |
 | [SYSLIB0034](syslib0034.md) | Warning | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)> is obsolete. Use an alternative constructor instead. |
 | [SYSLIB0035](syslib0035.md) | Warning | <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType> is obsolete. Use the overload that accepts a <xref:System.Security.Cryptography.Pkcs.CmsSigner> instead. |
-| [SYSLIB0036](syslib0036.md) | Warning | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. |
+| [SYSLIB0036](syslib0036.md) | Warning | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> is obsolete and not supported. Use `RegexGeneratorAttribute` with the regular expression source generator instead. |
 | [SYSLIB0037](syslib0037.md) | Warning | <xref:System.Reflection.AssemblyName> members <xref:System.Reflection.AssemblyName.HashAlgorithm>, <xref:System.Reflection.AssemblyName.ProcessorArchitecture>, and <xref:System.Reflection.AssemblyName.VersionCompatibility> are obsolete and not supported. |
 | [SYSLIB0038](syslib0038.md) | Warning | <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType> is obsolete and should not be used. |
 | [SYSLIB0039](syslib0039.md) | Warning | TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType> to defer to OS defaults. |
@@ -68,25 +72,37 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0045](syslib0045.md) | Warning | Cryptographic factory methods accepting an algorithm name are obsolete. Use the parameterless `Create` factory method on the algorithm type instead. |
 | [SYSLIB0046](syslib0046.md) | Warning | The <xref:System.Runtime.ControlledExecution.Run(System.Action,System.Threading.CancellationToken)?displayProperty=nameWithType> method might corrupt the process and should not be used in production code. |
 | [SYSLIB0047](syslib0047.md) | Warning | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead when attempting to forbid XML external entity resolution. |
-| [SYSLIB0048](syslib0048.md) | Warning | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0048](syslib0048.md) | Warning | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt*?displayProperty=nameWithType> instead. |
 | [SYSLIB0049](syslib0049.md) | Warning | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. |
 | [SYSLIB0050](syslib0050.md) | Warning | Formatter-based serialization is obsolete and should not be used. |
 | [SYSLIB0051](syslib0051.md) | Warning | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. |
 | [SYSLIB0052](syslib0052.md) | Warning | APIs that support obsolete mechanisms for Regex extensibility are obsolete. |
 | [SYSLIB0053](syslib0053.md) | Warning | <xref:System.Security.Cryptography.AesGcm> should indicate the required tag size for encryption and decryption. Use a constructor that accepts the tag size. |
-| [SYSLIB0054](syslib0054.md) | Warning | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0054](syslib0054.md) | Warning | <xref:System.Threading.Thread.VolatileRead*?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite*?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read*?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write*?displayProperty=nameWithType> instead. |
 | [SYSLIB0055](syslib0055.md) | Warning | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. |
 | [SYSLIB0056](syslib0056.md) | Warning | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. |
 | [SYSLIB0057](syslib0057.md) | Warning | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. |
 | [SYSLIB0058](syslib0058.md) | Warning | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. |
 | [SYSLIB0059](syslib0059.md) | Warning | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead. |
-| [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> instead. |
 | [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
 | [SYSLIB0062](syslib0062.md) | Warning | <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayProperty=nameWithType> is obsolete. |
+| [SYSLIB0063](syslib0063.md) | Warning | The <xref:System.IO.Pipes.NamedPipeClientStream> constructor that has an `isConnected` parameter is obsolete because the argument has no effect. Use the constructor that accepts `direction`, `isAsync`, and `safePipeHandle`. |
+| [SYSLIB0064](syslib0064.md) | Warning | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. |
+| [SYSLIB0065](syslib0065.md) | Warning | The `set` accessor of <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> is obsolete. Use the constructor of the appropriate type to decode data, or use <xref:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType> for mutable scenarios. |
+
+## EXTOBS obsoletions
+
+The following table lists the `EXTOBS0XXX` obsoletions from the `Microsoft.Extensions` libraries.
+
+| Diagnostic ID | Warning or error | Description |
+|---------------|------------------|-------------|
+| [EXTOBS0001](extobs0001.md) | Warning | <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> is obsolete and will be removed in a future version. Consider using [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring). |
+| [EXTOBS0002](extobs0002.md) | Warning | The `AddServiceLogEnricher` extension methods have been marked as obsolete starting in package version 10.1.0. The methods enrich application logs, not service logs, so they have been replaced with correctly named `AddApplicationLogEnricher` methods. |
 
 ## Suppress warnings
 
-It's recommended that you use an available workaround whenever possible. However, if you cannot change your code, you can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. If you must use the obsolete APIs and the `SYSLIB0XXX` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
+It's recommended that you use an available workaround whenever possible. However, if you can't change your code, you can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. If you must use the obsolete APIs, and the `SYSLIB0XXX` or `EXTOBS0XXX` diagnostic doesn't surface as an error, you can suppress the warning in code or in your project file.
 
 To suppress the warnings in code:
 
@@ -123,7 +139,6 @@ To suppress the warnings in a project file:
 
 ## See also
 
-- [API obsoletions with non-default diagnostic IDs (.NET 5)](../../core/compatibility/core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md)
-- [API obsoletions with non-default diagnostic IDs (.NET 6)](../../core/compatibility/core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md)
-- [API obsoletions with non-default diagnostic IDs (.NET 7)](../../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 8)](../../core/compatibility/core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 9)](../../core/compatibility/core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 10)](../../core/compatibility/core-libraries/10.0/obsolete-apis.md)

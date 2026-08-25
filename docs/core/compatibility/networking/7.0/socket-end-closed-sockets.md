@@ -5,7 +5,7 @@ ms.date: 09/14/2022
 ---
 # Socket.End methods don't throw ObjectDisposedException
 
-`System.Net.Sockets.Socket.End*` methods (for example, <xref:System.Net.Sockets.Socket.EndSend%2A>) throw a <xref:System.Net.Sockets.SocketException> instead of an <xref:System.ObjectDisposedException> if the socket is closed.
+`System.Net.Sockets.Socket.End*` methods (for example, <xref:System.Net.Sockets.Socket.EndSend*>) throw a <xref:System.Net.Sockets.SocketException> instead of an <xref:System.ObjectDisposedException> if the socket is closed.
 
 ## Previous behavior
 
@@ -40,8 +40,8 @@ If your code catches an <xref:System.ObjectDisposedException> from any of the `S
 
 - <xref:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)?displayProperty=fullName>
 - <xref:System.Net.Sockets.Socket.EndDisconnect(System.IAsyncResult)?displayProperty=fullName>
-- <xref:System.Net.Sockets.Socket.EndSend%2A?displayProperty=fullName>
+- <xref:System.Net.Sockets.Socket.EndSend*?displayProperty=fullName>
 - <xref:System.Net.Sockets.Socket.EndSendFile(System.IAsyncResult)?displayProperty=fullName>
 - <xref:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)?displayProperty=fullName>
-- <xref:System.Net.Sockets.Socket.EndReceive%2A?displayProperty=fullName>
-- <xref:System.Net.Sockets.Socket.EndAccept%2A?displayProperty=fullName>
+- <xref:System.Net.Sockets.Socket.EndReceive*?displayProperty=fullName>
+- <xref:System.Net.Sockets.Socket.EndAccept*?displayProperty=fullName>

@@ -1,8 +1,9 @@
 ---
 title: "Tutorial: Hello world"
 description: Explore the hello world tutorial project written with .NET Orleans.
-ms.date: 03/30/2025
+ms.date: 01/21/2026
 ms.topic: tutorial
+zone_pivot_groups: orleans-version
 ---
 
 # Tutorial: Hello world
@@ -13,71 +14,77 @@ The main concepts of Orleans involve a silo, a client, and one or more grains. C
 
 ## Configure the silo
 
-Configure silos programmatically via `ISiloBuilder` and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
-```csharp
-static async Task<ISiloHost> StartSilo(string[] args)
-{
-    var builder = Host.CreateApplicationBuilder(args)
-        UseOrleans(c =>
-        {
-            c.UseLocalhostClustering()
-                .Configure<ClusterOptions>(options =>
-                {
-                    options.ClusterId = "dev";
-                    options.ServiceId = "HelloWorldApp";
-                })
-                .Configure<EndpointOptions>(
-                    options => options.AdvertisedIPAddress = IPAddress.Loopback)
-                .ConfigureApplicationParts(
-                    parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
-                .ConfigureLogging(logging => logging.AddConsole());
-        });
+Configure silos programmatically via <xref:Orleans.Hosting.ISiloBuilder> and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
-    var host = builder.Build();
-    await host.StartAsync();
+:::code language="csharp" source="snippets/helloworld/SiloProgram.cs" id="silo_setup":::
 
-    return host;
-}
-```
+The preceding code:
+
+- Creates a default host builder.
+- Calls <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans*> to configure the silo.
+- Uses localhost clustering for local development.
+- Configures the cluster and service IDs.
+- Configures the endpoint to listen on loopback.
+- Adds console logging.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+Configure silos programmatically via <xref:Orleans.Hosting.ISiloHostBuilder> and several supplemental option classes. You can find a list of all options at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
+
+:::code language="csharp" source="../snippets-v3/helloworld/SiloProgram.cs" id="silo_setup":::
+
+:::zone-end
 
 | Option                      | Used for |
 | --------------------------- | -------- |
 | `.UseLocalhostClustering()` | Configures the client to connect to a silo on the localhost. |
-| `ClusterOptions`            | `ClusterId` is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. `ServiceId` is the ID used for the application and must not change across deployments. |
-| `EndpointOptions`           | Tells the silo where to listen. For this example, use `loopback`. |
-| `ConfigureApplicationParts` | Adds the grain class and interface assembly as application parts to your Orleans application. |
+| <xref:Orleans.Configuration.ClusterOptions>            | <xref:Orleans.Configuration.ClusterOptions.ClusterId> is the name for the Orleans cluster; it must be the same for the silo and client so they can communicate. <xref:Orleans.Configuration.ClusterOptions.ServiceId> is the ID used for the application and must not change across deployments. |
+| <xref:Orleans.Configuration.EndpointOptions>           | Tells the silo where to listen. For this example, use `loopback`. |
 
-After loading the configurations, build the `ISiloHost` and then start it asynchronously.
+:::zone target="docs" pivot="orleans-3-x"
+
+| Option                      | Used for |
+| --------------------------- | -------- |
+| `ConfigureApplicationParts` | Adds the grain class and interface assembly as application parts to your Orleans application. This is not needed in Orleans 7.0+ as source generators handle this automatically. |
+
+:::zone-end
+
+After loading the configurations, build the host and then start it asynchronously.
 
 ## Configure the client
 
-Similar to the silo, configure the client via `IClientBuilder` and a similar collection of option classes.
+:::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
-```csharp
-static async Task<IClusterClient> StartClientWithRetries()
-{
-    attempt = 0;
-    var client = new ClientBuilder()
-        .UseLocalhostClustering()
-        .Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "dev";
-            options.ServiceId = "HelloWorldApp";
-        })
-        .ConfigureLogging(logging => logging.AddConsole())
-        .Build();
+Similar to the silo, configure the client via <xref:Orleans.IClientBuilder> and a similar collection of option classes.
 
-    await client.Connect(RetryFilter);
-    Console.WriteLine("Client successfully connect to silo host");
-    return client;
-}
-```
+:::code language="csharp" source="snippets/helloworld/ClientProgram.cs" id="client_setup":::
+
+The preceding code:
+
+- Creates a default host builder.
+- Calls <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient*> to configure the client.
+- Uses localhost clustering to connect to the local silo.
+- Configures the cluster and service IDs to match the silo.
+- Starts the host and retrieves the <xref:Orleans.IClusterClient> from the service provider.
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-3-x"
+
+Similar to the silo, configure the client via <xref:Orleans.IClientBuilder> and a similar collection of option classes.
+
+:::code language="csharp" source="../snippets-v3/helloworld/ClientProgram.cs" id="client_setup":::
+
+:::zone-end
 
 | Option                      | Used for               |
 | --------------------------- | ---------------------- |
-| `.UseLocalhostClustering()` | Same as for `SiloHost` |
-| `ClusterOptions`            | Same as for `SiloHost` |
+| `.UseLocalhostClustering()` | Same as for the silo |
+| <xref:Orleans.Configuration.ClusterOptions>            | Same as for the silo |
 
 Find a more in-depth guide to configuring your client in the [Client configuration](../host/configuration-guide/client-configuration.md) section of the Configuration Guide.
 
@@ -89,42 +96,17 @@ Read more about them in the [Grains](../grains/index.md) section of the Orleans 
 
 This is the main body of code for the Hello World grain:
 
-```csharp
-namespace HelloWorld.Grains;
-
-public class HelloGrain : Orleans.Grain, IHello
-{
-    Task<string> IHello.SayHello(string greeting)
-    {
-        logger.LogInformation($"SayHello message received: greeting = '{greeting}'");
-        return Task.FromResult($"You said: '{greeting}', I say: Hello!");
-    }
-}
-```
+:::code language="csharp" source="snippets/helloworld/HelloGrain.cs" id="hello_grain":::
 
 A grain class implements one or more grain interfaces. For more information, see the [Grains](../grains/index.md) section.
 
-```csharp
-namespace HelloWorld.Interfaces;
-
-public interface IHello : Orleans.IGrainWithIntegerKey
-{
-    Task<string> SayHello(string greeting);
-}
-```
+:::code language="csharp" source="snippets/helloworld/IHello.cs" id="ihello_interface":::
 
 ## How the parts work together
 
-This programming model builds on the core concept of distributed Object-Oriented Programming. Start the `ISiloHost` first. Then, start the `OrleansClient` program. The `Main` method of `OrleansClient` calls the method that starts the client, `StartClientWithRetries()`. Pass the client to the `DoClientWork()` method.
+This programming model builds on the core concept of distributed Object-Oriented Programming. Start the <xref:Orleans.Hosting.ISiloHost> first. Then, start the `OrleansClient` program. The `Main` method of `OrleansClient` calls the method that starts the client, `StartClientWithRetries()`. Pass the client to the `DoClientWork()` method.
 
-```csharp
-static async Task DoClientWork(IClusterClient client)
-{
-    var friend = client.GetGrain<IHello>(0);
-    var response = await friend.SayHello("Good morning, my friend!");
-    Console.WriteLine($"\n\n{response}\n\n");
-}
-```
+:::code language="csharp" source="snippets/helloworld/ClientProgram.cs" id="do_client_work":::
 
 At this point, `OrleansClient` creates a reference to the `IHello` grain and calls its `SayHello()` method via the `IHello` interface. This call activates the grain in the silo. `OrleansClient` sends a greeting to the activated grain. The grain returns the greeting as a response to `OrleansClient`, which then displays it on the console.
 

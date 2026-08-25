@@ -14,11 +14,11 @@ To accurately reflect nullability, the `[MemberNotNullWhen()]` attribute is appl
 
 ## Version introduced
 
-.NET 10 RC 1
+.NET 10
 
 ## Previous behavior
 
-Previously, the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor accepted `null` for the `stem` parameter without any compile-time or run-time warnings or errors.
+Previously, the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor accepted `null` for the `stem` parameter without any compile-time or runtime warnings or errors.
 
 ```csharp
 // Allowed in previous versions.
@@ -29,7 +29,7 @@ The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayP
 
 ## New behavior
 
-Starting in .NET 10, passing a `null` or possibly-null value to the `stem` argument in the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor yields a compile-time warning. And, if `null` is passed in, a run-time <xref:System.ArgumentNullException> is thrown.
+Starting in .NET 10, passing a `null` or possibly-null value to the `stem` argument in the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor yields a compile-time warning. And, if `null` is passed in, a runtime <xref:System.ArgumentNullException> is thrown.
 
 The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=nameWithType> property is now annotated to indicate that the value won't be null if `IsSuccessful` is `true`.
 
@@ -48,7 +48,7 @@ The previous nullability annotations were inaccurate, and a `null` value for the
 
 ## Recommended action
 
-If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be paTssed in as `null`.
+If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be passed in as `null`.
 
 If you applied nullability warning suppressions when consuming the `FilePatternMatch.Stem` property, you can remove those suppressions.
 

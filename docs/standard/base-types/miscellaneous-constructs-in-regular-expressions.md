@@ -2,7 +2,7 @@
 description: "Learn more about: Miscellaneous Constructs in Regular Expressions"
 title: "Miscellaneous Constructs in Regular Expressions"
 ms.date: "03/30/2017"
-ms.topic: article
+ms.topic: reference
 dev_langs:
   - "csharp"
   - "vb"
@@ -55,7 +55,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
 
 ## Inline Comment
 
- The `(?#` *comment*`)` construct lets you include an inline comment in a regular expression. The regular expression engine does not use any part of the comment in pattern matching, although the comment is included in the string that is returned by the <xref:System.Text.RegularExpressions.Regex.ToString%2A?displayProperty=nameWithType> method. The comment ends at the first closing parenthesis.
+ The `(?#` *comment*`)` construct lets you include an inline comment in a regular expression. The regular expression engine does not use any part of the comment in pattern matching, although the comment is included in the string that is returned by the <xref:System.Text.RegularExpressions.Regex.ToString*?displayProperty=nameWithType> method. The comment ends at the first closing parenthesis.
 
  The following example repeats the first regular expression pattern from the example in the previous section. It adds two inline comments to the regular expression to indicate whether the comparison is case-sensitive. The regular expression pattern, `\b((?# case-sensitive comparison)D\w+)\s(?ixn)((?#case-insensitive comparison)d\w+)\b`, is defined as follows.
 

@@ -14,7 +14,7 @@ When selecting the filters that are used by the Routing Service, it is important
 
 ### Action
 
-The Action filter inspects the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property. If the contents of the Action header in the message match the filter data value specified in the filter configuration, then this filter returns `true`. The following example defines a `FilterElement` that uses the Action filter to match messages with an action header that contains a value of `http://namespace/contract/operation/`.
+The Action filter inspects the <xref:System.ServiceModel.Channels.MessageHeaders.Action> property. If the contents of the Action header in the message match the filter data value specified in the filter configuration, then this filter returns `true`. The following example defines a `FilterElement` that uses the Action filter to match messages with an action header that contains a value of `http://namespace/contract/operation/`.
 
 ```xml
 <filter name="action1" filterType="Action" filterData="http://namespace/contract/operation/" />

@@ -221,7 +221,7 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 ### To define the methods that implement the discovery proxy functionality
 
-1. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives an online announcement message.
+1. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement*?displayProperty=nameWithType> method. This method is called when the discovery proxy receives an online announcement message.
 
     ```csharp
     // OnBeginOnlineAnnouncement method is called when a Hello message is received by the Proxy
@@ -232,7 +232,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-2. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an announcement message.
+2. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement*?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an announcement message.
 
     ```csharp
     protected override void OnEndOnlineAnnouncement(IAsyncResult result)
@@ -241,7 +241,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-3. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called with the discovery proxy receives an offline announcement message.
+3. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement*?displayProperty=nameWithType> method. This method is called with the discovery proxy receives an offline announcement message.
 
     ```csharp
     // OnBeginOfflineAnnouncement method is called when a Bye message is received by the Proxy
@@ -252,7 +252,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-4. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an offline announcement message.
+4. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement*?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an offline announcement message.
 
     ```csharp
     protected override void OnEndOfflineAnnouncement(IAsyncResult result)
@@ -261,7 +261,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-5. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a find request.
+5. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind*?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a find request.
 
     ```csharp
     // OnBeginFind method is called when a Probe request message is received by the Proxy
@@ -280,7 +280,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-6. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a find request.
+6. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind*?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a find request.
 
     ```csharp
     protected override void OnEndFind(IAsyncResult result)
@@ -289,7 +289,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-7. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a resolve message.
+7. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve*?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a resolve message.
 
     ```csharp
     // OnBeginFind method is called when a Resolve request message is received by the Proxy
@@ -306,7 +306,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-8. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a resolve message.
+8. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve*?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a resolve message.
 
     ```csharp
     protected override EndpointDiscoveryMetadata OnEndResolve(IAsyncResult result)
@@ -315,7 +315,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery operations. For example the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A> and <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A> methods implement the find logic for discovery proxy. When the discovery proxy receives a probe message these methods are executed to send a response back to the client. You may modify the find logic as you wish, for example you can incorporate custom scope matching by algorithms or application specific XML metadata parsing as part of your find operation.
+The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery operations. For example the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind*> and <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind*> methods implement the find logic for discovery proxy. When the discovery proxy receives a probe message these methods are executed to send a response back to the client. You may modify the find logic as you wish, for example you can incorporate custom scope matching by algorithms or application specific XML metadata parsing as part of your find operation.
 
 ### To implement the AsyncResult class
 

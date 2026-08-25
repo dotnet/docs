@@ -22,7 +22,7 @@ Combines two collections into a single collection. The join operation is based o
 Join element In collection _
   [ joinClause _ ]
   [ groupJoinClause ... _ ]
-On key1 Equals key2 [ And key3 Equals key4 [... ]
+On key1 Equals key2 [ And key3 Equals key4 [... ] ]
 ```
 
 ## Parts

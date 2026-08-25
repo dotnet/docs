@@ -8,15 +8,15 @@ ms.custom: https://github.com/dotnet/docs/issues/46089
 
 # Incorrect usage of DynamicResource causes application crash
 
-Beginning with .NET 10 Preview 4, applications using `DynamicResource` incorrectly now crash at runtime.
+Applications that use `DynamicResource` incorrectly now crash at runtime.
 
 ## Version introduced
 
-.NET 10 Preview 4
+.NET 10
 
 ## Previous behavior
 
-Applications that incorrectly initialized `DynamicResource` would continue running without crashing. The values would fall back to defaults, and an `InvalidOperationException` would appear in the output.
+Previously, applications that incorrectly initialized `DynamicResource` would continue running without crashing. The values would fall back to defaults, and an `InvalidOperationException` would appear in the output.
 
 ## New behavior
 

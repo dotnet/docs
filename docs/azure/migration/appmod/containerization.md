@@ -1,7 +1,8 @@
 ---
-title: Containerize your project using GitHub Copilot app modernization for .NET
-description: Learn how to containerize your .NET project using GitHub Copilot app modernization for .NET.
-#customer intent: As a .NET developer, I want to containerize my project using GitHub Copilot App Modernization so that I can modernize my application efficiently.
+title: Containerize your project using GitHub Copilot modernization for .NET
+description: Learn how to containerize your .NET project using GitHub Copilot modernization for .NET.
+
+#customer intent: As a .NET developer, I want to containerize my project using GitHub Copilot modernization so that I can modernize my application efficiently.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
 ms.date: 09/17/2025
@@ -9,9 +10,9 @@ author: JiDong
 ms.author: donji
 ---
 
-# Quickstart: Containerize your project using GitHub Copilot app modernization for .NET
+# Quickstart: Containerize your project using GitHub Copilot modernization for .NET
 
-In this quickstart, you learn how to containerize your project using GitHub Copilot app modernization for .NET. The app modernization tooling uses GitHub Copilot's AI capabilities to:
+In this quickstart, you learn how to containerize your project using GitHub Copilot modernization for .NET. The modernization tooling uses GitHub Copilot's AI capabilities to:
 
 - Analyze your project structure and dependencies
 - Generate Dockerfile configurations
@@ -22,27 +23,33 @@ In this quickstart, you learn how to containerize your project using GitHub Copi
 
 Before you begin, make sure you have:
 
-[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
+[!INCLUDE [github-copilot-app-modernization-prereqs](./includes/github-copilot-app-modernization-prereqs.md)]
 
 ## Containerize your project
 
-The GitHub Copilot app modernization for .NET containerization feature helps you containerize your project. To start the containerization process, complete the following steps:
+The GitHub Copilot modernization for .NET containerization feature helps you containerize your project. To start the containerization process, complete the following steps:
 
 1. Open your project in Visual Studio.
 
-1. Enable **appModernizationDeploy** in the GitHub Copilot toolbox.
+1. Run App Assessment and open the Assessment Report.
+
+1. Fix the cloud readiness issues before running the **Docker Containerization** task.
+
+1. Make sure you enable **appModernizationDeploy** in the GitHub Copilot toolbox.
 
     :::image type="content" source="../../media/appmod-dotnet-containerization-tool-selection.png" alt-text="Screenshot that shows containerization tool selection.":::
 
-1. Start containerization by using one of these approaches:
+1. Start containerization by using one of the following approaches:
 
-    - **Containerize from Assessment Report**: In the assessment report, select **Run Task** for the Docker Containerization issue.
+    - **Containerize from Assessment Report**: In the assessment report, select **Run Task** for the Docker Containerization task.
 
         :::image type="content" source="media/containerize-assessment-report.png" alt-text="Screenshot that shows containerization task in assessment report.":::
 
     - **Use a containerization prompt**: You can input the following prompt in Copilot chat to containerize your project:
 
-        *Scan my project and help me plan how to containerize my application using the #appmod-get-containerization-plan tool. Execute the plan. The end goal is to have Dockerfiles that are able to be built.*
+        *Inspect my project and help me plan how to containerize my application using the #appmod-get-containerization-plan tool.
+        Execute the plan.
+        The end goal is to have Dockerfiles that are able to be built.*
 
         :::image type="content" source="media/containerization-prompt.png" alt-text="Screenshot that shows how to start the containerization process in GitHub Copilot using a prompt.":::
 
@@ -58,3 +65,7 @@ The GitHub Copilot app modernization for .NET containerization feature helps you
 
 - Use Claude Sonnet 4 or later models for the best results.
 - Copilot might take a few iterations to fix containerization errors.
+
+## Additional resources
+
+- We leverage certain tools in Containerization Assist. [Learn more](https://aka.ms/aks/containerization-assist)

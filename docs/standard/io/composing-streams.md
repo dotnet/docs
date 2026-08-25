@@ -3,10 +3,10 @@ title: Transform data by composing streams
 description: "Learn how stream composition can transform data. Data passing through the stream is automatically altered."
 #ms.topic: concept-article (for a future work item that rewrites this article in this format)
 ms.date: 08/02/2024
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "streams, base streams"
   - "I/O [.NET], composing streams"
   - "Stream class, composing streams"
@@ -22,7 +22,7 @@ A *backing store* is a storage medium, such as a disk or memory. Each type of ba
 
 Each stream type reads and writes bytes from and to its given backing store. Streams that connect to backing stores are called *base streams*. Base streams have constructors with the parameters necessary to connect the stream to the backing store. For example, <xref:System.IO.FileStream> has constructors that specify an access mode parameter, which determines if the file is read from, written to, or both.
 
-The design of the <xref:System.IO> classes provides simplified stream composition. You can attach base streams to one or more pass-through streams that provide the functionality you want. You can attach a reader or writer to the end of the chain, so the preferred types can be read or written easily.  
+The design of the <xref:System.IO> classes provides simplified stream composition. You can attach base streams to one or more pass-through streams that provide the functionality you want. You can attach a reader or writer to the end of the chain, so the preferred types can be read or written easily.
 
 ## Prerequisites
 
@@ -95,9 +95,9 @@ The following snippet provides the `CipherStream` class, which uses a basic shif
 ## See also
 
 - <xref:System.IO.StreamReader>
-- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>
-- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>
+- <xref:System.IO.StreamReader.ReadLine*?displayProperty=nameWithType>
+- <xref:System.IO.StreamReader.Peek*?displayProperty=nameWithType>
 - <xref:System.IO.FileStream>
 - <xref:System.IO.BinaryReader>
-- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>
-- <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=nameWithType>
+- <xref:System.IO.BinaryReader.ReadByte*?displayProperty=nameWithType>
+- <xref:System.IO.BinaryReader.PeekChar*?displayProperty=nameWithType>

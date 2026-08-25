@@ -2,6 +2,7 @@
 title: Nameof
 description: Learn about the nameof operator, a metaprogramming feature that allows you to produce the name of any symbol in your source code.
 ms.date: 11/12/2020
+ai-usage: ai-assisted
 ---
 
 # Nameof
@@ -77,7 +78,33 @@ The reason why the syntax is different is to align with other F# intrinsic opera
 
 ## Nameof in pattern matching
 
-The [`nameof` pattern](pattern-matching.md#nameof-pattern) lets you use `nameof` in a pattern match expression like so:
+The [`nameof` pattern](pattern-matching.md#nameof-pattern) lets you use `nameof` in a pattern match expression. This is particularly useful when matching string values against the names of symbols in your code, providing compile-time safety and automatic updates when you refactor.
+
+A practical example is deserializing events or messages where string values represent type or case names:
+
+```fsharp
+type EventType =
+    | OrderCreated
+    | OrderShipped
+    | OrderDelivered
+
+let handleEvent eventName data =
+    match eventName with
+    | nameof OrderCreated -> printfn "Processing order creation: %s" data
+    | nameof OrderShipped -> printfn "Processing order shipment: %s" data
+    | nameof OrderDelivered -> printfn "Processing order delivery: %s" data
+    | _ -> printfn "Unknown event type: %s" eventName
+
+handleEvent "OrderCreated" "Order #123" // matches first case
+```
+
+Using `nameof` instead of string literals like `"OrderCreated"` provides several benefits:
+
+- If you rename a discriminated union case, the pattern automatically updates.
+- The compiler prevents typos by ensuring the symbol exists.
+- Your code remains consistent during refactoring.
+
+You can also use `nameof` with parameters:
 
 ```fsharp
 let f (str: string) =

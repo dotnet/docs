@@ -1,0 +1,27 @@
+---
+description: "Learn more about: FS0410: A type is less accessible than the value, member or type it is used in"
+title: "Compiler error FS0410"
+ms.date: 10/12/2025
+f1_keywords:
+  - "FS0410"
+helpviewer_keywords:
+  - "FS0410"
+---
+
+# FS0410: A type is less accessible than the value, member or type it is used in
+
+This message is given when you use a type that is less [accessible](../access-control.md) than the value, member or type it is used in.
+
+For example:
+
+[!code-fsharp[FS0410-less-accessible-type](~/samples/snippets/fsharp/compiler-messages/fs0410.fsx#L8-L11)]
+
+Notice that in this example, the type `Person` is `private`, but the function `_getName` is `public`. Also, the function `_getName` uses the type `Person` in its signature, which is not allowed since `Person` is less accessible than `_getName`.
+
+The example above causes the compiler to display the following message:
+
+```text
+FS0410: The type 'Person' is less accessible than the value, member or type 'val _getName: p: Person.Person -> string' it is used in.
+```
+
+A workaround would be changing the `Person` type to public accessibility, or the `_getName` function to private accessibility.

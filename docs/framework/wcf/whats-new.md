@@ -78,10 +78,10 @@ The following table describes the settings that have changed and where to find a
 
 |Property|On|New Default|For more information see|
 |--------------|--------|-----------------|------------------------------|
-|channelInitializationTimeout|<xref:System.ServiceModel.NetTcpBinding>|30 seconds|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout%2A>|
-|listenBacklog|<xref:System.ServiceModel.NetTcpBinding>|12 * number of processors|<xref:System.ServiceModel.NetTcpBinding.ListenBacklog%2A>|
-|maxPendingAccepts|ConnectionOrientedTransportBindingElement<br /><br /> SMSvcHost.exe|2 * number of processors for transport<br /><br /> 4 \* number of processors for SMSvcHost.exe|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts%2A> [Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
-|maxPendingConnections|ConnectionOrientedTransportBindingElement|12 * number of processors|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections%2A>|
+|channelInitializationTimeout|<xref:System.ServiceModel.NetTcpBinding>|30 seconds|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout*>|
+|listenBacklog|<xref:System.ServiceModel.NetTcpBinding>|12 * number of processors|<xref:System.ServiceModel.NetTcpBinding.ListenBacklog*>|
+|maxPendingAccepts|ConnectionOrientedTransportBindingElement<br /><br /> SMSvcHost.exe|2 * number of processors for transport<br /><br /> 4 \* number of processors for SMSvcHost.exe|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts*> [Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
+|maxPendingConnections|ConnectionOrientedTransportBindingElement|12 * number of processors|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections*>|
 |receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
 
 ## Configuring WCF Services in Code
@@ -90,7 +90,7 @@ Windows Communication Foundation (WCF) allows developers to configure services u
 
 ## ChannelFactory Caching
 
-WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> class to create a communication channel with a WCF service. Creating <xref:System.ServiceModel.ChannelFactory%601> instances incurs some overhead because it involves the following operations:
+WCF client applications use the <xref:System.ServiceModel.ChannelFactory`1> class to create a communication channel with a WCF service. Creating <xref:System.ServiceModel.ChannelFactory`1> instances incurs some overhead because it involves the following operations:
 
 1. Constructing the <xref:System.ServiceModel.Description.ContractDescription> tree
 
@@ -104,7 +104,7 @@ To help minimize this overhead, WCF can cache channel factories when you are usi
 
 ## Compression and the Binary Encoder
 
-Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. For more information, see [Choosing a Message Encoder](./feature-details/choosing-a-message-encoder.md).
+Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. For more information, see [Choosing a Message Encoder](./feature-details/choosing-a-message-encoder.md).
 
 ## UDP
 
@@ -146,7 +146,7 @@ In Visual Studio 2010, WebServiceHost automatically created a default endpoint w
 
 ## IHttpCookieContainerManager
 
-This interface, exposed by <xref:System.ServiceModel.Channels.IChannelFactory%601>, makes working with cookies on the client side much easier. When AllowCookies is set to true on the binding, you can access cookies by using the following code:
+This interface, exposed by <xref:System.ServiceModel.Channels.IChannelFactory`1>, makes working with cookies on the client side much easier. When AllowCookies is set to true on the binding, you can access cookies by using the following code:
 
 ```csharp
 IHttpCookieContainerManager cookieManager = factory.GetProperty<IHttpCookieContainerManager>();

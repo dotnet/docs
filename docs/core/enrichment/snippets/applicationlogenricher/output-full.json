@@ -1,0 +1,14 @@
+{
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Program",
+  "Message": "This is a sample log message",
+  "State": {
+    "Message": "This is a sample log message",
+    "service.name": "servicelogenricher",
+    "deployment.environment": "Production",
+    "DeploymentRing": "testring",
+    "service.version": "1.2.3",
+    "{OriginalFormat}": "This is a sample log message"
+  }
+}

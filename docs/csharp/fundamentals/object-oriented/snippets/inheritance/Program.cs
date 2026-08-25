@@ -7,16 +7,16 @@ class Program
         //<SnippetUseClasses>
         // Create an instance of WorkItem by using the constructor in the
         // base class that takes three arguments.
-        WorkItem item = new WorkItem("Fix Bugs",
-                                    "Fix all bugs in my code branch",
-                                    new TimeSpan(3, 4, 0, 0));
+        WorkItem item = new("Fix Bugs",
+                    "Fix all bugs in my code branch",
+                    new TimeSpan(3, 4, 0, 0));
 
         // Create an instance of ChangeRequest by using the constructor in
         // the derived class that takes four arguments.
-        ChangeRequest change = new ChangeRequest("Change Base Class Design",
-                                                "Add members to the class",
-                                                new TimeSpan(4, 0, 0),
-                                                1);
+        ChangeRequest change = new("Change Base Class Design",
+                          "Add members to the class",
+                          new TimeSpan(4, 0, 0),
+                          1);
 
         // Use the ToString method defined in WorkItem.
         Console.WriteLine(item.ToString());

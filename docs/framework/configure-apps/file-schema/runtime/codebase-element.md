@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 ---
 
-# \<codeBase> Element
+# `<codeBase>` Element
 
 Specifies where the common language runtime can find an assembly.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<codeBase>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<assemblyBinding>`](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<dependentAssembly>`](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<codeBase>`
 
 ## Syntax
 
@@ -62,11 +62,11 @@ None.
 
 ## Remarks
 
-For the runtime to use the **\<codeBase>** setting in a machine configuration file or publisher policy file, the file must also redirect the assembly version. Application configuration files can have a codebase setting without redirecting the assembly version. After determining which assembly version to use, the runtime applies the codebase setting from the file that determines the version. If no codebase is indicated, the runtime probes for the assembly in the usual way.
+For the runtime to use the `<codeBase>` setting in a machine configuration file or publisher policy file, the file must also redirect the assembly version. Application configuration files can have a codebase setting without redirecting the assembly version. After determining which assembly version to use, the runtime applies the codebase setting from the file that determines the version. If no codebase is indicated, the runtime probes for the assembly in the usual way.
 
 If the assembly has a strong name, the codebase setting can be anywhere on the local intranet or the Internet. If the assembly is a private assembly, the codebase setting must be a path relative to the application's directory.
 
-For assemblies without a strong name, version is ignored and the loader uses the first appearance of \<codebase> inside \<dependentAssembly>. If there is an entry in the application configuration file that redirects binding to another assembly, the redirection will take precedence even if the assembly version doesn't match the binding request.
+For assemblies without a strong name, version is ignored and the loader uses the first appearance of `<codebase>` inside `<dependentAssembly>`. If there is an entry in the application configuration file that redirects binding to another assembly, the redirection will take precedence even if the assembly version doesn't match the binding request.
 
 ## Example
 

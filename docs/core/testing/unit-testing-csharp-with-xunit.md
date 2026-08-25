@@ -3,7 +3,8 @@ title: Unit testing C# code in .NET using dotnet test and xUnit
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
 author: ardalis
 ms.author: wiwagn
-ms.date: 03/07/2024
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 # Unit testing C# in .NET using dotnet test and xUnit
 
@@ -138,7 +139,7 @@ Update the *PrimeService.Tests* project:
               var primeService = new PrimeService();
               bool result = primeService.IsPrime(1);
 
-              Assert.False(result, "1 should not be prime");
+              Assert.False(result, "1 shouldn't be prime");
           }
       }
   }
@@ -169,7 +170,7 @@ Add prime number tests for 0 and -1. You *could* copy the test created in the pr
 var primeService = new PrimeService();
 bool result = primeService.IsPrime(1);
 
-Assert.False(result, "1 should not be prime");
+Assert.False(result, "1 shouldn't be prime");
 ```
 
 Copying test code when only a parameter changes results in code duplication and test bloat. The following xUnit attributes enable writing a suite of similar tests:
@@ -186,7 +187,7 @@ public void IsPrime_InputIs1_ReturnFalse()
     var primeService = new PrimeService();
     bool result = primeService.IsPrime(1);
 
-    Assert.False(result, "1 should not be prime");
+    Assert.False(result, "1 shouldn't be prime");
 }
 ```
 
@@ -215,7 +216,7 @@ public bool IsPrime(int candidate)
 
 Following the TDD approach, add more failing tests, then update the target code. See the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
 
-The completed `IsPrime` method is not an efficient algorithm for testing primality.
+The completed `IsPrime` method isn't an efficient algorithm for testing primality.
 
 ### Additional resources
 

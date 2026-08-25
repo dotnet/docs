@@ -33,7 +33,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Options
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

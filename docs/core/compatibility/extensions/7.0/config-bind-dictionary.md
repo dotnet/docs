@@ -5,7 +5,7 @@ ms.date: 08/02/2023
 ---
 # Binding config to dictionary extends values
 
-When binding a configuration using a <xref:System.Collections.Generic.Dictionary%602> object where the value is a mutable collection type, binding to the same key more than once now extends the values collection instead of replacing the whole collection with the new value.
+When binding a configuration using a <xref:System.Collections.Generic.Dictionary`2> object where the value is a mutable collection type, binding to the same key more than once now extends the values collection instead of replacing the whole collection with the new value.
 
 ## Version introduced
 

@@ -7,13 +7,13 @@ helpviewer_keywords:
   - "<GCCpuGroup> element"
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
 ---
-# \<GCCpuGroup> Element
+# `<GCCpuGroup>` Element
 
 Specifies whether garbage collection supports multiple CPU groups.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<GCCpuGroup>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<GCCpuGroup>`
 
 ## Syntax
 

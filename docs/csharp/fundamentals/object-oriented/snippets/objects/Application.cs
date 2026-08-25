@@ -19,7 +19,7 @@ namespace Example
         {
             // Create  struct instance and initialize by using "new".
             // Memory is allocated on thread stack.
-            Person p1 = new Person("Alex", 9);
+            Person p1 = new("Alex", 9);
             Console.WriteLine($"p1 Name = {p1.Name} Age = {p1.Age}");
 
             // Create  new struct object. Note that  struct can be initialized

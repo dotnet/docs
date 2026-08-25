@@ -42,7 +42,7 @@ More information about encrypting sections of configuration files can be found b
 
 In Web-hosted scenarios, it is possible to have services in subdirectories of services. In these situations, configuration values for the service in the subdirectory are calculated by examining values in Machine.config and successively merging with any Web.config files in parent directories moving down the directory tree and finally merging the Web.config file in the directory that contains the service. The default behavior for most configuration elements is to allow configuration files in subdirectories to override the values set in parent directories. In certain situations it may be desirable to prevent configuration files in subdirectories from overriding values set in parent directory configuration.
 
-The .NET Framework provides a way to lock configuration file elements so that configurations that override locked configuration elements throw run-time exceptions.
+The .NET Framework provides a way to lock configuration file elements so that configurations that override locked configuration elements throw runtime exceptions.
 
 A configuration element can be locked by specifying the `lockItem` attribute for a node in the configuration file, for example, to lock the CalculatorServiceBehavior node in the configuration file so that calculator services in nested configuration files cannot change the behavior, the following configuration can be used.
 

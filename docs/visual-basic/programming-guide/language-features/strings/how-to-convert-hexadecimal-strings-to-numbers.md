@@ -12,7 +12,7 @@ ms.assetid: 76675807-eadb-4c08-bd50-e6c6ff4b8ced
 ---
 # How to: Convert Hexadecimal Strings to Numbers (Visual Basic)
 
-This example converts a hexadecimal string to an integer using the <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method.
+This example converts a hexadecimal string to an integer using the <xref:System.Convert.ToInt32*?displayProperty=nameWithType> method.
 
 ## To convert a hexadecimal string to a number
 
@@ -31,5 +31,5 @@ This example converts a hexadecimal string to an integer using the <xref:System.
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
-- <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Hex*>
+- <xref:System.Convert.ToInt32*?displayProperty=nameWithType>

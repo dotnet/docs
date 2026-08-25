@@ -12,11 +12,11 @@ Starting in .NET 10, if you specify <xref:System.Runtime.InteropServices.DllImpo
 
 ## Version introduced
 
-.NET 10 Preview 5
+.NET 10
 
 ## Previous behavior
 
-When <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> was specified as the only search flag, the runtime searched the assembly directory first. If the library was not found, it fell back to the operating system's default library search behavior.
+Previously, when <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> was specified as the only search flag, the runtime searched the assembly directory first. If the library was not found, it fell back to the operating system's default library search behavior.
 
 For example, with the following code, the runtime would search the assembly directory and then fall back to the OS search paths.
 
@@ -27,7 +27,7 @@ public static extern void ExampleMethod();
 
 ## New behavior
 
-When <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> is specified as the only search flag, the runtime searches only in the assembly directory. It *doesn't* fall back to the operating system's default library search behavior.
+Starting in .NET 10, when <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> is specified as the only search flag, the runtime searches only in the assembly directory. It *doesn't* fall back to the operating system's default library search behavior.
 
 The previous code example now only searches the assembly directory for *example.dll*. If the library is not found there, a <xref:System.DllNotFoundException> is thrown.
 

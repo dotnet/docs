@@ -23,42 +23,42 @@ Streaming support from SQL Server introduces new functionality in the <xref:Syst
 
 The following members were added to <xref:System.Data.SqlClient.SqlDataReader> to enable streaming support from SQL Server:
 
-- <xref:System.Data.SqlClient.SqlDataReader.IsDBNullAsync%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetFieldValue%2A?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A>
-- <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A>
+- <xref:System.Data.SqlClient.SqlDataReader.IsDBNullAsync*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetFieldValue*?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetStream*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetTextReader*>
+- <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader*>
 
 The following members were added to <xref:System.Data.Common.DbDataReader> to enable streaming support from SQL Server:
 
-- <xref:System.Data.Common.DbDataReader.GetFieldValue%2A>
-- <xref:System.Data.Common.DbDataReader.GetStream%2A>
-- <xref:System.Data.Common.DbDataReader.GetTextReader%2A>
+- <xref:System.Data.Common.DbDataReader.GetFieldValue*>
+- <xref:System.Data.Common.DbDataReader.GetStream*>
+- <xref:System.Data.Common.DbDataReader.GetTextReader*>
 
 ## Streaming Support to SQL Server
 
 Streaming support to SQL Server introduces new functionality in the <xref:System.Data.SqlClient.SqlParameter> class so it can accept and react to <xref:System.Xml.XmlReader>, <xref:System.IO.Stream>, and <xref:System.IO.TextReader> objects. <xref:System.Data.SqlClient.SqlParameter> is used to pass parameters to queries and stored procedures.
 
-Disposing a <xref:System.Data.SqlClient.SqlCommand> object or calling <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> must cancel any streaming operation. If an application sends <xref:System.Threading.CancellationToken>, cancellation is not guaranteed.
+Disposing a <xref:System.Data.SqlClient.SqlCommand> object or calling <xref:System.Data.SqlClient.SqlCommand.Cancel*> must cancel any streaming operation. If an application sends <xref:System.Threading.CancellationToken>, cancellation is not guaranteed.
 
-The following <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> types will accept a <xref:System.Data.SqlClient.SqlParameter.Value%2A> of <xref:System.IO.Stream>:
+The following <xref:System.Data.SqlClient.SqlParameter.SqlDbType*> types will accept a <xref:System.Data.SqlClient.SqlParameter.Value*> of <xref:System.IO.Stream>:
 
 - **Binary**
 - **VarBinary**
 
-The following <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> types will accept a <xref:System.Data.SqlClient.SqlParameter.Value%2A> of <xref:System.IO.TextReader>:
+The following <xref:System.Data.SqlClient.SqlParameter.SqlDbType*> types will accept a <xref:System.Data.SqlClient.SqlParameter.Value*> of <xref:System.IO.TextReader>:
 
 - **Char**
 - **NChar**
 - **NVarChar**
 - **Xml**
 
-The **Xml**<xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> type will accept a <xref:System.Data.SqlClient.SqlParameter.Value%2A> of <xref:System.Xml.XmlReader>.
+The **Xml**<xref:System.Data.SqlClient.SqlParameter.SqlDbType*> type will accept a <xref:System.Data.SqlClient.SqlParameter.Value*> of <xref:System.Xml.XmlReader>.
 
-<xref:System.Data.SqlClient.SqlParameter.SqlValue%2A> can accept values of type <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream>.
+<xref:System.Data.SqlClient.SqlParameter.SqlValue*> can accept values of type <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream>.
 
-The <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream> object will be transferred up to the value defined by the <xref:System.Data.SqlClient.SqlParameter.Size%2A>.
+The <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream> object will be transferred up to the value defined by the <xref:System.Data.SqlClient.SqlParameter.Size*>.
 
 ## Sample: Streaming from SQL Server
 

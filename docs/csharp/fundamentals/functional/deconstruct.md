@@ -96,7 +96,7 @@ The following example defines two `Deconstruct` extension methods for the <xref:
 
 ## Extension method for system types
 
-Some system types provide the `Deconstruct` method as a convenience. For example, the <xref:System.Collections.Generic.KeyValuePair%602?displayProperty=nameWithType> type provides this functionality. When you're iterating over a <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, each element is a `KeyValuePair<TKey, TValue>` and can be deconstructed. Consider the following example:
+Some system types provide the `Deconstruct` method as a convenience. For example, the <xref:System.Collections.Generic.KeyValuePair`2?displayProperty=nameWithType> type provides this functionality. When you're iterating over a <xref:System.Collections.Generic.Dictionary`2?displayProperty=nameWithType>, each element is a `KeyValuePair<TKey, TValue>` and can be deconstructed. Consider the following example:
 
 :::code source="./snippets/deconstructing-tuples/deconstruct-kvp.cs" id="KeyValuePair":::
 

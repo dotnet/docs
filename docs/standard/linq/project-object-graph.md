@@ -496,7 +496,7 @@ Sub Main()
 End Sub
 ```
 
-The result of the LINQ query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.
+The result of the LINQ query is returned as an <xref:System.Collections.Generic.IEnumerable`1> of `PurchaseOrderItem`. The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable`1> of `PurchaseOrderItem`. The code uses the <xref:System.Linq.Enumerable.ToList*> extension method to create a <xref:System.Collections.Generic.List`1> collection from the results of the query.
 
 This example produces the following output:
 
@@ -539,5 +539,5 @@ ShipDate: 5/21/1999
 
 ## See also
 
-- <xref:System.Linq.Enumerable.Select%2A>
-- <xref:System.Linq.Enumerable.ToList%2A>
+- <xref:System.Linq.Enumerable.Select*>
+- <xref:System.Linq.Enumerable.ToList*>

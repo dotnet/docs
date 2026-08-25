@@ -103,7 +103,7 @@ The mapping shown for the `get` methods on the listed properties.
 |Year|Year(`this`)|Not supported against SQL Server 2005.|
 
 > [!NOTE]
-> The <xref:System.DateTimeOffset.Equals%2A> method returns `true` if the compared <xref:System.DateTimeOffset> objects are equal; `false` otherwise. The <xref:System.DateTimeOffset.CompareTo%2A> method returns 0, 1, or -1 depending on whether the compared <xref:System.DateTimeOffset> object is equal, greater than, or less than, respectively.
+> The <xref:System.DateTimeOffset.Equals*> method returns `true` if the compared <xref:System.DateTimeOffset> objects are equal; `false` otherwise. The <xref:System.DateTimeOffset.CompareTo*> method returns 0, 1, or -1 depending on whether the compared <xref:System.DateTimeOffset> object is equal, greater than, or less than, respectively.
 
 ## System.DateTimeOffset Method (Static) Mapping
 
@@ -125,7 +125,7 @@ The mapping shown for the `get` methods on the listed properties.
 |Seconds|Second(`this`)|Not supported against SQL Server 2005.|
 
 > [!NOTE]
-> The <xref:System.TimeSpan.Equals%2A> method returns `true` if the compared <xref:System.TimeSpan> objects are equal; `false` otherwise. The <xref:System.TimeSpan.CompareTo%2A> method returns 0, 1, or -1 depending on whether the compared <xref:System.TimeSpan> object is equal, greater than, or less than, respectively.
+> The <xref:System.TimeSpan.Equals*> method returns `true` if the compared <xref:System.TimeSpan> objects are equal; `false` otherwise. The <xref:System.TimeSpan.CompareTo*> method returns 0, 1, or -1 depending on whether the compared <xref:System.TimeSpan> object is equal, greater than, or less than, respectively.
 
 ### DatePart Function
 

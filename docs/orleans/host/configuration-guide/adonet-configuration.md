@@ -9,6 +9,12 @@ ms.topic: how-to
 
 The following sections contain links to SQL scripts for configuring your database and the corresponding ADO.NET invariant used to configure ADO.NET providers in Orleans. Customize these scripts as needed for your deployment. Before executing scripts for Clustering, Persistence, or Reminders, you need to create the main tables using the Main scripts.
 
+If you are upgrading an existing ADO.NET schema, also apply the appropriate migration scripts for the providers you use:
+
+- [Clustering migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Clustering.AdoNet/Migrations)
+- [Persistence migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Migrations)
+- [Reminders migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Reminders.AdoNet/Migrations)
+
 ## Main scripts
 
 | Database | Script | NuGet package| ADO.NET invariant |

@@ -68,11 +68,11 @@ dotnet tool uninstall PACKAGEID --tool-path "%ProgramFiles%\dotnet-tools"
 
 # [Linux](#tab/linux)
 
-[!INCLUDE [elevated-access-unix](../../../includes/elevated-access-unix.md)]
+[!INCLUDE [elevated-access-unix](includes/elevated-access-unix.md)]
 
 # [macOS](#tab/macos)
 
-[!INCLUDE [elevated-access-unix](../../../includes/elevated-access-unix.md)]
+[!INCLUDE [elevated-access-unix](includes/elevated-access-unix.md)]
 
 ---
 

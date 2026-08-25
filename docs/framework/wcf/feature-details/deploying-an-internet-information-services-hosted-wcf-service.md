@@ -32,7 +32,7 @@ The installation process for .NET Framework automatically registers WCF with IIS
 
 - Windows 7 and Windows Server 2003: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../servicemodelreg-exe.md) tool to register WCF with IIS. To use this tool, enter `ServiceModelReg.exe /i /x` in [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
-- Windows 7: Finally, you must verify that ASP.NET is configured to use .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
+- Windows 7: Finally, you must verify that ASP.NET is configured to use .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `-i` option. For more information, see [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
 

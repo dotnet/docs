@@ -87,7 +87,7 @@ The syntax for a call to a `Function` procedure is as follows.
 
 `If ((` *functionname* `[(` *argumentlist* `)] / 3) <=`  *expression* `) Then`
 
-When you call a `Function` procedure, you do not have to use its return value. If you do not, all the actions of the function are performed, but the return value is ignored. <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> is often called in this manner.
+When you call a `Function` procedure, you do not have to use its return value. If you do not, all the actions of the function are performed, but the return value is ignored. <xref:Microsoft.VisualBasic.Interaction.MsgBox*> is often called in this manner.
 
 ### Illustration of declaration and call
 

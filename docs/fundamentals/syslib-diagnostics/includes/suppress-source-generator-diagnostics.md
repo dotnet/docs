@@ -2,7 +2,7 @@
 
 It's recommended that you use one of the workarounds when possible. However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. If the `SYSLIB1XXX` source generator diagnostic doesn't surface as an error, you can suppress the warning in code or in your project file.
 
-To suppress the warnings in code:
+To suppress the warnings in code (replace the diagnostic ID as necessary):
 
 ```csharp
 // Disable the warning.
@@ -15,12 +15,12 @@ To suppress the warnings in code:
 #pragma warning restore SYSLIB1006
 ```
 
-To suppress the warnings in a project file:
+To suppress the warnings in a project file (replace the diagnostic IDs as necessary):
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-   <TargetFramework>net6.0</TargetFramework>
+   <TargetFramework>net10.0</TargetFramework>
    <!-- NoWarn below suppresses SYSLIB1002 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB1002</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->

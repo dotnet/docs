@@ -89,7 +89,7 @@ The NRBF payload consists of serialization records that represent the serialized
 The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>.
 
 > [!NOTE]
-> An attacker could create a payload with cycles (example: class or an array of objects with a reference to itself). The <xref:System.Formats.Nrbf.SerializationRecord.Id> returns an instance of <xref:System.Formats.Nrbf.SerializationRecordId> which implements <xref:System.IEquatable%601> and amongst other things, it can be used to detect cycles in decoded records.
+> An attacker could create a payload with cycles (example: class or an array of objects with a reference to itself). The <xref:System.Formats.Nrbf.SerializationRecord.Id> returns an instance of <xref:System.Formats.Nrbf.SerializationRecordId> which implements <xref:System.IEquatable`1> and amongst other things, it can be used to detect cycles in decoded records.
 
 <xref:System.Formats.Nrbf.SerializationRecord> exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches*>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
@@ -124,12 +124,12 @@ static Animal Pseudocode(Stream payload)
 
 There are more than a dozen different serialization [record types](/openspecs/windows_protocols/ms-nrbf/). This library provides a set of abstractions, so you only need to learn a few of them:
 
-- <xref:System.Formats.Nrbf.PrimitiveTypeRecord%601>: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan`, and `DateTime`).
+- <xref:System.Formats.Nrbf.PrimitiveTypeRecord`1>: describes all primitive types natively supported by the NRBF (`string`, `bool`, `byte`, `sbyte`, `char`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `decimal`, `TimeSpan`, and `DateTime`).
   - Exposes the value via the `Value` property.
-  - <xref:System.Formats.Nrbf.PrimitiveTypeRecord%601> derives from the non-generic <xref:System.Formats.Nrbf.PrimitiveTypeRecord>, which also exposes a <xref:System.Formats.Nrbf.PrimitiveTypeRecord.Value> property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
+  - <xref:System.Formats.Nrbf.PrimitiveTypeRecord`1> derives from the non-generic <xref:System.Formats.Nrbf.PrimitiveTypeRecord>, which also exposes a <xref:System.Formats.Nrbf.PrimitiveTypeRecord.Value> property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
 - <xref:System.Formats.Nrbf.ClassRecord>: describes all `class` and `struct` besides the aforementioned  primitive types.
 - <xref:System.Formats.Nrbf.ArrayRecord>: describes all array records, including jagged and multi-dimensional arrays.
-- <xref:System.Formats.Nrbf.SZArrayRecord%601>: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a <xref:System.Formats.Nrbf.SerializationRecord>.
+- <xref:System.Formats.Nrbf.SZArrayRecord`1>: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a <xref:System.Formats.Nrbf.SerializationRecord>.
 
 ```csharp
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream
@@ -256,7 +256,7 @@ ComplexType3D[] output = records.OfType<ClassRecord>().Select(classRecord => new
 
 `SZArrayRecord<T>` defines the core behavior for NRBF single dimensional, zero-indexed array records and provides a base for derived classes. The `T` can be one of the natively supported primitive types or <xref:System.Formats.Nrbf.SerializationRecord>.
 
-It provides a <xref:System.Formats.Nrbf.SZArrayRecord%601.Length> property and a <xref:System.Formats.Nrbf.SZArrayRecord%601.GetArray*> overload that returns `T[]`.
+It provides a <xref:System.Formats.Nrbf.SZArrayRecord`1.Length> property and a <xref:System.Formats.Nrbf.SZArrayRecord`1.GetArray*> overload that returns `T[]`.
 
 ```csharp
 [Serializable]

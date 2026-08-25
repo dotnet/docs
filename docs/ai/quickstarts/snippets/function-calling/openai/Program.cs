@@ -8,7 +8,7 @@ string? model = config["ModelName"];
 string? key = config["OpenAIKey"];
 
 IChatClient client =
-    new ChatClientBuilder(new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
+    new ChatClientBuilder(new OpenAIClient(key).GetChatClient(model ?? "gpt-5").AsIChatClient())
     .UseFunctionInvocation()
     .Build();
 // </SnippetGetChatClient>
@@ -25,7 +25,7 @@ var chatOptions = new ChatOptions
         return "Periods of rain or drizzle, 15 C";
     },
     "get_current_weather",
-    "Get the current weather in a given location")]
+    "Gets the current weather in a given location")]
 };
 // </SnippetAddOptions>
 

@@ -14,7 +14,7 @@ Sometimes you want to filter for an element even though you're not sure it exist
 
 ## Example: Search that doesn't trigger an exception when the target element doesn't exist
 
-In the following example, the `Child5` element doesn't have a `Type` child element, but the query still executes correctly. The example uses the <xref:System.Xml.Linq.Extensions.Elements%2A> extension method.
+In the following example, the `Child5` element doesn't have a `Type` child element, but the query still executes correctly. The example uses the <xref:System.Xml.Linq.Extensions.Elements*> extension method.
 
 ```csharp
 XElement root = XElement.Parse(@"<Root>
@@ -171,9 +171,9 @@ Child Four Text
 
 ## See also
 
-- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Attribute*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XContainer.Elements*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.Extensions.Elements*?displayProperty=nameWithType>
 - [Standard Query Operators Overview (C#)](../../csharp/linq/standard-query-operators/index.md)
 - [Projection Operations (C#)](../../csharp/linq/standard-query-operators/projection-operations.md)
 - [Basic Queries (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)

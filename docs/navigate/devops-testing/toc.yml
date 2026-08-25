@@ -32,7 +32,7 @@ items:
             href: ../../devops/dotnet-secure-github-action.md
             displayName: codeql,security,vulnerability,source scan
   - name: Testing
-    displayName: xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test
+    displayName: xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test,web test,Microsoft.Testing.Platform,MTP,testing platform,test runner
     items:
       - name: Overview
         href: ../../core/testing/index.md
@@ -40,80 +40,53 @@ items:
         href: ../../core/testing/unit-testing-best-practices.md
       - name: Test frameworks
         items:
-          - name: xUnit
-            items:
-              - name: C# unit testing
-                href: ../../core/testing/unit-testing-csharp-with-xunit.md
-              - name: F# unit testing
-                href: ../../core/testing/unit-testing-fsharp-with-xunit.md
-              - name: VB unit testing
-                href: ../../core/testing/unit-testing-visual-basic-with-xunit.md
-              - name: Microsoft.Testing.Platform support in xUnit.net v3
-                href: https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
-              - name: Organize a project and test with xUnit
-                href: ../../core/tutorials/testing-with-cli.md
-                displayName: tutorials, cli
-              - name: Generate unit tests with GitHub Copilot
-                href: ../../core/testing/unit-testing-with-copilot.md
-              - name: Mutation testing
-                href: ../../core/testing/mutation-testing.md
-          - name: NUnit
-            items:
-              - name: C# unit testing
-                href: ../../core/testing/unit-testing-csharp-with-nunit.md
-              - name: F# unit testing
-                href: ../../core/testing/unit-testing-fsharp-with-nunit.md
-              - name: VB unit testing
-                href: ../../core/testing/unit-testing-visual-basic-with-nunit.md
-              - name: Microsoft.Testing.Platform support (NUnit runner)
-                href: ../../core/testing/unit-testing-nunit-runner-intro.md
           - name: MSTest
             items:
               - name: Overview
                 href: ../../core/testing/unit-testing-mstest-intro.md
-              - name: Migrate MSTest from v1 to v3
-                href: ../../core/testing/unit-testing-mstest-migration-from-v1-to-v3.md
-              - name: Migrate from MSTest v3 to MSTest v4
-                href: ../../core/testing/unit-testing-mstest-migration-v3-v4.md
-              - name: Microsoft.Testing.Platform support (MSTest runner)
-                href: ../../core/testing/unit-testing-mstest-runner-intro.md
               - name: Getting started
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-getting-started.md
-                  - name: MSTest SDK
-                    href: ../../core/testing/unit-testing-mstest-sdk.md
+                  - name: Getting started with C#
+                    href: ../../core/testing/unit-testing-csharp-with-mstest.md
+                  - name: Getting started with F#
+                    href: ../../core/testing/unit-testing-fsharp-with-mstest.md
+                  - name: Getting started with VB
+                    href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
               - name: Writing tests
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-writing-tests.md
-                  - name: Examples
-                    items:
-                    - name: C# example
-                      href: ../../core/testing/unit-testing-csharp-with-mstest.md
-                    - name: F# example
-                      href: ../../core/testing/unit-testing-fsharp-with-mstest.md
-                    - name: VB example
-                      href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
-                  - name: Lifecycle
-                    href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
-                  - name: Attributes
-                    href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
                   - name: Assertions
                     href: ../../core/testing/unit-testing-mstest-writing-tests-assertions.md
                   - name: TestContext
                     href: ../../core/testing/unit-testing-mstest-writing-tests-testcontext.md
+                  - name: Data-driven testing
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-data-driven.md
+                  - name: Test lifecycle
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
+                  - name: Test execution and control
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-controlling-execution.md
+                  - name: Test organization
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-organizing.md
+                  - name: Deployment items
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-deployment-items.md
               - name: Running tests
                 items:
                   - name: Overview
                     href: ../../core/testing/unit-testing-mstest-running-tests.md
+                  - name: Test WinUI 3 apps
+                    href: ../../core/testing/unit-testing-mstest-winui.md
                   - name: Configure MSTest
                     href: ../../core/testing/unit-testing-mstest-configure.md
+                  - name: MSTest SDK
+                    href: ../../core/testing/unit-testing-mstest-sdk.md
               - name: Code analysis
                 items:
                   - name: Overview
                     href: ../../core/testing/mstest-analyzers/overview.md
-                  - name: Design
+                  - name: Design rules
                     items:
                       - name: Overview
                         href: ../../core/testing/mstest-analyzers/design-rules.md
@@ -143,13 +116,15 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0044.md
                       - name: MSTEST0045
                         href: ../../core/testing/mstest-analyzers/mstest0045.md
-                  - name: Performance
+                      - name: MSTEST0066
+                        href: ../../core/testing/mstest-analyzers/mstest0066.md
+                  - name: Performance rules
                     items:
                       - name: Overview
                         href: ../../core/testing/mstest-analyzers/performance-rules.md
                       - name: MSTEST0001
                         href: ../../core/testing/mstest-analyzers/mstest0001.md
-                  - name: Suppression
+                  - name: Suppression rules
                     items:
                       - name: Overview
                         href: ../../core/testing/mstest-analyzers/suppression-rules.md
@@ -159,7 +134,9 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0028.md
                       - name: MSTEST0033
                         href: ../../core/testing/mstest-analyzers/mstest0033.md
-                  - name: Usage
+                      - name: MSTEST0047
+                        href: ../../core/testing/mstest-analyzers/mstest0047.md
+                  - name: Usage rules
                     items:
                       - name: Overview
                         href: ../../core/testing/mstest-analyzers/usage-rules.md
@@ -237,56 +214,184 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0054.md
                       - name: MSTEST0055
                         href: ../../core/testing/mstest-analyzers/mstest0055.md
+                      - name: MSTEST0056
+                        href: ../../core/testing/mstest-analyzers/mstest0056.md
+                      - name: MSTEST0057
+                        href: ../../core/testing/mstest-analyzers/mstest0057.md
+                      - name: MSTEST0058
+                        href: ../../core/testing/mstest-analyzers/mstest0058.md
+                      - name: MSTEST0059
+                        href: ../../core/testing/mstest-analyzers/mstest0059.md
+                      - name: MSTEST0060
+                        href: ../../core/testing/mstest-analyzers/mstest0060.md
+                      - name: MSTEST0061
+                        href: ../../core/testing/mstest-analyzers/mstest0061.md
+                      - name: MSTEST0062
+                        href: ../../core/testing/mstest-analyzers/mstest0062.md
+                      - name: MSTEST0063
+                        href: ../../core/testing/mstest-analyzers/mstest0063.md
+                      - name: MSTEST0064
+                        href: ../../core/testing/mstest-analyzers/mstest0064.md
+                      - name: MSTEST0065
+                        href: ../../core/testing/mstest-analyzers/mstest0065.md
+                      - name: MSTEST0066
+                        href: ../../core/testing/mstest-analyzers/mstest0066.md
+                      - name: MSTEST0067
+                        href: ../../core/testing/mstest-analyzers/mstest0067.md
+                      - name: MSTEST0068
+                        href: ../../core/testing/mstest-analyzers/mstest0068.md
+                      - name: MSTEST0069
+                        href: ../../core/testing/mstest-analyzers/mstest0069.md
+                      - name: MSTEST0070
+                        href: ../../core/testing/mstest-analyzers/mstest0070.md
+                      - name: MSTEST0071
+                        href: ../../core/testing/mstest-analyzers/mstest0071.md
+                      - name: MSTEST0072
+                        href: ../../core/testing/mstest-analyzers/mstest0072.md
+                      - name: MSTEST0073
+                        href: ../../core/testing/mstest-analyzers/mstest0073.md
+                      - name: MSTEST0074
+                        href: ../../core/testing/mstest-analyzers/mstest0074.md
+                      - name: MSTEST0075
+                        href: ../../core/testing/mstest-analyzers/mstest0075.md
+                      - name: MSTEST0076
+                        href: ../../core/testing/mstest-analyzers/mstest0076.md
+                      - name: MSTEST0077
+                        href: ../../core/testing/mstest-analyzers/mstest0077.md
+                      - name: MSTEST0078
+                        href: ../../core/testing/mstest-analyzers/mstest0078.md
+                      - name: MSTEST0079
+                        href: ../../core/testing/mstest-analyzers/mstest0079.md
+                      - name: MSTEST0080
+                        href: ../../core/testing/mstest-analyzers/mstest0080.md
+                      - name: MSTEST0081
+                        href: ../../core/testing/mstest-analyzers/mstest0081.md
+              - name: Migration
+                items:
+                  - name: Migrate from MSTest v1 to v3
+                    href: ../../core/testing/unit-testing-mstest-migration-from-v1-to-v3.md
+                  - name: Migrate from MSTest v3 to v4
+                    href: ../../core/testing/unit-testing-mstest-migration-v3-v4.md
+                  - name: Migrate from Legacy Test runner to MSTest
+                    href: ../../core/testing/unit-testing-mstest-migration-from-tmi.md
+          - name: NUnit
+            items:
+              - name: C# unit testing
+                href: ../../core/testing/unit-testing-csharp-with-nunit.md
+              - name: F# unit testing
+                href: ../../core/testing/unit-testing-fsharp-with-nunit.md
+              - name: VB unit testing
+                href: ../../core/testing/unit-testing-visual-basic-with-nunit.md
+              - name: Microsoft.Testing.Platform support (NUnit runner)
+                href: ../../core/testing/unit-testing-nunit-runner-intro.md
+          - name: xUnit
+            items:
+              - name: C# unit testing
+                href: ../../core/testing/unit-testing-csharp-with-xunit.md
+              - name: F# unit testing
+                href: ../../core/testing/unit-testing-fsharp-with-xunit.md
+              - name: VB unit testing
+                href: ../../core/testing/unit-testing-visual-basic-with-xunit.md
+              - name: Microsoft.Testing.Platform support in xUnit.net v3
+                href: https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
+              - name: Organize a project and test with xUnit
+                href: ../../core/tutorials/testing-with-cli.md
+                displayName: tutorials, cli
       - name: Test platforms
         items:
+          - name: Overview
+            href: ../../core/testing/test-platforms-overview.md
+            displayName: MTP vs VSTest,compare test platforms,choose test platform
           - name: Microsoft.Testing.Platform
+            displayName: MTP,testing platform,.NET test runner,VSTest alternative
             items:
               - name: Overview
                 href: ../../core/testing/microsoft-testing-platform-intro.md
-              - name: FAQ
-                href: ../../core/testing/microsoft-testing-platform-faq.md
-              - name: Comparison with VSTest
-                href: ../../core/testing/microsoft-testing-platform-vs-vstest.md
-              - name: Configure the test platform
+                displayName: MTP,testing platform,test runner,VSTest alternative
+              - name: Run and debug tests
+                href: ../../core/testing/microsoft-testing-platform-run-and-debug.md
+                displayName: MTP,run tests,debug tests,dotnet test,CI pipeline
+              - name: CLI options reference
+                href: ../../core/testing/microsoft-testing-platform-cli-options.md
+                displayName: MTP,command line,CLI,options,arguments,switches
+              - name: Configuration
                 href: ../../core/testing/microsoft-testing-platform-config.md
-              - name: Extensions
+                displayName: MTP,testconfig.json,configuration,settings
+              - name: Troubleshooting
+                href: ../../core/testing/microsoft-testing-platform-troubleshooting.md
+                displayName: MTP,exit codes,errors,troubleshoot
+              - name: Features
+                displayName: MTP features,extensions,NuGet
                 items:
                   - name: Overview
-                    href: ../../core/testing/microsoft-testing-platform-extensions.md
-                  - name: Code Coverage
-                    href: ../../core/testing/microsoft-testing-platform-extensions-code-coverage.md
+                    href: ../../core/testing/microsoft-testing-platform-features.md
+                    displayName: MTP features,extensions
+                  - name: Terminal output
+                    href: ../../core/testing/microsoft-testing-platform-terminal-output.md
+                    displayName: MTP,terminal,test reporter,ANSI,progress
+                  - name: Test reports
+                    href: ../../core/testing/microsoft-testing-platform-test-reports.md
+                    displayName: MTP,TRX,test report,Azure DevOps,GitHub Actions
+                  - name: Code coverage
+                    href: ../../core/testing/microsoft-testing-platform-code-coverage.md
+                    displayName: MTP,code coverage,coverage
+                  - name: Crash and hang dumps
+                    href: ../../core/testing/microsoft-testing-platform-crash-hang-dumps.md
+                    displayName: MTP,crash dump,hang dump,diagnostics
                   - name: Diagnostics
-                    href: ../../core/testing/microsoft-testing-platform-extensions-diagnostics.md
-                  - name: Fakes
-                    href: ../../core/testing/microsoft-testing-platform-extensions-fakes.md
-                  - name: Hosting
-                    href: ../../core/testing/microsoft-testing-platform-extensions-hosting.md
-                  - name: Output
-                    href: ../../core/testing/microsoft-testing-platform-extensions-output.md
-                  - name: Policy
-                    href: ../../core/testing/microsoft-testing-platform-extensions-policy.md
-                  - name: Test Reports
-                    href: ../../core/testing/microsoft-testing-platform-extensions-test-reports.md
-                  - name: VSTest Bridge
-                    href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
-              - name: Diagnostics overview
-                href: ../../core/testing/microsoft-testing-platform-diagnostics.md
-              - name: Optional telemetry
-                href: ../../core/testing/microsoft-testing-platform-telemetry.md
-              - name: Known exit codes
-                href: ../../core/testing/microsoft-testing-platform-exit-codes.md
-              - name: Integration with dotnet test
-                href: ../../core/testing/microsoft-testing-platform-integration-dotnet-test.md
-              - name: Microsoft.Testing.Platform Architecture
+                    href: ../../core/testing/microsoft-testing-platform-diagnostics.md
+                    displayName: MTP,diagnostics,video recorder,screen recording,capture video
+                  - name: Test host deployment
+                    href: ../../core/testing/microsoft-testing-platform-test-host-deployment.md
+                    displayName: MTP,test host,deployment,packaged app,UWP,WinUI,ITestHostLauncher
+                  - name: Microsoft.Extensions integration
+                    href: ../../core/testing/microsoft-testing-platform-extensions-integration.md
+                    displayName: MTP,Microsoft.Extensions,logging bridge,ILogger,Microsoft.Extensions.Logging
+                  - name: OpenTelemetry
+                    href: ../../core/testing/microsoft-testing-platform-open-telemetry.md
+                    displayName: MTP,OpenTelemetry,traces,metrics
+                  - name: Retry
+                    href: ../../core/testing/microsoft-testing-platform-retry.md
+                    displayName: MTP,retry,flaky tests
+                  - name: Hot Reload
+                    href: ../../core/testing/microsoft-testing-platform-hot-reload.md
+                    displayName: MTP,hot reload,live reload
+                  - name: Microsoft Fakes
+                    href: ../../core/testing/microsoft-testing-platform-fakes.md
+                    displayName: MTP,fakes,shims,stubs
+                  - name: Telemetry
+                    href: ../../core/testing/microsoft-testing-platform-telemetry.md
+                    displayName: MTP,telemetry,opt out
+              - name: Migration
+                displayName: MTP,migrate,VSTest migration
+                items:
+                  - name: Migrate from VSTest
+                    href: ../../core/testing/migrating-vstest-microsoft-testing-platform.md
+                    displayName: MTP,VSTest,migration,migrate,switch
+                  - name: Migrate from MTP v1 to v2
+                    href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
+                    displayName: MTP v2,upgrade,breaking changes
+              - name: Create custom extensions
+                displayName: MTP,extensibility,custom extensions
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-architecture.md
+                    displayName: MTP,architecture,custom test framework,extensibility
+                  - name: Build a test framework
+                    href: ../../core/testing/microsoft-testing-platform-architecture-test-framework.md
+                    displayName: MTP,custom test framework,ITestFramework
+                  - name: VSTest Bridge
+                    href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
+                    displayName: MTP,VSTest bridge,backward compatibility
+                  - name: Build extensions
+                    href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
+                    displayName: MTP,extensions,in-process,out-of-process
                   - name: Capabilities
                     href: ../../core/testing/microsoft-testing-platform-architecture-capabilities.md
-                  - name: Extensions
-                    href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
+                    displayName: MTP,capabilities
                   - name: Services
                     href: ../../core/testing/microsoft-testing-platform-architecture-services.md
+                    displayName: MTP,services,IServiceProvider
           - name: VSTest
             href: https://github.com/microsoft/vstest
       - name: Testing with 'dotnet test'
@@ -297,6 +402,8 @@ items:
         href: ../../core/testing/order-unit-tests.md
       - name: Unit test code coverage
         href: ../../core/testing/unit-testing-code-coverage.md
+      - name: Mutation testing
+        href: ../../core/testing/mutation-testing.md
       - name: Live unit test with Visual Studio
         href: /visualstudio/test/live-unit-testing-start?toc=/dotnet/navigate/devops-testing/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Publishing
@@ -311,21 +418,31 @@ items:
         href: ../../core/deploying/single-file/overview.md
       - name: ReadyToRun
         href: ../../core/deploying/ready-to-run.md
+      - name: Publish .NET apps for macOS
+        href: ../../core/deploying/macos.md
       - name: Trim self-contained deployments
         items:
-          - name: Overview and how-to
+          - name: Overview
             href: ../../core/deploying/trimming/trim-self-contained.md
-          - name: Intro to trim warnings
-            href: ../../core/deploying/trimming/fixing-warnings.md
-          - name: Trim incompatibilities
-            href: ../../core/deploying/trimming/incompatibilities.md
-          - name: Options
-            href: ../../core/deploying/trimming/trimming-options.md
-          - name: Trimming libraries
-            href: ../../core/deploying/trimming/prepare-libraries-for-trimming.md
-          - name: Intrinsic APIs marked RequiresUnreferencedCode
-            href: ../../core/deploying/trimming/intrinsic-requiresunreferencedcode-apis.md
-          - name: Trim warnings
+          - name: Concepts
+            items:
+              - name: Understand trim analysis
+                href: ../../core/deploying/trimming/trimming-concepts.md
+          - name: How-to guides
+            items:
+              - name: Fix trim warnings
+                href: ../../core/deploying/trimming/fixing-warnings.md
+              - name: Prepare libraries for trimming
+                href: ../../core/deploying/trimming/prepare-libraries-for-trimming.md
+          - name: Reference
+            items:
+              - name: Trimming options
+                href: ../../core/deploying/trimming/trimming-options.md
+              - name: Known incompatibilities
+                href: ../../core/deploying/trimming/incompatibilities.md
+              - name: Intrinsic RequiresUnreferencedCode APIs
+                href: ../../core/deploying/trimming/intrinsic-requiresunreferencedcode-apis.md
+          - name: Trim warning reference
             items:
               - name: IL2001
                 href: ../../core/deploying/trimming/trim-warnings/il2001.md
@@ -555,6 +672,8 @@ items:
                 href: ../../core/deploying/trimming/trim-warnings/il2122.md
               - name: IL2123
                 href: ../../core/deploying/trimming/trim-warnings/il2123.md
+              - name: IL2125
+                href: ../../core/deploying/trimming/trim-warnings/il2125.md
       - name: Native AOT deployment model
         items:
           - name: Overview
@@ -593,6 +712,8 @@ items:
                 href: ../../core/deploying/native-aot/warnings/il3056.md
               - name: IL3057
                 href: ../../core/deploying/native-aot/warnings/il3057.md
+              - name: IL3058
+                href: ../../core/deploying/native-aot/warnings/il3058.md
           - name: iOS-like platforms
             items:
               - name: Overview

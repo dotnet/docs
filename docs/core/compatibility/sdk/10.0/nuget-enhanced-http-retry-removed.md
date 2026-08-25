@@ -11,11 +11,11 @@ The `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable no longer has any ef
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 
-When the `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable was set to `false`, NuGet used the old retry behavior with a fixed 200ms delay between failed HTTP calls instead of exponential back-off.
+Previously, when the `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable was set to `false`, NuGet used the old retry behavior with a fixed 200ms delay between failed HTTP calls instead of exponential back-off.
 
 ## New behavior
 
@@ -23,7 +23,7 @@ The `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable has no effect. NuGet
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

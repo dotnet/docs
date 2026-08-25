@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "threading [.NET Framework], garbage collection"
   - "managed debugging assistants (MDAs), garbage collection"
   - "threading [.NET Framework], managed debugging assistants"
-  - "garbage collection, run-time errors"
+  - "garbage collection, runtime errors"
   - "unmanaged to managed garbage collection"
 ms.assetid: 103eb3a3-1cf0-4406-8a9a-a7798fdc22d1
 ---
@@ -55,4 +55,4 @@ The `gcUnmanagedToManaged` managed debugging assistant (MDA) causes a garbage co
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
 - [gcManagedToUnmanaged](gcmanagedtounmanaged-mda.md)
-- [Interop Marshaling](../interop/interop-marshalling.md)
+- [Interop Marshaling](../../standard/native-interop/interop-marshalling.md)

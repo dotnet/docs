@@ -19,7 +19,7 @@ The `invalidCERCall` managed debugging assistant (MDA) is activated when there i
 
 ## Symptoms
 
- Unexpected results when executing code in a CER. The symptoms are not specific. They could be an unexpected <xref:System.OutOfMemoryException>, a <xref:System.Threading.ThreadAbortException>, or other exceptions at the call into the unreliable method because the runtime did not prepare it ahead of time or protect it from <xref:System.Threading.ThreadAbortException> exceptions at run time. A greater threat is that any exception resulting from the method at run time could leave the <xref:System.AppDomain> or process in an unstable state, which is contrary to the objective of a CER. The reason a CER is created is to avoid state corruptions such as this. The symptoms of corrupt state are application specific because the definition of consistent state is different between applications.
+ Unexpected results when executing code in a CER. The symptoms are not specific. They could be an unexpected <xref:System.OutOfMemoryException>, a <xref:System.Threading.ThreadAbortException>, or other exceptions at the call into the unreliable method because the runtime did not prepare it ahead of time or protect it from <xref:System.Threading.ThreadAbortException> exceptions at runtime. A greater threat is that any exception resulting from the method at runtime could leave the <xref:System.AppDomain> or process in an unstable state, which is contrary to the objective of a CER. The reason a CER is created is to avoid state corruptions such as this. The symptoms of corrupt state are application specific because the definition of consistent state is different between applications.
 
 ## Cause
 
@@ -57,6 +57,6 @@ The `invalidCERCall` managed debugging assistant (MDA) is activated when there i
 
 ## See also
 
-- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod*>
 - <xref:System.Runtime.ConstrainedExecution>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

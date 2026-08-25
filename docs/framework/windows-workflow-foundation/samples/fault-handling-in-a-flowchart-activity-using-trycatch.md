@@ -17,13 +17,13 @@ The following table details the variables for the `CreateFlowchartWithFaults` ac
 |promoCode|The promotion code. Type: String<br /><br /> The possible values with description in parentheses:<br /><br /> -   Single (Single)<br />-   MNK (Married with no kids.)<br />-   MWK (Married with kids.)|
 |numKids|The number of children. Type: int|
 
-The `CreateFlowchartWithFaults` activity uses a <xref:System.Activities.Statements.FlowSwitch%601> activity that switches on the `promoCode` argument and calculates the discount using the following formula.
+The `CreateFlowchartWithFaults` activity uses a <xref:System.Activities.Statements.FlowSwitch`1> activity that switches on the `promoCode` argument and calculates the discount using the following formula.
 
 |Value of `promoCode`|Discount (%)|
 |--------------------------|--------------------|
 |Single|10|
 |MNK|15|
-|MWK|15 + (1 – 1/`numberOfKids`)\*10 **Note:**  Potentially, this calculation can throw a <xref:System.DivideByZeroException>. So, the discount calculation is wrapped in a <xref:System.Activities.Statements.TryCatch> activity that catches the <xref:System.DivideByZeroException> exception and sets the discount to zero.|
+|MWK|15 + (1 - 1/`numberOfKids`)\*10 **Note:**  Potentially, this calculation can throw a <xref:System.DivideByZeroException>. So, the discount calculation is wrapped in a <xref:System.Activities.Statements.TryCatch> activity that catches the <xref:System.DivideByZeroException> exception and sets the discount to zero.|
 
 ## To use this sample
 

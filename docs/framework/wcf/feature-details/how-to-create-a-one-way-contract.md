@@ -9,7 +9,7 @@ ms.assetid: 85084cd9-31cc-4e95-b667-42ef01336622
 ---
 # How to: Create a One-Way Contract
 
-This topic shows the basic steps to create methods that use a one-way contract. Such methods invoke operations on a Windows Communication Foundation (WCF) service from a client but do not expect a reply. This type of contract can be used, for example, to publish notifications to many subscribers. You can also use one-way contracts when creating a duplex (two-way) contract, which allows clients and servers to communicate with each other independently so that either can initiate calls to the other. This can allow, in particular, the server to make one-way calls to the client that the client can treat as events. For detailed information about specifying one-way methods, see the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property and the <xref:System.ServiceModel.OperationContractAttribute> class.  
+This topic shows the basic steps to create methods that use a one-way contract. Such methods invoke operations on a Windows Communication Foundation (WCF) service from a client but do not expect a reply. This type of contract can be used, for example, to publish notifications to many subscribers. You can also use one-way contracts when creating a duplex (two-way) contract, which allows clients and servers to communicate with each other independently so that either can initiate calls to the other. This can allow, in particular, the server to make one-way calls to the client that the client can treat as events. For detailed information about specifying one-way methods, see the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> property and the <xref:System.ServiceModel.OperationContractAttribute> class.  
   
  For more information about creating a client application for a duplex contract, see [How to: Access Services with One-Way and Request-Reply Contracts](how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md). For a working sample, see the [One-Way](../samples/one-way.md) sample.  
   
@@ -19,7 +19,7 @@ This topic shows the basic steps to create methods that use a one-way contract. 
   
 2. Indicate which methods in the interface a client can invoked by applying the <xref:System.ServiceModel.OperationContractAttribute> class to them.  
   
-3. Designate operations that must have no output (no return value and no out or ref parameters) as one-way by setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true`. Note that the operations that carry the <xref:System.ServiceModel.OperationContractAttribute> class satisfy a request-reply contract by default because the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is `false` by default. So you must explicitly specify the value of the attribute property to be `true` if you want a one-way contract for the method.  
+3. Designate operations that must have no output (no return value and no out or ref parameters) as one-way by setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> property to `true`. Note that the operations that carry the <xref:System.ServiceModel.OperationContractAttribute> class satisfy a request-reply contract by default because the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> property is `false` by default. So you must explicitly specify the value of the attribute property to be `true` if you want a one-way contract for the method.  
   
 ## Example  
 

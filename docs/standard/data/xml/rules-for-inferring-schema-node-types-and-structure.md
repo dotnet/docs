@@ -34,7 +34,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Simple Typed Element
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded element shows the schema inferred for the simple type element.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded element shows the schema inferred for the simple type element.
 
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).
 
@@ -44,7 +44,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Empty Element
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded element shows the schema inferred for the empty element.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded element shows the schema inferred for the empty element.
 
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).
 
@@ -54,7 +54,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Empty Element with Attributes
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for the empty element with attributes.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded elements show the schema inferred for the empty element with attributes.
 
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).
 
@@ -64,7 +64,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Element with Attributes and Simple Content
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with attributes and simple content.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded elements show the schema inferred for an element with attributes and simple content.
 
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).
 
@@ -74,7 +74,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Element with a Sequence of Child Elements
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence of child elements.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence of child elements.
 
 > [!NOTE]
 > Even if an element has only one child element, it is still treated as a sequence.
@@ -87,7 +87,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Element with a Sequence of Child Elements and Attributes
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence of child elements and attributes.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence of child elements and attributes.
 
 > [!NOTE]
 > Even if an element has only one child element, it is still treated as a sequence.
@@ -100,7 +100,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Element with a Sequence and Choices of Child Elements
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence and choice of child elements.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence and choice of child elements.
 
 > [!NOTE]
 > The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.
@@ -113,7 +113,7 @@ This topic describes how the schema inference process translates the node types 
 
 ### Element with a Sequence and Choice of Child Elements and Attributes
 
- The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence and choice of child elements and attributes.
+ The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema*> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence and choice of child elements and attributes.
 
 > [!NOTE]
 > The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.
@@ -144,7 +144,7 @@ This topic describes how the schema inference process translates the node types 
 |---------------|-----------------|
 |Processing instruction|Ignored.|
 |Comment|Ignored.|
-|Entity reference|The <xref:System.Xml.Schema.XmlSchemaInference> class does not handle entity references. If an XML document contains entity references, you need to use a reader that expands the entities. For example, you can pass an <xref:System.Xml.XmlTextReader> with the <xref:System.Xml.XmlTextReader.EntityHandling%2A> property set to <xref:System.Xml.EntityHandling.ExpandEntities> as a parameter. If entity references are encountered and the reader does not expand entities, an exception is throw.|
+|Entity reference|The <xref:System.Xml.Schema.XmlSchemaInference> class does not handle entity references. If an XML document contains entity references, you need to use a reader that expands the entities. For example, you can pass an <xref:System.Xml.XmlTextReader> with the <xref:System.Xml.XmlTextReader.EntityHandling> property set to <xref:System.Xml.EntityHandling.ExpandEntities> as a parameter. If entity references are encountered and the reader does not expand entities, an exception is throw.|
 |CDATA|Any `<![CDATA[ … ]]` sections in an XML document will be inferred as `xs:string`.|
 |Document type|Ignored.|
 |Namespaces|Ignored.|

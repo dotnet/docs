@@ -63,12 +63,12 @@ Describes how the <xref:System.Xml.Schema.XmlSchemaInference> class infers the d
 
 The following are schema-defining attributes that are ignored during schema inference.
 
-|Attribute|Description|
-|---------------|-----------------|
-|`xsi:type`|If an element is encountered with `xsi:type` specified, the `xsi:type` is ignored.|
-|`xsi:nil`|If an element with an `xsi:nil` attribute is encountered, its element declaration in the inferred schema has the value of `nillable="true"`. An element with an `xsi:nil` attribute set to `true` cannot have child elements.|
-|`xsi:schemaLocation`|If `xsi:schemaLocation` is encountered, it is ignored.|
-|`xsi:noNamespaceSchemaLocation`|If `xsi:noNamespaceSchemaLocation` is encountered, it is ignored.|
+| Attribute                       | Description                                                                        |
+|---------------------------------|------------------------------------------------------------------------------------|
+| `xsi:type`                      | If an element is encountered with `xsi:type` specified, the `xsi:type` is ignored. |
+| `xsi:nil`                       | If an element with an `xsi:nil` attribute is encountered, its element declaration in the inferred schema has the value of `nillable="true"`. An element with an `xsi:nil` attribute set to `true` cannot have child elements. |
+| `xsi:schemaLocation`            | If `xsi:schemaLocation` is encountered, it is ignored.                             |
+| `xsi:noNamespaceSchemaLocation` | If `xsi:noNamespaceSchemaLocation` is encountered, it is ignored.                  |
 
 ## See also
 

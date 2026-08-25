@@ -12,7 +12,7 @@ In .NET 10, `dotnet new sln` generates an [SLNX-format](https://devblogs.microso
 
 ## Version introduced
 
-.NET 10 RC 1
+.NET 10
 
 ## Previous behavior
 

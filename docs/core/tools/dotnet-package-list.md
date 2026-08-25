@@ -1,11 +1,11 @@
 ---
 title: dotnet package list command
 description: The 'dotnet package list' command provides a convenient option to list the package references for a project or solution.
-ms.date: 04/02/2025
+ms.date: 10/28/2025
 ---
 # dotnet package list
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -115,7 +115,7 @@ The project or solution file to operate on. If not specified, the command search
 
   Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`. The short form of the option (`-f`) is available starting in .NET 9 SDK.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--highest-minor`**
 
@@ -133,7 +133,7 @@ The project or solution file to operate on. If not specified, the command search
 
   Lists transitive packages, in addition to the top-level packages. When specifying this option, you get a list of packages that the top-level packages depend on.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--no-restore`**
   
@@ -147,7 +147,7 @@ The project or solution file to operate on. If not specified, the command search
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
 - **`--vulnerable`**
 

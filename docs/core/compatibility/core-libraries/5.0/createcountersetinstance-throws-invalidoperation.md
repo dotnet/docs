@@ -9,9 +9,9 @@ Starting in .NET 5, <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCo
 
 ## Change description
 
-In .NET Framework and .NET Core 1.0 to 3.1, you can create an instance of the counter set by calling <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A>. However, if the counter set already exists, the method throws an <xref:System.ArgumentException> exception.
+In .NET Framework and .NET Core 1.0 to 3.1, you can create an instance of the counter set by calling <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance*>. However, if the counter set already exists, the method throws an <xref:System.ArgumentException> exception.
 
-In .NET 5 and later versions, when you call <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A> and the counter set exists, an <xref:System.InvalidOperationException> exception is thrown.
+In .NET 5 and later versions, when you call <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance*> and the counter set exists, an <xref:System.InvalidOperationException> exception is thrown.
 
 ## Version introduced
 
@@ -19,14 +19,14 @@ In .NET 5 and later versions, when you call <xref:System.Diagnostics.Performance
 
 ## Recommended action
 
-If you catch <xref:System.ArgumentException> exceptions in your app when calling <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A>, consider also catching <xref:System.InvalidOperationException> exceptions.
+If you catch <xref:System.ArgumentException> exceptions in your app when calling <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance*>, consider also catching <xref:System.InvalidOperationException> exceptions.
 
 > [!NOTE]
 > Catching <xref:System.ArgumentException> exceptions is not recommended.
 
 ## Affected APIs
 
-- <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName>
+- <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance*?displayProperty=fullName>
 
 <!--
 

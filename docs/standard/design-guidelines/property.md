@@ -53,7 +53,7 @@ Although properties are technically very similar to methods, they are quite diff
 
  If the design requires other types of parameters, strongly reevaluate whether the API really represents an accessor to a logical collection. If it does not, use a method. Consider starting the method name with `Get` or `Set`.
 
- ✔️ DO use the name `Item` for indexed properties unless there is an obviously better name (e.g., see the <xref:System.String.Chars%2A> property on `System.String`).
+ ✔️ DO use the name `Item` for indexed properties unless there is an obviously better name (e.g., see the <xref:System.String.Chars*> property on `System.String`).
 
  In C#, indexers are by default named Item. The <xref:System.Runtime.CompilerServices.IndexerNameAttribute> can be used to customize this name.
 
@@ -75,7 +75,7 @@ Although properties are technically very similar to methods, they are quite diff
 
  If there is a good scenario for a user to know when a property of an object is changing, the object should raise a change notification event for the property.
 
- However, it is unlikely to be worth the overhead to raise such events for low-level APIs such as base types or collections. For example, <xref:System.Collections.Generic.List%601> would not raise such events when a new item is added to the list and the `Count` property changes.
+ However, it is unlikely to be worth the overhead to raise such events for low-level APIs such as base types or collections. For example, <xref:System.Collections.Generic.List`1> would not raise such events when a new item is added to the list and the `Count` property changes.
 
  ✔️ CONSIDER raising change notification events when the value of a property changes via external forces.
 

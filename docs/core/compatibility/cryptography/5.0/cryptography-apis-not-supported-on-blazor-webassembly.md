@@ -5,7 +5,7 @@ ms.date: 09/16/2020
 ---
 # System.Security.Cryptography APIs not supported on Blazor WebAssembly
 
-<xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> at run time when run on a browser.
+<xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> at runtime when run on a browser.
 
 ## Change description
 

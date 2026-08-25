@@ -2,20 +2,20 @@
 description: "Learn more about: <sectionGroup> element for <configSections>"
 title: "<sectionGroup> element for <configSections>"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sectionGroup Element"
   - "<sectionGroup> Element"
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 ---
-# \<sectionGroup> element for \<configSections>
+# `<sectionGroup>` element for `<configSections>`
 
 Defines a namespace for configuration sections.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<sectionGroup>`
 
 ## Syntax
 
@@ -27,25 +27,25 @@ Defines a namespace for configuration sections.
 
 ## Attribute
 
-|           | Description |
-| --------- | ----------- |
-| **name**  | Required attribute.<br><br>Specifies the name of the section group you are defining. |
+| Attribute | Description                                                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| `name`    | Required attribute.<br><br>Specifies the name of the section group you're defining. |
 
 ## Parent element
 
-|     | Description |
-| --- | ----------- |
-| [**\<configSections>** Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| Parent element                                                    | Description |
+|-------------------------------------------------------------------|-------------|
+| [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
-|     | Description |
-| --- | ----------- |
-| [**\<section>**](section-element.md) | Contains a configuration section declaration. |
+| Child element                     | Description                                   |
+|-----------------------------------|-----------------------------------------------|
+| [`<section>`](section-element.md) | Contains a configuration section declaration. |
 
 ## Remarks
 
-Declaring a section group creates a container tag for configuration sections and ensures that there are no naming conflicts with configuration sections defined by someone else. You can nest **\<sectionGroup>** elements within each other.
+Declaring a section group creates a container tag for configuration sections and ensures that there are no naming conflicts with configuration sections defined by someone else. You can nest `<sectionGroup>` elements within each other.
 
 ## Example
 

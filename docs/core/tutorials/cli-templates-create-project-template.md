@@ -2,14 +2,15 @@
 title: Create a project template for dotnet new
 description: Learn how to create a project template for the dotnet new command.
 author: adegeo
-ms.date: 09/08/2023
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ms.topic: tutorial
 ms.author: adegeo
 ---
 
 # Tutorial: Create a project template
 
-With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part two of a series that teaches you how to create, install, and uninstall, templates for use with the `dotnet new` command.
+With .NET, you can create and deploy templates that generate projects, files, and resources. This tutorial is part two of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
 
 > [!TIP]
 > The official .NET templates that are shipped with the .NET SDK can be found in the following repositories:
@@ -26,7 +27,7 @@ With .NET, you can create and deploy templates that generate projects, files, ev
 >
 > You can view the templates that are installed on your machine by running the `dotnet new list` command.
 
-In this part of the series you'll learn how to:
+In this part of the series, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -38,16 +39,17 @@ In this part of the series you'll learn how to:
 
 ## Prerequisites
 
-* Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
-* Open a terminal and navigate to the _working\content_ folder.
+- [.NET 9](https://dotnet.microsoft.com/download) or a later version.
 
-[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
+- Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
+
+- Open a terminal and navigate to the _working\content_ folder.
 
 ## Create a project template
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you create a new console application project that replaces the standard "Hello World" console output with one that runs asynchronously.
 
-In your terminal, navigate to the _working\content_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll edit the files produced by this template to create a new template.
+In your terminal, navigate to the _working\content_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. Edit the files produced by this template to create a new template.
 
 ```console
 working
@@ -59,7 +61,7 @@ working
 
 ## Modify Program.cs
 
-Open up the _Program.cs_ file. The standard console project doesn't asynchronously write to the console output, so let's add that. Change the code to the following and save the file:
+Open up the _Program.cs_ file. The standard console project doesn't asynchronously write to the console output, so add that. Change the code to the following and save the file:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information

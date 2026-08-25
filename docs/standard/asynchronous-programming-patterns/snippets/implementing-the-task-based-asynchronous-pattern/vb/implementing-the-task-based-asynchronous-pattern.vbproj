@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ImplementingTAP</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
+    <StartupObject>ImplementingTAP.Program</StartupObject>
+    <NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="10.0.6" />
+  </ItemGroup>
+
+</Project>

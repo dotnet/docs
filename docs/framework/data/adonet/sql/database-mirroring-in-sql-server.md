@@ -9,7 +9,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # Database mirroring in SQL Server
 
-Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL Server database on a standby server. Mirroring ensures that two separate copies of the data exist at all times, providing high availability and complete data redundancy. The .NET Data Provider for SQL Server provides implicit support for database mirroring, so that the developer does not need to take any action or write any code once it has been configured for a SQL Server database. In addition, the <xref:System.Data.SqlClient.SqlConnection> object supports an explicit connection mode that allows supplying the name of a failover partner server in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL Server database on a standby server. Mirroring ensures that two separate copies of the data exist at all times, providing high availability and complete data redundancy. The .NET Data Provider for SQL Server provides implicit support for database mirroring, so that the developer does not need to take any action or write any code once it has been configured for a SQL Server database. In addition, the <xref:System.Data.SqlClient.SqlConnection> object supports an explicit connection mode that allows supplying the name of a failover partner server in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
 
  The following simplified sequence of events occurs for a <xref:System.Data.SqlClient.SqlConnection> object that targets a database configured for mirroring:
 
@@ -36,9 +36,9 @@ Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL 
 
 ## Retrieving the Current Server Name
 
- In the event of a failover, you can retrieve the name of the server to which the current connection is actually connected by using the <xref:System.Data.SqlClient.SqlConnection.DataSource%2A> property of a <xref:System.Data.SqlClient.SqlConnection> object. The following code fragment retrieves the name of the active server, assuming that the connection variable references an open <xref:System.Data.SqlClient.SqlConnection>.
+ In the event of a failover, you can retrieve the name of the server to which the current connection is actually connected by using the <xref:System.Data.SqlClient.SqlConnection.DataSource> property of a <xref:System.Data.SqlClient.SqlConnection> object. The following code fragment retrieves the name of the active server, assuming that the connection variable references an open <xref:System.Data.SqlClient.SqlConnection>.
 
- When a failover event occurs and the connection is switched to the mirror server, the **DataSource** property is updated to reflect the mirror name.
+ When a failover event occurs and the connection is switched to the mirror server, the `DataSource` property is updated to reflect the mirror name.
 
 ```vb
 Dim activeServer As String = connection.DataSource
@@ -50,7 +50,7 @@ string activeServer = connection.DataSource;
 
 ## SqlClient Mirroring Behavior
 
- The client always tries to connect to the current principal server. If it fails, it tries the failover partner. If the mirror database has already been switched to the principal role on the partner server, the connection succeeds and the new principal-mirror mapping is sent to the client and cached for the lifetime of the calling <xref:System.AppDomain>. It is not stored in persistent storage and is not available for subsequent connections in a different **AppDomain** or process. However, it is available for subsequent connections within the same **AppDomain**. Note that another **AppDomain** or process running on the same or a different computer always has its pool of connections, and those connections are not reset. In that case, if the primary database goes down, each process or **AppDomain** fails once, and the pool is automatically cleared.
+ The client always tries to connect to the current principal server. If it fails, it tries the failover partner. If the mirror database has already been switched to the principal role on the partner server, the connection succeeds and the new principal-mirror mapping is sent to the client and cached for the lifetime of the calling <xref:System.AppDomain>. It is not stored in persistent storage and is not available for subsequent connections in a different `AppDomain` or process. However, it is available for subsequent connections within the same **AppDomain**. Note that another `AppDomain` or process running on the same or a different computer always has its pool of connections, and those connections are not reset. In that case, if the primary database goes down, each process or `AppDomain` fails once, and the pool is automatically cleared.
 
 > [!NOTE]
 > Mirroring support on the server is configured on a per-database basis. If data manipulation operations are executed against other databases not included in the principal/mirror set, either by using multipart names or by changing the current database, the changes to these other databases do not propagate in the event of failure. No error is generated when data is modified in a database that is not mirrored. The developer must evaluate the possible impact of such operations.

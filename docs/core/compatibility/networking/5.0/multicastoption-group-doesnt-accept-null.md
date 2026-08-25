@@ -13,7 +13,7 @@ ms.date: 08/18/2020
 
 ## Change description
 
-In previous versions of .NET, you can set the <xref:System.Net.Sockets.MulticastOption.Group?displayProperty=nameWithType> property to `null`. If the <xref:System.Net.Sockets.MulticastOption> is later passed to <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType>, the runtime throws a <xref:System.NullReferenceException>.
+In previous versions of .NET, you can set the <xref:System.Net.Sockets.MulticastOption.Group?displayProperty=nameWithType> property to `null`. If the <xref:System.Net.Sockets.MulticastOption> is later passed to <xref:System.Net.Sockets.Socket.SetSocketOption*?displayProperty=nameWithType>, the runtime throws a <xref:System.NullReferenceException>.
 
 In .NET 5 and later, an <xref:System.ArgumentNullException> is thrown if you set the property to `null`.
 

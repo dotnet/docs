@@ -10,14 +10,14 @@
 public class AuthorAttribute : System.Attribute
 {
     string Name;
-    public double Version;
+    public string Version;
 
     public AuthorAttribute(string name)
     {
         Name = name;
 
         // Default value.
-        Version = 1.0;
+        Version = "1.0";
     }
 
     public string GetName() => Name;
@@ -39,7 +39,7 @@ public class SecondClass
 
 // Class with multiple Author attributes.
 // <MultipleAuthors>
-[Author("P. Ackerman"), Author("R. Koch", Version = 2.0)]
+[Author("P. Ackerman"), Author("R. Koch", Version = "2.0")]
 public class ThirdClass
 {
     // ...
@@ -67,23 +67,23 @@ class TestAuthorAttribute
         {
             if (attr is AuthorAttribute a)
             {
-                System.Console.WriteLine($"   {a.GetName()}, version {a.Version:f}");
+                System.Console.WriteLine($"   {a.GetName()}, version {a.Version}");
             }
         }
     }
 }
 /* Output:
     Author information for FirstClass
-       P. Ackerman, version 1.00
+       P. Ackerman, version 1.0
     Author information for SecondClass
     Author information for ThirdClass
-       R. Koch, version 2.00
-       P. Ackerman, version 1.00
+       R. Koch, version 2.0
+       P. Ackerman, version 1.0
 */
 // </DefineAndReadAttribute>
 
 // <SampleWithVersion>
-[Author("P. Ackerman", Version = 1.1)]
+[Author("P. Ackerman", Version = "1.1")]
 class SampleClass
 {
     // P. Ackerman's code goes here...

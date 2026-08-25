@@ -6,21 +6,21 @@ ms.assetid: 9cf47c5b-0bb2-45df-9437-61cd7e7c2f4d
 ---
 # Mitigation: Custom IMessageFilter.PreFilterMessage Implementations
 
-In Windows Forms apps that target versions of the .NET Framework starting with the .NET Framework 4.6.1, a custom <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A?displayProperty=nameWithType> implementation can safely filter messages when the <xref:System.Windows.Forms.Application.FilterMessage%2A?displayProperty=nameWithType> method is called if the <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A?displayProperty=nameWithType> implementation:
+In Windows Forms apps that target versions of the .NET Framework starting with the .NET Framework 4.6.1, a custom <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage*?displayProperty=nameWithType> implementation can safely filter messages when the <xref:System.Windows.Forms.Application.FilterMessage*?displayProperty=nameWithType> method is called if the <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage*?displayProperty=nameWithType> implementation:
 
 - Does one or both of the following:
 
-  - Adds a message filter by calling the <xref:System.Windows.Forms.Application.AddMessageFilter%2A> method.
+  - Adds a message filter by calling the <xref:System.Windows.Forms.Application.AddMessageFilter*> method.
 
-  - Removes a message filter by calling the <xref:System.Windows.Forms.Application.RemoveMessageFilter%2A> method. method.
+  - Removes a message filter by calling the <xref:System.Windows.Forms.Application.RemoveMessageFilter*> method. method.
 
-- **And** pumps messages by calling the <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=nameWithType> method.
+- **And** pumps messages by calling the <xref:System.Windows.Forms.Application.DoEvents*?displayProperty=nameWithType> method.
 
 ## Impact
 
 This change only affects Windows Forms apps that target versions of the .NET Framework starting with the .NET Framework 4.6.1.
 
-For Windows Forms apps that target previous versions of the .NET Framework, such implementations in some cases throw an <xref:System.IndexOutOfRangeException> exception when the <xref:System.Windows.Forms.Application.FilterMessage%2A?displayProperty=nameWithType> method is called
+For Windows Forms apps that target previous versions of the .NET Framework, such implementations in some cases throw an <xref:System.IndexOutOfRangeException> exception when the <xref:System.Windows.Forms.Application.FilterMessage*?displayProperty=nameWithType> method is called
 
 ## Mitigation
 

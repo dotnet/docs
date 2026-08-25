@@ -12,7 +12,7 @@ ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
 ---
 # How to: Download a File in Visual Basic
 
-The <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method can be used to download a remote file and store it to a specific location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed showing the progress of the download and allowing users to cancel the operation. By default, existing files having the same name are not overwritten; if you want to overwrite existing files, set the `overwrite` parameter to `True`.
+The <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile*> method can be used to download a remote file and store it to a specific location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed showing the progress of the download and allowing users to cancel the operation. By default, existing files having the same name are not overwritten; if you want to overwrite existing files, set the `overwrite` parameter to `True`.
 
 The following conditions may cause an exception:
 
@@ -53,6 +53,6 @@ The following conditions may cause an exception:
 ## See also
 
 - <xref:Microsoft.VisualBasic.Devices.Network>
-- <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A>
+- <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile*>
 - [How to: Upload a File](how-to-upload-a-file.md)
 - [How to: Parse File Paths](../drives-directories-files/how-to-parse-file-paths.md)

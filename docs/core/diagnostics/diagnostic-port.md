@@ -21,8 +21,6 @@ The diagnostic port supports different transports depending on platform. Current
 
 The diagnostic port exposes sensitive information about a running application. If an untrusted user gains access to this channel, they could observe detailed program state, including any secrets that are in memory, and arbitrarily modify the execution of the program. On the CoreCLR runtime, the default diagnostic port is configured to only be accessible by the same user account that launched the app or by an account with super-user permissions. If your security model does not trust other processes with the same user account credentials, you can disable all diagnostic ports by setting environment variable `DOTNET_EnableDiagnostics=0`. This setting will block your ability to use external tooling such as .NET debugging or any of the dotnet-* diagnostic tools.
 
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
 ## Default diagnostic port
 
 On Windows, Linux, and macOS, the runtime has one diagnostic port open by default at a well-known endpoint. This is the port that the dotnet-* diagnostic tools connect to automatically when they haven't been explicitly configured to use an alternate port. The endpoint is:

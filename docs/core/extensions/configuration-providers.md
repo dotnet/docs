@@ -1,9 +1,8 @@
 ---
 title: Configuration providers
 description: Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
-author: IEvangelist
-ms.author: dapine
-ms.date: 12/16/2024
+ms.date: 04/28/2026
+ai-usage: ai-assisted
 ---
 
 # Configuration providers in .NET
@@ -47,13 +46,13 @@ The preceding code:
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
 
 > [!IMPORTANT]
-> When [adding configuration providers](https://github.com/dotnet/runtime/blob/main/src%2Flibraries%2FMicrosoft.Extensions.Configuration%2Fsrc%2FConfigurationBuilder.cs#L30-L34) with <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add%2A?displayProperty=nameWithType>, the added configuration provider is added to the end of the `IConfigurationSource` list. When keys are found by multiple providers, the last provider to read the key overrides previous providers.
+> When [adding configuration providers](https://github.com/dotnet/runtime/blob/main/src%2Flibraries%2FMicrosoft.Extensions.Configuration%2Fsrc%2FConfigurationBuilder.cs#L30-L34) with <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Add*?displayProperty=nameWithType>, the added configuration provider is added to the end of the `IConfigurationSource` list. When keys are found by multiple providers, the last provider to read the key overrides previous providers.
 
 An example *appsettings.json* file with various configuration settings follows:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json":::
 
-From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added, you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
+From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added, you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects and later provided as <xref:Microsoft.Extensions.Options.IOptions`1> through dependency injection.
 
 > [!NOTE]
 > The *Build Action* and *Copy to Output Directory* properties of the JSON file must be set to *Content* and *Copy if newer (or Copy always)*, respectively.
@@ -72,7 +71,7 @@ The application writes the following sample output:
 
 ### XML configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at run time. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at runtime. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
 
 The following code demonstrates the configuration of XML files using the XML configuration provider.
 
@@ -94,7 +93,7 @@ An example *appsettings.xml* file with various configuration settings follows:
 :::code language="xml" source="snippets/configuration/console-xml/appsettings.xml":::
 
 > [!TIP]
-> To use the `IConfiguration` type in WinForms apps, add a reference to the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package. Instantiate the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and chain calls to <xref:Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile%2A> and <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build>. For more information, see [.NET Docs Issue #29679](https://github.com/dotnet/docs/issues/29679#issuecomment-1169017078).
+> To use the `IConfiguration` type in WinForms apps, add a reference to the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package. Instantiate the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and chain calls to <xref:Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile*> and <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build>. For more information, see [.NET Docs Issue #29679](https://github.com/dotnet/docs/issues/29679#issuecomment-1169017078).
 
 In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element. (If you're upgrading to .NET 6 or later, you may encounter a break resulting from this change in behavior. For more information, see [Repeated XML elements include index](../compatibility/extensions/6.0/repeated-xml-elements.md).)
 
@@ -127,11 +126,14 @@ The previous configuration file loads the following keys with `value`:
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at run time. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime.
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
 :::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-12,19-23" highlight="7-11":::
+
+> [!NOTE]
+> You must install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini) NuGet package to have access to the <xref:Microsoft.Extensions.Configuration.IniConfigurationExtensions.AddIniFile*> method.
 
 An example *appsettings.ini* file with various configuration settings follows:
 
@@ -190,7 +192,7 @@ To test that the preceding commands override any *appsettings.json* and *appsett
 
 ### Prefixes
 
-To specify a prefix for environment variables, call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string:
+To specify a prefix for environment variables, call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables*> with a string:
 
 :::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="6-7":::
 
@@ -207,7 +209,9 @@ For more information on host and app configuration, see [.NET Generic Host](gene
 
 ### Connection string prefixes
 
-The Configuration API has special processing rules for four connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the table are loaded into the app with the default configuration or when no prefix is supplied to `AddEnvironmentVariables`.
+The Configuration API has special processing rules for connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the following tables are loaded into the app with the default configuration or when no prefix is supplied to `AddEnvironmentVariables`.
+
+In .NET 9 and earlier versions, four connection string prefixes are recognized:
 
 | Connection string prefix | Provider                                                                |
 |--------------------------|-------------------------------------------------------------------------|
@@ -216,17 +220,42 @@ The Configuration API has special processing rules for four connection string en
 | `SQLAZURECONNSTR_`       | [Azure SQL Database](https://azure.microsoft.com/services/sql-database) |
 | `SQLCONNSTR_`            | [SQL Server](https://www.microsoft.com/sql-server)                      |
 
-When an environment variable is discovered and loaded into configuration with any of the four prefixes shown in the table:
+Starting in .NET 10, seven additional prefixes are recognized for a total of 11:
+
+| Connection string prefix  | Provider                                                                                |
+|---------------------------|-----------------------------------------------------------------------------------------|
+| `APIHUBCONNSTR_`          | Azure API hubs                                                                          |
+| `CUSTOMCONNSTR_`          | Custom provider                                                                         |
+| `DOCDBCONNSTR_`           | [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db)                       |
+| `EVENTHUBCONNSTR_`        | [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs)                     |
+| `MYSQLCONNSTR_`           | [MySQL](https://www.mysql.com)                                                          |
+| `NOTIFICATIONHUBCONNSTR_` | [Azure Notification Hubs](https://azure.microsoft.com/services/notification-hubs)       |
+| `POSTGRESQLCONNSTR_`      | [PostgreSQL](https://www.postgresql.org)                                                |
+| `REDISCACHECONNSTR_`      | [Azure Cache for Redis](https://azure.microsoft.com/services/cache)                     |
+| `SERVICEBUSCONNSTR_`      | [Azure Service Bus](https://azure.microsoft.com/services/service-bus)                   |
+| `SQLAZURECONNSTR_`        | [Azure SQL Database](https://azure.microsoft.com/services/sql-database)                 |
+| `SQLCONNSTR_`             | [SQL Server](https://www.microsoft.com/sql-server)                                      |
+
+When an environment variable is discovered and loaded into configuration with any of the recognized prefixes:
 
 - The configuration key is created by removing the environment variable prefix and adding a configuration key section (`ConnectionStrings`).
-- A new configuration key-value pair is created that represents the database connection provider (except for `CUSTOMCONNSTR_`, which has no stated provider).
+- A new configuration key-value pair is created that represents the database connection provider when a provider name is associated with the prefix.
 
-| Environment variable key | Converted configuration key | Provider configuration entry                                                    |
-|--------------------------|-----------------------------|---------------------------------------------------------------------------------|
-| `CUSTOMCONNSTR_{KEY}`    | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
-| `MYSQLCONNSTR_{KEY}`     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
-| `SQLAZURECONNSTR_{KEY}`  | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
-| `SQLCONNSTR_{KEY}`       | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
+The following table shows the configuration entries produced for each prefix. Prefixes marked _.NET 10+_ are only processed when running on .NET 10 or later.
+
+| Environment variable key                    | Converted configuration key | Provider configuration entry                                                    |
+|---------------------------------------------|-----------------------------|---------------------------------------------------------------------------------|
+| `APIHUBCONNSTR_{KEY}` _(.NET 10+)_          | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `CUSTOMCONNSTR_{KEY}`                       | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `DOCDBCONNSTR_{KEY}` _(.NET 10+)_           | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `EVENTHUBCONNSTR_{KEY}` _(.NET 10+)_        | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `MYSQLCONNSTR_{KEY}`                        | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
+| `NOTIFICATIONHUBCONNSTR_{KEY}` _(.NET 10+)_ | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `POSTGRESQLCONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `Npgsql`                 |
+| `REDISCACHECONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `SERVICEBUSCONNSTR_{KEY}` _(.NET 10+)_      | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `SQLAZURECONNSTR_{KEY}`                     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
+| `SQLCONNSTR_{KEY}`                          | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 
 [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
@@ -286,7 +315,7 @@ Within the same command, don't mix command-line argument key-value pairs that us
 
 The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value is the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
 
-To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile%2A> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
+To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile*> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
 
 Overloads permit specifying:
 

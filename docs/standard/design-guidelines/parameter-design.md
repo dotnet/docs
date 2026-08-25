@@ -58,7 +58,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  Do not assume enum arguments will be in the range defined by the enum. The CLR allows casting any integer value into an enum value even if the value is not defined in the enum.
 
- ❌ DO NOT use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> for enum range checks.
+ ❌ DO NOT use <xref:System.Enum.IsDefined*?displayProperty=nameWithType> for enum range checks.
 
  ✔️ DO be aware that mutable arguments might have changed after they were validated.
 
@@ -92,7 +92,7 @@ public class String {
 }
 ```
 
- A user can then call the <xref:System.String.Format%2A?displayProperty=nameWithType> method, as follows:
+ A user can then call the <xref:System.String.Format*?displayProperty=nameWithType> method, as follows:
 
  `String.Format("File {0} not found in {1}",new object[]{filename,directory});`
 

@@ -1,12 +1,10 @@
-using static Generics.UnmanagedExtensions;
-
 namespace Generics
 {
     // <Snippet1>
     public class AGenericClass<T> where T : IComparable<T> { }
     // </Snippet1>
 
-    // <SNippet2>
+    // <Snippet2>
     public class UsingEnum<T> where T : System.Enum { }
 
     public class UsingDelegate<T> where T : System.Delegate { }
@@ -28,19 +26,16 @@ namespace Generics
     // </Snippet4>
 
     // <SnippetNotNull>
-#nullable enable
     class NotNullContainer<T>
         where T : notnull
     {
     }
-#nullable restore
     // </SnippetNotNull>
 
     // <Snippet5>
     public class MyGenericClass<T> where T : IComparable<T>, new()
     {
-        // The following line is not possible without new() constraint:
-        T item = new T();
+        T item = new();
     }
     // </Snippet5>
 
@@ -90,7 +85,7 @@ namespace Generics
 
         public void AddHead(T t)
         {
-            Node n = new Node(t) { Next = head };
+            Node n = new(t) { Next = head };
             head = n;
         }
 
@@ -98,7 +93,7 @@ namespace Generics
         {
             Node? current = head;
 
-            while (current != null)
+            while (current is not null)
             {
                 yield return current.Data;
                 current = current.Next;
@@ -108,22 +103,20 @@ namespace Generics
         public T? FindFirstOccurrence(string s)
         {
             Node? current = head;
-            T? t = null;
 
-            while (current != null)
+            while (current is not null)
             {
                 //The constraint enables access to the Name property.
                 if (current.Data.Name == s)
                 {
-                    t = current.Data;
-                    break;
+                    return current.Data;
                 }
                 else
                 {
                     current = current.Next;
                 }
             }
-            return t;
+            return null;
         }
     }
     // </Snippet9>
@@ -135,11 +128,9 @@ namespace Generics
     // <Snippet10>
     class EmployeeList<T> where T : notnull, Employee, IComparable<T>, new()
     {
-        // ...
         public void AddDefault()
         {
-            T t = new T();
-            // ...
+            T t = new();
         }
     }
     // </Snippet10>
@@ -173,8 +164,8 @@ namespace Generics
         unsafe public static byte[] ToByteArray<T>(this T argument) where T : unmanaged
         {
             var size = sizeof(T);
-            var result = new Byte[size];
-            Byte* p = (byte*)&argument;
+            var result = new byte[size];
+            byte* p = (byte*)&argument;
             for (var i = 0; i < size; i++)
                 result[i] = *p++;
             return result;
@@ -182,20 +173,25 @@ namespace Generics
         // </Snippet15>
 
         // <Snippet16>
-        public static TDelegate? TypeSafeCombine<TDelegate>(this TDelegate source, TDelegate target)
-            where TDelegate : System.Delegate
-            => Delegate.Combine(source, target) as TDelegate;
+        extension<TDelegate>(TDelegate source) where TDelegate : System.Delegate
+        {
+            public TDelegate? TypeSafeCombine(TDelegate target)
+                => Delegate.Combine(source, target) as TDelegate;
+        }
         // </Snippet16>
 
         // <Snippet18>
-        public static Dictionary<int, string> EnumNamedValues<T>() where T : System.Enum
+        extension<T>(T) where T : System.Enum
         {
-            var result = new Dictionary<int, string>();
-            var values = Enum.GetValues(typeof(T));
+            public static Dictionary<int, string> EnumNamedValues()
+            {
+                var result = new Dictionary<int, string>();
+                var values = Enum.GetValues(typeof(T));
 
-            foreach (int item in values)
-                result.Add(item, Enum.GetName(typeof(T), item)!);
-            return result;
+                foreach (int item in values)
+                    result.Add(item, Enum.GetName(typeof(T), item)!);
+                return result;
+            }
         }
         // </Snippet18>
     }
@@ -212,15 +208,15 @@ namespace Generics
         // <Snippet11>
         public static void OpEqualsTest<T>(T s, T t) where T : class
         {
-            System.Console.WriteLine(s == t);
+            Console.WriteLine(s == t);
         }
 
         private static void TestStringEquality()
         {
             string s1 = "target";
-            System.Text.StringBuilder sb = new System.Text.StringBuilder("target");
+            System.Text.StringBuilder sb = new("target");
             string s2 = sb.ToString();
-            OpEqualsTest<string>(s1, s2);
+            OpEqualsTest(s1, s2);
         }
         // </Snippet11>
 
@@ -232,7 +228,7 @@ namespace Generics
         }
         private static void TestUnmanaged()
         {
-            var thing = new Point3D { X = 1, Y = 2, Z = 3 };
+            Point3D thing = new() { X = 1, Y = 2, Z = 3 };
 
             var storage = thing.ToByteArray();
 
@@ -272,11 +268,10 @@ namespace Generics
         private static void TestEnumValues()
         {
             // <Snippet20>
-            var map = EnumNamedValues<Rainbow>();
+            var map = Rainbow.EnumNamedValues();
 
             foreach (var pair in map)
                 Console.WriteLine($"{pair.Key}:\t{pair.Value}");
-
             // </Snippet20>
         }
     }

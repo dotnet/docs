@@ -11,7 +11,7 @@ ms.assetid: 33bae8a8-4ed8-4a1f-85d1-c62ff288cc61
 
 This topic describes how to call a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object or as a static method on a custom class. A *model-defined function* is a function that is defined in the conceptual model. The procedures in the topic describe how to call these functions directly instead of calling them from LINQ to Entities queries. For information about calling model-defined functions in LINQ to Entities queries, see [How to: Call Model-Defined Functions in Queries](how-to-call-model-defined-functions-in-queries.md).
 
- Whether you call a model-defined function as an <xref:System.Data.Objects.ObjectContext> method or as a static method on a custom class, you must first map the method to the model-defined function with an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. However, when you define a method on the <xref:System.Data.Objects.ObjectContext> class, you must use the <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> property to expose the LINQ provider, whereas when you define a static method on a custom class, you must use the <xref:System.Linq.IQueryable.Provider%2A> property to expose the LINQ provider. For more information, see the examples that follow the procedures below.
+ Whether you call a model-defined function as an <xref:System.Data.Objects.ObjectContext> method or as a static method on a custom class, you must first map the method to the model-defined function with an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. However, when you define a method on the <xref:System.Data.Objects.ObjectContext> class, you must use the <xref:System.Data.Objects.ObjectContext.QueryProvider> property to expose the LINQ provider, whereas when you define a static method on a custom class, you must use the <xref:System.Linq.IQueryable.Provider> property to expose the LINQ provider. For more information, see the examples that follow the procedures below.
 
  The procedures below provide high-level outlines for calling a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object and as a static method on a custom class. The examples that follow provide more detail about the steps in the procedures. The procedures assume that you have defined a function in the conceptual model. For more information, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).
 
@@ -21,9 +21,9 @@ This topic describes how to call a model-defined function as a method on an <xre
 
 2. Add a common language runtime (CLR) method to your <xref:System.Data.Objects.ObjectContext> class that does the following:
 
-    - Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively. Function name resolution for LINQ is case sensitive.
+    - Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName*> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName*> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively. Function name resolution for LINQ is case sensitive.
 
-    - Returns the results of the <xref:System.Linq.IQueryProvider.Execute%2A> method that is returned by the <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> property.
+    - Returns the results of the <xref:System.Linq.IQueryProvider.Execute*> method that is returned by the <xref:System.Data.Objects.ObjectContext.QueryProvider> property.
 
 3. Call the method as a member on an instance of the <xref:System.Data.Objects.ObjectContext> class.
 
@@ -31,11 +31,11 @@ This topic describes how to call a model-defined function as a method on an <xre
 
 1. Add a class to your application with a static method that does the following:
 
-    - Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively.
+    - Maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName*> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName*> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model, respectively.
 
     - Accepts an <xref:System.Linq.IQueryable> argument.
 
-    - Returns the results of the <xref:System.Linq.IQueryProvider.Execute%2A> method that is returned by the <xref:System.Linq.IQueryable.Provider%2A> property.
+    - Returns the results of the <xref:System.Linq.IQueryProvider.Execute*> method that is returned by the <xref:System.Linq.IQueryable.Provider> property.
 
 2. Call the method as a member a static method on the custom class
 
@@ -74,10 +74,10 @@ This topic describes how to call a model-defined function as a method on an <xre
 
 ## Example 4
 
- The following example demonstrates how to call a model-defined function that returns a collection (as an <xref:System.Linq.IQueryable%601> object). Consider the conceptual model function below that returns all the `SalesOrderDetails` for a given product ID.
+ The following example demonstrates how to call a model-defined function that returns a collection (as an <xref:System.Linq.IQueryable`1> object). Consider the conceptual model function below that returns all the `SalesOrderDetails` for a given product ID.
 
 ```xml
-<Function Name="GetDetailsById" 
+<Function Name="GetDetailsById"
           ReturnType="Collection(AdventureWorksModel.SalesOrderDetail)">
   <Parameter Name="productID" Type="Edm.Int32" />
   <DefiningExpression>
@@ -97,7 +97,7 @@ This topic describes how to call a model-defined function as a method on an <xre
 
 ## Example 6
 
- The following code calls the method. Note that the returned <xref:System.Linq.IQueryable%601> query is further refined to return line totals for each `SalesOrderDetail`.
+ The following code calls the method. Note that the returned <xref:System.Linq.IQueryable`1> query is further refined to return line totals for each `SalesOrderDetail`.
 
  [!code-csharp[DP L2E Methods on ObjectContext#9](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#9)]
  [!code-vb[DP L2E Methods on ObjectContext#9](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/module1.vb#9)]

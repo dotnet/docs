@@ -4,11 +4,11 @@ title: "<extensions>"
 ms.date: "03/30/2017"
 ms.assetid: bcfe5c44-04ef-4a20-96a5-90bfadf39623
 ---
-# \<extensions>
+# `<extensions>`
 
-This configuration element contains a collection of XML elements that contain custom metadata to be published along with the standard discoverable metadata (EPR, ContractTypeName, BindingName, Scope and ListenURI). The following is an example of using this configuration element.  
-  
-```xml  
+This configuration element contains a collection of XML elements that contain custom metadata to be published along with the standard discoverable metadata (EPR, ContractTypeName, BindingName, Scope and ListenURI). The following is an example of using this configuration element.
+
+```xml
 <services>
   <service name="CalculatorService"
            behaviorConfiguration="CalculatorServiceBehavior">
@@ -39,8 +39,8 @@ This configuration element contains a collection of XML elements that contain cu
     </behavior>
   </endpointBehaviors>
 </behaviors>
-```  
-  
+```
+
 ## See also
 
 - <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

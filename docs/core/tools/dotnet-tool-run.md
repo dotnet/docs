@@ -1,11 +1,11 @@
 ---
 title: dotnet tool run command
 description: The dotnet tool run command invokes a local tool.
-ms.date: 02/14/2020
+ms.date: 10/28/2025
 ---
 # dotnet tool run
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -35,7 +35,7 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
   Available starting with .NET 9.0 SDK. Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Example
 

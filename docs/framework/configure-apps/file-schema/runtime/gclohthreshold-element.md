@@ -10,8 +10,8 @@ helpviewer_keywords:
 
 Specifies the threshold size, in bytes, that causes the garbage collector to put objects on the large object heap (LOH).
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCLOHThreshold>
 
 ## Syntax
@@ -51,7 +51,7 @@ This setting was introduced in .NET Framework 4.8.
 ## See also
 
 - [Configure apps by using configuration files](../../index.md)
-- [Run-time settings schema](index.md)
+- [Runtime settings schema](index.md)
 - [Configuration file schema](../index.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
 - [NET Core runtime config options for GC](../../../../core/runtime-config/garbage-collector.md)

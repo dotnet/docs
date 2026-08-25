@@ -7,7 +7,7 @@ ms.date: 06/03/2024
 
 The [ZIP file specification](https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE_6.2.0.txt) defines that bits 1 & 2 of the general-purpose bit flag in a nested file record's central directory header should be used to indicate the compression level of the nested file.
 
-.NET Framework sets these bits when generating the ZIP files underpinning the <xref:System.IO.Packaging.ZipPackage> API. During the migration of .NET Framework code to .NET, this functionality was lost and in .NET, bits 1 & 2 were always set to `0` when new file records were created within the ZIP file. This breaking change restores that capability. However, existing .NET clients that specify a <xref:System.IO.Packaging.CompressionOption> when calling <xref:System.IO.Compression.ZipArchive.CreateEntry%2A?displayProperty=nameWithType> will see the general-purpose bit flag values change.
+.NET Framework sets these bits when generating the ZIP files underpinning the <xref:System.IO.Packaging.ZipPackage> API. During the migration of .NET Framework code to .NET, this functionality was lost and in .NET, bits 1 & 2 were always set to `0` when new file records were created within the ZIP file. This breaking change restores that capability. However, existing .NET clients that specify a <xref:System.IO.Packaging.CompressionOption> when calling <xref:System.IO.Compression.ZipArchive.CreateEntry*?displayProperty=nameWithType> will see the general-purpose bit flag values change.
 
 ## Previous behavior
 

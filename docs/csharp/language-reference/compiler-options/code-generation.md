@@ -77,7 +77,7 @@ The **Optimize** option enables or disables optimizations performed by the compi
 
 You set the **Optimize** option from **Build** properties page for your project in Visual Studio.
 
-**Optimize** also tells the common language runtime to optimize code at run time. By default, optimizations are disabled. Specify **Optimize+** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [**Debug**](#debugtype) options.
+**Optimize** also tells the common language runtime to optimize code at run time. By default, optimizations are disabled. Specify **Optimize** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [**Debug**](#debugtype) options.
 
 ## Deterministic
 
@@ -89,7 +89,7 @@ Causes the compiler to produce an assembly whose byte-for-byte output is identic
 
 For modern .NET projects, deterministic compilation is enabled by default (the `Deterministic` property defaults to `true`). When deterministic compilation is enabled, the timestamp and MVID fields are replaced with values derived from a hash of all the compilation inputs, ensuring identical binary output for identical inputs.
 
-When deterministic compilation is disabled (`<Deterministic>false</Deterministic>`), compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID (a <xref:System.Reflection.Module.ModuleVersionId%2A?displayProperty=nameWithType>. Basically it is a GUID that uniquely identifies the module and version.) that is generated from random numbers.
+When deterministic compilation is disabled (`<Deterministic>false</Deterministic>`), compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID (a <xref:System.Reflection.Module.ModuleVersionId*?displayProperty=nameWithType>. Basically it is a GUID that uniquely identifies the module and version.) that is generated from random numbers.
 
 You use the `<Deterministic>` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same. The compiler considers the following inputs that affect determinism:
 

@@ -1,5 +1,4 @@
 ﻿// <All>
-using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -27,7 +26,7 @@ public class Program
     public static void Main()
     {
         // <WFInit>
-        WeatherForecast wf = new() { Data = true, DataList = new List<object> { true, 1 } };
+        WeatherForecast wf = new() { Data = true, DataList = [true, 1] };
         // </WFInit>
         string json = JsonSerializer.Serialize(wf, WeatherForecastContext.Default.WeatherForecast);
         Console.WriteLine(json);

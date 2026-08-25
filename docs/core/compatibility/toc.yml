@@ -4,30 +4,114 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 11
+        items:
+          - name: Overview
+            href: 11.md
+          - name: Core .NET libraries
+            items:
+              - name: Assembly.GetCallingAssembly behavior change when stack-trace support disabled
+                href: core-libraries/11/assembly-getcallingassembly-stacktracesupport-disabled.md
+              - name: CborReader and CborWriter enforce a default maximum nesting depth
+                href: core-libraries/11/cbor-max-depth.md
+              - name: Complex special-value results now follow C23 Annex G
+                href: core-libraries/11/complex-annex-g-special-values.md
+              - name: CRC32 validation added when reading ZIP archive entries
+                href: core-libraries/11/ziparchive-entry-crc32-validation.md
+              - name: DateOnly and TimeOnly TryParse methods throw for invalid input
+                href: core-libraries/11/dateonly-timeonly-tryparse-argumentexception.md
+              - name: DeflateStream and GZipStream write headers and footers for empty payload
+                href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
+              - name: Environment.TickCount made consistent with Windows timeout behavior
+                href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: Math.Round and MathF.Round return correctly rounded results
+                href: core-libraries/11/math-round-digits.md
+              - name: NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions
+                href: core-libraries/11/namedpipeserverstream-unix-permissions.md
+              - name: Nullable.GetUnderlyingType throws for custom Type subclasses
+                href: core-libraries/11/nullable-getunderlyingtype-throws.md
+              - name: PackagePart.GetStream() returns non-seekable stream for compressed parts
+                href: core-libraries/11/packagepart-getstream-non-seekable.md
+              - name: API obsoletions with non-default diagnostic IDs
+                href: core-libraries/11/obsolete-apis.md
+              - name: SafeFileHandle.IsAsync and FileStream.IsAsync accurately reflect non-blocking state
+                href: core-libraries/11/safefilehandle-isasync-unix.md
+              - name: TAR-reading APIs verify header checksums when reading
+                href: core-libraries/11/tar-checksum-validation.md
+              - name: TarWriter uses HardLink entries for hard-linked files
+                href: core-libraries/11/tarwriter-hardlink-entries.md
+              - name: ZipArchive.CreateAsync eagerly loads ZIP archive entries
+                href: core-libraries/11/ziparchive-createasync-eager-load.md
+          - name: Cryptography
+            items:
+              - name: API obsoletions
+                href: cryptography/11/obsolete-apis.md
+              - name: Composite ML-DSA on Windows uses native implementation
+                href: cryptography/11/compositemldsa-windows-native.md
+              - name: DSA removed from macOS
+                href: cryptography/11/dsa-removed-macos.md
+              - name: Linux AIA certificate fetching limited to two fetches per chain build
+                href: cryptography/11/aia-fetch-limit-linux.md
+          - name: Deployment
+            items:
+              - name: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json
+                href: deployment/11/runtimeconfigdev-configproperties-precedence.md
+          - name: Extensions
+            items:
+              - name: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks
+                href: extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md
+              - name: FileConfigurationProvider doesn't raise reload token after ignored load failure
+                href: extensions/11/fileconfigurationprovider-reload-token-load-failure.md
+              - name: FileConfigurationSource.OnLoadException callback is called for IO errors
+                href: extensions/11/fileconfigurationsource-onloadexception-io-errors.md
+              - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
+                href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
+              - name: Some Microsoft.Extensions packages included in shared framework
+                href: extensions/11/extensions-in-shared-framework.md
+          - name: Globalization
+            items:
+              - name: Japanese Calendar minimum supported date corrected
+                href: globalization/11/japanese-calendar-min-date.md
+          - name: Interop
+            items:
+              - name: NativeAOT uses lib prefix for native library outputs on Unix
+                href: interop/11/nativeaot-lib-prefix.md
+          - name: JIT compiler
+            items:
+              - name: Minimum hardware requirements updated
+                href: jit/11/minimum-hardware-requirements.md
+          - name: Networking
+            items:
+              - name: SslStream server-side AIA certificate downloads disabled by default
+                href: networking/11/sslstream-aia-downloads-disabled.md
+          - name: .NET MAUI
+            items:
+              - name: Minimum Android API level raised to 24
+                href: maui/11/android-minimum-api-level.md
+          - name: SDK and MSBuild
+            items:
+              - name: dnx scripts bypass global.json SDK selection
+                href: sdk/11/dnx-scripts-bypass-global-json.md
+              - name: mono launch target not set for .NET Framework apps
+                href: sdk/11/mono-launch-target-removed.md
+              - name: NativeAOT CLI command handling enabled by default
+                href: sdk/11/native-cli-command-handling-enabled.md
+              - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
+                href: sdk/11/nu1703-deprecated-monoandroid-framework.md
+              - name: NuGet pack warns for package IDs with restricted characters
+                href: sdk/11/nuget-pack-nu5052-packageid.md
+              - name: SDK local container runtime selection prefers platform-native tools
+                href: sdk/11/native-local-container-runtimes.md
+              - name: Template engine packages no longer support netstandard2.0
+                href: sdk/11/template-engine-netstandard.md
+              - name: VSTest removes dependency on Newtonsoft.Json
+                href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10
         items:
           - name: Overview
-            href: 10.0.md
+            href: 10.md
           - name: ASP.NET Core
-            items:
-              - name: Cookie login redirects disabled for known API endpoints
-                href: aspnet-core/10/cookie-authentication-api-endpoints.md
-              - name: Deprecation of WithOpenApi extension method
-                href: aspnet-core/10/withopenapi-deprecated.md
-              - name: Exception diagnostics suppressed when TryHandleAsync returns true
-                href: aspnet-core/10/exception-handler-diagnostics-suppressed.md
-              - name: IActionContextAccessor and ActionContextAccessor are obsolete
-                href: aspnet-core/10/iactioncontextaccessor-obsolete.md
-              - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
-                href: aspnet-core/10/openapi-analyzers-deprecated.md
-              - name: IPNetwork and ForwardedHeadersOptions.KnownNetworks are obsolete
-                href: aspnet-core/10/ipnetwork-knownnetworks-obsolete.md
-              - name: Microsoft.Extensions.ApiDescription.Client package deprecated
-                href: aspnet-core/10/apidescription-client-deprecated.md
-              - name: Razor run-time compilation is obsolete
-                href: aspnet-core/10/razor-runtime-compilation-obsolete.md
-              - name: WebHostBuilder, IWebHost, and WebHost are obsolete
-                href: aspnet-core/10/webhostbuilder-deprecated.md
+            href: /aspnet/core/breaking-changes/10/overview
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu
@@ -40,6 +124,8 @@ items:
                 href: core-libraries/10.0/activity-sampling.md
               - name: Arm64 SVE nonfaulting loads require mask
                 href: core-libraries/10.0/sve-nonfaulting-loads-mask-parameter.md
+              - name: BufferedStream.WriteByte no longer performs implicit flush
+                href: core-libraries/10.0/bufferedstream-writebyte-flush.md
               - name: C# 14 overload resolution with span parameters
                 href: core-libraries/10.0/csharp-overload-resolution.md
               - name: Consistent shift behavior in generic math
@@ -64,10 +150,10 @@ items:
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
-              - name: YMM embedded rounding removed from AVX10.2
-                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
+              - name: CompositeMLDsa updated to draft-08
+                href: cryptography/10.0/composite-mldsa-draft-08.md
               - name: CoseSigner.Key can be null
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
@@ -76,6 +162,8 @@ items:
                 href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
+              - name: OpenSSL 1.1.1 or later required on Unix
+                href: cryptography/10.0/openssl-version-requirement.md
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null
@@ -84,6 +172,10 @@ items:
             href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
+              - name: BackgroundService runs all of ExecuteAsync as a Task
+                href: extensions/10.0/backgroundservice-executeasync-task.md
+              - name: Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey
+                href: extensions/10.0/getkeyedservice-anykey.md
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
               - name: Null values preserved in configuration
@@ -96,8 +188,14 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Install tool
+            items:
+              - name: dotnet.acquire API for VS Code no longer always downloads latest
+                href: install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md
           - name: Interop
             items:
+              - name: Casting IDispatchEx COM object to IReflect fails
+                href: interop/10.0/idispatchex-ireflect-cast.md
               - name: Single-file apps no longer look for native libraries in executable directory
                 href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
@@ -106,20 +204,38 @@ items:
             items:
               - name: HTTP/3 support disabled by default with PublishTrimmed
                 href: networking/10.0/http3-disabled-with-publishtrimmed.md
+              - name: MailAddress enforces validation for consecutive dots
+                href: networking/10.0/mailaddress-consecutive-dots.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
                 href: networking/10.0/uri-length-limits-removed.md
+          - name: Reflection
+            items:
+              - name: More restricted annotations on InvokeMember/FindMembers/DeclaredMembers
+                href: reflection/10/ireflect-damt-annotations.md
+              - name: Type.MakeGenericSignatureType argument validation
+                href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild
             items:
+              - name: Code coverage EnableDynamicNativeInstrumentation defaults to false
+                href: sdk/10.0/code-coverage-dynamic-native-instrumentation.md
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
+              - name: "`dotnet` CLI commands log non-command-relevant data to stderr"
+                href: sdk/10.0/dotnet-cli-stderr-output.md
               - name: .NET tool packaging creates RuntimeIdentifier-specific tool packages
                 href: sdk/10.0/dotnet-tool-pack-publish.md
+              - name: dnx.ps1 file is no longer included in .NET SDK
+                href: sdk/10.0/dnx-ps1-removed.md
+              - name: Double quotes in file-level directives are disallowed
+                href: sdk/10.0/file-level-directive-double-quotes.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`
                 href: sdk/10.0/dotnet-restore-project-json-unsupported.md
+              - name: "`DefineConstants` for target frameworks not available at evaluation time"
+                href: sdk/10.0/defineconstants-not-available-at-evaluation.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
               - name: "`dotnet new sln` defaults to SLNX file format"
@@ -128,6 +244,10 @@ items:
                 href: sdk/10.0/dotnet-package-list-restore.md
               - name: "`dotnet tool install --local` creates manifest by default"
                 href: sdk/10.0/dotnet-tool-install-local-manifest.md
+              - name: "`dotnet watch` logs to stderr instead of stdout"
+                href: sdk/10.0/dotnet-watch-stderr.md
+              - name: HTTP warnings promoted to errors in package list and search
+                href: sdk/10.0/http-warnings-to-errors.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
@@ -136,16 +256,24 @@ items:
                 href: sdk/10.0/nu1510-pruned-references.md
               - name: NuGet packages with no runtime assets aren't included in deps.json
                 href: sdk/10.0/deps-json-trimmed-packages.md
+              - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
+                href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet audit sources no longer allow insecure HTTP by default
+                href: sdk/10.0/nuget-audit-source-http-disallowed.md
+              - name: NuGet logs an error for invalid package IDs
+                href: sdk/10.0/nuget-packageid-validation.md
               - name: PackageReference without a version raises error
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
-              - name: HTTP warnings promoted to errors in package list and search
-                href: sdk/10.0/http-warnings-to-errors.md
-              - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
-                href: sdk/10.0/nuget-enhanced-http-retry-removed.md
-              - name: NuGet logs an error for invalid package IDs
-                href: sdk/10.0/nuget-packageid-validation.md
+              - name: "'ToolCommandName' not set for non-tool packages"
+                href: sdk/10.0/toolcommandname-not-set.md
+          - name: Serialization
+            items:
+              - name: System.Text.Json checks for property name conflicts
+                href: serialization/10/property-name-validation.md
+              - name: XmlSerializer no longer ignores properties marked with ObsoleteAttribute
+                href: serialization/10/xmlserializer-obsolete-properties.md
           - name: Windows Forms
             items:
               - name: API obsoletions
@@ -171,19 +299,7 @@ items:
           - name: Overview
             href: 9.0.md
           - name: ASP.NET Core
-            items:
-              - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
-                href: aspnet-core/9.0/key-resolution.md
-              - name: Dev cert export no longer creates folder
-                href: aspnet-core/9.0/certificate-export.md
-              - name: Forwarded Headers Middleware ignores X-Forwarded-* headers from unknown proxies
-                href: aspnet-core/8.0/forwarded-headers-unknown-proxies.md
-              - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
-                href: aspnet-core/9.0/hostbuilder-validation.md
-              - name: Legacy Mono and Emscripten APIs not exported to global namespace
-                href: aspnet-core/9.0/legacy-apis.md
-              - name: Middleware types with multiple constructors
-                href: aspnet-core/9.0/middleware-constructors.md
+            href: /aspnet/core/breaking-changes/9/overview
           - name: Containers
             items:
               - name: Container images no longer install zlib
@@ -202,7 +318,7 @@ items:
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
                 href: core-libraries/9.0/biginteger-limit.md
-              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
+              - name: BinaryReader.ReadString() returns "/uFFFD" on malformed sequences
                 href: core-libraries/9.0/binaryreader.md
               - name: C# overload resolution prefers `params` span-type overloads
                 href: core-libraries/9.0/params-overloads.md
@@ -246,6 +362,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Environment variables take precedence in app runtime configuration settings
+                href: deployment/9.0/envvar-precedence.md
           - name: Entity Framework Core
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop
@@ -329,25 +447,7 @@ items:
           - name: Overview
             href: 8.0.md
           - name: ASP.NET Core
-            items:
-              - name: ConcurrencyLimiterMiddleware is obsolete
-                href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
-              - name: Custom converters for serialization removed
-                href: aspnet-core/8.0/problemdetails-custom-converters.md
-              - name: Forwarded Headers Middleware ignores X-Forwarded-* headers from unknown proxies
-                href: aspnet-core/8.0/forwarded-headers-unknown-proxies.md
-              - name: HTTP logging middleware requires AddHttpLogging()
-                href: aspnet-core/8.0/httplogging-addhttplogging-requirement.md
-              - name: ISystemClock is obsolete
-                href: aspnet-core/8.0/isystemclock-obsolete.md
-              - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
-                href: aspnet-core/8.0/antiforgery-checks.md
-              - name: Rate-limiting middleware requires AddRateLimiter
-                href: aspnet-core/8.0/addratelimiter-requirement.md
-              - name: Security token events return a JsonWebToken
-                href: aspnet-core/8.0/securitytoken-events.md
-              - name: TrimMode defaults to full for Web SDK projects
-                href: aspnet-core/8.0/trimmode-full.md
+            href: /aspnet/core/breaking-changes/8/overview
           - name: Containers
             items:
               - name: "'ca-certificates' removed from Alpine images"
@@ -398,6 +498,8 @@ items:
                 href: core-libraries/8.0/itypedescriptorcontext-props.md
               - name: Legacy Console.ReadKey removed
                 href: core-libraries/8.0/console-readkey-legacy.md
+              - name: LDAP APIs not available on .NET Standard / .NET Framework
+                href: core-libraries/8.0/ldap-netstandard-apis.md
               - name: Method builders generate parameters with HasDefaultValue=false
                 href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
               - name: Package part URIs are now compared case-insensitively in System.IO.Packaging
@@ -420,6 +522,8 @@ items:
                 href: deployment/8.0/rid-asset-list.md
               - name: .NET Monitor only includes distroless images
                 href: deployment/8.0/monitor-image.md
+              - name: .NET packages for openSUSE and SLES depend on OpenSSL 3.x
+                href: deployment/8.0/opensuse-sles-openssl3-dependency.md
               - name: StripSymbols defaults to true
                 href: deployment/8.0/stripsymbols-default.md
           - name: Entity Framework Core
@@ -430,6 +534,8 @@ items:
                 href: extensions/8.0/activatorutilities-createinstance-behavior.md
               - name: ActivatorUtilities.CreateInstance requires non-null provider
                 href: extensions/8.0/activatorutilities-createinstance-null-provider.md
+              - name: ConfigurationBinder silently skips invalid array elements
+                href: extensions/8.0/configurationbinder-skips-failed-array-elements.md
               - name: ConfigurationBinder throws for mismatched value
                 href: extensions/8.0/configurationbinder-exceptions.md
               - name: ConfigurationManager package no longer references System.Security.Permissions
@@ -555,37 +661,7 @@ items:
           - name: Overview
             href: 7.0.md
           - name: ASP.NET Core
-            items:
-              - name: API controller actions try to infer parameters from DI
-                href: aspnet-core/7.0/api-controller-action-parameters-di.md
-              - name: ASPNET-prefixed environment variable precedence
-                href: aspnet-core/7.0/environment-variable-precedence.md
-              - name: AuthenticateAsync for remote auth providers
-                href: aspnet-core/7.0/authenticateasync-anonymous-request.md
-              - name: Authentication in WebAssembly apps
-                href: aspnet-core/7.0/wasm-app-authentication.md
-              - name: Default authentication scheme
-                href: aspnet-core/7.0/default-authentication-scheme.md
-              - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
-                href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
-              - name: Fallback file endpoints
-                href: aspnet-core/7.0/fallback-file-endpoints.md
-              - name: IHubClients and IHubCallerClients hide members
-                href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
-              - name: "Kestrel: Default HTTPS binding removed"
-                href: aspnet-core/7.0/https-binding-kestrel.md
-              - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
-                href: aspnet-core/7.0/libuv-transport-dll-removed.md
-              - name: Microsoft.Data.SqlClient updated to 4.0.1
-                href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
-              - name: Middleware no longer defers to endpoint with null request delegate
-                href: aspnet-core/7.0/middleware-null-requestdelegate.md
-              - name: MVC's detection of an empty body in model binding changed
-                href: aspnet-core/7.0/mvc-empty-body-model-binding.md
-              - name: Output caching API changes
-                href: aspnet-core/7.0/output-caching-renames.md
-              - name: SignalR Hub methods try to resolve parameters from DI
-                href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
+            href: /aspnet/core/breaking-changes/7/overview
           - name: Configuration
             items:
               - name: System.diagnostics entry in app.config
@@ -743,57 +819,7 @@ items:
           - name: Overview
             href: 6.0.md
           - name: ASP.NET Core
-            items:
-              - name: ActionResult<T> sets StatusCode to 200
-                href: aspnet-core/6.0/actionresult-statuscode.md
-              - name: AddDataAnnotationsValidation method made obsolete
-                href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
-              - name: Assemblies removed from shared framework
-                href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
-              - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
-                href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
-              - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
-                href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
-              - name: "Blazor: Byte-array interop"
-                href: aspnet-core/6.0/byte-array-interop.md
-              - name: ClientCertificate doesn't trigger renegotiation
-                href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
-              - name: EndpointName metadata not set automatically
-                href: aspnet-core/6.0/endpointname-metadata.md
-              - name: "Identity: Default Bootstrap version of UI changed"
-                href: aspnet-core/6.0/identity-bootstrap4-to-5.md
-              - name: "Kestrel: Log message attributes changed"
-                href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
-              - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
-                href: aspnet-core/6.0/messagepack-library-change.md
-              - name: Microsoft.AspNetCore.Http.Features split
-                href: aspnet-core/6.0/microsoft-aspnetcore-http-features-package-split.md
-              - name: "Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
-                href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
-              - name: "Middleware: New Use overload"
-                href: aspnet-core/6.0/middleware-new-use-overload.md
-              - name: Minimal API renames in RC 1
-                href: aspnet-core/6.0/rc1-minimal-api-renames.md
-              - name: Minimal API renames in RC 2
-                href: aspnet-core/6.0/rc2-minimal-api-renames.md
-              - name: MVC doesn't buffer IAsyncEnumerable types
-                href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
-              - name: Nullable reference type annotations changed
-                href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
-              - name: Obsoleted and removed APIs
-                href: aspnet-core/6.0/obsolete-removed-apis.md
-              - name: PreserveCompilationContext not configured by default
-                href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
-              - name: "Razor: Compiler generates single assembly"
-                href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
-              - name: "Razor: Logging ID changes"
-                href: aspnet-core/6.0/razor-pages-logging-ids.md
-              - name: "Razor: RazorEngine APIs marked obsolete"
-                href: aspnet-core/6.0/razor-engine-apis-obsolete.md
-              - name: "SignalR: Java Client updated to RxJava3"
-                href: aspnet-core/6.0/signalr-java-client-updated.md
-              - name: TryParse and BindAsync methods are validated
-                href: aspnet-core/6.0/tryparse-bindasync-validation.md
+            href: /aspnet/core/breaking-changes/6/overview
           - name: Containers
             items:
               - name: Default console logger formatting in container images
@@ -965,79 +991,7 @@ items:
           - name: Overview
             href: 5.0.md
           - name: ASP.NET Core
-            items:
-              - name: ASP.NET Core apps deserialize quoted numbers
-                href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
-              - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
-                href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
-              - name: BinaryFormatter serialization methods are obsolete
-                href: serialization/5.0/binaryformatter-serialization-obsolete.md
-              - name: Resource in endpoint routing is HttpContext
-                href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
-              - name: Microsoft-prefixed Azure integration packages removed
-                href: aspnet-core/5.0/azure-integration-packages-removed.md
-              - name: "Blazor: Route precedence logic changed in Blazor apps"
-                href: aspnet-core/5.0/blazor-routing-logic-changed.md
-              - name: "Blazor: Updated browser support"
-                href: aspnet-core/5.0/blazor-browser-support-updated.md
-              - name: "Blazor: Insignificant whitespace trimmed by compiler"
-                href: aspnet-core/5.0/blazor-components-trim-insignificant-whitespace.md
-              - name: "Blazor: JSObjectReference and JSInProcessObjectReference types are internal"
-                href: aspnet-core/5.0/blazor-jsobjectreference-to-internal.md
-              - name: "Blazor: Target framework of NuGet packages changed"
-                href: aspnet-core/5.0/blazor-packages-target-framework-changed.md
-              - name: "Blazor: ProtectedBrowserStorage feature moved to shared framework"
-                href: aspnet-core/5.0/blazor-protectedbrowserstorage-moved.md
-              - name: "Blazor: RenderTreeFrame readonly public fields are now properties"
-                href: aspnet-core/5.0/blazor-rendertreeframe-fields-become-properties.md
-              - name: "Blazor: Updated validation logic for static web assets"
-                href: aspnet-core/5.0/blazor-static-web-assets-validation-logic-updated.md
-              - name: Cryptography APIs not supported on browser
-                href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
-              - name: "Extensions: Package reference changes"
-                href: aspnet-core/5.0/extensions-package-reference-changes.md
-              - name: Kestrel and IIS BadHttpRequestException types are obsolete
-                href: aspnet-core/5.0/http-badhttprequestexception-obsolete.md
-              - name: HttpClient instances created by IHttpClientFactory log integer status codes
-                href: aspnet-core/5.0/http-httpclient-instances-log-integer-status-codes.md
-              - name: "HttpSys: Client certificate renegotiation disabled by default"
-                href: aspnet-core/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md
-              - name: "IIS: UrlRewrite middleware query strings are preserved"
-                href: aspnet-core/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md
-              - name: "Kestrel: Configuration changes detected by default"
-                href: aspnet-core/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md
-              - name: "Kestrel: Default supported TLS protocol versions changed"
-                href: aspnet-core/5.0/kestrel-default-supported-tls-protocol-versions-changed.md
-              - name: "Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions"
-                href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
-              - name: "Kestrel: Libuv transport marked as obsolete"
-                href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
-              - name: Obsolete properties on ConsoleLoggerOptions
-                href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
-              - name: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed
-                href: aspnet-core/5.0/localization-members-removed.md
-              - name: Pubternal APIs removed
-                href: aspnet-core/5.0/localization-pubternal-apis-removed.md
-              - name: Obsolete constructor removed in request localization middleware
-                href: aspnet-core/5.0/localization-requestlocalizationmiddleware-constructor-removed.md
-              - name: "Middleware: Database error page marked as obsolete"
-                href: aspnet-core/5.0/middleware-database-error-page-obsolete.md
-              - name: Exception handler middleware throws original exception
-                href: aspnet-core/5.0/middleware-exception-handler-throws-original-exception.md
-              - name: ObjectModelValidator calls a new overload of Validate
-                href: aspnet-core/5.0/mvc-objectmodelvalidator-calls-new-overload.md
-              - name: Cookie name encoding removed
-                href: aspnet-core/5.0/security-cookie-name-encoding-removed.md
-              - name: IdentityModel NuGet package versions updated
-                href: aspnet-core/5.0/security-identitymodel-nuget-package-versions-updated.md
-              - name: "SignalR: MessagePack Hub Protocol options type changed"
-                href: aspnet-core/5.0/signalr-messagepack-hub-protocol-options-changed.md
-              - name: "SignalR: MessagePack Hub Protocol moved"
-                href: aspnet-core/5.0/signalr-messagepack-package.md
-              - name: UseSignalR and UseConnections methods removed
-                href: aspnet-core/5.0/signalr-usesignalr-useconnections-removed.md
-              - name: CSV content type changed to standards-compliant
-                href: aspnet-core/5.0/static-files-csv-content-type-changed.md
+            href: /aspnet/core/breaking-changes/5/overview
           - name: Code analysis
             items:
               - name: CA1416 warning

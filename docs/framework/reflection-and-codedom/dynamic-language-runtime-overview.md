@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 The *dynamic language runtime* (DLR) is a runtime environment that adds a set of services for dynamic languages to the common language runtime (CLR). The DLR makes it easier to develop dynamic languages to run on .NET and to add dynamic features to statically typed languages.
 
-Dynamic languages can identify the type of an object at run time, whereas in statically typed languages such as C# and Visual Basic (when you use `Option Explicit On`), you must specify object types at design time. Examples of dynamic languages are Lisp, Smalltalk, JavaScript, PHP, Ruby, Python, ColdFusion, Lua, Cobra, and Groovy.
+Dynamic languages can identify the type of an object at runtime, whereas in statically typed languages such as C# and Visual Basic (when you use `Option Explicit On`), you must specify object types at design time. Examples of dynamic languages are Lisp, Smalltalk, JavaScript, PHP, Ruby, Python, ColdFusion, Lua, Cobra, and Groovy.
 
 Most dynamic languages provide the following advantages for developers:
 
@@ -76,7 +76,7 @@ The DLR uses binders in call sites to communicate not only with .NET, but with o
 
 ## DLR documentation
 
-For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with .NET, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/main/Docs) repo on GitHub.
+For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with .NET, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/main/docs) repo on GitHub.
 
 ## See also
 

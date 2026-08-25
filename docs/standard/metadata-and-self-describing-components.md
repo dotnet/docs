@@ -58,7 +58,7 @@ Metadata is the key to a simpler programming model, and eliminates the need for 
 
 - Attributes.
 
-  .NET lets you declare specific kinds of metadata, called attributes, in your compiled file. Attributes can be found throughout .NET and are used to control in more detail how your program behaves at run time. Additionally, you can emit your own custom metadata into .NET files through user-defined custom attributes. For more information, see [Attributes](attributes/index.md).
+  .NET lets you declare specific kinds of metadata, called attributes, in your compiled file. Attributes can be found throughout .NET and are used to control in more detail how your program behaves at runtime. Additionally, you can emit your own custom metadata into .NET files through user-defined custom attributes. For more information, see [Attributes](attributes/index.md).
 
 ## Metadata and the PE File Structure
 
@@ -92,7 +92,7 @@ When a program is compiled for the common language runtime, it is converted to a
 
 ## Run-Time Use of Metadata
 
-To better understand metadata and its role in the common language runtime, it might be helpful to construct a simple program and illustrate how metadata affects its run-time life. The following code example shows two methods inside a class called `MyApp`. The `Main` method is the program entry point, while the `Add` method simply returns the sum of two integer arguments.
+To better understand metadata and its role in the common language runtime, it might be helpful to construct a simple program and illustrate how metadata affects its runtime life. The following code example shows two methods inside a class called `MyApp`. The `Main` method is the program entry point, while the `Add` method simply returns the sum of two integer arguments.
 
 ```vb
 Public Class MyApp

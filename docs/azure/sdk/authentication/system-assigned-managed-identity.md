@@ -3,7 +3,7 @@ title: Authenticate Azure-hosted .NET apps to Azure resources using a system-ass
 description: Learn how to authenticate Azure-hosted .NET apps to other Azure services using a system-assigned managed identity.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 02/06/2025
+ms.date: 11/10/2025
 ---
 
 # Authenticate Azure-hosted .NET apps to Azure resources using a system-assigned managed identity
@@ -15,7 +15,7 @@ The recommended approach to authenticate an Azure-hosted app to other Azure reso
 - How to assign roles to the system-assigned managed identity
 - How to authenticate using the system-assigned managed identity from your app code
 
-[!INCLUDE [managed-identity-concepts](../includes/managed-identity-concepts.md)]
+[!INCLUDE [managed-identity-concepts](~/azure-dev-docs/articles/includes/authentication/managed-identity-concepts.md)]
 
 The sections ahead describe the steps to enable and use a system-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [user-assigned managed identities](user-assigned-managed-identity.md) article for more information.
 
@@ -60,8 +60,8 @@ The output resembles the following:
 
 ```json
 {
-  "principalId": "99999999-9999-9999-9999-999999999999",
-  "tenantId": "33333333-3333-3333-3333-333333333333",
+  "principalId": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+  "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "type": "SystemAssigned",
   "userAssignedIdentities": null
 }
@@ -120,11 +120,11 @@ az role definition list \
     --output table
 ```
 
-For example, to allow the managed identity with the ID of `99999999-9999-9999-9999-999999999999` read, write, and delete access to Azure Storage blob containers and data to all storage accounts in the *msdocs-dotnet-sdk-auth-example* resource group, assign the application service principal to the *Storage Blob Data Contributor* role using the following command:
+For example, to allow the managed identity with the ID of `aaaaaaaa-bbbb-cccc-1111-222222222222` read, write, and delete access to Azure Storage blob containers and data to all storage accounts in the *msdocs-dotnet-sdk-auth-example* resource group, assign the application service principal to the *Storage Blob Data Contributor* role using the following command:
 
 ```azurecli
 az role assignment create \
-    --assignee 99999999-9999-9999-9999-999999999999 \
+    --assignee aaaaaaaa-bbbb-cccc-1111-222222222222 \
     --role "Storage Blob Data Contributor" \
     --scope "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/msdocs-dotnet-sdk-auth-example"
 ```

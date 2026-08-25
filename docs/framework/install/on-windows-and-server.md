@@ -1,7 +1,7 @@
 ---
 title: Install .NET Framework on Windows
 description: Learn how to install .NET Framework on Windows 11, Windows 10, and Windows Server. This article also includes information about .NET Framework and unsupported versions of Windows, such as Windows 8, Windows Vista, and Windows XP.
-ms.date: 07/10/2025
+ms.date: 11/06/2025
 ---
 # Install .NET Framework on Windows and Windows Server
 
@@ -26,12 +26,6 @@ The following versions of .NET Framework are still supported:
 - [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/net462) (support ends January 12, 2027)
 - [.NET Framework 3.5 Service Pack 1](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) (support ends January 9, 2029)
 
-### .NET Framework 3.5
-
-.NET Framework 3.5 is still supported by Microsoft, even though it's an older version of .NET Framework. However, only the .NET Framework 3.5 runtime is supported, which runs apps. Developing new apps that target .NET Framework 3.5 isn't supported. This version of .NET Framework supports running apps that target versions 1.0 through 3.5, and can be installed alongside .NET Framework 4.
-
-If you try to run an app that targets .NET Framework 1.0 through 3.5, and .NET Framework 3.5 is missing, you're prompted to install it. For more information, see [Install .NET Framework 3.5 on Windows](dotnet-35-windows.md).
-
 ### .NET Framework 4.x
 
 All .NET Framework 4.x versions are in-place updates. Only a single 4.x version can be present on Windows. Because .NET Framework is installed as part of Windows, consider that:
@@ -39,6 +33,14 @@ All .NET Framework 4.x versions are in-place updates. Only a single 4.x version 
 - If there's a later 4.x version installed on the machine already, you can't install a previous 4.x version.
 - If the OS comes preinstalled with a particular .NET Framework version, you can't install a previous 4.x version on the same machine.
 - If you install a later version, you don't have to first uninstall the previous version.
+
+### .NET Framework 3.5
+
+.NET Framework 3.5 is supported by Microsoft, even though it's an older version of .NET Framework. However, only the .NET Framework 3.5 runtime is supported, which runs apps. Developing new apps that target .NET Framework 3.5 isn't supported. This version of .NET Framework supports running apps that target versions 1.0 through 3.5, and can be installed alongside .NET Framework 4.
+
+[!INCLUDE [dotnet-35-installer](includes/dotnet-35-installer.md)]
+
+If you try to run an app that targets .NET Framework 1.0 through 3.5, and .NET Framework 3.5 is missing, you're prompted to install it. For more information, see [Install .NET Framework 3.5 on Windows](dotnet-35-windows.md).
 
 ## Developers and Visual Studio
 
@@ -52,6 +54,7 @@ In the following table, ❌ represents an unsupported version of Windows 11 and 
 
 | Windows 11 version    | .NET Framework included | Latest .NET Framework supported |
 |-----------------------|-------------------------|---------------------------------|
+| ✔️ 25H2 (September 2025) | 4.8.1                   | 4.8.1                           |
 | ✔️ 24H2 (October 2024)   | 4.8.1                   | 4.8.1                           |
 | ✔️ 23H2 (October 2023)   | 4.8.1                   | 4.8.1                           |
 | ❌ 22H2 (September 2022) | 4.8.1                   | 4.8.1                           |

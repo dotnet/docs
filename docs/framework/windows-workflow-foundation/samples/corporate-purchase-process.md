@@ -6,7 +6,7 @@ ms.assetid: a5e57336-4290-41ea-936d-435593d97055
 ---
 # Corporate Purchase Process
 
-The [PurchaseProcess sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/application/PurchaseProcess) shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601>, and <xref:System.Activities.Statements.ForEach%601> and a custom activity to create a workflow that represents the process.
+The [PurchaseProcess sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/application/PurchaseProcess) shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach`1>, and <xref:System.Activities.Statements.ForEach`1> and a custom activity to create a workflow that represents the process.
 
  This sample contains an ASP.NET client application that allows interacting with the process as different participants (as the original requester or a particular vendor).
 
@@ -54,7 +54,7 @@ The [PurchaseProcess sample](https://github.com/dotnet/samples/tree/main/framewo
 
 ## Process Definition
 
- The core logic of the sample uses a <xref:System.Activities.Statements.ParallelForEach%601> activity that waits for the offers from each vendor (using a custom activity that creates a bookmark), and registers the vendor proposal as an RFP (using an <xref:System.Activities.Statements.InvokeMethod> activity).
+ The core logic of the sample uses a <xref:System.Activities.Statements.ParallelForEach`1> activity that waits for the offers from each vendor (using a custom activity that creates a bookmark), and registers the vendor proposal as an RFP (using an <xref:System.Activities.Statements.InvokeMethod> activity).
 
  The sample then iterates through all of the received proposals stored in the `RfpRepository`, calculating the adjusted value (using an <xref:System.Activities.Statements.Assign> activity and <xref:System.Activities.Expressions> activities), and if the adjusted value is better than the previous best offer, assigns the new value as the best offer (using <xref:System.Activities.Statements.If> and <xref:System.Activities.Statements.Assign> activities).
 
@@ -78,7 +78,7 @@ The [PurchaseProcess sample](https://github.com/dotnet/samples/tree/main/framewo
 |IPurchaseProcessHost.cs|Interface for the host of the workflow.|
 |PurchaseProcessHost.cs|Implementation of a host for the workflow. The host abstracts the details of the workflow runtime and is used in all the client applications to load, run, and interact with `PurchaseProcess` workflow instances.|
 |PurchaseProcessWorkflow.cs|An activity that contains the definition of the Purchase Process workflow (derives from <xref:System.Activities.Activity>).<br /><br /> Activities that derive from <xref:System.Activities.Activity> compose functionality by assembling existing custom activities and activities from the [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] activity library. Assembling these activities is the most basic way to create custom functionality.|
-|WaitForVendorProposal.cs|This custom activity derives from <xref:System.Activities.NativeActivity> and creates a named bookmark that must be resumed later by a vendor when submitting the proposal.<br /><br /> Activities that derive from <xref:System.Activities.NativeActivity>, like those that derive from <xref:System.Activities.CodeActivity>, create imperative functionality by overriding <xref:System.Activities.NativeActivity.Execute%2A>, but also have access to all of the functionality of the workflow runtime through the <xref:System.Activities.ActivityContext> that gets passed into the `Execute` method. This context has support for scheduling and canceling child activities, setting up no-persist zones (execution blocks during which the runtime does not persist the workflow's data, such as within atomic transactions), and <xref:System.Activities.Bookmark> objects (handles for resuming paused workflows).|
+|WaitForVendorProposal.cs|This custom activity derives from <xref:System.Activities.NativeActivity> and creates a named bookmark that must be resumed later by a vendor when submitting the proposal.<br /><br /> Activities that derive from <xref:System.Activities.NativeActivity>, like those that derive from <xref:System.Activities.CodeActivity>, create imperative functionality by overriding <xref:System.Activities.NativeActivity.Execute*>, but also have access to all of the functionality of the workflow runtime through the <xref:System.Activities.ActivityContext> that gets passed into the `Execute` method. This context has support for scheduling and canceling child activities, setting up no-persist zones (execution blocks during which the runtime does not persist the workflow's data, such as within atomic transactions), and <xref:System.Activities.Bookmark> objects (handles for resuming paused workflows).|
 |TrackingParticipant.cs|A <xref:System.Activities.Tracking.TrackingParticipant> that receives all tracking events and saves them to a text file.<br /><br /> Tracking participants are added to workflow instance as Extensions.|
 |XmlWorkflowInstanceStore.cs|A custom <xref:System.Runtime.DurableInstancing.InstanceStore> that saves workflow applications to XML files.|
 |XmlPersistenceParticipant.cs|A custom <xref:System.Activities.Persistence.PersistenceParticipant> that saves an instance of request for proposal to an XML file.|
@@ -121,13 +121,13 @@ The [PurchaseProcess sample](https://github.com/dotnet/samples/tree/main/framewo
 
 ### Persistence Files
 
- The following table shows the files generated by the persistence provider (`XmlPersistenceProvider`) are located in the path of the current system's temporary folder (using <xref:System.IO.Path.GetTempPath%2A>). The tracing file is created in the current execution path.
+ The following table shows the files generated by the persistence provider (`XmlPersistenceProvider`) are located in the path of the current system's temporary folder (using <xref:System.IO.Path.GetTempPath*>). The tracing file is created in the current execution path.
 
 |File Name|Description|Path|
 |-|-|-|
-|rfps.xml|The XML file with all the active and finished Requests for Proposals.|<xref:System.IO.Path.GetTempPath%2A>|
-|[instanceid]|This file contains all the information about a workflow instance.<br /><br /> This file is generated by the schematized persistence implementation (PersistenceParticipant in XmlPersistenceProvider).|<xref:System.IO.Path.GetTempPath%2A>|
-|[instanceId].tracking|A text file with all the events that occurred within a concrete instance.<br /><br /> This file is generated by TrackingParticipant.|<xref:System.IO.Path.GetTempPath%2A>|
+|rfps.xml|The XML file with all the active and finished Requests for Proposals.|<xref:System.IO.Path.GetTempPath*>|
+|[instanceid]|This file contains all the information about a workflow instance.<br /><br /> This file is generated by the schematized persistence implementation (PersistenceParticipant in XmlPersistenceProvider).|<xref:System.IO.Path.GetTempPath*>|
+|[instanceId].tracking|A text file with all the events that occurred within a concrete instance.<br /><br /> This file is generated by TrackingParticipant.|<xref:System.IO.Path.GetTempPath*>|
 |PurchaseProcess.Tracing.TraceLog.txt|The tracing file generated by the workflow based on the configuration parameters in the App.config or Web.config files.|Current execution path|
 
 ## To use this sample

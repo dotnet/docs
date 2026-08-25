@@ -116,8 +116,8 @@ This example produces the following output:
 
 ## See also
 
-- <xref:System.Xml.Linq.XElement.Attribute%2A>
-- <xref:System.Xml.Linq.XContainer.Elements%2A>
+- <xref:System.Xml.Linq.XElement.Attribute*>
+- <xref:System.Xml.Linq.XContainer.Elements*>
 - [Projection Operations (C#)](../../csharp/linq/standard-query-operators/projection-operations.md)
 - [Quantifier Operations (C#)](../../csharp/linq/standard-query-operators/quantifier-operations.md)
 - [XML Child Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)

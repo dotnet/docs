@@ -11,7 +11,7 @@ Every .NET application has dependencies. Even the simple `hello world` app has d
 
 Understanding the default assembly loading logic in .NET can help you troubleshoot typical deployment issues.
 
-In some applications, dependencies are dynamically determined at run time. In these situations, it's critical to understand how managed assemblies and unmanaged dependencies are loaded.
+In some applications, dependencies are dynamically determined at runtime. In these situations, it's critical to understand how managed assemblies and unmanaged dependencies are loaded.
 
 ## AssemblyLoadContext
 

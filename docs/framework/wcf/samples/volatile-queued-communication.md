@@ -159,7 +159,7 @@ Stock Tick zzz9:43.3
 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
-By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport security is enabled. There are two pertinent properties for MSMQ transport security, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> and <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>`.` By default, the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain and the active directory integration option for MSMQ must be installed. If you run this sample on a computer that does not satisfy these criteria you receive an error.
+By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport security is enabled. There are two pertinent properties for MSMQ transport security, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode*> and <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel*>`.` By default, the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain and the active directory integration option for MSMQ must be installed. If you run this sample on a computer that does not satisfy these criteria you receive an error.
 
 ### To run the sample on a computer joined to a workgroup or without active directory integration
 
@@ -213,4 +213,4 @@ By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport securit
 2. Ensure that you change the configuration on both the server and the client before you run the sample.
 
     > [!NOTE]
-    > Setting `security mode` to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>, and `Message` security to `None`.
+    > Setting `security mode` to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode*>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel*>, and `Message` security to `None`.

@@ -20,9 +20,9 @@ There are two ways to specify an assembly's location:
 
  You can also use the [.NET Framework Configuration Tool (Mscorcfg.msc)](/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) to specify assembly locations or specify locations for the common language runtime to probe for assemblies.
 
-## Using the \<codeBase> Element
+## Using the `<codeBase>` Element
 
- You can use the **\<codeBase>** element only in machine configuration or publisher policy files that also redirect the assembly version. When the runtime determines which assembly version to use, it applies the code base setting from the file that determines the version. If no code base is indicated, the runtime probes for the assembly in the normal way. For details, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).
+ You can use the `<codeBase>` element only in machine configuration or publisher policy files that also redirect the assembly version. When the runtime determines which assembly version to use, it applies the code base setting from the file that determines the version. If no code base is indicated, the runtime probes for the assembly in the normal way. For details, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).
 
  The following example shows how to specify an assembly's location.
 
@@ -42,12 +42,12 @@ There are two ways to specify an assembly's location:
 </configuration>
 ```
 
- The **version** attribute is required for all strong-named assemblies but should be omitted for assemblies that are not strong-named. The **\<codeBase>** element requires the **href** attribute. You cannot specify version ranges in the **\<codeBase>** element.
+ The `version` attribute is required for all strong-named assemblies but should be omitted for assemblies that aren't strong-named. The `<codeBase>` element requires the `href` attribute. You cannot specify version ranges in the `<codeBase>` element.
 
 > [!NOTE]
 > If you are supplying a code base hint for an assembly that is not strong-named, the hint must point to the application base or a subdirectory of the application base directory.
 
-## Using the \<probing> Element
+## Using the `<probing>` Element
 
  The runtime locates assemblies that do not have a code base by probing. For more information about probing, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).
 
@@ -63,7 +63,7 @@ There are two ways to specify an assembly's location:
 </configuration>
 ```
 
- The **privatePath** attribute contains the directories that the runtime should search for assemblies. If the application is located at C:\Program Files\MyApp, the runtime will look for assemblies that do not specify a code base in C:\Program Files\MyApp\Bin, C:\Program Files\MyApp\Bin2\Subbin, and C:\Program Files\MyApp\Bin3. The directories specified in **privatePath** must be subdirectories of the application base directory.
+ The `privatePath` attribute contains the directories that the runtime should search for assemblies. If the application is located at C:\Program Files\MyApp, the runtime will look for assemblies that do not specify a code base in C:\Program Files\MyApp\Bin, C:\Program Files\MyApp\Bin2\Subbin, and C:\Program Files\MyApp\Bin3. The directories specified in `privatePath` must be subdirectories of the application base directory.
 
 ## See also
 

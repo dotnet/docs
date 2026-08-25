@@ -13,8 +13,8 @@ Default value is 0 - this implies no change.
 Besides the default value 0, values between 1 and 9 (inclusive) are valid. The higher the value, the more the garbage collector tries to conserve memory and thus to keep the heap small.
 If the value is non-zero, the large object heap will be compacted automatically if it has too much fragmentation.
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCConserveMemory>
 
 ## Syntax
@@ -54,7 +54,7 @@ This setting was introduced in .NET Framework 4.8.
 ## See also
 
 - [Configure apps by using configuration files](../../index.md)
-- [Run-time settings schema](index.md)
+- [Runtime settings schema](index.md)
 - [Configuration file schema](../index.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
 - [NET Core runtime config options for GC](../../../../core/runtime-config/garbage-collector.md)

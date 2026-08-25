@@ -18,7 +18,7 @@ When you compile an application, you can specify that it should run on a Windows
 > [!NOTE]
 > Because of the design of x86 emulation and the WOW64 subsystem for the Itanium processor family, applications are restricted to execution on one processor. These factors reduce the performance and scalability of 32-bit .NET applications that run on Itanium-based systems. We recommend that you use .NET Framework 4 or later, which includes native 64-bit support for Itanium-based systems, for increased performance and scalability.
 
- By default, when you run a 64-bit managed application on a 64-bit Windows operating system, you can create an object of no more than 2 gigabytes (GB). However, in .NET Framework 4.5 and later, you can increase this limit. For more information, see the [\<gcAllowVeryLargeObjects> element](./configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md).
+ By default, when you run a 64-bit managed application on a 64-bit Windows operating system, you can create an object of no more than 2 gigabytes (GB). However, in .NET Framework 4.5 and later, you can increase this limit. For more information, see the [`<gcAllowVeryLargeObjects>` element](./configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md).
 
  Many assemblies run identically on both the 32-bit CLR and the 64-bit CLR. However, some programs may behave differently, depending on the CLR, if they contain one or more of the following:
 
@@ -50,4 +50,4 @@ When you compile an application, you can specify that it should run on a Windows
 
  To determine whether an .exe file or .dll file is meant to run only on a specific platform or under WOW64, use [CorFlags.exe (CorFlags Conversion Tool)](./tools/corflags-exe-corflags-conversion-tool.md) with no options. You can also use CorFlags.exe to change the platform status of an .exe file or .dll file. The CLR header of a Visual Studio assembly has the major runtime version number set to 2 and the minor runtime version number set to 5. Applications that have the minor runtime version set to 0 are treated as legacy applications and are always executed under WOW64.
 
- To programmatically query an .exe or .dll to see whether it is meant to run only on a specific platform or under WOW64, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=nameWithType> method.
+ To programmatically query an .exe or .dll to see whether it is meant to run only on a specific platform or under WOW64, use the <xref:System.Reflection.Module.GetPEKind*?displayProperty=nameWithType> method.

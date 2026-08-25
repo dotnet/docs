@@ -12,7 +12,8 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 02/28/2025
+  ms.date: 11/07/2025
+  ms.custom: updateeachrelease
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -26,19 +27,11 @@ highlightedContent:
     # Card
     - title: "What's new in .NET"
       itemType: whats-new
-      url: whats-new/index.yml
+      url: core/whats-new/dotnet-11/overview.md
     # Card
     - title: "Build AI apps in .NET"
       itemType: overview
       url: ai/index.yml
-    # Card
-    - title: Aspire
-      itemType: overview
-      url: /dotnet/aspire
-    # Card
-    - title: "Build .NET apps with C#"
-      itemType: learn
-      url: /training/paths/build-dotnet-applications-csharp
     # Card
     - title: "Interactive introduction to C#"
       itemType: get-started
@@ -67,9 +60,9 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: .NET tutorials
-        - url: core/whats-new/dotnet-10/overview.md
+        - url: core/whats-new/dotnet-11/overview.md
           itemType: whats-new
-          text: What's new in .NET 10
+          text: What's new in .NET 11
         - url: https://dotnetfoundation.org
           itemType: overview
           text: .NET Foundation
@@ -123,7 +116,7 @@ conceptualContent:
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
-        - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
+        - url: https://aspire.dev/get-started/first-app/
           itemType: quickstart
           text: Build cloud-native apps with Aspire
         - url: core/docker/build-container.md
@@ -158,7 +151,7 @@ conceptualContent:
     # Card
     - title: Migrate and upgrade
       links:
-        - url: core/porting/index.md
+        - url: core/porting/framework-overview.md
           itemType: overview
           text: Port from .NET Framework to .NET
         - url: core/compatibility/breaking-changes.md
@@ -271,8 +264,8 @@ additionalContent:
         # Card
         - title: Desktop
           links:
-            - url: /uwp
-              text: Universal Windows apps
+            - url: /windows/apps/winui
+              text: WinUI apps
             - url: /dotnet/desktop/wpf/
               text: Windows Presentation Foundation
             - url: /dotnet/desktop/winforms/
@@ -297,7 +290,7 @@ additionalContent:
           links:
             - url: azure/index.yml
               text: Azure for .NET developers
-            - url: /dotnet/aspire
+            - url: https://aspire.dev/
               text: Aspire
             - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
               text: Migrate on-premises .NET web apps or services
@@ -357,11 +350,11 @@ additionalContent:
         # Card
         - title: ".NET API reference"
           summary: API reference documentation for .NET
-          url: ../api/index.md?view=net-9.0
+          url: ../api/index.md?view=net-10.0
         # Card
         - title: "ASP.NET Core API reference"
           summary: API reference documentation for ASP.NET Core
-          url: ../api/index.md?view=view=aspnetcore-9.0&preserve-view=true
+          url: ../api/index.md?view=aspnetcore-10.0&preserve-view=true
         # Card
         - title: "C# language reference"
           summary: C# language reference and specification

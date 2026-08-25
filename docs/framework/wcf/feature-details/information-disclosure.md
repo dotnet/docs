@@ -40,7 +40,7 @@ Mitigations include the following:
 
 ## NTLM
 
-By default, in the Windows domain environment, Windows authentication uses the Kerberos protocol to authenticate and authorize users. If the Kerberos protocol cannot be used for some reason, NT LAN Manager (NTLM) is used as a fallback. You can disable this behavior by setting the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property to `false`. Issues to be aware of when allowing NTLM include:
+By default, in the Windows domain environment, Windows authentication uses the Kerberos protocol to authenticate and authorize users. If the Kerberos protocol cannot be used for some reason, NT LAN Manager (NTLM) is used as a fallback. You can disable this behavior by setting the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm> property to `false`. Issues to be aware of when allowing NTLM include:
 
 - NTLM exposes the client user name. If the user name needs to be kept confidential, then set the `AllowNTLM` property on the binding to `false`.
 

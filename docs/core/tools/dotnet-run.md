@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 09/29/2025
+ms.date: 06/05/2026
 ---
 # dotnet run
 
@@ -16,12 +16,15 @@ ms.date: 09/29/2025
 ```dotnetcli
 dotnet run [<applicationArguments>]
   [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>]
-  [-c|--configuration <CONFIGURATION>] [-e|--environment <KEY=VALUE>]
-  [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-  [--launch-profile <NAME>] [--no-build] [--no-dependencies]
-  [--no-launch-profile] [--no-restore] [--os <OS>] [--project <PATH>]
-  [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
-  [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+  [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
+  [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
+  [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+  [-lp|--launch-profile <NAME>] [--no-build] [--no-cache]
+  [--no-dependencies] [--no-launch-profile] [--no-restore] [--os <OS>]
+  [-p|--property:<PROPERTYNAME>=<VALUE>]
+  [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+  [--sc|--self-contained] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+  [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
@@ -29,9 +32,6 @@ dotnet run -h|--help
 ## Description
 
 The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build apply to `dotnet run` as well.
-
-> [!NOTE]
-> `dotnet run` doesn't respect arguments like `/property:property=value`, which are respected by `dotnet build`.
 
 Output files are written into the default location, which is `bin/<configuration>/<target>`. For example if you have a `netcoreapp2.1` application and you run `dotnet run`, the output is placed in `bin/Debug/netcoreapp2.1`. Files are overwritten as needed. Temporary files are placed in the `obj` directory.
 
@@ -49,9 +49,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ### Implicit restore
 
-[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+[!INCLUDE[dotnet restore note + options](includes/dotnet-restore-note-options.md)]
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+[!INCLUDE [cli-advertising-manifests](includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -61,19 +61,42 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   
   Any arguments that aren't recognized by `dotnet run` are passed to the application. To separate arguments for `dotnet run` from arguments for the application, use the `--` option.
 
+## Forward arguments to the application
+
+`dotnet run` forwards any token it doesn't recognize to the application. The forwarded tokens keep their original order, but `dotnet run` first removes the options it understands. When a recognized option appears between an unrecognized option name and its value, removing the recognized option can change the meaning of the leftover tokens.
+
+For example, the following command interleaves the recognized option `--project` between tokens the application is meant to receive:
+
+```dotnetcli
+dotnet run --app-flag --app-name --project ConsoleApp.csproj A.txt
+```
+
+After `dotnet run` consumes `--project ConsoleApp.csproj`, the application receives `--app-flag --app-name A.txt`. The application then treats `A.txt` as the value of `--app-name`, which doesn't match the original command line.
+
+To avoid this ambiguity, place application arguments after a literal `--`:
+
+```dotnetcli
+dotnet run --project ConsoleApp.csproj -- --app-flag --app-name A.txt
+```
+
+The `--` separator marks every following token as an application argument, so `dotnet run` doesn't reorder or reinterpret them. The separator also future-proofs scripts against new `dotnet run` options that might later match a token previously forwarded to the application.
+
+> [!NOTE]
+> The same behavior applies to `dotnet build` and to `dotnet test` in Microsoft.Testing.Platform (MTP) mode, which forward unrecognized tokens to MSBuild or to the test application respectively. For more information about `dotnet test`, see [Forward arguments to the test application](dotnet-test-mtp.md#forward-arguments-to-the-test-application).
+
 ## Options
 
 - **`--`**
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
-[!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](includes/cli-arch.md)]
 
-[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+- [!INCLUDE [configuration](includes/cli-configuration.md)]
 
-[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <KEY=VALUE>`**
 
@@ -91,17 +114,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](../../csharp/fundamentals/tutorials/file-based-programs.md).
   
-  On Unix, you can run file-based apps directly, using the source file name on the command line instead of `dotnet run`. First, ensure the file has execute permissions. Then, add a shebang line `#!` as the first line of the file, for example:
-  
-  ```csharp
-  #!/usr/bin/env dotnet run
-  ```
-  
-  Then you can run the file directly from the command line:
-  
-  ```bash
-  ./ConsoleApp.cs
-  ```
+  On Unix, execute file-based apps directly using the filename by adding a shebang (`#!`) directive and setting the execute permission. For more information, see [Unix shebang (`#!`) support](../../csharp/fundamentals/tutorials/file-based-programs.md#unix-shebang--support).
 
   Introduced in .NET SDK 10.0.100.
 
@@ -109,9 +122,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-- **`--launch-profile <NAME>`**
+- **`-lp|--launch-profile <NAME>`**
 
   The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`, `Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
@@ -135,11 +148,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
-- **`--no-self-contained`**
+- [!INCLUDE [no-self-contained](includes/cli-no-self-contained.md)]
 
-  Publish your application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run your application.
-
-[!INCLUDE [os](../../../includes/cli-os.md)]
+- [!INCLUDE [os](includes/cli-os.md)]
 
 - **`--project <PATH>`**
 
@@ -168,15 +179,13 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
-- **`-sc|--self-contained`**
+- [!INCLUDE [self-contained](includes/cli-self-contained.md)]
 
-  Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target system. The default is `false`.  However, when targeting .NET 7 or lower, the default is `true` if a runtime identifier is specified.
+- [!INCLUDE [tl](includes/cli-tl.md)]
 
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity-minimal.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
-
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Environment variables
 
@@ -240,4 +249,3 @@ The environment is constructed in the same order as this list, so the `-e|--envi
   ```dotnetcli
   dotnet run -f net6.0 -arg1 -- arg2 arg3
   ```
-  

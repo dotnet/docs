@@ -36,7 +36,7 @@ Here's the initial event argument declaration for finding a sought file:
 
 Even though this type looks like a small, data-only type, you should follow the convention and make it a reference (`class`) type. That means the argument object is passed by reference, and any updates to the data are viewed by all subscribers. The first version is an immutable object. You should prefer to make the properties in your event argument type immutable. That way, one subscriber can't change the values before another subscriber sees them. (There are exceptions to this practice, as you see later.)
 
-Next, we need to create the event declaration in the FileSearcher class. Using the <xref:System.EventHandler%601?displayProperty=nameWithType> type means that you don't need to create yet another type definition. You just use a generic specialization.
+Next, we need to create the event declaration in the FileSearcher class. Using the <xref:System.EventHandler`1?displayProperty=nameWithType> type means that you don't need to create yet another type definition. You just use a generic specialization.
 
 Let's fill out the FileSearcher class to search for files that match a pattern, and raise the correct event when a match is discovered.
 

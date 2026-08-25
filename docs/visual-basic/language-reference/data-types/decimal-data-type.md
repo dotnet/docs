@@ -96,8 +96,8 @@ For `bigDec3`, the literal type character `D` solves the problem by forcing the 
 ## See also
 
 - <xref:System.Decimal?displayProperty=nameWithType>
-- <xref:System.Decimal.%23ctor%2A>
-- <xref:System.Math.Round%2A?displayProperty=nameWithType>
+- <xref:System.Decimal.%23ctor*>
+- <xref:System.Math.Round*?displayProperty=nameWithType>
 - [Data Types](index.md)
 - [Single Data Type](single-data-type.md)
 - [Double Data Type](double-data-type.md)

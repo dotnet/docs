@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Read from text files with multiple formats in Visual Basic"
 title: "How to: Read from text files with multiple formats"
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TextFieldParser object, reading from a file"
   - "TextFieldType enumeration"
   - "My.Computer.FileSystem.WriteAllText method, parsing structured text files"
@@ -16,7 +16,7 @@ ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
 # How to: Read from text files with multiple formats in Visual Basic
 
 The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to easily and efficiently parse structured text files, such as logs. You can process a file with multiple formats by using the `PeekChars` method to determine the format of each line as you parse through the file.
-  
+
 ### To parse a text file with multiple formats
 
 1. Add a text file named *testfile.txt* to your project. Add the following content to the text file:
@@ -54,9 +54,9 @@ The following is the complete example that reads from the file `testfile.txt`:
 
 ## Robust programming
 
-The following conditions may cause an exception:  
-  
-- A row cannot be parsed using the specified format (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). The exception message specifies the line causing the exception, while the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property is assigned to the text contained in the line.
+The following conditions may cause an exception:
+
+- A row cannot be parsed using the specified format (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). The exception message specifies the line causing the exception, while the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine> property is assigned to the text contained in the line.
 - The specified file does not exist (<xref:System.IO.FileNotFoundException>).
 - A partial-trust situation in which the user does not have sufficient permissions to access the file. (<xref:System.Security.SecurityException>).
 - The path is too long (<xref:System.IO.PathTooLongException>).
@@ -65,11 +65,11 @@ The following conditions may cause an exception:
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars*>
 - <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>
-- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>
-- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText*>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData*>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType*>
 - [How to: Read From Comma-Delimited Text Files](how-to-read-from-comma-delimited-text-files.md)
 - [How to: Read From Fixed-width Text Files](how-to-read-from-fixed-width-text-files.md)
 - [Parsing Text Files with the TextFieldParser Object](parsing-text-files-with-the-textfieldparser-object.md)

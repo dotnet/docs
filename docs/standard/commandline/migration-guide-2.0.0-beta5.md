@@ -11,8 +11,6 @@ helpviewer_keywords:
 
 # System.CommandLine 2.0.0-beta5+ migration guide
 
-[!INCLUDE [scl-preview](./includes/preview.md)]
-
 The main focus for the 2.0.0-beta5 release was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. The APIs have been simplified and made more coherent and consistent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in 2.0.0-beta5 and 2.0.0-beta7, and the reasoning behind them.
 
 ## Renaming
@@ -63,7 +61,7 @@ Moreover, to get the parsed value, you had to store a reference to an option or 
 To promote simplicity and explicitness, the name of a symbol is now a mandatory parameter for every symbol constructor (including `Argument<T>`). The concept of a name and aliases is now separate: aliases are just aliases and don't include the name of the symbol. Of course, they're optional. As a result, the following changes were made:
 
 - `name` is now a mandatory argument for every public constructor of <xref:System.CommandLine.Argument`1>, <xref:System.CommandLine.Option`1>, and <xref:System.CommandLine.Command>. In the case of `Argument<T>`, it isn't used for parsing, but to generate the help. In the case of `Option<T>` and `Command`, it's used to identify the symbol during parsing and also for help and completions.
-- The <xref:System.CommandLine.Symbol.Name?displayProperty=nameWithType> property is no longer `virtual`; it's now read-only and returns the name as it was provided when the symbol was created. Because of that, `Symbol.DefaultName` was removed and <xref:System.CommandLine.Option.Name?displayProperty=nameWithType> no longer removes the `--`, `-`, or `/` or any other prefix from the longest alias.
+- The <xref:System.CommandLine.Symbol.Name?displayProperty=nameWithType> property is no longer `virtual`; it's now read-only and returns the name as it was provided when the symbol was created. Because of that, `Symbol.DefaultName` was removed and <xref:System.CommandLine.Symbol.Name?displayProperty=nameWithType> no longer removes the `--`, `-`, or `/` or any other prefix from the longest alias.
 - The `Aliases` property exposed by [`Option`](xref:System.CommandLine.Option.Aliases) and [`Command`](xref:System.CommandLine.Command.Aliases) is now a mutable collection. This collection no longer includes the name of the symbol.
 - `System.CommandLine.Parsing.IdentifierSymbol` was removed (it was a base type for both `Command` and `Option`).
 
@@ -100,7 +98,7 @@ Option<bool> beta5 = new("--help", "-h", "/h")
 
 ## Default values and custom parsing
 
-In 2.0.0-beta4, you could set default values for options and arguments by using the `SetDefaultValue` methods. Those methods accepted an `object` value, which wasn't type safe and could lead to run-time errors if the value wasn't compatible with the option or argument type:
+In 2.0.0-beta4, you could set default values for options and arguments by using the `SetDefaultValue` methods. Those methods accepted an `object` value, which wasn't type safe and could lead to runtime errors if the value wasn't compatible with the option or argument type:
 
 ```csharp
 Option<int> option = new("--number");

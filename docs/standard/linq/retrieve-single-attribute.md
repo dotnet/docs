@@ -12,11 +12,11 @@ ms.topic: how-to
 
 This article explains how to retrieve a single attribute of an element, given the attribute name. This is useful for writing query expressions where you want to find an element that has a particular attribute.
 
-The <xref:System.Xml.Linq.XElement.Attribute%2A> method of the <xref:System.Xml.Linq.XElement> class returns the <xref:System.Xml.Linq.XAttribute> with the specified name.
+The <xref:System.Xml.Linq.XElement.Attribute*> method of the <xref:System.Xml.Linq.XElement> class returns the <xref:System.Xml.Linq.XAttribute> with the specified name.
 
 ## Example: Retrieve attribute values, given the element and attribute names
 
-The following example uses the <xref:System.Xml.Linq.XElement> method to create an element named `PhoneNumbers`. It then finds all the descendant elements named `Phone` and, for each, uses the <xref:System.Xml.Linq.XElement.Attribute%2A> method to obtain and output the value of the attribute named `type`:
+The following example uses the <xref:System.Xml.Linq.XElement> method to create an element named `PhoneNumbers`. It then finds all the descendant elements named `Phone` and, for each, uses the <xref:System.Xml.Linq.XElement.Attribute*> method to obtain and output the value of the attribute named `type`:
 
 ```csharp
 XElement cust = new XElement("PhoneNumbers",

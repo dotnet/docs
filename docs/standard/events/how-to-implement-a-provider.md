@@ -1,62 +1,78 @@
 ---
-description: "Learn more about: How to: Implement a Provider"
-title: "How to: Implement a Provider"
-ms.date: "03/30/2017"
-dev_langs: 
+description: "Learn how to implement an observer pattern provider in .NET by creating an IObservable<T> type that tracks subscribers and pushes notifications."
+title: "How to implement a provider"
+ms.date: 06/01/2026
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "observer design pattern [.NET], implementing providers"
   - "providers [.NET], in observer design pattern"
   - "observables [.NET], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
+ms.topic: how-to
 ---
-# How to: Implement a Provider
 
-The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This topic discusses how to create a provider. A related topic, [How to: Implement an Observer](how-to-implement-an-observer.md), discusses how to create an observer.  
-  
-### To create a provider  
-  
-1. Define the data that the provider is responsible for sending to observers. Although the provider and the data that it sends to observers can be a single type, they are generally represented by different types. For example, in a temperature monitoring application, the `Temperature` structure defines the data that the provider (which is represented by the `TemperatureMonitor` class defined in the next step) monitors and to which observers subscribe.  
-  
-     [!code-csharp[Conceptual.ObserverDesign.HowTo#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/data.cs#1)]
-     [!code-vb[Conceptual.ObserverDesign.HowTo#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/data.vb#1)]  
-  
-2. Define the data provider, which is a type that implements the <xref:System.IObservable%601?displayProperty=nameWithType> interface. The provider's generic type argument is the type that the provider sends to observers. The following example defines a `TemperatureMonitor` class, which is a constructed <xref:System.IObservable%601?displayProperty=nameWithType> implementation with a generic type argument of `Temperature`.  
-  
-     [!code-csharp[Conceptual.ObserverDesign.HowTo#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#2)]
-     [!code-vb[Conceptual.ObserverDesign.HowTo#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#2)]  
-  
-3. Determine how the provider will store references to observers so that each observer can be notified when appropriate. Most commonly, a collection object such as a generic <xref:System.Collections.Generic.List%601> object is used for this purpose. The following example defines a private <xref:System.Collections.Generic.List%601> object that is instantiated in the `TemperatureMonitor` class constructor.  
-  
-     [!code-csharp[Conceptual.ObserverDesign.HowTo#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#3)]
-     [!code-vb[Conceptual.ObserverDesign.HowTo#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#3)]  
-  
-4. Define an <xref:System.IDisposable> implementation that the provider can return to subscribers so that they can stop receiving notifications at any time. The following example defines a nested `Unsubscriber` class that is passed a reference to the subscribers collection and to the subscriber when the class is instantiated. This code enables the subscriber to call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to remove itself from the subscribers collection.  
-  
-     [!code-csharp[Conceptual.ObserverDesign.HowTo#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#4)]
-     [!code-vb[Conceptual.ObserverDesign.HowTo#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#4)]  
-  
-5. Implement the <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method. The method is passed a reference to the <xref:System.IObserver%601?displayProperty=nameWithType> interface and should be stored in the object designed for that purpose in step 3. The method should then return the <xref:System.IDisposable> implementation developed in step 4. The following example shows the implementation of the <xref:System.IObservable%601.Subscribe%2A> method in the `TemperatureMonitor` class.  
-  
-     [!code-csharp[Conceptual.ObserverDesign.HowTo#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#5)]
-     [!code-vb[Conceptual.ObserverDesign.HowTo#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#5)]  
-  
-6. Notify observers as appropriate by calling their <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType>, <xref:System.IObserver%601.OnError%2A?displayProperty=nameWithType>, and <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> implementations. In some cases, a provider may not call the <xref:System.IObserver%601.OnError%2A> method when an error occurs. For example, the following `GetTemperature` method simulates a monitor that reads temperature data every five seconds and notifies observers if the temperature has changed by at least .1 degree since the previous reading. If the device does not report a temperature (that is, if its value is null), the provider notifies observers that the transmission is complete. Note that, in addition to calling each observer's <xref:System.IObserver%601.OnCompleted%2A> method, the `GetTemperature` method clears the <xref:System.Collections.Generic.List%601> collection. In this case, the provider makes no calls to the <xref:System.IObserver%601.OnError%2A> method of its observers.  
-  
-     [!code-csharp[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#6)]
-     [!code-vb[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#6)]  
-  
-## Example  
+<!-- customer intent: As a .NET developer, I want to implement a provider so that I can use the observer design pattern to push data to registered observers. -->
 
- The following example contains the complete source code for defining an <xref:System.IObservable%601> implementation for a temperature monitoring application. It includes the `Temperature` structure, which is the data sent to observers, and the `TemperatureMonitor` class, which is the <xref:System.IObservable%601> implementation.  
-  
- [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]
- [!code-vb[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#7)]  
-  
-## See also
+# How to implement a provider
 
-- <xref:System.IObservable%601>
-- [Observer Design Pattern](observer-design-pattern.md)
-- [How to: Implement an Observer](how-to-implement-an-observer.md)
-- [Observer Design Pattern Best Practices](observer-design-pattern-best-practices.md)
+The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This article shows how to create a provider. For information about creating an observer, see [How to implement an observer](how-to-implement-an-observer.md).
+
+## Define the data type
+
+Define the data that the provider sends to observers. Although the provider and the data it sends to observers can be a single type, a different type typically represents each. For example, in a temperature monitoring application, the `Temperature` structure defines the data that the `TemperatureMonitor` class (defined in the next section) monitors and to which observers subscribe.
+
+:::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/data.cs" id="Temperature":::
+:::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/data.vb" id="Temperature":::
+
+## Create a provider
+
+The data provider is a type that implements the <xref:System.IObservable`1?displayProperty=nameWithType> interface. The provider's generic type argument is the type it sends to observers.
+
+1. Define the provider class. The following example defines a `TemperatureMonitor` class, which is a constructed <xref:System.IObservable`1?displayProperty=nameWithType> implementation with a generic type argument of `Temperature`.
+
+   :::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/provider.cs" id="ClassDeclaration":::
+   :::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/provider.vb" id="ClassDeclaration":::
+
+1. Add a field to store observer references.
+
+   The provider needs to track each registered observer so it can send notifications later. Typically, use a collection object such as a generic <xref:System.Collections.Generic.List`1> object. The following example defines a private <xref:System.Collections.Generic.List`1> object instantiated in the `TemperatureMonitor` class constructor.
+
+   :::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/provider.cs" id="ObserverList":::
+   :::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/provider.vb" id="ObserverList":::
+
+1. Define an <xref:System.IDisposable> implementation for unsubscribing.
+
+   The provider returns this implementation to subscribers so they can stop receiving notifications at any time. The following example defines a nested `Unsubscriber` class that receives a reference to the subscribers collection and to the subscriber when instantiated. The `Unsubscriber` class enables the subscriber to call the object's <xref:System.IDisposable.Dispose*?displayProperty=nameWithType> implementation to remove itself from the subscribers collection.
+
+   :::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/provider.cs" id="Unsubscriber":::
+   :::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/provider.vb" id="Unsubscriber":::
+
+1. Implement the <xref:System.IObservable`1.Subscribe*?displayProperty=nameWithType> method.
+
+   The method receives a reference to the <xref:System.IObserver`1?displayProperty=nameWithType> interface. Store that reference in the observer collection from the previous step, then return the <xref:System.IDisposable> unsubscriber implementation. The following example shows the `Subscribe` implementation in the `TemperatureMonitor` class.
+
+   :::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/provider.cs" id="Subscribe":::
+   :::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/provider.vb" id="Subscribe":::
+
+1. Implement the notification logic by calling observers' <xref:System.IObserver`1.OnNext*?displayProperty=nameWithType>, <xref:System.IObserver`1.OnError*?displayProperty=nameWithType>, and <xref:System.IObserver`1.OnCompleted*?displayProperty=nameWithType> methods.
+
+   In some cases, a provider might not call <xref:System.IObserver`1.OnError*> when an error occurs. The following `GetTemperature` method simulates a monitor that reads temperature data every five seconds and notifies observers if the temperature has changed by at least .1 degree since the previous reading. If the device doesn't report a temperature (that is, if its value is null), the provider notifies observers that the transmission is complete by calling each observer's <xref:System.IObserver`1.OnCompleted*> method and clears the <xref:System.Collections.Generic.List`1> collection. In this example, the provider never calls <xref:System.IObserver`1.OnError*>.
+
+   :::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/provider.cs" id="Notify":::
+   :::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/provider.vb" id="Notify":::
+
+## Example
+
+The following example contains the complete source code for an <xref:System.IObservable`1> implementation for a temperature monitoring application. It includes the `Temperature` structure, which is the data the provider sends to observers, and the `TemperatureMonitor` class, which is the <xref:System.IObservable`1> implementation.
+
+:::code language="csharp" source="./snippets/shared/how-to-provider-observer/csharp/provider.cs" id="All":::
+:::code language="vb" source="./snippets/shared/how-to-provider-observer/vb/provider.vb" id="All":::
+
+## Related content
+
+- <xref:System.IObservable`1>
+- [Observer design pattern](observer-design-pattern.md)
+- [How to implement an observer](how-to-implement-an-observer.md)
+- [Best practices for the observer design pattern](observer-design-pattern-best-practices.md)

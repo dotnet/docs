@@ -16,9 +16,25 @@ ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
 
 The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text. In most cases, it performs pattern matching rapidly and efficiently. However, in some cases, the regular expression engine can appear to be slow. In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.
 
-This article outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance.
+This article outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance and robustness.
 
-[!INCLUDE [regex](../../../includes/regex.md)]
+> [!WARNING]
+> Unrestricted use of regular expressions with untrusted input can subject applications to [denial-of-service attacks](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS). The .NET regular expression engine offers options to mitigate these attacks. For more information, see [Consider the input source](#consider-the-input-source), [Take charge of backtracking](#take-charge-of-backtracking), and [Use time-out values](#use-time-out-values).
+>
+> The .NET regular expression engine does not offer protection against untrusted *patterns*, and applications should not create regular expression patterns from untrusted user-provided values. For more information, see [Use trusted patterns](#use-trusted-patterns).
+
+## Use trusted patterns
+
+The .NET regular expression engine distinguishes *patterns* (the regular expression itself, such as `^[0-9A-Za-z]+$`) from the *input text* (the string being evaluated against the regular expression, such as `123AbC456`). These values are typically passed to the `Regex` APIs through arguments named *pattern* and *input*, respectively.
+
+These APIs are designed with the assumption that patterns are trusted, that is, they are authored or reviewed by the application developer, not supplied by end users or other untrusted sources. Patterns can cause excessive resource consumption regardless of the input text, and the regular expression engine does not attempt to guard against hostile patterns.
+
+If your application needs to accept search expressions from users, avoid passing user-provided values directly as a regex pattern. Instead, consider these alternatives:
+
+- Support a restricted search syntax (such as simple wildcards or substring matching) that you translate into a regex pattern internally.
+- Use <xref:System.Text.RegularExpressions.Regex.Escape*?displayProperty=nameWithType> to treat any user-supplied text as a literal string within a pattern.
+
+Features such as [time-out values](#use-time-out-values) and <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> (which guarantees linear-time processing in the length of the input) help protect against accidental performance problems in developer-authored patterns. They are not intended as a security boundary against malicious patterns.
 
 ## Consider the input source
 
@@ -96,7 +112,7 @@ You should replace the preceding inefficient code with a call to the static <xre
 [!code-csharp[Conceptual.RegularExpressions.BestPractices#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/static2.cs#4)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/static2.vb#4)]
 
-By default, the last 15 most recently used static regular expression patterns are cached. For applications that require a larger number of cached static regular expressions, the size of the cache can be adjusted by setting the <xref:System.Text.RegularExpressions.Regex.CacheSize%2A?displayProperty=nameWithType> property.
+By default, the last 15 most recently used static regular expression patterns are cached. For applications that require a larger number of cached static regular expressions, the size of the cache can be adjusted by setting the <xref:System.Text.RegularExpressions.Regex.CacheSize?displayProperty=nameWithType> property.
 
 The regular expression `\p{Sc}+\s*\d+` that's used in this example verifies that the input string has a currency symbol and at least one decimal digit. The pattern is defined as shown in the following table:
 
@@ -211,6 +227,9 @@ The regular expression time-out interval defines the period of time that the reg
 
 If you've defined a time-out interval and a match isn't found at the end of that interval, the regular expression method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there's no match, or abandon the match attempt and log the exception information for future analysis.
 
+> [!WARNING]
+> Time-out values are not intended as a security boundary against malicious *patterns*. For more information, see [Use trusted patterns](#use-trusted-patterns).
+
 The following example defines a `GetWordData` method that instantiates a regular expression with a time-out interval of 350 milliseconds to calculate the number of words and average number of characters in a word in a text document. If the matching operation times out, the time-out interval is increased by 350 milliseconds and the <xref:System.Text.RegularExpressions.Regex> object is reinstantiated. If the new time-out interval exceeds one second, the method rethrows the exception to the caller.
 
 [!code-csharp[Conceptual.RegularExpressions.BestPractices#12](./snippets/regex/csharp/timeout1.cs#12)]
@@ -220,9 +239,9 @@ The following example defines a `GetWordData` method that instantiates a regular
 
 Regular expressions in .NET support grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in .NET regular expression language are `(`*subexpression*`)`, which defines a numbered capturing group, and `(?<`*name*`>`*subexpression*`)`, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.
 
-However, the use of these language elements has a cost. They cause the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property to be populated with the most recent unnamed or named captures. If a single grouping construct has captured multiple substrings in the input string, they also populate the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property of a particular capturing group with multiple <xref:System.Text.RegularExpressions.Capture> objects.
+However, the use of these language elements has a cost. They cause the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups?displayProperty=nameWithType> property to be populated with the most recent unnamed or named captures. If a single grouping construct has captured multiple substrings in the input string, they also populate the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures?displayProperty=nameWithType> property of a particular capturing group with multiple <xref:System.Text.RegularExpressions.Capture> objects.
 
-Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them. The groups captured by these subexpressions aren't used later. For example, the regular expression `\b(\w+[;,]?\s?)+[.?!]` is designed to capture an entire sentence. The following table describes the language elements in this regular expression pattern and their effect on the <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collections:
+Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them. The groups captured by these subexpressions aren't used later. For example, the regular expression `\b(\w+[;,]?\s?)+[.?!]` is designed to capture an entire sentence. The following table describes the language elements in this regular expression pattern and their effect on the <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.Groups*?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Group.Captures*?displayProperty=nameWithType> collections:
 
 | Pattern | Description                                |
 |---------|--------------------------------------------|

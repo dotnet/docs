@@ -93,9 +93,9 @@ This article explains how to create a multifile assembly and provides code that 
    vbc /t:module Stringer.vb
    ```
 
-   Specifying the *module* parameter with the **/t:** compiler option indicates that the file should be compiled as a module rather than as an assembly. The compiler produces a module called *Stringer.netmodule*, which can be added to an assembly.
+   Specifying the *module* parameter with the `/t:` compiler option indicates that the file should be compiled as a module rather than as an assembly. The compiler produces a module called *Stringer.netmodule*, which can be added to an assembly.
 
-3. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the **/addmodule** compiler option.
+3. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the `/addmodule` compiler option.
 
    In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.netmodule* module created in step 1.
 
@@ -166,7 +166,7 @@ This article explains how to create a multifile assembly and provides code that 
    vbc /addmodule:Stringer.netmodule /t:module Client.vb
    ```
 
-   Specify the **/t:module** option because this module will be added to an assembly in a future step. Specify the **/addmodule** option because the code in *Client* references a namespace created by the code in *Stringer.netmodule*. The compiler produces a module called *Client.netmodule* that contains a reference to another module, *Stringer.netmodule*.
+   Specify the `/t:module` option because this module will be added to an assembly in a future step. Specify the `/addmodule` option because the code in *Client* references a namespace created by the code in *Stringer.netmodule*. The compiler produces a module called *Client.netmodule* that contains a reference to another module, *Stringer.netmodule*.
 
    > [!NOTE]
    > The C# and Visual Basic compilers support directly creating multifile assemblies using the following two different syntaxes.
@@ -207,9 +207,9 @@ This article explains how to create a multifile assembly and provides code that 
 
    At the command prompt, type the following command:
 
-   **al** \<*module name*> \<*module name*> … **/main:**\<*method name*> **/out:**\<*file name*> **/target:**\<*assembly file type*>
+   `al` \<*module name*> \<*module name*> … `/main:`\<*method name*> `/out:`\<*file name*> `/target:`\<*assembly file type*>
 
-   In this command, the *module name* arguments specify the name of each module to include in the assembly. The **/main:** option specifies the method name that is the assembly's entry point. The **/out:** option specifies the name of the output file, which contains assembly metadata. The **/target:** option specifies that the assembly is a console application executable (*.exe*) file, a Windows executable (*.win*) file, or a library (*.lib*) file.
+   In this command, the *module name* arguments specify the name of each module to include in the assembly. The `/main:` option specifies the method name that is the assembly's entry point. The `/out:` option specifies the name of the output file, which contains assembly metadata. The `/target:` option specifies that the assembly is a console application executable (*.exe*) file, a Windows executable (*.win*) file, or a library (*.lib*) file.
 
    In the following example, *Al.exe* creates an assembly that is a console application executable called *myAssembly.exe*. The application consists of two modules called *Client.netmodule* and *Stringer.netmodule*, and the executable file called *myAssembly.exe*, which contains only assembly metadata. The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in *Client.dll*.
 

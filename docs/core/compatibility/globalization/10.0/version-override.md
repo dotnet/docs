@@ -11,15 +11,15 @@ ai-usage: ai-assisted
 
 ## Previous behavior
 
-The `CLR_ICU_VERSION_OVERRIDE` environment variable was used to specify the preferred ICU version to be loaded in the application.
+Previously, the `CLR_ICU_VERSION_OVERRIDE` environment variable was used to specify the preferred ICU version to be loaded in the application.
 
 ## New behavior
 
-The `DOTNET_ICU_VERSION_OVERRIDE` environment variable is used to specify the preferred ICU version to be loaded in the application.
+Starting in .NET 10, the `DOTNET_ICU_VERSION_OVERRIDE` environment variable is used to specify the preferred ICU version to be loaded in the application.
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

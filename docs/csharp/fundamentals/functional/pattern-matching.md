@@ -1,7 +1,7 @@
 ---
 title: Pattern matching overview
 description: "Learn about pattern matching expressions in C#"
-ms.date: 01/27/2025
+ms.date: 11/18/2025
 ---
 
 # Pattern matching overview
@@ -24,7 +24,7 @@ The preceding example used a [*constant pattern*](../../language-reference/opera
 
 ## Type tests
 
-Another common use for pattern matching is to test a variable to see if it matches a given type. For example, the following code tests if a variable is non-null and implements the <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> interface. If it does, it uses the <xref:System.Collections.Generic.ICollection%601.Count?displayProperty=nameWithType> property on that list to find the middle index. The declaration pattern doesn't match a `null` value, regardless of the compile-time type of the variable. The code below guards against `null`, in addition to guarding against a type that doesn't implement `IList`.
+Another common use for pattern matching is to test a variable to see if it matches a given type. For example, the following code tests if a variable is non-null and implements the <xref:System.Collections.Generic.IList`1?displayProperty=nameWithType> interface. If it does, it uses the <xref:System.Collections.Generic.ICollection`1.Count?displayProperty=nameWithType> property on that list to find the middle index. The declaration pattern doesn't match a `null` value, regardless of the compile-time type of the variable. The code below guards against `null`, in addition to guarding against a type that doesn't implement `IList`.
 
 :::code language="csharp" source="snippets/patterns/Program.cs" ID="MidPoint":::
 
@@ -40,7 +40,7 @@ The previous example demonstrates a method dispatch based on the value of an enu
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformStringOperation":::
 
-The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. Starting with C# 11, you can also use a `Span<char>` or a `ReadOnlySpan<char>`to test for constant string values, as shown in the following sample:
+The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. You can also use a `Span<char>` or a `ReadOnlySpan<char>`to test for constant string values, as shown in the following sample:
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformSpanOperation":::
 

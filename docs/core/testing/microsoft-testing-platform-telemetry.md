@@ -1,19 +1,31 @@
 ---
-title: Microsoft.Testing.Platform telemetry
-description: Learn about the telemetry data collected by Microsoft.Testing.Platform and how to disable it.
+title: Microsoft.Testing.Platform (MTP) telemetry
+description: Learn about the telemetry data collected by MTP and how to disable it.
 author: nohwnd
 ms.author: jajares
-ms.date: 12/15/2023
-ms.custom: 
+ms.date: 02/25/2026
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform telemetry
+# Telemetry
 
-`Microsoft.Testing.Platform` collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While these insights are appreciated, you're free to [disable telemetry](#disable-telemetry-reporting). For more information on telemetry, see [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).
+This feature requires the [Microsoft.Testing.Extensions.Telemetry](https://nuget.org/packages/Microsoft.Testing.Extensions.Telemetry) NuGet package.
+
+> [!TIP]
+> When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), this extension is auto-registered when you install its NuGet package — no code changes needed. The manual registration in the following section is only required if you disabled the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.
+
+### Manual registration
+
+```csharp
+var builder = await TestApplication.CreateBuilderAsync(args);
+builder.AddAppInsightsTelemetryProvider();
+```
+
+Microsoft.Testing.Platform (MTP) collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While these insights are appreciated, you're free to [disable telemetry](#disable-telemetry-reporting). For more information on telemetry, see [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409).
 
 ## Types of telemetry data
 
-`Microsoft.Testing.Platform` only collects telemetry of type **Usage Data**. The usage data is used to understand how features are consumed and where time is spent when executing the test app. This helps prioritize product improvements.
+MTP only collects telemetry of type **Usage Data**. The usage data is used to understand how features are consumed and where time is spent when executing the test app. This helps prioritize product improvements.
 
 ## Disable telemetry reporting
 
@@ -21,7 +33,7 @@ To disable telemetry, set either `TESTINGPLATFORM_TELEMETRY_OPTOUT` or `DOTNET_C
 
 ## Disclosure
 
-`Microsoft.Testing.Platform` displays text similar to the following when you first run your executable. The output text might vary slightly depending on the version `Microsoft.Testing.Platform` you're running. This "first run" experience is how Microsoft notifies you about data collection.
+MTP displays text similar to the following when you first run your executable. The output text might vary slightly depending on the version of MTP you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 ```console
 Telemetry
@@ -76,6 +88,7 @@ The telemetry feature collects the following data points:
 | All | Version of your test adapter. |
 | All | Guid to correlate events from a single runner. |
 | 1.0.3 | Guid to correlate events from a single test run. |
+| 2.1.0 | Count of tests discovered. |
 
 ## Continuous integration detection
 

@@ -14,11 +14,11 @@ GDI+ error handling in System.Drawing has been updated to throw <xref:System.Run
 
 ## Version introduced
 
-.NET 10 Preview 5
+.NET 10
 
 ## Previous behavior
 
-When GDI+ encountered `Status.OutOfMemory` errors (often due to invalid input rather than actual memory issues), System.Drawing APIs threw <xref:System.OutOfMemoryException>.
+Previously, when GDI+ encountered `Status.OutOfMemory` errors (often due to invalid input rather than actual memory issues), System.Drawing APIs threw <xref:System.OutOfMemoryException>.
 
 ## New behavior
 

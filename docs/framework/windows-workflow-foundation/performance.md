@@ -48,7 +48,7 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 
 ### Asynchronous Programming
 
- Applications usually have better performance and scalability with asynchronous programming for long running blocking operations such as I/O or distributed computing operations. WF4 provides asynchronous support through base activity types <xref:System.Activities.AsyncCodeActivity>, <xref:System.Activities.AsyncCodeActivity%601>. The runtime natively understands asynchronous activities and therefore can automatically put the instance in a no-persist zone while the asynchronous work is outstanding. Custom activities can derive from these types to perform asynchronous work without holding the workflow scheduler thread and blocking any activities that may be able to run in parallel.
+ Applications usually have better performance and scalability with asynchronous programming for long running blocking operations such as I/O or distributed computing operations. WF4 provides asynchronous support through base activity types <xref:System.Activities.AsyncCodeActivity>, <xref:System.Activities.AsyncCodeActivity`1>. The runtime natively understands asynchronous activities and therefore can automatically put the instance in a no-persist zone while the asynchronous work is outstanding. Custom activities can derive from these types to perform asynchronous work without holding the workflow scheduler thread and blocking any activities that may be able to run in parallel.
 
 ### Messaging
 
@@ -116,7 +116,7 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 
 ### Replicator compared to ParallelForEach
 
- <xref:System.Workflow.Activities.ReplicatorActivity> in WF3 has sequential and parallel execution modes.  In sequential mode, the activity’s performance is similar to the <xref:System.Workflow.Activities.WhileActivity>.  The <xref:System.Workflow.Activities.ReplicatorActivity> is most useful for parallel execution.  The WF4 analog for this is the <xref:System.Activities.Statements.ParallelForEach%601> activity.
+ <xref:System.Workflow.Activities.ReplicatorActivity> in WF3 has sequential and parallel execution modes.  In sequential mode, the activity’s performance is similar to the <xref:System.Workflow.Activities.WhileActivity>.  The <xref:System.Workflow.Activities.ReplicatorActivity> is most useful for parallel execution.  The WF4 analog for this is the <xref:System.Activities.Statements.ParallelForEach`1> activity.
 
  The following diagram shows the workflows used for this test. The WF3 workflow is on the left and the WF4 workflow is on the right.
 
@@ -410,7 +410,7 @@ public class Workflow1 : Activity
 
  When the transport between client and middle tier is HTTP, persistence in WF4 shows an improvement of 2.6 times.  The TCP transport increases that factor to 3.0 times.  In all cases, CPU utilization on the middle tier is 98% or higher.  The reason that WF4 throughput is greater is due to the faster workflow runtime.  The size of the serialized instance is low for both cases and is not a major contributing element in this situation.
 
- Both the WF3 and WF4 workflows in this test use an activity to explicitly indicate when persistence should occur.  This has the benefit of persisting the workflow without unloading it.  In WF3, it is also possible to persist using the <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> feature, but this unloads the workflow instance from memory.  If a developer using WF3 wants to make sure a workflow persists at certain points, they either have to alter the workflow definition or pay the cost for unloading and re-loading the workflow instance.  A new feature in WF4 makes it possible to persist without unloading: <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>.  This feature allows the workflow instance to be persisted on idle but stay in memory until the <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> threshold is met or execution is resumed.
+ Both the WF3 and WF4 workflows in this test use an activity to explicitly indicate when persistence should occur.  This has the benefit of persisting the workflow without unloading it.  In WF3, it is also possible to persist using the <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload*> feature, but this unloads the workflow instance from memory.  If a developer using WF3 wants to make sure a workflow persists at certain points, they either have to alter the workflow definition or pay the cost for unloading and re-loading the workflow instance.  A new feature in WF4 makes it possible to persist without unloading: <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist*>.  This feature allows the workflow instance to be persisted on idle but stay in memory until the <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload*> threshold is met or execution is resumed.
 
  Note that the WF4 SQL persistence provider performs more work in the database tier.  The SQL database can become a bottleneck so it is important to monitor the CPU and disk usage there.  Be sure to include the following performance counters from the SQL database when performance testing workflow applications:
 

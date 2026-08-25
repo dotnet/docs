@@ -72,7 +72,7 @@ End of result set
 
 This example shows creation of XML in a namespace, and a query that's  coded properly.
 
-The solution is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.
+The solution is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements*> method is an <xref:System.Xml.Linq.XName> object.
 
 ```csharp
 XElement root = XElement.Parse(

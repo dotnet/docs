@@ -31,7 +31,7 @@ Serialize(myDateTime.ToString("yyyy-MM-dd'T'HH:mm:ss.fffffffzzz"));
 
 ### Cause
 
- The 'z' format for the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> method includes the local time zone offset, for example, "+10:00" for Sydney time. As such, it will only produce a meaningful result if the value of the <xref:System.DateTime> is local. If the value is UTC time, <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> includes the local time zone offset, but it does not display or adjust the time zone specifier.
+ The 'z' format for the <xref:System.DateTime.ToString*?displayProperty=nameWithType> method includes the local time zone offset, for example, "+10:00" for Sydney time. As such, it will only produce a meaningful result if the value of the <xref:System.DateTime> is local. If the value is UTC time, <xref:System.DateTime.ToString*?displayProperty=nameWithType> includes the local time zone offset, but it does not display or adjust the time zone specifier.
 
 ### Resolution
 
@@ -42,7 +42,7 @@ DateTime myDateTime = DateTime.UtcNow;
 Serialize(myDateTime.ToString("yyyy-MM-dd'T'HH:mm:ss.fffffffZ"));
 ```
 
- There is also an "o" format that serializes a <xref:System.DateTime> making use of the <xref:System.DateTime.Kind%2A> property that serializes correctly regardless of whether the instance is local, UTC, or unspecified:
+ There is also an "o" format that serializes a <xref:System.DateTime> making use of the <xref:System.DateTime.Kind> property that serializes correctly regardless of whether the instance is local, UTC, or unspecified:
 
 ```csharp
 DateTime myDateTime = DateTime.UtcNow;
@@ -55,7 +55,7 @@ Serialize(myDateTime.ToString("o"));
 
 ## Output
 
- There is no special output as a result of this MDA activating., However, the call stack can be used to determine the location of the <xref:System.DateTime.ToString%2A> call that activated the MDA.
+ There is no special output as a result of this MDA activating., However, the call stack can be used to determine the location of the <xref:System.DateTime.ToString*> call that activated the MDA.
 
 ## Configuration
 
@@ -80,7 +80,7 @@ String serialized = XMLConvert.ToString(myDateTime);
 
  For this specific example, pass in `XmlDateTimeSerializationMode.RoundtripKind` to the `ToString` call on `XmlConvert`. This serializes the data as a UTC time.
 
- If using a <xref:System.Data.DataSet>, set the <xref:System.Data.DataColumn.DateTimeMode%2A> property on the <xref:System.Data.DataColumn> object to <xref:System.Data.DataSetDateTime.Utc>.
+ If using a <xref:System.Data.DataSet>, set the <xref:System.Data.DataColumn.DateTimeMode> property on the <xref:System.Data.DataColumn> object to <xref:System.Data.DataSetDateTime.Utc>.
 
 ```csharp
 DateTime myDateTime = DateTime.UtcNow;

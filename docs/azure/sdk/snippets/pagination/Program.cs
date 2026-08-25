@@ -17,7 +17,6 @@ builder.Services.AddAzureClients(builder =>
     Uri vaultUri = new(Environment.GetEnvironmentVariable("AZURE_KEY_VAULT_URI")!);
 
     builder.AddSecretClient(vaultUri);
-    builder.UseCredential(new DefaultAzureCredential());
 });
 using IHost host = builder.Build();
 

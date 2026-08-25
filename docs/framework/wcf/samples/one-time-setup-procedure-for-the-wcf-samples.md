@@ -29,12 +29,12 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > If IIS is reinstalled, the following commands will need to be run again.
 
     ```console
-    "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\aspnet_regiis" –i –enable
+    "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\aspnet_regiis" -i -enable
     "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\ServiceModelReg.exe" -r
     ```
 
     > [!WARNING]
-    > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using .NET Framework 4, which may produce incompatibility issues for other applications on the same computer.
+    > Running the command `aspnet_regiis -i -enable` will make the Default App Pool run using .NET Framework 4, which may produce incompatibility issues for other applications on the same computer.
 
 5. Follow the [Firewall Instructions](firewall-instructions.md) for enabling the ports used by the samples.
 

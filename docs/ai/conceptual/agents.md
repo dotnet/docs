@@ -3,7 +3,7 @@ title: Agents
 description: Introduction to agents
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/01/2025
+ms.date: 12/10/2025
 ms.topic: concept-article
 ---
 
@@ -62,6 +62,7 @@ Agentic workflows can be orchestrated in a variety of ways. The following are a 
 - [Concurrent](#concurrent)
 - [Handoff](#handoff)
 - [Group chat](#group-chat)
+- [Magentic](#magentic)
 
 #### Sequential
 
@@ -87,10 +88,12 @@ Agents collaborate in a shared conversation, exchanging insights in real-time.
 
 ![Group chat orchestration: User and Agents A, B, C collaborate via GroupChat to produce final output](../media/agents/groupchat-workflow.png)
 
+#### Magentic
+
+A lead agent directs other agents.
+
 ## How can I get started building agents in .NET?
 
 The building blocks in <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.VectorData> supply the foundations for agents by providing modular components for AI models, tools, and data.
 
-These components serve as the foundation for Microsoft Agent Framework.
-
-For more information, see [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
+These components serve as the foundation for Microsoft Agent Framework. For more information, see [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).

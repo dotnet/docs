@@ -5,7 +5,7 @@ ms.date: 07/13/2021
 ---
 # Write reference assemblies to intermediate output
 
-The .NET SDK now writes [reference assemblies](../../../../standard/assembly/reference-assemblies.md) to the `IntermediateOutputPath` instead of the `OutDir` by default. This change removes these build-time-only artifacts from outputs that you require at run time.
+The .NET SDK now writes [reference assemblies](../../../../standard/assembly/reference-assemblies.md) to the `IntermediateOutputPath` instead of the `OutDir` by default. This change removes these build-time-only artifacts from outputs that you require at runtime.
 
 ## Version **introduced**
 
@@ -21,7 +21,7 @@ Now, reference assemblies are written to the `refint` directory of the `Intermed
 
 ## Reason for change
 
-Reference assemblies are generally not run-time assets, and so don't belong in the `OutDir` directory by default.
+Reference assemblies are generally not runtime assets, and so don't belong in the `OutDir` directory by default.
 
 ## Recommended action
 

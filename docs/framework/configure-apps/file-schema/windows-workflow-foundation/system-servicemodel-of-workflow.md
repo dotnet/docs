@@ -4,12 +4,12 @@ title: "<system.serviceModel> of workflow"
 ms.date: "03/30/2017"
 ms.custom: sfi-ropc-nochange
 ---
-# \<system.serviceModel> of workflow
+# `<system.serviceModel>` of workflow
 
 This configuration section contains all the workflow configuration elements.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;**\<system.ServiceModel>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;`<system.ServiceModel>`
 
 ## Syntax
 
@@ -101,7 +101,7 @@ This configuration section contains all the workflow configuration elements.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<behaviors>](behaviors-of-workflow.md)|This section defines the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by services. Each behavior element is identified by its unique **name** attribute.|
+|[\<behaviors>](behaviors-of-workflow.md)|This section defines the `serviceBehaviors` collection.  Each element in the collection defines behavior elements consumed by services. Each behavior element is identified by its unique `name` attribute.|
 |[\<tracking>](tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.<br /><br /> For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).|
 
 ### Parent Elements

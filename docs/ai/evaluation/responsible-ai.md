@@ -1,13 +1,13 @@
 ---
 title: Responsible AI with .NET
-description: Learn what responsible AI is and how you can use .NET to evaluate the safety of your AI apps.
-ms.date: 09/08/2025
+description: Learn what responsible AI is and how to use .NET to evaluate the safety of your AI apps.
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 ---
 
 # Responsible AI with .NET
 
-*Responsible AI* refers to the practice of designing, developing, and deploying artificial intelligence systems in a way that is ethical, transparent, and aligned with human values. It emphasizes fairness, accountability, privacy, and safety to ensure that AI technologies benefit individuals and society as a whole. As AI becomes increasingly integrated into applications and decision-making processes, prioritizing responsible AI is of utmost importance.
+*Responsible AI* refers to the practice of designing, developing, and deploying artificial intelligence systems in a way that is ethical, transparent, and aligned with human values. It emphasizes fairness, accountability, privacy, and safety to ensure that AI technologies benefit individuals and society as a whole. As AI becomes increasingly integrated into applications and decision-making processes, prioritizing responsible AI is essential.
 
 Microsoft has identified [six principles](https://www.microsoft.com/ai/responsible-ai) for responsible AI:
 
@@ -18,7 +18,7 @@ Microsoft has identified [six principles](https://www.microsoft.com/ai/responsib
 - Transparency
 - Accountability
 
-If you're building an AI app with .NET, the [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package provides evaluators to help ensure that the responses your app generates, both text and image, meet the standards for responsible AI. The evaluators can also detect problematic content in user input. These safety evaluators use the [Azure AI Foundry evaluation service](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators) to perform evaluations. They include metrics for hate and unfairness, groundedness, ungrounded inference of human attributes, and the presence of:
+If you're building an AI app with .NET, the [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package provides evaluators to help ensure that the responses your app generates, both text and image, meet the standards for responsible AI. The evaluators can also detect problematic content in user input. These safety evaluators use the [Microsoft Foundry Evaluation service](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators) to perform evaluations. They include metrics for hate and unfairness, groundedness, ungrounded inference of human attributes, and the presence of:
 
 - Protected material
 - Self-harm content
@@ -33,5 +33,5 @@ For more information about the safety evaluators, see [Safety evaluators](librar
 
 - [Responsible AI at Microsoft](https://www.microsoft.com/ai/responsible-ai)
 - [Training: Embrace responsible AI principles and practices](/training/modules/embrace-responsible-ai-principles-practices/)
-- [Azure AI Foundry evaluation service](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators)
+- [Foundry Evaluation service](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators)
 - [Azure AI Content Safety](/azure/ai-services/content-safety/overview)

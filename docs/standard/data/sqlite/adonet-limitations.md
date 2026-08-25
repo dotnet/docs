@@ -9,7 +9,7 @@ Microsoft.Data.Sqlite provides implementations of many of the ADO.NET abstractio
 
 ## Database schema information
 
-Metadata about query results is available using the <xref:Microsoft.Data.Sqlite.SqliteDataReader.GetSchemaTable%2A> method.
+Metadata about query results is available using the <xref:Microsoft.Data.Sqlite.SqliteDataReader.GetSchemaTable*> method.
 
 `DbConnection.GetSchema()` isn't implemented. This API isn't well-defined, so we recommend retrieving database metadata directly using standard SQLite APIs like the [sqlite_master](https://www.sqlite.org/fileformat.html#storage_of_the_sql_database_schema) table and the [table_info](https://www.sqlite.org/pragma.html#pragma_table_info) PRAGMA.
 

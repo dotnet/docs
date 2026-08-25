@@ -25,10 +25,10 @@ No action is required on the part of the developer.
 
 ## Affected APIs
 
-- <xref:System.Net.Security.SslStream.BeginAuthenticateAsServer%2A?displayProperty=fullName>
-- <xref:System.Net.Security.SslStream.BeginAuthenticateAsClient%2A?displayProperty=fullName>
-- <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A?displayProperty=fullName>
-- <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.BeginAuthenticateAsServer*?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.BeginAuthenticateAsClient*?displayProperty=fullName>
+- <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer*?displayProperty=fullName>
+- <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient*?displayProperty=fullName>
 
 <!--
 

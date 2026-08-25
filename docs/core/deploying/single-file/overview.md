@@ -2,13 +2,14 @@
 title: Create a single file for application deployment
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
-ms.date: 06/21/2022
+ms.date: 03/25/2026
 ms.custom: kr2b-contr-experiment
+ai-usage: ai-assisted
 ---
 
 # Single-file deployment
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#framework-dependent-deployment) and [self-contained applications](../index.md#self-contained-deployment).
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#publish-as-framework-dependent) and [self-contained applications](../index.md#publish-as-self-contained).
 
 The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
@@ -146,6 +147,9 @@ For example, add the following property to the project file of an assembly to em
 
 ## Other considerations
 
+> [!IMPORTANT]
+> IIS doesn't support hosting ASP.NET Core apps that use single-file deployment with the in-process hosting model. If you host an ASP.NET Core app in IIS, publish your app using the standard folder deployment model, or use the out-of-process hosting model instead. For more information, see [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis).
+
 Single file applications have all related PDB files alongside the application, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
 
 Managed C++ components aren't well suited for single file deployment. We recommend that you write applications in C# or another non-managed C++ language to be single file compatible.
@@ -156,7 +160,7 @@ Only managed DLLs are bundled with the app into a single executable. When the ap
 
 To embed those files for extraction and get one output file, set the property `IncludeNativeLibrariesForSelfExtract` to `true`.
 
-Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems.
+Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems. This mode is not recommended: it's a .NET Core 3.1 compatibility mode and might be removed in a future release.
 
 > [!IMPORTANT]
 > If extraction is used, the files are extracted to disk before the app starts:
@@ -209,11 +213,11 @@ We have some recommendations for fixing common scenarios:
 
 Some workflows require post-processing of binaries before bundling. A common example is signing. The dotnet SDK provides MSBuild extension points to allow processing binaries just before single-file bundling. The available APIs are:
 
-- A target `PrepareForBundle` that will be called before `GenerateSingleFileBundle`
-- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that will be bundled
+- A target `PrepareForBundle` that is called before `GenerateSingleFileBundle`
+- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that are to be bundled
 - A Property `AppHostFile` that will specify the apphost template. Post-processing might want to exclude the apphost from processing.
 
-To plug into this involves creating a target that will be executed between `PrepareForBundle` and `GenerateSingleFileBundle`.
+To plug into this involves creating a target that is executed between `PrepareForBundle` and `GenerateSingleFileBundle`.
 
 Consider the following .NET project `Target` node example:
 
@@ -225,7 +229,7 @@ It's possible that tooling will need to copy files in the process of signing. Th
 
 ### Compress assemblies in single-file apps
 
-Single-file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced will have all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
+Single-file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced has all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
 
 Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The impact can vary significantly between different applications.
 

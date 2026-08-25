@@ -10,7 +10,7 @@ using Azure.Security.KeyVault.Secrets;
 /// Get the handle of the console window for Linux
 /// </summary>
 [DllImport("libX11")]
-static extern IntPtr XOpenDisplay(string display);
+static extern IntPtr XOpenDisplay(string? display);
 
 [DllImport("libX11")]
 static extern IntPtr XRootWindow(IntPtr display, int screen);

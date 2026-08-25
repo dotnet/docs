@@ -22,7 +22,7 @@ One common concern related to exceptions is that if exceptions are used for code
 
 ## Tester-Doer Pattern
 
- Sometimes performance of an exception-throwing member can be improved by breaking the member into two. Let’s look at the <xref:System.Collections.Generic.ICollection%601.Add%2A> method of the <xref:System.Collections.Generic.ICollection%601> interface.
+ Sometimes performance of an exception-throwing member can be improved by breaking the member into two. Let’s look at the <xref:System.Collections.Generic.ICollection`1.Add*> method of the <xref:System.Collections.Generic.ICollection`1> interface.
 
 ```csharp
 ICollection<int> numbers = ...
@@ -46,7 +46,7 @@ if (!numbers.IsReadOnly)
 
 ## Try-Parse Pattern
 
- For extremely performance-sensitive APIs, an even faster pattern than the Tester-Doer Pattern described in the previous section should be used. The pattern calls for adjusting the member name to make a well-defined test case a part of the member semantics. For example, <xref:System.DateTime> defines a <xref:System.DateTime.Parse%2A> method that throws an exception if parsing of a string fails. It also defines a corresponding <xref:System.DateTime.TryParse%2A> method that attempts to parse, but returns false if parsing is unsuccessful and returns the result of a successful parsing using an `out` parameter.
+ For extremely performance-sensitive APIs, an even faster pattern than the Tester-Doer Pattern described in the previous section should be used. The pattern calls for adjusting the member name to make a well-defined test case a part of the member semantics. For example, <xref:System.DateTime> defines a <xref:System.DateTime.Parse*> method that throws an exception if parsing of a string fails. It also defines a corresponding <xref:System.DateTime.TryParse*> method that attempts to parse, but returns false if parsing is unsuccessful and returns the result of a successful parsing using an `out` parameter.
 
 ```csharp
 public struct DateTime

@@ -5,11 +5,11 @@ ms.date: 05/18/2023
 ---
 # System.Drawing.Common config switch removed
 
-The [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) NuGet package has been attributed as a Windows-specific library since .NET 6 and using it resulted in compile-time warnings and run-time exceptions. The runtime configuration switch to re-enable usage of the package on non-Windows operating systems has been removed in .NET 7.
+The [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) NuGet package has been attributed as a Windows-specific library since .NET 6 and using it resulted in compile-time warnings and runtime exceptions. The runtime configuration switch to re-enable usage of the package on non-Windows operating systems has been removed in .NET 7.
 
 ## Old behavior
 
-Prior to .NET 6, using the System.Drawing.Common package did not produce any compile-time warnings, and no run-time exceptions were thrown. In .NET 6, you could set the `System.Drawing.EnableUnixSupport` runtime configuration setting to re-enable non-Windows support.
+Prior to .NET 6, using the System.Drawing.Common package did not produce any compile-time warnings, and no runtime exceptions were thrown. In .NET 6, you could set the `System.Drawing.EnableUnixSupport` runtime configuration setting to re-enable non-Windows support.
 
 ## New behavior
 

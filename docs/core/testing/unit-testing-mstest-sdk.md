@@ -1,67 +1,20 @@
 ---
-title: MSTest SDK overview
+title: MSTest SDK configuration
 author: MarcoRossignoli
-description: Learn about the MSTest.Sdk and how to configure profiles and extensions with MSBuild properties.
+description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 02/13/2024
+ms.date: 08/06/2026
+ai-usage: ai-assisted
 ---
 
-# MSTest SDK overview
+# MSTest SDK configuration
 
-[MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is an [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps. It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
-
-* Tailored towards providing a first-class experience for testing with MSTest.
-* The recommended target for most users.
-* Easy to configure for other users.
-
-By default, the MSTest SDK discovers and runs your tests using the [MSTest runner for Microsoft.Testing.Platform](./unit-testing-mstest-runner-intro.md). You can switch to using VSTest by specifying `<UseVSTest>true</UseVSTest>`
-
-You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute of the `Project` node of your project:
-
-```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
-
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
-
-</Project>
-```
-
-> [!NOTE]
-> `/3.10.2` is given as example and can be replaced with any newer version.
-
-To simplify handling of versions, we recommend setting the SDK version at solution level using the _global.json_ file. For example, your project file would look like:
-
-```xml
-<Project Sdk="MSTest.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
-
-</Project>
-```
-
-Then, specify the `MSTest.Sdk` version in the _global.json_ file as follows:
-
-```json
-{
-    "msbuild-sdks": {
-        "MSTest.Sdk": "3.10.2"
-    }
-}
-```
-
-For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
-
-When you `build` the project, all the needed components are restored and installed using the standard NuGet workflow set by your project.
-
-You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-csharp-with-mstest.md).
+This article covers advanced configuration options for MSTest.Sdk. For basic setup and getting started, see [Get started with MSTest](./unit-testing-mstest-getting-started.md).
 
 > [!IMPORTANT]
-> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner (enables Microsoft.Testing.Platform for MSTest)](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./microsoft-testing-platform-integration-dotnet-test.md). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
-> By default, MSTest.Sdk sets `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` to true. For more information about dotnet test and its different modes for running Microsoft.Testing.Platform, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
+> By default, MSTest.Sdk uses the [MSTest runner with MTP](./unit-testing-mstest-running-tests.md), including with [dotnet test](./unit-testing-with-dotnet-test.md). This requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can keep the old integrations and tools by [switching to VSTest](#select-the-runner).
+>
+> MSTest.Sdk sets `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` to true by default. For more information about dotnet test and its different modes, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 
 ## Test utility helper libraries
 
@@ -69,11 +22,11 @@ If the project that uses MSTest.Sdk is intended to be a test utility helper libr
 
 ## Select the runner
 
-By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [MTP](./unit-testing-mstest-running-tests.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
-## Extend Microsoft.Testing.Platform
+## Extend MTP
 
-You can customize `Microsoft.Testing.Platform` experience through a set of [NuGet package extensions](./microsoft-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
+You can customize the MTP experience through a set of [NuGet package extensions](./microsoft-testing-platform-features.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
 - [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
@@ -90,50 +43,48 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 
   Enables the following extensions:
 
-  * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-
-  * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
+  * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
 
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
 
   Enables the following extensions:
 
-  * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-
-  * [Crash Dump](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)
-
-  * [Fakes](./microsoft-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
-
-  * [Hang Dump](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)
-
-  * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
-
-  * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
-
-  * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
+  * [Crash Dump](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)
+  * [Fakes](./microsoft-testing-platform-fakes.md) (MSTest.Sdk 3.7.0+)
+  * [Hang Dump](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)
+  * [Hot Reload](./microsoft-testing-platform-hot-reload.md#hot-reload)
+  * [Retry](./microsoft-testing-platform-retry.md#retry)
+  * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
+  * [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports)
 
 Here's a full example, using the `None` profile:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <TestingExtensionsProfile>None</TestingExtensionsProfile>
     </PropertyGroup>
 
 </Project>
 ```
 
-| Extension/Profile                                                                         | None | Default            | AllMicrosoft                           |
-|-------------------------------------------------------------------------------------------|:----:|:------------------:|:--------------------------------------:|
-| [Code Coverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) |      | :heavy_check_mark: | :heavy_check_mark:                     |
-| [Crash Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)       |      |                    | :heavy_check_mark:                     |
-| [Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes)                |      |                    | :heavy_check_mark: (MSTest.Sdk 3.7.0+) |
-| [Hang Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump)         |      |                    | :heavy_check_mark:                     |
-| [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)       |      |                    | :heavy_check_mark:                     |
-| [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                |      |                    | :heavy_check_mark:                     |
-| [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)              |      | :heavy_check_mark: | :heavy_check_mark:                     |
+| Extension/Profile                                                                                 | None  |      Default       |    AllMicrosoft     |
+| ------------------------------------------------------------------------------------------------- | :---: | :----------------: | :-----------------: |
+| [Code Coverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage)         |       | :heavy_check_mark: | :heavy_check_mark:  |
+| [Crash Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)               |       |                    | :heavy_check_mark:  |
+| [Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes)                        |       |                    | :heavy_check_mark:¹ |
+| [Hang Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump)                 |       |                    | :heavy_check_mark:  |
+| [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)               |       |                    | :heavy_check_mark:  |
+| [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                        |       |                    | :heavy_check_mark:  |
+| [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)                      |       | :heavy_check_mark: | :heavy_check_mark:  |
+| [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
+
+¹ MSTest.Sdk 3.7.0+
+² MSTest.Sdk 3.11.0+
 
 ### Enable or disable extensions
 
@@ -142,17 +93,19 @@ Extensions can be enabled and disabled by MSBuild properties with the pattern `E
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), you can use the following property `EnableMicrosoftTestingExtensionsCrashDump` set to `true`:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
 <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>
 </PropertyGroup>
 
 </Project>
 ```
 
-For a list of all available extensions, see [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md).
+For a list of all available extensions, see [MTP features](./microsoft-testing-platform-features.md).
+
+Starting with MSTest.Sdk 4.3, enable the experimental JUnit report extension with `<EnableMicrosoftTestingExtensionsJUnitReport>true</EnableMicrosoftTestingExtensionsJUnitReport>`, then pass `--report-junit` when you run the test application. The extension is available only with Microsoft.Testing.Platform and isn't included in the `Default` or `AllMicrosoft` profiles.
 
 > [!WARNING]
 > It's important to review the licensing terms for each extension as they might vary.
@@ -164,10 +117,10 @@ This property pattern can be used to enable an additional extension on top of th
 You can also disable an extension that's coming from the selected profile. For example, disable the `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.10.2">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>
     </PropertyGroup>
 
@@ -180,18 +133,18 @@ Outside of the selection of the runner and runner-specific extensions, `MSTest.S
 
 ### Test with Aspire
 
-Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](https://aspire.dev/get-started/what-is-aspire/).
 
 > [!NOTE]
-> This feature is available from MSTest.Sdk 3.4.0
+> This feature is available from MSTest.Sdk 3.4.0.
 
 By setting the property `EnableAspireTesting` to `true`, you can bring all dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.4.0">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <EnableAspireTesting>true</EnableAspireTesting>
     </PropertyGroup>
 
@@ -203,15 +156,15 @@ By setting the property `EnableAspireTesting` to `true`, you can bring all depen
 Playwright enables reliable end-to-end testing for modern web apps. For more information, see the official [Playwright docs](https://playwright.dev/dotnet/docs/intro).
 
 > [!NOTE]
-> This feature is available from MSTest.Sdk 3.4.0
+> This feature is available from MSTest.Sdk 3.4.0.
 
 By setting the property `EnablePlaywright` to `true` you can bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.4.0">
+<Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <EnablePlaywright>true</EnablePlaywright>
     </PropertyGroup>
 
@@ -236,7 +189,7 @@ Add the version to your `global.json`:
 ```json
 {
     "msbuild-sdks": {
-        "MSTest.Sdk": "3.10.2"
+        "MSTest.Sdk": "4.1.0"
     }
 }
 ```
@@ -266,9 +219,9 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 ### Update your CI
 
-Once you've updated your projects, if you're using `Microsoft.Testing.Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-with-dotnet-test.md).
+Once you've updated your projects, if you're using MTP (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-with-dotnet-test.md).
 
-If you are using the VSTest mode of `dotnet test`, here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
+If you're using the VSTest mode of `dotnet test`, here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 
 ```diff
 \- task: DotNetCoreCLI@2
@@ -279,15 +232,65 @@ If you are using the VSTest mode of `dotnet test`, here's an example update when
 +    arguments: '--configuration Release -- --report-trx --results-directory $(Agent.TempDirectory) --coverage'
 ```
 
-## Known limitations
+## Experimental features
 
-The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have limited tooling support when it comes to updating its version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages does not work as expected. See this issue for more details: [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
+The following MSTest 4.3 features are **experimental**. Their public APIs are subject to change, and they're surfaced behind experimental diagnostics, so opting in requires acknowledging the corresponding diagnostic ID. Use them with that caveat in mind.
+
+### Reflection source generator
 
 > [!NOTE]
-> This limitation is not specific to MSTest SDK but to any NuGet-provided MSBuild SDK.
-> Dependabot will handle updating the version in the `global.json` file, but you will need to [manually update the version in the project file](https://github.com/dependabot/dependabot-core/issues/8615).
+> Introduced in MSTest 4.3.0 (experimental).
+
+The MSTest reflection source generator discovers tests at compile time instead of relying on runtime reflection, which makes test projects compatible with trimming and Native AOT. Enable it by adding the [MSTest.SourceGeneration](https://www.nuget.org/packages/MSTest.SourceGeneration) package. When the source generator is active, test classes must declare `[TestClass]` directly rather than inherit it; the [MSTEST0069](mstest-analyzers/mstest0069.md) analyzer flags classes that rely on an inherited `[TestClass]`.
+
+Starting with MSTest 4.3.2, `MSTestSourceGenMode` defaults to `ReflectionFree` for trimmed and Native AOT projects.
+
+Starting with MSTest 4.4, reflection-free generation materializes complete inherited attribute metadata, including `AttributeUsage` and `AllowMultiple`. When the generator can't materialize metadata statically, MSTest falls back to reflection where the runtime supports it.
+
+### Programmatic test filtering with `ITestFilter`
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The experimental `ITestFilter` extension point, registered through `[TestFilterProviderAttribute]`, lets you decide programmatically whether each test runs, before any test class is loaded. This is useful for custom selection logic that can't be expressed with command-line filters.
+
+Implement `ITestFilter.Filter(TestFilterContext)` to inspect metadata without loading the test class:
+
+```csharp
+public sealed class MyFilter : ITestFilter
+{
+    public TestFilterResult Filter(TestFilterContext context) =>
+        context.DisplayName.Contains("Nightly", StringComparison.Ordinal)
+            ? TestFilterResult.Run : TestFilterResult.Drop;
+}
+```
+
+Return `TestFilterResult.Run` to run the test, `Drop` to omit it without a result, or `Skip(reason)` to report a skipped result. MSTest can call one filter instance concurrently, so implementations must be thread-safe. Command-line and test-explorer filters run before `ITestFilter`, while `[Ignore]` is evaluated afterward.
+
+Starting with MSTest 4.4, .NET projects can use the generic, type-safe registration form `[assembly: TestFilterProvider<MyFilter>]`. The compiler then enforces that `MyFilter` implements `ITestFilter` and has a public parameterless constructor. The generic attribute isn't available for .NET Framework. For a multi-targeted project, select the generic or non-generic form with a target-framework preprocessor symbol.
+
+```csharp
+#if NET
+[assembly: TestFilterProvider<MyFilter>]
+#else
+[assembly: TestFilterProvider(typeof(MyFilter))]
+#endif
+```
+
+Starting with MSTest 4.4, the [MSTEST0081](mstest-analyzers/mstest0081.md) analyzer fully validates the non-generic registration form. For the generic form, it still reports generic filter types and assemblies that register more than one provider.
+
+### `TestRun.Current` and planned tests
+
+> [!NOTE]
+> Introduced in MSTest 4.3.0 (experimental).
+
+The experimental `TestRun.Current` API (from RFC 014) exposes information about the current run, including the set of planned tests, so extensions and fixtures can inspect what's scheduled to execute.
+
+## Known limitations
+
+The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have [limited tooling support](https://github.com/NuGet/Home/issues/13127) when it comes to updating their version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages doesn't work as expected. You'll need to manually update the version in the `global.json` file and in the project file. (This applies even if you use Dependabot due to issues [dependabot-core#12824](https://github.com/dependabot/dependabot-core/issues/12824) and [dependabot-core#8615](https://github.com/dependabot/dependabot-core/issues/8615).)
 
 ## See also
 
-- [Microsoft.Testing.Platform&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformrelated-properties)
+- [MTP&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformrelated-properties)
 - [VSTest&ndash;related properties](../project-sdk/msbuild-props.md#vstestrelated-properties)

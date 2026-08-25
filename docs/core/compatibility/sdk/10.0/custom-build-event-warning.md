@@ -12,19 +12,19 @@ The `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable, which previously allo
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
-Users could set the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable to enable processing of custom build events.
+Previously, users could set the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable to enable processing of custom build events.
 
 ## New behavior
 
-The value of the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable is not respected anymore.
+Starting in .NET 10, the value of the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable is not respected anymore.
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

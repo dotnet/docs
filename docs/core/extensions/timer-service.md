@@ -1,15 +1,13 @@
 ---
 title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface in C#, much like the inbuilt .NET BackgroundService.
-author: IEvangelist
-ms.author: dapine
-ms.date: 12/13/2023
+ms.date: 10/20/2025
 ms.topic: tutorial
 ---
 
 # Implement the `IHostedService` interface
 
-When you need finite control beyond the provided <xref:Microsoft.Extensions.Hosting.BackgroundService>, you can implement your own <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.IHostedService> interface is the basis for all long running services in .NET. Custom implementations are registered with the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method.
+When you need finite control beyond the provided <xref:Microsoft.Extensions.Hosting.BackgroundService>, you can implement your own <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.IHostedService> interface is the basis for all long running services in .NET. Custom implementations are registered with the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method.
 
 In this tutorial, you learn how to:
 
@@ -43,10 +41,10 @@ Replace the contents of the `Worker` from the template with the following C# cod
 
 The `TimerService` is `sealed`, and cascades the `DisposeAsync` call from its `_timer` instance. For more information on the "cascading dispose pattern", see [Implement a `DisposeAsync` method](../../standard/garbage-collection/implementing-disposeasync.md).
 
-When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called, the timer is instantiated, thus starting the timer.
+When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync*> is called, the timer is instantiated, thus starting the timer.
 
 > [!TIP]
-> The <xref:System.Threading.Timer> doesn't wait for previous executions of `DoWork` to finish, so the approach shown might not be suitable for every scenario. <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType> is used to increment the execution counter as an atomic operation, which ensures that multiple threads don't update `_executionCount` concurrently.
+> The <xref:System.Threading.Timer> doesn't wait for previous executions of `DoWork` to finish, so the approach shown might not be suitable for every scenario. <xref:System.Threading.Interlocked.Increment*?displayProperty=nameWithType> is used to increment the execution counter as an atomic operation, which ensures that multiple threads don't update `_executionCount` concurrently.
 
 Replace the existing `Program` contents with the following C# code:
 
@@ -54,7 +52,7 @@ Replace the existing `Program` contents with the following C# code:
 
 The service is registered in (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 
-For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+For more information on registering services, see [Dependency injection in .NET](dependency-injection/overview.md).
 
 ## Verify service functionality
 

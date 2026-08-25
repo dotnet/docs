@@ -70,7 +70,7 @@ XML types become JSON strings.
 
 - There are some special rules that specify how XML is wrapped - for more information, see the Advanced Information section later in this article.
 
-- If you are using ASP.NET AJAX and do not want to use strings in the JavaScript, but want the XML DOM instead, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> property to XML on <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to XML on the <xref:System.ServiceModel.Web.WebInvokeAttribute>.
+- If you are using ASP.NET AJAX and do not want to use strings in the JavaScript, but want the XML DOM instead, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat> property to XML on <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat> property to XML on the <xref:System.ServiceModel.Web.WebInvokeAttribute>.
 
 ### Collections, dictionaries, and arrays
 
@@ -94,7 +94,7 @@ All collections, dictionaries, and arrays are represented in JSON as arrays.
 
 ### Order of Data Members
 
-Order of data members is not important when using JSON. Specifically, even if <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> is set, JSON data can still be deserialized in any order.
+Order of data members is not important when using JSON. Specifically, even if <xref:System.Runtime.Serialization.DataMemberAttribute.Order*> is set, JSON data can still be deserialized in any order.
 
 ### JSON Types
 
@@ -252,7 +252,7 @@ If the base `Shape` type also contained a data member called "`radius`", this le
 
 #### Polymorphism and Certain Interface Types
 
-It is forbidden to serialize a collection type or a type that implements <xref:System.Xml.Serialization.IXmlSerializable> where a non-collection type that is not <xref:System.Xml.Serialization.IXmlSerializable> (except for <xref:System.Object>) is expected. For example, a custom interface called `IMyInterface` and a type `MyType` that implement both <xref:System.Collections.Generic.IEnumerable%601> of type `int` and `IMyInterface`. It is forbidden to return `MyType` from an operation whose return type is `IMyInterface`. This is because `MyType` must be serialized as a JSON array and requires a type hint, and as stated before you cannot include a type hint with arrays, only with complex types.
+It is forbidden to serialize a collection type or a type that implements <xref:System.Xml.Serialization.IXmlSerializable> where a non-collection type that is not <xref:System.Xml.Serialization.IXmlSerializable> (except for <xref:System.Object>) is expected. For example, a custom interface called `IMyInterface` and a type `MyType` that implement both <xref:System.Collections.Generic.IEnumerable`1> of type `int` and `IMyInterface`. It is forbidden to return `MyType` from an operation whose return type is `IMyInterface`. This is because `MyType` must be serialized as a JSON array and requires a type hint, and as stated before you cannot include a type hint with arrays, only with complex types.
 
 #### Known Types and Configuration
 
@@ -260,7 +260,7 @@ All of the Known Type mechanisms used by the <xref:System.Runtime.Serialization.
 
 #### Collections Assigned to Object
 
-Collections assigned to Object are serialized as if they are collections that implement <xref:System.Collections.Generic.IEnumerable%601>: a JSON array with each entry that has a type hint if it is a complex type. For example, a <xref:System.Collections.Generic.List%601> of type `Shape` assigned to <xref:System.Object> looks like the following.
+Collections assigned to Object are serialized as if they are collections that implement <xref:System.Collections.Generic.IEnumerable`1>: a JSON array with each entry that has a type hint if it is a complex type. For example, a <xref:System.Collections.Generic.List`1> of type `Shape` assigned to <xref:System.Object> looks like the following.
 
 ```json
 [{"__type":"Shape:#MyApp.Shapes","x":50,"y":70},
@@ -270,7 +270,7 @@ Collections assigned to Object are serialized as if they are collections that im
 
 When deserialized back into <xref:System.Object>:
 
-- `Shape` must be in the Known Types list. Having <xref:System.Collections.Generic.List%601> of type `Shape` in known types has no effect. Note that you do not have to add `Shape` to known types on serialization in this case - this is done automatically.
+- `Shape` must be in the Known Types list. Having <xref:System.Collections.Generic.List`1> of type `Shape` in known types has no effect. Note that you do not have to add `Shape` to known types on serialization in this case - this is done automatically.
 
 - The collection is deserialized as an <xref:System.Array> of type <xref:System.Object> that contains `Shape` instances.
 

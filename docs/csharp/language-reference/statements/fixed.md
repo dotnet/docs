@@ -1,11 +1,11 @@
 ---
 title: "fixed statement - pin a moveable variable"
 description: "Use the C# `fixed` statement to pin a moveable variable and declare a pointer to that variable. The address of a pinned variable doesn't change during execution of the statement."
-ms.date: 11/22/2022
-f1_keywords: 
+ms.date: 06/16/2026
+f1_keywords:
   - "fixed_CSharpKeyword"
   - "fixed"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "fixed statement [C#]"
   - "fixed keyword [C#]"
 ---
@@ -15,9 +15,12 @@ The `fixed` statement prevents the [garbage collector](../../../standard/garbage
 
 :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedArray":::
 
-> [!NOTE]
-> You can use the `fixed` statement only in an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
+> [!NOTE]
+> To use the `fixed` statement, compile the code with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+>
+> The [memory safety](../unsafe-code.md#the-updated-memory-safety-model-preview) preview feature available in C# 15 feature lets you use `fixed` outside an `unsafe` context, but pointer indirection and other operations that access pinned memory still require an `unsafe` context.
 You can initialize the declared pointer as follows:
 
 - With an array, as the example at the beginning of this article shows. The initialized pointer contains the address of the first array element.
@@ -25,15 +28,15 @@ You can initialize the declared pointer as follows:
 
   :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedVariable":::
 
-  Object fields are another example of moveable variables that can be pinned.
+  Object fields are another example of moveable variables that you can pin.
 
   When the initialized pointer contains the address of an object field or an array element, the `fixed` statement guarantees that the garbage collector doesn't relocate or dispose of the containing object instance during the execution of the statement body.
 
-- With the instance of the type that implements a method named `GetPinnableReference`. That method must return a `ref` variable of an [unmanaged type](../builtin-types/unmanaged-types.md). The .NET types <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> make use of this pattern. You can pin span instances, as the following example shows:
+- With the instance of the type that implements a method named `GetPinnableReference`. That method must return a `ref` variable of an [unmanaged type](../builtin-types/unmanaged-types.md). The .NET types <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> make use of this pattern. You can pin span instances, as the following example shows:
 
   :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedSpan":::
 
-  For more information, see the <xref:System.Span%601.GetPinnableReference?displayProperty=nameWithType> API reference.
+  For more information, see the <xref:System.Span`1.GetPinnableReference?displayProperty=nameWithType> API reference.
 
 - With a string, as the following example shows:
 

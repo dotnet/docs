@@ -12,7 +12,7 @@ ms.assetid: 0d07090c-9b47-4ecc-81d1-29d539603c9b
 ---
 # Reflection in the .NET Framework for Windows Store Apps
 
-Starting with .NET Framework 4.5, the .NET Framework includes a set of reflection types and members for use in Windows 8.x Store apps. These types and members are available in the full .NET Framework as well as in the .NET for Windows Store apps. This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.
+.NET Framework includes a set of reflection types and members for use in Windows 8.x Store apps. These types and members are available in the full .NET Framework and in .NET for Windows Store apps. This article explains the major differences between these and their counterparts in .NET Framework 4 and earlier versions.
 
  If you are creating a Windows 8.x Store app, you must use the reflection types and members in the .NET for Windows 8.x Store apps. These types and members are also available, but not required, for use in desktop apps, so you can use the same code for both types of apps.
 
@@ -20,11 +20,11 @@ Starting with .NET Framework 4.5, the .NET Framework includes a set of reflectio
 
  In the .NET for Windows 8.x Store apps, the <xref:System.Reflection.TypeInfo> class contains some of the functionality of the .NET Framework 4 <xref:System.Type> class. A <xref:System.Type> object represents a reference to a type definition, whereas a <xref:System.Reflection.TypeInfo> object represents the type definition itself. This enables you to manipulate <xref:System.Type> objects without necessarily requiring the runtime to load the assembly they reference. Getting the associated <xref:System.Reflection.TypeInfo> object forces the assembly to load.
 
- <xref:System.Reflection.TypeInfo> contains many of the members available on <xref:System.Type>, and many of the reflection properties in the .NET for Windows 8.x Store apps return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IReflectableType.GetTypeInfo%2A> method.
+ <xref:System.Reflection.TypeInfo> contains many of the members available on <xref:System.Type>, and many of the reflection properties in the .NET for Windows 8.x Store apps return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IReflectableType.GetTypeInfo*> method.
 
 ## Query Methods
 
- In the .NET for Windows 8.x Store apps, you use the reflection properties that return <xref:System.Collections.Generic.IEnumerable%601> collections instead of methods that return arrays. Reflection contexts can implement lazy traversal of these collections for large assemblies or types.
+ In the .NET for Windows 8.x Store apps, you use the reflection properties that return <xref:System.Collections.Generic.IEnumerable`1> collections instead of methods that return arrays. Reflection contexts can implement lazy traversal of these collections for large assemblies or types.
 
  The reflection properties return only the declared methods on a particular object instead of traversing the inheritance tree. Moreover, they do not use <xref:System.Reflection.BindingFlags> parameters for filtering. Instead, filtering takes place in user code, by using LINQ queries on the returned collections. For reflection objects that originate with the runtime (for example, as the result of `typeof(Object)`), traversing the inheritance tree is best accomplished by using the helper methods of the <xref:System.Reflection.RuntimeReflectionExtensions> class. Consumers of objects from customized reflection contexts cannot use these methods, and must traverse the inheritance tree themselves.
 
@@ -41,4 +41,4 @@ Starting with .NET Framework 4.5, the .NET Framework includes a set of reflectio
 
 ## See also
 
-- [Reflection](../../fundamentals/reflection/reflection.md)
+- [Reflection](../../fundamentals/reflection/overview.md)

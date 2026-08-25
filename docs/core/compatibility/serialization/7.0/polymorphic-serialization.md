@@ -68,7 +68,7 @@ JsonSerializer.Serialize(0, inputType: typeof(int), options); // Serializes as 0
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.IO.Stream,%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.Text.Json.Utf8JsonWriter,%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.SerializeAsync%60%601(System.IO.Stream,%60%600,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1(``0,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1(System.IO.Stream,``0,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1(System.Text.Json.Utf8JsonWriter,``0,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.SerializeAsync``1(System.IO.Stream,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=fullName>

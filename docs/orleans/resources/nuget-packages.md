@@ -1,7 +1,7 @@
 ---
 title: Orleans NuGet packages
 description: Explore the many .NET Orleans NuGet packages.
-ms.date: 07/03/2024
+ms.date: 01/21/2026
 zone_pivot_groups: orleans-version
 ---
 
@@ -9,30 +9,55 @@ zone_pivot_groups: orleans-version
 
 Consumers of Orleans rely on various NuGet packages to achieve specific desired behaviors. There are several common packages and abstractions, and many individual single purpose packages. This article provides insights to help developers learn which Orleans packages should be used.
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
 
 ## Key packages
 
-You reference one of two mutually exclusive NuGet packages when writing Orleans apps, depending on the chosen workload. For example, when you write an Orleans Silo, you'll reference the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. When you write an Orleans Client app, you'll reference the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. All Orleans projects, such as abstractions or grain class libraries, reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package. The `Microsoft.Orleans.Sdk` package is included with both the `Client` and `Server` packages.
+Orleans provides several NuGet packages for different scenarios. When building an Orleans silo (server), reference the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. The Server package includes everything from the Client package, so silo projects can also act as clients without additional references. When building a standalone client application that connects to an Orleans cluster but doesn't host a silo, reference the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. All Orleans projects, such as abstractions or grain class libraries, reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package. The `Microsoft.Orleans.Sdk` package is included with both the `Client` and `Server` packages.
 
 | NuGet package | Description |
 |---|---|
-| [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) | Client-exclusive package, required for Orleans client. |
-| [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) | Metapackage required by all Orleans apps, server and client packages depend on this package. |
-| [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) | Server-exclusive package, required for Orleans silos. |
+| [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) | Client library for connecting to Orleans clusters. |
+| [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) | Metapackage for grain development, included in both Client and Server packages. |
+| [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) | Server library for hosting Orleans silos. |
 
 For information on installing NuGet packages, see the following options:
 
 - [.NET CLI: dotnet package add](../../core/tools/dotnet-package-add.md)
 - [Ways to install a NuGet package](/nuget/consume-packages/overview-and-workflow#ways-to-install-a-nuget-package)
 
+:::zone-end
+
+:::zone target="docs" pivot="orleans-10-0"
+
+## Orleans Dashboard
+
+The official Orleans Dashboard provides real-time cluster monitoring and visualization.
+
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.Dashboard](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard) | Orleans Dashboard for real-time cluster monitoring and visualization. |
+| [Microsoft.Orleans.Dashboard.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Dashboard.Abstractions) | Abstractions for Orleans Dashboard. |
+
+> [!NOTE]
+> For more information, see [Orleans Dashboard](../dashboard/index.md).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-9-0,orleans-8-0,orleans-7-0"
+
+## Tools
+
+One popular Orleans tool is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
+
+:::zone-end
+
+:::zone target="docs" pivot="orleans-7-0,orleans-8-0,orleans-9-0,orleans-10-0"
+
 ## Hosting
 
 | NuGet package | Description |
 |---|---|
-| [Microsoft.Orleans.Hosting.AzureCloudServices](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.AzureCloudServices) | Hosting utilities for Azure Cloud Services of Orleans. |
 | [Microsoft.Orleans.Hosting.Kubernetes](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.Kubernetes) | Orleans hosting support for Kubernetes. |
 | [Microsoft.Orleans.Runtime](https://www.nuget.org/packages/Microsoft.Orleans.Runtime) | Core runtime library of Orleans that hosts and executes grains within a silo. |
 
@@ -43,6 +68,11 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) | Orleans clustering provider backed by Azure Table Storage. |
 | [Microsoft.Orleans.Clustering.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) | Orleans clustering provider backed by ADO.NET. |
 | [Microsoft.Orleans.Clustering.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB) | Orleans clustering provider backed by AWS DynamoDB. |
+| [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) | Orleans clustering provider backed by Azure Cosmos DB. |
+| [Microsoft.Orleans.Clustering.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis) | Orleans clustering provider backed by Redis. |
+| [Microsoft.Orleans.Clustering.Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra) | Orleans clustering provider backed by Apache Cassandra. |
+| [Microsoft.Orleans.Clustering.Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul) | Orleans clustering provider backed by HashiCorp Consul. |
+| [Microsoft.Orleans.Clustering.ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper) | Orleans clustering provider backed by Apache ZooKeeper. |
 
 ## Reminder providers
 
@@ -52,6 +82,8 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.Reminders.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AzureStorage) | Orleans reminders provider backed by Azure Table Storage. |
 | [Microsoft.Orleans.Reminders.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AdoNet) | Orleans reminders provider backed by ADO.NET. |
 | [Microsoft.Orleans.Reminders.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.DynamoDB) | Orleans reminders provider backed by AWS DynamoDB. |
+| [Microsoft.Orleans.Reminders.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Cosmos) | Orleans reminders provider backed by Azure Cosmos DB. |
+| [Microsoft.Orleans.Reminders.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.Redis) | Orleans reminders provider backed by Redis. |
 
 ## Grain storage providers
 
@@ -60,7 +92,17 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.Persistence.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AdoNet) | Orleans persistence provider backed by ADO.NET. |
 | [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) | Orleans persistence provider backed by Azure Table Storage. |
 | [Microsoft.Orleans.Persistence.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.DynamoDB) | Orleans persistence provider backed by AWS DynamoDB. |
+| [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) | Orleans persistence provider backed by Azure Cosmos DB. |
+| [Microsoft.Orleans.Persistence.Redis](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Redis) | Orleans persistence provider backed by Redis. |
 | [Microsoft.Orleans.Persistence.Memory](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Memory) | In-memory storage for Orleans. |
+
+## Grain directory providers
+
+| NuGet package | Description |
+|---|---|
+| [Microsoft.Orleans.GrainDirectory.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.GrainDirectory.AzureStorage) | Orleans grain directory provider backed by Azure Table Storage. |
+| [Microsoft.Orleans.GrainDirectory.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.GrainDirectory.AdoNet) | Orleans grain directory provider backed by ADO.NET. |
+| [Microsoft.Orleans.GrainDirectory.Redis](https://www.nuget.org/packages/Microsoft.Orleans.GrainDirectory.Redis) | Orleans grain directory provider backed by Redis. |
 
 ## Stream providers
 
@@ -79,6 +121,7 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.CodeGenerator](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator) | Code generation library for `Microsoft.Orleans.Serialization`. |
 | [Microsoft.Orleans.EventSourcing](https://www.nuget.org/packages/Microsoft.Orleans.EventSourcing) | Base types for creating Orleans grains with event-sourced state. |
 | [Microsoft.Orleans.Connections.Security](https://www.nuget.org/packages/Microsoft.Orleans.Connections.Security) | Support for security communication using TLS in Orleans. |
+| [Microsoft.Orleans.BroadcastChannel](https://www.nuget.org/packages/Microsoft.Orleans.BroadcastChannel) | Support for broadcast channels in Orleans. |
 
 ## Development and testing
 
@@ -98,6 +141,8 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.Serialization.SystemTextJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson) | `System.Text.Json` integration for `Microsoft.Orleans.Serialization`. |
 | [Microsoft.Orleans.Serialization.FSharp](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.FSharp) | F# core type support for `Microsoft.Orleans.Serialization`. |
 | [Microsoft.Orleans.Serialization.NewtonsoftJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson) | `Newtonsoft.Json` integration for `Microsoft.Orleans.Serialization`. |
+| [Microsoft.Orleans.Serialization.MessagePack](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.MessagePack) | MessagePack integration for `Microsoft.Orleans.Serialization`. |
+| [Microsoft.Orleans.Serialization.Protobuf](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf) | Protocol Buffers (Protobuf) integration for `Microsoft.Orleans.Serialization`. |
 
 ## Transactions
 
@@ -106,15 +151,9 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.Transactions](https://www.nuget.org/packages/Microsoft.Orleans.Transactions) | Core transaction library of Orleans used on the server. |
 | [Microsoft.Orleans.Transactions.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Transactions.AzureStorage) | Orleans transactions storage provider backed by Azure Storage. |
 
-## Tools
-
-One popular Orleans tool is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
-
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
 
 ## Key packages
 

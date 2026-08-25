@@ -19,17 +19,17 @@ MSBuild 17.14
 
 ## Previous behavior
 
-MSBuild previously treated directories with names resembling culture codes (for example, `en-US`, `fr-FR`) as culture-specific resource directories by default. This behavior sometimes included unrelated directories, such as those with hash-based or technical names, leading to unintended resource assemblies in the build process.
+Previously, MSBuild treated directories with names resembling culture codes (for example, `en-US`, `fr-FR`) as culture-specific resource directories by default. This behavior sometimes included unrelated directories, such as those with hash-based or technical names, leading to unintended resource assemblies in the build process.
 
 ## New behavior
 
-- Custom culture resource handling is disabled by default.
-- To enable this feature, set the project property `EnableCustomCulture` to `true`.
-- Use the `CustomCultureExcludeDirectories` property to specify a semicolon-delimited list of directory names to exclude from custom culture processing.
+Custom culture resource handling is disabled by default. To enable this feature, set the project property `EnableCustomCulture` to `true`.
+
+To exclude directories from custom culture processing, use the `CustomCultureExcludeDirectories` property to specify a semicolon-delimited list of directory names.
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

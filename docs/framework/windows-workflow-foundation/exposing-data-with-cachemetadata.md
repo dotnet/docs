@@ -7,17 +7,17 @@ ms.assetid: 34832f23-e93b-40e6-a80b-606a855a00d9
 
 # Exposing data with CacheMetadata
 
-Before executing an activity, the workflow runtime obtains all of the information about the activity that it needs in order to maintain its execution. The workflow runtime gets this information during the execution of the <xref:System.Activities.Activity.CacheMetadata%2A> method. The default implementation of this method provides the runtime with all of the public arguments, variables, and child activities exposed by the activity at the time it is executed; if the activity needs to give more information to the runtime than this (such as private members, or activities to be scheduled by the activity), this method can be overridden to provide it.
+Before executing an activity, the workflow runtime obtains all of the information about the activity that it needs in order to maintain its execution. The workflow runtime gets this information during the execution of the <xref:System.Activities.Activity.CacheMetadata*> method. The default implementation of this method provides the runtime with all of the public arguments, variables, and child activities exposed by the activity at the time it is executed; if the activity needs to give more information to the runtime than this (such as private members, or activities to be scheduled by the activity), this method can be overridden to provide it.
 
 ## Default CacheMetadata behavior
 
-The default implementation of <xref:System.Activities.NativeActivity.CacheMetadata%2A> for activities that derive from <xref:System.Activities.NativeActivity> processes the following method types in the following ways:
+The default implementation of <xref:System.Activities.NativeActivity.CacheMetadata*> for activities that derive from <xref:System.Activities.NativeActivity> processes the following method types in the following ways:
 
-- <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, or <xref:System.Activities.InOutArgument%601> (generic arguments): These arguments are exposed to the runtime as arguments with a name and type equal to the exposed property name and type, the appropriate argument direction, and some validation data.
+- <xref:System.Activities.InArgument`1>, <xref:System.Activities.OutArgument`1>, or <xref:System.Activities.InOutArgument`1> (generic arguments): These arguments are exposed to the runtime as arguments with a name and type equal to the exposed property name and type, the appropriate argument direction, and some validation data.
 
 - <xref:System.Activities.Variable> or any subclass thereof: These members are exposed to the runtime as public variables.
 
-- <xref:System.Activities.Activity> or any subclass thereof: These members are exposed to the runtime as public child activities. The default behavior can be implemented explicitly by calling <xref:System.Activities.ActivityMetadata.AddImportedChild%2A>, passing in the child activity.
+- <xref:System.Activities.Activity> or any subclass thereof: These members are exposed to the runtime as public child activities. The default behavior can be implemented explicitly by calling <xref:System.Activities.ActivityMetadata.AddImportedChild*>, passing in the child activity.
 
 - <xref:System.Activities.ActivityDelegate> or any subclass thereof: These members are exposed to the runtime as public delegates.
 
@@ -27,7 +27,7 @@ The default implementation of <xref:System.Activities.NativeActivity.CacheMetada
 
 - <xref:System.Collections.ICollection> of type <xref:System.Activities.ActivityDelegate>: All elements in the collection are exposed to the runtime as public delegates.
 
-The <xref:System.Activities.Activity.CacheMetadata%2A> for activities that derive from <xref:System.Activities.Activity>, <xref:System.Workflow.Activities.CodeActivity>, and <xref:System.Activities.AsyncCodeActivity> also function as above, except for the following differences:
+The <xref:System.Activities.Activity.CacheMetadata*> for activities that derive from <xref:System.Activities.Activity>, <xref:System.Workflow.Activities.CodeActivity>, and <xref:System.Activities.AsyncCodeActivity> also function as above, except for the following differences:
 
 - Classes that derive from <xref:System.Activities.Activity> cannot schedule child activities or delegates, so such members are exposed as imported children and delegates; the
 
@@ -35,7 +35,7 @@ The <xref:System.Activities.Activity.CacheMetadata%2A> for activities that deriv
 
 ## Overriding CacheMetadata to provide information to the runtime
 
-The following code snippet demonstrates how to add information about members to an activity’s metadata during the execution of the <xref:System.Activities.Activity.CacheMetadata%2A> method. Note that the base of the method is called to cache all public data about the activity.
+The following code snippet demonstrates how to add information about members to an activity’s metadata during the execution of the <xref:System.Activities.Activity.CacheMetadata*> method. Note that the base of the method is called to cache all public data about the activity.
 
 ```csharp
 protected override void CacheMetadata(NativeActivityMetadata metadata)
@@ -53,9 +53,9 @@ protected override void CacheMetadata(NativeActivityMetadata metadata)
 
 ## Using CacheMetadata to expose implementation children
 
-In order to pass data to child activities that are to be scheduled by an activity using variables, it is necessary to add the variables as implementation variables; public variables cannot have their values set this way. The reason for this is that activities are intended to be executed more as implementations of functions (which have parameters), rather than encapsulated classes (which have properties). However, there are situations in which the arguments must be explicitly set, such as when using <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, since the scheduled activity doesn't have access to the parent activity's arguments in the way a child activity would.
+In order to pass data to child activities that are to be scheduled by an activity using variables, it is necessary to add the variables as implementation variables; public variables cannot have their values set this way. The reason for this is that activities are intended to be executed more as implementations of functions (which have parameters), rather than encapsulated classes (which have properties). However, there are situations in which the arguments must be explicitly set, such as when using <xref:System.Activities.NativeActivityContext.ScheduleActivity*>, since the scheduled activity doesn't have access to the parent activity's arguments in the way a child activity would.
 
-The following code snippet demonstrates how to pass an argument from a native activity into a scheduled activity using <xref:System.Activities.Activity.CacheMetadata%2A>.
+The following code snippet demonstrates how to pass an argument from a native activity into a scheduled activity using <xref:System.Activities.Activity.CacheMetadata*>.
 
 ```csharp
 public sealed class ChildActivity : NativeActivity

@@ -2,6 +2,7 @@
 title: Anonymous Records
 description: Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.
 ms.date: 11/04/2021
+ai-usage: ai-assisted
 ---
 # Anonymous Records
 
@@ -181,29 +182,6 @@ let data3 = struct {| data2 with Z = r2.X |}
 
 Anonymous records have a number of characteristics that are essential to fully understanding how they can be used.
 
-### Anonymous records are nominal
-
-Anonymous records are [nominal types](https://en.wikipedia.org/wiki/Nominal_type_system). They are best thought of as named [record](records.md) types (which are also nominal) that do not require an up-front declaration.
-
-Consider the following example with two anonymous record declarations:
-
-```fsharp
-let x = {| X = 1 |}
-let y = {| Y = 1 |}
-```
-
-The `x` and `y` values have different types and are not compatible with one another. They are not equatable and they are not comparable. To illustrate this, consider a named record equivalent:
-
-```fsharp
-type X = { X: int }
-type Y = { Y: int }
-
-let x = { X = 1 }
-let y = { Y = 1 }
-```
-
-There isn't anything inherently different about anonymous records when compared with their named record equivalents when concerning type equivalency or comparison.
-
 ### Anonymous records use structural equality and comparison
 
 Like record types, anonymous records are structurally equatable and comparable. This is only true if all constituent types support equality and comparison, like with record types. To support equality or comparison, two anonymous records must have the same "shape".
@@ -234,7 +212,7 @@ Anonymous records are useful for sending lightweight data over a network without
 
 ### Anonymous records interoperate with C# anonymous types
 
-It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/fundamentals/types/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/linq/index.md) overload that requires an anonymous type:
+It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/linq/index.md) overload that requires an anonymous type:
 
 ```fsharp
 open System.Linq
@@ -255,7 +233,7 @@ Anonymous records have some restrictions in their usage. Some are inherent to th
 
 Anonymous records do not support pattern matching, unlike named records. There are three reasons:
 
-1. A pattern would have to account for every field of an anonymous record, unlike named record types. This is because anonymous records do not support structural subtyping – they are nominal types.
+1. A pattern would have to account for every field of an anonymous record, unlike named record types. This is because anonymous records do not support structural subtyping – they require exact field matching.
 2. Because of (1), there is no ability to have additional patterns in a pattern match expression, as each distinct pattern would imply a different anonymous record type.
 3. Because of (2), any anonymous record pattern would be more verbose than the use of “dot” notation.
 

@@ -113,8 +113,8 @@ The following example demonstrates the potential imprecision of floating-point o
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Conversion.Int%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Int*>
+- <xref:Microsoft.VisualBasic.Conversion.Fix*>
 - [Arithmetic Operators](arithmetic-operators.md)
 - [Operator Precedence in Visual Basic](operator-precedence.md)
 - [Operators Listed by Functionality](operators-listed-by-functionality.md)

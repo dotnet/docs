@@ -11,7 +11,7 @@ The [ChannelFactory sample](https://github.com/dotnet/samples/tree/main/framewor
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
-This sample uses the <xref:System.ServiceModel.ChannelFactory%601> class to create a channel to a service endpoint. Typically, to create a channel to a service endpoint you generate a client type with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) and create an instance of the generated type. You can also create a channel by using the <xref:System.ServiceModel.ChannelFactory%601> class, as demonstrated in this sample. The service created by the following sample code is identical to the service in the [Getting Started](getting-started-sample.md).
+This sample uses the <xref:System.ServiceModel.ChannelFactory`1> class to create a channel to a service endpoint. Typically, to create a channel to a service endpoint you generate a client type with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) and create an instance of the generated type. You can also create a channel by using the <xref:System.ServiceModel.ChannelFactory`1> class, as demonstrated in this sample. The service created by the following sample code is identical to the service in the [Getting Started](getting-started-sample.md).
 
 ```csharp
 EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");

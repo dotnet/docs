@@ -22,11 +22,11 @@ This topic shows how to resolve an ambiguous time by assuming that it represents
 
 ### To map an ambiguous time to a time zone's standard time
 
-1. Call the <xref:System.TimeZoneInfo.IsAmbiguousTime%2A> method to determine whether the time is ambiguous.
+1. Call the <xref:System.TimeZoneInfo.IsAmbiguousTime*> method to determine whether the time is ambiguous.
 
-2. If the time is ambiguous, subtract the time from the <xref:System.TimeSpan> object returned by the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property.
+2. If the time is ambiguous, subtract the time from the <xref:System.TimeSpan> object returned by the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset> property.
 
-3. Call the `static` (`Shared` in Visual Basic .NET) <xref:System.DateTime.SpecifyKind%2A> method to set the UTC date and time value's <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.
+3. Call the `static` (`Shared` in Visual Basic .NET) <xref:System.DateTime.SpecifyKind*> method to set the UTC date and time value's <xref:System.DateTime.Kind> property to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.
 
 ## Example
 
@@ -35,11 +35,11 @@ The following example illustrates how to convert an ambiguous time to UTC by ass
 [!code-csharp[System.TimeZone2.Concepts#10](./snippets/timezone-concepts/TimeZone2Concepts.cs#10)]
 [!code-vb[System.TimeZone2.Concepts#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#10)]
 
-The example consists of a method named `ResolveAmbiguousTime` that determines whether the <xref:System.DateTime> value passed to it is ambiguous. If the value is ambiguous, the method returns a <xref:System.DateTime> value that represents the corresponding UTC time. The method handles this conversion by subtracting the value of the local time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property from the local time.
+The example consists of a method named `ResolveAmbiguousTime` that determines whether the <xref:System.DateTime> value passed to it is ambiguous. If the value is ambiguous, the method returns a <xref:System.DateTime> value that represents the corresponding UTC time. The method handles this conversion by subtracting the value of the local time zone's <xref:System.TimeZoneInfo.BaseUtcOffset> property from the local time.
 
-Ordinarily, an ambiguous time is handled by calling the <xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets%2A> method to retrieve an array of <xref:System.TimeSpan> objects that contain the ambiguous time's possible UTC offsets. However, this example makes the arbitrary assumption that an ambiguous time should always be mapped to the time zone's standard time. The <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property returns the offset between UTC and a time zone's standard time.
+Ordinarily, an ambiguous time is handled by calling the <xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets*> method to retrieve an array of <xref:System.TimeSpan> objects that contain the ambiguous time's possible UTC offsets. However, this example makes the arbitrary assumption that an ambiguous time should always be mapped to the time zone's standard time. The <xref:System.TimeZoneInfo.BaseUtcOffset> property returns the offset between UTC and a time zone's standard time.
 
-In this example, all references to the local time zone are made through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property; the local time zone is never assigned to an object variable. This is a recommended practice because a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> method invalidates any objects that the local time zone is assigned to.
+In this example, all references to the local time zone are made through the <xref:System.TimeZoneInfo.Local?displayProperty=nameWithType> property; the local time zone is never assigned to an object variable. This is a recommended practice because a call to the <xref:System.TimeZoneInfo.ClearCachedData*?displayProperty=nameWithType> method invalidates any objects that the local time zone is assigned to.
 
 ## See also
 

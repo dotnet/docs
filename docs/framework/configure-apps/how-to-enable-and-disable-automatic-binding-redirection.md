@@ -63,7 +63,7 @@ You can enable automatic binding redirects in existing apps that target older ve
    - In Visual Studio, select the project in **Solution Explorer**, and then choose **Open Folder in File Explorer** from the shortcut menu. In File Explorer, find the project (.csproj or .vbproj) file and open it in Notepad.
    - In Visual Studio, in **Solution Explorer**, right-click the project and choose **Unload Project**. Right-click the unloaded project again, and then choose **Edit [projectname.csproj]**.
 
-2. Add the following element to the first configuration property group (under the \<PropertyGroup> tag):
+2. Add the following element to the first configuration property group (under the `<PropertyGroup>` tag):
 
    ```xml
    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -106,5 +106,5 @@ To add binding redirects to a **web.config** file:
 
 ## See also
 
-- [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
+- [`<bindingRedirect>` Element](./file-schema/runtime/bindingredirect-element.md)
 - [Redirecting Assembly Versions](redirect-assembly-versions.md)

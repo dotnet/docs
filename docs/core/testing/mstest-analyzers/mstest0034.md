@@ -24,7 +24,7 @@ ms.author: enjieid
 | **Introduced in version**           | 3.6.0                                                            |
 | **Is there a code fix**             | No                                                               |
 
-> [NOTE]
+> [!NOTE]
 > This analyzer is no longer relevant for MSTest 4 as `ClassCleanupBehavior` was removed.
 
 ## Cause

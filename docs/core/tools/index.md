@@ -74,10 +74,12 @@ The following commands are installed by default:
 ### Project modification commands
 
 - [`package add`](dotnet-package-add.md)
+- [`package download`](dotnet-package-download.md)
 - [`package list`](dotnet-package-list.md)
 - [`package remove`](dotnet-package-remove.md)
 - [`package search`](dotnet-package-search.md)
 - [`package update`](dotnet-package-update.md)
+- [`project convert`](dotnet-project-convert.md) (Available since .NET 10 SDK)
 - [`reference add`](dotnet-reference-add.md)
 - [`reference list`](dotnet-reference-list.md)
 - [`reference remove`](dotnet-reference-remove.md)

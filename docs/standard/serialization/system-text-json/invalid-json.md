@@ -58,7 +58,7 @@ Instead of:
 }
 ```
 
-To serialize numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
+To serialize numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling*?displayProperty=nameWithType> as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/QuotedNumbers.cs" highlight="26-28":::
 :::code language="vb" source="snippets/how-to-contd/vb/QuotedNumbers.vb" :::

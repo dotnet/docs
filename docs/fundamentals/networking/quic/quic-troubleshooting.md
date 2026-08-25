@@ -71,4 +71,4 @@ Getting failure for attempt to bind on a port that is from excluded range is exp
 
 ## See also
 
-- [MsQuic troubleshooting guide](https://github.com/microsoft/msquic/blob/main/docs/TSG.md)
+- [MsQuic troubleshooting guide](https://github.com/microsoft/msquic/blob/main/docs/TroubleshootingGuide.md)

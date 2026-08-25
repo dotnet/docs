@@ -29,15 +29,18 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+        uses: step-security/harden-runner@b09bb98e06d4d774595224525879c09bc6e98c40 # v2.20.1
         with:
           egress-policy: audit
 
       - name: "Print manual run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
-          echo "Reason: ${{ github.event.inputs.reason }}"
-          echo "Issue number: ${{ github.event.inputs.issue }}"
+          echo "Reason: $REASON"
+          echo "Issue number: $ISSUENUMBER"
+        env:
+          REASON: ${{ github.event.inputs.reason }}
+          ISSUENUMBER: ${{ github.event.inputs.issue }}
 
       - name: Azure OpenID Connect
         id: azure-oidc-auth
@@ -47,6 +50,15 @@ jobs:
           tenant-id: ${{ secrets.TENANT_ID }}
           audience: ${{ secrets.OSMP_API_AUDIENCE }}
 
+      - name: Azure DevOps OpenID Connect for manual test runs
+        id: azure-devops-oidc-auth
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          audience: ${{ secrets.QUEST_AUDIENCE }}
+
+
       # This step occurs when ran manually, passing the manual issue number input
       - name: manual-sequester
         if: ${{ github.event_name == 'workflow_dispatch' }}
@@ -55,7 +67,7 @@ jobs:
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
-          ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__QuestAccessToken: ${{ steps.azure-devops-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
           ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
         with:
@@ -71,7 +83,7 @@ jobs:
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
-          ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__QuestAccessToken: ${{ steps.azure-devops-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
           ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
         with:

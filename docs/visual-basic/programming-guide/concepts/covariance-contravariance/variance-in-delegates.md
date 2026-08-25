@@ -119,15 +119,15 @@ End Sub
 
 .NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:
 
-- `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>
+- `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action`1> and <xref:System.Action`2>
 
-- `Func` delegates from the <xref:System> namespace, for example, <xref:System.Func%601> and <xref:System.Func%602>
+- `Func` delegates from the <xref:System> namespace, for example, <xref:System.Func`1> and <xref:System.Func`2>
 
-- The <xref:System.Predicate%601> delegate
+- The <xref:System.Predicate`1> delegate
 
-- The <xref:System.Comparison%601> delegate
+- The <xref:System.Comparison`1> delegate
 
-- The <xref:System.Converter%602> delegate
+- The <xref:System.Converter`2> delegate
 
 For more information and examples, see [Using Variance for Func and Action Generic Delegates (Visual Basic)](using-variance-for-func-and-action-generic-delegates.md).
 
@@ -167,7 +167,7 @@ dvariant("test")
 
 ### Combining Variant Generic Delegates
 
-You should not combine variant delegates. The <xref:System.Delegate.Combine%2A> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine%2A> method (in C# and Visual Basic) or by using the `+` operator (in C#), as shown in the following code example.
+You should not combine variant delegates. The <xref:System.Delegate.Combine*> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine*> method (in C# and Visual Basic) or by using the `+` operator (in C#), as shown in the following code example.
 
 ```vb
 Dim actObj As Action(Of Object) = Sub(x) Console.WriteLine("object: {0}", x)

@@ -3,7 +3,7 @@ title: Working with macOS Catalina Notarization
 description: How to handle notarization and certificate problems with macOS when you install the .NET runtime, SDK, and apps built with .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 04/23/2026
 ---
 
 # macOS Catalina Notarization and the impact on .NET downloads and projects
@@ -36,7 +36,7 @@ You can also distribute your app without the apphost and rely on users to run yo
   dotnet run -p:UseAppHost=false
   ```
 
-An **appHost** is required when you publish your app [self-contained](../deploying/index.md#self-contained-deployment) and you cannot disable it.
+An **appHost** is required when you publish your app [self-contained](../deploying/index.md#publish-as-self-contained) and you cannot disable it.
 
 For more information about the `UseAppHost` setting, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#useapphost).
 

@@ -10,7 +10,7 @@ A <xref:System.StackOverflowException> is thrown when the execution stack overfl
 
 For example, suppose you have an app as follows:
 
-````csharp
+```csharp
 using System;
 
 namespace temp
@@ -23,11 +23,11 @@ namespace temp
         }
     }
 }
-````
+```
 
 The `Main` method will continuously call itself until there is no more stack space. Once there is no more stack space, execution cannot continue and so it will throw a <xref:System.StackOverflowException>.
 
-````
+```dotnetcli
 > dotnet run
 Stack overflow.
    at temp.Program.Main(System.String[])
@@ -37,7 +37,7 @@ Stack overflow.
    at temp.Program.Main(System.String[])
    at temp.Program.Main(System.String[])
    <this output repeats many more times>
-````
+```
 
 When you see the program exit with output like this, you can find the source code for the repeating method(s) and investigate the logic that causes the large number of calls.
 
@@ -51,25 +51,23 @@ This example creates a core dump when the StackOverflowException occurs, then lo
 
 1. Run the app with it configured to collect a dump on crash.
 
-    ````
+    ```dotnetcli
     > export DOTNET_DbgEnableMiniDump=1
     > dotnet run
     Stack overflow.
     Writing minidump with heap to file /tmp/coredump.6412
     Written 58191872 bytes (14207 pages) to core file
-    ````
-
-   [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+    ```
 
 2. Install the SOS extension using [dotnet-sos](dotnet-sos.md).
 
-    ````
+    ```bash
     dotnet-sos install
-    ````
+    ```
 
 3. Open the dump in lldb and use the `bt` (backtrace) command to display the stack.
 
-    ````
+    ```bash
     lldb --core /temp/coredump.6412
     (lldb) bt
     ...
@@ -83,11 +81,11 @@ This example creates a core dump when the StackOverflowException occurs, then lo
         frame #261937: 0x00007f5a2d3cc468 libcoreclr.so`MethodDescCallSite::CallTargetWorker(this=<unavailable>, pArguments=0x00007ffe8222e7b0, pReturnValue=0x0000000000000000, cbReturnValue=0) at callhelpers.cpp:604
         frame #261938: 0x00007f5a2d4b6182 libcoreclr.so`RunMain(MethodDesc*, short, int*, PtrArray**) [inlined] MethodDescCallSite::Call(this=<unavailable>, pArguments=<unavailable>) at callhelpers.h:468
     ...
-    ````
+    ```
 
 4. The top frame `0x00007f59b40900cc` is repeated several times. Use the [SOS](sos-debugging-extension.md) `ip2md` command to figure out what managed method is located at the `0x00007f59b40900cc` address.
 
-    ````
+    ```bash
     (lldb) ip2md 0x00007f59b40900cc
     MethodDesc:   00007f59b413ffa8
     Method Name:          temp.Program.Main(System.String[])
@@ -104,7 +102,7 @@ This example creates a core dump when the StackOverflowException occurs, then lo
          CodeAddr:           00007f59b40900a0  (MinOptJitted)
          NativeCodeVersion:  0000000000000000
     Source file:  /temp/Program.cs @ 9
-    ````
+    ```
 
 5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what the code is doing wrong. If additional information is needed, you can use further debugger or [SOS](sos-debugging-extension.md) commands to inspect the process.
 

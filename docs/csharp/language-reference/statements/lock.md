@@ -1,7 +1,7 @@
 ---
 title: "The lock statement - synchronize access to shared resources"
 description: "Use the C# lock statement to ensure that only a single thread exclusively reads or writes a shared resource, blocking all other threads until it completes."
-ms.date: 05/02/2024
+ms.date: 01/16/2026
 f1_keywords: 
   - "lock_CSharpKeyword"
   - "lock"
@@ -10,7 +10,9 @@ helpviewer_keywords:
 ---
 # The lock statement - ensure exclusive access to a shared resource
 
-The `lock` statement acquires the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and waits until the lock is released. The `lock` statement ensures that at maximum only one thread executes its body at any moment in time.
+The `lock` statement acquires the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can acquire and release the lock multiple times. Any other thread is blocked from acquiring the lock and waits until the lock is released. The `lock` statement ensures that at most only one thread executes its body at any moment in time.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 The `lock` statement takes the following form:
 
@@ -21,7 +23,7 @@ lock (x)
 }
 ```
 
-The variable `x` is an expression of <xref:System.Threading.Lock?displayProperty=fullName> type, or a [reference type](../keywords/reference-types.md). When `x` is known at compile-time to be of the type <xref:System.Threading.Lock?displayProperty=fullName>, it's precisely equivalent to:
+The variable `x` is an expression of <xref:System.Threading.Lock?displayProperty=fullName> type, or a [reference type](../keywords/reference-types.md). When the compiler knows that `x` is of the type <xref:System.Threading.Lock?displayProperty=fullName>, it's precisely equivalent to:
 
 ```csharp
 using (x.EnterScope())
@@ -30,7 +32,7 @@ using (x.EnterScope())
 }
 ```
 
-The object returned by <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> is a [`ref struct`](../builtin-types/ref-struct.md) that includes a `Dispose()` method. The generated [`using`](using.md) statement ensures the scope is released even if an exception is thrown with the body of the `lock` statement.
+The object returned by <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> is a [`ref struct`](../builtin-types/ref-struct.md) that includes a `Dispose()` method. The generated [`using`](using.md) statement ensures the scope is released even if an exception is thrown within the body of the `lock` statement.
 
 Otherwise, the `lock` statement is precisely equivalent to:
 
@@ -54,7 +56,7 @@ You can't use the [`await` expression](../operators/await.md) in the body of a `
 
 ## Guidelines
 
-Beginning with .NET 9 and C# 13, lock a dedicated object instance of the <xref:System.Threading.Lock?displayProperty=nameWithType> type for best performance. In addition, the compiler issues a warning if a known `Lock` object is cast to another type and locked. If using an older version of .NET and C#, lock on a dedicated object instance that isn't used for another purpose. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following instances as lock objects:
+Starting with .NET 9 and C# 13, lock a dedicated object instance of the <xref:System.Threading.Lock?displayProperty=nameWithType> type for best performance. The compiler also issues a warning if you cast a known `Lock` object to another type and lock it. If you're using an older version of .NET and C#, lock on a dedicated object instance that isn't used for another purpose. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following instances as lock objects:
 
 - `this`, as callers might also lock `this`.
 - <xref:System.Type> instances, as they might be obtained by the [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator or reflection.

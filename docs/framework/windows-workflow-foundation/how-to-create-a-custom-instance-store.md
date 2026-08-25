@@ -11,13 +11,13 @@ ms.assetid: 593c4e9d-8a49-4e12-8257-cee5e6b4c075
 
 ## Implementing the BeginTryCommand method
 
-The <xref:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand%2A> is sent to the instance store by the persistence engine. The type of the `command` parameter indicates which command is being executed; this parameter can be of the following types:
+The <xref:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand*> is sent to the instance store by the persistence engine. The type of the `command` parameter indicates which command is being executed; this parameter can be of the following types:
 
-- <xref:System.Activities.DurableInstancing.SaveWorkflowCommand>: The persistence engine sends this command to the instance store when a workflow is to be persisted to the storage medium. The workflow persistence data is provided to the method in the <xref:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData%2A> member of the `command` parameter.
+- <xref:System.Activities.DurableInstancing.SaveWorkflowCommand>: The persistence engine sends this command to the instance store when a workflow is to be persisted to the storage medium. The workflow persistence data is provided to the method in the <xref:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData*> member of the `command` parameter.
 
-- <xref:System.Activities.DurableInstancing.LoadWorkflowCommand>: The persistence engine sends this command to the instance store when a workflow is to be loaded from the storage medium. The instance ID of the workflow to be loaded is provided to the method in the `instanceId` parameter of the <xref:System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceView%2A> property of the `context` parameter.
+- <xref:System.Activities.DurableInstancing.LoadWorkflowCommand>: The persistence engine sends this command to the instance store when a workflow is to be loaded from the storage medium. The instance ID of the workflow to be loaded is provided to the method in the `instanceId` parameter of the <xref:System.Runtime.DurableInstancing.InstancePersistenceContext.InstanceView> property of the `context` parameter.
 
-- <xref:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand>: The persistence engine sends this command to the instance store when a <xref:System.ServiceModel.Activities.WorkflowServiceHost> must be registered as a lock owner. The instance ID of the current workflow should be provided to the instance store using <xref:System.Runtime.DurableInstancing.InstancePersistenceContext.BindInstanceOwner%2A> method of the `context` parameter.
+- <xref:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand>: The persistence engine sends this command to the instance store when a <xref:System.ServiceModel.Activities.WorkflowServiceHost> must be registered as a lock owner. The instance ID of the current workflow should be provided to the instance store using <xref:System.Runtime.DurableInstancing.InstancePersistenceContext.BindInstanceOwner*> method of the `context` parameter.
 
      The following code snippet demonstrates how to implement the CreateWorkflowOwner command to assign an explicit lock owner.
 
@@ -83,7 +83,7 @@ The <xref:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand%2A> is 
     }
     ```
 
-- <xref:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand>: The persistence engine sends this command to the instance store when a workflow instance is to be loaded using the workflow’s instance key. The ID of the instance key can be determined by using the <xref:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LookupInstanceKey%2A> parameter of the command.
+- <xref:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand>: The persistence engine sends this command to the instance store when a workflow instance is to be loaded using the workflow’s instance key. The ID of the instance key can be determined by using the <xref:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LookupInstanceKey*> parameter of the command.
 
 - <xref:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand>: The persistence engine sends this command to the instance store to retrieve activation parameters for persisted workflows in order to create a workflow host that can then load workflows. This command is sent by the engine in response to the instance store raising the <xref:System.Activities.DurableInstancing.HasActivatableWorkflowEvent> to the host when it locates an instance that can be activated. The instance store should be polled to determine if there are workflows that can be activated.
 
@@ -127,7 +127,7 @@ The <xref:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand%2A> is 
     }
     ```
 
-     In the above code snippet, the instance store queries the events available and examines each one to determine if it is a <xref:System.Activities.DurableInstancing.HasRunnableWorkflowEvent> event. If one is found, <xref:System.Runtime.DurableInstancing.InstanceStore.SignalEvent%2A> is called to signal the host to send a command to the instance store. The following code snippet demonstrates an implementation of a handler for this command.
+     In the above code snippet, the instance store queries the events available and examines each one to determine if it is a <xref:System.Activities.DurableInstancing.HasRunnableWorkflowEvent> event. If one is found, <xref:System.Runtime.DurableInstancing.InstanceStore.SignalEvent*> is called to signal the host to send a command to the instance store. The following code snippet demonstrates an implementation of a handler for this command.
 
     ```csharp
     If (command is TryLoadRunnableWorkflowCommand)
@@ -222,7 +222,7 @@ The <xref:System.Runtime.DurableInstancing.InstanceStore.BeginTryCommand%2A> is 
 
 ## Using a custom instance store
 
-To implement a custom instance store, assign an instance of the instance store to the <xref:System.Activities.WorkflowApplication.InstanceStore%2A>, and implement the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> method. See the [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md) tutorial for specifics.
+To implement a custom instance store, assign an instance of the instance store to the <xref:System.Activities.WorkflowApplication.InstanceStore*>, and implement the <xref:System.Activities.WorkflowApplication.PersistableIdle*> method. See the [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md) tutorial for specifics.
 
 ## A sample instance store
 

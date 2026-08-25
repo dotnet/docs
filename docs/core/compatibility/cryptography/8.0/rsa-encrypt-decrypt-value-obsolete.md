@@ -16,7 +16,7 @@ All references to these methods will result in a [SYSLIB0048](../../../../fundam
 
 ## Previous behavior
 
-Previously, code could call the [affected methods](#affected-apis) without any compilation warnings. However, they threw a <xref:System.NotSupportedException> at run time.
+Previously, code could call the [affected methods](#affected-apis) without any compilation warnings. However, they threw a <xref:System.NotSupportedException> at runtime.
 
 ## New behavior
 
@@ -36,7 +36,7 @@ The affected methods were never implemented and always threw a <xref:System.NotS
 
 ## Recommended action
 
-To encrypt or decrypt with RSA, use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> or <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead.
+To encrypt or decrypt with RSA, use <xref:System.Security.Cryptography.RSA.Encrypt*?displayProperty=nameWithType> or <xref:System.Security.Cryptography.RSA.Decrypt*?displayProperty=nameWithType> instead.
 
 ## Affected APIs
 

@@ -41,10 +41,10 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews*>|Method|None|
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName*>|Method|None|
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView*>|Method|None|
 
  There are no events associated with this control pattern.
 
@@ -56,7 +56,7 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.ArgumentException>|When either <xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView%2A> or <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A> is called with a parameter that is not a member of the supported views collection.|
+|<xref:System.ArgumentException>|When either <xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView*> or <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName*> is called with a parameter that is not a member of the supported views collection.|
 
 ## See also
 

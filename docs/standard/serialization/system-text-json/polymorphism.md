@@ -51,7 +51,7 @@ In this scenario, the `City` property is serialized because the `weatherForecast
 }
 ```
 
-While round-tripping of the payload as `WeatherForecastBase` is supported, it won't materialize as a run-time type of `WeatherForecastWithCity`. Instead, it will materialize as a run-time type of `WeatherForecastBase`:
+While round-tripping of the payload as `WeatherForecastBase` is supported, it won't materialize as a runtime type of `WeatherForecastWithCity`. Instead, it will materialize as a runtime type of `WeatherForecastBase`:
 
 ```csharp
 WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>("""
@@ -416,7 +416,7 @@ Public NotInheritable Class FourDimensionalPoint
 End Class
 ```
 
-Since the configuration does not explicitly opt-in support for `FourDimensionalPoint`, attempting to serialize instances of `FourDimensionalPoint` as `BasePoint` will result in a run-time exception:
+Since the configuration does not explicitly opt-in support for `FourDimensionalPoint`, attempting to serialize instances of `FourDimensionalPoint` as `BasePoint` will result in a runtime exception:
 
 ```csharp
 JsonSerializer.Serialize<BasePoint>(new FourDimensionalPoint()); // throws NotSupportedException
@@ -623,7 +623,7 @@ End Class
 
 ### Additional polymorphic serialization details
 
-* Polymorphic serialization supports derived types that have been explicitly opted in via the <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>. Undeclared types will result in a run-time exception. The behavior can be changed by configuring the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.UnknownDerivedTypeHandling?displayProperty=nameWithType> property.
+* Polymorphic serialization supports derived types that have been explicitly opted in via the <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>. Undeclared types will result in a runtime exception. The behavior can be changed by configuring the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.UnknownDerivedTypeHandling?displayProperty=nameWithType> property.
 * Polymorphic configuration specified in derived types is not inherited by polymorphic configuration in base types. The base type must be configured independently.
 * Polymorphic hierarchies are supported for both `interface` and `class` types.
 * Polymorphism using type discriminators is only supported for type hierarchies that use the default converters for objects, collections, and dictionary types.

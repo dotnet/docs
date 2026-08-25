@@ -94,7 +94,7 @@ DATETIMEOFFSET'2006-12-25 01:01:00.0000000 -08:30'
 Binary'00ffaabb'
 X'ABCabc'
 BINARY    '0f0f0f0F0F0F0F0F0F0F'
-X'' –- empty binary string
+X'' -- empty binary string
 ```
 
 ## Guid

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # How to retrieve a single child element (LINQ to XML)
 
-This article explains how to retrieve a single child element, the first child element that has a specified name. In C# you do this with the <xref:System.Xml.Linq.XContainer.Element%2A> method. In Visual Basic you do it with array indexer notation.
+This article explains how to retrieve a single child element, the first child element that has a specified name. In C# you do this with the <xref:System.Xml.Linq.XContainer.Element*> method. In Visual Basic you do it with array indexer notation.
 
 ## Example: Retrieve the first element that has a specified name
 

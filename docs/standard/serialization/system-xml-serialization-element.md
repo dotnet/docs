@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "<system.xml.serialization> element"
 ms.topic: reference
 ---
-# \<system.xml.serialization> Element
+# `<system.xml.serialization>` Element
 
 The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).
 
@@ -66,6 +66,6 @@ The following code example illustrates how to specify the serialization mode of 
 - <xref:System.Xml.Serialization.XmlSchemaImporter>
 - <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
 - [Configuration File Schema](../../framework/configure-apps/file-schema/index.md)
-- [\<dateTimeSerialization> Element](datetimeserialization-element.md)
-- [\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)
-- [\<add> Element for \<schemaImporterExtensions>](add-element-for-schemaimporterextensions.md)
+- [`<dateTimeSerialization>` Element](datetimeserialization-element.md)
+- [`<schemaImporterExtensions>` Element](schemaimporterextensions-element.md)
+- [`<add>` Element for `<schemaImporterExtensions>`](add-element-for-schemaimporterextensions.md)

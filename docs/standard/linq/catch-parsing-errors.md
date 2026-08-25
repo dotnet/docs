@@ -12,7 +12,7 @@ ms.topic: how-to
 
 This article shows how to detect badly formed or invalid XML in C# or Visual Basic.
 
-LINQ to XML is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to LINQ to XML, the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>, don't catch the exception; the exception can then be caught by your application.
+LINQ to XML is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to LINQ to XML, the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse*?displayProperty=nameWithType>, don't catch the exception; the exception can then be caught by your application.
 
 ## Example: Parse invalid XML
 
@@ -55,7 +55,7 @@ Because of the invalid end tag `</Contcts>`, the example throws the following ex
 The 'Contacts' start tag on line 1 doesn't match the end tag of 'Contcts'. Line 5, position 13.
 ```
 
-For information about the exceptions that the <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>, <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>, <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>, and <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType> methods throw, see the <xref:System.Xml.XmlReader> documentation.
+For information about the exceptions that the <xref:System.Xml.Linq.XElement.Parse*?displayProperty=nameWithType>, <xref:System.Xml.Linq.XDocument.Parse*?displayProperty=nameWithType>, <xref:System.Xml.Linq.XElement.Load*?displayProperty=nameWithType>, and <xref:System.Xml.Linq.XDocument.Load*?displayProperty=nameWithType> methods throw, see the <xref:System.Xml.XmlReader> documentation.
 
 ## See also
 

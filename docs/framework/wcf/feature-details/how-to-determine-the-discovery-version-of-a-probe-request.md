@@ -10,7 +10,7 @@ A discovery proxy may expose multiple discovery endpoints using different discov
 
 ## To Determine the Discovery Version of a Probe Request
 
-In the method that responds to a Probe request (for example <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A?displayProperty=nameWithType>) use the static <xref:System.ServiceModel.OperationContext.Current%2A?displayProperty=nameWithType> property to search for a <xref:System.ServiceModel.Discovery.DiscoveryOperationContextExtension>, as shown in the following code.
+In the method that responds to a Probe request (for example <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind*?displayProperty=nameWithType>) use the static <xref:System.ServiceModel.OperationContext.Current?displayProperty=nameWithType> property to search for a <xref:System.ServiceModel.Discovery.DiscoveryOperationContextExtension>, as shown in the following code.
 
 ```csharp
 DiscoveryOperationContextExtension doce = OperationContext.Current.Extensions.Find<DiscoveryOperationContextExtension>();
@@ -20,5 +20,5 @@ doce.DiscoveryVersion;
 
 ## See also
 
-- <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion%2A>
+- <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion*>
 - [Implementing a Discovery Proxy](implementing-a-discovery-proxy.md)

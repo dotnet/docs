@@ -55,13 +55,13 @@ The sample provides a service channel in the `HttpCookieReplySessionChannelListe
     Dictionary<string, IReplySessionChannel> channelMapping;
     ```
 
-The `HttpCookieReplySessionChannel` class implements <xref:System.ServiceModel.Channels.IReplySessionChannel>. Higher levels of the channel stack call the <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> method to read requests for this session. Each session channel has a private message queue that is populated by the service channel.
+The `HttpCookieReplySessionChannel` class implements <xref:System.ServiceModel.Channels.IReplySessionChannel>. Higher levels of the channel stack call the <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest*> method to read requests for this session. Each session channel has a private message queue that is populated by the service channel.
 
 ```csharp
 InputQueue<RequestContext> requestQueue;
 ```
 
-In the case when someone calls the <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> method and there are no messages in the message queue, the channel waits for a specified amount of time before shutting itself down. This cleans up the session channels created for non-WCF clients.
+In the case when someone calls the <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest*> method and there are no messages in the message queue, the channel waits for a specified amount of time before shutting itself down. This cleans up the session channels created for non-WCF clients.
 
 We use the `channelMapping` to track the `ReplySessionChannels`, and we do not close our underlying `innerChannel` until all the accepted channels have been closed. This way `HttpCookieReplySessionChannel` can exist beyond the lifetime of `HttpCookieReplySessionChannelListener`. We also do not have to worry about the listener getting garbage collected underneath us because the accepted channels keep a reference to their listener through the `OnClosed` callback.
 

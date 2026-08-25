@@ -5,7 +5,7 @@ ms.date: 01/18/2024
 ---
 # RuntimeHelpers.GetSubArray returns different type
 
-The type of array instance returned by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%60%601(%60%600[],System.Range)?displayProperty=nameWithType> has changed to match the source array. `RuntimeHelpers.GetSubArray` is used by C# compiler to implement [range operator](../../../../csharp/language-reference/operators/member-access-operators.md#range-operator-) for arrays.
+The type of array instance returned by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray``1(``0[],System.Range)?displayProperty=nameWithType> has changed to match the source array. `RuntimeHelpers.GetSubArray` is used by C# compiler to implement [range operator](../../../../csharp/language-reference/operators/member-access-operators.md#range-operator-) for arrays.
 
 This behavior change can be observed only by code that uses covariant array conversions.
 
@@ -31,7 +31,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The design of C# pattern-matching features assumes that the type of array instance returned by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%60%601(%60%600[],System.Range)?displayProperty=nameWithType> matches the source array. The previous behavior led to unexpected behavior of certain complex pattern expressions that used slicing of covariant arrays. For more information, see [dotnet/roslyn#69053](https://github.com/dotnet/roslyn/issues/69053).
+The design of C# pattern-matching features assumes that the type of array instance returned by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray``1(``0[],System.Range)?displayProperty=nameWithType> matches the source array. The previous behavior led to unexpected behavior of certain complex pattern expressions that used slicing of covariant arrays. For more information, see [dotnet/roslyn#69053](https://github.com/dotnet/roslyn/issues/69053).
 
 ## Recommended action
 
@@ -53,4 +53,4 @@ M(arr[1..2]);
 
 ## Affected APIs
 
-- <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%60%601(%60%600[],System.Range)?displayProperty=fullName>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray``1(``0[],System.Range)?displayProperty=fullName>

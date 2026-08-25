@@ -17,7 +17,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | Diagnostic ID | Description | Severity |
 | - | - | - |
 | [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | BinaryFormatter serialization is obsolete | Warning/error |
-| [SYSLIB0048](../../../../fundamentals/syslib-diagnostics/syslib0048.md) | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0048](../../../../fundamentals/syslib-diagnostics/syslib0048.md) | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt*?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt*?displayProperty=nameWithType> instead. | Warning |
 | [SYSLIB0049](../../../../fundamentals/syslib-diagnostics/syslib0049.md) | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. | Warning |
 | [SYSLIB0050](../../../../fundamentals/syslib-diagnostics/syslib0050.md) | Formatter-based serialization is obsolete and should not be used. | Warning |
 | [SYSLIB0051](../../../../fundamentals/syslib-diagnostics/syslib0051.md) | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. | Warning |
@@ -56,7 +56,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ### SYSLIB0049
 
-- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializerOptions.AddContext``1?displayProperty=fullName>
 
 ### SYSLIB0050
 
@@ -171,13 +171,13 @@ The `SYSLIB0051` API obsoletions are organized here by namespace.
 
 #### System.Collections.Generic namespace
 
-- <xref:System.Collections.Generic.LinkedList%601.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.LinkedList%601.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.SortedSet%601.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.Dictionary%602.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.Dictionary%602.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.HashSet%601.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.HashSet%601.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.LinkedList`1.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.LinkedList`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedSet`1.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary`2.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.HashSet`1.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Collections.Generic.HashSet`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Collections.Generic.KeyNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 
 #### System.Collections.Specialized namespace
@@ -254,7 +254,7 @@ The `SYSLIB0051` API obsoletions are organized here by namespace.
 - <xref:System.Data.RowNotInTableException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Data.StrongTypingException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Data.SyntaxErrorException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Data.TypedTableBase%601.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Data.TypedTableBase`1.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Data.VersionNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 
 #### System.Data.Common namespace

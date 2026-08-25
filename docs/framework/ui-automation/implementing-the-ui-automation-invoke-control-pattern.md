@@ -23,7 +23,7 @@ The <xref:System.Windows.Automation.InvokePattern> control pattern is used to su
 
 When implementing the Invoke control pattern, note the following guidelines and conventions:
 
-- Controls implement <xref:System.Windows.Automation.Provider.IInvokeProvider> if the same behavior is not exposed through another control pattern provider. For example, if the <xref:System.Windows.Automation.InvokePattern.Invoke%2A> method on a control performs the same action as the <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> method, the control should not implement <xref:System.Windows.Automation.Provider.IInvokeProvider>.
+- Controls implement <xref:System.Windows.Automation.Provider.IInvokeProvider> if the same behavior is not exposed through another control pattern provider. For example, if the <xref:System.Windows.Automation.InvokePattern.Invoke*> method on a control performs the same action as the <xref:System.Windows.Automation.ExpandCollapsePattern.Expand*> or <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse*> method, the control should not implement <xref:System.Windows.Automation.Provider.IInvokeProvider>.
 
 - Invoking a control is generally performed by clicking or double-clicking or pressing ENTER, a predefined keyboard shortcut, or some alternate combination of keystrokes.
 
@@ -35,7 +35,7 @@ When implementing the Invoke control pattern, note the following guidelines and 
 
   - The action is time-consuming and will cause the calling client to block for a significant amount of time.
 
-- If invoking the control has significant side-effects, those side-effects should be exposed through the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText%2A> property. For example, even though <xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> is not associated with selection, <xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> may cause another control to become selected.
+- If invoking the control has significant side-effects, those side-effects should be exposed through the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText> property. For example, even though <xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke*> is not associated with selection, <xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke*> may cause another control to become selected.
 
 - Hover (or mouse-over) effects generally do not constitute an Invoked event. However, controls that perform an action (as opposed to cause a visual effect) based on the hover state should support the <xref:System.Windows.Automation.InvokePattern> control pattern.
 
@@ -56,7 +56,7 @@ The following properties and methods are required for implementing <xref:System.
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A>|method|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> is an asynchronous call and must return immediately without blocking.<br /><br /> This behavior is particularly critical for controls that, directly or indirectly, launch a modal dialog when invoked. Any UI Automation client that instigated the event will remain blocked until the modal dialog is closed.|
+|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke*>|method|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke*> is an asynchronous call and must return immediately without blocking.<br /><br /> This behavior is particularly critical for controls that, directly or indirectly, launch a modal dialog when invoked. Any UI Automation client that instigated the event will remain blocked until the modal dialog is closed.|
 
 <a name="Exceptions"></a>
 

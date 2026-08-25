@@ -15,7 +15,7 @@ Learn how to deploy a pretrained ML.NET machine learning model for predictions o
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the **.NET desktop development** and **Azure development** workloads installed. The .NET SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/) with the **.NET desktop development** and **Azure development** workloads installed. The .NET SDK is automatically installed when you select this workload.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - PowerShell
 - Pre-trained model. Download this [pretrained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip) or use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
@@ -26,10 +26,10 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 
 ## Create Azure Functions project
 
-1. In Visual Studio 2022 open the **Create a new project** dialog.
-1. In the "Create a new project" dialog, select the **Azure Functions** project template.
+1. In Visual Studio, open the **Create a new project** dialog.
+1. Select the **Azure Functions** project template.
 1. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and select **Next**.
-1. In the "Additional information dialog", leave all the defaults as is and select **Create**.
+1. In the "Additional information dialog", leave all the defaults as-is and select **Create**.
 1. Install the **Microsoft.ML NuGet Package**
 
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
@@ -102,7 +102,7 @@ You need to create some classes for your input data and predictions. Add a new c
 
 ## Register PredictionEnginePool service
 
-To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
+To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool`1) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) objects for use throughout your application.
 
 The following link provides more information if you want to learn more about [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
@@ -134,6 +134,9 @@ The following link provides more information if you want to learn more about [de
     [!code-csharp [StartupCtor](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L17-L30)]
 
 1. Then, add a new method called `Configure` to register the `PredictionEnginePool` service below the constructor.
+
+    > [!IMPORTANT]
+    > Only add models from trusted sources. Adding models from untrusted sources is a security risk.
 
     [!code-csharp [ConfigureServices](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L32-L36)]
 

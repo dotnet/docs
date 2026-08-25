@@ -50,7 +50,7 @@ At run time, each message is serialized as a standard Protobuf representation an
 
 gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support it:
 
-- Visual Studio 2022 with the ASP.NET and web development workload installed
+- Visual Studio 2022 or later with the ASP.NET and web development workload installed
 - Visual Studio Code
 - The `dotnet` CLI
 
@@ -59,8 +59,8 @@ The SDK includes tooling for endpoint routing, built-in IoC, and logging. The op
 ![gRPC Support in Visual Studio 2022](./media/visual-studio-2022-grpc-template.png)
 
 **Figure 4-20**. gRPC support in Visual Studio 2022
-  
-Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.  
+
+Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.
 
 ![gRPC project in Visual Studio 2022](./media/grpc-project.png  )
 

@@ -1,15 +1,16 @@
-namespace Version1
+#pragma warning disable CS0414 // Field is assigned but never read (snippets demonstrate declaration patterns)
+
+namespace FieldInit
 {
     // <ContainerFieldInitializer>
     public class Container
     {
-        // Initialize capacity field to a default value of 10:
         private int _capacity = 10;
     }
     // </ContainerFieldInitializer>
 }
 
-namespace Version2
+namespace ConstructorInit
 {
     // <ContainerConstructor>
     public class Container
@@ -21,7 +22,7 @@ namespace Version2
     // </ContainerConstructor>
 }
 
-namespace Version3
+namespace PrimaryInit
 {
     // <ContainerPrimaryConstructor>
     public class Container(int capacity)

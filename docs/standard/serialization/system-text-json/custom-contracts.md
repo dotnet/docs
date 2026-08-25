@@ -5,7 +5,7 @@ ms.date: 06/15/2023
 ---
 # Customize a JSON contract
 
-The <xref:System.Text.Json?displayProperty=fullName> library constructs a JSON *contract* for each .NET type, which defines how the type should be serialized and deserialized. The contract is derived from the type's shape, which includes characteristics such as its properties and fields and whether it implements the <xref:System.Collections.IEnumerable> or <xref:System.Collections.IDictionary> interface. Types are mapped to contracts either at run time using reflection or at compile time using the source generator.
+The <xref:System.Text.Json?displayProperty=fullName> library constructs a JSON *contract* for each .NET type, which defines how the type should be serialized and deserialized. The contract is derived from the type's shape, which includes characteristics such as its properties and fields and whether it implements the <xref:System.Collections.IEnumerable> or <xref:System.Collections.IDictionary> interface. Types are mapped to contracts either at runtime using reflection or at compile time using the source generator.
 
 Starting in .NET 7, you can customize these JSON contracts to provide more control over how types are converted into JSON and vice versa. The following list shows just some examples of the types of customizations you can make to serialization and deserialization:
 
@@ -42,7 +42,7 @@ There are two ways to plug into customization. Both involve obtaining a resolver
 
 - By writing a custom resolver that implements <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver>.
 
-  - If a type isn't handled, <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.GetTypeInfo%2A?displayProperty=nameWithType> should return `null` for that type.
+  - If a type isn't handled, <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.GetTypeInfo*?displayProperty=nameWithType> should return `null` for that type.
   - You can also combine your custom resolver with others, for example, the default resolver. The resolvers will be queried in order until a non-null <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> value is returned for the type.
 
 ## Configurable aspects
@@ -90,7 +90,7 @@ By default, `System.Text.Json` ignores private fields and properties. This examp
 
 Perhaps your model has properties with specific names or types that you don't want to expose to users. For example, you might have a property that stores credentials or some information that's useless to have in the payload.
 
-The following example shows how to filter out properties with a specific type, `SecretHolder`. It does this by using an <xref:System.Collections.Generic.IList%601> extension method to remove any properties that have the specified type from the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> list. The filtered properties completely disappear from the contract, which means `System.Text.Json` doesn't look at them either during serialization or deserialization.
+The following example shows how to filter out properties with a specific type, `SecretHolder`. It does this by using an <xref:System.Collections.Generic.IList`1> extension method to remove any properties that have the specified type from the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> list. The filtered properties completely disappear from the contract, which means `System.Text.Json` doesn't look at them either during serialization or deserialization.
 
 :::code language="csharp" source="snippets/custom-contracts/IgnoreType.cs":::
 

@@ -23,7 +23,7 @@ By setting the switch `"System.Windows.Forms.TreeView.MoveTreeViewTextLocationOn
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

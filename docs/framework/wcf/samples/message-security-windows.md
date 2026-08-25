@@ -56,7 +56,7 @@ The client endpoint configuration consists of an absolute address for the servic
 </system.serviceModel>
 ```
 
-The service source code has been modified to demonstrate how the <xref:System.ServiceModel.OperationContext.ServiceSecurityContext%2A> can be used to access the identity of the caller.
+The service source code has been modified to demonstrate how the <xref:System.ServiceModel.OperationContext.ServiceSecurityContext*> can be used to access the identity of the caller.
 
 ```csharp
 public string GetCallerIdentity()

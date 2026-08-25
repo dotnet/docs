@@ -1,7 +1,7 @@
 ---
 title: Create resource files
 description: Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
-ms.date: 03/13/2023
+ms.date: 08/06/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -55,7 +55,7 @@ name2=value2
 
  The resource file format of .txt and .restext files is identical. The .restext file extension merely serves to make text files immediately identifiable as text-based resource files.
 
- String resources appear as *name/value* pairs, where *name* is a string that identifies the resource, and *value* is the resource string that is returned when you pass *name* to a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>. *name* and *value* must be separated by an equal sign (=). For example:
+ String resources appear as *name/value* pairs, where *name* is a string that identifies the resource, and *value* is the resource string that is returned when you pass *name* to a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString*?displayProperty=nameWithType>. *name* and *value* must be separated by an equal sign (=). For example:
 
 ```text
 FileMenuName=File
@@ -73,7 +73,7 @@ HelpMenuName=Help
 EmptyString=
 ```
 
- Starting with .NET Framework 4.5 and in all versions of .NET Core, text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
+ Text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
 
  Comments are optional in text files and are preceded either by a semicolon (;) or by a pound sign (#) at the beginning of a line. Lines that contain comments can be placed anywhere in the file. Comments are not included in a compiled .resources file that is created by using [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md).
 
@@ -179,9 +179,9 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
 
 1. Create a <xref:System.Resources.ResourceWriter> object with a unique file name. You can do this by specifying either a file name or a file stream to a <xref:System.Resources.ResourceWriter> class constructor.
 
-2. Call one of the overloads of the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each named resource to add to the file. The resource can be a string, an object, or a collection of binary data (a byte array).
+2. Call one of the overloads of the <xref:System.Resources.ResourceWriter.AddResource*?displayProperty=nameWithType> method for each named resource to add to the file. The resource can be a string, an object, or a collection of binary data (a byte array).
 
-3. Call the <xref:System.Resources.ResourceWriter.Close%2A?displayProperty=nameWithType> method to write the resources to the file and to close the <xref:System.Resources.ResourceWriter> object.
+3. Call the <xref:System.Resources.ResourceWriter.Close*?displayProperty=nameWithType> method to write the resources to the file and to close the <xref:System.Resources.ResourceWriter> object.
 
 > [!CAUTION]
 > Do not use resource files to store passwords, security-sensitive information, or private data.
@@ -191,7 +191,7 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
 [!code-csharp[Conceptual.Resources.Resources#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
 [!code-vb[Conceptual.Resources.Resources#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]
 
- After you create the .resources file, you can embed it in a run-time executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
+ After you create the .resources file, you can embed it in a runtime executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
 
 <a name="VSResFiles"></a>
 

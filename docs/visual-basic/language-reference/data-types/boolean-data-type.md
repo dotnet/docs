@@ -20,7 +20,7 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
   
 ## Remarks  
 
- Use the [Boolean Data Type (Visual Basic)](boolean-data-type.md) to contain two-state values such as true/false, yes/no, or on/off.  
+ Use the `Boolean` data type to contain two-state values such as true/false, yes/no, or on/off.  
   
  The default value of `Boolean` is `False`.  
   
@@ -42,15 +42,22 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
   
 ## Example  
 
- In the following example, `runningVB` is a `Boolean` variable, which stores a simple yes/no setting.  
+ In the following example, `isLegacyFramework` and `isModernNet` are variables of type `Boolean`, which stores a simple yes/no setting.
   
-```vb  
-Dim runningVB As Boolean  
-' Check to see if program is running on Visual Basic engine.  
-If scriptEngine = "VB" Then  
-    runningVB = True  
-End If  
-```  
+```vb
+Dim runtimeDescription As String = 
+    Runtime.InteropServices.RuntimeInformation.FrameworkDescription
+
+Dim isLegacyFramework As Boolean
+Dim isModernNet As Boolean
+
+' Check if the program is running on legacy or modern .NET
+If runtimeDescription.Contains(".NET Framework") Then
+    isLegacyFramework = True
+ElseIf runtimeDescription.Contains(".NET") Then
+    isModernNet = True
+End If
+```
   
 ## See also
 

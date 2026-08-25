@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 07/22/2022
+ms.date: 10/22/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "garbage collection, workstation"
   - "garbage collection, managed heap"
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
+ai-usage: ai-assisted
 ---
 # Fundamentals of garbage collection
 
@@ -80,7 +81,7 @@ Garbage collection occurs when one of the following conditions is true:
 
 - The memory that's used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
-- The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
+- The <xref:System.GC.Collect*?displayProperty=nameWithType> method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
 
 ## The managed heap
 
@@ -171,13 +172,13 @@ A garbage collection has the following phases:
 
 - A marking phase that finds and creates a list of all live objects.
 
-- A relocating phase that updates the references to the objects that will be compacted.
+- A relocating phase that updates the references to the objects that are compacted.
 
 - A compacting phase that reclaims the space occupied by the dead objects and compacts the surviving objects. The compacting phase moves objects that have survived a garbage collection towards the older end of the segment.
 
   Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment because they're promoted to generation 2.
 
-  Ordinarily, the large object heap (LOH) isn't compacted because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
+  Ordinarily, the large object heap (LOH) isn't compacted because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
 
   - A memory limit on a container.
   - The [GCHeapHardLimit](../../core/runtime-config/garbage-collector.md#heap-hard-limit) or [GCHeapHardLimitPercent](../../core/runtime-config/garbage-collector.md#heap-hard-limit-percent) runtime configuration options.

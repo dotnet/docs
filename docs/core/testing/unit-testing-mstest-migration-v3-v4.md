@@ -6,7 +6,7 @@ ms.author: ygerges
 ms.date: 07/22/2025
 ---
 
-# Migrate from MSTest v3 to MSTest v4
+# Migrate from MSTest v3 to v4
 
 The stable version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 
@@ -106,6 +106,10 @@ If you have calls to `TestContext.Properties.Contains`, update them to `TestCont
 This enum only had a single member, `Infinite`, whose value was `int.MaxValue`.
 If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout(int.MaxValue)]`.
 
+### TestContext.ManagedType is now removed
+
+The property `TestContext.ManagedType` is removed. Use `TestContext.FullyQualifiedTestClassName` instead.
+
 ### Types not intended for public consumption are made internal or removed
 
 - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` is made internal.
@@ -191,13 +195,16 @@ The default severity of the following analyzers changed from Info to Warning:
 
 ## Behavior breaking changes
 
-These are breaking changes that might affect the behavior at run time.
+These are breaking changes that might affect the behavior at runtime.
 
-### DisableAppDomain now defaults to true when running under Microsoft.Testing.Platform
+### DisableAppDomain now defaults to true when running under MTP
 
-In v4, and when running with Microsoft.Testing.Platform, AppDomains are disabled by default (when not specified) as the custom isolation provided is useless in most of the cases and has an important impact on performances (up to 30% slower when running under isolation).
+In v4, and when running with MTP, AppDomains are disabled by default (when not specified) as the custom isolation provided is useless in most of the cases and has an important impact on performances (up to 30% slower when running under isolation).
 
 However, the feature remains available. If you have scenarios requiring it, add the `DisableAppDomain` setting in runsettings.
+
+> [!IMPORTANT]
+> When AppDomain isolation is enabled, MSTest unloads the AppDomain after all tests finish, which aborts all the threads associated with the AppDomain, including foreground threads. As a result, if you had a foreground thread running forever in MSTest v3, the test run will complete successfully. The same scenario will hang in MSTest v4, which is ideal behavior because the process shouldn't exit when a foreground thread is still running.
 
 ### TestContext throws when used incorrectly
 
@@ -213,3 +220,9 @@ To address long outstanding bugs that many users filed, the generation of `TestC
 ### TreatDiscoveryWarningsAsErrors now defaults to true
 
 v4 uses stricter defaults. As such, the default value of `TreatDiscoveryWarningsAsErrors` is now `true`. This should be a transparent change for most users and should help other users to uncover hidden bugs.
+
+### MSTest.Sdk no longer adds `Microsoft.NET.Test.Sdk` reference when using MTP
+
+By default, MSTest.Sdk uses MTP. If the `UseVSTest` MSBuild property is set to true, it will use VSTest instead. In MSTest 3.x, the SDK added a reference to Microsoft.NET.Test.Sdk (which brings VSTest support) even when using MTP. This package reference is unnecessary when running with MTP and has been removed in MSTest v4.
+
+If you still want to have VSTest supported (for example, if you want to run with vstest.console), you need to manually add a package reference to `Microsoft.NET.Test.Sdk` NuGet package to your project.

@@ -56,7 +56,7 @@ You can create trace listeners in an [application configuration file](../configu
 
 ### To create and use a trace listener in code
 
-- Add the trace listener to the <xref:System.Diagnostics.Trace.Listeners%2A> collection and send trace information to the listeners.
+- Add the trace listener to the <xref:System.Diagnostics.Trace.Listeners*> collection and send trace information to the listeners.
 
     ```vb
     Trace.Listeners.Add(New TextWriterTraceListener("TextWriterOutput.log", "myListener"))
@@ -74,7 +74,7 @@ You can create trace listeners in an [application configuration file](../configu
 
     \- or -
 
-- If you do not want your listener to receive trace output, do not add it to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can emit output through a listener independent of the <xref:System.Diagnostics.Trace.Listeners%2A> collection by calling the listener's own output methods. The following example shows how to write a line to a listener that is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection.
+- If you do not want your listener to receive trace output, do not add it to the <xref:System.Diagnostics.Trace.Listeners*> collection. You can emit output through a listener independent of the <xref:System.Diagnostics.Trace.Listeners*> collection by calling the listener's own output methods. The following example shows how to write a line to a listener that is not in the <xref:System.Diagnostics.Trace.Listeners*> collection.
 
     ```vb
     Dim myListener As New TextWriterTraceListener("TextWriterOutput.log", "myListener")

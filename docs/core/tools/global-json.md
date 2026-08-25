@@ -2,8 +2,9 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 03/05/2026
 ms.custom: "updateeachrelease"
+ai-usage: ai-assisted
 ---
 # global.json overview
 
@@ -11,18 +12,21 @@ ms.custom: "updateeachrelease"
 
 The *global.json* file allows you to define which .NET SDK version is used when you run .NET CLI commands. Selecting the .NET SDK version is independent from specifying the runtime version a project targets. The .NET SDK version indicates which version of the .NET CLI is used. This article explains how to select the SDK version by using *global.json*.
 
-If you always want to use the latest SDK version that is installed on your machine, no *global.json* file is needed. In CI (continuous integration) scenarios, however, you typically want to specify an acceptable range for the SDK version that is used. The *global.json* file has a `rollForward` feature that provides flexible ways to specify an acceptable range of versions. For example, the following *global.json* file selects 8.0.300 or any later [feature band or patch](../releases-and-support.md) for 8.0 that is installed on the machine:
+If you always want to use the latest SDK version that is installed on your machine, no *global.json* file is needed. In CI (continuous integration) scenarios, however, you typically want to specify an acceptable range for the SDK version that is used. The *global.json* file has a `rollForward` feature that provides flexible ways to specify an acceptable range of versions. For example, the following *global.json* file selects 10.0.100 or any later [feature band or patch](../releases-and-support.md) for 10.0 that is installed on the machine:
 
 ```json
 {
   "sdk": {
-    "version": "8.0.300",
+    "version": "10.0.100",
     "rollForward": "latestFeature"
   }
 }
 ```
 
-The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
+You rely on two components in the .NET SDK to search for a *global.json* file. Each component starts from a different location and searches up through ancestor directories:
+
+- **.NET SDK muxer** handles `dotnet` CLI commands. It starts from the current working directory, which isn't necessarily the same as the project directory.
+- **.NET MSBuild project SDK resolver** resolves project SDKs during builds. It starts from the directory that contains a solution file, if one exists. If no solution file exists, it starts from the directory that contains the current project file. If neither file exists, it uses the current working directory.
 
 For information about specifying the runtime version instead of the SDK version, see [Target frameworks](../../standard/frameworks.md).
 
@@ -42,7 +46,9 @@ The version of the .NET SDK to use.
 
 This field:
 
-- Doesn't have wildcard support; that is, you must specify the full version number.
+- Requires the full version number, such as 10.0.100.
+- Doesn't support version numbers like 10, 10.0, or 10.0.x.
+- Doesn't have wildcard support.
 - Doesn't support version ranges.
 
 #### `allowPrerelease`
@@ -84,12 +90,14 @@ The following table shows the possible values for the `rollForward` key:
 | `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
-| `disable`     | Doesn't roll forward. An exact match is required. |
+| `disable`     | Doesn't roll forward; an exact match is required.† |
+
+ <sup>† When you use [package lock files](../install/upgrade.md#package-lock-files), set `rollForward` to `disable` so the SDK version and dependency graph stay in lockstep. For related issues, see <https://github.com/dotnet/aspnetcore/issues/65061> and <https://github.com/dotnet/sdk/issues/48795>.</sup>
 
 #### `paths`
 
 - Type: Array of `string`
-- Available since: .NET 10 Preview 3 SDK.
+- Available since: .NET 10 SDK.
 
 Specifies the locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
 
@@ -102,7 +110,7 @@ This feature enables using local SDK installations (such as SDKs relative to a r
 #### `errorMessage`
 
 - Type: `string`
-- Available since: .NET 10 Preview 3 SDK.
+- Available since: .NET 10 SDK.
 
 Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
 
@@ -111,6 +119,19 @@ Specifies a custom error message displayed when the SDK resolver can't find a co
 Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
+
+### `test`
+
+- Type: `object`
+
+Specifies information about tests.
+
+#### `runner`
+
+- Type: `string`
+- Available since: .NET 10.0 SDK.
+
+The test runner to discover/run tests with.
 
 ### Comments in global.json
 
@@ -192,6 +213,27 @@ The following example shows how to specify additional SDK search paths and a cus
     "paths": [ ".dotnet", "$host$" ],
     "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
   }
+}
+```
+
+The following example shows an invalid version specified. The output of the command `dotnet --info` shows the error message: "Version '10.0' is not valid for the 'sdk/version' value."
+
+```json
+{
+  "sdk": {
+    "version": "10.0",
+    "rollForward": "latestFeature"
+  }
+}
+```
+
+The following example shows how to specify `Microsoft.Testing.Platform` (MTP) as the test runner:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
 }
 ```
 

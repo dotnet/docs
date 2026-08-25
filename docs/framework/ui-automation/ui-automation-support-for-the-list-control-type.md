@@ -78,8 +78,8 @@ A list control must not have items that have a hierarchical relationship other t
 |Control Pattern/Pattern Property|Support/Value|Notes|
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.ISelectionProvider>|Required|All controls that support the List control type must implement `ISelectionProvider` when a selection state is maintained between the items contained in the control. If the items within the container are not selectable, the Group control type must be used.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A>|Depends|List controls do not always require that an item be selected.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple%2A>|Depends|List controls can be single or multiple-selection containers.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired>|Depends|List controls do not always require that an item be selected.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple>|Depends|List controls can be single or multiple-selection containers.|
 |<xref:System.Windows.Automation.Provider.IScrollProvider>|Depends|Implement this control pattern if items in the container are scrollable.|
 |<xref:System.Windows.Automation.Provider.IGridProvider>|Depends|Implement this pattern when grid navigation needs to be available on an item by item basis.|
 |<xref:System.Windows.Automation.Provider.IMultipleViewProvider>|Depends|Implement this control pattern if the control can support multiple views of the items in the container.|

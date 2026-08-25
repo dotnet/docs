@@ -1,18 +1,17 @@
 ---
 title: System.CommandLine overview
 description: "Learn how to develop and use command-line apps that are based on the System.CommandLine library."
-ms.date: 04/07/2022
+ms.date: 10/21/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
   - "command line"
   - "System.CommandLine"
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # System.CommandLine overview
-
-[!INCLUDE [scl-preview](./includes/preview.md)]
 
 The `System.CommandLine` library provides functionality commonly needed by command-line apps, such as parsing command-line input and displaying help text.
 

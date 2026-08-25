@@ -8,7 +8,7 @@ ms.date: 02/01/2021
 
 # .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tour-of-csharp/tutorials/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C#, start with [Hello World in 5 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) and continue with [Introduction to C# tutorial](../csharp/tour-of-csharp/tutorials/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
 
 ## .NET
 
@@ -20,13 +20,13 @@ This guide shows you how to create an ASP.NET Core web app and associated unit t
 
 ### Tutorials
 
-**[Tutorial: Create a .NET console application using Visual Studio Code](../core/tutorials/with-visual-studio-code.md)**
+**[Tutorial: Create a .NET console application](../core/tutorials/create-console-app.md)**
 
-This tutorial shows how to create and run a .NET console application by using Visual Studio Code and the .NET CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET CLI.
+This tutorial shows how to create and run a .NET console application using Visual Studio, Visual Studio Code, or GitHub Codespaces.
 
-**[Tutorial: Create a .NET class library using Visual Studio Code](../core/tutorials/library-with-visual-studio-code.md)**
+**[Tutorial: Create a .NET class library](../core/tutorials/create-class-library.md)**
 
-This tutorial shows how to write libraries for .NET using Visual Studio Code and the .NET CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET CLI.
+This tutorial shows how to create a class library using Visual Studio, Visual Studio Code, or GitHub Codespaces.
 
 For more .NET tutorials, see [Learn .NET and the .NET SDK tools](../core/tutorials/index.md).
 

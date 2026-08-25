@@ -1,7 +1,7 @@
 ---
 title: "Built-in types"
 description: "Learn C# built-in value and reference types"
-ms.date: 03/07/2025
+ms.date: 01/14/2026
 helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
@@ -37,6 +37,8 @@ The following table lists the C# built-in [reference](../keywords/reference-type
 | [`delegate`](reference-types.md#the-delegate-type) |<xref:System.Delegate?displayProperty=nameWithType> |
 | [`dynamic`](reference-types.md#the-dynamic-type)   |<xref:System.Object?displayProperty=nameWithType>   |
 
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
 In the preceding tables, most C# type keywords from the left column are aliases for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
 
 ```csharp
@@ -62,7 +64,7 @@ The C# language includes specialized rules for the <xref:System.Span`1?displayPr
 - From `System.ReadOnlySpan<E>` to `System.ReadOnlySpan<U>`, when `E` has a covariance conversion or an identity conversion to `U`
 - From `string` to `System.ReadOnlySpan<char>`
 
-The compiler never ignores any user defined conversion where an applicable *implicit span conversion* exists. Implicit span conversions can be applied to the first argument of [extension methods](../../programming-guide/classes-and-structs/extension-methods.md), the parameter with the `this` modifier. Implicit span conversions aren't considered for method group conversions.
+The compiler never ignores any user defined conversion where an applicable *implicit span conversion* exists. Implicit span conversions can be applied to receiver parameter of [extension members](../../programming-guide/classes-and-structs/extension-methods.md). The receiver parameter is specified by the [`extension`](../keywords/extension.md) keyword in an extension member. The receiver parameter is the first parameter of an extension method using the `this` modifier. Implicit span conversions aren't considered for method group conversions.
 
 ## See also
 

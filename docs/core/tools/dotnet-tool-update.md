@@ -1,11 +1,11 @@
 ---
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET tool on your machine.
-ms.date: 03/15/2024
+ms.date: 11/12/2025
 ---
 # dotnet tool update
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -19,7 +19,7 @@ dotnet tool update <PACKAGE_ID> -g|--global
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
@@ -27,7 +27,7 @@ dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] 
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
@@ -35,7 +35,7 @@ dotnet tool update <PACKAGE_ID> --local
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
@@ -54,23 +54,25 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 - **`PACKAGE_ID`**
 
-  Name/ID of the NuGet package that contains the .NET global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
+  Name/ID of the NuGet package that contains the .NET global tool to update.
+
+  Starting in .NET 10.0.100 SDK, use the name/ID, and version separated by `@` to update a .NET tool.
+
+  You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+- [!INCLUDE [add-source](includes/cli-add-source.md)]
 
 - **`--all`**
 
   Update all tools.
 
-[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
+- [!INCLUDE [allow-downgrade](includes/cli-allow-downgrade.md)]
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
-- **`--disable-parallel`**
-
-  Prevent restoring multiple projects in parallel.
+- [!INCLUDE [disable-parallel](includes/cli-disable-parallel.md)]
 
 - **`--framework <FRAMEWORK>`**
 
@@ -80,13 +82,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Treat package source failures as warnings.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--local`**
 
@@ -100,6 +102,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Include prerelease versions.
 
+- [!INCLUDE [source](includes/cli-tool-source.md)]
+
 - **`--tool-manifest <PATH>`**
 
   Path to the manifest file.
@@ -108,7 +112,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 - **`--version <VERSION>`**
 
@@ -138,9 +142,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, with a major version of `2`, and a minor version of `0`.
 
-- **`dotnet tool update -g dotnetsay --version (2.0.*,2.1.4)`**
+- **`dotnet tool update -g dotnetsay@2.1.7*`**
 
-  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.4)`, version `2.1.0` would be installed. For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, 2.1.7.
+
+- **`dotnet tool update -g dotnetsay --version (2.0.0,2.1.7)`**
+
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.7)`, version `2.1.0` would be installed. For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).
 
 ## See also
 

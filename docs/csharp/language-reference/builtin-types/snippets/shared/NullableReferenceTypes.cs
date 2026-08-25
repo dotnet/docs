@@ -6,6 +6,7 @@ public static class NullableReferenceTypes
     {
         FirstExample();
         WarningsExamples();
+        Generics();
     }
 
     private static void FirstExample()
@@ -76,6 +77,30 @@ public static class NullableReferenceTypes
         // </SnippetLocalWarnings>
         string result = item.FullDescription();
     }
+
+    // <Generics>
+    public static T? FirstOrDefault<T>(IEnumerable<T> source)
+    {
+        foreach (T item in source)
+        {
+            return item;
+        }
+        return default;
+    }
+
+    public static void RequireNotNull<T>(T value) where T : notnull
+    {
+        ArgumentNullException.ThrowIfNull(value);
+    }
+
+    public static void Generics()
+    {
+        string? first = FirstOrDefault<string>([]);
+        Console.WriteLine(first ?? "<empty>");
+
+        RequireNotNull("not null");
+    }
+    // </Generics>
 }
 
 

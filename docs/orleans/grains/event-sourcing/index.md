@@ -11,7 +11,7 @@ Event sourcing provides a flexible way to manage and persist grain state. An eve
 
 The documentation is structured as follows:
 
-- [JournaledGrain basics](journaledgrain-basics.md) explains how to define event-sourced grains by deriving from <xref:Orleans.EventSourcing.JournaledGrain%602>, how to access the current state, and how to raise events that update the state.
+- [JournaledGrain basics](journaledgrain-basics.md) explains how to define event-sourced grains by deriving from <xref:Orleans.EventSourcing.JournaledGrain`2>, how to access the current state, and how to raise events that update the state.
 
 - [Replicated instances](replicated-instances.md) explains how the event-sourcing mechanism handles replicated grain instances and ensures consistency. It discusses the possibility of racing events and conflicts, and how to address them.
 

@@ -1,8 +1,6 @@
 ---
 title: Deploy a Worker Service to Azure
 description: Deploy your .NET Worker Service to Azure with ease, learning from a step-by-step process to optimize your workflow, including Docker and Azure Container Registry.
-author: IEvangelist
-ms.author: dapine
 ms.date: 12/13/2023
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
@@ -29,7 +27,7 @@ In this tutorial, you learn how to:
 
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - Depending on your developer environment of choice:
   - [Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com).
   - [.NET CLI](../tools/index.md)

@@ -1,9 +1,10 @@
 ---
 title: .NET code style rule options
 description: Learn how to specify .NET code style options.
-ms.date: 04/26/2024
+ms.date: 10/22/2025
 author: gewarren
 ms.author: gewarren
+ai-usage: ai-assisted
 ---
 # Code-style rule options
 
@@ -12,7 +13,7 @@ You can define and maintain consistent *code style* in your codebase by defining
 > [!TIP]
 >
 > - When you define code style options in an EditorConfig file, you're configuring how you want the [code style analyzers](overview.md#code-style-analysis) to analyze your code. The EditorConfig file is the configuration file for these analyzers.
-> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup) dialog. These are per-user options that are only respected while editing in Visual Studio. These options are not respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence. In Visual Studio on Windows, you can also generate an EditorConfig file from your text-editor options. Select **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**, and then click **Generate .editorconfig file from settings**. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
+> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup) dialog. These are per-user options that are only respected while editing in Visual Studio. These options aren't respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence. In Visual Studio on Windows, you can also generate an EditorConfig file from your text-editor options. Select **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**, and then select **Generate .editorconfig file from settings**. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
 
 Code style rules are divided into following subcategories:
 
@@ -95,8 +96,10 @@ dotnet_style_prefer_foreach_explicit_cast_in_source = when_strongly_typed
 dotnet_style_prefer_inferred_anonymous_type_member_names = true
 dotnet_style_prefer_inferred_tuple_names = true
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+dotnet_style_prefer_non_hidden_explicit_cast_in_source = true
 dotnet_style_prefer_simplified_boolean_expressions = true
 dotnet_style_prefer_simplified_interpolation = true
+dotnet_prefer_system_hash_code = true
 
 # Field preferences
 dotnet_style_readonly_field = true

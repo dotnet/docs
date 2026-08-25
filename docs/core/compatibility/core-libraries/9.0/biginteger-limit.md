@@ -16,7 +16,7 @@ Previously, you could assign a value with a length up to `Array.MaxLength * 32` 
 
 ## New behavior
 
-Starting in .NET 9, <xref:System.Numerics.BigInteger> has a maximum length of `(2^31) - 1` (approximately 2.14 billion) bits. If you attempt to assign a larger value, an <xref:System.OverflowException> is thrown at run time. For example, the following code throws an exception:
+Starting in .NET 9, <xref:System.Numerics.BigInteger> has a maximum length of `(2^31) - 1` (approximately 2.14 billion) bits. If you attempt to assign a larger value, an <xref:System.OverflowException> is thrown at runtime. For example, the following code throws an exception:
 
 ```csharp
 BigInteger bigInt = new BigInteger(-1) << int.MaxValue;

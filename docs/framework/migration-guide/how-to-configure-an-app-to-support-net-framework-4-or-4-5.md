@@ -2,7 +2,7 @@
 title: "How to: Configure an app to support .NET Framework 4 or later versions"
 description: Use the included example to learn how to configure your desktop app to support .NET Framework 4 or later.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "configuring apps to support .NET Framework"
   - ".NET Framework, configuring apps"
 ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
@@ -16,7 +16,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
 
 - Configuration file.
 
-     If the application configuration file includes [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) entries that specify one or more .NET Framework versions, and one of those versions is present on the user's computer, the app runs on that version. The configuration file reads [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) entries in the order they are listed, and uses the first .NET Framework version listed that is present on the user's computer. (Use the [\<requiredRuntime> element](../configure-apps/file-schema/startup/requiredruntime-element.md) for version 1.0.)
+     If the application configuration file includes [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) entries that specify one or more .NET Framework versions, and one of those versions is present on the user's computer, the app runs on that version. The configuration file reads [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) entries in the order they are listed, and uses the first .NET Framework version listed that is present on the user's computer. (Use the [`<requiredRuntime>` element](../configure-apps/file-schema/startup/requiredruntime-element.md) for version 1.0.)
 
 - Compiled version.
 
@@ -24,7 +24,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
 
 - Latest version installed.
 
-     If the version of the .NET Framework that the app was built on is not present and a configuration file does not specify a version in a [\<supportedRuntime> element](../configure-apps/file-schema/startup/supportedruntime-element.md), the app tries to run on the latest version of the .NET Framework that is present on the user's computer.
+     If the version of the .NET Framework that the app was built on is not present and a configuration file does not specify a version in a [`<supportedRuntime>` element](../configure-apps/file-schema/startup/supportedruntime-element.md), the app tries to run on the latest version of the .NET Framework that is present on the user's computer.
 
      However, .NET Framework 1.0, 1.1, 2.0, 3.0, and 3.5 apps do not automatically run on the .NET Framework 4 or later, and in some cases, the user may receive an error and may be prompted to install .NET Framework 3.5. The activation behavior may also depend on the user’s operating system, because  different versions of Windows system include different versions of the .NET Framework. If your app supports both the .NET Framework 3.5 and 4 or later, we recommend that you indicate this with multiple entries in the configuration file to avoid .NET Framework initialization errors. For more information, see [Versions and Dependencies](../install/versions-and-dependencies.md).
 
@@ -53,7 +53,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
    </configuration>
    ```
 
-   *\<version>* specifies the CLR version that aligns with the .NET Framework version that your app supports. Use the following strings:
+   The `version` attribute specifies the CLR version that aligns with the .NET Framework version that your app supports. Use the following strings:
 
    - .NET Framework 1.0: "v1.0.3705"
    - .NET Framework 1.1: "v1.1.4322"

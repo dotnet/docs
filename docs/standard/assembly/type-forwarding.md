@@ -45,7 +45,7 @@ Continuing from the contrived example description above, imagine you're developi
 
 :::code language="xml" source="snippets/type-forwarders/before/Utility/Utility.csproj":::
 
-The `Example` class provides a few properties and overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>:
+The `Example` class provides a few properties and overrides <xref:System.Object.ToString*?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/type-forwarders/before/Utility/Example.cs":::
 

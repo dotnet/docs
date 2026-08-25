@@ -251,12 +251,12 @@ The following highlighted code configures which instruments the listener receive
 
 :::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_uml" highlight="2-99":::
 
-The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument. Code that obtains a reference to an instrument by another approach:
+The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents*> enables receiving measurements from the specified instrument. Code that obtains a reference to an instrument by another approach:
 
 - Is not typically done.
 - Can invoke `EnableMeasurementEvents()` at any time with the reference.
 
-The delegate that is invoked when measurements are received from an instrument is configured by calling <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>:
+The delegate that is invoked when measurements are received from an instrument is configured by calling <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback*>:
 
 :::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_sme" highlight="1,15-99":::
 

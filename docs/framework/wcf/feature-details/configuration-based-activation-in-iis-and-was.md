@@ -37,7 +37,7 @@ Configuration-based activation takes the metadata that used to be placed in the 
 
 ## See also
 
-- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations%2A>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations*>
 - [Hosting Services](../hosting-services.md)
 - [Hosting Workflow Services Overview](hosting-workflow-services-overview.md)
 - [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md)

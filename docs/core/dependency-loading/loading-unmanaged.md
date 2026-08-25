@@ -22,7 +22,7 @@ The following algorithm describes how native libraries are loaded through `PInvo
 
    * Calling the current <xref:System.Runtime.InteropServices.DllImportResolver?displayProperty=nameWithType> delegate set by the <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> function.
 
-   * Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll%2A?displayProperty=nameWithType> function on the `active` AssemblyLoadContext.
+   * Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll*?displayProperty=nameWithType> function on the `active` AssemblyLoadContext.
 
    * Checking the <xref:System.AppDomain> instance's cache and running the [Unmanaged (native) library probing](default-probing.md#unmanaged-native-library-probing) logic.
 

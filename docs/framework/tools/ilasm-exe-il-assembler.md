@@ -2,7 +2,7 @@
 title: "Ilasm.exe (IL Assembler)"
 description: Get started with Ilasm.exe, the IL Assembler. This tool generates a portable executable (PE) file from intermediate language (IL) assembly.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MSIL generators"
   - "metadata, MSIL Assembler"
   - "MSIL Assembler"
@@ -41,7 +41,7 @@ ilasm [options] filename [[options]filename...]
 |**/arm**|Specifies the Advanced RISC Machine (ARM) as the target processor.<br /><br /> If no image bitness is specified, the default is **/32bitpreferred**.|
 |**/base:** `integer`|Sets ImageBase to the value specified by `integer` in the NT Optional header. If the .imagebase IL directive is specified in the file, this option overrides it.|
 |**/clock**|Measures and reports the following compilation times in milliseconds for the specified .il source file:<br /><br /> **Total Run**: The total time spent performing all the specific operations that follow.<br /><br /> **Startup**: Loading and opening the file.<br /><br /> **Emitting MD**: Emitting metadata.<br /><br /> **Ref to Def Resolution**: Resolving references to definitions in the file.<br /><br /> **CEE File Generation**: Generating the file image in memory.<br /><br /> **PE File Writing**: Writing the image to a PE file.|
-|**/debug**[:**IMPL**&#124;**OPT**]|Includes debug information (local variable and argument names, and line numbers). Creates a PDB file.<br /><br /> **/debug** with no additional value disables JIT optimization and uses sequence points from the PDB file.<br /><br /> **IMPL** disables JIT optimization and uses implicit sequence points.<br /><br /> **OPT** enables JIT optimization and uses implicit sequence points.|
+|**/debug**[:**IMPL**&#124;**OPT**]|Includes debug information (local variable and argument names, and line numbers). Creates a PDB file.<br /><br /> **/debug** with no additional value disables JIT optimization and uses sequence points from the PDB file.<br /><br /> `IMPL` disables JIT optimization and uses implicit sequence points.<br /><br /> `OPT` enables JIT optimization and uses implicit sequence points.|
 |**/dll**|Produces a *.dll* file as output.|
 |**/enc:** `file`|Creates Edit-and-Continue deltas from the specified source file.<br /><br /> This argument is for academic use only and is not supported for commercial use.|
 |**/exe**|Produces an executable file as output. This is the default.|

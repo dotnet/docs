@@ -27,7 +27,7 @@ There are two ways to remove an assembly from the global assembly cache (GAC):
 
 At the command prompt, type the following command:
 
-**gacutil –u** \<*assembly name*>
+**gacutil -u** \<*assembly name*>
 
 In this command, *assembly name* is the name of the assembly to remove from the global assembly cache.
 

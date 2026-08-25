@@ -7,13 +7,13 @@ helpviewer_keywords:
   - "<generatePublisherEvidence> element"
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
 ---
-# \<generatePublisherEvidence> Element
+# `<generatePublisherEvidence>` Element
 
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<generatePublisherEvidence>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<generatePublisherEvidence>`
 
 [!INCLUDE [cas-deprecated](../../../../../includes/cas-deprecated.md)]
 
@@ -54,10 +54,7 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 
 ## Remarks
 
-> [!NOTE]
-> In the .NET Framework 4 and later, this element has no effect on assembly load times.
-
- The common language runtime (CLR) tries to verify the Authenticode signature at load time to create <xref:System.Security.Policy.Publisher> evidence for the assembly. However, by default, most applications do not need <xref:System.Security.Policy.Publisher> evidence. Standard CAS policy does not rely on the <xref:System.Security.Policy.PublisherMembershipCondition>. You should avoid the unnecessary startup cost associated with verifying the publisher signature unless your application executes on a computer with custom CAS policy, or is intending to satisfy demands for <xref:System.Security.Permissions.PublisherIdentityPermission> in a partial-trust environment. (Demands for identity permissions always succeed in a full-trust environment.)
+The common language runtime (CLR) tries to verify the Authenticode signature at load time to create <xref:System.Security.Policy.Publisher> evidence for the assembly. However, by default, most applications do not need <xref:System.Security.Policy.Publisher> evidence. Standard CAS policy does not rely on the <xref:System.Security.Policy.PublisherMembershipCondition>. You should avoid the unnecessary startup cost associated with verifying the publisher signature unless your application executes on a computer with custom CAS policy, or is intending to satisfy demands for <xref:System.Security.Permissions.PublisherIdentityPermission> in a partial-trust environment. (Demands for identity permissions always succeed in a full-trust environment.)
 
 > [!NOTE]
 > We recommend that services use the `<generatePublisherEvidence>` element to improve startup performance.  Using this element can also help avoid delays that can cause a time-out and the cancellation of the service startup.

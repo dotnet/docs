@@ -11,12 +11,12 @@ ms.assetid: d266cbd8-bf91-41d1-baf0-afbc481a741f
 
 [!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
-By default, applications use the set of .NET Framework assemblies that shipped with the runtime version used to compile the application. You can use the **appliesTo** attribute on the [\<assemblyBinding>](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an application configuration file to redirect assembly binding references to a specific version of the .NET Framework assemblies. This optional attribute uses a .NET Framework version number to indicate which version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework.
+By default, applications use the set of .NET Framework assemblies that shipped with the runtime version used to compile the application. You can use the `appliesTo` attribute on the [\<assemblyBinding>](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an application configuration file to redirect assembly binding references to a specific version of the .NET Framework assemblies. This optional attribute uses a .NET Framework version number to indicate which version it applies to. If no `appliesTo` attribute is specified, the `<assemblyBinding>` element applies to all versions of the .NET Framework.
 
- The **appliesTo** attribute was introduced in the .NET Framework version 1.1; it is ignored by .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using .NET Framework version 1.0, even if an **appliesTo** attribute is specified.
+ The `appliesTo` attribute was introduced in the .NET Framework version 1.1; it is ignored by .NET Framework version 1.0. This means that all `<assemblyBinding>` elements are applied when using .NET Framework version 1.0, even if an `appliesTo` attribute is specified.
 
 > [!NOTE]
-> Use the **appliesTo** attribute to limit assembly binding redirection to a specific version of the runtime.
+> Use the `appliesTo` attribute to limit assembly binding redirection to a specific version of the runtime.
 
  For example, to redirect assembly binding for a .NET Framework version 1.0 assembly, you would include the following XML code in your application configuration file.
 
@@ -30,7 +30,7 @@ By default, applications use the set of .NET Framework assemblies that shipped w
 </runtime>
 ```
 
- The **\<assemblyBinding>** elements are order-sensitive. You should enter assembly binding redirection information for any .NET Framework version 1.0 assemblies first, followed by assembly binding redirection information for any .NET Framework version 1.1 assemblies. Finally, enter assembly binding redirection information for any .NET Framework assembly redirection that does not use the **appliesTo** attribute and therefore applies to all versions of the .NET Framework. In case of a conflict in redirection, the first matching redirection statement in the configuration file is used.
+ The `<assemblyBinding>` elements are order-sensitive. You should enter assembly binding redirection information for any .NET Framework version 1.0 assemblies first, followed by assembly binding redirection information for any .NET Framework version 1.1 assemblies. Finally, enter assembly binding redirection information for any .NET Framework assembly redirection that does not use the `appliesTo` attribute and therefore applies to all versions of the .NET Framework. In case of a conflict in redirection, the first matching redirection statement in the configuration file is used.
 
  For example, to redirect one reference to a .NET Framework version 1.0 assembly and another reference to a .NET Framework version 1.1 assembly, you would use the pattern shown in the following pseudocode.
 

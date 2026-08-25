@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
 ---
 
-# \<performanceCounters> Element
+# `<performanceCounters>` Element
 
 Specifies the size of the global memory shared by performance counters.
 
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;**\<performanceCounters>**  
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<system.diagnostics>`](system-diagnostics-element.md)
+&nbsp;&nbsp;&nbsp;&nbsp;`<performanceCounters>`
 
 ## Syntax
 
@@ -58,5 +58,5 @@ For the size of separate shared memory, the DWORD FileMappingSize value in the r
 
 - <xref:System.Diagnostics.PerformanceCounter>
 - <xref:System.Diagnostics.PerformanceCounterCategory>
-- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A>
+- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime*>
 - <xref:System.Diagnostics.PerformanceCounterInstanceLifetime>

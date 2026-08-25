@@ -40,7 +40,7 @@ Because the primary function of type embedding is to support COM interop assembl
 - Only attributes specific to COM interop are embedded. Other attributes are ignored.
 - If a type uses generic parameters, and the type of the generic parameter is an embedded type, that type cannot be used across an assembly boundary. Examples of crossing an assembly boundary include calling a method from another assembly or deriving a type from a type defined in another assembly.
 - Constants are not embedded.
-- The <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> class does not support an embedded type as a key. You can implement your own dictionary type to support an embedded type as a key.
+- The <xref:System.Collections.Generic.Dictionary`2?displayProperty=nameWithType> class does not support an embedded type as a key. You can implement your own dictionary type to support an embedded type as a key.
 
 ## Create an interface
 

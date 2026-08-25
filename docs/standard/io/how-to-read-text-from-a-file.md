@@ -3,10 +3,10 @@ title: "Read text from a file"
 description: In this article, see examples of how to read text synchronously or asynchronously from a text file, using the StreamReader class in .NET for desktop apps.
 ms.date: 05/09/2024
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "streams, reading text from files"
   - "reading text files"
   - "reading data, text files"
@@ -56,5 +56,5 @@ The following example shows an asynchronous read operation within a console app.
 - [Asynchronous file I/O](asynchronous-file-i-o.md).
 - [How to: Write text to a file](how-to-write-text-to-a-file.md).
 - <xref:System.IO.StreamReader>
-- <xref:System.IO.File.OpenText%2A?displayProperty=nameWithType>
-- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>
+- <xref:System.IO.File.OpenText*?displayProperty=nameWithType>
+- <xref:System.IO.StreamReader.ReadLine*?displayProperty=nameWithType>

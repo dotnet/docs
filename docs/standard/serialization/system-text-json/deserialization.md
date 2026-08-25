@@ -12,14 +12,13 @@ helpviewer_keywords:
   - "deserialization"
 ms.topic: concept-article
 ms.custom: copilot-scenario-highlight
-#customer intent: As a developer, I want to learn how to use System.Text.Json to deserialize JSON data.
 ---
 
 # How to read JSON as .NET objects (deserialize)
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
-A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
+A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
 
 > [!TIP]
 > You can use AI assistance to [deserialize a JSON string](#use-ai-to-deserialize-json).
@@ -28,17 +27,17 @@ Any JSON properties that aren't represented in your class are ignored [by defaul
 
 ## Examples
 
-The following example shows how to deserialize a JSON string:
+The following example shows how to deserialize a JSON string that contains collections and nested objects:
 
 :::code language="csharp" source="snippets/how-to/csharp/DeserializeExtra.cs" highlight="54-55":::
-:::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="Deserialize":::
+:::code language="vb" source="snippets/how-to/vb/DeserializeExtra.vb":::
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to/csharp/DeserializeFromFile.cs" highlight="16-18":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToFile.vb" id="Deserialize":::
 
-To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
+To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync*> method:
 
 :::code language="csharp" source="snippets/how-to/csharp/DeserializeFromFileAsync.cs" highlight="17-20":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
@@ -69,7 +68,7 @@ If you have JSON that you want to deserialize, and you don't have the class to d
 
   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM, see [Deserialize subsections of a JSON payload](use-dom.md#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 
-* Use Visual Studio 2022 to automatically generate the class you need:
+* Use Visual Studio 2022 or later to automatically generate the class you need:
 
   * Copy the JSON that you need to deserialize.
   * Create a class file and delete the template code.
@@ -79,7 +78,7 @@ If you have JSON that you want to deserialize, and you don't have the class to d
 
 ## Deserialize from UTF-8
 
-To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `ReadOnlySpan<byte>` or a `Utf8JsonReader`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
+To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> overload that takes a `ReadOnlySpan<byte>` or a `Utf8JsonReader`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripToUtf8.cs" id="Deserialize1":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToUtf8.vb" id="Deserialize1":::
@@ -89,13 +88,13 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 ## Use AI to deserialize JSON
 
-You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to deserialize from JSON. You can customize the prompt to use a JSON string with property names and values that suit your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to deserialize from JSON. For example, you can customize the prompt to demonstrate deserialization when the target class defines a property that's missing from the JSON input.
 
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate code to use System.Text.Json to deserialize a JSON string {"FirstName":"John","LastName":"Doe","Age":30} to an equivalent .NET object.
-Map property names & values.
+Generate C# code to use System.Text.Json to deserialize a JSON string {"FirstName":"John","LastName":"Doe"} to an equivalent .NET object, where the class defines an Age property.
+Show what happens when the JSON is missing a property defined in the class.
 Provide example output.
 ```
 
@@ -105,5 +104,6 @@ For more information about GitHub Copilot, see GitHub's [FAQs](https://github.co
 
 ## See also
 
+- [How to deserialize to an interface](https://gist.github.com/tonysneed/5e7988516b081d454cde95b5d729e1af)
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)

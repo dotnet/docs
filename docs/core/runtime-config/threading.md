@@ -7,18 +7,16 @@ ms.date: 11/04/2021
 
 This article details the settings you can use to configure threading in .NET.
 
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
 ## Use all CPU groups on Windows
 
 - On machines that have multiple CPU groups, this setting configures whether components such as the thread pool use all CPU groups or only the primary CPU group of the process. The setting also affects what <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> returns.
 - When this setting is enabled, all CPU groups are used and threads are also [automatically distributed across CPU groups](#assign-threads-to-cpu-groups-on-windows) by default.
 - This setting is enabled by default on Windows 11 and later versions, and disabled by default on Windows 10 and earlier versions. For this setting to take effect when enabled, the GC must also be configured to use all CPU groups; for more information, see [GC CPU groups](./garbage-collector.md#cpu-groups).
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
+|                          | Setting name                    | Values                           |
+|--------------------------|---------------------------------|----------------------------------|
+| **runtimeconfig.json**   | N/A                             | N/A                              |
+| **Environment variable** | `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Assign threads to CPU groups on Windows
 
@@ -26,15 +24,26 @@ This article details the settings you can use to configure threading in .NET.
 - When this setting is enabled, new threads are assigned to a CPU group in a way that tries to fully populate a CPU group that is already in use before utilizing a new CPU group.
 - This setting is enabled by default.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_Thread_AssignCpuGroups` or `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
+|                          | Setting name                    | Values                           |
+|--------------------------|---------------------------------|----------------------------------|
+| **runtimeconfig.json**   | N/A                             | N/A                              |
+| **Environment variable** | `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
+
+## Set the stack size for threads created by the .NET runtime
+
+- The default stack size is dictated by .NET and OS policies. The default stack size for .NET apps is 1.5 MB on Windows and macOS, and 8 MB on Linux. The default stack size when the .NET runtime is hosted (for example, COM components) is dictated by the hosting process.
+- This setting allows overriding the default for threads created by the .NET runtime. For example, threads created by the <xref:System.Threading.Thread.%23ctor*> API.
+- The specified size should be between 64 KB and 2 GB.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A decimal integer that specifies the stack size, in bytes, for threads created by the .NET runtime | .NET 10 |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer that specifies the stack size, in bytes, for threads created by the .NET runtime | .NET 10 |
 
 ## Minimum threads
 
 - Specifies the minimum number of threads for the worker thread pool.
-- Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.
+- Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads*?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |
@@ -81,7 +90,7 @@ Project file:
 ## Maximum threads
 
 - Specifies the maximum number of threads for the worker thread pool.
-- Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.
+- Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads*?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |
@@ -131,7 +140,7 @@ Project file:
 - If you omit this setting or the platform is not Windows, the .NET thread pool is used instead.
 - Only applications published with Native AOT on Windows use the Windows thread pool by default, for which you can opt to use the .NET thread pool instead by disabling the config setting.
 - The Windows thread pool may perform better in some cases, such as in cases where the minimum number of threads is configured to a high value, or when the Windows thread pool is already being heavily used by the app. There may also be cases where the .NET thread pool performs better, such as in heavy I/O handling on larger machines. It's advisable to check performance metrics when changing this config setting.
-- Some APIs are not supported when using the Windows thread pool, such as <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType>, <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType>, and <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType>. Thread pool config settings for minimum and maximum threads are also not effective. An alternative to <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> is the <xref:System.Threading.ThreadPoolBoundHandle> class.
+- Some APIs are not supported when using the Windows thread pool, such as <xref:System.Threading.ThreadPool.SetMinThreads*?displayProperty=nameWithType>, <xref:System.Threading.ThreadPool.SetMaxThreads*?displayProperty=nameWithType>, and <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType>. Thread pool config settings for minimum and maximum threads are also not effective. An alternative to <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> is the <xref:System.Threading.ThreadPoolBoundHandle> class.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

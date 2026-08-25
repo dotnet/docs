@@ -1,15 +1,13 @@
 ---
 ms.date: 2/21/2025
-ms.topic: quickstart
-author: alexwolfmsft
-ms.author: alexwolf
+ms.topic: include
 ---
 
 ## Prerequisites
 
 * [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
 * One of the following IDEs (optional):
-  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio](https://visualstudio.microsoft.com/)
   * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
@@ -85,7 +83,7 @@ The AI template uses Microsoft Entra ID for seamless, keyless authentication. It
 
 1. Assign a role to your developer account to access the Azure OpenAI resource:
 
-    * In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
+    * In the Azure portal, navigate to the overview page of your Azure OpenAI resource.
     * Select **Access control (IAM)** from the left navigation.
     * [Add a role assignment](../../../azure/sdk/authentication/local-development-dev-accounts.md#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
 

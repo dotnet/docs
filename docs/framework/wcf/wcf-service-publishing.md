@@ -1,6 +1,6 @@
 ---
 title: "WCF Service Publishing"
-description: WCF Service Publishing helps you deploy your application to a production environment for testing purposes. 
+description: WCF Service Publishing helps you deploy your application to a production environment for testing purposes.
 ms.date: "03/30/2017"
 ms.assetid: c806b253-cd47-4b96-b831-e73cbf08808f
 ---
@@ -42,7 +42,7 @@ Perform the following steps to deploy a service implementation:
 
 You can use **Publish** to specify if you want to copy the assembly, configuration, and .svc file for all services defined in the project to the target location, and overwrite existing files at the destination.
 
-If you choose to deploy your application to local IIS, you may encounter errors related to IIS setup. Please ensure that IIS is installed properly. You can enter `http://localhost` in your browser's address bar and check whether the IIS default page displays. In some cases, the issues may also be caused by improper registration of ASP.NET or WCF in IIS. You can open the Developer Command Prompt for Visual Studio and run the command `aspnet_regiis.exe -ir` to fix ASP.NET registration issues, or run command `ServiceModelReg.exe –ia` to fix WCF registration issues.
+If you choose to deploy your application to local IIS, you may encounter errors related to IIS setup. Please ensure that IIS is installed properly. You can enter `http://localhost` in your browser's address bar and check whether the IIS default page displays. In some cases, the issues may also be caused by improper registration of ASP.NET or WCF in IIS. You can open the Developer Command Prompt for Visual Studio and run the command `aspnet_regiis.exe -ir` to fix ASP.NET registration issues, or run command `ServiceModelReg.exe -ia` to fix WCF registration issues.
 
 ## Files Generated for Publishing
 

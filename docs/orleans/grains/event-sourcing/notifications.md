@@ -2,7 +2,7 @@
 title: Notifications
 description: Learn the concepts of notifications in .NET Orleans.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Notifications
@@ -39,4 +39,4 @@ protected override void OnTentativeStateChanged()
 }
 ```
 
-`OnTentativeStateChanged` is called whenever the tentative state changes, i.e., if the combined sequence (`ConfirmedEvents` + `UnconfirmedEvents`) changes. In particular, a callback to `OnTentativeStateChanged()` always happens during <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A>.
+`OnTentativeStateChanged` is called whenever the tentative state changes, i.e., if the combined sequence (`ConfirmedEvents` + `UnconfirmedEvents`) changes. In particular, a callback to `OnTentativeStateChanged()` always happens during <xref:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*>.

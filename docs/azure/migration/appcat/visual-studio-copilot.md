@@ -2,10 +2,10 @@
 title: Use GitHub Copilot for Visual Studio with the Azure Migrate application and code assessment for .NET
 description: Learn how to use GitHub Copilot with the Azure Migrate application and code assessment tool for .NET when evaluating apps for Azure migrations.
 ms.topic: concept-article
-ms.date: 10/09/2024
-author: alexwolfmsft
-ms.author: alexwolf
+ms.date: 01/16/2026
 ms.custom: sfi-image-nochange
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 ---
 
 # Use Copilot Conversational Assessment with the Azure Migrate application and code assessment tool
@@ -17,7 +17,7 @@ Azure Migrate application and code assessment for .NET integrates with the GitHu
 
 ## Prerequisites
 
-- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) version 17.10 or later
+- Install [Visual Studio 2022 or later](https://visualstudio.microsoft.com/vs/)
 - [Install GitHub Copilot for Visual Studio extension](visual-studio.md)
 - [Install a version of .NET](https://dotnet.microsoft.com/download) that supports the app you're trying to migrate
 - [Scan your application in Visual Studio](visual-studio.md) to use Copilot conversational analysis. Copilot relies on a completed scan report to provide suggestions.

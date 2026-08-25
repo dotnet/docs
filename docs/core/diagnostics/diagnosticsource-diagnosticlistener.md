@@ -8,7 +8,7 @@ ms.date: 05/12/2022
 **This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.5 and later versions
 
 <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> is a module that allows code to be instrumented for production-time
-logging of rich data payloads for consumption within the process that was instrumented. At run time, consumers can dynamically discover
+logging of rich data payloads for consumption within the process that was instrumented. At runtime, consumers can dynamically discover
 data sources and subscribe to the ones of interest. <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> was designed to allow in-process
 tools to access rich data. When using <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>, the consumer is assumed
 to be within the same process and as a result, non-serializable types (for example, `HttpResponseMessage` or `HttpContext`) can be passed,
@@ -66,7 +66,7 @@ A typical call site will look like:
 :::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet3":::
 
 Every event has a `string` name (for example, `RequestStart`), and exactly one `object` as a payload.
-If you need to send more than one item, you can do so by creating an `object` with properties to represent all its information. C#'s [anonymous type](../../csharp/fundamentals/types/anonymous-types.md)
+If you need to send more than one item, you can do so by creating an `object` with properties to represent all its information. C#'s [anonymous type](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 feature is typically used to create a type to pass 'on the fly', and makes this scheme very
 convenient. At the instrumentation site, you must guard the call to `Write()` with an `IsEnabled()` check on
 the same event name. Without this check, even when the instrumentation is inactive, the rules
@@ -84,7 +84,7 @@ Combining everything you have:
 
 The first step in receiving events is to discover which `DiagnosticListeners` you are
 interested in. `DiagnosticListener` supports a way of discovering `DiagnosticListeners` that are
-active in the system at run time. The API to accomplish this is the <xref:System.Diagnostics.DiagnosticListener.AllListeners> property.
+active in the system at runtime. The API to accomplish this is the <xref:System.Diagnostics.DiagnosticListener.AllListeners> property.
 
 Implement an `Observer<T>` class that inherits from the `IObservable` interface, which is the 'callback' version of the `IEnumerable` interface. You can learn more about it at the [Reactive Extensions](https://github.com/dotnet/reactive) site.
 An `IObserver` has three callbacks, `OnNext`, `OnComplete`,
@@ -231,7 +231,7 @@ method to return `false` and thus be efficiently filtered out.
 ##### Context-based filtering
 
 Some scenarios require advanced filtering based on extended context.
-Producers can call <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
+Producers can call <xref:System.Diagnostics.DiagnosticSource.IsEnabled*?displayProperty=nameWithType> overloads and supply additional event properties as shown in the following code.
 
 ```csharp
 //aRequest and anActivity are the current request and activity about to be logged.

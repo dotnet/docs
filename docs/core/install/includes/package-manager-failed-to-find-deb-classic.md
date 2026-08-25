@@ -28,3 +28,6 @@ sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 sudo apt-get update && \
   sudo apt-get install -y {dotnet-package}
 ```
+
+> [!NOTE]
+> If you're using a derived distribution, such as Linux Mint, the `$ID` and `$VERSION_ID` variables from `/etc/os-release` might not match any directory on the Microsoft packages server, causing a 404 error. To resolve the error, check which Ubuntu or Debian version your distribution is based on and use those values instead. For example, Linux Mint 22 is based on Ubuntu 24.04, so use `ubuntu` for `$ID` and `24.04` for `$VERSION_ID`.

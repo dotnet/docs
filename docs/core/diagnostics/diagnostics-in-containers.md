@@ -51,8 +51,6 @@ The [`PerfCollect`](./trace-perfcollect-lttng.md) script is useful for collectin
 > [!NOTE]
 > When executing the app with .NET 7, you must also set `DOTNET_EnableWriteXorExecute=0` in addition to the preceding environment variables.
 
-  [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
 ### Use `PerfCollect` in a sidecar container
 
 If you want to run `PerfCollect` in one container to profile a .NET process in a different container, the experience is almost the same. The differences are:

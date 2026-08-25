@@ -21,7 +21,7 @@ ms.topic: tutorial
 Reflection emit uses the same API set in full or partial trust, but some features require special permissions in partially trusted code. In addition, reflection emit has a feature, anonymously hosted dynamic methods, that is designed to be used with partial trust and by security-transparent assemblies.
 
 > [!NOTE]
-> Before .NET Framework 3.5, emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. This permission is included by default in the `FullTrust` and `Intranet` named permission sets, but not in the `Internet` permission set. Therefore, a library could be used from partial trust only if it had the <xref:System.Security.SecurityCriticalAttribute> attribute and also executed an <xref:System.Security.PermissionSet.Assert%2A> method for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The .NET Framework 3.5 allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This enables libraries that emit code to be security-transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, so that writing a secure library does not require such a thorough security review.
+> Before .NET Framework 3.5, emitting code required <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. This permission is included by default in the `FullTrust` and `Intranet` named permission sets, but not in the `Internet` permission set. Therefore, a library could be used from partial trust only if it had the <xref:System.Security.SecurityCriticalAttribute> attribute and also executed an <xref:System.Security.PermissionSet.Assert*> method for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The .NET Framework 3.5 allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This enables libraries that emit code to be security-transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, so that writing a secure library does not require such a thorough security review.
 
 This walkthrough illustrates the following tasks:
 
@@ -87,12 +87,12 @@ For example, a host might grant Internet applications Internet permissions plus 
 
 #### To create an application domain with partial trust plus RMA
 
-1. Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission%2A?displayProperty=nameWithType> method to add the permission to the grant set.
+1. Create a new <xref:System.Security.Permissions.ReflectionPermission> object with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> (RMA) flag, and use the <xref:System.Security.PermissionSet.SetPermission*?displayProperty=nameWithType> method to add the permission to the grant set.
 
     [!code-csharp[HowToEmitCodeInPartialTrust#7](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#7)]
     [!code-vb[HowToEmitCodeInPartialTrust#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#7)]
 
-    The <xref:System.Security.PermissionSet.AddPermission%2A> method adds the permission to the grant set if it is not already included. If the permission is already included in the grant set, the specified flags are added to the existing permission.
+    The <xref:System.Security.PermissionSet.AddPermission*> method adds the permission to the grant set if it is not already included. If the permission is already included in the grant set, the specified flags are added to the existing permission.
 
     > [!NOTE]
     > RMA is a feature of anonymously hosted dynamic methods. When ordinary dynamic methods skip JIT visibility checks, the emitted code requires full trust.
@@ -132,7 +132,7 @@ The following procedure explains how to define a class by using methods that can
     [!code-csharp[HowToEmitCodeInPartialTrust#12](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#12)]
     [!code-vb[HowToEmitCodeInPartialTrust#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#12)]
 
-    The <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method creates the object in the target application domain and returns a proxy that can be used to call the properties and methods of the object.
+    The <xref:System.AppDomain.CreateInstanceAndUnwrap*> method creates the object in the target application domain and returns a proxy that can be used to call the properties and methods of the object.
 
     > [!NOTE]
     > If you use this code in Visual Studio, you must change the name of the class to include the namespace. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".
@@ -164,7 +164,7 @@ To prevent elevation of privilege, stack information for the emitting assembly i
 
   If an anonymously hosted dynamic method uses only public types and methods, it does not require restricted member access and does not have to skip JIT visibility checks.
 
-  No special permissions are required to emit a dynamic method, but the emitted code requires the permissions that are demanded by the types and methods it uses. For example, if the emitted code calls a method that accesses a file, it requires <xref:System.Security.Permissions.FileIOPermission>. If the trust level does not include that permission, a security exception is thrown when the emitted code is executed. The code shown here emits a dynamic method that uses only the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method. Therefore, the code can be executed from partially trusted locations.
+  No special permissions are required to emit a dynamic method, but the emitted code requires the permissions that are demanded by the types and methods it uses. For example, if the emitted code calls a method that accesses a file, it requires <xref:System.Security.Permissions.FileIOPermission>. If the trust level does not include that permission, a security exception is thrown when the emitted code is executed. The code shown here emits a dynamic method that uses only the <xref:System.Console.WriteLine*?displayProperty=nameWithType> method. Therefore, the code can be executed from partially trusted locations.
 
 - Alternatively, create an anonymously hosted dynamic method with restricted ability to skip JIT visibility checks, by using the <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29> constructor and specifying `true` for the `restrictedSkipVisibility` parameter.
 
@@ -214,7 +214,7 @@ This comparison shows how <xref:System.Security.Permissions.ReflectionPermission
 
 ## Compiling the Code
 
-- If you build this code example in Visual Studio, you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".
+- If you build this code example in Visual Studio, you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap*> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".
 
 ## See also
 

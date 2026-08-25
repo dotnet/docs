@@ -7,14 +7,14 @@ ms.date: 06/07/2023
 
 When running an application with [runtime identifier (RID)](../../../rid-catalog.md) specific assets, the host determines what assets are relevant for the platform on which it's running. This applies to both the application itself and the resolution logic used by <xref:System.Runtime.Loader.AssemblyDependencyResolver>.
 
-Previously, the host tried to compute the RID at run time and then read the RID graph to determine which RID-specific assets matched or were compatible with the computed RID. Now, the default behavior doesn't compute the RID or use the RID graph. Instead, the host relies on a known list of RIDs based on how the runtime itself was built.
+Previously, the host tried to compute the RID at runtime and then read the RID graph to determine which RID-specific assets matched or were compatible with the computed RID. Now, the default behavior doesn't compute the RID or use the RID graph. Instead, the host relies on a known list of RIDs based on how the runtime itself was built.
 
 ## Previous behavior
 
 Previously, the process for selecting RID-specific assets was:
 
 1. Read the RID graph from the *.deps.json* file of the root framework (Microsoft.NetCore.App).
-1. Compute the current RID at run time and try to find an entry for it in the RID graph. If it doesn't exist, check for a fallback RID (built into the host at compile time).
+1. Compute the current RID at runtime and try to find an entry for it in the RID graph. If it doesn't exist, check for a fallback RID (built into the host at compile time).
 1. Starting from the entry found in the RID graph, look for assets matching that RID.
 1. Continue down the list of RIDs in the RID graph entry until an asset match is found or the list ends.
 

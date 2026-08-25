@@ -1,6 +1,4 @@
 ---
-author: IEvangelist
-ms.author: dapine
 ms.date: 06/02/2021
 ms.topic: include
 ---

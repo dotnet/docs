@@ -15,7 +15,7 @@ Binding a text box designer control to an activity argument is fairly straightfo
 
 2. Create a new class called ComboBoxItemConverter. Add a reference to System.Windows.Data, and have the class derive from <xref:System.Windows.Data.IValueConverter>. Have Visual Studio implement the interface to generate stubs for `Convert` and `ConvertBack`.
 
-3. Add the following code to the `Convert` method. This code converts the activity's <xref:System.Activities.InArgument%601> of type <xref:System.String> to the value to be placed in the designer.
+3. Add the following code to the `Convert` method. This code converts the activity's <xref:System.Activities.InArgument`1> of type <xref:System.String> to the value to be placed in the designer.
 
     ```csharp
     ModelItem modelItem = value as ModelItem;
@@ -42,7 +42,7 @@ Binding a text box designer control to an activity argument is fairly straightfo
     return null;
     ```
 
-     The expression in the above code snippet can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue%601> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>.
+     The expression in the above code snippet can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue`1> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1>.
 
     ```csharp
     ModelItem modelItem = value as ModelItem;
@@ -69,7 +69,7 @@ Binding a text box designer control to an activity argument is fairly straightfo
     return null;
     ```
 
-4. Add the following code to the `ConvertBack` method. This code converts the incoming combo box item back to an <xref:System.Activities.InArgument%601>.
+4. Add the following code to the `ConvertBack` method. This code converts the incoming combo box item back to an <xref:System.Activities.InArgument`1>.
 
     ```csharp
     // Convert combo box value to InArgument<string>
@@ -79,7 +79,7 @@ Binding a text box designer control to an activity argument is fairly straightfo
                 return inArgument;
     ```
 
-     The expression in the above code snippet can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue%601> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>.
+     The expression in the above code snippet can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue`1> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue`1>.
 
     ```csharp
     // Convert combo box value to InArgument<string>

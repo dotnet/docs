@@ -8,21 +8,21 @@ ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 
 [!INCLUDE [not-current](includes/not-current.md)]
 
-Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>, so in this section we only consider types implementing one or both of those interfaces to be collections.
+Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable`1>, so in this section we only consider types implementing one or both of those interfaces to be collections.
 
  ❌ DO NOT use weakly typed collections in public APIs.
 
  The type of all return values and parameters representing collection items should be the exact item type, not any of its base types (this applies only to public members of the collection).
 
- ❌ DO NOT use <xref:System.Collections.ArrayList> or <xref:System.Collections.Generic.List%601> in public APIs.
+ ❌ DO NOT use <xref:System.Collections.ArrayList> or <xref:System.Collections.Generic.List`1> in public APIs.
 
- These types are data structures designed to be used in internal implementation, not in public APIs. `List<T>` is optimized for performance and power at the cost of cleanness of the APIs and flexibility. For example, if you return `List<T>`, you will not ever be able to receive notifications when client code modifies the collection. Also, `List<T>` exposes many members, such as <xref:System.Collections.Generic.List%601.BinarySearch%2A>, that are not useful or applicable in many scenarios. The following two sections describe types (abstractions) designed specifically for use in public APIs.
+ These types are data structures designed to be used in internal implementation, not in public APIs. `List<T>` is optimized for performance and power at the cost of cleanness of the APIs and flexibility. For example, if you return `List<T>`, you will not ever be able to receive notifications when client code modifies the collection. Also, `List<T>` exposes many members, such as <xref:System.Collections.Generic.List`1.BinarySearch*>, that are not useful or applicable in many scenarios. The following two sections describe types (abstractions) designed specifically for use in public APIs.
 
  ❌ DO NOT use `Hashtable` or `Dictionary<TKey,TValue>` in public APIs.
 
  These types are data structures designed to be used in internal implementation. Public APIs should use <xref:System.Collections.IDictionary>, `IDictionary <TKey, TValue>`, or a custom type implementing one or both of the interfaces.
 
- ❌ DO NOT use <xref:System.Collections.Generic.IEnumerator%601>, <xref:System.Collections.IEnumerator>, or any other type that implements either of these interfaces, except as the return type of a `GetEnumerator` method.
+ ❌ DO NOT use <xref:System.Collections.Generic.IEnumerator`1>, <xref:System.Collections.IEnumerator>, or any other type that implements either of these interfaces, except as the return type of a `GetEnumerator` method.
 
  Types returning enumerators from methods other than `GetEnumerator` cannot be used with the `foreach` statement.
 
@@ -32,7 +32,7 @@ Any type designed specifically to manipulate a group of objects having some comm
 
  ✔️ DO use the least-specialized type possible as a parameter type. Most members taking collections as parameters use the `IEnumerable<T>` interface.
 
- ❌ AVOID using <xref:System.Collections.Generic.ICollection%601> or <xref:System.Collections.ICollection> as a parameter just to access the `Count` property.
+ ❌ AVOID using <xref:System.Collections.Generic.ICollection`1> or <xref:System.Collections.ICollection> as a parameter just to access the `Count` property.
 
  Instead, consider using `IEnumerable<T>` or `IEnumerable` and dynamically checking whether the object implements `ICollection<T>` or `ICollection`.
 
@@ -44,9 +44,9 @@ Any type designed specifically to manipulate a group of objects having some comm
 
  ✔️ DO use `Collection<T>` or a subclass of `Collection<T>` for properties or return values representing read/write collections.
 
- If `Collection<T>` does not meet some requirement (e.g., the collection must not implement <xref:System.Collections.IList>), use a custom collection by implementing `IEnumerable<T>`, `ICollection<T>`, or <xref:System.Collections.Generic.IList%601>.
+ If `Collection<T>` does not meet some requirement (e.g., the collection must not implement <xref:System.Collections.IList>), use a custom collection by implementing `IEnumerable<T>`, `ICollection<T>`, or <xref:System.Collections.Generic.IList`1>.
 
- ✔️ DO use <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>, a subclass of `ReadOnlyCollection<T>`, or in rare cases `IEnumerable<T>` for properties or return values representing read-only collections.
+ ✔️ DO use <xref:System.Collections.ObjectModel.ReadOnlyCollection`1>, a subclass of `ReadOnlyCollection<T>`, or in rare cases `IEnumerable<T>` for properties or return values representing read-only collections.
 
  In general, prefer `ReadOnlyCollection<T>`. If it does not meet some requirement (e.g., the collection must not implement `IList`), use a custom collection by implementing `IEnumerable<T>`, `ICollection<T>`, or `IList<T>`. If you do implement a custom read-only collection, implement `ICollection<T>.IsReadOnly` to return `true`.
 
@@ -110,7 +110,7 @@ Any type designed specifically to manipulate a group of objects having some comm
 
 ### Naming Custom Collections
 
- Collections (types that implement `IEnumerable`) are created mainly for two reasons: (1) to create a new data structure with structure-specific operations and often different performance characteristics than existing data structures (e.g.,  <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.LinkedList%601>, <xref:System.Collections.Generic.Stack%601>), and (2) to create a specialized collection for holding a specific set of items (e.g.,  <xref:System.Collections.Specialized.StringCollection>). Data structures are most often used in the internal implementation of applications and libraries. Specialized collections are mainly to be exposed in APIs (as property and parameter types).
+ Collections (types that implement `IEnumerable`) are created mainly for two reasons: (1) to create a new data structure with structure-specific operations and often different performance characteristics than existing data structures (e.g.,  <xref:System.Collections.Generic.List`1>, <xref:System.Collections.Generic.LinkedList`1>, <xref:System.Collections.Generic.Stack`1>), and (2) to create a specialized collection for holding a specific set of items (e.g.,  <xref:System.Collections.Specialized.StringCollection>). Data structures are most often used in the internal implementation of applications and libraries. Specialized collections are mainly to be exposed in APIs (as property and parameter types).
 
  ✔️ DO use the "Dictionary" suffix in names of abstractions implementing `IDictionary` or `IDictionary<TKey,TValue>`.
 

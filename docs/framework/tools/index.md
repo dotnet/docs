@@ -13,7 +13,7 @@ ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
 
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.
 
-Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
+Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) page.
 
 You can run all the tools from the command line, with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
 
@@ -31,7 +31,7 @@ Generates a file that has an assembly manifest from modules or resource files.
 Converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.
 
 [Caspol.exe (Code Access Security Policy Tool)](caspol-exe-code-access-security-policy-tool.md)\
-Enables you to view and configure security policy for the machine policy level, the user policy level, and the enterprise policy level. In .NET Framework 4 and later, this tool does not affect code access security (CAS) policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md)\ is set to `true`.
+Enables you to view and configure security policy for the machine policy level, the user policy level, and the enterprise policy level. In .NET Framework 4 and later, this tool does not affect code access security (CAS) policy unless the [`<legacyCasPolicy>` element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md)\ is set to `true`.
 
 [Cert2spc.exe (Software Publisher Certificate Test Tool)](cert2spc-exe-software-publisher-certificate-test-tool.md)\
 Creates a Software Publisher's Certificate (SPC) from one or more X.509 certificates. This tool is for testing purposes only.
@@ -46,7 +46,7 @@ Reports all the installed versions of the common language runtime (CLR) on the c
 Lets you configure the CorFlags section of the header of a portable executable (PE) image.
 
 [Fuslogvw.exe (Assembly Binding Log Viewer)](fuslogvw-exe-assembly-binding-log-viewer.md)\
-Displays information about assembly binds to help you diagnose why the .NET Framework cannot locate an assembly at run time.
+Displays information about assembly binds to help you diagnose why the .NET Framework cannot locate an assembly at runtime.
 
 [Gacutil.exe (Global Assembly Cache Tool)](gacutil-exe-gac-tool.md)\
 Lets you view and manipulate the contents of the global assembly cache and download cache.

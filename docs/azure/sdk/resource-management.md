@@ -1,7 +1,8 @@
 ---
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
-ms.date: 04/25/2025
+ms.date: 08/04/2026
+ai-usage: ai-assisted
 ---
 
 # Resource management using the Azure SDK for .NET
@@ -24,7 +25,7 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 
 ### Prerequisites
 
-- An [Azure subscription](https://azure.microsoft.com/free/dotnet/).
+- An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - A [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=false) implementation, such as an [Azure Identity library credential type](/dotnet/api/overview/azure/Identity-readme#credential-classes).
 
 ### Install the package
@@ -98,7 +99,7 @@ ResourceGroupResource resourceGroup =
 | Index | `resourceGroup.GetServiceBusNamespace(string servicebusNamespaceName)` |
 | Add/Update | `resourceGroup.GetServiceBusNamespaces().CreateOrUpdate(Azure.WaitUntil waitUntil, string name, ServiceBusNamespaceData data)` |
 | Contains | `resourceGroup.GetServiceBusNamespaces().Exists(string servicebusNamespaceName)` |
-| Delete |  `client.GetServiceBusQueueResource(ResourceIdentifior resourceIdentifior).Delete()` or `resourceGroup.GetServiceBusNamespace(string servicebusNamespaceName).Delete()`|
+| Delete |  `client.GetServiceBusQueueResource(ResourceIdentifier resourceIdentifier).Delete()` or `resourceGroup.GetServiceBusNamespace(string servicebusNamespaceName).Delete()`|
 
 Remember, all the Azure resources, including the resource group itself, can be managed by their corresponding management SDK using code similar to the above example. To find the correct Azure management SDK package, look for packages named with the following pattern `Azure.ResourceManager.{ResourceProviderName}`.
 
@@ -164,7 +165,7 @@ ResourceGroupResource resourceGroup =
 
 // Next we get the collection for the virtual machines
 // vmCollection is a {ResourceName}Collection object from above
-VirtualMachineCollection virtualMachineCollection = await resourceGroup.GetVirtualMachines();
+VirtualMachineCollection virtualMachineCollection = resourceGroup.GetVirtualMachines();
 
 // Next we loop over all vms in the collection
 // Each vm is a {ResourceName}Resource object from above
@@ -297,7 +298,7 @@ ArmClient client = new ArmClient(new DefaultAzureCredential());
 SubscriptionResource subscription = await client.GetDefaultSubscriptionAsync();
 string resourceGroupName = "myRgName";
 
-bool exists = await subscription.GetResourceGroups().ExistsAsync(resourceGroupName).Value;
+bool exists = (await subscription.GetResourceGroups().ExistsAsync(resourceGroupName)).Value;
 
 if (exists)
 {
@@ -309,7 +310,7 @@ if (exists)
 }
 else
 {
-    Console.WriteLine($"Resource Group {rgName} does not exist.");
+    Console.WriteLine($"Resource Group {resourceGroupName} does not exist.");
 }
 ```
 
@@ -328,7 +329,7 @@ ResourceGroupCollection resourceGroupCollection = subscription.GetResourceGroups
 string resourceGroupName = "myRgName";
 AzureLocation location = AzureLocation.WestUS2;
 ResourceGroupData resourceGroupData = new ResourceGroupData(location);
-ResourceGroupResource resourceGroup = (await resourceGroupCollection.CreateOrUpdateAsync(resourceGroupName, resourceGroupData)).Value;
+ResourceGroupResource resourceGroup = (await resourceGroupCollection.CreateOrUpdateAsync(WaitUntil.Completed, resourceGroupName, resourceGroupData)).Value;
 ```
 
 ### List all resource groups

@@ -16,7 +16,9 @@ F# 6 is available in all .NET Core distributions and Visual Studio tooling. For 
 
 ## task {…}
 
-F# 6 includes native support for authoring .NET tasks in F# code. For example, consider the following F# code to create a .NET-compatible task:
+F# 6 includes native support for authoring .NET tasks in F# code using [task expressions](../language-reference/task-expressions.md). Task expressions are similar to async expressions but allow you to author .NET tasks directly.
+
+For example, consider the following F# code to create a .NET-compatible task:
 
 ```fsharp
 let readFilesTask (path1, path2) =

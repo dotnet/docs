@@ -2,9 +2,9 @@
 description: "Learn more about: Nullable Value Types (Visual Basic)"
 title: "Nullable Value Types"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.Nullable"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "nullable types [Visual Basic]"
   - "? [Visual Basic]"
   - "types [Visual Basic], nullable"
@@ -16,7 +16,7 @@ ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
 
 Sometimes you work with a value type that does not have a defined value in certain circumstances. For example, a field in a database might have to distinguish between having an assigned value that is meaningful and not having an assigned value. Value types can be extended to take either their normal values or a null value. Such an extension is called a *nullable type*.
 
-Each nullable value type is constructed from the generic <xref:System.Nullable%601> structure. Consider a database that tracks work-related activities. The following example constructs a nullable `Boolean` type and declares a variable of that type. You can write the declaration in three ways:
+Each nullable value type is constructed from the generic <xref:System.Nullable`1> structure. Consider a database that tracks work-related activities. The following example constructs a nullable `Boolean` type and declares a variable of that type. You can write the declaration in three ways:
 
 [!code-vb[VbVbalrNullableValue#1](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrNullableValue/VB/Class1.vb#1)]
 
@@ -28,11 +28,11 @@ You cannot construct a nullable type on a reference type such as an array, a `St
 
 ## Using a Nullable Type Variable
 
-The most important members of a nullable value type are its <xref:System.Nullable%601.HasValue%2A> and <xref:System.Nullable%601.Value%2A> properties. For a variable of a nullable value type, <xref:System.Nullable%601.HasValue%2A> tells you whether the variable contains a defined value. If <xref:System.Nullable%601.HasValue%2A> is `True`, you can read the value from <xref:System.Nullable%601.Value%2A>. Note that both <xref:System.Nullable%601.HasValue%2A> and <xref:System.Nullable%601.Value%2A> are `ReadOnly` properties.
+The most important members of a nullable value type are its <xref:System.Nullable`1.HasValue*> and <xref:System.Nullable`1.Value> properties. For a variable of a nullable value type, <xref:System.Nullable`1.HasValue*> tells you whether the variable contains a defined value. If <xref:System.Nullable`1.HasValue*> is `True`, you can read the value from <xref:System.Nullable`1.Value*>. Note that both <xref:System.Nullable`1.HasValue*> and <xref:System.Nullable`1.Value*> are `ReadOnly` properties.
 
 ### Default Values
 
-When you declare a variable with a nullable value type, its <xref:System.Nullable%601.HasValue%2A> property has a default value of `False`. This means that by default the variable has no defined value, instead of the default value of its underlying value type. In the following example, the variable `numberOfChildren` initially has no defined value, even though the default value of the `Integer` type is 0.
+When you declare a variable with a nullable value type, its <xref:System.Nullable`1.HasValue> property has a default value of `False`. This means that by default the variable has no defined value, instead of the default value of its underlying value type. In the following example, the variable `numberOfChildren` initially has no defined value, even though the default value of the `Integer` type is 0.
 
 [!code-vb[VbVbalrNullableValue#2](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrNullableValue/VB/Class1.vb#2)]
 
@@ -49,11 +49,11 @@ If a variable or property of a nullable value type contains a defined value, you
 [!code-vb[VbVbalrNullableValue#4](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrNullableValue/VB/Class1.vb#4)]
 
 > [!NOTE]
-> Although you can assign `Nothing` to a variable of a nullable value type, you cannot test it for `Nothing` by using the equal sign. Comparison that uses the equal sign, `someVar = Nothing`, always evaluates to `Nothing`. You can test the variable's <xref:System.Nullable%601.HasValue%2A> property for `False`, or test by using the `Is` or `IsNot` operator.
+> Although you can assign `Nothing` to a variable of a nullable value type, you cannot test it for `Nothing` by using the equal sign. Comparison that uses the equal sign, `someVar = Nothing`, always evaluates to `Nothing`. You can test the variable's <xref:System.Nullable`1.HasValue> property for `False`, or test by using the `Is` or `IsNot` operator.
 
 ### Retrieving Values
 
-To retrieve the value of a variable of a nullable value type, you should first test its <xref:System.Nullable%601.HasValue%2A> property to confirm that it has a value. If you try to read the value when <xref:System.Nullable%601.HasValue%2A> is `False`, Visual Basic throws an <xref:System.InvalidOperationException> exception. The following example shows the recommended way to read the variable `numberOfChildren` of the previous examples.
+To retrieve the value of a variable of a nullable value type, you should first test its <xref:System.Nullable`1.HasValue> property to confirm that it has a value. If you try to read the value when <xref:System.Nullable`1.HasValue*> is `False`, Visual Basic throws an <xref:System.InvalidOperationException> exception. The following example shows the recommended way to read the variable `numberOfChildren` of the previous examples.
 
 [!code-vb[VbVbalrNullableValue#5](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrNullableValue/VB/Class1.vb#5)]
 
@@ -103,7 +103,7 @@ A database is one of the most important places to use nullable value types. Not 
 ## See also
 
 - <xref:System.InvalidOperationException>
-- <xref:System.Nullable%601.HasValue%2A>
+- <xref:System.Nullable`1.HasValue*>
 - [Data Types](index.md)
 - [Value Types and Reference Types](value-types-and-reference-types.md)
 - [Troubleshooting Data Types](troubleshooting-data-types.md)

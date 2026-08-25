@@ -40,7 +40,7 @@ module InteropWithNative =
 InteropWithNative.HelloWorld()
 ```
 
-Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../framework/interop/index.md). The information in that section is applicable to F#.
+Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../standard/native-interop/index.md). The information in that section is applicable to F#.
 
 ### Defining Parameters in External Functions
 
@@ -65,7 +65,7 @@ Alternately, you might want to manage the marshalling of data types manually and
 extern int GetBinaryTypeW(nativeint lpApplicationName, uint* lpBinaryType);
 ```
 
-You could use<xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A?displayProperty=nameWithType> to convert a .NET string to native format and receive a pointer (`nativeint`) to it that could be supplied to `lpApplicationName`.
+You could use<xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni*?displayProperty=nameWithType> to convert a .NET string to native format and receive a pointer (`nativeint`) to it that could be supplied to `lpApplicationName`.
 
 To obtain a pointer to an integer, use the pointer of `&&` operator or the [`fixed`](../fixed.md) keyword.
 

@@ -49,7 +49,7 @@ using (new OperationContextScope(client.InnerChannel))
 }
 ```
 
-In the service, the implementation of the service operation `Sum` accesses the message body using an <xref:System.Xml.XmlReader> object to iterate through the values to sum. The <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> method is called to access the message body, as shown in the following sample code.
+In the service, the implementation of the service operation `Sum` accesses the message body using an <xref:System.Xml.XmlReader> object to iterate through the values to sum. The <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents*> method is called to access the message body, as shown in the following sample code.
 
 ```csharp
 public int Sum(Message message)

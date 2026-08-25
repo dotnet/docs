@@ -13,7 +13,7 @@ Since the SDK now supports creating [platform-specific tools](https://github.com
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 
@@ -38,6 +38,15 @@ This change enables the creation of optimized, platform-specific .NET Tool packa
 ## Recommended action
 
 If you want to create tools for only a subset of platforms, use `ToolPackageRuntimeIdentifiers`. If you want to disable RID-specific tool packages entirely, you should conditionally include or exclude the `RuntimeIdentifiers` property in your project file.
+
+Alternatively, if you want to maintain the previous behavior (framework-dependent, platform-agnostic .NET Tools) even when a `RuntimeIdentifier` is specified, add the following properties to your project file:
+
+```xml
+<PropertyGroup>
+  <CreateRidSpecificToolPackages>false</CreateRidSpecificToolPackages>
+  <UseAppHost>false</UseAppHost>
+</PropertyGroup>
+```
 
 ## Affected APIs
 

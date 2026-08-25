@@ -44,20 +44,20 @@ DateTime dt = DateTime.Parse("12/25/45", clonedInvariantCulture);
 
 ## Affected APIs
 
-- <xref:System.DateOnly.Parse%2A?displayProperty=fullName>
-- <xref:System.DateOnly.ParseExact%2A?displayProperty=fullName>
-- <xref:System.DateOnly.TryParse%2A?displayProperty=fullName>
-- <xref:System.DateOnly.TryParseExact%2A?displayProperty=fullName>
-- <xref:System.DateTime.Parse%2A?displayProperty=fullName>
-- <xref:System.DateTime.ParseExact%2A?displayProperty=fullName>
-- <xref:System.DateTime.TryParse%2A?displayProperty=fullName>
-- <xref:System.DateTime.TryParseExact%2A?displayProperty=fullName>
-- <xref:System.DateTimeOffset.Parse%2A?displayProperty=fullName>
-- <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=fullName>
-- <xref:System.DateTimeOffset.TryParse%2A?displayProperty=fullName>
-- <xref:System.DateTimeOffset.TryParseExact%2A?displayProperty=fullName>
+- <xref:System.DateOnly.Parse*?displayProperty=fullName>
+- <xref:System.DateOnly.ParseExact*?displayProperty=fullName>
+- <xref:System.DateOnly.TryParse*?displayProperty=fullName>
+- <xref:System.DateOnly.TryParseExact*?displayProperty=fullName>
+- <xref:System.DateTime.Parse*?displayProperty=fullName>
+- <xref:System.DateTime.ParseExact*?displayProperty=fullName>
+- <xref:System.DateTime.TryParse*?displayProperty=fullName>
+- <xref:System.DateTime.TryParseExact*?displayProperty=fullName>
+- <xref:System.DateTimeOffset.Parse*?displayProperty=fullName>
+- <xref:System.DateTimeOffset.ParseExact*?displayProperty=fullName>
+- <xref:System.DateTimeOffset.TryParse*?displayProperty=fullName>
+- <xref:System.DateTimeOffset.TryParseExact*?displayProperty=fullName>
 - <xref:System.Globalization.GregorianCalendar.TwoDigitYearMax?displayProperty=fullName> (and other Gregorian-like calendar types)
-- <xref:System.Globalization.GregorianCalendar.ToDateTime%2A?displayProperty=fullName> (and other Gregorian-like calendar types)
+- <xref:System.Globalization.GregorianCalendar.ToDateTime*?displayProperty=fullName> (and other Gregorian-like calendar types)
 - <xref:System.Globalization.GregorianCalendar.ToFourDigitYear(System.Int32)?displayProperty=fullName> (and other Gregorian-like calendar types)
 
 ## See also

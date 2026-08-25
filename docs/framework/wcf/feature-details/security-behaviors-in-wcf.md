@@ -6,7 +6,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # Security Behaviors in WCF
 
-In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration.
+In Windows Communication Foundation (WCF), behaviors modify runtime behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration.
 
 This article focuses on configuring the following behaviors related to security functions:
 

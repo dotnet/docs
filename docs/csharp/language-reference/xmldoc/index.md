@@ -1,7 +1,7 @@
 ---
 title: "XML API documentation comments comments - document APIs using /// comments"
 description: Learn about documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
-ms.date: 02/19/2025
+ms.date: 01/16/2026
 f1_keywords:
   - "cs.xml"
 helpviewer_keywords:
@@ -16,6 +16,8 @@ helpviewer_keywords:
 # Generate XML API documentation comments
 
 C# source files can include structured comments that produce API documentation for the types defined in those files. The C# compiler produces an *XML* file that contains structured data representing the comments and the API signatures. Other tools can process that XML output to create human-readable documentation in the form of web pages or PDF files, for example.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
 This process provides many advantages for you to add API documentation in your code:
 
@@ -42,11 +44,11 @@ You create documentation for your code by writing special comment fields indicat
 public class MyClass { }
 ```
 
-You set either the [**GenerateDocumentationFile**](../../../core/project-sdk/msbuild-props.md#generatedocumentationfile) or [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option, and the compiler finds all comment fields with XML tags in the source code and creates an XML documentation file from those comments. When this option is enabled, the compiler generates the [CS1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project without XML documentation comments.
+You set either the [**GenerateDocumentationFile**](../../../core/project-sdk/msbuild-props.md#generatedocumentationfile) or [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option. The compiler finds all comment fields with XML tags in the source code and creates an XML documentation file from those comments. When you enable this option, the compiler generates the [CS1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project without XML documentation comments.
 
 ## XML comment formats
 
-The use of XML doc comments requires delimiters that indicate where a documentation comment begins and ends. You use the following delimiters with the XML documentation tags:
+Using XML doc comments requires delimiters that indicate where a documentation comment begins and ends. Use the following delimiters with the XML documentation tags:
 
 - `///` Single-line delimiter: The documentation examples and C# project templates use this form. If white space follows the delimiter, it isn't included in the XML output.
   > [!NOTE]
@@ -99,10 +101,10 @@ The use of XML doc comments requires delimiters that indicate where a documentat
     ```
     <!-- markdownlint-enable MD010 -->
 
-To refer to XML elements (for example, your function processes specific XML elements that you want to describe in an XML documentation comment), you can use the standard quoting mechanism (`&lt;` and `&gt;`). To refer to generic identifiers in code reference (`cref`) elements, you can use either the escape characters (for example, `cref="List&lt;T&gt;"`) or braces (`cref="List{T}"`). As a special case, the compiler parses the braces as angle brackets to make the documentation comment less cumbersome to the author when referring to generic identifiers.
+To refer to XML elements (for example, your function processes specific XML elements that you want to describe in an XML documentation comment), use the standard quoting mechanism (`&lt;` and `&gt;`). To refer to generic identifiers in code reference (`cref`) elements, use either the escape characters (for example, `cref="List&lt;T&gt;"`) or braces (`cref="List{T}"`). As a special case, the compiler parses the braces as angle brackets to make the documentation comment less cumbersome to the author when referring to generic identifiers.
 
 > [!NOTE]
-> If you write comments using the single line XML comment delimiter, `///`, but don't include any tags, the compiler adds the text of those comments to the XML output file. However, the output doesn't include XML elements such as `<summary>`. Most tools that consume XML comments (including Visual Studio IntelliSense) don't read these comments.
+> If you write comments by using the single line XML comment delimiter, `///`, but don't include any tags, the compiler adds the text of those comments to the XML output file. However, the output doesn't include XML elements such as `<summary>`. Most tools that consume XML comments (including Visual Studio IntelliSense) don't read these comments.
 
 ## Tools that accept XML documentation input
 
@@ -113,37 +115,37 @@ The following tools create output from XML comments:
 - [Doxygen](https://github.com/doxygen/doxygen): *Doxygen* generates an online documentation browser (in HTML) or an offline reference manual (in LaTeX) from a set of documented source files. There's also support for generating output in RTF (MS Word), PostScript, hyperlinked PDF, compressed HTML, DocBook, and Unix manual pages. You can configure Doxygen to extract the code structure from undocumented source files.
 
 > [!NOTE]
-> The XML documentation comments aren't metadata; they aren't included in the compiled assembly and therefore they aren't accessible through reflection.
+> The XML documentation comments aren't metadata. The compiler doesn't include them in the compiled assembly, so they're not accessible through reflection.
 
 ### ID strings
 
-Each type or member is stored in an element in the output XML file. Each of those elements has a unique ID string that identifies the type or member. The ID string must account for operators, parameters, return values, generic type parameters, `ref`, `in`, and `out` parameters. To encode all those potential elements, the compiler follows clearly defined rules for generating the ID strings. Programs that process the XML file use the ID string to identify the corresponding .NET metadata or reflection item that the documentation applies to.
+The compiler writes each type or member to an element in the output XML file. Each element has a unique ID string that identifies the type or member. The ID string includes information about operators, parameters, return values, generic type parameters, `ref`, `in`, and `out` parameters. To encode all those potential elements, the compiler follows clearly defined rules for generating the ID strings. Programs that process the XML file use the ID string to identify the corresponding .NET metadata or reflection item that the documentation applies to.
 
-The compiler observes the following rules when it generates the ID strings:
+The compiler follows these rules when it generates the ID strings:
 
-- No white space is in the string.
-- The first part of the string identifies the kind of member using a single character followed by a colon. The following member types are used:
+- The string contains no white space.
+- The string starts with a single character and a colon that identifies the kind of member. Use the following member types:
 
-  | Character | Member type | Notes |
-  |--|--|--|
-  | `N` | namespace | You can't add documentation comments to a namespace, but you can make `cref` references to them, where supported. |
-  | `T` | type | A type is a class, interface, struct, enum, or delegate. |
-  | `F` | field |  |
-  | `P` | property | Includes indexers or other indexed properties. |
-  | `M` | method | Includes special methods, such as constructors and operators. |
-  | `E` | event |  |
-  | `!` | error string | The rest of the string provides information about the error. The C# compiler generates error information for links that can't be resolved. |
+  | Character | Member type  | Notes |
+  |-----------|--------------|--|
+  | `N`       | namespace    | You can't add documentation comments to a namespace, but you can make `cref` references to them, where supported. |
+  | `T`       | type         | A type is a class, interface, struct, enum, or delegate. |
+  | `F`       | field        |  |
+  | `P`       | property     | Includes indexers or other indexed properties. |
+  | `M`       | method       | Includes special methods, such as constructors and operators. |
+  | `E`       | event        |  |
+  | `!`       | error string | The rest of the string provides information about the error. The C# compiler generates error information for links that can't be resolved. |
 
-- The second part of the string is the fully qualified name of the item, starting at the root of the namespace. The name of the item, its enclosing type(s), and namespace are separated by periods. If the name of the item itself has periods, they're replaced with the hash-sign ('#'). The grammar assumes that no item has a hash-sign directly in its name. For example, the fully qualified name of the String constructor is "System.String.#ctor".
+- The second part of the string is the fully qualified name of the item, starting at the root of the namespace. The name of the item, its enclosing types, and namespace are separated by periods. If the name of the item itself has periods, the compiler replaces them with the hash-sign ('#'). The grammar assumes that no item has a hash-sign directly in its name. For example, the fully qualified name of the String constructor is "System.String.#ctor".
 - For properties and methods, the parameter list enclosed in parentheses follows. If there are no parameters, no parentheses are present. The parameters are separated by commas. The encoding of each parameter follows directly how it's encoded in a .NET signature (See <xref:Microsoft.VisualStudio.CorDebugInterop.CorElementType?displayProperty=fullName> for definitions of the all caps elements in the following list):
   - Base types. Regular types (`ELEMENT_TYPE_CLASS` or `ELEMENT_TYPE_VALUETYPE`) are represented as the fully qualified name of the type.
-  - Intrinsic types (for example, `ELEMENT_TYPE_I4`, `ELEMENT_TYPE_OBJECT`, `ELEMENT_TYPE_STRING`, `ELEMENT_TYPE_TYPEDBYREF`, and `ELEMENT_TYPE_VOID`) are represented as the fully qualified name of the corresponding full type. For example, `System.Int32` or `System.TypedReference`.
+  - Intrinsic types, such as `ELEMENT_TYPE_I4`, `ELEMENT_TYPE_OBJECT`, `ELEMENT_TYPE_STRING`, `ELEMENT_TYPE_TYPEDBYREF`, and `ELEMENT_TYPE_VOID`, are represented as the fully qualified name of the corresponding full type. For example, `System.Int32` or `System.TypedReference`.
   - `ELEMENT_TYPE_PTR` is represented as a '\*' following the modified type.
   - `ELEMENT_TYPE_BYREF` is represented as a '\@' following the modified type.
   - `ELEMENT_TYPE_CMOD_OPT` is represented as a '!' and the fully qualified name of the modifier class, following the modified type.
   - `ELEMENT_TYPE_SZARRAY` is represented as "[]" following the element type of the array.
   - `ELEMENT_TYPE_ARRAY` is represented as [*lower bound*:`size`,*lower bound*:`size`] where the number of commas is the rank - 1, and the lower bounds and size of each dimension, if known, are represented in decimal. The lower bound and size are omitted if they aren't specified. If the lower bound and size for a particular dimension is omitted, the ':' is omitted as well. For example, a two-dimensional array with 1 as the lower bounds and unspecified sizes is [1:,1:].
-- For conversion operators only (`op_Implicit` and `op_Explicit`), the return value of the method is encoded as a `~` followed by the return type. For example:
+- For conversion operators only (`op_Implicit` and `op_Explicit`), the method return value is encoded as a `~` followed by the return type. For example:
      `<member name="M:System.Decimal.op_Explicit(System.Decimal arg)~System.Int32">` is the tag for the cast operator `public static explicit operator int (decimal value);` declared in the `System.Decimal` class.
 - For generic types, the name of the type is followed by a backtick and then a number that indicates the number of generic type parameters. For example:
      ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.
@@ -157,7 +159,7 @@ The compiler observes the following rules when it generates the ID strings:
     - return type
     - `ELEMENT_TYPE_SENTINEL`
 
-The following examples show how the ID strings for a class and its members are generated:
+The following examples show how the compiler generates the ID strings for a class and its members:
 
 :::code language="csharp" source="./snippets/xmldoc/idstrings.cs":::
 

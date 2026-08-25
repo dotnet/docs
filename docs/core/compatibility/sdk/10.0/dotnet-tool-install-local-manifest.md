@@ -13,7 +13,7 @@ The `-d` flag on `dotnet tool install` was previously added to show the location
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 

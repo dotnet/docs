@@ -2,7 +2,7 @@
 title: "How to: Rename a File"
 description: "Learn about how to rename a file with the Visual Basic Runtime Library or the .NET base class library."
 ms.date: 01/14/2025
-helpviewer_keywords: 
+helpviewer_keywords:
 - "I/O [Visual Basic], renaming files"
 - "files [Visual Basic], renaming"
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
@@ -46,8 +46,8 @@ The following conditions might cause an exception:
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.FileIO.FileSystem.RenameFile%2A>
-- <xref:System.IO.File.Move%2A>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.RenameFile*>
+- <xref:System.IO.File.Move*>
 - [How to: Move a File](how-to-move-a-file.md)
 - [Creating, Deleting, and Moving Files and Directories](creating-deleting-and-moving-files-and-directories.md)
 - [How to: Create a Copy of a File in the Same Directory](how-to-create-a-copy-of-a-file-in-the-same-directory.md)

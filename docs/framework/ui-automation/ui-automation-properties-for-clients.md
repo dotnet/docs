@@ -21,7 +21,7 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 
  Control patterns also have properties. The properties of control patterns are specific to the pattern. For example, <xref:System.Windows.Automation.ScrollPattern> has properties that enable a client application to discover whether a window is vertically or horizontally scrollable, and what the current view sizes and scroll positions are. Control patterns expose all their properties through a structure; for example, <xref:System.Windows.Automation.ScrollPattern.ScrollPatternInformation>.
 
- UI Automation properties are read-only. To set properties of a control, you must use the methods of the appropriate control pattern. For example, use <xref:System.Windows.Automation.ScrollPattern.Scroll%2A> to change the position values of a scrolling window.
+ UI Automation properties are read-only. To set properties of a control, you must use the methods of the appropriate control pattern. For example, use <xref:System.Windows.Automation.ScrollPattern.Scroll*> to change the position values of a scrolling window.
 
  To improve performance, property values of controls and control patterns can be cached when <xref:System.Windows.Automation.AutomationElement> objects are retrieved. For more information, see [Caching in UI Automation Clients](caching-in-ui-automation-clients.md).
 
@@ -29,7 +29,7 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 
  Property identifiers (IDs) are unique, constant values that are encapsulated in <xref:System.Windows.Automation.AutomationProperty> objects. UI Automation client applications get these IDs from the <xref:System.Windows.Automation.AutomationElement> class or from the appropriate control pattern class, such as <xref:System.Windows.Automation.ScrollPattern>. UI Automation providers get them from <xref:System.Windows.Automation.AutomationElementIdentifiers> or from one of the control pattern identifiers classes, such as <xref:System.Windows.Automation.ScrollPatternIdentifiers>.
 
- The numeric <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> of an <xref:System.Windows.Automation.AutomationProperty> is used by providers to identify properties that are being queried for in the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=nameWithType> method. In general, client applications do not need to examine the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>. The <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> is used only for debugging and diagnostic purposes.
+ The numeric <xref:System.Windows.Automation.AutomationIdentifier.Id*> of an <xref:System.Windows.Automation.AutomationProperty> is used by providers to identify properties that are being queried for in the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue*?displayProperty=nameWithType> method. In general, client applications do not need to examine the <xref:System.Windows.Automation.AutomationIdentifier.Id*>. The <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName*> is used only for debugging and diagnostic purposes.
 
 ## Property Conditions
 
@@ -37,21 +37,21 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 
  For more information, see the following reference topics:
 
-- <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>
+- <xref:System.Windows.Automation.AutomationElement.FindFirst*>
 
-- <xref:System.Windows.Automation.AutomationElement.FindAll%2A>
+- <xref:System.Windows.Automation.AutomationElement.FindAll*>
 
-- <xref:System.Windows.Automation.TreeWalker.Condition%2A>
+- <xref:System.Windows.Automation.TreeWalker.Condition*>
 
 ## Retrieving Properties
 
  Some properties of <xref:System.Windows.Automation.AutomationElement> and all properties of a control pattern class are exposed as nested properties of the `Current` or `Cached` property of the <xref:System.Windows.Automation.AutomationElement> or control pattern object.
 
- In addition, any <xref:System.Windows.Automation.AutomationElement> or control pattern property, including a property that is not available in the <xref:System.Windows.Automation.AutomationElement.Cached%2A> or <xref:System.Windows.Automation.AutomationElement.Current%2A> structure, can be retrieved by using one of the following methods:
+ In addition, any <xref:System.Windows.Automation.AutomationElement> or control pattern property, including a property that is not available in the <xref:System.Windows.Automation.AutomationElement.Cached*> or <xref:System.Windows.Automation.AutomationElement.Current*> structure, can be retrieved by using one of the following methods:
 
-- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue*>
 
-- <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>
+- <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue*>
 
  These methods offer slightly better performance as well as access to the full range of properties.
 
@@ -73,31 +73,31 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 
  If a UI Automation provider does not implement a property, the UI Automation system is able to supply a default value. For example, if the provider for a control does not support the property identified by <xref:System.Windows.Automation.AutomationElement.HelpTextProperty>, UI Automation returns an empty string. Similarly, if the provider does not support the property identified by <xref:System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty>, UI Automation returns `false`.
 
- You can change this behavior by using the <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> method overloads. When you specify `true` as the second parameter, UI Automation does not return a default value, but instead returns the special value <xref:System.Windows.Automation.AutomationElement.NotSupported>.
+ You can change this behavior by using the <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue*?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue*?displayProperty=nameWithType> method overloads. When you specify `true` as the second parameter, UI Automation does not return a default value, but instead returns the special value <xref:System.Windows.Automation.AutomationElement.NotSupported>.
 
  The following example code attempts to retrieve a property from an element, and if the property is not supported, an application-defined value is used instead.
 
  [!code-csharp[UIAClient_snip#123](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#123)]
  [!code-vb[UIAClient_snip#123](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#123)]
 
- To discover what properties are supported by an element, use <xref:System.Windows.Automation.AutomationElement.GetSupportedProperties%2A>. This returns an array of <xref:System.Windows.Automation.AutomationProperty> identifiers.
+ To discover what properties are supported by an element, use <xref:System.Windows.Automation.AutomationElement.GetSupportedProperties*>. This returns an array of <xref:System.Windows.Automation.AutomationProperty> identifiers.
 
 ## Property-changed Events
 
- When a property value on an <xref:System.Windows.Automation.AutomationElement> or control pattern changes, an event is raised. An application can subscribe to such events by calling <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A>, supplying an array of <xref:System.Windows.Automation.AutomationProperty> identifiers as the last parameter in order to specify the properties of interest.
+ When a property value on an <xref:System.Windows.Automation.AutomationElement> or control pattern changes, an event is raised. An application can subscribe to such events by calling <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler*>, supplying an array of <xref:System.Windows.Automation.AutomationProperty> identifiers as the last parameter in order to specify the properties of interest.
 
- In the <xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>, you can identify the property that has changed by checking the <xref:System.Windows.Automation.AutomationPropertyChangedEventArgs.Property%2A> member of the event arguments. The arguments also contain the old and new values of the UI Automation property that has changed. These values are of type <xref:System.Object> and must be cast to the correct type before being used.
+ In the <xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>, you can identify the property that has changed by checking the <xref:System.Windows.Automation.AutomationPropertyChangedEventArgs.Property*> member of the event arguments. The arguments also contain the old and new values of the UI Automation property that has changed. These values are of type <xref:System.Object> and must be cast to the correct type before being used.
 
 ## Additional AutomationElement Properties
 
- In addition to the <xref:System.Windows.Automation.AutomationElement.Current%2A> and <xref:System.Windows.Automation.AutomationElement.Cached%2A> property structures, <xref:System.Windows.Automation.AutomationElement> has the following properties, which are retrieved through simple property accessors.
+ In addition to the <xref:System.Windows.Automation.AutomationElement.Current*> and <xref:System.Windows.Automation.AutomationElement.Cached> property structures, <xref:System.Windows.Automation.AutomationElement> has the following properties, which are retrieved through simple property accessors.
 
 |Property|Description|
 |--------------|-----------------|
-|<xref:System.Windows.Automation.AutomationElement.CachedChildren%2A>|A collection of child <xref:System.Windows.Automation.AutomationElement> objects that are in the cache.|
-|<xref:System.Windows.Automation.AutomationElement.CachedParent%2A>|An <xref:System.Windows.Automation.AutomationElement> parent object that is in the cache.|
-|<xref:System.Windows.Automation.AutomationElement.FocusedElement%2A>|(Static property) The <xref:System.Windows.Automation.AutomationElement> that has the input focus.|
-|<xref:System.Windows.Automation.AutomationElement.RootElement%2A>|(Static property) The root <xref:System.Windows.Automation.AutomationElement>.|
+|<xref:System.Windows.Automation.AutomationElement.CachedChildren*>|A collection of child <xref:System.Windows.Automation.AutomationElement> objects that are in the cache.|
+|<xref:System.Windows.Automation.AutomationElement.CachedParent*>|An <xref:System.Windows.Automation.AutomationElement> parent object that is in the cache.|
+|<xref:System.Windows.Automation.AutomationElement.FocusedElement*>|(Static property) The <xref:System.Windows.Automation.AutomationElement> that has the input focus.|
+|<xref:System.Windows.Automation.AutomationElement.RootElement*>|(Static property) The root <xref:System.Windows.Automation.AutomationElement>.|
 
 ## See also
 

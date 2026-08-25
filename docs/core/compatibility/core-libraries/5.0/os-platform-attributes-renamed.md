@@ -38,7 +38,7 @@ For .NET 5 RC1, an additional feature was added to the platform compatibility an
 
 ## Recommended action
 
-When you retarget your project from .NET 5 Preview 8 to .NET 5 RC1, you might encounter build or run-time errors due to these changes. For example, the renaming of `MinimumOSPlatformAttribute` is likely to produce errors, because the attribute is applied to platform-specific assemblies at build time, and old build artifacts will still reference the old API name.
+When you retarget your project from .NET 5 Preview 8 to .NET 5 RC1, you might encounter build or runtime errors due to these changes. For example, the renaming of `MinimumOSPlatformAttribute` is likely to produce errors, because the attribute is applied to platform-specific assemblies at build time, and old build artifacts will still reference the old API name.
 
 Example build-time errors:
 
@@ -46,7 +46,7 @@ Example build-time errors:
 - **error CS0246: The type or namespace name 'RemovedInOSPlatformAttribute' could not be found (are you missing a using directive or an assembly reference?)**
 - **error CS0246: The type or namespace name 'ObsoletedInOSPlatformAttribute' could not be found (are you missing a using directive or an assembly reference?)**
 
-Example run-time error:
+Example runtime error:
 
 **Unhandled exception. System.TypeLoadException: Could not load type 'System.Runtime.Versioning.MinimumOSPlatformAttribute' from assembly 'System.Runtime, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.**
 

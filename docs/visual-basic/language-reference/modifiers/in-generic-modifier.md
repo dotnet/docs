@@ -2,9 +2,9 @@
 description: "Learn more about: In (Generic Modifier) (Visual Basic)"
 title: "In (Generic Modifier) - Visual Basic"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.VarianceIn"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "contravariance, In keyword [Visual Basic]"
   - "In keyword [Visual Basic]"
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
@@ -22,7 +22,7 @@ For more information, see [Covariance and Contravariance](../../programming-guid
 ## Rules
 
 You can use the `In` keyword in generic interfaces and delegates.
-  
+
 A type parameter can be declared contravariant in a generic interface or delegate if it is used only as a type of method arguments and not used as a method return type. `ByRef` parameters cannot be covariant or contravariant.
 
 Covariance and contravariance are supported for reference types and not supported for value types.
@@ -31,7 +31,7 @@ In Visual Basic, you cannot declare events in contravariant interfaces without s
 
 ## Behavior
 
-An interface that has a contravariant type parameter allows its methods to accept arguments of less derived types than those specified by the interface type parameter. For example, because in .NET Framework 4, in the <xref:System.Collections.Generic.IComparer%601> interface, type T is contravariant, you can assign an object of the `IComparer(Of Person)` type to an object of the `IComparer(Of Employee)` type without using any special conversion methods if `Employee` inherits from `Person`.
+An interface that has a contravariant type parameter allows its methods to accept arguments of less derived types than those specified by the interface type parameter. For example, because in .NET Framework 4, in the <xref:System.Collections.Generic.IComparer`1> interface, type T is contravariant, you can assign an object of the `IComparer(Of Person)` type to an object of the `IComparer(Of Employee)` type without using any special conversion methods if `Employee` inherits from `Person`.
 
 A contravariant delegate can be assigned another delegate of the same type, but with a less derived generic type parameter.
 

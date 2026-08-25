@@ -17,16 +17,16 @@ Explicit assembly binding redirection in an application configuration file requi
 
  The permission is not required if assembly redirection is performed in a publisher policy file that is controlled by the component publisher, or in the machine configuration file that is controlled by the administrator. However, the permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](./file-schema/runtime/publisherpolicy-element.md) element in the application configuration file.
 
- The following table shows the default security settings for the **BindingRedirects** flag.
+ The following table shows the default security settings for the `BindingRedirects` flag.
 
 | Zone                         | BindingRedirects flag setting |
 |------------------------------|-------------------------------|
-| Trusted Zone (local machine) | **ON**                        |
-| Intranet Zone                | **ON**                        |
-| Internet Zone                | **OFF**                       |
-| Untrusted zones              | **OFF**                       |
+| Trusted Zone (local machine) | `ON`                        |
+| Intranet Zone                | `ON`                        |
+| Internet Zone                | `OFF`                       |
+| Untrusted zones              | `OFF`                       |
 
- An administrator can change these security settings to support or restrict specific scenarios on a given computer. There are no tools for changing the **BindingRedirects** flag setting from the default; an administrator must manually edit the Security.config file on a user's computer.
+ An administrator can change these security settings to support or restrict specific scenarios on a given computer. There are no tools for changing the `BindingRedirects` flag setting from the default; an administrator must manually edit the Security.config file on a user's computer.
 
 ## See also
 

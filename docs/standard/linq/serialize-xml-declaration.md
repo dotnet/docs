@@ -12,7 +12,7 @@ ms.topic: how-to
 
 This article describes how to control whether an XML declaration is generated when you serialize XML in C# or Visual Basic.
 
-Serializing to a <xref:System.IO.File> or a <xref:System.IO.TextWriter> using the <xref:System.Xml.Linq.XElement.Save%2A?displayProperty=nameWithType> method or the <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=nameWithType> method generates an XML declaration. When you serialize to an <xref:System.Xml.XmlWriter>, the writer settings (specified in an <xref:System.Xml.XmlWriterSettings> object) determine whether an XML declaration is generated.
+Serializing to a <xref:System.IO.File> or a <xref:System.IO.TextWriter> using the <xref:System.Xml.Linq.XElement.Save*?displayProperty=nameWithType> method or the <xref:System.Xml.Linq.XDocument.Save*?displayProperty=nameWithType> method generates an XML declaration. When you serialize to an <xref:System.Xml.XmlWriter>, the writer settings (specified in an <xref:System.Xml.XmlWriterSettings> object) determine whether an XML declaration is generated.
 
 If you're serializing to a string using the `ToString` method, the resulting XML won't include an XML declaration.
 

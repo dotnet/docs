@@ -5,7 +5,7 @@ ms.date: 08/06/2024
 ---
 # In-box BinaryFormatter implementation removed and always throws
 
-The "in box" <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> implementation now throws exceptions at run time in all cases. This is the final stage of the [BinaryFormatter obsoletion plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md).
+The "in box" <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> implementation now throws exceptions at runtime in all cases. This is the final stage of the [BinaryFormatter obsoletion plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md).
 
 ## Previous behavior
 

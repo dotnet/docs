@@ -6,8 +6,7 @@
         },
         {
             "source_path_from_root": "/docs/standard/analyzers/framework-analyzer.md",
-            "redirect_url": "/dotnet/framework/code-analyzers",
-            "redirect_document_id": true
+            "redirect_url": "/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers"
         },
         {
             "source_path_from_root": "/docs/standard/application-essentials.md",
@@ -57,6 +56,10 @@
         {
             "source_path_from_root": "/docs/standard/base-types/backtracking.md",
             "redirect_url": "/dotnet/standard/base-types/backtracking-in-regular-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/basic-string-operations.md",
+            "redirect_url": "/dotnet/standard/base-types/creating-new"
         },
         {
             "source_path_from_root": "/docs/standard/base-types/best-practices.md",
@@ -206,6 +209,10 @@
         {
             "source_path_from_root": "/docs/standard/base-types/strip-characters.md",
             "redirect_url": "/dotnet/standard/base-types/how-to-strip-invalid-characters-from-a-string"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/string-comparison-net-5-plus.md",
+            "redirect_url": "/dotnet/standard/base-types/best-practices-strings"
         },
         {
             "source_path_from_root": "/docs/standard/base-types/substitutions.md",
@@ -395,6 +402,10 @@
         {
             "source_path_from_root": "/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md",
             "redirect_url": "/aspnet/web-forms/overview/how-to-consume-events"
+        },
+        {
+            "source_path_from_root": "/docs/standard/events/how-to-handle-multiple-events-using-event-properties.md",
+            "redirect_url": "/dotnet/standard/events/how-to-declare-multiple-events-using-event-properties"
         },
         {
             "source_path_from_root": "/docs/standard/exceptions.md",

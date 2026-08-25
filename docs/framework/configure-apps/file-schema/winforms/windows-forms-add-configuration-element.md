@@ -1,11 +1,12 @@
 ---
 description: "Learn more about: Windows Forms Add Configuration Element"
 title: "Windows Forms Add Configuration Element"
-ms.date: "04/07/2017"
+ms.date: "03/04/2026"
 helpviewer_keywords:
   - "Windows Forms Add configuration element"
   - "configuring Windows Forms applications"
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
+ai-usage: ai-assisted
 ---
 
 # Windows Forms Add Configuration Element
@@ -94,6 +95,14 @@ The single default opt-in setting provided by setting `DpiAwareness` to `PerMoni
 Typically, you opt out of a particular feature because you've chosen to handle it programmatically.
 
 For more information on taking advantage of High DPI support in Windows Forms applications, see [High DPI Support in Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
+
+### AutoScaleMode
+
+The default <xref:System.Windows.Forms.AutoScaleMode.Font?displayProperty=nameWithType> mode scales controls based on the current system font size. Font metrics can vary at different DPI levels, so Font scaling might not be linear when the app runs as system DPI-aware or per-monitor v2 DPI-aware (see <xref:System.Windows.Forms.HighDpiMode.SystemAware> and <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2>). This can cause discrepancies in height-to-width ratios. The <xref:System.Windows.Forms.AutoScaleMode.Dpi?displayProperty=nameWithType> mode is always linear and doesn't have this limitation.
+
+Keep in mind that certain controls—such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.Label>—always use Font scaling regardless of the `AutoScaleMode` setting. Because of these per-control differences, it's not always straightforward to determine which mode works better without knowing your specific design requirements.
+
+Starting with .NET 8, when a Windows Forms app runs in `PerMonitorV2` DPI awareness, top-level window sizing respects <xref:System.Windows.Forms.AutoScaleMode>, which improves consistency with how child controls scale. For more information, see [Top-level window scaling](../../../../core/compatibility/windows-forms/8.0/top-level-window-scaling.md).
 
 ### DisableDpiChangedMessageHandling
 

@@ -4,7 +4,7 @@ description: "Learn more about .NET Upgrade Assistant for .NET-related projects.
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 10/08/2024
+ms.date: 03/19/2026
 
 #customer intent: As a developer, I want to upgrade my project so that I can take advantage of the latest features.
 
@@ -12,31 +12,15 @@ ms.date: 10/08/2024
 
 # What is .NET Upgrade Assistant?
 
-.NET Upgrade Assistant helps upgrade projects to newer versions of .NET and analyzes your code to spot and fix potential incompatibilities. One focus of the tool is to help upgrading a project from .NET Framework, .NET Core, or .NET, to the latest version of .NET. You use the extension or tool to upgrade entire .NET projects, or some aspect of the project, such upgrading a configuration file from an older type to a newer type.
+.NET Upgrade Assistant helps upgrade projects to newer versions of .NET and analyzes your code to spot and fix potential incompatibilities. One focus of the tool is to help upgrade a project from .NET Framework, .NET Core, or .NET, to the latest version of .NET. You use .NET Upgrade Assistant to upgrade entire .NET projects, or some aspect of the project, such as upgrading a configuration file from an older type to a newer type.
 
-.NET Upgrade Assistant is distributed as a Visual Studio extension or a command-line interface (CLI) tool.
+.NET Upgrade Assistant is built into Visual Studio and can be installed as a command-line interface (CLI) tool.
 
 [!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
 
 ## Analyze and upgrade
 
 .NET Upgrade Assistant includes an analysis engine that scans your projects and their dependencies. After the scan is complete, a report is generated with detailed information about performing an upgrade. You can use this information to upgrade either the entire project or specific parts of the project.
-
-<!-- I don't have this information ready yet
-
-## Extensibility
-
-One key feature of .NET Upgrade Assistant is designing upgrade extensions for your own libraries. Upgrade extensions can be made up of one or two upgrades:
-
-- Package Map
-
-  This is something.
-
-- API Map
-
-  This is something.
-
--->
 
 ## Supported project types
 
@@ -58,7 +42,6 @@ Some products provide guidance on how to use .NET Upgrade Assistant.
 - [Windows Presentation Foundation](/dotnet/desktop/wpf/migration/)
 - [Windows Forms](/dotnet/desktop/winforms/migration/)
 - [Universal Windows Platform](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant)
-- [Windows Communication Foundation](../../core/porting/upgrade-assistant-wcf.md)
 
 ## Upgrade paths
 
@@ -70,7 +53,7 @@ The following upgrade paths are supported:
 - UWP to WinUI 3
 - Previous .NET version to the latest .NET version
 - Xamarin Forms to .NET MAUI
-  - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 version 17.6 or later.
+  - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 or later.
 
 ## Upgrade details and options
 

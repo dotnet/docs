@@ -6,14 +6,14 @@ ms.date: 04/22/2024
 ---
 # Query based on run-time state
 
-In most LINQ queries, the general shape of the query is set in code. You might filter items using a `where` clause, sort the output collection using `orderby`, group items, or perform some computation. Your code might provide parameters for the filter, or the sort key, or other expressions that are part of the query. However, the overall shape of the query can't change. In this article, you learn techniques to use <xref:System.Linq.IQueryable%601?displayProperty=fullName> interface and types that implement it to modify the shape of a query at run time.
+In most LINQ queries, the general shape of the query is set in code. You might filter items using a `where` clause, sort the output collection using `orderby`, group items, or perform some computation. Your code might provide parameters for the filter, or the sort key, or other expressions that are part of the query. However, the overall shape of the query can't change. In this article, you learn techniques to use <xref:System.Linq.IQueryable`1?displayProperty=fullName> interface and types that implement it to modify the shape of a query at run time.
 
 You use these techniques to build queries at run time, where some user input or run-time state changes the query methods you want to use as part of the query. You want to edit the query by adding, removing, or modifying query clauses.
 
 > [!NOTE]
 > Make sure you add `using System.Linq.Expressions;` and `using static System.Linq.Expressions.Expression;` at the top of your *.cs* file.
 
-Consider code that defines an <xref:System.Linq.IQueryable> or an <xref:System.Linq.IQueryable%601> against a data source:
+Consider code that defines an <xref:System.Linq.IQueryable> or an <xref:System.Linq.IQueryable`1> against a data source:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Initialize":::
 
@@ -29,7 +29,7 @@ Expression trees are immutable; if you want a different expression tree&mdash;an
 - Use run-time state from within the expression tree
 - Call more LINQ methods
 - Vary the expression tree passed into the LINQ methods
-- Construct an <xref:System.Linq.Expressions.Expression%601> expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
+- Construct an <xref:System.Linq.Expressions.Expression`1> expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
 - Add method call nodes to an <xref:System.Linq.IQueryable>'s expression tree
 - Construct strings, and use the [Dynamic LINQ library](https://dynamic-linq.net/)
 
@@ -48,9 +48,9 @@ The internal expression tree&mdash;and thus the query&mdash;isn't modified; the 
 Generally, the [built-in LINQ methods](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) at <xref:System.Linq.Queryable> perform two steps:
 
 - Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
-- Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.
+- Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute*?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery*?displayProperty=nameWithType> method.
 
-You can replace the original query with the result of an <xref:System.Linq.IQueryable%601?displayProperty=nameWithType>-returning method, to get a new query. You can use run-time state, as in the following example:
+You can replace the original query with the result of an <xref:System.Linq.IQueryable`1?displayProperty=nameWithType>-returning method, to get a new query. You can use run-time state, as in the following example:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Added_method_calls":::
 
@@ -70,9 +70,9 @@ In all the examples up to this point, you know the element type at compile time&
 
 ## Constructing an Expression\<TDelegate>
 
-When you construct an expression to pass into one of the LINQ methods, you're actually constructing an instance of <xref:System.Linq.Expressions.Expression%601?displayProperty=nameWithType>, where `TDelegate` is some delegate type such as `Func<string, bool>`, `Action`, or a custom delegate type.
+When you construct an expression to pass into one of the LINQ methods, you're actually constructing an instance of <xref:System.Linq.Expressions.Expression`1?displayProperty=nameWithType>, where `TDelegate` is some delegate type such as `Func<string, bool>`, `Action`, or a custom delegate type.
 
-<xref:System.Linq.Expressions.Expression%601?displayProperty=nameWithType> inherits from <xref:System.Linq.Expressions.LambdaExpression>, which represents a complete lambda expression like the following example:
+<xref:System.Linq.Expressions.Expression`1?displayProperty=nameWithType> inherits from <xref:System.Linq.Expressions.LambdaExpression>, which represents a complete lambda expression like the following example:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Compiler_generated_expression_tree":::
 
@@ -81,16 +81,16 @@ A <xref:System.Linq.Expressions.LambdaExpression> has two components:
 1. A parameter list&mdash;`(string x)`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Parameters> property.
 1. A body&mdash;`x.StartsWith("a")`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Body> property.
 
-The basic steps in constructing an <xref:System.Linq.Expressions.Expression%601> are as follows:
+The basic steps in constructing an <xref:System.Linq.Expressions.Expression`1> are as follows:
 
-1. Define <xref:System.Linq.Expressions.ParameterExpression> objects for each of the parameters (if any) in the lambda expression, using the <xref:System.Linq.Expressions.Expression.Parameter%2A> factory method.
+1. Define <xref:System.Linq.Expressions.ParameterExpression> objects for each of the parameters (if any) in the lambda expression, using the <xref:System.Linq.Expressions.Expression.Parameter*> factory method.
    :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Factory_method_expression_tree_parameter":::
 1. Construct the body of your <xref:System.Linq.Expressions.LambdaExpression>, using the <xref:System.Linq.Expressions.ParameterExpression> defined, and the factory methods at <xref:System.Linq.Expressions.Expression>. For instance, an expression representing `x.StartsWith("a")` could be constructed like this:
    :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Factory_method_expression_tree_body":::
-1. Wrap the parameters and body in a compile-time-typed [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601), using the appropriate <xref:System.Linq.Expressions.Expression.Lambda%2A> factory method overload:
+1. Wrap the parameters and body in a compile-time-typed [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression`1), using the appropriate <xref:System.Linq.Expressions.Expression.Lambda*> factory method overload:
    :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Factory_method_expression_tree_lambda":::
 
-The following sections describe a scenario in which you might want to construct an <xref:System.Linq.Expressions.Expression%601> to pass into a LINQ method. It provides a complete example of how to do so using the factory methods.
+The following sections describe a scenario in which you might want to construct an <xref:System.Linq.Expressions.Expression`1> to pass into a LINQ method. It provides a complete example of how to do so using the factory methods.
 
 ## Construct a full query at run time
 
@@ -120,19 +120,19 @@ While you could write one custom function for `IQueryable<Person>` and another f
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Factory_methods_expression_of_tdelegate":::
 
-Because the `TextFilter` function takes and returns an <xref:System.Linq.IQueryable%601> (and not just an <xref:System.Linq.IQueryable>), you can add further compile-time-typed query elements after the text filter.
+Because the `TextFilter` function takes and returns an <xref:System.Linq.IQueryable`1> (and not just an <xref:System.Linq.IQueryable>), you can add further compile-time-typed query elements after the text filter.
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Factory_methods_expression_of_tdelegate_usage":::
 
 ### Add method call nodes to the IQueryable\<TDelegate>'s expression tree
 
-If you have an <xref:System.Linq.IQueryable> instead of an <xref:System.Linq.IQueryable%601>, you can't directly call the generic LINQ methods. One alternative is to build the inner expression tree as shown in the previous example, and use reflection to invoke the appropriate LINQ method while passing in the expression tree.
+If you have an <xref:System.Linq.IQueryable> instead of an <xref:System.Linq.IQueryable`1>, you can't directly call the generic LINQ methods. One alternative is to build the inner expression tree as shown in the previous example, and use reflection to invoke the appropriate LINQ method while passing in the expression tree.
 
 You could also duplicate the LINQ method's functionality, by wrapping the entire tree in a <xref:System.Linq.Expressions.MethodCallExpression> that represents a call to the LINQ method:
 
 :::code language="csharp" source="./snippets/HowToBuildDynamicQueries/Program.cs" id="Factory_methods_lambdaexpression":::
 
-In this case, you don't have a compile-time `T` generic placeholder, so you use the <xref:System.Linq.Expressions.Expression.Lambda%2A> overload that doesn't require compile-time type information, and which produces a <xref:System.Linq.Expressions.LambdaExpression> instead of an <xref:System.Linq.Expressions.Expression%601>.
+In this case, you don't have a compile-time `T` generic placeholder, so you use the <xref:System.Linq.Expressions.Expression.Lambda*> overload that doesn't require compile-time type information, and which produces a <xref:System.Linq.Expressions.LambdaExpression> instead of an <xref:System.Linq.Expressions.Expression`1>.
 
 ### The Dynamic LINQ library
 

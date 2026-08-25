@@ -10,28 +10,47 @@ You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the
 > [!NOTE]
 > Before beginning, ensure you've installed both [F# and the Ionide plugin](install-fsharp.md#install-f-with-visual-studio-code).
 
-## Create your first project with Ionide
+## Explore F# with scripts and the REPL
 
-To create a new F# project, open a command line and create a new project with the .NET CLI:
+The fastest way to start writing F# is with a script file (`.fsx`) and F# Interactive (FSI). No project files or build setup are needed — just create a file and start coding, similar to how you might use Python or a shell script.
 
-```dotnetcli
-dotnet new console -lang "F#" -o FirstIonideProject
-```
+### Create and run a script
 
-Once it completes, change directory to the project and open Visual Studio Code:
+Open a terminal and run:
 
 ```console
-cd FirstIonideProject
-code .
+touch hello.fsx
+code hello.fsx
 ```
 
-After the project loads in Visual Studio Code, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens, everything has finished loading.
+Add the following code to the file:
 
-### Write your first script
+```fsharp
+printfn "Hello from F# Interactive!"
 
-Once you've configured Visual Studio Code to use .NET Core scripting, navigate to the Explorer view in Visual Studio Code and create a new file. Name it *MyFirstScript.fsx*.
+let square x = x * x
 
-Now add the following code to it:
+[ 1 .. 10 ]
+|> List.map square
+|> printfn "Squares: %A"
+```
+
+Run the script directly from the terminal:
+
+```dotnetcli
+dotnet fsi hello.fsx
+```
+
+You should see:
+
+```console
+Hello from F# Interactive!
+Squares: [1; 4; 9; 16; 25; 36; 49; 64; 81; 100]
+```
+
+### Use the interactive REPL from VS Code
+
+Scripts are especially powerful when combined with Ionide's FSI integration. Create a new file called *MyFirstScript.fsx* and add the following code:
 
 [!code-fsharp[ToPigLatin](~/samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
 
@@ -75,6 +94,29 @@ The function appears to be working as expected. Congratulations, you just wrote 
 
 > [!NOTE]
 > As you may have noticed, the lines in FSI are terminated with `;;`. This is because FSI allows you to enter multiple lines. The `;;` at the end lets FSI know when the code is finished.
+
+### When to use scripts
+
+Scripts are great for exploring ideas, prototyping, data analysis, and automation tasks. You can reference NuGet packages directly in a script with `#r "nuget: PackageName"` — no project file needed.
+
+When your code grows beyond a single file or needs to be compiled and distributed, you'll want to move to a full project. The next section shows how.
+
+## Create your first project with Ionide
+
+For larger programs, compiled libraries, or code you want to distribute as an application, you'll use a .NET project. To create a new F# project, open a command line and create a new project with the .NET CLI:
+
+```dotnetcli
+dotnet new console -lang "F#" -o FirstIonideProject
+```
+
+Once it completes, change directory to the project and open Visual Studio Code:
+
+```console
+cd FirstIonideProject
+code .
+```
+
+After the project loads in Visual Studio Code, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens, everything has finished loading.
 
 ## Explaining the code
 

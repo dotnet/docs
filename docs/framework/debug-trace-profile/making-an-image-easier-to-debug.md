@@ -39,14 +39,14 @@ You can set the value of each option to 0 or 1, and any absent option defaults t
 
 Starting with .NET Framework 2.0, the JIT compiler always generates tracking information regardless of the value for `GenerateTrackingInfo`; however, the `AllowOptimize` value still has an effect. When using the [Ngen.exe (Native Image Generator)](../tools/ngen-exe-native-image-generator.md) to precompile the native image without optimization, the .ini file must be present in the target folder with `AllowOptimize=0` when Ngen.exe executes. If you've precompiled an assembly without optimization, you must remove the precompiled code using NGen.exe **/uninstall** option before rerunning Ngen.exe to precompile the code as optimized. If the .ini file isn't present in the folder, by default Ngen.exe precompiles the code as optimized.
 
-The <xref:System.Diagnostics.DebuggableAttribute?displayProperty=nameWithType> controls the settings for an assembly. **DebuggableAttribute** includes two fields that control whether the JIT compiler should optimize and/or generate tracking information. In .NET Framework 2.0 and later versions, the JIT compiler always generates tracking information.
+The <xref:System.Diagnostics.DebuggableAttribute?displayProperty=nameWithType> controls the settings for an assembly. `DebuggableAttribute` includes two fields that control whether the JIT compiler should optimize and/or generate tracking information. In .NET Framework 2.0 and later versions, the JIT compiler always generates tracking information.
 
 For a retail build, compilers don't set any **DebuggableAttribute**. By default, the JIT compiler generates the highest performance, hardest to debug machine code. Enabling JIT tracking lowers performance a little, and disabling optimization lowers performance a lot.
 
-The **DebuggableAttribute** applies to a whole assembly at a time, not to individual modules within the assembly. Development tools must therefore attach custom attributes to the assembly metadata token, if an assembly has already been created, or to the class called **System.Runtime.CompilerServices.AssemblyAttributesGoHere**. The ALink tool then promotes these **DebuggableAttribute** attributes from each module to the assembly they become a part of. If there's a conflict, the ALink operation fails.
+The `DebuggableAttribute` applies to a whole assembly at a time, not to individual modules within the assembly. Development tools must therefore attach custom attributes to the assembly metadata token, if an assembly has already been created, or to the class called **System.Runtime.CompilerServices.AssemblyAttributesGoHere**. The ALink tool then promotes these `DebuggableAttribute` attributes from each module to the assembly they become a part of. If there's a conflict, the ALink operation fails.
 
 > [!NOTE]
-> In version 1.0 of the .NET Framework, the Microsoft Visual C++ compiler adds the **DebuggableAttribute** when the **/clr** and **/Zi** compiler options are specified. In version 1.1 of the .NET Framework, you must either add the **DebuggableAttribute** manually in your code or use the **/ASSEMBLYDEBUG** linker option.
+> In version 1.0 of the .NET Framework, the Microsoft Visual C++ compiler adds the `DebuggableAttribute` when the **/clr** and **/Zi** compiler options are specified. In version 1.1 of the .NET Framework, you must either add the `DebuggableAttribute` manually in your code or use the **/ASSEMBLYDEBUG** linker option.
 
 ## See also
 

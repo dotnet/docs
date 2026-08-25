@@ -30,9 +30,9 @@ The general-purpose value type is most often referred to as a struct, its C# key
 
  This prevents accidental creation of invalid instances when an array of the structs is created.
 
- ✔️ DO implement <xref:System.IEquatable%601> on value types.
+ ✔️ DO implement <xref:System.IEquatable`1> on value types.
 
- The <xref:System.Object.Equals%2A?displayProperty=nameWithType> method on value types causes boxing, and its default implementation is not very efficient, because it uses reflection. <xref:System.IEquatable%601.Equals%2A> can have much better performance and can be implemented so that it will not cause boxing.
+ The <xref:System.Object.Equals*?displayProperty=nameWithType> method on value types causes boxing, and its default implementation is not very efficient, because it uses reflection. <xref:System.IEquatable`1.Equals*> can have much better performance and can be implemented so that it will not cause boxing.
 
  ❌ DO NOT explicitly extend <xref:System.ValueType>. In fact, most languages prevent this.
 

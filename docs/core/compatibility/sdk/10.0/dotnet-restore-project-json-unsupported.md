@@ -12,11 +12,11 @@ Starting with .NET 10, the [`dotnet restore` command](../../../tools/dotnet-rest
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 
-The `dotnet restore` command restored dependencies for `project.json` based projects.
+Previously, the `dotnet restore` command restored dependencies for `project.json` based projects.
 
 ## New behavior
 

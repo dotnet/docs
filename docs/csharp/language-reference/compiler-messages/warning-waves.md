@@ -1,7 +1,7 @@
 ---
 title: "Compiler warning waves"
 description: "C# warning waves are optional warnings that can be reported on code where previously a warning isn't reported. They represent practices that could be harmful, or potentially elements that might be breaking changes in the future."
-ms.date: 05/29/2025
+ms.date: 04/30/2026
 f1_keywords:
   - "CS7023"
   - "CS8073"
@@ -19,6 +19,7 @@ f1_keywords:
   - "CS8898"
   - "CS8826"
   - "CS8981"
+  - "CS9265"
 helpviewer_keywords: 
   - "CS7023"
   - "CS8073"
@@ -36,10 +37,11 @@ helpviewer_keywords:
   - "CS8898"
   - "CS8826"
   - "CS8981"
+  - "CS9265"
 ---
 # C# Warning waves
 
-New warnings and errors can be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11. Warning wave 8 diagnostics were added in C# 12. Warning wave 9 diagnostics were added in C# 13.
+New warnings and errors can be introduced in each release of the C# compiler. When new warnings could be reported on existing code, those warnings are introduced under an opt-in system referred to as a *warning wave*. The opt-in system means that you shouldn't see new warnings on existing code without taking action to enable them. When `<TreatWarningsAsErrors>true</TreatWarningsAsErrors>` is specified, enabled warning wave warnings generate errors. Warning wave 5 diagnostics were added in C# 9. Warning wave 6 diagnostics were added in C# 10. Warning wave 7 diagnostics were added in C# 11. Warning wave 8 diagnostics were added in C# 12. Warning wave 9 diagnostics were added in C# 13. Warning wave 10 diagnostics were added in C# 14.
 
 Beginning with the .NET 7 SDK (C# 11), the build system sets warning waves with the following rules:
 
@@ -51,7 +53,17 @@ Beginning with the .NET 7 SDK (C# 11), the build system sets warning waves with 
 
 For SDKs earlier than .NET 7, AnalysisLevel always overwrote WarningLevel.
 
-## CS9123 - Taking address of local or parameter in async method can create a GC hole.
+## CS9265 - Field is never ref-assigned to, and will always have its default value
+
+*Warning wave 10*
+
+A `ref` field in a `ref struct` that is never ref-assigned always has its default value, which is a null reference. The following code produces CS9265:
+
+:::code language="csharp" source="./snippets/WarningWaves/WaveTen.cs" id="RefFieldNeverAssigned":::
+
+To address this warning, ref-assign the field in a field initializer or on all constructor code paths. Alternatively, remove the `ref` modifier from the field declaration if the field doesn't need to be a reference.
+
+## CS9123 - The '&' operator should not be used on parameters or local variables in async methods
 
 *Warning wave 8*
 
@@ -60,7 +72,7 @@ The following code produces CS9123:
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveEight.cs" id="NoAmpersand":::
 
-## CS8981 - The type name only contains lower-cased ascii characters.
+## CS8981 - The type name only contains lower-cased ascii characters. Such names may become reserved for the language.
 
 *Warning wave 7*
 
@@ -87,7 +99,7 @@ The following partial class implementation generates several examples of CS8626:
 
 To fix any instance of these warnings, ensure the two signatures match.
 
-## CS7023 - A static type is used in an 'is' or 'as' expression.
+## CS7023 - The second operand of an 'is' or 'as' operator may not be static type
 
 *Warning wave 5*
 
@@ -101,7 +113,7 @@ The compiler reports this warning because the type test can never succeed. To co
 Console.WriteLine("o is not an instance of a static class");
 ```
 
-## CS8073 - The result of the expression is always 'false' (or 'true').
+## CS8073 - The result of the expression is always 'value' since a value of type 'type' is never equal to 'null' of type 'type'
 
 *Warning wave 5*
 
@@ -111,7 +123,7 @@ The `==` and `!=` operators always return `false` (or `true`) when comparing an 
 
 To fix this error, remove the null check and code that would execute if the object is `null`.
 
-## CS8848 - Operator 'from' can't be used here due to precedence. Use parentheses to disambiguate.
+## CS8848 - Operator 'from' cannot be used here due to precedence. Use parentheses to disambiguate.
 
 *Warning wave 5*
 
@@ -133,13 +145,13 @@ Several warnings improve the definite assignment analysis for `struct` types dec
 
 The following examples show the warnings generated from the improved definite assignment analysis:
 
-- CS8880:  Auto-implemented property 'Property' must be fully assigned before control is returned to the caller.
-- CS8881:  Field 'field' must be fully assigned before control is returned to the caller.
+- CS8880:  Auto-implemented property 'Property' must be fully assigned before control is returned to the caller. Consider updating to language version 'version' to auto-default the property.
+- CS8881:  Field 'field' must be fully assigned before control is returned to the caller. Consider updating to language version 'version' to auto-default the field.
 - CS8882: The `out` parameter 'parameter' must be assigned to before control leaves the current method.
 - CS8883: Use of possibly unassigned auto-implemented property 'Property'.
 - CS8884: Use of possibly unassigned field 'Field'
-- CS8885: The 'this' object can't be used before all its fields have been assigned.
-- CS8886: Use of unassigned output parameter 'parameterName'.
+- CS8885: The 'this' object cannot be used before all of its fields have been assigned. Consider updating to language version 'version' to auto-default the unassigned fields.
+- CS8886: Use of unassigned out parameter 'parameterName'.
 - CS8887: Use of unassigned local variable 'variableName'
 
 :::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="DefiniteAssignmentWarnings":::
@@ -163,7 +175,7 @@ The following example generates CS8892:
 
 To fix this warning, remove or rename the asynchronous entry point.
 
-## CS8897 - Static types can't be used as parameters
+## CS8897 - Static types cannot be used as parameters
 
 *Warning wave 5*
 
@@ -173,7 +185,7 @@ Members of an interface can't declare parameters whose type is a static class. T
 
 To fix this warning, change the parameter type or remove the method.
 
-## CS8898 - static types can't be used as return types
+## CS8898 - Static types cannot be used as return types
 
 *Warning wave 5*
 

@@ -26,7 +26,7 @@ This section describes the best practices to follow when developing world-ready 
     - For numeric formatting, use the <xref:System.Globalization.NumberFormatInfo> class.
     - For Gregorian and non-Gregorian calendars, use the <xref:System.Globalization.Calendar> class or one of the specific calendar implementations.
 
-1. Use the culture property settings provided by the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class in the appropriate situations. Use the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property for formatting tasks, such as date and time or numeric formatting. Use the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property to retrieve resources. Note that the `CurrentCulture` and `CurrentUICulture` properties can be set per thread.
+1. Use the culture property settings provided by the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class in the appropriate situations. Use the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property for formatting tasks, such as date and time or numeric formatting. Use the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property to retrieve resources. Note that the `CurrentCulture` and `CurrentUICulture` properties can be set per thread.
 
 1. Enable your application to read and write data to and from a variety of encodings by using the encoding classes in the <xref:System.Text> namespace. Do not assume ASCII data. Assume that international characters will be supplied anywhere a user can enter text. For example, the application should accept international characters in server names, directories, file names, user names, and URLs.
 
@@ -55,7 +55,7 @@ This section describes the best practices to follow when developing world-ready 
 
 1. Do not put non-localizable resources into the resource-only DLLs. This confuses translators.
 
-1. Do not use composite strings that are built at run time from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
+1. Do not use composite strings that are built at runtime from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
 
 1. Avoid ambiguous constructs such as "Empty Folder" where the strings can be translated differently depending on the grammatical roles of the string components. For example, "empty" can be either a verb or an adjective, which can lead to different translations in languages such as Italian or French.
 
@@ -76,7 +76,7 @@ This section describes the best practices to follow when developing world-ready 
 > [!TIP]
 > The following best practices are for ASP.NET Framework apps. For ASP.NET Core apps, see [Globalization and localization in ASP.NET Core](/aspnet/core/fundamentals/localization).
 
-1. Explicitly set the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A> properties in your application. Do not rely on defaults.
+1. Explicitly set the <xref:System.Globalization.CultureInfo.CurrentUICulture> and <xref:System.Globalization.CultureInfo.CurrentCulture> properties in your application. Do not rely on defaults.
 
 1. Note that ASP.NET applications are managed applications and therefore can use the same classes as other managed applications for retrieving, displaying, and manipulating information based on culture.
 
@@ -88,7 +88,7 @@ This section describes the best practices to follow when developing world-ready 
 
 1. Specify the values for the `requestEncoding`, `responseEncoding`, `fileEncoding`, `culture`, and `uiCulture` attributes in the following three places in an ASP.NET application:
 
-    - In the globalization section of a _Web.config_ file. This file is external to the ASP.NET application. For more information, see [\<globalization> element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
+    - In the globalization section of a _Web.config_ file. This file is external to the ASP.NET application. For more information, see [`<globalization>` element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
     - In a page directive. Note that, when an application is in a page, the file has already been read. Therefore, it is too late to specify fileEncoding and requestEncoding. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in a page directive.
     - Programmatically in application code. This setting can vary per request. As with a page directive, by the time the application's code is reached, it is too late to specify `fileEncoding` and `requestEncoding`. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in the application code.
 

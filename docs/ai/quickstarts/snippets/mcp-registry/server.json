@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.<your GitHub username here>/<your server name here>",
+  "version": "<your package version here>",
+  "description": "<your server description here>",
+  "title": "<optional: human readable title>",
+  "websiteUrl": "<optional: URL to a landing page or documentation site>",
+  "packages": [
+    {
+      "registryType": "nuget",
+      "identifier": "<your package ID here>",
+      "version": "<your package version here>",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [],
+      "environmentVariables": []
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/<your GitHub username here>/<your repo name here>",
+    "source": "github"
+  }
+}

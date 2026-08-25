@@ -45,7 +45,7 @@ The following walkthrough provides an example of how to build a CodeDOM object g
 
 #### Create a compile unit
 
-The CodeDOM defines an object called a <xref:System.CodeDom.CodeCompileUnit>, which can reference a CodeDOM object graph that models the source code to compile. A **CodeCompileUnit** has properties for storing references to attributes, namespaces, and assemblies.
+The CodeDOM defines an object called a <xref:System.CodeDom.CodeCompileUnit>, which can reference a CodeDOM object graph that models the source code to compile. A `CodeCompileUnit` has properties for storing references to attributes, namespaces, and assemblies.
 
 The CodeDom providers that derive from the <xref:System.CodeDom.Compiler.CodeDomProvider> class contain methods that process the object graph referenced by a **CodeCompileUnit**.
 
@@ -61,7 +61,7 @@ A <xref:System.CodeDom.CodeSnippetCompileUnit> can contain a section of source c
 
 #### Define a namespace
 
-To define a namespace, create a <xref:System.CodeDom.CodeNamespace> and assign a name for it using the appropriate constructor or by setting its **Name** property.
+To define a namespace, create a <xref:System.CodeDom.CodeNamespace> and assign a name for it using the appropriate constructor or by setting its `Name` property.
 
 [!code-cpp[CodeDomExample#13](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#13)]
 [!code-csharp[CodeDomExample#13](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#13)]
@@ -71,7 +71,7 @@ To define a namespace, create a <xref:System.CodeDom.CodeNamespace> and assign a
 
 To add a namespace import directive to the namespace, add a <xref:System.CodeDom.CodeNamespaceImport> that indicates the namespace to import to the **CodeNamespace.Imports** collection.
 
-The following code adds an import for the **System** namespace to the **Imports** collection of a **CodeNamespace** named `samples`:
+The following code adds an import for the `System` namespace to the `Imports` collection of a `CodeNamespace` named `samples`:
 
 [!code-cpp[CodeDomExample#14](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#14)]
 [!code-csharp[CodeDomExample#14](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#14)]
@@ -81,7 +81,7 @@ The following code adds an import for the **System** namespace to the **Imports*
 
 All code elements that form a CodeDOM graph must be linked to the <xref:System.CodeDom.CodeCompileUnit> that is the root element of the tree by a series of references between elements directly referenced from the properties of the root object of the graph. Set an object to a property of a container object to establish a reference from the container object.
 
-The following statement adds the `samples` **CodeNamespace** to the **Namespaces** collection property of the root **CodeCompileUnit**.
+The following statement adds the `samples` `CodeNamespace` to the `Namespaces` collection property of the root **CodeCompileUnit**.
 
 [!code-cpp[CodeDomExample#15](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#15)]
 [!code-csharp[CodeDomExample#15](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#15)]
@@ -89,15 +89,15 @@ The following statement adds the `samples` **CodeNamespace** to the **Namespaces
 
 #### Define a type
 
-To declare a class, structure, interface, or enumeration using the CodeDOM, create a new <xref:System.CodeDom.CodeTypeDeclaration>, and assign it a name. The following example demonstrates this using a constructor overload to set the **Name** property:
+To declare a class, structure, interface, or enumeration using the CodeDOM, create a new <xref:System.CodeDom.CodeTypeDeclaration>, and assign it a name. The following example demonstrates this using a constructor overload to set the `Name` property:
 
 [!code-cpp[CodeDomExample#16](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#16)]
 [!code-csharp[CodeDomExample#16](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#16)]
 [!code-vb[CodeDomExample#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#16)]
 
-To add a type to a namespace, add a <xref:System.CodeDom.CodeTypeDeclaration> that represents the type to add to the namespace to the **Types** collection of a **CodeNamespace**.
+To add a type to a namespace, add a <xref:System.CodeDom.CodeTypeDeclaration> that represents the type to add to the namespace to the `Types` collection of a **CodeNamespace**.
 
-The following example demonstrates how to add a class named `class1` to a **CodeNamespace** named `samples`:
+The following example demonstrates how to add a class named `class1` to a `CodeNamespace` named `samples`:
 
 [!code-cpp[CodeDomExample#17](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#17)]
 [!code-csharp[CodeDomExample#17](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#17)]
@@ -105,7 +105,7 @@ The following example demonstrates how to add a class named `class1` to a **Code
 
 #### Add class members to a class
 
-The <xref:System.CodeDom> namespace provides a variety of elements that can be used to represent class members. Each class member can be added to the **Members** collection of a <xref:System.CodeDom.CodeTypeDeclaration>.
+The <xref:System.CodeDom> namespace provides a variety of elements that can be used to represent class members. Each class member can be added to the `Members` collection of a <xref:System.CodeDom.CodeTypeDeclaration>.
 
 #### Define a code entry point method for an executable
 
@@ -117,7 +117,7 @@ The following example demonstrates how to define an entry point method that cont
 [!code-csharp[CodeDomExample#18](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#18)]
 [!code-vb[CodeDomExample#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#18)]
 
-The following statement adds the entry point method named `Start` to the **Members** collection of `class1`:
+The following statement adds the entry point method named `Start` to the `Members` collection of `class1`:
 
 [!code-cpp[CodeDomExample#19](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#19)]
 [!code-csharp[CodeDomExample#19](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#19)]

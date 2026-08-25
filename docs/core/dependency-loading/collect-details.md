@@ -151,7 +151,7 @@ AssemblyLoading /d default alc-resolving
 
 Collect and open another `.nettrace` file using the [steps from above](#collect-the-trace).
 
-Filter to the `Start` and `Stop` events for `MyLibrary` again. You should see a `Start`/`Stop` pair with another `Start`/`Stop` between them. The inner load operation represents the load triggered by the handler for <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> when it called <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath%2A?displayProperty=nameWithType>. This time, you should see `Success=True` on the `Stop` event, indicating the load operation succeeded. The `ResultAssemblyPath` field shows the path of the resulting assembly.
+Filter to the `Start` and `Stop` events for `MyLibrary` again. You should see a `Start`/`Stop` pair with another `Start`/`Stop` between them. The inner load operation represents the load triggered by the handler for <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> when it called <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath*?displayProperty=nameWithType>. This time, you should see `Success=True` on the `Stop` event, indicating the load operation succeeded. The `ResultAssemblyPath` field shows the path of the resulting assembly.
 
 :::image type="content" source="media/collect-details/start-stop-success.png" alt-text="PerfView successful Start and Stop events image":::
 

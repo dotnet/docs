@@ -33,9 +33,9 @@ This change was made to prevent the <xref:System.InvalidCastException> from bein
 
 ## Recommended action
 
-Pass `Hashtable` instead of a string to the <xref:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps%2A> API.
+Pass `Hashtable` instead of a string to the <xref:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps*> API.
 
 ## Affected APIs
 
 - <xref:System.Windows.Markup.XmlAttributeProperties.GetXmlNamespaceMaps(System.Windows.DependencyObject)?displayProperty=fullName>
-- <xref:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps%2A?displayProperty=fullName>
+- <xref:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps*?displayProperty=fullName>

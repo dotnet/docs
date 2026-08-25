@@ -47,7 +47,7 @@ Callers of <xref:System.String.Trim*?displayProperty=nameWithType> who explicitl
 As for <xref:System.String.Split*?displayProperty=nameWithType>, unlike with <xref:System.String.Trim*?displayProperty=nameWithType>, this method already has an [overload](xref:System.String.Split(System.String,System.StringSplitOptions)) that's both preferred over an extension method accepting a single string parameter and the newly added `ReadOnlySpan<char>` overload. For this reason, the new overload of <xref:System.String.Split*?displayProperty=nameWithType> was preserved.
 
 > [!NOTE]
-> You should rebuild any assembly built against .NET 9 Preview 6, .NET 9 Preview 7, .NET 9 RC1, or .NET 9 RC2 to ensure that any calls to the removed method are removed. Failure to do so might result in a <xref:System.MissingMethodException> at run time.
+> You should rebuild any assembly built against .NET 9 Preview 6, .NET 9 Preview 7, .NET 9 RC1, or .NET 9 RC2 to ensure that any calls to the removed method are removed. Failure to do so might result in a <xref:System.MissingMethodException> at runtime.
 
 ## Version introduced
 

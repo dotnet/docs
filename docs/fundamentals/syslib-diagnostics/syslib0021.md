@@ -26,7 +26,7 @@ The following derived cryptographic types are marked as obsolete, starting in .N
 
 ## Workarounds
 
-Use the `Create` method on the base type instead. For example, use <xref:System.Security.Cryptography.TripleDES.Create%2A?displayProperty=nameWithType> instead of <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider>.
+Use the `Create` method on the base type instead. For example, use <xref:System.Security.Cryptography.TripleDES.Create*?displayProperty=nameWithType> instead of <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider>.
 
 ## Suppress a warning
 

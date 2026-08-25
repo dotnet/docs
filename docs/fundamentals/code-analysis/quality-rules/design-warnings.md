@@ -63,8 +63,8 @@ Design rules support adherence to the [.NET Framework design guidelines](../../.
 | [CA1063: Implement IDisposable correctly](ca1063.md) | All IDisposable types should implement the Dispose pattern correctly. |
 | [CA1064: Exceptions should be public](ca1064.md) | An internal exception is visible only inside its own internal scope. After the exception falls outside the internal scope, only the base exception can be used to catch the exception. If the internal exception is inherited from <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, or <xref:System.ApplicationException?displayProperty=fullName>, the external code will not have sufficient information to know what to do with the exception. |
 | [CA1065: Do not raise exceptions in unexpected locations](ca1065.md) | A method that is not expected to throw exceptions throws an exception. |
-| [CA1066: Implement IEquatable when overriding Equals](ca1066.md) | A value type overrides <xref:System.Object.Equals%2A> method, but does not implement <xref:System.IEquatable%601>. |
-| [CA1067: Override Equals when implementing IEquatable](ca1067.md) | A type implements <xref:System.IEquatable%601>, but does not override <xref:System.Object.Equals%2A> method. |
+| [CA1066: Implement IEquatable when overriding Equals](ca1066.md) | A value type overrides <xref:System.Object.Equals*> method, but does not implement <xref:System.IEquatable`1>. |
+| [CA1067: Override Equals when implementing IEquatable](ca1067.md) | A type implements <xref:System.IEquatable`1>, but does not override <xref:System.Object.Equals*> method. |
 | [CA1068: CancellationToken parameters must come last](ca1068.md) | A method has a CancellationToken parameter that is not the last parameter. |
 | [CA1069: Enums should not have duplicate values](ca1069.md) | An enumeration has multiple members which are explicitly assigned the same constant value. |
 | [CA1070: Do not declare event fields as virtual](ca1070.md) | A [field-like event](../../../csharp/event-pattern.md#define-and-raise-field-like-events) was declared as virtual. |

@@ -10,7 +10,7 @@ ms.date: 01/27/2025
 
 In this article, you learn how to integrate `IHttpClientFactory` with Keyed Services.
 
-[_Keyed Services_](dependency-injection.md#keyed-services) (also called _Keyed DI_) is a dependency injection (DI) feature that allows you to conveniently operate with multiple implementations of a single service. Upon registration, you can associate different _service keys_ with the specific implementations. At run time, this key is used in lookup in combination with a service type, which means you can retrieve a specific implementation by passing the matching key. For more information on Keyed Services, and DI in general, see [.NET dependency injection][di].
+[_Keyed Services_](dependency-injection/overview.md#keyed-services) (also called _Keyed DI_) is a dependency injection (DI) feature that allows you to conveniently operate with multiple implementations of a single service. Upon registration, you can associate different _service keys_ with the specific implementations. At runtime, this key is used in lookup in combination with a service type, which means you can retrieve a specific implementation by passing the matching key. For more information on Keyed Services, and DI in general, see [.NET dependency injection][di].
 
 For an overview on how to use `IHttpClientFactory` in your .NET application, see [IHttpClientFactory with .NET][hcf].
 
@@ -22,7 +22,7 @@ Starting from .NET 9 (`Microsoft.Extensions.Http` and `Microsoft.Extensions.Depe
 
 ## Basic Usage
 
-As of .NET 9, you need to _opt in_ to the feature by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed%2A> extension method. If opted in, the Named client applying the configuration is added to the DI container as a Keyed `HttpClient` service, using the client's name as a service key, so you can use the standard Keyed Services APIs (for example, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute>) to obtain the desired Named `HttpClient` instances (created and configured by `IHttpClientFactory`). By default, the clients are registered with _Scoped_ lifetime.
+As of .NET 9, you need to _opt in_ to the feature by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed*> extension method. If opted in, the Named client applying the configuration is added to the DI container as a Keyed `HttpClient` service, using the client's name as a service key, so you can use the standard Keyed Services APIs (for example, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute>) to obtain the desired Named `HttpClient` instances (created and configured by `IHttpClientFactory`). By default, the clients are registered with _Scoped_ lifetime.
 
 The following code illustrates the integration between `IHttpClientFactory`, Keyed DI, and ASP.NET Core 9.0 Minimal APIs:
 
@@ -215,7 +215,7 @@ Technically, the example "unwraps" the Typed client, so that the previously "hid
 
 ## How to: Opt in to Keyed DI by default
 
-You don't have to call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed%2A> for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
+You don't have to call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed*> for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults*>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());
@@ -237,12 +237,12 @@ public class MyController(
 > `KeyedService.AnyKey` registrations define a mapping from _any_ key value to some service instance. However, as a result, the Container validation doesn't apply, and an _erroneous_ key value _silently_ leads to a _wrong instance_ being injected.
 
 > [!IMPORTANT]
-> For Keyed `HttpClient`s, a mistake in the client name can result in erroneously injecting an "unknown" client&mdash;meaning, a client whose name was never registered.
+> For Keyed `HttpClient` clients, a mistake in the client name can result in erroneously injecting an "unknown" client&mdash;meaning, a client whose name was never registered.
 
 The same is true for the plain Named clients: `IHttpClientFactory` doesn't require the client name to be explicitly registered (aligning with the way the [Options pattern](options.md) works). The factory gives you an unconfigured&mdash;or, more precisely, default-configured&mdash;`HttpClient` for any unknown name.
 
 > [!NOTE]
-> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient`s, but all the clients that `IHttpClientFactory` is _able to create_.
+> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient` clients, but all the clients that `IHttpClientFactory` is _able to create_.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());
@@ -258,7 +258,7 @@ Even though the "global" opt-in is a one-liner, it's unfortunate that the featur
 
 ## How to: Opt out from keyed registration
 
-You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RemoveAsKeyed%2A> extension method, either per client name:
+You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RemoveAsKeyed*> extension method, either per client name:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());      // opt IN by default
@@ -270,7 +270,7 @@ provider.GetRequiredKeyedService<HttpClient>("not-keyed"); // Throws: No service
 provider.GetRequiredKeyedService<HttpClient>("unknown");   // OK (unconfigured instance)
 ```
 
-Or "globally" with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>:
+Or "globally" with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults*>:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.RemoveAsKeyed()); // opt OUT by default
@@ -298,5 +298,5 @@ If called together or any of them more than once, `AddAsKeyed()` and `RemoveAsKe
 - [Common `IHttpClientFactory` usage issues][hcf-troubleshooting]
 
 [hcf]: httpclient-factory.md
-[di]: dependency-injection.md
+[di]: dependency-injection/overview.md
 [hcf-troubleshooting]: httpclient-factory-troubleshooting.md

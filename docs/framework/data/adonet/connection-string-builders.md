@@ -8,7 +8,7 @@ dev_langs:
 ---
 # Connection string builders
 
-In early versions of ADO.NET, compile-time checking of connection strings with concatenated string values did not occur, so that at run time, an incorrect keyword generated an <xref:System.ArgumentException>. Each of the .NET Framework data providers supported different syntax for connection string keywords, which made constructing valid connection strings difficult if done manually. To address this problem, ADO.NET 2.0 introduced new connection string builders for each .NET Framework data provider. Each data provider includes a strongly typed connection string builder class that inherits from <xref:System.Data.Common.DbConnectionStringBuilder>. The following table lists the .NET Framework data providers and their associated connection string builder classes.
+In early versions of ADO.NET, compile-time checking of connection strings with concatenated string values did not occur, so that at runtime, an incorrect keyword generated an <xref:System.ArgumentException>. Each of the .NET Framework data providers supported different syntax for connection string keywords, which made constructing valid connection strings difficult if done manually. To address this problem, ADO.NET 2.0 introduced new connection string builders for each .NET Framework data provider. Each data provider includes a strongly typed connection string builder class that inherits from <xref:System.Data.Common.DbConnectionStringBuilder>. The following table lists the .NET Framework data providers and their associated connection string builder classes.
 
 | Provider                        | ConnectionStringBuilder class                                                              |
 |---------------------------------|--------------------------------------------------------------------------------------------|
@@ -53,9 +53,9 @@ initial catalog="AdventureWorks;NewValue=Bad"
 
 ## Build connection strings from configuration files
 
- If certain elements of a connection string are known beforehand, they can be stored in a configuration file and retrieved at run time to construct a complete connection string. For example, the name of the database might be known in advance, but not the name of the server.
+ If certain elements of a connection string are known beforehand, they can be stored in a configuration file and retrieved at runtime to construct a complete connection string. For example, the name of the database might be known in advance, but not the name of the server.
 
- One of the overloaded constructors for a connection string builder takes a <xref:System.String> as an argument, which enables you to supply a partial connection string that can then be completed from user input. The partial connection string can be stored in a configuration file and retrieved at run time.
+ One of the overloaded constructors for a connection string builder takes a <xref:System.String> as an argument, which enables you to supply a partial connection string that can then be completed from user input. The partial connection string can be stored in a configuration file and retrieved at runtime.
 
 > [!NOTE]
 > The <xref:System.Configuration> namespace allows programmatic access to configuration files that use the <xref:System.Web.Configuration.WebConfigurationManager> for web apps and the <xref:System.Configuration.ConfigurationManager> for Windows applications. For more information about working with connection strings and configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).

@@ -3,7 +3,8 @@ title: Select which .NET version to use
 description: Learn how .NET automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
 author: adegeo
 ms.author: adegeo
-ms.date: 07/08/2021
+ms.date: 05/15/2026
+ai-usage: ai-assisted
 ---
 
 # Select the .NET version to use
@@ -12,6 +13,9 @@ This article explains the policies used by the .NET tools, SDK, and runtime for 
 
 - Easy and efficient deployment of .NET, including security and reliability updates.
 - Use the latest tools and commands independent of target runtime.
+
+> [!TIP]
+> If you reached this page from a "compatible .NET SDK was not found" build error, [download the .NET SDK](https://dotnet.microsoft.com/download/dotnet) to install the required version. Alternatively, update your *global.json* file to match a version that's already installed.
 
 Version selection occurs:
 
@@ -31,7 +35,7 @@ SDK commands include `dotnet new` and `dotnet run`. The .NET CLI must choose an 
 
 You can take advantage of the latest SDK features and improvements while targeting earlier .NET runtime versions. You can target different runtime versions of .NET using the same SDK tools.
 
-In some circumstances, you may need to use a specific version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md).
+In some circumstances, you might need to use a specific version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md).
 
 *global.json* can be placed anywhere in the file hierarchy. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory (which isn't necessarily the same as the project directory). The first *global.json* file found specifies the version used. If that SDK version is installed, that version is used. If the SDK specified in the *global.json* isn't found, the .NET CLI uses [matching rules](../tools/global-json.md#matching-rules) to select a compatible SDK, or fails if none is found.
 
@@ -55,7 +59,9 @@ For more information about SDK version selection, see the [Matching rules](../to
 
 ### Updating the SDK version
 
-It is important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
+It's important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
+
+To surface related warnings at build time for the resolved SDK, set the `CheckSdkVulnerabilities` MSBuild property to `true`. The build then warns if the resolved .NET SDK has known vulnerabilities ([NETSDK1238](../tools/sdk-errors/netsdk1238.md)), is end of life ([NETSDK1239](../tools/sdk-errors/netsdk1239.md)), or is on a feature band that has no newer release ([NETSDK1240](../tools/sdk-errors/netsdk1240.md)).
 
 ## Target framework monikers define build time APIs
 
@@ -81,11 +87,11 @@ For more information, see [.NET 5 and .NET Standard](../../standard/net-standard
 
 ## Framework-dependent apps roll-forward
 
-When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#framework-dependent-deployment) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#framework-dependent-deployment) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-as-framework-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-as-framework-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `net5.0` in your project file, and `5.0.2` is the latest .NET runtime installed, the `5.0.2` runtime is used.
 
-If no acceptable `5.0.*` version is found, a new `5.*` version is used. For example, if you specified `net5.0` and only `5.1.0` is installed, the application runs using the `5.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application won't run.
+If no acceptable `5.0.*` version is found, a new `5.*` version is used. For example, if you specified `net5.0` and only `5.1.0` is installed, the application runs using the `5.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application doesn't run.
 
 A few usage examples demonstrate the behavior, if you target 5.0:
 
@@ -94,11 +100,11 @@ A few usage examples demonstrate the behavior, if you target 5.0:
 - ✔️ 5.0 is specified. No 5.0.* versions are installed. 5.1.0 is the highest runtime version installed. 5.1.0 is used.
 - ❌ 3.0 is specified. No 3.x versions are installed. 5.0.0 is the highest runtime installed. An error message is displayed.
 
-Minor version roll-forward has one side-effect that may affect end users. Consider the following scenario:
+Minor version roll-forward has one side-effect that might affect end users. Consider the following scenario:
 
 01. The application specifies that 5.0 is required.
-02. When run, version 5.0.* isn't installed, however, 5.1.0 is. Version 5.1.0 will be used.
-03. Later, the user installs 5.0.3 and runs the application again, 5.0.3 will now be used.
+02. When run, version 5.0.* isn't installed, however, 5.1.0 is. Version 5.1.0 is used.
+03. Later, the user installs 5.0.3 and runs the application again, 5.0.3 is now used.
 
 It's possible that 5.0.3 and 5.1.0 behave differently, particularly for scenarios like serializing binary data.
 
@@ -147,7 +153,7 @@ The roll-forward behavior for an application can be configured in four different
 
 ### Precedence
 
-Roll forward behavior is set by the following order when your app is run, higher numbered items taking precedence over lower numbered items:
+Roll-forward behavior is set in the following order when your app is run, with higher numbered items taking precedence over lower numbered items:
 
 01. First the `*.runtimeconfig.json` config file is evaluated.
 01. Next, the `DOTNET_ROLL_FORWARD` environment variable is considered, overriding the previous check.
@@ -173,13 +179,13 @@ Then the resolved version is as follows in each case:
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployment). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-as-self-contained). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not runtime.
 
-The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
+The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` selects .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 
 An error occurs if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET applications.
 
-Self-contained deployments may require a specific patch version. You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
+Self-contained deployments might require a specific patch version. You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
 
 ``` xml
 <PropertyGroup>

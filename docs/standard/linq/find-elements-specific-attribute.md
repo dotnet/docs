@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to find elements with a specific attribute (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> to find all elements that have a specific attribute (regardless of value), and how to use LINQ to XML query to do the same thing.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate*> to find all elements that have a specific attribute (regardless of value), and how to use LINQ to XML query to do the same thing.
 
 ## Example: Find all elements that have the `Select` attribute
 

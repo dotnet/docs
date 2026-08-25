@@ -14,28 +14,28 @@ The standard query operator methods that perform set operations are listed in th
 
 |Method Name|Description|Visual Basic Query Expression Syntax|More Information|
 |-----------------|-----------------|------------------------------------------|----------------------|
-| Distinct or DistinctBy |Removes duplicate values from a collection.|`Distinct`| <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.DistinctBy%2A?displayProperty=nameWithType> |
-| Except or ExceptBy |Returns the set difference, which means the elements of one collection that do not appear in a second collection.|Not applicable.| <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.ExceptBy%2A?displayProperty=nameWithType> |
-| Intersect or IntersectBy |Returns the set intersection, which means elements that appear in each of two collections.|Not applicable.| <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.IntersectBy%2A?displayProperty=nameWithType> |
-| Union or UnionBy |Returns the set union, which means unique elements that appear in either of two collections.|Not applicable.| <xref:System.Linq.Enumerable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.UnionBy%2A?displayProperty=nameWithType> |
+| Distinct or DistinctBy |Removes duplicate values from a collection.|`Distinct`| <xref:System.Linq.Enumerable.Distinct*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.DistinctBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Distinct*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.DistinctBy*?displayProperty=nameWithType> |
+| Except or ExceptBy |Returns the set difference, which means the elements of one collection that do not appear in a second collection.|Not applicable.| <xref:System.Linq.Enumerable.Except*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.ExceptBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Except*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.ExceptBy*?displayProperty=nameWithType> |
+| Intersect or IntersectBy |Returns the set intersection, which means elements that appear in each of two collections.|Not applicable.| <xref:System.Linq.Enumerable.Intersect*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.IntersectBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Intersect*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.IntersectBy*?displayProperty=nameWithType> |
+| Union or UnionBy |Returns the set union, which means unique elements that appear in either of two collections.|Not applicable.| <xref:System.Linq.Enumerable.Union*?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.UnionBy*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Union*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.UnionBy*?displayProperty=nameWithType> |
 
 ## Comparison of Set Operations
 
 ### Distinct
 
-The following illustration depicts the behavior of the <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> method on a sequence of characters. The returned sequence contains the unique elements from the input sequence.
+The following illustration depicts the behavior of the <xref:System.Linq.Enumerable.Distinct*?displayProperty=nameWithType> method on a sequence of characters. The returned sequence contains the unique elements from the input sequence.
 
 ![Graphic showing the behavior of Distinct&#40;&#41;.](./media/set-operations/distinct-method-behavior.png)
 
 ### Except
 
-The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that are not in the second input sequence.
+The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Except*?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that are not in the second input sequence.
 
 ![Graphic showing the action of Except&#40;&#41;.](./media/set-operations/except-behavior-graphic.png "Shows the behavior of Except.")
 
 ### Intersect
 
-The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.
+The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Intersect*?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.
 
 ![Graphic showing the intersection of two sequences.](./media/set-operations/intersection-two-sequences.png)
 

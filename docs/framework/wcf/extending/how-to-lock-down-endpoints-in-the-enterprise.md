@@ -21,7 +21,7 @@ In this case, the validator is a client validator because this endpoint behavior
 
 ### To create the endpoint validator
 
-1. Create an <xref:System.ServiceModel.Description.IEndpointBehavior> with the desired validation steps in the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%2A> method. The following code provides an example. (The `InternetClientValidatorBehavior` is taken from the [Security Validation](../samples/security-validation.md) sample.)
+1. Create an <xref:System.ServiceModel.Description.IEndpointBehavior> with the desired validation steps in the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate*> method. The following code provides an example. (The `InternetClientValidatorBehavior` is taken from the [Security Validation](../samples/security-validation.md) sample.)
 
     [!code-csharp[LockdownValidation#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorbehavior.cs#2)]
 

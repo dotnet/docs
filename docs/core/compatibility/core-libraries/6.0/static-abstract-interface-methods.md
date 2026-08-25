@@ -47,4 +47,4 @@ N/A
 
 ## See also
 
-- [Tutorial: Explore static virtual members in interfaces](../../../../csharp/whats-new/tutorials/static-virtual-interface-members.md)
+- [Tutorial: Explore static virtual members in interfaces](../../../../csharp/advanced-topics/interface-implementation/static-virtual-interface-members.md)

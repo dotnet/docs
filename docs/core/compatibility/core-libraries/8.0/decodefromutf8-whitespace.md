@@ -33,7 +33,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 The change was made so that:
 
 - The <xref:System.Buffers.Text.Base64> methods can decode a wider range of input data, including:
-  - Data produced by <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> with the <xref:System.Base64FormattingOptions.InsertLineBreaks?displayProperty=nameWithType> option.
+  - Data produced by <xref:System.Convert.ToBase64String*?displayProperty=nameWithType> with the <xref:System.Base64FormattingOptions.InsertLineBreaks?displayProperty=nameWithType> option.
   - Common formatting of data in configuration files and other real data sources.
 - The <xref:System.Buffers.Text.Base64> methods are consistent with the corresponding decoding APIs on <xref:System.Convert>.
 - The new <xref:System.Buffers.Text.Base64.IsValid(System.ReadOnlySpan{System.Char})?displayProperty=nameWithType> and <xref:System.Buffers.Text.Base64.IsValid(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType> APIs could be added in a manner where their behavior is consistent with each other and with the existing <xref:System.Convert> and <xref:System.Buffers.Text.Base64> APIs.

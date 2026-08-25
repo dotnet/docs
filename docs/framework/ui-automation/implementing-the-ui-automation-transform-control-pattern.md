@@ -39,12 +39,12 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.CanMove%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.CanResize%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.CanRotate%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.Move%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.Resize%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.CanMove>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.CanResize>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.CanRotate>|Property|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.Move*>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.Resize*>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate*>|Method|None|
 
  This control pattern has no associated events.
 
@@ -56,9 +56,9 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
 
 |Exception Type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Move%2A><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanMoveProperty> is false.|
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Resize%2A><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanResizeProperty> is false.|
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate%2A><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanRotateProperty> is false.|
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Move*><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanMoveProperty> is false.|
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Resize*><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanResizeProperty> is false.|
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate*><br /><br /> -   If the <xref:System.Windows.Automation.TransformPatternIdentifiers.CanRotateProperty> is false.|
 
 ## See also
 

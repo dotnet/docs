@@ -12,7 +12,7 @@ Errors may be encountered any time the Microsoft.Data.Sqlite interacts with the 
 * Opening a connection.
 * Beginning a transaction.
 * Executing a command.
-* Calling <xref:Microsoft.Data.Sqlite.SqliteDataReader.NextResult%2A>.
+* Calling <xref:Microsoft.Data.Sqlite.SqliteDataReader.NextResult*>.
 
 Consider carefully how your app will handle these errors.
 
@@ -26,14 +26,14 @@ SQLite is aggressive when it comes to locking tables and database files. If your
 
 Whenever Microsoft.Data.Sqlite encounters a busy or locked error, it will automatically retry until it succeeds or the command timeout is reached.
 
-You can increase the timeout of a command by setting <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout%2A>. The default timeout is 30 seconds. A value of `0` means no timeout.
+You can increase the timeout of a command by setting <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout*>. The default timeout is 30 seconds. A value of `0` means no timeout.
 
 ```csharp
 // Retry for 60 seconds while locked
 command.CommandTimeout = 60;
 ```
 
-Microsoft.Data.Sqlite sometimes needs to create an implicit command object. For example, during BeginTransaction. To set the timeout for these commands, use <xref:Microsoft.Data.Sqlite.SqliteConnection.DefaultTimeout%2A>.
+Microsoft.Data.Sqlite sometimes needs to create an implicit command object. For example, during BeginTransaction. To set the timeout for these commands, use <xref:Microsoft.Data.Sqlite.SqliteConnection.DefaultTimeout*>.
 
 ```csharp
 // Set the default timeout of all commands on this connection

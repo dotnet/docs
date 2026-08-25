@@ -8,9 +8,9 @@ ms.date: 08/25/2023
 
 .NET 8 introduces a source generator that creates an implementation of the [ComWrappers](./com-wrappers.md) API for you. The generator recognizes the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute>.
 
-The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that's JIT-ed&mdash;at run time to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at run time, it's incompatible with [NativeAOT](../../core/deploying/native-aot/index.md) and [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Stub generation at run time can also make diagnosing marshalling issues difficult.
+The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that's JIT-ed&mdash;at runtime to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at runtime, it's incompatible with [NativeAOT](../../core/deploying/native-aot/index.md) and [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Stub generation at runtime can also make diagnosing marshalling issues difficult.
 
-Built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at run time. The following code shows an example of this:
+Built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at runtime. The following code shows an example of this:
 
 ```csharp
 [ComImport]

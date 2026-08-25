@@ -2,7 +2,7 @@
 title: "Static Constructors"
 description: A static constructor in C# initializes static data or performs an action done only once. It runs before the first instance is created or static members are referenced.
 ms.date: 07/31/2024
-helpviewer_keywords: 
+helpviewer_keywords:
   - "static constructors [C#]"
   - "constructors [C#], static"
 ---
@@ -17,14 +17,14 @@ There are several actions that are part of static initialization. Those actions 
 1. *Static fields are set to 0*. The runtime typically does this initialization.
 1. *Static field initializers run*. The static field initializers in the most derived type run.
 1. *Base type static field initializers run*. Static field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
-1. *Any static constructor runs*. Any static constructors, from the ultimate base class of <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class through the type run. The order of static constructor execution isn't specified. However, all static constructors in the hierarchy run before any instances are created.
+1. *Any static constructor runs*. Any static constructors, from the ultimate base class of <xref:System.Object.%23ctor*?displayProperty=nameWithType> through each base class through the type run. The order of static constructor execution isn't specified. However, all static constructors in the hierarchy run before any instances are created.
 
 > [!IMPORTANT]
 > There is one important exception to the rule that a static constructor runs before any instance is created. If a static field initializer creates an instance of the type, that initializer runs (including any call to an instance constructor) before the static constructor runs. This is most common in the *singleton pattern* as shown in the following example:
 >
 > :::code language="csharp" source="./snippets/static-constructors/Program.cs" id="Singleton":::
 
-A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md).
+A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](~/_csharpstandard/standard/attributes.md#23510-the-moduleinitializer-attribute).
 
 ## Remarks
 

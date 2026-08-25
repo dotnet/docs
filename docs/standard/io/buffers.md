@@ -13,10 +13,10 @@ This article provides an overview of types that help read data that runs across 
 
 ## IBufferWriter\<T\>
 
-<xref:System.Buffers.IBufferWriter%601?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level, the interface:
+<xref:System.Buffers.IBufferWriter`1?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level, the interface:
 
 - Is basic and not difficult to use.
-- Allows access to a <xref:System.Memory%601> or <xref:System.Span%601>. The `Memory<T>` or `Span<T>` can be written to and you can determine how many `T` items were written.
+- Allows access to a <xref:System.Memory`1> or <xref:System.Span`1>. The `Memory<T>` or `Span<T>` can be written to and you can determine how many `T` items were written.
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet)]
 
@@ -24,13 +24,13 @@ The preceding method:
 
 - Requests a buffer of at least 5 bytes from the `IBufferWriter<byte>` using `GetSpan(5)`.
 - Writes bytes for the ASCII string "Hello" to the returned `Span<byte>`.
-- Calls  <xref:System.Buffers.IBufferWriter%601> to indicate how many bytes were written to the buffer.
+- Calls  <xref:System.Buffers.IBufferWriter`1> to indicate how many bytes were written to the buffer.
 
-This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IBufferWriter<T>`. Alternatively, the <xref:System.Buffers.BuffersExtensions.Write%2A> extension method can be used to copy an existing buffer to the `IBufferWriter<T>`. `Write` does the work of calling `GetSpan`/`Advance` as appropriate, so there's no need to call `Advance` after writing:
+This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IBufferWriter<T>`. Alternatively, the <xref:System.Buffers.BuffersExtensions.Write*> extension method can be used to copy an existing buffer to the `IBufferWriter<T>`. `Write` does the work of calling `GetSpan`/`Advance` as appropriate, so there's no need to call `Advance` after writing:
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet2)]
 
-<xref:System.Buffers.ArrayBufferWriter%601> is an implementation of `IBufferWriter<T>` whose backing store is a single contiguous array.
+<xref:System.Buffers.ArrayBufferWriter`1> is an implementation of `IBufferWriter<T>` whose backing store is a single contiguous array.
 
 ### IBufferWriter common problems
 
@@ -42,11 +42,11 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 ![ReadOnlySequence showing memory in pipe and below that sequence position of read-only memory](media/buffers/ro-sequence.png)
 
-<xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or noncontiguous sequence of `T`. It can be constructed from:
+<xref:System.Buffers.ReadOnlySequence`1> is a struct that can represent a contiguous or noncontiguous sequence of `T`. It can be constructed from:
 
 1. A `T[]`
 1. A `ReadOnlyMemory<T>`
-1. A pair of linked list node <xref:System.Buffers.ReadOnlySequenceSegment%601> and index to represent the start and end position of the sequence.
+1. A pair of linked list node <xref:System.Buffers.ReadOnlySequenceSegment`1> and index to represent the start and end position of the sequence.
 
 The third representation is the most interesting one as it has performance implications on various operations on the `ReadOnlySequence<T>`:
 
@@ -73,13 +73,13 @@ The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet3)]
 
 The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`,
-<xref:System.Buffers.ReadOnlySequence%601.TryGet%2A?displayProperty=nameWithType> is more appropriate. The next sample changes the preceding code to return a `SequencePosition` instead of an integer. Returning a `SequencePosition` has the benefit of allowing the caller to avoid a second scan to get the data at a specific index.
+<xref:System.Buffers.ReadOnlySequence`1.TryGet*?displayProperty=nameWithType> is more appropriate. The next sample changes the preceding code to return a `SequencePosition` instead of an integer. Returning a `SequencePosition` has the benefit of allowing the caller to avoid a second scan to get the data at a specific index.
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet4)]
 
 The combination of `SequencePosition` and `TryGet` acts like an enumerator. The position field is modified at the start of each iteration to be start of each segment within the `ReadOnlySequence<T>`.
 
-The preceding method exists as an extension method on `ReadOnlySequence<T>`. <xref:System.Buffers.BuffersExtensions.PositionOf%2A> can be used to simplify the preceding code:
+The preceding method exists as an extension method on `ReadOnlySequence<T>`. <xref:System.Buffers.BuffersExtensions.PositionOf*> can be used to simplify the preceding code:
 
 ```csharp
 SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => buffer.PositionOf(data);
@@ -98,7 +98,7 @@ There are a few approaches that can be used to process data in multi-segmented s
 - Parse data segment by segment, keeping track of the `SequencePosition` and index within the segment parsed. This avoids unnecessary allocations but may be inefficient, especially for small buffers.
 - Copy the `ReadOnlySequence<T>` to a contiguous array and treat it like a single buffer:
   - If the size of the `ReadOnlySequence<T>` is small, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](../../csharp/language-reference/operators/stackalloc.md) operator.
-  - Copy the `ReadOnlySequence<T>` into a pooled array using <xref:System.Buffers.ArrayPool%601.Shared%2A?displayProperty=nameWithType>.
+  - Copy the `ReadOnlySequence<T>` into a pooled array using <xref:System.Buffers.ArrayPool`1.Shared*?displayProperty=nameWithType>.
   - Use [`ReadOnlySequence<T>.ToArray()`](xref:System.Buffers.BuffersExtensions.ToArray%2A). This isn't recommended in hot paths as it allocates a new `T[]` on the heap.
 
 The following examples demonstrate some common cases for processing `ReadOnlySequence<byte>`:
@@ -148,7 +148,7 @@ There are several unusual outcomes when dealing with a `ReadOnlySequence<T>`/`Se
 
 ## SequenceReader\<T\>
 
-<xref:System.Buffers.SequenceReader%601>:
+<xref:System.Buffers.SequenceReader`1>:
 
 - Is a new type that was introduced in .NET Core 3.0 to simplify the processing of a `ReadOnlySequence<T>`.
 - Unifies the differences between a single segment `ReadOnlySequence<T>` and multi-segment `ReadOnlySequence<T>`.

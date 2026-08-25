@@ -1,7 +1,7 @@
 ---
 title: Determine which .NET Framework versions are installed
 description: Use code, regedit.exe, or PowerShell to detect which versions of .NET Framework are installed on a machine by querying the Windows registry. Or, check Control Panel.
-ms.date: 07/10/2025
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -86,7 +86,7 @@ The **Release** REG_DWORD value in the registry represents the version of .NET F
 | .NET Framework 4.7.1   | On Windows 10 Fall Creators Update and Windows Server, version 1709: **461308**<br/>On all other Windows operating systems (including other Windows 10 operating systems): **461310** |
 | .NET Framework 4.7.2   | On Windows 10 April 2018 Update and Windows Server, version 1803: **461808**<br/>On all Windows operating systems other than Windows 10 April 2018 Update and Windows Server, version 1803: **461814** |
 | .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: **528040**<br/>On Windows 10 May 2020 Update, October 2020 Update, May 2021 Update, November 2021 Update, and 2022 Update: **528372**<br/>On Windows 11 and Windows Server 2022: **528449**<br/>On all other Windows operating systems (including other Windows 10 operating systems): **528049** |
-| .NET Framework 4.8.1   | On Windows 11 2022 Update and Windows 11 2023 Update: **533320**<br/>All other Windows operating systems: **533325** |
+| .NET Framework 4.8.1   | On Windows 11 2025 Update: **533509**<br/>On Windows 11 2022 Update and Windows 11 2023 Update: **533320**<br/>All other Windows operating systems: **533325** |
 
 #### Minimum version
 
@@ -130,7 +130,7 @@ The following examples check the value of the **Release** entry to determine whe
 
 #### Query the registry using code
 
-1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey in the Windows registry.
+1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey*?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey*?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey in the Windows registry.
 
    > [!IMPORTANT]
    > If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 32-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 4.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**.
@@ -319,7 +319,7 @@ v4.0.30319
 
    - For the major release identifier (for example, *4* for version 4.0), use the <xref:System.Version.Major?displayProperty=nameWithType> property.
    - For the minor release identifier (for example, *0* for version 4.0), use the <xref:System.Version.Minor?displayProperty=nameWithType> property.
-   - For the entire version string (for example, *4.0.30319.18010*), use the <xref:System.Version.ToString%2A?displayProperty=nameWithType> method. This method returns a single value that reflects the version of the runtime that's executing the code. It doesn't return assembly versions or other runtime versions that may be installed on the computer.
+   - For the entire version string (for example, *4.0.30319.18010*), use the <xref:System.Version.ToString*?displayProperty=nameWithType> method. This method returns a single value that reflects the version of the runtime that's executing the code. It doesn't return assembly versions or other runtime versions that may be installed on the computer.
 
 The following example uses the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve CLR version information:
 

@@ -1,11 +1,12 @@
 ---
 title: dotnet new update
+ai-usage: ai-assisted
 description: The dotnet new update command updates installed template packages.
-ms.date: 04/29/2021
+ms.date: 10/28/2025
 ---
 # dotnet new update
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -14,10 +15,10 @@ ms.date: 04/29/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet new update [--interactive] [--add-source|--nuget-source <SOURCE>] 
+dotnet new update [--interactive] [--add-source|--nuget-source <SOURCE>]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 
-dotnet new update --check-only|--dry-run [--interactive] [--add-source|--nuget-source <SOURCE>] 
+dotnet new update --check-only|--dry-run [--interactive] [--add-source|--nuget-source <SOURCE>]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
@@ -27,7 +28,7 @@ The `dotnet new update` command updates installed template packages.
 The `dotnet new update` command with `--check-only` option checks for available updates for installed template packages without applying them.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -47,12 +48,12 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
 ## Options
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-- **`--add-source|nuget-source <SOURCE>`**
-  
-  By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior). Available since .NET SDK 7.0.100.
+- **`--add-source|--nuget-source <SOURCE>`**
+
+  By default, `dotnet new update` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet sources for the operation. Specify `--nuget-source` to use a source in addition to the configured sources.
+  To check the configured sources for the current directory, use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior). Available since .NET SDK 7.0.100.
 
 - **`--check-only|--dry-run`**
 
@@ -62,13 +63,9 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
+- [!INCLUDE [help](includes/cli-help.md)]
 
-  Prints out help for the update command. Available since .NET SDK 7.0.100.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 
@@ -89,4 +86,4 @@ The `dotnet new update` command with `--check-only` option checks for available 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new search command](dotnet-new-search.md)
 - [dotnet new install command](dotnet-new-install.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)

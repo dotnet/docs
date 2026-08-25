@@ -1,14 +1,14 @@
 ---
 title: "Strings"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
-ms.date: 10/07/2025
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "C# language, strings"
   - "strings [C#]"
 ---
 # Strings and string literals
 
-A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. The <xref:System.String.Length%2A> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.
+A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. The <xref:System.String.Length> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.
 
 ## string vs. System.String
 
@@ -34,7 +34,7 @@ Because a string "modification" is actually a new string creation, you must use 
 
 :::code language="csharp" source="./snippets/Declarations.cs" id="ModifyIsCopy":::
 
-For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to modify string contents](../../how-to/modify-string-contents.md).
+For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to modify string contents](../../fundamentals/strings/common-tasks/modify.md).
 
 ## Quoted string literals
 
@@ -50,7 +50,7 @@ For more information about how to create new strings that are based on modificat
 
 ## Raw string literals
 
-Beginning with C# 11, you can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
+You can use *raw string literals* to more easily create strings that are multi-line, or use any characters requiring escape sequences. *Raw string literals* remove the need to ever use escape sequences. You can write the string, including whitespace formatting, how you want it to appear in output. A *raw string literal*:
 
 - Starts and ends with a sequence of at least three double quote characters (`"""`). You can use more than three consecutive characters to start and end the sequence to support string literals that contain three (or more) repeated quote characters.
 - Single line raw string literals require the opening and closing quote characters on the same line.
@@ -107,7 +107,7 @@ A format string is a string whose contents are determined dynamically at run tim
 
 ### String interpolation
 
-You declare [*Interpolated strings*](../../language-reference/tokens/interpolated.md) with the `$` special character. An interpolated string includes interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# tutorial](../../tutorials/string-interpolation.md) for several examples.
+You declare [*Interpolated strings*](../../language-reference/tokens/interpolated.md) with the `$` special character. An interpolated string includes interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# tutorial](../../fundamentals/tutorials/string-interpolation.md) for several examples.
 
 Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but is easier to use and improves inline clarity.
 
@@ -115,7 +115,7 @@ Use string interpolation to improve the readability and maintainability of your 
 
 You can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
-Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output. The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
+You can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output. The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
 
@@ -129,7 +129,7 @@ To interpret escape sequences literally, use a [verbatim](../../language-referen
 
 ### Composite formatting
 
-The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used in the preceding sample.
+The <xref:System.String.Format*?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation method used in the preceding sample.
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="StringFormat":::
 
@@ -137,7 +137,7 @@ For more information, see [Composite formatting in .NET](../../../standard/base-
 
 ## Substrings
 
-A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and doesn't modify the original string. For more information, see [How to search strings](../../how-to/search-strings.md) and [How to modify string contents](../../how-to/modify-string-contents.md).
+A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring*> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf*> method. Use the <xref:System.String.Replace*> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring*> method, <xref:System.String.Replace*> actually returns a new string and doesn't modify the original string. For more information, see [Search strings in C#](../../fundamentals/strings/common-tasks/search.md) and [How to modify string contents](../../fundamentals/strings/common-tasks/modify.md).
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="Substrings":::
 
@@ -177,18 +177,18 @@ In this example, a <xref:System.Text.StringBuilder> object is used to create a s
 
 ## Strings, extension methods, and LINQ
 
-Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they're available nevertheless. You can also use LINQ query expressions on strings. For more information, see [LINQ and Strings](/dotnet/csharp/linq).
+Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable`1>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they're available nevertheless. You can also use LINQ query expressions on strings. For more information, see [LINQ and Strings](/dotnet/csharp/linq).
 
 ## Related articles
 
-- [How to modify string contents](../../how-to/modify-string-contents.md): Illustrates techniques to transform strings and modify the contents of strings.
-- [How to compare strings](../../how-to/compare-strings.md): Shows how to perform ordinal and culture specific comparisons of strings.
-- [How to concatenate multiple strings](../../how-to/concatenate-multiple-strings.md): Demonstrates various ways to join multiple strings into one.
-- [How to parse strings using String.Split](../../how-to/parse-strings-using-split.md): Contains code examples that illustrate how to use the <xref:System.String.Split%2A?displayProperty=nameWithType> method to parse strings.
-- [How to search strings](../../how-to/search-strings.md): Explains how to use search for specific text or patterns in strings.
+- [How to modify string contents](../../fundamentals/strings/common-tasks/modify.md): Illustrates techniques to transform strings and modify the contents of strings.
+- [How to compare strings](../../fundamentals/strings/common-tasks/compare.md): Shows how to perform ordinal and culture specific comparisons of strings.
+- [How to concatenate multiple strings](../../fundamentals/strings/common-tasks/concatenate.md): Demonstrates various ways to join multiple strings into one.
+- [Split strings into substrings in C#](../../fundamentals/strings/common-tasks/split.md): Contains code examples that illustrate how to use the <xref:System.String.Split*?displayProperty=nameWithType> method to parse strings.
+- [Search strings in C#](../../fundamentals/strings/common-tasks/search.md): Explains how to search for specific text or patterns in strings.
 - [How to determine whether a string represents a numeric value](./how-to-determine-whether-a-string-represents-a-numeric-value.md): Shows how to safely parse a string to see whether it has a valid numeric value.
 - [String interpolation](../../language-reference/tokens/interpolated.md): Describes the string interpolation feature that provides a convenient syntax to format strings.
-- [Basic String Operations](../../../standard/base-types/basic-string-operations.md): Provides links to articles that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.
+- [Using the StringBuilder class in .NET](../../../standard/base-types/stringbuilder.md)
 - [Parsing Strings](../../../standard/base-types/parsing-strings.md): Describes how to convert string representations of .NET base types to instances of the corresponding types.
 - [Parsing Date and Time Strings in .NET](../../../standard/base-types/parsing-datetime.md): Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=nameWithType> object.
 - [Comparing Strings](../../../standard/base-types/comparing.md): Includes information about how to compare strings and provides examples in C# and Visual Basic.

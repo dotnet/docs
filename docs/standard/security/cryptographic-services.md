@@ -182,7 +182,7 @@ The <xref:System.Security.Cryptography.RandomNumberGenerator> class is an implem
 
 The following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):
 
-- The <xref:System.Security.Cryptography.ManifestSignatureInformation> class obtains information about a manifest signature when you use its <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method overloads.
+- The <xref:System.Security.Cryptography.ManifestSignatureInformation> class obtains information about a manifest signature when you use its <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature*> method overloads.
 
 - You can use the <xref:System.Security.ManifestKinds> enumeration to specify which manifests to verify. The result of the verification is one of the <xref:System.Security.Cryptography.SignatureVerificationResult> enumeration values.
 

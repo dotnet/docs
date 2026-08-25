@@ -1,12 +1,13 @@
 ---
 title: Organizing and testing projects with the .NET CLI
 description: This tutorial explains how to organize and test .NET projects from the command line.
-ms.date: 04/15/2022
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ---
 
 # Organizing and testing projects with the .NET CLI
 
-This tutorial follows [Tutorial: Create a console application with .NET using Visual Studio Code](with-visual-studio-code.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, the tutorial shows you how to extend a console application with the [xUnit](https://xunit.net/) testing framework.
+This tutorial follows [Tutorial: Create a .NET console application](create-console-app.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, the tutorial shows you how to extend a console application with the [xUnit](https://xunit.net/) testing framework.
 
 > [!NOTE]
 > This tutorial recommends that you place the application project and test project in separate folders. Some developers prefer to keep these projects in the same folder. For more information, see GitHub issue [dotnet/docs #26395](https://github.com/dotnet/docs/issues/26395).
@@ -23,7 +24,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 |__Program.cs
 ```
 
-However, this flat structure only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
+However, this flat structure only works well when the size of your project is relatively small. Can you imagine what happens if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
 To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the *Models* folder:
 

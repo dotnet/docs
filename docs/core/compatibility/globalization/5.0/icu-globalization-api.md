@@ -1,7 +1,8 @@
 ---
 title: "Breaking change: Globalization APIs use ICU libraries on Windows 10"
 description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS on Windows 10.
-ms.date: 02/15/2022
+ms.date: 03/10/2026
+ai-usage: ai-assisted
 ---
 # Globalization APIs use ICU libraries on Windows 10
 
@@ -38,7 +39,7 @@ To fix this code by conducting an ordinal search instead of a culture-sensitive 
 
 You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../../../fundamentals/code-analysis/quality-rules/ca1309.md) to find these call sites in your code.
 
-For more information, see [Behavior changes when comparing strings on .NET 5+](../../../../standard/base-types/string-comparison-net-5-plus.md).
+For more information, see [Best practices for comparing strings in .NET](../../../../standard/base-types/best-practices-strings.md).
 
 ### Currency symbol
 
@@ -51,6 +52,21 @@ string text = string.Format("{0:C}", 100);
 
 - In .NET Core 3.1 and earlier versions on Windows, the value of text is `"100,00 €"`.
 - In .NET 5 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a currency is a property of a country or region, not a language.
+
+### IdnMapping.GetAscii
+
+Consider the following code that calls <xref:System.Globalization.IdnMapping.GetAscii(System.String)?displayProperty=nameWithType> to convert an internationalized domain name label to its ASCII-compatible encoding.
+
+```csharp
+var mapping = new System.Globalization.IdnMapping();
+string asciiName = mapping.GetAscii("ABCDEFG");
+Console.WriteLine(asciiName);
+```
+
+- In .NET Core 3.1 and earlier versions on Windows, the snippet prints `ABCDEFG`.
+- In .NET 5 and later versions on Windows 10 May 2019 Update and later versions, the snippet prints `abcdefg`.
+
+ICU lowercases domain name labels as part of the ASCII-compatible encoding process. NLS doesn't lowercase labels that contain no international characters, so the original casing is preserved.
 
 ### Day-of-week abbreviations
 
@@ -69,18 +85,18 @@ This change was introduced to unify .NET's globalization behavior across all sup
 
 ## Recommended action
 
-No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
+No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [runtime switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
 
 ## Affected APIs
 
-- <xref:System.Span%601?displayProperty=fullName>
+- <xref:System.Span`1?displayProperty=fullName>
 - <xref:System.String?displayProperty=fullName>
 - Most types in the <xref:System.Globalization?displayProperty=fullName> namespace
-- <xref:System.Array.Sort%2A?displayProperty=fullName> (when sorting an array of strings)
-- <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> (when the list elements are strings)
-- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
+- <xref:System.Array.Sort*?displayProperty=fullName> (when sorting an array of strings)
+- <xref:System.Collections.Generic.List`1.Sort?displayProperty=fullName> (when the list elements are strings)
+- <xref:System.Collections.Generic.SortedDictionary`2?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList`2?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedSet`1?displayProperty=fullName> (when the set contains strings)
 
 ## See also
 

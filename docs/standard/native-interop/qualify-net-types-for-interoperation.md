@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, qualifying .NET types"
   - "interoperation with unmanaged code, exposing .NET components"
   - "COM interop, exposing COM components"
-ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 ---
 # Qualify .NET types for COM interoperation
 
@@ -205,7 +204,7 @@ Virtual function table layouts:
 | 2                                            | `IUnknown::Release`        |
 | 3                                            | `IComInterface2::Method3`  |
 
-As these virtual function tables differ from the C++ example, this will lead to serious problems at run time. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
+As these virtual function tables differ from the C++ example, this will lead to serious problems at runtime. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
 
 ```csharp
 [ComImport]
@@ -274,7 +273,7 @@ As you can see, these tables match the C++ example, so these interfaces will fun
 
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 - <xref:System.Runtime.InteropServices.ComImportAttribute>
-- [Expose .NET Framework components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Expose .NET Framework components to COM](exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
 - [Apply interop attributes](apply-interop-attributes.md)
-- [Package a .NET Framework assembly for COM](../../framework/interop/packaging-an-assembly-for-com.md)
+- [Package a .NET Framework assembly for COM](packaging-an-assembly-for-com.md)

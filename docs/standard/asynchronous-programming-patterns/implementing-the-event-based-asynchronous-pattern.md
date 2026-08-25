@@ -48,7 +48,7 @@ The following list describes the features of the Event-based Asynchronous Patter
 
 Consider implementing the Event-based Asynchronous Pattern when:
 
-- Clients of your class do not need <xref:System.Threading.WaitHandle> and <xref:System.IAsyncResult> objects available for asynchronous operations, meaning that polling and <xref:System.Threading.WaitHandle.WaitAll%2A> or <xref:System.Threading.WaitHandle.WaitAny%2A> will need to be built up by the client.
+- Clients of your class do not need <xref:System.Threading.WaitHandle> and <xref:System.IAsyncResult> objects available for asynchronous operations, meaning that polling and <xref:System.Threading.WaitHandle.WaitAll*> or <xref:System.Threading.WaitHandle.WaitAny*> will need to be built up by the client.
 
 - You want asynchronous operations to be managed by the client with the familiar event/delegate model.
 

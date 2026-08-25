@@ -51,7 +51,7 @@ Next, build a <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation> from the tr
 
 [!code-csharp[Create the compilation](../../../../samples/snippets/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#3 "Create the compilation for the semantic model")]
 
-The <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddReferences%2A?displayProperty=nameWithType> method adds references to the compilation. The <xref:Microsoft.CodeAnalysis.MetadataReference.CreateFromFile%2A?displayProperty=nameWithType> method loads an assembly as a reference.
+The <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddReferences*?displayProperty=nameWithType> method adds references to the compilation. The <xref:Microsoft.CodeAnalysis.MetadataReference.CreateFromFile*?displayProperty=nameWithType> method loads an assembly as a reference.
 
 ## Querying the semantic model
 
@@ -112,7 +112,7 @@ To finish this tutorial, let's build a LINQ query that creates a sequence of all
 
 [!code-csharp[Access the sequence of members on the string type](../../../../samples/snippets/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#9 "Access the sequence of members on the string type.")]
 
-That source sequence contains all members, including properties and fields, so filter it using the <xref:System.Collections.Immutable.ImmutableArray%601.OfType%2A?displayProperty=nameWithType> method to find elements that are <xref:Microsoft.CodeAnalysis.IMethodSymbol?displayProperty=nameWithType> objects:
+That source sequence contains all members, including properties and fields, so filter it using the <xref:System.Collections.Immutable.ImmutableArray`1.OfType*?displayProperty=nameWithType> method to find elements that are <xref:Microsoft.CodeAnalysis.IMethodSymbol?displayProperty=nameWithType> objects:
 
 [!code-csharp[Filter the sequence to only methods](../../../../samples/snippets/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#10 "Find the subset of the collection that is the methods.")]
 

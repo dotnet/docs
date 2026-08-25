@@ -10,9 +10,9 @@ The <xref:System.UriTemplate> class provides methods for working with sets of UR
 
 - Syntax for creating templates.
 
-- Instantiating URIs from a `UriTemplate` using <xref:System.UriTemplate.BindByName%2A> and <xref:System.UriTemplate.BindByPosition%2A>.
+- Instantiating URIs from a `UriTemplate` using <xref:System.UriTemplate.BindByName*> and <xref:System.UriTemplate.BindByPosition*>.
 
-- <xref:System.UriTemplateTable.Match%2A>, which is the inverse operation of `BindByName` and `BindByPosition`.
+- <xref:System.UriTemplateTable.Match*>, which is the inverse operation of `BindByName` and `BindByPosition`.
 
 ### To set up, build, and run the sample
 

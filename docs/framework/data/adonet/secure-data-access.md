@@ -11,7 +11,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 
 ## Authentication, Authorization, and Permissions
 
-When connecting to Microsoft SQL Server, you can use Windows Authentication, also known as Integrated Security, which uses the identity of the current active Windows user rather than passing a user ID and password. Using Windows Authentication is recommended for on-premises databases because user credentials aren't exposed in the connection string. If you can't use Windows Authentication to connect to SQL Server, then consider creating connection strings at run time using the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
+When connecting to Microsoft SQL Server, you can use Windows Authentication, also known as Integrated Security, which uses the identity of the current active Windows user rather than passing a user ID and password. Using Windows Authentication is recommended for on-premises databases because user credentials aren't exposed in the connection string. If you can't use Windows Authentication to connect to SQL Server, then consider creating connection strings at runtime using the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
@@ -24,7 +24,7 @@ When connecting to Microsoft SQL Server, you can use Windows Authentication, als
 |Resource|Description|
 |--------------|-----------------|
 |[Protecting Connection Information](protecting-connection-information.md)|Describes security best practices and techniques for protecting connection information, such as using protected configuration to encrypt connection strings.|
-|[Connection String Builders](connection-string-builders.md)|Describes how to build connection strings from user input at run time.|
+|[Connection String Builders](connection-string-builders.md)|Describes how to build connection strings from user input at runtime.|
 |[Security for SQL Server Database Engine and Azure SQL Database](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)|Provides links to help you locate information about security and protection in the SQL Server Database Engine and Azure SQL Database.|
 
 ## Parameterized Commands and SQL Injection

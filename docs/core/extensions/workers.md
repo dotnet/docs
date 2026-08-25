@@ -1,8 +1,6 @@
 ---
 title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
-author: IEvangelist
-ms.author: dapine
 ms.date: 05/28/2025
 ms.topic: overview
 ---
@@ -17,7 +15,7 @@ There are numerous reasons for creating long-running services such as:
 
 Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these purposes. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService>, which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
 
-With .NET, you're no longer restricted to Windows. You can develop cross-platform background services. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
+With .NET, you're no longer restricted to Windows. You can develop cross-platform background services. Hosted services are logging, configuration, and dependency-injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
 
 [!INCLUDE [worker-template-workloads](includes/worker-template-workloads.md)]
 
@@ -40,7 +38,7 @@ The Worker Service template is available in the .NET CLI and Visual Studio. For 
 The preceding `Program` class:
 
 - Creates a <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>.
-- Calls <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> to register the `Worker` as a hosted service.
+- Calls <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService*> to register the `Worker` as a hosted service.
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
 
@@ -54,10 +52,10 @@ The Worker template doesn't enable server garbage collection (GC) by default, as
 </PropertyGroup>
 ```
 
-_**Tradeoffs and considerations**_
+#### Tradeoffs and considerations
 
 | Enabled | Disabled |
-|--|--|
+|---------|----------|
 | Efficient memory management: Automatically reclaims unused memory to prevent memory leaks and optimize resource usage. | Improved real-time performance: Avoids potential pauses or interruptions caused by garbage collection in latency-sensitive applications. |
 | Long-term stability: Helps maintain stable performance in long-running services by managing memory over extended periods. | Resource efficiency: May conserve CPU and memory resources in resource-constrained environments. |
 | Reduced maintenance: Minimizes the need for manual memory management, simplifying maintenance. | Manual memory control: Provides fine-grained control over memory for specialized applications. |
@@ -101,7 +99,7 @@ The preceding *Dockerfile* steps include:
 - Changing the working directory to */src*.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:8.0` (the `base` alias).
+- Re-layering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:8.0` (the `base` alias).
 - Copying the published build output from the */publish*.
 - Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 
@@ -129,10 +127,10 @@ The <xref:Microsoft.Extensions.Hosting.IHostedService> interface defines two met
 These two methods serve as *lifecycle* methods - they're called during host start and stop events respectively.
 
 > [!NOTE]
-> When overriding either <xref:Microsoft.Extensions.Hosting.BackgroundService.StartAsync%2A> or <xref:Microsoft.Extensions.Hosting.BackgroundService.StopAsync%2A> methods, you must call and `await` the `base` class method to ensure the service starts and/or shuts down properly.
+> When overriding either <xref:Microsoft.Extensions.Hosting.BackgroundService.StartAsync*> or <xref:Microsoft.Extensions.Hosting.BackgroundService.StopAsync*> methods, you must call and `await` the `base` class method to ensure the service starts and/or shuts down properly.
 
 > [!IMPORTANT]
-> The interface serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
+> The interface serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
 
 ## Signal completion
 

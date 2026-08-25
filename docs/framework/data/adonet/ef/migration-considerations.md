@@ -60,7 +60,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
 
 - Displaying tabular data by using a data reader.
 
-  You may consider executing an Entity SQL query using the EntityClient provider and enumerating through the returned <xref:System.Data.EntityClient.EntityDataReader> object. Do this only if your application displays tabular data using a data reader and does not require the facilities provided by the Entity Framework for materializing data into objects, tracking changes, and making updates. You can continue to use existing data access code that makes updates to the data source, but you can use the existing connection accessed from the <xref:System.Data.EntityClient.EntityConnection.StoreConnection%2A> property of <xref:System.Data.EntityClient.EntityConnection>. For more information, see [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md).
+  You may consider executing an Entity SQL query using the EntityClient provider and enumerating through the returned <xref:System.Data.EntityClient.EntityDataReader> object. Do this only if your application displays tabular data using a data reader and does not require the facilities provided by the Entity Framework for materializing data into objects, tracking changes, and making updates. You can continue to use existing data access code that makes updates to the data source, but you can use the existing connection accessed from the <xref:System.Data.EntityClient.EntityConnection.StoreConnection> property of <xref:System.Data.EntityClient.EntityConnection>. For more information, see [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md).
 
 - Working with DataSets.
 
@@ -74,9 +74,9 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
 
 - Binding data to controls.
 
-  When you query the conceptual model, the Entity Framework returns the data as objects that are instances of entity types. These objects can be bound directly to controls, and this binding supports updates. This means that changes to data in a control, such as a row in a <xref:System.Windows.Forms.DataGridView>, automatically get saved to the database when the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method is called.
+  When you query the conceptual model, the Entity Framework returns the data as objects that are instances of entity types. These objects can be bound directly to controls, and this binding supports updates. This means that changes to data in a control, such as a row in a <xref:System.Windows.Forms.DataGridView>, automatically get saved to the database when the <xref:System.Data.Objects.ObjectContext.SaveChanges*> method is called.
 
-  If your application enumerates the results of a query to display data in a <xref:System.Windows.Forms.DataGridView> or other type of control that supports data binding, you can modify your application to bind the control to the result of an <xref:System.Data.Objects.ObjectQuery%601>.
+  If your application enumerates the results of a query to display data in a <xref:System.Windows.Forms.DataGridView> or other type of control that supports data binding, you can modify your application to bind the control to the result of an <xref:System.Data.Objects.ObjectQuery`1>.
 
   For more information, see [Binding Objects to Controls](/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).
 

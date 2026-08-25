@@ -15,7 +15,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 
 For an overview of WCF security, see [Security Overview](security-overview.md). For more information about programming WCF using bindings, see [Programming WCF Security](programming-wcf-security.md).
 
-If you have already selected a binding, you can find out more about the run-time behaviors that are associated with security in [Security Behaviors](security-behaviors-in-wcf.md).
+If you have already selected a binding, you can find out more about the runtime behaviors that are associated with security in [Security Behaviors](security-behaviors-in-wcf.md).
 
 Some security functions are not programmable using the system-provided bindings. For more control using a custom binding, see [Security Capabilities with Custom Bindings](security-capabilities-with-custom-bindings.md).
 

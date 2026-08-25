@@ -95,7 +95,7 @@ Record record2 = (Record)serializer.ReadObject(stream1);
 Console.WriteLine("Deserialized record: {0}", record2.ToString());
 ```
 
-By default, the `DataContractSerializer` encodes objects into a stream using a textual representation of XML. However, you can influence the encoding of the XML by passing in a different writer. The sample creates a binary writer by calling <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>. It then passes the writer and the record object to the serializer when it calls <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>. Finally, the sample flushes the writer and reports on the length of the streams.
+By default, the `DataContractSerializer` encodes objects into a stream using a textual representation of XML. However, you can influence the encoding of the XML by passing in a different writer. The sample creates a binary writer by calling <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter*>. It then passes the writer and the record object to the serializer when it calls <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent*>. Finally, the sample flushes the writer and reports on the length of the streams.
 
 ```csharp
 MemoryStream stream2 = new MemoryStream();

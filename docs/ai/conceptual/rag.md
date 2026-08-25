@@ -1,11 +1,8 @@
 ---
 title: "Integrate Your Data into AI Apps with Retrieval-Augmented Generation"
 description: "Learn how retrieval-augmented generation lets you use your data with LLMs to generate better completions in .NET."
-ms.topic: concept-article #Don't change.
-ms.date: 05/29/2025
-
-#customer intent: As a .NET developer, I want to understand how retrieval-augmented generation works in .NET so that LLMs can use my data sources to provide more valuable completions.
-
+ms.topic: concept-article
+ms.date: 12/10/2025
 ---
 
 # Retrieval-augmented generation (RAG) provides LLM knowledge
@@ -36,6 +33,6 @@ To perform RAG, you must process each data source that you want to use for retri
 - **Converting the text to vectors**: These are embeddings. Vectors are numerical representations of concepts converted to number sequences, which make it easy for computers to understand the relationships between those concepts.
 - **Links between source data and embeddings**: This information is stored as metadata on the chunks you created, which are then used to help the LLMs generate citations while generating responses.
 
-## Related content
+## See also
 
-- [Prompt engineering](prompt-engineering-dotnet.md)
+- [Data ingestion](data-ingestion.md)

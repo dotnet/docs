@@ -1,2 +1,2 @@
-#!/usr/local/share/dotnet/dotnet run
+#!/usr/bin/env dotnet
 Console.WriteLine("Hello, World!");

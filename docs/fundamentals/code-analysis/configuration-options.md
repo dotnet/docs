@@ -1,7 +1,7 @@
 ---
 title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an analyzer configuration file.
-ms.date: 12/06/2021
+ms.date: 02/13/2026
 no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
@@ -30,7 +30,7 @@ For additional options, see [Code analysis properties](../../core/project-sdk/ms
 
 ### Analysis mode
 
-While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
+While the .NET SDK includes all code analysis rules, only some of them are [enabled by default](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/AnalyzerReleases.Shipped.md). The *analysis mode* determines which, if any, set of rules to enable. You can choose a more aggressive analysis mode where most or all rules are enabled. Or you can choose a more conservative analysis mode where most or all rules are disabled, and you can then opt-in to specific rules as needed. Set your analysis mode by adding the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) MSBuild property to your project file.
 
 ```xml
 <PropertyGroup>
@@ -78,14 +78,14 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 
 The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](style-rules/index.md) rules.
 
-| Severity configuration value | Build-time behavior |
-|-|-|
-| `error` | Violations appear as build *errors* and cause builds to fail.|
-| `warning` | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
-| `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. (In Visual Studio, suggestions appear as three gray dots under the first two characters.) |
-| `silent` | Violations aren't visible to the user.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. These rules also participate in cleanup and appear in the **Quick Actions and Refactorings** menu in Visual Studio. |
-| `none` | Rule is suppressed completely.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. |
-| `default` | The default severity of the rule is used. The default severities for each .NET release are listed in the [roslyn-analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). In that table, "Disabled" corresponds to `none`, "Hidden" corresponds to `silent`, and "Info" corresponds to `suggestion`. |
+| Severity configuration value | Build-time behavior                                           |
+|------------------------------|---------------------------------------------------------------|
+| `error`                      | Violations appear as build *errors* and cause builds to fail. |
+| `warning`                    | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
+| `suggestion`                 | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. (In Visual Studio, suggestions appear as three gray dots under the first two characters.) |
+| `silent`                     | Violations aren't visible to the user.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. These rules also participate in cleanup and appear in the **Quick Actions and Refactorings** menu in Visual Studio. |
+| `none`                       | Rule is suppressed completely.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. |
+| `default`                    | The default severity of the rule is used. The default severities for each .NET release are listed in the [dotnet/sdk repo](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/AnalyzerReleases.Shipped.md). In that table, "Disabled" corresponds to `none`, "Hidden" corresponds to `silent`, and "Info" corresponds to `suggestion`. |
 
 #### Scope
 
@@ -116,10 +116,10 @@ The following table shows the different rule severities that you can configure f
   ```
 
 > [!IMPORTANT]
-> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). And if you enable all rules by using the MSBuild properties [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) or [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel), any bulk `dotnet_analyzer_diagnostic` options are ignored. For this reason, it's better to enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
+> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/AnalyzerReleases.Shipped.md). And if you enable all rules by using the MSBuild properties [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) or [`<AnalysisLevel>`](../../core/project-sdk/msbuild-props.md#analysislevel), any bulk `dotnet_analyzer_diagnostic` options are ignored. For this reason, it's better to enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
 
 > [!NOTE]
-> The prefix for setting severity for a single rule, `dotnet_diagnostic`, is slightly different than the prefix for configuring severity via category or for all rules, `dotnet_analyzer_diagnostic`.
+> The prefix for setting severity for a single rule, `dotnet_diagnostic`, is different than the prefix for configuring severity via category or for all rules, `dotnet_analyzer_diagnostic`.
 
 #### Precedence
 

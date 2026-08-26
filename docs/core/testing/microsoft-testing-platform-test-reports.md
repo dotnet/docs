@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -172,7 +172,12 @@ The extension automatically detects that it is running in continuous integration
 
 The GitHub Actions report emits GitHub Actions-native workflow commands so test runs produce a first-class experience on the runner: per-assembly log groups, failed and skipped test annotations (surfaced in the workflow **Annotations** tab and, when the source location resolves, on the pull request's **Files changed** diff), a Markdown job summary appended to the file referenced by `GITHUB_STEP_SUMMARY`, and slow-test notices.
 
+This extension requires the [Microsoft.Testing.Extensions.GitHubActionsReport](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) NuGet package.
+
 The extension activates only when the run is on GitHub Actions (the `GITHUB_ACTIONS` environment variable is `true`) and the `--report-gh` switch is set; otherwise it does nothing. When active, each feature is enabled by default and can be turned off individually with its `--report-gh-*` option.
+
+> [!IMPORTANT]
+> The `--report-gh` option belongs to `Microsoft.Testing.Extensions.GitHubActionsReport`. The [GitHubActionsTestLogger](https://www.nuget.org/packages/GitHubActionsTestLogger) package provides a different option, `--report-github`. The options aren't aliases and work only when the test project registers the package that owns the option.
 
 > [!NOTE]
 > Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.

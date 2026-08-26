@@ -3,7 +3,8 @@ title: Migration guide from VSTest to Microsoft.Testing.Platform (MTP)
 description: Step-by-step guide to migrate from VSTest to Microsoft.Testing.Platform (MTP), including argument mapping, project configuration, and CI pipeline updates.
 author: Youssef1313
 ms.author: ygerges
-ms.date: 09/15/2025
+ms.date: 08/26/2026
+ai-usage: ai-assisted
 ---
 
 # Migrate from VSTest to Microsoft.Testing.Platform (MTP)
@@ -89,6 +90,45 @@ The build-related arguments are irrelevant to the test platform and as such don'
 - `-r|--runtime <RUNTIME_IDENTIFIER>`
 - `-v|--verbosity <LEVEL>`
 
+Although `--arch` remains a build-related option, it replaces the architecture that VSTest selects through `RunConfiguration.TargetPlatform`. Pass `--arch` to `dotnet test` itself, before any `--` separator.
+
+For example, migrate this VSTest project command:
+
+```dotnetcli
+dotnet test MyTests.csproj -c Debug -- RunConfiguration.TargetPlatform=x86 /Parallel
+```
+
+For .NET 10 SDK and later versions, use this MTP command:
+
+```dotnetcli
+dotnet test --project MyTests.csproj -c Debug --arch x86
+```
+
+Replace `x86` with `x64` to target x64. MTP runs test modules in parallel by default, so `/Parallel` doesn't need a replacement. To limit module-level parallelism, use `--max-parallel-test-modules <NUMBER>`.
+
+> [!IMPORTANT]
+> You can't combine `--solution` with `--arch`, `--os`, or `--runtime`. These options set `RuntimeIdentifier` as a global MSBuild property, and solution builds don't support a global `RuntimeIdentifier`. To test a solution across architectures, invoke each test project separately or set `RuntimeIdentifier` in the individual test projects.
+
+For example, replace these four solution-level VSTest commands:
+
+```dotnetcli
+dotnet test MySolution.sln -c Debug -- RunConfiguration.TargetPlatform=x86 /Parallel
+dotnet test MySolution.sln -c Release -- RunConfiguration.TargetPlatform=x86 /Parallel
+dotnet test MySolution.sln -c Debug -- RunConfiguration.TargetPlatform=x64 /Parallel
+dotnet test MySolution.sln -c Release -- RunConfiguration.TargetPlatform=x64 /Parallel
+```
+
+For .NET 10 SDK and later versions, use a project-level matrix:
+
+```powershell
+$testProjects = @("tests/A.Tests/A.Tests.csproj", "tests/B.Tests/B.Tests.csproj")
+foreach ($configuration in "Debug", "Release") {
+    foreach ($architecture in "x86", "x64") {
+        $testProjects | ForEach-Object { dotnet test --project $_ -c $configuration --arch $architecture }
+    }
+}
+```
+
 The test-related arguments are VSTest specific and so need to be transformed to match the new platform. The following table shows the mapping between the VSTest arguments and the new platform:
 
 | VSTest argument | New platform argument |
@@ -108,6 +148,8 @@ The test-related arguments are VSTest specific and so need to be transformed to 
 | `--results-directory <RESULTS_DIR>` | `--results-directory <RESULTS_DIR>` |
 | `-s\|--settings <SETTINGS_FILE>` | Depends upon the selected test framework |
 | `-t\|--list-tests` | `--list-tests` |
+| `-- RunConfiguration.TargetPlatform=<ARCHITECTURE>` | `--arch <ARCHITECTURE>` for a project invocation |
+| `/Parallel` | No option required. MTP runs test modules in parallel by default. |
 | `-- <RunSettings arguments>` | `--test-parameter` (provided by [VSTestBridge](microsoft-testing-platform-extensions-vstest-bridge.md)) |
 
 #### `--collect`
@@ -177,6 +219,27 @@ dotnet test --report-trx
 > [!IMPORTANT]
 > As explained earlier, when using MTP with the VSTest-based `dotnet test`, extra `--` is needed before the arguments intended to be passed to the platform.
 > So, this becomes `dotnet test -- --report-trx`.
+
+GitHub Actions reporter options are package-specific and aren't interchangeable:
+
+| Reporter package | MTP option |
+|---|---|
+| [Microsoft.Testing.Extensions.GitHubActionsReport](microsoft-testing-platform-test-reports.md#github-actions-reports) | `--report-gh` |
+| [GitHubActionsTestLogger](https://www.nuget.org/packages/GitHubActionsTestLogger) | `--report-github` |
+
+The test application recognizes an option only when the package that owns it is installed and registered. For example, if you migrate `--logger GitHubActions` and keep the `GitHubActionsTestLogger` package, replace the VSTest command:
+
+```dotnetcli
+dotnet test --logger GitHubActions
+```
+
+With .NET 10 SDK and later versions, use:
+
+```dotnetcli
+dotnet test --report-github
+```
+
+For .NET 9 SDK and earlier versions, use `dotnet test -- --report-github` instead.
 
 #### `--settings`
 

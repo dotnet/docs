@@ -42,7 +42,7 @@ When you authenticate as a server:
 
 When you authenticate as a client:
 
-- Add the certificate to the <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates?displayProperty=nameWithType> collection, or pass it to <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync*?displayProperty=nameWithType>.
+- Add the certificate to the <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates?displayProperty=nameWithType> collection, or pass a collection that contains it to <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync*?displayProperty=nameWithType>.
 - Return the certificate from the <xref:System.Net.Security.SslClientAuthenticationOptions.LocalCertificateSelectionCallback?displayProperty=nameWithType> callback.
 - Set a <xref:System.Net.Security.SslStreamCertificateContext> on the <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext?displayProperty=nameWithType> property.
 

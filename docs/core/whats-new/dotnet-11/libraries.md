@@ -2,7 +2,7 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 08/12/2026
+ms.date: 08/25/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
@@ -518,7 +518,7 @@ The <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute> class now inclu
 
 These constants can be used with the `StringSyntax` attribute to provide better tooling support for string literals containing code in these languages.
 
-## Caching and configuration
+## Caching, configuration, and logging
 
 - [Configuration binding](#configuration-binding)
 - [MemoryCache OpenTelemetry metrics](#memorycache-opentelemetry-metrics)
@@ -527,6 +527,7 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 - [Options-aware HybridCache factories](#options-aware-hybridcache-factories)
 - [Asynchronous validation with DataAnnotations](#asynchronous-validation-with-dataannotations)
 - [Activity tracing configuration](#activity-tracing-configuration)
+- [Generic source-generated logging methods](#generic-source-generated-logging-methods)
 
 ### Configuration binding
 
@@ -640,6 +641,16 @@ builder.Services.AddTracing(tracing =>
 ```
 
 The same release adds `ActivitySourceFactory` and unseals `ActivitySource`, which together support factory-driven creation and refreshable listeners.
+
+### Generic source-generated logging methods
+
+The logging source generator now supports generic methods decorated with <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute>, primarily to avoid boxing. Generic type parameters can use standard constraints, such as `class`, `struct`, `unmanaged`, interfaces, base types, and `new()`. The `allows ref struct` anti-constraint isn't supported and produces [SYSLIB1011](../../../fundamentals/syslib-diagnostics/syslib1011.md).
+
+```csharp
+[LoggerMessage(0, LogLevel.Trace, "Received {Code} ({Length} bytes)")]
+public static partial void PacketReceived<TCode>(ILogger logger, TCode code, int length)
+    where TCode : struct, Enum;
+```
 
 ## Cryptography
 

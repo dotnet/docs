@@ -31,11 +31,11 @@ On Windows, you may encounter the `(0x8009030E): No credentials are available in
 
 ## Handshake message exceeds the Schannel limit
 
-On Windows, Schannel rejects fragmented TLS handshake messages that exceed its configured size limit. `SslStream` might report this failure as an <xref:System.Security.Authentication.AuthenticationException> with an inner <xref:System.ComponentModel.Win32Exception> that contains error `0x80090326` (`SEC_E_ILLEGAL_MESSAGE`) and the message `The message received was unexpected or badly formatted`. Large certificate chains or a long list of acceptable certificate issuers during mutual TLS authentication can produce large handshake messages.
+On Windows, you might hit a handshake failure when a fragmented TLS handshake message exceeds the size limit that Schannel enforces. In this case, `SslStream` surfaces an <xref:System.Security.Authentication.AuthenticationException> whose inner <xref:System.ComponentModel.Win32Exception> reports error `0x80090326` (`SEC_E_ILLEGAL_MESSAGE`) and the message `The message received was unexpected or badly formatted`. You're most likely to produce large handshake messages when you use large certificate chains or when a peer sends a long list of acceptable certificate issuers during mutual TLS authentication.
 
-The error isn't specific to message size. To confirm the cause, use a packet-capture tool to inspect the handshake messages and their sizes before you change the Schannel configuration.
+Because this error isn't specific to message size, confirm the cause before you change any Schannel configuration. Use a packet-capture tool to inspect the handshake messages and their sizes.
 
-If the capture confirms that a handshake message exceeds the limit, an administrator can create one of the following `DWORD` values under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Messaging`:
+If the capture confirms that a handshake message exceeds the limit, ask an administrator to create one of the following `DWORD` values under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Messaging`:
 
 | Value | Applies to | Default |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ If the capture confirms that a handshake message exceeds the limit, an administr
 | `MessageLimitServer` | Messages that a TLS server accepts when it doesn't use client authentication. | `0x4000` bytes |
 | `MessageLimitServerClientAuth` | Messages that a TLS server accepts when it uses client authentication. | `0x8000` bytes |
 
-Set the smallest value that accepts the expected handshake message. Schannel supports values up to `0x10000` bytes. Because these settings affect the entire machine and larger limits increase memory use for each security context, don't change them unless you've confirmed the cause. For more information and registry-editing precautions, see [Messaging - fragment parsing](/windows-server/security/tls/tls-registry-settings#messaging--fragment-parsing).
+Set the smallest value that accepts the expected handshake message. Schannel supports values up to `0x10000` bytes. Don't change these settings unless you've confirmed the cause, because they affect the entire machine and larger limits increase memory use for each security context. For more information and registry-editing precautions, see [Messaging - fragment parsing](/windows-server/security/tls/tls-registry-settings#messaging--fragment-parsing).
 
 ## Client and server do not possess a common algorithm
 

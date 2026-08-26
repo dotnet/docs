@@ -151,6 +151,7 @@ builder.TestHost.AddAzureDevOpsProvider();
 |---|---|---|
 | `--report-azdo` | 1.9.0 | Enables the Azure DevOps report generator. Errors and warnings are written to the output in a format that Azure DevOps understands. |
 | `--report-azdo-severity` | 1.9.0 | Severity to use for reported events. Valid values are `error` (default) and `warning`. |
+| `--report-azdo-groups` | 2.4.0 | Enables or disables per-assembly log groups. When enabled, each test assembly's output appears in a collapsible section of the Azure Pipelines log. Valid values are `on` and `off` (default). Requires `--report-azdo`. |
 | `--report-azdo-flaky-history` | 2.3.0 | Queries Azure DevOps test result history for the past N days (1-90) and annotates reported failures with flakiness context. Requires `--report-azdo`. |
 | `--report-azdo-demote-known-flaky` | 2.3.0 | Demotes failures that are flaky enough in the Azure DevOps history window (default threshold is 25%) from errors to warnings. Requires `--report-azdo` and `--report-azdo-flaky-history`. |
 | `--report-azdo-quarantine-file` | 2.3.0 | Path to a text file that lists quarantined test fully qualified names or glob patterns. Matching failures are reported as warnings. Requires `--report-azdo`. |
@@ -163,8 +164,11 @@ builder.TestHost.AddAzureDevOpsProvider();
 | `--publish-azdo-test-results` | 2.3.0 | Publishes test results live to the Azure DevOps **Tests** tab. |
 | `--publish-azdo-run-name` | 2.3.0 | Sets a custom Azure DevOps test run name for live test-result publishing. Requires `--publish-azdo-test-results`. |
 
+> [!WARNING]
+> Groups are disabled by default and aren't recommended when multiple test assemblies run in parallel. Azure DevOps `##[group]` and `##[endgroup]` formatting commands are sequential and anonymous. Concurrent assembly output can interleave, cause incorrect group nesting, and put lines under the wrong assembly. Set `--report-azdo-groups on` only for a single assembly or serialized assembly execution.
+
 > [!NOTE]
-> The **MTP version** column lists the MTP release in which each option first became available in a stable build. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0.
+> The **MTP version** column lists the first MTP version that contains each option. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0 or 2.4.0.
 
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
 

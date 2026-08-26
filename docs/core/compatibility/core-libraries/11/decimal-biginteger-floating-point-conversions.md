@@ -97,7 +97,7 @@ For the `BigInteger` example, the converted `double` value is now:
 
 Conversions from `BigInteger` to `float`, `Half`, or `BFloat16` are also correctly rounded.
 
-When a conversion is evaluated as a compile-time constant, a rebuild with a compiler hosted by the .NET 11 Preview 7 SDK or a later SDK can embed the new result in the output assembly regardless of the project's target framework.
+If a conversion is evaluated as a compile-time constant, a compiler hosted by the .NET 11 Preview 7 SDK or a later SDK can embed the new result in the output assembly when the project is rebuilt, regardless of the project's target framework.
 
 ## Type of breaking change
 
@@ -123,7 +123,7 @@ instead of a conversion from a `double` literal:
 decimal value = (decimal)123.4567;
 ```
 
-To restore, in general, the previous result when you convert to `decimal`, round the converted value to 7 significant decimal digits for a `float` source or 15 significant decimal digits for a `double` source. The previous conversion rounded to nearest with ties to even; it didn't truncate. Positive and negative values were handled symmetrically.
+To restore the previous result in general when you convert to `decimal`, round the converted value to 7 significant decimal digits for a `float` source or 15 significant decimal digits for a `double` source. The previous conversion rounded to nearest with ties to even; it didn't truncate. Positive and negative values were handled symmetrically.
 
 For example, formatting the source value with the `G7` or `G15` standard numeric format string and parsing the result performs the corresponding significant-digit rounding for arbitrary finite values:
 

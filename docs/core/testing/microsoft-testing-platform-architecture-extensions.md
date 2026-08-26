@@ -3,7 +3,7 @@ title: Build extensions for Microsoft.Testing.Platform (MTP)
 description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 08/25/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -450,7 +450,7 @@ await messageBus.PublishAsync(
 > `TestNodeFileArtifact` is obsolete and was removed in MTP 2.0.0. To attach test-level files, use `FileArtifactProperty` on the `TestNode`. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#removed-obsolete-types).
 
 > [!NOTE]
-> MTP 2.4.0 (unreleased as of July 2026) adds an experimental `kind` constructor overload and `Kind` property to `FileArtifact` and `SessionFileArtifact` (requires the `TPEXP` diagnostic to be suppressed). `Kind` is a producer-asserted, reverse-DNS identifier of the artifact *format* (for example, `microsoft.testing.trx`, `microsoft.testing.junit`, `microsoft.testing.ctrf`, or `microsoft.testing.html`) that post-processing can use to group artifacts of the same format for consolidation. Leave it `null` or omit it when the producer doesn't declare a known kind. At this time, `Kind` is only a metadata contract; don't assume broad merge orchestration beyond that.
+> MTP 2.4.0 (unreleased as of August 2026) adds an experimental `kind` constructor overload and `Kind` property to `FileArtifact` and `SessionFileArtifact` (requires the `TPEXP` diagnostic to be suppressed). `Kind` is a producer-asserted, reverse-DNS identifier of the artifact *format* (for example, `microsoft.testing.trx`, `microsoft.testing.junit`, `microsoft.testing.ctrf`, or `microsoft.testing.html`) that post-processing uses to group artifacts of the same format. Leave it `null` or omit it when the producer doesn't declare a known kind.
 >
 > ```csharp
 > #pragma warning disable TPEXP // Experimental API.
@@ -462,6 +462,12 @@ await messageBus.PublishAsync(
 >     kind: "microsoft.testing.trx");
 > #pragma warning restore TPEXP
 > ```
+
+### The `IArtifactPostProcessor` extensions
+
+Starting with MTP 2.4.0, the experimental `IArtifactPostProcessor` extension point processes artifacts after a `dotnet test` invocation runs multiple test modules or after a retry runs multiple attempts. The `ArtifactPostProcessingMode` value identifies whether the processor handles `TestModules` or `RetryAttempts`.
+
+The built-in TRX, JUnit, and CTRF report extensions use this extension point to consolidate related report artifacts in a `merged` directory. HTML reports participate in artifact post-processing but remain separate files. To learn how report consolidation affects test output, see [Report consolidation](microsoft-testing-platform-test-reports.md#report-consolidation).
 
 ### The `ITestHostEnvironmentVariableProvider` extensions
 
@@ -694,6 +700,17 @@ public static void AddSelfRegisteredExtensions(this global::Microsoft.Testing.Pl
 ```
 
 If the call is missing, double-check that the props file is packaged under `buildMultiTargeting/` (not `build/`) inside the `.nupkg`, that `DisplayName` and `TypeFullName` metadata are present, and that the consumer hasn't set `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.
+
+## Load extensions dynamically
+
+Starting with MTP 2.4.0, pass `--enable-dynamic-extensions` to load extensions declared by `*.testingplatformextensions.json` manifest files next to the test application. MTP doesn't scan for arbitrary assemblies, and dynamic loading stays disabled unless each run explicitly enables it.
+
+Each manifest entry identifies an assembly and a `TestingPlatformBuilderHook` type to invoke. MTP reports every loaded extension in terminal output and fails the run if a manifest, assembly, type, or hook is invalid. Set an entry's `enabled` property to `false` to disable it without deleting the manifest.
+
+> [!WARNING]
+> Dynamically loaded extensions run with full trust inside the test process. Use manifests and assemblies only from directories and sources you trust.
+
+For the complete manifest contract, see the [extension manifest JSON schema](https://github.com/microsoft/testfx/blob/main/docs/testingplatformextensions.schema.json) and [dynamic extension loading design](https://github.com/microsoft/testfx/blob/main/docs/RFCs/023-Dynamic-Extension-Loading.md).
 
 ## Extensions execution order
 

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) telemetry
 description: Learn about the telemetry data collected by MTP and how to disable it.
 author: nohwnd
 ms.author: jajares
-ms.date: 02/25/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -74,7 +74,7 @@ The telemetry feature collects the following data points:
 | All | If Hot reload is enabled. |
 | All | If the application crashed. |
 | All | If the application is running as NativeAOT. |
-| All | If the repository is our own repository. Based on the `telemetry:isDevelopmentRepository` setting in _testingplatformconfig.json_. |
+| All | Whether the repository is the MTP development repository, based on the `telemetry:isDevelopmentRepository` setting in *testconfig.json*. |
 | All | Name of the test framework you're using, as a hashed value. |
 | All | Name of your executable (which is usually the same as the name of the project), as a hashed value. |
 | All | Operating system, version and architecture. |

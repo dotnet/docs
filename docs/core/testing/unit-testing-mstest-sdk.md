@@ -3,7 +3,7 @@ title: MSTest SDK configuration
 author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 08/06/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -46,7 +46,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
   * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
 
-* `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
+* `AllMicrosoft` - Enables the Microsoft extensions selected for broad out-of-box use, including extensions with a restrictive license. Experimental and API-only extensions can still require explicit opt-in.
 
   Enables the following extensions:
 
@@ -55,6 +55,8 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Fakes](./microsoft-testing-platform-fakes.md) (MSTest.Sdk 3.7.0+)
   * [Hang Dump](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)
   * [Hot Reload](./microsoft-testing-platform-hot-reload.md#hot-reload)
+  * [HTML Report](./microsoft-testing-platform-test-reports.md#html-reports)
+  * [GitHub Actions Report](./microsoft-testing-platform-test-reports.md#github-actions-reports) (MSTest.Sdk 4.3.0+)
   * [Retry](./microsoft-testing-platform-retry.md#retry)
   * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
   * [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports)
@@ -79,12 +81,15 @@ Here's a full example, using the `None` profile:
 | [Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes)                        |       |                    | :heavy_check_mark:¹ |
 | [Hang Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump)                 |       |                    | :heavy_check_mark:  |
 | [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)               |       |                    | :heavy_check_mark:  |
+| [HTML Report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HtmlReport)             |       |                    | :heavy_check_mark:  |
+| [GitHub Actions Report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) |       |              | :heavy_check_mark:³ |
 | [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                        |       |                    | :heavy_check_mark:  |
 | [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)                      |       | :heavy_check_mark: | :heavy_check_mark:  |
 | [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
 
 ¹ MSTest.Sdk 3.7.0+
 ² MSTest.Sdk 3.11.0+
+³ MSTest.Sdk 4.3.0+
 
 ### Enable or disable extensions
 
@@ -105,7 +110,13 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 
 For a list of all available extensions, see [MTP features](./microsoft-testing-platform-features.md).
 
-Starting with MSTest.Sdk 4.3, enable the experimental JUnit report extension with `<EnableMicrosoftTestingExtensionsJUnitReport>true</EnableMicrosoftTestingExtensionsJUnitReport>`, then pass `--report-junit` when you run the test application. The extension is available only with Microsoft.Testing.Platform and isn't included in the `Default` or `AllMicrosoft` profiles.
+Some MTP extensions remain opt-in and aren't included in the `Default` or `AllMicrosoft` profiles:
+
+- Starting with MSTest.Sdk 4.3, set `<EnableMicrosoftTestingExtensionsJUnitReport>true</EnableMicrosoftTestingExtensionsJUnitReport>`, then pass `--report-junit`.
+- Starting with the MSTest.Sdk 4.4 preview, set `<EnableMicrosoftTestingExtensionsCtrfReport>true</EnableMicrosoftTestingExtensionsCtrfReport>`, then pass `--report-ctrf`.
+- To reference the OpenTelemetry extension, set `<EnableMicrosoftTestingExtensionsOpenTelemetry>true</EnableMicrosoftTestingExtensionsOpenTelemetry>`. Because the extension requires API configuration, register it in your custom entry point as described in [OpenTelemetry](microsoft-testing-platform-open-telemetry.md).
+
+These extensions are available only with MTP.
 
 > [!WARNING]
 > It's important to review the licensing terms for each extension as they might vary.

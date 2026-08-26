@@ -3,7 +3,7 @@ title: MSTest code analysis
 description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -118,6 +118,7 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0072](mstest0072.md) - `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation
 - [MSTEST0078](mstest0078.md) - `[DependsOn]` arguments should be valid
 - [MSTEST0081](mstest0081.md) - `[TestFilterProvider]` should reference a valid test filter type
+- [MSTEST0082](mstest0082.md) - A test class inherits a lifecycle or test method from a different MSTest version
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
@@ -241,6 +242,8 @@ Rules for configuring test execution, parallelization, and other test settings:
 - [MSTEST0079](mstest0079.md) - Use ArchitectureCondition attribute instead of runtime checks
 - [MSTEST0080](mstest0080.md) - Use CICondition attribute instead of environment checks
 - [MSTEST0081](mstest0081.md) - `[TestFilterProvider]` should reference a valid test filter type
+- [MSTEST0082](mstest0082.md) - A test class inherits a lifecycle or test method from a different MSTest version
+- [MSTEST0083](mstest0083.md) - Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start`
 
 Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), [Running tests](../unit-testing-mstest-running-tests.md)
 
@@ -329,6 +332,8 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0079](mstest0079.md) | Usage | Use ArchitectureCondition attribute instead of runtime checks | Info |
 | [MSTEST0080](mstest0080.md) | Usage | Use CICondition attribute instead of environment checks | Info |
 | [MSTEST0081](mstest0081.md) | Usage | `[TestFilterProvider]` should reference a valid test filter type | Warning |
+| [MSTEST0082](mstest0082.md) | Usage | A test class inherits a lifecycle or test method from a different MSTest version | Warning |
+| [MSTEST0083](mstest0083.md) | Usage | Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start` | Info |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

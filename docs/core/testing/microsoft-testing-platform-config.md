@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) config options
 description: Learn how to configure MTP using testconfig.json configuration settings and environment variables.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/16/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -214,6 +214,12 @@ When set to any non-empty value, suppresses all ANSI color output. MTP honors th
 ### `DOTNET_NOLOGO` environment variable
 
 When set to `1` or `true`, suppresses the startup banner, the copyright message, and the telemetry banner. This is the standard .NET CLI environment variable and is honored by MTP. See also `TESTINGPLATFORM_NOBANNER`.
+
+### `TESTINGPLATFORM_PIPE_DIRECTORY` environment variable
+
+Starting with MTP 2.4.0, this variable overrides the directory where MTP creates Unix domain-socket files for named-pipe communication. Use it when a sandbox or container doesn't allow socket creation in the default temporary directory. MTP creates and checks the directory, and fails with an error when the directory isn't writable or the resulting socket path is too long.
+
+The variable has no effect on Windows, where named pipes don't use file-system paths. It also doesn't relocate a pipe that another process, such as the .NET SDK, creates.
 
 ### `TESTINGPLATFORM_WAIT_ATTACH_DEBUGGER` environment variable
 

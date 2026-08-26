@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -33,6 +33,14 @@ For example, `--report-trx-filename "{asm}_{tfm}_{arch}.trx"` reproduces the def
 
 > [!NOTE]
 > Placeholder names are case-sensitive and use lowercase. Placeholder support for report file names is available in MTP starting with version 2.3.0.
+
+## Report consolidation
+
+Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after a `dotnet test` invocation runs multiple test modules or after retry support runs multiple attempts. The feature is experimental in MTP 2.4.0.
+
+The TRX, JUnit, CTRF, and HTML extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML consolidation creates a merged summary and preserves the original per-process reports.
+
+For custom report extensions, the experimental `IArtifactPostProcessor` API exposes separate `TestModules` and `RetryAttempts` processing modes. For more information, see [The `IArtifactPostProcessor` extensions](microsoft-testing-platform-architecture-extensions.md#the-iartifactpostprocessor-extensions).
 
 ## Visual Studio test reports (TRX)
 
@@ -152,6 +160,7 @@ builder.TestHost.AddAzureDevOpsProvider();
 | `--report-azdo` | 1.9.0 | Enables the Azure DevOps report generator. Errors and warnings are written to the output in a format that Azure DevOps understands. |
 | `--report-azdo-severity` | 1.9.0 | Severity to use for reported events. Valid values are `error` (default) and `warning`. |
 | `--report-azdo-groups` | 2.4.0 | Enables or disables per-assembly log groups. When enabled, each test assembly's output appears in a collapsible section of the Azure Pipelines log. Valid values are `on` and `off` (default). Requires `--report-azdo`. |
+| `--report-azdo-annotations` | 2.4.0 | Enables or disables annotations for failed and skipped tests. Valid values are `on` (default) and `off`. Requires `--report-azdo`. |
 | `--report-azdo-flaky-history` | 2.3.0 | Queries Azure DevOps test result history for the past N days (1-90) and annotates reported failures with flakiness context. Requires `--report-azdo`. |
 | `--report-azdo-demote-known-flaky` | 2.3.0 | Demotes failures that are flaky enough in the Azure DevOps history window (default threshold is 25%) from errors to warnings. Requires `--report-azdo` and `--report-azdo-flaky-history`. |
 | `--report-azdo-quarantine-file` | 2.3.0 | Path to a text file that lists quarantined test fully qualified names or glob patterns. Matching failures are reported as warnings. Requires `--report-azdo`. |
@@ -168,9 +177,11 @@ builder.TestHost.AddAzureDevOpsProvider();
 > Groups are disabled by default and aren't recommended when multiple test assemblies run in parallel. Azure DevOps `##[group]` and `##[endgroup]` formatting commands are sequential and anonymous. Concurrent assembly output can interleave, cause incorrect group nesting, and put lines under the wrong assembly. Set `--report-azdo-groups on` only for a single assembly or serialized assembly execution.
 
 > [!NOTE]
-> The **MTP version** column lists the first MTP version that contains each option. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0 or 2.4.0.
+> The **MTP version** column lists the first MTP version that contains each option. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0 or the unreleased MTP 2.4.0.
 
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
+
+Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, the summary includes covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
 
 ## GitHub Actions reports
 
@@ -179,7 +190,7 @@ The GitHub Actions report emits GitHub Actions-native workflow commands so test 
 The extension activates only when the run is on GitHub Actions (the `GITHUB_ACTIONS` environment variable is `true`) and the `--report-gh` switch is set; otherwise it does nothing. When active, each feature is enabled by default and can be turned off individually with its `--report-gh-*` option.
 
 > [!NOTE]
-> Available in MTP starting with version 2.3.0. This extension is experimental, and its options and output format might change in a future version.
+> The extension is available starting with MTP 2.3.0. Starting with MTP 2.4.0, its public entry points are no longer experimental.
 
 ### Manual registration
 
@@ -195,6 +206,9 @@ builder.AddGitHubActionsProvider();
 | `--report-gh` | 2.3.0 | Enables the GitHub Actions report generator so test runs emit workflow commands. Requires the run to be on GitHub Actions. |
 | `--report-gh-groups` | 2.3.0 | Enables or disables per-assembly log groups. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
 | `--report-gh-annotations` | 2.3.0 | Enables or disables annotations for failed and skipped tests. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
-| `--report-gh-step-summary` | 2.3.0 | Enables or disables writing a Markdown job summary to the file referenced by `GITHUB_STEP_SUMMARY`. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
+| `--report-gh-step-summary` | 2.3.0 | Controls whether the extension writes a Markdown job summary to the file referenced by `GITHUB_STEP_SUMMARY`. Valid values are `on` (default), `off`, and, starting with MTP 2.4.0, `on-failure`. Requires `--report-gh`. |
+| `--report-gh-step-summary-sections` | 2.4.0 | Selects summary content. Valid values are `test-results`, `slow-tests`, `coverage`, and `all` (default). Requires `--report-gh` and a summary mode other than `off`. |
 | `--report-gh-slow-test-notices` | 2.3.0 | Enables or disables slow-test notices. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
 | `--report-gh-slow-test-threshold` | 2.3.0 | The duration a test can run before a slow-test notice is emitted. Accepts a bare number of seconds or a value with a unit suffix such as `90s`, `2m`, or `1.5h`. The default is `60s`. Requires `--report-gh`. |
+
+Starting with MTP 2.4.0, GitHub Actions Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, select `coverage` or `all` to include covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.

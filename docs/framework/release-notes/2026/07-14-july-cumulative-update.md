@@ -101,7 +101,7 @@ This release contains no known issues.
 The following table outlines the updates in this release.
 
 | Product version | Cumulative update |
-|--|--|
+| --- | --- |
 | **Windows 11, version 26H1** |  |
 | .NET Framework 4.8.1 | [5101002](https://support.microsoft.com/kb/5101002) |
 | **Windows 11, version 25H2** |  |

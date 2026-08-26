@@ -122,10 +122,19 @@ For .NET 10 SDK and later versions, use a project-level matrix:
 
 ```powershell
 $testProjects = @("tests/A.Tests/A.Tests.csproj", "tests/B.Tests/B.Tests.csproj")
+$testRunFailed = $false
 foreach ($configuration in "Debug", "Release") {
     foreach ($architecture in "x86", "x64") {
-        $testProjects | ForEach-Object { dotnet test --project $_ -c $configuration --arch $architecture }
+        foreach ($testProject in $testProjects) {
+            dotnet test --project $testProject -c $configuration --arch $architecture
+            if ($LASTEXITCODE -ne 0) {
+                $testRunFailed = $true
+            }
+        }
     }
+}
+if ($testRunFailed) {
+    throw "One or more test runs failed."
 }
 ```
 

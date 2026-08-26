@@ -245,7 +245,7 @@ SomeClass.Invoke ()
 String.Format (x.IngredientName, x.Quantity)
 ```
 
-Which of the two conventions applies is decided by the last part of the name. Nothing earlier in the name has a say:
+The last part of the name decides which convention applies. Nothing earlier in the name has a say:
 
 ```fsharp
 // ✔️ OK - `convertTo` is lower-case, so the space is added

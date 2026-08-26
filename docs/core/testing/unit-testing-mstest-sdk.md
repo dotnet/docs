@@ -46,7 +46,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
   * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
 
-* `AllMicrosoft` - Enables the Microsoft extensions selected for broad out-of-box use, including extensions with a restrictive license. Experimental and API-only extensions can still require explicit opt-in.
+* `AllMicrosoft` - Enables the Microsoft extensions selected for broad out-of-the-box use, including extensions with a restrictive license. Experimental and API-only extensions can still require explicit opt-in.
 
   Enables the following extensions:
 

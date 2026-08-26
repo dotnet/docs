@@ -52,7 +52,9 @@ For Microsoft Entra ID or managed identity, reference the `Azure.Identity` packa
 ```csharp
 using Azure.Identity;
 
+#pragma warning disable TPEXP
 builder.AddAzureOpenAIChatClientProvider(new DefaultAzureCredential());
+#pragma warning restore TPEXP
 ```
 
 When `AZURE_OPENAI_API_KEY` is set, the provider uses the API key before the supplied credential. Credential resolution and authentication occur when the first chat request runs, so configuration errors might not appear during provider registration.

@@ -74,7 +74,7 @@ The telemetry feature collects the following data points:
 | All | If Hot reload is enabled. |
 | All | If the application crashed. |
 | All | If the application is running as NativeAOT. |
-| All | Whether the repository is the MTP development repository, based on the `telemetry:isDevelopmentRepository` setting in *testconfig.json*. |
+| All | Whether the repository is the MTP development repository, based on the `telemetry:isDevelopmentRepository` setting in *[appname].testconfig.json*. |
 | All | Name of the test framework you're using, as a hashed value. |
 | All | Name of your executable (which is usually the same as the name of the project), as a hashed value. |
 | All | Operating system, version and architecture. |

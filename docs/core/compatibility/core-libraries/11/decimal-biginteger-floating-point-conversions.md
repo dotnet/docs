@@ -156,8 +156,8 @@ There's no compatibility switch to restore the previous conversion algorithms.
 
 ## Affected APIs
 
-- `System.Decimal.Decimal(float)`
-- `System.Decimal.Decimal(double)`
+- <xref:System.Decimal.%23ctor(System.Single)?displayProperty=nameWithType>
+- <xref:System.Decimal.%23ctor(System.Double)?displayProperty=nameWithType>
 - Explicit conversions from <xref:System.Single> and <xref:System.Double> to <xref:System.Decimal>
 - Explicit conversions from <xref:System.Decimal> to <xref:System.Single> and <xref:System.Double>
 - <xref:System.Decimal.ToSingle(System.Decimal)?displayProperty=nameWithType>
@@ -168,6 +168,6 @@ There's no compatibility switch to restore the previous conversion algorithms.
 - <xref:System.Convert.ToDouble(System.Decimal)?displayProperty=nameWithType>
 - <xref:System.Decimal.CreateChecked``1(``0)?displayProperty=nameWithType>, <xref:System.Decimal.CreateSaturating``1(``0)?displayProperty=nameWithType>, and <xref:System.Decimal.CreateTruncating``1(``0)?displayProperty=nameWithType> when they convert to or from <xref:System.Single> or <xref:System.Double>
 - Explicit conversion from <xref:System.Decimal> to <xref:System.Half>
-- Explicit conversion from <xref:System.Decimal> to `System.Numerics.BFloat16`
-- Explicit conversions from <xref:System.Numerics.BigInteger> to <xref:System.Double>, <xref:System.Single>, <xref:System.Half>, and `System.Numerics.BFloat16`
+- Explicit conversion from <xref:System.Decimal> to <xref:System.Numerics.BFloat16>
+- Explicit conversions from <xref:System.Numerics.BigInteger> to <xref:System.Double>, <xref:System.Single>, <xref:System.Half>, and <xref:System.Numerics.BFloat16>
 - Equivalent conversions performed through <xref:System.IConvertible> or the generic math interfaces

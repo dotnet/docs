@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) terminal output
 description: Learn about the built-in terminal test reporter in MTP, including output modes, ANSI support, and progress indicators.
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -61,6 +61,7 @@ If your code must write directly to the console and you need that output to rema
 | `--show-stdout` | 2.2.1 | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
 | `--show-stderr` | 2.2.1 | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
 | `--show-flaky-tests` | 2.4.0 | Controls the `flaky:` summary and the **Flaky tests** list for tests that pass after a retry. Use `on` or `off`; the default is `on`. Applies to MSTest `[Retry]` and the [retry extension](microsoft-testing-platform-retry.md). |
+| `--show-slowest-tests` | 2.4.0 | Shows the requested number of slowest tests in the summary. For a multi-module run, MTP reports the slowest tests for each module. |
 
 > [!NOTE]
 > A dash (—) in the **MTP version** column marks core options that aren't tied to a specific version because they've been available since the platform's initial releases.

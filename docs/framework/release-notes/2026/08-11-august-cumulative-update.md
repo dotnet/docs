@@ -48,7 +48,7 @@ There are no new quality and reliability improvements in this release.
 
 **Known issue:** After installing the August 2026 .NET Framework cumulative update, some WPF applications might fail with a `System.IO.FileFormatException` when printing or generating PDF/XPS content that uses certain fonts, including Calibri.
 
-**Workaround:** Applications can mitigate the issue by enabling the `Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection` AppContext switch in the app config file, as shown below.
+**Workaround:** Applications can mitigate the issue by enabling the `Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection` AppContext switch in the `app.config` file:
 
 ```xml
 <configuration>
@@ -59,7 +59,7 @@ There are no new quality and reliability improvements in this release.
 </configuration>
 ```
 
-This switch disables security protections introduced in the August 2026 update and may increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
+This switch disables security protections introduced in the August 2026 update and might increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
 
 **Status:** Investigating.
 

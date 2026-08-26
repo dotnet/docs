@@ -466,7 +466,7 @@ To create an equality comparer from a key selector function, use the new <xref:S
 
 .NET 11 introduces <xref:System.Runtime.CompilerServices.UnionAttribute?displayProperty=nameWithType> and <xref:System.Runtime.CompilerServices.IUnion?displayProperty=nameWithType> in <xref:System.Runtime.CompilerServices?displayProperty=fullName>. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
 
-For the language-side design, see the [C# unions proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
+For the language-side design, see the [C# unions proposal](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-15.0/unions.md).
 
 ### MetadataLoadContext additions
 

@@ -268,7 +268,7 @@ Your analyzer and code fix work on a simple case of a single declaration that yo
 
 Open the *MakeConstUnitTests.cs* file in the unit test project. The template created two tests that follow the two common patterns for an analyzer and code fix unit test. `TestMethod1` shows the pattern for a test that ensures the analyzer doesn't report a diagnostic when it shouldn't. `TestMethod2` shows the pattern for reporting a diagnostic and running the code fix.
 
-The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/roslyn-sdk/blob/main/src/Microsoft.CodeAnalysis.Testing/README.md) packages for unit testing.
+The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/roslyn-sdk/blob/main/src/RoslynSdk/Microsoft.CodeAnalysis.Testing/README.md) packages for unit testing.
 
 > [!TIP]
 > The testing library supports a special markup syntax, including the following:

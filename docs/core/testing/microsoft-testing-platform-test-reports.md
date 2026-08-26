@@ -187,7 +187,12 @@ Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results acros
 
 The GitHub Actions report emits GitHub Actions-native workflow commands so test runs produce a first-class experience on the runner: per-assembly log groups, failed and skipped test annotations (surfaced in the workflow **Annotations** tab and, when the source location resolves, on the pull request's **Files changed** diff), a Markdown job summary appended to the file referenced by `GITHUB_STEP_SUMMARY`, and slow-test notices.
 
+This extension requires the [Microsoft.Testing.Extensions.GitHubActionsReport](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) NuGet package.
+
 The extension activates only when the run is on GitHub Actions (the `GITHUB_ACTIONS` environment variable is `true`) and the `--report-gh` switch is set; otherwise it does nothing. When active, each feature is enabled by default and can be turned off individually with its `--report-gh-*` option.
+
+> [!IMPORTANT]
+> The `--report-gh` option belongs to `Microsoft.Testing.Extensions.GitHubActionsReport`. The [GitHubActionsTestLogger](https://www.nuget.org/packages/GitHubActionsTestLogger) package provides a different option, `--report-github`. The options aren't aliases and work only when the test project registers the package that owns the option.
 
 > [!NOTE]
 > The extension is available starting with MTP 2.3.0. Starting with MTP 2.4.0, its public entry points are no longer experimental.

@@ -174,10 +174,10 @@ builder.TestHost.AddAzureDevOpsProvider();
 | `--publish-azdo-run-name` | 2.3.0 | Sets a custom Azure DevOps test run name for live test-result publishing. Requires `--publish-azdo-test-results`. |
 
 > [!WARNING]
-> Groups aren't recommended when multiple test assemblies run in parallel. Azure DevOps `##[group]` and `##[endgroup]` formatting commands are sequential and anonymous. Concurrent assembly output can interleave, cause incorrect group nesting, and put lines under the wrong assembly. For MTP 2.4.0 preview builds, pass `--report-azdo-groups off` to disable groups. Starting with the stable MTP 2.4.0 release, groups are disabled by default. Pass `--report-azdo-groups on` only for a single assembly or serialized assembly execution.
+> Don't enable groups when multiple test assemblies run in parallel. Azure DevOps `##[group]` and `##[endgroup]` formatting commands are sequential and anonymous. Concurrent assembly output can interleave, cause incorrect group nesting, and put lines under the wrong assembly. If you use an MTP 2.4.0 preview build, pass `--report-azdo-groups off` to disable groups. The stable MTP 2.4.0 release disables groups by default. Pass `--report-azdo-groups on` only for a single assembly or serialized assembly execution.
 
 > [!NOTE]
-> The **MTP version** column lists the first MTP version that contains each option. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0 or the unreleased MTP 2.4.0.
+> The **MTP version** column lists the first MTP version that contains each option. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0 or 2.4.0.
 
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
 

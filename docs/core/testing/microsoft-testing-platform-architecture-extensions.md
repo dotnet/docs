@@ -467,7 +467,7 @@ await messageBus.PublishAsync(
 
 Starting with MTP 2.4.0, the experimental `IArtifactPostProcessor` extension point processes artifacts after a `dotnet test` invocation runs multiple test modules or after a retry runs multiple attempts. The `ArtifactPostProcessingMode` value identifies whether the processor handles `TestModules` or `RetryAttempts`.
 
-The built-in TRX, JUnit, and CTRF report extensions use this extension point to consolidate related report artifacts in a `merged` directory. HTML reports participate in artifact post-processing but remain separate files. To learn how report consolidation affects test output, see [Report consolidation](microsoft-testing-platform-test-reports.md#report-consolidation).
+The built-in TRX, JUnit, CTRF, and HTML report extensions use this extension point to consolidate related report artifacts in a `merged` directory. HTML consolidation creates a merged summary and preserves the original per-process reports. To learn how report consolidation affects test output, see [Report consolidation](microsoft-testing-platform-test-reports.md#report-consolidation).
 
 ### The `ITestHostEnvironmentVariableProvider` extensions
 

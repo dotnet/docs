@@ -38,7 +38,7 @@ For example, `--report-trx-filename "{asm}_{tfm}_{arch}.trx"` reproduces the def
 
 Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after a `dotnet test` invocation runs multiple test modules or after retry support runs multiple attempts. The feature is experimental in MTP 2.4.0.
 
-The TRX, JUnit, and CTRF extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML reports participate in artifact post-processing but remain separate files.
+The TRX, JUnit, CTRF, and HTML extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML consolidation creates a merged summary and preserves the original per-process reports.
 
 For custom report extensions, the experimental `IArtifactPostProcessor` API exposes separate `TestModules` and `RetryAttempts` processing modes. For more information, see [The `IArtifactPostProcessor` extensions](microsoft-testing-platform-architecture-extensions.md#the-iartifactpostprocessor-extensions).
 

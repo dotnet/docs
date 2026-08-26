@@ -147,7 +147,7 @@ builder.TestHost.AddAzureDevOpsProvider();
 |---|---|---|
 | `--report-azdo` | 1.9.0 | Enables the Azure DevOps report generator. Errors and warnings are written to the output in a format that Azure DevOps understands. |
 | `--report-azdo-severity` | 1.9.0 | Severity to use for reported events. Valid values are `error` (default) and `warning`. |
-| `--report-azdo-groups` | 2.4.0 | Enables or disables per-assembly log groups. Valid values are `on` and `off` (default). Requires `--report-azdo`. |
+| `--report-azdo-groups` | 2.4.0 | Enables or disables per-assembly log groups. When enabled, each test assembly's output appears in a collapsible section of the Azure Pipelines log. Valid values are `on` and `off` (default). Requires `--report-azdo`. |
 | `--report-azdo-flaky-history` | 2.3.0 | Queries Azure DevOps test result history for the past N days (1-90) and annotates reported failures with flakiness context. Requires `--report-azdo`. |
 | `--report-azdo-demote-known-flaky` | 2.3.0 | Demotes failures that are flaky enough in the Azure DevOps history window (default threshold is 25%) from errors to warnings. Requires `--report-azdo` and `--report-azdo-flaky-history`. |
 | `--report-azdo-quarantine-file` | 2.3.0 | Path to a text file that lists quarantined test fully qualified names or glob patterns. Matching failures are reported as warnings. Requires `--report-azdo`. |

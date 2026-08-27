@@ -59,10 +59,10 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [HTML Report](./microsoft-testing-platform-test-reports.md#html-reports)
   * [Retry](./microsoft-testing-platform-retry.md#retry)
 
-  The Azure DevOps Report extension is also included in `AllMicrosoft` in MSTest.Sdk versions 3.11.0 through 4.2.x.
+  In MSTest.Sdk versions 3.11.0 through 4.2.x, the Azure DevOps Report extension is included only in `AllMicrosoft`.
 
 > [!NOTE]
-> The profiles reference the Azure DevOps Report and GitHub Actions Report packages, but reporting remains disabled at runtime. Pass `--report-azdo` or `--report-gh` to enable the corresponding report for a test run.
+> The profiles reference the Azure DevOps Report and GitHub Actions Report packages, but reporting remains disabled at runtime. Pass `--report-azdo` to enable Azure DevOps reporting. To enable GitHub Actions reporting, run the tests on GitHub Actions and pass `--report-gh`.
 
 Here's a full example, using the `None` profile:
 
@@ -141,7 +141,7 @@ You can also disable an extension that's coming from the selected profile. For e
 </Project>
 ```
 
-Starting with MSTest.Sdk 4.3.0, the `Default` profile references the Azure DevOps Report and GitHub Actions Report packages. To remove either package reference, set `<EnableMicrosoftTestingExtensionsAzureDevOpsReport>false</EnableMicrosoftTestingExtensionsAzureDevOpsReport>` or `<EnableMicrosoftTestingExtensionsGitHubActionsReport>false</EnableMicrosoftTestingExtensionsGitHubActionsReport>`. If you keep the package references, reporting still starts only when you pass `--report-azdo` or `--report-gh` for the test run.
+In MSTest.Sdk 4.3.0 and later, the `Default` profile references the Azure DevOps Report and GitHub Actions Report packages. To remove either package reference, set `<EnableMicrosoftTestingExtensionsAzureDevOpsReport>false</EnableMicrosoftTestingExtensionsAzureDevOpsReport>` or `<EnableMicrosoftTestingExtensionsGitHubActionsReport>false</EnableMicrosoftTestingExtensionsGitHubActionsReport>`. If you keep the package references, Azure DevOps reporting starts only when you pass `--report-azdo`. GitHub Actions reporting starts only when you run the tests on GitHub Actions and pass `--report-gh`.
 
 ## Features
 

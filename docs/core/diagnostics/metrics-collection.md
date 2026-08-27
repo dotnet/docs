@@ -33,7 +33,7 @@ services.AddMetrics(metrics =>
 Import the `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Diagnostics.Metrics` namespaces to use these extension methods.
 
 > [!IMPORTANT]
-> The `Metrics` configuration only selects which instruments registered <xref:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener> implementations receive. It doesn't register listeners or activate their subscriptions, create metrics, aggregate measurements, export data, or automatically configure OpenTelemetry, Prometheus, `dotnet-counters`, or any other collector.
+> The `Metrics` configuration only selects which instruments each registered <xref:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener> implementation receives. It doesn't register listeners or activate their subscriptions, create metrics, aggregate measurements, export data, or automatically configure OpenTelemetry, Prometheus, `dotnet-counters`, or any other collector.
 
 Use the following sections to choose which meters the rules apply to:
 

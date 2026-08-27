@@ -1,7 +1,7 @@
 ---
 title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
-ms.date: 10/09/2024
+ms.date: 08/27/2026
 ms.topic: overview
 ai-usage: ai-assisted
 ---
@@ -118,6 +118,7 @@ The configuration binder has specific behaviors and limitations when working wit
 - [Bind to dictionaries](#bind-to-dictionaries)
 - [Dictionary keys with colons](#dictionary-keys-with-colons)
 - [Bind to IReadOnly* types](#bind-to-ireadonly-types)
+- [Exclude properties from binding](#exclude-properties-from-binding)
 - [Bind with parameterized constructors](#bind-with-parameterized-constructors)
 
 #### Bind to dictionaries
@@ -151,6 +152,22 @@ The configuration class implementation:
 :::code language="csharp" source="snippets/configuration/binding-scenarios/DictionaryBinding/Program.cs" id="SettingsWithReadOnly":::
 
 This approach allows the binder to populate the mutable `List<string>` while presenting an immutable interface to consumers through `IReadOnlyList<string>`.
+
+#### Exclude properties from binding
+
+Starting in .NET 11, apply <xref:Microsoft.Extensions.Configuration.ConfigurationIgnoreAttribute> to a property when you don't want the configuration binder to populate it. The reflection-based binder and the [configuration source generator](configuration-generator.md) both honour the attribute.
+
+```csharp
+public sealed class AppOptions
+{
+    public string Endpoint { get; set; } = "";
+
+    [ConfigurationIgnore]
+    public string RuntimeValue { get; set; } = "calculated";
+}
+```
+
+If configuration contains values for both `Endpoint` and `RuntimeValue`, the binder updates `Endpoint` and leaves `RuntimeValue` at its existing value.
 
 #### Bind with parameterized constructors
 

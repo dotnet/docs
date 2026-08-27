@@ -3,7 +3,8 @@ title: Microsoft.Testing.Platform services overview
 description: Learn about the available Microsoft.Testing.Platform (MTP) services.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/11/2024
+ms.date: 08/26/2026
+ai-usage: ai-assisted
 ---
 
 # Microsoft.Testing.Platform services
@@ -66,10 +67,11 @@ In the preceding code, both the `capabilitiesFactory` and the `adapterFactory` s
 
 The `IConfiguration` interface can be retrieved using the [`IServiceProvider`](#microsofttestingplatform-services) and provides access to the configuration settings for the testing framework and any extension points. By default, these configurations are loaded from:
 
-* Environment variables
-* A JSON file named `[assemblyName].testingplatformconfig.json` located near the entry point assembly.
+* Command-line options, exposed under the `commandLineOptions:` section.
+* Environment variables.
+* A JSON file named *[appname].testconfig.json* located next to the test application executable.
 
-**The order of precedence is maintained, which means that if a configuration is found in the environment variables, the JSON file will not be processed.**
+Command-line options take precedence over environment variables, which take precedence over values from *[appname].testconfig.json*. MTP loads every source and selects the first source that supplies each key. For `commandLineOptions:` values, MTP selects a source for the complete option so indexed arguments don't combine across sources. For details about configuration-file discovery and precedence, see [MTP configuration settings](./microsoft-testing-platform-config.md).
 
 The interface is a straightforward key-value pair of strings:
 
@@ -79,6 +81,8 @@ public interface IConfiguration
     string? this[string key] { get; }
 }
 ```
+
+Starting with MTP 2.4.0, the configuration service also implements the `IConfigurationRoot` interface. Use `GetSection` to retrieve an `IConfigurationSection`, and use `GetChildren` to enumerate immediate child sections. A section exposes its `Key`, full `Path`, optional scalar `Value`, and `HasValue` state. Providers must implement `IHierarchicalConfigurationProvider` before their keys appear through enumeration, but you can retrieve a known path from any provider.
 
 ### JSON configuration file
 
@@ -171,6 +175,12 @@ The `ICommandLineOptions` can be obtained through certain APIs, such as the [ICo
 `ICommandLineOptions.IsOptionSet(string optionName)`: This method allows you to verify whether a specific option has been specified. When specifying the `optionName`, omit the `--` prefix. For example, if the user inputs `--myOption`, you should simply pass `myOption`.
 
 `ICommandLineOptions.TryGetOptionArgumentList(string optionName, out string[]? arguments)`: This method enables you to check whether a specific option has been set and, if so, retrieve the corresponding value or values (if the arity is more than one). Similar to the previous case, the `optionName` should be provided without the `--` prefix.
+
+## The `IArtifactNamingService` service
+
+Starting with MTP 2.4.0, `IArtifactNamingService` gives extensions the same cross-platform file-name templating that MTP report extensions use. Retrieve it with `serviceProvider.GetArtifactNamingService()`, then call `ResolveFileName` with a template.
+
+The service expands `{pname}`, `{pid}`, `{asm}`, `{tfm}`, `{arch}`, and `{time}`. It preserves directory segments and sanitizes the leaf file name for the current operating system. Unknown placeholders remain unchanged. For placeholder descriptions, see [Report file names](microsoft-testing-platform-test-reports.md#report-file-names).
 
 ## The `ILoggerFactory` service
 
@@ -347,8 +357,9 @@ The API consists of:
 public interface IOutputDevice
 {
     Task DisplayAsync(
-        IOutputDeviceDataProducer producer, 
-        IOutputDeviceData data);
+        IOutputDeviceDataProducer producer,
+        IOutputDeviceData data,
+        CancellationToken cancellationToken);
 }
 
 public interface IOutputDeviceDataProducer : IExtension
@@ -394,18 +405,19 @@ IServiceProvider provider = null; // Get the service provider...
 var outputDevice = provider.GetOutputDevice();
 
 await outputDevice.DisplayAsync(
-    this, 
+    this,
     new FormattedTextOutputDeviceData($"TestingFramework version '{Version}' running tests with parallelism of {_dopValue}")
     {
         ForegroundColor = new SystemConsoleColor
         {
             ConsoleColor = ConsoleColor.Green
         }
-    });
+    },
+    CancellationToken.None);
 ```
 
 Beyond the standard use of colored text, the main advantage of `IOutputDevice` and `IOutputDeviceData` is that the *output device* is entirely independent and unknown to the user. This allows for the development of complex user interfaces. For example, it's entirely feasible to implement a *real-time* web application that displays the progress of tests.
 
 ## The `IPlatformInformation` service
 
-Provides information about the platform such as: name, version, commit hash and build date.
+The experimental `IPlatformInformation` service provides the platform `Name`, optional `Version`, optional `CommitHash`, and optional `BuildDate`.

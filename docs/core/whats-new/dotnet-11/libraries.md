@@ -528,6 +528,7 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 - [Asynchronous validation with DataAnnotations](#asynchronous-validation-with-dataannotations)
 - [Activity tracing configuration](#activity-tracing-configuration)
 - [Generic source-generated logging methods](#generic-source-generated-logging-methods)
+- [Improved reliability for configuration file change detection](#improved-reliability-for-configuration-file-change-detection)
 
 ### Configuration binding
 
@@ -651,6 +652,11 @@ The logging source generator now supports generic methods decorated with <xref:M
 public static partial void PacketReceived<TCode>(ILogger logger, TCode code, int length)
     where TCode : struct, Enum;
 ```
+### Improved reliability for configuration file change detection
+
+The <xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher> type, which configuration providers use to detect configuration file changes, includes several reliability improvements.
+
+It now handles relative paths, missing directories, and file systems that don't support file watching more reliably. It also avoids watching subdirectories when it doesn't need to.
 
 ## Cryptography
 

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/09/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -86,6 +86,13 @@ This article gives a central entry point for MTP command-line options.
 
   Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.
 
+- **`--enable-dynamic-extensions`**
+
+  Enables loading extensions declared by `*.testingplatformextensions.json` manifest files next to the test application. Dynamic extensions are disabled by default. For security requirements and the manifest schema, see [Load extensions dynamically](./microsoft-testing-platform-architecture-extensions.md#load-extensions-dynamically).
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 2.4.0.
+
 - **`--exit-on-process-exit`**
 
   Exit the test process if dependent process exits. PID must be provided.
@@ -141,6 +148,20 @@ This article gives a central entry point for MTP command-line options.
 - **`--results-directory`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+
+- **`--server`**
+
+  Starts the test application in JSON-RPC server mode for editor, IDE, or tool integration. Omit the value or use `jsonrpc`. For a supported source-only client, see [MTP server mode](./microsoft-testing-platform-server-mode.md).
+
+  > [!IMPORTANT]
+  > The `dotnettestcli` value and its transport arguments are internal to the .NET SDK integration. Don't pass them manually.
+
+- **`--show-slowest-tests`**
+
+  Shows the requested number of slowest tests in the terminal summary. When a run contains multiple test modules, MTP reports the slowest tests for each module.
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 2.4.0.
 
 - **`--timeout`**
 

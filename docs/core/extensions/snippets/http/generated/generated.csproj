@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.11" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.11" />
-    <PackageReference Include="Refit.HttpClientFactory" Version="15.0.0" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="15.2.0" />
   </ItemGroup>
 
   <ItemGroup>

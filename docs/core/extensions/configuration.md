@@ -155,17 +155,9 @@ This approach allows the binder to populate the mutable `List<string>` while pre
 
 #### Exclude properties from binding
 
-Starting in .NET 11, apply <xref:Microsoft.Extensions.Configuration.ConfigurationIgnoreAttribute> to a property when you don't want the configuration binder to populate it. The reflection-based binder and the [configuration source generator](configuration-generator.md) both honour the attribute.
+If you don't want the configuration binder to populate a property, apply <xref:Microsoft.Extensions.Configuration.ConfigurationIgnoreAttribute> to it (available starting in .NET 11). Both the reflection-based binder and the [configuration source generator](configuration-generator.md) honor this attribute.
 
-```csharp
-public sealed class AppOptions
-{
-    public string Endpoint { get; set; } = "";
-
-    [ConfigurationIgnore]
-    public string RuntimeValue { get; set; } = "calculated";
-}
-```
+:::code language="csharp" source="snippets/configuration/binding-scenarios/ConfigurationIgnore/Program.cs" id="AppOptions":::
 
 If configuration contains values for both `Endpoint` and `RuntimeValue`, the binder updates `Endpoint` and leaves `RuntimeValue` at its existing value.
 

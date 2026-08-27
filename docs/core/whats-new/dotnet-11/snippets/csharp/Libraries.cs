@@ -1,4 +1,4 @@
-﻿using System.Buffers;
+using System.Buffers;
 using System.Diagnostics;
 using System.Formats.Tar;
 using System.Globalization;
@@ -18,9 +18,8 @@ public static class LibrariesExamples
     static async Task ProcessRunAndCaptureExample()
     {
         // <ProcessRunAndCapture>
-        // One-shot capture: stdout and stderr together, plus exit code.
         ProcessTextOutput result = await Process.RunAndCaptureTextAsync(
-            "git", ["status", "--porcelain"]);
+            "git", new[] { "status", "--porcelain" });
 
         Console.WriteLine(result.StandardOutput);
         Console.WriteLine($"Exit code: {result.ExitStatus.ExitCode}");
@@ -30,11 +29,11 @@ public static class LibrariesExamples
     static void ZLibEncoderSpanExample()
     {
         // <ZLibEncoderSpan>
-        ReadOnlySpan<byte> source = [0x48, 0x65, 0x6C, 0x6C, 0x6F]; // "Hello"
+        ReadOnlySpan<byte> source = new byte[] { 0x48, 0x65, 0x6C, 0x6C, 0x6F }; // "Hello"
         byte[] buffer = new byte[source.Length + 32];
         Span<byte> destination = buffer;
 
-        using ZLibEncoder encoder = new();
+        using ZLibEncoder encoder = new ZLibEncoder();
         OperationStatus status = encoder.Compress(
             source, destination, out int bytesConsumed, out int bytesWritten,
             isFinalBlock: true);
@@ -48,22 +47,21 @@ public static class LibrariesExamples
         // <FloatingPointHex>
         double value = Math.PI;
 
-        // Format as hexadecimal IEEE-754: preserves all bits exactly
-        string hex = value.ToString("X"); // e.g., "0X1.921FB54442D18P+1"
-        double roundTripped = double.Parse(hex, NumberStyles.HexFloat);
+        string hex = value.ToString("X", CultureInfo.InvariantCulture);
+        double roundTripped = double.Parse(hex, NumberStyles.HexFloat, CultureInfo.InvariantCulture);
 
-        Console.WriteLine(roundTripped == value); // True — exact round-trip
+        Console.WriteLine(roundTripped == value);
         // </FloatingPointHex>
     }
 
     static void UtfValidationExample()
     {
         // <UtfValidation>
-        ReadOnlySpan<byte> bytes = [0xC3, 0x28]; // invalid UTF-8
-        int badIndex = Utf8.IndexOfInvalidSubsequence(bytes); // 0
+        ReadOnlySpan<byte> bytes = new byte[] { 0xC3, 0x28 };
+        int badIndex = Utf8.IndexOfInvalidSubsequence(bytes);
 
-        ReadOnlySpan<char> chars = "valid \uD83D\uDC4D end"; // valid UTF-16 (👍 emoji)
-        bool ok = Utf16.IsValid(chars); // true
+        ReadOnlySpan<char> chars = "valid \uD83D\uDC4D end".AsSpan();
+        bool ok = Utf16.IsValid(chars);
         // </UtfValidation>
     }
 
@@ -77,7 +75,6 @@ public static class LibrariesExamples
         writer.WriteEndObject();
         writer.Flush();
 
-        // Reuse the writer with different output options.
         stream.SetLength(0);
         writer.Reset(stream, new JsonWriterOptions { Indented = false });
         // </Utf8JsonWriterReset>
@@ -91,13 +88,9 @@ public static class LibrariesExamples
             TypeInfoResolver = new DefaultJsonTypeInfoResolver()
         };
 
-        // Previously, a manual downcast was required.
         JsonTypeInfo<MyRecord> info1 = (JsonTypeInfo<MyRecord>)options.GetTypeInfo(typeof(MyRecord));
-
-        // The generic method returns the correct type directly.
         JsonTypeInfo<MyRecord> info2 = options.GetTypeInfo<MyRecord>();
 
-        // TryGetTypeInfo reports whether the configured resolver handles the type.
         if (options.TryGetTypeInfo<MyRecord>(out JsonTypeInfo<MyRecord>? typeInfo))
         {
             _ = typeInfo;
@@ -108,9 +101,6 @@ public static class LibrariesExamples
     static void JsonNamingIgnoreExample()
     {
         // <JsonNamingIgnore>
-        // Type-level JsonIgnore omits null members by default. The type-level
-        // naming policy overrides the global policy, and the member policy wins
-        // for EventName.
         var options = new JsonSerializerOptions
         {
             PropertyNamingPolicy = JsonNamingPolicy.PascalCase
@@ -119,26 +109,22 @@ public static class LibrariesExamples
         var data = new EventData { EventName = "Launch", ReleaseVersion = "11", Notes = null };
         string json = JsonSerializer.Serialize(data, options);
         Console.WriteLine(json);
-        // {"eventName":"Launch","release_version":"11"}
         // </JsonNamingIgnore>
     }
 
     static async Task TarArchiveFormatExample()
     {
         // <TarArchiveFormat>
-        // Create a GNU format tar archive for Linux compatibility
         TarFile.CreateFromDirectory("/source/dir", "/dest/archive.tar",
-            includeBaseDirectory: true, format: TarEntryFormat.Gnu);
+            includeBaseDirectory: true, entryFormat: TarEntryFormat.Gnu);
 
-        // Create a Ustar format archive for broader compatibility
         using Stream outputStream = File.OpenWrite("/dest/ustar.tar");
         TarFile.CreateFromDirectory("/source/dir", outputStream,
-            includeBaseDirectory: false, format: TarEntryFormat.Ustar);
+            includeBaseDirectory: false, entryFormat: TarEntryFormat.Ustar);
 
-        // Async version
         CancellationToken cancellationToken = CancellationToken.None;
         await TarFile.CreateFromDirectoryAsync("/source/dir", "/dest/archive.tar",
-            includeBaseDirectory: true, format: TarEntryFormat.Pax,
+            includeBaseDirectory: true, entryFormat: TarEntryFormat.Pax,
             cancellationToken: cancellationToken);
         // </TarArchiveFormat>
     }
@@ -148,16 +134,13 @@ public static class LibrariesExamples
         // <SafeFileHandlePipe>
         SafeFileHandle.CreateAnonymousPipe(
             out SafeFileHandle readEnd,
-            out SafeFileHandle writeEnd,
-            asyncRead: true,
-            asyncWrite: false);
+            out SafeFileHandle writeEnd);
 
         using (readEnd)
         using (writeEnd)
         {
-            // SafeFileHandle.Type reports the kind of OS object the handle refers to
-            Console.WriteLine(readEnd.Type);   // Pipe
-            Console.WriteLine(writeEnd.Type);  // Pipe
+            Console.WriteLine(readEnd.Type);
+            Console.WriteLine(writeEnd.Type);
         }
         // </SafeFileHandlePipe>
     }
@@ -167,14 +150,12 @@ public static class LibrariesExamples
         // <RegexAnyNewLine>
         string text = "line1\r\nline2\u0085line3\u2028line4";
 
-        // RegexOptions.AnyNewLine makes ^, $, and . treat all Unicode newline
-        // sequences as line terminators, not just \n.
         MatchCollection matches = Regex.Matches(
             text,
             @"^line\d$",
             RegexOptions.Multiline | RegexOptions.AnyNewLine);
 
-        Console.WriteLine(matches.Count); // 4
+        Console.WriteLine(matches.Count);
         // </RegexAnyNewLine>
     }
 
@@ -185,15 +166,14 @@ public static class LibrariesExamples
         {
             (1, "Laptop", "Electronics"),
             (2, "Mouse", "Electronics"),
-            (3, "Orphan", null), // No matching category
+            (3, "Orphan", null),
         };
         var categories = new List<(string Name, string Description)>
         {
             ("Electronics", "Electronic devices"),
-            ("Furniture", "Office furniture"), // No matching product
+            ("Furniture", "Office furniture"),
         };
 
-        // LeftJoin: all products, matched categories (null if none)
         var leftJoined = products.LeftJoin(
             categories,
             p => p.Category,
@@ -201,11 +181,7 @@ public static class LibrariesExamples
 
         foreach (var (product, category) in leftJoined)
             Console.WriteLine($"{product.Name}: {category.Description ?? "(none)"}");
-        // Laptop: Electronic devices
-        // Mouse: Electronic devices
-        // Orphan: (none)
 
-        // FullJoin: all products and categories, paired where they match
         var fullJoined = products.FullJoin(
             categories,
             p => p.Category,
@@ -214,39 +190,31 @@ public static class LibrariesExamples
         foreach (var (product, category) in fullJoined)
             Console.WriteLine(
                 $"{product.Name ?? "(none)"}: {category.Description ?? "(none)"}");
-        // Laptop: Electronic devices
-        // Mouse: Electronic devices
-        // Orphan: (none)
-        // (none): Office furniture
         // </LinqJoins>
     }
 
     static void EqualityComparerCreateExample()
     {
         // <EqualityComparerCreate>
-
-        // Create an equality comparer based on a key selector
         var byName = EqualityComparer<(string Name, int Age)>.Create(p => p.Name);
 
         var people = new HashSet<(string Name, int Age)>(byName)
         {
             ("Alice", 30),
             ("Bob", 25),
-            ("Alice", 40), // Duplicate by name — not added
+            ("Alice", 40),
         };
-        Console.WriteLine(people.Count); // 2
+        Console.WriteLine(people.Count);
         // </EqualityComparerCreate>
     }
 
     static void RandomGenericExample()
     {
         // <RandomGeneric>
-        // Generate a random integer of any binary integer type
         int i = Random.Shared.NextInteger<int>();
         long l = Random.Shared.NextInteger<long>(0L, 100L);
-        byte b = Random.Shared.NextInteger<byte>(maxValue: (byte)10);
+        byte b = Random.Shared.NextInteger<byte>(maxValue: 10);
 
-        // Generate a random floating-point value of any IEEE-754 type
         float f = Random.Shared.NextBinaryFloat<float>();
         double d = Random.Shared.NextBinaryFloat<double>();
         Half h = Random.Shared.NextBinaryFloat<Half>();
@@ -262,11 +230,9 @@ public static class LibrariesExamples
         var source = new StringBuilder("Hello, ");
         source.Append("World!");
 
-        // MoveChunks transfers all content from source to a new StringBuilder.
-        // After the call, source contains no characters.
         StringBuilder dest = StringBuilder.MoveChunks(source);
-        Console.WriteLine(dest);          // Hello, World!
-        Console.WriteLine(source.Length); // 0
+        Console.WriteLine(dest);
+        Console.WriteLine(source.Length);
         // </StringBuilderMoveChunks>
     }
 
@@ -285,7 +251,6 @@ public static class LibrariesExamples
         using var arrayStream = new MemoryStream();
         PipeWriter arrayPipe = PipeWriter.Create(arrayStream);
 
-        // Write a JavaScript Object Notation (JSON) array: [0,1,2,3,4]
         await JsonSerializer.SerializeAsyncEnumerable(
             arrayPipe,
             GenerateNumbers());
@@ -294,8 +259,6 @@ public static class LibrariesExamples
         using var jsonlStream = new MemoryStream();
         PipeWriter jsonlPipe = PipeWriter.Create(jsonlStream);
 
-        // Write canonical JSON Lines (JSONL). Each value is followed by \n.
-        // Output: 0\n1\n2\n3\n4\n
         await JsonSerializer.SerializeAsyncEnumerable(
             jsonlPipe,
             GenerateNumbers(),
@@ -307,16 +270,13 @@ public static class LibrariesExamples
     static void X25519KeyExchangeExample()
     {
         // <X25519KeyExchange>
-        // Generate key pairs for Alice and Bob
         using X25519DiffieHellman alice = X25519DiffieHellman.GenerateKey();
         using X25519DiffieHellman bob = X25519DiffieHellman.GenerateKey();
 
-        // Each party derives the shared secret using the other's public key
         byte[] aliceShared = alice.DeriveRawSecretAgreement(bob);
         byte[] bobShared = bob.DeriveRawSecretAgreement(alice);
 
-        // Both parties arrive at the same secret
-        Console.WriteLine(aliceShared.SequenceEqual(bobShared)); // True
+        Console.WriteLine(aliceShared.SequenceEqual(bobShared));
         // </X25519KeyExchange>
     }
 
@@ -325,10 +285,10 @@ public static class LibrariesExamples
         // <NullableUnderlyingType>
         Type nullableIntType = typeof(int?);
         Type? underlying = nullableIntType.GetNullableUnderlyingType();
-        Console.WriteLine(underlying); // System.Int32
+        Console.WriteLine(underlying);
 
         Type nonNullable = typeof(int);
-        Console.WriteLine(nonNullable.GetNullableUnderlyingType() is null); // True
+        Console.WriteLine(nonNullable.GetNullableUnderlyingType() is null);
         // </NullableUnderlyingType>
     }
 }

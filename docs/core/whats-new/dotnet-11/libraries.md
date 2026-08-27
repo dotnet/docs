@@ -651,7 +651,6 @@ The logging source generator now supports generic methods decorated with <xref:M
 [LoggerMessage(0, LogLevel.Trace, "Received {Code} ({Length} bytes)")]
 public static partial void PacketReceived<TCode>(ILogger logger, TCode code, int length)
     where TCode : struct, Enum;
-```
 ### Improved reliability for configuration file change detection
 
 The <xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher> type, which configuration providers use to detect configuration file changes, includes several reliability improvements.

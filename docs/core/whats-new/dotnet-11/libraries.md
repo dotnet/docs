@@ -641,6 +641,12 @@ builder.Services.AddTracing(tracing =>
 
 The same release adds `ActivitySourceFactory` and unseals `ActivitySource`, which together support factory-driven creation and refreshable listeners.
 
+### Improved reliability for configuration file change detection
+
+The <xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher> type, which configuration providers use to detect configuration file changes, includes several reliability improvements.
+
+It now handles relative paths, missing directories, and file systems that don't support file watching more reliably. It also avoids watching subdirectories when it doesn't need to.
+
 ## Cryptography
 
 - [X25519 Diffie-Hellman key exchange](#x25519-diffie-hellman-key-exchange)

@@ -3,7 +3,7 @@ title: MSTest SDK configuration
 author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 08/26/2026
+ms.date: 08/27/2026
 ai-usage: ai-assisted
 ---
 
@@ -45,21 +45,24 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 
   * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
   * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
+  * [Azure DevOps Report](./microsoft-testing-platform-test-reports.md#azure-devops-reports) (MSTest.Sdk 4.3.0+)
+  * [GitHub Actions Report](./microsoft-testing-platform-test-reports.md#github-actions-reports) (experimental and prerelease, MSTest.Sdk 4.3.0+)
 
 * `AllMicrosoft` - Enables the Microsoft extensions selected for broad out-of-the-box use, including extensions with a restrictive license. Experimental and API-only extensions can still require explicit opt-in.
 
-  Enables the following extensions:
+  Enables all extensions from the `Default` profile, plus the following extensions:
 
-  * [Code Coverage](./microsoft-testing-platform-code-coverage.md#microsoft-code-coverage)
   * [Crash Dump](./microsoft-testing-platform-crash-hang-dumps.md#crash-dump)
   * [Fakes](./microsoft-testing-platform-fakes.md) (MSTest.Sdk 3.7.0+)
   * [Hang Dump](./microsoft-testing-platform-crash-hang-dumps.md#hang-dump)
   * [Hot Reload](./microsoft-testing-platform-hot-reload.md#hot-reload)
   * [HTML Report](./microsoft-testing-platform-test-reports.md#html-reports)
-  * [GitHub Actions Report](./microsoft-testing-platform-test-reports.md#github-actions-reports) (MSTest.Sdk 4.3.0+)
   * [Retry](./microsoft-testing-platform-retry.md#retry)
-  * [Trx Report](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx)
-  * [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports)
+
+  In MSTest.Sdk versions 3.11.0 through 4.2.x, the Azure DevOps Report extension is included only in `AllMicrosoft`.
+
+> [!NOTE]
+> The profiles reference the Azure DevOps Report and GitHub Actions Report packages, but reporting remains disabled at runtime. Pass `--report-azdo` to enable Azure DevOps reporting. To enable GitHub Actions reporting, run the tests on GitHub Actions and pass `--report-gh`.
 
 Here's a full example, using the `None` profile:
 
@@ -82,10 +85,10 @@ Here's a full example, using the `None` profile:
 | [Hang Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump)                 |       |                    | :heavy_check_mark:  |
 | [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)               |       |                    | :heavy_check_mark:  |
 | [HTML Report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HtmlReport)             |       |                    | :heavy_check_mark:  |
-| [GitHub Actions Report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) |       |              | :heavy_check_mark:³ |
+| [GitHub Actions Report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.GitHubActionsReport) |       | :heavy_check_mark:³ | :heavy_check_mark:³ |
 | [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                        |       |                    | :heavy_check_mark:  |
 | [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)                      |       | :heavy_check_mark: | :heavy_check_mark:  |
-| [AzureDevOpsReport](./microsoft-testing-platform-test-reports.md#azure-devops-reports) |       |                    | :heavy_check_mark:²  |
+| [Azure DevOps Report](https://www.nuget.org/packages/Microsoft.Testing.Extensions.AzureDevOpsReport) |       | :heavy_check_mark:³ | :heavy_check_mark:² |
 
 ¹ MSTest.Sdk 3.7.0+
 ² MSTest.Sdk 3.11.0+
@@ -137,6 +140,8 @@ You can also disable an extension that's coming from the selected profile. For e
 
 </Project>
 ```
+
+In MSTest.Sdk 4.3.0 and later, the `Default` profile references the Azure DevOps Report and GitHub Actions Report packages. To remove either package reference, set `<EnableMicrosoftTestingExtensionsAzureDevOpsReport>false</EnableMicrosoftTestingExtensionsAzureDevOpsReport>` or `<EnableMicrosoftTestingExtensionsGitHubActionsReport>false</EnableMicrosoftTestingExtensionsGitHubActionsReport>`. If you keep the package references, Azure DevOps reporting starts only when you pass `--report-azdo`. GitHub Actions reporting starts only when you run the tests on GitHub Actions and pass `--report-gh`.
 
 ## Features
 

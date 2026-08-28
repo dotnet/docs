@@ -73,13 +73,13 @@ One of the key advantages of using the .NET configuration abstractions is the ab
 
 These abstractions are agnostic to their underlying configuration provider (<xref:Microsoft.Extensions.Configuration.IConfigurationProvider>). In other words, you can use an `IConfiguration` instance to access any configuration value from multiple providers.
 
-The binder can process configuration values in several ways:
+The binder processes configuration values in several ways:
 
-- Uses a single configuration value directly for a `string` or `object` target, or converts it to a common .NET type, such as a numeric type, an enumeration, or a nullable type. The binder converts a Base64-encoded string to a byte array.
-- Binds hierarchical configuration to an object's properties or constructor parameters.
-- Binds child configuration sections to arrays, collections, sets, and dictionaries.
-- Uses the matching configuration section directly when the target type is <xref:Microsoft.Extensions.Configuration.IConfigurationSection>.
-- Converts a single configuration value to a custom type. The default binder uses a <xref:System.ComponentModel.TypeConverter> when the custom type defines one. The source generator binder doesn't support this.
+- It uses a single configuration value directly for a `string` or `object` target, or converts it to a common .NET type, such as a numeric type, an enumeration, or a nullable type. The binder converts a Base64-encoded string to a byte array.
+- It binds hierarchical configuration to an object's properties or constructor parameters.
+- It binds child configuration sections to arrays, collections, sets, and dictionaries.
+- It uses the matching configuration section directly when the target type is <xref:Microsoft.Extensions.Configuration.IConfigurationSection>.
+- It converts a single configuration value to a custom type. The default binder uses a <xref:System.ComponentModel.TypeConverter> when the custom type defines one. The source-generated binder doesn't support this conversion.
 
 > [!NOTE]
 > The binder has a few limitations:

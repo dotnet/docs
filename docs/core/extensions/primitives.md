@@ -1,7 +1,8 @@
 ---
 title: "Use the Microsoft.Extensions.Primitives library"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
-ms.date: 03/13/2023
+ms.date: 08/27/2026
+ai-usage: ai-assisted
 ---
 
 # Primitives: The extensions library for .NET
@@ -26,7 +27,9 @@ Propagating notifications when a change occurs is a fundamental concept in progr
 As a developer, you're also free to implement your own type. The <xref:Microsoft.Extensions.Primitives.IChangeToken> interface defines a few properties:
 
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.HasChanged?displayProperty=nameWithType>: Gets a value that indicates if a change has occurred.
-- <xref:Microsoft.Extensions.Primitives.IChangeToken.ActiveChangeCallbacks?displayProperty=nameWithType>: Indicates if the token will proactively raise callbacks. If `false`, the token consumer must poll `HasChanged` to detect changes.
+- <xref:Microsoft.Extensions.Primitives.IChangeToken.ActiveChangeCallbacks?displayProperty=nameWithType>: Indicates whether the token proactively raises callbacks. If `false`, the token consumer must poll `HasChanged` to detect changes.
+
+An `ActiveChangeCallbacks` value of `true` doesn't guarantee a callback for every change. To detect every change that a token implementation can report, also check `HasChanged`.
 
 ## Instance-based functionality
 
@@ -36,7 +39,9 @@ Consider the following example usage of the `CancellationChangeToken`:
 
 In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and its <xref:System.Threading.CancellationTokenSource.Token> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor*> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` statement, the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
 
-When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
+When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. `ActiveChangeCallbacks` is `true` when at least one inner token supports active callbacks. The composite token subscribes only to those active inner tokens. To detect a change from a passive inner token, poll the composite token's `HasChanged` property.
+
+Consider the following example:
 
 :::code source="./snippets/primitives/change/Example.Composites.cs" id="Composites":::
 
@@ -48,7 +53,14 @@ As an alternative to calling `RegisterChangeCallback`, you could use the <xref:M
 
 :::code source="./snippets/primitives/change/Example.Static.cs" id="Static":::
 
-Much like previous examples, you'll need an implementation of `IChangeToken` that is produced by the `changeTokenProducer`. The producer is defined as a `Func<IChangeToken>` and it's expected that this will return a new token every invocation. The `consumer` is an `Action` or `Func<Task>` when not using `state`, or an `Action<TState>` or `Func<TState, Task>` where the generic type `TState` flows through the change notification.
+Much like previous examples, you'll need an implementation of `IChangeToken` that the `changeTokenProducer` produces. The producer is a `Func<IChangeToken?>`. After a change, it should return a new token for the next registration. If it returns `null`, `ChangeToken.OnChange` doesn't register a callback. Dispose the `IDisposable` returned by `OnChange` to unregister the consumer.
+
+For a synchronous consumer, pass an `Action` or `Action<TState>`. Exceptions from the producer or consumer propagate to the caller that registers or triggers the token.
+
+Starting in .NET 11, you can pass a `Func<Task>` or `Func<TState, Task>` for an asynchronous consumer. `ChangeToken.OnChange` waits for the returned task to complete before the consumer can be invoked again. This behavior prevents concurrent consumer calls, but it can combine multiple changes that occur while the task runs into one later callback. An exception thrown before the consumer returns its task propagates to the code that registers or triggers the token. Exceptions that occur after the task is returned are left unobserved by `ChangeToken.OnChange`.
+
+> [!NOTE]
+> When you recompile existing code for .NET 11, an `async` lambda can bind to a new task-returning overload instead of the synchronous `Action` overload. The new binding changes callback timing from `async void` behavior to task-based behavior. For more information, see [ChangeToken.OnChange async overloads rebind existing Task-returning callbacks](../compatibility/extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md).
 
 ## String tokenizers, segments, and values
 

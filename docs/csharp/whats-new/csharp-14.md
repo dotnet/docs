@@ -90,6 +90,30 @@ public string Message
     get;
     set => field = value ?? throw new ArgumentNullException(nameof(value));
 }
+### Common Patterns with `field`
+
+**Lazy Initialization:**
+```csharp
+public SqlConnection Connection
+{
+    get => field ??= new SqlConnection("connection-string");
+}
+public string DisplayName
+{
+    get;
+    set
+    {
+        if (field == value) return;
+        field = value;
+        OnPropertyChanged();
+    }
+}
+public string Email
+{
+    get;
+    set => field = value?.Trim().ToLower() ?? "";
+}
+
 ```
 
 You can declare a body for one or both accessors for a field backed property.

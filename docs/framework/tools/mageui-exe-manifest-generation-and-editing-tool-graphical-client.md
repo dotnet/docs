@@ -183,7 +183,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 
 |UI Element|Description|
 |----------------|-----------------|
-|**This application should check for updates**|Specifies whether ClickOnce should check for application updates. If this check box is not selected, the application will not check for updates unless you update it programmatically by using the APIs in the <xref:System.Deployment.Application> namespace.|
+|**This application should check for updates**|Specifies whether ClickOnce should check for application updates. If this check box is not selected, the application will not check for updates unless you update it programmatically by using the APIs in the `System.Deployment.Application` namespace.|
 |**Choose when the application should check for updates**|Provides two options for update checks:<br /><br /> -   **Before the application starts**. The update check is performed prior to application execution.<br />-   **After the application starts**. The update check begins once the main form of the application has initialized, and will run the next time the application starts.|
 |**Update check frequency**|Determines how often ClickOnce should check for updates:<br /><br /> -   **Check every time the application runs**. ClickOnce will perform an update check every time the user opens the application.<br />-   **Check every**: Select a time interval and a unit (hours, days, or weeks) that must elapse before checking for updates.|
 |**Specify a minimum required version for this application**|Optional. Specifies that a specific version of your application is a required installation, preventing your users from working with an earlier version.|

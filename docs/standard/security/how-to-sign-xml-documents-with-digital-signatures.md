@@ -22,6 +22,9 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
 > [!NOTE]
 > The code in this article applies to Windows.
 
+> [!IMPORTANT]
+> A <xref:System.Security.Cryptography.Xml.SignedXml> instance is intended for a single signing operation. Do not reuse the same instance to compute more than one signature, and do not call <xref:System.Security.Cryptography.Xml.SignedXml.ComputeSignature%2A> and then <xref:System.Security.Cryptography.Xml.SignedXml.CheckSignature%2A> on the same instance. Starting in .NET 12, these patterns throw <xref:System.InvalidOperationException>; on earlier versions of .NET they are not blocked but can produce incorrect results. If you need to sign multiple documents (or sign and then verify), create a new <xref:System.Security.Cryptography.Xml.SignedXml> for each operation.
+
 The code example in this procedure demonstrates how to digitally sign an entire XML document and attach the signature to the document in a <`Signature`> element.  The example creates an RSA signing key, adds the key to a secure key container, and then uses the key to digitally sign an XML document.  The key can then be retrieved to verify the XML digital signature, or can be used to sign another XML document.
 
 For information about how to verify an XML digital signature that was created using this procedure, see [How to: Verify the Digital Signatures of XML Documents](how-to-verify-the-digital-signatures-of-xml-documents.md).
@@ -126,3 +129,4 @@ Never embed a private key directly into your source code.  Embedded keys can be 
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Verify the Digital Signatures of XML Documents](how-to-verify-the-digital-signatures-of-xml-documents.md)
 - [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
+

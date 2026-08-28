@@ -73,11 +73,13 @@ One of the key advantages of using the .NET configuration abstractions is the ab
 
 These abstractions are agnostic to their underlying configuration provider (<xref:Microsoft.Extensions.Configuration.IConfigurationProvider>). In other words, you can use an `IConfiguration` instance to access any configuration value from multiple providers.
 
-The binder can use different approaches to process configuration values:​
+The binder processes configuration values in several ways:
 
-- Direct deserialization (using built-in converters) for primitive types​.
-- The <xref:System.ComponentModel.TypeConverter> for a complex type when the type has one​.
-- Reflection for a complex type that has properties.
+- It uses a single configuration value directly for a `string` or `object` target, or converts it to a common .NET type, such as a numeric type, an enumeration, or a nullable type. The binder converts a Base64-encoded string to a byte array.
+- It binds hierarchical configuration to an object's properties or constructor parameters.
+- It binds child configuration sections to arrays, collections, sets, and dictionaries.
+- It uses the matching configuration section directly when the target type is <xref:Microsoft.Extensions.Configuration.IConfigurationSection>.
+- It converts a single configuration value to a custom type. The default binder uses a <xref:System.ComponentModel.TypeConverter> when the custom type defines one. The source-generated binder doesn't support this conversion.
 
 > [!NOTE]
 > The binder has a few limitations:

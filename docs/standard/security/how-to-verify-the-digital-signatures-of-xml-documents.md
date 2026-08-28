@@ -98,4 +98,3 @@ Never embed a private key directly into your source code.  Embedded keys can be 
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md)
 - [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
-

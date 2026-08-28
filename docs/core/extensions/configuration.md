@@ -75,11 +75,11 @@ These abstractions are agnostic to their underlying configuration provider (<xre
 
 The binder can process configuration values in several ways:
 
-- Use a single configuration value directly for a `string` or `object` target, or convert it to a common .NET type, such as a numeric type, an enumeration, or a nullable type. The binder converts a Base64-encoded string to a byte array.
-- Bind hierarchical configuration to an object's properties or constructor parameters.
-- Bind child configuration sections to arrays, collections, sets, and dictionaries.
-- Use the matching configuration section directly when the target type is <xref:Microsoft.Extensions.Configuration.IConfigurationSection>.
-- Convert a single configuration value to a custom type. The default binder uses a <xref:System.ComponentModel.TypeConverter> when the custom type defines one. The source generator binder doesn't support this.
+- Uses a single configuration value directly for a `string` or `object` target, or converts it to a common .NET type, such as a numeric type, an enumeration, or a nullable type. The binder converts a Base64-encoded string to a byte array.
+- Binds hierarchical configuration to an object's properties or constructor parameters.
+- Binds child configuration sections to arrays, collections, sets, and dictionaries.
+- Uses the matching configuration section directly when the target type is <xref:Microsoft.Extensions.Configuration.IConfigurationSection>.
+- Converts a single configuration value to a custom type. The default binder uses a <xref:System.ComponentModel.TypeConverter> when the custom type defines one. The source generator binder doesn't support this.
 
 > [!NOTE]
 > The binder has a few limitations:

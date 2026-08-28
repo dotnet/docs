@@ -155,7 +155,7 @@ This approach allows the binder to populate the mutable `List<string>` while pre
 
 #### Exclude properties from binding
 
-If you don't want the configuration binder to populate a property, apply <xref:Microsoft.Extensions.Configuration.ConfigurationIgnoreAttribute> to it (available starting in .NET 11). Both the reflection-based binder and the [configuration source generator](configuration-generator.md) honor this attribute.
+If you don't want the configuration binder to populate a property, apply <xref:Microsoft.Extensions.Configuration.ConfigurationIgnoreAttribute> to it (available starting in .NET 11).
 
 :::code language="csharp" source="snippets/configuration/binding-scenarios/ConfigurationIgnore/Program.cs" id="AppOptions":::
 

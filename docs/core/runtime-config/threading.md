@@ -49,7 +49,7 @@ This article details the settings you can use to configure threading in .NET.
 | - | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads | |
 | **MSBuild property** | `ThreadPoolMinThreads` | An integer that represents the minimum number of threads | |
-| **Environment variable** | `DOTNET_ThreadPool_ForceMinWorkerThreads` | A hexadecimal integer that represents the minimum number of threads | .NET 10 |
+| **Environment variable** | `DOTNET_ThreadPool_ForceMinWorkerThreads` | A hexadecimal integer that represents the minimum number of worker threads (for example, `0x20` or `20` for 32 threads) | .NET 10 |
 
 ### Examples
 
@@ -96,7 +96,7 @@ Project file:
 | - | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads | |
 | **MSBuild property** | `ThreadPoolMaxThreads` | An integer that represents the maximum number of threads | |
-| **Environment variable** | `DOTNET_ThreadPool_ForceMaxWorkerThreads` | A hexadecimal integer that represents the maximum number of threads | .NET 10 |
+| **Environment variable** | `DOTNET_ThreadPool_ForceMaxWorkerThreads` | A hexadecimal integer that represents the minimum number of worker threads (for example, `0x14` for 20 threads) | .NET 10 |
 
 ### Examples
 

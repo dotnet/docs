@@ -1,7 +1,7 @@
 ---
 title: Threading config settings
 description: Learn about the settings that configure threading for .NET apps.
-ms.date: 11/04/2021
+ms.date: 08/28/2026
 ---
 # Runtime configuration options for threading
 
@@ -45,11 +45,11 @@ This article details the settings you can use to configure threading in .NET.
 - Specifies the minimum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads*?displayProperty=nameWithType> method.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads |
-| **MSBuild property** | `ThreadPoolMinThreads` | An integer that represents the minimum number of threads |
-| **Environment variable** | N/A | N/A |
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads | |
+| **MSBuild property** | `ThreadPoolMinThreads` | An integer that represents the minimum number of threads | |
+| **Environment variable** | `DOTNET_ThreadPool_ForceMinWorkerThreads` | A hexadecimal integer that represents the minimum number of threads | .NET 10 |
 
 ### Examples
 
@@ -92,11 +92,11 @@ Project file:
 - Specifies the maximum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads*?displayProperty=nameWithType> method.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads |
-| **MSBuild property** | `ThreadPoolMaxThreads` | An integer that represents the maximum number of threads |
-| **Environment variable** | N/A | N/A |
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads | |
+| **MSBuild property** | `ThreadPoolMaxThreads` | An integer that represents the maximum number of threads | |
+| **Environment variable** | `DOTNET_ThreadPool_ForceMaxWorkerThreads` | A hexadecimal integer that represents the maximum number of threads | .NET 10 |
 
 ### Examples
 

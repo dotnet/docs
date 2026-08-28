@@ -3,7 +3,7 @@ title: Migration guide from VSTest to Microsoft.Testing.Platform (MTP)
 description: Step-by-step guide to migrate from VSTest to Microsoft.Testing.Platform (MTP), including argument mapping, project configuration, and CI pipeline updates.
 author: Youssef1313
 ms.author: ygerges
-ms.date: 08/26/2026
+ms.date: 08/28/2026
 ai-usage: ai-assisted
 ---
 
@@ -18,6 +18,9 @@ If you still need to choose a platform, start with [Test platforms overview](./t
 If you need detailed behavior of `dotnet test` modes, see [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md).
 
 If you need a single list of platform and extension command-line options, see [MTP CLI options reference](./microsoft-testing-platform-cli-options.md).
+
+> [!TIP]
+> To automate a repository-wide migration, install the [`dotnet-test`](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test) and [`dotnet-test-migration`](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test-migration) plugins. Ask the [`test-migration` agent](https://github.com/dotnet/skills/blob/main/plugins/dotnet-test-migration/agents/test-migration.agent.md) to detect and migrate your test setup, or invoke the [`migrate-vstest-to-mtp` skill](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test-migration/skills/migrate-vstest-to-mtp) for this specific migration. Review the generated changes before you merge them.
 
 ## Opt-in to use MTP
 

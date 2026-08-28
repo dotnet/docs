@@ -16,14 +16,15 @@ The experimental [Microsoft.Testing.Platform.AI](https://www.nuget.org/packages/
 
 ## Use AI coding tools for test workflows
 
-The packages in this article let MTP extensions call AI models at test run time. To use an AI coding assistant to create, analyze, or migrate tests in your repository, use the curated [.NET Agent Skills](https://github.com/dotnet/skills) instead.
+The packages in this article let MTP extensions call AI models during a test run. To use an AI coding assistant to create, analyze, or migrate tests in your repository, use the curated [.NET Agent Skills](https://github.com/dotnet/skills) instead.
 
 Choose a workflow based on your goal:
 
 | Goal | Skill or agent |
 |---|---|
 | Create or extend tests | Use the [`code-testing-agent` skill](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills/code-testing-agent) from the [`dotnet-test` plugin](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test). The skill researches the codebase, plans the work, implements tests, and verifies the changes. |
-| Audit test quality | Use the [`test-quality-auditor` agent](https://github.com/dotnet/skills/blob/main/plugins/dotnet-test/agents/test-quality-auditor.agent.md) for a broad assessment, or invoke a focused `dotnet-test` skill for assertions, coverage, test gaps, or test smells. |
+| Run or troubleshoot tests | Use the [`run-tests` skill](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills/run-tests) to execute tests or diagnose test execution without changing test code. |
+| Audit test quality | Use the [`test-quality-auditor` agent](https://github.com/dotnet/skills/blob/main/plugins/dotnet-test/agents/test-quality-auditor.agent.md) for a broad assessment, or invoke a focused skill from the [`dotnet-test` skills directory](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills) for assertions, coverage, test gaps, or test smells. |
 | Improve testability | Use the [`testability-migration` agent](https://github.com/dotnet/skills/blob/main/plugins/dotnet-test/agents/testability-migration.agent.md) to find static dependencies and introduce testable abstractions. |
 | Migrate a test framework or platform | Use the [`test-migration` agent](https://github.com/dotnet/skills/blob/main/plugins/dotnet-test-migration/agents/test-migration.agent.md) from the [`dotnet-test-migration` plugin](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test-migration). The agent detects the current setup and selects the appropriate migration skill. |
 

@@ -1,14 +1,15 @@
 ---
 title: "Supported types in System.Text.Json"
-description: "Learn which types are supported for serialization by the APIs in the System.Text.Json namespace."
-ms.date: 11/25/2024
+description: "Learn which types the APIs in the System.Text.Json namespace support for serialization."
+ms.date: 08/18/2026
+ai-usage: ai-assisted
 no-loc: [System.Text.Json]
 ms.topic: reference
 ---
 
 # Supported types in System.Text.Json
 
-This article gives an overview of which types are supported for serialization and deserialization.
+This article lists the types that `System.Text.Json` supports for serialization and deserialization.
 
 ## Types that serialize as JSON objects
 
@@ -19,7 +20,7 @@ The following types serialize as JSON objects:
 * Interfaces
 * Records and struct records
 
-\* Non-dictionary types that implement <xref:System.Collections.Generic.IEnumerable`1> serialize as JSON arrays. Dictionary types, which do implement <xref:System.Collections.Generic.IEnumerable`1>, serialize as JSON objects.
+\* Non-dictionary types that implement <xref:System.Collections.Generic.IEnumerable`1> serialize as JSON arrays. Dictionary types also implement <xref:System.Collections.Generic.IEnumerable`1> but serialize as JSON objects.
 
 The following code snippet shows the serialization of a simple struct.
 
@@ -34,9 +35,9 @@ The following code snippet shows the serialization of a simple struct.
 
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method and writes the elements.
 
-Deserialization is more complicated and is not supported for some collection types.
+Deserialization has more constraints, and the serializer doesn't support it for some collection types.
 
-The following sections are organized by namespace and show which types are supported for serialization and deserialization.
+The following sections group types by namespace and show their serialization and deserialization support.
 
 * [System.Array namespace](#systemarray-namespace)
 * [System.Collections namespace](#systemcollections-namespace)
@@ -55,7 +56,7 @@ The following sections are organized by namespace and show which types are suppo
 | [Multi-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#multidimensional-arrays)    | ❌  | ❌     |
 | [Jagged arrays](../../../csharp/language-reference/builtin-types/arrays.md#jagged-arrays)                         | ✔️  | ✔️     |
 
-\* `byte[]` is handled specially and serializes as a base64 string, not a JSON array.
+\* `JsonSerializer` handles `byte[]` specially and serializes it as a base64 string, not a JSON array.
 
 ### System.Collections namespace
 
@@ -89,6 +90,7 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyCollection`1> | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyDictionary`2> \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList`1>       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlySet`1> §       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet`1>                | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.KeyValuePair`2>        | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.LinkedList`1>          | ✔️           | ✔️              |
@@ -106,31 +108,42 @@ The following sections are organized by namespace and show which types are suppo
 
 ‡ See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
+§ `System.Text.Json` supports <xref:System.Collections.Generic.IReadOnlySet`1> in .NET 11 and later versions. When you deserialize the interface, the serializer creates a <xref:System.Collections.Generic.HashSet`1> instance. Source generation supports the type, and the generated metadata calls <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType>.
+
 #### IAsyncEnumerable\<T>
 
-The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
+The following examples use streams to represent asynchronous data sources. Sources include local files, database query results, and web service API responses.
 
-##### Stream serialization
+##### Streaming serialization
 
 `System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable`1> values as JSON arrays, as shown in the following example:
 
 :::code language="csharp" source="snippets/supported-types/csharp/IAsyncEnumerableSerialize.cs" highlight="15":::
 
-`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync*?displayProperty=nameWithType>.
+Only asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync*?displayProperty=nameWithType>, support `IAsyncEnumerable<T>` values.
 
-##### Stream deserialization
+In .NET 11 and later versions, <xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProperty=nameWithType> writes an `IAsyncEnumerable<T>` sequence to either a <xref:System.IO.Stream> or a <xref:System.IO.Pipelines.PipeWriter>. With the default `topLevelValues: false`, the method writes a single root-level JSON array. Set `topLevelValues: true` to write [JSON Lines](https://jsonlines.org/) instead, where each element is a separate top-level value:
+
+```json
+{"id":1,"name":"apple"}
+{"id":2,"name":"banana"}
+```
+
+The method writes a single line feed (LF), `\n`, after every value, including the last. It always uses LF, regardless of <xref:System.Text.Json.JsonSerializerOptions.NewLine?displayProperty=nameWithType>. The method ignores <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType>, so each value remains on one line.
+
+##### Streaming deserialization
 
 The `DeserializeAsyncEnumerable` method supports streaming deserialization, as shown in the following example:
 
 :::code language="csharp" source="snippets/supported-types/csharp/IAsyncEnumerableDeserialize.cs" highlight="11":::
 
-The `DeserializeAsyncEnumerable` method only supports reading from root-level JSON arrays.
+By default, <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable*?displayProperty=nameWithType> reads elements from a single root-level JSON array. Set `topLevelValues: true` to read a sequence of whitespace-separated top-level values instead. This input format is a superset of JSON Lines. Overloads accept either a <xref:System.IO.Stream> or a <xref:System.IO.Pipelines.PipeReader>.
 
 The <xref:System.Text.Json.JsonSerializer.DeserializeAsync*> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It returns the final result as a single value, as shown in the following example.
 
 :::code language="csharp" source="snippets/supported-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="16":::
 
-In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to read the entire JSON payload before returning a result.
+In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory because it must read the entire JSON payload before returning a result.
 
 ### System.Collections.Immutable namespace
 
@@ -165,7 +178,7 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.Specialized.StringCollection>    | ✔️           | ❌              |
 | <xref:System.Collections.Specialized.StringDictionary>    | ✔️           | ❌              |
 
-\* When <xref:System.Collections.Specialized.BitVector32> is deserialized, the <xref:System.Collections.Specialized.BitVector32.Data> property is skipped because it doesn't have a public setter. No exception is thrown.
+\* When you deserialize <xref:System.Collections.Specialized.BitVector32>, the serializer skips the <xref:System.Collections.Specialized.BitVector32.Data> property because it doesn't have a public setter. The serializer doesn't throw an exception.
 
 ### System.Collections.Concurrent namespace
 
@@ -192,21 +205,21 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.ObjectModel.ReadOnlyDictionary`2>   | ✔️            | ❌             |
 | <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection`1> | ✔️    | ❌             |
 
-\* Non-`string` keys are not supported.
+\* `JsonSerializer` doesn't support non-`string` keys.
 
 ### Custom collections
 
-Any collection type that isn't in one of the preceding namespaces is considered a custom collection. Such types include user-defined types and types defined by ASP.NET Core. For example, <xref:Microsoft.Extensions.Primitives?displayProperty=fullName> is in this group.
+`System.Text.Json` treats any collection type outside the preceding namespaces as a custom collection. This group includes user-defined types and ASP.NET Core types. For example, <xref:Microsoft.Extensions.Primitives?displayProperty=fullName> is in this group.
 
-All custom collections (everything that derives from `IEnumerable`) are supported for serialization, as long as their element types are supported.
+`JsonSerializer` supports all custom collections that derive from `IEnumerable` when it also supports their element types.
 
 #### Deserialization support
 
-A custom collection is supported for deserialization if it:
+`JsonSerializer` can deserialize a custom collection when the collection:
 
 * Isn't an interface or abstract.
 * Has a parameterless constructor.
-* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
+* Contains element types that <xref:System.Text.Json.JsonSerializer> supports.
 * Implements or inherits one or more of the following interfaces or classes:
   * <xref:System.Collections.Concurrent.ConcurrentQueue`1>
   * <xref:System.Collections.Concurrent.ConcurrentStack`1> \*
@@ -226,7 +239,7 @@ A custom collection is supported for deserialization if it:
 
 #### Known issues
 
-There are known issues with the following custom collections:
+The following custom collections have known issues:
 
 * <xref:System.Dynamic.ExpandoObject>: See [dotnet/runtime#29690](https://github.com/dotnet/runtime/issues/29690).
 * <xref:System.Dynamic.DynamicObject>: See [dotnet/runtime#1808](https://github.com/dotnet/runtime/issues/1808).
@@ -238,13 +251,17 @@ For more information about known issues, see the [open issues in System.Text.Jso
 
 ### Supported key types
 
-When used as the keys of `Dictionary` and `SortedList` types, the following types have built-in support:
+The following types have built-in support as keys for `Dictionary` and `SortedList` types:
 
+* <xref:System.Numerics.BFloat16> (.NET 11 and later)
 * `Boolean`
 * `Byte`
 * `DateTime`
 * `DateTimeOffset`
 * `Decimal`
+* <xref:System.Numerics.Decimal32> (.NET 11 and later)
+* <xref:System.Numerics.Decimal64> (.NET 11 and later)
+* <xref:System.Numerics.Decimal128> (.NET 11 and later)
 * `Double`
 * `Enum`
 * `Guid`
@@ -262,11 +279,41 @@ When used as the keys of `Dictionary` and `SortedList` types, the following type
 * <xref:System.Uri>
 * <xref:System.Version>
 
-In addition, the <xref:System.Text.Json.Serialization.JsonConverter`1.WriteAsPropertyName(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.JsonConverter`1.ReadAsPropertyName(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> methods let you add dictionary key support for any type of your choosing.
+The <xref:System.Text.Json.Serialization.JsonConverter`1.WriteAsPropertyName(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.JsonConverter`1.ReadAsPropertyName(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> methods also let you add dictionary key support for any type.
+
+## BFloat16 and decimal floating-point types
+
+Starting in .NET 11, `System.Text.Json` includes built-in converters for the <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128> types. Finite values serialize as JSON numbers.
+
+These types behave like the other built-in numeric types:
+
+* Source generation supports them without extra configuration.
+* Dictionary-key conversion supports all four types.
+* They honor <xref:System.Text.Json.Serialization.JsonNumberHandling>, including the `"NaN"`, `"Infinity"`, and `"-Infinity"` literals through <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals>.
+
+<xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> exposes converter properties for source-generated metadata. The properties are <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.BFloat16Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal32Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal64Converter?displayProperty=nameWithType>, and <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal128Converter?displayProperty=nameWithType>.
+
+## F# discriminated unions
+
+Starting in .NET 11, `System.Text.Json` serializes and deserializes F# discriminated unions, including class, struct, and recursive unions:
+
+```fsharp
+type Shape =
+    | Point
+    | Circle of radius: float
+```
+
+* A case without fields serializes as a JSON string that contains the case name, such as `"Point"`.
+* A case that has fields serializes as a JSON object. The object contains a `$type` discriminator followed by the case's named fields, such as `{"$type":"Circle","radius":3.14}`.
+
+<xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> applies to case names and field names. A case-level <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> takes precedence. To use a discriminator property name other than `$type`, set <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType>.
+
+> [!IMPORTANT]
+> F# discriminated union support is reflection-only. It requires dynamic code and untrimmed reflection metadata. You can't use it with `System.Text.Json` source generation or Native AOT.
 
 ## Unsupported types
 
-The following types aren't supported for serialization:
+`JsonSerializer` doesn't support the following types for serialization:
 
 * <xref:System.Type?displayProperty=fullName> and <xref:System.Reflection.MemberInfo?displayProperty=fullName>
 * <xref:System.ReadOnlySpan`1>, <xref:System.Span`1>, and ref structs in general
@@ -275,7 +322,7 @@ The following types aren't supported for serialization:
 
 ### System.Data namespace
 
-There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and related types in the <xref:System.Data> namespace. Deserializing these types from untrusted input is not safe, as explained in [the security guidance](../../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). However, you can write a custom converter to support these types. For sample custom converter code that serializes and deserializes a `DataTable`, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to/csharp/RoundtripDataTable.cs).
+`System.Text.Json` doesn't provide built-in converters for <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and related types in the <xref:System.Data> namespace. Don't deserialize these types from untrusted input. For more information, see [the security guidance](../../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). To support these types, write a custom converter. For a `DataTable` converter sample, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to/csharp/RoundtripDataTable.cs).
 
 ## See also
 

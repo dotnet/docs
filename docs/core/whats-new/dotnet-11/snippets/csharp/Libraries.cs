@@ -77,7 +77,7 @@ public static class LibrariesExamples
         writer.WriteEndObject();
         writer.Flush();
 
-        // Reset with different options for next use — no new allocation needed
+        // Reuse the writer with different output options.
         stream.SetLength(0);
         writer.Reset(stream, new JsonWriterOptions { Indented = false });
         // </Utf8JsonWriterReset>
@@ -86,19 +86,20 @@ public static class LibrariesExamples
     static void JsonTypeInfoExample()
     {
         // <JsonTypeInfoGeneric>
-        JsonSerializerOptions options = new(JsonSerializerDefaults.Web);
-        options.MakeReadOnly();
+        JsonSerializerOptions options = new()
+        {
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+        };
 
-        // Before: manual downcast required
+        // Previously, a manual downcast was required.
         JsonTypeInfo<MyRecord> info1 = (JsonTypeInfo<MyRecord>)options.GetTypeInfo(typeof(MyRecord));
 
-        // After: generic method returns the right type directly
+        // The generic method returns the correct type directly.
         JsonTypeInfo<MyRecord> info2 = options.GetTypeInfo<MyRecord>();
 
-        // TryGetTypeInfo variant for cases where the type may not be registered
+        // TryGetTypeInfo reports whether the configured resolver handles the type.
         if (options.TryGetTypeInfo<MyRecord>(out JsonTypeInfo<MyRecord>? typeInfo))
         {
-            // Use typeInfo
             _ = typeInfo;
         }
         // </JsonTypeInfoGeneric>
@@ -107,18 +108,18 @@ public static class LibrariesExamples
     static void JsonNamingIgnoreExample()
     {
         // <JsonNamingIgnore>
-        // Type-level JsonIgnore: all members use WhenWritingNull by default
-        // Per-member JsonNamingPolicy: EventName uses camelCase even though the
-        // serializer options use PascalCase
+        // Type-level JsonIgnore omits null members by default. The type-level
+        // naming policy overrides the global policy, and the member policy wins
+        // for EventName.
         var options = new JsonSerializerOptions
         {
             PropertyNamingPolicy = JsonNamingPolicy.PascalCase
         };
 
-        var data = new EventData { EventName = "Launch", Notes = null };
+        var data = new EventData { EventName = "Launch", ReleaseVersion = "11", Notes = null };
         string json = JsonSerializer.Serialize(data, options);
         Console.WriteLine(json);
-        // {"eventName":"Launch"}  -- Notes omitted (null), EventName camel-cased
+        // {"eventName":"Launch","release_version":"11"}
         // </JsonNamingIgnore>
     }
 
@@ -281,18 +282,25 @@ public static class LibrariesExamples
             }
         }
 
-        var pipe = new Pipe();
+        using var arrayStream = new MemoryStream();
+        PipeWriter arrayPipe = PipeWriter.Create(arrayStream);
 
-        // Write a JSON array: [0,1,2,3,4]
+        // Write a JavaScript Object Notation (JSON) array: [0,1,2,3,4]
         await JsonSerializer.SerializeAsyncEnumerable(
-            pipe.Writer,
+            arrayPipe,
             GenerateNumbers());
+        await arrayPipe.CompleteAsync();
 
-        // Write NDJSON (one value per line): 0\n1\n2\n3\n4\n
+        using var jsonlStream = new MemoryStream();
+        PipeWriter jsonlPipe = PipeWriter.Create(jsonlStream);
+
+        // Write canonical JSON Lines (JSONL). Each value is followed by \n.
+        // Output: 0\n1\n2\n3\n4\n
         await JsonSerializer.SerializeAsyncEnumerable(
-            pipe.Writer,
+            jsonlPipe,
             GenerateNumbers(),
             topLevelValues: true);
+        await jsonlPipe.CompleteAsync();
         // </JsonSerializeAsyncEnumerablePipe>
     }
 
@@ -327,11 +335,14 @@ public static class LibrariesExamples
 
 record MyRecord(string Name, int Value);
 
+[JsonNamingPolicy(JsonKnownNamingPolicy.SnakeCaseLower)]
 [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
 sealed class EventData
 {
     [JsonNamingPolicy(JsonKnownNamingPolicy.CamelCase)]
     public string EventName { get; set; } = "";
+
+    public string ReleaseVersion { get; set; } = "";
 
     public string? Notes { get; set; }
 }

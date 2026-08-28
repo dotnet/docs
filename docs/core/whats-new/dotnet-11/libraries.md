@@ -2,7 +2,7 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 08/12/2026
+ms.date: 08/18/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
@@ -166,77 +166,144 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 ### System.Text.Json improvements
 
-#### Generic type info retrieval
+#### Union serialization
 
-A common pattern when working with `System.Text.Json` type metadata is to retrieve a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> from <xref:System.Text.Json.JsonSerializerOptions>.
-Previously, you had to manually downcast from the non-generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method.
-New generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0}@)?displayProperty=nameWithType> methods return strongly typed metadata directly, eliminating the cast.
+**C# union types.** `System.Text.Json` can serialize and deserialize C# union types through the new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> contract kind. Reflection-based serialization and source generation both support union contracts. The serializer writes the active case directly as JavaScript Object Notation (JSON):
 
-:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonTypeInfoGeneric":::
+| Union state | JSON output |
+| - | - |
+| `string` case with value `"hello"` | `"hello"` |
+| `int` case with value `42` | `42` |
+| Default struct union with no active case | `null` |
 
-This is particularly useful when working with source generation, NativeAOT, and polymorphic serialization scenarios where type metadata access is common.
+If a union declares separate `T` and `T?` cases, the serializer preserves both cases and selects the nullable case for a `null` payload. A non-null payload is ambiguous without a custom classifier because both cases use the same JSON shape. If no case accepts `null`, JSON `null` deserializes to the default union value, which also serializes as `null`.
 
-#### Naming and ignore defaults
+Use <xref:System.Text.Json.Serialization.JsonUnionAttribute> and <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo> to customize union metadata. For custom case selection, derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory>, which creates a <xref:System.Text.Json.Serialization.JsonTypeClassifier> delegate. Register the factory per union through <xref:System.Text.Json.Serialization.JsonUnionAttribute.TypeClassifier?displayProperty=nameWithType>, for reflection-based serialization through <xref:System.Text.Json.JsonSerializerOptions.TypeClassifiers?displayProperty=nameWithType>, or for source generation through <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.TypeClassifiers?displayProperty=nameWithType>.
 
-The naming and ignore options available in <xref:System.Text.Json?displayProperty=fullName> now include:
+<xref:System.Text.Json.Serialization.JsonUnionTypeStructuralClassifier> extends the default JSON-token-kind classification with object-shape classification. It compares root-level property names, without inspecting property values or nested content, and rejects configurations where it can't select one case unambiguously. Nested union cases, polymorphic cases, and reference-preserving deserialization aren't supported by this classifier.
 
-- **<xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>**: A new built-in naming policy that converts property names to PascalCase. It joins the existing camelCase, snake_case, and kebab-case policies.
-- **Per-member naming policy**: The new <xref:System.Text.Json.Serialization.JsonNamingPolicyAttribute?displayProperty=nameWithType> attribute lets you override the naming policy on individual properties or fields, giving you fine-grained control without a custom converter.
-- **Type-level ignore conditions**: Applying <xref:System.Text.Json.Serialization.JsonIgnoreAttribute?displayProperty=nameWithType> at the class or struct level sets the default ignore behavior for all members, so you no longer need to repeat the attribute on every nullable property.
+C# union types are a preview language feature. For language syntax, see [C# 15 union types](../../../csharp/whats-new/csharp-15.md#union-types). For serialization guidance, see [Serialize union types](../../../standard/serialization/system-text-json/union-types.md).
 
-:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonNamingIgnore":::
-
-#### F# discriminated union support
-
-The serializer now understands F# discriminated unions out of the box. Apps that share types between F# producers and C# consumers no longer need a custom converter for the most common shapes:
+**F# discriminated unions.** The serializer represents cases without fields as JSON strings and cases with fields as JSON objects that contain a `$type` discriminator:
 
 ```fsharp
 type Shape =
+    | Point
     | Circle of radius: float
-    | Square of side: float
-
-let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
-// {"$type":"Circle","radius":1.5}
+    | Rectangle of height: float * length: float
 ```
 
-#### Utf8JsonWriter.Reset with options
+| F# value | JSON output |
+| - | - |
+| `Point` | `"Point"` |
+| `Circle 3.14` | `{"$type":"Circle","radius":3.14}` |
+| `Rectangle(10.0, 20.0)` | `{"$type":"Rectangle","height":10,"length":20}` |
 
-<xref:System.Text.Json.Utf8JsonWriter.Reset*> now accepts a <xref:System.Text.Json.JsonWriterOptions> parameter, so writer instances can be repooled with different options without allocating a new writer:
+For cases without fields, deserialization accepts both `"Point"` and `{"$type":"Point"}`. Class, struct, and recursive unions are supported. <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> applies to case and field names, while <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> on a case takes precedence. You can also change the discriminator property through <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType>.
 
-:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="Utf8JsonWriterReset":::
+> [!IMPORTANT]
+> F# discriminated-union support uses reflection only. It doesn't support `System.Text.Json` source generation, trimming, or Native AOT.
 
-#### SerializeAsyncEnumerable improvements
+#### JSON Lines output
 
-<xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProperty=nameWithType> gains two new capabilities:
+Four <xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProperty=nameWithType> overloads serialize an <xref:System.Collections.Generic.IAsyncEnumerable`1> to either a <xref:System.IO.Stream> or <xref:System.IO.Pipelines.PipeWriter>. For each output type, one overload accepts <xref:System.Text.Json.JsonSerializerOptions> and one accepts <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1>.
 
-- **`PipeWriter` target:** For pipeline-based I/O scenarios, new overloads accept a <xref:System.IO.Pipelines.PipeWriter> as the output destination, making it easy to integrate JSON streaming directly.
-- **`topLevelValues` parameter:** For NDJSON output, set this parameter to `true` to write each item as a top-level JSON value separated by newlines instead of wrapping all items in a JSON array. Both `Stream` and `PipeWriter` overloads support the parameter.
+With the default `topLevelValues: false`, the output remains one JSON array. Set `topLevelValues: true` to write canonical JSON Lines (JSONL). The serializer writes each value compactly and follows it with a line feed (LF), `\n`, including the final value. JSONL output uses LF regardless of <xref:System.Text.Json.JsonSerializerOptions.NewLine?displayProperty=nameWithType> and ignores <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> so that each value occupies one line.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonSerializeAsyncEnumerablePipe":::
 
-#### C# union type serialization
+#### Polymorphic hierarchy support
 
-`System.Text.Json` can now serialize and deserialize C# union types. The serializer recognizes a union through the new `JsonTypeInfoKind.Union` contract kind, reads and writes the active case, and supports both the reflection-based serializer and the source generator. When you serialize a union, `System.Text.Json` writes the value of whichever case is active, so a union of `int` and `string` round-trips cleanly:
+For a C# `closed` hierarchy, the serializer can infer the derived types, including generic specializations, and assign deterministic discriminators. Configure inference at any of these scopes:
 
-```json
-{
-  "id": 1,
-  "payload": "hello"
-}
+```csharp
+[JsonPolymorphic(InferClosedTypePolymorphism = true)]
+closed record Shape;
+record Circle(double Radius) : Shape;
+record Square(double Length) : Shape;
 ```
 
-```json
-{
-  "id": 2,
-  "payload": 42
-}
+- Set <xref:System.Text.Json.JsonSerializerOptions.InferClosedTypePolymorphism?displayProperty=nameWithType> for reflection-based serialization or as a global runtime setting.
+- Set <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType> so the source generator creates the required metadata at compile time.
+- Set <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType> to `true` on one hierarchy. Set it to `false` to opt that hierarchy out of a global setting.
+
+Explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> registrations take precedence and replace the inferred list instead of extending it. If source-generated metadata doesn't contain inferred or explicitly registered derived types, enabling only the runtime option fails fast. A per-type opt-in on a type that isn't `closed` throws <xref:System.InvalidOperationException> with reflection and produces a source-generation error. Combining a per-type opt-in with explicit derived-type registrations produces a source-generation warning because the explicit registrations replace inference.
+
+Open generic derived-type registrations are also supported. For example, one attribute registers `Derived<T>` for every compatible closed `Base<T>`:
+
+```csharp
+[JsonDerivedType(typeof(Derived<>), "derived")]
+public class Base<T> { }
+public class Derived<T> : Base<T> { }
 ```
 
-The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. Union types are a C# language preview feature. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
+The resolver supports these type-argument patterns:
 
-#### Closed-hierarchy polymorphism inference
+| Pattern | Example resolution |
+| - | - |
+| Direct binding | `Base<int>` resolves `Derived<T> : Base<T>` to `Derived<int>`. |
+| Reordered parameters | `Base<int, string>` resolves `Derived<U, V> : Base<V, U>` to `Derived<string, int>`. |
+| Partially concrete parameters | `Base<string, int>` resolves `Derived<T> : Base<T, int>` to `Derived<string>`. |
+| Nested or array parameters | `Base<List<int>>` resolves `Derived<T> : Base<List<T>>` to `Derived<int>`. |
 
-<xref:System.Text.Json.JsonSerializerOptions> adds <xref:System.Text.Json.JsonSerializerOptions.InferClosedTypePolymorphism?displayProperty=nameWithType> so the serializer can infer polymorphic metadata for C# closed hierarchies without requiring explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> annotations on each base type. Explicit registrations still take precedence.
+The same rules apply to generic interfaces and types nested in generic outer types. The registration must resolve to exactly one closed derived type and satisfy its generic constraints. A ground-type mismatch, an unbound parameter, a constraint violation, an ambiguous match, or an incompatible shape throws <xref:System.InvalidOperationException> with reflection. For source generation, an unresolved registration produces the [SYSLIB1229](../../../fundamentals/syslib-diagnostics/syslib1220-1229.md) warning, and the generated hierarchy still fails when the serializer configures it. Suppressing the warning doesn't make the registration valid.
+
+For serializer configuration guidance, see [Infer polymorphism from a closed hierarchy](../../../standard/serialization/system-text-json/polymorphism.md#infer-polymorphism-from-a-closed-hierarchy) and [Configure open generic derived types](../../../standard/serialization/system-text-json/polymorphism.md#configure-open-generic-derived-types). For more information about the language feature, see [C# 15 closed hierarchies](../../../csharp/whats-new/csharp-15.md#closed-hierarchies).
+
+#### Source-generation and contract metadata
+
+The `System.Text.Json` source generator supports more contract shapes:
+
+- Members marked with <xref:System.Text.Json.Serialization.JsonIncludeAttribute> can have `private`, `internal`, or `protected` accessors. Private, internal, and protected fields are also supported when they're marked with `[JsonInclude]`.
+- An inaccessible constructor marked with <xref:System.Text.Json.Serialization.JsonConstructorAttribute> can participate in deserialization.
+- An omitted `init`-only property retains its property-initializer value. The generated contract sets the property after construction only when the JSON payload contains that property.
+
+Reflection-based and source-generated deserialization also support constructors whose parameters use `in`, `ref`, `out`, or `ref readonly`. The serializer binds `in`, `ref`, and `ref readonly` parameters by their element type. An `out` parameter doesn't bind a JSON constructor argument; the constructor receives an initialized output location, and a matching writable property can receive the JSON value after construction.
+
+For more information, see [Source-generation modes in System.Text.Json](../../../standard/serialization/system-text-json/source-generation-modes.md) and [Use immutable types and properties](../../../standard/serialization/system-text-json/immutability.md).
+
+Generic <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0}@)?displayProperty=nameWithType> methods return <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> without a manual cast. `GetTypeInfo<T>()` throws if the options can't resolve the type, while `TryGetTypeInfo<T>()` returns `false` in that case. Resolver and configuration exceptions can still propagate. These methods simplify metadata access in source-generation, Native AOT, and polymorphic serialization scenarios. For more information, see [Get strongly typed metadata](../../../standard/serialization/system-text-json/custom-contracts.md#get-strongly-typed-metadata).
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonTypeInfoGeneric":::
+
+#### Property names and ignore conditions
+
+<xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.JsonKnownNamingPolicy.PascalCase?displayProperty=nameWithType> provide built-in PascalCase conversion. Apply <xref:System.Text.Json.Serialization.JsonNamingPolicyAttribute> to a class, struct, interface, property, or field to select a naming policy at the type or member level.
+
+Naming precedence, from highest to lowest, is <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>, a member-level `[JsonNamingPolicy]`, a type-level `[JsonNamingPolicy]`, <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType>, and the original member name.
+
+<xref:System.Text.Json.Serialization.JsonIgnoreAttribute> can now set a default ignore condition on classes, structs, and interfaces. A member-level `[JsonIgnore]` takes precedence over the type-level condition, which takes precedence over <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition?displayProperty=nameWithType>. <xref:System.Text.Json.Serialization.JsonIgnoreCondition.Always?displayProperty=nameWithType> isn't valid at the type level; reflection throws <xref:System.InvalidOperationException>, while source generation reports `SYSLIB1226` and ignores the type-level attribute.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonNamingIgnore":::
+
+For more information, see [Apply a naming policy to a type or member](../../../standard/serialization/system-text-json/customize-properties.md#apply-a-naming-policy-to-a-type-or-member) and [Ignore properties based on a type-level condition](../../../standard/serialization/system-text-json/ignore-properties.md#ignore-properties-based-on-a-type-level-condition).
+
+#### Converters and collection contracts
+
+**Numeric converters.** The serializer includes built-in converters for <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>. The converters work with reflection, source generation, number-handling options, dictionary keys, and JSON Schema export. For generated metadata, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> exposes <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.BFloat16Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal32Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal64Converter?displayProperty=nameWithType>, and <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal128Converter?displayProperty=nameWithType>.
+
+**Open generic converters.** <xref:System.Text.Json.Serialization.JsonConverterAttribute> can reference an open generic converter on a generic type or member:
+
+```csharp
+[JsonConverter(typeof(OptionConverter<>))]
+public readonly struct Option<T> { }
+```
+
+The converter's total generic arity must match the target type's arity. The serializer closes the converter with the target type arguments in both reflection and source-generation modes, without requiring <xref:System.Text.Json.Serialization.JsonConverterFactory>. For supported nesting patterns, constraints, and error behavior, see [Use open generic converters with `JsonConverter`](../../../standard/serialization/system-text-json/converters-how-to.md#use-open-generic-converters-with-jsonconverter).
+
+**Extension data.** A member marked with <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute> can use <xref:System.Collections.Generic.IReadOnlyDictionary`2> with `string` keys and either `object` or <xref:System.Text.Json.JsonElement> values. During deserialization, the serializer assigns a mutable <xref:System.Collections.Generic.Dictionary`2> implementation. If the property already contains entries, the serializer copies them first and then adds JSON properties, so an incoming value replaces an existing value with the same key. A <xref:System.Text.Json.Nodes.JsonObject> extension-data member writes its child properties directly into the containing object. For example, an `Id` property and a `JsonObject` entry named `nested` produce `{"Id":1,"nested":true}`. For more information, see [Handle overflow JSON](../../../standard/serialization/system-text-json/handle-overflow.md#handle-overflow-json).
+
+**Read-only sets.** <xref:System.Text.Json.JsonSerializer> serializes <xref:System.Collections.Generic.IReadOnlySet`1> as a JSON array and deserializes it into a <xref:System.Collections.Generic.HashSet`1> instance. For source-generated metadata, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> creates the collection contract.
+
+For more information about built-in numeric and collection contracts, see [Supported types in System.Text.Json](../../../standard/serialization/system-text-json/supported-types.md).
+
+#### Writer reuse
+
+<xref:System.Text.Json.Utf8JsonWriter.Reset*> accepts a <xref:System.Text.Json.JsonWriterOptions> together with either a <xref:System.IO.Stream> or <xref:System.Buffers.IBufferWriter`1>. After you flush one JSON document, you can reuse or pool the writer with a different output target and different options instead of constructing another writer instance:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="Utf8JsonWriterReset":::
+
+For more information, see [Reuse a writer](../../../standard/serialization/system-text-json/use-utf8jsonwriter.md#reuse-a-writer).
 
 ### Regular expression improvements
 
@@ -432,16 +499,11 @@ On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, whic
 ### Collections improvements
 
 - [BitArray.PopCount](#bitarraypopcount)
-- [IReadOnlySet support in JSON serialization](#ireadonlyset-support-in-json-serialization)
 - [EqualityComparer\<T>.Create](#equalitycomparertcreate)
 
 #### BitArray.PopCount
 
 The <xref:System.Collections.BitArray> class now includes a <xref:System.Collections.BitArray.PopCount?displayProperty=nameWithType> method that returns the number of bits set to `true` in the array. This provides an efficient way to count set bits without manually iterating through the array.
-
-#### IReadOnlySet support in JSON serialization
-
-The <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> class now includes a <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> method, enabling JSON serialization support for <xref:System.Collections.Generic.IReadOnlySet`1> collections.
 
 #### EqualityComparer\<T>.Create
 

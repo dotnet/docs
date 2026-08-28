@@ -68,6 +68,8 @@ items:
                 href: extensions/11/fileconfigurationsource-onloadexception-io-errors.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
+              - name: PhysicalFilesWatcher validates root and FileSystemWatcher paths
+                href: extensions/11/physicalfileswatcher-validates-root-path.md
               - name: Some Microsoft.Extensions packages included in shared framework
                 href: extensions/11/extensions-in-shared-framework.md
           - name: Globalization

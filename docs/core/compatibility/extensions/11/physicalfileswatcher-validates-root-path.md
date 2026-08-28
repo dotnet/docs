@@ -88,5 +88,5 @@ The watcher begins monitoring after the root directory is created.
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.%23ctor(System.String,System.IO.FileSystemWatcher,System.Boolean)>
-- <xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.%23ctor(System.String,System.IO.FileSystemWatcher,System.Boolean,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters)>
+- [PhysicalFilesWatcher(String, FileSystemWatcher, Boolean) constructor](xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.%23ctor(System.String,System.IO.FileSystemWatcher,System.Boolean))
+- [PhysicalFilesWatcher(String, FileSystemWatcher, Boolean, Physical.ExclusionFilters) constructor](xref:Microsoft.Extensions.FileProviders.Physical.PhysicalFilesWatcher.%23ctor(System.String,System.IO.FileSystemWatcher,System.Boolean,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters))

@@ -112,7 +112,7 @@ public string DisplayName
 public string Email
 {
     get;
-    set => field = value?.Trim().ToLower() ?? "";
+    set => field = value?.Trim()?.ToLowerInvariant() ?? string.Empty;
 }
 
 ```

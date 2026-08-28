@@ -90,7 +90,8 @@ public string Message
     get;
     set => field = value ?? throw new ArgumentNullException(nameof(value));
 }
-### Common Patterns with `field`
+```
+### Common patterns with `field`
 
 **Lazy Initialization:**
 ```csharp

@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 06/05/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -46,6 +46,9 @@ dotnet test -h|--help
 ## Description
 
 With MTP, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [MTP](../testing/microsoft-testing-platform-intro.md).
+
+> [!IMPORTANT]
+> Extension-specific options aren't built into MTP. Each targeted test application must register the extension that provides an option. Add the extension's NuGet package directly, or use a test SDK configuration or profile that includes the package. Otherwise, the test run fails with exit code 5 because the option is unrecognized. Run `dotnet test --help` to see the options available to the selected test applications, and see [Extension options by scenario](../testing/microsoft-testing-platform-cli-options.md#extension-options-by-scenario) to find the package for an option.
 
 > [!WARNING]
 > When MTP is opted in via `global.json`, `dotnet test` expects all test projects to use MTP. It is an error if any of the test projects use VSTest.
@@ -176,6 +179,8 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 dotnet test --results-directory TestResults -- --report-trx --report-trx-filename A.trx
 ```
 
+The preceding example requires the [`Microsoft.Testing.Extensions.TrxReport`](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) package, either as a direct package reference or through a test SDK configuration that includes it.
+
 The same parser behavior applies to `dotnet run` and `dotnet build`. For a detailed example, see [Forward arguments to the application](dotnet-run.md#forward-arguments-to-the-application) in the `dotnet run` reference.
 
 ## Examples
@@ -210,7 +215,7 @@ The same parser behavior applies to `dotnet run` and `dotnet build`. For a detai
   dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll" --root-directory "c:\code"
   ```
 
-- Run the tests in the current directory with code coverage:
+- Run the tests in the current directory with the Microsoft Code Coverage extension. The test application must reference [`Microsoft.Testing.Extensions.CodeCoverage`](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage), either directly or through a test SDK configuration that includes it:
 
   ```dotnetcli
   dotnet test --coverage

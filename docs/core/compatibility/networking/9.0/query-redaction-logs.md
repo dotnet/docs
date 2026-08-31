@@ -19,7 +19,7 @@ Previously, the default implementation of `IHttpClientFactory` logging included 
 
 ## New behavior
 
-The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have the query and fragment part replaced by a `*` character.
+The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have the query part replaced by a `*` character, and the user info and fragment parts removed.
 
 ## Type of breaking change
 
@@ -27,11 +27,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The primary reason for this change is to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data and excluding them from logs by default helps protect this information. To keep the implementation simple and efficient, the fragment part is also scrubbed.
+The primary reason for this change is to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data and excluding them from logs by default helps protect this information. To keep the implementation simple and efficient, the user info and fragment parts are also scrubbed.
 
 ## Recommended action
 
-If your application relies on logging query strings and you're confident that it's safe to do so, you can disable URI redaction globally by setting an AppContext switch in one of three ways. The switch skips any redaction, so URIs are logged as-is, including the query and fragment parts.
+If your application relies on logging query strings and you're confident that it's safe to do so, you can disable URI redaction globally by setting an AppContext switch in one of three ways. The switch skips any redaction, so URIs are logged as-is, including the query, user info, and fragment parts.
 
 - In the project file.
 

@@ -60,7 +60,7 @@ If your application relies on logging query strings and you're confident that it
 Otherwise, no action is required, and the default behavior will help enhance the privacy aspects of your application.
 
 > [!NOTE]
-> This switch also skips URI redaction in `HttpClient` EventSource events. For more information, see [URI query redaction in HttpClient EventSource events](query-redaction-events.md).
+> This switch also skips URI redaction in `HttpClient` EventSource events. For more information, see [URI redaction in HttpClient EventSource events](query-redaction-events.md).
 
 ## Affected APIs
 

@@ -19,7 +19,7 @@ Previously, events emitted by `HttpClient` and `SocketsHttpHandler` included que
 
 ## New behavior
 
-With the change in [dotnet/runtime#104741](https://github.com/dotnet/runtime/pull/104741), the query part is replaced by a `*` character, and the user info and fragment parts are removed, in `HttpClient` and `SocketsHttpHandler` events by default. This change affects specific events and parameters, such as `pathAndQuery` in `RequestStart` and `redirectUri` in `Redirect`.
+With the change in [dotnet/runtime#104741](https://github.com/dotnet/runtime/pull/104741), the query part is replaced by a `*` character, and the user info and fragment parts are removed in `HttpClient` and `SocketsHttpHandler` events by default. This change affects specific events and parameters, such as `pathAndQuery` in `RequestStart` and `redirectUri` in `Redirect`.
 
 ## Type of breaking change
 

@@ -31,7 +31,7 @@ The primary reason for this change was to enhance privacy by reducing the risk o
 
 ## Recommended action
 
-If you need query string information when consuming `HttpClient` or `SocketsHttpHandler` events and you're confident that it's safe to do so, you can enable query string logging globally by setting an AppContext switch in one of three ways:
+If you need query string information when consuming `HttpClient` or `SocketsHttpHandler` events and you're confident that it's safe to do so, you can disable URI redaction globally by setting an AppContext switch in one of three ways. The switch skips any redaction, so URIs are reported as-is, including the query and fragment parts.
 
 - In the project file.
 
@@ -60,7 +60,7 @@ If you need query string information when consuming `HttpClient` or `SocketsHttp
 Otherwise, no action is required, and the default behavior will help enhance the privacy aspects of your application.
 
 > [!NOTE]
-> This switch also disables query string redaction in the default `IHttpClientFactory` logs. For more information, see [URI query redaction in IHttpClientFactory logs](query-redaction-logs.md).
+> This switch also skips URI redaction in the default `IHttpClientFactory` logs. For more information, see [URI query redaction in IHttpClientFactory logs](query-redaction-logs.md).
 
 ## Affected APIs
 

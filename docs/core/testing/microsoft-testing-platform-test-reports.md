@@ -3,13 +3,13 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/26/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
 # Test reports
 
-These features require installing additional NuGet packages, as described in each section.
+Each report option requires the extension package named in its section. Add the package directly, or use a test SDK configuration or profile that includes it. Report extensions aren't part of MTP core, so an option such as `--report-trx` is unrecognized when the test application doesn't register its extension. Run the test application with `--help`, or run `dotnet test --help` in MTP mode, to confirm that an option is available.
 
 > [!TIP]
 > When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) (included transitively by MSTest, NUnit, and xUnit runners), these extensions are auto-registered when you install their NuGet packages — no code changes needed. The manual registration specified in this article is only required if you disabled the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`.

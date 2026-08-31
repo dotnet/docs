@@ -3,13 +3,16 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/26/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
 # Microsoft.Testing.Platform (MTP) CLI options reference
 
 This article gives a central entry point for MTP command-line options.
+
+> [!IMPORTANT]
+> Platform options are available from MTP itself. Extension options are available only when each targeted test application registers the extension package that provides them. Add the package directly, or use a test SDK configuration or profile that includes it. If a test application doesn't register the extension, the run fails with exit code 5 because the option is unrecognized.
 
 ## Platform options
 
@@ -183,22 +186,19 @@ This article gives a central entry point for MTP command-line options.
 
 ## Extension options by scenario
 
-Use the following table to find extension options quickly.
+Use the following table to find each extension's package and options. A test SDK profile can supply a package instead of a direct package reference.
 
-| Scenario | Feature documentation |
-|---|---|
-| Collect code coverage | [Code coverage](./microsoft-testing-platform-code-coverage.md) |
-| Collect crash or hang dumps | [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) |
-| Generate test reports (for example TRX) | [Test reports](./microsoft-testing-platform-test-reports.md) |
-| Customize terminal output | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
-| Apply hosting-level controls | [Hot Reload](./microsoft-testing-platform-hot-reload.md) |
-| Retry failed tests | [Retry](./microsoft-testing-platform-retry.md#retry) |
-| Run tests that use Microsoft Fakes | [Microsoft Fakes](./microsoft-testing-platform-fakes.md) |
-| Emit OpenTelemetry traces and metrics | [OpenTelemetry](./microsoft-testing-platform-open-telemetry.md) |
+| Scenario | Required component | Feature documentation |
+|---|---|---|
+| Collect code coverage | `Microsoft.Testing.Extensions.CodeCoverage` or `coverlet.MTP` | [Code coverage](./microsoft-testing-platform-code-coverage.md) |
+| Collect crash or hang dumps | `Microsoft.Testing.Extensions.CrashDump` or `Microsoft.Testing.Extensions.HangDump` | [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) |
+| Generate test reports | The extension package for the selected format, such as `Microsoft.Testing.Extensions.TrxReport` | [Test reports](./microsoft-testing-platform-test-reports.md) |
+| Customize terminal output | MTP core; no additional package | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
+| Retry failed tests | `Microsoft.Testing.Extensions.Retry` | [Retry](./microsoft-testing-platform-retry.md#retry) |
 
 ## Discover options in your test app
 
-Run your test executable with `--help` to list the options available for your current extension set.
+Run your test executable with `--help`, or run `dotnet test --help` in MTP mode, to list the options available for your current extension set.
 
 For advanced diagnostics of registered providers and options, run with `--info`.
 

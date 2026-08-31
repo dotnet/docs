@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) troubleshooting
 description: Troubleshoot MTP issues, exit codes, and known problems.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 06/01/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
@@ -111,8 +111,12 @@ This error can occur if not all of the Fakes assemblies are present in the bin f
 - Ensure that the project either uses the [MSTest.SDK](./unit-testing-mstest-sdk.md) or references [Microsoft.Testing.Extensions.Fakes](./microsoft-testing-platform-fakes.md).
 - For .NET Framework projects, avoid setting `<PlatformTarget>AnyCPU</PlatformTarget>` as this results in NuGet not copying all files to the bin folder.
 
-### Unrecognized command-line option in solutions with mixed test frameworks or extensions
+### Unrecognized extension command-line option
 
-If your solution contains projects that use different test frameworks (for example, MSTest and xUnit.net) or different sets of extensions (for example, only some projects reference `Microsoft.Testing.Extensions.HangDump`), running `dotnet test` with a framework-specific or extension-specific command-line option can fail with exit code 5. The option is valid for one project but unrecognized by another.
+An extension-specific command-line option can fail with exit code 5 when a test application doesn't register the package that provides the option. For example, `--report-trx` requires `Microsoft.Testing.Extensions.TrxReport`, either as a direct package reference or through a test SDK configuration or profile that includes the package. MTP core doesn't include report, code coverage, dump, retry, or other extension options.
+
+Run the test application with `--help`, or run `dotnet test --help` in MTP mode, to confirm that the option is available. If the option is missing, add its extension package or enable the extension through your test SDK. See [Extension options by scenario](microsoft-testing-platform-cli-options.md#extension-options-by-scenario) to find the required package.
+
+The same failure occurs when a solution contains projects that use different test frameworks (for example, MSTest and xUnit.net) or different sets of extensions (for example, only some projects reference `Microsoft.Testing.Extensions.HangDump`). The option is valid for one project but unrecognized by another.
 
 To resolve this issue, use the `TestingPlatformCommandLineArguments` MSBuild property with conditions to route arguments to the correct projects. For detailed instructions, see [Solutions with mixed test frameworks or extensions](unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).

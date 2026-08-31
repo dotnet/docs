@@ -3,7 +3,7 @@ title: MSTest SDK configuration
 author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 08/27/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
@@ -238,6 +238,8 @@ Finally, based on the extensions profile you're using, you can also remove some 
 Once you've updated your projects, if you're using MTP (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-with-dotnet-test.md).
 
 If you're using the VSTest mode of `dotnet test`, here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
+
+The default MSTest.Sdk extension profile supplies the `Microsoft.Testing.Extensions.TrxReport` and `Microsoft.Testing.Extensions.CodeCoverage` packages required by the added options. If you select the `None` profile, enable or reference both extensions before you use the options.
 
 ```diff
 \- task: DotNetCoreCLI@2

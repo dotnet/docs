@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) config options
 description: Learn how to configure MTP using testconfig.json configuration settings and environment variables.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/26/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
@@ -100,6 +100,8 @@ Before MTP 2.3.0, extension features such as [crash dump](microsoft-testing-plat
 
 Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json* through `IConfiguration`. This support includes extension options, so you can use JSON entries for options that you don't want to pass on the command line each run. Command-line arguments still take precedence.
 
+Configuration doesn't install or register an extension. Each test application must reference the package that provides an extension option, either directly or through a test SDK configuration or profile. Otherwise, the option remains unrecognized whether you put it in *testconfig.json* or on the command line.
+
 For a complete reference of command-line options, see [MTP CLI options reference](microsoft-testing-platform-cli-options.md).
 
 ### Test framework-specific settings
@@ -146,9 +148,9 @@ If you're migrating from a *.runsettings* file, the following table maps common 
 | `RunConfiguration/MaxCpuCount` | No equivalent | Process-level parallelism is controlled by `dotnet test --max-parallel-test-modules` or MSBuild `/m` option. |
 | `MSTest/*` | `mstest.*` | See [Configure MSTest — testconfig.json](unit-testing-mstest-configure.md#testconfigjson). |
 | `xUnit/*` | `xUnit.*` | See [xUnit.net testconfig.json](https://xunit.net/docs/config-testconfig-json). |
-| `LoggerRunSettings/Loggers` | CLI options | Use `--report-trx` or similar CLI options. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. |
-| `DataCollectionRunSettings` (blame) | CLI options | Use `--crashdump` and `--hangdump` CLI options. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Crash and hang dumps](microsoft-testing-platform-crash-hang-dumps.md). |
-| `DataCollectionRunSettings` (coverage) | CLI options | Use `--coverage` CLI option. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
+| `LoggerRunSettings/Loggers` | CLI options | Use the option from the installed report extension. For example, `--report-trx` requires `Microsoft.Testing.Extensions.TrxReport`. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Test reports](microsoft-testing-platform-test-reports.md). |
+| `DataCollectionRunSettings` (blame) | CLI options | Use `--crashdump` from `Microsoft.Testing.Extensions.CrashDump` or `--hangdump` from `Microsoft.Testing.Extensions.HangDump`. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Crash and hang dumps](microsoft-testing-platform-crash-hang-dumps.md). |
+| `DataCollectionRunSettings` (coverage) | CLI options | Use `--coverage` from `Microsoft.Testing.Extensions.CodeCoverage`. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
 | `TestRunParameters` | `--test-parameter` CLI | Use `--test-parameter key=value` on the command line. |
 
 ## Environment variables

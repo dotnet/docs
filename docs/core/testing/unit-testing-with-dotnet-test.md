@@ -157,7 +157,7 @@ For users of MTP that are using the VSTest mode of `dotnet test`, there are few 
 1. Add `test` section to your `global.json` file, as shown above.
 1. Remove `TestingPlatformDotnetTestSupport` MSBuild property, as it's no longer required.
 1. Remove `TestingPlatformCaptureOutput` and `TestingPlatformShowTestsFailure` MSBuild properties, as they are no longer used by the new `dotnet test`.
-1. Treat the extra `--` as optional. For example, `dotnet test -- --report-trx` can become `dotnet test --report-trx`. You can also keep the separator to forward test application arguments unambiguously. Neither syntax installs the required `Microsoft.Testing.Extensions.TrxReport` extension.
+1. Treat the extra `--` as optional. For example, `dotnet test -- --report-trx` can become `dotnet test --report-trx`. Keep the separator to forward test application arguments unambiguously. Neither syntax installs the required `Microsoft.Testing.Extensions.TrxReport` extension.
 1. If passing a specific solution (or directory containing solution), for example, `dotnet test MySolution.sln`, this should become `dotnet test --solution MySolution.sln`.
 1. If passing a specific project (or directory containing project), for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.
 1. If passing a specific dll, for example, `dotnet test path/to/UnitTests.dll`, this should become `dotnet test --test-modules path/to/UnitTests.dll`. Note that `--test-modules` also supports globbing.

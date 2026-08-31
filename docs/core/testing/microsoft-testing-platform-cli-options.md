@@ -193,7 +193,7 @@ Use the following table to find each extension's package and options. A test SDK
 | Collect code coverage | `Microsoft.Testing.Extensions.CodeCoverage` or `coverlet.MTP` | [Code coverage](./microsoft-testing-platform-code-coverage.md) |
 | Collect crash or hang dumps | `Microsoft.Testing.Extensions.CrashDump` or `Microsoft.Testing.Extensions.HangDump` | [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) |
 | Generate test reports | The extension package for the selected format, such as `Microsoft.Testing.Extensions.TrxReport` | [Test reports](./microsoft-testing-platform-test-reports.md) |
-| Customize terminal output | MTP core; no additional package | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
+| Customize terminal output | MTP core (no additional package) | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
 | Retry failed tests | `Microsoft.Testing.Extensions.Retry` | [Retry](./microsoft-testing-platform-retry.md#retry) |
 
 ## Discover options in your test app

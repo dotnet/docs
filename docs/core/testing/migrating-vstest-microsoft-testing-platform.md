@@ -71,7 +71,7 @@ Starting with .NET 10 SDK, there is *native* support for MTP. To use it, you mus
 ```
 
 > [!IMPORTANT]
-> In this mode, the extra `--` is no longer required. You can keep it to forward test application arguments unambiguously.
+> In this mode, the extra `--` is no longer required. Keep it to forward test application arguments unambiguously.
 
 ### Update `dotnet test` invocations
 

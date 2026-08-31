@@ -3,7 +3,7 @@ title: Migration guide from VSTest to Microsoft.Testing.Platform (MTP)
 description: Step-by-step guide to migrate from VSTest to Microsoft.Testing.Platform (MTP), including argument mapping, project configuration, and CI pipeline updates.
 author: Youssef1313
 ms.author: ygerges
-ms.date: 08/28/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
@@ -71,7 +71,7 @@ Starting with .NET 10 SDK, there is *native* support for MTP. To use it, you mus
 ```
 
 > [!IMPORTANT]
-> In this mode, the extra `--` is no longer used.
+> In this mode, the extra `--` is no longer required. Keep it to forward test application arguments unambiguously.
 
 ### Update `dotnet test` invocations
 
@@ -179,6 +179,9 @@ dotnet test --coverage --coverage-output-format cobertura
 ```
 
 > [!IMPORTANT]
+> To use `--coverage`, each targeted test application must reference the `Microsoft.Testing.Extensions.CodeCoverage` NuGet package directly or through a test SDK configuration or profile that includes it.
+>
+> [!IMPORTANT]
 > As explained earlier, when using MTP with the VSTest-based `dotnet test`, extra `--` is needed before the arguments intended to be passed to the platform.
 > So, this becomes `dotnet test -- --coverage --coverage-output-format cobertura`.
 
@@ -226,7 +229,7 @@ dotnet test --report-trx
 ```
 
 > [!IMPORTANT]
-> To use `--report-trx`, you must have the `Microsoft.Testing.Extensions.TrxReport` NuGet package installed.
+> To use `--report-trx`, each targeted test application must reference the `Microsoft.Testing.Extensions.TrxReport` NuGet package directly or through a test SDK configuration or profile that includes it.
 >
 > [!IMPORTANT]
 > As explained earlier, when using MTP with the VSTest-based `dotnet test`, extra `--` is needed before the arguments intended to be passed to the platform.
@@ -293,6 +296,8 @@ If you're using the [VSTest task](/azure/devops/pipelines/tasks/reference/vstest
         command: 'test'
         arguments: '-- --report-trx --results-directory $(Agent.TempDirectory)'
     ```
+
+    The test applications in this example must register `Microsoft.Testing.Extensions.TrxReport`. Add the package directly, or use a test SDK configuration or profile that includes it.
 
 ## Behavioral differences between VSTest and MTP
 

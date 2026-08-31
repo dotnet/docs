@@ -3,7 +3,7 @@ title: Testing with 'dotnet test'
 description: Learn more about how 'dotnet test' works and its support for VSTest and Microsoft.Testing.Platform (MTP)
 author: Youssef1313
 ms.author: ygerges
-ms.date: 06/05/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 
@@ -28,6 +28,9 @@ The process involves invoking the `VSTest` MSBuild target, which triggers other 
 ### Run MTP projects with VSTest mode
 
 `dotnet test` was designed to run VSTest projects in VSTest mode. However, you can run MTP projects in `dotnet test` VSTest mode by using the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package. From the user's perspective, this support is enabled by setting the `TestingPlatformDotnetTestSupport` MSBuild property to `true` (it's `false` by default for backward-compatibility reasons). When this property is set to `true`, Microsoft.Testing.Platform.MSBuild changes the `VSTest` target behavior, redirecting it to call `InvokeTestingPlatform`. `InvokeTestingPlatform` is an MSBuild target included in Microsoft.Testing.Platform.MSBuild that's responsible for correctly running MTP test applications as executables. VSTest-specific command-line options, such as `--logger`, are silently ignored in this mode. To include MTP-specific arguments, such as `--report-trx`, you must append them after an additional `--`. For example, `dotnet test -- --report-trx`. In MTP 1.9, a warning with code MTP0001 is produced when an argument that is silently ignored is detected.
+
+> [!IMPORTANT]
+> The `--report-trx` option isn't built into MTP. Each targeted test application must register the extension by referencing [`Microsoft.Testing.Extensions.TrxReport`](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) directly or through a test SDK configuration or profile that includes the package. Otherwise, the test application rejects the option with MTP exit code 5. In this legacy VSTest mode, `dotnet test` can report that rejection as an MSBuild failure with exit code 1.
 
 > [!NOTE]
 > MSTest and NUnit use the [Microsoft.Testing.Extensions.VSTestBridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge) package. By setting `EnableMSTestRunner` or `EnableNUnitRunner` (which enables MTP), your test project will support both VSTest and MTP.
@@ -154,7 +157,7 @@ For users of MTP that are using the VSTest mode of `dotnet test`, there are few 
 1. Add `test` section to your `global.json` file, as shown above.
 1. Remove `TestingPlatformDotnetTestSupport` MSBuild property, as it's no longer required.
 1. Remove `TestingPlatformCaptureOutput` and `TestingPlatformShowTestsFailure` MSBuild properties, as they are no longer used by the new `dotnet test`.
-1. Remove the extra `--`, for example `dotnet test -- --report-trx` should become `dotnet test --report-trx`.
+1. Treat the extra `--` as optional. For example, `dotnet test -- --report-trx` can become `dotnet test --report-trx`. Keep the separator to forward test application arguments unambiguously. Neither syntax installs the required `Microsoft.Testing.Extensions.TrxReport` extension.
 1. If passing a specific solution (or directory containing solution), for example, `dotnet test MySolution.sln`, this should become `dotnet test --solution MySolution.sln`.
 1. If passing a specific project (or directory containing project), for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.
 1. If passing a specific dll, for example, `dotnet test path/to/UnitTests.dll`, this should become `dotnet test --test-modules path/to/UnitTests.dll`. Note that `--test-modules` also supports globbing.
@@ -200,6 +203,6 @@ dotnet test -p:MSTestSpecificArgs="--filter FullyQualifiedName~IntegrationTests"
 Each test project receives only the arguments relevant to its framework, and the other framework's arguments are never passed.
 
 > [!TIP]
-> For arguments that are the same across all frameworks (such as `--ignore-exit-code 8` or `--report-trx`), set them directly in `TestingPlatformCommandLineArguments` without any condition.
+> For arguments that every targeted project recognizes, set them directly in `TestingPlatformCommandLineArguments` without a condition. For example, all projects recognize `--ignore-exit-code 8`. You can pass `--report-trx` globally only when every targeted project registers `Microsoft.Testing.Extensions.TrxReport`.
 
 The same pattern applies when only some test projects in a solution reference a particular extension. For example, if only certain projects reference `Microsoft.Testing.Extensions.HangDump`, passing `--hangdump` globally causes the other projects to fail with an unrecognized option error. Use the same conditional approach to route extension-specific arguments only to the projects that have the extension.

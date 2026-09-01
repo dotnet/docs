@@ -15,7 +15,7 @@ When a `PackageReference` or package dependency requests a package version that 
 
 ## Previous behavior
 
-Previously, when restore couldn't find the requested version, it searched both the package sources and the global packages folder for the "next best" version, that is, the lowest version that's higher than the requested version. Restore selected that version and raised an NU1603 or NU1604 warning. If no higher version was found, restore reported an NU1102 error.
+Previously, when restore couldn't find the requested version, it searched both the package sources and the global packages folder for the "next best" version, that is, the lowest version that's higher than the requested version. Restore selected that version and raised an [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. If no higher version was found, restore reported an NU1102 error.
 
 | Package source | Global packages folder | Requested version | Version selected | Restore outcome |
 |----------------|------------------------|-------------------|------------------|-----------------|
@@ -24,7 +24,7 @@ Previously, when restore couldn't find the requested version, it searched both t
 
 ## New behavior
 
-Starting in .NET 11, restore searches only the package sources for the "next best" version. Because the global packages folder is excluded from the search, restore might select a higher version than before, or fail with an NU1102 error if no package source has a higher version.
+Starting in .NET 11, restore searches only the package sources for the "next best" version. Because the global packages folder is excluded from the search, restore might select a higher version than before, or fail with an [NU1102 error](/nuget/reference/errors-and-warnings/nu1102) if no package source has a higher version.
 
 | Package source | Global packages folder | Requested version | Version selected | Restore outcome |
 |----------------|------------------------|-------------------|------------------|-----------------|

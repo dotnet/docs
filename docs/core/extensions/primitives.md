@@ -29,8 +29,6 @@ As a developer, you're also free to implement your own type. The <xref:Microsoft
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.HasChanged?displayProperty=nameWithType>: Gets a value that indicates if a change has occurred.
 - <xref:Microsoft.Extensions.Primitives.IChangeToken.ActiveChangeCallbacks?displayProperty=nameWithType>: Indicates whether the token proactively raises callbacks. If `false`, the token consumer must poll `HasChanged` to detect changes.
 
-An `ActiveChangeCallbacks` value of `true` doesn't guarantee a callback for every change. To detect every change that a token implementation can report, also check `HasChanged`.
-
 ## Instance-based functionality
 
 Consider the following example usage of the `CancellationChangeToken`:
@@ -39,13 +37,13 @@ Consider the following example usage of the `CancellationChangeToken`:
 
 In the preceding example, a <xref:System.Threading.CancellationTokenSource> is instantiated and its <xref:System.Threading.CancellationTokenSource.Token> is passed to the <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.%23ctor*> constructor. The initial state of `HasChanged` is written to the console. An `Action<object?> callback` is created that writes when the callback is invoked to the console. The token's <xref:Microsoft.Extensions.Primitives.CancellationChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)> method is called, given the `callback`. Within the `using` statement, the `cancellationTokenSource` is cancelled. This triggers the callback, and the state of `HasChanged` is again written to the console.
 
-When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. `ActiveChangeCallbacks` is `true` when at least one inner token supports active callbacks. The composite token subscribes only to those active inner tokens. To detect a change from a passive inner token, poll the composite token's `HasChanged` property.
-
-Consider the following example:
+When you need to take action from multiple sources of change, use the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken>. This implementation aggregates one or more change tokens and fires each registered callback exactly one time regardless of the number of times a change is triggered. Consider the following example:
 
 :::code source="./snippets/primitives/change/Example.Composites.cs" id="Composites":::
 
 In the preceding C# code, three <xref:System.Threading.CancellationTokenSource> objects instances are created and paired with corresponding <xref:Microsoft.Extensions.Primitives.CancellationChangeToken> instances. The composite token is instantiated by passing an array of the tokens to the <xref:Microsoft.Extensions.Primitives.CompositeChangeToken.%23ctor*> constructor. The `Action<object?> callback` is created, but this time the `state` object is used and written to console as a formatted message. The callback is registered four times, each with a slightly different state object argument. The code uses a pseudo-random number generator to pick one of the change token sources (doesn't matter which one) and call its <xref:System.Threading.CancellationTokenSource.Cancel> method. This triggers the change, invoking each registered callback exactly once.
+
+Note that `ActiveChangeCallbacks` of the `CompositeChangeToken` is `true` when at least one inner token supports active callbacks. The composite token subscribes only to those active inner tokens. To detect a change from a passive inner token, poll the composite token's `HasChanged` property.
 
 ## Alternative `static` approach
 

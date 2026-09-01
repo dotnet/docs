@@ -91,7 +91,8 @@ public string Message
     set => field = value ?? throw new ArgumentNullException(nameof(value));
 }
 ```
-### Common patterns with `field`
+
+ You can also simplify common patterns like lazy initialization, property change notifications, and structured string fields. The following code shows examples of each:
 
 **Lazy Initialization:**
 ```csharp

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform features
 description: Learn about the various Microsoft.Testing.Platform features, both built-in and available as extensions.
 author: nohwnd
 ms.author: jajares
-ms.date: 07/03/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -31,16 +31,19 @@ Use the following path based on your goal:
 
 - Need to customize terminal output: [Terminal output](./microsoft-testing-platform-terminal-output.md) (built-in)
 - Need TRX or Azure DevOps reports: [Test reports](./microsoft-testing-platform-test-reports.md) (extension)
-- Need GitHub Actions-native output (log groups, annotations, and job summary): [GitHub Actions report](./microsoft-testing-platform-test-reports.md#github-actions-reports) (extension, experimental)
+- Need GitHub Actions-native output (log groups, annotations, and job summary): [GitHub Actions report](./microsoft-testing-platform-test-reports.md#github-actions-reports) (extension)
 - Need coverage data: [Code coverage](./microsoft-testing-platform-code-coverage.md) (extension)
 - Need crash or hang diagnostics: [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) (extension)
 - Need to record the screen during a run: [Diagnostics](./microsoft-testing-platform-diagnostics.md) (extension, experimental)
 - Need to deploy and launch a packaged-app test host: [Test host deployment](./microsoft-testing-platform-test-host-deployment.md) (extension, experimental)
 - Need to route platform logs through `Microsoft.Extensions.Logging`: [Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md) (extension, experimental)
+- Need to build editor or IDE integration: [Server mode](./microsoft-testing-platform-server-mode.md) (built-in)
+- Need to load extensions that aren't compile-time references: [Dynamic extension loading](./microsoft-testing-platform-architecture-extensions.md#load-extensions-dynamically) (built-in, opt-in)
 - Need to retry failed tests: [Retry](./microsoft-testing-platform-retry.md#retry) (extension)
 - Need hot reload support: [Hot Reload](./microsoft-testing-platform-hot-reload.md) (extension)
 - Need Microsoft Fakes support: [Microsoft Fakes](./microsoft-testing-platform-fakes.md) (extension)
 - Need OpenTelemetry traces and metrics: [OpenTelemetry](./microsoft-testing-platform-open-telemetry.md) (extension)
+- Need to supply AI chat clients to a test framework or extension: [AI integrations](./microsoft-testing-platform-ai.md) (extension, experimental)
 - Telemetry data collection and opt-out: [Telemetry](./microsoft-testing-platform-telemetry.md) (extension)
 
 ## Built-in features
@@ -50,6 +53,14 @@ These features are part of the core platform and don't require additional NuGet 
 **[Terminal output](./microsoft-testing-platform-terminal-output.md)**
 
 Status and progress reporting to the terminal: output modes, ANSI support, and progress indicators.
+
+**[Server mode](./microsoft-testing-platform-server-mode.md)**
+
+Drive test discovery and execution from an editor, IDE, or other tool through JSON-RPC.
+
+**[Dynamic extension loading](./microsoft-testing-platform-architecture-extensions.md#load-extensions-dynamically)**
+
+Load explicitly declared extension assemblies from JSON manifests when a run opts in.
 
 ## Extension features
 
@@ -70,6 +81,10 @@ Collect process dump files when the test host crashes or hangs.
 **[OpenTelemetry](./microsoft-testing-platform-open-telemetry.md)**
 
 Emit traces and metrics through OpenTelemetry during test runs.
+
+**[AI integrations](./microsoft-testing-platform-ai.md)** (experimental)
+
+Supply provider-neutral AI chat clients to test frameworks and extensions, including through Azure AI Foundry.
 
 **[Retry](./microsoft-testing-platform-retry.md)**
 

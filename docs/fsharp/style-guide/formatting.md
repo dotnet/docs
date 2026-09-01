@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 10/02/2025
+ms.date: 08/26/2026
 ---
 # F# code formatting guidelines
 
@@ -243,6 +243,48 @@ SomeClass.Invoke ()
 
 // ❌ Not OK, formatting tools will remove the extra space by default
 String.Format (x.IngredientName, x.Quantity)
+```
+
+The last part of the name decides which convention applies. Nothing earlier in the name has a say:
+
+```fsharp
+// ✔️ OK - `convertTo` is lower-case, so the space is added
+Volume.Conversion.convertTo (x.Quantity, Liter)
+
+// ✔️ OK - `Contains` is capitalized, so no space is added
+recipe.Ingredients.Contains(x.IngredientName)
+```
+
+Both conventions apply only when the whole thing being applied is a plain dotted name, that is, identifiers separated by dots and nothing else. As soon as a call, an index, a receiver that isn't a name, or a type application comes before the parentheses, no space is added. This keeps a fluent chain from ending in a single spaced call:
+
+```fsharp
+// ✔️ OK - a plain dotted name, however many dots it has
+recipe.Ingredients.convertTo (Liter)
+
+// ✔️ OK - a call comes before the parentheses, so no space is added
+getRecipe().convertTo(Liter)
+
+// ✔️ OK - an index comes before the parentheses
+recipe.Ingredients[0].convertTo(Liter)
+
+// ✔️ OK - a receiver that isn't a name, such as an expression or a literal
+(getRecipe x.IngredientName).convertTo(Liter)
+
+// ✔️ OK - a type application, on the call itself or with no dots at all
+recipe.convertTo<Liter>(x.Quantity)
+unbox<Volume>(x.Quantity)
+
+// ❌ Not OK, formatting tools will remove the extra space by default
+getRecipe().convertTo (Liter)
+recipe.Ingredients[0].convertTo (Liter)
+unbox<Volume> (x.Quantity)
+```
+
+The type application case only comes up where the parentheses are already written. Formatting tools don't add parentheses, so a generic application written without them is left as it is:
+
+```fsharp
+// ✔️ OK
+unbox<Volume> x.Quantity
 ```
 
 These same formatting conventions apply to pattern matching. F# style values consistent formatting:

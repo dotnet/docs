@@ -91,6 +91,9 @@ Also note that:
   - If the source value is NaN (not a number), infinity, or too large to be represented as a `decimal`, an <xref:System.OverflowException> is thrown.
 - When you convert `decimal` to `float` or `double`, the source value is rounded to the nearest `float` or `double` value, respectively.
 
+  > [!NOTE]
+  > Starting in .NET 11, conversions between `decimal` and `float` or `double` are correctly rounded. Previously, these conversions could round through intermediate values or discard significant digits. For more information, see [Decimal and BigInteger floating-point conversions are correctly rounded](../../../core/compatibility/core-libraries/11/decimal-biginteger-floating-point-conversions.md).
+
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):

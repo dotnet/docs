@@ -1,4 +1,4 @@
-name: 'Preview link generator'
+name: 'OPS build reporter'
 
 on:
   pull_request_target:
@@ -8,8 +8,8 @@ permissions:
   contents: read
 
 jobs:
-  preview_link_generator_job:
-    name: Generate preview link table
+  ops_build_reporter_job:
+    name: Add preview links and annotate files
     runs-on: ubuntu-latest
     permissions:
       statuses: read
@@ -17,11 +17,11 @@ jobs:
       pull-requests: write
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@b09bb98e06d4d774595224525879c09bc6e98c40 # v2.20.1
+        uses: step-security/harden-runner@05e31511f85b41b11d1cf0ef85d0992719546e2c # v2.21.0
         with:
           egress-policy: audit
 
-      - uses: dotnet/docs-tools/actions/preview-link-generator@main
+      - uses: dotnet/docs-tools/actions/ops-build-reporter@main
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           annotate_file_warnings: true

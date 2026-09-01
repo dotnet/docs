@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   ops_build_reporter_job:
-    name: Add preview links to PR body and annotate files with build warnings
+    name: Add preview links and annotate files
     runs-on: ubuntu-latest
     permissions:
       statuses: read

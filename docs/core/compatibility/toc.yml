@@ -102,6 +102,8 @@ items:
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
               - name: NuGet pack warns for package IDs with restricted characters
                 href: sdk/11/nuget-pack-nu5052-packageid.md
+              - name: Restore doesn't search the global packages folder for a higher package version
+                href: sdk/11/restore-global-packages-folder-version-search.md
               - name: SDK local container runtime selection prefers platform-native tools
                 href: sdk/11/native-local-container-runtimes.md
               - name: Template engine packages no longer support netstandard2.0

@@ -53,7 +53,7 @@ As an alternative to calling `RegisterChangeCallback`, you could use the <xref:M
 
 :::code source="./snippets/primitives/change/Example.Static.cs" id="Static":::
 
-Much like previous examples, you'll need an implementation of `IChangeToken` that the `changeTokenProducer` produces. The producer is a `Func<IChangeToken?>`. After a change, it should return a new token for the next registration. If it returns `null`, `ChangeToken.OnChange` doesn't register a callback. Dispose the `IDisposable` returned by `OnChange` to unregister the consumer.
+Much like previous examples, you'll need an `IChangeToken` implementation returned by `changeTokenProducer`. The producer is a `Func<IChangeToken?>`. After a change, it should return a new token for the next registration. If it returns `null`, `ChangeToken.OnChange` doesn't register a callback. Dispose the `IDisposable` returned by `OnChange` to unregister the consumer.
 
 For a synchronous consumer, pass an `Action` or `Action<TState>`. Exceptions from the producer or consumer propagate to the caller that registers or triggers the token.
 

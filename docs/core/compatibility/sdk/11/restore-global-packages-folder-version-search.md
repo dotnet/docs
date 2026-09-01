@@ -43,7 +43,7 @@ Restore is now more deterministic and repeatable. For performance reasons, NuGet
 
 ## Recommended action
 
-Reference only package versions that exist on your package sources. Doing so ensures that the version selected during restore doesn't change over time as new versions are published to the package sources.
+Reference only package versions that exist on your package sources. This practice ensures that the version selected during restore doesn't change over time as new versions are published to the package sources.
 
 For more information, see [Best practices for a secure software supply chain](/nuget/concepts/security-best-practices).
 

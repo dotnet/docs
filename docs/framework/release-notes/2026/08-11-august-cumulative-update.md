@@ -1,12 +1,13 @@
 ---
 title: August 2026 cumulative update
 description: Learn about the improvements in the .NET Framework August 2026 cumulative update.
-ms.date: 08/11/2026
+ms.date: 09/02/2026
 ai-usage: ai-generated
 ---
 # .NET Framework August 2026 cumulative update
 
 _Released August 11, 2026_
+_Updated Septemner 2, 2026 to include known issues_
 
 ## Summary of what's new in this release
 
@@ -45,7 +46,51 @@ There are no new quality and reliability improvements in this release.
 
 ## Known issues in this release
 
-This release contains no known issues.
+#### Known Issue
+
+After installing the August 2026 .NET Framework cumulative update, some Windows Presentation Foundation (WPF) applications may fail with a `System.IO.FileFormatException` when printing or generating PDF/XPS content that uses certain fonts, including Calibri.
+
+#### Workaround
+
+Applications may mitigate this issue by enabling the `Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection` AppContext switch in the application configuration file:
+
+```xml
+<configuration>
+<runtime>
+<AppContextSwitchOverrides
+value="Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection=true"/>
+</runtime>
+</configuration>
+```
+
+This switch disables security protections introduced in the August 2026 update and may increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
+
+#### Status
+
+Investigating.
+
+#### Known Issue
+
+After installing the August 2026 .NET Framework cumulative update, WPF applications that print—or display print preview—from an in-memory XPS document registered with `System.IO.Packaging.PackageStore` may fail with a `System.IO.FileFormatException` while the document is loading. This occurs when the package identity used as both the `PackageStore` key and the `XpsDocument` package identity is an absolute URI that uses the `pack` scheme—for example, `pack://<guid>.xps`. Images and fonts contained within the same XPS package are then incorrectly rejected as being outside the package. Application code and XPS content do not need to have changed for this failure to occur.
+
+#### Workaround
+
+Applications that can be rebuilt should use an absolute package identity that does not use the `pack` scheme—for example, `xpspack://<guid>.xps`. This resolves the failure while keeping the protections introduced in the August 2026 update enabled. For applications that cannot be rebuilt, enable the `Switch.System.Windows.DisableXpsPackageBoundaryRestriction` AppContext switch in the application configuration file:
+
+```xml
+<configuration>
+<runtime>
+<AppContextSwitchOverrides
+value="Switch.System.Windows.DisableXpsPackageBoundaryRestriction=true"/>
+</runtime>
+</configuration>
+```
+
+This switch disables security protections introduced in the August 2026 update and may increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
+
+#### Status
+
+Investigating.
 
 ## Summary tables
 

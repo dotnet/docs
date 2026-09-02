@@ -3,7 +3,7 @@ title: Test execution and control in MSTest
 description: Learn how to control test execution in MSTest with parallelization, threading, timeouts, retries, and conditional execution.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -439,6 +439,10 @@ Starting with MSTest 3.8, create custom retry logic by inheriting from <xref:Mic
 
 > [!IMPORTANT]
 > The `RetryBaseAttribute.ExecuteAsync` API, and its `RetryContext` and `RetryResult` types, are experimental. Using them produces the `MSTESTEXP` diagnostic, which you must acknowledge before you use the API.
+
+Starting with the MSTest 4.4 preview, `RetryResult.AllResults` exposes the result arrays from every attempt in the order they were added. MTP reports earlier attempts as superseded, while VSTest receives only the final result. MSTest retries only when an attempt contains a failed or timed-out result. An inconclusive result by itself stops the retry sequence.
+
+Process-level `--retry-failed-tests` and an MSTest retry attribute apply at different levels. Their effects are multiplicative because each process-level attempt can run the attribute's complete retry sequence.
 
 ```csharp
 public class CustomRetryAttribute : RetryBaseAttribute

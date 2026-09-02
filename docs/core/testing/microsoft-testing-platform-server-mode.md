@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) server mode
 description: Learn how tools and IDEs drive MTP test applications through JSON-RPC server mode.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/26/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -18,7 +18,7 @@ Start the public JSON-RPC server with `--server` or `--server jsonrpc`.
 
 ## Use the source-only client
 
-Starting with MTP 2.4.0, the [Microsoft.Testing.Platform.ServerMode.Client.Sources](https://www.nuget.org/packages/Microsoft.Testing.Platform.ServerMode.Client.Sources) package supplies a canonical client for the JSON-RPC protocol. The package injects C# source into your project instead of adding a runtime assembly.
+The MTP 2.4 preview provides a canonical JSON-RPC client. Add the [Microsoft.Testing.Platform.ServerMode.Client.Sources](https://www.nuget.org/packages/Microsoft.Testing.Platform.ServerMode.Client.Sources) package. The package injects C# source into your project instead of adding a runtime assembly.
 
 The source-only design provides:
 
@@ -26,13 +26,27 @@ The source-only design provides:
 - Native AOT-compatible, reflection-free serialization.
 - Protocol types and serialization code from the same repository as the MTP server.
 
-The injected `MtpServerClient` and `IMtpServerClient` types can initialize a connection, discover tests, run tests, request server exit, and report test-node updates. The types remain `internal` to your assembly.
+The injected `MtpServerClient`, `IMtpServerClient`, and protocol types can initialize a connection, discover tests, run tests, request server exit, and report test-node updates. All injected types remain `internal` to the consuming assembly.
 
 ## Meet client requirements
 
 Use C# 12 or later. The package sets `LangVersion` to `12.0` when your project doesn't specify a language version. It also supplies internal compatibility types for .NET Framework 4.6.2 and `netstandard2.0`.
 
 Remove any hand-written copy of the MTP client before you add the package to avoid duplicate internal types.
+
+## Choose a launch model
+
+To start the test application as an external process, use `MtpServerClient.LaunchAsync`. The client owns that child process and terminates it during teardown when needed.
+
+For an embedded host or UI-thread environment that can't use `Process.Start`, use `MtpServerClient.LaunchInProcessAsync`. The method runs the test application through an asynchronous callback in the current process. Don't block the launching thread because the callback and client share the process.
+
+Both launch models use a loopback TCP transport. Browser WebAssembly can't create the required listener, so in-process launch throws <xref:System.PlatformNotSupportedException>. In-process launch doesn't provide an alternative WebAssembly transport.
+
+## Shut down the client
+
+To tear down the client and launched application without blocking the calling thread, call `IMtpServerClient.ShutdownAsync()`. The asynchronous method avoids UI-thread responsiveness and deadlock problems in embedded hosts.
+
+For an in-process host, `MtpServerClientOptions.ServerShutdownTimeout` controls how long teardown waits after the client closes the transport. The default is 30 seconds. Read `ServerExitCode` after shutdown to get the callback's exit code. The value remains `null` while the application runs or when the application fails instead of returning an exit code.
 
 ## Choose connection behavior
 

@@ -75,7 +75,7 @@ After installing the August 2026 .NET Framework cumulative update, WPF applicati
 
 #### Workaround
 
-Applications that can be rebuilt should use an absolute package identity that does not use the `pack` scheme—for example, `xpspack://<guid>.xps`. This resolves the failure while keeping the protections introduced in the August 2026 update enabled. For applications that cannot be rebuilt, enable the `Switch.System.Windows.DisableXpsPackageBoundaryRestriction` AppContext switch in the application configuration file:
+Applications that can be rebuilt should use an absolute package identity that doesn't use the `pack` scheme—for example, `xpspack://<guid>.xps`. This resolves the failure while keeping the protections introduced in the August 2026 update enabled. For applications that can't be rebuilt, enable the `Switch.System.Windows.DisableXpsPackageBoundaryRestriction` AppContext switch in the application configuration file:
 
 ```xml
 <configuration>

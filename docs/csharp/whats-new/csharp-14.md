@@ -196,16 +196,13 @@ if (customer is not null)
 
 ```
 
-
 You can simplify the preceding code using the `?.` operator:
-
 
 ```csharp
 
 customer?.Order = GetCurrentOrder();
 
 ```
-
 
 The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
 

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) troubleshooting
 description: Troubleshoot MTP issues, exit codes, and known problems.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -25,12 +25,15 @@ MTP uses known exit codes to communicate test failure or app errors. Exit codes 
 | `5` | The exit code `5` indicates that the command-line arguments passed to the test app were invalid. |
 | `6` (no longer used) | Exit code `6` is no longer produced by the platform; it previously indicated that the test session was using a non-implemented feature. |
 | `7` | The exit code `7` indicates that a test session was unable to complete successfully, and likely crashed. It's possible that this was caused by a test session that was run via a test controller's extension point. |
-| `8` | The exit code `8` indicates that the test session ran zero tests. |
-| `9` | The exit code `9` indicates that the minimum execution policy for the executed tests was violated. |
+| `8` | The exit code `8` indicates that the test session ran zero tests under the strict `--zero-tests-policy`. |
+| `9` | The exit code `9` indicates that the run executed fewer tests than `--minimum-expected-tests` requires, including zero tests. |
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 | `11` | The exit code `11` indicates that the test process will exit if dependent process exits. |
 | `12` | The exit code `12` indicates that the test session was unable to run because the client does not support any of the supported protocol versions. |
 | `13` | The exit code `13` indicates that the test session was stopped due to reaching the specified number of maximum failed tests using `--maximum-failed-tests` command-line option. For more information, see [the Options section in MTP CLI options reference](microsoft-testing-platform-cli-options.md) |
+| `14` | The exit code `14` indicates that a compatible coverage collector published a failed coverage threshold evaluation. |
+
+An explicit `--minimum-expected-tests` value supersedes `--zero-tests-policy`. Without the minimum option, strict zero-test handling continues to use exit code `8`.
 
 To enable verbose logging and troubleshoot issues, see [Diagnostic logging](#diagnostic-logging).
 
@@ -64,11 +67,13 @@ You can also enable the diagnostic logs using the environment variables:
 | `TESTINGPLATFORM_DIAGNOSTIC` | If set to `1`, enables the diagnostic logging. |
 | `TESTINGPLATFORM_DIAGNOSTIC_VERBOSITY` | Defines the verbosity level. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`. |
 | `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_DIRECTORY` | The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory. |
-| `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` | The prefix for the log file name. Defaults to `"log_"`. Available in MTP starting with version 2.3.0; the legacy name `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` is still honored for backward compatibility. |
+| `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` | The prefix for the log file name. The default produces `<asm>_<tfm>_<arch>_<timestamp>.diag`. Available in MTP starting with version 2.3.0; the legacy name `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` is still honored for backward compatibility. |
 | `TESTINGPLATFORM_DIAGNOSTIC_SYNCHRONOUS_WRITE` | Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. Available in MTP starting with version 2.3.0; the legacy name `TESTINGPLATFORM_DIAGNOSTIC_FILELOGGER_SYNCHRONOUSWRITE` is still honored for backward compatibility. |
 
 > [!NOTE]
 > Environment variables take precedence over the command line arguments.
+
+MTP writes a diagnostic file for each test source. If two files receive the same timestamp, MTP adds a process and counter suffix instead of overwriting an existing file.
 
 ## Resolve configuration errors
 

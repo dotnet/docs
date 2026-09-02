@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) code coverage
 description: Learn about collecting code coverage data with MTP.
 author: evangelink
 ms.author: amauryleve
-ms.date: 02/25/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -40,6 +40,17 @@ For more information about the available options, see [settings](../additional-t
 
 > [!NOTE]
 > The default value of `IncludeTestAssembly` in Microsoft.Testing.Extensions.CodeCoverage is `false`, while it used to be `true` in VSTest. This means that test projects are excluded by default. For more information, see [Code Coverage configuration](https://github.com/microsoft/codecoverage/blob/main/docs/configuration.md).
+
+## Coverage summaries and thresholds
+
+> [!IMPORTANT]
+> The first-class coverage result model is available in MTP 2.4 preview.
+
+Compatible collectors can publish covered and coverable measurements, threshold evaluations, and coverage report references as one correlated test coverage result. The terminal reporter and compatible report consumers render the measurements and derive percentages without parsing collector-specific files.
+
+Collectors choose whether to publish this model. Use the collector's documented options to configure collection and thresholds.
+
+When a published threshold evaluation fails, an otherwise successful run exits with code `14`. Use `--ignore-exit-code 14` when a threshold failure shouldn't fail the process.
 
 ## Version compatibility
 

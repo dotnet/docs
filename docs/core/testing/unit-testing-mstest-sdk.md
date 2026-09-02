@@ -3,7 +3,7 @@ title: MSTest SDK configuration
 author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -250,20 +250,40 @@ The default MSTest.Sdk extension profile supplies the `Microsoft.Testing.Extensi
 +    arguments: '--configuration Release -- --report-trx --results-directory $(Agent.TempDirectory) --coverage'
 ```
 
+## Reflection source generator
+
+> [!IMPORTANT]
+> The following MSTest 4.4 behavior is available only in preview builds until MSTest 4.4.0 is released.
+
+MSTest 4.3 introduced the reflection source generator in the independently versioned, experimental `MSTest.SourceGeneration` package. Starting with MSTest 4.4, the package graduates from experimental status and uses the MSTest version.
+
+Native AOT projects include the source generator automatically. For a non-NativeAOT project that uses MSTest.Sdk, opt in with `<EnableMSTestSourceGeneration>true</EnableMSTestSourceGeneration>`. MSTest.Sdk aligns the `MSTest.SourceGeneration`, `MSTest.TestFramework`, and `MSTest.TestAdapter` versions through `MSTestVersion`.
+
+The SDK also supports source generation in reusable test libraries and projects that use Central Package Management. It supplies matching `MSTest.TestAdapter` runtime hooks and generates the required `PackageVersion` items.
+
+.NET Standard doesn't support these runtime hooks. When you enable source generation for a .NET Standard target, the SDK reports this error:
+
+> MSTest source generation is not supported for .NET Standard target frameworks because the required MSTest.TestAdapter runtime hooks are unavailable.
+
+The source generator discovers tests at compile time. When the generator is active, test classes must declare `[TestClass]` directly instead of inheriting it. The [MSTEST0069](mstest-analyzers/mstest0069.md) analyzer flags classes that rely on an inherited `[TestClass]`.
+
+Starting with MSTest 4.3.2, `MSTestSourceGenMode` defaults to `ReflectionFree` for trimmed and Native AOT projects. This mode uses generated metadata and invokers where it supports the test shape. On runtimes that support reflection, MSTest falls back to reflection for unsupported or missing generated entries.
+
+Starting with MSTest 4.4, reflection-free generation materializes complete inherited attribute metadata, including `AttributeUsage` and `AllowMultiple`. On MTP, it can bypass runtime discovery and validation for plain synchronous `[TestMethod]` and `[DataRow]` methods. Async tests, custom test method attributes, `DynamicData`, custom `ITestDataSource` implementations, and ambiguous test shapes use the fallback path. VSTest also retains its existing path.
+
+Reflection-free mode reports these diagnostics:
+
+| ID | Unsupported test shape |
+| --- | --- |
+| `AOTSG0001` | Static test class |
+| `AOTSG0002` | Open generic test class, including a class nested in a generic type |
+| `AOTSG0003` | Class that generated code can't access, including a file-local class or private or private-protected nesting |
+| `AOTSG0004` | Generic test method |
+| `AOTSG0005` | Test method with a `ref`, `in`, or `out` parameter |
+
 ## Experimental features
 
-The following MSTest 4.3 features are **experimental**. Their public APIs are subject to change, and they're surfaced behind experimental diagnostics, so opting in requires acknowledging the corresponding diagnostic ID. Use them with that caveat in mind.
-
-### Reflection source generator
-
-> [!NOTE]
-> Introduced in MSTest 4.3.0 (experimental).
-
-The MSTest reflection source generator discovers tests at compile time instead of relying on runtime reflection, which makes test projects compatible with trimming and Native AOT. Enable it by adding the [MSTest.SourceGeneration](https://www.nuget.org/packages/MSTest.SourceGeneration) package. When the source generator is active, test classes must declare `[TestClass]` directly rather than inherit it; the [MSTEST0069](mstest-analyzers/mstest0069.md) analyzer flags classes that rely on an inherited `[TestClass]`.
-
-Starting with MSTest 4.3.2, `MSTestSourceGenMode` defaults to `ReflectionFree` for trimmed and Native AOT projects.
-
-Starting with MSTest 4.4, reflection-free generation materializes complete inherited attribute metadata, including `AttributeUsage` and `AllowMultiple`. When the generator can't materialize metadata statically, MSTest falls back to reflection where the runtime supports it.
+The following MSTest 4.3 features are **experimental**. Their public APIs are subject to change, and they're surfaced behind experimental diagnostics. To opt in, acknowledge the corresponding diagnostic ID.
 
 ### Programmatic test filtering with `ITestFilter`
 

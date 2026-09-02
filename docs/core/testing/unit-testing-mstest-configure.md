@@ -3,7 +3,7 @@ title: Configure MSTest
 description: Learn how to configure MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -26,7 +26,7 @@ The following runsettings entries let you configure how MSTest behaves.
 |`AssemblyCleanupTimeout`|None|Specify globally the timeout to apply on each instance of assembly cleanup method. `[Timeout]` attribute specified on the assembly cleanup method overrides the global timeout.|
 |`AssemblyInitializeTimeout`|None|Specify globally the timeout to apply on each instance of assembly initialize method. `[Timeout]` attribute specified on the assembly initialize method overrides the global timeout.|
 |`AssemblyResolution`|false|You can specify paths to extra assemblies when finding and running unit tests. For example, use these paths for dependency assemblies that aren't in the same directory as the test assembly. To specify a path, use a **Directory Path** element. Paths can include environment variables.<br /><br />`<AssemblyResolution>  <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`<br /><br />This feature is only applied when using a .NET Framework target.|
-|`CaptureTraceOutput`|`Result`|Capture text from the `Console.Write*`, `Trace.Write*`, and `Debug.Write*` APIs and associate it with the current test. Starting with MSTest 4.4, use `None`, `Result`, or `Live`. `Live` also echoes `Console`, `Trace`, and `TestContext.Write*` output to the console while the test runs. The earlier Boolean values remain supported: `true` maps to `Result`, and `false` maps to `None`.|
+|`CaptureTraceOutput`|`Result`|Capture text from the `Console.Write*` and `Trace.Write*` APIs and associate it with the current test. On .NET Framework, capture also includes `Debug.Write*` through shared trace listeners. Modern .NET doesn't route `Debug.Write*` through those listeners, so MSTest doesn't capture it. Starting with the MSTest 4.4 preview, use `None`, `Result`, or `Live`. `Live` also echoes `Console`, `Trace`, and `TestContext.Write*` output while the test runs. The earlier Boolean values remain supported: `true` maps to `Result`, and `false` maps to `None`.|
 |`ClassCleanupLifecycle`|EndOfClass|If you want the class cleanup to occur at the end of assembly, set it to `EndOfAssembly`. (No longer supported starting from MSTest v4 as `EndOfClass` is the default and only [ClassCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) behavior)|
 |`ClassCleanupTimeout`|None|Specify globally the timeout to apply on each instance of class cleanup method. `[Timeout]` attribute specified on the class cleanup method overrides the global timeout.|
 |`ClassInitializeTimeout`|None|Specify globally the timeout to apply on each instance of class initialize method. `[Timeout]` attribute specified on the class initialize method overrides the global timeout.|
@@ -176,7 +176,7 @@ All the settings in this section belong to the `output` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
-| captureTrace | `Result` | Capture `Console`, `Trace`, and `Debug` output and associate it with the current test. Starting with MSTest 4.4, use `None`, `Result`, or `Live`. `Live` also echoes output, including `TestContext.Write*` messages, while the test runs. The Boolean values remain supported: `true` maps to `Result`, and `false` maps to `None`. |
+| captureTrace | `Result` | Capture `Console` and `Trace` output and associate it with the current test. On .NET Framework, capture also includes `Debug` output through shared trace listeners. Modern .NET `Debug.Write*` output isn't captured. Starting with the MSTest 4.4 preview, use `None`, `Result`, or `Live`. `Live` also echoes output, including `TestContext.Write*` messages, while the test runs. The Boolean values remain supported: `true` maps to `Result`, and `false` maps to `None`. |
 
 Example:
 

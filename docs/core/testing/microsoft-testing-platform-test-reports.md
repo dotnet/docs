@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -30,6 +30,8 @@ A file name can include a relative path that stays within the test results direc
 | `{time}` | High-precision timestamp. |
 
 For example, `--report-trx-filename "{asm}_{tfm}_{arch}.trx"` reproduces the default TRX name.
+
+If a default or explicit TRX, HTML, or JUnit file name already exists for a test source, the extension warns and overwrites the file. Starting with the MTP 2.4 preview, CTRF uses the same behavior. To retain report history, include `{time}`.
 
 > [!NOTE]
 > Placeholder names are case-sensitive and use lowercase. Placeholder support for report file names is available in MTP starting with version 2.3.0.
@@ -61,6 +63,8 @@ builder.AddTrxReportProvider();
 
 > [!NOTE]
 > Available in MTP starting with version 2.3.0, TRX results stream to disk as the run progresses. If the test host crashes, the TRX file keeps the results collected before the crash.
+>
+> Starting with the MTP 2.4 preview, an MTP-generated TRX preserves MSTest `[WorkItem]` and `[GitHubWorkItem]` metadata.
 
 ### Options
 
@@ -136,7 +140,11 @@ builder.AddCtrfReportProvider();
 | `--report-ctrf` | Generates the CTRF JSON report. |
 | `--report-ctrf-filename` | The name of the generated CTRF JSON report. The value must end with `.json`. The default is `<UserName>_<MachineName>_<assembly>_<tfm>_<timestamp>.ctrf.json`. To customize the name, see [Report file names](#report-file-names). Requires `--report-ctrf`. |
 
-Starting with MSTest 4.4, CTRF results for retried tests include the `retries` and `retryAttempts` fields. When a test passes after an earlier failed attempt, its result also includes `flaky: true`. The terminal summary identifies flaky and retried tests. TRX and JUnit reports keep one final result per test instead of recording every attempt.
+Starting with the MTP 2.4 preview, CTRF preserves every result when multiple tests use the same UID. It also includes per-test and prior-attempt attachments and infers their MIME types from file names.
+
+For retried tests, CTRF correlates attempts only when the relationship is unambiguous. It then records earlier attempts in `retryAttempts`, sets `retries`, and marks a later successful result as `flaky: true`. Ambiguous same-UID results remain separate so the report doesn't associate diagnostics with the wrong test.
+
+The terminal summary identifies flaky and retried tests. TRX and JUnit reports keep one final result per test instead of recording every attempt.
 
 ## Azure DevOps reports
 
@@ -170,7 +178,7 @@ builder.TestHost.AddAzureDevOpsProvider();
 | `--report-azdo-upload-artifact-include` | 2.3.0 | Includes files in the Azure DevOps artifact upload using glob patterns relative to the test results directory. Defaults to `**/*`. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
 | `--report-azdo-upload-artifact-exclude` | 2.3.0 | Excludes files from the Azure DevOps artifact upload using glob patterns relative to the test results directory. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
 | `--report-azdo-upload-artifact-name` | 2.3.0 | Overrides the Azure DevOps artifact container name. Defaults to `TestResults_{assemblyName}_{tfm}`. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
-| `--publish-azdo-test-results` | 2.3.0 | Publishes test results live to the Azure DevOps **Tests** tab. |
+| `--publish-azdo-test-results` | 2.3.0 | Streams results to an Azure DevOps test run as tests complete. The build's **Tests** tab lists the completed run. |
 | `--publish-azdo-run-name` | 2.3.0 | Sets a custom Azure DevOps test run name for live test-result publishing. Requires `--publish-azdo-test-results`. |
 
 > [!WARNING]
@@ -182,6 +190,16 @@ builder.TestHost.AddAzureDevOpsProvider();
 The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
 
 Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, the summary includes covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
+
+In the MTP 2.4 preview, live publishing automatically uploads file attachments for unsuccessful results to Azure DevOps test results. Unsuccessful outcomes include failed, errored, timed-out, and canceled results.
+
+When a result supplies standard output or standard error, the extension can attach up to 256 KiB of each inline stream. Each file-backed attachment has a 16-MiB limit.
+
+The extension also uploads run-level `.coverage`, `.cobertura.xml`, and `.opencover.xml` files as code coverage attachments. These test-run and result attachments are separate from `--report-azdo-upload-artifacts`, which uploads selected files as Azure Pipelines build artifacts.
+
+For retried tests, Azure DevOps publishes prior attempts as subresults and attaches each attempt's artifacts to the subresult that produced them. If safe retry correlation isn't available, the extension publishes a separate result instead of dropping it.
+
+When live publishing creates the run, it prints the run URL so you can follow results before completion. It also sends `pipelineReference` and the start date when the pipeline environment provides them. The build's **Tests** tab doesn't list an in-progress run; it lists the run after completion.
 
 ## GitHub Actions reports
 
@@ -213,7 +231,12 @@ builder.AddGitHubActionsProvider();
 | `--report-gh-annotations` | 2.3.0 | Enables or disables annotations for failed and skipped tests. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
 | `--report-gh-step-summary` | 2.3.0 | Controls whether the extension writes a Markdown job summary to the file referenced by `GITHUB_STEP_SUMMARY`. Valid values are `on` (default), `off`, and, starting with MTP 2.4.0, `on-failure`. Requires `--report-gh`. |
 | `--report-gh-step-summary-sections` | 2.4.0 | Selects summary content. Valid values are `test-results`, `slow-tests`, `coverage`, and `all` (default). Requires `--report-gh` and a summary mode other than `off`. |
+| `--report-gh-failure-details` | 2.4.0 | Enables or disables bounded failure details in the job summary. Use `on` (default) or `off`. Details include the message, exception type, source location, and stack trace when available. Requires `--report-gh`. |
+| `--report-gh-history` | 2.4.0 | Reads and updates a bounded local test-history snapshot at the specified file path. The workflow must download the previous snapshot before the run and upload the updated file afterward. Requires `--report-gh`. |
+| `--report-gh-history-window` | 2.4.0 | Sets the retained history window from 1 through 90 days. The default is 30 days. Requires `--report-gh-history`. |
 | `--report-gh-slow-test-notices` | 2.3.0 | Enables or disables slow-test notices. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
 | `--report-gh-slow-test-threshold` | 2.3.0 | The duration a test can run before a slow-test notice is emitted. Accepts a bare number of seconds or a value with a unit suffix such as `90s`, `2m`, or `1.5h`. The default is `60s`. Requires `--report-gh`. |
 
 Starting with MTP 2.4.0, GitHub Actions Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, select `coverage` or `all` to include covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
+
+Failure details stay within bounded message, stack, failure-count, and whole-summary budgets. When content exceeds a limit, the report truncates or condenses it and states that reduction in the summary.

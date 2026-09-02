@@ -63,7 +63,7 @@ value="Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection=true"/>
 </configuration>
 ```
 
-This switch disables security protections introduced in the August 2026 update and may increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
+This switch disables security protections introduced in the August 2026 update and might increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
 
 #### Status
 

@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace></RootNamespace>
-    <MSTestVersion Condition="'$(MSTestVersion)' == ''">4.4.0</MSTestVersion>
+    <MSTestVersion Condition="'$(MSTestVersion)' == ''">4.4.0-preview.26452.2</MSTestVersion>
+    <RestoreAdditionalProjectSources>$(RestoreAdditionalProjectSources);https://pkgs.dev.azure.com/dnceng/public/_packaging/test-tools/nuget/v3/index.json</RestoreAdditionalProjectSources>
   </PropertyGroup>
 
   <ItemGroup>

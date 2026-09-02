@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) config options
 description: Learn how to configure MTP using testconfig.json configuration settings and environment variables.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -102,6 +102,50 @@ Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json* through
 
 Configuration doesn't install or register an extension. Each test application must reference the package that provides an extension option, either directly or through a test SDK configuration or profile. Otherwise, the option remains unrecognized whether you put it in *testconfig.json* or on the command line.
 
+Use the `commandLineOptions` object for active options. Omit the leading `--` from each key. Use `true` for a zero-argument option, and use `false` to disable an option. For one argument, use a string or number. For repeated or multiple arguments, use an array:
+
+```json
+{ "commandLineOptions": {
+  "report-trx": true,
+  "report-trx-filename": "results.trx",
+  "filter-uid": ["test-1", "test-2"]
+} }
+```
+
+MTP treats a string or number scalar as the first argument of an argument-bearing option. To pass a Boolean argument, use an array such as `[true]` or `[false]`. The array distinguishes the argument from a Boolean presence value.
+
+MTP validates configured entries like command-line entries. Unknown options, invalid values, and values with the wrong arity fail validation. An explicit command-line option overrides the corresponding `commandLineOptions` entry.
+
+Bootstrap-only options run before MTP loads configuration. Don't put `config-file`, `diagnostic`, `diagnostic-output-directory`, `diagnostic-file-prefix`, `diagnostic-verbosity`, `diagnostic-synchronous-write`, or `enable-dynamic-extensions` in `commandLineOptions`.
+
+### Passive command-line option defaults
+
+> [!IMPORTANT]
+> `commandLineOptionDefaults` is available in MTP 2.4 preview.
+
+Use `commandLineOptionDefaults` to supply an argument only when an enabled feature requests that option and no higher-priority value exists. A passive default doesn't enable an option, register an extension, or activate a feature. Omit the leading `--` from each key.
+
+```json
+{ "commandLineOptionDefaults": {
+  "report-trx-filename": "{asm}.trx",
+  "show-test-results": ["failed", "skipped"]
+} }
+```
+
+MTP resolves an option value in this order:
+
+1. An explicit command-line value.
+1. An active `commandLineOptions` entry.
+1. A `commandLineOptionDefaults` entry in *testconfig.json*.
+1. An MSBuild-provided default.
+
+For an MSBuild-provided default, add a `TestingPlatformCommandLineOptionDefault` item. The `Include` value must omit leading hyphens:
+
+```xml
+<TestingPlatformCommandLineOptionDefault Include="report-trx-filename"
+                                         Value="{asm}.trx" />
+```
+
 For a complete reference of command-line options, see [MTP CLI options reference](microsoft-testing-platform-cli-options.md).
 
 ### Test framework-specific settings
@@ -153,6 +197,20 @@ If you're migrating from a *.runsettings* file, the following table maps common 
 | `DataCollectionRunSettings` (coverage) | CLI options | Use `--coverage` from `Microsoft.Testing.Extensions.CodeCoverage`. Starting with MTP 2.3.0, MTP can read CLI options from *testconfig.json*. See [Code coverage](microsoft-testing-platform-code-coverage.md). |
 | `TestRunParameters` | `--test-parameter` CLI | Use `--test-parameter key=value` on the command line. |
 
+## MSBuild configuration
+
+> [!IMPORTANT]
+> `TestingPlatformEnvironmentVariable` is available in MTP 2.4 preview.
+
+To set an environment variable on the test process that `InvokeTestingPlatform` launches, add a `TestingPlatformEnvironmentVariable` item:
+
+```xml
+<TestingPlatformEnvironmentVariable Include="MY_OPTIONS"
+                                    Value="first;second" />
+```
+
+The `Value` metadata preserves semicolons instead of splitting them into MSBuild items. Declared values overlay the environment that the MSBuild process inherits. Without these items, the launched process inherits the environment unchanged.
+
 ## Environment variables
 
 Environment variables can be used to supply some runtime configuration information.
@@ -186,7 +244,7 @@ The output directory of the diagnostic logging. If not specified, the file is ge
 
 ### `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` environment variable
 
-The prefix for the log file name. Defaults to `"log_"`. Matches the `--diagnostic-file-prefix` command-line option.
+The prefix for the log file name. By default, MTP uses `<asm>_<tfm>_<arch>` and appends a timestamp. The resulting file name is `<asm>_<tfm>_<arch>_<timestamp>.diag`. The variable matches the `--diagnostic-file-prefix` command-line option.
 
 > [!NOTE]
 > This environment variable name is available in MTP starting with version 2.3.0. The legacy `TESTINGPLATFORM_DIAGNOSTIC_OUTPUT_FILEPREFIX` environment variable is still honored for backward compatibility but is deprecated and might be removed in a future major version. When both variables are set, `TESTINGPLATFORM_DIAGNOSTIC_FILE_PREFIX` takes precedence.
@@ -222,6 +280,19 @@ When set to `1` or `true`, suppresses the startup banner, the copyright message,
 Starting with MTP 2.4.0, this variable overrides the directory where MTP creates Unix domain-socket files for named-pipe communication. Use it when a sandbox or container doesn't allow socket creation in the default temporary directory. MTP creates and checks the directory, and fails with an error when the directory isn't writable or the resulting socket path is too long.
 
 The variable has no effect on Windows, where named pipes don't use file-system paths. It also doesn't relocate a pipe that another process, such as the .NET SDK, creates.
+
+### Deadline cancellation prototype
+
+> [!WARNING]
+> **EXPERIMENTAL/PROTOTYPE:** Deadline cancellation is a prototype in MTP 2.4 preview. Its variables and behavior can change or be removed.
+
+Set `TESTINGPLATFORM_DEADLINE` to the complete hard-cancel instant supplied by the deadline producer. Use an ISO 8601 UTC value. Don't subtract MTP's margins from the value.
+
+MTP requests a graceful stop before the deadline. `TESTINGPLATFORM_DEADLINE_STOP_MARGIN` controls how early and defaults to 60 seconds. A test framework that doesn't support graceful stop ignores this request.
+
+As a fallback, `TESTINGPLATFORM_DEADLINE_DUMP_MARGIN` starts an active HangDump extension before the deadline. The margin defaults to 30 seconds. HangDump captures the process tree and then kills the test host. Without a deadline, MTP doesn't start a deadline timer.
+
+The deadline producer remains responsible for hard cancellation at the supplied instant.
 
 ### `TESTINGPLATFORM_WAIT_ATTACH_DEBUGGER` environment variable
 

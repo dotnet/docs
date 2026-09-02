@@ -3,7 +3,7 @@ title: MSTest assertions
 description: Learn about MSTest assertions including Assert, StringAssert, and CollectionAssert classes for validating test results.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -150,6 +150,17 @@ MSTest 4.3 also adds:
 - Interpolated-string message overloads for the async `Assert.ThrowsAsync`/`Assert.ThrowsExactlyAsync` methods, and rejection of `ValueTask<TResult>`-returning delegates that would otherwise not be awaited.
 - Complete exception details, including stack traces and inner exceptions, in `Assert.Throws*` failure messages.
 - Assertion failure stacks that hide MSTest implementation frames and render built-in numeric values at full precision.
+
+> [!IMPORTANT]
+> The following assertion overloads are planned for MSTest 4.4 and are available only in preview builds until MSTest 4.4.0 is released.
+
+MSTest 4.4 adds span and memory overloads to `Assert.IsEmpty`, `Assert.IsNotEmpty`, and the remaining collection APIs. The overloads accept <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, <xref:System.Memory`1>, and <xref:System.ReadOnlyMemory`1>:
+
+- All-item checks: `AreAllDistinct`, `AreAllNotNull`, and `AreAllOfType`.
+- Comparisons: `AreEquivalent`, `AreNotEquivalent`, `AreSequenceEqual`, and `AreNotSequenceEqual`.
+- Containment: `Contains`, `ContainsAll`, `ContainsSingle`, `DoesNotContain`, and `DoesNotContainAll`.
+
+With the MSTest 4.4 and MTP 2.4 previews, capable IDEs and reporters receive assertion expected and actual values as separate structured properties. Consumers don't need to parse these values from the failure message.
 
 `Assert.AddValueFormatter` returns an <xref:System.IDisposable> registration. Dispose the registration to remove the formatter. The formatter applies only to the current asynchronous context, so parallel tests can use different formatters without changing each other's output. Because the API is experimental in MSTest 4.3, acknowledge or suppress the `MSTESTEXP` diagnostic before you use it.
 

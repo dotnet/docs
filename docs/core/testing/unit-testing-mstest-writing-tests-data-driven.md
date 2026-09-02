@@ -4,7 +4,7 @@ description: Learn how to use data-driven testing in MSTest with DataRow, Dynami
 author: Evangelink
 ms.author: amauryleve
 ai-usage: ai-assisted
-ms.date: 06/16/2026
+ms.date: 09/02/2026
 ---
 
 # Data-driven testing in MSTest
@@ -20,14 +20,29 @@ MSTest provides several attributes for data-driven testing:
 | [`DataRow`](#datarowattribute) | Inline test data | Simple, static test cases |
 | [`DynamicData`](#dynamicdataattribute) | Data from methods, properties, or fields | Complex or computed test data |
 | [`DataSource`](#datasourceattribute) | External data files or databases | Legacy scenarios with external data sources |
+| `CombinatorialData` | Cartesian product of parameter values | Combinations of independent inputs |
 
 MSTest also provides the following types to extend data-driven scenarios:
 
 - [`TestDataRow<T>`](#testdatarow): A return type for `ITestDataSource` implementations (including `DynamicData`) that adds metadata support such as display names, categories, and ignore messages to individual test cases.
 - [`ITestDataSource`](#itestdatasource): An interface you can implement on a custom attribute to create fully custom data source attributes.
 
-> [!TIP]
-> For combinatorial testing (testing all combinations of multiple parameter sets), use the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) NuGet package. This community-maintained package is [available on GitHub](https://github.com/Youssef1313/Combinatorial.MSTest) but isn't maintained by Microsoft.
+> [!IMPORTANT]
+> Built-in combinatorial testing is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
+
+## Combinatorial test data
+
+To generate the Cartesian product of values for a test method's parameters, use the types in the `Microsoft.VisualStudio.TestTools.UnitTesting.Combinatorial` namespace. Apply `CombinatorialDataAttribute` to the method, and use these parameter attributes when you need to control the values:
+
+- `CombinatorialValuesAttribute` supplies an explicit set of values.
+- `CombinatorialRangeAttribute` supplies an integer range.
+- `CombinatorialRandomDataAttribute` supplies unique random integers. Configure the count, minimum, maximum, and seed.
+
+When you omit a parameter attribute, MSTest infers values for supported types. It uses `true` and `false` for `bool`, `0` and `1` for `int`, and every named value for an enum. For a nullable supported type, MSTest also includes `null`.
+
+Built-in combinatorial data supports Native AOT. It doesn't support pairwise generation, permutations, exclusions, member-backed dynamic values, class-data activation, or a fluent builder.
+
+For advanced scenarios that require these unsupported features, consider the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package. The community maintains this package independently of Microsoft.
 
 ## `DataRowAttribute`
 
@@ -604,7 +619,7 @@ public class UnfoldingExample
 - **Name your test cases**: Use `DisplayName` to make test failures easier to identify.
 - **Keep data sources close**: Define data sources in the same class when possible for better maintainability.
 - **Use meaningful data**: Choose test data that exercises edge cases and boundary conditions.
-- **Consider combinatorial testing**: For testing parameter combinations, use the [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
+- **Use combinatorial testing for independent inputs**: In MSTest 4.4 preview, use built-in combinatorial data for a full Cartesian product. For unsupported advanced generation strategies, consider the community [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: Data-driven testing in MSTest
-description: Learn how to use data-driven testing in MSTest with DataRow, DynamicData, and TestDataRow to run the same test with multiple inputs.
+description: Learn how to use DataRow, DynamicData, CombinatorialData, and TestDataRow to run MSTest tests with multiple inputs.
 author: Evangelink
 ms.author: amauryleve
 ai-usage: ai-assisted
@@ -18,9 +18,9 @@ MSTest provides several attributes for data-driven testing:
 | Attribute | Use case | Best for |
 |-----------|----------|----------|
 | [`DataRow`](#datarowattribute) | Inline test data | Simple, static test cases |
+| [`CombinatorialData`](#combinatorialdataattribute) | A Cartesian product of parameter values | Exhaustive combinations of independent inputs |
 | [`DynamicData`](#dynamicdataattribute) | Data from methods, properties, or fields | Complex or computed test data |
 | [`DataSource`](#datasourceattribute) | External data files or databases | Legacy scenarios with external data sources |
-| `CombinatorialData` | Cartesian product of parameter values | Combinations of independent inputs |
 
 MSTest also provides the following types to extend data-driven scenarios:
 
@@ -28,21 +28,7 @@ MSTest also provides the following types to extend data-driven scenarios:
 - [`ITestDataSource`](#itestdatasource): An interface you can implement on a custom attribute to create fully custom data source attributes.
 
 > [!IMPORTANT]
-> Built-in combinatorial testing is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
-
-## Combinatorial test data
-
-To generate the Cartesian product of values for a test method's parameters, use the types in the `Microsoft.VisualStudio.TestTools.UnitTesting.Combinatorial` namespace. Apply `CombinatorialDataAttribute` to the method, and use these parameter attributes when you need to control the values:
-
-- `CombinatorialValuesAttribute` supplies an explicit set of values.
-- `CombinatorialRangeAttribute` supplies an integer range.
-- `CombinatorialRandomDataAttribute` supplies unique random integers. Configure the count, minimum, maximum, and seed.
-
-When you omit a parameter attribute, MSTest infers values for supported types. It uses `true` and `false` for `bool`, `0` and `1` for `int`, and every named value for an enum. For a nullable supported type, MSTest also includes `null`.
-
-Built-in combinatorial data supports Native AOT. It doesn't support pairwise generation, permutations, exclusions, member-backed dynamic values, class-data activation, or a fluent builder.
-
-For advanced scenarios that require these unsupported features, consider the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package. The community maintains this package independently of Microsoft.
+> Built-in combinatorial testing is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released. For earlier MSTest versions, use the community-maintained [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
 
 ## `DataRowAttribute`
 
@@ -189,6 +175,28 @@ public class IgnoreDataRowExample
     }
 }
 ```
+
+## `CombinatorialDataAttribute`
+
+In MSTest 4.4 preview builds, the `CombinatorialData` attribute generates the Cartesian product of the values for each test method parameter. Use the types in the `Microsoft.VisualStudio.TestTools.UnitTesting.Combinatorial` namespace.
+
+Provide values for each parameter with one of the following options:
+
+| Value source | Behavior |
+|--------------|----------|
+| Inferred values | Uses `true` and `false` for `bool`; `0` and `1` for `int`; all defined values for an enum; and `null` plus the inferred values for a nullable version of one of these supported types. |
+| `CombinatorialValues` | Uses the explicit values that you pass to the attribute. |
+| `CombinatorialRange` | Generates `int` or `uint` values from a starting value and count, or from inclusive endpoints and a step. |
+| `CombinatorialRandomData` | Generates unique `int` values. Set `Count`, `Minimum`, `Maximum`, and optionally `Seed` to control the values. |
+
+The following test combines two inferred `bool` values, two explicit values, three range values, and two seeded random values. MSTest generates 24 test cases from these independent parameter sets.
+
+:::code language="csharp" source="./snippets/unit-testing-mstest-writing-tests-data-driven/csharp/CombinatorialTests.cs" id="CombinatorialExample":::
+:::code language="vb" source="./snippets/unit-testing-mstest-writing-tests-data-driven/vb/CombinatorialTests.vb" id="CombinatorialExample":::
+
+Apply no more than one combinatorial value provider to each parameter. For a parameter type whose values MSTest can't infer, apply `CombinatorialValues`, `CombinatorialRange`, `CombinatorialRandomData`, or a custom attribute that implements `ICombinatorialValuesProvider`.
+
+`CombinatorialData` creates an exhaustive Cartesian product. It doesn't support pairwise generation, permutations, exclusions between parameter values, member-backed values, or class data. Use `DynamicData` or a custom `ITestDataSource` when values depend on each other or when you need to filter the generated test cases.
 
 ## `DynamicDataAttribute`
 
@@ -615,11 +623,10 @@ public class UnfoldingExample
 
 ## Best practices
 
-- **Choose the right attribute**: Use `DataRow` for simple, inline data. Use `DynamicData` for complex or computed data.
+- **Choose the right attribute**: Use `DataRow` for simple, inline data, `CombinatorialData` for exhaustive combinations of independent inputs, and `DynamicData` for complex or computed data.
 - **Name your test cases**: Use `DisplayName` to make test failures easier to identify.
 - **Keep data sources close**: Define data sources in the same class when possible for better maintainability.
 - **Use meaningful data**: Choose test data that exercises edge cases and boundary conditions.
-- **Use combinatorial testing for independent inputs**: In MSTest 4.4 preview, use built-in combinatorial data for a full Cartesian product. For unsupported advanced generation strategies, consider the community [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
 
 ## See also
 

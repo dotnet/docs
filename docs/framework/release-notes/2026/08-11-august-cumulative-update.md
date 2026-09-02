@@ -1,12 +1,13 @@
 ---
 title: August 2026 cumulative update
 description: Learn about the improvements in the .NET Framework August 2026 cumulative update.
-ms.date: 08/11/2026
+ms.date: 08/20/2026
 ai-usage: ai-generated
 ---
 # .NET Framework August 2026 cumulative update
 
 _Released August 11, 2026_
+_Updated August 20, 2026, to include known issues._
 
 ## Summary of what's new in this release
 
@@ -45,7 +46,22 @@ There are no new quality and reliability improvements in this release.
 
 ## Known issues in this release
 
-This release contains no known issues.
+**Known issue:** After installing the August 2026 .NET Framework cumulative update, some WPF applications might fail with a `System.IO.FileFormatException` when printing or generating PDF/XPS content that uses certain fonts, including Calibri.
+
+**Workaround:** Applications can mitigate the issue by enabling the `Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection` AppContext switch in the `app.config` file:
+
+```xml
+<configuration>
+  <runtime>
+    <AppContextSwitchOverrides
+      value="Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection=true"/>
+  </runtime>
+</configuration>
+```
+
+This switch disables security protections introduced in the August 2026 update and might increase exposure to the vulnerabilities addressed by that update. Microsoft recommends using this workaround only as a temporary measure and only when required to address this issue.
+
+**Status:** Investigating.
 
 ## Summary tables
 

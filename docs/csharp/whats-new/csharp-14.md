@@ -92,7 +92,7 @@ public string Message
 }
 ```
 
- You can also simplify common patterns like lazy initialization, property change notifications, and structured string fields. The following code shows examples of each:
+You can also simplify common patterns like lazy initialization, property change notifications, and structured string fields. The following code shows examples of each:
 
 **Lazy Initialization:**
 

@@ -46,7 +46,7 @@ There are no new quality and reliability improvements in this release.
 
 ## Known issues in this release
 
-#### Known Issue
+#### Known issue
 
 After installing the August 2026 .NET Framework cumulative update, some Windows Presentation Foundation (WPF) applications might fail with a `System.IO.FileFormatException` when printing or generating PDF/XPS content that uses certain fonts, including Calibri.
 

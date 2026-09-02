@@ -193,6 +193,8 @@ Open the `.nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blo
 
 PerfView and TraceEvent 3.2.1 or later can resolve .NET native and R2R symbols at analysis time. In PerfView, select unresolved module frames and choose **Lookup Symbols**. For other native libraries, configure a local symbol path. For more information, see [Get symbols for native runtime frames](dotnet-trace.md#get-symbols-for-native-runtime-frames).
 
+For a broader workflow that covers CPU, blocking, GC, exceptions, I/O, and startup, see [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md).
+
 #### Use OneCollect `record-trace`
 
 OneCollect's [`record-trace`](https://github.com/microsoft/one-collect/tree/main/record-trace) tool provides lower-level control over event selection, process and CPU filtering, scripts, and output format. See the [OneCollect build instructions](https://github.com/microsoft/one-collect/blob/main/CONTRIBUTING.md#building-the-project) to obtain the tool.

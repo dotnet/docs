@@ -10,7 +10,7 @@ ms.date: 09/04/2026
 **This article applies to: ✔️** .NET Core 2.1 SDK and later versions
 
 > [!IMPORTANT]
-> For .NET 10+ Linux investigations, prefer [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux). PerfCollect is the earlier .NET Linux tracing workflow. Its .NET runtime event collection requires LTTng 2.12; on distributions with LTTng 2.13 or later, the LTTng portion must be disabled as described later in this article.
+> For .NET 10+ Linux investigations, prefer [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md). PerfCollect is the earlier .NET Linux tracing workflow. Its .NET runtime event collection requires LTTng 2.12; on distributions with LTTng 2.13 or later, the LTTng portion must be disabled as described later in this article.
 
 When performance problems are encountered on Linux, collecting a trace with `perfcollect` can be used to gather detailed information about what was happening on the machine at the time of the performance problem.
 

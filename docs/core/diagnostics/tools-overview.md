@@ -40,7 +40,7 @@ The [dotnet-monitor](dotnet-monitor.md) tool is a way to monitor .NET applicatio
 
 ### dotnet-trace
 
-The [dotnet-trace](dotnet-trace.md) tool is a cross-platform .NET diagnostic tool that collects traces from running applications without using a native profiler. On Linux, it can also combine .NET runtime and application events with machine-wide CPU samples, native call stacks, and Linux kernel events collected through the `perf_events` facility.
+The [dotnet-trace](dotnet-trace.md) tool is a cross-platform .NET diagnostic tool that collects traces from running applications without using a native profiler. On Linux, it can also combine .NET runtime and application events with machine-wide CPU samples, native call stacks, and Linux kernel events collected through the `perf_events` facility. For a symptom-driven workflow, see [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md).
 
 ### dotnet-stack
 

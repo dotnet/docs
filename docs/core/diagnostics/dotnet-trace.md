@@ -1,6 +1,6 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
-description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
+description: Learn how to use dotnet-trace to collect .NET application traces and Linux system-wide performance traces.
 ms.date: 09/04/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
@@ -294,6 +294,8 @@ dotnet-trace collect
 > The `collect-linux` verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files, but other ways of using the trace file, such as [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report), might not work yet.
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` enables the following additional features over [`collect`](#dotnet-trace-collect).
+
+For a symptom-driven collection and analysis workflow, see [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md).
 
 | Feature                                  | `collect` | `collect-linux`                   |
 |------------------------------------------|-----------|-----------------------------------|

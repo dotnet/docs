@@ -312,6 +312,8 @@ Then run dotnet-trace to collect wait events:
 dotnet-trace collect -n DiagnosticScenarios --clrevents waithandle --clreventlevel verbose --duration 00:00:30
 ```
 
+On .NET 10+ Linux, prefer the [`collect-linux` blocking configuration](dotnet-trace-collect-linux-performance.md#blocking-contention-and-threadpool-behavior) when its prerequisites are met. It records the same focused runtime signals together with native stacks and Linux scheduling context, which helps distinguish blocked workers from runnable workers that aren't receiving CPU.
+
 That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. This nettrace can be analyzed using two different tools:
 
 - [PerfView](https://github.com/microsoft/perfview/releases): A performance analysis tool developed by Microsoft for Windows only.
@@ -405,4 +407,6 @@ Statistics        Avg      Stdev        Max
 
 ## See also
 
+- [Diagnose performance issues in .NET applications](performance-diagnostics.md)
+- [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md)
 - [`dotnet-stack`](dotnet-stack.md)

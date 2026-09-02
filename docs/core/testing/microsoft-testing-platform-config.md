@@ -132,12 +132,12 @@ Use `commandLineOptionDefaults` to supply an argument only when an enabled featu
 } }
 ```
 
-MTP resolves an option value in this order:
+MTP resolves an option value by using the first match in this priority order:
 
-1. An explicit command-line value.
-1. An active `commandLineOptions` entry.
-1. A `commandLineOptionDefaults` entry in *testconfig.json*.
-1. An MSBuild-provided default.
+- An explicit command-line value.
+- An active `commandLineOptions` entry.
+- A `commandLineOptionDefaults` entry in *testconfig.json*.
+- An MSBuild-provided default.
 
 For an MSBuild-provided default, add a `TestingPlatformCommandLineOptionDefault` item. The `Include` value must omit leading hyphens:
 

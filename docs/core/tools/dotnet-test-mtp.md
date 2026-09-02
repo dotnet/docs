@@ -145,7 +145,7 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 
   Selects result blocks by outcome. In MTP 2.4 preview, use `passed`, `failed`, `skipped`, `all`, or `none`. The `failed` value also includes errors, timeouts, and cancellations.
 
-  Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated options. Don't combine `all` or `none` with another value. This explicit option overrides the `--output` preset regardless of option order.
+  Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated `--show-test-results` options. Don't combine `all` or `none` with another value. This explicit option overrides the `--output` preset regardless of option order.
 
 - **`--no-launch-profile`**
 

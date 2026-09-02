@@ -61,7 +61,7 @@ If your code must write directly to the console and you need that output to rema
 | `--no-ansi` | — | Disables outputting ANSI escape characters to screen. |
 | `--ansi` | 2.3.0 | Controls whether ANSI escape characters are emitted. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). |
 | `--output` | — | Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`. `Minimal` requires MTP 2.4 preview. |
-| `--show-test-results` | 2.4.0 | Selects result blocks by outcome. Use `passed`, `failed`, `skipped`, `all`, or `none`. `failed` also includes errors, timeouts, and cancellations. |
+| `--show-test-results <OUTCOME>` | 2.4.0 | Selects result blocks by outcome. Use `passed`, `failed`, `skipped`, `all`, or `none`. `failed` also includes errors, timeouts, and cancellations. |
 | `--show-stdout` | 2.2.1 | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
 | `--show-stderr` | 2.2.1 | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
 | `--show-flaky-tests` | 2.4.0 | Controls the `flaky:` summary and the **Flaky tests** list for tests that pass after a retry. Use `on` or `off`; the default is `on`. Applies to MSTest `[Retry]` and the [retry extension](microsoft-testing-platform-retry.md). |

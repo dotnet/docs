@@ -1,15 +1,13 @@
 ---
-title: Debug high CPU usage - .NET Core
-description: A tutorial that walks you through debugging high CPU usage in .NET Core.
+title: Debug high CPU usage - .NET
+description: A tutorial that walks you through debugging high CPU usage in .NET.
 ms.topic: tutorial
-ms.date: 03/19/2026
+ms.date: 09/08/2026
 ---
 
-# Debug high CPU usage in .NET Core
+# Debug high CPU usage in .NET
 
-**This article applies to: ✔️** .NET Core 3.1 SDK and later versions
-
-In this tutorial, you'll learn how to debug an excessive CPU usage scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how you can use various tools to diagnose this scenario with several key pieces of diagnostics data.
+In this tutorial, you'll learn how to debug an excessive CPU usage scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios), you can intentionally run CPU-intensive work and use metrics and platform-appropriate profiling tools to identify the expensive code.
 
 In this tutorial, you will:
 
@@ -25,9 +23,9 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
+- A supported [.NET SDK](https://dotnet.microsoft.com/download/dotnet).
 - [Sample debug target](/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario.
-- [dotnet-trace](dotnet-trace.md) to list processes and generate a profile.
+- [dotnet-trace](dotnet-trace.md) to collect CPU profiles and runtime traces.
 - [dotnet-counters](dotnet-counters.md) to monitor cpu usage.
 
 ## CPU counters
@@ -171,15 +169,17 @@ Throughout the duration of the request, the CPU usage will hover around the incr
 
 At this point, you can safely say the CPU is running higher than you expect. Identifying the effects of a problem is key to finding the cause. We will use the effect of high CPU consumption in addition to diagnostic tools to find the cause of the problem.
 
-## Analyze High CPU with Profiler
+## Analyze high CPU with a profiler
 
-When analyzing an app with high CPU usage, use a profiler to understand what the code is doing. `dotnet-trace collect` works on all operating systems, but safe-point bias and managed-only callstacks limit it to more general information than a kernel-aware profiler like ETW for Windows or `perf` for Linux. Depending on your operating system and .NET version, improved profiling capabilities might be available—see the platform-specific tabs that follow for detailed guidance.
+When analyzing an app with high CPU usage, use a profiler to understand what the code is doing. `dotnet-trace collect` works on all operating systems, but safe-point bias and managed-only call stacks limit it to more general information than kernel-aware profiling through ETW on Windows or `perf_events` on Linux. Depending on your operating system and .NET version, improved profiling capabilities might be available. See the platform-specific tabs that follow for detailed guidance.
 
 ### [Linux](#tab/linux)
 
+Prefer `dotnet-trace collect-linux` for the .NET-oriented Linux workflow. Use OneCollect `record-trace` when you need its lower-level scripting, filtering, or output controls, and use `perf` directly only when you need `perf.data`, perf-native analysis, or hardware performance counters.
+
 #### Use `dotnet-trace collect-linux` (.NET 10+)
 
-On .NET 10 and later, [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux) is the recommended profiling approach on Linux. It combines EventPipe with OS-level perf_events to produce a single unified trace that includes both managed and native callstacks, all without requiring a process restart. This requires root permissions and Linux kernel 6.4+ with `CONFIG_USER_EVENTS=y`. See [collect-linux prerequisites](dotnet-trace.md#prerequisites) for full requirements.
+On .NET 10+, [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux) is the recommended Linux workflow. It retains .NET runtime and application event collection while adding kernel CPU samples, native call stacks, and selected Linux events through `perf_events`, all without requiring a process restart. This requires root permissions and Linux kernel 6.4+ with `CONFIG_USER_EVENTS=y`. See [collect-linux prerequisites](dotnet-trace.md#prerequisites) for full requirements.
 
 Ensure the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) is configured to target .NET 10 or later, then run it and exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, run `dotnet-trace collect-linux` to capture a machine-wide trace:
 
@@ -193,9 +193,24 @@ Open the `.nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blo
 
 For information about resolving native runtime symbols in the trace, see [Get symbols for native runtime frames](dotnet-trace.md#get-symbols-for-native-runtime-frames).
 
+#### Use OneCollect `record-trace`
+
+OneCollect's [`record-trace`](https://github.com/microsoft/one-collect/tree/main/record-trace) tool provides lower-level control over event selection, process and CPU filtering, scripts, and output format. See the [OneCollect build instructions](https://github.com/microsoft/one-collect/blob/main/CONTRIBUTING.md#building-the-project) to obtain the tool.
+
+This CPU profiling workflow doesn't require .NET 10 or `user_events`. After making the executable available on `PATH`, exercise the high CPU endpoint again, and while it's running, capture a 30-second machine-wide CPU profile:
+
+```bash
+sudo record-trace \
+  --on-cpu \
+  --duration 30 \
+  --out highcpu.nettrace
+```
+
+This example uses the default NetTrace output so that you can open `highcpu.nettrace` in PerfView and inspect **CPU Stacks**. `record-trace` can also write PerfView XML with `--format perfview-xml`, display samples while recording with `--live`, and use Rhai scripts for more detailed event configuration.
+
 #### Use `perf`
 
-The `perf` tool can also be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
+Use `perf` directly when the investigation requires the Linux perf ecosystem, such as `perf.data`, `perf report`, `perf annotate`, established flame graph scripts, or hardware performance counters. The following steps demonstrate the standard `perf record` and `perf report` workflow. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
 
 Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU addresses to JIT-generated functions by name. For more information, see [Export perf maps and jit dumps](../runtime-config/debugging-profiling.md#export-perf-maps-and-jit-dumps).
 
@@ -245,13 +260,13 @@ Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob
 
 ---
 
-## Analyzing High CPU Data with Visual Studio
+## Analyze high CPU data with Visual Studio
 
 All \*.nettrace files can be analyzed in Visual Studio. To analyze a Linux \*.nettrace file in Visual Studio, transfer the \*.nettrace file, in addition to the other necessary documents, to a Windows machine, and then open the \*.nettrace file in Visual Studio. For more information, see [Analyze CPU Usage Data](/visualstudio/profiling/beginners-guide-to-performance-profiling?#step-2-analyze-cpu-usage-data).
 
 ## See also
 
-- [dotnet-trace](dotnet-trace.md) to list processes
+- [dotnet-trace](dotnet-trace.md) to collect CPU profiles and runtime traces
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
 - [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
@@ -259,4 +274,4 @@ All \*.nettrace files can be analyzed in Visual Studio. To analyze a Linux \*.ne
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Debug a deadlock in .NET Core](debug-deadlock.md)
+> [Debug a deadlock in .NET](debug-deadlock.md)

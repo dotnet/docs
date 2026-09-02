@@ -36,7 +36,6 @@ You can find any breaking changes introduced in C# 14 in our article on [breakin
 C# 14 adds new syntax to define *extension members*. The new syntax enables you to declare *extension properties* in addition to extension methods. You can also declare extension members that extend the type, rather than an instance of the type. In other words, these new extension members can appear as static members of the type you extend. These extensions can include user defined operators implemented as static extension methods. The following code example shows an example of the different kinds of extension members you can declare:
 
 ```csharp
-
 public static class Enumerable
 {
     // Extension block
@@ -62,7 +61,6 @@ public static class Enumerable
         public static IEnumerable<TSource> operator + (IEnumerable<TSource> left, IEnumerable<TSource> right) => left.Concat(right);
     }
 }
-
 ```
 
 The members in the first extension block are called as though they're instance members of `IEnumerable<TSource>`, for example `sequence.IsEmpty`. The members in the second extension block are called as though they're static members of `IEnumerable<TSource>`, for example `IEnumerable<int>.Identity`.
@@ -76,26 +74,22 @@ The token `field` enables you to write a property accessor body without declarin
 For example, previously, if you wanted to ensure that a `string` property couldn't be set to `null`, you had to declare a backing field and implement both accessors:
 
 ```csharp
-
 private string _msg;
 public string Message
 {
     get => _msg;
     set => _msg = value ?? throw new ArgumentNullException(nameof(value));
 }
-
 ```
 
 You can now simplify your code to:
 
 ```csharp
-
 public string Message
 {
     get;
     set => field = value ?? throw new ArgumentNullException(nameof(value));
 }
-
 ```
 
  You can also simplify common patterns like lazy initialization, property change notifications, and structured string fields. The following code shows examples of each:
@@ -103,7 +97,6 @@ public string Message
 **Lazy Initialization:**
 
 ```csharp
-
 public SqlConnection Connection
 {
     get => field ??= new SqlConnection("connection-string");
@@ -123,8 +116,6 @@ public string Email
     get;
     set => field = value?.Trim()?.ToLowerInvariant() ?? string.Empty;
 }
-
-
 ```
 
 You can declare a body for one or both accessors for a field backed property.
@@ -148,19 +139,15 @@ Beginning with C# 14, the argument to `nameof` can be an unbound generic type. F
 You can add parameter modifiers, such as `scoped`, `ref`, `in`, `out`, or `ref readonly` to lambda expression parameters without specifying the parameter type:
 
 ```csharp
-
 delegate bool TryParse<T>(string text, out T result);
 // ...
 TryParse<int> parse1 = (text, out result) => Int32.TryParse(text, out result);
-
 ```
 
 Previously, adding any modifiers was allowed only when the parameter declarations included the types for the parameters. The preceding declaration would require types on all parameters:
 
 ```csharp
-
 TryParse<int> parse2 = (string text, out int result) => Int32.TryParse(text, out result);
-
 ```
 
 The `params` modifier still requires an explicitly typed parameter list.
@@ -188,20 +175,16 @@ The null-conditional member access operators, `?.` and `?[]`, can now be used on
 Before C# 14, you needed to null-check a variable before assigning to a property:
 
 ```csharp
-
 if (customer is not null)
 {
     customer.Order = GetCurrentOrder();
 }
-
 ```
 
 You can simplify the preceding code using the `?.` operator:
 
 ```csharp
-
 customer?.Order = GetCurrentOrder();
-
 ```
 
 The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.

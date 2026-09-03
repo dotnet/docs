@@ -102,17 +102,17 @@ The following table outlines the updates in this release.
 
 | Product version | Cumulative update |
 | --- | --- |
-| **Windows 11, version 26H1** | |
+| **Windows 11, version 26H1** |  |
 | .NET Framework 4.8.1 | [5101002](https://support.microsoft.com/kb/5101002) |
-| **Windows 11, version 25H2** | |
+| **Windows 11, version 25H2** |  |
 | .NET Framework 3.5, 4.8.1 | [5100998](https://support.microsoft.com/kb/5100998) |
-| **Windows 11, version 24H2** | |
+| **Windows 11, version 24H2** |  |
 | .NET Framework 3.5, 4.8.1 | [5101001](https://support.microsoft.com/kb/5101001) |
-| **Microsoft server operating system, version 24H2** | |
+| **Microsoft server operating system, version 24H2** |  |
 | .NET Framework 3.5, 4.8.1 | [5100998](https://support.microsoft.com/kb/5100998) |
-| **Microsoft server operating system, version 23H2** | |
-| .NET Framework 3.5, 4.8.1 | [5100999](https://support.microsoft.com/kb/5100999) |
-| **Windows 11, version 22H2 and Windows 11, version 23H2** | |
+| **Microsoft server operating system, version 23H2** |  |
+| .NET Framework 3.5, 4.8.1 | 5100999 |
+| **Windows 11, version 22H2 and Windows 11, version 23H2** |  |
 | .NET Framework 3.5, 4.8.1 | [5101004](https://support.microsoft.com/kb/5101004) |
 | **Windows Server 2022** | **[5102206](https://support.microsoft.com/kb/5102206)** |
 | .NET Framework 3.5, 4.8 | [5101010](https://support.microsoft.com/kb/5101010) |
@@ -130,7 +130,7 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 | [5099535](https://support.microsoft.com/kb/5099535) |
 | .NET Framework 4.8 | [5101007](https://support.microsoft.com/kb/5101007) |
 
-The following table is for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
+The following table is for earlier Windows and Windows Server versions for Security and Quality Rollup updates.
 
 | Product version | Security and quality rollup |
 | --- | --- |
@@ -139,7 +139,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5100991](https://support.microsoft.com/kb/5100991) |
 | .NET Framework 4.8 | [5101011](https://support.microsoft.com/kb/5101011) |
 | **Windows Server 2012** | **[5102204](https://support.microsoft.com/kb/5102204)** |
-| .NET Framework 3.5 | [5100986](https://support.microsoft.com/kb/5100986) |
+| .NET Framework 3.5 | 5100986 |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5100990](https://support.microsoft.com/kb/5100990) |
 | .NET Framework 4.8 | [5101009](https://support.microsoft.com/kb/5101009) |
 

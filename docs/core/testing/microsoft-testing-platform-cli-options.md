@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -65,7 +65,7 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--diagnostic`**
 
-  Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
+  Enables diagnostic logging. The default log level is `Trace`. For each test source, MTP writes `<asm>_<tfm>_<arch>_<timestamp>.diag`. If a timestamp collides, MTP adds a process and counter suffix instead of overwriting the existing file.
 
 - **`--diagnostic-synchronous-write`**
 
@@ -80,7 +80,7 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--diagnostic-file-prefix`**
 
-  The prefix for the log file name. Defaults to `"log"`.
+  The prefix for the log file name. The default is `<asm>_<tfm>_<arch>`.
 
   > [!NOTE]
   > Available in MTP starting with version 2.0.0. It replaces the previous `--diagnostic-output-fileprefix` option, which was removed in MTP 2.0.0.
@@ -142,7 +142,7 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--minimum-expected-tests`**
 
-  Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.
+  Specifies the minimum number of tests that must run. When the run executes fewer tests, including zero, it exits with code `9`. An explicit minimum supersedes `--zero-tests-policy`.
 
 - **`--no-banner`**
 
@@ -179,7 +179,7 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--zero-tests-policy`**
 
-  Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds; with `strict`, it fails with exit code 8 (the behavior before 2.3.0).
+  Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds. With `strict`, it fails with exit code `8`. An explicit `--minimum-expected-tests` value supersedes this policy and uses exit code `9` when the minimum isn't met.
 
   > [!NOTE]
   > This option is available in MTP starting with version 2.3.0.

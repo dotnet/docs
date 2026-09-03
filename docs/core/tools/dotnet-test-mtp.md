@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 08/31/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -36,6 +36,7 @@ dotnet test
     [--no-ansi]
     [--no-progress]
     [--output <VERBOSITY_LEVEL>]
+    [--show-test-results <OUTCOME>]
     [--no-launch-profile]
     [--no-launch-profile-arguments]
     [<args>...]
@@ -138,7 +139,13 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 
 - **`--output <VERBOSITY_LEVEL>`**
 
-  Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
+  Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`. `Minimal` requires MTP 2.4 preview.
+
+- **`--show-test-results <OUTCOME>`**
+
+  Selects result blocks by outcome. In MTP 2.4 preview, use `passed`, `failed`, `skipped`, `all`, or `none`. The `failed` value also includes errors, timeouts, and cancellations.
+
+  Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated `--show-test-results` options. Don't combine `all` or `none` with another value. This explicit option overrides the `--output` preset regardless of option order.
 
 - **`--no-launch-profile`**
 

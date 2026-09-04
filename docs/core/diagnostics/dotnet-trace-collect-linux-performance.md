@@ -12,6 +12,8 @@ ms.topic: how-to
 
 Start with [Diagnose performance issues in .NET applications](performance-diagnostics.md) to choose the primary workflow for the observed symptom. When that workflow calls for a Linux performance trace, this article explains how to select `collect-linux` data, move from a broad trace to a focused trace, and analyze the result. For complete command syntax and platform requirements, see the [`collect-linux` reference](dotnet-trace.md#dotnet-trace-collect-linux).
 
+For hands-on practice choosing among the configurations in this article, use the runnable [Linux performance investigation scenarios](dotnet-trace-collect-linux-scenarios.md).
+
 ## Start with a short machine-wide trace
 
 When the cause is unknown, begin with a short, machine-wide trace that intentionally combines only the `dotnet-common` and `cpu-sampling` profiles. `dotnet-common` provides lightweight .NET runtime context, while `cpu-sampling` provides Linux CPU samples and native call stacks. Together they can show whether CPU is consumed by the application, the runtime, native or kernel code, or another process without enabling every high-volume event source.
@@ -243,6 +245,7 @@ Trace overhead depends on event rate, enabled providers, stack capture, CPU coun
 ## See also
 
 - [Diagnose performance issues in .NET applications](performance-diagnostics.md)
+- [Practice Linux performance investigations](dotnet-trace-collect-linux-scenarios.md)
 - [`dotnet-trace` reference](dotnet-trace.md)
 - [Debug high CPU usage](debug-highcpu.md)
 - [Collect diagnostics in Linux containers](diagnostics-in-containers.md)

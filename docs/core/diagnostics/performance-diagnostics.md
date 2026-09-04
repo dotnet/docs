@@ -73,6 +73,10 @@ Collecting more of the same data doesn't recover information that the artifact d
 | Cache misses, branch prediction, IPC, or memory bandwidth | Hardware performance counters and platform profiler |
 | Inlined methods or generated machine instructions | Source, disassembly, or a diagnostic build |
 
+## Practice the Linux workflows
+
+[Practice Linux performance investigations with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-scenarios.md) provides runnable CPU, memory, GC, blocking, contention, I/O, exception, startup, process, mixed-cause, and healthy-control exercises. Use it after the symptom table points to a Linux performance trace and you want hands-on practice selecting the focused configuration and interpreting the evidence.
+
 ## See also
 
 - [.NET diagnostic tools](tools-overview.md)

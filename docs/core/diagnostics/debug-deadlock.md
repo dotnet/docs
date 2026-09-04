@@ -47,7 +47,7 @@ Take note of the process ID from your command output. Our process ID was `4807`,
 
 The API request to the site will stop responding. Let the request run for about 10-15 seconds.
 
-A dump is the recommended artifact for an existing deadlock because it preserves the current threads, lock owners, and wait cycle. If the deadlock is intermittent or you need to understand how it formed, start a contention and thread-time trace before reproducing it.
+A dump is the recommended artifact for an existing deadlock because it preserves the current threads, lock owners, and wait cycle. If the deadlock is intermittent or you need to understand how it formed, start a contention and thread-time trace before reproducing it. For a Linux example, see [Capture deadlock formation](dotnet-trace-collect-linux-scenarios.md#capture-deadlock-formation).
 
 Create the core dump using the following command:
 

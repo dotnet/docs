@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 09/02/2026
+ms.date: 09/04/2026
 ai-usage: ai-assisted
 ---
 # dotnet run
@@ -100,7 +100,7 @@ The .NET SDK supports these `commandName` values for `dotnet run`. The values ar
 
 `dotnet run` recognizes these properties for both supported profile types:
 
-`dotnet run` expands `%NAME%` environment-variable references in supported string values. It also expands MSBuild property references in values that it uses to launch the process, using the same token replacement as Visual Studio. In .NET 11 and earlier versions, `dotnet run` doesn't expand MSBuild property references. It doesn't expand shell-style `$NAME` references.
+`dotnet run` expands `%NAME%` environment-variable references in supported string values. In .NET 11 and later versions, it also expands MSBuild property references in values that it uses to launch the process, using the same token replacement as Visual Studio. It doesn't expand shell-style `$NAME` references.
 
 | Property | Behavior |
 | --- | --- |
@@ -142,7 +142,7 @@ The following table compares the `dotnet run` contract with the common .NET proj
 | Setting or behavior | `dotnet run` | Visual Studio |
 | --- | --- | --- |
 | Supported profile types | Supports `Project` and `Executable`. | Supports `Project`, `Executable`, and an empty `commandName`. Installed project-system extensions can add other profile types. |
-| Variable expansion | Expands `%NAME%` environment-variable references and MSBuild property references in values that it uses to launch the process. In .NET 11 and earlier versions, doesn't expand MSBuild property references. | Expands environment variables and MSBuild properties in `executablePath`, `commandLineArgs`, `workingDirectory`, `launchUrl`, environment-variable values, and string-valued extension settings. |
+| Variable expansion | Expands `%NAME%` environment-variable references. In .NET 11 and later versions, also expands MSBuild property references in values that it uses to launch the process. | Expands environment variables and MSBuild properties in `executablePath`, `commandLineArgs`, `workingDirectory`, `launchUrl`, environment-variable values, and string-valued extension settings. |
 | `commandLineArgs` for `Project` | Uses the profile value only when the project doesn't provide run arguments and you don't pass application arguments on the command line. | Appends the profile value to the run arguments from the project. |
 | `workingDirectory` for `Project` | Ignores the property. | Supports the property. A relative path is relative to the project directory. |
 | `workingDirectory` for `Executable` | A relative path is relative to the directory that contains the launch settings file. If omitted, the path defaults to the project or file-based app directory. | A relative path is relative to the project directory. If omitted, the path defaults to the output directory when that directory exists, or to the project directory otherwise. |
@@ -152,7 +152,7 @@ The following table compares the `dotnet run` contract with the common .NET proj
 | `dotnetRunMessages` | Controls the `Building...` message. | Doesn't use the property to control Visual Studio output. |
 | Debugger properties | Ignores debugger-specific properties. | Uses properties such as `nativeDebugging`, `sqlDebugging`, `jsWebView2Debugging`, `remoteDebugEnabled`, and `hotReloadEnabled` when the project and debugger support the feature. |
 
-In .NET 11 and earlier versions, no single `workingDirectory` value identifies the project directory for both consumers. Visual Studio expands `"$(ProjectDir)"`, while `dotnet run` treats it as literal text and resolves relative paths from the directory that contains the launch settings file. Therefore, use `".."` for `dotnet run` with a conventional `Properties/launchSettings.json` or `My Project/launchSettings.json` file. Visual Studio resolves the same value to the parent of the project directory. In later versions, both consumers expand `"$(ProjectDir)"`.
+In .NET 11 and later versions, both consumers expand `"$(ProjectDir)"`. In earlier versions, no single `workingDirectory` value identifies the project directory for both consumers. Visual Studio expands `"$(ProjectDir)"`, while `dotnet run` treats it as literal text and resolves relative paths from the directory that contains the launch settings file. Therefore, use `".."` for `dotnet run` with a conventional `Properties/launchSettings.json` or `My Project/launchSettings.json` file. Visual Studio resolves the same value to the parent of the project directory.
 
 Windows Forms and WPF apps don't add another `dotnet run` profile type. Use a `Project` profile with common settings such as `commandLineArgs` and `environmentVariables`. In Visual Studio, these desktop project types can also use applicable debugger properties, such as `nativeDebugging` for mixed managed and native debugging or `jsWebView2Debugging` for WebView2. Browser and URL properties only have an effect when a launch provider or the application consumes them.
 

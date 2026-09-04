@@ -163,7 +163,7 @@ Tracing configuration parses values with <xref:System.Boolean.TryParse*>. It acc
 
 The configuration loader silently ignores a leaf value that isn't a valid Boolean. It also ignores unknown or malformed sections that don't match the supported schema. Check key names carefully because these cases don't produce an exception.
 
-A source expression can contain at most one `*` wildcard. A rule with more than one wildcard throws an <xref:System.ArgumentException> when the rule is materialised, either during app startup or after configuration reload. For programmatic rules, <xref:Microsoft.Extensions.Diagnostics.Tracing.ActivitySourceScopes.None> also causes an <xref:System.ArgumentOutOfRangeException>.
+A source expression can contain at most one `*` wildcard. A rule with more than one wildcard throws an <xref:System.ArgumentException> when the rule is materialized, either during app startup or after configuration reload. For programmatic rules, <xref:Microsoft.Extensions.Diagnostics.Tracing.ActivitySourceScopes.None> also causes an <xref:System.ArgumentOutOfRangeException>.
 
 ## Run the sample
 

@@ -191,7 +191,7 @@ Let it run for about 20-30 seconds, then press <kbd>Ctrl+C</kbd> or <kbd>Enter</
 
 Open the `.nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob/main/documentation/Downloading.md) and use the **CPU Stacks** view to identify the methods consuming the most CPU time.
 
-For information about resolving native runtime symbols in the trace, see [Get symbols for native runtime frames](dotnet-trace.md#get-symbols-for-native-runtime-frames).
+PerfView and TraceEvent 3.2.1 or later can resolve .NET native and R2R symbols at analysis time. In PerfView, select unresolved module frames and choose **Lookup Symbols**. For other native libraries, configure a local symbol path. For more information, see [Get symbols for native runtime frames](dotnet-trace.md#get-symbols-for-native-runtime-frames).
 
 #### Use OneCollect `record-trace`
 

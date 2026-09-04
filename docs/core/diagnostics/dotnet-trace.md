@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 06/10/2026
+ms.date: 09/04/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
 ---
@@ -705,11 +705,17 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 ### Get symbols for native runtime frames
 
-`collect-linux` captures native frames in callstacks. To resolve native method names for runtime libraries (such as `libcoreclr.so`), place the corresponding debug symbol files on disk beside the libraries. Without these symbols, native frames appear as unresolved addresses in the trace.
+`collect-linux` captures native and ReadyToRun (R2R) frames in call stacks. [PerfView and TraceEvent 3.2.1 or later](https://github.com/microsoft/perfview/releases/tag/v3.2.1) can download and resolve symbols when you analyze the trace:
 
-`collect-linux` dynamically enables perf map generation for JIT-compiled code when the trace begins, so you don't need to restart any .NET processes.
+- .NET native and R2R symbols are available from the Microsoft Symbol Server.
+- Many Azure Linux native symbols are also available from the Microsoft Symbol Server.
+- For native libraries from other Linux distributions, configure PerfView or TraceEvent with a local symbol path that contains the matching distribution symbol files.
 
-To download native runtime symbols, use [dotnet-symbol](./dotnet-symbol.md):
+In PerfView, open a stack view, select the unresolved module frames, and choose **Lookup Symbols**. If prompted, enable the Microsoft Symbol Server. TraceEvent applications can perform the same analysis-time lookup through `SymbolReader`. No symbol setup is required before collection for symbols available from the configured server or local symbol paths.
+
+`collect-linux` dynamically enables perf map generation for JIT-compiled code, so you don't need to restart .NET processes.
+
+For an offline workflow, use [dotnet-symbol](./dotnet-symbol.md) before collection to place .NET native symbols beside the corresponding runtime libraries:
 
 1. Install `dotnet-symbol`:
 
@@ -726,6 +732,8 @@ To download native runtime symbols, use [dotnet-symbol](./dotnet-symbol.md):
 1. Place the downloaded `.so.dbg` files beside the runtime libraries they correspond to (for example, `libcoreclr.so.dbg` next to `libcoreclr.so`). By default, `dotnet-symbol` writes symbol files next to each input file. If your runtime libraries live under a protected path such as `/usr/share/dotnet/...`, run `dotnet-symbol` with elevated permissions (for example, by using `sudo`), or use the `-o`/`--output` option to write to a writable directory, then copy the `.so.dbg` files beside the runtime libraries.
 
 After you place the symbols, `collect-linux` resolves native method names when it collects the trace.
+
+### Collect the trace
 
 This example captures CPU samples for all processes on the machine. Any processes running .NET 10+ will also include some additional lightweight events describing GC, JIT, and Assembly loading behavior.
 

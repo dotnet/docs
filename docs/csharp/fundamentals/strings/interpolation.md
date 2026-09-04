@@ -77,7 +77,7 @@ For better readability, break long interpolation expressions across multiple lin
 
 ## Build constant strings
 
-You can build constant interpolated strings when every interpolated expression is a constant value.That makes it usable for attribute arguments, `switch` patterns, and other contexts that require compile-time constants:
+You can build constant interpolated strings when every interpolated expression is a constant `string` value. That makes it usable for attribute arguments, `switch` patterns, and other contexts that require compile-time constants:
 
 :::code language="csharp" source="snippets/interpolation/Program.cs" id="ConstantInterpolated":::
 

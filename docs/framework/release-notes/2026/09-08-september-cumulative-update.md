@@ -4,7 +4,7 @@ description: Learn about the improvements in the .NET Framework September 2026 c
 ms.date: 09/08/2026
 ai-usage: ai-generated
 ---
-# .NET Framework August 2026 cumulative update
+# .NET Framework September 2026 cumulative update
 
 _Released September 8, 2026_
 

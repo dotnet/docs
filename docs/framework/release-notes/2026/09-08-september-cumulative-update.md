@@ -17,7 +17,7 @@ _Released September 8, 2026_
 
 #### CVE-2026-62886 – Elevation of Privilege vulnerability
 
-This security update addresses an elevation of privilege vulnerability detailed in [CVE-2026-62886.](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886)
+This security update addresses an elevation of privilege vulnerability detailed in [CVE-2026-62886](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62886).
 
 #### CVE-2026-69522 – Remote Code Execution vulnerability
 

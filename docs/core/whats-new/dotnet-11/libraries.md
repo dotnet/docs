@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 08/25/2026
+ms.date: 09/08/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 7.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for release candidate 1 (RC 1).
 
 ## Diagnostics and process execution
 
@@ -70,6 +70,15 @@ using var process = Process.Start(startInfo)!;
 AttachProfiler(process);
 process.SafeHandle.Resume();
 ```
+
+#### Signal processes and inspect termination status
+
+<xref:System.Diagnostics.Process> exposes process signaling and exit-status APIs directly, without requiring you to work through <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle>:
+
+- <xref:System.Diagnostics.Process.Signal(System.Runtime.InteropServices.PosixSignal)?displayProperty=nameWithType> sends a POSIX signal to the process.
+- <xref:System.Diagnostics.Process.WaitForExitStatus?displayProperty=nameWithType>, <xref:System.Diagnostics.Process.TryWaitForExitStatus(System.TimeSpan,System.Diagnostics.ProcessExitStatus@)?displayProperty=nameWithType>, and <xref:System.Diagnostics.Process.WaitForExitStatusAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> return a <xref:System.Diagnostics.ProcessExitStatus>, which distinguishes a normal exit from a signal-based termination.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="ProcessSignal":::
 
 ### Console FORCE_COLOR support
 
@@ -214,6 +223,21 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonSerializeAsyncEnumerablePipe":::
 
+#### Numeric type and binary-schema support
+
+`System.Text.Json` includes built-in converters for <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>. These converters work with both the reflection-based serializer and the source generator, including named floating-point literals when enabled through <xref:System.Text.Json.Serialization.JsonNumberHandling>.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonNumericTypes":::
+
+<xref:System.Text.Json.Schema.JsonSchemaExporter> also identifies the base64 representation used for `byte[]`, <xref:System.Memory`1>, and <xref:System.ReadOnlyMemory`1>. For `byte[]`, the exported schema now includes a `contentEncoding` keyword:
+
+```diff
+- { "type": ["string", "null"] }
++ { "type": ["string", "null"], "contentEncoding": "base64" }
+```
+
+The `Memory<byte>` and `ReadOnlyMemory<byte>` schemas remain non-nullable (`"type": "string"`) and also include `contentEncoding`.
+
 #### C# union type serialization
 
 `System.Text.Json` can now serialize and deserialize C# union types. The serializer recognizes a union through the new `JsonTypeInfoKind.Union` contract kind, reads and writes the active case, and supports both the reflection-based serializer and the source generator. When you serialize a union, `System.Text.Json` writes the value of whichever case is active, so a union of `int` and `string` round-trips cleanly:
@@ -234,9 +258,24 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 
 The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. Union types are a C# language preview feature. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
 
+For a union with object-shaped cases, the built-in `JsonUnionTypeStructuralClassifier` selects the active case from its distinguishing property names, so you don't need to author a custom classifier:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionStructuralClassifier":::
+
 #### Closed-hierarchy polymorphism inference
 
 <xref:System.Text.Json.JsonSerializerOptions> adds <xref:System.Text.Json.JsonSerializerOptions.InferClosedTypePolymorphism?displayProperty=nameWithType> so the serializer can infer polymorphic metadata for C# closed hierarchies without requiring explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> annotations on each base type. Explicit registrations still take precedence.
+
+You can also opt a single closed hierarchy in to this behavior with <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType>, without changing the application-wide `JsonSerializerOptions` setting:
+
+```csharp
+[JsonPolymorphic(InferClosedTypePolymorphism = true)]
+public abstract record Shape;
+
+public sealed record Circle(double Radius) : Shape;
+
+public sealed record Square(double Side) : Shape;
+```
 
 ### Regular expression improvements
 
@@ -292,6 +331,8 @@ For more information, see [DeflateStream and GZipStream write headers and footer
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="ZLibEncoderSpan":::
 
+The streamless `DeflateEncoder`, `DeflateDecoder`, `ZLibEncoder`, `ZLibDecoder`, `GZipEncoder`, and `GZipDecoder` types also gain a `Reset()` method. Resetting returns an instance to its initial state so you can process another independent payload without allocating a replacement encoder or decoder.
+
 ### Zstandard compression
 
 The Zstandard compression APIs, for example, <xref:System.IO.Compression.ZstandardStream> and <xref:System.IO.Compression.ZstandardEncoder>, are now part of the <xref:System.IO.Compression> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. The API surface is otherwise unchanged.
@@ -308,6 +349,7 @@ New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xre
 
 - [LINQ join improvements](#linq-join-improvements)
 - [IEEE 754 decimal floating-point types](#ieee-754-decimal-floating-point-types)
+- [Correctly rounded decimal and BigInteger conversions](#correctly-rounded-decimal-and-biginteger-conversions)
 - [Partial numeric parsing](#partial-numeric-parsing)
 - [Generic Complex\<T>](#generic-complext)
 - [BFloat16 support in BitConverter](#bfloat16-support-in-bitconverter)
@@ -335,6 +377,12 @@ Because the three outer-join operations return tuples directly, you can work wit
 ### IEEE 754 decimal floating-point types
 
 <xref:System.Numerics> adds <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
+
+### Correctly rounded decimal and BigInteger conversions
+
+Conversions between <xref:System.Decimal> and binary floating-point types, and conversions from <xref:System.Numerics.BigInteger> to binary floating-point types, now round the exact source value once to the nearest representable destination value. The previous conversions could lose significant digits or round through an intermediate value, so binaries rebuilt with a .NET 11 SDK can produce different results than they did on earlier versions. There's no compatibility switch to restore the previous conversion algorithms.
+
+For example, converting the `double` literal `1.23` to `decimal` now preserves the exact binary floating-point value rather than producing `1.23`. If a value is meant to be decimal, use a decimal literal such as `1.23m` instead of converting a `double` literal. For complete guidance, including previous and new behavior for each conversion direction, see [Decimal and BigInteger floating-point conversions are correctly rounded](../../compatibility/core-libraries/11/decimal-biginteger-floating-point-conversions.md).
 
 ### Partial numeric parsing
 
@@ -431,9 +479,18 @@ On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, whic
 
 ### Collections improvements
 
+- [BitArray span constructors](#bitarray-span-constructors)
 - [BitArray.PopCount](#bitarraypopcount)
 - [IReadOnlySet support in JSON serialization](#ireadonlyset-support-in-json-serialization)
 - [EqualityComparer\<T>.Create](#equalitycomparertcreate)
+
+#### BitArray span constructors
+
+<xref:System.Collections.BitArray> now has constructors that accept <xref:System.ReadOnlySpan`1>: `ReadOnlySpan<bool>`, `ReadOnlySpan<byte>`, and `ReadOnlySpan<int>`. You can construct a bit array directly from a slice or stack-allocated data without first allocating an array:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="BitArraySpanConstructor":::
+
+The span-based constructors avoid the intermediate array allocation that `new BitArray(span.ToArray())` requires.
 
 #### BitArray.PopCount
 
@@ -627,7 +684,24 @@ var context = new ValidationContext(model, serviceProvider, items: null);
 await Validator.ValidateObjectAsync(model, context, validateAllProperties: true);
 ```
 
-`Microsoft.Extensions.Options` gains matching support: options can be validated asynchronously, including at startup through the new `IAsyncStartupValidator`. This lets an app fail fast when an option that requires a network check is misconfigured.
+`Microsoft.Extensions.Options` gains matching support: options can be validated asynchronously, including at startup through the new `IAsyncStartupValidator`. This lets an app fail fast when an option that requires a network check is misconfigured. `IStartupValidator` is now obsolete; implement `IAsyncStartupValidator` instead.
+
+Source-generated options validators provide a synchronous `IValidateOptions<TOptions>.Validate` implementation in addition to asynchronous validation, so existing synchronous validation call sites keep working alongside validators that need to await I/O:
+
+```csharp
+public sealed class BackendOptionsValidator : IAsyncValidateOptions<BackendOptions>
+{
+    public async Task<ValidateOptionsResult> ValidateAsync(
+        string? name, BackendOptions options, CancellationToken cancellationToken = default) =>
+        await IsReachableAsync(options.HostName, cancellationToken)
+            ? ValidateOptionsResult.Success
+            : ValidateOptionsResult.Fail($"'{options.HostName}' isn't reachable.");
+
+    // Source-generated validators also implement this synchronous fallback.
+    public ValidateOptionsResult Validate(string? name, BackendOptions options) =>
+        ValidateOptionsResult.Fail("Backend validation must run asynchronously.");
+}
+```
 
 ### Activity tracing configuration
 
@@ -663,6 +737,8 @@ It now handles relative paths, missing directories, and file systems that don't 
 
 - [X25519 Diffie-Hellman key exchange](#x25519-diffie-hellman-key-exchange)
 - [CryptographicOperations.FixedTimeEquals overload](#cryptographicoperationsfixedtimeequals-overload)
+- [AES Key Wrap](#aes-key-wrap)
+- [Faster authenticated encryption on Apple platforms](#faster-authenticated-encryption-on-apple-platforms)
 
 ### X25519 Diffie-Hellman key exchange
 
@@ -680,15 +756,32 @@ For secret-comparison scenarios where the expected value is a single known byte,
 bool equal = CryptographicOperations.FixedTimeEquals(receivedSpan, 0x42);
 ```
 
+### AES Key Wrap
+
+<xref:System.Security.Cryptography.Aes?displayProperty=fullName> now supports the AES Key Wrap algorithms used by JOSE and other libraries to encrypt cryptographic keys:
+
+- <xref:System.Security.Cryptography.Aes.EncryptKeyWrapPadded*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.DecryptKeyWrapPadded*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.TryDecryptKeyWrapPadded(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType>, and <xref:System.Security.Cryptography.Aes.GetKeyWrapPaddedLength(System.Int32)?displayProperty=nameWithType> implement the padded AES-KWP algorithm (RFC 5649).
+- <xref:System.Security.Cryptography.Aes.EncryptKeyWrap*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.DecryptKeyWrap*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.TryDecryptKeyWrap(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType>, and <xref:System.Security.Cryptography.Aes.GetKeyWrapLength(System.Int32)?displayProperty=nameWithType> implement the unpadded AES Key Wrap algorithm (RFC 3394), which requires plaintext that's a multiple of 8 bytes.
+
+Both sets of APIs provide array-returning and span-based overloads:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="AesKeyWrap":::
+
+### Faster authenticated encryption on Apple platforms
+
+<xref:System.Security.Cryptography.AesGcm> and <xref:System.Security.Cryptography.ChaCha20Poly1305> avoid passing empty associated data to CryptoKit on Apple platforms, letting the native implementation use its empty-AAD fast path. On Apple platforms version 26 and later, encryption also skips a copy that was previously required for older Foundation implementations.
+
 ## Networking and transport security
 
 - [TLS handshake hardening](#tls-handshake-hardening)
+- [Experimental caller-driven TLS sessions](#experimental-caller-driven-tls-sessions)
 - [HTTP request compression](#http-request-compression)
 - [Configurable HTTP connection eviction](#configurable-http-connection-eviction)
 - [DNS record resolution APIs](#dns-record-resolution-apis)
 - [HTTP/2 automatic downgrade for Windows authentication](#http2-automatic-downgrade-for-windows-authentication)
 - [QUIC stream priority](#quic-stream-priority)
 - [Video MIME type constants](#video-mime-type-constants)
+- [HTTP metrics use observable instruments](#http-metrics-use-observable-instruments)
 
 ### TLS handshake hardening
 
@@ -696,6 +789,17 @@ Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Trans
 
 - <xref:System.Net.Security.SslStream> server-side handshake bounds-checking fixes in `TlsFrameHelper` close several edge cases that could surface as `IOException` on malformed ClientHello records.
 - On Linux, certificate-validation failures now surface as standard TLS alerts to the peer, matching Windows behavior. Connecting clients receive an actionable handshake error instead of a connection drop.
+
+Negotiate authentication servers can also validate TLS channel binding tokens on Unix. The managed GSSAPI path passes the channel binding data to `gss_accept_sec_context`, which rejects a mismatch in the same way as the existing Unix client path. This enables Extended Protection scenarios, such as ASP.NET Core's Negotiate authentication, that bind authentication to the underlying TLS connection.
+
+### Experimental caller-driven TLS sessions
+
+> [!WARNING]
+> The `TlsContext`, `TlsSession`, `TlsBufferSession`, `TlsSocketSession`, and `TlsOperationStatus` types are experimental in .NET 11 and report diagnostic `SYSLIB5007`.
+
+<xref:System.Net.Security?displayProperty=fullName> adds a caller-driven, non-blocking TLS state machine for advanced transports where the application controls buffers and I/O scheduling. `TlsBufferSession` operates over caller-provided spans, while `TlsSocketSession` works with a `SafeSocketHandle`.
+
+Operations such as `Handshake`, `Read`, `Write`, `Shutdown`, and `RequestClientCertificate` return `TlsOperationStatus`, which reports whether an operation completed, needs more input, needs a larger destination buffer, or requires certificate validation or a new `TlsContext`.
 
 ### HTTP request compression
 
@@ -708,6 +812,8 @@ Two <xref:System.Net.Security?displayProperty=fullName> items improve TLS (Trans
 ### DNS record resolution APIs
 
 <xref:System.Net.Dns?displayProperty=fullName> adds typed record-resolution APIs, including <xref:System.Net.Dns.ResolveSrv(System.String)?displayProperty=nameWithType>, <xref:System.Net.Dns.ResolveMx(System.String)?displayProperty=nameWithType>, <xref:System.Net.Dns.ResolveTxt(System.String)?displayProperty=nameWithType>, <xref:System.Net.Dns.ResolveCName(System.String)?displayProperty=nameWithType>, <xref:System.Net.Dns.ResolvePtr(System.String)?displayProperty=nameWithType>, and <xref:System.Net.Dns.ResolveNs(System.String)?displayProperty=nameWithType>, together with `Async` variants. The results include records, response code, and negative-cache time-to-live (TTL) metadata through <xref:System.Net.DnsResult`1>.
+
+The new <xref:System.Net.DnsResolver> class provides the same record types through an instance API that accepts a <xref:System.Net.DnsResolverOptions> object, which lets you supply a custom list of DNS servers instead of using the platform resolver configuration. `DnsResolver` and the static `Dns.Resolve*` methods now work on Linux in addition to Windows and macOS.
 
 ### HTTP/2 automatic downgrade for Windows authentication
 
@@ -733,6 +839,10 @@ A new <xref:System.Net.Mime.MediaTypeNames.Video?displayProperty=nameWithType> c
 - `MediaTypeNames.Video.WebM` — `"video/webm"`
 
 These join the existing `MediaTypeNames.Application`, `MediaTypeNames.Image`, `MediaTypeNames.Text`, and `MediaTypeNames.Multipart` classes.
+
+### HTTP metrics use observable instruments
+
+The high-cardinality HTTP `open_connections` and `active_requests` metrics are now observable instruments instead of regular counters. If you use <xref:System.Diagnostics.Metrics.MeterListener> directly to read these metrics, call <xref:System.Diagnostics.Metrics.MeterListener.RecordObservableInstruments?displayProperty=nameWithType> to receive measurements from them.
 
 ## Unsafe API accessibility
 

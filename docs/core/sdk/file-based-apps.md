@@ -1,7 +1,7 @@
 ---
 title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
-ms.date: 04/22/2026
+ms.date: 08/31/2026
 ai-usage: ai-assisted
 ---
 # File-based apps
@@ -276,6 +276,8 @@ For more information, see [Safe storage of app secrets in development](/aspnet/c
 ## Launch profiles
 
 File-based apps support launch profiles for configuring how the application runs during development. Instead of placing launch profiles in `Properties/launchSettings.json`, file-based apps can use a flat launch settings file named `[ApplicationName].run.json` in the same directory as the source file.
+
+For the general profile format and properties that `dotnet run` supports, see [Launch profiles](../tools/dotnet-run.md#launch-profiles).
 
 ### Flat launch settings file
 

@@ -15,12 +15,24 @@
     "DefaultParentNode": 410746,
     "WorkItemTags": [
         {
-            "Label": ":checkered_flag: Release: .NET 10",
+            "Label": ":checkered_flag: Release: .NET 11",
             "Tag": "new-feature"
         },
         {
             "Label": "okr-curation",
             "Tag": "content-curation"
+        },
+        {
+            "Label": ":sparkler: Highlight :sparkler:",
+            "Tag": "Highlight-$FullMonthText$"
+        },
+        {
+            "Label": ":mag_right: AISDLC :mag:",
+            "Tag": "SP-AISDLC"
+        },
+        {
+            "Label": ":mag_right: AIPlatform :mag:",
+            "Tag": "SP-AIPlatform"
         }
     ]
 }

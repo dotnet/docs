@@ -23,7 +23,9 @@ The .NET 11 runtime includes:
 - Runtime Async tiered compilation, task and value-task factory intrinsics, and implicit tailcall improvements that reduce warm-up allocations and speed up common `await` paths.
 - JIT improvements for bounds check elimination, redundant checked context removal, devirtualization, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. There are also new Arm SVE2 intrinsics, improved hardware-intrinsic cost modeling, and a faster `Math.BigMul` on x64 that emits a single `MUL` instruction.
 - CoreCLR on WebAssembly now runs the libraries test suite end to end, and the runtime adds AVX-VNNI-512 hardware intrinsics for vectorized multiply-add workloads.
-- In-process crash report logging on mobile platforms that captures the managed stack trace and runtime state before the process exits.
+- CoreCLR support for `linux-bionic-arm64` and `linux-bionic-x64`, including Termux scenarios on Android.
+- In-process crash report logging on mobile, Linux, and macOS platforms that captures the managed stack trace and runtime state before the process exits.
+- `System.Half` arithmetic and conversions that use FP16 hardware instructions when the processor supports them.
 - NativeAOT faster interface dispatch using a shared dispatch helper, reducing binary size at call sites and improving throughput for interface-heavy workloads.
 - SIMD lane construction and composition APIs (`CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family) across `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
 
@@ -33,19 +35,19 @@ For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
 The .NET 11 libraries include new APIs for:
 
-- <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle> lifecycle methods, tighter handle control, and new <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> for suspended starts and <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> for safe process lookup.
-- Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
+- <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, process signaling and exit-status APIs, <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle> lifecycle methods, tighter handle control, and new <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> for suspended starts and <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> for safe process lookup.
+- Compression, including improved Base64 APIs, new methods for ZIP archive entries, reusable streamless encoders and decoders, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, and CRC32 validation when reading ZIP entries.
 - New numeric APIs, including IEEE 754 decimal floating-point types (<xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>), <xref:System.Numerics.INumberBase`1.TryParsePartial*?displayProperty=nameWithType> for delimiter-aware parsing, and generic <xref:System.Numerics.Complex`1>.
-- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level values (NDJSON) output, and serialization of C# union types.
+- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, converters for new numeric types, schema metadata for base64 binary payloads, `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level values (NDJSON) output, and serialization of C# union types.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
 - Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
 - Tar archive format selection and GNU sparse format 1.0 support.
 - `Console` support for the `FORCE_COLOR` environment variable.
-- TLS handshake hardening and certificate-validation alerts on Linux.
-- Networking additions, including HTTP request-body compression wrappers, configurable HTTP connection eviction, and typed DNS record resolution APIs.
+- TLS handshake hardening, certificate-validation alerts on Linux, caller-driven TLS session APIs, and channel binding for Unix Negotiate authentication servers.
+- Networking additions, including HTTP request-body compression wrappers, configurable HTTP connection eviction, and typed DNS record resolution APIs with Linux support.
 - HTTP/2 automatic downgrade for Windows authentication.
 - LINQ join improvements, including `FullJoin` and tuple-returning `Join` and `GroupJoin` overloads, across <xref:System.Linq.Enumerable>, <xref:System.Linq.Queryable>, and <xref:System.Linq.AsyncEnumerable>.
-- A new <xref:System.Security.Cryptography.X25519DiffieHellman> class for X25519 key exchange.
+- A new <xref:System.Security.Cryptography.X25519DiffieHellman> class for X25519 key exchange, AES Key Wrap support, and faster authenticated encryption on Apple platforms.
 - Generic overloads on <xref:System.Random> — `NextInteger<T>` and `NextBinaryFloat<T>` — that work with any numeric generic type.
 - <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method that creates a comparer from a key selector.
 - <xref:System.Net.Quic.QuicStream.Priority?displayProperty=nameWithType> for HTTP/3 stream prioritization.
@@ -77,6 +79,7 @@ The .NET 11 SDK includes:
 - Container publishing now prefers platform-native local runtimes (`wslc` on Windows and `container` on macOS) before Docker and Podman.
 - TypeScript compilation outputs from Razor Class Libraries now integrate correctly with the Static Web Assets pipeline.
 - The `dotnet` CLI no longer suppresses the MSBuild build server when `DOTNET_CLI_USE_MSBUILD_SERVER` is unset, and the OTLP telemetry exporter activates on any standard `OTEL_EXPORTER_OTLP_*` environment variable.
+- `dotnet test` mobile app testing support, updated result layouts, affected-test workflows, reproducible container publishing, file-based app formatting and Native AOT reuse, MSBuild tar tasks, and NuGet pack performance improvements.
 
 For more information, see [What's new in the SDK for .NET 11](sdk.md).
 

@@ -57,6 +57,12 @@ The update to the minimum baseline was made to reduce the maintenance complexity
 
 For more information, see [Minimum hardware requirements updated](../../compatibility/jit/11/minimum-hardware-requirements.md).
 
+## CoreCLR support for linux-bionic
+
+CoreCLR is now enabled for `linux-bionic-arm64` and `linux-bionic-x64`, including Termux scenarios on Android. The linux-bionic AppHost pack includes `singlefilehost`, so self-contained single-file apps use the expected bundled host.
+
+The build selects CoreCLR alongside Mono, the libraries, host, and packs on the supported linux-bionic architectures. NativeAOT remains the fallback for linux-bionic architectures where CoreCLR isn't enabled.
+
 ## Runtime Async
 
 .NET 11 introduces runtime-native async (Runtime Async V2), a significant step toward replacing compiler-generated async state machines with runtime-managed suspension and resumption. Instead of the compiler emitting state-machine classes, the runtime itself tracks async execution, producing cleaner stack traces, better debuggability, and lower overhead.
@@ -239,7 +245,7 @@ These optimizations are most visible after inlining, where guards from different
 
 .NET 11 includes several new hardware intrinsics and code generation improvements:
 
-- **F16C acceleration for `Half` ↔ `float` conversions on x64:** When the CPU supports F16C (most AVX2-capable hardware), conversions between <xref:System.Half> and `float`/`double` now use the dedicated `vcvtph2ps`/`vcvtps2ph` instructions instead of helper calls.
+- **FP16 acceleration for `Half` operations:** When the processor supports FP16 instructions, the JIT uses hardware acceleration for <xref:System.Half> arithmetic and conversions. On x64, arithmetic uses AVX10.1, while conversions between `Half` and `float` can use F16C. On Arm64, arithmetic uses the optional FP16 instruction set, while conversions between `Half` and `float` or `double` use baseline Arm64 instructions.
 - **Better cost modeling for x86/x64 SIMD:** The JIT's floating-point execution and size costs previously reflected x87-era assumptions. Updated costs that reflect modern SSE/AVX hardware let the JIT make better decisions about hoisting and common subexpression elimination (CSE) around SIMD code.
 - **Faster `DotProduct` on AVX:** Lowering for `Vector128.Dot`-style operations now emits a `mul + permute + add` sequence instead of `vdpps`/`vdppd` when AVX is available, which is consistently faster.
 - **Faster `IndexOfAnyAsciiSearcher` on Arm64:** Arm64 versions of `Vector*.Count`, `IndexOf`, and `LastIndexOf` no longer route through `ExtractMostSignificantBits`, yielding a 5–50% improvement in workloads that use these APIs in their core loop.
@@ -282,7 +288,7 @@ The .NET runtime can now initialize on machines with more than 1024 logical proc
 
 A new in-process crash reporting mechanism captures diagnostic information from within the crashing process before it terminates. Previously, crash diagnostics were collected by an out-of-process monitor. While the out-of-process approach is safe, it can miss information that's only available inside the dying process. The new in-process path logs the managed stack trace, module list, and key runtime state to a well-known path before the process exits.
 
-This capability is specific to mobile platforms.
+This capability is available on mobile platforms, Linux, and macOS. When `DOTNET_DbgEnableMiniDump` isn't enabled, set `DOTNET_EnableCrashReport=1` or `DOTNET_EnableCrashReportOnly=1` to select the in-process reporter. Existing `createdump` behavior remains in place when minidumps are enabled.
 
 ## NativeAOT: faster interface dispatch
 

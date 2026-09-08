@@ -250,7 +250,7 @@ let json = System.Text.Json.JsonSerializer.Serialize(Circle 1.5)
 }
 ```
 
-The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. `JsonUnionTypeStructuralClassifier` classifies C# union types structurally, which lets object-shaped union cases select a case from distinguishing property names. Union types are a C# language preview feature. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
+The new `JsonUnionAttribute` and `JsonUnionCaseInfo` APIs, along with type-classifier APIs (`JsonTypeClassifier` and `JsonSerializerOptions.TypeClassifiers`), let you customize how cases are discovered and named. `JsonUnionTypeStructuralClassifier` classifies C# union types structurally, which lets object-shaped union cases select a case from distinguishing property names. Union types are part of C# 15, which is the default language version for projects that target .NET 11. For more information, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md#union-types).
 
 #### Closed-hierarchy polymorphism inference
 

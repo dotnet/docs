@@ -23,8 +23,7 @@ The .NET 11 runtime includes:
 - Runtime Async tiered compilation, task and value-task factory intrinsics, and implicit tailcall improvements that reduce warm-up allocations and speed up common `await` paths.
 - JIT improvements for bounds check elimination, redundant checked context removal, devirtualization, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. There are also new Arm SVE2 intrinsics, improved hardware-intrinsic cost modeling, and a faster `Math.BigMul` on x64 that emits a single `MUL` instruction.
 - CoreCLR on WebAssembly now runs the libraries test suite end to end, and the runtime adds AVX-VNNI-512 hardware intrinsics for vectorized multiply-add workloads.
-- CoreCLR support for `linux-bionic-arm64` and `linux-bionic-x64`, including Termux scenarios on Android.
-- In-process crash report logging on mobile, Linux, and macOS platforms that captures the managed stack trace and runtime state before the process exits.
+- In-process crash report logging on mobile, Linux, macOS, and other Unix platforms that captures the managed stack trace and runtime state before the process exits.
 - `System.Half` arithmetic and conversions that use FP16 hardware instructions when the processor supports them.
 - NativeAOT faster interface dispatch using a shared dispatch helper, reducing binary size at call sites and improving throughput for interface-heavy workloads.
 - SIMD lane construction and composition APIs (`CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family) across `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
@@ -89,16 +88,22 @@ For information about what's new in ASP.NET Core, see [What's new in ASP.NET Cor
 
 ## C# 15
 
-C# 15 includes these features:
+C# 15 is the default language version for projects that target .NET 11. C# updates include these features:
 
 - [Collection expression arguments](../../../csharp/whats-new/csharp-15.md#collection-expression-arguments)
 - [Union types](../../../csharp/whats-new/csharp-15.md#union-types)
 - [Closed hierarchies](../../../csharp/whats-new/csharp-15.md#closed-hierarchies)
 - [Extension indexers](../../../csharp/whats-new/csharp-15.md#extension-indexers)
 - [Labeled `break` and `continue`](../../../csharp/whats-new/csharp-15.md#labeled-break-and-continue)
-- [Memory safety](../../../csharp/whats-new/csharp-15.md#memory-safety)
+- [Memory safety](../../../csharp/whats-new/csharp-15.md#memory-safety) (preview)
 
 For information about new C# features, see [What's new in C# 15](../../../csharp/whats-new/csharp-15.md).
+
+## .NET MAUI
+
+.NET MAUI updates in .NET 11 include a broader testing experience with `dotnet test`, faster and smaller Android apps, XAML Hot Reload reliability improvements, new control capabilities, asset-processing options, and Apple NativeAOT improvements.
+
+For details, see [What's new in .NET MAUI for .NET 11](/dotnet/maui/whats-new/dotnet-11).
 
 ## EF Core
 
@@ -114,7 +119,7 @@ See [What's new in Windows Forms for .NET 11](/dotnet/desktop/winforms/whats-new
 
 ## WPF
 
-See [What's new in WPF in .NET 11](/dotnet/desktop/wpf/whats-new/net110).
+The WPF updates in .NET 11 don't add new user-facing APIs for RC 1, but include native-code hardening and reliability fixes across text, graphics, fonts, printing, XPS, and resource loading. For details, see [What's new in WPF in .NET 11](/dotnet/desktop/wpf/whats-new/net110).
 
 ## See also
 

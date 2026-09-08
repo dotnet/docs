@@ -66,7 +66,7 @@ The .NET 11 SDK includes:
 - Smaller SDK installers on Linux and macOS through assembly deduplication, with additional savings by skipping crossgen for `DotnetTools`-only assemblies.
 - Improved [CA1873](../../../fundamentals/code-analysis/quality-rules/ca1873.md) code analyzer with reduced noise and clearer diagnostic messages.
 - Support for creating and editing solution filters (`.slnf`) from the `dotnet sln` CLI.
-- File-based app support for `#:include` to split apps across multiple files and to include compiled DLL references directly, plus Native AOT build-output reuse and `dotnet format` support for file-based programs.
+- File-based app support for `#:include` to split apps across multiple files and to include compiled DLL references directly, plus Native AOT build-output reuse and `dotnet format` support for file-based apps.
 - A new `dotnet run -e` option to pass environment variables from the command line.
 - `dotnet watch` improvements, including Aspire app-host integration, automatic crash recovery, and device selection for MAUI and mobile projects.
 - OpenTelemetry replaces Application Insights for CLI telemetry.

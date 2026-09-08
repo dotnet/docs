@@ -91,7 +91,7 @@ The pack operation still proceeds with a warning to avoid breaking existing proj
 
 - [Solution filter CLI support](#solution-filter-cli-support)
 - [File-based apps split across files](#file-based-apps-split-across-files)
-- [File-based programs reuse Native AOT build outputs](#file-based-programs-reuse-native-aot-build-outputs)
+- [File-based apps reuse Native AOT build outputs](#file-based-apps-reuse-native-aot-build-outputs)
 - [Pass environment variables with dotnet run](#pass-environment-variables-with-dotnet-run)
 - [dotnet watch improvements](#dotnet-watch-improvements)
 - [Fish shell completions](#fish-shell-completions)
@@ -123,17 +123,17 @@ File-based apps now support an `#:include` directive, so you can move shared hel
 Console.WriteLine(Helpers.FormatOutput(new Customer()));
 ```
 
-### File-based programs reuse Native AOT build outputs
+### File-based apps reuse Native AOT build outputs
 
-The Native AOT command-line path can reuse existing build outputs when it runs an unchanged file-based program. Supported cached launches include `dotnet run --file app.cs`, `dotnet run app.cs`, and `dotnet app.cs`. If the cached output doesn't match the current command arguments, the CLI falls back to the managed path.
+The Native AOT command-line path can reuse existing build outputs when it runs an unchanged file-based app. Supported cached launches include `dotnet run --file app.cs`, `dotnet run app.cs`, and `dotnet app.cs`. If the cached output doesn't match the current command arguments, the CLI falls back to the managed path.
 
-`dotnet format` also accepts a file-based program:
+`dotnet format` also accepts a file-based app:
 
 ```console
 dotnet format app.cs
 ```
 
-When a repository enables the SDK artifacts layout, file-based program outputs are placed under that repository's artifacts directory instead of the default per-user cache.
+When a repository enables the SDK artifacts layout, file-based app outputs are placed under that repository's artifacts directory instead of the default per-user cache.
 
 ### Pass environment variables with dotnet run
 

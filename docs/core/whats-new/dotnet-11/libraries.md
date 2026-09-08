@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 08/25/2026
+ms.date: 09/08/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for Preview 7.
+This article describes new features in the .NET libraries for .NET 11. It was last updated for RC 1.
 
 ## Diagnostics and process execution
 

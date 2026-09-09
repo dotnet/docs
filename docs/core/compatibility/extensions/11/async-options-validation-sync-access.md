@@ -17,7 +17,7 @@ Starting in .NET 11 RC 1, synchronous access to an options type that uses only a
 
 Previously, in .NET 11 Preview 6 and Preview 7, <xref:Microsoft.Extensions.Options.IAsyncValidateOptions`1> was independent from <xref:Microsoft.Extensions.Options.IValidateOptions`1>. Asynchronous validators ran only through the asynchronous startup-validation path.
 
-When you accessed an async-validated options type through a synchronous creation path, such as <xref:Microsoft.Extensions.Options.IOptions`1.Value>, <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue>, <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.Get*>, <xref:Microsoft.Extensions.Options.IOptionsSnapshot`1.Value>, <xref:Microsoft.Extensions.Options.IOptionsSnapshot`1.Get*>, or <xref:Microsoft.Extensions.Options.IOptionsFactory`1.Create*>, the asynchronous validator didn't run. The synchronous path returned an unvalidated options instance.
+When you accessed an async-validated options type through a synchronous creation path, such as <xref:Microsoft.Extensions.Options.IOptions`1.Value?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue>, <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.Get*>, `IOptionsSnapshot<TOptions>.Value`, <xref:Microsoft.Extensions.Options.IOptionsSnapshot`1.Get*>, or <xref:Microsoft.Extensions.Options.IOptionsFactory`1.Create*>, the asynchronous validator didn't run. The synchronous path returned an unvalidated options instance.
 
 Types that implemented `IAsyncValidateOptions<TOptions>` directly only needed to implement `ValidateAsync`.
 
@@ -75,7 +75,6 @@ You can't control this behavior with an AppContext switch or configuration setti
 - <xref:Microsoft.Extensions.Options.IOptions`1.Value>
 - <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue>
 - <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.Get*>
-- <xref:Microsoft.Extensions.Options.IOptionsSnapshot`1.Value>
 - <xref:Microsoft.Extensions.Options.IOptionsSnapshot`1.Get*>
 - <xref:Microsoft.Extensions.Options.IOptionsFactory`1.Create*>
 - <xref:Microsoft.Extensions.Options.OptionsFactory`1.Create*>

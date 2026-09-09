@@ -75,8 +75,8 @@ process.SafeHandle.Resume();
 
 <xref:System.Diagnostics.Process> exposes process signaling and exit-status APIs directly, without requiring you to work through <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle>:
 
-- `Process.Signal` sends a POSIX signal to the process.
-- `Process.WaitForExitStatus`, `Process.TryWaitForExitStatus`, and `Process.WaitForExitStatusAsync` return a <xref:System.Diagnostics.ProcessExitStatus>, which distinguishes a normal exit from a signal-based termination.
+- <xref:System.Diagnostics.Process.Signal(System.Runtime.InteropServices.PosixSignal)?displayProperty=nameWithType> sends a POSIX signal to the process.
+- <xref:System.Diagnostics.Process.WaitForExitStatus?displayProperty=nameWithType>, <xref:System.Diagnostics.Process.TryWaitForExitStatus(System.TimeSpan,System.Diagnostics.ProcessExitStatus@)?displayProperty=nameWithType>, and <xref:System.Diagnostics.Process.WaitForExitStatusAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> return a <xref:System.Diagnostics.ProcessExitStatus>, which distinguishes a normal exit from a signal-based termination.
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="ProcessSignal":::
 
@@ -266,7 +266,7 @@ For a union with object-shaped cases, the built-in `JsonUnionTypeStructuralClass
 
 <xref:System.Text.Json.JsonSerializerOptions> adds <xref:System.Text.Json.JsonSerializerOptions.InferClosedTypePolymorphism?displayProperty=nameWithType> so the serializer can infer polymorphic metadata for C# closed hierarchies without requiring explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> annotations on each base type. Explicit registrations still take precedence.
 
-You can also opt a single closed hierarchy in to this behavior with `JsonPolymorphicAttribute.InferClosedTypePolymorphism`, without changing the application-wide `JsonSerializerOptions` setting:
+You can also opt a single closed hierarchy in to this behavior with <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType>, without changing the application-wide `JsonSerializerOptions` setting:
 
 ```csharp
 [JsonPolymorphic(InferClosedTypePolymorphism = true)]
@@ -761,7 +761,7 @@ bool equal = CryptographicOperations.FixedTimeEquals(receivedSpan, 0x42);
 <xref:System.Security.Cryptography.Aes?displayProperty=fullName> now supports the AES Key Wrap algorithms used by JOSE and other libraries to encrypt cryptographic keys:
 
 - <xref:System.Security.Cryptography.Aes.EncryptKeyWrapPadded*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.DecryptKeyWrapPadded*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.TryDecryptKeyWrapPadded(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType>, and <xref:System.Security.Cryptography.Aes.GetKeyWrapPaddedLength(System.Int32)?displayProperty=nameWithType> implement the padded AES-KWP algorithm (RFC 5649).
-- `Aes.EncryptKeyWrap`, `Aes.DecryptKeyWrap`, `Aes.TryDecryptKeyWrap`, and `Aes.GetKeyWrapLength` implement the unpadded AES Key Wrap algorithm (RFC 3394), which requires plaintext that's a multiple of 8 bytes.
+- <xref:System.Security.Cryptography.Aes.EncryptKeyWrap*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.DecryptKeyWrap*?displayProperty=nameWithType>, <xref:System.Security.Cryptography.Aes.TryDecryptKeyWrap(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType>, and <xref:System.Security.Cryptography.Aes.GetKeyWrapLength(System.Int32)?displayProperty=nameWithType> implement the unpadded AES Key Wrap algorithm (RFC 3394), which requires plaintext that's a multiple of 8 bytes.
 
 Both sets of APIs provide array-returning and span-based overloads:
 

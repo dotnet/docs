@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 08/12/2026
+ms.date: 09/08/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 11
 
-This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for Preview 7. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
+This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for release candidate 1 (RC 1). You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
 ## SDK footprint
 
@@ -91,12 +91,14 @@ The pack operation still proceeds with a warning to avoid breaking existing proj
 
 - [Solution filter CLI support](#solution-filter-cli-support)
 - [File-based apps split across files](#file-based-apps-split-across-files)
+- [File-based apps reuse Native AOT build outputs](#file-based-apps-reuse-native-aot-build-outputs)
 - [Pass environment variables with dotnet run](#pass-environment-variables-with-dotnet-run)
 - [dotnet watch improvements](#dotnet-watch-improvements)
 - [Fish shell completions](#fish-shell-completions)
 - [dotnet reference falls back to current directory](#dotnet-reference-falls-back-to-current-directory)
 - [dotnet reference support for file-based apps](#dotnet-reference-support-for-file-based-apps)
 - [Launch settings notice moved to stderr](#launch-settings-notice-moved-to-stderr)
+- [dotnet format limits configuration discovery to included files](#dotnet-format-limits-configuration-discovery-to-included-files)
 - [Other CLI improvements](#other-cli-improvements)
 
 ### Solution filter CLI support
@@ -120,6 +122,18 @@ File-based apps now support an `#:include` directive, so you can move shared hel
 
 Console.WriteLine(Helpers.FormatOutput(new Customer()));
 ```
+
+### File-based apps reuse Native AOT build outputs
+
+The Native AOT command-line path can reuse existing build outputs when it runs an unchanged file-based app. Supported cached launches include `dotnet run --file app.cs`, `dotnet run app.cs`, and `dotnet app.cs`. If the cached output doesn't match the current command arguments, the CLI falls back to the managed path.
+
+`dotnet format` also accepts a file-based app:
+
+```console
+dotnet format app.cs
+```
+
+When a repository enables the SDK artifacts layout, file-based app outputs are placed under that repository's artifacts directory instead of the default per-user cache.
 
 ### Pass environment variables with dotnet run
 
@@ -180,6 +194,16 @@ Previously, these commands failed with `Could not find project or directory ''` 
 
 The "Using launch settings from..." informational message now writes to `stderr` instead of `stdout`. Scripts that capture the standard output of `dotnet run` no longer need to strip this line out.
 
+### dotnet format limits configuration discovery to included files
+
+In folder mode, `dotnet format` now finds `.editorconfig` files by walking the ancestor directories of files that will actually be formatted. It no longer scans unrelated subtrees, such as large `node_modules` directories:
+
+```console
+dotnet format whitespace . --folder --include src/App/Program.cs
+```
+
+In one monorepo benchmark, formatting one included file improved from 1.09 seconds to 0.55 seconds. Use `.globalconfig`, rather than an `is_global = true` `.editorconfig` in an unrelated subtree, for configuration that must apply globally.
+
 ### Other CLI improvements
 
 - `dotnet format` now accepts `--framework` for multi-targeted projects.
@@ -187,6 +211,10 @@ The "Using launch settings from..." informational message now writes to `stderr`
 - `dotnet tool exec` and `dnx` no longer prompt for an extra approval when running tools.
 - `dotnet nuget <subcommand> --help` now correctly forwards to the NuGet CLI's help output instead of falling back to generic help.
 - `dotnet publish` no longer removes native DLLs on subsequent runs of single-file publish.
+- `dotnet new install --prerelease` selects the latest available version, including prerelease versions, when a template package version isn't specified explicitly. An explicit package version, such as `Contoso.Templates@2.0.0-preview.3`, continues to select that exact version.
+- Workload operations and `global.json` now detect versions written in the internal NuGet package format and report the corrected user-facing format instead of a package-not-found error.
+- The `Configuration` environment variable now supplies the default value for the shared `--configuration`/`-c` CLI options across commands. An explicit command-line option still takes precedence, and empty or whitespace-only environment values are ignored.
+- File-based property directives no longer permit `:` in the property name. Replace syntax such as `#:property Foo:Bar=value` with a valid MSBuild property name.
 
 ## Web assets and telemetry
 
@@ -235,6 +263,7 @@ A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `d
 ## Test improvements
 
 - [dotnet test improvements](#dotnet-test-improvements)
+- [dotnet test support for mobile app testing](#dotnet-test-support-for-mobile-app-testing)
 - [dotnet test run-level policy options](#dotnet-test-run-level-policy-options)
 - [dotnet test support for traversal projects](#dotnet-test-support-for-traversal-projects)
 - [dotnet test reporter and artifacts improvements](#dotnet-test-reporter-and-artifacts-improvements)
@@ -252,16 +281,63 @@ A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `d
 - **Terminal logger arguments**: `--tl`, `--terminallogger`, and `--tlp` are now forwarded to MSBuild instead of being passed as test application arguments.
 - **Live display of in-flight tests**: The progress area shows tests that are running, using a new `TestInProgressMessages` IPC event. The panel keeps per-assembly trimming for large parallel runs and is enabled only for interactive ANSI terminals.
 - **Two-stage Ctrl+C cancellation**: The first press stops scheduling new test apps and shows a hint; the second press force-kills all child test processes.
-- **`--device` for MAUI**: Select a device per target framework when running tests for .NET MAUI projects.
 - **Protocol 1.1.0 output forwarding**: When the test host supports protocol 1.1.0, stdout/stderr and `IOutputDevice` messages are streamed live through the terminal reporter instead of being shown only on failure.
+
+### dotnet test support for mobile app testing
+
+The Microsoft Testing Platform path for `dotnet test` supports test projects that target Android, iOS, macOS, and Mac Catalyst. For Android and iOS, it can select connected devices, emulators, or simulators. Use `--device` to select a device per target framework, or let `dotnet test` auto-select when only one is available.
+
+The workloads include test project templates for Android (`dotnet new androidtest`), iOS (`dotnet new iostest`), macOS (`dotnet new macostest`), and Mac Catalyst (`dotnet new maccatalysttest`). They use MSTest by default, but you can configure another framework supported by [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md#supported-test-frameworks).
+
+`dotnet test -bl` records device selection, deployment, and run-argument builds in one coherent binary log, and `dotnet test` reports the underlying MSBuild errors when deployment or run-argument discovery fails.
 
 ### dotnet test run-level policy options
 
-`dotnet test` now supports run-level `--timeout` and `--maximum-failed-tests` options in Microsoft Testing Platform mode. These options let you stop long or noisy runs consistently across multi-project executions.
+The Microsoft Testing Platform path for `dotnet test` adds options that apply to the complete run rather than to each test application. Place these options before `--`; options after `--` continue to be forwarded to each application.
+
+```console
+# Stop the complete run after 90 seconds.
+dotnet test --timeout 90s
+
+# Stop after five failed, errored, timed-out, or cancelled results.
+dotnet test --maximum-failed-tests 5
+```
+
+`--timeout` accepts `ms`, `s`, and `m` suffixes and counts time only while at least one test application is running. A timeout returns exit code 3, while `--maximum-failed-tests` returns exit code 13 when its limit is reached.
+
+For solution and multi-targeted runs, the `--results-directory-layout per-module` option gives every test application a separate output directory, preventing reports with the same relative file name from overwriting one another. The default remains `flat`.
+
+```console
+dotnet test --results-directory-layout per-module
+```
+
+```text
+TestResults/
+  MyTests/
+    net11.0_x64/
+  OtherTests/
+    net11.0_x64/
+```
+
+When the SDK's artifacts output layout is enabled, MTP test reports, coverage, and diagnostics default to `<ArtifactsPath>/test/<project>/<pivot>`. An explicit `--results-directory` or `--results-directory-layout` still takes precedence.
+
+`dotnet test --nologo` maps to Microsoft.Testing.Platform's `--no-banner` option, and `--no-banner` appears in the command help.
+
+An experimental affected-test workflow is also available through a separately distributed Microsoft.Testing.Platform extension. It can collect a repository's test map and then run only the tests affected by a change. Collection and affected-test selection are mutually exclusive and can't be combined with device testing, parallel modules, or minimum-test policies.
+
+```powershell
+$env:DOTNET_CLI_ENABLE_AFFECTED_TESTS = "1"
+dotnet test --collect-test-map
+dotnet test --affected-tests
+```
 
 ### dotnet test support for traversal projects
 
-`dotnet test` now supports `Microsoft.Build.Traversal` projects. The SDK expands traversal graphs, deduplicates repeated references, and executes tests for the aggregated project set.
+`dotnet test` now supports `Microsoft.Build.Traversal` projects. The SDK recursively expands nested traversal projects, deduplicates diamond references, and honors `Configuration` and `Platform` metadata on project references before executing tests for the aggregated project set.
+
+```console
+dotnet test dirs.proj
+```
 
 ### dotnet test reporter and artifacts improvements
 
@@ -288,6 +364,7 @@ Both options are available for C#, F#, and VB templates.
 
 - [Multi-arch container builds with Podman](#multi-arch-container-builds-with-podman)
 - [Platform-native local container runtime selection](#platform-native-local-container-runtime-selection)
+- [Reproducible container publishing](#reproducible-container-publishing)
 - [TypeScript outputs integrate with Static Web Assets](#typescript-outputs-integrate-with-static-web-assets)
 - [MSBuild server and OpenTelemetry environment variables](#msbuild-server-and-opentelemetry-environment-variables)
 
@@ -298,6 +375,18 @@ The SDK's built-in container publishing now supports building multi-architecture
 ### Platform-native local container runtime selection
 
 Container publishing now prefers platform-native local runtimes when available: `wslc` on Windows, and `container` on macOS. Docker and Podman remain fallbacks. To force a runtime, set `LocalRegistry` explicitly in your project or publish profile.
+
+### Reproducible container publishing
+
+Publishing the same application more than once could previously produce different container image digests, because timestamps, archive headers, and directory enumeration order varied between builds. Set `SOURCE_DATE_EPOCH` to a stable Unix timestamp so independent publishes of the same inputs produce the same digest:
+
+```bash
+dotnet publish /t:PublishContainer \
+  -p:ContainerRegistry=registry.example.com \
+  -p:SOURCE_DATE_EPOCH="$(git log -1 --pretty=%ct)"
+```
+
+Remote registry publishes also check whether the computed image manifest already exists in the destination repository. When it does, the SDK skips processing the layers and configuration while still applying every requested image tag. This optimization is enabled by default; set `ContainerPushNoCache=true` to bypass the manifest-level check. The SDK still checks each layer and configuration blob and doesn't upload blobs that are already present.
 
 ### TypeScript outputs integrate with Static Web Assets
 

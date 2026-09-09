@@ -1,9 +1,12 @@
 ﻿using System.Buffers;
+using System.Collections;
 using System.Diagnostics;
 using System.Formats.Tar;
 using System.Globalization;
 using System.IO.Compression;
 using System.IO.Pipelines;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -25,6 +28,19 @@ public static class LibrariesExamples
         Console.WriteLine(result.StandardOutput);
         Console.WriteLine($"Exit code: {result.ExitStatus.ExitCode}");
         // </ProcessRunAndCapture>
+    }
+
+    static async Task ProcessSignalExample()
+    {
+        // <ProcessSignal>
+        if (OperatingSystem.IsLinux() || OperatingSystem.IsMacOS())
+        {
+            using Process process = Process.Start("sleep", "30")!;
+            process.Signal(PosixSignal.SIGTERM);
+            ProcessExitStatus status = await process.WaitForExitStatusAsync();
+            Console.WriteLine(status);
+        }
+        // </ProcessSignal>
     }
 
     static void ZLibEncoderSpanExample()
@@ -220,6 +236,18 @@ public static class LibrariesExamples
         // </LinqJoins>
     }
 
+    static void BitArraySpanConstructorExample()
+    {
+        // <BitArraySpanConstructor>
+        Span<byte> bytes = stackalloc byte[] { 0b_0000_0011, 0b_1000_0000 };
+        var bits = new BitArray(bytes);
+
+        Console.WriteLine(bits[0]);  // True
+        Console.WriteLine(bits[1]);  // True
+        Console.WriteLine(bits[15]); // True
+        // </BitArraySpanConstructor>
+    }
+
     static void EqualityComparerCreateExample()
     {
         // <EqualityComparerCreate>
@@ -296,6 +324,29 @@ public static class LibrariesExamples
         // </JsonSerializeAsyncEnumerablePipe>
     }
 
+    static void JsonNumericTypesExample()
+    {
+        // <JsonNumericTypes>
+        var measurement = new Measurement((Decimal64)1.229m);
+        string json = JsonSerializer.Serialize(measurement);
+        Console.WriteLine(json); // {"Voltage":1.229}
+
+        Measurement? roundTripped = JsonSerializer.Deserialize<Measurement>(json);
+        Console.WriteLine(roundTripped); // Measurement { Voltage = 1.229 }
+        // </JsonNumericTypes>
+    }
+
+    static void JsonUnionStructuralClassifierExample()
+    {
+        // <JsonUnionStructuralClassifier>
+        PetUnion? pet = JsonSerializer.Deserialize<PetUnion>(
+            """{"Name":"Misty","Lives":9}""",
+            PetJsonContext.Default.PetUnion);
+
+        Console.WriteLine(pet?.Value is Cat); // True
+        // </JsonUnionStructuralClassifier>
+    }
+
     static void X25519KeyExchangeExample()
     {
         // <X25519KeyExchange>
@@ -310,6 +361,27 @@ public static class LibrariesExamples
         // Both parties arrive at the same secret
         Console.WriteLine(aliceShared.SequenceEqual(bobShared)); // True
         // </X25519KeyExchange>
+    }
+
+    static void AesKeyWrapExample()
+    {
+        // <AesKeyWrap>
+        using Aes aes = Aes.Create();
+        aes.Key = RandomNumberGenerator.GetBytes(32); // AES-256 key-encryption key
+
+        byte[] keyToWrap = RandomNumberGenerator.GetBytes(24); // Multiple of 8 bytes
+
+        // Unpadded AES Key Wrap (RFC 3394)
+        byte[] wrapped = aes.EncryptKeyWrap(keyToWrap);
+        byte[] unwrapped = aes.DecryptKeyWrap(wrapped);
+        Console.WriteLine(keyToWrap.SequenceEqual(unwrapped)); // True
+
+        // Padded AES-KWP (RFC 5649) accepts a plaintext of any length
+        byte[] arbitraryLengthKey = RandomNumberGenerator.GetBytes(19);
+        byte[] wrappedPadded = aes.EncryptKeyWrapPadded(arbitraryLengthKey);
+        byte[] unwrappedPadded = aes.DecryptKeyWrapPadded(wrappedPadded);
+        Console.WriteLine(arbitraryLengthKey.SequenceEqual(unwrappedPadded)); // True
+        // </AesKeyWrap>
     }
 
     static void NullableUnderlyingTypeExample()
@@ -335,3 +407,15 @@ sealed class EventData
 
     public string? Notes { get; set; }
 }
+
+readonly record struct Measurement(Decimal64 Voltage);
+
+[JsonUnion(TypeClassifier = typeof(JsonUnionTypeStructuralClassifier))]
+public union PetUnion(Dog, Cat);
+
+public sealed record Dog(string Name, string Breed);
+
+public sealed record Cat(string Name, int Lives);
+
+[JsonSerializable(typeof(PetUnion))]
+internal partial class PetJsonContext : JsonSerializerContext;

@@ -100,7 +100,3 @@ For usage examples, see the following tutorials:
 - [Quickstart: Evaluate response quality](evaluate-ai-response.md)
 - [Tutorial: Evaluate response quality with caching and reporting](evaluate-with-reporting.md)
 - [Tutorial: Evaluate response safety with caching and reporting](evaluate-safety.md)
-
-## See also
-
-- [Evaluation of generative AI apps (Foundry)](/azure/ai-studio/concepts/evaluation-approach-gen-ai)

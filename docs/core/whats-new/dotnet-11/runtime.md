@@ -2,14 +2,14 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 08/15/2026
+ms.date: 09/08/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 7.
+This article describes new features in the .NET runtime for .NET 11. It was last updated for release candidate 1 (RC 1).
 
 ## Updated minimum hardware requirements
 
@@ -239,7 +239,7 @@ These optimizations are most visible after inlining, where guards from different
 
 .NET 11 includes several new hardware intrinsics and code generation improvements:
 
-- **F16C acceleration for `Half` ↔ `float` conversions on x64:** When the CPU supports F16C (most AVX2-capable hardware), conversions between <xref:System.Half> and `float`/`double` now use the dedicated `vcvtph2ps`/`vcvtps2ph` instructions instead of helper calls.
+- **Hardware FP16 instructions for `Half` arithmetic and conversions:** The JIT uses hardware FP16 instructions for <xref:System.Half> arithmetic and conversions when the processor supports them. On x64, arithmetic uses AVX10.1, while conversions between `Half` and `float` can use F16C (available on most AVX2-capable hardware). On Arm64, arithmetic uses the optional FP16 instruction set, while conversions between `Half` and `float` or `double` use baseline Arm64 instructions. The optimization requires no application changes and preserves the existing ABI representation of `Half`.
 - **Better cost modeling for x86/x64 SIMD:** The JIT's floating-point execution and size costs previously reflected x87-era assumptions. Updated costs that reflect modern SSE/AVX hardware let the JIT make better decisions about hoisting and common subexpression elimination (CSE) around SIMD code.
 - **Faster `DotProduct` on AVX:** Lowering for `Vector128.Dot`-style operations now emits a `mul + permute + add` sequence instead of `vdpps`/`vdppd` when AVX is available, which is consistently faster.
 - **Faster `IndexOfAnyAsciiSearcher` on Arm64:** Arm64 versions of `Vector*.Count`, `IndexOf`, and `LastIndexOf` no longer route through `ExtractMostSignificantBits`, yielding a 5–50% improvement in workloads that use these APIs in their core loop.
@@ -282,7 +282,7 @@ The .NET runtime can now initialize on machines with more than 1024 logical proc
 
 A new in-process crash reporting mechanism captures diagnostic information from within the crashing process before it terminates. Previously, crash diagnostics were collected by an out-of-process monitor. While the out-of-process approach is safe, it can miss information that's only available inside the dying process. The new in-process path logs the managed stack trace, module list, and key runtime state to a well-known path before the process exits.
 
-This capability is specific to mobile platforms.
+This capability originated on mobile platforms and is now also available on Linux and macOS. When `DOTNET_DbgEnableMiniDump` isn't enabled, set `DOTNET_EnableCrashReport=1` or `DOTNET_EnableCrashReportOnly=1` to select the in-process reporter. Existing `createdump` behavior remains in place when minidumps are enabled.
 
 ## NativeAOT: faster interface dispatch
 

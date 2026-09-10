@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
 title: "Compiler Options - language feature rules"
-ms.date: 09/17/2024
+ms.date: 09/10/2026
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -11,18 +11,18 @@ helpviewer_keywords:
   - "LangVersion compiler option [C#]"
   - "Nullable compiler option [C#]"
 ---
-# C# Compiler Options for language feature rules
+# C# compiler options for language feature rules
 
 The following options control how the compiler interprets language features. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
 - **CheckForOverflowUnderflow** / `-checked`: Generate overflow checks.
-- **AllowUnsafeBlocks** / `-unsafe`: Allow 'unsafe' code.
-- **DefineConstants** / `-define`: Define conditional compilation symbol(s).
+- **AllowUnsafeBlocks** / `-unsafe`: Allow `unsafe` code.
+- **DefineConstants** / `-define`: Define conditional compilation symbols.
 - **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or `latest` (latest version, including minor versions).
 - **Nullable** / `-nullable`: Enable nullable context, or nullable warnings.
 
 > [!NOTE]
-> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+> For more information about configuring these options for your project, see [Compiler options](index.md#how-to-set-options).
 
 ## CheckForOverflowUnderflow
 
@@ -32,11 +32,11 @@ The **CheckForOverflowUnderflow** option controls the default overflow-checking 
 <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
 ```
 
-When **CheckForOverflowUnderflow** is `true`, the default context is a checked context and overflow checking is enabled; otherwise, the default context is an unchecked context. The default value for this option is `false`, that is, overflow checking is disabled.
+When **CheckForOverflowUnderflow** is `true`, the default context is a checked context and overflow checking is enabled. When **CheckForOverflowUnderflow** is `false`, the default context is an unchecked context. The default value for this option is `false`, which means overflow checking is disabled.
 
-You can also explicitly control the overflow-checking context for the parts of your code by using the `checked` and `unchecked` statements.
+You can also explicitly control the overflow-checking context for parts of your code by using the `checked` and `unchecked` statements.
 
-For information about how the overflow-checking context affects operations and what operations are affected, see the [article about `checked` and `unchecked` statements](../statements/checked-and-unchecked.md).
+For information about how the overflow-checking context affects operations and what operations it affects, see the [article about `checked` and `unchecked` statements](../statements/checked-and-unchecked.md).
 
 ## AllowUnsafeBlocks
 
@@ -47,6 +47,37 @@ The **AllowUnsafeBlocks** compiler option allows code that uses the [unsafe](../
 ```
 
 For more information about unsafe code, see [Unsafe Code and Pointers](../unsafe-code.md).
+
+### Enable the updated memory safety rules
+
+The updated memory safety rules are a preview feature in C# 15 and .NET 11. They use two independent compiler settings:
+
+- The `preview` language version enables the new syntax and pointer relaxations.
+- The `updated-memory-safety-rules` compiler feature enables the updated rules, including *requires-unsafe* caller obligations, and causes the compiler to record the choice in the assembly with the <xref:System.Runtime.CompilerServices.MemorySafetyRulesAttribute> attribute.
+
+For a project, use both settings:
+
+```xml
+<PropertyGroup>
+  <LangVersion>preview</LangVersion>
+  <Features>$(Features);updated-memory-safety-rules</Features>
+</PropertyGroup>
+```
+
+For a file-based program, add the equivalent directives:
+
+```csharp
+#:property Features=$(Features);updated-memory-safety-rules
+#:property LangVersion=preview
+```
+
+The **AllowUnsafeBlocks** property is independent. It controls whether the source can use the `unsafe` keyword. A project can enable the updated rules without allowing unsafe code, in which case it receives errors when it calls requires-unsafe APIs.
+
+Whether one assembly enforces the updated rules against another depends on which side opts in:
+
+- **Updated-model caller, updated-model callee**: The callee's `unsafe` markers travel through metadata. The caller wraps each call to a requires-unsafe member in an `unsafe` block.
+- **Updated-model caller, original-model callee**: A compatibility mode treats any callee member with a pointer type in its signature as requires-unsafe, so the call site needs an enclosing `unsafe` block. This mode keeps a pointer-based API from silently losing its `unsafe` requirement.
+- **Original-model caller, updated-model callee**: The original pointer rules still apply. A requires-unsafe member that has no pointer type in its signature becomes callable from safe code, because the original-model caller can't read the new markers.
 
 ## DefineConstants
 
@@ -59,7 +90,7 @@ The **DefineConstants** option defines symbols in all source code files of your 
 This option specifies the names of one or more symbols that you want to define. The **DefineConstants** option has the same effect as the [#define](../preprocessor-directives.md#defining-symbols) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives.md#defining-symbols) directive in the source file removes the definition. When you use the `-define` option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives.md#conditional-compilation), [#else](../preprocessor-directives.md), [#elif](../preprocessor-directives.md#conditional-compilation), and [#endif](../preprocessor-directives.md#conditional-compilation) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
 
 > [!NOTE]
-> The C# `#define` directive does not allow a symbol to be given a value, as in languages such as C++. For example, `#define` cannot be used to create a macro or to define a constant. If you need to define a constant, use an `enum` variable. If you want to create a C++ style macro, consider alternatives such as generics. Since macros are notoriously error-prone, C# disallows their use but provides safer alternatives.
+> The C# `#define` directive doesn't allow a symbol to have a value, as in languages such as C++. For example, `#define` can't create a macro or define a constant. If you need to define a constant, use an `enum` variable. If you want to create a C++-style macro, consider alternatives such as generics. Since macros are notoriously error-prone, C# disallows their use but provides safer alternatives.
 
 ## LangVersion
 
@@ -67,13 +98,15 @@ The default language version for the C# compiler depends on the target framework
 
 > [!WARNING]
 >
-> Setting the `LangVersion` element to `latest` is discouraged. The `latest` setting means the installed compiler uses its latest version. That can change from machine to machine, making builds unreliable. In addition, it enables language features that may require runtime or library features not included in the current SDK.
+> Don't set the `LangVersion` element to `latest`. The `latest` setting means the installed compiler uses its latest version. That version can change from machine to machine, making builds unreliable. In addition, it enables language features that might require runtime or library features that aren't included in the current SDK.
 
-The **LangVersion** option causes the compiler to accept only syntax that is included in the specified C# language specification, for example:
+The **LangVersion** option causes the compiler to accept only syntax that's included in the specified C# language specification, for example:
 
 ```xml
 <LangVersion>9.0</LangVersion>
 ```
+
+Some preview features require a separate opt-in in addition to `<LangVersion>preview</LangVersion>`. For example, the C# 15 updated memory safety rules use the `updated-memory-safety-rules` compiler feature. For more information, see [Enable the updated memory safety rules](#enable-the-updated-memory-safety-rules).
 
 The following values are valid:
 
@@ -81,15 +114,15 @@ The following values are valid:
 
 ### Considerations
 
-- To ensure that your project uses the default compiler version recommended for your target framework, don't use the **LangVersion** option. You can update the target framework to access newer language features.
+- To ensure that your project uses the default compiler version recommended for your target framework, don't use the **LangVersion** option. Update the target framework to access newer language features.
 
 - Specifying **LangVersion** with the `default` value is different from omitting the **LangVersion** option. Specifying `default` uses the latest version of the language that the compiler supports, without taking into account the target framework. For example, building a project that targets .NET 6 from Visual Studio version 17.6 uses C# 10 if **LangVersion** isn't specified, but uses C# 11 if **LangVersion** is set to `default`.
 
-- Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
+- The **LangVersion** compiler option doesn't affect metadata referenced by your C# application.
 
 - Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
 
-- While C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. Each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+- While C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. Each specific feature has its own minimum .NET API or common language runtime requirements that might allow it to run on down-level frameworks by including NuGet packages or other libraries.
 
 - Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your *.exe* or *.dll*. One exception is friend assemblies and [ModuleAssemblyName](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
 
@@ -143,34 +176,34 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 ## Nullable
 
-The **Nullable** option lets you specify the nullable context. It can be set in the project's configuration using the `<Nullable>` tag:
+Use the **Nullable** option to specify the nullable context. Set it in the project's configuration by using the `<Nullable>` tag:
 
 ```xml
 <Nullable>enable</Nullable>
 ```
 
-The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../builtin-types/nullable-reference-types.md#nullable-context). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
+The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument turns on the nullable context. The `disable` argument turns off the nullable context. The `warnings` argument turns on the nullable warning context. The `annotations` argument turns on the nullable annotation context. For more information about these values, see [Nullable contexts](../builtin-types/nullable-reference-types.md#nullable-context). To learn more about enabling nullable reference types in an existing codebase, see [nullable migration strategies](../../advanced-topics/update-applications/nullable-migration-strategies.md).
 
 > [!NOTE]
-> When there's no value set, the default value `disable` is applied, however the .NET 6 templates are by default provided with the **Nullable** value set to `enable`.
+> If you don't set a value, the default value is `disable`. However, .NET 6 and newer templates set the **Nullable** value to `enable` by default.
 
-Flow analysis is used to infer the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. Method calls are analyzed even when they're conditionally omitted. For instance, <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> in release mode.
+Flow analysis infers the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. The compiler analyzes method calls even when they're conditionally omitted. For example, <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> runs in release mode.
 
-Invocation of methods annotated with the following attributes will also affect flow analysis:
+Invocation of methods annotated with the following attributes also affects flow analysis:
 
-- Simple pre-conditions: <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute>
-- Simple post-conditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullAttribute>
-- Conditional post-conditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute>
+- Simple preconditions: <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute>
+- Simple postconditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullAttribute>
+- Conditional postconditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute>
 - <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute> (for example, `DoesNotReturnIf(false)` for <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>) and <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute>
 - <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute>
-- Member post-conditions: <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String)> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String[])>
+- Member postconditions: <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String)> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String[])>
 
 > [!IMPORTANT]
-> The global nullable context does not apply for generated code files. Regardless of this setting, the nullable context is *disabled* for any source file marked as generated. There are four ways a file is marked as generated:
+> The global nullable context doesn't apply to generated code files. Regardless of this setting, the nullable context is *disabled* for any source file marked as generated. A file is marked as generated in one of the following ways:
 >
 > 1. In the .editorconfig, specify `generated_code = true` in a section that applies to that file.
-> 1. Put `<auto-generated>` or `<auto-generated/>` in a comment at the top of the file. It can be on any line in that comment, but the comment block must be the first element in the file.
+> 1. Include `<auto-generated>` or `<auto-generated/>` in a comment at the top of the file. You can place it on any line in the comment, but the comment block must be the first element in the file.
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in using the [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directive.
+> Generators can opt in by using the [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directive.

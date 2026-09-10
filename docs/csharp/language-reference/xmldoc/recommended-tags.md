@@ -1,7 +1,7 @@
 ---
 title: "Recommended XML documentation tags"
 description: This article provides the syntax and definitions for recommended tags on types, and their members for XML documentation.
-ms.date: 08/14/2026
+ms.date: 09/10/2026
 f1_keywords:
   - "<summary>"
   - "summary"
@@ -244,9 +244,9 @@ The `<value>` tag lets you describe the value that a property represents. When y
 <safety>description</safety>
 ```
 
-Use the `<safety>` tag to document the contract that a caller of a *caller-unsafe* member must satisfy under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview), a preview feature in C# 15 and .NET 11. In the completed design, marking a member `unsafe` pushes the obligation to audit safety onto the caller, and the `<safety>` block states the conditions the caller must guarantee. The current preview compiler doesn't yet enforce that obligation—see the caveat in [Unsafe code, pointer types, and function pointers](../unsafe-code.md#the-updated-memory-safety-model-preview)—so today, `<safety>` documents a contract you maintain by convention. You can also place a `<safety>` block on an `unsafe` field to record the invariant that the enclosing type maintains.
+Use the `<safety>` tag to document the contract that a caller of a *requires-unsafe* member must satisfy under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview), a preview feature in C# 15 and .NET 11. Marking a member `unsafe` pushes the obligation to audit safety onto the caller, and the `<safety>` block states the conditions the caller must guarantee. The updated rules can be enabled in preview with the `updated-memory-safety-rules` compiler feature; see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). You can also place a `<safety>` block on an `unsafe` field to record the invariant that the enclosing type maintains.
 
-The C# compiler doesn't recognize or process the `<safety>` tag. Like any custom tag, the compiler copies it verbatim to the output XML file. A memory safety analyzer might flag a caller-unsafe member that's missing a `<safety>` block, but the compiler itself doesn't enforce its presence or contents. For more information, see [Safety documentation](../unsafe-code.md#safety-documentation).
+The C# compiler doesn't recognize or process the `<safety>` tag. Like any custom tag, the compiler copies it verbatim to the output XML file. A memory safety analyzer might flag a requires-unsafe member that's missing a `<safety>` block, but the compiler itself doesn't enforce its presence or contents. For more information, see [Safety documentation](../unsafe-code.md#safety-documentation).
 
 ## Format documentation output
 

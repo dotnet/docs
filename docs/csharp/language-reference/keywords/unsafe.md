@@ -1,7 +1,7 @@
 ---
 description: "unsafe keyword - C# Reference"
 title: "unsafe keyword"
-ms.date: 08/14/2026
+ms.date: 09/10/2026
 f1_keywords:
   - "unsafe_CSharpKeyword"
   - "unsafe"
@@ -43,7 +43,7 @@ To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler
 > [!NOTE]
 > The [memory safety](../unsafe-code.md#the-updated-memory-safety-model-preview) preview feature available in C# 15 narrows the operations that require an `unsafe` context.
 > An `unsafe` context is no longer required for creating a pointer, the `fixed` statement, converting a `stackalloc` expression to a pointer, and using `sizeof` on an unmanaged type.
-> Only operations that access the pointed-to memory, such as pointer indirection, still require an `unsafe` context. The same preview also adds an `unsafe(expression)` form that establishes an unsafe context for a single expression, for positions where an `unsafe` block can't appear, such as a field initializer or a `catch` filter. For more information, see [Unsafe expressions](../unsafe-code.md#unsafe-expressions). The preview also gives the `unsafe` modifier on a member a new meaning: the compiler recognizes it as marking the member *requires-unsafe*. Caller enforcement of that obligation isn't implemented yet, so marking a member `unsafe` currently has no effect on its callers. For more information, see [Caller-unsafe members](../unsafe-code.md#caller-unsafe-members).
+> Only operations that access the pointed-to memory, such as pointer indirection, still require an `unsafe` context. The same preview also adds an `unsafe(expression)` form that establishes an unsafe context for a single expression, for positions where an `unsafe` block can't appear, such as a field initializer or a `catch` filter. For more information, see [Unsafe expressions](../unsafe-code.md#unsafe-expressions). The preview also gives the `unsafe` modifier on a member a new meaning: it marks the member *requires-unsafe*. Set `LangVersion` to `preview` for the new syntax and pointer relaxations. To also enforce requires-unsafe caller obligations, opt in with `Features=updated-memory-safety-rules`. For activation details, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 ## Example
 

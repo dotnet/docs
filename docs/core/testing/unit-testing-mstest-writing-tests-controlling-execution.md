@@ -152,6 +152,10 @@ The `Workers` property specifies the maximum number of threads for parallel exec
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> prevents parallel execution for specific assemblies, classes, or methods. Use this attribute when tests share state or resources that can't be safely accessed concurrently.
 
+When you enable in-assembly parallelization, MSTest partitions each test source (assembly) into parallelizable and nonparallelizable tests. MSTest runs the parallelizable set first, then runs the `DoNotParallelize` set one test at a time at the end of that source's run. In runs that include multiple test sources, each source has its own deferred tail. Because deferred tests can't overlap with other tests, a slow deferred test usually increases total run time by about its own duration.
+
+Because MSTest runs deferred tests only after the parallelizable phase finishes, a canceled or aborted run can end before MSTest executes deferred tests.
+
 ```csharp
 [assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]
 
@@ -195,7 +199,7 @@ public class MixedTests
 ```
 
 > [!NOTE]
-> You only need `DoNotParallelize` when you've enabled parallel execution with the `Parallelize` attribute.
+> You only need `DoNotParallelize` when you've enabled parallel execution with the `Parallelize` attribute. When parallelization is disabled (the default), `DoNotParallelize` has no effect.
 
 ### `ResourceLockAttribute`
 

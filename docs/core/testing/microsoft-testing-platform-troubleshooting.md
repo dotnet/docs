@@ -39,9 +39,7 @@ To enable verbose logging and troubleshoot issues, see [Diagnostic logging](#dia
 
 ### Zero tests in a multi-module run
 
-When `dotnet test` runs several test modules, exit code `8` is a per-module signal, while the zero-tests verdict for the whole run is decided once from the total number of tests that ran. A module that matches no tests, for example because of `--test-modules` or a global `--filter`, exits with code `8`, but that code is normalized to success before the results are aggregated. A single empty module therefore doesn't fail the whole run, although the module keeps its `Exit code: 8` diagnostic in the output.
-
-An explicit `--minimum-expected-tests` value that isn't met yields exit code `9`, whether the minimum is global (specified before `--`) or per-module (specified after `--`). For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+When `dotnet test` runs several test modules, exit code `8` is a per-module signal, while the zero-tests verdict for the whole run is decided once from the total number of tests that ran. A single empty module therefore doesn't fail the whole run, although the module keeps its `Exit code: 8` diagnostic in the output. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
 
 > [!NOTE]
 > This whole-run aggregation requires the .NET 11 SDK (11.0.1xx) or a later version.

@@ -273,7 +273,7 @@ When you specify `--minimum-expected-tests` and the minimum isn't met, the run f
   dotnet test --minimum-expected-tests 10
   ```
 
-- Run the tests requiring at least 5 tests across the whole run and at least 2 tests in each test module:
+- Require at least 5 tests across the whole run and at least 2 tests in each test module:
 
   ```dotnetcli
   dotnet test --minimum-expected-tests 5 -- --minimum-expected-tests 2

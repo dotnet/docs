@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 09/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -143,6 +143,11 @@ This article gives a central entry point for MTP command-line options.
 - **`--minimum-expected-tests`**
 
   Specifies the minimum number of tests that must run. When the run executes fewer tests, including zero, it exits with code `9`. An explicit minimum supersedes `--zero-tests-policy`.
+
+  With `dotnet test`, this option applies to the whole run when it's specified before `--`, and to each test module when it's specified after `--`. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+
+  > [!NOTE]
+  > `--minimum-expected-tests 0` isn't an alias for `--ignore-exit-code 8`. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
 
 - **`--no-banner`**
 

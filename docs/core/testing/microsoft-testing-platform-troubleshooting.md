@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) troubleshooting
 description: Troubleshoot MTP issues, exit codes, and known problems.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 09/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -26,16 +26,25 @@ MTP uses known exit codes to communicate test failure or app errors. Exit codes 
 | `6` (no longer used) | Exit code `6` is no longer produced by the platform; it previously indicated that the test session was using a non-implemented feature. |
 | `7` | The exit code `7` indicates that a test session was unable to complete successfully, and likely crashed. It's possible that this was caused by a test session that was run via a test controller's extension point. |
 | `8` | The exit code `8` indicates that the test session ran zero tests under the strict `--zero-tests-policy`. |
-| `9` | The exit code `9` indicates that the run executed fewer tests than `--minimum-expected-tests` requires, including zero tests. |
+| `9` | The exit code `9` indicates that the run executed fewer tests than an explicit `--minimum-expected-tests` value requires, including zero tests. |
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 | `11` | The exit code `11` indicates that the test process will exit if dependent process exits. |
 | `12` | The exit code `12` indicates that the test session was unable to run because the client does not support any of the supported protocol versions. |
 | `13` | The exit code `13` indicates that the test session was stopped due to reaching the specified number of maximum failed tests using `--maximum-failed-tests` command-line option. For more information, see [the Options section in MTP CLI options reference](microsoft-testing-platform-cli-options.md) |
 | `14` | The exit code `14` indicates that a compatible coverage collector published a failed coverage threshold evaluation. |
 
-An explicit `--minimum-expected-tests` value supersedes `--zero-tests-policy`. Without the minimum option, strict zero-test handling continues to use exit code `8`.
+An explicit `--minimum-expected-tests` value supersedes `--zero-tests-policy`. Without the minimum option, strict zero-test handling continues to use exit code `8`. Exit codes `8` and `9` remain distinct so that an unmet minimum isn't confused with a module that ran no tests.
 
 To enable verbose logging and troubleshoot issues, see [Diagnostic logging](#diagnostic-logging).
+
+### Zero tests in a multi-module run
+
+When `dotnet test` runs several test modules, exit code `8` is a per-module signal, while the zero-tests verdict for the whole run is decided once from the total number of tests that ran. A module that matches no tests, for example because of `--test-modules` or a global `--filter`, exits with code `8`, but that code is normalized to success before the results are aggregated. A single empty module therefore doesn't fail the whole run, although the module keeps its `Exit code: 8` diagnostic in the output.
+
+An explicit `--minimum-expected-tests` value that isn't met yields exit code `9`, whether the minimum is global (specified before `--`) or per-module (specified after `--`). For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+
+> [!NOTE]
+> This whole-run aggregation requires the .NET 11 SDK (11.0.1xx) or a later version.
 
 ### Ignore specific exit codes
 

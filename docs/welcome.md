@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
 description: Learn how to get started with the .NET family of technologies.
-ms.date: 04/30/2026
+ms.date: 08/30/2026
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET

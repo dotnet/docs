@@ -202,7 +202,7 @@ class Header
 
 Like the rest of the memory safety preview, `unsafe` expressions require the `preview` language version and the `AllowUnsafeBlocks` compiler option.
 
-The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and fields in explicit or extended layout types. Set `LangVersion` to `preview` to enable the new syntax and pointer relaxations. To also enable the updated rules, including *requires-unsafe* caller obligations, add `Features=updated-memory-safety-rules`. For project and file-based program syntax, see [Enable the updated memory safety rules](../language-reference/compiler-options/language.md#enable-the-updated-memory-safety-rules).
+The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and fields in explicit or extended layout types. Set `LangVersion` to `preview` to enable the new syntax and pointer relaxations. To also enable the updated rules, including *requires-unsafe* caller obligations, enable the `updated-memory-safety-rules` compiler feature. For project and file-based program syntax, see [Enable the updated memory safety rules](../language-reference/compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 

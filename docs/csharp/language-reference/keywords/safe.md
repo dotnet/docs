@@ -14,14 +14,14 @@ helpviewer_keywords:
 The `safe` contextual keyword attests that a declaration is sound in places where the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview) requires you to make the safety choice explicit. You apply `safe` as a modifier on a declaration that the compiler can't classify on its own, such as an `extern` member or a field in a type with explicit or extended layout. The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
 
 > [!IMPORTANT]
-> The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. Set [`LangVersion`](../compiler-options/language.md#langversion) to `preview` to enable the syntax. To also enforce the updated rules, including explicit `safe` or `unsafe` choices and requires-unsafe caller obligations, opt in with `Features=updated-memory-safety-rules`. For activation details, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+> The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. Set [`LangVersion`](../compiler-options/language.md#langversion) to `preview` to enable the syntax. To also enforce the updated rules, including explicit `safe` or `unsafe` choices and requires-unsafe caller obligations, enable the `updated-memory-safety-rules` compiler feature. For activation details, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 ## Extern members
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 
 ```csharp
-// Syntax requires LangVersion preview; enforcement requires the updated-rules opt-in.
+// Syntax requires LangVersion preview; enforcement requires the updated-memory-safety-rules compiler feature.
 [LibraryImport("libc")]
 internal static safe partial int getpid();
 
@@ -36,7 +36,7 @@ internal static unsafe partial nint strlen(byte* str);
 In a type with `[StructLayout(LayoutKind.Explicit)]` or `[ExtendedLayout]`, the compiler can't classify every instance field's safety on its own. You mark every such field either `safe` or `unsafe`:
 
 ```csharp
-// Syntax requires LangVersion preview; enforcement requires the updated-rules opt-in.
+// Syntax requires LangVersion preview; enforcement requires the updated-memory-safety-rules compiler feature.
 [StructLayout(LayoutKind.Explicit)]
 internal struct Union
 {

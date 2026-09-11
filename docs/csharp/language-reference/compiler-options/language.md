@@ -54,6 +54,7 @@ The updated memory safety rules are a preview feature in C# 15 and .NET 11. They
 
 - The `preview` language version enables the new syntax and pointer relaxations.
 - The `updated-memory-safety-rules` compiler feature enables the updated rules, including *requires-unsafe* caller obligations, and causes the compiler to record the choice in the assembly with the <xref:System.Runtime.CompilerServices.MemorySafetyRulesAttribute> attribute.
+- A future stable `MemorySafetyRules` SDK property is planned as a third activation tier, but it isn't implemented yet.
 
 For a project, use both settings:
 

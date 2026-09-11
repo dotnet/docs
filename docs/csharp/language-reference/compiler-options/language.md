@@ -2,6 +2,7 @@
 description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
 title: "Compiler Options - language feature rules"
 ms.date: 09/10/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:

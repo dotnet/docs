@@ -2,6 +2,7 @@
 description: "unsafe keyword - C# Reference"
 title: "unsafe keyword"
 ms.date: 09/10/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "unsafe_CSharpKeyword"
   - "unsafe"

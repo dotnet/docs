@@ -2,6 +2,7 @@
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
 ms.date: 09/11/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "CS0190"
   - "CS0257"

@@ -2,6 +2,7 @@
 title: "Recommended XML documentation tags"
 description: This article provides the syntax and definitions for recommended tags on types, and their members for XML documentation.
 ms.date: 09/10/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "<summary>"
   - "summary"

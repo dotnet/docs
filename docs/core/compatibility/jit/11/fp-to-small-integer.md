@@ -76,7 +76,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The [.NET 9 change](../9.0/fp-to-integer.md) established saturating behavior for conversions to wider integer types, but conversions to 8- and 16-bit destinations still had hardware- and implementation-dependent behavior for out-of-range values and `NaN`. This change gives those conversions deterministic, saturating behavior and makes the JIT, CoreCLR interpreter, and Native AOT preinitialized values agree.
+The [.NET 9 change](../9.0/fp-to-integer.md) established saturating behavior for conversions to wider integer types, but conversions to 8-bit and 16-bit destinations still had hardware-dependent and implementation-dependent behavior for out-of-range values and `NaN`. This change gives those conversions deterministic, saturating behavior and makes the JIT, CoreCLR interpreter, and Native AOT preinitialized values agree.
 
 ## Recommended action
 

@@ -75,6 +75,7 @@ f1_keywords:
   - "CS9328"
   - "CS9346" # ERR_EncUpdateRequiresEmittingExplicitInterfaceImplementationNotSupportedByTheRuntime
   - "CS9352" # ERR_RuntimeDoesNotSupportExtendedLayoutTypes  The target runtime does not support extended layout types.
+  - "CS9399" # ERR_FeatureNotAvailableInVersion15  Feature '{0}' is not available in C# 15.0. Please use language version {1} or greater.
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -149,7 +150,8 @@ helpviewer_keywords:
   - "CS9328"
   - "CS9346"
   - "CS9352"
-ms.date: 05/07/2026
+  - "CS9399"
+ms.date: 09/11/2026
 ---
 # Resolve errors and warnings for language features and versions
 
@@ -231,6 +233,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9328**](#target-runtime-doesnt-support-feature): *Method 'method' uses a feature that is not supported by runtime async currently. Opt the method out of runtime async by attributing it with 'System.Runtime.CompilerServices.RuntimeAsyncMethodGenerationAttribute(false)'.*
 - [**CS9346**](#target-runtime-doesnt-support-feature): *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - [**CS9352**](#target-runtime-doesnt-support-feature): *The target runtime does not support extended layout types.*
+- [**CS9399**](#feature-not-available-in-language-version): *Feature 'feature' is not available in C# 15.0. Please use language version 'version' or greater.*
 
 The cause behind all these errors and warnings is that either the compiler or the runtime doesn't support a feature you're using. The resolution depends on whether the issue is a language version configuration problem, a language version mismatch, a runtime limitation, or an experimental feature.
 
@@ -269,7 +272,7 @@ To learn more about the language versions supported for each framework version, 
 ## Feature not available in language version
 
 - **CS1738**: *Named argument specifications must appear after all fixed arguments have been specified.*
-- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058, CS9202, CS9260, CS9327**: *Feature is not available in C# X. Please use language version Y or greater.*
+- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058, CS9202, CS9260, CS9327, CS9399**: *Feature is not available in C# X. Please use language version Y or greater.*
 - **CS8306**: *Tuple element name is inferred. Please use language version 7.1 or greater to access an element by its inferred name.*
 - **CS8314**: *An expression of type 'type' cannot be handled by a pattern of type 'type' in C# version. Please use language version 'version' or greater.*
 - **CS8371**: *Field-targeted attributes on auto-properties are not supported in language version 7.3.*
@@ -303,6 +306,7 @@ If you can't upgrade, avoid the feature that triggered the error. The error mess
 - Move newlines outside of interpolated string expressions, or upgrade to C# 11 or later (**CS8967**).
 - Use the `in` keyword instead of `ref` when passing arguments to `in` parameters, or upgrade to C# 12 or later (**CS9194**).
 - Implement non-public interface members explicitly rather than implicitly, or upgrade to C# 9 or later (**CS8704**).
+- Set the [`LangVersion`](../compiler-options/language.md#langversion) compiler option to `preview` to use C# 15 preview features such as the updated memory safety rules (**CS9399**). For more information, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 ## Target runtime doesn't support feature
 

@@ -182,7 +182,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 To use pointer operations correctly, follow the rules for dereferencing, indexing, and arithmetic operations. For more information, see [Pointer types](../unsafe-code.md#pointer-types) and [Function pointers](../unsafe-code.md#function-pointers).
 
 - Apply the `*` or `->` operator only to data pointers (**CS0193**). Don't use these operators with nonpointer types or function pointers. Unlike in C/C++, you can't dereference function pointers in C#.
-- Index pointers with only one value (**CS0196**). Multidimensional indexing isn't supported on pointers.
+- Index pointers with only one value (**CS0196**). Pointers don't support multidimensional indexing.
 - Avoid operations that are undefined on void pointers (**CS0242**). For example, don't increment a void pointer because the compiler doesn't know the size of the data being pointed to.
 
 ## Pointer types and managed types

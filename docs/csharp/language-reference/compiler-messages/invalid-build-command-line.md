@@ -30,6 +30,7 @@ f1_keywords:
   - "CS8751"
   - "CS8771"
   - "CS8772"
+  - "CS9400" # ERR_BadCompilationOptionValueAccepted  Invalid '{0}' value: '{1}'. Accepted values are: {2}
 helpviewer_keywords:
   - "CS0006"
   - "CS0007"
@@ -59,7 +60,8 @@ helpviewer_keywords:
   - "CS8751"
   - "CS8771"
   - "CS8772"
-ms.date: 05/19/2026
+  - "CS9400"
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for invalid command-line options and build configuration
@@ -97,6 +99,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8751**](#compiler-infrastructure-errors): *Internal error in the C# compiler.*
 - [**CS8771**](#conflicting-or-missing-options): *Output directory could not be determined*
 - [**CS8772**](#invalid-option-values): *stdin argument '-' is specified, but input has not been redirected from the standard input stream.*
+- [**CS9400**](#invalid-option-values): *Invalid 'option' value: 'value'. Accepted values are: 'value1, value2, ...'*
 
 ## Input and output file errors
 
@@ -128,6 +131,7 @@ These errors indicate that the compiler can't find, read, or write files needed 
 - **CS2043**: *'id#' syntax is no longer supported. Use '$id' instead.*
 - **CS2046**: *Command-line syntax error: 'value' is not a valid value for the 'option' option. The value must be of the form 'format'.*
 - **CS8772**: *stdin argument '-' is specified, but input has not been redirected from the standard input stream.*
+- **CS9400**: *Invalid 'option' value: 'value'. Accepted values are: 'value1, value2, ...'*
 
 These errors indicate that a value passed to a compiler option is malformed or outside the allowed set of values. For the full list of compiler options, see [C# Compiler Options](../compiler-options/index.md).
 
@@ -142,6 +146,7 @@ These errors indicate that a value passed to a compiler option is malformed or o
 - Replace the legacy `id#` syntax with `$id` (**CS2043**). The older syntax is no longer supported by the compiler.
 - Supply a value that matches the expected format for the specified option (**CS2046**). The error message indicates the expected form.
 - Redirect standard input when using the `-` (stdin) argument (**CS8772**). The compiler expects piped input when you pass `-` as the source file argument. Use a pipeline (for example, `cat file.cs | csc -`) or remove the `-` argument and pass the source file directly.
+- Use one of the accepted values listed in the error message for the named compiler option (**CS9400**). This is a general-purpose diagnostic that the compiler reports whenever a compiler feature or property accepts only a fixed set of values and you supply one that isn't in that set — for example, an unrecognized value for the `updated-memory-safety-rules` compiler feature. Check the documentation for the specific option named in the error to find its accepted values.
 
 ## Conflicting or missing options
 

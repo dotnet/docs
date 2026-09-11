@@ -2,6 +2,7 @@
 title: "await operator - asynchronously wait for a task to complete"
 description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
 ms.date: 09/11/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "await_CSharpKeyword"
 helpviewer_keywords:

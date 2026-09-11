@@ -55,6 +55,8 @@ The updated memory safety rules are a preview feature in C# 15 and .NET 11. They
 - The `preview` language version enables the new syntax and pointer relaxations.
 - The `updated-memory-safety-rules` compiler feature enables the updated rules, including *requires-unsafe* caller obligations, and causes the compiler to record the choice in the assembly with the <xref:System.Runtime.CompilerServices.MemorySafetyRulesAttribute> attribute.
 
+A future stable SDK property, `MemorySafetyRules`, is planned as a third activation tier for when the feature exits preview (for example, `<MemorySafetyRules>2</MemorySafetyRules>`), but that property isn't implemented yet.
+
 For a project, use both settings:
 
 ```xml
@@ -187,7 +189,7 @@ The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. T
 > [!NOTE]
 > If you don't set a value, the default value is `disable`. However, .NET 6 and newer templates set the **Nullable** value to `enable` by default.
 
-Flow analysis infers the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. The compiler analyzes method calls even when they're conditionally omitted. For example, <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> runs in release mode.
+Flow analysis infers the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. The compiler analyzes method calls even when the call is conditionally omitted from the compiled output. For example, the compiler still analyzes a call to <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> for nullability even though the call is conditional and isn't compiled into release builds.
 
 Invocation of methods annotated with the following attributes also affects flow analysis:
 

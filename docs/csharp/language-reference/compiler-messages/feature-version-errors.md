@@ -155,7 +155,6 @@ helpviewer_keywords:
   - "CS9352"
 ms.date: 09/11/2026
 ai-usage: ai-assisted
-ms.date: 09/11/2026
 ---
 # Resolve errors and warnings for language features and versions
 

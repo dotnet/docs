@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 09/10/2026
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -98,12 +98,12 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 
 - **`--minimum-expected-tests <NUMBER>`**
 
-  Specifies the minimum number of tests that must run across the whole run. If the total number of tests that ran is less than the specified minimum, the test run fails with exit code 9. For more information about exit codes, see [MTP exit codes](../testing/microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies a positive minimum number of tests for the whole run. If the aggregated test count is less than the specified minimum, the test run fails with exit code 9. The global count includes skipped tests. For more information about exit codes, see [MTP exit codes](../testing/microsoft-testing-platform-troubleshooting.md#exit-codes).
 
   Because this option appears before `--`, it's a global (whole-run) option. To require a minimum for each test module instead, pass the option after `--` so that it's forwarded to every test module. For more information, see [Whole-run and per-module minimums](#whole-run-and-per-module-minimums).
 
   > [!NOTE]
-  > Whole-run aggregation of the minimum requires the .NET 11 SDK (11.0.1xx) or a later version. In earlier SDKs, the option applies to each test module.
+  > The global minimum requires the .NET 10 SDK (10.0.100) or a later version.
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
 
@@ -197,7 +197,7 @@ The same parser behavior applies to `dotnet run` and `dotnet build`. For a detai
 
 ## Whole-run and per-module minimums
 
-Starting with the .NET 11 SDK (11.0.1xx), the position of an argument determines its scope:
+For `--minimum-expected-tests`, the `--` separator determines the option's scope:
 
 - Arguments *before* `--` are global. The `dotnet test` orchestrator interprets them for the whole run.
 - Arguments *after* `--` are local. `dotnet test` forwards them to each test module, so each module applies them independently.
@@ -210,12 +210,27 @@ dotnet test --minimum-expected-tests 5 -- --minimum-expected-tests 2
 
 The preceding command requires at least 5 tests across the whole run and at least 2 tests in each test module.
 
-The zero-tests verdict for the whole run is decided once, from the total number of tests that ran. A module that matches no tests, for example because of `--test-modules` or a global `--filter`, exits with code 8 (`ZeroTests`), but that code is normalized to success before the results are aggregated. As a result, a single empty module no longer fails the whole run, although the module keeps its `Exit code: 8` diagnostic in the output for visibility.
+The two scopes count skipped tests differently:
 
-When you specify `--minimum-expected-tests` and the minimum isn't met, the run fails with exit code 9 (`MinimumExpectedTestsPolicyViolation`). This code is distinct from 8 so that a stricter global or per-module minimum isn't confused with an empty module.
+| Scope | Do skipped tests count toward the minimum? |
+| --- | --- |
+| Global | Yes. The `dotnet test` aggregated total includes skipped tests. |
+| Per module | No. MTP excludes skipped tests from the number of tests that ran. |
+
+Starting with the .NET 11 SDK, the zero-tests verdict for the whole run is decided once from the aggregated results. A module that matches no tests, for example because of `--test-modules` or a global `--filter`, exits with code 8 (`ZeroTests`), but that code is normalized to success before the results are aggregated. As a result, a single empty module doesn't fail the whole run, although the module keeps its `Exit code: 8` diagnostic in the output for visibility.
+
+MTP 4.3.0 and later versions provide `--zero-tests-policy <allow-skipped|strict>`. The default value, `allow-skipped`, lets an all-skipped module succeed. The `strict` value treats skipped tests as not run, so an all-skipped module exits with code 8. Pass the option after `--` to forward it to each test module:
+
+```dotnetcli
+dotnet test -- --zero-tests-policy strict
+```
+
+When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. An all-skipped whole run exits with code 8 regardless of the per-module `--zero-tests-policy` value.
+
+When you specify `--minimum-expected-tests` and the minimum isn't met, the run fails with exit code 9 (`MinimumExpectedTestsPolicyViolation`). This code is distinct from 8 so that a stricter global or per-module minimum isn't confused with an empty module. For a per-module minimum to return code 9 when the module runs zero tests, the test module must use MTP 4.4.0 or a later version.
 
 > [!NOTE]
-> `--minimum-expected-tests 0` isn't an alias for `--ignore-exit-code 8`. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
+> `--minimum-expected-tests 0` is invalid. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
 
 ## Examples
 

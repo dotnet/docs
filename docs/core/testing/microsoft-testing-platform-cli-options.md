@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/10/2026
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 ---
 
@@ -142,12 +142,12 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--minimum-expected-tests`**
 
-  Specifies the minimum number of tests that must run. When the run executes fewer tests, including zero, it exits with code `9`. An explicit minimum supersedes `--zero-tests-policy`.
+  Specifies a positive minimum number of tests that must run. When the run executes fewer tests, including zero, it exits with code `9`. An explicit minimum supersedes `--zero-tests-policy`.
 
   With `dotnet test`, this option applies to the whole run when it's specified before `--`, and to each test module when it's specified after `--`. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
 
   > [!NOTE]
-  > `--minimum-expected-tests 0` isn't an alias for `--ignore-exit-code 8`. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
+  > `--minimum-expected-tests 0` is invalid. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
 
 - **`--no-banner`**
 
@@ -187,7 +187,7 @@ This article gives a central entry point for MTP command-line options.
   Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds. With `strict`, it fails with exit code `8`. An explicit `--minimum-expected-tests` value supersedes this policy and uses exit code `9` when the minimum isn't met.
 
   > [!NOTE]
-  > This option is available in MTP starting with version 2.3.0.
+  > This option is available in MTP starting with version 4.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
 
 ## Extension options by scenario
 

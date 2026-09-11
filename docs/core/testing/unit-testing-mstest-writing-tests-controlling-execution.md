@@ -154,7 +154,7 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute
 
 When you enable in-assembly parallelization, MSTest partitions each test source (assembly) into parallelizable and nonparallelizable tests. MSTest runs the parallelizable set first, then runs the `DoNotParallelize` set one test at a time at the end of that source's run. In runs that include multiple test sources, each source has its own deferred tail. Because deferred tests can't overlap with other tests, a slow deferred test usually increases total run time by about its own duration.
 
-Because MSTest runs deferred tests only after the parallelizable phase finishes, a canceled or aborted run can end before MSTest executes deferred tests. The execution order described here is an internal implementation detail and isn't a public contract. It might change in a future version of MSTest. 
+Because MSTest runs deferred tests only after the parallelizable phase finishes, a canceled or aborted run can end before MSTest executes deferred tests. The execution order described here is an internal implementation detail and isn't a public contract. It might change in a future version of MSTest.
 
 ```csharp
 [assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]

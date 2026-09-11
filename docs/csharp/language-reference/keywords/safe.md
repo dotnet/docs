@@ -1,7 +1,7 @@
 ---
 description: "safe modifier - C# Reference"
 title: "safe modifier"
-ms.date: 09/10/2026
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "safe_CSharpKeyword"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # safe (C# Reference)
 
-The `safe` contextual keyword attests that a declaration is sound in places where the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview) requires you to make the safety choice explicit. You apply `safe` as a modifier on a declaration that the compiler can't classify on its own, such as an `extern` member or a field in a struct with explicit layout. The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
+The `safe` contextual keyword attests that a declaration is sound in places where the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview) requires you to make the safety choice explicit. You apply `safe` as a modifier on a declaration that the compiler can't classify on its own, such as an `extern` member or a field in a type with explicit or extended layout. The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
 
 > [!IMPORTANT]
 > The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. Set [`LangVersion`](../compiler-options/language.md#langversion) to `preview` to enable the syntax. To also enforce the updated rules, including explicit `safe` or `unsafe` choices and requires-unsafe caller obligations, opt in with `Features=updated-memory-safety-rules`. For activation details, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
@@ -31,9 +31,9 @@ internal static unsafe partial nint strlen(byte* str);
 
 `getpid` takes no parameters and returns a primitive, so the author attests that the call is safe, and callers use it without an `unsafe` context. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to its callers. With the updated rules enabled, omitting both modifiers is an error.
 
-## Explicit-layout fields
+## Explicit or extended layout fields
 
-In a struct with `[StructLayout(LayoutKind.Explicit)]`, fields can overlap in memory, so the compiler can't reason about whether a read through one field is sound. You mark every field of such a struct either `safe` or `unsafe`:
+In a type with `[StructLayout(LayoutKind.Explicit)]` or `[ExtendedLayout]`, the compiler can't classify every instance field's safety on its own. You mark every such field either `safe` or `unsafe`:
 
 ```csharp
 // Syntax requires LangVersion preview; enforcement requires the updated-rules opt-in.
@@ -48,7 +48,7 @@ internal struct Union
 }
 ```
 
-A field that holds a native pointer, or whose type otherwise carries an invariant the type system can't express, is `unsafe`. A field whose type is fully described by the type system is `safe`. As with `extern` members, omitting both modifiers is an error when the updated rules are enabled.
+A field that holds a native pointer, or whose type otherwise carries an invariant the type system can't express, is `unsafe`. A field whose type is fully described by the type system is `safe`. The same rule applies to explicit-layout fields and extended-layout fields. As with `extern` members, omitting both modifiers is an error when the updated rules are enabled.
 
 ## C# language specification
 

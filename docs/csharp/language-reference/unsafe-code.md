@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 09/10/2026
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -410,7 +410,7 @@ internal static safe partial int getpid();
 internal static unsafe partial nint strlen(byte* str);
 ```
 
-`getpid` takes no parameters and returns a primitive, so the author attests that the call is safe and callers use it without ceremony. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to callers. Omitting both modifiers is an error, which forces you to make the safety decision. A field in a struct with explicit layout uses the same rule.
+`getpid` takes no parameters and returns a primitive, so the author attests that the call is safe and callers use it without ceremony. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to callers. Omitting both modifiers is an error, which forces you to make the safety decision. A field in a type with explicit or extended layout uses the same rule.
 
 ## C# language specification
 

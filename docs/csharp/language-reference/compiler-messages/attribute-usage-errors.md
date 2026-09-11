@@ -48,6 +48,7 @@ f1_keywords:
   - "CS8968"
   - "CS8970"
   - "CS9331"
+  - "CS9351"
 helpviewer_keywords:
   - "CS0181"
   - "CS0243"
@@ -95,7 +96,8 @@ helpviewer_keywords:
   - "CS8968"
   - "CS8970"
   - "CS9331"
-ms.date: 07/16/2026
+  - "CS9351"
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -151,6 +153,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8968**](#attribute-arguments-and-parameters): *An attribute type argument cannot use type parameters*
 - [**CS8970**](#attribute-arguments-and-parameters): *Type cannot be used in this context because it cannot be represented in metadata.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
+- [**CS9351**](#predefined-attributes): *Use of 'StructLayoutAttribute' and 'ExtendedLayoutAttribute' on the same type is not allowed.*
 
 ## Attribute arguments and parameters
 
@@ -239,8 +242,9 @@ The following errors occur when you use specific predefined .NET attributes inco
 - **CS0739**: *Duplicate TypeForwardedToAttribute*
 - **CS1608**: *The RequiredAttribute attribute is not permitted on C# types*
 - **CS9331**: *Attribute cannot be applied manually.*
+- **CS9351**: *Use of 'StructLayoutAttribute' and 'ExtendedLayoutAttribute' on the same type is not allowed.*
 
-To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
+To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, [Unsafe code and pointers](../unsafe-code.md#the-updated-memory-safety-model-preview), and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
 
 - You can apply <xref:System.Runtime.CompilerServices.IndexerNameAttribute> only to indexers that aren't explicit interface member declarations (**CS0415**). Remove the attribute from explicit interface indexers, because the interface already defines the indexer name.
 - You can't apply `IndexerName` to indexers marked with `override` because override indexers inherit their name from the base class (**CS0609**). Remove the `IndexerName` attribute from the override indexer.
@@ -253,6 +257,7 @@ To correct these errors, follow these rules. For more information, see [Indexers
 - An assembly can have only one <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for each external type (**CS0739**). Locate and remove the duplicate `TypeForwardedTo` declaration.
 - You can't use the <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
 - Some attributes are reserved for the compiler and can't be applied manually in source code (**CS9331**). Replace the attribute with the equivalent C# language syntax that causes the compiler to generate it.
+- Don't apply both <xref:System.Runtime.InteropServices.StructLayoutAttribute> and `ExtendedLayoutAttribute` to the same type (**CS9351**). These two layout attributes represent mutually exclusive layout strategies under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview): explicit layout requires a `FieldOffset` on every instance field, while extended layout lets the runtime choose field offsets while still requiring each field to be marked `safe` or `unsafe`. Remove one of the two attributes from the type declaration.
 
 ## Conditional attribute usage
 

@@ -84,6 +84,8 @@ items:
                 href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
             items:
+              - name: Floating-point conversions to small integral types are saturating
+                href: jit/11/fp-to-small-integer.md
               - name: Minimum hardware requirements updated
                 href: jit/11/minimum-hardware-requirements.md
           - name: Networking

@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 08/14/2026
+ms.date: 09/11/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -46,7 +46,7 @@ The following table compares which operations require an `unsafe` context in eac
 | Element access on a fixed-size buffer                                          | Requires `unsafe`     | Requires `unsafe`    |
 | Call a member marked `unsafe`                                                  | No caller requirement | Requires `unsafe`    |
 
-To try the updated model, use the .NET 11 SDK (in preview) and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. The pointer relaxations apply whenever you compile with the C# 15 compiler and the `preview` language version. The full enforcement, including caller obligations and the assembly opt-in, is still under development. For more information, see [The updated memory safety model (preview)](#the-updated-memory-safety-model-preview).
+To try the preview syntax and pointer relaxations, use the .NET 11 SDK (in preview) and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. To also enable the updated rules, including caller obligations, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 ## The original unsafe model
 
@@ -215,23 +215,23 @@ This example accesses the elements of both arrays by using indices rather than a
 ## The updated memory safety model (preview)
 
 > [!IMPORTANT]
-> The updated memory safety model is a preview feature in C# 15 and .NET 11. It continues to evolve based on feedback during the preview releases. To try the model, use the .NET 11 (preview) SDK and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. The compiler currently implements the pointer relaxations and `unsafe` expressions, and it recognizes the `safe` keyword. It doesn't yet enforce caller-unsafe obligations or the assembly opt-in: there's no public opt-in property yet, so `unsafe` and `safe` have no effect on callers. For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+> The updated memory safety model is a preview feature in C# 15 and .NET 11. It continues to evolve based on feedback during the preview releases. For activation instructions, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
-The updated model separates two things the original model treats as one: the *existence* of pointer code and the *propagation* of safety obligations to callers. Marking a member `unsafe` no longer just permits pointers in its body; it makes the member *caller-unsafe*, so every caller must either propagate that obligation or discharge it behind a validated, safe-callable boundary. To support that separation, the model also narrows the unsafe context: the existence of a pointer isn't unsafe, only the operations that access memory the runtime doesn't manage. The narrowing lets you hold, pass, and return pointers in safe code, while `unsafe` marks the operations and members that can actually violate memory safety.
+The updated model separates two things the original model treats as one: the *existence* of pointer code and the *propagation* of safety obligations to callers. Marking a member `unsafe` no longer just permits pointers in its body; it makes the member *requires-unsafe*, so every caller must either propagate that obligation or discharge it behind a validated, safe-callable boundary. To support that separation, the model also narrows the unsafe context: the existence of a pointer isn't unsafe, only the operations that access memory the runtime doesn't manage. The narrowing lets you hold, pass, and return pointers in safe code, while `unsafe` marks the operations and members that can actually violate memory safety.
 
-### Caller-unsafe members
+### Requires-unsafe members
 
-In the original model, the `unsafe` modifier on a member only allows pointers in the member's signature and body. It doesn't inform callers about safety. The updated model gives the modifier meaning for callers. When you mark a member `unsafe`, the compiler treats it as *caller-unsafe* (also called *requires-unsafe*): every caller must invoke it from an `unsafe` context, and the obligation to audit safety moves to that caller.
+In the original model, the `unsafe` modifier on a member only allows pointers in the member's signature and body. It doesn't inform callers about safety. The updated model gives the modifier meaning for callers. When you mark a member `unsafe`, the compiler treats it as *requires-unsafe*: every caller must invoke it from an `unsafe` context, and the obligation to audit safety moves to that caller.
 
 The `unsafe` modifier on a member signature no longer establishes an unsafe context for the body. The two roles split:
 
 - The `unsafe` modifier on the signature propagates the obligation to callers.
 - An inner `unsafe` block scopes the operations that access unmanaged memory.
 
-In the following preview mockup, `ReadInt32` is caller-unsafe. The signature carries the `unsafe` modifier, and an inner `unsafe` block wraps the dereference:
+In the following preview example, `ReadInt32` is requires-unsafe. The signature carries the `unsafe` modifier, and an inner `unsafe` block wraps the dereference:
 
 ```csharp
-// Preview: illustrates the updated model, which the current compiler doesn't fully enforce yet.
+// Preview: requires the updated-memory-safety-rules feature.
 public static unsafe int ReadInt32(byte* source)
 {
     unsafe
@@ -300,9 +300,9 @@ An `unsafe` expression also lets you scope the unsafe context around one operand
 
 Like other unsafe code, an `unsafe` expression requires the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option, and it requires the `preview` language version.
 
-### Discharge caller-unsafe obligations
+### Discharge requires-unsafe obligations
 
-A member that calls a caller-unsafe operation has two choices: propagate the obligation or discharge it.
+A member that calls a requires-unsafe operation has two choices: propagate the obligation or discharge it.
 
 - **Propagate**: Mark your own member `unsafe`. The obligation passes to your callers. Use propagation when you can't fully validate the obligation yourself.
 - **Discharge**: Leave your member's signature safe. Validate the obligation inside the member, usually with runtime guards, then perform the unsafe operation in an inner `unsafe` block. A member that contains an inner `unsafe` block but doesn't mark its own signature `unsafe` is an *unsafe boundary*: it turns unsafe code into a safe-callable surface.
@@ -336,12 +336,12 @@ The null check and the array length rule out the inputs that would let a read ru
 
 ### Safety documentation
 
-A caller-unsafe member should document what the caller must guarantee. The updated model encourages two complementary comment styles:
+A requires-unsafe member should document what the caller must guarantee. The updated model encourages two complementary comment styles:
 
-- A `/// <safety>` documentation block above the signature states the formal contract: the conditions a caller must satisfy. An analyzer can flag a caller-unsafe member that's missing one.
+- A `/// <safety>` documentation block above the signature states the formal contract: the conditions a caller must satisfy. An analyzer can flag a requires-unsafe member that's missing one.
 - A `// SAFETY:` comment inside an `unsafe` block records why the operation is sound at that spot, for the developers and auditors who read the body.
 
-The following preview mockup shows both styles on a caller-unsafe `ReadByte` method:
+The following preview example shows both styles on a requires-unsafe `ReadByte` method:
 
 ```csharp
 // Preview
@@ -393,7 +393,7 @@ public class NativeBuffer
 }
 ```
 
-A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field caller-unsafe. In a struct with `[StructLayout(LayoutKind.Explicit)]`, you mark every field either `safe` or `unsafe`.
+A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field requires-unsafe. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
 
 ### The safe keyword
 
@@ -410,29 +410,7 @@ internal static safe partial int getpid();
 internal static unsafe partial nint strlen(byte* str);
 ```
 
-`getpid` takes no parameters and returns a primitive, so the author attests that the call is safe and callers use it without ceremony. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to callers. Omitting both modifiers is an error, which forces you to make the safety decision. A field in a struct with explicit layout uses the same rule.
-
-### Opt-in and cross-assembly behavior
-
-The updated model has two independent project-level switches:
-
-- A new opt-in property turns on the updated rules. When the property is off, the original rules apply. When it's on, `unsafe` on a member propagates to callers, and the compiler records the choice in the assembly with the <xref:System.Runtime.CompilerServices.MemorySafetyRulesAttribute> attribute.
-- The existing [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) property gates every appearance of the `unsafe` keyword, including the inner blocks at call sites. It defaults to `false`, so a project at the default can't call any unsafe API.
-
-The two properties combine as follows:
-
-| Opt-in property | `AllowUnsafeBlocks` | Result                                                                                  |
-|-----------------|---------------------|-----------------------------------------------------------------------------------------|
-| On              | Off (default)       | The safest configuration. The project uses the updated model and allows no unsafe code. |
-| On              | On                  | The project uses the updated model and allows unsafe code.                              |
-| Off             | Off                 | The original model applies, and the project can't use pointer types.                    |
-| Off             | On                  | The original model applies, and the project can use pointer types.                      |
-
-Whether one assembly enforces the updated rules against another depends on which side opts in:
-
-- **Updated-model caller, updated-model callee**: The callee's `unsafe` markers travel through metadata. The caller wraps each call to a caller-unsafe member in an `unsafe` block.
-- **Updated-model caller, original-model callee**: A compatibility mode treats any callee member with a pointer type in its signature as caller-unsafe, so the call site needs an enclosing `unsafe` block. This mode keeps a pointer-based API from silently losing its `unsafe` requirement.
-- **Original-model caller, updated-model callee**: The original pointer rules still apply. A caller-unsafe member that has no pointer type in its signature becomes callable from safe code, because the original-model caller can't read the new markers.
+`getpid` takes no parameters and returns a primitive, so the author attests that the call is safe and callers use it without ceremony. `strlen` takes a raw pointer that the native code dereferences, so the declaration is `unsafe` and propagates the obligation to callers. Omitting both modifiers is an error, which forces you to make the safety decision. A field in a type with explicit or extended layout uses the same rule.
 
 ## C# language specification
 

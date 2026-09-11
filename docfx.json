@@ -140,20 +140,11 @@
                 "csharp"
             ],
             "_op_documentIdPathDepotMapping": {
-                "docs/architecture/containerized-lifecycle/": {
-                    "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
-                },
                 "docs/architecture/microservices/": {
                     "folder_relative_path_in_docset": "docs/standard/microservices-architecture/"
                 },
                 "docs/architecture/modern-web-apps-azure/": {
                     "folder_relative_path_in_docset": "docs/standard/modern-web-apps-azure-architecture/"
-                },
-                "docs/architecture/modernize-with-azure-containers/": {
-                    "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
-                },
-                "docs/architecture/serverless/": {
-                    "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
                 }
             }
         },
@@ -167,7 +158,6 @@
                 "docs/standard/design-guidelines/**/**.md": "None",
                 "docs/xbox/**/**.md": "None",
                 "docs/framework/data/adonet/**/**.md": "None",
-                "docs/framework/data/wcf/**/**.md": "None",
                 "docs/framework/ui-automation/**/**.md": "None",
                 "docs/framework/wcf/**/**.md": "None"
             },
@@ -246,7 +236,6 @@
                 "docs/core/whats-new/**/*.md": "whats-new",
                 "docs/csharp/advanced-topics/interface-implementation/**.md": "tutorial",
                 "docs/csharp/fundamentals/program-structure/**.md": "concept-article",
-                "docs/csharp/getting-started/**/*.md": "overview",
                 "docs/csharp/how-to/**/*.md": "how-to",
                 "docs/csharp/language-reference/**/*.md": "language-reference",
                 "docs/csharp/language-reference/compiler-messages/*.md": "error-reference",
@@ -300,12 +289,11 @@
                 "docs/visual-basic/programming-guide/concepts/**/*.md": "concept-article",
                 "docs/visual-basic/programming-guide/language-features/constants-enums/*.md": "concept-article",
                 "docs/visual-basic/**/troubleshooting*.md": "troubleshooting",
-                "docs/windows-workflow-foundation/1*.md": "error-reference",
-                "docs/windows-workflow-foundation/2*.md": "error-reference",
-                "docs/windows-workflow-foundation/3*.md": "error-reference",
-                "docs/windows-workflow-foundation/4*.md": "error-reference",
-                "docs/windows-workflow-foundation/5*.md": "error-reference",
-                "docs/whats-new/**/*.md": "whats-new",
+                "docs/framework/windows-workflow-foundation/1*.md": "error-reference",
+                "docs/framework/windows-workflow-foundation/2*.md": "error-reference",
+                "docs/framework/windows-workflow-foundation/3*.md": "error-reference",
+                "docs/framework/windows-workflow-foundation/4*.md": "error-reference",
+                "docs/framework/windows-workflow-foundation/5*.md": "error-reference",
                 "includes/**/**.md": "include"
             },
             "dev_langs": {
@@ -328,7 +316,6 @@
                 "_vblang/spec/*.{md,yml}": "billwagner",
                 "docs/ai/**/*.{md,yml}": "gewarren",
                 "docs/architecture/**/**.{md,yml}": "jamesmontemagno",
-                "docs/architecture/grpc-for-wcf-developers/**/**.{md,yml}": "JamesNK",
                 "docs/azure/**/*.{md,yml}": "alexwolfmsft",
                 "docs/core/**/**.{md,yml}": "gewarren",
                 "docs/core/compatibility/**/**.{md,yml}": "gewarren",
@@ -359,11 +346,9 @@
                 "docs/framework/get-started/**/**.{md,yml}": "gewarren",
                 "docs/framework/install/**/**.{md,yml}": "adegeo",
                 "docs/framework/migration-guide/**/**.{md,yml}": "gewarren",
-                "docs/framework/misc/**/**.{md,yml}": "gewarren",
                 "docs/framework/network-programming/**/**.{md,yml}": "karelz",
                 "docs/framework/performance/**/**.{md,yml}": "billwagner",
                 "docs/framework/reflection-and-codedom/**/**.{md,yml}": "adegeo",
-                "docs/framework/resources/**/**.{md,yml}": "adegeo",
                 "docs/framework/tools/**/**.{md,yml}": "gewarren",
                 "docs/framework/ui-automation/**/**.{md,yml}": "adegeo",
                 "docs/framework/unmanaged-api/alink/**/**.{md,yml}": "jeffschwMSFT",
@@ -399,7 +384,6 @@
                 "docs/standard/exceptions/**/**.{md,yml}": "gewarren",
                 "docs/standard/garbage-collection/**/**.{md,yml}": "gewarren",
                 "docs/standard/generics/**/**.{md,yml}": "adegeo",
-                "docs/standard/globalization-localization/**/**.{md,yml}": "adegeo",
                 "docs/standard/io/**/**.{md,yml}": "adegeo",
                 "docs/standard/library-guidance/**/**.{md,yml}": "jamesnk",
                 "docs/standard/linq/**/**.{md,yml}": "billwagner",
@@ -411,7 +395,6 @@
                 "docs/standard/threading/**/**.{md,yml}": "billwagner",
                 "docs/standard/whats-new/**/**.{md,yml}": "gewarren",
                 "docs/visual-basic/**/**.{md,yml}": "billwagner",
-                "docs/whats-new/**/**.{md,yml}": "gewarren",
                 "includes/**/**.md": "docs"
             },
             "ms.author": {
@@ -421,7 +404,6 @@
                 "_vblang/spec/*.{md,yml}": "wiwagn",
                 "docs/ai/**/*.{md,yml}": "gewarren",
                 "docs/architecture/**/**.{md,yml}": "jamont",
-                "docs/architecture/grpc-for-wcf-developers/**/**.{md,yml}": "jamesnk",
                 "docs/azure/**/*.{md,yml}": "alexwolf",
                 "docs/orleans/**/*.{md,yml}": "mosagie",
                 "docs/core/**/**.{md,yml}": "dotnetcontent",
@@ -433,7 +415,7 @@
                 "docs/core/install/**/**.{md,yml}": "adegeo",
                 "docs/core/native-interop/**/**.{md,yml}": "jekoritz",
                 "docs/core/porting/**/**.{md,yml}": "dotnetcontent",
-                "docs/core/porting/github-copilot-app-modernization/**/*.{md,yml}": "adegeo",
+                "docs/core/porting/github-copilot-upgrade/**/*.{md,yml}": "adegeo",
                 "docs/core/project-sdk/**/**.{md,yml}": "gewarren",
                 "docs/core/resilience/**/**.{md,yml}": "gewarren",
                 "docs/core/runtime-config/**/**.{md,yml}": "gewarren",
@@ -451,11 +433,9 @@
                 "docs/framework/get-started/**/**.{md,yml}": "gewarren",
                 "docs/framework/install/**/**.{md,yml}": "adegeo",
                 "docs/framework/migration-guide/**/**.{md,yml}": "gewarren",
-                "docs/framework/misc/**/**.{md,yml}": "gewarren",
                 "docs/framework/network-programming/**/**.{md,yml}": "ncldev",
                 "docs/framework/performance/**/**.{md,yml}": "wiwagn",
                 "docs/framework/reflection-and-codedom/**/**.{md,yml}": "adegeo",
-                "docs/framework/resources/**/**.{md,yml}": "adegeo",
                 "docs/framework/tools/**/**.{md,yml}": "gewarren",
                 "docs/framework/ui-automation/**/**.{md,yml}": "adegeo",
                 "docs/framework/unmanaged-api/alink/**/**.{md,yml}": "jeffschw",
@@ -488,7 +468,6 @@
                 "docs/standard/exceptions/**/**.{md,yml}": "gewarren",
                 "docs/standard/garbage-collection/**/**.{md,yml}": "gewarren",
                 "docs/standard/generics/**/**.{md,yml}": "adegeo",
-                "docs/standard/globalization-localization/**/**.{md,yml}": "dotnetcontent",
                 "docs/standard/io/**/**.{md,yml}": "adegeo",
                 "docs/standard/library-guidance/**/**.{md,yml}": "jamesnk",
                 "docs/standard/linq/**/**.{md,yml}": "dotnetcontent",
@@ -522,12 +501,8 @@
                 "docs/ai/**/**.{md,yml}": "intelligent-apps",
                 "docs/architecture/blazor-for-web-forms-developers/**/**.{md,yml}": "blazor",
                 "docs/architecture/cloud-native/**/**.{md,yml}": "cloud-native",
-                "docs/architecture/containerized-lifecycle/**/**.{md,yml}": "containerized-lifecycle",
-                "docs/architecture/grpc-for-wcf-developers/**/**.{md,yml}": "grpc",
                 "docs/architecture/microservices/**/**.{md,yml}": "microservices",
-                "docs/architecture/modernize-with-azure-containers/**/**.{md,yml}": "modernize-with-azure-containers",
                 "docs/architecture/modern-web-apps-azure/**/**.{md,yml}": "modern-web-apps-azure",
-                "docs/architecture/serverless/**/**.{md,yml}": "serverless",
                 "docs/azure/migration/appmod/**.{md,yml}": "migration-copilot",
                 "docs/csharp/misc/**/**.{md,yml}": "errors-warnings",
                 "docs/csharp/whats-new/**/**.{md,yml}": "whats-new",
@@ -541,24 +516,12 @@
                 "docs/csharp/programming-guide/generics/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/strings/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/types/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/statements-expressions-operators/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/exceptions/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/namespaces/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/arrays/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/concepts/covariance-contravariance/**/**.{md,yml}": "advanced-concepts",
-                "docs/csharp/programming-guide/concepts/serialization/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/concepts/expression-trees/**/**.{md,yml}": "advanced-concepts",
-                "docs/csharp/programming-guide/concepts/linq/**/**.{md,yml}": "csharp-linq",
-                "docs/csharp/programming-guide/concepts/attributes/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/xmldoc/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/classes-and-structs/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/delegates/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/programming-guide/file-system/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/events/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/programming-guide/interfaces/**/**.{md,yml}": "fundamentals",
                 "docs/csharp/tutorials/**/**.{md,yml}": "fundamentals",
-                "docs/csharp/tutorials/exploration/**/**.{md,yml}": "get-started",
-                "docs/csharp/tutorials/intro-to-csharp/**/**.{md,yml}": "get-started",
                 "docs/csharp/language-reference/**/**.{md,yml}": "lang-reference",
                 "docs/csharp/language-reference/compiler-messages/**/**.{md,yml}": "errors-warnings",
                 "docs/csharp/roslyn-sdk/**/**.{md,yml}": "roslyn-sdk",
@@ -568,8 +531,6 @@
                 "docs/framework/configure-apps/file-schema/network/**/**.{md,yml}": "networking",
                 "docs/framework/configure-apps/file-schema/wcf/**/**.{md,yml}": "wcf",
                 "docs/framework/data/adonet/**/**.{md,yml}": "data-access",
-                "docs/framework/data/wcf/**/**.{md,yml}": "wcf",
-                "docs/framework/docker/**/**.{md,yml}": "dotnet-docker",
                 "docs/framework/install/**/**.{md,yml}": "install-deployment",
                 "docs/framework/network-programming/**/**.{md,yml}": "networking",
                 "docs/framework/wcf/**/**.{md,yml}": "wcf",
@@ -731,19 +692,15 @@
                 "docs/framework/**/*.{md,yml}": ".NET Framework",
                 "docs/framework/data/adonet/**/*.{md,yml}": "ADO.NET",
                 "docs/framework/wcf/**/*.{md,yml}": "WCF",
-                "docs/framework/winforms/**/*.{md,yml}": "Windows Forms",
-                "docs/framework/wpf/**/*.{md,yml}": "WPF",
                 "docs/fsharp/tutorials/**/*.{md,yml}": "F#",
                 "docs/fsharp/language-reference/**/*.{md,yml}": "F#",
                 "docs/fundamentals/**/*.{md,yml}": ".NET",
                 "docs/core/additional-tools/**.{md,yml}": ".NET",
-                "docs/core/build/**.{md,yml}": ".NET",
                 "docs/core/install/**.{md,yml}": ".NET",
                 "docs/core/compatibility/**.{md,yml}": ".NET",
                 "docs/core/deploying/**.{md,yml}": ".NET",
                 "docs/core/docker/**.{md,yml}": ".NET",
                 "docs/core/extensions/**.{md,yml}": ".NET",
-                "docs/core/migration/**.{md,yml}": ".NET Core",
                 "docs/core/porting/**.{md,yml}": ".NET Core",
                 "docs/core/runtime-config/**.{md,yml}": ".NET",
                 "docs/core/project-sdk/**.{md,yml}": ".NET",
@@ -769,7 +726,7 @@
             },
             "ms.collection": {
                 "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot",
-                "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "ce-skilling-ai-copilot"
+                "docs/core/porting/github-copilot-upgrade/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
             "ms.custom": {
                 "docs/ai/**/**.{md,yml}": "devx-track-dotnet",
@@ -781,7 +738,7 @@
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
                 "docs/core/compatibility/**/**.{md,yml}": "3650-days",
-                "docs/core/porting/github-copilot-app-modernization/**/**.{md,yml}": "180-days",
+                "docs/core/porting/github-copilot-upgrade/**/**.{md,yml}": "180-days",
                 "docs/csharp/advanced-topics/interop/**/**.{md,yml}": "1825-days",
                 "docs/csharp/advanced-topics/reflection-and-attributes/**/**.{md,yml}": "1825-days",
                 "docs/csharp/fundamentals/exceptions/**/**.{md,yml}": "1825-days",

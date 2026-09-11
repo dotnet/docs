@@ -477,7 +477,7 @@ items:
       command line, msbuild, dotnet build, csc,
       CS0006, CS0007, CS0016, CS1564, CS1616, CS1668, CS1719, CS1773, CS2008, CS2019,
       CS2029, CS2032, CS2036, CS2038, CS2039, CS2040, CS2041, CS2042, CS2043, CS2044,
-      CS2045, CS2046, CS3012, CS3013, CS7038, CS8751, CS8771, CS8772
+      CS2045, CS2046, CS3012, CS3013, CS7038, CS8751, CS8771, CS8772, CS9400
   - name: Preprocessor errors
     href: ./compiler-messages/preprocessor-errors.md
     displayName: >
@@ -495,8 +495,8 @@ items:
       CS0181, CS0243, CS0404, CS0415, CS0416, CS0447, CS0577, CS0578, CS0579, CS0582,
       CS0592, CS0609, CS0616, CS0625, CS0629, CS0636, CS0637, CS0641, CS0646, CS0647,
       CS0653, CS0657, CS0658, CS0668, CS0685, CS0735, CS0739, CS1608, CS1614, CS1618,
-      CS1667, CS1689, CS7014, CS7046, CS7047, CS7067, CS8423, CS8783, CS8959, CS8960, CS8961,
-      CS8962, CS8963, CS8968, CS8970, CS9331
+      CS1667, CS1689, CS7014, CS7046, CS7047, CS7067, CS8423, CS8783, CS8959, CS8960,
+      CS8961, CS8962, CS8963, CS8968, CS8970, CS9331, CS9351
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
     displayName: >
@@ -507,7 +507,7 @@ items:
       CS8888, CS8889, CS8890, CS8891, CS8904, CS8912, CS8919, CS8929, CS8936, CS8957,
       CS8967, CS9014, CS9015, CS9016, CS9017, CS9041, CS9058, CS9064, CS9103, CS9171,
       CS9194, CS9202, CS9204, CS9240, CS9260, CS9268, CS9269, CS9271, CS9327, CS9328,
-      CS9346, CS9352
+      CS9346, CS9352, CS9399
   - name: Assembly references
     href: ./compiler-messages/assembly-references.md
     displayName: >
@@ -808,7 +808,8 @@ items:
       CS0233, CS0242, CS0244, CS0254, CS0459, CS0821, CS1641, CS1642, CS1656, CS1663,
       CS1664, CS1665, CS1666, CS1708, CS1716, CS1919, CS4004, CS7092, CS8372, CS8385,
       CS8500, CS8812, CS9049, CS9123, CS9360, CS9361, CS9362, CS9363, CS9364, CS9365,
-      CS9366, CS9367, CS9368, CS9376, CS9377, CS9379, CS9388, CS9389, CS9390
+      CS9366, CS9367, CS9368, CS9376, CS9377, CS9379, CS9388, CS9389, CS9390, CS9392,
+      CS9396, CS9397, CS9398
   - name: Warning waves
     href: ./compiler-messages/warning-waves.md
     displayName: >
@@ -1615,6 +1616,8 @@ items:
       href: ./compiler-messages/cs8333.md
     - name: CS8334
       href: ./compiler-messages/cs8334.md
+    - name: CS8347
+      href: ./compiler-messages/cs8347.md
     - name: CS8352
       href: ./compiler-messages/cs8352.md
     - name: CS8354

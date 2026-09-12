@@ -21,6 +21,13 @@ GeneratedImage generatedImage = await client.GenerateImageAsync("""
     A postal card with an happy hiker waving and a beautiful mountain in the background.
     There is a trail visible in the foreground.
     The postal card has text in red saying: 'You are invited for a hike!'
-    """, new ImageGenerationOptions { Size = GeneratedImageSize.W1024xH1024 });
+    """, new ImageGenerationOptions { Size = GeneratedImageSize.W1024xH1024, ResponseFormat = GeneratedImageFormat.Uri });
 
-Console.WriteLine($"The generated image is ready at:\n{generatedImage.ImageUri}");
+if (generatedImage.ImageUri != null)
+{
+    Console.WriteLine($"The generated image is ready at:\n{generatedImage.ImageUri}");
+}
+else
+{
+    Console.WriteLine("Error: Image URI is null. Check your API key and model name.");
+}

@@ -34,6 +34,7 @@ is a full-featured service provided by Microsoft. For more information, see [Col
 
 For more information, see [Understand distributed tracing concepts](distributed-tracing-concepts.md) and the following guides:
 
+- [Configure distributed tracing](distributed-tracing-configuration.md)
 - [Collect distributed traces with custom logic](distributed-tracing-collection-walkthroughs.md#collect-traces-using-custom-logic)
 - [Adding custom distributed trace instrumentation](distributed-tracing-instrumentation-walkthroughs.md)
 

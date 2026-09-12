@@ -91,7 +91,7 @@ The following table describes the main packages.
 
 This topic is continued with a couple of example walkthroughs for using OpenTelemetry in .NET:
 
-- [Example: Use OTLP and the standalone Aspire Dashboard](./observability-otlp-example.md)
+- [Use OTLP and the Aspire Dashboard](./observability-otlp-example.md)
 - [Example: Use OpenTelemetry with Azure Monitor and Application Insights](./observability-applicationinsights.md)
 - [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](./observability-prgrja-example.md)
 

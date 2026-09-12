@@ -1,15 +1,13 @@
 ---
-title: Debugging deadlock - .NET Core
-description: A tutorial that walks you through debugging a locking issue in .NET Core.
+title: Debugging deadlock - .NET
+description: A tutorial that walks you through debugging a locking issue in .NET.
 ms.topic: tutorial
-ms.date: 07/20/2020
+ms.date: 09/08/2026
 ---
 
-# Debug a deadlock in .NET Core
+# Debug a deadlock in .NET
 
-**This article applies to: ✔️** .NET Core 3.1 SDK and later versions
-
-In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
+In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios), you can cause a deadlock intentionally. The endpoint will stop responding and experience thread accumulation. You'll learn how to collect and analyze a process dump to identify the blocked threads, lock owners, and wait cycle.
 
 In this tutorial, you will:
 
@@ -25,10 +23,9 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- A supported [.NET SDK](https://dotnet.microsoft.com/download/dotnet)
 - [Sample debug target - web app](/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario
-- [dotnet-trace](dotnet-trace.md) to list processes
-- [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file
+- [dotnet-dump](dotnet-dump.md) to list processes and collect and analyze a dump file
 
 ## Core dump generation
 
@@ -41,14 +38,18 @@ dotnet run
 To find the process ID, use the following command:
 
 ```dotnetcli
-dotnet-trace ps
+dotnet-dump ps
 ```
 
 Take note of the process ID from your command output. Our process ID was `4807`, but yours will be different. Navigate to the following URL, which is an API endpoint on the sample site:
 
 `https://localhost:5001/api/diagscenario/deadlock`
 
-The API request to the site will stop responding. Let the request run for about 10-15 seconds. Then create the core dump using the following command:
+The API request to the site will stop responding. Let the request run for about 10-15 seconds.
+
+A dump is the recommended artifact for an existing deadlock because it preserves the current threads, lock owners, and wait cycle. If the deadlock is intermittent or you need to understand how it formed, start a contention and thread-time trace before reproducing it. For a Linux example, see [Capture deadlock formation](dotnet-trace-collect-linux-scenarios.md#capture-deadlock-formation).
+
+Create the core dump using the following command:
 
 ### [Linux](#tab/linux)
 
@@ -259,7 +260,6 @@ The second thread is similar. It's also trying to acquire a lock that it already
 
 ## See also
 
-- [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
 - [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
@@ -267,4 +267,4 @@ The second thread is similar. It's also trying to acquire a lock that it already
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What diagnostic tools are available in .NET Core](index.md)
+> [What diagnostic tools are available in .NET](index.md)

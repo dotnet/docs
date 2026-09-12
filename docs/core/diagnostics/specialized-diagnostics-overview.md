@@ -1,7 +1,7 @@
 ---
 title: Specialized Diagnostics
 description: A guide to more advanced diagnostics support in .NET
-ms.date: 05/19/2023
+ms.date: 09/04/2026
 ---
 # Specialized diagnostics
 
@@ -11,11 +11,11 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 
 [Event Source](./eventsource.md) provides the ability to collect detailed diagnostic information about what's happening inside .NET processes. It includes telemetry information for the runtime, GC, libraries, and application code.
 
-Event Source data can be collected in-process using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> API or with external diagnostics tools such as [Visual Studio](/visualstudio/profiling), [dotnet-monitor](./dotnet-monitor.md), [dotnet-trace](./dotnet-trace.md), [PerfView](https://github.com/microsoft/perfview), and the [Perfcollect](./trace-perfcollect-lttng.md) scripts. Using the external tools to collect event source data in traces is commonly used for performance analysis.
+Event Source data can be collected in-process using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> API or with external diagnostics tools such as [Visual Studio](/visualstudio/profiling), [dotnet-monitor](./dotnet-monitor.md), [dotnet-trace](./dotnet-trace.md), [PerfView](https://github.com/microsoft/perfview), and [PerfCollect](./trace-perfcollect-lttng.md). On Linux, use [`dotnet-trace collect-linux`](./dotnet-trace.md#dotnet-trace-collect-linux) when runtime events must be correlated with native call stacks and kernel events.
 
 ### EventPipe
 
-[EventPipe](./eventpipe.md) is a runtime component that can be used to collect tracing data, similar to ETW or LTTng. The goal of EventPipe is to allow .NET developers to easily trace their .NET applications without having to rely on platform-specific, OS-native components, such as ETW or LTTng.
+[EventPipe](./eventpipe.md) is a runtime component that can be used to collect tracing data, similar to ETW or `perf_events`. The goal of EventPipe is to allow .NET developers to easily trace their .NET applications without having to rely on platform-specific, OS-native components, such as ETW or `perf_events`.
 
 EventPipe is the mechanism behind many of the diagnostic tools. It can be used for consuming events emitted by the runtime as well as custom events written with [EventSource](xref:System.Diagnostics.Tracing.EventSource).
 
@@ -46,4 +46,5 @@ The same diagnostics tools that are used in non-containerized Linux environments
 ## See also
 
 - [Debug high CPU usage](./debug-highcpu.md)
+- [Collect a Linux trace with dotnet-trace](./dotnet-trace.md#dotnet-trace-collect-linux)
 - [Collect a performance trace in Linux with PerfCollect](./trace-perfcollect-lttng.md)

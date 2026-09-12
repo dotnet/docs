@@ -2,7 +2,7 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 09/08/2026
+ms.date: 09/12/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
@@ -342,6 +342,14 @@ dotnet test dirs.proj
 ### dotnet test reporter and artifacts improvements
 
 Reporter and artifact handling has been improved for multi-module runs, including expected-versus-actual rendering in failure output, whole-run zero-test verdict logic, and automatic post-processing of compatible test artifacts.
+
+### Known dotnet test issues in RC 1
+
+The following issues affect .NET 11 RC 1 build `11.0.100-rc.1.26425.128`:
+
+- Relative project paths can be combined twice and cause an unhandled project-load exception. Until [dotnet/sdk#56196](https://github.com/dotnet/sdk/issues/56196) is fixed, pass an absolute project path.
+- In MTP mode, an all-skipped run can return exit code 8 even when `--zero-tests-policy allow-skipped` or `--ignore-exit-code 8` is set. The fix is tracked by [dotnet/sdk#56214](https://github.com/dotnet/sdk/issues/56214) and [dotnet/sdk#56219](https://github.com/dotnet/sdk/pull/56219).
+- MTP failures report only the numeric exit code instead of the descriptive text available in MTP 2.4. Use the [MTP exit-code table](../../testing/microsoft-testing-platform-troubleshooting.md#exit-codes) to interpret the code. Servicing is tracked by [dotnet/sdk#56104](https://github.com/dotnet/sdk/issues/56104).
 
 ### Test templates support xUnit v3 and NUnit on Microsoft.Testing.Platform
 

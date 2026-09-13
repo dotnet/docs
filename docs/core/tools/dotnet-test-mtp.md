@@ -81,7 +81,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 > [!NOTE]
 > You can use only one of the following options at a time: `--project`, `--solution`, or `--test-modules`. These options can't be combined.
-> In addition, when you use `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, `--runtime`, or `--use-current-runtime`. These options aren't relevant for an already-built module.
+> In addition, when you use `--test-modules`, you can't specify `--arch`, `--configuration`, `--device`, `--framework`, `--list-devices`, `--os`, `--runtime`, or `--use-current-runtime`. These options require project evaluation or aren't relevant for an already-built module.
 
 - **`PROJECT_OR_TRAVERSAL_PATH`**
 
@@ -135,13 +135,13 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
   Stops the complete run after it reaches the specified number of failed, errored, timed-out, or canceled tests. The run exits with code 13.
 
-  Available starting with .NET 11 RC 1 and requires MTP 2.4 or later.
+  Available starting with .NET 11 Preview 7 and requires MTP 2.4 or later.
 
 - **`--timeout <DURATION>`**
 
   Stops the complete run after the specified duration while at least one test application is running. Specify a positive number followed by a unit, such as `500ms`, `90s`, `10m`, `2h`, or `1d`. A timed-out run exits with code 3.
 
-  Available starting with .NET 11 RC 1 and requires MTP 2.4 or later.
+  Available starting with .NET 11 Preview 7 and requires MTP 2.4 or later.
 
 - **`-e|--environment <NAME="VALUE">`**
 

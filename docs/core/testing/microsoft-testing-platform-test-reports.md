@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 09/12/2026
 ai-usage: ai-assisted
 ---
 
@@ -148,7 +148,9 @@ The terminal summary identifies flaky and retried tests. TRX and JUnit reports k
 
 ## Azure DevOps reports
 
-Azure DevOps report plugin enhances test running for developers that host their code on GitHub, but build on Azure DevOps build agents. It adds additional information to failures to show failure directly in GitHub PR.
+The Azure DevOps report extension integrates MTP test runs with Azure Pipelines. It formats errors and warnings for pipeline logs, adds annotations for failed and skipped tests, creates a Markdown job summary, and can group output by test assembly. The extension can also identify flaky or quarantined failures, upload test artifacts, and stream results to an Azure DevOps test run.
+
+When you host your code on GitHub but run tests on Azure Pipelines agents, failure annotations can appear directly in the GitHub pull request:
 
 ![Error annotation in GitHub PR files view](./media/test-azdoreport-failure.png)
 

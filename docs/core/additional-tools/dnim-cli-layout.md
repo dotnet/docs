@@ -16,7 +16,7 @@ ms.date: 08/11/2026
 ```dotnetcli
 dnim-win-[x86|x64|arm64] layout <DIRECTORY> [-a|--accept-license]
     [--include-installers]
-    [--include-previes] 
+    [--include-previews]
     [-l|--log-file <LOG_FILE>] 
     [--latest]
     [-v|--verbosity <quiet|normal|diagnostic>]

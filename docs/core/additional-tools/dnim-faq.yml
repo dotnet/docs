@@ -11,6 +11,18 @@ summary: |
   The .NET Install Manager (*DNIM*) is a command-line tool used to identify, remove or update .NET installations on Windows. It's primarily intended to assist organizations in removing vulnerable copies of .NET from devices to meet compliance targets.
 
 sections:
+  - name: General
+    questions:
+      - question: Does DNIM require internet access?
+        answer: |
+          It depends. The [`layout`](dnim-cli-layout.md) command needs to download release information and installer executables. Other commands like [`scan`](dnim-cli-scan.md) supports offline execution.
+  - name: Best Practices
+    questions:
+      - question: What is the recommended approach to remove end-of-life versions of .NET?
+        answer: |
+          - Start with a small pilot to gather information and understand the state of devices.
+          - Consider using [Visual Studio](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=visualstudio#remove-out-of-support-components) to remove old .NET components it installed.
+          - Deploy DNIM using `--sp eol` and remove any installs that were left behind or orphaned using `--remove-orphaned-installs` and `--remove-EOL-versions-from-VS`.
   - name: Troubleshooting
     questions:
       - question: Can DNIM be used with application monitoring and profiling tools like Datadog?

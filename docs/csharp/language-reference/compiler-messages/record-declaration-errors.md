@@ -24,6 +24,7 @@ f1_keywords:
   - "CS8907"
   - "CS8908"
   - "CS8913"
+  - "CS9391"
 helpviewer_keywords:
   - "CS8851"
   - "CS8857"
@@ -47,7 +48,8 @@ helpviewer_keywords:
   - "CS8907"
   - "CS8908"
   - "CS8913"
-ms.date: 04/29/2026
+  - "CS9391"
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for record declarations
@@ -78,6 +80,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8906**](#synthesized-member-signatures): *Record equality contract property 'member' must have a get accessor.*
 - [**CS8908**](#positional-members): *The type 'type' may not be used for a field of a record.*
 - [**CS8913**](#positional-members): *The positional member 'member' found corresponding to this parameter is hidden.*
+- [**CS9391**](#synthesized-member-signatures): *Record member 'member' must be declared explicitly because 'base member' is abstract.*
 
 In addition, this article covers the following warning:
 
@@ -96,6 +99,7 @@ In addition, this article covers the following warning:
 - **CS8877**: *Record member 'member' may not be static.*
 - **CS8879**: *Record member 'member' must be private.*
 - **CS8906**: *Record equality contract property 'member' must have a get accessor.*
+- **CS9391**: *Record member 'member' must be declared explicitly because 'base member' is abstract.*
 
 When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-record-classes) in the C# language specification.
 
@@ -111,6 +115,7 @@ To correct these errors, apply the following changes to your explicitly declared
 - Ensure that your explicitly declared member overrides the expected method from `object` or from the base record type. For example, the `Equals` method must override `object.Equals`, and `GetHashCode` must override `object.GetHashCode`. The compiler checks that these members participate in the correct override chain so that [value-based equality](../builtin-types/record.md#value-equality) and other synthesized behaviors work correctly across the type hierarchy (**CS8869**, **CS8871**).
 - Ensure that your explicitly declared `EqualityContract` property overrides the base record's `EqualityContract` property. The compiler relies on the override chain for the equality contract to distinguish record types at run time within the [inheritance hierarchy](../builtin-types/record.md#equality-in-inheritance-hierarchies) (**CS8876**).
 - Add a `get` accessor to the `EqualityContract` property. The compiler reads the equality contract at run time to determine whether two record instances are of the same type, so the property must be readable (**CS8906**).
+- Explicitly declare and implement the reported member in the derived record. The compiler can't synthesize that member when its generated body would call the reported abstract base member (**CS9391**).
 
 ## Positional members
 

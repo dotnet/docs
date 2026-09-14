@@ -1,13 +1,14 @@
 ---
-title: Manage package dependencies in .NET
-description: Explains how to manage NuGet package dependencies for a .NET application.
-no-loc: [dotnet package add, dotnet package remove, dotnet package list]
+title: Manage dependencies in .NET
+description: Explains how to manage package, project, and assembly dependencies for a .NET application.
+no-loc: [dotnet package add, dotnet package remove, dotnet package list, dotnet reference add, dotnet reference remove]
 ms.topic: how-to
-ms.date: 01/28/2021
+ms.date: 09/14/2026
+ai-usage: ai-generated
 ---
-# Manage package dependencies in .NET applications
+# Manage dependencies in .NET applications
 
-This article explains how to add and remove package dependencies by editing the project file or by using the CLI.
+This article explains how to add and remove package, project, and assembly dependencies.
 
 ## The `<PackageReference>` element
 
@@ -27,7 +28,7 @@ Use conditions to add a dependency that's available only in a specific target, a
 
 The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET applications, you don't need to do this.
 
-## Add and remove dependencies
+## Add and remove package dependencies
 
 You can add and remove dependencies by editing your project file or through [.NET CLI](index.md) commands.
 
@@ -65,6 +66,42 @@ To remove a dependency, run the [dotnet package remove](dotnet-package-remove.md
 dotnet package remove Microsoft.EntityFrameworkCore
 ```
 
+## Project references
+
+Use a project-to-project reference when your project depends on another project. The `<ProjectReference>` project file element identifies the path to the referenced project:
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="../MyLibrary/MyLibrary.csproj" />
+</ItemGroup>
+```
+
+To add a project reference, run the [dotnet reference add](dotnet-reference-add.md) command. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet add reference` form instead.)
+
+```dotnetcli
+dotnet reference add ../MyLibrary/MyLibrary.csproj
+```
+
+To remove a project reference, remove the `<ProjectReference>` element from the project file or run the [dotnet reference remove](dotnet-reference-remove.md) command:
+
+```dotnetcli
+dotnet reference remove ../MyLibrary/MyLibrary.csproj
+```
+
+## Assembly references
+
+To reference a .NET assembly that isn't part of a project or package, add a `<Reference>` element to the project file. Use the `<HintPath>` element to specify the relative or absolute path to the assembly:
+
+```xml
+<ItemGroup>
+  <Reference Include="MyAssembly">
+    <HintPath>lib/MyAssembly.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+The .NET CLI doesn't provide a command to add assembly references. To remove an assembly reference, remove its `<Reference>` element from the project file.
+
 ## Tips
 
 - Don't include inputs to the restore operation in the *.targets* or *.props* file of a referenced package. These inputs can include `PackageReference` items, `ExcludeAssets` attributes, the NuGet feeds to use, or other NuGet configuration. The *.targets* and *.props* files from packages aren't used until after NuGet restore is complete. Anything needed for restore needs to be in the project file or *.targets* file of the project itself, not a package dependency.
@@ -76,6 +113,7 @@ dotnet package remove Microsoft.EntityFrameworkCore
 
 ## See also
 
-* [Package references in project files](../project-sdk/msbuild-props.md#reference-related-properties)
+* [Reference-related project items](../project-sdk/msbuild-props.md#reference-related-properties)
+* [Common MSBuild project items](/visualstudio/msbuild/common-msbuild-project-items)
 * [dotnet package list command](dotnet-package-list.md)
 * [Dependencies (library guidance)](../../standard/library-guidance/dependencies.md)

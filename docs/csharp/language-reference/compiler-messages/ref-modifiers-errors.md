@@ -56,6 +56,8 @@ f1_keywords:
   - "CS9200"
   - "CS9201"
   - "CS9265"
+  - "CS9349"
+  - "CS9350"
 helpviewer_keywords:
   - "CS0192"
   - "CS0199"
@@ -111,8 +113,10 @@ helpviewer_keywords:
   - "CS9200"
   - "CS9201"
   - "CS9265"
+  - "CS9349"
+  - "CS9350"
 ai-usage: ai-assisted
-ms.date: 11/21/2025
+ms.date: 09/14/2026
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
@@ -163,6 +167,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9104**](#reference-variable-restrictions): *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
 - [**CS9190**](#incorrect-syntax): *`readonly` modifier must be specified after `ref`.*
 - [**CS9199**](#reference-variable-restrictions): *A `ref readonly` parameter cannot have the Out attribute.*
+- [**CS9349**](#incorrect-syntax): *The 'scoped' modifier cannot come after an 'in', 'out', 'ref' or 'readonly' modifier.*
+- [**CS9350**](#incorrect-syntax): *The 'modifier' modifier cannot immediately follow the 'scoped' modifier.*
 
 The following warnings are generated when reference variables are used incorrectly:
 
@@ -195,12 +201,16 @@ These errors indicate that you're using incorrect syntax regarding reference var
 - **CS8373**:  *The left-hand side of a `ref` assignment must be a ref variable.*
 - **CS8388**:  *An `out` variable cannot be declared as a ref local.*
 - **CS9190**:  *`readonly` modifier must be specified after `ref`.*
+- **CS9349**: *The 'scoped' modifier cannot come after an 'in', 'out', 'ref' or 'readonly' modifier.*
+- **CS9350**: *The 'modifier' modifier cannot immediately follow the 'scoped' modifier.*
 
 To correct these errors:
 
 - Ensure the left operand of a `= ref` operator is a reference variable rather than a value expression or non-reference local. Ref assignment requires both sides to be reference variables that can create an alias to the same storage location (**CS8373**).
 - When declaring reference parameters, write the modifier as `ref readonly` rather than `readonly ref`. The C# language specification requires the `ref` keyword to precede the `readonly` modifier in parameter declarations to maintain consistent syntax across all reference parameter types (**CS9190**).
 - Use the `ref` keyword instead of `out` when declaring local reference variables. `out` is exclusively a parameter modifier that indicates a method must assign a value before returning, whereas `ref` is the appropriate keyword for creating local variables that alias other storage locations (**CS8388**).
+- When you combine `scoped` with a reference modifier, place it immediately before `ref`, `in`, or `out` (**CS9349**, **CS9350**). For a `ref readonly` parameter, use `scoped ref readonly`.
+- Remove any other modifier immediately after `scoped`, or move it to a valid position in the parameter declaration (**CS9350**).
 For more information about reference variables and their syntax requirements, see [reference variables](../statements/declarations.md#reference-variables) and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## Reference variable restrictions

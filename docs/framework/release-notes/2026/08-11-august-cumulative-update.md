@@ -1,13 +1,14 @@
 ---
 title: August 2026 cumulative update
 description: Learn about the improvements in the .NET Framework August 2026 cumulative update.
-ms.date: 09/02/2026
+ms.date: 09/10/2026
 ai-usage: ai-generated
 ---
 # .NET Framework August 2026 cumulative update
 
 _Released August 11, 2026_
 _Updated September 2, 2026, to include known issues._
+_Updated September 10, 2026, to include known issues resolution._
 
 ## Summary of what's new in this release
 
@@ -90,7 +91,7 @@ This switch disables security protections introduced in the August 2026 update a
 
 #### Status
 
-Investigating.
+This issue is resolved in the September 2026 .NET Framework cumulative update and later updates. We recommend you install the latest update for your device as it contains important improvements and issue resolutions, including this one.
 
 ## Summary tables
 

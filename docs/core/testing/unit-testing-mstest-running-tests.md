@@ -3,7 +3,7 @@ title: Run tests with MSTest
 description: Learn about how to run MSTest tests using VSTest or Microsoft.Testing.Platform (MTP).
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 09/12/2026
 ai-usage: ai-assisted
 ---
 
@@ -21,6 +21,8 @@ Historically, MSTest relied on [VSTest](https://github.com/microsoft/vstest) for
 MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (MTP)](./microsoft-testing-platform-intro.md). The support for MTP is powered by the MSTest runner, which can run tests in all contexts (for example, continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Text Explorer). The MSTest runner is embedded directly in your MSTest test projects, and there are no other app dependencies, such as `vstest.console` or `dotnet test`, needed to run your tests. However, you can still run your tests using `dotnet test`.
 
 The MSTest runner is open source and builds on the [MTP](./microsoft-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
+
+With the .NET 10 SDK and later versions, select the dedicated MTP mode of `dotnet test` in `global.json`. Starting with .NET 11 Preview 6, you can override that selection for the current process with the `DOTNET_TEST_RUNNER` environment variable. For the supported inputs, SDK-version requirements, and MTP-specific options, see [`dotnet test` with MTP](../tools/dotnet-test-mtp.md).
 
 ## Enable MTP in an MSTest project
 
@@ -152,6 +154,9 @@ Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=Category
 ## See also
 
 - [Testing with `dotnet test`](unit-testing-with-dotnet-test.md)
+- [`dotnet test` with MTP](../tools/dotnet-test-mtp.md)
+- [`dotnet test` with VSTest](../tools/dotnet-test-vstest.md)
+- [MTP CLI options reference](microsoft-testing-platform-cli-options.md)
 - [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md)
 - [Filter tests](selective-unit-tests.md)
 - [Order unit tests](order-unit-tests.md)

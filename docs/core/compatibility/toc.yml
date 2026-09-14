@@ -52,6 +52,8 @@ items:
                 href: cryptography/11/compositemldsa-windows-native.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+              - name: HKDF on Windows uses CNG implementation
+                href: cryptography/11/hkdf-windows-cng.md
               - name: Linux AIA certificate fetching limited to two fetches per chain build
                 href: cryptography/11/aia-fetch-limit-linux.md
           - name: Deployment
@@ -84,6 +86,8 @@ items:
                 href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
             items:
+              - name: Floating-point conversions to small integral types are saturating
+                href: jit/11/fp-to-small-integer.md
               - name: Minimum hardware requirements updated
                 href: jit/11/minimum-hardware-requirements.md
           - name: Networking

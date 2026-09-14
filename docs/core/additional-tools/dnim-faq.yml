@@ -15,4 +15,4 @@ sections:
     questions:
       - question: Can DNIM be used with application monitoring and profiling tools like Datadog?
         answer: |
-          No. DNIM is a trimmed .NET application and will fail to launch. You can exclude DNIM from profiling by setting an environment variable before launching it: `DD_PROFILER_EXCLUDE_PROCESS="dnim-win-x64.exe"`.
+          No. DNIM is a trimmed .NET application and will fail to launch. You can exclude DNIM from profiling by setting an environment variable before launching it: `DD_PROFILER_EXCLUDE_PROCESSES="dnim-win-x64.exe"`.

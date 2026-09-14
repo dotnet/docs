@@ -3,7 +3,7 @@ title: Testing with 'dotnet test'
 description: Learn more about how 'dotnet test' works and its support for VSTest and Microsoft.Testing.Platform (MTP)
 author: Youssef1313
 ms.author: ygerges
-ms.date: 08/31/2026
+ms.date: 09/12/2026
 ai-usage: ai-assisted
 ---
 
@@ -128,6 +128,8 @@ To enable this mode, add the following configuration to your `global.json` file:
     }
 }
 ```
+
+Starting with .NET 11 Preview 6, you can instead set the `DOTNET_TEST_RUNNER` environment variable to `Microsoft.Testing.Platform`. A recognized environment variable value overrides `global.json` for the current process. For accepted values and precedence, see [Choose a test runner](../tools/dotnet-test.md#choose-a-test-runner).
 
 > [!IMPORTANT]
 > The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.

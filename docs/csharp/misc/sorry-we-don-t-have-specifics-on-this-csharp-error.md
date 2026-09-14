@@ -1,7 +1,8 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 04/01/2026
+ms.date: 09/11/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "CS0190"
   - "CS0257"
@@ -178,7 +179,6 @@ f1_keywords:
   - "CS8335"
   - "CS8336"
   - "CS8346"
-  - "CS8347"
   - "CS8348"
   - "CS8349"
   - "CS8350"
@@ -197,7 +197,6 @@ f1_keywords:
   - "CS9348"
   - "CS9349"
   - "CS9350"
-  - "CS9351"
 # Collection arguments:
   - "CS9354"
   - "CS9355"

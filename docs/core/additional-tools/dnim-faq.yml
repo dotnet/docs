@@ -1,0 +1,18 @@
+### YamlMime:FAQ
+metadata:
+  title: .NET Install Manager FAQ
+  description: "This article answers frequently asked questions about the .NET Install Manager."
+  titleSuffix: ""
+  ms.topic: faq
+  ms.date: 09/14/2026
+
+title: .NET Install Manager FAQ
+summary: |
+  The .NET Install Manager (*DNIM*) is a command-line tool used to identify, remove or update .NET installations on Windows. It's primarily intended to assist organizations in removing vulnerable copies of .NET from devices to meet compliance targets.
+
+sections:
+  - name: Troubleshooting
+    questions:
+      - question: Can DNIM be used with application monitoring and profiling tools like Datadog?
+        answer: |
+          No. DNIM is a trimmed .NET application and will fail to launch. You can exclude DNIM from profiling by setting an environment variable before launching it: `DD_PROFILER_EXCLUDE_PROCESS="dnim-win-x64.exe"`.

@@ -400,5 +400,5 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 ## See also
 
 - [C# operators and expressions](index.md)
-- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
+- [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)

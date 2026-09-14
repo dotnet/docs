@@ -89,7 +89,7 @@ The compiler typically infers the types for parameters to lambda expressions, wh
 
 Input parameter types must be all explicit or all implicit. Otherwise, a [CS0748](../compiler-messages/lambda-expression-errors.md#lambda-expression-parameters-and-returns) compiler error occurs. Before C# 14, you must include the explicit type on a parameter if it has any modifiers, such as `ref` or `out`. In C# 14, that restriction is removed. However, you must still declare the type if you use the `params` modifier.
 
-Use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
+Use [discards](../../fundamentals/patterns/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
 

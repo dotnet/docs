@@ -123,10 +123,10 @@ When you declare a [positional record](../builtin-types/record.md#positional-syn
 
 To correct these errors, apply the following changes to your positional record declarations:
 
-- Change any explicitly declared member that corresponds to a positional parameter so it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/functional/pattern-matching.md) can access the value correctly (**CS8866**).
+- Change any explicitly declared member that corresponds to a positional parameter so it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/patterns/pattern-matching.md) can access the value correctly (**CS8866**).
 - Ensure that each positional parameter initializes its corresponding property in the constructor body when you provide an explicit constructor. The compiler raises a warning when a parameter goes unused because it typically indicates a typo or a mismatch between the parameter name and the property name, which would leave the property uninitialized (**CS8907**).
 - Change the type of a field declared in a record to a type that's valid in that context. Certain types, such as `Span<T>` or other `ref struct` types, can't be used as fields in a record because record types require all fields to be compatible with heap allocation and value-based equality (**CS8908**).
-- Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../fundamentals/functional/pattern-matching.md) (**CS8913**).
+- Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../fundamentals/patterns/pattern-matching.md) (**CS8913**).
 
 ## Equality members
 

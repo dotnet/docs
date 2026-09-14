@@ -105,4 +105,5 @@ For a broader look at null-safe operators, see [C# null operators](../null-safet
 - [Arithmetic, comparison, logical, and assignment operators](operators.md) — the everyday operators in depth
 - [Equality comparisons](equality.md) — how `==`, `!=`, and `Equals` work
 - [C# null operators](../null-safety/null-operators.md) — `?.`, `??`, and `??=`
+- [Pattern matching](../patterns/pattern-matching.md) — use a `switch` expression to select a value by matching the type, value, or shape of data
 - [Boolean logical operators](../../language-reference/operators/boolean-logical-operators.md)

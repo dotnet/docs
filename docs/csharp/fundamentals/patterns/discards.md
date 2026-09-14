@@ -1,25 +1,35 @@
 ---
 title: Discards - unassigned discardable variables
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
-ms.date: 02/19/2025
-f1_keywords:
-  - "discard_CSharpKeyword"
+ms.date: 09/14/2026
+ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 # Discards - C# Fundamentals
 
-Discards are placeholder variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they don't have a value. A discard communicates intent to the compiler and others that read your code: You intended to ignore the result of an expression. You may want to ignore the result of an expression, one or more members of a tuple expression, an `out` parameter to a method, or the target of a pattern matching expression.
+> [!TIP]
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to pattern matching, start with the [pattern matching overview](pattern-matching.md). For the complete discard-pattern syntax, see the [patterns reference](../../language-reference/operators/patterns.md#discard-pattern).
 
-Discards make the intent of your code clear. A discard indicates that our code never uses the variable. They enhance its readability and maintainability.
+The underscore token (`_`) can mean related but distinct things in C#. In a switch expression, a *discard pattern* is a pattern that matches every input. In declarations, deconstruction, and `out` arguments, a *discard* is an unnamed local variable whose value your code intentionally ignores. In a lambda parameter list, two or more parameters named `_` are *discard parameters*. A single `_` remains an ordinary parameter name for backward compatibility.
 
-You indicate that a variable is a discard by assigning it the underscore (`_`) as its name. For example, the following method call returns a tuple in which the first and second values are discards. `area` is a previously declared variable set to the third component returned by `GetCityInformation`:
+This article groups these uses because they share the same intent: the value isn't needed. Their language ownership differs:
+
+| Context | Meaning of `_` | Primary concept |
+| --- | --- | --- |
+| A switch expression arm or nested pattern | A discard pattern that matches every input | Patterns |
+| A declaration, deconstruction, or `out` argument | An unnamed local variable whose value can't be read | Variables and deconstruction |
+| An assignment such as `_ = expression` | A discard assignment that ignores the expression result | Assignment |
+| A lambda parameter list with two or more `_` parameters | Discard parameters that communicate that the inputs aren't used | Lambda expressions |
+
+For example, the following deconstruction returns a tuple in which the first and second values are discards. `area` is a previously declared variable set to the third component returned by `GetCityInformation`:
 
 ```csharp
 (_, _, area) = city.GetCityInformation(cityName);
 ```
 
-You can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../../language-reference/operators/lambda-expressions.md) article.
+You can use two or more `_` parameters for unused inputs to a lambda expression. For more information, see [Input parameters of a lambda expression](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression).
 
-When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0103, "The name '\_' doesn't exist in the current context". This error is because `_` isn't assigned a value, and may not even be assigned a storage location. If it were an actual variable, you couldn't discard more than one value, as the previous example did.
+A discard local has no name. The expression that introduces it is its only reference, and its value can't be read. If `_` is instead declared as an ordinary identifier in a context where a discard isn't recognized, normal variable rules apply.
 
 ## Tuple and object deconstruction
 
@@ -27,21 +37,26 @@ Discards are useful in working with tuples when your application code uses some 
 
 :::code language="csharp" source="snippets/discards/discard-tuple.cs" ID="DiscardTupleMember" :::
 
-For more information on deconstructing tuples with discards, see [Deconstructing tuples and other types](deconstruct.md#tuple-elements-with-discards).
+For more information on deconstructing tuples with discards, see [Deconstructing tuples and other types](../functional/deconstruct.md#tuple-elements-with-discards).
 
 The `Deconstruct` method of a class, structure, or interface also allows you to retrieve and deconstruct a specific set of data from an object. You can use discards when you're interested in working with only a subset of the deconstructed values. The following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state), but discards the last name and the state.
 
 :::code language="csharp" source="snippets/discards/discard-class.cs" :::
 
-For more information on deconstructing user-defined types with discards, see [Deconstructing tuples and other types](deconstruct.md#user-defined-type-with-discards).
+For more information on deconstructing user-defined types with discards, see [Deconstructing tuples and other types](../functional/deconstruct.md#user-defined-type-with-discards).
 
 ## Pattern matching with `switch`
 
-The *discard pattern* can be used in pattern matching with the [switch expression](../../language-reference/operators/switch-expression.md). Every expression, including `null`,  always matches the discard pattern.
+The *discard pattern* can be used as a catch-all arm in a [switch expression](../../language-reference/operators/switch-expression.md). Every input, including `null`, matches the discard pattern. Put it last because an unguarded discard arm subsumes every arm that follows it.
 
 The following example defines a `ProvidesFormatInfo` method that uses a `switch` expression to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
 
 :::code language="csharp" source="snippets/discards/discard-pattern2.cs" ID="DiscardSwitchExample" :::
+
+A standalone discard pattern isn't permitted as the complete pattern after `is` or in a `switch` statement `case` label. Use `var _` after `is`, and use `default` as the catch-all label in a switch statement. A discard pattern can appear inside another pattern, such as a positional pattern.
+
+> [!NOTE]
+> In a pattern context, an accessible constant or type named `_` can cause `_` to be interpreted as that constant or type instead of as a discard pattern. Avoid declaring constants or types named `_`.
 
 ## Calls to methods with `out` parameters
 
@@ -57,7 +72,7 @@ You can use a standalone discard to indicate any variable that you choose to ign
 
 :::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="ArgNullCheck" :::
 
-The following example uses a standalone discard to ignore the <xref:System.Threading.Tasks.Task> object returned by an asynchronous operation. Assigning the task has the effect of suppressing the compiler warning about unobserved exceptions. It makes your intent clear: You want to discard the `Task`, and propagate any errors generated from that asynchronous operation to callers.
+The following example uses a standalone discard to ignore the <xref:System.Threading.Tasks.Task> object returned by an asynchronous operation. Assigning the task suppresses the compiler warning that the call isn't awaited. It makes your intent clear: the operation starts, but this code doesn't wait for it to finish.
 
 :::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="SnippetDiscardTask" :::
 
@@ -66,9 +81,9 @@ Without assigning the task to a discard, the following code generates a compiler
 :::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="SnippetNoDiscardTask" :::
 
 > [!NOTE]
-> If you run either of the preceding two samples using a debugger, the debugger will stop the program when the exception is thrown. Without a debugger attached, the exception is silently ignored in both cases.
+> Discarding a task doesn't observe its exceptions or propagate them to the caller. Use this technique only when the application has another deliberate way to observe and report failures from the operation.
 
-`_` is also a valid identifier. When used outside of a supported context, `_` is treated not as a discard but as a valid variable. If an identifier named `_` is already in scope, the use of `_` as a standalone discard can result in:
+`_` is also a valid identifier. When used outside of a supported discard context, `_` is treated as a variable name. If an identifier named `_` is already in scope, an intended discard assignment can result in:
 
 - Accidental modification of the value of the in-scope `_` variable by assigning it the value of the intended discard. For example:
    :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableIdentifier" :::
@@ -80,6 +95,8 @@ Without assigning the task to a discard, the following code generates a compiler
 - [Remove unnecessary expression value (style rule IDE0058)](../../../fundamentals/code-analysis/style-rules/ide0058.md)
 - [Remove unnecessary value assignment (style rule IDE0059)](../../../fundamentals/code-analysis/style-rules/ide0059.md)
 - [Remove unused parameter (style rule IDE0060)](../../../fundamentals/code-analysis/style-rules/ide0060.md)
-- [Deconstructing tuples and other types](deconstruct.md)
+- [Pattern matching overview](pattern-matching.md)
+- [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md)
+- [Deconstructing tuples and other types](../functional/deconstruct.md)
 - [`is` operator](../../language-reference/operators/is.md)
 - [`switch` expression](../../language-reference/operators/switch-expression.md)

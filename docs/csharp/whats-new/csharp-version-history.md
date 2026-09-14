@@ -149,7 +149,7 @@ C# 9 continues three of the themes from previous releases: removing ceremony, se
 
 The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
-The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
+The [pattern matching](../fundamentals/patterns/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
 
 C# 9 includes new pattern matching improvements:
 
@@ -303,7 +303,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
-- [Pattern matching](../fundamentals/functional/pattern-matching.md)
+- [Pattern matching](../fundamentals/patterns/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
 - [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
@@ -311,7 +311,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 Other features included:
 
-- [Discards](../fundamentals/functional/discards.md)
+- [Discards](../fundamentals/patterns/discards.md)
 - [Binary Literals and Digit Separators](../language-reference/builtin-types/integral-numeric-types.md#integer-literals)
 - [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 

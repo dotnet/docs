@@ -3,7 +3,7 @@ title: Configure MSTest
 description: Learn how to configure MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 ---
 
@@ -16,6 +16,12 @@ MSTest is a fully supported, open-source and a cross-platform test framework tha
 ## Runsettings
 
 A *.runsettings* file can be used to configure how unit tests are being run. To learn more about the runsettings and the configurations related to the platform, you can check out [VSTest runsettings documentation](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) or [MSTest runner runsettings documentation](microsoft-testing-platform-extensions-vstest-bridge.md#runsettings-support).
+
+### Parallelization settings
+
+To enable MSTest in-assembly parallelization, configure the `Parallelize` entry under `MSTest`, including its `Workers` and `Scope` values, as described in the table in the next section. To force parallelization off for the run, set `<RunConfiguration><DisableParallelization>true</DisableParallelization></RunConfiguration>`. The `DisableParallelization` setting overrides an `[assembly: Parallelize]` attribute.
+
+For the behavior of the parallelization attributes and a comparison of every configuration mechanism, see [Configure parallelization](unit-testing-mstest-writing-tests-controlling-execution.md#configure-parallelization).
 
 ### MSTest element
 
@@ -194,6 +200,8 @@ Example:
 
 All the settings in this section belong to the `parallelism` element.
 
+For the behavior of the parallelization attributes and a comparison of every configuration mechanism, see [Configure parallelization](unit-testing-mstest-writing-tests-controlling-execution.md#configure-parallelization).
+
 | Entry | Default | Description |
 |-------|---------|-------------|
 | enabled | false | Enable test parallelization. |
@@ -310,6 +318,8 @@ Each element of the file is optional because it has a default value.
 ## MSBuild properties
 
 Starting with MSTest 4.3, opt in to assembly-level parallelization from your project file or `Directory.Build.props` without authoring an `[assembly: Parallelize]` attribute. These properties emit the corresponding assembly attribute during build, so they require `GenerateAssemblyInfo` to be `true` (the default for SDK-style projects).
+
+For the behavior of the generated attributes and a comparison of every configuration mechanism, see [Configure parallelization](unit-testing-mstest-writing-tests-controlling-execution.md#configure-parallelization).
 
 | Property | Default | Description |
 |----------|---------|-------------|

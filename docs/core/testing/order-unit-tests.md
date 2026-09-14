@@ -1,7 +1,7 @@
 ---
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
-ms.date: 07/08/2026
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ---
@@ -23,7 +23,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 ## Order alphabetically
 
 > [!NOTE]
-> MSTest runs tests sequentially within a class by default. If you configure parallelism using the `<Parallelize>` setting in a `.runsettings` file, tests across classes can run concurrently, and ordering affects only the sequence within each class.
+> MSTest runs tests sequentially within a class by default. If you configure parallelism using the `<Parallelize>` setting in a `.runsettings` file, tests across classes can run concurrently, and ordering affects only the sequence within each class. For all ways to enable or disable MSTest parallelization, see [Configure parallelization](unit-testing-mstest-writing-tests-controlling-execution.md#configure-parallelization).
 
 MSTest discovers tests in the same order in which they are defined in the test class.
 

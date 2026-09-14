@@ -3,7 +3,7 @@ title: Test execution and control in MSTest
 description: Learn how to control test execution in MSTest with parallelization, threading, timeouts, retries, and conditional execution.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 ---
 
@@ -113,6 +113,17 @@ public class WinUITests
 
 Parallelization attributes control whether and how tests run concurrently, improving test execution time.
 
+### Configure parallelization
+
+MSTest runs tests sequentially within each test assembly by default. Use one of the following mechanisms to explicitly enable or disable in-assembly parallelization:
+
+| Mechanism | Enable parallelization | Disable parallelization |
+|-----------|------------------------|-------------------------|
+| Source attributes | Apply [`[assembly: Parallelize]`](#parallelizeattribute), and optionally set its scope and worker count. | Apply [`[assembly: DoNotParallelize]`](#donotparallelizeattribute) to disable parallelization for the assembly. Apply `[DoNotParallelize]` to a class or method to opt only those tests out after you enable assembly parallelization. |
+| *.runsettings* | Configure the MSTest [`Parallelize` entry](unit-testing-mstest-configure.md#parallelization-settings). | Set [`RunConfiguration.DisableParallelization`](unit-testing-mstest-configure.md#parallelization-settings) to `true`. This setting forces parallelization off even when the assembly has a `[Parallelize]` attribute. |
+| *testconfig.json* | Set [`mstest.parallelism.enabled`](unit-testing-mstest-configure.md#parallelism-settings) to `true`, and optionally configure `scope` and `workers`. | Set `mstest.parallelism.enabled` to `false`. |
+| MSBuild properties | Set [`MSTestParallelizeScope`](unit-testing-mstest-configure.md#msbuild-properties) to `ClassLevel` or `MethodLevel`, and optionally set `MSTestParallelizeWorkers`. | Set `MSTestParallelizeScope` to `None`. These properties generate the corresponding assembly attribute, so don't also declare the attribute in source. |
+
 ### `ParallelizeAttribute`
 
 By default, MSTest runs tests sequentially. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> assembly-level attribute enables parallel test execution.
@@ -143,7 +154,7 @@ The `Workers` property specifies the maximum number of threads for parallel exec
 ```
 
 > [!TIP]
-> You can configure parallelization without modifying code through [runsettings](unit-testing-mstest-configure.md#mstest-element), [testconfig.json](unit-testing-mstest-configure.md#testconfigjson), or the [`MSTestParallelizeScope` and `MSTestParallelizeWorkers` MSBuild properties](unit-testing-mstest-configure.md#msbuild-properties).
+> To choose a configuration mechanism, see [Configure parallelization](#configure-parallelization).
 
 > [!TIP]
 > Enable parallelization at the assembly level by default, even if many tests currently require sequential execution. This approach encourages writing new tests that support parallel execution from the start. Use the [MSTEST0001](mstest-analyzers/mstest0001.md) analyzer to ensure that the assembly explicitly declares its parallelization intent with `[assembly: Parallelize]` or `[assembly: DoNotParallelize]`. Once parallelization is enabled, review each test class to determine whether it safely supports concurrent execution. Often, excluding just a few classes or methods with `DoNotParallelize` is sufficient, allowing the majority of your tests to run in parallel for significantly faster test execution.

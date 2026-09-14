@@ -10,7 +10,11 @@ ai-usage: ai-generated
 
 This article explains how to add and remove package, project, and assembly dependencies.
 
-## The `<PackageReference>` element
+## Add and remove package dependencies
+
+You can add and remove dependencies by editing your project file or through [.NET CLI](index.md) commands.
+
+### The `<PackageReference>` element
 
 The `<PackageReference>` project file element has the following structure:
 
@@ -27,10 +31,6 @@ Use conditions to add a dependency that's available only in a specific target, a
 ```
 
 The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET applications, you don't need to do this.
-
-## Add and remove package dependencies
-
-You can add and remove dependencies by editing your project file or through [.NET CLI](index.md) commands.
 
 ### Edit the project file
 
@@ -66,7 +66,7 @@ To remove a dependency, run the [dotnet package remove](dotnet-package-remove.md
 dotnet package remove Microsoft.EntityFrameworkCore
 ```
 
-## Project references
+## Add and remove project references
 
 Use a project-to-project reference when your project depends on another project. The `<ProjectReference>` project file element identifies the path to the referenced project:
 
@@ -88,7 +88,7 @@ To remove a project reference, remove the `<ProjectReference>` element from the 
 dotnet reference remove ../MyLibrary/MyLibrary.csproj
 ```
 
-## Assembly references
+## Add and remove assembly references
 
 To reference a .NET assembly that isn't part of a project or package, add a `<Reference>` element to the project file. Use the `<HintPath>` element to specify the relative or absolute path to the assembly:
 

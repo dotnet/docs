@@ -392,6 +392,13 @@ items:
       - name: Overview
         displayName: diagnostics, instrumentation
         href: ../../core/diagnostics/index.md
+      - name: Diagnose performance issues
+        href: ../../core/diagnostics/performance-diagnostics.md
+        items:
+          - name: Investigate Linux performance
+            href: ../../core/diagnostics/dotnet-trace-collect-linux-performance.md
+          - name: Practice Linux performance investigations
+            href: ../../core/diagnostics/dotnet-trace-collect-linux-scenarios.md
       - name: Managed debuggers
         href: ../../core/diagnostics/managed-debuggers.md
       - name: Profiling tools

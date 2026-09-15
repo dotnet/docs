@@ -1,7 +1,7 @@
 ---
 title: EventPipe Overview
 description: Learn about EventPipe and how to use it for tracing your .NET applications to diagnose performance issues.
-ms.date: 03/19/2026
+ms.date: 09/04/2026
 ms.topic: overview
 ---
 
@@ -23,9 +23,9 @@ To learn more about the NetTrace format, see the [NetTrace format documentation]
 
 ## EventPipe vs. ETW/perf_events
 
-EventPipe is part of the .NET runtime and is designed to work the same way across all the platforms .NET Core supports. This allows tracing tools based on EventPipe, such as `dotnet-counters`, `dotnet-gcdump`, and `dotnet-trace`, to work seamlessly across platforms.
+EventPipe is part of the .NET runtime and is designed to work the same way across all the platforms .NET supports. This allows tracing tools based on EventPipe, such as `dotnet-counters`, `dotnet-gcdump`, and `dotnet-trace`, to work seamlessly across platforms.
 
-However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself. Without other tracing tools, EventPipe events include stack traces with managed code frame information only. To get events from other unmanaged user-mode libraries, CPU sampling for native code, or kernel events, use OS-specific tracing tools such as ETW or perf_events. On Linux, the [perfcollect tool](./trace-perfcollect-lttng.md) helps automate using perf_events and [LTTng](https://en.wikipedia.org/wiki/LTTng).
+However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself. Without other tracing tools, EventPipe events include stack traces with managed code frame information only. To collect events from other unmanaged user-mode libraries, CPU samples for native code, or kernel events, use platform tracing facilities and collectors. Examples include ETW on Windows, [`dotnet-trace collect-linux`](./dotnet-trace.md#dotnet-trace-collect-linux) or `perf` on Linux, and [OneCollect `record-trace`](https://github.com/microsoft/one-collect/tree/main/record-trace) on either platform.
 
 Starting in .NET 10, EventPipe on Linux can emit events as [user_events](https://docs.kernel.org/trace/user_events.html), enabling collection of managed events, OS/kernel events, and native callstacks in a single unified trace. This mode requires admin/root privileges and Linux kernel 6.4+. For more information, see [`dotnet-trace collect-linux`](./dotnet-trace.md#dotnet-trace-collect-linux).
 
@@ -35,7 +35,7 @@ The following table is a summary of the differences between EventPipe and ETW/pe
 
 |Feature|EventPipe|EventPipe (user_events)|ETW|perf_events|
 |-------|---------|----------------------|---|-----------|
-|Cross-platform|Yes|No (only on supported Linux distros)|No (only on Windows)|No (only on supported Linux distros)|
+|Cross-platform|Yes|No (Linux only)|No (Windows only)|No (Linux only)|
 |Require admin/root privilege|No|Yes|Yes|Yes|
 |Can get OS/kernel events|No|Yes|Yes|Yes|
 |Can resolve native callstacks|No|Yes|Yes|Yes|

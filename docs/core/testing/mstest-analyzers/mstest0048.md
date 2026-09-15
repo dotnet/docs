@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0048: Avoid TestContext properties in fixture methods"
 description: "Learn about code analysis rule MSTEST0048: Avoid TestContext properties in fixture methods"
-ms.date: 07/24/2025
+ms.date: 09/02/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0048
 - TestContextPropertyUsageAnalyzer
@@ -28,6 +29,8 @@ ms.author: amauryleve
 
 A fixture method (methods with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>, or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) accesses restricted <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> properties.
 
+Starting with MSTest.Analyzers 4.4 preview, the rule also reports constant indexer access to a restricted key, such as `testContext.Properties["TestName"]`. It doesn't report indexer access when the key isn't a constant string.
+
 ## Rule description
 
 Certain <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> properties aren't available in fixture methods because they're specific to individual test execution:
@@ -39,12 +42,10 @@ Properties unavailable in class and assembly fixture methods:
 - `DataRow`
 - `DataConnection`
 - `TestName`
-- `ManagedMethod`
 
 Properties unavailable in assembly-level fixture methods:
 
 - `FullyQualifiedTestClassName`
-- `ManagedType`
 
 ## How to fix violations
 

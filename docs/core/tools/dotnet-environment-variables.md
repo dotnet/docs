@@ -252,7 +252,7 @@ Starting in Visual Studio 2026, MSBuild in Visual Studio _also_ ensures that `DO
 
 ### `DOTNET_LAUNCH_PROFILE`
 
-The [dotnet run](dotnet-run.md) command sets this variable to the selected launch profile.
+The [`dotnet run` command](dotnet-run.md#launch-profiles) sets this variable to the selected launch profile.
 
 Given the following _launchSettings.json_ file:
 

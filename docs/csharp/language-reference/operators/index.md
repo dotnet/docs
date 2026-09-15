@@ -32,7 +32,7 @@ In the following code, examples of expressions appear on the right-hand side of 
 
 :::code language="csharp" source="snippets/shared/Overview.cs" id="Expressions":::
 
-Typically, an expression produces a result and can be included in another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
+Typically, an expression produces a result and can be included in another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../fundamentals/statements/index.md), as the following example shows:
 
 ```csharp
 Console.WriteLine("Hello, world!");
@@ -52,7 +52,7 @@ Here are some other kinds of expressions that C# provides:
 
   :::code language="csharp" source="snippets/shared/Overview.cs" id="Query":::
 
-You can use an [expression body definition](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
+You can use an [expression body definition](lambda-operator.md#expression-body-definition) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
 
 ## Operator precedence
 

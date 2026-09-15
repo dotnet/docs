@@ -19,7 +19,9 @@ The simplest expressions are *literals* (like `42` or `"hello"`) and *variable n
 
 ### Expressions and statements
 
-An expression produces a value. A *statement* is a complete instruction that the program executes. Many statements contain expressions. For example, `int total = 3 + 4 * 2;` is a variable declaration statement. The compiler evaluates the initializer expression `3 + 4 * 2`, which produces `11`, and assigns that value to the new variable `total`. This article focuses on expressions — how they're formed, how they're evaluated, and how they combine.
+An expression produces a value. A *statement* is a complete instruction that the program executes. Many statements contain expressions. For example, `int total = 3 + 4 * 2;` is a variable declaration statement. The compiler evaluates the initializer expression `3 + 4 * 2`, which produces `11`, and assigns that value to the new variable `total`.
+
+You can think of an expression like a phrase and a [C# statement](../statements/index.md) like a complete sentence. These working definitions help you understand the formal terminology and explanations you'll encounter as you learn more about C#, though ordinary coding rarely requires you to remember the distinction consciously.
 
 ## Combining expressions
 
@@ -100,6 +102,7 @@ For a broader look at null-safe operators, see [C# null operators](../null-safet
 ## See also
 
 - [C# operators and expressions (language reference)](../../language-reference/operators/index.md) — full precedence table and every operator
+- [Arithmetic, comparison, logical, and assignment operators](operators.md) — the everyday operators in depth
 - [Equality comparisons](equality.md) — how `==`, `!=`, and `Equals` work
 - [C# null operators](../null-safety/null-operators.md) — `?.`, `??`, and `??=`
 - [Boolean logical operators](../../language-reference/operators/boolean-logical-operators.md)

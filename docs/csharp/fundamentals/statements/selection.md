@@ -1,7 +1,7 @@
 ---
 title: "Selection statements in C#"
 description: Use if, else, and switch statements to choose which code runs based on a condition, including pattern-based case labels and when clauses.
-ms.date: 07/09/2026
+ms.date: 08/20/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -55,11 +55,9 @@ The `if` and `switch` statements decide which code runs. When you instead need t
 
 ### Conditional operator `?:`
 
-The conditional operator `?:` chooses between two values based on a Boolean condition. It takes the form `condition ? valueIfTrue : valueIfFalse`:
+The conditional operator `?:` chooses one of two values based on a Boolean condition.
 
-:::code language="csharp" source="./snippets/selection-statements/Program.cs" id="Ternary":::
-
-Use `?:` when you assign one of two values, because it keeps the assignment in one place and lets you mark the variable `readonly` or `const`. Prefer an `if` statement when the branches do more than produce a value. For the operator's precedence and associativity rules, see the [conditional operator](../../language-reference/operators/conditional-operator.md) in the language reference.
+For its syntax, short-circuit behavior, and guidance on choosing it instead of `if`/`else`, see [Conditional operator `?:`](../expressions/operators.md#conditional-operator-).
 
 ### `switch` expression
 

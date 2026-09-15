@@ -10,6 +10,8 @@ items:
             href: 11.md
           - name: Core .NET libraries
             items:
+              - name: Assembly.GetCallingAssembly behavior change when stack-trace support disabled
+                href: core-libraries/11/assembly-getcallingassembly-stacktracesupport-disabled.md
               - name: CborReader and CborWriter enforce a default maximum nesting depth
                 href: core-libraries/11/cbor-max-depth.md
               - name: Complex special-value results now follow C23 Annex G
@@ -18,6 +20,8 @@ items:
                 href: core-libraries/11/ziparchive-entry-crc32-validation.md
               - name: DateOnly and TimeOnly TryParse methods throw for invalid input
                 href: core-libraries/11/dateonly-timeonly-tryparse-argumentexception.md
+              - name: Decimal and BigInteger floating-point conversions are correctly rounded
+                href: core-libraries/11/decimal-biginteger-floating-point-conversions.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
@@ -48,6 +52,8 @@ items:
                 href: cryptography/11/compositemldsa-windows-native.md
               - name: DSA removed from macOS
                 href: cryptography/11/dsa-removed-macos.md
+              - name: HKDF on Windows uses CNG implementation
+                href: cryptography/11/hkdf-windows-cng.md
               - name: Linux AIA certificate fetching limited to two fetches per chain build
                 href: cryptography/11/aia-fetch-limit-linux.md
           - name: Deployment
@@ -64,8 +70,12 @@ items:
                 href: extensions/11/fileconfigurationsource-onloadexception-io-errors.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
+              - name: PhysicalFilesWatcher validates root and FileSystemWatcher paths
+                href: extensions/11/physicalfileswatcher-validates-root-path.md
               - name: Some Microsoft.Extensions packages included in shared framework
                 href: extensions/11/extensions-in-shared-framework.md
+              - name: Synchronous access to async-validated options throws
+                href: extensions/11/async-options-validation-sync-access.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected
@@ -76,6 +86,8 @@ items:
                 href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
             items:
+              - name: Floating-point conversions to small integral types are saturating
+                href: jit/11/fp-to-small-integer.md
               - name: Minimum hardware requirements updated
                 href: jit/11/minimum-hardware-requirements.md
           - name: Networking
@@ -98,6 +110,8 @@ items:
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
               - name: NuGet pack warns for package IDs with restricted characters
                 href: sdk/11/nuget-pack-nu5052-packageid.md
+              - name: Restore doesn't search global packages folder for higher version
+                href: sdk/11/restore-global-packages-folder-version-search.md
               - name: SDK local container runtime selection prefers platform-native tools
                 href: sdk/11/native-local-container-runtimes.md
               - name: Template engine packages no longer support netstandard2.0

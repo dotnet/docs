@@ -32,7 +32,7 @@ A constructor is a method with the same name as its type. Its method signature c
 
 :::code source="./snippets/constructors/Program.cs" id="InstanceCtor":::
 
-If a constructor can be implemented as a single statement, you can use an [expression body member](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter, `name`. The expression body definition assigns the argument to the `locationName` field.
+If a constructor can be implemented as a single statement, you can use an [expression body member](../../language-reference/operators/lambda-operator.md#expression-body-definition). The following example defines a `Location` class whose constructor has a single string parameter, `name`. The expression body definition assigns the argument to the `locationName` field.
 
 :::code source="./snippets/constructors/Program.cs" id="ExpressionBodiedCtor":::
 

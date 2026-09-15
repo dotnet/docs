@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 12/29/2024
+ms.date: 09/12/2026
 ai-usage: ai-assisted
 ---
 # dotnet test
@@ -19,9 +19,9 @@ The `dotnet test` command builds the solution and runs the tests with either VST
 > [!NOTE]
 > Test runner selection is available starting with .NET 10 SDK. In earlier versions of .NET, tests are always executed with VSTest.
 
-### Choosing a test runner
+### Choose a test runner
 
-To enable Microsoft.Testing.Platform (MTP), you need to specify the test runner in the [`global.json`](global-json.md) file:
+With the .NET 10 SDK and later versions, select Microsoft.Testing.Platform (MTP) in the [`global.json`](global-json.md) file:
 
 ```json
 {
@@ -36,6 +36,19 @@ To enable Microsoft.Testing.Platform (MTP), you need to specify the test runner 
 >
 > [!IMPORTANT]
 > The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
+
+Starting with .NET 11 Preview 6, set the `DOTNET_TEST_RUNNER` environment variable to select the runner without changing `global.json`. The environment variable accepts `VSTest` or `Microsoft.Testing.Platform`, without regard to case, and overrides the `global.json` value:
+
+```powershell
+$env:DOTNET_TEST_RUNNER = "Microsoft.Testing.Platform"
+dotnet test
+```
+
+```bash
+DOTNET_TEST_RUNNER=Microsoft.Testing.Platform dotnet test
+```
+
+If the environment variable is empty or contains an unrecognized value, `dotnet test` uses the `global.json` value. If neither setting selects a runner, `dotnet test` uses VSTest.
 
 ### Test runner documentation
 
@@ -53,5 +66,7 @@ The available command-line options, behavior, and capabilities differ depending 
 - [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md)
 - [dotnet test with VSTest](dotnet-test-vstest.md)
 - [dotnet test with MTP](dotnet-test-mtp.md)
+- [Microsoft.Testing.Platform overview](../testing/microsoft-testing-platform-intro.md)
+- [Run tests with MSTest](../testing/unit-testing-mstest-running-tests.md)
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)

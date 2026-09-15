@@ -1,20 +1,20 @@
 ---
-title: dnim query products command
+title: dnim query prreleases command
 description: The query releases command provides information about specific .NET releases.
 author: joeloff
 ms.date: 08/11/2026
 ---
 
-# dnim query
+# dnim query releases
 
 ## Name
 
-`dnim-win-[x86|x64|arm64] query products` - Queries release information about specific .NET products.
+`dnim-win-[x86|x64|arm64] query releases` - Queries release information about specific .NET products.
 
 ## Synopsis
 
 ```dotnetcli
-dnim-win-[x86|x64|arm64] query products [-a|--accept-license] 
+dnim-win-[x86|x64|arm64] query releases [-a|--accept-license] 
     [--epv|--except-product-version <PRODUCT_VERSION>] 
     [--esp|--except-support-phase <active|eol|golive|maintenance|preview>]
     [-o|--output-file <OUTPUT_FILE>] [--offline <LAYOUT_DIRECTORY>]
@@ -22,7 +22,7 @@ dnim-win-[x86|x64|arm64] query products [-a|--accept-license]
     [--sp|--support-phase <active|eol|golive|maintenance|preview>]
     [-v|--verbosity <quiet|normal|diagnostic>]
 
-dnim-win-[x86|x64|arm64] query products -?|-h|--help
+dnim-win-[x86|x64|arm64] query releases -?|-h|--help
 ```
 
 ## Description
@@ -51,22 +51,16 @@ dnim-win-[x86|x64|arm64] query products -?|-h|--help
 
 ## Examples
 
-- Display release information for all products:
+- Display all releases include a specific CVE:
 
   ```console
-  dnim-win-[x86|x64|arm64] query products
+  dnim-win-[x86|x64|arm64] query releases --cve CVE-2026-71328
   ```
 
-- Display release information for all products that are not end-of-life:
+- Display the latest releases that are not end-of-life
 
   ```console
-  dnim-win-[x86|x64|arm64] query products --esp eol
-  ```
-
-- Display release information for .NET 7.0 and 9.0
-
-  ```console
-  dnim-win-[x86|x64|arm64] query products --pv 7.0 --pv 9.0
+  dnim-win-[x86|x64|arm64] query products --esp eol --latest
   ```
 
 ## See also

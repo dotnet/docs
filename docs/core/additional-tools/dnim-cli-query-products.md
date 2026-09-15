@@ -6,7 +6,7 @@ ms.date: 08/11/2026
 ai-usage: ai-assisted
 ---
 
-# dnim query
+# dnim query products
 
 ## Name
 

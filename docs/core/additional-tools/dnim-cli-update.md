@@ -5,7 +5,7 @@ author: joeloff
 ms.date: 08/11/2026
 ---
 
-# dnim scan
+# dnim update
 
 ## Name
 
@@ -22,7 +22,7 @@ dnim-win-[x86|x64|arm64] update [-a|--accept-license] [-b|--include-bin-deployed
     [--sp|--support-phase <active|eol|golive|maintenance|preview>]
     [-v|--verbosity <quiet|normal|diagnostic>]
 
-dnim-win-[x86|x64|arm64] scan -?|-h|--help
+dnim-win-[x86|x64|arm64] update -?|-h|--help
 ```
 
 ## Description

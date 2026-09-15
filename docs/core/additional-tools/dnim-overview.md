@@ -13,7 +13,7 @@ The .NET Install Manager (*DNIM*) is a command-line tool used to identify, remov
 DNIM ships as a trimmed, single file .NET executable, making it easy to deploy across devices using tools like [Microsoft Configuration Manager](https://learn.microsoft.com/intune/configmgr/).
 
 > [!IMPORTANT]
-> DNIM does not enforce specific policies. Administrators can use the command-line options to create deployments that best express their organization's compliance policies.
+> DNIM doesn't enforce any policies by default. Administrators should use the CLI to create deployments that best express their organization's compliance policies.
 
 The tool is data driven and depends on the [release information](https://builds.dotnet.microsoft.com/dotnet/release-metadata/releases-index.json) published for .NET. While internet access is required to download the latest release information and updates, administrators can prepare offline deployments for network restricted environments.
 

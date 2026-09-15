@@ -13,14 +13,20 @@ summary: |
 sections:
   - name: General
     questions:
+      - question: What is the difference between DNIM and the .NET Uninstall tool?
+        answer: |
+          - The uninstall tool supports other operating systems like macOS. DNIM is specifically designed for Windows.
+          - The uninstall tool doesn't support MSI detection or detailed analysis of Visual Studio.
+          - The uninstall tool doesn't support updating installations.
+
       - question: Does DNIM require internet access?
         answer: |
-          It depends. The [`layout`](dnim-cli-layout.md) command needs to download release information and installer executables. Other commands like [`scan`](dnim-cli-scan.md) supports offline execution.
+          It depends. The [`layout`](dnim-cli-layout.md) command requires internet access to download release information and installer executables. Other commands like [`scan`](dnim-cli-scan.md) supports offline execution.
 
-      - question: .NET x.y is EOL. Why doesn't Visual Studio designate it as out-of-support?
+      - question: .NET x.y is EOL. Why isn't Visual Studio listing it as out-of-support?
         answer: |
-          - The out-of-support metadata is unsupported by the version of Visual Studio that installed .NET. The metadata was first introduced in Visual Studio 15.9.27, 16.0.18, 16.4.13, 16.7.3 and 16.8 Preview 3.
-          - .NET was in support when Visual Studio shipped before going out of support. As a result, the metadata couldn't be updated.
+          - The out-of-support metadata is unsupported by Visual Studio. The metadata was first introduced in Visual Studio 15.9.27, 16.0.18, 16.4.13, 16.7.3 and 16.8 Preview 3.
+          - .NET was in support when Visual Studio, but no additional updates of Visual Studio were shipped and the metadata couldn't be updated.
 
   - name: Best Practices
     questions:

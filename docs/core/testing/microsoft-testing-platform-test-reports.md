@@ -195,7 +195,7 @@ builder.TestHost.AddAzureDevOpsProvider();
 The extension automatically detects that it runs in a continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
 
 > [!IMPORTANT]
-> Azure DevOps history queries require `SYSTEM_COLLECTIONURI`, `SYSTEM_TEAMPROJECT`, `SYSTEM_ACCESSTOKEN`, and `BUILD_DEFINITIONID`. If any value is missing, MTP continues without history data, skips flaky-history annotations, and uses the static 60-second threshold for slow-test lines.
+> Azure DevOps history queries require `TF_BUILD=true`, `SYSTEM_COLLECTIONURI`, `SYSTEM_TEAMPROJECT`, `SYSTEM_ACCESSTOKEN`, and `BUILD_DEFINITIONID`. If any value is missing, MTP continues without history data, skips flaky-history annotations, and uses the static 60-second threshold for slow-test lines.
 >
 > Live publishing with `--publish-azdo-test-results` requires `TF_BUILD=true`, `SYSTEM_COLLECTIONURI`, `SYSTEM_TEAMPROJECT`, `SYSTEM_ACCESSTOKEN`, and `BUILD_BUILDID`. If any value is missing or invalid, MTP warns and doesn't publish the test run.
 

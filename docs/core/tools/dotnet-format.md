@@ -60,7 +60,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 - **`--framework <FRAMEWORK>`**
 
-  Specifies the target framework to format.
+  Specifies the target framework moniker (TFM), such as `net11.0`, to format in a multi-targeted project. If you don't specify this option, `dotnet format` formats all target frameworks. Available starting with .NET 11.
 
 - **`--include <INCLUDE>`**
 

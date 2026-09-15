@@ -63,7 +63,7 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 
 - **`--file <FILE>`**
 
-  Specifies the file-based app to operate on.
+  Specifies the file-based app to add project references to. For example, specify `app.cs` to add `#:project` directives to a file-based app. Available starting with .NET 11.
 
 - **`-f|--framework <FRAMEWORK>`**
 

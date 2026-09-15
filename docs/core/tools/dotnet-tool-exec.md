@@ -84,7 +84,7 @@ This command also exists in two other forms for easier use
 
 - **`-y|--yes`**
 
-  Accepts all confirmation prompts.
+  Accepts all confirmation prompts, including the prompt to download and run the tool package. Use this option only with packages and package sources that you trust. Available starting with .NET 11.
 
 - [!INCLUDE [source](includes/cli-tool-source.md)]
 

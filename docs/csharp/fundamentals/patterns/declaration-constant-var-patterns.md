@@ -17,9 +17,6 @@ Declaration, constant, and `var` patterns answer three everyday questions:
 - **Constant pattern:** Does this value equal one specific constant?
 - **`var` pattern:** Capture this value in a new variable without testing it.
 
-> [!NOTE]
-> Beginning with C# 15, which is currently in preview, declaration and constant patterns generally test a [union type's `Value`](../../language-reference/builtin-types/union.md#union-pattern-matching). The `null` constant pattern also follows the union null-matching rules. A `var` pattern is an exception: It captures the union value itself.
-
 ## Test and capture a type with a declaration pattern
 
 A *declaration pattern* contains a type followed by a variable name. It matches a non-null value whose run-time type is compatible with the specified type:

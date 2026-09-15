@@ -23,9 +23,6 @@ You can use a pattern in three contexts:
 
 Nested patterns have their own inputs. For example, in `{ Days: <= 2 }`, the delivery object is the input to the property pattern, and the value of its `Days` property is the input to the nested relational pattern.
 
-> [!NOTE]
-> Beginning with C# 15, which is currently in preview, patterns generally test a [union type's `Value`](../../language-reference/builtin-types/union.md#union-pattern-matching) rather than the union value itself. The discard, `var`, `not`, untyped property, untyped positional, and list patterns instead apply to the union value.
-
 Patterns are often clearer than a sequence of casts, null checks, and comparisons because each branch describes the data it handles. For example, the following method uses a `switch` expression to choose a delivery message:
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="SwitchExpressionOverview":::

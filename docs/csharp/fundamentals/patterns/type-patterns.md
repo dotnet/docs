@@ -15,9 +15,6 @@ A *type pattern* tests whether a non-null value's run-time type is compatible wi
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePattern":::
 
-> [!NOTE]
-> Beginning with C# 15, which is currently in preview, a type pattern on a [union type](../../language-reference/builtin-types/union.md#union-pattern-matching) generally tests the union's `Value`, not the union value itself.
-
 Use a type pattern when the type test itself is all you need. Use a declaration pattern when the matching branch needs members that are available only on the more specific type.
 
 ## Match several types

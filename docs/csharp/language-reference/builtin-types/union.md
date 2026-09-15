@@ -70,7 +70,7 @@ When you pattern match on a union type, patterns generally apply to the union's 
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="PatternMatching":::
 
-Six patterns are exceptions to this rule and apply to the union value itself: the discard `_` pattern, the `var` pattern, the `not` pattern, an untyped property pattern, an untyped positional pattern, and a list pattern. A typed property or positional pattern can unwrap the union through its type test; the corresponding untyped pattern applies to the union itself. Use `var` to capture the union value when `GetPet()` returns a `Pet?` (`Nullable<Pet>`):
+Three patterns are exceptions to this rule: the discard `_` pattern, the `var` pattern, and the `not` pattern apply to the union value itself, not its `Value` property. Use `var` to capture the union value when `GetPet()` returns a `Pet?` (`Nullable<Pet>`):
 
 ```csharp
 if (GetPet() is var pet) { /* pet is the Pet? value returned from GetPet */ }

@@ -46,7 +46,7 @@ jobs:
       # Run the .NET dependabot-bot tool
       - name: dependabot-bot
         id: dependabot-bot
-        uses: dotnet/docs-tools/actions/dependabot-bot@main
+        uses: dotnet/docs-tools/actions/dependabot-bot@78c0756b60e5046dd55295c4a9369b20ffad6b34 # main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

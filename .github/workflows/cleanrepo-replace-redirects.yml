@@ -26,7 +26,7 @@ jobs:
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo@main
+        uses: dotnet/docs-tools/cleanrepo@78c0756b60e5046dd55295c4a9369b20ffad6b34 # main
         with:
           function: "ReplaceRedirectTargets"
           docfx_directory: "."

@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Validate
-        uses: dotnet/docs-tools/actions/docs-verifier@main
+        uses: dotnet/docs-tools/actions/docs-verifier@78c0756b60e5046dd55295c4a9369b20ffad6b34 # main
         env:
           GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

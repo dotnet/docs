@@ -35,7 +35,7 @@ Visual Studio can also be used to acquire .NET and uses the same MSIs as the sta
 
 The majority of upgrades are handled at the bundle level. The previous version is only removed once the new version is installed. There are two exceptions: the .NET host and ASP.NET Core Module MSIs are updated in place.
 
-Starting with .NET 8, users have the option to [defer](https://learn.microsoft.com/en-us/dotnet/core/install/windows#choose-when-previous-versions-are-removed) removing the version of a bundle.
+Starting with .NET 8, users have the option to [defer](/dotnet/core/install/windows#choose-when-previous-versions-are-removed) removing the previous version of a bundle.
 
 ## Bundle composition and reference counting
 

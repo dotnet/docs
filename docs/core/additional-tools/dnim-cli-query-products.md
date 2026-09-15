@@ -1,8 +1,9 @@
 ---
 title: dnim query products command
-description: The scan command identifies .NET installations.
+description: The query releases command provides information about specific .NET products.
 author: joeloff
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dnim query

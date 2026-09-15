@@ -26,6 +26,8 @@ dnim-win-[x86|x64|arm64] layout -?|-h|--help
 
 ## Description
 
+The command create or updates a cache used for offline deployments inside network restricted environments.
+
 ## Options
 
 - [!INCLUDE [accept-license](includes/dnim-cli-accept-license.md)]
@@ -41,8 +43,6 @@ dnim-win-[x86|x64|arm64] layout -?|-h|--help
 - [!INCLUDE [verbosity](includes/dnim-cli-verbosity.md)]
 
 ## Results
-
-
 
 ## Examples
 

@@ -1,6 +1,6 @@
 ---
-title: dnim scan command
-description: The scan command identifies .NET installations.
+title: dnim update command
+description: The update command updates existing .NET installations.
 author: joeloff
 ms.date: 08/11/2026
 ---
@@ -9,12 +9,12 @@ ms.date: 08/11/2026
 
 ## Name
 
-`dnim-win-[x86|x64|arm64] scan` - Detects, classifies, and reports .NET installations on a device.
+`dnim-win-[x86|x64|arm64] update` - Detects, classifies, removes and updates .NET installations on a device.
 
 ## Synopsis
 
 ```dotnetcli
-dnim-win-[x86|x64|arm64] scan [-a|--accept-license] [-b|--include-bin-deployed-installs]
+dnim-win-[x86|x64|arm64] update [-a|--accept-license] [-b|--include-bin-deployed-installs]
     [--epv|--except-product-version <PRODUCT_VERSION>] 
     [--esp|--except-support-phase <active|eol|golive|maintenance|preview>]
     [-l|--log-file <LOG_FILE>] [-o|--output-file <OUTPUT_FILE>] [--offline <LAYOUT_DIRECTORY>]
@@ -27,7 +27,7 @@ dnim-win-[x86|x64|arm64] scan -?|-h|--help
 
 ## Description
 
-The `scan` command detects, classifies and reports .NET installations on Windows. MSIs and bundles are detected by default. Bin deployed (xcopy/zip) installs under `Program Files` can be detected using the `--include-bin-deployed-installs` option.
+The `update` command detects, classifies, removes and updates .NET installations on Windows. MSIs and bundles are detected by default. Bin deployed (xcopy/zip) installs under `Program Files` can be detected using the `--include-bin-deployed-installs` option.
 
 Results can be filtered using the product version and support phase options to only include installations matching the specified criteria. Results are written to both the console and diagnostic log. Additional output formats are available and include JSON, HTML and CSV.
 

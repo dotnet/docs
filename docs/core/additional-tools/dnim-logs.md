@@ -7,7 +7,7 @@ ms.date: 08/11/2026
 
 # Logging
 
-DNIM provides a rich set of logs to assit with diagnosing and troubleshooting issues.
+DNIM provides a rich set of logs to diagnose and troubleshoot issues.
 
 ## Console
 
@@ -15,9 +15,9 @@ DNIM always generates output to the console. The default verbosity is `normal`. 
 
 ## Diagnostic file log
 
-DNIM always generates a diagnostic log in the current user's `%TEMP%` directory. The default filename consists of the `dnim` prefix followed by the date and time, for example, `dnim_20260811_203922.log` indicates the log was generated on August 11, 2026 at 8:39:22 pm.
+DNIM always generates a diagnostic log in the current user's `%TEMP%` directory. The default filename starts with the `dnim` prefix followed by the file creation date and time, for example, `dnim_20260811_203922.log` indicates the log was generated on August 11, 2026 at 8:39:22 pm.
 
-The contents of the log varies based on the command and the state of the machine. The start of the log will include information like the version and the command that was executed.
+The contents of the log varies based on the command and device state. The start of the log includes information like the version of DNIM and the command that was executed.
 
 Each line consists of a timestamp, message type and event ID followed by a detailed message.
 
@@ -25,11 +25,11 @@ Each line consists of a timestamp, message type and event ID followed by a detai
 [2026-08-11 20:39:23.495]d1000: DNIM started, command: c:\Users\user1\Downloads\dnim-win-x64.exe scan, PID: 18800, PPID: 34220 (C:\WINDOWS\System32\cmd.exe), SID: S-1-5-21-2127521184-1604012920-1887927527-5663403.
 ```
 
-In the preceeding example, `d1000` indicates that a diagnostic message with event ID 1000 was logged. Messages can also be prefixed with `i` (informational) or `e` (error). Only messages with non-zero event ID are sent to the Windows Event log.
+In the previous example, `d1000` indicates a diagnostic message with event ID 1000 was logged. Messages can also be prefixed with `i` (informational) or `e` (error). Only messages with non-zero event ID are sent to the Windows Event log.
 
 ## Registry
 
-DNIM tracks information pertaining to it's last execution in the registry. The data is stored under `HKCU\Software\Microsoft\DNIM` or `HKLM\Software\Microsoft\DNIM` (if the command was run with elevated permissions).
+DNIM stores information about it's last execution in the registry. The data is stored under `HKCU\Software\Microsoft\DNIM` or `HKLM\Software\Microsoft\DNIM`. The latter key is used if the command was executed with administrator premissions.
 
 ```console
 D:\>reg query HKCU\Software\Microsoft\DNIM /s
@@ -47,7 +47,7 @@ HKEY_CURRENT_USER\Software\Microsoft\DNIM\License
 
 ## Events
 
-Commands that modify a machine's state by removing or updating .NET will log events to the Windows Application log using `DNIM` as the event source.
+Commands that modify the state of a device may create one or more entry in the Windows Application log. The event source will be designated `DNIM`.
 
 ![DNIM Start Event](./media/dnim/eventlog.png)
 

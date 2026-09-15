@@ -16,6 +16,12 @@ sections:
       - question: Does DNIM require internet access?
         answer: |
           It depends. The [`layout`](dnim-cli-layout.md) command needs to download release information and installer executables. Other commands like [`scan`](dnim-cli-scan.md) supports offline execution.
+
+      - question: .NET x.y is EOL. Why doesn't Visual Studio designate it as out-of-support?
+        answer: |
+          - The out-of-support metadata is unsupported by the version of Visual Studio that installed .NET. The metadata was first introduced in Visual Studio 15.9.27, 16.0.18, 16.4.13, 16.7.3 and 16.8 Preview 3.
+          - .NET was in support when Visual Studio shipped before going out of support. As a result, the metadata couldn't be updated.
+
   - name: Best Practices
     questions:
       - question: What is the recommended approach to remove end-of-life versions of .NET?
@@ -23,8 +29,18 @@ sections:
           - Start with a small pilot to gather information and understand the state of devices.
           - Consider using [Visual Studio](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=visualstudio#remove-out-of-support-components) to remove old .NET components it installed.
           - Deploy DNIM using `--sp eol` and remove any installs that were left behind or orphaned using `--remove-orphaned-installs` and `--remove-EOL-versions-from-VS`.
+
   - name: Troubleshooting
     questions:
       - question: Can DNIM be used with application monitoring and profiling tools like Datadog?
         answer: |
           No. DNIM is a trimmed .NET application and will fail to launch. You can exclude DNIM from profiling by setting an environment variable before launching it: `DD_PROFILER_EXCLUDE_PROCESSES="dnim-win-x64.exe"`.
+
+      - question: Why is DNIM unable to uninstall the version of .NET that my vulnerability scanning tool is reporting?
+        answer: |
+          - Use the `-b` option to check for bin-deployed installs.
+          - Check whether the uninstall command reported any dependents.
+
+      - question: Why did Visual Studio reinstall an out-of-support .NET component?
+        answer: |
+          - If you manually removed the installation and VS considers it to be in support, actions like repairing Visual Studio may result in reinstalling the setup package.

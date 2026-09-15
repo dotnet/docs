@@ -16,7 +16,7 @@ ms.date: 08/11/2026
 ```dotnetcli
 dnim-win-[x86|x64|arm64] uninstall [-a|--accept-license]
     [-b|--include-bin-deployed-installs]
-    [--crsp|--create-system-restore-point]
+    [--csrp|--create-system-restore-point]
     [--epv|--except-product-version <PRODUCT_VERSION>]
     [--esp|--except-support-phase <active|eol|golive|maintenance|preview>]
     [--ignore-dependents]
@@ -114,9 +114,9 @@ The results are similar to those produced by the [`scan`](dnim-cli-scan.md) comm
 
 ## Policy Evaluation
 
-DNIM generates a set of internal policies based on the command-line options. Every installation is evaluated against the policies. Evalution stops when a policy applies to an installation. Installations are removed if none of the policies apply.
+DNIM generates a set of internal policy rules based on the command-line options. Every installation is evaluated against the policies. Evaluation stops when a policy applies. If no policies apply, the .NET installation can be removed.
 
-The table below contains a general overview of the policies generated from the commandline options.
+The table below contains an overview of the policies created from the command-line options.
 
 | Policy | Description |
 | --- | --- |
@@ -137,15 +137,15 @@ associated with .NET 6.0 for removal. When the tool evaluates a .NET 7.0 install
 
 ## Policy Results
 
-Every installation is assigned an action based on the policies that were evaluated. The table belows contains
+Every installation is assigned an action based on the evaluated policies. The table belows contains
 a description for the various policy actions returned by the `uninstall` command. Policy actions with a
-`None` prefix indicate the installation will not be removed.
+`None` prefix indicate the installation won't be removed.
 
 | Action | Policy | Description |
 | --- | --- | --- |
 | NoneNotOutOfSupport | Support Phase | The product is still considered to be in support based on the published release information. |
 | NoneLatestReleasedVersion | Retention | The installation is the latest known released version and will be retained. |
-| NoneNotOutOfSupportInVisualStudio | Visual Studio EOL | The product is out of support, but not all instances of Visual Studio considers it out-of-support. This may indicate that product information in the Visual Studio catalogs are outdated or inconsistent. |
+| NoneNotOutOfSupportInVisualStudio | Visual Studio EOL | The product is out of support, but not all instances of Visual Studio considers it out-of-support. This indicates that product information in one or more Visual Studio catalog is outdated or incorrect. |
 | NoneProductVersionExcluded | Product Version | The product will be retained because its version excluded it from being removed. |
 | NoneProductVersionNotFound | Product Version | The installation belongs to an unknown .NET product version. This can happen when the .NET releases JSON data has not been updated or an old copy of data is being used. |
 | NoneSupportPhaseExcluded | Support Phase | The installation will be retained because its support phase is excluded. |

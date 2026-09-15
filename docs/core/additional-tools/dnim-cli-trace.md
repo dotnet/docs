@@ -9,7 +9,7 @@ ms.date: 08/11/2026
 
 ## Name
 
-`dnim-win-[x86|x64|arm64] trace` - Identifies .NET and .NET Core processes.
+`dnim-win-[x86|x64|arm64] trace` - Identifies running .NET and .NET Core processes and the runtimes and SDK being used.
 
 ## Synopsis
 
@@ -28,7 +28,9 @@ The `trace` command processes kernel traces to identify running .NET and .NET Co
 
 The command examines a number of events, including `ProcessDCStart`, `RuntimeStart`, and `ImageLoad` to identify running processes that depend on the global runtime under Program Files, including .NET SDKs.
 
-The command can differentiate between single file and self-contained applications. While non-FDD processes may not be impacted by shared installations of .NET, the information provides a more complete view of a device, allowing administrators to make informed decisions.
+The command differentiates between single file and self-contained applications. While non-FDD processes may not be impacted by shared installations of .NET, the information provides a more complete view of a device, allowing administrators to make informed decisions.
+
+The command is useful to identify applications using end-of-life runtimes and how removing older versions of .NET could impact a device.
 
 > [!IMPORTANT]
 > The command requires administrator access to process kernel traces.
@@ -54,8 +56,8 @@ The results include information about each process (PID and start time) and the 
 | pwsh | 37364 | Net | coreclr.dll | 10.0.1026.32716 | |
 
 1. DNIM is a single file application and the CLR is reported under the application host.
-2. The `dotnet` process is an FDD application running on .NET 10.0.11. Note that the process also loaded modules from the .NET SDK.
-3. The `pwsh` process is a self-contained application. The diagnostic log confirms this and shows a local copy of `coreclr.dll` was loaded. The version is also different from the global copy loaded by `dotnet` (second row).
+1. The `dotnet` process is an FDD application running on .NET 10.0.11. Note that the process also loaded modules from the .NET SDK.
+1. The `pwsh` process is a self-contained application. The diagnostic log confirms this and shows a local copy of `coreclr.dll` was loaded. The version is also different from the global copy loaded by `dotnet` (second row).
 `[2026-08-17 08:31:59.175]d0000: Event: RuntimeStart, timestamp: 08/17/2026 08:31:57, PID: 37364, path: C:\Program Files\PowerShell\7\coreclr.dll`
 
 ## See also

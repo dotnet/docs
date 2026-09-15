@@ -6,8 +6,7 @@ static class BasicPatterns
         Console.WriteLine(FormatSensorValue(21.5));
         Console.WriteLine(GetCommandMessage(Command.Start));
         Console.WriteLine(HasText("ready"));
-        Console.WriteLine(FormatTotal(19.95m, 4.50m));
-        Console.WriteLine(DescribeAverage([8, 9, 10]));
+        Console.WriteLine(DescribeAverage([88, 92, 95]));
     }
 
     // <DeclarationPattern>
@@ -52,14 +51,6 @@ static class BasicPatterns
     // <ConstantNullPattern>
     static bool HasText(string? text) => text is not null;
     // </ConstantNullPattern>
-
-    // <VarPattern>
-    static string FormatTotal(decimal subtotal, decimal tax) =>
-        (subtotal + tax) switch
-        {
-            var total => $"Total: {total:C}"
-        };
-    // </VarPattern>
 
     // <VarPatternWhen>
     static string DescribeAverage(int[] scores) =>

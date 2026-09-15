@@ -5,6 +5,7 @@ static class Overview
         Console.WriteLine(GetDeliveryMessage(new ExpressDelivery("ZX-42")));
         PrintTrackingCode(new ExpressDelivery("ZX-42"));
         PrintPackageStatus(null);
+        PrintDeliveryUpdate(new ExpressDelivery("ZX-42"));
         Console.WriteLine(GetStatusMessage(new StandardDelivery(2)));
     }
 
@@ -42,6 +43,28 @@ static class Overview
         }
     }
     // </NullPatterns>
+
+    // <SwitchStatement>
+    static void PrintDeliveryUpdate(Delivery? delivery)
+    {
+        switch (delivery)
+        {
+            case null:
+                Console.WriteLine("No delivery was scheduled.");
+                break;
+            case ExpressDelivery express:
+                Console.WriteLine($"Express delivery {express.TrackingCode} is ready.");
+                Console.WriteLine("Notify the priority desk.");
+                break;
+            case StandardDelivery standard:
+                Console.WriteLine($"Standard delivery arrives in {standard.Days} days.");
+                break;
+            default:
+                Console.WriteLine("Another delivery type is scheduled.");
+                break;
+        }
+    }
+    // </SwitchStatement>
 
     // <StatusMessage>
     static string GetStatusMessage(StandardDelivery delivery) =>

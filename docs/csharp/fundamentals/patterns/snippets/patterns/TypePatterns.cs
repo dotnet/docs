@@ -1,48 +1,66 @@
-using System.IO;
-
 static class TypePatterns
 {
     public static void Run()
     {
-        Console.WriteLine(IsText("notes"));
-        Console.WriteLine(DescribeResource(new MemoryStream()));
-        Console.WriteLine(IsCompatible<int, object>(42));
-        Console.WriteLine(TryGetMatch<object, string>("ready", out string? match));
-        Console.WriteLine(match);
+        Console.WriteLine(CanRoute(new CustomerAddress("15 Pine Street")));
+        Console.WriteLine(RouteRequest(new PasswordResetRequest()));
+        ShowCompatibility();
+
+        object[] inventory = [new ShippingLabel(), new PackingSlip()];
+        Console.WriteLine(ContainsItemOfType<ShippingLabel>(inventory));
     }
 
     // <TypePattern>
-    static bool IsText(object? value) => value is string;
+    static bool CanRoute(object? destination) =>
+        destination is IRouteStop;
     // </TypePattern>
 
     // <TypePatternSwitch>
-    static string DescribeResource(object? resource) =>
-        resource switch
+    static string RouteRequest(object request) =>
+        request switch
         {
-            MemoryStream => "An in-memory stream",
-            Stream => "Another kind of stream",
-            IDisposable => "A disposable resource",
-            null => "No resource",
-            _ => "Another value"
+            PasswordResetRequest => "Identity team",
+            BillingQuestion => "Billing team",
+            SupportRequest => "General support team",
+            _ => "Intake team"
         };
     // </TypePatternSwitch>
 
-    // <GenericTypePattern>
-    static bool IsCompatible<TInput, TMatch>(TInput value) =>
-        value is TMatch;
-    // </GenericTypePattern>
-
-    // <GenericDeclarationPattern>
-    static bool TryGetMatch<TInput, TMatch>(TInput value, out TMatch? match)
+    // <ClassAndInterface>
+    static void ShowCompatibility()
     {
-        if (value is TMatch found)
+        object destination = new ExpressRouteStop("8 Oak Avenue");
+
+        Console.WriteLine(destination is ExpressRouteStop); // Exact class: True
+        Console.WriteLine(destination is RouteStop);        // Base class: True
+        Console.WriteLine(destination is IRouteStop);       // Interface: True
+    }
+    // </ClassAndInterface>
+
+    // <GenericTypePattern>
+    static bool ContainsItemOfType<TItem>(IEnumerable<object> inventory)
+    {
+        foreach (object item in inventory)
         {
-            match = found;
-            return true;
+            if (item is TItem)
+            {
+                return true;
+            }
         }
 
-        match = default;
         return false;
     }
-    // </GenericDeclarationPattern>
+    // </GenericTypePattern>
 }
+
+interface IRouteStop { }
+record CustomerAddress(string Street) : IRouteStop;
+abstract record RouteStop(string Street) : IRouteStop;
+sealed record ExpressRouteStop(string Street) : RouteStop(Street);
+
+abstract record SupportRequest;
+sealed record PasswordResetRequest : SupportRequest;
+sealed record BillingQuestion : SupportRequest;
+
+sealed record ShippingLabel;
+sealed record PackingSlip;

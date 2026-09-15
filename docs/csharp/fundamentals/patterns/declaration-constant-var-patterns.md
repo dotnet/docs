@@ -1,7 +1,7 @@
 ---
 title: "Declaration, constant, and var patterns"
-description: Learn to test and capture values with C# declaration, constant, and var patterns.
-ms.date: 09/14/2026
+description: Learn when to use C# declaration, constant, and var patterns to test or capture the result of an expression.
+ms.date: 09/15/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -9,65 +9,75 @@ ai-usage: ai-assisted
 # Declaration, constant, and `var` patterns
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if you haven't used C# patterns before. For the complete language rules, see the [patterns reference](../../language-reference/operators/patterns.md).
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if you haven't used C# patterns before. For complete language rules, see the [patterns reference](../../language-reference/operators/patterns.md).
 
-Declaration, constant, and `var` patterns answer three everyday questions:
+A pattern is applied to an *input expression*. C# evaluates the expression, then the pattern tests or captures the resulting value. Declaration, constant, and `var` patterns answer three practical questions:
 
-- **Declaration pattern:** Does this value have a compatible run-time type? If so, capture it in a new variable.
-- **Constant pattern:** Does this value equal one specific constant?
-- **`var` pattern:** Capture this value in a new variable without testing it.
+- **Declaration pattern:** Did the expression produce a non-null value of a compatible run-time type? If so, declare a variable for that value.
+- **Constant pattern:** Did the expression produce one specific constant value?
+- **`var` pattern:** What value did the expression produce? Capture it without first testing its type or value.
 
 ## Test and capture a type with a declaration pattern
 
-A *declaration pattern* contains a type followed by a variable name. It matches a non-null value whose run-time type is compatible with the specified type:
+A *declaration pattern* consists of a type and a *designation*. The type specifies what run-time type to test. The designation declares the variable that receives the matching value.
+
+The following example receives an `object`, so the expression might produce many different types. The declaration pattern lets the matching branch use a decimal amount without a separate type test and cast:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="DeclarationPattern":::
 
-The pattern `decimal amount` performs two operations together: it tests whether `value` can be treated as a `decimal`, and it assigns the converted value to `amount`. The new variable is definitely assigned only where the pattern matched.
+In `value is decimal amount`:
 
-The specified type can be a class, a base class, or an implemented interface. This capability lets one switch expression handle several related types without separate casts:
+- `value` is the input expression. C# evaluates it first.
+- `decimal` is the tested type. The pattern matches when the evaluated value is non-null and its run-time type is compatible with `decimal`.
+- `amount` is the designation. When the pattern matches, it declares `amount` and assigns the decimal value to it.
+
+The compiler tracks whether a local variable has received a value before your code reads it. This tracking is called *definite assignment*. Inside the `if` block, the compiler knows that `amount` was assigned because the block runs only when the pattern matches.
+
+Choose a declaration pattern when the matching branch needs to use the result as the tested type. It combines the test, conversion, and variable declaration, which avoids repeating the expression or writing a separate cast.
+
+You can also use declaration patterns when one expression might produce several useful types:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="DeclarationSwitch":::
 
-Declaration patterns don't match `null`. They also don't use user-defined conversions. The input's compile-time type and the pattern type must be *pattern compatible*. Pattern compatibility includes identity, reference, boxing, unboxing, nullable, and open-type cases described in the [declaration pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns). At run time, the value must pass the corresponding type test.
+Each arm declares a variable of the matched type because the result needs that type's formatting behavior. Declaration patterns don't match `null` and don't use user-defined conversions. For the complete compatibility rules, see [Declaration and type patterns](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
 
 ## Match a specific value with a constant pattern
 
-A *constant pattern* compares an input with one constant value. Constants include number, character, string, Boolean, and enum values, declared `const` values, and `null`:
+A *constant pattern* tests whether an expression produces a particular constant, such as a number, string, Boolean, enum member, declared `const` value, or `null`.
+
+Constant patterns fit a switch expression when several known values each produce a different result:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="ConstantPatterns":::
 
-Use constant patterns when each named or discrete value has a distinct meaning. For integral and enum inputs, including their nullable forms, C# compares the converted values with the built-in `==` operation. For other supported inputs, matching uses `object.Equals`, with one exception: A `Span<char>` or `ReadOnlySpan<char>` input can match a non-null constant string by using <xref:System.MemoryExtensions.SequenceEqual*>. User-defined `==` operators aren't used by constant-pattern matching.
+Choose this form when the command can have several discrete meanings. The switch arms keep the values and their results together. For one simple equality comparison, an `if` statement such as `if (command == Command.Start)` is usually easier to read.
 
-Put the most specific arms first and finish with another pattern, such as `_`, when other input values are valid.
+Constant-pattern matching uses built-in language equality rules rather than a user-defined `==` operator. For the detailed equality and conversion rules, see the [constant pattern reference](../../language-reference/operators/patterns.md#constant-pattern).
 
-Use `is null` or `is not null` for null checks:
+The `null` constant pattern is useful for a reliable null check:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="ConstantNullPattern":::
 
-The `null` constant pattern matches only `null`. It doesn't call a user-defined equality operator. That behavior makes the test reliable even when the value's type overloads `==`.
+Choose `is null` or `is not null` when you're checking null state. These patterns don't call a user-defined equality operator, even when the expression's type overloads `==`.
 
-## Capture any value with a `var` pattern
+## Capture a result for a guard with a `var` pattern
 
-A *`var` pattern* always matches and assigns the input to a new variable. Unlike a declaration pattern, it doesn't test the run-time type:
+A *`var` pattern* matches every result, including `null`, and declares a variable whose type is the input expression's compile-time type. Merely naming a calculation doesn't require a pattern. For example, prefer `var total = subtotal + tax;` over a one-arm switch expression.
 
-:::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="VarPattern":::
-
-The compiler infers `total` as `decimal` from the input expression. A `var` pattern matches every value, including `null`, and the variable has the input expression's compile-time type. Because the pattern always matches, an unguarded `var` arm belongs last. Otherwise, it subsumes every later arm.
-
-A `var` pattern is most useful when the input is an expression whose result you want to name and use in a condition:
+A `var` pattern becomes useful when a switch arm needs to name a calculated result before a `when` condition can test it:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="VarPatternWhen":::
 
-The `when` clause is a *case guard*: an additional Boolean condition evaluated after the pattern matches. In this example, `var average` gives the calculated value a name so the guard and result can both use it. The arms remain reachable because a guard can be `false`.
+The input expression `scores.Average()` is evaluated once. Each `var average` pattern captures its result. The `when` clause is a *case guard*, an additional Boolean condition checked after the pattern matches. This form keeps the calculated average next to the ranges that classify it without calculating the average again.
 
-If you don't need the captured value, use the [discard pattern `_`](discards.md#pattern-matching-with-switch) instead of giving it a name.
+Choose a `var` pattern when capturing the evaluated result helps a guard or a larger pattern express its decision. Because an unguarded `var` pattern always matches, put an unguarded `var` arm last.
+
+If you don't need the captured value, use the [discard pattern `_`](discards.md#pattern-matching-with-switch) instead of declaring a variable.
 
 ## See also
 
 - [Pattern matching overview](pattern-matching.md)
 - [Type patterns](type-patterns.md)
-- [Discards](discards.md)
+- [Discards and the discard pattern](discards.md)
 - [Declaration and type pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns)
 - [Constant pattern reference](../../language-reference/operators/patterns.md#constant-pattern)
 - [`var` pattern reference](../../language-reference/operators/patterns.md#var-pattern)

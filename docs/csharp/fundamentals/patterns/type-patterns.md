@@ -1,7 +1,7 @@
 ---
 title: "Type patterns"
-description: Learn how C# type patterns test run-time types in is expressions, switch statements, switch expressions, and generic code.
-ms.date: 09/14/2026
+description: Learn when to use a C# type pattern for a yes-or-no run-time type test without declaring a variable.
+ms.date: 09/15/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -9,51 +9,50 @@ ai-usage: ai-assisted
 # Type patterns
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Read [generic types and methods](../types/generics.md) first if type parameters such as `T` are new to you. For the complete conversion rules, see [declaration and type patterns](../../language-reference/operators/patterns.md#declaration-and-type-patterns) in the language reference.
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you. For complete compatibility rules, see [declaration and type patterns](../../language-reference/operators/patterns.md#declaration-and-type-patterns) in the language reference.
 
-A *type pattern* tests whether a non-null value's run-time type is compatible with a specified type. Unlike a [declaration pattern](declaration-constant-var-patterns.md#test-and-capture-a-type-with-a-declaration-pattern), a type pattern doesn't create a variable. The expressions `value is SomeType` and `value is SomeType _` perform equivalent type tests when both forms are valid:
+A *type pattern* is applied to an input expression. C# evaluates the expression, then tests whether the resulting value is non-null and its run-time type is compatible with the specified type. A type pattern reports only whether the type test succeeds. It doesn't declare a variable.
+
+## Ask a yes-or-no type question
+
+Suppose a delivery service receives several kinds of destinations. It needs to determine whether an object can be used as a route stop, but it doesn't need any route-stop members yet:
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePattern":::
 
-Use a type pattern when the type test itself is all you need. Use a declaration pattern when the matching branch needs members that are available only on the more specific type.
+The input expression is `destination`, and `IRouteStop` is the type being tested. Choose a type pattern when the answer is only yes or no. If the matching branch needs to read an address or call another member through `IRouteStop`, choose a [declaration pattern](declaration-constant-var-patterns.md#test-and-capture-a-type-with-a-declaration-pattern) instead so the branch has a variable of that type.
 
-## Match several types
+> [!NOTE]
+> You might also see `destination is IRouteStop _`. That syntax is a declaration pattern whose designation is a discard. It performs the same type test when both forms are valid, but `destination is IRouteStop` states the test-only intent more directly.
 
-Type patterns are useful in a switch expression when the result depends on the kind of value, but not on the value's members:
+## Route several types
+
+Type patterns also fit a switch expression when the result depends on an object's type but doesn't need data from that object:
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePatternSwitch":::
 
-The switch arms are checked from top to bottom. Put a derived type before its base type. If the `Stream` arm appeared before the `MemoryStream` arm, every `MemoryStream` value would match `Stream` first, and the compiler would report that the later arm is unreachable.
+Each arm answers a type question and returns the team that handles that request. No arm declares a variable because no branch reads request-specific members.
 
-A type pattern doesn't match `null`, so the `null` arm remains distinct. The final discard arm handles every other value.
+Switch arms are considered from top to bottom. Put a more specific derived class before its base class. Otherwise, the base-class arm can match every instance of the derived class, which makes the later arm unreachable.
 
-## Type compatibility
+## Match classes and interfaces
 
-A type pattern is allowed when the input's compile-time type and the pattern type are pattern compatible. At run time, it can match when the value:
+A type pattern can match the value's exact class, one of its base classes, or an interface that the class implements:
 
-- is the specified type,
-- derives from the specified class,
-- implements the specified interface,
-- can be boxed to or unboxed from the specified type, or
-- comes from a nullable value type that contains a value compatible with the specified type.
+:::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="ClassAndInterface":::
 
-Type patterns don't use user-defined conversions. For example, if a class defines a conversion to `string`, a `string` type pattern still doesn't match an instance of that class. The pattern tests the value's run-time type rather than asking the program to convert the value.
+The evaluated value is an `ExpressRouteStop`. It also matches `RouteStop` because that class is its base class, and it matches `IRouteStop` because the class implements that interface. This behavior lets code ask about the capability it needs instead of requiring one exact class.
 
-## Use type patterns with generics
+Type patterns don't use user-defined conversions. The compiler also rejects a type pattern when the expression's compile-time type could never be compatible with the tested type. For all supported reference, boxing, nullable, and open-type cases, see the [type pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
 
-Generic code can test a value against another type parameter. A *type parameter* is the placeholder, such as `T`, in a generic method declaration. A *type argument* is the actual type supplied when the method is called.
+## Optional: use a type parameter as the tested type
 
-The following method reports whether a value of type `TInput` is also compatible with `TMatch`:
+This section builds on [generic types and methods](../types/generics.md). Skip it if type parameters are new to you.
+
+A generic inventory can ask whether a mixed collection contains a requested kind of item:
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="GenericTypePattern":::
 
-The pattern works whether the type arguments are reference types or value types. It also works when `TInput` is unconstrained. The pattern returns `false` when `value` is `null`.
-
-Use a declaration pattern instead when generic code needs the matching value with the tested type:
-
-:::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="GenericDeclarationPattern":::
-
-After the declaration pattern matches, `match` has the compile-time type `TMatch`, so the method can return it without a cast.
+`TItem` is a *type parameter*, a placeholder for the type supplied by the caller. The type pattern `item is TItem` is a good fit because the method needs only a yes-or-no result for each item. If it needed to use the matching item as `TItem`, a declaration pattern such as `item is TItem match` would declare that variable.
 
 ## See also
 

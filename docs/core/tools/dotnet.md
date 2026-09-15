@@ -2,6 +2,7 @@
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
 ms.date: 10/28/2025
+ai-usage: ai-generated
 ---
 # dotnet command
 
@@ -105,6 +106,8 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 - **`-?|-h|--help`**
 
   Prints out documentation for a given command. For example, `dotnet build --help` displays help for the `build` command.
+
+  Starting with .NET 11, `dotnet nuget <subcommand> --help` displays the help output from the NuGet CLI.
 
 - **`command options`**
 

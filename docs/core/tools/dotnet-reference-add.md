@@ -2,7 +2,7 @@
 title: dotnet reference add command
 description: The dotnet reference add command provides a convenient option to add project-to-project references.
 ms.date: 10/28/2025
-ai-usage: ai-generated
+ai-usage: ai-assisted
 ---
 # dotnet reference add
 
@@ -63,7 +63,7 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 
 - **`--file <FILE>`**
 
-   Specifies the file-based app to operate on.
+  Specifies the file-based app to operate on.
 
 - **`-f|--framework <FRAMEWORK>`**
 

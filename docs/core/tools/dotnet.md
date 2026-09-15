@@ -2,7 +2,7 @@
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
 ms.date: 10/28/2025
-ai-usage: ai-generated
+ai-usage: ai-assisted
 ---
 # dotnet command
 

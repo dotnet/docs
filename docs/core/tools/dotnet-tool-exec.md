@@ -2,7 +2,7 @@
 title: dotnet tool exec command
 description: The dotnet tool exec command downloads and invokes a .NET tool in one step without permanent installation.
 ms.date: 09/06/2025
-ai-usage: ai-generated
+ai-usage: ai-assisted
 ---
 # dotnet tool exec
 

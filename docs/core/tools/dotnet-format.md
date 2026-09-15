@@ -2,7 +2,7 @@
 title: dotnet format command
 description: The dotnet format command formats code to match EditorConfig settings for the current directory.
 ms.date: 09/29/2025
-ai-usage: ai-generated
+ai-usage: ai-assisted
 ---
 # dotnet format
 
@@ -60,7 +60,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 - **`--framework <FRAMEWORK>`**
 
-  Specifies the target framework to format. You can't use this option with `--folder`.
+  Specifies the target framework to format.
 
 - **`--include <INCLUDE>`**
 

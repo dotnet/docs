@@ -1,7 +1,7 @@
 ---
 title: August 2026 cumulative update
 description: Learn about the improvements in the .NET Framework August 2026 cumulative update.
-ms.date: 09/10/2026
+ms.date: 09/14/2026
 ai-usage: ai-generated
 ---
 # .NET Framework August 2026 cumulative update

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 09/12/2026
+ms.date: 09/15/2026
 ai-usage: ai-assisted
 ---
 
@@ -173,8 +173,11 @@ builder.TestHost.AddAzureDevOpsProvider();
 | `--report-azdo-annotations` | 2.4.0 | Enables or disables annotations for failed and skipped tests. Valid values are `on` (default) and `off`. Requires `--report-azdo`. |
 | `--report-azdo-flaky-history` | 2.3.0 | Queries Azure DevOps test result history for the past N days (1-90) and annotates reported failures with flakiness context. Requires `--report-azdo`. |
 | `--report-azdo-demote-known-flaky` | 2.3.0 | Demotes failures that are flaky enough in the Azure DevOps history window (default threshold is 25%) from errors to warnings. Requires `--report-azdo` and `--report-azdo-flaky-history`. |
+| `--report-azdo-slow-test-history` | 2.3.0 | Queries Azure DevOps test result history for the specified number of days and lowers the per-test still-running threshold for tests with a known short runtime. Accepts exactly one integer from 1 through 90. With enough historical samples, the threshold is the lower of 60 seconds and the historical p99 duration multiplied by the configured multiplier. Requires `--report-azdo`. |
+| `--report-azdo-slow-test-history-min-sample` | 2.3.0 | Sets the minimum number of historical samples required before the extension uses a test's history to adjust its slow-test threshold or add history details to slow-test output lines. Accepts exactly one integer greater than or equal to 1. The default is 10. Requires `--report-azdo-slow-test-history`. |
+| `--report-azdo-slow-test-history-multiplier` | 2.3.0 | Sets the multiplier applied to a test's historical p99 duration to calculate its slow-test threshold. Accepts exactly one invariant-culture floating-point value greater than 0 and at most 10,000. The default is 3. Requires `--report-azdo-slow-test-history`. |
 | `--report-azdo-quarantine-file` | 2.3.0 | Path to a text file that lists quarantined test fully qualified names or glob patterns. Matching failures are reported as warnings. Requires `--report-azdo`. |
-| `--report-azdo-summary` | 2.3.0 | Writes a Markdown job summary at the end of the test run and uploads it through `##vso[task.uploadsummary]`. An optional file path argument overrides the default location (`{testResultsDir}/azdo-summary-{tfm}.md`). Requires `--report-azdo`. |
+| `--report-azdo-summary` | 2.3.0 | Writes a Markdown job summary at the end of the test run and uploads it through `##vso[task.uploadsummary]`. An optional file path argument overrides the default location (`{testResultsDir}/azdo-summary-{assembly}-{tfm}-{arch}.md`). Requires `--report-azdo`. |
 | `--report-azdo-stackframe-filter` | 2.3.0 | Adds regex patterns, matched against the fully qualified type prefix of each stack frame, that are skipped when the extension locates the user's call site to annotate. The option is repeatable, up to 16 patterns, and each pattern is compiled with a 500-ms match timeout. These patterns are additive to the extension's built-in MSTest assertion-implementation prefixes. Requires `--report-azdo`. |
 | `--report-azdo-upload-artifacts` | 2.3.0 | Uploads test result files and/or adds build tags to Azure DevOps. Valid values are `off` (default), `tags-only`, `files`, and `all`. |
 | `--report-azdo-upload-artifact-include` | 2.3.0 | Includes files in the Azure DevOps artifact upload using glob patterns relative to the test results directory. Defaults to `**/*`. Requires `--report-azdo-upload-artifacts` to be a value other than `off`. |
@@ -189,7 +192,12 @@ builder.TestHost.AddAzureDevOpsProvider();
 > [!NOTE]
 > The **MTP version** column lists the first MTP version that contains each option. The Azure DevOps extension itself became stable in MTP 1.9.0 with `--report-azdo` and `--report-azdo-severity`; the remaining options were added in MTP 2.3.0 or 2.4.0.
 
-The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
+The extension automatically detects that it runs in a continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
+
+> [!IMPORTANT]
+> Azure DevOps history queries require `SYSTEM_COLLECTIONURI`, `SYSTEM_TEAMPROJECT`, `SYSTEM_ACCESSTOKEN`, and `BUILD_DEFINITIONID`. If any value is missing, MTP continues without history data, skips flaky-history annotations, and uses the static 60-second threshold for slow-test lines.
+>
+> Live publishing with `--publish-azdo-test-results` requires `TF_BUILD=true`, `SYSTEM_COLLECTIONURI`, `SYSTEM_TEAMPROJECT`, `SYSTEM_ACCESSTOKEN`, and `BUILD_BUILDID`. If any value is missing or invalid, MTP warns and doesn't publish the test run.
 
 Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, the summary includes covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
 

@@ -65,7 +65,7 @@ Supply a typed, deconstructable expression on the right so the compiler can dete
 - **CS8132**: *Cannot deconstruct a tuple of 'element count' elements into 'variable count' variables.*
 - **CS8134**: *Deconstruction must contain at least two variables.*
 
-Use at least two variables in a deconstruction (**CS8134**). Match the number of variables on the left to the number of tuple elements on the right, and add a discard (`_`) for each value that you don't need (**CS8132**). For more information, see [discards in tuple and object deconstruction](../../fundamentals/patterns/discards.md#tuple-and-object-deconstruction).
+Use at least two variables in a deconstruction (**CS8134**). Match the number of variables on the left to the number of tuple elements on the right, and add a discard (`_`) for each value that you don't need (**CS8132**). For more information, see [discards in tuple and object deconstruction](../../fundamentals/patterns/discards.md#deconstruction-declarations).
 
 ## Deconstruction declaration and assignment syntax
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 >
 > **Coming from another language?** C# patterns serve a role similar to Java's pattern matching and Python's `match` cases. C# uses patterns in `is` expressions, `switch` statements, and `switch` expressions.
 
-*Pattern matching* applies a *pattern*, which is a condition to test, to an expression. The *pattern input* is that expression. C# evaluates the input expression; the result is the *evaluated value*. The pattern tests whether that value has a particular type, equals a particular value, or has a particular shape. When a pattern matches, your code can use information learned by the test, such as a more specific type or a value extracted from an object.
+*Pattern matching* applies a pattern to an expression. A *pattern* is a condition to test the input expression against. The *pattern input* is that expression. C# evaluates the input expression; the result is the *evaluated value*. The pattern tests whether that value has a particular type, equals a particular value, or has a particular shape. When a pattern matches, your code can use information learned by the test, such as a more specific type or a value extracted from an object.
 
 You can use a pattern in three contexts:
 
@@ -21,22 +21,22 @@ You can use a pattern in three contexts:
 - in a `case` label of a `switch` statement, or
 - in an arm of a `switch` expression.
 
-Patterns are often clearer than a sequence of casts, null checks, and comparisons because each branch describes the data it handles. For example, the following method uses a `switch` expression to choose a delivery message:
+Patterns are often clearer than a sequence of comparison statements because each branch describes the data it handles. For example, the following method uses a `switch` expression to choose a delivery message:
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="SwitchExpressionOverview":::
 
-Nested patterns have their own input expressions. In `StandardDelivery { Days: <= 2 }`, the outer pattern receives the `delivery` expression. The nested `<= 2` pattern receives the `Days` property expression from the matched `StandardDelivery` object.
+Recursive patterns have their own input expressions. In `StandardDelivery { Days: <= 2 }`, the outer pattern receives the `delivery` expression. The recursive `<= 2` pattern receives the `Days` property expression from the matched `StandardDelivery` object.
 
-The expression before `switch` is the input expression. Each line inside the braces is a *switch arm*. The pattern appears before `=>`, and the result appears after it. C# evaluates the input expression, then selects the first arm, in text order, whose pattern matches and whose optional `when` guard, an additional Boolean condition written after the pattern, is `true`:
+The expression before `switch` is the input expression. Each line inside the braces is a *switch arm*. The pattern appears before `=>`, and the result appears after it. C# evaluates the input expression, then selects the first arm, in text order, whose pattern matches and whose optional `when` guard is `true`. The optional `when` guard is an additional Boolean condition written after the pattern. The preceding example showed the following patterns:
 
 - `null` is a *constant pattern*. It tests whether the `delivery` expression evaluates to `null`.
 - `ExpressDelivery express` is a *declaration pattern* with two parts. `ExpressDelivery` is the type-test part. It tests whether the evaluated value is a non-null object whose run-time type is compatible with `ExpressDelivery`. `express` is the *variable designation*: it declares a variable named `express` and assigns the matched `ExpressDelivery` object to it.
-- `StandardDelivery { Days: <= 2 }` begins with a type test. `StandardDelivery` tests whether the evaluated value is a non-null object of that type. The braces contain a *property pattern*. `Days` names the property to inspect, so the `Days` property expression becomes the input to the nested pattern. The `<= 2` portion is a *relational pattern*, which tests whether the evaluated value is less than or equal to `2`.
-- `_` is the *discard pattern*. It matches every evaluated value, including `null`. Because earlier arms already handle `null`, express deliveries, and standard deliveries arriving within two days, this final arm handles every remaining evaluated value.
+- `StandardDelivery { Days: <= 2 }` begins with a type test. `StandardDelivery` tests whether the evaluated value is a non-null object of that type. The braces contain a *property pattern*. `Days` names the property to inspect, so the `Days` property expression becomes the input to the recursive pattern. The `<= 2` portion is a *relational pattern*, which tests whether the evaluated value is less than or equal to `2`.
+- `_` (underscore) is the *discard pattern*. It matches every evaluated value, including `null`. Because earlier arms already handle `null`, express deliveries, and standard deliveries arriving within two days, this final arm handles every remaining value.
 
-An arm without a `when` guard is *unguarded*. All arms in the first example are unguarded. If an earlier unguarded arm matches every evaluated value that a later arm could match, the later arm is *subsumed*: it can never run, so the compiler reports an error. The discard arm (`_`) must come last because it matches every evaluated value. A guarded arm doesn't subsume a later arm based on its pattern alone because the guard might be `false`.
+An arm without a `when` guard is *unguarded*. All arms in the first example are unguarded. If an earlier unguarded arm matches every evaluated value that a later arm could match, the later arm is *subsumed*. A *subsumed* pattern is one where every possible input value that matches was already matched by an earlier switch arm. It can never match, so the compiler reports an error. The discard arm (`_`) must come last because it matches every input expression. A guarded arm doesn't subsume a later arm based on its pattern alone because the guard might be `false`.
 
-A switch expression is *exhaustive* when its arms handle every possible evaluated value. The first example is exhaustive because its final discard arm handles anything the earlier arms don't match. The compiler warns when it detects an evaluated value that no arm handles, but it can't prove exhaustiveness for every combination of patterns. For detailed matching, subsumption, and exhaustiveness rules, see the [patterns reference](../../language-reference/operators/patterns.md).
+A switch expression is *exhaustive* when its arms handle every possible input expression. The first example is exhaustive because its final discard arm handles anything the earlier arms don't match. The compiler warns when it detects a potential input value that no arm handles. The compiler can't prove exhaustiveness for every combination of patterns, but this diagnostic helps you write correct pattern matching code. For detailed matching, subsumption, and exhaustiveness rules, see the [patterns reference](../../language-reference/operators/patterns.md).
 
 ## Test one condition with `is`
 
@@ -44,7 +44,7 @@ Use the `is` operator when you need one Boolean test. The following code evaluat
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="IsPatternOverview":::
 
-The compiler tracks whether a local variable has been assigned before your code reads it. This tracking is called *definite assignment*. Inside the `if` block, the condition can be `true` only when the pattern assigned the matching object to `express`. The compiler therefore knows that `express` is definitely assigned there, and your code can safely use its `TrackingCode` property. You don't need a separate cast. If you only need the type test and don't need to declare a variable, use a [type pattern](type-patterns.md), such as `delivery is ExpressDelivery`.
+The compiler tracks whether a local variable has been assigned before your code reads it. This tracking is called *definite assignment*. Inside the `if` block, the condition can be `true` only when the pattern assigned the matching object to `express`. The compiler therefore knows that `express` is definitely assigned there. Your code can safely use its `TrackingCode` property. You don't need a separate cast. If you only need the type test and don't need to declare a variable, use a [type pattern](type-patterns.md), such as `delivery is ExpressDelivery`.
 
 Use `is null` and `is not null` for null checks. These patterns don't call a user-defined `==` or `!=` operator:
 
@@ -69,7 +69,7 @@ The following switch expression replaces an `if` / `else if` chain that assigns 
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="StatusMessage":::
 
-A switch expression is concise because every arm has the same purpose: produce the value returned by the method. Use a switch statement when branches perform actions, and use a switch expression when branches calculate one result.
+A switch expression is concise because every arm has the same purpose: produce the value returned. Use a switch statement when branches perform actions, and use a switch expression when branches calculate one result.
 
 ## Pattern categories
 
@@ -90,6 +90,6 @@ The Fundamentals articles linked in the table provide focused coverage of the ca
 
 - [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md)
 - [Type patterns](type-patterns.md)
-- [Discards](discards.md)
-- [Patterns reference](../../language-reference/operators/patterns.md)
-- [`switch` expression reference](../../language-reference/operators/switch-expression.md)
+- [Discards](discards.md).
+- [Patterns reference](../../language-reference/operators/patterns.md).
+- [`switch` expression reference](../../language-reference/operators/switch-expression.md).

@@ -82,7 +82,7 @@ To add a project reference, run the [dotnet reference add](dotnet-reference-add.
 dotnet reference add ../MyLibrary/MyLibrary.csproj
 ```
 
-To remove a project reference, remove the `<ProjectReference>` element from the project file or run the [dotnet reference remove](dotnet-reference-remove.md) command. (If you're using an SDK version of .NET 9 or earlier, use the "verb first" form `dotnet remove reference` instead.) 
+To remove a project reference, remove the `<ProjectReference>` element from the project file or run the [dotnet reference remove](dotnet-reference-remove.md) command. (If you're using an SDK version of .NET 9 or earlier, use the "verb first" form `dotnet remove reference` instead.)
 
 ```dotnetcli
 dotnet reference remove ../MyLibrary/MyLibrary.csproj

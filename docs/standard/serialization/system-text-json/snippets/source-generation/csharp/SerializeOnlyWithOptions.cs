@@ -45,19 +45,6 @@ namespace SerializeOnlyWithOptions
             //  "summary": "Hot"
             //}
 
-            // Serialize using Default context
-            // and options specified by [JsonSourceGenerationOptions].
-            // <SerializeWithContext>
-            jsonString = JsonSerializer.Serialize(
-                weatherForecast, typeof(WeatherForecast), SerializationModeOptionsContext.Default);
-            // </SerializeWithContext>
-            Console.WriteLine(jsonString);
-            // output:
-            //{
-            //  "date": "2019-08-01T00:00:00",
-            //  "temperatureCelsius": 0,
-            //  "summary": "Hot"
-            //}
         }
     }
 }

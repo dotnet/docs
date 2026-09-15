@@ -103,7 +103,7 @@ If you provide *Ildasm.exe* with a *PEfilename* argument that contains embedded 
 You can run *Ildasm.exe* over an.exe or *.dll* file to determine whether the file is managed. If the file is not managed, the tool displays a message stating that the file has no valid common language runtime header and cannot be disassembled. If the file is managed, the tool runs successfully.
 
 > [!WARNING]
-> *Ildasm.exe* is expected to only be used with trusted input. Do not pass untrusted assembly files to *Ildasm.exe*.
+> *Ildasm.exe* should only be used with trusted input. Do not pass untrusted files to *Ildasm.exe*.
 
 ## Version Information
 

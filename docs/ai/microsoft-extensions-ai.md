@@ -1,7 +1,7 @@
 ---
 title: Microsoft.Extensions.AI libraries
 description: Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
-ms.date: 12/10/2025
+ms.date: 09/14/2026
 ---
 
 # Microsoft.Extensions.AI libraries

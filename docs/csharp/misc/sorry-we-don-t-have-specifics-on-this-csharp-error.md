@@ -178,7 +178,6 @@ f1_keywords:
   - "CS8328"
   - "CS8335"
   - "CS8336"
-  - "CS8346"
   - "CS8348"
   - "CS8349"
   - "CS8350"
@@ -193,10 +192,7 @@ f1_keywords:
   - "CS8381"
   # Coming in C# 15
   - "CS9343" # misc
-  - "CS9347"
   - "CS9348"
-  - "CS9349"
-  - "CS9350"
 # Collection arguments:
   - "CS9354"
   - "CS9355"

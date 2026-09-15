@@ -1,7 +1,7 @@
 ---
 title: dotnet format command
 description: The dotnet format command formats code to match EditorConfig settings for the current directory.
-ms.date: 09/29/2025
+ms.date: 09/15/2026
 ai-usage: ai-assisted
 ---
 # dotnet format

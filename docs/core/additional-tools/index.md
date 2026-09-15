@@ -54,3 +54,7 @@ You can use [dotnet dev-certs](self-signed-certificates-guide.md) to create self
 ## .NET code coverage tool
 
 You can use [dotnet-coverage](dotnet-coverage.md) to collect [code coverage](../testing/unit-testing-code-coverage.md) from any .NET process.
+
+## .NET Install Manager
+
+Use the [.NET Install Manager](dnim-overview.md) to detect, uninstall or update .NET installations on Windows to remediate devices flagged by software vulnerability scanners.

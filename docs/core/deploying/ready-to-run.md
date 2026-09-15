@@ -83,7 +83,18 @@ These symbols will be placed in the publish directory and for Windows will have 
 
 ## Composite ReadyToRun
 
-Normal ReadyToRun compilation produces binaries that can be serviced and manipulated individually. Starting in .NET 6, support for Composite ReadyToRun compilation has been added. Composite ReadyToRun compiles a set of assemblies that must be distributed together. This has the advantage that the compiler is able to perform better optimizations and reduces the set of methods that cannot be compiled via the ReadyToRun process. However, as a tradeoff, compilation speed is significantly decreased, and the overall file size of the application is significantly increased. Due to these tradeoffs, use of Composite ReadyToRun is only recommended for applications that disable [Tiered Compilation](../runtime-config/compilation.md#tiered-compilation) or applications running on Linux that are seeking the best startup time with [self-contained](index.md#publish-as-self-contained) deployment. To enable composite ReadyToRun compilation, specify the `<PublishReadyToRunComposite>` property.
+Normal ReadyToRun compilation produces assemblies that can be serviced and deployed individually. Composite ReadyToRun compiles a set of assemblies together, allowing the compiler to perform additional optimizations and compile more methods ahead of time.
+
+Composite ReadyToRun has the following tradeoffs:
+
+- Compilation takes significantly longer.
+- The application is significantly larger.
+- Only [self-contained](index.md#publish-as-self-contained) deployments are supported.
+- The compiled assemblies must be distributed together.
+
+Composite ReadyToRun is supported in .NET 6 and later. In .NET 7 and later, it's enabled by default for self-contained [single-file](single-file/overview.md) deployments that use ReadyToRun.
+
+To enable composite ReadyToRun explicitly, set `PublishReadyToRunComposite` to `true`:
 
 ```xml
 <PropertyGroup>
@@ -92,7 +103,7 @@ Normal ReadyToRun compilation produces binaries that can be serviced and manipul
 ```
 
 > [!NOTE]
-> In .NET 6, Composite ReadyToRun is only supported for [self-contained](index.md#publish-as-self-contained) deployment.
+> `PublishReadyToRunComposite` is ignored if the deployment is not [self-contained](index.md#publish-as-self-contained). 
 
 ## Cross platform/architecture restrictions
 

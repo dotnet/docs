@@ -101,9 +101,9 @@ The command will first remove any applicable installs before applying updates. T
 
 - [!INCLUDE [support-phase](includes/dnim-cli-support-phase.md)]
 
-- [!INCLUDE [update-discontinued-sdks](include/dnim-cli-update-discontinued-sdks.md)]
+- [!INCLUDE [update-discontinued-sdks](includes/dnim-cli-update-discontinued-sdks.md)]
 
-- [!INCLUDE [update-EOL-versions](include/dnim-cli-update-discontinued-sdks.md)]
+- [!INCLUDE [update-EOL-versions](includes/dnim-cli-update-eol-versions.md)]
 
 - [!INCLUDE [verbosity](includes/dnim-cli-verbosity.md)]
 

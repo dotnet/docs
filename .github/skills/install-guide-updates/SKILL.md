@@ -22,17 +22,17 @@ Use the GitHub MCP server to read the files from the `dotnet/core` repository us
 
 | .NET version | Tag | Supported operating systems | Native dependencies |
 | --- | --- | --- | --- |
-| .NET 10 | `v10.0.11` | `release-notes/10.0/supported-os.json` | `release-notes/10.0/os-packages.json` |
-| .NET 9 | `v9.0.19` | `release-notes/9.0/supported-os.json` | `release-notes/9.0/os-packages.json` |
-| .NET 8 | `v8.0.30` | `release-notes/8.0/supported-os.json` | Use the .NET 9 package data as described in step 4 |
+| .NET 10 | `v10.0.12` | `release-notes/10.0/supported-os.json` | `release-notes/10.0/os-packages.json` |
+| .NET 9 | `v9.0.20` | `release-notes/9.0/supported-os.json` | `release-notes/9.0/os-packages.json` |
+| .NET 8 | `v8.0.31` | `release-notes/8.0/supported-os.json` | Use the .NET 9 package data as described in step 4 |
 
 Source URLs:
 
-- `https://github.com/dotnet/core/blob/v10.0.11/release-notes/10.0/supported-os.json`
-- `https://github.com/dotnet/core/blob/v9.0.19/release-notes/9.0/supported-os.json`
-- `https://github.com/dotnet/core/blob/v8.0.30/release-notes/8.0/supported-os.json`
-- `https://github.com/dotnet/core/blob/v10.0.11/release-notes/10.0/os-packages.json`
-- `https://github.com/dotnet/core/blob/v9.0.19/release-notes/9.0/os-packages.json`
+- `https://github.com/dotnet/core/blob/v10.0.12/release-notes/10.0/supported-os.json`
+- `https://github.com/dotnet/core/blob/v9.0.20/release-notes/9.0/supported-os.json`
+- `https://github.com/dotnet/core/blob/v8.0.31/release-notes/8.0/supported-os.json`
+- `https://github.com/dotnet/core/blob/v10.0.12/release-notes/10.0/os-packages.json`
+- `https://github.com/dotnet/core/blob/v9.0.20/release-notes/9.0/os-packages.json`
 
 ## Workflow
 

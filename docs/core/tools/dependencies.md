@@ -96,6 +96,8 @@ Use a project-to-project reference when your project depends on another project.
 </ItemGroup>
 ```
 
+### Use the CLI
+
 To add a project reference, run the following command for your SDK version:
 
 # [.NET 10 and later](#tab/dotnet10)

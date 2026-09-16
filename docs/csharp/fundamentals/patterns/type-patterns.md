@@ -15,44 +15,42 @@ A *type pattern* is applied to an input expression. C# evaluates the expression,
 
 ## Ask a yes-or-no type question
 
-Suppose a delivery service receives several kinds of destinations. It needs to determine whether an object can be used as a route stop, but it doesn't need any route-stop members yet:
+In a delivery system, `IRouteStop` is a capability contract for destinations accepted by route planning. `CanRoute` tests whether the evaluated destination has that capability, and its Boolean result determines whether the destination enters the route-planning workflow. The workflow needs only a yes-or-no answer and doesn't read any route-stop members, so a type pattern without a captured variable fits.
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePattern":::
 
 The input expression is `destination`, and `IRouteStop` is the type being tested. Choose a type pattern when the answer is only yes or no. If the matching branch needs to read an address or call another member through `IRouteStop`, choose a [declaration pattern](declaration-constant-var-patterns.md#test-and-capture-a-type-with-a-declaration-pattern) instead so the branch has a variable of that type.
 
 > [!NOTE]
-> You might also see `destination is IRouteStop _`. That syntax is a declaration pattern whose designation is a discard. It performs the same type test when both forms are valid, but `destination is IRouteStop` states the test-only intent more directly.
-
-## Route several types
-
-Type patterns also fit a switch expression when the result depends on an object's type but doesn't need data from that object:
-
-:::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePatternSwitch":::
-
-Each arm answers a type question and returns the team that handles that request. No arm declares a variable because no branch reads request-specific members.
-
-Switch arms are considered from top to bottom. Put a more specific derived class before its base class. Otherwise, the base-class arm can match every instance of the derived class, which makes the later arm unreachable.
+> You might also see `destination is IRouteStop _`. That syntax is a declaration pattern in which `_` means that no variable is retained. It performs the same type test when both forms are valid, but `destination is IRouteStop` states the test-only intent more directly.
 
 ## Match classes and interfaces
 
-A type pattern can match the value's exact class, one of its base classes, or an interface that the class implements:
+In the delivery system, `IRouteStop` defines the capability contract for route-planning destinations, while `RouteStop` is a base class that provides common route-stop data and implementation. `ExpressRouteStop` is a specialized class derived from `RouteStop`. The example tests one evaluated value so its output can demonstrate all three compatible types. Each test needs only a Boolean result, so no captured variable is needed.
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="ClassAndInterface":::
 
-The evaluated value is an `ExpressRouteStop`. It also matches `RouteStop` because that class is its base class, and it matches `IRouteStop` because the class implements that interface. This behavior lets code ask about the capability it needs instead of requiring one exact class.
+The evaluated value is an `ExpressRouteStop`. The output shows that it matches its exact class, its `RouteStop` base class, and the `IRouteStop` interface that `RouteStop` implements.
 
-Type patterns don't use user-defined conversions. The compiler also rejects a type pattern when the expression's compile-time type could never be compatible with the tested type. For all supported reference, boxing, nullable, and open-type cases, see the [type pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
+For detailed compatibility rules and edge cases, see the [type pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
+
+## Route several types
+
+In a support system, `SupportRequest` is the base class for specialized request classes such as `PasswordResetRequest` and `BillingQuestion`. A *switch arm* pairs a pattern with the result to return when that pattern matches. Each arm returns the name of a processing queue, and the final arm provides a fallback queue for other evaluated values. The selected queue depends only on the run-time type of the evaluated value, so type patterns fit because no request member is read.
+
+:::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePatternSwitch":::
+
+Each arm answers a type question and returns the queue that handles that request. If an arm needed to read request members, use a declaration pattern to capture the matching value in a variable.
+
+Switch arms are considered from top to bottom. Put a specialized class before its base class. Otherwise, the base-class arm can match every instance of the specialized class, which makes the later arm unreachable.
 
 ## Optional: use a type parameter as the tested type
 
-This section builds on [generic types and methods](../types/generics.md). Skip it if type parameters are new to you.
-
-A generic inventory can ask whether a mixed collection contains a requested kind of item:
+This optional example builds on [generic types and methods](../types/generics.md). A *type parameter* such as `TRequest` is a placeholder for a type that the caller supplies. An incoming-request batch can contain several request types, and the caller supplies `ConfidentialRequest` to test whether any request requires confidential handling. The Boolean result selects confidential handling for the entire batch and produces a visible status message. A type pattern with a type parameter fits because only the existence of a matching request matters, so the matching object doesn't need to be retained.
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="GenericTypePattern":::
 
-`TItem` is a *type parameter*, a placeholder for the type supplied by the caller. The type pattern `item is TItem` is a good fit because the method needs only a yes-or-no result for each item. If it needed to use the matching item as `TItem`, a declaration pattern such as `item is TItem match` would declare that variable.
+If the caller needed the matching request itself, a search or filter operation that returns matching items would be more appropriate.
 
 ## See also
 

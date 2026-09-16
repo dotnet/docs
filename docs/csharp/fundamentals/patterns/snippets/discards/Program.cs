@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine(DescribeStatus(503));
+        ShowStatus();
         ShowForecast();
         ValidateNumber();
         ValidateLabel("ZX-42");
@@ -12,13 +12,18 @@ class Program
     }
 
     // <DiscardPattern>
-    static string DescribeStatus(int statusCode) =>
-        statusCode switch
+    static void ShowStatus()
+    {
+        int statusCode = 503;
+        string message = statusCode switch
         {
             200 => "Ready",
             404 => "Not found",
             _ => "Another status"
         };
+
+        Console.WriteLine(message);
+    }
     // </DiscardPattern>
 
     // <TupleDiscards>
@@ -47,18 +52,6 @@ class Program
         Console.WriteLine("Label accepted.");
     }
     // </DiscardAssignment>
-
-    // <TaskDiscard>
-    static void StartBackgroundWork()
-    {
-        _ = Task.Run(() => UpdateSearchIndex());
-
-        static void UpdateSearchIndex()
-        {
-            // The application must report failures from this operation elsewhere.
-        }
-    }
-    // </TaskDiscard>
 
     // <LambdaDiscards>
     static void ShowLambdaDiscards()

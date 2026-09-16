@@ -25,54 +25,42 @@ These forms share spelling and intent, but they aren't interchangeable.
 
 ## Pattern matching with `switch`
 
-A discard pattern is applied to an input expression. C# evaluates the expression, and `_` matches every resulting value, including `null`, without capturing it:
+In the following example, `statusCode` is an `int`. Each switch arm produces a `string` message, which the program writes to the console. The final `_` handles every status code other than `200` and `404`:
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="DiscardPattern":::
 
-Choose a discard pattern as the final switch-expression arm when every result not handled earlier should use the same fallback. Put it last because it matches everything.
+A discard pattern is applied to an input expression. C# evaluates the expression, and `_` matches the evaluated value without capturing it. Choose `_` as the final switch-expression arm when every value not handled earlier should use the same fallback. Put it last because it matches everything, including `null`.
 
-The `_` in this example is a pattern. By contrast, `out _` and a deconstruction `_` ignore values produced by another operation. The form `var _` is a `var` pattern with a discard designation. It also matches every result, but the shorter discard pattern better expresses a catch-all switch arm.
+The form `var _` is a `var` pattern with a discard designation. It also matches every evaluated value, but it doesn't introduce a readable variable. Prefer the shorter `_` discard pattern for a switch catch-all. For more about `var` patterns and designations, see [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md#capture-a-result-for-a-guard-with-a-var-pattern).
 
 ## Deconstruction declarations
 
-A method can return a tuple that contains several components. A *deconstruction declaration* separates those components, declares variables for the retained values, and uses `_` for each component that the current code doesn't need:
+`GetForecast` returns a tuple with four components: a `string` city and three `int` values for the high temperature, low temperature, and rain chance. The deconstruction declaration retains `city` and `high` because the program displays them. It uses `_` for the low temperature and rain chance because naming those unused components would imply that the code needs them:
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="TupleDiscards":::
-
-`GetForecast` returns the named components `City`, `High`, `Low`, and `RainChance`. The declaration creates `city` and `high`, and discards the low temperature and rain chance. Choose discards when the operation produces useful values for other callers but this code needs only a subset.
 
 The same discard syntax works when an object's `Deconstruct` method produces several values. For those forms, see [Deconstructing tuples and other types](../functional/deconstruct.md).
 
 ## Calls to methods with `out` parameters
 
-Some methods use an `out` parameter to return an additional value. If you need only the method's Boolean success result, use `out _`:
+The <xref:System.Int32.TryParse(System.String,System.Int32@)> method takes a `string` and returns a `bool` that reports whether parsing succeeded. It also produces the parsed `int` through its `out` parameter. This code prints only the Boolean result, so `out _` makes it clear that the integer isn't needed:
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="OutDiscard":::
 
-The code asks only whether the text can be parsed. It doesn't need the parsed integer, so naming that integer would suggest that later code uses it.
-
 ## A standalone discard
 
-A discard assignment evaluates its right-hand expression and ignores the produced value. The following example uses the null-coalescing operator to validate an argument:
+The following method receives a nullable `string`. The null-coalescing expression produces the non-null string or throws an <xref:System.ArgumentNullException>. The caller needs only that validation or exception effect, not the produced string, so a discard assignment provides the required assignment target and ignores the result:
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="DiscardAssignment":::
 
-Choose a discard assignment when evaluating the expression matters but retaining its result doesn't. Don't use one merely to avoid giving a useful result a meaningful name.
+A discard assignment fits when evaluating an expression matters but retaining its result doesn't. For ordinary parameter validation, <xref:System.ArgumentNullException.ThrowIfNull*> communicates the intent more directly and should usually be preferred.
 
-### Discarded tasks require another failure strategy
-
-> [!WARNING]
-> `_ = Task.Run(...)` only states that the returned task is intentionally ignored and suppresses the warning for an unawaited call. It doesn't await the task, observe its exception, or report failure. This form isn't general fire-and-forget guidance. Use it only when the application has another deliberate mechanism to track completion and report errors.
-
-The following method shows the syntax:
-
-:::code language="csharp" source="snippets/discards/Program.cs" ID="TaskDiscard":::
-
-In most application code, prefer awaiting the task so completion and exceptions remain part of the calling flow.
+> [!IMPORTANT]
+> Don't use `_ = Task.Run(...)` or `_ = SomeAsyncMethod()` to discard a task in application code. Await the task so its completion and exceptions remain in the calling flow. A discard assignment doesn't make a task safe, observe its exception, or create a supported fire-and-forget operation.
 
 ## Mark unused lambda parameters
 
-When a lambda expression has two or more unused parameters, you can name each one `_`:
+An <xref:System.EventHandler> receives an `object?` sender and an <xref:System.EventArgs> value. The following handler needs neither parameter; it only writes `"Timer tick"` to the console. Naming both parameters `_` makes their unused status visible without inventing names that the body never uses:
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="LambdaDiscards":::
 

@@ -107,5 +107,5 @@ When you declare a [record](../../language-reference/builtin-types/record.md) ty
 ## See also
 
 - [Deconstruct variable declaration (style rule IDE0042)](../../../fundamentals/code-analysis/style-rules/ide0042.md)
-- [Discards](discards.md)
+- [Discards](../patterns/discards.md)
 - [Tuple types](../../language-reference/builtin-types/value-tuples.md)

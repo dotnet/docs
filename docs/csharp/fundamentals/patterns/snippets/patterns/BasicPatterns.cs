@@ -6,7 +6,7 @@ static class BasicPatterns
         Console.WriteLine(FormatSensorValue(21.5));
         Console.WriteLine(GetCommandMessage(Command.Start));
         Console.WriteLine(HasText("ready"));
-        Console.WriteLine(DescribeAverage([88, 92, 95]));
+        Console.WriteLine(GetDeliveryMessage(new ExpressDelivery(800)));
     }
 
     // <DeclarationPattern>
@@ -53,12 +53,20 @@ static class BasicPatterns
     // </ConstantNullPattern>
 
     // <VarPatternWhen>
-    static string DescribeAverage(int[] scores) =>
-        scores.Average() switch
+    static string GetDeliveryMessage(object delivery) =>
+        delivery switch
         {
-            var average when average >= 90 => $"Excellent: {average:F1}",
-            var average when average >= 70 => $"Passing: {average:F1}",
-            var average => $"Needs practice: {average:F1}"
+            ExpressDelivery express
+                when EstimateDays(express) is var days && days <= 2
+                    => $"Arrives in {days} day{(days == 1 ? "" : "s")}",
+            ExpressDelivery => "Express delivery for your location takes more than two days",
+            _ => "Standard delivery"
         };
+
+    static int EstimateDays(ExpressDelivery delivery) =>
+        delivery.MilesAway <= 500 ? 1 :
+        delivery.MilesAway <= 1_000 ? 2 : 3;
+
+    record ExpressDelivery(int MilesAway);
     // </VarPatternWhen>
 }

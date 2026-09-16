@@ -31,7 +31,7 @@ In `value is decimal amount`:
 - `decimal` is the tested type. The pattern matches when the evaluated value is non-null and its run-time type is compatible with `decimal`.
 - `amount` is the designation. When the pattern matches, it declares `amount` and assigns the decimal value to it.
 
-The compiler tracks whether a local variable has received a value before your code reads it. This tracking is called *definite assignment*. Inside the `if` block, the compiler knows that `amount` was assigned because the block runs only when the pattern matches.
+The compiler tracks whether a local variable receives a value before your code reads it. This tracking is called *definite assignment*. Inside the `if` block, the compiler knows that `amount` was assigned because the block runs only when the pattern matches. The compiler produces an error if your code tries to access `amount` outside the `if` block. If `value` isn't a `decimal` value, the variable `amount` isn't assigned to a value.
 
 Choose a declaration pattern when the matching branch needs to use the result as the tested type. It combines the test, conversion, and variable declaration, which avoids repeating the expression or writing a separate cast.
 
@@ -39,7 +39,7 @@ You can also use declaration patterns when one expression might produce several 
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="DeclarationSwitch":::
 
-Each arm declares a variable of the matched type because the result needs that type's formatting behavior. Declaration patterns don't match `null` and don't use user-defined conversions. For the complete compatibility rules, see [Declaration and type patterns](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
+Each arm declares a variable of the matched type because the result needs that type's formatting behavior. A declaration pattern matches only when the evaluated value is non-null and already has a run-time type that's compatible with the tested type through the conversions permitted for patterns. `null` has no run-time type for the pattern to match. The pattern also doesn't run user-defined conversion operators: It's a type test and capture, not a request to convert the value to another type. For the complete compatibility rules, see [Declaration and type patterns](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
 
 ## Match a specific value with a constant pattern
 
@@ -48,6 +48,8 @@ A *constant pattern* tests whether an expression produces a particular constant,
 Constant patterns fit a switch expression when several known values each produce a different result:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="ConstantPatterns":::
+
+`Command` is an enum, a type that defines a set of named constants. `Command.Start`, `Command.Stop`, and `Command.Pause` are its enum members, so each switch arm uses a constant pattern to test one named command value.
 
 Choose this form when the command can have several discrete meanings. The switch arms keep the values and their results together. For one simple equality comparison, an `if` statement such as `if (command == Command.Start)` is usually easier to read.
 
@@ -61,15 +63,13 @@ Choose `is null` or `is not null` when you're checking null state. These pattern
 
 ## Capture a result for a guard with a `var` pattern
 
-A *`var` pattern* matches every result, including `null`, and declares a variable whose type is the input expression's compile-time type. Merely naming a calculation doesn't require a pattern. For example, prefer `var total = subtotal + tax;` over a one-arm switch expression.
-
-A `var` pattern becomes useful when a switch arm needs to name a calculated result before a `when` condition can test it:
+A *`var` pattern* matches every result, including `null`, and declares a variable whose type is the input expression's compile-time type. It can capture a computed value while another pattern is already matching an object:
 
 :::code language="csharp" source="snippets/patterns/BasicPatterns.cs" ID="VarPatternWhen":::
 
-The input expression `scores.Average()` is evaluated once. Each `var average` pattern captures its result. The `when` clause is a *case guard*, an additional Boolean condition checked after the pattern matches. This form keeps the calculated average next to the ranges that classify it without calculating the average again.
+The declaration pattern `ExpressDelivery express` first captures the delivery object as `express`. The method call `EstimateDays(express)` is the input expression for the `var` pattern. C# evaluates that method call, and `var days` captures the resulting estimate as `days` without testing its type or value. The estimate can be one or two days when the guard succeeds. The arm result needs the captured value to report the actual number of days.
 
-Choose a `var` pattern when capturing the evaluated result helps a guard or a larger pattern express its decision. Because an unguarded `var` pattern always matches, put an unguarded `var` arm last.
+An ordinary local variable can't be declared between a switch-arm pattern and its `when` guard. Calling `EstimateDays(express)` again in the result would repeat the calculation. Choose this `var` pattern form when the code is already matching, and both the guard and result need a computed intermediate value.
 
 If you don't need the captured value, use the [discard pattern `_`](discards.md#pattern-matching-with-switch) instead of declaring a variable.
 
@@ -77,7 +77,7 @@ If you don't need the captured value, use the [discard pattern `_`](discards.md#
 
 - [Pattern matching overview](pattern-matching.md)
 - [Type patterns](type-patterns.md)
-- [Discards and the discard pattern](discards.md)
-- [Declaration and type pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns)
-- [Constant pattern reference](../../language-reference/operators/patterns.md#constant-pattern)
-- [`var` pattern reference](../../language-reference/operators/patterns.md#var-pattern)
+- [Discards and the discard pattern](discards.md).
+- [Declaration and type pattern reference](../../language-reference/operators/patterns.md#declaration-and-type-patterns).
+- [Constant pattern reference](../../language-reference/operators/patterns.md#constant-pattern).
+- [`var` pattern reference](../../language-reference/operators/patterns.md#var-pattern).

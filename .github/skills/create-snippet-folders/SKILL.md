@@ -57,4 +57,4 @@ Given `docs/core/create-app.md`, these inputs produce these paths:
 - Platform omitted, subject `AsyncProgram`, language `csharp`: `./snippets/create-app/AsyncProgram/csharp/`
 - Platform omitted, subject omitted, language omitted: `./snippets/create-app/`
 
-The skill treats all supplied segments as opaque path decisions except for validating the allowed platform and language values.
+The skill treats supplied segments as single safe path components. Validate platform, subject, and language values before creating folders; reject path separators, absolute paths, and `.`/`..` segments.

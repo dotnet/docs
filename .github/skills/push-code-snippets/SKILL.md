@@ -39,7 +39,7 @@ Follow these steps in order.
 
 Choose every required platform, subject, and language path segment. For a language-guide article, omit the language segment. For XAML-only snippets, request only the `csharp` language segment.
 
-Load and follow the `generate-snippet-structure` skill with the target article and the complete list of chosen segments. Use the returned directories for the extracted files.
+Load and follow the `create-snippet-folders` skill with the target article and the complete list of chosen segments. Use the returned directories for the extracted files.
 
 ### 3. Choose the Application Structure
 

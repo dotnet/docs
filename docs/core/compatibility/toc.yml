@@ -92,6 +92,8 @@ items:
                 href: jit/11/minimum-hardware-requirements.md
           - name: Networking
             items:
+              - name: HttpClient high-cardinality metrics use observable counters
+                href: networking/11/http-metrics-observable-counters.md
               - name: SslStream server-side AIA certificate downloads disabled by default
                 href: networking/11/sslstream-aia-downloads-disabled.md
           - name: .NET MAUI

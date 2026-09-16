@@ -2,7 +2,7 @@
 title: System.Net metrics
 description: Review the metrics available for System.Net
 ms.topic: reference
-ms.date: 9/21/2023
+ms.date: 09/16/2026
 ---
 
 # System.Net metrics
@@ -62,7 +62,7 @@ The `System.Net.Http` metrics report HTTP request and connection information fro
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| [`http.client.open_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientopen_connections) | <xref:System.Diagnostics.Metrics.UpDownCounter`1> | `{connection}` | Number of outbound HTTP connections that are currently active or idle on the client |
+| [`http.client.open_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientopen_connections) | <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> (.NET 11 and later); <xref:System.Diagnostics.Metrics.UpDownCounter`1> (.NET 8-10) | `{connection}` | Number of outbound HTTP connections that are currently active or idle on the client |
 
 | Attribute                  | Type     | Description                                           | Examples         | Presence |
 |----------------------------|----------|-------------------------------------------------------|------------------|----------|
@@ -76,6 +76,9 @@ The `System.Net.Http` metrics report HTTP request and connection information fro
 <xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, maintains a cached pool of network connections for sending HTTP messages. This metric counts how many connections are currently in the pool. Active connections are handling active requests. Active connects could be transmitting data or awaiting the client or server. Idle connections aren't handling any requests, but are left open so that future requests can be handled more quickly.
 
 Available starting in: .NET 8.
+
+> [!IMPORTANT]
+> Starting in .NET 11, this instrument is an <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> instead of an <xref:System.Diagnostics.Metrics.UpDownCounter`1>. If you use <xref:System.Diagnostics.Metrics.MeterListener> directly, call <xref:System.Diagnostics.Metrics.MeterListener.RecordObservableInstruments?displayProperty=nameWithType> to receive its measurements. For more information, see [HttpClient high-cardinality metrics use observable counters](../compatibility/networking/11/http-metrics-observable-counters.md).
 
 ##### Metric: `http.client.connection.duration`
 
@@ -157,7 +160,7 @@ Available starting in: .NET 8.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| [`http.client.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserveractive_requests) | <xref:System.Diagnostics.Metrics.UpDownCounter`1> | `{request}` | Number of active HTTP requests. |
+| [`http.client.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserveractive_requests) | <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> (.NET 11 and later); <xref:System.Diagnostics.Metrics.UpDownCounter`1> (.NET 8-10) | `{request}` | Number of active HTTP requests. |
 
 | Attribute             | Type     | Description          | Examples              | Presence |
 |-----------------------|----------|----------------------|-----------------------|----------|
@@ -169,3 +172,6 @@ Available starting in: .NET 8.
 This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#metric-httpclientrequestduration) instrument.
 
 Available starting in: .NET 8.
+
+> [!IMPORTANT]
+> Starting in .NET 11, this instrument is an <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> instead of an <xref:System.Diagnostics.Metrics.UpDownCounter`1>. If you use <xref:System.Diagnostics.Metrics.MeterListener> directly, call <xref:System.Diagnostics.Metrics.MeterListener.RecordObservableInstruments?displayProperty=nameWithType> to receive its measurements. For more information, see [HttpClient high-cardinality metrics use observable counters](../compatibility/networking/11/http-metrics-observable-counters.md).

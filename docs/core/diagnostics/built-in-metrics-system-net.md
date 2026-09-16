@@ -160,7 +160,7 @@ Available starting in: .NET 8.
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| [`http.client.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserveractive_requests) | <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> (.NET 11 and later); <xref:System.Diagnostics.Metrics.UpDownCounter`1> (.NET 8-10) | `{request}` | Number of active HTTP requests. |
+| [`http.client.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientactive_requests) | <xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> (.NET 11 and later); <xref:System.Diagnostics.Metrics.UpDownCounter`1> (.NET 8-10) | `{request}` | Number of active HTTP requests. |
 
 | Attribute             | Type     | Description          | Examples              | Presence |
 |-----------------------|----------|----------------------|-----------------------|----------|

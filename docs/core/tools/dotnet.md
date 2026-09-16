@@ -78,13 +78,13 @@ Prints out the version of the .NET SDK used by `dotnet` commands, which may be a
 
   Prints out a list of the installed .NET runtimes for the architecture of the invoked `dotnet`. An x86 version of `dotnet` lists only x86 runtimes, and an x64 version of `dotnet` lists only x64 runtimes.
 
-  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out its list of installed runtimes.
+  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any runtimes installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
 
 - **`--list-sdks [--arch <ARCH>]`**
 
   Prints out a list of the installed .NET SDKs for the architecture of the invoked `dotnet`. An x86 version of `dotnet` lists only x86 SDKs, and an x64 version of `dotnet` lists only x64 SDKs.
 
-  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out its list of installed SDKs.
+  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any SDKs installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
 
 - **`-?|-h|--help`**
 
@@ -122,7 +122,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 - **`--additional-deps <PATH>`**
 
-  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime package store](../deploying/runtime-store.md) on GitHub.
+  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) on GitHub.
 
 <a name="rollforward"></a>
 
@@ -139,7 +139,7 @@ The following options are available when `dotnet` runs an application. For examp
 
   With the exception of `Disable`, all settings will use the highest available patch version.
 
-  Roll forward behavior can also be configured in a project file property, a runtime configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../versions/selection.md#control-roll-forward-behavior).
+  Roll forward behavior can also be configured in a project file property, a runtime configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
 - **`--fx-version <VERSION>`**
 
@@ -157,7 +157,7 @@ The following options are available only when `dotnet` runs an application by us
 
 - **`--runtimeconfig <PATH>`**
 
-  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file contains runtime settings and is typically named *\<applicationname>.runtimeconfig.json*. For more information, see [.NET runtime configuration settings](../runtime-config/index.md).
+  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file contains runtime settings and is typically named *\<applicationname>.runtimeconfig.json*. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 ## dotnet commands
 

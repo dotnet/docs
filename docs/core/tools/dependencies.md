@@ -54,7 +54,7 @@ To remove a dependency, remove its `<PackageReference>` item from the project fi
 
 ### Use the CLI
 
-To add a dependency, run the following command for your SDK version:
+To add a dependency, run the `dotnet package` command for your SDK version:
 
 # [.NET 10 and later](#tab/dotnet10)
 
@@ -70,7 +70,7 @@ dotnet add package Microsoft.EntityFrameworkCore
 
 ---
 
-To remove a dependency, run the following command for your SDK version:
+To remove a dependency, run the `dotnet package` command for your SDK version:
 
 # [.NET 10 and later](#tab/dotnet10)
 
@@ -98,7 +98,7 @@ Use a project-to-project reference when your project depends on another project.
 
 ### Use the CLI
 
-To add a project reference, run the following command for your SDK version:
+To add a project reference, run the `dotnet reference` command for your SDK version.
 
 # [.NET 10 and later](#tab/dotnet10)
 

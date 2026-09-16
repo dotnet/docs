@@ -3,6 +3,7 @@ title: dnim uninstall command
 description: The uninstall command removes .NET installations.
 author: joeloff
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dnim uninstall
@@ -29,11 +30,12 @@ dnim-win-[x86|x64|arm64] uninstall [-a|--accept-license]
     [-o|--output-file <OUTPUT_FILE>]
     [--offline <LAYOUT_DIRECTORY>]
     [--offline-revocation-checks]
-    [--output-format <text|csv|html>]
+    [--output-format <text|csv|html|json>]
     [--pv|--product-version <PRODUCT_VERSION>]
     [--remove-EOL-versions-from-VS]
     [--remove-orphaned-installs]
-    [--ri|report-issues]
+    [--restore-point-suffix|--rps <SUFFIX>]
+    [--ri|--report-issues]
     [--rv|--release-version <RELEASE_VERSION_RANGE>]
     [--sp|--support-phase <active|eol|golive|maintenance|preview>]
     [-v|--verbosity <quiet|normal|diagnostic>]
@@ -57,6 +59,8 @@ Various options can be used to target specific installations. For example, an ad
 - [!INCLUDE [accept-license](includes/dnim-cli-accept-license.md)]
 
 - [!INCLUDE [bin-deployed-installs](includes/dnim-cli-include-bin-deployed-installs.md)]
+
+- [!INCLUDE [create-system-restore-point](includes/dnim-cli-create-system-restore-point.md)]
 
 - [!INCLUDE [except-product-version](includes/dnim-cli-except-product-version.md)]
   
@@ -86,9 +90,11 @@ Various options can be used to target specific installations. For example, an ad
 
 - [!INCLUDE [product-version](includes/dnim-cli-product-version.md)]
 
-- [!INCLUDE [remove-EOL-versions-from-VS](includes/dnim-cli-remove-EOL-versions-from-VS.md)]
+- [!INCLUDE [remove-EOL-versions-from-VS](includes/dnim-cli-remove-eol-versions-from-vs.md)]
 
 - [!INCLUDE [remove-orphaned-installs](includes/dnim-cli-remove-orphaned-installs.md)]
+
+- [!INCLUDE [restore-point-suffix](includes/dnim-cli-restore-point-suffix.md)]
 
 - [!INCLUDE [report-issues](includes/dnim-cli-report-issues.md)]
 
@@ -132,8 +138,7 @@ The table below contains an overview of the policies created from the command-li
 
 ### Example
 
-Consider the following command-line: `dnim-win-x64 uninstall --pv 6.0`. The command only considers installations
-associated with .NET 6.0 for removal. When the tool evaluates a .NET 7.0 installation, the product version policies will apply and exclude it.
+Consider the following command-line: `dnim-win-x64 uninstall --pv 6.0`. The command only considers installations associated with .NET 6.0. When the tool evaluates a .NET 7.0 installation, the product version policy applies and excludes it.
 
 ## Policy Results
 
@@ -171,13 +176,13 @@ a description for the various policy actions returned by the `uninstall` command
   dnim-win-[x86|x64|arm64] uninstall --sp eol
   ```
 
-- Remove all .NET installs, but retain the latest version for products that are in active support.
+- Remove all .NET installs, but retain the latest version for any products that are in active support if they are installed.
 
   ```console
   dnim-win-[x86|x64|arm64] uninstall --klsp active
   ```
 
-  Assume .NET 9 and 8 are in active support and the latest releases include 9.0.19 and 8.0.30. If a device contains .NET 9.0.17 and 8.0.30, the command will remove 9.0.17, but retain 8.0.30.
+  Assume .NET 9 and 8 are in active support and when the command was executed, the latest releases included 9.0.19 and 8.0.30. If a device has .NET 9.0.17 and 8.0.30 installed, the command will remove 9.0.17, but retain 8.0.30.
 
 - Remove all SDK bundles if their release version is less than 10.0.0.
 

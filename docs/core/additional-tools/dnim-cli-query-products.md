@@ -28,6 +28,7 @@ dnim-win-[x86|x64|arm64] query products -?|-h|--help
 
 ## Description
 
+
 ## Options
 
 - [!INCLUDE [accept-license](includes/dnim-cli-accept-license.md)]
@@ -49,6 +50,10 @@ dnim-win-[x86|x64|arm64] query products -?|-h|--help
 - [!INCLUDE [verbosity](includes/dnim-cli-verbosity.md)]
 
 ## Results
+
+> [!IMPORTANT]
+> The information provided by this command depends on the published releases JSON data.
+
 
 ## Examples
 

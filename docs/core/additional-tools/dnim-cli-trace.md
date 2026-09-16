@@ -3,6 +3,7 @@ title: dnim trace command
 description: The trace command identifies .NET processes.
 author: joeloff
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dnim trace

@@ -26,7 +26,7 @@ dnim-win-[x86|x64|arm64] layout -?|-h|--help
 
 ## Description
 
-The command create or updates a cache used for offline deployments inside network restricted environments.
+The command creates or updates a cache used for offline deployments inside network restricted environments. The command requires internet access to download the necessary files and will verify the signatures of any installers that are downloaded. Adminitrators should place the files on a machine that is accessible from client devices inside the network.
 
 ## Options
 
@@ -42,11 +42,9 @@ The command create or updates a cache used for offline deployments inside networ
 
 - [!INCLUDE [verbosity](includes/dnim-cli-verbosity.md)]
 
-## Results
-
 ## Examples
 
-- Create an offline deployment in `C:\dnim\layout` that only include the release metadata (no installers).
+- Create an offline deployment in `C:\dnim\layout` that only includes the release metadata (no installers).
 
   ```console
   dnim-win-[x86|x64|arm64] layout C:\dnim\layout
@@ -55,7 +53,7 @@ The command create or updates a cache used for offline deployments inside networ
 - Create an offline deployment in `C:\dnim\layout` that includes the latest installers.
 
   ```console
-  dnim-win-[x86|x64|arm64] layout C:\dnim\layout --latest
+  dnim-win-[x86|x64|arm64] layout C:\dnim\layout --include-installers --latest
   ```
 
 ## See also

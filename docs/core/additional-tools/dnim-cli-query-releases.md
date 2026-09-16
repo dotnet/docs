@@ -3,6 +3,7 @@ title: dnim query prreleases command
 description: The query releases command provides information about specific .NET releases.
 author: joeloff
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dnim query releases
@@ -27,6 +28,10 @@ dnim-win-[x86|x64|arm64] query releases -?|-h|--help
 
 ## Description
 
+The command can be used to obtain a summary of available .NET products.
+
+
+
 ## Options
 
 - [!INCLUDE [accept-license](includes/dnim-cli-accept-license.md)]
@@ -48,6 +53,8 @@ dnim-win-[x86|x64|arm64] query releases -?|-h|--help
 - [!INCLUDE [verbosity](includes/dnim-cli-verbosity.md)]
 
 ## Results
+
+
 
 ## Examples
 

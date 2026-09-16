@@ -3,6 +3,7 @@ title: dnim scan command
 description: The scan command identifies .NET installations.
 author: joeloff
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dnim scan
@@ -57,7 +58,7 @@ Results can be filtered using the product version and support phase options to o
 
 ## Results
 
-The results contain a summary of each installation, including its type (MSI, bundle, etc.), the .NET product to which it belongs and its current support phase. It may also include information about its origin. The example below contains three installations: two bundles and one MSI. The targeting pack MSI is shared between both SDK installs and multiple instances of Visual Studio: 17.14.37502 and 17.14.37110.
+The results presents a summary of each installation, including its type (MSI, bundle, etc.), the .NET product to which it belongs and its current support phase. It may also include information about its origin. In the example below there are three installations: two bundles and one MSI. The targeting pack MSI is shared between both SDK installs and two instances of Visual Studio: 17.14.37502 and 17.14.37110.
 
 | Display Name | Product | Release | Type | Support | Installed By |
 | --- | --- | --- | --- | --- | --- |

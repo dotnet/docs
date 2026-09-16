@@ -28,6 +28,14 @@ sections:
           - The out-of-support metadata is unsupported by Visual Studio. The metadata was first introduced in Visual Studio 15.9.27, 16.0.18, 16.4.13, 16.7.3 and 16.8 Preview 3.
           - .NET was in support when Visual Studio, but no additional updates of Visual Studio were shipped and the metadata couldn't be updated.
 
+      - question: Does DNIM report the ASP.NET Core Module?
+        answer: |
+          No. The ANCM MSI is not currently being reported.
+
+      - question: Why is the SDK placeholder MSI being reported?
+        answer: |
+          MSIs shipping with Visual Studio are usually hidden from the Programs and Features list (ARP). When .NET Core 3.0 began shipping MSIs in Visual Studio, a placeholder MSI was added to create a visible entry in ARP and direct users to remove the SDK through Visual Studio. The MSI can become orphaned and users can be left with multiple entries alluding to SDKs installed by Visual Studio when infact they only of a few. This has created confusion for users trying to remove non-existing SDKs. DNIM is able to detect and remove these orphaned placeholders.
+
   - name: Best Practices
     questions:
       - question: What is the recommended approach to remove end-of-life versions of .NET?

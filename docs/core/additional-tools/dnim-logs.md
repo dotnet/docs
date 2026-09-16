@@ -3,6 +3,7 @@ title: .NET Install Manager Logging
 description: An overview of various logs provided by DNIM.
 author: joeloff
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # Logging
@@ -29,7 +30,7 @@ In the previous example, `d1000` indicates a diagnostic message with event ID 10
 
 ## Registry
 
-DNIM stores information about it's last execution in the registry. The data is stored under `HKCU\Software\Microsoft\DNIM` or `HKLM\Software\Microsoft\DNIM`. The latter key is used if the command was executed with administrator premissions.
+DNIM stores information about its last execution in the registry. The data is stored under `HKCU\Software\Microsoft\DNIM` or `HKLM\Software\Microsoft\DNIM` (if the command was executed with administrator permissions).
 
 ```console
 D:\>reg query HKCU\Software\Microsoft\DNIM /s
@@ -47,7 +48,7 @@ HKEY_CURRENT_USER\Software\Microsoft\DNIM\License
 
 ## Events
 
-Commands that modify the state of a device may create one or more entry in the Windows Application log. The event source will be designated `DNIM`.
+Commands that modify the state of a device will generate events in the Windows Application log using `DNIM` as the event source.
 
 ![DNIM Start Event](./media/dnim/eventlog.png)
 

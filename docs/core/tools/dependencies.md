@@ -1,9 +1,9 @@
 ---
 title: Manage dependencies in .NET
 description: Explains how to manage package, project, and assembly dependencies for a .NET application.
-no-loc: [dotnet package add, dotnet package remove, dotnet package list, dotnet reference add, dotnet reference remove]
+no-loc: [dotnet package add, dotnet package remove, dotnet package list, dotnet reference add, dotnet reference remove, dotnet add package, dotnet remove package, dotnet add reference, dotnet remove reference]
 ms.topic: how-to
-ms.date: 09/14/2026
+ms.date: 09/16/2026
 ai-usage: ai-generated
 ---
 # Manage dependencies in .NET applications
@@ -54,17 +54,37 @@ To remove a dependency, remove its `<PackageReference>` item from the project fi
 
 ### Use the CLI
 
-To add a dependency, run the [dotnet package add](dotnet-package-add.md) command, as shown in the following example. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet add package` form instead.)
+To add a dependency, run the following command for your SDK version:
+
+# [.NET 10 and later](#tab/dotnet10)
 
 ```dotnetcli
 dotnet package add Microsoft.EntityFrameworkCore
 ```
 
-To remove a dependency, run the [dotnet package remove](dotnet-package-remove.md) command, as shown in the following example. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet remove package` form instead.)
+# [.NET 9 and previous](#tab/dotnet9)
+
+```dotnetcli
+dotnet add package Microsoft.EntityFrameworkCore
+```
+
+---
+
+To remove a dependency, run the following command for your SDK version:
+
+# [.NET 10 and later](#tab/dotnet10)
 
 ```dotnetcli
 dotnet package remove Microsoft.EntityFrameworkCore
 ```
+
+# [.NET 9 and previous](#tab/dotnet9)
+
+```dotnetcli
+dotnet remove package Microsoft.EntityFrameworkCore
+```
+
+---
 
 ## Add and remove project references
 
@@ -76,19 +96,41 @@ Use a project-to-project reference when your project depends on another project.
 </ItemGroup>
 ```
 
-To add a project reference, run the [dotnet reference add](dotnet-reference-add.md) command. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet add reference` form instead.)
+To add a project reference, run the following command for your SDK version:
+
+# [.NET 10 and later](#tab/dotnet10)
 
 ```dotnetcli
 dotnet reference add ../MyLibrary/MyLibrary.csproj
 ```
 
-To remove a project reference, remove the `<ProjectReference>` element from the project file or run the [dotnet reference remove](dotnet-reference-remove.md) command. (If you're using an SDK version of .NET 9 or earlier, use the "verb first" form `dotnet remove reference` instead.)
+# [.NET 9 and previous](#tab/dotnet9)
+
+```dotnetcli
+dotnet add reference ../MyLibrary/MyLibrary.csproj
+```
+
+---
+
+To remove a project reference, remove the `<ProjectReference>` element from the project file or run the following command for your SDK version:
+
+# [.NET 10 and later](#tab/dotnet10)
 
 ```dotnetcli
 dotnet reference remove ../MyLibrary/MyLibrary.csproj
 ```
 
+# [.NET 9 and previous](#tab/dotnet9)
+
+```dotnetcli
+dotnet remove reference ../MyLibrary/MyLibrary.csproj
+```
+
+---
+
 ## Add and remove assembly references
+
+You can add and remove assembly references through the project file. The .NET CLI doesn't provide commands to add or remove assembly references.
 
 To reference a .NET assembly that isn't part of a project or package, add a `<Reference>` element to the project file. Use the `<HintPath>` element to specify the relative or absolute path to the assembly:
 
@@ -100,7 +142,7 @@ To reference a .NET assembly that isn't part of a project or package, add a `<Re
 </ItemGroup>
 ```
 
-The .NET CLI doesn't provide a command to add assembly references. To remove an assembly reference, remove its `<Reference>` element from the project file.
+To remove an assembly reference, remove its `<Reference>` element from the project file.
 
 ## Tips
 

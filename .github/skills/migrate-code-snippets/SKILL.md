@@ -3,7 +3,7 @@ name: migrate-code-snippets
 description: 'Migrates .NET documentation code from the legacy ~/samples/snippets/ location to article-relative ./snippets/ projects for an input article file. Use when replacing legacy [!code-*] references, creating compilable C# and Visual Basic snippet projects, or removing migrated legacy snippets.'
 argument-hint: 'Provide the Markdown article file whose legacy snippets need migration'
 owner: adegeo
-version: 2
+version: 2.0
 ---
 
 # Migrate Code Snippets

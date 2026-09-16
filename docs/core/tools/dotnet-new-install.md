@@ -2,7 +2,7 @@
 title: dotnet new install
 ai-usage: ai-assisted
 description: The dotnet new install command installs a template package.
-ms.date: 11/12/2025
+ms.date: 09/15/2026
 ---
 # dotnet new install
 
@@ -15,7 +15,7 @@ ms.date: 11/12/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source <SOURCE>] [--force]
+dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source <SOURCE>] [--force] [--prerelease]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
@@ -23,7 +23,7 @@ dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source
 
 The `dotnet new install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a specific version or prerelease version of a template package, specify the version in the format `<package-name>@<package-version>`. (The colon separator `::` was deprecated in favor of the `@` character in .NET 9.0.200 SDK.) By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
 
-If a version of the template package was already installed when you run this command, the template package will be updated to the specified version. If no version is specified, the package is updated to the latest stable version.
+If a version of the template package was already installed when you run this command, the template package will be updated to the specified version. If no version is specified, the package is updated to the latest stable version unless you specify the `--prerelease` option.
 Starting with .NET SDK 6.0.100, if the argument specifies the version, and that version of the NuGet package is already installed, it won't be reinstalled.
 If the argument is a `PATH` and it's already installed, it won't be reinstalled.
 
@@ -74,6 +74,10 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 - [!INCLUDE [help](includes/cli-help.md)]
 
 - [!INCLUDE [interactive](includes/cli-interactive.md)]
+
+- **`--prerelease`**
+
+  Selects the latest available version, including prerelease versions, when you don't specify a template package version. If you specify a package version, such as `Contoso.Templates@2.0.0-preview.3`, the command selects that exact version. Available since .NET SDK 11.
 
 - [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 

@@ -2,15 +2,17 @@ static class ListPatterns
 {
     public static void Run()
     {
-        Console.WriteLine(IsResetCommand([0x02, 0x52, 0x03]));
+        Console.WriteLine($"Header: {IsHeader(["Name", "Score"])}");
         Console.WriteLine(GetAnnouncements(["Mina", "Luis", "Ada"]));
-        Console.WriteLine(GetInputFile(["--verbose", "--safe", "report.csv"]));
-        Console.WriteLine(ValidateMessage(["BEGIN", "END"]));
+        Console.WriteLine(
+            GetInputFile(["--verbose", "--safe", "report.csv"]));
+        Console.WriteLine(
+            $"Has content: {HasContent(["BEGIN", "value", "END"])}");
     }
 
     // <ExactListPattern>
-    static bool IsResetCommand(byte[] command) =>
-        command is [0x02, 0x52, 0x03];
+    static bool IsHeader(string[] columns) =>
+        columns is ["Name", "Score"];
     // </ExactListPattern>
 
     // <CaptureElements>
@@ -34,12 +36,7 @@ static class ListPatterns
     // </SlicePattern>
 
     // <SliceSubpattern>
-    static string ValidateMessage(string[] entries) =>
-        entries switch
-        {
-            ["BEGIN", .. { Length: 0 }, "END"] => "Reject empty payload",
-            ["BEGIN", .., "END"] => "Process payload",
-            _ => "Reject malformed message"
-        };
+    static bool HasContent(string[] entries) =>
+        entries is ["BEGIN", .. { Length: > 0 }, "END"];
     // </SliceSubpattern>
 }

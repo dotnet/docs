@@ -3,11 +3,13 @@ static class RelationalLogicalPatterns
     public static void Run()
     {
         ShowExpressionAndPattern(-4);
-        Console.WriteLine(GetVentilationMode(21));
-        Console.WriteLine(GetTimetable(ServiceDay.Saturday));
-        Console.WriteLine(GetServiceAction(ServiceStatus.Limited));
-        Console.WriteLine(GetPriorityAction(9));
-        Console.WriteLine(GetShippingPrice(22, isHoliday: true));
+        Console.WriteLine(
+            $"Comfortable temperature: {IsComfortableTemperature(21)}");
+        Console.WriteLine($"Weekend: {IsWeekend(DayOfWeek.Saturday)}");
+        Console.WriteLine($"Active status: {IsActive(Status.Pending)}");
+        Console.WriteLine($"Accepted priority: {IsAcceptedPriority(9)}");
+        Console.WriteLine(
+            $"Heat warning: {GetHeatWarning(36, isOutdoors: true)}");
     }
 
     // <ExpressionAndPattern>
@@ -23,74 +25,44 @@ static class RelationalLogicalPatterns
             > 0 => "Above freezing"
         };
 
-        string warning = freezeWarningFromPattern
-            ? "Show freeze warning"
-            : "No freeze warning";
-
         Console.WriteLine(
             $"Expression: {freezeWarningFromExpression}; " +
-            $"pattern: {freezeWarningFromPattern}; {description}; {warning}");
+            $"pattern: {freezeWarningFromPattern}; {description}");
     }
     // </ExpressionAndPattern>
 
     // <AndPattern>
-    static string GetVentilationMode(int temperature) =>
-        temperature is >= 18 and <= 24
-            ? "Keep current airflow"
-            : "Adjust airflow";
+    static bool IsComfortableTemperature(int temperature) =>
+        temperature is >= 18 and <= 24;
     // </AndPattern>
 
     // <OrNotPatterns>
-    static string GetTimetable(ServiceDay day) =>
-        day is ServiceDay.Saturday or ServiceDay.Sunday
-            ? "Weekend timetable"
-            : "Weekday timetable";
+    static bool IsWeekend(DayOfWeek day) =>
+        day is DayOfWeek.Saturday or DayOfWeek.Sunday;
 
-    static bool IsAvailable(ServiceStatus status) =>
-        status is not ServiceStatus.Closed;
+    static bool IsActive(Status status) =>
+        status is not Status.Complete;
 
-    static string GetServiceAction(ServiceStatus status) =>
-        IsAvailable(status)
-            ? "Offer trip planning"
-            : "Show service unavailable";
-
-    enum ServiceDay
+    enum Status
     {
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday,
-        Sunday
-    }
-
-    enum ServiceStatus
-    {
-        Open,
-        Limited,
-        Closed
+        Pending,
+        Running,
+        Complete
     }
     // </OrNotPatterns>
 
     // <ParenthesizedPattern>
     static bool IsAcceptedPriority(int priority) =>
         priority is (>= 1 and <= 3) or 9;
-
-    static string GetPriorityAction(int priority) =>
-        IsAcceptedPriority(priority)
-            ? "Add request to queue"
-            : "Reject unsupported priority";
     // </ParenthesizedPattern>
 
     // <WhenGuard>
-    static decimal GetShippingPrice(decimal weightKg, bool isHoliday) =>
-        weightKg switch
+    static string GetHeatWarning(int temperature, bool isOutdoors) =>
+        temperature switch
         {
-            > 20 when isHoliday => 45.00m,
-            > 20 => 35.00m,
-            _ when isHoliday => 20.00m,
-            _ => 15.00m
+            > 35 when isOutdoors => "High heat outdoors",
+            > 35 => "High heat",
+            _ => "No heat warning"
         };
     // </WhenGuard>
 }

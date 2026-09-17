@@ -17,17 +17,17 @@ List patterns don't make every <xref:System.Collections.Generic.IEnumerable%601>
 
 ## Match an exact shape
 
-A card reader receives command bytes from a device. A valid reset command contains exactly three bytes: a start marker, the reset operation code, and an end marker. The program must validate the complete command before resetting the device:
+The following method recognizes a two-column header:
 
 :::code language="csharp" source="snippets/patterns/ListPatterns.cs" ID="ExactListPattern":::
 
-The `command` expression is the pattern input. `[0x02, 0x52, 0x03]` contains three constant patterns. Without a slice pattern, the length must be exactly three, and each nested pattern must match the element in the same position. A longer command doesn't match even if its first three bytes are the same.
+The `columns` expression is the pattern input. `["Name", "Score"]` contains two constant patterns. Without a slice pattern, the length must be exactly two, and each nested pattern must match the element in the same position. A longer array doesn't match even if its first two elements are the same.
 
 Choose a list pattern when both the sequence shape and selected element values express the decision. If only the number of elements matters, a `Length` or `Count` property pattern, such as `items is { Count: 0 }`, states that intent more directly.
 
 ## Match selected elements with discards
 
-A race application receives the finishing order as a list of runner names. It needs the winner and third-place finisher to prepare two separate announcements:
+The following method reads the winner and third-place finisher from a three-name finishing order:
 
 :::code language="csharp" source="snippets/patterns/ListPatterns.cs" ID="CaptureElements":::
 
@@ -37,7 +37,7 @@ Choose this form when fixed positions have stable meaning. Use a loop or LINQ wh
 
 ## Allow remaining elements with a slice pattern
 
-An application command line can start with `--verbose`, continue with zero or more other arguments, and end with the input file name. The program needs to recognize that shape and capture the file name:
+A command line can start with `--verbose`, contain other arguments, and end with the input file name. The following method recognizes that shape and captures the file name:
 
 :::code language="csharp" source="snippets/patterns/ListPatterns.cs" ID="SlicePattern":::
 
@@ -47,11 +47,11 @@ A slice can appear at the beginning, middle, or end of a list pattern. Use it wh
 
 ## Apply a pattern to a slice
 
-You can apply another pattern to the part matched by `..`. A message-processing service treats the first and last entries as protocol markers and needs to know whether the payload between them is empty:
+You can apply another pattern to the part matched by `..`. The following method tests whether an array starts with `"BEGIN"`, ends with `"END"`, and has at least one element between them:
 
 :::code language="csharp" source="snippets/patterns/ListPatterns.cs" ID="SliceSubpattern":::
 
-The outer pattern first requires `"BEGIN"` and `"END"` at the boundaries. The property pattern `{ Length: 0 }` then tests the slice between them. The result tells the service to reject an empty payload instead of sending it for processing.
+The outer pattern first requires `"BEGIN"` and `"END"` at the boundaries. The property pattern `{ Length: > 0 }` then tests the slice between them.
 
 Use a slice subpattern only when the middle portion itself needs a test or capture. If only boundary elements matter, plain `..` is simpler.
 

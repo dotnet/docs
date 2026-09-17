@@ -2,38 +2,32 @@ static class PropertyPositionalPatterns
 {
     public static void Run()
     {
-        Console.WriteLine(NeedsSpecialHandling(
-            new Package("International", 24)));
-        Console.WriteLine(SelectFulfillmentTeam(
-            new ShippedOrder(new Address("CA"))));
-        Console.WriteLine(ClassifyPoint(new GridPoint(0, 5)));
-        Console.WriteLine(GetCrossingInstruction(
-            PedestrianSignal.Walk, crossingIsClear: true));
+        Console.WriteLine($"Hot and humid: {IsHotAndHumid(
+            new WeatherReading(32, 75))}");
+        Console.WriteLine($"Date: {DescribeDate(
+            new DateTime(2026, 9, 19))}");
+        Console.WriteLine($"Point: {ClassifyPoint(new GridPoint(0, 5))}");
+        Console.WriteLine($"Crossing: {GetCrossingInstruction(
+            PedestrianSignal.Walk, crossingIsClear: true)}");
     }
 
     // <PropertyPattern>
-    static bool NeedsSpecialHandling(Package package) =>
-        package is { Destination: "International", WeightKg: > 20 };
+    static bool IsHotAndHumid(WeatherReading reading) =>
+        reading is { TemperatureC: > 30, HumidityPercent: > 70 };
 
-    sealed record Package(string Destination, decimal WeightKg);
+    sealed record WeatherReading(int TemperatureC, int HumidityPercent);
     // </PropertyPattern>
 
     // <NestedPropertyPattern>
-    static string SelectFulfillmentTeam(Order? order) =>
-        order switch
+    static string DescribeDate(object? value) =>
+        value switch
         {
-            StorePickup => "Store team",
-            ShippedOrder { Address.CountryCode: not "US" } =>
-                "International shipping team",
-            ShippedOrder => "Domestic shipping team",
-            null => "No order to fulfill",
-            _ => "Order review team"
+            DateTime { Date.DayOfWeek:
+                DayOfWeek.Saturday or DayOfWeek.Sunday } => "Weekend date",
+            DateTime => "Weekday date",
+            null => "No date",
+            _ => "Not a date"
         };
-
-    abstract record Order;
-    sealed record StorePickup : Order;
-    sealed record ShippedOrder(Address Address) : Order;
-    sealed record Address(string CountryCode);
     // </NestedPropertyPattern>
 
     // <PositionalPattern>

@@ -124,7 +124,7 @@ Ensuring consistent behavior requires installations to define their product, rel
 > [!NOTE]
 > The .NET Standard 2.1 targeting pack was removed from the SDK installation in .NET 10. SDKs automatically download missing targeting packs using NuGet packages when building applications.
 
-### .NET SDK Feature bands
+### .NET SDK feature bands
 
 In .NET Core 1.0 and 1.1, SDKs used a versioning scheme similar to the runime. The last SDK in .NET Core 1.1 was versioned as 1.1.14 and included the 1.1.13 runtime.
 

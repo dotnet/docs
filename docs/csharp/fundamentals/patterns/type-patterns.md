@@ -40,7 +40,7 @@ In a support system, `SupportRequest` is the base class for specialized request 
 
 :::code language="csharp" source="snippets/patterns/TypePatterns.cs" ID="TypePatternSwitch":::
 
-Each arm answers a type question and returns the queue that handles that request. If an arm needed to read request members, use a declaration pattern to capture the matching value in a variable.
+Each arm answers a type question and returns the queue that handles that request. If an arm needs to read request members, use a declaration pattern to capture the matching value in a variable.
 
 Switch arms are considered from top to bottom. Put a specialized class before its base class. Otherwise, the base-class arm can match every instance of the specialized class, which makes the later arm unreachable.
 

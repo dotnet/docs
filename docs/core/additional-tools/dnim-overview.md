@@ -21,6 +21,10 @@ The tool is data driven and depends on the [release information](https://builds.
 
 The latest release can be found on the [Microsoft Download Center](https://aka.ms/dnim).
 
+## System Requirements
+
+DNIM is currently built using .NET 8 and compatible with all versions of Windows supported by .NET 8.
+
 ## Support
 
 > [!IMPORTANT]

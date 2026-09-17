@@ -191,3 +191,5 @@ a description for the various policy actions returned by the `uninstall` command
   ```
 
 ## See also
+
+[.NET Installs](dnim-net-installs.md)

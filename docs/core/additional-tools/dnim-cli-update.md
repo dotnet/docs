@@ -136,3 +136,5 @@ The results are similar to that of the uninstall command, but additional columns
   Assume 8.0.31 is the latest .NET 8 release. It includes updates for both the 8.0.1xx and 8.0.4xx SDKs. The 8.0.2xx and 8.0.3xx SDKs are no longer produced and considered discontinued. If a device has the 8.0.202 SDK installed, DNIM can install the 8.0.425 SDK and remove the 8.0.202 SDK.
 
 ## See also
+
+[.NET Installs](dnim-net-installs.md)

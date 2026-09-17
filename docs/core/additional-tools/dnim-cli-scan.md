@@ -87,3 +87,5 @@ The results presents a summary of each installation, including its type (MSI, bu
   ```
 
 ## See also
+
+[.NET Installs](dnim-net-installs.md)

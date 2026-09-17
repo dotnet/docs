@@ -15,9 +15,12 @@ sections:
     questions:
       - question: What is the difference between DNIM and the .NET Uninstall tool?
         answer: |
+          - The uninstall is targeted to developers to assist with cleaning up old SDKs and runtimes.
           - The uninstall tool supports other operating systems like macOS. DNIM is specifically designed for Windows.
           - The uninstall tool doesn't support MSI detection or detailed analysis of Visual Studio.
           - The uninstall tool doesn't support updating installations.
+          - DNIM provides strong diagnostic capabilities, including the ability to identify .NET processes and runtime versions.
+          - DNIM was designed to work with deployment tools like Intune inside large enterprise environments.
 
       - question: Does DNIM require internet access?
         answer: |
@@ -41,8 +44,14 @@ sections:
       - question: What is the recommended approach to remove end-of-life versions of .NET?
         answer: |
           - Start with a small pilot to gather information and understand the state of devices.
-          - Consider using [Visual Studio](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=visualstudio#remove-out-of-support-components) to remove old .NET components it installed.
-          - Deploy DNIM using `--sp eol` and remove any installs that were left behind or orphaned using `--remove-orphaned-installs` and `--remove-EOL-versions-from-VS`.
+          - To gather live data, you can push deploytments of the `uninstall` and `update` commands that include the `--what-if` option. To minimize risk, consider using Windows Sandbox to set up a controlled environment where you can install .NET and experiment with the CLI.
+          - If devices acquire .NET through Visual Studio, consider using [Visual Studio](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=visualstudio#remove-out-of-support-components) to remove old .NET components.
+          - Use Microsoft Update to patch .NET copies installed by the standalone bundles.
+          - Deploy DNIM to clean up any remaining installs using `--sp eol`. If a more agressive cleanup is required, consider including the `--remove-orphaned-installs` and `--remove-EOL-versions-from-VS` options.
+
+      - question: Can DNIM be used instead of Microsoft Update?
+        answer: |
+          It is recommended to continue using Microsoft Update. DNIM can be used to manage updates when Windows do not offer automatic updates for .NET, for example Windows insiders. 
 
   - name: Troubleshooting
     questions:

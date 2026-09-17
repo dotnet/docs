@@ -1,6 +1,6 @@
 ---
 title: Managed .NET installations on Windows
-description: Provides a technical overview of .NET installations on windows, including composition and reference counting.
+description: Provides a technical overview of .NET installations on Windows, including composition and reference counting.
 author: joeloff
 ms.date: 09/14/2026
 ai-usage: ai-assisted

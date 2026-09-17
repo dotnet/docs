@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 ## Synopsis
 
 ```dotnetcli
-dotnet reference add reference [--file <FILE>] [-f|--framework <FRAMEWORK>]
+dotnet reference add [--file <FILE>] [-f|--framework <FRAMEWORK>]
      [--interactive] <PROJECT_REFERENCES> [--project <PROJECT>]
 
 dotnet reference add -h|--help

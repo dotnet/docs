@@ -125,7 +125,7 @@ dotnet sln add [-h|--help]
 
 - **`PROJECT_PATH`**
 
-  The path to the project or projects to add to the solution or solution filter. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project or projects to add to the solution or solution filter. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command. Solution filters don't support the `--in-root` or `-s|--solution-folder` options.
 
   If `PROJECT_PATH` includes folders that contain the project folder, that portion of the path is used to create [solution folders](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). For example, the following commands create a solution with `myapp` in solution folder `folder1/folder2`:
 
@@ -216,6 +216,8 @@ dotnet sln [<SOLUTION_FILE>] migrate [-h|--help]
 - Create a solution filter, add a project, list the projects, and remove the project:
 
   ```dotnetcli
+  dotnet new sln --name MyApp
+  dotnet sln MyApp.slnx add src/Lib/Lib.csproj
   dotnet new slnf --name MyApp.slnf
   dotnet sln MyApp.slnf add src/Lib/Lib.csproj
   dotnet sln MyApp.slnf list

@@ -36,6 +36,10 @@
 
 6. Cross-cutting: all Coding style articles should mention `.editorconfig` usage and link to the EditorConfig section in "Get started". Link to pertinent analyzer rules and code style rules relevant to each article's design decisions.
 
+> **Part 2 candidate:** `design-alternatives.md` overlaps the proposed opinionated technique-guidance
+> area. Decide whether it becomes that area's overview, moves beneath it, or stays in Coding style;
+> don't create overlapping guidance in both places.
+
 ### PR 37 — Using .NET analyzers
 
 > ~4 files
@@ -54,4 +58,3 @@
 > Addresses [#34831](https://github.com/dotnet/docs/issues/34831) — clean up the Exceptions section, move LINQ exceptions article to LINQ section, move Non-CLS exceptions to Advanced section.
 
 > *Watch for redistribution:* in addition to the LINQ exceptions and Non-CLS exceptions articles already flagged for relocation, the existing exceptions content includes CLR exception model details, Structured Exception Handling (SEH) interop, first-chance exceptions, and corrupted-state exception rules. Those sub-sections fail universality — move them to a runtime/advanced deep dive. Keep the modernization pass focused on idiomatic everyday exception handling.
-

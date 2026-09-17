@@ -1,6 +1,6 @@
 > 📋 Part of the [Everyday C# Fundamentals restructuring plan](README.md). See also the [Project Map](../project-map.md).
 
-## Phase F: Pattern Matching (§11) + Functional (§12) — 5 PRs
+## Phase F: Pattern Matching (§11) + Functional inventory — 5 PRs
 
 > *Option A ordering (Decision 12):* Pattern matching (§11) is sequenced **before** Expressions and
 > operators (§12) and Statements (§13) in the eventual TOC. The pattern-matching articles move out of
@@ -8,7 +8,16 @@
 > their own §11 section rather than a sub-topic of Functional techniques. Functional techniques
 > (lambdas, local functions, iterators — PRs 22–23) remain in `fundamentals/functional/`.
 
+> **IA decision gate:** The final sentence above records the existing Option A plan; it isn't the
+> approved permanent taxonomy. Under the two-part hypothesis, lambda-expression, local-function, and
+> iterator syntax belongs in standard-aligned Part 1, while the Functional overview and tutorial are
+> Part 2 candidates. Decide the final homes before approving PR 22. PR
+> [#55966](https://github.com/dotnet/docs/pull/55966) remains in review and supplies construct-first
+> evidence only; don't expand its scope or treat it as shipped.
+
 ### PR 19 — Pattern matching: overview + declaration/constant/var + type patterns
+
+[#55966](https://github.com/dotnet/docs/pull/55966) *in review*
 
 > ~10 files
 
@@ -51,6 +60,9 @@
 
 ### PR 22 — Functional techniques
 
+> **Placement unresolved:** classify the overview as Part 2 guidance and the three construct articles
+> as Part 1 syntax/semantics before implementation.
+
 > ~10 files
 
 1. Revise `fundamentals/functional/index.md` — (new overview article, C# as multi-paradigm)
@@ -63,8 +75,10 @@
 
 ### PR 23 — Tutorial: Functional techniques in C#
 
+> **Part 2 / Tutorials candidate:** retain as deferred inventory until Bill approves the technique
+> area name and placement.
+
 > ~4 files
 
 1. New `fundamentals/tutorials/functional-techniques.md` — breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area
 2. Snippet files + toc.yml
-

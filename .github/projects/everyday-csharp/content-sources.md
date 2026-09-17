@@ -2,6 +2,10 @@
 
 ## Content Sources for Pull Articles
 
+Before PR 22 or Phase G implementation, classify every pull as either canonical construct coverage
+(Part 1) or opinionated technique/design guidance (Part 2). Mixed source articles should be split;
+their legacy location doesn't determine their final Fundamentals owner.
+
 | Target Article | Source Location | Action |
 |---|---|---|
 | Namespaces and using | *No single source* | New, informed by programming guide |
@@ -17,11 +21,11 @@
 | Constructors | `programming-guide/classes-and-structs/constructors.md` + related | Pull + add primary constructors |
 | Methods | `programming-guide/classes-and-structs/methods.md` + `concepts/methods.md` | Merge + revise |
 | Polymorphism | `programming-guide/classes-and-structs/polymorphism.md` | Merge into Inheritance |
-| Interfaces (OOP) | `programming-guide/interfaces/` | Pull + revise |
+| Interfaces | `programming-guide/interfaces/` | Pull + split declaration/implementation mechanics from design-choice guidance |
 | Indexers | `programming-guide/indexers/` | Pull + add ranges/indexes |
 | Events | `concepts/` events articles (subset) | Pull basic subset |
-| Local functions | `concepts/` + `programming-guide/` | Merge + revise |
-| Iterators | `concepts/iterators.md` + `programming-guide/` | Merge + revise |
+| Local functions | `concepts/` + `programming-guide/` | Merge construct coverage for Part 1; route technique guidance to Part 2 |
+| Iterators | `concepts/iterators.md` + `programming-guide/` | Merge construct coverage for Part 1; route technique guidance to Part 2 |
 | Type conversions | `programming-guide/types/` casting/conversion articles | Pull + revise |
 | Async overview | `asynchronous-programming/index.md` | Pull + redirect |
 | Tutorials (6 articles) | `tutorials/` section | Move into Fundamentals tutorials |
@@ -45,4 +49,4 @@ As content moves into Fundamentals, these existing top-level sections will lose 
 1. **Tutorial curation**: As Fundamentals grows, some existing tutorials may become redundant with the main content. Should any tutorials be retired rather than moved?
 1. **Cross-references with Language Reference**: Many Fundamentals articles will need "See also" links to the corresponding Language Reference pages for complete syntax details.
 1. **Redirect strategy**: Every moved article needs a redirect from its old URL. The redirect mapping should be produced as part of each phase's execution plan.
-
+1. **Two-part Fundamentals boundary**: Confirm the Part 2 label and classify the Functional/OOP inventories before approving PR 22 or Phase G.

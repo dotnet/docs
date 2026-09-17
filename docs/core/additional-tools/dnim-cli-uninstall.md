@@ -49,6 +49,9 @@ dnim-win-[x86|x64|arm64] uninstall -?|-h|--help
 
 The `uninstall` command attempts to remove all copies of .NET from the device. This may not be possible if installations are shared with other products like Visual Studio (see [Managed .NET installations on Windows](dnim-net-installs.md)).
 
+> [!CAUTION]
+> DNIM always attempts to remove all copies of .NET on a device. Use the `--what-if` option to review planned actions.
+
 Various options can be used to target specific installations. For example, an administrator may want to remove all copies of .NET that are not in active support to comply with their organization's internal policies.
 
 > [!IMPORTANT]

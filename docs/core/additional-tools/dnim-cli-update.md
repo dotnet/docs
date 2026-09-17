@@ -51,6 +51,9 @@ dnim-win-[x86|x64|arm64] update -?|-h|--help
 
 The `update` command detects, classifies, removes and updates .NET installations on Windows. MSIs and bundles are detected by default. Bin deployed (xcopy/zip) installs under `Program Files` can be detected using the `--include-bin-deployed-installs` option.
 
+> [!CAUTION]
+> DNIM always attempts to remove all copies of .NET on a device before updating, even if the latest release is instaleld. Use the `--what-if` option to review planned actions and consider using the `--keep-latest-product-version` and `keep-latest-support-phase` options to retain specific installations.
+
 The command can target specific products based on their product version, support phase, type and release version. Only standalone bundles can be updated. Installations of .NET that came from Visual Studio will require you to update Visual Studio. DNIM will not update Visual Studio.
 
 The command will first remove any applicable installs before applying updates. This approach yields better results to meet compliance goals and reduce the need for secondary deployments to remove old copies of .NET.

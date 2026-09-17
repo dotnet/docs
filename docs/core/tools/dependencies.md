@@ -82,13 +82,7 @@ For more information about the `PackageReference` item, see the [MSBuild referen
 
 ## Add and remove project references
 
-Use a project-to-project reference when your project depends on another project. The `<ProjectReference>` project file element identifies the path to the referenced project:
-
-```xml
-<ItemGroup>
-  <ProjectReference Include="../MyLibrary/MyLibrary.csproj" />
-</ItemGroup>
-```
+Use a project-to-project reference when your project depends on another project. To add and remove project references, either edit the project file or use the CLI.
 
 ### Use the CLI
 
@@ -108,7 +102,7 @@ dotnet add reference ../MyLibrary/MyLibrary.csproj
 
 ---
 
-To remove a project reference, remove the `<ProjectReference>` element from the project file or run the following command for your SDK version:
+To remove a project reference, run the following command for your SDK version:
 
 # [.NET 10 and later](#tab/dotnet10)
 
@@ -123,6 +117,20 @@ dotnet remove reference ../MyLibrary/MyLibrary.csproj
 ```
 
 ---
+
+### Edit the project file
+
+ The `<ProjectReference>` project file element identifies the path to the referenced project. To add a project reference, add a `<ProjectReference>` item inside an `<ItemGroup>` element. You can add to an existing `<ItemGroup>` or create a new one.
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="../MyLibrary/MyLibrary.csproj" />
+</ItemGroup>
+```
+
+To remove a project reference, remove the `<ProjectReference>` element from the project file.
+
+For more information about the `ProjectReference` item, see the [Common MSBuild project items](/visualstudio/msbuild/common-msbuild-project-items#projectreference).
 
 ## Add and remove assembly references
 
@@ -139,6 +147,8 @@ To reference a .NET assembly that isn't part of a project or package, add a `<Re
 ```
 
 To remove an assembly reference, remove its `<Reference>` element from the project file.
+
+For more information about the `Reference` item, see the [Common MSBuild project items](/visualstudio/msbuild/common-msbuild-project-items#reference).
 
 ## Tips
 

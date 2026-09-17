@@ -4,7 +4,7 @@ description: Explains how to manage package, project, and assembly dependencies 
 no-loc: [dotnet package add, dotnet package remove, dotnet package list, dotnet reference add, dotnet reference remove, dotnet add package, dotnet remove package, dotnet add reference, dotnet remove reference]
 ms.topic: how-to
 ms.date: 09/16/2026
-ai-usage: ai-generated
+ai-usage: ai-assisted
 ---
 # Manage dependencies in .NET applications
 
@@ -13,44 +13,6 @@ This article explains how to add and remove package, project, and assembly depen
 ## Add and remove package dependencies
 
 You can add and remove dependencies by editing your project file or through [.NET CLI](index.md) commands.
-
-### The `<PackageReference>` element
-
-The `<PackageReference>` project file element has the following structure:
-
-```xml
-<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
-```
-
-The `Include` attribute specifies the ID of the package to add to the project. The `Version` attribute specifies the version to get. Versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
-
-Use conditions to add a dependency that's available only in a specific target, as shown in the following example:
-
-```xml
-<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
-```
-
-The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET applications, you don't need to do this.
-
-### Edit the project file
-
-To add a dependency, add a `<PackageReference>` item inside an `<ItemGroup>` element. You can add to an existing `<ItemGroup>` or create a new one.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    ...
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
-  </ItemGroup>
-
-</Project>
-```
-
-To remove a dependency, remove its `<PackageReference>` item from the project file.
 
 ### Use the CLI
 
@@ -85,6 +47,38 @@ dotnet remove package Microsoft.EntityFrameworkCore
 ```
 
 ---
+
+### Edit the project file
+
+To add a dependency, add a `<PackageReference>` item inside an `<ItemGroup>` element. You can add to an existing `<ItemGroup>` or create a new one.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    ...
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+  </ItemGroup>
+
+</Project>
+```
+
+The `Include` attribute specifies the ID of the package to add to the project. The `Version` attribute specifies the version to get. Versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
+
+Use conditions to add a dependency that's available only in a specific target, as shown in the following example:
+
+```xml
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
+```
+
+The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET applications, you don't need to do this.
+
+To remove a dependency, remove its `<PackageReference>` item from the project file.
+
+For more information about the `PackageReference` item, see the [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#packagereference).
 
 ## Add and remove project references
 

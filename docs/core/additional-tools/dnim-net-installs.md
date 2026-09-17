@@ -111,7 +111,7 @@ Because DNIM performs an exhaustive search of installer components, any files un
 
 Incorrect classification of installations can result in removing or retaining the wrong installation, potentially breaking applications or leaving devices in a non-compliant state.
 
-Once a product (e.g., NET 10) is identified, additional information like its release (e.g., 10.0.4) and support phase (e.g., active) can be determined. This allows administrators to create flexible deploymentss.
+Once a product (for example, NET 10) is identified, additional information like its release (for example, 10.0.4) and support phase (for example, active) can be determined. This allows administrators to create flexible deployments.
 
 Installations are further classified according to their .NET component (ASP.NET Core, SDK, etc.), architecure and type of installation (bundle, MSI, or bin deployed).
 

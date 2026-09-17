@@ -37,7 +37,7 @@ static class Overview
         {
             Console.WriteLine("No package is available.");
         }
-        else if (delivery is not null)
+        else
         {
             Console.WriteLine("A package is ready to track.");
         }

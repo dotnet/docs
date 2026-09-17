@@ -17,6 +17,10 @@ DNIM ships as a trimmed, single file .NET executable, making it easy to deploy a
 
 The tool is data driven and depends on the [release information](https://builds.dotnet.microsoft.com/dotnet/release-metadata/releases-index.json) published for .NET. While internet access is required to download the latest release information and updates, administrators can prepare offline deployments for network restricted environments.
 
+## Download
+
+The latest release can be found on the [Microsoft Download Center](https://aka.ms/dnim).
+
 ## Support
 
 > [!IMPORTANT]

@@ -17,9 +17,9 @@ ai-usage: ai-assisted
 
 You can use a pattern in three contexts:
 
-- on the right side of the `is` operator,
-- in a `case` label of a `switch` statement, or
-- in an arm of a `switch` expression.
+- On the right side of the `is` operator.
+- In a `case` label of a `switch` statement.
+- In an arm of a `switch` expression.
 
 Patterns are often clearer than a sequence of comparison statements because each branch describes the data it handles. For example, the following method uses a `switch` expression to choose a delivery message:
 

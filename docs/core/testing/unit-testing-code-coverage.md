@@ -283,7 +283,10 @@ dotnet tool install -g dotnet-reportgenerator-globaltool
 Run the tool and provide the desired options, given the output *coverage.cobertura.xml* file from the previous test run.
 
 ```console
-reportgenerator -reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
+reportgenerator
+-reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
+-targetdir:"coveragereport"
+-reporttypes:Html
 ```
 
 After running this command, an HTML file represents the generated report.
@@ -304,4 +307,5 @@ After running this command, an HTML file represents the generated report.
 
 ## Next Steps
 
-...
+> [!div class="nextstepaction"]
+> [Unit testing best practices](unit-testing-best-practices.md)

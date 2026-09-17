@@ -9,11 +9,10 @@
 
 IMPORTANT: Based on the actions of Copilot, add or update the `ai-usage` frontmatter key/value pair:
 
-- Don't apply or change the `ai-usage` value in other cases.
-- Don't apply or change the `ai-usage` value when only reviewing an article and suggesting minor edits.
-- Don't apply the `ai-usage` metadata to files in the .github folder.
-- Set `ai-usage` to `ai-assisted` when Copilot adds new sections to an existing article or fixes issues by rewriting content. This doesn't include minor edits.
-- Set `ai-usage` to `ai-generated` when Copilot generates an article with or without a template or when Copilot writes all of the content of an article.
+- Don't apply or change the `ai-usage` value when suggesting editorial-based corrections, when reviewing a pull request, or when reviewing article
+- Don't apply the `ai-usage` metadata to files in the .github folder
+- Set `ai-usage` to `ai-assisted` when adding new sections to an existing article or when rewriting content to describe new features or facets. This doesn't include minor edits and corrections.
+- Set `ai-usage` to `ai-generated` when Copilot generates an article (with or without a template) or when Copilot writes all of the content of an article.
 
 ## Terminology
 

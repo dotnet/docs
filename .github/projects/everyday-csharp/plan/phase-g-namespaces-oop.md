@@ -1,6 +1,14 @@
 > 📋 Part of the [Everyday C# Fundamentals restructuring plan](README.md). See also the [Project Map](../project-map.md).
 
-## Phase G: Namespaces (§14) + Object-Oriented Programming (§15) — 10 PRs
+## Phase G: Namespaces (§14) + type/member and OOP inventory — 10 PRs
+
+> **IA decision gate:** Preserve this PR inventory, but split its ownership before implementation.
+> Standard-aligned Part 1 owns namespace, type, member, inheritance, interface, event, extension, and
+> `using` syntax/semantics. Part 2 or Tutorials owns the OOP paradigm overview, callback/API-design
+> guidance, interfaces-versus-abstract-classes decisions, encapsulation/composition, and scenarios.
+> `Object-oriented programming` is a move candidate, not a §15 clause label. Revisit the earlier
+> Option A ordering after this classification and again when drafted Phase G content exposes the
+> natural boundary.
 
 ### PR 24 — Namespaces (CONSOLIDATE, Decision 12b)
 
@@ -22,6 +30,9 @@
 > land in this same PR, so nothing is duplicated, orphaned, or broken after merge.
 
 ### PR 25 — OOP: overview, access modifiers, fields/constants
+
+> Split the paradigm overview (Part 2 candidate) from access-modifier, field, and constant construct
+> coverage (Part 1 candidates).
 
 > ~10 files
 
@@ -52,6 +63,9 @@
 
 ### PR 28 — OOP: methods + lambdas in OOP
 
+> Methods are a Part 1 construct candidate. Callback, event-handler, and API-design guidance is a
+> Part 2 candidate.
+
 > ~10 files
 
 1. Pull+merge `fundamentals/object-oriented/methods.md` — from `programming-guide/classes-and-structs/methods.md` + `methods.md`; add `params` collections (C# 13), expression-bodied
@@ -61,6 +75,9 @@
 > *Watch for redistribution:* the existing methods content includes `ref readonly` parameters, `in` parameters, conditional methods (`[Conditional]`), method-resolution and overload-resolution rule details, and unsafe-context interactions. Those fail universality — move them to Language Reference (overload resolution, conditional methods, parameter modifiers) or an interop/unsafe deep dive. Keep the Fundamentals methods article on declaring methods, parameter passing, optional and named arguments, and `params`.
 
 ### PR 29 — OOP: inheritance merge + interfaces
+
+> Keep declaration and dispatch mechanics in Part 1; classify interfaces-versus-abstract-classes and
+> inheritance design guidance for Part 2.
 
 > ~10 files
 
@@ -98,8 +115,10 @@
 
 ### PR 33 — OOP: encapsulation and composition
 
+> Part 2 guidance candidate; don't use it to define the canonical home for class or inheritance
+> syntax.
+
 > ~6 files
 
 1. New `fundamentals/object-oriented/encapsulation-composition.md` — encapsulation as information hiding; composition over inheritance; combining objects to build complex behavior; comparison with inheritance-based designs
 2. Snippet files + toc.yml
-

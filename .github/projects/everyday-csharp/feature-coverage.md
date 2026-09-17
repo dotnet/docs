@@ -9,6 +9,11 @@ The following categorization is based on the [Roslyn Feature Status](https://git
 
 These features are "Everyday C#" and receive full treatment in Fundamentals with explanations, examples, and guidance.
 
+> **IA classification note:** Proposed locations below are an implementation inventory, not approval
+> to use Functional or OOP as canonical syntax owners. Under
+> [Decision 13](decisions.md#decision-13-two-part-fundamentals-ia-hypothesis), construct syntax and
+> semantics belong in standard-aligned Part 1; opinionated application guidance belongs in Part 2.
+
 | Feature | Version | Proposed Location |
 |---|---|---|
 | `field` keyword (field-backed properties) | C# 14 | OOP > Properties |
@@ -32,12 +37,12 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Pattern matching (relational, combinator, parenthesized, type) | C# 9 | Pattern matching |
 | Native sized integers (`nint`) | C# 9 | Type system > Built-in types (mention) |
 | Target-typed `new` expressions | C# 9 | Type system > Built-in types |
-| Static anonymous functions | C# 9 | Functional techniques > Lambdas |
+| Static anonymous functions | C# 9 | Part 1 candidate: Lambda expressions |
 | Covariant return types | C# 9 | OOP > Inheritance |
 | Nullable reference types | C# 8 | Null safety |
 | Recursive patterns (positional, property, switch expressions) | C# 8 | Pattern matching |
 | Ranges and indexes | C# 8 | OOP > Indexers |
-| Static local functions | C# 8 | Functional techniques > Local functions |
+| Static local functions | C# 8 | Part 1 candidate: Local functions |
 | Readonly members | C# 8 | Type system > Structs |
 | Tuple comparison `==` and `!=` | C# 7.3 | Type system > Tuples |
 | Attributes on backing fields | C# 7.3 | OOP > Fields and constants |
@@ -52,7 +57,7 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Tuples | C# 7 | Type system > Tuples |
 | Deconstruction | C# 7 | Pattern matching > Deconstruction |
 | Discards | C# 7 | Pattern matching > Discards |
-| Local functions | C# 7 | Functional techniques > Local functions |
+| Local functions | C# 7 | Part 1 candidate: Local functions |
 | Expression-bodied members (more) | C# 7 | OOP > Methods |
 | Auto-property initializers | C# 6 | OOP > Properties |
 | Getter-only property defaults | C# 6 | OOP > Properties |
@@ -71,7 +76,7 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Lambda expressions | C# 3 | Type system > Delegates/lambdas |
 | LINQ query expressions | C# 3 | Statements > LINQ |
 | Generics | C# 2 | Type system > Generics |
-| Iterators (`yield`) | C# 2 | Functional techniques > Iterators |
+| Iterators (`yield`) | C# 2 | Part 1 candidate: Statements / iterators |
 | Nullable value types | C# 2 | Null safety > Nullable value types |
 | Getter/setter separate accessibility | C# 2 | OOP > Properties |
 | Static classes | C# 2 | Type system > Classes |
@@ -212,4 +217,3 @@ These features are advanced, niche, or targeted at library authors. They belong 
 | User-defined conversion operators | C# 1 | Advanced |
 | Delegates (explicit declaration) | C# 1 | Prefer lambdas with `Func<>`/`Action<>` |
 | Unsafe code and pointers | C# 1 | Advanced |
-

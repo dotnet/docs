@@ -14,7 +14,7 @@ C# and Python share similar concepts. These familiar constructs help you learn C
 1. ***Garbage collection***: Both languages employ automatic memory management through garbage collection. The runtime reclaims the memory from objects that aren't referenced.
 1. ***Strongly typed***: Both Python and C# are strongly typed languages. Type coercion doesn't occur implicitly. There are differences described later, as C# is statically typed whereas Python is dynamically typed.
 1. ***Async / Await***: Python's `async` and `await` feature was directly inspired by C#'s `async` and `await` support.
-1. ***Pattern matching***: Python's `match` expression and pattern matching is similar to C#'s [pattern matching](../fundamentals/functional/pattern-matching.md) `switch` expression. You use them to inspect a complex data expression to determine if it matches a pattern.
+1. ***Pattern matching***: Python's `match` expression and pattern matching is similar to C#'s [pattern matching](../fundamentals/patterns/pattern-matching.md) `switch` expression. You use them to inspect a complex data expression to determine if it matches a pattern.
 1. ***Statement keywords***: Python and C# share many keywords, such as `if`, `else`, `while`, `for`, and many others. While not all syntax is the same, there's enough similarity that you can read C# if you know Python.
 
 ## Syntax at a glance

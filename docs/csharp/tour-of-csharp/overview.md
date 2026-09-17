@@ -76,7 +76,7 @@ C# apps use [exceptions](../fundamentals/exceptions/index.md) to report and hand
 
 Some elements of C# might be less familiar.
 
-C# provides [pattern matching](../fundamentals/functional/pattern-matching.md). Those expressions enable you to inspect data and make decisions based on its characteristics. Pattern matching provides a great syntax for control flow based on data. The following code shows how methods for the boolean *and*, *or*, and *xor* operations could be expressed using pattern matching syntax:
+C# provides [pattern matching](../fundamentals/patterns/pattern-matching.md). Those expressions enable you to inspect data and make decisions based on its characteristics. Pattern matching provides a great syntax for control flow based on data. The following code shows how methods for the boolean *and*, *or*, and *xor* operations could be expressed using pattern matching syntax:
 
 :::code language="csharp" source="./snippets/shared/PatternMatching.cs" id="PatternExamples":::
 
@@ -121,7 +121,7 @@ Callers can iterate the collection by using an `await foreach` statement:
 Finally, as part of the .NET ecosystem, you can use [Visual Studio](https://visualstudio.microsoft.com/vs) or [Visual Studio Code](https://code.visualstudio.com) with the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started). These tools provide a rich understanding of C#, including the code you write. They also provide debugging capabilities.
 
 > [!TIP]
-> To learn more about pattern matching, LINQ, and async programming, see the [functional techniques](../fundamentals/functional/pattern-matching.md), [LINQ overview](../linq/index.md), and [asynchronous programming](../asynchronous-programming/index.md) sections.
+> To learn more about pattern matching, LINQ, and async programming, see the [pattern matching](../fundamentals/patterns/pattern-matching.md), [LINQ overview](../linq/index.md), and [asynchronous programming](../asynchronous-programming/index.md) sections.
 
 ## Next steps
 

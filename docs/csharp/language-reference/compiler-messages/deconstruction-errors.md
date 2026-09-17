@@ -58,14 +58,14 @@ Provide an accessible instance or extension `Deconstruct` method that returns `v
 - **CS8183**: *Cannot infer the type of implicitly-typed discard.*
 - **CS8197**: *Cannot infer the type of implicitly-typed out variable 'variable'.*
 
-Supply a typed, deconstructable expression on the right so the compiler can determine each implicitly typed variable (**CS8130**, **CS8131**). Cast or otherwise give a discarded expression a type; in a deconstruction, specify an element type when appropriate (**CS8183**). For an `out` variable, use a method parameter that supplies the type or specify the type explicitly in the `out` argument (**CS8197**). For more information, see [deconstruction](../../fundamentals/functional/deconstruct.md) and [calls with `out` parameters](../../fundamentals/functional/discards.md#calls-to-methods-with-out-parameters).
+Supply a typed, deconstructable expression on the right so the compiler can determine each implicitly typed variable (**CS8130**, **CS8131**). Cast or otherwise give a discarded expression a type; in a deconstruction, specify an element type when appropriate (**CS8183**). For an `out` variable, use a method parameter that supplies the type or specify the type explicitly in the `out` argument (**CS8197**). For more information, see [deconstruction](../../fundamentals/functional/deconstruct.md) and [calls with `out` parameters](../../fundamentals/patterns/discards.md#calls-to-methods-with-out-parameters).
 
 ## Deconstruction cardinality
 
 - **CS8132**: *Cannot deconstruct a tuple of 'element count' elements into 'variable count' variables.*
 - **CS8134**: *Deconstruction must contain at least two variables.*
 
-Use at least two variables in a deconstruction (**CS8134**). Match the number of variables on the left to the number of tuple elements on the right, and add a discard (`_`) for each value that you don't need (**CS8132**). For more information, see [discards in tuple and object deconstruction](../../fundamentals/functional/discards.md#tuple-and-object-deconstruction).
+Use at least two variables in a deconstruction (**CS8134**). Match the number of variables on the left to the number of tuple elements on the right, and add a discard (`_`) for each value that you don't need (**CS8132**). For more information, see [discards in tuple and object deconstruction](../../fundamentals/patterns/discards.md#deconstruction-declarations).
 
 ## Deconstruction declaration and assignment syntax
 

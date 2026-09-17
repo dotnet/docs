@@ -1,6 +1,6 @@
 # Draft Plan: Fundamentals Restructuring PR Breakdown
 
-**TL;DR:** Break the ~91-article restructuring into ~35 small, independently mergeable PRs organized in proposed TOC order. Each PR aims for ~10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. PR file budgets are advisory: a PR may exceed ~10 files when relocating text to other sections is the right call (Goal 11), and PRs that grow too large are split along a natural seam into separate, consecutively numbered PRs (for example, the collections/LINQ and equality work split into PR 14a / PR 14b). Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
+**TL;DR:** Break the ~91-article restructuring into ~35 small, independently mergeable PRs. The current decision-ready IA hypothesis has two parts: a standard-ordered Part 1 for compact syntax and semantics, followed by an opinionated Part 2 for actionable technique guidance. The PR inventory is preserved, but Functional techniques and OOP must be classified and may move before PR 22 and Phase G are approved. Each PR aims for ~10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. PR file budgets are advisory: a PR may exceed ~10 files when relocating text to other sections is the right call (Goal 11), and PRs that grow too large are split along a natural seam into separate, consecutively numbered PRs (for example, the collections/LINQ and equality work split into PR 14a / PR 14b). Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
 
 **Conventions for every PR:**
 
@@ -85,8 +85,8 @@ This plan is split by phase for easier navigation. The conventions above apply t
 | [C — Null safety](phase-c-null-safety.md) | Nullable value types, null operators, NRT, migration | PR 8–9 |
 | [D — Strings](phase-d-strings.md) | Raw strings, interpolation, search/split, compare | PR 10–12 |
 | [E — Expressions & statements (§12–§13)](phase-e-expressions-statements.md) | Statements, collections, LINQ, **equality**, operators | PR 13–18 |
-| [F — Pattern matching (§11) + functional (§12)](phase-f-patterns-functional.md) | Patterns, deconstruction, functional techniques | PR 19–23 |
-| [G — Namespaces (§14) + OOP (§15)](phase-g-namespaces-oop.md) | OOP members, inheritance, events, lifetime | PR 24–33 |
+| [F — Pattern matching (§11) + functional inventory](phase-f-patterns-functional.md) | Patterns plus Part 1/Part 2 classification of functional content | PR 19–23 |
+| [G — Namespaces (§14) + type/member/OOP inventory](phase-g-namespaces-oop.md) | Namespace and type/member syntax plus OOP guidance candidates | PR 24–33 |
 | [H — Remaining sections](phase-h-remaining.md) | Async, attributes, XML docs, analyzers, exceptions | PR 34–38 |
 | [Verification & decisions](verification-and-decisions.md) | Build/lint verification + running decisions log | — |
 

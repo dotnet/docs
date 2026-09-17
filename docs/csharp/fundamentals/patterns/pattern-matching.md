@@ -79,17 +79,20 @@ C# includes patterns for common kinds of data tests:
 | --- | --- |
 | [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md) | A run-time type, a specific constant value, or any value that you want to capture |
 | [Type patterns](type-patterns.md) | A run-time type without declaring a variable |
-| Property and positional patterns | Properties, fields, or deconstructed values |
-| Relational and logical patterns | Comparisons and combinations such as `and`, `or`, and `not` |
-| List patterns | The values and shape of a list or array |
+| [Property and positional patterns](property-positional-patterns.md) | Properties, fields, or deconstructed values |
+| [Relational, logical, and parenthesized patterns](relational-logical-patterns.md) | Comparisons and combinations such as `and`, `or`, and `not` |
+| [List and slice patterns](list-patterns.md) | The values and shape of a supported sequence |
 | [Discard patterns and discards](discards.md) | Any remaining value, or a value your code intentionally ignores |
 
-The Fundamentals articles linked in the table provide focused coverage of the categories currently documented in this section. For complete syntax and examples for all pattern categories, see the [patterns reference](../../language-reference/operators/patterns.md).
+The linked Fundamentals articles explain when to choose each category. For complete syntax and examples, see the [patterns reference](../../language-reference/operators/patterns.md).
 
 ## See also
 
 - [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md)
 - [Type patterns](type-patterns.md)
+- [Property and positional patterns](property-positional-patterns.md)
+- [Relational, logical, and parenthesized patterns](relational-logical-patterns.md)
+- [List and slice patterns](list-patterns.md)
 - [Discards](discards.md)
 - [Patterns reference](../../language-reference/operators/patterns.md)
 - [`switch` expression reference](../../language-reference/operators/switch-expression.md)

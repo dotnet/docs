@@ -119,7 +119,7 @@ There are some special cases worth mentioning.
 
 ### .NET Standard 2.1
 
-Ensuring consistent behavior requires installations to define their product, release and support phase. The targeting pack for .NET Standard 2.1 presents an interesting challenge. It doesn't contain executable code and only provides reference assemblies for the APIs defined by the standard. The targeting pack first shipped as part of the .NET Core 3.0.100 SDK, but was included in every subsequent SDKs until .NET 10. While DNIM will classify the release and product under .NET Core 3.0, the support phase is always reported as active since it may be included in SDKs that are in active support.
+Ensuring consistent behavior requires installations to define their product, release, and support phase. The targeting pack for .NET Standard 2.1 presents an interesting challenge. It doesn't contain executable code and only provides reference assemblies for the APIs defined by the standard. The targeting pack first shipped as part of the .NET Core 3.0.100 SDK, but was included in every subsequent SDKs until .NET 10. While DNIM will classify the release and product under .NET Core 3.0, the support phase is always reported as active since it may be included in SDKs that are in active support.
 
 > [!NOTE]
 > The .NET Standard 2.1 targeting pack was removed from the SDK installation in .NET 10. SDKs automatically download missing targeting packs using NuGet packages when building applications.

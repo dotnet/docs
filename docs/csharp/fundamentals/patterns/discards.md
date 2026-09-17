@@ -1,7 +1,7 @@
 ---
 title: "Discards and the discard pattern"
 description: Learn the difference between a C# discard pattern, a discard that ignores a produced value, and an unused lambda parameter.
-ms.date: 09/15/2026
+ms.date: 09/17/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -43,17 +43,13 @@ The same discard syntax works when an object's `Deconstruct` method produces sev
 
 ## Calls to methods with `out` parameters
 
-The <xref:System.Int32.TryParse(System.String,System.Int32@)> method takes a `string` and returns a `bool` that reports whether parsing succeeded. It also produces the parsed `int` through its `out` parameter. This code prints only the Boolean result, so `out _` makes it clear that the integer isn't needed:
+Suppose an input field accepts text only when it represents a whole number. The <xref:System.Int32.TryParse(System.String,System.Int32@)> method returns a `bool` that reports whether parsing succeeded. It also produces the parsed `int` through its `out` parameter. The following code needs only the Boolean result to accept or reject the input:
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="OutDiscard":::
 
-## A standalone discard
+Use `out _` when only the success of the operation matters. The discard makes it clear that the parsed number isn't needed. If later code needs the number, give the `out` argument a name, such as `out int number`, and retain that value instead.
 
-The following method receives a nullable `string`. The null-coalescing expression produces the non-null string or throws an <xref:System.ArgumentNullException>. The caller needs only that validation or exception effect, not the produced string, so a discard assignment provides the required assignment target and ignores the result:
-
-:::code language="csharp" source="snippets/discards/Program.cs" ID="DiscardAssignment":::
-
-A discard assignment fits when evaluating an expression matters but retaining its result doesn't. For ordinary parameter validation, <xref:System.ArgumentNullException.ThrowIfNull*> communicates the intent more directly and should usually be preferred.
+A discard assignment, `_ = expression`, evaluates an expression and intentionally ignores its result. It's occasionally useful when the expression isn't otherwise a valid statement.
 
 > [!IMPORTANT]
 > Don't use `_ = Task.Run(...)` or `_ = SomeAsyncMethod()` to discard a task in application code. Await the task so its completion and exceptions remain in the calling flow. A discard assignment doesn't make a task safe, observe its exception, or create a supported fire-and-forget operation.

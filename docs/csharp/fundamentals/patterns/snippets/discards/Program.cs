@@ -6,8 +6,7 @@ class Program
     {
         ShowStatus();
         ShowForecast();
-        ValidateNumber();
-        ValidateLabel("ZX-42");
+        CheckInput();
         ShowLambdaDiscards();
     }
 
@@ -38,20 +37,22 @@ class Program
     // </TupleDiscards>
 
     // <OutDiscard>
-    static void ValidateNumber()
+    static void CheckInput()
     {
-        bool isNumber = int.TryParse("42", out _);
-        Console.WriteLine($"The text is numeric: {isNumber}");
+        string text = "42";
+
+        if (IsWholeNumber(text))
+        {
+            Console.WriteLine($"Accepted: {text}");
+        }
+        else
+        {
+            Console.WriteLine("Enter a whole number.");
+        }
+
+        static bool IsWholeNumber(string text) => int.TryParse(text, out _);
     }
     // </OutDiscard>
-
-    // <DiscardAssignment>
-    static void ValidateLabel(string? label)
-    {
-        _ = label ?? throw new ArgumentNullException(nameof(label));
-        Console.WriteLine("Label accepted.");
-    }
-    // </DiscardAssignment>
 
     // <LambdaDiscards>
     static void ShowLambdaDiscards()

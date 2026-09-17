@@ -14,7 +14,7 @@ On Windows, .NET components like the runtime and SDK consist of multiple MSIs. I
 
 ## Acquiring .NET on Windows
 
-- Standalone bundles (EXEs) can be downloaded from [.NET](https://dotnet.microsoft.com/download).
+- Standalone bundles (EXEs) can be downloaded from [the .NET website](https://dotnet.microsoft.com/download).
 - WinGet provides packages that contain the .NET bundles.
 - Servicing updates distribute the bundles through Microsoft Update using automatic updates, WSUS and the Windows Update Catalog.
 - Independent software vendors (ISVs) may redistribute .NET bundles as part of their software.

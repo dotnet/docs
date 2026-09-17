@@ -28,9 +28,10 @@ dnim-win-[x86|x64|arm64] query releases -?|-h|--help
 
 ## Description
 
-The command can be used to obtain a summary of available .NET products.
+The command can be used to obtain information for specific .NET releases.
 
-
+> [!IMPORTANT]
+> The information provided by this command depends on the published releases JSON data.
 
 ## Options
 
@@ -54,20 +55,35 @@ The command can be used to obtain a summary of available .NET products.
 
 ## Results
 
+The example below shows the latest release information for .NET Core 3.1.
 
+```console
+Version: 3.1.32
+Release date: 12/13/2022
+Release notes: https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1.32/3.1.32.md
+Security: True
+CVEs:
+  CVE-2022-41089, https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41089
+SDK 3.1.426
+  ASP.NET Core Runtime 3.1.32
+  .NET Core Runtime 3.1.32
+  Desktop Runtime 3.1.32
+```
 
 ## Examples
 
-- Display all releases include a specific CVE:
+- Display all releases that addressed a specific CVE:
 
   ```console
   dnim-win-[x86|x64|arm64] query releases --cve CVE-2026-71328
   ```
 
-- Display the latest releases that are not end-of-life
+- Display the latest releases available for all products that are not end-of-life.
 
   ```console
-  dnim-win-[x86|x64|arm64] query products --esp eol --latest
+  dnim-win-[x86|x64|arm64] query release --esp eol --latest
   ```
 
 ## See also
+
+The [`query products`](dnim-cli-query-products.md) command.

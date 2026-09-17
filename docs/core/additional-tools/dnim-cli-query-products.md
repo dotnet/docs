@@ -28,6 +28,10 @@ dnim-win-[x86|x64|arm64] query products -?|-h|--help
 
 ## Description
 
+The command provides a summary of .NET products, including the latest versions, support phase and expected end-of-life date.
+
+> [!IMPORTANT]
+> The information provided by this command depends on the published releases JSON data.
 
 ## Options
 
@@ -51,28 +55,35 @@ dnim-win-[x86|x64|arm64] query products -?|-h|--help
 
 ## Results
 
-> [!IMPORTANT]
-> The information provided by this command depends on the published releases JSON data.
+The example below lists all products whose support phase is not `eol`. The security update column indicates whether the latest release addressed security vulnerabilities. The [`query releases`](dnim-cli-query-releases.md) command can be used to obtain a list of vulnerabilities addressed by the latest release.
 
+| Version | Support | Release type | Latest release | Latest release date | Latest SDK | Latest runtime | End of support | Security update |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 11.0 | GoLive | STS | 11.0.0-rc.1 | 9/8/2026 | 11.0.100-rc.1.26425.128 | 11.0.0-rc.1.26425.128 | n/a | True |
+| 10.0 | Active | LTS | 10.0.12 | 9/8/2026 | 10.0.401 | 10.0.12 | 11/14/2028 | True |
+| 9.0 | Maintenance | STS | 9.0.20 | 9/8/2026 | 9.0.318 | 9.0.20 | 11/10/2026 | True |
+| 8.0 | Maintenance | LTS | 8.0.31 | 9/8/2026 | 8.0.425 | 8.0.31 | 11/10/2026 | True |
 
 ## Examples
 
-- Display release information for all products:
+- Display information for all .NET products.
 
   ```console
   dnim-win-[x86|x64|arm64] query products
   ```
 
-- Display release information for all products that are not end-of-life:
+- Display information for all products that are not end-of-life:
 
   ```console
   dnim-win-[x86|x64|arm64] query products --esp eol
   ```
 
-- Display release information for .NET 7.0 and 9.0
+- Only display information for the .NET 7.0 and 9.0 products.
 
   ```console
   dnim-win-[x86|x64|arm64] query products --pv 7.0 --pv 9.0
   ```
 
 ## See also
+
+The [`query-releases`](dnim-cli-query-releases.md) command.

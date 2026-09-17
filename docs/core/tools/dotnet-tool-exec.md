@@ -1,7 +1,8 @@
 ---
 title: dotnet tool exec command
 description: The dotnet tool exec command downloads and invokes a .NET tool in one step without permanent installation.
-ms.date: 09/06/2025
+ms.date: 09/15/2026
+ai-usage: ai-assisted
 ---
 # dotnet tool exec
 
@@ -18,7 +19,7 @@ dotnet tool exec <PACKAGE_NAME>[@<VERSION>]
     [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-http-cache] [--prerelease] [--source <SOURCE>]
+    [--no-http-cache] [--prerelease] [--source <SOURCE>] [-y|--yes]
     [-v|--verbosity <LEVEL>]
     [--] [<tool-arguments>...]
 
@@ -80,6 +81,10 @@ This command also exists in two other forms for easier use
 - **`--prerelease`**
 
   Allows prerelease packages to be selected when resolving the version to install.
+
+- **`-y|--yes`**
+
+  Accepts all confirmation prompts, including the prompt to download and run the tool package. Use this option only with packages and package sources that you trust. Available starting with .NET 11.
 
 - [!INCLUDE [source](includes/cli-tool-source.md)]
 

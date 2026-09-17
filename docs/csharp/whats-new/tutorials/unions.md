@@ -159,5 +159,5 @@ You built the readings layer of a smart-home telemetry monitor and, in the proce
 ## Related content
 
 - [Closed hierarchies tutorial](closed-hierarchies.md)
-- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
+- [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
 - [What's new in C# 15](../csharp-15.md)

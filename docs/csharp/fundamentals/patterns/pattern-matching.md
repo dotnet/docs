@@ -90,6 +90,6 @@ The Fundamentals articles linked in the table provide focused coverage of the ca
 
 - [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md)
 - [Type patterns](type-patterns.md)
-- [Discards](discards.md).
-- [Patterns reference](../../language-reference/operators/patterns.md).
-- [`switch` expression reference](../../language-reference/operators/switch-expression.md).
+- [Discards](discards.md)
+- [Patterns reference](../../language-reference/operators/patterns.md)
+- [`switch` expression reference](../../language-reference/operators/switch-expression.md)

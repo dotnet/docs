@@ -46,7 +46,7 @@ Use the `is` operator when you need one Boolean test. The following code evaluat
 
 The compiler tracks whether a local variable has been assigned before your code reads it. This tracking is called *definite assignment*. Inside the `if` block, the condition can be `true` only when the pattern assigned the matching object to `express`. The compiler therefore knows that `express` is definitely assigned there. Your code can safely use its `TrackingCode` property. You don't need a separate cast. If you only need the type test and don't need to declare a variable, use a [type pattern](type-patterns.md), such as `delivery is ExpressDelivery`.
 
-Use `is null` and `is not null` for null checks. These patterns don't call a user-defined `==` or `!=` operator:
+Use `is null` or `is not null` for null checks. These patterns don't call a user-defined `==` or `!=` operator.
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="NullPatterns":::
 

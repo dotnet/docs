@@ -244,7 +244,7 @@ Below is the example *coverage.cobertura.xml* file.
               </conditions>
             </line>
             <line number="15" hits="7" branch="False" />
-            <line number="16" hits="7" branch="True" condition-coverage="100% (2/2)">
+            <line number="16" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="27" type="jump" coverage="100%" />
               </conditions>
@@ -304,4 +304,5 @@ After running this command, an HTML file represents the generated report.
 
 ## Next Steps
 
-...
+> [!div class="nextstepaction"]
+> [Unit testing best practices](unit-testing-best-practices.md)

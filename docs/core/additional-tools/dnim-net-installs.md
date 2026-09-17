@@ -113,7 +113,7 @@ Incorrect classification of installations can result in removing or retaining th
 
 Once a product (for example, NET 10) is identified, additional information like its release (for example, 10.0.4) and support phase (for example, active) can be determined. This allows administrators to create flexible deployments.
 
-Installations are further classified according to their .NET component (ASP.NET Core, SDK, etc.), architecure and type of installation (bundle, MSI, or bin deployed).
+Installations are further classified according to their .NET component (ASP.NET Core, SDK, etc.), architecture, and type of installation (bundle, MSI, or bin deployed).
 
 There are some special cases worth mentioning.
 

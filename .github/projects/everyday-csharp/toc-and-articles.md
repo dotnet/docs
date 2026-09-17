@@ -4,6 +4,12 @@
 
 The following outline shows every article in the proposed Fundamentals section, its status (existing, needs revision, new, or pulled from another location), and key content notes.
 
+> **IA hypothesis for decision:** Read this inventory as two potential parts. **Part 1** follows the
+> standard and owns compact syntax and semantics. **Part 2** follows it with opinionated,
+> example-rich guidance about when to apply constructs and techniques. The current Functional and
+> OOP nodes are inventories, not approved final groupings; both are move candidates. See
+> [Decision 13](decisions.md#decision-13-two-part-fundamentals-ia-hypothesis).
+
 ### Program structure (§7)
 
 | # | Article | Status | Notes |
@@ -33,7 +39,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 13 | Tuples and deconstruction | 🟡 Revise | Merge existing articles; inferred names (C# 7.1), comparison (C# 7.3), `with` on tuples |
 | 14 | Generics | 📝 New | Consuming generic types/methods, type inference, basic constraints (`class`, `struct`, `new()`, base type), brief mention of `Enum`/`Delegate`/`unmanaged` constraints, co-/contra-variance (C# 4), collection expressions (C# 12), dictionary expressions (C# 14), spread `..` |
 | 15 | Type conversions, casting, and boxing | 📥 Pull | From programming guide: casting, conversions, boxing/unboxing, `is`/`as` |
-| 16 | Delegates, lambdas, and events | 📝 New | Introduction: `Func<>`, `Action<>`, lambda basics (C# 3), static lambdas (C# 9), discard parameters (C# 9), brief events intro (subscribe/unsubscribe). Deeper coverage in OOP and Functional techniques |
+| 16 | Delegates, lambdas, and events | 📝 New | Introduction: `Func<>`, `Action<>`, lambda basics (C# 3), static lambdas (C# 9), discard parameters (C# 9), brief events intro (subscribe/unsubscribe). Deeper construct coverage and technique guidance must be separated under Decision 13. |
 | 69 | Tutorial: Introduction to classes | ✅ Exists | |
 | 72 | Tutorial: Explore record types | 📥 Pull from Tutorials | |
 | 79 | Tutorial: Converting types | ✅ Exists | |
@@ -115,7 +121,11 @@ Sequenced before Statements (§13) per the standard. Articles live under `fundam
 > Trimming the `ternary conditional operator` mention in Selection statements to a cross-reference is
 > a **deferred later-cleanup item**, not part of this reorder batch.
 
-### Functional techniques (§12)
+### Functional techniques (Part 2 move candidate)
+
+The overview and tutorial are technique guidance candidates for Part 2. Lambda-expression, local-
+function, and iterator syntax articles are Part 1 candidates and shouldn't derive their canonical
+ownership from a programming paradigm.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
@@ -131,7 +141,11 @@ Sequenced before Statements (§13) per the standard. Articles live under `fundam
 |---|---|---|---|
 | 100 | Namespaces | 📝 New | **Canonical §14 article** (Decision 12b). Motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; `extern alias` mention; nested namespaces. The Program-structure "Namespaces and using directives" article (#4) is slimmed to a brief intro + link here. |
 
-### Object-oriented programming (§15)
+### Object-oriented programming (split candidate)
+
+Type and member syntax belongs in the standard-aligned Part 1 inventory. The OOP overview,
+callbacks, interfaces-versus-abstract-classes guidance, encapsulation/composition, and tutorials are
+Part 2 or Tutorials candidates. Bill must approve the boundary before Phase G implementation.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
@@ -464,7 +478,9 @@ The following is the complete proposed TOC:
       # renders as the first child of the combined "Expressions and statements" node.
       href: fundamentals/expressions/equality.md
 
-  # ─── §12 Expressions / Functional techniques ───
+  # ─── Part 2 candidate: Functional techniques ───
+  # The overview/tutorial are guidance candidates. Lambdas, local functions, and iterators
+  # need canonical Part 1 syntax homes if the two-part hypothesis is approved.
   - name: Functional techniques
     items:
     - name: Overview
@@ -498,7 +514,9 @@ The following is the complete proposed TOC:
       # The program-structure namespaces article is slimmed to a brief intro + link here.
       href: fundamentals/namespaces/overview.md
 
-  # ─── §15 Classes / OOP ───
+  # ─── §15 type/member constructs + Part 2 OOP guidance candidates ───
+  # Split this inventory before implementation: construct syntax stays in Part 1;
+  # paradigm, design-choice, and scenario guidance moves to Part 2 or Tutorials.
   - name: Object-oriented programming
     items:
     - name: Overview

@@ -48,6 +48,8 @@ entirely.
 
 **Rationale:** The C# standard represents a carefully considered progression through the language. Following it provides a coherent learning path and makes it easy for readers familiar with the standard to find content. It also provides a principled answer to "where does this topic go?" for any future content.
 
+**Revisit status:** Preserve this ordering for canonical syntax and semantics. Decision 13 now asks whether opinionated technique guidance should form a distinct second part rather than interrupt the standard-aligned sequence.
+
 ### Decision 7: Delegates scope — `Func<>` and `Action<>` are fundamental
 
 **Choice:** Delegates are covered in Fundamentals when used as `Func<...>` and `Action<...>` types. Lambda expressions are the primary syntax shown. More advanced scenarios (declaring custom delegate types, multicast delegates, advanced event patterns) are deferred.
@@ -125,6 +127,10 @@ to a clause: Program structure → Type system → Null safety → Strings → *
 OOP → Async → Exceptions → Attributes → XML docs → Coding style. Pattern-matching articles move to a
 `fundamentals/patterns/` folder (their own §11 section) instead of `fundamentals/functional/`.
 
+This remains the recorded Option A working order. It isn't erased by the stronger two-part
+hypothesis in Decision 13. Functional techniques and OOP are now explicit move candidates, with the
+placement decision revisited before PR 22 and Phase G are approved.
+
 **§12 coverage map (for the authors of the two new articles).** §12 is the standard's largest clause
 and its subclauses are scattered across already-merged sections; the two new articles own only the
 gap. Use this map to avoid duplicating covered material and to wire cross-links to the existing homes.
@@ -166,3 +172,29 @@ the overlap and keeps Program structure focused on §7. Because the program-stru
 already published, the slim requires a redirect (if any URL changes) and a repo-wide inbound-link fix
 per the build-clean rule.
 
+### Decision 13: Two-part Fundamentals IA hypothesis
+
+**Status:** Decision required; working hypothesis, not approved.
+
+**Hypothesis:** Organize Fundamentals in two parts:
+
+1. A standard-ordered sequence of compact articles that define terms and explain syntax and
+   semantics for common constructs. Examples should establish conceptual types, purpose, result use,
+   and why each construct fits.
+2. A later set of standalone, actionable, example-rich guidance articles that explain when to apply
+   syntax, idioms, and programming techniques.
+
+**Implications:** `Functional techniques` and `Object-oriented programming` aren't C# standard
+clauses. Treat them as Part 2 move candidates. Their construct articles—lambda expressions, local
+functions, iterators, type and member declarations, inheritance mechanics, interfaces, events, and
+`using` syntax—remain candidates for canonical homes in Part 1. Technique articles should link to
+canonical construct articles without duplicating their syntax rules.
+
+**Evidence, not scope:** PR [#55966](https://github.com/dotnet/docs/pull/55966) is in review for the
+Pattern matching overview and basic patterns. Its neutral, construct-first treatment is useful input
+to this IA decision; it isn't merged, doesn't settle the permanent Functional/OOP taxonomy, and
+shouldn't expand to include future technique guidance.
+
+**Decision needed:** Bill should confirm the two-part model, the Part 2 label, and which mixed
+Functional/OOP articles split or move. Preserve the earlier checkpoint to revisit placement after
+Phase G content exists if Bill retains the current order.

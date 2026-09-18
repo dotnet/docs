@@ -432,7 +432,7 @@ To fix these errors, ensure your `#line` directives and file-related preprocesso
 - **CS9314**: *`#!` directives can be only used in scripts or file-based apps*
 - **CS9378**: *'#!' must be the first characters on the first line of the file*
 
-These errors indicate that you used the `#:` directives for a file-based app incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+These errors indicate that you used the `#:` or `#!` directives incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
 
 A shebang (`#!`) selects the executable for a script or file-based app. Place it at the first character of the first line, before any whitespace, comments, or blank lines (**CS9378**); see the [file-based app directive guidance](../preprocessor-directives.md#file-based-apps).
 

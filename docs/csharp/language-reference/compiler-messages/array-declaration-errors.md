@@ -228,7 +228,7 @@ For the supported targets and syntax, see [Collection expression arguments](../o
 - **CS9355**: The target type doesn't support collection expression arguments, as with arrays and span types. Remove the `with(...)` element, or change the target to a type that supports collection expression arguments.
 - **CS9356**: An argument in the `with(...)` element has the compile-time type `dynamic`. Cast or convert each dynamic argument to the intended non-dynamic type.
 - **CS9357**: A read-only interface target supports only an empty `with()` element. Remove the arguments, remove the `with()` element, or use a target type that accepts those arguments.
-- **CS9359**: No collection builder method overload accepts the supplied number of `with(...)` arguments. Match the arguments to the parameters before the final `ReadOnlySpan<T>` parameter of an accessible builder method, or add a matching overload.
+- **CS9359**: No accessible constructor, collection builder method, or supported interface signature accepts the supplied number of `with(...)` arguments. Match the arguments to an applicable constructor or interface signature; for a collection builder, match them to parameters before the final `ReadOnlySpan<T>` parameter, or add a matching overload.
 
 ## Invalid collection expression element type
 

@@ -1,0 +1,69 @@
+### YamlMime:FAQ
+metadata:
+  title: .NET Install Manager FAQ
+  description: "This article answers frequently asked questions about the .NET Install Manager."
+  titleSuffix: ""
+  ms.topic: faq
+  ms.date: 09/14/2026
+
+title: .NET Install Manager FAQ
+summary: |
+  The .NET Install Manager (*DNIM*) is a command-line tool used to identify, remove, and update .NET installations on Windows. It's primarily intended to assist organizations in removing vulnerable copies of .NET from devices to meet compliance targets.
+
+sections:
+  - name: General
+    questions:
+      - question: What is the difference between DNIM and the .NET Uninstall tool?
+        answer: |
+          - The uninstall is targeted to developers to assist with cleaning up old SDKs and runtimes.
+          - The uninstall tool supports other operating systems like macOS. DNIM is specifically designed for Windows.
+          - The uninstall tool doesn't support MSI detection or detailed analysis of Visual Studio.
+          - The uninstall tool doesn't support updating installations.
+          - DNIM provides strong diagnostic capabilities, including the ability to identify .NET processes and runtime versions.
+          - DNIM was designed to work with deployment tools like Intune inside large enterprise environments.
+
+      - question: Does DNIM require internet access?
+        answer: |
+          It depends. The [`layout`](dnim-cli-layout.md) command requires internet access to download release information and installer executables. Other commands like [`scan`](dnim-cli-scan.md) supports offline execution.
+
+      - question: .NET x.y is EOL. Why isn't Visual Studio listing it as out-of-support?
+        answer: |
+          - The out-of-support metadata is unsupported by Visual Studio. The metadata was first introduced in Visual Studio 15.9.27, 16.0.18, 16.4.13, 16.7.3 and 16.8 Preview 3.
+          - .NET was in support when Visual Studio, but no additional updates of Visual Studio were shipped and the metadata couldn't be updated.
+
+      - question: Does DNIM report the ASP.NET Core Module?
+        answer: |
+          No. The ANCM MSI is not currently being reported.
+
+      - question: Why is the SDK placeholder MSI being reported?
+        answer: |
+          MSIs shipping with Visual Studio are usually hidden from the Programs and Features list (ARP). When .NET Core 3.0 began shipping MSIs in Visual Studio, a placeholder MSI was added to create a visible entry in ARP and direct users to remove the SDK through Visual Studio. The MSI can become orphaned and users can be left with multiple entries alluding to SDKs installed by Visual Studio when infact they only of a few. This has created confusion for users trying to remove non-existing SDKs. DNIM is able to detect and remove these orphaned placeholders.
+
+  - name: Best Practices
+    questions:
+      - question: What is the recommended approach to remove end-of-life versions of .NET?
+        answer: |
+          - Start with a small pilot to gather information and understand the state of devices.
+          - To gather live data, you can push deploytments of the `uninstall` and `update` commands that include the `--what-if` option. To minimize risk, consider using Windows Sandbox to set up a controlled environment where you can install .NET and experiment with the CLI.
+          - If devices acquire .NET through Visual Studio, consider using [Visual Studio](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=visualstudio#remove-out-of-support-components) to remove old .NET components.
+          - Use Microsoft Update to patch .NET copies installed by the standalone bundles.
+          - Deploy DNIM to clean up any remaining installs using `--sp eol`. If a more agressive cleanup is required, consider including the `--remove-orphaned-installs` and `--remove-EOL-versions-from-VS` options.
+
+      - question: Can DNIM be used instead of Microsoft Update?
+        answer: |
+          It is recommended to continue using Microsoft Update. DNIM can be used to manage updates when Windows do not offer automatic updates for .NET, for example Windows insiders. 
+
+  - name: Troubleshooting
+    questions:
+      - question: Can DNIM be used with application monitoring and profiling tools like Datadog?
+        answer: |
+          No. DNIM is a trimmed .NET application and will fail to launch. You can exclude DNIM from profiling by setting an environment variable before launching it: `DD_PROFILER_EXCLUDE_PROCESSES="dnim-win-x64.exe"`.
+
+      - question: Why is DNIM unable to uninstall the version of .NET that my vulnerability scanning tool is reporting?
+        answer: |
+          - Use the `-b` option to check for bin-deployed installs.
+          - Check whether the uninstall command reported any dependents.
+
+      - question: Why did Visual Studio reinstall an out-of-support .NET component?
+        answer: |
+          - If you manually removed the installation and VS considers it to be in support, actions like repairing Visual Studio may result in reinstalling the setup package.

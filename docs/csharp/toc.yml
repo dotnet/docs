@@ -113,6 +113,16 @@ items:
       items:
       - name: Use string interpolation
         href: fundamentals/tutorials/string-interpolation.md
+  - name: Pattern matching
+    items:
+    - name: Overview
+      href: fundamentals/patterns/pattern-matching.md
+    - name: Declaration, constant, and var patterns
+      href: fundamentals/patterns/declaration-constant-var-patterns.md
+    - name: Type patterns
+      href: fundamentals/patterns/type-patterns.md
+    - name: Discards and the discard pattern
+      href: fundamentals/patterns/discards.md
   - name: Expressions and statements
     items:
     - name: Expressions overview
@@ -154,10 +164,6 @@ items:
     # - language features:
     #   - Lambdas
     #   - Positional records as DTOs
-    - name: Pattern matching
-      href: fundamentals/functional/pattern-matching.md
-    - name: Discards
-      href: fundamentals/functional/discards.md
     - name: Deconstructing tuples and other types
       href: fundamentals/functional/deconstruct.md
   - name: Exceptions and errors

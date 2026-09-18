@@ -104,5 +104,5 @@ Subscribing is optional. The `?.Invoke(...)` in the `Publish` method means the e
 
 - [Type system overview](index.md)
 - [Methods](../../methods.md)
-- [Pattern matching](../functional/pattern-matching.md)
+- [Pattern matching](../patterns/pattern-matching.md)
 - [Events (C# programming guide)](../../programming-guide/events/index.md)

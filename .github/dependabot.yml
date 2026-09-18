@@ -4,10 +4,11 @@ version: 2
 updates:
   - package-ecosystem: "github-actions" # Core GitHub Actions
     directory: "/"
+    groups:
+      github-actions:
+        patterns: ["*"]
     schedule:
       interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 10
     cooldown:
      default-days: 7
   - package-ecosystem: "nuget"

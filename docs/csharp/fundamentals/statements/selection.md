@@ -47,7 +47,7 @@ A `case` label isn't limited to constant values. It can test a *pattern*, which 
 
 :::code language="csharp" source="./snippets/selection-statements/Program.cs" id="SwitchWhen":::
 
-Pattern-based cases are evaluated top to bottom, so more specific patterns belong before more general ones. For the full catalog of patterns, see [pattern matching](../functional/pattern-matching.md).
+Pattern-based cases are evaluated top to bottom, so more specific patterns belong before more general ones. For the full catalog of patterns, see [pattern matching](../patterns/pattern-matching.md).
 
 ## Select a value with an expression
 
@@ -61,11 +61,11 @@ For its syntax, short-circuit behavior, and guidance on choosing it instead of `
 
 ### `switch` expression
 
-A `switch` expression is the expression counterpart to the `switch` statement. Instead of running code for the matching case, it evaluates to a value. It's more concise than assigning a value in each arm of a `switch` statement, and the compiler warns you when the arms don't cover every possible input. The `switch` expression is a core part of pattern matching. To learn when and how to use it, see [pattern matching](../functional/pattern-matching.md) and the [`switch` expression](../../language-reference/operators/switch-expression.md) reference.
+A `switch` expression is the expression counterpart to the `switch` statement. Instead of running code for the matching case, it evaluates to a value. It's more concise than assigning a value in each arm of a `switch` statement, and the compiler warns you when the arms don't cover every possible input. The `switch` expression is a core part of pattern matching. To learn when and how to use it, see [pattern matching](../patterns/pattern-matching.md) and the [`switch` expression](../../language-reference/operators/switch-expression.md) reference.
 
 ## See also
 
 - [Iteration statements](iteration.md)
-- [Pattern matching](../functional/pattern-matching.md)
+- [Pattern matching](../patterns/pattern-matching.md)
 - [Selection statements (language reference)](../../language-reference/statements/selection-statements.md)
 - [Conditional operator (language reference)](../../language-reference/operators/conditional-operator.md)

@@ -54,7 +54,7 @@ C:Program.cs
 
 ## Version introduced
 
-.NET 9 Preview 1
+.NET 9
 
 ## Type of breaking change
 

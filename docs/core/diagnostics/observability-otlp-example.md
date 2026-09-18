@@ -67,19 +67,16 @@ This code sets up OpenTelemetry with the different sources of telemetry:
 
 It then registers the OTLP exporter, using environment variables for its configuration.
 
-## 6. Configure OTLP environment variables
+## 6. Configure OTLP settings
 
-You can configure the OTLP exporter through APIs in code, but environment variables are the more common approach. Add the following to `appsettings.Development.json`:
+You can configure the OTLP exporter through APIs in code, environment variables, or application configuration. For this example, add the OTLP settings at the root of `appsettings.Development.json`, after the `Logging` section:
 
-``` json
-"OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
-"OTEL_SERVICE_NAME": "OTLP-Example"
-```
+:::code language="json" source="snippets/observability-otlp-example/csharp/appsettings.Development.json" highlight="8-9":::
 
-Add other environment variables for the [.NET OTLP exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel variables such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
+Add other settings for the [.NET OTLP exporter](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) or common OTel settings such as `OTEL_RESOURCE_ATTRIBUTES` to define [resource attributes](https://opentelemetry.io/docs/concepts/resources/).
 
 > [!NOTE]
-> A common mistake is mixing up `appsettings.json` and `appsettings.Development.json`. If the latter file exists, Visual Studio uses it when you press F5, and ignores any settings in `appsettings.json`.
+> ASP.NET Core loads both `appsettings.json` and `appsettings.Development.json`. Settings in `appsettings.Development.json` override duplicate settings in `appsettings.json` when you run the app in the Development environment.
 
 ## 7. Create an API endpoint
 

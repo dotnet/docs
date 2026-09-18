@@ -9,9 +9,9 @@ ai-usage: ai-assisted
 
 # Use OpenTelemetry with OTLP and the Aspire Dashboard
 
-This article shows you how to instrument a .NET web API with OpenTelemetry and send its logs, metrics, and traces to the Aspire Dashboard using OTLP. You add the OpenTelemetry packages, configure custom metrics and traces, and view the results in the dashboard.
+This article shows you how to instrument a .NET web API with OpenTelemetry and send its logs, metrics, and traces to the Aspire Dashboard by using OTLP. You add the OpenTelemetry packages, configure custom metrics and traces, and view the results in the dashboard.
 
-The Aspire Dashboard is a standard part of Aspire, but it's also available as a [standalone Docker container](https://aspire.dev/dashboard/standalone/) that provides an OTLP endpoint for sending telemetry. The dashboard visualizes logs, metrics, and traces. Using the dashboard this way has no dependency on Aspire, and it visualizes telemetry from any app that sends telemetry via OTLP. It works equally well for apps written in Java, GoLang, or Python, provided they can send their telemetry to an OTLP endpoint.
+The Aspire Dashboard is a standard part of Aspire, but it's also available as a [standalone Docker container](https://aspire.dev/dashboard/standalone/) that provides an OTLP endpoint for sending telemetry. The dashboard visualizes logs, metrics, and traces. Using the dashboard this way has no dependency on Aspire, and it visualizes telemetry from any app that sends telemetry by using OTLP. It works equally well for apps written in Java, Go, or Python, provided they can send their telemetry to an OTLP endpoint.
 
 The Aspire Dashboard requires less configuration and fewer setup steps than open-source solutions such as [Prometheus, Grafana, and Jaeger](./observability-prgrja-example.md). But unlike those tools, the Aspire Dashboard is a developer visualization tool, not a production monitoring tool.
 
@@ -103,11 +103,11 @@ docker run --rm -it `
 mcr.microsoft.com/dotnet/aspire-dashboard:latest
 ```
 
-Data displayed in the dashboard can be sensitive. By default, the dashboard requires an authentication token to log in. The container displays this token in its output.
+Data displayed in the dashboard can be sensitive. By default, the dashboard requires an authentication token to sign in. The container displays this token in its output.
 
 [![Aspire Dashboard](./media/aspire-dashboard-auth.png)](./media/aspire-dashboard-auth.png#lightbox)
 
-Copy the URL, replace `0.0.0.0` with `localhost`, for example, `http://localhost:18888/login?t=123456780abcdef123456780`, and open it in your browser. Or, paste the key after `/login?t=` in the login dialog. The token changes each time you start the container.
+Copy the URL, replace `0.0.0.0` with `localhost`, for example, `http://localhost:18888/login?t=123456780abcdef123456780`, and open it in your browser. Or, paste the key after `/login?t=` in the sign-in dialog. The token changes each time you start the container.
 
 ## 9. Run the project
 
@@ -128,7 +128,7 @@ Each time you request the page, the count of greetings increases.
 
 ### 9.1 Log output
 
-The code logs statements using `ILogger`. By default, .NET enables the [Console Provider](../extensions/logging/overview.md?tabs=command-line#configure-logging), which directs output to the console.
+The code logs statements by using `ILogger`. By default, .NET enables the [Console Provider](../extensions/logging/overview.md?tabs=command-line#configure-logging), which directs output to the console.
 
 You can egress logs from .NET in a few ways:
 
@@ -142,7 +142,7 @@ The dashboard shows logs as structured logs. Any properties you set in the log m
 
 ### 9.2 Metrics view
 
-The Aspire dashboard shows metrics on a per resource basis. A resource is the OTel term for a source of telemetry, such as a process. When you select a resource, the dashboard lists each metric that the resource sent to its OTLP endpoint. The list of metrics is dynamic, and it updates as the dashboard receives new metrics.
+The Aspire dashboard shows metrics on a per-resource basis. A resource is the OTel term for a source of telemetry, such as a process. When you select a resource, the dashboard lists each metric that the resource sent to its OTLP endpoint. The list of metrics is dynamic, and it updates as the dashboard receives new metrics.
 
 [![Metrics in standalone dashboard](./media/aspire-dashboard-metrics-thumb.png)](./media/aspire-dashboard-metrics.png#lightbox)
 
@@ -154,7 +154,7 @@ The metrics view depends on the type of metric you use:
 
 ### 9.3 Tracing view
 
-The tracing view lists traces. Each trace is a set of activities that share the same trace ID. Spans track work, and each span represents a unit of work. Processing an ASP.NET request creates a span. Making an HttpClient request is a span. Tracking each span's parent builds a hierarchy of spans that you can visualize. Collecting spans from each resource (process) lets you track work across a series of services. HTTP requests include a header that passes the trace ID and parent span ID to the next service. Each resource must collect telemetry and send it to the same collector, which then aggregates and presents a hierarchy of the spans.
+The tracing view lists traces. Each trace is a set of activities that share the same trace ID. Spans track work, and each span represents a unit of work. Processing an ASP.NET request creates a span. Making an HttpClient request is a span. By tracking each span's parent, you build a hierarchy of spans that you can visualize. When you collect spans from each resource (process), you can track work across a series of services. HTTP requests include a header that passes the trace ID and parent span ID to the next service. Each resource must collect telemetry and send it to the same collector, which then aggregates and presents a hierarchy of the spans.
 
 [![Traces in standalone dashboard](./media/aspire-dashboard-traces-thumb.png)](./media/aspire-dashboard-traces.png#lightbox)
 

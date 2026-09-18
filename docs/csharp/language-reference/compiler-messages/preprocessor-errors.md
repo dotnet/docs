@@ -37,6 +37,7 @@ f1_keywords:
   - "CS9298"
   - "CS9299"
   - "CS9314"
+  - "CS9378"
 helpviewer_keywords:
   - "CS1024"
   - "CS1025"
@@ -73,7 +74,8 @@ helpviewer_keywords:
   - "CS9298"
   - "CS9299"
   - "CS9314"
-ms.date: 10/07/2025
+  - "CS9378"
+ms.date: 09/17/2026
 ai-usage: ai-assisted
 ---
 # Preprocessor errors and warnings
@@ -115,6 +117,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - [**CS9298**](#incorrect-use-of-file-based-apps-directives): *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - [**CS9299**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after `#if` directive*
 - [**CS9314**](#incorrect-use-of-file-based-apps-directives): *`#!` directives can be only used in scripts or file-based apps*
+- [**CS9378**](#incorrect-use-of-file-based-apps-directives): *'#!' must be the first characters on the first line of the file*
 
 ## Invalid preprocessor directive syntax
 
@@ -427,8 +430,11 @@ To fix these errors, ensure your `#line` directives and file-related preprocesso
 - **CS9298**: *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - **CS9299**: *`#:` directives cannot be after `#if` directive*
 - **CS9314**: *`#!` directives can be only used in scripts or file-based apps*
+- **CS9378**: *'#!' must be the first characters on the first line of the file*
 
 These errors indicate that you used the `#:` directives for a file-based app incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+
+A shebang (`#!`) selects the executable for a script or file-based app. Place it at the first character of the first line, before any whitespace, comments, or blank lines (**CS9378**); see the [file-based app directive guidance](../preprocessor-directives.md#file-based-apps).
 
 ## File contains script.cs directives
 

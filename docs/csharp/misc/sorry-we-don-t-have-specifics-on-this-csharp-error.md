@@ -190,18 +190,6 @@ f1_keywords:
   # C# 7.3 diagnostics
   - "CS8378"
   - "CS8381"
-  # Coming in C# 15
-  - "CS9343" # misc
-  - "CS9348"
-# Collection arguments:
-  - "CS9354"
-  - "CS9355"
-  - "CS9356"
-  - "CS9357"
-  - "CS9358"
-  - "CS9359"
-# Shebang
-  - "CS9378"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

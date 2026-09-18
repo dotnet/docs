@@ -97,7 +97,7 @@ helpviewer_keywords:
  - "CS9357"
  - "CS9358"
  - "CS9359"
-ms.date: 02/04/2026
+ms.date: 09/18/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in array and collection declarations and initialization expressions
@@ -141,12 +141,12 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9215**](#invalid-collection-initializer): *Collection expression type 'type' must have an instance or extension method 'Add' that can be called with a single argument.*
 - [**CS9222**](#invalid-collection-initializer): *Collection initializer results in an infinite chain of instantiations of collection 'type'.*
 - [**CS9332**](#invalid-collection-initializer): *Cannot use '..' spread operator in the filter expression of a catch clause.*
-- [**CS9354**](#invalid-collection-initializer): *'with(...)' element must be the first element*
-- [**CS9355**](#invalid-collection-initializer): *'with(...)' elements are not supported for type 'type'*
-- [**CS9356**](#invalid-collection-initializer): *'with(...)' element arguments cannot be dynamic*
-- [**CS9357**](#invalid-collection-initializer): *'with(...)' element for a read-only interface must be empty if present*
-- [**CS9358**](#invalid-collection-initializer): *Element type of this collection may not be a ref struct or a type parameter allowing ref structs*
-- [**CS9359**](#invalid-collection-initializer): *No overload for method 'method' takes 'number' 'with(...)' element arguments*
+- [**CS9354**](#invalid-collection-expression-arguments): *'with(...)' element must be the first element*
+- [**CS9355**](#invalid-collection-expression-arguments): *'with(...)' elements are not supported for type 'type'*
+- [**CS9356**](#invalid-collection-expression-arguments): *'with(...)' element arguments cannot be dynamic*
+- [**CS9357**](#invalid-collection-expression-arguments): *'with(...)' element for a read-only interface must be empty if present*
+- [**CS9358**](#invalid-collection-expression-element-type): *Element type of this collection may not be a ref struct or a type parameter allowing ref structs*
+- [**CS9359**](#invalid-collection-expression-arguments): *No overload for method 'method' takes number 'with(...)' element arguments*
 
 In addition, the following warnings are covered in this article:
 
@@ -189,12 +189,6 @@ To access array elements correctly, follow these indexing rules. For more inform
 - **CS9215**: *Collection expression type 'type' must have an instance or extension method 'Add' that can be called with a single argument.*
 - **CS9222**: *Collection initializer results in an infinite chain of instantiations of collection 'type'.*
 - **CS9332**: *Cannot use '..' spread operator in the filter expression of a catch clause.*
-- **CS9354**: *'with(...)' element must be the first element*
-- **CS9355**: *'with(...)' elements are not supported for type 'type'*
-- **CS9356**: *'with(...)' element arguments cannot be dynamic*
-- **CS9357**: *'with(...)' element for a read-only interface must be empty if present*
-- **CS9358**: *Element type of this collection may not be a ref struct or a type parameter allowing ref structs*
-- **CS9359**: *No overload for method 'method' takes 'number' 'with(...)' element arguments*
 
 The compiler might also generate the following warnings:
 
@@ -219,12 +213,28 @@ To create valid collection initializers, follow these rules. For more informatio
 - Implement enumeration patterns (like `GetEnumerator`) for spread operator support (**CS9212**).
 - Avoid circular dependencies in collection initialization (**CS9222**).
 - Don't use the spread operator in catch clause filter expressions (**CS9332**).
-- Place the `with(...)` element first in collection expressions (**CS9354**).
-- Use `with(...)` elements only with types that support collection expression arguments (**CS9355**).
-- Don't use dynamic arguments in `with(...)` elements (**CS9356**).
-- Use empty `with()` for read-only interface types (**CS9357**).
-- Don't use ref struct types as element types in collections that don't support them (**CS9358**).
-- Match the number of `with(...)` arguments to available constructor overloads (**CS9359**).
+
+## Invalid collection expression arguments
+
+- **CS9354**: *'with(...)' element must be the first element*
+- **CS9355**: *'with(...)' elements are not supported for type 'type'*
+- **CS9356**: *'with(...)' element arguments cannot be dynamic*
+- **CS9357**: *'with(...)' element for a read-only interface must be empty if present*
+- **CS9359**: *No overload for method 'method' takes number 'with(...)' element arguments*
+
+For the supported targets and syntax, see [Collection expression arguments](../operators/collection-expressions.md#collection-expression-arguments).
+
+- **CS9354**: The `with(...)` element follows another collection element, or the expression contains more than one `with(...)` element. Move the single `with(...)` element to the first position.
+- **CS9355**: The target type doesn't support collection expression arguments, as with arrays and span types. Remove the `with(...)` element, or change the target to a type that supports collection expression arguments.
+- **CS9356**: An argument in the `with(...)` element has the compile-time type `dynamic`. Cast or convert each dynamic argument to the intended non-dynamic type.
+- **CS9357**: A read-only interface target supports only an empty `with()` element. Remove the arguments, remove the `with()` element, or use a target type that accepts those arguments.
+- **CS9359**: No collection builder method overload accepts the supplied number of `with(...)` arguments. Match the arguments to the parameters before the final `ReadOnlySpan<T>` parameter of an accessible builder method, or add a matching overload.
+
+## Invalid collection expression element type
+
+- **CS9358**: *Element type of this collection may not be a ref struct or a type parameter allowing ref structs*
+
+The collection target doesn't support a `ref struct` element type or a type parameter that allows ref-like types. Use a non-ref-like element type; for generic code, use a type parameter that doesn't allow ref-like types.
 
 ## Invalid array rank
 

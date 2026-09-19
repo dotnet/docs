@@ -102,6 +102,19 @@ In general, code should:
   }
   ```
 
+  Starting in .NET 7, you can also use <xref:System.IO.Stream.ReadExactly%2A?displayProperty=nameWithType> or <xref:System.IO.Stream.ReadExactlyAsync%2A?displayProperty=nameWithType> to read the exact number of bytes requested into the buffer:
+
+  ```csharp
+  stream.ReadExactly(buffer);
+  ```
+
+- When reading textual data from a stream, such as reading decrypted text from a `CryptoStream`, consider using <xref:System.IO.StreamReader> to read to the end instead of manually reading into byte arrays:
+
+  ```csharp
+  using var reader = new StreamReader(cryptoStream);
+  string plainText = reader.ReadToEnd();
+  ```
+
 - Expect that a stream `Read` or `ReadAsync` call might not complete until at least a byte of data is available for consumption (or the stream reaches its end), regardless of how many bytes were requested. If an application depends on a zero-byte read completing immediately without waiting, it can check the buffer length itself and skip the call entirely:
 
   ```csharp

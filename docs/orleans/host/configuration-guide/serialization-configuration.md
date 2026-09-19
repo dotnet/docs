@@ -5,6 +5,7 @@ ms.date: 05/23/2025
 ms.topic: how-to
 uid: orleans-serialization-configuration
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Serialization configuration in Orleans
@@ -42,6 +43,23 @@ Consider the following example when interacting with the <xref:Orleans.Hosting.I
 siloBuilder.Services.AddSerializer(serializerBuilder =>
 {
     serializerBuilder.AddJsonSerializer(
+        isSupported: type => type.Namespace.StartsWith("Example.Namespace"));
+});
+```
+
+## Configure Orleans to use Google Protocol Buffers
+
+To configure Orleans to use Google Protocol Buffers (Protobuf) to serialize your types, reference the [Microsoft.Orleans.Serialization.Protobuf](https://nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf) NuGet package. Then, configure the serializer, specifying which types it will be responsible for. In the following example, we specify that the Protobuf serializer is responsible for all types in the `Example.Namespace` namespace.
+
+- Install the [Microsoft.Orleans.Serialization.Protobuf](https://nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf) NuGet package.
+- Configure the serializer using the <xref:Orleans.Serialization.SerializationHostingExtensions.AddProtobufSerializer%2A> method.
+
+Consider the following example when interacting with the <xref:Orleans.Hosting.ISiloBuilder>:
+
+```csharp
+siloBuilder.Services.AddSerializer(serializerBuilder =>
+{
+    serializerBuilder.AddProtobufSerializer(
         isSupported: type => type.Namespace.StartsWith("Example.Namespace"));
 });
 ```

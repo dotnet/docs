@@ -18,8 +18,8 @@ f1_keywords:
  - "CS1018" # ERR_ThisOrBaseExpected
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
  - "CS8091" # ERR_ExternHasConstructorInitializer
- - "CS8760" # ERR_ExternEventInitializer
  - "CS8358" # ERR_AttributeCtorInParameter
+ - "CS8760" # ERR_ExternEventInitializer
  - "CS8813" # ERR_ModuleInitializerMethodMustBeOrdinary
  - "CS8814" # ERR_ModuleInitializerMethodMustBeAccessibleOutsideTopLevelType
  - "CS8815" # ERR_ModuleInitializerMethodMustBeStaticParameterlessVoid
@@ -62,6 +62,7 @@ f1_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
+ - "CS9343"
 helpviewer_keywords:
  - "CS0132"
  - "CS0514"
@@ -122,7 +123,8 @@ helpviewer_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
-ms.date: 05/19/2026
+ - "CS9343"
+ms.date: 09/17/2026
 ---
 # Resolve errors and warnings for constructor declarations and module initializers
 
@@ -145,8 +147,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1018**](#constructor-calls-with-base-and-this): *Keyword 'this' or 'base' expected.*
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
-- [**CS8760**](#constructor-declaration): *'event': extern event cannot have initializer.*
 - [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' or 'ref readonly' parameters.*
+- [**CS8760**](#constructor-declaration): *'event': extern event cannot have initializer.*
 - [**CS8813**](#module-initializer-declarations): *A module initializer must be an ordinary member method*
 - [**CS8814**](#module-initializer-declarations): *Module initializer method 'method' must be accessible at the module level*
 - [**CS8815**](#module-initializer-declarations): *Module initializer method 'method' must be static, and non-virtual, must have no parameters, and must return 'void'*
@@ -180,6 +182,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9121**](#primary-constructor-declaration): *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 - [**CS9122**](#primary-constructor-declaration): *Unexpected parameter list.*
 - [**CS9136**](#primary-constructor-declaration): *Cannot use primary constructor parameter of type inside an instance member.*
+- [**CS9343**](#primary-constructor-declaration): *Cannot pass arguments to the base type without a parameter list on the type declaration.*
 
 In addition, the following warnings are covered in this article:
 
@@ -325,13 +328,15 @@ For more information, see <xref:System.Runtime.CompilerServices.ModuleInitialize
 - **CS8861**: *Unexpected argument list.*
 - **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9122**: *Unexpected parameter list.*
+- **CS9343**: *Cannot pass arguments to the base type without a parameter list on the type declaration.*
 
 When a type has a primary constructor, all other explicitly declared constructors must chain to it by using `: this(...)`.
 
 To fix these errors, try the following suggestions:
 
 - Add a `: this(...)` initializer that passes appropriate arguments to the primary constructor, because all explicitly declared constructors must chain to the primary constructor (**CS8862**).
-- Remove a parameter list from the base type reference when the base type doesn't have a primary constructor, because the syntax `class Derived : Base(args)` is only valid when `Base` has a primary constructor (**CS8861**).
+- Remove an argument list from an implemented interface or from the base-type list of a struct or interface. Only a class declaration with a parameter list can pass arguments to a base class in the base-type list (**CS8861**).
+- Add a parameter list to the derived type declaration before passing arguments to the base class, for example `class Derived(int value) : Base(value) { }` (**CS9343**). The base class must have a matching constructor, but it doesn't need a primary constructor.
 - Remove a primary constructor parameter list from an `interface` declaration, because interfaces can't have primary constructors (**CS9122**).
 
 ### Parameter usage in base constructor calls

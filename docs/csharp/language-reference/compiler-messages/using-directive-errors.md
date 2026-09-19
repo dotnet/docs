@@ -1,7 +1,8 @@
 ---
-title: "Resolve compiler errors and warnings related to using directives and using alias directives"
-description: "These errors and warnings indicate problems with using directives and using directive aliases. This information helps diagnose and fix those issues."
-ms.date: 02/13/2026
+title: "Resolve compiler errors and warnings related to using directives and namespace declarations"
+description: "These errors and warnings indicate problems with using directives, compilation-unit declarations, and namespace declarations. This information helps diagnose and fix those issues."
+ms.date: 09/17/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "CS0104"
   - "CS0105"
@@ -48,6 +49,7 @@ f1_keywords:
   - "CS9132"
   - "CS9133"
   - "CS9162"
+  - "CS9348"
 helpviewer_keywords:
   - "CS0104"
   - "CS0105"
@@ -94,8 +96,9 @@ helpviewer_keywords:
   - "CS9132"
   - "CS9133"
   - "CS9162"
+  - "CS9348"
 ---
-# Resolve warnings related to using and declaring namespaces
+# Resolve errors and warnings related to using directives and namespace declarations
 
 This article covers the following compiler errors:
 
@@ -103,7 +106,7 @@ This article covers the following compiler errors:
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0104**](#namespace-and-type-naming-conflicts): *Error: 'reference' is an ambiguous reference between 'identifier' and 'identifier'.*
-- [**CS0116**](#namespace-declarations): *Error: A namespace cannot directly contain members such as fields, methods or statements.*
+- [**CS0116**](#compilation-unit-and-namespace-declarations): *Error: A namespace cannot directly contain members such as fields, methods or statements.*
 - [**CS0138**](#using-static-directive): *Error: A using namespace directive can only be applied to namespaces; 'type' is a type not a namespace.*
 - [**CS0430**](#using-directive): *Error: The extern alias 'alias' was not specified in a /reference option.*
 - [**CS0431**](#alias-qualifier): *Error: Cannot use alias 'identifier' with `::` since the alias references a type. Use `.` instead*.
@@ -114,10 +117,10 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS0518**](#predefined-type-imports): *Error: Predefined type 'type' is not defined or imported.*
 - [**CS0576**](#using-alias-restrictions): *Error: Namespace 'namespace' contains a definition conflicting with alias 'identifier'.*
 - [**CS0687**](#alias-qualifier): *Error: The namespace alias qualifier `::` always resolves to a type or namespace so is illegal here. Consider using `.` instead.*
-- [**CS1022**](#namespace-declarations): *Error: Type or namespace definition, or end-of-file expected.*
+- [**CS1022**](#compilation-unit-and-namespace-declarations): *Error: Type or namespace definition, or end-of-file expected.*
 - [**CS1529**](#using-directive): *Error: A using clause must precede all other elements defined in the namespace except extern alias declarations.*
 - [**CS1537**](#using-alias-restrictions): *Error: The using alias 'alias' appeared previously in this namespace.*
-- [**CS1671**](#namespace-declarations): *Error: A namespace declaration cannot have modifiers or attributes.*
+- [**CS1671**](#compilation-unit-and-namespace-declarations): *Error: A namespace declaration cannot have modifiers or attributes.*
 - [**CS1679**](#using-directive): *Error: Invalid extern alias for '/reference'; 'identifier' is not a valid identifier.*
 - [**CS1680**](#using-directive): *Error: Invalid reference alias option: 'alias=' -- missing filename.*
 - [**CS1681**](#using-directive): *Error: You cannot redefine the global extern alias.*
@@ -126,7 +129,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS7000**](#alias-qualifier): *Error: Unexpected use of an aliased name.*
 - [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead.*
 - [**CS7015**](#using-directive): *Error: 'extern alias' is not valid in this context.*
-- [**CS7021**](#namespace-declarations): *Error: Cannot declare namespace in script code.*
+- [**CS7021**](#compilation-unit-and-namespace-declarations): *Error: Cannot declare namespace in script code.*
 - [**CS8083**](#alias-qualifier): *Error: An alias-qualified name is not an expression.*
 - [**CS8085**](#using-alias-restrictions): *Error: A 'using static' directive cannot be used to declare an alias.*
 - [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*
@@ -139,6 +142,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS9132**](#using-alias-restrictions): *Error: Using alias cannot be a nullable reference type.*
 - [**CS9133**](#using-static-directive): *Error: `static` modifier must precede `unsafe` modifier.*
 - [**CS9162**](#using-static-directive): *Type is not valid for 'using static'. Only a class, struct, interface, enum, delegate, or namespace can be used.*
+- [**CS9348**](#compilation-unit-and-namespace-declarations): *A compilation unit cannot directly contain members such as fields, methods or properties*
 
 And the following compiler warnings:
 
@@ -151,7 +155,7 @@ And the following compiler warnings:
 - [**CS8020**](#using-directive): *Info: Unused extern alias.*
 - [**CS8933**](#using-directive): *Info: The using directive appeared previously as global using.*
 
-These errors and warnings indicate problems with `using` directives, namespace declarations, or naming conflicts between types and namespaces. The following sections describe these errors and how to correct them.
+These errors and warnings indicate problems with `using` directives, declarations in compilation units and namespaces, or naming conflicts between types and namespaces. The following sections describe these errors and how to correct them.
 
 ## Using directive
 
@@ -266,18 +270,20 @@ Starting with C# 12, the following restrictions apply to using aliases:
 - Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**).
 - Use a non-nullable reference type when creating an alias to a reference type, because nullable reference types can't be aliased directly (**CS9132**).
 
-## Namespace declarations
+## Compilation unit and namespace declarations
 
-The following errors relate to namespace declaration rules:
+The following errors relate to declarations in compilation units and namespaces:
 
 - **CS0116**: *A namespace cannot directly contain members such as fields, methods or statements.*
 - **CS1022**: *Type or namespace definition, or end-of-file expected.*
 - **CS1671**: *A namespace declaration cannot have modifiers or attributes.*
 - **CS7021**: *Cannot declare namespace in script code.*
+- **CS9348**: *A compilation unit cannot directly contain members such as fields, methods or properties*
 
 See the [namespace keyword](../keywords/namespace.md) and [General Structure of a C# Program](../../fundamentals/program-structure/index.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
 - Ensure all methods, fields, and properties are declared inside a type (class, struct, record, or interface) rather than directly inside a namespace, because namespaces can only contain type declarations, nested namespaces, and `using` directives (**CS0116**).
+- Move fields, properties, events, indexers, operators, and member methods into a class, struct, record, or interface (**CS9348**). At compilation-unit scope, executable code can be a top-level statement, and a method-shaped declaration is a local function rather than a member method.
 - Check for mismatched braces in your source file, because an extra closing brace after a namespace or type definition produces an error when the compiler encounters unexpected content at the end of the file (**CS1022**).
 - Remove any access modifiers or attributes from namespace declarations, because namespaces don't support modifiers like `public` or `private`, and attributes can't be applied to them (**CS1671**).
 - Move namespace declarations out of C# script files (`.csx`) and into regular source files (`.cs`), because script code evaluates in a single execution context that doesn't support namespace declarations (**CS7021**).

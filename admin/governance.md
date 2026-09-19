@@ -35,7 +35,6 @@ If you change any branch protection rules, alert the @dotnet/docs team via email
 
 We have several other workflows installed to automate a variety of tasks:
 
-- **dependabot-bot**: This regenerates our dependabot config file periodically.
 - **no-response**: This action automatically closes PRs or issues where we've asked for clarification from the original poster (OP) and haven't heard any response. It will only happen when the `needs-more-info` label has been applied. Use that label with care.
 - **quest**: This action links and synchronizes GitHub issues with an internal Azure DevOps instance used for reporting and planning.
 - **version-sweep**: This action periodically checks for samples that use TFMs that are out of support. It helps us keep our samples up to date.

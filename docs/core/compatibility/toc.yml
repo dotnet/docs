@@ -338,6 +338,8 @@ items:
                 href: core-libraries/9.0/params-overloads.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: Drive's current directory path enumeration
+                href: core-libraries/9.0/drive-current-dir-paths.md
               - name: EnumConverter validates registered types to be enum
                 href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
@@ -494,8 +496,6 @@ items:
                 href: core-libraries/8.0/bool-backed-enum.md
               - name: Complex.ToString format changed to `<a; b>`
                 href: core-libraries/8.0/complex-format.md
-              - name: Drive's current directory path enumeration
-                href: core-libraries/8.0/drive-current-dir-paths.md
               - name: Enumerable.Sum throws new OverflowException for some inputs
                 href: core-libraries/8.0/enumerable-sum.md
               - name: FileStream writes when pipe is closed

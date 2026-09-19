@@ -2,12 +2,15 @@
 title: Tracing .NET applications with PerfCollect.
 description: A tutorial that walks you through collecting a trace with perfcollect in .NET.
 ms.topic: tutorial
-ms.date: 04/10/2025
+ms.date: 09/04/2026
 ---
 
 # Trace .NET applications with PerfCollect
 
 **This article applies to: ✔️** .NET Core 2.1 SDK and later versions
+
+> [!IMPORTANT]
+> For .NET 10+ Linux investigations, prefer [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md). PerfCollect is the earlier .NET Linux tracing workflow. Its .NET runtime event collection requires LTTng 2.12; on distributions with LTTng 2.13 or later, the LTTng portion must be disabled as described later in this article.
 
 When performance problems are encountered on Linux, collecting a trace with `perfcollect` can be used to gather detailed information about what was happening on the machine at the time of the performance problem.
 
@@ -65,7 +68,6 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > [!NOTE]
     > LTTng had a breaking change between versions 2.12 and 2.13. The .NET runtime currently supports version 2.12. If your Linux distribution has adopted 2.13 or later then we recommend disabling the LTTng portion of the perfcollect functionality. To do this add the option '-nolttng' to the perfcollect command-line and in step 3 do not set the DOTNET_EnableEventLog environment variable.
 
-1. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 1. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 
     ```bash

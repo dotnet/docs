@@ -1,9 +1,9 @@
 ---
-title: Diagnostics tools overview - .NET Core
-description: An overview of the tools and techniques available to diagnose .NET Core applications.
-ms.date: 10/20/2023
+title: Diagnostics tools overview - .NET
+description: An overview of the tools and techniques available to diagnose .NET applications.
+ms.date: 09/08/2026
 ms.topic: overview
-#Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
+#Customer intent: As a .NET developer, I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
 # Diagnostics in .NET
 
@@ -37,6 +37,8 @@ For most cases, whether adding logging to an existing project or creating a new 
 
 [Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to generate alerts when potential problems are detected. Metrics have very low performance overhead and many services configure them as always-on telemetry. Exceptions are often recorded as metrics, and can be summarized to reduce the cardinality of the data. For more information, see [Exception summarization](diagnostic-exception-summary.md).
 
+For a tutorial that instruments an application with the <xref:System.Diagnostics.Tracing.EventCounter> API, see [Measure performance using EventCounters](event-counter-perf.md).
+
 ### Distributed traces
 
 [Distributed Tracing](./distributed-tracing.md) is a specialized form of logging that helps you localize failures and performance issues within applications distributed across multiple machines or processes. This technique tracks requests through an application correlating together work done by different application components and separating it from other work the application may be doing for concurrent requests. It is possible to trace every request and sampling can be optionally employed to bound the performance overhead.
@@ -56,38 +58,15 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 
 ## Diagnostics tools
 
-.NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications.
+.NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications. To automate a custom diagnostic workflow, use the [diagnostics client library](diagnostics-client-library.md) and <xref:Microsoft.Diagnostics.NETCore.Client>.
 
-## .NET Core diagnostics tutorials
+## Diagnostics tutorials
 
-### Debug a memory leak
+### Performance tutorials
 
-[Tutorial: Debug a memory leak](debug-memory-leak.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak and the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.
+Use [Diagnose performance issues in .NET applications](performance-diagnostics.md) to choose the recommended workflow for a performance symptom. The guide links to the applicable detailed tutorials and hands-on exercises.
 
-### Debug high CPU usage
+### Crash and dump tutorials
 
-[Tutorial: Debug high CPU usage](debug-highcpu.md) walks you through investigating high CPU usage. It uses the [dotnet-counters](dotnet-counters.md) tool to confirm the high CPU usage. It then walks you through using [Trace for performance analysis utility (`dotnet-trace`)](dotnet-trace.md) or Linux `perf` to collect and view CPU usage profile.
-
-### Debug deadlock
-
-[Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
-
-### Debug ThreadPool Starvation
-
-[Tutorial: Debug threadPool starvation](debug-threadpool-starvation.md) shows you how to use the [dotnet-counters](dotnet-counters.md) and [dotnet-stack](dotnet-stack.md) tools to investigate ThreadPool starvation.
-
-### Debug a StackOverflow
-
-[Tutorial: Debug a StackOverflow](debug-stackoverflow.md) demonstrates how to debug a <xref:System.StackOverflowException> on Linux.
-
-### Debug Linux dumps
-
-[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
-
-### Measure performance using EventCounters
-
-[Tutorial: Measure performance using EventCounters in .NET](event-counter-perf.md) shows you how to use the <xref:System.Diagnostics.Tracing.EventCounter> API to measure performance in your .NET app.
-
-### Write your own diagnostic tool
-
-[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. For more information, see the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).
+- [Debug a StackOverflow](debug-stackoverflow.md) demonstrates how to debug a <xref:System.StackOverflowException> on Linux.
+- [Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.

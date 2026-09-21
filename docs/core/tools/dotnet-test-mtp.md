@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 09/12/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -77,6 +77,9 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
+> [!IMPORTANT]
+> When you run a project or solution with `--no-restore`, keep the restored global packages folder available. Test framework and platform package imports set the MSBuild properties that `dotnet test` uses to identify MTP test applications. The `--no-build` option also implies `--no-restore`. If the test environment contains built test applications but not the project restore state, use `--test-modules` instead. For more information, see [`No test projects were found`](../testing/microsoft-testing-platform-troubleshooting.md#dotnet-test-reports-no-test-projects-were-found).
+
 ## Options
 
 > [!NOTE]
@@ -99,7 +102,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`--test-modules <EXPRESSION>`**
 
-  Filters test modules using file globbing. Only tests belonging to those test modules run. Starting with .NET 11 Preview 6, prefix a pattern with `!` to exclude matching modules. Separate multiple patterns with semicolons; whitespace around each pattern is ignored.
+  Filters test modules using file globbing. Only tests belonging to those test modules run. Because this option doesn't evaluate projects, use it to run already-built test applications when project restore state isn't available. Starting with .NET 11 Preview 6, prefix a pattern with `!` to exclude matching modules. Separate multiple patterns with semicolons; whitespace around each pattern is ignored.
 
 - **`--root-directory <ROOT_PATH>`**
 

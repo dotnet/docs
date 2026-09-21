@@ -28,11 +28,12 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for F#, Fundamentals, IoT, Machine Learning,
+    # NuGet updates for F#, Fundamentals, Framework, IoT, Machine Learning,
     # Orleans, Standard, and Visual Basic snippets
   - package-ecosystem: "nuget"
     directories:
       - "docs/fsharp/**/snippets/**/*"
+      - "docs/framework/**/snippets/**/*"
       - "docs/fundamentals/**/snippets/**/*"
       - "docs/iot/**/snippets/**/*"
       - "docs/machine-learning/**/snippets/**/*"

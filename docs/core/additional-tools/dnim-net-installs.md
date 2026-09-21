@@ -88,7 +88,7 @@ Bundles are identified using their display names and file information stored in 
 
 DNIM performs an exhaustive search against the installer component data stored in the registery under `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components` to identify .NET MSIs.
 
-The installer service tracks each component registry ey contains the component ID while its values contain MSI product codes. Both the component ID and product code is stored as packed GUIDs. The example below is of the component associated with `dotnet.exe`.
+Each subkey represents a different component ID. The values under each key represent product codes. Both the component ID and product codes are stored as packed GUIDs. The example below is of the component associated with `dotnet.exe`.
 
 ```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\BBB993545ADD68342A9E16F83B5CA481

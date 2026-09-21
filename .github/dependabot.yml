@@ -10,10 +10,50 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 3
+    # NuGet updates for AI, Architecture, Azure, Core, Csharp, and DevOps snippets
   - package-ecosystem: "nuget"
     directories:
-      - "**/snippets/**/*"
-      - "**/snippets-v3/**/*"
+      - "docs/ai/**/snippets/**/*"
+      - "docs/architecture/**/snippets/**/*"
+      - "docs/azure/**/snippets/**/*"
+      - "docs/core/**/snippets/**/*"
+      - "docs/csharp/**/snippets/**/*"
+      - "docs/devops/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for F#, Fundamentals, Framework, IoT, Machine Learning,
+    # Orleans, Standard, and Visual Basic snippets
+  - package-ecosystem: "nuget"
+    directories:
+      - "docs/fsharp/**/snippets/**/*"
+      - "docs/framework/**/snippets/**/*"
+      - "docs/fundamentals/**/snippets/**/*"
+      - "docs/iot/**/snippets/**/*"
+      - "docs/machine-learning/**/snippets/**/*"
+      - "docs/orleans/**/snippets/**/*"
+      - "docs/orleans/**/snippets-v3/**/*"
+      - "docs/standard/**/snippets/**/*"
+      - "docs/visual-basic/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for samples/snippets
+  - package-ecosystem: "nuget"
+    directories:
+      - "samples/snippets/**/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

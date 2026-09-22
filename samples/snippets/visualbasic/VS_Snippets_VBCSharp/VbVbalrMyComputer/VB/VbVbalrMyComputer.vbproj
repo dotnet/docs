@@ -95,5 +95,5 @@
   <ItemGroup>
     <None Include="Resources\tada.wav" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,9 +1,10 @@
 ---
 title: "Resolve compiler errors and warnings related to using directives and namespace declarations"
 description: "These errors and warnings indicate problems with using directives, compilation-unit declarations, and namespace declarations. This information helps diagnose and fix those issues."
-ms.date: 09/17/2026
+ms.date: 09/22/2026
 ai-usage: ai-assisted
 f1_keywords:
+  - "CS0101"
   - "CS0104"
   - "CS0105"
   - "CS0116"
@@ -22,6 +23,7 @@ f1_keywords:
   - "CS0576"
   - "CS0687"
   - "CS1022"
+  - "CS1527"
   - "CS1529"
   - "CS1537"
   - "CS1671"
@@ -33,6 +35,7 @@ f1_keywords:
   - "CS7000"
   - "CS7007"
   - "CS7015"
+  - "CS7016"
   - "CS7021"
   - "CS8019"
   - "CS8020"
@@ -51,6 +54,7 @@ f1_keywords:
   - "CS9162"
   - "CS9348"
 helpviewer_keywords:
+  - "CS0101"
   - "CS0104"
   - "CS0105"
   - "CS0116"
@@ -69,6 +73,7 @@ helpviewer_keywords:
   - "CS0576"
   - "CS0687"
   - "CS1022"
+  - "CS1527"
   - "CS1529"
   - "CS1537"
   - "CS1671"
@@ -80,6 +85,7 @@ helpviewer_keywords:
   - "CS7000"
   - "CS7007"
   - "CS7015"
+  - "CS7016"
   - "CS7021"
   - "CS8019"
   - "CS8020"
@@ -105,6 +111,7 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
+- [**CS0101**](#namespace-and-type-naming-conflicts): *Error: The namespace 'namespace' already contains a definition for 'identifier'*
 - [**CS0104**](#namespace-and-type-naming-conflicts): *Error: 'reference' is an ambiguous reference between 'identifier' and 'identifier'.*
 - [**CS0116**](#compilation-unit-and-namespace-declarations): *Error: A namespace cannot directly contain members such as fields, methods or statements.*
 - [**CS0138**](#using-static-directive): *Error: A using namespace directive can only be applied to namespaces; 'type' is a type not a namespace.*
@@ -118,6 +125,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS0576**](#using-alias-restrictions): *Error: Namespace 'namespace' contains a definition conflicting with alias 'identifier'.*
 - [**CS0687**](#alias-qualifier): *Error: The namespace alias qualifier `::` always resolves to a type or namespace so is illegal here. Consider using `.` instead.*
 - [**CS1022**](#compilation-unit-and-namespace-declarations): *Error: Type or namespace definition, or end-of-file expected.*
+- [**CS1527**](#compilation-unit-and-namespace-declarations): *Error: Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected*
 - [**CS1529**](#using-directive): *Error: A using clause must precede all other elements defined in the namespace except extern alias declarations.*
 - [**CS1537**](#using-alias-restrictions): *Error: The using alias 'alias' appeared previously in this namespace.*
 - [**CS1671**](#compilation-unit-and-namespace-declarations): *Error: A namespace declaration cannot have modifiers or attributes.*
@@ -129,6 +137,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS7000**](#alias-qualifier): *Error: Unexpected use of an aliased name.*
 - [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead.*
 - [**CS7015**](#using-directive): *Error: 'extern alias' is not valid in this context.*
+- [**CS7016**](#using-alias-restrictions): *Error: Alias 'alias' conflicts with symbol-kind definition*
 - [**CS7021**](#compilation-unit-and-namespace-declarations): *Error: Cannot declare namespace in script code.*
 - [**CS8083**](#alias-qualifier): *Error: An alias-qualified name is not an expression.*
 - [**CS8085**](#using-alias-restrictions): *Error: A 'using static' directive cannot be used to declare an alias.*
@@ -253,6 +262,7 @@ The following errors relate to restrictions on using aliases:
 
 - **CS0576**: *Namespace 'namespace' contains a definition conflicting with alias 'identifier'.*
 - **CS1537**: *The using alias 'alias' appeared previously in this namespace.*
+- **CS7016**: *Alias 'alias' conflicts with symbol-kind definition*
 - **CS8085**: *A 'using static' directive cannot be used to declare an alias.*
 - **CS9130**: *Using alias cannot be a `ref` type.*
 - **CS9131**: *Only a using alias can be `unsafe`.*
@@ -262,6 +272,7 @@ See the [using alias](../keywords/using-directive.md#the-using-alias) language r
 
 - Choose a unique name for your alias that doesn't conflict with existing type or namespace names in scope, because the compiler can't distinguish between the alias and the existing definition (**CS0576**).
 - Use each alias name only once within a namespace, because duplicate alias declarations create ambiguity (**CS1537**).
+- In script or submission code, rename the using alias or the conflicting submission member so their names are unique (**CS7016**). The diagnostic identifies the member kind, such as `field` or `type`.
 - Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive - use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
 
 Starting with C# 12, the following restrictions apply to using aliases:
@@ -276,6 +287,7 @@ The following errors relate to declarations in compilation units and namespaces:
 
 - **CS0116**: *A namespace cannot directly contain members such as fields, methods or statements.*
 - **CS1022**: *Type or namespace definition, or end-of-file expected.*
+- **CS1527**: *Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected*
 - **CS1671**: *A namespace declaration cannot have modifiers or attributes.*
 - **CS7021**: *Cannot declare namespace in script code.*
 - **CS9348**: *A compilation unit cannot directly contain members such as fields, methods or properties*
@@ -283,8 +295,9 @@ The following errors relate to declarations in compilation units and namespaces:
 See the [namespace keyword](../keywords/namespace.md) and [General Structure of a C# Program](../../fundamentals/program-structure/index.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 
 - Ensure all methods, fields, and properties are declared inside a type (class, struct, record, or interface) rather than directly inside a namespace, because namespaces can only contain type declarations, nested namespaces, and `using` directives (**CS0116**).
-- Move fields, properties, events, indexers, operators, and member methods into a class, struct, record, or interface (**CS9348**). At compilation-unit scope, executable code can be a top-level statement, and a method-shaped declaration is a local function rather than a member method.
+- Move fields, properties, events, indexers, operators, and member methods into a class, struct, record, or interface (**CS9348**). At compilation-unit scope, executable code can be a top-level statement in the global namespace, and a method-shaped declaration is a local function rather than a member method.
 - Check for mismatched braces in your source file, because an extra closing brace after a namespace or type definition produces an error when the compiler encounters unexpected content at the end of the file (**CS1022**).
+- Change a namespace-level type's accessibility to `public` or `internal`, or omit the access modifier to use the default `internal` accessibility (**CS1527**). Types declared without an explicit namespace are members of the global namespace, so the same restriction applies.
 - Remove any access modifiers or attributes from namespace declarations, because namespaces don't support modifiers like `public` or `private`, and attributes can't be applied to them (**CS1671**).
 - Move namespace declarations out of C# script files (`.csx`) and into regular source files (`.cs`), because script code evaluates in a single execution context that doesn't support namespace declarations (**CS7021**).
 
@@ -292,6 +305,7 @@ See the [namespace keyword](../keywords/namespace.md) and [General Structure of 
 
 The following errors and warnings relate to naming conflicts between namespaces and types:
 
+- **CS0101**: *The namespace 'namespace' already contains a definition for 'identifier'*
 - **CS0104**: *'reference' is an ambiguous reference between 'identifier' and 'identifier'.*
 - **CS0434**: *The namespace NamespaceName1 in NamespaceName2 conflicts with the type TypeName1 in NamespaceName3.*
 - **CS0435**: *The namespace 'namespace' in 'assembly' conflicts with the imported type 'type' in 'assembly'. Using the namespace defined in 'assembly'.*
@@ -303,6 +317,7 @@ See the [using directive](../keywords/using-directive.md), [extern alias](../key
 
 - Use a fully qualified name or a [namespace alias](../operators/namespace-alias-qualifier.md) when your code references a name that exists in multiple imported namespaces.
 - The compiler can't determine which type you intend to use when the same name appears in two or more namespaces imported by `using` directives (**CS0104**).
+- Rename or remove a duplicate namespace member (**CS0101**). A namespace and a type also can't have the same fully qualified name, so rename either declaration when a type name conflicts with a nested namespace name.
 - Rename either the type or the namespace when an imported type and an imported nested namespace share the same fully qualified name. The compiler can't distinguish between them when the name is referenced (**CS0434**, **CS0438**).
 
 To resolve the naming conflict warnings, rename one of the conflicting declarations, use a different namespace, remove the unnecessary assembly reference, or use an [extern alias](../keywords/extern-alias.md) to disambiguate between the two definitions. The compiler resolves these conflicts automatically - using the locally defined namespace over the imported type (**CS0435**), the locally defined type over the imported type (**CS0436**), or the locally defined type over the imported namespace (**CS0437**) - but the warnings indicate a potential source of confusion that you should address.

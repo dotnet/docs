@@ -81,7 +81,7 @@ foreach (var element in single)
 
 The spread element evaluates each element of the enumerations expression. Each element is included in the output collection.
 
-You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [§12.8.25 Collection expressions](~/_csharpstandard/standard/expressions.md#collection-expressions-collection-expressions) clause of the C# standard.
+You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [§12.8.25 Collection expressions](~/_csharpstandard/standard/expressions.md#12825-collection-expressions) clause of the C# standard.
 
 ## `ref readonly` parameters
 

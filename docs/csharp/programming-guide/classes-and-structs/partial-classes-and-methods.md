@@ -147,7 +147,7 @@ partial void OnNameChanged()
 
 ## C# Language Specification
 
-For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The standard defines [extending partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods), [partial properties](~/_csharpstandard/standard/classes.md#partial-properties-partial-properties), and [partial indexers](~/_csharpstandard/standard/classes.md#partial-indexers-partial-indexers). The [partial events and constructors](~/_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md) feature specification defines later partial members.
+For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The standard defines [extending partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods), [partial properties](~/_csharpstandard/standard/classes.md#1577-partial-properties), and [partial indexers](~/_csharpstandard/standard/classes.md#1593-partial-indexers). The [partial events and constructors](~/_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md) feature specification defines later partial members.
 
 ## See also
 

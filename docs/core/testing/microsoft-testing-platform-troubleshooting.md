@@ -18,14 +18,14 @@ When `dotnet test` runs in MTP mode against a solution or project, it evaluates 
 An implicit restore makes the package imports available. However, in a multi-stage container build, `dotnet test` can report `No test projects were found` when both of the following conditions apply:
 
 - The test stage uses `--no-restore` or `--no-build`, which implies `--no-restore`.
-- The test stage doesn't contain the complete [global packages folder](/nuget/consume-packages/managing-the-global-packages-and-cache-folders) that the restore stage used.
+- The test stage doesn't contain the restore-generated project state in the `obj` folder, or the complete [global packages folder](/nuget/consume-packages/managing-the-global-packages-and-cache-folders) that the restore stage used.
 
 Without the package imports, `IsTestingPlatformApplication` can evaluate to an empty value, so `dotnet test` doesn't classify the project as an MTP test application. This issue isn't specific to MSTest.
 
 To resolve the issue, use one of the following approaches:
 
 - Restore the project in the test stage before you run `dotnet test`.
-- Copy or preserve the complete global packages folder from the restore stage. If you set `NUGET_PACKAGES` or `RestorePackagesPath`, preserve the folder at that configured location.
+- Copy or preserve the restore-generated `obj` folder and the complete global packages folder from the restore stage. The `obj` folder includes files such as `project.assets.json`, `*.nuget.g.props`, and `*.nuget.g.targets`. If you set `NUGET_PACKAGES` or `RestorePackagesPath`, preserve the global packages folder at that configured location.
 - If the test stage contains already-built test applications but not the project restore state, use [`dotnet test --test-modules <EXPRESSION>`](../tools/dotnet-test-mtp.md#options). This option selects built test modules without project evaluation.
 
 ## Exit codes

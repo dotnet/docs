@@ -78,7 +78,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 > [!IMPORTANT]
-> When you run a project or solution with `--no-restore`, keep the restored global packages folder available. Test framework and platform package imports set the MSBuild properties that `dotnet test` uses to identify MTP test applications. The `--no-build` option also implies `--no-restore`. If the test environment contains built test applications but not the project restore state, use `--test-modules` instead. For more information, see [`No test projects were found`](../testing/microsoft-testing-platform-troubleshooting.md#dotnet-test-reports-no-test-projects-were-found).
+> When you run a project or solution with `--no-restore`, keep both the restore-generated project state in the `obj` folder and the matching global packages folder available. Test framework and platform package imports set the MSBuild properties that `dotnet test` uses to identify MTP test applications. The `--no-build` option also implies `--no-restore`. If the test environment contains built test applications but not the project restore state, use `--test-modules` instead. For more information, see [`No test projects were found`](../testing/microsoft-testing-platform-troubleshooting.md#dotnet-test-reports-no-test-projects-were-found).
 
 ## Options
 

@@ -28,13 +28,25 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for F#, Fundamentals, Framework, IoT, Machine Learning,
-    # Orleans, Standard, and Visual Basic snippets
+    # NuGet updates for F#, Fundamentals, and Framework snippets.
   - package-ecosystem: "nuget"
     directories:
       - "docs/fsharp/**/snippets/**/*"
       - "docs/framework/**/snippets/**/*"
       - "docs/fundamentals/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for IoT, Machine Learning, Orleans,
+    # Standard, and Visual Basic snippets.
+  - package-ecosystem: "nuget"
+    directories:
       - "docs/iot/**/snippets/**/*"
       - "docs/machine-learning/**/snippets/**/*"
       - "docs/orleans/**/snippets/**/*"

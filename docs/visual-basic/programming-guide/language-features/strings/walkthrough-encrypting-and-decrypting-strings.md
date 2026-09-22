@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Walkthrough: Encrypting and Decrypting Strings in Visual Basic"
 title: "Encrypting and Decrypting Strings"
-ms.date: 07/20/2015
+ms.date: 09/22/2026
+ai-usage: ai-assisted
 helpviewer_keywords: 
   - "encryption [Visual Basic], strings"
   - "strings [Visual Basic], encrypting"
@@ -30,15 +31,15 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.Tri
 
      [!code-vb[VbVbalrStrings#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#77)]  
 
-3. In the `Simple3Des` class, add a private field to store the 3DES cryptographic service provider.  
+3. In the `Simple3Des` class, add private fields to store the 3DES cryptographic service provider, the specified key, and the salt size and iteration count.  
 
      [!code-vb[VbVbalrStrings#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#39)]  
 
-4. Add a private method that creates a byte array of a specified length from the hash of the specified key.  
+4. Add a private method that creates a byte array from the specified key and a salt.  
 
      [!code-vb[VbVbalrStrings#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#41)]  
 
-5. Add a constructor to initialize the 3DES cryptographic algorithm.  
+5. Add a constructor that stores the specified key.  
 
      The `key` parameter controls the `EncryptData` and `DecryptData` methods.  
 

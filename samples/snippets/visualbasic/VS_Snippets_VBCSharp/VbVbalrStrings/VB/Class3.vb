@@ -67,30 +67,26 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
 
         ' <snippet39>
         Private TripleDes As TripleDES = TripleDES.Create()
+
+        Private Const SaltSize As Integer = 16
+        Private Const Iterations As Integer = 600000
+        Private ReadOnly Key As String
         ' </snippet39>
 
         ' <snippet40>
         Sub New(ByVal key As String)
-            ' Initialize the crypto provider.
-            TripleDes.Key = TruncateHash(key, TripleDes.KeySize \ 8)
-            TripleDes.IV = TruncateHash("", TripleDes.BlockSize \ 8)
+            ' Store the key. The encryption key and IV are created per message.
+            Me.Key = key
         End Sub
         ' </snippet40>
 
         ' <snippet41>
-        Private Function TruncateHash( 
-            ByVal key As String, 
-            ByVal length As Integer) As Byte()
+        Private Function DeriveKey(ByVal salt() As Byte) As Byte()
+            ' Derive a key from the specified key and the salt.
+            Using kdf As New Rfc2898DeriveBytes(
+                Key, salt, Iterations, HashAlgorithmName.SHA256)
 
-            Using sha256 As SHA256 = SHA256.Create()
-                ' Hash the key.
-                Dim keyBytes() As Byte = 
-                    System.Text.Encoding.Unicode.GetBytes(key)
-                Dim hash() As Byte = sha256.ComputeHash(keyBytes)
-
-                ' Truncate or pad the hash.
-                ReDim Preserve hash(length - 1)
-                Return hash
+                Return kdf.GetBytes(TripleDes.KeySize \ 8)
             End Using
         End Function
         ' </snippet41>
@@ -99,12 +95,25 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
         Public Function EncryptData( 
             ByVal plaintext As String) As String
 
+            ' Create a new salt and initialization vector for this message.
+            Dim salt(SaltSize - 1) As Byte
+            Using rng As RandomNumberGenerator = RandomNumberGenerator.Create()
+                rng.GetBytes(salt)
+            End Using
+
+            TripleDes.Key = DeriveKey(salt)
+            TripleDes.GenerateIV()
+
             ' Convert the plaintext string to a byte array.
             Dim plaintextBytes() As Byte = 
                 System.Text.Encoding.Unicode.GetBytes(plaintext)
 
             ' Create the stream.
             Dim ms As New System.IO.MemoryStream
+            ' Write the salt and initialization vector in front of the cipher text.
+            ms.Write(salt, 0, salt.Length)
+            ms.Write(TripleDes.IV, 0, TripleDes.IV.Length)
+
             ' Create the encoder to write to the stream.
             Dim encStream As New CryptoStream(ms, 
                 TripleDes.CreateEncryptor(), 
@@ -126,6 +135,21 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
             ' Convert the encrypted text string to a byte array.
             Dim encryptedBytes() As Byte = Convert.FromBase64String(encryptedtext)
 
+            ' Read the salt and initialization vector that precede the cipher text.
+            Dim ivSize As Integer = TripleDes.BlockSize \ 8
+            If encryptedBytes.Length < SaltSize + ivSize Then
+                Throw New CryptographicException(
+                    "The encrypted data is not in the expected format.")
+            End If
+
+            Dim salt(SaltSize - 1) As Byte
+            Dim iv(ivSize - 1) As Byte
+            Array.Copy(encryptedBytes, 0, salt, 0, SaltSize)
+            Array.Copy(encryptedBytes, SaltSize, iv, 0, ivSize)
+
+            TripleDes.Key = DeriveKey(salt)
+            TripleDes.IV = iv
+
             ' Create the stream.
             Dim ms As New System.IO.MemoryStream
             ' Create the decoder to write to the stream.
@@ -134,7 +158,8 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
                 System.Security.Cryptography.CryptoStreamMode.Write)
 
             ' Use the crypto stream to write the byte array to the stream.
-            decStream.Write(encryptedBytes, 0, encryptedBytes.Length)
+            decStream.Write(encryptedBytes, SaltSize + ivSize, 
+                encryptedBytes.Length - SaltSize - ivSize)
             decStream.FlushFinalBlock()
 
             ' Convert the plaintext stream to a string.

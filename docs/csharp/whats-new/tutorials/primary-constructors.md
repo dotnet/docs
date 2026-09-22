@@ -111,4 +111,4 @@ The highlighted line in this example shows that the `ToString` method uses the *
 ## Related content
 
 - [Parameterless constructors (C# programming guide)](../../programming-guide/classes-and-structs/instance-constructors.md#parameterless-constructors)
-- [Primary constructors (§15.11.6)](~/_csharpstandard/standard/classes.md#15116-primary-constructors)
+- [Primary constructors (§15.11.6)](~/_csharpstandard/standard/classes.md#prim-constructor-primary-constructors)

@@ -31,7 +31,7 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.Tri
 
      [!code-vb[VbVbalrStrings#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#77)]  
 
-3. In the `Simple3Des` class, add private fields to store the 3DES cryptographic service provider, the specified key, and the salt size and iteration count.  
+3. In the `Simple3Des` class, add private fields to store the 3DES cryptographic service provider, the specified key, and the format version, salt size, and iteration count.  
 
      [!code-vb[VbVbalrStrings#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class3.vb#39)]  
 

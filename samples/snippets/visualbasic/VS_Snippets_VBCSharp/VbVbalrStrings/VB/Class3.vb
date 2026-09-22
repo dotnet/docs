@@ -68,6 +68,7 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
         ' <snippet39>
         Private TripleDes As TripleDES = TripleDES.Create()
 
+        Private Const FormatVersion As Byte = 1
         Private Const SaltSize As Integer = 16
         Private Const Iterations As Integer = 600000
         Private ReadOnly Key As String
@@ -110,7 +111,9 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
 
             ' Create the stream.
             Dim ms As New System.IO.MemoryStream
-            ' Write the salt and initialization vector in front of the cipher text.
+            ' Write the format version, salt, and initialization vector in front of
+            ' the cipher text. The version identifies the salt length and iteration count.
+            ms.WriteByte(FormatVersion)
             ms.Write(salt, 0, salt.Length)
             ms.Write(TripleDes.IV, 0, TripleDes.IV.Length)
 
@@ -135,17 +138,21 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
             ' Convert the encrypted text string to a byte array.
             Dim encryptedBytes() As Byte = Convert.FromBase64String(encryptedtext)
 
-            ' Read the salt and initialization vector that precede the cipher text.
+            ' Read the header that precedes the cipher text. Only one format
+            ' version exists, so reject anything else.
             Dim ivSize As Integer = TripleDes.BlockSize \ 8
-            If encryptedBytes.Length < SaltSize + ivSize Then
+            Dim headerSize As Integer = 1 + SaltSize + ivSize
+            If encryptedBytes.Length < headerSize OrElse
+                encryptedBytes(0) <> FormatVersion Then
+
                 Throw New CryptographicException(
                     "The encrypted data is not in the expected format.")
             End If
 
             Dim salt(SaltSize - 1) As Byte
             Dim iv(ivSize - 1) As Byte
-            Array.Copy(encryptedBytes, 0, salt, 0, SaltSize)
-            Array.Copy(encryptedBytes, SaltSize, iv, 0, ivSize)
+            Array.Copy(encryptedBytes, 1, salt, 0, SaltSize)
+            Array.Copy(encryptedBytes, 1 + SaltSize, iv, 0, ivSize)
 
             TripleDes.Key = DeriveKey(salt)
             TripleDes.IV = iv
@@ -158,8 +165,8 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
                 System.Security.Cryptography.CryptoStreamMode.Write)
 
             ' Use the crypto stream to write the byte array to the stream.
-            decStream.Write(encryptedBytes, SaltSize + ivSize, 
-                encryptedBytes.Length - SaltSize - ivSize)
+            decStream.Write(encryptedBytes, headerSize, 
+                encryptedBytes.Length - headerSize)
             decStream.FlushFinalBlock()
 
             ' Convert the plaintext stream to a string.

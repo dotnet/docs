@@ -215,7 +215,7 @@ For errors related to explicit interface implementations of operators in static 
 - **CS0056**: *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'.*
 - **CS0057**: *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'.*
 
-All types used in a public operator's signature must be at least as accessible as the operator itself. For the full rules, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#755-accessibility-constraints) in the C# specification.
+All types used in a public operator's signature must be at least as accessible as the operator itself. For the full rules, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#745-accessibility-constraints) in the C# specification.
 
 - Change the return type to a type that's at least as accessible as the operator, or reduce the accessibility of the operator to match the return type (**CS0056**). A `public` operator can't expose a less-accessible type through its return value because callers outside the assembly wouldn't be able to use the result.
 - Change the parameter type to a type that's at least as accessible as the operator, or reduce the accessibility of the operator to match the parameter type (**CS0057**). A `public` operator can't require a less-accessible type as a parameter because callers outside the assembly wouldn't be able to provide the argument.

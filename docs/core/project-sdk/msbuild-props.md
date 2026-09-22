@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 03/27/2026
+ms.date: 09/21/2026
 ms.topic: reference
 ms.custom: updateeachrelease
 ai-usage: ai-assisted
@@ -1554,11 +1554,23 @@ The following MSBuild properties are documented in this section:
 
 ### IsTestingPlatformApplication
 
-When your project references the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, setting `IsTestingPlatformApplication` to `true` (which is also the default value if not specified) does the following:
+The `IsTestingPlatformApplication` property identifies a project as an MTP test application. When .NET 10 or a later SDK runs `dotnet test` in MTP mode against a solution or project, it evaluates this property to classify each project. Test framework and platform NuGet packages normally set the property through restored MSBuild imports.
+
+When your project imports the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, the package defaults `IsTestingPlatformApplication` to `true` if you haven't set it. A `true` value does the following:
 
 - Generates the entry point to the test project.
 - Generates the configuration file.
 - Detects the extensions.
+
+When `dotnet test` classifies evaluated projects in MTP mode, the property values produce the following results:
+
+| `IsTestingPlatformApplication` | [`IsTestProject`](#istestproject) | Classification |
+| --- | --- | --- |
+| `true` | Any value | MTP test application |
+| `false` or empty | `true` | VSTest test project |
+| `false` or empty | `false` or empty | Not a test project |
+
+If you skip restore and the restored package imports aren't available, `IsTestingPlatformApplication` can remain empty and project discovery can fail. For more information, see [`No test projects were found`](../testing/microsoft-testing-platform-troubleshooting.md#dotnet-test-reports-no-test-projects-were-found).
 
 Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 

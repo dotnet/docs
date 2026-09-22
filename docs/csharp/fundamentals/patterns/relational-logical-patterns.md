@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you. For complete language rules, see [relational patterns](../../language-reference/operators/patterns.md#relational-patterns) and [logical patterns](../../language-reference/operators/patterns.md#logical-patterns) in the language reference.
 
-A *relational pattern* compares an evaluated value with a constant by using `<`, `>`, `<=`, or `>=`. *Logical patterns* combine or negate patterns with the pattern operators `and`, `or`, and `not`. A *parenthesized pattern* uses parentheses to make the intended grouping explicit or to change the default grouping.
+A *relational pattern* compares its one pattern input with a compile-time constant by using `<`, `>`, `<=`, or `>=`. *Logical patterns* combine or negate patterns with the pattern operators `and`, `or`, and `not`. A *parenthesized pattern* uses parentheses to make the intended grouping explicit or to change the default grouping.
 
 ## Distinguish expressions from patterns
 
@@ -19,13 +19,13 @@ The same relational symbol can appear in an ordinary expression or in a pattern.
 
 :::code language="csharp" source="snippets/patterns/RelationalLogicalPatterns.cs" ID="ExpressionAndPattern":::
 
-`temperature < 0` is a *relational expression*. It has a left operand and a right operand, and produces a `bool`.
+`temperature < threshold` is a *relational expression*. It evaluates both operands and produces a `bool`. Either operand can be a nonconstant expression.
 
 In `temperature is < 0`, `temperature` is the pattern input expression. C# evaluates it, and the relational pattern `< 0` tests the resulting value. In the switch arm `< 0 => "Freezing"`, the expression before `switch` supplies the input, so the pattern contains only `< 0`.
 
-The example displays both Boolean results to show that the two tests classify the same temperature. The switch expression maps the value to a description.
+The expression can compare `temperature` with the variable `threshold`. The equivalent syntax `temperature is < threshold` is invalid because a relational-pattern operand must be a compile-time constant. If `threshold` were a constant, either form could work.
 
-Choose a relational expression for one direct comparison. Choose relational patterns when the comparison is part of a larger pattern or when several ranges map cleanly to switch results.
+When the right operand is constant, choose mainly for readability. A relational expression often fits one direct comparison. A relational pattern composes with other patterns and fits naturally when several ranges map to switch results.
 
 ## Describe ranges with `and`
 
@@ -35,7 +35,7 @@ The following pattern tests whether a temperature is in the inclusive range from
 
 The input expression is `temperature`. The logical pattern `>= 18 and <= 24` combines two relational patterns that both test the same evaluated value. The `and` pattern matches only when both nested patterns match.
 
-`and` is a pattern operator here, not the conditional-AND Boolean operator `&&`. Pattern matching describes what must match. Don't rely on nested patterns being tested left to right or short-circuiting like Boolean operands.
+`and` is a pattern operator here, not the conditional-AND Boolean operator `&&`. Pattern matching describes what must match.
 
 ## Describe alternatives with `or` and exclusions with `not`
 
@@ -49,7 +49,7 @@ The following methods test a day of the week and a simple status value:
 
 ## Group patterns with parentheses
 
-Pattern operators bind in this order:
+C# specifies how pattern operators bind:
 
 1. `not`
 1. `and`
@@ -59,7 +59,9 @@ The following test accepts priorities 1 through 3 or the special priority 9:
 
 :::code language="csharp" source="snippets/patterns/RelationalLogicalPatterns.cs" ID="ParenthesizedPattern":::
 
-The parentheses aren't required for the compiler because `and` binds before `or`, but they make the two alternatives visible: the range from 1 through 3, or 9. Use parentheses whenever a reader might hesitate over the grouping. Parentheses can also change the default grouping, such as `not (>= 1 and <= 3)`.
+The parentheses aren't required for the compiler because `and` binds before `or`, but they make the two alternatives visible: the range from 1 through 3, or 9. Show grouping explicitly whenever a pattern mixes `and` and `or`, or when `not` applies to a compound pattern. Parentheses can also change the default grouping, as in `not (>= 1 and <= 3)`.
+
+Binding determines how the compiler groups a pattern. It doesn't specify the order in which nested patterns are checked at run time. Pattern operators aren't short-circuit Boolean operators, so don't rely on left-to-right checking.
 
 ## Use a `when` guard for a separate condition
 
@@ -77,4 +79,5 @@ The relational pattern `> 35` describes the `temperature` input. The guard `when
 - [Property and positional patterns](property-positional-patterns.md)
 - [C# operators](../expressions/operators.md)
 - [Relational pattern reference](../../language-reference/operators/patterns.md#relational-patterns)
-- [Logical and parenthesized pattern reference](../../language-reference/operators/patterns.md#logical-patterns)
+- [Logical pattern reference](../../language-reference/operators/patterns.md#logical-patterns)
+- [Parenthesized pattern reference](../../language-reference/operators/patterns.md#parenthesized-pattern)

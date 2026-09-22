@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you. For complete supported-type and language rules, see [list patterns](../../language-reference/operators/patterns.md#list-patterns) in the language reference.
 
-A *list pattern* tests the shape of an array, list, or another supported sequence and applies nested patterns to selected elements. Shape includes the number and positions of elements. A *slice pattern*, written `..`, allows a list pattern to contain zero or more elements that aren't tested individually.
+A *list pattern* tests the shape of an array, list, or another supported sequence and can apply nested patterns to selected elements. Shape includes the number and positions of elements. Nested element patterns are optional: the empty list pattern `[]` is valid and matches an empty sequence. A *slice pattern*, written `..`, allows a list pattern to contain zero or more elements that aren't tested individually.
 
 List patterns don't make every <xref:System.Collections.Generic.IEnumerable%601> input matchable. The input's compile-time type must support the length or count and element access required by list-pattern rules. Arrays, `List<T>`, strings, and spans are common examples.
 

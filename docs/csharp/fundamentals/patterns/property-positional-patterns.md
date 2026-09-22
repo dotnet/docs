@@ -11,9 +11,9 @@ ai-usage: ai-assisted
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you. For complete language rules, see [property patterns](../../language-reference/operators/patterns.md#property-pattern) and [positional patterns](../../language-reference/operators/patterns.md#positional-pattern) in the language reference.
 
-Property and positional patterns test parts of a value. A *property pattern* names the properties or fields to test. A *positional pattern* tests values produced by deconstructing an object or tuple.
+Property and positional patterns test parts of a value and can apply nested patterns to those parts. A *property pattern* names the properties or fields to test. A *positional pattern* tests values produced by deconstructing an object or tuple.
 
-Both are *recursive patterns*: Each member or position has its own nested pattern. The input to the outer pattern is an expression. C# evaluates that expression, then applies each nested pattern to the corresponding part of the evaluated value.
+Both are *recursive patterns*. Each member or position written in the pattern supplies the input to a nested pattern. An outer type test is optional, and recursive pattern clauses can be empty. For example, the empty property pattern `{ }` tests only that the evaluated value isn't `null`. Property and positional patterns don't match `null`.
 
 ## Test named members with a property pattern
 
@@ -36,27 +36,25 @@ You can add a type test before the braces when the input expression can produce 
 
 Choose named properties over positions when readers would need to memorize what each position means.
 
-## Test a stable shape with a positional pattern
-
-A *positional pattern* deconstructs a value and applies nested patterns in order. A type can define that order with a `Deconstruct` method. Positional records provide deconstruction automatically.
+## Prefer named members for object shapes
 
 The following `GridPoint` record has an `X` coordinate followed by a `Y` coordinate. The method classifies a point by its position relative to the axes:
 
-:::code language="csharp" source="snippets/patterns/PropertyPositionalPatterns.cs" ID="PositionalPattern":::
+:::code language="csharp" source="snippets/patterns/PropertyPositionalPatterns.cs" ID="ObjectPropertyPattern":::
 
-The `point` expression is the pattern input. For `(0, 0)`, C# evaluates `point`, deconstructs the non-null value into its `X` and `Y` components, and applies a constant pattern to each component. The discard pattern `_` accepts a component that doesn't matter to that arm.
+The property names make each arm readable without requiring readers to remember a deconstruction order. Prefer property patterns for classes, structs, and records, even when the type provides a `Deconstruct` method.
 
-The positions must follow the type's deconstruction order. Choose a positional pattern when that order is a deliberate, stable part of the type's design, such as `(X, Y)`. Use a property pattern when names communicate the test better or when the deconstruction order is difficult to remember.
+## Match related inputs with a positional pattern
 
-## Match a tuple of related inputs
-
-A tuple combines multiple values into one value with a fixed positional shape. The following method uses a signal value and a Boolean value to choose one result:
+A *positional pattern* deconstructs its input and applies nested patterns by position. Positional patterns are most useful with tuples, which combine multiple values into one value with a fixed positional shape. The following method uses a signal value and a Boolean value to choose one result:
 
 :::code language="csharp" source="snippets/patterns/PropertyPositionalPatterns.cs" ID="TuplePattern":::
 
 The tuple expression `(signal, crossingIsClear)` is the input. Each switch arm applies a positional pattern to both tuple elements. This form keeps each combination next to its result.
 
 Choose a tuple pattern when several small, related inputs jointly determine one result. If the positions need extensive explanation or the data belongs together throughout the program, define a type with named properties instead.
+
+Positions always follow the tuple element order or the order defined by a type's `Deconstruct` method. Named positional subpatterns can document those positions, but the names don't change their order. Evaluation order for the subpatterns isn't specified.
 
 ## See also
 

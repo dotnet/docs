@@ -21,11 +21,13 @@ You can use a pattern in three contexts:
 - In a `case` label of a `switch` statement.
 - In an arm of a `switch` expression.
 
-Patterns are often clearer than a sequence of comparison statements because each branch describes the data it handles. For example, the following method uses a `switch` expression to choose a delivery message:
+Patterns test one evaluated input against types, constants, or a shape that can contain nested patterns. A Boolean condition can also compare two independently evaluated expressions whose values aren't constants. When either form can express the same test, choose the form that's easier to read.
+
+For example, the following method uses a `switch` expression to choose a delivery message:
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="SwitchExpressionOverview":::
 
-Recursive patterns have their own input expressions. In `StandardDelivery { Days: <= 2 }`, the outer pattern receives the `delivery` expression. The recursive `<= 2` pattern receives the `Days` property expression from the matched `StandardDelivery` object.
+Property patterns can include an outer type test and nested patterns, but neither is required in every property pattern. In `StandardDelivery { Days: <= 2 }`, the outer pattern receives the `delivery` expression and tests its type. The `Days` property expression then becomes the input to the nested relational pattern `<= 2`.
 
 The expression before `switch` is the input expression. Each line inside the braces is a *switch arm*. The pattern appears before `=>`, and the result appears after it. C# evaluates the input expression, then selects the first arm, in text order, whose pattern matches and whose optional `when` guard is `true`. The optional `when` guard is an additional Boolean condition written after the pattern. The preceding example showed the following patterns:
 

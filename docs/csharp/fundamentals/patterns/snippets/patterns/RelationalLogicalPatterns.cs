@@ -2,7 +2,7 @@ static class RelationalLogicalPatterns
 {
     public static void Run()
     {
-        ShowExpressionAndPattern(-4);
+        ShowExpressionAndPattern(-4, threshold: 0);
         Console.WriteLine(
             $"Comfortable temperature: {IsComfortableTemperature(21)}");
         Console.WriteLine($"Weekend: {IsWeekend(DayOfWeek.Saturday)}");
@@ -13,10 +13,10 @@ static class RelationalLogicalPatterns
     }
 
     // <ExpressionAndPattern>
-    static void ShowExpressionAndPattern(int temperature)
+    static void ShowExpressionAndPattern(int temperature, int threshold)
     {
-        bool freezeWarningFromExpression = temperature < 0;
-        bool freezeWarningFromPattern = temperature is < 0;
+        bool belowThreshold = temperature < threshold;
+        bool belowFreezing = temperature is < 0;
 
         string description = temperature switch
         {
@@ -26,8 +26,8 @@ static class RelationalLogicalPatterns
         };
 
         Console.WriteLine(
-            $"Expression: {freezeWarningFromExpression}; " +
-            $"pattern: {freezeWarningFromPattern}; {description}");
+            $"Below threshold: {belowThreshold}; " +
+            $"below freezing: {belowFreezing}; {description}");
     }
     // </ExpressionAndPattern>
 

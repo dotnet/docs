@@ -30,18 +30,18 @@ static class PropertyPositionalPatterns
         };
     // </NestedPropertyPattern>
 
-    // <PositionalPattern>
+    // <ObjectPropertyPattern>
     static string ClassifyPoint(GridPoint point) =>
         point switch
         {
-            (0, 0) => "Origin",
-            (0, _) => "On the vertical axis",
-            (_, 0) => "On the horizontal axis",
+            { X: 0, Y: 0 } => "Origin",
+            { X: 0 } => "On the vertical axis",
+            { Y: 0 } => "On the horizontal axis",
             _ => "Away from both axes"
         };
 
     readonly record struct GridPoint(int X, int Y);
-    // </PositionalPattern>
+    // </ObjectPropertyPattern>
 
     // <TuplePattern>
     static string GetCrossingInstruction(

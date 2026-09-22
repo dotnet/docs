@@ -10,6 +10,7 @@
     <RootNamespace>VbVbcnMyApplicationLogFiltering</RootNamespace>
     <AssemblyName>VbVbcnMyApplicationLogFiltering</AssemblyName>
     <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

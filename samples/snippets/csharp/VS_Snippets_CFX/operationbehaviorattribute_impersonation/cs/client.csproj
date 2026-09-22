@@ -8,6 +8,7 @@
     <AssemblyName>Client</AssemblyName>
     <RootNamespace>Microsoft.WCF.Documentation</RootNamespace>
     <StartupObject>Microsoft.WCF.Documentation.Client</StartupObject>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

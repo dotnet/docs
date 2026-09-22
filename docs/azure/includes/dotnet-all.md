@@ -478,7 +478,7 @@
 | Azure MCP Types Internal | NuGet [0.2.804](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.804) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Caching - PostgreSQL | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.2.2) |  |  |
-| Communication Calling Windows Client | NuGet [1.15.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.15.0)<br>NuGet [1.16.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.16.0-beta.1) |  |  |
+| Communication Calling Windows Client | NuGet [2.0.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/2.0.0) |  |  |
 | Content Safety Extension Embedded Image | NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.4) |  |  |
 | Content Safety Extension Embedded Text | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Cosmos DB AOT | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |

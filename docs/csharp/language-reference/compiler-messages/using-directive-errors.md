@@ -222,7 +222,7 @@ See the [global using directive](../keywords/using-directive.md#the-global-modif
 
 - Move `global using` directives outside of any namespace declaration to file scope, because global usings apply project-wide and can't be scoped to a namespace (**CS8914**).
 - Place all `global using` directives before any non-global `using` directives in the file, because the language requires global directives to precede local ones (**CS8915**).
-- Note that a `static global using` directive can't reference a [file-local](../keywords/file.md) type.
+- A `static global using` directive can't reference a [file-local](../keywords/file.md) type.
 
 ## File-scoped namespace
 
@@ -285,12 +285,12 @@ Starting with C# 12, the following restrictions apply to using aliases:
 
 The following errors relate to declarations in compilation units and namespaces:
 
-- **CS0116**: *A namespace cannot directly contain members such as fields, methods or statements.*
+- **CS0116**: *A namespace cannot directly contain members such as fields, methods, or statements.*
 - **CS1022**: *Type or namespace definition, or end-of-file expected.*
-- **CS1527**: *Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected*
+- **CS1527**: *Elements defined in a namespace cannot be explicitly declared as private, protected, protected internal, or private protected.*
 - **CS1671**: *A namespace declaration cannot have modifiers or attributes.*
 - **CS7021**: *Cannot declare namespace in script code.*
-- **CS9348**: *A compilation unit cannot directly contain members such as fields, methods or properties*
+- **CS9348**: *A compilation unit cannot directly contain members such as fields, methods, or properties.*
 
 See the [namespace keyword](../keywords/namespace.md) and [General Structure of a C# Program](../../fundamentals/program-structure/index.md) language reference for the rules that govern these diagnostics. Potential fixes include:
 

@@ -105,7 +105,7 @@ ai-usage: ai-assisted
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0022**](#invalid-array-element-access): *Wrong number of indices inside [], expected 'number'*
 - [**CS0178**](#invalid-array-rank): *Invalid rank specifier: expected '`,`' or '`]`'*
@@ -148,7 +148,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9358**](#invalid-collection-expression-element-type): *Element type of this collection may not be a ref struct or a type parameter allowing ref structs*
 - [**CS9359**](#invalid-collection-expression-arguments): *No overload for method 'method' takes number 'with(...)' element arguments*
 
-In addition, the following warnings are covered in this article:
+In addition, this article covers the following warnings:
 
 - [**CS1062**](#invalid-collection-initializer): *The best overloaded Add method for the collection initializer element is obsolete.*
 - [**CS1064**](#invalid-collection-initializer): *The best overloaded Add method for the collection initializer element is obsolete.*
@@ -228,13 +228,13 @@ For the supported targets and syntax, see [Collection expression arguments](../o
 - **CS9355**: The target type doesn't support collection expression arguments, as with arrays and span types. Remove the `with(...)` element, or change the target to a type that supports collection expression arguments.
 - **CS9356**: An argument in the `with(...)` element has the compile-time type `dynamic`. Cast or convert each dynamic argument to the intended non-dynamic type.
 - **CS9357**: A read-only interface target supports only an empty `with()` element. Remove the arguments, remove the `with()` element, or use a target type that accepts those arguments.
-- **CS9359**: No accessible constructor, collection builder method, or supported interface signature accepts the supplied number of `with(...)` arguments. Match the arguments to an applicable constructor or interface signature; for a collection builder, match them to parameters before the final `ReadOnlySpan<T>` parameter, or add a matching overload.
+- **CS9359**: No accessible constructor, collection builder method, or supported interface signature accepts the supplied number of `with(...)` arguments. Match the arguments to an applicable constructor or interface signature. For a collection builder, match them to parameters before the final `ReadOnlySpan<T>` parameter, or add a matching overload.
 
 ## Invalid collection expression element type
 
 - **CS9358**: *Element type of this collection may not be a ref struct or a type parameter allowing ref structs*
 
-The collection target doesn't support a `ref struct` element type or a type parameter that allows ref-like types. Use a non-ref-like element type; for generic code, use a type parameter that doesn't allow ref-like types.
+The collection target doesn't support a `ref struct` element type or a type parameter that allows ref-like types. Use a non-ref-like element type. For generic code, use a type parameter that doesn't allow ref-like types.
 
 ## Invalid array rank
 
@@ -286,7 +286,7 @@ The following example shows both mechanisms:
 To use arrays with correct element types, follow these type restrictions. For more information, see [Implicitly typed local variables](../statements/declarations.md#implicitly-typed-local-variables) and [best common type](~/_csharpstandard/standard/expressions.md#126317-finding-the-best-common-type-of-a-set-of-expressions).
 
 - Don't use restricted types like <xref:System.TypedReference?displayProperty=fullName> and <xref:System.ArgIterator?displayProperty=fullName> as array element types (**CS0611**).
-- Don't use `static` classes as array element types because instances can't be created (**CS0719**).
+- Don't use `static` classes as array element types because you can't create instances (**CS0719**).
 - Initialize implicitly typed arrays with a `new` expression (**CS0820**).
 - Ensure all elements in an implicitly typed array initializer have a best common type (**CS0826**).
 
@@ -303,7 +303,7 @@ To ensure a best common type, use any of these techniques:
 ## Invalid array initializer
 
 - **CS0623**: *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
-- **CS0846**: *A nested array initializer is expected*
+- **CS0846**: *A nested array initializer is expected.*
 - **CS1925**: *Cannot initialize object of type 'type' with a collection initializer.*
 
 These errors indicate invalid array initializer syntax. For more information, see [Arrays](../builtin-types/arrays.md).
@@ -362,7 +362,7 @@ To create collection expressions with collection builder attributes correctly, f
 - Avoid using collection expressions in expression trees (**CS9175**).
 - Use the correct language version for collection expressions and related features (**CS9196**, **CS9197**, **CS9198**, **CS9199**, **CS9202**).
 
-## Common language specification warnings
+## Common Language Specification warnings
 
 - **CS3007**: *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
 - **CS3016**: *Arrays as attribute arguments is not CLS-compliant*
@@ -372,6 +372,6 @@ To write CLS-compliant code with arrays, follow these guidelines. For more infor
 - Don't create overloaded methods that differ only in array element types (**CS3007**).
 - Don't use arrays as attribute arguments (**CS3016**).
 
-CS3007 occurs if you have an overloaded method that takes a jagged array and the only difference between the method signatures is the element type of the array. To avoid this error, consider using a rectangular array rather than a jagged array or, if CLS Compliance isn't needed, remove the <xref:System.CLSCompliantAttribute> attribute. For more information on CLS Compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
+CS3007 occurs if you have an overloaded method that takes a jagged array and the only difference between the method signatures is the element type of the array. To avoid this error, consider using a rectangular array rather than a jagged array or, if CLS compliance isn't needed, remove the <xref:System.CLSCompliantAttribute> attribute. For more information about CLS compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
 
-CS3016 indicates that not compliant with the Common Language Specification (CLS) to pass an array to an attribute. For more information on CLS compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
+CS3016 indicates that passing an array to an attribute isn't compliant with the Common Language Specification (CLS). For more information about CLS compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).

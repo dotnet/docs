@@ -131,7 +131,7 @@ ms.date: 09/17/2026
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0132**](#static-constructors): *'constructor': a static constructor must be parameterless.*
 - [**CS0514**](#static-constructors): *static constructor cannot have an explicit 'this' or 'base' constructor call.*
@@ -184,7 +184,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9136**](#primary-constructor-declaration): *Cannot use primary constructor parameter of type inside an instance member.*
 - [**CS9343**](#primary-constructor-declaration): *Cannot pass arguments to the base type without a parameter list on the type declaration.*
 
-In addition, the following warnings are covered in this article:
+In addition, this article covers the following warnings:
 
 - [**CS0824**](#constructor-declaration): *Constructor 'name' is marked external.*
 - [**CS9107**](#primary-constructor-declaration): *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.*

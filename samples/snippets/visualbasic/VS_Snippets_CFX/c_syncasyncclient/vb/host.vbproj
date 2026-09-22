@@ -15,6 +15,7 @@
     <OldToolsVersion>2.0</OldToolsVersion>
     <OptionStrict>On</OptionStrict>
     <OptionInfer>On</OptionInfer>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HostApplication.vb" />

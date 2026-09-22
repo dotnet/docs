@@ -34,9 +34,6 @@
     <Compile Include="Services.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\HostApplication.exe.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="HostApplication.exe.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

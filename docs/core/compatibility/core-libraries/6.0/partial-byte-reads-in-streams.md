@@ -102,7 +102,7 @@ In general, code should:
   }
   ```
 
-  Starting in .NET 7, you can also use <xref:System.IO.Stream.ReadExactly%2A?displayProperty=nameWithType> or <xref:System.IO.Stream.ReadExactlyAsync%2A?displayProperty=nameWithType> to read the exact number of bytes requested into the buffer:
+  Starting in .NET 7, you can also use <xref:System.IO.Stream.ReadExactly*?displayProperty=nameWithType> or <xref:System.IO.Stream.ReadExactlyAsync*?displayProperty=nameWithType> to read the exact number of bytes requested into the buffer:
 
   ```csharp
   stream.ReadExactly(buffer);

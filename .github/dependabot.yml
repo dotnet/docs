@@ -43,8 +43,7 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for IoT, Machine Learning, Orleans,
-    # Standard, and Visual Basic snippets.
+    # NuGet updates for IoT, Machine Learning, Standard, and Visual Basic snippets.
   - package-ecosystem: "nuget"
     directories:
       - "docs/iot/**/snippets/**/*"

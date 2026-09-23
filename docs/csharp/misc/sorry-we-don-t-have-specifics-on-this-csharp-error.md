@@ -173,7 +173,6 @@ f1_keywords:
   # C# 7.2 diagnostics
   - "CS8323"
   - "CS8328"
-  - "CS8353"
   - "CS8356"
   - "CS8357"
   - "CS8359"
@@ -181,7 +180,6 @@ f1_keywords:
   - "CS8362"
   # C# 7.3 diagnostics
   - "CS8378"
-  - "CS8381"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

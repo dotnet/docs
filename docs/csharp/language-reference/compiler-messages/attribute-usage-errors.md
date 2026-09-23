@@ -147,8 +147,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
-- [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use '<attribute-name>'. This is reserved for compiler usage.*
-- [**CS8336**](#compiler-reserved-attributes-and-types): *The type name '<typename>' is reserved to be used by the compiler.*
+- [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use 'attribute name'. This is reserved for compiler usage.*
+- [**CS8336**](#compiler-reserved-attributes-and-types): *The type name 'type' is reserved to be used by the compiler.*
 - [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 - [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
@@ -269,8 +269,8 @@ To correct these errors, follow these rules. For more information, see [Indexers
 
 The following errors occur when source code explicitly declares or applies names or attributes reserved for compiler-generated metadata:
 
-- **CS8335**: *Do not use '<attribute-name>'. This is reserved for compiler usage.*
-- **CS8336**: *The type name '<typename>' is reserved to be used by the compiler.*
+- **CS8335**: *Do not use 'attribute name'. This is reserved for compiler usage.*
+- **CS8336**: *The type name 'type' is reserved to be used by the compiler.*
 
 Remove the explicit declaration or attribute application. Use the corresponding C# language feature instead, and let the compiler generate the required metadata.
 

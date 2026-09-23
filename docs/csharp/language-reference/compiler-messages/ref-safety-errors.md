@@ -84,9 +84,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8168**](#returning-references-with-incompatible-scopes): *Cannot return local by reference because it is not a ref local*
 - [**CS8169**](#returning-references-with-incompatible-scopes): *Cannot return a member of local variable by reference because it is not a ref local*
 - [**CS8345**](#struct-member-and-field-restrictions): *Field or auto-implemented property cannot be of type unless it is an instance member of a `ref struct`.*
-- [**CS8348**](#escape-scope-violations-and-conditional-operators): *Cannot use a member of result of '\<member\>' in this context because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
+- [**CS8348**](#escape-scope-violations-and-conditional-operators): *Cannot use a member of result of 'member' in this context because it may expose variables referenced by parameter 'parameter name' outside of their declaration scope*
 - [**CS8349**](#escape-scope-violations-and-conditional-operators): *Expression cannot be used in this context because it may indirectly expose variables outside of their declaration scope*
-- [**CS8350**](#escape-scope-violations-and-conditional-operators): *This combination of arguments to '\<member\>' is disallowed because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
+- [**CS8350**](#escape-scope-violations-and-conditional-operators): *This combination of arguments to 'member' is disallowed because it may expose variables referenced by parameter 'parameter name' outside of their declaration scope*
 - [**CS8351**](#escape-scope-violations-and-conditional-operators): *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
 - [**CS8374**](#ref-assignments-with-incompatible-scopes): *Cannot ref-assign source has a narrower escape scope than destination.*
 - [**CS9075**](#returning-references-with-incompatible-scopes): *Cannot return a parameter by reference because it is scoped to the current method*
@@ -181,9 +181,9 @@ The compiler tracks how variables can escape their declaration scope through var
 
 Errors:
 
-- **CS8348**: *Cannot use a member of result of '\<member\>' in this context because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
+- **CS8348**: *Cannot use a member of result of 'member' in this context because it may expose variables referenced by parameter 'parameter name' outside of their declaration scope*
 - **CS8349**: *Expression cannot be used in this context because it may indirectly expose variables outside of their declaration scope*
-- **CS8350**: *This combination of arguments to '\<member\>' is disallowed because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
+- **CS8350**: *This combination of arguments to 'member' is disallowed because it may expose variables referenced by parameter 'parameter name' outside of their declaration scope*
 - **CS8351**: *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
 
 Warnings:

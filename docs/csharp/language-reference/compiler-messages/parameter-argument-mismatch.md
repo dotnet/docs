@@ -18,7 +18,10 @@ f1_keywords:
   - "CS1746"
   - "CS7036"
   - "CS7067"
+  - "CS8323"
   - "CS8324"
+  - "CS8362"
+  - "CS8378"
   - "CS8905"
   - "CS8943"
   - "CS8944"
@@ -47,7 +50,10 @@ helpviewer_keywords:
   - "CS1746"
   - "CS7036"
   - "CS7067"
+  - "CS8323"
   - "CS8324"
+  - "CS8362"
+  - "CS8378"
   - "CS8905"
   - "CS8943"
   - "CS8944"
@@ -59,7 +65,8 @@ helpviewer_keywords:
   - "CS8964"
   - "CS8965"
   - "CS8966"
-ms.date: 12/19/2023
+ms.date: 09/23/2026
+ai-usage: ai-assisted
 ---
 # Parameter and argument mismatch
 
@@ -84,7 +91,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1746**](#named-and-optional-parameters-and-arguments): *The delegate does not have a parameter named 'name'*
 - [**CS7036**](#missing-argument): *There is no argument given that corresponds to the required parameter*
 - [**CS7067**](#named-and-optional-parameters-and-arguments): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS8323**](#named-and-optional-parameters-and-arguments): *Named argument 'argument name' is used out-of-position but is followed by an unnamed argument*
 - [**CS8324**](#named-and-optional-parameters-and-arguments): *Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.*
+- [**CS8362**](#variable-argument-lists): *`__arglist` cannot have an argument of void type*
+- [**CS8378**](#variable-argument-lists): *`__arglist` cannot have an argument passed by 'in' or 'out'*
 - [**CS8905**](#named-and-optional-parameters-and-arguments): *A function pointer cannot be called with named arguments.*
 - [**CS8943**](#interpolated-string-handler): *null is not a valid parameter name. To get access to the receiver of an instance method, use the empty string as the parameter name.*
 - [**CS8944**](#interpolated-string-handler): *Method is not an instance method, the receiver cannot be an interpolated string handler argument.*
@@ -148,6 +158,7 @@ The compiler issues the following errors for incorrect use of named and optional
 - **CS1744**: *Named argument specifies a parameter for which a positional argument has already been given*
 - **CS1746**: *The delegate does not have a parameter named 'name'*
 - **CS7067**: *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- **CS8323**: *Named argument 'argument name' is used out-of-position but is followed by an unnamed argument*
 - **CS8324**: *Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.*
 - **CS8905**: *A function pointer cannot be called with named arguments.*
 
@@ -156,8 +167,17 @@ Check for the following causes of these errors:
 - The parameter name of the named argument is incorrect.
 - The chosen overload doesn't have a parameter matching the named argument.
 - A parameter name is repeated on more than one argument.
-- A positional (unnamed) argument appears after named arguments.
+- An out-of-position named argument is followed by a positional argument. In C# 7.2 and later, a named argument can precede positional arguments only when it's in the parameter's correct position. Otherwise, move all positional arguments before it or reorder the named argument to its matching parameter position (**CS8323**).
 - Named arguments aren't allowed for array index parameters.
+
+## Variable argument lists
+
+The compiler issues these errors for invalid arguments in an `__arglist` expression:
+
+- **CS8362**: *`__arglist` cannot have an argument of void type*
+- **CS8378**: *`__arglist` cannot have an argument passed by 'in' or 'out'*
+
+Pass only expressions that produce a value, either by value or with `ref`. Replace a `void`-returning invocation with an expression that has a value (**CS8362**). Remove `in` or `out`, or change the called API so the argument can be passed by value or by `ref` (**CS8378**).
 
 ## Interpolated string handler
 

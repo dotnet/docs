@@ -22,6 +22,7 @@ f1_keywords:
   - "CS8325"
   - "CS8326"
   - "CS8327"
+  - "CS8328"
   - "CS8329"
   - "CS8330"
   - "CS8331"
@@ -79,6 +80,7 @@ helpviewer_keywords:
   - "CS8325"
   - "CS8326"
   - "CS8327"
+  - "CS8328"
   - "CS8329"
   - "CS8330"
   - "CS8331"
@@ -116,11 +118,11 @@ helpviewer_keywords:
   - "CS9349"
   - "CS9350"
 ai-usage: ai-assisted
-ms.date: 09/14/2026
+ms.date: 09/23/2026
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
-The following errors can be generated when you're working with reference variables:
+The following errors and warnings can be generated when you're working with reference variables:
 
 <!-- The text in the bullet lists generate issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -145,6 +147,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8325**](#reference-variable-restrictions): *'`await`' cannot be used in an expression containing a `ref` conditional operator*
 - [**CS8326**](#reference-variable-restrictions): *Both conditional operator values must be ref values or neither may be a ref value*
 - [**CS8327**](#reference-variable-restrictions): *The expression must be of correct type to match the alternative ref value*
+- [**CS8328**](#incorrect-syntax): *The parameter modifier 'modifier' cannot be used with 'modifier'*
 - [**CS8329**](#writable-reference-variables-require-a-writable-referent): *Cannot use variable as a `ref` or `out` value because it is a readonly variable*
 - [**CS8330**](#writable-reference-variables-require-a-writable-referent): *Members of variable cannot be used as a `ref` or `out` value because it is a readonly variable*
 - [**CS8331**](#writable-reference-variables-require-a-writable-referent): *Cannot assign to variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
@@ -154,26 +157,20 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8373**](#incorrect-syntax): *The left-hand side of a `ref` assignment must be a ref variable.*
 - [**CS8388**](#incorrect-syntax): *An `out` variable cannot be declared as a ref local*
 - [**CS8977**](#reference-variable-restrictions): *Cannot use '`ref`', '`in`', or '`out`' in the signature of a method attributed with 'UnmanagedCallersOnly'.*
-- [**CS8986**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match target.*
-- [**CS8987**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match overridden or implemented member.*
+- [**CS8986**](#reference-variable-restrictions): *The 'scoped' modifier of parameter 'parameter' doesn't match target 'target'.*
+- [**CS8987**](#reference-variable-restrictions): *The 'scoped' modifier of parameter 'parameter' doesn't match overridden or implemented member.*
 - [**CS9061**](#incorrect-syntax): *The 'scoped' modifier cannot be used with discard.*
 - [**CS9062**](#incorrect-syntax): *Types and aliases cannot be named 'scoped'.*
 - [**CS9063**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to this parameter because it is unscoped by default.*
 - [**CS9065**](#incorrect-syntax): *Do not use 'System.Runtime.CompilerServices.ScopedRefAttribute'. Use the 'scoped' keyword instead.*
 - [**CS9066**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to parameters that have a 'scoped' modifier.*
 - [**CS9072**](#reference-variable-restrictions): *A deconstruction variable cannot be declared as a ref local*
+- [**CS9073**](#reference-variable-restrictions): *The 'scoped' modifier of parameter 'parameter' doesn't match target 'target'.*
+- [**CS9074**](#reference-variable-restrictions): *The 'scoped' modifier of parameter 'parameter' doesn't match overridden or implemented member.*
 - [**CS9101**](#unscoped-ref-restrictions): *UnscopedRefAttribute can only be applied to struct or virtual interface instance methods and properties, and cannot be applied to constructors or init-only members.*
 - [**CS9102**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to an interface implementation  because implemented member doesn't have this attribute.*
 - [**CS9104**](#reference-variable-restrictions): *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
 - [**CS9190**](#incorrect-syntax): *`readonly` modifier must be specified after `ref`.*
-- [**CS9199**](#reference-variable-restrictions): *A `ref readonly` parameter cannot have the Out attribute.*
-- [**CS9349**](#incorrect-syntax): *The 'scoped' modifier cannot come after an 'in', 'out', 'ref' or 'readonly' modifier.*
-- [**CS9350**](#incorrect-syntax): *The 'modifier' modifier cannot immediately follow the 'scoped' modifier.*
-
-The following warnings are generated when reference variables are used incorrectly:
-
-- [**CS9073**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match target.*
-- [**CS9074**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match overridden or implemented member.*
 - [**CS9191**](#reference-variables-require-a-referent): *The `ref` modifier for argument corresponding to `in` parameter is equivalent to `in`. Consider using `in` instead.*
 - [**CS9192**](#reference-variables-require-a-referent): *Argument should be passed with `ref` or `in` keyword.*
 - [**CS9193**](#reference-variables-require-a-referent): *Argument should be a variable because it is passed to a `ref readonly` parameter*
@@ -181,9 +178,12 @@ The following warnings are generated when reference variables are used incorrect
 - [**CS9196**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in overridden or implemented member.*
 - [**CS9197**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in hidden member.*
 - [**CS9198**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
+- [**CS9199**](#reference-variable-restrictions): *A `ref readonly` parameter cannot have the Out attribute.*
 - [**CS9200**](#reference-variable-restrictions): *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - [**CS9201**](#reference-variable-restrictions): *Ref field should be ref-assigned before use.*
 - [**CS9265**](#reference-variable-restrictions): *Field is never ref-assigned to, and will always have its default value (null reference)*
+- [**CS9349**](#incorrect-syntax): *The 'scoped' modifier cannot come after an 'in', 'out', 'ref' or 'readonly' modifier.*
+- [**CS9350**](#incorrect-syntax): *The 'modifier' modifier cannot immediately follow the 'scoped' modifier.*
 
 These errors and warnings follow these themes:
 
@@ -198,24 +198,32 @@ This article uses the term *reference variable* as a general term for a paramete
 
 These errors indicate that you're using incorrect syntax regarding reference variables:
 
+- **CS8328**: *The parameter modifier 'modifier' cannot be used with 'modifier'*
 - **CS8373**:  *The left-hand side of a `ref` assignment must be a ref variable.*
 - **CS8388**:  *An `out` variable cannot be declared as a ref local.*
+- **CS9061**: *The 'scoped' modifier cannot be used with discard.*
+- **CS9062**: *Types and aliases cannot be named 'scoped'.*
+- **CS9065**: *Do not use 'System.Runtime.CompilerServices.ScopedRefAttribute'. Use the 'scoped' keyword instead.*
 - **CS9190**:  *`readonly` modifier must be specified after `ref`.*
 - **CS9349**: *The 'scoped' modifier cannot come after an 'in', 'out', 'ref' or 'readonly' modifier.*
 - **CS9350**: *The 'modifier' modifier cannot immediately follow the 'scoped' modifier.*
 
 To correct these errors:
 
+- Remove or replace one of the incompatible parameter modifiers named in the diagnostic (**CS8328**). Use only one of `ref`, `in`, or `out`; don't combine `params` with a reference-passing modifier; and don't use `out` for an extension receiver. Valid compound forms include `ref readonly` and `scoped` followed by `ref`, `ref readonly`, `in`, or `out`.
 - Ensure the left operand of a `= ref` operator is a reference variable rather than a value expression or non-reference local. Ref assignment requires both sides to be reference variables that can create an alias to the same storage location (**CS8373**).
-- When declaring reference parameters, write the modifier as `ref readonly` rather than `readonly ref`. The C# language specification requires the `ref` keyword to precede the `readonly` modifier in parameter declarations to maintain consistent syntax across all reference parameter types (**CS9190**).
 - Use the `ref` keyword instead of `out` when declaring local reference variables. `out` is exclusively a parameter modifier that indicates a method must assign a value before returning, whereas `ref` is the appropriate keyword for creating local variables that alias other storage locations (**CS8388**).
+- Remove `scoped` from a discard declaration. A discard doesn't introduce a variable whose lifetime can be restricted (**CS9061**).
+- Rename any type or alias named `scoped`, or escape the identifier as `@scoped` when that name must be preserved (**CS9062**).
+- Replace an explicit `System.Runtime.CompilerServices.ScopedRefAttribute` on a parameter with the `scoped` modifier (**CS9065**).
+- When declaring reference parameters, write the modifier as `ref readonly` rather than `readonly ref`. The C# language specification requires the `ref` keyword to precede the `readonly` modifier in parameter declarations to maintain consistent syntax across all reference parameter types (**CS9190**).
 - When you combine `scoped` with a reference modifier, place it immediately before `ref`, `in`, or `out` (**CS9349**, **CS9350**). For a `ref readonly` parameter, use `scoped ref readonly`.
 - Remove any other modifier immediately after `scoped`, or move it to a valid position in the parameter declaration (**CS9350**).
 For more information about reference variables and their syntax requirements, see [reference variables](../statements/declarations.md#reference-variables) and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## Reference variable restrictions
 
-The following errors indicate that a reference variable can't be used where you have one:
+The following errors and warnings indicate that a reference variable can't be used where you have one:
 
 - **CS0631**:  *`ref` and `out` are not valid in this context*
 - **CS0767**:  *Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on `ref` and `out`*
@@ -231,20 +239,21 @@ The following errors indicate that a reference variable can't be used where you 
 - **CS8337**:  *The first parameter of a '`ref`' extension method must be a value type or a generic type constrained to struct.*
 - **CS8338**:  *The first '`in`' or '`ref readonly`' parameter of the extension method must be a concrete (non-generic) value type.*
 - **CS8977**:  *Cannot use '`ref`', '`in`', or '`out`' in the signature of a method attributed with 'UnmanagedCallersOnly'.*
+- **CS8986**: *The 'scoped' modifier of parameter 'parameter' doesn't match target 'target'.*
+- **CS8987**: *The 'scoped' modifier of parameter 'parameter' doesn't match overridden or implemented member.*
 - **CS9072**:  *A deconstruction variable cannot be declared as a ref local*
+- **CS9073**: *The 'scoped' modifier of parameter 'parameter' doesn't match target 'target'.*
+- **CS9074**: *The 'scoped' modifier of parameter 'parameter' doesn't match overridden or implemented member.*
 - **CS9104**:  *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
-- **CS9199**:  *A `ref readonly` parameter cannot have the Out attribute.*
-
-The following warnings indicate that a reference variable shouldn't be used, and might be unsafe:
-
 - **CS9196**:  *Reference kind modifier of parameter doesn't match the corresponding parameter in overridden or implemented member.*
 - **CS9197**:  *Reference kind modifier of parameter doesn't match the corresponding parameter in hidden member.*
 - **CS9198**:  *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
+- **CS9199**:  *A `ref readonly` parameter cannot have the Out attribute.*
 - **CS9200**:  *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - **CS9201**:  *Ref field should be ref-assigned before use.*
 - **CS9265**: *Field is never ref-assigned to, and will always have its default value (null reference)*
 
-To correct these errors:
+To correct these errors and warnings:
 
 - Remove reference parameters from [indexers](../../programming-guide/indexers/index.md). Indexers are designed to provide array-like access syntax and the compiler can't guarantee safe lifetime tracking for references passed through indexer accessors (**CS0631**, **CS1623**).
 - Remove reference parameters from [iterator methods](../../iterators.md). Iterators execute code lazily across multiple calls using state machines, and the compiler can't ensure referenced variables remain valid across yield return boundaries where execution is suspended and resumed (**CS1623**).
@@ -261,6 +270,7 @@ To correct these errors:
 - Don't pass Windows Runtime events as reference parameters. These events follow the Windows Runtime type system, which has different lifetime and threading semantics than .NET references and doesn't support the aliasing behavior required by C# reference parameters (**CS7084**).
 - Remove the <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=nameWithType> from `ref readonly` parameters. This attribute is designed for marshaling semantics in platform invoke scenarios where the parameter direction is outbound only, which conflicts with `ref readonly`'s guarantee that the parameter references existing data that won't be reassigned (**CS9199**).
 - Ensure all `ref` fields in a type are assigned either in field initializers or in all constructor code paths before the constructor completes. Uninitialized ref fields would contain invalid references that could lead to memory corruption if accessed (**CS9201**, **CS9265**).
+- Match the `scoped` characteristic of every parameter between a lambda or method and its target delegate (**CS8986**, **CS9073**), and between an override or implementation and the corresponding member (**CS8987**, **CS9074**). The mismatch is an error when both signatures use the current C# 11 ref-safety rules; otherwise, it's a compatibility warning.
 - Match the reference kind modifiers (`ref`, `in`, `out`, `ref readonly`) between a method and its overridden base method or implemented interface method. The reference modifier is part of the method signature contract that derived types must honor to maintain substitutability and caller expectations (**CS9196**, **CS9197**, **CS9198**).
 - Declare parameters as `in` rather than `ref readonly` when providing default values. `ref readonly` is designed for scenarios where the caller passes a reference to an existing variable, whereas `in` parameters can accept both references and temporary copies of values, making default values meaningful (**CS9200**).
 
@@ -270,11 +280,15 @@ For more information about where reference variables are allowed, see [Method pa
 
 The `unscoped` qualifier on `ref` parameters isn't allowed in some locations:
 
+- **CS9063**: *UnscopedRefAttribute cannot be applied to this parameter because it is unscoped by default.*
+- **CS9066**: *UnscopedRefAttribute cannot be applied to parameters that have a 'scoped' modifier.*
 - **CS9101**:  *UnscopedRefAttribute can only be applied to struct instance or virtual interface methods and properties, and cannot be applied to constructors or init-only members.*
 - **CS9102**:  *UnscopedRefAttribute cannot be applied to an interface implementation because implemented member doesn't have this attribute.*
 
 To correct these errors:
 
+- Remove <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayProperty=nameWithType> from a parameter that's already unscoped by default (**CS9063**).
+- Remove either the `scoped` modifier or <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayProperty=nameWithType> so the parameter has one consistent lifetime contract (**CS9066**).
 - Remove the `unscoped` modifier or the <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayProperty=nameWithType> attribute from struct constructors and init-only members. These members have special initialization semantics where the compiler must ensure that any references don't outlive the initialization phase, and allowing unscoped references would violate the guarantee that initialization completes before the struct becomes fully accessible (**CS9101**).
 - Remove the `unscoped` modifier from interface implementation methods when the corresponding interface method doesn't have it. The unscoped characteristic affects the method's contract regarding reference lifetime guarantees, and implementations must maintain the same contract as the interface they're implementing to ensure callers can rely on consistent lifetime behavior regardless of which implementation is invoked (**CS9102**).
 

@@ -9,6 +9,7 @@ f1_keywords:
   - "CS0644"
   - "CS1599"
   - "CS1958"
+  - "CS8189"
   - "CS8755"
   - "CS8756"
   - "CS8757"
@@ -33,6 +34,7 @@ helpviewer_keywords:
   - "CS0644"
   - "CS1599"
   - "CS1958"
+  - "CS8189"
   - "CS8755"
   - "CS8756"
   - "CS8757"
@@ -49,7 +51,7 @@ helpviewer_keywords:
   - "CS8811"
   - "CS8909"
   - "CS8911"
-ms.date: 04/27/2026
+ms.date: 09/23/2026
 ai-usage: ai-assisted
 ---
 
@@ -68,6 +70,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0644**](#delegate-type-restrictions): *'class' cannot derive from special class 'class'.*
 - [**CS1599**](#delegate-type-restrictions): *The return type of a method, delegate, or function pointer cannot be 'type'.*
 - [**CS1958**](#delegate-type-restrictions): *Object and collection initializer expressions may not be applied to a delegate creation expression.*
+- [**CS8189**](#delegate-signature-mismatches): *Ref mismatch between 'method' and delegate 'delegate'*
 - [**CS8755**](#function-pointer-signature-mismatches): *'modifier' cannot be used as a modifier on a function pointer parameter.*
 - [**CS8756**](#function-pointer-signature-mismatches): *Function pointer 'type' does not take 'count' arguments.*
 - [**CS8757**](#function-pointer-signature-mismatches): *No overload for 'method' matches function pointer 'type'.*
@@ -91,11 +94,13 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS0123**: *No overload for 'method' matches delegate 'delegate'.*
 - **CS0148**: *The delegate 'delegate' does not have a valid constructor.*
 - **CS0410**: *No overload for 'method' has the correct parameter and return types.*
+- **CS8189**: *Ref mismatch between 'method' and delegate 'delegate'*
 
 When you create or assign a delegate, the compiler verifies that the target method's signature matches the delegate type's declaration. The signature includes the parameter types, return type, and accessibility. For the full rules, see [Delegates](../../programming-guide/delegates/index.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#745-accessibility-constraints) in the C# specification.
 
 - Change all parameter types in the delegate declaration to types that are at least as accessible as the delegate itself (**CS0059**). A `public` delegate can't reference a less-accessible type in its parameter list because callers outside the assembly wouldn't be able to provide the argument. For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 - Adjust either the method signature or the delegate signature so the parameter types and return type match exactly (**CS0123**). The compiler requires an exact signature match when you assign a method to a delegate.
+- Align the return reference kind between the method and the target delegate when converting a method group (**CS8189**). Change the return declaration so both return by value, both return by `ref`, or both return by `ref readonly`.
 - Verify that the delegate was compiled by a conformant compiler (**CS0148**). This error occurs when you import a managed assembly built by a compiler that produced an ill-formed delegate constructor. Recompile the assembly with a standards-compliant compiler to resolve the error.
 
 > [!NOTE]

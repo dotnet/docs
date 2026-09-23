@@ -2,10 +2,10 @@
 title: Work with GitHub Copilot upgrade
 description: "Learn how to collaborate effectively with GitHub Copilot upgrade, including communication patterns, teaching preferences, mid-session corrections, and multi-session workflows."
 ms.topic: concept-article
-ms.date: 07/07/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to learn how to work effectively with the GitHub Copilot upgrade agent so that I can get the best results from my .NET upgrade.
+#customer intent: As a developer, I want to work effectively with GitHub Copilot upgrade so that I can guide, review, and resume project upgrades.
 
 ---
 
@@ -40,6 +40,8 @@ Natural language works. Try these examples:
 |---|---|
 | Upgrade a full solution | _"Upgrade my solution to .NET 10"_ |
 | Upgrade a specific technology | _"Help me upgrade from EF6 to EF Core"_ |
+| Upgrade project dependencies | _"Upgrade all dependencies in this TypeScript project"_ |
+| Upgrade a compiler | _"Upgrade this project to TypeScript 7"_ |
 | See what's available | _"What scenarios are available?"_ |
 | Upgrade one project first | _"Upgrade the API project first, then the shared library"_ |
 | Understand the current state | _"What's the current status of my upgrade?"_ |

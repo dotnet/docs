@@ -123,7 +123,8 @@ public class Program
         // Given a user Id {userId}, retrieves a User object corresponding
         // to the entry in the database with {userId} as its Id.
 
-        return await Task.FromResult(new User() { id = userId });
+        await Task.Delay(1); // Simulate asynchronous database retrieval
+        return new User() { id = userId };
     }
 
     private static async Task<IEnumerable<User>> GetUsersAsync(IEnumerable<int> userIds)

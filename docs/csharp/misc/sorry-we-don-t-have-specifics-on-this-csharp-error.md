@@ -173,8 +173,6 @@ f1_keywords:
   # C# 7.2 diagnostics
   - "CS8323"
   - "CS8328"
-  - "CS8335"
-  - "CS8336"
   - "CS8348"
   - "CS8349"
   - "CS8350"

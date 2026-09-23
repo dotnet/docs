@@ -38,6 +38,8 @@ f1_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8335"
+  - "CS8336"
   - "CS8423"
   - "CS8783"
   - "CS8959"
@@ -86,6 +88,8 @@ helpviewer_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8335"
+  - "CS8336"
   - "CS8423"
   - "CS8783"
   - "CS8959"
@@ -97,7 +101,7 @@ helpviewer_keywords:
   - "CS8970"
   - "CS9331"
   - "CS9351"
-ms.date: 09/11/2026
+ms.date: 09/23/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -143,6 +147,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use '<attribute-name>'. This is reserved for compiler usage.*
+- [**CS8336**](#compiler-reserved-attributes-and-types): *The type name '<typename>' is reserved to be used by the compiler.*
 - [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 - [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
@@ -258,6 +264,15 @@ To correct these errors, follow these rules. For more information, see [Indexers
 - You can't use the <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
 - Some attributes are reserved for the compiler and can't be applied manually in source code (**CS9331**). Replace the attribute with the equivalent C# language syntax that causes the compiler to generate it.
 - Don't apply both <xref:System.Runtime.InteropServices.StructLayoutAttribute> and `ExtendedLayoutAttribute` to the same type (**CS9351**). These two layout attributes represent mutually exclusive layout strategies under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview): explicit layout requires a `FieldOffset` on every instance field, while extended layout lets the runtime choose field offsets while still requiring each field to be marked `safe` or `unsafe`. Remove one of the two attributes from the type declaration.
+
+## Compiler-reserved attributes and types
+
+The following errors occur when source code explicitly declares or applies names or attributes reserved for compiler-generated metadata:
+
+- **CS8335**: *Do not use '<attribute-name>'. This is reserved for compiler usage.*
+- **CS8336**: *The type name '<typename>' is reserved to be used by the compiler.*
+
+Remove the explicit declaration or attribute application. Use the corresponding C# language feature instead, and let the compiler generate the required metadata.
 
 ## Conditional attribute usage
 

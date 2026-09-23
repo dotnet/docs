@@ -154,21 +154,11 @@ f1_keywords:
   - "CS8104"
   - "CS8105"
   - "CS8106"
-  - "CS8111"
-  - "CS8113"
   # C# 7.0 diagnostics
-  - "CS8190"
-  - "CS8191"
-  # C# 7.0 diagnostics
-  - "CS8202"
   - "CS8205"
   - "CS8206"
-  # C# 7.1 diagnostics
-  - "CS8308"
-  - "CS8309"
   # C# 7.2 diagnostics
   - "CS8356"
-  - "CS8357"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

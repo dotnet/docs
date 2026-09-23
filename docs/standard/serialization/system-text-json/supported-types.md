@@ -131,7 +131,7 @@ In .NET 11 and later versions, <xref:System.Text.Json.JsonSerializer.SerializeAs
 
 The method writes a single line feed (LF), `\n`, after every value, including the last. It always uses LF, regardless of <xref:System.Text.Json.JsonSerializerOptions.NewLine?displayProperty=nameWithType>. The method ignores <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType>, so each value remains on one line.
 
-##### Streaming deserialization
+##### Stream deserialization
 
 The `DeserializeAsyncEnumerable` method supports streaming deserialization, as shown in the following example:
 

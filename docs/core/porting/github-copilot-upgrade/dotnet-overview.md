@@ -10,7 +10,7 @@ ai-usage: ai-generated
 
 # Upgrade .NET projects with GitHub Copilot
 
-GitHub Copilot upgrade supports C#, Visual Basic, and F# projects across modern .NET and .NET Framework. Use the agent to upgrade target frameworks, modernize project files, replace libraries, and migrate application architectures.
+GitHub Copilot upgrade supports C# and Visual Basic projects across modern .NET and .NET Framework. Use the agent to upgrade target frameworks, modernize project files, replace libraries, and migrate application architectures.
 
 ## Choose an upgrade workflow
 

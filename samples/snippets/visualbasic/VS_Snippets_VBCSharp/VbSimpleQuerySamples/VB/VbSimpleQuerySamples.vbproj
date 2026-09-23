@@ -75,7 +75,7 @@
     <Compile Include="QuerySamples3.vb" />
     <Compile Include="UserDefinedAggregates.vb" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>

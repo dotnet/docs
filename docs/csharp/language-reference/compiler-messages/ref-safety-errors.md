@@ -7,6 +7,9 @@ f1_keywords:
   - "CS8168"
   - "CS8169"
   - "CS8345"
+  - "CS8348"
+  - "CS8349"
+  - "CS8350"
   - "CS8351"
   - "CS8374"
   - "CS9075"
@@ -38,6 +41,9 @@ helpviewer_keywords:
   - "CS8168"
   - "CS8169"
   - "CS8345"
+  - "CS8348"
+  - "CS8349"
+  - "CS8350"
   - "CS8351"
   - "CS8374"
   - "CS9075"
@@ -64,7 +70,7 @@ helpviewer_keywords:
   - "CS9096"
   - "CS9097"
 ai-usage: ai-assisted
-ms.date: 11/21/2025
+ms.date: 09/23/2026
 ---
 # Errors and warnings related to ref safety
 
@@ -78,6 +84,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8168**](#returning-references-with-incompatible-scopes): *Cannot return local by reference because it is not a ref local*
 - [**CS8169**](#returning-references-with-incompatible-scopes): *Cannot return a member of local variable by reference because it is not a ref local*
 - [**CS8345**](#struct-member-and-field-restrictions): *Field or auto-implemented property cannot be of type unless it is an instance member of a `ref struct`.*
+- [**CS8348**](#escape-scope-violations-and-conditional-operators): *Cannot use a member of result of '\<member\>' in this context because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
+- [**CS8349**](#escape-scope-violations-and-conditional-operators): *Expression cannot be used in this context because it may indirectly expose variables outside of their declaration scope*
+- [**CS8350**](#escape-scope-violations-and-conditional-operators): *This combination of arguments to '\<member\>' is disallowed because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
 - [**CS8351**](#escape-scope-violations-and-conditional-operators): *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
 - [**CS8374**](#ref-assignments-with-incompatible-scopes): *Cannot ref-assign source has a narrower escape scope than destination.*
 - [**CS9075**](#returning-references-with-incompatible-scopes): *Cannot return a parameter by reference because it is scoped to the current method*
@@ -172,6 +181,9 @@ The compiler tracks how variables can escape their declaration scope through var
 
 Errors:
 
+- **CS8348**: *Cannot use a member of result of '\<member\>' in this context because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
+- **CS8349**: *Expression cannot be used in this context because it may indirectly expose variables outside of their declaration scope*
+- **CS8350**: *This combination of arguments to '\<member\>' is disallowed because it may expose variables referenced by parameter '\<parameter-name\>' outside of their declaration scope*
 - **CS8351**: *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
 
 Warnings:
@@ -182,6 +194,8 @@ Warnings:
 
 To resolve these errors:
 
+- For a member access on a call result or another expression that can carry references, don't use the value in a context where those references could outlive the parameter or local from which they were derived. Depending on the API contract, keep the use within its safe scope, pass storage with a sufficiently wide lifetime, or change the API signature, such as adding `scoped` to a parameter when the method doesn't allow its references to escape (**CS8348**, **CS8349**).
+- For a disallowed combination of call arguments, ensure that an argument with a narrower safe scope can't be stored in another argument or the receiver with a wider scope. Depending on the API contract, use arguments with compatible lifetimes, separate the operations, or add an appropriate `scoped` modifier to a parameter that doesn't allow references to escape (**CS8350**).
 - Modify the ref conditional operator (the `?:` operator with `ref` returns) so that both the true and false branches refer to variables that have compatible declaration scopes, which means both variables must have lifetimes that extend to at least the same scope level, preventing the conditional expression from potentially returning a reference that becomes invalid (**CS8351**, **CS9086**).
 - When using variables in expressions or method calls, ensure the context doesn't allow referenced variables to escape beyond their declaration scope, which typically means avoiding passing scoped variables to methods or expressions where they might be captured or stored beyond their intended lifetime (**CS9080**).
 - For stackalloc expressions, avoid assigning the result to variables or using it in contexts where the stack-allocated memory could be accessed outside the containing method, because stack-allocated memory is automatically freed when the method returns and accessing it afterward results in undefined behavior (**CS9081**).

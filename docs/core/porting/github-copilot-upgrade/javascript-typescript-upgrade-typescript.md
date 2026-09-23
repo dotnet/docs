@@ -17,7 +17,7 @@ Use the dependency upgrade workflow instead when you want to update packages oth
 ## Start the compiler upgrade
 
 1. Install GitHub Copilot upgrade. For instructions, see [Install GitHub Copilot upgrade](install.md).
-1. Open the TypeScript repository in a supported GitHub Copilot environment.
+1. Open the repository that contains the TypeScript project in a supported GitHub Copilot environment.
 1. Ask the agent to upgrade TypeScript. Name the target version when you need a specific release. For example:
 
    - _"Upgrade this project to the latest TypeScript version."_

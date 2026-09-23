@@ -407,6 +407,6 @@ Statistics        Avg      Stdev        Max
 
 ## See also
 
-- [Diagnose performance issues in .NET applications](performance-diagnostics.md)
+- [Performance tutorials](index.md#performance-tutorials)
 - [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md)
 - [`dotnet-stack`](dotnet-stack.md)

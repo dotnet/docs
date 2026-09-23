@@ -570,9 +570,9 @@ Starting in .NET 11, `System.Text.Json` can infer derived types from a C# [close
 
 ```csharp
 [JsonPolymorphic(InferClosedTypePolymorphism = true)]
-public closed class Shape;
-public sealed class Circle : Shape;
-public sealed class Square : Shape;
+public closed class Shape { }
+public sealed class Circle : Shape { }
+public sealed class Square : Shape { }
 ```
 
 The serializer registers each derived type and uses its simple type name as a string discriminator. For example, a `Circle` payload contains `"$type":"Circle"`.

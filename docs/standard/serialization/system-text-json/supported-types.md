@@ -114,7 +114,7 @@ The following sections group types by namespace and show their serialization and
 
 The following examples use streams to represent asynchronous data sources. Sources include local files, database query results, and web service API responses.
 
-##### Streaming serialization
+##### Stream serialization
 
 `System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable`1> values as JSON arrays, as shown in the following example:
 

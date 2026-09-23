@@ -2,7 +2,6 @@
 title: Migrate from HttpWebRequest
 description: Learn how to migrate from HttpWebRequest to HttpClient.
 author: liveans
-ms.author: aaksoy
 ms.date: 07/25/2024
 helpviewer_keywords:
   - "protocols, HTTP"

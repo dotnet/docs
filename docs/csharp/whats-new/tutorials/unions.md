@@ -42,13 +42,13 @@ You build a class library, `SmartHome.Core`, that holds the union types, and a c
 
    ```dotnetcli
    dotnet new sln -n TelemetryMonitor
-   dotnet new classlib --langversion preview -n SmartHome.Core
-   dotnet new console --langversion preview -n SmartHome.App
+   dotnet new classlib --langVersion preview -n SmartHome.Core
+   dotnet new console --langVersion preview -n SmartHome.App
    dotnet sln add SmartHome.Core SmartHome.App
    dotnet add SmartHome.App reference SmartHome.Core
    ```
 
-1. The previous commands included the `--langversion preview` to enable C# 15 preview features. In each project file, verify that the language version is set to `preview`:
+1. The previous commands included the `--langVersion preview` to enable C# 15 preview features. In each project file, verify that the language version is set to `preview`:
 
    ```xml
    <PropertyGroup>
@@ -159,5 +159,5 @@ You built the readings layer of a smart-home telemetry monitor and, in the proce
 ## Related content
 
 - [Closed hierarchies tutorial](closed-hierarchies.md)
-- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
+- [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
 - [What's new in C# 15](../csharp-15.md)

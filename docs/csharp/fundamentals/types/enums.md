@@ -38,7 +38,7 @@ Enums work naturally with `switch` expressions and pattern matching. The compile
 
 :::code language="csharp" source="snippets/enums/Program.cs" ID="UsingSeason":::
 
-The discard pattern (`_`) handles any value not explicitly listed. Because an enum's underlying type is an integer, a variable can hold a value that doesn't correspond to any named member. For example, `(Season)99` is valid at runtime. The discard pattern ensures the switch expression handles those unexpected values safely. *Pattern matching* is a C# feature that tests a value against a shape or condition. In this example, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../functional/pattern-matching.md).
+The discard pattern (`_`) handles any value not explicitly listed. Because an enum's underlying type is an integer, a variable can hold a value that doesn't correspond to any named member. For example, `(Season)99` is valid at runtime. The discard pattern ensures the switch expression handles those unexpected values safely. *Pattern matching* is a C# feature that tests a value against a shape or condition. In this example, each `case` checks whether the enum matches a specific member. Switch expressions are one of several pattern matching forms. For more information about pattern matching, see [Pattern matching](../patterns/pattern-matching.md).
 
 ## Bit flags
 
@@ -72,5 +72,5 @@ Use <xref:System.Enum.TryParse``1(System.String,System.Boolean,``0@)?displayProp
 
 - [Type system overview](index.md)
 - [Enumeration types (C# reference)](../../language-reference/builtin-types/enum.md)
-- [Pattern matching](../functional/pattern-matching.md)
+- [Pattern matching](../patterns/pattern-matching.md)
 - [Enum design guidelines](../../../standard/design-guidelines/enum.md)

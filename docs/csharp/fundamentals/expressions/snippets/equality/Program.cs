@@ -41,14 +41,6 @@ var t2 = (Name: "Grace", Role: "Engineer");
 Console.WriteLine(t1 == t2); // => True
 // </TupleEquality>
 
-// <IEquatableUsage>
-var red1 = new Color(255, 0, 0);
-var red2 = new Color(255, 0, 0);
-
-Console.WriteLine(red1.Equals(red2)); // => True
-Console.WriteLine(red1 == red2);      // => False  (no == overload; identity check)
-// </IEquatableUsage>
-
 // <ReferenceEqualsDemo>
 var doc1 = new Document("Report");
 var doc2 = new Document("Report");
@@ -57,6 +49,15 @@ var doc3 = doc1;
 Console.WriteLine(ReferenceEquals(doc1, doc2)); // => False
 Console.WriteLine(ReferenceEquals(doc1, doc3)); // => True
 // </ReferenceEqualsDemo>
+
+// <RecordWithCollectionProblem>
+var playlist1 = new Playlist("Chill", new List<string> { "Song A", "Song B" });
+var playlist2 = new Playlist("Chill", new List<string> { "Song A", "Song B" });
+
+Console.WriteLine(playlist1.Equals(playlist2));                        // => False (different List instances)
+Console.WriteLine(playlist1.Tracks.SequenceEqual(playlist2.Tracks));   // => True
+// </RecordWithCollectionProblem>
+
 
 // ── Type declarations ────────────────────────────────────────────────────────
 
@@ -76,30 +77,10 @@ record Person(string First, string Last);
 
 record struct Dimension(double Width, double Height);
 
-// <ColorDefinition>
-class Color : IEquatable<Color>
-{
-    public Color(int r, int g, int b)
-    {
-        R = r;
-        G = g;
-        B = b;
-    }
-
-    public int R { get; }
-    public int G { get; }
-    public int B { get; }
-
-    public bool Equals(Color? other) =>
-        other is not null && R == other.R && G == other.G && B == other.B;
-
-    public override bool Equals(object? obj) => obj is Color other && Equals(other);
-    public override int GetHashCode() => HashCode.Combine(R, G, B);
-}
-// </ColorDefinition>
-
 class Document(string title)
 {
     public string Title { get; } = title;
 }
 
+
+record Playlist(string Name, List<string> Tracks);

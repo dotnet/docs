@@ -1,7 +1,7 @@
 ---
 title: "Resolve errors and warnings related to extension declarations"
 description: "These errors and warnings indicate that you need to modify the declaration of an extension method using the `this` modifier on the first parameter, or an extension declaration"
-ms.date: 11/07/2025
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "CS1100"
@@ -24,8 +24,10 @@ f1_keywords:
   - "CS9288"
   - "CS9289"
   - "CS9290"
+  - "CS9291"
   - "CS9292"
   - "CS9293"
+  - "CS9294"
   - "CS9295"
   - "CS9300"
   - "CS9301"
@@ -46,6 +48,7 @@ f1_keywords:
   - "CS9326"
   - "CS9329"
   - "CS9339"
+  - "CS9347"
 helpviewer_keywords: 
   - "CS1100"
   - "CS1101"
@@ -91,6 +94,7 @@ helpviewer_keywords:
   - "CS9326"
   - "CS9329"
   - "CS9339"
+  - "CS9347"
 ---
 # Resolve errors and warnings in extension member declarations
 
@@ -143,6 +147,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9326**](#errors-related-to-extension-block-declarations): *'`name`': extension member names cannot be the same as their extended type.*
 - [**CS9329**](#errors-related-to-extension-block-declarations): *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
 - [**CS9339**](#errors-related-to-extension-block-declarations): *The extension resolution is ambiguous between the following members.*
+- [**CS9347**](#errors-related-to-extension-block-declarations): *Static members cannot access the value of extension parameter 'name'.*
 
 ## Common errors on extension declarations
 
@@ -200,6 +205,7 @@ To declare extension members correctly, follow these requirements:
 - **CS9326**: *'`name`': extension member names cannot be the same as their extended type.*
 - **CS9329**: *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
 - **CS9339**: *The extension resolution is ambiguous between the following members.*
+- **CS9347**: *Static members cannot access the value of extension parameter 'name'.*
 
 These errors are specific to extension blocks, a C# 14 feature. Extension blocks are declared using the [`extension`](../keywords/extension.md) contextual keyword in a static class. For more information, see [Extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
@@ -225,6 +231,7 @@ To declare extension members in extension blocks correctly, follow these require
 - Choose member names that differ from the extended type name (**CS9326**).
 - Ensure extension blocks have unique content-based type names in metadata (**CS9329**). Consolidate or differentiate extension blocks to avoid conflicts.
 - Resolve ambiguous extension member calls by providing more specific type information or using qualified names (**CS9339**).
+- Access the extension parameter only from instance extension members (**CS9347**). For a static extension member, pass the required value as a parameter.
 
 ### Extension block operator requirements
 

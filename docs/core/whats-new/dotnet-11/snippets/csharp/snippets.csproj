@@ -4,6 +4,7 @@
     <TargetFramework>net11.0</TargetFramework>
     <OutputType>exe</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>

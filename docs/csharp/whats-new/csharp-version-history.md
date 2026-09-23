@@ -132,7 +132,7 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
   - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
   - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharpstandard/standard/attributes.md#23510-the-moduleinitializer-attribute)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#23511-the-moduleinitializer-attribute)
   - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
   - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)
@@ -149,7 +149,7 @@ C# 9 continues three of the themes from previous releases: removing ceremony, se
 
 The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
-The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
+The [pattern matching](../fundamentals/patterns/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
 
 C# 9 includes new pattern matching improvements:
 
@@ -303,15 +303,15 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
-- [Pattern matching](../fundamentals/functional/pattern-matching.md)
+- [Pattern matching](../fundamentals/patterns/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
-- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 
-- [Discards](../fundamentals/functional/discards.md)
+- [Discards](../fundamentals/patterns/discards.md)
 - [Binary Literals and Digit Separators](../language-reference/builtin-types/integral-numeric-types.md#integer-literals)
 - [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
@@ -442,7 +442,7 @@ The major features of C# 1.0 included:
 - [Properties](../programming-guide/classes-and-structs/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
-- [Statements](../programming-guide/statements-expressions-operators/statements.md)
+- [Statements](../fundamentals/statements/index.md)
 - [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

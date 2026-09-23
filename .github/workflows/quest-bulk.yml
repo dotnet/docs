@@ -28,7 +28,7 @@ jobs:
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@b09bb98e06d4d774595224525879c09bc6e98c40 # v2.20.1
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
         with:
           egress-policy: audit
 
@@ -41,7 +41,7 @@ jobs:
 
       - name: Azure OpenID Connect
         id: azure-oidc-auth
-        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
+        uses: dotnet/docs-tools/.github/actions/azure-oidc-auth@a92cd3283e8a81d00b7c5daa6cc604dd2f9abc53 # main
         with:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
@@ -49,7 +49,7 @@ jobs:
 
       - name: Azure DevOps OpenID Connect
         id: azure-devops-oidc-auth
-        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
+        uses: dotnet/docs-tools/.github/actions/azure-oidc-auth@a92cd3283e8a81d00b7c5daa6cc604dd2f9abc53 # main
         with:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
@@ -57,7 +57,7 @@ jobs:
 
       - name: bulk-sequester
         id: bulk-sequester
-        uses: dotnet/docs-tools/actions/sequester@main
+        uses: dotnet/docs-tools/.github/actions/sequester@a92cd3283e8a81d00b7c5daa6cc604dd2f9abc53 # main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__QuestAccessToken: ${{ steps.azure-devops-oidc-auth.outputs.access-token }}

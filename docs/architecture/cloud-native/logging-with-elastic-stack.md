@@ -109,8 +109,6 @@ The Elastic stack can be installed on Azure in many ways. As always, it's possib
 
 An option with less overhead is to make use of one of the many Docker containers on which the Elastic Stack has already been configured. These containers can be dropped into an existing Kubernetes cluster and run alongside application code. The [sebp/elk](https://elk-docker.readthedocs.io/) container is a well-documented and tested Elastic Stack container.
 
-Another option is a [recently announced ELK-as-a-service offering](https://devops.com/logz-io-unveils-azure-open-source-elk-monitoring-solution/).
-
 ## References
 
 - [Install Elastic Stack on Azure](/azure/virtual-machines/linux/tutorial-elasticsearch)

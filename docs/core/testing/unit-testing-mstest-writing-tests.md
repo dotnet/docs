@@ -3,7 +3,8 @@ title: Write tests with MSTest
 description: Learn how to write tests using MSTest, including attributes, assertions, data-driven testing, and test lifecycle management.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/15/2025
+ms.date: 09/02/2026
+ai-usage: ai-assisted
 ---
 
 # Write tests with MSTest
@@ -114,7 +115,7 @@ MSTest documentation is organized by topic:
 | Topic | Description |
 |-------|-------------|
 | [Assertions](unit-testing-mstest-writing-tests-assertions.md) | Verify expected results with Assert classes |
-| [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) | Run tests with multiple inputs (`DataRow`, `DynamicData`) |
+| [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) | Run tests with multiple inputs (`DataRow`, `CombinatorialData`, `DynamicData`) |
 | [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md) | Setup and cleanup at assembly, class, and test levels |
 | [Execution control](unit-testing-mstest-writing-tests-controlling-execution.md) | Threading, parallelization, timeouts, retries, and conditional execution |
 | [Test organization](unit-testing-mstest-writing-tests-organizing.md) | Categories, priorities, owners, and metadata |
@@ -126,7 +127,7 @@ MSTest documentation is organized by topic:
 | Category | Attributes | See |
 |----------|-----------|------|
 | Test identification | `TestClass`, `TestMethod`, `DiscoverInternals` | This page |
-| Data-driven | `DataRow`, `DynamicData`, `TestDataRow` | [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) |
+| Data-driven | `DataRow`, `CombinatorialData`, `CombinatorialValues`, `CombinatorialRange`, `CombinatorialRandomData`, `DynamicData`, `TestDataRow` | [Data-driven testing](unit-testing-mstest-writing-tests-data-driven.md) |
 | Lifecycle | `AssemblyInitialize`, `ClassInitialize`, `TestInitialize`, and cleanup counterparts | [Test lifecycle](unit-testing-mstest-writing-tests-lifecycle.md) |
 | Threading | `STATestClass`, `STATestMethod`, `UITestMethod` | [Execution control](unit-testing-mstest-writing-tests-controlling-execution.md) |
 | Parallelization | `Parallelize`, `DoNotParallelize` | [Execution control](unit-testing-mstest-writing-tests-controlling-execution.md) |

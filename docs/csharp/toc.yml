@@ -113,12 +113,27 @@ items:
       items:
       - name: Use string interpolation
         href: fundamentals/tutorials/string-interpolation.md
+  - name: Pattern matching
+    items:
+    - name: Overview
+      href: fundamentals/patterns/pattern-matching.md
+    - name: Declaration, constant, and var patterns
+      href: fundamentals/patterns/declaration-constant-var-patterns.md
+    - name: Type patterns
+      href: fundamentals/patterns/type-patterns.md
+    - name: Discards and the discard pattern
+      href: fundamentals/patterns/discards.md
   - name: Expressions and statements
     items:
     - name: Expressions overview
       href: fundamentals/expressions/index.md
     - name: Equality
       href: fundamentals/expressions/equality.md
+    - name: Operators
+      displayName: "+, -, *, /, %, unary +, unary -, !, ++, --, <, >, <=, >=, ==, !=, &&, ||, ?:, =, +=, -=, *=, /=, %="
+      href: fundamentals/expressions/operators.md
+    - name: Statements overview
+      href: fundamentals/statements/index.md
     - name: Selection statements
       href: fundamentals/statements/selection.md
     - name: Iteration statements
@@ -149,10 +164,6 @@ items:
     # - language features:
     #   - Lambdas
     #   - Positional records as DTOs
-    - name: Pattern matching
-      href: fundamentals/functional/pattern-matching.md
-    - name: Discards
-      href: fundamentals/functional/discards.md
     - name: Deconstructing tuples and other types
       href: fundamentals/functional/deconstruct.md
   - name: Exceptions and errors
@@ -535,20 +546,14 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
-  - name: Statements, expressions, and equality
+  - name: Equality and equality comparisons
     items:
-    - name: Statements
-      href: programming-guide/statements-expressions-operators/statements.md
-    - name: Expression-bodied members
-      href: programming-guide/statements-expressions-operators/expression-bodied-members.md
-    - name: Equality and equality comparisons
-      items:
-      - name: Equality comparisons
-        href: programming-guide/statements-expressions-operators/equality-comparisons.md
-      - name: "How to define value equality for a type"
-        href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
-      - name: "How to test for reference equality (identity)"
-        href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
+    - name: Equality comparisons
+      href: programming-guide/statements-expressions-operators/equality-comparisons.md
+    - name: "How to define value equality for a type"
+      href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
+    - name: "How to test for reference equality (identity)"
+      href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: Types
     items:
     - name: Casting and Type Conversions

@@ -145,7 +145,7 @@ Call `PerformSurvey` from `Main`:
 
 ## Examine the survey results
 
-To report results, expose a few helpers from `SurveyResponse` and `SurveyRun`. On `SurveyResponse`, add [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) (members defined with `=>` and a single expression instead of a `{ ... }` block) that handle the nullable dictionary:
+To report results, expose a few helpers from `SurveyResponse` and `SurveyRun`. On `SurveyResponse`, add [expression-bodied members](../../language-reference/operators/lambda-operator.md#expression-body-definition) (members defined with `=>` and a single expression instead of a `{ ... }` block) that handle the nullable dictionary:
 
 :::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetSurveyStatus":::
 

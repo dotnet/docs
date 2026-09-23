@@ -92,7 +92,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS0148**: *The delegate 'delegate' does not have a valid constructor.*
 - **CS0410**: *No overload for 'method' has the correct parameter and return types.*
 
-When you create or assign a delegate, the compiler verifies that the target method's signature matches the delegate type's declaration. The signature includes the parameter types, return type, and accessibility. For the full rules, see [Delegates](../../programming-guide/delegates/index.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#755-accessibility-constraints) in the C# specification.
+When you create or assign a delegate, the compiler verifies that the target method's signature matches the delegate type's declaration. The signature includes the parameter types, return type, and accessibility. For the full rules, see [Delegates](../../programming-guide/delegates/index.md) and [Accessibility constraints](~/_csharpstandard/standard/basic-concepts.md#745-accessibility-constraints) in the C# specification.
 
 - Change all parameter types in the delegate declaration to types that are at least as accessible as the delegate itself (**CS0059**). A `public` delegate can't reference a less-accessible type in its parameter list because callers outside the assembly wouldn't be able to provide the argument. For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 - Adjust either the method signature or the delegate signature so the parameter types and return type match exactly (**CS0123**). The compiler requires an exact signature match when you assign a method to a delegate.

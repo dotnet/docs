@@ -266,6 +266,10 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0080.md
                       - name: MSTEST0081
                         href: ../../core/testing/mstest-analyzers/mstest0081.md
+                      - name: MSTEST0082
+                        href: ../../core/testing/mstest-analyzers/mstest0082.md
+                      - name: MSTEST0083
+                        href: ../../core/testing/mstest-analyzers/mstest0083.md
               - name: Migration
                 items:
                   - name: Migrate from MSTest v1 to v3
@@ -350,6 +354,9 @@ items:
                   - name: OpenTelemetry
                     href: ../../core/testing/microsoft-testing-platform-open-telemetry.md
                     displayName: MTP,OpenTelemetry,traces,metrics
+                  - name: AI integrations
+                    href: ../../core/testing/microsoft-testing-platform-ai.md
+                    displayName: MTP,AI,Azure AI Foundry,Azure OpenAI,IChatClient
                   - name: Retry
                     href: ../../core/testing/microsoft-testing-platform-retry.md
                     displayName: MTP,retry,flaky tests
@@ -392,6 +399,9 @@ items:
                   - name: Services
                     href: ../../core/testing/microsoft-testing-platform-architecture-services.md
                     displayName: MTP,services,IServiceProvider
+                  - name: Server mode
+                    href: ../../core/testing/microsoft-testing-platform-server-mode.md
+                    displayName: MTP,server mode,JSON-RPC,IDE integration,test client
           - name: VSTest
             href: https://github.com/microsoft/vstest
       - name: Testing with 'dotnet test'

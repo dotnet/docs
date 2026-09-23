@@ -3,7 +3,7 @@ title: MSTest TestContext
 description: Learn about the TestContext class of MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 09/02/2026
 ai-usage: ai-assisted
 ---
 
@@ -90,6 +90,8 @@ You can use the `DataSource` attribute to read the data from the CSV file:
 ### Store and retrieve runtime data
 
 You can use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType> to store custom key-value pairs that can be accessed across different methods in the same test session.
+
+Starting with the MSTest 4.4 preview, the indexer consistently returns `null` when a custom key doesn't exist.
 
 ```csharp
 TestContext.Properties["MyKey"] = "MyValue";

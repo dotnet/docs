@@ -3,7 +3,7 @@ title: MSTest Usage rules (code analysis)
 description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 08/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -77,6 +77,8 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0079](mstest0079.md) | Use ArchitectureCondition attribute instead of runtime checks. | Info | Yes |
 | [MSTEST0080](mstest0080.md) | Use CICondition attribute instead of environment checks. | Info | Yes |
 | [MSTEST0081](mstest0081.md) | `[TestFilterProvider]` should reference a valid test filter type. | Warning | No |
+| [MSTEST0082](mstest0082.md) | A test class inherits a lifecycle or test method from a different MSTest version. | Warning | No |
+| [MSTEST0083](mstest0083.md) | Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start`. | Info | Yes |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 
@@ -91,6 +93,7 @@ Ensure your test classes, methods, and fixtures follow MSTest requirements:
 - **[MSTEST0030](mstest0030.md)**: Methods with [TestMethod] must be in a [TestClass].
 - **[MSTEST0063](mstest0063.md)**: Test class constructor validation.
 - **[MSTEST0069](mstest0069.md)**: Apply [TestClass] directly so source-generated discovery finds the class.
+- **[MSTEST0082](mstest0082.md)**: Keep base and derived test classes on the same MSTest major version.
 
 ### Lifecycle methods
 
@@ -105,6 +108,7 @@ Validate initialization and cleanup methods:
 - **[MSTEST0034](mstest0034.md)**: Set ClassCleanupBehavior.EndOfClass.
 - **[MSTEST0050](mstest0050.md)**: Global test fixture validation.
 - **[MSTEST0072](mstest0072.md)**: Don't use shared assembly fixture providers with ahead-of-time compilation.
+- **[MSTEST0082](mstest0082.md)**: Recompile inherited lifecycle methods against the test project's MSTest version.
 
 ### Data-driven testing
 
@@ -181,6 +185,8 @@ Rules for tests that run in parallel:
 - **[MSTEST0079](mstest0079.md)**: Use `ArchitectureCondition` instead of runtime architecture checks.
 - **[MSTEST0080](mstest0080.md)**: Use `CICondition` instead of environment checks.
 - **[MSTEST0081](mstest0081.md)**: Validate test filter provider registrations.
+- **[MSTEST0082](mstest0082.md)**: Detect inherited tests and lifecycle methods compiled against another MSTest major version.
+- **[MSTEST0083](mstest0083.md)**: Use `ExecutableCondition` instead of an imperative executable check.
 
 ## Related documentation
 

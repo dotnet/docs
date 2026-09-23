@@ -144,5 +144,5 @@ You built the sensor model of a smart-home telemetry monitor and, in the process
 ## Related content
 
 - [Union types tutorial](unions.md)
-- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
+- [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
 - [What's new in C# 15](../csharp-15.md)

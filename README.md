@@ -38,7 +38,7 @@ Our team's tasks are tracked in our [project boards](https://github.com/dotnet/d
 
 ## :purple_heart: Contribute
 
-We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see the [Contributor guide](https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute) for information on working with us. Look for issues labeled [`help wanted` :label:](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+) for ideas to get started. 
+We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see the [Contributor guide](https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute) for information on working with us. Look for issues labeled [`help wanted` :label:](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+) for ideas to get started.
 
 Before submitting a PR with 3rd party dependencies, see our policy on [3rd party dependencies](admin/3rdPartyDependencies.md).
 
@@ -61,6 +61,5 @@ to clarify expected behavior in our community. For more information, see the [.N
 - [![OPS status checker](https://github.com/dotnet/docs/actions/workflows/check-for-build-warnings.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/check-for-build-warnings.yml):  Builds the site for the PR in context, and verifies the build reporting either, `success`, `warnings`, or `error`.
 - [![Snippets 5000](https://github.com/dotnet/docs/actions/workflows/snippets5000.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/snippets5000.yml):  Custom .NET build validation, locates code impacted by a PR, and builds.
 - [![Target supported version](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml):  Runs monthly, creating issues on projects that target .NET versions that are out of support.
-- [![Update dependabot.yml](https://github.com/dotnet/docs/actions/workflows/dependabot-bot.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/dependabot-bot.yml):  Automatically updates the `dependabot` configuration weekly, but only if required.
 - [![quest import](https://github.com/dotnet/docs/actions/workflows/quest.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/quest.yml): Automatically synchronizes issues with Quest (Azure DevOps).
 - [![bulk quest import](https://github.com/dotnet/docs/actions/workflows/quest-bulk.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/quest-bulk.yml): Manual bulk import of issues into Quest (Azure DevOps).

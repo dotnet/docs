@@ -2,7 +2,8 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 10/07/2025
+ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 # .NET SDK and .NET CLI telemetry
 
@@ -57,6 +58,15 @@ Protecting your privacy is important to Microsoft. If you suspect the telemetry 
 For more information about your privacy and personal data collected, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement?msockid=07e1f252f95a6b9423b5e360f8e06a61).
 
 The following tabs show the telemetry data captured by SDK version:
+
+# [.NET 11](#tab/dotnet11)
+
+- **SDK version 11.0.100 and later:**
+  - Roslyn compiler output cache telemetry:
+    - Whether the compiler found and restored a cached compilation result.
+    - The outcome of an attempt to store a compilation result in the cache.
+    - The compiler language (C# or Visual Basic).
+    - Time spent computing the cache key, restoring a cached result, storing a result, and compiling and emitting on a cache miss.
 
 # [.NET 10](#tab/dotnet10)
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: "Discover what's new in C# 15, including features such as union types, the closed modifier, extension indexers, and pointer relaxations. Try examples in your code."
-ms.date: 08/14/2026
+ms.date: 09/11/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -159,7 +159,7 @@ For more information, see [Jump statements](../language-reference/statements/jum
 
 C# 15 begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
 
-In the complete model, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. An assembly opts in to this enforcement, and the compiler records the choice with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and explicit-layout fields as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
+When you enable the updated rules, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. The compiler records the assembly's use of the updated rules with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and fields in explicit or extended layout types as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
 
 The first step includes the pointer relaxations. When you compile with the `preview` language version, the following operations no longer require an `unsafe` context:
 
@@ -202,7 +202,7 @@ class Header
 
 Like the rest of the memory safety preview, `unsafe` expressions require the `preview` language version and the `AllowUnsafeBlocks` compiler option.
 
-The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and explicit-layout fields. However, the *requires-unsafe* member model and the assembly opt-in to the updated memory safety rules aren't available yet, so `safe` and `unsafe` currently have no effect on callers.
+The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and fields in explicit or extended layout types. Set `LangVersion` to `preview` to enable the new syntax and pointer relaxations. To also enable the updated rules, including *requires-unsafe* caller obligations, enable the `updated-memory-safety-rules` compiler feature. For project and file-based program syntax, see [Enable the updated memory safety rules](../language-reference/compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 

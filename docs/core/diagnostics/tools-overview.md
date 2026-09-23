@@ -4,6 +4,7 @@ description: An overview of the tools available to diagnose .NET applications.
 ms.date: 09/04/2026
 ms.topic: overview
 #Customer intent: As a .NET developer I want to find the best tools to help me diagnose problems so that I can be productive.
+ai-usage: ai-assisted
 ---
 
 # .NET diagnostic tools
@@ -40,7 +41,7 @@ The [dotnet-monitor](dotnet-monitor.md) tool is a way to monitor .NET applicatio
 
 ### dotnet-trace
 
-The [dotnet-trace](dotnet-trace.md) tool is a cross-platform .NET diagnostic tool that collects traces from running applications without using a native profiler. On Linux, it can also combine .NET runtime and application events with machine-wide CPU samples, native call stacks, and Linux kernel events collected through the `perf_events` facility. For a symptom-driven workflow, see [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md).
+The [dotnet-trace](dotnet-trace.md) tool is a cross-platform .NET diagnostic tool that collects traces from running applications without using a native profiler. On Linux with .NET 10 or later, its `collect-linux` command can also combine .NET runtime and application events with machine-wide CPU samples, native call stacks, and selected Linux kernel events through `perf_events`. For a collection-to-diagnosis walkthrough with Visual Studio and PerfView, see [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md).
 
 ### dotnet-stack
 
@@ -56,10 +57,10 @@ The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed
 
 ## Other tools
 
-### OneCollect `record-trace`
+### PerfView
 
-The [OneCollect `record-trace`](https://github.com/microsoft/one-collect/tree/main/record-trace) tool records system-wide performance traces on Linux and Windows. Use it for lower-level, scriptable control over event selection, process and CPU filtering, and trace output. For a .NET-oriented Linux workflow that configures runtime events and system profiling together, use [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux).
+[PerfView](https://github.com/microsoft/perfview) is a Windows tool for performance trace collection and analysis. It can also analyze `.nettrace` files collected by `dotnet-trace` on other platforms.
 
 ### PerfCollect
 
-[PerfCollect](trace-perfcollect-lttng.md) is the earlier bash-based workflow for collecting Linux CPU samples with `perf` and .NET runtime and EventSource events with LTTng. Prefer `dotnet-trace collect-linux` for new investigations when possible. PerfCollect remains documented for existing workflows, but its runtime-event collection depends on an older LTTng ABI.
+[PerfCollect](trace-perfcollect-lttng.md) is the earlier bash-based workflow for collecting Linux CPU samples with `perf` and .NET runtime and EventSource events with LTTng. Prefer `dotnet-trace collect-linux` for new investigations. PerfCollect remains documented for existing workflows, but its runtime-event collection depends on an older LTTng ABI.

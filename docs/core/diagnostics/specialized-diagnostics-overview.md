@@ -2,6 +2,7 @@
 title: Specialized Diagnostics
 description: A guide to more advanced diagnostics support in .NET
 ms.date: 09/04/2026
+ai-usage: ai-assisted
 ---
 # Specialized diagnostics
 
@@ -11,7 +12,7 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 
 [Event Source](./eventsource.md) provides the ability to collect detailed diagnostic information about what's happening inside .NET processes. It includes telemetry information for the runtime, GC, libraries, and application code.
 
-Event Source data can be collected in-process using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> API or with external diagnostics tools such as [Visual Studio](/visualstudio/profiling), [dotnet-monitor](./dotnet-monitor.md), [dotnet-trace](./dotnet-trace.md), [PerfView](https://github.com/microsoft/perfview), and [PerfCollect](./trace-perfcollect-lttng.md). On Linux, use [`dotnet-trace collect-linux`](./dotnet-trace.md#dotnet-trace-collect-linux) when runtime events must be correlated with native call stacks and kernel events.
+Event Source data can be collected in-process using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> API or with external diagnostics tools such as [Visual Studio](/visualstudio/profiling), [dotnet-monitor](./dotnet-monitor.md), [dotnet-trace](./dotnet-trace.md), [PerfView](https://github.com/microsoft/perfview), and [PerfCollect](./trace-perfcollect-lttng.md). On .NET 10 and later Linux systems, use [`dotnet-trace collect-linux`](./dotnet-trace.md#dotnet-trace-collect-linux) when runtime events must be correlated with native call stacks and kernel events.
 
 ### EventPipe
 

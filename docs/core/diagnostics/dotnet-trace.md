@@ -4,6 +4,7 @@ description: Learn how to use dotnet-trace to collect .NET application traces an
 ms.date: 09/04/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
+ai-usage: ai-assisted
 ---
 # dotnet-trace performance analysis utility
 
@@ -705,19 +706,13 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 ## (Linux-only) Collect a machine-wide trace using dotnet-trace
 
-### Get symbols for native runtime frames
-
-`collect-linux` captures native and ReadyToRun (R2R) frames in call stacks. [PerfView and TraceEvent 3.2.1 or later](https://github.com/microsoft/perfview/releases/tag/v3.2.1) can download and resolve symbols when you analyze the trace:
-
-- .NET native and R2R symbols are available from the Microsoft Symbol Server.
-- Many Azure Linux native symbols are also available from the Microsoft Symbol Server.
-- For native libraries from other Linux distributions, configure PerfView or TraceEvent with a local symbol path that contains the matching distribution symbol files.
-
-In PerfView, open a stack view, select the unresolved module frames, and choose **Lookup Symbols**. If prompted, enable the Microsoft Symbol Server. TraceEvent applications can perform the same analysis-time lookup through `SymbolReader`. No symbol setup is required before collection for symbols available from the configured server or local symbol paths.
-
 `collect-linux` dynamically enables perf map generation for JIT-compiled code, so you don't need to restart .NET processes.
 
-For an offline workflow, use [dotnet-symbol](./dotnet-symbol.md) before collection to place .NET native symbols beside the corresponding runtime libraries:
+### Resolve native names during collection
+
+This setup is optional. You can collect a trace without it and [resolve native symbols later in PerfView](#get-symbols-for-native-runtime-frames-in-perfview).
+
+Use [dotnet-symbol](./dotnet-symbol.md) before collection to place .NET native symbols beside the corresponding runtime libraries:
 
 1. Install `dotnet-symbol`:
 
@@ -788,12 +783,30 @@ For environments with multiple .NET versions installed, running `collect-linux` 
 
 On Windows, you can view *.nettrace* files in [Visual Studio](/visualstudio/profiling/beginners-guide-to-performance-profiling?#step-2-analyze-cpu-usage-data) or [PerfView](https://github.com/microsoft/perfview) for analysis.
 
-On Linux, you can view the trace by changing the output format of `dotnet-trace` to `speedscope`. Change the output file format by using the `-f|--format` option. You can choose between `nettrace` (the default option) and `speedscope`. The option `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. `Speedscope` files can be opened at <https://www.speedscope.app>.
+On Linux, you can view a trace from `dotnet-trace collect` by changing its output format to `speedscope`. Change the output file format by using the `-f|--format` option. You can choose between `nettrace` (the default option) and `speedscope`. The option `-f speedscope` will make `dotnet-trace collect` produce a `speedscope` file. `Speedscope` files can be opened at <https://www.speedscope.app>.
 
 For traces collected on non-Windows platforms, you can also move the trace file to a Windows machine and view it in Visual Studio or PerfView.
 
+For a worked example of trace collection and interpretation, see [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md). For Visual Studio's analysis features, see [CPU Usage](/visualstudio/profiling/cpu-usage) and [Events Viewer](/visualstudio/profiling/events-viewer).
+
 > [!NOTE]
 > The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
+
+<a id="get-symbols-for-native-runtime-frames"></a>
+
+### Get symbols for native runtime frames in PerfView
+
+`collect-linux` captures native and ReadyToRun (R2R) frames in call stacks. [PerfView 3.2.1 or later](https://github.com/microsoft/perfview/releases/tag/v3.2.1) can download and resolve symbols when you analyze the trace:
+
+- .NET native and R2R runtime symbols are available from the Microsoft Symbol Server.
+- Many Azure Linux native symbols are also available from the Microsoft Symbol Server.
+- For native libraries from other Linux distributions, configure PerfView with a local symbol path that contains the matching distribution symbol files.
+
+In PerfView, open a stack view, select the unresolved module frames, and choose **Lookup Symbols**. If prompted, enable the Microsoft Symbol Server. No symbol setup is required before collection for symbols available from the configured server or local symbol paths. For native ELF modules, PerfView uses the ELF build ID to locate matching symbols.
+
+Internal Linux-native frames can require matching ELF debug symbols, which the Microsoft Symbol Server also serves for .NET. Application PDBs provide managed source information; they don't replace these native symbols. Managed names and native names embedded in the trace or available from library exports can already appear without full native symbol resolution.
+
+A saved trace can still use network symbol servers. For analysis without network access, obtain the matching files in advance and configure a local symbol path on the analysis machine.
 
 ## Use .rsp file to avoid typing long commands
 

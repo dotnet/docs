@@ -43,16 +43,39 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for IoT, Machine Learning, Orleans,
-    # Standard, and Visual Basic snippets.
+    # NuGet updates for IoT, Machine Learning, Standard, and Visual Basic snippets.
   - package-ecosystem: "nuget"
     directories:
       - "docs/iot/**/snippets/**/*"
       - "docs/machine-learning/**/snippets/**/*"
-      - "docs/orleans/**/snippets/**/*"
-      - "docs/orleans/**/snippets-v3/**/*"
       - "docs/standard/**/snippets/**/*"
       - "docs/visual-basic/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for non-V3 Orleans snippets.
+  - package-ecosystem: "nuget"
+    directories:
+      - "docs/orleans/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for Orleans V3 snippets.
+  - package-ecosystem: "nuget"
+    directories:
+      - "docs/orleans/**/snippets-v3/**/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

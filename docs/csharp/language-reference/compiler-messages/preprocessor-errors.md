@@ -37,6 +37,7 @@ f1_keywords:
   - "CS9298"
   - "CS9299"
   - "CS9314"
+  - "CS9378"
 helpviewer_keywords:
   - "CS1024"
   - "CS1025"
@@ -73,7 +74,8 @@ helpviewer_keywords:
   - "CS9298"
   - "CS9299"
   - "CS9314"
-ms.date: 10/07/2025
+  - "CS9378"
+ms.date: 09/17/2026
 ai-usage: ai-assisted
 ---
 # Preprocessor errors and warnings
@@ -115,6 +117,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - [**CS9298**](#incorrect-use-of-file-based-apps-directives): *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - [**CS9299**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after `#if` directive*
 - [**CS9314**](#incorrect-use-of-file-based-apps-directives): *`#!` directives can be only used in scripts or file-based apps*
+- [**CS9378**](#incorrect-use-of-file-based-apps-directives): *'#!' must be the first characters on the first line of the file*
 
 ## Invalid preprocessor directive syntax
 
@@ -135,7 +138,7 @@ These errors indicate that you used invalid syntax for [preprocessor directives]
 - Including multiline comments on directive lines (CS1025, CS1696).
 - Using directives in unexpected locations (CS1028).
 - Missing required matching directives (CS1027, CS1038).
-- Not defining or undefining symbols as the first token in the file (CS1032)
+- Not defining or undefining symbols as the first token in the file (CS1032).
 - Not placing the directive as the first token on a line (CS1040).
 - Using invalid expressions in conditional compilation (CS1517).
 - Using raw string literals in preprocessor directives (CS8996).
@@ -351,15 +354,15 @@ These directives are useful for conditional compilation scenarios where you want
 
 ## `#line` and file directive errors
 
-- **CS1560**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
-- **CS1576**: *The line number specified for #line directive is missing or invalid*
-- **CS1578**: *Filename, single-line comment or end-of-line expected*
-- **CS1694**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
-- **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."*
-- **CS1709**: *Filename specified for preprocessor directive is empty*
-- **CS8938**: *The #line directive value is missing or out of range*
-- **CS8939**: *The #line directive end position must be greater than or equal to the start position*
-- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
+- **CS1560**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename.*
+- **CS1576**: *The line number specified for #line directive is missing or invalid.*
+- **CS1578**: *Filename, single-line comment, or end-of-line expected.*
+- **CS1694**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename.*
+- **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX...".*
+- **CS1709**: *Filename specified for preprocessor directive is empty.*
+- **CS8938**: *The #line directive value is missing or out of range.*
+- **CS8939**: *The #line directive end position must be greater than or equal to the start position.*
+- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name.*
 
 These errors indicate incorrect usage of the [`#line` directive](../preprocessor-directives.md#error-and-warning-information) or file-related preprocessor directives. Common causes include:
 
@@ -382,7 +385,7 @@ These errors indicate incorrect usage of the [`#line` directive](../preprocessor
 #line abc "file.cs"    // CS1576 - invalid line number format
 ```
 
-**CS1578 example - Filename, comment or end-of-line expected:**
+**CS1578 example - Filename, comment, or end-of-line expected:**
 
 ```csharp
 #line 101 abc.cs   // CS1578 - filename not quoted
@@ -427,8 +430,11 @@ To fix these errors, ensure your `#line` directives and file-related preprocesso
 - **CS9298**: *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - **CS9299**: *`#:` directives cannot be after `#if` directive*
 - **CS9314**: *`#!` directives can be only used in scripts or file-based apps*
+- **CS9378**: *'#!' must be the first characters on the first line of the file*
 
-These errors indicate that you used the `#:` directives for a file-based app incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+These errors indicate that you used the `#:` or `#!` directives incorrectly. To learn more about the syntax for these directives, see the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file-based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+
+A shebang (`#!`) selects the executable for a script or file-based app. Place it at the first character of the first line, before any whitespace, comments, or blank lines (**CS9378**); see the [file-based app directive guidance](../preprocessor-directives.md#file-based-apps).
 
 ## File contains script.cs directives
 
@@ -439,4 +445,4 @@ The following errors indicate [script.cs](https://scriptcs.net) syntax in a comp
 - **CS7011**: *#r is only allowed in scripts*
 - **CS8097**: *#load is only allowed in scripts*
 
-These directives aren't supported in compiled C#. You must remove them, or use [script.cs](http://scriptcs.net/).
+These directives aren't supported in compiled C#. You must remove them or use [script.cs](http://scriptcs.net/).

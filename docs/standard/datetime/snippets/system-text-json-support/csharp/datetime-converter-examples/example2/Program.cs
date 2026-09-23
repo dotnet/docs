@@ -25,7 +25,7 @@ public class DateTimeConverterForCustomStandardFormatR : JsonConverter<DateTime>
     public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
     {
         // The "R" standard format will always be 29 bytes.
-        Span<byte> utf8Date = new byte[29];
+        Span<byte> utf8Date = stackalloc byte[29];
 
         bool result = Utf8Formatter.TryFormat(value, utf8Date, out _, new StandardFormat('R'));
         Debug.Assert(result);

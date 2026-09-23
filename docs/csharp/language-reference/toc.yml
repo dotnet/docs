@@ -664,6 +664,11 @@ items:
     displayName: >
       break, continue, goto, return, labeled break, labeled continue,
       CS0126, CS0127, CS0139, CS0153, CS0159, CS0161, CS0163, CS0469, CS9393, CS9394
+  - name: Throwing and catching exceptions
+    href: ./compiler-messages/throwing-and-catching-exceptions.md
+    displayName: >
+      throw, catch, exception filter, catch filter,
+      CS8359, CS8360
   - name: Extension declarations
     href: ./compiler-messages/extension-declarations.md
     displayName: >

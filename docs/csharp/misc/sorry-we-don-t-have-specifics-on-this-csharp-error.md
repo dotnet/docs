@@ -172,8 +172,6 @@ f1_keywords:
   # C# 7.2 diagnostics
   - "CS8356"
   - "CS8357"
-  - "CS8359"
-  - "CS8360"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

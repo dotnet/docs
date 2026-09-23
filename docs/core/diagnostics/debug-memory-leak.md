@@ -3,6 +3,7 @@ title: Debug a memory leak tutorial
 description: Learn how to debug a memory leak in .NET.
 ms.topic: tutorial
 ms.date: 09/08/2026
+ai-usage: ai-assisted
 ---
 
 # Debug a memory leak in .NET
@@ -138,8 +139,6 @@ Observe that the memory usage has grown to over 20 MB.
 ```
 
 By watching the memory usage, you can safely say that memory is growing or leaking. The next step is to collect the right data for memory analysis.
-
-If you only need to compare managed heap composition or identify which object types are growing, start with [`dotnet-gcdump`](dotnet-gcdump.md), which collects less process state than a full dump. This tutorial uses `dotnet-dump` because the investigation continues from growing object types to the reference paths that keep those objects alive.
 
 ### Generate memory dump
 

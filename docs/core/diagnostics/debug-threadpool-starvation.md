@@ -3,6 +3,7 @@ title: Debug ThreadPool Starvation
 description: A tutorial that walks you through debugging and fixing a ThreadPool starvation issue on .NET.
 ms.topic: tutorial
 ms.date: 09/04/2026
+ai-usage: ai-assisted
 ---
 
 # Debug ThreadPool starvation
@@ -29,7 +30,7 @@ The tutorial uses:
 - [dotnet-counters](dotnet-counters.md) to observe performance counters
 - [dotnet-stack](dotnet-stack.md) to examine thread stacks
 - [dotnet-trace](dotnet-trace.md) to collect wait events
-- Optional: [PerfView](https://github.com/microsoft/perfview/releases) to analyze the wait events
+- Optional: [Visual Studio](#analyze-a-nettrace-with-visual-studio) or [PerfView](https://github.com/microsoft/perfview/releases) on Windows to analyze the wait events
 
 ## Run the sample app
 
@@ -312,14 +313,29 @@ Then run dotnet-trace to collect wait events:
 dotnet-trace collect -n DiagnosticScenarios --clrevents waithandle --clreventlevel verbose --duration 00:00:30
 ```
 
-On .NET 10+ Linux, prefer the [`collect-linux` blocking configuration](dotnet-trace-collect-linux-performance.md#blocking-contention-and-threadpool-behavior) when its prerequisites are met. It records the same focused runtime signals together with native stacks and Linux scheduling context, which helps distinguish blocked workers from runnable workers that aren't receiving CPU.
+That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. To analyze it in Visual Studio or PerfView, copy it to a Windows machine if you collected it elsewhere.
 
-That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. This nettrace can be analyzed using two different tools:
+On .NET 10+ Linux, prefer the [`collect-linux` blocking configuration](dotnet-trace-collect-linux-performance.md#blocking-contention-and-threadpool-behavior). It records the same focused runtime signals together with native stacks and Linux scheduling context, which helps distinguish blocked workers from runnable workers that aren't receiving CPU.
 
+The EventPipe trace from `dotnet-trace collect` can be analyzed using three different tools:
+
+- Start with [Visual Studio](#analyze-a-nettrace-with-visual-studio) to inspect events, payloads, and stacks.
 - [PerfView](https://github.com/microsoft/perfview/releases): A performance analysis tool developed by Microsoft for Windows only.
 - [.NET Events Viewer](https://verdie-g.github.io/dotnet-events-viewer): A nettrace analysis [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web tool developed by the community.
 
 The following sections show how to use each tool to read the nettrace file.
+
+#### Analyze a nettrace with Visual Studio
+
+Use Visual Studio's [Events Viewer](/visualstudio/profiling/events-viewer) to inspect the wait events and stacks recorded by the preceding command.
+
+1. Select **File** > **Open** > **File** and open the `.nettrace` file.
+1. Open **Events**. In the event filter, select `Microsoft-Windows-DotNETRuntime` and `WaitHandleWait/Start`.
+1. To focus on the application, right-click a column header, enable **Process ID** and **Thread ID**, and filter to the relevant IDs.
+1. Select an event to inspect **Payload Properties**, including `WaitSource`, and the event stack.
+1. Right-click an event and choose **Show Stacks For Event**. In **Event Stacks**, follow the application call path to `DiagScenarioController.TaskWait` and its synchronous task wait.
+
+These views identify the code that blocks the worker. Event counts alone don't measure time spent waiting.
 
 #### Analyze a nettrace with Perfview
 
@@ -389,7 +405,7 @@ public async Task<ActionResult<string>> TaskAsyncWait()
 }
 ```
 
-Running Bombadier to send load to the `api/diagscenario/taskasyncwait` endpoint shows that the ThreadPool thread count stays much lower and average latency remains near 500ms when using the async/await approach:
+Running Bombardier to send load to the `api/diagscenario/taskasyncwait` endpoint shows that the ThreadPool thread count stays much lower and average latency remains near 500ms when using the async/await approach:
 
 ```dotnetcli
 bombardier https://localhost:5001/api/diagscenario/taskasyncwait

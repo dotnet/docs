@@ -92,6 +92,6 @@ The MSTest team maintains sample projects in the [microsoft/testfx repository](h
 | **Simple1** | Basic MSTest runner setup | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/Simple1) |
 | **DemoMSTestSdk** | MSTest SDK project setup | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/DemoMSTestSdk) |
 | **BlankUwpNet9App** | UWP testing with .NET 9 | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
-| **BlankWinUINet9App** | WinUI 3 testing with .NET 9 | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/BlankWinUINet9App) |
+| **WinUIAppMtpPackagedApp** | WinUI 3 testing | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpPackagedApp) |
 | **NativeAotRunner** | Native AOT compilation | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 | **RunInDocker** | Containerized test execution | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/RunInDocker) |

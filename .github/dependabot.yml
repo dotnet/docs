@@ -63,6 +63,8 @@ updates:
   - package-ecosystem: "nuget"
     directories:
       - "docs/orleans/**/snippets/**/*"
+    exclude-paths:
+      - "docs/orleans/**/snippets-v3/**/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
@@ -76,6 +78,8 @@ updates:
   - package-ecosystem: "nuget"
     directories:
       - "docs/orleans/**/snippets-v3/**/*"
+    exclude-paths:
+      - "docs/orleans/**/snippets/**/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

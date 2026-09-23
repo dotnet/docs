@@ -59,10 +59,22 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for Orleans snippets.
+    # NuGet updates for non-V3 Orleans snippets.
   - package-ecosystem: "nuget"
     directories:
       - "docs/orleans/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for Orleans V3 snippets.
+  - package-ecosystem: "nuget"
+    directories:
       - "docs/orleans/**/snippets-v3/**/*"
     schedule:
       interval: "weekly"

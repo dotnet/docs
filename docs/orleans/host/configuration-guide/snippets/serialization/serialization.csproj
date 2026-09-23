@@ -8,9 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.0" />
     <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Serialization.MessagePack" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Serialization.MessagePack" Version="10.3.1" />
     <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="10.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
-    <PackageReference Include="MessagePack" Version="3.1.7" />
+    <PackageReference Include="MessagePack" Version="3.1.8" />
   </ItemGroup>
 </Project>

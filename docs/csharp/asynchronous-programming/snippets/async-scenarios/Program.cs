@@ -123,7 +123,7 @@ public class Program
         // Given a user Id {userId}, retrieves a User object corresponding
         // to the entry in the database with {userId} as its Id.
 
-        await Task.Delay(1); // Simulate asynchronous database retrieval
+        await Task.Yield(); // Simulate asynchronous database retrieval
         return new User() { id = userId };
     }
 

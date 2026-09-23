@@ -10,12 +10,24 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 3
-    # NuGet updates for AI, Architecture, Azure, and Core snippets
+    # NuGet updates for AI, Architecture, and Azure snippets
   - package-ecosystem: "nuget"
     directories:
       - "docs/ai/**/snippets/**/*"
       - "docs/architecture/**/snippets/**/*"
       - "docs/azure/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for Core snippets
+  - package-ecosystem: "nuget"
+    directories:
       - "docs/core/**/snippets/**/*"
     schedule:
       interval: "weekly"
@@ -110,10 +122,29 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for samples/snippets
+    # NuGet updates for C# samples/snippets.
   - package-ecosystem: "nuget"
     directories:
-      - "samples/snippets/**/*"
+      - "samples/snippets/csharp/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for remaining samples/snippets.
+  - package-ecosystem: "nuget"
+    directories:
+      - "samples/snippets/core/**/*"
+      - "samples/snippets/cpp/**/*"
+      - "samples/snippets/fsharp/**/*"
+      - "samples/snippets/standard/**/*"
+      - "samples/snippets/tsql/**/*"
+      - "samples/snippets/visualbasic/**/*"
+      - "samples/snippets/xml/**/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

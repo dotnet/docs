@@ -177,7 +177,15 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 #### Union serialization
 
-**C# union types.** `System.Text.Json` can serialize and deserialize C# union types through the new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> contract kind. Reflection-based serialization and source generation both support union contracts. The serializer writes the active case directly as JavaScript Object Notation (JSON):
+**C# union types.** Starting in .NET 11, <xref:System.Text.Json.JsonSerializer> serializes and deserializes C# unions without a custom converter. Define the possible cases:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionType":::
+
+Pass the union to `JsonSerializer`:
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionSerialization":::
+
+The serializer writes the active case directly, without a wrapper or `$type` discriminator. Reflection-based serialization and source generation both support C# unions. The JSON output depends on the active case:
 
 | Union state | JSON output |
 | - | - |
@@ -185,13 +193,19 @@ These methods provide both high-level convenience methods (that allocate and ret
 | `int` case with value `42` | `42` |
 | Default struct union with no active case | `null` |
 
-If a union declares separate `T` and `T?` cases, the serializer preserves both cases and selects the nullable case for a `null` payload. A non-null payload is ambiguous without a custom classifier because both cases use the same JSON shape. If no case accepts `null`, JSON `null` deserializes to the default union value, which also serializes as `null`.
+By default, deserialization selects the case from the JSON token kind: number, string, Boolean, array, or object. Two object cases share a token kind, so the default classifier can't distinguish them. To select an object case by its root-level property names, use <xref:System.Text.Json.Serialization.JsonUnionAttribute> with the built-in <xref:System.Text.Json.Serialization.JsonUnionTypeStructuralClassifier>:
 
-Use <xref:System.Text.Json.Serialization.JsonUnionAttribute> and <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo> to customize union metadata. For custom case selection, derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory>, which creates a <xref:System.Text.Json.Serialization.JsonTypeClassifier> delegate. Register the factory per union through <xref:System.Text.Json.Serialization.JsonUnionAttribute.TypeClassifier?displayProperty=nameWithType>, for reflection-based serialization through <xref:System.Text.Json.JsonSerializerOptions.TypeClassifiers?displayProperty=nameWithType>, or for source generation through <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.TypeClassifiers?displayProperty=nameWithType>.
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionStructuralType":::
 
-<xref:System.Text.Json.Serialization.JsonUnionTypeStructuralClassifier> extends the default JSON-token-kind classification with object-shape classification. It compares root-level property names, without inspecting property values or nested content, and rejects configurations where it can't select one case unambiguously. Nested union cases, polymorphic cases, and reference-preserving deserialization aren't supported by this classifier.
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionStructuralClassifier":::
 
-C# union types are a preview language feature. For language syntax, see [C# 15 union types](../../../csharp/whats-new/csharp-15.md#union-types). For serialization guidance, see [Serialize union types](../../../standard/serialization/system-text-json/union-types.md).
+The payload's `Lives` property selects `Cat`. The structural classifier narrows the candidate cases by root-level property names and required properties; it doesn't inspect property values or nested content. If the payload matches zero or multiple cases, deserialization throws <xref:System.Text.Json.JsonException>. The classifier doesn't support multiple non-object cases with the same JSON token kind, nested unions, polymorphic cases, or <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve?displayProperty=nameWithType>.
+
+For other case-selection rules, derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory>. The factory receives a <xref:System.Text.Json.Serialization.JsonTypeClassifierContext> describing the union cases and creates a <xref:System.Text.Json.Serialization.JsonTypeClassifier> delegate that reads JSON and selects a case type. Register the factory on one union through <xref:System.Text.Json.Serialization.JsonUnionAttribute.TypeClassifier?displayProperty=nameWithType>, on an options instance through <xref:System.Text.Json.JsonSerializerOptions.TypeClassifiers?displayProperty=nameWithType>, or on a source-generated context through <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.TypeClassifiers?displayProperty=nameWithType>.
+
+If a union declares separate `T` and `T?` cases, the serializer selects the nullable case for a `null` payload. A non-null payload is ambiguous without a custom classifier because both cases use the same JSON shape. If no case accepts `null`, JSON `null` deserializes to the default union value, which also serializes as `null`.
+
+C# union types are a preview language feature. For language syntax, see [C# 15 union types](../../../csharp/whats-new/csharp-15.md#union-types). For more about classifiers and advanced contract metadata such as <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo>, see [Serialize union types](../../../standard/serialization/system-text-json/union-types.md).
 
 **F# discriminated unions.** The serializer represents cases without fields as JSON strings and cases with fields as JSON objects that contain a `$type` discriminator:
 

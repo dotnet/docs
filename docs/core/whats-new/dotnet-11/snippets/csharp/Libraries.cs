@@ -343,6 +343,17 @@ public static class LibrariesExamples
         // </JsonNumericTypes>
     }
 
+    static void JsonUnionSerializationExample()
+    {
+        // <JsonUnionSerialization>
+        Reading reading = new("hello");
+        string json = JsonSerializer.Serialize(reading);
+        Reading copy = JsonSerializer.Deserialize<Reading>(json);
+        Console.WriteLine(json); // "hello"
+        Console.WriteLine(copy.Value); // hello
+        // </JsonUnionSerialization>
+    }
+
     static void JsonUnionStructuralClassifierExample()
     {
         // <JsonUnionStructuralClassifier>
@@ -420,12 +431,18 @@ sealed class EventData
 
 readonly record struct Measurement(Decimal64 Voltage);
 
+// <JsonUnionType>
+public union Reading(int, string);
+// </JsonUnionType>
+
+// <JsonUnionStructuralType>
 [JsonUnion(TypeClassifier = typeof(JsonUnionTypeStructuralClassifier))]
 public union PetUnion(Dog, Cat);
 
 public sealed record Dog(string Name, string Breed);
 
 public sealed record Cat(string Name, int Lives);
+// </JsonUnionStructuralType>
 
 [JsonSerializable(typeof(PetUnion))]
 internal partial class PetJsonContext : JsonSerializerContext;

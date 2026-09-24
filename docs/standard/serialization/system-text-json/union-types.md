@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # Serialize union types with System.Text.Json
 
-Starting in .NET 11, <xref:System.Text.Json.JsonSerializer> supports [C# union types](../../../csharp/language-reference/builtin-types/union.md). A union contract describes its case types and how the serializer constructs and deconstructs union values. Reflection-based serialization and source-generated metadata both support union contracts.
+Starting in .NET 11, <xref:System.Text.Json.JsonSerializer> supports [C# union types](../../../csharp/language-reference/builtin-types/union.md). A union holds one of the case types in its declaration. `JsonSerializer` writes the active case value and can read it back. Reflection-based serialization and source-generated metadata both support unions.
 
 > [!IMPORTANT]
 > C# union types are a preview feature. Set `<LangVersion>preview</LangVersion>` in your project to use them.
@@ -40,8 +40,6 @@ The serialized JSON contains the active case value rather than a wrapper or disc
 ```
 
 By default, the serializer classifies incoming JSON by token type. In the preceding union, a JSON number selects `int`, a JSON string selects `string`, and a JSON object selects `Message`.
-
-The union's <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind?displayProperty=nameWithType> value is <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType>. Its contract exposes the cases through <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnionCases?displayProperty=nameWithType> and uses union constructor and deconstructor delegates to convert between a case value and the union value.
 
 `JsonUnionAttribute` configures an existing union contract. Applying the attribute to an ordinary type doesn't turn that type into a union.
 
@@ -103,7 +101,7 @@ A union can declare nullable case types. JSON `null` selects the first nullable 
 
 ## Customize a union contract
 
-For advanced scenarios, customize the union metadata through <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo>. A union contract exposes:
+For advanced scenarios, customize the union metadata through <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo>. A union's <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind?displayProperty=nameWithType> value is <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType>. Its contract exposes:
 
 * <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnionCases?displayProperty=nameWithType>, which contains <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo> entries.
 * <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnionConstructor?displayProperty=nameWithType>, which creates a union from a case type and value.

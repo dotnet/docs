@@ -20,6 +20,8 @@ Plain holes and .NET-format holes, such as `{weightKg:F2}`, no longer need refle
 
 This change doesn't make every printf format reflection-free. For supported formats, culture behavior, and the distinct `FormattableString` path, see [Interpolated strings](../language-reference/interpolated-strings.md#native-aot-and-string-valued-interpolation).
 
+Thanks to [@charlesroddie](https://github.com/dotnet/fsharp/pull/19971) for the interpolation implementation.
+
 ## Share record fields without repeating them
 
 A shipping address belongs in several application models. **Record type spreads** let you declare those shared fields once while keeping a flat shipment model:
@@ -32,6 +34,8 @@ A shipping address belongs in several application models. **Record type spreads*
 
 `Shipment` is its own record type, not a subtype of `DeliveryAddress`. For projection into a smaller model, composition from multiple sources, field overrides, and compatibility considerations, see the new [Record spread operators](../language-reference/record-spreads.md) reference.
 
+Thanks to [@brianrourkeboll](https://github.com/dotnet/fsharp/pull/18927) for record spreads.
+
 ### Construct a record by its type name
 
 When several records share field names, a constructor call identifies the intended type immediately and offers constructor completion:
@@ -42,6 +46,8 @@ When several records share field names, a constructor call identifies the intend
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
 
 This syntax exposes the record's all-fields constructor to F#. It is separate from record spreads. See [Record constructors](../language-reference/records.md#record-constructors).
+
+Thanks to [@charlesroddie](https://github.com/dotnet/fsharp/pull/19974) for record constructors.
 
 ## Give .NET frameworks the original handler
 
@@ -56,6 +62,8 @@ Register the service and route in an ASP.NET Core app:
 A request to `/shipments/SHP-1042` with `X-Customer: Ada` returns `Ada: SHP-1042 is Dispatched`. The route parameter name, `[<FromServices>]`, and `[<FromHeader>]` come from `status`, rather than a generated wrapper method.
 
 Direct construction also improves delegate equality and event-handler removal. Not every lambda or adapted function can become a direct delegate. See [Delegates](../language-reference/delegates.md#direct-construction-and-framework-metadata) for the runnable project, reflection checks, and the null-receiver compatibility change.
+
+Thanks to [@kerams](https://github.com/dotnet/fsharp/pull/19993) for direct delegate construction.
 
 ### Resolve common overloads with less help
 
@@ -139,6 +147,8 @@ For example, turn a report read into a length calculation with a recoverable err
 
 These additions require an FSharp.Core version that contains them. Cancellation still propagates through `catch` and `catchWith`; `ValueTask` still has single-consumption constraints. See [Async and task functions](../language-reference/async-task-functions.md) for signatures, exception behavior, and library-asset requirements.
 
+Thanks to [@bartelink](https://github.com/dotnet/fsharp/pull/19844) for the async/task API contributions.
+
 ### Report a failure without losing its origin
 
 An async error handler can add context to a log and then propagate the original exception and stack trace:
@@ -149,6 +159,8 @@ An async error handler can add context to a log and then propagate the original 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
 
 See [Rethrow from a computation expression](../language-reference/computation-expressions.md#rethrow-from-a-computation-expression).
+
+Thanks to [@xperiandri](https://github.com/dotnet/fsharp/pull/20405) for computation-expression rethrow support.
 
 ### Experiment with runtime-managed suspension
 
@@ -161,6 +173,8 @@ With the small application-defined builder in [Runtime async experiments](../lan
 
 :::code language="fsharp" source="../language-reference/snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
 
+Thanks to [@majocha](https://github.com/dotnet/fsharp/pull/20235) for the runtime-async implementation.
+
 ## Adapt existing types to generic inline code
 
 An extension member can give a framework type the operation your generic code expects, without wrapping the type:
@@ -171,6 +185,8 @@ An extension member can give a framework type the operation your generic code ex
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
 
 The same `resourceName` function accepts a `Uri` and an application record. Extensions must be in scope where the inline function is defined. See [Extension members and SRTP](../language-reference/generics/statically-resolved-type-parameters.md#extension-member-constraints).
+
+Thanks to [@gusty](https://github.com/dotnet/fsharp/pull/19602) for extending SRTP support.
 
 ## Reuse API documentation
 
@@ -208,3 +224,7 @@ When you upgrade existing code:
 - Use integral-backed enums for [bitwise operations](../language-reference/enumerations.md#bitwise-operations). Invalid backing types are rejected at compile time.
 - Complete `let!` bindings with a body. Custom builder authors should review the [tail-operation contracts](../language-reference/computation-expressions.md#tail-operations-in-custom-builders), including terminal `do!`.
 - Use a supported [language version](../language-reference/compiler-options.md#language-version-and-indentation). Numbered modes start at F# 8; the old non-strict indentation mode is removed.
+
+## Acknowledgements
+
+Thanks to [@charlesroddie](https://github.com/dotnet/fsharp/pull/19971), [@brianrourkeboll](https://github.com/dotnet/fsharp/pull/18927), [@kerams](https://github.com/dotnet/fsharp/pull/19993), [@bartelink](https://github.com/dotnet/fsharp/pull/19844), [@xperiandri](https://github.com/dotnet/fsharp/pull/20405), [@majocha](https://github.com/dotnet/fsharp/pull/20235), and [@gusty](https://github.com/dotnet/fsharp/pull/19602) for the contributions highlighted here.

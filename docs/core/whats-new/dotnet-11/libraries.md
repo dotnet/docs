@@ -205,7 +205,7 @@ For other case-selection rules, derive from <xref:System.Text.Json.Serialization
 
 If a union declares separate `T` and `T?` cases, the serializer selects the nullable case for a `null` payload. A non-null payload is ambiguous without a custom classifier because both cases use the same JSON shape. If no case accepts `null`, JSON `null` deserializes to the default union value, which also serializes as `null`.
 
-C# union types are a preview language feature. For language syntax, see [C# 15 union types](../../../csharp/whats-new/csharp-15.md#union-types). For more about classifiers and advanced contract metadata such as <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo>, see [Serialize union types](../../../standard/serialization/system-text-json/union-types.md).
+For language syntax, see [C# 15 union types](../../../csharp/whats-new/csharp-15.md#union-types). For more about classifiers and advanced contract metadata such as <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo>, see [Serialize union types](../../../standard/serialization/system-text-json/union-types.md).
 
 **F# discriminated unions.** The serializer represents cases without fields as JSON strings and cases with fields as JSON objects that contain a `$type` discriminator:
 

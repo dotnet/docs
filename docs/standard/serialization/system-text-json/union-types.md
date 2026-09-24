@@ -11,10 +11,7 @@ ai-usage: ai-assisted
 
 # Serialize union types with System.Text.Json
 
-Starting in .NET 11, <xref:System.Text.Json.JsonSerializer> supports [C# union types](../../../csharp/language-reference/builtin-types/union.md). A union holds one of the case types in its declaration. `JsonSerializer` writes the active case value and can read it back.
-
-> [!IMPORTANT]
-> C# union types are a preview feature. Set `<LangVersion>preview</LangVersion>` in your project to use them.
+Starting in .NET 11, <xref:System.Text.Json.JsonSerializer> supports [C# 15 union types](../../../csharp/language-reference/builtin-types/union.md). A union holds one of the case types in its declaration. `JsonSerializer` writes the active case value and can read it back.
 
 ## Serialize and deserialize union values
 

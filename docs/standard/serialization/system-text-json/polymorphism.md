@@ -563,10 +563,7 @@ JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
 
 ## Infer polymorphism from a closed hierarchy
 
-Starting in .NET 11, `System.Text.Json` can infer derived types from a C# [closed hierarchy](../../../csharp/language-reference/keywords/closed.md). Enable inference on one hierarchy through <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType>:
-
-> [!IMPORTANT]
-> Closed hierarchies are a C# 15 preview feature. Set `<LangVersion>preview</LangVersion>` in your project to use the `closed` modifier.
+Starting in .NET 11, `System.Text.Json` can infer derived types from a [C# 15 closed hierarchy](../../../csharp/language-reference/keywords/closed.md). Enable inference on one hierarchy through <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType>:
 
 ```csharp
 [JsonPolymorphic(InferClosedTypePolymorphism = true)]

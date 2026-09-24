@@ -72,7 +72,7 @@ The structural classifier doesn't inspect property values, nested objects, strin
 
 ## Provide a custom classifier
 
-Derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory> when token and structural classification don't meet your requirements. Register the factory in one of these locations:
+Derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory> when default token classification or the built-in <xref:System.Text.Json.Serialization.JsonUnionTypeStructuralClassifier> doesn't meet your requirements. A custom classifier can use other structural rules to select a union case. Register the factory in one of these locations:
 
 * Assign a delegate to <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.TypeClassifier?displayProperty=nameWithType> when you customize the contract.
 * Set <xref:System.Text.Json.Serialization.JsonUnionAttribute.TypeClassifier?displayProperty=nameWithType> for one union.

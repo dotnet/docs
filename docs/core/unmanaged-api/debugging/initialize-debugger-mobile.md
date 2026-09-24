@@ -10,7 +10,7 @@ ai-usage: ai-generated
 
 Custom .NET debuggers are typically hosted in a separate process. Mobile platforms restrict or prohibit creating such processes, so the target-side custom debugger component must instead be loaded into the application process.
 
-This article applies only to debugger initialization on mobile platforms (iOS and Android) in .NET 11. It does not apply to NativeAOT.
+This article applies only to debugger initialization on mobile platforms (iOS and Android) in .NET 11 and later versions. It does not apply to NativeAOT.
 
 ## Implement and deploy the target-side component
 

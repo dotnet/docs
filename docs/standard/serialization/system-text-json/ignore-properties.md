@@ -79,7 +79,7 @@ The serializer applies ignore settings in this order, from highest to lowest pre
 * A type-level <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>.
 * <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition?displayProperty=nameWithType>.
 
-At the type level, <xref:System.Text.Json.Serialization.JsonIgnoreCondition.Always> is invalid. Reflection-based serialization throws an <xref:System.InvalidOperationException>, and source generation reports `SYSLIB1226`. Because `Always` is the default condition, specify `Condition` when you apply `[JsonIgnore]` to a type.
+At the type level, <xref:System.Text.Json.Serialization.JsonIgnoreCondition.Always> is invalid. Reflection-based serialization throws an <xref:System.InvalidOperationException>, and source generation reports [SYSLIB1226](../../../fundamentals/syslib-diagnostics/syslib1220-1229.md). Because `Always` is the default condition, specify `Condition` when you apply `[JsonIgnore]` to a type.
 
 A type-level <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull> condition doesn't ignore non-nullable value-type members. The type-level condition still overrides the global `DefaultIgnoreCondition`, so those members remain in the JSON even when the global condition is `WhenWritingDefault`.
 

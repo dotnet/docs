@@ -618,7 +618,7 @@ End Class
 
 For `Base<int>`, the serializer registers `Derived<int>`. The same resolution supports generic interfaces, reordered type parameters, nested generic arguments, arrays, and derived types that fix some base type arguments to concrete types.
 
-Every derived type parameter must be inferable from the closed base type, the substitution must be unambiguous, and the resulting type must satisfy its generic constraints. Reflection-based serialization throws <xref:System.InvalidOperationException> for an unsupported specialization. Source generation reports `SYSLIB1229`, and the generated hierarchy still fails when the serializer configures it. Suppressing the warning doesn't make the registration valid.
+Every derived type parameter must be inferable from the closed base type, the substitution must be unambiguous, and the resulting type must satisfy its generic constraints. Reflection-based serialization throws <xref:System.InvalidOperationException> for an unsupported specialization. Source generation reports [SYSLIB1229](../../../fundamentals/syslib-diagnostics/syslib1220-1229.md), and the generated hierarchy still fails when the serializer configures it. Suppressing the warning doesn't make the registration valid.
 
 ## Configure polymorphism with the contract model
 

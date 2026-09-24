@@ -151,7 +151,7 @@ Continue to use <xref:System.Text.Json.Serialization.JsonConverterFactory> when:
 * You register the converter through <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> instead of the `[JsonConverter]` attribute.
 
 > [!NOTE]
-> At run time, using an open generic converter on a non-generic type or with mismatched total generic arity throws an <xref:System.InvalidOperationException>. The message identifies the converter and target type.
+> At runtime, using an open generic converter on a non-generic type or with mismatched total generic arity throws an <xref:System.InvalidOperationException>. The message identifies the converter and target type.
 
 ## The use of `Utf8JsonReader` in the `Read` method
 

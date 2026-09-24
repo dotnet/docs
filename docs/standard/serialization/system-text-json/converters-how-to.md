@@ -91,6 +91,8 @@ The `Enum` type is similar to an open generic type: a converter for `Enum` has t
 
 Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonConverterAttribute> supports open generic converter types on generic types when the total type parameter arity matches. This feature lets you apply a `[JsonConverter]` attribute directly using an open generic converter type (for example, `typeof(OptionConverter<>)`) without implementing a <xref:System.Text.Json.Serialization.JsonConverterFactory>. The serializer automatically constructs the closed generic converter.
 
+Unlike the reflection-based factory example above, the source generator resolves the closed converter type at compile time. You can use this pattern with source generation and Native AOT if the converter itself uses AOT-compatible APIs and the generated context provides metadata for the types it handles. The `OptionConverter<T>` example uses `options.GetTypeInfo<T>()` to get metadata for its inner value.
+
 ### Define the generic type
 
 Annotate your generic type with `[JsonConverter]`, specifying the open generic converter type. The converter and target type must have matching total generic arity:

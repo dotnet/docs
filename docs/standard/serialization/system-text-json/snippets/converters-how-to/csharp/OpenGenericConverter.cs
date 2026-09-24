@@ -29,7 +29,7 @@ public sealed class OptionConverter<T> : JsonConverter<Option<T>>
             return default;
         }
 
-        T value = JsonSerializer.Deserialize<T>(ref reader, options)!;
+        T value = JsonSerializer.Deserialize(ref reader, options.GetTypeInfo<T>())!;
         return new Option<T>(value);
     }
 
@@ -42,7 +42,7 @@ public sealed class OptionConverter<T> : JsonConverter<Option<T>>
             return;
         }
 
-        JsonSerializer.Serialize(writer, value.Value, options);
+        JsonSerializer.Serialize(writer, value.Value, options.GetTypeInfo<T>());
     }
 }
 // </OptionConverter>

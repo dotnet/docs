@@ -81,16 +81,7 @@ Derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory> when
 
 A classifier reads the current JSON value and returns one of the case types from <xref:System.Text.Json.Serialization.JsonTypeClassifierContext.UnionCases?displayProperty=nameWithType>. The serializer checks the contract delegate first, followed by the per-union factory, the options-level factories, and built-in token classification.
 
-## Use source generation
-
-Add the union type to a <xref:System.Text.Json.Serialization.JsonSerializerContext> as you would any other serializable type:
-
-```csharp
-[JsonSerializable(typeof(Payload))]
-internal partial class AppJsonContext : JsonSerializerContext;
-```
-
-The source generator emits the union cases and constructor and deconstructor delegates. It also reports a diagnostic when the cases can't be classified unambiguously and no classifier is configured. Register a classifier through <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.TypeClassifiers?displayProperty=nameWithType> when the source generator must account for it during analysis.
+For ambiguous unions, the source generator reports a diagnostic unless a classifier is configured at generation time.
 
 ## Handle null and default union values
 

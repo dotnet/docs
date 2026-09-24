@@ -22,7 +22,7 @@ On Windows, .NET components like the runtime and SDK consist of multiple MSIs. I
 - Some Azure marketplace images of Windows include preinstalled copies of the bundles.
 - Third party package managers like Chocolatey also distribute the .NET bundles.
 - Enterprises sometimes repackage the bundles using proprietary packages for internal distribution.
-- Some .NET application hosts may also direct users to download and install missing runtime bundles.
+- Some .NET application hosts might also direct users to download and install missing runtime bundles.
 
 Visual Studio can also be used to acquire .NET and uses the same MSIs as the standalone bundles.
 
@@ -45,7 +45,7 @@ Bundles are composed from multiple MSIs, some of which are shared between multip
 
 - The runtime bundle contains three MSIs that also ship in the desktop runtime and SDK bundles.
 - The desktop bundle includes an additional MSI that is shared with the SDK bundle.
-- The SDK includes additional MSIs that contain the CLI, templates and targeting packs used to create and build .NET applications.
+- The SDK includes additional MSIs that contain the CLI, templates, and targeting packs used to create and build .NET applications.
 
 Shared MSIs are managed using reference counting. Every .NET MSI creates a registry key called a provider key that allows a bundle to register itself as a dependent. If an MSI is already installed, the bundle only updates the registration information. Bundles are unregistered when they're removed. The shared MSIs are only removed once there are no registered dependents.
 
@@ -74,7 +74,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Dependencies\Dotnet_CLI_SharedHost
 
 ## Bin deployed installations
 
-Bin deployed installations refer to copies of .NET that aren't associated with an MSI. This can be achieved by running the install scripts as an administrator and setting the installation directory to `Program Files\dotnet'. This can complicate remediation. Scanners will report vulnerabilities, but administrators won't find MSIs to uninstall. DNIM is able to detect bin deployed installs.
+Bin deployed installations refer to copies of .NET that aren't associated with an MSI. This can be achieved by running the install scripts as an administrator and setting the installation directory to `Program Files\dotnet'. Bin deployed installations can complicate remediation. Scanners will report vulnerabilities, but administrators won't find MSIs to uninstall. DNIM is able to detect bin deployed installs.
 
 ## Detection
 

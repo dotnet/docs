@@ -177,11 +177,11 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 #### Union serialization
 
-**C# union types.** Starting in .NET 11, C# offers union types, which <xref:System.Text.Json.JsonSerializer> serializes and deserializes out of the box. Define the possible cases:
+**C# union types.** Starting in .NET 11, C# offers union types. For example, `Reading` can hold an `int` or a `string`:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionType":::
 
-Pass the union to `JsonSerializer`:
+A `Reading` that holds `"hello"` round-trips as a JSON string:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionSerialization":::
 

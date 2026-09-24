@@ -16,20 +16,20 @@ To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs
 
 * How to access property getters and fields for serialization.
 * How to access a constructor, property setters, and fields for deserialization.
-* Which attributes customize serialization or deserialization.
+* Information about which attributes have been used to customize serialization or deserialization.
 * Runtime configuration from <xref:System.Text.Json.JsonSerializerOptions>.
 
-The term *metadata* refers to this information.
+This information is referred to as *metadata*.
 
 ## Reflection
 
-By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time by using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). The first time `JsonSerializer` serializes or deserializes a type, it collects and caches this metadata. Metadata collection takes time and uses memory.
+By default, <xref:System.Text.Json.JsonSerializer> collects metadata at runtime by using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 ## Source generation
 
-As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature. Source generation improves performance, reduces private memory usage, and facilitates [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md) to reduce app size. [Native AOT applications](../../../core/deploying/native-aot/index.md) don't support certain reflection APIs, so use source generation for those apps.
+As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. In addition, certain reflection APIs can't be used in [Native AOT applications](../../../core/deploying/native-aot/index.md), so you must use source generation for those apps.
 
-Source generation provides two modes:
+Source generation can be used in two modes:
 
 * **Metadata-based mode**
 
@@ -39,7 +39,7 @@ Source generation provides two modes:
 
   <xref:System.Text.Json.JsonSerializer> features that customize the output of serialization, such as naming policies and reference preservation, carry a performance overhead. In serialization-optimization mode, System.Text.Json generates optimized serialization code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly. This optimized or *fast path* code increases serialization throughput.
 
-  `System.Text.Json` doesn't currently provide fast-path *deserialization*. For more information, see [dotnet/runtime issue 55043](https://github.com/dotnet/runtime/issues/55043).
+  Fast-path *deserialization* isn't currently available. For more information, see [dotnet/runtime issue 55043](https://github.com/dotnet/runtime/issues/55043).
 
 Source generation for `System.Text.Json` requires C# 9.0 or a later version.
 

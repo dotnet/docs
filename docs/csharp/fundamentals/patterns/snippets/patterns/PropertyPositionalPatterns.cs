@@ -6,6 +6,9 @@ static class PropertyPositionalPatterns
             new WeatherReading(32, 75))}");
         Console.WriteLine($"Date: {DescribeDate(
             new DateTime(2026, 9, 19))}");
+        Console.WriteLine($"Nullable input: {DescribeNullableInput(null)}");
+        Console.WriteLine($"Date (branches): {DescribeDateWithBranches(
+            new DateTime(2026, 9, 19))}");
         Console.WriteLine($"Point: {ClassifyPoint(new GridPoint(0, 5))}");
         Console.WriteLine($"Crossing: {GetCrossingInstruction(
             PedestrianSignal.Walk, crossingIsClear: true)}");
@@ -29,6 +32,46 @@ static class PropertyPositionalPatterns
             _ => "Not a date"
         };
     // </NestedPropertyPattern>
+
+    // <NullRecursivePattern>
+    static string DescribeNullableInput(object? value)
+    {
+        if (value is not { } nonNullValue)
+        {
+            return "No value";
+        }
+
+        return nonNullValue switch
+        {
+            DateTime => "Date",
+            string => "Text",
+            _ => "Another type"
+        };
+    }
+    // </NullRecursivePattern>
+
+    // <ImperativeDateBranches>
+    static string DescribeDateWithBranches(object? value)
+    {
+        if (value is DateTime date)
+        {
+            if (date.DayOfWeek == DayOfWeek.Saturday ||
+                date.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return "Weekend date";
+            }
+
+            return "Weekday date";
+        }
+
+        if (value is null)
+        {
+            return "No date";
+        }
+
+        return "Not a date";
+    }
+    // </ImperativeDateBranches>
 
     // <ObjectPropertyPattern>
     static string ClassifyPoint(GridPoint point) =>

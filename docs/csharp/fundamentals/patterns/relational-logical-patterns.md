@@ -21,7 +21,7 @@ The expression `temperature` is the pattern input. C# evaluates it once, and eac
 - `>= 18 and <= 24` tests a range.
 - `(>= 0 and < 10) or > 30` tests two alternative ranges.
 
-Patterns can keep several related choices next to their results. An imperative series of `if` statements can express the same decision, so choose the form that makes the choices easiest to read.
+This article shows both patterns and imperative conditions so you can learn each form and compare how they express the same decisions. A single condition can look similar in either form. Patterns can make a series of related branches easier to read by keeping the choices next to their results. Choose the form that makes the code easiest to understand.
 
 ## Compare values with relational patterns
 
@@ -49,7 +49,7 @@ When the right operand is constant, choose mainly for readability. A relational 
 - An `or` pattern matches when either nested pattern matches.
 - A `not` pattern succeeds when its nested pattern fails.
 
-The opening example uses `and` to describe a range and `or` to describe alternatives. A `not` pattern can exclude a value, as in `status is not Status.Complete`. The following methods compare a pattern with an equivalent imperative test:
+The opening example uses `and` to describe a range and `or` to describe alternatives. A `not` pattern can exclude a value, as in `status is not Status.Complete`. The following methods show both forms so you can learn their syntax and compare how they express the same test:
 
 :::code language="csharp" source="snippets/patterns/RelationalLogicalPatterns.cs" ID="PatternAndImperative":::
 
@@ -59,7 +59,7 @@ Pattern operators form patterns rather than Boolean expressions: `and` correspon
 
 ## Group patterns with parentheses
 
-A *parenthesized pattern* uses parentheses to show or change how nested patterns are grouped. C# specifies how pattern operators bind:
+A *parenthesized pattern* uses parentheses to show or change how nested patterns are grouped. *Binding* determines which pattern operands an operator groups together, similar to implicit grouping when you don't write parentheses. C# specifies the following binding order:
 
 1. `not`
 1. `and`
@@ -69,9 +69,9 @@ The following test accepts priorities 1 through 3 or the special priority 9:
 
 :::code language="csharp" source="snippets/patterns/RelationalLogicalPatterns.cs" ID="ParenthesizedPattern":::
 
-The compiler groups `and` before `or`. The parentheses make the two alternatives visible: the range from 1 through 3, or 9. Show grouping explicitly whenever a pattern mixes `and` and `or`, or when `not` applies to a compound pattern. Parentheses can also change the default grouping, as in `not (>= 1 and <= 3)`.
+The compiler groups `and` before `or`. The parentheses make the intended grouping explicit and the two alternatives easy to see: the range from 1 through 3, or 9. For readability, use parentheses whenever a pattern mixes `and` and `or`, or when `not` applies to a compound pattern. Parentheses can also change the default grouping, as in `not (>= 1 and <= 3)`.
 
-Binding determines how the compiler groups a pattern. The runtime check order for nested patterns is unspecified, and pattern operators follow pattern-matching rules rather than short-circuit Boolean rules. Write nested patterns so their result is independent of check order.
+The runtime check order for nested patterns is unspecified, and pattern operators follow pattern-matching rules rather than short-circuit Boolean rules. Write nested patterns so their result is independent of check order.
 
 ## Use a `when` guard for a separate condition
 

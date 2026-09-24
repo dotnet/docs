@@ -239,7 +239,7 @@ To fix these errors, ensure your preprocessor directives follow the correct synt
 
 - **CS8301**: *Invalid name for a preprocessing symbol; 'symbol name' is not a valid identifier*
 
-When creating <xref:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions> programmatically, provide each conditional-compilation symbol as one identifier-shaped name. The first character must be valid at the start of a C# identifier, and the remaining characters must be valid identifier characters. Roslyn also accepts keyword text as a symbol name, but don't add an `@` prefix. Don't include whitespace, punctuation such as `.` or `-`, an assignment such as `FEATURE=1`, or a complete conditional expression.
+When you create <xref:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions> programmatically, provide each conditional compilation symbol as one identifier-shaped name. The first character must be valid at the start of a C# identifier, and the remaining characters must be valid identifier characters. Roslyn also accepts keyword text as a symbol name, but don't add an `@` prefix. Don't include whitespace, punctuation such as `.` or `-`, an assignment such as `FEATURE=1`, or a complete conditional expression.
 
 A preprocessing symbol records only whether its name is defined. It doesn't store a value. Invalid names supplied through the **DefineConstants** project property or the `-define` compiler option produce **CS2029** instead; see [DefineConstants](../compiler-options/language.md#defineconstants).
 

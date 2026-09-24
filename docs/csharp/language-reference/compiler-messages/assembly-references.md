@@ -51,7 +51,7 @@ ai-usage: ai-assisted
 # Resolve errors and warnings related to assembly references
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0012**](#missing-references): *The type 'type' is defined in an assembly that is not referenced. You must add a reference to assembly 'assembly'.*
 - [**CS0234**](#missing-references): *The type or namespace name does not exist in the namespace (are you missing an assembly reference?)*
@@ -74,7 +74,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8356**](#duplicate-references): *Predefined type 'type name' is declared in multiple referenced assemblies: 'first assembly name' and 'second assembly name'*
 - [**CS9286**](#missing-references): *Type does not contain a definition and no accessible extension member for receiver type could be found (are you missing a using directive or an assembly reference?)*
 
-In addition, the following warnings are covered in this article:
+In addition, this article covers the following warnings:
 
 - [**CS1683**](#invalid-assembly-reference): *Reference to type 'Type Name' claims it is defined in this assembly, but it is not defined in source or any added modules.*
 
@@ -144,9 +144,9 @@ The following errors indicate a duplicate assembly reference:
 - **CS1760**: *Multiple assemblies refer to the same metadata but only one is a linked reference (specified using /link option); consider removing one of the references.*
 - **CS8356**: *Predefined type 'type name' is declared in multiple referenced assemblies: 'first assembly name' and 'second assembly name'*
 
-To fix these errors, you must either remove one of the references, or resolve the duplication. Causes for duplication include:
+To fix these errors, remove one of the references or resolve the duplication. Causes for duplication include:
 
-- Multiple unsigned assemblies have the same name.
+- Multiple unsigned assemblies with the same name.
 - Your project references multiple versions of the same assembly.
 
 For CS8356, remove or replace the duplicate or incompatible reference that defines the same predefined runtime type. Ensure the project targets one coherent framework and reference-assembly set. Don't add another source definition of the predefined type.
@@ -167,4 +167,4 @@ The following warning also indicates an invalid reference assembly:
 
 - **CS1683**: *Reference to type 'Type Name' claims it is defined in this assembly, but it is not defined in source or any added modules*
 
-Check that the assembly name is spelled correctly. The referenced assembly file might be invalid.
+Check that you spelled the assembly name correctly. The referenced assembly file might be invalid.

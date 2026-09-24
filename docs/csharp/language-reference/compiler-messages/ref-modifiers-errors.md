@@ -122,10 +122,10 @@ ms.date: 09/23/2026
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
-The following errors and warnings can be generated when you're working with reference variables:
+You might see the following errors and warnings when you work with reference variables:
 
 <!-- The text in the bullet lists generate issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0192**](#writable-reference-variables-require-a-writable-referent): *A `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
 - [**CS0199**](#writable-reference-variables-require-a-writable-referent): *A `static readonly` field cannot be used as a `ref` or `out` value (except in a static constructor)*
@@ -188,7 +188,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 These errors and warnings follow these themes:
 
 - ***[Incorrect syntax](#incorrect-syntax)***:  The syntax of your declaration or usage is invalid.
-- ***[Language constructs where `ref` variables aren't valid](#reference-variable-restrictions)***:  Some C# idioms don't allow variables. Usually this is because ref safety analysis can't be performed reliably.
+- ***[Language constructs where `ref` variables aren't valid](#reference-variable-restrictions)***:  Some C# idioms don't allow variables. Usually this restriction exists because ref safety analysis can't be performed reliably.
 - ***[Value expression used where a reference variable is needed](#reference-variables-require-a-referent)***:  The expression used as a reference variable must be a variable, not a value expression.
 - ***[Writable reference variables referring to readonly variables](#writable-reference-variables-require-a-writable-referent)***:  A reference to a readonly variable can't be passed by writable reference.
 
@@ -196,7 +196,7 @@ This article uses the term *reference variable* as a general term for a paramete
 
 ## Incorrect syntax
 
-These errors indicate that you're using incorrect syntax regarding reference variables:
+These errors indicate that you're using incorrect syntax for reference variables:
 
 - **CS8328**: *The parameter modifier 'modifier' cannot be used with 'modifier'*
 - **CS8373**:  *The left-hand side of a `ref` assignment must be a ref variable.*
@@ -223,7 +223,7 @@ For more information about reference variables and their syntax requirements, se
 
 ## Reference variable restrictions
 
-The following errors and warnings indicate that a reference variable can't be used where you have one:
+The following errors and warnings indicate that you can't use a reference variable in a particular context:
 
 - **CS0631**:  *`ref` and `out` are not valid in this context*
 - **CS0767**:  *Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on `ref` and `out`*
@@ -255,10 +255,10 @@ The following errors and warnings indicate that a reference variable can't be us
 
 To correct these errors and warnings:
 
-- Remove reference parameters from [indexers](../../programming-guide/indexers/index.md). Indexers are designed to provide array-like access syntax and the compiler can't guarantee safe lifetime tracking for references passed through indexer accessors (**CS0631**, **CS1623**).
-- Remove reference parameters from [iterator methods](../../iterators.md). Iterators execute code lazily across multiple calls using state machines, and the compiler can't ensure referenced variables remain valid across yield return boundaries where execution is suspended and resumed (**CS1623**).
-- Remove reference parameters from [async methods](../../asynchronous-programming/index.md). Async methods might suspend execution at await points and resume on different threads, making it impossible to guarantee that referenced variables remain valid and accessible throughout the method's execution (**CS1988**).
-- Avoid using [await expressions](../operators/await.md) inside [ref conditional expressions](../operators/conditional-operator.md#conditional-ref-expression). The await operation might suspend execution and invalidate the references being selected by the conditional operator, leading to potential use of invalidated references when execution resumes (**CS8325**).
+- Remove reference parameters from [indexers](../../programming-guide/indexers/index.md). Indexers provide array-like access syntax, and the compiler can't guarantee safe lifetime tracking for references passed through indexer accessors (**CS0631**, **CS1623**).
+- Remove reference parameters from [iterator methods](../../iterators.md). Iterators execute code lazily across multiple calls using state machines, and the compiler can't ensure referenced variables remain valid across `yield return` boundaries where execution is suspended and resumed (**CS1623**).
+- Remove reference parameters from [async methods](../../asynchronous-programming/index.md). Async methods might suspend execution at `await` points and resume on different threads, making it impossible to guarantee that referenced variables remain valid and accessible throughout the method's execution (**CS1988**).
+- Avoid using [await expressions](../operators/await.md) inside [ref conditional expressions](../operators/conditional-operator.md#conditional-ref-expression). The `await` operation might suspend execution and invalidate the references being selected by the conditional operator, leading to potential use of invalidated references when execution resumes (**CS8325**).
 - Ensure both branches of a ref conditional operator return references or neither returns a reference, and when both are references they must be the same type. The conditional operator must produce a consistent result type that can be safely used by the calling code regardless of which branch is selected (**CS8326**, **CS8327**).
 - Remove default values from `ref` and `out` parameters. Reference parameters must always be provided at the call site to establish the required aliasing relationship between the parameter and an existing variable, making default values semantically meaningless (**CS1741**).
 - Avoid declaring an implicitly typed `out` variable in an argument list that also references that same variable. The compiler must infer the variable's type from the method signature while simultaneously validating uses of that variable within the same expression, creating a circular dependency (**CS8196**).
@@ -278,7 +278,7 @@ For more information about where reference variables are allowed, see [Method pa
 
 ## `unscoped ref` restrictions
 
-The `unscoped` qualifier on `ref` parameters isn't allowed in some locations:
+You can't use the `unscoped` qualifier on `ref` parameters in some locations:
 
 - **CS9063**: *UnscopedRefAttribute cannot be applied to this parameter because it is unscoped by default.*
 - **CS9066**: *UnscopedRefAttribute cannot be applied to parameters that have a 'scoped' modifier.*
@@ -311,14 +311,14 @@ Warnings:
 To correct these errors:
 
 - Store the result of a property or indexer access in a local variable before passing it as a reference parameter. [Properties](../../programming-guide/classes-and-structs/properties.md) and [indexers](../../programming-guide/indexers/index.md) are methods that return values rather than providing direct access to storage locations, and reference parameters require an actual variable with a stable memory location that can be aliased (**CS0206**, **CS1510**).
-- Use the `in` modifier instead of `ref` when passing arguments to `in` parameters. While `ref` technically works due to backward compatibility, the `in` modifier more clearly expresses the intent that the argument is read-only and may be passed more efficiently as a reference without copying (**CS9191**, **CS9195**).
+- Use the `in` modifier instead of `ref` when passing arguments to `in` parameters. While `ref` technically works due to backward compatibility, the `in` modifier more clearly expresses the intent that the argument is read-only and can be passed more efficiently as a reference without copying (**CS9191**, **CS9195**).
 - Add the appropriate reference modifier (`ref`, `in`, or `ref readonly`) when passing arguments to parameters that expect references. Omitting the modifier might cause the compiler to create a temporary copy of the value, which is inefficient and can lead to unexpected behavior if the calling code expects modifications to be reflected in the original variable (**CS9192**, **CS9193**).
 
 For more information about reference parameters and passing variables by reference, see [Method parameters](../keywords/method-parameters.md), [ref keyword](../keywords/ref.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## Writable reference variables require a writable referent
 
-A writable reference variable requires that the referent also is writable. The following errors indicate that the variable isn't writable:
+A writable reference variable requires that the referent is also writable. The following errors indicate that the variable isn't writable:
 
 - **CS0192**:  *A `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
 - **CS0199**:  *A `static readonly` field cannot be used as a `ref` or `out` value (except in a static constructor)*

@@ -21,7 +21,7 @@ This article covers lexer and parser-stage diagnostics for incomplete declaratio
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS8180**](#incomplete-accessor-declarations): *{ or ; or => expected*
 - [**CS8300**](#merge-conflict-markers): *Merge conflict marker encountered*
@@ -32,7 +32,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 - **CS8180**: *{ or ; or => expected*
 
-The parser found an incomplete property, indexer, or event accessor declaration. After an accessor such as `get`, `set`, `init`, `add`, or `remove`, provide the form allowed in that declaration: a block body (`{ ... }`), a semicolon (`;`), or an expression body (`=> expression;`). Don't assume that every form is valid in every context; for example, a semicolon-only accessor is used for an automatically implemented or abstract member. Fix this error first because parser recovery can produce additional errors after the incomplete accessor.
+The parser found an incomplete property, indexer, or event accessor declaration. After an accessor such as `get`, `set`, `init`, `add`, or `remove`, provide the form allowed in that declaration: a block body (`{ ... }`), a semicolon (`;`), or an expression body (`=> expression;`). Don't assume that every form is valid in every context. For example, a semicolon-only accessor is used for an automatically implemented or abstract member. Fix this error first because parser recovery can produce more errors after the incomplete accessor.
 
 ```csharp
 class Example
@@ -45,7 +45,7 @@ class Example
 
 - **CS8300**: *Merge conflict marker encountered*
 
-The source file contains an unresolved version-control merge conflict marker, such as `<<<<<<<`, `=======`, or `>>>>>>>`. The compiler recognizes the marker, reports **CS8300**, and continues recovery. Content within the unresolved region can still produce additional diagnostics for invalid tokens or syntax. Review both sides of every conflict, choose or combine the intended code, and remove all conflict markers before compiling. Don't merely comment out the markers or blindly keep one side, because either action can leave incorrect or duplicate code.
+The source file contains an unresolved version-control merge conflict marker, such as `<<<<<<<`, `=======`, or `>>>>>>>`. The compiler recognizes the marker, reports **CS8300**, and continues recovery. Content within the unresolved region can still produce more diagnostics for invalid tokens or syntax. Review both sides of every conflict, choose or combine the intended code, and remove all conflict markers before compiling. Don't merely comment out the markers or blindly keep one side, because either action can leave incorrect or duplicate code.
 
 ## Unexpected parser-stage tokens and statements
 

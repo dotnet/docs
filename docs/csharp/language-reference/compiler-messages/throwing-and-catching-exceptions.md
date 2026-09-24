@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 This article covers compiler diagnostics related to throwing and catching exceptions. The following warnings are generated when an exception filter is a constant `false`:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 
 - [**CS8359**](#remove-a-constant-false-exception-filter): *Filter expression is a constant 'false', consider removing the catch clause*

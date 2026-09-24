@@ -85,8 +85,7 @@ The following errors and warnings indicate that you're missing an assembly refer
 - **CS0012**: *The type 'type' is defined in an assembly that is not referenced. You must add a reference to assembly 'assembly'.*
 - **CS0234**: *The type or namespace name does not exist in the namespace (are you missing an assembly reference?)*
 - **CS0246**: *The type or namespace name could not be found (are you missing a using directive or an assembly reference?)*
-- **CS0400**: *The type or namespace name could not be found in the global namespace (are you missing an assembly reference?)*
-- **CS1714**: *The base class or interface of this type could not be resolved or is invalid.*
+- [**CS1714**](#missing-references): *The base class or interface of this type could not be resolved or is invalid.*
 - **CS9286**: *Type does not contain a definition and no accessible extension member for receiver type could be found (are you missing a using directive or an assembly reference?)*
 
 These compiler errors indicate one of these problems in your code:

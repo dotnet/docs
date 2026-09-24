@@ -27,8 +27,6 @@ This article shows both patterns and imperative conditions so you can learn each
 
 A *relational pattern* compares its pattern input with a compile-time constant by using `<`, `>`, `<=`, or `>=`. A *compile-time constant* is a value the compiler can evaluate while compiling the program. Numeric and character literals, and `const` variables of compatible numeric or character types, are representative examples. Ordinary variables, properties, method calls, and `static readonly` fields aren't compile-time constants. In the opening example, both `>= 18` and `<= 24` test the same evaluated `temperature` value.
 
-## Distinguish expressions from patterns
-
 The same relational symbol can appear in an ordinary expression or in a pattern. The following example uses both forms with a temperature:
 
 :::code language="csharp" source="snippets/patterns/RelationalLogicalPatterns.cs" ID="ExpressionAndPattern":::
@@ -41,7 +39,7 @@ The expression can compare `temperature` with the variable `threshold`. A relati
 
 When the right operand is constant, choose mainly for readability. A relational expression often fits one direct comparison. A relational pattern composes with other patterns and fits naturally when several ranges map to switch results.
 
-## Combine tests with logical patterns
+## Combine conditions with logical patterns
 
 *Logical patterns* combine or negate patterns with the pattern operators `and`, `or`, and `not`:
 

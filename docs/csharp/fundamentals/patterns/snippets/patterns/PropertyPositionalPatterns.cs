@@ -73,19 +73,6 @@ static class PropertyPositionalPatterns
     }
     // </ImperativeDateBranches>
 
-    // <ObjectPropertyPattern>
-    static string ClassifyPoint(GridPoint point) =>
-        point switch
-        {
-            { X: 0, Y: 0 } => "Origin",
-            { X: 0 } => "On the vertical axis",
-            { Y: 0 } => "On the horizontal axis",
-            _ => "Away from both axes"
-        };
-
-    readonly record struct GridPoint(int X, int Y);
-    // </ObjectPropertyPattern>
-
     // <TuplePattern>
     static string GetCrossingInstruction(
         PedestrianSignal signal, bool crossingIsClear) =>

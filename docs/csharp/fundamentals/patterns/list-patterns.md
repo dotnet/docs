@@ -29,7 +29,7 @@ The `columns` expression is the pattern input. `["Name", "Score"]` contains two 
 
 Choose a list pattern when the shape combines an element count with requirements at ordered positions. If only the number of elements matters, a `Length` or `Count` property pattern, such as `items is { Count: 0 }`, states that intent more directly.
 
-## Match selected elements with discards
+## Use a discard to match any element value
 
 The following method reads the winner and third-place finisher from a three-name finishing order:
 

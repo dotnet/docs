@@ -34,9 +34,9 @@ Choose a property pattern when member names help explain the test. Property patt
 
 ## Follow nested inputs in recursive patterns
 
-Property and positional patterns are *recursive patterns*: They can apply another pattern to each property, field, or position they select. The selected value becomes the input to that nested pattern.
+Property and positional patterns are *recursive patterns*: They apply another pattern to each property, field, or position they select. The selected value becomes the input to that nested pattern.
 
-In `IsHotAndHumid`, the `reading` expression is the input to the property pattern. C# evaluates that expression before matching. The pattern then gets two values from the resulting object:
+In `IsHotAndHumid`, the `reading` expression is the input to the property pattern. C# evaluates that expression before matching. The pattern gets two values from the resulting object:
 
 - The relational pattern `> 30` tests the value of `TemperatureC`.
 - The relational pattern `> 70` tests the value of `HumidityPercent`.
@@ -57,14 +57,6 @@ You can add a type test before the braces when the input expression can produce 
 
 `value` is the input expression. C# first evaluates it and tests whether the resulting value is a <xref:System.DateTime>. The `Date` property value then becomes the input for the `DayOfWeek` member access. Finally, the `DayOfWeek` value becomes the input to the logical pattern that tests two constants. Matching succeeds when the outer value has the specified type and every object needed along the member path is non-null.
 
-## Use names for object shapes
-
-:::code language="csharp" source="snippets/patterns/PropertyPositionalPatterns.cs" ID="ObjectPropertyPattern":::
-
-## Follow positional order
-
-:::code language="csharp" source="snippets/patterns/PropertyPositionalPatterns.cs" ID="TuplePattern":::
-
 ## Compare patterns with branching statements
 
 The earlier `DescribeDate` method expresses four results as patterns:
@@ -75,12 +67,12 @@ The following method produces the same results with a series of imperative branc
 
 :::code language="csharp" source="snippets/patterns/PropertyPositionalPatterns.cs" ID="ImperativeDateBranches":::
 
-The pattern-based version keeps the possible results together when several branches test a value's type and shape. The imperative version makes each test and return step explicit. For one condition, either form might look similar; as the number of related branches grows, patterns can make the alternatives easier to compare.
+The pattern-based version keeps the possible results together when several branches test a value's type and shape. The imperative version makes each test and return step explicit. For one condition, either form might look similar. As the number of related branches grows, patterns can make the alternatives easier to compare.
 
 ## See also
 
 - [Pattern matching overview](pattern-matching.md)
-- [Relational, logical, and parenthesized patterns](relational-logical-patterns.md)
+- [Relational, logical, and parenthesized patterns](relational-logical-patterns.md).
 - [Deconstructing tuples and other types](../functional/deconstruct.md)
-- [Property pattern reference](../../language-reference/operators/patterns.md#property-pattern)
-- [Positional pattern reference](../../language-reference/operators/patterns.md#positional-pattern)
+- [Property pattern reference](../../language-reference/operators/patterns.md#property-pattern).
+- [Positional pattern reference](../../language-reference/operators/patterns.md#positional-pattern).

@@ -1,7 +1,7 @@
 ---
 title: Serialize union types with System.Text.Json
 description: Learn how System.Text.Json serializes and deserializes C# union types in .NET 11.
-ms.date: 08/18/2026
+ms.date: 09/24/2026
 no-loc: [System.Text.Json]
 dev_langs:
   - "csharp"
@@ -37,6 +37,8 @@ The serialized JSON contains the active case value rather than a wrapper or disc
 ```
 
 By default, the serializer classifies incoming JSON by token type. In the preceding union, a JSON number selects `int`, a JSON string selects `string`, and a JSON object selects `Message`.
+
+With <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType>, an `int` can also be read from a JSON string. Both the `int` and `string` cases of `Payload` then claim the string token type. Even `"25%"` throws <xref:System.Text.Json.JsonException> for ambiguity before the serializer parses either case. To read strings with web defaults, [provide a custom classifier](#provide-a-custom-classifier) that chooses the case.
 
 ## Distinguish cases with the same JSON token type
 

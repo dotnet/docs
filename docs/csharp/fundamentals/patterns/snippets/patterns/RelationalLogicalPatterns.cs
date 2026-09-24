@@ -2,15 +2,26 @@ static class RelationalLogicalPatterns
 {
     public static void Run()
     {
+        Console.WriteLine($"Temperature: {ClassifyTemperature(21)}");
         ShowExpressionAndPattern(-4, threshold: 0);
         Console.WriteLine(
-            $"Comfortable temperature: {IsComfortableTemperature(21)}");
-        Console.WriteLine($"Weekend: {IsWeekend(DayOfWeek.Saturday)}");
-        Console.WriteLine($"Active status: {IsActive(Status.Pending)}");
+            $"Weekend pattern: {IsWeekendPattern(DayOfWeek.Saturday)}; " +
+            $"imperative: {IsWeekendImperative(DayOfWeek.Saturday)}");
         Console.WriteLine($"Accepted priority: {IsAcceptedPriority(9)}");
         Console.WriteLine(
             $"Heat warning: {GetHeatWarning(36, isOutdoors: true)}");
     }
+
+    // <CombinedPatterns>
+    static string ClassifyTemperature(int temperature) =>
+        temperature switch
+        {
+            < 0 => "Below freezing",
+            >= 18 and <= 24 => "Comfortable",
+            (>= 0 and < 10) or > 30 => "Far outside the comfortable range",
+            _ => "Cool or warm"
+        };
+    // </CombinedPatterns>
 
     // <ExpressionAndPattern>
     static void ShowExpressionAndPattern(int temperature, int threshold)
@@ -31,25 +42,13 @@ static class RelationalLogicalPatterns
     }
     // </ExpressionAndPattern>
 
-    // <AndPattern>
-    static bool IsComfortableTemperature(int temperature) =>
-        temperature is >= 18 and <= 24;
-    // </AndPattern>
-
-    // <OrNotPatterns>
-    static bool IsWeekend(DayOfWeek day) =>
+    // <PatternAndImperative>
+    static bool IsWeekendPattern(DayOfWeek day) =>
         day is DayOfWeek.Saturday or DayOfWeek.Sunday;
 
-    static bool IsActive(Status status) =>
-        status is not Status.Complete;
-
-    enum Status
-    {
-        Pending,
-        Running,
-        Complete
-    }
-    // </OrNotPatterns>
+    static bool IsWeekendImperative(DayOfWeek day) =>
+        day == DayOfWeek.Saturday || day == DayOfWeek.Sunday;
+    // </PatternAndImperative>
 
     // <ParenthesizedPattern>
     static bool IsAcceptedPriority(int priority) =>

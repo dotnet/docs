@@ -22,7 +22,7 @@ public union Payload(int, string, Message);
 public sealed record Message(string Text);
 ```
 
-You don't need to annotate a C# union with <xref:System.Text.Json.Serialization.JsonUnionAttribute>. The serializer recognizes the compiler-generated union shape:
+Use `JsonSerializer` to serialize and deserialize the union:
 
 ```csharp
 Payload payload = new Message("Ready");
@@ -38,8 +38,6 @@ The serialized JSON contains the active case value rather than a wrapper or disc
 
 By default, the serializer classifies incoming JSON by token type. In the preceding union, a JSON number selects `int`, a JSON string selects `string`, and a JSON object selects `Message`.
 
-`JsonUnionAttribute` configures an existing union contract. Applying the attribute to an ordinary type doesn't turn that type into a union.
-
 ## Distinguish cases with the same JSON token type
 
 Token classification can't distinguish two cases that both serialize as JSON objects. Apply <xref:System.Text.Json.Serialization.JsonUnionAttribute> and select <xref:System.Text.Json.Serialization.JsonUnionTypeStructuralClassifier> to classify object cases by their property names:
@@ -50,6 +48,8 @@ public union Pet(Dog, Cat);
 public sealed record Dog(string Name, string Breed);
 public sealed record Cat(string Name, int Lives);
 ```
+
+Here, `JsonUnionAttribute` selects a classifier for the existing `Pet` union; applying it to an ordinary type doesn't turn that type into a union.
 
 The classifier selects `Dog` when the payload contains `Breed` and selects `Cat` when it contains `Lives`:
 

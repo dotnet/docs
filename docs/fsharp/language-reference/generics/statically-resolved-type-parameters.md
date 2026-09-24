@@ -1,7 +1,8 @@
 ---
 title: Statically Resolved Type Parameters
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-ms.date: 05/16/2016
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Statically Resolved Type Parameters
 
@@ -100,6 +101,21 @@ let inline replace_instance< ^a, ^b, ^c, ^d when (^a or ^c): (static member repl
 let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member replace: ^a *  ^b ->  ^a0) =
     replace_instance<CFunctor, _, _, _> (a, f)
 ```
+
+## Extension member constraints
+
+To use generic inline code with a type you don't own, supply its required operation as an extension member:
+
+> [!NOTE]
+> Extension members as SRTP constraint solutions require `<LangVersion>preview</LangVersion>`.
+
+:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
+
+The compiler captures relevant accessible extension members in scope where the inline constraint is defined. Opening a different extension module only at the call site doesn't retroactively change that scope. Keep required extensions accessible to consumers of public inline code.
+
+Built-in primitive operator solutions retain priority when the types match precisely. An extension member can satisfy an SRTP member constraint, but doesn't make a type implement a nominal interface with static abstract members.
+
+Preview constraint resolution also defers weak resolution for inline code, so some bindings retain more general types than before. Review explicit signatures and monomorphic bindings when adopting these rules. For expected-result-based overload selection, see [`AllowOverloadOnReturnType`](../parameters-and-arguments.md#select-by-return-type).
 
 ## See also
 

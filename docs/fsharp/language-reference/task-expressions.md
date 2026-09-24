@@ -1,7 +1,8 @@
 ---
 title: Task expressions
 description: Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
-ms.date: 05/25/2025
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Task expressions
 
@@ -135,6 +136,20 @@ let someTaskCode (cancellationToken: CancellationToken) =
 
 If you intend to correctly make your code cancelable, carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancelable.
 
+## Bounded concurrency and result pipelines
+
+To limit how many operations start at once, FSharp.Core 11 provides `Task.parallelLimit`. Pass factories that accept cancellation tokens, rather than tasks that have already started:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Bounded":::
+
+The result array retains input order. A failure requests cancellation of sibling work, and each operation must observe its token. `Task.sequential` runs factories one at a time; `Task.parallelDoLimit` and `Task.sequentialDo` return `unit` instead of an array.
+
+Use `Task.map`, `Task.bind`, and `Task.catch` to transform results or expose non-cancellation failures as values:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Pipeline":::
+
+See [Async and task functions](async-task-functions.md) for signatures, the matching Async and ValueTask helpers, and single-consumption constraints.
+
 ## Background tasks
 
 By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current*?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
@@ -201,6 +216,23 @@ t.Wait()
 ## Task implementation
 
 Tasks are implemented using Resumable Code, a new feature in F# 6. Tasks are compiled into "Resumable State Machines" by the F# compiler. These are described in detail in [the Resumable code RFC](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md), and in an [F# compiler community session](https://www.youtube.com/watch?v=GYi3ZMF8Pm0).
+
+## Runtime async experiments
+
+Builder authors can experiment with .NET runtime async, where the runtime manages suspension rather than a compiler-generated resumable state machine.
+
+> [!NOTE]
+> This prototype requires `<LangVersion>preview</LangVersion>`, a runtime and reference assemblies that expose `MethodImplOptions.Async` and the required `AsyncHelpers` members, and an FSharp.Core asset containing `StateMachineHelpers.__runtimeAsyncReturn`. The intrinsic is supplied by the .NET asset of FSharp.Core; that asset's target name alone doesn't establish runtime support.
+
+The following application-defined builder illustrates the compiler contract. It isn't a new built-in `task` builder:
+
+:::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeBuilder":::
+
+:::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
+
+The intrinsic marks the enclosing method for runtime async compilation, and `AsyncHelpers.Await` identifies a suspension point. The compiler checks supported suspension patterns; byrefs can't remain live across a suspension. The example only defines `Delay`, `Run`, `Return`, and one `Bind` overload, not a production builder with cancellation, loops, or asynchronous disposal.
+
+Ordinary `task` expressions retain their documented implementation. Don't use `AsyncHelpers.Await` as a general blocking replacement outside a runtime-async method. Consult the [runtime async specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md) before experimenting with additional shapes or runtimes.
 
 ## See also
 

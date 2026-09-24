@@ -2,7 +2,8 @@
 title: Delegates in F#
 titleSuffix: ""
 description: Learn how to work with delegates in F#.
-ms.date: 08/27/2023
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Delegates (F#)
 
@@ -63,6 +64,45 @@ The output of the previous code example is as follows.
 ```console
 aa
 ```
+
+## Direct construction and framework metadata
+
+Starting with F# 11, a delegate constructed from a compatible named function or method can point directly at that method, instead of a generated closure's `Invoke` method. Reflection-based frameworks then see the original parameter names and attributes.
+
+For example, [ASP.NET Core Minimal API parameter binding](/aspnet/core/fundamentals/minimal-apis/parameter-binding) uses route names and binding attributes to populate handler arguments:
+
+:::code language="fsharp" source="snippets/delegates/Program.fs" id="Handler":::
+
+The delegate's <xref:System.Delegate.Method> preserves the metadata that identifies the route argument, service, and header:
+
+:::code language="fsharp" source="snippets/delegates/Program.fs" id="Metadata":::
+
+Use this project file and the complete `Program.fs` sample:
+
+:::code language="xml" source="snippets/delegates/ShipmentApi.fsproj":::
+
+:::code language="fsharp" source="snippets/delegates/Program.fs" id="App":::
+
+Run `dotnet run -- --urls http://127.0.0.1:5080`, then send:
+
+```console
+curl -H "X-Customer: Ada" http://127.0.0.1:5080/shipments/SHP-1042
+```
+
+The response is `Ada: SHP-1042 is Dispatched`. This example uses ASP.NET Core's delegate-based request binding; it doesn't establish compatibility with every source generator, OpenAPI integration, or Native AOT endpoint-generation path.
+
+### Which targets are direct?
+
+The compiler recognizes transparent forwarding to known functions and methods. `Func<...>(namedFunction)` can use direct construction in both optimized and unoptimized builds. An explicit forwarding lambda, such as `Func<_,_>(fun x -> namedFunction x)`, retains its wrapper in unoptimized builds so the lambda's debug information remains available.
+
+Captures, reordered or converted arguments, mandatory inline expansion, and other adaptations can require a closure. Don't assume every delegate has a null `Target`, or that every F# function value identifies a single method. Prefer the named-function form when a framework needs the method's metadata.
+
+Direct delegates with the same method and receiver compare equal, which helps event unsubscription and <xref:System.Delegate.Remove(System.Delegate,System.Delegate)> work as expected.
+
+> [!IMPORTANT]
+> A null instance receiver can now fail when the delegate is constructed, rather than when it is invoked. A non-virtual instance target can throw `ArgumentException` at construction; a virtual target can throw `NullReferenceException`. Validate receivers before constructing delegates.
+
+When a conversion still needs generated parameters and the function supplies no useful names, the compiler can use parameter names from the delegate's `Invoke` signature. This fallback doesn't replace preservation of the original method and its attributes.
 
 ## See also
 

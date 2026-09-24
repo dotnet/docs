@@ -2,7 +2,8 @@
 title: Records in F#
 titleSuffix: ""
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 12/21/2021
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Records (F#)
 
@@ -88,6 +89,29 @@ let defaultRecord2 = { Field1 = 1; Field2 = 25 }
 // and leave the rest with default values.
 let rr3 = { defaultRecord1 with Field2 = 42 }
 ```
+
+## Compose records with spreads
+
+To share fields across different application models, F# 11 supports both **record type spreads** and **record expression spreads**:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordTypes":::
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordValues":::
+
+The type spread defines the fields of a new `Shipment` type. The expression spread copies address values into a shipment. Neither form creates inheritance.
+
+See [Record spread operators](record-spreads.md) for multiple sources, projections, overrides, evaluation, warnings, and API compatibility. For a simple same-type update, the existing [copy-and-update expression](copy-and-update-record-expressions.md) remains available.
+
+## Record constructors
+
+To identify a record type directly at its construction site, use its all-fields constructor:
+
+> [!NOTE]
+> This syntax requires `<LangVersion>preview</LangVersion>`. Record spreads don't require this preview option.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
+
+Positional arguments are also accepted, in field declaration order. Named arguments avoid depending on that order. Representation accessibility still applies: a constructor call doesn't bypass a private or internal record representation. A same-named value in scope takes precedence over the constructor. This feature doesn't add constructor patterns for records.
 
 ## Creating Mutually Recursive Records
 

@@ -114,6 +114,7 @@ The following table shows reference articles that describe record and discrimina
 |Title|Description|
 |-----|-----------|
 |[Records](records.md)|Learn about records. Records represent simple aggregates of named values, optionally with members.|
+|[Record spread operators](record-spreads.md)|Compose record types and values, project fields, and override fields without repeating declarations or assignments.|
 |[Anonymous Records](anonymous-records.md)|Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.|
 |[Discriminated Unions](discriminated-unions.md)|Learn about discriminated unions, which provide support for values that may be one of a variety of named cases, each with possibly different values and types.|
 |[Structs](structs.md)|Learn about structs, which are compact object types that can be more efficient than a class for types that have a small amount of data and simple behavior.|

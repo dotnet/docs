@@ -1,7 +1,8 @@
 ---
 title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 11/04/2021
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Compiler options
 
@@ -95,6 +96,34 @@ The F# compiler supports several opt-in warnings:
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
 (You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, for example, `<WarnOn>FS3388</WarnOn>`.)
 Note that if the `WarnOn` property is specified multiple times, only the last occurrence is used. To specify multiple warnings, provide the `WarnOn` property once with a comma-separated string as its contents: `<WarnOn>3388,3559</WarnOn>`.
+
+## Language version and indentation
+
+With the F# 11 compiler, the default, `latest`, and `latestmajor` language modes select F# 11. Numbered supported modes start at F# 8. Use `--langversion:preview` or `<LangVersion>preview</LangVersion>` only when you need a preview feature.
+
+The old non-strict indentation mode is removed. Selecting an earlier numbered language mode doesn't restore that mode; correct the indentation instead.
+
+Language version selects compiler behavior. It doesn't add APIs to FSharp.Core, enable null checking, or establish runtime support. Follow each feature's requirements separately.
+
+## Parallel compilation
+
+To reduce build time, the F# 11 compiler enables parallel compilation by default, including graph-based checking, optimization, and IL generation. Keep deterministic builds enabled; parallelism doesn't require nondeterministic output.
+
+For troubleshooting or a project-specific performance comparison, disable parallel compilation:
+
+```xml
+<PropertyGroup>
+  <ParallelCompilation>false</ParallelCompilation>
+</PropertyGroup>
+```
+
+The corresponding compiler option is `--parallelcompilation-`; use `--parallelcompilation+` to enable it. Compare complete builds and diagnostics as well as elapsed time.
+
+## Diagnostic lists
+
+The compiler ignores unrecognized diagnostic identifiers in a `--warnaserror` list, while recognized F# warning codes still apply. This helps shared build settings that contain diagnostic IDs from other compilers.
+
+For optional record-spread overlap notices, see the [spread warning table](record-spreads.md#warnings-about-shadowed-fields). For missing signature attributes that are errors in F# 11, see [compiler-semantic attributes](signature-files.md#compiler-semantic-attributes).
 
 ## Related articles
 

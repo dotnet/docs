@@ -1,7 +1,8 @@
 ---
 title: Inline Functions
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
-ms.date: 05/16/2016
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Inline Functions
 
@@ -70,6 +71,16 @@ for i = 0 to arr.Length - 1 do
 This optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
 
 An opt-in warning (`/warnon:3517` or property `<WarnOn>3517</WarnOn>`) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites. In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
+
+## Optimize curried callbacks
+
+To avoid repeated arity adaptation when a callback can't be inlined, F# 11 supports `OptimizeClosureIfNotInlined` alongside `InlineIfLambda`:
+
+:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Closure":::
+
+The containing function must be inline, both attributes must be present, and the callback must be curried with two through five arguments. A known lambda can be inlined; an opaque callback can instead be adapted once to an optimized closure. The attribute doesn't guarantee zero allocations for arbitrary callbacks.
+
+FSharp.Core 11 uses this approach in allocation-free `List` and `Array` higher-order functions, including folds and predicates. Consumers need an FSharp.Core containing the attribute and a compiler that understands it. Measure representative call sites rather than assuming every use of `inline` is faster.
 
 ## See also
 

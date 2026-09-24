@@ -1,7 +1,8 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you to add new members to a previously defined object type.
-ms.date: 02/05/2020
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Type extensions
 
@@ -170,6 +171,12 @@ The following limitations also exist for type extensions:
 - You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods if there is an ambiguous call.
 
 Finally, if multiple intrinsic type extensions exist for one type, all members must be unique. For optional type extensions, members in different type extensions to the same type can have the same names. Ambiguity errors occur only if client code opens two different scopes that define the same member names.
+
+## Extensions for generic inline code
+
+Extension members can adapt existing types to the member constraints of generic inline code. In preview language mode, accessible extension members in scope at the inline function's definition participate in SRTP resolution, including operators.
+
+See [Extension member constraints](generics/statically-resolved-type-parameters.md#extension-member-constraints) for a `Uri` example and the scope rules. These extensions don't alter the underlying type or cause it to implement a nominal interface.
 
 ## See also
 

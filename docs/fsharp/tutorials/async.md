@@ -1,7 +1,8 @@
 ---
 title: Async and Task Programming
 description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
-ms.date: 03/02/2022
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Async programming in F\#
 
@@ -362,6 +363,18 @@ module Async =
 ```
 
 There is already an `Async.AwaitTask` that accepts a <xref:System.Threading.Tasks.Task> as input. With this and the previously defined `startTaskFromAsyncUnit` function, you can start and await <xref:System.Threading.Tasks.Task> types from an F# async computation.
+
+## Await tasks and flow cancellation
+
+FSharp.Core 11 adds `Async.Await` and `Async.StartTaskImmediate`. Use the factory form when you start a task inside a workflow so that the operation receives the workflow's cancellation token:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Await":::
+
+A single task failure reaches the matching exception handler directly, without an extra `AggregateException` wrapper. An aggregate containing several exceptions remains an aggregate. The existing `Async.AwaitTask` contract is unchanged.
+
+`Async.RunSynchronouslyImmediate` starts work on the calling thread until its first suspension and then blocks for the result. Prefer asynchronous composition when a caller can await; the immediate runner still blocks.
+
+For bounded work, `Async.parallelLimit` takes a positive limit and a sequence of workflows. `Async.parallelDoLimit` and `Async.sequentialDo` return `unit` when results aren't needed. These operations flow ambient cancellation. See [Async and task functions](../language-reference/async-task-functions.md) for complete signatures, error handling, task factories, and ValueTask conversions.
 
 ## Writing .NET tasks directly in F\#
 

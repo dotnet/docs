@@ -1,7 +1,8 @@
 ---
 title: Computation Expressions
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-ms.date: 10/29/2021
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 f1_keywords:
  - let!_FS
 ---
@@ -476,6 +477,38 @@ F# computation expressions that suspend execution can be compiled to highly effi
 F# computation expressions that are synchronous (that is, they don't suspend execution) can alternatively be compiled to efficient state machines by using [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
 List expressions, array expressions, and sequence expressions are given special treatment by the F# compiler to ensure generation of high-performance code.
+
+## Tail operations in custom builders
+
+For a custom builder, an explicit tail `return!` can use `ReturnFromFinal` and an explicit tail `yield!` can use `YieldFromFinal`, when the corresponding optional member exists. The ordinary `ReturnFrom` or `YieldFrom` remains the fallback.
+
+Starting with F# 11, a terminal `do!` uses `Bind`; it isn't treated as a final `return!`. The distinction matters when a builder performs validation, cleanup, or tracing in its methods:
+
+:::code language="fsharp" source="snippets/computation-expressions/TailOperations.fs" id="Builder":::
+
+The output is:
+
+```console
+ReturnFromFinal
+Bind
+```
+
+Non-tail expressions retain ordinary sequencing. A final operation must not skip a continuation or cleanup required by an enclosing construct. When a builder adds optional final members, test nested `try/finally`, `use`, and conditional branches as well as the simple tail case.
+
+A `let!` must have a following body. For example, `async { let! value = work }` is incomplete; write `async { let! value = work in return value }` if the result is the intended result of the workflow. The compiler reports the incomplete binding at its source rather than a misleading later expression.
+
+## Rethrow from a computation expression
+
+To log an error and preserve its original exception identity and stack, use `reraise ()` in a computation-expression `with` handler:
+
+> [!NOTE]
+> This feature requires `<LangVersion>preview</LangVersion>`.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
+
+The compiler uses `ExceptionDispatchInfo` for builder handlers rather than emitting an invalid IL `rethrow` in the handler lambda. The nearest enclosing exception handler determines which exception is rethrown. This also supports a rethrow after a `let!` or `do!` in the handler. Custom builders must infer the handler input as `exn`.
+
+An ordinary nested `try/with` rebinds the current exception. `raise error` and `reraise ()` aren't interchangeable for stack preservation.
 
 ## See also
 

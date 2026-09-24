@@ -1,7 +1,7 @@
 ---
 title: Compiler Directives
 description: Learn about F# language conditional compilation directives, line directives, and warn directives.
-ms.date: 10/21/2025
+ms.date: 09/24/2026
 f1_keywords:
  - "#endif_FS"
 ai-usage: ai-assisted
@@ -17,6 +17,7 @@ The following table lists the compiler directives that are available in F#.
 |Directive|Description|
 |---------|-----------|
 |`#if` *if-expression*|Supports conditional compilation. Code in the section after the `#if` is included if the *if-expression* evaluates to `defined` (see below).|
+|`#elif` *if-expression*|Starting with F# 11, tests another condition when no earlier branch matched.|
 |`#else`|Supports conditional compilation. Marks a section of code to include if the symbol used with the previous `#if` does not evaluate to `defined`.|
 |`#endif`|Supports conditional compilation. Marks the end of a conditional section of code.|
 |`#`[line] *int*,<br/>`#`[line] *int* *string*,<br/>`#`[line] *int* *verbatim-string*|Indicates the original source code line and file name, for debugging. This feature is provided for tools that generate F# source code.|
@@ -53,6 +54,26 @@ The logical operators have the usual logical precedence.
 There is no `#define` compiler directive in F#. You must use the compiler option or project settings to define the symbols used by the `#if` directive.
 
 Conditional compilation directives can be nested. Indentation is not significant for compiler directives.
+
+Starting with F# 11, use `#elif` to express several alternatives without nesting:
+
+:::code language="fsharp" source="snippets/compiler-directives/Region.fs" id="Region":::
+
+Run `dotnet fsi --define:EU_WAREHOUSE Region.fs` to select `Europe/Paris`, or `dotnet fsi --define:US_WAREHOUSE Region.fs` to select `America/New_York`. Without either symbol, the output is `UTC`. If both symbols are defined, the first matching branch wins.
+
+In a project file, add the symbol to `DefineConstants`:
+
+```xml
+<DefineConstants>$(DefineConstants);EU_WAREHOUSE</DefineConstants>
+```
+
+Each conditional group starts with `#if`, can contain multiple `#elif` branches and one final `#else`, and ends with `#endif`. An `#elif` can't follow `#else`.
+
+## Host directive lines
+
+Starting with the F# 11 compiler, lines beginning with `#:` are ignored by the compiler. The `#:` must start at the beginning of the line. A hosting tool can interpret these lines separately; compiler acceptance alone doesn't implement package restoration or any other host behavior.
+
+For F# Interactive's own directives, see [Interactive programming](../tools/fsharp-interactive/index.md).
 
 ## Predefined symbols
 

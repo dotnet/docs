@@ -1,7 +1,8 @@
 ---
 title: Signature files
 description: Learn how to use F# signature files to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
-ms.date: 06/15/2018
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Signatures
 
@@ -59,6 +60,26 @@ The following code example shows an example of a signature file that has namespa
 The following code shows the implementation file.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/fssignatures/snippet9001.fs)]
+
+## Compiler-semantic attributes
+
+To preserve the contract seen by tooling and callers, mirror compiler-semantic attributes from the implementation in its signature. In F# 11, an omitted required attribute is an error rather than a warning.
+
+For example, `Api.fs` contains:
+
+:::code language="fsharp" source="snippets/signature-files/Api.fs" id="Implementation":::
+
+Its `Api.fsi` must also contain the attribute:
+
+:::code language="fsharp" source="snippets/signature-files/Api.fsi" id="Signature":::
+
+Both files begin with `module Api`, and the signature precedes the implementation in project compile order.
+
+The required set depends on the declaration. Value/member attributes include `NoDynamicInvocation`, `RequiresExplicitTypeArguments`, `Conditional`, `CLIEvent`, and `Literal`. Type-level examples include `RequireQualifiedAccess`, `Struct`, `CLIMutable`, and equality/comparison attributes. Don't infer that every .NET attribute is subject to the same rule on every declaration.
+
+Diagnostic FS3888 identifies an attribute present in the implementation but missing from the signature. Add the attribute to the signature when the contract is intentional; suppressing a warning doesn't repair a contract that is an error in F# 11.
+
+Record signatures can use [type spreads](record-spreads.md#representation-and-api-compatibility) or explicit fields independently of the implementation syntax, provided the elaborated shape and order agree.
 
 ## See also
 

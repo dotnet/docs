@@ -1,0 +1,7 @@
+<docs>
+  <tracking>
+    <summary>Find the latest status of a shipment.</summary>
+    <param name="trackingId">The shipment tracking identifier.</param>
+    <returns>The latest status, or Unknown.</returns>
+  </tracking>
+</docs>

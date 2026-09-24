@@ -1,7 +1,8 @@
 ---
 title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
-ms.date: 08/15/2020
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Parameters and arguments
 
@@ -119,6 +120,46 @@ w.Height // = 10
 ```
 
 Note that those members could perform any arbitrary work, the syntax is effectively a short hand to call property setters before returning the final value.
+
+### Require named arguments
+
+To prevent accidentally swapped arguments, annotate a method or constructor with `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
+
+> [!NOTE]
+> Enforcement requires `<LangVersion>preview</LangVersion>`. The attribute must exist in the referenced metadata or source; the compiler doesn't synthesize it.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Named":::
+
+`Dispatch.Schedule(true, false)` is rejected. This rule covers method and constructor calls, not property/indexer syntax, delegate invocation, or attributes placed on individual parameters. `nameof` doesn't invoke the method and isn't subject to the call rule.
+
+For reference assemblies without this attribute, the sample places the following compatibility definition in `Compatibility.fs`, before `Preview.fs` in compile order. Omit the definition when your referenced framework or library already provides it:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Compatibility.fs" id="NamedAttribute":::
+
+## Overload selection
+
+To distinguish a value from an already-wrapped value, the most-concrete tiebreaker compares otherwise equally ranked generic overloads. For example, it prefers a `Task<'T>` constructor parameter to a bare `'T` parameter:
+
+> [!NOTE]
+> The most-concrete tiebreaker and `OverloadResolutionPriorityAttribute` support require `<LangVersion>preview</LangVersion>`.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
+
+The tiebreaker is a last resort, not a replacement for all existing overload rules. It doesn't order unrelated parameter types or SRTP candidates, and genuinely incomparable overloads can remain ambiguous.
+
+To prefer an API's newer overload, a library author can set a higher `System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute` value:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Priority":::
+
+Priority prunes applicable candidates within a declaring type before ordinary betterness rules. It doesn't make an inapplicable overload applicable. Don't assume it changes F# property/indexer selection; attributes on overrides are rejected in preview mode.
+
+### Select by return type
+
+FSharp.Core's `AllowOverloadOnReturnType` attribute lets the expected result type participate in overload selection. This attribute doesn't require preview:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
+
+Without a known result type, overload selection can still be ambiguous. Annotate the result to express which conversion you need.
 
 ## Optional parameters
 

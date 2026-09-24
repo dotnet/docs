@@ -102,10 +102,8 @@ public static class LibrariesExamples
     static void JsonTypeInfoExample()
     {
         // <JsonTypeInfoGeneric>
-        JsonSerializerOptions options = new()
-        {
-            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
-        };
+        JsonSerializerOptions options = new(JsonSerializerDefaults.Web);
+        options.MakeReadOnly(populateMissingResolver: true);
 
         // Previously, a manual downcast was required.
         JsonTypeInfo<MyRecord> info1 = (JsonTypeInfo<MyRecord>)options.GetTypeInfo(typeof(MyRecord));

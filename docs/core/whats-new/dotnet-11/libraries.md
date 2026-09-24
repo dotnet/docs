@@ -177,7 +177,7 @@ These methods provide both high-level convenience methods (that allocate and ret
 
 #### Union serialization
 
-**C# union types.** Starting in .NET 11, <xref:System.Text.Json.JsonSerializer> serializes and deserializes C# unions without a custom converter. Define the possible cases:
+**C# union types.** Starting in .NET 11, C# offers union types, which <xref:System.Text.Json.JsonSerializer> serializes and deserializes out of the box. Define the possible cases:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionType":::
 

@@ -9,7 +9,6 @@ static class PropertyPositionalPatterns
         Console.WriteLine($"Nullable input: {DescribeNullableInput(null)}");
         Console.WriteLine($"Date (branches): {DescribeDateWithBranches(
             new DateTime(2026, 9, 19))}");
-        Console.WriteLine($"Point: {ClassifyPoint(new GridPoint(0, 5))}");
         Console.WriteLine($"Crossing: {GetCrossingInstruction(
             PedestrianSignal.Walk, crossingIsClear: true)}");
     }

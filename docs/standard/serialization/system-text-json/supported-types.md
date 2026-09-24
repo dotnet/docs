@@ -108,7 +108,7 @@ The following sections are organized by namespace and show which types are suppo
 
 ‡ See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
-§ `System.Text.Json` supports <xref:System.Collections.Generic.IReadOnlySet`1> in .NET 11 and later versions. When you deserialize the interface, the serializer creates a <xref:System.Collections.Generic.HashSet`1> instance. Source generation supports the type, and the generated metadata calls <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType>.
+§ `System.Text.Json` supports <xref:System.Collections.Generic.IReadOnlySet`1> in .NET 11 and later versions. When you deserialize the interface, the serializer creates a <xref:System.Collections.Generic.HashSet`1> instance. For generated metadata, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> creates the collection contract.
 
 #### IAsyncEnumerable\<T>
 
@@ -287,7 +287,6 @@ Starting in .NET 11, `System.Text.Json` includes built-in converters for the <xr
 
 These types behave like the other built-in numeric types:
 
-* Source generation supports them without extra configuration.
 * Dictionary-key conversion supports all four types.
 * They honor <xref:System.Text.Json.Serialization.JsonNumberHandling>, including the `"NaN"`, `"Infinity"`, and `"-Infinity"` literals through <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals>.
 

@@ -185,7 +185,7 @@ Pass the union to `JsonSerializer`:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonUnionSerialization":::
 
-The serializer writes the active case directly, without a wrapper or `$type` discriminator. Reflection-based serialization and source generation both support C# unions. The JSON output depends on the active case:
+The serializer writes the active case directly, without a wrapper or `$type` discriminator. The JSON output depends on the active case:
 
 | Union state | JSON output |
 | - | - |
@@ -281,7 +281,7 @@ The `System.Text.Json` source generator supports more contract shapes:
 - An inaccessible constructor marked with <xref:System.Text.Json.Serialization.JsonConstructorAttribute> can participate in deserialization.
 - An omitted `init`-only property retains its property-initializer value. The generated contract sets the property after construction only when the JSON payload contains that property.
 
-Reflection-based and source-generated deserialization also support constructors whose parameters use `in`, `ref`, `out`, or `ref readonly`. The serializer binds `in`, `ref`, and `ref readonly` parameters by their element type. An `out` parameter doesn't bind a JSON constructor argument; the constructor receives an initialized output location, and a matching writable property can receive the JSON value after construction.
+`JsonSerializer` also deserializes types with constructors whose parameters use `in`, `ref`, `out`, or `ref readonly`. The serializer binds `in`, `ref`, and `ref readonly` parameters by their element type. An `out` parameter doesn't bind a JSON constructor argument; the constructor receives an initialized output location, and a matching writable property can receive the JSON value after construction.
 
 For more information, see [Source-generation modes in System.Text.Json](../../../standard/serialization/system-text-json/source-generation-modes.md) and [Use immutable types and properties](../../../standard/serialization/system-text-json/immutability.md).
 
@@ -303,7 +303,7 @@ For more information, see [Apply a naming policy to a type or member](../../../s
 
 #### Converters and collection contracts
 
-**Numeric converters.** The serializer includes built-in converters for <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>. The converters work with reflection, source generation, number-handling options, dictionary keys, and JSON Schema export. For generated metadata, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> exposes <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.BFloat16Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal32Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal64Converter?displayProperty=nameWithType>, and <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal128Converter?displayProperty=nameWithType>.
+**Numeric converters.** The serializer includes built-in converters for <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>. The converters support number-handling options, dictionary keys, and JSON Schema export. For generated metadata, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> exposes <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.BFloat16Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal32Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal64Converter?displayProperty=nameWithType>, and <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal128Converter?displayProperty=nameWithType>.
 
 **Open generic converters.** <xref:System.Text.Json.Serialization.JsonConverterAttribute> can reference an open generic converter on a generic type or member:
 
@@ -312,7 +312,7 @@ For more information, see [Apply a naming policy to a type or member](../../../s
 public readonly struct Option<T> { }
 ```
 
-The converter's total generic arity must match the target type's arity. The serializer closes the converter with the target type arguments in both reflection and source-generation modes, without requiring <xref:System.Text.Json.Serialization.JsonConverterFactory>. For supported nesting patterns, constraints, and error behavior, see [Use open generic converters with `JsonConverter`](../../../standard/serialization/system-text-json/converters-how-to.md#use-open-generic-converters-with-jsonconverter).
+The converter's total generic arity must match the target type's arity. The serializer closes the converter with the target type arguments without requiring <xref:System.Text.Json.Serialization.JsonConverterFactory>. For supported nesting patterns, constraints, and error behavior, see [Use open generic converters with `JsonConverter`](../../../standard/serialization/system-text-json/converters-how-to.md#use-open-generic-converters-with-jsonconverter).
 
 **Extension data.** A member marked with <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute> can use <xref:System.Collections.Generic.IReadOnlyDictionary`2> with `string` keys and either `object` or <xref:System.Text.Json.JsonElement> values. During deserialization, the serializer assigns a mutable <xref:System.Collections.Generic.Dictionary`2> implementation. If the property already contains entries, the serializer copies them first and then adds JSON properties, so an incoming value replaces an existing value with the same key. A <xref:System.Text.Json.Nodes.JsonObject> extension-data member writes its child properties directly into the containing object. For example, an `Id` property and a `JsonObject` entry named `nested` produce `{"Id":1,"nested":true}`. For more information, see [Handle overflow JSON](../../../standard/serialization/system-text-json/handle-overflow.md#handle-overflow-json).
 

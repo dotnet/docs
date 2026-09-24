@@ -132,7 +132,7 @@ The serializer selects a JSON property name in this order, from highest to lowes
 - <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType>.
 - The original member name.
 
-Reflection-based serialization and source generation both support `JsonNamingPolicyAttribute` with `JsonKnownNamingPolicy` values. The protected constructor lets a derived attribute supply a custom <xref:System.Text.Json.JsonNamingPolicy>. Reflection-based serialization evaluates the custom policy at run time.
+The protected constructor lets a derived attribute supply a custom <xref:System.Text.Json.JsonNamingPolicy>. Reflection-based serialization evaluates the custom policy at run time.
 
 Source generation can't execute a custom policy at compile time. For affected members, it uses the original CLR name and doesn't apply the global <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType>.
 

@@ -43,7 +43,7 @@ Besides `[JsonPropertyName]`, the following attributes support deserialization w
 
 ## By-reference constructor parameters
 
-Starting in .NET 11, both reflection mode and source-generation mode deserialize types whose constructor parameters use the `in`, `ref`, `out`, and `ref readonly` modifiers.
+Starting in .NET 11, `JsonSerializer` deserializes types whose constructor parameters use the `in`, `ref`, `out`, and `ref readonly` modifiers.
 
 | Parameter modifier | Deserialization behavior |
 |--------------------|--------------------------|

@@ -89,7 +89,7 @@ The `Enum` type is similar to an open generic type: a converter for `Enum` has t
 
 ## Use open generic converters with [JsonConverter]
 
-Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonConverterAttribute> supports open generic converter types on generic types when the total type parameter arity matches. This feature lets you apply a `[JsonConverter]` attribute directly using an open generic converter type (for example, `typeof(OptionConverter<>)`) without implementing a <xref:System.Text.Json.Serialization.JsonConverterFactory>. The serializer automatically constructs the closed generic converter. Reflection-based serialization and source generation both support this feature.
+Starting in .NET 11, <xref:System.Text.Json.Serialization.JsonConverterAttribute> supports open generic converter types on generic types when the total type parameter arity matches. This feature lets you apply a `[JsonConverter]` attribute directly using an open generic converter type (for example, `typeof(OptionConverter<>)`) without implementing a <xref:System.Text.Json.Serialization.JsonConverterFactory>. The serializer automatically constructs the closed generic converter.
 
 ### Define the generic type
 

@@ -159,7 +159,7 @@ Remove or consolidate any temporary instruction files to avoid overlapping trans
 
 ## Related content
 
-- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](dotnet-how-to-upgrade-with-github-copilot.md)
 - [GitHub Copilot upgrade FAQ](faq.yml)
 - [What is GitHub Copilot upgrade?](overview.md)
 - [Install GitHub Copilot upgrade](install.md)

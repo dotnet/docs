@@ -2,7 +2,7 @@
 title: Customize GitHub Copilot upgrade
 description: "Learn how to customize GitHub Copilot upgrade with custom skills, custom scenarios, scenario artifact edits, and chat instructions to encode your team's upgrade patterns."
 ms.topic: concept-article
-ms.date: 07/07/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to customize GitHub Copilot upgrade so that I can encode my team's upgrade patterns, enforce coding standards during upgrades, and define custom upgrade workflows.
@@ -184,7 +184,7 @@ equivalents, updating configuration, and verifying behavior.
 | `name` | Yes | Unique identifier in kebab-case. Start with a gerund verb (for example, `upgrading-`, `converting-`). Maximum 64 characters. |
 | `description` | Yes | Determines when the agent loads the skill. Include trigger phrases, such as words and patterns that should activate the skill. |
 | `metadata.discovery` | No | Controls when the skill loads: `preload` (always available), `lazy` (on-demand when description matches, default and recommended), or `scenario` (defines a workflow orchestrator). |
-| `metadata.traits` | No | Keywords describing the technologies in your project, such as `.NET`, `CSharp`, `VisualBasic`, or `DotNetCore`. |
+| `metadata.traits` | No | Keywords that describe the technologies in your project, such as `.NET`, `CSharp`, `VisualBasic`, `DotNetCore`, `NodeJs`, `TypeScript`, or `JavaScript`. |
 
 ### Skill authoring best practices
 
@@ -299,6 +299,6 @@ The agent collects skills from all sources. When skills have overlapping scope, 
 ## Related content
 
 - [Core concepts](concepts.md)
-- [Scenarios and skills reference](scenarios-and-skills.md)
-- [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md)
+- [.NET scenarios and skills](dotnet-scenarios-and-skills.md)
+- [Apply custom .NET upgrade instructions](dotnet-how-to-custom-upgrade-instructions.md)
 - [Best practices](best-practices.md)

@@ -1,15 +1,15 @@
 ---
-title: GitHub Copilot upgrade scenarios and skills
+title: .NET upgrade scenarios and skills
 description: "Complete reference of all scenarios and built-in upgrade skills available in GitHub Copilot upgrade for .NET, organized by domain."
 ms.topic: reference
 ms.date: 08/13/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to see all the scenarios and skills that GitHub Copilot upgrade supports so that I can understand which upgrade tasks the agent can handle for me.
+#customer intent: As a .NET developer, I want to review the available scenarios and skills so that I can understand which .NET upgrade tasks the agent can handle.
 
 ---
 
-# Scenarios and skills reference
+# .NET scenarios and skills
 
 GitHub Copilot upgrade for .NET helps you upgrade and modernize through _scenarios_ and _skills_:
 
@@ -269,11 +269,11 @@ Create custom skills to teach the agent patterns specific to your codebase, such
 
 Place skills in your repository (`.github/skills/`) or user profile (`%UserProfile%/.copilot/skills/`), and the agent picks them up automatically.
 
-For more information about creating custom skills, see [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md).
+For more information about creating custom skills, see [Apply custom .NET upgrade instructions](dotnet-how-to-custom-upgrade-instructions.md).
 
 ## Related content
 
 - [What is GitHub Copilot upgrade?](overview.md)
 - [Core concepts](concepts.md)
-- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
-- [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](dotnet-how-to-upgrade-with-github-copilot.md)
+- [Apply custom .NET upgrade instructions](dotnet-how-to-custom-upgrade-instructions.md)

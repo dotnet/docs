@@ -70,6 +70,21 @@ The structural classifier doesn't inspect property values, nested objects, strin
 * <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve?displayProperty=nameWithType> isn't supported.
 * A configuration that can't distinguish its cases throws <xref:System.NotSupportedException> when the serializer builds the classifier.
 
+## Choose unions or closed hierarchies
+
+Use a union when you need to preserve a discriminator-free JSON format you don't control, or when the cases have distinct JSON shapes. For example, the `int` and `string` cases of `Payload` are distinguishable by JSON token type. For object cases such as `Pet(Dog, Cat)`, however, changes to property names can affect which case a structural classifier selects.
+
+When you control the types and JSON contract, a [closed hierarchy with inferred polymorphism](polymorphism.md#infer-polymorphism-from-a-closed-hierarchy) can identify object cases with a discriminator instead:
+
+```csharp
+[JsonPolymorphic(InferClosedTypePolymorphism = true)]
+public closed record Event;
+public sealed record Created(int Id) : Event;
+public sealed record Deleted(int Id) : Event;
+```
+
+`JsonSerializer.Serialize<Event>(new Created(42))` writes `{"$type":"Created","Id":42}`. Both derived types declare `Id`, but the discriminator identifies the case independently of its properties. This makes case selection more stable as the properties evolve. Unlike union cases, the derived types must share a base class, and you must opt in to inferred polymorphism; the `closed` modifier alone doesn't add a discriminator.
+
 ## Provide a custom classifier
 
 Derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory> when default token classification or the built-in <xref:System.Text.Json.Serialization.JsonUnionTypeStructuralClassifier> doesn't meet your requirements. A custom classifier can use other structural rules to select a union case. Register the factory in one of these locations:
@@ -103,3 +118,4 @@ For more information about modifying `JsonTypeInfo`, see [Customize a JSON contr
 * [Union types (C# reference)](../../../csharp/language-reference/builtin-types/union.md)
 * [Serialize polymorphic types](polymorphism.md)
 * [Use source generation](source-generation.md)
+* [Use C# unions and closed hierarchies in ASP.NET Core (.NET Blog)](https://devblogs.microsoft.com/dotnet/unions-and-closed-hierarchies-in-aspnetcore/)

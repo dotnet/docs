@@ -41,7 +41,7 @@ Choose this form when fixed positions have stable meaning. Use a loop or LINQ wh
 
 ## Allow remaining elements with a slice pattern
 
-In this simplified example, a command line can start with `--verbose`, contain other arguments, and is assumed to end with the input file name. The following method recognizes shapes with a file name in the last position and captures that value:
+In this simplified example, a command line can start with `--verbose` and contain other arguments, and is assumed to end with the input file name. The following method recognizes shapes with a file name in the last position and captures that value:
 
 :::code language="csharp" source="snippets/patterns/ListPatterns.cs" ID="SlicePattern":::
 

@@ -41,7 +41,8 @@ helpviewer_keywords:
  - "CS8090"
  - "CS8203"
  - "CS9286"
-ms.date: 05/27/2025
+ms.date: 03/03/2026
+ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to assembly references
 
@@ -117,6 +118,29 @@ If the assembly appears to be referenced in your project but you still receive C
    dotnet remove package [PackageName]
    dotnet add package [PackageName]
    ```
+
+### CS0012 in ASP.NET Framework web apps with Razor precompilation
+
+In ASP.NET Framework web applications that use `aspnet_compiler.exe` to precompile Razor (*.cshtml*) views, you might see CS0012 errors after you upgrade a NuGet package—even though your regular build succeeds.
+
+This error occurs when a NuGet package you're using (directly or transitively) depends on an assembly that's a *facade* on your target framework version—for example, `System.ValueTuple`, `System.Runtime`, `netstandard`, or `System.Net.Http` on .NET Framework 4.7 and later. Because these assemblies are part of the framework itself, NuGet doesn't copy their DLLs into your application's bin folder.
+
+The MSBuild compiler resolves these references correctly during a normal build. However, `aspnet_compiler.exe` uses a separate mechanism: it reads assembly references from the bin folder and from the `<compilation><assemblies>` section of your *web.config* file. When the assembly isn't in either location, the Razor compiler can't find it and reports a CS0012 error.
+
+> [!NOTE]
+> This error only affects *.cshtml* (Razor) files. Files like *.aspx* and *.ascx* compile with a different code path and don't have this limitation.
+
+To fix the error, add the missing assembly to the `<system.web><compilation><assemblies>` section of your *web.config* file. The assembly name, version, and public key token come from the CS0012 error message:
+
+```xml
+<system.web>
+  <compilation>
+    <assemblies>
+      <add assembly="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51"/>
+    </assemblies>
+  </compilation>
+</system.web>
+```
 
 ## Type forwarding
 

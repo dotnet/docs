@@ -2,7 +2,7 @@
 title: GitHub Copilot upgrade core concepts
 description: "Learn the key concepts behind GitHub Copilot upgrade, including scenarios, skills, tasks, the three-stage workflow, state management, and flow modes."
 ms.topic: concept-article
-ms.date: 07/07/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to understand the core concepts of GitHub Copilot upgrade so that I can use the agent effectively and get the best results from my upgrades.
@@ -11,16 +11,16 @@ ai-usage: ai-assisted
 
 # GitHub Copilot upgrade concepts
 
-GitHub Copilot upgrade uses a structured approach to upgrade .NET projects. Understanding how the agent works, including its scenarios, skills, tasks, and workflow, helps you collaborate with the agent effectively and get the best results.
+GitHub Copilot upgrade uses structured workflows to upgrade supported projects. Learn how the agent uses technology packs, scenarios, skills, tasks, and persistent state to plan and validate changes.
 
 > [!TIP]
-> Think of the agent as a skilled colleague who understands .NET deeply, follows a structured plan, and adapts to your feedback. The more context you give, the better the agent performs.
+> Describe the outcome that you want instead of memorizing scenario or skill names. The agent detects the technologies in your repository and selects relevant capabilities.
 
 ## The agent as a teammate
 
 The agent excels at collaboration, not automation in a vacuum:
 
-- **Deep .NET knowledge:** The agent understands project files, NuGet dependencies, breaking changes, and upgrade patterns across dozens of .NET technologies for both C# and Visual Basic projects.
+- **Technology-specific knowledge:** Technology packs provide upgrade workflows, tools, and guidance for supported languages, frameworks, package managers, and project types.
 - **Structured workflow:** Every upgrade goes through assessment, planning, and execution. No random changes, no surprises.
 - **Learns your preferences:** When you say "always use explicit types instead of `var`," the agent writes that preference to `scenario-instructions.md` and remembers it across sessions.
 - **Correctable mid-flight:** Made a wrong call? Tell the agent. It adapts and applies the correction going forward.
@@ -28,7 +28,7 @@ The agent excels at collaboration, not automation in a vacuum:
 
 ## Scenarios
 
-A _scenario_ is a managed, end-to-end upgrade workflow. When you tell the agent "upgrade my solution to .NET 10," you're triggering the `.NET version upgrade` scenario.
+A _scenario_ is a managed, end-to-end upgrade workflow. For example, _"upgrade my solution to .NET 10"_ triggers the .NET version upgrade scenario. A technology pack can also provide a workflow for a specialized integration, such as Dependabot validation for a JavaScript or TypeScript dependency update.
 
 ### How scenarios are discovered
 
@@ -44,7 +44,7 @@ You can also ask directly: _"What scenarios are available for my solution?"_
 
 Each active scenario gets its own folder at `.github/upgrades/{scenarioId}/`. The scenario folder contains the plan, task progress, your preferences, and execution logs. The folder is part of your Git repository.
 
-For a complete list of scenarios, see [Scenarios and skills reference](scenarios-and-skills.md).
+For available workflows, see [.NET scenarios and skills](dotnet-scenarios-and-skills.md) and [JavaScript and TypeScript capabilities](javascript-typescript-capabilities.md).
 
 ## The workflow lifecycle
 
@@ -114,17 +114,18 @@ During the assessment stage, the agent evaluates your solution and recommends on
 
 _Skills_ are smaller, targeted modernization capabilities. When the agent encounters EF6 code during an upgrade, it loads the EF6-to-EF-Core skill with detailed, step-by-step upgrade instructions. Invoke a skill directly during an upgrade: _"upgrade the WCF services in my project to CoreWCF."_
 
-The agent ships with 30+ built-in skills organized by domain:
+Technology packs provide built-in skills organized by domain. Examples include:
 
 - **Data access:** EF6 to EF Core (code-first and EDMX), LINQ to SQL, and SqlClient upgrade
 - **Web/ASP.NET:** Identity, Global.asax, OWIN, MVC routing/filters/bundling, and WCF to CoreWCF
 - **Serialization:** Newtonsoft.Json to System.Text.Json
 - **Cloud:** Azure Functions in-process to isolated worker model
 - **Libraries:** ADAL to MSAL, SignalR, PowerShell SDK, and more
+- **JavaScript and TypeScript:** npm dependency upgrades, TypeScript compiler upgrades, framework migration guidance, and runtime validation
 
 Skills load automatically based on what the agent detects in your codebase. You don't need to manage skill loading. Just describe what you need.
 
-For the complete list, see [Scenarios and skills reference](scenarios-and-skills.md).
+For technology-specific lists, see [.NET scenarios and skills](dotnet-scenarios-and-skills.md) and [JavaScript and TypeScript capabilities](javascript-typescript-capabilities.md).
 
 ## Tasks
 
@@ -208,7 +209,7 @@ Best for first-time users, complex solutions, and when you want to learn the pro
 ## Related content
 
 - [What is GitHub Copilot upgrade?](overview.md)
-- [Scenarios and skills reference](scenarios-and-skills.md)
-- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [.NET scenarios and skills](dotnet-scenarios-and-skills.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](dotnet-how-to-upgrade-with-github-copilot.md)
 - [Best practices](best-practices.md)
 - [Troubleshoot GitHub Copilot upgrade](troubleshooting.md)

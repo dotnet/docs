@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540"
+     font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="540" fill="#FFFFFF"/>
+
+  <text x="480" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2937">
+    Windows x64 installer composition — .NET 10.0.11 / SDK 10.0.111
+  </text>
+  <text x="480" y="66" text-anchor="middle" font-size="12" fill="#6B7280">
+    Three shipping .exe bundles and the .msi packages they carry
+  </text>
+
+  <!-- Bundle rectangles -->
+  <rect x="31" y="91" width="591" height="248" rx="8"
+        fill="#1F4E9C" fill-opacity="0.14" stroke="#1F4E9C" stroke-width="2.5"/>
+  <rect x="339" y="91" width="591" height="248" rx="8"
+        fill="#C05621" fill-opacity="0.14" stroke="#C05621" stroke-width="2.5"/>
+  <rect x="181" y="205" width="598" height="291" rx="8"
+        fill="#1E7A5A" fill-opacity="0.14" stroke="#1E7A5A" stroke-width="2.5"/>
+
+  <!-- Bundle labels -->
+  <g font-family="Consolas, monospace" font-size="12" font-weight="700">
+    <text x="41" y="112" fill="#1F4E9C">dotnet-runtime-</text>
+    <text x="41" y="128" fill="#1F4E9C">10.0.11-win-x64.exe</text>
+
+    <text x="921" y="112" text-anchor="end" fill="#C05621">windowsdesktop-runtime-</text>
+    <text x="921" y="128" text-anchor="end" fill="#C05621">10.0.11-win-x64.exe</text>
+
+    <text x="193" y="480" fill="#1E7A5A">dotnet-sdk-10.0.111-win-x64.exe</text>
+  </g>
+
+  <!-- Shared by all three (triple overlap: x 339-622, y 205-339) -->
+  <rect x="346" y="214" width="266" height="112" rx="8"
+        fill="#FFFFFF" stroke="#3F3F46" stroke-width="1.4"/>
+  <text x="479" y="234" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3F3F46">
+    Shared by all three
+  </text>
+  <g font-family="Consolas, monospace" font-size="11" fill="#3F3F46" text-anchor="middle">
+    <text x="479" y="256">dotnet-host-10.0.11-win-x64.msi</text>
+    <text x="479" y="277">dotnet-hostfxr-10.0.11-win-x64.msi</text>
+    <text x="479" y="298">dotnet-runtime-10.0.11-win-x64.msi</text>
+  </g>
+
+  <!-- Shared by desktop EXE and SDK (x 622-779, y 205-339) -->
+  <rect x="628" y="222" width="145" height="96" rx="8"
+        fill="#FFFFFF" stroke="#3F3F46" stroke-width="1.4"/>
+  <text x="700" y="242" text-anchor="middle" font-size="10" font-weight="700" fill="#3F3F46">
+    Desktop + SDK
+  </text>
+  <g font-family="Consolas, monospace" font-size="10.5" fill="#3F3F46" text-anchor="middle">
+    <text x="700" y="264">windowsdesktop-</text>
+    <text x="700" y="281">runtime-10.0.11-</text>
+    <text x="700" y="298">win-x64.msi</text>
+  </g>
+
+  <!-- SDK-exclusive packages -->
+  <rect x="196" y="352" width="568" height="112" rx="8"
+        fill="#FFFFFF" stroke="#1E7A5A" stroke-width="1.4"/>
+  <text x="480" y="372" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1E7A5A">
+    SDK only
+  </text>
+  <g font-family="Consolas, monospace" font-size="12" fill="#1E7A5A" text-anchor="middle">
+    <text x="480" y="394">dotnet-100templates-10.0.111-servicing.26373.116-win-x64.msi</text>
+    <text x="480" y="412">dotnet-sdk-internal-10.0.111-servicing.26373.116-win-x64.msi</text>
+    <text x="480" y="430">dotnet-apphost-pack-10.0.11-win-x64.msi</text>
+    <text x="480" y="448">dotnet-targeting-pack-10.0.11-win-x64.msi</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="11" fill="#4B5563">
+    <rect x="800" y="404" width="14" height="14" rx="3"
+          fill="#1F4E9C" fill-opacity="0.14" stroke="#1F4E9C" stroke-width="1.5"/>
+    <text x="822" y="415">Runtime bundle</text>
+
+    <rect x="800" y="426" width="14" height="14" rx="3"
+          fill="#C05621" fill-opacity="0.14" stroke="#C05621" stroke-width="1.5"/>
+    <text x="822" y="437">Desktop runtime bundle</text>
+
+    <rect x="800" y="448" width="14" height="14" rx="3"
+          fill="#1E7A5A" fill-opacity="0.14" stroke="#1E7A5A" stroke-width="1.5"/>
+    <text x="822" y="459">SDK bundle</text>
+  </g>
+
+  <text x="480" y="514" text-anchor="middle" font-size="11" fill="#6B7280">
+    A package sits in the region formed by every bundle rectangle that overlaps it
+  </text>
+</svg>

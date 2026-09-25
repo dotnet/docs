@@ -135,12 +135,24 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for remaining samples/snippets.
+    # NuGet updates for core, C++, and F# samples/snippets.
   - package-ecosystem: "nuget"
     directories:
       - "samples/snippets/core/**/*"
       - "samples/snippets/cpp/**/*"
       - "samples/snippets/fsharp/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for remaining samples/snippets.
+  - package-ecosystem: "nuget"
+    directories:
       - "samples/snippets/standard/**/*"
       - "samples/snippets/tsql/**/*"
       - "samples/snippets/visualbasic/**/*"

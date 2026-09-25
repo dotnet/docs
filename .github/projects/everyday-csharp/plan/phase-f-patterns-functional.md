@@ -17,7 +17,7 @@
 
 ### PR 19 — Pattern matching: overview + declaration/constant/var + type patterns
 
-[#55966](https://github.com/dotnet/docs/pull/55966) *in review*
+[#55966](https://github.com/dotnet/docs/pull/55966) *merged*
 
 > ~10 files
 
@@ -34,6 +34,8 @@
 > articles (PRs 20–21) expand the already-live, already-positioned Patterns node.
 
 ### PR 20 — Pattern matching: property/positional + relational/logical + list patterns
+
+[#56113](https://github.com/dotnet/pull/56113) *merged*
 
 > ~10 files
 

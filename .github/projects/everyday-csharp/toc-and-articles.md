@@ -82,12 +82,12 @@ section), not under `fundamentals/functional/`.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 32 | Overview | 🟡 Major revise | High-level introduction to pattern matching and switch expressions (C# 8). Motivate when and why to use patterns vs. imperative branching. |
-| 92 | Declaration, constant, and var patterns | 📝 New | Declaration patterns, constant patterns, var patterns. Combined into one article because each is brief on its own. |
-| 93 | Type patterns | 📝 New | Type-testing patterns, pattern matching with generics (C# 7.1) |
-| 94 | Property and positional patterns | 📝 New | Property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8) |
-| 95 | Relational and logical patterns | 📝 New | Relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9) |
-| 96 | List patterns | 📝 New | List patterns (C# 11), slice patterns |
+| 32 | Overview | ✅ Shipped ([#55966](https://github.com/dotnet/docs/pull/55966), revised again in [#56113](https://github.com/dotnet/docs/pull/56113)) | High-level introduction to pattern matching and switch expressions (C# 8). Motivate when and why to use patterns vs. imperative branching. |
+| 92 | Declaration, constant, and var patterns | ✅ Shipped ([#55966](https://github.com/dotnet/docs/pull/55966)) | Declaration patterns, constant patterns, var patterns. Combined into one article because each is brief on its own. |
+| 93 | Type patterns | ✅ Shipped ([#55966](https://github.com/dotnet/docs/pull/55966)) | Type-testing patterns, pattern matching with generics (C# 7.1) |
+| 94 | Property and positional patterns | ✅ Shipped ([#56113](https://github.com/dotnet/docs/pull/56113)) | Property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8) |
+| 95 | Relational, logical, and parenthesized patterns | ✅ Shipped ([#56113](https://github.com/dotnet/docs/pull/56113)) | Relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9). **Title as shipped:** "Relational, logical, and parenthesized patterns" (was "Relational and logical patterns" in this plan) |
+| 96 | List and slice patterns | ✅ Shipped ([#56113](https://github.com/dotnet/docs/pull/56113)) | List patterns (C# 11), slice patterns. **Title as shipped:** "List and slice patterns" (was "List patterns" in this plan) |
 | 33 | Discards | ✅ Exists | Keep or merge into pattern matching |
 | 34 | Deconstruction | 🟡 Revise | Records, tuples, custom `Deconstruct` |
 | 73 | Tutorial: Explore pattern matching | 📥 Pull from Tutorials | |
@@ -410,11 +410,11 @@ The following is the complete proposed TOC:
       # NEW: property patterns (C# 8), extended property (C# 10),
       # positional patterns (C# 8)
       href: fundamentals/patterns/property-positional-patterns.md
-    - name: Relational and logical patterns
+    - name: Relational, logical, and parenthesized patterns
       # NEW: relational patterns, and/or/not combinators,
       # parenthesized patterns (C# 9)
       href: fundamentals/patterns/relational-logical-patterns.md
-    - name: List patterns
+    - name: List and slice patterns
       # NEW: list patterns (C# 11), slice patterns
       href: fundamentals/patterns/list-patterns.md
     - name: Discards

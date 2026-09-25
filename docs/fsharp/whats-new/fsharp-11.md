@@ -8,7 +8,7 @@ ai-usage: ai-generated
 
 # What's new in F# 11
 
-F# 11 reduces repetitive record code, improves .NET framework integration, and makes common string interpolation compatible with Native AOT. New FSharp.Core functions simplify task interop and bounded concurrency. Parallel compilation is now the default.
+F# 11 makes common string interpolation reflection-free and suitable for Native AOT, reduces repetitive record code, and preserves handler metadata for ASP.NET Core Minimal APIs. New FSharp.Core functions simplify task interop and bounded concurrency. Parallel compilation is now the default.
 
 ## String interpolation without reflection
 
@@ -32,7 +32,7 @@ An **expression spread** copies fields from a value. Named and anonymous records
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="RecordValues":::
 
-The rightmost contribution wins, so `remote` keeps the port and timeout but replaces the host. Spreads also support multiple sources and projection into a smaller target record. `ClientOptions` is a distinct record type, not a subtype of `Endpoint`.
+The rightmost contribution wins. Spreads also support multiple sources and projection into a smaller target record. `ClientOptions` is a distinct record type, not a subtype of `Endpoint`.
 
 See [Record spread operators](../language-reference/record-spreads.md) for composition, projection, evaluation order, overlap warnings, and the API implications of shared field declarations.
 
@@ -144,7 +144,7 @@ Thanks to [@xperiandri](https://github.com/dotnet/fsharp/pull/20405) for computa
 
 ### Runtime async
 
-The .NET runtime-async prototype lets builder authors explore runtime-managed suspension instead of compiler-generated resumable state machines:
+F# 11 adds experimental support for .NET runtime async, where the runtime handles asynchronous methods that would otherwise require compiler-generated resumable state machines:
 
 > [!NOTE]
 > Runtime async requires `<LangVersion>preview</LangVersion>`, compatible runtime/reference metadata, and an FSharp.Core asset containing the runtime-async intrinsic. It doesn't replace the standard `task` or `async` builders.
@@ -186,7 +186,7 @@ See [Overload selection](../language-reference/parameters-and-arguments.md#overl
 
 ### Return-type-directed overloads
 
-`AllowOverloadOnReturnType` lets an expected result type select an overload, without a preview opt-in:
+`AllowOverloadOnReturnType` lets an expected result type select an overload:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
 
@@ -210,7 +210,7 @@ Extension members can supply operations required by generic inline code, even fo
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
 
-The same inline multiplication works with the built-in integer operator and the string extension. Extensions must be in scope where the inline function is defined. See [Extension member constraints](../language-reference/generics/statically-resolved-type-parameters.md#extension-member-constraints) for scope and compatibility rules.
+Extensions must be in scope where the inline function is defined. See [Extension member constraints](../language-reference/generics/statically-resolved-type-parameters.md#extension-member-constraints) for scope and compatibility rules.
 
 Thanks to [@gusty](https://github.com/dotnet/fsharp/pull/19602) for extending SRTP support.
 

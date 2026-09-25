@@ -219,7 +219,7 @@ Tasks are implemented using Resumable Code, a new feature in F# 6. Tasks are com
 
 ## Runtime async experiments
 
-Builder authors can experiment with .NET runtime async, where the runtime manages suspension rather than a compiler-generated resumable state machine.
+Builder authors can experiment with .NET runtime async, where the runtime handles asynchronous methods that would otherwise require compiler-generated resumable state machines.
 
 > [!NOTE]
 > This prototype requires `<LangVersion>preview</LangVersion>`, a runtime and reference assemblies that expose `MethodImplOptions.Async` and the required `AsyncHelpers` members, and an FSharp.Core asset containing `StateMachineHelpers.__runtimeAsyncReturn`. The intrinsic is supplied by the .NET asset of FSharp.Core; that asset's target name alone doesn't establish runtime support.

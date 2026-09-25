@@ -111,8 +111,6 @@ To use generic inline code with a type you don't own, supply its required operat
 
 :::code language="fsharp" source="../../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
 
-`twice 21` uses integer multiplication. `twice "ha"` resolves the same operator constraint through the string extension. You don't need a wrapper type or a separate string-specific function.
-
 The compiler captures relevant accessible extension members in scope where the inline constraint is defined. Opening a different extension module only at the call site doesn't retroactively change that scope. Keep required extensions accessible to consumers of public inline code.
 
 Built-in primitive operator solutions retain priority when the types match precisely. An extension member can satisfy an SRTP member constraint, but doesn't make a type implement a nominal interface with static abstract members.

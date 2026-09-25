@@ -10,7 +10,7 @@ internal class Tensors
         Tensor<int> t0 = Tensor.Create([1, 2, 3], [1, 3]); // [[1, 2, 3]]
 
         // Reshape tensor (3 x 1).
-        Tensor<int> t1 = t0.Reshape(3, 1); // [[1], [2], [3]]
+        Tensor<int> t1 = t0.Reshape([3, 1]); // [[1], [2], [3]]
 
         // Slice tensor (2 x 1).
         Tensor<int> t2 = t1.Slice(1.., ..); // [[2], [3]]

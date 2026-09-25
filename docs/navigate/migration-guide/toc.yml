@@ -18,29 +18,26 @@ items:
       - name: Working with the agent
         href: ../../core/porting/github-copilot-upgrade/working-with-agent.md
         displayName: copilot, upgrade
-      - name: Scenarios and skills reference
-        href: ../../core/porting/github-copilot-upgrade/scenarios-and-skills.md
-        displayName: copilot, upgrade
       - name: Customization
         href: ../../core/porting/github-copilot-upgrade/customization.md
         displayName: copilot, upgrade
       - name: FAQ
         href: ../../core/porting/github-copilot-upgrade/faq.yml
         displayName: copilot, upgrade
-      - name: Upgrade .NET apps
+      - name: Upgrade .NET projects
         expanded: false
         items:
-          - name: How to upgrade with GitHub Copilot
-            href: ../../core/porting/github-copilot-upgrade/how-to-upgrade-with-github-copilot.md
+          - name: Overview
+            href: ../../core/porting/github-copilot-upgrade/dotnet-overview.md
             displayName: copilot, upgrade
-          - name: How to apply custom upgrade instructions
-            href: ../../core/porting/github-copilot-upgrade/how-to-custom-upgrade-instructions.md
+          - name: Upgrade a .NET app
+            href: ../../core/porting/github-copilot-upgrade/dotnet-how-to-upgrade-with-github-copilot.md
             displayName: copilot, upgrade
-          - name: Best practices
-            href: ../../core/porting/github-copilot-upgrade/best-practices.md
+          - name: Apply custom .NET upgrade instructions
+            href: ../../core/porting/github-copilot-upgrade/dotnet-how-to-custom-upgrade-instructions.md
             displayName: copilot, upgrade
-          - name: Troubleshooting
-            href: ../../core/porting/github-copilot-upgrade/troubleshooting.md
+          - name: .NET scenarios and skills
+            href: ../../core/porting/github-copilot-upgrade/dotnet-scenarios-and-skills.md
             displayName: copilot, upgrade
       - name: Migrate .NET apps to Azure
         href: ../../azure/migration/appmod/predefined-tasks.md

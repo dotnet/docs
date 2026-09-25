@@ -7,71 +7,79 @@ open System.Runtime.CompilerServices
 open System.Diagnostics.CodeAnalysis
 
 // <RecordConstructor>
-type Parcel = { TrackingId: string; WeightKg: decimal }
-let parcel = Parcel(TrackingId = "SHP-1042", WeightKg = 12.5m)
+type Person = { Name: string; Age: int }
+let person = Person(Name = "Ada", Age = 36)
 // </RecordConstructor>
 
 // <Extensions>
-type Uri with
-    member uri.ResourceName = Array.last uri.Segments
+type System.String with
+    static member (*) (text: string, count: int) = String.replicate count text
 
-type Report = { Name: string }
-    with member report.ResourceName = report.Name
+let inline twice value = value * 2
 
-let inline resourceName (resource: ^T) =
-    ((^T) : (member ResourceName: string) resource)
-
-let fromUrl = resourceName (Uri("https://example.com/reports/dispatch.csv"))
-let fromModel = resourceName { Name = "dispatch.csv" }
+let number = twice 21     // 42
+let text = twice "ha"     // "haha"
 // </Extensions>
 
 // <Concrete>
-let pending = Task.FromResult("dispatch.csv")
+open System.Threading.Tasks
+
+let pending = Task.FromResult 42
 let wrapped = ValueTask<_>(pending)
-let report: string = wrapped.Result
+let answer: int = wrapped.Result
+// ValueTask<int>, not ValueTask<Task<int>>
 // </Concrete>
 
 // <Priority>
-type ReportWriter =
-    static member Write(value: obj) = "legacy"
+open System.Runtime.CompilerServices
+
+type Overloads =
+    static member Choose(value: obj) = "object overload"
 
     [<OverloadResolutionPriority(1)>]
-    static member Write<'T>(value: 'T) = "typed"
+    static member Choose<'T>(value: 'T) = "generic overload"
 
-let writer = ReportWriter.Write(box 42)
+let chosen = Overloads.Choose(box 42)
+// "generic overload"; without the attribute, "object overload"
 // </Priority>
 
 // <Named>
-type Dispatch =
-    [<RequireNamedArguments>]
-    static member Schedule(express: bool, signatureRequired: bool) =
-        (express, signatureRequired)
+open System.Diagnostics.CodeAnalysis
 
-let delivery = Dispatch.Schedule(express = true, signatureRequired = false)
+type Client =
+    [<RequireNamedArguments>]
+    static member Configure(useTls: bool, keepAlive: bool) =
+        (useTls, keepAlive)
+
+let settings = Client.Configure(useTls = true, keepAlive = false)
+// Client.Configure(true, false) is rejected.
 // </Named>
 
 // <Reraise>
-let loadManifest path =
+open System
+open System.IO
+
+let readText path =
     async {
         try
             let! text =
                 Async.StartTaskImmediate(fun ct -> File.ReadAllTextAsync(path, ct))
             return text
         with :? IOException as error ->
-            Console.Error.WriteLine($"Manifest unavailable: {error.Message}")
+            Console.Error.WriteLine($"Read failed: {error.Message}")
             return reraise ()
     }
 // </Reraise>
 
 [<EntryPoint>]
 let main _ =
-    if parcel.WeightKg <> 12.5m then failwith "Constructor"
-    if fromUrl <> "dispatch.csv" || fromModel <> fromUrl then failwith "Extension"
-    if report <> "dispatch.csv" || writer <> "typed" then failwith "Overload"
-    if delivery <> (true, false) then failwith "Named arguments"
+    if person.Name <> "Ada" || person.Age <> 36 then failwith "Constructor"
+    if number <> 42 || text <> "haha" then failwith "Extension"
+    if answer <> 42 || chosen <> "generic overload" then failwith "Overload"
+    if settings <> (true, false) then failwith "Named arguments"
     let missing = Path.Combine(__SOURCE_DIRECTORY__, "absent-manifest.txt")
     try
-        Async.RunSynchronously(loadManifest missing) |> ignore
+        Async.RunSynchronously(readText missing) |> ignore
         failwith "Expected FileNotFoundException"
     with :? FileNotFoundException -> ()
     Console.WriteLine("Preview examples: passed")

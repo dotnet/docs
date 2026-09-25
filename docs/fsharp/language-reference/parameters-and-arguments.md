@@ -1,7 +1,7 @@
 ---
 title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-assisted
 ---
 # Parameters and arguments
@@ -130,7 +130,7 @@ To prevent accidentally swapped arguments, annotate a method or constructor with
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Named":::
 
-`Dispatch.Schedule(true, false)` is rejected. This rule covers method and constructor calls, not property/indexer syntax, delegate invocation, or attributes placed on individual parameters. `nameof` doesn't invoke the method and isn't subject to the call rule.
+`Client.Configure(true, false)` is rejected. Naming `useTls` and `keepAlive` makes the two Boolean choices explicit. This rule covers method and constructor calls, not property/indexer syntax, delegate invocation, or attributes placed on individual parameters. `nameof` doesn't invoke the method and isn't subject to the call rule.
 
 For reference assemblies without this attribute, the sample places the following compatibility definition in `Compatibility.fs`, before `Preview.fs` in compile order. Omit the definition when your referenced framework or library already provides it:
 
@@ -145,11 +145,17 @@ To distinguish a value from an already-wrapped value, the most-concrete tiebreak
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
 
+The inferred type is `ValueTask<int>`: the constructor wraps the task, rather than treating it as a result value of type `Task<int>`.
+
 The tiebreaker is a last resort, not a replacement for all existing overload rules. It doesn't order unrelated parameter types or SRTP candidates, and genuinely incomparable overloads can remain ambiguous.
+
+To inspect a selection, enable informational diagnostics FS3575 (the preferred overload) and FS3576 (the bypassed generic overload) through [opt-in warnings](compiler-options.md#opt-in-warnings).
 
 To prefer an API's newer overload, a library author can set a higher `System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute` value:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Priority":::
+
+Without the attribute, the `obj` overload wins for this argument. With priority 1, the generic overload wins despite the usual preference. Unannotated overloads have priority 0. The attribute is available in .NET 9 and later reference assemblies.
 
 Priority prunes applicable candidates within a declaring type before ordinary betterness rules. It doesn't make an inapplicable overload applicable. Don't assume it changes F# property/indexer selection; attributes on overrides are rejected in preview mode.
 

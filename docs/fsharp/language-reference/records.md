@@ -2,7 +2,7 @@
 title: Records in F#
 titleSuffix: ""
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-assisted
 ---
 # Records (F#)
@@ -98,7 +98,7 @@ To share fields across different application models, F# 11 supports both **recor
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordValues":::
 
-The type spread defines the fields of a new `Shipment` type. The expression spread copies address values into a shipment. Neither form creates inheritance.
+The type spread defines the fields of a new `ClientOptions` type. The expression spread copies endpoint values into client options; the anonymous record then overrides the host. Neither form creates inheritance.
 
 See [Record spread operators](record-spreads.md) for multiple sources, projections, overrides, evaluation, warnings, and API compatibility. For a simple same-type update, the existing [copy-and-update expression](copy-and-update-record-expressions.md) remains available.
 

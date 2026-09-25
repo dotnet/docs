@@ -1,7 +1,7 @@
 ---
 title: Async and task functions
 description: Choose FSharp.Core functions for task interop, cancellation, result transformations, and bounded concurrency.
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-generated
 ---
 
@@ -15,7 +15,7 @@ To start a .NET operation with the async workflow's cancellation token, pass a f
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Await":::
 
-The file read receives the ambient token. The workflow waits for the operation to finish, including its cancellation or cleanup. Starting the operation without passing its token and only then awaiting it can't retroactively make the operation observe cancellation.
+The file read receives the ambient token. A missing file returns `None`, while a successful read returns `Some contents`. The workflow waits for the operation to finish, including its cancellation or cleanup. Starting the operation without passing its token and only then awaiting it can't retroactively make the operation observe cancellation.
 
 Use `Async.Await` when you already have a task-like value. Both APIs propagate the single underlying exception of a faulted task directly. An aggregate with multiple inner exceptions remains an aggregate. `Async.AwaitTask` keeps its existing exception-wrapping behavior.
 
@@ -62,7 +62,7 @@ The `Microsoft.FSharp.Control.Async`, `Task`, and `ValueTask` modules expose the
 | `Async.result`, `Task.result`, `ValueTask.result` | `'T -> M<'T>` |
 | `Async.map`, `Task.map`, `ValueTask.map` | `('T -> 'U) -> M<'T> -> M<'U>` |
 | `Async.bind`, `Task.bind`, `ValueTask.bind` | `('T -> M<'U>) -> M<'T> -> M<'U>` |
-| `Async.ignore`, `Task.ignore`, `ValueTask.ignore` | `M<'T> -> M<unit>` |
+| `Async.ignore<'T>`, `Task.ignore<'T>`, `ValueTask.ignore<'T>` | `M<'T> -> M<unit>`; explicit input type argument required. |
 | `Async.catchWith`, `Task.catchWith`, `ValueTask.catchWith` | `(exn -> 'T) -> M<'T> -> M<'T>` |
 | `Async.catch`, `Task.catch`, `ValueTask.catch` | `M<'T> -> M<Result<'T, exn>>` |
 | `Async.empty`, `Task.empty`, `ValueTask.empty` | `M<unit>` |
@@ -73,9 +73,16 @@ For example, map a file's contents to a length, then represent a read failure as
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Pipeline":::
 
+A file containing `Report 1` gives `Ok 8`. A missing file gives an `Error` containing a `FileNotFoundException`. To discard a successful value rather than transform it, specify the input type when you call `ignore`:
+
+```fsharp
+let completion: System.Threading.Tasks.Task<unit> =
+    Task.result 42 |> Task.ignore<int>
+```
+
 `catchWith` supplies a replacement value for a non-cancellation failure; it doesn't run another asynchronous computation. `catch` returns `Ok` or `Error`. Cancellation isn't converted to an error value or passed to the recovery handler. `Task.empty` is a `Task<unit>`, not the non-generic `Task.CompletedTask`.
 
-The lowercase `Async.catch` returns `Result`, whereas the existing `Async.Catch` returns `Choice`. The functions preserve async's deferred execution and task's eager execution; a common name doesn't make their scheduling models identical.
+The lowercase `Async.catch` returns `Result`, whereas the existing `Async.Catch` returns `Choice`. `catchWith` and `catch` observe failures of the supplied computation; they can't catch a synchronous exception thrown before you supply that computation. The functions preserve async's deferred execution and task's eager execution; a common name doesn't make their scheduling models identical.
 
 ## ValueTask and library availability
 

@@ -1,229 +1,258 @@
 ---
 title: What's new in F# 11
-description: Explore reflection-free string interpolation, record type and value spreads, direct delegates, and new asynchronous APIs in F# 11.
+description: Learn about record spreads, reflection-free string interpolation, direct delegates, async and task APIs, and compiler improvements in F# 11.
 ms.topic: whats-new
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-generated
 ---
 
 # What's new in F# 11
 
-F# 11 removes reflection from common string interpolation, so a native command-line app can format its output without pulling in the reflection-based printf engine. Record spreads cut out repetitive field declarations and copying. Direct delegates let .NET frameworks see the handler you wrote, including the parameter metadata they need. New asynchronous APIs make cancellation, error handling, and bounded concurrency easier to express.
+F# 11 reduces repetitive record code, improves .NET framework integration, and makes common string interpolation compatible with Native AOT. New FSharp.Core functions simplify task interop and bounded concurrency. Parallel compilation is now the default.
 
-## Format output for native apps
+## String interpolation without reflection
 
-For a small shipment-tracking utility, ordinary interpolation now produces output suitable for [Native AOT deployment](../../core/deploying/native-aot/index.md):
+String-valued interpolation with plain or .NET-format holes no longer needs the reflection-based printf engine, including when the values aren't strings:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Interpolation":::
 
-Plain holes and .NET-format holes, such as `{weightKg:F2}`, no longer need reflection-based printf formatting. The new `printn` function writes the resulting string with a newline; `print` writes without one. Both also accept other values through F#'s `string` conversion.
+The compiler uses string conversions and concatenation for this form. The result is trimmable formatting code suitable for [Native AOT](../../core/deploying/native-aot/index.md), which compiles an application to native code ahead of time. FSharp.Core 11 also adds `print` and `printn`: both write a value using F#'s `string` conversion, and `printn` adds a newline.
 
-This change doesn't make every printf format reflection-free. For supported formats, culture behavior, and the distinct `FormattableString` path, see [Interpolated strings](../language-reference/interpolated-strings.md#native-aot-and-string-valued-interpolation).
+Printf-specific formats such as `%A{value}` can still require reflection. .NET-format holes such as `{score:F1}` use invariant culture; review localized output when upgrading. See [Interpolated strings](../language-reference/interpolated-strings.md#native-aot-and-string-valued-interpolation) for format compatibility, explicit culture selection, and `FormattableString`.
 
 Thanks to [@charlesroddie](https://github.com/dotnet/fsharp/pull/19971) for the interpolation implementation.
 
-## Share record fields without repeating them
+## Record type and expression spreads
 
-A shipping address belongs in several application models. **Record type spreads** let you declare those shared fields once while keeping a flat shipment model:
+Record spreads reuse fields across record types and combine values without a field-by-field copy. A **type spread** declares the fields of a new record:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="RecordTypes":::
 
-**Record expression spreads** fill those fields from existing values. They also work between named and anonymous records:
+An **expression spread** copies fields from a value. Named and anonymous records can both supply those fields:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="RecordValues":::
 
-`Shipment` is its own record type, not a subtype of `DeliveryAddress`. For projection into a smaller model, composition from multiple sources, field overrides, and compatibility considerations, see the new [Record spread operators](../language-reference/record-spreads.md) reference.
+The rightmost contribution wins, so `remote` keeps the port and timeout but replaces the host. Spreads also support multiple sources and projection into a smaller target record. `ClientOptions` is a distinct record type, not a subtype of `Endpoint`.
+
+See [Record spread operators](../language-reference/record-spreads.md) for composition, projection, evaluation order, overlap warnings, and the API implications of shared field declarations.
 
 Thanks to [@brianrourkeboll](https://github.com/dotnet/fsharp/pull/18927) for record spreads.
 
-### Construct a record by its type name
+### Record constructors
 
-When several records share field names, a constructor call identifies the intended type immediately and offers constructor completion:
+Record constructors identify the record type at the call site and support named arguments:
 
 > [!NOTE]
 > Record constructor syntax requires `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
 
-This syntax exposes the record's all-fields constructor to F#. It is separate from record spreads. See [Record constructors](../language-reference/records.md#record-constructors).
+This syntax exposes a record's all-fields constructor to F#. It doesn't change record patterns or replace spread expressions. See [Record constructors](../language-reference/records.md#record-constructors) for field order and accessibility.
 
 Thanks to [@charlesroddie](https://github.com/dotnet/fsharp/pull/19974) for record constructors.
 
-## Give .NET frameworks the original handler
+## Direct delegates and ASP.NET Core Minimal APIs
 
-ASP.NET Core Minimal APIs inspect a delegate's method parameters to bind route values, headers, and services. F# 11 **direct delegate construction** preserves that metadata when the delegate points directly at a compatible named function or method:
+Direct delegate construction lets a delegate point at a compatible named function or method instead of a generated wrapper. Frameworks that inspect the delegate can then see the original method and its parameter metadata.
+
+[ASP.NET Core Minimal APIs](/aspnet/core/fundamentals/minimal-apis/parameter-binding) use that metadata to bind route values, services, and headers. This handler supplies all three:
 
 :::code language="fsharp" source="../language-reference/snippets/delegates/Program.fs" id="Handler":::
 
-Register the service and route in an ASP.NET Core app:
+Register the service and pass the delegate to `MapGet`:
 
 :::code language="fsharp" source="../language-reference/snippets/delegates/Program.fs" id="App":::
 
-A request to `/shipments/SHP-1042` with `X-Customer: Ada` returns `Ada: SHP-1042 is Dispatched`. The route parameter name, `[<FromServices>]`, and `[<FromHeader>]` come from `status`, rather than a generated wrapper method.
+```console
+curl -H "X-Customer: Ada" http://127.0.0.1:5080/shipments/SHP-1042
+```
 
-Direct construction also improves delegate equality and event-handler removal. Not every lambda or adapted function can become a direct delegate. See [Delegates](../language-reference/delegates.md#direct-construction-and-framework-metadata) for the runnable project, reflection checks, and the null-receiver compatibility change.
+The response is `Ada: SHP-1042 is Dispatched`. The framework reads `trackingId`, `[<FromServices>]`, and `[<FromHeader>]` from `status`.
+
+Delegates with the same method and receiver also compare equal, so event-handler removal can match a newly constructed delegate. Captures and argument adaptations can still require wrappers. See [Delegates](../language-reference/delegates.md#direct-construction-and-framework-metadata) for the complete runnable project and the change in when null receivers fail.
 
 Thanks to [@kerams](https://github.com/dotnet/fsharp/pull/19993) for direct delegate construction.
 
-### Resolve common overloads with less help
+## Async and task APIs
 
-Wrapping an existing task shouldn't require explaining that it isn't the result value itself. The **most-concrete tiebreaker** distinguishes generic wrapper overloads:
+FSharp.Core 11 adds cancellation-aware task interop, bounded concurrency, and matching helper functions for `Async`, `Task`, and `ValueTask`. These library additions work with the existing `async` and `task` builders.
 
-> [!NOTE]
-> The most-concrete tiebreaker and `OverloadResolutionPriorityAttribute` support require `<LangVersion>preview</LangVersion>`.
+### Task factories and bounded concurrency
 
-:::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
-
-Library authors can also use `OverloadResolutionPriorityAttribute` to steer callers toward a preferred overload:
-
-:::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Priority":::
-
-Separately, `AllowOverloadOnReturnType` lets a library offer conversions selected by the expected result type:
-
-:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
-
-See [Overload selection](../language-reference/parameters-and-arguments.md#overload-selection) for the scope of these rules.
-
-### Make ambiguous-looking arguments explicit
-
-Two Boolean arguments are easy to swap. API authors can require their callers to supply names:
-
-> [!NOTE]
-> Named-argument enforcement requires `<LangVersion>preview</LangVersion>` and a definition of `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`. The [complete example](../language-reference/parameters-and-arguments.md#require-named-arguments) supplies a compatibility definition for reference assemblies that don't contain it.
-
-:::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Named":::
-
-## Use .NET conditional nullability contracts
-
-[`NotNullIfNotNull`](../../csharp/language-reference/attributes/nullable-analysis.md#conditional-postconditions-notnullwhen-maybenullwhen-and-notnullifnotnull) is an existing .NET nullable contract, understood by C#, that promises a non-null result when the named input is non-null.
-
-F# 11 uses that promise to avoid unnecessary null handling around APIs such as `Path.GetFileName` and `Path.GetExtension`:
-
-:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Nullability":::
-
-Null checking remains an independent opt-in with `<Nullable>enable</Nullable>`. A nullable input still needs nullable handling. See [Conditional return contracts](../language-reference/values/null-values.md#conditional-return-contracts).
-
-## Control asynchronous work where it starts
-
-To read many reports without opening them all at once, pass task **factories** to `Task.parallelLimit`. The helper starts at most four operations concurrently and returns results in input order:
+`Task.parallelLimit` controls how many operations start at once. Pass factories, not already-running tasks:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Bounded":::
 
-The token reaches each file operation. If one operation fails, the helper requests cancellation of sibling work. Already-started tasks can't be throttled retroactively.
+At most four file reads run concurrently, and their results retain the input order. Each read receives a cancellation token. If one operation fails, the helper requests cancellation of sibling work.
 
-To call a task-returning API from an async workflow, `Async.StartTaskImmediate` passes the workflow's cancellation token to the factory and awaits the result. Like the new `Async.Await`, it exposes a single task failure directly, so the handler can catch `FileNotFoundException`:
+### Async task interop and exception handling
+
+`Async.StartTaskImmediate` passes the workflow's ambient cancellation token to a task factory, then awaits its result. A single task failure propagates as its underlying exception:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Await":::
 
-### New FSharp.Core functions
+For an existing task or value task, use `Async.Await`. Both APIs let the handler catch `FileNotFoundException` directly, rather than an extra `AggregateException` wrapper. Existing `Async.AwaitTask` behavior is unchanged.
 
-The new helper modules use consistent names. In the following table, `M<'T>` means the corresponding `Async<'T>`, `Task<'T>`, or `ValueTask<'T>` result.
+### Result transformations and API shapes
 
-| Functions | Argument and result shape |
+The helper modules in `Microsoft.FSharp.Control` share the following operations. In the table, `M<'T>` stands for the corresponding `Async<'T>`, `Task<'T>`, or `ValueTask<'T>`.
+
+| Fully qualified functions | Argument and result shape |
 |---|---|
-| `Async.result`, `Task.result`, `ValueTask.result` | `'T -> M<'T>` |
-| `Async.map`, `Task.map`, `ValueTask.map` | `('T -> 'U) -> M<'T> -> M<'U>` |
-| `Async.bind`, `Task.bind`, `ValueTask.bind` | `('T -> M<'U>) -> M<'T> -> M<'U>` |
-| `Async.ignore`, `Task.ignore`, `ValueTask.ignore` | `M<'T> -> M<unit>` |
-| `Async.catchWith`, `Task.catchWith`, `ValueTask.catchWith` | `(exn -> 'T) -> M<'T> -> M<'T>` |
-| `Async.catch`, `Task.catch`, `ValueTask.catch` | `M<'T> -> M<Result<'T, exn>>` |
-| `Async.empty`, `Task.empty`, `ValueTask.empty` | A computation with result `unit`. |
+| `Microsoft.FSharp.Control.Async.result`, `Microsoft.FSharp.Control.Task.result`, `Microsoft.FSharp.Control.ValueTask.result` | `'T -> M<'T>` |
+| `Microsoft.FSharp.Control.Async.map`, `Microsoft.FSharp.Control.Task.map`, `Microsoft.FSharp.Control.ValueTask.map` | `('T -> 'U) -> M<'T> -> M<'U>` |
+| `Microsoft.FSharp.Control.Async.bind`, `Microsoft.FSharp.Control.Task.bind`, `Microsoft.FSharp.Control.ValueTask.bind` | `('T -> M<'U>) -> M<'T> -> M<'U>` |
+| `Microsoft.FSharp.Control.Async.ignore`, `Microsoft.FSharp.Control.Task.ignore`, `Microsoft.FSharp.Control.ValueTask.ignore` | `M<'T> -> M<unit>`; specify the input type argument. |
+| `Microsoft.FSharp.Control.Async.catchWith`, `Microsoft.FSharp.Control.Task.catchWith`, `Microsoft.FSharp.Control.ValueTask.catchWith` | `(exn -> 'T) -> M<'T> -> M<'T>` |
+| `Microsoft.FSharp.Control.Async.catch`, `Microsoft.FSharp.Control.Task.catch`, `Microsoft.FSharp.Control.ValueTask.catch` | `M<'T> -> M<Result<'T, exn>>` |
+| `Microsoft.FSharp.Control.Async.empty`, `Microsoft.FSharp.Control.Task.empty`, `Microsoft.FSharp.Control.ValueTask.empty` | `M<unit>` |
 
-For example, turn a report read into a length calculation with a recoverable error value:
+For example, `map` transforms file contents into a length, and `catch` turns a non-cancellation failure into an `Error` value:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Pipeline":::
 
-| Additional APIs | Purpose and result |
-|---|---|
-| `Task.parallelLimit`, `Async.parallelLimit` | Run with a positive concurrency limit; collect an ordered result array. |
-| `Task.parallelDoLimit`, `Async.parallelDoLimit` | Run with a positive concurrency limit; return `unit`. |
-| `Task.sequential`, `Task.sequentialDo`, `Async.sequentialDo` | Run one computation at a time; collect results or return `unit`. |
-| `Task.startAsyncImmediate` | `CancellationToken -> Async<'T> -> Task<'T>` |
-| `Task.ofValueTask`, `ValueTask.ofTask` | Convert between `ValueTask<'T>` and `Task<'T>`. |
-| `Async.Await`, `Async.StartTaskImmediate` | Await task-like work, or start it with the ambient cancellation token. |
-| `Async.RunSynchronouslyImmediate` | Run `Async<'T>` from the calling thread until the first suspension, then block for its result. |
-| `ExtraTopLevelOperators.print`, `ExtraTopLevelOperators.printn` | `'T -> unit`; write a value to standard output. |
-| `Operators.Unchecked.withNull` | Retype `'T` as `'T \| null` for unconstrained generic interop, without a runtime check. |
+A file containing `Report 1` produces `Ok 8`; a missing file produces `Error` containing a `FileNotFoundException`. Cancellation still propagates instead of becoming an error value.
 
-These additions require an FSharp.Core version that contains them. Cancellation still propagates through `catch` and `catchWith`; `ValueTask` still has single-consumption constraints. See [Async and task functions](../language-reference/async-task-functions.md) for signatures, exception behavior, and library-asset requirements.
+| Additional APIs | Argument and result shape |
+|---|---|
+| `Microsoft.FSharp.Control.Task.parallelLimit` | `int -> CancellationToken -> seq<CancellationToken -> Task<'T>> -> Task<'T[]>` |
+| `Microsoft.FSharp.Control.Async.parallelLimit` | `int -> seq<Async<'T>> -> Async<'T[]>` |
+| `Microsoft.FSharp.Control.Task.parallelDoLimit`, `Microsoft.FSharp.Control.Async.parallelDoLimit` | Corresponding bounded operations over unit computations, with a unit result. |
+| `Microsoft.FSharp.Control.Task.sequential`, `Microsoft.FSharp.Control.Task.sequentialDo`, `Microsoft.FSharp.Control.Async.sequentialDo` | Run one computation at a time; collect results or return `unit`. |
+| `Microsoft.FSharp.Control.Task.startAsyncImmediate` | `CancellationToken -> Async<'T> -> Task<'T>` |
+| `Microsoft.FSharp.Control.Task.ofValueTask`, `Microsoft.FSharp.Control.ValueTask.ofTask` | `ValueTask<'T> -> Task<'T>` and `Task<'T> -> ValueTask<'T>`. |
+| `Microsoft.FSharp.Control.Async.Await` | Await a `Task`, `ValueTask`, or supported task-like value as an async computation. |
+| `Microsoft.FSharp.Control.Async.StartTaskImmediate` | Start a task-like value with the ambient cancellation token and await it. |
+| `Microsoft.FSharp.Control.Async.RunSynchronouslyImmediate` | Start `Async<'T>` on the calling thread until its first suspension, then block for its result. |
+
+See [Async and task functions](../language-reference/async-task-functions.md) for full overload shapes, cancellation and exception contracts, and library-asset requirements. Value tasks retain their single-consumption constraints.
 
 Thanks to [@bartelink](https://github.com/dotnet/fsharp/pull/19844) for the async/task API contributions.
 
-### Report a failure without losing its origin
+### Reraise in computation expressions
 
-An async error handler can add context to a log and then propagate the original exception and stack trace:
+`reraise ()` can preserve the original exception and stack trace after a computation-expression handler logs a failure:
 
 > [!NOTE]
-> `reraise` in computation-expression handlers requires `<LangVersion>preview</LangVersion>`.
+> This use of `reraise` requires `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
 
-See [Rethrow from a computation expression](../language-reference/computation-expressions.md#rethrow-from-a-computation-expression).
+Unlike `raise error`, a rethrow retains the failure's origin. See [Rethrow from a computation expression](../language-reference/computation-expressions.md#rethrow-from-a-computation-expression) for nested handlers and custom builders.
 
 Thanks to [@xperiandri](https://github.com/dotnet/fsharp/pull/20405) for computation-expression rethrow support.
 
-### Experiment with runtime-managed suspension
+### Runtime async
 
-Builder authors can explore .NET runtime async support, which lets the runtime manage suspension instead of a compiler-generated resumable state machine:
+The .NET runtime-async prototype lets builder authors explore runtime-managed suspension instead of compiler-generated resumable state machines:
 
 > [!NOTE]
-> Runtime async is a prototype requiring `<LangVersion>preview</LangVersion>`, compatible runtime/reference metadata, and the FSharp.Core runtime-async intrinsic. It doesn't replace the standard `task` or `async` builders.
+> Runtime async requires `<LangVersion>preview</LangVersion>`, compatible runtime/reference metadata, and an FSharp.Core asset containing the runtime-async intrinsic. It doesn't replace the standard `task` or `async` builders.
 
-With the small application-defined builder in [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments), the call site is ordinary computation-expression code:
+The application-defined builder in [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments) supports this call site:
 
 :::code language="fsharp" source="../language-reference/snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
 
 Thanks to [@majocha](https://github.com/dotnet/fsharp/pull/20235) for the runtime-async implementation.
 
-## Adapt existing types to generic inline code
+## .NET nullability contracts
 
-An extension member can give a framework type the operation your generic code expects, without wrapping the type:
+[`NotNullIfNotNull`](../../csharp/language-reference/attributes/nullable-analysis.md#conditional-postconditions-notnullwhen-maybenullwhen-and-notnullifnotnull) is a .NET attribute that describes a conditional return contract: a non-null input guarantees a non-null result. F# 11 recognizes common uses of that contract:
+
+:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Nullability":::
+
+With null checking enabled through `<Nullable>enable</Nullable>`, these assignments don't need redundant null handling. A nullable input still produces a nullable result. Null checking remains opt-in; see [Conditional return contracts](../language-reference/values/null-values.md#conditional-return-contracts) for supported cases.
+
+For unconstrained generic interop, FSharp.Core also adds `Microsoft.FSharp.Core.Operators.Unchecked.withNull`, with shape `'T -> 'T | null`. It retypes a value without a runtime check; it doesn't prove the value is non-null. See [Unconstrained nullable generic interop](../language-reference/values/null-values.md#unconstrained-nullable-generic-interop).
+
+## Overload resolution and named arguments
+
+F# 11 adds ways to resolve generic overloads and express an API author's intended choice.
+
+### Most-concrete tiebreaker and overload priority
+
+The **most-concrete tiebreaker** resolves otherwise ambiguous generic wrapper overloads:
+
+> [!NOTE]
+> The tiebreaker and `OverloadResolutionPriorityAttribute` support require `<LangVersion>preview</LangVersion>`.
+
+:::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
+
+The compiler prefers the `Task<'T>` constructor parameter over a bare `'T`. Library authors can separately use `OverloadResolutionPriorityAttribute` to prefer one applicable overload:
+
+:::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Priority":::
+
+See [Overload selection](../language-reference/parameters-and-arguments.md#overload-selection) for the order and scope of these rules.
+
+### Return-type-directed overloads
+
+`AllowOverloadOnReturnType` lets an expected result type select an overload, without a preview opt-in:
+
+:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
+
+See [Select by return type](../language-reference/parameters-and-arguments.md#select-by-return-type) for cases that still need an annotation.
+
+### Required named arguments
+
+API authors can require parameter names to make otherwise easy-to-swap arguments explicit:
+
+> [!NOTE]
+> Enforcement requires `<LangVersion>preview</LangVersion>` and a definition of `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`. The [complete example](../language-reference/parameters-and-arguments.md#require-named-arguments) includes a compatibility definition for reference assemblies that don't contain it.
+
+:::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Named":::
+
+## Extension members for SRTP constraints
+
+Extension members can supply operations required by generic inline code, even for types you don't own:
 
 > [!NOTE]
 > Extension members as statically resolved type parameter (SRTP) constraint solutions require `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
 
-The same `resourceName` function accepts a `Uri` and an application record. Extensions must be in scope where the inline function is defined. See [Extension members and SRTP](../language-reference/generics/statically-resolved-type-parameters.md#extension-member-constraints).
+The same inline multiplication works with the built-in integer operator and the string extension. Extensions must be in scope where the inline function is defined. See [Extension member constraints](../language-reference/generics/statically-resolved-type-parameters.md#extension-member-constraints) for scope and compatibility rules.
 
 Thanks to [@gusty](https://github.com/dotnet/fsharp/pull/19602) for extending SRTP support.
 
-## Reuse API documentation
+## XML documentation reuse
 
-To keep shared descriptions consistent, put them in an XML file and include them where needed:
+The compiler expands XML `<include>` tags so API members can share descriptions:
 
 :::code language="xml" source="../language-reference/snippets/xml-documentation/shared.xml":::
 
 :::code language="fsharp" source="../language-reference/snippets/xml-documentation/Tracking.fs" id="Include":::
 
-The compiler expands `<include>` into the generated XML documentation. For an override of a documented member, `<inheritdoc/>` lets compatible F# tooling display the inherited documentation:
+F# tooling can also resolve `<inheritdoc/>` for an override:
 
 :::code language="fsharp" source="../language-reference/snippets/xml-documentation/Tracking.fs" id="Inherit":::
 
-The compiler preserves `<inheritdoc/>` for documentation consumers; it doesn't copy inherited prose into the XML output. See [Reuse and inherit documentation](../language-reference/xml-documentation.md#reuse-and-inherit-documentation) and the official [XML tag reference](../../csharp/language-reference/xmldoc/recommended-tags.md#reuse-documentation-text).
+The compiler retains `<inheritdoc/>` for documentation consumers rather than copying inherited prose into the output. See [Reuse and inherit documentation](../language-reference/xml-documentation.md#reuse-and-inherit-documentation) and the [XML tag reference](../../csharp/language-reference/xmldoc/recommended-tags.md#reuse-documentation-text).
 
-## Express build alternatives without nesting
+## Conditional compilation with `#elif`
 
-A regional build can select one dispatch configuration from several alternatives with `#elif`:
+`#elif` expresses alternative build configurations without nested `#if` groups:
 
 :::code language="fsharp" source="../language-reference/snippets/compiler-directives/Region.fs" id="Region":::
 
-Run the sample as `dotnet fsi --define:EU_WAREHOUSE Region.fs` or `dotnet fsi --define:US_WAREHOUSE Region.fs`. With neither symbol, it selects UTC. See [Conditional compilation directives](../language-reference/compiler-directives.md#conditional-compilation-directives) for first-match rules and host directive lines.
+Run `dotnet fsi --define:EU_WAREHOUSE Region.fs` or `dotnet fsi --define:US_WAREHOUSE Region.fs` to select a branch. With neither symbol, the output is `UTC`; with both, the first match wins. See [Conditional compilation directives](../language-reference/compiler-directives.md#conditional-compilation-directives), including the separate support for host `#:` lines.
 
-## Spend less time compiling and adapting code
+## Compiler and collection performance
 
-Parallel compilation is on by default, combining graph-based checking with parallel optimization and code generation. Overload-resolution caching and improvements to pattern-match compilation reduce repeated compiler work. The [compiler options](../language-reference/compiler-options.md#parallel-compilation) reference explains how to compare sequential and parallel builds without disabling determinism.
+Parallel compilation is enabled by default, including graph-based checking, optimization, and code generation. Overload-resolution caching and pattern-match compiler improvements reduce repeated work. See [Parallel compilation](../language-reference/compiler-options.md#parallel-compilation) to compare builds or investigate a regression without disabling determinism.
 
-Many `List` and `Array` higher-order functions now inline known callbacks to avoid per-call closure allocations. Library authors can apply the same approach with [`InlineIfLambda` and `OptimizeClosureIfNotInlined`](../language-reference/functions/inline-functions.md#optimize-curried-callbacks).
+Many `List` and `Array` higher-order functions now inline known callbacks to avoid closure allocations. Library authors can use [`InlineIfLambda` with `OptimizeClosureIfNotInlined`](../language-reference/functions/inline-functions.md#optimize-curried-callbacks) to optimize a curried callback even when the caller passes it indirectly. Empty-result array operations can reuse a shared empty array.
 
-.NET interop also needs less scaffolding: [derived interfaces can cover inherited default implementations](../language-reference/interfaces.md#inherited-default-implementations), and [ordinary closures can read protected base fields](../language-reference/access-control.md#protected-base-fields-in-closures). Explicit generic arguments are checked in dependency order, avoiding spurious constraint failures.
+Zero-based `Array2D` operations also improve Native AOT compatibility. The exact set depends on the FSharp.Core asset; see [Two-dimensional arrays and Native AOT](../language-reference/arrays.md#two-dimensional-arrays-and-native-aot) for supported operations and non-zero-based restrictions.
 
-When you upgrade existing code:
+## Interop and upgrade guidance
 
-- Mirror compiler-semantic attributes in [signature files](../language-reference/signature-files.md#compiler-semantic-attributes). Omissions that can hide a contract are errors in F# 11.
-- Use integral-backed enums for [bitwise operations](../language-reference/enumerations.md#bitwise-operations). Invalid backing types are rejected at compile time.
-- Complete `let!` bindings with a body. Custom builder authors should review the [tail-operation contracts](../language-reference/computation-expressions.md#tail-operations-in-custom-builders), including terminal `do!`.
-- Use a supported [language version](../language-reference/compiler-options.md#language-version-and-indentation). Numbered modes start at F# 8; the old non-strict indentation mode is removed.
+- [Derived interfaces can cover inherited default implementations](../language-reference/interfaces.md#inherited-default-implementations), reducing redundant interface declarations.
+- [Ordinary closures can read protected base fields](../language-reference/access-control.md#protected-base-fields-in-closures). Object expressions still need a workaround.
+- Explicit generic arguments are checked in dependency order, avoiding spurious constraint failures.
+- Mirror compiler-semantic attributes in [signature files](../language-reference/signature-files.md#compiler-semantic-attributes). Omissions that hide a contract are now errors.
+- Use integral-backed enums for [bitwise operations](../language-reference/enumerations.md#bitwise-operations); invalid backing types are rejected.
+- Complete `let!` bindings with a body. Custom builder authors should review [tail-operation contracts](../language-reference/computation-expressions.md#tail-operations-in-custom-builders), particularly terminal `do!`.
+- Review [language version and indentation](../language-reference/compiler-options.md#language-version-and-indentation) when migrating older projects. Supported numbered modes start at F# 8; the non-strict indentation mode is removed.
 
 ## Acknowledgements
 

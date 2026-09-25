@@ -2,7 +2,7 @@
 title: Delegates in F#
 titleSuffix: ""
 description: Learn how to work with delegates in F#.
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-assisted
 ---
 # Delegates (F#)
@@ -89,7 +89,9 @@ Run `dotnet run -- --urls http://127.0.0.1:5080`, then send:
 curl -H "X-Customer: Ada" http://127.0.0.1:5080/shipments/SHP-1042
 ```
 
-The response is `Ada: SHP-1042 is Dispatched`. This example uses ASP.NET Core's delegate-based request binding; it doesn't establish compatibility with every source generator, OpenAPI integration, or Native AOT endpoint-generation path.
+The response is `Ada: SHP-1042 is Dispatched`. The example demonstrates binding, not input validation: it doesn't reject a missing customer header. Add validation if your application requires one.
+
+This example uses ASP.NET Core's delegate-based request binding; it doesn't establish compatibility with every source generator, OpenAPI integration, or Native AOT endpoint-generation path.
 
 ### Which targets are direct?
 

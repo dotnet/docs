@@ -1,7 +1,7 @@
 ---
 title: Interpolated strings
 description: Learn about interpolated strings, a special form of string that allows you to embed F# expressions directly inside them.
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-assisted
 ---
 
@@ -34,7 +34,7 @@ printfn $"I think {3.0 + 0.14} is close to {System.Math.PI}!"
 
 The contents in between each `{}` brace pair can be any F# expression.
 
-For string-valued interpolation in F# 11, an unformatted expression uses F#'s `string` conversion. If the expression evaluates to `null`, an empty string is used. Earlier compiler versions routed the interpolation through printf formatting; see [Native AOT and string-valued interpolation](#native-aot-and-string-valued-interpolation) for formatting differences.
+For string-valued interpolation in F# 11, an unformatted expression uses F#'s `string` conversion. If the expression evaluates to `null`, an empty string is used. Earlier compilers could optimize some string-only interpolations, but otherwise used printf formatting; see [Native AOT and string-valued interpolation](#native-aot-and-string-valued-interpolation) for formatting differences.
 
 For typed interpolated strings with format specifiers (such as `%s{expr}` or `%d{expr}`), the conversion follows the rules defined for that specific format specifier.
 To escape a `{}` brace pair, write two of them like so:
@@ -177,9 +177,9 @@ To format text without a reflection-based formatting engine, use string-valued i
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Interpolation":::
 
-In F# 11, the compiler lowers these interpolations to string conversions and concatenation instead of routing the whole expression through the printf engine. This supports trimming and [Native AOT deployment](../../core/deploying/native-aot/index.md) for these formatting operations. It doesn't guarantee that other code in the application is AOT-compatible.
+F# 11 extends string-concatenation lowering to ordinary non-string holes and .NET-format holes, instead of routing the whole expression through the printf engine. This supports trimming and [Native AOT deployment](../../core/deploying/native-aot/index.md) for these formatting operations. It doesn't guarantee that other code in the application is AOT-compatible.
 
-Printf-style holes requiring printf formatting, such as `%04d{number}` or `%A{record}`, can still use the reflection-based path. Simple typed holes can be optimized, but don't treat all printf formats as reflection-free. An interpolation used as a `PrintfFormat` value is also distinct from one whose result type is `string`.
+Printf-style holes requiring printf formatting, such as `%04d{number}` or `%A{record}`, can still use the reflection-based path. Bare `%s`, `%c`, `%d`, `%i`, and `%M` holes retain their type checks and avoid printf formatting. Other specifiers, including `%u`, aren't covered by that optimization. An interpolation used as a `PrintfFormat` value is also distinct from one whose result type is `string`.
 
 ### Culture and format compatibility
 
@@ -189,7 +189,7 @@ Plain holes use F#'s `string` conversion; .NET-format holes use invariant format
 
 Review output comparisons and localized messages when upgrading from an earlier compiler. A `FormattableString` retains its format string and arguments for later formatting with a provider; it doesn't follow the string-concatenation path.
 
-The compiler also warns when a hole contains an unapplied function. Apply the function if you intended its result:
+Warning FS3884 identifies an unapplied function or delegate in an interpolation hole. Apply the function if you intended its result:
 
 ```fsharp
 let weight () = 12.5m
@@ -206,6 +206,8 @@ printn 3
 ```
 
 Use [plaintext formatting](plaintext-formatting.md) when you need printf's formatting capabilities.
+
+For the release overview, see [What's new in F# 11](../whats-new/fsharp-11.md).
 
 ## See also
 

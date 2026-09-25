@@ -6,66 +6,78 @@ open System.Threading
 open System.Threading.Tasks
 
 // <Interpolation>
-let shipmentId = "SHP-1042"
-let parcelCount = 3
-let weightKg = 12.5m
-let status: string =
-    $"Shipment {shipmentId}: {parcelCount} parcels, {weightKg:F2} kg"
-
-printn status
+let name = "Ada"
+let score = 97.5
+let message: string = $"{name}: {score:F1}"
+printn message
+// Ada: 97.5
 // </Interpolation>
 
 // <RecordTypes>
-type DeliveryAddress =
-    { Street: string; City: string; PostalCode: string }
+type Endpoint = { Host: string; Port: int }
 
-type Shipment =
-    { ...DeliveryAddress
-      TrackingId: string
-      WeightKg: decimal }
+type ClientOptions =
+    { ...Endpoint
+      TimeoutSeconds: int }
 // </RecordTypes>
 
 // <RecordValues>
-let destination: DeliveryAddress =
-    { Street = "10 Market Street"; City = "Cambridge"; PostalCode = "CB1 1AA" }
+let local = { Host = "localhost"; Port = 5432 }
+let options: ClientOptions = { ...local; TimeoutSeconds = 30 }
 
-let shipment: Shipment =
-    { ...destination; TrackingId = "SHP-1042"; WeightKg = 12.5m }
+let remote = {| ...options; Host = "db.example.com" |}
 
-let trackingUpdate =
-    {| ...shipment; Status = "Dispatched" |}
+printn $"{remote.Host}:{remote.Port}, timeout {remote.TimeoutSeconds}s"
+// db.example.com:5432, timeout 30s
 // </RecordValues>
 
 // <Projection>
-type ShippingLabel =
-    { ...DeliveryAddress; TrackingId: string }
+let endpoint: Endpoint = { ...options }
+let overrides = {| Host = "db.example.com"; Port = 5433 |}
+let production: ClientOptions =
+    { ...options; ...overrides; TimeoutSeconds = 60 }
 
-let label: ShippingLabel = { ...shipment }
-let redirected: Shipment = { ...shipment; City = "Oxford"; PostalCode = "OX1 1AA" }
+printn $"{endpoint.Host}:{endpoint.Port}"
+printn $"{production.Host}:{production.Port}, timeout {production.TimeoutSeconds}s"
+// localhost:5432
+// db.example.com:5433, timeout 60s
 // </Projection>
 
 // <Evaluation>
 let visits = ResizeArray<string>()
-let addressFrom source city =
+let hostFrom source host =
     visits.Add source
-    {| City = city |}
+    {| Host = host |}
 
 let selected =
-    {| ...addressFrom "saved address" "Cambridge"
-       ...addressFrom "customer correction" "Oxford" |}
+    {| ...hostFrom "first" "localhost"
+       ...hostFrom "second" "db.example.com" |}
 
-assert (selected.City = "Oxford")
-assert (Seq.toList visits = [ "saved address"; "customer correction" ])
+assert (selected.Host = "db.example.com")
+assert (Seq.toList visits = [ "first"; "second" ])
 // </Evaluation>
 
+// <Nested>
+let original = {| Connection = local; Retries = 3 |}
+let changed = {| ...original; Connection.Port = 5433 |}
+
+assert (changed.Connection.Port = 5433)
+assert (original.Connection.Port = 5432)
+// </Nested>
+
 // <Nullability>
-let reportName: string = Path.GetFileName("reports/dispatch.csv")
-let extension: string = Path.GetExtension(reportName)
-let isCsv = extension.Equals(".csv", StringComparison.OrdinalIgnoreCase)
+open System.IO
+
+let fileName: string = Path.GetFileName("reports/annual.csv")
+let extension: string = Path.GetExtension(fileName)
+printn (extension.ToUpperInvariant())
+// .CSV
 // </Nullability>
 
 // <Await>
-let tryReadReport path =
+open System.IO
+
+let tryReadFile path =
     async {
         try
             let! contents =
@@ -77,7 +89,10 @@ let tryReadReport path =
 // </Await>
 
 // <Bounded>
-let readReports (paths: seq<string>) (ct: CancellationToken) =
+open System.IO
+open System.Threading
+
+let readFiles (paths: seq<string>) (ct: CancellationToken) =
     paths
     |> Seq.map (fun path ->
         fun token -> File.ReadAllTextAsync(path, token))
@@ -85,47 +100,64 @@ let readReports (paths: seq<string>) (ct: CancellationToken) =
 // </Bounded>
 
 // <Pipeline>
-let reportLength (path: string) (ct: CancellationToken) =
+open System.IO
+open System.Threading
+
+let fileLength (path: string) (ct: CancellationToken) =
     File.ReadAllTextAsync(path, ct)
     |> Task.map String.length
     |> Task.catch
 // </Pipeline>
 
 // <ReturnOverloads>
-type ShipmentId =
+open System
+
+type Number =
     [<AllowOverloadOnReturnType>]
     static member Parse(text: string) : int = Int32.Parse text
 
     [<AllowOverloadOnReturnType>]
     static member Parse(text: string) : int64 = Int64.Parse text
 
-let databaseId: int64 = ShipmentId.Parse "1042"
+let small: int = Number.Parse "42"
+let large: int64 = Number.Parse "2147483648"
 // </ReturnOverloads>
 
 // <Culture>
-let weight = 12.5m
-let machineText: string = $"{weight:F2}"
+open System.Globalization
+
+let value = 12.5m
+let machineText: string = $"{value:F2}"
 let displayText =
-    weight.ToString("F2", Globalization.CultureInfo.GetCultureInfo("fr-FR"))
+    value.ToString("F2", CultureInfo.GetCultureInfo("fr-FR"))
 
 assert (machineText = "12.50")
 assert (displayText = "12,50")
 // </Culture>
 
 // <Closure>
-let inline foldParcels
+let inline foldItems
     ([<InlineIfLambda; OptimizeClosureIfNotInlined>] folder)
     state
-    (parcels: 'T[]) =
+    (items: 'T[]) =
     let mutable total = state
-    for parcel in parcels do
-        total <- folder total parcel
+    for item in items do
+        total <- folder total item
     total
 // </Closure>
 
 let verify () =
-    if status <> "Shipment SHP-1042: 3 parcels, 12.50 kg" then failwith status
-    if trackingUpdate.Status <> "Dispatched" || label.TrackingId <> "SHP-1042" then failwith "spread"
-    if redirected.City <> "Oxford" || shipment.City <> "Cambridge" then failwith "update"
-    if not isCsv || databaseId <> 1042L then failwith "interop"
-    if foldParcels (+) 0 [| 1; 2; 3 |] <> 6 then failwith "closure"
+    if message <> "Ada: 97.5" then failwith message
+    if remote.Host <> "db.example.com" || remote.Port <> 5432 || remote.TimeoutSeconds <> 30 then
+        failwith "anonymous spread"
+    if endpoint <> local || options.Host <> "localhost" then failwith "projection"
+    if production.Host <> "db.example.com" || production.Port <> 5433 || production.TimeoutSeconds <> 60 then
+        failwith "overrides"
+    if selected.Host <> "db.example.com" || Seq.toList visits <> [ "first"; "second" ] then
+        failwith "evaluation"
+    if changed.Connection.Port <> 5433 || original.Connection.Port <> 5432 then
+        failwith "nested update"
+    if extension.ToUpperInvariant() <> ".CSV" || small <> 42 || large <> 2147483648L then
+        failwith "interop"
+    if machineText <> "12.50" || displayText <> "12,50" then failwith "culture"
+    if foldItems (+) 0 [| 1; 2; 3 |] <> 6 then failwith "closure"

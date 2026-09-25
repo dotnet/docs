@@ -1,7 +1,7 @@
 ---
 title: Statically Resolved Type Parameters
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-ms.date: 09/24/2026
+ms.date: 09/25/2026
 ai-usage: ai-assisted
 ---
 # Statically Resolved Type Parameters
@@ -110,6 +110,8 @@ To use generic inline code with a type you don't own, supply its required operat
 > Extension members as SRTP constraint solutions require `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="../../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
+
+`twice 21` uses integer multiplication. `twice "ha"` resolves the same operator constraint through the string extension. You don't need a wrapper type or a separate string-specific function.
 
 The compiler captures relevant accessible extension members in scope where the inline constraint is defined. Opening a different extension module only at the call site doesn't retroactively change that scope. Keep required extensions accessible to consumers of public inline code.
 

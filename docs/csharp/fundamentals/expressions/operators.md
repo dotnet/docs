@@ -69,6 +69,8 @@ Relational operators compare two values and return a `bool`.
 
 Relational operators work on all numeric types and `char`. For `char`, comparison uses the character's numeric Unicode code point value, not any alphabetical or domain-specific ordering. In the grade example above, `'B'` is greater than or equal to `'A'` because `'B'` has Unicode value 66 and `'A'` has Unicode value 65 — the *numbers* determine the comparison, not the meaning of the letter grades.
 
+The same symbols can form [relational patterns](../patterns/relational-logical-patterns.md) in an `is` expression or `switch`. For example, `temperature < 0` is a relational expression that returns a `bool`, while `temperature is < 0` applies the relational pattern `< 0` to the value of `temperature`.
+
 ## Equality operators
 
 `==` and `!=` check whether two values are equal or not. `!=` is `true` when the operands are **not** equal, and `false` when they are.

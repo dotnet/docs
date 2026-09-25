@@ -372,6 +372,33 @@ items:
                 href: ../../core/additional-tools/uninstall-tool-cli-dry-run.md
               - name: dotnet-core-uninstall remove
                 href: ../../core/additional-tools/uninstall-tool-cli-remove.md
+      - name: .NET Install Manager
+        items:
+          - name: Overview
+            href: ../../core/additional-tools/dnim-overview.md
+          - name: Command reference
+            expanded: true
+            items:
+              - name: dnim layout
+                href: ../../core/additional-tools/dnim-cli-layout.md
+              - name: dnim query products
+                href: ../../core/additional-tools/dnim-cli-query-products.md
+              - name: dnim query releases
+                href: ../../core/additional-tools/dnim-cli-query-releases.md
+              - name: dnim scan
+                href: ../../core/additional-tools/dnim-cli-scan.md
+              - name: dnim trace
+                href: ../../core/additional-tools/dnim-cli-trace.md
+              - name: dnim uninstall
+                href: ../../core/additional-tools/dnim-cli-uninstall.md
+              - name: dnim update
+                href: ../../core/additional-tools/dnim-cli-update.md
+          - name: .NET Installs
+            href: ../../core/additional-tools/dnim-net-installs.md
+          - name: Logging
+            href: ../../core/additional-tools/dnim-logs.md
+          - name: FAQ
+            href: ../../core/additional-tools/dnim-faq.yml
       - name: .NET install tool for extension authors
         href: ../../core/additional-tools/vscode-dotnet-runtime.md
       - name: Generate self-signed certificates

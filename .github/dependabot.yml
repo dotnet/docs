@@ -10,13 +10,37 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 3
-    # NuGet updates for AI, Architecture, Azure, Core, Csharp, and DevOps snippets
+    # NuGet updates for AI, Architecture, and Azure snippets
   - package-ecosystem: "nuget"
     directories:
       - "docs/ai/**/snippets/**/*"
       - "docs/architecture/**/snippets/**/*"
       - "docs/azure/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for Core snippets
+  - package-ecosystem: "nuget"
+    directories:
       - "docs/core/**/snippets/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for Csharp and DevOps snippets
+  - package-ecosystem: "nuget"
+    directories:
       - "docs/csharp/**/snippets/**/*"
       - "docs/devops/**/snippets/**/*"
     schedule:
@@ -59,10 +83,18 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for non-V3 Orleans snippets.
+    # NuGet updates for Orleans snippets.
   - package-ecosystem: "nuget"
     directories:
-      - "docs/orleans/**/snippets/**/*"
+      - "docs/orleans/deployment/snippets/**"
+      - "docs/orleans/grains/snippets/**"
+      - "docs/orleans/grains/grain-persistence/snippets/**"
+      - "docs/orleans/host/snippets/**"
+      - "docs/orleans/host/configuration-guide/snippets/**"
+      - "docs/orleans/implementation/snippets/**"
+      - "docs/orleans/quickstarts/snippets/**"
+      - "docs/orleans/streaming/snippets/**"
+      - "docs/orleans/tutorials-and-samples/snippets/**"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
@@ -75,7 +107,12 @@ updates:
     # NuGet updates for Orleans V3 snippets.
   - package-ecosystem: "nuget"
     directories:
-      - "docs/orleans/**/snippets-v3/**/*"
+      - "docs/orleans/snippets-v3/**"
+      - "docs/orleans/grains/snippets-v3/**"
+      - "docs/orleans/host/snippets-v3/**"
+      - "docs/orleans/host/configuration-guide/snippets-v3/**"
+      - "docs/orleans/streaming/snippets-v3/**"
+      - "docs/orleans/tutorials-and-samples/snippets-v3/**"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
@@ -85,10 +122,29 @@ updates:
       nuget:
         patterns: ["*"]
         group-by: dependency-name
-    # NuGet updates for samples/snippets
+    # NuGet updates for C# samples/snippets.
   - package-ecosystem: "nuget"
     directories:
-      - "samples/snippets/**/*"
+      - "samples/snippets/csharp/**/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      nuget:
+        patterns: ["*"]
+        group-by: dependency-name
+    # NuGet updates for remaining samples/snippets.
+  - package-ecosystem: "nuget"
+    directories:
+      - "samples/snippets/core/**/*"
+      - "samples/snippets/cpp/**/*"
+      - "samples/snippets/fsharp/**/*"
+      - "samples/snippets/standard/**/*"
+      - "samples/snippets/tsql/**/*"
+      - "samples/snippets/visualbasic/**/*"
+      - "samples/snippets/xml/**/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

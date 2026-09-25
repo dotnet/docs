@@ -86,33 +86,7 @@ updates:
     # NuGet updates for Orleans snippets.
   - package-ecosystem: "nuget"
     directories:
-      - "docs/orleans/deployment/snippets/**"
-      - "docs/orleans/grains/snippets/**"
-      - "docs/orleans/grains/grain-persistence/snippets/**"
-      - "docs/orleans/host/snippets/**"
-      - "docs/orleans/host/configuration-guide/snippets/**"
-      - "docs/orleans/implementation/snippets/**"
-      - "docs/orleans/quickstarts/snippets/**"
-      - "docs/orleans/streaming/snippets/**"
-      - "docs/orleans/tutorials-and-samples/snippets/**"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    cooldown:
-      default-days: 7
-    groups:
-      nuget:
-        patterns: ["*"]
-        group-by: dependency-name
-    # NuGet updates for Orleans V3 snippets.
-  - package-ecosystem: "nuget"
-    directories:
-      - "docs/orleans/snippets-v3/**"
-      - "docs/orleans/grains/snippets-v3/**"
-      - "docs/orleans/host/snippets-v3/**"
-      - "docs/orleans/host/configuration-guide/snippets-v3/**"
-      - "docs/orleans/streaming/snippets-v3/**"
-      - "docs/orleans/tutorials-and-samples/snippets-v3/**"
+      - "docs/orleans/**/snippets/**"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5

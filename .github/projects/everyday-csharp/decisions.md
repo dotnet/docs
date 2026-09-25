@@ -190,10 +190,12 @@ functions, iterators, type and member declarations, inheritance mechanics, inter
 `using` syntax—remain candidates for canonical homes in Part 1. Technique articles should link to
 canonical construct articles without duplicating their syntax rules.
 
-**Evidence, not scope:** PR [#55966](https://github.com/dotnet/docs/pull/55966) is in review for the
-Pattern matching overview and basic patterns. Its neutral, construct-first treatment is useful input
-to this IA decision; it isn't merged, doesn't settle the permanent Functional/OOP taxonomy, and
-shouldn't expand to include future technique guidance.
+**Evidence, not scope:** PR [#55966](https://github.com/dotnet/docs/pull/55966) (merged 2026-09-17)
+and PR [#56113](https://github.com/dotnet/docs/pull/56113) (merged 2026-09-25) shipped the Pattern
+matching overview, basic patterns, and structural patterns (property/positional,
+relational/logical/parenthesized, list/slice). Their neutral, construct-first treatment is useful
+input to this IA decision; being merged doesn't settle the permanent Functional/OOP taxonomy, and
+neither PR should be read as expanding into future technique guidance.
 
 **Decision needed:** Bill should confirm the two-part model, the Part 2 label, and which mixed
 Functional/OOP articles split or move. Preserve the earlier checkpoint to revisit placement after

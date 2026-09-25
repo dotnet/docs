@@ -9,6 +9,8 @@ The articles in this section describe the unmanaged APIs that the common languag
 
 These articles describe APIs that were introduced in .NET Core 2.0 or later, or were introduced in .NET Framework but can be used on .NET (Core). For .NET Framework-specific unmanaged APIs, see [.NET Framework debugging](../../../framework/unmanaged-api/debugging/index.md).
 
+For mobile apps that use CoreCLR, see [Initialize a custom debugger on mobile platforms](initialize-debugger-mobile.md).
+
 ## Enumerations
 
 [CorDebugBlockingReason enumeration](icordebug/cordebugblockingreason-enumeration.md)\

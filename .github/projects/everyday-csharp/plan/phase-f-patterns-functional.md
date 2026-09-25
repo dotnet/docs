@@ -12,8 +12,12 @@
 > approved permanent taxonomy. Under the two-part hypothesis, lambda-expression, local-function, and
 > iterator syntax belongs in standard-aligned Part 1, while the Functional overview and tutorial are
 > Part 2 candidates. Decide the final homes before approving PR 22. PR
-> [#55966](https://github.com/dotnet/docs/pull/55966) remains in review and supplies construct-first
-> evidence only; don't expand its scope or treat it as shipped.
+> [#55966](https://github.com/dotnet/docs/pull/55966) **merged 2026-09-17** and supplied
+> construct-first evidence for Pattern matching overview/basic patterns; PR
+> [#56113](https://github.com/dotnet/docs/pull/56113) (PR 20, merged 2026-09-25) added the
+> structural-pattern articles on the same construct-first framing. Neither PR settles the permanent
+> Functional/OOP taxonomy question — don't treat either merge as approval of the surrounding
+> technique taxonomy.
 
 ### PR 19 — Pattern matching: overview + declaration/constant/var + type patterns
 
@@ -35,25 +39,41 @@
 
 ### PR 20 — Pattern matching: property/positional + relational/logical + list patterns
 
-[#56113](https://github.com/dotnet/pull/56113) *merged*
+[#56113](https://github.com/dotnet/docs/pull/56113) *merged 2026-09-25*
 
-> ~10 files
+> ~10 files (as shipped: 10 files — `expressions/operators.md`, `patterns/list-patterns.md`,
+> `patterns/pattern-matching.md`, `patterns/property-positional-patterns.md`,
+> `patterns/relational-logical-patterns.md`, three new snippet files, `snippets/patterns/Program.cs`,
+> `toc.yml`)
 
-1. New `fundamentals/patterns/property-positional-patterns.md` — property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8)
-2. New `fundamentals/patterns/relational-logical-patterns.md` — relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9)
-3. New `fundamentals/patterns/list-patterns.md` — list patterns (C# 11), slice patterns
+1. New `fundamentals/patterns/property-positional-patterns.md` — property patterns (C# 8), extended property patterns (C# 10, shipped via the member-path `DateTime { Date.DayOfWeek: ... }` example), positional patterns (C# 8)
+2. New `fundamentals/patterns/relational-logical-patterns.md` — relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9). **As shipped**, titled "Relational, logical, and parenthesized patterns" (not just "Relational and logical patterns")
+3. New `fundamentals/patterns/list-patterns.md` — list patterns (C# 11), slice patterns. **As shipped**, titled "List and slice patterns"
 4. Snippet files + toc.yml
-5. Add the **relational patterns → relational operators** cross-link (from `relational-logical-patterns.md` to `expressions/operators.md`, live since PR 16) so readers connect `< > <= >=` patterns to the operators
+5. Add the **relational patterns → relational operators** cross-link. **As shipped**, this is bidirectional: `expressions/operators.md` gained an inline forward link to `patterns/relational-logical-patterns.md`, and the new article's "See also" section links back to `expressions/operators.md` (live since PR 16)
 
 > *Coherence check:* new pattern articles slot under the already-live, already-positioned Patterns
 > node; the relational-operators link points at a live target (PR 16). No reorder needed here; no
-> placeholder.
+> placeholder. ✅ Confirmed via diff: `toc.yml` only inserts the three new rows under the existing
+> Pattern matching node — no reorder. A pre-merge automated review flagged that the "Logical and
+> parenthesized pattern reference" link skipped the `#parenthesized-pattern` anchor; the shipped
+> article resolved this by splitting it into two separate reference links (`#logical-patterns` and
+> `#parenthesized-pattern`), so no follow-up is needed.
+>
+> *Note for PR 21:* `property-positional-patterns.md` links to the deconstruction article at its
+> **current** location, `../functional/deconstruct.md` (that file hasn't moved yet). When PR 21 moves
+> it to `fundamentals/patterns/deconstruct.md`, update this in-repo link (the public redirect will
+> cover external links, but the internal relative link should point at the new location directly).
 
 ### PR 21 — Pattern matching: deconstruction + tutorial
 
+> **Prerequisite now live:** PR 20 (#56113) merged 2026-09-25, so the structural-pattern articles
+> (property/positional, relational/logical/parenthesized, list/slice) are all live under
+> `fundamentals/patterns/`. PR 21 is unblocked.
+
 > ~6 files
 
-1. Revise `fundamentals/patterns/deconstruct.md` — records, tuples, custom `Deconstruct`, mixed deconstructions
+1. Revise `fundamentals/patterns/deconstruct.md` — records, tuples, custom `Deconstruct`, mixed deconstructions. **Also update the inbound relative link** from the newly-shipped `patterns/property-positional-patterns.md` "See also" section, which currently points at `../functional/deconstruct.md`
 2. Pull `tutorials/patterns-objects.md` → `fundamentals/tutorials/pattern-matching.md`
 3. Updated snippets + toc.yml + redirect (including redirect from former `fundamentals/functional/deconstruct.md`)
 

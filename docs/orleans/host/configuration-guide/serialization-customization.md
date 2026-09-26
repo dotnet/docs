@@ -4,6 +4,7 @@ description: Learn how to customize serialization in .NET Orleans.
 ms.date: 07/03/2024
 uid: orleans-serialization-customization
 zone_pivot_groups: orleans-version
+ai-usage: ai-assisted
 ---
 
 # Serialization customization in Orleans
@@ -14,10 +15,11 @@ One important aspect of Orleans is its support for customization of serializatio
 
 :::zone target="docs" pivot="orleans-10-0,orleans-9-0,orleans-8-0,orleans-7-0"
 
-Orleans provides two serializer implementations:
+Orleans provides three serializer implementations:
 
 - [Microsoft.Orleans.Serialization.SystemTextJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson)
 - [Microsoft.Orleans.Serialization.NewtonsoftJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson)
+- [Microsoft.Orleans.Serialization.Protobuf](https://nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf)
 
 To configure either of these packages, see [Serialization configuration in Orleans](serialization-configuration.md?pivots=orleans-7-0).
 

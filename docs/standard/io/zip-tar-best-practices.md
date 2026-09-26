@@ -65,9 +65,9 @@ Best for: large archives, selective extraction, untrusted input, and custom proc
 
 ## Work with trusted archives
 
-When the archive source is known and trusted, the [convenience methods](#convenience-apis-one-shot-operations) give you a safe, one-line extraction path:
+When the archive source is known and trusted, the [convenience methods](#convenience-apis-one-shot-operations) give you a one-line extraction path:
 
-- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> handle path validation automatically. They sanitize entry names, resolve each entry's full path, and verify the resolved path stays inside the destination directory.
+- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> perform path validation as a best-effort attempt to keep extracted files within the specified destination directory. Neither API guarantees that extraction stays within that directory.
 
 - <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> has overloads that default to not overwriting existing files. All <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> overloads require the `overwriteFiles` parameter, so you must always choose explicitly.
 
@@ -76,7 +76,7 @@ When the archive source is known and trusted, the [convenience methods](#conveni
 - TAR extraction handles overwriting differently: it deletes the existing file before writing the replacement. If extraction fails after deletion (for example, due to an I/O error or process interruption), the original file is lost and the replacement might be incomplete. Consider backing up critical files before overwriting with TAR extraction.
 
 > [!WARNING]
-> The `ExtractToDirectory` convenience methods must only be used on trusted inputs. These helpers don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
+> Use the `ExtractToDirectory` convenience methods only on trusted inputs. For both ZIP and TAR, these methods make only a best-effort attempt to stay within the specified destination directory and provide no guarantee. These helpers also don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
 
 ## Handle untrusted archives safely
 

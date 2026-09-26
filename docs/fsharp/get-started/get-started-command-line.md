@@ -126,6 +126,7 @@ The previous command adds the following XML to the App.fsproj file:
 > [!TIP]
 > If you skip this step and try to build the App project, you'll get a compilation error because the `Library` module won't be found. If this happens, you can either run the `dotnet add reference` command or manually add the `<ProjectReference>` element shown above to your App.fsproj file.
 
+Change directories to *FSharpSample*.
 Add the `App` project to the `FSharpSample` solution using the `dotnet sln add` command:
 
 ```dotnetcli

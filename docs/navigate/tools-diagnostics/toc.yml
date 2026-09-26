@@ -633,6 +633,8 @@ items:
             href: ../../core/diagnostics/dotnet-dsrouter.md
       - name: .NET diagnostics tutorials
         items:
+          - name: "Tutorial: Investigate Linux performance"
+            href: ../../core/diagnostics/dotnet-trace-collect-linux-performance.md
           - name: Collect performance trace in Linux with PerfCollect
             href: ../../core/diagnostics/trace-perfcollect-lttng.md
           - name: Debug a memory leak

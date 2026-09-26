@@ -3,6 +3,7 @@ title: Collect and View EventSource Traces
 description: A tutorial for collecting and viewing traces of EventSource events
 ms.topic: tutorial
 ms.date: 03/03/2022
+ai-usage: ai-assisted
 ---
 
 # Collect and View EventSource Traces
@@ -183,7 +184,7 @@ To learn more about using PerfView, see the [PerfView video tutorials](/shows/Pe
 
 [dotnet-trace](./dotnet-trace.md) is a cross-platform command-line tool that can collect traces from .NET Core apps using
 [EventPipe](./eventpipe.md) tracing. It doesn't support viewing trace data, but the traces it collects can be viewed by other tools such
-as [PerfView](#perfview) or [Visual Studio](#visual-studio). dotnet-trace also supports converting its default *.nettrace* format traces
+as [Visual Studio](#visual-studio) or [PerfView](#perfview) on Windows. dotnet-trace also supports converting its default *.nettrace* format traces
 into other formats, such as Chromium or [Speedscope](https://www.speedscope.app/).
 
 ### Collect a trace

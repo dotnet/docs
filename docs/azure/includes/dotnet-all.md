@@ -544,12 +544,12 @@
 | Python Worker | NuGet [4.43.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-arm64/4.43.0-preview.2) |  |  |
 | Python Worker | NuGet [4.43.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-x64/4.43.0-preview.2) |  |  |
 | Python Worker | NuGet [4.43.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.win-x64/4.43.0-preview.2) |  |  |
-| Speech CLI | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.51.2) |  |  |
-| Speech Extension Embedded SR | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.51.2) |  |  |
-| Speech Extension Embedded TTS | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.51.2) |  |  |
-| Speech Extension MAS | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.51.2) |  |  |
-| Speech Extension ONNX Runtime | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.51.2) |  |  |
-| Speech Extension Telemetry | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.51.2) |  |  |
+| Speech CLI | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.52.0) |  |  |
+| Speech Extension Embedded SR | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.52.0) |  |  |
+| Speech Extension Embedded TTS | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.52.0) |  |  |
+| Speech Extension MAS | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.52.0) |  |  |
+| Speech Extension ONNX Runtime | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.52.0) |  |  |
+| Speech Extension Telemetry | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.52.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Emulator/1.0.0-beta.1) |  |  |
 | WebJobs Extension Cosmos DB Mongo | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.2)<br>NuGet [1.2.5-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.5-preview) |  |  |
@@ -614,8 +614,8 @@
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
-| Speech | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.51.2)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
-| Speech Remote Conversation | NuGet [1.51.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.51.2) |  |  |
+| Speech | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.52.0)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
+| Speech Remote Conversation | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.52.0) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |

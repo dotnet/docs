@@ -1,7 +1,8 @@
 ---
 title: JSON schema exporter
 description: Learn how to use the JsonSchemaExporter class to extract JSON schema documents from .NET types.
-ms.date: 10/15/2024
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
 ---
@@ -15,6 +16,12 @@ The following code snippet shows an example.
 :::code language="csharp" source="snippets/schema-exporter/ExportSchema.cs" id="1":::
 
 As can be seen in this example, the exporter distinguishes between nullable and non-nullable properties, and it populates the `required` keyword by virtue of a constructor parameter being optional or not.
+
+Starting in .NET 11, the exporter recognizes the <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128> types. It exports schemas for their nullable forms and for named literals when you enable <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals>.
+
+## Schemas for union types
+
+Starting in .NET 11, <xref:System.Text.Json.Schema.JsonSchemaExporter> describes a C# [union](union-types.md) with an untagged `anyOf` schema that has a branch for each case. The union adds no discriminator because <xref:System.Text.Json.JsonSerializer> writes only the active case. By contrast, when you [enable inference for a closed hierarchy](polymorphism.md#infer-polymorphism-from-a-closed-hierarchy), JSON serialized as the closed base type includes a `$type` discriminator that identifies the derived type. The `anyOf` described here is `JsonSchemaExporter` output; ASP.NET Core generates OpenAPI documents separately.
 
 ## Configure the schema output
 

@@ -1,7 +1,8 @@
 ---
 title: Use immutable types and properties
 description: "Learn how to deserialize JSON to immutable types and properties in .NET."
-ms.date: 10/20/2023
+ms.date: 08/18/2026
+ai-usage: ai-assisted
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -27,6 +28,8 @@ By default, `System.Text.Json` uses the default public parameterless constructor
 
   In .NET 7 and earlier versions, the `[JsonConstructor]` attribute can only be used with public constructors.
 
+In .NET 8 and later versions, reflection mode supports non-public constructors marked with `[JsonConstructor]`. Starting in .NET 11, source-generation mode supports them too.
+
 The parameter names of a parameterized constructor must match the property names and types. Matching is case-insensitive, and the constructor parameter must match the actual property name even if you use [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) to rename a property. In the following example, the name for the `TemperatureC` property is changed to `celsius` in the JSON, but the constructor parameter is still named `temperatureC`:
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/ImmutableTypesCtorParms.cs" highlight="9,13-15":::
@@ -37,6 +40,33 @@ Besides `[JsonPropertyName]`, the following attributes support deserialization w
 - [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute)
 - [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute)
 - [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute)
+
+## By-reference constructor parameters
+
+Starting in .NET 11, `JsonSerializer` deserializes types whose constructor parameters use the `in`, `ref`, `out`, and `ref readonly` modifiers.
+
+| Parameter modifier | Deserialization behavior |
+|--------------------|--------------------------|
+| `in`, `ref`, and `ref readonly` | The serializer binds each parameter by name and uses its underlying element type for type matching. |
+| `out` | The serializer doesn't bind the parameter to JSON. It discards the value that the constructor assigns. |
+
+In the following constructor, the serializer binds `temperatureC` from JSON. It doesn't bind `isValid`:
+
+```csharp
+public Forecast(in int temperatureC, out bool isValid)
+{
+    TemperatureC = temperatureC;
+    isValid = true;
+}
+```
+
+In Visual Basic, a `ByRef` constructor parameter follows the `ref` behavior shown in the table:
+
+```vb
+Public Sub New(ByRef temperatureC As Integer)
+    TemperatureC = temperatureC
+End Sub
+```
 
 ## Records
 
@@ -57,8 +87,14 @@ By including a property with a private setter, you can still deserialize that pr
 
 In .NET 8 and later versions, you can also use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to opt non-public *members* into the serialization contract for a given type.
 
+Starting in .NET 11, source generation supports `private`, `internal`, and `protected` members that you mark with `[JsonInclude]`. It also supports `private`, `internal`, and `protected` accessors on properties that you mark with `[JsonInclude]`. Source generation also supports inaccessible constructors marked with [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute).
+
 > [!NOTE]
-> In source-generation mode, you can't serialize `private` members or use `private` accessors by annotating them with the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. And you can only serialize `internal` members or use `internal` accessors if they're in the same assembly as the generated <xref:System.Text.Json.Serialization.JsonSerializerContext>.
+> In .NET 10 and earlier versions, source generation doesn't support `private` or `protected` members or accessors. Applying the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to the member or property doesn't remove this limitation. Source generation supports `internal` members and accessors only when they're in the same assembly as the generated <xref:System.Text.Json.Serialization.JsonSerializerContext>. It doesn't support inaccessible constructors, even when you mark them with `[JsonConstructor]`.
+
+## Init-only properties
+
+`System.Text.Json` deserializes `init`-only properties like any other settable property. Starting in .NET 11, a source-generated setter runs only when the JSON payload contains the property. An omitted property retains its initializer value.
 
 ## Read-only properties
 

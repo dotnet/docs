@@ -1,7 +1,8 @@
 ---
 title: Source-generation modes in System.Text.Json
 description: Learn about the two different source-generation modes in System.Text.Json.
-ms.date: 02/21/2025
+ms.date: 08/18/2026
+ai-usage: ai-assisted
 no-loc: [System.Text.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -22,9 +23,23 @@ You can use source generation to move the metadata collection process from runti
 
 The performance improvements provided by source generation can be substantial. For example, [test results](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/#how-source-generation-provides-benefits) have shown up to 40% or more startup time reduction, private memory reduction, throughput speed increase (in serialization optimization mode), and app size reduction.
 
-### Known issues
+### Non-public members and constructors
 
-Only `public` properties and fields are supported by default in either serialization mode (reflection or source-generation). However, reflection mode supports the use of `private` members, while source-generation mode doesn't. For example, if you apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a `private` property or a property that has a `private` setter or getter, it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` members and `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on `private` members or accessors and choose source-generation mode, a `NotSupportedException` will be thrown at runtime.
+By default, both reflection mode and source-generation mode include only `public` properties and fields in the serialization contract.
+
+Starting in .NET 11, source generation supports members that you explicitly mark with the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. The member can be `private`, `internal`, or `protected`. It also supports `private`, `internal`, and `protected` accessors on properties that you mark with `[JsonInclude]`. Source generation also supports inaccessible constructors marked with [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute).
+
+On .NET 11, the generated accessors use <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute>.
+
+A source-generated setter for an `init`-only property runs only when the JSON payload contains that property. An `init`-only property that the payload omits keeps the value from its property initializer.
+
+In .NET 10 and earlier versions, source generation has the following limitations:
+
+* Source generation doesn't support `private` or `protected` members or accessors. If you mark such a member with `[JsonInclude]`, the serializer throws a <xref:System.NotSupportedException> at runtime.
+* Source generation supports `internal` members and accessors only when they're accessible to the generated <xref:System.Text.Json.Serialization.JsonSerializerContext> in the same assembly.
+* Source generation doesn't support constructors that are inaccessible to the generated context, even when you mark them with `[JsonConstructor]`.
+
+### Known issues
 
 For information about other known issues with source generation, see the [GitHub issues that are labeled "source-generator"](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 

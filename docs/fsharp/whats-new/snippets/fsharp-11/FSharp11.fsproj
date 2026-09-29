@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Records.fs" />
     <Compile Include="Stable.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

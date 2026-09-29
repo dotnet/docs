@@ -67,6 +67,16 @@ val it : unit = ()
 
 The code's formatting is preserved, and there is a double semicolon (`;;`) terminating the input. F# Interactive then evaluated the code and printed the results!
 
+## Display version information
+
+Starting with F# 11, enter `#version;;` to display version information for the current F# Interactive session without restarting it:
+
+```fsharp
+#version;;
+```
+
+Use this information when you report a compiler or scripting problem. The directive reports the running tool; it doesn't change the language version or install another SDK.
+
 ## Scripting with F\#
 
 Evaluating code interactively in F# Interactive can be a great learning tool, but you'll quickly find that it's not as productive as writing code in a normal editor. To support normal code editing, you can write F# scripts.

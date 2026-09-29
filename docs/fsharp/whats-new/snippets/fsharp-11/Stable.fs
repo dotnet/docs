@@ -13,6 +13,23 @@ printn message
 // Ada: 97.5
 // </Interpolation>
 
+// <Report>
+let report (processed: int) (total: decimal) (elapsed: TimeSpan) : string =
+    $"{processed} items, total {total:F2}, elapsed {elapsed.TotalMilliseconds:F0} ms"
+
+printn (report 12 145.50m (TimeSpan.FromMilliseconds 250.0))
+// 12 items, total 145.50, elapsed 250 ms
+// </Report>
+
+// <Grid>
+let grid = Array2D.init 3 4 (fun row column -> row * 4 + column)
+let doubled = grid |> Array2D.map (fun value -> value * 2)
+let snapshot = Array2D.copy doubled
+
+printn $"{snapshot.GetLength(0)} x {snapshot.GetLength(1)}; last = {snapshot[2, 3]}"
+// 3 x 4; last = 22
+// </Grid>
+
 // <RecordTypes>
 type Endpoint = { Host: string; Port: int }
 
@@ -88,6 +105,11 @@ let tryReadFile path =
     }
 // </Await>
 
+// <AsyncBoundary>
+let tryReadFileTask (path: string) (ct: CancellationToken) =
+    tryReadFile path |> Task.startAsyncImmediate ct
+// </AsyncBoundary>
+
 // <Bounded>
 open System.IO
 open System.Threading
@@ -146,7 +168,21 @@ let inline foldItems
     total
 // </Closure>
 
+// <Collection>
+let aboveLimit limit (measurements: float[]) =
+    measurements |> Array.exists (fun value -> value > limit)
+
+printn (aboveLimit 80.0 [| 72.0; 86.0; 75.0 |])
+// True
+// </Collection>
+
 let verify () =
+    if report 12 145.50m (TimeSpan.FromMilliseconds 250.0) <> "12 items, total 145.50, elapsed 250 ms" then
+        failwith "Reporting interpolation"
+    if snapshot[2, 3] <> 22 || snapshot.GetLength(0) <> 3 || obj.ReferenceEquals(snapshot, doubled) then
+        failwith "Array2D snapshot"
+    if not (aboveLimit 80.0 [|72.0; 86.0; 75.0|]) || aboveLimit 90.0 [|72.0; 86.0; 75.0|] then
+        failwith "Captured predicate"
     if message <> "Ada: 97.5" then failwith message
     if remote.Host <> "db.example.com" || remote.Port <> 5432 || remote.TimeoutSeconds <> 30 then
         failwith "anonymous spread"

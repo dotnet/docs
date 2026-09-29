@@ -1,7 +1,7 @@
 ---
 title: Statically Resolved Type Parameters
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-ms.date: 09/25/2026
+ms.date: 09/29/2026
 ai-usage: ai-assisted
 ---
 # Statically Resolved Type Parameters
@@ -104,18 +104,18 @@ let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member r
 
 ## Extension member constraints
 
-To use generic inline code with a type you don't own, supply its required operation as an extension member:
+Starting with F# 11 preview, extension members can satisfy the member requirements of generic inline code. For example, a path-length algorithm can require a coordinate property and use extensions to obtain it from existing framework types:
 
 > [!NOTE]
 > Extension members as SRTP constraint solutions require `<LangVersion>preview</LangVersion>`.
 
-:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Extensions":::
+:::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Coordinates":::
 
-The compiler captures relevant accessible extension members in scope where the inline constraint is defined. Opening a different extension module only at the call site doesn't retroactively change that scope. Keep required extensions accessible to consumers of public inline code.
+:::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="PathLength":::
 
-Built-in primitive operator solutions retain priority when the types match precisely. An extension member can satisfy an SRTP member constraint, but doesn't make a type implement a nominal interface with static abstract members.
+Use public extensions and open their module before you define dependent inline functions. Across an assembly boundary, an imported unresolved constraint uses the consumer's extension scope, not the producer's `open` declarations. The compilation that resolves an extension needs preview; merely importing a preview-produced library doesn't.
 
-Preview constraint resolution also defers weak resolution for inline code, so some bindings retain more general types than before. Review explicit signatures and monomorphic bindings when adopting these rules. For expected-result-based overload selection, see [`AllowOverloadOnReturnType`](../parameters-and-arguments.md#select-by-return-type).
+See [Extension members for SRTP constraints](extension-member-constraints.md) for complete producer/consumer projects, mapping across lists and options, operator extensions, and inference and compatibility rules. The extensions don't make a type implement a nominal interface with static abstract members. Built-in primitive operator solutions retain priority for matching types.
 
 ## See also
 

@@ -100,7 +100,7 @@ To share fields across different application models, F# 11 supports both **recor
 
 The type spread defines the fields of a new `ClientOptions` type. The expression spread copies endpoint values into client options; the anonymous record then overrides the host. Neither form creates inheritance.
 
-See [Record spread operators](record-spreads.md) for multiple sources, projections, overrides, evaluation, warnings, and API compatibility. For a simple same-type update, the existing [copy-and-update expression](copy-and-update-record-expressions.md) remains available.
+Spreads can also [replace a field with a validated type](record-spreads.md#strengthen-a-fields-type) or [combine independent models](record-spreads.md#combine-independent-models). See [Record spread operators](record-spreads.md) for projections, overrides, evaluation, warnings, and API compatibility. For a simple same-type update, the existing [copy-and-update expression](copy-and-update-record-expressions.md) remains available.
 
 ## Record constructors
 

@@ -1,7 +1,7 @@
 ---
 title: Record spread operators
 description: Compose F# record types and values, project fields, and override fields with record spread operators.
-ms.date: 09/25/2026
+ms.date: 09/29/2026
 ai-usage: ai-generated
 ---
 
@@ -33,6 +33,32 @@ Copy the endpoint into client options, then use an anonymous record to replace t
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordValues":::
 
 Expression spreads accept named or anonymous record sources and destinations, including struct records. Each destination field must receive a value. An explicit target annotation is useful when several named record types share labels.
+
+### Strengthen a field's type
+
+A later field declaration can replace the type of a spread field. Use that rule to model a checked value separately from its incoming representation. A private union case provides a positive-quantity type:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Quantity":::
+
+Keep the unchanged declarations and assignments in one place, while replacing the field that needs validation:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Strengthen":::
+
+The spread doesn't convert an `int` into a `PositiveQuantity`. The explicit replacement supplies the new value after the check succeeds. Only the quantity is validated here; product codes and prices retain their original types and values.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="ValidationUse":::
+
+### Combine independent models
+
+Compose declarations from multiple records, then assemble a value from those sources:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Compose":::
+
+The result is an immutable snapshot of the contributed field values. `CanOrder` is computed when `listing` is constructed; subsequent construction with a different `Available` value doesn't automatically recompute it.
+
+To expose only a subset of fields, declare that target explicitly:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Project":::
 
 ### Project into a known target
 

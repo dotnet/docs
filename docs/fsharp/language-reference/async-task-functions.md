@@ -1,7 +1,7 @@
 ---
 title: Async and task functions
 description: Choose FSharp.Core functions for task interop, cancellation, result transformations, and bounded concurrency.
-ms.date: 09/25/2026
+ms.date: 09/29/2026
 ai-usage: ai-generated
 ---
 
@@ -31,9 +31,17 @@ Use `Async.Await` when you already have a task-like value. Both APIs propagate t
 
 `Async.RunSynchronouslyImmediate` begins on the calling thread until the first asynchronous suspension and then blocks for completion. Unlike `Async.RunSynchronously`, it doesn't initially offload foreground-thread execution. It has no timeout parameter. Neither synchronous runner is a substitute for asynchronous composition on a UI or request thread.
 
+### Expose an async workflow as a task
+
+To offer the file-reading workflow above to task-based callers, accept a cancellation token and pass it through `Task.startAsyncImmediate`:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="AsyncBoundary":::
+
+The return type is `Task<string option>`. A successful read returns `Some contents`, a missing file returns `None`, and cancellation still propagates. The bridge starts the workflow on the calling thread until its first asynchronous suspension. It doesn't promise to run every continuation on that thread.
+
 ## Bound concurrency
 
-To limit resource use, describe work as factories rather than already-running tasks:
+An `Async<'T>` value describes deferred work. A task usually represents an operation that has already started. To limit resource use, describe task work as factories rather than already-running tasks:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Bounded":::
 
@@ -51,7 +59,7 @@ When one computation faults, cancellation is requested for its siblings. Operati
 | `Async.parallelDoLimit` | `int -> seq<Async<unit>> -> Async<unit>` |
 | `Async.sequentialDo` | `seq<Async<unit>> -> Async<unit>` |
 
-The `Async` functions flow the workflow's ambient cancellation token. Existing `Async.Parallel` and `Async.Sequential` remain available. The `Do` variants avoid allocating a result array when you only need completion.
+The `Async` functions flow the workflow's ambient cancellation token. Existing `Async.Parallel` (including its concurrency-limit option) and `Async.Sequential` remain available. The `Do` variants avoid allocating a result array when you only need completion. A concurrency limit isn't a rate limiter: fast operations can still produce many requests per second.
 
 ## Transform results and recover from faults
 

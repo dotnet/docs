@@ -224,15 +224,21 @@ Builder authors can experiment with .NET runtime async, where the runtime handle
 > [!NOTE]
 > This prototype requires `<LangVersion>preview</LangVersion>`, a runtime and reference assemblies that expose `MethodImplOptions.Async` and the required `AsyncHelpers` members, and an FSharp.Core asset containing `StateMachineHelpers.__runtimeAsyncReturn`. The intrinsic is supplied by the .NET asset of FSharp.Core; that asset's target name alone doesn't establish runtime support.
 
-The following application-defined builder illustrates the compiler contract. It isn't a new built-in `task` builder:
-
-:::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeBuilder":::
+The following call site uses an application-defined builder to read a file asynchronously:
 
 :::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
 
+The builder connects the computation expression to the runtime-async return intrinsic and await helper. It isn't a new built-in `task` builder:
+
+:::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeBuilder":::
+
 The intrinsic marks the enclosing method for runtime async compilation, and `AsyncHelpers.Await` identifies a suspension point. The compiler checks supported suspension patterns; byrefs can't remain live across a suspension. The example only defines `Delay`, `Run`, `Return`, and one `Bind` overload, not a production builder with cancellation, loops, or asynchronous disposal.
 
+If you put this inline builder in a library, enable preview both in the library that defines it and in the project that uses its computation expressions. A different boundary can keep the requirement inside the library: a preview library can compile `readManifest` and expose its ordinary `string -> Task<int>` API to a numbered F# 11 consumer. Referencing a preview-produced library doesn't by itself enable or require preview in the caller.
+
 Ordinary `task` expressions retain their documented implementation. Don't use `AsyncHelpers.Await` as a general blocking replacement outside a runtime-async method. Consult the [runtime async specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md) before experimenting with additional shapes or runtimes.
+
+The [complete sample project](snippets/task-expressions/RuntimeAsync.fsproj) includes a console entry point. From its directory, run `dotnet run -- manifest.txt` with compatible tooling and a file to read. A file containing exactly `manifest`, without a trailing newline, produces `8`. The console entry point blocks for completion; `readManifest` itself returns `Task<int>`.
 
 ## See also
 

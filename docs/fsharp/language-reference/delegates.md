@@ -101,6 +101,8 @@ Captures, reordered or converted arguments, mandatory inline expansion, and othe
 
 Direct delegates with the same method and receiver compare equal, which helps event unsubscription and <xref:System.Delegate.Remove(System.Delegate,System.Delegate)> work as expected.
 
+Don't rely on every repeated named-handler construction taking the direct path. To guarantee removal regardless of compiler optimizations or construction shape, retain the delegate used for subscription and pass that same value when you unsubscribe.
+
 > [!IMPORTANT]
 > A null instance receiver can now fail when the delegate is constructed, rather than when it is invoked. A non-virtual instance target can throw `ArgumentException` at construction; a virtual target can throw `NullReferenceException`. Validate receivers before constructing delegates.
 

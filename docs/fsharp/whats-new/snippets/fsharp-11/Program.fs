@@ -8,6 +8,7 @@ open FSharp11Examples
 
 [<EntryPoint>]
 let main _ =
+    RecordComposition.verify ()
     verify ()
     let folder = Path.Combine(__SOURCE_DIRECTORY__, "sample-reports")
     Directory.CreateDirectory folder |> ignore
@@ -23,6 +24,10 @@ let main _ =
         let missing = Path.Combine(folder, "missing.txt")
         if Async.RunSynchronously(tryReadFile missing) <> None then failwith "Expected None."
         if Async.RunSynchronously(tryReadFile paths[0]) <> Some "Report 1" then failwith "Expected report."
+        if (tryReadFileTask paths[0] CancellationToken.None).GetAwaiter().GetResult() <> Some "Report 1" then
+            failwith "Async-to-task boundary"
+        if (tryReadFileTask missing CancellationToken.None).GetAwaiter().GetResult() <> None then
+            failwith "Async-to-task missing file"
         if (fileLength paths[0] CancellationToken.None).GetAwaiter().GetResult() <> Ok 8 then
             failwith "Expected length."
         match (fileLength missing CancellationToken.None).GetAwaiter().GetResult() with
@@ -33,6 +38,10 @@ let main _ =
         try
             (readFiles paths canceled.Token).GetAwaiter().GetResult() |> ignore
             failwith "Expected cancellation."
+        with :? OperationCanceledException -> ()
+        try
+            (tryReadFileTask paths[0] canceled.Token).GetAwaiter().GetResult() |> ignore
+            failwith "Expected boundary cancellation."
         with :? OperationCanceledException -> ()
         Console.WriteLine("Stable examples: passed")
         0

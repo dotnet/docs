@@ -73,7 +73,7 @@ Each conditional group starts with `#if`, can contain multiple `#elif` branches 
 
 Starting with the F# 11 compiler, lines beginning with `#:` are ignored by the compiler. The `#:` must start at the beginning of the line. A hosting tool can interpret these lines separately; compiler acceptance alone doesn't implement package restoration or any other host behavior.
 
-For F# Interactive's own directives, see [Interactive programming](../tools/fsharp-interactive/index.md).
+For F# Interactive's own directives, see [Interactive programming](../tools/fsharp-interactive/index.md), including [`#version`](../tools/fsharp-interactive/index.md#display-version-information) to inspect the running session.
 
 ## Predefined symbols
 

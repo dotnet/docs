@@ -107,6 +107,9 @@ items:
       href: language-reference/generics/constraints.md
     - name: Statically Resolved Type Parameters
       href: language-reference/generics/statically-resolved-type-parameters.md
+      items:
+      - name: Extension members for SRTP constraints
+        href: language-reference/generics/extension-member-constraints.md
     - name: Flexible Types
       href: language-reference/flexible-types.md
     - name: Units of Measure

@@ -1,7 +1,7 @@
 ---
 title: Inline Functions
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
-ms.date: 09/24/2026
+ms.date: 09/29/2026
 ai-usage: ai-assisted
 ---
 # Inline Functions
@@ -80,7 +80,19 @@ To avoid repeated arity adaptation when a callback can't be inlined, F# 11 suppo
 
 The containing function must be inline, both attributes must be present, and the callback must be curried with two through five arguments. A known lambda can be inlined; an opaque callback can instead be adapted once to an optimized closure. The attribute doesn't guarantee zero allocations for arbitrary callbacks.
 
-FSharp.Core 11 uses this approach in allocation-free `List` and `Array` higher-order functions, including folds and predicates. Consumers need an FSharp.Core containing the attribute and a compiler that understands it. Measure representative call sites rather than assuming every use of `inline` is faster.
+FSharp.Core 11 uses callback inlining and adaptation in selected `List` and `Array` higher-order functions. A capturing predicate is one useful case:
+
+:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Collection":::
+
+Inlining can eliminate a separate callback closure; it doesn't eliminate every allocation performed by the operation or its caller. Consumers need an FSharp.Core containing the attribute and a compiler that understands it. Measure representative call sites rather than assuming every use of `inline` is faster.
+
+## Inline extension constraints across libraries
+
+F# 11 preview can use public extension members to satisfy SRTP requirements. For an imported unresolved constraint, the consumer must open the adapter module and enable preview when it resolves the extension. The producer's settings and `open` declarations aren't inherited.
+
+A library that exports ordinary extension definitions and unresolved constraints can use numbered F# 11. Conversely, a preview producer can resolve an extension internally and expose an already-resolved ordinary or inline API that works in a numbered consumer. Preview-specific inference can also change an exported signature, so inspect the library's actual signature rather than inferring requirements from the `inline` keyword alone.
+
+See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for tested project arrangements, inference changes, and a cross-file preview code-generation limitation.
 
 ## See also
 

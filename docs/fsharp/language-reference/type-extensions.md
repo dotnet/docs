@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you to add new members to a previously defined object type.
-ms.date: 09/25/2026
+ms.date: 09/29/2026
 ai-usage: ai-assisted
 ---
 # Type extensions
@@ -163,7 +163,7 @@ The following limitations also exist for type extensions:
 
 - Type extensions do not support virtual or abstract methods.
 - Type extensions do not support override methods as augmentations.
-- Type extensions do not support [Statically Resolved Type Parameters](./generics/statically-resolved-type-parameters.md).
+- In numbered language modes, optional extensions can't satisfy [statically resolved member constraints](generics/statically-resolved-type-parameters.md). F# 11 preview supports [extension members as constraint solutions](generics/extension-member-constraints.md).
 - Optional Type extensions do not support constructors as augmentations.
 - Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
 - Type extensions are not valid for `byref<'T>` (though they can be declared).
@@ -174,9 +174,9 @@ Finally, if multiple intrinsic type extensions exist for one type, all members m
 
 ## Extensions for generic inline code
 
-Extension members can adapt existing types to the member constraints of generic inline code. In preview language mode, accessible extension members in scope at the inline function's definition participate in SRTP resolution, including operators.
+Extension members can adapt existing types to the member constraints of generic inline code, including properties and operators. Use public members and open the adapter module before defining a dependent inline function. An imported unresolved constraint instead uses the consumer's extension scope.
 
-See [Extension member constraints](generics/statically-resolved-type-parameters.md#extension-member-constraints) for an operator extension that lets the same inline function accept strings and integers. These extensions don't alter the underlying type or cause it to implement a nominal interface.
+The compilation that resolves an extension as a constraint solution needs preview. A library that only defines ordinary extensions and unresolved inline constraints can use numbered F# 11. See [Extension members for SRTP constraints](generics/extension-member-constraints.md) for framework-type adapters, shared mapping, operator declarations, and separate-project requirements. These extensions don't alter the underlying type or cause it to implement a nominal interface.
 
 ## See also
 

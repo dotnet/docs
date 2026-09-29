@@ -424,6 +424,10 @@ The module [`Array.Parallel`](https://fsharp.github.io/fsharp-core-docs/referenc
 
 FSharp.Core 11 removes the dynamic-code requirement from zero-based `Array2D.create`, `Array2D.init`, and `Array2D.rebase`. On its .NET asset, `Array2D.map`, `Array2D.mapi`, and `Array2D.copy` receive the corresponding improvement.
 
+For example, initialize a grid, transform its elements, and take a separate array copy:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Grid":::
+
 Non-zero-based operations retain their runtime restrictions and report dynamic-code warnings at the call site. Prefer zero-based arrays for [Native AOT applications](../../core/deploying/native-aot/index.md); suppressing a warning doesn't make an unsupported allocation work.
 
 Empty-result array operations can reuse a shared empty array. Depend on the empty contents, not the reference identity of the result.

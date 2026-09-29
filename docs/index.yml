@@ -132,6 +132,9 @@ conceptualContent:
         - url: core/tools/index.md
           itemType: overview
           text: .NET CLI overview
+        - url: core/tools/dotnetup/index.md
+          itemType: overview
+          text: dotnetup toolchain manager
         - url: core/project-sdk/msbuild-props.md
           itemType: reference
           text: MSBuild property reference

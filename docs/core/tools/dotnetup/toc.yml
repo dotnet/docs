@@ -1,0 +1,78 @@
+- name: dotnetup
+  href: index.md
+- name: Get started
+  href: getting-started.md
+- name: Concepts
+  items:
+  - name: How dotnetup works
+    href: concepts/how-dotnetup-works.md
+  - name: Channels and versions
+    href: concepts/channels.md
+  - name: Repository SDK requirements
+    href: concepts/repositories.md
+  - name: Environment configuration
+    href: concepts/environment.md
+- name: Release channels
+  items:
+  - name: Preview channel
+    href: channels/preview.md
+  - name: Daily channels
+    href: channels/daily.md
+- name: CLI reference
+  items:
+  - name: dotnetup
+    href: reference/dotnetup.md
+  - name: dotnetup install
+    href: reference/dotnetup-install.md
+  - name: dotnetup update
+    href: reference/dotnetup-update.md
+  - name: dotnetup uninstall
+    href: reference/dotnetup-uninstall.md
+  - name: dotnetup sdk
+    href: reference/dotnetup-sdk.md
+  - name: dotnetup sdk install
+    href: reference/dotnetup-sdk-install.md
+  - name: dotnetup sdk update
+    href: reference/dotnetup-sdk-update.md
+  - name: dotnetup sdk uninstall
+    href: reference/dotnetup-sdk-uninstall.md
+  - name: dotnetup runtime
+    href: reference/dotnetup-runtime.md
+  - name: dotnetup runtime install
+    href: reference/dotnetup-runtime-install.md
+  - name: dotnetup runtime update
+    href: reference/dotnetup-runtime-update.md
+  - name: dotnetup runtime uninstall
+    href: reference/dotnetup-runtime-uninstall.md
+  - name: dotnetup list
+    href: reference/dotnetup-list.md
+  - name: dotnetup init
+    href: reference/dotnetup-init.md
+  - name: dotnetup env
+    href: reference/dotnetup-env.md
+  - name: dotnetup env set
+    href: reference/dotnetup-env-set.md
+  - name: dotnetup env clear
+    href: reference/dotnetup-env-clear.md
+  - name: dotnetup env show
+    href: reference/dotnetup-env-show.md
+  - name: dotnetup env script
+    href: reference/dotnetup-env-script.md
+  - name: dotnetup dotnet
+    href: reference/dotnetup-dotnet.md
+- name: Scenarios
+  items:
+  - name: Manage repository SDK requirements
+    href: usecases/install-with-global-json.md
+  - name: Install .NET components
+    href: usecases/install-components.md
+  - name: Update installations
+    href: usecases/update-installations.md
+  - name: Manage the environment
+    href: usecases/manage-environment.md
+  - name: Manage custom installation roots
+    href: usecases/manage-custom-installation-roots.md
+  - name: Use preview and daily builds
+    href: usecases/try-daily-builds.md
+  - name: Use dotnetup in automation
+    href: usecases/automation.md

@@ -287,6 +287,86 @@ items:
                 href: ../../core/tools/dotnet-workload-uninstall.md
               - name: dotnet workload update
                 href: ../../core/tools/dotnet-workload-update.md
+      - name: dotnetup
+        items:
+          - name: Overview
+            href: ../../core/tools/dotnetup/index.md
+          - name: Get started
+            href: ../../core/tools/dotnetup/getting-started.md
+          - name: Concepts
+            items:
+              - name: How dotnetup works
+                href: ../../core/tools/dotnetup/concepts/how-dotnetup-works.md
+              - name: Channels and versions
+                href: ../../core/tools/dotnetup/concepts/channels.md
+              - name: Repository SDK requirements
+                href: ../../core/tools/dotnetup/concepts/repositories.md
+              - name: Environment configuration
+                href: ../../core/tools/dotnetup/concepts/environment.md
+          - name: Release channels
+            items:
+              - name: Preview channel
+                href: ../../core/tools/dotnetup/channels/preview.md
+              - name: Daily channels
+                href: ../../core/tools/dotnetup/channels/daily.md
+          - name: Command reference
+            items:
+              - name: dotnetup
+                href: ../../core/tools/dotnetup/reference/dotnetup.md
+              - name: dotnetup install
+                href: ../../core/tools/dotnetup/reference/dotnetup-install.md
+              - name: dotnetup update
+                href: ../../core/tools/dotnetup/reference/dotnetup-update.md
+              - name: dotnetup uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-uninstall.md
+              - name: dotnetup sdk
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk.md
+              - name: dotnetup sdk install
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-install.md
+              - name: dotnetup sdk update
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-update.md
+              - name: dotnetup sdk uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-uninstall.md
+              - name: dotnetup runtime
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime.md
+              - name: dotnetup runtime install
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-install.md
+              - name: dotnetup runtime update
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-update.md
+              - name: dotnetup runtime uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-uninstall.md
+              - name: dotnetup list
+                href: ../../core/tools/dotnetup/reference/dotnetup-list.md
+              - name: dotnetup init
+                href: ../../core/tools/dotnetup/reference/dotnetup-init.md
+              - name: dotnetup env
+                href: ../../core/tools/dotnetup/reference/dotnetup-env.md
+              - name: dotnetup env set
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-set.md
+              - name: dotnetup env clear
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-clear.md
+              - name: dotnetup env show
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-show.md
+              - name: dotnetup env script
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-script.md
+              - name: dotnetup dotnet
+                href: ../../core/tools/dotnetup/reference/dotnetup-dotnet.md
+          - name: Scenarios
+            items:
+              - name: Manage repository SDK requirements
+                href: ../../core/tools/dotnetup/usecases/install-with-global-json.md
+              - name: Install .NET components
+                href: ../../core/tools/dotnetup/usecases/install-components.md
+              - name: Update installations
+                href: ../../core/tools/dotnetup/usecases/update-installations.md
+              - name: Manage the environment
+                href: ../../core/tools/dotnetup/usecases/manage-environment.md
+              - name: Manage custom installation roots
+                href: ../../core/tools/dotnetup/usecases/manage-custom-installation-roots.md
+              - name: Use preview and daily builds
+                href: ../../core/tools/dotnetup/usecases/try-daily-builds.md
+              - name: Use dotnetup in automation
+                href: ../../core/tools/dotnetup/usecases/automation.md
       - name: Elevated access
         href: ../../core/tools/elevated-access.md
       - name: Enable tab completion

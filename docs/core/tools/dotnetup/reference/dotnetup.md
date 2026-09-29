@@ -3,9 +3,12 @@ title: dotnetup command
 description: Command reference for the dotnetup toolchain manager.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

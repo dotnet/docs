@@ -3,9 +3,12 @@ title: Install an SDK for a repository with dotnetup
 description: Use global.json to install and track the SDK requirement for a repository.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Install an SDK for a repository with dotnetup
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 When you do not supply an SDK channel, `dotnetup sdk install` searches from
 the current directory toward the file system root. It uses the first usable

@@ -3,9 +3,12 @@ title: dotnetup overview
 description: Learn how dotnetup installs and manages user-level .NET SDKs and runtimes.
 ms.topic: overview
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup overview
+
+[!INCLUDE [public-preview](includes/public-preview.md)]
 
 `dotnetup` is a cross-platform toolchain manager for user-level .NET
 installations. It installs .NET SDKs and runtimes without writing to a

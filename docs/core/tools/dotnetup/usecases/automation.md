@@ -3,9 +3,12 @@ title: Use dotnetup in automation
 description: Use deterministic dotnetup commands and machine-readable output in scripts and CI.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Use dotnetup in automation
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 `dotnetup` disables first-use onboarding when it detects CI or redirected
 output. Use explicit commands and options so scripts do not depend on terminal

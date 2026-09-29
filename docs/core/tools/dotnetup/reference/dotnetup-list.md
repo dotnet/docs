@@ -3,9 +3,12 @@ title: dotnetup list command
 description: Command reference for listing and verifying dotnetup installations.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup list command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

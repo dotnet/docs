@@ -3,9 +3,12 @@ title: Configure access to dotnetup-managed .NET
 description: Configure shell profiles, user environment variables, or command forwarding.
 ms.topic: how-to
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # Configure access to dotnetup-managed .NET
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 Installation and environment configuration are separate operations. Select
 the access mode that fits your workflow. For descriptions of the available

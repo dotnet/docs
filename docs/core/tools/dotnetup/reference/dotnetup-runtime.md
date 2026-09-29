@@ -3,9 +3,12 @@ title: dotnetup runtime command
 description: Command reference for the dotnetup runtime command group.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup runtime command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

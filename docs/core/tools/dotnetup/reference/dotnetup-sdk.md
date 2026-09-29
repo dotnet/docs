@@ -3,9 +3,12 @@ title: dotnetup sdk command
 description: Command reference for the dotnetup SDK command group.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup sdk command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

@@ -3,9 +3,12 @@ title: Update tracked .NET installations with dotnetup
 description: Update rolling SDK and runtime requirements and remove unused versions.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Update tracked .NET installations with dotnetup
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 `dotnetup` stores the requested channel separately from the resolved version.
 An update resolves each rolling channel again.

@@ -3,9 +3,12 @@ title: dotnetup update command
 description: Command reference for updating all tracked dotnetup installations.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup update command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

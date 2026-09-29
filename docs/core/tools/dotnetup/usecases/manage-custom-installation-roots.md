@@ -3,9 +3,12 @@ title: Manage custom dotnetup installation roots
 description: Install and manage .NET in custom roots and isolated manifests.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Manage custom dotnetup installation roots
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 A custom installation root can isolate repository, test, or tool installations
 from the default dotnetup-managed .NET installation root.

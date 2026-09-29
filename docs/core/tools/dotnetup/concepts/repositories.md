@@ -3,9 +3,12 @@ title: Repository SDK requirements with dotnetup
 description: Learn how dotnetup reads global.json and tracks repository SDK requirements.
 ms.topic: conceptual
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Repository SDK requirements with dotnetup
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 `dotnetup` uses `global.json` to associate an SDK requirement with a
 repository or directory tree. From the current directory, it searches for

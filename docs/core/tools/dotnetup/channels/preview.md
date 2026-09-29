@@ -3,9 +3,12 @@ title: Use the dotnetup preview channel
 description: Install and update supported .NET preview releases with dotnetup.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Use the dotnetup preview channel
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 The `preview` channel selects the latest available preview or GoLive .NET
 release. If no active preview is available, the resolver selects an active

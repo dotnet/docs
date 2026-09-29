@@ -3,9 +3,12 @@ title: dotnetup channels and versions
 description: Learn how dotnetup resolves stable, preview, daily, numeric, and exact .NET version specifications.
 ms.topic: conceptual
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup channels and versions
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 A channel describes a set of .NET versions. An exact version describes one
 version. `dotnetup` stores `channels` and resolves it for the

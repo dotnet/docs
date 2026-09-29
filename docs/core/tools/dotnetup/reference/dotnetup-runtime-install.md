@@ -3,9 +3,12 @@ title: dotnetup runtime install command
 description: Command reference for installing .NET runtimes with dotnetup.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup runtime install command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

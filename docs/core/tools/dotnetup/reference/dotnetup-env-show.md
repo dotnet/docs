@@ -3,9 +3,12 @@ title: dotnetup env show command
 description: Command reference for inspecting dotnetup environment configuration and drift.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup env show command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

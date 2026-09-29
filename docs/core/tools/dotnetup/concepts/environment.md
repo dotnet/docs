@@ -3,9 +3,12 @@ title: dotnetup environment configuration
 description: Learn how dotnetup configures PATH and DOTNET_ROOT for managed .NET installations.
 ms.topic: conceptual
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup environment configuration
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 Dotnetup can configure the environment to make the .NET SDKs and Runtimes it
 installs available.  It does this by setting the following environment

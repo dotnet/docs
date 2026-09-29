@@ -3,9 +3,12 @@ title: dotnetup env script command
 description: Command reference for generating a dotnetup shell activation script.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup env script command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

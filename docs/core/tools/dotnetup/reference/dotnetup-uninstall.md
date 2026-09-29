@@ -3,9 +3,12 @@ title: dotnetup uninstall command
 description: Command reference for removing a tracked .NET SDK requirement.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup uninstall command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

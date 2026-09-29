@@ -3,9 +3,12 @@ title: Use dotnetup daily channels
 description: Install and update .NET daily builds with scoped dotnetup channels.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Use dotnetup daily channels
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 Daily channels select builds from component-specific daily-build endpoints.
 Use them to test changes that are not yet available in a stable or preview

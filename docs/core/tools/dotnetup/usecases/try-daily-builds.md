@@ -3,9 +3,12 @@ title: Try .NET daily builds with dotnetup
 description: Install, run, update, and remove daily .NET builds.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Try .NET daily builds with dotnetup
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 Daily channels give you bleeding-edge builds from the .NET build feeds. `dotnetup`
 makes it easy to try these daily builds in your workspaces.

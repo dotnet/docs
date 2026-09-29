@@ -3,9 +3,12 @@ title: dotnetup sdk install command
 description: Command reference for installing .NET SDKs with dotnetup sdk install.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup sdk install command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

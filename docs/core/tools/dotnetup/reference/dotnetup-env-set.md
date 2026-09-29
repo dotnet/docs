@@ -3,9 +3,12 @@ title: dotnetup env set command
 description: Command reference for applying dotnetup environment settings.
 ms.topic: reference
 ms.date: 08/11/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup env set command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

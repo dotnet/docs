@@ -3,9 +3,12 @@ title: How dotnetup works
 description: Learn about dotnetup installation roots, components, install specifications, installations, and state files.
 ms.topic: conceptual
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # How dotnetup works
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 `dotnetup` separates what you request from the files that it installs. This
 model lets several requirements share one .NET installation and lets

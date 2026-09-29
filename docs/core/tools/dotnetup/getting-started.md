@@ -3,9 +3,12 @@ title: Get started with dotnetup
 description: Install dotnetup, choose an SDK channel, and configure access to .NET installations.
 ms.topic: tutorial
 ms.date: 09/29/2026
+ai-usage: ai-assisted
 ---
 
 # Get started with dotnetup
+
+[!INCLUDE [public-preview](includes/public-preview.md)]
 
 `dotnetup` is a cross-platform toolchain manager for user-level .NET
 installations. It installs, updates, and removes .NET SDKs and runtimes without
@@ -152,7 +155,6 @@ dotnetup list
 ```
 
 Run `dotnetup init` again to change the setup.
-
 
 The command reference follows the generated runtime help. Command handlers and
 tests verify product behavior. Hidden compatibility and elevation commands are

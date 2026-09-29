@@ -3,9 +3,12 @@ title: Install .NET SDKs and runtimes with dotnetup
 description: Install stable, preview, and exact .NET component requirements.
 ms.topic: how-to
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # Install .NET SDKs and runtimes with dotnetup
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Install SDKs
 

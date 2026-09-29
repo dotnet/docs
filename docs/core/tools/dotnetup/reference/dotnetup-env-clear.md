@@ -3,9 +3,12 @@ title: dotnetup env clear command
 description: Command reference for removing dotnetup environment settings.
 ms.topic: reference
 ms.date: 08/07/2026
+ai-usage: ai-assisted
 ---
 
 # dotnetup env clear command
+
+[!INCLUDE [public-preview](../includes/public-preview.md)]
 
 ## Name
 

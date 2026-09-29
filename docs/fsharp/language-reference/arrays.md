@@ -422,13 +422,22 @@ The module [`Array.Parallel`](https://fsharp.github.io/fsharp-core-docs/referenc
 
 ## Two-dimensional arrays and Native AOT
 
-FSharp.Core 11 removes the dynamic-code requirement from zero-based `Array2D.create`, `Array2D.init`, and `Array2D.rebase`. On its .NET asset, `Array2D.map`, `Array2D.mapi`, and `Array2D.copy` receive the corresponding improvement.
+The FSharp.Core 11 package contains builds for `netstandard2.0`, `netstandard2.1`, and `net10.0`. NuGet selects the build that matches your project's target framework; projects targeting .NET 10 or later can use the `net10.0` build.
 
-For example, initialize a grid, transform its elements, and take a separate array copy:
+The following table describes the AOT improvements, not whether the APIs exist:
+
+| Zero-based operations | `netstandard2.0` and `netstandard2.1` builds | `net10.0` build |
+|---|---|---|
+| `Array2D.create`, `Array2D.init`, `Array2D.rebase` | No dynamic-code requirement for these operations. | No dynamic-code requirement for these operations. |
+| `Array2D.map`, `Array2D.mapi`, `Array2D.copy` | Retain a dynamic-code-dependent allocation fallback. | Use an allocation path without that dynamic-code requirement. |
+
+For example, initialize a grid, transform its elements, and take a separate array copy with the `net10.0` build:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Grid":::
 
 Non-zero-based operations retain their runtime restrictions and report dynamic-code warnings at the call site. Prefer zero-based arrays for [Native AOT applications](../../core/deploying/native-aot/index.md); suppressing a warning doesn't make an unsupported allocation work.
+
+The computation's result doesn't demonstrate native publication. Validate a complete application's dependencies and publishing output separately.
 
 Empty-result array operations can reuse a shared empty array. Depend on the empty contents, not the reference identity of the result.
 

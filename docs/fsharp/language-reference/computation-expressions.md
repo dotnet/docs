@@ -482,7 +482,11 @@ List expressions, array expressions, and sequence expressions are given special 
 
 For a custom builder, an explicit tail `return!` can use `ReturnFromFinal` and an explicit tail `yield!` can use `YieldFromFinal`, when the corresponding optional member exists. The ordinary `ReturnFrom` or `YieldFrom` remains the fallback.
 
-Starting with F# 11, a terminal `do!` uses `Bind`; it isn't treated as a final `return!`. The distinction matters when a builder performs validation, cleanup, or tracing in its methods:
+Starting with the F# 11 compiler, a final `do!` no longer chooses `ReturnFromFinal` or `YieldFromFinal`. Instead, it follows the ordinary translation of `let! () = operation` followed by unit completion. Normally that calls `Bind` and then `Return(())`; without `Return`, it completes through `Zero()`. A `Zero` method marked with `DefaultValue` also takes precedence over `Return`. Normal binding optimizations, such as `BindReturn` when available, can still apply.
+
+If a custom builder relied on the earlier final-forwarding behavior, supply the ordinary binding/completion methods. Alternatively, use explicit `return!` or `yield!` when forwarding the computation is the intended meaning. Don't rewrite a `do!` to forwarding if doing so would skip required continuation work.
+
+The distinction is observable in this builder:
 
 :::code language="fsharp" source="snippets/computation-expressions/TailOperations.fs" id="Builder":::
 
@@ -491,11 +495,18 @@ The output is:
 ```console
 ReturnFromFinal
 Bind
+Return
 ```
+
+Without a `Return` method, the same final `do!` completes through `Zero`:
+
+:::code language="fsharp" source="snippets/computation-expressions/TailOperations.fs" id="ZeroCompletion":::
+
+This example prints `Bind` followed by `Zero`.
 
 Non-tail expressions retain ordinary sequencing. A final operation must not skip a continuation or cleanup required by an enclosing construct. When a builder adds optional final members, test nested `try/finally`, `use`, and conditional branches as well as the simple tail case.
 
-A `let!` must have a following body. For example, `async { let! value = work }` is incomplete; write `async { let! value = work in return value }` if the result is the intended result of the workflow. The compiler reports the incomplete binding at its source rather than a misleading later expression.
+A `let!` must have a following body in any computation expression, not only a custom builder. For example, `async { let! value = work }` is incomplete; write `async { let! value = work in return value }` if the result is the intended result of the workflow. The compiler reports the incomplete binding at its source rather than a misleading later expression.
 
 ## Rethrow from a computation expression
 

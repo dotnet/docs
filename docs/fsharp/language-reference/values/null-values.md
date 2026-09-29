@@ -109,7 +109,7 @@ Starting with F# 11, null checking uses this return contract when you call an an
 
 Enable null checking with `<Nullable>enable</Nullable>` or `--checknulls+`. The reference assembly must contain the annotation. The attribute is applied to the return contract and names an input parameter; it isn't a runtime null check.
 
-A nullable argument doesn't acquire a non-null guarantee:
+A nullable argument doesn't acquire a non-null guarantee: `fileName` above has type `string`, while `fileNameOf` accepts and returns `string | null`. The same distinction applies to other annotated path operations:
 
 ```fsharp
 let extensionOf (path: string | null) : string | null =
@@ -127,7 +127,7 @@ let nullableResult (value: 'T) : 'T | null =
     Unchecked.withNull value
 ```
 
-The helper changes only the static type. It doesn't test, allocate, or replace the value, and it doesn't make a nullable value safe to dereference.
+Use this helper at an unconstrained generic interop boundary rather than adding a reference-type constraint just to express the nullable return annotation. The helper changes only the static type. It doesn't test, allocate, or replace the value, and it doesn't make a nullable value safe to dereference.
 
 ## See also
 

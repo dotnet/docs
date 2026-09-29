@@ -101,10 +101,23 @@ Captures, reordered or converted arguments, mandatory inline expansion, and othe
 
 Direct delegates with the same method and receiver compare equal, which helps event unsubscription and <xref:System.Delegate.Remove(System.Delegate,System.Delegate)> work as expected.
 
+For the named `status` handler above, this repeated construction compares equal in both optimized and unoptimized builds:
+
+:::code language="fsharp" source="snippets/delegates/Program.fs" id="Identity":::
+
 Don't rely on every repeated named-handler construction taking the direct path. To guarantee removal regardless of compiler optimizations or construction shape, retain the delegate used for subscription and pass that same value when you unsubscribe.
 
 > [!IMPORTANT]
 > A null instance receiver can now fail when the delegate is constructed, rather than when it is invoked. A non-virtual instance target can throw `ArgumentException` at construction; a virtual target can throw `NullReferenceException`. Validate receivers before constructing delegates.
+
+For example, when the compiler directly targets this non-virtual .NET method, construction fails before any call to `callback.Invoke`:
+
+```fsharp
+let receiver: System.Text.StringBuilder = null
+let callback = System.Func<char, System.Text.StringBuilder>(receiver.Append)
+```
+
+Keep receiver validation and any handling of these exceptions around delegate construction, not only invocation. This change applies to direct construction; code that still needs a wrapper doesn't necessarily have the same failure point.
 
 When a conversion still needs generated parameters and the function supplies no useful names, the compiler can use parameter names from the delegate's `Invoke` signature. This fallback doesn't replace preservation of the original method and its attributes.
 

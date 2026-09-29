@@ -19,6 +19,15 @@ let status
 let handler = Func<string, ShipmentStore, string, string>(status)
 // </Handler>
 
+// <Identity>
+let repeated = Func<string, ShipmentStore, string, string>(status)
+let same = handler.Equals repeated
+printfn "%b" same
+// true
+// </Identity>
+
+if not same then failwith "The repeated named handler has different identity."
+
 // <Metadata>
 let parameters = handler.Method.GetParameters()
 assert (parameters[0].Name = "trackingId")

@@ -2,7 +2,9 @@ module TailOperations
 
 // <Builder>
 type TraceBuilder() =
-    member _.Return(value) = value
+    member _.Return(value) =
+        System.Console.WriteLine("Return")
+        value
     member _.Zero() = ()
     member _.Bind(value, continuation) =
         System.Console.WriteLine("Bind")
@@ -20,3 +22,14 @@ let completed = trace { do! () }
 // </Builder>
 
 if forwarded <> 42 then failwith "Tail result"
+
+// <ZeroCompletion>
+type ZeroBuilder() =
+    member _.Bind(value, continuation) =
+        System.Console.WriteLine("Bind")
+        continuation value
+    member _.Zero() = System.Console.WriteLine("Zero")
+
+let zero = ZeroBuilder()
+let completedWithZero = zero { do! () }
+// </ZeroCompletion>

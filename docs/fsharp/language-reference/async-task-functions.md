@@ -15,7 +15,7 @@ To start a .NET operation with the async workflow's cancellation token, pass a f
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Await":::
 
-The file read receives the ambient token. A missing file returns `None`, while a successful read returns `Some contents`. The workflow waits for the operation to finish, including its cancellation or cleanup. Starting the operation without passing its token and only then awaiting it can't retroactively make the operation observe cancellation.
+The file read receives the running async workflow's token, supplied when the caller starts that workflow. A missing file returns `None`, while a successful read returns `Some contents`. The workflow waits for the operation to finish, including its cancellation or cleanup. Starting the operation without passing its token and only then awaiting it can't retroactively make the operation observe cancellation.
 
 Use `Async.Await` when you already have a task-like value. Both APIs propagate the single underlying exception of a faulted task directly. An aggregate with multiple inner exceptions remains an aggregate. `Async.AwaitTask` keeps its existing exception-wrapping behavior.
 
@@ -48,6 +48,12 @@ An `Async<'T>` value describes deferred work. A task usually represents an opera
 `Task.parallelLimit` starts at most the positive limit of computations concurrently and returns results in input order. Start order and completion order are otherwise unspecified. For concurrency greater than one, each factory receives a linked token that also signals sibling failure; for sequential execution it receives the supplied token directly.
 
 When one computation faults, cancellation is requested for its siblings. Operations must observe their tokens to cooperate. If several computations fail, one exception is propagated; don't depend on which failure wins.
+
+To observe result ordering without relying on timer delays or worker scheduling, complete two task results explicitly in reverse order:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Coordination.fs" id="Ordering":::
+
+`TaskCompletionSource<'T>` lets the example supply a task's result explicitly. The returned array follows the factories' order even though the second source receives its result first. The example doesn't prescribe start order or elapsed time.
 
 | Function | Signature shape |
 |---|---|
@@ -94,9 +100,9 @@ The lowercase `Async.catch` returns `Result`, whereas the existing `Async.Catch`
 
 ## ValueTask and library availability
 
-The ValueTask APIs are available in the `netstandard2.1` and .NET assets of FSharp.Core, not its `netstandard2.0` asset. Use a package version containing the API you call; changing `LangVersion` doesn't add library functions.
+The ValueTask APIs are available in the `netstandard2.1` and `net10.0` builds of FSharp.Core 11, not its `netstandard2.0` build. These are target-specific versions of the library within the same package, selected by NuGet for your project's target framework. Use a package version containing the API you call; changing `LangVersion` doesn't add library functions.
 
-Observe the [single-consumption contract of `ValueTask<TResult>`](https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1#remarks). Don't await the same value task multiple times or consume it again after converting it with `Task.ofValueTask`. The combinators don't make an arbitrary value task reusable.
+`ValueTask<'T>` is a struct that can contain a result directly or represent an asynchronous operation. Observe its [single-consumption contract](https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1#remarks): don't await the same value repeatedly or concurrently, or pass it into separate combinator pipelines. A single pipeline consumes its input and passes its new result onward. If repeated awaits are required, call `Task.ofValueTask` once and reuse only the resulting task; don't consume the original value task again.
 
 ## See also
 

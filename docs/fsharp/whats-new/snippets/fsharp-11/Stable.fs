@@ -89,6 +89,9 @@ let fileName: string = Path.GetFileName("reports/annual.csv")
 let extension: string = Path.GetExtension(fileName)
 printn (extension.ToUpperInvariant())
 // .CSV
+
+let fileNameOf (path: string | null) : string | null =
+    Path.GetFileName path
 // </Nullability>
 
 // <Await>
@@ -195,5 +198,7 @@ let verify () =
         failwith "nested update"
     if extension.ToUpperInvariant() <> ".CSV" || small <> 42 || large <> 2147483648L then
         failwith "interop"
+    if fileNameOf null <> null || fileNameOf "reports/annual.csv" <> "annual.csv" then
+        failwith "Conditional nullability"
     if machineText <> "12.50" || displayText <> "12,50" then failwith "culture"
     if foldItems (+) 0 [| 1; 2; 3 |] <> 6 then failwith "closure"

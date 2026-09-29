@@ -12,11 +12,11 @@ An inline function with [statically resolved type parameters](statically-resolve
 Use this capability to separate a generic algorithm from adapters for particular types. You don't need to wrap those types or add a nominal interface to them.
 
 > [!NOTE]
-> Extension-based constraint resolution requires `<LangVersion>preview</LangVersion>` in each compilation that performs it. Referencing a library built in preview doesn't by itself require preview. See [Compile libraries and consumers](#compile-libraries-and-consumers) for the distinct cases.
+> The example library exports ordinary extensions and unresolved constraints, so it uses `<LangVersion>11.0</LangVersion>`. The application selects extensions for concrete types, so it uses `<LangVersion>preview</LangVersion>` and opens `Structural.Adapters`. A library that resolves constraints itself needs preview there; referencing an already-resolved API doesn't by itself require preview. See [Compile libraries and consumers](#compile-libraries-and-consumers) for the distinct cases.
 
 ## Adapt a property for a shared algorithm
 
-The following consumer measures paths represented by two existing framework types. Both paths have a length of `8`:
+The following application code measures paths represented by two existing framework types. Both paths have a length of `8`:
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/consumer/Program.fs" id="Paths":::
 
@@ -36,15 +36,15 @@ Before this preview capability, an ordinary extension property could work in a d
 
 ## Share an operation across collection types
 
-Extension constraints also support static members. Define adapters in `Structural.Adapters` that use the existing `List.map` and `Option.map` functions:
+Extension constraints also support static members. The library's `Structural.Adapters` module defines adapters using the existing `List.map` and `Option.map` functions:
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="MapAdapters":::
 
-In `Structural.Algorithms`, request a `Map` member on the complete input type:
+In the library's `Structural.Algorithms` module, request a `Map` member on the complete input type:
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Map":::
 
-The consumer can then share a transformation, change the element type, and compose mapping over a nested collection:
+The application can then share a transformation, change the element type, and compose mapping over a nested collection:
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/consumer/Program.fs" id="Mapping":::
 

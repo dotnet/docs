@@ -16,7 +16,7 @@ Property and positional patterns both test parts of a value. The difference is h
 - A *property pattern* names the properties or fields to test.
 - A *positional pattern* identifies values by their order.
 
-A *deconstruction* exposes an ordered set of component values. A tuple already has an element order; see [deconstruct tuples](../types/tuples.md#deconstruct-tuples). For another type, a [`Deconstruct` method](../functional/deconstruct.md#user-defined-types) defines which component values are exposed and their order.
+A *deconstruction* exposes an ordered set of component values. A tuple already has an element order; see [deconstruct tuples](../types/tuples.md#deconstruct-tuples). For another type, a [`Deconstruct` method](deconstruct.md#deconstruct-user-defined-types) defines which component values are exposed and their order.
 
 ## Compare names and positions
 
@@ -73,6 +73,6 @@ The pattern-based version keeps the possible results together when several branc
 
 - [Pattern matching overview](pattern-matching.md)
 - [Relational, logical, and parenthesized patterns](relational-logical-patterns.md).
-- [Deconstructing tuples and other types](../functional/deconstruct.md)
+- [Deconstructing tuples and other types](deconstruct.md)
 - [Property pattern reference](../../language-reference/operators/patterns.md#property-pattern).
 - [Positional pattern reference](../../language-reference/operators/patterns.md#positional-pattern).

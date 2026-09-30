@@ -39,7 +39,7 @@ In those constructs, you can match an input expression against any of the follow
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
-For an example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md).
+For an example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/advanced/pattern-matching.md).
 
 ## Declaration and type patterns
 
@@ -209,7 +209,7 @@ Use a *positional pattern* to deconstruct an expression and match the resulting 
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="BasicExample":::
 
-In the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/functional/deconstruct.md) method, which the pattern uses to deconstruct an expression result.
+In the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/patterns/deconstruct.md) method, which the pattern uses to deconstruct an expression result.
 
 >[!IMPORTANT]
 > The order of members in a positional pattern must match the order of parameters in the `Deconstruct` method. The code generated for the positional pattern calls the `Deconstruct` method.
@@ -401,4 +401,4 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 
 - [C# operators and expressions](index.md)
 - [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/advanced/pattern-matching.md)

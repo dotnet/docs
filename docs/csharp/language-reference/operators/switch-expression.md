@@ -62,5 +62,5 @@ For more information, see the [`switch` expression](~/_csharpstandard/standard/e
 - [Add missing cases to switch expression (style rule IDE0072)](../../../fundamentals/code-analysis/style-rules/ide0072.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/advanced/pattern-matching.md)
 - [`switch` statement](../statements/selection-statements.md#the-switch-statement)

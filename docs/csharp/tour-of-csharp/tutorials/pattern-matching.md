@@ -142,8 +142,8 @@ To finish this tutorial, explore one more building block for pattern matching: t
 Pattern matching provides a vocabulary to compare an expression against characteristics. Patterns can include the expression's type, values of types, property values, and combinations of them. Comparing expressions against a pattern can be clearer than multiple `if` comparisons. You explored some of the patterns you can use to match expressions. There are many more ways to use pattern matching in your applications. As you explore, you can learn more about pattern matching in C# in the following articles:
 
 - [Pattern matching in C#](../../fundamentals/patterns/pattern-matching.md)
-- [Explore pattern matching tutorial](../../tutorials/patterns-objects.md)
-- [Pattern matching scenario](../../fundamentals/tutorials/pattern-matching.md)
+- [Explore pattern matching tutorial](../../fundamentals/tutorials/pattern-matching.md)
+- [Pattern matching scenario](../../fundamentals/tutorials/advanced/pattern-matching.md)
 - [The C# type system](../../fundamentals/types/index.md) — Understand the types you matched against in this tutorial.
 
 ## Cleanup resources

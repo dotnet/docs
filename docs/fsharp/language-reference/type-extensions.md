@@ -178,6 +178,16 @@ Extension members can adapt existing types to the member constraints of generic 
 
 The compilation that resolves an extension as a constraint solution needs preview. A library that only defines ordinary extensions and unresolved inline constraints can use numbered F# 11. See [Extension members for SRTP constraints](generics/extension-member-constraints.md) for framework-type adapters, shared mapping, operator declarations, and separate-project requirements. These extensions don't alter the underlying type or cause it to implement a nominal interface.
 
+### Native tuple headers
+
+Use preview native tuple headers when a plain tuple should join an extensible static-member or operator protocol:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
+
+The tuple operator combines its two components through their own `++` operations. Both `type ('T1 * 'T2) with` and `type struct ('T1 * 'T2) with` require preview in the declaring compilation. Native headers support two through seven elements; they don't enable tuple dot-instance calls or `type ('a -> 'b) with` function headers.
+
+See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for complete projects and limits. These declaration requirements are additional to the consumer's extension-solving requirement.
+
 ## See also
 
 - [F# Language Reference](index.md)

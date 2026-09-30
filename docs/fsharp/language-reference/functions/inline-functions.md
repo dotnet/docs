@@ -1,7 +1,7 @@
 ---
 title: Inline Functions
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
-ms.date: 09/29/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 # Inline Functions
@@ -84,7 +84,19 @@ FSharp.Core 11 uses callback inlining and adaptation in selected `List` and `Arr
 
 :::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Collection":::
 
-Inlining can eliminate a separate callback closure; it doesn't eliminate every allocation performed by the operation or its caller. Consumers need an FSharp.Core containing the attribute and a compiler that understands it. Measure representative call sites rather than assuming every use of `inline` is faster.
+Inlining can eliminate a separate callback closure; it doesn't eliminate every allocation performed by the operation or its caller. Newly changed examples include `List.exists`, `List.fold`, and `Array.fold`; `Array.exists` was already inline before F# 11. Consumers need an FSharp.Core containing the attribute and a compiler that understands it. Measure optimized, representative call sites rather than assuming every use of `inline` is faster.
+
+## Debug inline functions
+
+To step into a helper and inspect its parameters, compile without optimization and retain debugging information. Starting with F# 11, non-optimized builds prefer a normal call for inline functions instead of always erasing the call through expansion:
+
+:::code language="fsharp" source="../snippets/inline-functions/DebugInline.fs" id="DebugInline":::
+
+In the [sample project](../snippets/inline-functions/DebugInline.fsproj), set a breakpoint on `let total = amount + fee`. Step into `addFee` from the call and inspect `fee` and `amount`. The emitted non-optimized code contains the call and source sequence points; optimized code can fold the calculation instead.
+
+The behavior follows optimization settings, not the configuration's name. With optimization enabled, inline expansion remains the default. A specialized callable method can be generated where required, but some constructs—including operations requiring static expansion or resumable code—must still inline.
+
+Use `--always-inline` to request the older always-inline behavior even without optimization. This changes the debugging opportunity; it isn't a recommendation to disable optimization in Release builds. See [Compiler options](../compiler-options.md) and [Tooling performance](../../tools/tooling-performance.md).
 
 ## Inline extension constraints across libraries
 

@@ -1,89 +1,97 @@
 module RecordComposition
 
-// <Quantity>
-type PositiveQuantity = private PositiveQuantity of int
+open System
 
-module PositiveQuantity =
-    let create value =
-        if value > 0 then Ok (PositiveQuantity value)
-        else Error "Quantity must be positive."
+// <Models>
+type CustomerId = CustomerId of Guid
 
-    let value (PositiveQuantity value) = value
-// </Quantity>
+type CustomerDetails = { Name: string; PreferredLanguage: string }
+
+type CustomerRow =
+    { ...CustomerDetails
+      Id: string
+      InternalNote: string }
+
+type Customer =
+    { ...CustomerDetails
+      Id: CustomerId }
+// </Models>
+
+// <Mapping>
+let toCustomer (row: CustomerRow) =
+    match Guid.TryParse row.Id with
+    | true, id -> Ok ({ ...row; Id = CustomerId id }: Customer)
+    | false, _ -> Error "Invalid customer identifier."
+// </Mapping>
+
+// <MappingUse>
+let row: CustomerRow =
+    { Name = "Ada"; PreferredLanguage = "en"
+      Id = "c8d5f799-5d58-4d97-9fd5-481fa799fcb6"
+      InternalNote = "Imported from the previous system." }
+
+match toCustomer row with
+| Ok customer -> printfn "%s (%s)" customer.Name customer.PreferredLanguage
+| Error message -> printfn "%s" message
+// Ada (en)
+// </MappingUse>
 
 // <Strengthen>
-type OrderLine =
-    { ProductCode: string
-      Quantity: int
-      UnitPrice: decimal }
+type ImportedCustomer = { Name: string; Id: string }
+type IdentifiedCustomer = { ...ImportedCustomer; Id: CustomerId }
 
-type ValidatedOrderLine =
-    { ...OrderLine
-      Quantity: PositiveQuantity }
-
-let validateLine (line: OrderLine) =
-    PositiveQuantity.create line.Quantity
-    |> Result.map (fun quantity ->
-        ({ ...line; Quantity = quantity }: ValidatedOrderLine))
+let identify (source: ImportedCustomer) =
+    match Guid.TryParse source.Id with
+    | true, id -> Ok ({ ...source; Id = CustomerId id }: IdentifiedCustomer)
+    | false, _ -> Error "Invalid customer identifier."
 // </Strengthen>
 
-// <ValidationUse>
-let request: OrderLine =
-    { ProductCode = "BK-42"; Quantity = 3; UnitPrice = 12.50m }
+// <ComposeTypes>
+type PublicProductFields = { Name: string; UnitPrice: decimal }
+type ProductRow = { ...PublicProductFields; InternalCost: decimal }
+type StockCounts = {| InStock: int; Reserved: int |}
 
-let total =
-    validateLine request
-    |> Result.map (fun line ->
-        decimal (PositiveQuantity.value line.Quantity) * line.UnitPrice)
-
-printfn "%A" total
-printfn "%A" (validateLine { ...request; Quantity = 0 })
-// Ok 37.50M
-// Error "Quantity must be positive."
-// </ValidationUse>
+type ProductCard =
+    { ...PublicProductFields
+      ...StockCounts
+      CanOrder: bool }
+// </ComposeTypes>
 
 // <Compose>
-type Product =
-    { ProductCode: string
-      Name: string
-      UnitPrice: decimal }
+let product: ProductRow =
+    { Name = "Notebook"; UnitPrice = 12.50m; InternalCost = 4m }
+let stock: StockCounts = {| InStock = 8; Reserved = 2 |}
 
-type Inventory = { Available: int; Warehouse: string }
+let card: ProductCard =
+    { ...product; ...stock; CanOrder = stock.InStock > stock.Reserved }
 
-type Listing =
-    { ...Product
-      ...Inventory
-      CanOrder: bool }
-
-let product: Product =
-    { ProductCode = "BK-42"; Name = "Notebook"; UnitPrice = 12.50m }
-let inventory = { Available = 8; Warehouse = "North" }
-
-let listing: Listing =
-    { ...product; ...inventory; CanOrder = inventory.Available > 0 }
+let viewState = {| ...card; Selected = false |}
+let selected = {| ...viewState; Selected = true |}
 // </Compose>
 
 // <Project>
 type PriceLabel = { Name: string; UnitPrice: decimal }
 
-let sale: Listing = { ...listing; UnitPrice = 10.00m }
-let label: PriceLabel = { ...sale }
-let display = {| ...label; Currency = "EUR" |}
-
-printn $"{display.Name}: {display.UnitPrice:F2} {display.Currency}"
-// Notebook: 10.00 EUR
+let label: PriceLabel = { ...selected }
+printfn "%s: %.2f" label.Name label.UnitPrice
+// Notebook: 12.50
 // </Project>
 
 let verify () =
-    if total <> Ok 37.50m then failwith "Validated total"
-    match validateLine request with
-    | Ok line when line.ProductCode = "BK-42" && line.UnitPrice = 12.50m -> ()
-    | result -> failwithf "Field preservation: %A" result
-    for quantity in [0; -1] do
-        match validateLine { ...request; Quantity = quantity } with
-        | Error "Quantity must be positive." -> ()
-        | result -> failwithf "Invalid quantity accepted: %A" result
-    if listing.Available <> 8 || listing.Warehouse <> "North" || not listing.CanOrder then
-        failwith "Composition"
-    if label.Name <> "Notebook" || label.UnitPrice <> 10.00m || listing.UnitPrice <> 12.50m then
-        failwith "Projection or immutable override"
+    match toCustomer row with
+    | Ok customer when customer.Name = row.Name &&
+                       customer.PreferredLanguage = row.PreferredLanguage &&
+                       customer.Id = CustomerId(Guid.Parse row.Id) -> ()
+    | result -> failwithf "Customer mapping: %A" result
+    if toCustomer { ...row; Id = "not-an-id" } <> Error "Invalid customer identifier." then
+        failwith "Invalid identifier accepted"
+    if identify { Name = row.Name; Id = row.Id } <>
+       Ok { Name = row.Name; Id = CustomerId(Guid.Parse row.Id) } then
+        failwith "Replaced field type"
+    if card.Name <> product.Name || card.InStock <> 8 || not card.CanOrder then
+        failwith "Mixed-source composition"
+    if viewState.Selected || not selected.Selected || label.UnitPrice <> 12.50m then
+        failwith "Anonymous composition or named projection"
+    if typeof<Customer>.GetProperty("InternalNote") <> null ||
+       typeof<ProductCard>.GetProperty("InternalCost") <> null then
+        failwith "Internal fields escaped the destination"

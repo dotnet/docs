@@ -1,7 +1,8 @@
 ---
 title: Operator Overloading
 description: Learn how to overload arithmetic operators in a class or record type and at the global level in F#.
-ms.date: 08/15/2020
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Operator Overloading
 
@@ -163,6 +164,22 @@ The output of the above code is `12`.
 You can redefine the regular arithmetic operators in this manner because the scoping rules for F# dictate that newly defined operators take precedence over the built-in operators.
 
 The keyword `inline` is often used with global operators, which are often small functions that are best integrated into the calling code. Making operator functions inline also enables them to work with statically resolved type parameters to produce statically resolved generic code. For more information, see [Inline Functions](./functions/inline-functions.md) and [Statically Resolved Type Parameters](./generics/statically-resolved-type-parameters.md).
+
+## Operators supplied by extensions
+
+To let existing representations participate in a generic operation without wrappers, F# 11 preview can resolve optional extension operators as SRTP witnesses. For example, combine counts and observation lists component by component:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
+
+A consumer with these public adapters in scope can use one generic reduction:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="CombineUse":::
+
+The integer operation adds, the list operation appends, and the pair delegates to its components. The compiler checks member signatures, not associativity or an identity law. This `List.reduce` example requires a nonempty list.
+
+Extension-operator declarations aren't themselves new. Numbered modes can accept an ordinary named-type extension declaration with FS1215 while still rejecting its use as an SRTP solution. Suppressing that warning doesn't enable preview resolution. The native tuple header additionally requires preview where declared.
+
+Built-in primitive operator solutions keep their priority; extension support isn't arbitrary replacement of built-in arithmetic. See [Extension members for SRTP constraints](generics/extension-member-constraints.md#operator-extensions) for scope, library arrangements, and current limits.
 
 ## See also
 

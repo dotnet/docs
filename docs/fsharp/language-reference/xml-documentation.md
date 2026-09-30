@@ -1,7 +1,7 @@
 ---
 title: XML Documentation
 description: Learn about support in F# for generating documentation from comments.
-ms.date: 09/24/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -117,15 +117,17 @@ type SomeType
 
 ## Reuse and inherit documentation
 
-To maintain one description for related APIs, place shared XML elements in a file named `shared.xml` beside your source file:
+When two API members share a policy but have different purposes, keep their summaries local and maintain the common remarks once. Place the shared elements in `shared.xml` beside your source:
 
 :::code language="xml" source="snippets/xml-documentation/shared.xml":::
 
-Select the elements with an XPath expression:
+Both members select those elements with the same XPath expression:
 
 :::code language="fsharp" source="snippets/xml-documentation/Tracking.fs" id="Include":::
 
-Enable `GenerateDocumentationFile` in the project or pass `--doc:Tracking.xml` to the compiler. Starting with F# 11, the generated member documentation contains the selected `summary`, `param`, and `returns` elements, not just the include tag. The [official `<include>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#include) explains the XML attributes and XPath selection.
+Enable `GenerateDocumentationFile` in the project or pass `--doc:Tracking.xml` to the compiler. Starting with the F# 11 compiler, both emitted entries contain the selected `remarks` and their distinct local `summary`, not just an include tag. Edit the one fragment and regenerate to update both. Shared text should describe a genuinely shared contract; don't force differing parameter lists or behaviors into a common description.
+
+The [sample project](snippets/xml-documentation/Tracking.fsproj) includes the external XML as an additional compilation input so changes to it can trigger regeneration. The [official `<include>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#include) explains the attributes and XPath selection. This compiler feature doesn't need a language-version opt-in and doesn't expand external includes in live Quick Info.
 
 ### Include resolution and errors
 
@@ -141,7 +143,11 @@ To avoid copying a base member's description into each override, use `<inheritdo
 
 :::code language="fsharp" source="snippets/xml-documentation/Tracking.fs" id="Inherit":::
 
-Compatible F# tooling uses inherited documentation in tooltips, completion, and signature help. The compiler leaves `<inheritdoc/>` in the generated XML: a downstream documentation generator must interpret it to produce inherited text in its output. See the [official `<inheritdoc>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#inheritdoc).
+With the F# 11 tooling resolver, help for `TrackingService.Status` contains “Find the latest status of a shipment.” without a copied paragraph on the override. FSharp.Compiler.Service exposes this inherited text through its documentation APIs. Updating Core alone doesn't update an editor's resolver.
+
+The compiler leaves `<inheritdoc/>` in generated XML: a downstream documentation generator must interpret it. Emission and tooling inheritance are separate behaviors; successful compilation alone doesn't verify the inherited help. See the [official `<inheritdoc>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#inheritdoc).
+
+Use a top-level `<inheritdoc/>` sibling rather than nesting it inside `<summary>`; nested selection has limitations in the current resolver. This example demonstrates a one-hop F# override, not universal cross-language, cross-assembly, or documentation-tool parity.
 
 Support depends on the documentation consumer. Implicit inheritance follows implemented interface or overridden members; explicit `cref` resolution and constructor handling can differ between editor/FCS surfaces. Use full XML documentation identifiers for explicit references, and verify the surface that your readers use.
 

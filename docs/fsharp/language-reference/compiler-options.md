@@ -1,7 +1,7 @@
 ---
 title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 09/24/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 # Compiler options
@@ -17,6 +17,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |Compiler Option|Description|
 |---------------|-----------|
 |`--allsigs`|Generates a new (or regenerates an existing) signature file for each source file in the compilation. For more information about signature files, see [Signatures](signature-files.md).|
+|`--always-inline`|Always expand inline functions, including without optimization. By default, non-optimized F# 11 builds prefer callable methods where possible for [inline debugging](functions/inline-functions.md#debug-inline-functions).|
 |`-a filename.fs`|Generates a library from the specified file. This option is a short form of `--target:library filename.fs`.|
 |`--baseaddress:address`|Specifies the preferred base address at which to load a DLL.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;baseaddress &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#baseaddress).|
 |<code>--checknulls[+&#124;-]</code>|Enables [nullable reference types](./values/null-values.md#null-values-starting-with-f-9), added in F# 9.|
@@ -51,6 +52,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--preferreduilang:lang`| Specifies the preferred output language culture name (for example,  `es-ES`, `ja-JP`). |
 |`--quotations-debug`|Specifies that extra debugging information should be emitted for expressions that are derived from F# quotation literals and reflected definitions. The debug information is added to the custom attributes of an F# expression tree node. See [Code Quotations](code-quotations.md) and [Expr.CustomAttributes](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-quotations-fsharpexpr.html#CustomAttributes).|
 |`--reference:assembly-filename`<br /><br />`-r:assembly-filename`|Makes code from an F# or .NET Framework assembly available to the code being compiled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;reference &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/inputs.md#references).|
+|`--reflectionfree`|Avoids reflection-dependent generated structural formatting. In F# 11, records and unions can receive meaningful generated `ToString` output; inner types must also have suitable conversions. See [reflection-free type formatting](interpolated-strings.md#record-and-union-output-without-reflection). This isn't proof of whole-application Native AOT compatibility.|
 |`--resource:resource-filename`|Embeds a managed resource file into the generated assembly.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;resource &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#embeddedresource).|
 |`--sig:signature-filename`|Generates a signature file based on the generated assembly. For more information about signature files, see [Signatures](signature-files.md).|
 |`--simpleresolution`|Specifies that assembly references should be resolved using directory-based Mono rules rather than MSBuild resolution. The default is to use MSBuild resolution except when running under Mono.|
@@ -118,6 +120,8 @@ For troubleshooting or a project-specific performance comparison, disable parall
 ```
 
 The corresponding compiler option is `--parallelcompilation-`; use `--parallelcompilation+` to enable it. Compare complete builds and diagnostics as well as elapsed time.
+
+Available parallelism depends on source dependencies, available cores, and optimization settings; file-order rules remain unchanged. Build tasks' MSBuild environment/path isolation is a separate concurrency concern. See [Tooling performance](../tools/tooling-performance.md) for imported-library sharing, editor work, and meaningful comparisons.
 
 ## Diagnostic lists
 

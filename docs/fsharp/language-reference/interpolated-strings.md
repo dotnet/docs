@@ -177,7 +177,9 @@ To format text without a reflection-based formatting engine, use string-valued i
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Interpolation":::
 
-F# 11 extends string-concatenation lowering to ordinary non-string holes and .NET-format holes, instead of routing the whole expression through the printf engine. This supports trimming and [Native AOT deployment](../../core/deploying/native-aot/index.md) for these formatting operations. It doesn't guarantee that other code in the application is AOT-compatible.
+F# 11 extends string-concatenation lowering to ordinary non-string holes and .NET-format holes, instead of routing the whole expression through the printf engine. The compiler constructs pieces and joins them with `System.String.Concat`; this isn't a new Core API. A .NET-format hole uses invariant `String.Format` and boxes its argument, so the path doesn't eliminate all allocations or boxing.
+
+This supports trimming and [Native AOT deployment](../../core/deploying/native-aot/index.md) for these formatting operations. It doesn't guarantee that other code in the application is AOT-compatible, and doesn't inherently require Core's modern target-specific build.
 
 Printf-style holes requiring printf formatting, such as `%04d{number}` or `%A{record}`, can still use the reflection-based path. Bare `%s`, `%c`, `%d`, `%i`, and `%M` holes retain their type checks and avoid printf formatting. Other specifiers, including `%u`, aren't covered by that optimization. An interpolation used as a `PrintfFormat` value is also distinct from one whose result type is `string`.
 
@@ -206,6 +208,14 @@ printn 3
 ```
 
 Use [plaintext formatting](plaintext-formatting.md) when you need printf's formatting capabilities.
+
+### Record and union output without reflection
+
+With `--reflectionfree`, F# 11 can generate meaningful `ToString` implementations for records and unions instead of displaying only the type name:
+
+:::code language="fsharp" source="snippets/interpolated-strings/ReflectionFree.fs" id="ReflectionFree":::
+
+The [sample project](snippets/interpolated-strings/ReflectionFree.fsproj) enables the flag. Generated output is not `%A` pretty-printing and can differ in layout or value formatting. Inner types must also have suitable `ToString` implementations; the flag doesn't make arbitrary field conversions or an entire application reflection-free.
 
 For the release overview, see [What's new in F# 11](../whats-new/fsharp-11.md).
 

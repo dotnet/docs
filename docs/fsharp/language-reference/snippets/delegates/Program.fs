@@ -30,14 +30,19 @@ if not same then failwith "The repeated named handler has different identity."
 
 // <Metadata>
 let parameters = handler.Method.GetParameters()
+let header =
+    parameters[2].GetCustomAttributes(typeof<FromHeaderAttribute>, false)[0]
+    :?> FromHeaderAttribute
+assert (handler.Method.Name = "status")
 assert (parameters[0].Name = "trackingId")
 assert (parameters[1].IsDefined(typeof<FromServicesAttribute>, false))
-assert (parameters[2].GetCustomAttributes(typeof<FromHeaderAttribute>, false).Length = 1)
+assert (header.Name = "X-Customer")
 // </Metadata>
 
-if parameters[0].Name <> "trackingId"
+if handler.Method.Name <> "status"
+   || parameters[0].Name <> "trackingId"
    || not (parameters[1].IsDefined(typeof<FromServicesAttribute>, false))
-   || parameters[2].GetCustomAttributes(typeof<FromHeaderAttribute>, false).Length <> 1 then
+   || header.Name <> "X-Customer" then
     failwith "The route handler metadata wasn't preserved."
 
 // <App>

@@ -1,7 +1,8 @@
 ---
 title: Tuples
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
-ms.date: 05/16/2016
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Tuples
 
@@ -132,6 +133,20 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 ### Compiled Form of Struct Tuples
 
 Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# Tuples](../../csharp/language-reference/builtin-types/value-tuples.md) and [Visual Basic Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
+
+## Tuple extensions for generic operations
+
+A plain pair can carry two independently combined values or a result with accumulated context. F# 11 preview lets it participate in extension-backed static operations without a new wrapper type:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="ContextAdapters":::
+
+These declarations use an in-scope `++` operation to combine the contexts; the [complete composition library](snippets/extension-member-constraints/composition/Composition.fs) supplies integer and list adapters. With the library and adapter module in scope, the consumer can preserve an audit trail while applying a function:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
+
+Native reference and struct tuple-extension headers require preview at their declarations and support arity two through seven. They map to CLR tuple types rather than create a new nominal type. The feature supports static-member/operator scenarios; tuple dot-instance calls and native function-type extension headers aren't supported.
+
+See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for scope, producer/consumer settings, and the current generic-reduction boundary limitation.
 
 ## See also
 

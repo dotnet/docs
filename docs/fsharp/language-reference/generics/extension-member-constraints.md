@@ -1,7 +1,7 @@
 ---
 title: Extension members for SRTP constraints
 description: Adapt existing F# and .NET types to generic inline algorithms, and configure extension-member resolution across library boundaries.
-ms.date: 09/29/2026
+ms.date: 09/30/2026
 ai-usage: ai-generated
 ---
 
@@ -70,12 +70,51 @@ Built-in primitive operator solutions retain priority for matching types. An ext
 
 In numbered F# 11 mode, an optional extension operator declaration emits FS1215 but can still produce a library. A preview consumer can resolve that operator as a constraint solution. Treating warnings as errors rejects that producer; suppressing the warning doesn't enable extension-based resolution in a numbered consumer. The [operator project](../snippets/extension-member-constraints/operators/Operators.fsproj) uses preview to avoid this declaration warning.
 
+### Tuple operators and context
+
+A collection of observations and a pair of independently accumulated results can participate in the same combination protocol. The following consumer defines its generic algorithm after opening the library's adapters:
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition-consumer/Program.fs" id="CombineUse":::
+
+These library extensions give the operator a meaning for integers, lists, and pairs:
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
+
+`combineAll` requires a nonempty list because it uses `List.reduce`. The operation preserves list order; the compiler doesn't enforce associativity or supply an identity for an empty input.
+
+The native tuple header `type ('T1 * 'T2) with` maps to the corresponding CLR tuple type. `type struct ('T1 * 'T2) with` maps to a value tuple. Both headers require preview at the declaration, unlike an ordinary named-type extension declaration. Supported native header arities are two through seven. Eight or more elements are rejected with FS3915.
+
+Tuples can also carry context alongside a value. The following operator appends a trail while applying a contextual function:
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition/Composition.fs" id="ContextAdapters":::
+
+This is support for static members and operators, not general tuple instance-dot calls. Declaring an instance extension doesn't make `(1, 2).YourMember` supported. Native function-type headers such as `type ('a -> 'b) with` aren't supported either.
+
+The [composition library](../snippets/extension-member-constraints/composition/Composition.fsproj) and [consumer](../snippets/extension-member-constraints/composition-consumer/CompositionConsumer.fsproj) both use preview. In this example, the adapters cross the DLL boundary but `combineAll` is defined in the consumer. Moving that generic reduction into the library can fail during consumer code generation with FS0193 for the tuple `++` case, even with the adapter module open. Keeping the reduction with the consuming calls avoids this observed limitation; it isn't a universal rule against imported generic algorithms. The separate path and mapping examples do export their algorithms.
+
+### Return-directed construction
+
+For an operation that introduces a plain value into a container, the output type can identify which member should construct it:
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition/Composition.fs" id="ReturnAdapters":::
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition/Composition.fs" id="Return":::
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/composition-consumer/Program.fs" id="ReturnUse":::
+
+The consumer's annotation selects the supporting output type. Its `Return` extension is the witness; the input string alone can't choose the container. This imported `singleton` function is validated with both list and option results.
+
+This example doesn't need `AllowOverloadOnReturnType`: each container supplies its own member. Use the [return-overload attribute](../parameters-and-arguments.md#select-by-return-type) when otherwise matching overloads on one type differ by their return types. Neither mechanism establishes higher-kinded polymorphism or a default output container.
+
 ## Compile libraries and consumers
 
 Language settings apply per project, not transitively through references. With a compiler containing this F# 11 implementation, choose the setting for the work each compilation performs:
 
 | Library implementation | Consumer use | Preview requirement |
 |---|---|---|
+| Declares native tuple-extension headers. | Resolves their extension operators. | Both need preview; the new header syntax itself is preview. |
 | Defines ordinary extensions and exports an unresolved inline member constraint. | Supplies concrete types whose extensions solve that constraint. | Consumer needs preview. The library can use numbered F# 11. |
 | Solves an extension constraint internally and exposes an ordinary or already-resolved inline API. | Calls that API without further extension resolution. | Library needs preview; the consumer can use numbered F# 11. |
 | Solves extensions itself and also exports unresolved constraints. | Resolves those remaining constraints through extensions. | Both compilations need preview. |

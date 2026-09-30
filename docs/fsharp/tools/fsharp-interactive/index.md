@@ -67,6 +67,10 @@ val it : unit = ()
 
 The code's formatting is preserved, and there is a double semicolon (`;;`) terminating the input. F# Interactive then evaluated the code and printed the results!
 
+## Core build and asynchronous disposal
+
+For Core API availability and the task-expression asynchronous-disposal packaging fix, see [FSharp.Core target frameworks](../../fsharp-core-targeting.md#f-interactive-and-asynchronous-disposal). FSI's bundled Core selection is part of the toolset; it isn't determined solely by a package reference in a separate application.
+
 ## Display version information
 
 Starting with F# 11, enter `#version;;` to display version information for the current F# Interactive session without restarting it:

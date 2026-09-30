@@ -420,6 +420,14 @@ The functions [`Array.zip`](https://fsharp.github.io/fsharp-core-docs/reference/
 
 The module [`Array.Parallel`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule-parallel.html) contains functions for performing parallel computations on arrays. This module is not available in applications that target versions of the .NET Framework prior to version 4.
 
+## Empty result arrays
+
+When checks produce no warnings or a filter finds no matches, an empty array is a normal result. FSharp.Core 11 reuses a shared empty array for more zero-length results, including `collect`, `map`, `concat`, and several conversion paths:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="EmptyResults":::
+
+The reference-identity observation shows shared result storage, not total pipeline allocation. The input array, callbacks, iterators, and nonempty results can still allocate. Don't depend on separate empty results having different object identities.
+
 ## Two-dimensional arrays and Native AOT
 
 The FSharp.Core 11 package contains builds for `netstandard2.0`, `netstandard2.1`, and `net10.0`. NuGet selects the build that matches your project's target framework; projects targeting .NET 10 or later can use the `net10.0` build.

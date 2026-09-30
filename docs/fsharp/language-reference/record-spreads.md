@@ -1,13 +1,15 @@
 ---
 title: Record spread operators
 description: Compose F# record types and values, project fields, and override fields with record spread operators.
-ms.date: 09/29/2026
+ms.date: 09/30/2026
 ai-usage: ai-generated
 ---
 
 # Record spread operators
 
-Starting with F# 11, record spreads let you compose records from existing record types and values. Use `...Type` to contribute field declarations to a new named record, or `...expression` to contribute field values to a named or anonymous record.
+When related models have different responsibilities, separate record types keep those differences visible. Record spreads, available starting with F# 11, remove repeated shared declarations and field assignments without removing the type boundary.
+
+Use `...Type` to contribute field declarations to a new named record, or `...expression` to contribute field values to a named or anonymous record. Declaration reuse and value mapping are independent choices.
 
 ## Compose record types
 
@@ -36,25 +38,29 @@ Expression spreads accept named or anonymous record sources and destinations, in
 
 ### Strengthen a field's type
 
-A later field declaration can replace the type of a spread field. Use that rule to model a checked value separately from its incoming representation. A private union case provides a positive-quantity type:
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Quantity":::
-
-Keep the unchanged declarations and assignments in one place, while replacing the field that needs validation:
+A later field declaration can replace the type of a spread field. For example, represent a parsed identifier with `type CustomerId = CustomerId of System.Guid`, then distinguish an imported record from one with that identifier:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Strengthen":::
 
-The spread doesn't convert an `int` into a `PositiveQuantity`. The explicit replacement supplies the new value after the check succeeds. Only the quantity is validated here; product codes and prices retain their original types and values.
+The spread doesn't parse or validate a string. `Guid.TryParse` performs the check and the explicit assignment supplies the replacement value. This identifier type distinguishes identifiers from unrelated GUIDs; it doesn't impose additional domain rules such as forbidding an empty GUID.
 
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="ValidationUse":::
+For independently evolving storage and domain models, share only declarations that intentionally belong together:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Models":::
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Mapping":::
+
+The destination excludes `InternalNote`. You can instead declare every destination field explicitly and use exactly the same value mapping.
 
 ### Combine independent models
 
-Compose declarations from multiple records, then assemble a value from those sources:
+Compose declarations from a curated nominal record and an anonymous record type, then assemble values from independent sources:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="ComposeTypes":::
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Compose":::
 
-The result is an immutable snapshot of the contributed field values. `CanOrder` is computed when `listing` is constructed; subsequent construction with a different `Available` value doesn't automatically recompute it.
+The nominal `ProductRow` and anonymous `StockCounts` both supply values to `ProductCard`. The nominal card then supplies an anonymous view state, which another anonymous construction updates. `CanOrder` is computed at construction; changing counts in a later construction doesn't automatically recompute it.
 
 To expose only a subset of fields, declare that target explicitly:
 

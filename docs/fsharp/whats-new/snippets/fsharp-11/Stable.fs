@@ -135,17 +135,16 @@ let fileLength (path: string) (ct: CancellationToken) =
 // </Pipeline>
 
 // <ReturnOverloads>
-open System
-
-type Number =
+type Inject =
     [<AllowOverloadOnReturnType>]
-    static member Parse(text: string) : int = Int32.Parse text
+    static member Pure(value: 'T) : 'T list = [value]
 
     [<AllowOverloadOnReturnType>]
-    static member Parse(text: string) : int64 = Int64.Parse text
+    static member Pure(value: 'T) : 'T option = Some value
 
-let small: int = Number.Parse "42"
-let large: int64 = Number.Parse "2147483648"
+let batch: string list = Inject.Pure "ready"
+let optional: string option = Inject.Pure "ready"
+// ["ready"] and Some "ready"
 // </ReturnOverloads>
 
 // <Culture>
@@ -172,20 +171,32 @@ let inline foldItems
 // </Closure>
 
 // <Collection>
-let aboveLimit limit (measurements: float[]) =
-    measurements |> Array.exists (fun value -> value > limit)
+let aboveLimit limit (measurements: float list) =
+    measurements |> List.exists (fun value -> value > limit)
 
-printn (aboveLimit 80.0 [| 72.0; 86.0; 75.0 |])
+printn (aboveLimit 80.0 [ 72.0; 86.0; 75.0 ])
 // True
 // </Collection>
+
+// <EmptyResults>
+let checkTitle (title: string) =
+    if String.IsNullOrWhiteSpace title then [|"A title is required."|]
+    else Array.empty
+
+let warnings = ["Introduction"; "Installation"] |> List.toArray |> Array.collect checkTitle
+let sharedEmpty = obj.ReferenceEquals(warnings, Array.empty<string>)
+// true: no new empty result array
+// </EmptyResults>
 
 let verify () =
     if report 12 145.50m (TimeSpan.FromMilliseconds 250.0) <> "12 items, total 145.50, elapsed 250 ms" then
         failwith "Reporting interpolation"
     if snapshot[2, 3] <> 22 || snapshot.GetLength(0) <> 3 || obj.ReferenceEquals(snapshot, doubled) then
         failwith "Array2D snapshot"
-    if not (aboveLimit 80.0 [|72.0; 86.0; 75.0|]) || aboveLimit 90.0 [|72.0; 86.0; 75.0|] then
+    if not (aboveLimit 80.0 [72.0; 86.0; 75.0]) || aboveLimit 90.0 [72.0; 86.0; 75.0] then
         failwith "Captured predicate"
+    if not sharedEmpty || Array.collect checkTitle [|"Valid"; ""|] <> [|"A title is required."|] then
+        failwith "Empty and nonempty diagnostics"
     if message <> "Ada: 97.5" then failwith message
     if remote.Host <> "db.example.com" || remote.Port <> 5432 || remote.TimeoutSeconds <> 30 then
         failwith "anonymous spread"
@@ -196,7 +207,7 @@ let verify () =
         failwith "evaluation"
     if changed.Connection.Port <> 5433 || original.Connection.Port <> 5432 then
         failwith "nested update"
-    if extension.ToUpperInvariant() <> ".CSV" || small <> 42 || large <> 2147483648L then
+    if extension.ToUpperInvariant() <> ".CSV" || batch <> ["ready"] || optional <> Some "ready" then
         failwith "interop"
     if fileNameOf null <> null || fileNameOf "reports/annual.csv" <> "annual.csv" then
         failwith "Conditional nullability"

@@ -33,40 +33,42 @@ let answer: int = wrapped.Result
 // <Priority>
 open System.Runtime.CompilerServices
 
-type Overloads =
-    static member Choose(value: obj) = "object overload"
+type Check =
+    static member That(condition: bool) =
+        if condition then "OK" else "Check failed."
 
     [<OverloadResolutionPriority(1)>]
-    static member Choose<'T>(value: 'T) = "generic overload"
+    static member That(condition: bool, [<CallerLineNumber>] ?line: int) =
+        if condition then "OK" else $"Check failed at line {defaultArg line 0}."
 
-let chosen = Overloads.Choose(box 42)
-// "generic overload"; without the attribute, "object overload"
+let stock = 0
+let diagnostic = Check.That(stock > 0)
+// The diagnostic includes the caller's source line.
 // </Priority>
 
 // <Named>
 open System.Diagnostics.CodeAnalysis
 
-type Client =
+type Query =
     [<RequireNamedArguments>]
-    static member Configure(useTls: bool, keepAlive: bool) =
-        (useTls, keepAlive)
+    static member Execute(numerator: decimal, denominator: decimal) =
+        numerator / denominator
 
-let settings = Client.Configure(useTls = true, keepAlive = false)
-// Client.Configure(true, false) is rejected.
+let ratio = Query.Execute(numerator = 3m, denominator = 4m)
+// 0.75M; Query.Execute(3m, 4m) is rejected.
 // </Named>
 
 // <Reraise>
 open System
 open System.IO
+open System.Threading.Tasks
 
-let readText path =
-    async {
+let readReport (logFailure: exn -> Task) path =
+    task {
         try
-            let! text =
-                Async.StartTaskImmediate(fun ct -> File.ReadAllTextAsync(path, ct))
-            return text
+            return! File.ReadAllTextAsync(path)
         with :? IOException as error ->
-            Console.Error.WriteLine($"Read failed: {error.Message}")
+            do! logFailure error
             return reraise ()
     }
 // </Reraise>
@@ -75,11 +77,12 @@ let readText path =
 let main _ =
     if person.Name <> "Ada" || person.Age <> 36 then failwith "Constructor"
     if number <> 42 || text <> "haha" then failwith "Extension"
-    if answer <> 42 || chosen <> "generic overload" then failwith "Overload"
-    if settings <> (true, false) then failwith "Named arguments"
+    if answer <> 42 || not (diagnostic.StartsWith("Check failed at line ")) ||
+       diagnostic = "Check failed at line 0." then failwith "Overload"
+    if ratio <> 0.75m then failwith "Named arguments"
     let missing = Path.Combine(__SOURCE_DIRECTORY__, "absent-manifest.txt")
     try
-        Async.RunSynchronously(readText missing) |> ignore
+        (readReport (fun _ -> Task.CompletedTask) missing).GetAwaiter().GetResult() |> ignore
         failwith "Expected FileNotFoundException"
     with :? FileNotFoundException -> ()
     Console.WriteLine("Preview examples: passed")

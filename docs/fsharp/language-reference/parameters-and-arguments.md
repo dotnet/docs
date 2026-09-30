@@ -1,7 +1,7 @@
 ---
 title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
-ms.date: 09/25/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 # Parameters and arguments
@@ -123,14 +123,16 @@ Note that those members could perform any arbitrary work, the syntax is effectiv
 
 ### Require named arguments
 
-To prevent accidentally swapped arguments, annotate a method or constructor with `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
+Generated API parameter order can change with SQL or other metadata. When same-typed positional arguments would still compile with a different meaning, an API author can make names part of the contract with `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
 
 > [!NOTE]
 > Enforcement requires `<LangVersion>preview</LangVersion>`. The attribute must exist in the referenced metadata or source; the compiler doesn't synthesize it.
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Named":::
 
-`Client.Configure(true, false)` is rejected. Naming `useTls` and `keepAlive` makes the two Boolean choices explicit. This rule covers method and constructor calls, not property/indexer syntax, delegate invocation, or attributes placed on individual parameters. `nameof` doesn't invoke the method and isn't subject to the call rule.
+`Query.Execute(3m, 4m)` is rejected. Reversing the parameter declaration to `Execute(denominator: decimal, numerator: decimal)` leaves the named call unchanged and still produces `0.75m`. This simulates the ordering change; a real type provider must emit the annotation itself. Parameter names are now a source contract, so renaming one affects callers.
+
+This rule covers method and constructor calls, not property/indexer syntax, delegate invocation, or attributes placed on individual parameters. `nameof` doesn't invoke the method and isn't subject to the call rule. Omitted optional parameters can stay omitted; pass a parameter array by name rather than as expanded positional arguments. Curried members and module functions don't acquire named-argument syntax.
 
 For reference assemblies without this attribute, the sample places the following compatibility definition in `Compatibility.fs`, before `Preview.fs` in compile order. Omit the definition when your referenced framework or library already provides it:
 
@@ -151,21 +153,23 @@ The tiebreaker is a last resort, not a replacement for all existing overload rul
 
 To inspect a selection, enable informational diagnostics FS3575 (the preferred overload) and FS3576 (the bypassed generic overload) through [opt-in warnings](compiler-options.md#opt-in-warnings).
 
-To prefer an API's newer overload, a library author can set a higher `System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute` value:
+To keep an old binary entry point while preferring a richer API for new source compilations, a library author can set a higher `System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute` value. Here the replacement records the caller's source line through the existing `CallerLineNumber` facility:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Priority":::
 
-Without the attribute, the `obj` overload wins for this argument. With priority 1, the generic overload wins despite the usual preference. Unannotated overloads have priority 0. The attribute is available in .NET 9 and later reference assemblies.
+Without the priority attribute, the one-parameter overload wins and returns `Check failed.`. With priority 1, the overload with an optional line argument wins and includes the call-site line. Unannotated overloads have priority 0; negative priorities can deprioritize legacy members. The attribute is available in .NET 9 and later reference assemblies.
 
-Priority prunes applicable candidates within a declaring type before ordinary betterness rules. It doesn't make an inapplicable overload applicable. Don't assume it changes F# property/indexer selection; attributes on overrides are rejected in preview mode.
+Priority prunes applicable candidates within a declaring type before ordinary betterness rules. It doesn't make an inapplicable overload applicable or impose global ordering on extension modules. Equal priorities return to normal rules. Don't assume it changes F# property/indexer selection; attributes on overrides are rejected in preview mode. Carrying the metadata doesn't itself require producer preview, but the consuming compiler needs preview to apply this selection behavior.
 
 ### Select by return type
 
-FSharp.Core's `AllowOverloadOnReturnType` attribute lets the expected result type participate in overload selection. This attribute doesn't require preview:
+To construct a plain value in the container a caller needs, FSharp.Core 11's `AllowOverloadOnReturnType` attribute lets the expected result type participate in overload selection. This attribute doesn't require preview:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
 
-Without a known result type, overload selection can still be ambiguous. Annotate the result to express which conversion you need.
+Both `Inject.Pure` overloads accept the same generic input, but one returns a list and the other an option. Without the attribute these calls are ambiguous; without a known result type they remain ambiguous even with it. Annotate the result to express the intended container.
+
+Return-only overloading isn't automatically a source-compatible migration strategy: adding an overload can make previously inferred calls ambiguous. It is distinct from [return-directed structural construction](generics/extension-member-constraints.md#return-directed-construction), which uses the output type as the supporting type for a member constraint. If that witness is an extension, its preview requirements apply separately.
 
 ## Optional parameters
 

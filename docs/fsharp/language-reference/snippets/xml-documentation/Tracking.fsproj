@@ -7,5 +7,6 @@
   <ItemGroup>
     <Compile Include="Tracking.fs" />
     <None Include="shared.xml" />
+    <CustomAdditionalCompileInputs Include="shared.xml" />
   </ItemGroup>
 </Project>

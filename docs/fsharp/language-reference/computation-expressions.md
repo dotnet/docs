@@ -517,7 +517,9 @@ To log an error and preserve its original exception identity and stack, use `rer
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
 
-The compiler uses `ExceptionDispatchInfo` for builder handlers rather than emitting an invalid IL `rethrow` in the handler lambda. The nearest enclosing exception handler determines which exception is rethrown. This also supports a rethrow after a `let!` or `do!` in the handler. Custom builders must infer the handler input as `exn`.
+The logger receives the caught exception and can complete asynchronously. If it succeeds, `reraise` propagates that same exception object with its original throw-site information; if logging fails, that failure can replace it. The example catches `IOException`, not unrelated cancellation.
+
+The compiler uses `ExceptionDispatchInfo` for builder handlers rather than emitting an invalid IL `rethrow` in the handler lambda. The nearest enclosing exception handler determines which exception is rethrown. This also supports a rethrow after a `let!` or `do!` in the handler. Custom builders must infer the handler input as `exn`. Dispatch/rethrow frames can be added; preservation doesn't imply an identical stack string.
 
 An ordinary nested `try/with` rebinds the current exception. `raise error` and `reraise ()` aren't interchangeable for stack preservation.
 

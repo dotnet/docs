@@ -10,7 +10,7 @@ ai-usage: ai-generated
 
 A storage row, a domain entity, and a frontend viewmodel can describe the same customer without being the same type. Giving each model the right fields and guarantees shouldn't mean repeating every shared declaration and assignment. F# 11 makes those distinctions easier to maintain, so more of your code expresses what changes at an application boundary—not how to copy everything else.
 
-Record spreads put that type-driven approach within reach with less boilerplate. Another major addition, extension-backed generic programming, lets existing types participate in shared algorithms without new wrappers. The release also improves the experience of building, debugging, and deploying the applications around those models.
+Record spreads reduce the repetition in that type-driven approach. Another major addition, extension-backed generic programming, lets existing types participate in shared algorithms without new wrappers. The release also improves the experience of building, debugging, and deploying the applications around those models.
 
 ## Record spreads: distinct models without repetitive mappings
 
@@ -153,7 +153,7 @@ Thanks to [@kerams](https://github.com/dotnet/fsharp/pull/19993) for direct dele
 
 ### XML include: one maintenance point for shared text
 
-Related API members often need the same important remarks but different summaries. Copying those remarks leaves several places to update when the contract changes. XML `<include>` lets you maintain the common text once and put it into each member's generated documentation.
+Related API members often need the same important remarks but different summaries. Copying those remarks leaves several places to update when the contract changes. XML [`<include>`](../../csharp/language-reference/xmldoc/recommended-tags.md#include) lets you maintain the common text once and put it into each member's generated documentation.
 
 Here `shared.xml` holds the policy for an unknown shipment:
 
@@ -171,7 +171,7 @@ When a base API already documents an operation, repeating that text on every ove
 
 :::code language="fsharp" source="../language-reference/snippets/xml-documentation/Tracking.fs" id="Inherit":::
 
-Help for `TrackingService.Status` exposes “Find the latest status of a shipment.” The compiler still emits `<inheritdoc/>`; the new resolver belongs to F# tooling and FSharp.Compiler.Service, not to XML emission. Downstream documentation generators need their own inheritance support. See [Inherited documentation in tooling](../language-reference/xml-documentation.md#inherited-documentation-in-tooling).
+Help for `TrackingService.Status` exposes “Find the latest status of a shipment.” The compiler still emits [`<inheritdoc/>`](../../csharp/language-reference/xmldoc/recommended-tags.md#inheritdoc); the new resolver belongs to F# tooling and FSharp.Compiler.Service, not to XML emission. Downstream documentation generators need their own inheritance support. See [Inherited documentation in tooling](../language-reference/xml-documentation.md#inherited-documentation-in-tooling).
 
 ### Debug inline functions in non-optimized builds
 
@@ -369,7 +369,7 @@ The unchanged call chooses the richer overload. Priority applies among applicabl
 
 ### Use .NET's conditional nullability promises
 
-If your file path is non-null, a Path API's nullable result shouldn't force a check that its own contract rules out. F# 11 consumes the existing .NET `NotNullIfNotNull` promise: a non-null named input implies a non-null result.
+If your file path is non-null, a Path API's nullable result shouldn't force a check that its own contract rules out. F# 11 consumes the existing .NET [`NotNullIfNotNull`](../../csharp/language-reference/attributes/nullable-analysis.md#conditional-postconditions-notnullwhen-maybenullwhen-and-notnullifnotnull) promise: a non-null named input implies a non-null result.
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Nullability":::
 

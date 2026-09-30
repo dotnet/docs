@@ -121,7 +121,7 @@ Language settings apply per project, not transitively through references. With a
 | Relies on preview-specific inference to retain an unresolved generic constraint. | Uses an extension case of that inferred API. | Both can need preview; inspect the exported signature. |
 | Exports ordinary extensions or intrinsic-member SRTP APIs. | Uses normal extension calls or intrinsic-member solutions. | Neither inherently requires this preview feature. |
 
-The path and mapping examples use the first arrangement. The complete [library project](../snippets/extension-member-constraints/library/Library.fsproj) selects `11.0`; the [consumer project](../snippets/extension-member-constraints/consumer/Consumer.fsproj) selects `preview` and has a project reference to the library. From the consumer directory, run `dotnet run` with an F# 11 SDK containing the feature.
+The path and mapping examples use ordinary extension declarations and export an unresolved constraint for the consumer to resolve. The complete [library project](../snippets/extension-member-constraints/library/Library.fsproj) selects `11.0`; the [consumer project](../snippets/extension-member-constraints/consumer/Consumer.fsproj) selects `preview` and has a project reference to the library. From the consumer directory, run `dotnet run` with an F# 11 SDK containing the feature.
 
 ### Extension scope across assemblies
 

@@ -1,8 +1,8 @@
 module RecordComposition
 
+// <Models>
 open System
 
-// <Models>
 type CustomerId = CustomerId of Guid
 
 type CustomerDetails = { Name: string; PreferredLanguage: string }

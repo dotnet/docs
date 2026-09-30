@@ -2,7 +2,7 @@
 title: Update tracked .NET installations with dotnetup
 description: Update rolling SDK and runtime requirements and remove unused versions.
 ms.topic: how-to
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -83,3 +83,4 @@ dotnetup list --format json
 - [dotnetup update](../reference/dotnetup-update.md)
 - [dotnetup sdk update](../reference/dotnetup-sdk-update.md)
 - [dotnetup runtime update](../reference/dotnetup-runtime-update.md)
+- [Update or remove dotnetup](manage-dotnetup.md)

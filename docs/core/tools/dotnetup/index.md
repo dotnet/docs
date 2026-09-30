@@ -116,6 +116,7 @@ For more information, see [How dotnetup works](concepts/how-dotnetup-works.md).
 | Use a repository's `global.json` | [Manage repository SDK requirements](usecases/install-with-global-json.md) |
 | Install SDKs and runtimes | [Install .NET components](usecases/install-components.md) |
 | Update or remove installations | [Update installations](usecases/update-installations.md) |
+| Update or remove dotnetup itself | [Update or remove dotnetup](usecases/manage-dotnetup.md) |
 | Configure `PATH` and `DOTNET_ROOT` | [Manage the dotnetup environment](usecases/manage-environment.md) |
 | Try preview or daily builds | [Use preview and daily builds](usecases/try-daily-builds.md) |
 | Look up command syntax | [dotnetup command reference](reference/dotnetup.md) |

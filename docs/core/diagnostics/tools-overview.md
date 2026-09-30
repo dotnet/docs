@@ -25,7 +25,7 @@ ai-usage: ai-assisted
 
 ### dotnet-counters
 
-[dotnet-counters](dotnet-counters.md) is a performance monitoring tool for first-level health monitoring and performance investigation. It observes performance counter values published via the <xref:System.Diagnostics.Tracing.EventCounter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET application.
+[dotnet-counters](dotnet-counters.md) is a performance monitoring tool for first-level health monitoring and performance investigation. It observes measurements from <xref:System.Diagnostics.Metrics.Meter> instruments and performance counter values published via the <xref:System.Diagnostics.Tracing.EventCounter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET application. For a tutorial, see [Collect metrics](metrics-collection.md#view-metrics-with-dotnet-counters).
 
 ### dotnet-dump
 

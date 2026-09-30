@@ -53,7 +53,7 @@ You can use EventPipe to trace your .NET application in many ways:
 
 After you've produced a `nettrace` file that contains your EventPipe events, you can view the file in Visual Studio or [PerfView](https://github.com/Microsoft/perfview#perfview-overview) on Windows. If you collected the trace on another platform, copy it to the Windows analysis machine.
 
-For traces from `dotnet-trace collect`, you can convert the `nettrace` file to a `speedscope` or `Chromium` trace format by using [dotnet-trace convert](./dotnet-trace.md#dotnet-trace-convert) command and view it on non-Windows platforms with [speedscope](https://www.speedscope.app/) or Chrome DevTools.
+For traces from `dotnet-trace collect`, you can convert the `nettrace` file to a `speedscope` or `Chromium` trace format by using [dotnet-trace convert](./dotnet-trace.md#dotnet-trace-convert) command and view it in a supported browser on Windows, Linux, or macOS with [speedscope](https://www.speedscope.app/) or Chrome DevTools.
 
 You can also analyze EventPipe traces programmatically with [TraceEvent](https://github.com/Microsoft/perfview/blob/main/documentation/TraceEvent/TraceEventLibrary.md).
 

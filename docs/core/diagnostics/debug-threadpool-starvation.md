@@ -315,7 +315,13 @@ dotnet-trace collect -n DiagnosticScenarios --clrevents waithandle --clreventlev
 
 That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. To analyze it in Visual Studio or PerfView, copy it to a Windows machine if you collected it elsewhere.
 
-On .NET 10+ Linux, prefer the [`collect-linux` blocking configuration](dotnet-trace-collect-linux-performance.md#blocking-contention-and-threadpool-behavior). It records the same focused runtime signals together with native stacks and Linux scheduling context, which helps distinguish blocked workers from runnable workers that aren't receiving CPU.
+On .NET 10+ Linux, collect the same wait events with [`dotnet-trace collect-linux`](dotnet-trace.md#dotnet-trace-collect-linux) instead:
+
+```dotnetcli
+sudo dotnet-trace collect-linux -n DiagnosticScenarios --clrevents waithandle --clreventlevel verbose --duration 00:00:30
+```
+
+Analyze the `collect-linux` trace in Visual Studio or PerfView. A profile that configures `Microsoft-Windows-DotNETRuntime` takes precedence over `--clrevents`, so keep the focused event selection in this command for the wait analysis.
 
 The EventPipe trace from `dotnet-trace collect` can be analyzed using three different tools:
 

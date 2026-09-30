@@ -73,8 +73,6 @@ In the sample source, `CpuScenarios.HotspotAsync` repeatedly computes `Fibonacci
 
 You can also analyze `cpu-hotspot.nettrace` with [PerfView](https://github.com/microsoft/perfview). For native symbol information, see [Get symbols for native runtime frames in PerfView](dotnet-trace.md#get-symbols-for-native-runtime-frames-in-perfview).
 
-In either tool, a high percentage means a large share of the *selected samples*, not that the process consumed every CPU on the machine. Check the process, interval, and absolute CPU usage before drawing that conclusion.
-
 ## Example: Diagnose large object heap pressure
 
 This workload causes frequent full collections despite a modest retained object count. Collect allocation and GC events to distinguish large-object pressure from frequent small allocations or explicit calls to `GC.Collect`.
@@ -115,26 +113,7 @@ For event-level detail, examine the `Microsoft-Windows-DotNETRuntime` events `GC
 
 Allocation pressure doesn't by itself prove a memory leak. If the remaining question is why objects stay alive, follow [Debug a memory leak](debug-memory-leak.md) to inspect retention paths in a process dump.
 
-## Choose a focused follow-up trace
-
-Use the first trace to choose a direction, and then collect only the detailed events required to answer the next question. CPU samples don't explain time spent sleeping or waiting because a thread that isn't running can't be sampled.
-
-### Blocking, contention, and ThreadPool behavior
-
-```dotnetcli
-sudo dotnet-trace collect-linux \
-  --profile thread-time,cpu-sampling \
-  --clrevents threading+contention+waithandle \
-  --clreventlevel Verbose
-```
-
-For the complete investigation, follow [Debug ThreadPool starvation](debug-threadpool-starvation.md). For example, if `dotnet-common` or `gc-verbose` configures the runtime provider, the tool prints a warning and ignores a supplied `--clrevents` list. Use kernel-only profiles such as `cpu-sampling` or `thread-time` with a focused `--clrevents`/`--clreventlevel` configuration.
-
-## Know when to use another artifact
-
-Use a process dump for an existing [deadlock](debug-deadlock.md), application or [distributed tracing](distributed-tracing.md) for logical request relationships, and a native memory profiler for native allocation ownership. Collecting more of the same data doesn't recover information that the artifact doesn't contain.
-
-## Manage collection overhead
+## Understanding tracing overhead
 
 Trace overhead depends on event rate, enabled providers, stack capture, CPU count, and workload behavior. High-volume traces can lose events or perturb the application being measured.
 

@@ -72,7 +72,7 @@ dotnet-counters ps
 dotnet-counters monitor --process-id <PID> --showDeltas
 ```
 
-Use CPU time, managed heap growth, and ThreadPool queue and worker counts to choose a tutorial above. Counters help confirm the symptom, but they don't identify the application code responsible.
+Use CPU time, managed heap growth, and ThreadPool queue and worker counts to choose a tutorial above. Counters help confirm the symptom, but they don't identify the root cause.
 
 ### Crash and dump tutorials
 

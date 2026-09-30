@@ -2,7 +2,7 @@
 title: dotnetup overview
 description: Learn how dotnetup installs and manages user-level .NET SDKs and runtimes.
 ms.topic: overview
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -121,7 +121,10 @@ For more information, see [How dotnetup works](concepts/how-dotnetup-works.md).
 
 ## Availability
 
-This documentation describes the current in-repository implementation of
-`dotnetup`. Distribution instructions can differ for each internal release.
-After the `dotnetup` executable is available, run `dotnetup --version` to
-confirm the version and `dotnetup --help` to see its command surface.
+`dotnetup` is available as a public preview. Commands, options, and behavior
+might change between preview releases, and the support lifecycle for the
+generally available release isn't final.
+
+To install `dotnetup`, see [Get started with dotnetup](getting-started.md).
+After you install it, run `dotnetup --version` to confirm the version and
+`dotnetup --help` to see the available commands.

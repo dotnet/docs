@@ -110,6 +110,7 @@ For more information, see [How dotnetup works](concepts/how-dotnetup-works.md).
 
 | Goal | Article |
 | --- | --- |
+| Decide whether dotnetup fits your scenario | [When to use dotnetup](choose-dotnetup.md) |
 | Install dotnetup and run the first setup | [Get started with dotnetup](getting-started.md) |
 | Understand channels, installation roots, and tracking | [How dotnetup works](concepts/how-dotnetup-works.md) |
 | Use a repository's `global.json` | [Manage repository SDK requirements](usecases/install-with-global-json.md) |

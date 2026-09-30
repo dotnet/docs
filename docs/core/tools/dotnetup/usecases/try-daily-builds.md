@@ -2,7 +2,7 @@
 title: Try .NET daily builds with dotnetup
 description: Install, run, update, and remove daily .NET builds.
 ms.topic: how-to
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -79,3 +79,4 @@ An exact prerelease version is pinned and is not changed by update commands.
 - [Daily channels](../channels/daily.md)
 - [Preview channels](../channels/preview.md)
 - [Manage custom installation roots](manage-custom-installation-roots.md)
+- [How dotnetup verifies downloads](../concepts/download-verification.md)

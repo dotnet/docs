@@ -2,7 +2,7 @@
 title: Use dotnetup daily channels
 description: Install and update .NET daily builds with scoped dotnetup channels.
 ms.topic: how-to
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -16,6 +16,8 @@ release.
 
 > [!CAUTION]
 > Daily builds can change frequently and are not supported releases. They are not code-signed.
+> For more information, see
+> [How dotnetup verifies downloads](../concepts/download-verification.md).
 
 ## Daily channel forms
 

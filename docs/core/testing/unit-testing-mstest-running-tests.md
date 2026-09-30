@@ -157,6 +157,6 @@ Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=Category
 - [`dotnet test` with MTP](../tools/dotnet-test-mtp.md)
 - [`dotnet test` with VSTest](../tools/dotnet-test-vstest.md)
 - [MTP CLI options reference](microsoft-testing-platform-cli-options.md)
-- [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md)
+- [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md)
 - [Filter tests](selective-unit-tests.md)
 - [Order unit tests](order-unit-tests.md)

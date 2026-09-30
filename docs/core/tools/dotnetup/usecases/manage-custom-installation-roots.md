@@ -2,7 +2,7 @@
 title: Manage custom dotnetup installation roots
 description: Install and manage .NET in custom roots and isolated manifests.
 ms.topic: how-to
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -42,9 +42,7 @@ dotnetup sdk uninstall 10.0 --install-path D:\tools\dotnet
 Use `--manifest-path` when the tracking state must also be separate:
 
 ```dotnetcli
-dotnetup sdk install 10.0 \
-  --install-path D:\tools\dotnet \
-  --manifest-path D:\tools\dotnetup_manifest.json
+dotnetup sdk install 10.0 --install-path D:\tools\dotnet --manifest-path D:\tools\dotnetup_manifest.json
 ```
 
 Repeat `--manifest-path` for later list, update, and uninstall operations.
@@ -56,8 +54,7 @@ file or change the default installation root.
 Run its executable directly, or activate it for the current shell:
 
 ```powershell
-dotnetup env script --shell pwsh --dotnet \
-  --dotnet-install-path D:\tools\dotnet |
+dotnetup env script --shell pwsh --dotnet --dotnet-install-path D:\tools\dotnet |
   Invoke-Expression
 ```
 

@@ -2,7 +2,7 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 08/11/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 # .NET SDK and .NET CLI telemetry
@@ -51,7 +51,7 @@ To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` en
 
 ## Data points
 
-The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
+Except for [Microsoft-internal user classification](#microsoft-internal-user-classification), telemetry doesn't collect personal data, such as usernames or email addresses. For a positive classification outside CI, telemetry can report a normalized local Microsoft account alias and corporate domain. It doesn't report a full email address. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
 Protecting your privacy is important to Microsoft. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository.
 
@@ -59,7 +59,15 @@ For more information about your privacy and personal data collected, see the [Mi
 
 The following tabs show the telemetry data captured by SDK version:
 
+# [.NET 12](#tab/dotnet12)
+
+- **SDK version 12.0.100 and later:**
+  - The CLI classifies whether the current user is internal to Microsoft. For more information, see [Microsoft-internal user classification](#microsoft-internal-user-classification).
+
 # [.NET 11](#tab/dotnet11)
+
+- **SDK version 11.0.200 and later:**
+  - The CLI classifies whether the current user is internal to Microsoft. For more information, see [Microsoft-internal user classification](#microsoft-internal-user-classification).
 
 - **SDK version 11.0.100 and later:**
   - Roslyn compiler output cache telemetry:
@@ -196,6 +204,21 @@ The following tabs show the telemetry data captured by SDK version:
   - Telemetry profile: an optional value only used with explicit user opt-in and used internally at Microsoft.
 
 ---
+
+### Microsoft-internal user classification
+
+Starting with .NET 11 SDK 11.0.200 and .NET 12 SDK 12.0.100, the CLI detects evidence that the current user is internal to Microsoft.
+
+| Tag | Data |
+| --- | --- |
+| `dotnet.cli.is_microsoft_internal` | Whether detection found Microsoft-internal evidence. |
+| `dotnet.cli.microsoft_internal_source` | The source that found the evidence. Reported only for a positive result. |
+| `dotnet.cli.microsoft_internal_alias` | A normalized local Microsoft account alias. Reported only for a positive result outside CI. |
+| `dotnet.cli.microsoft_internal_domain` | A normalized corporate domain. Reported only for a positive result outside CI. |
+
+Outside CI, the CLI can use existing GitHub credentials to query whether an account belongs to the Microsoft organization. The CLI sends the credentials only to GitHub's API for this check. The CLI never caches the credentials or adds them to telemetry. GitHub logins aren't used as telemetry aliases.
+
+The CLI doesn't run GitHub identity probes in CI. The CLI also suppresses alias and domain values in CI.
 
 ### Collected options
 

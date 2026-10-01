@@ -39,7 +39,7 @@ In those constructs, you can match an input expression against any of the follow
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
-For an example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/advanced/pattern-matching.md).
+For an example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Build algorithms using pattern matching](../../fundamentals/tutorials/build-algorithms-using-pattern-matching.md).
 
 ## Declaration and type patterns
 
@@ -401,4 +401,4 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 
 - [C# operators and expressions](index.md)
 - [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/advanced/pattern-matching.md)
+- [Tutorial: Build algorithms using pattern matching](../../fundamentals/tutorials/build-algorithms-using-pattern-matching.md)

@@ -9,11 +9,9 @@ ai-usage: ai-assisted
 # Deconstructing tuples and other types
 
 > [!TIP]
-> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you. Deconstruction also enables positional patterns. For guidance on when to choose property patterns or positional patterns, see [Property and positional patterns](property-positional-patterns.md).
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you.
 
-A *deconstruction* assigns components from one value to multiple variables in a single operation. Tuples expose their components by position. Another type can expose components by defining a `Deconstruct` method. Positional records include one automatically.
-
-Deconstruction is related to pattern matching because a `Deconstruct` method also enables positional patterns for that type. Even so, property patterns are usually clearer for object shapes because member names explain the test. Positional patterns are strongest when order already carries the meaning, such as with tuples or other small ordered values.
+A *deconstruction* assigns the individual parts of a value — its *components* — to multiple variables in a single operation. A tuple's components are its elements, exposed by position. Another type can expose components by defining a `Deconstruct` method. [Positional records](../types/records.md), which declare their properties as constructor-like parameters, get a `Deconstruct` method automatically.
 
 ## Deconstruct tuples
 
@@ -45,7 +43,7 @@ Here, the tuple returns the city name, two years, and two population values. The
 
 ## Deconstruct user-defined types
 
-A class, struct, or interface can support deconstruction by declaring a `Deconstruct` method. Each produced value is an `out` parameter. The method itself returns `void`:
+A class, struct, or interface can support deconstruction by declaring a `Deconstruct` method. Each component becomes an [`out` parameter](../../language-reference/keywords/method-parameters.md#out-parameter-modifier), which lets the method assign a value back to the caller's variable without returning it. Because every component is returned through an `out` parameter, the method itself returns `void`:
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="PersonDeconstructMethod":::
 
@@ -53,19 +51,19 @@ You can then deconstruct an instance directly:
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="PersonDeconstructUse":::
 
-A type can provide multiple `Deconstruct` overloads with different arities so callers can choose how many components to retrieve:
+A type can provide multiple `Deconstruct` overloads with different *arity* — the number of `out` parameters the method declares — so callers can choose how many components to retrieve:
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="PersonDeconstructOverloads":::
 
-Two overloads with the same number of `out` parameters are ambiguous. Distinguish overloads by arity, not only by parameter types.
+Two overloads with the same number of `out` parameters are ambiguous. The compiler reports an error for the ambiguous call, so distinguish overloads by arity, not only by parameter types.
 
-Discards work with user-defined deconstruction too:
+Discards work with user-defined deconstruction too. For more on discards in general, see [Discards and the discard pattern](discards.md):
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="PersonDeconstructDiscards":::
 
 ## Deconstruct records
 
-A positional `record` or `record struct` gets a compiler-generated `Deconstruct` method whose `out` parameters match the positional parameters:
+A [positional `record` or `record struct`](../types/records.md) declares its properties as parameters on the type declaration itself, similar to a constructor. The compiler generates a `Deconstruct` method for you, with `out` parameters matching those positional parameters:
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="RecordDeconstruction":::
 
@@ -73,15 +71,21 @@ Only the positional parameters participate in that generated deconstruction. Add
 
 ## Deconstruct types you don't own
 
-If you cannot modify a type, you can still support deconstruction by writing an extension method. After you add the method, any `Uri` value can use deconstruction syntax:
+If you cannot modify a type, you can still support deconstruction by writing an *extension method* — a static method that adds a `Deconstruct` method to a type you don't own, as if it were a member of that type. After you add the method, any `Uri` value can use deconstruction syntax:
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="UriDeconstructExample":::
 
-## Use built-in deconstruction on system types
+As with instance methods, two extension `Deconstruct` methods with the same arity are ambiguous, and the compiler reports an error for the ambiguous call.
 
-Some system types already define `Deconstruct`. For example, <xref:System.Collections.Generic.KeyValuePair`2?displayProperty=nameWithType> supports deconstruction, which makes dictionary iteration concise:
+## Built-in deconstruction on system types
+
+Some system types already define a `Deconstruct` method, using the same mechanism you'd use for your own types. For example, <xref:System.Collections.Generic.KeyValuePair`2?displayProperty=nameWithType> supports deconstruction, which makes dictionary iteration concise:
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="KeyValuePair":::
+
+## Deconstruction and pattern matching
+
+A `Deconstruct` method also enables [positional patterns](../../language-reference/operators/patterns.md#positional-pattern) for that type. A positional pattern tests and deconstructs a value in one step, using the same parenthesized syntax as a deconstruction: `person is ("Alice", 30)` matches a `Person` whose deconstructed components equal those values. This is different from a [property pattern](property-positional-patterns.md), which tests named properties directly, such as `person is { Name: "Alice", Age: 30 }`. Property patterns are usually clearer for object shapes because member names explain the test. Positional patterns are strongest when order already carries the meaning, such as with tuples or other small ordered values.
 
 ## See also
 
@@ -89,4 +93,5 @@ Some system types already define `Deconstruct`. For example, <xref:System.Collec
 - [Property and positional patterns](property-positional-patterns.md)
 - [Discards and the discard pattern](discards.md)
 - [Tuple types](../types/tuples.md)
+- [Record types](../types/records.md)
 - [`out` parameter modifier](../../language-reference/keywords/method-parameters.md#out-parameter-modifier)

@@ -51,5 +51,5 @@ For more information, see [The is operator](~/_csharpstandard/standard/expressio
 
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/advanced/pattern-matching.md)
+- [Tutorial: Build algorithms using pattern matching](../../fundamentals/tutorials/build-algorithms-using-pattern-matching.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)

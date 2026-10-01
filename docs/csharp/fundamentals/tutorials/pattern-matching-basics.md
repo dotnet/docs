@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use pattern matching to build object behavior"
+title: "Tutorial: Pattern matching basics"
 description: Build a canal-lock simulation that uses pattern matching to model safe object behavior.
 ms.date: 09/29/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 ---
 
-# Tutorial: Use pattern matching to build object behavior
+# Tutorial: Pattern matching basics
 
 > [!TIP]
 > **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. They introduce classes, methods, and control flow.
@@ -82,13 +82,13 @@ The struck-through rows represent invalid internal states. The switch expression
 
 :::code language="csharp" source="./snippets/pattern-matching-objects/InterimSteps.cs" ID="ThirdImplementation":::
 
-Try this version. Your tests pass. The compiler also warns that the switch expression is not exhaustive because `WaterLevel` is an enum, and the compiler considers every value of its underlying numeric type. Add a final discard arm to handle impossible internal states:
+Try this version. Your tests pass. The compiler also warns that the switch expression isn't *exhaustive* — it doesn't cover every possible value — because `WaterLevel` is an enum, and C# allows any value of the enum's underlying numeric type to be cast to that enum, even one without a named member. Add a final arm with the discard pattern (`_`) to handle those impossible internal states:
 
 ```csharp
 _ => throw new InvalidOperationException("Invalid internal state"),
 ```
 
-That discard arm must be last because it matches every remaining input.
+That arm must be last because the discard pattern matches every remaining input.
 
 You can then simplify the earlier arms. Closing the gate is always allowed, so one arm can replace the four separate closed cases:
 

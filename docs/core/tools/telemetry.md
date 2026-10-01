@@ -59,11 +59,6 @@ For more information about your privacy and personal data collected, see the [Mi
 
 The following tabs show the telemetry data captured by SDK version:
 
-# [.NET 12](#tab/dotnet12)
-
-- **SDK version 12.0.100 and later:**
-  - The CLI classifies whether the current user is internal to Microsoft. For more information, see [Microsoft-internal user classification](#microsoft-internal-user-classification).
-
 # [.NET 11](#tab/dotnet11)
 
 - **SDK version 11.0.200 and later:**
@@ -207,7 +202,7 @@ The following tabs show the telemetry data captured by SDK version:
 
 ### Microsoft-internal user classification
 
-Starting with .NET 11 SDK 11.0.200 and .NET 12 SDK 12.0.100, the CLI detects evidence that the current user is internal to Microsoft.
+Starting with .NET 11 SDK 11.0.200, the CLI detects evidence that the current user is internal to Microsoft.
 
 | Tag | Data |
 | --- | --- |

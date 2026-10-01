@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform overview - .NET test runner
 description: Learn about Microsoft.Testing.Platform (MTP), a lightweight and portable .NET test runner and VSTest alternative for running unit tests in CI pipelines, CLI, and IDEs.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/26/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -26,7 +26,7 @@ Use the following path, based on what you need next:
 - Understand platform behavior in CLI: [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)
 - Find platform and extension CLI switches in one place: [MTP CLI options reference](./microsoft-testing-platform-cli-options.md)
 - Configure framework runners: [Run tests with MSTest](./unit-testing-mstest-running-tests.md) or [MTP support in NUnit (NUnit runner)](./unit-testing-nunit-runner-intro.md)
-- Host MTP in a WinUI 3 app: [Test WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)
+- Host MTP in a UWP or WinUI 3 app: [Test UWP and WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)
 - Migrate an existing VSTest setup: [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md)
 - Add diagnostics, coverage, and reporting: [MTP features](./microsoft-testing-platform-features.md)
 - Build your own extension: [MTP architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md)
@@ -67,6 +67,8 @@ The main driving factors for the evolution of the new testing platform are detai
 
 MTP supports .NET (.NET 8 and later), .NET Framework (versions 4.6.2 and later), and targets NETStandard 2.0 for maximum compatibility with other runtimes.
 
+Starting with MTP 2.5 and MSTest 4.5, MTP also supports classic UWP, modern .NET UWP, and WinUI 3 AppContainer test hosts through the MSTest.Sdk app-model sidecar. Packaged full-trust and unpackaged WinUI 3 test hosts are also supported. For details, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
+
 ## Run and debug tests
 
 For detailed guidance on running and debugging MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines, see [Run and debug tests](./microsoft-testing-platform-run-and-debug.md).
@@ -86,6 +88,8 @@ The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/pac
 - Automatic detection and registration of installed extension packages.
 
 When this package is active (the default for MSTest, NUnit, and xUnit runners), installing an extension NuGet package is all that's needed — extensions are auto-registered with no code changes. If you disable the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`, you must register extensions manually in your `Main` method. Each extension page documents its manual registration call.
+
+Starting with MTP 2.4, Microsoft-provided extension packages constrain their `Microsoft.Testing.Platform` dependency to the current major version. For example, a 2.4 extension requires `Microsoft.Testing.Platform` in the range `[2.4.0, 3.0.0)`. This range prevents NuGet from silently combining an extension with an unsupported future platform major. Keep the platform and extension packages on the same release line.
 
 > [!NOTE]
 > This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.

@@ -1,7 +1,8 @@
 ---
 title: Compilation config settings
 description: Learn about runtime settings that configure how the JIT compiler works for .NET apps.
-ms.date: 10/29/2021
+ms.date: 09/25/2026
+ai-usage: ai-assisted
 ---
 # Runtime configuration options for compilation
 
@@ -166,6 +167,29 @@ Project file:
 |                          | Setting name        | Values                           |
 |--------------------------|---------------------|----------------------------------|
 | **Environment variable** | `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+
+## Dynamic code
+
+Set this option to `false` to test fallback code that you need when dynamic code isn't supported, such as in Native AOT apps, without publishing with Native AOT. The option causes <xref:System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported?displayProperty=nameWithType> to return `false`.
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported` | `true` - supported<br/>`false` - not supported |
+| **MSBuild property** | `DynamicCodeSupport` | `true` - supported<br/>`false` - not supported |
+
+### Example
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <DynamicCodeSupport>false</DynamicCodeSupport>
+  </PropertyGroup>
+
+</Project>
+```
 
 ## Profile-guided optimization
 

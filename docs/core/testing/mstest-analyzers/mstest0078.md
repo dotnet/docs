@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0078: '[DependsOn]' arguments should be valid"
 description: "Learn about code analysis rule MSTEST0078: '[DependsOn]' arguments should be valid"
-ms.date: 08/06/2026
+ms.date: 10/01/2026
 f1_keywords:
 - MSTEST0078
 - DependsOnShouldBeValidAnalyzer
@@ -24,11 +24,8 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Warning                                            |
-| **Introduced in version**           | 4.4.0 (preview)                                    |
+| **Introduced in version**           | 4.4.0                                              |
 | **Is there a code fix**             | No                                                 |
-
-> [!IMPORTANT]
-> Test dependencies are planned for MSTest 4.4 and are available only in preview builds until MSTest 4.4.0 is released.
 
 ## Cause
 

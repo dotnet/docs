@@ -3,7 +3,7 @@ title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest, including initialization and cleanup at assembly, class, and test levels.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 08/06/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -241,6 +241,33 @@ public class GlobalTestLifecycleExample
 ## Test-level lifecycle
 
 Test-level lifecycle runs for every test method. For parameterized tests, the lifecycle runs for each data row.
+
+### Create test classes from host services
+
+Starting with MSTest 4.5 preview, the experimental [`MSTest.Extensions.Hosting`](https://github.com/microsoft/testfx/tree/main/src/Adapter/MSTest.Extensions.Hosting) package lets an application-owned `Microsoft.Extensions.Hosting` container create MSTest test classes.
+
+Register the integration in the same host that runs MTP:
+
+```csharp
+HostApplicationBuilder builder = Host.CreateApplicationBuilder();
+builder.Services.AddSingleton<MyApplicationService>();
+builder.Services.AddMSTestTestClassInjection();
+```
+
+A test class can request registered services and an optional exact `TestContext` parameter through a public constructor:
+
+```csharp
+[TestClass]
+public sealed class MyTests(MyApplicationService service, TestContext testContext)
+{
+    [TestMethod]
+    public void ServiceIsAvailable() => Assert.IsNotNull(service);
+}
+```
+
+The integration creates one dependency-injection scope for each test invocation, including each data row and retry attempt. `TestInitialize`, the test method, and `TestCleanup` share the same test-class instance and scope. After cleanup, MSTest disposes the test-class instance and then the scope. The application still owns the host and root service provider.
+
+This first reflection-based integration doesn't support Native AOT, browser WebAssembly, AOT compilation, or MSTest source generation. The `AddMSTestTestClassInjection` API uses the `MSTESTEXP` diagnostic ID and might change in a future release. For host setup, see [Microsoft.Extensions integration](microsoft-testing-platform-extensions-integration.md#host-integration).
 
 ### Setup phase
 

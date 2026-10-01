@@ -3,7 +3,7 @@ title: Build extensions for Microsoft.Testing.Platform (MTP)
 description: Learn how to create in-process and out-of-process extensions for Microsoft.Testing.Platform (MTP).
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 08/26/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -450,7 +450,7 @@ await messageBus.PublishAsync(
 > `TestNodeFileArtifact` is obsolete and was removed in MTP 2.0.0. To attach test-level files, use `FileArtifactProperty` on the `TestNode`. For more information, see [Migrate from Microsoft.Testing.Platform (MTP) v1 to v2](microsoft-testing-platform-migration-from-v1-to-v2.md#removed-obsolete-types).
 
 > [!NOTE]
-> MTP 2.4.0 (unreleased as of August 2026) adds an experimental `kind` constructor overload and `Kind` property to `FileArtifact` and `SessionFileArtifact` (requires the `TPEXP` diagnostic to be suppressed). `Kind` is a producer-asserted, reverse-DNS identifier of the artifact *format* (for example, `microsoft.testing.trx`, `microsoft.testing.junit`, `microsoft.testing.ctrf`, or `microsoft.testing.html`) that post-processing uses to group artifacts of the same format. Leave it `null` or omit it when the producer doesn't declare a known kind.
+> MTP 2.4.0 adds an experimental `kind` constructor overload and `Kind` property to `FileArtifact` and `SessionFileArtifact` (requires the `TPEXP` diagnostic to be suppressed). `Kind` is a producer-asserted, reverse-DNS identifier of the artifact *format* (for example, `microsoft.testing.trx`, `microsoft.testing.junit`, `microsoft.testing.ctrf`, or `microsoft.testing.html`) that post-processing uses to group artifacts of the same format. Leave it `null` or omit it when the producer doesn't declare a known kind.
 >
 > ```csharp
 > #pragma warning disable TPEXP // Experimental API.
@@ -468,6 +468,33 @@ await messageBus.PublishAsync(
 Starting with MTP 2.4.0, the experimental `IArtifactPostProcessor` extension point processes artifacts after a `dotnet test` invocation runs multiple test modules or after a retry runs multiple attempts. The `ArtifactPostProcessingMode` value identifies whether the processor handles `TestModules` or `RetryAttempts`.
 
 The built-in TRX, JUnit, CTRF, and HTML report extensions use this extension point to consolidate related report artifacts in a `merged` directory. HTML consolidation creates a merged summary and preserves the original per-process reports. To learn how report consolidation affects test output, see [Report consolidation](microsoft-testing-platform-test-reports.md#report-consolidation).
+
+### The `ITestExecutionFilterProvider` extensions
+
+Starting with MTP 2.4.0, the experimental `ITestExecutionFilterProvider` extension point lets an extension add a constraint to a discovery or run request before the test framework receives it. Register a provider factory with `AddTestExecutionFilterProvider`.
+
+MTP combines the request filter and every provider filter with a logical AND. It intersects `TestNodeUidListFilter` values and uses `CompositeTestExecutionFilter` for other combinations. A test framework must understand each filter type that can reach it.
+
+The provider receives a `TestExecutionFilterContext` that identifies whether the request is for discovery or execution and whether it came from the console or JSON-RPC server. Return `null` or `NopFilter` when the provider doesn't add a constraint. Provider constraints aren't supported for JSON-RPC server requests, so return `null` when the request origin is `Server`.
+
+> [!IMPORTANT]
+> These APIs use the `TPEXP` diagnostic ID and might change in a future release.
+
+### The `ITestHostExecutionOrchestratorMiddleware` extensions
+
+Starting with MTP 2.5 preview, the experimental `ITestHostExecutionOrchestratorMiddleware` extension point wraps exactly one invocation of the configured test host orchestrator. Register middleware with `AddTestHostExecutionOrchestratorMiddleware`. Registration order is outermost-first.
+
+Middleware can observe the invocation or short-circuit it, but it can't implement retries, stress loops, sharding, or multi-phase execution. The existing `--retry-failed-tests` orchestrator doesn't use this middleware API.
+
+Follow these constraints:
+
+- Invoke `next` at most once, and start the invocation before the middleware method returns or throws.
+- When you invoke `next`, return its exact exit code, and propagate its exceptions and cancellation unchanged.
+- When you short-circuit without invoking `next`, return a non-success exit code.
+- Treat composition order as significant. Middleware effects aren't assumed to be commutative.
+
+> [!IMPORTANT]
+> These APIs use the `TPEXP` diagnostic ID and might change or be removed in a future release.
 
 ### The `ITestHostEnvironmentVariableProvider` extensions
 

@@ -3,7 +3,7 @@ title: MSTest TestContext
 description: Learn about the TestContext class of MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -45,9 +45,6 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> provides inf
 - Starting with MSTest 3.9, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunCount?displayProperty=nameWithType> - the number of times the current test has run, counting from 1. The value is greater than 1 when a test is retried with `[Retry]`.
 
 ### Per-test temporary directory
-
-> [!IMPORTANT]
-> `TestContext.TestTempDirectory` is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
 
 Use `TestContext.TestTempDirectory` as private scratch space for a test. MSTest creates the directory only when you first access the property, and each test execution receives a unique directory. Each data row also receives its own directory, so parallel tests don't share paths.
 
@@ -91,7 +88,7 @@ You can use the `DataSource` attribute to read the data from the CSV file:
 
 You can use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType> to store custom key-value pairs that can be accessed across different methods in the same test session.
 
-Starting with the MSTest 4.4 preview, the indexer consistently returns `null` when a custom key doesn't exist.
+Starting with MSTest 4.4, the indexer consistently returns `null` when a custom key doesn't exist.
 
 ```csharp
 TestContext.Properties["MyKey"] = "MyValue";
@@ -114,6 +111,8 @@ Starting with MSTest 4.2, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Tes
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile(System.String)?displayProperty=nameWithType> method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (for example, log files, screenshots, or data files) that you want to attach to the test results.
 
 :::code language="csharp" source="snippets/testcontext/csharp/AddResultFile.cs":::
+
+Starting with MSTest 4.5 preview, the native MTP adapter preserves these result files as test attachments so MTP report extensions can include them.
 
 You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*?displayProperty=nameWithType> methods to write custom messages directly to the test output. Starting with MSTest 4.4, the `Live` output capture mode echoes these messages while the test runs and still attaches them to the final test result. For more information, see [Configure MSTest output](unit-testing-mstest-configure.md#output-settings).
 

@@ -1,16 +1,16 @@
 ---
 title: What's new in F# 11
-description: Explore type-driven development with record spreads, extensible generic programming, .NET integration, and improvements to everyday F# code.
+description: Explore F# 11 language features, expanded FSharp.Core APIs, better .NET integration, and compiler performance and memory improvements.
 ms.topic: whats-new
-ms.date: 09/30/2026
+ms.date: 10/01/2026
 ai-usage: ai-generated
 ---
 
 # What's new in F# 11
 
-A storage row, a domain entity, and a frontend viewmodel can describe the same customer without being the same type. Giving each model the right fields and guarantees shouldn't mean repeating every shared declaration and assignment. F# 11 makes those distinctions easier to maintain, so more of your code expresses what changes at an application boundary—not how to copy everything else.
+We're delighted to introduce F# 11! This release brings new language features, expanded FSharp.Core APIs, better .NET integration, and improvements to compiler performance and memory use.
 
-Record spreads reduce the repetition in that type-driven approach. Another major addition, extension-backed generic programming, lets existing types participate in shared algorithms without new wrappers. The release also improves the experience of building, debugging, and deploying the applications around those models.
+A huge thank-you to the F# community for the ideas, discussions, contributions, and testing that helped shape this release. Let's explore what's new.
 
 ## Record spreads: distinct models without repetitive mappings
 

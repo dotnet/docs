@@ -4,6 +4,9 @@ description: Learn how to launch and test unpackaged Win32, Windows Forms, and W
 author: Evangelink
 ms.author: amauryleve
 ms.date: 10/01/2026
+dev_langs:
+  - "csharp"
+  - "vb"
 ai-usage: ai-generated
 ---
 
@@ -29,7 +32,7 @@ With MSTest.Sdk, set `EnableWindowsUIAutomation` to `true`:
 </Project>
 ```
 
-MSTest.Sdk adds the matching `MSTest.Windows.UIAutomation` package. Without MSTest.Sdk, reference `MSTest.Windows.UIAutomation`, `MSTest.TestFramework`, `MSTest.TestAdapter`, and `Microsoft.NET.Test.Sdk` at matching MSTest versions.
+MSTest.Sdk adds the matching `MSTest.Windows.UIAutomation` package. Without MSTest.Sdk, reference `MSTest.Windows.UIAutomation`, `MSTest.TestFramework`, and `MSTest.TestAdapter` at matching MSTest versions. Reference a compatible `Microsoft.NET.Test.Sdk` version separately because it follows the VSTest version line.
 
 For a Windows-targeted project that restores or builds on Linux or macOS, set `EnableWindowsTargeting` to `true`.
 
@@ -42,14 +45,9 @@ Derive from one of these classes:
 
 Declare `STATestClass` directly on every concrete test class because MSTest test-class attributes aren't inherited:
 
-```csharp
-[STATestClass]
-public sealed class MyAppTests : WindowTest
-{
-    protected override ProcessStartInfo CreateProcessStartInfo()
-        => new(@"C:\MyApp\MyApp.exe");
-}
-```
+:::code language="csharp" source="./snippets/unit-testing-mstest-ui-automation/csharp/UIAutomationExample/MyAppTests.cs" id="WindowTestClass":::
+
+:::code language="vb" source="./snippets/unit-testing-mstest-ui-automation/vb/UIAutomationExample/MyAppTests.vb" id="WindowTestClass":::
 
 Use `MainWindow` in your test methods to query or invoke Windows UI Automation patterns. The package uses the UIA2 `System.Windows.Automation` API. You can layer another library, such as FlaUI, over the exposed `AutomationElement` when you need richer element interaction.
 

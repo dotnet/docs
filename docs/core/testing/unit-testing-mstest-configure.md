@@ -261,6 +261,9 @@ Example:
 
 The generated files use names such as `mstest-assertion-failure-state-attempt-1-invocation-1-capture-1.json`. Diagnostics are best effort and never replace or hide the original assertion failure.
 
+> [!IMPORTANT]
+> Assertion-failure diagnostic artifacts can contain source file paths, test names, assertion values, and process metadata. If you publish these files as CI artifacts, restrict access to them and use the shortest retention period that meets your needs.
+
 #### `timeout` settings
 
 All the settings in this section belong to the `timeout` element.

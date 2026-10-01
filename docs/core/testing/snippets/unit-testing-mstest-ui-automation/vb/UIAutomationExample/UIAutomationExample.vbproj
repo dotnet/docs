@@ -1,0 +1,9 @@
+﻿<Project Sdk="MSTest.Sdk/4.5.0">
+
+  <PropertyGroup>
+    <RootNamespace>UIAutomationExample</RootNamespace>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <EnableWindowsUIAutomation>true</EnableWindowsUIAutomation>
+  </PropertyGroup>
+
+</Project>

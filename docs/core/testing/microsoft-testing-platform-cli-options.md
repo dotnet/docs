@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/11/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -204,6 +204,8 @@ Use the following table to find each extension's package and options. A test SDK
 ## Discover options in your test app
 
 Run your test executable with `--help`, or run `dotnet test --help` in MTP mode, to list the options available for your current extension set.
+
+Starting with MTP 2.4, an unknown option error suggests a uniquely matching option name when one is available. If the option belongs to a known Microsoft-provided extension that the test application hasn't registered, the error also identifies the NuGet package that provides the option.
 
 For advanced diagnostics of registered providers and options, run with `--info`.
 

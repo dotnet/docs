@@ -78,6 +78,8 @@ items:
                     href: ../../core/testing/unit-testing-mstest-running-tests.md
                   - name: Test UWP and WinUI 3 apps
                     href: ../../core/testing/unit-testing-mstest-winui.md
+                  - name: Test Windows desktop apps with UI Automation
+                    href: ../../core/testing/unit-testing-mstest-ui-automation.md
                   - name: Configure MSTest
                     href: ../../core/testing/unit-testing-mstest-configure.md
                   - name: MSTest SDK
@@ -270,6 +272,14 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0082.md
                       - name: MSTEST0083
                         href: ../../core/testing/mstest-analyzers/mstest0083.md
+                      - name: MSTEST0084
+                        href: ../../core/testing/mstest-analyzers/mstest0084.md
+                      - name: MSTEST0085
+                        href: ../../core/testing/mstest-analyzers/mstest0085.md
+                      - name: MSTEST0086
+                        href: ../../core/testing/mstest-analyzers/mstest0086.md
+                      - name: MSTEST0087
+                        href: ../../core/testing/mstest-analyzers/mstest0087.md
               - name: Migration
                 items:
                   - name: Migrate from MSTest v1 to v3

@@ -3,7 +3,7 @@ title: MSTest overview
 description: Learn about MSTest, Microsoft's testing framework for .NET, including supported platforms, key features, and getting started.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/30/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -34,6 +34,7 @@ MSTest supports a wide range of .NET platforms and target frameworks. The follow
 | **.NET Framework** | 4.6.2+ | Full parallelization | All attributes | Full feature support |
 | **UWP** | UAP 10, .NET 10+ with UWP tooling | UI thread | `UITestMethod` | MSTest 4.5 and MTP 2.5 support classic and modern UWP through the MSTest.Sdk app-model sidecar |
 | **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | MTP supports packaged, unpackaged, and AppContainer hosts; see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md) |
+| **Windows desktop UI automation** | .NET 8+ Windows target | STA | `STATestClass` | MSTest 4.5 preview can launch unpackaged Win32, Windows Forms, and WPF apps and expose a window through Windows UI Automation |
 | **Native AOT** | .NET 8+ | Full parallelization | Most attributes | Limited feature set; see [Native AOT sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 | **Browser WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | MTP execution support starts with MSTest 4.4 |
 | **WASI WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | MTP execution support starts with MSTest 4.4 |
@@ -84,6 +85,10 @@ MTP supports packaged full-trust, unpackaged, and AppContainer-configured WinUI 
 
 AppContainer support requires MSTest 4.5 and MTP 2.5 or later. VSTest doesn't support unpackaged WinUI 3. For setup details, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
+#### Windows desktop UI automation
+
+The `MSTest.Windows.UIAutomation` package integrates MSTest lifecycle management with Windows UI Automation for unpackaged Win32, Windows Forms, and WPF applications. For setup, limitations, and the `ApplicationTest` and `WindowTest` base classes, see [Test Windows desktop apps with MSTest UI Automation](unit-testing-mstest-ui-automation.md).
+
 #### Native AOT
 
 Native AOT compilation is supported with some limitations due to reduced reflection capabilities. Use source generators where possible and test your AOT scenarios with the [NativeAotRunner sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner).
@@ -127,7 +132,7 @@ MSTest has undergone significant evolution across major versions:
 - **MSTest v4**: Current version with enhanced features
 
 > [!NOTE]
-> MSTest 4.5 is under development as of September 2026. Features marked as introduced in MSTest 4.5 require a preview build until version 4.5.0 is released.
+> MSTest 4.5 is under development as of October 2026. Features marked as introduced in MSTest 4.5 require a preview build until version 4.5.0 is released.
 
 For details on all releases, see the [MSTest changelog](https://github.com/microsoft/testfx/blob/main/docs/Changelog.md).
 
@@ -146,5 +151,6 @@ The MSTest team carefully reviews and minimizes breaking changes. When breaking 
 - [Write tests](unit-testing-mstest-writing-tests.md)
 - [Run tests](unit-testing-mstest-running-tests.md)
 - [Test UWP and WinUI 3 apps](unit-testing-mstest-winui.md)
+- [Test Windows desktop apps with MSTest UI Automation](unit-testing-mstest-ui-automation.md)
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [MSTest code analyzers](mstest-analyzers/overview.md)

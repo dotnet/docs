@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0069: Inherited [TestClass] is ignored by the MSTest source generator"
 description: "Learn about code analysis rule MSTEST0069: Inherited [TestClass] is ignored by the MSTest source generator"
-ms.date: 06/30/2026
+ms.date: 10/01/2026
 f1_keywords:
 - MSTEST0069
 - InheritedTestClassAttributeWithSourceGeneratorAnalyzer
@@ -28,7 +28,7 @@ dev_langs:
 | **Is there a code fix**             | No                                                 |
 
 > [!NOTE]
-> This analyzer ships in the `MSTest.SourceGeneration` package and is only loaded for projects that have opted into the [MSTest reflection source generator](../unit-testing-mstest-sdk.md), which is an experimental feature. It doesn't apply when the default reflection-based discovery is used.
+> This analyzer ships in the `MSTest.SourceGeneration` package and is only loaded for projects that have opted into the [MSTest reflection source generator](../unit-testing-mstest-sdk.md). It doesn't apply when the default reflection-based discovery is used.
 
 ## Cause
 

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) server mode
 description: Learn how tools and IDEs drive MTP test applications through JSON-RPC server mode.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -18,7 +18,7 @@ Start the public JSON-RPC server with `--server` or `--server jsonrpc`.
 
 ## Use the source-only client
 
-The MTP 2.4 preview provides a canonical JSON-RPC client. Add the [Microsoft.Testing.Platform.ServerMode.Client.Sources](https://www.nuget.org/packages/Microsoft.Testing.Platform.ServerMode.Client.Sources) package. The package injects C# source into your project instead of adding a runtime assembly.
+MTP 2.4 provides a canonical JSON-RPC client. Add the [Microsoft.Testing.Platform.ServerMode.Client.Sources](https://www.nuget.org/packages/Microsoft.Testing.Platform.ServerMode.Client.Sources) package. The package injects C# source into your project instead of adding a runtime assembly.
 
 The source-only design provides:
 
@@ -56,6 +56,12 @@ Set `MtpServerClientOptions.IsStateful` to tell the server whether the client pr
 - Set the value to `true` for an editor or IDE session that sends multiple requests over the same connection.
 
 The client sends this setting through the experimental `capabilities.testing.isStateful` protocol capability.
+
+## Negotiate protocol compatibility
+
+Starting with MTP 2.4, server-mode protocol negotiation is independent from the MTP NuGet package version. A client declares the protocol versions that it supports, and the server selects a common version. When no supported version overlaps, the test application exits with the `ProtocolError` exit code (`12`) instead of continuing with an incompatible wire contract.
+
+Use the versioned [server-mode 1.0 JSON schema](https://github.com/microsoft/testfx/blob/main/docs/mstest-runner-protocol/server-mode-1.0.schema.json) to validate messages. The System.Text.Json and Jsonite serializers follow the same schema and error envelope.
 
 ## See also
 

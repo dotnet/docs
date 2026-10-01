@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform features
 description: Learn about the various Microsoft.Testing.Platform features, both built-in and available as extensions.
 author: nohwnd
 ms.author: jajares
-ms.date: 08/26/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -35,8 +35,8 @@ Use the following path based on your goal:
 - Need coverage data: [Code coverage](./microsoft-testing-platform-code-coverage.md) (extension)
 - Need crash or hang diagnostics: [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) (extension)
 - Need to record the screen during a run: [Diagnostics](./microsoft-testing-platform-diagnostics.md) (extension, experimental)
-- Need to deploy and launch a packaged full-trust, UWP, or AppContainer test host: [Test host deployment](./microsoft-testing-platform-test-host-deployment.md) (extension, experimental)
-- Need to route platform logs through `Microsoft.Extensions.Logging`: [Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md) (extension, experimental)
+- Need to deploy and launch a packaged full-trust, UWP, or AppContainer test host: [Test host deployment](./microsoft-testing-platform-test-host-deployment.md) (extension; experimental launcher API)
+- Need to reuse `Microsoft.Extensions.Configuration`, `Microsoft.Extensions.Hosting`, or `Microsoft.Extensions.Logging`: [Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md) (extension, experimental)
 - Need to build editor or IDE integration: [Server mode](./microsoft-testing-platform-server-mode.md) (built-in)
 - Need to load extensions that aren't compile-time references: [Dynamic extension loading](./microsoft-testing-platform-architecture-extensions.md#load-extensions-dynamically) (built-in, opt-in)
 - Need to retry failed tests: [Retry](./microsoft-testing-platform-retry.md#retry) (extension)
@@ -106,10 +106,10 @@ Telemetry collection. Learn how to opt out and what data is collected.
 
 Capture evidence to diagnose a run, such as recording the screen with the video recorder.
 
-**[Test host deployment](./microsoft-testing-platform-test-host-deployment.md)** (experimental, introduced in MTP 2.3.0; UWP and AppContainer support introduced in MTP 2.5)
+**[Test host deployment](./microsoft-testing-platform-test-host-deployment.md)** (introduced in MTP 2.3.0; stable package API starting in MTP 2.4.0; experimental launcher API; UWP and AppContainer support introduced in MTP 2.5)
 
 Control how and where the test host is deployed and launched, including packaged full-trust, UWP, and AppContainer test hosts.
 
-**[Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md)** (experimental, introduced in MTP 2.3.0)
+**[Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md)** (experimental; logging introduced in MTP 2.3.0; configuration and hosting introduced in MTP 2.5 preview)
 
-Bridge platform and extension diagnostics into the `Microsoft.Extensions.*` libraries your application already uses, such as forwarding logs through the `Microsoft.Extensions.Logging` pipeline.
+Bridge MTP to the `Microsoft.Extensions.*` libraries your application already uses, including configuration snapshots, application-owned hosts, and diagnostic log forwarding.

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test host deployment
 description: Learn how MTP extensions control test host deployment and startup.
 author: evangelink
 ms.author: amauryleve
-ms.date: 09/30/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -28,7 +28,7 @@ The package was introduced in MTP 2.3. Starting with MTP 2.5, it supports packag
 MSTest.Sdk 4.5 or later configures this extension and the required full-trust app-model sidecar automatically. For application setup and run commands, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
 > [!CAUTION]
-> `Microsoft.Testing.Extensions.PackagedApp` and the `ITestHostLauncher` extension point are experimental. A future release might change their APIs and behavior.
+> Starting with MTP 2.4, `Microsoft.Testing.Extensions.PackagedApp` follows the MTP release version, and its public registration API is no longer experimental. The generic `ITestHostLauncher` extension point remains experimental and might change in a future release.
 
 ### Meet the requirements
 

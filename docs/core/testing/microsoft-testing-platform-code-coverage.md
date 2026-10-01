@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) code coverage
 description: Learn about collecting code coverage data with MTP.
 author: evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -44,7 +44,7 @@ For more information about the available options, see [settings](../additional-t
 ## Coverage summaries and thresholds
 
 > [!IMPORTANT]
-> The first-class coverage result model is available in MTP 2.4 preview.
+> The first-class coverage result model is available starting with MTP 2.4.
 
 Compatible collectors can publish covered and coverable measurements, threshold evaluations, and coverage report references as one correlated test coverage result. The terminal reporter and compatible report consumers render the measurements and derive percentages without parsing collector-specific files.
 

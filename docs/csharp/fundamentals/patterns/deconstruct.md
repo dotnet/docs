@@ -75,7 +75,7 @@ If you cannot modify a type, you can still support deconstruction by writing an 
 
 :::code language="csharp" source="snippets/patterns/DeconstructSamples.cs" ID="UriDeconstructExample":::
 
-As with instance methods, two extension `Deconstruct` methods with the same arity are ambiguous, and the compiler reports an error for the ambiguous call.
+The same ambiguity rule applies here: two extension `Deconstruct` methods with the same arity are ambiguous. Ambiguity can also arise between an instance `Deconstruct` method and an extension method of the same arity. In either case, the compiler reports an error for the ambiguous call.
 
 ## Built-in deconstruction on system types
 

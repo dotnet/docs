@@ -3,7 +3,7 @@ title: MSTest SDK configuration
 author: MarcoRossignoli
 description: Learn how to configure MSTest.Sdk profiles, extensions, and advanced features.
 ms.author: mrossignoli
-ms.date: 09/02/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -23,6 +23,22 @@ If the project that uses MSTest.Sdk is intended to be a test utility helper libr
 ## Select the runner
 
 By default, MSTest SDK relies on [MTP](./unit-testing-mstest-running-tests.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+
+## Test Windows application models
+
+Starting with MSTest.Sdk 4.5, the default MTP runner supports the following Windows application models:
+
+- Classic UWP projects that target `uap10.0`.
+- Modern UWP projects that use .NET 10 and set `UseUwp` to `true`.
+- Packaged full-trust WinUI 3 projects.
+- Unpackaged WinUI 3 projects.
+- WinUI 3 `packagedClassicApp` projects that set `TrustLevel="appContainer"`.
+
+MSTest.Sdk supplies compatible MTP 2.5 components and starts a full-trust app-model sidecar for packaged and AppContainer test hosts. The sidecar registers the package, activates the selected application by AUMID, authorizes the exact package SID for AppContainer communication, and recovers result artifacts from package storage.
+
+UWP projects still require the Visual Studio UWP workload and desktop MSBuild for build-time support. They don't require `Microsoft.NET.Test.Sdk`, `vstest.console`, or the Visual Studio UWP test runtime provider.
+
+For project configuration, run commands, and samples, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
 ## Extend MTP
 
@@ -116,7 +132,7 @@ For a list of all available extensions, see [MTP features](./microsoft-testing-p
 Some MTP extensions remain opt-in and aren't included in the `Default` or `AllMicrosoft` profiles:
 
 - Starting with MSTest.Sdk 4.3, set `<EnableMicrosoftTestingExtensionsJUnitReport>true</EnableMicrosoftTestingExtensionsJUnitReport>`, then pass `--report-junit`.
-- Starting with the MSTest.Sdk 4.4 preview, set `<EnableMicrosoftTestingExtensionsCtrfReport>true</EnableMicrosoftTestingExtensionsCtrfReport>`, then pass `--report-ctrf`.
+- Starting with MSTest.Sdk 4.4, set `<EnableMicrosoftTestingExtensionsCtrfReport>true</EnableMicrosoftTestingExtensionsCtrfReport>`, then pass `--report-ctrf`.
 - To reference the OpenTelemetry extension, set `<EnableMicrosoftTestingExtensionsOpenTelemetry>true</EnableMicrosoftTestingExtensionsOpenTelemetry>`. Because the extension requires API configuration, register it in your custom entry point as described in [OpenTelemetry](microsoft-testing-platform-open-telemetry.md).
 
 These extensions are available only with MTP.
@@ -251,9 +267,6 @@ The default MSTest.Sdk extension profile supplies the `Microsoft.Testing.Extensi
 ```
 
 ## Reflection source generator
-
-> [!IMPORTANT]
-> The following MSTest 4.4 behavior is available only in preview builds until MSTest 4.4.0 is released.
 
 MSTest 4.3 introduced the reflection source generator in the independently versioned, experimental `MSTest.SourceGeneration` package. Starting with MSTest 4.4, the package graduates from experimental status and uses the MSTest version.
 

@@ -3,7 +3,7 @@ title: MSTest overview
 description: Learn about MSTest, Microsoft's testing framework for .NET, including supported platforms, key features, and getting started.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -32,11 +32,11 @@ MSTest supports a wide range of .NET platforms and target frameworks. The follow
 |----------|-------------------|-------------------|-------------------|-------|
 | **.NET** | .NET 8+ | Full parallelization | All attributes | Recommended for new projects |
 | **.NET Framework** | 4.6.2+ | Full parallelization | All attributes | Full feature support |
-| **UWP** | UAP 10, .NET 9+ with UAP | UI thread | `UITestMethod` | Use VSTest. Modern .NET UWP requires `<UseUwp>true</UseUwp>`; see [UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
-| **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | Requires Windows App SDK; see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md) |
+| **UWP** | UAP 10, .NET 10+ with UWP tooling | UI thread | `UITestMethod` | MSTest 4.5 and MTP 2.5 support classic and modern UWP through the MSTest.Sdk app-model sidecar |
+| **WinUI 3** | .NET 8+ | UI thread | `UITestMethod` | MTP supports packaged, unpackaged, and AppContainer hosts; see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md) |
 | **Native AOT** | .NET 8+ | Full parallelization | Most attributes | Limited feature set; see [Native AOT sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
-| **Browser WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | MTP execution support starts with the MSTest 4.4 preview |
-| **WASI WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | MTP execution support starts with the MSTest 4.4 preview |
+| **Browser WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | MTP execution support starts with MSTest 4.4 |
+| **WASI WebAssembly** | .NET 10+ custom host | Single-threaded | Limited | MTP execution support starts with MSTest 4.4 |
 
 ### Platform-specific considerations
 
@@ -58,7 +58,9 @@ public class UwpTests
 }
 ```
 
-Use VSTest for classic UWP and modern .NET UWP because both run in an AppContainer. For a modern .NET UWP setup, see the [BlankUwpNet9App sample](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App).
+Starting with MSTest 4.5 and MTP 2.5, use MSTest.Sdk to run classic UWP and modern .NET UWP tests through MTP. A full-trust sidecar registers and activates the package, authorizes the app's exact package SID for MTP communication, and copies result artifacts from package storage.
+
+Modern UWP requires .NET 10, `UseUwp`, and the Visual Studio UWP build toolchain. Classic UWP keeps its existing `uap10.0` project shape. For complete configurations, see the [modern UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/UwpMtpApp) and [classic UWP sample](https://github.com/microsoft/testfx/tree/main/samples/public/ClassicUwpMtpApp).
 
 #### WinUI 3 testing
 
@@ -78,9 +80,9 @@ public class WinUITests
 }
 ```
 
-To configure unpackaged or packaged full-trust WinUI 3 tests, see [Test WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
+MTP supports packaged full-trust, unpackaged, and AppContainer-configured WinUI 3 test applications. MSTest.Sdk starts unpackaged apps directly and uses its app-model sidecar to register and activate packaged apps.
 
-Starting with MSTest 4.4, Microsoft.Testing.Platform also supports unpackaged WinUI test applications. VSTest doesn't support this scenario. For setup details, see the [unpackaged WinUI sample](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/MSTestRunnerWinUIUnpackaged).
+AppContainer support requires MSTest 4.5 and MTP 2.5 or later. VSTest doesn't support unpackaged WinUI 3. For setup details, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
 #### Native AOT
 
@@ -88,7 +90,7 @@ Native AOT compilation is supported with some limitations due to reduced reflect
 
 #### Browser and WASI WebAssembly
 
-The MSTest 4.4 preview supports custom .NET 10 browser or WASI WebAssembly hosts. To run tests from a referenced MSTest assembly, call `AddMSTest`. In the host project, set `EnableMSTestRunner` to `true` and `GenerateTestingPlatformEntryPoint` to `false`. Keep the MSTest and MTP package versions aligned.
+MSTest 4.4 supports custom .NET 10 browser or WASI WebAssembly hosts. To run tests from a referenced MSTest assembly, call `AddMSTest`. In the host project, set `EnableMSTestRunner` to `true` and `GenerateTestingPlatformEntryPoint` to `false`. Keep the MSTest and MTP package versions aligned.
 
 On a single-threaded WebAssembly runtime, MSTest can't forcibly interrupt a timed-out test. Debugger wait isn't supported on browser or WASI, and browser doesn't support debugger launch options.
 
@@ -125,7 +127,7 @@ MSTest has undergone significant evolution across major versions:
 - **MSTest v4**: Current version with enhanced features
 
 > [!NOTE]
-> MSTest 4.4 is under development as of August 2026. Features marked as introduced in MSTest 4.4 require a preview build until version 4.4.0 is released.
+> MSTest 4.5 is under development as of September 2026. Features marked as introduced in MSTest 4.5 require a preview build until version 4.5.0 is released.
 
 For details on all releases, see the [MSTest changelog](https://github.com/microsoft/testfx/blob/main/docs/Changelog.md).
 
@@ -143,6 +145,6 @@ The MSTest team carefully reviews and minimizes breaking changes. When breaking 
 - [Get started with MSTest](unit-testing-mstest-getting-started.md)
 - [Write tests](unit-testing-mstest-writing-tests.md)
 - [Run tests](unit-testing-mstest-running-tests.md)
-- [Test WinUI 3 apps](unit-testing-mstest-winui.md)
+- [Test UWP and WinUI 3 apps](unit-testing-mstest-winui.md)
 - [Configure MSTest](unit-testing-mstest-configure.md)
 - [MSTest code analyzers](mstest-analyzers/overview.md)

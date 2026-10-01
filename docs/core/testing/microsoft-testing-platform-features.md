@@ -35,7 +35,7 @@ Use the following path based on your goal:
 - Need coverage data: [Code coverage](./microsoft-testing-platform-code-coverage.md) (extension)
 - Need crash or hang diagnostics: [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) (extension)
 - Need to record the screen during a run: [Diagnostics](./microsoft-testing-platform-diagnostics.md) (extension, experimental)
-- Need to deploy and launch a packaged-app test host: [Test host deployment](./microsoft-testing-platform-test-host-deployment.md) (extension, experimental)
+- Need to deploy and launch a packaged full-trust, UWP, or AppContainer test host: [Test host deployment](./microsoft-testing-platform-test-host-deployment.md) (extension, experimental)
 - Need to route platform logs through `Microsoft.Extensions.Logging`: [Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md) (extension, experimental)
 - Need to build editor or IDE integration: [Server mode](./microsoft-testing-platform-server-mode.md) (built-in)
 - Need to load extensions that aren't compile-time references: [Dynamic extension loading](./microsoft-testing-platform-architecture-extensions.md#load-extensions-dynamically) (built-in, opt-in)
@@ -106,9 +106,9 @@ Telemetry collection. Learn how to opt out and what data is collected.
 
 Capture evidence to diagnose a run, such as recording the screen with the video recorder.
 
-**[Test host deployment](./microsoft-testing-platform-test-host-deployment.md)** (experimental, introduced in MTP 2.3.0)
+**[Test host deployment](./microsoft-testing-platform-test-host-deployment.md)** (experimental, introduced in MTP 2.3.0; UWP and AppContainer support introduced in MTP 2.5)
 
-Control how and where the test host is deployed and launched, such as deploying and launching a packaged-app test host.
+Control how and where the test host is deployed and launched, including packaged full-trust, UWP, and AppContainer test hosts.
 
 **[Microsoft.Extensions integration](./microsoft-testing-platform-extensions-integration.md)** (experimental, introduced in MTP 2.3.0)
 

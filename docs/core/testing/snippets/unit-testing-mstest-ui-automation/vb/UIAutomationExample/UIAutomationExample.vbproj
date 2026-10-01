@@ -1,9 +1,22 @@
-﻿<Project Sdk="MSTest.Sdk/4.5.0">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RootNamespace>UIAutomationExample</RootNamespace>
     <TargetFramework>net10.0-windows</TargetFramework>
-    <EnableWindowsUIAutomation>true</EnableWindowsUIAutomation>
   </PropertyGroup>
+
+  <ItemGroup Condition="'$(UseMSTest45Preview)' == 'true'">
+    <PackageReference Include="MSTest.TestFramework" Version="4.5.0" />
+    <PackageReference Include="MSTest.Windows.UIAutomation" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(UseMSTest45Preview)' != 'true'">
+    <PackageReference Include="MSTest.TestFramework" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="WindowTestStub.vb" />
+    <Compile Include="WindowTestStub.vb" Condition="'$(UseMSTest45Preview)' != 'true'" />
+  </ItemGroup>
 
 </Project>

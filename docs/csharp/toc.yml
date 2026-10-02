@@ -555,7 +555,7 @@ items:
     - name: Equality comparisons
       href: ./fundamentals/expressions/equality.md
     - name: "How to define value equality for a type"
-      href: ./fundamentals/expressions/equality.md#implement-equality-yourself-when-a-type-cant-be-a-record
+      href: ./language-reference/operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record
     - name: "How to test for reference equality (identity)"
       href: ./fundamentals/expressions/equality.md#use-objectreferenceequals-to-test-identity-directly
   - name: Types

@@ -553,11 +553,11 @@ items:
   - name: Equality and equality comparisons
     items:
     - name: Equality comparisons
-      href: /dotnet/csharp/fundamentals/expressions/equality
+      href: ./fundamentals/expressions/equality.md
     - name: "How to define value equality for a type"
-      href: /dotnet/csharp/fundamentals/expressions/equality#implement-equality-yourself-when-a-type-cant-be-a-record
+      href: ./fundamentals/expressions/equality.md#implement-equality-yourself-when-a-type-cant-be-a-record
     - name: "How to test for reference equality (identity)"
-      href: /dotnet/csharp/fundamentals/expressions/equality#use-objectreferenceequals-to-test-identity-directly
+      href: ./fundamentals/expressions/equality.md#use-objectreferenceequals-to-test-identity-directly
   - name: Types
     items:
     - name: Casting and Type Conversions

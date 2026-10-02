@@ -123,6 +123,8 @@ items:
       href: fundamentals/patterns/type-patterns.md
     - name: Property and positional patterns
       href: fundamentals/patterns/property-positional-patterns.md
+    - name: Deconstructing tuples and other types
+      href: fundamentals/patterns/deconstruct.md
     - name: Relational, logical, and parenthesized patterns
       href: fundamentals/patterns/relational-logical-patterns.md
     - name: List and slice patterns
@@ -159,19 +161,6 @@ items:
     # Encapsulation & composition
     - name: Polymorphism
       href: fundamentals/object-oriented/polymorphism.md
-  - name: Functional techniques
-    items:
-    # - Conceptual overview
-    #   - Expressions (how different than OO and expressions?)
-    #   - separation of data & algorithms
-    #   - immutability (emphasize constructors & passing data to constructor, get/init)
-    #   - Functional purity / functions as arguments or return values
-    # In F#, discussion of "object programming" -> objects become more sophisticated records.
-    # - language features:
-    #   - Lambdas
-    #   - Positional records as DTOs
-    - name: Deconstructing tuples and other types
-      href: fundamentals/functional/deconstruct.md
   - name: Exceptions and errors
     items:
     - name: Overview
@@ -221,8 +210,10 @@ items:
       href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
     - name: Choosing between tuples, records, structs, and classes
       href: fundamentals/tutorials/choosing-types.md
-    - name: Build data-driven algorithms with pattern matching
-      href: fundamentals/tutorials/pattern-matching.md
+    - name: Pattern matching basics
+      href: fundamentals/tutorials/pattern-matching-basics.md
+    - name: Build algorithms using pattern matching
+      href: fundamentals/tutorials/build-algorithms-using-pattern-matching.md
     - name: Use record types
       href: fundamentals/tutorials/records.md
     # separating data and algorithms
@@ -280,8 +271,6 @@ items:
     href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
-  - name: Explore patterns in objects
-    href: tutorials/patterns-objects.md
   - name: Console Application
     href: tutorials/console-teleprompter.md
   - name: REST Client

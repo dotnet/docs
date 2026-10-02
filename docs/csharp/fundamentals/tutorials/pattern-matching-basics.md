@@ -39,7 +39,7 @@ You can model those rules with a `CanalLock` class. It exposes commands to open 
 
 ## Define the class
 
-Create a console project, then add a class named `CanalLock`. Start by designing the public API and leaving the methods unimplemented:
+Create a console project, and then add a class named `CanalLock`. Start by designing the public API and leaving the methods unimplemented:
 
 :::code language="csharp" source="./snippets/pattern-matching-objects/InterimSteps.cs" ID="APIDesign":::
 
@@ -55,17 +55,17 @@ These first checks pass. You have the mechanics working. Next, add a test for th
 
 :::code language="csharp" source="./snippets/pattern-matching-objects/Program.cs" ID="HighGateSafetyTest":::
 
-That test fails because the upper gate opens when it should not. A first fix could look like this:
+That test fails because the upper gate opens when it shouldn't. A first fix could look like this:
 
 :::code language="csharp" source="./snippets/pattern-matching-objects/InterimSteps.cs" ID="SecondImplementation":::
 
-Your tests pass again. But as you add more conditions, more `if` statements accumulate. The code gets harder to scan because each rule is separated from the others.
+Your tests pass again. But as you add more conditions, you accumulate more `if` statements. The code gets harder to scan because each rule is separated from the others.
 
 ## Implement the commands with patterns
 
 A clearer option is to use *patterns* to describe the valid combinations directly. In the next step, each switch expression uses one tuple as the *pattern input*. C# evaluates that tuple once, and each switch arm tests the current gate state, the water level, and the requested new setting.
 
-For the upper gate, those combinations can be summarized like this:
+For the upper gate, you can summarize those combinations like this:
 
 | New setting | Gate state | Water level | Result |
 | --- | --- | --- | --- |

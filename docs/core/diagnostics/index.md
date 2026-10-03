@@ -1,9 +1,10 @@
 ---
-title: Diagnostics tools overview - .NET Core
-description: An overview of the tools and techniques available to diagnose .NET Core applications.
-ms.date: 10/20/2023
+title: Diagnostics tools overview - .NET
+description: An overview of the tools and techniques available to diagnose .NET applications.
+ms.date: 09/08/2026
 ms.topic: overview
-#Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
+#Customer intent: As a .NET developer, I want to find the best tools to help me diagnose problems so that I can be productive.
+ai-usage: ai-assisted
 ---
 # Diagnostics in .NET
 
@@ -46,7 +47,7 @@ For most cases, whether adding logging to an existing project or creating a new 
 There are multiple ways that the instrumentation data can be egressed from the application, including:
 
 - [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross-platform, vendor-neutral standard for collecting and exporting telemetry
-- [.NET CLI tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
+- [.NET diagnostic tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
 - Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger`1>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
 
@@ -56,38 +57,24 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 
 ## Diagnostics tools
 
-.NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications.
+.NET supports a number of [diagnostic tools](./tools-overview.md) that can be used to diagnose your applications. To automate a custom diagnostic workflow, use the [diagnostics client library](diagnostics-client-library.md) and <xref:Microsoft.Diagnostics.NETCore.Client>.
 
-## .NET Core diagnostics tutorials
+## Diagnostics tutorials
 
-### Debug a memory leak
+### Performance tutorials
 
-[Tutorial: Debug a memory leak](debug-memory-leak.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak and the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.
+To find out why an application consumes more resources or responds slowly, follow a tutorial for [high CPU usage](debug-highcpu.md), [memory leaks](debug-memory-leak.md), [ThreadPool starvation](debug-threadpool-starvation.md), or [deadlocks](debug-deadlock.md). For a complete Linux example, [collect a trace and diagnose CPU or allocation pressure](dotnet-trace-collect-linux-performance.md).
 
-### Debug high CPU usage
+If you aren't sure which symptom to investigate, use [`dotnet-counters`](dotnet-counters.md) to find the process and monitor its counters while you reproduce the problem. Replace `<PID>` with the process ID:
 
-[Tutorial: Debug high CPU usage](debug-highcpu.md) walks you through investigating high CPU usage. It uses the [dotnet-counters](dotnet-counters.md) tool to confirm the high CPU usage. It then walks you through using [Trace for performance analysis utility (`dotnet-trace`)](dotnet-trace.md) or Linux `perf` to collect and view CPU usage profile.
+```dotnetcli
+dotnet-counters ps
+dotnet-counters monitor --process-id <PID> --showDeltas
+```
 
-### Debug deadlock
+Use CPU time, managed heap growth, and ThreadPool queue and worker counts to choose a tutorial above. Counters help confirm the symptom, but they don't identify the application code responsible.
 
-[Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+### Crash and dump tutorials
 
-### Debug ThreadPool Starvation
-
-[Tutorial: Debug threadPool starvation](debug-threadpool-starvation.md) shows you how to use the [dotnet-counters](dotnet-counters.md) and [dotnet-stack](dotnet-stack.md) tools to investigate ThreadPool starvation.
-
-### Debug a StackOverflow
-
-[Tutorial: Debug a StackOverflow](debug-stackoverflow.md) demonstrates how to debug a <xref:System.StackOverflowException> on Linux.
-
-### Debug Linux dumps
-
-[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
-
-### Measure performance using EventCounters
-
-[Tutorial: Measure performance using EventCounters in .NET](event-counter-perf.md) shows you how to use the <xref:System.Diagnostics.Tracing.EventCounter> API to measure performance in your .NET app.
-
-### Write your own diagnostic tool
-
-[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. For more information, see the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).
+- [Debug a StackOverflow](debug-stackoverflow.md) demonstrates how to debug a <xref:System.StackOverflowException> on Linux.
+- [Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.

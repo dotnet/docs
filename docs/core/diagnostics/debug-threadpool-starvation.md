@@ -1,8 +1,9 @@
 ---
 title: Debug ThreadPool Starvation
-description: A tutorial that walks you through debugging and fixing a ThreadPool starvation issue on .NET Core
+description: A tutorial that walks you through debugging and fixing a ThreadPool starvation issue on .NET.
 ms.topic: tutorial
-ms.date: 04/19/2022
+ms.date: 09/04/2026
+ai-usage: ai-assisted
 ---
 
 # Debug ThreadPool starvation
@@ -29,15 +30,15 @@ The tutorial uses:
 - [dotnet-counters](dotnet-counters.md) to observe performance counters
 - [dotnet-stack](dotnet-stack.md) to examine thread stacks
 - [dotnet-trace](dotnet-trace.md) to collect wait events
-- Optional: [PerfView](https://github.com/microsoft/perfview/releases) to analyze the wait events
+- Optional: [Visual Studio](#analyze-a-nettrace-with-visual-studio) or [PerfView](https://github.com/microsoft/perfview/releases) on Windows to analyze the wait events
 
 ## Run the sample app
 
 Download the code for the [sample app](/samples/dotnet/samples/diagnostic-scenarios) and run it using the .NET SDK:
 
 ```dotnetcli
-E:\demo\DiagnosticScenarios>dotnet run
-Using launch settings from E:\demo\DiagnosticScenarios\Properties\launchSettings.json...
+dotnet run
+Using launch settings from /path/to/DiagnosticScenarios/Properties/launchSettings.json...
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: https://localhost:5001
 info: Microsoft.Hosting.Lifetime[14]
@@ -47,7 +48,7 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
-      Content root path: E:\demo\DiagnosticScenarios
+      Content root path: /path/to/DiagnosticScenarios
 ```
 
 If you use a web browser and send requests to `https://localhost:5001/api/diagscenario/taskwait`, you should see the response `success:taskwait` returned after about 500 ms. This shows that the web server is serving traffic as expected.
@@ -57,7 +58,7 @@ If you use a web browser and send requests to `https://localhost:5001/api/diagsc
 The demo web server has several endpoints which mock doing a database request and then returning a response to the user. Each of these endpoints has a delay of approximately 500 ms when serving requests one at a time but the performance is much worse when the web server is subjected to some load. Download the [Bombardier](https://github.com/codesenberg/bombardier/releases) load testing tool and observe the difference in latency when 125 concurrent requests are sent to each endpoint.
 
 ```dotnetcli
-bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait
+bombardier https://localhost:5001/api/diagscenario/taskwait
 Bombarding https://localhost:5001/api/diagscenario/taskwait for 10s using 125 connection(s)
 [=============================================================================================] 10s
 Done!
@@ -73,7 +74,7 @@ Statistics        Avg      Stdev        Max
 This second endpoint uses a code pattern that performs even worse:
 
 ```dotnetcli
-bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait
+bombardier https://localhost:5001/api/diagscenario/tasksleepwait
 Bombarding https://localhost:5001/api/diagscenario/tasksleepwait for 10s using 125 connection(s)
 [=============================================================================================] 10s
 Done!
@@ -147,7 +148,7 @@ If your app is running a version of .NET older than .NET 9, the output UI of dot
 The preceding counters are an example while the web server wasn't serving any requests. Run Bombardier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there's plenty of time to observe what happens to the performance counters.
 
 ```dotnetcli
-bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
+bombardier https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
 ```
 
 ThreadPool starvation occurs when there are no free threads to handle the queued work items and the runtime responds by increasing the number of ThreadPool threads. The `dotnet.thread_pool.thread.count` value increases rapidly to 2-3x the number of processor cores on your machine, and then further threads are added 1-2 per second until stabilizing somewhere above 125. The key signals that ThreadPool starvation is currently a performance bottleneck are the slow and steady increase of ThreadPool threads and CPU Usage much less than 100%. The thread count increase will continue until either the pool hits the maximum number of threads, enough threads have been created to satisfy all the incoming work items, or the CPU has been saturated. Often, but not always, ThreadPool starvation will also show large values for `dotnet.thread_pool.queue.length` and low values for `dotnet.thread_pool.work_item.count`, meaning that there's a large amount of pending work and little work being completed. Here's an example of the counters while the thread count is still rising:
@@ -202,7 +203,7 @@ Once the count of ThreadPool threads stabilizes, the pool is no longer starving.
 Starting in .NET 6, ThreadPool heuristics were modified to scale up the number of ThreadPool threads much faster in response to certain blocking Task APIs. ThreadPool starvation can still occur with these APIs, but the duration is much briefer than it was with older .NET versions because the runtime responds more quickly. Run Bombardier again with the `api/diagscenario/taskwait` endpoint:
 
 ```dotnetcli
-bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
+bombardier https://localhost:5001/api/diagscenario/taskwait -d 120s
 ```
 
 On .NET 6 you should observe the pool increase the thread count more quickly than before and then stabilize at a high number of threads. ThreadPool starvation is occurring while the thread count is climbing.
@@ -216,7 +217,7 @@ To eliminate ThreadPool starvation, ThreadPool threads need to remain unblocked 
 Run Bombardier again to put the web server under load:
 
 ```dotnetcli
-bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
+bombardier https://localhost:5001/api/diagscenario/taskwait -d 120s
 ```
 
 Then run dotnet-stack to see the thread stack traces:
@@ -303,21 +304,38 @@ There's one particular event that helps diagnosing thread pool starvation: the W
 Run Bombardier again to put the web server under load:
 
 ```dotnetcli
-bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
+bombardier https://localhost:5001/api/diagscenario/taskwait -d 120s
 ```
 
 Then run dotnet-trace to collect wait events:
 
 ```dotnetcli
-dotnet trace collect -n DiagnosticScenarios --clrevents waithandle --clreventlevel verbose --duration 00:00:30
+dotnet-trace collect -n DiagnosticScenarios --clrevents waithandle --clreventlevel verbose --duration 00:00:30
 ```
 
-That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. This nettrace can be analyzed using two different tools:
+That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. To analyze it in Visual Studio or PerfView, copy it to a Windows machine if you collected it elsewhere.
 
+On .NET 10+ Linux, prefer the [`collect-linux` blocking configuration](dotnet-trace-collect-linux-performance.md#blocking-contention-and-threadpool-behavior). It records the same focused runtime signals together with native stacks and Linux scheduling context, which helps distinguish blocked workers from runnable workers that aren't receiving CPU.
+
+The EventPipe trace from `dotnet-trace collect` can be analyzed using three different tools:
+
+- Start with [Visual Studio](#analyze-a-nettrace-with-visual-studio) to inspect events, payloads, and stacks.
 - [PerfView](https://github.com/microsoft/perfview/releases): A performance analysis tool developed by Microsoft for Windows only.
 - [.NET Events Viewer](https://verdie-g.github.io/dotnet-events-viewer): A nettrace analysis [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web tool developed by the community.
 
 The following sections show how to use each tool to read the nettrace file.
+
+#### Analyze a nettrace with Visual Studio
+
+Use Visual Studio's [Events Viewer](/visualstudio/profiling/events-viewer) to inspect the wait events and stacks recorded by the preceding command.
+
+1. Select **File** > **Open** > **File** and open the `.nettrace` file.
+1. Open **Events**. In the event filter, select `Microsoft-Windows-DotNETRuntime` and `WaitHandleWait/Start`.
+1. To focus on the application, right-click a column header, enable **Process ID** and **Thread ID**, and filter to the relevant IDs.
+1. Select an event to inspect **Payload Properties**, including `WaitSource`, and the event stack.
+1. Right-click an event and choose **Show Stacks For Event**. In **Event Stacks**, follow the application call path to `DiagScenarioController.TaskWait` and its synchronous task wait.
+
+These views identify the code that blocks the worker. Event counts alone don't measure time spent waiting.
 
 #### Analyze a nettrace with Perfview
 
@@ -387,10 +405,10 @@ public async Task<ActionResult<string>> TaskAsyncWait()
 }
 ```
 
-Running Bombadier to send load to the `api/diagscenario/taskasyncwait` endpoint shows that the ThreadPool thread count stays much lower and average latency remains near 500ms when using the async/await approach:
+Running Bombardier to send load to the `api/diagscenario/taskasyncwait` endpoint shows that the ThreadPool thread count stays much lower and average latency remains near 500ms when using the async/await approach:
 
 ```dotnetcli
->bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskasyncwait
+bombardier https://localhost:5001/api/diagscenario/taskasyncwait
 Bombarding https://localhost:5001/api/diagscenario/taskasyncwait for 10s using 125 connection(s)
 [=============================================================================================] 10s
 Done!
@@ -402,3 +420,9 @@ Statistics        Avg      Stdev        Max
     others - 0
   Throughput:    98.81KB/s
 ```
+
+## See also
+
+- [Performance tutorials](index.md#performance-tutorials)
+- [Investigate Linux performance with `dotnet-trace collect-linux`](dotnet-trace-collect-linux-performance.md)
+- [`dotnet-stack`](dotnet-stack.md)

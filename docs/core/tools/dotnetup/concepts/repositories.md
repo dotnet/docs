@@ -66,20 +66,22 @@ Only global.json-sourced SDK specifications are updated by the update
 workflow. The modifier preserves the other JSON properties, formatting, and
 detected text encoding.
 
-## Remove a repository requirement
+## Remove matching repository requirements
 
 A tracked `global.json` specification is refreshed during garbage collection.
 If the file no longer exists or no longer contains an SDK version, the
 specification is removed.
 
-You can also remove it explicitly. Match the stored channel and select the
-`globaljson` source:
+To remove specifications by channel, select the `globaljson` source. This
+command removes every matching specification in the selected installation
+root, not only one repository:
 
 ```dotnetcli
 dotnetup sdk uninstall 10.0.1xx --source globaljson
 ```
 
-Use `dotnetup list` to find the stored channel and source path.
+Use `dotnetup list` to find the stored channel, source path, and installation
+root. Add `--install-path` to select a custom root.
 
 ## See also
 

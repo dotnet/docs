@@ -1,7 +1,7 @@
 ---
 title: How dotnetup works
 description: Learn about dotnetup installation roots, components, install specifications, installations, and state files.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/07/2026
 ai-usage: ai-assisted
 ---

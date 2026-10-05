@@ -1,7 +1,7 @@
 ---
 title: Repository SDK requirements with dotnetup
 description: Learn how dotnetup reads global.json and tracks repository SDK requirements.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/07/2026
 ai-usage: ai-assisted
 ---

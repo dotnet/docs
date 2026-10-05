@@ -1,7 +1,7 @@
 ---
 title: dotnetup channels and versions
 description: Learn how dotnetup resolves stable, preview, daily, numeric, and exact .NET version specifications.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/07/2026
 ai-usage: ai-assisted
 ---

@@ -1,7 +1,7 @@
 ---
 title: dotnetup environment configuration
 description: Learn how dotnetup configures PATH and DOTNET_ROOT for managed .NET installations.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/11/2026
 ai-usage: ai-assisted
 ---

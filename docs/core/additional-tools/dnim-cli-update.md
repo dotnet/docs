@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 dnim-win-[x86|x64|arm64] update [-a|--accept-license]
     [-b|--include-bin-deployed-installs]
     [--csrp|--create-system-restore-point]
-    [--duwo, --download-updates-when-offline]
+    [--duwo|--download-updates-when-offline]
     [--epv|--except-product-version <PRODUCT_VERSION>]
     [--esp|--except-support-phase <active|eol|golive|maintenance|preview>]
     [--ignore-dependents]

@@ -77,6 +77,12 @@ default dotnetup-managed installation root, omit `sdk.paths` or set
 
 ## Update `global.json`
 
+After you change `sdk.version` or `rollForward`, run `dotnetup sdk install`
+from the repository directory to apply the new requirement. Before garbage
+collection refreshes changed `global.json` sources, `dotnetup sdk update`
+processes stored requirements, so its first pass might still use the previous
+requirement.
+
 To install the newest version in the derived channel and write that version
 back to `global.json`, run:
 

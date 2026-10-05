@@ -38,9 +38,12 @@ Another installation method might be a better choice when you:
 - **Develop with Visual Studio.** Visual Studio installs and services its own
   machine-wide copy of .NET. For more information, see
   [Install .NET on Windows](../../install/windows.md).
-- **Want machine-wide installations that receive updates from the OS.** Use the
-  .NET installer, WinGet, Microsoft Update, or a Linux distribution package
-  manager. For more information, see [Install .NET on Windows](../../install/windows.md),
+- **Need machine-wide .NET installations.** Choose an installation method
+  based on your operating system and servicing needs. On Windows, use
+  Microsoft Update or update the package with WinGet. On Linux, use your
+  distribution's package manager. On macOS, run the .NET installer again to
+  install a newer version. For more information, see
+  [Install .NET on Windows](../../install/windows.md),
   [Install .NET on macOS](../../install/macos.md), or
   [Install .NET on Linux](../../install/linux.md).
 - **Manage and remove .NET installations across an organization's Windows
@@ -53,7 +56,7 @@ Another installation method might be a better choice when you:
 | Installation scope | User | Machine | Any folder that you choose |
 | Requires administrator rights | No, except to change the system `PATH` on Windows in `everywhere` mode | Yes | No |
 | Tracks installations | Yes | Yes, through the OS | No |
-| Updates installations | Yes, with `dotnetup update` | Yes, through the installer, package manager, or Microsoft Update | No. Run the script again. |
+| Updates installations | Yes, with `dotnetup update` | Depends on the OS and installation method | No. Run the script again. |
 | Removes unused installations | Yes | Yes, through the OS | No |
 | Reads `global.json` | Yes | No | Yes, with the `--jsonfile` option |
 | Installs daily builds | Yes | No | Yes |

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Investigate Linux performance with dotnet-trace"
-description: Collect Linux performance traces and diagnose a managed CPU hotspot and large object heap pressure with Visual Studio and PerfView.
+description: Collect Linux performance traces and investigate a managed CPU hotspot and garbage collection pauses with Visual Studio and PerfView.
 ms.date: 09/08/2026
 ms.topic: tutorial
 #Customer intent: As a .NET developer on Linux, I want to collect and analyze the right trace data to find the cause of a performance problem.
@@ -9,14 +9,13 @@ ai-usage: ai-assisted
 
 # Tutorial: Investigate Linux performance with `dotnet-trace collect-linux`
 
-`dotnet-trace collect-linux` records .NET runtime events together with Linux CPU samples, native call stacks, process activity, scheduling data, and kernel events. By default, collection is machine-wide. This tutorial follows two problems from collection to diagnosis: a managed CPU hotspot and frequent collections caused by large object heap (LOH) allocations.
+`dotnet-trace collect-linux` records .NET runtime events together with Linux CPU samples, native call stacks, process activity, scheduling data, and kernel events. By default, collection is machine-wide. This tutorial follows two problems from collection to diagnosis: a managed CPU hotspot and garbage collection (GC) pauses caused by managed heap pressure.
 
 ## Prerequisites
 
 The tutorial requires:
 
-- Linux and .NET 10 or later that meet the [`collect-linux` prerequisites](dotnet-trace.md#prerequisites).
-- The [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
+- A Linux host that meets the [`collect-linux` prerequisites](dotnet-trace.md#prerequisites) and has the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) to build and run the sample. The SDK includes the required .NET 10 runtime.
 - The latest [`dotnet-trace`](dotnet-trace.md) global tool.
 - A Windows machine with [Visual Studio or PerfView](dotnet-trace.md#view-the-trace-captured-from-dotnet-trace) to analyze the trace.
 - The [performance scenarios sample](/samples/dotnet/samples/dotnet-trace-collect-linux-performance-scenarios/).
@@ -28,6 +27,7 @@ dotnet build -c Release
 ```
 
 Use one Linux terminal for the workload and another for collection. Each workload prints its process ID, symptom, and configured duration. Record that PID so you select the application rather than the `dotnet run` host or another process during analysis.
+When you analyze either trace, select that PID and the workload interval. Before you rely on event counts in Visual Studio or PerfView, check whether the event view limits the displayed results.
 
 ## Example: Find a managed CPU hotspot
 
@@ -56,7 +56,7 @@ Wait for the collector to finish, then copy `cpu-hotspot.nettrace` to a local di
 
 ### Interpret the CPU trace
 
-Use Visual Studio's [CPU Usage report](/visualstudio/profiling/cpu-usage#analyze-cpu-utilization) to analyze the trace. Select the sample's process ID and the interval in which the workload ran. **Self CPU** identifies samples in a function itself; **Total CPU** includes its callees. The call tree and caller/callee views show the application path that reaches the expensive function.
+Open `cpu-hotspot.nettrace` in Visual Studio. In the **CPU Usage** summary, select **Open details** to examine the [CPU Usage report](https://learn.microsoft.com/visualstudio/profiling/cpu-usage#analyze-cpu-utilization) for the sample's process ID and workload interval. **Self CPU** identifies samples in a function itself; **Total CPU** includes its callees. The call tree and caller/callee views show the application path that reaches the expensive function.
 
 Look for `Fibonacci` with high self CPU, and for `Fibonacci` appearing as both caller and callee. The following excerpt illustrates the relevant part of the sample's call tree; prefixes and counts vary with the build and selected interval:
 
@@ -67,29 +67,29 @@ CpuScenarios.HotspotAsync
       CpuScenarios.Fibonacci
 ```
 
-**Interpretation:** The process spends its CPU time in recursive Fibonacci computation. High self CPU locates the expensive method; the repeated frames establish recursion. A runtime startup frame with high *total* CPU is a caller of the expensive work, not evidence that startup caused the sustained CPU use.
+**Interpretation:** The process spends its CPU time in recursive Fibonacci computation. High self CPU locates the expensive method; the repeated frames establish recursion.
 
 In the sample source, `CpuScenarios.HotspotAsync` repeatedly computes `Fibonacci(36)`, and `CpuScenarios.Fibonacci` calls itself recursively. An iterative algorithm or reuse of the result can avoid repeated recursive work. After an optimization, repeat the same workload and compare absolute CPU use as well as the stack profile.
 
 You can also analyze `cpu-hotspot.nettrace` with [PerfView](https://github.com/microsoft/perfview). For native symbol information, see [Get symbols for native runtime frames in PerfView](dotnet-trace.md#get-symbols-for-native-runtime-frames-in-perfview).
 
-## Example: Diagnose large object heap pressure
+## Example: Investigate long GC pauses
 
-This workload causes frequent full collections despite a modest retained object count. Collect allocation and GC events to distinguish large-object pressure from frequent small allocations or explicit calls to `GC.Collect`.
+If you suspect GC-related delays, examine pause durations and collection frequency alongside allocation activity and collection reasons. This workload creates managed heap pressure through repeated large object heap (LOH) allocations, which trigger frequent generation 2 (full) collections despite a modest retained object count. A generation 2 collection includes younger generations and the LOH.
 
 ### Collect allocation and GC data
 
-After the CPU workload exits, start the LOH workload:
+Start the LOH workload:
 
 ```dotnetcli
 dotnet run -c Release --no-build -- loh-gc 45
 ```
 
-In the collection terminal, run:
+While the workload runs, collect a 15-second trace in the other terminal:
 
 ```dotnetcli
 sudo dotnet-trace collect-linux \
-  --profile gc-verbose,cpu-sampling \
+  --profile gc-verbose \
   --duration 00:00:15 \
   --output loh-gc.nettrace
 ```
@@ -98,20 +98,20 @@ The `gc-verbose` profile adds detailed GC and sampled allocation events. After c
 
 ### Interpret allocation and GC data
 
-In Visual Studio, examine allocation and collection data for the sample process and workload interval. Correlate allocation types with GC generation, reason, and pause duration. An **Insights** result can suggest a starting point, but the diagnosis depends on the underlying data:
+Open `loh-gc.nettrace` in Visual Studio and examine **Collections** and **Allocations** for the sample's process ID and workload interval. Compare the recorded pause durations with your application's latency requirements, then correlate the pauses with allocation types, GC generation, and collection reason:
 
 | View | Result to look for | What it tells you |
 | --- | --- | --- |
+| **Collections** | Pause duration, generation 2, and `AllocLarge` | Shows the duration of pauses associated with collections triggered by large-object allocations. |
 | **Allocations** | Repeated `System.Byte[]` allocations | Byte arrays contribute to the allocation workload. Sampled allocation records aren't an exact object count. |
-| **Collections** | Generation 2, `AllocLarge`, and repeated pauses | Large-object allocations trigger full collections during the workload. |
 
-**Interpretation:** Large-array allocation pressure causes repeated full collections. The collection reason distinguishes this case from an `Induced` collection triggered by an explicit request. GC CPU alone wouldn't identify that distinction.
+**Interpretation:** In this example, heap pressure from large-array allocations causes repeated full collections. Frequent collections alone don't establish a long pause; compare individual pause durations and total time spent paused with your latency requirements. The sample doesn't measure an application delay, so match pause timestamps to measured delays in your own application before you conclude GC caused a slowdown. The `AllocLarge` collection reason distinguishes this case from an `Induced` collection triggered by an explicit request; GC CPU alone wouldn't identify that distinction.
 
-In the sample source, `MemoryScenarios.LohGcAsync` allocates 200,000-byte arrays, which exceed the [85,000-byte LOH threshold](../../standard/garbage-collection/large-object-heap.md), and retains a rolling set. Reduce repeated large allocations, for example by reusing buffers when their lifetime permits, then compare allocation volume and GC pauses in another trace.
+For optional event-level detail, examine the `Microsoft-Windows-DotNETRuntime` events `GC/HeapStats`, `GC/Start`, and `GC/Stop` in [Visual Studio's Events Viewer](/visualstudio/profiling/events-viewer) or PerfView. Inspect payloads and timestamps for the workload.
 
-For event-level detail, examine the `Microsoft-Windows-DotNETRuntime` events `GC/HeapStats`, `GC/Start`, and `GC/Stop` in [Visual Studio's Events Viewer](/visualstudio/profiling/events-viewer) or PerfView. Inspect payloads and timestamps for the workload. In either tool, check the process identity and any result limit before interpreting counts.
+In the sample source, `MemoryScenarios.LohGcAsync` allocates 200,000-byte arrays, which exceed the [default 85,000-byte LOH threshold](../runtime-config/garbage-collector.md#large-object-heap-threshold), and retains a rolling set. Reduce repeated large allocations, for example by reusing buffers when their lifetime permits, then compare allocation volume and GC pauses in another trace.
 
-Allocation pressure doesn't by itself prove a memory leak. If the remaining question is why objects stay alive, follow [Debug a memory leak](debug-memory-leak.md) to inspect retention paths in a process dump.
+Allocation pressure doesn't by itself prove a memory leak. This `gc-verbose` capture records allocation samples and GC activity, not a complete snapshot of object references and roots. If the remaining question is why objects stay alive, follow [Debug a memory leak](debug-memory-leak.md) to inspect retention paths in a process dump.
 
 ## Understanding tracing overhead
 

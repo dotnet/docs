@@ -193,7 +193,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8511**](#feature-not-available-in-language-version): *An expression of type 'type' cannot be handled by a pattern of type 'type'. Please use language version 'version' or greater to match an open type with a constant pattern.*
 - [**CS8627**](#feature-not-available-in-language-version): *A nullable type parameter must be known to be a value type or non-nullable reference type unless language version 'version' or greater is used. Consider changing the language version or adding a 'class', 'struct', or type constraint.*
 - [**CS8630**](#feature-not-available-in-language-version): *Invalid 'option' value: 'value' for C# version. Please use language version 'version' or greater.*
-- [**CS8652**](#experimental-and-preview-features): *The feature is currently in preview and unsupported. To use preview features, use the 'preview' language version.*
+- [**CS8652**](#experimental-and-preview-features): *The feature is currently in Preview and unsupported. To use Preview features, use the 'preview' language version.*
 - [**CS8701**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support default interface implementation.*
 - [**CS8702**](#target-runtime-doesnt-support-feature): *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
 - [**CS8703**](#feature-not-available-in-language-version): *The modifier 'modifier' is not valid for this item in C# version. Please use language version 8.0 or greater.*

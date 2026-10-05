@@ -44,9 +44,9 @@ dotnetup runtime install windowsdesktop@preview
 ## Pin one prerelease version
 
 Use the full version from the published release metadata when you need one
-specific prerelease. This version from the .NET 11 `releases.json` is out of
-date because the channel has advanced beyond Preview 7. It appears only to show
-the command syntax:
+specific prerelease. This .NET 11 Preview 7 version from `releases.json` is
+out of date because the channel has advanced to a release candidate. It appears
+only to show the command syntax:
 
 ```dotnetcli
 dotnetup sdk install 11.0.100-preview.7.26381.103

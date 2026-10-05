@@ -36,7 +36,7 @@ Use a separate installation root when you do not want daily and stable
 installations in the same root:
 
 ```dotnetcli
-dotnetup sdk install daily --install-path .\.dotnet-daily
+dotnetup sdk install daily --install-path .dotnet-daily
 ```
 
 Run the installation's executable directly:
@@ -69,7 +69,7 @@ A daily channel is a rolling requirement:
 
 ```dotnetcli
 dotnetup sdk update
-dotnetup sdk uninstall daily --install-path .\.dotnet-daily
+dotnetup sdk uninstall daily --install-path .dotnet-daily
 ```
 
 An exact prerelease version is pinned and is not changed by update commands.

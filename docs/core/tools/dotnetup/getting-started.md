@@ -30,6 +30,11 @@ using a system package manager.
 - On macOS or Linux, `curl` or `wget` to download files, and `sha512sum` or
   `shasum` to verify them.
 
+`dotnetup` has the same operating-system requirements as the .NET Runtime.
+For OS-specific requirements, see [Install .NET on Windows](../../install/windows.md),
+[Install .NET on macOS](../../install/macos.md), or
+[Install .NET on Linux](../../install/linux.md).
+
 > [!IMPORTANT]
 > On Windows, the default setup uses the `everywhere` access mode. This mode:
 >

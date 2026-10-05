@@ -153,7 +153,7 @@ helpviewer_keywords:
   - "CS9328"
   - "CS9346"
   - "CS9352"
-ms.date: 09/11/2026
+ms.date: 10/05/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for language features and versions
@@ -161,7 +161,7 @@ ai-usage: ai-assisted
 This article covers the following compiler errors and warnings:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0171**](#breaking-changes-on-struct-initialization): *Field 'name' must be fully assigned before control is returned to the caller. Consider updating to language version 'version' to auto-default the field.*
 - [**CS0188**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields have been assigned. Consider updating to language version 'version' to auto-default the unassigned fields.*
@@ -193,7 +193,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8511**](#feature-not-available-in-language-version): *An expression of type 'type' cannot be handled by a pattern of type 'type'. Please use language version 'version' or greater to match an open type with a constant pattern.*
 - [**CS8627**](#feature-not-available-in-language-version): *A nullable type parameter must be known to be a value type or non-nullable reference type unless language version 'version' or greater is used. Consider changing the language version or adding a 'class', 'struct', or type constraint.*
 - [**CS8630**](#feature-not-available-in-language-version): *Invalid 'option' value: 'value' for C# version. Please use language version 'version' or greater.*
-- [**CS8652**](#experimental-and-preview-features): *The feature is currently in Preview and unsupported. To use Preview features, use the 'preview' language version.*
+- [**CS8652**](#experimental-and-preview-features): *The feature is currently in preview and unsupported. To use preview features, use the 'preview' language version.*
 - [**CS8701**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support default interface implementation.*
 - [**CS8702**](#target-runtime-doesnt-support-feature): *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
 - [**CS8703**](#feature-not-available-in-language-version): *The modifier 'modifier' is not valid for this item in C# version. Please use language version 8.0 or greater.*
@@ -379,16 +379,22 @@ Make custom calling convention types `public` (**CS8891**). If you define a cust
 - **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 - **CS9268**: *'type' is for evaluation purposes only and is subject to change or removal in future updates: 'message'. Suppress this diagnostic to proceed.*
 
-These diagnostics indicate that you're using a feature or type that's marked as experimental or is only available in the preview language version.
+These diagnostics indicate that you're using an experimental compiler feature, a preview language feature, or a symbol marked as experimental.
 
 > [!WARNING]
 > Experimental features are subject to change. The APIs might change, or they might be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 Set `<LangVersion>preview</LangVersion>` in your project file to use preview language features (**CS8652**). Preview features aren't yet finalized and might change in future releases.
 
-Suppress the specific diagnostic ID to acknowledge the experimental nature of the API (**CS8058**, **CS8305**, **CS9204**, **CS9268**). Library authors mark APIs with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> to indicate they're subject to change. You can suppress the diagnostic by using `#pragma warning disable` or by adding the diagnostic ID to `<NoWarn>` in your project file.
+Enable the named experimental compiler feature with `/features:<feature>`, as directed in the **CS8058** message.
 
-Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier (**CS9211**). The identifier must follow standard naming rules. It can't contain spaces, special characters, or start with a digit. You can also declare your own experimental features by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
+**CS8305** indicates that the symbol is marked with `Windows.Foundation.Metadata.ExperimentalAttribute`. Suppress **CS8305** only when you accept that the marked symbol can change or be removed.
+
+If you're consuming an API marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>, suppress a valid reported diagnostic ID only when you accept that the API can change or be removed. Use `#pragma warning disable` or add the ID to `<NoWarn>` in your project file. Diagnostic IDs read from metadata aren't revalidated. An invalid ID, such as one that contains a space, can be reported but might not be suppressible with `#pragma`. In that case, contact the API author or update the dependency.
+
+If you're authoring an experimental API, the compiler reports the `diagnosticId` from <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> when it isn't null, empty, or composed only of whitespace. Otherwise, the compiler reports **CS9204** if `Message` is null or empty and **CS9268** otherwise.
+
+For an attribute declared in source, an invalid `diagnosticId` also produces **CS9211** at the attribute declaration. Ensure the ID is a valid C# identifier: It must start with an underscore or a Unicode letter. Each later character must be a Unicode letter, decimal digit, connecting character such as an underscore, combining character, or formatting character. Because metadata IDs aren't revalidated, API authors should always choose a valid ID. You can declare your own experimental APIs by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
 
 ## Breaking changes on struct initialization
 

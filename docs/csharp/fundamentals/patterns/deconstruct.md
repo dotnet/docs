@@ -6,7 +6,7 @@ ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 
-# Deconstructing tuples and other types
+# Deconstruct tuples and other types
 
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. Start with the [pattern matching overview](pattern-matching.md) if patterns are new to you.

@@ -18,6 +18,7 @@ ai-usage: ai-assisted
 dnim-win-[x86|x64|arm64] update [-a|--accept-license]
     [-b|--include-bin-deployed-installs]
     [--csrp|--create-system-restore-point]
+    [--duwo, --download-updates-when-offline]
     [--epv|--except-product-version <PRODUCT_VERSION>]
     [--esp|--except-support-phase <active|eol|golive|maintenance|preview>]
     [--ignore-dependents]
@@ -65,6 +66,8 @@ The command will first remove any applicable installs before applying updates. T
 - [!INCLUDE [bin-deployed-installs](includes/dnim-cli-include-bin-deployed-installs.md)]
 
 - [!INCLUDE [create-system-restore-point](includes/dnim-cli-create-system-restore-point.md)]
+
+- [!INCLUDE [download-updates-when-offline](includes/dnim-cli-download-updates-when-offline.md)]
 
 - [!INCLUDE [except-product-version](includes/dnim-cli-except-product-version.md)]
   

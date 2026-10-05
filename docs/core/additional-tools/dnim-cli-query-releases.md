@@ -15,11 +15,13 @@ ai-usage: ai-assisted
 ## Synopsis
 
 ```dotnetcli
-dnim-win-[x86|x64|arm64] query releases [-a|--accept-license] 
+dnim-win-[x86|x64|arm64] query releases [-a|--accept-license]
+    [--cve <CVE_ID>]
     [--epv|--except-product-version <PRODUCT_VERSION>] 
     [--esp|--except-support-phase <active|eol|golive|maintenance|preview>]
     [-o|--output-file <OUTPUT_FILE>] [--offline <LAYOUT_DIRECTORY>]
     [--output-format <text|csv|html|json>] [--pv|--product-version <PRODUCT_VERSION>]
+    [--security]
     [--sp|--support-phase <active|eol|golive|maintenance|preview>]
     [-v|--verbosity <quiet|normal|diagnostic>]
 
@@ -37,6 +39,8 @@ The command can be used to obtain information for specific .NET releases.
 
 - [!INCLUDE [accept-license](includes/dnim-cli-accept-license.md)]
 
+- [!INCLUDE [cve](includes/dnim-cli-cve.md)]
+
 - [!INCLUDE [except-product-version](includes/dnim-cli-except-product-version.md)]
   
 - [!INCLUDE [except-support-phase](includes/dnim-cli-except-support-phase.md)]
@@ -48,6 +52,8 @@ The command can be used to obtain information for specific .NET releases.
 - [!INCLUDE [output-format](includes/dnim-cli-output-format.md)]
 
 - [!INCLUDE [product-version](includes/dnim-cli-product-version.md)]
+
+- [!INCLUDE [security](includes/dnim-cli-security.md)]
 
 - [!INCLUDE [support-phase](includes/dnim-cli-support-phase.md)]
 

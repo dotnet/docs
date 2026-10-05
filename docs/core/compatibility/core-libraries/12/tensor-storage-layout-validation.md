@@ -82,15 +82,15 @@ Don't assume that a `Try` copying method can't throw. A `false` result handles i
 
 ## Affected APIs
 
-- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.CopyTo*>.
-- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.FlattenTo*>.
-- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.TryCopyTo*>.
-- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.TryFlattenTo*>.
+- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.CopyTo*?displayProperty=fullName>.
+- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.FlattenTo*?displayProperty=fullName>.
+- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.TryCopyTo*?displayProperty=fullName>.
+- <xref:System.Numerics.Tensors.IReadOnlyTensor`2.TryFlattenTo*?displayProperty=fullName>.
 - The corresponding copy and flatten methods on <xref:System.Numerics.Tensors.Tensor`1>, <xref:System.Numerics.Tensors.TensorSpan`1>, and <xref:System.Numerics.Tensors.ReadOnlyTensorSpan`1>.
 - Destination-taking elementwise methods on <xref:System.Numerics.Tensors.Tensor>, including unary, binary, and tensor/scalar operations.
-- <xref:System.Numerics.Tensors.Tensor.ResizeTo*> (all overloads).
-- <xref:System.Numerics.Tensors.Tensor.Reverse*> and <xref:System.Numerics.Tensors.Tensor.ReverseDimension*> (overloads that take a destination).
-- <xref:System.Numerics.Tensors.Tensor.Concatenate*> (overload that takes a destination).
+- <xref:System.Numerics.Tensors.Tensor.ResizeTo*?displayProperty=fullName> (all overloads).
+- <xref:System.Numerics.Tensors.Tensor.Reverse*?displayProperty=fullName> and <xref:System.Numerics.Tensors.Tensor.ReverseDimension*?displayProperty=fullName> (overloads that take a destination).
+- <xref:System.Numerics.Tensors.Tensor.Concatenate*?displayProperty=fullName> (overload that takes a destination).
 - <xref:System.Numerics.Tensors.TensorSpan`1.%23ctor*> and <xref:System.Numerics.Tensors.ReadOnlyTensorSpan`1.%23ctor*> (the two overloads on each type that take `System.Array`).
 
 ## See also

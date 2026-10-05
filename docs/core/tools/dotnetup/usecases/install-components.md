@@ -57,8 +57,11 @@ untracked install.
 
 ## Migrate native-architecture components
 
-To copy matching components from system-managed .NET locations into the
-selected installation root, run:
+`dotnetup` detects SDKs and runtimes in system-managed .NET installations for
+the current architecture. It derives install requirements and resolves them
+through its normal download process. The resolved version might differ from
+the source installation. Migration leaves the system installation unchanged.
+To install the detected components into the selected root, run:
 
 ```dotnetcli
 dotnetup sdk install --migrate-from-system

@@ -44,9 +44,16 @@ dotnetup runtime install windowsdesktop@preview
 ## Pin one prerelease version
 
 Use the full version from the published release metadata when you need one
-specific prerelease. An exact prerelease version is pinned, so update commands
-do not advance it. Use the `preview` channel when you want the latest available
-preview instead.
+specific prerelease. This version from the .NET 11 `releases.json` is out of
+date because the channel has advanced beyond Preview 7. It appears only to show
+the command syntax:
+
+```dotnetcli
+dotnetup sdk install 11.0.100-preview.7.26381.103
+```
+
+An exact prerelease version is pinned, so update commands do not advance it.
+Use the `preview` channel when you want the latest available preview instead.
 
 ## Preview and daily are different
 

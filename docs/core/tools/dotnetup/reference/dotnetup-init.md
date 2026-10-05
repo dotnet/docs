@@ -29,6 +29,10 @@ It lets you select an access mode and whether the `dotnetup` executable is on
 system-managed installations. For descriptions of the access modes, see
 [dotnetup environment configuration](../concepts/environment.md).
 
+The current public-preview build first asks whether to install with the
+recommended settings. Select **No, customize setup** to choose another SDK
+channel, access mode, or migration option.
+
 Run this command again to reconfigure dotnetup.
 
 ## Options

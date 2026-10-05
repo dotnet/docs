@@ -68,17 +68,12 @@ The install-path precedence is:
 2. The first `sdk.paths` entry
 3. The default dotnetup-managed .NET installation root
 
-### The `$host$` sentinel
+### Preview limitations
 
-`$host$` is **not** a literal directory. It is a sentinel the .NET host resolver understands to mean "use the default host location." dotnetup treats it the same way, and skips empty, null, or whitespace entries while looking for the first meaningful entry:
-
-| First meaningful `sdk.paths` entry | Where dotnetup installs |
-|------------------------------------|-------------------------|
-| A relative or absolute path (e.g. `.dotnet`) | That path, resolved relative to the directory containing `global.json` |
-| `$host$` | The default dotnetup-managed .NET installation root |
-| *(no usable entry — empty, or only null/whitespace)* | The default dotnetup-managed .NET installation root |
-
-Because `sdk.paths` is ordered, the first meaningful entry wins. `["$host$", ".dotnet"]` installs to the default installation root and ignores `.dotnet`, while `[".dotnet", "$host$"]` installs to `.dotnet`. A literal path does *not* take precedence over `$host$` unless it appears first.
+The current public-preview build treats the first `sdk.paths` entry as a path.
+It doesn't interpret `$host$` as a sentinel or skip empty entries. To use the
+default dotnetup-managed installation root, omit `sdk.paths` or set
+`--install-path` explicitly.
 
 ## Update `global.json`
 

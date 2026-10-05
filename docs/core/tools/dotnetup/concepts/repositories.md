@@ -50,6 +50,9 @@ The `allowPrerelease` property does not affect the channel that dotnetup derives
 If `sdk.paths` contains an entry, `dotnetup` uses the first path. A relative
 path is resolved from the directory that contains `global.json`.
 
+In the current public-preview build, `dotnetup` treats the first entry as a
+path. It doesn't interpret `$host$` as a sentinel or skip empty entries.
+
 Installation-path precedence is:
 
 1. `--install-path`.

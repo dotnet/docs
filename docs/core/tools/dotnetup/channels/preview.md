@@ -41,15 +41,12 @@ The Windows Desktop runtime is available only on Windows:
 dotnetup runtime install windowsdesktop@preview
 ```
 
-## Pin a prerelease version
+## Pin one prerelease version
 
-Use a complete prerelease version when you need reproducible selection:
-
-```dotnetcli
-dotnetup sdk install 11.0.100-preview.5.25277.114
-```
-
-An exact prerelease version is pinned. Update commands do not advance it.
+Use the full version from the published release metadata when you need one
+specific prerelease. An exact prerelease version is pinned, so update commands
+do not advance it. Use the `preview` channel when you want the latest available
+preview instead.
 
 ## Preview and daily are different
 

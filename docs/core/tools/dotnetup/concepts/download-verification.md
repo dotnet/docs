@@ -31,6 +31,11 @@ release manifest:
 Because the signed manifest pins each archive's hash, `dotnetup` doesn't verify
 a separate signature for each archive.
 
+Signature verification also checks certificate revocation status online. Allow
+access to the required certificate revocation endpoints. If the network blocks
+these checks, verification fails and `dotnetup` stops the installation, even
+when the signature is valid.
+
 ## Daily and unlisted prerelease builds
 
 Daily builds, and prerelease versions that aren't in the signed release

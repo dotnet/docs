@@ -11,8 +11,8 @@ ai-usage: ai-assisted
 [!INCLUDE [public-preview](../includes/public-preview.md)]
 
 `dotnetup` uses `global.json` to associate an SDK requirement with a
-repository or directory tree. From the current directory, it searches for
-`global.json` and then searches each parent directory until it finds one.
+repository or directory tree. It searches from the current directory through
+each parent directory and reads the nearest existing `global.json`.
 
 ## Install from global.json
 
@@ -24,8 +24,11 @@ dotnetup install
 
 If the nearest `global.json` has an `sdk.version`, `dotnetup` derives an
 install specification from the version and `rollForward` value. It records
-the full path to the file as the specification source. If no usable
-`global.json` exists, the command uses the `latest` channel.
+the full path to the file as the specification source. If no
+`global.json` exists in the current directory or its parent directories, the
+command uses the `latest` channel. If the nearest file is malformed or
+contains comments, parsing fails. dotnetup does not skip that file to search
+parent directories or use the `latest` channel.
 
 ## rollForward mapping
 
@@ -40,6 +43,7 @@ the full path to the file as the specification source. If no usable
 | `disable`, `patch`, `feature`, `minor`, or `major` | `10.0.103` |
 
 The exact-version mappings are pinned and are not advanced by an update.
+The `allowPrerelease` property does not affect the channel that dotnetup derives.
 
 ## Installation path from global.json
 

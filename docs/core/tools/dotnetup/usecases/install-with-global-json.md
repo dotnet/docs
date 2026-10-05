@@ -11,8 +11,9 @@ ai-usage: ai-assisted
 [!INCLUDE [public-preview](../includes/public-preview.md)]
 
 When you do not supply an SDK channel, `dotnetup sdk install` searches from
-the current directory toward the file system root. It uses the first usable
-`global.json` file that it finds.
+the current directory toward the file system root. It uses the nearest
+existing `global.json` file. If that file is malformed, the command fails
+instead of searching a parent directory. If no file exists, it uses `latest`.
 
 ## Install the repository requirement
 
@@ -53,6 +54,7 @@ For an SDK version such as `10.0.103`, dotnetup maps `rollForward` as follows:
 | `disable`, `patch`, `feature`, `minor`, or `major` | Exact version `10.0.103` |
 
 An exact requirement is pinned and is not changed by `dotnetup update`.
+The `allowPrerelease` property does not affect the channel that dotnetup derives.
 
 ## Use `sdk.paths`
 

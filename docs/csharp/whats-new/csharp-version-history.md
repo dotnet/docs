@@ -211,7 +211,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Tuple patterns
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
-- [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Static local functions](../fundamentals/functional/local-functions.md)
 - Lambda expressions, anonymous methods, and local functions can declare parameters that shadow local variables and parameters from an enclosing scope.
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
@@ -304,7 +304,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
 - [Pattern matching](../fundamentals/patterns/pattern-matching.md)
-- [Local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Local functions](../fundamentals/functional/local-functions.md)
 - [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
@@ -403,7 +403,7 @@ Let's take a look at some major features of C# 2.0, released in 2005, along with
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
 - [Anonymous methods](../language-reference/operators/delegate-operator.md)
 - [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
-- [Iterators](../programming-guide/concepts/iterators.md)
+- [Iterators](../fundamentals/functional/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)
 
 Other C# 2.0 features added capabilities to existing features:

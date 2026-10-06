@@ -102,6 +102,7 @@ Subscribing is optional. The `?.Invoke(...)` in the `Publish` method means the e
 
 ## See also
 
+- [Lambda expressions](../functional/lambdas.md)
 - [Type system overview](index.md)
 - [Methods](../../methods.md)
 - [Pattern matching](../patterns/pattern-matching.md)

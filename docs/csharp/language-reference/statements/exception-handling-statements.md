@@ -140,7 +140,7 @@ If an exception occurs in an [async function](../keywords/async.md), the excepti
 
 :::code language="csharp" source="snippets/exception-handling-statements/ExceptionFromAsyncExample.cs" id="ExceptionFromAsync":::
 
-If an exception occurs in an [iterator method](../../iterators.md), the exception propagates to the caller only when the iterator advances to the next element.
+If an exception occurs in an [iterator method](../../fundamentals/functional/iterators.md), the exception propagates to the caller only when the iterator advances to the next element.
 
 ### The `try-finally` statement
 

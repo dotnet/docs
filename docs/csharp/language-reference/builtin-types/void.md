@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # void (C# reference)
 
-Use `void` as the return type of a [method](../../programming-guide/classes-and-structs/methods.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md) to specify that the method doesn't return a value.
+Use `void` as the return type of a [method](../../programming-guide/classes-and-structs/methods.md) or a [local function](../../fundamentals/functional/local-functions.md) to specify that the method doesn't return a value.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

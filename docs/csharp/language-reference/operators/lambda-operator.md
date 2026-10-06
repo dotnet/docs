@@ -61,7 +61,7 @@ public override string ToString()
 
 You can use expression body definitions for the following members:
 
-- **Methods and local functions:** A member that returns a value has the form `T M() => expression;`. A `void` member has the form `void M() => statementExpression;`. For more information, see [Methods](../../programming-guide/classes-and-structs/methods.md) and [Local functions](../../programming-guide/classes-and-structs/local-functions.md).
+- **Methods and local functions:** A member that returns a value has the form `T M() => expression;`. A `void` member has the form `void M() => statementExpression;`. For more information, see [Methods](../../programming-guide/classes-and-structs/methods.md) and [Local functions](../../fundamentals/functional/local-functions.md).
 - **Operators:** An operator has the form `public static T operator +(T left, T right) => expression;`. For more information, see [Operator overloading](operator-overloading.md).
 - **Properties and indexers:** A read-only property or indexer has the form `T P => expression;` or `T this[int i] => expression;`. You can also use expression bodies for individual accessors. A `get` accessor has the form `get => expression;`. A `set` or `init` accessor has the form `set => statementExpression;` or `init => statementExpression;`. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexers](../../programming-guide/indexers/index.md).
 - **Constructors and finalizers:** These members have the form `C() => statementExpression;` or `~C() => statementExpression;`. For more information, see [Constructors](../../programming-guide/classes-and-structs/constructors.md) and [Finalizers](../../programming-guide/classes-and-structs/finalizers.md).

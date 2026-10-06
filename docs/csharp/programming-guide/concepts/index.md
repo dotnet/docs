@@ -12,7 +12,7 @@ This section explains programming concepts in the C# language.
 | Title | Description |
 |-------|-------------|
 |[Covariance and Contravariance (C#)](./covariance-contravariance/index.md)|Shows how to enable implicit conversion of generic type parameters in interfaces and delegates.|
-|[Iterators (C#)](./iterators.md)|Describes iterators, which are used to step through collections and return elements one at a time.|
+|[Iterators (C#)](../../fundamentals/functional/iterators.md)|Describes iterators, which are used to step through collections and return elements one at a time.|
 
 ## Related sections
 

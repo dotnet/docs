@@ -29,7 +29,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8421**](#static-local-functions-cant-capture-state): *A static local function cannot contain a reference to 'variable'.*
 - [**CS8422**](#static-local-functions-cant-capture-state): *A static local function cannot contain a reference to 'this' or 'base'.*
 
-[Local functions](../../programming-guide/classes-and-structs/local-functions.md) were added in C# 7.0. They let you declare helper methods inside another member. The diagnostics in this article cover local function declarations, calls, usage, and the extra capture restrictions for `static` local functions.
+[Local functions](../../fundamentals/functional/local-functions.md) were added in C# 7.0. They let you declare helper methods inside another member. The diagnostics in this article cover local function declarations, calls, usage, and the extra capture restrictions for `static` local functions.
 
 ## Local function bodies
 
@@ -54,7 +54,7 @@ The compiler reports this warning when you declare a local function but no reach
 - **CS8421**: *A static local function cannot contain a reference to 'variable'.*
 - **CS8422**: *A static local function cannot contain a reference to 'this' or 'base'.*
 
-A [`static` local function](../../programming-guide/classes-and-structs/local-functions.md) can't capture state from the enclosing scope. It can't reference enclosing local variables, parameters, instance members through `this`, or `this` itself. Pass each value the local function needs as a parameter (**CS8421**, **CS8422**). If the local function must capture variables or instance state from the enclosing scope, remove the `static` modifier.
+A [`static` local function](../../fundamentals/functional/local-functions.md) can't capture state from the enclosing scope. It can't reference enclosing local variables, parameters, instance members through `this`, or `this` itself. Pass each value the local function needs as a parameter (**CS8421**, **CS8422**). If the local function must capture variables or instance state from the enclosing scope, remove the `static` modifier.
 
 The following example shows references that cause **CS8422**:
 

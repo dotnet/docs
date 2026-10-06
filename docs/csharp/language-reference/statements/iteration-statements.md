@@ -161,4 +161,4 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [Declarations](./declarations.md)
-- [Iterators](../../iterators.md)
+- [Iterators](../../fundamentals/functional/iterators.md)

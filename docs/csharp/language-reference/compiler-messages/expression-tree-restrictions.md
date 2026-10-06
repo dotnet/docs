@@ -169,7 +169,7 @@ The following expressions are prohibited:
 
 - Invocations of [partial methods](../keywords/partial-member.md) that don't have an implementing declaration.
 - Invocations of [conditional methods](../preprocessor-directives.md#conditional-compilation) that have been removed.
-- Invocations of [local functions](../../programming-guide/classes-and-structs/local-functions.md).
+- Invocations of [local functions](../../fundamentals/functional/local-functions.md).
 - `async` lambda expressions aren't allowed.
 - Using [`base`](../keywords/base.md) access to directly call a virtual method declared in a base class.
 - [assignment](../operators/assignment-operator.md) operations.

@@ -24,6 +24,6 @@ When a <xref:System.Threading.Tasks.Parallel.For*?displayProperty=nameWithType> 
 
 - [Data Parallelism](data-parallelism-task-parallel-library.md)
 - [Custom Partitioners for PLINQ and TPL](custom-partitioners-for-plinq-and-tpl.md)
-- [Iterators (C#)](../../csharp/programming-guide/concepts/iterators.md)
+- [Iterators (C#)](../../csharp/fundamentals/functional/iterators.md)
 - [Iterators (Visual Basic)](../../visual-basic/programming-guide/concepts/iterators.md)
 - [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

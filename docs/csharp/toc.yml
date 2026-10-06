@@ -150,6 +150,18 @@ items:
       href: fundamentals/statements/collections.md
     - name: LINQ
       href: fundamentals/statements/linq.md
+  - name: Building software
+    items:
+    - name: Functional techniques
+      items:
+      - name: Overview
+        href: fundamentals/functional/index.md
+      - name: Lambda expressions
+        href: fundamentals/functional/lambdas.md
+      - name: Local functions
+        href: fundamentals/functional/local-functions.md
+      - name: Iterators
+        href: fundamentals/functional/iterators.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -355,8 +367,6 @@ items:
   items:
   - name: Methods
     href: methods.md
-  - name: Iterators
-    href: iterators.md
   - name: Delegates & events
     items:
     - name: Introduction to delegates
@@ -537,8 +547,6 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
         - name: Use Variance for Func and Action Generic Delegates
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
-    - name: Iterators
-      href: programming-guide/concepts/iterators.md
   - name: Equality and equality comparisons
     items:
     - name: Equality comparisons
@@ -607,8 +615,6 @@ items:
       items:
       - name: Methods overview
         href: programming-guide/classes-and-structs/methods.md
-      - name: Local functions
-        href: programming-guide/classes-and-structs/local-functions.md
       - name: Implicitly Typed Local Variables
         href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
       - name: "How to use implicitly typed local variables and arrays in a query expression"

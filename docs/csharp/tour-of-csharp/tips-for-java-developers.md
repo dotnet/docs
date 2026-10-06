@@ -86,7 +86,7 @@ You can work productively in C# almost immediately because of the similarities. 
 1. [***Nullable and non-nullable types***](../fundamentals/null-safety/nullable-reference-types.md): C# supports *nullable value types*, and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. Non-nullable reference types minimize programming errors that throw a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 1. [***Extensions***](../programming-guide/classes-and-structs/extension-methods.md):  In C#, you can create members that *extend* a class or interface. Extensions provide new behavior for a type from a library, or all types that implement a given interface.
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
-1. [***Local functions***](../programming-guide/classes-and-structs/local-functions.md): In C#, you can nest functions inside methods, or other local functions. Local functions provide yet another layer of encapsulation.
+1. [***Local functions***](../fundamentals/functional/local-functions.md): In C#, you can nest functions inside methods, or other local functions. Local functions provide yet another layer of encapsulation.
 
 > [!TIP]
 > To learn more about C#'s type system—including `struct` vs. `class`, records, and interfaces—visit the [Type system](../fundamentals/types/index.md) overview in the Fundamentals section.

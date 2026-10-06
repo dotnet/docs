@@ -10,6 +10,8 @@ ms.custom: https://github.com/dotnet/docs/issues/56305
 
 Starting in .NET 11, tensor operations use consistent shape-alignment rules. Default rank-zero empty tensors and spans have an effective shape of `[0]` during computations, and operations can ignore redundant leading singleton dimensions when they align shapes.
 
+The change is delivered in the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) package, including its supported target frameworks. Updating the package can affect apps that target earlier .NET versions.
+
 ## Version introduced
 
 .NET 11

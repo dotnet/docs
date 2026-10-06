@@ -11,7 +11,7 @@ ai-usage: ai-generated
 > [!TIP]
 > This article teaches synchronous iterators for developers who know methods, loops, and collections. For complete `yield` syntax and restrictions, see the [`yield` statement reference](../../language-reference/statements/yield.md).
 
-An *iterator method* produces a sequence of values one at a time. It returns <xref:System.Collections.Generic.IEnumerable`1>, and callers usually consume its values with a `foreach` statement.
+An *iterator method* produces a sequence of values one at a time. This article focuses on iterator methods that return <xref:System.Collections.Generic.IEnumerable`1>, whose values callers usually consume with a `foreach` statement.
 
 Use an iterator when the method can describe how to produce a sequence without building the complete result in a collection first. Iterator methods work especially well for filters, generated values, and pipelines where each step handles one element at a time.
 

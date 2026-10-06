@@ -80,7 +80,7 @@ The following code uses both forms:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="LocalAndLambda":::
 
-`IsShortWeek` names a rule reused by two operations in the method. The lambda passed to `Select` performs one short transformation at its point of use.
+`IsShortWeek` gives the rule passed to `Where` a descriptive name. The lambda passed to `Select` performs one short transformation at its point of use.
 
 Use a regular method instead of a local function when several members need the helper. Use a lambda instead when the behavior is short and its purpose is clear from the receiving method.
 

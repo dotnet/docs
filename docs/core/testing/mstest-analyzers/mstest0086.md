@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0086: Remove redundant test method attribute"
 description: "Learn about code analysis rule MSTEST0086: Remove redundant test method attribute"
-ms.date: 10/01/2026
+ms.date: 10/06/2026
 f1_keywords:
 - MSTEST0086
 - RedundantTestMethodAttributeAnalyzer
@@ -10,7 +10,7 @@ helpviewer_keywords:
 - MSTEST0086
 author: evangelink
 ms.author: amauryleve
-ai-usage: ai-generated
+ai-usage: ai-assisted
 dev_langs:
 - CSharp
 - VB
@@ -25,7 +25,7 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking |
 | **Enabled by default** | Yes |
 | **Default severity** | Info |
-| **Introduced in version** | 4.5.0 (preview) |
+| **Introduced in version** | 4.5.0 |
 | **Is there a code fix** | Yes, for C# only |
 
 ## Cause
@@ -37,6 +37,10 @@ A test method declares an MSTest attribute whose effective behavior is already s
 Duplicate attributes make the effective test policy harder to understand and maintain. The rule reports method-level conditions, retry settings, isolation settings, metadata, deployment items, or dependencies only when the class-level configuration already provides equivalent or more restrictive behavior.
 
 The rule covers `OSCondition`, `ArchitectureCondition`, `CICondition`, `DoNotParallelize`, `ResourceLock`, `Retry`, `Ignore`, `TestCategory`, `TestProperty`, `DeploymentItem`, and `DependsOn`.
+
+For `OSCondition`, `ArchitectureCondition`, `CICondition`, `Retry`, `Ignore`, and `DependsOn`, the rule reports redundant attributes only on methods declared in sealed test classes. These class-level attributes aren't inherited, so removing a method-level attribute from an unsealed class could change how an inherited test runs in a derived class.
+
+For `DoNotParallelize`, `ResourceLock`, `TestCategory`, `TestProperty`, and `DeploymentItem`, the rule also considers attributes on base classes. The rule doesn't report `MemberCondition`, `ExecutableCondition`, or custom attributes.
 
 ```csharp
 [TestClass, DoNotParallelize]

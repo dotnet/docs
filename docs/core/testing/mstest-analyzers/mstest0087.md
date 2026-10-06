@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0087: Avoid duplicated 'DataRow' display names"
 description: "Learn about code analysis rule MSTEST0087: Avoid duplicated 'DataRow' display names"
-ms.date: 10/01/2026
+ms.date: 10/06/2026
 f1_keywords:
 - MSTEST0087
 - DuplicateDataRowDisplayNameAnalyzer
@@ -25,16 +25,16 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking |
 | **Enabled by default** | Yes |
 | **Default severity** | Warning |
-| **Introduced in version** | 4.5.0 (preview) |
+| **Introduced in version** | 4.5.0 |
 | **Is there a code fix** | No |
 
 ## Cause
 
-Two or more <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> instances on the same test method set the same nonempty `DisplayName`.
+Two or more <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> instances on the same test method set the same `DisplayName`, and the name isn't null, empty, or whitespace.
 
 ## Rule description
 
-Duplicate explicit display names make data rows indistinguishable in Test Explorer, reports, and failure output. The rule compares names with ordinal, case-sensitive equality and reports each duplicate after the first occurrence.
+Duplicate explicit display names make data rows indistinguishable in Test Explorer, reports, and failure output. The rule compares names with ordinal, case-sensitive equality and reports each duplicate after the first occurrence. It ignores names that are null, empty, or whitespace.
 
 ```csharp
 [TestMethod]

@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0085: '[TestClass]' should not be applied to abstract classes"
 description: "Learn about code analysis rule MSTEST0085: '[TestClass]' should not be applied to abstract classes"
-ms.date: 10/01/2026
+ms.date: 10/06/2026
 f1_keywords:
 - MSTEST0085
 - TestClassAttributeShouldNotBeAppliedToAbstractClassAnalyzer
@@ -25,7 +25,7 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking |
 | **Enabled by default** | Yes |
 | **Default severity** | Info |
-| **Introduced in version** | 4.5.0 (preview) |
+| **Introduced in version** | 4.5.0 |
 | **Is there a code fix** | No |
 
 ## Cause

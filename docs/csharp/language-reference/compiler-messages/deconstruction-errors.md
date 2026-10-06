@@ -49,7 +49,7 @@ That's by design. The text closely matches the text of the compiler error or war
 
 - **CS8129**: *No suitable 'Deconstruct' instance or extension method was found for type 'type', with count out parameters and a void return type.*
 
-Provide an accessible instance or extension `Deconstruct` method that returns `void` and has one `out` parameter for each variable on the left. Match each parameter type to the corresponding deconstruction variable (**CS8129**). For more information, see [user-defined deconstruction](../../fundamentals/functional/deconstruct.md#user-defined-types) and the [`out` parameter modifier](../keywords/method-parameters.md#out-parameter-modifier).
+Provide an accessible instance or extension `Deconstruct` method that returns `void` and has one `out` parameter for each variable on the left. Match each parameter type to the corresponding deconstruction variable (**CS8129**). For more information, see [user-defined deconstruction](../../fundamentals/patterns/deconstruct.md#deconstruct-user-defined-types) and the [`out` parameter modifier](../keywords/method-parameters.md#out-parameter-modifier).
 
 ## Type inference for deconstruction variables, discards, and `out` variables
 
@@ -58,7 +58,7 @@ Provide an accessible instance or extension `Deconstruct` method that returns `v
 - **CS8183**: *Cannot infer the type of implicitly-typed discard.*
 - **CS8197**: *Cannot infer the type of implicitly-typed out variable 'variable'.*
 
-Supply a typed, deconstructable expression on the right so the compiler can determine each implicitly typed variable (**CS8130**, **CS8131**). Cast or otherwise give a discarded expression a type; in a deconstruction, specify an element type when appropriate (**CS8183**). For an `out` variable, use a method parameter that supplies the type or specify the type explicitly in the `out` argument (**CS8197**). For more information, see [deconstruction](../../fundamentals/functional/deconstruct.md) and [calls with `out` parameters](../../fundamentals/patterns/discards.md#calls-to-methods-with-out-parameters).
+Supply a typed, deconstructable expression on the right so the compiler can determine each implicitly typed variable (**CS8130**, **CS8131**). Cast or otherwise give a discarded expression a type; in a deconstruction, specify an element type when appropriate (**CS8183**). For an `out` variable, use a method parameter that supplies the type or specify the type explicitly in the `out` argument (**CS8197**). For more information, see [deconstruction](../../fundamentals/patterns/deconstruct.md) and [calls with `out` parameters](../../fundamentals/patterns/discards.md#calls-to-methods-with-out-parameters).
 
 ## Deconstruction cardinality
 
@@ -81,4 +81,4 @@ var (x, y) = point;
 (a, b) = point;
 ```
 
-For more information, see [tuple deconstruction](../../fundamentals/functional/deconstruct.md#tuples).
+For more information, see [tuple deconstruction](../../fundamentals/patterns/deconstruct.md#deconstruct-tuples).

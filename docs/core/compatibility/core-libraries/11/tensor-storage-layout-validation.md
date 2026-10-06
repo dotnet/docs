@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - Tensor operations reject unsupported storage layouts"
-description: Learn about the breaking change in .NET 12 where multidimensional Tensor APIs reject unsupported overlap and incompatible array storage.
+description: Learn about the breaking change in .NET 11 where multidimensional Tensor APIs reject unsupported overlap and incompatible array storage.
 ms.date: 09/30/2026
 ai-usage: ai-generated
 ms.custom: https://github.com/dotnet/docs/issues/56290
@@ -8,13 +8,13 @@ ms.custom: https://github.com/dotnet/docs/issues/56290
 
 # Tensor operations reject unsupported storage layouts
 
-Starting in .NET 12, multidimensional Tensor copying and destination-taking operations reject unsupported overlapping storage layouts with <xref:System.ArgumentException> before they write output. Tensor-span constructors also validate the element type of `System.Array` storage.
+Starting in .NET 11, multidimensional Tensor copying and destination-taking operations reject unsupported overlapping storage layouts with <xref:System.ArgumentException> before they write output. Tensor-span constructors also validate the element type of `System.Array` storage.
 
 The change is delivered in the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) package, including its supported target frameworks. Updating the package can affect apps that target earlier .NET versions. The separate `TensorPrimitives` APIs retain their existing overlap contract.
 
 ## Version introduced
 
-.NET 12 Preview 1
+.NET 11
 
 ## Previous behavior
 

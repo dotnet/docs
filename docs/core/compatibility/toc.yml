@@ -4,14 +4,6 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
-      - name: .NET 12
-        items:
-          - name: Overview
-            href: 12.md
-          - name: Core .NET libraries
-            items:
-              - name: Tensor operations reject unsupported storage layouts
-                href: core-libraries/12/tensor-storage-layout-validation.md
       - name: .NET 11
         items:
           - name: Overview
@@ -50,6 +42,8 @@ items:
                 href: core-libraries/11/tar-checksum-validation.md
               - name: TarWriter uses HardLink entries for hard-linked files
                 href: core-libraries/11/tarwriter-hardlink-entries.md
+              - name: Tensor operations reject unsupported storage layouts
+                href: core-libraries/11/tensor-storage-layout-validation.md
               - name: ZipArchive.CreateAsync eagerly loads ZIP archive entries
                 href: core-libraries/11/ziparchive-createasync-eager-load.md
           - name: Cryptography

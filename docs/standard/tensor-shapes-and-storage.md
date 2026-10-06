@@ -87,5 +87,5 @@ The library doesn't implicitly allocate a full-tensor snapshot to support arbitr
 
 - [Numerics in .NET](numerics.md)
 - [Use SIMD and hardware intrinsics in .NET](simd.md)
-- [Tensor storage-layout breaking change](../core/compatibility/core-libraries/12/tensor-storage-layout-validation.md)
+- [Tensor storage-layout breaking change](../core/compatibility/core-libraries/11/tensor-storage-layout-validation.md)
 - <xref:System.Numerics.Tensors>

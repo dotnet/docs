@@ -46,6 +46,17 @@ An incorrect system clock or an expired manifest can cause verification to
 fail. For recovery guidance, see
 [A release manifest has expired](../troubleshooting.md#a-release-manifest-has-expired).
 
+### Trusted certificates
+
+For manifest signatures and their timestamps, `dotnetup` uses trusted root
+certificates bundled with the tool. It doesn't add certificates from the
+operating system's trust store to those trust roots.
+
+Adding a certificate to the operating system's trust store doesn't make
+`dotnetup` trust a release-manifest signature from that certificate's chain.
+The signature must satisfy dotnetup's verification policy and chain to a
+bundled trusted root.
+
 ## Daily and unlisted prerelease builds
 
 Daily builds, and prerelease versions that aren't in the signed release

@@ -42,6 +42,8 @@ items:
                 href: core-libraries/11/tar-checksum-validation.md
               - name: TarWriter uses HardLink entries for hard-linked files
                 href: core-libraries/11/tarwriter-hardlink-entries.md
+              - name: Tensor operations align equivalent shapes and empty tensors
+                href: core-libraries/11/tensor-shape-alignment.md
               - name: Tensor operations reject unsupported storage layouts
                 href: core-libraries/11/tensor-storage-layout-validation.md
               - name: ZipArchive.CreateAsync eagerly loads ZIP archive entries

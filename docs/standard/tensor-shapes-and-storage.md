@@ -9,6 +9,8 @@ ai-usage: ai-generated
 
 The [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) package provides <xref:System.Numerics.Tensors.Tensor`1>, <xref:System.Numerics.Tensors.TensorSpan`1>, and <xref:System.Numerics.Tensors.ReadOnlyTensorSpan`1> for multidimensional data. Tensor shapes describe the logical dimensions; strides describe the distance, in elements, between successive positions along each dimension.
 
+The behavior described here ships in the package across its supported target frameworks. Updating the package can affect apps that target earlier .NET versions.
+
 These types share many conventions with NumPy, but they aren't interchangeable. Account for the following differences when you port an algorithm.
 
 ## Empty shapes and scalar-like results

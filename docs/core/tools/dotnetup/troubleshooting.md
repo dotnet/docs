@@ -217,6 +217,27 @@ Control (UAC) prompt was canceled.
 **Solution:** Run the command again and approve the UAC prompt. Or, select the
 `shell` or `none` access mode, which doesn't require elevation.
 
+## A release manifest has expired
+
+**Symptom:** An install or update fails during release-manifest verification
+with the `ExpiredNow` failure code.
+
+**Cause:** The current system time is at or after the manifest's expiration
+time. The manifest might be expired, or the system clock might be incorrect.
+A valid signature doesn't make an expired manifest acceptable.
+
+**Solution:**
+
+1. Check your system's date and time. Correct the clock if necessary.
+1. Retry the command. If a proxy serves cached release metadata, ask your
+   administrator to check whether it serves an expired manifest.
+1. If the clock is correct and the failure persists, report the problem with
+   the command's detailed output.
+
+Don't edit the manifest or change the clock to bypass expiration checks.
+For more information, see
+[Manifest expiration](concepts/download-verification.md#manifest-expiration).
+
 ## An installation is blocked by an IT policy
 
 **Symptom:** An install of a daily or prerelease build fails with a message

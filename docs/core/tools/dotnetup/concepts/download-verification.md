@@ -36,6 +36,16 @@ access to the required certificate revocation endpoints. If the network blocks
 these checks, verification fails and `dotnetup` stops the installation, even
 when the signature is valid.
 
+### Manifest expiration
+
+Release manifests contain an expiration time. `dotnetup` checks that the
+manifest hasn't expired, even if its signature and archive hashes are valid.
+It also checks that the manifest was signed before its expiration time.
+
+An incorrect system clock or an expired manifest can cause verification to
+fail. For recovery guidance, see
+[A release manifest has expired](../troubleshooting.md#a-release-manifest-has-expired).
+
 ## Daily and unlisted prerelease builds
 
 Daily builds, and prerelease versions that aren't in the signed release

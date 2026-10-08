@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0084: Platform compatibility attributes should be consistent with '[OSCondition]'"
 description: "Learn about code analysis rule MSTEST0084: Platform compatibility attributes should be consistent with '[OSCondition]'"
-ms.date: 10/01/2026
+ms.date: 10/06/2026
 f1_keywords:
 - MSTEST0084
 - OSPlatformAttributesShouldBeConsistentAnalyzer
@@ -10,7 +10,7 @@ helpviewer_keywords:
 - MSTEST0084
 author: evangelink
 ms.author: amauryleve
-ai-usage: ai-generated
+ai-usage: ai-assisted
 dev_langs:
 - CSharp
 - VB
@@ -25,7 +25,7 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking |
 | **Enabled by default** | Yes |
 | **Default severity** | Info |
-| **Introduced in version** | 4.5.0 (preview) |
+| **Introduced in version** | 4.5.0 |
 | **Is there a code fix** | Yes, for C# only |
 
 ## Cause
@@ -42,7 +42,9 @@ Platform compatibility attributes inform compile-time analysis, but they don't c
 public void UsesWindowsApi() { } // Violation
 ```
 
-The rule compares operating-system families. `[OSCondition]` doesn't represent platform version constraints, so the analyzer doesn't report scenarios whose version constraints can't be represented safely.
+The rule accounts for platform compatibility attributes on the test, its containing types, and its assembly. A compatible class-level `[OSCondition]` can satisfy the requirement for a test method. If both the class and method declare `[OSCondition]`, their combined conditions must match the effective platform restriction.
+
+The rule compares operating-system families, not platform versions. For example, `[SupportedOSPlatform("windows10.0")]` still requires a condition for the Windows family, but `[OSCondition]` doesn't enforce the minimum Windows version. The analyzer doesn't report versioned `[UnsupportedOSPlatform]` restrictions because excluding an entire operating-system family would also skip supported versions.
 
 ## How to fix violations
 
@@ -55,7 +57,7 @@ Keep the platform compatibility attribute for API analysis, and add or update `[
 public void UsesWindowsApi() { }
 ```
 
-A C# code fix adds or updates `[OSCondition]`. Visual Basic reports the diagnostic but doesn't provide an automatic fix.
+A C# code fix adds or updates `[OSCondition]` when the analyzer can determine a compatible condition. The analyzer reports a diagnostic without a fix when, for example, a method's class-level condition conflicts with its platform attributes, the platform isn't represented by `OperatingSystems`, or the platform attributes mix supported and unsupported restrictions. Resolve those conflicts manually. Visual Basic reports the diagnostic but doesn't provide an automatic fix.
 
 ## When to suppress warnings
 

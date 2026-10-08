@@ -1,4 +1,4 @@
-﻿namespace pattern_objects;
+﻿namespace pattern_matching_objects;
 
 class Program
 {

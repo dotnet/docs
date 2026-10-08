@@ -34,7 +34,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/deconstruct.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/functional/deconstruct"
+      "redirect_url": "/dotnet/csharp/fundamentals/patterns/deconstruct"
     },
     {
       "source_path_from_root": "/docs/csharp/delegates-events.md",
@@ -81,6 +81,10 @@
       "redirect_url": "/dotnet/csharp/programming-guide/concepts"
     },
     {
+      "source_path_from_root": "/docs/csharp/fundamentals/functional/deconstruct.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/patterns/deconstruct"
+    },
+    {
       "source_path_from_root": "/docs/csharp/fundamentals/functional/discards.md",
       "redirect_url": "/dotnet/csharp/fundamentals/patterns/discards"
     },
@@ -95,6 +99,10 @@
     {
       "source_path_from_root": "/docs/csharp/fundamentals/null-safety/resolve-warnings.md",
       "redirect_url": "/dotnet/csharp/fundamentals/null-safety/common-tasks/resolve-warnings"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/fundamentals/tutorials/pattern-matching.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching-basics"
     },
     {
       "source_path_from_root": "/docs/csharp/fundamentals/types/anonymous-types.md",
@@ -5540,7 +5548,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/patterns-objects.md",
-      "redirect_url": "/dotnet/csharp/tutorials/patterns-objects"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching-basics"
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/exploration/records.md",
@@ -5628,7 +5636,11 @@
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/pattern-matching.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/build-algorithms-using-pattern-matching"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/tutorials/patterns-objects.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching-basics"
     },
     {
       "source_path_from_root": "/docs/csharp/tutorials/records.md",
@@ -5719,7 +5731,7 @@
     },
     {
       "source_path_from_root": "/docs/csharp/whats-new/tutorials/patterns-objects.md",
-      "redirect_url": "/dotnet/csharp/tutorials/patterns-objects"
+      "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching-basics"
     },
     {
       "source_path_from_root": "/docs/csharp/whats-new/tutorials/ranges-indexes.md",

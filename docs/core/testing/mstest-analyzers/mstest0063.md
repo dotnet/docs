@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0063: Test classes should have valid constructors"
 description: "Learn about code analysis rule MSTEST0063: Test classes should have valid constructors"
-ms.date: 02/04/2026
+ms.date: 10/06/2026
 f1_keywords:
 - MSTEST0063
 - TestClassConstructorShouldBeValidAnalyzer
@@ -13,6 +13,7 @@ ms.author: amauryleve
 ai-usage: ai-assisted
 dev_langs:
 - CSharp
+- VB
 ---
 # MSTEST0063: Test classes should have valid constructors
 
@@ -29,13 +30,13 @@ dev_langs:
 
 ## Cause
 
-A test class doesn't have a valid constructor. Valid constructors are `public` and either parameterless or have a single parameter of type <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>.
+A test class doesn't have a valid constructor. Without host-owned test-class injection, valid constructors are `public` and either parameterless or have a single parameter of type <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>. With host-owned injection, the rule also validates public constructor availability, preferred constructors, and `TestContext` parameter types.
 
 ## Rule description
 
-Test classes must have a public constructor that is either parameterless or accepts a single <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> parameter. This allows the test framework to instantiate the test class properly.
+Without host-owned test-class injection, test classes must have a public constructor that is either parameterless or accepts a single <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> parameter. This allows the test framework to instantiate the test class properly.
 
-Constructors that are non-public, have parameters of unsupported types, or have multiple parameters aren't valid and prevent the test framework from creating instances of the test class.
+In that mode, constructors that are non-public, have parameters of unsupported types, or have multiple parameters aren't valid and prevent the test framework from creating instances of the test class.
 
 ```csharp
 [TestClass]
@@ -67,9 +68,23 @@ public class MyTestClass
 }
 ```
 
+### Host-owned test-class injection
+
+Starting with MSTest 4.5, the experimental `MSTest.Extensions.Hosting` package supports [test-class construction from host services](../unit-testing-mstest-writing-tests-lifecycle.md#create-test-classes-from-host-services). When you register `AddMSTestTestClassInjection`, public constructors can accept service parameters and an optional exact `TestContext` parameter.
+
+In this mode, MSTEST0063 reports a diagnostic when:
+
+- The test class doesn't have a public constructor.
+- More than one public constructor declares <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute>.
+- A public constructor has a parameter whose type derives from `TestContext`, rather than `TestContext` itself.
+
+The analyzer also recognizes host-owned injection enabled through a referenced assembly that records the registration. It doesn't verify that the host registers every service required by a constructor.
+
+To fix these violations, expose a public constructor, mark at most one public constructor with `[ActivatorUtilitiesConstructor]`, and replace derived `TestContext` parameter types with `TestContext`. If you disable host-owned injection, use the standard constructor forms described in the next section. For unsupported build modes, see [MSTEST0088](mstest0088.md).
+
 ## How to fix violations
 
-Ensure your test class has a valid constructor. A valid constructor must be:
+Without host-owned test-class injection, ensure your test class has a valid constructor. A valid constructor must be:
 
 1. Declared as `public`.
 1. Either parameterless or accepts a single <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> parameter.
@@ -172,3 +187,8 @@ dotnet_diagnostic.MSTEST0063.severity = none
 ```
 
 For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).
+
+## See also
+
+- [Create test classes from host services](../unit-testing-mstest-writing-tests-lifecycle.md#create-test-classes-from-host-services)
+- [MSTEST0088: MSTest host test-class injection is not supported by the selected build mode](mstest0088.md)

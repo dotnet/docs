@@ -3,7 +3,7 @@ title: MSTest code analysis
 description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 10/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -36,7 +36,7 @@ The available values for this property:
 
 ### `None`
 
-This value sets all analyzers to `none` severity, disabling all of them. You can then enable individual analyzers using `.editorconfig` or `.globalconfig` files.
+This value sets rules to `none` severity, except rules whose default severity is Error. [MSTEST0088](mstest0088.md) remains enabled as an error even in `None` mode. To configure individual rules, use `.editorconfig` or `.globalconfig` files.
 
 ### `Default`
 
@@ -55,9 +55,11 @@ This is the mode most developers are expected to use. Rules that are enabled by 
 - [MSTEST0003: Test methods should have valid layout](mstest0003.md).
 - [MSTEST0043: Use retry attribute on test method](mstest0043.md).
 
+Rules whose default severity is Error, such as [MSTEST0088](mstest0088.md), retain that severity.
+
 ### `All`
 
-This mode is more aggressive than `Recommended`. All rules are enabled as warnings. In addition, the following rules are escalated to errors:
+This mode is more aggressive than `Recommended`. Rules are enabled with at least Warning severity, except the opt-in rules listed below. Rules whose default severity is Error, such as [MSTEST0088](mstest0088.md), retain that severity. In addition, the following rules are escalated to errors:
 
 - [MSTEST0003: Test methods should have valid layout](mstest0003.md).
 - [MSTEST0043: Use retry attribute on test method](mstest0043.md).
@@ -121,6 +123,7 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0082](mstest0082.md) - A test class inherits a lifecycle or test method from a different MSTest version
 - [MSTEST0085](mstest0085.md) - `[TestClass]` should not be applied to abstract classes
 - [MSTEST0086](mstest0086.md) - Remove redundant test method attribute
+- [MSTEST0088](mstest0088.md) - MSTest host test-class injection is not supported by the selected build mode
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
@@ -248,6 +251,7 @@ Rules for configuring test execution, parallelization, and other test settings:
 - [MSTEST0082](mstest0082.md) - A test class inherits a lifecycle or test method from a different MSTest version
 - [MSTEST0083](mstest0083.md) - Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start`
 - [MSTEST0084](mstest0084.md) - Platform compatibility attributes should be consistent with `[OSCondition]`
+- [MSTEST0088](mstest0088.md) - MSTest host test-class injection is not supported by the selected build mode
 
 Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), [Running tests](../unit-testing-mstest-running-tests.md)
 
@@ -342,6 +346,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0085](mstest0085.md) | Usage | `[TestClass]` should not be applied to abstract classes | Info |
 | [MSTEST0086](mstest0086.md) | Usage | Remove redundant test method attribute | Info |
 | [MSTEST0087](mstest0087.md) | Usage | Avoid duplicated `DataRow` display names | Warning |
+| [MSTEST0088](mstest0088.md) | Usage | MSTest host test-class injection is not supported by the selected build mode | Error |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

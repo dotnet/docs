@@ -3,7 +3,8 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 04/02/2025
+ms.date: 09/29/2026
+ai-usage: ai-assisted
 ---
 
 # .NET CLI overview
@@ -133,6 +134,10 @@ The following commands are installed by default:
 - [`tool search`](dotnet-tool-search.md)
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
+
+## Manage SDK installations with dotnetup
+
+Use [dotnetup](dotnetup/index.md) to manage user-level .NET SDK and runtime installations, configure access to those installations, and track version requirements.
 
 ## See also
 

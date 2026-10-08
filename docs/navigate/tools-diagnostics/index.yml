@@ -52,10 +52,14 @@ landingContent:
         links:
           - text: .NET CLI overview
             url: ../../core/tools/index.md
+          - text: dotnetup toolchain manager
+            url: ../../core/tools/dotnetup/index.md
       - linkListType: tutorial
         links:
           - text: Get started using the CLI
             url: ../../core/tutorials/with-visual-studio-code.md
+          - text: Get started with dotnetup
+            url: ../../core/tools/dotnetup/getting-started.md
       - linkListType: reference
         links:
           - text: dotnet build command

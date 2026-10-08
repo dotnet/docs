@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform services overview
 description: Learn about the available Microsoft.Testing.Platform (MTP) services.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 08/26/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -292,6 +292,21 @@ if (logger.IsEnabled(LogLevel.Information))
 ```
 
 Keep in mind that to prevent unnecessary allocation, you should check if the level is *enabled* using the `ILogger.IsEnabled(LogLevel)` API.
+
+## The `IDiagnosticLoggingInformation` service
+
+Starting with MTP 2.5 preview, call `serviceProvider.GetDiagnosticLoggingInformation()` to retrieve experimental information about the built-in diagnostic file logger. The method returns `null` when diagnostic logging isn't enabled.
+
+The `IDiagnosticLoggingInformation` service exposes:
+
+- `LogFile`, the file that currently receives diagnostic entries.
+- `LogLevel`, the minimum level written to the file.
+- `SynchronousWrite`, which indicates whether the file logger writes entries synchronously.
+
+The service is live. During test application construction, MTP can relocate the log to the effective results directory. Retain the service and read `LogFile` when you need the path instead of caching the first `FileInfo`. If log recovery leaves a partial file in the original location, `LogFile` identifies the replacement file that receives new entries.
+
+> [!IMPORTANT]
+> This API uses the `TPEXP` diagnostic ID and might change or be removed in a future release.
 
 ## The `IMessageBus` service
 

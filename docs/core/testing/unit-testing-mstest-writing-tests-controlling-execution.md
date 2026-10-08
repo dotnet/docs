@@ -3,7 +3,7 @@ title: Test execution and control in MSTest
 description: Learn how to control test execution in MSTest with parallelization, threading, timeouts, retries, and conditional execution.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/14/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -214,9 +214,6 @@ public class MixedTests
 
 ### `ResourceLockAttribute`
 
-> [!IMPORTANT]
-> `ResourceLockAttribute` is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
-
 Use `[ResourceLock]` to serialize only tests that access the same named resource. Unlike `[DoNotParallelize]`, a resource lock doesn't block tests that use unrelated resources. The default `ReadWrite` mode is exclusive, while multiple tests that request `ResourceAccessMode.Read` for the same resource can run together.
 
 ```csharp
@@ -241,9 +238,6 @@ If a test also uses `[DoNotParallelize]`, `[DoNotParallelize]` takes precedence 
 > MSTest 4.4 adds parallel-safety analyzers [MSTEST0073](mstest-analyzers/mstest0073.md) through [MSTEST0077](mstest-analyzers/mstest0077.md) to help you declare stable lock keys and protect shared process state.
 
 ## Test dependencies
-
-> [!IMPORTANT]
-> Test dependencies are planned for MSTest 4.4 and are available only in preview builds until MSTest 4.4.0 is released.
 
 Use `[DependsOn]` for integration or end-to-end tests that must run after other tests. Dependencies form a directed acyclic graph, so independent branches can still run in parallel.
 
@@ -455,7 +449,7 @@ Starting with MSTest 3.8, create custom retry logic by inheriting from <xref:Mic
 > [!IMPORTANT]
 > The `RetryBaseAttribute.ExecuteAsync` API, and its `RetryContext` and `RetryResult` types, are experimental. Using them produces the `MSTESTEXP` diagnostic, which you must acknowledge before you use the API.
 
-Starting with the MSTest 4.4 preview, `RetryResult.AllResults` exposes the result arrays from every attempt in the order they were added. MTP reports earlier attempts as superseded, while VSTest receives only the final result. MSTest retries only when an attempt contains a failed or timed-out result. An inconclusive result by itself stops the retry sequence.
+Starting with MSTest 4.4, `RetryResult.AllResults` exposes the result arrays from every attempt in the order they were added. MTP reports earlier attempts as superseded, while VSTest receives only the final result. MSTest retries only when an attempt contains a failed or timed-out result. An inconclusive result by itself stops the retry sequence.
 
 Process-level `--retry-failed-tests` and an MSTest retry attribute apply at different levels. Their effects are multiplicative because each process-level attempt can run the attribute's complete retry sequence.
 

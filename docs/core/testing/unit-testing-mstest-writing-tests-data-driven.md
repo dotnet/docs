@@ -4,7 +4,7 @@ description: Learn how to use DataRow, DynamicData, CombinatorialData, and TestD
 author: Evangelink
 ms.author: amauryleve
 ai-usage: ai-assisted
-ms.date: 09/02/2026
+ms.date: 10/01/2026
 ---
 
 # Data-driven testing in MSTest
@@ -27,8 +27,8 @@ MSTest also provides the following types to extend data-driven scenarios:
 - [`TestDataRow<T>`](#testdatarow): A return type for `ITestDataSource` implementations (including `DynamicData`) that adds metadata support such as display names, categories, and ignore messages to individual test cases.
 - [`ITestDataSource`](#itestdatasource): An interface you can implement on a custom attribute to create fully custom data source attributes.
 
-> [!IMPORTANT]
-> Built-in combinatorial testing is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released. For earlier MSTest versions, use the community-maintained [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
+> [!NOTE]
+> Built-in combinatorial testing is available starting with MSTest 4.4. For earlier MSTest versions, use the community-maintained [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
 
 ## `DataRowAttribute`
 
@@ -178,7 +178,7 @@ public class IgnoreDataRowExample
 
 ## `CombinatorialDataAttribute`
 
-In MSTest 4.4 preview builds, the `CombinatorialData` attribute generates the Cartesian product of the values for each test method parameter. Use the types in the `Microsoft.VisualStudio.TestTools.UnitTesting.Combinatorial` namespace.
+Starting with MSTest 4.4, the `CombinatorialData` attribute generates the Cartesian product of the values for each test method parameter. Use the types in the `Microsoft.VisualStudio.TestTools.UnitTesting.Combinatorial` namespace.
 
 Provide values for each parameter with one of the following options:
 
@@ -197,6 +197,9 @@ The following test combines two inferred `bool` values, two explicit values, thr
 Apply no more than one combinatorial value provider to each parameter. For a parameter type whose values MSTest can't infer, apply `CombinatorialValues`, `CombinatorialRange`, `CombinatorialRandomData`, or a custom attribute that implements `ICombinatorialValuesProvider`.
 
 `CombinatorialData` creates an exhaustive Cartesian product. It doesn't support pairwise generation, permutations, exclusions between parameter values, member-backed values, or class data. Use `DynamicData` or a custom `ITestDataSource` when values depend on each other or when you need to filter the generated test cases.
+
+> [!NOTE]
+> Starting with MSTest 4.5 preview, automatically generated data-driven display names escape control characters and unpaired surrogate characters. Valid surrogate pairs remain unchanged, and literal escape-sequence text stays distinct from the control character that it represents.
 
 ## `DynamicDataAttribute`
 

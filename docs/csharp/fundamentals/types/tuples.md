@@ -97,6 +97,6 @@ Tuples are the preferred choice when you need a lightweight unnamed data structu
 ## See also
 
 - [Tuple types (C# reference)](../../language-reference/builtin-types/value-tuples.md) for complete syntax details
-- [Deconstructing tuples and other types](../functional/deconstruct.md) for user-defined `Deconstruct` methods
+- [Deconstructing tuples and other types](../patterns/deconstruct.md) for user-defined `Deconstruct` methods
 - [Discards](../patterns/discards.md)
 - [Records](records.md)

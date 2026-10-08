@@ -126,7 +126,7 @@ You can also combine deconstruction with [pattern matching](../../fundamentals/p
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructToPattern":::
 
-For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../fundamentals/functional/deconstruct.md).
+For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../fundamentals/patterns/deconstruct.md).
 
 ## Tuple equality
 

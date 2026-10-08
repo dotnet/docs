@@ -103,7 +103,7 @@ public static class LibrariesExamples
     {
         // <JsonTypeInfoGeneric>
         JsonSerializerOptions options = new(JsonSerializerDefaults.Web);
-        options.MakeReadOnly();
+        options.MakeReadOnly(populateMissingResolver: true);
 
         // Before: manual downcast required
         JsonTypeInfo<MyRecord> info1 = (JsonTypeInfo<MyRecord>)options.GetTypeInfo(typeof(MyRecord));
@@ -124,6 +124,7 @@ public static class LibrariesExamples
     {
         // <JsonNamingIgnore>
         // Type-level JsonIgnore: all members use WhenWritingNull by default
+        // Type-level JsonNamingPolicy: ReleaseVersion uses snake_case
         // Per-member JsonNamingPolicy: EventName uses camelCase even though the
         // serializer options use PascalCase
         var options = new JsonSerializerOptions
@@ -131,10 +132,10 @@ public static class LibrariesExamples
             PropertyNamingPolicy = JsonNamingPolicy.PascalCase
         };
 
-        var data = new EventData { EventName = "Launch", Notes = null };
+        var data = new EventData { EventName = "Launch", ReleaseVersion = "11", Notes = null };
         string json = JsonSerializer.Serialize(data, options);
         Console.WriteLine(json);
-        // {"eventName":"Launch"}  -- Notes omitted (null), EventName camel-cased
+        // {"eventName":"Launch","release_version":"11"}  -- Notes omitted (null), EventName camel-cased
         // </JsonNamingIgnore>
     }
 
@@ -309,18 +310,24 @@ public static class LibrariesExamples
             }
         }
 
-        var pipe = new Pipe();
+        using var arrayStream = new MemoryStream();
+        PipeWriter arrayPipe = PipeWriter.Create(arrayStream);
 
         // Write a JSON array: [0,1,2,3,4]
         await JsonSerializer.SerializeAsyncEnumerable(
-            pipe.Writer,
+            arrayPipe,
             GenerateNumbers());
+        await arrayPipe.CompleteAsync();
 
-        // Write NDJSON (one value per line): 0\n1\n2\n3\n4\n
+        using var jsonlStream = new MemoryStream();
+        PipeWriter jsonlPipe = PipeWriter.Create(jsonlStream);
+
+        // Write JSON Lines (one value per line): 0\n1\n2\n3\n4\n
         await JsonSerializer.SerializeAsyncEnumerable(
-            pipe.Writer,
+            jsonlPipe,
             GenerateNumbers(),
             topLevelValues: true);
+        await jsonlPipe.CompleteAsync();
         // </JsonSerializeAsyncEnumerablePipe>
     }
 
@@ -334,6 +341,17 @@ public static class LibrariesExamples
         Measurement? roundTripped = JsonSerializer.Deserialize<Measurement>(json);
         Console.WriteLine(roundTripped); // Measurement { Voltage = 1.229 }
         // </JsonNumericTypes>
+    }
+
+    static void JsonUnionSerializationExample()
+    {
+        // <JsonUnionSerialization>
+        Reading reading = new("hello");
+        string json = JsonSerializer.Serialize(reading);
+        Reading copy = JsonSerializer.Deserialize<Reading>(json);
+        Console.WriteLine(json); // "hello"
+        Console.WriteLine(copy.Value); // hello
+        // </JsonUnionSerialization>
     }
 
     static void JsonUnionStructuralClassifierExample()
@@ -399,23 +417,32 @@ public static class LibrariesExamples
 
 record MyRecord(string Name, int Value);
 
+[JsonNamingPolicy(JsonKnownNamingPolicy.SnakeCaseLower)]
 [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
 sealed class EventData
 {
     [JsonNamingPolicy(JsonKnownNamingPolicy.CamelCase)]
     public string EventName { get; set; } = "";
 
+    public string ReleaseVersion { get; set; } = "";
+
     public string? Notes { get; set; }
 }
 
 readonly record struct Measurement(Decimal64 Voltage);
 
+// <JsonUnionType>
+public union Reading(int, string);
+// </JsonUnionType>
+
+// <JsonUnionStructuralType>
 [JsonUnion(TypeClassifier = typeof(JsonUnionTypeStructuralClassifier))]
 public union PetUnion(Dog, Cat);
 
 public sealed record Dog(string Name, string Breed);
 
 public sealed record Cat(string Name, int Lives);
+// </JsonUnionStructuralType>
 
 [JsonSerializable(typeof(PetUnion))]
 internal partial class PetJsonContext : JsonSerializerContext;

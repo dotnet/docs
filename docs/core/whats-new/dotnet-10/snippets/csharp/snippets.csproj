@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+    <PackageReference Include="System.IO.Pipelines" Version="10.0.12" />
   </ItemGroup>
 
   <!-- Exclude all C# files from compilation as they are code snippets, not a complete application -->

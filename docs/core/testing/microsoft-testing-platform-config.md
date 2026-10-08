@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) config options
 description: Learn how to configure MTP using testconfig.json configuration settings and environment variables.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -121,7 +121,7 @@ Bootstrap-only options run before MTP loads configuration. Don't put `config-fil
 ### Passive command-line option defaults
 
 > [!IMPORTANT]
-> `commandLineOptionDefaults` is available in MTP 2.4 preview.
+> `commandLineOptionDefaults` is available starting with MTP 2.4.
 
 Use `commandLineOptionDefaults` to supply an argument only when an enabled feature requests that option and no higher-priority value exists. A passive default doesn't enable an option, register an extension, or activate a feature. Omit the leading `--` from each key.
 
@@ -200,7 +200,7 @@ If you're migrating from a *.runsettings* file, the following table maps common 
 ## MSBuild configuration
 
 > [!IMPORTANT]
-> `TestingPlatformEnvironmentVariable` is available in MTP 2.4 preview.
+> `TestingPlatformEnvironmentVariable` is available starting with MTP 2.4.
 
 To set an environment variable on the test process that `InvokeTestingPlatform` launches, add a `TestingPlatformEnvironmentVariable` item:
 
@@ -210,6 +210,8 @@ To set an environment variable on the test process that `InvokeTestingPlatform` 
 ```
 
 The `Value` metadata preserves semicolons instead of splitting them into MSBuild items. Declared values overlay the environment that the MSBuild process inherits. Without these items, the launched process inherits the environment unchanged.
+
+Starting with MTP 2.4, `InvokeTestingPlatform` also derives the architecture-specific `DOTNET_ROOT_<ARCH>` variable from `DOTNET_HOST_PATH` when it launches a compatible apphost. Set `TestingPlatformDisableAppHostDotnetRoot` to `true` to opt out. An applicable `TestingPlatformEnvironmentVariable` item remains authoritative.
 
 ## Environment variables
 
@@ -284,7 +286,7 @@ The variable has no effect on Windows, where named pipes don't use file-system p
 ### Deadline cancellation prototype
 
 > [!WARNING]
-> **EXPERIMENTAL/PROTOTYPE:** Deadline cancellation is a prototype in MTP 2.4 preview. Its variables and behavior can change or be removed.
+> **EXPERIMENTAL/PROTOTYPE:** Deadline cancellation is a prototype in MTP 2.4. Its variables and behavior can change or be removed.
 
 Set `TESTINGPLATFORM_DEADLINE` to the complete hard-cancel instant supplied by the deadline producer. Use an ISO 8601 UTC value. Don't subtract MTP's margins from the value.
 

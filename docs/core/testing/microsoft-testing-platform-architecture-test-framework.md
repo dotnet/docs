@@ -3,7 +3,7 @@ title: Build a test framework for Microsoft.Testing.Platform (MTP)
 description: Learn how to create a custom test framework for Microsoft.Testing.Platform (MTP), including registration, lifecycle, and test node reporting.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/17/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -310,6 +310,19 @@ await context.MessageBus.PublishAsync(
         failedTestNode));
 ```
 
+#### Canonical test execution
+
+Starting with MTP 2.5 preview, call `ExecuteRequestContext.StartTestExecutionAsync` with an in-progress `TestNodeUpdateMessage` to start an experimental canonical `TestExecution`. The start method publishes the in-progress update and returns an object that keeps execution lifecycle, message ordering, and telemetry correlation together.
+
+Use `Run` or `RunAsync` to invoke framework and test code in the canonical execution context. When OpenTelemetry is active, child activities created by the test remain under the same test execution activity.
+
+Call `CompleteAsync` with the ordered result messages and the producer-observed execution end time. Every result must use the session, test UID, and parent UID from the start message. The last message is the final result. An empty collection publishes an execution-completed update without inventing an outcome.
+
+Dispose an incomplete `TestExecution` to abandon it without publishing a result. After completion or disposal, the object rejects additional execution or completion calls.
+
+> [!IMPORTANT]
+> `StartTestExecutionAsync` and `TestExecution` use the `TPEXP` diagnostic ID and might change or be removed in a future release.
+
 ### The `TestNodeUpdateMessage` data
 
 As mentioned in the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) section, before utilizing the message bus, you must specify the type of data you intend to supply. The testing platform has defined a well-known type, `TestNodeUpdateMessage`, to represent the concept of a *test update information*.
@@ -488,6 +501,10 @@ public sealed record TestMetadataProperty(
 ```
 
 `TestMetadataProperty` is utilized to convey the characteristics or *traits* of a `TestNode`.
+
+Starting with MTP 2.4, add `AssertionFailureProperty` to a failed test node to supply separate, preformatted expected and actual values. Report consumers can use these values to render a structured difference instead of parsing the failure message. At least one value must be non-`null`. Consumers prefer this property but can fall back to the legacy `assert.expected` and `assert.actual` entries in <xref:System.Exception.Data>.
+
+Starting with MTP 2.4, add `RetryAttemptProperty` to every update in an in-process retry sequence. `AttemptNumber` is one-based, and `IsSuperseded` marks an attempt that a later attempt replaces. TRX, JUnit, and the process exit code ignore superseded attempts, while the terminal, HTML, and CTRF consumers can preserve the full history. This property doesn't represent the out-of-process `--retry-failed-tests` attempts.
 
 ##### Discovery information
 

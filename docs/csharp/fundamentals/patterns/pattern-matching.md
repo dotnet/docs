@@ -21,11 +21,13 @@ You can use a pattern in three contexts:
 - In a `case` label of a `switch` statement.
 - In an arm of a `switch` expression.
 
-Patterns are often clearer than a sequence of comparison statements because each branch describes the data it handles. For example, the following method uses a `switch` expression to choose a delivery message:
+Patterns test one evaluated input against types, constants, or a shape that can contain nested patterns. A Boolean condition can also compare two independently evaluated expressions whose values aren't constants. When either form can express the same test, choose the form that's easier to read.
+
+For example, the following method uses a `switch` expression to choose a delivery message:
 
 :::code language="csharp" source="snippets/patterns/Overview.cs" ID="SwitchExpressionOverview":::
 
-Recursive patterns have their own input expressions. In `StandardDelivery { Days: <= 2 }`, the outer pattern receives the `delivery` expression. The recursive `<= 2` pattern receives the `Days` property expression from the matched `StandardDelivery` object.
+Property patterns can include an outer type test and nested patterns, but neither is required in every property pattern. In `StandardDelivery { Days: <= 2 }`, the outer pattern receives the `delivery` expression and tests its type. The `Days` property expression then becomes the input to the nested relational pattern `<= 2`.
 
 The expression before `switch` is the input expression. Each line inside the braces is a *switch arm*. The pattern appears before `=>`, and the result appears after it. C# evaluates the input expression, then selects the first arm, in text order, whose pattern matches and whose optional `when` guard is `true`. The optional `when` guard is an additional Boolean condition written after the pattern. The preceding example showed the following patterns:
 
@@ -79,17 +81,20 @@ C# includes patterns for common kinds of data tests:
 | --- | --- |
 | [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md) | A run-time type, a specific constant value, or any value that you want to capture |
 | [Type patterns](type-patterns.md) | A run-time type without declaring a variable |
-| Property and positional patterns | Properties, fields, or deconstructed values |
-| Relational and logical patterns | Comparisons and combinations such as `and`, `or`, and `not` |
-| List patterns | The values and shape of a list or array |
+| [Property and positional patterns](property-positional-patterns.md) | Properties, fields, or deconstructed values |
+| [Relational, logical, and parenthesized patterns](relational-logical-patterns.md) | Comparisons and combinations such as `and`, `or`, and `not` |
+| [List and slice patterns](list-patterns.md) | The values and shape of a supported sequence |
 | [Discard patterns and discards](discards.md) | Any remaining value, or a value your code intentionally ignores |
 
-The Fundamentals articles linked in the table provide focused coverage of the categories currently documented in this section. For complete syntax and examples for all pattern categories, see the [patterns reference](../../language-reference/operators/patterns.md).
+The linked Fundamentals articles explain when to choose each category. For complete syntax and examples, see the [patterns reference](../../language-reference/operators/patterns.md).
 
 ## See also
 
 - [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md)
 - [Type patterns](type-patterns.md)
+- [Property and positional patterns](property-positional-patterns.md)
+- [Relational, logical, and parenthesized patterns](relational-logical-patterns.md)
+- [List and slice patterns](list-patterns.md)
 - [Discards](discards.md)
 - [Patterns reference](../../language-reference/operators/patterns.md)
 - [`switch` expression reference](../../language-reference/operators/switch-expression.md)

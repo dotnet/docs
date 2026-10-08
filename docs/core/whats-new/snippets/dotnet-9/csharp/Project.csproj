@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
-    <PackageReference Include="Microsoft.ML.Tokenizers" Version="1.0.1" />
-    <PackageReference Include="System.Memory" Version="4.6.0" />
-    <PackageReference Include="System.Net.ServerSentEvents" Version="9.0.1" />
-    <PackageReference Include="System.Numerics.Tensors" Version="9.0.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.29.2" />
+    <PackageReference Include="Microsoft.ML.Tokenizers" Version="2.0.0" />
+    <PackageReference Include="System.Memory" Version="4.6.3" />
+    <PackageReference Include="System.Net.ServerSentEvents" Version="10.0.12" />
+    <PackageReference Include="System.Numerics.Tensors" Version="10.0.12" />
   </ItemGroup>
 
   <ItemGroup>

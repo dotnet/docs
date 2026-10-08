@@ -69,6 +69,8 @@ Relational operators compare two values and return a `bool`.
 
 Relational operators work on all numeric types and `char`. For `char`, comparison uses the character's numeric Unicode code point value, not any alphabetical or domain-specific ordering. In the grade example above, `'B'` is greater than or equal to `'A'` because `'B'` has Unicode value 66 and `'A'` has Unicode value 65 — the *numbers* determine the comparison, not the meaning of the letter grades.
 
+The same symbols can form [relational patterns](../patterns/relational-logical-patterns.md) in an `is` expression or `switch`. For example, `temperature < 0` is a relational expression that returns a `bool`, while `temperature is < 0` applies the relational pattern `< 0` to the value of `temperature`.
+
 ## Equality operators
 
 `==` and `!=` check whether two values are equal or not. `!=` is `true` when the operands are **not** equal, and `false` when they are.
@@ -154,7 +156,7 @@ This article covers the operators you'll encounter most in everyday code. The C#
 - **Null operators** (`??`, `??=`, `?.`, `?[]`) — safely handle `null` values by providing defaults or short-circuiting member access: [Null operators](../null-safety/null-operators.md)
 - **Type-test and conversion operators** (`is`, `as`, `typeof`, cast `(T)`) — check or convert a value's runtime type: [Type-testing and cast operators](../../language-reference/operators/type-testing-and-cast.md)
 - **Range and index operators** (`..`, `^`) — create ranges and end-relative indexes for slicing arrays and spans: [Member access and null-conditional operators](../../language-reference/operators/member-access-operators.md)
-- **Deconstruction assignment** — unpack a tuple or type into individual variables in a single expression: [Deconstructing tuples and other types](../../fundamentals/functional/deconstruct.md)
+- **Deconstruction assignment** — unpack a tuple or type into individual variables in a single expression: [Deconstructing tuples and other types](../../fundamentals/patterns/deconstruct.md)
 
 ## See also
 

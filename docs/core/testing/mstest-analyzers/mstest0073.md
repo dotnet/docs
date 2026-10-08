@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0073: Prefer a constant for the '[ResourceLock]' resource key"
 description: "Learn about code analysis rule MSTEST0073: Prefer a constant for the '[ResourceLock]' resource key"
-ms.date: 08/06/2026
+ms.date: 10/01/2026
 f1_keywords:
 - MSTEST0073
 - PreferConstantForResourceLockAnalyzer
@@ -24,11 +24,8 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Info                                               |
-| **Introduced in version**           | 4.4.0 (preview)                                    |
+| **Introduced in version**           | 4.4.0                                              |
 | **Is there a code fix**             | No                                                 |
-
-> [!IMPORTANT]
-> `ResourceLockAttribute` is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
 
 ## Cause
 

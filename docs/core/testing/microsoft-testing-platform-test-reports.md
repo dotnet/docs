@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 09/15/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -31,7 +31,7 @@ A file name can include a relative path that stays within the test results direc
 
 For example, `--report-trx-filename "{asm}_{tfm}_{arch}.trx"` reproduces the default TRX name.
 
-If a default or explicit TRX, HTML, or JUnit file name already exists for a test source, the extension warns and overwrites the file. Starting with the MTP 2.4 preview, CTRF uses the same behavior. To retain report history, include `{time}`.
+If a default or explicit TRX, HTML, or JUnit file name already exists for a test source, the extension warns and overwrites the file. Starting with MTP 2.4, CTRF uses the same behavior. To retain report history, include `{time}`.
 
 > [!NOTE]
 > Placeholder names are case-sensitive and use lowercase. Placeholder support for report file names is available in MTP starting with version 2.3.0.
@@ -64,7 +64,9 @@ builder.AddTrxReportProvider();
 > [!NOTE]
 > Available in MTP starting with version 2.3.0, TRX results stream to disk as the run progresses. If the test host crashes, the TRX file keeps the results collected before the crash.
 >
-> Starting with the MTP 2.4 preview, an MTP-generated TRX preserves MSTest `[WorkItem]` and `[GitHubWorkItem]` metadata.
+> Starting with MTP 2.4, TRX uses controller-backed recovery by default when the platform has a test-host controller. Browser, WASI, iOS, and tvOS use the in-process compatibility path.
+>
+> Starting with MTP 2.4, an MTP-generated TRX preserves MSTest `[WorkItem]` and `[GitHubWorkItem]` metadata.
 
 ### Options
 
@@ -140,9 +142,11 @@ builder.AddCtrfReportProvider();
 | `--report-ctrf` | Generates the CTRF JSON report. |
 | `--report-ctrf-filename` | The name of the generated CTRF JSON report. The value must end with `.json`. The default is `<UserName>_<MachineName>_<assembly>_<tfm>_<timestamp>.ctrf.json`. To customize the name, see [Report file names](#report-file-names). Requires `--report-ctrf`. |
 
-Starting with the MTP 2.4 preview, CTRF preserves every result when multiple tests use the same UID. It also includes per-test and prior-attempt attachments and infers their MIME types from file names.
+Starting with MTP 2.4, CTRF preserves every result when multiple tests use the same UID. It also includes per-test and prior-attempt attachments and infers their MIME types from file names.
 
 For retried tests, CTRF correlates attempts only when the relationship is unambiguous. It then records earlier attempts in `retryAttempts`, sets `retries`, and marks a later successful result as `flaky: true`. Ambiguous same-UID results remain separate so the report doesn't associate diagnostics with the wrong test.
+
+Starting with MTP 2.5 preview, `testId` derives from the framework's complete MTP test node UID. The reporter escapes values in its reserved identity namespaces and uses a deterministic SHA-256 identity for long UIDs instead of truncating them. Each reported execution receives a new UUID in `executionId`, and earlier retry attempts receive their own `attemptId`. The compatibility field `extra.uid` retains the original MTP UID. Attachment paths remain opaque values and can point to local files that a remote consumer can't access.
 
 The terminal summary identifies flaky and retried tests. TRX and JUnit reports keep one final result per test instead of recording every attempt.
 
@@ -201,7 +205,9 @@ The extension automatically detects that it runs in a continuous integration (CI
 
 Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, the summary includes covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
 
-In the MTP 2.4 preview, live publishing automatically uploads file attachments for unsuccessful results to Azure DevOps test results. Unsuccessful outcomes include failed, errored, timed-out, and canceled results.
+Starting with MTP 2.5 preview, the summary also presents pass rates, flaky-test history, duration comparisons, test dependency edges, focused failure diagnostics, and a compact deterministic layout for multi-module runs.
+
+Starting with MTP 2.4, live publishing automatically uploads file attachments for unsuccessful results to Azure DevOps test results. Unsuccessful outcomes include failed, errored, timed-out, and canceled results.
 
 When a result supplies standard output or standard error, the extension can attach up to 256 KiB of each inline stream. Each file-backed attachment has a 16-MiB limit.
 

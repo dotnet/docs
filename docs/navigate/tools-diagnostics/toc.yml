@@ -287,6 +287,78 @@ items:
                 href: ../../core/tools/dotnet-workload-uninstall.md
               - name: dotnet workload update
                 href: ../../core/tools/dotnet-workload-update.md
+      - name: Elevated access
+        href: ../../core/tools/elevated-access.md
+      - name: Enable tab completion
+        href: ../../core/tools/enable-tab-autocomplete.md
+      - name: Develop libraries with the CLI
+        href: ../../core/tutorials/libraries.md
+      - name: Create templates for the CLI
+        items:
+          - name: 1 - Create an item template
+            href: ../../core/tutorials/cli-templates-create-item-template.md
+            displayName: tutorials, cli
+          - name: 2 - Create a project template
+            href: ../../core/tutorials/cli-templates-create-project-template.md
+            displayName: tutorials, cli
+          - name: 3 - Create a template package
+            href: ../../core/tutorials/cli-templates-create-template-package.md
+            displayName: tutorials, cli
+  - name: Integrated development environments (IDEs)
+    items:
+      - name: Visual Studio
+        displayName: ide,integrated development environment,vs
+        href: /visualstudio/get-started/visual-studio-ide?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Visual Studio Code
+        displayName: ide,integrated development environment,code,vs code,oss ide,
+        href: https://code.visualstudio.com/docs
+  - name: MSBuild and project files
+    items:
+      - name: Project SDKs
+        items:
+          - name: Overview
+            href: ../../core/project-sdk/overview.md
+          - name: Reference
+            items:
+              - name: Microsoft.NET.Sdk
+                displayName: msbuild, msbuild properties
+                href: ../../core/project-sdk/msbuild-props.md
+              - name: Microsoft.NET.Sdk.Web
+                href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+              - name: Microsoft.NET.Sdk.Razor
+                href: /aspnet/core/razor-pages/sdk?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+              - name: Microsoft.NET.Sdk.Desktop
+                href: ../../core/project-sdk/msbuild-props-desktop.md
+      - name: Target frameworks
+        href: ../../standard/frameworks.md
+      - name: Dependency management
+        href: ../../core/tools/dependencies.md
+  - name: Global and local tools
+    items:
+      - name: Manage tools
+        displayName: global tool,local tool
+        href: ../../core/tools/global-tools.md
+      - name: RID-specific, self-contained, and AOT tools
+        displayName: rid-specific tool,self-contained tool,aot tool
+        href: ../../core/tools/rid-specific-tools.md
+      - name: Troubleshoot tools
+        displayName: global tool troubleshooting,local tool troubleshooting,
+        href: ../../core/tools/troubleshoot-usage-issues.md
+      - name: Create tools for the CLI
+        items:
+          - name: 1 - Create a tool
+            displayName: tools,tutorials,cli,create global tool,create local tool
+            href: ../../core/tools/global-tools-how-to-create.md
+          - name: 2 - Use a global tool
+            displayName: tools,tutorials,cli,understand global tool
+            href: ../../core/tools/global-tools-how-to-use.md
+          - name: 3 - Use a local tool
+            href: ../../core/tools/local-tools-how-to-use.md
+            displayName: tools,tutorials,cli,local tool
+  - name: Additional tools
+    items:
+      - name: Overview
+        href: ../../core/additional-tools/index.md
       - name: dotnetup
         items:
           - name: Overview
@@ -377,78 +449,6 @@ items:
             href: ../../core/tools/dotnetup/troubleshooting.md
           - name: Telemetry
             href: ../../core/tools/dotnetup/telemetry.md
-      - name: Elevated access
-        href: ../../core/tools/elevated-access.md
-      - name: Enable tab completion
-        href: ../../core/tools/enable-tab-autocomplete.md
-      - name: Develop libraries with the CLI
-        href: ../../core/tutorials/libraries.md
-      - name: Create templates for the CLI
-        items:
-          - name: 1 - Create an item template
-            href: ../../core/tutorials/cli-templates-create-item-template.md
-            displayName: tutorials, cli
-          - name: 2 - Create a project template
-            href: ../../core/tutorials/cli-templates-create-project-template.md
-            displayName: tutorials, cli
-          - name: 3 - Create a template package
-            href: ../../core/tutorials/cli-templates-create-template-package.md
-            displayName: tutorials, cli
-  - name: Integrated development environments (IDEs)
-    items:
-      - name: Visual Studio
-        displayName: ide,integrated development environment,vs
-        href: /visualstudio/get-started/visual-studio-ide?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - name: Visual Studio Code
-        displayName: ide,integrated development environment,code,vs code,oss ide,
-        href: https://code.visualstudio.com/docs
-  - name: MSBuild and project files
-    items:
-      - name: Project SDKs
-        items:
-          - name: Overview
-            href: ../../core/project-sdk/overview.md
-          - name: Reference
-            items:
-              - name: Microsoft.NET.Sdk
-                displayName: msbuild, msbuild properties
-                href: ../../core/project-sdk/msbuild-props.md
-              - name: Microsoft.NET.Sdk.Web
-                href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
-              - name: Microsoft.NET.Sdk.Razor
-                href: /aspnet/core/razor-pages/sdk?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
-              - name: Microsoft.NET.Sdk.Desktop
-                href: ../../core/project-sdk/msbuild-props-desktop.md
-      - name: Target frameworks
-        href: ../../standard/frameworks.md
-      - name: Dependency management
-        href: ../../core/tools/dependencies.md
-  - name: Global and local tools
-    items:
-      - name: Manage tools
-        displayName: global tool,local tool
-        href: ../../core/tools/global-tools.md
-      - name: RID-specific, self-contained, and AOT tools
-        displayName: rid-specific tool,self-contained tool,aot tool
-        href: ../../core/tools/rid-specific-tools.md
-      - name: Troubleshoot tools
-        displayName: global tool troubleshooting,local tool troubleshooting,
-        href: ../../core/tools/troubleshoot-usage-issues.md
-      - name: Create tools for the CLI
-        items:
-          - name: 1 - Create a tool
-            displayName: tools,tutorials,cli,create global tool,create local tool
-            href: ../../core/tools/global-tools-how-to-create.md
-          - name: 2 - Use a global tool
-            displayName: tools,tutorials,cli,understand global tool
-            href: ../../core/tools/global-tools-how-to-use.md
-          - name: 3 - Use a local tool
-            href: ../../core/tools/local-tools-how-to-use.md
-            displayName: tools,tutorials,cli,local tool
-  - name: Additional tools
-    items:
-      - name: Overview
-        href: ../../core/additional-tools/index.md
       - name: .NET Uninstall Tool
         items:
           - name: Overview

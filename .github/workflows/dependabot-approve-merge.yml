@@ -8,16 +8,12 @@ permissions:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' && github.repository_owner == 'dotnet' }}
+    if: ${{ github.actor == 'dependabot[bot]' && github.repository_owner == 'dotnet' && github.base_ref == 'main' }}
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
         with:
           egress-policy: audit
-
-      - name: Retrieve Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3.1.0
 
       - name: Auto-approve PR
         run: gh pr review --approve "$PR_URL"

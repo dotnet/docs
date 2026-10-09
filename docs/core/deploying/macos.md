@@ -3,7 +3,7 @@ title: Publish .NET apps for macOS
 description: Learn how to publish .NET applications for macOS, including signing, notarization, app entitlements, and universal binaries.
 author: agocke
 ms.author: angocke
-ms.date: 07/31/2026
+ms.date: 10/09/2026
 ms.topic: how-to
 ai-usage: ai-assisted
 ---
@@ -30,7 +30,7 @@ Use [Apple's developer documentation](https://developer.apple.com/documentation/
 
 ### Application identity
 
-if you expect users to save access decisions for secrets or other keychain items, distribute and launch your app's native apphost executable instead of `dotnet MyApp.dll`. This lets approvals be associated with your app rather than the shared `dotnet` host. Keychain approvals for the shared host can apply to other managed apps that use it.
+If you expect users to save access decisions for secrets or other keychain items, distribute and launch your app's native apphost executable instead of `dotnet MyApp.dll`. This lets approvals be associated with your app rather than the shared `dotnet` host. Keychain approvals for the shared host can apply to other managed apps that use it.
 
 Software management solutions can use your apphost's signing identity to apply app-specific launch policies separately from other .NET hosted applications that use the `dotnet` host.
 

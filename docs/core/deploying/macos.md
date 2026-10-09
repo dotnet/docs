@@ -3,7 +3,7 @@ title: Publish .NET apps for macOS
 description: Learn how to publish .NET applications for macOS, including signing, notarization, app entitlements, and universal binaries.
 author: agocke
 ms.author: angocke
-ms.date: 07/31/2026
+ms.date: 10/09/2026
 ms.topic: how-to
 ai-usage: ai-assisted
 ---
@@ -27,6 +27,16 @@ Use one of the methods described in the [.NET application publishing overview](i
 ## Sign and notarize your app
 
 Use [Apple's developer documentation](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution) to sign and notarize the app native binaries. .NET creates a native *apphost* executable as the entry point for your app. This apphost must be signed and, if your app uses special capabilities, it must be assigned the appropriate **entitlements**.
+
+### Application identity
+
+If you expect users to save access decisions for secrets or other keychain items, distribute and launch your app's native apphost executable instead of `dotnet MyApp.dll`. This lets approvals be associated with your app rather than the shared `dotnet` host. Keychain approvals for the shared host can apply to other managed apps that use it.
+
+Software management solutions can use your apphost's signing identity to apply app-specific launch policies separately from other .NET hosted applications that use the `dotnet` host.
+
+Give the apphost a unique, stable code-signing identifier and sign releases with a Developer ID certificate from your Apple Developer team. Keep the identifier and team consistent across updates. Changing either can require users and administrators to renew approvals.
+
+For details, see Apple's guidance on [metadata for standalone tools](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html#//apple_ref/doc/uid/TP40005929-CH4-SW6) and [signing individual executables](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html#//apple_ref/doc/uid/TP40005929-CH4-SW3).
 
 ### Entitlements for apps not published as Native AOT
 

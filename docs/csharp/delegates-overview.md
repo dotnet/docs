@@ -4,8 +4,17 @@ description: The first in a series of articles about C# delegates and events. Th
 ms.date: 03/24/2022
 ms.subservice: fundamentals
 ---
+# Introduction to delegates and events
 
-# Introduction to delegates and events in C\#
+## Preface
+
+According to the Copilot research; a delegate is someone authorized to represent others. To paraphrase this definition, in terms of a programming language, the delegate is a construct representing another language construct. Consequently, using object-oriented programming terminology, a delegate is an object wrapping a reference to a method (an action that happens). The method is invoked while the delegate is triggered. Simplifying, delegate represents an activity.
+
+Continuing the Copilot research; “event” refers to an occurrence or happening that involves one or more entities and can be described by a verb or action. To paraphrase this definition, in terms of a programming language, the event is an action (block of statements) invoked and executed using a computer machine. Consequently, using object-oriented programming terminology, an event may be recognized as an object wrapping a reference to a method (an action that happens). The method is invoked while the event is triggered. Simplifying, an event represents activity.
+
+Hence, in the context of program engineering, despite the meanings of both terms being completely different it seems that both terms can be implemented similarly. However, before implementation, we must learn more details concerning both terms. The most important thing is the difference between them, which helps address the problem of why we need both terms.
+
+## Introduction to delegates in C\#
 
 Delegates provide a *late binding* mechanism in .NET. Late Binding
 means that you create an algorithm where the caller also supplies

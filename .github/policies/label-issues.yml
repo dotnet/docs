@@ -26,22 +26,6 @@ configuration:
         eventResponderTasks:
 
             - description: >-
-                Assign issues labeled breaking-change to gewarren
-              if:
-                - payloadType: Issues
-                - or:
-                  - and:
-                    - isAction:
-                        action: Opened
-                    - hasLabel:
-                        label: 'breaking-change'
-                  - labelAdded:
-                      label: 'breaking-change'
-              then:
-                - assignTo:
-                    user: gewarren
-        
-            - description: >-
                 Add "not triaged" label when:
                 * Issue is opened
                 * Issue is reopened

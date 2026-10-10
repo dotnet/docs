@@ -66,7 +66,7 @@ An *iterator* is used to perform a custom iteration over a collection. An iterat
 
 You call an iterator by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution restarts from that location the next time that the iterator is called.
 
-For more information, see [Iterators (C#)](../../programming-guide/concepts/iterators.md).
+For more information, see [Iterators (C#)](../../fundamentals/functional/iterators.md).
 
 The following example uses an iterator method. The iterator method has a `yield return` statement that is inside a `for` loop. In the `ListEvenNumbers` method, each iteration of the `foreach` statement body creates a call to the iterator method, which proceeds to the next `yield return` statement.
 

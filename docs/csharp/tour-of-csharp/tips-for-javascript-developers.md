@@ -11,7 +11,7 @@ C#, TypeScript, and JavaScript are all members of the C family of languages. The
 
 1. ***Similar syntax***: JavaScript, TypeScript, and C# are in the C family of languages. That similarity means you can already read and understand C#. There are some differences, but most of the syntax is the same as JavaScript and C. The curly braces and semicolons are familiar. The control statements like `if`, `else`, and `switch` are the same. The looping statements of `for`, `while`, and `do...while` are the same. The same keywords for `class` and `interface` are in both C# and TypeScript. The access modifiers in TypeScript and C#, from `public` to `private`, are the same.
 1. ***The `=>` token***: All languages support lightweight function definitions. In C#, they're referred to as [*lambda expressions*](../language-reference/operators/lambda-expressions.md). In JavaScript, they're typically called *arrow functions*.
-1. ***Function hierarchies***: All three languages support [local functions](../programming-guide/classes-and-structs/local-functions.md), which are functions defined in other functions.
+1. ***Function hierarchies***: All three languages support [local functions](../fundamentals/functional/local-functions.md), which are functions defined in other functions.
 1. ***Async / Await***: All three languages share the same `async` and `await` keywords for asynchronous programming.
 1. ***Garbage collection***: All three languages rely on a garbage collector for automatic memory management.
 1. ***Event model***: C#'s [`event`](../events-overview.md) syntax is similar to JavaScript's model for document object model (DOM) events.

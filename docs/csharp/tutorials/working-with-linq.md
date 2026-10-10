@@ -38,7 +38,7 @@ If you've never used C# before, [this tutorial](console-teleprompter.md) explain
 > [!TIP]
 > For this tutorial, you can organize your code in a namespace called `LinqFaroShuffle` to match the sample code, or you can use the default global namespace. If you choose to use a namespace, make sure all your classes and methods are consistently within the same namespace, or add appropriate `using` statements as needed.
 
-Consider what constitutes a deck of cards. A deck of playing cards has four suits, and each suit has 13 values. Normally, you might consider creating a `Card` class right away and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of creating a deck of cards. Instead of creating a `Card` class, create two sequences to represent suits and ranks. Create a pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable`1>s of strings:
+Consider what constitutes a deck of cards. A deck of playing cards has four suits, and each suit has 13 values. Normally, you might consider creating a `Card` class right away and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of creating a deck of cards. Instead of creating a `Card` class, create two sequences to represent suits and ranks. Create a pair of [*iterator methods*](../fundamentals/functional/iterators.md#produce-elements-with-yield-return) that generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable`1>s of strings:
 
 :::code source="snippets/console-linq/InterimSteps.cs" id="StepOne":::
 

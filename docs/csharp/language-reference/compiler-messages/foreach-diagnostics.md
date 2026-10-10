@@ -142,7 +142,7 @@ These errors occur when a method's signature declares it as an async iterator (i
 
 Add at least one `yield return` statement to the method body to make it a valid async-iterator method. If you didn't intend the method to be an iterator, remove the `async` modifier and change the return type, or return a constructed async enumerable from a different source instead.
 
-For more information on iterator methods, see [Iterators](../../iterators.md) and [`yield` statement](../statements/yield.md).
+For more information on iterator methods, see [Iterators](../../fundamentals/functional/iterators.md) and [`yield` statement](../statements/yield.md).
 
 ## `EnumeratorCancellation` attribute usage
 

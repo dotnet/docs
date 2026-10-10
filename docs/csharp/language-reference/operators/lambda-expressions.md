@@ -335,6 +335,6 @@ For more information, see the [Anonymous function expressions](~/_csharpstandard
 - [C# operators and expressions](index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Expression trees](../../advanced-topics/expression-trees/index.md)
-- [Local functions vs. lambda expressions](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
+- [Choose a local function or lambda expression](../../fundamentals/functional/local-functions.md#choose-a-local-function-or-lambda-expression)
 - [LINQ sample queries](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/LINQ%20-%20Sample%20Queries/C%23)
 - [XQuery sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/XQuery/C%23)

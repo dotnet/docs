@@ -47,7 +47,7 @@ Expression trees don't support new expression node types. It would be a breaking
 - [Conditional methods](../../language-reference/preprocessor-directives.md#conditional-compilation) removed from the output
 - [`base` access](../../language-reference/keywords/base.md)
 - Method group expressions, including [*address-of* (`&`)](../../language-reference/operators/pointer-related-operators.md) a method group, and anonymous method expressions
-- References to [local functions](../../programming-guide/classes-and-structs/local-functions.md)
+- References to [local functions](../../fundamentals/functional/local-functions.md)
 - Statements, including assignment (`=`) and statement bodied expressions
 - [Partial methods](../../language-reference/keywords/partial-member.md) with only a defining declaration
 - [Unsafe pointer operations](../../language-reference/unsafe-code.md#pointer-types)

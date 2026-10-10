@@ -14,7 +14,7 @@ This article covers the `static` modifier keyword. The `static` keyword is also 
 
 Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. Use the `static` modifier to declare `static` classes. In classes, interfaces, and structs, you can add the `static` modifier to fields, methods, properties, operators, events, and constructors. You can't use the `static` modifier with indexers or finalizers. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
-You can add the `static` modifier to a [local function](../../programming-guide/classes-and-structs/local-functions.md). A static local function can't capture local variables or instance state.
+You can add the `static` modifier to a [local function](../../fundamentals/functional/local-functions.md). A static local function can't capture local variables or instance state.
 
 :::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="28":::
 

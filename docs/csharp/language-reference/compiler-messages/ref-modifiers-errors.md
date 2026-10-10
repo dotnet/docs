@@ -256,7 +256,7 @@ The following errors and warnings indicate that you can't use a reference variab
 To correct these errors and warnings:
 
 - Remove reference parameters from [indexers](../../programming-guide/indexers/index.md). Indexers provide array-like access syntax, and the compiler can't guarantee safe lifetime tracking for references passed through indexer accessors (**CS0631**, **CS1623**).
-- Remove reference parameters from [iterator methods](../../iterators.md). Iterators execute code lazily across multiple calls using state machines, and the compiler can't ensure referenced variables remain valid across `yield return` boundaries where execution is suspended and resumed (**CS1623**).
+- Remove reference parameters from [iterator methods](../../fundamentals/functional/iterators.md). Iterators execute code lazily across multiple calls using state machines, and the compiler can't ensure referenced variables remain valid across `yield return` boundaries where execution is suspended and resumed (**CS1623**).
 - Remove reference parameters from [async methods](../../asynchronous-programming/index.md). Async methods might suspend execution at `await` points and resume on different threads, making it impossible to guarantee that referenced variables remain valid and accessible throughout the method's execution (**CS1988**).
 - Avoid using [await expressions](../operators/await.md) inside [ref conditional expressions](../operators/conditional-operator.md#conditional-ref-expression). The `await` operation might suspend execution and invalidate the references being selected by the conditional operator, leading to potential use of invalidated references when execution resumes (**CS8325**).
 - Ensure both branches of a ref conditional operator return references or neither returns a reference, and when both are references they must be the same type. The conditional operator must produce a consistent result type that can be safely used by the calling code regardless of which branch is selected (**CS8326**, **CS8327**).
@@ -274,7 +274,7 @@ To correct these errors and warnings:
 - Match the reference kind modifiers (`ref`, `in`, `out`, `ref readonly`) between a method and its overridden base method or implemented interface method. The reference modifier is part of the method signature contract that derived types must honor to maintain substitutability and caller expectations (**CS9196**, **CS9197**, **CS9198**).
 - Declare parameters as `in` rather than `ref readonly` when providing default values. `ref readonly` is designed for scenarios where the caller passes a reference to an existing variable, whereas `in` parameters can accept both references and temporary copies of values, making default values meaningful (**CS9200**).
 
-For more information about where reference variables are allowed, see [Method parameters](../keywords/method-parameters.md), [Iterators](../../iterators.md), [Asynchronous programming patterns](../../asynchronous-programming/index.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
+For more information about where reference variables are allowed, see [Method parameters](../keywords/method-parameters.md), [Iterators](../../fundamentals/functional/iterators.md), [Asynchronous programming patterns](../../asynchronous-programming/index.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## `unscoped ref` restrictions
 

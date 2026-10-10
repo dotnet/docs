@@ -154,7 +154,7 @@ You call an iterator from client code by using a [foreach](../../language-refere
 
 The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable`1>, <xref:System.Collections.Generic.IAsyncEnumerable`1>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator`1>.
 
-For more information, see [Iterators](../concepts/iterators.md).
+For more information, see [Iterators](../../fundamentals/functional/iterators.md).
 
 ## C# language specification
 

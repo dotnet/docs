@@ -38,7 +38,7 @@ See the [ASP.NET Core tutorials](/aspnet/core/tutorials/). Many articles in the 
 
 ### Samples
 
-**[Iterators](../csharp/iterators.md)**
+**[Iterators](../csharp/fundamentals/functional/iterators.md)**
 
 This sample demonstrates the syntax and features for creating and consuming C# iterators. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/iterators) is available in the dotnet/samples repository on GitHub.
 

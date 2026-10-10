@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # yield statement - provide the next element
 
-Use the `yield` statement in an [iterator](../../iterators.md) to provide the next value or signal the end of an iteration. The `yield` statement has the two following forms:
+Use the `yield` statement in an [iterator](../../fundamentals/functional/iterators.md) to provide the next value or signal the end of an iteration. The `yield` statement has the two following forms:
 
 - `yield return`: to provide the next value in iteration, as the following example shows:
 
@@ -64,7 +64,6 @@ For more information, see [The yield statement](~/_csharpstandard/standard/state
 
 ## See also
 
-- [Iterators](../../iterators.md)
-- [Iterate through collections in C#](../../programming-guide/concepts/iterators.md)
+- [Iterators](../../fundamentals/functional/iterators.md)
 - [foreach](iteration-statements.md#the-foreach-statement)
 - [await foreach](iteration-statements.md#await-foreach)

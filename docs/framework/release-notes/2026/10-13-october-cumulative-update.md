@@ -105,6 +105,8 @@ The following table outlines the updates in this release.
 
 | Product version | Cumulative update |
 | --- | --- |
+| **Windows 11, version 26H2** | |
+| .NET Framework 3.5, 4.8.1 | [5127694](https://support.microsoft.com/kb/5127694) |
 | **Windows 11, version 26H1** | |
 | .NET Framework 4.8.1 | [5127691](https://support.microsoft.com/kb/5127691) |
 | **Windows 11, version 25H2** | |

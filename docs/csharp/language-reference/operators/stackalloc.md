@@ -19,6 +19,9 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="AssignToSpan":::
 
+  > [!CAUTION]
+  > This pattern applies a cap only to the `stackalloc` branch of the expression. If the application requires a cap on the `new T[...]` branch of the expression (e.g., to avoid unwanted creation of a one billion-element array), the caller must perform that length check separately.
+
   You don't need to use an [unsafe](../keywords/unsafe.md) context when you assign a stack-allocated memory block to a <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> variable.
 
   When you work with those types, you can use a `stackalloc` expression in [conditional](conditional-operator.md) or assignment expressions, as the following example shows:

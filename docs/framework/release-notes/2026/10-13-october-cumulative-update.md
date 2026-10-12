@@ -87,9 +87,9 @@ This security update addresses an information disclosure vulnerability detailed 
 
 This security update addresses a tampering vulnerability detailed in [CVE-2026-97801](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97801).
 
-#### CVE-2026-99999999999999 – Security Feature Bypass vulnerability
+#### CVE-2026-108398 – Security Feature Bypass vulnerability
 
-This security update addresses a security feature bypass vulnerability detailed in [CVE-2026-99999999999999](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-99999999999999).
+This security update addresses a security feature bypass vulnerability detailed in [CVE-2026-108398](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108398).
 
 ### Quality and reliability improvements
 

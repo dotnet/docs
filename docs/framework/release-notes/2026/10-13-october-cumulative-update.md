@@ -93,7 +93,7 @@ This security update addresses a security feature bypass vulnerability detailed 
 
 ### Quality and reliability improvements
 
-There are no new quality and reliability improvements in this release.
+This release contains no new quality and reliability improvements.
 
 ## Known issues in this release
 

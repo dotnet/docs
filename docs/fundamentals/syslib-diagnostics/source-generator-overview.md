@@ -156,7 +156,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1216][1216] | C# language version not supported by the options validation source generator. |
 | [SYSLIB1217][1217] | The validation attribute is only applicable to properties of type string, array, or `ICollection`; it cannot be used with other types. |
 | [SYSLIB1218][1218] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
-| [SYSLIB1219][1219] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
+| [SYSLIB1219][1219] | A type already includes an implementation of the `ValidateAsync` method. |
 | [SYSLIB1220][1220] | JsonSourceGenerator encountered a [JsonConverterAttribute] with an invalid type argument. |
 | [SYSLIB1221][1221] | JsonSourceGenerator does not support this C# language version. |
 | [SYSLIB1222][1222] | Constructor annotated with JsonConstructorAttribute is inaccessible. |

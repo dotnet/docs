@@ -1,7 +1,7 @@
 ---
 title: EventPipe Overview
 description: Learn about EventPipe and how to use it for tracing your .NET applications to diagnose performance issues.
-ms.date: 03/19/2026
+ms.date: 10/12/2026
 ms.topic: overview
 ---
 
@@ -84,7 +84,7 @@ However, you can use the following environment variables to set up an EventPipe 
 
 * `DOTNET_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 
-* `DOTNET_EventPipeThreadSamplingRate`: Available in .NET 11 and later. Sets the interval, in milliseconds, for the EventPipe thread time sampling profiler. When set to `0` or omitted, the runtime uses its built-in default of 10 ms (~100 Hz). This setting is process-global and affects all EventPipe sessions, including on-demand traces started by tools such as [dotnet-trace](./dotnet-trace.md). Setting a large value reduces sampling overhead but also reduces the resolution of any trace collected during the process lifetime.
+* `DOTNET_EventPipeThreadSamplingRate`: Available in .NET 10.0.10 and later. Sets the interval, in milliseconds, for the EventPipe thread time sampling profiler. When set to `0` or omitted, the runtime uses its built-in default of 1 ms (~1,000 Hz). Builds without threading support, such as single-threaded WebAssembly, use a default of 5 ms (~200 Hz). This setting is process-global and affects all EventPipe sessions, including on-demand traces started by tools such as [dotnet-trace](./dotnet-trace.md). Setting a large value reduces sampling overhead but also reduces the resolution of any trace collected during the process lifetime.
 
 * `DOTNET_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `DOTNET_EnableEventPipe`.
   The syntax is as follows:

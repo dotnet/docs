@@ -24,6 +24,8 @@ items:
                 href: core-libraries/11/decimal-biginteger-floating-point-conversions.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
+              - name: Environment.GetCommandLineArgs()[0] preserves the apphost invocation name
+                href: core-libraries/11/environment-getcommandlineargs-apphost-invocation-name.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
               - name: Math.Round and MathF.Round return correctly rounded results

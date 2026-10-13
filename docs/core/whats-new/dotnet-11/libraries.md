@@ -363,8 +363,8 @@ A new <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProper
 <xref:System.Formats.Cbor.CborReader> can read a Concise Binary Object Representation (CBOR) payload that's delivered in chunks, without first copying the entire document into contiguous memory. To read incrementally:
 
 1. Construct a reader with `isFinalBlock: false`.
-1. Check for <xref:System.Formats.Cbor.CborReaderState.NeedsMoreData?displayProperty=nameWithType> to determine when the reader needs the next chunk.
-1. Pass the next chunk to <xref:System.Formats.Cbor.CborReader.SlideData*?displayProperty=nameWithType>, and set `isFinalBlock` to `true` for the last chunk.
+1. Check for `CborReaderState.NeedsMoreData` to determine when the reader needs the next chunk.
+1. Pass the next chunk to `CborReader.SlideData`, and set `isFinalBlock` to `true` for the last chunk.
 
 Incremental reading requires <xref:System.Formats.Cbor.CborConformanceMode.Lax?displayProperty=nameWithType>. Other conformance modes reject a non-final block.
 
@@ -802,7 +802,7 @@ public sealed class BackendOptionsValidator : IAsyncValidateOptions<BackendOptio
 
 ### Format DataAnnotations messages
 
-<xref:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatMessage*?displayProperty=nameWithType> lets a validation host supply a message template while the attribute fills in its own placeholders. This method supports localization without duplicating the formatting logic for built-in attributes such as <xref:System.ComponentModel.DataAnnotations.RangeAttribute>:
+`ValidationAttribute.FormatMessage` lets a validation host supply a message template while the attribute fills in its own placeholders. This method supports localization without duplicating the formatting logic for built-in attributes such as <xref:System.ComponentModel.DataAnnotations.RangeAttribute>:
 
 ```csharp
 using System.ComponentModel.DataAnnotations;
@@ -887,9 +887,9 @@ Both sets of APIs provide array-returning and span-based overloads:
 > [!WARNING]
 > `CompositeMLKem` and `Hpke` are experimental in .NET 11 and might change. Direct use requires you to opt in to the `SYSLIB5006` diagnostic for `CompositeMLKem` and the `SYSLIB5009` diagnostic for `Hpke`.
 
-<xref:System.Security.Cryptography.CompositeMLKem> combines post-quantum and classical key encapsulation so that both contribute to the shared secret. It's available on platforms that already support Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM). Call <xref:System.Security.Cryptography.CompositeMLKem.IsAlgorithmSupported*?displayProperty=nameWithType> to determine whether the platform supports a particular combination of algorithms.
+`CompositeMLKem` combines post-quantum and classical key encapsulation so that both contribute to the shared secret. It's available on platforms that already support Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM). Call `CompositeMLKem.IsAlgorithmSupported` to determine whether the platform supports a particular combination of algorithms.
 
-<xref:System.Security.Cryptography.Hpke> provides Hybrid Public Key Encryption (HPKE). The current implementation supports classical Diffie-Hellman key encapsulation mechanism (DHKEM) suites. ML-KEM and hybrid ML-KEM suites aren't supported yet. Check <xref:System.Security.Cryptography.Hpke.IsSupported*?displayProperty=nameWithType> for the suite you select.
+`Hpke` provides Hybrid Public Key Encryption (HPKE). The current implementation supports classical Diffie-Hellman key encapsulation mechanism (DHKEM) suites. ML-KEM and hybrid ML-KEM suites aren't supported yet. Check `Hpke.IsSupported` for the suite you select.
 
 ### Encrypt CMS messages with ML-KEM
 
@@ -936,7 +936,7 @@ Operations such as `Handshake`, `Read`, `Write`, `Shutdown`, and `RequestClientC
 
 ### Initial HTTP/2 concurrency
 
-<xref:System.Net.Http.SocketsHttpHandler.InitialHttp2MaxConcurrentStreams?displayProperty=nameWithType> limits the number of concurrent streams on each new HTTP/2 connection before the server's `SETTINGS` frame arrives. If you know that a server's stream limit is lower than the default of 100, set a lower value to limit the initial burst of requests on that connection. After the connection receives the `SETTINGS` frame, it uses the server's advertised limit.
+`SocketsHttpHandler.InitialHttp2MaxConcurrentStreams` limits the number of concurrent streams on each new HTTP/2 connection before the server's `SETTINGS` frame arrives. If you know that a server's stream limit is lower than the default of 100, set a lower value to limit the initial burst of requests on that connection. After the connection receives the `SETTINGS` frame, it uses the server's advertised limit.
 
 The property requires a value of at least 1. If an earlier connection to the same host advertised a lower limit, that limit can further reduce the initial concurrency for the host.
 

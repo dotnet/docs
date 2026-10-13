@@ -59,8 +59,8 @@ The .NET 11 libraries include new APIs for:
 - Cross-lane vector operations including `CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family on `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
 - Incremental Concise Binary Object Representation (CBOR) reading with <xref:System.Formats.Cbor.CborReader>.
 - Experimental composite Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) and Hybrid Public Key Encryption (HPKE) APIs, plus ML-KEM recipient support in <xref:System.Security.Cryptography.Pkcs.EnvelopedCms>.
-- <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatMessage*?displayProperty=nameWithType> for formatting validation messages with attribute-specific arguments.
-- <xref:System.Net.Http.SocketsHttpHandler.InitialHttp2MaxConcurrentStreams?displayProperty=nameWithType> to limit initial HTTP/2 concurrency before the server's `SETTINGS` frame arrives.
+- `ValidationAttribute.FormatMessage` for formatting validation messages with attribute-specific arguments.
+- `SocketsHttpHandler.InitialHttp2MaxConcurrentStreams` to limit initial HTTP/2 concurrency before the server's `SETTINGS` frame arrives.
 - More accurate IEEE decimal transcendental functions on <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, and renamed `MemoryCache` metric attributes.
 
 For more information, see [What's new in the .NET 11 libraries](libraries.md).

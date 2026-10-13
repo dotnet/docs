@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 09/08/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for release candidate 1 (RC 1).
+This article describes new features in the .NET libraries for .NET 11. It was last updated for release candidate 2 (RC 2).
 
 ## Diagnostics and process execution
 
@@ -120,6 +120,7 @@ await httpClient.PostAsync(uri, new StreamContent(body));
 - [UTF validation and invalid-subsequence search](#utf-validation-and-invalid-subsequence-search)
 - [System.Text.Json improvements](#systemtextjson-improvements)
 - [Regular expression improvements](#regular-expression-improvements)
+- [Read CBOR incrementally](#read-cbor-incrementally)
 
 ### String and character enhancements
 
@@ -203,6 +204,8 @@ The payload's `Lives` property selects `Cat`. The structural classifier narrows 
 
 For other case-selection rules, derive from <xref:System.Text.Json.Serialization.JsonTypeClassifierFactory>. The factory receives a <xref:System.Text.Json.Serialization.JsonTypeClassifierContext> describing the union cases and creates a <xref:System.Text.Json.Serialization.JsonTypeClassifier> delegate that reads JSON and selects a case type. Register the factory on one union through <xref:System.Text.Json.Serialization.JsonUnionAttribute.TypeClassifier?displayProperty=nameWithType>, on an options instance through <xref:System.Text.Json.JsonSerializerOptions.TypeClassifiers?displayProperty=nameWithType>, or on a source-generated context through <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.TypeClassifiers?displayProperty=nameWithType>.
 
+<xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> is honored on C# unions, and the source generator no longer reports [SYSLIB1227](../../../fundamentals/syslib-diagnostics/syslib1220-1229.md) for unions that use custom converters.
+
 If a union declares separate `T` and `T?` cases, the serializer selects the nullable case for a `null` payload. A non-null payload is ambiguous without a custom classifier because both cases use the same JSON shape. If no case accepts `null`, JSON `null` deserializes to the default union value, which also serializes as `null`.
 
 For language syntax, see [C# 15 union types](../../../csharp/whats-new/csharp-15.md#union-types). For more about classifiers and advanced contract metadata such as <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.Metadata.JsonUnionCaseInfo>, see [Serialize union types](../../../standard/serialization/system-text-json/union-types.md).
@@ -250,7 +253,7 @@ record Square(double Length) : Shape;
 - Set <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType> so the source generator creates the required metadata at compile time.
 - Set <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.InferClosedTypePolymorphism?displayProperty=nameWithType> to `true` on one hierarchy. Set it to `false` to opt that hierarchy out of a global setting.
 
-Explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> registrations take precedence and replace the inferred list instead of extending it. If source-generated metadata doesn't contain inferred or explicitly registered derived types, enabling only the runtime option fails fast. A per-type opt-in on a type that isn't `closed` throws <xref:System.InvalidOperationException> with reflection and produces a source-generation error. Combining a per-type opt-in with explicit derived-type registrations produces a source-generation warning because the explicit registrations replace inference.
+Inference also works through nested closed hierarchies, so a `closed` type that derives from another `closed` type contributes its own derived types to the inferred list. Explicit <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> registrations take precedence and replace the inferred list instead of extending it. If source-generated metadata doesn't contain inferred or explicitly registered derived types, enabling only the runtime option fails fast. A per-type opt-in on a type that isn't `closed` throws <xref:System.InvalidOperationException> with reflection and produces a source-generation error. Combining a per-type opt-in with explicit derived-type registrations produces a source-generation warning because the explicit registrations replace inference.
 
 Open generic derived-type registrations are also supported. For example, one attribute registers `Derived<T>` for every compatible closed `Base<T>`:
 
@@ -275,7 +278,7 @@ For serializer configuration guidance, see [Infer polymorphism from a closed hie
 
 #### Source-generation and contract metadata
 
-The `System.Text.Json` source generator supports more contract shapes:
+The `System.Text.Json` source generator supports more contract shapes, and the generated unsafe accessors are compatible with the updated C# unsafe semantics:
 
 - Members marked with <xref:System.Text.Json.Serialization.JsonIncludeAttribute> can have `private`, `internal`, or `protected` accessors. Private, internal, and protected fields are also supported when they're marked with `[JsonInclude]`.
 - An inaccessible constructor marked with <xref:System.Text.Json.Serialization.JsonConstructorAttribute> can participate in deserialization.
@@ -354,6 +357,18 @@ A new <xref:System.Text.RegularExpressions.RegexOptions.AnyNewLine?displayProper
 - The non-backtracking engine no longer takes super-linear time on certain nested-loop patterns and produces correct results for cases that previously diverged.
 - The regex compiler and source generator handle `resumeAt` correctly when a conditional appears inside a loop body.
 - The [SYSLIB1045](../../../fundamentals/syslib-diagnostics/syslib1040-1049.md) code fixer no longer creates duplicate class names when applied across multiple partial declarations of the same class.
+
+### Read CBOR incrementally
+
+<xref:System.Formats.Cbor.CborReader> can read a Concise Binary Object Representation (CBOR) payload that's delivered in chunks, without first copying the entire document into contiguous memory. To read incrementally:
+
+1. Construct a reader with `isFinalBlock: false`.
+1. Check for <xref:System.Formats.Cbor.CborReaderState.NeedsMoreData?displayProperty=nameWithType> to determine when the reader needs the next chunk.
+1. Pass the next chunk to <xref:System.Formats.Cbor.CborReader.SlideData*?displayProperty=nameWithType>, and set `isFinalBlock` to `true` for the last chunk.
+
+Incremental reading requires <xref:System.Formats.Cbor.CborConformanceMode.Lax?displayProperty=nameWithType>. Other conformance modes reject a non-final block.
+
+:::code language="csharp" source="./snippets/csharp/Libraries.cs" id="CborIncrementalRead":::
 
 ## Compression and archive formats
 
@@ -440,6 +455,18 @@ Because the three outer-join operations return tuples directly, you can work wit
 
 <xref:System.Numerics> adds <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, which implement IEEE 754-2019 decimal floating-point semantics. These types support generic math, infinities, and NaN values, and can help when you need IEEE decimal behavior instead of <xref:System.Decimal>.
 
+The transcendental functions on these types are more accurate. The most significant fix is for `Decimal128` values near a cancellation point, such as `Asin` and `Acos` near ±1 and logarithms near 1, where earlier builds could lose most or all significant digits. For example, `Decimal128.Acos(1 - 1e-30)` previously had an error of roughly 10²⁴ units in the last place (ULPs). It's now well under one ULP.
+
+The change also improves the following behaviors:
+
+- Inverse trigonometric and hyperbolic functions, logarithms, `Pow`, and `RootN` preserve decimal precision during argument reduction.
+- `SinPi`, `CosPi`, `TanPi`, and `SinCosPi` return exact results, such as zero for integer inputs written with alternate decimal representations (for example, `SinPi(1000.000)`).
+- `Log(x, base)` rounds only once for all three types.
+- `Exp2`, `Exp2M1`, and subnormal-result rounding are more accurate.
+- Alternate representations of `1`, such as `Acosh(1.0000000)`, no longer return NaN for `Decimal64` and `Decimal128`.
+
+No public APIs were added. Because the rounded results intentionally change, code that compares these results against stored values might observe different last digits. The functions still aren't guaranteed to be correctly rounded.
+
 ### Correctly rounded decimal and BigInteger conversions
 
 Conversions between <xref:System.Decimal> and binary floating-point types, and conversions from <xref:System.Numerics.BigInteger> to binary floating-point types, now round the exact source value once to the nearest representable destination value. The previous conversions could lose significant digits or round through an intermediate value, so binaries rebuilt with a .NET 11 SDK can produce different results than they did on earlier versions. There's no compatibility switch to restore the previous conversion algorithms.
@@ -523,6 +550,7 @@ These building blocks are useful for image processing, audio digital signal proc
 
 - [SafeFileHandle pipe support](#safefilehandle-pipe-support)
 - [RandomAccess pipe support](#randomaccess-pipe-support)
+- [File locking on iOS and tvOS](#file-locking-on-ios-and-tvos)
 
 #### SafeFileHandle pipe support
 
@@ -539,11 +567,16 @@ These building blocks are useful for image processing, audio digital signal proc
 
 On Windows, `Process` now uses overlapped I/O for redirected stdout/stderr, which reduces thread-pool blocking in process-heavy applications.
 
+#### File locking on iOS and tvOS
+
+On iOS and tvOS, <xref:System.IO.FileStream> no longer acquires advisory file locks by default. This change avoids operating-system termination when an app is suspended while it holds a file lock. As a result, <xref:System.IO.FileShare> restrictions aren't enforced on those platforms, including between handles in the same process. Mac Catalyst and other platforms keep their existing defaults. To restore locking, set the `System.IO.DisableFileLocking` runtime configuration property to `false`, or set the `DOTNET_SYSTEM_IO_DISABLEFILELOCKING` environment variable to `0`. For more information, see [File locking on iOS and tvOS](runtime.md#file-locking-on-ios-and-tvos).
+
 ### Collections improvements
 
 - [BitArray span constructors](#bitarray-span-constructors)
 - [BitArray.PopCount](#bitarraypopcount)
 - [EqualityComparer\<T>.Create](#equalitycomparertcreate)
+- [ConcurrentQueue reliability fix](#concurrentqueue-reliability-fix)
 
 #### BitArray span constructors
 
@@ -562,6 +595,10 @@ The <xref:System.Collections.BitArray> class now includes a <xref:System.Collect
 To create an equality comparer from a key selector function, use the new <xref:System.Collections.Generic.EqualityComparer`1.Create*?displayProperty=nameWithType> factory method. You can pass an optional <xref:System.Collections.Generic.IEqualityComparer`1> for the key type itself:
 
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="EqualityComparerCreate":::
+
+#### ConcurrentQueue reliability fix
+
+<xref:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue*?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek*?displayProperty=nameWithType> no longer spuriously report an empty queue while the queue freezes a segment during growth.
 
 ## Extensions and developer platform
 
@@ -640,6 +677,7 @@ These constants can be used with the `StringSyntax` attribute to provide better 
 - [Asynchronous ChangeToken.OnChange](#asynchronous-changetokenonchange)
 - [Options-aware HybridCache factories](#options-aware-hybridcache-factories)
 - [Asynchronous validation with DataAnnotations](#asynchronous-validation-with-dataannotations)
+- [Format DataAnnotations messages](#format-dataannotations-messages)
 - [Activity tracing configuration](#activity-tracing-configuration)
 - [Generic source-generated logging methods](#generic-source-generated-logging-methods)
 - [Improved reliability for configuration file change detection](#improved-reliability-for-configuration-file-change-detection)
@@ -675,10 +713,12 @@ var cache = new MemoryCache(new MemoryCacheOptions
 
 The new `Microsoft.Extensions.Caching.Memory.MemoryCache` meter publishes four observable instruments:
 
-- `dotnet.cache.requests` (with a `dotnet.cache.request.type` tag that distinguishes `hit` from `miss`)
+- `dotnet.cache.requests` (with a `dotnet.cache.request.result` tag that distinguishes `hit` from `miss`)
 - `dotnet.cache.evictions`
 - `dotnet.cache.entries`
-- `dotnet.cache.estimated_size`
+- `dotnet.cache.estimated_size` (with unit `1`, because its values represent application-defined cache size units rather than bytes)
+
+If you filter telemetry on the hit/miss tag, use `dotnet.cache.request.result`. Earlier builds named the tag `dotnet.cache.request.type`.
 
 Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithType> to the new <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.%23ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Diagnostics.Metrics.IMeterFactory)?displayProperty=nameWithType> constructor overload for per-instance metrics. Without one, the instruments are aggregated process-wide on a shared meter.
 
@@ -760,6 +800,18 @@ public sealed class BackendOptionsValidator : IAsyncValidateOptions<BackendOptio
 }
 ```
 
+### Format DataAnnotations messages
+
+<xref:System.ComponentModel.DataAnnotations.ValidationAttribute.FormatMessage*?displayProperty=nameWithType> lets a validation host supply a message template while the attribute fills in its own placeholders. This method supports localization without duplicating the formatting logic for built-in attributes such as <xref:System.ComponentModel.DataAnnotations.RangeAttribute>:
+
+```csharp
+using System.ComponentModel.DataAnnotations;
+
+var range = new RangeAttribute(1, 10);
+string message = range.FormatMessage("{0} must be between {1} and {2}", "Value");
+// Value must be between 1 and 10
+```
+
 ### Activity tracing configuration
 
 A new tracing configuration API in `Microsoft.Extensions.Diagnostics` lets you turn `Activity` tracing on and off with rules instead of wiring up `ActivityListener` instances manually. Call `AddTracing` and describe which activity sources, operations, and listeners to enable or disable. Rules can be driven from configuration, so tracing can be tuned without a redeploy.
@@ -796,6 +848,8 @@ It now handles relative paths, missing directories, and file systems that don't 
 - [CryptographicOperations.FixedTimeEquals overload](#cryptographicoperationsfixedtimeequals-overload)
 - [AES Key Wrap](#aes-key-wrap)
 - [Faster authenticated encryption on Apple platforms](#faster-authenticated-encryption-on-apple-platforms)
+- [Experimental composite ML-KEM and HPKE APIs](#experimental-composite-ml-kem-and-hpke-apis)
+- [Encrypt CMS messages with ML-KEM](#encrypt-cms-messages-with-ml-kem)
 
 ### X25519 Diffie-Hellman key exchange
 
@@ -828,12 +882,26 @@ Both sets of APIs provide array-returning and span-based overloads:
 
 <xref:System.Security.Cryptography.AesGcm> and <xref:System.Security.Cryptography.ChaCha20Poly1305> avoid passing empty associated data to CryptoKit on Apple platforms, letting the native implementation use its empty-AAD fast path. On Apple platforms version 26 and later, encryption also skips a copy that was previously required for older Foundation implementations.
 
+### Experimental composite ML-KEM and HPKE APIs
+
+> [!WARNING]
+> `CompositeMLKem` and `Hpke` are experimental in .NET 11 and might change. Direct use requires you to opt in to the `SYSLIB5006` diagnostic for `CompositeMLKem` and the `SYSLIB5009` diagnostic for `Hpke`.
+
+<xref:System.Security.Cryptography.CompositeMLKem> combines post-quantum and classical key encapsulation so that both contribute to the shared secret. It's available on platforms that already support Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM). Call <xref:System.Security.Cryptography.CompositeMLKem.IsAlgorithmSupported*?displayProperty=nameWithType> to determine whether the platform supports a particular combination of algorithms.
+
+<xref:System.Security.Cryptography.Hpke> provides Hybrid Public Key Encryption (HPKE). The current implementation supports classical Diffie-Hellman key encapsulation mechanism (DHKEM) suites. ML-KEM and hybrid ML-KEM suites aren't supported yet. Check <xref:System.Security.Cryptography.Hpke.IsSupported*?displayProperty=nameWithType> for the suite you select.
+
+### Encrypt CMS messages with ML-KEM
+
+The Cryptographic Message Syntax (CMS) API, <xref:System.Security.Cryptography.Pkcs.EnvelopedCms>, can encrypt and decrypt messages by using ML-KEM key encapsulation mechanism (KEM) recipients. Support is limited to the pure ML-KEM algorithm, and it's available only on non-Windows platforms.
+
 ## Networking and transport security
 
 - [TLS handshake hardening](#tls-handshake-hardening)
 - [Experimental caller-driven TLS sessions](#experimental-caller-driven-tls-sessions)
 - [HTTP request compression](#http-request-compression)
 - [Configurable HTTP connection eviction](#configurable-http-connection-eviction)
+- [Initial HTTP/2 concurrency](#initial-http2-concurrency)
 - [DNS record resolution APIs](#dns-record-resolution-apis)
 - [HTTP/2 automatic downgrade for Windows authentication](#http2-automatic-downgrade-for-windows-authentication)
 - [QUIC stream priority](#quic-stream-priority)
@@ -865,6 +933,20 @@ Operations such as `Handshake`, `Read`, `Write`, `Shutdown`, and `RequestClientC
 ### Configurable HTTP connection eviction
 
 <xref:System.Net.Http.SocketsHttpHandler> now provides <xref:System.Net.Http.SocketsHttpHandler.ShouldEvictConnection?displayProperty=nameWithType> for per-connection eviction decisions. This callback lets you retire connections based on age, endpoint details, and DNS changes instead of fixed lifetime-only policies.
+
+### Initial HTTP/2 concurrency
+
+<xref:System.Net.Http.SocketsHttpHandler.InitialHttp2MaxConcurrentStreams?displayProperty=nameWithType> limits the number of concurrent streams on each new HTTP/2 connection before the server's `SETTINGS` frame arrives. If you know that a server's stream limit is lower than the default of 100, set a lower value to limit the initial burst of requests on that connection. After the connection receives the `SETTINGS` frame, it uses the server's advertised limit.
+
+The property requires a value of at least 1. If an earlier connection to the same host advertised a lower limit, that limit can further reduce the initial concurrency for the host.
+
+```csharp
+var handler = new SocketsHttpHandler
+{
+    InitialHttp2MaxConcurrentStreams = 20
+};
+using var client = new HttpClient(handler);
+```
 
 ### DNS record resolution APIs
 

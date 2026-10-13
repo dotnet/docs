@@ -19,7 +19,7 @@ Previously, when you launched an app through its apphost, `Environment.GetComman
 
 ## New behavior
 
-Starting in .NET 11 Preview 7, when you launch an app through its apphost, `Environment.GetCommandLineArgs()[0]` preserves the invocation name, including relative paths and symlink names. For example, if `special_myapp` is a symlink to `foo`, and you run `./special_myapp`, the value is `./special_myapp`.
+Starting in .NET 11 Preview 7, when you launch an app through its apphost, `Environment.GetCommandLineArgs()[0]` preserves the invocation name, including relative paths and symlink names. For example, if `special_myapp` is a symlink to `myapp`, and you run `./special_myapp`, the value is `./special_myapp`.
 
 When you launch an app with `dotnet <application.dll>`, the behavior is unchanged.
 

@@ -393,11 +393,11 @@ The .NET SDK uses wildcard patterns during project evaluation. For example, SDK-
 In benchmarks on Windows, complete project evaluations were 10–13% faster and allocated 16–34% less memory than with the legacy matcher:
 
 | Directories | Nonmatching files per directory | Evaluation time vs. legacy | Allocation vs. legacy |
-| ---: | ---: | ---: | ---: |
-| 32 | 8 | 0.89x | 0.73x |
-| 32 | 64 | 0.90x | 0.84x |
-| 128 | 8 | 0.87x | 0.66x |
-| 128 | 64 | 0.90x | 0.84x |
+| ----------: | ------------------------------: | -------------------------: | --------------------: |
+|          32 |                               8 |                      0.89x |                 0.73x |
+|          32 |                              64 |                      0.90x |                 0.84x |
+|         128 |                               8 |                      0.87x |                 0.66x |
+|         128 |                              64 |                      0.90x |                 0.84x |
 
 The optimization helps most when wildcard include and exclude patterns overlap, which is common in SDK-style projects. For example, the SDK includes source files with `**/*.cs` while it excludes build-output directories such as `bin` and `obj`. The benchmark results cover four tested project-evaluation workloads, not all builds.
 

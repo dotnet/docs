@@ -2,7 +2,7 @@
 title: Update tracked .NET installations with dotnetup
 description: Update rolling SDK and runtime requirements and remove unused versions.
 ms.topic: how-to
-ms.date: 09/30/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -12,6 +12,10 @@ ai-usage: ai-assisted
 
 `dotnetup` stores the requested channel separately from the resolved version.
 An update resolves each rolling channel again.
+
+These updates don't update the dotnetup executable.
+To update the tool itself, use
+[`dotnetup self update`](../reference/dotnetup-self-update.md).
 
 ## Choose an update scope
 
@@ -83,6 +87,27 @@ For machine-readable output:
 ```dotnetcli
 dotnetup list --format json
 ```
+
+## Remove a tracked requirement
+
+To remove an SDK requirement, pass its stored channel or exact version:
+
+```dotnetcli
+dotnetup sdk uninstall 10.0.1xx
+```
+
+Uninstall removes the requirement, then cleans up unreferenced installations
+throughout the selected root.
+It warns if another requirement keeps the requested installation or if
+cleanup removes additional installations.
+Review these warnings before you confirm the operation.
+In noninteractive automation, use `--non-interactive` to skip confirmation,
+not the warnings.
+
+For runtime requirements, use `dotnetup runtime uninstall`.
+For details, see
+[SDK uninstall](../reference/dotnetup-sdk-uninstall.md) and
+[Runtime uninstall](../reference/dotnetup-runtime-uninstall.md).
 
 ## See also
 

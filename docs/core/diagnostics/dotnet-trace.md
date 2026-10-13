@@ -112,6 +112,8 @@ dotnet-trace collect
 
 - **`--buffering-mode <Drop|Block>`**
 
+  Available in `dotnet-trace` version 10.0.750501 and later.
+
   Sets how the runtime buffers events. Accepts `Drop` or `Block` (case-insensitive), and defaults to `Drop`.
 
   - `Drop` (default): Events are dropped when the buffer overflows.

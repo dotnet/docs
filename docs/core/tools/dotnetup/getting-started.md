@@ -2,7 +2,7 @@
 title: Get started with dotnetup
 description: Install dotnetup, choose an SDK channel, and configure access to .NET installations.
 ms.topic: tutorial
-ms.date: 09/30/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -181,3 +181,11 @@ dotnetup list
 ```
 
 Run `dotnetup init` again to change the setup.
+
+## Keep dotnetup up to date
+
+To update the tool itself, run `dotnetup self update`.
+For daily builds, use `dotnetup self update --channel daily`.
+These commands don't update managed SDKs or runtimes.
+For options and older-version recovery, see
+[Update or remove dotnetup](usecases/manage-dotnetup.md).

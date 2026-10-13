@@ -2,7 +2,7 @@
 title: dotnetup overview
 description: Learn how dotnetup installs and manages user-level .NET SDKs and runtimes.
 ms.topic: overview
-ms.date: 09/30/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -23,6 +23,7 @@ Use `dotnetup` to:
 - Update tracked channels without changing exact-version requirements.
 - Configure how terminals and applications find the managed `dotnet`.
 - Run the managed `dotnet` without changing `PATH`.
+- Update the dotnetup executable and control update notifications.
 
 ## Start
 

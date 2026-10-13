@@ -2,7 +2,7 @@
 title: How dotnetup verifies downloads
 description: Learn how dotnetup verifies .NET release manifests and archives, how daily builds differ, and how administrators can block unsigned downloads.
 ms.topic: concept-article
-ms.date: 09/30/2026
+ms.date: 10/13/2026
 ai-usage: ai-generated
 ---
 
@@ -127,6 +127,21 @@ the policy.
 The `get-dotnetup` download scripts verify the downloaded `dotnetup`
 executable with its SHA-512 checksum file. For more information, see
 [Get started with dotnetup](../getting-started.md).
+
+[`dotnetup self update`](../reference/dotnetup-self-update.md) also verifies
+the downloaded executable's SHA-512 checksum.
+On Windows, if the installed executable is Authenticode-signed, the
+replacement must have an Authenticode signature with a Microsoft-trusted root.
+Other platforms and unsigned Windows installations rely on the checksum.
+
+Self-update currently uses the unsigned blob feed, not the signed .NET
+release manifests described earlier.
+The unsigned-download policy also blocks self-update from this feed.
+
+After replacement, dotnetup runs the new executable with `--version` and
+checks that its version matches the resolved release.
+If this check fails, dotnetup attempts to restore the previous executable.
+This startup check doesn't authenticate the download.
 
 ## See also
 

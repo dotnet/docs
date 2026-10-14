@@ -1,6 +1,7 @@
 ﻿using System.Buffers;
 using System.Collections;
 using System.Diagnostics;
+using System.Formats.Cbor;
 using System.Formats.Tar;
 using System.Globalization;
 using System.IO.Compression;
@@ -400,6 +401,39 @@ public static class LibrariesExamples
         byte[] unwrappedPadded = aes.DecryptKeyWrapPadded(wrappedPadded);
         Console.WriteLine(arbitraryLengthKey.SequenceEqual(unwrappedPadded)); // True
         // </AesKeyWrap>
+    }
+
+    static void CborIncrementalReadExample()
+    {
+        // <CborIncrementalRead>
+        ReadOnlyMemory<byte> firstChunk = new byte[] { 0x82, 0x0a };
+        ReadOnlyMemory<byte> nextChunk = new byte[] { 0x14 };
+
+        // Incremental reading requires CborConformanceMode.Lax.
+        var reader = new CborReader(
+            firstChunk,
+            new CborReaderOptions { ConformanceMode = CborConformanceMode.Lax },
+            isFinalBlock: false);
+
+        reader.ReadStartArray();
+        int first = reader.ReadInt32(); // 10
+
+        if (reader.PeekState() == CborReaderState.NeedsMoreData)
+        {
+            // Slide in the next chunk after the reader consumes all the buffered bytes.
+            if (reader.BytesRemaining == 0)
+            {
+                reader.SlideData(nextChunk, isFinalBlock: true);
+            }
+            else
+            {
+                throw new InvalidOperationException("Buffer management omitted from the sample.");
+            }
+        }
+
+        int second = reader.ReadInt32(); // 20
+        reader.ReadEndArray();
+        // </CborIncrementalRead>
     }
 
     static void NullableUnderlyingTypeExample()

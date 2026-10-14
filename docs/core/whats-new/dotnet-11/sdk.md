@@ -2,31 +2,31 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 09/12/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 11
 
-This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for release candidate 1 (RC 1). You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
+This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for release candidate 2 (RC 2). You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
 ## SDK footprint
 
 The .NET SDK installer size on Linux and macOS has been reduced by deduplicating assemblies using symbolic links. Duplicate `.dll` and `.exe` files are identified by content hash and replaced with symbolic links pointing to a single copy. This affects tarballs, `.pkg`, `.deb`, and `.rpm` installers.
 
-Analysis found that 35% of the SDK directory consists of duplicate files. On Linux x64, that's 816 files totaling 140 MB on disk (53 MB compressed). By replacing duplicates with symbolic links, the Linux x64 archive drops significantly in size:
+Analysis of an early .NET 11 build found that 35% of the SDK directory consists of duplicate files. On Linux x64, that's 816 files totaling 140 MB on disk (53 MB compressed). By replacing duplicates with symbolic links, the Linux x64 archive drops significantly in size:
 
-| Platform  | SDK artifact | .NET 10 size (MB) | .NET 11 Preview 2 size (MB) | Reduction |
-|-----------|--------------|-------------------|-----------------------------|-----------|
-| linux-x64 | tarball      | 230               | 189                         | 17.8%     |
-| linux-x64 | deb          | 164               | 122                         | 25.6%     |
-| linux-x64 | rpm          | 165               | 122                         | 26.0%     |
-| linux-x64 | containers   | Varies            | Varies                      | 8–17%     |
+| Platform  | SDK artifact | .NET 10 size (MB) | Measured .NET 11 size (MB) | Reduction |
+|-----------|--------------|-------------------|----------------------------|-----------|
+| linux-x64 | tarball      | 230               | 189                        | 17.8%     |
+| linux-x64 | deb          | 164               | 122                        | 25.6%     |
+| linux-x64 | rpm          | 165               | 122                        | 26.0%     |
+| linux-x64 | containers   | Varies            | Varies                     | 8–17%     |
 
 The SDK is further trimmed because crossgen is skipped for assemblies that only exist under `DotnetTools/`. Assemblies that also exist outside `DotnetTools/` are still crossgen'd—they get the startup benefit and the duplicate is then removed—but assemblies unique to `DotnetTools/` are left as IL-only. On a `linux-x64` build, this reduces the SDK tarball by an additional 23.6 MB.
 
-Windows deduplication is planned for a future preview.
+Windows deduplication isn't included.
 
 ## Code analysis and warnings
 
@@ -91,8 +91,10 @@ The pack operation still proceeds with a warning to avoid breaking existing proj
 
 - [Solution filter CLI support](#solution-filter-cli-support)
 - [File-based apps split across files](#file-based-apps-split-across-files)
+- [Quoted values and item metadata in file-based directives](#quoted-values-and-item-metadata-in-file-based-directives)
 - [File-based apps reuse Native AOT build outputs](#file-based-apps-reuse-native-aot-build-outputs)
 - [Pass environment variables with dotnet run](#pass-environment-variables-with-dotnet-run)
+- [MSBuild properties in launch-profile arguments](#msbuild-properties-in-launch-profile-arguments)
 - [dotnet watch improvements](#dotnet-watch-improvements)
 - [Fish shell completions](#fish-shell-completions)
 - [dotnet reference falls back to current directory](#dotnet-reference-falls-back-to-current-directory)
@@ -123,6 +125,21 @@ File-based apps now support an `#:include` directive, so you can move shared hel
 Console.WriteLine(Helpers.FormatOutput(new Customer()));
 ```
 
+### Quoted values and item metadata in file-based directives
+
+In a file-based app, a `#:property` directive can use a quoted value that contains spaces. The `#:package`, `#:project`, and `#:ref` directives also accept trailing `Name=Value` tokens that set MSBuild item metadata. The following example sets two quoted properties and uses the `Aliases` metadata on a package directive, so the app references the package through the resulting C# `extern alias`:
+
+```csharp
+#:property Company="Contoso Tools"
+#:property AssemblyTitle="Contoso Directive Demo"
+#:package System.CommandLine@2.0.1 Aliases=CommandLine
+
+extern alias CommandLine;
+Console.WriteLine(typeof(CommandLine::System.CommandLine.RootCommand).Assembly.GetName().Name);
+```
+
+Run the file with `dotnet run Program.cs`. The quoted value becomes the generated assembly's `Company` metadata, and the `CommandLine` alias qualifies types from the `System.CommandLine` package. For the supported directives and the broader workflow, see [File-based apps](../../sdk/file-based-apps.md).
+
 ### File-based apps reuse Native AOT build outputs
 
 The Native AOT command-line path can reuse existing build outputs when it runs an unchanged file-based app. Supported cached launches include `dotnet run --file app.cs`, `dotnet run app.cs`, and `dotnet app.cs`. If the cached output doesn't match the current command arguments, the CLI falls back to the managed path.
@@ -144,6 +161,10 @@ dotnet run -e ASPNETCORE_ENVIRONMENT=Development -e LOG_LEVEL=Debug
 ```
 
 Environment variables passed this way are available to MSBuild logic as `RuntimeEnvironmentVariable` items.
+
+### MSBuild properties in launch-profile arguments
+
+`dotnet run` now expands MSBuild properties in a launch profile's `commandLineArgs` value by using the evaluated project. For example, a profile argument such as `--name $(AssemblyName)` receives the project's assembly name when you run `dotnet run --launch-profile <profile>`. For more information about launch profiles, see [dotnet run](../../tools/dotnet-run.md).
 
 ### dotnet watch improvements
 
@@ -343,14 +364,6 @@ dotnet test dirs.proj
 
 Reporter and artifact handling has been improved for multi-module runs, including expected-versus-actual rendering in failure output, whole-run zero-test verdict logic, and automatic post-processing of compatible test artifacts.
 
-### Known dotnet test issues in RC 1
-
-The following issues affect .NET 11 RC 1 build `11.0.100-rc.1.26425.128`:
-
-- Relative project paths can be combined twice and cause an unhandled project-load exception. Until [dotnet/sdk#56196](https://github.com/dotnet/sdk/issues/56196) is fixed, pass an absolute project path.
-- In MTP mode, an all-skipped run can return exit code 8 even when `--zero-tests-policy allow-skipped` or `--ignore-exit-code 8` is set. The fix is tracked by [dotnet/sdk#56214](https://github.com/dotnet/sdk/issues/56214) and [dotnet/sdk#56219](https://github.com/dotnet/sdk/pull/56219).
-- MTP failures report only the numeric exit code instead of the descriptive text available in MTP 2.4. Use the [MTP exit-code table](../../testing/microsoft-testing-platform-troubleshooting.md#exit-codes) to interpret the code. Servicing is tracked by [dotnet/sdk#56104](https://github.com/dotnet/sdk/issues/56104).
-
 ### Test templates support xUnit v3 and NUnit on Microsoft.Testing.Platform
 
 The built-in `xunit` template adds a `--xunit-version` option. Use `v3` to generate an xUnit v3 project that defaults to Microsoft.Testing.Platform as the runner:
@@ -367,6 +380,37 @@ dotnet new nunit --test-runner Microsoft.Testing.Platform
 ```
 
 Both options are available for C#, F#, and VB templates.
+
+## MSBuild and NuGet
+
+- [Faster wildcard matching during project evaluation](#faster-wildcard-matching-during-project-evaluation)
+- [Configure minimum package publication age from the CLI](#configure-minimum-package-publication-age-from-the-cli)
+
+### Faster wildcard matching during project evaluation
+
+The .NET SDK uses wildcard patterns during project evaluation. For example, SDK-style projects use patterns such as `**/*.cs` to include source files. In .NET SDK 11.0.100 or Visual Studio 18.12 and later versions, MSBuild finds matching files faster in projects that have many directories and files.
+
+In benchmarks on Windows, complete project evaluations were 10–13% faster and allocated 16–34% less memory than with the legacy matcher:
+
+| Directories | Nonmatching files per directory | Evaluation time vs. legacy | Allocation vs. legacy |
+| ----------: | ------------------------------: | -------------------------: | --------------------: |
+|          32 |                               8 |                      0.89x |                 0.73x |
+|          32 |                              64 |                      0.90x |                 0.84x |
+|         128 |                               8 |                      0.87x |                 0.66x |
+|         128 |                              64 |                      0.90x |                 0.84x |
+
+The optimization helps most when wildcard include and exclude patterns overlap, which is common in SDK-style projects. For example, the SDK includes source files with `**/*.cs` while it excludes build-output directories such as `bin` and `obj`. The benchmark results cover four tested project-evaluation workloads, not all builds.
+
+### Configure minimum package publication age from the CLI
+
+The [`dotnet nuget add source`](../../tools/dotnet-nuget-add-source.md) and [`dotnet nuget update source`](../../tools/dotnet-nuget-update-source.md) commands accept `--min-publish-age-hours`, which sets the `minPublishAgeHours` source setting in *nuget.config*. This option lets you configure the minimum age of package versions that are eligible for selection without editing the configuration file by hand:
+
+```dotnetcli
+dotnet nuget add source https://api.nuget.org/v3/index.json --name public --min-publish-age-hours 24 --configfile nuget.config
+dotnet nuget update source public --min-publish-age-hours 48 --configfile nuget.config
+```
+
+The [`dotnet package add`](../../tools/dotnet-package-add.md) and [`dotnet package update`](../../tools/dotnet-package-update.md) commands use the configured cooldown when they select a version. An update reports when the setting excludes a newer version. For projects that use floating package versions, restore fails with error NU1020 if the cooldown leaves no eligible version. The error makes the configuration conflict visible instead of letting a no-op restore hide it.
 
 ## Container and tooling updates
 

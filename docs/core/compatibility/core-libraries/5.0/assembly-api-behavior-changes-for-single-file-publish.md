@@ -16,7 +16,7 @@ In single-file publishing for .NET 5 and later versions, bundled assemblies are 
 | <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> | Returns extracted DLL file path | Returns empty string for bundled assemblies |
 | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | Returns extracted DLL file path | Throws exception for bundled assemblies |
 | <xref:System.Reflection.Assembly.GetFile(System.String)?displayProperty=nameWithType> | Returns `null` for bundled assemblies | Throws exception for bundled assemblies |
-| `Environment.GetCommandLineArgs()[0]` | Value is the name of the entry point DLL | Value is the name of the host executable |
+| `Environment.GetCommandLineArgs()[0]` | Value is the name of the entry point DLL | In .NET 5 through .NET 10, value is the name of the host executable. Starting in .NET 11, the value preserves the invocation name supplied to the apphost. |
 | <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType> | Value is the temporary extraction directory | Value is the containing directory of the host executable |
 
 ## Version introduced

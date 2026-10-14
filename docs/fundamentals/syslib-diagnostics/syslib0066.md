@@ -9,7 +9,7 @@ f1_keywords:
 
 # SYSLIB0066: IStartupValidator is obsolete
 
-Starting in .NET 11 RC 1, <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. When you reference or implement this interface, the compiler generates warning `SYSLIB0066` with the message `Implement IAsyncStartupValidator instead.` The interface remains available and functional for compatibility.
+Starting in .NET 11, <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. When you reference or implement this interface, the compiler generates warning `SYSLIB0066` with the message `Implement IAsyncStartupValidator instead.` The interface remains available and functional for compatibility.
 
 ## Reason for obsoletion
 

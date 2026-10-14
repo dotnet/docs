@@ -178,6 +178,8 @@ Random number generation is integral to many cryptographic operations. For examp
 
 The <xref:System.Security.Cryptography.RandomNumberGenerator> class is an implementation of a random number generator algorithm.
 
+On browser WebAssembly, the static <xref:System.Security.Cryptography.RandomNumberGenerator> methods and the default implementation returned by <xref:System.Security.Cryptography.RandomNumberGenerator.Create?displayProperty=nameWithType> obtain random bytes through the browser's Web Crypto API `crypto.getRandomValues()` method. The security of the generated values depends on the browser implementing this API correctly.
+
 ## ClickOnce Manifests
 
 The following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):

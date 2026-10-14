@@ -21,8 +21,6 @@ To migrate a custom startup validator, implement and register <xref:Microsoft.Ex
 
 Applications that only call `OptionsBuilder<TOptions>.ValidateOnStart()` and don't directly implement a startup-validator interface normally don't need to change their code.
 
-For more information, see [API obsoletions with non-default diagnostic IDs (.NET 11)](../../core/compatibility/core-libraries/11/obsolete-apis.md#syslib0066).
-
 ## Suppress a warning
 
 If you must use the obsolete interface, you can suppress the warning in code or in your project file.

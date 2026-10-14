@@ -67,5 +67,5 @@ There is no compatibility switch. Suppressing `SYSLIB1205` doesn't resolve the c
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Options.OptionsValidatorAttribute>
-- <xref:Microsoft.Extensions.Options.IValidateOptions`1.Validate(System.String,`0)>
+- <xref:Microsoft.Extensions.Options.OptionsValidatorAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Options.IValidateOptions`1.Validate(System.String,`0)?displayProperty=fullName>

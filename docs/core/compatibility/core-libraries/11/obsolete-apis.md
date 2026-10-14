@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 11 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 11 with a custom diagnostic ID.
-ms.date: 07/06/2026
+ms.date: 10/14/2026
 ai-usage: ai-assisted
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 11)
@@ -20,6 +20,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | Diagnostic ID                                                           | Description | Severity |
 |-------------------------------------------------------------------------|-------------|----------|
 | [SYSLIB0064](../../../../fundamentals/syslib-diagnostics/syslib0064.md) | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. | Warning |
+| [SYSLIB0066](../../../../fundamentals/syslib-diagnostics/syslib0066.md) | <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. Implement and register a custom <xref:Microsoft.Extensions.Options.IAsyncStartupValidator> instead; don't register the same implementation under both startup-validator interfaces. | Warning |
 
 ## Version introduced
 
@@ -35,6 +36,8 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 - Warnings or errors for these obsoletions can't be suppressed using the standard diagnostic ID for obsolete types or members; use the custom `SYSLIBxxxx` diagnostic ID value instead.
 
+To migrate a custom startup validator, implement <xref:Microsoft.Extensions.Options.IAsyncStartupValidator> and register it only under that interface. Applications that call `OptionsBuilder<TOptions>.ValidateOnStart()` without directly implementing a startup-validator interface normally don't need to change their code.
+
 ## Affected APIs
 
 ### SYSLIB0064
@@ -42,8 +45,13 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=fullName>
 
+### SYSLIB0066
+
+- <xref:Microsoft.Extensions.Options.IStartupValidator>
+
 ## See also
 
+- [SYSLIB0066 warning - IStartupValidator is obsolete](../../../../fundamentals/syslib-diagnostics/syslib0066.md)
 - [Cryptography obsoletions (.NET 11)](../../cryptography/11/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 10)](../10.0/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 9)](../9.0/obsolete-apis-with-custom-diagnostics.md)

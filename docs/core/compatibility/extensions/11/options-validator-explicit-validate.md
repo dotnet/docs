@@ -28,7 +28,7 @@ public partial class MyValidator : IValidateOptions<MyOptions>
 
 ## New behavior
 
-Starting in .NET 11 RC 1, the source generator recognizes the explicit implementation, reports `SYSLIB1205`, and suppresses synchronous `Validate` generation for that options model.
+Starting in .NET 11, the source generator recognizes the explicit implementation, reports `SYSLIB1205`, and suppresses synchronous `Validate` generation for that options model.
 
 If the validator also implements `IAsyncValidateOptions<TOptions>`, synchronous and asynchronous generation remain independent. The handwritten synchronous implementation produces `SYSLIB1205` and suppresses generated `Validate`, but the generator can still emit `ValidateAsync`.
 

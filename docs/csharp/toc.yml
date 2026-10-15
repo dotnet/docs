@@ -152,16 +152,14 @@ items:
       href: fundamentals/statements/linq.md
   - name: Building software
     items:
-    - name: Functional techniques
-      items:
-      - name: Overview
-        href: fundamentals/functional/index.md
-      - name: Lambda expressions
-        href: fundamentals/functional/lambdas.md
-      - name: Local functions
-        href: fundamentals/functional/local-functions.md
-      - name: Iterators
-        href: fundamentals/functional/iterators.md
+    - name: Overview
+      href: fundamentals/building-software/index.md
+    - name: Lambda expressions
+      href: fundamentals/building-software/lambdas.md
+    - name: Local functions
+      href: fundamentals/building-software/local-functions.md
+    - name: Iterators
+      href: fundamentals/building-software/iterators.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records

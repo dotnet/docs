@@ -1,19 +1,19 @@
 ---
 title: "Iterators"
 description: Learn how C# iterator methods produce IEnumerable sequences with yield return and yield break for use with foreach.
-ms.date: 10/06/2026
+ms.date: 10/15/2026
 ms.topic: concept-article
 ai-usage: ai-generated
 ---
 
 # Iterators
 
+Choose an iterator when you want to return a sequence whose elements callers can consume one at a time, without first building the complete result in a collection. This approach fits generated values, filters with custom control flow, and sequences that callers might stop reading early.
+
 > [!TIP]
 > This article teaches synchronous iterators for developers who know methods, loops, and collections. For complete `yield` syntax and restrictions, see the [`yield` statement reference](../../language-reference/statements/yield.md).
 
 An *iterator method* produces a sequence of values one at a time. This article focuses on iterator methods that return <xref:System.Collections.Generic.IEnumerable`1>, whose values callers usually consume with a `foreach` statement.
-
-Use an iterator when the method can describe how to produce a sequence without building the complete result in a collection first. Iterator methods work especially well for filters, generated values, and pipelines where each step handles one element at a time.
 
 ## Produce elements with `yield return`
 
@@ -70,6 +70,8 @@ Keep deferred execution visible in the method's purpose and naming. Avoid unexpe
 
 Return an iterator when values naturally arrive one at a time or when the caller doesn't need the complete result immediately. Return a completed collection when callers need a stable snapshot, indexed access, or repeated enumeration without recalculating the elements.
 
+Use an ordinary loop when you want to perform an action for each item without returning a sequence. For a standard filter or transformation, prefer a LINQ operation such as `Where` or `Select`; write an iterator when custom element-production logic is clearer as a series of statements.
+
 Iterator methods compose with LINQ because both use `IEnumerable<T>`. For example, a caller can add another filter:
 
 ```csharp
@@ -83,7 +85,7 @@ For asynchronous sequences, see [Generate and consume asynchronous streams](../.
 
 ## See also
 
-- [Functional techniques overview](index.md)
+- [Building software](index.md)
 - [Lambda expressions](lambdas.md)
 - [Local functions](local-functions.md)
 - [`foreach` statement](../../language-reference/statements/iteration-statements.md#the-foreach-statement)

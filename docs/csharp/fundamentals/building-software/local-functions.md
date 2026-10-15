@@ -1,17 +1,19 @@
 ---
 title: "Local functions"
 description: Learn how C# local functions keep named helper logic near its caller, capture local state, and support recursion.
-ms.date: 10/06/2026
+ms.date: 10/15/2026
 ms.topic: concept-article
 ai-usage: ai-generated
 ---
 
 # Local functions
 
+Choose a local function when you want to give helper logic a descriptive name and only one member needs that helper. Keep the helper beside its caller so readers can follow the main operation first, then read the details of each named step.
+
 > [!TIP]
 > This article teaches practical use of local functions for developers who know how to write methods. For declaration details and diagnostic rules, see [Local function declarations](~/_csharpstandard/standard/statements.md#1364-local-function-declarations).
 
-A *local function* is a named function declared inside another member, such as a method or constructor. Only code within the containing member can call it. Use a local function when helper logic belongs to one operation and a name makes that logic easier to understand.
+A *local function* is a named function declared inside another member, such as a method or constructor. Its name is in scope only within that member.
 
 The following shape declares and calls a local function:
 
@@ -88,7 +90,7 @@ Local functions can also be iterator functions that contain `yield return`. For 
 
 ## See also
 
-- [Functional techniques overview](index.md)
+- [Building software](index.md)
 - [Lambda expressions](lambdas.md)
 - [Methods](../../methods.md)
 - [Local function compiler diagnostics](../../language-reference/compiler-messages/local-function-errors.md)

@@ -1,17 +1,19 @@
 ---
 title: "Lambda expressions"
 description: Learn how to pass behavior with C# lambda expressions, write parameter and body forms, capture variables, and choose between lambdas, method groups, and local functions.
-ms.date: 10/06/2026
+ms.date: 10/15/2026
 ms.topic: concept-article
 ai-usage: ai-generated
 ---
 
 # Lambda expressions
 
+Choose a lambda expression when you want to pass a short operation to another method and the operation is clearest beside the call that uses it. For example, pass a rule that selects items or a calculation that transforms each item without introducing a separate named method.
+
 > [!TIP]
 > This article teaches practical choices for developers who know C# methods and collections. For the complete lambda syntax and rules, see the [lambda expressions reference](../../language-reference/operators/lambda-expressions.md).
 
-A *lambda expression* is an unnamed function that you write where another piece of code needs behavior. For example, a collection method might need a rule that selects items or a calculation that transforms each item. Pass that rule as a lambda instead of creating a named method for one short use.
+A *lambda expression* is an unnamed function that you write where another piece of code needs behavior.
 
 The following lambda accepts a session and returns whether the session has open seats:
 
@@ -113,7 +115,7 @@ For a detailed local comparison, see [Local functions](local-functions.md#choose
 
 ## See also
 
-- [Functional techniques overview](index.md)
+- [Building software](index.md)
 - [Local functions](local-functions.md)
 - [Lambda expressions reference](../../language-reference/operators/lambda-expressions.md)
 - [Lambda expressions, delegates, and events](../types/delegates-lambdas.md)

@@ -2,7 +2,7 @@
 title: dotnetup command
 description: Command reference for the dotnetup toolchain manager.
 ms.topic: reference
-ms.date: 08/07/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -42,6 +42,7 @@ exists, it can start first-use onboarding.
 | [`init`](dotnetup-init.md) | Run interactive setup. |
 | [`env`](dotnetup-env.md) | Manage environment configuration. |
 | [`dotnet`](dotnetup-dotnet.md) | Run the dotnetup-managed `dotnet`. |
+| [`self update`](dotnetup-self-update.md) | Update the dotnetup executable or configure update notifications. |
 
 ## Options
 

@@ -2,7 +2,7 @@
 title: Update or remove dotnetup
 description: Learn how to check the dotnetup version, update dotnetup, and completely remove dotnetup and the .NET installations that it manages.
 ms.topic: how-to
-ms.date: 09/30/2026
+ms.date: 10/13/2026
 ai-usage: ai-generated
 ---
 
@@ -31,9 +31,39 @@ dotnetup --info
 
 ## Update dotnetup
 
-`dotnetup` doesn't have a command that updates itself. To update `dotnetup`,
-run the download script again. The script replaces the existing `dotnetup`
-executable in the installation directory.
+To update the standalone dotnetup executable in place, run:
+
+```dotnetcli
+dotnetup self update
+```
+
+This command is available in dotnetup 0.3.0 preview builds. It selects the
+release channel from the installed version label.
+Official daily builds also use the `preview` label, so specify the channel
+explicitly to stay on daily builds:
+
+```dotnetcli
+dotnetup self update --channel daily
+```
+
+To return from a newer daily build to the latest public preview, run:
+
+```dotnetcli
+dotnetup self update --channel preview --force
+```
+
+`--force` can downgrade or reinstall the executable.
+For command options and restrictions, see
+[`dotnetup self update`](../reference/dotnetup-self-update.md).
+
+An update of `dotnetup` doesn't change your .NET installations, your environment
+configuration, or your tracked install specifications.
+
+### Update an older version or recover the executable
+
+If your version doesn't recognize `self update`, or the executable no longer
+starts, run the download script again.
+The script replaces the existing executable in the selected installation directory.
 
 On macOS or Linux, run:
 
@@ -62,8 +92,20 @@ On Windows:
 iex "& { $(irm https://aka.ms/dotnetup/get-dotnetup.ps1) } -Quality daily -InstallDir C:\tools\dotnetup"
 ```
 
-An update of `dotnetup` doesn't change your installations, your environment
-configuration, or your tracked install specifications.
+### Configure update notifications
+
+After successful interactive install and update commands, dotnetup can notify
+you that a newer build is available. The notice doesn't install the update.
+
+To disable notifications, run:
+
+```dotnetcli
+dotnetup self update --update-notifications false
+```
+
+To enable notifications again, use `--update-notifications true`.
+For the check frequency and output behavior, see
+[Update notifications](../reference/dotnetup-self-update.md#update-notifications).
 
 ## Remove dotnetup
 

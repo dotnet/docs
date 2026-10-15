@@ -24,6 +24,8 @@ items:
                 href: core-libraries/11/decimal-biginteger-floating-point-conversions.md
               - name: DeflateStream and GZipStream write headers and footers for empty payload
                 href: core-libraries/11/deflatestream-gzipstream-empty-payload.md
+              - name: Environment.GetCommandLineArgs()[0] preserves the apphost invocation name
+                href: core-libraries/11/environment-getcommandlineargs-apphost-invocation-name.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
               - name: Math.Round and MathF.Round return correctly rounded results
@@ -74,6 +76,8 @@ items:
                 href: extensions/11/fileconfigurationsource-onloadexception-io-errors.md
               - name: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails
                 href: extensions/11/ihost-runasync-stopasync-throw-backgroundservice-failure.md
+              - name: Options validation generator reports SYSLIB1205 for explicit Validate implementations
+                href: extensions/11/options-validator-explicit-validate.md
               - name: PhysicalFilesWatcher validates root and FileSystemWatcher paths
                 href: extensions/11/physicalfileswatcher-validates-root-path.md
               - name: Some Microsoft.Extensions packages included in shared framework

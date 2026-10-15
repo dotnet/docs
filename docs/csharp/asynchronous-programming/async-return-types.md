@@ -48,7 +48,7 @@ In the following example, the `GetLeisureHoursAsync` method contains a `return` 
 
 :::code language="csharp" source="snippets/async-return-types/async-returns1.cs" ID="LeisureHours":::
 
-When `GetLeisureHoursAsync` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../language-reference/operators/await.md).
+When `GetLeisureHoursAsync` is called from within an await expression in the `ShowTodaysInfoAsync` method, the await expression retrieves the integer value (the value of `leisureHours`) stored in the task returned by the `GetLeisureHoursAsync` method. For more information about await expressions, see [await](../language-reference/operators/await.md).
 
 You can better understand how `await` retrieves the result from a `Task<T>` by separating the call to `GetLeisureHoursAsync` from the application of `await`, as the following code shows. A call to method `GetLeisureHoursAsync` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `getLeisureHoursTask` variable in the example. Because `getLeisureHoursTask` is a <xref:System.Threading.Tasks.Task`1>, it contains a <xref:System.Threading.Tasks.Task`1.Result> property of type `TResult`. In this case, `TResult` represents an integer type. When `await` is applied to `getLeisureHoursTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task`1.Result> property of `getLeisureHoursTask`. The value is assigned to the `ret` variable.
 

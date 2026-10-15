@@ -142,7 +142,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1202][1202] | A member type has no fields or properties to validate. |
 | [SYSLIB1203][1203] | A type has no fields or properties to validate. |
 | [SYSLIB1204][1204] | A type annotated with `OptionsValidatorAttribute` doesn't implement the necessary interface. |
-| [SYSLIB1205][1205] | A type already includes an implementation of the 'Validate' method. |
+| [SYSLIB1205][1205] | A type already includes an implementation of the `Validate` method, including an explicit `IValidateOptions<TOptions>.Validate` implementation. |
 | [SYSLIB1206][1206] | Can't validate private fields or properties. |
 | [SYSLIB1207][1207] | Member type is not enumerable. |
 | [SYSLIB1208][1208] | Validators used for transitive or enumerable validation must have a constructor with no parameters. |

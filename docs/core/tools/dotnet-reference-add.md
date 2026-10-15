@@ -1,7 +1,8 @@
 ---
 title: dotnet reference add command
 description: The dotnet reference add command provides a convenient option to add project-to-project references.
-ms.date: 10/28/2025
+ms.date: 09/15/2026
+ai-usage: ai-assisted
 ---
 # dotnet reference add
 
@@ -17,7 +18,7 @@ ms.date: 10/28/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet reference add reference [-f|--framework <FRAMEWORK>]
+dotnet reference add [--file <FILE>] [-f|--framework <FRAMEWORK>]
      [--interactive] <PROJECT_REFERENCES> [--project <PROJECT>]
 
 dotnet reference add -h|--help
@@ -59,6 +60,10 @@ There's no CLI command to add a reference to an assembly that isn't in a project
   Project-to-project (P2P) references to add. Specify one or more projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux-based systems.
 
 ## Options
+
+- **`--file <FILE>`**
+
+  Specifies the file-based app to add project references to. For example, specify `app.cs` to add `#:project` directives to a file-based app. Available starting with .NET 11.
 
 - **`-f|--framework <FRAMEWORK>`**
 

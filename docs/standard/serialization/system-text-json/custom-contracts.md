@@ -1,7 +1,8 @@
 ---
 title: Custom serialization and deserialization contracts
 description: "Learn how to write your own contract resolution logic to customize the JSON contract for a type."
-ms.date: 06/15/2023
+ms.date: 08/18/2026
+ai-usage: ai-assisted
 ---
 # Customize a JSON contract
 
@@ -45,15 +46,30 @@ There are two ways to plug into customization. Both involve obtaining a resolver
   - If a type isn't handled, <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.GetTypeInfo*?displayProperty=nameWithType> should return `null` for that type.
   - You can also combine your custom resolver with others, for example, the default resolver. The resolvers will be queried in order until a non-null <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> value is returned for the type.
 
+## Get strongly typed metadata
+
+Starting in .NET 11, use <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo``1?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0}@)?displayProperty=nameWithType> as strongly typed alternatives to casting the result of <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)>:
+
+```csharp
+JsonTypeInfo<WeatherForecast> typeInfo =
+    options.GetTypeInfo<WeatherForecast>();
+
+bool found = options.TryGetTypeInfo<WeatherForecast>(
+    out JsonTypeInfo<WeatherForecast>? optionalTypeInfo);
+```
+
+`TryGetTypeInfo<T>` returns `false` when no resolver supplies metadata for `T`.
+
 ## Configurable aspects
 
-The <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind?displayProperty=nameWithType> property indicates how the converter serializes a given type&mdash;for example, as an object or as an array, and whether its properties are serialized. You can query this property to determine which aspects of a type's JSON contract you can configure. There are four different kinds:
+The <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind?displayProperty=nameWithType> property indicates how the converter serializes a given type&mdash;for example, as an object or as an array, and whether its properties are serialized. Query this property to determine which aspects of a type's JSON contract you can configure. The property has five possible values:
 
 | `JsonTypeInfo.Kind` | Description |
 |---------------------|-------------|
 | <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object?displayProperty=nameWithType> | The converter will serialize the type into a JSON object and uses its properties. **This kind is used for most class and struct types and allows for the most flexibility.** |
 | <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Enumerable?displayProperty=nameWithType> | The converter will serialize the type into a JSON array. This kind is used for types like `List<T>` and array. |
 | <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Dictionary?displayProperty=nameWithType> | The converter will serialize the type into a JSON object. This kind is used for types like `Dictionary<K, V>`. |
+| <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Union?displayProperty=nameWithType> | The converter serializes the active case value from a union. Starting in .NET 11, this kind is used for C# union types and exposes case, classifier, constructor, and deconstructor metadata. |
 | <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.None?displayProperty=nameWithType> | The converter doesn't specify how it will serialize the type or what `JsonTypeInfo` properties it will use. This kind is used for types like <xref:System.Object?displayProperty=nameWithType>, `int`, and `string`, and for all types that use a custom converter. |
 
 ## Modifiers
@@ -68,6 +84,7 @@ The following table shows the modifications you can make and how to achieve them
 | Add or remove properties | `JsonTypeInfoKind.Object` | Add or remove items from the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> list. | [Serialize private fields](#example-serialize-private-fields) |
 | Conditionally serialize a property | `JsonTypeInfoKind.Object` | Modify the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.ShouldSerialize?displayProperty=nameWithType> predicate for the property. | [Ignore properties with a specific type](#example-ignore-properties-with-a-specific-type) |
 | Customize number handling for a specific type | `JsonTypeInfoKind.None` | Modify the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.NumberHandling?displayProperty=nameWithType> value for the type. | [Allow int values to be strings](#example-allow-int-values-to-be-strings) |
+| Customize union cases or classification | `JsonTypeInfoKind.Union` | Modify the union cases, classifier, constructor, or deconstructor on <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo>. | [Serialize union types](union-types.md#customize-a-union-contract) |
 
 ## Example: Increment a property's value
 

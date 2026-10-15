@@ -6,6 +6,7 @@ public static class BreakStatement
     {
         BasicExample();
         NestedLoop();
+        LabeledBreak();
         SwitchInsideLoop();
     }
 
@@ -53,6 +54,39 @@ public static class BreakStatement
         // 0 1 2 3
         // 0 1 2 3 4
         // </NestedLoop>
+    }
+
+    private static void LabeledBreak()
+    {
+        // <LabeledBreak>
+        string[,] stockChecks =
+        {
+            { "Clear", "Clear", "Clear" },
+            { "Clear", "Blocked", "Clear" },
+            { "Clear", "Clear", "Clear" }
+        };
+
+        outer: for (int aisle = 0; aisle < stockChecks.GetLength(0); aisle++)
+        {
+            for (int bay = 0; bay < stockChecks.GetLength(1); bay++)
+            {
+                Console.WriteLine($"Checking aisle {aisle}, bay {bay}.");
+
+                if (stockChecks[aisle, bay] == "Blocked")
+                {
+                    Console.WriteLine("Blocked bay found. Stop the inspection.");
+                    break outer;
+                }
+            }
+        }
+        // Output:
+        // Checking aisle 0, bay 0.
+        // Checking aisle 0, bay 1.
+        // Checking aisle 0, bay 2.
+        // Checking aisle 1, bay 0.
+        // Checking aisle 1, bay 1.
+        // Blocked bay found. Stop the inspection.
+        // </LabeledBreak>
     }
 
     private static void SwitchInsideLoop()

@@ -1,7 +1,8 @@
 ---
 title: Native interoperability - .NET
 description: Learn how to interface with native components in .NET.
-ms.date: 01/18/2019
+ms.date: 07/08/2026
+ai-usage: ai-assisted
 ---
 # Native interoperability
 

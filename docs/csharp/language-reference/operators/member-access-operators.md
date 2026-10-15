@@ -103,7 +103,7 @@ You also use square brackets to specify [attributes](/dotnet/csharp/advanced-top
 void TraceMethod() {}
 ```
 
-Additionally, use square brackets to designate [list patterns](../../fundamentals/functional/pattern-matching.md) for use in pattern matching or testing.
+Additionally, use square brackets to designate [list patterns](patterns.md#list-patterns) for use in pattern matching or testing.
 
 ```csharp
 arr is ([1, 2, ..])

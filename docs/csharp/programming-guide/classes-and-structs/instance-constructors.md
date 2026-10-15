@@ -59,4 +59,4 @@ If the type includes the `record` modifier, the compiler instead synthesizes a p
 - [Finalizers](finalizers.md)
 - [base](../../language-reference/keywords/base.md)
 - [this](../../language-reference/keywords/this.md)
-- [Primary constructors feature spec](~/_csharplang/proposals/csharp-12.0/primary-constructors.md)
+- [Primary constructors (§15.11.6)](~/_csharpstandard/standard/classes.md#15116-primary-constructors)

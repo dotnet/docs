@@ -3,7 +3,7 @@ title: "Tutorial: Express your design intent with nullable and non-nullable refe
 description: Build a small survey app that uses nullable and non-nullable reference types to declare which references can be null and have the compiler enforce that intent.
 ms.date: 05/04/2026
 ms.topic: tutorial
-ms.subservice: null-safety
+ms.subservice: nullable-reference-types
 ai-usage: ai-assisted
 
 #customer intent: As a C# developer, I want to use nullable and non-nullable reference types in a real design so that the compiler catches null-handling mistakes for me.
@@ -145,7 +145,7 @@ Call `PerformSurvey` from `Main`:
 
 ## Examine the survey results
 
-To report results, expose a few helpers from `SurveyResponse` and `SurveyRun`. On `SurveyResponse`, add [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) (members defined with `=>` and a single expression instead of a `{ ... }` block) that handle the nullable dictionary:
+To report results, expose a few helpers from `SurveyResponse` and `SurveyRun`. On `SurveyResponse`, add [expression-bodied members](../../language-reference/operators/lambda-operator.md#expression-body-definition) (members defined with `=>` and a single expression instead of a `{ ... }` block) that handle the nullable dictionary:
 
 :::code language="csharp" source="snippets/NullableIntroduction/SurveyResponse.cs" id="SnippetSurveyStatus":::
 

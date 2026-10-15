@@ -75,7 +75,7 @@ _Enrichment_ is the automatic augmentation of telemetry with well-known state, i
 
 ### How enrichment works
 
-Imagine 1,000 globally distributed service instances generating logs and metrics. When you encounter an issue on your [service dashboard](/dotnet/aspire/dashboard), it's crucial to quickly identify the problematic region or data center. Enrichment ensures that metric records contain the necessary information to pinpoint failures in distributed systems. Without enrichment, the burden falls on the app code to internally manage this state, integrate it into the logging process, and manually transmit it. Enrichment simplifies this process, seamlessly handling it without affecting the app's logic.
+Imagine 1,000 globally distributed service instances generating logs and metrics. When you encounter an issue on your [service dashboard](https://aspire.dev/dashboard/overview/), it's crucial to quickly identify the problematic region or data center. Enrichment ensures that metric records contain the necessary information to pinpoint failures in distributed systems. Without enrichment, the burden falls on the app code to internally manage this state, integrate it into the logging process, and manually transmit it. Enrichment simplifies this process, seamlessly handling it without affecting the app's logic.
 
 In the case of resiliency, when you add enrichment the following dimensions are added to the outgoing telemetry:
 

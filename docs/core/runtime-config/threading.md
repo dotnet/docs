@@ -1,7 +1,7 @@
 ---
 title: Threading config settings
 description: Learn about the settings that configure threading for .NET apps.
-ms.date: 11/04/2021
+ms.date: 08/28/2026
 ---
 # Runtime configuration options for threading
 
@@ -29,16 +29,27 @@ This article details the settings you can use to configure threading in .NET.
 | **runtimeconfig.json**   | N/A                             | N/A                              |
 | **Environment variable** | `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
+## Set the stack size for threads created by the .NET runtime
+
+- The default stack size is dictated by .NET and OS policies. The default stack size for .NET apps is 1.5 MB on Windows and macOS, and 8 MB on Linux. The default stack size when the .NET runtime is hosted (for example, COM components) is dictated by the hosting process.
+- This setting allows overriding the default for threads created by the .NET runtime. For example, threads created by the <xref:System.Threading.Thread.%23ctor*> API.
+- The specified size should be between 64 KB and 2 GB.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A decimal integer that specifies the stack size, in bytes, for threads created by the .NET runtime | .NET 10 |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer that specifies the stack size, in bytes, for threads created by the .NET runtime | .NET 10 |
+
 ## Minimum threads
 
 - Specifies the minimum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads*?displayProperty=nameWithType> method.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads |
-| **MSBuild property** | `ThreadPoolMinThreads` | An integer that represents the minimum number of threads |
-| **Environment variable** | N/A | N/A |
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads | |
+| **MSBuild property** | `ThreadPoolMinThreads` | An integer that represents the minimum number of threads | |
+| **Environment variable** | `DOTNET_ThreadPool_ForceMinWorkerThreads` | A hexadecimal integer that represents the minimum number of worker threads (for example, `0x20` or `20` for 32 threads) | .NET 10 |
 
 ### Examples
 
@@ -81,11 +92,11 @@ Project file:
 - Specifies the maximum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads*?displayProperty=nameWithType> method.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads |
-| **MSBuild property** | `ThreadPoolMaxThreads` | An integer that represents the maximum number of threads |
-| **Environment variable** | N/A | N/A |
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads | |
+| **MSBuild property** | `ThreadPoolMaxThreads` | An integer that represents the maximum number of threads | |
+| **Environment variable** | `DOTNET_ThreadPool_ForceMaxWorkerThreads` | A hexadecimal integer that represents the minimum number of worker threads (for example, `0x14` for 20 threads) | .NET 10 |
 
 ### Examples
 

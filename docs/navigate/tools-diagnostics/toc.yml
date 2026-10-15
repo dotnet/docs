@@ -19,6 +19,8 @@ items:
         href: ../../core/tools/test-prerelease-sdk-locally.md
       - name: Telemetry
         href: ../../core/tools/telemetry.md
+      - name: dotnet-scaffold telemetry
+        href: ../../core/tools/dotnet-scaffold-telemetry.md
       - name: Signed-package verification
         href: ../../core/tools/nuget-signed-package-verification.md
       - name: Artifacts output layout
@@ -150,8 +152,8 @@ items:
                 href: ../../core/tools/dotnet-new-update.md
               - name: .NET default templates
                 href: ../../core/tools/dotnet-new-sdk-templates.md
-              - name: Custom templates
-                href: ../../core/tools/custom-templates.md
+              - name: Author .NET templates
+                href: ../../core/tools/templates.md
           - name: dotnet nuget
             items:
               - name: dotnet nuget delete
@@ -357,6 +359,98 @@ items:
     items:
       - name: Overview
         href: ../../core/additional-tools/index.md
+      - name: dotnetup
+        items:
+          - name: Overview
+            href: ../../core/tools/dotnetup/index.md
+          - name: When to use dotnetup
+            href: ../../core/tools/dotnetup/choose-dotnetup.md
+          - name: Get started
+            href: ../../core/tools/dotnetup/getting-started.md
+          - name: Concepts
+            items:
+              - name: How dotnetup works
+                href: ../../core/tools/dotnetup/concepts/how-dotnetup-works.md
+              - name: Channels and versions
+                href: ../../core/tools/dotnetup/concepts/channels.md
+              - name: Repository SDK requirements
+                href: ../../core/tools/dotnetup/concepts/repositories.md
+              - name: Environment configuration
+                href: ../../core/tools/dotnetup/concepts/environment.md
+              - name: Download verification
+                href: ../../core/tools/dotnetup/concepts/download-verification.md
+          - name: Release channels
+            items:
+              - name: Preview channel
+                href: ../../core/tools/dotnetup/channels/preview.md
+              - name: Daily channels
+                href: ../../core/tools/dotnetup/channels/daily.md
+          - name: Command reference
+            items:
+              - name: dotnetup
+                href: ../../core/tools/dotnetup/reference/dotnetup.md
+              - name: dotnetup install
+                href: ../../core/tools/dotnetup/reference/dotnetup-install.md
+              - name: dotnetup update
+                href: ../../core/tools/dotnetup/reference/dotnetup-update.md
+              - name: dotnetup self update
+                href: ../../core/tools/dotnetup/reference/dotnetup-self-update.md
+              - name: dotnetup uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-uninstall.md
+              - name: dotnetup sdk
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk.md
+              - name: dotnetup sdk install
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-install.md
+              - name: dotnetup sdk update
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-update.md
+              - name: dotnetup sdk uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-uninstall.md
+              - name: dotnetup runtime
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime.md
+              - name: dotnetup runtime install
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-install.md
+              - name: dotnetup runtime update
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-update.md
+              - name: dotnetup runtime uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-uninstall.md
+              - name: dotnetup list
+                href: ../../core/tools/dotnetup/reference/dotnetup-list.md
+              - name: dotnetup init
+                href: ../../core/tools/dotnetup/reference/dotnetup-init.md
+              - name: dotnetup env
+                href: ../../core/tools/dotnetup/reference/dotnetup-env.md
+              - name: dotnetup env set
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-set.md
+              - name: dotnetup env clear
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-clear.md
+              - name: dotnetup env show
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-show.md
+              - name: dotnetup env script
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-script.md
+              - name: dotnetup dotnet
+                href: ../../core/tools/dotnetup/reference/dotnetup-dotnet.md
+          - name: Scenarios
+            items:
+              - name: Manage repository SDK requirements
+                href: ../../core/tools/dotnetup/usecases/install-with-global-json.md
+              - name: Install .NET components
+                href: ../../core/tools/dotnetup/usecases/install-components.md
+              - name: Update installations
+                href: ../../core/tools/dotnetup/usecases/update-installations.md
+              - name: Manage the environment
+                href: ../../core/tools/dotnetup/usecases/manage-environment.md
+              - name: Manage custom installation roots
+                href: ../../core/tools/dotnetup/usecases/manage-custom-installation-roots.md
+              - name: Use preview and daily builds
+                href: ../../core/tools/dotnetup/usecases/try-daily-builds.md
+              - name: Use dotnetup in automation
+                href: ../../core/tools/dotnetup/usecases/automation.md
+              - name: Update or remove dotnetup
+                href: ../../core/tools/dotnetup/usecases/manage-dotnetup.md
+          - name: Troubleshooting
+            href: ../../core/tools/dotnetup/troubleshooting.md
+          - name: Telemetry
+            href: ../../core/tools/dotnetup/telemetry.md
       - name: .NET Uninstall Tool
         items:
           - name: Overview
@@ -370,6 +464,33 @@ items:
                 href: ../../core/additional-tools/uninstall-tool-cli-dry-run.md
               - name: dotnet-core-uninstall remove
                 href: ../../core/additional-tools/uninstall-tool-cli-remove.md
+      - name: .NET Install Manager
+        items:
+          - name: Overview
+            href: ../../core/additional-tools/dnim-overview.md
+          - name: Command reference
+            expanded: true
+            items:
+              - name: dnim layout
+                href: ../../core/additional-tools/dnim-cli-layout.md
+              - name: dnim query products
+                href: ../../core/additional-tools/dnim-cli-query-products.md
+              - name: dnim query releases
+                href: ../../core/additional-tools/dnim-cli-query-releases.md
+              - name: dnim scan
+                href: ../../core/additional-tools/dnim-cli-scan.md
+              - name: dnim trace
+                href: ../../core/additional-tools/dnim-cli-trace.md
+              - name: dnim uninstall
+                href: ../../core/additional-tools/dnim-cli-uninstall.md
+              - name: dnim update
+                href: ../../core/additional-tools/dnim-cli-update.md
+          - name: .NET Installs
+            href: ../../core/additional-tools/dnim-net-installs.md
+          - name: Logging
+            href: ../../core/additional-tools/dnim-logs.md
+          - name: FAQ
+            href: ../../core/additional-tools/dnim-faq.yml
       - name: .NET install tool for extension authors
         href: ../../core/additional-tools/vscode-dotnet-runtime.md
       - name: Generate self-signed certificates
@@ -406,7 +527,7 @@ items:
         items:
           - name: Overview
             href: ../../core/diagnostics/observability-with-otel.md
-          - name: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard"
+          - name: "Use OpenTelemetry with OTLP and the Aspire Dashboard"
             href: ../../core/diagnostics/observability-otlp-example.md
           - name: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
             href: ../../core/diagnostics/observability-prgrja-example.md
@@ -624,6 +745,8 @@ items:
             items:
               - name: Overview
                 href: ../../core/unmanaged-api/debugging/index.md
+              - name: Initialize a custom debugger on mobile platforms
+                href: ../../core/unmanaged-api/debugging/initialize-debugger-mobile.md
               - name: Enumerations
                 items:
                   - name: COR_PUB_ENUMPROCESS enumeration
@@ -3316,6 +3439,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1875.md
                   - name: CA1877
                     href: ../../fundamentals/code-analysis/quality-rules/ca1877.md
+                  - name: CA1878
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1878.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -3676,6 +3801,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2265.md
                   - name: CA2266
                     href: ../../fundamentals/code-analysis/quality-rules/ca2266.md
+                  - name: CA2267
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2267.md
           - name: Code style rules
             items:
               - name: Overview
@@ -3759,6 +3886,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0041.md
                   - name: IDE0042
                     href: ../../fundamentals/code-analysis/style-rules/ide0042.md
+                  - name: IDE0043
+                    href: ../../fundamentals/code-analysis/style-rules/ide0043.md
                   - name: IDE0044
                     href: ../../fundamentals/code-analysis/style-rules/ide0044.md
                   - name: IDE0045
@@ -3909,8 +4038,16 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0370.md
                   - name: IDE0380
                     href: ../../fundamentals/code-analysis/style-rules/ide0380.md
+                  - name: IDE0390
+                    href: ../../fundamentals/code-analysis/style-rules/ide0390-ide0391.md
+                  - name: IDE0391
+                    href: ../../fundamentals/code-analysis/style-rules/ide0390-ide0391.md
+                  - name: IDE0410
+                    href: ../../fundamentals/code-analysis/style-rules/ide0410.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
+                  - name: IDE1007
+                    href: ../../fundamentals/code-analysis/style-rules/ide1007.md
                   - name: IDE2000
                     href: ../../fundamentals/code-analysis/style-rules/ide2000.md
                   - name: IDE2001
@@ -4091,8 +4228,12 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0061.md
           - name: SYSLIB0062
             href: ../../fundamentals/syslib-diagnostics/syslib0062.md
+          - name: SYSLIB0063
+            href: ../../fundamentals/syslib-diagnostics/syslib0063.md
           - name: SYSLIB0064
             href: ../../fundamentals/syslib-diagnostics/syslib0064.md
+          - name: SYSLIB0065
+            href: ../../fundamentals/syslib-diagnostics/syslib0065.md
       - name: Experimental features
         items:
           - name: Overview

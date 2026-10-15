@@ -2,7 +2,8 @@
 title: Containerize a .NET app reference
 description: Reference material for containerizing a .NET app and configuring the container image.
 ms.topic: reference
-ms.date: 05/27/2026
+ms.date: 08/04/2026
+ai-usage: ai-assisted
 ---
 
 # Containerize a .NET app reference
@@ -33,7 +34,7 @@ The following MSBuild properties and items are available for container configura
 | [`ContainerRuntimeIdentifier(s)`](#containerruntimeidentifiers) | The OS and architecture for the container. |
 | [`ContainerUser`](#containeruser) | The default user the container runs as. |
 | [`ContainerWorkingDirectory`](#containerworkingdirectory) | The working directory inside the container. |
-| [`LocalRegistry`](#localregistry) | The local container tool to use: `docker` or `podman`. |
+| [`LocalRegistry`](#localregistry) | The local container tool to use, such as Docker, Podman, `wslc`, or Apple's `container` CLI. |
 
 ## Configure container properties
 
@@ -522,18 +523,22 @@ For notes on working with these registries, see the [registry-specific notes](ht
 
 ### `LocalRegistry`
 
-The `LocalRegistry` MSBuild property specifies the local container tooling to use when pushing to local sources. Supported values are `docker` and `podman`. If not set, the SDK determines the tool based on availability:
+The `LocalRegistry` MSBuild property specifies the local container tooling to use when pushing to local sources. Supported values are `Docker`, `Podman`, `Wslc`, and `MacOSContainer`.
 
+If not set, the SDK determines the tool based on availability. Starting in .NET 11, the SDK prefers platform-native tools before Docker and Podman:
+
+- On Windows, if `wslc` exists and its service runs, `wslc` is used.
+- On macOS, if Apple's `container` CLI exists and its service runs, `container` is used.
 - If both `docker` and `podman` exist, and `docker` is an alias for `podman`, then `podman` is used.
 - If only `docker` exists, `docker` is used.
 - If only `podman` exists, `podman` is used.
-- If neither exists, an error is thrown.
+- If no supported local tool exists, an error is thrown.
 
 To explicitly set the local registry tool, use the following configuration:
 
 ```xml
 <PropertyGroup>
-  <LocalRegistry>podman</LocalRegistry>
+  <LocalRegistry>Podman</LocalRegistry>
 </PropertyGroup>
 ```
 

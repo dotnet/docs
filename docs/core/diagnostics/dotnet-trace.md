@@ -243,7 +243,7 @@ dotnet-trace collect
   | Profile      | Description                                              |
   |--------------|----------------------------------------------------------|
   | `dotnet-common` | Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`. |
-  | `dotnet-sampled-thread-time` | Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks. |
+  | `dotnet-sampled-thread-time` | Samples .NET thread stacks at the runtime's default rate (~1000 Hz, every 1 ms in builds with multithreading enabled) to estimate how much wall clock time code is using. |
   | `gc-verbose` | Tracks GC collections and samples object allocations.    |
   | `gc-collect` | Tracks GC collections only at very low overhead.         |
   | `database`   | Captures ADO.NET and Entity Framework database commands. |

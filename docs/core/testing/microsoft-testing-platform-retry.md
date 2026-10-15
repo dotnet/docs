@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) retry
 description: Learn about retrying failed tests with MTP.
 author: evangelink
 ms.author: amauryleve
-ms.date: 06/01/2026
+ms.date: 08/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -41,6 +41,10 @@ This extension is intended for integration tests where the test depends heavily 
 | `--retry-failed-tests-delay`          | Adds a delay between retries. The delay is expressed as a time value, for example `200`, `500ms`, `1s`, `2.5m`, `1h`, or `1d`. Default unit is milliseconds. Requires `--retry-failed-tests`. Available in MTP starting with version 2.3.0. |
 
 Both threshold options (`--retry-failed-tests-max-percentage` and `--retry-failed-tests-max-tests`) require `--retry-failed-tests` to also be set.
+
+Starting with MTP 2.4.0, the retry summary reports separate `flaky` and `retried` counts and lists recovered test names under **Flaky tests**. To avoid misleading totals, MTP doesn't print a full-suite summary for filtered retry attempts after the first attempt. Use the terminal reporter's [`--show-flaky-tests`](microsoft-testing-platform-terminal-output.md#options) option to show or hide flaky details.
+
+Each retry attempt writes its report artifacts under the `Retries` directory. For JUnit, the top-level report represents only the final filtered retry attempt, not the original full suite; collect the earlier attempt reports from `Retries` when your CI requires complete coverage. This layout applies to `--retry-failed-tests`. MSTest's in-process `[Retry]` instead collapses superseded attempts into one final JUnit or TRX result per test.
 
 ### Examples
 

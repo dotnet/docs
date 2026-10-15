@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.VectorData;
-using Microsoft.SemanticKernel.Connectors.InMemory;
+using CommunityToolkit.VectorData.InMemory;
 
 // <CreateVectorStore>
 // Create an in-memory vector store (no external service required).

@@ -3,7 +3,8 @@ title: MSTest TestContext
 description: Learn about the TestContext class of MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 11/12/2024
+ms.date: 10/01/2026
+ai-usage: ai-assisted
 ---
 
 # The `TestContext` class
@@ -37,10 +38,26 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> provides inf
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.CurrentTestOutcome?displayProperty=nameWithType> - the result of the current test.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.FullyQualifiedTestClassName?displayProperty=nameWithType> - the full name of the test class.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunDirectory?displayProperty=nameWithType> - the directory where the test run is executed.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType> - the directory where the deployment items are located.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory?displayProperty=nameWithType> - the directory where the deployment items are located. To populate this directory, use [`DeploymentItemAttribute`](unit-testing-mstest-writing-tests-deployment-items.md).
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory?displayProperty=nameWithType> - the directory where the test results are stored.  Typically a subdirectory of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunDirectory?displayProperty=nameWithType>.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunResultsDirectory?displayProperty=nameWithType> - the directory where the test results are stored. Typically a subdirectory of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory?displayProperty=nameWithType>.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestResultsDirectory?displayProperty=nameWithType> - the directory where the test results are stored. Typically a subdirectory of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory?displayProperty=nameWithType>.
+- Starting with MSTest 3.9, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunCount?displayProperty=nameWithType> - the number of times the current test has run, counting from 1. The value is greater than 1 when a test is retried with `[Retry]`.
+
+### Per-test temporary directory
+
+Use `TestContext.TestTempDirectory` as private scratch space for a test. MSTest creates the directory only when you first access the property, and each test execution receives a unique directory. Each data row also receives its own directory, so parallel tests don't share paths.
+
+```csharp
+string path = Path.Combine(TestContext.TestTempDirectory!, "output.json");
+File.WriteAllText(path, json);
+```
+
+MSTest creates the directory under `TestResultsDirectory` when possible and falls back to the system temporary directory when the results path is unavailable, too long, or read-only. MSTest deletes the directory after a passing test and retains it after any non-passing outcome. Set the `MSTEST_TEST_TEMP_DIRECTORY_RETAIN` environment variable to `1` or `true` to retain directories for all outcomes.
+
+When a passing test registers a file from the directory with `AddResultFile`, MSTest retains the directory until the host collects the attachment. Cleanup is best effort and doesn't change the test outcome.
+
+`TestTempDirectory` is available for .NET and .NET Framework targets, but not for UWP or WinUI targets. The property doesn't change the process current directory.
 
 In MSTest 3.7 and later, the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class also provides new properties helpful for `TestInitialize` and `TestCleanup` methods:
 
@@ -71,10 +88,23 @@ You can use the `DataSource` attribute to read the data from the CSV file:
 
 You can use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType> to store custom key-value pairs that can be accessed across different methods in the same test session.
 
+Starting with MSTest 4.4, the indexer consistently returns `null` when a custom key doesn't exist.
+
 ```csharp
 TestContext.Properties["MyKey"] = "MyValue";
 string value = TestContext.Properties["MyKey"]?.ToString();
 ```
+
+> [!NOTE]
+> Starting with MSTest 4.2, test categories from `[TestCategory]` are included in <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType>.
+>
+> Starting with MSTest 4.3, custom properties added to `TestContext.Properties` in `[AssemblyInitialize]` flow to every class and test in the assembly, and properties added in `[ClassInitialize]` flow to every test in that class. This lets fixtures publish shared context that test methods can read.
+>
+> Starting with MSTest 4.3.3, `[TestProperty]` values, test categories, host-provided properties, and properties that a test adds remain scoped to that test and don't flow to sibling tests.
+
+### Access `TestContext` from the current call stack
+
+Starting with MSTest 4.2, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Current?displayProperty=nameWithType> returns the current test's <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> from anywhere in the call stack during test method execution. This API is experimental, uses the `[Experimental]` attribute, and might change in a future MSTest version.
 
 ### Associate data to a test
 
@@ -82,7 +112,9 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile
 
 :::code language="csharp" source="snippets/testcontext/csharp/AddResultFile.cs":::
 
-You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*?displayProperty=nameWithType> methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.
+Starting with MSTest 4.5 preview, the native MTP adapter preserves these result files as test attachments so MTP report extensions can include them.
+
+You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*?displayProperty=nameWithType> methods to write custom messages directly to the test output. Starting with MSTest 4.4, the `Live` output capture mode echoes these messages while the test runs and still attaches them to the final test result. For more information, see [Configure MSTest output](unit-testing-mstest-configure.md#output-settings).
 
 ### Cancellation token
 

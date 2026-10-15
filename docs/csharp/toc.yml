@@ -99,10 +99,57 @@ items:
       href: fundamentals/strings/nameof.md
     - name: Common tasks
       items:
+      - name: Concatenate strings
+        href: fundamentals/strings/common-tasks/concatenate.md
+      - name: Modify string contents
+        href: fundamentals/strings/common-tasks/modify.md
+      - name: Compare strings
+        href: fundamentals/strings/common-tasks/compare.md
       - name: Search strings
         href: fundamentals/strings/common-tasks/search.md
       - name: Split strings into substrings
         href: fundamentals/strings/common-tasks/split.md
+    - name: Tutorials
+      items:
+      - name: Use string interpolation
+        href: fundamentals/tutorials/string-interpolation.md
+  - name: Pattern matching
+    items:
+    - name: Overview
+      href: fundamentals/patterns/pattern-matching.md
+    - name: Declaration, constant, and var patterns
+      href: fundamentals/patterns/declaration-constant-var-patterns.md
+    - name: Type patterns
+      href: fundamentals/patterns/type-patterns.md
+    - name: Property and positional patterns
+      href: fundamentals/patterns/property-positional-patterns.md
+    - name: Deconstruct tuples and other types
+      href: fundamentals/patterns/deconstruct.md
+    - name: Relational, logical, and parenthesized patterns
+      href: fundamentals/patterns/relational-logical-patterns.md
+    - name: List and slice patterns
+      href: fundamentals/patterns/list-patterns.md
+    - name: Discards and the discard pattern
+      href: fundamentals/patterns/discards.md
+  - name: Expressions and statements
+    items:
+    - name: Expressions overview
+      href: fundamentals/expressions/index.md
+    - name: Equality
+      href: fundamentals/expressions/equality.md
+    - name: Operators
+      displayName: "+, -, *, /, %, unary +, unary -, !, ++, --, <, >, <=, >=, ==, !=, &&, ||, ?:, =, +=, -=, *=, /=, %="
+      href: fundamentals/expressions/operators.md
+    - name: Statements overview
+      href: fundamentals/statements/index.md
+    - name: Selection statements
+      href: fundamentals/statements/selection.md
+    - name: Iteration statements
+      href: fundamentals/statements/iteration.md
+    - name: Collections
+      href: fundamentals/statements/collections.md
+    - name: LINQ
+      href: fundamentals/statements/linq.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -114,23 +161,6 @@ items:
     # Encapsulation & composition
     - name: Polymorphism
       href: fundamentals/object-oriented/polymorphism.md
-  - name: Functional techniques
-    items:
-    # - Conceptual overview
-    #   - Expressions (how different than OO and expressions?)
-    #   - separation of data & algorithms
-    #   - immutability (emphasize constructors & passing data to constructor, get/init)
-    #   - Functional purity / functions as arguments or return values
-    # In F#, discussion of "object programming" -> objects become more sophisticated records.
-    # - language features:
-    #   - Lambdas
-    #   - Positional records as DTOs
-    - name: Pattern matching
-      href: fundamentals/functional/pattern-matching.md
-    - name: Discards
-      href: fundamentals/functional/discards.md
-    - name: Deconstructing tuples and other types
-      href: fundamentals/functional/deconstruct.md
   - name: Exceptions and errors
     items:
     - name: Overview
@@ -180,8 +210,10 @@ items:
       href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
     - name: Choosing between tuples, records, structs, and classes
       href: fundamentals/tutorials/choosing-types.md
-    - name: Build data-driven algorithms with pattern matching
-      href: fundamentals/tutorials/pattern-matching.md
+    - name: Pattern matching basics
+      href: fundamentals/tutorials/pattern-matching-basics.md
+    - name: Build algorithms using pattern matching
+      href: fundamentals/tutorials/build-algorithms-using-pattern-matching.md
     - name: Use record types
       href: fundamentals/tutorials/records.md
     # separating data and algorithms
@@ -223,6 +255,10 @@ items:
     href: whats-new/version-update-considerations.md
   - name: Tutorials
     items:
+    - name: Explore union types
+      href: whats-new/tutorials/unions.md
+    - name: Explore closed hierarchies
+      href: whats-new/tutorials/closed-hierarchies.md
     - name: Explore extension members
       href: whats-new/tutorials/extension-members.md
     - name: Explore compound assignment
@@ -235,10 +271,6 @@ items:
     href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
-  - name: Explore patterns in objects
-    href: tutorials/patterns-objects.md
-  - name: String interpolation
-    href: tutorials/string-interpolation.md
   - name: Console Application
     href: tutorials/console-teleprompter.md
   - name: REST Client
@@ -350,12 +382,6 @@ items:
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Concatenate strings
-    href: how-to/concatenate-multiple-strings.md
-  - name: Modify string contents
-    href: how-to/modify-string-contents.md
-  - name: Compare strings
-    href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
@@ -418,8 +444,6 @@ items:
       href: advanced-topics/interop/index.md
     - name: Example COM class
       href: advanced-topics/interop/example-com-class.md
-    - name: "Walkthrough: Office programming"
-      href: advanced-topics/interop/walkthrough-office-programming.md
     - name: "Use platform invoke to play a WAV file"
       href: advanced-topics/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
     - name: "Use indexed properties in COM interop programming"
@@ -515,20 +539,14 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
-  - name: Statements, expressions, and equality
+  - name: Equality and equality comparisons
     items:
-    - name: Statements
-      href: programming-guide/statements-expressions-operators/statements.md
-    - name: Expression-bodied members
-      href: programming-guide/statements-expressions-operators/expression-bodied-members.md
-    - name: Equality and equality comparisons
-      items:
-      - name: Equality comparisons
-        href: programming-guide/statements-expressions-operators/equality-comparisons.md
-      - name: "How to define value equality for a type"
-        href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
-      - name: "How to test for reference equality (identity)"
-        href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
+    - name: Equality comparisons
+      href: ./fundamentals/expressions/equality.md
+    - name: "How to define value equality for a type"
+      href: ./language-reference/operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record
+    - name: "How to test for reference equality (identity)"
+      href: ./fundamentals/expressions/equality.md#use-objectreferenceequals-to-test-identity-directly
   - name: Types
     items:
     - name: Casting and Type Conversions

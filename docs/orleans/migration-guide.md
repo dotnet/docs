@@ -264,7 +264,7 @@ public class MyGrain : Grain, IMyGrain { }
 If you're upgrading from Orleans 7.x, note these changes introduced in Orleans 8.0:
 
 - **New Timer API**: <xref:Orleans.GrainBaseExtensions.RegisterGrainTimer*> was introduced to replace `RegisterTimer`
-- **[.NET Aspire integration](host/aspire-integration.md)**: First-class support for .NET Aspire
+- **[Aspire integration](host/aspire-integration.md)**: First-class support for Aspire
 - **Resource-Optimized Placement**: New placement strategy based on CPU and memory utilization
 - **Activation Repartitioning** (8.2+): Experimental feature for automatic grain rebalancing
 

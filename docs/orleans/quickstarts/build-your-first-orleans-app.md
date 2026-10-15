@@ -185,9 +185,9 @@ Test the application in the browser using the following steps:
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-## Next steps: Production-ready Orleans with .NET Aspire
+## Next steps: Production-ready Orleans with Aspire
 
-The quickstart above uses in-memory storage and localhost clustering, which works well for development but isn't suitable for production deployments. When you're ready to build production-ready Orleans applications, **.NET Aspire** provides a streamlined approach with:
+The quickstart above uses in-memory storage and localhost clustering, which works well for development but isn't suitable for production deployments. When you're ready to build production-ready Orleans applications, **Aspire** provides a streamlined approach with:
 
 - **Resource management**: Easily add Redis, Azure Storage, or SQL databases as backing stores for clustering, grain storage, and reminders
 - **Service discovery**: Automatic configuration of Orleans silos and clients without manual endpoint configuration
@@ -197,7 +197,7 @@ The quickstart above uses in-memory storage and localhost clustering, which work
 
 ### Quick example with Aspire
 
-Here's how the URL shortener app would look with .NET Aspire and Redis:
+Here's how the URL shortener app would look with Aspire and Redis:
 
 **AppHost project (Program.cs):**
 
@@ -236,7 +236,7 @@ var app = builder.Build();
 With Aspire, Orleans automatically picks up the cluster configuration from environment variables injected by the AppHost, eliminating the need for manual configuration code.
 
 > [!div class="nextstepaction"]
-> [Learn more about Orleans and .NET Aspire integration](../host/aspire-integration.md)
+> [Learn more about Orleans and Aspire integration](../host/aspire-integration.md)
 
 :::zone-end
 

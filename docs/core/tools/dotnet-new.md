@@ -160,5 +160,5 @@ Each template may have additional options defined. For more information, see [.N
 - [dotnet new search command](dotnet-new-search.md)
 - [dotnet new install command](dotnet-new-install.md)
 - [.NET default templates for dotnet new](dotnet-new-sdk-templates.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)

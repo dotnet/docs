@@ -103,4 +103,4 @@ For usage examples, see the following tutorials:
 
 ## See also
 
-- [Evaluation of generative AI apps (Foundry)](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
+- [Observability in generative AI](/azure/foundry/concepts/observability)

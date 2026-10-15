@@ -92,6 +92,32 @@ public string Message
 }
 ```
 
+You can also simplify common patterns like lazy initialization, property change notifications, and structured string fields. The following code shows examples of each:
+
+**Lazy Initialization:**
+
+```csharp
+public SqlConnection Connection
+{
+    get => field ??= new SqlConnection("connection-string");
+}
+public string DisplayName
+{
+    get;
+    set
+    {
+        if (field == value) return;
+        field = value;
+        OnPropertyChanged();
+    }
+}
+public string Email
+{
+    get;
+    set => field = value?.Trim()?.ToLowerInvariant() ?? string.Empty;
+}
+```
+
 You can declare a body for one or both accessors for a field backed property.
 
 There's a potential breaking change or confusion reading code in types that also include a symbol named `field`. You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier, or you can rename the current `field` symbol to provide better distinction.

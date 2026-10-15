@@ -44,6 +44,7 @@ f1_keywords:
  - "CS8849"
  - "CS8927"
  - "CS8952"
+ - "CS8972"
  - "CS9170"
  - "CS9175"
  - "CS9226"
@@ -88,12 +89,12 @@ helpviewer_keywords:
  - "CS8642"
  - "CS8790"
  - "CS8791"
- - "CS8781"
  - "CS8792"
  - "CS8810"
  - "CS8849"
  - "CS8927"
  - "CS8952"
+ - "CS8972"
  - "CS9170"
  - "CS9175"
  - "CS9226"
@@ -178,7 +179,7 @@ The following expressions are prohibited:
 - [pattern matching](../operators/patterns.md) expressions aren't allowed.
 - [Tuple literals](../builtin-types/value-tuples.md) and many tuple operations, such as equality comparisons aren't allowed.
 - [`throw` expressions](../statements/exception-handling-statements.md#the-throw-expression) aren't allowed.
-- [discard](../../fundamentals/functional/discards.md) (`_`) declarations.
+- [discard](../../fundamentals/patterns/discards.md) (`_`) declarations.
 - The [index and range](../operators/member-access-operators.md#indexer-access) operators aren't allowed.
 - Non-destructive mutation using [`with`](../operators/with-expression.md) expressions aren't allowed.
 - You can't declare or access [inline arrays](../builtin-types/struct.md#inline-arrays).

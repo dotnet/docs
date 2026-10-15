@@ -17,7 +17,7 @@ public class Hotel
     public required string Description { get; set; }
 
     // <VectorStoreVectorAttribute1>
-    [VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
+    [VectorStoreVector(dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
     public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
     // </VectorStoreVectorAttribute1>
 

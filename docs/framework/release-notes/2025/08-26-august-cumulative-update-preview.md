@@ -3,7 +3,7 @@ title: August 2025 cumulative update preview
 description: Learn about the improvements in the .NET Framework August 2025 cumulative update preview.
 ms.date: 08/26/2025
 ---
-# August 2025 cumulative update preview
+# .NET Framework August 2025 cumulative update preview
 
 _Released August 26, 2025_
 _Update August 29, 2025 to include Windows 11, version 24H2_

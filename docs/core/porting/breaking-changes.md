@@ -2,12 +2,11 @@
 title: Breaking changes can affect porting your app
 description: Breaking changes can occur when porting your code from .NET framework to .NET and between versions of .NET. This article describes categories of breaking changes, ways a change can affect compatibility and how to find breaking changes.
 author: StephenBonikowsky
-ms.author: stebon
 ms.date: 12/22/2022
 ---
-# Breaking changes may occur when porting code
+# Breaking changes might occur when porting code
 
-Changes that affect compatibility, otherwise known as breaking changes, will occur between versions of .NET. Changes are impactful when porting from .NET Framework to .NET because of certain technologies not being available. Also, you can come across breaking changes simply because .NET is a cross-platform technology and .NET Framework isn't.
+Changes that affect compatibility, otherwise known as breaking changes, sometimes occur between versions of .NET. Changes are impactful when porting from .NET Framework to .NET because of certain technologies not being available. Also, you might come across breaking changes simply because .NET is a cross-platform technology and .NET Framework isn't.
 
 Microsoft strives to maintain a high level of compatibility between .NET versions, so while breaking changes do occur, they're carefully considered.
 
@@ -42,4 +41,4 @@ For more information, see [How code changes can affect compatibility](../compati
 
 ## Find breaking changes
 
-Changes that affect compatibility are documented. Review these changes before you port your code from .NET Framework to .NET or upgrade it to a newer version of .NET. For a list of these breaking changes, see [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md).
+Changes that affect compatibility are documented. Review these changes before you port your code from .NET Framework to .NET or upgrade it to a newer version of .NET. For a list of these breaking changes, see [Breaking changes for migration from .NET Framework to .NET](../compatibility/fx-core.md).

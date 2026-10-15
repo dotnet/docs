@@ -11,7 +11,7 @@ ms.custom: "updateeachrelease"
 
 ## Cloud apps
 
-* [Aspire](/dotnet/aspire)
+* [Aspire](https://aspire.dev/)
 * [Serverless functions](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
 * [Web and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
 

@@ -3,7 +3,8 @@ title: Microsoft.Testing.Platform (MTP) capabilities overview
 description: Learn about MTP capabilities concept.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/11/2024
+ms.date: 08/26/2026
+ai-usage: ai-assisted
 ---
 
 # Microsoft.Testing.Platform (MTP) capabilities
@@ -76,7 +77,7 @@ If the testing framework implements this interface, at runtime, the following ca
 The hypothetical code fragment inside the extension could be something like:
 
 ```csharp
-IServiceProvider provider = null; // TODO: Get IServiceProvider.
+IServiceProvider serviceProvider = null; // TODO: Get IServiceProvider.
 var capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
 
 // Utilize the `GetCapability` API to search for the specific capability to query.
@@ -104,7 +105,7 @@ The preceding example illustrates how the capability infrastructure enables a po
 
 It's evident that not all details can be communicated through an interface. Considering the previous example, what should the extension expect if the `CanProvidePerTestCpuConsumption` is supported? What kind of custom information is expected to be transmitted via the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the testing framework? The solution is **documentation of the capability**. It's the responsibility of the capability *owner* to design, ship, and document it as clearly as possible to assist implementors who want to effectively *collaborate* with the extension that requires the specific capability.
 
-For instance, the TRX report extension enables the testing framework to implement the necessary capability to accurately generate a TRX report. The extension to register is included in the <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport> NuGet package, but the capability to implement is found in the *contract only*<https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions> NuGet package.
+For instance, the TRX report extension enables the testing framework to implement the necessary capability to accurately generate a TRX report. The extension to register is included in the <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport> NuGet package, but the capability to implement is found in the [contract-only package](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions).
 
 In conclusion, let's summarize the primary aspects of the capability system:
 
@@ -119,7 +120,7 @@ The platform exposes a specialized interface named `ITestFrameworkCapability` th
 
 ### `IBannerMessageOwnerCapability`
 
-An optional [test framework capability](#framework-capabilities) that allows the test framework to provide the banner message to the platform. If the message is `null` or if the capability is n't present, the platform will use its default banner message.
+An optional [test framework capability](#framework-capabilities) allows the test framework to provide the banner message to the platform. If the message is `null` or the capability isn't present, the platform uses its default banner message.
 
 This capability implementation allows you to abstract away the various conditions that the test framework may need to consider when deciding whether or not the banner message should be displayed.
 

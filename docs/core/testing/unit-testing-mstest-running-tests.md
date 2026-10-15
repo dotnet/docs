@@ -3,7 +3,8 @@ title: Run tests with MSTest
 description: Learn about how to run MSTest tests using VSTest or Microsoft.Testing.Platform (MTP).
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/24/2024
+ms.date: 10/01/2026
+ai-usage: ai-assisted
 ---
 
 # Run tests with MSTest
@@ -21,11 +22,13 @@ MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (
 
 The MSTest runner is open source and builds on the [MTP](./microsoft-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
 
+With the .NET 10 SDK and later versions, select the dedicated MTP mode of `dotnet test` in `global.json`. Starting with .NET 11 Preview 6, you can override that selection for the current process with the `DOTNET_TEST_RUNNER` environment variable. For the supported inputs, SDK-version requirements, and MTP-specific options, see [`dotnet test` with MTP](../tools/dotnet-test-mtp.md).
+
 ## Enable MTP in an MSTest project
 
-It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (MTP) and its extensions.
+Use [MSTest SDK](./unit-testing-mstest-sdk.md) to greatly simplify your project configuration, version management, and alignment of MTP and its extensions.
 
-When you use `MSTest SDK`, by default you're opted in to using MTP.
+`MSTest.Sdk` replaces `Microsoft.NET.Sdk` as the project SDK, and MTP is enabled by default:
 
 ```xml
 <Project Sdk="MSTest.Sdk/4.1.0">
@@ -39,7 +42,12 @@ When you use `MSTest SDK`, by default you're opted in to using MTP.
 </Project>
 ```
 
-Alternatively, you can enable MSTest runner by adding the `EnableMSTestRunner` property and setting `OutputType` to `Exe` in your project file. You also need to ensure that you're using `MSTest 3.2.0` or newer. We strongly recommend you update to the latest MSTest version available.
+> [!NOTE]
+> `MSTest.Sdk` works only when your project can use `Microsoft.NET.Sdk` as its base SDK. If your project requires a different SDK, don't replace the `<Project Sdk="...">` value with `MSTest.Sdk`.
+>
+> For example, some ASP.NET Core integration test projects use `Microsoft.NET.Sdk.Web`. `MSTest.Sdk` derives from `Microsoft.NET.Sdk`, so it doesn't import the ASP.NET Core SDK targets that `Microsoft.NET.Sdk.Web` provides.
+
+You can also configure MSTest manually instead of using `MSTest.Sdk`. Manual configuration is required when your project needs a different top-level SDK (for example, `Microsoft.NET.Sdk.Web`), but you can also choose it with the standard `Microsoft.NET.Sdk`. Add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file. Then add the MSTest references that your project requires. Ensure that you're using MSTest 3.2.0 or newer, and update to the latest MSTest version available.
 
 Consider the following example project file:
 
@@ -146,5 +154,10 @@ Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=Category
 ## See also
 
 - [Testing with `dotnet test`](unit-testing-with-dotnet-test.md)
+- [`dotnet test` with MTP](../tools/dotnet-test-mtp.md)
+- [`dotnet test` with VSTest](../tools/dotnet-test-vstest.md)
+- [MTP CLI options reference](microsoft-testing-platform-cli-options.md)
+- [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md)
+- [Test Windows desktop apps with MSTest UI Automation](unit-testing-mstest-ui-automation.md)
 - [Filter tests](selective-unit-tests.md)
 - [Order unit tests](order-unit-tests.md)

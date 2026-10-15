@@ -149,7 +149,7 @@ The following commands use Bash to set the environment variable `DOTNET_ROOT` to
 DOTNET_FILE=dotnet-sdk-9.0.306-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
-mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" --no-same-owner -C "$DOTNET_ROOT"
 
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```

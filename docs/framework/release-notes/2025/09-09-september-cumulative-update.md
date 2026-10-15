@@ -3,7 +3,7 @@ title: September 2025 security and quality rollup
 description: Learn about the improvements in the .NET Framework September 2025 security and quality rollup.
 ms.date: 09/09/2025
 ---
-# September 2025 security and quality rollup
+# .NET Framework September 2025 security and quality rollup
 
 _Released September 9, 2025_
 

@@ -26,7 +26,7 @@ configuration:
         eventResponderTasks:
 
             - description: >-
-                Assign issues labeled breaking-change to gewarren
+                Assign issues labeled breaking-change to BillWagner
               if:
                 - payloadType: Issues
                 - or:
@@ -39,7 +39,7 @@ configuration:
                       label: 'breaking-change'
               then:
                 - assignTo:
-                    user: gewarren
+                    user: BillWagner
         
             - description: >-
                 Add "not triaged" label when:

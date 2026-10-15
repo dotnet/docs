@@ -52,7 +52,7 @@ To determine the correct redirection file for an article:
 |--------------|------------------|
 | AI | `.openpublishing.redirection.ai.json` |
 | Architecture | `.openpublishing.redirection.architecture.json` |
-| .NET Aspire | `.openpublishing.redirection.aspire.json` |
+| Aspire | `.openpublishing.redirection.aspire.json` |
 | Azure | `.openpublishing.redirection.azure.json` |
 | .NET Core | `.openpublishing.redirection.core.json` |
 | C# | `.openpublishing.redirection.csharp.json` |

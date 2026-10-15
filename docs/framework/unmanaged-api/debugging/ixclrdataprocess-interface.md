@@ -26,6 +26,7 @@ Provides methods for querying information about a process.
 
 | Method                                                                                                                                               | Description                                                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [Flush](ixclrdataprocess-flush-method.md) | Flushes cached data for the process. |
 | [GetRuntimeNameByAddress](ixclrdataprocess-getruntimenamebyaddress-method.md)                     | Gets a name for the given address.                                                               |
 | [GetAppDomainByUniqueId](ixclrdataprocess-getappdomainbyuniqueid-method.md)                       | Gets an `AppDomain` in a process by its unique id.                                              |
 | [StartEnumModules](ixclrdataprocess-startenummodules-method.md)                                   | Provides a handle to enumerate the modules of a process.                                        |

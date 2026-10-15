@@ -1,6 +1,6 @@
 ---
-title: .NET Standard
-description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
+title: .NET Standard overview
+description: Learn what .NET Standard is, which .NET implementations support each version, and why .NET 5 and later versions simplify cross-platform code sharing.
 ms.date: 11/06/2025
 ms.service: dotnet
 ms.subservice: standard-library

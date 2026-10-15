@@ -31,5 +31,5 @@ Compile and run the code.
 
 ## See also
 
-- [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
-- [Marshaling Data with Platform Invoke](../../../framework/interop/marshalling-data-with-platform-invoke.md)
+- [A Closer Look at Platform Invoke](../../../standard/native-interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
+- [Marshaling Data with Platform Invoke](../../../standard/native-interop/marshalling-data-with-platform-invoke.md)

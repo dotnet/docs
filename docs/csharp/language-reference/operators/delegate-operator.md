@@ -27,7 +27,7 @@ When you use the `delegate` operator, you can omit the parameter list. If you om
 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="WithoutParameterList":::
 
-This functionality is the only feature of anonymous methods that lambda expressions don't support. In all other cases, use a lambda expression to write inline code. You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that the method doesn't use:
+This functionality is the only feature of anonymous methods that lambda expressions don't support. In all other cases, use a lambda expression to write inline code. You can use [discards](../../fundamentals/patterns/discards.md) to specify two or more input parameters of an anonymous method that the method doesn't use:
 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
 

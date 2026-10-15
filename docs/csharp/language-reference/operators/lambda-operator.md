@@ -1,7 +1,8 @@
 ---
 title: "The lambda operator - The `=>` operator is used to define a lambda expression"
 description: "The C# => operator defines lambda expressions and expression bodied members. Lambda expressions define a block of code used as data."
-ms.date: 01/20/2026
+ms.date: 08/20/2026
+ai-usage: ai-assisted
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 
@@ -41,15 +42,7 @@ An expression body definition uses the following general syntax:
 member => expression;
 ```
 
-The `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member:
-
-- Has a `void` return type, or
-- Is a:
-  - Constructor
-  - Finalizer
-  - Property or indexer `set` accessor
-
-`expression` must be a [*statement expression*](~/_csharpstandard/standard/statements.md#137-expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
+For a member that returns a value, the expression's result must be implicitly convertible to the member's return type. For a `void` member, constructor, finalizer, or `set`, `init`, `add`, or `remove` accessor, the body must be a [*statement expression*](~/_csharpstandard/standard/statements.md#137-expression-statements). A statement expression can be an assignment, method invocation, object creation, increment or decrement operation, or `await` expression. Its result, if any, is discarded.
 
 The following example shows an expression body definition for a `Person.ToString` method:
 
@@ -66,7 +59,13 @@ public override string ToString()
 }
 ```
 
-You can create expression body definitions for methods, operators, read-only properties, constructors, finalizers, and property and indexer accessors. For more information, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+You can use expression body definitions for the following members:
+
+- **Methods and local functions:** A member that returns a value has the form `T M() => expression;`. A `void` member has the form `void M() => statementExpression;`. For more information, see [Methods](../../programming-guide/classes-and-structs/methods.md) and [Local functions](../../programming-guide/classes-and-structs/local-functions.md).
+- **Operators:** An operator has the form `public static T operator +(T left, T right) => expression;`. For more information, see [Operator overloading](operator-overloading.md).
+- **Properties and indexers:** A read-only property or indexer has the form `T P => expression;` or `T this[int i] => expression;`. You can also use expression bodies for individual accessors. A `get` accessor has the form `get => expression;`. A `set` or `init` accessor has the form `set => statementExpression;` or `init => statementExpression;`. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexers](../../programming-guide/indexers/index.md).
+- **Constructors and finalizers:** These members have the form `C() => statementExpression;` or `~C() => statementExpression;`. For more information, see [Constructors](../../programming-guide/classes-and-structs/constructors.md) and [Finalizers](../../programming-guide/classes-and-structs/finalizers.md).
+- **Event accessors:** An `add` or `remove` accessor has the form `add => statementExpression;` or `remove => statementExpression;`. For more information, see [Events](../../programming-guide/events/index.md).
 
 ## Operator overloadability
 

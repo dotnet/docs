@@ -140,7 +140,7 @@ When you call either <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build?displ
 
 If you're building for the web or writing a distributed application, you might need to use a different host builder. Consider the following list of additional host builders:
 
-- <xref:Aspire.Hosting.DistributedApplicationBuilder>: A builder for creating distributed apps. For more information, see [Aspire](/dotnet/aspire).
+- [DistributedApplicationBuilder](https://aspire.dev/reference/api/csharp/aspire.hosting/distributedapplicationbuilder/): A builder for creating distributed apps. For more information, see [Aspire](https://aspire.dev/).
 - <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder>: A builder for web applications and services. For more information, see [ASP.NET Core](/aspnet/core).
 - <xref:Microsoft.AspNetCore.Hosting.WebHostBuilder>: A builder for `IWebHost`. For more information, see [ASP.NET Core web host](/aspnet/core/fundamentals/host/web-host).
 

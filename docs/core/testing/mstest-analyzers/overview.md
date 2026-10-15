@@ -3,7 +3,8 @@ title: MSTest code analysis
 description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
-ms.date: 12/20/2023
+ms.date: 10/06/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest code analysis
@@ -35,7 +36,7 @@ The available values for this property:
 
 ### `None`
 
-This value sets all analyzers to `none` severity, disabling all of them. You can then enable individual analyzers using `.editorconfig` or `.globalconfig` files.
+This value sets rules to `none` severity, except rules whose default severity is Error. [MSTEST0088](mstest0088.md) remains enabled as an error even in `None` mode. To configure individual rules, use `.editorconfig` or `.globalconfig` files.
 
 ### `Default`
 
@@ -54,9 +55,11 @@ This is the mode most developers are expected to use. Rules that are enabled by 
 - [MSTEST0003: Test methods should have valid layout](mstest0003.md).
 - [MSTEST0043: Use retry attribute on test method](mstest0043.md).
 
+Rules whose default severity is Error, such as [MSTEST0088](mstest0088.md), retain that severity.
+
 ### `All`
 
-This mode is more aggressive than `Recommended`. All rules are enabled as warnings. In addition, the following rules are escalated to errors:
+This mode is more aggressive than `Recommended`. Rules are enabled with at least Warning severity, except the opt-in rules listed below. Rules whose default severity is Error, such as [MSTEST0088](mstest0088.md), retain that severity. In addition, the following rules are escalated to errors:
 
 - [MSTEST0003: Test methods should have valid layout](mstest0003.md).
 - [MSTEST0043: Use retry attribute on test method](mstest0043.md).
@@ -112,6 +115,15 @@ Rules that help ensure your test classes and methods are properly structured and
 - [MSTEST0057](mstest0057.md) - TestMethodAttribute should propagate source information
 - [MSTEST0060](mstest0060.md) - Duplicate TestMethodAttribute
 - [MSTEST0063](mstest0063.md) - Test class should have valid constructor
+- [MSTEST0069](mstest0069.md) - Inherited `[TestClass]` is ignored by the MSTest source generator
+- [MSTEST0071](mstest0071.md) - Test method should not specify a display name equal to its name
+- [MSTEST0072](mstest0072.md) - `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation
+- [MSTEST0078](mstest0078.md) - `[DependsOn]` arguments should be valid
+- [MSTEST0081](mstest0081.md) - `[TestFilterProvider]` should reference a valid test filter type
+- [MSTEST0082](mstest0082.md) - A test class inherits a lifecycle or test method from a different MSTest version
+- [MSTEST0085](mstest0085.md) - `[TestClass]` should not be applied to abstract classes
+- [MSTEST0086](mstest0086.md) - Remove redundant test method attribute
+- [MSTEST0088](mstest0088.md) - MSTest host test-class injection is not supported by the selected build mode
 
 Related documentation: [Write tests with MSTest](../unit-testing-mstest-writing-tests.md)
 
@@ -127,6 +139,8 @@ Rules for writing asynchronous test code correctly:
 - [MSTEST0045](mstest0045.md) - Use cooperative cancellation for timeout
 - [MSTEST0049](mstest0049.md) - Flow TestContext CancellationToken
 - [MSTEST0054](mstest0054.md) - Use CancellationToken property
+- [MSTEST0064](mstest0064.md) - Prefer async assertion methods
+- [MSTEST0067](mstest0067.md) - Avoid synchronously blocking calls in test code
 
 Related documentation: [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)
 
@@ -140,6 +154,7 @@ Rules for working with data-driven test scenarios:
 - [MSTEST0042](mstest0042.md) - Duplicate DataRow
 - [MSTEST0052](mstest0052.md) - Avoid explicit DynamicDataSourceType
 - [MSTEST0062](mstest0062.md) - Avoid out/ref test method parameters
+- [MSTEST0087](mstest0087.md) - Avoid duplicated `DataRow` display names
 
 Related documentation: [Data-driven testing](../unit-testing-mstest-writing-tests-data-driven.md)
 
@@ -158,7 +173,9 @@ Rules for test initialization, cleanup, and lifecycle management:
 - [MSTEST0021](mstest0021.md) - Prefer Dispose over TestCleanup
 - [MSTEST0022](mstest0022.md) - Prefer TestCleanup over Dispose
 - [MSTEST0034](mstest0034.md) - Use ClassCleanupBehavior.EndOfClass
+- [MSTEST0047](mstest0047.md) - Suppress IDE0060 for unused TestContext parameter on initialize and cleanup methods
 - [MSTEST0050](mstest0050.md) - Global test fixture should be valid
+- [MSTEST0066](mstest0066.md) - `[Ignore]` should specify a justification
 
 Related documentation: [Lifecycle](../unit-testing-mstest-writing-tests-lifecycle.md)
 
@@ -180,6 +197,9 @@ Rules for using assertion methods correctly and effectively:
 - [MSTEST0051](mstest0051.md) - Assert.Throws should contain single statement
 - [MSTEST0053](mstest0053.md) - Avoid Assert format parameters
 - [MSTEST0058](mstest0058.md) - Avoid asserts in catch blocks
+- [MSTEST0064](mstest0064.md) - Prefer async assertion methods
+- [MSTEST0065](mstest0065.md) - Avoid Assert.AreEqual on collection types
+- [MSTEST0068](mstest0068.md) - Use Assert instead of CollectionAssert
 
 Related documentation: [Assertions](../unit-testing-mstest-writing-tests-assertions.md)
 
@@ -190,11 +210,24 @@ Rules for properly using the TestContext object:
 - [MSTEST0005](mstest0005.md) - TestContext should be valid
 - [MSTEST0024](mstest0024.md) - Do not store static TestContext
 - [MSTEST0033](mstest0033.md) - Suppress non-nullable reference not initialized warning
+- [MSTEST0047](mstest0047.md) - Suppress IDE0060 for the TestContext parameter
 - [MSTEST0048](mstest0048.md) - TestContext property usage
 - [MSTEST0049](mstest0049.md) - Flow TestContext CancellationToken
 - [MSTEST0054](mstest0054.md) - Use CancellationToken property
 
 Related documentation: [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)
+
+### Parallel test safety
+
+Rules that help parallel tests coordinate shared resources and avoid process-wide state:
+
+- [MSTEST0073](mstest0073.md) - Prefer a constant for the `[ResourceLock]` resource key
+- [MSTEST0074](mstest0074.md) - Test mutating process-global state should declare a resource lock
+- [MSTEST0075](mstest0075.md) - Avoid changing the current directory in a parallelized test
+- [MSTEST0076](mstest0076.md) - Avoid mutating process-wide culture in a parallelized test
+- [MSTEST0077](mstest0077.md) - Avoid hardcoded or shared filesystem paths in a parallelized test
+
+Related documentation: [Test execution and control](../unit-testing-mstest-writing-tests-controlling-execution.md), [TestContext](../unit-testing-mstest-writing-tests-testcontext.md)
 
 ### Test configuration
 
@@ -209,6 +242,16 @@ Rules for configuring test execution, parallelization, and other test settings:
 - [MSTEST0055](mstest0055.md) - Do not ignore string method return value
 - [MSTEST0059](mstest0059.md) - Use Parallelize attribute correctly
 - [MSTEST0061](mstest0061.md) - Use OSCondition attribute instead of runtime check
+- [MSTEST0070](mstest0070.md) - `[MemberCondition]` arguments should be valid
+- [MSTEST0072](mstest0072.md) - `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation
+- [MSTEST0078](mstest0078.md) - `[DependsOn]` arguments should be valid
+- [MSTEST0079](mstest0079.md) - Use ArchitectureCondition attribute instead of runtime checks
+- [MSTEST0080](mstest0080.md) - Use CICondition attribute instead of environment checks
+- [MSTEST0081](mstest0081.md) - `[TestFilterProvider]` should reference a valid test filter type
+- [MSTEST0082](mstest0082.md) - A test class inherits a lifecycle or test method from a different MSTest version
+- [MSTEST0083](mstest0083.md) - Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start`
+- [MSTEST0084](mstest0084.md) - Platform compatibility attributes should be consistent with `[OSCondition]`
+- [MSTEST0088](mstest0088.md) - MSTest host test-class injection is not supported by the selected build mode
 
 Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), [Running tests](../unit-testing-mstest-running-tests.md)
 
@@ -262,6 +305,7 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0044](mstest0044.md) | Design | Prefer TestMethod over DataTestMethod | Info |
 | [MSTEST0045](mstest0045.md) | Design | Use cooperative cancellation for timeout | Info |
 | [MSTEST0046](mstest0046.md) | Usage | Use Assert instead of StringAssert | Info |
+| [MSTEST0047](mstest0047.md) | Suppression | Suppress IDE0060 for the TestContext parameter | N/A |
 | [MSTEST0048](mstest0048.md) | Usage | TestContext property usage | Warning |
 | [MSTEST0049](mstest0049.md) | Usage | Flow TestContext CancellationToken | Info |
 | [MSTEST0050](mstest0050.md) | Usage | Global test fixture should be valid | Warning |
@@ -278,6 +322,31 @@ Related documentation: [Configure MSTest](../unit-testing-mstest-configure.md), 
 | [MSTEST0061](mstest0061.md) | Usage | Use OSCondition attribute instead of runtime check | Info |
 | [MSTEST0062](mstest0062.md) | Usage | Avoid out/ref test method parameters | Warning |
 | [MSTEST0063](mstest0063.md) | Usage | Test class should have valid constructor | Warning |
+| [MSTEST0064](mstest0064.md) | Usage | Prefer async assertion methods | Info |
+| [MSTEST0065](mstest0065.md) | Usage | Avoid `Assert.AreEqual` on collection types | Warning |
+| [MSTEST0066](mstest0066.md) | Design | `[Ignore]` should specify a justification | Info |
+| [MSTEST0067](mstest0067.md) | Usage | Avoid synchronously blocking calls in test code | Info (disabled by default) |
+| [MSTEST0068](mstest0068.md) | Usage | Use `Assert` instead of `CollectionAssert` | Info |
+| [MSTEST0069](mstest0069.md) | Usage | Inherited `[TestClass]` is ignored by the MSTest source generator | Warning |
+| [MSTEST0070](mstest0070.md) | Usage | `[MemberCondition]` arguments should be valid | Warning |
+| [MSTEST0071](mstest0071.md) | Usage | Test method should not specify a display name equal to its name | Info |
+| [MSTEST0072](mstest0072.md) | Usage | `[AssemblyFixtureProvider]` isn't supported with ahead-of-time compilation | Warning |
+| [MSTEST0073](mstest0073.md) | Usage | Prefer a constant for the `[ResourceLock]` resource key | Info |
+| [MSTEST0074](mstest0074.md) | Usage | Test mutating process-global state should declare a resource lock | Info |
+| [MSTEST0075](mstest0075.md) | Usage | Avoid changing the current directory in a parallelized test | Info |
+| [MSTEST0076](mstest0076.md) | Usage | Avoid mutating process-wide culture in a parallelized test | Info |
+| [MSTEST0077](mstest0077.md) | Usage | Avoid hardcoded or shared filesystem paths in a parallelized test | Info |
+| [MSTEST0078](mstest0078.md) | Usage | `[DependsOn]` arguments should be valid | Warning |
+| [MSTEST0079](mstest0079.md) | Usage | Use ArchitectureCondition attribute instead of runtime checks | Info |
+| [MSTEST0080](mstest0080.md) | Usage | Use CICondition attribute instead of environment checks | Info |
+| [MSTEST0081](mstest0081.md) | Usage | `[TestFilterProvider]` should reference a valid test filter type | Warning |
+| [MSTEST0082](mstest0082.md) | Usage | A test class inherits a lifecycle or test method from a different MSTest version | Warning |
+| [MSTEST0083](mstest0083.md) | Usage | Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start` | Info |
+| [MSTEST0084](mstest0084.md) | Usage | Platform compatibility attributes should be consistent with `[OSCondition]` | Info |
+| [MSTEST0085](mstest0085.md) | Usage | `[TestClass]` should not be applied to abstract classes | Info |
+| [MSTEST0086](mstest0086.md) | Usage | Remove redundant test method attribute | Info |
+| [MSTEST0087](mstest0087.md) | Usage | Avoid duplicated `DataRow` display names | Warning |
+| [MSTEST0088](mstest0088.md) | Usage | MSTest host test-class injection is not supported by the selected build mode | Error |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 

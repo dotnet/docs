@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous File I/O"
 description: Read about asynchronous file I/O in .NET. Learn async methods to simplify asynchronous operations, such as ReadAsync, WriteAsync, and more.
-ms.date: "03/30/2017"
+ms.date: 08/06/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -22,9 +22,10 @@ ms.assetid: dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7
 
 Asynchronous operations enable you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working.
 
-Starting with .NET Framework 4.5, the I/O types include async methods to simplify asynchronous operations. An async method contains `Async` in its name, such as <xref:System.IO.Stream.ReadAsync*>, <xref:System.IO.Stream.WriteAsync*>, <xref:System.IO.Stream.CopyToAsync*>, <xref:System.IO.Stream.FlushAsync*>, <xref:System.IO.TextReader.ReadLineAsync*>, and <xref:System.IO.TextReader.ReadToEndAsync*>. These async methods are implemented on stream classes, such as <xref:System.IO.Stream>, <xref:System.IO.FileStream>, and <xref:System.IO.MemoryStream>, and on classes that are used for reading from or writing to streams, such <xref:System.IO.TextReader> and <xref:System.IO.TextWriter>.
+The I/O types include async methods to simplify asynchronous operations. An async method contains `Async` in its name, such as <xref:System.IO.Stream.ReadAsync*>, <xref:System.IO.Stream.WriteAsync*>, <xref:System.IO.Stream.CopyToAsync*>, <xref:System.IO.Stream.FlushAsync*>, <xref:System.IO.TextReader.ReadLineAsync*>, and <xref:System.IO.TextReader.ReadToEndAsync*>. These async methods are implemented on stream classes, such as <xref:System.IO.Stream>, <xref:System.IO.FileStream>, and <xref:System.IO.MemoryStream>, and on classes that are used for reading from or writing to streams, such <xref:System.IO.TextReader> and <xref:System.IO.TextWriter>.
 
-In .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead*> and <xref:System.IO.Stream.EndRead*> to implement asynchronous I/O operations. These methods are still available in current .NET versions to support legacy code; however, the async methods help you implement asynchronous I/O operations more easily.
+> [!IMPORTANT]
+> In .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead*> and <xref:System.IO.Stream.EndRead*> to implement asynchronous I/O operations. These methods are still available in current .NET versions to support legacy code; however, the async methods help you implement asynchronous I/O operations more easily.
 
 C# and Visual Basic each have two keywords for asynchronous programming:
 

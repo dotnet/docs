@@ -19,7 +19,7 @@ Interoperability enables you to preserve and take advantage of existing investme
 
 *Platform invoke* is a service that enables managed code to call unmanaged functions implemented in dynamic link libraries (DLLs), such as the Microsoft Windows API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed.
 
-For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md) and [How to use platform invoke to play a WAV file](./how-to-use-platform-invoke-to-play-a-wave-file.md).
+For more information, see [Consuming Unmanaged DLL Functions](../../../standard/native-interop/consuming-unmanaged-dll-functions.md) and [How to use platform invoke to play a WAV file](./how-to-use-platform-invoke-to-play-a-wave-file.md).
 
 > [!NOTE]
 > The [Common Language Runtime](../../../standard/clr.md) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [Security in .NET](../../../standard/security/index.md).
@@ -38,7 +38,7 @@ You can consume a COM component from a C# project. The general steps are as foll
 1. Create an instance of a class defined in the RCW. Creating an instance of that class creates an instance of the COM object.
 1. Use the object just as you use other managed objects. When the object is reclaimed by garbage collection, the instance of the COM object is also released from memory.
 
-For more information, see [Exposing COM Components to the .NET Framework](../../../framework/interop/exposing-com-components.md).
+For more information, see [Exposing COM Components to the .NET Framework](../../../standard/native-interop/exposing-com-components.md).
 
 ## Exposing C# to COM
 
@@ -49,13 +49,13 @@ COM clients can consume C# types that have been correctly exposed. The basic ste
 1. Generate a COM type library and register it for COM usage.
    You can modify C# project properties to automatically register the C# assembly for COM interop. Visual Studio uses the [Regasm.exe (Assembly Registration Tool)](../../../framework/tools/regasm-exe-assembly-registration-tool.md), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.
 
- For more information, see [Exposing .NET Framework Components to COM](../../../framework/interop/exposing-dotnet-components-to-com.md) and [Example COM Class](./example-com-class.md).
+ For more information, see [Exposing .NET Framework Components to COM](../../../standard/native-interop/exposing-dotnet-components-to-com.md) and [Example COM Class](./example-com-class.md).
 
 ## See also
 
 - [Improving Interop Performance](/previous-versions/msp-n-p/ff647812(v=pandp.10))
 - [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)
 - [Introduction to COM Interop in Visual Basic](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
-- [Marshaling between Managed and Unmanaged Code](../../../framework/interop/interop-marshalling.md)
-- [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
-- [Registering Assemblies with COM](../../../framework/interop/registering-assemblies-with-com.md)
+- [Marshaling between Managed and Unmanaged Code](../../../standard/native-interop/interop-marshalling.md)
+- [Interoperating with Unmanaged Code](../../../standard/native-interop/index.md)
+- [Registering Assemblies with COM](../../../standard/native-interop/registering-assemblies-with-com.md)

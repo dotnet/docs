@@ -45,13 +45,13 @@ The Component Object Model (COM) allows an object to expose its functionality to
   
 ## Related Sections  
 
- [Interoperating with Unmanaged Code](../../../framework/interop/index.md)  
+ [Interoperating with Unmanaged Code](../../../standard/native-interop/index.md)  
  Describes interoperability services provided by the common language runtime.  
   
- [Exposing COM Components to the .NET Framework](../../../framework/interop/exposing-com-components.md)  
+ [Exposing COM Components to the .NET Framework](../../../standard/native-interop/exposing-com-components.md)  
  Describes the process of calling COM types through COM interop.  
   
- [Exposing .NET Framework Components to COM](../../../framework/interop/exposing-dotnet-components-to-com.md)  
+ [Exposing .NET Framework Components to COM](../../../standard/native-interop/exposing-dotnet-components-to-com.md)  
  Describes the preparation and use of managed types from COM.  
   
  [Applying Interop Attributes](../../../standard/native-interop/apply-interop-attributes.md)  

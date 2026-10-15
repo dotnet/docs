@@ -705,7 +705,7 @@ the intended logic.
 
 ## 15. Fixed-size buffers
 
-Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline arrays](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
+Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline arrays](~/_csharpstandard/standard/structs.md#166-inline-arrays).
 An example of a fixed-size buffer (requires `unsafe` context) is the following snippet:
 
 ```csharp
@@ -719,7 +719,7 @@ MyStruct m = new();
 ms.data[10] = 0; // Out-of-bounds write, undefined behavior.
 ```
 
-A modern and a safer alternative is [inline arrays](~/_csharplang/proposals/csharp-12.0/inline-arrays.md):
+A modern and a safer alternative is [inline arrays](~/_csharpstandard/standard/structs.md#166-inline-arrays):
 
 ```csharp
 [System.Runtime.CompilerServices.InlineArray(8)]

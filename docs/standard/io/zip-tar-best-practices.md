@@ -54,7 +54,7 @@ Best for: simple workflows with trusted input, quick scripts, and build tooling.
 
 Use these APIs for full control over each archive entry. They're essential for large archives or untrusted input.
 
-- **ZIP:** Use <xref:System.IO.Compression.ZipArchive?displayProperty=fullName> to open an archive and iterate, read, or write entries selectively. Use <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*> to extract individual entries, or <xref:System.IO.Compression.ZipFileExtensions.ExtractToDirectory*> to extract all entries from an already-opened archive.
+- **ZIP:** Use <xref:System.IO.Compression.ZipArchive?displayProperty=fullName> to open an archive and iterate, read, or write entries selectively. Use <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*> to extract individual entries.
 
 - **TAR:** Use <xref:System.Formats.Tar.TarReader?displayProperty=fullName> and <xref:System.Formats.Tar.TarWriter> for sequential entry-by-entry access. Use <xref:System.Formats.Tar.TarEntry.ExtractToFile*?displayProperty=fullName> to extract individual entries.
 
@@ -65,9 +65,9 @@ Best for: large archives, selective extraction, untrusted input, and custom proc
 
 ## Work with trusted archives
 
-When the archive source is known and trusted, the [convenience methods](#convenience-apis-one-shot-operations) give you a safe, one-line extraction path:
+When the archive source is known and trusted, the [convenience methods](#convenience-apis-one-shot-operations) give you a one-line extraction path:
 
-- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> handle path validation automatically. They sanitize entry names, resolve each entry's full path, and verify the resolved path stays inside the destination directory.
+- <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> automatically validate entry paths against the specified destination directory boundary. These checks don't guarantee containment on disk: a pre-existing junction or symbolic link in the destination path can redirect writes outside that directory.
 
 - <xref:System.IO.Compression.ZipFile.ExtractToDirectory*?displayProperty=nameWithType> has overloads that default to not overwriting existing files. All <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> overloads require the `overwriteFiles` parameter, so you must always choose explicitly.
 
@@ -75,22 +75,21 @@ When the archive source is known and trusted, the [convenience methods](#conveni
 
 - TAR extraction handles overwriting differently: it deletes the existing file before writing the replacement. If extraction fails after deletion (for example, due to an I/O error or process interruption), the original file is lost and the replacement might be incomplete. Consider backing up critical files before overwriting with TAR extraction.
 
-> [!NOTE]
-> The convenience methods don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. If that matters even for trusted input (for example, very large archives), use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely).
+> [!WARNING]
+> Use the `ExtractToDirectory` convenience methods only on trusted inputs. For both ZIP and TAR, their path validation provides only a best-effort attempt to keep extraction within the specified destination directory, not a guarantee. For example, a pre-existing junction or symbolic link in the destination directory or one of its parents can redirect writes even when the validated paths appear to stay within the destination. See [Validate destination paths](#validate-destination-paths) for guidance on a fresh, application-controlled destination.
+>
+> These helpers also don't enforce size limits, entry count limits, or other policies needed for safe extraction of untrusted archives. To enforce these limits, even for trusted input, use the streaming approach described in [Handle untrusted archives safely](#handle-untrusted-archives-safely). Streaming APIs don't provide a containment guarantee either: you must validate paths yourself and control the destination directory.
 
 ## Handle untrusted archives safely
 
 For untrusted input—user uploads, third-party downloads, or network transfers—iterate over entries manually and enforce your own safety checks. The following subsections describe what you need to enforce and why.
 
-- [What the convenience methods don't protect you from](#what-the-convenience-methods-dont-protect-you-from)
 - [Enforce size and entry count limits](#enforce-size-and-entry-count-limits)
+- [Validate file names](#validate-file-names)
 - [Validate destination paths](#validate-destination-paths)
 - [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar)
+- [Entry permission bits (Unix only)](#entry-permission-bits-unix-only)
 - [Complete safe extraction examples](#complete-safe-extraction-examples)
-
-### What the convenience methods don't protect you from
-
-`ExtractToDirectory` protects against *path traversal*—an attack where a malicious entry name like `../../etc/passwd` tries to write outside the destination directory. The method resolves each entry's full path and rejects any that fall outside the target directory (for TAR, this check also covers symbolic link targets). However, `ExtractToDirectory` doesn't enforce size limits or entry count limits.
 
 ### Enforce size and entry count limits
 
@@ -115,6 +114,10 @@ Neither <xref:System.IO.Compression.ZipArchive> nor <xref:System.Formats.Tar.Tar
 > [!TIP]
 > The same approach applies to TAR archives. Since TAR files are read entry-by-entry via <xref:System.Formats.Tar.TarReader.GetNextEntry*>, track both the cumulative data size and entry count as you iterate.
 
+### Validate file names
+
+Depending on the filesystem, some characters might not be allowed in filenames (or allowed only in certain positions), or have special meaning. Applications should check that the extracted entry names conform to an acceptable pattern.
+
 ### Validate destination paths
 
 When you use the streaming APIs, you're responsible for validating every entry's destination path. They perform no path validation at all.
@@ -128,6 +131,9 @@ Key points:
 - `Path.GetFullPath()` resolves relative segments like `../` into an absolute path.
 - The `StartsWith` check ensures the resolved path is still inside the destination.
 - The trailing directory separator on `fullDestDir` is critical—without it, a path like `/safe-dir-evil/file` would incorrectly match `/safe-dir`.
+
+> [!NOTE]
+> Boundary validation assumes the destination directory itself is a real directory you control. If the destination directory or one of its parents is already a junction or symbolic link, extraction follows that link and writes to the link's target, even when each entry's resolved path still appears to stay within the destination. When handling untrusted archives, extract into a fresh, application-controlled directory rather than a reused or externally writable location.
 
 > [!WARNING]
 > The following APIs leave you completely unprotected against path traversal. You must validate paths yourself before calling them.
@@ -161,6 +167,10 @@ If you need to preserve links, validate that the link target resolves within you
 If your use case requires extracting archives with hard links but you want to avoid hard links on disk, <xref:System.Formats.Tar.TarHardLinkMode.CopyContents?displayProperty=nameWithType> copies the file content instead of creating a hard link. This eliminates hard-link-based attacks and produces more portable output on Windows.
 
 For reference, <xref:System.Formats.Tar.TarFile.ExtractToDirectory*?displayProperty=nameWithType> validates both the entry path and link target path against the destination directory boundary. If either resolves outside, an <xref:System.IO.IOException> is thrown. <xref:System.Formats.Tar.TarEntry.ExtractToFile*?displayProperty=nameWithType> rejects symbolic and hard link entries entirely—it throws <xref:System.InvalidOperationException>.
+
+### Entry permission bits (Unix only)
+
+On Unix-like systems, the convenience APIs apply permission bits from the archive metadata to the extracted file or directory. These permissions might be too broad for the application scenario. In your application, you might want to prevent extraction of files that have executable permissions set. For more information, see the [Unix file permissions](#unix-file-permissions) section of this article.
 
 ### Complete safe extraction examples
 
@@ -198,7 +208,10 @@ Additionally, when you open a <xref:System.IO.Compression.ZipArchive> in <xref:S
 
 ### TAR streaming model
 
-<xref:System.Formats.Tar.TarReader?displayProperty=fullName> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> call. If you need to retain entry data, either copy it immediately or pass `copyContents: true` to <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType>, which copies the entry data into a separate <xref:System.IO.MemoryStream> that remains valid after advancing. Like <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType>, `copyContents: true` loads the full entry into memory, so check entry sizes before using it with untrusted archives.
+<xref:System.Formats.Tar.TarReader?displayProperty=fullName> reads entries one at a time and doesn't buffer the entire archive. However, for unseekable streams, each entry's <xref:System.Formats.Tar.TarEntry.DataStream?displayProperty=nameWithType> is only valid until the next <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> call. If you need to retain entry data, copy it immediately to a separate <xref:System.IO.MemoryStream> that remains valid after advancing.
+
+> [!WARNING]
+> Avoid using <xref:System.Formats.Tar.TarReader.GetNextEntry*?displayProperty=nameWithType> with `copyContents: true` on untrusted archives, as it allocates a potentially large amount of memory for the <xref:System.IO.MemoryStream> to hold the entry contents. Pass `copyContents: false` and validate the entry size before materializing the contents manually.
 
 :::code language="csharp" source="./snippets/zip-tar-best-practices/csharp/Program.cs" id="TarStreaming":::
 
@@ -219,7 +232,44 @@ Archive behavior can vary between Windows and Unix. Keep these differences in mi
 - **ZIP:** Unix permissions are stored in the upper 16 bits of <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes?displayProperty=nameWithType>. When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime restores ownership permissions (read/write/execute for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped. Permissions are not applied if the upper bits are zero. This happens when the ZIP was created on Windows, because .NET on Windows sets `DefaultFileExternalAttributes` to `0`. On Windows, these attributes are always ignored during extraction.
 - **TAR:** The <xref:System.Formats.Tar.TarEntry.Mode?displayProperty=nameWithType> property represents `UnixFileMode` and can store all 12 permission bits (read/write/execute for user/group/other, plus SetUID, SetGID, and StickyBit). When extracting on Unix via `ExtractToDirectory` or `ExtractToFile`, the runtime applies only the 9 ownership bits (rwx for user/group/other), subject to the process umask. SetUID, SetGID, and StickyBit are stripped for security.
 
-When processing untrusted archives, be aware that extracted files may have executable permissions set by the archive author. Untrusted archives could contain malicious executable files.
+When processing untrusted archives, be aware that extracted files might have executable permissions set by the archive author. Untrusted archives could contain malicious executable files. Since <xref:System.IO.Compression.ZipArchiveEntry.ExternalAttributes?displayProperty=nameWithType> and <xref:System.Formats.Tar.TarEntry.Mode?displayProperty=nameWithType> are writable, you can modify them before extraction:
+
+```csharp
+foreach (ZipArchiveEntry entry in archive.Entries)
+{
+    // Unset the external attributes to force extraction with default Unix permission bits.
+    entry.ExternalAttributes = 0;
+
+    // .. other validation omitted for brevity
+
+    Directory.CreateDirectory(Path.GetDirectoryName(destPath)!);
+    entry.ExtractToFile(destPath, overwrite: false);
+}
+```
+
+```csharp
+
+const UnixFileMode PermittedFileModes =
+    UnixFileMode.UserRead | UnixFileMode.UserWrite |
+    UnixFileMode.GroupRead |
+    UnixFileMode.OtherRead;
+
+const UnixFileMode PermittedDirectoryModes =
+    PermittedFileModes |
+    UnixFileMode.UserExecute | UnixFileMode.GroupExecute | UnixFileMode.OtherExecute;
+
+while ((entry = reader.GetNextEntry()) is not null)
+{
+    if (entry.EntryType == TarEntryType.Directory)
+    {
+        entry.Mode &= PermittedDirectoryModes;
+    }
+    else
+    {
+        entry.Mode &= PermittedFileModes;
+    }
+}
+```
 
 ### Special entry types (TAR)
 
@@ -247,6 +297,11 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 - **Archive and entry comments** are arbitrary strings. If your application displays or processes comments, sanitize them appropriately.
 - **Extra fields** are binary key-value pairs attached to each entry. The runtime preserves unknown extra fields and trailing data when reading and writing archives in <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> mode and round-trips them as-is. If your application reads or interprets extra fields, validate their contents.
 - **Entry name encoding:** when writing, the runtime uses ASCII for entry names that contain only ASCII printable characters (32-126) and UTF-8 (with the language encoding flag set) for names that contain other characters. When reading without a custom encoding, entries with or without the language encoding flag are decoded as UTF-8 (which also correctly decodes ASCII). Use the `entryNameEncoding` parameter on <xref:System.IO.Compression.ZipArchive> to override encoding when needed, but be aware the override affects all entries uniformly.
+
+### TAR extended attributes and link names
+
+- **PAX extended attributes** (<xref:System.Formats.Tar.PaxTarEntry.ExtendedAttributes?displayProperty=nameWithType>) are an arbitrary, archive-supplied set of key-value strings. A PAX entry can carry many attributes, and individual values can be large. The format also uses these attributes to override standard header fields such as the entry path, link name, and size. Treat them as untrusted input: if your application reads or acts on extended attributes, validate their contents and set limits on how many you process and how large they can be.
+- **Link names** (<xref:System.Formats.Tar.TarEntry.LinkName?displayProperty=nameWithType>) on symbolic-link and hard-link entries are archive-supplied paths. Validate them the same way you validate entry names—see [Handle symbolic and hard links (TAR)](#handle-symbolic-and-hard-links-tar).
 
 ## Encryption considerations (.NET 11+)
 
@@ -333,11 +388,13 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 
 - **Manual iteration:** Don't use `ExtractToDirectory` for untrusted input—iterate entries manually to enforce all limits.
 - **Path traversal:** Validate all destination paths with `Path.GetFullPath()` + `StartsWith()`.
+- **Special characters in names:** Validate that entry names conform to the application-defined policy.
 - **Decompression bombs:** Enforce limits on decompressed size (per-entry and total) and entry count.
 - **Symlink/hardlink attacks (TAR):** Validate link targets resolve within the destination, or skip link entries entirely.
+- **Unix permissions:** Validate each entry's permission bits. Skip entries with too broad permissions or mask/modify the unwanted permission bits before extraction.
 - **Memory limits:** Avoid <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> for large untrusted archives. Avoid <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> mode with unseekable streams from untrusted sources.
 - **Thread safety:** Don't share <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader?displayProperty=fullName>, or <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> instances across threads.
-- **Untrusted metadata:** Treat entry names, comments, and extra fields as untrusted input. Sanitize before display or processing.
+- **Untrusted metadata:** Treat entry names, link names, comments, ZIP extra fields, and TAR PAX extended attributes as untrusted input. Validate them and set limits before display or processing.
 - **Overwrite behavior:** Default to `overwrite: false`.
 - **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive?displayProperty=fullName>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
 

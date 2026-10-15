@@ -1,7 +1,7 @@
 ---
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
-ms.date: 02/20/2026
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ---
@@ -23,7 +23,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 ## Order alphabetically
 
 > [!NOTE]
-> MSTest runs tests sequentially within a class by default. If you configure parallelism using the `<Parallelize>` setting in a `.runsettings` file, tests across classes can run concurrently, and ordering affects only the sequence within each class.
+> MSTest runs tests sequentially within a class by default. If you configure parallelism using the `<Parallelize>` setting in a `.runsettings` file, tests across classes can run concurrently, and ordering affects only the sequence within each class. For all ways to enable or disable MSTest parallelization, see [Configure parallelization](unit-testing-mstest-writing-tests-controlling-execution.md#configure-parallelization).
 
 MSTest discovers tests in the same order in which they are defined in the test class.
 
@@ -48,6 +48,23 @@ Starting with MSTest 3.6, a new runsettings option lets you run tests by test na
 
 </RunSettings>
 ```
+
+## Order randomly
+
+In MSTest 4.3 and later, run tests in a random order to surface hidden ordering dependencies between tests. To enable random order, set the `RandomizeTestOrder` setting to **true** in your runsettings file:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+  <MSTest>
+    <RandomizeTestOrder>true</RandomizeTestOrder>
+  </MSTest>
+
+</RunSettings>
+```
+
+To make the random order reproducible, set the `RandomTestOrderSeed` setting to an integer seed. MSTest then replays the same order on every run. When you leave the seed unset, MSTest generates a new seed for each run. Don't combine `RandomizeTestOrder` with `OrderTestsByNameInClass`, because MSTest applies only one ordering mode at a time. For more information, see [Configure MSTest](unit-testing-mstest-configure.md).
 
 :::zone-end
 :::zone pivot="xunit"

@@ -7,15 +7,15 @@
     <PackageVersion Include="OpenAI" Version="2.8.0" />
     <PackageVersion Include="Microsoft.Extensions.AI" Version="9.3.0-preview.1.25114.11" />
     <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25114.11" />
-    <PackageVersion Include="Microsoft.Extensions.Azure" Version="1.14.0" />
+    <PackageVersion Include="Microsoft.Extensions.Azure" Version="1.14.1" />
     <PackageVersion Include="Azure.Identity" Version="1.21.0" />
     <PackageVersion Include="Azure.Identity.Broker" Version="1.7.0" />
-    <PackageVersion Include="Azure.Security.KeyVault.Secrets" Version="4.11.0" />
-    <PackageVersion Include="Azure.Storage.Blobs" Version="12.29.0" />
+    <PackageVersion Include="Azure.Security.KeyVault.Secrets" Version="4.11.2" />
+    <PackageVersion Include="Azure.Storage.Blobs" Version="12.29.2" />
     <!-- ASP.NET Core packages -->
-    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
-    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.7.3" />
-  <PackageVersion Include="Microsoft.Maui.Controls" Version="9.0.0" />
-  <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+  <PackageVersion Include="Microsoft.Maui.Controls" Version="10.0.110" />
+  <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="10.0.12" />
   </ItemGroup>
 </Project>

@@ -335,6 +335,8 @@ items:
           - name: Overview
             displayName: numeric types
             href: ../standard/numerics.md
+          - name: Tensor shapes, storage, and NumPy differences
+            href: ../standard/tensor-shapes-and-storage.md
       - name: Dates, times, and time zones
         items:
           - name: Overview
@@ -411,7 +413,7 @@ items:
                 href: ../standard/memory-and-spans/index.md
               - name: Memory<T> and Span<T> usage guidelines
                 href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
-          - name: SIMD-enabled types
+          - name: SIMD and hardware intrinsics
             href: ../standard/simd.md
       - name: Value tuples
         href: ../standard/value-tuples.md
@@ -609,6 +611,8 @@ items:
                     href: ../standard/serialization/system-text-json/preserve-references.md
                   - name: Serialize polymorphic types
                     href: ../standard/serialization/system-text-json/polymorphism.md
+                  - name: Serialize union types
+                    href: ../standard/serialization/system-text-json/union-types.md
                   - name: Use extension methods on HttpClient
                     href: ../standard/serialization/system-text-json/httpclient-extensions.md
                   - name: Read/write JSON without using JsonSerializer

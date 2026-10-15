@@ -50,7 +50,7 @@ public class CharacterUtilities
          throw new ArgumentException("The array has too many characters.");
 
       if (chars.Length == 2) {
-         if (! Char.IsSurrogatePair(chars[0], chars[1]))
+         if (!Char.IsSurrogatePair(chars[0], chars[1]))
             throw new ArgumentException("The array must contain a low and a high surrogate.");
          else
             return Char.ConvertToUtf32(chars[0], chars[1]);

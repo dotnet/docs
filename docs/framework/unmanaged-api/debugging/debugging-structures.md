@@ -47,6 +47,90 @@ This section describes the unmanaged structures that the debugging API uses.
  [StackTrace_SimpleContext Structure](stacktrace-simplecontext-structure.md)\
  Provides a simple context that can be used in place of a full `CONTEXT` structure.
 
+ [DacpAppDomainData Structure](dacpappdomaindata-structure.md)\
+ Defines a transport buffer for runtime application domain information.
+
+ [DacpAppDomainStoreData Structure](dacpappdomainstoredata-structure.md)\
+ Defines a transport buffer for runtime application domain store information.
+
+ [DacpAssemblyData Structure](dacpassemblydata-structure.md)\
+ Defines a transport buffer for runtime assembly information.
+
+ [DacpCCWData Structure](dacpccwdata-structure.md)\
+ Defines a transport buffer for COM callable wrapper (CCW) information.
+
+ [DacpCodeHeaderData Structure](dacpcodeheaderdata-structure.md)\
+ Defines a transport buffer for JIT-compiled code header information.
+
+ [DacpCOMInterfacePointerData Structure](dacpcominterfacepointerdata-structure.md)\
+ Defines a transport buffer for COM interface pointer information.
+
+ [DacpDomainLocalModuleData Structure](dacpdomainlocalmoduledata-structure.md)\
+ Defines a transport buffer for domain-local module information.
+
+ [DacpFieldDescData Structure](dacpfielddescdata-structure.md)\
+ Defines a transport buffer for FieldDesc information.
+
+ [DacpGcHeapAnalyzeData Structure](dacpgcheapanalyzedata-structure.md)\
+ Defines a transport buffer for garbage collection heap analysis information.
+
+ [DacpGcHeapData Structure](dacpgcheapdata-structure.md)\
+ Defines a transport buffer for general garbage collection heap information.
+
+ [DacpGcHeapDetails Structure](dacpgcheapdetails-structure.md)\
+ Defines a transport buffer for detailed garbage collection heap information.
+
+ [DacpGenerationData Structure](dacpgenerationdata-structure.md)\
+ Defines a transport buffer for garbage collection generation information.
+
+ [DacpHeapSegmentData Structure](dacpheapsegmentdata-structure.md)\
+ Defines a transport buffer for garbage collection heap segment information.
+
+ [DacpJitCodeHeapInfo Structure](dacpjitcodeheapinfo-structure.md)\
+ Defines a transport buffer for JIT code heap information.
+
+ [DacpJitManagerInfo Structure](dacpjitmanagerinfo-structure.md)\
+ Defines a transport buffer for JIT manager information.
+
+ [DacpMethodTableData Structure](dacpmethodtabledata-structure.md)\
+ Defines a transport buffer for method table information.
+
+ [DacpMethodTableFieldData Structure](dacpmethodtablefielddata-structure.md)\
+ Defines a transport buffer for method table field information.
+
+ [DacpObjectData Structure](dacpobjectdata-structure.md)\
+ Defines a transport buffer for runtime object information.
+
+ [DacpOomData Structure](dacpoomdata-structure.md)\
+ Defines a transport buffer for garbage collector out-of-memory information.
+
+ [DacpRCWData Structure](dacprcwdata-structure.md)\
+ Defines a transport buffer for runtime callable wrapper (RCW) information.
+
+ [DacpSyncBlockCleanupData Structure](dacpsyncblockcleanupdata-structure.md)\
+ Defines a transport buffer for sync block cleanup information.
+
+ [DacpSyncBlockData Structure](dacpsyncblockdata-structure.md)\
+ Defines a transport buffer for sync block information.
+
+ [DacpThreadData Structure](dacpthreaddata-structure.md)\
+ Defines a transport buffer for runtime thread information.
+
+ [DacpThreadLocalModuleData Structure](dacpthreadlocalmoduledata-structure.md)\
+ Defines a transport buffer for thread-local module information.
+
+ [DacpThreadpoolData Structure](dacpthreadpooldata-structure.md)\
+ Defines a transport buffer for runtime thread pool information.
+
+ [DacpThreadStoreData Structure](dacpthreadstoredata-structure.md)\
+ Defines a transport buffer for runtime thread store information.
+
+ [DacpUsefulGlobalsData Structure](dacpusefulglobalsdata-structure.md)\
+ Defines a transport buffer for global runtime method table addresses.
+
+ [DacpWorkRequestData Structure](dacpworkrequestdata-structure.md)\
+ Defines a transport buffer for thread pool work request information.
+
 ## Related Sections
 
  [Debugging Coclasses](debugging-coclasses.md)

@@ -27,7 +27,7 @@ To install WinDbg, install Debugging Tools for Windows from the [Download Debugg
 
 ### Garbage Collection ETW Events
 
-Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by .NET. Starting with .NET Framework 4, [garbage collection ETW events](../../framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:
+Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by .NET. [Garbage collection ETW events](../../framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:
 
 - Which generation of objects is being collected.
 - What triggered the garbage collection.
@@ -43,7 +43,7 @@ Profilers can provide comprehensive information. However, complex profilers can 
 
 ### Application Domain Resource Monitoring
 
-Starting with .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](app-domain-resource-monitoring.md).
+Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](app-domain-resource-monitoring.md).
 
 ## Troubleshoot performance issues
 

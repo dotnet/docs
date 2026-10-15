@@ -3,7 +3,7 @@ title: April 2024 security and quality rollup
 description: Learn about the improvements in the .NET Framework April 2024 security and quality rollup.
 ms.date: 04/17/2024
 ---
-# April 2024 security and quality rollup
+# .NET Framework April 2024 security and quality rollup
 
 _Released April 9, 2024_
 

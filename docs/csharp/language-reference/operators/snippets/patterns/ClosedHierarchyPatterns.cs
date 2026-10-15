@@ -92,8 +92,8 @@ public static class TypeParamGoverningTypeExamples
         Cash => "cash",
         Card(var last4) => $"card ending {last4}",
         BankTransfer(var iban) => $"bank transfer to {iban}",
-        // No warning: 'X' is constrained to the closed type 'PaymentMethod',
-        // so handling every direct descendant exhausts the switch.
+        // No warning: 'X' is constrained to the closed type 'PaymentMethod', so the
+        // compiler treats this switch as exhaustive because every direct descendant is handled.
     };
     // </TypeParamGoverningType>
 }

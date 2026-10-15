@@ -22,7 +22,7 @@ The available SDKs include:
 | `Microsoft.NET.Sdk.Razor`  | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk)                                   | <https://github.com/dotnet/aspnetcore> |
 | `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly SDK](/aspnet/core/blazor#blazor-webassembly) | <https://github.com/dotnet/aspnetcore> |
 | `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service SDK](../extensions/workers.md)                              | <https://github.com/dotnet/aspnetcore> |
-| `Aspire.AppHost.Sdk`       | The .NET [Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk)                 | <https://github.com/dotnet/aspire>     |
+| `Aspire.AppHost.Sdk`       | The [Aspire SDK](https://aspire.dev/get-started/app-host/)                           | <https://github.com/microsoft/aspire>     |
 | `MSTest.Sdk`               | The [MSTest SDK](../testing/unit-testing-mstest-sdk.md)                              | <https://github.com/microsoft/testfx>  |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
@@ -54,7 +54,7 @@ The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the
 </Project>
 ```
 
-In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk).
+In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [Aspire SDK](https://aspire.dev/get-started/app-host/).
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 

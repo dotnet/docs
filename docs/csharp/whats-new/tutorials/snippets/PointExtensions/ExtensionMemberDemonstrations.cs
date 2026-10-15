@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Numerics;
 using ExtensionMembers;
+using Path = ExtensionMembers.Path;
 
 public static class ExtensionMemberDemonstrations
 {
@@ -13,6 +14,7 @@ public static class ExtensionMemberDemonstrations
         ArithmeticWithPoints();
         DiscreteArithmeticWithPoints();
         ExtensionMethods();
+        PathIndexer();
         MoreExamples();
     }
 
@@ -117,10 +119,29 @@ public static class ExtensionMemberDemonstrations
         // </InstanceMethods>
     }
 
+    static void PathIndexer()
+    {
+        // <PathIndexerUse>
+        Console.WriteLine("5. Path Indexer");
+        Console.WriteLine("---------------");
+
+        Path path = new([(dX: 2, dY: 3), (dX: 1, dY: 1), (dX: -1, dY: 4)]);
+        Console.WriteLine($"First point: {path[0]}");
+        Console.WriteLine($"Second point: {path[1]}");
+        Console.WriteLine($"Third point: {path[2]}");
+
+        path[1] = new Point(10, 10);
+        Console.WriteLine("After setting the second point to {X=10,Y=10}:");
+        Console.WriteLine($"Second point: {path[1]}");
+        Console.WriteLine($"Third point: {path[2]}");
+        Console.WriteLine();
+        // </PathIndexerUse>
+    }
+
     static void MoreExamples()
     {
         // <FinalScenarios>
-        Console.WriteLine("5. Complex Scenarios");
+        Console.WriteLine("6. Complex Scenarios");
         Console.WriteLine("-------------------");
 
         // Combining operators and methods

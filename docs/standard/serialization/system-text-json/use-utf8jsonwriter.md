@@ -1,12 +1,13 @@
 ---
 title: How to use Utf8JsonWriter in System.Text.Json
 description: "Learn how to use Utf8JsonWriter."
-ms.date: 03/29/2022
+ms.date: 08/18/2026
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
   - "vb"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # How to use Utf8JsonWriter in System.Text.Json
@@ -19,6 +20,26 @@ The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter
 
 :::code language="csharp" source="snippets/how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
 :::code language="vb" source="snippets/how-to/vb/Utf8WriterToStream.vb" id="Serialize":::
+
+## Reuse a writer
+
+Starting in .NET 11, call <xref:System.Text.Json.Utf8JsonWriter.Reset(System.IO.Stream,System.Text.Json.JsonWriterOptions)> or <xref:System.Text.Json.Utf8JsonWriter.Reset(System.Buffers.IBufferWriter{System.Byte},System.Text.Json.JsonWriterOptions)> to reuse a writer. These overloads change the destination and options without allocating another `Utf8JsonWriter`.
+
+Before you reset the writer, finish the current JSON payload and call <xref:System.Text.Json.Utf8JsonWriter.Flush*>. `Reset` clears the writer state and doesn't flush pending output:
+
+```csharp
+writer.WriteEndObject();
+writer.Flush();
+
+writer.Reset(nextStream, new JsonWriterOptions { Indented = true });
+```
+
+```vb
+writer.WriteEndObject()
+writer.Flush()
+
+writer.Reset(nextStream, New JsonWriterOptions With {.Indented = True})
+```
 
 ## Write with UTF-8 text
 

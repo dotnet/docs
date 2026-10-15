@@ -155,6 +155,7 @@ A contextual keyword provides a specific meaning in the code, but it isn't a res
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  
+        [`safe`](safe.md)  
     :::column-end:::
     :::column:::
         [`scoped`](../statements/declarations.md#scoped-ref)  
@@ -162,6 +163,7 @@ A contextual keyword provides a specific meaning in the code, but it isn't a res
         [`set`](set.md)  
         [`unmanaged` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`unmanaged` (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)  
+        [`union`](../builtin-types/union.md)  
         [`value`](value.md)  
         [`var`](../statements/declarations.md#implicitly-typed-local-variables)  
         [`when` (filter condition)](when.md)  

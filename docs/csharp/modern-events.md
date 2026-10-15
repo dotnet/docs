@@ -10,19 +10,19 @@ ms.subservice: fundamentals
 
 The previous article discussed the most common event patterns. .NET Core has a more relaxed pattern. In this version, the `EventHandler<TEventArgs>` definition no longer has the constraint that `TEventArgs` must be a class derived from `System.EventArgs`.
 
-This increases flexibility for you, and is backwards compatible. Let's start with the flexibility. The implementation for <xref:System.EventArgs?displayProperty=nameWithType> uses a method defined in <xref:System.Object?displayProperty=nameWithType> one method: <xref:System.Object.MemberwiseClone>, which creates a shallow copy of the object. That method must use reflection in order to implement its functionality for any class derived from `EventArgs`. That functionality is easier to create in a specific derived class. That effectively means that deriving from System.EventArgs is a constraint that limits your designs, but doesn't provide any extra benefit. In fact, you can change the definitions of `FileFoundArgs` and `SearchDirectoryArgs` so that they don't derive from `EventArgs`. The program works exactly the same.
+This increases flexibility for you and is backward compatible. Let's start with the flexibility. The implementation of <xref:System.EventArgs?displayProperty=nameWithType> uses a method defined in <xref:System.Object?displayProperty=nameWithType>: <xref:System.Object.MemberwiseClone>, which creates a shallow copy of the object. That method must use reflection in order to implement its functionality for any class derived from `EventArgs`. That functionality is easier to create in a specific derived class. That effectively means that deriving from System.EventArgs is a constraint that limits your designs, but doesn't provide any extra benefit. In fact, you can change the definitions of `FileFoundArgs` and `SearchDirectoryArgs` so that they don't derive from `EventArgs`. The program works exactly the same.
 
-You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
+You could also change the `SearchDirectoryArgs` to a struct:
 
 :::code language="csharp" source="./snippets/events/FinalUpdates.cs" id="StructEventArgs":::
 
-The extra change is to call the parameterless constructor before entering the constructor that initializes all the fields. Without that addition, the rules of C# would report that the properties are being accessed before being assigned.
+In C# 11 and later, the compiler initializes any fields that a struct constructor doesn't assign, so the constructor doesn't need to call the parameterless constructor.
 
 You shouldn't change the `FileFoundArgs` from a class (reference type) to a struct (value type). The protocol for handling cancel requires that you pass event arguments by reference. If you made the same change, the file search class could never observe any changes made by any of the event subscribers. A new copy of the structure would be used for each subscriber, and that copy would be a different copy than the one seen by the file search object.
 
 Next, let's consider how this change can be backwards compatible. The removal of the constraint doesn't affect any existing code. Any existing event argument types do still derive from `System.EventArgs`. Backwards compatibility is one major reason why they continue to derive from `System.EventArgs`. Any existing event subscribers are subscribers to an event that followed the classic pattern.
 
-Following similar logic, any event argument type created now wouldn't have any subscribers in any existing codebases. New event types that don't derive from `System.EventArgs` doesn't break those codebases.
+Following similar logic, any event argument type created now wouldn't have any subscribers in any existing codebases. New event types that don't derive from `System.EventArgs` don't break those codebases.
 
 ## Events with Async subscribers
 

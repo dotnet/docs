@@ -22,6 +22,7 @@ f1_keywords:
   - "CS0736"
   - "CS0737"
   - "CS0738"
+  - "CS8646"
   - "CS8705"
   - "CS8854"
   - "CS9333"
@@ -47,11 +48,12 @@ helpviewer_keywords:
   - "CS0736"
   - "CS0737"
   - "CS0738"
+  - "CS8646"
   - "CS8705"
   - "CS8854"
   - "CS9333"
   - "CS9334"
-ms.date: 11/12/2025
+ms.date: 07/16/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to members that implement an interface
@@ -81,6 +83,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0736**](#method-visibility-and-modifiers): *Member does not implement instance interface member. It cannot implement the interface member because it is static.*
 - [**CS0737**](#method-visibility-and-modifiers): *Member does not implement interface member. It cannot implement an interface member because it is not public.*
 - [**CS0738**](#return-types-and-signatures): *Member does not implement interface member. It cannot because it does not have the matching return type.*
+- [**CS8646**](#ambiguous-and-conflicting-implementations): *'member' is explicitly implemented more than once.*
 - [**CS8705**](#ambiguous-and-conflicting-implementations): *Interface member does not have a most specific implementation. Neither member is most specific.*
 - [**CS8854**](#return-types-and-signatures): *Member does not implement interface member.*
 - [**CS9333**](#return-types-and-signatures): *Parameter type must match implemented member.*
@@ -205,11 +208,13 @@ For more information, see [Interfaces](../../fundamentals/types/interfaces.md), 
 The following errors occur when the compiler can't determine which interface implementation to use:
 
 - **CS0473**: *Explicit interface implementation 'method name' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.*
+- **CS8646**: *'member' is explicitly implemented more than once.*
 - **CS8705**: *Interface member 'member' does not have a most specific implementation. Neither is most specific.*
 
 You can correct these errors using the following techniques:
 
 - Eliminate the explicit interface implementation and instead use a single implicit public implementation for both interface methods (**CS0473**). When a generic method acquires the same signature as a non-generic method (such as when implementing `ITest<int>` where both `TestMethod(int)` and `TestMethod(T)` become identical), the common language infrastructure metadata system can't unambiguously determine which interface member binds to which implementation slot, so using implicit implementation allows the single method to satisfy both interface requirements.
+- Remove the duplicate explicit interface implementation for the same interface member (**CS8646**). A type can explicitly implement an interface member only once, so keep the implementation that should satisfy the interface contract and delete the duplicate declaration.
 - Provide an explicit implementation in the implementing class or struct that resolves the ambiguity between multiple default implementations (**CS8705**). This error typically occurs with diamond inheritance patterns where a class implements multiple interfaces that each provide default implementations for the same member. The compiler needs you to explicitly specify which implementation to use, or provide your own implementation.
 - Restructure the interface hierarchy to avoid diamond inheritance conflicts where multiple interfaces provide default implementations for the same member (**CS8705**). By redesigning the interface relationships or consolidating the default implementations into a single interface, you can eliminate the ambiguity that prevents the compiler from determining the most specific implementation.
 

@@ -2,7 +2,6 @@
 title: App startup
 description: Learn how to define the startup logic for your app.
 author: csharpfritz
-ms.author: jefritz
 ms.date: 04/11/2022
 ---
 # App startup

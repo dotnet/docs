@@ -22,7 +22,7 @@ Managed and unmanaged code can work together to handle exceptions. If a method t
 
  When an error is passed from COM to managed code, the runtime populates the exception object with error information. COM objects that support IErrorInfo and return HRESULTS provide this information to managed code exceptions. For example, the runtime maps the Description from the COM error to the exception's <xref:System.Exception.Message> property. If the HRESULT provides no additional error information, the runtime fills many of the exception's properties with default values.
 
- If a method fails in unmanaged code, an exception can be passed to a managed code segment. The topic [HRESULTS and Exceptions](../../framework/interop/how-to-map-hresults-and-exceptions.md) contains a table showing how HRESULTS map to runtime exception objects.
+ If a method fails in unmanaged code, an exception can be passed to a managed code segment. The topic [HRESULTS and Exceptions](../../standard/native-interop/how-to-map-hresults-and-exceptions.md) contains a table showing how HRESULTS map to runtime exception objects.
 
 ## See also
 

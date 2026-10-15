@@ -60,7 +60,7 @@ When you don't need every element, use a *discard* (`_`) in place of each value 
 
 :::code language="csharp" source="snippets/tuples/Program.cs" ID="Discards":::
 
-For more about using discards across different contexts, see [Discards](../functional/discards.md).
+For more about using discards across different contexts, see [Discards](../patterns/discards.md).
 
 ## Tuple equality
 
@@ -97,6 +97,6 @@ Tuples are the preferred choice when you need a lightweight unnamed data structu
 ## See also
 
 - [Tuple types (C# reference)](../../language-reference/builtin-types/value-tuples.md) for complete syntax details
-- [Deconstructing tuples and other types](../functional/deconstruct.md) for user-defined `Deconstruct` methods
-- [Discards](../functional/discards.md)
+- [Deconstructing tuples and other types](../patterns/deconstruct.md) for user-defined `Deconstruct` methods
+- [Discards](../patterns/discards.md)
 - [Records](records.md)

@@ -3,7 +3,8 @@ title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest, including initialization and cleanup at assembly, class, and test levels.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 07/15/2025
+ms.date: 10/01/2026
+ai-usage: ai-assisted
 ---
 
 # MSTest lifecycle
@@ -73,6 +74,40 @@ public class AssemblyLifecycleExample
 > - [MSTEST0012](mstest-analyzers/mstest0012.md) - validates `AssemblyInitialize` signature.
 > - [MSTEST0013](mstest-analyzers/mstest0013.md) - validates `AssemblyCleanup` signature.
 
+### Shared assembly fixtures with `AssemblyFixtureProvider`
+
+> [!NOTE]
+> The `AssemblyFixtureProviderAttribute` was introduced in MSTest 4.3.0.
+
+By default, `[AssemblyInitialize]` and `[AssemblyCleanup]` methods must be declared in the test assembly that uses them. The `AssemblyFixtureProviderAttribute` lets you declare those methods once in a shared library and have them discovered and run once per consuming test assembly. Apply the assembly-level attribute and point it at the type that hosts the `[AssemblyInitialize]`/`[AssemblyCleanup]` methods.
+
+```csharp
+// In a shared library.
+public static class SharedAssemblyFixtures
+{
+    [AssemblyInitialize]
+    public static void Init(TestContext context)
+    {
+        // Runs once per consuming test assembly.
+    }
+
+    [AssemblyCleanup]
+    public static void Cleanup()
+    {
+    }
+}
+```
+
+```csharp
+// In each test assembly that should run the shared fixtures.
+[assembly: AssemblyFixtureProvider(typeof(SharedAssemblyFixtures))]
+```
+
+The attribute allows multiple providers per assembly, so you can compose fixtures from several shared types.
+
+> [!WARNING]
+> Starting with MSTest 4.4, MSTest skips `AssemblyFixtureProviderAttribute` discovery when dynamic code isn't supported, including Native AOT runs. Use fixture methods declared directly in the test assembly for Native AOT. The [MSTEST0072](mstest-analyzers/mstest0072.md) analyzer reports configurations that it can detect at build time.
+
 ## Class-level lifecycle
 
 Class lifecycle methods run once per test class, before and after all test methods in that class. Use these for setup shared across tests in a class.
@@ -118,6 +153,9 @@ public class ClassLifecycleExample
 - `ClassInitialize` requires one `TestContext` parameter
 - `ClassCleanup` accepts zero parameters, or one `TestContext` parameter (MSTest 3.8+)
 - Only one of each attribute allowed per class
+
+> [!NOTE]
+> Starting with MSTest 4.2, MSTest reports failures in `ClassCleanup` and `AssemblyCleanup` as a separate test result. The separate result makes cleanup failures easier to identify in Test Explorer and TRX reports.
 
 ### Inheritance behavior
 
@@ -195,7 +233,7 @@ public class GlobalTestLifecycleExample
 - Multiple methods with these attributes are allowed across the assembly
 
 > [!NOTE]
-> When multiple `GlobalTestInitialize` or `GlobalTestCleanup` methods exist, the execution order isn't guaranteed. The `TimeoutAttribute` isn't supported on `GlobalTestInitialize` methods.
+> When multiple `GlobalTestInitialize` or `GlobalTestCleanup` methods exist, the execution order isn't guaranteed. Starting with MSTest 4.4, global fixture methods support `[Timeout]` and the dedicated [global fixture timeout settings](unit-testing-mstest-configure.md#timeout-settings).
 
 > [!TIP]
 > Related analyzer: [MSTEST0050](mstest-analyzers/mstest0050.md) - validates global test fixture methods.
@@ -203,6 +241,36 @@ public class GlobalTestLifecycleExample
 ## Test-level lifecycle
 
 Test-level lifecycle runs for every test method. For parameterized tests, the lifecycle runs for each data row.
+
+### Create test classes from host services
+
+Starting with MSTest 4.5, the experimental [`MSTest.Extensions.Hosting`](https://github.com/microsoft/testfx/tree/main/src/Adapter/MSTest.Extensions.Hosting) package lets an application-owned `Microsoft.Extensions.Hosting` container create MSTest test classes.
+
+Register the integration in the same host that runs MTP:
+
+```csharp
+HostApplicationBuilder builder = Host.CreateApplicationBuilder();
+builder.Services.AddSingleton<MyApplicationService>();
+builder.Services.AddMSTestTestClassInjection();
+```
+
+A test class can request registered services and an optional exact `TestContext` parameter through a public constructor:
+
+```csharp
+[TestClass]
+public sealed class MyTests(MyApplicationService service, TestContext testContext)
+{
+    [TestMethod]
+    public void ServiceIsAvailable() => Assert.IsNotNull(service);
+}
+```
+
+The integration creates one dependency-injection scope for each test invocation, including each data row and retry attempt. `TestInitialize`, the test method, and `TestCleanup` share the same test-class instance and scope. After cleanup, MSTest disposes the test-class instance and then the scope. The application still owns the host and root service provider.
+
+This first reflection-based integration doesn't support Native AOT, browser WebAssembly, AOT compilation, or MSTest source generation. The `AddMSTestTestClassInjection` API uses the `MSTESTEXP` diagnostic ID and might change in a future release. For host setup, see [Microsoft.Extensions integration](microsoft-testing-platform-extensions-integration.md#host-integration).
+
+> [!TIP]
+> Related analyzers: [MSTEST0063](mstest-analyzers/mstest0063.md#host-owned-test-class-injection) validates constructors for host-owned injection, and [MSTEST0088](mstest-analyzers/mstest0088.md) reports unsupported build modes.
 
 ### Setup phase
 

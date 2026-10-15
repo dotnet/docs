@@ -3,7 +3,8 @@ title: TLS/SSL best practices
 description: Learn the best practices when using SslStream in .NET.
 author: rzikm
 ms.author: radekzikmund
-ms.date: 03/13/2023
+ms.date: 08/26/2026
+ai-usage: ai-assisted
 ---
 
 # TLS/SSL best practices
@@ -25,19 +26,52 @@ Deferring the decision to the OS automatically uses the most recent version of T
 > [!NOTE]
 > <xref:System.Net.Security.CipherSuitesPolicy> is not supported on Windows and attempts to instantiate it will cause <xref:System.NotSupportedException> to be thrown.
 
-## Specify a server certificate
+## Specify a local certificate
 
-When authenticating as a server, <xref:System.Net.Security.SslStream> requires an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> instance. It is recommended to always use an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> instance which also contains the private key.
+When authenticating as a server, <xref:System.Net.Security.SslStream> always requires a certificate. When authenticating as a client, you also provide a certificate if the server requests one for mutual TLS (mTLS). In both roles, the certificate must be an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> instance that contains the private key.
 
-There are multiple ways that a server certificate can be passed to <xref:System.Net.Security.SslStream>:
+Recent .NET versions handle the server and client sides symmetrically, so the following guidance applies whether the application authenticates as a server, a client, or both.
 
-- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync*?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
-- From a selection callback in <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback?displayProperty=nameWithType> property
-- By passing a <xref:System.Net.Security.SslStreamCertificateContext> in the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property
+You can provide the certificate to <xref:System.Net.Security.SslStream> in several ways.
 
-The recommended approach is to use the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property. When the certificate is obtained by one of the other two ways, a <xref:System.Net.Security.SslStreamCertificateContext> instance is created internally by the <xref:System.Net.Security.SslStream> implementation. Creating a <xref:System.Net.Security.SslStreamCertificateContext> involves building an <xref:System.Security.Cryptography.X509Certificates.X509Chain> which is a CPU intensive operation. It is more efficient to create a <xref:System.Net.Security.SslStreamCertificateContext> once and reuse it for multiple <xref:System.Net.Security.SslStream> instances.
+When you authenticate as a server:
 
-Reusing <xref:System.Net.Security.SslStreamCertificateContext> instances also enables additional features such us [TLS session resumption](https://datatracker.ietf.org/doc/html/rfc5077) on Linux servers.
+- Set the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property, or pass the certificate to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync*?displayProperty=nameWithType>.
+- Return the certificate from the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback?displayProperty=nameWithType> callback.
+- Set a <xref:System.Net.Security.SslStreamCertificateContext> on the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property.
+
+When you authenticate as a client:
+
+- Add the certificate to the <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificates?displayProperty=nameWithType> collection, or pass a collection that contains it to <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync*?displayProperty=nameWithType>.
+- Return the certificate from the <xref:System.Net.Security.SslClientAuthenticationOptions.LocalCertificateSelectionCallback?displayProperty=nameWithType> callback.
+- Set a <xref:System.Net.Security.SslStreamCertificateContext> on the <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext?displayProperty=nameWithType> property.
+
+> [!NOTE]
+> The <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext> property is available starting in .NET 8.
+
+For better performance, use the certificate context property (<xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext> or <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext>). When you provide the certificate in one of the other ways, <xref:System.Net.Security.SslStream> creates a <xref:System.Net.Security.SslStreamCertificateContext> internally. Creating the context builds an <xref:System.Security.Cryptography.X509Certificates.X509Chain>, which is a CPU-intensive operation, so it's more efficient to create the context once and reuse it across multiple <xref:System.Net.Security.SslStream> instances.
+
+Reusing a <xref:System.Net.Security.SslStreamCertificateContext> instance also enables extra features such as [TLS session resumption](https://datatracker.ietf.org/doc/html/rfc5077) on Linux servers.
+
+### Send intermediate certificates to the peer
+
+When an intermediate certificate authority issues the local certificate, the peer might not be able to build the full certificate chain unless the handshake includes the intermediate certificates. To send these intermediates, create a <xref:System.Net.Security.SslStreamCertificateContext> with the <xref:System.Net.Security.SslStreamCertificateContext.Create*> method and pass the intermediate certificates in the `additionalCertificates` parameter:
+
+```csharp
+X509Certificate2 leafCertificate = GetLeafCertificate();
+X509Certificate2Collection intermediates = GetIntermediateCertificates();
+
+SslStreamCertificateContext certificateContext =
+    SslStreamCertificateContext.Create(leafCertificate, intermediates);
+
+// When you authenticate as a server.
+serverOptions.ServerCertificateContext = certificateContext;
+
+// When you authenticate as a client for mutual TLS.
+clientOptions.ClientCertificateContext = certificateContext;
+```
+
+The context works the same way for both roles. On the client side, the certificate context is the recommended way to send intermediates, because the alternative—adding the intermediates to the machine or user certificate store—affects every application on the system.
 
 ## Custom `X509Certificate` validation
 

@@ -79,7 +79,7 @@ For more information, see the [Unary plus operator](~/_csharpstandard/standard/e
 ## See also
 
 - [C# operators and expressions](index.md)
-- [How to concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
+- [How to concatenate multiple strings](../../fundamentals/strings/common-tasks/concatenate.md)
 - [Events](../../programming-guide/events/index.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [- and -= operators](subtraction-operator.md)

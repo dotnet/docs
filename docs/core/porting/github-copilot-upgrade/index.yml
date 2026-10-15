@@ -1,0 +1,70 @@
+### YamlMime:Landing
+
+title: Use GitHub Copilot upgrade to modernize projects
+summary: Upgrade and modernize .NET, JavaScript, and TypeScript projects with GitHub Copilot.
+
+metadata:
+  title: Use GitHub Copilot upgrade to modernize projects
+  description: Upgrade and modernize .NET, JavaScript, and TypeScript projects with GitHub Copilot.
+  ms.topic: landing-page
+  ms.date: 09/21/2026
+
+landingContent:
+
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: GitHub Copilot upgrade overview
+            url: overview.md
+      - linkListType: get-started
+        links:
+          - text: Install
+            url: install.md
+      - linkListType: concept
+        links:
+          - text: Core concepts
+            url: concepts.md
+          - text: Working with the agent
+            url: working-with-agent.md
+
+  - title: Choose a technology
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Upgrade .NET projects
+            url: dotnet-overview.md
+          - text: Upgrade JavaScript and TypeScript projects
+            url: javascript-typescript-overview.md
+
+  - title: Manage complex upgrades
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Dashboard
+            url: dashboard.md
+          - text: Customization
+            url: customization.md
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshooting
+            url: troubleshooting.md
+      - linkListType: learn
+        links:
+          - text: Best practices
+            url: best-practices.md
+          - text: FAQ
+            url: faq.yml
+
+  - title: Get help and community
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: File an issue for GitHub Copilot upgrade
+            url: https://github.com/microsoft/upgrade-agent-plugins
+          - text: Report a problem with GitHub Copilot upgrade in Visual Studio
+            url: /visualstudio/ide/report-a-problem
+      - linkListType: learn
+        links:
+          - text: GitHub Copilot documentation
+            url: https://docs.github.com/copilot

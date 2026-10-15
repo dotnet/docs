@@ -110,7 +110,7 @@ Statements often contain expressions, and expressions can nest inside other expr
 var maxResult = Math.Max(a, b) + Math.Max(c, d);
 ```
 
-For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+For detailed information about statements, see [Statements](../statements/index.md). For information about expression-bodied members, see [Expression body definitions](../../language-reference/operators/lambda-operator.md#expression-body-definition).
 
 ## Related content
 

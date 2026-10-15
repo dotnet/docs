@@ -109,7 +109,7 @@ static IEnumerable<(TransactionType type, double amount)> TransactionRecords(str
                 yield return (TransactionType.Withdrawal, amount);
         }
         else {
-        yield return (TransactionType.Invalid, 0.0);
+            yield return (TransactionType.Invalid, 0.0);
         }
     }
 }

@@ -27,6 +27,7 @@ Design rules help you create and maintain test suites that adhere to proper desi
 | [MSTEST0036](mstest0036.md) | Do not use shadowing. | Warning | No |
 | [MSTEST0044](mstest0044.md) | Prefer TestMethod over DataTestMethod. | Info | Yes |
 | [MSTEST0045](mstest0045.md) | Use cooperative cancellation for timeout. | Info | Yes |
+| [MSTEST0066](mstest0066.md) | `[Ignore]` should specify a justification. | Info | No |
 
 ## Common scenarios
 
@@ -63,6 +64,7 @@ Similarly, choose between Dispose and TestCleanup:
 - **[MSTEST0036](mstest0036.md)**: Avoid shadowing base class members.
 - **[MSTEST0044](mstest0044.md)**: Use TestMethod unless data-driven testing is needed.
 - **[MSTEST0045](mstest0045.md)**: Enable cancellation tokens for timeout handling.
+- **[MSTEST0066](mstest0066.md)**: Provide a justification message on `[Ignore]`.
 
 ## Related documentation
 

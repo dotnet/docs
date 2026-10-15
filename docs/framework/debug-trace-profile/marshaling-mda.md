@@ -53,4 +53,4 @@ The MDA configuration allows you to filter the reported marshalling information 
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshalling](../interop/interop-marshalling.md)
+- [Interop Marshalling](../../standard/native-interop/interop-marshalling.md)

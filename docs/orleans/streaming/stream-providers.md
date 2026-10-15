@@ -34,9 +34,9 @@ Different stream providers delivering events over durable queues exhibit similar
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-## .NET Aspire integration for streaming
+## Aspire integration for streaming
 
-[.NET Aspire](../host/aspire-integration.md) simplifies Orleans streaming configuration by managing resource provisioning and connection automatically.
+[Aspire](../host/aspire-integration.md) simplifies Orleans streaming configuration by managing resource provisioning and connection automatically.
 
 ### Azure Queue Storage streaming with Aspire
 
@@ -140,7 +140,7 @@ builder.UseOrleans();
 builder.Build().Run();
 ```
 
-For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../host/aspire-integration.md).
+For comprehensive documentation on Orleans and Aspire integration, see [Orleans and Aspire integration](../host/aspire-integration.md).
 
 :::zone-end
 

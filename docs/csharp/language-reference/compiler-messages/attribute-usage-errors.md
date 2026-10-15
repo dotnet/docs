@@ -38,15 +38,19 @@ f1_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8335"
+  - "CS8336"
+  - "CS8423"
+  - "CS8783"
   - "CS8959"
   - "CS8960"
   - "CS8961"
   - "CS8962"
   - "CS8963"
   - "CS8968"
-  - "CS8783"
   - "CS8970"
   - "CS9331"
+  - "CS9351"
 helpviewer_keywords:
   - "CS0181"
   - "CS0243"
@@ -84,16 +88,20 @@ helpviewer_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS8335"
+  - "CS8336"
+  - "CS8423"
+  - "CS8783"
   - "CS8959"
   - "CS8960"
   - "CS8961"
   - "CS8962"
   - "CS8963"
   - "CS8968"
-  - "CS8783"
   - "CS8970"
   - "CS9331"
-ms.date: 05/19/2026
+  - "CS9351"
+ms.date: 09/23/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -101,7 +109,7 @@ ai-usage: ai-assisted
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0181**](#attribute-arguments-and-parameters): *Attribute constructor parameter has a type, which is not a valid attribute parameter type*
 - [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method.*
@@ -139,15 +147,19 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use 'attribute name'. This is reserved for compiler usage.*
+- [**CS8336**](#compiler-reserved-attributes-and-types): *The type name 'type' is reserved to be used by the compiler.*
+- [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
+- [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
 - [**CS8960**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
 - [**CS8961**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
 - [**CS8962**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
 - [**CS8963**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
 - [**CS8968**](#attribute-arguments-and-parameters): *An attribute type argument cannot use type parameters*
-- [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8970**](#attribute-arguments-and-parameters): *Type cannot be used in this context because it cannot be represented in metadata.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
+- [**CS9351**](#predefined-attributes): *Use of 'StructLayoutAttribute' and 'ExtendedLayoutAttribute' on the same type is not allowed.*
 
 ## Attribute arguments and parameters
 
@@ -210,6 +222,7 @@ The following errors occur when you apply attributes in invalid locations or use
 - **CS0658**: *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - **CS1667**: *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
 - **CS7014**: *Attributes are not valid in this context.*
+- **CS8423**: *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 
 To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets) and the [C# language specification section on attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification).
 
@@ -218,6 +231,7 @@ To correct these errors, follow these rules. For more information, see [Attribut
 - The attribute target specifier you used isn't a recognized specifier (**CS0658**). Valid specifiers include `assembly:`, `module:`, `type:`, `method:`, `property:`, `field:`, `event:`, `param:`, and `return:`.
 - Some attributes, such as <xref:System.ObsoleteAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on property or event accessors (**CS1667**). Move the attribute from the accessor to the property or event declaration itself.
 - Attributes can only appear on program elements that support them (**CS7014**). If you're applying assembly-level or module-level attributes, use the `assembly:` or `module:` target specifiers and place them at the top of the file.
+- Attributes on event `add` and `remove` accessors aren't allowed (**CS8423**). Apply the attribute to the event declaration, or use a valid target such as `method:` or `param:` on a declaration that supports that target.
 
 ## Predefined attributes
 
@@ -234,8 +248,9 @@ The following errors occur when you use specific predefined .NET attributes inco
 - **CS0739**: *Duplicate TypeForwardedToAttribute*
 - **CS1608**: *The RequiredAttribute attribute is not permitted on C# types*
 - **CS9331**: *Attribute cannot be applied manually.*
+- **CS9351**: *Use of 'StructLayoutAttribute' and 'ExtendedLayoutAttribute' on the same type is not allowed.*
 
-To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
+To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, [Unsafe code and pointers](../unsafe-code.md#the-updated-memory-safety-model-preview), and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
 
 - You can apply <xref:System.Runtime.CompilerServices.IndexerNameAttribute> only to indexers that aren't explicit interface member declarations (**CS0415**). Remove the attribute from explicit interface indexers, because the interface already defines the indexer name.
 - You can't apply `IndexerName` to indexers marked with `override` because override indexers inherit their name from the base class (**CS0609**). Remove the `IndexerName` attribute from the override indexer.
@@ -248,6 +263,16 @@ To correct these errors, follow these rules. For more information, see [Indexers
 - An assembly can have only one <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for each external type (**CS0739**). Locate and remove the duplicate `TypeForwardedTo` declaration.
 - You can't use the <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
 - Some attributes are reserved for the compiler and can't be applied manually in source code (**CS9331**). Replace the attribute with the equivalent C# language syntax that causes the compiler to generate it.
+- Don't apply both <xref:System.Runtime.InteropServices.StructLayoutAttribute> and `ExtendedLayoutAttribute` to the same type (**CS9351**). These two layout attributes represent mutually exclusive layout strategies under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview): explicit layout requires a `FieldOffset` on every instance field, while extended layout lets the runtime choose field offsets while still requiring each field to be marked `safe` or `unsafe`. Remove one of the two attributes from the type declaration.
+
+## Compiler-reserved attributes and types
+
+The following errors occur when source code explicitly declares or applies names or attributes reserved for compiler-generated metadata:
+
+- **CS8335**: *Do not use 'attribute name'. This is reserved for compiler usage.*
+- **CS8336**: *The type name 'type' is reserved to be used by the compiler.*
+
+Remove the explicit declaration or attribute application. Use the corresponding C# language feature instead, and let the compiler generate the required metadata.
 
 ## Conditional attribute usage
 

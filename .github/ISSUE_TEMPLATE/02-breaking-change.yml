@@ -3,10 +3,8 @@ description: This template is for .NET product team members to report breaking c
 title: "[Breaking change]: "
 labels:
   - breaking-change
-  - Pri1
-  - doc-idea
 assignees:
- - gewarren
+ - BillWagner
 body:
   - type: textarea
     id: description
@@ -24,16 +22,14 @@ body:
         - .NET 8
         - .NET 9
         - .NET 10
-        - .NET 11 Preview 1
-        - .NET 11 Preview 2
-        - .NET 11 Preview 3
-        - .NET 11 Preview 4
-        - .NET 11 Preview 5
-        - .NET 11 Preview 6
         - .NET 11 Preview 7
         - .NET 11 RC 1
         - .NET 11 RC 2
         - .NET 11 GA
+        - .NET 12 Preview 1
+        - .NET 12 Preview 2
+        - .NET 12 Preview 3
+        - .NET 12 Preview 4
         - Other (please put exact version in description textbox)
     validations:
       required: true
@@ -89,6 +85,7 @@ body:
         - Cryptography
         - Debugger
         - Deployment
+        - dotnetup
         - Extensions
         - Globalization
         - Interop

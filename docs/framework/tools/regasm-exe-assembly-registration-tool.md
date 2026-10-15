@@ -79,5 +79,5 @@ regasm myTest.dll /tlb:myTest.tlb
 - [Tools](index.md)
 - [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)
 - [Tlbimp.exe (Type Library Importer)](tlbimp-exe-type-library-importer.md)
-- [Registering Assemblies with COM](../interop/registering-assemblies-with-com.md)
+- [Registering Assemblies with COM](../../standard/native-interop/registering-assemblies-with-com.md)
 - [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

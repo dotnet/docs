@@ -67,9 +67,11 @@ public static class Program
 
         // First content line begins at column 0 of the value:
         Console.WriteLine(xml);
-        // <order id="42">
-        //     <item>book</item>
-        // </order>
+        /* Output:
+           <order id="42">
+               <item>book</item>
+           </order>
+         */
         // </Indentation>
     }
 

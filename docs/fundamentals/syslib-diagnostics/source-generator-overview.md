@@ -142,7 +142,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1202][1202] | A member type has no fields or properties to validate. |
 | [SYSLIB1203][1203] | A type has no fields or properties to validate. |
 | [SYSLIB1204][1204] | A type annotated with `OptionsValidatorAttribute` doesn't implement the necessary interface. |
-| [SYSLIB1205][1205] | A type already includes an implementation of the 'Validate' method. |
+| [SYSLIB1205][1205] | A type already includes an implementation of the `Validate` method, including an explicit `IValidateOptions<TOptions>.Validate` implementation. |
 | [SYSLIB1206][1206] | Can't validate private fields or properties. |
 | [SYSLIB1207][1207] | Member type is not enumerable. |
 | [SYSLIB1208][1208] | Validators used for transitive or enumerable validation must have a constructor with no parameters. |
@@ -156,17 +156,17 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1216][1216] | C# language version not supported by the options validation source generator. |
 | [SYSLIB1217][1217] | The validation attribute is only applicable to properties of type string, array, or `ICollection`; it cannot be used with other types. |
 | [SYSLIB1218][1218] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
-| [SYSLIB1219][1219] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
+| [SYSLIB1219][1219] | A type already includes an implementation of the `ValidateAsync` method. |
 | [SYSLIB1220][1220] | JsonSourceGenerator encountered a [JsonConverterAttribute] with an invalid type argument. |
 | [SYSLIB1221][1221] | JsonSourceGenerator does not support this C# language version. |
 | [SYSLIB1222][1222] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
-| [SYSLIB1223][1223] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
+| [SYSLIB1223][1223] | Attributes deriving from JsonConverterAttribute are not supported by the source generator. |
 | [SYSLIB1224][1224] | Types annotated with JsonSerializableAttribute must be classes deriving from JsonSerializerContext. |
-| [SYSLIB1225][1225] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1226][1226] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1227][1227] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1228][1228] | (Reserved for System.Text.Json.SourceGeneration.) |
-| [SYSLIB1229][1229] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1225][1225] | Type includes a ref-like property, a field, or a constructor parameter. |
+| [SYSLIB1226][1226] | `JsonIgnoreCondition.Always` is not valid on type-level `JsonIgnoreAttribute` annotations. |
+| [SYSLIB1227][1227] | Union case types cannot be unambiguously classified by JSON value type. |
+| [SYSLIB1228][1228] | Union type shape is not a valid C# union. |
+| [SYSLIB1229][1229] | Open generic derived type could not be resolved for the polymorphic base type. |
 | [SYSLIB1230][1230] | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->

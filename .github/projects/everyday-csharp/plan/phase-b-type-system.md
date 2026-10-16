@@ -22,6 +22,8 @@
 3. Revise `fundamentals/types/records.md` — ensure record structs and `with` expressions covered
 4. Snippet files + toc.yml
 
+> **Later roadmap ownership:** the PR 4 inventory above is shipped history. [Classes / PR 25](phase-h-classes.md#record-classes-within-pr-25) now owns record-class depth in the retained `types/records.md`; [Structs / PR 39](phase-i-structs.md) owns the explicit record-class/record-struct comparison. Classes supplies the common baseline for struct/interface differences. Keep early Type system orientation and canonical links without scheduling another copy of these articles.
+
 ### PR 5 — Type system: tuples, interfaces, generics
 
 [#52891](https://github.com/dotnet/docs/pull/52891) *Merged*
@@ -52,4 +54,3 @@
 
 1. New `fundamentals/tutorials/choosing-types.md` — teach readers to decide between using tuples, defining records, defining structs or classes, and defining interfaces
 2. Snippet files + toc.yml
-

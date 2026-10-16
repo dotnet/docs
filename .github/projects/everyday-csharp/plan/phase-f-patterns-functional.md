@@ -13,7 +13,8 @@
 > `fundamentals/building-software/`, authored and accepted in open
 > [#56333](https://github.com/dotnet/docs/pull/56333), not merged. Complete syntax remains linked
 > reference material; separate Part 1 homes aren't a prerequisite for these practical guides.
-> The broader two-part/OOP boundary remains unresolved, and PR 23 remains future work.
+> The broader two-part/OOP boundary remains a planning proposal. PR 23 is the only Everyday C#
+> completion target for the remainder of October, subject to the dependency gate below.
 
 ### PR 19 — Pattern matching: overview + declaration/constant/var + type patterns
 
@@ -98,11 +99,29 @@ redirects, and repository-wide inbound-link updates.
 
 ### PR 23 — Combined-techniques tutorial (historical title: Functional techniques in C#)
 
-> **Deferred; not authored in #56333:** Building software's name and initial placement are settled.
-> Revisit this tutorial's title and placement under that purpose before implementation; it doesn't
-> restore a Functional techniques subgroup.
+**Issue:** [dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930). **October's only Everyday C# completion target.** This is not authored in #56333 and remains a tutorial, not a new reference or section overview.
 
-> ~4 files
+### Dependency gate: reconcile with PR #56333
 
-1. New `fundamentals/tutorials/functional-techniques.md` — breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area
-2. Snippet files + toc.yml
+PR [#56333](https://github.com/dotnet/docs/pull/56333) remains open. The approved direction is Building software with four direct guides: overview, lambdas, local functions, and iterators. Before authoring PR 23:
+
+1. Read its final review decisions and shipped diff; don't treat the earlier `fundamentals/functional/` proposal as canonical. If PR #56333 changes its scope, recompute the tutorial's gap rather than preserving the original checklist mechanically.
+2. Confirm the tutorial still adds a cohesive learning outcome beyond the overview's already-authored combined-techniques example. The tutorial should guide a reader through choices and incremental changes, not copy that example into another page.
+3. Confirm the reader-facing title and slug with Bill. Retain `fundamentals/tutorials/functional-techniques.md` as the historical proposed path until that review; a title about combining techniques or building a small algorithm may better express the approved purpose. Don't create both versions or restore a Functional techniques subgroup.
+4. Resolve depth links against **live** canonical articles. Intended links are `fundamentals/building-software/{index,lambdas,local-functions,iterators}.md`, the shipped pattern articles, and current LINQ guidance. When a prerequisite hasn't merged to the publishing base, wait for it or use a valid existing target; don't ship links to future paths. Drafting may proceed without declaring the dependency merged.
+
+### Scoped work
+
+1. Build one compact, runnable tutorial that combines a lambda, local helper, pattern expression, iterator, and LINQ only where each serves the small algorithm. Explain what each choice communicates about behavior, scope, inputs/capture, and execution timing. Don't invent a large domain to justify the feature list.
+2. Use an introduction to establish the task, stepwise code to teach the decisions, and a short summary of the resulting thought process. Refer to depth guides for syntax and restrictions rather than reteach them. Where comparing equivalent alternatives, show both results and explain the context in prose.
+3. Put tutorial snippets beside the approved tutorial destination and add its entry to the live tutorial navigation. Cross-link from Building software when the tutorial is live. Don't move the four practical guides or create empty future nodes.
+4. Keep advanced iterator mechanics, LINQ provider internals, broader OOP migrations, and BS01-BS12 out of this PR. Those tasks aren't prerequisites for October's tutorial.
+
+### Done when
+
+- Bill has reviewed the post-#56333 title, placement, scope, and sample choice.
+- The tutorial adds a guided end-to-end outcome, not a duplicate overview/reference.
+- Every taught concept links to a live canonical depth target; the retired subgroup is absent.
+- Samples build and run on the intended released compiler, with output and deferred execution verified.
+- The tutorial's navigation, snippet references, and any changed inbound links are build-clean.
+- Phase F's remaining work is reconciled explicitly: completing #55930 doesn't imply that an open prerequisite or an unrelated earlier task has merged.

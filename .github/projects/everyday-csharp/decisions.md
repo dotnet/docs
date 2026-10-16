@@ -268,3 +268,42 @@ overview.
 paragraphs. Lambdas, local functions, and iterators receive light framing/clarification edits only;
 snippets are unchanged in the latest commit. Preserve this contextual comparison style in future
 Everyday C# guidance.
+
+## Roadmap instruction: October 2026 planning expansion
+
+**Requested by:** Bill Wagner, 2026-10-16.
+
+Only [dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930) is targeted for completion
+in Everyday C# during the rest of October. Reconcile it against the final decisions for open
+PR #56333 before authoring its combined-techniques tutorial.
+
+Expand the plan after Phase G with explicit standard-aligned coverage of classes, structs,
+arrays/indexes/ranges, interfaces, enums, delegates, exceptions, attributes, and Documentation
+comments. Documentation comments are included despite being an annex; Unsafe code and the
+other appendixes are excluded from this Fundamentals expansion. Harvest Programming Guide
+material as useful instead of assuming all those subjects require new content.
+
+Sweep Programming Guide for Building software candidates and record concrete future tasks.
+The [expanded phase plans](plan/README.md#plan-index--prs-by-phase) and
+[82-source ledger](plan/programming-guide-inventory.md) implement this planning request locally.
+The proposed later taxonomy/article paths still need Bill's review. This instruction doesn't
+mark those proposals approved for publication or authorize content moves, new issues, commits,
+or pushes. Decisions 14-15 and PR #56333's initial structure remain intact.
+
+## Roadmap guidance: Class-first differences and records
+
+**Requested by:** Bill Wagner, 2026-10-16.
+
+Follow the standard's current teaching strategy: Classes establishes the shared rules, while
+Structs and Interfaces explain how they differ from classes. Link common rules rather than
+repeat the same member/declaration lessons in three sections.
+
+Expand Classes to cover record classes. Structs explicitly covers the differences between
+`record class` and `record struct`, including reference/value semantics, assignment and shallow
+`with` copies, equality, inheritance, and positional-property mutability. Neither form implies
+deep immutability.
+
+[PR 25](plan/phase-h-classes.md#record-classes-within-pr-25) and
+[PR 39](plan/phase-i-structs.md) coordinate sections of the existing `fundamentals/types/records.md`;
+don't create competing records articles or replace its canonical URL. The early Type system
+orientation remains useful. This guidance changes the plan, not October's scope or live articles.

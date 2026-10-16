@@ -8,8 +8,9 @@ The following outline shows every article in the proposed Fundamentals section, 
 > authored and accepted in open PR [#56333](https://github.com/dotnet/docs/pull/56333), not shipped.
 > [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure) supersedes
 > the retired Functional techniques grouping and pending label/initial-placement questions.
-> The broader two-part hypothesis and OOP split in Decision 13 remain unresolved. Unrelated rows
-> below retain their existing planning status; this isn't a full-project delivery audit.
+> The later OOP split below is a proposal for local review, now supported by explicit phases and
+> an 82-article source inventory. Only #55930 is targeted for completion this October. Unrelated
+> rows retain their previous planning status; this isn't a full-project delivery audit.
 
 ### Program structure (§7)
 
@@ -32,19 +33,17 @@ The following outline shows every article in the proposed Fundamentals section, 
 |---|---|---|---|
 | 6 | Overview | 🟡 Revise | Value vs. reference, unified type system, built-in types overview. Discuss use cases for tuples vs. records vs. structs vs. classes vs. interfaces. |
 | 7 | Built-in types and literals | 📝 New | Numeric (incl. unsigned, `nint`), `bool`, `char`, `string` intro, literal syntax (binary, digit separators, raw string literals), `default` expressions, `var`, target-typed `new` (C# 9), `dynamic` (C# 4) |
-| 8 | Classes | 📝 New | What a class is, static classes (C# 2), object initializers (C# 3), collection initializers (C# 3) |
-| 9 | Structs | 📝 New | Struct design, auto-default (C# 11), parameterless constructors (C# 10), readonly members (C# 8), record structs (C# 10) |
-| 10 | Records | 🟡 Revise | Ensure record structs and `with` expressions are fully covered |
-| 11 | Interfaces | 📝 New | Declaring and implementing; exclude default interface members and static abstract members |
-| 12 | Enumerations | 📝 New | Core enum usage and patterns |
 | 13 | Tuples and deconstruction | 🟡 Revise | Merge existing articles; inferred names (C# 7.1), comparison (C# 7.3), `with` on tuples |
-| 14 | Generics | 📝 New | Consuming generic types/methods, type inference, basic constraints (`class`, `struct`, `new()`, base type), brief mention of `Enum`/`Delegate`/`unmanaged` constraints, co-/contra-variance (C# 4), collection expressions (C# 12), dictionary expressions (C# 14), spread `..` |
+| 14 | Generics | 📝 New | Consuming generic types/methods, type inference, basic constraints, consuming variance, collection expressions and ordinary dictionary initializers; no preview dictionary-expression syntax |
 | 15 | Type conversions, casting, and boxing | 📥 Pull | From programming guide: casting, conversions, boxing/unboxing, `is`/`as` |
-| 16 | Delegates, lambdas, and events | ✅ Exists; link update in open #56333 | `fundamentals/types/delegates-lambdas.md` remains the Type system introduction to delegates/lambdas/events. PR #56333 adds a link to the new Building software lambda guide; it doesn't replace or newly author this introduction. Supersedes this row's original "New" status. |
 | 69 | Tutorial: Introduction to classes | ✅ Exists | |
 | 72 | Tutorial: Explore record types | 📥 Pull from Tutorials | |
 | 79 | Tutorial: Converting types | ✅ Exists | |
 | 91 | Tutorial: Choosing between tuples, records, structs, and classes | 📝 New | Teach readers to decide between using tuples, defining records, defining structs or classes, and defining interfaces |
+
+The existing class/struct/record/interface/enum/delegate introductions remain at their current canonical
+URLs, but their detailed roadmap rows now appear at the corresponding standard-aligned checkpoints
+below. The Type system overview links to those introductions rather than owning duplicate articles.
 
 ### Null safety
 
@@ -155,7 +154,23 @@ unchanged in that editorial pass.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 97 | Tutorial: Functional techniques in C# (historical working title) | 📝 Planned, not authored in #56333 | Preserve the breadth-tutorial backlog item for combined lambdas, local functions, patterns, iterators, and LINQ. Revisit its title/placement under the approved Building software purpose before implementation; it doesn't restore the retired grouping. |
+| 97 | Tutorial: Combined techniques (historical title: Functional techniques in C#) | 📝 October's only completion target: #55930 | Reconcile title, sample gap, placement, and live links with final #56333 decisions. See [PR 23's dependency gate](plan/phase-f-patterns-functional.md#dependency-gate-reconcile-with-pr-56333). No new grouping or duplicate overview. |
+| 39 / 87 | Object roles, encapsulation, and composition | 📝 Proposed merge, BS01 / PR 33 | Harvest the existing OOP overview and encapsulation inventory into proposed `building-software/object-design.md`, not two competing overviews. |
+| 106 | Construction and initialization choices | 📝 Proposed, BS02 | `building-software/object-initialization.md`; constructors, required inputs, initializers, defaults, and mutation. |
+| 107 | Member-shape choices | 📝 Proposed, BS03 | `building-software/member-design.md`; fields, properties, methods, and indexers as caller contracts. |
+| 46 | Callbacks and notifications | 📝 Proposed, BS04 | `building-software/callbacks-and-events.md`; replaces "lambdas in OOP", building on existing practical guides. |
+| 108 | Contracts and dependencies | 📝 Proposed, BS05 | `building-software/contracts-and-dependencies.md`; interface, base implementation, and collaborator choices. |
+| 109 | Collection and sequence contracts | 📝 Proposed, BS06 | `building-software/collection-contracts.md`; mutation, lookup, output shape, and timing without duplicating collections/iterators. |
+| 53 | Resource ownership and lifetime | 📝 Proposed, BS07 / PR 32 | `building-software/resource-lifetime.md`; everyday ownership/cleanup, not finalizer/dispose-pattern authoring. |
+| 110 | Failure contracts | 📝 Proposed, BS08 | `building-software/failure-contracts.md`; expected failed input versus exceptions. |
+| 111 | Values, identity, equality, and copying | 📝 Proposed, BS09 | `building-software/value-and-identity-design.md`; link existing equality and type introductions. |
+| 112 | Extensions versus wrappers | 📝 Proposed, BS10 | `building-software/extensions-or-wrappers.md`; ownership/state/API choices rather than repeated syntax. |
+| 113 | Parse input | 📝 Conditional task, BS11 | Proposed `building-software/common-tasks/parse-input.md` only if BS08/existing string tasks leave a distinct procedure to teach. |
+| 66 | Design-alternatives inventory | 📝 Redistribute, no separate article | The former Coding style commitment feeds BS01-BS11; the existing Building software overview owns the comparison frame. |
+
+These are **future backlog**, not additions to #56333's authored four-article scope. See
+[Phase R](plan/phase-r-building-software.md) for source paths, dependencies, and done criteria.
+BS12 tracks preservation/retirement and doesn't create a reader-facing article.
 
 ### Namespaces (§14)
 
@@ -163,40 +178,67 @@ unchanged in that editorial pass.
 |---|---|---|---|
 | 100 | Namespaces | 📝 New | **Canonical §14 article** (Decision 12b). Motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; `extern alias` mention; nested namespaces. The Program-structure "Namespaces and using directives" article (#4) is slimmed to a brief intro + link here. |
 
-### Object-oriented programming (split candidate)
+### Classes (§15)
 
-Type and member syntax belongs in the standard-aligned Part 1 inventory. The OOP overview,
-callbacks, interfaces-versus-abstract-classes guidance, encapsulation/composition, and tutorials are
-Part 2 or Tutorials candidates. Bill must approve the boundary before Phase G implementation.
+Proposed construct-first ownership in [Phase H](plan/phase-h-classes.md). Retain current canonical
+introductions, and approve deeper destinations before moving articles. Design extracts belong to
+Building software, not a competing OOP paradigm section.
+
+Classes supplies the shared baseline for the later Structs and Interfaces differences. Record-class
+coverage belongs here; Structs owns the explicit record-class/record-struct comparison. Both use
+the same retained records article instead of independent guides.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 39 | Overview | 🟡 Revise | The OOP model in C# |
+| 8 | Classes introduction | ✅ Exists; review | Retain `fundamentals/types/classes.md`; link deeper class/member coverage. |
+| 10 | Records | ✅ Exists; revise in PR 25/39 | Retain `fundamentals/types/records.md`; Classes owns record-class declarations, synthesized members, value equality, and shallow `with` copies; Structs owns the record-class/record-struct comparison. |
 | 40 | Objects | ✅ Exists | |
+| 114 | Class members | 📝 Proposed orientation, PR 25 | Proposed `fundamentals/classes/index.md`; short member map, not a second class/OOP overview. |
 | 41 | Access modifiers | 📥 Pull | From programming guide; all modifiers incl. `private protected` (C# 7.2) |
 | 42 | Fields and constants | 📥 Pull | From programming guide; attributes on backing fields (C# 7.3) |
 | 43 | Properties | 📥 Pull | Auto-properties (C# 3), initializers (C# 6), getter-only (C# 6), init-only (C# 9), required (C# 11), `field` keyword (C# 14), expression-bodied, separate accessibility (C# 2) |
 | 44 | Constructors | 📥 Pull | Instance, static, primary (C# 12) |
 | 45 | Methods | 📥 Pull | Named/optional args (C# 4), non-trailing named (C# 7.2), expression-bodied (C# 6+), `ref`/`out`, `params` → `params` collections (C# 13), out variables (C# 7) |
-| 46 | Lambdas in OOP | 📝 New | `Func<>`/`Action<>` as parameters/return types, callback patterns, event handlers as lambdas, method groups |
-| 47 | Inheritance and polymorphism | 🟡 Merge | Merge existing Inheritance + pull polymorphism; `virtual`/`override`/`new`, `sealed`, covariant returns (C# 9), `abstract`/`base` |
-| 48 | Interfaces in practice | 📝 New/Pull | Implementing interfaces, explicit implementation, interfaces vs. abstract classes |
-| 49 | Indexers | 📥 Pull | From programming guide; ranges and indexes (C# 8) |
+| 47 | Inheritance and polymorphism | 🟡 Merge | Reconcile existing Inheritance and Polymorphism articles; `virtual`/`override`/`new`, `sealed`, covariant returns (C# 9), `abstract`/`base`. |
 | 50 | Extensions | 📝 New | C# 14 syntax, extension properties; note legacy `this` syntax |
-| 51 | Events | 📥 Pull subset | Subscribe/unsubscribe, standard event pattern |
 | 52 | Partial types and members | 📝 New | Brief: partial classes/structs, partial methods (C# 9), partial properties (C# 13), partial events/constructors (C# 14); source generator context |
-| 53 | Object lifetime and `IDisposable` | 📝 New | `using` statement (C# 1), `using` declaration (C# 8), dispose pattern; exclude finalizers |
-| 87 | Encapsulation and composition | 📝 New | Encapsulation as information hiding; composition over inheritance; combining objects to build complex behavior; comparison with inheritance-based designs |
 | 70 | Tutorial: Object-oriented C# | ✅ Exists | |
 | 71 | Tutorial: Inheritance in C# and .NET | ✅ Exists | |
-| 75 | Tutorial: Explore indexes and ranges | 📥 Pull from Tutorials | |
 
-### Asynchronous programming basics
+### Structs (§16)
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 88 | Async programming overview | 📥 Pull | Move from `asynchronous-programming/index.md`; redirect old URL |
-| 54 | Consuming async methods | 📝 New | `async`/`await` (C# 5), task-based pattern, declaring async methods, async Main (C# 7.1), brief `await foreach` (C# 8), link to Async Focus |
+| 9 | Structs | ✅ Exists; revise in PR 39 | Retain `fundamentals/types/structs.md`; explain differences from classes: value/copy semantics, initialization, readonly members, inheritance restrictions. Compare `record class` / `record struct` assignment, shallow `with` copies, equality, and positional-property mutability in the canonical records article. |
+
+### Arrays, indexes, and ranges (§17-18)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 104 | Array semantics | 📝 Proposed gap review, PR 40 | Expand existing collections teaching first; proposed `fundamentals/collections/arrays.md` only if distinct depth is justified. |
+| 49 | Indexers | 📥 Pull, PR 30 | Proposed `fundamentals/collections/indexers.md`; property/indexer syntax distinct from API-shape choices in BS03. |
+| 105 | Indexes and ranges | 📝 Proposed, PR 30 | `fundamentals/collections/indexes-ranges.md`; exclusive end, supported receivers, and verified copy/view behavior. |
+| 75 | Tutorial: Explore indexes and ranges | 📥 Pull, PR 30 | Proposed `fundamentals/tutorials/ranges.md`; preserve the source tutorial URL by redirect. |
+
+### Interfaces (§19)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 11 | Interfaces introduction | ✅ Exists; review in PR 41 | Retain `fundamentals/types/interfaces.md`; explain contract, instance-state/construction, inheritance, and implementation differences from classes; link shared class rules rather than repeat them. |
+| 48 | Interface implementation | 📥 Proposed expansion, PR 41 | Expand the introduction or add `fundamentals/interfaces/implementation.md` if depth warrants it; explicit implementation, member conflicts, properties/indexers. Design choices in BS05. |
+
+### Enums (§20)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 12 | Enumerations | ✅ Exists; revise in PR 42 | Retain `fundamentals/types/enums.md`; named versus representable values, defaults, parsing versus validation, small flags subset. |
+
+### Delegates (§21)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 16 | Delegates, lambdas, and events introduction | ✅ Exists; review in PR 43 | Retain `fundamentals/types/delegates-lambdas.md`; `Func<>`/`Action<>`, named methods/lambdas, invocation. Practical capture guidance is already in #56333. |
+| 51 | Basic events | 📥 Pull subset, PR 44 | Proposed `fundamentals/delegates/events.md`; subscribe/raise/unsubscribe. Custom delegate/multicast/event mechanics stay deeper. |
 
 ### Exceptions and errors (§22)
 
@@ -216,13 +258,20 @@ Part 2 or Tutorials candidates. Bill must approve the boundary before Phase G im
 |---|---|---|---|
 | 60 | Using attributes | 📝 New | Common attributes, syntax, targets; defer custom attribute creation |
 
-### XML documentation comments
+### Documentation comments (Annex D)
 
 | # | Article | Status | Notes |
 |---|---|---|---|
 | 62 | XML documentation | 📝 New or Pull | `///` comments, common tags |
-| 89 | Documentation generation tools | 📝 New | Generating XML output with `dotnet build`; DocFX; Sandcastle; other current tools. Lives under `xml-comments/common-tasks/` per [Decision 11](decisions.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials). |
+| 89 | Generate documentation output | 📝 Proposed common task, PR 36 | XML output with `dotnet build`, then link maintained publishing-tool guidance rather than duplicating it. Proposed `xml-comments/common-tasks/`; see [Decision 11](decisions.md#decision-11-fundamentals-folder-layout--concepts-common-tasks-tutorials). |
 | 80 | Tutorial: Generate API documentation | ✅ Exists | |
+
+### Asynchronous programming basics (supporting work)
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 88 | Async programming overview | 📥 Pull, PR 34 | Move from `asynchronous-programming/index.md`; redirect old URL. |
+| 54 | Consuming async methods | 📝 Proposed, PR 34 | `async`/`await`, task-based pattern, async entry points, brief consuming `await foreach`; deeper async topics stay in the focus section. |
 
 ### Coding style (post-standard)
 
@@ -231,29 +280,30 @@ Part 2 or Tutorials candidates. Bill must approve the boundary before Phase G im
 | 63 | C# identifier names | ✅ Exists | |
 | 64 | C# coding conventions | ✅ Exists | |
 | 65 | C# documentation comments | ✅ Exists | |
-| 66 | Design alternatives | 📝 New | When to use patterns vs. branching statements; classes vs. structs; when to add `record` modifier; when to use tuples; interfaces vs. abstract base classes; `enum` vs. sealed hierarchy (discriminated union pattern); `string` interpolation vs. `StringBuilder` vs. `string.Concat`; delegates (`Func<>`/`Action<>`) vs. single-method interfaces; `IEnumerable<T>` vs. `IReadOnlyList<T>` vs. arrays as return types; extension methods vs. wrapper/decorator; `async Task` vs. sync methods; exceptions vs. result types (Try pattern); immutability patterns: `readonly struct` with fields vs. `init` properties vs. constructor-only properties |
 | 101 | Using .NET analyzers | 📝 New | Roslyn analyzers, .NET SDK analyzers, StyleCop, enabling/configuring via `.editorconfig` and `AnalysisLevel`; finding and fixing code issues |
 
-## Article Status Summary
+## Planning Status Summary
 
-| Status | Count | Description |
+| Work state | Scope | Meaning |
 |---|---|---|
-| ✅ Exists (including retained introduction) | 20 | Original estimate plus the existing Type system delegates/lambdas introduction; #56333 only adds its practical-guide link |
-| 🟡 Revise existing article | 8 | Original estimate less the Building software overview, now authored/accepted |
-| 📝 New article to write | ~41 | Original estimate less the authored lambda guide and the already-existing Type system introduction; the combined-techniques tutorial remains planned |
-| 📥 Pull and revise from other section | 20 | Original estimate less local functions and iterators, now consolidated in open #56333 |
-| ✍️ Authored/accepted in open PR, not shipped | 4 | Building software overview, Lambda expressions, Local functions, Iterators (#56333) |
-| **Total** | **~93** | Not including potential article splits |
+| Authored/accepted, open PR | 4 articles in #56333 | Building software overview, lambdas, local functions, iterators; not merged |
+| October completion target | 1 task, #55930 / PR 23 | Tutorial outcome/title/sample depend on final #56333 decisions |
+| Standard-aligned expansion | Phases H-P | Classes through Documentation comments; reuse current introductions and deeper reference |
+| Applied guidance and retirement | BS01-BS12 | Future backlog; BS12 isn't an article and BS11 may merge into existing coverage |
+| Programming Guide ledger | 82 current articles | Every source has a destination/action; no moves completed by this plan |
 
-Counts retain the original rough sizing, with the four #56333 articles reclassified
-(-1 revise, -1 new, -2 pull, +4 authored/accepted) and the retained Type system introduction
-corrected (-1 new, +1 exists). They aren't a current census of unrelated merged work.
-Consult the individual shipped rows for earlier PRs.
+The old ~93-article estimate is retired rather than presented as a current census. Some rows are
+retained introductions, some are proposed merges/extracts, and some are conditional new articles;
+adding them would double-count future outputs. Stable article IDs preserve traceability, not a
+guaranteed article total. Consult individual shipped rows for delivery evidence.
 
 ## Complete proposed Fundamentals TOC
 
-The following is the complete proposed TOC, not a copy of the live TOC. The Building software
-block matches PR #56333's four-entry structure; other sections retain future proposals.
+The following is a proposed TOC, not a copy of the live TOC or an approved reordering. Building
+software's first four children match #56333; later children are explicit future backlog. New
+Classes-through-Documentation-comments checkpoints follow standard order while retaining canonical
+introduction URLs. Conditional arrays/interface/parsing pages appear only if their task's gap
+review justifies separate articles. Never publish those nodes before real content lands.
 
 ```yml
 # This is the proposed structure for the Fundamentals section.
@@ -275,7 +325,7 @@ block matches PR #56333's four-entry structure; other sections retain future pro
     - name: Namespaces and using directives
       # SLIMMED (Decision 12b): brief intro + cross-reference to the canonical
       # §14 Namespaces article (fundamentals/namespaces/overview.md).
-      # Redirect + repo-wide inbound-link fix required (shipped article).
+      # Retain this introduction URL; redirect only a genuinely retired URL.
       href: fundamentals/program-structure/namespaces.md
     - name: Preprocessor directives
       # NEW: #if, #region, #nullable, #pragma warning only
@@ -306,23 +356,6 @@ block matches PR #56333's four-entry structure; other sections retain future pro
       # default expressions, implicitly typed variables (var),
       # target-typed new, dynamic binding
       href: fundamentals/types/built-in-types.md
-    - name: Classes
-      # NEW (brief): what a class is, static classes, object/collection initializers
-      href: fundamentals/types/classes.md
-    - name: Structs
-      # NEW: struct design, auto-default (C# 11), parameterless constructors (C# 10),
-      # readonly members (C# 8), record structs (C# 10)
-      href: fundamentals/types/structs.md
-    - name: Records
-      # EXISTS: ensure record structs and with expressions covered
-      href: fundamentals/types/records.md
-    - name: Interfaces
-      # NEW (brief): declaring and implementing; exclude default interface members,
-      # static abstract members
-      href: fundamentals/types/interfaces.md
-    - name: Enumerations
-      # NEW: core enum usage
-      href: fundamentals/types/enums.md
     - name: Tuples and deconstruction
       # REVISE: merge existing tuples + deconstruct articles; add inferred names (C# 7.1),
       # tuple comparison (C# 7.3), with on tuples
@@ -331,18 +364,11 @@ block matches PR #56333's four-entry structure; other sections retain future pro
       # NEW: consuming generic types/methods, type inference, basic constraints
       # (class, struct, new(), base type), brief mention of Enum/Delegate/unmanaged
       # constraints, covariance/contravariance on interfaces and delegates (C# 4),
-      # collection expressions (C# 12), dictionary expressions (C# 14), spread operator
+      # collection expressions (C# 12), dictionary initializers, spread elements
       href: fundamentals/types/generics.md
     - name: Type conversions, casting, and boxing
       # PULL from programming guide: casting, conversions, boxing/unboxing, is/as
       href: fundamentals/types/conversions.md
-    - name: Delegates, lambdas, and events
-      # EXISTS (introduction): what delegates are, Func<>/Action<>, lambda expression
-      # basics (C# 3), static lambdas (C# 9), discard parameters (C# 9),
-      # brief intro to events (subscribe/unsubscribe)
-      # RETAINED introduction; practical lambda guidance in Building software.
-      # OOP callback/event guidance remains future work.
-      href: fundamentals/types/delegates-lambdas.md
     - name: "Tutorial: Introduction to classes"
       href: fundamentals/tutorials/classes.md
     - name: "Tutorial: Explore record types"
@@ -508,7 +534,7 @@ block matches PR #56333's four-entry structure; other sections retain future pro
       href: fundamentals/expressions/equality.md
 
   # ─── Building software: authored/accepted in OPEN PR #56333, not shipped ───
-  # Four direct children match 4737e1c7fe. No Functional techniques subgroup.
+  # First four direct children match 4737e1c7fe. No Functional techniques subgroup.
   # In that PR this follows the combined Expressions and statements node.
   - name: Building software
     items:
@@ -524,10 +550,36 @@ block matches PR #56333's four-entry structure; other sections retain future pro
     - name: Iterators
       # Synchronous yield, foreach, deferred production vs completed collections.
       href: fundamentals/building-software/iterators.md
+    # PROPOSED backlog below, not authored in #56333 and not October commitments.
+    - name: Object roles and composition
+      href: fundamentals/building-software/object-design.md
+    - name: Construction and initialization choices
+      href: fundamentals/building-software/object-initialization.md
+    - name: Member-shape choices
+      href: fundamentals/building-software/member-design.md
+    - name: Callbacks and notifications
+      href: fundamentals/building-software/callbacks-and-events.md
+    - name: Contracts and dependencies
+      href: fundamentals/building-software/contracts-and-dependencies.md
+    - name: Collection and sequence contracts
+      href: fundamentals/building-software/collection-contracts.md
+    - name: Resource ownership and lifetime
+      href: fundamentals/building-software/resource-lifetime.md
+    - name: Failure contracts
+      href: fundamentals/building-software/failure-contracts.md
+    - name: Values, identity, equality, and copying
+      href: fundamentals/building-software/value-and-identity-design.md
+    - name: Extensions versus wrappers
+      href: fundamentals/building-software/extensions-or-wrappers.md
+    - name: Common tasks
+      items:
+      - name: Parse input
+        # CONDITIONAL: omit if BS08/existing string tasks own the whole procedure.
+        href: fundamentals/building-software/common-tasks/parse-input.md
 
-  # Future combined-techniques tutorial (#97) is NOT authored in #56333.
+  # October target #55930 / PR 23 is NOT authored in #56333.
   # Historical proposed slug: fundamentals/tutorials/functional-techniques.md.
-  # Title and placement need review; don't add it to the four-entry PR inventory.
+  # Title/placement/sample need reconciliation before a live TOC entry is added.
 
   # ─── §14 Namespaces ───
   - name: Namespaces
@@ -538,101 +590,81 @@ block matches PR #56333's four-entry structure; other sections retain future pro
       # The program-structure namespaces article is slimmed to a brief intro + link here.
       href: fundamentals/namespaces/overview.md
 
-  # ─── §15 type/member constructs + Part 2 OOP guidance candidates ───
-  # Split this inventory before implementation: construct syntax stays in Part 1;
-  # paradigm, design-choice, and scenario guidance moves to Part 2 or Tutorials.
-  - name: Object-oriented programming
+  # Proposed later taxonomy: review before moving the existing OOP node.
+  # Canonical type-introduction URLs stay unchanged.
+  # §15 Classes
+  - name: Classes
     items:
     - name: Overview
-      # REVISE: the OOP model in C#
-      href: fundamentals/object-oriented/index.md
+      href: fundamentals/types/classes.md
+    - name: Records
+      # Retain canonical URL. Classes owns record classes; Structs owns the
+      # record-class/record-struct comparison in this same article.
+      href: fundamentals/types/records.md
     - name: Objects
-      # EXISTS
       href: fundamentals/object-oriented/objects.md
+    - name: Class members
+      href: fundamentals/classes/index.md
     - name: Access modifiers
-      # PULL from programming guide: all modifiers incl private protected (C# 7.2)
-      href: fundamentals/object-oriented/access-modifiers.md
+      href: fundamentals/classes/access-modifiers.md
     - name: Fields and constants
-      # PULL from programming guide: fields, constants, readonly,
-      # attributes on backing fields (C# 7.3)
-      href: fundamentals/object-oriented/fields-constants.md
+      href: fundamentals/classes/fields-constants.md
     - name: Properties
-      # PULL from programming guide: auto-properties (C# 3),
-      # auto-property initializers (C# 6), getter-only defaults (C# 6),
-      # init-only setters (C# 9), required members (C# 11),
-      # field keyword (C# 14), expression-bodied accessors,
-      # separate getter/setter accessibility (C# 2)
-      href: fundamentals/object-oriented/properties.md
+      href: fundamentals/classes/properties.md
     - name: Constructors
-      # PULL from programming guide: instance, static, primary (C# 12)
-      href: fundamentals/object-oriented/constructors.md
+      href: fundamentals/classes/constructors.md
     - name: Methods
-      # PULL from programming guide + concepts: named/optional arguments (C# 4),
-      # non-trailing named args (C# 7.2), expression-bodied members (C# 6+),
-      # ref/out basics, params arrays → params collections (C# 13),
-      # out variables (C# 7)
-      href: fundamentals/object-oriented/methods.md
-    - name: Lambdas in OOP contexts
-      # NEW: using Func<>/Action<> as parameters and return types,
-      # callback patterns, event handlers as lambdas,
-      # method groups as delegates in OOP design
-      href: fundamentals/object-oriented/lambdas-in-oop.md
+      href: fundamentals/classes/methods.md
     - name: Inheritance and polymorphism
-      # MERGE existing Inheritance + pull polymorphism from programming guide:
-      # virtual/override/new, sealed, covariant return types (C# 9),
-      # abstract/base
-      href: fundamentals/object-oriented/inheritance.md
-    - name: Interfaces
-      # NEW/PULL: implementing interfaces, explicit implementation,
-      # interfaces vs abstract classes; exclude default interface members
-      # and static abstract members
-      href: fundamentals/object-oriented/interfaces.md
-    - name: Indexers
-      # PULL from programming guide: indexer syntax,
-      # ranges and indexes (C# 8)
-      href: fundamentals/object-oriented/indexers.md
+      href: fundamentals/classes/inheritance.md
     - name: Extensions
-      # NEW: C# 14 extension syntax, replaces this extension methods,
-      # extension properties; note on legacy this syntax
-      href: fundamentals/object-oriented/extensions.md
-    - name: Events
-      # PULL subset from concepts: subscribe/unsubscribe,
-      # standard event pattern; defer custom accessors/advanced multicast
-      href: fundamentals/object-oriented/events.md
+      href: fundamentals/classes/extensions.md
     - name: Partial types and members
-      # NEW (brief subset): partial classes/structs, partial methods (C# 9),
-      # partial properties (C# 13), partial events/constructors (C# 14);
-      # context is source generators and templates
-      href: fundamentals/object-oriented/partial-types.md
-    - name: Object lifetime and IDisposable
-      # NEW: using statement (C# 1), using declaration (C# 8),
-      # dispose pattern; exclude finalizers
-      href: fundamentals/object-oriented/object-lifetime.md
-    - name: Encapsulation and composition
-      # NEW: encapsulation as information hiding; composition over
-      # inheritance; combining objects to build complex behavior
-      href: fundamentals/object-oriented/encapsulation-composition.md
+      href: fundamentals/classes/partial-types.md
     - name: "Tutorial: Object-oriented C#"
       href: fundamentals/tutorials/oop.md
     - name: "Tutorial: Inheritance in C# and .NET"
       href: fundamentals/tutorials/inheritance.md
+
+  # §16 Structs
+  - name: Structs
+    # Differences from classes; link the canonical records comparison.
+    href: fundamentals/types/structs.md
+
+  # §17 Arrays and §18 Extended indexing and slicing
+  - name: Arrays, indexes, and ranges
+    items:
+    - name: Array semantics
+      # CONDITIONAL: expand existing collections instead if sufficient.
+      href: fundamentals/collections/arrays.md
+    - name: Indexers
+      href: fundamentals/collections/indexers.md
+    - name: Indexes and ranges
+      href: fundamentals/collections/indexes-ranges.md
     - name: "Tutorial: Explore indexes and ranges"
-      # PULL from current Tutorials section
       href: fundamentals/tutorials/ranges.md
 
-  # ─── Async basics (after OOP, per decision) ───
-  - name: Asynchronous programming basics
+  # §19 Interfaces
+  - name: Interfaces
+    # Differences from classes, not a repeat of shared declaration/member rules.
     items:
     - name: Overview
-      # PULL from asynchronous-programming/index.md; redirect old URL
-      href: fundamentals/async/index.md
-    - name: Consuming async methods
-      # NEW (subset): async/await (C# 5), Task-based pattern,
-      # declaring async methods that call other async methods,
-      # async Main (C# 7.1). Brief mention of async streams
-      # (await foreach C# 8). Link to Async focus section for
-      # cancellation, ConfigureAwait, parallel patterns, etc.
-      href: fundamentals/async/consuming-async.md
+      href: fundamentals/types/interfaces.md
+    - name: Implementation
+      # CONDITIONAL: expand the existing introduction if sufficient.
+      href: fundamentals/interfaces/implementation.md
+
+  # §20 Enums
+  - name: Enums
+    href: fundamentals/types/enums.md
+
+  # §21 Delegates
+  - name: Delegates
+    items:
+    - name: Delegates, lambdas, and events
+      href: fundamentals/types/delegates-lambdas.md
+    - name: Basic events
+      href: fundamentals/delegates/events.md
 
   # ─── §22 Exceptions ───
   - name: Exceptions and errors
@@ -666,14 +698,21 @@ block matches PR #56333's four-entry structure; other sections retain future pro
     - name: Overview
       # NEW (brief) or PULL: documenting code with ///, common tags
       href: fundamentals/xml-comments.md
-    - name: Documentation generation tools
-      # NEW: dotnet build XML output, DocFX, Sandcastle, other current tools.
+    - name: Generate documentation output
+      # PROPOSED: compiler XML output; link current publishing-tool guidance.
       # Task-style: under common-tasks/ per Decision 11.
       href: fundamentals/xml-comments/common-tasks/documentation-tools.md
     - name: "Tutorial: Generate API documentation with XML comments"
       href: fundamentals/tutorials/xml-documentation.md
 
-  # ─── Coding style (post-standard, conventions) ───
+  # Cross-cutting supporting work (Phase Q), not additional standard clauses.
+  - name: Asynchronous programming basics
+    items:
+    - name: Overview
+      href: fundamentals/async/index.md
+    - name: Consuming async methods
+      href: fundamentals/async/consuming-async.md
+
   - name: Coding style
     items:
     - name: C# identifier names
@@ -682,11 +721,6 @@ block matches PR #56333's four-entry structure; other sections retain future pro
       href: fundamentals/coding-style/coding-conventions.md
     - name: C# documentation comments
       href: fundamentals/coding-style/documenting-code.md
-    - name: Design alternatives
-      # NEW: when to use patterns vs. branching, classes vs. structs,
-      # record modifier, tuples, interfaces vs. abstract base classes,
-      # immutability patterns, and other common design decisions
-      href: fundamentals/coding-style/design-alternatives.md
     - name: Using .NET analyzers
       # NEW: Roslyn analyzers, .NET SDK analyzers, StyleCop,
       # .editorconfig and AnalysisLevel configuration

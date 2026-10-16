@@ -90,6 +90,7 @@ The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 | [SYSLIB0063](syslib0063.md) | Warning | The <xref:System.IO.Pipes.NamedPipeClientStream> constructor that has an `isConnected` parameter is obsolete because the argument has no effect. Use the constructor that accepts `direction`, `isAsync`, and `safePipeHandle`. |
 | [SYSLIB0064](syslib0064.md) | Warning | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. |
 | [SYSLIB0065](syslib0065.md) | Warning | The `set` accessor of <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> is obsolete. Use the constructor of the appropriate type to decode data, or use <xref:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType> for mutable scenarios. |
+| [SYSLIB0066](syslib0066.md) | Warning | <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. Implement <xref:Microsoft.Extensions.Options.IAsyncStartupValidator> for new custom startup validators. |
 
 ## EXTOBS obsoletions
 

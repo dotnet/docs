@@ -19,6 +19,9 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   :::code language="csharp" source="snippets/shared/StackallocOperator.cs" id="AssignToSpan":::
 
+  > [!CAUTION]
+  > This pattern applies a cap only to the `stackalloc` branch of the expression. If the application requires a cap on the `new T[...]` branch of the expression (e.g., to avoid unwanted creation of a one billion-element array), the caller must perform that length check separately.
+
   You don't need to use an [unsafe](../keywords/unsafe.md) context when you assign a stack-allocated memory block to a <xref:System.Span`1> or <xref:System.ReadOnlySpan`1> variable.
 
   When you work with those types, you can use a `stackalloc` expression in [conditional](conditional-operator.md) or assignment expressions, as the following example shows:
@@ -53,6 +56,8 @@ The amount of memory available on the stack is limited. If you allocate too much
   > Because the amount of memory available on the stack depends on the environment in which the code runs, be conservative when you define the actual limit value.
 
 - Avoid using `stackalloc` inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
+
+- Do not provide negative lengths to the `stackalloc` operator. If the length is derived from user input, ensure that the call site _both_ forbids negative values _and_ caps the maximum allowed value, as shown in the above examples. A negative length passed to `new T[...]` will result in a catchable <xref:System.OverflowException> rather than a fatal StackOverflowException.
 
 The content of the newly allocated memory is undefined. You should initialize it before it's used, either with a `stackalloc` initializer or a method like <xref:System.Span`1.Clear*?displayProperty=nameWithType>.
 

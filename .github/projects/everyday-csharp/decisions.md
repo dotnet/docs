@@ -48,7 +48,7 @@ entirely.
 
 **Rationale:** The C# standard represents a carefully considered progression through the language. Following it provides a coherent learning path and makes it easy for readers familiar with the standard to find content. It also provides a principled answer to "where does this topic go?" for any future content.
 
-**Revisit status:** Preserve this ordering for canonical syntax and semantics. Decision 13 now asks whether opinionated technique guidance should form a distinct second part rather than interrupt the standard-aligned sequence.
+**Revisit status:** Preserve this ordering for canonical syntax and semantics. Decision 13 records the subsequent two-part hypothesis. Decision 14 supersedes the former Functional techniques placement with the approved Building software section; the broader OOP boundary remains open.
 
 ### Decision 7: Delegates scope — `Func<>` and `Action<>` are fundamental
 
@@ -56,7 +56,7 @@ entirely.
 
 **Rationale:** Every C# developer uses `Func<>` and `Action<>` through LINQ, async callbacks, and everyday APIs. Lambda expressions are the idiomatic way to create delegates. The full delegate model with custom declarations and multicast invocation lists is a deeper topic that most developers encounter less frequently.
 
-**Structure:** A basic delegates/lambdas article appears in the Type system section (introduction), with deeper lambda coverage in both OOP (callbacks, event handlers, method parameters) and Functional techniques (closures, captures, functional patterns).
+**Structure:** The Type system introduction remains at `fundamentals/types/delegates-lambdas.md`. Practical lambda guidance (parameter/body forms, capture, static lambdas, and comparisons with named helpers) is authored in `fundamentals/building-software/lambdas.md` in open PR #56333. This supersedes the former Functional techniques destination. The proposed OOP callback/event-handler article remains future work, not delivered by that PR.
 
 ### Decision 8: Generics scope — consuming is fundamental, authoring is Focus
 
@@ -121,15 +121,16 @@ new articles cross-link out. The equality *operators* get a survey slot here, bu
 cross-linked rather than duplicated. The conditional `?:` operator is taught here; trimming its
 mention in the merged Selection-statements article is a **deferred later-cleanup item**.
 
-**Ordering (Option A):** The Fundamentals section order mirrors the standard where content belongs
+**Historical ordering (Option A; Functional techniques placement superseded by Decision 14):** The Fundamentals section order mirrors the standard where content belongs
 to a clause: Program structure → Type system → Null safety → Strings → **Pattern matching (§11)** →
 **Expressions and operators (§12)** → **Statements (§13)** → Functional techniques → Namespaces →
 OOP → Async → Exceptions → Attributes → XML docs → Coding style. Pattern-matching articles move to a
 `fundamentals/patterns/` folder (their own §11 section) instead of `fundamentals/functional/`.
 
-This remains the recorded Option A working order. It isn't erased by the stronger two-part
-hypothesis in Decision 13. Functional techniques and OOP are now explicit move candidates, with the
-placement decision revisited before PR 22 and Phase G are approved.
+Preserve this as the historical Option A record. Decision 13 introduced the two-part hypothesis;
+Decision 14 resolves the former Functional techniques inventory as direct children of Building
+software after Expressions and statements in PR #56333. The broader OOP placement and split still
+need a decision before Phase G implementation.
 
 **§12 coverage map (for the authors of the two new articles).** §12 is the standard's largest clause
 and its subclauses are scattered across already-merged sections; the two new articles own only the
@@ -149,7 +150,8 @@ assignment `= += -= *= /= %=` (§12.23.2/.5).
 null-forgiving `!` (§12.8.9 → Null safety > NRT); cast/`as` (§12.9.8, §12.14.13 → Type system >
 Conversions); index-from-end `^` and range `..` (§12.9.6, §12.10 → Collections / Indexers); `await`
 (§12.9.9 → Async); switch expression (§12.11 → Pattern matching, §11); `is` (§12.14.12 → Pattern
-matching); throw expression (§12.18 → Exceptions); lambdas (§12.21 → Delegates / Functional); query
+matching); throw expression (§12.18 → Exceptions); lambdas (§12.21 → Type system introduction /
+Building software practical guidance; complete syntax in Language Reference); query
 expressions/LINQ (§12.22 → Statements > LINQ); deconstructing assignment (§12.23.3 → Patterns >
 Deconstruction); event assignment (§12.23.6 → OOP > Events). Equality *semantics* (`Equals`,
 `GetHashCode`, record equality) live in the dedicated equality article (`fundamentals/expressions/equality.md`, relocated there from Type system in PR #54849); the new
@@ -174,7 +176,9 @@ per the build-clean rule.
 
 ### Decision 13: Two-part Fundamentals IA hypothesis
 
-**Status:** Decision required; working hypothesis, not approved.
+**Status:** Historical working hypothesis, partially resolved by Decision 14. Building software's
+name, direct four-article structure, and initial placement are approved. The broader two-part
+model and OOP split aren't approved by PR #56333.
 
 **Hypothesis:** Organize Fundamentals in two parts:
 
@@ -184,7 +188,7 @@ per the build-clean rule.
 2. A later set of standalone, actionable, example-rich guidance articles that explain when to apply
    syntax, idioms, and programming techniques.
 
-**Implications:** `Functional techniques` and `Object-oriented programming` aren't C# standard
+**Original implications (Functional techniques treatment superseded by Decision 14):** `Functional techniques` and `Object-oriented programming` aren't C# standard
 clauses. Treat them as Part 2 move candidates. Their construct articles—lambda expressions, local
 functions, iterators, type and member declarations, inheritance mechanics, interfaces, events, and
 `using` syntax—remain candidates for canonical homes in Part 1. Technique articles should link to
@@ -197,6 +201,70 @@ relational/logical/parenthesized, list/slice). Their neutral, construct-first tr
 input to this IA decision; being merged doesn't settle the permanent Functional/OOP taxonomy, and
 neither PR should be read as expanding into future technique guidance.
 
-**Decision needed:** Bill should confirm the two-part model, the Part 2 label, and which mixed
-Functional/OOP articles split or move. Preserve the earlier checkpoint to revisit placement after
-Phase G content exists if Bill retains the current order.
+**Remaining decision:** Confirm the broader two-part model and which mixed OOP articles split or
+move. Don't reopen Building software's approved name or require separate Part 1 homes for its
+three practical guides before PR #56333 can proceed. Complete syntax and restrictions remain
+linked reference material. Preserve the earlier checkpoint to revisit OOP placement after
+Phase G content exists.
+
+### Decision 14: Building software purpose and initial structure
+
+**Accepted by:** Bill Wagner; reconciled 2026-10-16 against open PR
+[#56333](https://github.com/dotnet/docs/pull/56333), head
+`4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e`.
+
+**Choice:** Building software teaches how valid approaches to algorithms can produce the same
+results yet communicate different design intent. Developers and coding agents infer intent from
+code shape, names, scope, dependencies, and execution timing. The section combines language
+elements introduced earlier to help readers align those expectations with their actual design.
+Its purpose isn't a catalog of the features in the current PR or a tutorial on one paradigm.
+
+**Initial structure:** `docs/csharp/toc.yml` at the PR head, lines 153–162, places **Building
+software** after Expressions and statements and before Object-oriented programming. Its direct
+children are Overview, Lambda expressions, Local functions, and Iterators, at
+`fundamentals/building-software/{index,lambdas,local-functions,iterators}.md`. There is no nested
+Functional techniques group. This supersedes the earlier Functional techniques inventory and the
+intermediate proposal to nest that group beneath Building software.
+
+The three companion articles lead with practical choices, then supply enough syntax and examples
+to apply them. They link to complete reference rules rather than claim exhaustive syntax ownership.
+The Type system delegates/lambdas introduction remains separate and links to the practical guide.
+The future combined-techniques tutorial and OOP work aren't completed by this PR.
+
+**Delivery status:** Bill accepted/completed the implementation task, but the PR is **OPEN**
+(`mergedAt=null`). Its four articles, snippet projects, legacy-source consolidation, redirects,
+inbound-link updates, and TOC changes are authored and accepted, **not merged or shipped**.
+See [source coverage](content-sources.md#building-software-source-reconciliation) and
+[article status](toc-and-articles.md#building-software).
+
+### Decision 15: Durable overviews and contextual comparisons
+
+**Accepted by:** Bill Wagner, 2026-10-16; reflected in PR #56333 at `4737e1c7fe`.
+
+**Choice:** Section overviews explain the section's long-term purpose, not the current PR contents.
+Comparison guidance names valid alternatives and explains their context and the expectations each
+communicates. Use short explanatory paragraphs with small inline examples, not terse unexplained
+rules such as "Start with what the caller needs." Introduce *caller* as the code that supplies
+inputs, invokes the operation, and uses its results.
+
+The accepted overview develops four comparisons:
+
+- Inline behavior, such as `Where(task => task.Priority > 3)`, exposes the steps at the point of
+  use; a named helper, such as `Where(IsUrgent)`, emphasizes purpose.
+- A local function limits a helper to its containing member; a private method makes it available
+  to other members and suggests reuse across the type.
+- Explicit parameters expose supplied inputs; captured variables connect a helper to its
+  surrounding context. `static` prevents capture.
+- A method that builds a completed collection finishes that work before returning it; a deferred
+  iterator produces elements on demand. The same values can involve different execution timing.
+
+First identify the needed behavior, then consider readers' inferred expectations, choose the form
+that aligns with the design, and explain behavior code shape alone doesn't reveal. For example,
+`IEnumerable<T>` alone doesn't establish execution timing because collections and iterators can
+both expose it. Avoid unsupported universal preferences or a detailed syntax tutorial in the
+overview.
+
+**Scope of the final editorial pass:** The overview expands the four comparisons into explanatory
+paragraphs. Lambdas, local functions, and iterators receive light framing/clarification edits only;
+snippets are unchanged in the latest commit. Preserve this contextual comparison style in future
+Everyday C# guidance.

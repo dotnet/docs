@@ -9,10 +9,12 @@ The following categorization is based on the [Roslyn Feature Status](https://git
 
 These features are "Everyday C#" and receive full treatment in Fundamentals with explanations, examples, and guidance.
 
-> **IA classification note:** Proposed locations below are an implementation inventory, not approval
-> to use Functional or OOP as canonical syntax owners. Under
-> [Decision 13](decisions.md#decision-13-two-part-fundamentals-ia-hypothesis), construct syntax and
-> semantics belong in standard-aligned Part 1; opinionated application guidance belongs in Part 2.
+> **IA and status note:** Most locations below remain a future implementation inventory.
+> [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure) supersedes
+> the retired Functional techniques grouping and the requirement to assign separate Part 1 homes
+> before its practical guides proceed. Building software coverage marked **authored/accepted in
+> #56333** is in an open PR, not shipped (head `4737e1c7fe`, verified 2026-10-16).
+> The broader two-part/OOP boundary in Decision 13 remains unresolved.
 
 | Feature | Version | Proposed Location |
 |---|---|---|
@@ -37,12 +39,12 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Pattern matching (relational, combinator, parenthesized, type) | C# 9 | Pattern matching |
 | Native sized integers (`nint`) | C# 9 | Type system > Built-in types (mention) |
 | Target-typed `new` expressions | C# 9 | Type system > Built-in types |
-| Static anonymous functions | C# 9 | Part 1 candidate: Lambda expressions |
+| Static anonymous functions | C# 9 | Building software > Lambda expressions: prevent capture and communicate independence; authored/accepted in #56333 |
 | Covariant return types | C# 9 | OOP > Inheritance |
 | Nullable reference types | C# 8 | Null safety |
 | Recursive patterns (positional, property, switch expressions) | C# 8 | Pattern matching |
 | Ranges and indexes | C# 8 | OOP > Indexers |
-| Static local functions | C# 8 | Part 1 candidate: Local functions |
+| Static local functions | C# 8 | Building software > Local functions: explicit inputs vs. captured context; authored/accepted in #56333 |
 | Readonly members | C# 8 | Type system > Structs |
 | Tuple comparison `==` and `!=` | C# 7.3 | Type system > Tuples |
 | Attributes on backing fields | C# 7.3 | OOP > Fields and constants |
@@ -57,7 +59,7 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Tuples | C# 7 | Type system > Tuples |
 | Deconstruction | C# 7 | Pattern matching > Deconstruction |
 | Discards | C# 7 | Pattern matching > Discards |
-| Local functions | C# 7 | Part 1 candidate: Local functions |
+| Local functions | C# 7 | Building software > Local functions: member-local helpers, parameters/capture, recursion, comparison with lambdas and type-level methods; authored/accepted in #56333 |
 | Expression-bodied members (more) | C# 7 | OOP > Methods |
 | Auto-property initializers | C# 6 | OOP > Properties |
 | Getter-only property defaults | C# 6 | OOP > Properties |
@@ -73,10 +75,10 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Implicitly typed local variables (`var`) | C# 3 | Type system > Built-in types |
 | Object and collection initializers | C# 3 | Type system > Classes |
 | Auto-implemented properties | C# 3 | OOP > Properties |
-| Lambda expressions | C# 3 | Type system > Delegates/lambdas |
+| Lambda expressions | C# 3 | Type system > Delegates/lambdas introduction retained; Building software > Lambda expressions adds parameter/body forms, capture, and inline vs. named behavior; authored/accepted in #56333 |
 | LINQ query expressions | C# 3 | Statements > LINQ |
 | Generics | C# 2 | Type system > Generics |
-| Iterators (`yield`) | C# 2 | Part 1 candidate: Statements / iterators |
+| Iterators (`yield`) | C# 2 | Building software > Iterators: synchronous `yield return`/`yield break`, `foreach`, deferred production, iterator vs. completed collection or ordinary loop; authored/accepted in #56333 |
 | Nullable value types | C# 2 | Null safety > Nullable value types |
 | Getter/setter separate accessibility | C# 2 | OOP > Properties |
 | Static classes | C# 2 | Type system > Classes |
@@ -98,6 +100,13 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Verbatim identifier | C# 1 | Type system > Built-in types |
 | Unsigned integer types | C# 1 | Type system > Built-in types |
 | Boxing and unboxing | C# 1 | Type system > Conversions |
+
+**Building software coverage boundary:** The four-article PR also authors an overview that compares
+algorithmic choices through design intent: names, scope, dependencies, and timing. Its practical
+guides link to complete syntax/restrictions in reference material; they aren't exhaustive reference
+replacements. The latest editorial commit changes only prose in those four articles, not snippets.
+Don't infer completion of the proposed breadth tutorial, deeper OOP callback/event guidance,
+or every older inventory item (such as local-function attributes) from this PR.
 
 ### Use in sample code without detailed explanation
 
@@ -155,6 +164,7 @@ These features appear in Fundamentals but with limited coverage, linking to deep
 | Asynchronous methods (`async`/`await`) | C# 5 | Core consuming scenarios only |
 | LINQ | C# 3 | Subset — LINQ has its own Focus section |
 | Expression trees | C# 3 | Mention in LINQ context for EF providers only |
+| Method group conversions (delegates) | C# 2 | Basic named-method vs. lambda comparison is authored/accepted in open #56333; advanced conversion/overload rules remain reference material |
 | Partial methods | C# 3 | Subset for tooling context |
 | Partial types | C# 2 | Subset — mainly for source generators and templates |
 | Type and namespace aliases | C# 2 | Subset of common scenarios |
@@ -211,7 +221,6 @@ These features are advanced, niche, or targeted at library authors. They belong 
 | Embedded interop types (NoPIA) | C# 4 | Niche |
 | Anonymous types | C# 3 | Prefer tuples |
 | Anonymous methods | C# 2 | Subsumed by lambdas |
-| Method group conversions (delegates) | C# 2 | Subsumed by lambdas |
 | Delegate inference | C# 2 | Covered under lambdas |
 | Operator overloading | C# 1 | Advanced |
 | User-defined conversion operators | C# 1 | Advanced |

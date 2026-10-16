@@ -1,6 +1,6 @@
 ---
 title: "Building software"
-description: Choose C# techniques for the task at hand. Compare ways to pass behavior, organize helper logic, and produce sequences.
+description: Compare valid approaches to C# algorithms and understand how code communicates design intent to developers and coding agents.
 ms.date: 10/15/2026
 ms.topic: overview
 ai-usage: ai-generated
@@ -8,40 +8,30 @@ ai-usage: ai-generated
 
 # Building software
 
-Choose the C# technique that makes your intent clear to the next person who reads your code. You've learned language elements such as types, expressions, statements, and methods. This section helps you decide how to combine them to solve a task, and when to choose one approach over another.
+Several algorithms or implementations can solve the same task correctly. The code you choose also communicates a design. Developers and coding agents who read your code use its structure to infer your intent: what each operation needs, where it belongs, and when it runs.
 
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who know basic C# expressions, statements, and methods. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 
-Often, several approaches produce the same result. You can write a loop or use a LINQ operation, give an operation a name or write it inline, and build a collection or produce its elements on demand. Start with what the caller needs, then choose the form that communicates that purpose most directly.
+This section compares valid approaches to algorithms and explains subtle differences in their behavior and how readers interpret them. You'll combine familiar language elements, such as types, expressions, statements, and methods, and choose forms that communicate the design you intend.
 
-## Choose how to express an operation
+## Compare behavior and design intent
 
-Use a [lambda expression](lambdas.md) when you want to pass a short operation to another method. For example, a lambda beside a call to `Where` makes the rule for which items to keep visible at the call site.
+Before choosing an implementation, consider how other code will use it. That code is the *caller*: it supplies inputs, invokes your operation, and uses the results. Does it need a completed result immediately, or can it process values one at a time? Is a helper part of this operation alone, or will other operations use it too? These questions help you compare both the behavior you need and the design your code communicates.
 
-When an existing method already expresses that operation, pass its name instead. This form is called a *method group*. A wrapper lambda adds little when the method name already says what the operation does.
+A short inline operation shows readers the steps at the point of use. For example, `Where(task => task.Priority > 3)` makes the filtering rule immediately visible. A named helper, as in `Where(IsUrgent)`, emphasizes the rule's purpose and lets readers inspect its details separately. Choose based on whether the steps or their purpose best explain the surrounding code.
 
-For logic that needs several steps or a descriptive name, choose a named function:
+Where you declare a helper communicates its intended scope. A local function inside `ShowDashboard` indicates that the helper belongs to that operation and prevents other members from calling it. A private method on the containing type makes the helper available to other members, suggesting that you expect reuse elsewhere in the type. Both can organize the same calculation, but they lead readers to different expectations about its role.
 
-- Use a [local function](local-functions.md) when only one member needs the helper. Its location makes that limited role clear.
-- Use a regular [method](../../methods.md) when several members need the same operation.
+How you supply a helper's inputs communicates its dependencies. Passing a limit as a parameter, such as `IsUrgent(task, minimumPriority)`, makes that input visible at each call. A local function or lambda can instead *capture* `minimumPriority`, using the variable from its surrounding scope without receiving it as an argument. Capture connects the helper to the containing operation's context; explicit parameters make the supplied data easier to identify. Use a `static` local function or lambda when you want to enforce that it doesn't capture surrounding state.
 
-Keep short operations close to their use. Give longer operations names that let readers understand the main flow before they read the details.
+How you return results communicates when the work happens. A method that builds and returns a collection completes that work before the caller receives the collection. An iterator produces elements as the caller requests them, so the caller can stop before all elements are produced. Both might produce the same values, but callers need to understand whether they're receiving completed results or a sequence whose computation still lies ahead.
 
-## Choose how to process a sequence
+For each choice, first identify the behavior the calling code needs. Then consider what another developer or coding agent will infer from the name, scope, inputs, and result. Choose a form that makes those expectations match your design, and explain important behavior that the code's shape alone doesn't reveal. The goal is to make a deliberate choice between valid alternatives, not to apply one form everywhere.
 
-Use [LINQ](../statements/linq.md) when a standard operation, such as filtering, sorting, or selecting a result, describes the work clearly. Choose a [loop](../statements/iteration.md) when the main purpose is to perform an action for each item or when custom control flow makes the steps easier to follow.
+## Read design choices in an example
 
-When a method needs to return a sequence, choose how callers should receive the results:
-
-- Use an [iterator](iterators.md) when callers can consume elements one at a time. An iterator produces elements as the caller requests them, so a caller can stop without producing the rest.
-- Build and return a collection when callers need indexed access or need to reuse a saved result without repeating the computation.
-
-An iterator and a loop serve different roles. An iterator supplies values for a caller to use. A loop can consume those values and perform the caller's work.
-
-## Combine techniques where each one helps
-
-The following example displays tasks that are urgent and ready to start. A `ProjectTask` holds a task's title, priority, and blocked status. The dashboard filters the tasks, formats each result, and writes it to the console.
+The following example illustrates how several choices communicate different parts of a design. It displays tasks that are urgent and ready to start. A `ProjectTask` holds a task's title, priority, and blocked status.
 
 :::code language="csharp" source="snippets/overview/Program.cs" id="CombineTechniques":::
 
@@ -52,9 +42,9 @@ Each choice keeps a different part of the work clear:
 - The iterator `ReadyTasks` lets callers consume ready tasks without creating an intermediate collection.
 - The `foreach` loop makes the final action, writing each result, explicit.
 
-These aren't the only possible choices. For example, `Where(static task => !task.IsBlocked)` could replace `ReadyTasks` because this readiness test is a simple filter. Prefer that shorter form for a one-off filter; give the operation a name when callers benefit from that name or when the sequence logic needs more steps.
+For comparison, `Where(static task => !task.IsBlocked)` could replace `ReadyTasks` because this readiness test is a simple filter. Both forms defer the filter until enumeration. The lambda puts the rule at the call site; `ReadyTasks` gives the rule a name. Choose between them based on which information helps readers understand the caller.
 
-Choose each technique for the job it does, rather than try to use every technique in every method.
+The articles that follow use comparisons like these to explain when each approach fits and what readers can infer from your choice.
 
 ## Next steps
 

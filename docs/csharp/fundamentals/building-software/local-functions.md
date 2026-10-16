@@ -8,7 +8,7 @@ ai-usage: ai-generated
 
 # Local functions
 
-Choose a local function when you want to give helper logic a descriptive name and only one member needs that helper. Keep the helper beside its caller so readers can follow the main operation first, then read the details of each named step.
+Choose a local function when you want to give helper logic a descriptive name and only one member needs that helper. Compared with a method on the containing type, a local function tells readers that the helper belongs to this operation. Its name lets readers follow the main flow before they inspect the details.
 
 > [!TIP]
 > This article teaches practical use of local functions for developers who know how to write methods. For declaration details and diagnostic rules, see [Local function declarations](~/_csharpstandard/standard/statements.md#1364-local-function-declarations).
@@ -52,7 +52,7 @@ static int LastChapter(int firstChapter, int chaptersPerWeek, int chapterCount) 
     Math.Min(firstChapter + chaptersPerWeek - 1, chapterCount);
 ```
 
-A static local function can't capture local variables, parameters, or instance state from the containing member. That restriction documents the helper's inputs.
+A static local function can't capture local variables, parameters, or instance state from the containing member. Its parameters make the supplied data explicit, while capture lets a helper use the context of its containing operation.
 
 ## Use recursion when the problem repeats itself
 
@@ -82,7 +82,7 @@ The following code uses both forms:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="LocalAndLambda":::
 
-`IsShortWeek` gives the rule passed to `Where` a descriptive name. The lambda passed to `Select` performs one short transformation at its point of use.
+`IsShortWeek` gives the rule passed to `Where` a descriptive name. The lambda passed to `Select` performs one short transformation at its point of use. Both forms supply behavior to another method here. A local function can also be a helper you call directly, as `AddWeek` is in the reading-plan example.
 
 Use a regular method instead of a local function when several members need the helper. Use a lambda instead when the behavior is short and its purpose is clear from the receiving method.
 

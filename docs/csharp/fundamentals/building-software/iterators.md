@@ -8,7 +8,7 @@ ai-usage: ai-generated
 
 # Iterators
 
-Choose an iterator when you want to return a sequence whose elements callers can consume one at a time, without first building the complete result in a collection. This approach fits generated values, filters with custom control flow, and sequences that callers might stop reading early.
+Choose an iterator when you want to return a sequence whose elements callers can consume one at a time, without first building the complete result in a collection. This approach fits generated values, filters with custom control flow, and sequences that callers might stop reading early. Compared with a completed collection, an iterator changes when the work happens, not just how you write it.
 
 > [!TIP]
 > This article teaches synchronous iterators for developers who know methods, loops, and collections. For complete `yield` syntax and restrictions, see the [`yield` statement reference](../../language-reference/statements/yield.md).
@@ -64,11 +64,13 @@ Deferred execution has practical effects:
 - A caller that never enumerates the sequence doesn't run the iterator body.
 - Each new enumeration runs the iterator again.
 
-Keep deferred execution visible in the method's purpose and naming. Avoid unexpected side effects in an iterator because callers might enumerate the sequence later or more than once.
+Make deferred execution clear in the method's purpose and documentation. Readers can't infer execution timing from `IEnumerable<T>` alone because both iterators and collections can expose that interface. Keep element production free of unrelated side effects because callers might enumerate the sequence later or more than once. The example's diagnostic messages illustrate that timing.
 
 ## Choose an iterator or collection
 
 Return an iterator when values naturally arrive one at a time or when the caller doesn't need the complete result immediately. Return a completed collection when callers need a stable snapshot, indexed access, or repeated enumeration without recalculating the elements.
+
+Both approaches can return the same elements. The iterator leaves element production under the caller's control; a method that builds a collection completes that work before it returns.
 
 Use an ordinary loop when you want to perform an action for each item without returning a sequence. For a standard filter or transformation, prefer a LINQ operation such as `Where` or `Select`; write an iterator when custom element-production logic is clearer as a series of statements.
 

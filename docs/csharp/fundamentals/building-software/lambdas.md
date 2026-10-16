@@ -8,7 +8,7 @@ ai-usage: ai-generated
 
 # Lambda expressions
 
-Choose a lambda expression when you want to pass a short operation to another method and the operation is clearest beside the call that uses it. For example, pass a rule that selects items or a calculation that transforms each item without introducing a separate named method.
+Choose a lambda expression when you want to pass a short operation to another method and the operation is clearest beside the call that uses it. An inline rule shows readers how you select or transform items; a named method lets them follow the operation's purpose before they inspect its details.
 
 > [!TIP]
 > This article teaches practical choices for developers who know C# methods and collections. For the complete lambda syntax and rules, see the [lambda expressions reference](../../language-reference/operators/lambda-expressions.md).
@@ -87,7 +87,7 @@ var shortSessions = sessions.Where(
 
 Capture helps a short rule use local context. The lambda captures the variable itself, not a copy of its value. If the variable changes before the lambda runs, the lambda sees the current value.
 
-Make the needed context easy to identify. If a lambda doesn't need surrounding state, add `static` to prevent accidental capture:
+Make the needed context easy to identify. If a lambda doesn't need surrounding state, add `static` to prevent accidental capture and make that independence visible to readers:
 
 ```csharp
 var openSessions = sessions.Where(
@@ -109,7 +109,7 @@ A *method group* is a method name without its argument list. The compiler conver
 
 :::code language="csharp" source="snippets/lambdas/Program.cs" id="MethodGroup":::
 
-`Where(HasOpenSeats)` communicates the same rule as `Where(session => HasOpenSeats(session))` with less code. Keep the lambda wrapper when it adds an argument, combines operations, or makes the call clearer.
+`Where(HasOpenSeats)` communicates the same rule as `Where(session => HasOpenSeats(session))` with less code. The method name tells readers what the rule tests; an inline comparison shows how it tests that rule. Keep the lambda wrapper when it adds an argument, combines operations, or makes the call clearer.
 
 For a detailed local comparison, see [Local functions](local-functions.md#choose-a-local-function-or-lambda-expression).
 

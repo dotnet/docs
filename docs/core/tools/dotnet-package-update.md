@@ -25,7 +25,7 @@ dotnet package update -h|--help
 ## Description
 
 The `dotnet package update` command updates packages used by projects.
-If [NuGetAudit](/nuget/concepts/auditing-packages) is enabled, it can also attempt to automatically update update packages with known vulnerabilities to fixed versions.
+If [NuGetAudit](/nuget/concepts/auditing-packages) is enabled, it can also attempt to automatically update packages with known vulnerabilities to fixed versions.
 
 ### Warnings as Errors
 

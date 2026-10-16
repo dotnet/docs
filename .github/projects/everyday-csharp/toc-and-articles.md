@@ -4,11 +4,12 @@
 
 The following outline shows every article in the proposed Fundamentals section, its status (existing, needs revision, new, or pulled from another location), and key content notes.
 
-> **IA hypothesis for decision:** Read this inventory as two potential parts. **Part 1** follows the
-> standard and owns compact syntax and semantics. **Part 2** follows it with opinionated,
-> example-rich guidance about when to apply constructs and techniques. The current Functional and
-> OOP nodes are inventories, not approved final groupings; both are move candidates. See
-> [Decision 13](decisions.md#decision-13-two-part-fundamentals-ia-hypothesis).
+> **IA/status reconciliation (2026-10-16):** Building software's initial four direct articles are
+> authored and accepted in open PR [#56333](https://github.com/dotnet/docs/pull/56333), not shipped.
+> [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure) supersedes
+> the retired Functional techniques grouping and pending label/initial-placement questions.
+> The broader two-part hypothesis and OOP split in Decision 13 remain unresolved. Unrelated rows
+> below retain their existing planning status; this isn't a full-project delivery audit.
 
 ### Program structure (§7)
 
@@ -39,7 +40,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 | 13 | Tuples and deconstruction | 🟡 Revise | Merge existing articles; inferred names (C# 7.1), comparison (C# 7.3), `with` on tuples |
 | 14 | Generics | 📝 New | Consuming generic types/methods, type inference, basic constraints (`class`, `struct`, `new()`, base type), brief mention of `Enum`/`Delegate`/`unmanaged` constraints, co-/contra-variance (C# 4), collection expressions (C# 12), dictionary expressions (C# 14), spread `..` |
 | 15 | Type conversions, casting, and boxing | 📥 Pull | From programming guide: casting, conversions, boxing/unboxing, `is`/`as` |
-| 16 | Delegates, lambdas, and events | 📝 New | Introduction: `Func<>`, `Action<>`, lambda basics (C# 3), static lambdas (C# 9), discard parameters (C# 9), brief events intro (subscribe/unsubscribe). Deeper construct coverage and technique guidance must be separated under Decision 13. |
+| 16 | Delegates, lambdas, and events | ✅ Exists; link update in open #56333 | `fundamentals/types/delegates-lambdas.md` remains the Type system introduction to delegates/lambdas/events. PR #56333 adds a link to the new Building software lambda guide; it doesn't replace or newly author this introduction. Supersedes this row's original "New" status. |
 | 69 | Tutorial: Introduction to classes | ✅ Exists | |
 | 72 | Tutorial: Explore record types | 📥 Pull from Tutorials | |
 | 79 | Tutorial: Converting types | ✅ Exists | |
@@ -78,7 +79,7 @@ The following outline shows every article in the proposed Fundamentals section, 
 
 Sequenced before Expressions (§12) and Statements (§13) to mirror the C# standard's clause order
 (§11 → §12 → §13). Pattern-matching articles live under `fundamentals/patterns/` (their own §11
-section), not under `fundamentals/functional/`.
+section). The older `fundamentals/functional/` destination is retired.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
@@ -121,19 +122,40 @@ Sequenced before Statements (§13) per the standard. Articles live under `fundam
 > Trimming the `ternary conditional operator` mention in Selection statements to a cross-reference is
 > a **deferred later-cleanup item**, not part of this reorder batch.
 
-### Functional techniques (Part 2 move candidate)
+### Building software
 
-The overview and tutorial are technique guidance candidates for Part 2. Lambda-expression, local-
-function, and iterator syntax articles are Part 1 candidates and shouldn't derive their canonical
-ownership from a programming paradigm.
+**Authored/accepted, not shipped:** Bill completed and accepted the task for PR
+[#56333](https://github.com/dotnet/docs/pull/56333), **Start on building fundamentals sections**.
+On 2026-10-16 the PR is **OPEN**, `mergedAt=null`, at
+`4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e` on `more-everyday-csharp`.
+Its `docs/csharp/toc.yml`, lines 153–162, adds these four direct children after Expressions and
+statements and before Object-oriented programming. There is no Functional techniques subgroup.
+These destinations describe the PR head, not implementation on this planning branch.
+
+The section's durable purpose is to compare valid algorithmic approaches and what their shape,
+names, scope, dependencies, and timing communicate to developers and coding agents. It isn't
+limited to the current feature set. See [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure)
+and [Decision 15](decisions.md#decision-15-durable-overviews-and-contextual-comparisons).
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 35 | Overview | 🟡 Revise | C# as a multi-paradigm language, functional style. Emphasize pattern matching expressions as a key functional technique. Emphasize lambda expressions as a form of "code as data". |
-| 36 | Lambda expressions in depth | 📝 New | Closures, captures, expression vs. statement lambdas, method group conversions |
-| 37 | Local functions | 📥 Pull | From concepts/programming guide: local functions (C# 7), static (C# 8), attributes (C# 9) |
-| 38 | Iterators | 📥 Pull | `yield return`/`yield break` (C# 2), iterator pattern, foreach over strings |
-| 97 | Tutorial: Functional techniques in C# | 📝 New | Breadth-focused tutorial demonstrating functional techniques (lambdas, local functions, pattern matching expressions, iterators, LINQ) in combination rather than depth in any single area |
+| 35 | Overview | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/index.md`: long-term design-intent framing; contextual paragraphs with small inline examples compare inline/named behavior, local/private helpers, parameters/capture, and completed/deferred results. Combined example retained. |
+| 36 | Lambda expressions | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/lambdas.md`: pass short behavior, parameter forms, expression/statement bodies, capture and `static`, lambda vs. method group/local function. Supersedes the planned "in depth" title; links to complete syntax reference. |
+| 37 | Local functions | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/local-functions.md`: helper scope, parameters vs. capture, `static`, recursion, and local function vs. lambda/type-level method. Replaces the Programming Guide article; don't infer coverage of every former inventory item, such as attributes. |
+| 38 | Iterators | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/iterators.md`: synchronous `IEnumerable<T>`, `yield return`/`yield break`, `foreach`, deferred execution, and choice of iterator, completed collection, loop, or standard LINQ operation. Consolidates two legacy iterator articles. |
+
+Four snippet projects accompany these articles under `fundamentals/building-software/snippets/`:
+`overview/`, `lambdas/`, `local-functions/`, and `iterators/`. Redirects preserve the retired
+functional URLs and the consolidated legacy sources; inbound links and old TOC entries are
+updated in the PR. See [source reconciliation](content-sources.md#building-software-source-reconciliation).
+The final commit changes the overview and lightly reframes companion prose only; snippets are
+unchanged in that editorial pass.
+
+**Future work, not part of #56333:**
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 97 | Tutorial: Functional techniques in C# (historical working title) | 📝 Planned, not authored in #56333 | Preserve the breadth-tutorial backlog item for combined lambdas, local functions, patterns, iterators, and LINQ. Revisit its title/placement under the approved Building software purpose before implementation; it doesn't restore the retired grouping. |
 
 ### Namespaces (§14)
 
@@ -216,16 +238,22 @@ Part 2 or Tutorials candidates. Bill must approve the boundary before Phase G im
 
 | Status | Count | Description |
 |---|---|---|
-| ✅ Exists, no change needed | 19 | Exceptions, Coding style, some Tutorials, some Program structure |
-| 🟡 Revise existing article | 9 | Structure overview, Records, Pattern matching overview, Deconstruction, Functional overview, OOP overview, Inheritance merge |
-| 📝 New article to write | ~43 | Built-in types, Structs, Enums, Generics, Delegates intro, Null safety, Strings, Extensions, Async basics, Attributes, **Expressions overview + operator precedence, Arithmetic/comparison/logical/assignment operators**, Selection statements, Iteration statements, Working with collections, LINQ, Encapsulation and composition, Documentation generation tools, Design alternatives, Using .NET analyzers, System.CommandLine tutorial, Choosing-types tutorial, Declaration/constant/var patterns, Type patterns, Property/positional patterns, Relational/logical patterns, List patterns, Functional techniques tutorial, Organizing programs, Namespaces, and others |
-| 📥 Pull and revise from other section | 22 | From Programming Guide, Concepts, How-to, Tutorials, Async section |
+| ✅ Exists (including retained introduction) | 20 | Original estimate plus the existing Type system delegates/lambdas introduction; #56333 only adds its practical-guide link |
+| 🟡 Revise existing article | 8 | Original estimate less the Building software overview, now authored/accepted |
+| 📝 New article to write | ~41 | Original estimate less the authored lambda guide and the already-existing Type system introduction; the combined-techniques tutorial remains planned |
+| 📥 Pull and revise from other section | 20 | Original estimate less local functions and iterators, now consolidated in open #56333 |
+| ✍️ Authored/accepted in open PR, not shipped | 4 | Building software overview, Lambda expressions, Local functions, Iterators (#56333) |
 | **Total** | **~93** | Not including potential article splits |
 
+Counts retain the original rough sizing, with the four #56333 articles reclassified
+(-1 revise, -1 new, -2 pull, +4 authored/accepted) and the retained Type system introduction
+corrected (-1 new, +1 exists). They aren't a current census of unrelated merged work.
+Consult the individual shipped rows for earlier PRs.
 
 ## Complete proposed Fundamentals TOC
 
-The following is the complete proposed TOC:
+The following is the complete proposed TOC, not a copy of the live TOC. The Building software
+block matches PR #56333's four-entry structure; other sections retain future proposals.
 
 ```yml
 # This is the proposed structure for the Fundamentals section.
@@ -309,10 +337,11 @@ The following is the complete proposed TOC:
       # PULL from programming guide: casting, conversions, boxing/unboxing, is/as
       href: fundamentals/types/conversions.md
     - name: Delegates, lambdas, and events
-      # NEW (introduction): what delegates are, Func<>/Action<>, lambda expression
+      # EXISTS (introduction): what delegates are, Func<>/Action<>, lambda expression
       # basics (C# 3), static lambdas (C# 9), discard parameters (C# 9),
       # brief intro to events (subscribe/unsubscribe)
-      # Deeper treatment in OOP and Functional techniques
+      # RETAINED introduction; practical lambda guidance in Building software.
+      # OOP callback/event guidance remains future work.
       href: fundamentals/types/delegates-lambdas.md
     - name: "Tutorial: Introduction to classes"
       href: fundamentals/tutorials/classes.md
@@ -478,32 +507,27 @@ The following is the complete proposed TOC:
       # renders as the first child of the combined "Expressions and statements" node.
       href: fundamentals/expressions/equality.md
 
-  # ─── Part 2 candidate: Functional techniques ───
-  # The overview/tutorial are guidance candidates. Lambdas, local functions, and iterators
-  # need canonical Part 1 syntax homes if the two-part hypothesis is approved.
-  - name: Functional techniques
+  # ─── Building software: authored/accepted in OPEN PR #56333, not shipped ───
+  # Four direct children match 4737e1c7fe. No Functional techniques subgroup.
+  # In that PR this follows the combined Expressions and statements node.
+  - name: Building software
     items:
     - name: Overview
-      # REVISE: C# supports multiple paradigms; functional style in C#
-      href: fundamentals/functional/index.md
-    - name: Lambda expressions in depth
-      # NEW: deeper lambda treatment—closures, captures, expression lambdas
-      # vs statement lambdas, lambda optional parameters (C# 12—use without
-      # explanation), attributes and return types on lambdas (C# 10—use without
-      # explanation), method group conversions
-      href: fundamentals/functional/lambdas.md
+      # Compare behavior and design intent, not the current PR inventory.
+      href: fundamentals/building-software/index.md
+    - name: Lambda expressions
+      # Practical parameter/body forms, capture/static, inline vs named behavior.
+      href: fundamentals/building-software/lambdas.md
     - name: Local functions
-      # PULL from concepts/programming guide: local functions (C# 7),
-      # static local functions (C# 8), attributes on local functions (C# 9)
-      href: fundamentals/functional/local-functions.md
+      # Practical helper scope, parameters/capture, static, recursion, alternatives.
+      href: fundamentals/building-software/local-functions.md
     - name: Iterators
-      # PULL: yield return/yield break (C# 2), iterator pattern,
-      # foreach over strings, dispose in foreach
-      href: fundamentals/functional/iterators.md
-    - name: "Tutorial: Functional techniques in C#"
-      # NEW: breadth-focused tutorial demonstrating functional techniques
-      # (lambdas, local functions, pattern matching, iterators, LINQ)
-      href: fundamentals/tutorials/functional-techniques.md
+      # Synchronous yield, foreach, deferred production vs completed collections.
+      href: fundamentals/building-software/iterators.md
+
+  # Future combined-techniques tutorial (#97) is NOT authored in #56333.
+  # Historical proposed slug: fundamentals/tutorials/functional-techniques.md.
+  # Title and placement need review; don't add it to the four-entry PR inventory.
 
   # ─── §14 Namespaces ───
   - name: Namespaces

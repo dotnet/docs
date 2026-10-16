@@ -2,9 +2,12 @@
 
 ## Content Sources for Pull Articles
 
-Before PR 22 or Phase G implementation, classify every pull as either canonical construct coverage
-(Part 1) or opinionated technique/design guidance (Part 2). Mixed source articles should be split;
-their legacy location doesn't determine their final Fundamentals owner.
+Classify future pulls as canonical construct coverage or practical technique/design guidance;
+their legacy location doesn't determine their final Fundamentals owner. The earlier requirement
+to resolve the Functional techniques label and split before PR 22 is superseded by
+[Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure).
+Building software's first practical guides are authored and accepted in open PR #56333, not merged.
+The broader OOP boundary remains a Phase G planning question.
 
 | Target Article | Source Location | Action |
 |---|---|---|
@@ -24,11 +27,42 @@ their legacy location doesn't determine their final Fundamentals owner.
 | Interfaces | `programming-guide/interfaces/` | Pull + split declaration/implementation mechanics from design-choice guidance |
 | Indexers | `programming-guide/indexers/` | Pull + add ranges/indexes |
 | Events | `concepts/` events articles (subset) | Pull basic subset |
-| Local functions | `concepts/` + `programming-guide/` | Merge construct coverage for Part 1; route technique guidance to Part 2 |
-| Iterators | `concepts/iterators.md` + `programming-guide/` | Merge construct coverage for Part 1; route technique guidance to Part 2 |
+| Building software overview | New cross-cutting guidance | Authored/accepted in open PR #56333 at `fundamentals/building-software/index.md`; compare behavior and communicated design intent, not a feature inventory |
+| Lambda expressions | New practical guide; retain Type system introduction and Language Reference | Authored/accepted in open PR #56333 at `fundamentals/building-software/lambdas.md`; not a move of the reference article |
+| Local functions | `programming-guide/classes-and-structs/local-functions.md` | Rework practical guidance at `fundamentals/building-software/local-functions.md`; delete/redirect legacy article and replace its snippets in open PR #56333 |
+| Iterators | `iterators.md` + `programming-guide/concepts/iterators.md` | Consolidate practical synchronous-iterator guidance at `fundamentals/building-software/iterators.md`; delete/redirect both legacy articles and replace snippets in open PR #56333 |
 | Type conversions | `programming-guide/types/` casting/conversion articles | Pull + revise |
 | Async overview | `asynchronous-programming/index.md` | Pull + redirect |
 | Tutorials (6 articles) | `tutorials/` section | Move into Fundamentals tutorials |
+
+## Building software source reconciliation
+
+Evidence: PR [#56333](https://github.com/dotnet/docs/pull/56333),
+`more-everyday-csharp` head `4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e`;
+status verified 2026-10-16 as **OPEN**, `mergedAt=null`. Bill accepted the implementation task.
+All migration actions below are authored in that PR, not shipped on this planning branch.
+
+- The four articles and their snippet projects live under
+  `docs/csharp/fundamentals/building-software/`. Snippet folders are
+  `snippets/overview/`, `snippets/lambdas/`, `snippets/local-functions/`, and `snippets/iterators/`.
+  The iterator and local-function project files move from their legacy locations; their old
+  sample sources are replaced by focused `Program.cs` examples.
+- `.openpublishing.redirection.csharp.json` redirects `csharp/iterators.md`,
+  `csharp/programming-guide/concepts/iterators.md`, and
+  `csharp/programming-guide/classes-and-structs/local-functions.md` to the new guides.
+  The older `csharp/local-functions-vs-lambdas.md` redirect now targets the new local-functions
+  guide directly.
+- The retired `csharp/fundamentals/functional/{index,lambdas,local-functions,iterators}.md`
+  destinations also redirect to Building software. These redirects preserve historical URLs;
+  they don't imply a retained Functional techniques grouping.
+- `docs/csharp/toc.yml` adds four direct Building software children and removes the old iterator
+  and local-function entries. Inbound links are updated across Fundamentals, Concepts, the
+  Programming Guide, Language Reference, tutorials, tour articles, expression trees, code-analysis
+  style rules, and related samples/parallel-programming guidance. The Type system introduction
+  and complete syntax references remain in place.
+- The final commit changes the overview's purpose and comparison prose and lightly reframes the
+  three companion articles; it doesn't alter snippets. The combined-techniques tutorial and
+  remaining OOP/methods migrations remain future work.
 
 ## Sections That Will Shrink
 
@@ -37,9 +71,9 @@ As content moves into Fundamentals, these existing top-level sections will lose 
 | Section | Articles Moving Out | Remaining After |
 |---|---|---|
 | **Tutorials** | 6 (records, patterns, NRT, ranges, interpolation, console app) | REST client, LINQ tutorial (→ LINQ section) |
-| **C# concepts** | Methods, iterators, delegates/events subset | Delegates/events (advanced), versioning |
+| **C# concepts** | Iterators consolidated in open PR #56333; Methods and delegates/events subset remain planned | Methods remains at `csharp/methods.md` in this PR; delegates/events (advanced), versioning |
 | **How-to C# articles** | 5 string articles | Catch non-CLS exception |
-| **C# programming guide** | ~15 articles from Classes/Structs, Interfaces, Indexers, Types | Covariance, generics (advanced), strings (advanced) |
+| **C# programming guide** | Local functions consolidated in open PR #56333; remaining planned pulls from Classes/Structs, Interfaces, Indexers, Types | Covariance, generics (advanced), strings (advanced); unrelated pulls aren't completed by #56333 |
 | **Asynchronous programming** | 1 (index/overview) | Cancellation, ConfigureAwait, parallel patterns, advanced async |
 
 ## Open Items for Future Discussion
@@ -49,4 +83,4 @@ As content moves into Fundamentals, these existing top-level sections will lose 
 1. **Tutorial curation**: As Fundamentals grows, some existing tutorials may become redundant with the main content. Should any tutorials be retired rather than moved?
 1. **Cross-references with Language Reference**: Many Fundamentals articles will need "See also" links to the corresponding Language Reference pages for complete syntax details.
 1. **Redirect strategy**: Every moved article needs a redirect from its old URL. The redirect mapping should be produced as part of each phase's execution plan.
-1. **Two-part Fundamentals boundary**: Confirm the Part 2 label and classify the Functional/OOP inventories before approving PR 22 or Phase G.
+1. **Remaining Fundamentals boundary**: Building software's name and initial direct-article structure are settled by Decision 14; the former Functional techniques grouping is retired. Confirm the broader two-part model and classify mixed OOP sources before Phase G. The future combined-techniques tutorial remains unimplemented.

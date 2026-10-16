@@ -447,8 +447,6 @@ Non-zero-based operations retain their runtime restrictions and report dynamic-c
 
 The computation's result doesn't demonstrate native publication. Validate a complete application's dependencies and publishing output separately.
 
-Empty-result array operations can reuse a shared empty array. Depend on the empty contents, not the reference identity of the result.
-
 ## See also
 
 - [F# Language Reference](index.md)

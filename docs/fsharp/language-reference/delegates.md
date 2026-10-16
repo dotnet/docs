@@ -67,59 +67,33 @@ aa
 
 ## Direct construction and framework metadata
 
-Starting with F# 11, a delegate constructed from a compatible named function or method can point directly at that method, instead of a generated closure's `Invoke` method. Reflection-based frameworks then see the original parameter names and attributes.
+To preserve parameter names and attributes for reflection-based frameworks, F# 11 can target a compatible named function or method directly instead of a generated wrapper.
 
 For example, [ASP.NET Core Minimal API parameter binding](/aspnet/core/fundamentals/minimal-apis/parameter-binding) uses route names and binding attributes to populate handler arguments:
 
 :::code language="fsharp" source="snippets/delegates/Program.fs" id="Handler":::
 
-The delegate's <xref:System.Delegate.Method> preserves the metadata that identifies the route argument, service, and header:
+Check the original metadata through <xref:System.Delegate.Method>:
 
 :::code language="fsharp" source="snippets/delegates/Program.fs" id="Metadata":::
 
-Use this project file and the complete `Program.fs` sample:
-
-:::code language="xml" source="snippets/delegates/ShipmentApi.fsproj":::
-
-:::code language="fsharp" source="snippets/delegates/Program.fs" id="App":::
-
-Run `dotnet run -- --urls http://127.0.0.1:5080`, then send:
-
-```console
-curl -H "X-Customer: Ada" http://127.0.0.1:5080/shipments/SHP-1042
-```
-
-The response is `Ada: SHP-1042 is Dispatched`. The example demonstrates binding, not input validation: it doesn't reject a missing customer header. Add validation if your application requires one.
-
-This example uses ASP.NET Core's delegate-based request binding; it doesn't establish compatibility with every source generator, OpenAPI integration, or Native AOT endpoint-generation path.
+For the complete runnable application, see the [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj).
 
 ### Which targets are direct?
 
-The compiler recognizes transparent forwarding to known functions and methods. `Func<...>(namedFunction)` can use direct construction in both optimized and unoptimized builds. An explicit forwarding lambda, such as `Func<_,_>(fun x -> namedFunction x)`, retains its wrapper in unoptimized builds so the lambda's debug information remains available.
+Prefer `Func<...>(namedFunction)` for direct construction in both optimized and unoptimized builds. An explicit forwarding lambda retains its wrapper in unoptimized builds. Captures, argument adaptation, and mandatory inline expansion can also require wrappers.
 
-Captures, reordered or converted arguments, mandatory inline expansion, and other adaptations can require a closure. Don't assume every delegate has a null `Target`, or that every F# function value identifies a single method. Prefer the named-function form when a framework needs the method's metadata.
-
-Direct delegates with the same method and receiver compare equal, which helps event unsubscription and <xref:System.Delegate.Remove(System.Delegate,System.Delegate)> work as expected.
-
-For the named `status` handler above, this repeated construction compares equal in both optimized and unoptimized builds:
-
-:::code language="fsharp" source="snippets/delegates/Program.fs" id="Identity":::
-
-Don't rely on every repeated named-handler construction taking the direct path. To guarantee removal regardless of compiler optimizations or construction shape, retain the delegate used for subscription and pass that same value when you unsubscribe.
+Direct delegates with the same method and receiver compare equal. For reliable event unsubscription, retain and reuse the subscribed delegate.
 
 > [!IMPORTANT]
-> A null instance receiver can now fail when the delegate is constructed, rather than when it is invoked. A non-virtual instance target can throw `ArgumentException` at construction; a virtual target can throw `NullReferenceException`. Validate receivers before constructing delegates.
-
-For example, when the compiler directly targets this non-virtual .NET method, construction fails before any call to `callback.Invoke`:
+> Validate instance receivers before direct delegate construction. A null receiver can throw `ArgumentException` for a non-virtual method or `NullReferenceException` for a virtual method before invocation.
 
 ```fsharp
 let receiver: System.Text.StringBuilder = null
 let callback = System.Func<char, System.Text.StringBuilder>(receiver.Append)
 ```
 
-Keep receiver validation and any handling of these exceptions around delegate construction, not only invocation. This change applies to direct construction; code that still needs a wrapper doesn't necessarily have the same failure point.
-
-When a conversion still needs generated parameters and the function supplies no useful names, the compiler can use parameter names from the delegate's `Invoke` signature. This fallback doesn't replace preservation of the original method and its attributes.
+Wrappers can use parameter names from the delegate's `Invoke` signature when the function supplies none; they don't preserve the original method's metadata.
 
 ## See also
 

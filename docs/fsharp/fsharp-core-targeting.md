@@ -50,8 +50,6 @@ The [F# 11 toolset packaging fix](https://github.com/dotnet/fsharp/pull/20555) s
 
 The modern Core build supplies compiler-recognized intrinsics for runtime async, but its target name isn't sufficient evidence that a resulting method can execute. The [experimental builder example](language-reference/task-expressions.md#runtime-async-experiments) requires preview at definition and inline expansion, appropriate reference APIs, and runtime support.
 
-That example's pending-task suspension/resumption was verified on .NET 11 RC1. The tested .NET 10.0.12 setup could compile against its references but failed at execution with `TypeLoadException`. This is an observation about that combination, not a complete minimum-version or runtime compatibility matrix. Calling an already-compiled ordinary task-returning API doesn't itself require preview.
-
 ## See also
 
 - [What's new in F# 11](whats-new/fsharp-11.md)

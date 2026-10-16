@@ -100,9 +100,7 @@ Use `--always-inline` to request the older always-inline behavior even without o
 
 ## Inline extension constraints across libraries
 
-F# 11 preview can use public extension members to satisfy SRTP requirements. For an imported unresolved constraint, the consumer must open the adapter module and enable preview when it resolves the extension. The producer's settings and `open` declarations aren't inherited.
-
-A library that exports ordinary extension definitions and unresolved constraints can use numbered F# 11. Conversely, a preview producer can resolve an extension internally and expose an already-resolved ordinary or inline API that works in a numbered consumer. Preview-specific inference can also change an exported signature, so inspect the library's actual signature rather than inferring requirements from the `inline` keyword alone.
+F# 11 preview can use public extension members to satisfy SRTP requirements.
 
 See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for tested project arrangements, inference changes, and a cross-file preview code-generation limitation.
 

@@ -88,55 +88,21 @@ The shared function in `Structural.Algorithms` asks the input type for a static 
 
 The same capability reaches beyond collections: [a path-length example](../language-reference/generics/extension-member-constraints.md#adapt-a-property-for-a-shared-algorithm) adapts the different coordinate APIs of `Complex` and `Vector2` to one algorithm.
 
-### Combine observations and summaries with extension operators
+### Operators, context, and output types
 
-Several batches can contribute observations; each batch can also carry a count. An extensible combination operation lets the algorithm handle either representation:
+The same mechanism supports these capabilities:
 
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition-consumer/Program.fs" id="CombineUse":::
+- [Operator composition](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) combines counts, observations, and tuple components without wrappers.
+- [Context propagation](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) carries an audit trail alongside a calculation.
+- [Return-directed construction](../language-reference/generics/extension-member-constraints.md#return-directed-construction) uses the expected output type to select a container without a dummy argument. See the [return-overloading proposal](https://github.com/fsharp/fslang-suggestions/issues/820#issuecomment-568313755) for the original problem.
 
-The library gives `++` a meaning for each component and combines a tuple component by component:
-
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
-
-Here `++` adds counts and appends observations in order. It isn't a universal definition of addition, and the compiler doesn't prove algebraic laws for the adapters. `List.reduce` requires at least one batch; an empty-input API would also need an identity value.
-
-The new `type ('T1 * 'T2) with` header lets a plain tuple join this protocol without a wrapper type. Native tuple headers require preview in the **library that declares them**, as well as preview in callers that resolve their operators. The example intentionally defines `combineAll` in the consumer; see [tuple extension boundaries](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) for its current cross-assembly limitation.
-
-### Carry context through a calculation
-
-A pair can also carry a result alongside an audit trail. Applying a function then needs to preserve both the calculation and its accumulated context:
-
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
-
-The library's tuple operator combines the two trails and applies the function. Reference and struct tuple headers support the same pattern:
-
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition/Composition.fs" id="ContextAdapters":::
-
-These are static-member/operator scenarios. The preview supports native tuple headers of arity two through seven; it doesn't enable tuple dot-instance calls or function-type extension headers. Use a named domain type instead when names or invariants are more important than a reusable product shape.
-
-### Construct the output container the caller needs
-
-Sometimes the input doesn't identify the operation. A plain value could become a one-element batch or a present optional value; the required **output** tells the library which construction to use.
-
-First, the library supplies `Return` on each output type:
-
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition/Composition.fs" id="ReturnAdapters":::
-
-The shared `singleton` function asks the output type for that member:
-
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition/Composition.fs" id="Return":::
-
-The caller selects the extension through the expected result type:
-
-:::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/composition-consumer/Program.fs" id="ReturnUse":::
-
-No dummy argument needs to encode the result type. See the [return-overloading proposal](https://github.com/fsharp/fslang-suggestions/issues/820#issuecomment-568313755) for the original problem.
+Native reference and struct tuple headers support two through seven elements and require preview where declared. Callers also need preview to resolve extension operators. These headers don't enable tuple instance-dot calls or function-type headers.
 
 A **separate** addition, `AllowOverloadOnReturnType`, lets one factory declare overloads distinguished by their returns:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
 
-This attribute comes from FSharp.Core 11 and doesn't itself require preview. The expected result type disambiguates the call; remove it and these overloads are ambiguous. The earlier structural example instead selects a member on the supporting output type. See [Select by return type](../language-reference/parameters-and-arguments.md#select-by-return-type).
+This attribute comes from FSharp.Core 11 and doesn't itself require preview. The expected result type disambiguates the call; remove it and these overloads are ambiguous. Structural return-directed construction instead selects a member on the supporting output type. See [Select by return type](../language-reference/parameters-and-arguments.md#select-by-return-type).
 
 Thanks to [@gusty](https://github.com/dotnet/fsharp/pull/19602) for extending generic programming support.
 
@@ -150,17 +116,7 @@ This handler takes a route value, a service, and a named header:
 
 :::code language="fsharp" source="../language-reference/snippets/delegates/Program.fs" id="Handler":::
 
-Register the service and pass the delegate to `MapGet`:
-
-:::code language="fsharp" source="../language-reference/snippets/delegates/Program.fs" id="App":::
-
-Run the [complete project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj) with `dotnet run -- --urls http://127.0.0.1:5080`, then send:
-
-```console
-curl -H "X-Customer: Ada" http://127.0.0.1:5080/shipments/SHP-1042
-```
-
-The response is `Ada: SHP-1042 is Dispatched`. The framework binds `trackingId` from the route, resolves `[<FromServices>]`, and reads the header named by `[<FromHeader>]`—not by custom request-parsing code.
+The framework binds `trackingId` from the route, resolves the service, and reads the `X-Customer` header. For the runnable application, see the [complete project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj).
 
 Direct construction also exposes the original method/receiver identity. Captures, argument adaptation, and other expression shapes can still require wrappers; this isn't delegate caching. See [Delegates](../language-reference/delegates.md#direct-construction-and-framework-metadata) for construction rules and null-receiver compatibility.
 
@@ -275,12 +231,6 @@ Builder authors can explore a further consequence of modern runtime support: let
 
 > [!NOTE]
 > This experimental builder requires preview where its inline implementation is defined or expanded, Core 11's `net10.0` build, and references and a runtime with runtime-async support. The verified runtime/reference combination here is .NET 11 RC1. Targeting .NET 10 alone isn't sufficient. See [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments).
-
-The small builder supplies only the operations used above:
-
-:::code language="fsharp" source="../language-reference/snippets/task-expressions/RuntimeAsync.fs" id="RuntimeBuilder":::
-
-`__runtimeAsyncReturn` is a compiler-recognized marker. Within the resulting runtime-async method, `AsyncHelpers.Await` can suspend on an unfinished task and resume when it completes; it isn't a blocking `.Result` call. Inline expansion exposes this structure to the compiler.
 
 FSharp.Core doesn't ship this sample as a general-purpose builder. Ordinary `task` and `async` code doesn't automatically switch to it, and callers of an already-compiled ordinary task-returning API don't inherently need preview.
 

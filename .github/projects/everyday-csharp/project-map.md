@@ -53,6 +53,33 @@ The project map is split into focused parts:
 | [Content sources](content-sources.md) | Pull sources, sections that shrink, and open items |
 | [Restructuring plan](plan/README.md) | The PR-by-PR execution plan, split by phase |
 
+## Roadmap expansion for review: October 2026
+
+The only Everyday C# completion target for the rest of October is
+[dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930). Its combined-techniques tutorial
+must be reconciled with the final decisions and live destinations from open PR #56333 before
+implementation. Planning the remaining roadmap doesn't schedule those tasks for October.
+
+The [expanded phase index](plan/README.md#plan-index--prs-by-phase) now gives Classes (§15),
+Structs (§16), Arrays/extended indexing and slicing (§17-18), Interfaces (§19), Enums (§20),
+Delegates (§21), Exceptions (§22), Attributes (§23), and Documentation comments (Annex D)
+explicit coverage after Namespaces. Existing type introductions stay canonical, with deeper
+construct work linked rather than duplicated. Unsafe code and all other appendixes are excluded.
+
+Following the standard's teaching strategy, Classes supplies the common rules, including record
+classes; Structs and Interfaces focus on their differences from classes. Structs explicitly compares
+`record class` with `record struct`. Reuse the existing canonical records article across those phases,
+with one teaching owner per portion rather than two competing introductions.
+
+[Phase R](plan/phase-r-building-software.md) proposes twelve scoped harvesting/retirement tasks
+for Building software, backed by a [complete 82-article Programming Guide source ledger](plan/programming-guide-inventory.md).
+Mixed sources are split between construct mechanics, applied decisions, and retained advanced
+material. The Programming Guide is a source to retire incrementally, not a new canonical home.
+
+The later construct/design split and new destinations are **proposals for Bill's local review**.
+They don't supersede PR #56333's approved initial placement, turn open work into shipped content,
+or authorize content moves, new issues, commits, or pushes.
+
 ## Current reconciliation: Building software
 
 As of 2026-10-16, Bill accepted the implementation and editorial task for
@@ -64,7 +91,7 @@ The articles, snippet projects, redirects, inbound links, and TOC changes descri
 or present as implementation on this planning branch. The latest commit reframes the overview
 and lightly edits the three companion articles; it doesn't change snippets.
 
-This reconciliation updates the five project-planning documents and the plan README, Phase F,
-and verification/decisions log. It supersedes the retired Functional techniques grouping and
-pending label/initial-placement questions. It doesn't complete the future combined-techniques
-tutorial, approve a broader OOP reorganization, or audit unrelated phase delivery status.
+The earlier reconciliation supersedes the retired Functional techniques grouping and pending
+label/initial-placement questions. The subsequent roadmap expansion above adds explicit future
+phase owners and source harvesting; it doesn't complete the tutorial, approve the proposed later
+OOP reorganization, or audit unrelated phase delivery status.

@@ -92,15 +92,7 @@ let rr3 = { defaultRecord1 with Field2 = 42 }
 
 ## Compose records with spreads
 
-To share fields across different application models, F# 11 supports both **record type spreads** and **record expression spreads**:
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordTypes":::
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordValues":::
-
-The type spread defines the fields of a new `ClientOptions` type. The expression spread copies endpoint values into client options; the anonymous record then overrides the host. Neither form creates inheritance.
-
-Spreads can also [replace a field with a validated type](record-spreads.md#strengthen-a-fields-type) or [combine independent models](record-spreads.md#combine-independent-models). See [Record spread operators](record-spreads.md) for projections, overrides, evaluation, warnings, and API compatibility. For a simple same-type update, the existing [copy-and-update expression](copy-and-update-record-expressions.md) remains available.
+To reuse fields across different models, F# 11 provides **type spreads** (`...SourceType`) and **expression spreads** (`...sourceValue`). They copy declarations or values without inheritance. See [Record spread operators](record-spreads.md) for examples; for a same-type update, use [copy-and-update](copy-and-update-record-expressions.md).
 
 ## Record constructors
 
@@ -111,7 +103,7 @@ To identify a record type directly at its construction site, use its all-fields 
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
 
-Positional arguments are also accepted, in field declaration order. Named arguments avoid depending on that order. Representation accessibility still applies: a constructor call doesn't bypass a private or internal record representation. A same-named value in scope takes precedence over the constructor. This feature doesn't add constructor patterns for records.
+Positional arguments follow field order; named arguments avoid that dependency. Representation accessibility still applies, and a same-named value takes precedence. Constructor patterns aren't supported.
 
 ## Creating Mutually Recursive Records
 

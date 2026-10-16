@@ -174,19 +174,11 @@ Finally, if multiple intrinsic type extensions exist for one type, all members m
 
 ## Extensions for generic inline code
 
-Extension members can adapt existing types to the member constraints of generic inline code, including properties and operators. Use public members and open the adapter module before defining a dependent inline function. An imported unresolved constraint instead uses the consumer's extension scope.
-
-The compilation that resolves an extension as a constraint solution needs preview. A library that only defines ordinary extensions and unresolved inline constraints can use numbered F# 11. See [Extension members for SRTP constraints](generics/extension-member-constraints.md) for framework-type adapters, shared mapping, operator declarations, and separate-project requirements. These extensions don't alter the underlying type or cause it to implement a nominal interface.
+F# 11 can use public, in-scope extensions to satisfy generic inline member constraints. Enable `<LangVersion>preview</LangVersion>` where the compiler resolves them; ordinary extension declarations alone don't require preview. See [Extension members for SRTP constraints](generics/extension-member-constraints.md) for adapters and library requirements.
 
 ### Native tuple headers
 
-Use preview native tuple headers when a plain tuple should join an extensible static-member or operator protocol:
-
-:::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
-
-The tuple operator combines its two components through their own `++` operations. Both `type ('T1 * 'T2) with` and `type struct ('T1 * 'T2) with` require preview in the declaring compilation. Native headers support two through seven elements; they don't enable tuple dot-instance calls or `type ('a -> 'b) with` function headers.
-
-See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for complete projects and limits. These declaration requirements are additional to the consumer's extension-solving requirement.
+To extend tuple static members and operators, use `type ('T1 * 'T2) with` or `type struct ('T1 * 'T2) with`. These declarations require preview and support two through seven elements, not instance-dot calls or function-type headers. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for examples.
 
 ## See also
 

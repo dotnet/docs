@@ -69,7 +69,7 @@ The code's formatting is preserved, and there is a double semicolon (`;;`) termi
 
 ## Core build and asynchronous disposal
 
-For Core API availability and the task-expression asynchronous-disposal packaging fix, see [FSharp.Core target frameworks](../../fsharp-core-targeting.md#f-interactive-and-asynchronous-disposal). FSI's bundled Core selection is part of the toolset; it isn't determined solely by a package reference in a separate application.
+For asynchronous disposal in task expressions, update to the F# 11 toolset with the [modern Core packaging fix](../../fsharp-core-targeting.md#f-interactive-and-asynchronous-disposal). An application package reference doesn't change FSI's bundled Core.
 
 ## Display version information
 
@@ -79,7 +79,7 @@ Starting with F# 11, enter `#version;;` to display version information for the c
 #version;;
 ```
 
-Use this information when you report a compiler or scripting problem. The directive reports the running tool; it doesn't change the language version or install another SDK.
+Include this output when you report a compiler or scripting problem.
 
 ## Scripting with F\#
 

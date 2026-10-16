@@ -63,7 +63,7 @@ The following code shows the implementation file.
 
 ## Compiler-semantic attributes
 
-To preserve how callers compile and type-check an API, repeat the enforced attributes from its implementation declaration on the corresponding `.fsi` declaration. In F# 11, an omitted required attribute produces FS3888 as an error rather than a warning. This check isn't a requirement to copy every .NET attribute.
+To preserve an API's compile-time contract, repeat the attributes listed below on its `.fsi` declaration. F# 11 makes omissions an FS3888 error rather than a warning; it doesn't require every .NET attribute.
 
 For example, `NoDynamicInvocation` prevents a non-inline invocation path for the following inline function. `Api.fs` contains:
 
@@ -73,7 +73,7 @@ Its `Api.fsi` must also contain the attribute:
 
 :::code language="fsharp" source="snippets/signature-files/Api.fsi" id="Signature":::
 
-Both files begin with `module Api`, and the signature precedes the implementation in project compile order.
+Both files begin with `module Api`; compile the signature first.
 
 The checked set depends on the declaration:
 
@@ -82,11 +82,7 @@ The checked set depends on the declaration:
 | Values and members | `NoDynamicInvocation`, `RequiresExplicitTypeArguments`, `Conditional`, `NoEagerConstraintApplication`, `GeneralizableValue`, `WarnOnWithoutNullArgument`, `CLIEvent`, `Extension`, `ParamArray`, and `Literal`. |
 | Types and modules, where applicable | `RequireQualifiedAccess`, `NoComparison`, `NoEquality`, `CustomEquality`, `CustomComparison`, `ReferenceEquality`, `AbstractClass`, `Sealed`, `CLIMutable`, `AllowNullLiteral`, `DefaultAugmentation`, `Obsolete`, `CompilerMessage`, `Experimental`, `Unverifiable`, `EditorBrowsable`, `AttributeUsage`, `IsByRefLike`, `IsReadOnly`, `Extension`, `Measure`, `Struct`, `Class`, and `Interface`. |
 
-For example, `RequiresExplicitTypeArguments` changes whether callers must supply type arguments, while `Struct` changes a type's representation. The same attribute name doesn't imply the same omission rule for values and types.
-
-This missing-attribute check skips types whose representation is hidden by an opaque signature, but still checks module contracts. It deliberately excludes runtime-only attributes such as `DllImport` and `SkipLocalsInit`. `AutoOpen` on the implementation alone doesn't open a module for consumers of its signature. `StructuralEquality` and `StructuralComparison` aren't in this enforced list; don't confuse them with `NoEquality`, `NoComparison`, or custom equality/comparison.
-
-Diagnostic FS3888 identifies an attribute present in the implementation but missing from the signature. Add the attribute to the signature when the contract is intentional; suppressing a warning doesn't repair a contract that is an error in F# 11.
+The check skips types hidden by opaque signatures, but still checks modules. Runtime-only attributes such as `DllImport` and `SkipLocalsInit`, and the `StructuralEquality`/`StructuralComparison` attributes, aren't in the enforced set. For FS3888, add the missing contract attribute to the signature.
 
 Record signatures can use [type spreads](record-spreads.md#representation-and-api-compatibility) or explicit fields independently of the implementation syntax, provided the elaborated shape and order agree.
 

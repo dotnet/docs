@@ -167,19 +167,11 @@ The keyword `inline` is often used with global operators, which are often small 
 
 ## Operators supplied by extensions
 
-To let existing representations participate in a generic operation without wrappers, F# 11 preview can resolve optional extension operators as SRTP witnesses. For example, combine counts and observation lists component by component:
+To combine existing types without wrappers, F# 11 preview can use optional extension operators as SRTP witnesses. These adapters add counts and append observation lists:
 
 :::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
 
-A consumer with these public adapters in scope can use one generic reduction:
-
-:::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="CombineUse":::
-
-The integer operation adds, the list operation appends, and the pair delegates to its components. The compiler checks member signatures, not associativity or an identity law. This `List.reduce` example requires a nonempty list.
-
-Extension-operator declarations aren't themselves new. Numbered modes can accept an ordinary named-type extension declaration with FS1215 while still rejecting its use as an SRTP solution. Suppressing that warning doesn't enable preview resolution. The native tuple header additionally requires preview where declared.
-
-Built-in primitive operator solutions keep their priority; extension support isn't arbitrary replacement of built-in arithmetic. See [Extension members for SRTP constraints](generics/extension-member-constraints.md#operator-extensions) for scope, library arrangements, and current limits.
+Native tuple headers require preview where declared; consumers also need preview to resolve extension operators. Built-in primitive solutions retain priority. See [Extension members for SRTP constraints](generics/extension-member-constraints.md#operator-extensions) for complete calls, scope, and limits.
 
 ## See also
 

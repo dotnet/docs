@@ -422,17 +422,15 @@ The module [`Array.Parallel`](https://fsharp.github.io/fsharp-core-docs/referenc
 
 ## Empty result arrays
 
-When checks produce no warnings or a filter finds no matches, an empty array is a normal result. FSharp.Core 11 reuses a shared empty array for more zero-length results, including `collect`, `map`, `concat`, and several conversion paths:
+To avoid allocating empty result arrays, FSharp.Core 11 reuses a shared empty array in more operations, including `collect`, `map`, `concat`, and conversions:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="EmptyResults":::
 
-The reference-identity observation shows shared result storage, not total pipeline allocation. The input array, callbacks, iterators, and nonempty results can still allocate. Don't depend on separate empty results having different object identities.
+Don't depend on empty results having distinct identities. Inputs, callbacks, and nonempty results can still allocate.
 
 ## Two-dimensional arrays and Native AOT
 
-The FSharp.Core 11 package contains builds for `netstandard2.0`, `netstandard2.1`, and `net10.0`. NuGet selects the build that matches your project's target framework; projects targeting .NET 10 or later can use the `net10.0` build.
-
-The following table describes the AOT improvements, not whether the APIs exist:
+FSharp.Core 11 improves zero-based allocation for Native AOT. The allocation path depends on the [selected Core build](../fsharp-core-targeting.md), not just the API:
 
 | Zero-based operations | `netstandard2.0` and `netstandard2.1` builds | `net10.0` build |
 |---|---|---|
@@ -443,9 +441,7 @@ For example, initialize a grid, transform its elements, and take a separate arra
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Grid":::
 
-Non-zero-based operations retain their runtime restrictions and report dynamic-code warnings at the call site. Prefer zero-based arrays for [Native AOT applications](../../core/deploying/native-aot/index.md); suppressing a warning doesn't make an unsupported allocation work.
-
-The computation's result doesn't demonstrate native publication. Validate a complete application's dependencies and publishing output separately.
+Non-zero-based operations retain dynamic-code restrictions. For [Native AOT](../../core/deploying/native-aot/index.md), prefer zero-based arrays and check the complete application's publish diagnostics.
 
 ## See also
 

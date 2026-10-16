@@ -61,17 +61,11 @@ Starting with F# 11, use `#elif` to express several alternatives without nesting
 
 Run `dotnet fsi --define:EU_WAREHOUSE Region.fs` to select `Europe/Paris`, or `dotnet fsi --define:US_WAREHOUSE Region.fs` to select `America/New_York`. Without either symbol, the output is `UTC`. If both symbols are defined, the first matching branch wins.
 
-In a project file, add the symbol to `DefineConstants`:
-
-```xml
-<DefineConstants>$(DefineConstants);EU_WAREHOUSE</DefineConstants>
-```
-
 Each conditional group starts with `#if`, can contain multiple `#elif` branches and one final `#else`, and ends with `#endif`. An `#elif` can't follow `#else`.
 
 ## Host directive lines
 
-Starting with the F# 11 compiler, lines beginning with `#:` are ignored by the compiler. The `#:` must start at the beginning of the line. A hosting tool can interpret these lines separately; compiler acceptance alone doesn't implement package restoration or any other host behavior.
+Starting with F# 11, the compiler ignores lines with `#:` at the start. A hosting tool can interpret them; the compiler doesn't implement their host behavior.
 
 For F# Interactive's own directives, see [Interactive programming](../tools/fsharp-interactive/index.md), including [`#version`](../tools/fsharp-interactive/index.md#display-version-information) to inspect the running session.
 

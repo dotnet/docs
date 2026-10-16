@@ -249,12 +249,4 @@ It is not possible to declare struct anonymous records as `IsByRefLike` or `IsRe
 
 ## Compose values with record spreads
 
-Starting with F# 11, record expression spreads combine fields from named or anonymous records. Unlike a named record, an unannotated anonymous destination takes its shape from the contributions:
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordTypes":::
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordValues":::
-
-An explicit target annotation can select only a subset of source fields. Multiple sources follow rightmost-wins field selection. Source and destination records can have different struct representations.
-
-For type spreads into named records, evaluation rules, warnings, and examples, see [Record spread operators](record-spreads.md). Spreads aren't structural subtyping and can't be combined with `with` in one expression.
+Starting with F# 11, `...source` copies record fields into an anonymous record. Without a target annotation, all contributed fields form its shape; later contributions replace earlier fields with the same name. See [Record spread operators](record-spreads.md#compose-record-values) for named and anonymous examples, projections, and evaluation rules.

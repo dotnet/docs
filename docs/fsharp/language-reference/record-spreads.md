@@ -7,7 +7,7 @@ ai-usage: ai-generated
 
 # Record spread operators
 
-When related models have different responsibilities, separate record types keep those differences visible. Record spreads, available starting with F# 11, remove repeated shared declarations and field assignments without removing the type boundary.
+To share fields without merging distinct model types, use record spreads, available starting with F# 11.
 
 Use `...Type` to contribute field declarations to a new named record, or `...expression` to contribute field values to a named or anonymous record. Declaration reuse and value mapping are independent choices.
 
@@ -17,7 +17,7 @@ To share connection fields across configuration types, spread `Endpoint` into a 
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="RecordTypes":::
 
-`ClientOptions` has `Host`, `Port`, and `TimeoutSeconds` fields. It is a fresh nominal type: spreads don't create inheritance or structural subtyping. You can't pass `ClientOptions` where an `Endpoint` is required without constructing that value.
+`ClientOptions` has `Host`, `Port`, and `TimeoutSeconds`. It is a distinct nominal type, not an `Endpoint` subtype.
 
 Multiple sources and explicit declarations can appear in the same type definition:
 
@@ -42,15 +42,7 @@ A later field declaration can replace the type of a spread field. For example, r
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Strengthen":::
 
-The spread doesn't parse or validate a string. `Guid.TryParse` performs the check and the explicit assignment supplies the replacement value. This identifier type distinguishes identifiers from unrelated GUIDs; it doesn't impose additional domain rules such as forbidding an empty GUID.
-
-For independently evolving storage and domain models, share only declarations that intentionally belong together:
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Models":::
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Mapping":::
-
-The destination excludes `InternalNote`. You can instead declare every destination field explicitly and use exactly the same value mapping.
+`Guid.TryParse` validates the text; the spread only copies fields. `CustomerId` distinguishes identifiers from other GUIDs without imposing further rules.
 
 ### Combine independent models
 
@@ -60,11 +52,7 @@ Compose declarations from a curated nominal record and an anonymous record type,
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Compose":::
 
-The nominal `ProductRow` and anonymous `StockCounts` both supply values to `ProductCard`. The nominal card then supplies an anonymous view state, which another anonymous construction updates. `CanOrder` is computed at construction; changing counts in a later construction doesn't automatically recompute it.
-
-To expose only a subset of fields, declare that target explicitly:
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Records.fs" id="Project":::
+Named and anonymous sources supply `ProductCard`; the card then supplies anonymous view state. `CanOrder` is computed once, not recalculated when a later construction changes the counts.
 
 ### Project into a known target
 
@@ -72,9 +60,9 @@ A target type selects the fields to keep. Multiple sources can supply replacemen
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Projection":::
 
-A known target type determines which spread fields are used. `endpoint` keeps `Host` and `Port` but omits `TimeoutSeconds`. The `production` value combines the original options, two overridden endpoint fields, and an explicit timeout. An explicitly written field that doesn't exist on the target is still an error.
+`endpoint` keeps only `Host` and `Port`; `production` combines sources and explicit overrides. Explicit fields absent from the target remain errors.
 
-Without a target annotation, an anonymous record takes its shape from all the contributions. A named record still needs an inferable nominal type. Annotating only the target doesn't determine an unknown source's type: write `(source: ClientOptions)` on a function parameter when needed.
+An unannotated anonymous record takes all contributed fields. A named target must be inferable. Unknown sources need their own annotations, such as `(source: ClientOptions)` on a function parameter.
 
 ## Field order and overrides
 
@@ -85,7 +73,7 @@ let laterHost = {| Host = "db.example.com" |}
 let corrected: Endpoint = { ...local; ...laterHost; Port = 5433 }
 ```
 
-A type spread can replace a field's type with a later explicit declaration. The corresponding value construction must then supply a value of that replacement type. Repeated explicit declarations or bindings remain errors; spreads don't permit `{ Host = "first"; Host = "second" }`.
+After a type override, supply a value of the replacement type. Repeated explicit fields, such as `{ Host = "first"; Host = "second" }`, remain errors.
 
 For type declarations, a winning field appears at the position of its winning contribution. Fields from a source retain their source order. This order matters for constructors and signature conformance.
 
@@ -95,7 +83,7 @@ Spread source expressions run once each, in source order, even if a later contri
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Evaluation":::
 
-The result is a new record, not a reference to the source record. Field values are copied, not deeply cloned: a field that refers to a mutable object still refers to that object. Each selected field uses the conversions and coercions that an explicit field assignment would use.
+Spreads create a new record with shallow field copies and the same conversions as explicit assignments. Mutable objects referenced by fields remain shared.
 
 Nested field updates work with spreads, as they do with copy-and-update:
 
@@ -133,7 +121,7 @@ These notices don't change rightmost-wins behavior.
 Type spreads copy field mutability and field-level attributes. They don't copy type-level attributes; the destination's own `[<Struct>]` attribute determines its representation. Source type arguments must satisfy the source's generic constraints, including units-of-measure constraints.
 
 > [!IMPORTANT]
-> A type spread creates a source-level dependency. Adding a source field can change the destination's public fields and constructor without an edit to the destination declaration. Changes to field attributes, mutability, constraints, or collisions can also affect callers. Use type spreads when that shared evolution is intentional.
+> Use type spreads only when shared evolution is intentional. A source-field change can alter the destination's public fields, constructor, attributes, or constraints without an edit to that destination.
 
 Spreads don't bypass accessibility checks. Nullable records aren't valid spread sources; establish that a nullable value is non-null before using it. Cyclic dependencies *through spreads* are rejected. Ordinary recursive record fields aren't prohibited merely because the declaration also uses a spread.
 

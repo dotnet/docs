@@ -52,7 +52,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--preferreduilang:lang`| Specifies the preferred output language culture name (for example,  `es-ES`, `ja-JP`). |
 |`--quotations-debug`|Specifies that extra debugging information should be emitted for expressions that are derived from F# quotation literals and reflected definitions. The debug information is added to the custom attributes of an F# expression tree node. See [Code Quotations](code-quotations.md) and [Expr.CustomAttributes](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-quotations-fsharpexpr.html#CustomAttributes).|
 |`--reference:assembly-filename`<br /><br />`-r:assembly-filename`|Makes code from an F# or .NET Framework assembly available to the code being compiled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;reference &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/inputs.md#references).|
-|`--reflectionfree`|Avoids reflection-dependent generated structural formatting. In F# 11, records and unions can receive meaningful generated `ToString` output; inner types must also have suitable conversions. See [reflection-free type formatting](interpolated-strings.md#record-and-union-output-without-reflection). This isn't proof of whole-application Native AOT compatibility.|
+|`--reflectionfree`|Avoids reflection-dependent generated structural formatting. F# 11 can generate meaningful record and union `ToString` output. See [reflection-free type formatting](interpolated-strings.md#record-and-union-output-without-reflection).|
 |`--resource:resource-filename`|Embeds a managed resource file into the generated assembly.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;resource &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#embeddedresource).|
 |`--sig:signature-filename`|Generates a signature file based on the generated assembly. For more information about signature files, see [Signatures](signature-files.md).|
 |`--simpleresolution`|Specifies that assembly references should be resolved using directory-based Mono rules rather than MSBuild resolution. The default is to use MSBuild resolution except when running under Mono.|
@@ -103,9 +103,7 @@ Note that if the `WarnOn` property is specified multiple times, only the last oc
 
 With the F# 11 compiler, the default, `latest`, and `latestmajor` language modes select F# 11. Numbered supported modes start at F# 8. Use `--langversion:preview` or `<LangVersion>preview</LangVersion>` only when you need a preview feature.
 
-The old non-strict indentation mode is removed. Selecting an earlier numbered language mode doesn't restore that mode; correct the indentation instead.
-
-Language version selects compiler behavior. It doesn't add APIs to FSharp.Core, enable null checking, or establish runtime support. Follow each feature's requirements separately.
+Non-strict indentation mode is removed, including in earlier numbered modes. Language version doesn't change library or runtime API availability.
 
 ## Parallel compilation
 
@@ -119,9 +117,7 @@ For troubleshooting or a project-specific performance comparison, disable parall
 </PropertyGroup>
 ```
 
-The corresponding compiler option is `--parallelcompilation-`; use `--parallelcompilation+` to enable it. Compare complete builds and diagnostics as well as elapsed time.
-
-Available parallelism depends on source dependencies, available cores, and optimization settings; file-order rules remain unchanged. Build tasks' MSBuild environment/path isolation is a separate concurrency concern. See [Tooling performance](../tools/tooling-performance.md) for imported-library sharing, editor work, and meaningful comparisons.
+Use `--parallelcompilation-` to disable it or `--parallelcompilation+` to enable it. Available parallelism depends on source dependencies, cores, and optimization settings; file-order rules remain unchanged. See [Tooling performance](../tools/tooling-performance.md) for comparisons.
 
 ## Diagnostic lists
 

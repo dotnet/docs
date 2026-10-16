@@ -372,9 +372,7 @@ FSharp.Core 11 adds `Async.Await` and `Async.StartTaskImmediate`. Use the factor
 
 A single task failure reaches the matching exception handler directly, without an extra `AggregateException` wrapper. An aggregate containing several exceptions remains an aggregate. The existing `Async.AwaitTask` contract is unchanged.
 
-`Async.RunSynchronouslyImmediate` starts work on the calling thread until its first suspension and then blocks for the result. Prefer asynchronous composition when a caller can await; the immediate runner still blocks.
-
-For bounded work, `Async.parallelLimit` takes a positive limit and a sequence of workflows. `Async.parallelDoLimit` and `Async.sequentialDo` return `unit` when results aren't needed. These operations flow ambient cancellation. See [Async and task functions](../language-reference/async-task-functions.md) for complete signatures, error handling, task factories, and ValueTask conversions.
+For the reverse bridge, bounded concurrency, and result transformations, see [Async and task functions](../language-reference/async-task-functions.md).
 
 ## Writing .NET tasks directly in F\#
 

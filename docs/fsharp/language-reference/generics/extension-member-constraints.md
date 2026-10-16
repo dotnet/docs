@@ -12,7 +12,7 @@ An inline function with [statically resolved type parameters](statically-resolve
 Use this capability to separate a generic algorithm from adapters for particular types. You don't need to wrap those types or add a nominal interface to them.
 
 > [!NOTE]
-> The example library exports ordinary extensions and unresolved constraints, so it uses `<LangVersion>11.0</LangVersion>`. The application selects extensions for concrete types, so it uses `<LangVersion>preview</LangVersion>` and opens `Structural.Adapters`. A library that resolves constraints itself needs preview there; referencing an already-resolved API doesn't by itself require preview. See [Compile libraries and consumers](#compile-libraries-and-consumers) for the distinct cases.
+> Enable `<LangVersion>preview</LangVersion>` where the compiler resolves extensions. The path and mapping examples use a numbered F# 11 library and a preview consumer. See [Compile libraries and consumers](#compile-libraries-and-consumers).
 
 ## Adapt a property for a shared algorithm
 
@@ -28,11 +28,7 @@ The algorithm asks for a `Coordinates` property returning a pair of floating-poi
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="PathLength":::
 
-`^Point` is a statically resolved type parameter. The expression `(^Point : (member Coordinates: float * float) point)` states the member's shape and invokes it. The concrete member selected to satisfy a constraint is sometimes called its *witness*.
-
-The function is inline because member selection happens when the compiler specializes it for concrete types. `pathLength` itself doesn't name `Complex` or `Vector2`; a type with an intrinsic `Coordinates` property also works. Empty and single-point paths have length zero.
-
-Before this preview capability, an ordinary extension property could work in a direct call but couldn't satisfy this member constraint. An explicit coordinate projection function remains a simpler alternative when a member-based API isn't needed.
+At each concrete call, the compiler selects a `Coordinates` member, called the constraint's *witness*. The inline algorithm accepts either an intrinsic or extension property; empty and single-point paths have length zero.
 
 ## Share an operation across collection types
 
@@ -48,7 +44,7 @@ The application can then share a transformation, change the element type, and co
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/consumer/Program.fs" id="Mapping":::
 
-This is structural member selection: the compiler checks a member's name and type rather than requiring a declared interface implementation. It isn't higher-kinded polymorphism. No type parameter represents a generic container constructor such as `F<_>`, and the constraint doesn't enforce that an arbitrary adapter preserves a container or obeys mapping laws.
+The compiler checks member names and types, not interfaces or mapping laws. This isn't higher-kinded polymorphism: no parameter represents a container constructor such as `F<_>`.
 
 ## Operator extensions
 
@@ -68,7 +64,7 @@ let length: int option = Some "hello" |>> String.length
 
 Built-in primitive operator solutions retain priority for matching types. An extension doesn't provide arbitrary mixed-numeric widening or replace all built-in operators.
 
-In numbered F# 11 mode, an optional extension operator declaration emits FS1215 but can still produce a library. A preview consumer can resolve that operator as a constraint solution. Treating warnings as errors rejects that producer; suppressing the warning doesn't enable extension-based resolution in a numbered consumer. The [operator project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/operators/Operators.fsproj) uses preview to avoid this declaration warning.
+Numbered F# 11 can accept an ordinary extension-operator declaration with FS1215, but can't use it as an SRTP solution. The [operator project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/operators/Operators.fsproj) uses preview.
 
 ### Tuple operators and context
 
@@ -82,7 +78,7 @@ These library extensions give the operator a meaning for integers, lists, and pa
 
 `combineAll` requires a nonempty list because it uses `List.reduce`. The operation preserves list order; the compiler doesn't enforce associativity or supply an identity for an empty input.
 
-The native tuple header `type ('T1 * 'T2) with` maps to the corresponding CLR tuple type. `type struct ('T1 * 'T2) with` maps to a value tuple. Both headers require preview at the declaration, unlike an ordinary named-type extension declaration. Supported native header arities are two through seven. Eight or more elements are rejected with FS3915.
+Native headers `type ('T1 * 'T2) with` and `type struct ('T1 * 'T2) with` extend CLR reference and value tuples. Both require preview and support two through seven elements; larger headers produce FS3915.
 
 Tuples can also carry context alongside a value. The following operator appends a trail while applying a contextual function:
 
@@ -90,9 +86,9 @@ Tuples can also carry context alongside a value. The following operator appends 
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/composition/Composition.fs" id="ContextAdapters":::
 
-This is support for static members and operators, not general tuple instance-dot calls. Declaring an instance extension doesn't make `(1, 2).YourMember` supported. Native function-type headers such as `type ('a -> 'b) with` aren't supported either.
+Tuple dot-instance calls and native function-type headers such as `type ('a -> 'b) with` aren't supported.
 
-The [composition library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition/Composition.fsproj) and [consumer](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition-consumer/CompositionConsumer.fsproj) both use preview. In this example, the adapters cross the DLL boundary but `combineAll` is defined in the consumer. Moving that generic reduction into the library can fail during consumer code generation with FS0193 for the tuple `++` case, even with the adapter module open. Keeping the reduction with the consuming calls avoids this observed limitation; it isn't a universal rule against imported generic algorithms. The separate path and mapping examples do export their algorithms.
+The [composition library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition/Composition.fsproj) and [consumer](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition-consumer/CompositionConsumer.fsproj) both use preview. Keep `combineAll` in the consumer: exporting that reduction can produce FS0193 for tuple `++`. The separate path and mapping examples export their algorithms.
 
 ### Return-directed construction
 
@@ -104,9 +100,9 @@ For an operation that introduces a plain value into a container, the output type
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/composition-consumer/Program.fs" id="ReturnUse":::
 
-The consumer's annotation selects the supporting output type. Its `Return` extension is the witness; the input string alone can't choose the container. This imported `singleton` function is validated with both list and option results.
+The consumer's result annotation selects the output type's `Return` extension. The input alone can't choose a container.
 
-This example doesn't need `AllowOverloadOnReturnType`: each container supplies its own member. Use the [return-overload attribute](../parameters-and-arguments.md#select-by-return-type) when otherwise matching overloads on one type differ by their return types. Neither mechanism establishes higher-kinded polymorphism or a default output container.
+Each container supplies its own member. For return-only overloads on a single type, use the separate [`AllowOverloadOnReturnType` attribute](../parameters-and-arguments.md#select-by-return-type).
 
 ## Compile libraries and consumers
 
@@ -117,21 +113,13 @@ Language settings apply per project, not transitively through references. With a
 | Declares native tuple-extension headers. | Resolves their extension operators. | Both need preview; the new header syntax itself is preview. |
 | Defines ordinary extensions and exports an unresolved inline member constraint. | Supplies concrete types whose extensions solve that constraint. | Consumer needs preview. The library can use numbered F# 11. |
 | Solves an extension constraint internally and exposes an ordinary or already-resolved inline API. | Calls that API without further extension resolution. | Library needs preview; the consumer can use numbered F# 11. |
-| Solves extensions itself and also exports unresolved constraints. | Resolves those remaining constraints through extensions. | Both compilations need preview. |
-| Relies on preview-specific inference to retain an unresolved generic constraint. | Uses an extension case of that inferred API. | Both can need preview; inspect the exported signature. |
-| Exports ordinary extensions or intrinsic-member SRTP APIs. | Uses normal extension calls or intrinsic-member solutions. | Neither inherently requires this preview feature. |
+| Solves extensions and exports constraints that the consumer also resolves through extensions. | Resolves remaining constraints. | Both need preview. |
 
-The path and mapping examples use ordinary extension declarations and export an unresolved constraint for the consumer to resolve. The complete [library project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/library/Library.fsproj) selects `11.0`; the [consumer project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/consumer/Consumer.fsproj) selects `preview` and has a project reference to the library. From the consumer directory, run `dotnet run` with an F# 11 SDK containing the feature.
+The path and mapping [library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/library/Library.fsproj) uses `11.0`; its [consumer](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/consumer/Consumer.fsproj) uses `preview`. From the consumer directory, run `dotnet run` with a supporting F# 11 SDK.
 
 ### Extension scope across assemblies
 
-For an imported **unresolved** constraint, extensions must be in the consumer's scope. Keep `open Structural.Adapters` in the consumer even though the library's `Algorithms` module also opens it. Importing the function doesn't import the producer's candidate environment.
-
-Within a compilation, the compiler captures the relevant extension scope when it defines the constraint. Don't assume that an `open` placed later changes an earlier definition. Open adapter modules before you define inline functions that rely on them.
-
-Use public extension members for these constraints. The preview solver requires public witnesses; ordinary same-assembly access to an internal member doesn't establish that it can satisfy a constraint. Optional extensions don't become members of the underlying .NET type, and callers in other .NET languages don't acquire these F# extension-resolution rules.
-
-Already-resolved APIs differ from unresolved ones. For example, a preview library can resolve an extension call at a concrete type and expose `unit -> string`, either ordinary or inline. A numbered consumer can call that API without reopening its adapters. Don't apply that result to a still-generic API that asks the consumer to find a member.
+Use public extensions and open their module before defining dependent inline functions. For an imported unresolved constraint, also open the adapters in the consumer; the producer's `open` declarations don't transfer. An already-resolved API doesn't require the consumer to reopen its adapters.
 
 ### Inference and signatures
 
@@ -143,17 +131,13 @@ let inline shift (date: System.DateTime) offset = date + offset
 
 In numbered F# 11, this form can infer `DateTime -> TimeSpan -> DateTime`. With the extension-resolution preview, it can retain a constraint for `(DateTime or ^Offset) : (static member (+) : DateTime * ^Offset -> ^Result)`. A consumer can then select a public, in-scope extension for a different offset type.
 
-A preview consumer can't recover generality that the library already compiled away. Check generated signatures and `.fsi` declarations when you introduce these rules; previously monomorphic helpers or ambiguous overload sets can need annotations.
-
-`AllowOverloadOnReturnTypeAttribute` is a separate facility for [return-directed overloads](../parameters-and-arguments.md#select-by-return-type). Its availability doesn't enable extension constraint resolution.
+A preview consumer can't recover generality lost in a numbered library. Check exported signatures; preview-specific inference can require preview in the producer too.
 
 ## Preview limitations and troubleshooting
 
-- If an ordinary extension call works but an SRTP call doesn't, check the language mode of the compilation solving the constraint and its adapter scope.
-- A missing extension or a disabled resolution feature can produce FS0001 or FS0193. Warning suppression isn't a substitute for the language setting.
-- An observed cross-file case can fail code generation with FS0971, `Undefined value 'get_Coordinates'`: one producer file defines the property adapter and inline path algorithm, and a later file resolves it for `Complex` in an exported function. The equivalent single-file producer succeeds. Keeping that concrete resolution with its definitions, or resolving the generic API in a separate consumer, avoids this particular case. This isn't a general prohibition on separate-assembly inline calls.
-- Extension visibility and overload selection remain significant. Two modules can provide competing members; these adapters don't form a globally unique implementation registry.
-- Static selection isn't a blanket zero-allocation guarantee. These examples still create lists, tuples, and mapped results; measure performance for the intended workload.
+- For FS0001 or FS0193, check preview settings, public visibility, and adapter scope.
+- If a later producer file resolves the path example for `Complex`, code generation can fail with FS0971, `Undefined value 'get_Coordinates'`. Keep that resolution with its definitions or in a separate consumer.
+- Competing adapters can make member selection ambiguous.
 
 ## See also
 

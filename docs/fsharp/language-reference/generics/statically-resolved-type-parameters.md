@@ -104,18 +104,11 @@ let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member r
 
 ## Extension member constraints
 
-Starting with F# 11 preview, extension members can satisfy the member requirements of generic inline code. For example, a path-length algorithm can require a coordinate property and use extensions to obtain it from existing framework types:
+With `<LangVersion>preview</LangVersion>`, F# 11 can select public, in-scope extension members as constraint solutions. The following function can use `Map` extensions on existing list and option types:
 
-> [!NOTE]
-> Extension members as SRTP constraint solutions require `<LangVersion>preview</LangVersion>`.
+:::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Map":::
 
-:::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Coordinates":::
-
-:::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="PathLength":::
-
-Use public extensions and open their module before you define dependent inline functions. Across an assembly boundary, an imported unresolved constraint uses the consumer's extension scope, not the producer's `open` declarations. The compilation that resolves an extension needs preview; merely importing a preview-produced library doesn't.
-
-See [Extension members for SRTP constraints](extension-member-constraints.md) for complete producer/consumer projects, mapping across lists and options, operator extensions, and inference and compatibility rules. The extensions don't make a type implement a nominal interface with static abstract members. Built-in primitive operator solutions retain priority for matching types.
+See [Extension members for SRTP constraints](extension-member-constraints.md) for the adapters, call sites, and library-scope requirements.
 
 ## See also
 

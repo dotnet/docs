@@ -15,7 +15,7 @@ To start a .NET operation with the async workflow's cancellation token, pass a f
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Await":::
 
-The file read receives the running async workflow's token, supplied when the caller starts that workflow. A missing file returns `None`, while a successful read returns `Some contents`. The workflow waits for the operation to finish, including its cancellation or cleanup. Starting the operation without passing its token and only then awaiting it can't retroactively make the operation observe cancellation.
+The file read receives the workflow's cancellation token. A missing file returns `None`; a successful read returns `Some contents`. The workflow waits for completion, including cancellation and cleanup.
 
 Use `Async.Await` when you already have a task-like value. Both APIs propagate the single underlying exception of a faulted task directly. An aggregate with multiple inner exceptions remains an aggregate. `Async.AwaitTask` keeps its existing exception-wrapping behavior.
 
@@ -29,7 +29,7 @@ Use `Async.Await` when you already have a task-like value. Both APIs propagate t
 | `Task.startAsyncImmediate` | `CancellationToken -> Async<'T> -> Task<'T>` |
 | `Async.RunSynchronouslyImmediate` | `Async<'T> * ?cancellationToken: CancellationToken -> 'T` |
 
-`Async.RunSynchronouslyImmediate` begins on the calling thread until the first asynchronous suspension and then blocks for completion. Unlike `Async.RunSynchronously`, it doesn't initially offload foreground-thread execution. It has no timeout parameter. Neither synchronous runner is a substitute for asynchronous composition on a UI or request thread.
+`Async.RunSynchronouslyImmediate` starts on the calling thread, unlike `Async.RunSynchronously` on a foreground thread, and blocks for completion. It has no timeout parameter. Prefer asynchronous composition on UI and request threads.
 
 ### Expose an async workflow as a task
 
@@ -37,7 +37,7 @@ To offer the file-reading workflow above to task-based callers, accept a cancell
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="AsyncBoundary":::
 
-The return type is `Task<string option>`. A successful read returns `Some contents`, a missing file returns `None`, and cancellation still propagates. The bridge starts the workflow on the calling thread until its first asynchronous suspension. It doesn't promise to run every continuation on that thread.
+The bridge returns `Task<string option>` and propagates cancellation. It starts on the calling thread until the first suspension; later continuations needn't use that thread.
 
 ## Bound concurrency
 
@@ -48,12 +48,6 @@ An `Async<'T>` value describes deferred work. A task usually represents an opera
 `Task.parallelLimit` starts at most the positive limit of computations concurrently and returns results in input order. Start order and completion order are otherwise unspecified. For concurrency greater than one, each factory receives a linked token that also signals sibling failure; for sequential execution it receives the supplied token directly.
 
 When one computation faults, cancellation is requested for its siblings. Operations must observe their tokens to cooperate. If several computations fail, one exception is propagated; don't depend on which failure wins.
-
-To observe result ordering without relying on timer delays or worker scheduling, complete two task results explicitly in reverse order:
-
-:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Coordination.fs" id="Ordering":::
-
-`TaskCompletionSource<'T>` lets the example supply a task's result explicitly. The returned array follows the factories' order even though the second source receives its result first. The example doesn't prescribe start order or elapsed time.
 
 | Function | Signature shape |
 |---|---|
@@ -96,13 +90,13 @@ let completion: System.Threading.Tasks.Task<unit> =
 
 `catchWith` supplies a replacement value for a non-cancellation failure; it doesn't run another asynchronous computation. `catch` returns `Ok` or `Error`. Cancellation isn't converted to an error value or passed to the recovery handler. `Task.empty` is a `Task<unit>`, not the non-generic `Task.CompletedTask`.
 
-The lowercase `Async.catch` returns `Result`, whereas the existing `Async.Catch` returns `Choice`. `catchWith` and `catch` observe failures of the supplied computation; they can't catch a synchronous exception thrown before you supply that computation. The functions preserve async's deferred execution and task's eager execution; a common name doesn't make their scheduling models identical.
+Unlike lowercase `Async.catch`, existing `Async.Catch` returns `Choice`. Recovery handles failures of the supplied computation, not synchronous exceptions thrown before the call. Async remains deferred; tasks remain eager.
 
 ## ValueTask and library availability
 
-The ValueTask APIs are available in the `netstandard2.1` and `net10.0` builds of FSharp.Core 11, not its `netstandard2.0` build. These are target-specific versions of the library within the same package, selected by NuGet for your project's target framework. Use a package version containing the API you call; changing `LangVersion` doesn't add library functions.
+ValueTask APIs require the `netstandard2.1` or `net10.0` build of FSharp.Core 11. See [Core target selection](../fsharp-core-targeting.md).
 
-`ValueTask<'T>` is a struct that can contain a result directly or represent an asynchronous operation. Observe its [single-consumption contract](/dotnet/api/system.threading.tasks.valuetask-1#remarks): don't await the same value repeatedly or concurrently, or pass it into separate combinator pipelines. A single pipeline consumes its input and passes its new result onward. If repeated awaits are required, call `Task.ofValueTask` once and reuse only the resulting task; don't consume the original value task again.
+Observe the [ValueTask single-consumption contract](/dotnet/api/system.threading.tasks.valuetask-1#remarks): consume each value once, not through separate awaits or pipelines. For repeated awaits, call `Task.ofValueTask` once and reuse only the resulting task.
 
 ## See also
 

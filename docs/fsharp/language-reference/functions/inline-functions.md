@@ -78,31 +78,21 @@ To avoid repeated arity adaptation when a callback can't be inlined, F# 11 suppo
 
 :::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Closure":::
 
-The containing function must be inline, both attributes must be present, and the callback must be curried with two through five arguments. A known lambda can be inlined; an opaque callback can instead be adapted once to an optimized closure. The attribute doesn't guarantee zero allocations for arbitrary callbacks.
-
-FSharp.Core 11 uses callback inlining and adaptation in selected `List` and `Array` higher-order functions. A capturing predicate is one useful case:
-
-:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Collection":::
-
-Inlining can eliminate a separate callback closure; it doesn't eliminate every allocation performed by the operation or its caller. Newly changed examples include `List.exists`, `List.fold`, and `Array.fold`; `Array.exists` was already inline before F# 11. Consumers need an FSharp.Core containing the attribute and a compiler that understands it. Measure optimized, representative call sites rather than assuming every use of `inline` is faster.
+The function must be inline, both attributes must be present, and the callback must be curried with two through five arguments. A known lambda can inline; an opaque callback can be adapted once. This requires FSharp.Core 11 and compiler support, but doesn't guarantee zero allocations.
 
 ## Debug inline functions
 
-To step into a helper and inspect its parameters, compile without optimization and retain debugging information. Starting with F# 11, non-optimized builds prefer a normal call for inline functions instead of always erasing the call through expansion:
+To step into inline helpers, compile without optimization and retain debugging information. F# 11 prefers normal calls in these builds:
 
 :::code language="fsharp" source="../snippets/inline-functions/DebugInline.fs" id="DebugInline":::
 
-In the [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/inline-functions/DebugInline.fsproj), set a breakpoint on `let total = amount + fee`. Step into `addFee` from the call and inspect `fee` and `amount`. The emitted non-optimized code contains the call and source sequence points; optimized code can fold the calculation instead.
+In the [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/inline-functions/DebugInline.fsproj), set a breakpoint on `let total`, step into `addFee`, and inspect its arguments.
 
-The behavior follows optimization settings, not the configuration's name. With optimization enabled, inline expansion remains the default. A specialized callable method can be generated where required, but some constructs—including operations requiring static expansion or resumable code—must still inline.
-
-Use `--always-inline` to request the older always-inline behavior even without optimization. This changes the debugging opportunity; it isn't a recommendation to disable optimization in Release builds. See [Compiler options](../compiler-options.md) and [Tooling performance](../../tools/tooling-performance.md).
+Optimized builds still inline by default. Some constructs, including resumable code and operations requiring static expansion, must inline even without optimization. Use [`--always-inline`](../compiler-options.md) to request the older behavior.
 
 ## Inline extension constraints across libraries
 
-F# 11 preview can use public extension members to satisfy SRTP requirements.
-
-See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for tested project arrangements, inference changes, and a cross-file preview code-generation limitation.
+F# 11 preview can use public extension members to satisfy SRTP requirements. See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for scope and library requirements.
 
 ## See also
 

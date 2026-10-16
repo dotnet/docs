@@ -123,18 +123,18 @@ Note that those members could perform any arbitrary work, the syntax is effectiv
 
 ### Require named arguments
 
-Generated API parameter order can change with SQL or other metadata. When same-typed positional arguments would still compile with a different meaning, an API author can make names part of the contract with `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
+To protect calls from generated parameter-order changes, use `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
 
 > [!NOTE]
 > Enforcement requires `<LangVersion>preview</LangVersion>`. The attribute must exist in the referenced metadata or source; the compiler doesn't synthesize it.
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Named":::
 
-`Query.Execute(3m, 4m)` is rejected. Reversing the parameter declaration to `Execute(denominator: decimal, numerator: decimal)` leaves the named call unchanged and still produces `0.75m`. This simulates the ordering change; a real type provider must emit the annotation itself. Parameter names are now a source contract, so renaming one affects callers.
+`Query.Execute(3m, 4m)` is rejected. Reordering the declarations preserves the named call's meaning; renaming a parameter breaks it.
 
-This rule covers method and constructor calls, not property/indexer syntax, delegate invocation, or attributes placed on individual parameters. `nameof` doesn't invoke the method and isn't subject to the call rule. Omitted optional parameters can stay omitted; pass a parameter array by name rather than as expanded positional arguments. Curried members and module functions don't acquire named-argument syntax.
+The rule covers methods and constructors, not properties, indexers, delegate invocation, or module functions. Optional arguments can stay omitted; pass parameter arrays by name rather than as expanded positional arguments.
 
-For reference assemblies without this attribute, the sample places the following compatibility definition in `Compatibility.fs`, before `Preview.fs` in compile order. Omit the definition when your referenced framework or library already provides it:
+If your references lack the attribute, define it before the consuming code. The sample uses `Compatibility.fs`; omit this definition if your references provide it:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Compatibility.fs" id="NamedAttribute":::
 
@@ -149,17 +149,15 @@ To distinguish a value from an already-wrapped value, the most-concrete tiebreak
 
 The inferred type is `ValueTask<int>`: the constructor wraps the task, rather than treating it as a result value of type `Task<int>`.
 
-The tiebreaker is a last resort, not a replacement for all existing overload rules. It doesn't order unrelated parameter types or SRTP candidates, and genuinely incomparable overloads can remain ambiguous.
-
-To inspect a selection, enable informational diagnostics FS3575 (the preferred overload) and FS3576 (the bypassed generic overload) through [opt-in warnings](compiler-options.md#opt-in-warnings).
+This last-resort rule doesn't order unrelated types or SRTP candidates. To inspect the selection, enable [informational diagnostics](compiler-options.md#opt-in-warnings) FS3575 (preferred overload) and FS3576 (bypassed generic overload).
 
 To keep an old binary entry point while preferring a richer API for new source compilations, a library author can set a higher `System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute` value. Here the replacement records the caller's source line through the existing `CallerLineNumber` facility:
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Priority":::
 
-Without the priority attribute, the one-parameter overload wins and returns `Check failed.`. With priority 1, the overload with an optional line argument wins and includes the call-site line. Unannotated overloads have priority 0; negative priorities can deprioritize legacy members. The attribute is available in .NET 9 and later reference assemblies.
+Priority 1 selects the line-aware overload; without the attribute, the one-parameter overload wins. Unannotated members have priority 0. The attribute is available in .NET 9 and later references.
 
-Priority prunes applicable candidates within a declaring type before ordinary betterness rules. It doesn't make an inapplicable overload applicable or impose global ordering on extension modules. Equal priorities return to normal rules. Don't assume it changes F# property/indexer selection; attributes on overrides are rejected in preview mode. Carrying the metadata doesn't itself require producer preview, but the consuming compiler needs preview to apply this selection behavior.
+Priority filters applicable candidates within a declaring type before normal overload rules; equal priorities use those rules. It doesn't rank extension modules or change property/indexer selection. Preview mode rejects the attribute on overrides. Only the consuming compiler needs preview to apply the priority.
 
 ### Select by return type
 
@@ -167,9 +165,7 @@ To construct a plain value in the container a caller needs, FSharp.Core 11's `Al
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
 
-Both `Inject.Pure` overloads accept the same generic input, but one returns a list and the other an option. Without the attribute these calls are ambiguous; without a known result type they remain ambiguous even with it. Annotate the result to express the intended container.
-
-Return-only overloading isn't automatically a source-compatible migration strategy: adding an overload can make previously inferred calls ambiguous. It is distinct from [return-directed structural construction](generics/extension-member-constraints.md#return-directed-construction), which uses the output type as the supporting type for a member constraint. If that witness is an extension, its preview requirements apply separately.
+Annotate the result to select a list or option. Without the attribute or a known result type, the call is ambiguous. Adding return-only overloads can therefore break inferred calls. This differs from [structural construction](generics/extension-member-constraints.md#return-directed-construction), which selects a member on the output type.
 
 ## Optional parameters
 

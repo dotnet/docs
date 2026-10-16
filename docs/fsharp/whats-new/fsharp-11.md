@@ -23,52 +23,26 @@ Thank you to the F# community for the proposals, implementations, reviews, and t
 
 ## Record spreads: distinct models without repetitive mappings
 
-To keep storage details out of your application model, give each model its own type. Record spreads reuse the fields those types share without repeating field declarations and assignments.
-
-### Separate storage representation from domain meaning
-
-These records deliberately share customer details, but give the identifier different types. Only the storage row carries an internal note:
+To keep storage and application models distinct, record spreads reuse their shared fields without repeated declarations. Here the models share customer details but use different identifier types:
 
 :::code language="fsharp" source="snippets/fsharp-11/Records.fs" id="Models":::
 
-In a type declaration, `...CustomerDetails` contributes its field declarations to a new named record. `Customer` and `CustomerRow` remain distinct types; neither is a subtype of the other.
-
-At the boundary, the conversion says what matters: parse the identifier and choose the destination model. The value spread, `...row`, supplies its unchanged fields:
+`...CustomerDetails` contributes field declarations. At the boundary, `...row` copies values while the conversion parses the identifier:
 
 :::code language="fsharp" source="snippets/fsharp-11/Records.fs" id="Mapping":::
 
-`Guid.TryParse` performs the check; spreading doesn't validate data. The destination's declared shape keeps `Name` and `PreferredLanguage`, replaces `Id`, and excludes `InternalNote`. A malformed identifier produces `Error`, not a partially converted customer.
+The destination keeps the shared details, replaces `Id`, and excludes `InternalNote`. `Guid.TryParse`, not the spread, validates the identifier; malformed input produces `Error`.
 
-The example addresses the [application-layer mapping problem behind the design](https://github.com/fsharp/fslang-design/discussions/806#discussioncomment-14516027). Use type spreads when fields should evolve together; use value spreads even when you declare the source and destination types independently.
-
-### Assemble a frontend model from named and anonymous records
-
-A product card needs public product details and stock counts, not the complete persistence model. Its fields can combine a named source type and an anonymous one:
-
-:::code language="fsharp" source="snippets/fsharp-11/Records.fs" id="ComposeTypes":::
-
-The value construction combines independently obtained data and computes availability. Local UI state can then use an anonymous record:
-
-:::code language="fsharp" source="snippets/fsharp-11/Records.fs" id="Compose":::
-
-`InternalCost` isn't a field of `ProductCard` or the resulting view state. An independently declared destination also makes a smaller projection explicit:
-
-:::code language="fsharp" source="snippets/fsharp-11/Records.fs" id="Project":::
-
-Value spreads work between named and anonymous records in all four source/destination combinations. **Type** spreads produce named records only. They don't introduce implicit conversions, an omission operator, or database-side projection.
-
-For repeated fields, the rightmost contribution wins; source expressions run once in source order. Unlike a same-type `{ record with ... }` update, spreads can construct a different record or combine several sources. See [Record spread operators](../language-reference/record-spreads.md) for field-type replacement, evaluation, and shared-evolution guidance.
+This addresses the [application-layer mapping problem](https://github.com/fsharp/fslang-design/discussions/806#discussioncomment-14516027). Value spreads also combine named and anonymous records; type spreads create named records only. Later fields win, and sources run once in order. See [Record spread operators](../language-reference/record-spreads.md) for composition examples and shared-evolution risks.
 
 Thanks to [@brianrourkeboll](https://github.com/dotnet/fsharp/pull/18927) for record spreads.
 
 ## Extension members for generic algorithms, operators, and tuples
 
-A reusable transformation might need to work on both a batch and a single optional value. Instead of separate algorithms or wrapper types, extension members let each existing type supply the operations a shared algorithm needs.
-
-F# 11 preview lets **extension members satisfy statically resolved type parameter (SRTP) constraints**. An extension that works in a direct call can now also supply the required member in a generic operation.
+To share an algorithm across existing types, F# 11 preview lets **extension members satisfy statically resolved type parameter (SRTP) constraints**. For example, one transformation can handle lists and options without wrapper types.
 
 > [!NOTE]
-> Extension-based constraint solving requires `<LangVersion>preview</LangVersion>` where the compiler selects the extensions. Open their module at the call site. Library requirements depend on whether it merely exports a constraint or also resolves it; [the reference explains the producer/consumer cases](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers).
+> Enable `<LangVersion>preview</LangVersion>` where extensions are resolved and open their module. See [library requirements](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers).
 
 ### Share a transformation across lists and options
 
@@ -86,23 +60,15 @@ The shared function in `Structural.Algorithms` asks the input type for a static 
 
 `^Input` and `^Output` are statically resolved types. At each concrete call, the compiler selects the member with the required signature. The extensions don't add an interface implementation. The [complete application](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/consumer/Program.fs) opens both modules.
 
-The same capability reaches beyond collections: [a path-length example](../language-reference/generics/extension-member-constraints.md#adapt-a-property-for-a-shared-algorithm) adapts the different coordinate APIs of `Complex` and `Vector2` to one algorithm.
-
 ### Operators, context, and output types
 
-The same mechanism supports these capabilities:
-
-- [Operator composition](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) combines counts, observations, and tuple components without wrappers.
-- [Context propagation](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) carries an audit trail alongside a calculation.
-- [Return-directed construction](../language-reference/generics/extension-member-constraints.md#return-directed-construction) uses the expected output type to select a container without a dummy argument. See the [return-overloading proposal](https://github.com/fsharp/fslang-suggestions/issues/820#issuecomment-568313755) for the original problem.
-
-Native reference and struct tuple headers support two through seven elements and require preview where declared. Callers also need preview to resolve extension operators. These headers don't enable tuple instance-dot calls or function-type headers.
+The same mechanism supports [tuple operators and context propagation](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) and [output-directed construction](../language-reference/generics/extension-member-constraints.md#return-directed-construction). Native tuple headers require preview at their declarations as well as at extension-solving call sites.
 
 A **separate** addition, `AllowOverloadOnReturnType`, lets one factory declare overloads distinguished by their returns:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
 
-This attribute comes from FSharp.Core 11 and doesn't itself require preview. The expected result type disambiguates the call; remove it and these overloads are ambiguous. Structural return-directed construction instead selects a member on the supporting output type. See [Select by return type](../language-reference/parameters-and-arguments.md#select-by-return-type).
+This Core 11 attribute doesn't require preview. The result annotation selects an overload; without it the call remains ambiguous. See [Select by return type](../language-reference/parameters-and-arguments.md#select-by-return-type).
 
 Thanks to [@gusty](https://github.com/dotnet/fsharp/pull/19602) for extending generic programming support.
 
@@ -110,47 +76,31 @@ Thanks to [@gusty](https://github.com/dotnet/fsharp/pull/19602) for extending ge
 
 ### Direct delegates preserve the handler's real contract
 
-Named handlers are easier to reuse and test, but a web framework also needs their parameter names and binding attributes. Previously, a generated delegate wrapper could hide that metadata. F# 11 can point the delegate directly at the compatible named function, so [ASP.NET Core Minimal APIs](/aspnet/core/fundamentals/minimal-apis/parameter-binding) see the contract you wrote.
-
-This handler takes a route value, a service, and a named header:
+To expose handler names and binding attributes to frameworks, F# 11 can target a compatible named function directly instead of a wrapper. [ASP.NET Core Minimal APIs](/aspnet/core/fundamentals/minimal-apis/parameter-binding) can then read the route, service, and header contract:
 
 :::code language="fsharp" source="../language-reference/snippets/delegates/Program.fs" id="Handler":::
 
-The framework binds `trackingId` from the route, resolves the service, and reads the `X-Customer` header. For the runnable application, see the [complete project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj).
-
-Direct construction also exposes the original method/receiver identity. Captures, argument adaptation, and other expression shapes can still require wrappers; this isn't delegate caching. See [Delegates](../language-reference/delegates.md#direct-construction-and-framework-metadata) for construction rules and null-receiver compatibility.
+See the [runnable project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj) and [construction/compatibility rules](../language-reference/delegates.md#direct-construction-and-framework-metadata). Captures and argument adaptation can still require wrappers.
 
 Thanks to [@kerams](https://github.com/dotnet/fsharp/pull/19993) for direct delegates.
 
-### XML include: one maintenance point for shared text
+### Reuse XML documentation
 
-Related API members often need the same important remarks but different summaries. Copying those remarks leaves several places to update when the contract changes. XML [`<include>`](../../csharp/language-reference/xmldoc/recommended-tags.md#include) lets you maintain the common text once and put it into each member's generated documentation.
-
-Here `shared.xml` holds the policy for an unknown shipment:
+To maintain shared API remarks once, place them in `shared.xml`:
 
 :::code language="xml" source="../language-reference/snippets/xml-documentation/shared.xml":::
 
-Both APIs include that policy while keeping their own summaries:
+With `GenerateDocumentationFile` enabled, F# 11 expands `<include>` into the emitted member entries:
 
 :::code language="fsharp" source="../language-reference/snippets/xml-documentation/Tracking.fs" id="Include":::
 
-With `GenerateDocumentationFile` enabled, both emitted member entries contain the shared `remarks`. Change the fragment and regenerate to update both. See the [include implementation](https://github.com/dotnet/fsharp/pull/19186) and [Include resolution](../language-reference/xml-documentation.md#reuse-and-inherit-documentation) for paths, XPath, and diagnostics.
+The [include implementation](https://github.com/dotnet/fsharp/pull/19186) updates both descriptions from one fragment. Separately, the [tooling resolver](https://github.com/dotnet/fsharp/pull/19188) exposes base descriptions for `<inheritdoc/>`; the compiler leaves that tag for documentation consumers. See [XML documentation](../language-reference/xml-documentation.md#reuse-and-inherit-documentation) for examples and resolution rules.
 
-Thanks to [@T-Gro](https://github.com/dotnet/fsharp/pull/20231) for applying shared XML documentation in FSharp.Core.
-
-### XML inheritdoc: find the abstraction's contract on its implementation
-
-When a base API already documents an operation, repeating that text on every override risks drift. F# tooling can now show the inherited description when you ask for help on the implementing member:
-
-:::code language="fsharp" source="../language-reference/snippets/xml-documentation/Tracking.fs" id="Inherit":::
-
-Help for `TrackingService.Status` exposes “Find the latest status of a shipment.” The compiler still emits [`<inheritdoc/>`](../../csharp/language-reference/xmldoc/recommended-tags.md#inheritdoc); the [new resolver](https://github.com/dotnet/fsharp/pull/19188) belongs to F# tooling and FSharp.Compiler.Service, not to XML emission. Downstream documentation generators need their own inheritance support. See [Inherited documentation in tooling](../language-reference/xml-documentation.md#inherited-documentation-in-tooling).
+Thanks to [@T-Gro](https://github.com/dotnet/fsharp/pull/20231) for shared XML documentation in FSharp.Core.
 
 ### Debug inline functions in non-optimized builds
 
-An inline helper shouldn't force you to choose between efficient Release code and useful breakpoints during development. In non-optimized builds, the compiler now prefers callable methods for inline functions, with source sequence points that support stepping into their bodies and inspecting arguments.
-
-Set a breakpoint on `let total` in a non-optimized build, then step into `addFee`:
+To inspect inline helper arguments, set a breakpoint on `let total` in a non-optimized build and step into `addFee`. F# 11 now prefers callable methods in these builds:
 
 :::code language="fsharp" source="../language-reference/snippets/inline-functions/DebugInline.fs" id="DebugInline":::
 
@@ -158,7 +108,7 @@ Optimized builds retain inlining. Some constructs must still expand. See [Debug 
 
 ## Async and task coordination
 
-File and HTTP APIs return tasks; F# workflows carry cancellation and handle exceptions. Bridging the two shouldn't require each project to rediscover the same helpers. FSharp.Core 11 brings coordinated operations for short transformations, cancellation-aware startup, and bounded batches, alongside the existing `async` and `task` builders.
+To connect F# workflows with task-based APIs, FSharp.Core 11 adds cancellation-aware bridges, bounded batches, and result transformations.
 
 ### Bound outstanding I/O, not just the result collection
 
@@ -166,9 +116,7 @@ A large batch of reads can start more work than an application should have outst
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Bounded":::
 
-`Task.parallelLimit` runs at most four reads concurrently and returns contents in input order, regardless of completion order. If one fails, it requests cancellation of sibling work. Passing the supplied token into the I/O lets that request reach the operation.
-
-The limit controls concurrency, not requests per second. Existing `Async.Parallel` already supports bounded concurrency; the new task-factory API and unit-result variants make this coordination more consistent. See [Async and task functions](../language-reference/async-task-functions.md) for sequential variants and a controlled out-of-order completion example.
+At most four reads run concurrently; results retain input order. A failure requests sibling cancellation through the supplied tokens. This limits concurrency, not requests per second. See [Async and task functions](../language-reference/async-task-functions.md) for sequential and unit-result variants.
 
 ### Keep cancellation and the underlying exception across the boundary
 
@@ -178,13 +126,7 @@ When a workflow starts external work, its token should travel with that work. `A
 
 A single task failure reaches this handler as the underlying `FileNotFoundException`. For an already-created task or value task, use `Async.Await`; the older `Async.AwaitTask` retains its exception-wrapping behavior.
 
-The reverse boundary also makes cancellation explicit:
-
-:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="AsyncBoundary":::
-
-`Task.startAsyncImmediate` starts the workflow on the calling thread until its first asynchronous suspension. It doesn't force uncooperative I/O to cancel.
-
-For debugging or tests that need a blocking entry point, `Async.RunSynchronouslyImmediate` starts directly on the calling thread for a simpler initial call stack. It remains a blocking boundary, with different synchronization-context behavior from `RunSynchronously`; it isn't a general replacement.
+For task-based callers, `Task.startAsyncImmediate token workflow` provides the reverse bridge. It starts on the calling thread until the first asynchronous suspension.
 
 ### Use matching helpers for short transformations
 
@@ -194,7 +136,7 @@ To transform one result without a full computation expression, use the matching 
 
 A file containing `Report 1` gives `Ok 8`; a missing file gives an `Error` containing `FileNotFoundException`. Cancellation still propagates. `Async` and `ValueTask` offer matching `map`, `bind`, and error helpers; see [Async and task functions](../language-reference/async-task-functions.md). Use a computation expression for branches or several dependent values.
 
-`ValueTask<'T>` can hold a result directly or represent asynchronous work. Consume each value task only once, including copies and separate transformation pipelines. If you need repeated awaits, convert once with `Task.ofValueTask` and reuse only the resulting task. ValueTask helpers are in Core's `netstandard2.1` and `net10.0` builds, not `netstandard2.0`.
+ValueTask helpers require Core's `netstandard2.1` or `net10.0` build and [single consumption](../language-reference/async-task-functions.md#valuetask-and-library-availability).
 
 Thanks to [@bartelink](https://github.com/dotnet/fsharp/pull/19844) for async/task API contributions.
 
@@ -207,25 +149,19 @@ Operational logging should add information without changing what the caller catc
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
 
-If the logger completes successfully, the caller receives the same exception object with its original throw-site information preserved. Exception-dispatch frames can be added; the stack needn't be byte-for-byte identical. If logging itself fails, that failure can replace the original.
-
-This addresses the [long-standing async observability request](https://github.com/fsharp/fslang-suggestions/issues/660), without a custom exception-dispatch helper. It doesn't require runtime async. See [Rethrow from a computation expression](../language-reference/computation-expressions.md#rethrow-from-a-computation-expression).
+After successful logging, the same exception and original throw-site information propagate. A logger failure can replace the original. This addresses the [async observability request](https://github.com/fsharp/fslang-suggestions/issues/660) without runtime async. See [Rethrow from a computation expression](../language-reference/computation-expressions.md#rethrow-from-a-computation-expression).
 
 Thanks to [@xperiandri](https://github.com/dotnet/fsharp/pull/20405) for this support.
 
 ## FSharp.Core can build on modern .NET
 
-Running on a newer runtime doesn't let a library directly call APIs absent from its compilation target. FSharp.Core now ships a **`net10.0` build alongside `netstandard2.0` and `netstandard2.1`**, so it can use modern .NET APIs while retaining the older-target builds.
-
-NuGet selects the compatible build for your project. The modern target permits target-specific APIs and behavior without removing the .NET Standard builds. The target version advances through an explicit release decision, not an automatic “always latest .NET” policy.
-
-The SDK toolset also uses the modern Core build so task-based asynchronous disposal works in F# Interactive as it already did in compiled projects. The change fixes tool packaging; it doesn't introduce `IAsyncDisposable` support to task expressions. See [FSharp.Core target frameworks](../fsharp-core-targeting.md).
+To use modern APIs without dropping older targets, FSharp.Core adds **`net10.0` alongside `netstandard2.0` and `netstandard2.1`**. NuGet selects the compatible build. Updated tool packaging also enables task-based asynchronous disposal in F# Interactive, as in compiled projects. See [FSharp.Core target frameworks](../fsharp-core-targeting.md).
 
 Thanks to @T-Gro for [modern Core targeting](https://github.com/dotnet/fsharp/pull/20229) and [SDK tool packaging](https://github.com/dotnet/fsharp/pull/20555).
 
 ### Runtime async for builder authors
 
-Builder authors can explore a further consequence of modern runtime support: let the runtime suspend and resume a marked method instead of having the language compiler generate the usual async state machine. A library-defined builder can expose that mechanism through familiar computation-expression use:
+Builder authors can let the runtime suspend and resume marked methods instead of using compiler-generated state machines. An experimental library-defined builder exposes the mechanism as a computation expression:
 
 :::code language="fsharp" source="../language-reference/snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
 
@@ -238,7 +174,7 @@ Thanks to [@majocha](https://github.com/dotnet/fsharp/pull/20235) for runtime as
 
 ## Native AOT-friendly text and two-dimensional arrays
 
-Small command-line tools and services still need status messages and ordinary data structures when deployed with [Native AOT](../../core/deploying/native-aot/index.md). Familiar F# operations shouldn't unnecessarily pull in reflection-based formatting or allocation paths that native deployment can't support. F# 11 improves those paths without asking applications to replace everyday reporting and grid code.
+To support [Native AOT](../../core/deploying/native-aot/index.md), F# 11 removes reflection-based formatting and dynamic allocation requirements from more common text and array operations.
 
 ### Print values and build strings without a redundant format layer
 
@@ -246,15 +182,9 @@ When you already have a string, you don't need a `"%s"` format just to write it.
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Report":::
 
-Ordinary-string interpolation now supports more direct conversions and `System.String.Concat` lowering. Concatenation here is a compiler implementation improvement, not a new Core `Concat` API. Earlier releases already optimized some string-only cases.
+String interpolation uses direct conversion and `String.Concat` in more cases. .NET-format holes such as `{total:F2}` use invariant formatting and box the value; `%A` and precision-bearing printf forms can still need printf formatting. Select an explicit culture for localized output.
 
-Plain values, and bare supported printf specifiers such as `%d`, can take direct paths. .NET-format holes such as `{total:F2}` use invariant `String.Format` and box the formatted value; `%A` and precision-bearing printf forms can still fall back to printf formatting. Don't infer that all formatting, boxing, or temporary allocations disappear.
-
-To display localized numbers, select the culture explicitly:
-
-:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Culture":::
-
-Neither the new print functions nor these interpolation improvements universally require the modern Core build. Their value conversions still matter: `printn` isn't `%A` pretty-printing. With `--reflectionfree`, newly compiled records and unions can also receive meaningful generated `ToString` implementations, provided their inner types' conversions are suitable. See [Interpolation and Native AOT](../language-reference/interpolated-strings.md#native-aot-and-string-valued-interpolation).
+With `--reflectionfree`, records and unions also gain generated `ToString` output. See [Interpolation and Native AOT](../language-reference/interpolated-strings.md#native-aot-and-string-valued-interpolation) for culture examples and supported paths.
 
 Thanks to [@bbatsov](https://github.com/dotnet/fsharp/pull/19265) for the print functions and [@charlesroddie](https://github.com/dotnet/fsharp/pull/19971) for the interpolation implementation.
 
@@ -266,45 +196,35 @@ A zero-based grid shouldn't require a replacement Array2D module just to avoid a
 
 `Array2D.create`, `init`, and `rebase` use the zero-based allocation path across Core builds. Bounds-preserving `map`, `mapi`, and `copy` can use a newer .NET allocation API in the `net10.0` build; the .NET Standard builds retain their fallback. Non-zero-based arrays aren't deprecated, but their native allocation restrictions remain.
 
-See [Two-dimensional arrays and Native AOT](../language-reference/arrays.md#two-dimensional-arrays-and-native-aot) for the operation table. Managed execution of this calculation isn't proof that an entire application and its dependencies publish natively.
+See [Two-dimensional arrays and Native AOT](../language-reference/arrays.md#two-dimensional-arrays-and-native-aot) for allocation paths and remaining restrictions. Check the complete application's publish diagnostics.
 
 Thanks to [@T-Gro](https://github.com/dotnet/fsharp/pull/20338) for the Array2D improvements.
 
 ## Less retained memory and less repeated work
 
-Large solutions can repeat analysis of the same code. Collection operations can allocate an object on every call. F# 11 reduces both costs; compiler memory savings and application allocation savings are separate results.
+F# 11 reduces repeated compiler analysis and some application allocations. These affect different workloads.
 
 ### Share referenced libraries across projects
 
-A multi-project solution often references the same large DLLs many times. Its language service can now share eligible imported library graphs instead of retaining a separate copy for each project. Analysis also creates less unused metadata and reuses repeated references.
+To avoid repeated copies of shared binary dependencies, the language service can share eligible imported library graphs across projects.
 
 In [the implementing PR's retained-memory experiment](https://github.com/dotnet/fsharp/pull/20296), the ten-project ReSharper.FSharp solution fell from 1,547.2 MB to 1,002.2 MB with sharing enabled. That is an off/on measurement for that workload, not a general F# 10-to-11 reduction. Solutions dominated by project references rather than shared binary references can see much smaller gains.
 
-Separate improvements reduce **temporary allocations** while reading DLL metadata and specializing inline code. Those savings aren't the same as memory retained while projects remain open, and measurements from different changes shouldn't be added. See [Tooling performance](../tools/tooling-performance.md) for scope and FCS controls.
+Metadata reading and inline specialization also reduce temporary allocations, a separate metric. See [Tooling performance](../tools/tooling-performance.md) for scope and controls.
 
 Thanks to [@auduchinok](https://github.com/dotnet/fsharp/pull/20296) for shared library imports.
 
 ### Compile independent work in parallel by default
 
-Projects with independent source-file branches can use available cores without opting into experimental switches. Parallel compilation is enabled by default for checking and supported optimization/code-generation work, while deterministic output and source-file ordering rules remain intact.
-
-Repeated overloaded calls also benefit from cached resolution—for example, thousands of assertions with the same argument types. Pattern-heavy transformation code avoids a pathological expansion of guarded alternatives that could previously cause extreme compile time, memory use, or stack overflow. These are different sources of wasted work, not new overload-selection rules.
-
-See [Parallel compilation](../language-reference/compiler-options.md#parallel-compilation) for comparison controls. The build tasks also support MSBuild's per-task environment and path isolation when concurrent tasks share a process; this is separate from parallel work inside the compiler.
-
-To reduce repeated editor work, Visual Studio reuses diagnostics for unchanged documents, Find All References limits concurrent checks, and FCS avoids duplicate analysis from overlapping requests. These changes target editor responsiveness, not application runtime speed. See [F# tooling performance](../tools/tooling-performance.md).
+[Parallel compilation](../language-reference/compiler-options.md#parallel-compilation) is now enabled by default, with deterministic output and source-order rules preserved. Overload caching and guarded-pattern improvements avoid other repeated work. Visual Studio/FCS also reduce unchanged-document analysis and bound concurrent checks; see [Tooling performance](../tools/tooling-performance.md).
 
 ### Avoid callback and empty-result allocation overhead
 
-A collection predicate often captures a threshold from its caller. Newly inline operations such as `List.exists`, `List.fold`, and `Array.fold` let optimized code avoid some callback objects without rewriting the traversal:
-
-:::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Collection":::
-
-For your own inline helpers, `OptimizeClosureIfNotInlined` prepares a curried callback's calling convention once when the compiler doesn't know its body:
+Selected `List` and `Array` functions now inline callbacks. For your own inline helpers, `OptimizeClosureIfNotInlined` adapts an opaque curried callback once:
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Closure":::
 
-Result collections and callback internals can still allocate. The earlier Boolean output isn't a speed measurement. See [Optimize curried callbacks](../language-reference/functions/inline-functions.md#optimize-curried-callbacks) for the attribute's requirements.
+Other allocations can remain. See [Optimize curried callbacks](../language-reference/functions/inline-functions.md#optimize-curried-callbacks) for requirements.
 
 Empty results are another common case of successful work. [FSharpLint's motivating workload](https://github.com/dotnet/fsharp/issues/20382) repeatedly combined rules that found **no warnings**. Core now reuses shared empty arrays in more operations:
 
@@ -318,25 +238,25 @@ Thanks to @T-Gro for [inline collection callbacks](https://github.com/dotnet/fsh
 
 ### Require names when generated parameter order can change
 
-A generated method can change parameter order when its SQL or metadata changes. If the arguments share a type, positional calls can keep compiling while silently changing meaning. An API author can now require names as part of the call-site contract:
+To protect generated APIs from silent parameter-order changes, an author can require named arguments:
 
 > [!NOTE]
 > Enforcement requires preview and an available `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute` definition. The [complete sample](../language-reference/parameters-and-arguments.md#require-named-arguments) supplies a compatibility definition for references that lack it.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Named":::
 
-Reverse the declaration to `Execute(denominator: decimal, numerator: decimal)` and the named call still computes `0.75M`. The positional call is rejected. This compact example simulates the [generated-API ordering problem](https://github.com/fsharp/fslang-suggestions/issues/414); existing type providers benefit only if they emit the annotation. Renaming a parameter still changes the source contract.
+Reordering the declaration preserves the named call's result, `0.75M`; a positional call is rejected. For the [generated-API use case](https://github.com/fsharp/fslang-suggestions/issues/414), the provider must emit the annotation.
 
 ### Recognize an already-wrapped generic argument
 
-An API can accept either a plain value or a task that will produce one. Callers shouldn't need extra annotations just to prevent an existing task from becoming the plain value inside another wrapper:
+To avoid wrapping an existing task as a plain result value, a new last-resort overload rule prefers `Task<'T>` over bare `'T`:
 
 > [!NOTE]
 > The most-concrete tiebreaker and overload-priority behavior require preview.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
 
-The new last-resort tiebreaker prefers the generic parameter shape `Task<'T>` over a bare `'T` in this case. It compares ordinary generic shapes and excludes candidates with SRTP constraints; it isn't a universal “most specific wins” replacement for overload resolution.
+The result is `ValueTask<int>`, not `ValueTask<Task<int>>`. See [Overload selection](../language-reference/parameters-and-arguments.md#overload-selection) for the rule's limits.
 
 ### Prefer a new overload without removing the old entry point
 
@@ -344,7 +264,7 @@ A library might keep an old diagnostic method for existing binaries while adding
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Priority":::
 
-The unchanged call chooses the richer overload. Priority applies among applicable members of the same declaring type before normal betterness; it doesn't rank arbitrary extension modules. See [Overload selection](../language-reference/parameters-and-arguments.md#overload-selection) for the rules and compatibility tradeoffs.
+The unchanged call selects the line-aware overload. See [Overload selection](../language-reference/parameters-and-arguments.md#overload-selection) for scope and compatibility rules.
 
 ### Use .NET's conditional nullability promises
 
@@ -352,9 +272,7 @@ If your file path is non-null, a Path API's nullable result shouldn't force a ch
 
 :::code language="fsharp" source="snippets/fsharp-11/Stable.fs" id="Nullability":::
 
-Enable null checking separately with `<Nullable>enable</Nullable>`. Non-null inputs allow these assignments and the instance call without a redundant suppression; nullable inputs still require nullable handling. See [Conditional return contracts](../language-reference/values/null-values.md#conditional-return-contracts).
-
-For a separate problem—unconstrained C# `T?` APIs—see [Generic nullable interop](../language-reference/values/null-values.md#unconstrained-nullable-generic-interop). `Unchecked.withNull` changes the static type without checking the value; it doesn't establish non-nullness.
+Enable `<Nullable>enable</Nullable>`. Nullable inputs still need nullable handling; see [Conditional return contracts](../language-reference/values/null-values.md#conditional-return-contracts). For unconstrained C# `T?` APIs, use the separate [`Unchecked.withNull` helper](../language-reference/values/null-values.md#unconstrained-nullable-generic-interop).
 
 Thanks to [@kerams](https://github.com/dotnet/fsharp/pull/19977) for conditional nullability support.
 
@@ -385,11 +303,11 @@ Keep these consequential changes in mind when upgrading:
 
 | Affected code | Action |
 |---|---|
-| Libraries with `.fsi` files | Repeat enforced implementation attributes on the corresponding signature declaration. Examples include `RequiresExplicitTypeArguments` on values and `Struct` on types. Missing required attributes now produce FS3888 errors. See the [declaration-specific list](../language-reference/signature-files.md#compiler-semantic-attributes); this isn't a rule to copy every .NET attribute. |
+| Libraries with `.fsi` files | Copy [enforced contract attributes](../language-reference/signature-files.md#compiler-semantic-attributes) to signatures; omissions are now FS3888 errors. |
 | Extension-backed inline libraries | Review inferred signatures and [producer/consumer requirements](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers). Preview can retain more general constraints. |
-| Delegates constructed from instance methods | A direct target on a null object fails at construction rather than invocation: typically `ArgumentException` for non-virtual targets or `NullReferenceException` for virtual targets. Validate the receiver and adjust exception handling. See [delegate compatibility](../language-reference/delegates.md#direct-construction-and-framework-metadata). |
+| Instance-method delegates | Validate receivers before [direct construction](../language-reference/delegates.md#direct-construction-and-framework-metadata), when null-receiver failures now occur. |
 | Localized interpolated output | .NET-format holes use invariant culture. Choose an explicit culture when localized output is intended. |
-| Custom builders relying on a final `do!` selecting `ReturnFromFinal` or `YieldFromFinal` | Final `do!` binds and completes with unit: usually `Bind` then `Return(())`, or `Zero()` without `Return`. Supply those operations, or use explicit `return!` or `yield!` for forwarding. See [translation details](../language-reference/computation-expressions.md#tail-operations-in-custom-builders). |
-| Computation expressions ending in an unfinished `let!` | Provide the rest of the computation. For example, replace `async { let! value = work }` with `async { let! value = work in return value }` when the value is the intended result. |
+| Custom builders with final `do!` | Supply [binding and unit completion](../language-reference/computation-expressions.md#tail-operations-in-custom-builders); final `do!` no longer selects final-forwarding members. |
+| Unfinished `let!` | Add the following computation body; an incomplete binding now has a more direct diagnostic. |
 | Older language settings | Supported numbered modes start at F# 8; non-strict indentation mode is removed. See [Language version and indentation](../language-reference/compiler-options.md#language-version-and-indentation). |
 | Enum bitwise operations | Use [integral-backed enums](../language-reference/enumerations.md#bitwise-operations); invalid backing types are rejected. |

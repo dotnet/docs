@@ -136,17 +136,11 @@ Struct tuples (for example, `struct (x, y)`), are fundamentally different from r
 
 ## Tuple extensions for generic operations
 
-A plain pair can carry two independently combined values or a result with accumulated context. F# 11 preview lets it participate in extension-backed static operations without a new wrapper type:
-
-:::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="ContextAdapters":::
-
-These declarations use an in-scope `++` operation to combine the contexts; the [complete composition library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition/Composition.fs) supplies integer and list adapters. With the library and adapter module in scope, the consumer can preserve an audit trail while applying a function:
+To carry an audit trail alongside a calculation, F# 11 preview supports tuple extension operators. With the [composition adapters](generics/extension-member-constraints.md#tuple-operators-and-context) in scope:
 
 :::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
 
-Native reference and struct tuple-extension headers require preview at their declarations and support arity two through seven. They map to CLR tuple types rather than create a new nominal type. The feature supports static-member/operator scenarios; tuple dot-instance calls and native function-type extension headers aren't supported.
-
-See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for scope, producer/consumer settings, and the current generic-reduction boundary limitation.
+Native reference and struct tuple-extension headers support two through seven elements and require preview. They extend CLR tuple types for static-member/operator use, not instance-dot calls. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for declarations and limits.
 
 ## See also
 

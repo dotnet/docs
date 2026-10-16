@@ -254,7 +254,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - `dotnet-gcdump` is unable to generate a `.gcdump` file due to missing information, for example, **[Error] Exception during gcdump: System.ApplicationException: ETL file shows the start of a heap dump but not its completion.**. Or, the `.gcdump` file doesn't include the entire heap.
 
-   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. Prior to .NET 11, if the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace may be dropped. In this case, to diagnose issues with the heap, it's recommended to collect a dump of the process.
+   `dotnet-gcdump` works by collecting events emitted by the garbage collector during an induced generation 2 collection. Versions of dotnet-gcdump that support blocking buffering use it automatically when the target runtime is .NET 11 or later. This prevents event loss when the event buffers fill. On earlier runtimes, collection uses lossy buffering, so large heaps can produce incomplete GC dumps. Events can still be dropped if the runtime can't allocate enough memory, even with blocking buffering. If the GC dump is incomplete, collect a process dump instead.
 
 - `dotnet-gcdump` appears to cause an Out Of Memory issue in a memory constrained environment.
 

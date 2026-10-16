@@ -81,7 +81,7 @@ However, you can use the following environment variables to set up an EventPipe 
 * `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
   > [!NOTE]
-  > If the target process writes events too frequently, it can overflow this buffer, and some events might be dropped. If the runtime drops too many events, set `DOTNET_EventPipeBufferingMode=1` or increase the buffer size to see if the number of dropped events decreases. If the number of dropped events does not decrease with a larger buffer size, a slow reader might prevent the target process's buffers from being flushed.
+  > If the target process writes events too frequently, it can overflow this buffer, and some events might be dropped. If the runtime drops too many events, set `DOTNET_EventPipeBufferingMode=1` with `DOTNET_EventPipeOutputStreaming=1` or increase the buffer size to see if the number of dropped events decreases. If the number of dropped events does not decrease with a larger buffer size, a slow reader might prevent the target process's buffers from being flushed.
 
 * `DOTNET_EventPipeBufferingMode`: Available in .NET 11 and later. This setting controls how the startup EventPipe session handles recording an event when the in-memory buffer is full. Set it to `0` (default) to drop events that would overflow the buffer, or `1` to pause event-writing threads until buffer space becomes available. `1` requires a streaming session (see `DOTNET_EventPipeOutputStreaming`).
 

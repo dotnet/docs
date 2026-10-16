@@ -1,23 +1,19 @@
 > 📋 Part of the [Everyday C# Fundamentals restructuring plan](README.md). See also the [Project Map](../project-map.md).
 
-## Phase F: Pattern Matching (§11) + Functional inventory — 5 PRs
+## Phase F: Pattern matching (§11) + Building software — 5 PRs
 
 > *Option A ordering (Decision 12):* Pattern matching (§11) is sequenced **before** Expressions and
 > operators (§12) and Statements (§13) in the eventual TOC. The pattern-matching articles move out of
 > `fundamentals/functional/` into a dedicated **`fundamentals/patterns/`** folder so patterns stand as
-> their own §11 section rather than a sub-topic of Functional techniques. Functional techniques
-> (lambdas, local functions, iterators — PRs 22–23) remain in `fundamentals/functional/`.
+> their own §11 section rather than a sub-topic of Functional techniques.
 
-> **IA decision gate:** The final sentence above records the existing Option A plan; it isn't the
-> approved permanent taxonomy. Under the two-part hypothesis, lambda-expression, local-function, and
-> iterator syntax belongs in standard-aligned Part 1, while the Functional overview and tutorial are
-> Part 2 candidates. Decide the final homes before approving PR 22. PR
-> [#55966](https://github.com/dotnet/docs/pull/55966) **merged 2026-09-17** and supplied
-> construct-first evidence for Pattern matching overview/basic patterns; PR
-> [#56113](https://github.com/dotnet/docs/pull/56113) (PR 20, merged 2026-09-25) added the
-> structural-pattern articles on the same construct-first framing. Neither PR settles the permanent
-> Functional/OOP taxonomy question — don't treat either merge as approval of the surrounding
-> technique taxonomy.
+> **Reconciled 2026-10-16:** [Decision 14](../decisions.md#decision-14-building-software-purpose-and-initial-structure)
+> supersedes the former Functional techniques grouping and PR 22 placement gate. The overview,
+> lambdas, local functions, and iterators are direct children of **Building software** at
+> `fundamentals/building-software/`, authored and accepted in open
+> [#56333](https://github.com/dotnet/docs/pull/56333), not merged. Complete syntax remains linked
+> reference material; separate Part 1 homes aren't a prerequisite for these practical guides.
+> The broader two-part/OOP boundary remains unresolved, and PR 23 remains future work.
 
 ### PR 19 — Pattern matching: overview + declaration/constant/var + type patterns
 
@@ -80,25 +76,31 @@
 > *Coherence check:* completes the Patterns section; the tutorial and revised deconstruct article are
 > both live with redirects for every moved path. Patterns §11 is fully coherent after this PR.
 
-### PR 22 — Functional techniques
+### PR 22 — Building software
 
-> **Placement unresolved:** classify the overview as Part 2 guidance and the three construct articles
-> as Part 1 syntax/semantics before implementation.
+[#56333](https://github.com/dotnet/docs/pull/56333) **OPEN; authored/accepted, not merged**
 
-> ~10 files
+Evidence: `more-everyday-csharp` head `4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e`,
+verified 2026-10-16. Bill accepted the implementation and final editorial pass.
+The actual scope exceeds the original ~10-file estimate because consolidation includes snippets,
+redirects, and repository-wide inbound-link updates.
 
-1. Revise `fundamentals/functional/index.md` — (new overview article, C# as multi-paradigm)
-2. New `fundamentals/functional/lambdas.md` — closures, captures, expression vs. statement lambdas, method group conversions
-3. Pull `fundamentals/functional/local-functions.md` — from `programming-guide/classes-and-structs/local-functions.md`
-4. Pull `fundamentals/functional/iterators.md` — from `iterators.md` + `programming-guide/concepts/iterators.md`
-5. Snippet files + toc.yml + redirects
+1. New `fundamentals/building-software/index.md` — compare valid algorithmic approaches and how code communicates design intent to developers and coding agents. Contextual paragraphs compare inline/named behavior, local/private helpers, parameters/capture, and completed/deferred results.
+2. New `fundamentals/building-software/lambdas.md` — practical parameter/body forms, capture, static lambdas, and comparisons with method groups and local functions. Retain the Type system introduction and complete Language Reference article.
+3. Rework `programming-guide/classes-and-structs/local-functions.md` into `fundamentals/building-software/local-functions.md` — helper scope, explicit inputs/captured context, static local functions, recursion, and alternatives.
+4. Consolidate `iterators.md` and `programming-guide/concepts/iterators.md` into `fundamentals/building-software/iterators.md` — synchronous element production, deferred execution, and iterator/collection/loop/LINQ choices.
+5. Four snippet projects under `fundamentals/building-software/snippets/`: `overview/`, `lambdas/`, `local-functions/`, and `iterators/`. Legacy iterator/local-function samples are replaced; the final editorial pass doesn't change snippets.
+6. Add four direct Building software children after Expressions and statements in `toc.yml`; remove legacy entries. Redirect consolidated sources and retired `fundamentals/functional/` destinations, and update inbound links. See [source reconciliation](../content-sources.md#building-software-source-reconciliation).
 
-> *Watch for redistribution:* the existing iterator content includes state-machine internals, `IAsyncEnumerable` mechanics, custom enumerator authoring, and exception-handling rules around `yield`. Those sections fail universality — move them to Language Reference (state-machine details, exception rules) or an Async/Iterators deep dive (`IAsyncEnumerable`, custom enumerators). Keep the Fundamentals iterators article on consuming and writing simple `yield return` iterators.
+> *Coverage boundary:* the practical guides link to complete syntax and restrictions rather than
+> reproduce an exhaustive reference. This PR doesn't implement the breadth tutorial, remaining OOP
+> migrations, or every feature in the original inventory, such as local-function attributes.
 
-### PR 23 — Tutorial: Functional techniques in C#
+### PR 23 — Combined-techniques tutorial (historical title: Functional techniques in C#)
 
-> **Part 2 / Tutorials candidate:** retain as deferred inventory until Bill approves the technique
-> area name and placement.
+> **Deferred; not authored in #56333:** Building software's name and initial placement are settled.
+> Revisit this tutorial's title and placement under that purpose before implementation; it doesn't
+> restore a Functional techniques subgroup.
 
 > ~4 files
 

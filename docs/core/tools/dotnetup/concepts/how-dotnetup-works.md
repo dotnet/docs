@@ -2,7 +2,7 @@
 title: How dotnetup works
 description: Learn about dotnetup installation roots, components, install specifications, installations, and state files.
 ms.topic: concept-article
-ms.date: 08/07/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -87,6 +87,13 @@ then keeps the newest installed version that matches each remaining
 specification. It removes an installation and its unshared subcomponents only
 when no remaining specification needs them.
 
+Before uninstall changes state, it warns if another specification retains a
+requested installation or if garbage collection removes additional installations.
+In interactive mode, these warnings require confirmation.
+For details, see
+[SDK uninstall behavior](../reference/dotnetup-sdk-uninstall.md#behavior) and
+[Runtime uninstall behavior](../reference/dotnetup-runtime-uninstall.md#behavior).
+
 ## Tracked and untracked installs
 
 By default, an install command records its specification and result in the
@@ -109,10 +116,13 @@ The dotnetup data directory contains these user-level state files:
 | --- | --- |
 | `dotnetup_manifest.json` | Tracks installation roots, install specifications, installations, and shared subcomponents. |
 | `dotnetup_manifest.json.sha256` | Detects changes to manifest content that dotnetup did not write. |
-| `dotnetup.config.json` | Stores the .NET access mode and whether the `dotnetup` directory is on `PATH`. |
+| `dotnetup.config.json` | Stores the .NET access mode, whether the `dotnetup` directory is on `PATH`, and whether update notifications are enabled. |
+| `update-checks/` | Stores timestamps and available versions for dotnetup update checks. |
 
 Do not edit these files. Use `dotnetup install`, `update`, `uninstall`, and
-`env` commands to change the related state.
+`env` commands to change the related state. Use
+`dotnetup self update --update-notifications <true|false>` to change the
+notification setting without updating the executable.
 
 The `DOTNET_DOTNETUP_DATA_DIR` environment variable changes the data
 directory. The `--manifest-path` option changes only the manifest used by one
@@ -124,6 +134,12 @@ Install, update, uninstall, list, and garbage-collection workflows coordinate
 access to shared installation state. A command that accepts several
 specifications resolves them before installation and can download them
 concurrently. Manifest changes remain serialized.
+
+Self-update coordinates replacement of the dotnetup executable separately
+from .NET installation state.
+Other commands can fail while self-update holds its coordination locks.
+Retry those commands after the update finishes. For details, see
+[`dotnetup self update`](../reference/dotnetup-self-update.md).
 
 ## See also
 

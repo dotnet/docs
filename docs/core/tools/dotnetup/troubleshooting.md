@@ -2,7 +2,7 @@
 title: Troubleshoot dotnetup
 description: Diagnose and fix common dotnetup problems, such as missing SDKs, untracked installations, locked files, and corrupted state files.
 ms.topic: troubleshooting
-ms.date: 09/30/2026
+ms.date: 10/13/2026
 ai-usage: ai-generated
 ---
 
@@ -150,6 +150,36 @@ Another dotnetup process is running. Waiting for it to finish...
 **Solution:** Wait for the other command to finish. If no other `dotnetup`
 process runs, look for `dotnetup` processes that stopped responding, and end
 them.
+
+## Self-update doesn't replace the executable
+
+**Symptom:** `dotnetup self update` reports that no update was applied.
+
+**Cause:** The selected channel contains the same version or an older version.
+Official daily builds also carry a `preview` label and default to the preview channel.
+
+**Solution:** To stay on daily builds, run
+`dotnetup self update --channel daily`.
+To deliberately reinstall or downgrade to the latest preview, run
+`dotnetup self update --channel preview --force`.
+
+## Self-update fails
+
+**Symptom:** `dotnetup self update` fails because of its executable location,
+permissions, verification, or another active command.
+
+**Solution:**
+
+- Run the standalone executable from its actual installation directory, not through the `dotnet` host or an executable symbolic link.
+- Check that you have write access to the installation directory.
+- If another command holds a lock, let it finish, and retry.
+- If verification fails, don't bypass the checksum or signature check. Report the failure.
+- If the executable no longer starts, reinstall it with the [download scripts](getting-started.md#download-dotnetup).
+
+For older builds that don't recognize the command, use the download scripts
+to install the current preview.
+For verification and unsigned-download policy details, see
+[The dotnetup executable](concepts/download-verification.md#the-dotnetup-executable).
 
 ## The manifest is corrupt
 

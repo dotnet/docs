@@ -138,6 +138,9 @@ If your builder provides the following methods, the compiler routes those calls 
 * `YieldFromFinal` - called for a tail `yield!` (falls back to `YieldFrom` if absent)
 * For a terminal `do!`, the compiler prefers `ReturnFromFinal`, then `YieldFromFinal`, before falling back to the normal `Bind` pathway
 
+> [!NOTE]
+> F# 11 corrects terminal `do!` translation to use `Bind`. See the maintained [custom-builder tail-operation contract](../language-reference/computation-expressions.md#tail-operations-in-custom-builders) before relying on the F# 10 behavior.
+
 These `*Final` members are optional and exist purely to enable optimization.
 Builders that do not provide these members keep their existing semantics unchanged.
 
@@ -365,6 +368,9 @@ Starting with .NET 10, three features: graph-based type checking, parallel IL co
 
 F# 10 enables this setting by default for projects using `LangVersion=Preview`.
 We plan to enable it for all projects in .NET 11.
+
+> [!NOTE]
+> In F# 11, parallel compilation is enabled by default and works with deterministic builds. The F# 10 opt-in settings below describe that earlier compiler; use the maintained [parallel compilation guidance](../language-reference/compiler-options.md#parallel-compilation) for F# 11.
 
 Be sure to give it a try and see if it speeds up your compilation.
 To enable parallel compilation in F# 10:

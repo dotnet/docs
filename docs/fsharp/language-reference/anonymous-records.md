@@ -1,7 +1,7 @@
 ---
 title: Anonymous Records
 description: Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.
-ms.date: 11/04/2021
+ms.date: 09/24/2026
 ai-usage: ai-assisted
 ---
 # Anonymous Records
@@ -246,3 +246,7 @@ It is not currently possible to define an anonymous record with `mutable` data. 
 ### Limitations with struct anonymous records
 
 It is not possible to declare struct anonymous records as `IsByRefLike` or `IsReadOnly`. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/712) to for `IsByRefLike` and `IsReadOnly` anonymous records.
+
+## Compose values with record spreads
+
+Starting with F# 11, `...source` copies record fields into an anonymous record. Without a target annotation, all contributed fields form its shape; later contributions replace earlier fields with the same name. See [Record spread operators](record-spreads.md#compose-record-values) for named and anonymous examples, projections, and evaluation rules.

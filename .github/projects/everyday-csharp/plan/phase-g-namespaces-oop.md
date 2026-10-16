@@ -1,35 +1,51 @@
 > 📋 Part of the [Everyday C# Fundamentals restructuring plan](README.md). See also the [Project Map](../project-map.md).
 
-## Phase G: Namespaces (§14) + type/member and OOP inventory — 10 PRs
+## Phase G: Namespaces (§14)
 
-> **IA decision gate:** Preserve this PR inventory, but split its ownership before implementation.
-> Standard-aligned Part 1 owns namespace, type, member, inheritance, interface, event, extension, and
-> `using` syntax/semantics. Part 2 or Tutorials owns the OOP paradigm overview, callback/API-design
-> guidance, interfaces-versus-abstract-classes decisions, encapsulation/composition, and scenarios.
-> `Object-oriented programming` is a move candidate, not a §15 clause label. Revisit the earlier
-> Option A ordering after this classification and again when drafted Phase G content exposes the
-> natural boundary.
+> **Planning revision for review:** Phase G now owns Namespaces alone. The old mixed OOP
+> inventory is redistributed into standard-aligned construct phases and Building software.
+> These proposed destinations need Bill's review before implementation; PR #56333's approved
+> Building software name/initial placement isn't reopened.
 
 ### PR 24 — Namespaces (CONSOLIDATE, Decision 12b)
 
 > ~5 files
 
 1. New `fundamentals/namespaces/overview.md` — **canonical §14 Namespaces article**: motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; `global using` directives; namespace aliases; nested namespaces
-2. **Slim the already-shipped `fundamentals/program-structure/namespaces.md`** to a brief intro + cross-reference to the canonical article (avoid duplicate coverage). This is a build-clean change to shipped content — **add a redirect and fix inbound links** that pointed at the program-structure article
-3. Snippet files + toc.yml + redirect + inbound-link fix
+2. **Slim the already-shipped `fundamentals/program-structure/namespaces.md`** to a brief intro + cross-reference to the canonical article (avoid duplicate coverage). Retain its working introduction URL; update inbound links that need the full treatment.
+3. Snippet files + toc.yml + inbound-link fixes; redirects only for URLs actually retired or moved
 
 > *Consolidation rationale (2b):* §14 Namespaces gets one canonical home under `fundamentals/namespaces/`.
 > The Program-structure "Namespaces and using directives" article (shipped in PR 1) is reduced to a short
 > orientation pointer so beginners meet the concept early without the section duplicating the full §14
 > treatment. Because the program-structure article already shipped, verify the build stays clean:
-> add the redirect and update every inbound cross-link.
+> retain the introduction URL and audit inbound cross-links for the appropriate depth.
 
 > *Coherence check:* after this PR §14 has exactly one canonical article (`namespaces/overview.md`);
 > the shipped `program-structure/namespaces.md` is a slim intro + cross-reference (not a stub — it
-> still reads as a complete short article and routes onward); redirect + repo-wide inbound-link fixes
+> still reads as a complete short article and routes onward); any needed redirects and inbound-link fixes
 > land in this same PR, so nothing is duplicated, orphaned, or broken after merge.
 
-### PR 25 — OOP: overview, access modifiers, fields/constants
+## Legacy PR routing
+
+Historical identifiers are retained; their work isn't scheduled twice.
+
+| Legacy task | Current plan owner |
+|---|---|
+| PR 25-28: class members | [Phase H](phase-h-classes.md); design extracts in [BS02-BS04](phase-r-building-software.md) |
+| PR 29: inheritance plus interfaces | Inheritance in [Phase H](phase-h-classes.md); interfaces in [PR 41](phase-k-interfaces.md); design in BS01/BS05 |
+| PR 30: indexers, extensions, ranges | [Phase J](phase-j-arrays-indexes-ranges.md); extensions in [PR 46](phase-h-classes.md#pr-46--extension-members) |
+| PR 31: events plus partial types | Partial types in [Phase H](phase-h-classes.md); events in [PR 44](phase-m-delegates.md#pr-44--basic-events) |
+| PR 32: object lifetime | [BS07 / PR 32](phase-r-building-software.md#bs07--resource-ownership-and-lifetime-legacy-pr-32) |
+| PR 33: encapsulation/composition | [BS01 / PR 33](phase-r-building-software.md#bs01--object-roles-encapsulation-and-composition-legacy-pr-33) |
+
+The following historical inventory is retained for traceability only. Its `object-oriented/`
+destinations and mixed task boundaries are superseded by the linked plans above.
+
+<details>
+<summary>Historical OOP inventory (superseded, not an additional delivery list)</summary>
+
+### Historical PR 25 — OOP: overview, access modifiers, fields/constants
 
 > Split the paradigm overview (Part 2 candidate) from access-modifier, field, and constant construct
 > coverage (Part 1 candidates).
@@ -43,14 +59,14 @@
 
 > *Watch for redistribution:* the existing fields content includes `volatile`, `readonly` interaction with structs in detail, `fixed`-size buffers, and ref fields — all of which fail universality. Move those sub-sections to Language Reference (`volatile`, `fixed`) or a memory-model deep dive (ref fields, low-level field semantics). Keep Fundamentals on declaring and using fields and constants.
 
-### PR 26 — OOP: properties
+### Historical PR 26 — OOP: properties
 
 > ~6 files
 
 1. Pull+revise `fundamentals/object-oriented/properties.md` — from `programming-guide/classes-and-structs/properties.md` + related; add init-only (C# 9), required (C# 11), `field` keyword (C# 14)
 2. Snippet files + toc.yml + redirects
 
-### PR 27 — OOP: constructors
+### Historical PR 27 — OOP: constructors
 
 > ~6 files
 
@@ -61,7 +77,7 @@
 
 > *Watch for redistribution:* the existing property and constructor content includes `ref` returns from properties, indexed properties on COM interop, `[ModuleInitializer]`, and detailed static-constructor ordering rules. Those sub-sections fail universality — move them to Language Reference (ref returns, static-constructor ordering, module initializers) or COM-interop content. Keep Fundamentals on declaring properties (including init-only, required, and `field`) and writing instance/primary constructors.
 
-### PR 28 — OOP: methods + lambdas in OOP
+### Historical PR 28 — OOP: methods + lambdas in OOP
 
 > Methods are a Part 1 construct candidate. Callback, event-handler, and API-design guidance is a
 > Part 2 candidate.
@@ -74,7 +90,7 @@
 
 > *Watch for redistribution:* the existing methods content includes `ref readonly` parameters, `in` parameters, conditional methods (`[Conditional]`), method-resolution and overload-resolution rule details, and unsafe-context interactions. Those fail universality — move them to Language Reference (overload resolution, conditional methods, parameter modifiers) or an interop/unsafe deep dive. Keep the Fundamentals methods article on declaring methods, parameter passing, optional and named arguments, and `params`.
 
-### PR 29 — OOP: inheritance merge + interfaces
+### Historical PR 29 — OOP: inheritance merge + interfaces
 
 > Keep declaration and dispatch mechanics in Part 1; classify interfaces-versus-abstract-classes and
 > inheritance design guidance for Part 2.
@@ -85,7 +101,7 @@
 2. Pull+revise `fundamentals/object-oriented/interfaces.md` — from `programming-guide/interfaces/`; implementing, explicit implementation, interfaces vs. abstract classes
 3. toc.yml + redirects
 
-### PR 30 — OOP: indexers, extensions, ranges tutorial
+### Historical PR 30 — OOP: indexers, extensions, ranges tutorial
 
 > ~10 files
 
@@ -94,7 +110,7 @@
 3. Pull `tutorials/ranges-indexes.md` → `fundamentals/tutorials/ranges.md`
 4. toc.yml + redirects
 
-### PR 31 — OOP: events + partial types
+### Historical PR 31 — OOP: events + partial types
 
 > ~6 files
 
@@ -102,7 +118,7 @@
 2. New `fundamentals/object-oriented/partial-types.md` — partial classes/structs, partial methods (C# 9), partial properties (C# 13), partial events/constructors (C# 14)
 3. Snippet files + toc.yml + redirects
 
-### PR 32 — OOP: object lifetime
+### Historical PR 32 — OOP: object lifetime
 
 > ~5 files
 
@@ -113,7 +129,7 @@
 
 > *Watch for redistribution:* the existing events content includes custom event accessors, weak-event patterns, and threading rules around event invocation — move those to an OOP deep dive. The full dispose pattern (finalizers, `SafeHandle`, suppress-finalize ordering, async-dispose authoring) and detailed garbage-collection interaction also fail universality — move them to a Deep dives article or the existing GC/Standard library content. Keep Fundamentals on subscribing to and raising events with the standard pattern, and on `using`/`using` declarations plus a brief "implement `IDisposable` when you wrap an unmanaged resource" pointer.
 
-### PR 33 — OOP: encapsulation and composition
+### Historical PR 33 — OOP: encapsulation and composition
 
 > Part 2 guidance candidate; don't use it to define the canonical home for class or inheritance
 > syntax.
@@ -122,3 +138,5 @@
 
 1. New `fundamentals/object-oriented/encapsulation-composition.md` — encapsulation as information hiding; composition over inheritance; combining objects to build complex behavior; comparison with inheritance-based designs
 2. Snippet files + toc.yml
+
+</details>

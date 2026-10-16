@@ -136,11 +136,11 @@ Struct tuples (for example, `struct (x, y)`), are fundamentally different from r
 
 ## Tuple extensions for generic operations
 
-To carry an audit trail alongside a calculation, F# 11 preview supports tuple extension operators. With the [composition adapters](generics/extension-member-constraints.md#tuple-operators-and-context) in scope:
+To carry an audit trail alongside a calculation, F# 11.2 supports tuple extension operators. With the [composition adapters](generics/extension-member-constraints.md#tuple-operators-and-context) in scope:
 
 :::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
 
-Native reference and struct tuple-extension headers support two through seven elements and require preview. They extend CLR tuple types for static-member/operator use, not instance-dot calls. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for declarations and limits.
+In the .NET 11.0.100 SDK, enable preview for these F# 11.2 features. Native reference and struct tuple-extension headers support two through seven elements. They extend CLR tuple types for static-member/operator use, not instance-dot calls. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for language settings, declarations, and limits.
 
 ## See also
 

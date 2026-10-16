@@ -7,12 +7,12 @@ ai-usage: ai-generated
 
 # Extension members for SRTP constraints
 
-An inline function with [statically resolved type parameters](statically-resolved-type-parameters.md) can require a member with a particular name and signature. F# 11 preview lets an in-scope extension member satisfy that requirement, even when the type comes from another assembly.
+An inline function with [statically resolved type parameters](statically-resolved-type-parameters.md) can require a member with a particular name and signature. F# 11.2 lets an in-scope extension member satisfy that requirement, even when the type comes from another assembly.
 
 Use this capability to separate a generic algorithm from adapters for particular types. You don't need to wrap those types or add a nominal interface to them.
 
 > [!NOTE]
-> Enable `<LangVersion>preview</LangVersion>` where the compiler resolves extensions. The path and mapping examples use a numbered F# 11 library and a preview consumer. See [Compile libraries and consumers](#compile-libraries-and-consumers).
+> In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>` where the compiler resolves extensions. See [F# 11.2 language settings](../compiler-options.md#language-version-and-indentation) for the planned feature band. The path and mapping examples use an F# 11.0 library and a preview consumer; see [Compile libraries and consumers](#compile-libraries-and-consumers).
 
 ## Adapt a property for a shared algorithm
 
@@ -64,7 +64,7 @@ let length: int option = Some "hello" |>> String.length
 
 Built-in primitive operator solutions retain priority for matching types. An extension doesn't provide arbitrary mixed-numeric widening or replace all built-in operators.
 
-Numbered F# 11 can accept an ordinary extension-operator declaration with FS1215, but can't use it as an SRTP solution. The [operator project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/operators/Operators.fsproj) uses preview.
+F# 11.0 mode can accept an ordinary extension-operator declaration with FS1215, but can't use it as an SRTP solution. The [operator project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/operators/Operators.fsproj) uses preview.
 
 ### Tuple operators and context
 
@@ -78,7 +78,7 @@ These library extensions give the operator a meaning for integers, lists, and pa
 
 `combineAll` requires a nonempty list because it uses `List.reduce`. The operation preserves list order; the compiler doesn't enforce associativity or supply an identity for an empty input.
 
-Native headers `type ('T1 * 'T2) with` and `type struct ('T1 * 'T2) with` extend CLR reference and value tuples. Both require preview and support two through seven elements; larger headers produce FS3915.
+Native headers `type ('T1 * 'T2) with` and `type struct ('T1 * 'T2) with` extend CLR reference and value tuples. Both are F# 11.2 features and support two through seven elements; larger headers produce FS3915.
 
 Tuples can also carry context alongside a value. The following operator appends a trail while applying a contextual function:
 
@@ -106,13 +106,13 @@ Each container supplies its own member. For return-only overloads on a single ty
 
 ## Compile libraries and consumers
 
-Language settings apply per project, not transitively through references. With a compiler containing this F# 11 implementation, choose the setting for the work each compilation performs:
+Language settings apply per project, not transitively through references. The following matrix uses the .NET 11.0.100 SDK's settings for F# 11.2 features:
 
 | Library implementation | Consumer use | Preview requirement |
 |---|---|---|
 | Declares native tuple-extension headers. | Resolves their extension operators. | Both need preview; the new header syntax itself is preview. |
-| Defines ordinary extensions and exports an unresolved inline member constraint. | Supplies concrete types whose extensions solve that constraint. | Consumer needs preview. The library can use numbered F# 11. |
-| Solves an extension constraint internally and exposes an ordinary or already-resolved inline API. | Calls that API without further extension resolution. | Library needs preview; the consumer can use numbered F# 11. |
+| Defines ordinary extensions and exports an unresolved inline member constraint. | Supplies concrete types whose extensions solve that constraint. | Consumer needs preview. The library can use F# 11.0. |
+| Solves an extension constraint internally and exposes an ordinary or already-resolved inline API. | Calls that API without further extension resolution. | Library needs preview; the consumer can use F# 11.0. |
 | Solves extensions and exports constraints that the consumer also resolves through extensions. | Resolves remaining constraints. | Both need preview. |
 
 The path and mapping [library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/library/Library.fsproj) uses `11.0`; its [consumer](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/consumer/Consumer.fsproj) uses `preview`. From the consumer directory, run `dotnet run` with a supporting F# 11 SDK.
@@ -123,19 +123,19 @@ Use public extensions and open their module before defining dependent inline fun
 
 ### Inference and signatures
 
-Preview resolution defers some choices that numbered mode makes earlier. Consider an inline helper defined with a `DateTime` receiver:
+F# 11.2 resolution defers some choices that F# 11.0 mode makes earlier. Consider an inline helper defined with a `DateTime` receiver:
 
 ```fsharp
 let inline shift (date: System.DateTime) offset = date + offset
 ```
 
-In numbered F# 11, this form can infer `DateTime -> TimeSpan -> DateTime`. With the extension-resolution preview, it can retain a constraint for `(DateTime or ^Offset) : (static member (+) : DateTime * ^Offset -> ^Result)`. A consumer can then select a public, in-scope extension for a different offset type.
+In F# 11.0 mode, this form can infer `DateTime -> TimeSpan -> DateTime`. With F# 11.2 extension resolution enabled, it can retain a constraint for `(DateTime or ^Offset) : (static member (+) : DateTime * ^Offset -> ^Result)`. A consumer can then select a public, in-scope extension for a different offset type.
 
-A preview consumer can't recover generality lost in a numbered library. Check exported signatures; preview-specific inference can require preview in the producer too.
+A consumer can't recover generality lost in an F# 11.0 library. Check exported signatures; the producer might also need F# 11.2 inference enabled.
 
 ## Preview limitations and troubleshooting
 
-- For FS0001 or FS0193, check preview settings, public visibility, and adapter scope.
+- For FS0001 or FS0193, check language settings, public visibility, and adapter scope.
 - If a later producer file resolves the path example for `Complex`, code generation can fail with FS0971, `Undefined value 'get_Coordinates'`. Keep that resolution with its definitions or in a separate consumer.
 - Competing adapters can make member selection ambiguous.
 

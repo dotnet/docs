@@ -505,7 +505,7 @@ A `let!` still requires a following body. For example, use `async { let! value =
 To log an error and preserve its original exception identity and stack, use `reraise ()` in a computation-expression `with` handler:
 
 > [!NOTE]
-> This feature requires `<LangVersion>preview</LangVersion>`.
+> This is an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
 

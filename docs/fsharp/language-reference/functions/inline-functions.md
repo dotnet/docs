@@ -92,7 +92,7 @@ Optimized builds still inline by default. Some constructs, including resumable c
 
 ## Inline extension constraints across libraries
 
-F# 11 preview can use public extension members to satisfy SRTP requirements. See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for scope and library requirements.
+F# 11.2 can use public extension members to satisfy SRTP requirements. See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for language settings, scope, and library requirements.
 
 ## See also
 

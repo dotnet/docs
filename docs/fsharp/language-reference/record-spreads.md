@@ -131,7 +131,7 @@ Type spreads work in `.fsi` files. A signature can use explicit fields while the
 
 Use [copy-and-update expressions](copy-and-update-record-expressions.md) for a same-type update from one source. Use spreads to combine sources, project to a different record type, or reuse field declarations. Don't combine `with` and `...` in the same record expression.
 
-Spreads don't apply to collections, object expressions, arbitrary .NET objects, or C# records. They don't provide record pattern syntax. [Record constructors](records.md#record-constructors) are a separate preview feature.
+Spreads don't apply to collections, object expressions, arbitrary .NET objects, or C# records. They don't provide record pattern syntax. [Record constructors](records.md#record-constructors) are a separate F# 11.2 feature.
 
 ## See also
 

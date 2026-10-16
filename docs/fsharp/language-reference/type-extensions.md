@@ -163,7 +163,7 @@ The following limitations also exist for type extensions:
 
 - Type extensions do not support virtual or abstract methods.
 - Type extensions do not support override methods as augmentations.
-- In numbered language modes, optional extensions can't satisfy [statically resolved member constraints](generics/statically-resolved-type-parameters.md). F# 11 preview supports [extension members as constraint solutions](generics/extension-member-constraints.md).
+- In F# 11.0 and earlier modes, optional extensions can't satisfy [statically resolved member constraints](generics/statically-resolved-type-parameters.md). F# 11.2 supports [extension members as constraint solutions](generics/extension-member-constraints.md).
 - Optional Type extensions do not support constructors as augmentations.
 - Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
 - Type extensions are not valid for `byref<'T>` (though they can be declared).
@@ -174,11 +174,11 @@ Finally, if multiple intrinsic type extensions exist for one type, all members m
 
 ## Extensions for generic inline code
 
-F# 11 can use public, in-scope extensions to satisfy generic inline member constraints. Enable `<LangVersion>preview</LangVersion>` where the compiler resolves them; ordinary extension declarations alone don't require preview. See [Extension members for SRTP constraints](generics/extension-member-constraints.md) for adapters and library requirements.
+F# 11.2 can use public, in-scope extensions to satisfy generic inline member constraints. In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>` where the compiler resolves them; ordinary extension declarations alone don't require this setting. See [Extension members for SRTP constraints](generics/extension-member-constraints.md) for adapters, language settings, and library requirements.
 
 ### Native tuple headers
 
-To extend tuple static members and operators, use `type ('T1 * 'T2) with` or `type struct ('T1 * 'T2) with`. These declarations require preview and support two through seven elements, not instance-dot calls or function-type headers. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for examples.
+To extend tuple static members and operators, use `type ('T1 * 'T2) with` or `type struct ('T1 * 'T2) with`. These F# 11.2 declarations support two through seven elements, not instance-dot calls or function-type headers. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for examples.
 
 ## See also
 

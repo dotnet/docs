@@ -59,7 +59,7 @@ When one computation faults, cancellation is requested for its siblings. Operati
 | `Async.parallelDoLimit` | `int -> seq<Async<unit>> -> Async<unit>` |
 | `Async.sequentialDo` | `seq<Async<unit>> -> Async<unit>` |
 
-The `Async` functions flow the workflow's ambient cancellation token. Existing `Async.Parallel` (including its concurrency-limit option) and `Async.Sequential` remain available. The `Do` variants avoid allocating a result array when you only need completion. A concurrency limit isn't a rate limiter: fast operations can still produce many requests per second.
+The `Async` functions flow the workflow's ambient cancellation token. Existing `Async.Parallel` (including its concurrency-limit option) and `Async.Sequential` remain available. The `Do` variants expose a `unit` result when you only need completion. A concurrency limit isn't a rate limiter: fast operations can still produce many requests per second.
 
 ## Transform results and recover from faults
 

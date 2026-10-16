@@ -101,7 +101,9 @@ Note that if the `WarnOn` property is specified multiple times, only the last oc
 
 ## Language version and indentation
 
-With the F# 11 compiler, the default, `latest`, and `latestmajor` language modes select F# 11. Numbered supported modes start at F# 8. Use `--langversion:preview` or `<LangVersion>preview</LangVersion>` only when you need a preview feature.
+Language support depends on the SDK feature band. In the .NET 11.0.100 SDK, F# 11.2 features require `--langversion:preview` or `<LangVersion>preview</LangVersion>`.
+
+The [upstream release plan](https://github.com/dotnet/fsharp/blob/8512f9acbd9f757b75440b1ca6afe33fec321208/docs/release-notes/.Language/11.2.md) lists F# 11.2 as the planned default for .NET SDK 11.0.200. A compiler that implements F# 11.2 also accepts `--langversion:11.2`. Supported numbered modes start at F# 8; the default, `latest`, and `latestmajor` depend on the installed compiler.
 
 Non-strict indentation mode is removed, including in earlier numbered modes. Language version doesn't change library or runtime API availability.
 

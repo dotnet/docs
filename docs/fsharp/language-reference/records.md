@@ -99,7 +99,7 @@ To reuse fields across different models, F# 11 provides **type spreads** (`...So
 To identify a record type directly at its construction site, use its all-fields constructor:
 
 > [!NOTE]
-> This syntax requires `<LangVersion>preview</LangVersion>`. Record spreads don't require this preview option.
+> Record constructors are an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`. Record spreads don't require this setting.
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
 

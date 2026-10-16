@@ -218,7 +218,7 @@ Tasks are implemented using Resumable Code, a new feature in F# 6. Tasks are com
 Builder authors can experiment with .NET runtime async. A compiler-generated state machine normally stores the state needed to continue after an await. With runtime async, the runtime pauses and resumes a specially marked method instead.
 
 > [!NOTE]
-> This prototype requires `<LangVersion>preview</LangVersion>` and an F# 11 compiler containing runtime-async support. It also needs runtime and reference assemblies exposing `MethodImplOptions.Async` and `System.Runtime.CompilerServices.AsyncHelpers.Await`. Reference assemblies describe the APIs at compile time; the running .NET runtime must implement the pause/resume behavior.
+> This prototype uses an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>` with a compiler containing runtime-async support. It also needs runtime and reference assemblies exposing `MethodImplOptions.Async` and `System.Runtime.CompilerServices.AsyncHelpers.Await`. Reference assemblies describe the APIs at compile time; the running .NET runtime must implement the pause/resume behavior.
 
 The example's verified component combination is:
 
@@ -243,7 +243,7 @@ The builder connects the computation expression to the runtime-async return intr
 
 The compiler checks supported suspension patterns; byrefs can't remain live across a suspension. The example only defines `Delay`, `Run`, `Return`, and one `Bind` overload, not a production builder with cancellation, loops, or asynchronous disposal.
 
-Enable preview where the inline builder is defined and expanded. Callers of an already-compiled `readManifest` API don't need preview. Ordinary `task` expressions retain their implementation. Use `AsyncHelpers.Await` only inside runtime-async methods; see the [runtime async specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md).
+Enable the F# 11.2 feature where the inline builder is defined and expanded. Callers of an already-compiled `readManifest` API don't need it. Ordinary `task` expressions retain their implementation. Use `AsyncHelpers.Await` only inside runtime-async methods; see the [runtime async specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md).
 
 The [complete sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/task-expressions/RuntimeAsync.fsproj) includes a console entry point. From its directory, run `dotnet run -- manifest.txt` with compatible tooling and a file to read. A file containing exactly `manifest`, without a trailing newline, produces `8`. The console entry point blocks for completion; `readManifest` itself returns `Task<int>`.
 

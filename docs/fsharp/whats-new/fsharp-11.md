@@ -19,7 +19,7 @@ Welcome to F# 11! This release helps you keep domain models distinct, reuse gene
 Thank you to the F# community for the proposals, implementations, reviews, and tests behind these changes. Contributor links accompany the features below.
 
 > [!NOTE]
-> The examples require an F# 11 compiler and FSharp.Core 11 with the features shown. Preview features also require `<LangVersion>preview</LangVersion>`. The runtime-async example has [additional runtime requirements](#runtime-async-for-builder-authors); an earlier .NET 11 SDK alone might not contain every change.
+> The examples require an F# 11 compiler and FSharp.Core 11 with the features shown. In the .NET 11.0.100 SDK, F# 11.2 features require `<LangVersion>preview</LangVersion>`; see [language settings and planned SDK support](../language-reference/compiler-options.md#language-version-and-indentation). The runtime-async example has [additional runtime requirements](#runtime-async-for-builder-authors); an earlier .NET 11 SDK alone might not contain every change.
 
 ## Record spreads: distinct models without repetitive mappings
 
@@ -39,10 +39,10 @@ Thanks to [@brianrourkeboll](https://github.com/dotnet/fsharp/pull/18927) for re
 
 ## Extension members for generic algorithms, operators, and tuples
 
-To share an algorithm across existing types, F# 11 preview lets **extension members satisfy statically resolved type parameter (SRTP) constraints**. For example, one transformation can handle lists and options without wrapper types.
+To share an algorithm across existing types, F# 11.2 lets **extension members satisfy statically resolved type parameter (SRTP) constraints**. For example, one transformation can handle lists and options without wrapper types.
 
 > [!NOTE]
-> Enable `<LangVersion>preview</LangVersion>` where extensions are resolved and open their module. See [library requirements](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers).
+> In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>` where extensions are resolved and open their module. See [library requirements](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers).
 
 ### Share a transformation across lists and options
 
@@ -62,7 +62,7 @@ The shared function in `Structural.Algorithms` asks the input type for a static 
 
 ### Operators, context, and output types
 
-The same mechanism supports [tuple operators and context propagation](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) and [output-directed construction](../language-reference/generics/extension-member-constraints.md#return-directed-construction). Native tuple headers require preview at their declarations as well as at extension-solving call sites.
+The same mechanism supports [tuple operators and context propagation](../language-reference/generics/extension-member-constraints.md#tuple-operators-and-context) and [output-directed construction](../language-reference/generics/extension-member-constraints.md#return-directed-construction). Native tuple headers need the F# 11.2 feature enabled at their declarations as well as at extension-solving call sites.
 
 A **separate** addition, `AllowOverloadOnReturnType`, lets one factory declare overloads distinguished by their returns:
 
@@ -145,7 +145,7 @@ Thanks to [@bartelink](https://github.com/dotnet/fsharp/pull/19844) for async/ta
 Operational logging should add information without changing what the caller catches or hiding where the failure began. Computation-expression handlers can now use `reraise ()` even after they await the logger:
 
 > [!NOTE]
-> Computation-expression rethrow requires `<LangVersion>preview</LangVersion>`.
+> Computation-expression rethrow is an F# 11.2 feature. In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
 
@@ -166,7 +166,7 @@ Builder authors can let the runtime suspend and resume marked methods instead of
 :::code language="fsharp" source="../language-reference/snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
 
 > [!NOTE]
-> This experimental builder requires preview where its inline implementation is defined or expanded, Core 11's `net10.0` build, and references and a runtime with runtime-async support. The verified runtime/reference combination here is .NET 11 RC1. Targeting .NET 10 alone isn't sufficient. See [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments).
+> This experimental builder uses an F# 11.2 feature where its inline implementation is defined or expanded; in the .NET 11.0.100 SDK, enable preview. It also requires Core 11's `net10.0` build and references and a runtime with runtime-async support. The verified runtime/reference combination here is .NET 11 RC1. Targeting .NET 10 alone isn't sufficient. See [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments).
 
 FSharp.Core doesn't ship this sample as a general-purpose builder. Ordinary `task` and `async` code doesn't automatically switch to it, and callers of an already-compiled ordinary task-returning API don't inherently need preview.
 
@@ -241,7 +241,7 @@ Thanks to @T-Gro for [inline collection callbacks](https://github.com/dotnet/fsh
 To protect generated APIs from silent parameter-order changes, an author can require named arguments:
 
 > [!NOTE]
-> Enforcement requires preview and an available `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute` definition. The [complete sample](../language-reference/parameters-and-arguments.md#require-named-arguments) supplies a compatibility definition for references that lack it.
+> Enforcement is an F# 11.2 feature; in the .NET 11.0.100 SDK, enable preview. An available `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute` definition is also required. The [complete sample](../language-reference/parameters-and-arguments.md#require-named-arguments) supplies a compatibility definition for references that lack it.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Named":::
 
@@ -252,7 +252,7 @@ Reordering the declaration preserves the named call's result, `0.75M`; a positio
 To avoid wrapping an existing task as a plain result value, a new last-resort overload rule prefers `Task<'T>` over bare `'T`:
 
 > [!NOTE]
-> The most-concrete tiebreaker and overload-priority behavior require preview.
+> The most-concrete tiebreaker and overload-priority behavior are F# 11.2 features; in the .NET 11.0.100 SDK, enable preview.
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
 
@@ -278,7 +278,7 @@ Thanks to [@kerams](https://github.com/dotnet/fsharp/pull/19977) for conditional
 
 ### Smaller language improvements
 
-To call a record type with .NET constructor syntax, use preview [record constructors](../language-reference/records.md#record-constructors):
+To call a record type with .NET constructor syntax, use F# 11.2 [record constructors](../language-reference/records.md#record-constructors):
 
 :::code language="fsharp" source="snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
 
@@ -304,7 +304,7 @@ Keep these consequential changes in mind when upgrading:
 | Affected code | Action |
 |---|---|
 | Libraries with `.fsi` files | Copy [enforced contract attributes](../language-reference/signature-files.md#compiler-semantic-attributes) to signatures; omissions are now FS3888 errors. |
-| Extension-backed inline libraries | Review inferred signatures and [producer/consumer requirements](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers). Preview can retain more general constraints. |
+| Extension-backed inline libraries | Review inferred signatures and [producer/consumer requirements](../language-reference/generics/extension-member-constraints.md#compile-libraries-and-consumers). F# 11.2 inference can retain more general constraints. |
 | Instance-method delegates | Validate receivers before [direct construction](../language-reference/delegates.md#direct-construction-and-framework-metadata), when null-receiver failures now occur. |
 | Localized interpolated output | .NET-format holes use invariant culture. Choose an explicit culture when localized output is intended. |
 | Custom builders with final `do!` | Supply [binding and unit completion](../language-reference/computation-expressions.md#tail-operations-in-custom-builders); final `do!` no longer selects final-forwarding members. |

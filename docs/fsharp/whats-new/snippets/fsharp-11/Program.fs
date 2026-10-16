@@ -10,8 +10,7 @@ open FSharp11Examples
 let main _ =
     RecordComposition.verify ()
     verify ()
-    let folder = Path.Combine(__SOURCE_DIRECTORY__, "sample-reports")
-    Directory.CreateDirectory folder |> ignore
+    let folder = Directory.CreateTempSubdirectory("fsharp-11-").FullName
     try
         let paths =
             [| for i in 1..8 do

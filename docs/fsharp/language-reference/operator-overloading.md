@@ -167,11 +167,11 @@ The keyword `inline` is often used with global operators, which are often small 
 
 ## Operators supplied by extensions
 
-To combine existing types without wrappers, F# 11 preview can use optional extension operators as SRTP witnesses. These adapters add counts and append observation lists:
+To combine existing types without wrappers, F# 11.2 can use optional extension operators as SRTP witnesses. These adapters add counts and append observation lists:
 
 :::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
 
-Native tuple headers require preview where declared; consumers also need preview to resolve extension operators. Built-in primitive solutions retain priority. See [Extension members for SRTP constraints](generics/extension-member-constraints.md#operator-extensions) for complete calls, scope, and limits.
+In the .NET 11.0.100 SDK, enable preview at native tuple headers and extension-solving call sites. Built-in primitive solutions retain priority. See [Extension members for SRTP constraints](generics/extension-member-constraints.md#operator-extensions) for language settings, complete calls, scope, and limits.
 
 ## See also
 

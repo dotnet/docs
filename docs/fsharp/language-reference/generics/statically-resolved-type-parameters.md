@@ -104,7 +104,7 @@ let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member r
 
 ## Extension member constraints
 
-With `<LangVersion>preview</LangVersion>`, F# 11 can select public, in-scope extension members as constraint solutions. The following function can use `Map` extensions on existing list and option types:
+F# 11.2 can select public, in-scope extension members as constraint solutions. In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`. The following function can use `Map` extensions on existing list and option types:
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Map":::
 

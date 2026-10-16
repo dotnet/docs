@@ -126,7 +126,7 @@ Note that those members could perform any arbitrary work, the syntax is effectiv
 To protect calls from generated parameter-order changes, use `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
 
 > [!NOTE]
-> Enforcement requires `<LangVersion>preview</LangVersion>`. The attribute must exist in the referenced metadata or source; the compiler doesn't synthesize it.
+> This is an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`. The attribute must exist in the referenced metadata or source; the compiler doesn't synthesize it.
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Named":::
 
@@ -143,7 +143,7 @@ If your references lack the attribute, define it before the consuming code. The 
 To distinguish a value from an already-wrapped value, the most-concrete tiebreaker compares otherwise equally ranked generic overloads. For example, it prefers a `Task<'T>` constructor parameter to a bare `'T` parameter:
 
 > [!NOTE]
-> The most-concrete tiebreaker and `OverloadResolutionPriorityAttribute` support require `<LangVersion>preview</LangVersion>`.
+> The most-concrete tiebreaker and `OverloadResolutionPriorityAttribute` support are [F# 11.2 features](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`.
 
 :::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
 
@@ -157,7 +157,7 @@ To keep an old binary entry point while preferring a richer API for new source c
 
 Priority 1 selects the line-aware overload; without the attribute, the one-parameter overload wins. Unannotated members have priority 0. The attribute is available in .NET 9 and later references.
 
-Priority filters applicable candidates within a declaring type before normal overload rules; equal priorities use those rules. It doesn't rank extension modules or change property/indexer selection. Preview mode rejects the attribute on overrides. Only the consuming compiler needs preview to apply the priority.
+Priority filters applicable candidates within a declaring type before normal overload rules; equal priorities use those rules. It doesn't rank extension modules or change property/indexer selection. With this feature enabled, overrides can't carry the attribute. Only the consuming compiler needs the feature enabled to apply the priority.
 
 ### Select by return type
 

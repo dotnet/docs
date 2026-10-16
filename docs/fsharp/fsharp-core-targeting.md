@@ -31,7 +31,7 @@ To diagnose availability:
 |---|---|
 | ValueTask helpers and related overloads | Available in `netstandard2.1` and `net10.0`, not `netstandard2.0`. |
 | Bounds-preserving `Array2D.map`, `mapi`, and `copy` | The `net10.0` build uses a newer .NET allocation API; .NET Standard builds retain their fallback. |
-| Runtime-async return intrinsics | Exposed by the `net10.0` build; compiler, reference, runtime, and preview requirements also apply. |
+| Runtime-async return intrinsics | Exposed by the `net10.0` build; [compiler, language, reference, and runtime requirements](language-reference/task-expressions.md#runtime-async-experiments) also apply. |
 
 For details, see [Async and task functions](language-reference/async-task-functions.md) and [Array2D and Native AOT](language-reference/arrays.md#two-dimensional-arrays-and-native-aot). Ordinary Async/Task helpers and `print`/`printn` are available across all three builds.
 

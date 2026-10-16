@@ -49,7 +49,6 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## See also
 
-- [SYSLIB0066 warning - IStartupValidator is obsolete](../../../../fundamentals/syslib-diagnostics/syslib0066.md)
 - [Cryptography obsoletions (.NET 11)](../../cryptography/11/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 10)](../10.0/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 9)](../9.0/obsolete-apis-with-custom-diagnostics.md)

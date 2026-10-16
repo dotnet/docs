@@ -14,42 +14,44 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 > the retired Functional techniques grouping and the requirement to assign separate Part 1 homes
 > before its practical guides proceed. Building software coverage marked **authored/accepted in
 > #56333** is in an open PR, not shipped (head `4737e1c7fe`, verified 2026-10-16).
-> The broader two-part/OOP boundary in Decision 13 remains unresolved.
+> The broader two-part/OOP boundary in Decision 13 remains a review question. The
+> [expanded roadmap](plan/README.md#plan-index--prs-by-phase) now proposes explicit construct
+> phases and [Building software harvesting tasks](plan/phase-r-building-software.md), without
+> treating those proposed destinations as shipped content or October commitments.
 
 | Feature | Version | Proposed Location |
 |---|---|---|
-| `field` keyword (field-backed properties) | C# 14 | OOP > Properties |
-| Extensions (new syntax) | C# 14 | OOP > Extensions |
-| Dictionary expressions | C# 14 | Type system > Generics |
-| `params` collections | C# 13 | OOP > Methods |
+| `field` keyword (field-backed properties) | C# 14 | Classes > Properties (PR 26); API choices in BS03 |
+| Extensions (new syntax) | C# 14 | Classes > Extensions (PR 46); extension/wrapper choices in BS10 |
+| `params` collections | C# 13 | Classes > Methods (PR 28) |
 | Collection expressions | C# 12 | Type system > Generics |
-| Primary constructors | C# 12 | OOP > Constructors |
+| Primary constructors | C# 12 | Classes > Constructors (PR 27); initialization choices in BS02 |
 | Raw string literals | C# 11 | Strings > Raw string literals |
 | List patterns | C# 11 | Pattern matching |
 | File-local types | C# 11 | Program structure (in context of top-level statements) |
-| Required members | C# 11 | OOP > Properties or Fields |
-| Auto-default structs | C# 11 | Type system > Structs |
-| Record structs | C# 10 | Type system > Records |
+| Required members | C# 11 | Classes > Properties/fields (PR 25-27); initialization choices in BS02 |
+| Auto-default structs | C# 11 | Structs (PR 39); retained Type system introduction URL |
+| Record structs | C# 10 | Structs (PR 39): differences from record classes in retained `types/records.md` |
 | Global using directives | C# 10 | Program structure > Namespaces |
 | File-scoped namespaces | C# 10 | Program structure > Namespaces |
-| Parameterless struct constructors | C# 10 | Type system > Structs |
-| Records and `with` expressions | C# 9 | Type system > Records |
-| Init-only setters | C# 9 | OOP > Properties |
+| Parameterless struct constructors | C# 10 | Structs (PR 39) |
+| Records and `with` expressions | C# 9 | Classes > Records (PR 25); record-class/record-struct comparison in PR 39 |
+| Init-only setters | C# 9 | Classes > Properties (PR 26) |
 | Top-level statements | C# 9 | Program structure |
 | Pattern matching (relational, combinator, parenthesized, type) | C# 9 | Pattern matching |
 | Native sized integers (`nint`) | C# 9 | Type system > Built-in types (mention) |
 | Target-typed `new` expressions | C# 9 | Type system > Built-in types |
 | Static anonymous functions | C# 9 | Building software > Lambda expressions: prevent capture and communicate independence; authored/accepted in #56333 |
-| Covariant return types | C# 9 | OOP > Inheritance |
+| Covariant return types | C# 9 | Classes > Inheritance (PR 29) |
 | Nullable reference types | C# 8 | Null safety |
 | Recursive patterns (positional, property, switch expressions) | C# 8 | Pattern matching |
-| Ranges and indexes | C# 8 | OOP > Indexers |
+| Ranges and indexes | C# 8 | Arrays, indexes, and ranges (§17-18), PR 30/40; existing collections introduction retained |
 | Static local functions | C# 8 | Building software > Local functions: explicit inputs vs. captured context; authored/accepted in #56333 |
-| Readonly members | C# 8 | Type system > Structs |
+| Readonly members | C# 8 | Structs (PR 39) |
 | Tuple comparison `==` and `!=` | C# 7.3 | Type system > Tuples |
-| Attributes on backing fields | C# 7.3 | OOP > Fields and constants |
-| Non-trailing named arguments | C# 7.2 | OOP > Methods |
-| `private protected` accessibility | C# 7.2 | OOP > Access modifiers |
+| Attributes on backing fields | C# 7.3 | Classes > Fields/properties (PR 25-26); Attributes (PR 35) |
+| Non-trailing named arguments | C# 7.2 | Classes > Methods (PR 28) |
+| `private protected` accessibility | C# 7.2 | Classes > Access modifiers (PR 25) |
 | Digit separator after base specifier | C# 7.2 | Type system > Built-in types |
 | Async Main | C# 7.1 | Program structure > Main |
 | `default` expressions | C# 7.1 | Type system > Built-in types |
@@ -60,39 +62,39 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Deconstruction | C# 7 | Pattern matching > Deconstruction |
 | Discards | C# 7 | Pattern matching > Discards |
 | Local functions | C# 7 | Building software > Local functions: member-local helpers, parameters/capture, recursion, comparison with lambdas and type-level methods; authored/accepted in #56333 |
-| Expression-bodied members (more) | C# 7 | OOP > Methods |
-| Auto-property initializers | C# 6 | OOP > Properties |
-| Getter-only property defaults | C# 6 | OOP > Properties |
-| Expression-bodied members | C# 6 | OOP > Methods |
+| Expression-bodied members (more) | C# 7 | Classes > Methods/properties (PR 26/28) |
+| Auto-property initializers | C# 6 | Classes > Properties (PR 26) |
+| Getter-only property defaults | C# 6 | Classes > Properties (PR 26) |
+| Expression-bodied members | C# 6 | Classes > Methods/properties (PR 26/28) |
 | Null propagator `?.` and `?[` | C# 6 | Null safety > Null operators |
 | String interpolation | C# 6 | Strings > Interpolation |
 | `nameof` operator | C# 6 | Strings > nameof |
 | Dictionary initializer | C# 6 | Type system > Generics |
 | Exception filters | C# 6 | Exceptions |
 | Dynamic binding | C# 4 | Type system > Built-in types |
-| Named and optional arguments | C# 4 | OOP > Methods |
+| Named and optional arguments | C# 4 | Classes > Methods (PR 28) |
 | Co-/contra-variance for generic delegates and interfaces | C# 4 | Type system > Generics |
 | Implicitly typed local variables (`var`) | C# 3 | Type system > Built-in types |
-| Object and collection initializers | C# 3 | Type system > Classes |
-| Auto-implemented properties | C# 3 | OOP > Properties |
-| Lambda expressions | C# 3 | Type system > Delegates/lambdas introduction retained; Building software > Lambda expressions adds parameter/body forms, capture, and inline vs. named behavior; authored/accepted in #56333 |
+| Object and collection initializers | C# 3 | Classes > Constructors (PR 27) / collections; choices in BS02/BS06 |
+| Auto-implemented properties | C# 3 | Classes > Properties (PR 26) |
+| Lambda expressions | C# 3 | Delegates introduction (PR 43), existing URL retained; Building software > Lambda expressions adds parameter/body forms, capture, and inline vs. named behavior; authored/accepted in #56333 |
 | LINQ query expressions | C# 3 | Statements > LINQ |
 | Generics | C# 2 | Type system > Generics |
 | Iterators (`yield`) | C# 2 | Building software > Iterators: synchronous `yield return`/`yield break`, `foreach`, deferred production, iterator vs. completed collection or ordinary loop; authored/accepted in #56333 |
 | Nullable value types | C# 2 | Null safety > Nullable value types |
-| Getter/setter separate accessibility | C# 2 | OOP > Properties |
-| Static classes | C# 2 | Type system > Classes |
+| Getter/setter separate accessibility | C# 2 | Classes > Properties (PR 26) |
+| Static classes | C# 2 | Classes (PR 25); retained introduction URL |
 | Covariance and contravariance | C# 2 | Type system > Generics |
-| Classes, Structs, Enums, Interfaces | C# 1 | Type system |
-| Events | C# 1 | OOP > Events |
-| Properties, Indexers | C# 1 | OOP > Properties, Indexers |
-| Reference parameters (`ref`/`out`) | C# 1 | OOP > Methods |
-| `params` arrays | C# 1 | OOP > Methods |
+| Classes, Structs, Enums, Interfaces | C# 1 | Explicit phases H/I/K/L; retain current introduction URLs and early type-system links |
+| Events | C# 1 | Delegates > Events (PR 44); notification choices in BS04 |
+| Properties, Indexers | C# 1 | Classes > Properties (PR 26); Arrays/indexes/ranges > Indexers (PR 30) |
+| Reference parameters (`ref`/`out`) | C# 1 | Classes > Methods (PR 28) |
+| `params` arrays | C# 1 | Classes > Methods (PR 28) |
 | Expressions | C# 1 | Expressions and operators |
 | Operators (arithmetic, relational, equality, logical, conditional, assignment) | C# 1 | Expressions and operators |
 | Selection statements (`if`/`else`, `switch`) | C# 1 | Statements |
 | Iteration statements (`for`, `foreach`, `while`, `do`-`while`) | C# 1 | Statements |
-| `using` statement | C# 1 | OOP > Object lifetime |
+| `using` statement | C# 1 | Exception/statement mechanics; Building software > Resource lifetime (BS07 / PR 32) |
 | `goto` in `switch` | C# 1 | Mentioned in pattern matching context only |
 | Preprocessor directives | C# 1 | Program structure > Preprocessor directives |
 | Attributes | C# 1 | Attributes |
@@ -107,6 +109,19 @@ guides link to complete syntax/restrictions in reference material; they aren't e
 replacements. The latest editorial commit changes only prose in those four articles, not snippets.
 Don't infer completion of the proposed breadth tutorial, deeper OOP callback/event guidance,
 or every older inventory item (such as local-function attributes) from this PR.
+
+**Expanded phase ownership:** class/member constructs now route to [Phase H](plan/phase-h-classes.md), interfaces to
+[Phase K](plan/phase-k-interfaces.md), and applied design to [Phase R](plan/phase-r-building-software.md).
+The existing Type system class/struct/interface/enum/delegate introductions remain canonical;
+Phases H-M review and deepen them rather than create competing definitions. Classes also owns
+record-class coverage in the retained records article. Structs and Interfaces explain differences
+from the shared class baseline; Structs owns the record-class/record-struct comparison.
+Arrays, structs,
+interfaces, enums, delegates, exceptions, attributes, and Documentation comments all have explicit
+phase owners. Unsafe code and other appendixes aren't added.
+
+Dictionary expressions aren't a released C# 14 feature and aren't part of this Fundamentals
+expansion; retain ordinary dictionary/collection initializer coverage instead.
 
 ### Use in sample code without detailed explanation
 

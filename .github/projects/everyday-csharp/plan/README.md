@@ -1,6 +1,14 @@
 # Draft Plan: Fundamentals Restructuring PR Breakdown
 
-**TL;DR:** Break the ~91-article restructuring into ~35 small, independently mergeable PRs. The two-part IA hypothesis separates standard-ordered syntax and semantics from practical technique guidance. [Decision 14](../decisions.md#decision-14-building-software-purpose-and-initial-structure) resolves the former Functional techniques inventory as **Building software**, with four direct articles authored and accepted in open PR [#56333](https://github.com/dotnet/docs/pull/56333) (planned PR 22), not merged. The broader two-part model and OOP classification remain open before Phase G. Each PR aims for ~10 files (articles, snippets, toc.yml, redirects), adds its content to the live TOC immediately, and leaves the section in a publishable state. PR file budgets are advisory: a PR may exceed ~10 files when relocating text to other sections is the right call (Goal 11), and PRs that grow too large are split along a natural seam into separate, consecutively numbered PRs (for example, the collections/LINQ and equality work split into PR 14a / PR 14b). Every new or revised article follows the example-heavy, latest-version-saturation style from Goals 4 and 8.
+**TL;DR:** Build Fundamentals through small, independently reviewable PRs, separating standard-aligned language foundations from practical **Building software** guidance. The expanded roadmap now names the remaining clauses after Namespaces: Classes, Structs, Arrays, extended indexing and slicing, Interfaces, Enums, Delegates, Exceptions, and Attributes, plus Documentation comments. Reuse and consolidate existing articles rather than write another introduction for each phase. [Decision 14](../decisions.md#decision-14-building-software-purpose-and-initial-structure) establishes Building software's initial four articles in open PR [#56333](https://github.com/dotnet/docs/pull/56333) (planned PR 22), not merged. The later construct/design split and proposed destinations below are local planning proposals for Bill's review, not an approved live-TOC reorganization.
+
+## October 2026 execution scope
+
+The **only Everyday C# task targeted for completion during the rest of October is [dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930), planned PR 23**. First reconcile its title, reader outcome, links, and sample with the final decisions in PR #56333. Don't interpret these roadmap additions as October commitments or authorization to create their issues.
+
+PR #56333 is open, not shipped. Preserve its approved Building software purpose and initial placement; don't restore the retired Functional techniques subgroup. See [PR 23's dependency and acceptance gate](phase-f-patterns-functional.md#pr-23--combined-techniques-tutorial-historical-title-functional-techniques-in-c).
+
+The former ~91-article/~35-PR estimate is no longer a useful total: consolidation, retained canonical homes, and the added scope change the denominator. Historical PR IDs are retained below; new numeric work uses PR 39-46, and cross-cutting harvesting tasks use BS01-BS12. These are **planning IDs**, not GitHub PR numbers or delivery promises. Budgets of roughly ten files remain advisory, including snippets, redirects, navigation, and inbound-link repairs.
 
 **Conventions for every PR:**
 
@@ -86,9 +94,28 @@ This plan is split by phase for easier navigation. The conventions above apply t
 | [C — Null safety](phase-c-null-safety.md) | Nullable value types, null operators, NRT, migration | PR 8–9 |
 | [D — Strings](phase-d-strings.md) | Raw strings, interpolation, search/split, compare | PR 10–12 |
 | [E — Expressions & statements (§12–§13)](phase-e-expressions-statements.md) | Statements, collections, LINQ, **equality**, operators | PR 13–18 |
-| [F — Pattern matching (§11) + Building software](phase-f-patterns-functional.md) | Patterns; Building software authored/accepted in open #56333; combined-techniques tutorial deferred | PR 19–23 |
-| [G — Namespaces (§14) + type/member/OOP inventory](phase-g-namespaces-oop.md) | Namespace and type/member syntax plus OOP guidance candidates | PR 24–33 |
-| [H — Remaining sections](phase-h-remaining.md) | Async, attributes, XML docs, analyzers, exceptions | PR 34–38 |
+| [F — Pattern matching (§11) + Building software](phase-f-patterns-functional.md) | Patterns; Building software authored/accepted in open #56333; October tutorial target gated on its final decisions | PR 19–23 |
+| [G — Namespaces (§14)](phase-g-namespaces-oop.md) | One canonical namespace article; earlier OOP work is explicitly redistributed below | PR 24 |
+| [H — Classes (§15)](phase-h-classes.md) | Shared class/member baseline, record classes, accessibility, fields, properties, constructors, methods, inheritance, partial types, extensions | PR 25–29, 31, 46 |
+| [I — Structs (§16)](phase-i-structs.md) | Differences from classes: value semantics, initialization, readonly members; record class versus record struct | PR 39 |
+| [J — Arrays, indexes, and ranges (§17–§18)](phase-j-arrays-indexes-ranges.md) | Arrays; indexers; index-from-end and slicing; ranges tutorial | PR 30, 40 |
+| [K — Interfaces (§19)](phase-k-interfaces.md) | Differences from classes: contracts, inheritance, implementation, explicit members | PR 41 |
+| [L — Enums (§20)](phase-l-enums.md) | Named integral values, defaults, conversion/validation, small flags subset | PR 42 |
+| [M — Delegates (§21)](phase-m-delegates.md) | Existing delegate introduction; named/lambda callbacks; basic events | PR 43–44 |
+| [N — Exceptions (§22)](phase-n-exceptions.md) | Everyday handling, throwing, cleanup, and redistribution of specialized content | PR 38 |
+| [O — Attributes (§23)](phase-o-attributes.md) | Apply existing attributes; separate reflection and authoring | PR 35 |
+| [P — Documentation comments (Annex D)](phase-p-documentation-comments.md) | XML comments, useful tags, compiler output, existing tutorial | PR 36 |
+| [Q — Cross-cutting supporting work](phase-q-supporting-work.md) | Async basics, coding style/analyzers, console tutorial | PR 34, 37, 45 |
+| [R — Building software growth](phase-r-building-software.md) | Applied design/algorithm choices harvested from the Programming Guide | PR 32–33; BS01–BS12 |
+| [Programming Guide retirement inventory](programming-guide-inventory.md) | All 82 current articles: destination, task, extraction/retirement action | — |
 | [Verification & decisions](verification-and-decisions.md) | Build/lint verification + running decisions log | — |
+
+Phase letters describe roadmap organization, not a requirement to finish all earlier phases before drafting any later one. Dependencies are stated in each task. In particular, PR 23 doesn't wait for Classes or any new Building software backlog task.
+
+**Class-first teaching model:** following the standard's strategy, Classes establishes the shared rules; Structs and Interfaces explain their differences rather than repeat those rules. Classes includes record classes. Structs explicitly compares `record class` and `record struct`, coordinating one canonical records article with Classes. Existing class coverage supplies the baseline until the later revisions land.
+
+**Coverage boundaries:** Unsafe code (§24) and every appendix other than Documentation comments are excluded from this Fundamentals expansion. Documentation comments are deliberately included despite being an annex. Modern everyday features augment the standard's teaching order; clause alignment doesn't require reproducing every normative rule. The Type system's early introductions and already-shipped collections/equality articles remain canonical where useful, with links instead of duplicate depth articles.
+
+The [legacy Phase H page](phase-h-remaining.md) retains a routing map for PR 34-38. The [Phase G page](phase-g-namespaces-oop.md#legacy-pr-routing) accounts for PR 25-33 so existing work isn't silently dropped or duplicated.
 
 See the [Project Map](../project-map.md) for goals, decisions, feature coverage, and the target TOC.

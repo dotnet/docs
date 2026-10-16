@@ -1,8 +1,26 @@
 > 📋 Part of the [Everyday C# Fundamentals restructuring plan](README.md). See also the [Project Map](../project-map.md).
 
-## Phase H: Remaining Sections — 5 PRs
+## Historical Phase H: Remaining sections
 
-### PR 34 — Async basics
+This page is a compatibility/routing record. The expanded [plan index](README.md#plan-index--prs-by-phase)
+replaces "Remaining sections" with explicit standard-aligned phases. Don't schedule this historical
+list in addition to its new owners.
+
+| Retained ID | Current owner |
+|---|---|
+| PR 34: Async basics | [Phase Q](phase-q-supporting-work.md#pr-34--async-basics) |
+| PR 35: Attributes | [Phase O](phase-o-attributes.md) |
+| PR 36: XML documentation | [Phase P](phase-p-documentation-comments.md) |
+| PR 36's coding-style/console work | [PR 45](phase-q-supporting-work.md#pr-45--coding-style-and-console-tutorial-reconciliation); design choices in [Phase R](phase-r-building-software.md) |
+| PR 37: Analyzers | [Phase Q](phase-q-supporting-work.md#pr-37--net-analyzers) |
+| PR 38: Exceptions | [Phase N](phase-n-exceptions.md) |
+
+The old estimates and destinations below are preserved as history, not approved current outputs.
+
+<details>
+<summary>Historical remaining-sections inventory</summary>
+
+### Historical PR 34 — Async basics
 
 > ~6 files
 
@@ -11,7 +29,7 @@
 3. New `fundamentals/async/consuming-async.md` — `async`/`await`, task-based pattern, async Main (C# 7.1), brief `await foreach`; link to Async focus section
 4. Snippet files + toc.yml + redirect
 
-### PR 35 — Attributes
+### Historical PR 35 — Attributes
 
 > ~4 files
 
@@ -22,7 +40,7 @@
 
 > *Watch for redistribution:* the existing async overview includes `ConfigureAwait` rules, synchronization-context internals, `ValueTask`, `IAsyncDisposable`, custom awaiters, and `TaskCompletionSource` patterns — all of which fail universality. Move them to the Async deep dive. The existing attributes content includes custom-attribute authoring, attribute-target rules in detail, and reflection-based attribute reading — move those to Language Reference (attribute syntax and targets) or a reflection deep dive. Keep Fundamentals on consuming async APIs with `await` and on applying common attributes that already exist.
 
-### PR 36 — XML docs + Coding style + Console app tutorial
+### Historical PR 36 — XML docs + Coding style + Console app tutorial
 
 > ~10 files
 
@@ -40,14 +58,14 @@
 > area. Decide whether it becomes that area's overview, moves beneath it, or stays in Coding style;
 > don't create overlapping guidance in both places.
 
-### PR 37 — Using .NET analyzers
+### Historical PR 37 — Using .NET analyzers
 
 > ~4 files
 
 1. New `fundamentals/coding-style/analyzers.md` — Roslyn analyzers, .NET SDK analyzers, StyleCop, enabling/configuring via `.editorconfig` and `AnalysisLevel`; finding and fixing code issues
 2. Snippet files + toc.yml
 
-### PR 38 — Exceptions modernization pass
+### Historical PR 38 — Exceptions modernization pass
 
 > ~9 files
 
@@ -58,3 +76,5 @@
 > Addresses [#34831](https://github.com/dotnet/docs/issues/34831) — clean up the Exceptions section, move LINQ exceptions article to LINQ section, move Non-CLS exceptions to Advanced section.
 
 > *Watch for redistribution:* in addition to the LINQ exceptions and Non-CLS exceptions articles already flagged for relocation, the existing exceptions content includes CLR exception model details, Structured Exception Handling (SEH) interop, first-chance exceptions, and corrupted-state exception rules. Those sub-sections fail universality — move them to a runtime/advanced deep dive. Keep the modernization pass focused on idiomatic everyday exception handling.
+
+</details>

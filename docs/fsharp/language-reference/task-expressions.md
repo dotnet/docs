@@ -253,7 +253,7 @@ If you put this inline builder in a library, enable preview both in the library 
 
 Ordinary `task` expressions retain their documented implementation. Don't use `AsyncHelpers.Await` as a general blocking replacement outside a runtime-async method. Consult the [runtime async specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md) before experimenting with additional shapes or runtimes.
 
-The [complete sample project](snippets/task-expressions/RuntimeAsync.fsproj) includes a console entry point. From its directory, run `dotnet run -- manifest.txt` with compatible tooling and a file to read. A file containing exactly `manifest`, without a trailing newline, produces `8`. The console entry point blocks for completion; `readManifest` itself returns `Task<int>`.
+The [complete sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/task-expressions/RuntimeAsync.fsproj) includes a console entry point. From its directory, run `dotnet run -- manifest.txt` with compatible tooling and a file to read. A file containing exactly `manifest`, without a trailing newline, produces `8`. The console entry point blocks for completion; `readManifest` itself returns `Task<int>`.
 
 ## See also
 

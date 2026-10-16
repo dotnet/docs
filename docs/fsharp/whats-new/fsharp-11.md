@@ -84,7 +84,7 @@ The shared function in `Structural.Algorithms` asks the input type for a static 
 
 :::code language="fsharp" source="../language-reference/snippets/extension-member-constraints/library/Library.fs" id="Map":::
 
-`^Input` and `^Output` are statically resolved types. At each concrete call, the compiler selects the member with the required signature. The extensions don't add an interface implementation. The [complete application](../language-reference/snippets/extension-member-constraints/consumer/Program.fs) opens both modules.
+`^Input` and `^Output` are statically resolved types. At each concrete call, the compiler selects the member with the required signature. The extensions don't add an interface implementation. The [complete application](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/consumer/Program.fs) opens both modules.
 
 The same capability reaches beyond collections: [a path-length example](../language-reference/generics/extension-member-constraints.md#adapt-a-property-for-a-shared-algorithm) adapts the different coordinate APIs of `Complex` and `Vector2` to one algorithm.
 
@@ -154,7 +154,7 @@ Register the service and pass the delegate to `MapGet`:
 
 :::code language="fsharp" source="../language-reference/snippets/delegates/Program.fs" id="App":::
 
-Run the [complete project](../language-reference/snippets/delegates/ShipmentApi.fsproj) with `dotnet run -- --urls http://127.0.0.1:5080`, then send:
+Run the [complete project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj) with `dotnet run -- --urls http://127.0.0.1:5080`, then send:
 
 ```console
 curl -H "X-Customer: Ada" http://127.0.0.1:5080/shipments/SHP-1042

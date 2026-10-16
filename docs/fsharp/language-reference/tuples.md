@@ -140,7 +140,7 @@ A plain pair can carry two independently combined values or a result with accumu
 
 :::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="ContextAdapters":::
 
-These declarations use an in-scope `++` operation to combine the contexts; the [complete composition library](snippets/extension-member-constraints/composition/Composition.fs) supplies integer and list adapters. With the library and adapter module in scope, the consumer can preserve an audit trail while applying a function:
+These declarations use an in-scope `++` operation to combine the contexts; the [complete composition library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition/Composition.fs) supplies integer and list adapters. With the library and adapter module in scope, the consumer can preserve an audit trail while applying a function:
 
 :::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
 

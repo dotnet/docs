@@ -127,7 +127,7 @@ Both members select those elements with the same XPath expression:
 
 Enable `GenerateDocumentationFile` in the project or pass `--doc:Tracking.xml` to the compiler. Starting with the F# 11 compiler, both emitted entries contain the selected `remarks` and their distinct local `summary`, not just an include tag. Edit the one fragment and regenerate to update both. Shared text should describe a genuinely shared contract; don't force differing parameter lists or behaviors into a common description.
 
-The [sample project](snippets/xml-documentation/Tracking.fsproj) includes the external XML as an additional compilation input so changes to it can trigger regeneration. The [official `<include>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#include) explains the attributes and XPath selection. This compiler feature doesn't need a language-version opt-in and doesn't expand external includes in live Quick Info.
+The [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/xml-documentation/Tracking.fsproj) includes the external XML as an additional compilation input so changes to it can trigger regeneration. The [official `<include>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#include) explains the attributes and XPath selection. This compiler feature doesn't need a language-version opt-in and doesn't expand external includes in live Quick Info.
 
 ### Include resolution and errors
 

@@ -20,7 +20,7 @@ The following application code measures paths represented by two existing framew
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/consumer/Program.fs" id="Paths":::
 
-The [library source](../snippets/extension-member-constraints/library/Library.fs) defines `Structural.Adapters` and `Structural.Algorithms`. The adapters expose the same coordinate property on types with different native APIs:
+The [library source](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/library/Library.fs) defines `Structural.Adapters` and `Structural.Algorithms`. The adapters expose the same coordinate property on types with different native APIs:
 
 :::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Coordinates":::
 
@@ -68,7 +68,7 @@ let length: int option = Some "hello" |>> String.length
 
 Built-in primitive operator solutions retain priority for matching types. An extension doesn't provide arbitrary mixed-numeric widening or replace all built-in operators.
 
-In numbered F# 11 mode, an optional extension operator declaration emits FS1215 but can still produce a library. A preview consumer can resolve that operator as a constraint solution. Treating warnings as errors rejects that producer; suppressing the warning doesn't enable extension-based resolution in a numbered consumer. The [operator project](../snippets/extension-member-constraints/operators/Operators.fsproj) uses preview to avoid this declaration warning.
+In numbered F# 11 mode, an optional extension operator declaration emits FS1215 but can still produce a library. A preview consumer can resolve that operator as a constraint solution. Treating warnings as errors rejects that producer; suppressing the warning doesn't enable extension-based resolution in a numbered consumer. The [operator project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/operators/Operators.fsproj) uses preview to avoid this declaration warning.
 
 ### Tuple operators and context
 
@@ -92,7 +92,7 @@ Tuples can also carry context alongside a value. The following operator appends 
 
 This is support for static members and operators, not general tuple instance-dot calls. Declaring an instance extension doesn't make `(1, 2).YourMember` supported. Native function-type headers such as `type ('a -> 'b) with` aren't supported either.
 
-The [composition library](../snippets/extension-member-constraints/composition/Composition.fsproj) and [consumer](../snippets/extension-member-constraints/composition-consumer/CompositionConsumer.fsproj) both use preview. In this example, the adapters cross the DLL boundary but `combineAll` is defined in the consumer. Moving that generic reduction into the library can fail during consumer code generation with FS0193 for the tuple `++` case, even with the adapter module open. Keeping the reduction with the consuming calls avoids this observed limitation; it isn't a universal rule against imported generic algorithms. The separate path and mapping examples do export their algorithms.
+The [composition library](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition/Composition.fsproj) and [consumer](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/composition-consumer/CompositionConsumer.fsproj) both use preview. In this example, the adapters cross the DLL boundary but `combineAll` is defined in the consumer. Moving that generic reduction into the library can fail during consumer code generation with FS0193 for the tuple `++` case, even with the adapter module open. Keeping the reduction with the consuming calls avoids this observed limitation; it isn't a universal rule against imported generic algorithms. The separate path and mapping examples do export their algorithms.
 
 ### Return-directed construction
 
@@ -121,7 +121,7 @@ Language settings apply per project, not transitively through references. With a
 | Relies on preview-specific inference to retain an unresolved generic constraint. | Uses an extension case of that inferred API. | Both can need preview; inspect the exported signature. |
 | Exports ordinary extensions or intrinsic-member SRTP APIs. | Uses normal extension calls or intrinsic-member solutions. | Neither inherently requires this preview feature. |
 
-The path and mapping examples use ordinary extension declarations and export an unresolved constraint for the consumer to resolve. The complete [library project](../snippets/extension-member-constraints/library/Library.fsproj) selects `11.0`; the [consumer project](../snippets/extension-member-constraints/consumer/Consumer.fsproj) selects `preview` and has a project reference to the library. From the consumer directory, run `dotnet run` with an F# 11 SDK containing the feature.
+The path and mapping examples use ordinary extension declarations and export an unresolved constraint for the consumer to resolve. The complete [library project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/library/Library.fsproj) selects `11.0`; the [consumer project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/extension-member-constraints/consumer/Consumer.fsproj) selects `preview` and has a project reference to the library. From the consumer directory, run `dotnet run` with an F# 11 SDK containing the feature.
 
 ### Extension scope across assemblies
 

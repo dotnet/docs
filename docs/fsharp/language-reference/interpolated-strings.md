@@ -215,7 +215,7 @@ With `--reflectionfree`, F# 11 can generate meaningful `ToString` implementation
 
 :::code language="fsharp" source="snippets/interpolated-strings/ReflectionFree.fs" id="ReflectionFree":::
 
-The [sample project](snippets/interpolated-strings/ReflectionFree.fsproj) enables the flag. Generated output is not `%A` pretty-printing and can differ in layout or value formatting. Inner types must also have suitable `ToString` implementations; the flag doesn't make arbitrary field conversions or an entire application reflection-free.
+The [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/interpolated-strings/ReflectionFree.fsproj) enables the flag. Generated output is not `%A` pretty-printing and can differ in layout or value formatting. Inner types must also have suitable `ToString` implementations; the flag doesn't make arbitrary field conversions or an entire application reflection-free.
 
 For the release overview, see [What's new in F# 11](../whats-new/fsharp-11.md).
 

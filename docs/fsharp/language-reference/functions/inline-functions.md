@@ -92,7 +92,7 @@ To step into a helper and inspect its parameters, compile without optimization a
 
 :::code language="fsharp" source="../snippets/inline-functions/DebugInline.fs" id="DebugInline":::
 
-In the [sample project](../snippets/inline-functions/DebugInline.fsproj), set a breakpoint on `let total = amount + fee`. Step into `addFee` from the call and inspect `fee` and `amount`. The emitted non-optimized code contains the call and source sequence points; optimized code can fold the calculation instead.
+In the [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/inline-functions/DebugInline.fsproj), set a breakpoint on `let total = amount + fee`. Step into `addFee` from the call and inspect `fee` and `amount`. The emitted non-optimized code contains the call and source sequence points; optimized code can fold the calculation instead.
 
 The behavior follows optimization settings, not the configuration's name. With optimization enabled, inline expansion remains the default. A specialized callable method can be generated where required, but some constructs—including operations requiring static expansion or resumable code—must still inline.
 

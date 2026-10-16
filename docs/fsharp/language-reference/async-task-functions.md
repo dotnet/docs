@@ -102,7 +102,7 @@ The lowercase `Async.catch` returns `Result`, whereas the existing `Async.Catch`
 
 The ValueTask APIs are available in the `netstandard2.1` and `net10.0` builds of FSharp.Core 11, not its `netstandard2.0` build. These are target-specific versions of the library within the same package, selected by NuGet for your project's target framework. Use a package version containing the API you call; changing `LangVersion` doesn't add library functions.
 
-`ValueTask<'T>` is a struct that can contain a result directly or represent an asynchronous operation. Observe its [single-consumption contract](https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1#remarks): don't await the same value repeatedly or concurrently, or pass it into separate combinator pipelines. A single pipeline consumes its input and passes its new result onward. If repeated awaits are required, call `Task.ofValueTask` once and reuse only the resulting task; don't consume the original value task again.
+`ValueTask<'T>` is a struct that can contain a result directly or represent an asynchronous operation. Observe its [single-consumption contract](/dotnet/api/system.threading.tasks.valuetask-1#remarks): don't await the same value repeatedly or concurrently, or pass it into separate combinator pipelines. A single pipeline consumes its input and passes its new result onward. If repeated awaits are required, call `Task.ofValueTask` once and reuse only the resulting task; don't consume the original value task again.
 
 ## See also
 

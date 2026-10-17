@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Drive's current directory path enumeration"
-description: Learn about the .NET 8 breaking change in core .NET libraries where files are enumerated without a separator after the path when the path is the drive's current directory.
+description: Learn about the .NET 9 breaking change in core .NET libraries where files are enumerated without a separator after the path when the path is the drive's current directory.
 ms.date: 02/09/2024
 ---
 # Drive's current directory path enumeration
@@ -39,7 +39,7 @@ C:\Program.cs
 
 ## New behavior
 
-Running the same code snippet in .NET 8 and later versions produces output without a separator character in each path.
+Running the same code snippet in .NET 9 and later versions produces output without a separator character in each path.
 
 ```output
 Full path of "C:" is C:\Users\myalias\consoleapps\Program.
@@ -54,7 +54,7 @@ C:Program.cs
 
 ## Version introduced
 
-.NET 8
+.NET 9
 
 ## Type of breaking change
 

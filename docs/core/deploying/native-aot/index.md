@@ -25,36 +25,81 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 - The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Alpine (3.15+)
 
+  Publish dependencies:
+
   ```sh
-  sudo apk add clang build-base zlib-dev
+  sudo apk add clang build-base icu-dev
   ```
+
+  Run-time dependencies:
+
+  ```sh
+  sudo apk add icu-libs
+  ```
+
+> [!NOTE]
+> The `icu-libs` package is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
 
 # [Fedora](#tab/linux-fedora)
 
 - The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Fedora (39+)
 
+  Publish dependencies:
+
   ```sh
-  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
+  sudo dnf install clang libicu-devel
   ```
+
+  Run-time dependencies:
+
+  ```sh
+  sudo dnf install libicu
+  ```
+
+> [!NOTE]
+> The `libicu` package is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
 
 # [RHEL](#tab/linux-rhel)
 
 - The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - RHEL (8+)
 
+  Publish dependencies:
+
   ```sh
-  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
+  sudo dnf install clang libicu-devel
   ```
+
+  Run-time dependencies:
+
+  ```sh
+  sudo dnf install libicu
+  ```
+
+> [!NOTE]
+> The `libicu-devel` package is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
 
 # [Ubuntu](#tab/linux-ubuntu)
 
 - The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Ubuntu (18.04+)
 
+  Publish dependencies:
+
   ```sh
-  sudo apt-get install clang zlib1g-dev
+  sudo apt-get install clang libicu-dev
   ```
+
+  Run-time dependencies:
+
+  ```sh
+  sudo apt-get install libicuX
+  # replace X with the available version, e.g. libicu76
+  ```
+
+> [!NOTE]
+> The `libicu` library is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
 
 # [macOS](#tab/macOS)
 

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(UseMSTest45Preview)' != 'true'">
-    <PackageReference Include="MSTest.TestFramework" Version="4.4.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="4.5.1" />
   </ItemGroup>
 
   <ItemGroup>

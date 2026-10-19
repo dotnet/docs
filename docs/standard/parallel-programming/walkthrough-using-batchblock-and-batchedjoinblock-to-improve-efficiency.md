@@ -23,7 +23,7 @@ The TPL Dataflow Library provides the <xref:System.Threading.Tasks.Dataflow.Batc
 
 1. Install the [.NET 10 SDK](../../core/install/index.yml). Use a development database, not a production database.
 
-[!INCLUDE [prereq-create-sql-database](../../../includes/prereq-create-sql-database.md)]
+[!INCLUDE [create-sql-database](../../../includes/create-sql-database.md)]
 
 Set the `SQL_CONNECTION_STRING` environment variable to a connection string for your development database. For example, use `Server=<server>,<port>;Database=<database>;User ID=<user_id>;Password=<password>;Encrypt=true;TrustServerCertificate=false`. Set the actual secret in your local environment, not in source code.
 

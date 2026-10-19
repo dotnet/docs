@@ -1,7 +1,7 @@
 ---
 description: "Learn more about System.Transactions integration with SQL Server, which exposes transactions in a way that is fully integrated in .NET Framework."
 title: "System.Transactions Integration with SQL Server"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -13,28 +13,28 @@ ms.custom: sfi-ropc-nochange
 
  In addition to the programmability enhancements, <xref:System.Transactions> and ADO.NET can work together to coordinate optimizations when you work with transactions. A promotable transaction is a lightweight (local) transaction that can be automatically promoted to a fully distributed transaction on an as-needed basis.
 
- Starting with ADO.NET 2.0, <xref:System.Data.SqlClient> supports promotable transactions when you work with SQL Server. A promotable transaction does not invoke the added overhead of a distributed transaction unless the added overhead is required. Promotable transactions are automatic and require no intervention from the developer.
+ Microsoft.Data.SqlClient supports promotable transactions when you work with SQL Server. A promotable transaction does not invoke the added overhead of a distributed transaction unless the added overhead is required. Promotable transactions are automatic and require no intervention from the developer.
 
- Promotable transactions are only available when you use the .NET Framework Data Provider for SQL Server (`SqlClient`) with SQL Server.
+ For the examples in this article, install the [Microsoft.Data.SqlClient NuGet package](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and import the `Microsoft.Data.SqlClient` namespace.
 
 ## Creating Promotable Transactions
 
- The .NET Framework Provider for SQL Server provides support for promotable transactions, which are handled through the classes in the .NET Framework <xref:System.Transactions> namespace. Promotable transactions optimize distributed transactions by deferring creating a distributed transaction until it is needed. If only one resource manager is required, no distributed transaction occurs.
+ Microsoft.Data.SqlClient provides support for promotable transactions, which are handled through the classes in the <xref:System.Transactions> namespace. Promotable transactions optimize distributed transactions by deferring creating a distributed transaction until it is needed. If only one resource manager is required, no distributed transaction occurs.
 
 > [!NOTE]
 > In a partially trusted scenario, the <xref:System.Transactions.DistributedTransactionPermission> is required when a transaction is promoted to a distributed transaction.
 
 ## Promotable Transaction Scenarios
 
- Distributed transactions typically consume significant system resources, being managed by Microsoft Distributed Transaction Coordinator (MS DTC), which integrates all the resource managers accessed in the transaction. A promotable transaction is a special form of a <xref:System.Transactions> transaction that effectively delegates the work to a simple SQL Server transaction. <xref:System.Transactions>, <xref:System.Data.SqlClient>, and SQL Server coordinate the work involved in handling the transaction, promoting it to a full distributed transaction as needed.
+ Distributed transactions typically consume significant system resources, being managed by Microsoft Distributed Transaction Coordinator (MS DTC), which integrates all the resource managers accessed in the transaction. A promotable transaction is a special form of a <xref:System.Transactions> transaction that effectively delegates the work to a simple SQL Server transaction. <xref:System.Transactions>, <xref:Microsoft.Data.SqlClient>, and SQL Server coordinate the work involved in handling the transaction, promoting it to a full distributed transaction as needed.
 
  The benefit of using promotable transactions is that when a connection is opened by using an active <xref:System.Transactions.TransactionScope> transaction, and no other connections are opened, the transaction commits as a lightweight transaction, instead of incurring the additional overhead of a full distributed transaction.
 
 ### Connection String Keywords
 
- The <xref:System.Data.SqlClient.SqlConnection.ConnectionString> property supports a keyword, `Enlist`, which indicates whether <xref:System.Data.SqlClient> will detect transactional contexts and automatically enlist the connection in a distributed transaction. If `Enlist=true`, the connection is automatically enlisted in the opening thread's current transaction context. If `Enlist=false`, the `SqlClient` connection does not interact with a distributed transaction. The default value for `Enlist` is true. If `Enlist` is not specified in the connection string, the connection is automatically enlisted in a distributed transaction if one is detected when the connection is opened.
+ The <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString> property supports a keyword, `Enlist`, which indicates whether <xref:Microsoft.Data.SqlClient> will detect transactional contexts and automatically enlist the connection in a distributed transaction. If `Enlist=true`, the connection is automatically enlisted in the opening thread's current transaction context. If `Enlist=false`, the `SqlClient` connection does not interact with a distributed transaction. The default value for `Enlist` is true. If `Enlist` is not specified in the connection string, the connection is automatically enlisted in a distributed transaction if one is detected when the connection is opened.
 
- The `Transaction Binding` keywords in a <xref:System.Data.SqlClient.SqlConnection> connection string control the connection's association with an enlisted `System.Transactions` transaction. It is also available through the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.TransactionBinding> property of a <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
+ The `Transaction Binding` keywords in a <xref:Microsoft.Data.SqlClient.SqlConnection> connection string control the connection's association with an enlisted `System.Transactions` transaction. It is also available through the <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder.TransactionBinding> property of a <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder>.
 
  The following table describes the possible values.
 
@@ -61,7 +61,7 @@ ms.custom: sfi-ropc-nochange
 
  Working with <xref:System.Transactions> requires that you have a reference to System.Transactions.dll.
 
- The following function demonstrates how to create a promotable transaction against two different SQL Server instances, represented by two different <xref:System.Data.SqlClient.SqlConnection> objects, which are wrapped in a <xref:System.Transactions.TransactionScope> block. The code creates the <xref:System.Transactions.TransactionScope> block with a `using` statement and opens the first connection, which automatically enlists it in the <xref:System.Transactions.TransactionScope>. The transaction is initially enlisted as a lightweight transaction, not a full distributed transaction. The second connection is enlisted in the <xref:System.Transactions.TransactionScope> only if the command in the first connection does not throw an exception. When the second connection is opened, the transaction is automatically promoted to a full distributed transaction. The <xref:System.Transactions.TransactionScope.Complete*> method is invoked, which commits the transaction only if no exceptions have been thrown. If an exception has been thrown at any point in the <xref:System.Transactions.TransactionScope> block, `Complete` will not be called, and the distributed transaction will roll back when the <xref:System.Transactions.TransactionScope> is disposed at the end of its `using` block.
+ The following function demonstrates how to create a promotable transaction against two different SQL Server instances, represented by two different <xref:Microsoft.Data.SqlClient.SqlConnection> objects, which are wrapped in a <xref:System.Transactions.TransactionScope> block. The code creates the <xref:System.Transactions.TransactionScope> block with a `using` statement and opens the first connection, which automatically enlists it in the <xref:System.Transactions.TransactionScope>. The transaction is initially enlisted as a lightweight transaction, not a full distributed transaction. The second connection is enlisted in the <xref:System.Transactions.TransactionScope> only if the command in the first connection does not throw an exception. When the second connection is opened, the transaction is automatically promoted to a full distributed transaction. The <xref:System.Transactions.TransactionScope.Complete*> method is invoked, which commits the transaction only if no exceptions have been thrown. If an exception has been thrown at any point in the <xref:System.Transactions.TransactionScope> block, `Complete` will not be called, and the distributed transaction will roll back when the <xref:System.Transactions.TransactionScope> is disposed at the end of its `using` block.
 
 ```csharp
 // This function takes arguments for the 2 connection strings and commands in order

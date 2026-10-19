@@ -1,7 +1,7 @@
 ---
 description: "Learn more about schema restrictions, which are used to limit the amount of schema information returned from the GetSchema method."
 title: "Schema Restrictions"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,7 +10,7 @@ dev_langs:
 
 The second optional parameter of the `GetSchema` method is the restrictions that are used to limit the amount of schema information returned. It's passed to the `GetSchema` method as an array of strings. The position in the array determines the values that you can pass, and this is equivalent to the restriction number.
 
- For example, the following table describes the restrictions supported by the "Tables" schema collection using .NET Framework Data Provider for SQL Server. Additional restrictions for SQL Server schema collections are listed at the end of this article.
+ For example, the following table describes the restrictions supported by the "Tables" schema collection using Microsoft.Data.SqlClient. Additional restrictions for SQL Server schema collections are listed at the end of this article.
 
 | Restriction Name | Parameter Name | Restriction Default | Restriction Number |
 |------------------|----------------|---------------------|--------------------|
@@ -33,10 +33,10 @@ The second optional parameter of the `GetSchema` method is the restrictions that
 
 ### Example
 
- The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema*> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database, and to restrict the information returned to only those tables in the "Sales" schema:
+ The following examples demonstrate how to use the <xref:Microsoft.Data.SqlClient.SqlConnection.GetSchema*> method of the <xref:Microsoft.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database, and to restrict the information returned to only those tables in the "Sales" schema:
 
 ```vb
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
 Sub Main()
@@ -68,7 +68,7 @@ End Module
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 class Program
 {

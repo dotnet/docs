@@ -7,11 +7,11 @@ ai-usage: ai-assisted
 
 # Named mutexes default to user scope on Unix
 
-Named mutexes on Unix now default to user scope instead of global scope. This change affects .NET 8.0.32, .NET 9.0.21, .NET 10.0.13, and .NET Runtime 11.0-rc2.
+Named mutexes on Unix now default to user scope instead of global scope. This change affects .NET 8.0.32, .NET 9.0.21, .NET 10.0.13, and .NET 11 RC 2.
 
 ## Version introduced
 
-.NET Runtime 11.0-rc2, .NET 10.0.13, .NET 9.0.21, and .NET 8.0.32
+.NET 11 RC 2, .NET 10.0.13, .NET 9.0.21, and .NET 8.0.32
 
 ## Previous behavior
 
@@ -19,7 +19,7 @@ Previously, named mutexes on Unix were globally scoped by default, so processes 
 
 ## New behavior
 
-Starting in .NET 8.0.32, .NET 9.0.21, .NET 10.0.13, and .NET Runtime 11.0-rc2, named mutexes on Unix default to user scope. The runtime stores user-scoped mutex backing files in `$TMPDIR` when it points to a user-owned directory. Otherwise, it uses `$XDG_RUNTIME_DIR` on an XDG-compliant platform; if not, it uses `$HOME/.dotnet/`.
+Named mutexes on Unix now default to user scope. The runtime stores user-scoped mutex backing files in `$TMPDIR` when it points to a user-owned directory. Otherwise, it uses `$XDG_RUNTIME_DIR` on an XDG-compliant platform; if not, it uses `$HOME/.dotnet/`.
 
 ## Type of breaking change
 

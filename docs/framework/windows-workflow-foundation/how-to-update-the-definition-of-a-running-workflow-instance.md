@@ -1,7 +1,7 @@
 ---
 description: "Learn more about updating the definition of a running workflow instance to implement a bug fix, add new requirements, or accommodate unexpected changes."
 title: "How to: Update the Definition of a Running Workflow Instance"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -20,7 +20,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     > [!NOTE]
     > Depending on which programming language is configured as the primary language in Visual Studio, the **Visual C#** or **Visual Basic** node may be under the **Other Languages** node in the **Installed** node.
 
-     Ensure that **.NET Framework 4.5** is selected in the .NET Framework version drop-down list. Select **Console Application** from the **Windows** list. Type **CreateUpdateMaps** into the **Name** box and click **OK**.
+     Ensure that **.NET Framework 4.8.1** is selected in the .NET Framework version drop-down list. Select **Console Application** from the **Windows** list. Type **CreateUpdateMaps** into the **Name** box and click **OK**.
 
 3. Right-click **CreateUpdateMaps** in **Solution Explorer** and choose **Add Reference**.
 
@@ -618,7 +618,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 ## To build the updated workflow assembly
 
-1. Open a second instance of Visual Studio 2012.
+1. Open a second instance of Visual Studio.
 
 2. Choose **Open**, **Project/Solution** from the **File** menu.
 
@@ -649,7 +649,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
 ## To update WorkflowVersionMap with the new versions
 
-1. Switch back to the initial instance of Visual Studio 2012.
+1. Switch back to the initial instance of Visual Studio.
 
 2. Double-click **WorkflowVersionMap.cs** (or **WorkflowVersionMap.vb**) under the **NumberGuessWorkflowHost** project to open it.
 
@@ -1043,7 +1043,9 @@ Dynamic update provides a mechanism for workflow application developers to updat
     > [!NOTE]
     > Depending on which programming language is configured as the primary language in Visual Studio, the **Visual C#** or **Visual Basic** node may be under the **Other Languages** node in the **Installed** node.
 
-    Ensure that **.NET Framework 4.5** is selected in the .NET Framework version drop-down list. Select **Console Application** from the **Windows** list. Type **ApplyDynamicUpdate** into the **Name** box and click **OK**.
+    Ensure that **.NET Framework 4.8.1** is selected in the .NET Framework version drop-down list. Select **Console Application** from the **Windows** list. Type **ApplyDynamicUpdate** into the **Name** box and click **OK**.
+
+    In **ApplyDynamicUpdate**, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package for the `GetIds` query. <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> still uses the provider built into .NET Framework internally.
 
 3. Right-click **ApplyDynamicUpdate** in **Solution Explorer** and choose **Add Reference**.
 
@@ -1096,7 +1098,8 @@ Dynamic update provides a mechanism for workflow application developers to updat
 
     ```vb
     Imports NumberGuessWorkflowHost
-    Imports System.Data.SqlClient
+    Imports System.Data
+    Imports Microsoft.Data.SqlClient
     Imports System.Activities.DynamicUpdate
     Imports System.IO
     Imports System.Runtime.Serialization
@@ -1107,7 +1110,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
     ```csharp
     using NumberGuessWorkflowHost;
     using System.Data;
-    using System.Data.SqlClient;
+    using Microsoft.Data.SqlClient;
     using System.Activities;
     using System.Activities.DynamicUpdate;
     using System.IO;
@@ -1118,17 +1121,19 @@ Dynamic update provides a mechanism for workflow application developers to updat
 15. Add the following connection string member to the `Program` class (or `Module1`).
 
     ```vb
-    Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI"
+    Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI;Encrypt=True;TrustServerCertificate=True"
     ```
 
     ```csharp
-    const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI";
+    const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI;Encrypt=True;TrustServerCertificate=True";
     ```
 
     [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
     > [!NOTE]
     > Depending on your edition of SQL Server, the connection string server name might be different.
+
+    The local development connection string trusts the server certificate. For production, configure a certificate that the client trusts and set `TrustServerCertificate=False`. For instructions, see [Configure SQL Server to use certificates](/sql/database-engine/configure-windows/configure-sql-server-encryption#step-1-configure-sql-server-to-use-certificates). For more information about the direct SQL queries' client settings, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation).
 
 16. Add the following `GetIDs` method to the `Program` class (or `Module1`). This method returns a list of persisted workflow instance ids.
 

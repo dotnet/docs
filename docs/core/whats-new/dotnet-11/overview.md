@@ -40,7 +40,7 @@ The .NET 11 libraries include new APIs for:
 - New numeric APIs, including IEEE 754 decimal floating-point types (<xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>), <xref:System.Numerics.INumberBase`1.TryParsePartial*?displayProperty=nameWithType> for delimiter-aware parsing, and generic <xref:System.Numerics.Complex`1>.
 - System.Text.Json improvements, including C# and F# union support, JSON Lines (JSONL) output, expanded polymorphism and source generation, new naming and ignore controls, and built-in numeric converters and collection contracts.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
-- Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
+- Union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
 - Tar archive format selection and GNU sparse format 1.0 support.
 - `Console` support for the `FORCE_COLOR` environment variable.
 - TLS handshake hardening, certificate-validation alerts on Linux, channel binding validation on Unix, and an experimental caller-driven TLS session API (`TlsBufferSession` and `TlsSocketSession`).

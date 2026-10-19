@@ -153,7 +153,7 @@ helpviewer_keywords:
   - "CS9328"
   - "CS9346"
   - "CS9352"
-ms.date: 10/05/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for language features and versions
@@ -331,7 +331,7 @@ If you can't upgrade, avoid the feature that triggered the error. The error mess
 - **CS9346**: *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - **CS9352**: *The target runtime does not support extended layout types.*
 
-These errors differ from language version errors because upgrading the `<LangVersion>` alone doesn't resolve them. The target runtime (specified by `<TargetFramework>`) must also support the feature at the CLR/runtime level.
+These errors generally require support from the target runtime (specified by `<TargetFramework>`), not just a newer `<LangVersion>`. One exception is non-virtual static interface members: starting with C# 15, declaring and using them no longer requires default-interface-implementation runtime support. If CS8701 occurs for such a member, an SDK that supports C# 15 and `<LangVersion>15.0</LangVersion>` can resolve it without changing the target framework. Instance default implementations, static abstract or virtual members, and protected interface-member accessibility retain their runtime requirements. For more information, see [Static interface members and runtime support](../keywords/interface.md#static-interface-members-and-runtime-support).
 
 Upgrade the `<TargetFramework>` in your project file to a version that supports the required feature. The following list shows which features require which minimum runtime:
 

@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 09/11/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -255,7 +255,7 @@ The updated model also tightens a few related rules:
 
 - The `unsafe` modifier produces an error on a type declaration, a static constructor, and a finalizer, because the modifier has no caller to inform.
 - Delegates can't be `unsafe`, because a delegate is type-shaped.
-- A type whose parameterless constructor is `unsafe` doesn't satisfy the `new()` constraint.
+- A type whose parameterless constructor is `unsafe` can't satisfy a `new()` or `struct` constraint in a declaration, such as a base type or field type. In an expression, it can satisfy the constraint inside an unsafe context, for example `unsafe { var box = new Box<NativeResource>(); }` when `Box<T>` has a `new()` constraint and `NativeResource` has a requires-unsafe constructor.
 
 ### Operations that require an unsafe context
 
@@ -398,6 +398,8 @@ A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` nam
 ### The safe keyword
 
 The updated model adds a [`safe`](keywords/safe.md) contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
+
+You can also apply `safe` where an explicit choice isn't required, such as on an ordinary method emitted by a source generator. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration.
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 

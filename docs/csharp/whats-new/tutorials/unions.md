@@ -5,7 +5,7 @@ author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
-ms.date: 07/02/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 #customer intent: As a C# developer, I model a value that can be one of several types so the compiler enforces that I handle every case.
 ---
@@ -26,13 +26,12 @@ In this tutorial, you:
 
 ## Prerequisites
 
-This tutorial uses preview language features. You need an SDK that supports closed hierarchies and a language version set to `preview`. To get started, you'll need:
+This tutorial uses C# 15 union types. To get started, you need:
 
-- The .NET 11 SDK preview 5 SDK or a later version. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet).
+- The .NET 11 RC1 SDK or later. Use the current RC2 SDK from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/11.0).
 - An editor such as Visual Studio or Visual Studio Code with the C# Dev Kit.
 
-> [!IMPORTANT]
-> Union types are a preview feature. The syntax and supporting types can change before the feature ships. Set `<LangVersion>preview</LangVersion>` in your project to enable it.
+Projects that target `net11.0` use C# 15 by default. You don't need to set `LangVersion` to `preview`.
 
 ## Create the sample solution
 
@@ -42,17 +41,17 @@ You build a class library, `SmartHome.Core`, that holds the union types, and a c
 
    ```dotnetcli
    dotnet new sln -n TelemetryMonitor
-   dotnet new classlib --langVersion preview -n SmartHome.Core
-   dotnet new console --langVersion preview -n SmartHome.App
+   dotnet new classlib -f net11.0 -n SmartHome.Core
+   dotnet new console -f net11.0 -n SmartHome.App
    dotnet sln add SmartHome.Core SmartHome.App
    dotnet add SmartHome.App reference SmartHome.Core
    ```
 
-1. The previous commands included the `--langVersion preview` to enable C# 15 preview features. In each project file, verify that the language version is set to `preview`:
+1. In each project file, verify that the target framework is .NET 11. The SDK selects C# 15 for this target:
 
    ```xml
    <PropertyGroup>
-     <LangVersion>preview</LangVersion>
+     <TargetFramework>net11.0</TargetFramework>
    </PropertyGroup>
    ```
 
@@ -86,7 +85,7 @@ When a sensor read can fail, you need a type that carries either a value or an e
 
    :::code language="csharp" source="snippets/shared/telemetry-monitor/SmartHome.Core/Result.cs" id="ResultConsume":::
 
-The original class lets a caller incorrectly read `Value` on a failure or `Error` on a success. The union removes those invalid states: a `Result<T>` is either a `T` that holds the successful result or an `Exception` that explains why the operation failed. Each case converts to the union implicitly, so you assign an instance of `T` or an instance of `Exception` directly to a `Result<T>`. When you read the result, a switch verifies that you handle the success value, the failure, and null. For more information, see [Union declarations](../../language-reference/builtin-types/union.md#union-declarations) and [Union conversions](../../language-reference/builtin-types/union.md#union-conversions).
+The original class lets a caller incorrectly read `Value` on a failure or `Error` on a success. The union represents each outcome with its own type: a `T` holds the successful result, and an `Exception` explains why the operation failed. Each case converts to the union implicitly, so you assign an instance of `T` or an instance of `Exception` directly to a `Result<T>`. A default union can still contain null, so the switch also handles that possibility. In this example, `T` is unconstrained and can be nullable, so nullability analysis warns if you omit the `null` arm. For more information, see [Union declarations](../../language-reference/builtin-types/union.md#union-declarations) and [Union exhaustiveness](../../language-reference/builtin-types/union.md#union-exhaustiveness).
 
 ## Reuse a generic union across numeric types
 
@@ -152,7 +151,7 @@ You built the readings layer of a smart-home telemetry monitor and, in the proce
 
 - Declared a `Reading` union and read it with an exhaustive switch, letting the compiler flag any case you don't handle.
 - Handled a nullable case, where the compiler requires a `null` arm.
-- Replaced a hand-rolled result type with a generic `Result<T>` union that models success or failure without invalid states.
+- Replaced a hand-rolled result type with a generic `Result<T>` union that models success or failure and handles null contents.
 - Reused a generic `Sample<T>` union across several numeric types with a constraint, and added members to the union declaration.
 - Built a custom `[Union]` struct that avoids boxing for performance-sensitive code.
 

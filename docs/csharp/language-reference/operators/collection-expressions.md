@@ -1,7 +1,8 @@
 ---
 title: "Collection expressions (Collection literals)"
 description: Collection expressions convert to many collection types. You can write literal values, expressions, or other collections to create a new collection.
-ms.date: 08/14/2026
+ms.date: 10/19/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "Collection expressions"
 ---
@@ -107,6 +108,8 @@ Starting in C# 15, you can pass arguments to the underlying collection's constru
 
 The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element go to the appropriate constructor or create method based on the target type. You can use any valid expression for the arguments in the `with` element.
 
+Argument expressions and element expressions are evaluated once, in left-to-right order, with the `with(...)` arguments evaluated before the collection elements. For a spread, its expression is evaluated in that order, but the compiler can delay enumeration.
+
 ### Constructor arguments
 
 When the target type is a class or struct that implements <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, the arguments in `with(...)` are evaluated and the results go to the constructor. The compiler uses overload resolution to select the best matching constructor:
@@ -118,6 +121,14 @@ In the preceding example:
 - The `List<string>` constructor with a `capacity` parameter gets called with `values.Length * 2`.
 - The `HashSet<string>` constructor with an <xref:System.Collections.Generic.IEqualityComparer`1?displayProperty=nameWithType> parameter gets called with `StringComparer.OrdinalIgnoreCase`.
 - For interface target types like <xref:System.Collections.Generic.IList`1?displayProperty=nameWithType>, the compiler creates a `List<T>` with the specified capacity.
+
+The target type doesn't need a parameterless constructor when `with(...)` supplies the required constructor arguments. For example, `NamedValues` requires a name and inherits the collection behavior of `List<int>`:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="RequiredConstructor":::
+
+This collection expression supplies the required name and then adds the elements:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="RequiredConstructorUsage":::
 
 ### Collection builder arguments
 
@@ -149,4 +160,4 @@ The `with(...)` element has the following restrictions:
 - It must be the first element in the collection expression.
 - Arguments can't have `dynamic` type.
 - It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).
-- The arguments in `with(...)` don't affect whether a conversion exists from the collection expression to a candidate target type. The compiler ignores them during overload resolution and type inference. Only the presence of a `with(...)` element, not its arguments, affects whether the conversion exists.
+- The arguments in `with(...)` don't affect whether a conversion exists from the collection expression to a candidate target type. Overload resolution and type inference for an enclosing call ignore those arguments. Only the presence of a `with(...)` element, not its arguments, affects whether that conversion exists. Once the target type is determined, the arguments do participate in overload resolution for its constructor or collection builder method.

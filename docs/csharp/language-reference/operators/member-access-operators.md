@@ -207,6 +207,8 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 You can use index and range operators with a type that is *countable*. A *countable* type has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *countable* types.
 
+Starting with C# 15, [extension indexers and other extension members](../keywords/extension.md#index-and-range-access) can provide integer indexing, `Length` or `Count`, and `Slice` for implicit index and range access. Applicable instance indexers and implicit access using instance members take precedence over extension access. This support doesn't make extension `Length` or `Count` properties participate in collection-expression spread optimizations.
+
 > [!NOTE]
 > Single dimensional arrays are *countable*. Multidimensional arrays aren't. You can't use the `^` and `..` (range) operators in multidimensional arrays.
 

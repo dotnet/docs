@@ -5,7 +5,7 @@ author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
-ms.date: 07/15/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 #customer intent: As a C# developer, I reduce repeated code by introducing extension members for common tasks 
 ---
@@ -27,9 +27,10 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- The .NET 11 preview SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/11.0).
-- Visual Studio 2026 with preview features enabled. Download it from the [Visual Studio page](https://visualstudio.microsoft.com).
-- This sample sets `<LangVersion>preview</LangVersion>` because extension indexers are a C# 15 preview feature.
+- The .NET 11 RC1 SDK or later. Use the current RC2 SDK from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/11.0).
+- An editor such as Visual Studio 2026 or Visual Studio Code with the C# Dev Kit.
+
+This sample targets `net11.0`, which selects C# 15 by default. Extension indexers don't require `<LangVersion>preview</LangVersion>`.
 
 ## Create the sample application
 
@@ -38,11 +39,11 @@ Start by creating a console application that demonstrates both traditional exten
 1. Create a new console application.
 
    ```dotnetcli
-   dotnet new console -n PointExtensions
+   dotnet new console -f net11.0 -n PointExtensions
    cd PointExtensions
    ```
 
-1. Update the project file so the sample targets .NET 11 and uses preview language features:
+1. Verify that the project file targets .NET 11:
 
    :::code language="xml" source="snippets/PointExtensions/PointExtensions.csproj":::
 

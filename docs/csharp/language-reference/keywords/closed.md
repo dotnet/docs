@@ -1,7 +1,7 @@
 ---
 title: "closed modifier"
 description: "Learn about the closed class modifier in C#. A closed class restricts derivation to its declaring assembly so consumers can write exhaustive switch expressions over its direct descendants."
-ms.date: 08/14/2026
+ms.date: 10/19/2026
 f1_keywords:
   - "closed"
   - "closed_CSharpKeyword"
@@ -49,7 +49,7 @@ The `closed` modifier is a class modifier:
 - You must declare a direct subtype of a closed class in the same assembly and module as the closed base class.
 - A class that derives from a closed class isn't itself closed. Apply the `closed` modifier again if you want a derived class to also be closed.
 
-If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. This rule isn't about the `closed` modifier itself: a *closed constructed type* is a generic type whose type arguments are fully specified (such as `Tree<int>`), as opposed to an *open type* like `Tree<T>`. The rule ensures that each closed constructed type of the base class has exactly one corresponding closed constructed type among its direct descendants, so the compiler can reason about exhaustiveness.
+If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. A *closed constructed type* is a generic type whose type arguments are fully specified (such as `Tree<int>`), as opposed to an *open type* like `Tree<T>`. The restriction lets the compiler determine the possible constructed descendants for a given base construction. A particular base construction can have no corresponding construction of a particular descendant; the rule doesn't guarantee one.
 
 ```csharp
 public closed record class Tree<T>;
@@ -69,7 +69,7 @@ When the switch governing expression is nullable, `null` becomes another possibl
 
 :::code language="csharp" source="./snippets/shared/Closed.cs" id="NullableSwitch":::
 
-If you omit the `null` arm, the compiler warns that the pattern `null` isn't handled. The same rule applies whether the closed type is a class or a struct lifted to a nullable type.
+If you omit the `null` arm, the compiler warns that the pattern `null` isn't handled. The `closed` modifier applies only to classes, including record classes.
 
 For more information about how the compiler determines exhaustiveness, including how closed hierarchies interact with generic constraints and accessibility, see [Closed hierarchy patterns](../operators/patterns.md#closed-hierarchy-patterns).
 

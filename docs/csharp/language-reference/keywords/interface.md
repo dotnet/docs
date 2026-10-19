@@ -1,7 +1,8 @@
 ---
 description: "Use the `interface` keyword to define contracts that any implementing type must support. Interfaces provide the means to create common behavior among a set of unrelated types."
 title: "interface keyword"
-ms.date: 01/21/2026
+ms.date: 10/19/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "interface_CSharpKeyword"
 helpviewer_keywords:
@@ -50,6 +51,19 @@ Member declarations typically don't contain a body. However, an interface member
 
 > [!IMPORTANT]
 > If you add default interfaces members, any `ref struct` that implements the interface must explicitly declare that member.
+
+## Static interface members and runtime support
+
+Starting with C# 15, you can declare and use non-virtual static interface members even when the target runtime doesn't support default interface implementations. For example, a static helper method provides a single implementation that you call on the interface type:
+
+```csharp
+public interface IMeasurement
+{
+    public static double ToMeters(double centimeters) => centimeters / 100;
+}
+```
+
+The call `IMeasurement.ToMeters(250)` doesn't require an implementing type or runtime dispatch through that type. This compatibility change applies to non-virtual static members, not instance default implementations or `static abstract` and `static virtual` members. Those features retain their runtime requirements. The `protected`, `protected internal`, and `private protected` access modifiers on interface members also still require a runtime that supports default interface implementations.
 
 ## Static abstract and virtual members
 

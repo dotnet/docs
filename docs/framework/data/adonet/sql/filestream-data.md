@@ -1,7 +1,7 @@
 ---
 description: "Learn more about FILESTREAM data. The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column."
 title: "FILESTREAM Data"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ---
 
 # FILESTREAM data
@@ -9,13 +9,13 @@ ms.date: "03/30/2017"
 The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column. Before FILESTREAM, storing binary data required special handling. Unstructured data, such as text documents, images, and video, is often stored outside of the database, making it difficult to manage.
 
 > [!NOTE]
-> You must install .NET Framework 3.5 SP1 (or later) to work with FILESTREAM data using SqlClient.
+> Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package to use this example. <xref:Microsoft.Data.SqlTypes.SqlFileStream> requires Windows and Windows integrated authentication.
 
 Specifying the FILESTREAM attribute on a `varbinary(max)` column causes SQL Server to store the data on the local NTFS file system instead of in the database file. Although it is stored separately, you can use the same Transact-SQL statements that are supported for working with `varbinary(max)` data that is stored in the database.
 
 ## SqlClient Support for FILESTREAM
 
-The .NET Framework Data Provider for SQL Server, <xref:System.Data.SqlClient>, supports reading and writing to FILESTREAM data using the <xref:System.Data.SqlTypes.SqlFileStream> class defined in the <xref:System.Data.SqlTypes> namespace. `SqlFileStream` inherits from the <xref:System.IO.Stream> class, which provides methods for reading and writing to streams of data. Reading from a stream transfers data from the stream into a data structure, such as an array of bytes. Writing transfers the data from the data structure into a stream.
+Microsoft.Data.SqlClient supports reading and writing to FILESTREAM data using the <xref:Microsoft.Data.SqlTypes.SqlFileStream> class defined in the <xref:Microsoft.Data.SqlTypes> namespace. `SqlFileStream` inherits from the <xref:System.IO.Stream> class, which provides methods for reading and writing to streams of data. Reading from a stream transfers data from the stream into a data structure, such as an array of bytes. Writing transfers the data from the data structure into a stream.
 
 ### Creating the SQL Server Table
 
@@ -45,8 +45,8 @@ The sample also demonstrates how to write data to a FILESTREAM by using the Seek
 
 ```csharp
 using System;
-using System.Data.SqlClient;
-using System.Data.SqlTypes;
+using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlTypes;
 using System.Data;
 using System.IO;
 

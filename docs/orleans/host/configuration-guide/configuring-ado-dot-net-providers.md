@@ -1,7 +1,7 @@
 ---
 title: Configure ADO.NET providers
 description: Learn how to configure ADO.NET providers in .NET Orleans.
-ms.date: 01/21/2026
+ms.date: 10/19/2026
 ms.topic: how-to
 zone_pivot_groups: orleans-version
 ---
@@ -23,7 +23,7 @@ var invariant = "Microsoft.Data.SqlClient";
 var connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
     "Initial Catalog=Orleans;Integrated Security=True;" +
     "Pooling=False;Max Pool Size=200;" +
-    "MultipleActiveResultSets=True";
+    "MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True";
 
 builder.UseOrleans(siloBuilder =>
 {
@@ -57,7 +57,7 @@ var invariant = "Microsoft.Data.SqlClient";
 var connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
     "Initial Catalog=Orleans;Integrated Security=True;" +
     "Pooling=False;Max Pool Size=200;" +
-    "MultipleActiveResultSets=True";
+    "MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True";
 
 builder.UseOrleansClient(clientBuilder =>
 {
@@ -71,7 +71,7 @@ builder.UseOrleansClient(clientBuilder =>
 ```
 
 > [!NOTE]
-> Starting with Orleans 10.0, use `Microsoft.Data.SqlClient` instead of `System.Data.SqlClient` for the ADO.NET invariant.
+> For Orleans 7 and later versions, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and use `Microsoft.Data.SqlClient` for the ADO.NET invariant. The certificate trust exception in these connection strings is for local development with LocalDB. For production connections, use a trusted server certificate and set `TrustServerCertificate=False`.
 
 :::zone-end
 

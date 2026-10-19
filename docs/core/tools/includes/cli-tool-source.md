@@ -7,4 +7,4 @@ ms.topic: include
 Specifies the source for NuGet packages.
 
 > [!CAUTION]
-> Completely replaces existing NuGet configuration including Package Source Mapping
+> This option completely replaces existing NuGet configuration, including Package Source Mapping.

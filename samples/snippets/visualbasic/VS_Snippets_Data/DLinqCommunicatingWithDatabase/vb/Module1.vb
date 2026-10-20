@@ -67,7 +67,7 @@ Module Module1
         Dim northwindCon = New SqlConnection(conString)
         northwindCon.Open()
 
-        Dim db = New Northwnd("...")
+        Dim db = New Northwnd(northwindCon)
         Dim northwindTransaction = northwindCon.BeginTransaction()
 
         Try

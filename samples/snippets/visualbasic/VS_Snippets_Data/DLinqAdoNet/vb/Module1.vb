@@ -28,8 +28,8 @@ Module Module1
         Dim results As IEnumerable(Of Customer) = _
     db.ExecuteQuery(Of Customer)( _
     "SELECT [c1].custID as CustomerID," & _
-        "[c2].custName as ContactName" & _
-        "FROM customer1 AS [c1], customer2 as [c2]" & _
+        "[c2].custName as ContactName " & _
+        "FROM customer1 AS [c1], customer2 as [c2] " & _
         "WHERE [c1].custid = [c2].custid")
         ' </Snippet3>
 
@@ -45,7 +45,8 @@ Module Module1
         ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         Dim results As IEnumerable(Of Customer) = _
     db.ExecuteQuery(Of Customer)( _
-        "SELECT contactname FROM customers WHERE city = {0}, 'London'")
+        "SELECT CustomerID, ContactName FROM customers WHERE city = {0}", _
+        "London")
     End Sub
     ' </Snippet4>
 

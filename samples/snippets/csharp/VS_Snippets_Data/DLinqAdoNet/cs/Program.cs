@@ -47,7 +47,7 @@ namespace cs_adonet
             // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
             // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             IEnumerable<Customer> results = db.ExecuteQuery<Customer>(
-    "select contactname from customers where city = {0}",
+    "select CustomerID, ContactName from customers where city = {0}",
     "London"
 );
             // </Snippet4>

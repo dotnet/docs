@@ -2,7 +2,7 @@
 description: "Learn more about: ADO.NET and LINQ to SQL"
 title: "ADO.NET and LINQ to SQL"
 titleSuffix: ""
-ms.date: "10/19/2026"
+ms.date: "10/20/2026"
 ai-usage: ai-assisted
 dev_langs:
   - "csharp"
@@ -50,7 +50,7 @@ ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
  [!code-csharp[DLinqAdoNet#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs/Program.cs#3)]
  [!code-vb[DLinqAdoNet#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb/Module1.vb#3)]
 
- As long as the column names in the tabular results match column properties of your entity class, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] creates your objects out of any SQL query.
+ To materialize the mapped `Customer` entities, return columns that match their mapped properties and include `CustomerID`, the primary key.
 
 ### Parameters
 

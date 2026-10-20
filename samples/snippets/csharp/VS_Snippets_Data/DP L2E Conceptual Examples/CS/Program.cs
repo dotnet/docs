@@ -977,7 +977,7 @@ namespace L2E_ConceptualExamplesCS
                                                      where sale.SalesOrderID == s
                                                      select sale;
 
-                // NotSupportedException exception is thrown here.
+                // The comparison converts the operands to Int64.
                 try
                 {
                     foreach (SalesOrderDetail order in query)

@@ -468,6 +468,8 @@ await host.StartAsync();
 
 For a reliable production deployment using SQL Server, supply a SQL Server connection string.
 
+Install the `Microsoft.Data.SqlClient` NuGet package and use the `Microsoft.Data.SqlClient` invariant.
+
 Silo configuration:
 
 ```csharp
@@ -481,7 +483,7 @@ var silo = new SiloHostBuilder()
     .UseAdoNetClustering(options =>
     {
       options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
+      options.Invariant = "Microsoft.Data.SqlClient";
     })
     .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
     .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
@@ -502,7 +504,7 @@ var client = new ClientBuilder()
     .UseAdoNetClustering(options =>
     {
       options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
+      options.Invariant = "Microsoft.Data.SqlClient";
     })
     .Build();
 ```

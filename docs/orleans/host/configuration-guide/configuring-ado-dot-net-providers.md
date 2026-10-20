@@ -77,16 +77,18 @@ builder.UseOrleansClient(clientBuilder =>
 
 :::zone pivot="orleans-3-x"
 
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and use `Microsoft.Data.SqlClient` for the ADO.NET invariant.
+
 The silo configuration code should look like this:
 
 ```csharp
 var siloHostBuilder = new SiloHostBuilder();
 
-var invariant = "System.Data.SqlClient";
+var invariant = "Microsoft.Data.SqlClient";
 var connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
     "Initial Catalog=Orleans;Integrated Security=True;" +
     "Pooling=False;Max Pool Size=200;" +
-    "Asynchronous Processing=True;MultipleActiveResultSets=True";
+    "MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True";
 
 // Use ADO.NET for clustering
 siloHostBuilder.UseAdoNetClustering(options =>
@@ -113,11 +115,11 @@ The client configuration code should look like this:
 ```csharp
 var clientBuilder = new ClientBuilder();
 
-var invariant = "System.Data.SqlClient";
+var invariant = "Microsoft.Data.SqlClient";
 var connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
     "Initial Catalog=Orleans;Integrated Security=True;" +
     "Pooling=False;Max Pool Size=200;" +
-    "Asynchronous Processing=True;MultipleActiveResultSets=True";
+    "MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True";
 
 // Use ADO.NET for clustering
 clientBuilder.UseAdoNetClustering(options =>
@@ -126,6 +128,8 @@ clientBuilder.UseAdoNetClustering(options =>
     options.ConnectionString = connectionString;
 });
 ```
+
+The certificate trust exception in these connection strings is for local development with LocalDB. For production connections, use a trusted server certificate and set `TrustServerCertificate=False`.
 
 :::zone-end
 

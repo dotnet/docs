@@ -97,7 +97,10 @@ Sometimes functions are *mutually recursive*, meaning that calls form a circle, 
 
 The following example shows two mutually recursive functions.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4002.fs)]
+```fsharp
+let rec Even x = if x = 0 then true else Odd (x - 1)
+and Odd x = if x = 0 then false else Even (x - 1)
+```
 
 ## Recursive values
 

@@ -177,7 +177,7 @@ class Examples
 }
 ```
 
-The call produces **CS0121**: "The call is ambiguous between the following methods or properties: 'Examples.Print(System.Collections.Generic.List<string>)' and 'Examples.Print(System.Collections.Generic.HashSet<string>)'." Although only `HashSet<string>` has a constructor that accepts this comparer, the compiler ignores the `with(...)` arguments when it chooses the `Print` overload. Assign the collection expression to a `HashSet<string>` variable first to select that overload.
+The call produces **CS0121**: "The call is ambiguous between the following methods or properties." Although only `HashSet<string>` has a constructor that accepts this comparer, the compiler ignores the `with(...)` arguments when it chooses the `Print` overload. Assign the collection expression to a `HashSet<string>` variable first to select that overload.
 
 Similarly, `with(...)` arguments don't supply element types for generic type inference:
 
@@ -193,4 +193,4 @@ class Examples
 }
 ```
 
-This call produces **CS0411**: "The type arguments for method 'Examples.Use<T>(List<T>)' cannot be inferred from the usage. Try specifying the type arguments explicitly." The capacity argument doesn't determine `T`, and the collection has no elements from which to infer it. Specify the type argument, such as `Use<int>([with(10)])`.
+This call produces **CS0411**: "The type arguments can't be inferred from the usage. Try specifying the type arguments explicitly." The capacity argument doesn't determine `T`, and the collection has no elements from which to infer it. Specify the type argument, such as `Use<int>([with(10)])`.

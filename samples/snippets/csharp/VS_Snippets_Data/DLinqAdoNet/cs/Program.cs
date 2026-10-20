@@ -13,10 +13,14 @@ namespace cs_adonet
             Northwnd db = new Northwnd(@"");
 
             // <Snippet1>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             db.Connection.Close();
             // </Snippet1>
 
             // <Snippet2>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             using (TransactionScope ts = new TransactionScope())
             {
                 db.SubmitChanges();
@@ -25,6 +29,8 @@ namespace cs_adonet
             // </Snippet2>
 
             // <Snippet3>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             IEnumerable<Customer> results = db.ExecuteQuery<Customer>(
     @"select c1.custid as CustomerID, c2.custName as ContactName
         from customer1 as c1, customer2 as c2
@@ -38,6 +44,8 @@ namespace cs_adonet
             Northwnd db = new Northwnd(@"");
 
             // <Snippet4>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             IEnumerable<Customer> results = db.ExecuteQuery<Customer>(
     "select contactname from customers where city = {0}",
     "London"

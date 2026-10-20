@@ -8,10 +8,14 @@ Module Module1
         Dim db As New Northwnd("")
 
         ' <Snippet1>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         db.Connection.Close()
         ' </Snippet1>
 
         ' <Snippet2>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         Using ts As New TransactionScope()
             db.SubmitChanges()
             ts.Complete()
@@ -19,6 +23,8 @@ Module Module1
         ' </Snippet2>
 
         ' <Snippet3>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         Dim results As IEnumerable(Of Customer) = _
     db.ExecuteQuery(Of Customer)( _
     "SELECT [c1].custID as CustomerID," & _
@@ -35,6 +41,8 @@ Module Module1
         Dim db As New Northwnd("")
 
         ' <Snippet4>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         Dim results As IEnumerable(Of Customer) = _
     db.ExecuteQuery(Of Customer)( _
         "SELECT contactname FROM customers WHERE city = {0}, 'London'")

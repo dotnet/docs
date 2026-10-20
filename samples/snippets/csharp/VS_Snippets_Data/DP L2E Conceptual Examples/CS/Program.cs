@@ -840,6 +840,8 @@ namespace L2E_ConceptualExamplesCS
         {
 
             // <SnippetSBUDT543840>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // This Entity Framework model uses the built-in .NET Framework SQL provider.
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 // Ordering information is lost when executed against a SQL Server 2005
@@ -965,6 +967,8 @@ namespace L2E_ConceptualExamplesCS
         public static void UIntAsQueryParam()
         {
             // <SnippetUIntAsQueryParam>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // This Entity Framework model uses the built-in .NET Framework SQL provider.
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 uint s = UInt32.Parse("48000");
@@ -1036,6 +1040,8 @@ namespace L2E_ConceptualExamplesCS
         public static void SBUDT555877()
         {
             // <SnippetSBUDT555877>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // This Entity Framework model uses the built-in .NET Framework SQL provider.
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 Contact contact = context.Contacts.FirstOrDefault();
@@ -1361,6 +1367,8 @@ namespace L2E_ConceptualExamplesCS
 	static void ProjectToAnonType()
         {
             //<snippetProjToAnonType1>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // This Entity Framework model uses the built-in .NET Framework SQL provider.
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var resultWithoutRelatedObjects =
@@ -1372,6 +1380,8 @@ namespace L2E_ConceptualExamplesCS
             }
             //</snippetProjToAnonType1>
             //<snippetProjToAnonType2>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // This Entity Framework model uses the built-in .NET Framework SQL provider.
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var resultWithRelatedObjects =

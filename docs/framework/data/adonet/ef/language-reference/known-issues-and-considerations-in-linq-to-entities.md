@@ -1,13 +1,17 @@
 ---
 description: "Learn more about: Known Issues and Considerations in LINQ to Entities"
 title: "Known Issues and Considerations in LINQ to Entities"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
 ---
 # Known Issues and Considerations in LINQ to Entities
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. These examples retain `System.Data.SqlClient` through the built-in Entity Framework SQL provider in `System.Data.Entity`. To change that provider, you must migrate the Entity Framework integration, not just replace a namespace.
 
 This section provides information about known issues with LINQ to Entities queries.
 

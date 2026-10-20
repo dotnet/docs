@@ -60,7 +60,7 @@ HRESULT EvaluatePolicy (
 |-------------|-----------------|  
 |S_OK|The evaluation completed successfully.|  
 |E_INVALIDARG|Either `pwzReferenceIdentity` or `pbApplicationPolicy` is a null reference.|  
-|ERROR_INSUFFICIENT_BUFFER|`cbAppPolicySize` is too small.|  
+|ERROR_INSUFFICIENT_BUFFER|`pcchPostPolicyReferenceIdentity` is too small.|  
 |HOST_E_CLRNOTAVAILABLE|The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
 |HOST_E_TIMEOUT|The call timed out.|  
 |HOST_E_NOT_OWNER|The caller does not own the lock.|  

@@ -77,7 +77,7 @@ helpviewer_keywords:
   - "CS8771"
   - "CS8772"
   - "CS9400"
-ms.date: 09/23/2026
+ms.date: 10/20/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for compiler options and build configuration
@@ -123,7 +123,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8751**](#compiler-infrastructure-errors): *Internal error in the C# compiler.*
 - [**CS8771**](#conflicting-or-missing-options): *Output directory could not be determined*
 - [**CS8772**](#invalid-option-values): *stdin argument '-' is specified, but input has not been redirected from the standard input stream.*
-- [**CS9400**](#invalid-option-values): *Invalid 'option' value: 'value'. Accepted values are: 'value1, value2, ...'*
+- [**CS9400**](#invalid-option-values): *Invalid 'option' value: 'value'. Accepted values are: value1, value2, ...*
 
 ## Input and output file errors
 
@@ -155,7 +155,7 @@ These errors indicate that the compiler can't find, read, or write files needed 
 - **CS2043**: *'id#' syntax is no longer supported. Use '$id' instead.*
 - **CS2046**: *Command-line syntax error: 'value' is not a valid value for the 'option' option. The value must be of the form 'format'.*
 - **CS8772**: *stdin argument '-' is specified, but input has not been redirected from the standard input stream.*
-- **CS9400**: *Invalid 'option' value: 'value'. Accepted values are: 'value1, value2, ...'*
+- **CS9400**: *Invalid 'option' value: 'value'. Accepted values are: value1, value2, ...*
 
 These errors indicate that a value you passed to a compiler option is malformed or outside the allowed set of values. For the full list of compiler options, see [C# Compiler Options](../compiler-options/index.md).
 
@@ -170,7 +170,7 @@ These errors indicate that a value you passed to a compiler option is malformed 
 - Replace the legacy `id#` syntax with `$id` (**CS2043**). The compiler no longer supports the older syntax.
 - Supply a value that matches the expected format for the specified option (**CS2046**). The error message indicates the expected form.
 - Redirect standard input when using the `-` (stdin) argument (**CS8772**). The compiler expects piped input when you pass `-` as the source file argument. Use a pipeline (for example, `cat file.cs | csc -`) or remove the `-` argument and pass the source file directly.
-- Use one of the accepted values listed in the error message for the named compiler option (**CS9400**). This error is a general-purpose diagnostic that the compiler reports whenever a compiler feature or property accepts only a fixed set of values and you supply one that isn't in that set. For example, you might see this error when you provide an unrecognized value for the `updated-memory-safety-rules` compiler feature. Check the documentation for the specific option named in the error to find its accepted values.
+- Set the experimental Roslyn `CSharpCompilationOptions.MemorySafetyRulesVersion` option to a supported enum member (**CS9400**). In newer compilers that expose this API, `WithMemorySafetyRulesVersion` accepts `MemorySafetyRulesVersion.Version1` (`1`, legacy rules) or `MemorySafetyRulesVersion.Version2` (`2`, updated rules). Casting another integer, such as `0` or `3`, to this enum produces CS9400 with the accepted values `1, 2`. This diagnostic validates the Roslyn API option, not values passed to the `updated-memory-safety-rules` feature flag. A valid value can still require another language version: `Version2` with C# 15.0 produces [CS8630](feature-version-errors.md#feature-not-available-in-language-version), because the updated rules require `preview`.
 
 ## Instrumentation and PDB options
 

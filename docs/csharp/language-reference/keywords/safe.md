@@ -1,7 +1,7 @@
 ---
 description: "safe modifier - C# Reference"
 title: "safe modifier"
-ms.date: 10/19/2026
+ms.date: 10/20/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "safe_CSharpKeyword"
@@ -25,6 +25,8 @@ You can apply `safe` to declarations that permit a requires-unsafe modifier, inc
 Certain declarations require an explicit choice of `safe` or `unsafe` when the updated rules are enabled. The following sections describe `extern` members and explicit or extended layout fields.
 
 Unlike `unsafe`, `safe` doesn't establish a lexical context. It doesn't make unsafe operations in a member body safe or cancel an enclosing unsafe context. You can't combine the `safe` and `unsafe` modifiers on the same declaration; doing so produces CS9388.
+
+In newer compilers, `safe` declarations also require [`AllowUnsafeBlocks`](../compiler-options/language.md#allowunsafeblocks), even though callers don't need an unsafe context. Set `<AllowUnsafeBlocks>true</AllowUnsafeBlocks>` in your project file to resolve **CS9401**. This modifier check is independent of the updated-rules enforcement opt-in. Roslyn documents it as introduced in Visual Studio 2026 version 18.13, after .NET 11.0.100; the .NET 11 RC2 compiler doesn't enforce this requirement for `safe`. For the compiler boundary and the distinction from **CS0227** on unsafe blocks, see [Unsafe context requirements](../compiler-messages/unsafe-code-errors.md#unsafe-context-requirements).
 
 ## Extern members
 
@@ -59,6 +61,10 @@ internal struct Union
 ```
 
 A field that holds a native pointer, or whose type otherwise carries an invariant the type system can't express, is `unsafe`. A field whose type is fully described by the type system is `safe`. The same rule applies to explicit-layout fields and extended-layout fields. As with `extern` members, omitting both modifiers is an error when the updated rules are enabled.
+
+Newer Roslyn preview compilers extend this rule to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, including sequential and auto layout. For example, a sequential-layout type with `Pack = 1` requires the same explicit choice. Unspecified or zero values don't trigger the additional rule by themselves. Static and constant fields are exempt. For synthesized backing fields, put the modifier on the owning property or event.
+
+The .NET 11 RC2 compiler doesn't enforce the additional nonzero `Pack` and `Size` checks. For the expanded **CS9392** message and fixes for other synthesized storage, see [Field layout safety](../compiler-messages/unsafe-code-errors.md#field-layout-safety).
 
 ## C# language specification
 

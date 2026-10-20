@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 10/19/2026
+ms.date: 10/20/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -255,7 +255,7 @@ The updated model also tightens a few related rules:
 
 - The `unsafe` modifier produces an error on a type declaration, a static constructor, and a finalizer, because the modifier has no caller to inform.
 - Delegates can't be `unsafe`, because a delegate is type-shaped.
-- A type whose parameterless constructor is `unsafe` can't satisfy a `new()` or `struct` constraint in a declaration, such as a base type or field type. In an expression, it can satisfy the constraint inside an unsafe context, for example `unsafe { var box = new Box<NativeResource>(); }` when `Box<T>` has a `new()` constraint and `NativeResource` has a requires-unsafe constructor.
+- A type whose parameterless constructor is `unsafe` can't satisfy a `new()` or `struct` constraint in a declaration, such as a base type or field type. In an expression, it can satisfy the constraint inside an unsafe context, for example `unsafe { var box = new Box<NativeResource>(); }` when `Box<T>` has a `new()` constraint and `NativeResource` has a requires-unsafe constructor. This check applies to generic type and method instantiations, including extension-block and extension-method type arguments. An unsafe block can satisfy the requirement at an expression use, but it doesn't fix an invalid base-type, field-type, or alias declaration elsewhere. For declaration-specific fixes, see [CS9376](compiler-messages/unsafe-code-errors.md#unsafe-context-requirements).
 
 ### Operations that require an unsafe context
 
@@ -393,13 +393,17 @@ public class NativeBuffer
 }
 ```
 
-A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
+A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*.
+
+Under the updated rules, mark every instance field in a type with explicit or extended layout either `safe` or `unsafe`. These are types marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute>. Newer Roslyn preview compilers extend the requirement to nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, even with sequential or auto layout. Unspecified or zero values don't trigger the additional requirement by themselves. Static and constant fields are exempt. Annotate the owning property or event for synthesized backing fields.
+
+The .NET 11 RC2 compiler doesn't enforce the additional nonzero `Pack` and `Size` checks. For the expanded diagnostic and fixes for implicitly generated storage, see [CS9392: Field layout safety](compiler-messages/unsafe-code-errors.md#field-layout-safety).
 
 ### The safe keyword
 
 The updated model adds a [`safe`](keywords/safe.md) contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
 
-Ordinary declarations are safe by default, so they don't require a `safe` modifier. Because `unsafe` code should be rare, most codebases use `safe` only where the default would otherwise be unsafe or the compiler requires an explicit choice. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration.
+Ordinary declarations are safe by default, so they don't require a `safe` modifier. Because `unsafe` code should be rare, most codebases use `safe` only where the default would otherwise be unsafe or the compiler requires an explicit choice. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration. In newer compilers, both `unsafe` and `safe` declaration modifiers require the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) option, independently of the updated-rules enforcement opt-in. Without it, declaration modifiers produce **CS9401**, while unsafe blocks continue to produce **CS0227**. Roslyn documents the modifier check as introduced in Visual Studio 2026 version 18.13, after .NET 11.0.100. The .NET 11 RC2 compiler doesn't require this option for `safe` and uses CS0227 for `unsafe` declaration modifiers. See [Unsafe context requirements](compiler-messages/unsafe-code-errors.md#unsafe-context-requirements) for details. The memory safety model itself remains a preview feature.
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 

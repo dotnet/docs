@@ -267,6 +267,14 @@ class Program {
 
 In an enterprise application, you might need to add distributed transactions in some scenarios, to enable transactions between multiple database servers. You can use the <xref:System.Transactions> namespace and enlist a distributed transaction, as follows:
 
+On modern .NET, distributed transactions require Windows and .NET 7 and later versions. Configure Microsoft Distributed Transaction Coordinator (MSDTC) network access on the participating computers. Before you run the following example on modern .NET, enable transaction promotion at application startup, before you create any transactions:
+
+```csharp
+TransactionManager.ImplicitDistributedTransactions = true;
+```
+
+The <xref:System.Transactions.TransactionManager.ImplicitDistributedTransactions> property defaults to `false`. Without this opt-in, promotion to a distributed transaction throws <xref:System.NotSupportedException>. On .NET Framework, omit this assignment because the property isn't available; MSDTC configuration is still required.
+
 ```csharp
 using System;
 using Microsoft.Data.SqlClient;

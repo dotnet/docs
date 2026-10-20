@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous Programming"
 description: Learn about asynchronous programming with Microsoft.Data.SqlClient and the task-based APIs available for connections, commands, readers, and bulk copy.
-ms.date: "10/19/2026"
+ms.date: "10/20/2026"
 ai-usage: ai-assisted
 ---
 
@@ -20,7 +20,7 @@ Prior to .NET Framework 4.5, asynchronous programming with System.Data.SqlClient
 This functionality remained in SqlClient in .NET Framework 4.5.
 
 > [!TIP]
-> Microsoft.Data.SqlClient also provides `BeginExecuteNonQuery`, `BeginExecuteReader`, and `BeginExecuteXmlReader` for compatibility. Don't include `Asynchronous Processing` in a Microsoft.Data.SqlClient connection string; the keyword isn't supported.
+> Microsoft.Data.SqlClient also provides `BeginExecuteNonQuery`, `BeginExecuteReader`, and `BeginExecuteXmlReader` for compatibility. Remove `Asynchronous Processing` from connection strings when you migrate to Microsoft.Data.SqlClient. With either `true` or `false`, the keyword causes <xref:System.ArgumentException> with the message `Keyword not supported: 'asynchronous processing'.` when you construct <xref:Microsoft.Data.SqlClient.SqlConnection> or assign its `ConnectionString` property, before you call `Open` or `OpenAsync`. The keyword isn't ignored and isn't required for asynchronous calls.
 
 ## Asynchronous programming features added in .NET Framework 4.5
 
@@ -38,7 +38,7 @@ You can now call into asynchronous methods without using callbacks, and without 
 The `async` modifier specifies that a method is asynchronous. When calling an `async` method, a task is returned. When the `await` operator is applied to a task, the current method exits immediately. When the task finishes, execution resumes in the same method.
 
 > [!NOTE]
-> Microsoft.Data.SqlClient doesn't support `Context Connection=true`.
+> Microsoft.Data.SqlClient doesn't support `Context Connection=true`. When you construct <xref:Microsoft.Data.SqlClient.SqlConnection> or assign its `ConnectionString` property with that setting, the driver throws <xref:System.InvalidOperationException> with the message `Connecting to the context connection using Microsoft.Data.SqlClient is not supported.` The exception occurs before you call `Open` or `OpenAsync`; the setting isn't ignored.
 
 Calling an `async` method does not allocate any additional threads. It might use the existing I/O completion thread briefly at the end.
 

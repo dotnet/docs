@@ -1,7 +1,7 @@
 ---
 description: "Learn more about streaming support between SQL Server and an application, which supports unstructured data on the server."
 title: "SqlClient Streaming Support"
-ms.date: "10/19/2026"
+ms.date: "10/20/2026"
 ---
 
 # SqlClient streaming support
@@ -13,7 +13,7 @@ Streaming support to and from SQL Server simplifies writing applications that st
 Streaming support will also enable middle-tier applications to scale better, especially in scenarios where business objects connect to SQL Azure in order to send, retrieve, and manipulate large BLOBs.
 
 > [!NOTE]
-> Microsoft.Data.SqlClient doesn't support `Context Connection=true`.
+> Microsoft.Data.SqlClient doesn't support `Context Connection=true`. When you construct <xref:Microsoft.Data.SqlClient.SqlConnection> or assign its `ConnectionString` property with that setting, the driver throws <xref:System.InvalidOperationException> with the message `Connecting to the context connection using Microsoft.Data.SqlClient is not supported.` The exception occurs before you call `Open` or `OpenAsync`; the setting isn't ignored.
 >
 > The members added to support streaming are used to retrieve data from queries and to pass parameters to queries and stored procedures. The streaming feature addresses basic OLTP and data migration scenarios and is applicable to on-premises and off-premises data migrations environments.
 

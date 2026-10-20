@@ -125,6 +125,8 @@ IAsyncResult ia = cmd.BeginExecuteReader(productList, cmd);
 
 You can begin to use the new asynchronous pattern without substantially changing the existing algorithm.
 
+The following template intentionally omits the `ProductList` callback body. In your callback, call <xref:Microsoft.Data.SqlClient.SqlCommand.EndExecuteReader*>, process and dispose the reader, and dispose the command and connection. Keep the application alive until the callback completes. The template isn't a standalone console application.
+
 ```csharp
 using System;
 using Microsoft.Data.SqlClient;
@@ -355,7 +357,9 @@ namespace Samples {
             result.Wait();
          }
          catch (AggregateException exception) {
-            if (exception.InnerException is SqlException) {
+            if (source.IsCancellationRequested &&
+                (exception.InnerException is OperationCanceledException ||
+                 exception.InnerException is SqlException)) {
                Console.WriteLine("Operation canceled");
             }
             else {
@@ -379,6 +383,8 @@ namespace Samples {
 ### Asynchronous operations with SqlBulkCopy
 
 Use <xref:Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType> for asynchronous bulk copy with <xref:Microsoft.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType>.
+
+Use separate connection strings for SqlClient and ODBC. Replace `<server>` with your SQL Server instance, and install ODBC Driver 18 for SQL Server for the mixed-provider example. On modern .NET, also reference the [System.Data.Odbc package](https://www.nuget.org/packages/System.Data.Odbc). The SqlClient connection string enables multiple active result sets (MARS) for the final example.
 
 ```csharp
 using System;
@@ -407,7 +413,10 @@ namespace SqlBulkCopyAsyncCodeSample {
             [notes] [varchar](200) NULL,
             [pubdate] [datetime] NOT NULL)";
 
-      static string connectionString = "...";
+      static string connectionString =
+          "Server=<server>;Database=pubs;Integrated Security=true;Encrypt=true;MultipleActiveResultSets=true;";
+      static string odbcConnectionString =
+          "Driver={ODBC Driver 18 for SQL Server};Server=<server>;Database=pubs;Trusted_Connection=yes;Encrypt=yes;";
 
       static void Main(string[] args) {
          SynchronousSqlBulkCopy();
@@ -463,13 +472,13 @@ namespace SqlBulkCopyAsyncCodeSample {
 
       // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchronous calls)
       private static async Task MixSyncAsyncSqlBulkCopy() {
-         using (OdbcConnection odbcconn = new OdbcConnection(connectionString)) {
+         using (OdbcConnection odbcconn = new OdbcConnection(odbcConnectionString)) {
             odbcconn.Open();
             using (OdbcCommand odbccmd = new OdbcCommand(selectStatement, odbcconn)) {
                using (OdbcDataReader odbcreader = odbccmd.ExecuteReader()) {
                   using (SqlConnection conn = new SqlConnection(connectionString)) {
                      await conn.OpenAsync();
-                     string temptable = "temptable";//"[#" + Guid.NewGuid().ToString("N") + "]";
+                     string temptable = "[#" + Guid.NewGuid().ToString("N") + "]";
                      SqlCommand createCmd = new SqlCommand(string.Format(createDestTableStatement, temptable), conn);
                      await createCmd.ExecuteNonQueryAsync();
                      using (SqlBulkCopy bcp = new SqlBulkCopy(conn)) {
@@ -733,7 +742,7 @@ class Program {
                }
             }
          }
-         Console.WriteLine("Total Records Updated: ", totalRecordsUpdated.ToString());
+         Console.WriteLine("Total Records Updated: {0}", totalRecordsUpdated);
          await Task.Run(() => updateTx.Rollback());
          Console.WriteLine("Transaction Rolled Back");
       }

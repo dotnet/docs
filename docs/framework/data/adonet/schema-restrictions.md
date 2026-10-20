@@ -1,7 +1,7 @@
 ---
 description: "Learn more about schema restrictions, which are used to limit the amount of schema information returned from the GetSchema method."
 title: "Schema Restrictions"
-ms.date: "10/19/2026"
+ms.date: "10/20/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -40,7 +40,7 @@ Imports Microsoft.Data.SqlClient
 
 Module Module1
 Sub Main()
-  Dim connectionString As String = "...";
+  Dim connectionString As String = "..."
 
   Dim restrictions(3) As String
   Using connection As New SqlConnection(connectionString)

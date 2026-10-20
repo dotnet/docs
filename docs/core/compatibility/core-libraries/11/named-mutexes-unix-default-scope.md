@@ -19,7 +19,7 @@ Previously, named mutexes on Unix were globally scoped by default, so processes 
 
 ## New behavior
 
-Named mutexes on Unix now default to user scope. The runtime stores user-scoped mutex backing files in `$TMPDIR` when it points to a user-owned directory. Otherwise, it uses `$XDG_RUNTIME_DIR` on an XDG-compliant platform; if not, it uses `$HOME/.dotnet/`.
+Named mutexes on Unix now default to user scope. The runtime stores user-scoped mutex backing files in `$TMPDIR` on platforms where it's a per-user directory, such as macOS. Otherwise, it uses `$XDG_RUNTIME_DIR` if set. If neither directory is available, it uses a directory under the current user's home directory as defined in the user database, such as `/etc/passwd`; it doesn't use `$HOME`.
 
 ## Type of breaking change
 
@@ -34,6 +34,8 @@ To improve security, named mutexes now default to a scope and storage location t
 If your named mutexes do not need cross-user access and your application can access the user-only directory for its platform, no change is required.
 
 If your named mutexes need cross-user access, use a <xref:System.Threading.Mutex> constructor that accepts <xref:System.Threading.NamedWaitHandleOptions> on .NET 10 or later and pass `NamedWaitHandleOptions.None` to opt into global scope. Alternatively, set the `System.Threading.Mutex.UnsafeDefaultMutexScopeGlobal` runtime configuration option to `true` in your `runtimeconfig.json`. This option applies on all affected platforms.
+
+If your process runs as a UID with no user database entry, named mutex creation fails. This situation is common in containers started with `docker run -u <uid>` or Kubernetes `runAsUser`. Set `XDG_RUNTIME_DIR` to a writable directory owned by that user, or create a user account for the UID in the container image.
 
 ## Affected APIs
 

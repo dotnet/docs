@@ -50,7 +50,7 @@ An interface declaration can contain the following members:
 Member declarations typically don't contain a body. However, an interface member can declare a body. Member bodies in an interface are the *default implementation*. By using members with bodies, the interface can provide a default implementation for classes and structs that don't provide an overriding implementation.
 
 > [!IMPORTANT]
-> If you add default interfaces members, any `ref struct` that implements the interface must explicitly declare that member.
+> If you add default interface members, any `ref struct` that implements the interface must explicitly declare that member.
 
 ## Static interface members and runtime support
 
@@ -110,7 +110,7 @@ For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces
 ## See also
 
 - [C# Keywords](index.md)
-- [Reference Types](reference-types.md)
-- [Interfaces](../../fundamentals/types/interfaces.md)
-- [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)
-- [Using Indexers](../../programming-guide/indexers/using-indexers.md)
+- [Reference Types](reference-types.md),
+- [Interfaces](../../fundamentals/types/interfaces.md),
+- [Using Properties](../../programming-guide/classes-and-structs/using-properties.md),
+- [Using Indexers](../../programming-guide/indexers/using-indexers.md).

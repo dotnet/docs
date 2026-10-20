@@ -88,7 +88,7 @@ The following example uses the .NET <xref:System.Collections.Generic.Dictionary`
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Indexers":::
 
-Indexers allow you to index instances of a user-defined type in a similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
+Indexers allow you to index instances of a user-defined type in a similar way as array indexing. Unlike array indices, which must be integer, you can declare the indexer parameters to be of any type.
 
 For more information about indexers, see [Indexers](../../programming-guide/indexers/index.md).
 
@@ -96,14 +96,14 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article. For information about collection expressions, see the [collection expressions](./collection-expressions.md) article.
 
-You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
+You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes/):
 
 ```csharp
 [System.Diagnostics.Conditional("DEBUG")]
 void TraceMethod() {}
 ```
 
-Additionally, use square brackets to designate [list patterns](patterns.md#list-patterns) for use in pattern matching or testing.
+Use square brackets to designate [list patterns](patterns.md#list-patterns) for use in pattern matching or testing.
 
 ```csharp
 arr is ([1, 2, ..])
@@ -264,7 +264,7 @@ The `..` token is also used for the [spread element](./collection-expressions.md
 
 ## Operator overloadability
 
-You can't overload the `.`, `()`, `^`, and `..` operators. The `[]` operator is also a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
+You can't overload the `.`, `()`, `^`, and `..` operators. You also can't overload the `[]` operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
 
 ## C# language specification
 

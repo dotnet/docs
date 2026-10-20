@@ -71,8 +71,8 @@ When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span
 
 Collection expressions work with any collection type that is *well-behaved*. A well-behaved collection has the following characteristics:
 
-- The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when enumerated.
-- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are side-effect free. The compiler can optimize scenarios where these types might be used as intermediary values, but it doesn't expose them otherwise.
+- The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when you enumerate the collection.
+- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are side-effect free. The compiler optimizes scenarios where these types might be used as intermediary values, but it doesn't expose them otherwise.
 - A call to an applicable `.AddRange(x)` member on a collection results in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection by using `.Add`.
 
 All the collection types in the .NET runtime are well-behaved.
@@ -132,15 +132,15 @@ This collection expression supplies the required name and then adds the elements
 
 ### Collection builder arguments
 
-For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the arguments declared in the `with(...)` element get evaluated and the results go to the create method *before* the `ReadOnlySpan<T>` parameter. This feature allows create methods to accept configuration parameters:
+For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the `with(...)` element evaluates the declared arguments and sends the results to the create method *before* the `ReadOnlySpan<T>` parameter. This feature allows create methods to accept configuration parameters:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClassWithComparer":::
 
-You can then use the `with(...)` element to pass the comparer:
+Use the `with(...)` element to pass the comparer:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="WithBuilderArgumentsExample":::
 
-The create method gets selected by using overload resolution based on the arguments you provide. The `ReadOnlySpan<T>` containing the collection elements is always the last parameter.
+Overload resolution selects the create method based on the arguments you provide. The `ReadOnlySpan<T>` containing the collection elements is always the last parameter.
 
 ### Interface target types
 

@@ -18,7 +18,7 @@ C# 15 includes the following new features. Try these features by using the [.NET
 - [Non-virtual static interface members on older runtimes](#non-virtual-static-interface-members-on-older-runtimes)
 - [Memory safety (preview feature)](#memory-safety)
 
-C# 15 is the default language version for projects that target `net11.0` in the .NET 11 SDK. Except for memory safety, these features don't require `<LangVersion>preview</LangVersion>`. The .NET 11 SDK is still a prerelease. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+C# 15 is the default language version for projects that target `net11.0` in the .NET 11 SDK. Except for memory safety, these features don't require `<LangVersion>preview</LangVersion>`. The .NET 11 SDK is still prerelease. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can also try the [memory safety preview feature](#memory-safety). Enable the preview language version for the syntax and pointer relaxations, and the `updated-memory-safety-rules` feature flag for the updated safety rules.
 
@@ -30,7 +30,7 @@ You can find any breaking changes introduced in C# 15 in our article on [breakin
 
 ## Collection expression arguments
 
-You can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
+Use a `with(...)` element as the first element in a collection expression to pass arguments to the underlying collection's constructor or factory method. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
 
 The following example shows how to pass a capacity argument to a `List<T>` constructor and a comparer to a `HashSet<T>`:
 

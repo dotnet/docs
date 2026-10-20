@@ -20,7 +20,7 @@ Most of the C# code you write is verifiably safe code. *Verifiably safe code* me
 
 [!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
-C# also supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. Unsafe code isn't necessarily dangerous; it's just code whose safety can't be verified by .NET tools. You use unsafe code to call native functions that require pointers, and in some cases to improve performance through direct memory access that avoids array-bounds checks. Unsafe code also introduces security and stability risks. To compile code that contains an `unsafe` context, add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+C# also supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. Unsafe code isn't necessarily dangerous; it's just code whose safety can't be verified by .NET tools. Use unsafe code to call native functions that require pointers, and in some cases to improve performance through direct memory access that avoids array-bounds checks. Unsafe code also introduces security and stability risks. To compile code that contains an `unsafe` context, add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 C# defines two models for what counts as unsafe code: the original model and an updated memory safety model that's in preview in C# 15 and .NET 11. For information about how the two models differ, see [Two models for unsafe code](#two-models-for-unsafe-code).
 
@@ -336,12 +336,12 @@ The null check and the array length rule out the inputs that would let a read ru
 
 ### Safety documentation
 
-A requires-unsafe member should document what the caller must guarantee. The updated model encourages two complementary comment styles:
+A *requires-unsafe* member should document what the caller must guarantee. The updated model encourages two complementary comment styles:
 
-- A `/// <safety>` documentation block above the signature states the formal contract: the conditions a caller must satisfy. An analyzer can flag a requires-unsafe member that's missing one.
+- A `/// <safety>` documentation block above the signature states the formal contract: the conditions a caller must satisfy. An analyzer can flag a *requires-unsafe* member that's missing one.
 - A `// SAFETY:` comment inside an `unsafe` block records why the operation is sound at that spot, for the developers and auditors who read the body.
 
-The following preview example shows both styles on a requires-unsafe `ReadByte` method:
+The following preview example shows both styles on a *requires-unsafe* `ReadByte` method:
 
 ```csharp
 // Preview
@@ -393,7 +393,7 @@ public class NativeBuffer
 }
 ```
 
-A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field requires-unsafe. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
+A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
 
 ### The safe keyword
 

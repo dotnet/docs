@@ -89,7 +89,7 @@ The original class lets a caller incorrectly read `Value` on a failure or `Error
 
 ## Reuse a generic union across numeric types
 
-Sensors report at different resolutions: a contact sensor uses a `byte`, a position sensor uses a `short`, and a counter uses an `int`. Rather than write a union per type, write one generic union and instantiate it with each numeric type.
+Sensors report at different resolutions: a contact sensor uses a `byte`, a position sensor uses a `short`, and a counter uses an `int`. Rather than write a union for each type, write one generic union and instantiate it with each numeric type.
 
 1. In `SmartHome.Core`, add a file named `Sample.cs` and declare the `Sample<T>` union. It holds either an in-range reading of type `T` or a `Saturated` marker for a sensor that railed. Give the union a body that adds an `InRange` property:
 

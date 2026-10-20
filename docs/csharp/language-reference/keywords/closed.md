@@ -49,7 +49,7 @@ The `closed` modifier is a class modifier:
 - You must declare a direct subtype of a closed class in the same assembly and module as the closed base class.
 - A class that derives from a closed class isn't itself closed. Apply the `closed` modifier again if you want a derived class to also be closed.
 
-If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. A *closed constructed type* is a generic type whose type arguments are fully specified (such as `Tree<int>`), as opposed to an *open type* like `Tree<T>`. The restriction lets the compiler determine the possible constructed descendants for a given base construction. A particular base construction can have no corresponding construction of a particular descendant; the rule doesn't guarantee one.
+If a generic class directly derives from a `closed` class, every type parameter on the derived class must be used in the base class specification. A *closed constructed type* is a generic type whose type arguments are fully specified (such as `Tree<int>`), as opposed to an *open type* like `Tree<T>`. An open type can also have some type arguments specified, such as `Dictionary<string, TValue>`, where `TValue` is still a type parameter. For the definitions, see [Open and closed types](~/_csharpstandard/standard/types.md#843-open-and-closed-types) in the language specification. The restriction lets the compiler determine the possible constructed descendants for a given base construction. A particular base construction can have no corresponding construction of a particular descendant; the rule doesn't guarantee one.
 
 ```csharp
 public closed record class Tree<T>;

@@ -102,7 +102,11 @@ For indexer lookup, the compiler tries applicable members in this order:
 
 An earlier applicable form takes precedence over a later one. For example, an instance integer indexer with an instance `Length` property can handle `receiver[^1]` before an extension indexer that directly accepts `Index`.
 
-Extension indexers aren't used for string or array element access, even if you declare extensions for those types. An expression tree can't contain an extension property or indexer access. Extension `Length` and `Count` properties also don't participate in collection-expression spread optimizations.
+Extension indexers and related members have the following restrictions:
+
+- Extension indexers aren't used for string or array element access, even if you declare extensions for those types.
+- An expression tree can't contain an extension property or indexer access.
+- Extension `Length` and `Count` properties don't participate in collection-expression spread optimizations.
 
 ## See also
 

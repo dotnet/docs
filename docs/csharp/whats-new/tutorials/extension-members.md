@@ -27,7 +27,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- The .NET 11 RC1 SDK or later. Use the current RC2 SDK from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/11.0).
+- The [.NET 11 SDK](https://dotnet.microsoft.com/download/dotnet/11.0).
 - An editor such as Visual Studio 2026 or Visual Studio Code with the C# Dev Kit.
 
 This sample targets `net11.0`, which selects C# 15 by default. Extension indexers don't require `<LangVersion>preview</LangVersion>`.

@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ---
 # What's new in C# 15
 
-C# 15 includes the following new features. Try these features by using the [.NET 11 RC2 SDK](https://dotnet.microsoft.com/download/dotnet/11.0) or a compatible version of [Visual Studio 2026](https://visualstudio.microsoft.com/):
+C# 15 includes the following new features. Try these features by using the [.NET 11 SDK](https://dotnet.microsoft.com/download/dotnet/11.0) or a compatible version of [Visual Studio 2026](https://visualstudio.microsoft.com/):
 
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
@@ -16,10 +16,11 @@ C# 15 includes the following new features. Try these features by using the [.NET
 - [Extension indexers](#extension-indexers)
 - [Labeled `break` and `continue`](#labeled-break-and-continue)
 - [Non-virtual static interface members on older runtimes](#non-virtual-static-interface-members-on-older-runtimes)
+- [Memory safety (preview feature)](#memory-safety)
 
-C# 15 is the default language version for projects that target `net11.0` in the .NET 11 RC1 SDK and later. These features don't require `<LangVersion>preview</LangVersion>`. The .NET 11 SDK is still a prerelease. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+C# 15 is the default language version for projects that target `net11.0` in the .NET 11 SDK. Except for memory safety, these features don't require `<LangVersion>preview</LangVersion>`. The .NET 11 SDK is still a prerelease. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can also try the separate [memory safety preview](#memory-safety). That feature isn't part of the stabilized C# 15 feature set and still requires the preview language version.
+You can also try the [memory safety preview feature](#memory-safety). Enable the preview language version for the syntax and pointer relaxations, and the `updated-memory-safety-rules` feature flag for the updated safety rules.
 
 The "What's new in C#" page adds new features when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
 
@@ -70,8 +71,6 @@ string name = pet switch
     Bird b => b.Name,
 };
 ```
-
-The .NET 11 runtime includes the `UnionAttribute` and `IUnion` types that support unions. Exhaustiveness checks use the nullability of the case types and the tracked null state of the contents. A default union can still contain `null`, even when all case types are nonnullable; handle `null` if such a value can reach the switch.
 
 For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
 
@@ -166,13 +165,13 @@ public interface IMeasurement
 }
 ```
 
-Call the method on the interface: `IMeasurement.ToMeters(250)`. This change doesn't add runtime support for instance default implementations or `static abstract` and `static virtual` members. Protected interface-member accessibility also still requires runtime support.
+Call this helper directly on the interface, for example, `IMeasurement.ToMeters(250)`. Instance default implementations, `static abstract` and `static virtual` members, and protected interface members still require runtime support.
 
 For more information, see [Static interface members and runtime support](../language-reference/keywords/interface.md#static-interface-members-and-runtime-support).
 
 ## Memory safety
 
-The .NET 11 SDK includes a separate preview that begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
+The .NET 11 SDK includes a memory safety preview feature that begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
 
 When you enable the updated rules, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. The compiler records the assembly's use of the updated rules with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and fields in explicit or extended layout types as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
 

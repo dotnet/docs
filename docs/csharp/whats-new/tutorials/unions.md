@@ -28,7 +28,7 @@ In this tutorial, you:
 
 This tutorial uses C# 15 union types. To get started, you need:
 
-- The .NET 11 RC1 SDK or later. Use the current RC2 SDK from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/11.0).
+- The [.NET 11 SDK](https://dotnet.microsoft.com/download/dotnet/11.0).
 - An editor such as Visual Studio or Visual Studio Code with the C# Dev Kit.
 
 Projects that target `net11.0` use C# 15 by default. You don't need to set `LangVersion` to `preview`.

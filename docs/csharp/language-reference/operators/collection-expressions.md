@@ -108,7 +108,7 @@ Starting in C# 15, you can pass arguments to the underlying collection's constru
 
 The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element go to the appropriate constructor or create method based on the target type. You can use any valid expression for the arguments in the `with` element.
 
-Argument expressions and element expressions are evaluated once, in left-to-right order, with the `with(...)` arguments evaluated before the collection elements. For a spread, its expression is evaluated in that order, but the compiler can delay enumeration.
+Argument expressions and element expressions are evaluated once, in left-to-right order, with the `with(...)` arguments evaluated before the collection elements. For a spread such as `.. GetItems()`, evaluation calls `GetItems()` to obtain the collection to spread. Enumeration is the separate step that reads items from that collection and adds them to the result. The compiler evaluates `GetItems()` at its left-to-right position, but can delay enumeration until after it evaluates later element expressions. Don't rely on side effects from enumeration occurring before those later expressions.
 
 ### Constructor arguments
 
@@ -122,7 +122,7 @@ In the preceding example:
 - The `HashSet<string>` constructor with an <xref:System.Collections.Generic.IEqualityComparer`1?displayProperty=nameWithType> parameter gets called with `StringComparer.OrdinalIgnoreCase`.
 - For interface target types like <xref:System.Collections.Generic.IList`1?displayProperty=nameWithType>, the compiler creates a `List<T>` with the specified capacity.
 
-The target type doesn't need a parameterless constructor when `with(...)` supplies the required constructor arguments. For example, `NamedValues` requires a name and inherits the collection behavior of `List<int>`:
+For a target type constructed this way, `with(...)` is required if the type has no accessible parameterless constructor. Use it to supply the arguments to an accessible constructor. For example, `NamedValues` requires a name and inherits the collection behavior of `List<int>`:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="RequiredConstructor":::
 
@@ -161,3 +161,36 @@ The `with(...)` element has the following restrictions:
 - Arguments can't have `dynamic` type.
 - It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).
 - The arguments in `with(...)` don't affect whether a conversion exists from the collection expression to a candidate target type. Overload resolution and type inference for an enclosing call ignore those arguments. Only the presence of a `with(...)` element, not its arguments, affects whether that conversion exists. Once the target type is determined, the arguments do participate in overload resolution for its constructor or collection builder method.
+
+For example, a comparer argument doesn't tell the compiler to choose a `HashSet<string>` overload over a `List<string>` overload:
+
+```csharp
+class Examples
+{
+    static void Print(List<string> values) { }
+    static void Print(HashSet<string> values) { }
+
+    static void Example()
+    {
+        Print([with(StringComparer.OrdinalIgnoreCase), "one", "ONE"]);
+    }
+}
+```
+
+The call produces **CS0121**: "The call is ambiguous between the following methods or properties: 'Examples.Print(System.Collections.Generic.List<string>)' and 'Examples.Print(System.Collections.Generic.HashSet<string>)'." Although only `HashSet<string>` has a constructor that accepts this comparer, the compiler ignores the `with(...)` arguments when it chooses the `Print` overload. Assign the collection expression to a `HashSet<string>` variable first to select that overload.
+
+Similarly, `with(...)` arguments don't supply element types for generic type inference:
+
+```csharp
+class Examples
+{
+    static void Use<T>(List<T> values) { }
+
+    static void Example()
+    {
+        Use([with(10)]);
+    }
+}
+```
+
+This call produces **CS0411**: "The type arguments for method 'Examples.Use<T>(List<T>)' cannot be inferred from the usage. Try specifying the type arguments explicitly." The capacity argument doesn't determine `T`, and the collection has no elements from which to infer it. Specify the type argument, such as `Use<int>([with(10)])`.

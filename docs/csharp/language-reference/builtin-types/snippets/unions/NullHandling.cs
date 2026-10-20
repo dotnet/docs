@@ -26,7 +26,7 @@ public static class NullHandlingScenario
     // <NullableUnionExample>
     static void NullableUnionExample()
     {
-        Pet? maybePet = new Dog("Buddy");
+        Pet? maybePet = new Dog("Buddy", "Beagle");
         Pet? noPet = null;
 
         Console.WriteLine(Describe(maybePet)); // output: Buddy

@@ -11,7 +11,9 @@ helpviewer_keywords:
 ---
 # safe (C# Reference)
 
-The `safe` contextual keyword marks a declaration as not requiring an `unsafe` context at its use site under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview). The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
+The `safe` contextual keyword marks a declaration as not requiring an `unsafe` context at its use site under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview). The `safe` modifier is the counterpart to [`unsafe`](unsafe.md). An unsafe context isn't required for callers of a `safe` declaration, while `unsafe` propagates the obligation to audit safety to the caller.
+
+Using the `safe` keyword itself requires the [`AllowUnsafeBlocks`](../compiler-options/language.md#allowunsafeblocks) compiler option (`-unsafe`), even though callers don't need an `unsafe` context. Ordinary declarations are safe by default, so omit `safe` where it isn't required to avoid unnecessarily requiring unsafe compilation.
 
 > [!IMPORTANT]
 > The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. Set [`LangVersion`](../compiler-options/language.md#langversion) to `preview` to enable the syntax. To also enforce the updated rules, including explicit `safe` or `unsafe` choices and requires-unsafe caller obligations, enable the `updated-memory-safety-rules` compiler feature. For activation details, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).

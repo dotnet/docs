@@ -32,6 +32,8 @@ A union differs from other type declarations in important ways:
 - Unlike an `interface`, a union is closed—you define the complete list of case types in the declaration, and the compiler uses that list for exhaustiveness checks.
 - Unlike a `record`, a union doesn't add equality, cloning, or deconstruction behavior. A union focuses on "which case is it?" rather than "what fields does it have?"
 
+Union types rely on the <xref:System.Runtime.CompilerServices.UnionAttribute> and <xref:System.Runtime.CompilerServices.IUnion> types in the `System.Runtime.CompilerServices` namespace. The .NET 11 runtime includes these types.
+
 ## Union declarations
 
 A union declaration specifies a name and a list of case types:
@@ -75,13 +77,17 @@ The pattern's form determines which value it tests:
 | Pattern | Behavior on a union expression |
 |---|---|
 | Type or declaration pattern, such as `Dog` or `Dog dog` | Tests the contents against the specified type. |
-| Property or positional pattern with a type, such as `Dog { Name: "Rex" }` | Tests the contents against the type, then applies the nested patterns to that case value. |
-| Property or positional pattern without a type, such as `{ Value: Dog }` | Uses the union instance's properties or `Deconstruct` method. |
+| Property or positional pattern with a type, such as `Dog { Breed: "Labrador" }` | Tests the contents against the type, then applies the nested patterns to that case value. |
+| Property or positional pattern without a type, such as `{ Name: "Rex" }` | Uses the union instance's properties or `Deconstruct` method. |
 | List pattern | Uses the union instance's count and indexing members, not those of its contents. |
 | `var` or discard `_` pattern | Captures or matches the incoming union instance without unwrapping it. |
 | Constant or relational pattern | Tests the contents. The `null` pattern also handles a null union reference or nullable wrapper. |
 
-For example, the following typed and untyped property patterns both find the dog, but access it in different ways:
+For example, define a `Pet` union with a read-only `Name` property that delegates to the contained `Cat` or `Dog`. The type patterns in the property's `switch` expression test the contents:
+
+:::code language="csharp" source="snippets/unions/UnionPatternMatching.cs" id="UnionWithProperty":::
+
+The typed pattern `Dog { Breed: "Labrador" }` tests the contents and reads the dog's `Breed`, a property the union doesn't have. The untyped pattern `{ Name: "Rex" }` reads the union's `Name` property instead, so it also matches a cat named Rex:
 
 :::code language="csharp" source="snippets/unions/UnionPatternMatching.cs" id="PropertyMatching":::
 
@@ -89,10 +95,12 @@ The `not` pattern negates its nested pattern. In `pet is not null`, the nested `
 
 :::code language="csharp" source="snippets/unions/UnionPatternMatching.cs" id="NullAndCapture":::
 
-Logical patterns preserve these distinctions. In `var pet and not null`, `var pet` captures the incoming union, and `not null` tests whether it has non-null contents. In `not null and var pet`, the `var` pattern still captures the incoming union: `not` doesn't change the value passed to the right-hand pattern. By contrast, in `Dog and { Name: "Rex" }`, the type pattern passes the matched `Dog` to the property pattern.
+Logical patterns preserve these distinctions. In `var pet and not null`, `var pet` captures the incoming union, and `not null` tests whether it has non-null contents. In `not null and var pet`, the `var` pattern still captures the incoming union: `not` doesn't change the value passed to the right-hand pattern. By contrast, in `Dog and { Breed: "Labrador" }`, the type pattern passes the matched `Dog` to the property pattern.
 
 > [!NOTE]
-> A type pattern must be compatible with at least one case type. For the `Pet(Cat, Dog, Bird)` declaration in this article, `pet is Pet` produces compiler error CS8121: none of its case types can match `Pet`. It isn't a runtime test of the union instance. To check for contents, use `pet is not null` or `pet.Value is not null`; to capture the union itself, use a `var` pattern.
+> A type pattern must be compatible with at least one case type. For the `Pet` declarations in this article, `pet is Pet` produces compiler error CS8121: none of their case types can match `Pet`. It isn't a runtime test of the union instance. To check for contents, use `pet is not null` or `pet.Value is not null`; to capture the union itself, use a `var` pattern.
+
+In short, type and declaration patterns test the contents. Recursive patterns with a type test the contents too; recursive patterns without a type use the union's own members. These rules are the same in an `is` expression and a `switch` expression.
 
 ### Null matching
 
@@ -118,13 +126,15 @@ A `switch` expression is exhaustive over a union's case types when it handles ea
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="PatternMatching":::
 
+To handle null contents, prefer a `null` arm over a `var` or discard (`_`) arm. The `null` pattern states your intent and preserves warnings when you add a new case type without a matching arm. A `var` or discard arm also accepts any new case, so the compiler can't warn you about that missing case.
+
 When the tracked null state of `Value` is "maybe null," the compiler also warns if you omit a `null` arm. For example, `NullablePet` has a nullable case type, so its parameter's contents might be null:
 
 :::code language="csharp" source="snippets/unions/NullHandling.cs" id="MaybeNullContents":::
 
 Removing the `null` arm from this switch produces warning CS8655.
 
-Static exhaustiveness doesn't guarantee that a generated union has non-null contents at runtime. A default union contains null, including when it's a default-initialized field or array element. If all case types are nonnullable, the default tracked state of `Value` is nevertheless "not null," so the compiler doesn't necessarily warn about an omitted `null` arm. Handle `null` for correctness whenever default contents can reach your switch:
+Nullable analysis doesn't guarantee that a generated union has non-null contents at runtime. A default union contains null, including when it's a default-initialized field or array element. If all case types are nonnullable, the default tracked state of `Value` is nevertheless "not null," so the compiler doesn't necessarily warn about an omitted `null` arm. Handle `null` for correctness whenever default contents can reach your switch:
 
 :::code language="csharp" source="snippets/unions/NullHandling.cs" id="NullHandling":::
 
@@ -212,41 +222,6 @@ A class can also be a union type. This type of union is useful when you need ref
 :::code language="csharp" source="snippets/unions/ClassUnion.cs" id="ClassUnionExample":::
 
 For class-based unions, the `null` pattern matches both a null reference and a null `Value`.
-
-## Union implementation
-
-<!-- TODO: Replace with xrefs and remove the copied code when Preview 5 API ref is available. -->
-Union types rely on the `UnionAttribute` and `IUnion` types in the `System.Runtime.CompilerServices` namespace. The .NET 11 runtime includes these types:
-
-```csharp
-namespace System.Runtime.CompilerServices;
-
-[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, AllowMultiple = false)]
-public sealed class UnionAttribute : Attribute;
-
-public interface IUnion
-{
-    object? Value { get; }
-}
-```
-
-Union declarations generated by the compiler implement `IUnion` <!--<xref:System.Runtime.CompilerServices.IUnion>-->. You can check for any union value at runtime by using `IUnion`:
-
-```csharp
-if (value is IUnion { Value: null }) { /* the union's value is null */ }
-```
-
-When you declare a `union` type, the compiler generates a struct that implements `IUnion`. For example, the `Pet` declaration (`public union Pet(Cat, Dog, Bird);`) becomes equivalent to:
-
-```csharp
-[Union] public struct Pet : IUnion
-{
-    public Pet(Cat value) => Value = value;
-    public Pet(Dog value) => Value = value;
-    public Pet(Bird value) => Value = value;
-    public object? Value { get; }
-}
-```
 
 ## C# language specification
 

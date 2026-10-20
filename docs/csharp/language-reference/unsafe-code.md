@@ -399,7 +399,7 @@ A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` nam
 
 The updated model adds a [`safe`](keywords/safe.md) contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
 
-You can also apply `safe` where an explicit choice isn't required, such as on an ordinary method emitted by a source generator. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration.
+Ordinary declarations are safe by default, so they don't require a `safe` modifier. Because `unsafe` code should be rare, most codebases use `safe` only where the default would otherwise be unsafe or the compiler requires an explicit choice. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration.
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 

@@ -26,7 +26,7 @@ component out.
 ## New behavior
 
 `dotnet-trace` and `.nettrace` files remain supported.
-[dotnet-dsrouter](https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-dsrouter)
+[dotnet-dsrouter](../../../diagnostics/dotnet-dsrouter.md)
 can connect the mobile diagnostic port over TCP.
 
 CoreCLR events replace the smaller set of Mono events. A provider with the same
@@ -39,7 +39,7 @@ the app is built. Set `EnableDiagnostics=true` to enable diagnostics.
 
 See [Tracing .NET for Android applications](https://github.com/dotnet/android/blob/main/Documentation/guides/tracing.md)
 and the
-[Apple `EnableDiagnostics` build property](https://learn.microsoft.com/dotnet/ios/building-apps/build-properties#enablediagnostics).
+[Apple `EnableDiagnostics` build property](/dotnet/ios/building-apps/build-properties#enablediagnostics).
 
 ## Type of breaking change
 
@@ -52,9 +52,9 @@ CoreCLR and Mono provide different runtime events and profiler features.
 ## Recommended action
 
 - Test custom trace tools with the documented
-  [runtime events](https://learn.microsoft.com/dotnet/fundamentals/diagnostics/runtime-events)
+  [runtime events](../../../../fundamentals/diagnostics/runtime-events.md)
   and
-  [well-known providers](https://learn.microsoft.com/dotnet/core/diagnostics/well-known-event-providers).
+  [well-known providers](../../../diagnostics/well-known-event-providers.md).
 - Stop requesting `Microsoft-DotNETRuntimeMonoProfiler`.
 
 ## Affected APIs

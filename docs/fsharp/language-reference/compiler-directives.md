@@ -138,7 +138,7 @@ When you use the `#line` directive, file names must be enclosed in quotation mar
 
 These tokens indicate that the F# code generated at this location is derived from some constructs at or near line `25` in `Script1`.
 
-Note that `#line` directives do not influence the behavior of `#nowarn` / `#warnon`. These two directives always relate the the file that is being compiled.
+Note that `#line` directives do not influence the behavior of `#nowarn` / `#warnon`. These two directives always relate to the file that is being compiled.
 
 ## Warn Directives
 

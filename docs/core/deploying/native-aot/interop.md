@@ -4,6 +4,7 @@ description: Learn about native code interop with Native AOT.
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 05/17/2023
+ai-usage: ai-assisted
 ---
 # Native code interop with Native AOT
 
@@ -81,3 +82,5 @@ The Native AOT compiler exports methods annotated with <xref:System.Runtime.Inte
 public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
 programs. Only methods marked `UnmanagedCallersOnly` in the published assembly are considered. Methods in project references or NuGet packages won't be exported.
 For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).
+
+Methods annotated with `UnmanagedCallersOnly` don't perform marshalling and require blittable parameter and return types. Starting in .NET 11, when runtime marshalling is enabled, Native AOT throws <xref:System.InvalidProgramException> if an unmanaged caller invokes such a method with a non-blittable signature, such as a `bool` return type or a `char` parameter. The exception causes the process to terminate (fail fast) and can't be caught to recover from the invalid signature. Use blittable equivalents or, for supported unmanaged types, [disable runtime marshalling](../../../standard/native-interop/disabled-marshalling.md) in the assembly that declares the method. For details, see [Native AOT rejects non-blittable UnmanagedCallersOnly signatures](../../compatibility/interop/11/unmanagedcallersonly-non-blittable.md).

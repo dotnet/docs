@@ -90,6 +90,8 @@ items:
                 href: globalization/11/japanese-calendar-min-date.md
           - name: Interop
             items:
+              - name: Native AOT rejects non-blittable UnmanagedCallersOnly signatures
+                href: interop/11/unmanagedcallersonly-non-blittable.md
               - name: NativeAOT uses lib prefix for native library outputs on Unix
                 href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler

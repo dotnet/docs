@@ -16,7 +16,7 @@
     <PackageReference Include="Moq" Version="[4.21.0]" /> <!-- Context: https://github.com/Azure/azure-sdk-for-net/issues/38111 -->
     <PackageReference Include="NSubstitute" Version="6.2.0" />
     <PackageReference Include="xunit" Version="2.9.3" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0">
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

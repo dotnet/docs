@@ -89,7 +89,7 @@ GetPet() switch
 ```
 
 > [!NOTE]
-> Because patterns apply to `Value`, a pattern like `pet is Pet` typically doesn't match, since `Pet` is tested against the *contents* of the union, not the union itself.
+> A pattern like `pet is Pet` always evaluates to `true` (emitting warning CS0183) because the union instance itself is tested. It cannot be used to determine whether the union contains a value. To check whether a union instance contains a non-null value, use `pet.Value is not null` or `pet is not null`.
 
 ### Null matching
 
@@ -115,11 +115,11 @@ A `switch` expression is exhaustive when it handles all case types of a union. T
 
 :::code language="csharp" source="snippets/unions/BasicUnion.cs" id="PatternMatching":::
 
-If the null state of the union's `Value` property is "maybe null," you must also handle `null` to avoid a warning:
+When any case type is nullable, the null state of the union's `Value` property is "maybe null," and you must also handle `null` to avoid a compiler warning (CS8655).
+
+When no case type is nullable, the compiler treats `Value` as "not null" and does not warn if a `null` arm is omitted. However, handling `null` is still needed for correctness whenever a union can have its default value (such as unassigned fields, array elements, or `default(T)`). Without a `null` arm, evaluating a default union throws a <xref:System.Runtime.CompilerServices.SwitchExpressionException> at run time:
 
 :::code language="csharp" source="snippets/unions/NullHandling.cs" id="NullHandling":::
-
-This situation can arise when the `union` expression is the default value or isn't definitely assigned, as shown in the preceding sample.
 
 ## Nullability
 

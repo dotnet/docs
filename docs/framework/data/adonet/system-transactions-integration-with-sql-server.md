@@ -1,7 +1,7 @@
 ---
 description: "Learn more about System.Transactions integration with SQL Server, which exposes transactions in a way that is fully integrated in .NET Framework."
 title: "System.Transactions Integration with SQL Server"
-ms.date: "10/19/2026"
+ms.date: "10/20/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -49,7 +49,7 @@ ms.custom: sfi-ropc-nochange
 
  We recommend that you use a `using` block to make sure that <xref:System.Transactions.TransactionScope.Dispose*> is called on the <xref:System.Transactions.TransactionScope> object when the using block is exited. Failure to commit or roll back pending transactions can significantly damage performance because the default time-out for the <xref:System.Transactions.TransactionScope> is one minute. If you do not use a `using` statement, you must perform all work in a `Try` block and explicitly call the <xref:System.Transactions.TransactionScope.Dispose*> method in the `Finally` block.
 
- If an exception occurs in the <xref:System.Transactions.TransactionScope>, the transaction is marked as inconsistent and is abandoned. It will be rolled back when the <xref:System.Transactions.TransactionScope> is disposed. If no exception occurs, participating transactions commit.
+ If an exception leaves the <xref:System.Transactions.TransactionScope> before you call <xref:System.Transactions.TransactionScope.Complete*>, the transaction rolls back when the scope is disposed. If you catch an exception inside the scope, don't call `Complete` after the failed operation.
 
 > [!NOTE]
 > The `TransactionScope` class creates a transaction with a <xref:System.Transactions.Transaction.IsolationLevel> of `Serializable` by default. Depending on your application, you might want to consider lowering the isolation level to avoid high contention in your application.
@@ -110,9 +110,13 @@ static public int CreateTransactionScope(
                         SqlCommand command2 = new SqlCommand(commandText2, connection2);
                         returnValue = command2.ExecuteNonQuery();
                         writer.WriteLine("Rows to be affected by command2: {0}", returnValue);
+
+                        // Complete only after both commands succeed.
+                        scope.Complete();
                     }
                     catch (Exception ex)
                     {
+                        returnValue = 0;
                         // Display information that command2 failed.
                         writer.WriteLine("returnValue for command2: {0}", returnValue);
                         writer.WriteLine("Exception Message2: {0}", ex.Message);
@@ -120,15 +124,12 @@ static public int CreateTransactionScope(
             }
             catch (Exception ex)
             {
+                returnValue = 0;
                 // Display information that command1 failed.
                 writer.WriteLine("returnValue for command1: {0}", returnValue);
                 writer.WriteLine("Exception Message1: {0}", ex.Message);
             }
         }
-
-        // If an exception has been thrown, Complete will not
-        // be called and the transaction is rolled back.
-        scope.Complete();
     }
 
     // The returnValue is greater than 0 if the transaction committed.
@@ -194,7 +195,11 @@ Public Function CreateTransactionScope( _
                         returnValue = command2.ExecuteNonQuery()
                         writer.WriteLine("Rows to be affected by command2: {0}", returnValue)
 
+                        ' Complete only after both commands succeed.
+                        scope.Complete()
+
                     Catch ex As Exception
+                        returnValue = 0
                         ' Display information that command2 failed.
                         writer.WriteLine("returnValue for command2: {0}", returnValue)
                         writer.WriteLine("Exception Message2: {0}", ex.Message)
@@ -202,15 +207,12 @@ Public Function CreateTransactionScope( _
                 End Using
 
             Catch ex As Exception
+                returnValue = 0
                 ' Display information that command1 failed.
                 writer.WriteLine("returnValue for command1: {0}", returnValue)
                 writer.WriteLine("Exception Message1: {0}", ex.Message)
             End Try
         End Using
-
-        ' If an exception has been thrown, Complete will
-        ' not be called and the transaction is rolled back.
-        scope.Complete()
     End Using
 
     ' The returnValue is greater than 0 if the transaction committed.

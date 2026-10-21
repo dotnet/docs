@@ -66,6 +66,8 @@ items:
             items:
               - name: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json
                 href: deployment/11/runtimeconfigdev-configproperties-precedence.md
+              - name: CoreCLR replaces Mono runtime for .NET mobile apps
+                href: deployment/11/coreclr-replaces-mono-mobile.md
           - name: Extensions
             items:
               - name: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks

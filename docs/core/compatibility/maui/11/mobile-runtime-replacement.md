@@ -1,8 +1,9 @@
 ---
-title: "Breaking change: CoreCLR replaces Mono runtime for .NET mobile apps"
+title: "Breaking change - CoreCLR replaces Mono runtime for .NET mobile apps"
 description: "Learn about the breaking change in .NET 11 where CoreCLR replaces Mono runtime for .NET mobile apps."
 ms.date: 10/21/2026
 ai-usage: ai-generated
+ms.custom: https://github.com/dotnet/docs/issues/56476
 ---
 
 # CoreCLR replaces Mono runtime for .NET mobile apps

@@ -27,6 +27,7 @@ jobs:
     runs-on: windows-2022
     permissions:
         statuses: write
+        checks: write
 
     steps:
     # Checkout the repository for the PR

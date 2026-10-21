@@ -12,7 +12,7 @@ jobs:
     name: Add preview links and annotate files
     runs-on: ubuntu-latest
     permissions:
-      statuses: read
+      statuses: write
       checks: write
       pull-requests: write
     steps:

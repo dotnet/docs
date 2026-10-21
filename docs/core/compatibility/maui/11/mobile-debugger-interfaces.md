@@ -36,7 +36,7 @@ Mono and CoreCLR use different debugger interfaces and components.
 
 - Replace Mono soft-debugger integration with `ICorDebug`.
 - Follow the
-  [mobile CoreCLR debugger initialization guidance](https://learn.microsoft.com/dotnet/core/unmanaged-api/debugging/initialize-debugger-mobile)
+  [mobile CoreCLR debugger initialization guidance](../../../unmanaged-api/debugging/initialize-debugger-mobile.md)
   for the target-side component and `ICorDebug` initialization sequence.
 - Microsoft's Visual Studio mobile debugger proxy is not a public debugging
   protocol. The Visual Studio license doesn't allow third parties to redistribute

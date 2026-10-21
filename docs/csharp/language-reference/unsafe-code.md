@@ -361,7 +361,7 @@ public static unsafe byte ReadByte(IntPtr ptr, int offset)
 }
 ```
 
-The `/// <safety>` block tells you the contract.The contract belongs in the documentation where every caller and reviewer sees it.
+The `/// <safety>` block tells you the contract. The contract belongs in the documentation where every caller and reviewer sees it.
 
 ### Unsafe fields
 
@@ -395,7 +395,7 @@ public class NativeBuffer
 
 A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*.
 
-Under the updated rules, mark every instance field in a type with explicit or extended layout either `safe` or `unsafe`. These are types marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute>. Apply the same modifiers to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, even with sequential or auto layout. Unspecified or zero values don't trigger the additional requirement by themselves. Static and constant fields are exempt. Annotate the owning property or event for synthesized backing fields.
+Under the updated rules, mark every instance field in a type with explicit or extended layout either `safe` or `unsafe`. These types are marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute>. Apply the same modifiers to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, even with sequential or auto layout. Unspecified or zero values don't trigger the additional requirement by themselves. Static and constant fields are exempt. Annotate the owning property or event for synthesized backing fields.
 
 For the diagnostic and fixes for implicitly generated storage, see [CS9392: Field layout safety](compiler-messages/unsafe-code-errors.md#field-layout-safety).
 

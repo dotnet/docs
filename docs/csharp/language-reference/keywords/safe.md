@@ -62,9 +62,9 @@ internal struct Union
 
 A field that holds a native pointer, or whose type otherwise carries an invariant the type system can't express, is `unsafe`. A field whose type is fully described by the type system is `safe`. The same rule applies to explicit-layout fields and extended-layout fields. As with `extern` members, omitting both modifiers is an error when the updated rules are enabled.
 
-Newer Roslyn preview compilers extend this rule to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, including sequential and auto layout. For example, a sequential-layout type with `Pack = 1` requires the same explicit choice. Unspecified or zero values don't trigger the additional rule by themselves. Static and constant fields are exempt. For synthesized backing fields, put the modifier on the owning property or event.
+Apply the same modifiers to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, including sequential and auto layout. For example, a sequential-layout type with `Pack = 1` requires the same explicit choice. Unspecified or zero values don't trigger the additional rule by themselves. Static and constant fields are exempt. For synthesized backing fields, put the modifier on the owning property or event.
 
-The .NET 11 RC2 compiler doesn't enforce the additional nonzero `Pack` and `Size` checks. For the expanded **CS9392** message and fixes for other synthesized storage, see [Field layout safety](../compiler-messages/unsafe-code-errors.md#field-layout-safety).
+For the **CS9392** message and fixes for other synthesized storage, see [Field layout safety](../compiler-messages/unsafe-code-errors.md#field-layout-safety).
 
 ## C# language specification
 

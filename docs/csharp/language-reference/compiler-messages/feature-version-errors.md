@@ -306,7 +306,7 @@ If you can't upgrade, avoid the feature that triggered the error. The error mess
 - Access tuple elements by their declared name rather than the inferred name, or upgrade to C# 7.1 or later (**CS8306**).
 - Use `$@"..."` instead of `@$"..."` for interpolated verbatim strings in C# versions before 8.0 (**CS8401**).
 - Add explicit type constraints to nullable type parameters, or upgrade to C# 9 or later which relaxes this requirement (**CS8627**).
-- Match the option to the language version named in the message (**CS8630**). For example, nullable options require C# 8.0 or later. In newer compilers that expose the experimental Roslyn `MemorySafetyRulesVersion` API, selecting `Version2` requires the `preview` language version; selecting C# 15.0 isn't sufficient.
+- Match the option to the language version named in the message (**CS8630**). For example, nullable options require C# 8.0 or later. In the experimental Roslyn `MemorySafetyRulesVersion` API, selecting `Version2` requires the `preview` language version; selecting C# 15.0 isn't sufficient.
 - Add explicit casts in conditional expressions where the two branches have no common type, or upgrade to C# 9 or later for target-typed conditional expressions (**CS8957**).
 - Move newlines outside of interpolated string expressions, or upgrade to C# 11 or later (**CS8967**).
 - Use the `in` keyword instead of `ref` when passing arguments to `in` parameters, or upgrade to C# 12 or later (**CS9194**).
@@ -317,7 +317,7 @@ Numbered-version gates and preview gates describe different problems:
 - **CS9327** means the project uses C# 14.0, but the named feature requires a later language version. For example, collection expression arguments require C# 15.
 - **CS9399** is the corresponding general numbered-version gate for a project using C# 15.0. Follow the feature and required version in the actual diagnostic. It isn't the error for activating the updated memory safety rules.
 - **CS8652** means the feature remains in preview. For example, using the `safe` modifier with `LangVersion` set to `15.0` requires changing it to `preview`, not just selecting the newest numbered version.
-- **CS8630** can instead report that a compilation option requires another language version. For example, the experimental `MemorySafetyRulesVersion` value `2` requires `preview`, even for an otherwise empty compilation.
+- **CS8630** can instead report that a compilation option requires another language version. For example, the experimental `MemorySafetyRulesVersion` value `2` requires `preview` even when the compilation contains no source code, because the compiler validates the option independently of the source code.
 
 For the separate syntax and enforcement opt-ins for the preview memory safety model, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules).
 

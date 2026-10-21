@@ -46,7 +46,7 @@ The following table compares which operations require an `unsafe` context in eac
 | Element access on a fixed-size buffer                                          | Requires `unsafe`     | Requires `unsafe`    |
 | Call a member marked `unsafe`                                                  | No caller requirement | Requires `unsafe`    |
 
-To try the preview syntax and pointer relaxations, use the .NET 11 SDK (in preview) and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. To also enable the updated rules, including caller obligations, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules).
+To enable the preview syntax and pointer relaxations, use the .NET 11 SDK and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. To also enable the updated rules, including caller obligations, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 ## The original unsafe model
 
@@ -215,7 +215,7 @@ This example accesses the elements of both arrays by using indices rather than a
 ## The updated memory safety model (preview)
 
 > [!IMPORTANT]
-> The updated memory safety model is a preview feature in C# 15 and .NET 11. It continues to evolve based on feedback during the preview releases. For activation instructions, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+> The updated memory safety model is a preview feature in C# 15 and .NET 11. For activation instructions, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 The updated model separates two things the original model treats as one: the *existence* of pointer code and the *propagation* of safety obligations to callers. Marking a member `unsafe` no longer just permits pointers in its body; it makes the member *requires-unsafe*, so every caller must either propagate that obligation or discharge it behind a validated, safe-callable boundary. To support that separation, the model also narrows the unsafe context: the existence of a pointer isn't unsafe, only the operations that access memory the runtime doesn't manage. The narrowing lets you hold, pass, and return pointers in safe code, while `unsafe` marks the operations and members that can actually violate memory safety.
 
@@ -395,9 +395,9 @@ public class NativeBuffer
 
 A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*.
 
-Under the updated rules, mark every instance field in a type with explicit or extended layout either `safe` or `unsafe`. These are types marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute>. Newer Roslyn preview compilers extend the requirement to nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, even with sequential or auto layout. Unspecified or zero values don't trigger the additional requirement by themselves. Static and constant fields are exempt. Annotate the owning property or event for synthesized backing fields.
+Under the updated rules, mark every instance field in a type with explicit or extended layout either `safe` or `unsafe`. These are types marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute>. Apply the same modifiers to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, even with sequential or auto layout. Unspecified or zero values don't trigger the additional requirement by themselves. Static and constant fields are exempt. Annotate the owning property or event for synthesized backing fields.
 
-The .NET 11 RC2 compiler doesn't enforce the additional nonzero `Pack` and `Size` checks. For the expanded diagnostic and fixes for implicitly generated storage, see [CS9392: Field layout safety](compiler-messages/unsafe-code-errors.md#field-layout-safety).
+For the diagnostic and fixes for implicitly generated storage, see [CS9392: Field layout safety](compiler-messages/unsafe-code-errors.md#field-layout-safety).
 
 ### The safe keyword
 

@@ -108,6 +108,8 @@ items:
             items:
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
+              - name: Mono runtime settings no longer configure mobile apps
+                href: maui/11/mono-runtime-settings.md
           - name: SDK and MSBuild
             items:
               - name: dnx scripts bypass global.json SDK selection

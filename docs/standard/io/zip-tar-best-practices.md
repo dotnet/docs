@@ -360,7 +360,9 @@ foreach (ZipArchiveEntry entry in archive.Entries)
 ```
 
 > [!IMPORTANT]
-> For WinZip AES entries, the runtime returns decrypted bytes as you read the stream, but only checks the HMAC at the end (like CRC-32 for unencrypted entries). This means the HMAC works as an integrity check on the whole entry rather than something verified upfront. For this reason, avoid acting on partial decrypted bytes. Read the entry stream to completion before using its contents.
+> For WinZip AES entries, the runtime automatically checks the hash-based message authentication code (HMAC) at the end of the entry, after decryption and decompression. The check isn't optional, but the runtime can return data to your application before validation completes.
+>
+> <xref:System.IO.Compression.ZipArchive> doesn't guarantee the integrity of an archive or its entries. If your application requires integrity guarantees, establish them through a separate trusted channel before extraction.
 
 Attempting to open an entry that uses an unsupported encryption method (`ZipEncryptionMethod.Unknown`) throws <xref:System.NotSupportedException>.
 

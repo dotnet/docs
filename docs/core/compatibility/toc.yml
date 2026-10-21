@@ -106,6 +106,8 @@ items:
                 href: networking/11/sslstream-aia-downloads-disabled.md
           - name: .NET MAUI
             items:
+              - name: Debugging interfaces on mobile platforms changing to ICorDebug
+                href: maui/11/mobile-debugger-interfaces.md
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild

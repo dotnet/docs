@@ -106,6 +106,8 @@ items:
                 href: networking/11/sslstream-aia-downloads-disabled.md
           - name: .NET MAUI
             items:
+              - name: Code generation on mobile changes from Mono to CoreCLR
+                href: maui/11/mobile-code-generation.md
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild

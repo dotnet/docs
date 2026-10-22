@@ -110,7 +110,7 @@ For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces
 ## See also
 
 - [C# Keywords](index.md)
-- [Reference Types](reference-types.md),
-- [Interfaces](../../fundamentals/types/interfaces.md),
-- [Using Properties](../../programming-guide/classes-and-structs/using-properties.md),
-- [Using Indexers](../../programming-guide/indexers/using-indexers.md).
+- [Reference Types](reference-types.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)
+- [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)
+- [Using Indexers](../../programming-guide/indexers/using-indexers.md)

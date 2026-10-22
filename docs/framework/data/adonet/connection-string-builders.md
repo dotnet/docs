@@ -1,18 +1,18 @@
 ---
 title: "Connection String Builders"
 description: Learn about the connection string builder classes used for different providers in ADO.NET, all of which inherit from DbConnectionStringBuilder.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Connection string builders
 
-In early versions of ADO.NET, compile-time checking of connection strings with concatenated string values did not occur, so that at runtime, an incorrect keyword generated an <xref:System.ArgumentException>. Each of the .NET Framework data providers supported different syntax for connection string keywords, which made constructing valid connection strings difficult if done manually. To address this problem, ADO.NET 2.0 introduced new connection string builders for each .NET Framework data provider. Each data provider includes a strongly typed connection string builder class that inherits from <xref:System.Data.Common.DbConnectionStringBuilder>. The following table lists the .NET Framework data providers and their associated connection string builder classes.
+In early versions of ADO.NET, compile-time checking of connection strings with concatenated string values did not occur, so that at runtime, an incorrect keyword generated an <xref:System.ArgumentException>. Each of the .NET Framework data providers supported different syntax for connection string keywords, which made constructing valid connection strings difficult if done manually. To address this problem, ADO.NET 2.0 introduced new connection string builders for each .NET Framework data provider. Each data provider includes a strongly typed connection string builder class that inherits from <xref:System.Data.Common.DbConnectionStringBuilder>. The following table lists ADO.NET data providers and their associated connection string builder classes.
 
 | Provider                        | ConnectionStringBuilder class                                                              |
 |---------------------------------|--------------------------------------------------------------------------------------------|
-| <xref:System.Data.SqlClient>    | <xref:System.Data.SqlClient.SqlConnectionStringBuilder?displayProperty=nameWithType>       |
+| <xref:Microsoft.Data.SqlClient> | <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder?displayProperty=nameWithType>    |
 | <xref:System.Data.OleDb>        | <xref:System.Data.OleDb.OleDbConnectionStringBuilder?displayProperty=nameWithType>         |
 | <xref:System.Data.Odbc>         | <xref:System.Data.Odbc.OdbcConnectionStringBuilder?displayProperty=nameWithType>           |
 | <xref:System.Data.OracleClient> | <xref:System.Data.OracleClient.OracleConnectionStringBuilder?displayProperty=nameWithType> |
@@ -23,10 +23,10 @@ In early versions of ADO.NET, compile-time checking of connection strings with c
 
  The connection string builder classes are designed to eliminate guesswork and protect against syntax errors and security vulnerabilities. They provide methods and properties corresponding to the known key/value pairs permitted by each data provider. Each class maintains a fixed collection of synonyms and can translate from a synonym to the corresponding well-known key name. Checks are performed for valid key/value pairs, and an invalid pair throws an exception. In addition, injected values are handled in a safe manner.
 
- The following example demonstrates how <xref:System.Data.SqlClient.SqlConnectionStringBuilder> handles an inserted extra value for the `Initial Catalog` setting.
+ The following example demonstrates how <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder> handles an inserted extra value for the `Initial Catalog` setting.
 
 ```vb
-Dim builder As New System.Data.SqlClient.SqlConnectionStringBuilder
+Dim builder As New Microsoft.Data.SqlClient.SqlConnectionStringBuilder
 builder("Data Source") = "(local)"
 builder("Integrated Security") = True
 builder("Initial Catalog") = "AdventureWorks;NewValue=Bad"
@@ -34,8 +34,8 @@ Console.WriteLine(builder.ConnectionString)
 ```
 
 ```csharp
-System.Data.SqlClient.SqlConnectionStringBuilder builder =
-  new System.Data.SqlClient.SqlConnectionStringBuilder();
+Microsoft.Data.SqlClient.SqlConnectionStringBuilder builder =
+  new Microsoft.Data.SqlClient.SqlConnectionStringBuilder();
 builder["Data Source"] = "(local)";
 builder["integrated Security"] = true;
 builder["Initial Catalog"] = "AdventureWorks;NewValue=Bad";
@@ -44,7 +44,7 @@ Console.WriteLine(builder.ConnectionString);
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
-The output shows that the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> handled this correctly by escaping the extra value in double quotation marks instead of appending it to the connection string as a new key/value pair.
+The output shows that the <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder> handled this correctly by escaping the extra value in double quotation marks instead of appending it to the connection string as a new key/value pair.
 
 ```output
 data source=(local);Integrated Security=True;

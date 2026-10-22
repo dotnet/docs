@@ -1,7 +1,7 @@
 ---
 title: "Configuring parameters and parameter data types"
 description: Command objects use parameters to pass values to SQL statements or stored procedures, providing type checking and validation in ADO.NET.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -31,7 +31,7 @@ The syntax for parameter placeholders depends on the data source. The .NET Frame
 
 |Data provider|Parameter naming syntax|
 |-------------------|-----------------------------|
-|<xref:System.Data.SqlClient>|Uses named parameters in the format `@`*parametername*.|
+|<xref:Microsoft.Data.SqlClient>|Uses named parameters in the format `@`*parametername*.|
 |<xref:System.Data.OleDb>|Uses positional parameter markers indicated by a question mark (`?`).|
 |<xref:System.Data.Odbc>|Uses positional parameter markers indicated by a question mark (`?`).|
 |<xref:System.Data.OracleClient>|Uses named parameters in the format `:`*parmname* (or *parmname*).|
@@ -95,7 +95,7 @@ Stored procedures offer many advantages in data-driven applications. By using st
 > [!NOTE]
 > Parameterized statements are executed on the server by using `sp_executesql`, which allows for query plan reuse. Local cursors or variables in the `sp_executesql` batch are not visible to the batch that calls `sp_executesql`. Changes in database context last only to the end of the `sp_executesql` statement. For more information, see [sp_executesql (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql).
 
-When using parameters with a <xref:System.Data.SqlClient.SqlCommand> to execute a SQL Server stored procedure, the names of the parameters added to the <xref:System.Data.SqlClient.SqlCommand.Parameters*> collection must match the names of the parameter markers in the stored procedure. The .NET Framework Data Provider for SQL Server does not support the question mark (?) placeholder for passing parameters to an SQL statement or a stored procedure. It treats parameters in the stored procedure as named parameters and searches for matching parameter markers. For example, the `CustOrderHist` stored procedure is defined by using a parameter named `@CustomerID`. When your code executes the stored procedure, it must also use a parameter named `@CustomerID`.
+When using parameters with a <xref:Microsoft.Data.SqlClient.SqlCommand> to execute a SQL Server stored procedure, the names of the parameters added to the <xref:Microsoft.Data.SqlClient.SqlCommand.Parameters*> collection must match the names of the parameter markers in the stored procedure. Microsoft.Data.SqlClient does not support the question mark (?) placeholder for passing parameters to an SQL statement or a stored procedure. It treats parameters in the stored procedure as named parameters and searches for matching parameter markers. For example, the `CustOrderHist` stored procedure is defined by using a parameter named `@CustomerID`. When your code executes the stored procedure, it must also use a parameter named `@CustomerID`.
 
 ```sql
 CREATE PROCEDURE dbo.CustOrderHist @CustomerID varchar(5)
@@ -103,7 +103,7 @@ CREATE PROCEDURE dbo.CustOrderHist @CustomerID varchar(5)
 
 ### Example
 
-This example demonstrates how to call a SQL Server stored procedure in the `Northwind` sample database. The name of the stored procedure is `dbo.SalesByCategory` and it has an input parameter named `@CategoryName` with a data type of `nvarchar(15)`. The code creates a new <xref:System.Data.SqlClient.SqlConnection> inside a using block so that the connection is disposed when the procedure ends. The <xref:System.Data.SqlClient.SqlCommand> and <xref:System.Data.SqlClient.SqlParameter> objects are created, and their properties set. A <xref:System.Data.SqlClient.SqlDataReader> executes the `SqlCommand` and returns the result set from the stored procedure, displaying the output in the console window.
+This example demonstrates how to call a SQL Server stored procedure in the `Northwind` sample database. The name of the stored procedure is `dbo.SalesByCategory` and it has an input parameter named `@CategoryName` with a data type of `nvarchar(15)`. The code creates a new <xref:Microsoft.Data.SqlClient.SqlConnection> inside a using block so that the connection is disposed when the procedure ends. The <xref:Microsoft.Data.SqlClient.SqlCommand> and <xref:Microsoft.Data.SqlClient.SqlParameter> objects are created, and their properties set. A <xref:Microsoft.Data.SqlClient.SqlDataReader> executes the `SqlCommand` and returns the result set from the stored procedure, displaying the output in the console window.
 
 > [!NOTE]
 > Instead of creating `SqlCommand` and `SqlParameter` objects and then setting properties in separate statements, you can instead elect to use one of the overloaded constructors to set multiple properties in a single statement.

@@ -5,7 +5,7 @@ static class Program
 {
     static void Main()
     {
-        var s = GetConnectionStringByProvider("System.Data.SqlClient");
+        var s = GetConnectionStringByProvider("Microsoft.Data.SqlClient");
         Console.WriteLine(s);
         Console.ReadLine();
     }

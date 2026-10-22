@@ -385,5 +385,5 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |[NETSDK1242](netsdk1242.md)|Building {0} projects with the Mono runtime is not supported in .NET 11.0 and later. Use the CoreCLR runtime or target .NET 10.0.|
 |[NETSDK1247](netsdk1247.md)|Failed to enumerate '{0}' while signing OpenHarmony outputs: {1}|
 |[NETSDK1248](netsdk1248.md)|Failed to sign '{0}': {1}|
-|[NETSDK1249](netsdk1249.md)|'{0}' carries a .codesign section that this signer did not create; it was left untouched. Run 'dotnet selfsign --force' to replace it with a self-signature.|
-|[NETSDK1250](netsdk1250.md)|Skipping symbolic link '{0}' while signing OpenHarmony outputs: signing never follows links outside the output tree.|
+|[NETSDK1249](netsdk1249.md)|'{0}' carries a .codesign section that this signer did not create; it was left untouched. If the existing signature is not valid for the target device, re-sign the file with the OpenHarmony signing tool.|
+|[NETSDK1250](netsdk1250.md)|Skipping symbolic link '{0}' while signing OpenHarmony outputs: signing never follows symbolic links.|

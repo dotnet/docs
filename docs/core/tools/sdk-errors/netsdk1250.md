@@ -11,7 +11,7 @@ f1_keywords:
 
 When you build or publish for an `openharmony-*` runtime identifier, the SDK signs the ELF binaries in the output directory. The signer never follows symbolic links (file or directory links), because doing so could rewrite a file outside the output tree. This is a warning. The full message is similar to the following example:
 
-> NETSDK1250: Skipping symbolic link '{0}' while signing OpenHarmony outputs: signing never follows links outside the output tree.
+> NETSDK1250: Skipping symbolic link '{0}' while signing OpenHarmony outputs: signing never follows symbolic links.
 
 ## Resolve the warning
 

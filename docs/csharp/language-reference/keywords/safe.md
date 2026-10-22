@@ -1,7 +1,7 @@
 ---
 description: "safe modifier - C# Reference"
 title: "safe modifier"
-ms.date: 09/11/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "safe_CSharpKeyword"
@@ -11,10 +11,20 @@ helpviewer_keywords:
 ---
 # safe (C# Reference)
 
-The `safe` contextual keyword attests that a declaration is sound in places where the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview) requires you to make the safety choice explicit. You apply `safe` as a modifier on a declaration that the compiler can't classify on its own, such as an `extern` member or a field in a type with explicit or extended layout. The `safe` modifier is the counterpart to [`unsafe`](unsafe.md): `safe` attests that callers need no `unsafe` context, while `unsafe` propagates the obligation to audit safety to the caller.
+The `safe` contextual keyword marks a declaration as not requiring an `unsafe` context at its use site under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview). The `safe` modifier is the counterpart to [`unsafe`](unsafe.md). An unsafe context isn't required for callers of a `safe` declaration, while `unsafe` propagates the obligation to audit safety to the caller.
+
+Using the `safe` keyword itself requires the [`AllowUnsafeBlocks`](../compiler-options/language.md#allowunsafeblocks) compiler option (`-unsafe`), even though callers don't need an `unsafe` context. Ordinary declarations are safe by default, so omit `safe` where it isn't required to avoid unnecessarily requiring unsafe compilation.
 
 > [!IMPORTANT]
 > The `safe` keyword is part of the updated memory safety model, a preview feature in C# 15 and .NET 11. Set [`LangVersion`](../compiler-options/language.md#langversion) to `preview` to enable the syntax. To also enforce the updated rules, including explicit `safe` or `unsafe` choices and requires-unsafe caller obligations, enable the `updated-memory-safety-rules` compiler feature. For activation details, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+
+## Permitted and required declarations
+
+You can apply `safe` to declarations that permit a requires-unsafe modifier, including methods, constructors, properties, and fields. For ordinary declarations, the modifier can make the intended contract explicit, including in source-generated code. It isn't limited to `extern` members and layout fields.
+
+Certain declarations require an explicit choice of `safe` or `unsafe` when the updated rules are enabled. The following sections describe `extern` members and explicit or extended layout fields.
+
+Unlike `unsafe`, `safe` doesn't establish a lexical context. It doesn't make unsafe operations in a member body safe or cancel an enclosing unsafe context. You can't combine the `safe` and `unsafe` modifiers on the same declaration; doing so produces CS9388.
 
 ## Extern members
 

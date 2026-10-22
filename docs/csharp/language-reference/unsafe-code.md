@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 09/11/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -20,7 +20,7 @@ Most of the C# code you write is verifiably safe code. *Verifiably safe code* me
 
 [!INCLUDE[csharp-version-note](./includes/initial-version.md)]
 
-C# also supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. Unsafe code isn't necessarily dangerous; it's just code whose safety can't be verified by .NET tools. You use unsafe code to call native functions that require pointers, and in some cases to improve performance through direct memory access that avoids array-bounds checks. Unsafe code also introduces security and stability risks. To compile code that contains an `unsafe` context, add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+C# also supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. Unsafe code isn't necessarily dangerous; it's just code whose safety can't be verified by .NET tools. Use unsafe code to call native functions that require pointers, and in some cases to improve performance through direct memory access that avoids array-bounds checks. Unsafe code also introduces security and stability risks. To compile code that contains an `unsafe` context, add the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 C# defines two models for what counts as unsafe code: the original model and an updated memory safety model that's in preview in C# 15 and .NET 11. For information about how the two models differ, see [Two models for unsafe code](#two-models-for-unsafe-code).
 
@@ -255,7 +255,7 @@ The updated model also tightens a few related rules:
 
 - The `unsafe` modifier produces an error on a type declaration, a static constructor, and a finalizer, because the modifier has no caller to inform.
 - Delegates can't be `unsafe`, because a delegate is type-shaped.
-- A type whose parameterless constructor is `unsafe` doesn't satisfy the `new()` constraint.
+- A type whose parameterless constructor is `unsafe` can't satisfy a `new()` or `struct` constraint in a declaration, such as a base type or field type. In an expression, it can satisfy the constraint inside an unsafe context, for example `unsafe { var box = new Box<NativeResource>(); }` when `Box<T>` has a `new()` constraint and `NativeResource` has a requires-unsafe constructor.
 
 ### Operations that require an unsafe context
 
@@ -336,12 +336,12 @@ The null check and the array length rule out the inputs that would let a read ru
 
 ### Safety documentation
 
-A requires-unsafe member should document what the caller must guarantee. The updated model encourages two complementary comment styles:
+A *requires-unsafe* member should document what the caller must guarantee. The updated model encourages two complementary comment styles:
 
-- A `/// <safety>` documentation block above the signature states the formal contract: the conditions a caller must satisfy. An analyzer can flag a requires-unsafe member that's missing one.
+- A `/// <safety>` documentation block above the signature states the formal contract: the conditions a caller must satisfy. An analyzer can flag a *requires-unsafe* member that's missing one.
 - A `// SAFETY:` comment inside an `unsafe` block records why the operation is sound at that spot, for the developers and auditors who read the body.
 
-The following preview example shows both styles on a requires-unsafe `ReadByte` method:
+The following preview example shows both styles on a *requires-unsafe* `ReadByte` method:
 
 ```csharp
 // Preview
@@ -393,11 +393,13 @@ public class NativeBuffer
 }
 ```
 
-A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field requires-unsafe. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
+A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
 
 ### The safe keyword
 
 The updated model adds a [`safe`](keywords/safe.md) contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
+
+Ordinary declarations are safe by default, so they don't require a `safe` modifier. Because `unsafe` code should be rare, most codebases use `safe` only where the default would otherwise be unsafe or the compiler requires an explicit choice. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration.
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 

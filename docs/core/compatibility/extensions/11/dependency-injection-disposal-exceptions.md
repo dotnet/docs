@@ -48,8 +48,8 @@ Don't rely on a disposal exception to prevent other services from being disposed
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.Dispose>
-- <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.DisposeAsync>
-- <xref:Microsoft.Extensions.DependencyInjection.AsyncServiceScope.Dispose>
-- <xref:Microsoft.Extensions.DependencyInjection.AsyncServiceScope.DisposeAsync>
-- <xref:System.IDisposable.Dispose> on <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> instances created by the built-in container.
+- <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.Dispose?displayProperty=fullName>
+- <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider.DisposeAsync?displayProperty=fullName>
+- <xref:Microsoft.Extensions.DependencyInjection.AsyncServiceScope.Dispose?displayProperty=fullName>
+- <xref:Microsoft.Extensions.DependencyInjection.AsyncServiceScope.DisposeAsync?displayProperty=fullName>
+- <xref:System.IDisposable.Dispose?displayProperty=fullName> on <xref:Microsoft.Extensions.DependencyInjection.IServiceScope?displayProperty=fullName> instances created by the built-in container.

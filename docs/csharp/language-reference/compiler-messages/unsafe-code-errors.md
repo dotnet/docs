@@ -291,8 +291,6 @@ These diagnostics enforce the C# 15 safety contract rules for members marked as 
 - Put `unsafe` or `safe` on either the property or indexer, or on an accessor, but not both (**CS9396**). If the property sets the contract for all accessors, place the modifier on the property itself. If only one accessor differs, put the modifier on that accessor and leave the property unmodified.
 - If every accessor of a property or indexer would have the same `unsafe` or `safe` modifier, move that modifier to the property or indexer declaration (**CS9397**). Use accessor modifiers only when the accessors intentionally differ.
 
-<a id="explicit-or-extended-layout-fields"></a>
-
 ## Field layout safety
 
 - **CS9392**: *Field in a type with explicit or extended layout, nonzero packing size, or nonzero size must be marked '`unsafe`' or '`safe`'.*

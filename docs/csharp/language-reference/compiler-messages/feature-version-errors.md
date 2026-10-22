@@ -194,7 +194,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8511**](#feature-not-available-in-language-version): *An expression of type 'type' cannot be handled by a pattern of type 'type'. Please use language version 'version' or greater to match an open type with a constant pattern.*
 - [**CS8627**](#feature-not-available-in-language-version): *A nullable type parameter must be known to be a value type or non-nullable reference type unless language version 'version' or greater is used. Consider changing the language version or adding a 'class', 'struct', or type constraint.*
 - [**CS8630**](#feature-not-available-in-language-version): *Invalid 'option' value: 'value' for C# version. Please use language version 'version' or greater.*
-- [**CS8652**](#experimental-and-preview-features): *The feature 'feature' is currently in Preview and \*unsupported\*. To use Preview features, use the 'preview' language version.*
+- [**CS8652**](#experimental-and-preview-features): *The feature 'feature' is currently in Preview and \*unsupported\*. To use Preview features, use the `preview` language version.*
 - [**CS8701**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support default interface implementation.*
 - [**CS8702**](#target-runtime-doesnt-support-feature): *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
 - [**CS8703**](#feature-not-available-in-language-version): *The modifier 'modifier' is not valid for this item in C# version. Please use language version 8.0 or greater.*
@@ -237,7 +237,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS9328**](#target-runtime-doesnt-support-feature): *Method 'method' uses a feature that is not supported by runtime async currently. Opt the method out of runtime async by attributing it with 'System.Runtime.CompilerServices.RuntimeAsyncMethodGenerationAttribute(false)'.*
 - [**CS9346**](#target-runtime-doesnt-support-feature): *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - [**CS9352**](#target-runtime-doesnt-support-feature): *The target runtime does not support extended layout types.*
-- [**CS9399**](#feature-not-available-in-language-version): *Feature 'feature' is not available in C# 15.0. Please use language version `version` or greater.*
+- [**CS9399**](#feature-not-available-in-language-version): *Feature 'feature' is not available in C# 15.0. Please use language version 'version' or greater.*
 
 The cause behind all these errors and warnings is that either the compiler or the runtime doesn't support a feature you're using. The resolution depends on whether the issue is a language version configuration problem, a language version mismatch, a runtime limitation, or an experimental feature.
 
@@ -292,8 +292,8 @@ To learn more about the language versions supported for each framework version, 
 - **CS8957**: *Conditional expression is not valid in language version 8.0 because a common type was not found between types.*
 - **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C# 10.0.*
 - **CS9194**: *Argument may not be passed with the 'ref' keyword. To pass 'ref' arguments to 'in' parameters, upgrade to language version 12 or greater.*
-- **CS9327**: *Feature 'feature' is not available in C# 14.0. Please use language version `version` or greater.*
-- **CS9399**: *Feature 'feature' is not available in C# 15.0. Please use language version `version` or greater.*
+- **CS9327**: *Feature 'feature' is not available in C# 14.0. Please use language version 'version' or greater.*
+- **CS9399**: *Feature 'feature' is not available in C# 15.0. Please use language version 'version' or greater.*
 
 These errors all indicate that you're using a language feature that requires a newer C# version than your project currently targets. To resolve these errors, use one of the following options:
 
@@ -384,7 +384,7 @@ Make custom calling convention types `public` (**CS8891**). If you define a cust
 
 - **CS8058**: *Feature 'feature' is experimental and unsupported; use '/features:feature' to enable.*
 - **CS8305**: *'type' is for evaluation purposes only and is subject to change or removal in future updates.*
-- **CS8652**: *The feature 'feature' is currently in Preview and \*unsupported\*. To use Preview features, use the 'preview' language version.*
+- **CS8652**: *The feature 'feature' is currently in Preview and \*unsupported\*. To use Preview features, use the `preview` language version.*
 - **CS9204**: *'type' is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 - **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 - **CS9268**: *'type' is for evaluation purposes only and is subject to change or removal in future updates: 'message'. Suppress this diagnostic to proceed.*

@@ -11,14 +11,20 @@ f1_keywords:
 
 When you build or publish for an `openharmony-*` runtime identifier, the SDK signs the ELF binaries in the output directory. If a binary already contains a `.codesign` section that the SDK signer didn't create, the signer leaves the file untouched instead of replacing the signature silently. This is a warning. The full message is similar to the following example:
 
-> NETSDK1249: '{0}' carries a .codesign section that this signer did not create; it was left untouched. If the existing signature is not valid for the target device, re-sign the file with the OpenHarmony signing tool.
+> NETSDK1249: '{0}' carries a .codesign section that this signer did not create; it was left untouched. Run 'dotnet selfsign --force' to replace it with a self-signature.
 
 ## Resolve the warning
 
 Choose one of the following options:
 
 - Keep the existing signature if it is valid for the target device. This is the default behavior.
-- If the existing signature is not the one the target device must verify, re-sign the file with the OpenHarmony signing tool before it is copied into the output tree. The SDK never replaces a signature it did not create.
+- Replace the existing section with the SDK's self-signature:
+
+  ```dotnetcli
+  dotnet selfsign --force <file>
+  ```
+
+  The command re-signs the file in place, so the next build or publish keeps the new signature. Replacing a signature changes the signed content, so do this only when the existing signature isn't the one the device must verify.
 
 ## See also
 

@@ -46,4 +46,4 @@ Choose one of the following options:
 
 ## Affected APIs
 
-- <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute>
+- <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=fullName>

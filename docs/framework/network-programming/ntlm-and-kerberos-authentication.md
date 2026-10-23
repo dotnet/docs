@@ -1,7 +1,7 @@
 ---
 title: "NTLM and Kerberos Authentication"
 description: Learn how default NTLM authentication and Kerberos authentication work for a .NET Framework application and learn about non-default NTLM authentication.
-ms.date: "03/30/2017"
+ms.date: "10/20/2026"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -22,6 +22,9 @@ helpviewer_keywords:
 ms.assetid: 9ef65560-f596-4469-bcce-f4d5407b55cd
 ---
 # NTLM and Kerberos Authentication
+
+> [!IMPORTANT]
+> NTLM is a legacy authentication protocol and uses cryptographic algorithms that don't meet current recommendations. Use NTLM only when required for compatibility with existing systems. Negotiate prefers Kerberos when available but can fall back to NTLM. To prevent NTLM, request Kerberos explicitly when supported or use a modern authentication protocol.
 
 Default NTLM authentication and Kerberos authentication use the Microsoft Windows user credentials associated with the calling application to attempt authentication with the server. When using non-default NTLM authentication, the application sets the authentication type to NTLM and uses a <xref:System.Net.NetworkCredential> object to pass the user name, password, and domain to the host, as shown in the following example.  
   

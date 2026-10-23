@@ -1,13 +1,17 @@
 ---
 description: "Learn more about: How to: Display LINQ to SQL Commands"
 title: "How to: Display LINQ to SQL Commands"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1decb05e-37ad-4ed6-ab2f-071eb4c4f628
 ---
 # How to: Display LINQ to SQL Commands
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. These examples retain `System.Data.SqlClient` because .NET Framework's built-in LINQ to SQL provider requires it. Changing the connection type alone doesn't migrate LINQ to SQL.
 
 Use <xref:System.Data.Linq.DataContext.GetCommand*> to display SQL commands and other information.
 

@@ -1,7 +1,8 @@
 ---
 title: "Extension member declarations"
 description: "Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface."
-ms.date: 07/08/2026
+ms.date: 10/19/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "extension_CSharpKeyword"
   - "extension"
@@ -17,21 +18,21 @@ The `extension` block specifies the type and receiver for extension members. You
 > [!NOTE]
 > All the examples in this article include XML comments for the members and the extension block. The node on the `extension` block describes the extended type and the receiver parameter. The C# compiler copies this node to the generated member for all members in the extension block. These examples demonstrate the preferred style for generating XML documentation for extension members.
 
-:::code language="csharp" source="./snippets/extensions.cs" id="ExtensionMembers":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="ExtensionMembers":::
 
 The `extension` defines the receiver: `sequence`, which is an `IEnumerable<int>`. The receiver type can be nongeneric, an open generic, or a closed generic type. The name `sequence` is in scope in every instance member declared in that extension. The extension method and property both access `sequence`.
 
 You access any of the extension members as though they were members of the receiver type:
 
-:::code language="csharp" source="./snippets/extensions.cs" id="UseExtensionMethod":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="UseExtensionMethod":::
 
 You can declare any number of members in a single block, as long as they share the same receiver. You can declare as many extension blocks in a single class as well. Different extensions don't need to declare the same type or name of receiver. The extension parameter doesn't need to include the parameter name if the only members are static:
 
-:::code language="csharp" source="./snippets/extensions.cs" id="StaticExtensions":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="StaticExtensions":::
 
 You call static extensions as though they're static members of the receiver type:
 
-:::code language="csharp" source="./snippets/extensions.cs" id="UseStaticExtensions":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="UseStaticExtensions":::
 
 You call operators as though they're user defined operators on the type.
 
@@ -58,7 +59,7 @@ Where you specify the type parameters for an extension member declared in an ext
 
 The following example shows an extension block for `IEnumerable<T>` where two of the extension members require a second type parameter:
 
-:::code language="csharp" source="./snippets/extensions.cs" id="GenericExtension":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="GenericExtension":::
 
 The members `Append` and `Prepend` specify the *extra* type parameter for the conversion. None of the members repeat the type parameter for the receiver.
 
@@ -72,11 +73,40 @@ Starting with C# 15, you can declare *indexers* in an `extension` block. An exte
 
 The following example declares a get-only indexer on `IEnumerable<int>` that returns the element at a specified position:
 
-:::code language="csharp" source="./snippets/extensions.cs" id="ExtensionIndexer":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="ExtensionIndexer":::
 
 You index into the receiver as though the indexer were a member of the receiver type:
 
-:::code language="csharp" source="./snippets/extensions.cs" id="UseExtensionIndexer":::
+:::code language="csharp" source="./snippets/Extensions.cs" id="UseExtensionIndexer":::
+
+### Index and range access
+
+Extension members can also supply the members needed for implicit [`Index` and `Range` access](../operators/member-access-operators.md#index-from-end-operator-). A `Length` or `Count` property and an integer indexer support indexing from the end. A `Slice(int, int)` method supports range access. These members can be instance members, extension members, or a combination of both.
+
+For example, `Readings` wraps an array without declaring indexing members. Its extensions supply `Count`, an integer indexer, and `Slice`:
+
+:::code language="csharp" source="./snippets/Extensions.cs" id="IndexableReadings":::
+
+These members enable ordinary indexing, indexing from the end, ranges, and [list patterns](../operators/patterns.md#list-patterns):
+
+:::code language="csharp" source="./snippets/Extensions.cs" id="UseIndexableReadings":::
+
+### Lookup and restrictions
+
+For indexer lookup, the compiler tries applicable members in this order:
+
+1. An indexer declared on the receiver type.
+2. Implicit index or range access using instance members.
+3. An extension indexer.
+4. Implicit index or range access using extension members.
+
+An earlier applicable form takes precedence over a later one. For example, an instance integer indexer with an instance `Length` property can handle `receiver[^1]` before an extension indexer that directly accepts `Index`.
+
+Extension indexers and related members have the following restrictions:
+
+- Extension indexers aren't used for string or array element access, even if you declare extensions for those types.
+- An expression tree can't contain an extension property or indexer access.
+- Extension `Length` and `Count` properties don't participate in collection-expression spread optimizations.
 
 ## See also
 

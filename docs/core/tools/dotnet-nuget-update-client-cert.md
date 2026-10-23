@@ -73,7 +73,9 @@ Unless you specify `--force`, NuGet checks that it can find and load the certifi
 
 - **`--path <CERTIFICATE_PATH>`**
 
-  The path to the replacement certificate file. Use an absolute path or a path relative to the NuGet configuration file.
+  The path to the replacement certificate file.
+
+  To select a specific file, use an absolute path. For a relative path, NuGet first checks the current working directory. If the file isn't there, NuGet checks the path relative to the directory that contains the NuGet configuration file.
 
 - **`--store-location <LOCATION>`**
 

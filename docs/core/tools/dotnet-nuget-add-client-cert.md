@@ -52,7 +52,7 @@ Unless you specify `--force`, NuGet checks that it can find and load the certifi
 
   The certificate store search method. Defaults to `Thumbprint`. Values are case-insensitive. Use an X.509 find type **without** the `FindBy` prefix. For example, use `SubjectName`, not `FindBySubjectName`.
 
-  Accepted values are `Thumbprint`, `SubjectName`, `SubjectDistinguishedName`, `IssuerName`, `IssuerDistinguishedName`, `SerialNumber`, `TimeValid`, `TimeNotYetValid`, `TimeExpired`, `TemplateName`, `ApplicationPolicy`, `CertificatePolicy`, `Extension`, `KeyUsage`, and `SubjectKeyIdentifier`.
+  Use one of these values: `Thumbprint`, `SubjectName`, `SubjectDistinguishedName`, `IssuerName`, `IssuerDistinguishedName`, `SerialNumber`, `TemplateName`, `ApplicationPolicy`, `CertificatePolicy`, `Extension`, `KeyUsage`, or `SubjectKeyIdentifier`.
 
 - **`--find-value <VALUE>`**
 
@@ -77,7 +77,9 @@ Unless you specify `--force`, NuGet checks that it can find and load the certifi
 
 - **`--path <CERTIFICATE_PATH>`**
 
-  The path to the certificate file. Required for a file configuration. Use an absolute path or a path relative to the NuGet configuration file.
+  The path to the certificate file. Required for a file configuration.
+
+  To select a specific file, use an absolute path. For a relative path, NuGet first checks the current working directory. If the file isn't there, NuGet checks the path relative to the directory that contains the NuGet configuration file.
 
 - **`--store-location <LOCATION>`**
 

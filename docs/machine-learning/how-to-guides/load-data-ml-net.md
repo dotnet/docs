@@ -1,7 +1,7 @@
 ---
 title: Load data from files and other sources
 description: Learn how to load data for processing and training into ML.NET using the API. Data is stored in files, databases, JSON, XML or in-memory collections.
-ms.date: 10/19/2026
+ms.date: 10/23/2026
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: how-to
@@ -153,7 +153,7 @@ string sqlCommand = "SELECT CAST(Size as REAL) as Size, CAST(NumBed as REAL) as 
 DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance, connectionString, sqlCommand);
 ```
 
-The certificate trust exception in this connection string is for local development with LocalDB. For production connections, use a trusted server certificate and set `TrustServerCertificate=False`. LocalDB uses Windows authentication, not Microsoft Entra ID authentication.
+The certificate trust exception in this connection string is for local development with LocalDB. For production connections, use a [trusted server certificate](/sql/database-engine/configure-windows/configure-sql-server-encryption) and set `TrustServerCertificate=False`. LocalDB uses Windows authentication, not Microsoft Entra ID authentication.
 
 Numerical data that's not of type [`Real`](xref:System.Data.SqlDbType) has to be converted to [`Real`](xref:System.Data.SqlDbType). The [`Real`](xref:System.Data.SqlDbType) type is represented as a single-precision floating-point value or [`Single`](xref:System.Single), the input type expected by ML.NET algorithms. In this sample, the `Size` and `NumBed` columns are integers in the database. Using the `CAST` built-in function, it's converted to [`Real`](xref:System.Data.SqlDbType). Because the `Price` property is already of type [`Real`](xref:System.Data.SqlDbType), it's loaded as-is.
 

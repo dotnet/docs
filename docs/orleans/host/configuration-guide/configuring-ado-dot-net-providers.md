@@ -1,7 +1,7 @@
 ---
 title: Configure ADO.NET providers
 description: Learn how to configure ADO.NET providers in .NET Orleans.
-ms.date: 10/19/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 zone_pivot_groups: orleans-version
 ---
@@ -71,7 +71,7 @@ builder.UseOrleansClient(clientBuilder =>
 ```
 
 > [!NOTE]
-> For Orleans 7 and later versions, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and use `Microsoft.Data.SqlClient` for the ADO.NET invariant. The certificate trust exception in these connection strings is for local development with LocalDB. For production connections, use a trusted server certificate and set `TrustServerCertificate=False`.
+> For Orleans 7 and later versions, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and use `Microsoft.Data.SqlClient` for the ADO.NET invariant. The certificate trust exception in these connection strings is for local development with LocalDB. For production connections, use a [trusted server certificate](/sql/database-engine/configure-windows/configure-sql-server-encryption) and set `TrustServerCertificate=False`.
 
 :::zone-end
 
@@ -129,7 +129,7 @@ clientBuilder.UseAdoNetClustering(options =>
 });
 ```
 
-The certificate trust exception in these connection strings is for local development with LocalDB. For production connections, use a trusted server certificate and set `TrustServerCertificate=False`.
+The certificate trust exception in these connection strings is for local development with LocalDB. For production connections, use a [trusted server certificate](/sql/database-engine/configure-windows/configure-sql-server-encryption) and set `TrustServerCertificate=False`.
 
 :::zone-end
 

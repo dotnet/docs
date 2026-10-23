@@ -1,7 +1,8 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 08/14/2026
+ms.date: 10/19/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -300,6 +301,8 @@ You can also nest a subpattern within a slice pattern, as the following example 
 
 For more information, see [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern) in the C# language specification.
 
+Starting with C# 15, extension indexing members can also supply the count and element access needed by a list pattern. For an example, see [Extension indexers](../keywords/extension.md#index-and-range-access).
+
 ## Closed hierarchy patterns
 
 Starting in C# 15, a `switch` expression whose governing type is a [`closed`](../keywords/closed.md) class is *exhaustive* when its arms handle every direct descendant of that class. The compiler doesn't require a default arm because the switch is exhaustive:
@@ -367,23 +370,26 @@ For more information, see the [closed modifier](../keywords/closed.md). For the 
 
 ## Union patterns
 
-Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns generally *unwrap* the union. The pattern applies to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
+C# 15 introduces [union types](../builtin-types/union.md). When you apply a type or declaration pattern to a union expression, the pattern tests the union's contents rather than the union instance. For example, these case types each have a `Name` property, and `Dog` also has a `Breed` property:
 
 ```csharp
 public record class Cat(string Name);
-public record class Dog(string Name);
-public union Pet(Cat, Dog);
-
-string Describe(Pet pet) => pet switch
-{
-    Dog d => d.Name,
-    Cat c => c.Name,
-};
+public record class Dog(string Name, string Breed);
 ```
 
-Three patterns are exceptions: the discard `_` pattern, the `var` pattern, and the `not` pattern apply to the union value itself, not its `Value` property.
+The following `Pet` union exposes its own read-only `Name` property, which delegates to the contained case:
 
-The `null` pattern checks whether the union's `Value` is null. For class-based unions, `null` also succeeds when the union reference itself is null.
+:::code language="csharp" source="../builtin-types/snippets/unions/UnionPatternMatching.cs" id="UnionWithProperty":::
+
+Typed recursive patterns also test the contents: `Dog { Breed: "Labrador" }` reads the contained dog's `Breed`, a property the union doesn't have. In contrast, untyped property and positional patterns and list patterns use members of the union instance. Here, `{ Name: "Rex" }` reads the union's `Name` property, so it matches either a cat or a dog with that name:
+
+:::code language="csharp" source="../builtin-types/snippets/unions/UnionPatternMatching.cs" id="PropertyMatching":::
+
+These rules apply in both `is` and `switch` expressions. The discard `_` pattern matches the incoming union, and a `var` pattern captures it without unwrapping.
+
+The `null` pattern checks whether the union's contents are null. It also succeeds when a class-based union reference or nullable union wrapper is null. The `not` pattern negates its nested pattern, so `pet is not null` tests for non-null contents. An empty untyped property pattern, `pet is { }`, instead tests the union instance: it matches a nonnullable struct union even when its contents are null.
+
+A type pattern must be compatible with at least one case type. For the preceding `Pet` declaration, `pet is Pet` produces compiler error CS8121 rather than testing the union instance. It can succeed for a recursive declaration such as `union Pet(Cat, Dog, Pet)`, because `Pet` is then a case type. Recursive unions make these tests easy to misinterpret: this pattern tests for a contained `Pet`, not the outer instance. Prefer nonrecursive union declarations.
 
 When a union type provides the *non-boxing access pattern*, the compiler calls `TryGetValue` for type-pattern checks and `HasValue` for null-pattern checks, avoiding boxing for value-type cases. Each member applies to its own pattern kind—neither is a fallback for the other. When a member is missing, the compiler checks the `Value` property for that pattern instead.
 

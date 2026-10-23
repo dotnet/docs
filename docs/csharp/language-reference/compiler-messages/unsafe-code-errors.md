@@ -109,7 +109,7 @@ helpviewer_keywords:
  - "CS9396"
  - "CS9397"
  - "CS9398"
-ms.date: 09/11/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in unsafe code constructs
@@ -165,7 +165,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9376**](#unsafe-context-requirements): *An unsafe context is required for constructor 'constructor' marked as '`unsafe`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
 - [**CS9377**](#unsafe-member-safety-contracts): *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
 - [**CS9379**](#unsafe-member-safety-contracts): *Do not use '`RequiresUnsafeAttribute`' in source; use the '`unsafe`' modifier instead.*
-- [**CS9388**](#unsafe-member-safety-contracts): *The '`safe`' modifier may only be used on '`extern`' members that are not marked '`unsafe`'.*
+- [**CS9388**](#unsafe-member-safety-contracts): *The '`safe`' and '`unsafe`' modifiers cannot be used together.*
 - [**CS9389**](#unsafe-member-safety-contracts): *'`extern`' member must be marked '`unsafe`' or '`safe`'.*
 - [**CS9390**](#unsafe-member-safety-contracts): *Both partial member declarations must be marked '`safe`' or neither may be marked '`safe`'*
 - [**CS9392**](#explicit-or-extended-layout-fields): *Field in an explicit or extended layout type must be marked '`unsafe`' or '`safe`'.*
@@ -251,7 +251,7 @@ These diagnostics occur when you use unsafe code constructs without the required
 - Mark operations that involve unsafe constructs (such as pointer dereferencing, address-of, or `sizeof` on unmanaged types) with the `unsafe` keyword (**CS9360**). Under C# 15's updated memory safety rules, the compiler identifies individual operations that require an unsafe context.
 - Use the `unsafe` keyword for `stackalloc` expressions without initializers when the `SkipLocalsInit` attribute is applied (**CS9361**). Without an initializer, the stack-allocated memory contains uninitialized data, which is an unsafe operation.
 - Use an `unsafe` context when calling members marked `unsafe` (**CS9362**), or members with pointers in their signatures (**CS9363**). Under the updated memory safety model, the compiler reports CS9362 for members that explicitly propagate the safety obligation to the caller and CS9363 for legacy compatibility cases where the signature itself contains pointers.
-- Use an `unsafe` context when a `new()` constraint requires calling a constructor marked `unsafe` (**CS9376**). The generic instantiation calls the constructor implicitly, so the calling context must be unsafe.
+- Use an `unsafe` context for an expression where a type argument with a requires-unsafe parameterless constructor must satisfy a `new()` or `struct` constraint (**CS9376**). For a declaration such as a base type or field type, an unsafe constructor can't satisfy the constraint; use a type with a safe parameterless constructor instead.
 - Move `await` outside the body or initializer of a [`fixed` statement](../statements/fixed.md) (**CS9398**). The C# 15 preview allows `await` in an unsafe context, but the pinning lifetime of a `fixed` statement still can't span an async suspension point. Await the operation before entering `fixed`, or exit the `fixed` statement before awaiting.
 
 ## Unsafe member safety contracts
@@ -263,7 +263,7 @@ These diagnostics occur when you use unsafe code constructs without the required
 - **CS9368**: *`RequiresUnsafeAttribute` is only valid under the updated memory safety rules.*
 - **CS9377**: *The '`unsafe`' modifier does not have any effect here under the current memory safety rules.*
 - **CS9379**: *Do not use '`RequiresUnsafeAttribute`' in source; use the '`unsafe`' modifier instead.*
-- **CS9388**: *The '`safe`' modifier may only be used on '`extern`' members that are not marked '`unsafe`'.*
+- **CS9388**: *The '`safe`' and '`unsafe`' modifiers cannot be used together.*
 - **CS9389**: *'`extern`' member must be marked '`unsafe`' or '`safe`'.*
 - **CS9390**: *Both partial member declarations must be marked '`safe`' or neither may be marked '`safe`'*
 - **CS9396**: *Cannot specify '`unsafe`' or '`safe`' modifiers on both property or indexer 'property' and its accessor. Remove one of them.*
@@ -278,7 +278,7 @@ These diagnostics enforce the C# 15 safety contract rules for members marked as 
 - Enable the updated memory safety rules to use `RequiresUnsafeAttribute` (**CS9368**). This attribute is part of C# 15's refined memory safety model and isn't recognized under legacy rules. Ensure your project targets a language version that supports the updated rules.
 - Remove the `unsafe` modifier when it has no effect (**CS9377**). Under the current memory safety rules, certain contexts don't require or benefit from the `unsafe` modifier. The compiler warns when the modifier is meaningless so you can clean up unnecessary annotations.
 - Use the `unsafe` modifier directly on the member declaration instead of applying `RequiresUnsafeAttribute` in source (**CS9379**). The attribute is intended for metadata representation only; in source code, the `unsafe` keyword is the correct mechanism.
-- Apply the `safe` modifier only to `extern` members that aren't already marked `unsafe` (**CS9388**). The `safe` modifier explicitly opts an extern member out of the default unsafe assumption for extern declarations.
+- Choose either `safe` or `unsafe` for a declaration, not both (**CS9388**). The `safe` modifier marks the declaration as not requires-unsafe; it isn't limited to `extern` members.
 - Mark every `extern` member as either `unsafe` or `safe` (**CS9389**). Under the updated memory safety rules, extern members must explicitly declare their safety contract because the compiler can't verify the implementation.
 - Ensure both partial member declarations agree on the `safe` modifier (**CS9390**). If one partial declaration is marked `safe`, the other must also be marked `safe` to maintain a consistent safety contract.
 - Put `unsafe` or `safe` on either the property or indexer, or on an accessor, but not both (**CS9396**). If the property sets the contract for all accessors, place the modifier on the property itself. If only one accessor differs, put the modifier on that accessor and leave the property unmodified.

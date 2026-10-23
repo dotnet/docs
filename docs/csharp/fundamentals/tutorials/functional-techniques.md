@@ -20,7 +20,7 @@ This tutorial is for developers who know basic C# methods, loops, and collection
 ## Start with one label per attendee
 
 1. Create a folder named `BadgeLabels` and a file named `Program.cs` inside it.
-1. Copy the complete source below into `Program.cs` once. Keep this same file for every step and experiment:
+1. Copy the complete source in the following section into `Program.cs`. Use this same file for every step and experiment:
 
    :::code language="csharp" source="snippets/functional-techniques/Program.cs" id="Complete":::
 
@@ -212,7 +212,7 @@ The <xref:System.ArgumentOutOfRangeException.ThrowIfNegativeOrZero*> check repor
 
 ## Calculate a message and name the formatting step
 
-Each role needs a different message. Uncomment `#define BADGE_FORMAT`, leaving `BADGE_SORT` and `BADGE_COPIES` enabled. The same iterator now includes the message calculation:
+Each role needs a different message. Uncomment `#define BADGE_FORMAT`, and leave `BADGE_SORT` and `BADGE_COPIES` enabled. The same iterator now includes the message calculation:
 
 :::code language="csharp" source="snippets/functional-techniques/Program.cs" id="Message":::
 
@@ -236,11 +236,11 @@ The [`nameof` operator](../strings/nameof.md) supplies the parameter name `atten
 
 `FormatLabel` is a *local function*, a named function declared inside another function. Because only `CreateLabels` needs the formatting operation, its placement inside `CreateLabels` limits the helper to the operation that uses it. A private member method on a class would make the helper available to other members of that class. Choose that broader scope if several operations need the same formatting operation. See [Local functions](../building-software/local-functions.md).
 
-The name `FormatLabel` lets you follow the copy loop without reading the formatting details. Keeping the interpolated string directly in `yield return` would also work, as it did in the previous step; the name becomes more useful now that a label includes a role-specific message. The helper's [`=>` expression body](../../language-reference/operators/lambda-operator.md#expression-body-definition) returns the one formatted string.
+The name `FormatLabel` lets you follow the copy loop without reading the formatting details. Keeping the interpolated string directly in `yield return` would also work, as it did in the previous step. The name becomes more useful now that a label includes a role-specific message. The helper's [`=>` expression body](../../language-reference/operators/lambda-operator.md#expression-body-definition) returns the one formatted string.
 
 All formatting inputs arrive through parameters. A non-static local function could *capture*, or use, variables from its surrounding scope. The `static` modifier prevents that capture, so its dependencies stay explicit. See [Parameters and captured state](../building-software/local-functions.md#use-parameters-or-capture-local-state).
 
-Because `CreateLabels` is still an iterator, the role check also runs only when enumeration starts. For this controlled input, those checks belong with label production; the program doesn't promise to validate all attendees before it prints any labels.
+Because `CreateLabels` is still an iterator, the role check also runs only when enumeration starts. For this controlled input, those checks belong with label production. The program doesn't promise to validate all attendees before it prints any labels.
 
 ## Verify the total and run the complete program
 

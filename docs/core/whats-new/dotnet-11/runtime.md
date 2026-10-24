@@ -59,7 +59,7 @@ For more information, see [Minimum hardware requirements updated](../../compatib
 
 ## Runtime Async
 
-.NET 11 introduces runtime-native async (Runtime Async V2), a significant step toward replacing compiler-generated async state machines with runtime-managed suspension and resumption. Instead of the compiler emitting state-machine classes, the runtime itself tracks async execution, producing cleaner stack traces, better debuggability, and lower overhead.
+.NET 11 introduces runtime-native async (Runtime Async V2), a significant step toward replacing compiler-generated async state machines with runtime-managed suspension and resumption. Instead of the compiler emitting state-machine classes, the runtime itself tracks async execution, producing cleaner stack traces, better debuggability, and lower overhead. For detailed conceptual documentation, execution model details, and diagnostic considerations, see [Runtime async](../../../csharp/asynchronous-programming/runtime-async.md).
 
 Runtime Async is a preview feature. To opt in, add the following property to your project file:
 

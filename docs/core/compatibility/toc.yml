@@ -28,6 +28,8 @@ items:
                 href: core-libraries/11/environment-getcommandlineargs-apphost-invocation-name.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: Generated WMI collection and enumerator wrappers implement IDisposable
+                href: core-libraries/11/wmi-wrappers-implement-idisposable.md
               - name: Math.Round and MathF.Round return correctly rounded results
                 href: core-libraries/11/math-round-digits.md
               - name: Named mutexes default to user scope on Unix

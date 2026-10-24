@@ -48,6 +48,7 @@ The articles that follow use comparisons like these to explain when each approac
 
 ## Next steps
 
+- [Tutorial: Combine C# techniques to generate badge labels](../tutorials/functional-techniques.md)
 - [Pass behavior with lambda expressions](lambdas.md)
 - [Organize helper logic with local functions](local-functions.md)
 - [Produce sequences with iterators](iterators.md)

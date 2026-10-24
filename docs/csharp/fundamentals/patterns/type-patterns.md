@@ -44,6 +44,25 @@ Each arm answers a type question and returns the queue that handles that request
 
 Switch arms are considered from top to bottom. Put a specialized class before its base class. Otherwise, the base-class arm can match every instance of the specialized class, which makes the later arm unreachable.
 
+## Exhaustive matching with closed hierarchies
+
+Starting in C# 15 (.NET 11), when the base class is declared with the [`closed`](../../language-reference/keywords/closed.md) modifier, the compiler knows every possible direct subtype within the declaring assembly. If a `switch` expression covers every direct derived type, the pattern match is *exhaustive* and does not require a fallback discard arm (`_`):
+
+```csharp
+public closed class Shape;
+public class Circle(double Radius) : Shape;
+public class Rectangle(double Width, double Height) : Shape;
+
+double CalculateArea(Shape shape) => shape switch
+{
+    Circle c => Math.PI * c.Radius * c.Radius,
+    Rectangle r => r.Width * r.Height
+    // Exhaustive: every direct subtype of Shape is handled
+};
+```
+
+If a new subtype is added to the closed hierarchy in the future, the compiler issues a warning wherever an existing `switch` expression is missing the new case, preventing unhandled runtime cases.
+
 ## Optional: use a type parameter as the tested type
 
 This optional example builds on [generic types and methods](../types/generics.md). A *type parameter* such as `TRequest` is a placeholder for a type that the caller supplies. An incoming-request batch can contain several request types, and the caller supplies `ConfidentialRequest` to test whether any request requires confidential handling. The Boolean result selects confidential handling for the entire batch and produces a visible status message. A type pattern with a type parameter fits because only the existence of a matching request matters, so the matching object doesn't need to be retained.

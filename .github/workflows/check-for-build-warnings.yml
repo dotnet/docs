@@ -1,7 +1,7 @@
 name: 'OPS status checker'
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
 
 permissions:
@@ -12,7 +12,8 @@ jobs:
     name: Look for build warnings
     runs-on: ubuntu-latest
     permissions:
-      statuses: read
+      checks: write
+      statuses: write
       pull-requests: write
     steps:
       - name: Harden Runner

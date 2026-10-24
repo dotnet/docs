@@ -1,7 +1,8 @@
 ---
 title: Task expressions
 description: Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
-ms.date: 05/25/2025
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Task expressions
 
@@ -135,6 +136,16 @@ let someTaskCode (cancellationToken: CancellationToken) =
 
 If you intend to correctly make your code cancelable, carefully check that you pass the cancellation token through to all .NET library operations that support cancellation. For example, `Stream.ReadAsync` has multiple overloads, one of which accepts a cancellation token. If you do not use this overload, that specific asynchronous read operation will not be cancelable.
 
+## Bounded concurrency and result pipelines
+
+To limit how many operations start at once, FSharp.Core 11 provides `Task.parallelLimit`. Pass factories that accept cancellation tokens, rather than tasks that have already started:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Bounded":::
+
+The result array retains input order. A failure requests cancellation of sibling work, and each operation must observe its token. `Task.sequential` runs factories one at a time; `Task.parallelDoLimit` and `Task.sequentialDo` return `unit` instead of an array.
+
+For `Task.map`, `Task.bind`, and `Task.catch` result pipelines and matching Async/ValueTask helpers, see [Async and task functions](async-task-functions.md).
+
 ## Background tasks
 
 By default, .NET tasks are scheduled using <xref:System.Threading.SynchronizationContext.Current*?displayProperty=nameWithType> if present. This allows tasks to serve as cooperative, interleaved agents executing on a user interface thread without blocking the UI. If not present, task continuations are scheduled to the .NET thread pool.
@@ -201,6 +212,40 @@ t.Wait()
 ## Task implementation
 
 Tasks are implemented using Resumable Code, a new feature in F# 6. Tasks are compiled into "Resumable State Machines" by the F# compiler. These are described in detail in [the Resumable code RFC](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md), and in an [F# compiler community session](https://www.youtube.com/watch?v=GYi3ZMF8Pm0).
+
+## Runtime async experiments
+
+Builder authors can experiment with .NET runtime async. A compiler-generated state machine normally stores the state needed to continue after an await. With runtime async, the runtime pauses and resumes a specially marked method instead.
+
+> [!NOTE]
+> This prototype uses an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>` with a compiler containing runtime-async support. It also needs runtime and reference assemblies exposing `MethodImplOptions.Async` and `System.Runtime.CompilerServices.AsyncHelpers.Await`. Reference assemblies describe the APIs at compile time; the running .NET runtime must implement the pause/resume behavior.
+
+The example's verified component combination is:
+
+| Component | Version or requirement |
+|---|---|
+| Compiler | The F# 11 compiler supplied by FSharp.Compiler.Service `43.13.101-rc2.26473.112`. |
+| FSharp.Core | Package `11.0.101-rc2.26473.112`, using `lib/net10.0/FSharp.Core.dll`. This build supplies `StateMachineHelpers.__runtimeAsyncReturn`; the `netstandard2.0` and `netstandard2.1` builds don't. |
+| Project target | `net11.0`. |
+| Runtime and reference assemblies | .NET `11.0.0-rc.1.26425.128`. |
+
+These tested components aren't a single SDK distribution. .NET 10.0.12 exposes the reference APIs, but the pause/resume check fails on its runtime with `TypeLoadException`. Use the verified runtime/reference combination above; neither preview mode nor API presence supplies runtime support.
+
+The following call site uses an application-defined builder to read a file asynchronously:
+
+:::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
+
+The builder connects the computation expression to the runtime-async return intrinsic and await helper. It isn't a new built-in `task` builder:
+
+:::code language="fsharp" source="snippets/task-expressions/RuntimeAsync.fs" id="RuntimeBuilder":::
+
+`__runtimeAsyncReturn` marks the enclosing method for runtime async. Inside that method, `AsyncHelpers.Await` can suspend on unfinished work and return control to the caller, then resume with the result. It isn't a blocking `.Result` call.
+
+The compiler checks supported suspension patterns; byrefs can't remain live across a suspension. The example only defines `Delay`, `Run`, `Return`, and one `Bind` overload, not a production builder with cancellation, loops, or asynchronous disposal.
+
+Enable the F# 11.2 feature where the inline builder is defined and expanded. Callers of an already-compiled `readManifest` API don't need it. Ordinary `task` expressions retain their implementation. Use `AsyncHelpers.Await` only inside runtime-async methods; see the [runtime async specification](https://github.com/dotnet/runtime/blob/main/docs/design/specs/runtime-async.md).
+
+The [complete sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/task-expressions/RuntimeAsync.fsproj) includes a console entry point. From its directory, run `dotnet run -- manifest.txt` with compatible tooling and a file to read. A file containing exactly `manifest`, without a trailing newline, produces `8`. The console entry point blocks for completion; `readManifest` itself returns `Task<int>`.
 
 ## See also
 

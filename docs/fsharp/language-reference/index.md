@@ -2,6 +2,7 @@
 title: Language Guide
 description: A reference guide to F# language features and tools.
 ms.date: 11/04/2021
+ai-usage: ai-assisted
 ---
 # F# Language Reference
 
@@ -39,6 +40,7 @@ The following table shows reference articles that describe language concepts rel
 |[Values](./values/index.md)|Learn about values, which are immutable quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.|
 |[Functions](./functions/index.md)|Functions are the fundamental unit of program execution in any programming language. An F# function has a name, can have parameters and take arguments, and has a body. F# also supports functional programming constructs such as treating functions as values, using unnamed functions in expressions, composition of functions to form new functions, curried functions, and the implicit definition of functions by way of the partial application of function arguments.|
 |[Function Expressions](./functions/lambda-expressions-the-fun-keyword.md)|Learn how to use the F# 'fun' keyword to define a lambda expression, which is an anonymous function.|
+|[Extension members for SRTP constraints](generics/extension-member-constraints.md)|Adapt existing types to generic inline algorithms, extension operators, tuple composition, and output-directed construction; understand compiled-library boundaries.|
 
 ## Loops and Conditionals
 
@@ -114,6 +116,7 @@ The following table shows reference articles that describe record and discrimina
 |Title|Description|
 |-----|-----------|
 |[Records](records.md)|Learn about records. Records represent simple aggregates of named values, optionally with members.|
+|[Record spread operators](record-spreads.md)|Compose record types and values, project fields, and override fields without repeating declarations or assignments.|
 |[Anonymous Records](anonymous-records.md)|Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.|
 |[Discriminated Unions](discriminated-unions.md)|Learn about discriminated unions, which provide support for values that may be one of a variety of named cases, each with possibly different values and types.|
 |[Structs](structs.md)|Learn about structs, which are compact object types that can be more efficient than a class for types that have a small amount of data and simple behavior.|

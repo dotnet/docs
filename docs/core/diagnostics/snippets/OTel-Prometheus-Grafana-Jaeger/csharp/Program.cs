@@ -35,10 +35,10 @@ otel.ConfigureResource(resource => resource
 
 // Add Metrics for ASP.NET Core and our custom metrics and export to Prometheus
 otel.WithMetrics(metrics => metrics
-    // Metrics provider from OpenTelemetry
+    // Metrics provided by OpenTelemetry
     .AddAspNetCoreInstrumentation()
     .AddMeter(greeterMeter.Name)
-    // Metrics provides by ASP.NET Core in .NET 8
+    // Metrics provided by ASP.NET Core in .NET 8
     .AddMeter("Microsoft.AspNetCore.Hosting")
     .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
     // Metrics provided by System.Net libraries

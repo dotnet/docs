@@ -112,6 +112,8 @@ items:
                 href: networking/11/sslstream-aia-downloads-disabled.md
           - name: .NET MAUI
             items:
+              - name: CoreCLR replaces Mono runtime for .NET mobile apps
+                href: maui/11/mobile-runtime-replacement.md
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild

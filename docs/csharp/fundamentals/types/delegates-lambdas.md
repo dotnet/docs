@@ -90,6 +90,8 @@ Events are built on delegates. An event is a delegate field with extra restricti
 
 The .NET convention for event delegate types is <xref:System.EventHandler`1?displayProperty=nameWithType>, where `T` is the type of data included with the notification. Its signature always has two parameters: the `sender` (the object that raised the event) and the event data of type `T`.
 
+:::code language="csharp" source="snippets/delegates-lambdas/Program.cs" ID="MessagePublisher":::
+
 :::code language="csharp" source="snippets/delegates-lambdas/Program.cs" ID="MinimalEventIntro":::
 
 Walking through the code:

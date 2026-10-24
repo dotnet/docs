@@ -114,6 +114,8 @@ items:
             items:
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
+              - name: Mono embedding APIs no longer supported on mobile platforms
+                href: maui/11/mono-embedding-apis.md
           - name: SDK and MSBuild
             items:
               - name: dnx scripts bypass global.json SDK selection

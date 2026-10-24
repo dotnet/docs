@@ -116,6 +116,8 @@ items:
                 href: maui/11/android-minimum-api-level.md
           - name: SDK and MSBuild
             items:
+              - name: .NET SDK skips full build for Native AOT publish
+                href: sdk/11/aot-publish-skips-full-build.md
               - name: dnx scripts bypass global.json SDK selection
                 href: sdk/11/dnx-scripts-bypass-global-json.md
               - name: mono launch target not set for .NET Framework apps

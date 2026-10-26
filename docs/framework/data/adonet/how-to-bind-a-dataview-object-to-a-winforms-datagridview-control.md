@@ -1,7 +1,7 @@
 ---
 description: "Learn how to bind a DataView object to a Windows Forms DataGridView control, which provides a powerful and flexible way to display data in a tabular format."
 title: "How to: Bind a DataView Object to a Windows Forms DataGridView Control"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -14,12 +14,12 @@ The <xref:System.Windows.Forms.DataGridView> control provides a powerful and fle
 
 ## To connect a DataGridView control to a DataView
 
-1. Implement a method to handle the details of retrieving data from a database. The following code example implements a `GetData` method that initializes a <xref:System.Data.SqlClient.SqlDataAdapter> component and uses it to fill a <xref:System.Data.DataSet>. Be sure to set the `connectionString` variable to a value that's appropriate for your database. You will need access to a server with the AdventureWorks SQL Server sample database installed.
+1. Implement a method to handle the details of retrieving data from a database. The following code example implements a `GetData` method that initializes a <xref:Microsoft.Data.SqlClient.SqlDataAdapter> component and uses it to fill a <xref:System.Data.DataSet>. Be sure to set the `connectionString` variable to a value that's appropriate for your database. You will need access to a server with the AdventureWorks SQL Server sample database installed.
 
      [!code-csharp[DP DataViewWinForms Sample#LDVSample1GetData](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/CS/Form1.cs#ldvsample1getdata)]
      [!code-vb[DP DataViewWinForms Sample#LDVSample1GetData](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/VB/Form1.vb#ldvsample1getdata)]
 
-2. In the <xref:System.Windows.Forms.Form.Load> event handler of your form, bind the <xref:System.Windows.Forms.DataGridView> control to the <xref:System.Windows.Forms.BindingSource> component and call the `GetData` method to retrieve the data from the database. The <xref:System.Data.DataView> is created from a LINQ to DataSet query over the Contact <xref:System.Data.DataTable> and is then bound to the <xref:System.Windows.Forms.BindingSource> component.
+2. In the <xref:System.Windows.Forms.Form.Load> event handler of your form, bind the <xref:System.Windows.Forms.DataGridView> control to the <xref:System.Windows.Forms.BindingSource> component and call the `GetData` method to retrieve the data from the database. The <xref:System.Data.DataView> is created from a LINQ to DataSet query over the `Contact` <xref:System.Data.DataTable> and is then bound to the <xref:System.Windows.Forms.BindingSource> component.
 
      [!code-csharp[DP DataViewWinForms Sample#LDVSample1FormLoad](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/CS/Form1.cs#ldvsample1formload)]
      [!code-vb[DP DataViewWinForms Sample#LDVSample1FormLoad](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/VB/Form1.vb#ldvsample1formload)]

@@ -1,24 +1,26 @@
 ---
 title: "Query Notifications in SQL Server"
 description: Learn how to use query notifications to notify applications when data has changed in a SQL Server database, for instance, to refresh application displays.
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
+ai-usage: ai-assisted
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
 ---
 # Query Notifications in SQL Server
 
 Built upon the Service Broker infrastructure, query notifications allow applications to be notified when data has changed. This feature is particularly useful for applications that provide a cache of information from a database, such as a Web application, and need to be notified when the source data is changed.
 
- There are three ways you can implement query notifications using ADO.NET:
+Microsoft.Data.SqlClient provides two classes for query notifications:
 
-1. The low-level implementation is provided by the `SqlNotificationRequest` class that exposes server-side functionality, enabling you to execute a command with a notification request.
+- Use <xref:Microsoft.Data.Sql.SqlNotificationRequest> to execute a command with a notification request and process the Service Broker messages yourself.
 
-2. The high-level implementation is provided by the `SqlDependency` class, which is a class that provides a high-level abstraction of notification functionality between the source application and SQL Server, enabling you to use a dependency to detect changes in the server. In most cases, this is the simplest and most effective way to leverage SQL Server notifications capability by managed client applications using the .NET Framework Data Provider for SQL Server.
+- Use <xref:Microsoft.Data.SqlClient.SqlDependency> to detect changes through the `OnChange` event. Microsoft.Data.SqlClient manages the listener and exposes notification information in the event arguments.
 
-3. In addition, Web applications built using ASP.NET 2.0 or later can use the `SqlCacheDependency` helper classes.
+> [!IMPORTANT]
+> Don't use `System.Data.SqlClient` for new development. Use Microsoft.Data.SqlClient instead. The ASP.NET Framework <xref:System.Web.Caching.SqlCacheDependency> class requires `System.Data.SqlClient` and doesn't integrate with Microsoft.Data.SqlClient. For new Microsoft.Data.SqlClient applications, subscribe to `SqlDependency.OnChange` and invalidate entries through your application's cache API.
 
- Query notifications are used for applications that need to refresh displays or caches in response to changes in underlying data. Microsoft SQL Server allows .NET Framework applications to send a command to SQL Server and request notification if executing the same command would produce result sets different from those initially retrieved. Notifications generated at the server are sent through queues to be processed later.
+ Query notifications are used for applications that need to refresh displays or caches in response to changes in underlying data. SQL Server allows .NET applications to send a command and request notification if the same command would produce result sets different from those initially retrieved. Notifications generated at the server are sent through queues to be processed later.
 
- You can set up notifications for SELECT and EXECUTE statements. When using an EXECUTE statement, SQL Server registers a notification for the command executed rather than the EXECUTE statement itself. The command must meet the requirements and limitations for a SELECT statement. When a command that registers a notification contains more than one statement, the Database Engine creates a notification for each statement in the batch.
+ You can set up notifications for `SELECT` and `EXECUTE` statements. When using an `EXECUTE` statement, SQL Server registers a notification for the command executed rather than the `EXECUTE` statement itself. The command must meet the requirements and limitations for a `SELECT` statement. When a command that registers a notification contains more than one statement, the Database Engine creates a notification for each statement in the batch.
 
  If you are developing an application where you need reliable sub-second notifications when data changes, review the sections **Planning an Efficient Query Notifications Strategy** and **Alternatives to Query Notifications** in the [Planning for Notifications](/previous-versions/sql/sql-server-2008-r2/ms187528(v=sql.105)) article. For more information about Query Notifications and SQL Server Service Broker, see the following links to articles in the SQL Server documentation.
 
@@ -43,18 +45,18 @@ Built upon the Service Broker infrastructure, query notifications allow applicat
  Demonstrates how to detect when query results will be different from those originally received.
 
  [SqlCommand Execution with a SqlNotificationRequest](sqlcommand-execution-with-a-sqlnotificationrequest.md)
- Demonstrates configuring a <xref:System.Data.SqlClient.SqlCommand> object to work with a query notification.
+ Demonstrates how to configure the <xref:Microsoft.Data.SqlClient.SqlCommand> object for a query notification.
 
 ## Reference
 
- <xref:System.Data.Sql.SqlNotificationRequest>
- Describes the <xref:System.Data.Sql.SqlNotificationRequest> class and all of its members.
+ <xref:Microsoft.Data.Sql.SqlNotificationRequest>
+ Describes the <xref:Microsoft.Data.Sql.SqlNotificationRequest> class and all of its members.
 
- <xref:System.Data.SqlClient.SqlDependency>
- Describes the <xref:System.Data.SqlClient.SqlDependency> class and all of its members.
+ <xref:Microsoft.Data.SqlClient.SqlDependency>
+ Describes the <xref:Microsoft.Data.SqlClient.SqlDependency> class and all of its members.
 
  <xref:System.Web.Caching.SqlCacheDependency>
- Describes the <xref:System.Web.Caching.SqlCacheDependency> class and all of its members.
+ Describes the ASP.NET Framework cache dependency class for System.Data.SqlClient. It doesn't wrap Microsoft.Data.SqlClient dependencies.
 
 ## See also
 

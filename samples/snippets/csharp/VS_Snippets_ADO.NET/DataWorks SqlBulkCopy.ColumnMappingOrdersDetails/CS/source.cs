@@ -1,6 +1,6 @@
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 static class Program
 {
@@ -87,7 +87,7 @@ static class Program
 
                 // Create the SqlBulkCopy object.
                 using (SqlBulkCopy bulkCopy =
-                           new(connectionString))
+                           new(connectionString, SqlBulkCopyOptions.KeepIdentity))
                 {
                     bulkCopy.DestinationTableName =
                         "dbo.BulkCopyDemoOrderHeader";

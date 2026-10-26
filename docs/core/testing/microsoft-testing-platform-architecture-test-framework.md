@@ -169,6 +169,8 @@ For a comprehensive list of information that can be published to the testing pla
 
 `CancellationToken`: This token is utilized to interrupt the processing of a particular request.
 
+To stop scheduling new tests without canceling result publication or cleanup, implement [`IGracefulStopTestExecutionCapability`](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability). This separate capability supports features such as `--maximum-failed-tests`.
+
 `Complete()`: As depicted in the previous sequence, the `Complete` method notifies the platform that the request has been successfully processed and all relevant information has been transmitted to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service).
 
 > [!WARNING]

@@ -1,7 +1,7 @@
 ---
-title: Grain directory
+title: Grain Directory
 description: Learn about the grain directory in .NET Orleans.
-ms.date: 01/22/2026
+ms.date: 10/19/2026
 ms.topic: concept-article
 ms.custom: sfi-ropc-nochange
 zone_pivot_groups: orleans-version
@@ -101,6 +101,12 @@ Install the NuGet package:
 dotnet add package Microsoft.Orleans.GrainDirectory.AdoNet
 ```
 
+For SQL Server, also install the `Microsoft.Data.SqlClient` NuGet package:
+
+```dotnetcli
+dotnet add package Microsoft.Data.SqlClient
+```
+
 ### Configuration
 
 Configure the ADO.NET grain directory as the default or as a named directory:
@@ -109,7 +115,7 @@ Configure the ADO.NET grain directory as the default or as a named directory:
 // Use as the default grain directory
 builder.UseAdoNetGrainDirectoryAsDefault(options =>
 {
-    options.Invariant = "System.Data.SqlClient"; // or "Npgsql", "MySql.Data.MySqlClient"
+    options.Invariant = "Microsoft.Data.SqlClient"; // or "Npgsql", "MySql.Data.MySqlClient"
     options.ConnectionString = "Server=localhost;Database=Orleans;...";
 });
 
@@ -125,7 +131,7 @@ builder.AddAdoNetGrainDirectory("MyAdoNetDirectory", options =>
 
 | Option | Type | Description |
 |--------|------|-------------|
-| `Invariant` | `string` | **Required.** The ADO.NET provider invariant name (e.g., `System.Data.SqlClient`, `Npgsql`, `MySql.Data.MySqlClient`). |
+| `Invariant` | `string` | **Required.** The ADO.NET provider invariant name (for example, `Microsoft.Data.SqlClient`, `Npgsql`, or `MySql.Data.MySqlClient`). |
 | `ConnectionString` | `string` | **Required.** The database connection string. This value is redacted in logs. |
 
 ### Database setup

@@ -2,12 +2,13 @@
 description: "Learn more about: SQL Server Data Types and ADO.NET"
 title: "SQL Server Data Types and ADO.NET"
 titleSuffix: ""
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
+ai-usage: ai-assisted
 ms.assetid: 81b43550-23e8-43bb-b460-7eb8ac825c33
 ---
 # SQL Server Data Types and ADO.NET
 
-SQL Server and the .NET Framework are based on different type systems, which can result in potential data loss. To preserve data integrity, the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>) provides typed accessor methods for working with SQL Server data. You can use the enumerations in the <xref:System.Data.SqlDbType> classes to specify <xref:System.Data.SqlClient.SqlParameter> data types.  
+SQL Server and .NET use different type systems, which can result in potential data loss. To preserve data integrity, <xref:Microsoft.Data.SqlClient> provides typed accessor methods for SQL Server data. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package for client applications. Use the <xref:System.Data.SqlDbType> enumeration to specify <xref:Microsoft.Data.SqlClient.SqlParameter> data types. Common SQL value types such as `SqlString` and `SqlDecimal` remain in <xref:System.Data.SqlTypes>.
   
  For more information and a table that describes the data type mappings between SQL Server and .NET Framework data types, see [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md).  
   
@@ -24,7 +25,7 @@ SQL Server and the .NET Framework are based on different type systems, which can
  Demonstrates how to work with null values and three-valued logic.  
   
  [Comparing GUID and uniqueidentifier Values](comparing-guid-and-uniqueidentifier-values.md)  
- Demonstrates how to work with GUID and uniqueidentifier values in SQL Server and the .NET Framework.  
+ Demonstrates how to work with GUID and `uniqueidentifier` values in SQL Server and the .NET Framework.
   
  [Date and Time Data](date-and-time-data.md)  
  Describes how to use the new date and time data types introduced in SQL Server 2008.  

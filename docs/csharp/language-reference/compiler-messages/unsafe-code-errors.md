@@ -55,6 +55,7 @@ f1_keywords:
  - "CS9396"
  - "CS9397"
  - "CS9398"
+ - "CS9401"
 helpviewer_keywords:
  - "CS0193"
  - "CS0196"
@@ -109,7 +110,8 @@ helpviewer_keywords:
  - "CS9396"
  - "CS9397"
  - "CS9398"
-ms.date: 10/19/2026
+ - "CS9401"
+ms.date: 10/20/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in unsafe code constructs
@@ -168,10 +170,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9388**](#unsafe-member-safety-contracts): *The '`safe`' and '`unsafe`' modifiers cannot be used together.*
 - [**CS9389**](#unsafe-member-safety-contracts): *'`extern`' member must be marked '`unsafe`' or '`safe`'.*
 - [**CS9390**](#unsafe-member-safety-contracts): *Both partial member declarations must be marked '`safe`' or neither may be marked '`safe`'*
-- [**CS9392**](#explicit-or-extended-layout-fields): *Field in an explicit or extended layout type must be marked '`unsafe`' or '`safe`'.*
+- [**CS9392**](#field-layout-safety): *Field in a type with explicit or extended layout, nonzero packing size, or nonzero size must be marked '`unsafe`' or '`safe`'.*
 - [**CS9396**](#unsafe-member-safety-contracts): *Cannot specify '`unsafe`' or '`safe`' modifiers on both property or indexer 'property' and its accessor. Remove one of them.*
 - [**CS9397**](#unsafe-member-safety-contracts): *Cannot specify the same '`unsafe`' or '`safe`' modifier on all accessors of property or indexer 'property'. Instead, put that modifier on the property itself.*
 - [**CS9398**](#unsafe-context-requirements): *Cannot await in context of a '`fixed`' statement*
+- [**CS9401**](#unsafe-context-requirements): *Unsafe or safe declaration modifiers may only appear if compiling with /unsafe.*
 
 ## Pointer operations and dereferencing
 
@@ -239,11 +242,13 @@ To use the `fixed` statement correctly:
 - **CS9363**: *'member' must be used in an unsafe context because it has pointers in its signature*
 - **CS9376**: *An unsafe context is required for constructor 'constructor' marked as '`unsafe`' to satisfy the '`new()`' constraint of type parameter 'type parameter' in 'generic type or method'*
 - **CS9398**: *Cannot await in context of a '`fixed`' statement*
+- **CS9401**: *Unsafe or safe declaration modifiers may only appear if compiling with /unsafe.*
 
 These diagnostics occur when you use unsafe code constructs without the required `unsafe` context, or when you attempt operations that aren't allowed with unsafe types. For more information, see [Unsafe code and pointers](../unsafe-code.md) and the [`unsafe` keyword](../keywords/unsafe.md).
 
 - Mark methods, types, or code blocks that use pointers or fixed-size buffers with the `unsafe` keyword (**CS0214**). The compiler requires an explicit unsafe context for any code that works with pointer types or fixed-size buffer fields.
 - Enable the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option in your project settings (**CS0227**). Without this option, the compiler rejects all `unsafe` blocks even if the code is otherwise correct.
+- Enable **AllowUnsafeBlocks** for `unsafe` and `safe` declaration modifiers (**CS9401**). Set `<AllowUnsafeBlocks>true</AllowUnsafeBlocks>` in your project file even if the declaration's body contains no unsafe operation or you haven't enabled the updated memory safety rules. Enable the same option for an `unsafe` block that produces **CS0227**.
 - Don't use the [`is`](../operators/type-testing-and-cast.md#the-is-operator) or [`as`](../operators/type-testing-and-cast.md#the-as-operator) operators with pointer types (**CS0244**). These type-testing operators aren't valid for pointers because pointers don't participate in the type hierarchy.
 - Don't use the `new` operator to create pointer type instances (**CS1919**). To create objects in unmanaged memory, use interop to call native methods that return pointers.
 - Treat **CS4004** as legacy guidance. In C# 14 and earlier, `await` inside an unsafe context isn't allowed. Under the C# 15 preview memory safety changes, `await` is allowed in an unsafe context, so this blanket restriction no longer describes the current rule.
@@ -251,8 +256,10 @@ These diagnostics occur when you use unsafe code constructs without the required
 - Mark operations that involve unsafe constructs (such as pointer dereferencing, address-of, or `sizeof` on unmanaged types) with the `unsafe` keyword (**CS9360**). Under C# 15's updated memory safety rules, the compiler identifies individual operations that require an unsafe context.
 - Use the `unsafe` keyword for `stackalloc` expressions without initializers when the `SkipLocalsInit` attribute is applied (**CS9361**). Without an initializer, the stack-allocated memory contains uninitialized data, which is an unsafe operation.
 - Use an `unsafe` context when calling members marked `unsafe` (**CS9362**), or members with pointers in their signatures (**CS9363**). Under the updated memory safety model, the compiler reports CS9362 for members that explicitly propagate the safety obligation to the caller and CS9363 for legacy compatibility cases where the signature itself contains pointers.
-- Use an `unsafe` context for an expression where a type argument with a requires-unsafe parameterless constructor must satisfy a `new()` or `struct` constraint (**CS9376**). For a declaration such as a base type or field type, an unsafe constructor can't satisfy the constraint; use a type with a safe parameterless constructor instead.
+- Use an `unsafe` context for generic type or method instantiations when a type argument's parameterless constructor is marked `unsafe` (**CS9376**). Apply this fix for both `new()` and `struct` constraints, even if no constructor call appears at the use site. Check type arguments on extension blocks and generic extension methods as well.
 - Move `await` outside the body or initializer of a [`fixed` statement](../statements/fixed.md) (**CS9398**). The C# 15 preview allows `await` in an unsafe context, but the pinning lifetime of a `fixed` statement still can't span an async suspension point. Await the operation before entering `fixed`, or exit the `fixed` statement before awaiting.
+
+For **CS9376** in an expression, put the generic method call, generic object creation, or extension-member access inside an `unsafe` block. For a generic base type, field type, or `using` alias, fix the declaration itself; don't wrap a later use or rely on an `unsafe` member modifier, which propagates an obligation to callers rather than establishing an unsafe context. For a declaration that can't provide the required context, use a type with a safe parameterless constructor or redesign the generic API, for example to accept a factory instead of requiring `new()`.
 
 ## Unsafe member safety contracts
 
@@ -284,13 +291,19 @@ These diagnostics enforce the C# 15 safety contract rules for members marked as 
 - Put `unsafe` or `safe` on either the property or indexer, or on an accessor, but not both (**CS9396**). If the property sets the contract for all accessors, place the modifier on the property itself. If only one accessor differs, put the modifier on that accessor and leave the property unmodified.
 - If every accessor of a property or indexer would have the same `unsafe` or `safe` modifier, move that modifier to the property or indexer declaration (**CS9397**). Use accessor modifiers only when the accessors intentionally differ.
 
-## Explicit or extended layout fields
+## Field layout safety
 
-- **CS9392**: *Field in an explicit or extended layout type must be marked '`unsafe`' or '`safe`'.*
+- **CS9392**: *Field in a type with explicit or extended layout, nonzero packing size, or nonzero size must be marked '`unsafe`' or '`safe`'.*
 
-This diagnostic occurs under the updated memory safety model when an instance field participates in explicit or extended layout and the declaration doesn't say whether the field is `unsafe` or `safe`. For more information, see [Unsafe code and pointers](../unsafe-code.md#the-updated-memory-safety-model-preview) and the [`safe` keyword](../keywords/safe.md).
+Under the updated memory safety rules, mark every instance field in a type with `[StructLayout(LayoutKind.Explicit)]` or `[ExtendedLayout]` as either `safe` or `unsafe`. Apply the same modifiers to instance fields in types whose `StructLayoutAttribute` specifies a nonzero `Pack` or `Size`, even with `LayoutKind.Sequential` or `LayoutKind.Auto`. For example, `[StructLayout(LayoutKind.Sequential, Pack = 1)]` requires an explicit safety choice for each instance field.
 
-- Mark every instance field in a type with `[StructLayout(LayoutKind.Explicit)]` or `[ExtendedLayout]` as either `unsafe` or `safe` (**CS9392**). If the field is synthesized for an auto-property, field-backed property, primary-constructor parameter, or field-like event, put the modifier on the property, parameter, or event that owns that generated field.
+Choose `safe` when you can attest that ordinary field access preserves the required invariants. Choose `unsafe` when callers must audit those invariants. For more information, see [Unsafe code and pointers](../unsafe-code.md#the-updated-memory-safety-model-preview) and the [`safe` keyword](../keywords/safe.md).
+
+- For an auto-property, a property that uses `field`, or a field-like event, put the modifier on the owning property or event to cover its synthesized backing field.
+- If a captured primary-constructor parameter or a positional record member introduces unannotated storage, replace the implicit storage with an explicitly declared, annotated field or property. A primary-constructor parameter isn't a place to put a `safe` or `unsafe` field modifier.
+- If the field doesn't need per-instance storage, change it to a static field or a constant to remove the error. Alternatively, use a computed property or custom event with no backing field.
+- Unspecified or zero `Pack` and `Size` values don't trigger the expanded rule by themselves. Explicit or extended layout still requires annotations independently of those values.
+- These checks require the [updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules). Merely setting `LangVersion` to `preview` doesn't enable their enforcement.
 
 ## Fixed-size buffers
 

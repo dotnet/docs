@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# uses an unsafe context for operations that access unmanaged memory or invoke function pointers (unmanaged delegates).
-ms.date: 10/19/2026
+ms.date: 10/20/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "functionPointer_CSharpKeyword"
@@ -46,7 +46,7 @@ The following table compares which operations require an `unsafe` context in eac
 | Element access on a fixed-size buffer                                          | Requires `unsafe`     | Requires `unsafe`    |
 | Call a member marked `unsafe`                                                  | No caller requirement | Requires `unsafe`    |
 
-To try the preview syntax and pointer relaxations, use the .NET 11 SDK (in preview) and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. To also enable the updated rules, including caller obligations, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules).
+To enable the preview syntax and pointer relaxations, use the .NET 11 SDK and set the [`LangVersion`](compiler-options/language.md#langversion) compiler option to `preview`. To also enable the updated rules, including caller obligations, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 ## The original unsafe model
 
@@ -215,7 +215,7 @@ This example accesses the elements of both arrays by using indices rather than a
 ## The updated memory safety model (preview)
 
 > [!IMPORTANT]
-> The updated memory safety model is a preview feature in C# 15 and .NET 11. It continues to evolve based on feedback during the preview releases. For activation instructions, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
+> The updated memory safety model is a preview feature in C# 15 and .NET 11. For activation instructions, see [Enable the updated memory safety rules](compiler-options/language.md#enable-the-updated-memory-safety-rules). For the full design, see the [memory safety feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 
 The updated model separates two things the original model treats as one: the *existence* of pointer code and the *propagation* of safety obligations to callers. Marking a member `unsafe` no longer just permits pointers in its body; it makes the member *requires-unsafe*, so every caller must either propagate that obligation or discharge it behind a validated, safe-callable boundary. To support that separation, the model also narrows the unsafe context: the existence of a pointer isn't unsafe, only the operations that access memory the runtime doesn't manage. The narrowing lets you hold, pass, and return pointers in safe code, while `unsafe` marks the operations and members that can actually violate memory safety.
 
@@ -255,7 +255,7 @@ The updated model also tightens a few related rules:
 
 - The `unsafe` modifier produces an error on a type declaration, a static constructor, and a finalizer, because the modifier has no caller to inform.
 - Delegates can't be `unsafe`, because a delegate is type-shaped.
-- A type whose parameterless constructor is `unsafe` can't satisfy a `new()` or `struct` constraint in a declaration, such as a base type or field type. In an expression, it can satisfy the constraint inside an unsafe context, for example `unsafe { var box = new Box<NativeResource>(); }` when `Box<T>` has a `new()` constraint and `NativeResource` has a requires-unsafe constructor.
+- A type whose parameterless constructor is `unsafe` can't satisfy a `new()` or `struct` constraint in a declaration, such as a base type or field type. In an expression, it can satisfy the constraint inside an unsafe context, for example `unsafe { var box = new Box<NativeResource>(); }` when `Box<T>` has a `new()` constraint and `NativeResource` has a requires-unsafe constructor. This check applies to generic type and method instantiations, including extension-block and extension-method type arguments. An unsafe block can satisfy the requirement at an expression use, but it doesn't fix an invalid base-type, field-type, or alias declaration elsewhere. For declaration-specific fixes, see [CS9376](compiler-messages/unsafe-code-errors.md#unsafe-context-requirements).
 
 ### Operations that require an unsafe context
 
@@ -361,7 +361,7 @@ public static unsafe byte ReadByte(IntPtr ptr, int offset)
 }
 ```
 
-The `/// <safety>` block tells you the contract.The contract belongs in the documentation where every caller and reviewer sees it.
+The `/// <safety>` block tells you the contract. The contract belongs in the documentation where every caller and reviewer sees it.
 
 ### Unsafe fields
 
@@ -393,13 +393,17 @@ public class NativeBuffer
 }
 ```
 
-A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*. In a type with explicit or extended layout — that is, marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute> — you mark every field either `safe` or `unsafe`.
+A `readonly unsafe` field pairs the contract with a built-in guard: `unsafe` names the invariant, and `readonly` prevents a write that could break it after construction. Marking a property or an event `unsafe` doesn't make its backing field *requires-unsafe*.
+
+Under the updated rules, mark every instance field in a type with explicit or extended layout either `safe` or `unsafe`. These types are marked with <xref:System.Runtime.InteropServices.StructLayoutAttribute> set to `LayoutKind.Explicit`, or with <xref:System.Runtime.InteropServices.ExtendedLayoutAttribute>. Apply the same modifiers to instance fields in types with nonzero `StructLayoutAttribute.Pack` or `StructLayoutAttribute.Size`, even with sequential or auto layout. Unspecified or zero values don't trigger the additional requirement by themselves. Static and constant fields are exempt. Annotate the owning property or event for synthesized backing fields.
+
+For the diagnostic and fixes for implicitly generated storage, see [CS9392: Field layout safety](compiler-messages/unsafe-code-errors.md#field-layout-safety).
 
 ### The safe keyword
 
 The updated model adds a [`safe`](keywords/safe.md) contextual keyword that attests a declaration is sound where the compiler requires you to make the choice explicit.
 
-Ordinary declarations are safe by default, so they don't require a `safe` modifier. Because `unsafe` code should be rare, most codebases use `safe` only where the default would otherwise be unsafe or the compiler requires an explicit choice. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration.
+Ordinary declarations are safe by default, so they don't require a `safe` modifier. Because `unsafe` code should be rare, most codebases use `safe` only where the default would otherwise be unsafe or the compiler requires an explicit choice. The modifier marks a declaration as not requires-unsafe; it doesn't establish a safe lexical context or cancel an enclosing unsafe context. You can't combine `safe` and `unsafe` on the same declaration. In newer compilers, both `unsafe` and `safe` declaration modifiers require the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) option, independently of the updated-rules enforcement opt-in. Without it, declaration modifiers produce **CS9401**, while unsafe blocks continue to produce **CS0227**. Roslyn documents the modifier check as introduced in Visual Studio 2026 version 18.13, after .NET 11.0.100. The .NET 11 compiler doesn't require this option for `safe` and uses CS0227 for `unsafe` declaration modifiers. See [Unsafe context requirements](compiler-messages/unsafe-code-errors.md#unsafe-context-requirements) for details. The memory safety model itself remains a preview feature.
 
 An `extern` member calls into native code, so the compiler can't classify its safety. Under the updated model, you mark every `extern` declaration, including a `LibraryImport` partial method, either `safe` or `unsafe`:
 

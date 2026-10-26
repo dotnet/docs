@@ -3,7 +3,7 @@ Option Strict On
 
 Imports System.Data
 ' <Snippet1>
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
     Sub Main()
@@ -91,7 +91,7 @@ Module Module1
 
                 ' Create the SqlBulkCopy object.
                 Using bulkCopy As SqlBulkCopy = _
-                  New SqlBulkCopy(connectionString)
+                  New SqlBulkCopy(connectionString, SqlBulkCopyOptions.KeepIdentity)
                     bulkCopy.DestinationTableName = "dbo.BulkCopyDemoOrderHeader"
 
                     ' Guarantee that columns are mapped correctly by

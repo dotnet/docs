@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.Common
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Globalization
 Imports System.Reflection
 Imports System.Runtime.CompilerServices
@@ -328,7 +328,7 @@ Module Module1
 
         Public Property Id() As Int32
             Get
-                Return Id
+                Return _Id
             End Get
             Set(ByVal value As Int32)
                 _Id = value
@@ -525,7 +525,7 @@ Public Class ObjectShredder(Of T)
 
                 ' Add the field as a column in the table if it doesn't exist
                 ' already.
-                dc = IIf(table.Columns.Contains(f.Name), table.Columns.Item(f.Name), table.Columns.Add(f.Name, f.FieldType))
+                dc = If(table.Columns.Contains(f.Name), table.Columns.Item(f.Name), table.Columns.Add(f.Name, f.FieldType))
 
                 ' Add the field to the ordinal map.
                 Me._ordinalMap.Add(f.Name, dc.Ordinal)
@@ -538,7 +538,7 @@ Public Class ObjectShredder(Of T)
                 ' Add the property as a column in the table if it doesn't exist
                 ' already.
                 Dim dc As DataColumn
-                dc = IIf(table.Columns.Contains(p.Name), table.Columns.Item(p.Name), table.Columns.Add(p.Name, p.PropertyType))
+                dc = If(table.Columns.Contains(p.Name), table.Columns.Item(p.Name), table.Columns.Add(p.Name, p.PropertyType))
 
                 ' Add the property to the ordinal map.
                 Me._ordinalMap.Add(p.Name, dc.Ordinal)

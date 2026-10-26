@@ -2,7 +2,6 @@
 Option Strict On
 
 Imports System.Data
-Imports System.Data.SqlClient
 Imports System.Data.SqlTypes
 
 Module Module1
@@ -56,4 +55,3 @@ Module Module1
     End Sub
     ' </Snippet1>
 End Module
-

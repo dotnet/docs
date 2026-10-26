@@ -1,25 +1,26 @@
 ---
 title: What's new in C# 15
-description: "Discover what's new in C# 15, including features such as union types, the closed modifier, extension indexers, and pointer relaxations. Try examples in your code."
-ms.date: 09/11/2026
+description: "Discover what's new in C# 15, including union types, closed hierarchies, extension indexers, collection expression arguments, and static interface compatibility."
+ms.date: 10/19/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
 ---
 # What's new in C# 15
 
-C# 15 includes the following new features. Try these features by using the latest [Visual Studio 2026](https://visualstudio.microsoft.com/) insiders version or the [.NET 11 preview SDK](https://dotnet.microsoft.com/download/dotnet):
+C# 15 includes the following new features. Try these features by using the [.NET 11 SDK](https://dotnet.microsoft.com/download/dotnet/11.0) or a compatible version of [Visual Studio 2026](https://visualstudio.microsoft.com/):
 
 - [Collection expression arguments](#collection-expression-arguments)
 - [Union types](#union-types)
 - [Closed hierarchies](#closed-hierarchies)
 - [Extension indexers](#extension-indexers)
 - [Labeled `break` and `continue`](#labeled-break-and-continue)
-- [Memory safety](#memory-safety)
+- [Non-virtual static interface members on older runtimes](#non-virtual-static-interface-members-on-older-runtimes)
+- [Memory safety (preview feature)](#memory-safety)
 
-C# 15 is the latest C# preview release. .NET 11 preview versions support C# 15. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+C# 15 is the default language version for projects that target `net11.0` in the .NET 11 SDK. Except for memory safety, these features don't require `<LangVersion>preview</LangVersion>`. The .NET 11 SDK is still prerelease. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download the latest .NET 11 preview SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2026 insiders](https://visualstudio.microsoft.com/vs/), which includes the .NET 11 preview SDK.
+You can also try the [memory safety preview feature](#memory-safety). Enable the preview language version for the syntax and pointer relaxations, and the `updated-memory-safety-rules` feature flag for the updated safety rules.
 
 The "What's new in C#" page adds new features when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
 
@@ -29,7 +30,7 @@ You can find any breaking changes introduced in C# 15 in our article on [breakin
 
 ## Collection expression arguments
 
-You can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
+Use a `with(...)` element as the first element in a collection expression to pass arguments to the underlying collection's constructor or factory method. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax.
 
 The following example shows how to pass a capacity argument to a `List<T>` constructor and a comparer to a `HashSet<T>`:
 
@@ -70,8 +71,6 @@ string name = pet switch
     Bird b => b.Name,
 };
 ```
-
-The runtime includes the `UnionAttribute` and `IUnion` types beginning with .NET 11 Preview 5. Some features from the [proposal specification](~/_csharplang/proposals/csharp-15.0/unions.md) aren't yet implemented. Those features are coming in future previews.
 
 For more information, see [Union types](../language-reference/builtin-types/union.md) in the language reference or the [feature specification](~/_csharplang/proposals/csharp-15.0/unions.md).
 
@@ -155,9 +154,24 @@ The [IDE0410](../../fundamentals/code-analysis/style-rules/ide0410.md) style rul
 
 For more information, see [Jump statements](../language-reference/statements/jump-statements.md) in the language reference or the [feature specification](~/_csharplang/proposals/csharp-15.0/labeled-break-continue.md).
 
+## Non-virtual static interface members on older runtimes
+
+Starting in C# 15, you can declare and use non-virtual static interface members even when the target runtime doesn't support default interface implementations. For example, an interface can provide a static helper method without requiring an implementation from each implementing type:
+
+```csharp
+public interface IMeasurement
+{
+    public static double ToMeters(double centimeters) => centimeters / 100;
+}
+```
+
+Call this helper directly on the interface, for example, `IMeasurement.ToMeters(250)`. Instance default implementations, `static abstract` and `static virtual` members, and protected interface members still require runtime support.
+
+For more information, see [Static interface members and runtime support](../language-reference/keywords/interface.md#static-interface-members-and-runtime-support).
+
 ## Memory safety
 
-C# 15 begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
+The .NET 11 SDK includes a memory safety preview feature that begins a multirelease effort to redefine memory safety in the language. The goal is to tie the `unsafe` context to the operations that actually access unmanaged memory, rather than to the existence of pointer types. Most memory safety vulnerabilities come from these access operations, so the language makes them stand out for reviewers and auditors.
 
 When you enable the updated rules, `unsafe` on a member marks it as *requires-unsafe*: the audit obligation flows to the caller, who must use the member from an `unsafe` context. The compiler records the assembly's use of the updated rules with the `System.Runtime.CompilerServices.MemorySafetyRulesAttribute` attribute. The model also adds a `safe` contextual keyword that marks `extern` members and fields in explicit or extended layout types as safe. Together, these rules make the boundaries of potential memory unsafety explicit across a program.
 
@@ -202,7 +216,7 @@ class Header
 
 Like the rest of the memory safety preview, `unsafe` expressions require the `preview` language version and the `AllowUnsafeBlocks` compiler option.
 
-The compiler also recognizes the `safe` contextual keyword as a modifier on `extern` members and fields in explicit or extended layout types. Set `LangVersion` to `preview` to enable the new syntax and pointer relaxations. To also enable the updated rules, including *requires-unsafe* caller obligations, enable the `updated-memory-safety-rules` compiler feature. For project and file-based program syntax, see [Enable the updated memory safety rules](../language-reference/compiler-options/language.md#enable-the-updated-memory-safety-rules).
+The compiler also recognizes the `safe` contextual keyword on declarations that can carry a safety contract, including `extern` members and fields in explicit or extended layout types. Set `LangVersion` to `preview` to enable the new syntax and pointer relaxations. To also enable the updated rules, including *requires-unsafe* caller obligations, enable the `updated-memory-safety-rules` compiler feature. For project and file-based program syntax, see [Enable the updated memory safety rules](../language-reference/compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 For more information, see [Unsafe code, pointer types, and function pointers](../language-reference/unsafe-code.md#the-updated-memory-safety-model-preview) in the language reference or the [feature specification](~/_csharplang/proposals/unsafe-evolution.md).
 

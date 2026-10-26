@@ -297,6 +297,6 @@ You can make your app a little more interesting by having it make HTTP calls to 
 
    :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_SendNestedGreeting":::
 
-This results in a more interesting graph with a pyramid shape for the requests, as each level waits for the response from the previous call.
+Send a request to `/NestedGreeting?nestlevel=5`. This results in a more interesting graph with a pyramid shape for the requests in Jaeger, as each level waits for the response from the previous call:
 
 [![Jaeger nested dependency results](./media/jaeger-nested-activity-details.thumb.png)](./media/jaeger-nested-activity-details.png#lightbox)

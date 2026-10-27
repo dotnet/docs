@@ -38,6 +38,9 @@ f1_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS7080"
+  - "CS7081"
+  - "CS7082"
   - "CS8335"
   - "CS8336"
   - "CS8423"
@@ -88,6 +91,9 @@ helpviewer_keywords:
   - "CS7046"
   - "CS7047"
   - "CS7067"
+  - "CS7080"
+  - "CS7081"
+  - "CS7082"
   - "CS8335"
   - "CS8336"
   - "CS8423"
@@ -101,7 +107,7 @@ helpviewer_keywords:
   - "CS8970"
   - "CS9331"
   - "CS9351"
-ms.date: 09/23/2026
+ms.date: 10/27/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -111,69 +117,72 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
-- [**CS0181**](#attribute-arguments-and-parameters): *Attribute constructor parameter has a type, which is not a valid attribute parameter type*
-- [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method.*
+- [**CS0181**](#attribute-arguments-and-parameters): *Attribute constructor parameter 'parameter' has type 'type', which is not a valid attribute parameter type*
+- [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method*
 - [**CS0404**](#attribute-class-requirements): *Attribute is not valid on this declaration type.*
-- [**CS0415**](#predefined-attributes): *This attribute is valid only on an indexer that is not an explicit interface member declaration.*
-- [**CS0416**](#attribute-arguments-and-parameters): *'type parameter': an attribute argument cannot use type parameters.*
+- [**CS0415**](#predefined-attributes): *The 'attribute' attribute is valid only on an indexer that is not an explicit interface member declaration*
+- [**CS0416**](#attribute-arguments-and-parameters): *'type parameter': an attribute argument cannot use type parameters*
 - [**CS0447**](#attribute-arguments-and-parameters): *Attribute cannot be used with type arguments.*
-- [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation.*
-- [**CS0578**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because its return type is not void.*
-- [**CS0579**](#attribute-class-requirements): *Duplicate attribute*
-- [**CS0582**](#conditional-attribute-usage): *The Conditional attribute is not valid on interface members.*
-- [**CS0592**](#attribute-location-context): *Attribute is not valid on this declaration type. It is only valid on specific declarations.*
+- [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation*
+- [**CS0578**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because its return type is not void*
+- [**CS0579**](#attribute-class-requirements): *Duplicate 'attribute' attribute*
+- [**CS0582**](#conditional-attribute-usage): *The Conditional attribute is not valid on interface members*
+- [**CS0592**](#attribute-location-context): *Attribute 'attribute' is not valid on this declaration type. It is only valid on 'declaration' declarations.*
 - [**CS0609**](#predefined-attributes): *Cannot set the attribute on an indexer marked override.*
-- [**CS0616**](#attribute-class-requirements): *Type is not an attribute class*
-- [**CS0625**](#predefined-attributes): *Instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute.*
-- [**CS0629**](#conditional-attribute-usage): *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'.*
-- [**CS0636**](#predefined-attributes): *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit).*
-- [**CS0637**](#predefined-attributes): *The FieldOffset attribute is not allowed on static or const fields.*
-- [**CS0641**](#attribute-class-requirements): *This attribute is only valid on classes derived from System.Attribute`.*
-- [**CS0646**](#predefined-attributes): *Cannot specify the DefaultMember attribute on a type containing an indexer.*
+- [**CS0616**](#attribute-class-requirements): *'Type' is not an attribute class*
+- [**CS0625**](#predefined-attributes): *'field': instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute*
+- [**CS0629**](#conditional-attribute-usage): *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'*
+- [**CS0636**](#predefined-attributes): *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit)*
+- [**CS0637**](#predefined-attributes): *The FieldOffset attribute is not allowed on static or const fields*
+- [**CS0641**](#attribute-class-requirements): *Attribute 'attribute' is only valid on classes derived from System.Attribute*
+- [**CS0646**](#predefined-attributes): *Cannot specify the DefaultMember attribute on a type containing an indexer*
 - [**CS0647**](#attribute-arguments-and-parameters): *Error emitting attribute*
-- [**CS0653**](#attribute-class-requirements): *Cannot apply attribute class 'class' because it is abstract.*
-- [**CS0657**](#attribute-location-context): *Location is not a valid attribute location for this declaration. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
-- [**CS0658**](#attribute-location-context): *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
+- [**CS0653**](#attribute-class-requirements): *Cannot apply attribute class 'class' because it is abstract*
+- [**CS0657**](#attribute-location-context): *'Location' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are 'valid locations'. All attributes in this block will be ignored.*
+- [**CS0658**](#attribute-location-context): *'Location' is not a recognized attribute location. Valid attribute locations for this declaration are 'valid locations'. All attributes in this block will be ignored.*
 - [**CS0668**](#predefined-attributes): *Two indexers have different names; the IndexerName attribute must be used with the same name on every indexer within a type*
-- [**CS0685**](#conditional-attribute-usage): *Conditional member 'member' cannot have an out parameter.*
+- [**CS0685**](#conditional-attribute-usage): *Conditional member 'member' cannot have an out parameter*
 - [**CS0735**](#predefined-attributes): *Invalid type specified as an argument for TypeForwardedTo attribute*
-- [**CS0739**](#predefined-attributes): *Duplicate TypeForwardedToAttribute*
+- [**CS0739**](#predefined-attributes): *'type' duplicate TypeForwardedToAttribute*
 - [**CS1608**](#predefined-attributes): *The RequiredAttribute attribute is not permitted on C# types*
-- [**CS1614**](#attribute-class-requirements): *Attribute name is ambiguous. Either use '@name' or explicitly include the 'Attribute' suffix.*
-- [**CS1618**](#conditional-attribute-usage): *Cannot create delegate with method because it or a method it overrides has a Conditional attribute*
-- [**CS1667**](#attribute-location-context): *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
-- [**CS1689**](#conditional-attribute-usage): *Attribute is only valid on methods or attribute classes*
+- [**CS1614**](#attribute-class-requirements): *'name' is ambiguous between 'attribute' and 'other attribute'. Either use '@name' or explicitly include the 'Attribute' suffix.*
+- [**CS1618**](#conditional-attribute-usage): *Cannot create delegate with 'method' because it or a method it overrides has a Conditional attribute*
+- [**CS1667**](#attribute-location-context): *Attribute 'attribute' is not valid on property or event accessors. It is only valid on 'declaration' declarations.*
+- [**CS1689**](#conditional-attribute-usage): *Attribute 'attribute' is only valid on methods or attribute classes*
 - [**CS7014**](#attribute-location-context): *Attributes are not valid in this context.*
-- [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
+- [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter' must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
-- [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter 'parameter' is optional, but no default parameter value was specified.*
+- [**CS7080**](#caller-information-attribute-precedence): *The CallerMemberNameAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerFilePathAttribute.*
+- [**CS7081**](#caller-information-attribute-precedence): *The CallerMemberNameAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- [**CS7082**](#caller-information-attribute-precedence): *The CallerFilePathAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerLineNumberAttribute.*
 - [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use 'attribute name'. This is reserved for compiler usage.*
 - [**CS8336**](#compiler-reserved-attributes-and-types): *The type name 'type' is reserved to be used by the compiler.*
 - [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 - [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
-- [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
-- [**CS8960**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
-- [**CS8961**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
-- [**CS8962**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
-- [**CS8963**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
-- [**CS8968**](#attribute-arguments-and-parameters): *An attribute type argument cannot use type parameters*
-- [**CS8970**](#attribute-arguments-and-parameters): *Type cannot be used in this context because it cannot be represented in metadata.*
-- [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
+- [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type 'type1' to type 'type2'*
+- [**CS8960**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- [**CS8961**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is overridden by the CallerFilePathAttribute.*
+- [**CS8962**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is overridden by the CallerMemberNameAttribute.*
+- [**CS8963**](#callerargumentexpression-attribute-usage): *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is applied with an invalid parameter name.*
+- [**CS8968**](#attribute-arguments-and-parameters): *'type parameter': an attribute type argument cannot use type parameters*
+- [**CS8970**](#attribute-arguments-and-parameters): *Type 'type' cannot be used in this context because it cannot be represented in metadata.*
+- [**CS9331**](#predefined-attributes): *'attribute' cannot be applied manually.*
 - [**CS9351**](#predefined-attributes): *Use of 'StructLayoutAttribute' and 'ExtendedLayoutAttribute' on the same type is not allowed.*
 
 ## Attribute arguments and parameters
 
 You see the following errors when you use attribute arguments or parameters incorrectly:
 
-- **CS0181**: *Attribute constructor parameter has a type, which is not a valid attribute parameter type*
-- **CS0416**: *'type parameter': an attribute argument cannot use type parameters.*
+- **CS0181**: *Attribute constructor parameter 'parameter' has type 'type', which is not a valid attribute parameter type*
+- **CS0416**: *'type parameter': an attribute argument cannot use type parameters*
 - **CS0447**: *Attribute cannot be used with type arguments.*
 - **CS0647**: *Error emitting attribute*
-- **CS7046**: *Attribute parameter must be specified.*
+- **CS7046**: *Attribute parameter 'parameter' must be specified.*
 - **CS7047**: *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
-- **CS7067**: *Attribute constructor parameter is optional, but no default parameter value was specified.*
-- **CS8968**: *An attribute type argument cannot use type parameters*
-- **CS8970**: *Type cannot be used in this context because it cannot be represented in metadata.*
+- **CS7067**: *Attribute constructor parameter 'parameter' is optional, but no default parameter value was specified.*
+- **CS8968**: *'type parameter': an attribute type argument cannot use type parameters*
+- **CS8970**: *Type 'type' cannot be used in this context because it cannot be represented in metadata.*
 
 To correct these errors, follow these rules:
 
@@ -189,18 +198,18 @@ To correct these errors, follow these rules:
 For more information, see [Attributes](../../advanced-topics/reflection-and-attributes/index.md), [Generics](../../fundamentals/types/generics.md), and the [C# language specification section on attributes](~/_csharpstandard/standard/attributes.md).
 
 > [!NOTE]
-> **CS0447** and **CS0647** are deprecated. The current compiler doesn't emit these errors.
+> **CS0404**, **CS0447**, **CS0609**, and **CS0647** are historical diagnostics. The current compiler doesn't emit these errors.
 
 ## Attribute class requirements
 
 You see the following errors when you define attribute classes that don't meet the required constraints:
 
 - **CS0404**: *Attribute is not valid on this declaration type.*
-- **CS0579**: *Duplicate attribute*
-- **CS0616**: *Type is not an attribute class*
-- **CS0641**: *This attribute is only valid on classes derived from System.Attribute`.*
-- **CS0653**: *Cannot apply attribute class 'class' because it is abstract.*
-- **CS1614**: *Attribute name is ambiguous. Either use '@name' or explicitly include the 'Attribute' suffix.*
+- **CS0579**: *Duplicate 'attribute' attribute*
+- **CS0616**: *'Type' is not an attribute class*
+- **CS0641**: *Attribute 'attribute' is only valid on classes derived from System.Attribute*
+- **CS0653**: *Cannot apply attribute class 'class' because it is abstract*
+- **CS1614**: *'name' is ambiguous between 'attribute' and 'other attribute'. Either use '@name' or explicitly include the 'Attribute' suffix.*
 
 To correct these errors, follow these rules:
 
@@ -217,10 +226,10 @@ For more information, see [Create custom attributes](../../advanced-topics/refle
 
 The following errors occur when you apply attributes in invalid locations or use incorrect target specifiers:
 
-- **CS0592**: *Attribute is not valid on this declaration type. It is only valid on specific declarations.*
-- **CS0657**: *Location is not a valid attribute location for this declaration. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
-- **CS0658**: *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
-- **CS1667**: *Attribute is not valid on property or event accessors. It is only valid on specific declarations.*
+- **CS0592**: *Attribute 'attribute' is not valid on this declaration type. It is only valid on 'declaration' declarations.*
+- **CS0657**: *'Location' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are 'valid locations'. All attributes in this block will be ignored.*
+- **CS0658**: *'Location' is not a recognized attribute location. Valid attribute locations for this declaration are 'valid locations'. All attributes in this block will be ignored.*
+- **CS1667**: *Attribute 'attribute' is not valid on property or event accessors. It is only valid on 'declaration' declarations.*
 - **CS7014**: *Attributes are not valid in this context.*
 - **CS8423**: *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 
@@ -237,17 +246,17 @@ To correct these errors, follow these rules. For more information, see [Attribut
 
 The following errors occur when you use specific predefined .NET attributes incorrectly:
 
-- **CS0415**: *This attribute is valid only on an indexer that is not an explicit interface member declaration.*
+- **CS0415**: *The 'attribute' attribute is valid only on an indexer that is not an explicit interface member declaration*
 - **CS0609**: *Cannot set the attribute on an indexer marked override.*
-- **CS0625**: *Instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute.*
-- **CS0636**: *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit).*
-- **CS0637**: *The FieldOffset attribute is not allowed on static or const fields.*
-- **CS0646**: *Cannot specify the DefaultMember attribute on a type containing an indexer.*
+- **CS0625**: *'field': instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute*
+- **CS0636**: *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit)*
+- **CS0637**: *The FieldOffset attribute is not allowed on static or const fields*
+- **CS0646**: *Cannot specify the DefaultMember attribute on a type containing an indexer*
 - **CS0668**: *Two indexers have different names; the IndexerName attribute must be used with the same name on every indexer within a type*
 - **CS0735**: *Invalid type specified as an argument for TypeForwardedTo attribute*
-- **CS0739**: *Duplicate TypeForwardedToAttribute*
+- **CS0739**: *'type' duplicate TypeForwardedToAttribute*
 - **CS1608**: *The RequiredAttribute attribute is not permitted on C# types*
-- **CS9331**: *Attribute cannot be applied manually.*
+- **CS9331**: *'attribute' cannot be applied manually.*
 - **CS9351**: *Use of 'StructLayoutAttribute' and 'ExtendedLayoutAttribute' on the same type is not allowed.*
 
 To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md), [Structure types](../builtin-types/struct.md), <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>, [Unsafe code and pointers](../unsafe-code.md#the-updated-memory-safety-model-preview), and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
@@ -278,14 +287,14 @@ Remove the explicit declaration or attribute application. Use the corresponding 
 
 You see the following errors when you apply the <xref:System.Diagnostics.ConditionalAttribute> in ways that violate its usage restrictions:
 
-- **CS0243**: *The Conditional attribute is not valid on 'method' because it is an override method.*
-- **CS0577**: *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation.*
-- **CS0578**: *The Conditional attribute is not valid on 'function' because its return type is not void.*
-- **CS0582**: *The Conditional attribute is not valid on interface members.*
-- **CS0629**: *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'.*
-- **CS0685**: *Conditional member 'member' cannot have an out parameter.*
-- **CS1618**: *Cannot create delegate with method because it or a method it overrides has a Conditional attribute*
-- **CS1689**: *Attribute is only valid on methods or attribute classes*
+- **CS0243**: *The Conditional attribute is not valid on 'method' because it is an override method*
+- **CS0577**: *The Conditional attribute is not valid on 'method' because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation*
+- **CS0578**: *The Conditional attribute is not valid on 'function' because its return type is not void*
+- **CS0582**: *The Conditional attribute is not valid on interface members*
+- **CS0629**: *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'*
+- **CS0685**: *Conditional member 'member' cannot have an out parameter*
+- **CS1618**: *Cannot create delegate with 'method' because it or a method it overrides has a Conditional attribute*
+- **CS1689**: *Attribute 'attribute' is only valid on methods or attribute classes*
 - **CS8783**: *Local function 'method' must be 'static' in order to use the Conditional attribute*
 
 To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute>, [Conditional methods](~/_csharpstandard/standard/attributes.md#23532-conditional-methods), and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
@@ -300,15 +309,25 @@ To correct these errors, follow these rules. For more information, see <xref:Sys
 - The `Conditional` attribute is only valid on methods and attribute classes (**CS1689**). It isn't valid on other declaration types such as non-attribute classes, structs, or interfaces.
 - A local function must be declared `static` to use the `Conditional` attribute (**CS8783**). Non-static local functions capture state from the enclosing method, and the compiler can't safely omit a call that might involve captured variables. Add the `static` modifier to the local function, or remove the `[Conditional]` attribute.
 
+## Caller-information attribute precedence
+
+- **CS7080**: *The CallerMemberNameAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerFilePathAttribute.*
+- **CS7081**: *The CallerMemberNameAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- **CS7082**: *The CallerFilePathAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerLineNumberAttribute.*
+
+To select the value supplied for an omitted argument, keep only the intended caller-information attribute on the parameter. `CallerLineNumber` overrides `CallerFilePath` (**CS7082**) and `CallerMemberName` (**CS7081**); `CallerFilePath` overrides `CallerMemberName` (**CS7080**), regardless of attribute order. Remove the overridden attribute, or remove the higher-precedence attributes if you want a different caller-information value.
+
+For more information, see [Caller information attributes](../attributes/caller-information.md) and [Caller-info attributes in the C# language specification](~/_csharpstandard/standard/attributes.md#2356-caller-info-attributes).
+
 ## CallerArgumentExpression attribute usage
 
 The following errors occur when you apply <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute> incorrectly or in conflict with other caller info attributes:
 
-- **CS8959**: *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type1 to type2*
-- **CS8960**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerLineNumberAttribute.*
-- **CS8961**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerFilePathAttribute.*
-- **CS8962**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is overridden by the CallerMemberNameAttribute.*
-- **CS8963**: *The CallerArgumentExpressionAttribute applied to parameter will have no effect. It is applied with an invalid parameter name.*
+- **CS8959**: *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type 'type1' to type 'type2'*
+- **CS8960**: *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- **CS8961**: *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is overridden by the CallerFilePathAttribute.*
+- **CS8962**: *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is overridden by the CallerMemberNameAttribute.*
+- **CS8963**: *The CallerArgumentExpressionAttribute applied to parameter 'parameter' will have no effect. It is applied with an invalid parameter name.*
 
 To correct these errors, follow these rules. For more information, see [Caller information attributes](../../language-reference/attributes/caller-information.md) and <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>.
 

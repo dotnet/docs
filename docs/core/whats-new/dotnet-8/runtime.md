@@ -429,6 +429,9 @@ The following code snippet shows some usage examples.
 :::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="GetElapsedTime":::
 :::code language="csharp" source="../snippets/dotnet-8/csharp/ConsoleApp/TimeProvider.cs" id="TimeProvider":::
 
+> [!TIP]
+> To mock time in unit tests, use the <xref:Microsoft.Extensions.Time.Testing.FakeTimeProvider> from the [Microsoft.Extensions.TimeProvider.Testing](https://www.nuget.org/packages/Microsoft.Extensions.TimeProvider.Testing) NuGet package to manually control and advance time in test scenarios.
+
 ### UTF8 improvements
 
 If you want to enable writing out a string-like representation of your type to a destination span, implement the new <xref:System.IUtf8SpanFormattable> interface on your type. This new interface is closely related to <xref:System.ISpanFormattable>, but targets UTF8 and `Span<byte>` instead of UTF16 and `Span<char>`.

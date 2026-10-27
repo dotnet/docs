@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 static class Program
 {
@@ -63,12 +63,14 @@ static class Program
                 command2.Transaction = transaction2;
                 command2.CommandText =
                     "SELECT ID, valueCol FROM TestSnapshot";
-                SqlDataReader reader2 = command2.ExecuteReader();
-                while (reader2.Read())
+                using (SqlDataReader reader2 = command2.ExecuteReader())
                 {
-                    Console.WriteLine("Expected 1,1 Actual "
-                        + reader2.GetValue(0)
-                        + "," + reader2.GetValue(1));
+                    while (reader2.Read())
+                    {
+                        Console.WriteLine("Expected 1,1 Actual "
+                            + reader2.GetValue(0)
+                            + "," + reader2.GetValue(1));
+                    }
                 }
                 transaction2.Commit();
             }
@@ -93,10 +95,12 @@ static class Program
                 command3.CommandTimeout = 4;
                 try
                 {
-                    SqlDataReader sqldatareader3 = command3.ExecuteReader();
-                    while (sqldatareader3.Read())
+                    using (SqlDataReader sqldatareader3 = command3.ExecuteReader())
                     {
-                        Console.WriteLine("You should never hit this.");
+                        while (sqldatareader3.Read())
+                        {
+                            Console.WriteLine("You should never hit this.");
+                        }
                     }
                     transaction3.Commit();
                 }
@@ -124,12 +128,14 @@ static class Program
                 command4.Transaction = transaction4;
                 command4.CommandText =
                     "SELECT ID, valueCol FROM TestSnapshot";
-                SqlDataReader reader4 = command4.ExecuteReader();
-                while (reader4.Read())
+                using (SqlDataReader reader4 = command4.ExecuteReader())
                 {
-                    Console.WriteLine("Expected 1,22 Actual "
-                        + reader4.GetValue(0)
-                        + "," + reader4.GetValue(1));
+                    while (reader4.Read())
+                    {
+                        Console.WriteLine("Expected 1,22 Actual "
+                            + reader4.GetValue(0)
+                            + "," + reader4.GetValue(1));
+                    }
                 }
 
                 transaction4.Commit();

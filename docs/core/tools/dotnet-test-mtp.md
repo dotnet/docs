@@ -337,7 +337,7 @@ The two scopes count skipped tests differently:
 
 Starting with the .NET 11 SDK, the zero-tests verdict for the whole run is decided once from the aggregated results. A module that matches no tests, for example because of `--test-modules` or a global `--filter`, exits with code 8 (`ZeroTests`), but that code is normalized to success before the results are aggregated. As a result, a single empty module doesn't fail the whole run, although the module keeps its `Exit code: 8` diagnostic in the output for visibility.
 
-MTP 4.3.0 and later versions provide `--zero-tests-policy <allow-skipped|strict>`. The default value, `allow-skipped`, lets an all-skipped module succeed. The `strict` value treats skipped tests as not run, so an all-skipped module exits with code 8. Pass the option after `--` to forward it to each test module:
+MTP 2.3.0 and later versions provide `--zero-tests-policy <allow-skipped|strict>`. The default value, `allow-skipped`, lets an all-skipped module succeed. The `strict` value treats skipped tests as not run, so an all-skipped module exits with code 8. Pass the option after `--` to forward it to each test module:
 
 ```dotnetcli
 dotnet test -- --zero-tests-policy strict
@@ -345,7 +345,7 @@ dotnet test -- --zero-tests-policy strict
 
 When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. An all-skipped whole run exits with code 8 regardless of the per-module `--zero-tests-policy` value.
 
-When you specify `--minimum-expected-tests` and the minimum isn't met, the run fails with exit code 9 (`MinimumExpectedTestsPolicyViolation`). This code is distinct from 8 so that a stricter global or per-module minimum isn't confused with an empty module. For a per-module minimum to return code 9 when the module runs zero tests, the test module must use MTP 4.4.0 or a later version.
+When you specify `--minimum-expected-tests` and the minimum isn't met, the run fails with exit code 9 (`MinimumExpectedTestsPolicyViolation`). This code is distinct from 8 so that a stricter global or per-module minimum isn't confused with an empty module. For a per-module minimum to return code 9 when the module runs zero tests, the test module must use MTP 2.3.0 or a later version.
 
 > [!NOTE]
 > `--minimum-expected-tests 0` is invalid. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.

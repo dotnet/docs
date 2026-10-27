@@ -50,6 +50,8 @@ Compatible collectors can publish covered and coverable measurements, threshold 
 
 Collectors choose whether to publish this model. Use the collector's documented options to configure collection and thresholds.
 
+If you author a collector, publish `TestCoverageMessage`, `TestCoverageThresholdMessage`, and `TestCoverageReportMessage` through the message bus. For contracts and runnable examples, see [Publish coverage results](./microsoft-testing-platform-architecture-extensions.md#publish-coverage-results). For correlated data in a report extension, use the [`ITestCoverageCapabilities`](./microsoft-testing-platform-architecture-services.md#the-itestcoveragecapabilities-service) and [`ITestCoverageResult`](./microsoft-testing-platform-architecture-services.md#the-itestcoverageresult-service) services.
+
 When a published threshold evaluation fails, an otherwise successful run exits with code `14`. Use `--ignore-exit-code 14` when a threshold failure shouldn't fail the process.
 
 ## Version compatibility

@@ -72,6 +72,8 @@ items:
             items:
               - name: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks
                 href: extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md
+              - name: Dependency injection scope disposal aggregates exceptions
+                href: extensions/11/dependency-injection-disposal-exceptions.md
               - name: FileConfigurationProvider doesn't raise reload token after ignored load failure
                 href: extensions/11/fileconfigurationprovider-reload-token-load-failure.md
               - name: FileConfigurationSource.OnLoadException callback is called for IO errors
@@ -92,6 +94,8 @@ items:
                 href: globalization/11/japanese-calendar-min-date.md
           - name: Interop
             items:
+              - name: Native AOT rejects non-blittable UnmanagedCallersOnly signatures
+                href: interop/11/unmanagedcallersonly-non-blittable.md
               - name: NativeAOT uses lib prefix for native library outputs on Unix
                 href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
@@ -108,8 +112,28 @@ items:
                 href: networking/11/sslstream-aia-downloads-disabled.md
           - name: .NET MAUI
             items:
+              - name: Android x86 is not supported
+                href: maui/11/android-x86-unsupported.md
+              - name: Code generation on mobile changes from Mono to CoreCLR
+                href: maui/11/mobile-code-generation.md
+              - name: CoreCLR replaces Mono runtime for .NET mobile apps
+                href: maui/11/mobile-runtime-replacement.md
+              - name: CoreCLR trace events replace Mono trace events
+                href: maui/11/runtime-trace-events.md
+              - name: Crash-reporting behavior changes on mobile platforms
+                href: maui/11/mobile-crash-reporting.md
+              - name: Debugging interfaces on mobile platforms changing to ICorDebug
+                href: maui/11/mobile-debugger-interfaces.md
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
+              - name: Mono embedding APIs no longer supported on mobile platforms
+                href: maui/11/mono-embedding-apis.md
+              - name: Mono project properties no longer configure mobile apps
+                href: maui/11/mono-project-properties.md
+              - name: Mono runtime settings no longer configure mobile apps
+                href: maui/11/mono-runtime-settings.md
+              - name: UnwindNativeCode isn't supported on Apple targets
+                href: maui/11/unwind-native-code-apple.md
           - name: SDK and MSBuild
             items:
               - name: dnx scripts bypass global.json SDK selection

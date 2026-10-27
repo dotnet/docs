@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 10/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -137,7 +137,9 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies a positive maximum number of test failures. When the failure count reaches the maximum, MTP requests a graceful stop and returns exit code `13`. Tests that are already in progress can finish, so the final failure count can exceed the maximum. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+
+  Framework authors must implement and register [`IGracefulStopTestExecutionCapability`](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability) and register the option provider with `AddMaximumFailedTestsService`. The capability documentation includes implementation and registration examples. Test authors don't need to implement the capability if their framework already supports the option.
 
   > [!NOTE]
   > This feature is available in MTP starting with version 1.5.

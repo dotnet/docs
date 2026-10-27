@@ -138,13 +138,13 @@ The capability separates support from activation:
 
 The following capability stores the activation state. The example projects target .NET 10 and reference MTP 2.5.1:
 
-:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/Program.cs" id="TrxCapability":::
-:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/Program.vb" id="TrxCapability":::
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="TrxCapability":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="TrxCapability":::
 
 Return the capability from the `capabilitiesFactory` that you pass to `RegisterTestFramework`. Give the framework the same capability instance so it can observe `Enable()`. For a manually composed test application, register the TRX provider after your framework and other extensions:
 
-:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/Program.cs" id="RegisterTrxCapability":::
-:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/Program.vb" id="RegisterTrxCapability":::
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="RegisterTrxCapability":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="RegisterTrxCapability":::
 
 The abstraction package provides typed properties for `TestNode.Properties`:
 
@@ -159,11 +159,46 @@ The abstraction package provides typed properties for `TestNode.Properties`:
 
 For example, enrich a result after your framework has determined the test outcome:
 
-:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/Program.cs" id="EnrichTrxResult":::
-:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/Program.vb" id="EnrichTrxResult":::
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="EnrichTrxResult":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="EnrichTrxResult":::
 
 These properties supplement the [required test-node state](./microsoft-testing-platform-architecture-test-framework.md#execution-information); they don't replace it. TRX-specific messages also don't replace the platform's [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output).
 
 The complete sample contains one passing test and one intentionally failing test. With `--report-trx`, it writes both results and the enriched metadata to a TRX file, then returns exit code `2`. To run only the passing test, add `--filter-uid trx.pass`.
 
 If the capability is absent or `IsSupported` is `false`, the TRX reporter warns that the framework doesn't support TRX enrichment. The reporter can still create a report from the available data, but framework-specific details might be missing. Don't advertise support unless your framework supplies the corresponding metadata.
+
+### `IGracefulStopTestExecutionCapability`
+
+To support [`--maximum-failed-tests`](./microsoft-testing-platform-cli-options.md#platform-options) in a custom test framework, implement `Microsoft.Testing.Platform.Capabilities.TestFramework.IGracefulStopTestExecutionCapability`. The capability is part of the [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) package and is available starting with MTP 1.5. Test authors who use a framework that already supports the option don't need to implement the capability.
+
+The interface defines `Task StopTestExecutionAsync(CancellationToken cancellationToken)`. When the failure count reaches the requested maximum, MTP calls this method. Your implementation must tell the framework to stop scheduling new tests while it allows tests that have already started to finish, run cleanup, and publish their results.
+
+> [!IMPORTANT]
+> The capability and the `AddMaximumFailedTestsService` helper are experimental APIs that produce compiler diagnostic `TPEXP`. Their contracts can change or be removed. The example projects suppress `TPEXP` explicitly.
+
+Follow these requirements when you implement the capability:
+
+- Share stop state between the capability and the framework's test scheduler. Merely returning a completed task doesn't stop tests.
+- Make stop requests thread-safe and idempotent. More than one platform component can request a stop.
+- Return after you signal the stop. Don't wait for the entire run or the message bus to finish: MTP can call the method while it processes a test result, so that wait can deadlock.
+- Keep graceful-stop state separate from request cancellation. Don't terminate the process or cancel result publication to implement a graceful stop. Honor the method's cancellation token if your stop operation requires asynchronous work.
+- After active tests finish, complete the normal request lifecycle, including result publication, cleanup, and the call to [`ExecuteRequestContext.Complete()`](./microsoft-testing-platform-architecture-test-framework.md#the-executerequestasync-method).
+
+The following implementation uses a thread-safe flag. In your framework, check `IsStopRequested` before you schedule each test and stop taking new work when the flag is `true`.
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/GracefulStop.cs" id="GracefulStop":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/GracefulStop.vb" id="GracefulStop":::
+
+Expose the capability through `ITestFrameworkCapabilities.Capabilities`. The registration example uses MTP's `TestFrameworkCapabilities` collection.
+
+During [test framework registration](./microsoft-testing-platform-architecture-test-framework.md#register-a-testing-framework), pass the registered capability instance to your framework. The following helper accepts your framework factory and an `IExtension` that owns the command-line option. It also calls `AddMaximumFailedTestsService` from the `Microsoft.Testing.Platform.Helpers` namespace to register the `--maximum-failed-tests` option provider. Without that provider, MTP doesn't recognize the option.
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/GracefulStop.cs" id="Registration":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/GracefulStop.vb" id="Registration":::
+
+The capability factory creates fresh stop state, and the framework factory retrieves that same instance. Don't create a second, disconnected capability in your framework. For frameworks that support multiple run requests, keep stop state scoped to the corresponding execution. Don't clear an accepted stop request when execution starts.
+
+MTP rejects `--maximum-failed-tests` during command-line validation if the option provider is registered but the framework doesn't expose this capability. When the failure threshold triggers a stop, MTP returns [exit code `13`](./microsoft-testing-platform-troubleshooting.md#exit-codes). The final failure count can exceed the threshold because result processing is asynchronous and tests might already be in progress.
+
+For the interface contract, see the [`IGracefulStopTestExecutionCapability` source](https://github.com/microsoft/testfx/blob/v4.5.1/src/Platform/Microsoft.Testing.Platform/Capabilities/TestFramework/IGracefulStopTestExecutionCapability.cs).

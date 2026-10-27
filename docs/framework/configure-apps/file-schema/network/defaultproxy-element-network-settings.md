@@ -81,7 +81,7 @@ The following example uses the defaults from the system proxy, specifies the pro
         bypassonlocal="True"
       />
       <bypasslist>
-        <add address="[a-z]+\.contoso\.com$" />
+        <add address="[a-zA-Z0-9_-]+\.contoso\.com$" />
       </bypasslist>
     </defaultProxy>
   </system.net>

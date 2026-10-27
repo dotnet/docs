@@ -12,9 +12,7 @@ jobs:
     name: Look for build warnings
     runs-on: ubuntu-latest
     permissions:
-      checks: write
-      statuses: write
-      pull-requests: write
+      statuses: read
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@ccd8616d44fd3846e67624a50d5aad6d37bf2d25 # v2.22.1

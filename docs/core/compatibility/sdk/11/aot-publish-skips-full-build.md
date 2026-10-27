@@ -1,13 +1,13 @@
 ---
-title: "Breaking change: .NET SDK skips full build for Native AOT publish"
-description: "Learn about the breaking change in .NET 11 RC 2 where the .NET SDK only compiles intermediate assemblies for Native AOT publish and skips the full Build target."
-ms.date: 10/20/2026
+title: "Breaking change: Full build skipped for Native AOT publish"
+description: "Learn about the breaking change in .NET 11 where the .NET SDK only compiles intermediate assemblies for Native AOT publish and skips the full Build target."
+ms.date: 10/27/2026
 ai-usage: ai-assisted
 ---
 
-# .NET SDK skips full build for Native AOT publish
+# Full build skipped for Native AOT publish
 
-Starting in .NET 11 RC 2, the .NET SDK no longer executes the full `Build` target when publishing with Native AOT (`PublishAot=true`). Instead, the SDK executes only the minimum targets needed to compile the intermediate assembly and produce the AOT-compiled output.
+Starting in .NET 11, the .NET SDK no longer executes the full `Build` target when publishing with Native AOT (`PublishAot=true`). Instead, the SDK executes only the minimum targets needed to compile the intermediate assembly and produce the AOT-compiled output.
 
 ## Version introduced
 
@@ -22,8 +22,6 @@ When publishing with `PublishAot=true`, the full MSBuild `Build` target executed
 The .NET SDK runs only the targets needed to compile the intermediate assembly and produce the Native AOT publish output. It no longer runs the full `Build` target or produces the unused managed deployment in `bin\`.
 
 Consequently, build extensibility points that aren't part of compilation don't run during Native AOT publish. These include `BeforeBuild`, `AfterBuild`, `PreBuildEvent`, `PostBuildEvent`, `BeforeTargets="Build"`, `AfterTargets="Build"`, and targets added to `BuildDependsOn`.
-
-The change is scoped to Native AOT publish in .NET 11. Expansion to other publish modes is planned for early .NET 12 previews.
 
 ## Type of breaking change
 

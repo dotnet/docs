@@ -136,10 +136,10 @@ items:
                 href: maui/11/unwind-native-code-apple.md
           - name: SDK and MSBuild
             items:
-              - name: .NET SDK skips full build for Native AOT publish
-                href: sdk/11/aot-publish-skips-full-build.md
               - name: dnx scripts bypass global.json SDK selection
                 href: sdk/11/dnx-scripts-bypass-global-json.md
+              - name: Full build skipped for Native AOT publish
+                href: sdk/11/aot-publish-skips-full-build.md
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
               - name: NativeAOT CLI command handling enabled by default

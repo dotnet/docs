@@ -1,8 +1,6 @@
 ﻿Option Explicit On
 Option Strict On
 Imports System.Data
-Imports System.Data.OleDb
-Imports System.Data.SqlClient
 
 Imports System.Configuration
 
@@ -34,4 +32,3 @@ Class Program
     End Function
     ' </Snippet1>
 End Class
-

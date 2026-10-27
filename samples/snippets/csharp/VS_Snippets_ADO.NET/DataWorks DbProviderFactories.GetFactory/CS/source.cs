@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Common;
+using Microsoft.Data.SqlClient;
 
 static class Program
 {
@@ -18,6 +19,13 @@ static class Program
         {
             try
             {
+#if !NETFRAMEWORK
+                if (providerName == "Microsoft.Data.SqlClient")
+                {
+                    DbProviderFactories.RegisterFactory(providerName, SqlClientFactory.Instance);
+                }
+#endif
+
                 DbProviderFactory factory =
                     DbProviderFactories.GetFactory(providerName);
 

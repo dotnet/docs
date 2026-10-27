@@ -30,6 +30,8 @@ items:
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
               - name: Math.Round and MathF.Round return correctly rounded results
                 href: core-libraries/11/math-round-digits.md
+              - name: Named mutexes default to user scope on Unix
+                href: core-libraries/11/named-mutexes-unix-default-scope.md
               - name: NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions
                 href: core-libraries/11/namedpipeserverstream-unix-permissions.md
               - name: Nullable.GetUnderlyingType throws for custom Type subclasses
@@ -70,6 +72,8 @@ items:
             items:
               - name: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks
                 href: extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md
+              - name: Dependency injection scope disposal aggregates exceptions
+                href: extensions/11/dependency-injection-disposal-exceptions.md
               - name: Empty strings in chained configuration override earlier providers
                 href: extensions/11/chained-configuration-empty-string.md
               - name: FileConfigurationProvider doesn't raise reload token after ignored load failure
@@ -92,6 +96,8 @@ items:
                 href: globalization/11/japanese-calendar-min-date.md
           - name: Interop
             items:
+              - name: Native AOT rejects non-blittable UnmanagedCallersOnly signatures
+                href: interop/11/unmanagedcallersonly-non-blittable.md
               - name: NativeAOT uses lib prefix for native library outputs on Unix
                 href: interop/11/nativeaot-lib-prefix.md
           - name: JIT compiler
@@ -108,8 +114,28 @@ items:
                 href: networking/11/sslstream-aia-downloads-disabled.md
           - name: .NET MAUI
             items:
+              - name: Android x86 is not supported
+                href: maui/11/android-x86-unsupported.md
+              - name: Code generation on mobile changes from Mono to CoreCLR
+                href: maui/11/mobile-code-generation.md
+              - name: CoreCLR replaces Mono runtime for .NET mobile apps
+                href: maui/11/mobile-runtime-replacement.md
+              - name: CoreCLR trace events replace Mono trace events
+                href: maui/11/runtime-trace-events.md
+              - name: Crash-reporting behavior changes on mobile platforms
+                href: maui/11/mobile-crash-reporting.md
+              - name: Debugging interfaces on mobile platforms changing to ICorDebug
+                href: maui/11/mobile-debugger-interfaces.md
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
+              - name: Mono embedding APIs no longer supported on mobile platforms
+                href: maui/11/mono-embedding-apis.md
+              - name: Mono project properties no longer configure mobile apps
+                href: maui/11/mono-project-properties.md
+              - name: Mono runtime settings no longer configure mobile apps
+                href: maui/11/mono-runtime-settings.md
+              - name: UnwindNativeCode isn't supported on Apple targets
+                href: maui/11/unwind-native-code-apple.md
           - name: SDK and MSBuild
             items:
               - name: dnx scripts bypass global.json SDK selection
@@ -170,6 +196,8 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: Named mutexes default to user scope on Unix
+                href: core-libraries/11/named-mutexes-unix-default-scope.md
               - name: No default termination signal handlers
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
@@ -360,6 +388,8 @@ items:
                 href: core-libraries/9.0/inlinearray-size.md
               - name: InMemoryDirectoryInfo prepends rootDir to files
                 href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
+              - name: Named mutexes default to user scope on Unix
+                href: core-libraries/11/named-mutexes-unix-default-scope.md
               - name: New TimeSpan.From*() overloads that take integers
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: New version of some OOB packages
@@ -526,6 +556,8 @@ items:
                 href: core-libraries/8.0/ldap-netstandard-apis.md
               - name: Method builders generate parameters with HasDefaultValue=false
                 href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
+              - name: Named mutexes default to user scope on Unix
+                href: core-libraries/11/named-mutexes-unix-default-scope.md
               - name: Package part URIs are now compared case-insensitively in System.IO.Packaging
                 href: core-libraries/8.0/system-io-packaging-case-insensitive-uri.md
               - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false

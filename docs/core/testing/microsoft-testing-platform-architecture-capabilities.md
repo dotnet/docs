@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) capabilities overview
 description: Learn about MTP capabilities concept.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 08/26/2026
+ms.date: 10/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -125,3 +125,45 @@ An optional [test framework capability](#framework-capabilities) allows the test
 This capability implementation allows you to abstract away the various conditions that the test framework may need to consider when deciding whether or not the banner message should be displayed.
 
 The platform exposes the [`IPlatformInformation` service](./microsoft-testing-platform-architecture-services.md#the-iplatforminformation-service) to provide some information about the platform that could be useful when building your custom banner message.
+
+### `ITrxReportCapability`
+
+To supply framework-specific metadata to the [TRX report extension](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx), implement `Microsoft.Testing.Extensions.TrxReport.Abstractions.ITrxReportCapability`. Reference the [Microsoft.Testing.Extensions.TrxReport.Abstractions](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions) package from your framework. The test application also needs the [Microsoft.Testing.Extensions.TrxReport](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) package to create reports.
+
+The capability separates support from activation:
+
+- Return `true` from `IsSupported` when your framework can supply TRX metadata.
+- In `Enable()`, record that the TRX reporter requested the metadata. The reporter calls this method at the start of a test session when TRX reports are enabled.
+- After activation, add the TRX properties to the test nodes that your framework publishes.
+
+The following capability stores the activation state. The example projects target .NET 10 and reference MTP 2.5.1:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/Program.cs" id="TrxCapability":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/Program.vb" id="TrxCapability":::
+
+Return the capability from the `capabilitiesFactory` that you pass to `RegisterTestFramework`. Give the framework the same capability instance so it can observe `Enable()`. For a manually composed test application, register the TRX provider after your framework and other extensions:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/Program.cs" id="RegisterTrxCapability":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/Program.vb" id="RegisterTrxCapability":::
+
+The abstraction package provides typed properties for `TestNode.Properties`:
+
+| Property | Purpose |
+|---|---|
+| `TrxFullyQualifiedTypeNameProperty` | Supplies the fully qualified test class name. |
+| `TrxCategoriesProperty` | Supplies the test's categories. |
+| `TrxExceptionProperty` | Supplies the failure message and stack trace. |
+| `TrxMessagesProperty` | Carries `StandardOutputTrxMessage`, `StandardErrorTrxMessage`, and `DebugOrTraceTrxMessage` entries. |
+| `TrxTestDefinitionName` | Overrides the test definition name in the report. |
+| `TrxWorkItemsProperty` | Supplies work-item identifiers. |
+
+For example, enrich a result after your framework has determined the test outcome:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/Program.cs" id="EnrichTrxResult":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/Program.vb" id="EnrichTrxResult":::
+
+These properties supplement the [required test-node state](./microsoft-testing-platform-architecture-test-framework.md#execution-information); they don't replace it. TRX-specific messages also don't replace the platform's [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output).
+
+The complete sample contains one passing test and one intentionally failing test. With `--report-trx`, it writes both results and the enriched metadata to a TRX file, then returns exit code `2`. To run only the passing test, add `--filter-uid trx.pass`.
+
+If the capability is absent or `IsSupported` is `false`, the TRX reporter warns that the framework doesn't support TRX enrichment. The reporter can still create a report from the available data, but framework-specific details might be missing. Don't advertise support unless your framework supplies the corresponding metadata.

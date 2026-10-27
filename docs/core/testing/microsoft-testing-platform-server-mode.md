@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) server mode
 description: Learn how tools and IDEs drive MTP test applications through JSON-RPC server mode.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 10/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -30,7 +30,7 @@ The injected `MtpServerClient`, `IMtpServerClient`, and protocol types can initi
 
 ## Meet client requirements
 
-Use C# 12 or later. The package sets `LangVersion` to `12.0` when your project doesn't specify a language version. It also supplies internal compatibility types for .NET Framework 4.6.2 and `netstandard2.0`.
+Use C# 12 or later. The package respects your project's language-version setting. If your target framework defaults to an earlier C# version, set `LangVersion` to `12.0` or later. The package also supplies internal compatibility types for .NET Framework 4.6.2 and `netstandard2.0`.
 
 Remove any hand-written copy of the MTP client before you add the package to avoid duplicate internal types.
 
@@ -48,14 +48,23 @@ To tear down the client and launched application without blocking the calling th
 
 For an in-process host, `MtpServerClientOptions.ServerShutdownTimeout` controls how long teardown waits after the client closes the transport. The default is 30 seconds. Read `ServerExitCode` after shutdown to get the callback's exit code. The value remains `null` while the application runs or when the application fails instead of returning an exit code.
 
-## Choose connection behavior
+<a name="choose-connection-behavior"></a>
 
-Set `MtpServerClientOptions.IsStateful` to tell the server whether the client preserves state across requests:
+## Declare client statefulness
 
-- Leave the value `false` for a single discovery or execution request followed by exit.
-- Set the value to `true` for an editor or IDE session that sends multiple requests over the same connection.
+Starting with MTP 2.4.1, set the nullable `MtpServerClientOptions.IsStateful` option to describe how the client consumes test-node updates:
 
-The client sends this setting through the experimental `capabilities.testing.isStateful` protocol capability.
+| Value | Declaration |
+|---|---|
+| `true` | The client retains an addressable set of test nodes for the session and keeps each node's last-known state until another update changes it, as an IDE test explorer might. |
+| `false` | The client consumes updates without retaining that test-node state. |
+| `null` (default) | The client doesn't declare the capability. The initialize handshake omits the field. |
+
+The client sends an explicit Boolean value through the experimental `capabilities.testing.isStateful` protocol capability. Statefulness is independent of connection lifetime and the server's `MultiRequestSupport` capability. A client doesn't become stateful merely because it sends several requests over the same connection.
+
+MTP 2.4.0 uses a non-nullable Boolean option with a default of `false`. To preserve an undeclared capability, use MTP 2.4.1 or later.
+
+Inside a framework or extension, use the experimental [`IClientInfo` service](./microsoft-testing-platform-architecture-services.md#the-iclientinfo-service) to inspect the declaration. Read `clientInfo.Capabilities.IsStateful` for a conservative Boolean result, which is `false` when the capability is undeclared. In MTP 2.4.1 or later, `ClientCapabilitiesExtensions.GetIsStateful()` preserves the distinction between undeclared, explicitly stateless, and stateful clients.
 
 ## Negotiate protocol compatibility
 

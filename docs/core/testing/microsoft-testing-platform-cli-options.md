@@ -104,6 +104,8 @@ This article gives a central entry point for MTP command-line options.
 
   Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
 
+  Framework authors must honor `TestNodeUidListFilter` for discovery and execution. For implementation guidance, see [Honor request filters](./microsoft-testing-platform-architecture-test-framework.md#honor-request-filters).
+
   > [!NOTE]
   > This option is available in MTP starting with version 1.8.0. Starting with MTP 2.3.0, you can't combine `--filter-uid` with `--treenode-filter`; specifying both fails command-line validation with the `InvalidCommandLine` exit code.
 
@@ -187,7 +189,7 @@ This article gives a central entry point for MTP command-line options.
   Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds. With `strict`, it fails with exit code `8`. An explicit `--minimum-expected-tests` value supersedes this policy and uses exit code `9` when the minimum isn't met.
 
   > [!NOTE]
-  > This option is available in MTP starting with version 4.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+  > This option is available in MTP starting with version 2.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
 
 ## Extension options by scenario
 
@@ -208,6 +210,12 @@ Run your test executable with `--help`, or run `dotnet test --help` in MTP mode,
 Starting with MTP 2.4, an unknown option error suggests a uniquely matching option name when one is available. If the option belongs to a known Microsoft-provided extension that the test application hasn't registered, the error also identifies the NuGet package that provides the option.
 
 For advanced diagnostics of registered providers and options, run with `--info`.
+
+## Run a registered tool
+
+Some extensions register commands that process artifacts instead of executing tests. Pass the command name as the test application's first positional argument. For example, the TRX extension provides [`merge-trx` and `ms-trxcompare`](./microsoft-testing-platform-test-reports.md#merge-trx-files-manually).
+
+Run the application with `--info` to list registered tools and their command-line options. These commands belong to the test application; they aren't `dotnet tool` commands.
 
 ## See also
 

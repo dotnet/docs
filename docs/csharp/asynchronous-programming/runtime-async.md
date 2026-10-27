@@ -1,7 +1,7 @@
 ---
 title: Runtime async
 description: "Learn about Runtime Async in .NET 11, which manages asynchronous suspension and resumption natively within the runtime instead of compiler-generated state machines."
-ms.date: 10/21/2026
+ms.date: 10/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -76,7 +76,7 @@ With **Runtime Async**, the synthetic infrastructure frames are absent. Live sta
 ```
 
 > [!NOTE]
-> Exception stack traces (captured via `catch (Exception ex)`) already appeared clean in earlier .NET versions because <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> pruned compiler state machine frames. Runtime Async brings that same clarity to live thread inspection, profilers, and debuggers.
+> Exception stack traces (captured via `catch (Exception ex)`) already appeared clean in earlier .NET versions because runtime stack-trace formatting filters out compiler-generated state-machine frames. Runtime Async brings that same clarity to live thread inspection, profilers, and debuggers.
 
 ## Debugging experience
 

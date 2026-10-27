@@ -1,7 +1,7 @@
 ---
 title: "Type patterns"
 description: Learn when to use a C# type pattern for a yes-or-no run-time type test without declaring a variable.
-ms.date: 09/15/2026
+ms.date: 10/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -50,8 +50,17 @@ Starting in C# 15 (.NET 11), when the base class is declared with the [`closed`]
 
 ```csharp
 public closed class Shape;
-public class Circle(double Radius) : Shape;
-public class Rectangle(double Width, double Height) : Shape;
+
+public class Circle(double radius) : Shape
+{
+    public double Radius { get; } = radius;
+}
+
+public class Rectangle(double width, double height) : Shape
+{
+    public double Width { get; } = width;
+    public double Height { get; } = height;
+}
 
 double CalculateArea(Shape shape) => shape switch
 {

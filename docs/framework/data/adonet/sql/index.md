@@ -1,18 +1,18 @@
 ---
 title: "SQL Server and ADO.NET"
-description: Learn about features and behaviors of the .NET Framework Data Provider for SQL Server, which encapsulates database-specific protocols.
+description: Learn about SQL Server features and behaviors exposed through Microsoft.Data.SqlClient and the provider requirements of .NET Framework integrations.
 titleSuffix: ""
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: c18b1fb1-2af1-4de7-80a4-95e56fd976cb
 ---
 # SQL Server and ADO.NET
 
-This section describes features and behaviors that are specific to the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>).
+For new SQL Server applications, use the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. For runnable C# and Visual Basic examples, see [ADO.NET code examples](../ado-net-code-examples.md#sqlclient). For current provider documentation, see [Microsoft SqlClient Data Provider for SQL Server](/sql/connect/ado-net/overview-sqlclient-driver).
 
- <xref:System.Data.SqlClient> provides access to versions of SQL Server, which encapsulates database-specific protocols. The functionality of the data provider is designed to be similar to that of the .NET Framework data providers for OLE DB, ODBC, and Oracle. <xref:System.Data.SqlClient> includes a tabular data stream (TDS) parser to communicate directly with SQL Server.
+This section describes SQL Server features and behaviors exposed through <xref:Microsoft.Data.SqlClient>. The provider communicates directly with SQL Server through the tabular data stream (TDS) protocol.
 
-> [!NOTE]
-> The <xref:System.Data.SqlClient> namespace is not under active development. Use the <xref:Microsoft.Data.SqlClient> namespace, which has been available since 2019.
+Some .NET Framework integrations, including LINQ to SQL and SQL Server common language runtime (CLR) context connections, still require <xref:System.Data.SqlClient>. The relevant articles explain these provider requirements.
 
 ## In This Section
 

@@ -109,7 +109,7 @@ ai-usage: ai-assisted
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - **CS0765** - *Partial methods with only a defining declaration or removed conditional methods cannot be used in expression trees.*
 - **CS0831** - *An expression tree may not contain a base access.*
@@ -157,51 +157,51 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9170** - *An expression tree may not contain an inline array access or conversion.*
 - **CS9175** - *An expression tree may not contain a collection expression.*
 - **CS9226** - *An expression tree may not contain an expanded form of non-array params collection parameter.*
-- **CS9296** - *An expression tree may not contain an extension property access*.
+- **CS9296** - *An expression tree may not contain an extension property or indexer access*.
 - **CS9307** - *An expression tree may not contain a named argument specification out of position*.
 - **CS9369** - *An expression tree may not contain a union conversion.*
 
 ## Expression tree restrictions
 
-All of the errors in the preceding list indicate you've used a C# expression type that isn't allowed in an expression tree. In most cases, the prohibited expressions represent syntax introduced after C# 3.0. These expressions are prohibited because allowing them would create a breaking change in all libraries that parse expression trees. All libraries would need to be enhanced to parse new C# expressions if newer constructs were allowed.
+All of the errors in the preceding list indicate you used a C# expression type that isn't allowed in an expression tree. In most cases, the prohibited expressions represent syntax introduced after C# 3.0. These expressions are prohibited because allowing them would create a breaking change in all libraries that parse expression trees. All libraries would need to be enhanced to parse new C# expressions if newer constructs were allowed.
 
 The following expressions are prohibited:
 
 - Invocations of [partial methods](../keywords/partial-member.md) that don't have an implementing declaration.
 - Invocations of [conditional methods](../preprocessor-directives.md#conditional-compilation) that have been removed.
 - Invocations of [local functions](../../fundamentals/building-software/local-functions.md).
-- `async` lambda expressions aren't allowed.
-- Using [`base`](../keywords/base.md) access to directly call a virtual method declared in a base class.
+- `async` lambda expressions.
+- Using [`base`](../keywords/base.md) to directly call a virtual method declared in a base class.
 - [assignment](../operators/assignment-operator.md) operations.
-- [statement lambdas](../operators/lambda-expressions.md#statement-lambdas) aren't allowed.
-- [multi-dimensional array](../builtin-types/arrays.md#multidimensional-arrays) initializers. Instead, you must create and initialize a multi-dimensional array outside of the expression tree.
-- [`dynamic`](../builtin-types/reference-types.md#the-dynamic-type) operations aren't allowed.
-- [pattern matching](../operators/patterns.md) expressions aren't allowed.
-- [Tuple literals](../builtin-types/value-tuples.md) and many tuple operations, such as equality comparisons aren't allowed.
-- [`throw` expressions](../statements/exception-handling-statements.md#the-throw-expression) aren't allowed.
+- [statement lambdas](../operators/lambda-expressions.md#statement-lambdas).
+- [multi-dimensional array](../builtin-types/arrays.md#multidimensional-arrays) initializers. Instead, create and initialize a multi-dimensional array outside of the expression tree.
+- [`dynamic`](../builtin-types/reference-types.md#the-dynamic-type) operations.
+- [pattern matching](../operators/patterns.md) expressions.
+- [Tuple literals](../builtin-types/value-tuples.md) and many tuple operations, such as equality comparisons.
+- [`throw` expressions](../statements/exception-handling-statements.md#the-throw-expression).
 - [discard](../../fundamentals/patterns/discards.md) (`_`) declarations.
-- The [index and range](../operators/member-access-operators.md#indexer-access) operators aren't allowed.
-- Non-destructive mutation using [`with`](../operators/with-expression.md) expressions aren't allowed.
-- You can't declare or access [inline arrays](../builtin-types/struct.md#inline-arrays).
-- You can't include [collection expressions](../operators/collection-expressions.md).
-- [Union conversions](../builtin-types/union.md#union-conversions) aren't allowed.
-- The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators aren't allowed.
-- [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> aren't allowed.
-- `in`, `out`, and `ref` parameters, including `out` variable declarations, aren't allowed.
-- `ref` returns aren't allowed.
-- Calls to methods that return by `ref` aren't allowed.
-- [static abstract interface members](../keywords/interface.md#static-abstract-and-virtual-members) can't be accessed.
+- The [index and range](../operators/member-access-operators.md#indexer-access) operators.
+- Non-destructive mutation using [`with`](../operators/with-expression.md) expressions.
+- Declaring or accessing [inline arrays](../builtin-types/struct.md#inline-arrays).
+- Including [collection expressions](../operators/collection-expressions.md).
+- [Union conversions](../builtin-types/union.md#union-conversions).
+- The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators.
+- [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>.
+- `in`, `out`, and `ref` parameters, including `out` variable declarations.
+- `ref` returns.
+- Calls to methods that return by `ref`.
+- Accessing [static abstract interface members](../keywords/interface.md#static-abstract-and-virtual-members).
 - [Inline arrays](../builtin-types/struct.md#inline-arrays).
-- The `params` modifier is allowed only on single-dimensional arrays. Other collection types aren't allowed.
+- The `params` modifier on anything other than single-dimensional arrays.
 
 Other restrictions are:
 
-- Extension properties can't be accessed as extensions.
-- Attributes can't be applied to the lambda expression, its parameters or return.
+- Can't access extension properties and indexers as extensions.
+- Can't apply attributes to the lambda expression, its parameters, or return.
 - The lambda expression must be convertible to a type derived from <xref:System.Linq.Expressions.Expression?displayProperty=fullName> whose type parameter is a delegate type.
-- [named and optional parameters](../../programming-guide/classes-and-structs/named-and-optional-arguments.md) are restricted. The expression can't call a method specifying named arguments, and it can't use the default value of an optional parameter.
-- [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither are extension `Add` methods.
+- Restricted [named and optional parameters](../../programming-guide/classes-and-structs/named-and-optional-arguments.md). The expression can't call a method specifying named arguments, and it can't use the default value of an optional parameter.
+- Can't use [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) or extension `Add` methods.
 - The target expression must be a lambda expression. Constants and variables aren't allowed, but a lambda expression that returns a constant or variable is.
 - Unsafe pointer operations aren't allowed.
 - COM calls must include `ref` on arguments; it can't be implied.
-- The unsupported `__arglist` keyword isn't allowed.
+- The unsupported `__arglist` keyword.

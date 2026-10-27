@@ -1,30 +1,34 @@
 ---
 description: "Learn how to use callbacks in Windows apps to take action when a long-running database operation has completed."
 title: "Windows Applications Using Callbacks"
-ms.date: "03/30/2017"
+ms.date: "10/21/2026"
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Windows applications using callbacks
 
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package to use this example. The `BeginExecuteNonQuery` and `EndExecuteNonQuery` methods remain supported. They don't require an asynchronous connection-string option. Don't add `Asynchronous Processing=true`; Microsoft.Data.SqlClient doesn't support that keyword. For new code, prefer <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync*> with `await` in an asynchronous event handler.
+
 In most asynchronous processing scenarios, you want to start a database operation and continue running other processes without waiting for the database operation to complete. However, many scenarios require doing something once the database operation has ended. In a Windows application, for example, you might want to delegate the long-running operation to a background thread while allowing the user interface thread to remain responsive. However, when the database operation is complete, you want to use the results to populate the form. This type of scenario is best implemented with a callback.
 
- You define a callback by specifying an <xref:System.AsyncCallback> delegate in the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*>, <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader*>, or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*> method. The delegate is called when the operation is complete. You can pass the delegate a reference to the <xref:System.Data.SqlClient.SqlCommand> itself, making it easy to access the <xref:System.Data.SqlClient.SqlCommand> object and call the appropriate `End` method without having to use a global variable.
+Define a callback with the <xref:System.AsyncCallback> delegate parameter of the <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*>, <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteReader*>, or <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*> method. When the operation completes, the provider invokes the delegate. Pass the <xref:Microsoft.Data.SqlClient.SqlCommand> as the state object so the callback can access the command and call the matching `End` method without a global variable.
 
 ## Example
 
- The following Windows application demonstrates the use of the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*> method, executing a Transact-SQL statement that includes a delay of a few seconds (emulating a long-running command).
+ The following Windows application demonstrates the use of the <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*> method, executing a Transact-SQL statement that includes a delay of a few seconds (emulating a long-running command).
 
  This example demonstrates a number of important techniques, including calling a method that interacts with the form from a separate thread. In addition, this example demonstrates how you must block users from concurrently executing a command multiple times, and how you must ensure that the form does not close before the callback procedure is called.
 
  To set up this example, create a new Windows application. Place a <xref:System.Windows.Forms.Button> control and two <xref:System.Windows.Forms.Label> controls on the form (accepting the default name for each control). Add the following code to the form's class, modifying the connection string as necessary for your environment.
 
+Replace the ellipsis returned by `GetConnectionString` with your connection string. For a remote server with Windows integrated authentication, use `Server=<server>;Database=<database>;Integrated Security=true;Encrypt=true`. Replace `<server>` and `<database>` with your server and database names, and configure a server certificate that the client trusts. For other authentication options, see [Connection string syntax](/sql/connect/ado-net/connection-string-syntax).
+
 ```vb
 ' Add these to the top of the class:
 Imports System
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 ' Add this code to the form's class:
 
@@ -48,11 +52,7 @@ Imports System.Data.SqlClient
         ' To avoid storing the connection string in your code,
         ' you can retrieve it from a configuration file.
 
-        ' If you have not included "Asynchronous Processing=true"
-        ' in the connection string, the command will not be able
-        ' to execute asynchronously.
-        Return "..." & _
-          "Asynchronous Processing=true"
+        Return "..."
     End Function
 
     Private Sub DisplayStatus(ByVal Text As String)
@@ -60,7 +60,7 @@ Imports System.Data.SqlClient
     End Sub
 
     Private Sub DisplayResults(ByVal Text As String)
-        Me.Label1.Text = Text
+        Me.Label2.Text = Text
         DisplayStatus("Ready")
     End Sub
 
@@ -176,7 +176,7 @@ Imports System.Data.SqlClient
             ' invoke it, like this:
             Me.Invoke(New _
                 DisplayInfoDelegate(AddressOf DisplayStatus), _
-                $"Ready (last error: {ex.Message}")
+                $"Ready (last error: {ex.Message})")
         Finally
             isExecuting = False
             If connection IsNot Nothing Then
@@ -190,7 +190,7 @@ Imports System.Data.SqlClient
 // Add these to the top of the class, if they're not already there:
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 // Hook up the form's Load event handler (you can double-click on
 // the form's design surface in Visual Studio), and then add
@@ -217,10 +217,7 @@ private static string GetConnectionString()
     // To avoid storing the connection string in your code,
     // you can retrieve it from a configuration file.
 
-    // If you have not included "Asynchronous Processing=true" in the
-    // connection string, the command will not be able
-    // to execute asynchronously.
-    return "..." + "Asynchronous Processing=true";
+    return "...";
 }
 
 private void DisplayStatus(string Text)
@@ -230,7 +227,7 @@ private void DisplayStatus(string Text)
 
 private void DisplayResults(string Text)
 {
-    this.label1.Text = Text;
+    this.label2.Text = Text;
     DisplayStatus("Ready");
 }
 
@@ -349,7 +346,7 @@ private void HandleCallback(IAsyncResult result)
         // You can create the delegate instance as you
         // invoke it, like this:
         this.Invoke(new DisplayInfoDelegate(DisplayStatus),
-            $"Ready (last error: {ex.Message}");
+            $"Ready (last error: {ex.Message})");
     }
     finally
     {

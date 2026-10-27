@@ -1,6 +1,6 @@
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Transactions;
 
 class Program
@@ -35,6 +35,11 @@ class Program
         string connectString1, string connectString2,
         string commandText1, string commandText2)
     {
+#if NET7_0_OR_GREATER
+        if (!OperatingSystem.IsWindows())
+            throw new PlatformNotSupportedException("This distributed transaction example requires Windows and Microsoft Distributed Transaction Coordinator.");
+        TransactionManager.ImplicitDistributedTransactions = true;
+#endif
         // Initialize the return value to zero and create a StringWriter to display results.
         int returnValue = 0;
         System.IO.StringWriter writer = new System.IO.StringWriter();
@@ -81,6 +86,7 @@ class Program
         }
         catch (TransactionAbortedException ex)
         {
+            returnValue = 0;
             writer.WriteLine("TransactionAbortedException Message: {0}", ex.Message);
         }
 

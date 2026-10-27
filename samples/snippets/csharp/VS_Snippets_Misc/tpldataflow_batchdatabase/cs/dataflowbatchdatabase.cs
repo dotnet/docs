@@ -2,9 +2,8 @@
 // <snippet1>
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics;
-using System.IO;
 using System.Threading.Tasks.Dataflow;
 // </snippet1>
 
@@ -24,20 +23,13 @@ namespace DataflowBatchDatabase
       // TODO: Change this value to experiment with different batch sizes.
       static readonly int s_insertBatchSize = 96;
 
-      // The source database file.
-      // TODO: Change this value if Northwind.sdf is at a different location
-      // on your computer.
-      static readonly string s_sourceDatabase = @"C:\...\Northwind.sdf";
-
-      // TODO: Change this value if you require a different temporary location.
-      static readonly string s_scratchDatabase = @"C:\Temp\Northwind.sdf";
+      static readonly string s_employeeTable =
+         "##DataflowEmployees_" + Guid.NewGuid().ToString("N");
       // </snippet2>
 
       // <snippet3>
       // Describes an employee. Each property maps to a
-      // column in the Employees table in the Northwind database.
-      // For brevity, the Employee class does not contain
-      // all columns from the Employees table.
+      // column in the sample employee table.
       class Employee
       {
          public int EmployeeID { get; set; }
@@ -80,7 +72,7 @@ namespace DataflowBatchDatabase
             {
                // Create the SQL command.
                SqlCommand command = new SqlCommand(
-                  "INSERT INTO Employees ([Last Name], [First Name])" +
+                  $"INSERT INTO [{s_employeeTable}] ([Last Name], [First Name])" +
                   "VALUES (@lastName, @firstName)",
                   connection);
 
@@ -103,8 +95,7 @@ namespace DataflowBatchDatabase
          }
       }
 
-      // Retrieves the number of entries in the Employees table in
-      // the Northwind database.
+      // Retrieves the number of entries in the sample employee table.
       static int GetEmployeeCount(string connectionString)
       {
          int result = 0;
@@ -112,7 +103,7 @@ namespace DataflowBatchDatabase
             new SqlConnection(connectionString))
          {
             SqlCommand sqlCommand = new SqlCommand(
-               "SELECT COUNT(*) FROM Employees", sqlConnection);
+               $"SELECT COUNT(*) FROM [{s_employeeTable}]", sqlConnection);
 
             sqlConnection.Open();
             try
@@ -135,8 +126,8 @@ namespace DataflowBatchDatabase
             new SqlConnection(connectionString))
          {
             SqlCommand command = new SqlCommand(
-               "SELECT [Employee ID] FROM Employees " +
-               "WHERE [Last Name] = @lastName AND [First Name] = @firstName",
+               $"SELECT TOP (1) [Employee ID] FROM [{s_employeeTable}] " +
+               "WHERE [Last Name] = @lastName AND [First Name] = @firstName ORDER BY [Employee ID]",
                connection);
 
             command.Parameters.Add("@lastName", System.Data.SqlDbType.NVarChar).Value = lastName;
@@ -145,7 +136,10 @@ namespace DataflowBatchDatabase
             connection.Open();
             try
             {
-               return (int)command.ExecuteScalar();
+               object result = command.ExecuteScalar();
+               if (result == null)
+                  throw new KeyNotFoundException("No matching employee.");
+               return (int)result;
             }
             finally
             {
@@ -270,9 +264,9 @@ namespace DataflowBatchDatabase
                // the batched join block.
                selectEmployees.Target1.Post(e);
             }
-            catch (NullReferenceException e)
+            catch (KeyNotFoundException e)
             {
-               // GetEmployeeID throws NullReferenceException when there is
+               // GetEmployeeID throws KeyNotFoundException when there is
                // no such employee with the given name. When this happens,
                // post the Exception object to the Exception target of
                // the batched join block.
@@ -292,79 +286,56 @@ namespace DataflowBatchDatabase
 
       static void Main()
       {
-         // Create a connection string for accessing the database.
-         // The connection string refers to the temporary database location.
-         string connectionString = "...";
+         string connectionString = Environment.GetEnvironmentVariable("SQL_CONNECTION_STRING");
+         if (string.IsNullOrWhiteSpace(connectionString))
+            throw new InvalidOperationException("Set the SQL_CONNECTION_STRING environment variable.");
 
-         // Create a Stopwatch object to time database insert operations.
-         Stopwatch stopwatch = new Stopwatch();
+         // Keep the global temporary table alive while worker connections use it.
+         using var keeper = new SqlConnection(connectionString);
+         keeper.Open();
+         using var setup = new SqlCommand(
+            $"CREATE TABLE [{s_employeeTable}] " +
+            "([Employee ID] int IDENTITY PRIMARY KEY, " +
+            "[Last Name] nvarchar(50) NOT NULL, [First Name] nvarchar(50) NOT NULL)", keeper);
+         setup.ExecuteNonQuery();
 
-         // Start with a clean database file by copying the source database to
-         // the temporary location.
-         File.Copy(s_sourceDatabase, s_scratchDatabase, true);
+         try
+         {
+            Stopwatch stopwatch = new Stopwatch();
+            Console.WriteLine("Demonstrating non-batched database insert operations...");
+            Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
+            stopwatch.Start();
+            AddEmployees(connectionString, s_insertCount);
+            stopwatch.Stop();
+            Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.",
+               GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds);
+            Console.WriteLine();
 
-         // Demonstrate multiple insert operations without batching.
-         Console.WriteLine("Demonstrating non-batched database insert operations...");
-         Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
-         stopwatch.Start();
-         AddEmployees(connectionString, s_insertCount);
-         stopwatch.Stop();
-         Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.",
-            GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds);
+            using var reset = new SqlCommand($"TRUNCATE TABLE [{s_employeeTable}]", keeper);
+            reset.ExecuteNonQuery();
 
-         Console.WriteLine();
+            Console.WriteLine("Demonstrating batched database insert operations...");
+            Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
+            stopwatch.Restart();
+            AddEmployeesBatched(connectionString, s_insertBatchSize, s_insertCount);
+            stopwatch.Stop();
+            Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.",
+               GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds);
+            Console.WriteLine();
 
-         // Start again with a clean database file.
-         File.Copy(s_sourceDatabase, s_scratchDatabase, true);
+            reset.ExecuteNonQuery();
 
-         // Demonstrate multiple insert operations, this time with batching.
-         Console.WriteLine("Demonstrating batched database insert operations...");
-         Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
-         stopwatch.Restart();
-         AddEmployeesBatched(connectionString, s_insertBatchSize, s_insertCount);
-         stopwatch.Stop();
-         Console.WriteLine("New size of Employee table: {0}; elapsed insert time: {1} ms.",
-            GetEmployeeCount(connectionString), stopwatch.ElapsedMilliseconds);
-
-         Console.WriteLine();
-
-         // Start again with a clean database file.
-         File.Copy(s_sourceDatabase, s_scratchDatabase, true);
-
-         // Demonstrate multiple retrieval operations with error reporting.
-         Console.WriteLine("Demonstrating batched join database select operations...");
-         // Add a small number of employees to the database.
-         AddEmployeesBatched(connectionString, s_insertBatchSize, 16);
-         // Query for random employees.
-         GetRandomEmployees(connectionString, s_insertBatchSize, 10);
+            Console.WriteLine("Demonstrating batched join database select operations...");
+            AddEmployeesBatched(connectionString, s_insertBatchSize, 16);
+            GetRandomEmployees(connectionString, s_insertBatchSize, 10);
+         }
+         finally
+         {
+            using var cleanup = new SqlCommand($"DROP TABLE [{s_employeeTable}]", keeper);
+            cleanup.ExecuteNonQuery();
+         }
       }
    }
 }
 
-/* Sample output:
-Demonstrating non-batched database insert operations...
-Original size of Employee table: 15.
-Adding 256 entries to Employee table...
-New size of Employee table: 271; elapsed insert time: 11035 ms.
-
-Demonstrating batched database insert operations...
-Original size of Employee table: 15.
-Adding 256 entries to Employee table...
-New size of Employee table: 271; elapsed insert time: 197 ms.
-
-Demonstrating batched join database insert operations...
-Adding 16 entries to Employee table...
-Selecting items from Employee table...
-Received a batch...
-Last=Jones First=Tom ID=21
-Last=Jones First=John ID=24
-Last=Smith First=Tom ID=26
-Last=Jones First=Tom ID=21
-There were 4 errors in this batch...
-Received a batch...
-Last=Smith First=Tom ID=26
-Last=Jones First=Mike ID=28
-There were 0 errors in this batch...
-Finished. There were 4 total errors.
-*/
 // </snippet100>

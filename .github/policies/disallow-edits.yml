@@ -33,6 +33,8 @@ configuration:
                     user: dotnet-policy-service[bot]
                 - isActivitySender:
                     user: github-actions[bot]
+                - isActivitySender:
+                    user: learn-build-service-prod[bot] 
         then:
           - addReply:
               reply: >-

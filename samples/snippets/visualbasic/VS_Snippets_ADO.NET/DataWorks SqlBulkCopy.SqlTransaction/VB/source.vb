@@ -3,7 +3,7 @@ Option Strict On
 
 Imports System.Data
 ' <Snippet1>
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
     Sub Main()

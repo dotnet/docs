@@ -2,7 +2,7 @@
 Option Strict On
 
 Imports System.Data
-Imports system.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
     Private Sub LocalTrans(ByVal connectionString As String)

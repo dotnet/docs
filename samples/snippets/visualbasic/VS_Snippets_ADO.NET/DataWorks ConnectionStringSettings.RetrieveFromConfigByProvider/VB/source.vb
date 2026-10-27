@@ -5,7 +5,7 @@ Imports System.Configuration
 
 Class Program
     Shared Sub Main()
-        Dim s As String = GetConnectionStringByProvider("System.Data.SqlClient")
+        Dim s As String = GetConnectionStringByProvider("Microsoft.Data.SqlClient")
         Console.WriteLine(s)
         Console.ReadLine()
     End Sub

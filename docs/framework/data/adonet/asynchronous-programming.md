@@ -1,16 +1,17 @@
 ---
 title: "Asynchronous Programming"
-description: Learn about asynchronous programming in .NET Framework Data Provider for SQL Server, including enhancements introduced in .NET Framework 4.5.
-ms.date: "10/18/2018"
+description: Learn about asynchronous programming with Microsoft.Data.SqlClient and the task-based APIs available for connections, commands, readers, and bulk copy.
+ms.date: "10/20/2026"
+ai-usage: ai-assisted
 ---
 
 # Asynchronous programming
 
-This article discusses support for asynchronous programming in .NET Framework Data Provider for SQL Server (SqlClient), including enhancements made to support asynchronous programming functionality that was introduced in .NET Framework 4.5.
+This article discusses asynchronous programming with [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient). Install the NuGet package and import the `Microsoft.Data.SqlClient` namespace for the SQL examples. Microsoft.Data.SqlClient supports task-based APIs on .NET Framework and modern .NET.
 
 ## Legacy asynchronous programming
 
-Prior to .NET Framework 4.5, asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:
+Prior to .NET Framework 4.5, asynchronous programming with System.Data.SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:
 
 - <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*?displayProperty=nameWithType>
 - <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader*?displayProperty=nameWithType>
@@ -19,7 +20,7 @@ Prior to .NET Framework 4.5, asynchronous programming with SqlClient was done wi
 This functionality remained in SqlClient in .NET Framework 4.5.
 
 > [!TIP]
-> Beginning in .NET Framework 4.5, these legacy methods no longer require `Asynchronous Processing=true` in the connection string.
+> Microsoft.Data.SqlClient also provides `BeginExecuteNonQuery`, `BeginExecuteReader`, and `BeginExecuteXmlReader` for compatibility. Remove `Asynchronous Processing` from connection strings when you migrate to Microsoft.Data.SqlClient. With either `true` or `false`, the keyword causes <xref:System.ArgumentException> with the message `Keyword not supported: 'asynchronous processing'.` when you construct <xref:Microsoft.Data.SqlClient.SqlConnection> or assign its `ConnectionString` property, before you call `Open` or `OpenAsync`. The keyword isn't ignored and isn't required for asynchronous calls.
 
 ## Asynchronous programming features added in .NET Framework 4.5
 
@@ -36,12 +37,12 @@ You can now call into asynchronous methods without using callbacks, and without 
 
 The `async` modifier specifies that a method is asynchronous. When calling an `async` method, a task is returned. When the `await` operator is applied to a task, the current method exits immediately. When the task finishes, execution resumes in the same method.
 
-> [!WARNING]
-> Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.
+> [!NOTE]
+> Microsoft.Data.SqlClient doesn't support `Context Connection=true`. When you construct <xref:Microsoft.Data.SqlClient.SqlConnection> or assign its `ConnectionString` property with that setting, the driver throws <xref:System.InvalidOperationException> with the message `Connecting to the context connection using Microsoft.Data.SqlClient is not supported.` The exception occurs before you call `Open` or `OpenAsync`; the setting isn't ignored.
 
 Calling an `async` method does not allocate any additional threads. It might use the existing I/O completion thread briefly at the end.
 
-The following methods were added in .NET Framework 4.5 to support asynchronous programming:
+The following base-class and Microsoft.Data.SqlClient methods support asynchronous programming:
 
 - <xref:System.Data.Common.DbConnection.OpenAsync*?displayProperty=nameWithType>
 - <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync*?displayProperty=nameWithType>
@@ -52,19 +53,19 @@ The following methods were added in .NET Framework 4.5 to support asynchronous p
 - <xref:System.Data.Common.DbDataReader.IsDBNullAsync*>
 - <xref:System.Data.Common.DbDataReader.NextResultAsync*?displayProperty=nameWithType>
 - <xref:System.Data.Common.DbDataReader.ReadAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlConnection.OpenAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlDataReader.NextResultAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlDataReader.ReadAsync*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlConnection.OpenAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteReaderAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteScalarAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.NextResultAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.ReadAsync*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType>
 
  Other asynchronous members were added to support [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
 > [!TIP]
-> The newer asynchronous methods don't require `Asynchronous Processing=true` in the connection string.
+> Task-based asynchronous methods don't require a connection string option to enable asynchronous operations.
 
 ### Synchronous to asynchronous connection open
 
@@ -85,7 +86,7 @@ When converted to use the newer asynchronous functionality, the program would lo
 
 ```csharp
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 
 class A {
@@ -124,9 +125,11 @@ IAsyncResult ia = cmd.BeginExecuteReader(productList, cmd);
 
 You can begin to use the new asynchronous pattern without substantially changing the existing algorithm.
 
+The following template intentionally omits the `ProductList` callback body. In your callback, call <xref:Microsoft.Data.SqlClient.SqlCommand.EndExecuteReader*>, process and dispose the reader, and dispose the command and connection. Keep the application alive until the callback completes. The template isn't a standalone console application.
+
 ```csharp
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 
 class A {
@@ -150,10 +153,12 @@ You might need to create a tool that is able to connect to different databases a
 
 The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](/previous-versions/commerce-server/dd327979(v=cs.90)).
 
+Before you run the factory example, register `Microsoft.Data.SqlClient` as described in [Obtaining a DbProviderFactory](obtaining-a-dbproviderfactory.md). Use application configuration on .NET Framework or `DbProviderFactories.RegisterFactory` on modern .NET.
+
 ```csharp
 using System;
 using System.Data.Common;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 
 class A {
@@ -185,7 +190,7 @@ class A {
        builder.DataSource = "your_server";
        builder.InitialCatalog = "pubs";
        builder.IntegratedSecurity = true;
-       string provider = "System.Data.SqlClient";
+       string provider = "Microsoft.Data.SqlClient";
 
        Task task = PerformDBOperationsUsingProviderModel(builder.ConnectionString, provider);
        task.Wait();
@@ -199,7 +204,7 @@ class A {
 
 ```csharp
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 
 class Program {
@@ -264,9 +269,17 @@ class Program {
 
 In an enterprise application, you might need to add distributed transactions in some scenarios, to enable transactions between multiple database servers. You can use the <xref:System.Transactions> namespace and enlist a distributed transaction, as follows:
 
+On modern .NET, distributed transactions require Windows and .NET 7 and later versions. Configure Microsoft Distributed Transaction Coordinator (MSDTC) network access on the participating computers. Before you run the following example on modern .NET, enable transaction promotion at application startup, before you create any transactions:
+
+```csharp
+TransactionManager.ImplicitDistributedTransactions = true;
+```
+
+The <xref:System.Transactions.TransactionManager.ImplicitDistributedTransactions> property defaults to `false`. Without this opt-in, promotion to a distributed transaction throws <xref:System.NotSupportedException>. On .NET Framework, omit this assignment because the property isn't available; MSDTC configuration is still required.
+
 ```csharp
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Transactions;
 
@@ -330,7 +343,7 @@ You can cancel an asynchronous request by using the <xref:System.Threading.Cance
 
 ```csharp
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -344,7 +357,9 @@ namespace Samples {
             result.Wait();
          }
          catch (AggregateException exception) {
-            if (exception.InnerException is SqlException) {
+            if (source.IsCancellationRequested &&
+                (exception.InnerException is OperationCanceledException ||
+                 exception.InnerException is SqlException)) {
                Console.WriteLine("Operation canceled");
             }
             else {
@@ -367,14 +382,16 @@ namespace Samples {
 
 ### Asynchronous operations with SqlBulkCopy
 
-Asynchronous capabilities were also added to <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType> with <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType>.
+Use <xref:Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerAsync*?displayProperty=nameWithType> for asynchronous bulk copy with <xref:Microsoft.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType>.
+
+Use separate connection strings for SqlClient and ODBC. Replace `<server>` with your SQL Server instance, and install ODBC Driver 18 for SQL Server for the mixed-provider example. On modern .NET, also reference the [System.Data.Odbc package](https://www.nuget.org/packages/System.Data.Odbc). The SqlClient connection string enables multiple active result sets (MARS) for the final example.
 
 ```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Odbc;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -396,7 +413,10 @@ namespace SqlBulkCopyAsyncCodeSample {
             [notes] [varchar](200) NULL,
             [pubdate] [datetime] NOT NULL)";
 
-      static string connectionString = "...";
+      static string connectionString =
+          "Server=<server>;Database=pubs;Integrated Security=true;Encrypt=true;MultipleActiveResultSets=true;";
+      static string odbcConnectionString =
+          "Driver={ODBC Driver 18 for SQL Server};Server=<server>;Database=pubs;Trusted_Connection=yes;Encrypt=yes;";
 
       static void Main(string[] args) {
          SynchronousSqlBulkCopy();
@@ -407,7 +427,7 @@ namespace SqlBulkCopyAsyncCodeSample {
          AsyncSqlBulkCopyMARS().Wait();
       }
 
-      // 3.1.1 Synchronous bulk copy in .NET Framework 4.5
+      // 3.1.1 Synchronous bulk copy
       private static void SynchronousSqlBulkCopy() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             conn.Open();
@@ -429,7 +449,7 @@ namespace SqlBulkCopyAsyncCodeSample {
 
       }
 
-      // 3.1.2 Asynchronous bulk copy in .NET Framework 4.5
+      // 3.1.2 Asynchronous bulk copy
       private static async Task AsyncSqlBulkCopy() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();
@@ -452,13 +472,13 @@ namespace SqlBulkCopyAsyncCodeSample {
 
       // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchronous calls)
       private static async Task MixSyncAsyncSqlBulkCopy() {
-         using (OdbcConnection odbcconn = new OdbcConnection(connectionString)) {
+         using (OdbcConnection odbcconn = new OdbcConnection(odbcConnectionString)) {
             odbcconn.Open();
             using (OdbcCommand odbccmd = new OdbcCommand(selectStatement, odbcconn)) {
                using (OdbcDataReader odbcreader = odbccmd.ExecuteReader()) {
                   using (SqlConnection conn = new SqlConnection(connectionString)) {
                      await conn.OpenAsync();
-                     string temptable = "temptable";//"[#" + Guid.NewGuid().ToString("N") + "]";
+                     string temptable = "[#" + Guid.NewGuid().ToString("N") + "]";
                      SqlCommand createCmd = new SqlCommand(string.Format(createDestTableStatement, temptable), conn);
                      await createCmd.ExecuteNonQueryAsync();
                      using (SqlBulkCopy bcp = new SqlBulkCopy(conn)) {
@@ -552,7 +572,7 @@ namespace SqlBulkCopyAsyncCodeSample {
 
 ## Asynchronously use multiple commands with MARS
 
-The example opens a single connection to the `AdventureWorks` database. Using a <xref:System.Data.SqlClient.SqlCommand> object, a <xref:System.Data.SqlClient.SqlDataReader> is created. As the reader is used, a second <xref:System.Data.SqlClient.SqlDataReader> is opened, using data from the first <xref:System.Data.SqlClient.SqlDataReader> as input to the WHERE clause for the second reader.
+The example opens a single connection to the `AdventureWorks` database. Using a <xref:Microsoft.Data.SqlClient.SqlCommand> object, a <xref:Microsoft.Data.SqlClient.SqlDataReader> is created. As the reader is used, a second <xref:Microsoft.Data.SqlClient.SqlDataReader> is opened, using data from the first <xref:Microsoft.Data.SqlClient.SqlDataReader> as input to the WHERE clause for the second reader.
 
 > [!NOTE]
 > The following example uses the sample `AdventureWorks` database included with SQL Server. The connection string provided in the sample code assumes that the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
@@ -560,7 +580,7 @@ The example opens a single connection to the `AdventureWorks` database. Using a 
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 
 class Class1 {
@@ -622,7 +642,7 @@ class Class1 {
 
 MARS allows a connection to be used for both read operations and data manipulation language (DML) operations with more than one pending operation. This feature eliminates the need for an application to deal with connection-busy errors. In addition, MARS can replace the user of server-side cursors, which generally consume more resources. Finally, because multiple operations can operate on a single connection, they can share the same transaction context, eliminating the need to use `sp_getbindtoken` and `sp_bindsession` system stored procedures.
 
-The following Console application demonstrates how to use two <xref:System.Data.SqlClient.SqlDataReader> objects with three <xref:System.Data.SqlClient.SqlCommand> objects and a single <xref:System.Data.SqlClient.SqlConnection> object with MARS enabled. The first command object retrieves a list of vendors whose credit rating is 5. The second command object uses the vendor ID provided from a <xref:System.Data.SqlClient.SqlDataReader> to load the second <xref:System.Data.SqlClient.SqlDataReader> with all of the products for the particular vendor. Each product record is visited by the second <xref:System.Data.SqlClient.SqlDataReader>. A calculation is performed to determine what the new `OnOrderQty` should be. The third command object is then used to update the `ProductVendor` table with the new value. This entire process takes place within a single transaction, which is rolled back at the end.
+The following Console application demonstrates how to use two <xref:Microsoft.Data.SqlClient.SqlDataReader> objects with three <xref:Microsoft.Data.SqlClient.SqlCommand> objects and a single <xref:Microsoft.Data.SqlClient.SqlConnection> object with MARS enabled. The first command object retrieves a list of vendors whose credit rating is 5. The second command object uses the vendor ID provided from a <xref:Microsoft.Data.SqlClient.SqlDataReader> to load the second <xref:Microsoft.Data.SqlClient.SqlDataReader> with all of the products for the particular vendor. Each product record is visited by the second <xref:Microsoft.Data.SqlClient.SqlDataReader>. A calculation is performed to determine what the new `OnOrderQty` should be. The third command object is then used to update the `ProductVendor` table with the new value. This entire process takes place within a single transaction, which is rolled back at the end.
 
 > [!NOTE]
 > The following example uses the sample `AdventureWorks` database included with SQL Server. The connection string provided in the sample code assumes that the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
@@ -632,7 +652,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 
 class Program {
@@ -722,7 +742,7 @@ class Program {
                }
             }
          }
-         Console.WriteLine("Total Records Updated: ", totalRecordsUpdated.ToString());
+         Console.WriteLine("Total Records Updated: {0}", totalRecordsUpdated);
          await Task.Run(() => updateTx.Rollback());
          Console.WriteLine("Transaction Rolled Back");
       }

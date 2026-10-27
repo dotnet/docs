@@ -17,6 +17,8 @@ namespace cs_test20730build
           //  Northwnd db = new Northwnd(@"c:\northwnd.mdf");
 
             // <Snippet1>
+// Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+// LINQ to SQL's built-in provider requires System.Data.SqlClient.
 // DataContext takes a connection string.
 DataContext db = new DataContext(@"c:\Northwind.mdf");
 
@@ -38,6 +40,8 @@ foreach (var cust in query)
             // </Snippet3>
 
             // <Snippet4>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             string connString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=c:\northwind.mdf;
                 Integrated Security=True; Connect Timeout=30; User Instance=True";
             SqlConnection nwindConn = new SqlConnection(connString);
@@ -81,6 +85,8 @@ foreach (var cust in query)
         } //end of Main
 
         // <Snippet2>
+        // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        // LINQ to SQL's built-in provider requires System.Data.SqlClient.
         public partial class Northwind : DataContext
         {
             public Table<Customer> Customers;
@@ -92,6 +98,8 @@ foreach (var cust in query)
        void method()
         {
             // <Snippet5>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             Northwnd db = new Northwnd(@"c:\Northwnd.mdf");
             var query =
                 from cust in db.Customers

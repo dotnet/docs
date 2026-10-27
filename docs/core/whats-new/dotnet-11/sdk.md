@@ -108,10 +108,11 @@ The pack operation still proceeds with a warning to avoid breaking existing proj
 `dotnet sln` can now create and edit solution filters (`.slnf`) directly from the CLI. Solution filters let large repositories load or build a subset of projects without changing the main solution. The supported operations mirror the existing `dotnet sln` commands:
 
 ```bash
-dotnet new slnf --name MyApp.slnf
-dotnet sln MyApp.slnf add src/Lib/Lib.csproj
-dotnet sln MyApp.slnf list
-dotnet sln MyApp.slnf remove src/Lib/Lib.csproj
+dotnet new slnf --parent-solution MySolution.slnx --name Tests
+dotnet sln Tests.slnf add tests/Tests/Tests.csproj
+dotnet sln Tests.slnf add src/Lib/Lib.csproj
+dotnet sln Tests.slnf list
+dotnet sln Tests.slnf remove src/Lib/Lib.csproj
 ```
 
 ### File-based apps split across files

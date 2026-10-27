@@ -42,6 +42,8 @@ This extension is intended for integration tests where the test depends heavily 
 
 Both threshold options (`--retry-failed-tests-max-percentage` and `--retry-failed-tests-max-tests`) require `--retry-failed-tests` to also be set.
 
+For framework authors, this extension requires stable test node UIDs and correct [request-filter handling](./microsoft-testing-platform-architecture-test-framework.md#honor-request-filters). A retry launches a new test process and selects the failed tests through `--filter-uid`. If your framework ignores `TestNodeUidListFilter`, it can rerun unselected tests instead of only the failures.
+
 Starting with MTP 2.4.0, the retry summary reports separate `flaky` and `retried` counts and lists recovered test names under **Flaky tests**. To avoid misleading totals, MTP doesn't print a full-suite summary for filtered retry attempts after the first attempt. Use the terminal reporter's [`--show-flaky-tests`](microsoft-testing-platform-terminal-output.md#options) option to show or hide flaky details.
 
 Each retry attempt writes its report artifacts under the `Retries` directory. For JUnit, the top-level report represents only the final filtered retry attempt, not the original full suite; collect the earlier attempt reports from `Retries` when your CI requires complete coverage. This layout applies to `--retry-failed-tests`. MSTest's in-process `[Retry]` instead collapses superseded attempts into one final JUnit or TRX result per test.

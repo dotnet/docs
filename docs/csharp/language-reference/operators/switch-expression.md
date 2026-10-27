@@ -49,6 +49,8 @@ If none of a `switch` expression's patterns matches an input value, the runtime 
 
 For [union types](../builtin-types/union.md), a `switch` expression is exhaustive when it handles all case types. A catch-all arm isn't needed. If the null state of the union's `Value` property is "maybe null," you must also handle `null` to avoid a warning. For more information, see [Union exhaustiveness](../builtin-types/union.md#union-exhaustiveness).
 
+A default generated union can contain `null` even when all case types are nonnullable, such as an element of a newly allocated union array or a value created with `default`. The compiler doesn't necessarily warn about an omitted `null` arm in that situation, but the switch still throws if no arm matches. Handle `null` when default union contents can reach the switch. Prefer a `null` arm to a `var` or discard arm so that adding a new case type still produces a non-exhaustiveness warning.
+
 > [!TIP]
 > To guarantee that a `switch` expression handles all possible input values, provide a `switch` expression arm with a [discard pattern](patterns.md#discard-pattern).
 

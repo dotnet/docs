@@ -1,10 +1,14 @@
 ---
 description: "Learn more about: SqlClient for the Entity Framework"
 title: "SqlClient for the Entity Framework"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: 9a5d6d39-d955-43a5-a5c2-931c239398f1
 ---
 # SqlClient for the Entity Framework
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The provider name on this page selects the built-in Entity Framework SQL provider in .NET Framework. To use a different provider, you must migrate the Entity Framework integration, not just replace the `Provider` attribute.
 
 This section describes the .NET Framework Data Provider for SQL Server (SqlClient), which enables the Entity Framework to work over Microsoft SQL Server.  
   

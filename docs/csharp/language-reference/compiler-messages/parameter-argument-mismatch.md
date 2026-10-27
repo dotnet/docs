@@ -187,7 +187,7 @@ The compiler returns the following errors when you specify an [interpolated stri
 - **CS8950**: *Parameter 'argument parameter' is an argument to the interpolated string handler conversion on parameter 'handler parameter', but the corresponding argument is specified after the interpolated string expression. Reorder the arguments to move 'argument parameter' before 'handler parameter'.*
 - **CS8951**: *Parameter 'argument parameter' is not explicitly provided, but is used as an argument to the interpolated string handler conversion on parameter 'handler parameter'. Specify the value of 'argument parameter' before 'handler parameter'.*
 
-An interpolated string handler is a pattern-based construct. It's important to get the pattern correct. Consult the C# language specification section on [custom interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#235101-custom-interpolated-string-expression-handlers), or follow the tutorial on [building an interpolated string handler](../../advanced-topics/performance/interpolated-string-handler.md).
+An interpolated string handler is a pattern-based construct. It's important to get the pattern correct. Consult the C# language specification section on [custom interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#235111-custom-interpolated-string-expression-handlers), or follow the tutorial on [building an interpolated string handler](../../advanced-topics/performance/interpolated-string-handler.md).
 
 ## Caller debugging information
 

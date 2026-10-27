@@ -36,7 +36,7 @@
 | Conversational Language Understanding | NuGet [1.1.0](https://www.nuget.org/packages/Azure.AI.Language.Conversations/1.1.0)<br>NuGet [2.0.0-beta.5](https://www.nuget.org/packages/Azure.AI.Language.Conversations/2.0.0-beta.5) | [docs](/dotnet/api/overview/azure/AI.Language.Conversations-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Language.Conversations_1.1.0/sdk/cognitivelanguage/Azure.AI.Language.Conversations/)<br>GitHub [2.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Language.Conversations_2.0.0-beta.5/sdk/cognitivelanguage/Azure.AI.Language.Conversations/) |
 | Conversations Authoring | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.AI.Language.Conversations.Authoring/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/AI.Language.Conversations.Authoring-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Language.Conversations.Authoring_1.0.0-beta.3/sdk/cognitivelanguage/Azure.AI.Language.Conversations.Authoring/) |
 | Core - Client - AMQP | NuGet [1.3.1](https://www.nuget.org/packages/Azure.Core.Amqp/1.3.1) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme) | GitHub [1.3.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.3.1/sdk/core/Azure.Core.Amqp/) |
-| Core - Client - Core | NuGet [1.63.0](https://www.nuget.org/packages/Azure.Core/1.63.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.63.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.63.0/sdk/core/Azure.Core/) |
+| Core - Client - Core | NuGet [1.64.0](https://www.nuget.org/packages/Azure.Core/1.64.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.64.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.64.0/sdk/core/Azure.Core/) |
 | Core - Client - Core | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0) | [docs](/dotnet/api/overview/azure/Core.Expressions.DataFactory-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Expressions.DataFactory_1.0.0/sdk/core/Azure.Core.Expressions.DataFactory/) |
 | Core Newtonsoft Json | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/2.0.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.Core.NewtonsoftJson-readme) | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Core.NewtonsoftJson_2.0.0/sdk/core/Microsoft.Azure.Core.NewtonsoftJson/) |
 | Core WCF Storage Queues | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.CoreWCF.Azure.StorageQueues/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Microsoft.CoreWCF.Azure.StorageQueues-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.CoreWCF.Azure.StorageQueues_1.0.0-beta.1/sdk/extension-wcf/Microsoft.CoreWCF.Azure.StorageQueues/) |
@@ -510,12 +510,12 @@
 | Fabric MCP | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/1.6.0) |  |  |
 | Functions Connector Extension | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Connector/1.0.0) |  |  |
 | Functions Extension MCP | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.6.0) |  |  |
-| Functions Host | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-arm64/4.1048.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-x64/4.1048.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-arm64/4.1048.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-x64/4.1048.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-arm64/4.1048.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-x64/4.1048.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-arm64/4.1054.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-x64/4.1054.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-arm64/4.1054.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-x64/4.1054.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-arm64/4.1054.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-x64/4.1054.200-preview.3) |  |  |
 | Functions Worker Extension MCP | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.6.0) |  |  |
 | Functions Worker Extension MCP SDK | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.4) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.131](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.131) |  |  |
@@ -547,15 +547,15 @@
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.2.0) |  |  |
 | Node.js Function Templates | NuGet [1.0.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Templates.Node/1.0.1) |  |  |
 | Node.js Stack | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Node/1.0.0-preview.2) |  |  |
-| Node.js Worker | NuGet [3.13.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Node/3.13.0-preview.1) |  |  |
+| Node.js Worker | NuGet [3.16.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Node/3.16.0-preview.1) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.1-beta.7](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.1-beta.7) |  |  |
 | Python Function Templates | NuGet [1.0.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Templates.Python/1.0.1) |  |  |
 | Python Stack | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Python/1.0.0-preview.2) |  |  |
-| Python Worker | NuGet [4.43.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-arm64/4.43.0-preview.3) |  |  |
-| Python Worker | NuGet [4.43.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-x64/4.43.0-preview.3) |  |  |
-| Python Worker | NuGet [4.43.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-arm64/4.43.0-preview.3) |  |  |
-| Python Worker | NuGet [4.43.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-x64/4.43.0-preview.3) |  |  |
-| Python Worker | NuGet [4.43.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.win-x64/4.43.0-preview.3) |  |  |
+| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-arm64/4.46.0-preview.3) |  |  |
+| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-x64/4.46.0-preview.3) |  |  |
+| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-arm64/4.46.0-preview.3) |  |  |
+| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-x64/4.46.0-preview.3) |  |  |
+| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.win-x64/4.46.0-preview.3) |  |  |
 | Speech CLI | NuGet [1.53.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.53.0) |  |  |
 | Speech Extension Embedded SR | NuGet [1.53.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.53.0) |  |  |
 | Speech Extension Embedded TTS | NuGet [1.53.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.53.0) |  |  |
@@ -563,12 +563,12 @@
 | Speech Extension ONNX Runtime | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.52.0) |  |  |
 | Speech Extension Telemetry | NuGet [1.52.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.52.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| unknown | NuGet [4.1048.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host/4.1048.200-preview.3) |  |  |
+| unknown | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host/4.1054.200-preview.3) |  |  |
 | unknown | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Java/1.0.0-preview.1) |  |  |
 | unknown | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.PowerShell/1.0.0-preview.2) |  |  |
-| unknown | NuGet [2.19.4-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Java/2.19.4-preview.1) |  |  |
-| unknown | NuGet [4.0.4778-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.PowerShell/4.0.4778-preview.1) |  |  |
-| unknown | NuGet [4.43.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python/4.43.0-preview.3) |  |  |
+| unknown | NuGet [2.19.5-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Java/2.19.5-preview.1) |  |  |
+| unknown | NuGet [4.0.5362-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.PowerShell/4.0.5362-preview.1) |  |  |
+| unknown | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python/4.46.0-preview.3) |  |  |
 | unknown | NuGet [1.0.5](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.ServiceInterop/1.0.5) |  |  |
 | unknown | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Connector/1.0.0) |  |  |
 | unknown | NuGet [2.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Iot.Device/2.0.0-preview3) |  |  |

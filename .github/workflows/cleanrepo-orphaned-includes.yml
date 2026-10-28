@@ -26,7 +26,7 @@ jobs:
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo@a92cd3283e8a81d00b7c5daa6cc604dd2f9abc53 # main
+        uses: dotnet/docs-tools/cleanrepo@579fcf3c388b837a0494ec2f87443ae2e67c5ad3 # main
         with:
           function: "FindOrphanedIncludes"
           docfx_directory: "."
@@ -35,7 +35,7 @@ jobs:
 
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 #v8.1.1
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           branch: cleanrepo-orphaned-includes
           title: "Monthly chores: Delete orphaned include files"

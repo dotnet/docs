@@ -20,7 +20,7 @@ jobs:
 
       - name: Produce report artifacts
         id: report
-        uses: dotnet/docs-actions/ops-build-reporter@main
+        uses: dotnet/docs-actions/ops-build-reporter@e92e67a4b93ea5976eea3d65af4b2082818c7045 # main
         with:
           repo_token: ${{ github.token }}
 

@@ -359,6 +359,11 @@ foreach (ZipArchiveEntry entry in archive.Entries)
 }
 ```
 
+> [!IMPORTANT]
+> <xref:System.IO.Compression.ZipArchive> doesn't guarantee the integrity of an archive or its entries. If your application requires integrity guarantees, establish them through a separate trusted channel before extraction.
+>
+> The runtime doesn't guarantee that the hash-based message authentication code (HMAC) embedded in a WinZip AES entry will be validated. For example, validation might not run if you don't read the data stream to the end or if the input is malformed. Read the stream to the end to allow validation to run, but don't treat that step as an integrity guarantee. The runtime can return all entry data to your application before validation completes.
+
 Attempting to open an entry that uses an unsupported encryption method (`ZipEncryptionMethod.Unknown`) throws <xref:System.NotSupportedException>.
 
 ### Convenience methods with encryption

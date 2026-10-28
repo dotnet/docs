@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions, delegates, and events"
 description: Learn what lambda expressions are in C#, how delegates work as the type system support for lambda expressions, how to use the built-in Func and Action types, and how events use delegates for notifications.
-ms.date: 04/27/2026
+ms.date: 10/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -89,6 +89,10 @@ An *event* is a mechanism that one object (the *publisher*) uses to notify other
 Events are built on delegates. An event is a delegate field with extra restrictions enforced by the `event` keyword: outside code can only subscribe (`+=`) or unsubscribe (`-=`) from the event; only the class that declares the event can invoke (raise) it.
 
 The .NET convention for event delegate types is <xref:System.EventHandler`1?displayProperty=nameWithType>, where `T` is the type of data included with the notification. Its signature always has two parameters: the `sender` (the object that raised the event) and the event data of type `T`.
+
+:::code language="csharp" source="snippets/delegates-lambdas/Program.cs" ID="MessagePublisher":::
+
+The following snippet shows its use:
 
 :::code language="csharp" source="snippets/delegates-lambdas/Program.cs" ID="MinimalEventIntro":::
 

@@ -27,117 +27,49 @@ This article covers the following compiler errors and warnings:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 
-- [**CS0281**](#anchor-tbd): *Friend access was granted by 'assembly', but the public key of the output assembly ('public key') does not match that specified by the InternalsVisibleTo attribute in the granting assembly.*
-- [**CS1700**](#anchor-tbd): *Assembly reference 'assembly' is invalid and cannot be resolved*
-- [**CS1725**](#anchor-tbd): *Friend assembly reference 'assembly' is invalid. InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified.*
-- [**CS1726**](#anchor-tbd): *Friend assembly reference 'assembly' is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.*
-- [**CS7029**](#anchor-tbd): *Friend access was granted by 'assembly', but the strong name signing state of the output assembly does not match that of the granting assembly.*
-- [**CS7030**](#anchor-tbd): *Cannot pass null for friend assembly name*
+- [**CS0281**](#match-friend-public-keys-and-signing-states): *Friend access was granted by 'assembly', but the public key of the output assembly ('public key') does not match that specified by the InternalsVisibleTo attribute in the granting assembly.*
+- [**CS1700**](#specify-valid-friend-assembly-names): *Assembly reference 'assembly' is invalid and cannot be resolved*
+- [**CS1725**](#specify-valid-friend-assembly-names): *Friend assembly reference 'assembly' is invalid. InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified.*
+- [**CS1726**](#match-friend-public-keys-and-signing-states): *Friend assembly reference 'assembly' is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.*
+- [**CS7029**](#match-friend-public-keys-and-signing-states): *Friend access was granted by 'assembly', but the strong name signing state of the output assembly does not match that of the granting assembly.*
+- [**CS7030**](#specify-valid-friend-assembly-names): *Cannot pass null for friend assembly name*
 
-The examples use <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> to grant access to internal types and members. The complete sample projects target .NET 10 and build with corrected code by default. To run the commands below, open a terminal in the article's `snippets/friend-assembly-errors` directory.
+The *granting assembly* declares <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>. The *friend assembly* consumes its internal types and members. To resolve these diagnostics, correct the identity in the declaration and the signing configuration of the assemblies, rather than changing the members to public. For background, see [Friend assemblies](../../../standard/assembly/friend.md), the [`internal` modifier](../keywords/internal.md), and [Accessibility domains](~/_csharpstandard/standard/basic-concepts.md#743-accessibility-domains) in the C# language specification.
 
-## CS0281
+## Specify valid friend assembly names
 
-CS0281 occurs when the public key of the assembly that requests friend access doesn't match the public key in the granting assembly's `InternalsVisibleTo` declaration. Even when the assembly names match, different public keys prevent friend access.
+- **CS1700**: *Assembly reference 'assembly' is invalid and cannot be resolved*
+- **CS1725**: *Friend assembly reference 'assembly' is invalid. InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified.*
+- **CS7030**: *Cannot pass null for friend assembly name*
 
-To resolve CS0281, match the friend's assembly name and full public key to the identity in the granting assembly's attribute. If both assemblies are unsigned, omit the public key. If the output assembly has an unexpected name, set [**OutputAssembly**](../compiler-options/output.md#outputassembly) to match the friend declaration. For more information, see [Friend assemblies](../../../standard/assembly/friend.md).
+Supply a non-null assembly name to `InternalsVisibleTo` (**CS7030**). Use the friend's simple assembly name, not a path or a filename with a `.dll` or `.exe` extension. Match the name produced by the friend's project or [**OutputAssembly**](../compiler-options/output.md#outputassembly) compiler option.
 
-### Example
-
-The granting assembly, `FriendLibrary`, declares a public key for `FriendConsumer`:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/granting-assembly/FriendLibrary.cs" id="MismatchedFriendKey":::
-
-The granting assembly also defines an internal member:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/granting-assembly/FriendLibrary.cs" id="FriendMember":::
-
-The unsigned `FriendConsumer` assembly accesses that member:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/public-key-mismatch/Program.cs" id="FriendAccess":::
-
-To reproduce CS0281, build with the `DEMONSTRATE_CS0281` symbol. The compiler reports that the output assembly's public key is empty and doesn't match the declared key:
-
-```powershell
-dotnet build .\public-key-mismatch\FriendConsumer.csproj -p:DefineConstants=DEMONSTRATE_CS0281
-```
-
-Because both sample assemblies are unsigned, remove the public key from the friend declaration:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/granting-assembly/FriendLibrary.cs" id="MatchingFriendIdentity":::
-
-Without the diagnostic symbol, the sample uses the corrected attribute and prints `Friend access granted.`:
-
-```powershell
-dotnet run --project .\public-key-mismatch\FriendConsumer.csproj
-```
-
-## CS1700
-
-CS1700 warns that an assembly reference in an attribute, such as `InternalsVisibleTo`, isn't valid. To resolve the warning, correct the assembly name and any identity components in the attribute.
-
-### Example
-
-The following declaration uses an invalid value for `Retargetable`:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/invalid-friend-name/AssemblyInfo.cs" id="InvalidFriendName":::
-
-To reproduce CS1700, build with the `DEMONSTRATE_CS1700` symbol. The build succeeds with the warning:
-
-```powershell
-dotnet build .\invalid-friend-name\InvalidFriendName.csproj -p:DefineConstants=DEMONSTRATE_CS1700
-```
-
-For an unsigned friend assembly, use its simple assembly name:
+Correct malformed assembly identities and invalid identity-component values (**CS1700**). For example, `Retargetable=f` isn't a valid component value. For an unsigned friend, use a simple assembly name:
 
 :::code language="csharp" source="./snippets/friend-assembly-errors/invalid-friend-name/AssemblyInfo.cs" id="ValidFriendName":::
 
-Without the diagnostic symbol, the project builds without the warning.
+Remove `Version`, `Culture`, and `ProcessorArchitecture` components from the friend declaration (**CS1725**). For a strong-named friend, include its full `PublicKey`, not a `PublicKeyToken`. For compatibility, Roslyn accepts some legacy public-key-token forms but ignores the token value; a token doesn't establish the friend's public key.
 
-## CS1725
+For assembly-level attribute syntax, see [Global attributes](../attributes/global.md) and [Attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification) in the C# language specification.
 
-CS1725 occurs when an `InternalsVisibleTo` declaration includes a version, culture, public key token, or processor architecture. Friend declarations don't permit these identity components.
+## Match friend public keys and signing states
 
-To resolve CS1725, remove the unsupported components. Use the friend's simple assembly name and, when required, its full public key rather than its public key token.
+- **CS0281**: *Friend access was granted by 'assembly', but the public key of the output assembly ('public key') does not match that specified by the InternalsVisibleTo attribute in the granting assembly.*
+- **CS1726**: *Friend assembly reference 'assembly' is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.*
+- **CS7029**: *Friend access was granted by 'assembly', but the strong name signing state of the output assembly does not match that of the granting assembly.*
 
-### Example
+Match the full public key in the granting assembly's declaration to the public key of the friend assembly that you actually build (**CS0281**). Matching simple names alone doesn't resolve a key mismatch. If both assemblies are unsigned, remove a public key that was mistakenly included in the declaration:
 
-The following declaration includes a version:
+:::code language="csharp" source="./snippets/friend-assembly-errors/granting-assembly/FriendLibrary.cs" id="MatchingFriendIdentity":::
 
-:::code language="csharp" source="./snippets/friend-assembly-errors/invalid-friend-identity/AssemblyInfo.cs" id="InvalidFriendIdentity":::
+When the granting assembly is strong named, sign the friend assembly and include the friend's full public key in the declaration (**CS1726**). Signing the friend alone doesn't repair a declaration that omits its key. If friend access isn't needed, remove the declaration instead.
 
-To reproduce CS1725, build with the `DEMONSTRATE_CS1725` symbol:
-
-```powershell
-dotnet build .\invalid-friend-identity\InvalidFriendIdentity.csproj -p:DefineConstants=DEMONSTRATE_CS1725
-```
-
-To correct the declaration for an unsigned friend, remove the version:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/invalid-friend-identity/AssemblyInfo.cs" id="ValidFriendIdentity":::
-
-Without the diagnostic symbol, the project builds successfully.
-
-## CS1726
-
-CS1726 occurs when a strong-name signed assembly grants friend access without the friend's full public key. A strong-name signed assembly can grant friend access only to another strong-name signed assembly.
-
-To resolve CS1726, sign the friend assembly and include its full public key in the granting assembly's `InternalsVisibleTo` declaration. Signing the friend alone doesn't correct a declaration that omits its public key. If you don't need friend access, remove the declaration instead. For more information, see [Create signed friend assemblies](../../../standard/assembly/create-signed-friend.md).
-
-### Example
-
-The following declaration omits the friend's public key:
-
-:::code language="csharp" source="./snippets/friend-assembly-errors/missing-friend-public-key/AssemblyInfo.cs" id="MissingFriendPublicKey":::
-
-To reproduce CS1726, build with the `DEMONSTRATE_CS1726` symbol:
-
-```powershell
-dotnet build .\missing-friend-public-key\MissingFriendPublicKey.csproj -p:DefineConstants=DEMONSTRATE_CS1726
-```
-
-To correct the declaration, supply the friend's full public key:
+The signed sample's corrected declaration includes a full public key:
 
 :::code language="csharp" source="./snippets/friend-assembly-errors/missing-friend-public-key/AssemblyInfo.cs" id="FullFriendPublicKey":::
 
-Without the diagnostic symbol, the project builds successfully. The sample uses [public signing](../compiler-options/security.md#publicsign) and the included public-only `public-key.snk` file to demonstrate the compiler's identity checks without a private key. Public signing doesn't create a cryptographic signature. Normal signing requires a private key. Strong names don't provide a security boundary.
+Use the public key from your own friend assembly rather than the sample key. The sample project uses [public signing](../compiler-options/security.md#publicsign) and a public-only key file to exercise the compiler's identity checks without a private key. Public signing doesn't create a cryptographic signature.
+
+If the compiler reports incompatible signing states, rebuild the granting and consuming assemblies with compatible signing settings (**CS7029**). For an unsigned granting assembly and a strong-named consumer, either configure the granting assembly for strong naming and update its friend declaration, or stop signing the consumer if both assemblies should be unsigned. Configure the keys through build options so the compiler knows the intended identities before it resolves friend access.
+
+For complete examples, see [Create signed friend assemblies](../../../standard/assembly/create-signed-friend.md) and [Create unsigned friend assemblies](../../../standard/assembly/create-unsigned-friend.md). For key-file and signing-mode failures, see [Assembly signing errors](assembly-signing-errors.md). Strong names identify assemblies; they don't provide a security boundary.

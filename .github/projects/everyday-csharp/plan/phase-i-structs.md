@@ -21,6 +21,17 @@ Work:
 3. Extract decisions about class/struct/record shape, immutable values, copying, and shared referenced data into BS09. Remove unsupported universal size/performance prescriptions rather than teach struct choice as a fixed byte-count rule.
 4. Keep `ref struct`, ref fields, boxing-performance analysis, `in`-parameter optimization, unsafe layout, and memory-lifetime internals in reference/advanced coverage. Use examples to distinguish observable semantics from optimization claims.
 
-**Dependencies:** existing class/type-system, records, and equality articles. Coordinate the shared records article with PR 25 and migrated constructor snippets with PR 27; current canonical content is sufficient to start the semantic review without waiting for those future PRs.
+**Dependencies and sequence:** Enter after H and before J. Reuse its class/type-system, records,
+constructor, and equality vocabulary; PR 25/27's shared edits precede this delivery. Existing
+canonical coverage remains available for source review, but isn't a reason to bypass execution order.
+
+**Review units:** First revise `types/structs.md` for assignment, parameters, `default` versus
+construction, and readonly behavior. Then update the shared `types/records.md` comparison and
+its navigation/cross-links in the same coordinated delivery, or a separately reviewable follow-on
+under PR 39 before J. Use one sample with an integer and a referenced mutable collection so
+copying the value and sharing its referenced data are both observable. Check the existing
+struct introduction's “small, lightweight”/heap framing against the semantics-focused lesson;
+don't replace it with a universal allocation/performance rule. No new structs tutorial is required.
+Record any boxing or design extract still needed by BS09/BS12 before retiring shared sources.
 
 **Done when:** class rules are linked once and struct-specific differences are explicit; the existing articles retain their distinct canonical roles; examples demonstrate independent values versus shared referenced objects and `default` versus constructor behavior. A paired `record class` / `record struct` example verifies assignment, `with`, equality, and positional-property mutation; no blanket claim implies deep copying or deep immutability. Confirm actual observations with runnable examples, and update links/navigation only when content lands.

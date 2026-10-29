@@ -15,7 +15,7 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # 3a2844b7e9c422d3c10d287c895573f7108da1b3
         env:
           LIVE_BASE: ${{ github.base_ref == 'live' && github.head_ref != 'main' }}
         with:

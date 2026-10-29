@@ -2,6 +2,13 @@
 
 ## Phase E: Expressions and Statements (§12–§13) — 7 PRs
 
+**Execution reconciliation, 2026-10-29:** The expressions/statements work is a completed
+prerequisite to [G-P](README.md#execution-sequence), not a new foundation wave. Historical
+build-order notes below describe how it shipped. PR 17/#55613 is merged. PR 18's intended
+Built-in types → `expressions/operators.md` and Null operators → `expressions/index.md`
+links are both present in the checkout; no additional link-only task blocks Namespaces.
+The selection article now lives at `fundamentals/statements/selection.md`.
+
 > *Eventual TOC order (Option A, standard-faithful):* **Pattern matching (§11) → Expressions and
 > operators (§12) → Statements (§13)**. PR build order differs from TOC order because PR 13
 > (Statements: selection + iteration) and PR 14a (collections + LINQ) already shipped/are in flight;
@@ -141,6 +148,9 @@
 
 ### PR 18 — Cross-link wiring: shipped articles → Expressions section
 
+**Outcome verified in checkout, 2026-10-29:** both intended inbound links are live. Retain the
+planning ID and historical scope below; no new delivery is scheduled.
+
 > ~3 files · **sequence after PRs 15 + 16**
 
 1. Add inbound cross-links from already-shipped articles into the new Expressions section, now that both Expressions articles are live: **Built-in types → Expressions operators** (operators on the types just introduced) and **Null safety (`??`/`?.`) → Expressions overview** (reciprocal of the overview → null-operators link added in PR 15)
@@ -155,4 +165,3 @@
 
 > *Coherence check:* purely additive links to live targets; no new articles, no TOC nodes, nothing to
 > leave incomplete. Every touched article was already coherent and stays so.
-

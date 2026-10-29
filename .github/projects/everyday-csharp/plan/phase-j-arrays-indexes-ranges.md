@@ -30,6 +30,20 @@ Proposed outputs: `fundamentals/collections/indexers.md`, `fundamentals/collecti
 3. Verify supported receiver types and whether a slice copies elements or represents a view; don't generalize array/string behavior to every indexable type. Span implementation details remain advanced.
 4. Extract property/method/indexer API-choice comparisons and collection-return contracts into BS03/BS06. Keep the tutorial focused on concrete slicing tasks.
 
-**Dependencies:** properties in PR 26 for authored-indexer depth; existing collections for basic use. The ranges tutorial can reuse live reference targets without waiting for every class/interface phase.
+### Execution and sample units
+
+Enter after I; deliver PR 40 → PR 30's indexer/range concepts → the ranges tutorial if split,
+then K. Existing `fundamentals/statements/collections.md` stays the first collections owner;
+record the expand-versus-new-article gap decision before creating the conditional array article.
+
+| Unit | Reader outcome and runnable evidence | Preservation / exit |
+|---|---|---|
+| Arrays (PR 40) | Predict fixed length, aliasing, and element defaults; contrast array assignment with a slice copy. Demonstrate a jagged shape versus a rectangular shape only as needed to recognize them. | Keep the complete array reference canonical. `generics-and-arrays.md`'s generic implementation detail gets a BS12 hold, not an automatic move into Fundamentals. |
+| Indexers (PR 30) | Use/access an authored integer or text-key indexer after properties. Reuse a compact example from `indexers/using-indexers.md`; the source index's date-key example is a candidate, not its paged-data framework. | Preserve API abstraction choices from `indexers/index.md` and the property comparison for BS03/BS06. PR 41 owns the shared interface-indexer extract and final retirement coordination for that source. |
+| Ranges and tutorial (PR 30) | Predict `^1`, `..`, omitted bounds, empty ranges, exclusive ends, and invalid bounds on the actual receiver. The moved tutorial produces one useful slicing result with output. | Verify array/string slice observations without introducing span internals. Redirect `tutorials/ranges-indexes.md` only when its revised tutorial and all inbound/snippet repairs land. |
+
+**Dependencies:** H's properties/methods support authored-indexer depth; completed collections
+support basic use. Current live references can supply tutorial links. Don't wait for K to teach
+ordinary indexers or link a future interface destination; K later completes that cross-link.
 
 **Done when:** examples verify boundaries and observed copy/view behavior for the demonstrated types, all Programming Guide indexer sources have owners, the tutorial has its redirect, and collection/array/indexer/range articles cross-link instead of repeating one another.

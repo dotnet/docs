@@ -526,7 +526,7 @@ items:
     href: ./compiler-messages/friend-assembly-errors.md
     displayName: >
       friend assemblies, assembly identity, public keys, InternalsVisibleTo,
-      CS7029, CS7030
+      CS0281, CS1700, CS1725, CS1726, CS7029, CS7030
   - name: Program entry point
     href: ./compiler-messages/entry-point-errors.md
     displayName: >
@@ -1069,8 +1069,6 @@ items:
       href: ../misc/cs0271.md
     - name: CS0272
       href: ../misc/cs0272.md
-    - name: CS0281
-      href: ../misc/cs0281.md
     - name: CS0283
       href: ../misc/cs0283.md
     - name: CS0316
@@ -1471,10 +1469,6 @@ items:
       href: ../misc/cs1722.md
     - name: CS1724
       href: ../misc/cs1724.md
-    - name: CS1725
-      href: ../misc/cs1725.md
-    - name: CS1726
-      href: ./compiler-messages/cs1726.md
     - name: CS1727
       href: ../misc/cs1727.md
     - name: CS1728
@@ -1841,8 +1835,6 @@ items:
       href: ../misc/cs0665.md
     - name: CS0675
       href: ./compiler-messages/cs0675.md
-    - name: CS1700
-      href: ./compiler-messages/cs1700.md
     - name: CS1702
       href: ../misc/cs1702.md
     - name: CS1717

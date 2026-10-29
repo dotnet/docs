@@ -31,7 +31,6 @@ f1_keywords:
   - "CS1769"
   - "CS1770"
   - "CS1774"
-  - "CS1982"
   - "CS1996"
   - "CS1997"
   - "CS3028"
@@ -76,14 +75,11 @@ f1_keywords:
   - "CS7061"
   - "CS7064"
   - "CS7065"
-  - "CS7066"
   - "CS7070"
   - "CS7084"
   - "CS7086"
   - "CS7087"
-  - "CS7088"
   - "CS7089"
-  - "CS7090"
   - "CS7093"
   - "CS7094"
   - "CS7095"
@@ -92,7 +88,6 @@ f1_keywords:
   - "CS7099"
   - "CS7100"
   - "CS7101" # build only diagnostic
-  - "CS7102"
   - "CS7103"
   - "CS8001"
   - "CS8004" # build only diagnostic
@@ -119,7 +114,6 @@ f1_keywords:
   - "CS8057"
   - "CS8058"
   - "CS8070"
-  - "CS8077"
   - "CS8078" # build only diagnostic
   - "CS8079"
   - "CS8081"
@@ -132,7 +126,6 @@ f1_keywords:
   - "CS8101"
   - "CS8103"
   - "CS8104"
-  - "CS8106"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

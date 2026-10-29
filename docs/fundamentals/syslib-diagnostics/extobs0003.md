@@ -27,4 +27,4 @@ If you can't remove references to the obsolete property, suppress `EXTOBS0003` w
 
 ## See also
 
-- [HybridCache in .NET](../../core/extensions/caching.md#hybridcache)
+- [HybridCache in .NET](../../core/extensions/caching.md#hybrid-caching)

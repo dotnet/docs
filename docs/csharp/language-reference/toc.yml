@@ -517,6 +517,16 @@ items:
       CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1683, CS1704, CS1714,
       CS1760, CS7008, CS7068, CS7069, CS7071, CS7079, CS8090, CS8203, CS8206, CS8356,
       CS9286
+  - name: Assembly signing
+    href: ./compiler-messages/assembly-signing-errors.md
+    displayName: >
+      assembly signing, strong names, key files, key containers, delay signing, public signing,
+      CS7027, CS7028, CS7032, CS7033, CS7091, CS8002, CS8003, CS8102, CS8105
+  - name: Friend assemblies
+    href: ./compiler-messages/friend-assembly-errors.md
+    displayName: >
+      friend assemblies, assembly identity, public keys, InternalsVisibleTo,
+      CS7029, CS7030
   - name: Program entry point
     href: ./compiler-messages/entry-point-errors.md
     displayName: >

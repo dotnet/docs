@@ -1,16 +1,28 @@
 > 🗺️ Part of the [Everyday C# Project Map](project-map.md).
 
-## Proposed Fundamentals TOC
+## Planned Fundamentals TOC
 
-The following outline shows every article in the proposed Fundamentals section, its status (existing, needs revision, new, or pulled from another location), and key content notes.
+The following outline shows article coverage in the approved Fundamentals plan, its implementation status (existing, needs revision, new, or pulled from another location), and key content notes. Planned paths aren't live destinations; conditional outputs still require their assigned gap reviews.
 
-> **IA/status reconciliation (2026-10-16):** Building software's initial four direct articles are
-> authored and accepted in open PR [#56333](https://github.com/dotnet/docs/pull/56333), not shipped.
+> **IA/status reconciliation (2026-10-29):** Phase F is complete. Building software's four direct
+> guides shipped in [#56333](https://github.com/dotnet/docs/pull/56333) on 2026-10-19, and its
+> follow-on tutorial shipped in [#56528](https://github.com/dotnet/docs/pull/56528) on 2026-10-29.
+> The live H1/TOC label is **Build software**; the folder remains `building-software/`.
 > [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure) supersedes
 > the retired Functional techniques grouping and pending label/initial-placement questions.
-> The later OOP split below is a proposal for local review, now supported by explicit phases and
-> an 82-article source inventory. Only #55930 is targeted for completion this October. Unrelated
-> rows retain their previous planning status; this isn't a full-project delivery audit.
+> We adopted the language-foundations/applied-guidance organization and expanded task coverage
+> on 2026-10-29 in [Decision 16](decisions.md#decision-16-adopt-language-foundations-and-applied-guidance-as-the-governing-plan),
+> supported by the explicit phases and 82-article source inventory from 2026-10-16.
+> Resolve detailed OOP splits, final paths, and redirects during assigned work after Phase G's
+> namespace checkpoint. This approval doesn't move articles or start phase work. The October target
+> #55930 is delivered. Unrelated rows retain their previous status; this isn't a full-project audit.
+
+**Execution, not a live TOC move:** [Decision 17](decisions.md#decision-17-foundations-first-execution-and-source-harvesting)
+orders remaining delivery as G Namespaces → H Classes → I Structs → J Arrays/indexes/ranges →
+K Interfaces → L Enums → M Delegates/events → N Exceptions → O Attributes → P Documentation
+comments, then R's applied harvesting batches. Expressions/statements/patterns are completed
+prerequisites. Q stays dependency-based supporting work. The shipped Build software node stays
+where it is; its early placement does not imply the new applied backlog should run before foundations.
 
 ### Program structure (§7)
 
@@ -88,10 +100,10 @@ section). The older `fundamentals/functional/` destination is retired.
 | 94 | Property and positional patterns | ✅ Shipped ([#56113](https://github.com/dotnet/docs/pull/56113)) | Property patterns (C# 8), extended property patterns (C# 10), positional patterns (C# 8) |
 | 95 | Relational, logical, and parenthesized patterns | ✅ Shipped ([#56113](https://github.com/dotnet/docs/pull/56113)) | Relational patterns, combinator/logical patterns (`and`, `or`, `not`), parenthesized patterns (C# 9). **Title as shipped:** "Relational, logical, and parenthesized patterns" (was "Relational and logical patterns" in this plan) |
 | 96 | List and slice patterns | ✅ Shipped ([#56113](https://github.com/dotnet/docs/pull/56113)) | List patterns (C# 11), slice patterns. **Title as shipped:** "List and slice patterns" (was "List patterns" in this plan) |
-| 33 | Discards | ✅ Exists | Keep or merge into pattern matching |
-| 34 | Deconstruction | 🟡 Revise | Records, tuples, custom `Deconstruct` |
-| 73 | Tutorial: Explore pattern matching | 📥 Pull from Tutorials | |
-| 78 | Tutorial: Build data-driven algorithms with pattern matching | ✅ Exists | |
+| 33 | Discards and the discard pattern | ✅ Shipped ([#55966](https://github.com/dotnet/docs/pull/55966)) | Moved/reworked at `fundamentals/patterns/discards.md`, with its snippet project and redirects. |
+| 34 | Deconstruct tuples and other types | ✅ Shipped ([#56286](https://github.com/dotnet/docs/pull/56286)) | `fundamentals/patterns/deconstruct.md`; tuples, records, custom/extension `Deconstruct`, mixed declarations, and discards. H1/TOC as shown; metadata title retains "Deconstructing tuples and other types". |
+| 73 | Tutorial: Pattern matching basics | ✅ Shipped ([#56286](https://github.com/dotnet/docs/pull/56286)) | Canal-lock tutorial moved from `tutorials/patterns-objects.md` to `fundamentals/tutorials/pattern-matching-basics.md`. |
+| 78 | Tutorial: Build algorithms using pattern matching | ✅ Relocated ([#56286](https://github.com/dotnet/docs/pull/56286)) | Existing toll-calculator tutorial now at `fundamentals/tutorials/build-algorithms-using-pattern-matching.md`, not either earlier proposed `pattern-matching`/`pattern-matching-advanced` slug. |
 
 ### Expressions and operators (§12)
 
@@ -123,13 +135,11 @@ Sequenced before Statements (§13) per the standard. Articles live under `fundam
 
 ### Building software
 
-**Authored/accepted, not shipped:** Bill completed and accepted the task for PR
-[#56333](https://github.com/dotnet/docs/pull/56333), **Start on building fundamentals sections**.
-On 2026-10-16 the PR is **OPEN**, `mergedAt=null`, at
-`4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e` on `more-everyday-csharp`.
-Its `docs/csharp/toc.yml`, lines 153–162, adds these four direct children after Expressions and
-statements and before Object-oriented programming. There is no Functional techniques subgroup.
-These destinations describe the PR head, not implementation on this planning branch.
+**Shipped:** [#56333](https://github.com/dotnet/docs/pull/56333), merged 2026-10-19
+(`7a5a9cf8549d`), adds four direct guides after Expressions and statements and before
+Object-oriented programming in `docs/csharp/toc.yml`. The live H1 and section label are **Build
+software**; the overview metadata title remains "Building software". There is no Functional
+techniques subgroup. All four guides are present on this rebased planning branch.
 
 The section's durable purpose is to compare valid algorithmic approaches and what their shape,
 names, scope, dependencies, and timing communicate to developers and coding agents. It isn't
@@ -138,10 +148,10 @@ and [Decision 15](decisions.md#decision-15-durable-overviews-and-contextual-comp
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 35 | Overview | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/index.md`: long-term design-intent framing; contextual paragraphs with small inline examples compare inline/named behavior, local/private helpers, parameters/capture, and completed/deferred results. Combined example retained. |
-| 36 | Lambda expressions | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/lambdas.md`: pass short behavior, parameter forms, expression/statement bodies, capture and `static`, lambda vs. method group/local function. Supersedes the planned "in depth" title; links to complete syntax reference. |
-| 37 | Local functions | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/local-functions.md`: helper scope, parameters vs. capture, `static`, recursion, and local function vs. lambda/type-level method. Replaces the Programming Guide article; don't infer coverage of every former inventory item, such as attributes. |
-| 38 | Iterators | ✍️ Authored/accepted in open #56333 | `fundamentals/building-software/iterators.md`: synchronous `IEnumerable<T>`, `yield return`/`yield break`, `foreach`, deferred execution, and choice of iterator, completed collection, loop, or standard LINQ operation. Consolidates two legacy iterator articles. |
+| 35 | Overview | ✅ Shipped in #56333 | `fundamentals/building-software/index.md`: long-term design-intent framing; contextual paragraphs with small inline examples compare inline/named behavior, local/private helpers, parameters/capture, and completed/deferred results. Combined example retained; #56528 adds the tutorial link. |
+| 36 | Lambda expressions | ✅ Shipped in #56333 | `fundamentals/building-software/lambdas.md`: pass short behavior, parameter forms, expression/statement bodies, capture and `static`, lambda vs. method group/local function. Supersedes the planned "in depth" title; links to complete syntax reference. |
+| 37 | Local functions | ✅ Shipped in #56333 | `fundamentals/building-software/local-functions.md`: helper scope, parameters vs. capture, `static`, recursion, and local function vs. lambda/type-level method. Replaces the Programming Guide article; don't infer coverage of every former inventory item, such as attributes. |
+| 38 | Iterators | ✅ Shipped in #56333 | `fundamentals/building-software/iterators.md`: synchronous `IEnumerable<T>`, `yield return`/`yield break`, `foreach`, deferred execution, and choice of iterator, completed collection, loop, or standard LINQ operation. Consolidates two legacy iterator articles. |
 
 Four snippet projects accompany these articles under `fundamentals/building-software/snippets/`:
 `overview/`, `lambdas/`, `local-functions/`, and `iterators/`. Redirects preserve the retired
@@ -150,25 +160,30 @@ updated in the PR. See [source reconciliation](content-sources.md#building-softw
 The final commit changes the overview and lightly reframes companion prose only; snippets are
 unchanged in that editorial pass.
 
-**Future work, not part of #56333:**
+**Follow-on tutorial, shipped separately from #56333:**
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 97 | Tutorial: Combined techniques (historical title: Functional techniques in C#) | 📝 October's only completion target: #55930 | Reconcile title, sample gap, placement, and live links with final #56333 decisions. See [PR 23's dependency gate](plan/phase-f-patterns-functional.md#dependency-gate-reconcile-with-pr-56333). No new grouping or duplicate overview. |
-| 39 / 87 | Object roles, encapsulation, and composition | 📝 Proposed merge, BS01 / PR 33 | Harvest the existing OOP overview and encapsulation inventory into proposed `building-software/object-design.md`, not two competing overviews. |
-| 106 | Construction and initialization choices | 📝 Proposed, BS02 | `building-software/object-initialization.md`; constructors, required inputs, initializers, defaults, and mutation. |
-| 107 | Member-shape choices | 📝 Proposed, BS03 | `building-software/member-design.md`; fields, properties, methods, and indexers as caller contracts. |
-| 46 | Callbacks and notifications | 📝 Proposed, BS04 | `building-software/callbacks-and-events.md`; replaces "lambdas in OOP", building on existing practical guides. |
-| 108 | Contracts and dependencies | 📝 Proposed, BS05 | `building-software/contracts-and-dependencies.md`; interface, base implementation, and collaborator choices. |
-| 109 | Collection and sequence contracts | 📝 Proposed, BS06 | `building-software/collection-contracts.md`; mutation, lookup, output shape, and timing without duplicating collections/iterators. |
-| 53 | Resource ownership and lifetime | 📝 Proposed, BS07 / PR 32 | `building-software/resource-lifetime.md`; everyday ownership/cleanup, not finalizer/dispose-pattern authoring. |
-| 110 | Failure contracts | 📝 Proposed, BS08 | `building-software/failure-contracts.md`; expected failed input versus exceptions. |
-| 111 | Values, identity, equality, and copying | 📝 Proposed, BS09 | `building-software/value-and-identity-design.md`; link existing equality and type introductions. |
-| 112 | Extensions versus wrappers | 📝 Proposed, BS10 | `building-software/extensions-or-wrappers.md`; ownership/state/API choices rather than repeated syntax. |
+| 97 | Tutorial: Combine C# techniques to generate badge labels | ✅ Shipped ([#56528](https://github.com/dotnet/docs/pull/56528)) | `fundamentals/tutorials/functional-techniques.md`, under Tutorials; linked from Build software. One incremental sample combines lambdas, LINQ, an iterator, patterns, and a local function. #55930 is complete; [PR 23's dependency gate](plan/phase-f-patterns-functional.md#dependency-gate-reconcile-with-pr-56333) is satisfied. |
+
+**Approved future task coverage, not part of Phase F:**
+
+| # | Article | Status | Notes |
+|---|---|---|---|
+| 39 / 87 | Object roles, encapsulation, and composition | 📝 Planned merge, BS01 / PR 33 | Harvest the existing OOP overview and encapsulation inventory into planned `building-software/object-design.md`, not two competing overviews. |
+| 106 | Construction and initialization choices | 📝 Planned, BS02 | `building-software/object-initialization.md`; constructors, required inputs, initializers, defaults, and mutation. |
+| 107 | Member-shape choices | 📝 Planned, BS03 | `building-software/member-design.md`; fields, properties, methods, and indexers as caller contracts. |
+| 46 | Callbacks and notifications | 📝 Planned, BS04 | `building-software/callbacks-and-events.md`; replaces "lambdas in OOP", building on existing practical guides. |
+| 108 | Contracts and dependencies | 📝 Planned, BS05 | `building-software/contracts-and-dependencies.md`; interface, base implementation, and collaborator choices. |
+| 109 | Collection and sequence contracts | 📝 Planned, BS06 | `building-software/collection-contracts.md`; mutation, lookup, output shape, and timing without duplicating collections/iterators. |
+| 53 | Resource ownership and lifetime | 📝 Planned, BS07 / PR 32 | `building-software/resource-lifetime.md`; everyday ownership/cleanup, not finalizer/dispose-pattern authoring. |
+| 110 | Failure contracts | 📝 Planned, BS08 | `building-software/failure-contracts.md`; expected failed input versus exceptions. |
+| 111 | Values, identity, equality, and copying | 📝 Planned, BS09 | `building-software/value-and-identity-design.md`; link existing equality and type introductions. |
+| 112 | Extensions versus wrappers | 📝 Planned, BS10 | `building-software/extensions-or-wrappers.md`; ownership/state/API choices rather than repeated syntax. |
 | 113 | Parse input | 📝 Conditional task, BS11 | Proposed `building-software/common-tasks/parse-input.md` only if BS08/existing string tasks leave a distinct procedure to teach. |
 | 66 | Design-alternatives inventory | 📝 Redistribute, no separate article | The former Coding style commitment feeds BS01-BS11; the existing Building software overview owns the comparison frame. |
 
-These are **future backlog**, not additions to #56333's authored four-article scope. See
+These are **future backlog**, not additions to Phase F's shipped scope. See
 [Phase R](plan/phase-r-building-software.md) for source paths, dependencies, and done criteria.
 BS12 tracks preservation/retirement and doesn't create a reader-facing article.
 
@@ -180,8 +195,8 @@ BS12 tracks preservation/retirement and doesn't create a reader-facing article.
 
 ### Classes (§15)
 
-Proposed construct-first ownership in [Phase H](plan/phase-h-classes.md). Retain current canonical
-introductions, and approve deeper destinations before moving articles. Design extracts belong to
+Approved construct-first ownership in [Phase H](plan/phase-h-classes.md). Retain current canonical
+introductions, and resolve deeper destinations during assigned work before moving articles. Design extracts belong to
 Building software, not a competing OOP paradigm section.
 
 Classes supplies the shared baseline for the later Structs and Interfaces differences. Record-class
@@ -215,7 +230,7 @@ the same retained records article instead of independent guides.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 104 | Array semantics | 📝 Proposed gap review, PR 40 | Expand existing collections teaching first; proposed `fundamentals/collections/arrays.md` only if distinct depth is justified. |
+| 104 | Array semantics | 📝 Planned gap review, PR 40 | Expand existing collections teaching first; candidate `fundamentals/collections/arrays.md` only if distinct depth is justified. |
 | 49 | Indexers | 📥 Pull, PR 30 | Proposed `fundamentals/collections/indexers.md`; property/indexer syntax distinct from API-shape choices in BS03. |
 | 105 | Indexes and ranges | 📝 Proposed, PR 30 | `fundamentals/collections/indexes-ranges.md`; exclusive end, supported receivers, and verified copy/view behavior. |
 | 75 | Tutorial: Explore indexes and ranges | 📥 Pull, PR 30 | Proposed `fundamentals/tutorials/ranges.md`; preserve the source tutorial URL by redirect. |
@@ -286,27 +301,29 @@ the same retained records article instead of independent guides.
 
 | Work state | Scope | Meaning |
 |---|---|---|
-| Authored/accepted, open PR | 4 articles in #56333 | Building software overview, lambdas, local functions, iterators; not merged |
-| October completion target | 1 task, #55930 / PR 23 | Tutorial outcome/title/sample depend on final #56333 decisions |
+| Approved architecture and task coverage | Decision 16, 2026-10-29 | Language foundations plus applied guidance; detailed splits/paths remain phase work, with concrete OOP redistribution after the Phase G checkpoint; no implementation started by approval |
+| Phase F complete | PRs 19-23, all merged | Pattern section, deconstruction, two pattern tutorials, four Build software guides, and the badge-label tutorial; see the [merge evidence](plan/phase-f-patterns-functional.md) |
+| Former October completion target | #55930 / PR 23 | Delivered in #56528 on 2026-10-29; no next phase scheduled by this reconciliation |
 | Standard-aligned expansion | Phases H-P | Classes through Documentation comments; reuse current introductions and deeper reference |
 | Applied guidance and retirement | BS01-BS12 | Future backlog; BS12 isn't an article and BS11 may merge into existing coverage |
-| Programming Guide ledger | 82 current articles | Every source has a destination/action; no moves completed by this plan |
+| Programming Guide ledger | 82 articles at the 2026-10-16 snapshot | Two PR 22 source consolidations shipped in #56333; other rows remain future dispositions |
 
 The old ~93-article estimate is retired rather than presented as a current census. Some rows are
-retained introductions, some are proposed merges/extracts, and some are conditional new articles;
+retained introductions, some are planned merges/extracts, and some are conditional new articles;
 adding them would double-count future outputs. Stable article IDs preserve traceability, not a
 guaranteed article total. Consult individual shipped rows for delivery evidence.
 
-## Complete proposed Fundamentals TOC
+## Complete planned Fundamentals TOC
 
-The following is a proposed TOC, not a copy of the live TOC or an approved reordering. Building
-software's first four children match #56333; later children are explicit future backlog. New
+The following is the target TOC for the approved plan, not a copy of the live TOC or authorization
+to reorder it now. Building software's shipped placement and first four children remain intact;
+later children are approved future task coverage. New
 Classes-through-Documentation-comments checkpoints follow standard order while retaining canonical
 introduction URLs. Conditional arrays/interface/parsing pages appear only if their task's gap
 review justifies separate articles. Never publish those nodes before real content lands.
 
 ```yml
-# This is the proposed structure for the Fundamentals section.
+# This is the planned structure, not the live Fundamentals TOC.
 # It follows the C# standard ordering (§7→§23) and incorporates
 # all decisions from the planning discussion.
 
@@ -452,38 +469,35 @@ review justifies separate articles. Never publish those nodes before real conten
   - name: Pattern matching
     items:
     - name: Overview
-      # REVISE: high-level intro to pattern matching and switch expressions (C# 8).
+      # SHIPPED: #55966; revised again in #56113.
       # Motivate when/why to use patterns vs. imperative branching.
       href: fundamentals/patterns/pattern-matching.md
     - name: Declaration, constant, and var patterns
-      # NEW: declaration patterns, constant patterns, var patterns
+      # SHIPPED: #55966; declaration, constant, and var patterns.
       href: fundamentals/patterns/declaration-constant-var-patterns.md
     - name: Type patterns
-      # NEW: type-testing patterns, pattern matching with generics (C# 7.1)
+      # SHIPPED: #55966; type tests and generic inputs.
       href: fundamentals/patterns/type-patterns.md
     - name: Property and positional patterns
-      # NEW: property patterns (C# 8), extended property (C# 10),
-      # positional patterns (C# 8)
+      # SHIPPED: #56113; property, extended property, and positional patterns.
       href: fundamentals/patterns/property-positional-patterns.md
     - name: Relational, logical, and parenthesized patterns
-      # NEW: relational patterns, and/or/not combinators,
-      # parenthesized patterns (C# 9)
+      # SHIPPED: #56113; relational, logical, and parenthesized patterns.
       href: fundamentals/patterns/relational-logical-patterns.md
     - name: List and slice patterns
-      # NEW: list patterns (C# 11), slice patterns
+      # SHIPPED: #56113; list and slice patterns.
       href: fundamentals/patterns/list-patterns.md
-    - name: Discards
-      # EXISTS: keep or merge into pattern matching
+    - name: Discards and the discard pattern
+      # SHIPPED: #55966; moved/reworked with redirects.
       href: fundamentals/patterns/discards.md
-    - name: Deconstruction
-      # REVISE: records, tuples, custom Deconstruct;
-      # mixed deconstructions (C# 10—use without explanation)
+    - name: Deconstruct tuples and other types
+      # SHIPPED: #56286; records, tuples, custom/extension Deconstruct, mixed forms.
       href: fundamentals/patterns/deconstruct.md
-    - name: "Tutorial: Explore pattern matching"
-      # PULL from current Tutorials section
-      href: fundamentals/tutorials/pattern-matching.md
-    - name: "Tutorial: Build data-driven algorithms with pattern matching"
-      href: fundamentals/tutorials/pattern-matching-advanced.md
+    - name: "Tutorial: Pattern matching basics"
+      # SHIPPED: #56286; live navigation places both pattern tutorials under Tutorials.
+      href: fundamentals/tutorials/pattern-matching-basics.md
+    - name: "Tutorial: Build algorithms using pattern matching"
+      href: fundamentals/tutorials/build-algorithms-using-pattern-matching.md
 
   # ─── §12 Expressions and operators ───
   # NEW section (Decision 12). Fills the §12 operator gap; before §13 Statements.
@@ -533,10 +547,10 @@ review justifies separate articles. Never publish those nodes before real conten
       # renders as the first child of the combined "Expressions and statements" node.
       href: fundamentals/expressions/equality.md
 
-  # ─── Building software: authored/accepted in OPEN PR #56333, not shipped ───
-  # First four direct children match 4737e1c7fe. No Functional techniques subgroup.
-  # In that PR this follows the combined Expressions and statements node.
-  - name: Building software
+  # ─── Build software: SHIPPED in #56333 (2026-10-19) ───
+  # First four direct children match the merged TOC. No Functional techniques subgroup.
+  # Live placement follows the combined Expressions and statements node.
+  - name: Build software
     items:
     - name: Overview
       # Compare behavior and design intent, not the current PR inventory.
@@ -577,10 +591,6 @@ review justifies separate articles. Never publish those nodes before real conten
         # CONDITIONAL: omit if BS08/existing string tasks own the whole procedure.
         href: fundamentals/building-software/common-tasks/parse-input.md
 
-  # October target #55930 / PR 23 is NOT authored in #56333.
-  # Historical proposed slug: fundamentals/tutorials/functional-techniques.md.
-  # Title/placement/sample need reconciliation before a live TOC entry is added.
-
   # ─── §14 Namespaces ───
   - name: Namespaces
     items:
@@ -590,7 +600,7 @@ review justifies separate articles. Never publish those nodes before real conten
       # The program-structure namespaces article is slimmed to a brief intro + link here.
       href: fundamentals/namespaces/overview.md
 
-  # Proposed later taxonomy: review before moving the existing OOP node.
+  # Approved construct taxonomy: resolve article splits after Phase G before OOP moves.
   # Canonical type-introduction URLs stay unchanged.
   # §15 Classes
   - name: Classes
@@ -725,4 +735,11 @@ review justifies separate articles. Never publish those nodes before real conten
       # NEW: Roslyn analyzers, .NET SDK analyzers, StyleCop,
       # .editorconfig and AnalysisLevel configuration
       href: fundamentals/coding-style/analyzers.md
+
+  # Live Tutorials entry added in #56528 (2026-10-29), closing #55930 / PR 23.
+  # Other tutorial rows above remain beside their planned subject owners.
+  - name: Tutorials
+    items:
+    - name: "Tutorial: Combine C# techniques to generate badge labels"
+      href: fundamentals/tutorials/functional-techniques.md
 ```

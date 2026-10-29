@@ -2,14 +2,31 @@
 
 ## Phase G: Namespaces (§14)
 
-> **Planning revision for review:** Phase G now owns Namespaces alone. The old mixed OOP
-> inventory is redistributed into standard-aligned construct phases and Building software.
-> These proposed destinations need Bill's review before implementation; PR #56333's approved
-> Building software name/initial placement isn't reopened.
+> **Approved plan (2026-10-29, Decision 16):** Phase G owns Namespaces alone. The old mixed OOP
+> inventory is assigned to standard-aligned construct phases and Building software.
+> Complete namespace consolidation, then revisit concrete OOP redistribution at this checkpoint.
+> Detailed article splits, final paths, and redirect targets are resolved in the assigned work;
+> PR #56333's shipped Building software placement isn't reopened. Approval doesn't start this PR.
 
 ### PR 24 — Namespaces (CONSOLIDATE, Decision 12b)
 
 > ~5 files
+
+**Outcome and entry:** After the completed expressions/statements/patterns work, readers can
+organize types and resolve a naming collision before declaring larger types in H. This is the
+first remaining delivery in the [execution sequence](README.md#execution-sequence).
+
+| Review unit | Source and intended work | Evidence at completion |
+|---|---|---|
+| Canonical depth | Reuse the shipped `docs/csharp/fundamentals/program-structure/namespaces.md`, not a fresh parallel explanation; verify declaration/import rules against `docs/csharp/language-reference/keywords/namespace.md` and `using-directive.md`. Move full teaching depth into the planned overview. | File-scoped and block-scoped equivalents build; two same-named types demonstrate qualification and an alias; `using` doesn't imply an assembly/package reference. |
+| Early orientation and route repair | Keep a complete short program-structure introduction and its URL; route deeper inbound links to the overview, keeping introductory links early. | One depth owner, working TOC entries at both learning checkpoints, valid snippet regions/outbound links; no redirect from the retained orientation URL. |
+
+Use a small multi-file snippet project where namespace organization requires it; a standalone
+single-file app needn't carry artificial scaffolding. Show project implicit usings versus an
+explicit `global using`, not SDK defaults as a language rule. Exclude assembly loading,
+`extern alias` binding detail, and reference-resolution catalogs; link reference. No new namespace
+tutorial is needed. The namespace/OOP checkpoint resolves source ownership, not a second
+architecture approval or permission to start R early.
 
 1. New `fundamentals/namespaces/overview.md` — **canonical §14 Namespaces article**: motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; `global using` directives; namespace aliases; nested namespaces
 2. **Slim the already-shipped `fundamentals/program-structure/namespaces.md`** to a brief intro + cross-reference to the canonical article (avoid duplicate coverage). Retain its working introduction URL; update inbound links that need the full treatment.

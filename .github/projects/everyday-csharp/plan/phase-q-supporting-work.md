@@ -4,6 +4,19 @@
 
 These aren't additional standard clauses. Keep them distinct from the Classes-through-Attributes sequence and from applied Building software comparisons.
 
+### Placement and genuine dependencies
+
+Q is a supporting lane, not a phase to insert arbitrarily between G-P or ahead of R. The
+[foundation-first sequence](README.md#execution-sequence) governs new applied growth.
+
+| Task | Actual prerequisite and placement |
+|---|---|
+| PR 34 | Class/method/task vocabulary and N's exception-observation links support the beginner async subset. Schedule when that subset is selected; synchronous R examples needn't wait. An applied example that uses async disposal or async enumeration must first have live consuming-async guidance, or remain synchronous/link to the existing async focus area. |
+| PR 37 | Existing coding conventions and a verified SDK analyzer configuration, not the new construct phases. It can support sample review without becoming a delivery gate. |
+| PR 45 | Coding-style consolidation is independent. A console-teleprompter rewrite depends on PR 34 only if its retained outcome actually uses async; inspect the current tutorial before setting that gate. Redistribution of design-alternatives follows R's batches, not a competing overview. |
+
+No new tutorial commitment or async prerequisite is inferred for the shipped Phase F tutorial.
+
 ### PR 34 — Async basics
 
 Retain the existing scope: extract the beginner consuming subset of `docs/csharp/asynchronous-programming/index.md` into proposed `fundamentals/async/{index,consuming-async}.md`, only after checking current canonical ownership.

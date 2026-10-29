@@ -20,6 +20,17 @@ Proposed teaching destinations: `fundamentals/xml-comments.md` and `fundamentals
 4. Address [dotnet/docs#34830](https://github.com/dotnet/docs/issues/34830) through a deliberate teaching/reference split: extract introductory workflow into Fundamentals, retain the complete tag/`cref` rules as reference unless a separately reviewed move preserves that function.
 5. The coding-style/design-alternatives and console-tutorial pieces formerly bundled in PR 36 are routed to [PR 45](phase-q-supporting-work.md#pr-45--coding-style-and-console-tutorial-reconciliation) and [Building software](phase-r-building-software.md), not dropped.
 
-**Dependencies:** enough class/member/interface vocabulary to explain contracts. Use existing declarations until future phases land; no source generator or documentation-server dependency is needed to prove XML generation.
+### Review units and closeout
+
+| Unit | Reuse / reader outcome | Completion evidence |
+|---|---|---|
+| Comment concept | Reconcile the existing XML tutorial's contract/IntelliSense motivation with `xmldoc/index.md` and `recommended-tags.md`; the planned `xml-comments.md` teaches writing useful API contracts, not the complete tag catalog. | A short documented method has meaningful summary/parameter/return/failure text and a resolving `cref`; comments describe obligations rather than repeat names. |
+| XML generation procedure | Check the tutorial's existing `GenerateDocumentationFile`/build steps before creating `common-tasks/documentation-tools.md`; if they already own the complete bounded procedure, retain them and omit the duplicate how-to. | Build an existing project, inspect its generated XML/member identifiers and actual warnings, and name the output path. No website generator is required. |
+| Existing tutorial and reference | Keep `fundamentals/tutorials/xml-documentation.md`'s outcome of documenting the preceding OOP sample; review its dependence on `fundamentals/tutorials/oop.md` if that sample changes. Keep full tags/`cref` lookup in Language Reference. | Live links connect concept → tutorial → full reference; any extracted reference introduction points to Fundamentals without destroying reference completeness. |
+
+**Dependencies and sequence:** Enter after O, using H/K's member/interface contract vocabulary.
+No source generator or documentation-server dependency is needed to prove XML generation.
+PR 36 closes the G-P foundation wave; R follows only after its content/navigation checks pass.
+Q's optional style/analyzer/console work isn't an extra foundation gate.
 
 **Done when:** the tutorial and concept/how-to pages have distinct outcomes, code and `cref` targets compile, generated XML is verified, reference tags keep a canonical lookup home, and any approved retirements/moves include redirects and navigation/link repairs.

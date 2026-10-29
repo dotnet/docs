@@ -48,7 +48,7 @@ entirely.
 
 **Rationale:** The C# standard represents a carefully considered progression through the language. Following it provides a coherent learning path and makes it easy for readers familiar with the standard to find content. It also provides a principled answer to "where does this topic go?" for any future content.
 
-**Revisit status:** Preserve this ordering for canonical syntax and semantics. Decision 13 records the subsequent two-part hypothesis. Decision 14 supersedes the former Functional techniques placement with the approved Building software section; the broader OOP boundary remains open.
+**Revisit status:** Preserve this ordering for canonical syntax and semantics. Decision 13 records the subsequent two-part hypothesis, adopted as the governing plan in Decision 16. Decision 14 supersedes the former Functional techniques placement with the shipped Building software section; detailed OOP splits remain phase work.
 
 ### Decision 7: Delegates scope — `Func<>` and `Action<>` are fundamental
 
@@ -56,7 +56,7 @@ entirely.
 
 **Rationale:** Every C# developer uses `Func<>` and `Action<>` through LINQ, async callbacks, and everyday APIs. Lambda expressions are the idiomatic way to create delegates. The full delegate model with custom declarations and multicast invocation lists is a deeper topic that most developers encounter less frequently.
 
-**Structure:** The Type system introduction remains at `fundamentals/types/delegates-lambdas.md`. Practical lambda guidance (parameter/body forms, capture, static lambdas, and comparisons with named helpers) is authored in `fundamentals/building-software/lambdas.md` in open PR #56333. This supersedes the former Functional techniques destination. The proposed OOP callback/event-handler article remains future work, not delivered by that PR.
+**Structure:** The Type system introduction remains at `fundamentals/types/delegates-lambdas.md`. Practical lambda guidance (parameter/body forms, capture, static lambdas, and comparisons with named helpers) shipped at `fundamentals/building-software/lambdas.md` in PR #56333 (merged 2026-10-19). This supersedes the former Functional techniques destination. The proposed OOP callback/event-handler article remains future work, not delivered by that PR.
 
 ### Decision 8: Generics scope — consuming is fundamental, authoring is Focus
 
@@ -129,8 +129,8 @@ OOP → Async → Exceptions → Attributes → XML docs → Coding style. Patte
 
 Preserve this as the historical Option A record. Decision 13 introduced the two-part hypothesis;
 Decision 14 resolves the former Functional techniques inventory as direct children of Building
-software after Expressions and statements in PR #56333. The broader OOP placement and split still
-need a decision before Phase G implementation.
+software after Expressions and statements in PR #56333. Decision 16 adopts the broader
+construct/design separation; concrete OOP redistribution follows the Phase G namespace checkpoint.
 
 **§12 coverage map (for the authors of the two new articles).** §12 is the standard's largest clause
 and its subclauses are scattered across already-merged sections; the two new articles own only the
@@ -176,9 +176,9 @@ per the build-clean rule.
 
 ### Decision 13: Two-part Fundamentals IA hypothesis
 
-**Status:** Historical working hypothesis, partially resolved by Decision 14. Building software's
-name, direct four-article structure, and initial placement are approved. The broader two-part
-model and OOP split aren't approved by PR #56333.
+**Status:** Historical working hypothesis, adopted as the governing plan on
+2026-10-29 in Decision 16. Decision 14 separately settled Building software's name,
+direct four-article structure, and initial placement; PR #56333 didn't itself approve the broader model.
 
 **Hypothesis:** Organize Fundamentals in two parts:
 
@@ -201,17 +201,23 @@ relational/logical/parenthesized, list/slice). Their neutral, construct-first tr
 input to this IA decision; being merged doesn't settle the permanent Functional/OOP taxonomy, and
 neither PR should be read as expanding into future technique guidance.
 
-**Remaining decision:** Confirm the broader two-part model and which mixed OOP articles split or
-move. Don't reopen Building software's approved name or require separate Part 1 homes for its
-three practical guides before PR #56333 can proceed. Complete syntax and restrictions remain
-linked reference material. Preserve the earlier checkpoint to revisit OOP placement after
-Phase G content exists.
+**Current implementation questions:** Decision 16 settles the broader model and adopts the
+expanded phase coverage. Resolve each mixed OOP article's exact split boundaries, retained
+content, destinations, and redirect targets during its assigned work, after the Phase G namespace
+checkpoint. Don't reopen the shipped section's initial placement or require separate Part 1 homes
+for #56333's lambda, local-function, and iterator guides. Complete syntax and restrictions remain
+linked reference material.
 
 ### Decision 14: Building software purpose and initial structure
 
-**Accepted by:** Bill Wagner; reconciled 2026-10-16 against open PR
+**Accepted:** originally reconciled 2026-10-16 against then-open PR
 [#56333](https://github.com/dotnet/docs/pull/56333), head
 `4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e`.
+
+**As shipped, reconciled 2026-10-29:** #56333 merged 2026-10-19 at `7a5a9cf8549d`.
+Final review changed the H1 and TOC label to **Build software**; the folder remains
+`building-software/`, and the overview metadata title remains "Building software".
+The accepted purpose and direct-child structure below are unchanged.
 
 **Choice:** Building software teaches how valid approaches to algorithms can produce the same
 results yet communicate different design intent. Developers and coding agents infer intent from
@@ -219,7 +225,7 @@ code shape, names, scope, dependencies, and execution timing. The section combin
 elements introduced earlier to help readers align those expectations with their actual design.
 Its purpose isn't a catalog of the features in the current PR or a tutorial on one paradigm.
 
-**Initial structure:** `docs/csharp/toc.yml` at the PR head, lines 153–162, places **Building
+**Initial structure:** The merged `docs/csharp/toc.yml` places **Build
 software** after Expressions and statements and before Object-oriented programming. Its direct
 children are Overview, Lambda expressions, Local functions, and Iterators, at
 `fundamentals/building-software/{index,lambdas,local-functions,iterators}.md`. There is no nested
@@ -229,17 +235,19 @@ intermediate proposal to nest that group beneath Building software.
 The three companion articles lead with practical choices, then supply enough syntax and examples
 to apply them. They link to complete reference rules rather than claim exhaustive syntax ownership.
 The Type system delegates/lambdas introduction remains separate and links to the practical guide.
-The future combined-techniques tutorial and OOP work aren't completed by this PR.
+The combined-techniques tutorial shipped separately in #56528; the future OOP work isn't completed
+by either PR.
 
-**Delivery status:** Bill accepted/completed the implementation task, but the PR is **OPEN**
-(`mergedAt=null`). Its four articles, snippet projects, legacy-source consolidation, redirects,
-inbound-link updates, and TOC changes are authored and accepted, **not merged or shipped**.
+**Delivery status:** Its four articles, snippet projects, legacy-source consolidation, redirects,
+inbound-link updates, and TOC changes **shipped in #56333**. The previously accepted/open status
+is superseded by the merge. The separate combined-techniques tutorial subsequently shipped in
+[#56528](https://github.com/dotnet/docs/pull/56528) on 2026-10-29; it doesn't complete the future OOP work.
 See [source coverage](content-sources.md#building-software-source-reconciliation) and
 [article status](toc-and-articles.md#building-software).
 
 ### Decision 15: Durable overviews and contextual comparisons
 
-**Accepted by:** Bill Wagner, 2026-10-16; reflected in PR #56333 at `4737e1c7fe`.
+**Accepted:** 2026-10-16; reflected in PR #56333 at `4737e1c7fe`.
 
 **Choice:** Section overviews explain the section's long-term purpose, not the current PR contents.
 Comparison guidance names valid alternatives and explains their context and the expectations each
@@ -269,13 +277,74 @@ paragraphs. Lambdas, local functions, and iterators receive light framing/clarif
 snippets are unchanged in the latest commit. Preserve this contextual comparison style in future
 Everyday C# guidance.
 
+### Decision 16: Adopt language foundations and applied guidance as the governing plan
+
+**Accepted:** 2026-10-29: "Let's consider the proposal as the new plan. Make any
+edits to the project map and phases."
+
+**Choice:** Adopt the October planning expansion and its language-foundations/applied-guidance
+organization as the active plan, replacing Decision 13's hypothesis status. Language foundations
+follow standard order through Namespaces, Classes, Structs, Arrays/indexes/ranges, Interfaces,
+Enums, Delegates, Exceptions, and Attributes, plus Documentation comments. Classes establishes
+the shared baseline, including record classes; Structs and Interfaces teach their differences.
+Retain canonical introductions and the coordinated record-class/record-struct coverage.
+
+Build software supplies applied design and algorithm choices, harvesting useful Programming
+Guide material without duplicating syntax explanations. Phases G-R and BS01-BS12 are the
+approved task coverage, including review and potential splitting of mixed OOP articles. Their
+conditional outputs remain conditional; the plan doesn't require a new article for every task.
+
+**Implementation boundary:** Phase G remains namespace consolidation and the checkpoint before
+concrete OOP redistribution. Resolve detailed per-article split boundaries, final destinations,
+advanced/reference owners, and redirect targets in the assigned phase work before moves.
+Decision 17 now supplies the foundation-first execution sequence; phase letters and historical
+PR IDs remain unchanged.
+Keep all scope exclusions, snippet/readability rules, and Decisions 14-15 intact.
+
+**Shipped preservation:** Build software's current placement, four direct guides, and URLs stay
+as shipped in #56333. In particular, its lambda, local-function, and iterator guides don't need
+new language-foundations homes. Phase F and #55930 remain complete through #56528.
+
+**Authorization:** This approval adopts the plan; it doesn't start phase work, authorize article
+moves or live TOC reorganization, create issues, or authorize commits or pushes. Implementation scheduling follows Decision 17's order.
+No new delivery dates or workload totals are implied.
+
+### Decision 17: Foundations-first execution and source harvesting
+
+**Team decision, 2026-10-29.**
+
+**Sequence:** Treat shipped expressions, statements, collections, equality, patterns, and the
+Phase F guides/tutorial as completed prerequisites. Finish G Namespaces → H Classes → I Structs →
+J Arrays/indexes/ranges → K Interfaces → L Enums → M Delegates/events → N Exceptions →
+O Attributes → P Documentation comments before substantial new Phase R applied drafting/delivery.
+This supersedes the earlier blanket flexibility to choose any later phase. It doesn't reorder
+the shipped Build software section or require duplicate syntax homes for its practical guides.
+
+**Execution detail:** The [phase index](plan/README.md#execution-sequence) preserves historical
+PR identifiers and distinguishes internal task dependencies from review order. Supporting Q
+work uses its genuine dependencies; optional style/analyzer/console work is not a new priority
+or gate. Existing canonical articles can supply prerequisite links without being recreated.
+
+**Harvesting:** Phase R proceeds through object/state design (BS01/PR 33, BS02, BS03),
+contracts/values/extensions (BS05, BS09, BS10), supplied behavior/sequences (BS04, BS06),
+lifetime/failure/input (BS07/PR 32, BS08, BS11), and retirement closeout (BS12). BS12 starts
+tracking during foundations, not only in the last batch. Foundation pulls preserve named
+applied extracts until their later batch; no partial extraction authorizes deleting a mixed source.
+Programming Guide remains a source to retire, not a permanent destination.
+
+**Boundary:** Exact conditional article splits and advanced redirect targets remain assigned
+implementation questions, with evidence required before retirement. This decision sequences
+the plan only: no article moves, live navigation changes, new issues, commits, pushes, calendar
+or file-count commitments.
+
 ## Roadmap instruction: October 2026 planning expansion
 
-**Requested by:** Bill Wagner, 2026-10-16.
+**Requested:** 2026-10-16.
 
-Only [dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930) is targeted for completion
-in Everyday C# during the rest of October. Reconcile it against the final decisions for open
-PR #56333 before authoring its combined-techniques tutorial.
+**Historical execution scope:** Only [dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930)
+was targeted for completion during the rest of October, with its tutorial to follow PR #56333's
+final decisions. **Closeout 2026-10-29:** #56333 merged 2026-10-19; #55930 shipped in #56528 on
+2026-10-29. [Phase F](plan/phase-f-patterns-functional.md) is complete; no new scope is scheduled.
 
 Expand the plan after Phase G with explicit standard-aligned coverage of classes, structs,
 arrays/indexes/ranges, interfaces, enums, delegates, exceptions, attributes, and Documentation
@@ -286,13 +355,14 @@ material as useful instead of assuming all those subjects require new content.
 Sweep Programming Guide for Building software candidates and record concrete future tasks.
 The [expanded phase plans](plan/README.md#plan-index--prs-by-phase) and
 [82-source ledger](plan/programming-guide-inventory.md) implement this planning request locally.
-The proposed later taxonomy/article paths still need Bill's review. This instruction doesn't
-mark those proposals approved for publication or authorize content moves, new issues, commits,
+Decision 16 records 2026-10-29 adoption of this expansion as the active plan. Detailed
+article boundaries and final paths remain implementation decisions, not a blanket architecture
+approval gate. Plan approval doesn't authorize publication, content moves, new issues, commits,
 or pushes. Decisions 14-15 and PR #56333's initial structure remain intact.
 
 ## Roadmap guidance: Class-first differences and records
 
-**Requested by:** Bill Wagner, 2026-10-16.
+**Requested:** 2026-10-16.
 
 Follow the standard's current teaching strategy: Classes establishes the shared rules, while
 Structs and Interfaces explain how they differ from classes. Link common rules rather than

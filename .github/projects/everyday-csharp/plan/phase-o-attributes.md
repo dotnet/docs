@@ -18,6 +18,16 @@ Sources:
 3. Coordinate backing-field targets with PR 26 and flags with PR 42; those examples should link rather than repeat a reference catalog.
 4. Keep custom attribute class authoring, `AttributeUsage` edge rules, reflection-based reading, generic attributes, interop layout/unions, and metadata-query implementation in advanced/reference coverage. Harvest only the beginner subset, not the entire reflection tutorial.
 
-**Dependencies:** ordinary classes, constructors, and properties vocabulary, with existing canonical links available until those phases land.
+**Review units:** Extract the existing tutorial's `ObsoleteAttribute` motivation/application
+before its custom-class/reflection walkthrough. First teach recognizing/applying metadata;
+then demonstrate the consumer with a small compiler diagnostic example and a target/argument
+example. Keep intentionally diagnostic-producing code separate from ordinary successful snippets.
+The custom-attribute tutorial remains an advanced canonical destination, not a retired source:
+add an orientation link to the new beginner article and retain its authoring/reading outcome.
+No new reflection tutorial or exhaustive compiler-recognized-attribute catalog is planned.
+
+**Dependencies and sequence:** Enter after N, before P, using H's ordinary classes, constructors,
+and properties. Coordinate L's flags and H's backing-field-target cross-links now that the
+usage article is live; don't migrate their whole lessons into it.
 
 **Done when:** a new reader can apply and recognize attributes, examples demonstrate what observes them, full syntax remains in reference, and no advanced reflection article is deleted just because a short introductory passage was extracted.

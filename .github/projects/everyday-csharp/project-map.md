@@ -1,6 +1,6 @@
 # C# Fundamentals Section: Restructuring Plan
 
-This document captures the decisions, rationale, and proposed outline for restructuring the C# Fundamentals section. It's the result of planning discussions informed by the [GitHub project board](https://github.com/orgs/dotnet/projects/225/views/1), the [C# standard](https://github.com/dotnet/csharpstandard), and
+This document captures the decisions, rationale, and approved plan for restructuring the C# Fundamentals section. It's the result of planning discussions informed by the [GitHub project board](https://github.com/orgs/dotnet/projects/225/views/1), the [C# standard](https://github.com/dotnet/csharpstandard), and
 the [feature inclusion notes](feature-coverage.md#feature-coverage-decisions).
 
 ## Goals
@@ -9,7 +9,7 @@ the [feature inclusion notes](feature-coverage.md#feature-coverage-decisions).
 1. **Make Fundamentals complete.** A developer learning C# should be able to read the Fundamentals section and understand "Everyday C#" — the features and patterns used in the vast majority of production code. Fundamentals documents only *released* language features. Preview features (for example, C# 15 `closed` hierarchies) stay in the Language Reference until they ship; a feature isn't "everyday" before developers can use it in released code.
 1. **Pull content toward the goal.** Rather than focusing on migrating content *out* of legacy sections (Tutorials, C# concepts, How-to, Programming guide), we focus on building a great Fundamentals section and pull content in as it fits.
 1. **Teach through examples.** Most engineers learn software languages by reading and writing example code, not by reading *about* the language. Every article in the Fundamentals section should be example-heavy: short prose introduces a concept, then one or more code samples demonstrate it in context. Favor showing over telling. Keep each sample as small and focused as possible—demonstrate one concept per example. Don't introduce additional concepts, patterns, or API calls that aren't directly relevant to the point being made. If a reader has to understand something unrelated to follow the sample, the sample is doing too much. Samples must be readable on first pass: for any construct the sample isn't teaching, use the most familiar form (`while` or `foreach` before `for`; a regular method before a static factory). Add a brief intent comment on any line whose purpose isn't immediately obvious, including syntax a new C# developer might not recognize yet, such as spread elements in collection expressions. When the sample illustrates a decision, show *both* branches and include the result as a trailing comment (`// => …`) so readers correlate code to output without running it. When two syntaxes are equivalent, make the sample outputs identical so the equivalence is visible without extra explanation.
-1. **Combine language foundations with practical design guidance.** The earlier two-part IA hypothesis proposed a [C# standard](https://github.com/dotnet/csharpstandard/blob/main/standard/README.md)-ordered sequence of compact syntax and semantics articles, followed by guidance on how to combine constructs. Bill has now approved **Building software** as the cross-cutting section: compare valid algorithmic approaches that can produce the same results but communicate different design intent to developers and coding agents. Its first four articles are authored and accepted in open PR [#56333](https://github.com/dotnet/docs/pull/56333), not merged. They live directly under `fundamentals/building-software/`, without the retired Functional techniques grouping. This resolves that section's label and initial placement, not the entire two-part hypothesis or the remaining OOP boundary. See [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure).
+1. **Combine language foundations with practical design guidance.** We adopted this organization as the governing plan on 2026-10-29: a [C# standard](https://github.com/dotnet/csharpstandard/blob/main/standard/README.md)-ordered sequence of compact syntax and semantics articles, with applied guidance on how to combine constructs. **Building software** is the cross-cutting section: compare valid algorithmic approaches that can produce the same results but communicate different design intent to developers and coding agents. Its first four guides shipped in [#56333](https://github.com/dotnet/docs/pull/56333) on 2026-10-19, with the H1/TOC label **Build software**. They live directly under `fundamentals/building-software/`, without the retired Functional techniques grouping. The follow-on badge-label tutorial shipped in [#56528](https://github.com/dotnet/docs/pull/56528). Preserve those placements and URLs; no new language-foundations homes are required for lambdas, local functions, or iterators. Mixed OOP articles are reviewed for construct/design splits in their assigned phases, after the Phase G namespace checkpoint. See [Decision 16](decisions.md#decision-16-adopt-language-foundations-and-applied-guidance-as-the-governing-plan) and the shipped structure in [Decision 14](decisions.md#decision-14-building-software-purpose-and-initial-structure).
 1. **Emphasize everday C#.** Everyday C# features get fuller explanations. Older features that readers (including AI agents and Copilots) already have extensive information about receive lighter treatment. All sample code uses the latest released syntax and idioms.
 1. **Target audience.** Developers who know at least one other programming language and are learning C#, or C# developers updating their knowledge of the latest features and idioms. Not absolute beginners in programming.
 1. **Samples showcase Everday C# feature sets.** All sample code across the Fundamentals section should incorporate the language features listed in [Include and explain](feature-coverage.md#include-and-explain), [Use in sample code without detailed explanation](feature-coverage.md#use-in-sample-code-without-detailed-explanation), and the relevant subsets from [Include a subset](feature-coverage.md#include-a-subset). This means even an article about, for example, exception handling should use collection expressions, file-scoped namespaces, nullable reference types, raw string literals, and other everyday C# features in its samples — not just the feature under discussion. Readers absorb these idioms organically by seeing them used consistently.
@@ -47,18 +47,19 @@ The project map is split into focused parts:
 
 | Part | Contents |
 |---|---|
-| [Decisions](decisions.md) | Key Decisions 1–15, including Building software structure and editorial expectations |
+| [Decisions](decisions.md) | Key Decisions 1–17, including approved architecture, foundation-first execution, Building software structure, and editorial expectations |
 | [Feature coverage](feature-coverage.md) | Include and explain / use without explanation / include a subset / exclude |
-| [TOC and articles](toc-and-articles.md) | Proposed Fundamentals TOC, article status summary, and the complete TOC skeleton |
+| [TOC and articles](toc-and-articles.md) | Planned Fundamentals TOC, article status summary, and the target TOC skeleton (not the live TOC) |
 | [Content sources](content-sources.md) | Pull sources, sections that shrink, and open items |
 | [Restructuring plan](plan/README.md) | The PR-by-PR execution plan, split by phase |
 
-## Roadmap expansion for review: October 2026
+## Active roadmap: October 2026 expansion approved 2026-10-29
 
-The only Everyday C# completion target for the rest of October is
-[dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930). Its combined-techniques tutorial
-must be reconciled with the final decisions and live destinations from open PR #56333 before
-implementation. Planning the remaining roadmap doesn't schedule those tasks for October.
+The former remaining October completion target,
+[dotnet/docs#55930](https://github.com/dotnet/docs/issues/55930), shipped in #56528 on 2026-10-29,
+after #56333 merged on 2026-10-19. Phase F is complete. Planning the remaining roadmap doesn't
+start implementation. The team has now sequenced the remaining scope: language foundations
+first, then substantial applied growth, as recorded in [Decision 17](decisions.md#decision-17-foundations-first-execution-and-source-harvesting).
 
 The [expanded phase index](plan/README.md#plan-index--prs-by-phase) now gives Classes (§15),
 Structs (§16), Arrays/extended indexing and slicing (§17-18), Interfaces (§19), Enums (§20),
@@ -71,27 +72,36 @@ classes; Structs and Interfaces focus on their differences from classes. Structs
 `record class` with `record struct`. Reuse the existing canonical records article across those phases,
 with one teaching owner per portion rather than two competing introductions.
 
-[Phase R](plan/phase-r-building-software.md) proposes twelve scoped harvesting/retirement tasks
+[Phase R](plan/phase-r-building-software.md) defines twelve scoped harvesting/retirement tasks
 for Building software, backed by a [complete 82-article Programming Guide source ledger](plan/programming-guide-inventory.md).
 Mixed sources are split between construct mechanics, applied decisions, and retained advanced
 material. The Programming Guide is a source to retire incrementally, not a new canonical home.
 
-The later construct/design split and new destinations are **proposals for Bill's local review**.
-They don't supersede PR #56333's approved initial placement, turn open work into shipped content,
-or authorize content moves, new issues, commits, or pushes.
+The construct/design organization and expanded task coverage are **the approved active plan**.
+Exact per-article split boundaries, final paths, and redirect targets are resolved during assigned
+phase work; conditional outputs still require their gap reviews. Phase G remains namespace
+consolidation and the checkpoint before concrete OOP redistribution. The
+[execution sequence](plan/README.md#execution-sequence) is G Namespaces → H Classes → I Structs →
+J Arrays/indexes/ranges → K Interfaces → L Enums → M Delegates/events → N Exceptions →
+O Attributes → P Documentation comments, then R's five applied harvesting batches.
+Expressions/statements and patterns are completed prerequisites, not a new writing wave.
+Q's async/style/analyzer/console work is placed by genuine dependencies, not promoted to a new
+priority or blanket gate. BS12 tracks shared-source holds during foundations and all later batches.
+Plan approval doesn't supersede #56333's
+shipped placement, turn open work into shipped content, start a phase, or authorize content moves,
+new issues, commits, or pushes.
 
-## Current reconciliation: Building software
+## Current reconciliation: Phase F complete
 
-As of 2026-10-16, Bill accepted the implementation and editorial task for
-[#56333](https://github.com/dotnet/docs/pull/56333), **Start on building fundamentals sections**.
-The PR remains **OPEN**, with `mergedAt=null`, at head
-`4737e1c7fe82c91ed8e6d531a3a78a0f5e9cc11e` on `more-everyday-csharp`.
-The articles, snippet projects, redirects, inbound links, and TOC changes described in
-[TOC and articles](toc-and-articles.md#building-software) are authored in that PR, not shipped
-or present as implementation on this planning branch. The latest commit reframes the overview
-and lightly edits the three companion articles; it doesn't change snippets.
+As of 2026-10-29, all five [Phase F PRs](plan/phase-f-patterns-functional.md) are merged and
+present on this rebased planning branch: #55966 (overview, basic patterns, discards), #56113
+(structural patterns), #56286 (deconstruction and pattern tutorials), #56333 (four Build software
+guides), and #56528 (the badge-label tutorial). The reconciliation corrects PR 21's tutorial
+destinations, closes its inbound-link follow-up, and supersedes the former open-PR/October-target
+status. See [TOC and articles](toc-and-articles.md#building-software) for shipped locations.
 
-The earlier reconciliation supersedes the retired Functional techniques grouping and pending
-label/initial-placement questions. The subsequent roadmap expansion above adds explicit future
-phase owners and source harvesting; it doesn't complete the tutorial, approve the proposed later
-OOP reorganization, or audit unrelated phase delivery status.
+The [canonical authoring conventions](plan/README.md) now capture lessons
+from the merged pattern articles and tutorial: explain contextual choices, define and link
+concepts consistently, and let readers observe execution in a small incremental sample.
+The approved roadmap above remains future work, separately adopted in Decision 16;
+Phase F completion neither implements that roadmap nor audits unrelated phase delivery status.

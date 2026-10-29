@@ -24,6 +24,21 @@ Work:
 3. Move the interface portion formerly in PR 29 here. Extract interface-versus-base-class and dependency-boundary decisions into BS05, not the declaration article.
 4. Retain default interface implementation, static abstract members/generic math, ref-struct interface constraints, and library versioning in existing advanced/reference homes.
 
-**Dependencies:** existing class introduction/member vocabulary as the baseline; PR 26/30 when sharing migrated examples. Link current canonical class coverage until future Classes work lands. No dependence on adopting every Building software proposal.
+**Dependencies and sequence:** Enter after J, before L, using H's class/property/dispatch baseline
+and J's indexers. No applied comparison is a prerequisite. Resolve the introduction/depth split
+before drafting; the retained introduction remains the early Type system route.
+
+**Review units:** (1) Contract consumption/implementation with class and struct instances;
+(2) public versus explicit members and same-name conflicts; (3) shared property/indexer extracts
+and source retirement. These can be reviewed separately under PR 41 without three mandatory new
+articles. Reuse `explicit-interface-implementation.md`'s same-signature `Paint` example to verify
+which reference exposes/calls each implementation; leave its default-implementation section in
+reference/advanced coverage. The generic-interface source's constrained `SortedList<T>`/sorting
+implementation isn't a required beginner sample. Prefer a small consuming example and preserve
+the algorithm/authoring material through BS12.
+
+**Shared-source exit:** PR 41 coordinates `indexers/indexers-in-interfaces.md` retirement with
+PR 30; BS05 still needs its contract/API-surface extract. Record both before any deletion.
+One runnable interface-view example is sufficient; don't create another OOP tutorial.
 
 **Done when:** one canonical teaching owner explains interface-specific differences without repeating class rules, examples show implementation and interface views, all interface sources and shared snippets have a single retirement owner, and specialized content remains accessible through links and redirects.

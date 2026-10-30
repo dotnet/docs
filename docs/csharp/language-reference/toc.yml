@@ -666,7 +666,8 @@ items:
     href: ./compiler-messages/jump-statement-errors.md
     displayName: >
       break, continue, goto, return, labeled break, labeled continue,
-      CS0126, CS0127, CS0139, CS0153, CS0159, CS0161, CS0163, CS0469, CS8070, CS9393, CS9394
+      CS0126, CS0127, CS0139, CS0140, CS0153, CS0157, CS0158, CS0159, CS0161, CS0162,
+      CS0163, CS0164, CS0469, CS8070, CS9393, CS9394
   - name: Throwing and catching exceptions
     href: ./compiler-messages/throwing-and-catching-exceptions.md
     displayName: >
@@ -974,8 +975,6 @@ items:
       href: ../misc/cs0135.md
     - name: CS0136
       href: ../misc/cs0136.md
-    - name: CS0140
-      href: ../misc/cs0140.md
     - name: CS0143
       href: ../misc/cs0143.md
     - name: CS0145
@@ -996,10 +995,6 @@ items:
       href: ../misc/cs0155.md
     - name: CS0156
       href: ../misc/cs0156.md
-    - name: CS0157
-      href: ../misc/cs0157.md
-    - name: CS0158
-      href: ../misc/cs0158.md
     - name: CS0160
       href: ../misc/cs0160.md
     - name: CS0165
@@ -1776,10 +1771,6 @@ items:
       href: ./compiler-messages/cs0108.md
     - name: CS0114
       href: ../misc/cs0114.md
-    - name: CS0162
-      href: ../misc/cs0162.md
-    - name: CS0164
-      href: ../misc/cs0164.md
     - name: CS0252
       href: ../misc/cs0252.md
     - name: CS0253

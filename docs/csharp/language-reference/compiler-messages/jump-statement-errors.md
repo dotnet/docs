@@ -5,10 +5,15 @@ f1_keywords:
   - "CS0126"
   - "CS0127"
   - "CS0139"
+  - "CS0140"
   - "CS0153"
+  - "CS0157"
+  - "CS0158"
   - "CS0159"
   - "CS0161"
+  - "CS0162"
   - "CS0163"
+  - "CS0164"
   - "CS0469"
   - "CS8070"
   - "CS9393"
@@ -17,10 +22,15 @@ helpviewer_keywords:
   - "CS0126"
   - "CS0127"
   - "CS0139"
+  - "CS0140"
   - "CS0153"
+  - "CS0157"
+  - "CS0158"
   - "CS0159"
   - "CS0161"
+  - "CS0162"
   - "CS0163"
+  - "CS0164"
   - "CS0469"
   - "CS8070"
   - "CS9393"
@@ -41,7 +51,10 @@ The following errors occur when you use a `break`, `continue`, `goto`, or `retur
 - [**CS0126**](#return-statement-values): *An object of a type convertible to 'type' is required*
 - [**CS0127**](#return-statement-values): *Since 'method' returns void, a return keyword must not be followed by an object expression*
 - [**CS0139**](#break-and-continue-targets): *No enclosing loop out of which to break or continue*
+- [**CS0140**](#anchor-tbd): *The label 'label' is a duplicate*
 - [**CS0153**](#goto-statement-targets): *A goto case is only valid inside a switch statement*
+- [**CS0157**](#anchor-tbd): *Control cannot leave the body of a finally clause*
+- [**CS0158**](#anchor-tbd): *The label 'label' shadows another label by the same name in a contained scope*
 - [**CS0159**](#goto-statement-targets): *No such label 'label' within the scope of the goto statement*
 - [**CS0161**](#return-statement-values): *'method': not all code paths return a value*
 - [**CS0163**](#switch-section-termination): *Control cannot fall through from one case label ('label') to another*
@@ -49,8 +62,10 @@ The following errors occur when you use a `break`, `continue`, `goto`, or `retur
 - [**CS9393**](#break-and-continue-targets): *No enclosing loop or switch statement with the label 'label' out of which to break*
 - [**CS9394**](#break-and-continue-targets): *No enclosing loop with the label 'label' out of which to continue*
 
-The following warning occurs when a `goto case` statement targets a value that requires a conversion:
+The following warnings occur when code is unreachable, a label isn't referenced, or a `goto case` statement targets a value that requires a conversion:
 
+- [**CS0162**](#anchor-tbd): *Unreachable code detected*
+- [**CS0164**](#anchor-tbd): *This label has not been referenced*
 - [**CS0469**](#goto-statement-targets): *The 'goto case' value is not implicitly convertible to type 'type'*
 
 ## Break and continue targets
@@ -169,6 +184,167 @@ To resolve these errors:
 For more information about `return` statements in async methods and members that return `Task` or `ValueTask` types, see [Errors and warnings related to async and await](async-await-errors.md). For more information about `return` statements in iterators, see [Errors and warnings related to iterators](iterator-yield.md).
 
 For more information about the `return` statement, see [The `return` statement](../statements/jump-statements.md#the-return-statement) in the jump statements article.
+
+## CS0140
+
+The label 'label' is a duplicate
+
+A label with the same name appeared twice. For more information, see [goto](../statements/jump-statements.md#the-goto-statement).
+
+The following sample generates CS0140:
+
+```csharp
+// CS0140.cs
+namespace MyNamespace
+{
+   public class MyClass
+   {
+      public static void Main()
+      {
+         label1: int i = 0;
+         label1: int j = 0;   // CS0140, comment this line to resolve
+         goto label1;
+      }
+   }
+}
+```
+
+## CS0157
+
+Control cannot leave the body of a finally clause
+
+A `return`, `break`, `continue`, or `goto` statement can't transfer control outside a [finally](../statements/exception-handling-statements.md#the-try-finally-statement) clause. For more information, see [Exceptions and Exception Handling](../../fundamentals/exceptions/index.md).
+
+The following sample generates CS0157:
+
+```csharp
+// CS0157.cs
+using System;
+namespace MyNamespace
+{
+   public class MyClass2 : Exception
+   {
+   }
+
+   public class MyClass
+   {
+      public static void Main()
+      {
+         try
+         {
+         }
+         finally
+         {
+            return;   // CS0157, cannot leave finally clause
+         }
+      }
+   }
+}
+```
+
+## CS0158
+
+The label 'label' shadows another label by the same name in a contained scope
+
+Labels in nested scopes can't have the same name. For more information, see [goto](../statements/jump-statements.md#the-goto-statement).
+
+The following sample generates CS0158:
+
+```csharp
+// CS0158.cs
+namespace MyNamespace
+{
+   public class MyClass
+   {
+      public static void Main()
+      {
+         goto lab1;
+         lab1:
+         {
+            lab1:   // CS0158
+            goto lab1;
+         }
+      }
+   }
+}
+```
+
+## CS0162
+
+Unreachable code detected
+
+The compiler detected code that will never be executed.
+
+### Example
+
+The following example generates CS0162:
+
+```csharp
+// CS0162.cs
+// compile with: /W:2
+public class Program
+{
+    public static void Main()
+    {
+        goto lab1;
+        {
+            // The following statements cannot be reached:
+            int i = 9;   // CS0162
+            i++;
+        }
+    lab1:
+        {
+        }
+    }
+}
+```
+
+Another common example where this warning is generated is as follows:
+
+```csharp
+public static class Class1
+{
+    public static string Method1()
+    {
+        string x = "a";
+        switch (x)
+        {
+            case "a":
+                return "a";
+                break;          // CS0162
+        }
+        return "";
+    }
+}
+```
+
+The `break` statement cannot be reached because it occurs after the `return` statement.
+The `return` statement ends the enclosing `case` branch.
+
+## CS0164
+
+This label has not been referenced
+
+A label was declared but never used.
+
+The following sample generates CS0164:
+
+```csharp
+// CS0164.cs
+// compile with: /W:2
+public class Program
+{
+    public static void Main()
+    {
+        int i = 0;
+    l1: // CS0164
+        i++;
+        // Uncomment the following lines to resolve this warning.
+        // if (i < 10)
+        //     goto l1;
+    }
+}
+```
 
 ## C# language specification
 

@@ -109,7 +109,7 @@ Adds one or more projects to the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <PATH>] <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <PATH>] [--include-references] <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln add [-h|--help]
 ```
 
@@ -148,6 +148,10 @@ dotnet sln add [-h|--help]
 - **`-s|--solution-folder <PATH>`**
 
   The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Can't be used with `--in-root`.
+
+- **`--include-references`**
+
+  Recursively adds any project references referenced by the specified projects to the solution. Available in .NET SDK 9.0.300 and later versions.
 
 ### `remove`
 
@@ -228,6 +232,12 @@ dotnet sln [<SOLUTION_FILE>] migrate [-h|--help]
 
   ```dotnetcli
   dotnet sln add todo-app/todo-app.csproj
+  ```
+
+- Add a C# project and all of its project references recursively to a solution:
+
+  ```dotnetcli
+  dotnet sln add todo-app/todo-app.csproj --include-references
   ```
 
 - Remove a C# project from a solution:

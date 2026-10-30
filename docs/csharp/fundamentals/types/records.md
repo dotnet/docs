@@ -104,6 +104,28 @@ A `record class` can inherit from another `record class`. A record can't inherit
 
 Value equality checks include the run-time type, so a `Person` and a `Student` with the same `FirstName` and `LastName` aren't considered equal. Record structs don't support inheritance because structs can't inherit from other types.
 
+### Closed record hierarchies
+
+Starting in C# 15 (.NET 11), combining the [`closed`](../../language-reference/keywords/closed.md) modifier with `record class` creates a closed algebraic hierarchy where each variant is represented by a concise record:
+
+```csharp
+public closed record class Result<T>;
+public record class Success<T>(T Value) : Result<T>;
+public record class Failure<T>(string Error) : Result<T>;
+```
+
+Because `Result<T>` is `closed`, consumers can match on all variants without needing a fallback discard pattern:
+
+```csharp
+string FormatResult<T>(Result<T> result) => result switch
+{
+    Success<T> s => $"Success: {s.Value}",
+    Failure<T> f => $"Failure: {f.Error}"
+};
+```
+
+This pattern provides a powerful alternative to [union types](../../language-reference/builtin-types/union.md) when you want compiler-generated value equality, `ToString`, and positional deconstruction across a fixed set of reference types.
+
 ## See also
 
 - [Type system overview](index.md)

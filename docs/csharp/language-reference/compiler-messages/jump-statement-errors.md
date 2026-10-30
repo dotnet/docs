@@ -10,6 +10,7 @@ f1_keywords:
   - "CS0161"
   - "CS0163"
   - "CS0469"
+  - "CS8070"
   - "CS9393"
   - "CS9394"
 helpviewer_keywords:
@@ -21,9 +22,10 @@ helpviewer_keywords:
   - "CS0161"
   - "CS0163"
   - "CS0469"
+  - "CS8070"
   - "CS9393"
   - "CS9394"
-ms.date: 07/17/2026
+ms.date: 10/30/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for jump statements
@@ -43,6 +45,7 @@ The following errors occur when you use a `break`, `continue`, `goto`, or `retur
 - [**CS0159**](#goto-statement-targets): *No such label 'label' within the scope of the goto statement*
 - [**CS0161**](#return-statement-values): *'method': not all code paths return a value*
 - [**CS0163**](#switch-section-termination): *Control cannot fall through from one case label ('label') to another*
+- [**CS8070**](#anchor-tbd): *Control cannot fall out of switch from final case label ('label')*
 - [**CS9393**](#break-and-continue-targets): *No enclosing loop or switch statement with the label 'label' out of which to break*
 - [**CS9394**](#break-and-continue-targets): *No enclosing loop with the label 'label' out of which to continue*
 
@@ -91,6 +94,63 @@ C# doesn't allow control to fall through from one `switch` section to the next. 
 To resolve this error, end each `switch` section that contains statements with a jump statement, such as `break`, `return`, `goto case`, `goto default`, or `throw`. To run the same statements for more than one value, stack the `case` labels with no statements between them; that arrangement isn't fall-through. When you want one section to continue into another, use `goto case` or `goto default` to name the next section explicitly (**CS0163**).
 
 For more information about the `switch` statement, see [The `switch` statement](../statements/selection-statements.md#the-switch-statement) in the selection statements article. For more information about the `throw` statement, see [The `throw` statement](../statements/exception-handling-statements.md#the-throw-statement) in the exception handling statements article.
+
+## CS8070
+
+Control cannot fall out of switch from final case label ('label')
+
+This error occurs when the last `case` or `default` case of a [switch statement](../statements/selection-statements.md#the-switch-statement) doesn't end with a jump statement such as:
+
+- [break](../statements/jump-statements.md#the-break-statement)
+- [return](../statements/jump-statements.md#the-return-statement)
+- [throw](../statements/exception-handling-statements.md#the-throw-statement)
+
+The following sample generates CS8070:
+
+```csharp
+using System;
+
+public class MyClass
+{
+    public static void Main()
+    {
+        int i = 2;
+        int j = 0;
+
+        switch (i)
+        {
+            case 1:
+                i++;
+                break;
+
+            // Compiler error CS8070 is reported on the following line.
+            case 2:
+                i += 2;
+            // To resolve the error, uncomment one of the following example statements.
+            // break;
+            // return;
+            // throw new Exception("Fin");
+        }
+
+        switch (j)
+        {
+            case 1:
+                j++;
+                break;
+
+            case 2:
+                j += 2;
+                break;
+
+            // Compiler error CS8070 is reported on the following line.
+            default:
+                Console.WriteLine("Default");
+            // To resolve the error, uncomment the following line:
+            // break;
+        }
+    }
+}
+```
 
 ## Return statement values
 

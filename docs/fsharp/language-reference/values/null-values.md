@@ -84,14 +84,14 @@ When used in pattern matching, `|` is used to separate different pattern matchin
 
 ```fsharp
 match x with
-| ?: string | null -> ...
+| :? string | null -> ...
 ```
 
 This snippet is actually equivalent to code first doing a type test against the `string` type, and then having a separate clause for handling null:
 
 ```fsharp
 match x with
-| ?: string 
+| :? string 
 | null -> ...
 ```
 

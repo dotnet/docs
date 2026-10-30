@@ -1,7 +1,8 @@
 ---
 title: Enums
 description: Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
-ms.date: 11/04/2021
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Enumerations
 
@@ -47,6 +48,12 @@ Additionally, cases for enums are always emitted as `public`. This is so that th
 To enable [exhaustive matching](match-expressions.md) for only the defined enum cases, you can suppress warning FS0104 using the directive `#nowarn "104"`. This allows the compiler to treat only declared enum values as valid during pattern matching, avoiding the need for a catch-all case — useful when you're certain all values are covered.
 
 The warning FS0104 (`Enums may take values outside known cases.`) exists because enums can be assigned arbitrary underlying values, for example, directly or as a result of [bitwise operations](../../csharp/language-reference/builtin-types/enum.md#enumeration-types-as-bit-flags).
+
+## Bitwise operations
+
+Use integral-backed enum types for bitwise operators such as `|||`, `&&&`, and `^^^`. Starting with F# 11, applying these operators to a non-integral-backed enum, such as a CLI enum backed by `char`, is a compile-time error instead of code that fails at runtime.
+
+This restriction doesn't affect ordinary integral flags enums. The underlying metadata type, not just the presence of `[<Flags>]`, determines whether bitwise operations are valid.
 
 ## See also
 

@@ -2,7 +2,8 @@
 title: Arrays in F#
 titleSuffix: ""
 description: Learn how to create and use arrays in the F# programming language.
-ms.date: 10/29/2021
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Arrays (F#)
 
@@ -418,6 +419,29 @@ The functions [`Array.zip`](https://fsharp.github.io/fsharp-core-docs/reference/
 ## Parallel computations on arrays
 
 The module [`Array.Parallel`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule-parallel.html) contains functions for performing parallel computations on arrays. This module is not available in applications that target versions of the .NET Framework prior to version 4.
+
+## Empty result arrays
+
+To avoid allocating empty result arrays, FSharp.Core 11 reuses a shared empty array in more operations, including `collect`, `map`, `concat`, and conversions:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="EmptyResults":::
+
+Don't depend on empty results having distinct identities. Inputs, callbacks, and nonempty results can still allocate.
+
+## Two-dimensional arrays and Native AOT
+
+FSharp.Core 11 improves zero-based allocation for Native AOT. The allocation path depends on the [selected Core build](../fsharp-core-targeting.md), not just the API:
+
+| Zero-based operations | `netstandard2.0` and `netstandard2.1` builds | `net10.0` build |
+|---|---|---|
+| `Array2D.create`, `Array2D.init`, `Array2D.rebase` | No dynamic-code requirement for these operations. | No dynamic-code requirement for these operations. |
+| `Array2D.map`, `Array2D.mapi`, `Array2D.copy` | Retain a dynamic-code-dependent allocation fallback. | Use an allocation path without that dynamic-code requirement. |
+
+For example, initialize a grid, transform its elements, and take a separate array copy with the `net10.0` build:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Grid":::
+
+Non-zero-based operations retain dynamic-code restrictions. For [Native AOT](../../core/deploying/native-aot/index.md), prefer zero-based arrays and check the complete application's publish diagnostics.
 
 ## See also
 

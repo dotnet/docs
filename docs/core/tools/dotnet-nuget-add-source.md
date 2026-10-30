@@ -101,6 +101,8 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 ## See also
 
+- [Configure an HTTPS client certificate for a package source](dotnet-nuget-add-client-cert.md)
+
 - [Security best practices for managing package source credentials](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials)
 
 - [Package source sections in NuGet.config files](/nuget/reference/nuget-config-file#package-source-sections)

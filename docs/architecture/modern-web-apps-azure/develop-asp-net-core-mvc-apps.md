@@ -3,7 +3,7 @@ title: Developing ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/12/2021
+ms.date: 10/30/2026
 no-loc: [Blazor, WebAssembly]
 ms.custom: sfi-ropc-nochange
 ---
@@ -552,7 +552,7 @@ These schemes use cookies for persistence and redirection to login pages for aut
 
 Web APIs are consumed by code, such as `HttpClient` in .NET applications and equivalent types in other frameworks. These clients expect a usable response from an API call, or a status code indicating what, if any, problem has occurred. These clients are not interacting through a browser and do not render or interact with any HTML that an API might return. Thus, it is not appropriate for API endpoints to redirect their clients to login pages if they are not authenticated. Another scheme is more appropriate.
 
-To configure authentication for APIs, use JWT bearer authentication. The following example adapts the configuration from the `PublicApi` project in the eShopOnWeb reference application to validate the token's issuer and audience. Set `Jwt:Issuer` to your trusted token issuer and `Jwt:Audience` to the identifier for this API in the API's configuration. Configure the token issuer to include the same values in the access token's `iss` and `aud` claims, respectively.
+To configure authentication for APIs, use JWT bearer authentication. The following example adapts the configuration from the `PublicApi` project in the eShopOnWeb reference application. The reference application disables issuer and audience validation. The adapted version enables both. Set `Jwt:Issuer` to your trusted token issuer and `Jwt:Audience` to the identifier of this API. The token issuer must put the same values in the `iss` and `aud` claims of the access tokens it issues for this API.
 
 ```csharp
 builder.Services
